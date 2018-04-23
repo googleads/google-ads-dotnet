@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Exampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticateInStandaloneApplication", "examples\Authentication\AuthenticateInStandaloneApplication\AuthenticateInStandaloneApplication.csproj", "{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticateInWebApplication", "examples\Authentication\AuthenticateInWebApplication\AuthenticateInWebApplication.csproj", "{60DB1C42-CC3C-46A0-A344-37FE1A2A3499}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60DB1C42-CC3C-46A0-A344-37FE1A2A3499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DB1C42-CC3C-46A0-A344-37FE1A2A3499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DB1C42-CC3C-46A0-A344-37FE1A2A3499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DB1C42-CC3C-46A0-A344-37FE1A2A3499}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
