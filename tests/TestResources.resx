@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="credentials_flow" xml:space="preserve">
+    <value>{
+  "access_token": "TEST_ACCESS_TOKEN",
+  "token_type": "Bearer",
+  "expires_in": 3600,
+  "refresh_token": "TEST_REFRESH_TOKEN",
+  "type": "authorized_user"
+}</value>
+  </data>
+  <data name="credentials_sa" xml:space="preserve">
+    <value>{
+  "type": "service_account",
+  "project_id": "TEST_PROJECT_ID",
+  "private_key_id": "TEST_PRIVATE_KEY_ID",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDKp3GAzlfe2vch\ncIKvCxzZa4lwED7LHjxofRoKlRNKtn4cC6RAY/8vuSHslQXbMdXLc2l4UdDOnLD0\n5Gg82jES4v8kxCyI/mxJU3ZQoGrfbpOossj8Lr0J35xfsVAdcnz01GxvNOXORNE4\nHqBKaNX2YxGC+gxskmPHECwWQ4dQA6l1+PUbdgS5UoubYdwDlh2AjtSsP6oWgeIN\nrGdOyttOLdGIhdKueGWy7U4RUFP/UFC3nzICI7BJbRAjFtFfdlT5IRbNd9l7jW77\nVWGqXP9Y/AOydsJyGEF5tvTvOGhy5lT68lbAkBPyb049J5lrIqPmpZsCu/Wvzkvm\n8NQIeqa9AgMBAAECggEBALod8Aso9uCQXxlR+GOEpDk2HyJReSoYmcgo5OrFINOk\nKMvfETml3O7aa0KZVqiJ610PoNTE5y1qEMbIoscIaLt8yHDezjv+1jq9sVK5EY4k\nQu5TTGz3C9xuhnIIKZjx1bsRAIldnpTC9RdCYVoVUDQZpjKRLSnlhEeFHchQuowL\nPUH4ktcd86NGCEXsRaZpjxzwXbp6qQ9ua4mBzMD/a+Ji/P1sFu3gY0ZXKipb2CGK\noSLB06qq2jorWBs2eYDsdlW9w6Zz/A4OTJ3HY0TiiUsd44840sL/DmNfStrAUA4C\nLcLHBRtH9YajO9wiO5hwU4Z+xmqIqKUGYabytOoY+EECgYEA9nBspdQKzQ4eSHOv\neMQZOcuJ59OH8LY+cgVWe8y7LKbrTdpMiraJJTeVf1EQRaHplspaW+zf7dw0MeqW\nANAFFFaenb+omDLBb9Nwue5ky9TO77m4+5qHliITFADd8h571t16ZWI52jr9MCaf\n+Ui4kM0TJYqBVE5mN8y5/OyBTQ0CgYEA0oQn5jl8ahpi0Pe+P2PZIL1JGiyeyPA3\nr5xZEyQQMofxjCwvGOkUsEJFUQbAmtX+xxsnP6wwkbWpUJa4GHs9UJESIkTyPpeE\n5FaxH1XDqgJ1iKjb6luMkDI3jRlU+fEIeh8ZNL5F9SA2m6FTiXHT1REU0DzCbqhI\nbVSQM7iFNHECgYEA8cXKUcZ98j7vptUYSbrZpMHzQeVdcOLa0LI77qkk2OHJ6E9K\n2KvMUR7/JDE7bZUzviQ4EgeKiamH65DiKVnsIc/5PXpSxT7GWBdweHlRmkfl3Xqv\n6OfqLXiwjudq16bgiCQxeFWtvFQzIZJDUCXwLN+E8Ue5KiTgU84eiezdzeECgYEA\nqvpDHa2a6uI7V9WfYwTJmNmjwepznGfeEnc9sVoc/a2D9YD9T5IfB3kLq198l0Uv\nBK99FS3Y1L9ioN2I7/lIN2NcAxFUXpnZiUsP2I9jt3T/2Nqsoo9wfr0KeUMVzVqC\ntA0F/9x6HTjooUZJ/tvAXNDewrJWiGGNUZ7Y7+jx50ECgYAzJ0+G89GSsTbkxVYB\nuaha7pn24gjJKyTN/2VZryzIFChhlJlGHRA2TxKpkB3anLabCEH1oXxlv69lVhWf\n50ClwndVifJG2XpgiWbDQSKRnFQZMCp63Q/41EyxJG/U8LInXXAKFS2NhxKK7D+R\nH1Q7t7I1qTCnRLl1kNDMLMG2fQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "TEST_CLIENT_EMAIL",
+  "client_id": "TEST_CLIENT_ID",
+  "auth_uri": "https://test-host",
+  "token_uri": "https://test-host",
+  "auth_provider_x509_cert_url": "https://test-host",
+  "client_x509_cert_url": "https://test-host"
+}</value>
+  </data>
+</root>
