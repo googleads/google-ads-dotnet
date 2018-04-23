@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Title>Google Ads API Dotnet Client Library</Title>
     <PackageId>Google.Ads.GoogleAds</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.0-beta01</Version>
     <Description>This library provides you with functionality to access the Google Ads API.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
     <PackageTags>GoogleAds Google</PackageTags>
