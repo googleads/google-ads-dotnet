@@ -1,4 +1,4 @@
-// Copyright 2017, Google Inc. All Rights Reserved.
+﻿// Copyright 2018 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,110 +12,29 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Apis.Auth.OAuth2;
-using Google.Apis.Auth.OAuth2.Flows;
-using Google.Apis.Auth.OAuth2.Responses;
-using Google.Apis.Util.Store;
-
+using Google.Ads.GoogleAds.Lib;
+using Google.Ads.GoogleAds.V0.Services;
+using Google.Api.Gax;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Web;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
-namespace Google.Ads.Adwords.Examples.AuthenticateInWebApplication {
+namespace Google.Ads.GoogleAds.Examples {
 
+  /// <summary>
+  /// The default webpage.
+  /// </summary>
   public partial class Default : Page {
 
     /// <summary>
-    /// The AdWords API scope.
+    /// The login helper.
     /// </summary>
-    private const string ADWORDS_API_SCOPE = "https://www.googleapis.com/auth/adwords";
+    public WebLoginHelper loginHelper;
 
     /// <summary>
-    /// Path to store the secrets file.
+    /// The Google Ads client.
     /// </summary>
-    private const string CLIENT_SECRETS_PATH = "client_secret.json";
-
-    /// <summary>
-    /// A user identifier for the Data store.
-    /// </summary>
-    private const string USER_ID = "me";
-
-    /// <summary>
-    /// The state parameter. If set on the callback URI, and will be passed back once the user is
-    /// authorized.
-    /// </summary>
-    private const string STATE_PARAMETER = "test";
-
-    /// <summary>
-    /// The authorization code flow.
-    /// </summary>
-    GoogleAuthorizationCodeFlow flow;
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="Default"/> class.
-    /// </summary>
-    public Default() {
-      flow = new GoogleAuthorizationCodeFlow(
-        new GoogleAuthorizationCodeFlow.Initializer {
-          ClientSecrets = LoadClientSecrets(),
-          Scopes = new[] { ADWORDS_API_SCOPE },
-
-          // Since we want to retrieve the credentials for further processing,
-          // use a null data store.
-          DataStore = new NullDataStore(),
-
-          // Set the state parameter so we can distinguish between a normal
-          // page load and a callback.
-          UserDefinedQueryParams = new KeyValuePair<string, string>[] {
-            new KeyValuePair<string, string>("state", STATE_PARAMETER)
-          }
-        }
-      );
-    }
-
-    /// <summary>
-    /// Loads the client secrets from the JSON file.
-    /// </summary>
-    /// <returns>The client secrets.</returns>
-    private ClientSecrets LoadClientSecrets() {
-      ClientSecrets secrets = null;
-
-      string credentialsPath = Server.MapPath("~") + CLIENT_SECRETS_PATH;
-
-      using (FileStream fs = File.OpenRead(credentialsPath)) {
-        secrets = GoogleClientSecrets.Load(fs).Secrets;
-      }
-
-      return secrets;
-    }
-
-    /// <summary>
-    /// Gets the call back URL for OAuth web flow.
-    /// </summary>
-    /// <returns>The callback URL.</returns>
-    private string GetCallBackUrl() {
-      return HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Path);
-    }
-
-    /// <summary>
-    /// Exchanges the authorization code for credentials.
-    /// </summary>
-    /// <returns>The <see cref="TokenResponse"/> object that contains the access
-    /// and refresh tokens.</returns>
-    private TokenResponse ExchangeAuthorizationCodeForCredentials() {
-      string url = this.Request.Url.OriginalString;
-      string authorizationCode = this.Request.QueryString["code"];
-
-      Task<TokenResponse> responseTask = flow.ExchangeCodeForTokenAsync(USER_ID,
-        authorizationCode, GetCallBackUrl(), CancellationToken.None);
-      responseTask.Wait();
-      TokenResponse response = responseTask.Result;
-      return response;
-    }
+    private GoogleAdsClient client = new GoogleAdsClient();
 
     /// <summary>
     /// Handles the Load event of the Page control.
@@ -123,32 +42,19 @@ namespace Google.Ads.Adwords.Examples.AuthenticateInWebApplication {
     /// <param name="sender">The source of the event.</param>
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void Page_Load(object sender, EventArgs e) {
-      // This code example stores the user credentials in the session. In a
-      // production application, this should be stored in a secured database.
-      UserCredential credential = (UserCredential) Session["credentials"];
-
-      if (credential != null) {
-        btnLogin.Visible = false;
-        lblStatus.Text = "Logged in.";
-     } else {
-        btnLogin.Visible = true;
-        lblStatus.Text = "Not logged in.";
-
-        string state = this.Request.QueryString["state"];
-
-        // If state parameter is set, then this is a callback.
-        if (!string.IsNullOrEmpty(state)) {
-          TokenResponse response = ExchangeAuthorizationCodeForCredentials();
-
-          // Save the credentials and hide the login button.
-          credential = new UserCredential(flow, STATE_PARAMETER, response);
-          Session["credentials"] = credential;
-          btnLogin.Visible = false;
-          lblStatus.Text = "Logged in.";
-
-          // Optional: You can now redirect the user to an appropriate page.
-        }
+      this.loginHelper = new WebLoginHelper(this);
+      if (loginHelper.IsLoggedIn) {
+        client.Config.OAuth2RefreshToken = loginHelper.Credentials.Token.RefreshToken;
       }
+    }
+
+    /// <summary>
+    /// Handles the Click event of the btnLogout control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+    protected void btnLogout_Click(object sender, EventArgs e) {
+      loginHelper.Logout();
     }
 
     /// <summary>
@@ -157,9 +63,47 @@ namespace Google.Ads.Adwords.Examples.AuthenticateInWebApplication {
     /// <param name="sender">The source of the event.</param>
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void btnLogin_Click(object sender, EventArgs e) {
-      Uri authorizationUrl = flow.CreateAuthorizationCodeRequest(GetCallBackUrl()).Build();
+      Response.Redirect("/Login.aspx");
+    }
 
-      this.Response.Redirect(authorizationUrl.AbsoluteUri);
+    /// <summary>
+    /// Handles the Click event of the btnGetCampaigns control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+    protected void btnGetCampaigns_Click(object sender, EventArgs e) {
+      string customerId = txtCustomerId.Text;
+      // Get the GoogleAdsService.
+      GoogleAdsServiceClient googleAdsService = client.GetService(
+          Services.V0.GoogleAdsService);
+
+      // Create a request that will retrieve all campaigns using pages of the specified page size.
+      SearchGoogleAdsRequest request = new SearchGoogleAdsRequest() {
+        PageSize = 500,
+        Query = "SELECT campaign.id, campaign.name, campaign.status FROM campaign ORDER BY " +
+            "campaign.id",
+        CustomerId = customerId.ToString()
+      };
+
+      // Issue the search request.
+      PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
+          googleAdsService.Search(request);
+
+      // Iterate over all rows in all pages and prints the requested field values for the
+      // campaign in each row.
+      foreach (GoogleAdsRow googleAdsRow in searchPagedResponse) {
+        TableRow row = new TableRow();
+        row.Cells.Add(new TableCell() {
+          Text = googleAdsRow.Campaign.Id.ToString()
+        });
+        row.Cells.Add(new TableCell() {
+          Text = googleAdsRow.Campaign.Name
+        });
+        row.Cells.Add(new TableCell() {
+          Text = googleAdsRow.Campaign.Status.ToString()
+        });
+        CampaignTable.Rows.Add(row);
+      }
     }
   }
 }
