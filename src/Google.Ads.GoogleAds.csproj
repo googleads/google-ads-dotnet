@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- nupkg properties -->
+  <PropertyGroup>
+    <Title>Google Ads API Dotnet Client Library</Title>
+    <PackageId>Google.Ads.GoogleAds</PackageId>
+    <Version>0.1.0</Version>
+    <Description>This library provides you with functionality to access the Google Ads API.</Description>
+    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
+    <PackageTags>GoogleAds Google</PackageTags>
+    <Copyright>Copyright 2018, Google LLC</Copyright>
+    <Authors>https://github.com/AnashOommen</Authors>
+    <PackageIconUrl>https://www.gstatic.com/images/icons/material/product/1x/adwords_64dp.png</PackageIconUrl>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/googleads/google-ads-dotnet</PackageProjectUrl>
+    <Company>Google</Company>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/googleads/google-ads-dotnet</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+    <!-- build properties -->
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
+    <AssemblyName>Google.Ads.GoogleAds</AssemblyName>
+    <RootNamespace>Google.Ads.GoogleAds</RootNamespace>
+    <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(ProjectDir)GoogleAds.snk</AssemblyOriginatorKeyFile>
+    <DebugType>pdbonly</DebugType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.config.transform" PackagePath="content" />
+    <Content Include="web.config.transform" PackagePath="content" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Api.Gax.Grpc" Version="2.4.0-beta01" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.2" />
+  </ItemGroup>
+    <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net452'">
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ErrorMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="ErrorMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Target Name="CopyAppConfig" BeforeTargets="pack;Build">
+    <Copy SourceFiles="App.config" DestinationFiles="app.config.transform" />
+    <Copy SourceFiles="App.config" DestinationFiles="web.config.transform" />
+  </Target>
+    <PropertyGroup Condition="'$(TargetFramework)'=='net452'">
+    <DefineConstants>NET452</DefineConstants>
+  </PropertyGroup>
+  <!--
+  <Target Name="StrongName" AfterTargets="Build" Condition="'$(OS)' != 'Windows_NT' AND $(Configuration) == 'Release' AND '$(TargetFramework)' != ''">
+    <Exec Command="sn -R $(OutputPath)$(AssemblyName).dll $(ProjectDir)GoogleAds.snk" />
+  </Target>
+  -->
+</Project>

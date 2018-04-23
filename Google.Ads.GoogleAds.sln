@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds", "src\Google.Ads.GoogleAds.csproj", "{C691BD4D-683D-425B-8BC7-52F161475C7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Tests", "tests\Google.Ads.GoogleAds.Tests.csproj", "{CE67A7AE-5C95-4C89-A7C5-EB6C88940B36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Examples", "examples\Services\Google.Ads.GoogleAds.Examples.csproj", "{7172CCB7-70B9-41A4-9D45-FCB156F9DF60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticateInStandaloneApplication", "examples\Authentication\AuthenticateInStandaloneApplication\AuthenticateInStandaloneApplication.csproj", "{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C691BD4D-683D-425B-8BC7-52F161475C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C691BD4D-683D-425B-8BC7-52F161475C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C691BD4D-683D-425B-8BC7-52F161475C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C691BD4D-683D-425B-8BC7-52F161475C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE67A7AE-5C95-4C89-A7C5-EB6C88940B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE67A7AE-5C95-4C89-A7C5-EB6C88940B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE67A7AE-5C95-4C89-A7C5-EB6C88940B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE67A7AE-5C95-4C89-A7C5-EB6C88940B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7172CCB7-70B9-41A4-9D45-FCB156F9DF60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7172CCB7-70B9-41A4-9D45-FCB156F9DF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7172CCB7-70B9-41A4-9D45-FCB156F9DF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7172CCB7-70B9-41A4-9D45-FCB156F9DF60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88C77FC6-144E-4990-8064-510E654327F0}
+	EndGlobalSection
+EndGlobal

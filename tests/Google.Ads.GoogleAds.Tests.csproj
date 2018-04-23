@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;net452</TargetFrameworks>
+    <RootNamespace>Google.Ads.GoogleAds.Tests</RootNamespace>
+    <AssemblyName>Google.Ads.GoogleAds.Tests</AssemblyName>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+  </PropertyGroup>
+  <ItemGroup>
+      <PackageReference Include="Google.Apis.Auth" Version="1.32.2" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+      <PackageReference Include="NUnit" Version="3.10.1" />
+      <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\App.config">
+      <Link>App.config</Link>
+    </None>
+    <EmbeddedResource Include="Util\field_mask_tests.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\Google.Ads.GoogleAds.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="TestResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TestResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="TestResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

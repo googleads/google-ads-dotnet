@@ -1,0 +1,148 @@
+{
+  "testCases": [
+    {
+      "description": "Modify scalar in a wrapper proto",
+      "originalResource": {
+        "wrapper": "a"
+      },
+      "modifiedResource": {
+        "wrapper": "b"
+      },
+      "expectedMask": "wrapper"
+    },
+    {
+      "description": "Create wrapper proto",
+      "originalResource": {
+      },
+      "modifiedResource": {
+        "wrapper": "a"
+      },
+      "expectedMask": "wrapper"
+    },
+    {
+      "description": "Modify element in a repeated field",
+      "originalResource": {
+        "foos": [
+          {
+            "num": "1"
+          },
+          {
+            "num": "2"
+          }
+        ]
+      },
+      "modifiedResource": {
+        "foos": [
+          {
+            "num": "1"
+          },
+          {
+            "num": "3"
+          }
+        ]
+      },
+      "expectedMask": "foos"
+    },
+    {
+      "description": "Modify element in a nested repeated field",
+      "originalResource": {
+        "foos": [
+          {
+            "bars": [
+              {
+                "num": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "modifiedResource": {
+        "foos": [
+          {
+            "bars": [
+              {
+                "num": "2"
+              }
+            ]
+          }
+        ]
+      },
+      "expectedMask": "foos"
+    },
+    {
+      "description": "Create submessages",
+      "originalResource": {
+
+      },
+      "modifiedResource": {
+        "foo": {
+          "bar": {
+          }
+        }
+      },
+      "expectedMask": "foo.num,foo.bar.num,foo.bars"
+    },
+    {
+      "description": "Modify submessage",
+      "originalResource": {
+        "foo": {
+        }
+      },
+      "modifiedResource": {
+        "foo": {
+          "num": "1"
+        }
+      },
+      "expectedMask": "foo.num"
+    },
+    {
+      "description": "Clear submessage",
+      "originalResource": {
+        "foo": {
+        }
+      },
+      "modifiedResource": {
+      },
+      "expectedMask": "foo"
+    },
+    {
+      "description": "No change",
+      "originalResource": {
+        "wrapper": "a",
+        "foos": [
+          {
+            "num": "1"
+          }
+        ]
+      },
+      "modifiedResource": {
+        "wrapper": "a",
+        "foos": [
+          {
+            "num": "1"
+          }
+        ]
+      },
+      "expectedMask": ""
+    },
+    {
+      "description": "Empty initial object (ForObject)",
+      "originalResource": {
+
+      },
+      "modifiedResource": {
+        "wrapper": "a",
+        "foo": {
+          "bar": {
+          }
+        },
+        "foos": [
+          {
+            "num": "1"
+          }
+        ]
+      },
+      "expectedMask": "wrapper,foo.num,foo.bar.num,foo.bars,foos"
+    }
+  ]
+}
