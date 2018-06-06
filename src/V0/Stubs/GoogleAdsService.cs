@@ -33,16 +33,20 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "bXMvZGV2aWNlLnByb3RvGihnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVt",
             "cy9zbG90LnByb3RvGjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJj",
             "ZXMvYWRfZ3JvdXAucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL3Jl",
-            "c291cmNlcy9hZF9ncm91cF9hZC5wcm90bxo6Z29vZ2xlL2Fkcy9nb29nbGVh",
-            "ZHMvdjAvcmVzb3VyY2VzL2FkX2dyb3VwX2NyaXRlcmlvbi5wcm90bxo4Z29v",
-            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2JpZGRpbmdfc3RyYXRl",
-            "Z3kucHJvdG8aMGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcy9j",
-            "YW1wYWlnbi5wcm90bxo3Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3Vy",
-            "Y2VzL2NhbXBhaWduX2J1ZGdldC5wcm90bxo6Z29vZ2xlL2Fkcy9nb29nbGVh",
-            "ZHMvdjAvcmVzb3VyY2VzL2NhbXBhaWduX2NyaXRlcmlvbi5wcm90bxowZ29v",
-            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2N1c3RvbWVyLnByb3Rv",
-            "GjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMva2V5d29yZF92",
-            "aWV3LnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGiBnb29n",
+            "c291cmNlcy9hZF9ncm91cF9hZC5wcm90bxo9Z29vZ2xlL2Fkcy9nb29nbGVh",
+            "ZHMvdjAvcmVzb3VyY2VzL2FkX2dyb3VwX2JpZF9tb2RpZmllci5wcm90bxo6",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2FkX2dyb3VwX2Ny",
+            "aXRlcmlvbi5wcm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3Vy",
+            "Y2VzL2JpZGRpbmdfc3RyYXRlZ3kucHJvdG8aMGdvb2dsZS9hZHMvZ29vZ2xl",
+            "YWRzL3YwL3Jlc291cmNlcy9jYW1wYWlnbi5wcm90bxo3Z29vZ2xlL2Fkcy9n",
+            "b29nbGVhZHMvdjAvcmVzb3VyY2VzL2NhbXBhaWduX2J1ZGdldC5wcm90bxo6",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2NhbXBhaWduX2Ny",
+            "aXRlcmlvbi5wcm90bxowZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3Vy",
+            "Y2VzL2N1c3RvbWVyLnByb3RvGjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9y",
+            "ZXNvdXJjZXMvZ2VvX3RhcmdldF9jb25zdGFudC5wcm90bxo0Z29vZ2xlL2Fk",
+            "cy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2tleXdvcmRfdmlldy5wcm90bxo2",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL3JlY29tbWVuZGF0",
+            "aW9uLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGiBnb29n",
             "bGUvcHJvdG9idWYvZmllbGRfbWFzay5wcm90bxoeZ29vZ2xlL3Byb3RvYnVm",
             "L3dyYXBwZXJzLnByb3RvImMKFlNlYXJjaEdvb2dsZUFkc1JlcXVlc3QSEwoL",
             "Y3VzdG9tZXJfaWQYASABKAkSDQoFcXVlcnkYAiABKAkSEgoKcGFnZV90b2tl",
@@ -50,51 +54,57 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "c1Jlc3BvbnNlEj8KB3Jlc3VsdHMYASADKAsyLi5nb29nbGUuYWRzLmdvb2ds",
             "ZWFkcy52MC5zZXJ2aWNlcy5Hb29nbGVBZHNSb3cSFwoPbmV4dF9wYWdlX3Rv",
             "a2VuGAIgASgJEhsKE3RvdGFsX3Jlc3VsdHNfY291bnQYAyABKAMSLgoKZmll",
-            "bGRfbWFzaxgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2si+AkK",
+            "bGRfbWFzaxgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2si7AsK",
             "DEdvb2dsZUFkc1JvdxI8CghhZF9ncm91cBgDIAEoCzIqLmdvb2dsZS5hZHMu",
             "Z29vZ2xlYWRzLnYwLnJlc291cmNlcy5BZEdyb3VwEkEKC2FkX2dyb3VwX2Fk",
             "GBAgASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkFk",
-            "R3JvdXBBZBJPChJhZF9ncm91cF9jcml0ZXJpb24YESABKAsyMy5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQWRHcm91cENyaXRlcmlvbhJM",
-            "ChBiaWRkaW5nX3N0cmF0ZWd5GBIgASgLMjIuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAucmVzb3VyY2VzLkJpZGRpbmdTdHJhdGVneRJKCg9jYW1wYWlnbl9i",
-            "dWRnZXQYEyABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJj",
-            "ZXMuQ2FtcGFpZ25CdWRnZXQSPQoIY2FtcGFpZ24YAiABKAsyKy5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQ2FtcGFpZ24SUAoSY2FtcGFp",
-            "Z25fY3JpdGVyaW9uGBQgASgLMjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "cmVzb3VyY2VzLkNhbXBhaWduQ3JpdGVyaW9uEj0KCGN1c3RvbWVyGAEgASgL",
-            "MisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkN1c3RvbWVy",
-            "EkQKDGtleXdvcmRfdmlldxgVIAEoCzIuLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLnJlc291cmNlcy5LZXl3b3JkVmlldxI4CgdtZXRyaWNzGAQgASgLMicu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLk1ldHJpY3MSVwoPYWRf",
-            "bmV0d29ya190eXBlGAUgASgOMj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "ZW51bXMuQWROZXR3b3JrVHlwZUVudW0uQWROZXR3b3JrVHlwZRIqCgRkYXRl",
-            "GAYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEksKC2RheV9v",
-            "Zl93ZWVrGAcgASgOMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMu",
-            "RGF5T2ZXZWVrRW51bS5EYXlPZldlZWsSQAoGZGV2aWNlGAggASgOMjAuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuRGV2aWNlRW51bS5EZXZpY2US",
-            "KQoEaG91chgJIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlEisK",
-            "BW1vbnRoGAogASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEi0K",
-            "B3F1YXJ0ZXIYDCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "OgoEc2xvdBgNIAEoDjIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
-            "LlNsb3RFbnVtLlNsb3QSKgoEd2VlaxgOIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRIpCgR5ZWFyGA8gASgLMhsuZ29vZ2xlLnByb3RvYnVm",
-            "LkludDMyVmFsdWUyzQEKEEdvb2dsZUFkc1NlcnZpY2USuAEKBlNlYXJjaBI4",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLlNlYXJjaEdvb2ds",
-            "ZUFkc1JlcXVlc3QaOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNl",
-            "cy5TZWFyY2hHb29nbGVBZHNSZXNwb25zZSI5gtPkkwIzIi4vdjAvY3VzdG9t",
-            "ZXJzL3tjdXN0b21lcl9pZD0qfS9nb29nbGVBZHM6c2VhcmNoOgEqQtUBCiRj",
-            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXNCFUdvb2dsZUFk",
-            "c1NlcnZpY2VQcm90b1ABWkhnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
-            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvc2VydmljZXM7c2VydmljZXOi",
-            "AgNHQUGqAiBHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5TZXJ2aWNlc8oCIEdv",
-            "b2dsZVxBZHNcR29vZ2xlQWRzXFYwXFNlcnZpY2VzYgZwcm90bzM="));
+            "R3JvdXBBZBJUChVhZF9ncm91cF9iaWRfbW9kaWZpZXIYGCABKAsyNS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQWRHcm91cEJpZE1vZGlm",
+            "aWVyEk8KEmFkX2dyb3VwX2NyaXRlcmlvbhgRIAEoCzIzLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLnJlc291cmNlcy5BZEdyb3VwQ3JpdGVyaW9uEkwKEGJp",
+            "ZGRpbmdfc3RyYXRlZ3kYEiABKAsyMi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5yZXNvdXJjZXMuQmlkZGluZ1N0cmF0ZWd5EkoKD2NhbXBhaWduX2J1ZGdl",
+            "dBgTIAEoCzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5D",
+            "YW1wYWlnbkJ1ZGdldBI9CghjYW1wYWlnbhgCIAEoCzIrLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLnJlc291cmNlcy5DYW1wYWlnbhJQChJjYW1wYWlnbl9j",
+            "cml0ZXJpb24YFCABKAsyNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNv",
+            "dXJjZXMuQ2FtcGFpZ25Dcml0ZXJpb24SPQoIY3VzdG9tZXIYASABKAsyKy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQ3VzdG9tZXISUQoT",
+            "Z2VvX3RhcmdldF9jb25zdGFudBgXIAEoCzI0Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLnJlc291cmNlcy5HZW9UYXJnZXRDb25zdGFudBJECgxrZXl3b3Jk",
+            "X3ZpZXcYFSABKAsyLi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJj",
+            "ZXMuS2V5d29yZFZpZXcSSQoOcmVjb21tZW5kYXRpb24YFiABKAsyMS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuUmVjb21tZW5kYXRpb24S",
+            "OAoHbWV0cmljcxgEIAEoCzInLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNv",
+            "bW1vbi5NZXRyaWNzElcKD2FkX25ldHdvcmtfdHlwZRgFIAEoDjI+Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkFkTmV0d29ya1R5cGVFbnVtLkFk",
+            "TmV0d29ya1R5cGUSKgoEZGF0ZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRJLCgtkYXlfb2Zfd2VlaxgHIAEoDjI2Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmVudW1zLkRheU9mV2Vla0VudW0uRGF5T2ZXZWVrEkAK",
+            "BmRldmljZRgIIAEoDjIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
+            "LkRldmljZUVudW0uRGV2aWNlEikKBGhvdXIYCSABKAsyGy5nb29nbGUucHJv",
+            "dG9idWYuSW50MzJWYWx1ZRIrCgVtb250aBgKIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5TdHJpbmdWYWx1ZRItCgdxdWFydGVyGAwgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEjoKBHNsb3QYDSABKA4yLC5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5lbnVtcy5TbG90RW51bS5TbG90EioKBHdlZWsYDiAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKQoEeWVhchgPIAEo",
+            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlMs0BChBHb29nbGVBZHNT",
+            "ZXJ2aWNlErgBCgZTZWFyY2gSOC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5z",
+            "ZXJ2aWNlcy5TZWFyY2hHb29nbGVBZHNSZXF1ZXN0GjkuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjAuc2VydmljZXMuU2VhcmNoR29vZ2xlQWRzUmVzcG9uc2Ui",
+            "OYLT5JMCMyIuL3YwL2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn0vZ29vZ2xl",
+            "QWRzOnNlYXJjaDoBKkLVAQokY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LnNlcnZpY2VzQhVHb29nbGVBZHNTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdv",
+            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
+            "L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjAuU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxTZXJ2",
+            "aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.MetricsReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdNetworkTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.SlotReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.BiddingStrategyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignBudgetReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CustomerReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.KeywordViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.MetricsReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdNetworkTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.SlotReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifierReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.BiddingStrategyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignBudgetReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CustomerReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstantReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.KeywordViewReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.RecommendationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsRequest), global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsRequest.Parser, new[]{ "CustomerId", "Query", "PageToken", "PageSize" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsResponse), global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsResponse.Parser, new[]{ "Results", "NextPageToken", "TotalResultsCount", "FieldMask" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow), global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow.Parser, new[]{ "AdGroup", "AdGroupAd", "AdGroupCriterion", "BiddingStrategy", "CampaignBudget", "Campaign", "CampaignCriterion", "Customer", "KeywordView", "Metrics", "AdNetworkType", "Date", "DayOfWeek", "Device", "Hour", "Month", "Quarter", "Slot", "Week", "Year" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow), global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow.Parser, new[]{ "AdGroup", "AdGroupAd", "AdGroupBidModifier", "AdGroupCriterion", "BiddingStrategy", "CampaignBudget", "Campaign", "CampaignCriterion", "Customer", "GeoTargetConstant", "KeywordView", "Recommendation", "Metrics", "AdNetworkType", "Date", "DayOfWeek", "Device", "Hour", "Month", "Quarter", "Slot", "Week", "Year" }, null, null, null)
           }));
     }
     #endregion
@@ -594,13 +604,16 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public GoogleAdsRow(GoogleAdsRow other) : this() {
       AdGroup = other.adGroup_ != null ? other.AdGroup.Clone() : null;
       AdGroupAd = other.adGroupAd_ != null ? other.AdGroupAd.Clone() : null;
+      AdGroupBidModifier = other.adGroupBidModifier_ != null ? other.AdGroupBidModifier.Clone() : null;
       AdGroupCriterion = other.adGroupCriterion_ != null ? other.AdGroupCriterion.Clone() : null;
       BiddingStrategy = other.biddingStrategy_ != null ? other.BiddingStrategy.Clone() : null;
       CampaignBudget = other.campaignBudget_ != null ? other.CampaignBudget.Clone() : null;
       Campaign = other.campaign_ != null ? other.Campaign.Clone() : null;
       CampaignCriterion = other.campaignCriterion_ != null ? other.CampaignCriterion.Clone() : null;
       Customer = other.customer_ != null ? other.Customer.Clone() : null;
+      GeoTargetConstant = other.geoTargetConstant_ != null ? other.GeoTargetConstant.Clone() : null;
       KeywordView = other.keywordView_ != null ? other.KeywordView.Clone() : null;
+      Recommendation = other.recommendation_ != null ? other.Recommendation.Clone() : null;
       Metrics = other.metrics_ != null ? other.Metrics.Clone() : null;
       adNetworkType_ = other.adNetworkType_;
       Date = other.Date;
@@ -645,6 +658,20 @@ namespace Google.Ads.GoogleAds.V0.Services {
       get { return adGroupAd_; }
       set {
         adGroupAd_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ad_group_bid_modifier" field.</summary>
+    public const int AdGroupBidModifierFieldNumber = 24;
+    private global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier adGroupBidModifier_;
+    /// <summary>
+    /// The bid modifier referenced in the query.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier AdGroupBidModifier {
+      get { return adGroupBidModifier_; }
+      set {
+        adGroupBidModifier_ = value;
       }
     }
 
@@ -732,6 +759,20 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
     }
 
+    /// <summary>Field number for the "geo_target_constant" field.</summary>
+    public const int GeoTargetConstantFieldNumber = 23;
+    private global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant geoTargetConstant_;
+    /// <summary>
+    /// The geo target constant referenced in the query.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant GeoTargetConstant {
+      get { return geoTargetConstant_; }
+      set {
+        geoTargetConstant_ = value;
+      }
+    }
+
     /// <summary>Field number for the "keyword_view" field.</summary>
     public const int KeywordViewFieldNumber = 21;
     private global::Google.Ads.GoogleAds.V0.Resources.KeywordView keywordView_;
@@ -743,6 +784,20 @@ namespace Google.Ads.GoogleAds.V0.Services {
       get { return keywordView_; }
       set {
         keywordView_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recommendation" field.</summary>
+    public const int RecommendationFieldNumber = 22;
+    private global::Google.Ads.GoogleAds.V0.Resources.Recommendation recommendation_;
+    /// <summary>
+    /// The recommendation referenced in the query.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.Recommendation Recommendation {
+      get { return recommendation_; }
+      set {
+        recommendation_ = value;
       }
     }
 
@@ -925,13 +980,16 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
       if (!object.Equals(AdGroup, other.AdGroup)) return false;
       if (!object.Equals(AdGroupAd, other.AdGroupAd)) return false;
+      if (!object.Equals(AdGroupBidModifier, other.AdGroupBidModifier)) return false;
       if (!object.Equals(AdGroupCriterion, other.AdGroupCriterion)) return false;
       if (!object.Equals(BiddingStrategy, other.BiddingStrategy)) return false;
       if (!object.Equals(CampaignBudget, other.CampaignBudget)) return false;
       if (!object.Equals(Campaign, other.Campaign)) return false;
       if (!object.Equals(CampaignCriterion, other.CampaignCriterion)) return false;
       if (!object.Equals(Customer, other.Customer)) return false;
+      if (!object.Equals(GeoTargetConstant, other.GeoTargetConstant)) return false;
       if (!object.Equals(KeywordView, other.KeywordView)) return false;
+      if (!object.Equals(Recommendation, other.Recommendation)) return false;
       if (!object.Equals(Metrics, other.Metrics)) return false;
       if (AdNetworkType != other.AdNetworkType) return false;
       if (Date != other.Date) return false;
@@ -951,13 +1009,16 @@ namespace Google.Ads.GoogleAds.V0.Services {
       int hash = 1;
       if (adGroup_ != null) hash ^= AdGroup.GetHashCode();
       if (adGroupAd_ != null) hash ^= AdGroupAd.GetHashCode();
+      if (adGroupBidModifier_ != null) hash ^= AdGroupBidModifier.GetHashCode();
       if (adGroupCriterion_ != null) hash ^= AdGroupCriterion.GetHashCode();
       if (biddingStrategy_ != null) hash ^= BiddingStrategy.GetHashCode();
       if (campaignBudget_ != null) hash ^= CampaignBudget.GetHashCode();
       if (campaign_ != null) hash ^= Campaign.GetHashCode();
       if (campaignCriterion_ != null) hash ^= CampaignCriterion.GetHashCode();
       if (customer_ != null) hash ^= Customer.GetHashCode();
+      if (geoTargetConstant_ != null) hash ^= GeoTargetConstant.GetHashCode();
       if (keywordView_ != null) hash ^= KeywordView.GetHashCode();
+      if (recommendation_ != null) hash ^= Recommendation.GetHashCode();
       if (metrics_ != null) hash ^= Metrics.GetHashCode();
       if (AdNetworkType != 0) hash ^= AdNetworkType.GetHashCode();
       if (date_ != null) hash ^= Date.GetHashCode();
@@ -1056,6 +1117,18 @@ namespace Google.Ads.GoogleAds.V0.Services {
         output.WriteRawTag(170, 1);
         output.WriteMessage(KeywordView);
       }
+      if (recommendation_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(Recommendation);
+      }
+      if (geoTargetConstant_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(GeoTargetConstant);
+      }
+      if (adGroupBidModifier_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(AdGroupBidModifier);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1069,6 +1142,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
       if (adGroupAd_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(AdGroupAd);
+      }
+      if (adGroupBidModifier_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AdGroupBidModifier);
       }
       if (adGroupCriterion_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(AdGroupCriterion);
@@ -1088,8 +1164,14 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (customer_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customer);
       }
+      if (geoTargetConstant_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(GeoTargetConstant);
+      }
       if (keywordView_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(KeywordView);
+      }
+      if (recommendation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Recommendation);
       }
       if (metrics_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Metrics);
@@ -1147,6 +1229,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
         }
         AdGroupAd.MergeFrom(other.AdGroupAd);
       }
+      if (other.adGroupBidModifier_ != null) {
+        if (adGroupBidModifier_ == null) {
+          adGroupBidModifier_ = new global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier();
+        }
+        AdGroupBidModifier.MergeFrom(other.AdGroupBidModifier);
+      }
       if (other.adGroupCriterion_ != null) {
         if (adGroupCriterion_ == null) {
           adGroupCriterion_ = new global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion();
@@ -1183,11 +1271,23 @@ namespace Google.Ads.GoogleAds.V0.Services {
         }
         Customer.MergeFrom(other.Customer);
       }
+      if (other.geoTargetConstant_ != null) {
+        if (geoTargetConstant_ == null) {
+          geoTargetConstant_ = new global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant();
+        }
+        GeoTargetConstant.MergeFrom(other.GeoTargetConstant);
+      }
       if (other.keywordView_ != null) {
         if (keywordView_ == null) {
           keywordView_ = new global::Google.Ads.GoogleAds.V0.Resources.KeywordView();
         }
         KeywordView.MergeFrom(other.KeywordView);
+      }
+      if (other.recommendation_ != null) {
+        if (recommendation_ == null) {
+          recommendation_ = new global::Google.Ads.GoogleAds.V0.Resources.Recommendation();
+        }
+        Recommendation.MergeFrom(other.Recommendation);
       }
       if (other.metrics_ != null) {
         if (metrics_ == null) {
@@ -1374,6 +1474,27 @@ namespace Google.Ads.GoogleAds.V0.Services {
               keywordView_ = new global::Google.Ads.GoogleAds.V0.Resources.KeywordView();
             }
             input.ReadMessage(keywordView_);
+            break;
+          }
+          case 178: {
+            if (recommendation_ == null) {
+              recommendation_ = new global::Google.Ads.GoogleAds.V0.Resources.Recommendation();
+            }
+            input.ReadMessage(recommendation_);
+            break;
+          }
+          case 186: {
+            if (geoTargetConstant_ == null) {
+              geoTargetConstant_ = new global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant();
+            }
+            input.ReadMessage(geoTargetConstant_);
+            break;
+          }
+          case 194: {
+            if (adGroupBidModifier_ == null) {
+              adGroupBidModifier_ = new global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier();
+            }
+            input.ReadMessage(adGroupBidModifier_);
             break;
           }
         }

@@ -26,27 +26,24 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYXV0aGVudGljYXRp",
             "b25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
-            "cyLCBQoXQXV0aGVudGljYXRpb25FcnJvckVudW0ipgUKE0F1dGhlbnRpY2F0",
+            "cyLABAoXQXV0aGVudGljYXRpb25FcnJvckVudW0ipAQKE0F1dGhlbnRpY2F0",
             "aW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGAoUQVVU",
-            "SEVOVElDQVRJT05fRVJST1IQAhIiCh5DTElFTlRfQ1VTVE9NRVJfSURfSVNf",
-            "UkVRVUlSRUQQAxIZChVDTElFTlRfRU1BSUxfUkVRVUlSRUQQBBIeChpDTElF",
-            "TlRfQ1VTVE9NRVJfSURfSU5WQUxJRBAFEhgKFENMSUVOVF9FTUFJTF9JTlZB",
-            "TElEEAYSJwojQ0xJRU5UX0VNQUlMX0ZBSUxFRF9UT19BVVRIRU5USUNBVEUQ",
-            "BxIWChJDVVNUT01FUl9OT1RfRk9VTkQQCBIaChZHT09HTEVfQUNDT1VOVF9E",
-            "RUxFVEVEEAkSIQodR09PR0xFX0FDQ09VTlRfQ09PS0lFX0lOVkFMSUQQChIp",
-            "CiVGQUlMRURfVE9fQVVUSEVOVElDQVRFX0dPT0dMRV9BQ0NPVU5UEAsSLQop",
-            "R09PR0xFX0FDQ09VTlRfVVNFUl9BTkRfQURTX1VTRVJfTUlTTUFUQ0gQDBIZ",
-            "ChVMT0dJTl9DT09LSUVfUkVRVUlSRUQQDRIQCgxOT1RfQURTX1VTRVIQDhIX",
-            "ChNPQVVUSF9UT0tFTl9JTlZBTElEEA8SFwoTT0FVVEhfVE9LRU5fRVhQSVJF",
-            "RBAQEhgKFE9BVVRIX1RPS0VOX0RJU0FCTEVEEBESFwoTT0FVVEhfVE9LRU5f",
-            "UkVWT0tFRBASEh4KGk9BVVRIX1RPS0VOX0hFQURFUl9JTlZBTElEEBMSGAoU",
-            "TE9HSU5fQ09PS0lFX0lOVkFMSUQQFBIjCh9GQUlMRURfVE9fUkVUUklFVkVf",
-            "TE9HSU5fQ09PS0lFEBUSEwoPVVNFUl9JRF9JTlZBTElEEBZCzgEKImNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCGEF1dGhlbnRpY2F0aW9u",
-            "RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
-            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "SEVOVElDQVRJT05fRVJST1IQAhIeChpDTElFTlRfQ1VTVE9NRVJfSURfSU5W",
+            "QUxJRBAFEhYKEkNVU1RPTUVSX05PVF9GT1VORBAIEhoKFkdPT0dMRV9BQ0NP",
+            "VU5UX0RFTEVURUQQCRIhCh1HT09HTEVfQUNDT1VOVF9DT09LSUVfSU5WQUxJ",
+            "RBAKEikKJUZBSUxFRF9UT19BVVRIRU5USUNBVEVfR09PR0xFX0FDQ09VTlQQ",
+            "CxItCilHT09HTEVfQUNDT1VOVF9VU0VSX0FORF9BRFNfVVNFUl9NSVNNQVRD",
+            "SBAMEhkKFUxPR0lOX0NPT0tJRV9SRVFVSVJFRBANEhAKDE5PVF9BRFNfVVNF",
+            "UhAOEhcKE09BVVRIX1RPS0VOX0lOVkFMSUQQDxIXChNPQVVUSF9UT0tFTl9F",
+            "WFBJUkVEEBASGAoUT0FVVEhfVE9LRU5fRElTQUJMRUQQERIXChNPQVVUSF9U",
+            "T0tFTl9SRVZPS0VEEBISHgoaT0FVVEhfVE9LRU5fSEVBREVSX0lOVkFMSUQQ",
+            "ExIYChRMT0dJTl9DT09LSUVfSU5WQUxJRBAUEiMKH0ZBSUxFRF9UT19SRVRS",
+            "SUVWRV9MT0dJTl9DT09LSUUQFRITCg9VU0VSX0lEX0lOVkFMSUQQFkLOAQoi",
+            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IYQXV0aGVudGlj",
+            "YXRpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3JzogID",
+            "R0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -180,28 +177,9 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("AUTHENTICATION_ERROR")] AuthenticationError = 2,
         /// <summary>
-        /// Client Customer Id is required if CustomerIdMode is set to
-        /// CLIENT_EXTERNAL_CUSTOMER_ID. Starting version V201409 ClientCustomerId
-        /// will be required for all requests except for {@link CustomerService#get}
-        /// </summary>
-        [pbr::OriginalName("CLIENT_CUSTOMER_ID_IS_REQUIRED")] ClientCustomerIdIsRequired = 3,
-        /// <summary>
-        /// Client Email is required if CustomerIdMode is set to
-        /// CLIENT_EXTERNAL_EMAIL_FIELD.
-        /// </summary>
-        [pbr::OriginalName("CLIENT_EMAIL_REQUIRED")] ClientEmailRequired = 4,
-        /// <summary>
         /// Client customer Id is not a number.
         /// </summary>
         [pbr::OriginalName("CLIENT_CUSTOMER_ID_INVALID")] ClientCustomerIdInvalid = 5,
-        /// <summary>
-        /// Client customer Id is not a number.
-        /// </summary>
-        [pbr::OriginalName("CLIENT_EMAIL_INVALID")] ClientEmailInvalid = 6,
-        /// <summary>
-        /// Client email is not a valid customer email.
-        /// </summary>
-        [pbr::OriginalName("CLIENT_EMAIL_FAILED_TO_AUTHENTICATE")] ClientEmailFailedToAuthenticate = 7,
         /// <summary>
         /// No customer found for the customer id provided in the header.
         /// </summary>

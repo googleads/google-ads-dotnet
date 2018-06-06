@@ -25,14 +25,15 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jcml0ZXJpb25fdHlw",
-            "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMiTwoRQ3Jp",
-            "dGVyaW9uVHlwZUVudW0iOgoNQ3JpdGVyaW9uVHlwZRIPCgtVTlNQRUNJRklF",
-            "RBAAEgsKB1VOS05PV04QARILCgdLRVlXT1JEEAJCwwEKIWNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5lbnVtc0ISQ3JpdGVyaW9uVHlwZVByb3RvUAFa",
-            "Qmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51",
-            "bXNiBnByb3RvMw=="));
+            "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMifgoRQ3Jp",
+            "dGVyaW9uVHlwZUVudW0iaQoNQ3JpdGVyaW9uVHlwZRIPCgtVTlNQRUNJRklF",
+            "RBAAEgsKB1VOS05PV04QARILCgdLRVlXT1JEEAISDAoIUExBVEZPUk0QBhIM",
+            "CghMT0NBVElPThAHEhEKDUxJU1RJTkdfR1JPVVAQCELDAQohY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhJDcml0ZXJpb25UeXBlUHJvdG9Q",
+            "AVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5H",
+            "b29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxF",
+            "bnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -165,6 +166,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Keyword. e.g. 'mars cruise'.
         /// </summary>
         [pbr::OriginalName("KEYWORD")] Keyword = 2,
+        /// <summary>
+        /// Platforms to target.
+        /// </summary>
+        [pbr::OriginalName("PLATFORM")] Platform = 6,
+        /// <summary>
+        /// Locations to target.
+        /// </summary>
+        [pbr::OriginalName("LOCATION")] Location = 7,
+        /// <summary>
+        /// Listing groups to target.
+        /// </summary>
+        [pbr::OriginalName("LISTING_GROUP")] ListingGroup = 8,
       }
 
     }

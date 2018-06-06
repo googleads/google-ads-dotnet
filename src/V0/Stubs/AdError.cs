@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYWRfZXJyb3IucHJv",
-            "dG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyKhIAoLQWRFcnJv",
-            "ckVudW0ikSAKB0FkRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dO",
+            "dG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyLKIAoLQWRFcnJv",
+            "ckVudW0iuiAKB0FkRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dO",
             "EAESLAooQURfQ1VTVE9NSVpFUlNfTk9UX1NVUFBPUlRFRF9GT1JfQURfVFlQ",
             "RRACEhoKFkFQUFJPWElNQVRFTFlfVE9PX0xPTkcQAxIbChdBUFBST1hJTUFU",
             "RUxZX1RPT19TSE9SVBAEEg8KC0JBRF9TTklQUEVUEAUSFAoQQ0FOTk9UX01P",
@@ -117,12 +117,13 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "WVBFX0lEEH4SPQo5Q0FOTk9UX0RJU0FCTEVfQ0FMTF9DT05WRVJTSU9OX0FO",
             "RF9TRVRfQ09OVkVSU0lPTl9UWVBFX0lEEH8SIwoeQ0FOTk9UX1NFVF9QQVRI",
             "Ml9XSVRIT1VUX1BBVEgxEIABEjMKLk1JU1NJTkdfRFlOQU1JQ19TRUFSQ0hf",
-            "QURTX1NFVFRJTkdfRE9NQUlOX05BTUUQgQFCwgEKImNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MC5lcnJvcnNCDEFkRXJyb3JQcm90b1ABWkRnb29nbGUu",
-            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
-            "djAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IG",
-            "cHJvdG8z"));
+            "QURTX1NFVFRJTkdfRE9NQUlOX05BTUUQgQESJwoiSU5DT01QQVRJQkxFX1dJ",
+            "VEhfUkVTVFJJQ1RJT05fVFlQRRCCAULCAQoiY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmVycm9yc0IMQWRFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9l",
+            "cnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAu",
+            "RXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -787,6 +788,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// search ad.
         /// </summary>
         [pbr::OriginalName("MISSING_DYNAMIC_SEARCH_ADS_SETTING_DOMAIN_NAME")] MissingDynamicSearchAdsSettingDomainName = 129,
+        /// <summary>
+        /// The associated ad is not compatible with restriction type.
+        /// </summary>
+        [pbr::OriginalName("INCOMPATIBLE_WITH_RESTRICTION_TYPE")] IncompatibleWithRestrictionType = 130,
       }
 
     }

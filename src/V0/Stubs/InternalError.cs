@@ -25,15 +25,15 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvaW50ZXJuYWxfZXJy",
-            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyJ0ChFJ",
-            "bnRlcm5hbEVycm9yRW51bSJfCg1JbnRlcm5hbEVycm9yEg8KC1VOU1BFQ0lG",
-            "SUVEEAASCwoHVU5LTk9XThABEhIKDklOVEVSTkFMX0VSUk9SEAISHAoYRVJS",
-            "T1JfQ09ERV9OT1RfUFVCTElTSEVEEANCyAEKImNvbS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5lcnJvcnNCEkludGVybmFsRXJyb3JQcm90b1ABWkRnb29n",
-            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
-            "ZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xl",
-            "QWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9y",
-            "c2IGcHJvdG8z"));
+            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyKJAQoR",
+            "SW50ZXJuYWxFcnJvckVudW0idAoNSW50ZXJuYWxFcnJvchIPCgtVTlNQRUNJ",
+            "RklFRBAAEgsKB1VOS05PV04QARISCg5JTlRFUk5BTF9FUlJPUhACEhwKGEVS",
+            "Uk9SX0NPREVfTk9UX1BVQkxJU0hFRBADEhMKD1RSQU5TSUVOVF9FUlJPUhAE",
+            "QsgBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQhJJbnRl",
+            "cm5hbEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNH",
+            "QUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -171,6 +171,11 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// fixed by adding a new error code as soon as possible.
         /// </summary>
         [pbr::OriginalName("ERROR_CODE_NOT_PUBLISHED")] ErrorCodeNotPublished = 3,
+        /// <summary>
+        /// Google Ads API encountered an unexpected transient error. The user
+        /// should retry their request in these cases.
+        /// </summary>
+        [pbr::OriginalName("TRANSIENT_ERROR")] TransientError = 4,
       }
 
     }

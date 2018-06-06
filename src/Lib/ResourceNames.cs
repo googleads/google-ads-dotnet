@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="adGroupId">The ad group ID.</param>
     /// <returns>The ad group resource name.</returns>
     public static string AdGroup(long customerId, long adGroupId) {
-      return string.Format("customers/{0}/adGroups/{1}", customerId, adGroupId);
+      return $"customers/{customerId}/adGroups/{adGroupId}";
     }
 
     /// <summary>
@@ -37,7 +37,7 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="adId">The ad ID.</param>
     /// <returns>The ad group ad resource name.</returns>
     public static string AdGroupAd(long customerId, long adGroupId, long adId) {
-      return string.Format("customers/{0}/adGroupAds/{1}_{2}", customerId, adGroupId, adId);
+      return $"customers/{customerId}/adGroupAds/{adGroupId}_{adId}";
     }
 
     /// <summary>
@@ -48,8 +48,7 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="criterionId">The criterion ID.</param>
     /// <returns>The ad group criterion resource name.</returns>
     public static string AdGroupCriterion(long customerId, long adGroupId, long criterionId) {
-      return string.Format("customers/{0}/adGroupCriteria/{1}_{2}",
-          customerId, adGroupId, criterionId);
+      return $"customers/{customerId}/adGroupCriteria/{adGroupId}_{criterionId}";
     }
 
     /// <summary>
@@ -59,7 +58,7 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="biddingStrategyId">The bidding strategy ID.</param>
     /// <returns>The bidding strategy resource name.</returns>
     public static string BiddingStrategy(long customerId, long biddingStrategyId) {
-      return string.Format("customers/{0}/biddingStrategies/{1}", customerId, biddingStrategyId);
+      return $"customers/{customerId}/biddingStrategies/{biddingStrategyId}";
     }
 
     /// <summary>
@@ -69,7 +68,7 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="budgetId">The budget ID.</param>
     /// <returns>The budget resource name.</returns>
     public static string Budget(long customerId, long budgetId) {
-      return string.Format("customers/{0}/budgets/{1}", customerId, budgetId);
+      return $"customers/{customerId}/budgets/{budgetId}";
     }
 
     /// <summary>
@@ -79,7 +78,7 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="campaignId">The campaign ID.</param>
     /// <returns>The campaign resource name.</returns>
     public static string Campaign(long customerId, long campaignId) {
-      return string.Format("customers/{0}/campaigns/{1}", customerId, campaignId);
+      return $"customers/{customerId}/campaigns/{campaignId}";
     }
 
     /// <summary>
@@ -90,8 +89,7 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="criterionId">The criterion ID.</param>
     /// <returns>The campaign criterion resource name.</returns>
     public static string CampaignCriterion(long customerId, long campaignId, long criterionId) {
-      return string.Format("customers/{0}/campaignCriteria/{1}_{2}", customerId, campaignId,
-          criterionId);
+      return $"customers/{customerId}/campaignCriteria/{campaignId}_{criterionId}";
     }
 
     /// <summary>
@@ -100,7 +98,7 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="customerId">The customer ID.</param>
     /// <returns>The customer resource name.</returns>
     public static string Customer(long customerId) {
-      return string.Format("customers/{0}/", customerId);
+      return $"customers/{customerId}";
     }
 
     /// <summary>
@@ -109,7 +107,7 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="fieldName">Name of the field.</param>
     /// <returns>The field resource name.</returns>
     public static string GoogleAdsField(long fieldName) {
-      return string.Format("googleAdsFields/{0}/", fieldName);
+      return $"googleAdsFields/{fieldName}";
     }
 
     /// <summary>
@@ -120,8 +118,37 @@ namespace Google.Ads.GoogleAds.Lib {
     /// <param name="criterionId">The criterion ID.</param>
     /// <returns>The keyword view resource name.</returns>
     public static string KeywordView(long customerId, long adGroupId, long criterionId) {
-      return string.Format("customers/{0}/keywordViews/{1}_{2}", customerId, adGroupId,
-          criterionId);
+      return $"customers/{customerId}/keywordViews/{adGroupId}_{criterionId}";
+    }
+
+    /// <summary>
+    /// Generate resource name for an ad group bid modifier.
+    /// </summary>
+    /// <param name="customerId">The customer ID.</param>
+    /// <param name="adGroupId">The ad group ID.</param>
+    /// <param name="criterionId">The criterion ID.</param>
+    /// <returns>The ad group bid modifier resource name.</returns>
+    public static string AdGroupBidModifier(long customerId, long adGroupId, long criterionId) {
+      return $"customers/{customerId}/adGroupBidModifiers/{adGroupId}_{criterionId}";
+    }
+
+    /// <summary>
+    /// Generate resource name for a recommendation.
+    /// </summary>
+    /// <param name="customerId">The customer ID.</param>
+    /// <param name="recommendationId">The recommendation ID.</param>
+    /// <returns>The recommendation resource name.</returns>
+    public static string Recommendation(long customerId, long recommendationId) {
+      return $"customers/{customerId}/recommendations/{recommendationId}";
+    }
+
+    /// <summary>
+    /// Generate resource name for a geo target constant.
+    /// </summary>
+    /// <param name="geoTargetConstantId">The geo target constant ID.</param>
+    /// <returns>The geo target constant resource name.</returns>
+    public static string GeoTargetConstant(long geoTargetConstantId) {
+      return $"geoTargetConstants/{geoTargetConstantId}";
     }
   }
 }

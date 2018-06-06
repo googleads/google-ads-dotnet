@@ -37,7 +37,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "YWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jYW1wYWlnbl9zZXJ2aW5nX3N0YXR1",
             "cy5wcm90bxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvY2FtcGFp",
             "Z25fc3RhdHVzLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJv",
-            "dG8ixBIKCENhbXBhaWduEhUKDXJlc291cmNlX25hbWUYASABKAkSJwoCaWQY",
+            "dG8i4xMKCENhbXBhaWduEhUKDXJlc291cmNlX25hbWUYASABKAkSJwoCaWQY",
             "AyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIqCgRuYW1lGAQg",
             "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElAKBnN0YXR1cxgF",
             "IAEoDjJALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkNhbXBhaWdu",
@@ -57,48 +57,53 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "ZXRlcnMYDCADKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24u",
             "Q3VzdG9tUGFyYW1ldGVyElUKEG5ldHdvcmtfc2V0dGluZ3MYDiABKAsyOy5n",
             "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQ2FtcGFpZ24uTmV0",
-            "d29ya1NldHRpbmdzEmcKGmR5bmFtaWNfc2VhcmNoX2Fkc19zZXR0aW5nGCEg",
-            "ASgLMkMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkNhbXBh",
-            "aWduLkR5bmFtaWNTZWFyY2hBZHNTZXR0aW5nEjUKD2NhbXBhaWduX2J1ZGdl",
-            "dBgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJpChViaWRk",
-            "aW5nX3N0cmF0ZWd5X3R5cGUYFiABKA4ySi5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MC5lbnVtcy5CaWRkaW5nU3RyYXRlZ3lUeXBlRW51bS5CaWRkaW5nU3Ry",
-            "YXRlZ3lUeXBlEjAKCnN0YXJ0X2RhdGUYEyABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSLgoIZW5kX2RhdGUYFCABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUSOAoQYmlkZGluZ19zdHJhdGVneRgXIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUgAEj8KCm1hbnVhbF9jcGMY",
-            "GCABKAsyKS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uTWFudWFs",
-            "Q3BjSAASPwoKbWFudWFsX2NwbRgZIAEoCzIpLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmNvbW1vbi5NYW51YWxDcG1IABJTChRtYXhpbWl6ZV9jb252ZXJz",
-            "aW9ucxgeIAEoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5N",
-            "YXhpbWl6ZUNvbnZlcnNpb25zSAASXAoZbWF4aW1pemVfY29udmVyc2lvbl92",
-            "YWx1ZRgfIAEoCzI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5N",
-            "YXhpbWl6ZUNvbnZlcnNpb25WYWx1ZUgAEj8KCnRhcmdldF9jcGEYGiABKAsy",
-            "KS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uVGFyZ2V0Q3BhSAAS",
-            "QQoLdGFyZ2V0X3JvYXMYHSABKAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5jb21tb24uVGFyZ2V0Um9hc0gAEkMKDHRhcmdldF9zcGVuZBgbIAEoCzIr",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5UYXJnZXRTcGVuZEgA",
-            "GoUCCg9OZXR3b3JrU2V0dGluZ3MSOAoUdGFyZ2V0X2dvb2dsZV9zZWFyY2gY",
-            "ASABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjkKFXRhcmdldF9z",
-            "ZWFyY2hfbmV0d29yaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFs",
-            "dWUSOgoWdGFyZ2V0X2NvbnRlbnRfbmV0d29yaxgDIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5Cb29sVmFsdWUSQQoddGFyZ2V0X3BhcnRuZXJfc2VhcmNoX25l",
-            "dHdvcmsYBCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlGuwBChdE",
-            "eW5hbWljU2VhcmNoQWRzU2V0dGluZxIxCgtkb21haW5fbmFtZRgBIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1sYW5ndWFnZV9jb2Rl",
-            "GAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjoKFnVzZV9z",
-            "dXBwbGllZF91cmxzX29ubHkYAyABKAsyGi5nb29nbGUucHJvdG9idWYuQm9v",
-            "bFZhbHVlEi0KCGZlZWRfaWRzGAQgAygLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDY0VmFsdWVCGwoZY2FtcGFpZ25fYmlkZGluZ19zdHJhdGVneULSAQolY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0INQ2FtcGFpZ25Q",
-            "cm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
-            "L2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoC",
-            "IUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxB",
-            "ZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
+            "d29ya1NldHRpbmdzElMKDWhvdGVsX3NldHRpbmcYICABKAsyPC5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQ2FtcGFpZ24uSG90ZWxTZXR0",
+            "aW5nSW5mbxJnChpkeW5hbWljX3NlYXJjaF9hZHNfc2V0dGluZxghIAEoCzJD",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5DYW1wYWlnbi5E",
+            "eW5hbWljU2VhcmNoQWRzU2V0dGluZxI1Cg9jYW1wYWlnbl9idWRnZXQYBiAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSaQoVYmlkZGluZ19z",
+            "dHJhdGVneV90eXBlGBYgASgOMkouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZW51bXMuQmlkZGluZ1N0cmF0ZWd5VHlwZUVudW0uQmlkZGluZ1N0cmF0ZWd5",
+            "VHlwZRIwCgpzdGFydF9kYXRlGBMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlEi4KCGVuZF9kYXRlGBQgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEjgKEGJpZGRpbmdfc3RyYXRlZ3kYFyABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWVIABI/CgptYW51YWxfY3BjGBggASgL",
+            "MikuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLk1hbnVhbENwY0gA",
+            "Ej8KCm1hbnVhbF9jcG0YGSABKAsyKS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5jb21tb24uTWFudWFsQ3BtSAASUwoUbWF4aW1pemVfY29udmVyc2lvbnMY",
+            "HiABKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uTWF4aW1p",
+            "emVDb252ZXJzaW9uc0gAElwKGW1heGltaXplX2NvbnZlcnNpb25fdmFsdWUY",
+            "HyABKAsyNy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uTWF4aW1p",
+            "emVDb252ZXJzaW9uVmFsdWVIABI/Cgp0YXJnZXRfY3BhGBogASgLMikuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlRhcmdldENwYUgAEkEKC3Rh",
+            "cmdldF9yb2FzGB0gASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29t",
+            "bW9uLlRhcmdldFJvYXNIABJDCgx0YXJnZXRfc3BlbmQYGyABKAsyKy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uVGFyZ2V0U3BlbmRIABqFAgoP",
+            "TmV0d29ya1NldHRpbmdzEjgKFHRhcmdldF9nb29nbGVfc2VhcmNoGAEgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRI5ChV0YXJnZXRfc2VhcmNo",
+            "X25ldHdvcmsYAiABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjoK",
+            "FnRhcmdldF9jb250ZW50X25ldHdvcmsYAyABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuQm9vbFZhbHVlEkEKHXRhcmdldF9wYXJ0bmVyX3NlYXJjaF9uZXR3b3Jr",
+            "GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRpIChBIb3RlbFNl",
+            "dHRpbmdJbmZvEjQKD2hvdGVsX2NlbnRlcl9pZBgBIAEoCzIbLmdvb2dsZS5w",
+            "cm90b2J1Zi5JbnQ2NFZhbHVlGuwBChdEeW5hbWljU2VhcmNoQWRzU2V0dGlu",
+            "ZxIxCgtkb21haW5fbmFtZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRIzCg1sYW5ndWFnZV9jb2RlGAIgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEjoKFnVzZV9zdXBwbGllZF91cmxzX29ubHkYAyAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEi0KCGZlZWRfaWRzGAQg",
+            "AygLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVCGwoZY2FtcGFpZ25f",
+            "YmlkZGluZ19zdHJhdGVneULSAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLnJlc291cmNlc0INQ2FtcGFpZ25Qcm90b1ABWkpnb29nbGUuZ29sYW5n",
+            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVz",
+            "b3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRz",
+            "LlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291",
+            "cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdServingOptimizationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdvertisingChannelSubTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdvertisingChannelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BiddingStrategyTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CampaignServingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CampaignStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "NetworkSettings", "DynamicSearchAdsSetting", "CampaignBudget", "BiddingStrategyType", "StartDate", "EndDate", "BiddingStrategy", "ManualCpc", "ManualCpm", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetRoas", "TargetSpend" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "CampaignBudget", "BiddingStrategyType", "StartDate", "EndDate", "BiddingStrategy", "ManualCpc", "ManualCpm", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetRoas", "TargetSpend" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo.Parser, new[]{ "HotelCenterId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.DynamicSearchAdsSetting), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.DynamicSearchAdsSetting.Parser, new[]{ "DomainName", "LanguageCode", "UseSuppliedUrlsOnly", "FeedIds" }, null, null, null)})
           }));
     }
@@ -145,6 +150,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       TrackingUrlTemplate = other.TrackingUrlTemplate;
       urlCustomParameters_ = other.urlCustomParameters_.Clone();
       NetworkSettings = other.networkSettings_ != null ? other.NetworkSettings.Clone() : null;
+      HotelSetting = other.hotelSetting_ != null ? other.HotelSetting.Clone() : null;
       DynamicSearchAdsSetting = other.dynamicSearchAdsSetting_ != null ? other.DynamicSearchAdsSetting.Clone() : null;
       CampaignBudget = other.CampaignBudget;
       biddingStrategyType_ = other.biddingStrategyType_;
@@ -358,6 +364,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       get { return networkSettings_; }
       set {
         networkSettings_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hotel_setting" field.</summary>
+    public const int HotelSettingFieldNumber = 32;
+    private global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo hotelSetting_;
+    /// <summary>
+    /// The hotel setting for the campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo HotelSetting {
+      get { return hotelSetting_; }
+      set {
+        hotelSetting_ = value;
       }
     }
 
@@ -619,6 +639,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (TrackingUrlTemplate != other.TrackingUrlTemplate) return false;
       if(!urlCustomParameters_.Equals(other.urlCustomParameters_)) return false;
       if (!object.Equals(NetworkSettings, other.NetworkSettings)) return false;
+      if (!object.Equals(HotelSetting, other.HotelSetting)) return false;
       if (!object.Equals(DynamicSearchAdsSetting, other.DynamicSearchAdsSetting)) return false;
       if (CampaignBudget != other.CampaignBudget) return false;
       if (BiddingStrategyType != other.BiddingStrategyType) return false;
@@ -650,6 +671,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (trackingUrlTemplate_ != null) hash ^= TrackingUrlTemplate.GetHashCode();
       hash ^= urlCustomParameters_.GetHashCode();
       if (networkSettings_ != null) hash ^= NetworkSettings.GetHashCode();
+      if (hotelSetting_ != null) hash ^= HotelSetting.GetHashCode();
       if (dynamicSearchAdsSetting_ != null) hash ^= DynamicSearchAdsSetting.GetHashCode();
       if (campaignBudget_ != null) hash ^= CampaignBudget.GetHashCode();
       if (BiddingStrategyType != 0) hash ^= BiddingStrategyType.GetHashCode();
@@ -759,6 +781,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(250, 1);
         output.WriteMessage(MaximizeConversionValue);
       }
+      if (hotelSetting_ != null) {
+        output.WriteRawTag(130, 2);
+        output.WriteMessage(HotelSetting);
+      }
       if (dynamicSearchAdsSetting_ != null) {
         output.WriteRawTag(138, 2);
         output.WriteMessage(DynamicSearchAdsSetting);
@@ -801,6 +827,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       size += urlCustomParameters_.CalculateSize(_repeated_urlCustomParameters_codec);
       if (networkSettings_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NetworkSettings);
+      }
+      if (hotelSetting_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(HotelSetting);
       }
       if (dynamicSearchAdsSetting_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(DynamicSearchAdsSetting);
@@ -891,6 +920,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           networkSettings_ = new global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings();
         }
         NetworkSettings.MergeFrom(other.NetworkSettings);
+      }
+      if (other.hotelSetting_ != null) {
+        if (hotelSetting_ == null) {
+          hotelSetting_ = new global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo();
+        }
+        HotelSetting.MergeFrom(other.HotelSetting);
       }
       if (other.dynamicSearchAdsSetting_ != null) {
         if (dynamicSearchAdsSetting_ == null) {
@@ -1121,6 +1156,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             input.ReadMessage(subBuilder);
             MaximizeConversionValue = subBuilder;
+            break;
+          }
+          case 258: {
+            if (hotelSetting_ == null) {
+              hotelSetting_ = new global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo();
+            }
+            input.ReadMessage(hotelSetting_);
             break;
           }
           case 266: {
@@ -1390,6 +1432,146 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
 
       /// <summary>
+      /// Campaign-level settings for hotel ads.
+      /// </summary>
+      public sealed partial class HotelSettingInfo : pb::IMessage<HotelSettingInfo> {
+        private static readonly pb::MessageParser<HotelSettingInfo> _parser = new pb::MessageParser<HotelSettingInfo>(() => new HotelSettingInfo());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<HotelSettingInfo> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Resources.Campaign.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public HotelSettingInfo() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public HotelSettingInfo(HotelSettingInfo other) : this() {
+          HotelCenterId = other.HotelCenterId;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public HotelSettingInfo Clone() {
+          return new HotelSettingInfo(this);
+        }
+
+        /// <summary>Field number for the "hotel_center_id" field.</summary>
+        public const int HotelCenterIdFieldNumber = 1;
+        private static readonly pb::FieldCodec<long?> _single_hotelCenterId_codec = pb::FieldCodec.ForStructWrapper<long>(10);
+        private long? hotelCenterId_;
+        /// <summary>
+        /// The linked Hotel Center account.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public long? HotelCenterId {
+          get { return hotelCenterId_; }
+          set {
+            hotelCenterId_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as HotelSettingInfo);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(HotelSettingInfo other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (HotelCenterId != other.HotelCenterId) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (hotelCenterId_ != null) hash ^= HotelCenterId.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (hotelCenterId_ != null) {
+            _single_hotelCenterId_codec.WriteTagAndValue(output, HotelCenterId);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (hotelCenterId_ != null) {
+            size += _single_hotelCenterId_codec.CalculateSizeWithTag(HotelCenterId);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(HotelSettingInfo other) {
+          if (other == null) {
+            return;
+          }
+          if (other.hotelCenterId_ != null) {
+            if (hotelCenterId_ == null || other.HotelCenterId != 0L) {
+              HotelCenterId = other.HotelCenterId;
+            }
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                long? value = _single_hotelCenterId_codec.Read(input);
+                if (hotelCenterId_ == null || value != 0L) {
+                  HotelCenterId = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
       /// The setting for controlling Dynamic Search Ads (DSA).
       /// </summary>
       public sealed partial class DynamicSearchAdsSetting : pb::IMessage<DynamicSearchAdsSetting> {
@@ -1400,7 +1582,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V0.Resources.Campaign.Descriptor.NestedTypes[1]; }
+          get { return global::Google.Ads.GoogleAds.V0.Resources.Campaign.Descriptor.NestedTypes[2]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

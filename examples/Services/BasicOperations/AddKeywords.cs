@@ -41,7 +41,7 @@ namespace Google.Ads.GoogleAds.Examples.V0 {
       // The AdWords customer ID for which the call is made.
       long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-      // The ad group to which new keyword ia added.
+      // The ad group to which new keyword is added.
       long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
 
       // The new keyword text.

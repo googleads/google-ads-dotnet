@@ -14,23 +14,24 @@
 
 // Generated code. DO NOT EDIT!
 
-using Google.Ads.GoogleAds.V0.Resources;
-using Google.Api.Gax;
-using Google.Api.Gax.Grpc;
-using Google.Protobuf;
-using Grpc.Core;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Threading;
-using System.Threading.Tasks;
+using gagvr = Google.Ads.GoogleAds.V0.Resources;
+using gagvs = Google.Ads.GoogleAds.V0.Services;
+using gax = Google.Api.Gax;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using pb = Google.Protobuf;
+using scg = System.Collections.Generic;
+using sco = System.Collections.ObjectModel;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using sys = System;
 
 namespace Google.Ads.GoogleAds.V0.Services {
 
   /// <summary>
   /// Settings for a <see cref="AdGroupServiceClient"/>.
   /// </summary>
-  public sealed partial class AdGroupServiceSettings : ServiceSettingsBase {
+  public sealed partial class AdGroupServiceSettings : gaxgrpc::ServiceSettingsBase {
 
     /// <summary>
     /// Get a new instance of the default <see cref="AdGroupServiceSettings"/>.
@@ -47,7 +48,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     }
 
     private AdGroupServiceSettings(AdGroupServiceSettings existing) : base(existing) {
-      GaxPreconditions.CheckNotNull(existing, nameof(existing));
+      gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
       GetAdGroupSettings = existing.GetAdGroupSettings;
       MutateAdGroupsSettings = existing.MutateAdGroupsSettings;
       OnCopy(existing);
@@ -56,32 +57,32 @@ namespace Google.Ads.GoogleAds.V0.Services {
     partial void OnCopy(AdGroupServiceSettings existing);
 
     /// <summary>
-    /// The filter specifying which RPC <see cref="StatusCode"/>s are eligible for retry
+    /// The filter specifying which RPC <see cref="grpccore::StatusCode"/>s are eligible for retry
     /// for "Idempotent" <see cref="AdGroupServiceClient"/> RPC methods.
     /// </summary>
     /// <remarks>
-    /// The eligible RPC <see cref="StatusCode"/>s for retry for "Idempotent" RPC methods are:
+    /// The eligible RPC <see cref="grpccore::StatusCode"/>s for retry for "Idempotent" RPC methods are:
     /// <list type="bullet">
-    /// <item><description><see cref="StatusCode.DeadlineExceeded"/></description></item>
-    /// <item><description><see cref="StatusCode.Unavailable"/></description></item>
+    /// <item><description><see cref="grpccore::StatusCode.DeadlineExceeded"/></description></item>
+    /// <item><description><see cref="grpccore::StatusCode.Unavailable"/></description></item>
     /// </list>
     /// </remarks>
-    public static Predicate<RpcException> IdempotentRetryFilter {
+    public static sys::Predicate<grpccore::RpcException> IdempotentRetryFilter {
       get;
     } =
-        RetrySettings.FilterForStatusCodes(StatusCode.DeadlineExceeded, StatusCode.Unavailable);
+        gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.DeadlineExceeded, grpccore::StatusCode.Unavailable);
 
     /// <summary>
-    /// The filter specifying which RPC <see cref="StatusCode"/>s are eligible for retry
+    /// The filter specifying which RPC <see cref="grpccore::StatusCode"/>s are eligible for retry
     /// for "NonIdempotent" <see cref="AdGroupServiceClient"/> RPC methods.
     /// </summary>
     /// <remarks>
-    /// There are no RPC <see cref="StatusCode"/>s eligible for retry for "NonIdempotent" RPC methods.
+    /// There are no RPC <see cref="grpccore::StatusCode"/>s eligible for retry for "NonIdempotent" RPC methods.
     /// </remarks>
-    public static Predicate<RpcException> NonIdempotentRetryFilter {
+    public static sys::Predicate<grpccore::RpcException> NonIdempotentRetryFilter {
       get;
     } =
-        RetrySettings.FilterForStatusCodes();
+        gaxgrpc::RetrySettings.FilterForStatusCodes();
 
     /// <summary>
     /// "Default" retry backoff for <see cref="AdGroupServiceClient"/> RPC methods.
@@ -97,9 +98,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <item><description>Delay multiplier: 1.3</description></item>
     /// </list>
     /// </remarks>
-    public static BackoffSettings GetDefaultRetryBackoff() => new BackoffSettings(
-        delay: TimeSpan.FromMilliseconds(100),
-        maxDelay: TimeSpan.FromMilliseconds(60000),
+    public static gaxgrpc::BackoffSettings GetDefaultRetryBackoff() => new gaxgrpc::BackoffSettings(
+        delay: sys::TimeSpan.FromMilliseconds(100),
+        maxDelay: sys::TimeSpan.FromMilliseconds(60000),
         delayMultiplier: 1.3
     );
 
@@ -117,19 +118,19 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <item><description>Maximum timeout: 20000 milliseconds</description></item>
     /// </list>
     /// </remarks>
-    public static BackoffSettings GetDefaultTimeoutBackoff() => new BackoffSettings(
-        delay: TimeSpan.FromMilliseconds(20000),
-        maxDelay: TimeSpan.FromMilliseconds(20000),
+    public static gaxgrpc::BackoffSettings GetDefaultTimeoutBackoff() => new gaxgrpc::BackoffSettings(
+        delay: sys::TimeSpan.FromMilliseconds(20000),
+        maxDelay: sys::TimeSpan.FromMilliseconds(20000),
         delayMultiplier: 1.0
     );
 
     /// <summary>
-    /// <see cref="CallSettings"/> for synchronous and asynchronous calls to
+    /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
     /// <c>AdGroupServiceClient.GetAdGroup</c> and <c>AdGroupServiceClient.GetAdGroupAsync</c>.
     /// </summary>
     /// <remarks>
     /// The default <c>AdGroupServiceClient.GetAdGroup</c> and
-    /// <c>AdGroupServiceClient.GetAdGroupAsync</c> <see cref="RetrySettings"/> are:
+    /// <c>AdGroupServiceClient.GetAdGroupAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
     /// <list type="bullet">
     /// <item><description>Initial retry delay: 100 milliseconds</description></item>
     /// <item><description>Retry delay multiplier: 1.3</description></item>
@@ -140,28 +141,28 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// </list>
     /// Retry will be attempted on the following response status codes:
     /// <list>
-    /// <item><description><see cref="StatusCode.DeadlineExceeded"/></description></item>
-    /// <item><description><see cref="StatusCode.Unavailable"/></description></item>
+    /// <item><description><see cref="grpccore::StatusCode.DeadlineExceeded"/></description></item>
+    /// <item><description><see cref="grpccore::StatusCode.Unavailable"/></description></item>
     /// </list>
     /// Default RPC expiration is 600000 milliseconds.
     /// </remarks>
-    public CallSettings GetAdGroupSettings {
+    public gaxgrpc::CallSettings GetAdGroupSettings {
       get; set;
-    } = CallSettings.FromCallTiming(
-        CallTiming.FromRetry(new RetrySettings(
+    } = gaxgrpc::CallSettings.FromCallTiming(
+        gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
             retryBackoff: GetDefaultRetryBackoff(),
             timeoutBackoff: GetDefaultTimeoutBackoff(),
-            totalExpiration: Expiration.FromTimeout(TimeSpan.FromMilliseconds(600000)),
+            totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
             retryFilter: IdempotentRetryFilter
         )));
 
     /// <summary>
-    /// <see cref="CallSettings"/> for synchronous and asynchronous calls to
+    /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
     /// <c>AdGroupServiceClient.MutateAdGroups</c> and <c>AdGroupServiceClient.MutateAdGroupsAsync</c>.
     /// </summary>
     /// <remarks>
     /// The default <c>AdGroupServiceClient.MutateAdGroups</c> and
-    /// <c>AdGroupServiceClient.MutateAdGroupsAsync</c> <see cref="RetrySettings"/> are:
+    /// <c>AdGroupServiceClient.MutateAdGroupsAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
     /// <list type="bullet">
     /// <item><description>Initial retry delay: 100 milliseconds</description></item>
     /// <item><description>Retry delay multiplier: 1.3</description></item>
@@ -176,13 +177,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// </list>
     /// Default RPC expiration is 600000 milliseconds.
     /// </remarks>
-    public CallSettings MutateAdGroupsSettings {
+    public gaxgrpc::CallSettings MutateAdGroupsSettings {
       get; set;
-    } = CallSettings.FromCallTiming(
-        CallTiming.FromRetry(new RetrySettings(
+    } = gaxgrpc::CallSettings.FromCallTiming(
+        gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
             retryBackoff: GetDefaultRetryBackoff(),
             timeoutBackoff: GetDefaultTimeoutBackoff(),
-            totalExpiration: Expiration.FromTimeout(TimeSpan.FromMilliseconds(600000)),
+            totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
             retryFilter: NonIdempotentRetryFilter
         )));
 
@@ -201,7 +202,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <summary>
     /// The default endpoint for the AdGroupService service, which is a host of "googleads.googleapis.com" and a port of 443.
     /// </summary>
-    public static ServiceEndpoint DefaultEndpoint { get; } = new ServiceEndpoint("googleads.googleapis.com", 443);
+    public static gaxgrpc::ServiceEndpoint DefaultEndpoint { get; } = new gaxgrpc::ServiceEndpoint("googleads.googleapis.com", 443);
 
     /// <summary>
     /// The default AdGroupService scopes.
@@ -211,75 +212,120 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <list type="bullet">
     /// </list>
     /// </remarks>
-    public static IReadOnlyList<string> DefaultScopes {
+    public static scg::IReadOnlyList<string> DefaultScopes {
       get;
-    } = new ReadOnlyCollection<string>(new string[] {
+    } = new sco::ReadOnlyCollection<string>(new string[] {
         });
 
-    private static readonly ChannelPool s_channelPool = new ChannelPool(DefaultScopes);
-
-    // Note: we could have parameterless overloads of Create and CreateAsync,
-    // documented to just use the default endpoint, settings and credentials.
-    // Pros:
-    // - Might be more reassuring on first use
-    // - Allows method group conversions
-    // Con: overloads!
+    private static readonly gaxgrpc::ChannelPool s_channelPool = new gaxgrpc::ChannelPool(DefaultScopes);
 
     /// <summary>
     /// Asynchronously creates a <see cref="AdGroupServiceClient"/>, applying defaults for all unspecified settings,
     /// and creating a channel connecting to the given endpoint with application default credentials where
-    /// necessary.
+    /// necessary. See the example for how to use custom credentials.
     /// </summary>
-    /// <param name="endpoint">Optional <see cref="ServiceEndpoint"/>.</param>
+    /// <example>
+    /// This sample shows how to create a client using default credentials:
+    /// <code>
+    /// using Google.Ads.Googleads.V0.Services;
+    /// ...
+    /// // When running on Google Cloud Platform this will use the project Compute Credential.
+    /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
+    /// // credential file to use that credential.
+    /// AdGroupServiceClient client = await AdGroupServiceClient.CreateAsync();
+    /// </code>
+    /// This sample shows how to create a client using credentials loaded from a JSON file:
+    /// <code>
+    /// using Google.Ads.Googleads.V0.Services;
+    /// using Google.Apis.Auth.OAuth2;
+    /// using Grpc.Auth;
+    /// using Grpc.Core;
+    /// ...
+    /// GoogleCredential cred = GoogleCredential.FromFile("/path/to/credentials.json");
+    /// Channel channel = new Channel(
+    ///     AdGroupServiceClient.DefaultEndpoint.Host, AdGroupServiceClient.DefaultEndpoint.Port, cred.ToChannelCredentials());
+    /// AdGroupServiceClient client = AdGroupServiceClient.Create(channel);
+    /// ...
+    /// // Shutdown the channel when it is no longer required.
+    /// await channel.ShutdownAsync();
+    /// </code>
+    /// </example>
+    /// <param name="endpoint">Optional <see cref="gaxgrpc::ServiceEndpoint"/>.</param>
     /// <param name="settings">Optional <see cref="AdGroupServiceSettings"/>.</param>
     /// <returns>The task representing the created <see cref="AdGroupServiceClient"/>.</returns>
-    public static async Task<AdGroupServiceClient> CreateAsync(ServiceEndpoint endpoint = null, AdGroupServiceSettings settings = null) {
-      Channel channel = await s_channelPool.GetChannelAsync(endpoint ?? DefaultEndpoint).ConfigureAwait(false);
+    public static async stt::Task<AdGroupServiceClient> CreateAsync(gaxgrpc::ServiceEndpoint endpoint = null, AdGroupServiceSettings settings = null) {
+      grpccore::Channel channel = await s_channelPool.GetChannelAsync(endpoint ?? DefaultEndpoint).ConfigureAwait(false);
       return Create(channel, settings);
     }
 
     /// <summary>
     /// Synchronously creates a <see cref="AdGroupServiceClient"/>, applying defaults for all unspecified settings,
     /// and creating a channel connecting to the given endpoint with application default credentials where
-    /// necessary.
+    /// necessary. See the example for how to use custom credentials.
     /// </summary>
-    /// <param name="endpoint">Optional <see cref="ServiceEndpoint"/>.</param>
+    /// <example>
+    /// This sample shows how to create a client using default credentials:
+    /// <code>
+    /// using Google.Ads.Googleads.V0.Services;
+    /// ...
+    /// // When running on Google Cloud Platform this will use the project Compute Credential.
+    /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
+    /// // credential file to use that credential.
+    /// AdGroupServiceClient client = AdGroupServiceClient.Create();
+    /// </code>
+    /// This sample shows how to create a client using credentials loaded from a JSON file:
+    /// <code>
+    /// using Google.Ads.Googleads.V0.Services;
+    /// using Google.Apis.Auth.OAuth2;
+    /// using Grpc.Auth;
+    /// using Grpc.Core;
+    /// ...
+    /// GoogleCredential cred = GoogleCredential.FromFile("/path/to/credentials.json");
+    /// Channel channel = new Channel(
+    ///     AdGroupServiceClient.DefaultEndpoint.Host, AdGroupServiceClient.DefaultEndpoint.Port, cred.ToChannelCredentials());
+    /// AdGroupServiceClient client = AdGroupServiceClient.Create(channel);
+    /// ...
+    /// // Shutdown the channel when it is no longer required.
+    /// channel.ShutdownAsync().Wait();
+    /// </code>
+    /// </example>
+    /// <param name="endpoint">Optional <see cref="gaxgrpc::ServiceEndpoint"/>.</param>
     /// <param name="settings">Optional <see cref="AdGroupServiceSettings"/>.</param>
     /// <returns>The created <see cref="AdGroupServiceClient"/>.</returns>
-    public static AdGroupServiceClient Create(ServiceEndpoint endpoint = null, AdGroupServiceSettings settings = null) {
-      Channel channel = s_channelPool.GetChannel(endpoint ?? DefaultEndpoint);
+    public static AdGroupServiceClient Create(gaxgrpc::ServiceEndpoint endpoint = null, AdGroupServiceSettings settings = null) {
+      grpccore::Channel channel = s_channelPool.GetChannel(endpoint ?? DefaultEndpoint);
       return Create(channel, settings);
     }
 
     /// <summary>
     /// Creates a <see cref="AdGroupServiceClient"/> which uses the specified channel for remote operations.
     /// </summary>
-    /// <param name="channel">The <see cref="Channel"/> for remote operations. Must not be null.</param>
+    /// <param name="channel">The <see cref="grpccore::Channel"/> for remote operations. Must not be null.</param>
     /// <param name="settings">Optional <see cref="AdGroupServiceSettings"/>.</param>
     /// <returns>The created <see cref="AdGroupServiceClient"/>.</returns>
-    public static AdGroupServiceClient Create(Channel channel, AdGroupServiceSettings settings = null) {
-      GaxPreconditions.CheckNotNull(channel, nameof(channel));
+    public static AdGroupServiceClient Create(grpccore::Channel channel, AdGroupServiceSettings settings = null) {
+      gax::GaxPreconditions.CheckNotNull(channel, nameof(channel));
       AdGroupService.AdGroupServiceClient grpcClient = new AdGroupService.AdGroupServiceClient(channel);
       return new AdGroupServiceClientImpl(grpcClient, settings);
     }
 
     /// <summary>
-    /// Shuts down any channels automatically created by <see cref="Create(ServiceEndpoint, AdGroupServiceSettings)"/>
-    /// and <see cref="CreateAsync(ServiceEndpoint, AdGroupServiceSettings)"/>. Channels which weren't automatically
+    /// Shuts down any channels automatically created by <see cref="Create(gaxgrpc::ServiceEndpoint, AdGroupServiceSettings)"/>
+    /// and <see cref="CreateAsync(gaxgrpc::ServiceEndpoint, AdGroupServiceSettings)"/>. Channels which weren't automatically
     /// created are not affected.
     /// </summary>
-    /// <remarks>After calling this method, further calls to <see cref="Create(ServiceEndpoint, AdGroupServiceSettings)"/>
-    /// and <see cref="CreateAsync(ServiceEndpoint, AdGroupServiceSettings)"/> will create new channels, which could
+    /// <remarks>After calling this method, further calls to <see cref="Create(gaxgrpc::ServiceEndpoint, AdGroupServiceSettings)"/>
+    /// and <see cref="CreateAsync(gaxgrpc::ServiceEndpoint, AdGroupServiceSettings)"/> will create new channels, which could
     /// in turn be shut down by another call to this method.</remarks>
     /// <returns>A task representing the asynchronous shutdown operation.</returns>
-    public static Task ShutdownDefaultChannelsAsync() => s_channelPool.ShutdownChannelsAsync();
+    public static stt::Task ShutdownDefaultChannelsAsync() => s_channelPool.ShutdownChannelsAsync();
 
     /// <summary>
     /// The underlying gRPC AdGroupService client.
     /// </summary>
     public virtual AdGroupService.AdGroupServiceClient GrpcClient {
       get {
-        throw new NotImplementedException();
+        throw new sys::NotImplementedException();
       }
     }
 
@@ -295,11 +341,11 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public virtual Task<AdGroup> GetAdGroupAsync(
+    public virtual stt::Task<gagvr::AdGroup> GetAdGroupAsync(
         string resourceName,
-        CallSettings callSettings = null) => GetAdGroupAsync(
-            new GetAdGroupRequest {
-              ResourceName = GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
+        gaxgrpc::CallSettings callSettings = null) => GetAdGroupAsync(
+            new gagvs::GetAdGroupRequest {
+              ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
             },
             callSettings);
 
@@ -310,16 +356,16 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// The resource name of the ad group to fetch.
     /// </param>
     /// <param name="cancellationToken">
-    /// A <see cref="CancellationToken"/> to use for this RPC.
+    /// A <see cref="st::CancellationToken"/> to use for this RPC.
     /// </param>
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public virtual Task<AdGroup> GetAdGroupAsync(
+    public virtual stt::Task<gagvr::AdGroup> GetAdGroupAsync(
         string resourceName,
-        CancellationToken cancellationToken) => GetAdGroupAsync(
+        st::CancellationToken cancellationToken) => GetAdGroupAsync(
             resourceName,
-            CallSettings.FromCancellationToken(cancellationToken));
+            gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
     /// <summary>
     /// Returns the requested ad group in full detail.
@@ -333,11 +379,11 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// The RPC response.
     /// </returns>
-    public virtual AdGroup GetAdGroup(
+    public virtual gagvr::AdGroup GetAdGroup(
         string resourceName,
-        CallSettings callSettings = null) => GetAdGroup(
-            new GetAdGroupRequest {
-              ResourceName = GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
+        gaxgrpc::CallSettings callSettings = null) => GetAdGroup(
+            new gagvs::GetAdGroupRequest {
+              ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
             },
             callSettings);
 
@@ -353,11 +399,29 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public virtual Task<AdGroup> GetAdGroupAsync(
-        GetAdGroupRequest request,
-        CallSettings callSettings = null) {
-      throw new NotImplementedException();
+    public virtual stt::Task<gagvr::AdGroup> GetAdGroupAsync(
+        gagvs::GetAdGroupRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
+      throw new sys::NotImplementedException();
     }
+
+    /// <summary>
+    /// Returns the requested ad group in full detail.
+    /// </summary>
+    /// <param name="request">
+    /// The request object containing all of the parameters for the API call.
+    /// </param>
+    /// <param name="cancellationToken">
+    /// A <see cref="st::CancellationToken"/> to use for this RPC.
+    /// </param>
+    /// <returns>
+    /// A Task containing the RPC response.
+    /// </returns>
+    public virtual stt::Task<gagvr::AdGroup> GetAdGroupAsync(
+        gagvs::GetAdGroupRequest request,
+        st::CancellationToken cancellationToken) => GetAdGroupAsync(
+            request,
+            gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
     /// <summary>
     /// Returns the requested ad group in full detail.
@@ -371,10 +435,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// The RPC response.
     /// </returns>
-    public virtual AdGroup GetAdGroup(
-        GetAdGroupRequest request,
-        CallSettings callSettings = null) {
-      throw new NotImplementedException();
+    public virtual gagvr::AdGroup GetAdGroup(
+        gagvs::GetAdGroupRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
+      throw new sys::NotImplementedException();
     }
 
     /// <summary>
@@ -392,13 +456,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public virtual Task<MutateAdGroupsResponse> MutateAdGroupsAsync(
+    public virtual stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
         string customerId,
-        IEnumerable<AdGroupOperation> operations,
-        CallSettings callSettings = null) => MutateAdGroupsAsync(
-            new MutateAdGroupsRequest {
-              CustomerId = GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
-              Operations = { GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+        scg::IEnumerable<gagvs::AdGroupOperation> operations,
+        gaxgrpc::CallSettings callSettings = null) => MutateAdGroupsAsync(
+            new gagvs::MutateAdGroupsRequest {
+              CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+              Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
             },
             callSettings);
 
@@ -412,18 +476,18 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// The list of operations to perform on individual ad groups.
     /// </param>
     /// <param name="cancellationToken">
-    /// A <see cref="CancellationToken"/> to use for this RPC.
+    /// A <see cref="st::CancellationToken"/> to use for this RPC.
     /// </param>
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public virtual Task<MutateAdGroupsResponse> MutateAdGroupsAsync(
+    public virtual stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
         string customerId,
-        IEnumerable<AdGroupOperation> operations,
-        CancellationToken cancellationToken) => MutateAdGroupsAsync(
+        scg::IEnumerable<gagvs::AdGroupOperation> operations,
+        st::CancellationToken cancellationToken) => MutateAdGroupsAsync(
             customerId,
             operations,
-            CallSettings.FromCancellationToken(cancellationToken));
+            gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
     /// <summary>
     /// Creates, updates, or removes ad groups. Operation statuses are returned.
@@ -440,13 +504,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// The RPC response.
     /// </returns>
-    public virtual MutateAdGroupsResponse MutateAdGroups(
+    public virtual gagvs::MutateAdGroupsResponse MutateAdGroups(
         string customerId,
-        IEnumerable<AdGroupOperation> operations,
-        CallSettings callSettings = null) => MutateAdGroups(
-            new MutateAdGroupsRequest {
-              CustomerId = GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
-              Operations = { GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+        scg::IEnumerable<gagvs::AdGroupOperation> operations,
+        gaxgrpc::CallSettings callSettings = null) => MutateAdGroups(
+            new gagvs::MutateAdGroupsRequest {
+              CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+              Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
             },
             callSettings);
 
@@ -462,11 +526,29 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public virtual Task<MutateAdGroupsResponse> MutateAdGroupsAsync(
-        MutateAdGroupsRequest request,
-        CallSettings callSettings = null) {
-      throw new NotImplementedException();
+    public virtual stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
+        gagvs::MutateAdGroupsRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
+      throw new sys::NotImplementedException();
     }
+
+    /// <summary>
+    /// Creates, updates, or removes ad groups. Operation statuses are returned.
+    /// </summary>
+    /// <param name="request">
+    /// The request object containing all of the parameters for the API call.
+    /// </param>
+    /// <param name="cancellationToken">
+    /// A <see cref="st::CancellationToken"/> to use for this RPC.
+    /// </param>
+    /// <returns>
+    /// A Task containing the RPC response.
+    /// </returns>
+    public virtual stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
+        gagvs::MutateAdGroupsRequest request,
+        st::CancellationToken cancellationToken) => MutateAdGroupsAsync(
+            request,
+            gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
     /// <summary>
     /// Creates, updates, or removes ad groups. Operation statuses are returned.
@@ -480,10 +562,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// The RPC response.
     /// </returns>
-    public virtual MutateAdGroupsResponse MutateAdGroups(
-        MutateAdGroupsRequest request,
-        CallSettings callSettings = null) {
-      throw new NotImplementedException();
+    public virtual gagvs::MutateAdGroupsResponse MutateAdGroups(
+        gagvs::MutateAdGroupsRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
+      throw new sys::NotImplementedException();
     }
   }
 
@@ -491,8 +573,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
   /// AdGroupService client wrapper implementation, for convenient use.
   /// </summary>
   public sealed partial class AdGroupServiceClientImpl : AdGroupServiceClient {
-    private readonly ApiCall<GetAdGroupRequest, AdGroup> _callGetAdGroup;
-    private readonly ApiCall<MutateAdGroupsRequest, MutateAdGroupsResponse> _callMutateAdGroups;
+    private readonly gaxgrpc::ApiCall<gagvs::GetAdGroupRequest, gagvr::AdGroup> _callGetAdGroup;
+    private readonly gaxgrpc::ApiCall<gagvs::MutateAdGroupsRequest, gagvs::MutateAdGroupsResponse> _callMutateAdGroups;
 
     /// <summary>
     /// Constructs a client wrapper for the AdGroupService service, with the specified gRPC client and settings.
@@ -502,10 +584,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public AdGroupServiceClientImpl(AdGroupService.AdGroupServiceClient grpcClient, AdGroupServiceSettings settings) {
       GrpcClient = grpcClient;
       AdGroupServiceSettings effectiveSettings = settings ?? AdGroupServiceSettings.GetDefault();
-      ClientHelper clientHelper = new ClientHelper(effectiveSettings);
-      _callGetAdGroup = clientHelper.BuildApiCall<GetAdGroupRequest, AdGroup>(
+      gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
+      _callGetAdGroup = clientHelper.BuildApiCall<gagvs::GetAdGroupRequest, gagvr::AdGroup>(
           GrpcClient.GetAdGroupAsync, GrpcClient.GetAdGroup, effectiveSettings.GetAdGroupSettings);
-      _callMutateAdGroups = clientHelper.BuildApiCall<MutateAdGroupsRequest, MutateAdGroupsResponse>(
+      _callMutateAdGroups = clientHelper.BuildApiCall<gagvs::MutateAdGroupsRequest, gagvs::MutateAdGroupsResponse>(
           GrpcClient.MutateAdGroupsAsync, GrpcClient.MutateAdGroups, effectiveSettings.MutateAdGroupsSettings);
       Modify_ApiCall(ref _callGetAdGroup);
       Modify_GetAdGroupApiCall(ref _callGetAdGroup);
@@ -518,17 +600,17 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     // Partial methods called for every ApiCall on construction.
     // Allows modification of all the underlying ApiCall objects.
-    partial void Modify_ApiCall<TRequest, TResponse>(ref ApiCall<TRequest, TResponse> call)
-        where TRequest : class, IMessage<TRequest>
-        where TResponse : class, IMessage<TResponse>;
+    partial void Modify_ApiCall<TRequest, TResponse>(ref gaxgrpc::ApiCall<TRequest, TResponse> call)
+        where TRequest : class, pb::IMessage<TRequest>
+        where TResponse : class, pb::IMessage<TResponse>;
 
     // Partial methods called for each ApiCall on construction.
     // Allows per-RPC-method modification of the underlying ApiCall object.
-    partial void Modify_GetAdGroupApiCall(ref ApiCall<GetAdGroupRequest, AdGroup> call);
+    partial void Modify_GetAdGroupApiCall(ref gaxgrpc::ApiCall<gagvs::GetAdGroupRequest, gagvr::AdGroup> call);
 
-    partial void Modify_MutateAdGroupsApiCall(ref ApiCall<MutateAdGroupsRequest, MutateAdGroupsResponse> call);
+    partial void Modify_MutateAdGroupsApiCall(ref gaxgrpc::ApiCall<gagvs::MutateAdGroupsRequest, gagvs::MutateAdGroupsResponse> call);
 
-    partial void OnConstruction(AdGroupService.AdGroupServiceClient grpcClient, AdGroupServiceSettings effectiveSettings, ClientHelper clientHelper);
+    partial void OnConstruction(AdGroupService.AdGroupServiceClient grpcClient, AdGroupServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
     /// <summary>
     /// The underlying gRPC AdGroupService client.
@@ -540,9 +622,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     // Partial methods called on each request.
     // Allows per-RPC-call modification to the request and CallSettings objects,
     // before the underlying RPC is performed.
-    partial void Modify_GetAdGroupRequest(ref GetAdGroupRequest request, ref CallSettings settings);
+    partial void Modify_GetAdGroupRequest(ref gagvs::GetAdGroupRequest request, ref gaxgrpc::CallSettings settings);
 
-    partial void Modify_MutateAdGroupsRequest(ref MutateAdGroupsRequest request, ref CallSettings settings);
+    partial void Modify_MutateAdGroupsRequest(ref gagvs::MutateAdGroupsRequest request, ref gaxgrpc::CallSettings settings);
 
     /// <summary>
     /// Returns the requested ad group in full detail.
@@ -556,9 +638,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public override Task<AdGroup> GetAdGroupAsync(
-        GetAdGroupRequest request,
-        CallSettings callSettings = null) {
+    public override stt::Task<gagvr::AdGroup> GetAdGroupAsync(
+        gagvs::GetAdGroupRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
       Modify_GetAdGroupRequest(ref request, ref callSettings);
       return _callGetAdGroup.Async(request, callSettings);
     }
@@ -575,9 +657,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// The RPC response.
     /// </returns>
-    public override AdGroup GetAdGroup(
-        GetAdGroupRequest request,
-        CallSettings callSettings = null) {
+    public override gagvr::AdGroup GetAdGroup(
+        gagvs::GetAdGroupRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
       Modify_GetAdGroupRequest(ref request, ref callSettings);
       return _callGetAdGroup.Sync(request, callSettings);
     }
@@ -594,9 +676,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public override Task<MutateAdGroupsResponse> MutateAdGroupsAsync(
-        MutateAdGroupsRequest request,
-        CallSettings callSettings = null) {
+    public override stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
+        gagvs::MutateAdGroupsRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
       Modify_MutateAdGroupsRequest(ref request, ref callSettings);
       return _callMutateAdGroups.Async(request, callSettings);
     }
@@ -613,9 +695,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// The RPC response.
     /// </returns>
-    public override MutateAdGroupsResponse MutateAdGroups(
-        MutateAdGroupsRequest request,
-        CallSettings callSettings = null) {
+    public override gagvs::MutateAdGroupsResponse MutateAdGroups(
+        gagvs::MutateAdGroupsRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
       Modify_MutateAdGroupsRequest(ref request, ref callSettings);
       return _callMutateAdGroups.Sync(request, callSettings);
     }
