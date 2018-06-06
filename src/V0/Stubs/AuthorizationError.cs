@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYXV0aG9yaXphdGlv",
             "bl9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
-            "IsQBChZBdXRob3JpemF0aW9uRXJyb3JFbnVtIqkBChJBdXRob3JpemF0aW9u",
+            "It0BChZBdXRob3JpemF0aW9uRXJyb3JFbnVtIsIBChJBdXRob3JpemF0aW9u",
             "RXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGgoWVVNFUl9Q",
             "RVJNSVNTSU9OX0RFTklFRBACEiMKH0RFVkVMT1BFUl9UT0tFTl9OT1RfV0hJ",
             "VEVMSVNURUQQAxIeChpERVZFTE9QRVJfVE9LRU5fUFJPSElCSVRFRBAEEhQK",
-            "EFBST0pFQ1RfRElTQUJMRUQQBULNAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVycm9yc0IXQXV0aG9yaXphdGlvbkVycm9yUHJvdG9QAVpEZ29v",
-            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
-            "YWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2ds",
-            "ZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJv",
-            "cnNiBnByb3RvMw=="));
+            "EFBST0pFQ1RfRElTQUJMRUQQBRIXChNBVVRIT1JJWkFUSU9OX0VSUk9SEAZC",
+            "zQEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCF0F1dGhv",
+            "cml6YXRpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
+            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3Jz",
+            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29v",
+            "Z2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -181,6 +181,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// access the api.
         /// </summary>
         [pbr::OriginalName("PROJECT_DISABLED")] ProjectDisabled = 5,
+        /// <summary>
+        /// Authorization of the client failed.
+        /// </summary>
+        [pbr::OriginalName("AUTHORIZATION_ERROR")] AuthorizationError = 6,
       }
 
     }

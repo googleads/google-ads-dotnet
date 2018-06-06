@@ -41,7 +41,7 @@ namespace Google.Ads.GoogleAds.Tests.Config {
     /// </summary>
     private readonly Dictionary<string, string> CONFIG_SETTINGS =
         new Dictionary<string, string>() {
-      { "ServerUrl",  SERVER_URL_VALUE },
+      { "GoogleAds.Server",  SERVER_URL_VALUE },
       { "Timeout", TIMEOUT_VALUE.ToString() }
     };
 

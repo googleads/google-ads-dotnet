@@ -34,6 +34,13 @@ namespace Google.Ads.GoogleAds {
           AdGroupAdService;
 
       /// <summary>
+      /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.AdGroupBidModifierService
+      /// for details;
+      /// </summary>
+      public static readonly ServiceTemplate<AdGroupBidModifierServiceClient,
+          AdGroupBidModifierServiceSettings> AdGroupBidModifierService;
+
+      /// <summary>
       /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.AdGroupCriterionService
       /// for details;
       /// </summary>
@@ -83,6 +90,13 @@ namespace Google.Ads.GoogleAds {
           CustomerServiceSettings> CustomerService;
 
       /// <summary>
+      /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.GeoTargetConstantService
+      /// for details;
+      /// </summary>
+      public static readonly ServiceTemplate<GeoTargetConstantServiceClient,
+          GeoTargetConstantServiceSettings> GeoTargetConstantService;
+
+      /// <summary>
       /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.GoogleAdsService
       /// for details;
       /// </summary>
@@ -102,6 +116,13 @@ namespace Google.Ads.GoogleAds {
       /// </summary>
       public static readonly ServiceTemplate<KeywordViewServiceClient,
           KeywordViewServiceSettings> KeywordViewService;
+
+      /// <summary>
+      /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.RecommendationService
+      /// for details;
+      /// </summary>
+      public static readonly ServiceTemplate<RecommendationServiceClient,
+          RecommendationServiceSettings> RecommendationService;
     }
   }
 }

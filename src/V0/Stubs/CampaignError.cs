@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY2FtcGFpZ25fZXJy",
-            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyLyCwoR",
-            "Q2FtcGFpZ25FcnJvckVudW0i3AsKDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVD",
+            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyLPDAoR",
+            "Q2FtcGFpZ25FcnJvckVudW0iuQwKDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVD",
             "SUZJRUQQABILCgdVTktOT1dOEAESIQodQ0FOTk9UX1RBUkdFVF9DT05URU5U",
             "X05FVFdPUksQAxIgChxDQU5OT1RfVEFSR0VUX1NFQVJDSF9ORVRXT1JLEAQS",
             "NgoyQ0FOTk9UX1RBUkdFVF9TRUFSQ0hfTkVUV09SS19XSVRIT1VUX0dPT0dM",
@@ -59,12 +59,14 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "RUxfU1VCX1RZUEUQIBIsCihBVF9MRUFTVF9PTkVfQ09OVkVSU0lPTl9NVVNU",
             "X0JFX1NFTEVDVEVEECESHwobQ0FOTk9UX1NFVF9BRF9ST1RBVElPTl9NT0RF",
             "ECISLworQ0FOTk9UX01PRElGWV9TVEFSVF9EQVRFX0lGX0FMUkVBRFlfU1RB",
-            "UlRFRBAjEhsKF0NBTk5PVF9TRVRfREFURV9UT19QQVNUECRCyAEKImNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCEkNhbXBhaWduRXJyb3JQ",
-            "cm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
-            "L2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xl",
-            "QWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "UlRFRBAjEhsKF0NBTk5PVF9TRVRfREFURV9UT19QQVNUECQSHwobTUlTU0lO",
+            "R19IT1RFTF9DVVNUT01FUl9MSU5LECUSHwobSU5WQUxJRF9IT1RFTF9DVVNU",
+            "T01FUl9MSU5LECYSGQoVTUlTU0lOR19IT1RFTF9TRVRUSU5HECdCyAEKImNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCEkNhbXBhaWduRXJy",
+            "b3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
+            "cGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -341,6 +343,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Trying to modify a date into the past.
         /// </summary>
         [pbr::OriginalName("CANNOT_SET_DATE_TO_PAST")] CannotSetDateToPast = 36,
+        /// <summary>
+        /// Hotel center id in the hotel setting does not match any customer links.
+        /// </summary>
+        [pbr::OriginalName("MISSING_HOTEL_CUSTOMER_LINK")] MissingHotelCustomerLink = 37,
+        /// <summary>
+        /// Hotel center id in the hotel setting must match an active customer link.
+        /// </summary>
+        [pbr::OriginalName("INVALID_HOTEL_CUSTOMER_LINK")] InvalidHotelCustomerLink = 38,
+        /// <summary>
+        /// Hotel setting was not found when creating a hotel ads campaign.
+        /// </summary>
+        [pbr::OriginalName("MISSING_HOTEL_SETTING")] MissingHotelSetting = 39,
       }
 
     }
