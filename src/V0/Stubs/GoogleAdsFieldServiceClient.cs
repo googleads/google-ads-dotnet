@@ -14,24 +14,25 @@
 
 // Generated code. DO NOT EDIT!
 
-using Google.Ads.GoogleAds.V0.Resources;
-using Google.Api.Gax;
-using Google.Api.Gax.Grpc;
-using Google.Protobuf;
-using Grpc.Core;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Threading;
-using System.Threading.Tasks;
+using gagvr = Google.Ads.GoogleAds.V0.Resources;
+using gagvs = Google.Ads.GoogleAds.V0.Services;
+using gax = Google.Api.Gax;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using pb = Google.Protobuf;
+using sc = System.Collections;
+using scg = System.Collections.Generic;
+using sco = System.Collections.ObjectModel;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using sys = System;
 
 namespace Google.Ads.GoogleAds.V0.Services {
 
   /// <summary>
   /// Settings for a <see cref="GoogleAdsFieldServiceClient"/>.
   /// </summary>
-  public sealed partial class GoogleAdsFieldServiceSettings : ServiceSettingsBase {
+  public sealed partial class GoogleAdsFieldServiceSettings : gaxgrpc::ServiceSettingsBase {
 
     /// <summary>
     /// Get a new instance of the default <see cref="GoogleAdsFieldServiceSettings"/>.
@@ -48,7 +49,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     }
 
     private GoogleAdsFieldServiceSettings(GoogleAdsFieldServiceSettings existing) : base(existing) {
-      GaxPreconditions.CheckNotNull(existing, nameof(existing));
+      gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
       GetGoogleAdsFieldSettings = existing.GetGoogleAdsFieldSettings;
       SearchGoogleAdsFieldsSettings = existing.SearchGoogleAdsFieldsSettings;
       OnCopy(existing);
@@ -57,32 +58,32 @@ namespace Google.Ads.GoogleAds.V0.Services {
     partial void OnCopy(GoogleAdsFieldServiceSettings existing);
 
     /// <summary>
-    /// The filter specifying which RPC <see cref="StatusCode"/>s are eligible for retry
+    /// The filter specifying which RPC <see cref="grpccore::StatusCode"/>s are eligible for retry
     /// for "Idempotent" <see cref="GoogleAdsFieldServiceClient"/> RPC methods.
     /// </summary>
     /// <remarks>
-    /// The eligible RPC <see cref="StatusCode"/>s for retry for "Idempotent" RPC methods are:
+    /// The eligible RPC <see cref="grpccore::StatusCode"/>s for retry for "Idempotent" RPC methods are:
     /// <list type="bullet">
-    /// <item><description><see cref="StatusCode.DeadlineExceeded"/></description></item>
-    /// <item><description><see cref="StatusCode.Unavailable"/></description></item>
+    /// <item><description><see cref="grpccore::StatusCode.DeadlineExceeded"/></description></item>
+    /// <item><description><see cref="grpccore::StatusCode.Unavailable"/></description></item>
     /// </list>
     /// </remarks>
-    public static Predicate<RpcException> IdempotentRetryFilter {
+    public static sys::Predicate<grpccore::RpcException> IdempotentRetryFilter {
       get;
     } =
-        RetrySettings.FilterForStatusCodes(StatusCode.DeadlineExceeded, StatusCode.Unavailable);
+        gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.DeadlineExceeded, grpccore::StatusCode.Unavailable);
 
     /// <summary>
-    /// The filter specifying which RPC <see cref="StatusCode"/>s are eligible for retry
+    /// The filter specifying which RPC <see cref="grpccore::StatusCode"/>s are eligible for retry
     /// for "NonIdempotent" <see cref="GoogleAdsFieldServiceClient"/> RPC methods.
     /// </summary>
     /// <remarks>
-    /// There are no RPC <see cref="StatusCode"/>s eligible for retry for "NonIdempotent" RPC methods.
+    /// There are no RPC <see cref="grpccore::StatusCode"/>s eligible for retry for "NonIdempotent" RPC methods.
     /// </remarks>
-    public static Predicate<RpcException> NonIdempotentRetryFilter {
+    public static sys::Predicate<grpccore::RpcException> NonIdempotentRetryFilter {
       get;
     } =
-        RetrySettings.FilterForStatusCodes();
+        gaxgrpc::RetrySettings.FilterForStatusCodes();
 
     /// <summary>
     /// "Default" retry backoff for <see cref="GoogleAdsFieldServiceClient"/> RPC methods.
@@ -98,9 +99,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <item><description>Delay multiplier: 1.3</description></item>
     /// </list>
     /// </remarks>
-    public static BackoffSettings GetDefaultRetryBackoff() => new BackoffSettings(
-        delay: TimeSpan.FromMilliseconds(100),
-        maxDelay: TimeSpan.FromMilliseconds(60000),
+    public static gaxgrpc::BackoffSettings GetDefaultRetryBackoff() => new gaxgrpc::BackoffSettings(
+        delay: sys::TimeSpan.FromMilliseconds(100),
+        maxDelay: sys::TimeSpan.FromMilliseconds(60000),
         delayMultiplier: 1.3
     );
 
@@ -118,19 +119,19 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <item><description>Maximum timeout: 20000 milliseconds</description></item>
     /// </list>
     /// </remarks>
-    public static BackoffSettings GetDefaultTimeoutBackoff() => new BackoffSettings(
-        delay: TimeSpan.FromMilliseconds(20000),
-        maxDelay: TimeSpan.FromMilliseconds(20000),
+    public static gaxgrpc::BackoffSettings GetDefaultTimeoutBackoff() => new gaxgrpc::BackoffSettings(
+        delay: sys::TimeSpan.FromMilliseconds(20000),
+        maxDelay: sys::TimeSpan.FromMilliseconds(20000),
         delayMultiplier: 1.0
     );
 
     /// <summary>
-    /// <see cref="CallSettings"/> for synchronous and asynchronous calls to
+    /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
     /// <c>GoogleAdsFieldServiceClient.GetGoogleAdsField</c> and <c>GoogleAdsFieldServiceClient.GetGoogleAdsFieldAsync</c>.
     /// </summary>
     /// <remarks>
     /// The default <c>GoogleAdsFieldServiceClient.GetGoogleAdsField</c> and
-    /// <c>GoogleAdsFieldServiceClient.GetGoogleAdsFieldAsync</c> <see cref="RetrySettings"/> are:
+    /// <c>GoogleAdsFieldServiceClient.GetGoogleAdsFieldAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
     /// <list type="bullet">
     /// <item><description>Initial retry delay: 100 milliseconds</description></item>
     /// <item><description>Retry delay multiplier: 1.3</description></item>
@@ -141,28 +142,28 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// </list>
     /// Retry will be attempted on the following response status codes:
     /// <list>
-    /// <item><description><see cref="StatusCode.DeadlineExceeded"/></description></item>
-    /// <item><description><see cref="StatusCode.Unavailable"/></description></item>
+    /// <item><description><see cref="grpccore::StatusCode.DeadlineExceeded"/></description></item>
+    /// <item><description><see cref="grpccore::StatusCode.Unavailable"/></description></item>
     /// </list>
     /// Default RPC expiration is 600000 milliseconds.
     /// </remarks>
-    public CallSettings GetGoogleAdsFieldSettings {
+    public gaxgrpc::CallSettings GetGoogleAdsFieldSettings {
       get; set;
-    } = CallSettings.FromCallTiming(
-        CallTiming.FromRetry(new RetrySettings(
+    } = gaxgrpc::CallSettings.FromCallTiming(
+        gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
             retryBackoff: GetDefaultRetryBackoff(),
             timeoutBackoff: GetDefaultTimeoutBackoff(),
-            totalExpiration: Expiration.FromTimeout(TimeSpan.FromMilliseconds(600000)),
+            totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
             retryFilter: IdempotentRetryFilter
         )));
 
     /// <summary>
-    /// <see cref="CallSettings"/> for synchronous and asynchronous calls to
+    /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
     /// <c>GoogleAdsFieldServiceClient.SearchGoogleAdsFields</c> and <c>GoogleAdsFieldServiceClient.SearchGoogleAdsFieldsAsync</c>.
     /// </summary>
     /// <remarks>
     /// The default <c>GoogleAdsFieldServiceClient.SearchGoogleAdsFields</c> and
-    /// <c>GoogleAdsFieldServiceClient.SearchGoogleAdsFieldsAsync</c> <see cref="RetrySettings"/> are:
+    /// <c>GoogleAdsFieldServiceClient.SearchGoogleAdsFieldsAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
     /// <list type="bullet">
     /// <item><description>Initial retry delay: 100 milliseconds</description></item>
     /// <item><description>Retry delay multiplier: 1.3</description></item>
@@ -177,13 +178,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// </list>
     /// Default RPC expiration is 600000 milliseconds.
     /// </remarks>
-    public CallSettings SearchGoogleAdsFieldsSettings {
+    public gaxgrpc::CallSettings SearchGoogleAdsFieldsSettings {
       get; set;
-    } = CallSettings.FromCallTiming(
-        CallTiming.FromRetry(new RetrySettings(
+    } = gaxgrpc::CallSettings.FromCallTiming(
+        gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
             retryBackoff: GetDefaultRetryBackoff(),
             timeoutBackoff: GetDefaultTimeoutBackoff(),
-            totalExpiration: Expiration.FromTimeout(TimeSpan.FromMilliseconds(600000)),
+            totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
             retryFilter: NonIdempotentRetryFilter
         )));
 
@@ -202,7 +203,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <summary>
     /// The default endpoint for the GoogleAdsFieldService service, which is a host of "googleads.googleapis.com" and a port of 443.
     /// </summary>
-    public static ServiceEndpoint DefaultEndpoint { get; } = new ServiceEndpoint("googleads.googleapis.com", 443);
+    public static gaxgrpc::ServiceEndpoint DefaultEndpoint { get; } = new gaxgrpc::ServiceEndpoint("googleads.googleapis.com", 443);
 
     /// <summary>
     /// The default GoogleAdsFieldService scopes.
@@ -212,75 +213,120 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <list type="bullet">
     /// </list>
     /// </remarks>
-    public static IReadOnlyList<string> DefaultScopes {
+    public static scg::IReadOnlyList<string> DefaultScopes {
       get;
-    } = new ReadOnlyCollection<string>(new string[] {
+    } = new sco::ReadOnlyCollection<string>(new string[] {
         });
 
-    private static readonly ChannelPool s_channelPool = new ChannelPool(DefaultScopes);
-
-    // Note: we could have parameterless overloads of Create and CreateAsync,
-    // documented to just use the default endpoint, settings and credentials.
-    // Pros:
-    // - Might be more reassuring on first use
-    // - Allows method group conversions
-    // Con: overloads!
+    private static readonly gaxgrpc::ChannelPool s_channelPool = new gaxgrpc::ChannelPool(DefaultScopes);
 
     /// <summary>
     /// Asynchronously creates a <see cref="GoogleAdsFieldServiceClient"/>, applying defaults for all unspecified settings,
     /// and creating a channel connecting to the given endpoint with application default credentials where
-    /// necessary.
+    /// necessary. See the example for how to use custom credentials.
     /// </summary>
-    /// <param name="endpoint">Optional <see cref="ServiceEndpoint"/>.</param>
+    /// <example>
+    /// This sample shows how to create a client using default credentials:
+    /// <code>
+    /// using Google.Ads.Googleads.V0.Services;
+    /// ...
+    /// // When running on Google Cloud Platform this will use the project Compute Credential.
+    /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
+    /// // credential file to use that credential.
+    /// GoogleAdsFieldServiceClient client = await GoogleAdsFieldServiceClient.CreateAsync();
+    /// </code>
+    /// This sample shows how to create a client using credentials loaded from a JSON file:
+    /// <code>
+    /// using Google.Ads.Googleads.V0.Services;
+    /// using Google.Apis.Auth.OAuth2;
+    /// using Grpc.Auth;
+    /// using Grpc.Core;
+    /// ...
+    /// GoogleCredential cred = GoogleCredential.FromFile("/path/to/credentials.json");
+    /// Channel channel = new Channel(
+    ///     GoogleAdsFieldServiceClient.DefaultEndpoint.Host, GoogleAdsFieldServiceClient.DefaultEndpoint.Port, cred.ToChannelCredentials());
+    /// GoogleAdsFieldServiceClient client = GoogleAdsFieldServiceClient.Create(channel);
+    /// ...
+    /// // Shutdown the channel when it is no longer required.
+    /// await channel.ShutdownAsync();
+    /// </code>
+    /// </example>
+    /// <param name="endpoint">Optional <see cref="gaxgrpc::ServiceEndpoint"/>.</param>
     /// <param name="settings">Optional <see cref="GoogleAdsFieldServiceSettings"/>.</param>
     /// <returns>The task representing the created <see cref="GoogleAdsFieldServiceClient"/>.</returns>
-    public static async Task<GoogleAdsFieldServiceClient> CreateAsync(ServiceEndpoint endpoint = null, GoogleAdsFieldServiceSettings settings = null) {
-      Channel channel = await s_channelPool.GetChannelAsync(endpoint ?? DefaultEndpoint).ConfigureAwait(false);
+    public static async stt::Task<GoogleAdsFieldServiceClient> CreateAsync(gaxgrpc::ServiceEndpoint endpoint = null, GoogleAdsFieldServiceSettings settings = null) {
+      grpccore::Channel channel = await s_channelPool.GetChannelAsync(endpoint ?? DefaultEndpoint).ConfigureAwait(false);
       return Create(channel, settings);
     }
 
     /// <summary>
     /// Synchronously creates a <see cref="GoogleAdsFieldServiceClient"/>, applying defaults for all unspecified settings,
     /// and creating a channel connecting to the given endpoint with application default credentials where
-    /// necessary.
+    /// necessary. See the example for how to use custom credentials.
     /// </summary>
-    /// <param name="endpoint">Optional <see cref="ServiceEndpoint"/>.</param>
+    /// <example>
+    /// This sample shows how to create a client using default credentials:
+    /// <code>
+    /// using Google.Ads.Googleads.V0.Services;
+    /// ...
+    /// // When running on Google Cloud Platform this will use the project Compute Credential.
+    /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
+    /// // credential file to use that credential.
+    /// GoogleAdsFieldServiceClient client = GoogleAdsFieldServiceClient.Create();
+    /// </code>
+    /// This sample shows how to create a client using credentials loaded from a JSON file:
+    /// <code>
+    /// using Google.Ads.Googleads.V0.Services;
+    /// using Google.Apis.Auth.OAuth2;
+    /// using Grpc.Auth;
+    /// using Grpc.Core;
+    /// ...
+    /// GoogleCredential cred = GoogleCredential.FromFile("/path/to/credentials.json");
+    /// Channel channel = new Channel(
+    ///     GoogleAdsFieldServiceClient.DefaultEndpoint.Host, GoogleAdsFieldServiceClient.DefaultEndpoint.Port, cred.ToChannelCredentials());
+    /// GoogleAdsFieldServiceClient client = GoogleAdsFieldServiceClient.Create(channel);
+    /// ...
+    /// // Shutdown the channel when it is no longer required.
+    /// channel.ShutdownAsync().Wait();
+    /// </code>
+    /// </example>
+    /// <param name="endpoint">Optional <see cref="gaxgrpc::ServiceEndpoint"/>.</param>
     /// <param name="settings">Optional <see cref="GoogleAdsFieldServiceSettings"/>.</param>
     /// <returns>The created <see cref="GoogleAdsFieldServiceClient"/>.</returns>
-    public static GoogleAdsFieldServiceClient Create(ServiceEndpoint endpoint = null, GoogleAdsFieldServiceSettings settings = null) {
-      Channel channel = s_channelPool.GetChannel(endpoint ?? DefaultEndpoint);
+    public static GoogleAdsFieldServiceClient Create(gaxgrpc::ServiceEndpoint endpoint = null, GoogleAdsFieldServiceSettings settings = null) {
+      grpccore::Channel channel = s_channelPool.GetChannel(endpoint ?? DefaultEndpoint);
       return Create(channel, settings);
     }
 
     /// <summary>
     /// Creates a <see cref="GoogleAdsFieldServiceClient"/> which uses the specified channel for remote operations.
     /// </summary>
-    /// <param name="channel">The <see cref="Channel"/> for remote operations. Must not be null.</param>
+    /// <param name="channel">The <see cref="grpccore::Channel"/> for remote operations. Must not be null.</param>
     /// <param name="settings">Optional <see cref="GoogleAdsFieldServiceSettings"/>.</param>
     /// <returns>The created <see cref="GoogleAdsFieldServiceClient"/>.</returns>
-    public static GoogleAdsFieldServiceClient Create(Channel channel, GoogleAdsFieldServiceSettings settings = null) {
-      GaxPreconditions.CheckNotNull(channel, nameof(channel));
+    public static GoogleAdsFieldServiceClient Create(grpccore::Channel channel, GoogleAdsFieldServiceSettings settings = null) {
+      gax::GaxPreconditions.CheckNotNull(channel, nameof(channel));
       GoogleAdsFieldService.GoogleAdsFieldServiceClient grpcClient = new GoogleAdsFieldService.GoogleAdsFieldServiceClient(channel);
       return new GoogleAdsFieldServiceClientImpl(grpcClient, settings);
     }
 
     /// <summary>
-    /// Shuts down any channels automatically created by <see cref="Create(ServiceEndpoint, GoogleAdsFieldServiceSettings)"/>
-    /// and <see cref="CreateAsync(ServiceEndpoint, GoogleAdsFieldServiceSettings)"/>. Channels which weren't automatically
+    /// Shuts down any channels automatically created by <see cref="Create(gaxgrpc::ServiceEndpoint, GoogleAdsFieldServiceSettings)"/>
+    /// and <see cref="CreateAsync(gaxgrpc::ServiceEndpoint, GoogleAdsFieldServiceSettings)"/>. Channels which weren't automatically
     /// created are not affected.
     /// </summary>
-    /// <remarks>After calling this method, further calls to <see cref="Create(ServiceEndpoint, GoogleAdsFieldServiceSettings)"/>
-    /// and <see cref="CreateAsync(ServiceEndpoint, GoogleAdsFieldServiceSettings)"/> will create new channels, which could
+    /// <remarks>After calling this method, further calls to <see cref="Create(gaxgrpc::ServiceEndpoint, GoogleAdsFieldServiceSettings)"/>
+    /// and <see cref="CreateAsync(gaxgrpc::ServiceEndpoint, GoogleAdsFieldServiceSettings)"/> will create new channels, which could
     /// in turn be shut down by another call to this method.</remarks>
     /// <returns>A task representing the asynchronous shutdown operation.</returns>
-    public static Task ShutdownDefaultChannelsAsync() => s_channelPool.ShutdownChannelsAsync();
+    public static stt::Task ShutdownDefaultChannelsAsync() => s_channelPool.ShutdownChannelsAsync();
 
     /// <summary>
     /// The underlying gRPC GoogleAdsFieldService client.
     /// </summary>
     public virtual GoogleAdsFieldService.GoogleAdsFieldServiceClient GrpcClient {
       get {
-        throw new NotImplementedException();
+        throw new sys::NotImplementedException();
       }
     }
 
@@ -296,11 +342,11 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public virtual Task<GoogleAdsField> GetGoogleAdsFieldAsync(
+    public virtual stt::Task<gagvr::GoogleAdsField> GetGoogleAdsFieldAsync(
         string resourceName,
-        CallSettings callSettings = null) => GetGoogleAdsFieldAsync(
-            new GetGoogleAdsFieldRequest {
-              ResourceName = GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
+        gaxgrpc::CallSettings callSettings = null) => GetGoogleAdsFieldAsync(
+            new gagvs::GetGoogleAdsFieldRequest {
+              ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
             },
             callSettings);
 
@@ -311,16 +357,16 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// The resource name of the field to get.
     /// </param>
     /// <param name="cancellationToken">
-    /// A <see cref="CancellationToken"/> to use for this RPC.
+    /// A <see cref="st::CancellationToken"/> to use for this RPC.
     /// </param>
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public virtual Task<GoogleAdsField> GetGoogleAdsFieldAsync(
+    public virtual stt::Task<gagvr::GoogleAdsField> GetGoogleAdsFieldAsync(
         string resourceName,
-        CancellationToken cancellationToken) => GetGoogleAdsFieldAsync(
+        st::CancellationToken cancellationToken) => GetGoogleAdsFieldAsync(
             resourceName,
-            CallSettings.FromCancellationToken(cancellationToken));
+            gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
     /// <summary>
     /// Returns just the requested field.
@@ -334,11 +380,11 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// The RPC response.
     /// </returns>
-    public virtual GoogleAdsField GetGoogleAdsField(
+    public virtual gagvr::GoogleAdsField GetGoogleAdsField(
         string resourceName,
-        CallSettings callSettings = null) => GetGoogleAdsField(
-            new GetGoogleAdsFieldRequest {
-              ResourceName = GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
+        gaxgrpc::CallSettings callSettings = null) => GetGoogleAdsField(
+            new gagvs::GetGoogleAdsFieldRequest {
+              ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
             },
             callSettings);
 
@@ -354,11 +400,29 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public virtual Task<GoogleAdsField> GetGoogleAdsFieldAsync(
-        GetGoogleAdsFieldRequest request,
-        CallSettings callSettings = null) {
-      throw new NotImplementedException();
+    public virtual stt::Task<gagvr::GoogleAdsField> GetGoogleAdsFieldAsync(
+        gagvs::GetGoogleAdsFieldRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
+      throw new sys::NotImplementedException();
     }
+
+    /// <summary>
+    /// Returns just the requested field.
+    /// </summary>
+    /// <param name="request">
+    /// The request object containing all of the parameters for the API call.
+    /// </param>
+    /// <param name="cancellationToken">
+    /// A <see cref="st::CancellationToken"/> to use for this RPC.
+    /// </param>
+    /// <returns>
+    /// A Task containing the RPC response.
+    /// </returns>
+    public virtual stt::Task<gagvr::GoogleAdsField> GetGoogleAdsFieldAsync(
+        gagvs::GetGoogleAdsFieldRequest request,
+        st::CancellationToken cancellationToken) => GetGoogleAdsFieldAsync(
+            request,
+            gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
     /// <summary>
     /// Returns just the requested field.
@@ -372,10 +436,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// The RPC response.
     /// </returns>
-    public virtual GoogleAdsField GetGoogleAdsField(
-        GetGoogleAdsFieldRequest request,
-        CallSettings callSettings = null) {
-      throw new NotImplementedException();
+    public virtual gagvr::GoogleAdsField GetGoogleAdsField(
+        gagvs::GetGoogleAdsFieldRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
+      throw new sys::NotImplementedException();
     }
 
     /// <summary>
@@ -396,15 +460,15 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// If not null, applies overrides to this RPC call.
     /// </param>
     /// <returns>
-    /// A pageable asynchronous sequence of <see cref="GoogleAdsField"/> resources.
+    /// A pageable asynchronous sequence of <see cref="gagvr::GoogleAdsField"/> resources.
     /// </returns>
-    public virtual PagedAsyncEnumerable<SearchGoogleAdsFieldsResponse, GoogleAdsField> SearchGoogleAdsFieldsAsync(
+    public virtual gax::PagedAsyncEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(
         string query,
         string pageToken = null,
         int? pageSize = null,
-        CallSettings callSettings = null) => SearchGoogleAdsFieldsAsync(
-            new SearchGoogleAdsFieldsRequest {
-              Query = GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
+        gaxgrpc::CallSettings callSettings = null) => SearchGoogleAdsFieldsAsync(
+            new gagvs::SearchGoogleAdsFieldsRequest {
+              Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
               PageToken = pageToken ?? "",
               PageSize = pageSize ?? 0,
             },
@@ -428,15 +492,15 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// If not null, applies overrides to this RPC call.
     /// </param>
     /// <returns>
-    /// A pageable sequence of <see cref="GoogleAdsField"/> resources.
+    /// A pageable sequence of <see cref="gagvr::GoogleAdsField"/> resources.
     /// </returns>
-    public virtual PagedEnumerable<SearchGoogleAdsFieldsResponse, GoogleAdsField> SearchGoogleAdsFields(
+    public virtual gax::PagedEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(
         string query,
         string pageToken = null,
         int? pageSize = null,
-        CallSettings callSettings = null) => SearchGoogleAdsFields(
-            new SearchGoogleAdsFieldsRequest {
-              Query = GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
+        gaxgrpc::CallSettings callSettings = null) => SearchGoogleAdsFields(
+            new gagvs::SearchGoogleAdsFieldsRequest {
+              Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
               PageToken = pageToken ?? "",
               PageSize = pageSize ?? 0,
             },
@@ -452,12 +516,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// If not null, applies overrides to this RPC call.
     /// </param>
     /// <returns>
-    /// A pageable asynchronous sequence of <see cref="GoogleAdsField"/> resources.
+    /// A pageable asynchronous sequence of <see cref="gagvr::GoogleAdsField"/> resources.
     /// </returns>
-    public virtual PagedAsyncEnumerable<SearchGoogleAdsFieldsResponse, GoogleAdsField> SearchGoogleAdsFieldsAsync(
-        SearchGoogleAdsFieldsRequest request,
-        CallSettings callSettings = null) {
-      throw new NotImplementedException();
+    public virtual gax::PagedAsyncEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(
+        gagvs::SearchGoogleAdsFieldsRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
+      throw new sys::NotImplementedException();
     }
 
     /// <summary>
@@ -470,12 +534,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// If not null, applies overrides to this RPC call.
     /// </param>
     /// <returns>
-    /// A pageable sequence of <see cref="GoogleAdsField"/> resources.
+    /// A pageable sequence of <see cref="gagvr::GoogleAdsField"/> resources.
     /// </returns>
-    public virtual PagedEnumerable<SearchGoogleAdsFieldsResponse, GoogleAdsField> SearchGoogleAdsFields(
-        SearchGoogleAdsFieldsRequest request,
-        CallSettings callSettings = null) {
-      throw new NotImplementedException();
+    public virtual gax::PagedEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(
+        gagvs::SearchGoogleAdsFieldsRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
+      throw new sys::NotImplementedException();
     }
   }
 
@@ -483,8 +547,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
   /// GoogleAdsFieldService client wrapper implementation, for convenient use.
   /// </summary>
   public sealed partial class GoogleAdsFieldServiceClientImpl : GoogleAdsFieldServiceClient {
-    private readonly ApiCall<GetGoogleAdsFieldRequest, GoogleAdsField> _callGetGoogleAdsField;
-    private readonly ApiCall<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse> _callSearchGoogleAdsFields;
+    private readonly gaxgrpc::ApiCall<gagvs::GetGoogleAdsFieldRequest, gagvr::GoogleAdsField> _callGetGoogleAdsField;
+    private readonly gaxgrpc::ApiCall<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse> _callSearchGoogleAdsFields;
 
     /// <summary>
     /// Constructs a client wrapper for the GoogleAdsFieldService service, with the specified gRPC client and settings.
@@ -494,10 +558,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public GoogleAdsFieldServiceClientImpl(GoogleAdsFieldService.GoogleAdsFieldServiceClient grpcClient, GoogleAdsFieldServiceSettings settings) {
       GrpcClient = grpcClient;
       GoogleAdsFieldServiceSettings effectiveSettings = settings ?? GoogleAdsFieldServiceSettings.GetDefault();
-      ClientHelper clientHelper = new ClientHelper(effectiveSettings);
-      _callGetGoogleAdsField = clientHelper.BuildApiCall<GetGoogleAdsFieldRequest, GoogleAdsField>(
+      gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
+      _callGetGoogleAdsField = clientHelper.BuildApiCall<gagvs::GetGoogleAdsFieldRequest, gagvr::GoogleAdsField>(
           GrpcClient.GetGoogleAdsFieldAsync, GrpcClient.GetGoogleAdsField, effectiveSettings.GetGoogleAdsFieldSettings);
-      _callSearchGoogleAdsFields = clientHelper.BuildApiCall<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse>(
+      _callSearchGoogleAdsFields = clientHelper.BuildApiCall<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse>(
           GrpcClient.SearchGoogleAdsFieldsAsync, GrpcClient.SearchGoogleAdsFields, effectiveSettings.SearchGoogleAdsFieldsSettings);
       Modify_ApiCall(ref _callGetGoogleAdsField);
       Modify_GetGoogleAdsFieldApiCall(ref _callGetGoogleAdsField);
@@ -510,17 +574,17 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     // Partial methods called for every ApiCall on construction.
     // Allows modification of all the underlying ApiCall objects.
-    partial void Modify_ApiCall<TRequest, TResponse>(ref ApiCall<TRequest, TResponse> call)
-        where TRequest : class, IMessage<TRequest>
-        where TResponse : class, IMessage<TResponse>;
+    partial void Modify_ApiCall<TRequest, TResponse>(ref gaxgrpc::ApiCall<TRequest, TResponse> call)
+        where TRequest : class, pb::IMessage<TRequest>
+        where TResponse : class, pb::IMessage<TResponse>;
 
     // Partial methods called for each ApiCall on construction.
     // Allows per-RPC-method modification of the underlying ApiCall object.
-    partial void Modify_GetGoogleAdsFieldApiCall(ref ApiCall<GetGoogleAdsFieldRequest, GoogleAdsField> call);
+    partial void Modify_GetGoogleAdsFieldApiCall(ref gaxgrpc::ApiCall<gagvs::GetGoogleAdsFieldRequest, gagvr::GoogleAdsField> call);
 
-    partial void Modify_SearchGoogleAdsFieldsApiCall(ref ApiCall<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse> call);
+    partial void Modify_SearchGoogleAdsFieldsApiCall(ref gaxgrpc::ApiCall<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse> call);
 
-    partial void OnConstruction(GoogleAdsFieldService.GoogleAdsFieldServiceClient grpcClient, GoogleAdsFieldServiceSettings effectiveSettings, ClientHelper clientHelper);
+    partial void OnConstruction(GoogleAdsFieldService.GoogleAdsFieldServiceClient grpcClient, GoogleAdsFieldServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
     /// <summary>
     /// The underlying gRPC GoogleAdsFieldService client.
@@ -532,9 +596,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     // Partial methods called on each request.
     // Allows per-RPC-call modification to the request and CallSettings objects,
     // before the underlying RPC is performed.
-    partial void Modify_GetGoogleAdsFieldRequest(ref GetGoogleAdsFieldRequest request, ref CallSettings settings);
+    partial void Modify_GetGoogleAdsFieldRequest(ref gagvs::GetGoogleAdsFieldRequest request, ref gaxgrpc::CallSettings settings);
 
-    partial void Modify_SearchGoogleAdsFieldsRequest(ref SearchGoogleAdsFieldsRequest request, ref CallSettings settings);
+    partial void Modify_SearchGoogleAdsFieldsRequest(ref gagvs::SearchGoogleAdsFieldsRequest request, ref gaxgrpc::CallSettings settings);
 
     /// <summary>
     /// Returns just the requested field.
@@ -548,9 +612,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// A Task containing the RPC response.
     /// </returns>
-    public override Task<GoogleAdsField> GetGoogleAdsFieldAsync(
-        GetGoogleAdsFieldRequest request,
-        CallSettings callSettings = null) {
+    public override stt::Task<gagvr::GoogleAdsField> GetGoogleAdsFieldAsync(
+        gagvs::GetGoogleAdsFieldRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
       Modify_GetGoogleAdsFieldRequest(ref request, ref callSettings);
       return _callGetGoogleAdsField.Async(request, callSettings);
     }
@@ -567,9 +631,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <returns>
     /// The RPC response.
     /// </returns>
-    public override GoogleAdsField GetGoogleAdsField(
-        GetGoogleAdsFieldRequest request,
-        CallSettings callSettings = null) {
+    public override gagvr::GoogleAdsField GetGoogleAdsField(
+        gagvs::GetGoogleAdsFieldRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
       Modify_GetGoogleAdsFieldRequest(ref request, ref callSettings);
       return _callGetGoogleAdsField.Sync(request, callSettings);
     }
@@ -584,13 +648,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// If not null, applies overrides to this RPC call.
     /// </param>
     /// <returns>
-    /// A pageable asynchronous sequence of <see cref="GoogleAdsField"/> resources.
+    /// A pageable asynchronous sequence of <see cref="gagvr::GoogleAdsField"/> resources.
     /// </returns>
-    public override PagedAsyncEnumerable<SearchGoogleAdsFieldsResponse, GoogleAdsField> SearchGoogleAdsFieldsAsync(
-        SearchGoogleAdsFieldsRequest request,
-        CallSettings callSettings = null) {
+    public override gax::PagedAsyncEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(
+        gagvs::SearchGoogleAdsFieldsRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
       Modify_SearchGoogleAdsFieldsRequest(ref request, ref callSettings);
-      return new GrpcPagedAsyncEnumerable<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse, GoogleAdsField>(_callSearchGoogleAdsFields, request, callSettings);
+      return new gaxgrpc::GrpcPagedAsyncEnumerable<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField>(_callSearchGoogleAdsFields, request, callSettings);
     }
 
     /// <summary>
@@ -603,29 +667,29 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// If not null, applies overrides to this RPC call.
     /// </param>
     /// <returns>
-    /// A pageable sequence of <see cref="GoogleAdsField"/> resources.
+    /// A pageable sequence of <see cref="gagvr::GoogleAdsField"/> resources.
     /// </returns>
-    public override PagedEnumerable<SearchGoogleAdsFieldsResponse, GoogleAdsField> SearchGoogleAdsFields(
-        SearchGoogleAdsFieldsRequest request,
-        CallSettings callSettings = null) {
+    public override gax::PagedEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(
+        gagvs::SearchGoogleAdsFieldsRequest request,
+        gaxgrpc::CallSettings callSettings = null) {
       Modify_SearchGoogleAdsFieldsRequest(ref request, ref callSettings);
-      return new GrpcPagedEnumerable<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse, GoogleAdsField>(_callSearchGoogleAdsFields, request, callSettings);
+      return new gaxgrpc::GrpcPagedEnumerable<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField>(_callSearchGoogleAdsFields, request, callSettings);
     }
   }
 
   // Partial classes to enable page-streaming
 
-  public partial class SearchGoogleAdsFieldsRequest : IPageRequest {
+  public partial class SearchGoogleAdsFieldsRequest : gaxgrpc::IPageRequest {
   }
 
-  public partial class SearchGoogleAdsFieldsResponse : IPageResponse<GoogleAdsField> {
+  public partial class SearchGoogleAdsFieldsResponse : gaxgrpc::IPageResponse<gagvr::GoogleAdsField> {
 
     /// <summary>
     /// Returns an enumerator that iterates through the resources in this response.
     /// </summary>
-    public IEnumerator<GoogleAdsField> GetEnumerator() => Results.GetEnumerator();
+    public scg::IEnumerator<gagvr::GoogleAdsField> GetEnumerator() => Results.GetEnumerator();
 
     /// <inheritdoc/>
-    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+    sc::IEnumerator sc::IEnumerable.GetEnumerator() => GetEnumerator();
   }
 }

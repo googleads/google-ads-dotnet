@@ -29,23 +29,27 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "dXJjZXMaLWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbi9jcml0ZXJp",
             "YS5wcm90bxoyZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvY3JpdGVy",
             "aW9uX3R5cGUucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90",
-            "byLWAgoRQ2FtcGFpZ25Dcml0ZXJpb24SFQoNcmVzb3VyY2VfbmFtZRgBIAEo",
+            "byKNBAoRQ2FtcGFpZ25Dcml0ZXJpb24SFQoNcmVzb3VyY2VfbmFtZRgBIAEo",
             "CRIuCghjYW1wYWlnbhgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
             "YWx1ZRIxCgxjcml0ZXJpb25faWQYBSABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "SW50NjRWYWx1ZRIsCghuZWdhdGl2ZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5Cb29sVmFsdWUSTAoEdHlwZRgGIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVudW1zLkNyaXRlcmlvblR5cGVFbnVtLkNyaXRlcmlvblR5cGUS",
-            "PgoHa2V5d29yZBgIIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNv",
-            "bW1vbi5LZXl3b3JkSW5mb0gAQgsKCWNyaXRlcmlvbkLbAQolY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IWQ2FtcGFpZ25Dcml0ZXJp",
-            "b25Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dB",
-            "QaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
+            "SW50NjRWYWx1ZRIxCgxiaWRfbW9kaWZpZXIYDiABKAsyGy5nb29nbGUucHJv",
+            "dG9idWYuRmxvYXRWYWx1ZRIsCghuZWdhdGl2ZRgHIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5Cb29sVmFsdWUSTAoEdHlwZRgGIAEoDjI+Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmVudW1zLkNyaXRlcmlvblR5cGVFbnVtLkNyaXRlcmlv",
+            "blR5cGUSPgoHa2V5d29yZBgIIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmNvbW1vbi5LZXl3b3JkSW5mb0gAEkAKCGxvY2F0aW9uGAwgASgLMiwu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkxvY2F0aW9uSW5mb0gA",
+            "EkAKCHBsYXRmb3JtGA0gASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "Y29tbW9uLlBsYXRmb3JtSW5mb0gAQgsKCWNyaXRlcmlvbkLbAQolY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IWQ2FtcGFpZ25Dcml0",
+            "ZXJpb25Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6IC",
+            "A0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterion), global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterion.Parser, new[]{ "ResourceName", "Campaign", "CriterionId", "Negative", "Type", "Keyword" }, new[]{ "Criterion" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterion), global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterion.Parser, new[]{ "ResourceName", "Campaign", "CriterionId", "BidModifier", "Negative", "Type", "Keyword", "Location", "Platform" }, new[]{ "Criterion" }, null, null)
           }));
     }
     #endregion
@@ -83,11 +87,18 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       resourceName_ = other.resourceName_;
       Campaign = other.Campaign;
       CriterionId = other.CriterionId;
+      BidModifier = other.BidModifier;
       Negative = other.Negative;
       type_ = other.type_;
       switch (other.CriterionCase) {
         case CriterionOneofCase.Keyword:
           Keyword = other.Keyword.Clone();
+          break;
+        case CriterionOneofCase.Location:
+          Location = other.Location.Clone();
+          break;
+        case CriterionOneofCase.Platform:
+          Platform = other.Platform.Clone();
           break;
       }
 
@@ -150,6 +161,24 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "bid_modifier" field.</summary>
+    public const int BidModifierFieldNumber = 14;
+    private static readonly pb::FieldCodec<float?> _single_bidModifier_codec = pb::FieldCodec.ForStructWrapper<float>(114);
+    private float? bidModifier_;
+    /// <summary>
+    /// The modifier for the bids when the criterion matches.
+    /// Allowable modifier values depend on the criterion:
+    ///  - 0.1 - 10.0: Location
+    ///  - 0.1 - 4.0: Platform (mobile). Use 0 to opt out of mobile.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float? BidModifier {
+      get { return bidModifier_; }
+      set {
+        bidModifier_ = value;
+      }
+    }
+
     /// <summary>Field number for the "negative" field.</summary>
     public const int NegativeFieldNumber = 7;
     private static readonly pb::FieldCodec<bool?> _single_negative_codec = pb::FieldCodec.ForStructWrapper<bool>(58);
@@ -193,11 +222,41 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "location" field.</summary>
+    public const int LocationFieldNumber = 12;
+    /// <summary>
+    /// Location.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.LocationInfo Location {
+      get { return criterionCase_ == CriterionOneofCase.Location ? (global::Google.Ads.GoogleAds.V0.Common.LocationInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.Location;
+      }
+    }
+
+    /// <summary>Field number for the "platform" field.</summary>
+    public const int PlatformFieldNumber = 13;
+    /// <summary>
+    /// Platform.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PlatformInfo Platform {
+      get { return criterionCase_ == CriterionOneofCase.Platform ? (global::Google.Ads.GoogleAds.V0.Common.PlatformInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.Platform;
+      }
+    }
+
     private object criterion_;
     /// <summary>Enum of possible cases for the "criterion" oneof.</summary>
     public enum CriterionOneofCase {
       None = 0,
       Keyword = 8,
+      Location = 12,
+      Platform = 13,
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -227,9 +286,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (ResourceName != other.ResourceName) return false;
       if (Campaign != other.Campaign) return false;
       if (CriterionId != other.CriterionId) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(BidModifier, other.BidModifier)) return false;
       if (Negative != other.Negative) return false;
       if (Type != other.Type) return false;
       if (!object.Equals(Keyword, other.Keyword)) return false;
+      if (!object.Equals(Location, other.Location)) return false;
+      if (!object.Equals(Platform, other.Platform)) return false;
       if (CriterionCase != other.CriterionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -240,9 +302,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (campaign_ != null) hash ^= Campaign.GetHashCode();
       if (criterionId_ != null) hash ^= CriterionId.GetHashCode();
+      if (bidModifier_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(BidModifier);
       if (negative_ != null) hash ^= Negative.GetHashCode();
       if (Type != 0) hash ^= Type.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Keyword) hash ^= Keyword.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.Location) hash ^= Location.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.Platform) hash ^= Platform.GetHashCode();
       hash ^= (int) criterionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -278,6 +343,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(66);
         output.WriteMessage(Keyword);
       }
+      if (criterionCase_ == CriterionOneofCase.Location) {
+        output.WriteRawTag(98);
+        output.WriteMessage(Location);
+      }
+      if (criterionCase_ == CriterionOneofCase.Platform) {
+        output.WriteRawTag(106);
+        output.WriteMessage(Platform);
+      }
+      if (bidModifier_ != null) {
+        _single_bidModifier_codec.WriteTagAndValue(output, BidModifier);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -295,6 +371,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (criterionId_ != null) {
         size += _single_criterionId_codec.CalculateSizeWithTag(CriterionId);
       }
+      if (bidModifier_ != null) {
+        size += _single_bidModifier_codec.CalculateSizeWithTag(BidModifier);
+      }
       if (negative_ != null) {
         size += _single_negative_codec.CalculateSizeWithTag(Negative);
       }
@@ -303,6 +382,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (criterionCase_ == CriterionOneofCase.Keyword) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Keyword);
+      }
+      if (criterionCase_ == CriterionOneofCase.Location) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Location);
+      }
+      if (criterionCase_ == CriterionOneofCase.Platform) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Platform);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -328,6 +413,11 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           CriterionId = other.CriterionId;
         }
       }
+      if (other.bidModifier_ != null) {
+        if (bidModifier_ == null || other.BidModifier != 0F) {
+          BidModifier = other.BidModifier;
+        }
+      }
       if (other.negative_ != null) {
         if (negative_ == null || other.Negative != false) {
           Negative = other.Negative;
@@ -342,6 +432,18 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             Keyword = new global::Google.Ads.GoogleAds.V0.Common.KeywordInfo();
           }
           Keyword.MergeFrom(other.Keyword);
+          break;
+        case CriterionOneofCase.Location:
+          if (Location == null) {
+            Location = new global::Google.Ads.GoogleAds.V0.Common.LocationInfo();
+          }
+          Location.MergeFrom(other.Location);
+          break;
+        case CriterionOneofCase.Platform:
+          if (Platform == null) {
+            Platform = new global::Google.Ads.GoogleAds.V0.Common.PlatformInfo();
+          }
+          Platform.MergeFrom(other.Platform);
           break;
       }
 
@@ -392,6 +494,31 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             input.ReadMessage(subBuilder);
             Keyword = subBuilder;
+            break;
+          }
+          case 98: {
+            global::Google.Ads.GoogleAds.V0.Common.LocationInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.LocationInfo();
+            if (criterionCase_ == CriterionOneofCase.Location) {
+              subBuilder.MergeFrom(Location);
+            }
+            input.ReadMessage(subBuilder);
+            Location = subBuilder;
+            break;
+          }
+          case 106: {
+            global::Google.Ads.GoogleAds.V0.Common.PlatformInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PlatformInfo();
+            if (criterionCase_ == CriterionOneofCase.Platform) {
+              subBuilder.MergeFrom(Platform);
+            }
+            input.ReadMessage(subBuilder);
+            Platform = subBuilder;
+            break;
+          }
+          case 114: {
+            float? value = _single_bidModifier_codec.Read(input);
+            if (bidModifier_ == null || value != 0F) {
+              BidModifier = value;
+            }
             break;
           }
         }

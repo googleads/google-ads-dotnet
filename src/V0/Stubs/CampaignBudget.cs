@@ -180,7 +180,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     public const int StatusFieldNumber = 6;
     private global::Google.Ads.GoogleAds.V0.Enums.BudgetStatusEnum.Types.BudgetStatus status_ = 0;
     /// <summary>
-    /// The status of this campaign budget.
+    /// The status of this campaign budget. This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V0.Enums.BudgetStatusEnum.Types.BudgetStatus Status {

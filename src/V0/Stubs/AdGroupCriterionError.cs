@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYWRfZ3JvdXBfY3Jp",
             "dGVyaW9uX2Vycm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "cnJvcnMi+wwKGUFkR3JvdXBDcml0ZXJpb25FcnJvckVudW0i3QwKFUFkR3Jv",
+            "cnJvcnMi1wwKGUFkR3JvdXBDcml0ZXJpb25FcnJvckVudW0iuQwKFUFkR3Jv",
             "dXBDcml0ZXJpb25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04Q",
             "ARIrCidBRF9HUk9VUF9DUklURVJJT05fTEFCRUxfRE9FU19OT1RfRVhJU1QQ",
             "AhIrCidBRF9HUk9VUF9DUklURVJJT05fTEFCRUxfQUxSRUFEWV9FWElTVFMQ",
@@ -39,35 +39,35 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "SU5HX0RFU1RJTkFUSU9OX1VSTF9UQUcQDRIxCi1LRVlXT1JEX0xFVkVMX0JJ",
             "RF9OT1RfU1VQUE9SVEVEX0ZPUl9NQU5VQUxDUE0QDhIXChNJTlZBTElEX1VT",
             "RVJfU1RBVFVTEA8SHAoYQ0FOTk9UX0FERF9DUklURVJJQV9UWVBFEBASIAoc",
-            "Q0FOTk9UX0VYQ0xVREVfQ1JJVEVSSUFfVFlQRRAREicKI0lOVkFMSURfUFJP",
-            "RFVDVF9QQVJUSVRJT05fSElFUkFSQ0hZEBISLworUFJPRFVDVF9QQVJUSVRJ",
-            "T05fVU5JVF9DQU5OT1RfSEFWRV9DSElMRFJFThATEjYKMlBST0RVQ1RfUEFS",
-            "VElUSU9OX1NVQkRJVklTSU9OX1JFUVVJUkVTX09USEVSU19DQVNFEBQSPgo6",
-            "UFJPRFVDVF9QQVJUSVRJT05fUkVRVUlSRVNfU0FNRV9ESU1FTlNJT05fVFlQ",
-            "RV9BU19TSUJMSU5HUxAVEiQKIFBST0RVQ1RfUEFSVElUSU9OX0FMUkVBRFlf",
-            "RVhJU1RTEBYSJAogUFJPRFVDVF9QQVJUSVRJT05fRE9FU19OT1RfRVhJU1QQ",
-            "FxInCiNQUk9EVUNUX1BBUlRJVElPTl9DQU5OT1RfQkVfUkVNT1ZFRBAYEiIK",
-            "HklOVkFMSURfUFJPRFVDVF9QQVJUSVRJT05fVFlQRRAZEi4KKlBST0RVQ1Rf",
-            "UEFSVElUSU9OX0FERF9NQVlfT05MWV9VU0VfVEVNUF9JRBAaEjUKMUNBTVBB",
-            "SUdOX1RZUEVfTk9UX0NPTVBBVElCTEVfV0lUSF9QQVJUSUFMX0ZBSUxVUkUQ",
-            "GxItCilPUEVSQVRJT05TX0ZPUl9UT09fTUFOWV9TSE9QUElOR19BREdST1VQ",
-            "UxAcEjQKMENBTk5PVF9NT0RJRllfVVJMX0ZJRUxEU19XSVRIX0RVUExJQ0FU",
-            "RV9FTEVNRU5UUxAdEiEKHUNBTk5PVF9TRVRfV0lUSE9VVF9GSU5BTF9VUkxT",
-            "EB4SNgoyQ0FOTk9UX0NMRUFSX0ZJTkFMX1VSTFNfSUZfRklOQUxfTU9CSUxF",
-            "X1VSTFNfRVhJU1QQHxIzCi9DQU5OT1RfQ0xFQVJfRklOQUxfVVJMU19JRl9G",
-            "SU5BTF9BUFBfVVJMU19FWElTVBAgEjsKN0NBTk5PVF9DTEVBUl9GSU5BTF9V",
-            "UkxTX0lGX1RSQUNLSU5HX1VSTF9URU1QTEFURV9FWElTVFMQIRI6CjZDQU5O",
-            "T1RfQ0xFQVJfRklOQUxfVVJMU19JRl9VUkxfQ1VTVE9NX1BBUkFNRVRFUlNf",
-            "RVhJU1QQIhIyCi5DQU5OT1RfU0VUX0JPVEhfREVTVElOQVRJT05fVVJMX0FO",
-            "RF9GSU5BTF9VUkxTECMSPQo5Q0FOTk9UX1NFVF9CT1RIX0RFU1RJTkFUSU9O",
-            "X1VSTF9BTkRfVFJBQ0tJTkdfVVJMX1RFTVBMQVRFECQSLworRklOQUxfVVJM",
-            "U19OT1RfU1VQUE9SVEVEX0ZPUl9DUklURVJJT05fVFlQRRAlEjYKMkZJTkFM",
-            "X01PQklMRV9VUkxTX05PVF9TVVBQT1JURURfRk9SX0NSSVRFUklPTl9UWVBF",
-            "ECZC0AEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCGkFk",
-            "R3JvdXBDcml0ZXJpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3Jn",
-            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7",
-            "ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3Jz",
-            "ygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
+            "Q0FOTk9UX0VYQ0xVREVfQ1JJVEVSSUFfVFlQRRAREjUKMUNBTVBBSUdOX1RZ",
+            "UEVfTk9UX0NPTVBBVElCTEVfV0lUSF9QQVJUSUFMX0ZBSUxVUkUQGxItCilP",
+            "UEVSQVRJT05TX0ZPUl9UT09fTUFOWV9TSE9QUElOR19BREdST1VQUxAcEjQK",
+            "MENBTk5PVF9NT0RJRllfVVJMX0ZJRUxEU19XSVRIX0RVUExJQ0FURV9FTEVN",
+            "RU5UUxAdEiEKHUNBTk5PVF9TRVRfV0lUSE9VVF9GSU5BTF9VUkxTEB4SNgoy",
+            "Q0FOTk9UX0NMRUFSX0ZJTkFMX1VSTFNfSUZfRklOQUxfTU9CSUxFX1VSTFNf",
+            "RVhJU1QQHxIzCi9DQU5OT1RfQ0xFQVJfRklOQUxfVVJMU19JRl9GSU5BTF9B",
+            "UFBfVVJMU19FWElTVBAgEjsKN0NBTk5PVF9DTEVBUl9GSU5BTF9VUkxTX0lG",
+            "X1RSQUNLSU5HX1VSTF9URU1QTEFURV9FWElTVFMQIRI6CjZDQU5OT1RfQ0xF",
+            "QVJfRklOQUxfVVJMU19JRl9VUkxfQ1VTVE9NX1BBUkFNRVRFUlNfRVhJU1QQ",
+            "IhIyCi5DQU5OT1RfU0VUX0JPVEhfREVTVElOQVRJT05fVVJMX0FORF9GSU5B",
+            "TF9VUkxTECMSPQo5Q0FOTk9UX1NFVF9CT1RIX0RFU1RJTkFUSU9OX1VSTF9B",
+            "TkRfVFJBQ0tJTkdfVVJMX1RFTVBMQVRFECQSLworRklOQUxfVVJMU19OT1Rf",
+            "U1VQUE9SVEVEX0ZPUl9DUklURVJJT05fVFlQRRAlEjYKMkZJTkFMX01PQklM",
+            "RV9VUkxTX05PVF9TVVBQT1JURURfRk9SX0NSSVRFUklPTl9UWVBFECYSIwof",
+            "SU5WQUxJRF9MSVNUSU5HX0dST1VQX0hJRVJBUkNIWRAnEisKJ0xJU1RJTkdf",
+            "R1JPVVBfVU5JVF9DQU5OT1RfSEFWRV9DSElMRFJFThAoEjIKLkxJU1RJTkdf",
+            "R1JPVVBfU1VCRElWSVNJT05fUkVRVUlSRVNfT1RIRVJTX0NBU0UQKRI6CjZM",
+            "SVNUSU5HX0dST1VQX1JFUVVJUkVTX1NBTUVfRElNRU5TSU9OX1RZUEVfQVNf",
+            "U0lCTElOR1MQKhIgChxMSVNUSU5HX0dST1VQX0FMUkVBRFlfRVhJU1RTECsS",
+            "IAocTElTVElOR19HUk9VUF9ET0VTX05PVF9FWElTVBAsEiMKH0xJU1RJTkdf",
+            "R1JPVVBfQ0FOTk9UX0JFX1JFTU9WRUQQLRIeChpJTlZBTElEX0xJU1RJTkdf",
+            "R1JPVVBfVFlQRRAuEioKJkxJU1RJTkdfR1JPVVBfQUREX01BWV9PTkxZX1VT",
+            "RV9URU1QX0lEEC9C0AEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
+            "cnJvcnNCGkFkR3JvdXBDcml0ZXJpb25FcnJvclByb3RvUAFaRGdvb2dsZS5n",
+            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
+            "MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
+            "VjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -267,48 +267,6 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("CANNOT_EXCLUDE_CRITERIA_TYPE")] CannotExcludeCriteriaType = 17,
         /// <summary>
-        /// Ad group is invalid due to the product partitions it contains.
-        /// </summary>
-        [pbr::OriginalName("INVALID_PRODUCT_PARTITION_HIERARCHY")] InvalidProductPartitionHierarchy = 18,
-        /// <summary>
-        /// Product partition unit cannot have children.
-        /// </summary>
-        [pbr::OriginalName("PRODUCT_PARTITION_UNIT_CANNOT_HAVE_CHILDREN")] ProductPartitionUnitCannotHaveChildren = 19,
-        /// <summary>
-        /// Subdivided product partitions must have an "others" case.
-        /// </summary>
-        [pbr::OriginalName("PRODUCT_PARTITION_SUBDIVISION_REQUIRES_OTHERS_CASE")] ProductPartitionSubdivisionRequiresOthersCase = 20,
-        /// <summary>
-        /// Dimension type of product partition must be the same as that of its
-        /// siblings.
-        /// </summary>
-        [pbr::OriginalName("PRODUCT_PARTITION_REQUIRES_SAME_DIMENSION_TYPE_AS_SIBLINGS")] ProductPartitionRequiresSameDimensionTypeAsSiblings = 21,
-        /// <summary>
-        /// Product partition cannot be added to the ad group because it already
-        /// exists.
-        /// </summary>
-        [pbr::OriginalName("PRODUCT_PARTITION_ALREADY_EXISTS")] ProductPartitionAlreadyExists = 22,
-        /// <summary>
-        /// Product partition referenced in the operation was not found in the ad
-        /// group.
-        /// </summary>
-        [pbr::OriginalName("PRODUCT_PARTITION_DOES_NOT_EXIST")] ProductPartitionDoesNotExist = 23,
-        /// <summary>
-        /// Recursive removal failed because product partition subdivision is being
-        /// created or modified in this request.
-        /// </summary>
-        [pbr::OriginalName("PRODUCT_PARTITION_CANNOT_BE_REMOVED")] ProductPartitionCannotBeRemoved = 24,
-        /// <summary>
-        /// Product partition type is not allowed for specified AdGroupCriterion
-        /// type.
-        /// </summary>
-        [pbr::OriginalName("INVALID_PRODUCT_PARTITION_TYPE")] InvalidProductPartitionType = 25,
-        /// <summary>
-        /// Product partition in an ADD operation specifies a non temporary
-        /// CriterionId.
-        /// </summary>
-        [pbr::OriginalName("PRODUCT_PARTITION_ADD_MAY_ONLY_USE_TEMP_ID")] ProductPartitionAddMayOnlyUseTempId = 26,
-        /// <summary>
         /// Partial failure is not supported for shopping campaign mutate operations.
         /// </summary>
         [pbr::OriginalName("CAMPAIGN_TYPE_NOT_COMPATIBLE_WITH_PARTIAL_FAILURE")] CampaignTypeNotCompatibleWithPartialFailure = 27,
@@ -359,6 +317,43 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Final mobile urls are not supported for this criterion type.
         /// </summary>
         [pbr::OriginalName("FINAL_MOBILE_URLS_NOT_SUPPORTED_FOR_CRITERION_TYPE")] FinalMobileUrlsNotSupportedForCriterionType = 38,
+        /// <summary>
+        /// Ad group is invalid due to the listing groups it contains.
+        /// </summary>
+        [pbr::OriginalName("INVALID_LISTING_GROUP_HIERARCHY")] InvalidListingGroupHierarchy = 39,
+        /// <summary>
+        /// Listing group unit cannot have children.
+        /// </summary>
+        [pbr::OriginalName("LISTING_GROUP_UNIT_CANNOT_HAVE_CHILDREN")] ListingGroupUnitCannotHaveChildren = 40,
+        /// <summary>
+        /// Subdivided listing groups must have an "others" case.
+        /// </summary>
+        [pbr::OriginalName("LISTING_GROUP_SUBDIVISION_REQUIRES_OTHERS_CASE")] ListingGroupSubdivisionRequiresOthersCase = 41,
+        /// <summary>
+        /// Dimension type of listing group must be the same as that of its siblings.
+        /// </summary>
+        [pbr::OriginalName("LISTING_GROUP_REQUIRES_SAME_DIMENSION_TYPE_AS_SIBLINGS")] ListingGroupRequiresSameDimensionTypeAsSiblings = 42,
+        /// <summary>
+        /// Listing group cannot be added to the ad group because it already exists.
+        /// </summary>
+        [pbr::OriginalName("LISTING_GROUP_ALREADY_EXISTS")] ListingGroupAlreadyExists = 43,
+        /// <summary>
+        /// Listing group referenced in the operation was not found in the ad group.
+        /// </summary>
+        [pbr::OriginalName("LISTING_GROUP_DOES_NOT_EXIST")] ListingGroupDoesNotExist = 44,
+        /// <summary>
+        /// Recursive removal failed because listing group subdivision is being
+        /// created or modified in this request.
+        /// </summary>
+        [pbr::OriginalName("LISTING_GROUP_CANNOT_BE_REMOVED")] ListingGroupCannotBeRemoved = 45,
+        /// <summary>
+        /// Listing group type is not allowed for specified ad group criterion type.
+        /// </summary>
+        [pbr::OriginalName("INVALID_LISTING_GROUP_TYPE")] InvalidListingGroupType = 46,
+        /// <summary>
+        /// Listing group in an ADD operation specifies a non temporary criterion id.
+        /// </summary>
+        [pbr::OriginalName("LISTING_GROUP_ADD_MAY_ONLY_USE_TEMP_ID")] ListingGroupAddMayOnlyUseTempId = 47,
       }
 
     }

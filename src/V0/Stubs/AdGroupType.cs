@@ -25,14 +25,14 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF90eXBl",
-            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyJTCg9BZEdy",
-            "b3VwVHlwZUVudW0iQAoLQWRHcm91cFR5cGUSDwoLVU5TUEVDSUZJRUQQABIL",
-            "CgdVTktOT1dOEAESEwoPU0VBUkNIX1NUQU5EQVJEEAJCwQEKIWNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IQQWRHcm91cFR5cGVQcm90b1AB",
-            "WkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdv",
-            "b2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVu",
-            "dW1zYgZwcm90bzM="));
+            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyJiCg9BZEdy",
+            "b3VwVHlwZUVudW0iTwoLQWRHcm91cFR5cGUSDwoLVU5TUEVDSUZJRUQQABIL",
+            "CgdVTktOT1dOEAESEwoPU0VBUkNIX1NUQU5EQVJEEAISDQoJSE9URUxfQURT",
+            "EAZCwQEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IQQWRH",
+            "cm91cFR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
+            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGq",
+            "Ah1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYwXEVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -169,6 +169,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// The default ad group type for Search campaigns.
         /// </summary>
         [pbr::OriginalName("SEARCH_STANDARD")] SearchStandard = 2,
+        /// <summary>
+        /// The default ad group type for Hotel campaigns.
+        /// </summary>
+        [pbr::OriginalName("HOTEL_ADS")] HotelAds = 6,
       }
 
     }

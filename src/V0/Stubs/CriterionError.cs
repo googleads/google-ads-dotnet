@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY3JpdGVyaW9uX2Vy",
-            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMi9RYK",
-            "EkNyaXRlcmlvbkVycm9yRW51bSLeFgoOQ3JpdGVyaW9uRXJyb3ISDwoLVU5T",
+            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMi8xcK",
+            "EkNyaXRlcmlvbkVycm9yRW51bSLcFwoOQ3JpdGVyaW9uRXJyb3ISDwoLVU5T",
             "UEVDSUZJRUQQABILCgdVTktOT1dOEAESGgoWQ09OQ1JFVEVfVFlQRV9SRVFV",
             "SVJFRBACEh0KGUlOVkFMSURfRVhDTFVERURfQ0FURUdPUlkQAxIYChRJTlZB",
             "TElEX0tFWVdPUkRfVEVYVBAEEhkKFUtFWVdPUkRfVEVYVF9UT09fTE9ORxAF",
@@ -91,11 +91,14 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "GUlOVkFMSURfTUFUQ0hJTkdfRlVOQ1RJT04QThIfChtMT0NBVElPTl9GSUxU",
             "RVJfTk9UX0FMTE9XRUQQTxIbChdMT0NBVElPTl9GSUxURVJfSU5WQUxJRBBQ",
             "EjIKLkNBTk5PVF9BVFRBQ0hfQ1JJVEVSSUFfQVRfQ0FNUEFJR05fQU5EX0FE",
-            "R1JPVVAQUULJAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
-            "c0ITQ3JpdGVyaW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vy",
-            "cm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oC",
-            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "R1JPVVAQURI5CjVIT1RFTF9MRU5HVEhfT0ZfU1RBWV9PVkVSTEFQU19XSVRI",
+            "X0VYSVNUSU5HX0NSSVRFUklPThBSEkEKPUhPVEVMX0FEVkFOQ0VfQk9PS0lO",
+            "R19XSU5ET1dfT1ZFUkxBUFNfV0lUSF9FWElTVElOR19DUklURVJJT04QU0LJ",
+            "AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0ITQ3JpdGVy",
+            "aW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
+            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dB",
+            "QaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxB",
+            "ZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -573,6 +576,16 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// simultaneously.
         /// </summary>
         [pbr::OriginalName("CANNOT_ATTACH_CRITERIA_AT_CAMPAIGN_AND_ADGROUP")] CannotAttachCriteriaAtCampaignAndAdgroup = 81,
+        /// <summary>
+        /// Range represented by hotel length of stay's min nights and max nights
+        /// overlaps with an existing criterion.
+        /// </summary>
+        [pbr::OriginalName("HOTEL_LENGTH_OF_STAY_OVERLAPS_WITH_EXISTING_CRITERION")] HotelLengthOfStayOverlapsWithExistingCriterion = 82,
+        /// <summary>
+        /// Range represented by hotel advance booking window's min days and max days
+        /// overlaps with an existing criterion.
+        /// </summary>
+        [pbr::OriginalName("HOTEL_ADVANCE_BOOKING_WINDOW_OVERLAPS_WITH_EXISTING_CRITERION")] HotelAdvanceBookingWindowOverlapsWithExistingCriterion = 83,
       }
 
     }

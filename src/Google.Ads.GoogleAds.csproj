@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Title>Google Ads API Dotnet Client Library</Title>
     <PackageId>Google.Ads.GoogleAds</PackageId>
-    <Version>0.1.0-beta01</Version>
+    <Version>0.2.0</Version>
     <Description>This library provides you with functionality to access the Google Ads API.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
     <PackageTags>GoogleAds Google</PackageTags>
@@ -38,11 +38,11 @@
     <Content Include="web.config.transform" PackagePath="content" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Api.Gax.Grpc" Version="2.4.0-beta01" />
+    <PackageReference Include="Google.Api.Gax.Grpc" Version="2.4.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.2" />
   </ItemGroup>
     <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)'=='net452'">
     <Reference Include="System.Configuration" />
