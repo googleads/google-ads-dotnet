@@ -29,67 +29,73 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "dXJjZXMaLWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbi9jcml0ZXJp",
             "YS5wcm90bxo1Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uL2N1c3Rv",
             "bV9wYXJhbWV0ZXIucHJvdG8aPWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
-            "dW1zL2FkX2dyb3VwX2NyaXRlcmlvbl9zdGF0dXMucHJvdG8aLmdvb2dsZS9h",
-            "ZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2JpZF9zb3VyY2UucHJvdG8aMmdvb2ds",
-            "ZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2NyaXRlcmlvbl90eXBlLnByb3Rv",
-            "Gjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9xdWFsaXR5X3Njb3Jl",
-            "X2J1Y2tldC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3Rv",
-            "IrYQChBBZEdyb3VwQ3JpdGVyaW9uEhUKDXJlc291cmNlX25hbWUYASABKAkS",
-            "MQoMY3JpdGVyaW9uX2lkGBogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0",
-            "VmFsdWUSYAoGc3RhdHVzGAMgASgOMlAuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAuZW51bXMuQWRHcm91cENyaXRlcmlvblN0YXR1c0VudW0uQWRHcm91cENy",
-            "aXRlcmlvblN0YXR1cxJVCgxxdWFsaXR5X2luZm8YBCABKAsyPy5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQWRHcm91cENyaXRlcmlvbi5R",
-            "dWFsaXR5SW5mbxIuCghhZF9ncm91cBgFIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRJMCgR0eXBlGBkgASgOMj4uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuZW51bXMuQ3JpdGVyaW9uVHlwZUVudW0uQ3JpdGVyaW9uVHlw",
-            "ZRIsCghuZWdhdGl2ZRgfIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFs",
-            "dWUSMwoOY3BjX2JpZF9taWNyb3MYECABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "SW50NjRWYWx1ZRIzCg5jcG1fYmlkX21pY3JvcxgRIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5JbnQ2NFZhbHVlEjMKDmNwdl9iaWRfbWljcm9zGBggASgLMhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSPQoYZWZmZWN0aXZlX2NwY19i",
-            "aWRfbWljcm9zGBIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUS",
-            "PQoYZWZmZWN0aXZlX2NwbV9iaWRfbWljcm9zGBMgASgLMhsuZ29vZ2xlLnBy",
-            "b3RvYnVmLkludDY0VmFsdWUSPQoYZWZmZWN0aXZlX2Nwdl9iaWRfbWljcm9z",
-            "GBQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSWAoYZWZmZWN0",
-            "aXZlX2NwY19iaWRfc291cmNlGBUgASgOMjYuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAuZW51bXMuQmlkU291cmNlRW51bS5CaWRTb3VyY2USWAoYZWZmZWN0",
-            "aXZlX2NwbV9iaWRfc291cmNlGBYgASgOMjYuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAuZW51bXMuQmlkU291cmNlRW51bS5CaWRTb3VyY2USWAoYZWZmZWN0",
-            "aXZlX2Nwdl9iaWRfc291cmNlGBcgASgOMjYuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAuZW51bXMuQmlkU291cmNlRW51bS5CaWRTb3VyY2USYQoScG9zaXRp",
-            "b25fZXN0aW1hdGVzGAogASgLMkUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "cmVzb3VyY2VzLkFkR3JvdXBDcml0ZXJpb24uUG9zaXRpb25Fc3RpbWF0ZXMS",
-            "MAoKZmluYWxfdXJscxgLIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZRI7ChV0cmFja2luZ191cmxfdGVtcGxhdGUYDSABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUSTgoVdXJsX2N1c3RvbV9wYXJhbWV0ZXJz",
-            "GA4gAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkN1c3Rv",
-            "bVBhcmFtZXRlchI+CgdrZXl3b3JkGBsgASgLMisuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuY29tbW9uLktleXdvcmRJbmZvSAASSQoNbGlzdGluZ19ncm91",
-            "cBggIAEoCzIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5MaXN0",
-            "aW5nR3JvdXBJbmZvSAAa/wIKC1F1YWxpdHlJbmZvEjIKDXF1YWxpdHlfc2Nv",
-            "cmUYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRJoChZjcmVh",
-            "dGl2ZV9xdWFsaXR5X3Njb3JlGAIgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAuZW51bXMuUXVhbGl0eVNjb3JlQnVja2V0RW51bS5RdWFsaXR5U2Nv",
-            "cmVCdWNrZXQSagoYcG9zdF9jbGlja19xdWFsaXR5X3Njb3JlGAMgASgOMkgu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuUXVhbGl0eVNjb3JlQnVj",
-            "a2V0RW51bS5RdWFsaXR5U2NvcmVCdWNrZXQSZgoUc2VhcmNoX3ByZWRpY3Rl",
-            "ZF9jdHIYBCABKA4ySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5R",
-            "dWFsaXR5U2NvcmVCdWNrZXRFbnVtLlF1YWxpdHlTY29yZUJ1Y2tldBrMAQoR",
-            "UG9zaXRpb25Fc3RpbWF0ZXMSOgoVZmlyc3RfcGFnZV9jcGNfbWljcm9zGAEg",
-            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSPgoZZmlyc3RfcG9z",
-            "aXRpb25fY3BjX21pY3JvcxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
-            "NFZhbHVlEjsKFnRvcF9vZl9wYWdlX2NwY19taWNyb3MYAyABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuSW50NjRWYWx1ZUILCgljcml0ZXJpb25C2gEKJWNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCFUFkR3JvdXBDcml0",
-            "ZXJpb25Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6IC",
-            "A0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdv",
-            "b2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
+            "dW1zL2FkX2dyb3VwX2NyaXRlcmlvbl9zdGF0dXMucHJvdG8aMmdvb2dsZS9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2JpZGRpbmdfc291cmNlLnByb3RvGjJn",
+            "b29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jcml0ZXJpb25fdHlwZS5w",
+            "cm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvcXVhbGl0eV9z",
+            "Y29yZV9idWNrZXQucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5w",
+            "cm90byK8EgoQQWRHcm91cENyaXRlcmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEg",
+            "ASgJEjEKDGNyaXRlcmlvbl9pZBgaIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
+            "bnQ2NFZhbHVlEmAKBnN0YXR1cxgDIAEoDjJQLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmVudW1zLkFkR3JvdXBDcml0ZXJpb25TdGF0dXNFbnVtLkFkR3Jv",
+            "dXBDcml0ZXJpb25TdGF0dXMSVQoMcXVhbGl0eV9pbmZvGAQgASgLMj8uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkFkR3JvdXBDcml0ZXJp",
+            "b24uUXVhbGl0eUluZm8SLgoIYWRfZ3JvdXAYBSABKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUSTAoEdHlwZRgZIAEoDjI+Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmVudW1zLkNyaXRlcmlvblR5cGVFbnVtLkNyaXRlcmlv",
+            "blR5cGUSLAoIbmVnYXRpdmUYHyABKAsyGi5nb29nbGUucHJvdG9idWYuQm9v",
+            "bFZhbHVlEjMKDmNwY19iaWRfbWljcm9zGBAgASgLMhsuZ29vZ2xlLnByb3Rv",
+            "YnVmLkludDY0VmFsdWUSMwoOY3BtX2JpZF9taWNyb3MYESABKAsyGy5nb29n",
+            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRIzCg5jcHZfYmlkX21pY3JvcxgYIAEo",
+            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjsKFnBlcmNlbnRfY3Bj",
+            "X2JpZF9taWNyb3MYISABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
+            "ZRI9ChhlZmZlY3RpdmVfY3BjX2JpZF9taWNyb3MYEiABKAsyGy5nb29nbGUu",
+            "cHJvdG9idWYuSW50NjRWYWx1ZRI9ChhlZmZlY3RpdmVfY3BtX2JpZF9taWNy",
+            "b3MYEyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI9ChhlZmZl",
+            "Y3RpdmVfY3B2X2JpZF9taWNyb3MYFCABKAsyGy5nb29nbGUucHJvdG9idWYu",
+            "SW50NjRWYWx1ZRJFCiBlZmZlY3RpdmVfcGVyY2VudF9jcGNfYmlkX21pY3Jv",
+            "cxgiIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEmAKGGVmZmVj",
+            "dGl2ZV9jcGNfYmlkX3NvdXJjZRgVIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmVudW1zLkJpZGRpbmdTb3VyY2VFbnVtLkJpZGRpbmdTb3VyY2US",
+            "YAoYZWZmZWN0aXZlX2NwbV9iaWRfc291cmNlGBYgASgOMj4uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuZW51bXMuQmlkZGluZ1NvdXJjZUVudW0uQmlkZGlu",
+            "Z1NvdXJjZRJgChhlZmZlY3RpdmVfY3B2X2JpZF9zb3VyY2UYFyABKA4yPi5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5CaWRkaW5nU291cmNlRW51",
+            "bS5CaWRkaW5nU291cmNlEmgKIGVmZmVjdGl2ZV9wZXJjZW50X2NwY19iaWRf",
+            "c291cmNlGCMgASgOMj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMu",
+            "QmlkZGluZ1NvdXJjZUVudW0uQmlkZGluZ1NvdXJjZRJhChJwb3NpdGlvbl9l",
+            "c3RpbWF0ZXMYCiABKAsyRS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNv",
+            "dXJjZXMuQWRHcm91cENyaXRlcmlvbi5Qb3NpdGlvbkVzdGltYXRlcxIwCgpm",
+            "aW5hbF91cmxzGAsgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjsKFXRyYWNraW5nX3VybF90ZW1wbGF0ZRgNIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5TdHJpbmdWYWx1ZRJOChV1cmxfY3VzdG9tX3BhcmFtZXRlcnMYDiAD",
+            "KAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uQ3VzdG9tUGFy",
+            "YW1ldGVyEj4KB2tleXdvcmQYGyABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5jb21tb24uS2V5d29yZEluZm9IABJJCg1saXN0aW5nX2dyb3VwGCAg",
+            "ASgLMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkxpc3RpbmdH",
+            "cm91cEluZm9IABr/AgoLUXVhbGl0eUluZm8SMgoNcXVhbGl0eV9zY29yZRgB",
+            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlEmgKFmNyZWF0aXZl",
+            "X3F1YWxpdHlfc2NvcmUYAiABKA4ySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5lbnVtcy5RdWFsaXR5U2NvcmVCdWNrZXRFbnVtLlF1YWxpdHlTY29yZUJ1",
+            "Y2tldBJqChhwb3N0X2NsaWNrX3F1YWxpdHlfc2NvcmUYAyABKA4ySC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5RdWFsaXR5U2NvcmVCdWNrZXRF",
+            "bnVtLlF1YWxpdHlTY29yZUJ1Y2tldBJmChRzZWFyY2hfcHJlZGljdGVkX2N0",
+            "chgEIAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlF1YWxp",
+            "dHlTY29yZUJ1Y2tldEVudW0uUXVhbGl0eVNjb3JlQnVja2V0GswBChFQb3Np",
+            "dGlvbkVzdGltYXRlcxI6ChVmaXJzdF9wYWdlX2NwY19taWNyb3MYASABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI+ChlmaXJzdF9wb3NpdGlv",
+            "bl9jcGNfbWljcm9zGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
+            "dWUSOwoWdG9wX29mX3BhZ2VfY3BjX21pY3JvcxgDIAEoCzIbLmdvb2dsZS5w",
+            "cm90b2J1Zi5JbnQ2NFZhbHVlQgsKCWNyaXRlcmlvbkLaAQolY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IVQWRHcm91cENyaXRlcmlv",
+            "blByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FB",
+            "qgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupCriterionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BidSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupCriterionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Parser, new[]{ "ResourceName", "CriterionId", "Status", "QualityInfo", "AdGroup", "Type", "Negative", "CpcBidMicros", "CpmBidMicros", "CpvBidMicros", "EffectiveCpcBidMicros", "EffectiveCpmBidMicros", "EffectiveCpvBidMicros", "EffectiveCpcBidSource", "EffectiveCpmBidSource", "EffectiveCpvBidSource", "PositionEstimates", "FinalUrls", "TrackingUrlTemplate", "UrlCustomParameters", "Keyword", "ListingGroup" }, new[]{ "Criterion" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo.Parser, new[]{ "QualityScore", "CreativeQualityScore", "PostClickQualityScore", "SearchPredictedCtr" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Parser, new[]{ "ResourceName", "CriterionId", "Status", "QualityInfo", "AdGroup", "Type", "Negative", "CpcBidMicros", "CpmBidMicros", "CpvBidMicros", "PercentCpcBidMicros", "EffectiveCpcBidMicros", "EffectiveCpmBidMicros", "EffectiveCpvBidMicros", "EffectivePercentCpcBidMicros", "EffectiveCpcBidSource", "EffectiveCpmBidSource", "EffectiveCpvBidSource", "EffectivePercentCpcBidSource", "PositionEstimates", "FinalUrls", "TrackingUrlTemplate", "UrlCustomParameters", "Keyword", "ListingGroup" }, new[]{ "Criterion" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo.Parser, new[]{ "QualityScore", "CreativeQualityScore", "PostClickQualityScore", "SearchPredictedCtr" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.PositionEstimates), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.PositionEstimates.Parser, new[]{ "FirstPageCpcMicros", "FirstPositionCpcMicros", "TopOfPageCpcMicros" }, null, null, null)})
           }));
     }
@@ -135,12 +141,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       CpcBidMicros = other.CpcBidMicros;
       CpmBidMicros = other.CpmBidMicros;
       CpvBidMicros = other.CpvBidMicros;
+      PercentCpcBidMicros = other.PercentCpcBidMicros;
       EffectiveCpcBidMicros = other.EffectiveCpcBidMicros;
       EffectiveCpmBidMicros = other.EffectiveCpmBidMicros;
       EffectiveCpvBidMicros = other.EffectiveCpvBidMicros;
+      EffectivePercentCpcBidMicros = other.EffectivePercentCpcBidMicros;
       effectiveCpcBidSource_ = other.effectiveCpcBidSource_;
       effectiveCpmBidSource_ = other.effectiveCpmBidSource_;
       effectiveCpvBidSource_ = other.effectiveCpvBidSource_;
+      effectivePercentCpcBidSource_ = other.effectivePercentCpcBidSource_;
       PositionEstimates = other.positionEstimates_ != null ? other.PositionEstimates.Clone() : null;
       finalUrls_ = other.finalUrls_.Clone();
       TrackingUrlTemplate = other.TrackingUrlTemplate;
@@ -318,6 +327,23 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "percent_cpc_bid_micros" field.</summary>
+    public const int PercentCpcBidMicrosFieldNumber = 33;
+    private static readonly pb::FieldCodec<long?> _single_percentCpcBidMicros_codec = pb::FieldCodec.ForStructWrapper<long>(266);
+    private long? percentCpcBidMicros_;
+    /// <summary>
+    /// The CPC bid amount, expressed as a fraction of the advertised price
+    /// for some good or service. The valid range for the fraction is [0,1) and the
+    /// value stored here is 1,000,000 * [fraction].
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? PercentCpcBidMicros {
+      get { return percentCpcBidMicros_; }
+      set {
+        percentCpcBidMicros_ = value;
+      }
+    }
+
     /// <summary>Field number for the "effective_cpc_bid_micros" field.</summary>
     public const int EffectiveCpcBidMicrosFieldNumber = 18;
     private static readonly pb::FieldCodec<long?> _single_effectiveCpcBidMicros_codec = pb::FieldCodec.ForStructWrapper<long>(146);
@@ -363,14 +389,29 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "effective_percent_cpc_bid_micros" field.</summary>
+    public const int EffectivePercentCpcBidMicrosFieldNumber = 34;
+    private static readonly pb::FieldCodec<long?> _single_effectivePercentCpcBidMicros_codec = pb::FieldCodec.ForStructWrapper<long>(274);
+    private long? effectivePercentCpcBidMicros_;
+    /// <summary>
+    /// The effective Percent CPC bid amount.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? EffectivePercentCpcBidMicros {
+      get { return effectivePercentCpcBidMicros_; }
+      set {
+        effectivePercentCpcBidMicros_ = value;
+      }
+    }
+
     /// <summary>Field number for the "effective_cpc_bid_source" field.</summary>
     public const int EffectiveCpcBidSourceFieldNumber = 21;
-    private global::Google.Ads.GoogleAds.V0.Enums.BidSourceEnum.Types.BidSource effectiveCpcBidSource_ = 0;
+    private global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource effectiveCpcBidSource_ = 0;
     /// <summary>
     /// Source of the effective CPC bid.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Ads.GoogleAds.V0.Enums.BidSourceEnum.Types.BidSource EffectiveCpcBidSource {
+    public global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource EffectiveCpcBidSource {
       get { return effectiveCpcBidSource_; }
       set {
         effectiveCpcBidSource_ = value;
@@ -379,12 +420,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
 
     /// <summary>Field number for the "effective_cpm_bid_source" field.</summary>
     public const int EffectiveCpmBidSourceFieldNumber = 22;
-    private global::Google.Ads.GoogleAds.V0.Enums.BidSourceEnum.Types.BidSource effectiveCpmBidSource_ = 0;
+    private global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource effectiveCpmBidSource_ = 0;
     /// <summary>
     /// Source of the effective CPM bid.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Ads.GoogleAds.V0.Enums.BidSourceEnum.Types.BidSource EffectiveCpmBidSource {
+    public global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource EffectiveCpmBidSource {
       get { return effectiveCpmBidSource_; }
       set {
         effectiveCpmBidSource_ = value;
@@ -393,15 +434,29 @@ namespace Google.Ads.GoogleAds.V0.Resources {
 
     /// <summary>Field number for the "effective_cpv_bid_source" field.</summary>
     public const int EffectiveCpvBidSourceFieldNumber = 23;
-    private global::Google.Ads.GoogleAds.V0.Enums.BidSourceEnum.Types.BidSource effectiveCpvBidSource_ = 0;
+    private global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource effectiveCpvBidSource_ = 0;
     /// <summary>
     /// Source of the effective CPV bid.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Ads.GoogleAds.V0.Enums.BidSourceEnum.Types.BidSource EffectiveCpvBidSource {
+    public global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource EffectiveCpvBidSource {
       get { return effectiveCpvBidSource_; }
       set {
         effectiveCpvBidSource_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "effective_percent_cpc_bid_source" field.</summary>
+    public const int EffectivePercentCpcBidSourceFieldNumber = 35;
+    private global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource effectivePercentCpcBidSource_ = 0;
+    /// <summary>
+    /// Source of the effective Percent CPC bid.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource EffectivePercentCpcBidSource {
+      get { return effectivePercentCpcBidSource_; }
+      set {
+        effectivePercentCpcBidSource_ = value;
       }
     }
 
@@ -532,12 +587,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (CpcBidMicros != other.CpcBidMicros) return false;
       if (CpmBidMicros != other.CpmBidMicros) return false;
       if (CpvBidMicros != other.CpvBidMicros) return false;
+      if (PercentCpcBidMicros != other.PercentCpcBidMicros) return false;
       if (EffectiveCpcBidMicros != other.EffectiveCpcBidMicros) return false;
       if (EffectiveCpmBidMicros != other.EffectiveCpmBidMicros) return false;
       if (EffectiveCpvBidMicros != other.EffectiveCpvBidMicros) return false;
+      if (EffectivePercentCpcBidMicros != other.EffectivePercentCpcBidMicros) return false;
       if (EffectiveCpcBidSource != other.EffectiveCpcBidSource) return false;
       if (EffectiveCpmBidSource != other.EffectiveCpmBidSource) return false;
       if (EffectiveCpvBidSource != other.EffectiveCpvBidSource) return false;
+      if (EffectivePercentCpcBidSource != other.EffectivePercentCpcBidSource) return false;
       if (!object.Equals(PositionEstimates, other.PositionEstimates)) return false;
       if(!finalUrls_.Equals(other.finalUrls_)) return false;
       if (TrackingUrlTemplate != other.TrackingUrlTemplate) return false;
@@ -561,12 +619,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (cpcBidMicros_ != null) hash ^= CpcBidMicros.GetHashCode();
       if (cpmBidMicros_ != null) hash ^= CpmBidMicros.GetHashCode();
       if (cpvBidMicros_ != null) hash ^= CpvBidMicros.GetHashCode();
+      if (percentCpcBidMicros_ != null) hash ^= PercentCpcBidMicros.GetHashCode();
       if (effectiveCpcBidMicros_ != null) hash ^= EffectiveCpcBidMicros.GetHashCode();
       if (effectiveCpmBidMicros_ != null) hash ^= EffectiveCpmBidMicros.GetHashCode();
       if (effectiveCpvBidMicros_ != null) hash ^= EffectiveCpvBidMicros.GetHashCode();
+      if (effectivePercentCpcBidMicros_ != null) hash ^= EffectivePercentCpcBidMicros.GetHashCode();
       if (EffectiveCpcBidSource != 0) hash ^= EffectiveCpcBidSource.GetHashCode();
       if (EffectiveCpmBidSource != 0) hash ^= EffectiveCpmBidSource.GetHashCode();
       if (EffectiveCpvBidSource != 0) hash ^= EffectiveCpvBidSource.GetHashCode();
+      if (EffectivePercentCpcBidSource != 0) hash ^= EffectivePercentCpcBidSource.GetHashCode();
       if (positionEstimates_ != null) hash ^= PositionEstimates.GetHashCode();
       hash ^= finalUrls_.GetHashCode();
       if (trackingUrlTemplate_ != null) hash ^= TrackingUrlTemplate.GetHashCode();
@@ -659,6 +720,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(130, 2);
         output.WriteMessage(ListingGroup);
       }
+      if (percentCpcBidMicros_ != null) {
+        _single_percentCpcBidMicros_codec.WriteTagAndValue(output, PercentCpcBidMicros);
+      }
+      if (effectivePercentCpcBidMicros_ != null) {
+        _single_effectivePercentCpcBidMicros_codec.WriteTagAndValue(output, EffectivePercentCpcBidMicros);
+      }
+      if (EffectivePercentCpcBidSource != 0) {
+        output.WriteRawTag(152, 2);
+        output.WriteEnum((int) EffectivePercentCpcBidSource);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -697,6 +768,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (cpvBidMicros_ != null) {
         size += _single_cpvBidMicros_codec.CalculateSizeWithTag(CpvBidMicros);
       }
+      if (percentCpcBidMicros_ != null) {
+        size += _single_percentCpcBidMicros_codec.CalculateSizeWithTag(PercentCpcBidMicros);
+      }
       if (effectiveCpcBidMicros_ != null) {
         size += _single_effectiveCpcBidMicros_codec.CalculateSizeWithTag(EffectiveCpcBidMicros);
       }
@@ -706,6 +780,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (effectiveCpvBidMicros_ != null) {
         size += _single_effectiveCpvBidMicros_codec.CalculateSizeWithTag(EffectiveCpvBidMicros);
       }
+      if (effectivePercentCpcBidMicros_ != null) {
+        size += _single_effectivePercentCpcBidMicros_codec.CalculateSizeWithTag(EffectivePercentCpcBidMicros);
+      }
       if (EffectiveCpcBidSource != 0) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectiveCpcBidSource);
       }
@@ -714,6 +791,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (EffectiveCpvBidSource != 0) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectiveCpvBidSource);
+      }
+      if (EffectivePercentCpcBidSource != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectivePercentCpcBidSource);
       }
       if (positionEstimates_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PositionEstimates);
@@ -785,6 +865,11 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           CpvBidMicros = other.CpvBidMicros;
         }
       }
+      if (other.percentCpcBidMicros_ != null) {
+        if (percentCpcBidMicros_ == null || other.PercentCpcBidMicros != 0L) {
+          PercentCpcBidMicros = other.PercentCpcBidMicros;
+        }
+      }
       if (other.effectiveCpcBidMicros_ != null) {
         if (effectiveCpcBidMicros_ == null || other.EffectiveCpcBidMicros != 0L) {
           EffectiveCpcBidMicros = other.EffectiveCpcBidMicros;
@@ -800,6 +885,11 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           EffectiveCpvBidMicros = other.EffectiveCpvBidMicros;
         }
       }
+      if (other.effectivePercentCpcBidMicros_ != null) {
+        if (effectivePercentCpcBidMicros_ == null || other.EffectivePercentCpcBidMicros != 0L) {
+          EffectivePercentCpcBidMicros = other.EffectivePercentCpcBidMicros;
+        }
+      }
       if (other.EffectiveCpcBidSource != 0) {
         EffectiveCpcBidSource = other.EffectiveCpcBidSource;
       }
@@ -808,6 +898,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (other.EffectiveCpvBidSource != 0) {
         EffectiveCpvBidSource = other.EffectiveCpvBidSource;
+      }
+      if (other.EffectivePercentCpcBidSource != 0) {
+        EffectivePercentCpcBidSource = other.EffectivePercentCpcBidSource;
       }
       if (other.positionEstimates_ != null) {
         if (positionEstimates_ == null) {
@@ -928,15 +1021,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             break;
           }
           case 168: {
-            effectiveCpcBidSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BidSourceEnum.Types.BidSource) input.ReadEnum();
+            effectiveCpcBidSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource) input.ReadEnum();
             break;
           }
           case 176: {
-            effectiveCpmBidSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BidSourceEnum.Types.BidSource) input.ReadEnum();
+            effectiveCpmBidSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource) input.ReadEnum();
             break;
           }
           case 184: {
-            effectiveCpvBidSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BidSourceEnum.Types.BidSource) input.ReadEnum();
+            effectiveCpvBidSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource) input.ReadEnum();
             break;
           }
           case 194: {
@@ -980,6 +1073,24 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             input.ReadMessage(subBuilder);
             ListingGroup = subBuilder;
+            break;
+          }
+          case 266: {
+            long? value = _single_percentCpcBidMicros_codec.Read(input);
+            if (percentCpcBidMicros_ == null || value != 0L) {
+              PercentCpcBidMicros = value;
+            }
+            break;
+          }
+          case 274: {
+            long? value = _single_effectivePercentCpcBidMicros_codec.Read(input);
+            if (effectivePercentCpcBidMicros_ == null || value != 0L) {
+              EffectivePercentCpcBidMicros = value;
+            }
+            break;
+          }
+          case 280: {
+            effectivePercentCpcBidSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource) input.ReadEnum();
             break;
           }
         }
