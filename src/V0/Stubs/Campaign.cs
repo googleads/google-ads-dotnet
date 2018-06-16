@@ -37,7 +37,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "YWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jYW1wYWlnbl9zZXJ2aW5nX3N0YXR1",
             "cy5wcm90bxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvY2FtcGFp",
             "Z25fc3RhdHVzLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJv",
-            "dG8i4xMKCENhbXBhaWduEhUKDXJlc291cmNlX25hbWUYASABKAkSJwoCaWQY",
+            "dG8iphQKCENhbXBhaWduEhUKDXJlc291cmNlX25hbWUYASABKAkSJwoCaWQY",
             "AyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIqCgRuYW1lGAQg",
             "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElAKBnN0YXR1cxgF",
             "IAEoDjJALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkNhbXBhaWdu",
@@ -79,30 +79,31 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Z2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlRhcmdldENwYUgAEkEKC3Rh",
             "cmdldF9yb2FzGB0gASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29t",
             "bW9uLlRhcmdldFJvYXNIABJDCgx0YXJnZXRfc3BlbmQYGyABKAsyKy5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uVGFyZ2V0U3BlbmRIABqFAgoP",
-            "TmV0d29ya1NldHRpbmdzEjgKFHRhcmdldF9nb29nbGVfc2VhcmNoGAEgASgL",
-            "MhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRI5ChV0YXJnZXRfc2VhcmNo",
-            "X25ldHdvcmsYAiABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjoK",
-            "FnRhcmdldF9jb250ZW50X25ldHdvcmsYAyABKAsyGi5nb29nbGUucHJvdG9i",
-            "dWYuQm9vbFZhbHVlEkEKHXRhcmdldF9wYXJ0bmVyX3NlYXJjaF9uZXR3b3Jr",
-            "GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRpIChBIb3RlbFNl",
-            "dHRpbmdJbmZvEjQKD2hvdGVsX2NlbnRlcl9pZBgBIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5JbnQ2NFZhbHVlGuwBChdEeW5hbWljU2VhcmNoQWRzU2V0dGlu",
-            "ZxIxCgtkb21haW5fbmFtZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZRIzCg1sYW5ndWFnZV9jb2RlGAIgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlEjoKFnVzZV9zdXBwbGllZF91cmxzX29ubHkYAyAB",
-            "KAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEi0KCGZlZWRfaWRzGAQg",
-            "AygLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVCGwoZY2FtcGFpZ25f",
-            "YmlkZGluZ19zdHJhdGVneULSAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLnJlc291cmNlc0INQ2FtcGFpZ25Qcm90b1ABWkpnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVz",
-            "b3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291",
-            "cmNlc2IGcHJvdG8z"));
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uVGFyZ2V0U3BlbmRIABJBCgtw",
+            "ZXJjZW50X2NwYxgiIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNv",
+            "bW1vbi5QZXJjZW50Q3BjSAAahQIKD05ldHdvcmtTZXR0aW5ncxI4ChR0YXJn",
+            "ZXRfZ29vZ2xlX3NlYXJjaBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29s",
+            "VmFsdWUSOQoVdGFyZ2V0X3NlYXJjaF9uZXR3b3JrGAIgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLkJvb2xWYWx1ZRI6ChZ0YXJnZXRfY29udGVudF9uZXR3b3Jr",
+            "GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJBCh10YXJnZXRf",
+            "cGFydG5lcl9zZWFyY2hfbmV0d29yaxgEIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5Cb29sVmFsdWUaSAoQSG90ZWxTZXR0aW5nSW5mbxI0Cg9ob3RlbF9jZW50",
+            "ZXJfaWQYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRrsAQoX",
+            "RHluYW1pY1NlYXJjaEFkc1NldHRpbmcSMQoLZG9tYWluX25hbWUYASABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoNbGFuZ3VhZ2VfY29k",
+            "ZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI6ChZ1c2Vf",
+            "c3VwcGxpZWRfdXJsc19vbmx5GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJv",
+            "b2xWYWx1ZRItCghmZWVkX2lkcxgEIAMoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
+            "bnQ2NFZhbHVlQhsKGWNhbXBhaWduX2JpZGRpbmdfc3RyYXRlZ3lC0gEKJWNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDUNhbXBhaWdu",
+            "UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGq",
+            "AiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdServingOptimizationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdvertisingChannelSubTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdvertisingChannelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BiddingStrategyTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CampaignServingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CampaignStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "CampaignBudget", "BiddingStrategyType", "StartDate", "EndDate", "BiddingStrategy", "ManualCpc", "ManualCpm", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetRoas", "TargetSpend" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "CampaignBudget", "BiddingStrategyType", "StartDate", "EndDate", "BiddingStrategy", "ManualCpc", "ManualCpm", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetRoas", "TargetSpend", "PercentCpc" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo.Parser, new[]{ "HotelCenterId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.DynamicSearchAdsSetting), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.DynamicSearchAdsSetting.Parser, new[]{ "DomainName", "LanguageCode", "UseSuppliedUrlsOnly", "FeedIds" }, null, null, null)})
           }));
@@ -180,6 +181,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case CampaignBiddingStrategyOneofCase.TargetSpend:
           TargetSpend = other.TargetSpend.Clone();
+          break;
+        case CampaignBiddingStrategyOneofCase.PercentCpc:
+          PercentCpc = other.PercentCpc.Clone();
           break;
       }
 
@@ -590,6 +594,21 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "percent_cpc" field.</summary>
+    public const int PercentCpcFieldNumber = 34;
+    /// <summary>
+    /// Standard Percent Cpc bidding strategy where bids are a fraction of the
+    /// advertised price for some good or service.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PercentCpc PercentCpc {
+      get { return campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.PercentCpc ? (global::Google.Ads.GoogleAds.V0.Common.PercentCpc) campaignBiddingStrategy_ : null; }
+      set {
+        campaignBiddingStrategy_ = value;
+        campaignBiddingStrategyCase_ = value == null ? CampaignBiddingStrategyOneofCase.None : CampaignBiddingStrategyOneofCase.PercentCpc;
+      }
+    }
+
     private object campaignBiddingStrategy_;
     /// <summary>Enum of possible cases for the "campaign_bidding_strategy" oneof.</summary>
     public enum CampaignBiddingStrategyOneofCase {
@@ -602,6 +621,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       TargetCpa = 26,
       TargetRoas = 29,
       TargetSpend = 27,
+      PercentCpc = 34,
     }
     private CampaignBiddingStrategyOneofCase campaignBiddingStrategyCase_ = CampaignBiddingStrategyOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -653,6 +673,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (!object.Equals(TargetCpa, other.TargetCpa)) return false;
       if (!object.Equals(TargetRoas, other.TargetRoas)) return false;
       if (!object.Equals(TargetSpend, other.TargetSpend)) return false;
+      if (!object.Equals(PercentCpc, other.PercentCpc)) return false;
       if (CampaignBiddingStrategyCase != other.CampaignBiddingStrategyCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -685,6 +706,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.TargetCpa) hash ^= TargetCpa.GetHashCode();
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.TargetRoas) hash ^= TargetRoas.GetHashCode();
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.TargetSpend) hash ^= TargetSpend.GetHashCode();
+      if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.PercentCpc) hash ^= PercentCpc.GetHashCode();
       hash ^= (int) campaignBiddingStrategyCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -789,6 +811,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(138, 2);
         output.WriteMessage(DynamicSearchAdsSetting);
       }
+      if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.PercentCpc) {
+        output.WriteRawTag(146, 2);
+        output.WriteMessage(PercentCpc);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -869,6 +895,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.TargetSpend) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TargetSpend);
+      }
+      if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.PercentCpc) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(PercentCpc);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -996,6 +1025,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             TargetSpend = new global::Google.Ads.GoogleAds.V0.Common.TargetSpend();
           }
           TargetSpend.MergeFrom(other.TargetSpend);
+          break;
+        case CampaignBiddingStrategyOneofCase.PercentCpc:
+          if (PercentCpc == null) {
+            PercentCpc = new global::Google.Ads.GoogleAds.V0.Common.PercentCpc();
+          }
+          PercentCpc.MergeFrom(other.PercentCpc);
           break;
       }
 
@@ -1170,6 +1205,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
               dynamicSearchAdsSetting_ = new global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.DynamicSearchAdsSetting();
             }
             input.ReadMessage(dynamicSearchAdsSetting_);
+            break;
+          }
+          case 274: {
+            global::Google.Ads.GoogleAds.V0.Common.PercentCpc subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PercentCpc();
+            if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.PercentCpc) {
+              subBuilder.MergeFrom(PercentCpc);
+            }
+            input.ReadMessage(subBuilder);
+            PercentCpc = subBuilder;
             break;
           }
         }

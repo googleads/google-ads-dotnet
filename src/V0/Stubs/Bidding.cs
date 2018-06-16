@@ -61,12 +61,15 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "Z2xlLnByb3RvYnVmLkludDY0VmFsdWUihAEKC1RhcmdldFNwZW5kEjgKE3Rh",
             "cmdldF9zcGVuZF9taWNyb3MYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50",
             "NjRWYWx1ZRI7ChZjcGNfYmlkX2NlaWxpbmdfbWljcm9zGAIgASgLMhsuZ29v",
-            "Z2xlLnByb3RvYnVmLkludDY0VmFsdWVCwgEKImNvbS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5jb21tb25CDEJpZGRpbmdQcm90b1ABWkRnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
-            "Y29tbW9uO2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYw",
-            "LkNvbW1vbsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXENvbW1vbmIGcHJv",
-            "dG8z"));
+            "Z2xlLnByb3RvYnVmLkludDY0VmFsdWUigwEKClBlcmNlbnRDcGMSOwoWY3Bj",
+            "X2JpZF9jZWlsaW5nX21pY3JvcxgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
+            "bnQ2NFZhbHVlEjgKFGVuaGFuY2VkX2NwY19lbmFibGVkGAIgASgLMhouZ29v",
+            "Z2xlLnByb3RvYnVmLkJvb2xWYWx1ZULCAQoiY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmNvbW1vbkIMQmlkZGluZ1Byb3RvUAFaRGdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9j",
+            "b21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAu",
+            "Q29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcQ29tbW9uYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.PageOnePromotedStrategyGoalReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -79,7 +82,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetCpa), global::Google.Ads.GoogleAds.V0.Common.TargetCpa.Parser, new[]{ "TargetCpaMicros", "CpcBidCeilingMicros", "CpcBidFloorMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetOutrankShare), global::Google.Ads.GoogleAds.V0.Common.TargetOutrankShare.Parser, new[]{ "TargetOutrankShareMicros", "CompetitorDomain", "CpcBidCeilingMicros", "OnlyRaiseCpcBids", "RaiseCpcBidWhenQualityScoreIsLow" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetRoas), global::Google.Ads.GoogleAds.V0.Common.TargetRoas.Parser, new[]{ "TargetRoas_", "CpcBidCeilingMicros", "CpcBidFloorMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetSpend), global::Google.Ads.GoogleAds.V0.Common.TargetSpend.Parser, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetSpend), global::Google.Ads.GoogleAds.V0.Common.TargetSpend.Parser, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PercentCpc), global::Google.Ads.GoogleAds.V0.Common.PercentCpc.Parser, new[]{ "CpcBidCeilingMicros", "EnhancedCpcEnabled" }, null, null, null)
           }));
     }
     #endregion
@@ -1912,6 +1916,189 @@ namespace Google.Ads.GoogleAds.V0.Common {
             long? value = _single_cpcBidCeilingMicros_codec.Read(input);
             if (cpcBidCeilingMicros_ == null || value != 0L) {
               CpcBidCeilingMicros = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A bidding strategy where bids are a fraction of the advertised price for
+  /// some good or service.
+  /// </summary>
+  public sealed partial class PercentCpc : pb::IMessage<PercentCpc> {
+    private static readonly pb::MessageParser<PercentCpc> _parser = new pb::MessageParser<PercentCpc>(() => new PercentCpc());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PercentCpc> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PercentCpc() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PercentCpc(PercentCpc other) : this() {
+      CpcBidCeilingMicros = other.CpcBidCeilingMicros;
+      EnhancedCpcEnabled = other.EnhancedCpcEnabled;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PercentCpc Clone() {
+      return new PercentCpc(this);
+    }
+
+    /// <summary>Field number for the "cpc_bid_ceiling_micros" field.</summary>
+    public const int CpcBidCeilingMicrosFieldNumber = 1;
+    private static readonly pb::FieldCodec<long?> _single_cpcBidCeilingMicros_codec = pb::FieldCodec.ForStructWrapper<long>(10);
+    private long? cpcBidCeilingMicros_;
+    /// <summary>
+    /// Maximum bid limit that can be set by the bid strategy. This is
+    /// an optional field entered by the advertiser and specified in local micros.
+    /// Note: A zero value is interpreted in the same way as having bid_ceiling
+    /// undefined.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? CpcBidCeilingMicros {
+      get { return cpcBidCeilingMicros_; }
+      set {
+        cpcBidCeilingMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "enhanced_cpc_enabled" field.</summary>
+    public const int EnhancedCpcEnabledFieldNumber = 2;
+    private static readonly pb::FieldCodec<bool?> _single_enhancedCpcEnabled_codec = pb::FieldCodec.ForStructWrapper<bool>(18);
+    private bool? enhancedCpcEnabled_;
+    /// <summary>
+    /// Adjusts the bid for each auction upward or downward, depending on the
+    /// likelihood of a conversion. Individual bids may exceed
+    /// cpc_bid_ceiling_micros, but the average bid amount for a campaign should
+    /// not.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool? EnhancedCpcEnabled {
+      get { return enhancedCpcEnabled_; }
+      set {
+        enhancedCpcEnabled_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PercentCpc);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PercentCpc other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CpcBidCeilingMicros != other.CpcBidCeilingMicros) return false;
+      if (EnhancedCpcEnabled != other.EnhancedCpcEnabled) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (cpcBidCeilingMicros_ != null) hash ^= CpcBidCeilingMicros.GetHashCode();
+      if (enhancedCpcEnabled_ != null) hash ^= EnhancedCpcEnabled.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (cpcBidCeilingMicros_ != null) {
+        _single_cpcBidCeilingMicros_codec.WriteTagAndValue(output, CpcBidCeilingMicros);
+      }
+      if (enhancedCpcEnabled_ != null) {
+        _single_enhancedCpcEnabled_codec.WriteTagAndValue(output, EnhancedCpcEnabled);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (cpcBidCeilingMicros_ != null) {
+        size += _single_cpcBidCeilingMicros_codec.CalculateSizeWithTag(CpcBidCeilingMicros);
+      }
+      if (enhancedCpcEnabled_ != null) {
+        size += _single_enhancedCpcEnabled_codec.CalculateSizeWithTag(EnhancedCpcEnabled);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PercentCpc other) {
+      if (other == null) {
+        return;
+      }
+      if (other.cpcBidCeilingMicros_ != null) {
+        if (cpcBidCeilingMicros_ == null || other.CpcBidCeilingMicros != 0L) {
+          CpcBidCeilingMicros = other.CpcBidCeilingMicros;
+        }
+      }
+      if (other.enhancedCpcEnabled_ != null) {
+        if (enhancedCpcEnabled_ == null || other.EnhancedCpcEnabled != false) {
+          EnhancedCpcEnabled = other.EnhancedCpcEnabled;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            long? value = _single_cpcBidCeilingMicros_codec.Read(input);
+            if (cpcBidCeilingMicros_ == null || value != 0L) {
+              CpcBidCeilingMicros = value;
+            }
+            break;
+          }
+          case 18: {
+            bool? value = _single_enhancedCpcEnabled_codec.Read(input);
+            if (enhancedCpcEnabled_ == null || value != false) {
+              EnhancedCpcEnabled = value;
             }
             break;
           }

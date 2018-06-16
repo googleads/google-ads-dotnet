@@ -12,7 +12,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Ads.GoogleAds" Version="0.2.0" />
+    <PackageReference Include="Google.Ads.GoogleAds" Version="0.3.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web" />

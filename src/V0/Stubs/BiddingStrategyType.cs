@@ -26,18 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9iaWRkaW5nX3N0cmF0",
             "ZWd5X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
-            "Ip4CChdCaWRkaW5nU3RyYXRlZ3lUeXBlRW51bSKCAgoTQmlkZGluZ1N0cmF0",
+            "Iq8CChdCaWRkaW5nU3RyYXRlZ3lUeXBlRW51bSKTAgoTQmlkZGluZ1N0cmF0",
             "ZWd5VHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIQCgxFTkhB",
             "TkNFRF9DUEMQAhIOCgpNQU5VQUxfQ1BDEAMSDgoKTUFOVUFMX0NQTRAEEhgK",
             "FE1BWElNSVpFX0NPTlZFUlNJT05TEAoSHQoZTUFYSU1JWkVfQ09OVkVSU0lP",
-            "Tl9WQUxVRRALEhUKEVBBR0VfT05FX1BST01PVEVEEAUSDgoKVEFSR0VUX0NQ",
-            "QRAGEhgKFFRBUkdFVF9PVVRSQU5LX1NIQVJFEAcSDwoLVEFSR0VUX1JPQVMQ",
-            "CBIQCgxUQVJHRVRfU1BFTkQQCULJAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVudW1zQhhCaWRkaW5nU3RyYXRlZ3lUeXBlUHJvdG9QAVpCZ29v",
-            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
-            "YWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IG",
-            "cHJvdG8z"));
+            "Tl9WQUxVRRALEhUKEVBBR0VfT05FX1BST01PVEVEEAUSDwoLUEVSQ0VOVF9D",
+            "UEMQDBIOCgpUQVJHRVRfQ1BBEAYSGAoUVEFSR0VUX09VVFJBTktfU0hBUkUQ",
+            "BxIPCgtUQVJHRVRfUk9BUxAIEhAKDFRBUkdFVF9TUEVORBAJQskBCiFjb20u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCGEJpZGRpbmdTdHJhdGVn",
+            "eVR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1H",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYwXEVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -196,6 +196,11 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// target impressions on page one or page one promoted slots on google.com.
         /// </summary>
         [pbr::OriginalName("PAGE_ONE_PROMOTED")] PageOnePromoted = 5,
+        /// <summary>
+        /// Percent Cpc is bidding strategy where bids are a fraction of the
+        /// advertised price for some good or service.
+        /// </summary>
+        [pbr::OriginalName("PERCENT_CPC")] PercentCpc = 12,
         /// <summary>
         /// Target CPA is an automated bid strategy that sets bids
         /// to help get as many conversions as possible
