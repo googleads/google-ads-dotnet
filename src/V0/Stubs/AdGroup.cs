@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "cHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2FkX2dyb3Vw",
             "X3N0YXR1cy5wcm90bxoxZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMv",
             "YWRfZ3JvdXBfdHlwZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJz",
-            "LnByb3RvItwFCgdBZEdyb3VwEhUKDXJlc291cmNlX25hbWUYASABKAkSJwoC",
+            "LnByb3RvIpkGCgdBZEdyb3VwEhUKDXJlc291cmNlX25hbWUYASABKAkSJwoC",
             "aWQYAyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIqCgRuYW1l",
             "GAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEk4KBnN0YXR1",
             "cxgFIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkFkR3Jv",
@@ -46,16 +46,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "ZF9taWNyb3MYECABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIz",
             "Cg5jcHZfYmlkX21pY3JvcxgRIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
             "NFZhbHVlEjoKFHRhcmdldF9yb2FzX292ZXJyaWRlGBMgASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLkRvdWJsZVZhbHVlQtEBCiVjb20uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAucmVzb3VyY2VzQgxBZEdyb3VwUHJvdG9QAVpKZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
-            "L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2ds",
-            "ZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxS",
-            "ZXNvdXJjZXNiBnByb3RvMw=="));
+            "LnByb3RvYnVmLkRvdWJsZVZhbHVlEjsKFnBlcmNlbnRfY3BjX2JpZF9taWNy",
+            "b3MYFCABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZULRAQolY29t",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IMQWRHcm91cFBy",
+            "b3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
+            "YWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIh",
+            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroup), global::Google.Ads.GoogleAds.V0.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "CpaBidMicros", "CpvBidMicros", "TargetRoasOverride" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroup), global::Google.Ads.GoogleAds.V0.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "CpaBidMicros", "CpvBidMicros", "TargetRoasOverride", "PercentCpcBidMicros" }, null, null, null)
           }));
     }
     #endregion
@@ -103,6 +104,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       CpaBidMicros = other.CpaBidMicros;
       CpvBidMicros = other.CpvBidMicros;
       TargetRoasOverride = other.TargetRoasOverride;
+      PercentCpcBidMicros = other.PercentCpcBidMicros;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -318,6 +320,23 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "percent_cpc_bid_micros" field.</summary>
+    public const int PercentCpcBidMicrosFieldNumber = 20;
+    private static readonly pb::FieldCodec<long?> _single_percentCpcBidMicros_codec = pb::FieldCodec.ForStructWrapper<long>(162);
+    private long? percentCpcBidMicros_;
+    /// <summary>
+    /// The percent cpc bid amount, expressed as a fraction of the advertised price
+    /// for some good or service. The valid range for the fraction is [0,1) and the
+    /// value stored here is 1,000,000 * [fraction].
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? PercentCpcBidMicros {
+      get { return percentCpcBidMicros_; }
+      set {
+        percentCpcBidMicros_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AdGroup);
@@ -344,6 +363,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (CpaBidMicros != other.CpaBidMicros) return false;
       if (CpvBidMicros != other.CpvBidMicros) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(TargetRoasOverride, other.TargetRoasOverride)) return false;
+      if (PercentCpcBidMicros != other.PercentCpcBidMicros) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -363,6 +383,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (cpaBidMicros_ != null) hash ^= CpaBidMicros.GetHashCode();
       if (cpvBidMicros_ != null) hash ^= CpvBidMicros.GetHashCode();
       if (targetRoasOverride_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(TargetRoasOverride);
+      if (percentCpcBidMicros_ != null) hash ^= PercentCpcBidMicros.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -416,6 +437,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (targetRoasOverride_ != null) {
         _single_targetRoasOverride_codec.WriteTagAndValue(output, TargetRoasOverride);
       }
+      if (percentCpcBidMicros_ != null) {
+        _single_percentCpcBidMicros_codec.WriteTagAndValue(output, PercentCpcBidMicros);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -460,6 +484,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (targetRoasOverride_ != null) {
         size += _single_targetRoasOverride_codec.CalculateSizeWithTag(TargetRoasOverride);
+      }
+      if (percentCpcBidMicros_ != null) {
+        size += _single_percentCpcBidMicros_codec.CalculateSizeWithTag(PercentCpcBidMicros);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -525,6 +552,11 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (other.targetRoasOverride_ != null) {
         if (targetRoasOverride_ == null || other.TargetRoasOverride != 0D) {
           TargetRoasOverride = other.TargetRoasOverride;
+        }
+      }
+      if (other.percentCpcBidMicros_ != null) {
+        if (percentCpcBidMicros_ == null || other.PercentCpcBidMicros != 0L) {
+          PercentCpcBidMicros = other.PercentCpcBidMicros;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -614,6 +646,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             double? value = _single_targetRoasOverride_codec.Read(input);
             if (targetRoasOverride_ == null || value != 0D) {
               TargetRoasOverride = value;
+            }
+            break;
+          }
+          case 162: {
+            long? value = _single_percentCpcBidMicros_codec.Read(input);
+            if (percentCpcBidMicros_ == null || value != 0L) {
+              PercentCpcBidMicros = value;
             }
             break;
           }

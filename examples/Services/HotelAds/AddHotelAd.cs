@@ -37,6 +37,10 @@ namespace Google.Ads.GoogleAds.Examples.V0 {
   /// </summary>
   public class AddHotelAd : ExampleBase {
 
+    // Specify maximum bid limit that can be set when creating a campaign using the Percent CPC
+    // bidding strategy.
+    private const long CPC_BID_CEILING_MICRO_AMOUNT = 20000000;
+
     /// <summary>
     /// Main method, to run this code example as a standalone application.
     /// </summary>
@@ -48,13 +52,23 @@ namespace Google.Ads.GoogleAds.Examples.V0 {
       // The customer ID for which the call is made.
       int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
 
+      // Optional: Specify the maximum bid limit that can be set when creating a campaign using
+      // the Percent CPC bidding strategy.
+      long? cpcBidCeilingMicroAmount = CPC_BID_CEILING_MICRO_AMOUNT;
+
+      long tempVal = 0;
+      if (long.TryParse("INSERT_CPC_BID_CEILING_MICRO_AMOUNT", out tempVal)) {
+        cpcBidCeilingMicroAmount = tempVal;
+      }
+
       // Specify your Hotels account ID below. You can see how to find the account ID in the Hotel
       // Ads Center at: https://support.google.com/hotelprices/answer/6399770.
       // This ID is the same account ID that you use in API requests to the Travel Partner APIs
       // (https://developers.google.com/hotels/hotel-ads/api-reference/).
       int hotelCenterAccountId = int.Parse("INSERT_HOTEL_CENTER_ACCOUNT_ID_HERE");
 
-      codeExample.Run(new GoogleAdsClient(), customerId, hotelCenterAccountId);
+      codeExample.Run(new GoogleAdsClient(), customerId, hotelCenterAccountId,
+          cpcBidCeilingMicroAmount.Value);
     }
 
     /// <summary>
@@ -75,14 +89,16 @@ namespace Google.Ads.GoogleAds.Examples.V0 {
     /// <param name="client">The Google Ads client.</param>
     /// <param name="customerId">The customer ID for which the call is made.</param>
     /// <param name="hotelCenterAccountId">The Hotel Center account ID.</param>
-    public void Run(GoogleAdsClient client, long customerId, long hotelCenterAccountId) {
+    /// <param name="cpcBidCeilingMicroAmount">The CPC bid ceiling micro amount.</param>
+    public void Run(GoogleAdsClient client, long customerId, long hotelCenterAccountId,
+        long cpcBidCeilingMicroAmount) {
       try {
         // Create a budget to be used by the campaign that will be created below.
         string budgetResourceName = AddCampaignBudget(client, customerId);
 
         // Create a hotel campaign.
         string campaignResourceName = AddHotelCampaign(client, customerId, budgetResourceName,
-            hotelCenterAccountId);
+            hotelCenterAccountId, cpcBidCeilingMicroAmount);
 
         // Create a hotel ad group.
         string adGroupResourceName = AddHotelAdGroup(client, customerId, campaignResourceName);
@@ -135,9 +151,10 @@ namespace Google.Ads.GoogleAds.Examples.V0 {
     /// <param name="customerId">The AdWords customer ID for which the call is made.</param>
     /// <param name="budgetResourceName">The resource name of budget for a new campaign.</param>
     /// <param name="hotelCenterAccountId">The Hotel Center account ID.</param>
+    /// <param name="cpcBidCeilingMicroAmount">The CPC bid ceiling micro amount.</param>
     /// <returns>The resource name of the newly created campaign.</returns>
     private static string AddHotelCampaign(GoogleAdsClient client, long customerId,
-        string budgetResourceName, long hotelCenterAccountId) {
+        string budgetResourceName, long hotelCenterAccountId, long cpcBidCeilingMicroAmount) {
       // Get the CampaignService.
       CampaignServiceClient service = client.GetService(Services.V0.CampaignService);
 
@@ -157,8 +174,11 @@ namespace Google.Ads.GoogleAds.Examples.V0 {
         // targeting and the ads are ready to serve.
         Status = CampaignStatus.Paused,
 
-        // Set the bidding strategy. Only Manual CPC can be used for hotel campaigns.
-        ManualCpc = new ManualCpc(),
+        // Sets the bidding strategy to PercentCpc. Only Manual CPC and Percent CPC can be used for
+        // hotel campaigns.
+        PercentCpc = new PercentCpc() {
+          CpcBidCeilingMicros = cpcBidCeilingMicroAmount
+        },
 
         // Set the budget.
         CampaignBudget = budgetResourceName,
