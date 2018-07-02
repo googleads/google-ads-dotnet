@@ -1,4 +1,4 @@
-::@echo off
+@echo off
 
 :: Save the path of the build script.
 set BuildScriptPath=%~dp0
