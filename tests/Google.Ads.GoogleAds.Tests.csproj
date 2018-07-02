@@ -15,6 +15,7 @@
       <PackageReference Include="Moq" Version="4.8.2" />
       <PackageReference Include="NUnit" Version="3.10.1" />
       <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+      <PackageReference Include="Google.Ads.GoogleAds" Version="0.3.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\App.config">
@@ -23,7 +24,7 @@
     <EmbeddedResource Include="Util\field_mask_tests.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\Google.Ads.GoogleAds.csproj" />
+    <ProjectReference Condition="Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="..\src\Google.Ads.GoogleAds.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="TestResources.Designer.cs">

@@ -48,7 +48,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="adGroupAdName">The ad_group_ad resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="AdGroupAdName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string adGroupAdName, out AdGroupAdName result) {
       gax::GaxPreconditions.CheckNotNull(adGroupAdName, nameof(adGroupAdName));
       gax::TemplatedResourceName resourceName;
@@ -137,7 +137,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="adGroupBidModifierName">The ad_group_bid_modifier resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="AdGroupBidModifierName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string adGroupBidModifierName, out AdGroupBidModifierName result) {
       gax::GaxPreconditions.CheckNotNull(adGroupBidModifierName, nameof(adGroupBidModifierName));
       gax::TemplatedResourceName resourceName;
@@ -226,7 +226,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="adGroupCriteriaName">The ad_group_criteria resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="AdGroupCriteriaName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string adGroupCriteriaName, out AdGroupCriteriaName result) {
       gax::GaxPreconditions.CheckNotNull(adGroupCriteriaName, nameof(adGroupCriteriaName));
       gax::TemplatedResourceName resourceName;
@@ -315,7 +315,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="adGroupName">The ad_group resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="AdGroupName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string adGroupName, out AdGroupName result) {
       gax::GaxPreconditions.CheckNotNull(adGroupName, nameof(adGroupName));
       gax::TemplatedResourceName resourceName;
@@ -404,7 +404,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="biddingStrategyName">The bidding_strategy resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="BiddingStrategyName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string biddingStrategyName, out BiddingStrategyName result) {
       gax::GaxPreconditions.CheckNotNull(biddingStrategyName, nameof(biddingStrategyName));
       gax::TemplatedResourceName resourceName;
@@ -493,7 +493,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="campaignBudgetName">The campaign_budget resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="CampaignBudgetName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string campaignBudgetName, out CampaignBudgetName result) {
       gax::GaxPreconditions.CheckNotNull(campaignBudgetName, nameof(campaignBudgetName));
       gax::TemplatedResourceName resourceName;
@@ -582,7 +582,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="campaignCriteriaName">The campaign_criteria resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="CampaignCriteriaName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string campaignCriteriaName, out CampaignCriteriaName result) {
       gax::GaxPreconditions.CheckNotNull(campaignCriteriaName, nameof(campaignCriteriaName));
       gax::TemplatedResourceName resourceName;
@@ -671,7 +671,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="campaignName">The campaign resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="CampaignName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string campaignName, out CampaignName result) {
       gax::GaxPreconditions.CheckNotNull(campaignName, nameof(campaignName));
       gax::TemplatedResourceName resourceName;
@@ -760,7 +760,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="customerName">The customer resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="CustomerName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string customerName, out CustomerName result) {
       gax::GaxPreconditions.CheckNotNull(customerName, nameof(customerName));
       gax::TemplatedResourceName resourceName;
@@ -840,7 +840,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="geoTargetConstantName">The geo_target_constant resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="GeoTargetConstantName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string geoTargetConstantName, out GeoTargetConstantName result) {
       gax::GaxPreconditions.CheckNotNull(geoTargetConstantName, nameof(geoTargetConstantName));
       gax::TemplatedResourceName resourceName;
@@ -920,7 +920,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="googleAdsFieldName">The google_ads_field resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="GoogleAdsFieldName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string googleAdsFieldName, out GoogleAdsFieldName result) {
       gax::GaxPreconditions.CheckNotNull(googleAdsFieldName, nameof(googleAdsFieldName));
       gax::TemplatedResourceName resourceName;
@@ -1000,7 +1000,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="keywordViewName">The keyword_view resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="KeywordViewName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string keywordViewName, out KeywordViewName result) {
       gax::GaxPreconditions.CheckNotNull(keywordViewName, nameof(keywordViewName));
       gax::TemplatedResourceName resourceName;
@@ -1089,7 +1089,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <param name="recommendationName">The recommendation resource name in string form. Must not be <c>null</c>.</param>
     /// <param name="result">When this method returns, the parsed <see cref="RecommendationName"/>,
     /// or <c>null</c> if parsing fails.</param>
-    /// <returns><c>true</c> if the name was parsed succssfully; <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
     public static bool TryParse(string recommendationName, out RecommendationName result) {
       gax::GaxPreconditions.CheckNotNull(recommendationName, nameof(recommendationName));
       gax::TemplatedResourceName resourceName;

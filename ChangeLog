@@ -1,3 +1,11 @@
+0.3.0
+=====
+
+- Added support for PercentCpc bidding strategy.
+- Updated the Hotel Ads example to use PercentCpc bidding strategy.
+- Added an explicit dependency on Grpc.Core as a workaround to
+ https://github.com/grpc/grpc/issues/11279.
+
 0.2.0
 =====
 
