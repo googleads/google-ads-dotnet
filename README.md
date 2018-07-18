@@ -2,6 +2,9 @@
 
 This project hosts the .NET client library for the Google Ads API.
 
+## Build Status
+
+![Build Status](https://storage.googleapis.com/gaa-clientlibs/badges/google-ads-dotnet/buildstatus_windows.png)
 
 ## Features
 
