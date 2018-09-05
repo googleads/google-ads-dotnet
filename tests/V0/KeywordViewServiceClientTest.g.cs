@@ -14,86 +14,108 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V0.Services.Tests {
+namespace Google.Ads.GoogleAds.V0.Services.Tests
+{
+    using Google.Ads.GoogleAds.V0.Resources;
+    using Google.Ads.GoogleAds.V0.Services;
+    using apis = Google.Ads.GoogleAds.V0.Services;
+    using Google.Api.Gax;
+    using Google.Api.Gax.Grpc;
+    using Google.Protobuf.WellKnownTypes;
+    using Grpc.Core;
+    using Moq;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using NUnit.Framework;
 
-  using Google.Ads.GoogleAds.V0.Resources;
-  using Google.Ads.GoogleAds.V0.Services;
-  using Grpc.Core;
-  using Moq;
-  using NUnit.Framework;
-  using System.Threading.Tasks;
+    /// <summary>Generated unit tests</summary>
+    public class GeneratedKeywordViewServiceClientTest
+    {
+        [Test]
+        public void GetKeywordView()
+        {
+            Mock<KeywordViewService.KeywordViewServiceClient> mockGrpcClient = new Mock<KeywordViewService.KeywordViewServiceClient>(MockBehavior.Strict);
+            GetKeywordViewRequest expectedRequest = new GetKeywordViewRequest
+            {
+                ResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString(),
+            };
+            KeywordView expectedResponse = new KeywordView
+            {
+                ResourceName = "resourceName2625949903",
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordView(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            KeywordViewServiceClient client = new KeywordViewServiceClientImpl(mockGrpcClient.Object, null);
+            string formattedResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString();
+            KeywordView response = client.GetKeywordView(formattedResourceName);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
 
-  /// <summary>Generated unit tests</summary>
-  public class GeneratedKeywordViewServiceClientTest {
+        [Test]
+        public async Task GetKeywordViewAsync()
+        {
+            Mock<KeywordViewService.KeywordViewServiceClient> mockGrpcClient = new Mock<KeywordViewService.KeywordViewServiceClient>(MockBehavior.Strict);
+            GetKeywordViewRequest expectedRequest = new GetKeywordViewRequest
+            {
+                ResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString(),
+            };
+            KeywordView expectedResponse = new KeywordView
+            {
+                ResourceName = "resourceName2625949903",
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordViewAsync(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<KeywordView>(Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordViewServiceClient client = new KeywordViewServiceClientImpl(mockGrpcClient.Object, null);
+            string formattedResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString();
+            KeywordView response = await client.GetKeywordViewAsync(formattedResourceName);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
 
-    [Test]
-    public void GetKeywordView() {
-      Mock<KeywordViewService.KeywordViewServiceClient> mockGrpcClient = new Mock<KeywordViewService.KeywordViewServiceClient>(MockBehavior.Strict);
-      GetKeywordViewRequest expectedRequest = new GetKeywordViewRequest {
-        ResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString(),
-      };
-      KeywordView expectedResponse = new KeywordView {
-        ResourceName = "resourceName2625949903",
-      };
-      mockGrpcClient.Setup(x => x.GetKeywordView(expectedRequest, It.IsAny<CallOptions>()))
-          .Returns(expectedResponse);
-      KeywordViewServiceClient client = new KeywordViewServiceClientImpl(mockGrpcClient.Object, null);
-      string formattedResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString();
-      KeywordView response = client.GetKeywordView(formattedResourceName);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
+        [Test]
+        public void GetKeywordView2()
+        {
+            Mock<KeywordViewService.KeywordViewServiceClient> mockGrpcClient = new Mock<KeywordViewService.KeywordViewServiceClient>(MockBehavior.Strict);
+            GetKeywordViewRequest request = new GetKeywordViewRequest
+            {
+                ResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString(),
+            };
+            KeywordView expectedResponse = new KeywordView
+            {
+                ResourceName = "resourceName2625949903",
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordView(request, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            KeywordViewServiceClient client = new KeywordViewServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordView response = client.GetKeywordView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task GetKeywordViewAsync2()
+        {
+            Mock<KeywordViewService.KeywordViewServiceClient> mockGrpcClient = new Mock<KeywordViewService.KeywordViewServiceClient>(MockBehavior.Strict);
+            GetKeywordViewRequest request = new GetKeywordViewRequest
+            {
+                ResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString(),
+            };
+            KeywordView expectedResponse = new KeywordView
+            {
+                ResourceName = "resourceName2625949903",
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordViewAsync(request, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<KeywordView>(Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordViewServiceClient client = new KeywordViewServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordView response = await client.GetKeywordViewAsync(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
     }
-
-    [Test]
-    public async Task GetKeywordViewAsync() {
-      Mock<KeywordViewService.KeywordViewServiceClient> mockGrpcClient = new Mock<KeywordViewService.KeywordViewServiceClient>(MockBehavior.Strict);
-      GetKeywordViewRequest expectedRequest = new GetKeywordViewRequest {
-        ResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString(),
-      };
-      KeywordView expectedResponse = new KeywordView {
-        ResourceName = "resourceName2625949903",
-      };
-      mockGrpcClient.Setup(x => x.GetKeywordViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-          .Returns(new Grpc.Core.AsyncUnaryCall<KeywordView>(Task.FromResult(expectedResponse), null, null, null, null));
-      KeywordViewServiceClient client = new KeywordViewServiceClientImpl(mockGrpcClient.Object, null);
-      string formattedResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString();
-      KeywordView response = await client.GetKeywordViewAsync(formattedResourceName);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-
-    [Test]
-    public void GetKeywordView2() {
-      Mock<KeywordViewService.KeywordViewServiceClient> mockGrpcClient = new Mock<KeywordViewService.KeywordViewServiceClient>(MockBehavior.Strict);
-      GetKeywordViewRequest request = new GetKeywordViewRequest {
-        ResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString(),
-      };
-      KeywordView expectedResponse = new KeywordView {
-        ResourceName = "resourceName2625949903",
-      };
-      mockGrpcClient.Setup(x => x.GetKeywordView(request, It.IsAny<CallOptions>()))
-          .Returns(expectedResponse);
-      KeywordViewServiceClient client = new KeywordViewServiceClientImpl(mockGrpcClient.Object, null);
-      KeywordView response = client.GetKeywordView(request);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-
-    [Test]
-    public async Task GetKeywordViewAsync2() {
-      Mock<KeywordViewService.KeywordViewServiceClient> mockGrpcClient = new Mock<KeywordViewService.KeywordViewServiceClient>(MockBehavior.Strict);
-      GetKeywordViewRequest request = new GetKeywordViewRequest {
-        ResourceName = new KeywordViewName("[CUSTOMER]", "[KEYWORD_VIEW]").ToString(),
-      };
-      KeywordView expectedResponse = new KeywordView {
-        ResourceName = "resourceName2625949903",
-      };
-      mockGrpcClient.Setup(x => x.GetKeywordViewAsync(request, It.IsAny<CallOptions>()))
-          .Returns(new Grpc.Core.AsyncUnaryCall<KeywordView>(Task.FromResult(expectedResponse), null, null, null, null));
-      KeywordViewServiceClient client = new KeywordViewServiceClientImpl(mockGrpcClient.Object, null);
-      KeywordView response = await client.GetKeywordViewAsync(request);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-  }
 }

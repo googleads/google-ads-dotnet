@@ -12,18 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // Generated code - do not edit
-using Google.Ads.GoogleAds.Lib;
 using Google.Api.Gax.Grpc;
 using Google.Protobuf;
-
-namespace Google.Ads.GoogleAds.V0.Services {
-
-  public partial class KeywordViewServiceClientImpl {
-
-    // Modify every API call on construction to use GoogleAdsException
-    partial void Modify_ApiCall<TRequest, TResponse>(ref ApiCall<TRequest, TResponse> call)
-        where TRequest : class, IMessage<TRequest>
-        where TResponse : class, IMessage<TResponse> =>
-        call = call.WithExceptionCustomizer(GoogleAdsException.Create);
-  }
+using Google.Ads.GoogleAds.Lib;
+namespace Google.Ads.GoogleAds.V0.Services
+{
+    public partial class KeywordViewServiceClientImpl
+    {
+        // Modify every API call on construction to use GoogleAdsException
+        partial void Modify_ApiCall<TRequest, TResponse>(ref ApiCall<TRequest, TResponse> call)
+            where TRequest : class, IMessage<TRequest>
+            where TResponse : class, IMessage<TResponse> =>
+            call = call.WithExceptionCustomizer(GoogleAdsException.Create);
+    }
 }

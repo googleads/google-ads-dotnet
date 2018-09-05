@@ -14,36 +14,38 @@
 
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Util {
-
-  /// <summary>
-  /// Provides utility methods for working with collections.
-  /// </summary>
-  public static class CollectionUtilities {
-
+namespace Google.Ads.GoogleAds.Util
+{
     /// <summary>
-    /// Attempts to retrieve a value associated with the specified key from the specified
-    /// Dictionary.</summary>
-    /// <param name="dictionary">The dictionary to query.</param>
-    /// <param name="key">The key to retrieve a value for.</param>
-    /// <returns>
-    /// The value associated with the spcified key, or the default value for that type if none
-    /// could be found.</returns>
-    public static T GetValueOrDefault<S, T>(Dictionary<S, T> dictionary, S key) {
-      return GetValueOrDefault(dictionary, key, default(T));
-    }
+    /// Provides utility methods for working with collections.
+    /// </summary>
+    public static class CollectionUtilities
+    {
+        /// <summary>
+        /// Attempts to retrieve a value associated with the specified key from the specified
+        /// Dictionary.</summary>
+        /// <param name="dictionary">The dictionary to query.</param>
+        /// <param name="key">The key to retrieve a value for.</param>
+        /// <returns>
+        /// The value associated with the spcified key, or the default value for that type if none
+        /// could be found.</returns>
+        public static T GetValueOrDefault<S, T>(Dictionary<S, T> dictionary, S key)
+        {
+            return GetValueOrDefault(dictionary, key, default(T));
+        }
 
-    /// <summary>
-    /// Attempts to retrieve a value associated with the specified key from the specified
-    /// Dictionary.</summary>
-    /// <param name="dictionary">The dictionary to query.</param>
-    /// <param name="key">The key to retrieve a value for.</param>
-    /// <param name="defaultValue">The value to return if none could be found.</param>
-    /// <returns>
-    /// The value associated with the spcified key, or defaultValue if none could be found.
-    /// </returns>
-    public static T GetValueOrDefault<S, T>(Dictionary<S, T> dictionary, S key, T defaultValue) {
-      return dictionary.TryGetValue(key, out var value) ? value : defaultValue;
+        /// <summary>
+        /// Attempts to retrieve a value associated with the specified key from the specified
+        /// Dictionary.</summary>
+        /// <param name="dictionary">The dictionary to query.</param>
+        /// <param name="key">The key to retrieve a value for.</param>
+        /// <param name="defaultValue">The value to return if none could be found.</param>
+        /// <returns>
+        /// The value associated with the spcified key, or defaultValue if none could be found.
+        /// </returns>
+        public static T GetValueOrDefault<S, T>(Dictionary<S, T> dictionary, S key, T defaultValue)
+        {
+            return dictionary.TryGetValue(key, out var value) ? value : defaultValue;
+        }
     }
-  }
 }

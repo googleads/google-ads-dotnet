@@ -14,19 +14,20 @@
 
 using Google.Api.Gax.Grpc;
 
-namespace Google.Ads.GoogleAds.Lib {
-
-  /// <summary>
-  /// Defines a service template.
-  /// </summary>
-  /// <typeparam name="T">Type of the service.</typeparam>
-  /// <typeparam name="U">Type of the service settings.</typeparam>
-  public class ServiceTemplate<T, U> where U : ServiceSettingsBase, new() {
-
+namespace Google.Ads.GoogleAds.Lib
+{
     /// <summary>
-    /// Initializes a new instance of the <see cref="ServiceTemplate{T, U}"/> class.
+    /// Defines a service template.
     /// </summary>
-    public ServiceTemplate() {
+    /// <typeparam name="T">Type of the service.</typeparam>
+    /// <typeparam name="U">Type of the service settings.</typeparam>
+    public class ServiceTemplate<T, U> where U : ServiceSettingsBase, new()
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ServiceTemplate{T, U}"/> class.
+        /// </summary>
+        public ServiceTemplate()
+        {
+        }
     }
-  }
 }

@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcXVlcnlfZXJyb3Iu",
-            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyK2DAoOUXVl",
-            "cnlFcnJvckVudW0iowwKClF1ZXJ5RXJyb3ISDwoLVU5TUEVDSUZJRUQQABIL",
+            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyLkDAoOUXVl",
+            "cnlFcnJvckVudW0i0QwKClF1ZXJ5RXJyb3ISDwoLVU5TUEVDSUZJRUQQABIL",
             "CgdVTktOT1dOEAESDwoLUVVFUllfRVJST1IQMhIVChFCQURfRU5VTV9DT05T",
             "VEFOVBASEhcKE0JBRF9FU0NBUEVfU0VRVUVOQ0UQBxISCg5CQURfRklFTERf",
             "TkFNRRAMEhMKD0JBRF9MSU1JVF9WQUxVRRAPEg4KCkJBRF9OVU1CRVIQBRIQ",
@@ -50,22 +50,23 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "EiUKIVBST0hJQklURURfRklFTERfSU5fU0VMRUNUX0NMQVVTRRAXEiQKIFBS",
             "T0hJQklURURfRklFTERfSU5fV0hFUkVfQ0xBVVNFEBgSKwonUFJPSElCSVRF",
             "RF9SRVNPVVJDRV9UWVBFX0lOX0ZST01fQ0xBVVNFECsSLQopUFJPSElCSVRF",
-            "RF9SRVNPVVJDRV9UWVBFX0lOX1NFTEVDVF9DTEFVU0UQMBIvCitQUk9ISUJJ",
-            "VEVEX01FVFJJQ19JTl9TRUxFQ1RfT1JfV0hFUkVfQ0xBVVNFEDESMAosUFJP",
-            "SElCSVRFRF9TRUdNRU5UX0lOX1NFTEVDVF9PUl9XSEVSRV9DTEFVU0UQMxI8",
-            "CjhQUk9ISUJJVEVEX1NFR01FTlRfV0lUSF9NRVRSSUNfSU5fU0VMRUNUX09S",
-            "X1dIRVJFX0NMQVVTRRA1EhcKE0xJTUlUX1ZBTFVFX1RPT19MT1cQGRIgChxQ",
-            "Uk9ISUJJVEVEX05FV0xJTkVfSU5fU1RSSU5HEAgSKAokUFJPSElCSVRFRF9W",
-            "QUxVRV9DT01CSU5BVElPTl9JTl9MSVNUEAoSNgoyUFJPSElCSVRFRF9WQUxV",
-            "RV9DT01CSU5BVElPTl9XSVRIX0JFVFdFRU5fT1BFUkFUT1IQFRIZChVTVFJJ",
-            "TkdfTk9UX1RFUk1JTkFURUQQBhIVChFUT09fTUFOWV9TRUdNRU5UUxAiEhsK",
-            "F1VORVhQRUNURURfRU5EX09GX1FVRVJZEAkSGgoWVU5FWFBFQ1RFRF9GUk9N",
-            "X0NMQVVTRRAvEhYKElVOUkVDT0dOSVpFRF9GSUVMRBAgEhQKEFVORVhQRUNU",
-            "RURfSU5QVVQQC0LFAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVy",
-            "cm9yc0IPUXVlcnlFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dl",
-            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJy",
-            "b3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIe",
-            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
+            "RF9SRVNPVVJDRV9UWVBFX0lOX1NFTEVDVF9DTEFVU0UQMBIsCihQUk9ISUJJ",
+            "VEVEX1JFU09VUkNFX1RZUEVfSU5fV0hFUkVfQ0xBVVNFEDoSLworUFJPSElC",
+            "SVRFRF9NRVRSSUNfSU5fU0VMRUNUX09SX1dIRVJFX0NMQVVTRRAxEjAKLFBS",
+            "T0hJQklURURfU0VHTUVOVF9JTl9TRUxFQ1RfT1JfV0hFUkVfQ0xBVVNFEDMS",
+            "PAo4UFJPSElCSVRFRF9TRUdNRU5UX1dJVEhfTUVUUklDX0lOX1NFTEVDVF9P",
+            "Ul9XSEVSRV9DTEFVU0UQNRIXChNMSU1JVF9WQUxVRV9UT09fTE9XEBkSIAoc",
+            "UFJPSElCSVRFRF9ORVdMSU5FX0lOX1NUUklORxAIEigKJFBST0hJQklURURf",
+            "VkFMVUVfQ09NQklOQVRJT05fSU5fTElTVBAKEjYKMlBST0hJQklURURfVkFM",
+            "VUVfQ09NQklOQVRJT05fV0lUSF9CRVRXRUVOX09QRVJBVE9SEBUSGQoVU1RS",
+            "SU5HX05PVF9URVJNSU5BVEVEEAYSFQoRVE9PX01BTllfU0VHTUVOVFMQIhIb",
+            "ChdVTkVYUEVDVEVEX0VORF9PRl9RVUVSWRAJEhoKFlVORVhQRUNURURfRlJP",
+            "TV9DTEFVU0UQLxIWChJVTlJFQ09HTklaRURfRklFTEQQIBIUChBVTkVYUEVD",
+            "VEVEX0lOUFVUEAtCxQEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
+            "cnJvcnNCD1F1ZXJ5RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vy",
+            "cm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oC",
+            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -342,6 +343,11 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// SELECT clause.
         /// </summary>
         [pbr::OriginalName("PROHIBITED_RESOURCE_TYPE_IN_SELECT_CLAUSE")] ProhibitedResourceTypeInSelectClause = 48,
+        /// <summary>
+        /// A field that comes from an incompatible resource was included in the
+        /// WHERE clause.
+        /// </summary>
+        [pbr::OriginalName("PROHIBITED_RESOURCE_TYPE_IN_WHERE_CLAUSE")] ProhibitedResourceTypeInWhereClause = 58,
         /// <summary>
         /// A metric incompatible with the main resource or other selected
         /// segmenting resources was included in the SELECT or WHERE clause.

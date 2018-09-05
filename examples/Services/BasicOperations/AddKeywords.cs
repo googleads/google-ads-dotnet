@@ -22,90 +22,104 @@ using System;
 using static Google.Ads.GoogleAds.V0.Enums.AdGroupCriterionStatusEnum.Types;
 using static Google.Ads.GoogleAds.V0.Enums.KeywordMatchTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V0 {
-
-  /// <summary>
-  /// This code example demonstrates how to add keyword into an ad group.
-  /// </summary>
-  public class AddKeywords : ExampleBase {
-
+namespace Google.Ads.GoogleAds.Examples.V0
+{
     /// <summary>
-    /// Main method, to run this code example as a standalone application.
+    /// This code example demonstrates how to add keyword into an ad group.
     /// </summary>
-    /// <param name="args">The command line arguments.</param>
-    public static void Main(string[] args) {
-      AddKeywords codeExample = new AddKeywords();
+    public class AddKeywords : ExampleBase
+    {
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            AddKeywords codeExample = new AddKeywords();
 
-      Console.WriteLine(codeExample.Description);
+            Console.WriteLine(codeExample.Description);
 
-      // The AdWords customer ID for which the call is made.
-      long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+            // The Google Ads customer ID for which the call is made.
+            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-      // The ad group to which new keyword is added.
-      long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            // The ad group to which new keyword is added.
+            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
 
-      // The new keyword text.
-      string keyword = "INSERT_KEYWORD_TEXT_HERE";
+            // The new keyword text.
+            string keyword = "INSERT_KEYWORD_TEXT_HERE";
 
-      codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keyword);
-    }
-
-    /// <summary>
-    /// Returns a description about the code example.
-    /// </summary>
-    public override string Description {
-      get {
-        return "This code example demonstrates how to add keyword into an ad group.";
-      }
-    }
-
-    /// <summary>
-    /// Runs the code example.
-    /// </summary>
-    /// <param name="client">The Google Ads client.</param>
-    /// <param name="customerId">The AdWords customer ID for which the call is made.</param>
-    /// <param name="adGroupId">The ad group to which new keyword ia added.</param>
-    /// <param name="keyword">The new keyword text.</param>
-    public void Run(GoogleAdsClient client, long customerId, long adGroupId, string keyword) {
-      // Get the AdGroupCriterionService.
-      AdGroupCriterionServiceClient adGroupCriterionService =
-          client.GetService(Services.V0.AdGroupCriterionService);
-
-      // Create a keyword.
-      AdGroupCriterion criterion = new AdGroupCriterion() {
-        AdGroup = ResourceNames.AdGroup(customerId, adGroupId),
-        Status = AdGroupCriterionStatus.Enabled,
-        Keyword = new KeywordInfo() {
-          Text = keyword,
-          MatchType = KeywordMatchType.Exact
+            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keyword);
         }
-      };
 
-      // Create the operation.
-      AdGroupCriterionOperation operation = new AdGroupCriterionOperation() {
-        Create = criterion,
-      };
-
-      try {
-        // Add the keywords.
-        MutateAdGroupCriteriaResponse retVal = adGroupCriterionService.MutateAdGroupCriteria(
-            customerId.ToString(), new AdGroupCriterionOperation[] { operation });
-
-        // Display the results.
-        if (retVal.Results.Count > 0) {
-          foreach (MutateAdGroupCriterionResult newCriterion in retVal.Results) {
-            Console.WriteLine($"Created keyword with resource ID = " +
-                "'{newCriterion.ResourceName}'.");
-          }
-        } else {
-          Console.WriteLine("No keywords were added.");
+        /// <summary>
+        /// Returns a description about the code example.
+        /// </summary>
+        public override string Description
+        {
+            get
+            {
+                return "This code example demonstrates how to add keyword into an ad group.";
+            }
         }
-      } catch (GoogleAdsException e) {
-        Console.WriteLine("Failure:");
-        Console.WriteLine($"Message: {e.Message}");
-        Console.WriteLine($"Failure: {e.Failure}");
-        Console.WriteLine($"Request ID: {e.RequestId}");
-      }
+
+        /// <summary>
+        /// Runs the code example.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
+        /// <param name="adGroupId">The ad group to which new keyword ia added.</param>
+        /// <param name="keyword">The new keyword text.</param>
+        public void Run(GoogleAdsClient client, long customerId, long adGroupId, string keyword)
+        {
+            // Get the AdGroupCriterionService.
+            AdGroupCriterionServiceClient adGroupCriterionService =
+                client.GetService(Services.V0.AdGroupCriterionService);
+
+            // Create a keyword.
+            AdGroupCriterion criterion = new AdGroupCriterion()
+            {
+                AdGroup = ResourceNames.AdGroup(customerId, adGroupId),
+                Status = AdGroupCriterionStatus.Enabled,
+                Keyword = new KeywordInfo()
+                {
+                    Text = keyword,
+                    MatchType = KeywordMatchType.Exact
+                }
+            };
+
+            // Create the operation.
+            AdGroupCriterionOperation operation = new AdGroupCriterionOperation()
+            {
+                Create = criterion,
+            };
+
+            try
+            {
+                // Add the keywords.
+                MutateAdGroupCriteriaResponse retVal = adGroupCriterionService.MutateAdGroupCriteria(
+                    customerId.ToString(), new AdGroupCriterionOperation[] { operation });
+
+                // Display the results.
+                if (retVal.Results.Count > 0)
+                {
+                    foreach (MutateAdGroupCriterionResult newCriterion in retVal.Results)
+                    {
+                        Console.WriteLine($"Created keyword with resource ID = " +
+                            "'{newCriterion.ResourceName}'.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No keywords were added.");
+                }
+            }
+            catch (GoogleAdsException e)
+            {
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Failure: {e.Failure}");
+                Console.WriteLine($"Request ID: {e.RequestId}");
+            }
+        }
     }
-  }
 }

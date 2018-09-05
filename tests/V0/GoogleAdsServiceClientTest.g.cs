@@ -14,9 +14,23 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V0.Services.Tests {
+namespace Google.Ads.GoogleAds.V0.Services.Tests
+{
+    using Google.Api.Gax;
+    using Google.Api.Gax.Grpc;
+    using Google.Protobuf.WellKnownTypes;
+    using Grpc.Core;
+    using Moq;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using NUnit.Framework;
 
-  /// <summary>Generated unit tests</summary>
-  public class GeneratedGoogleAdsServiceClientTest {
-  }
+    /// <summary>Generated unit tests</summary>
+    public class GeneratedGoogleAdsServiceClientTest
+    {
+    }
 }

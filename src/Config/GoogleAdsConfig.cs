@@ -30,466 +30,472 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 
-namespace Google.Ads.GoogleAds.Config {
-
-  /// <summary>
-  /// This class reads the configuration keys from App.config.
-  /// </summary>
-  public class GoogleAdsConfig : ConfigBase {
-
+namespace Google.Ads.GoogleAds.Config
+{
     /// <summary>
-    /// The default timeout for API calls in milliseconds.
+    /// This class reads the configuration keys from App.config.
     /// </summary>
-    private const int DEFAULT_TIMEOUT = 60000;
+    public class GoogleAdsConfig : ConfigBase
+    {
+        /// <summary>
+        /// The default timeout for API calls in milliseconds.
+        /// </summary>
+        private const int DEFAULT_TIMEOUT = 60000;
 
-    /// <summary>
-    /// The default value of OAuth2 server URL.
-    /// </summary>
-    private const string DEFAULT_OAUTH2_SERVER = "https://accounts.google.com";
+        /// <summary>
+        /// The default value of OAuth2 server URL.
+        /// </summary>
+        private const string DEFAULT_OAUTH2_SERVER = "https://accounts.google.com";
 
-    /// <summary>
-    /// The default user ID when creating a <see cref="GoogleAuthorizationCodeFlow"/> instance.
-    /// </summary>
-    private const string DEFAULT_USER_ID = "user";
+        /// <summary>
+        /// The default user ID when creating a <see cref="GoogleAuthorizationCodeFlow"/> instance.
+        /// </summary>
+        private const string DEFAULT_USER_ID = "user";
 
-    /// <summary>
-    /// The minimum backoff delay in milliseconds.
-    /// </summary>
-    private const int MINIMUM_BACKOFF_DELAY = 30000;
+        /// <summary>
+        /// The Google Ads API server URL.
+        /// </summary>
+        private const string GOOGLE_ADS_API_SERVER_URL = "https://googleads.googleapis.com";
 
-    /// <summary>
-    /// The maximum backoff delay in milliseconds.
-    /// </summary>
-    private const int MAXIMUM_BACKOFF_DELAY = 60000;
+        /// <summary>
+        /// OAuth scope for Google Ads API.
+        /// </summary>
+        private const string DEFAULT_OAUTH_SCOPE = "https://www.googleapis.com/auth/adwords";
 
-    /// <summary>
-    /// The backoff delay multiplier.
-    /// </summary>
-    private const double BACKOFF_DELAY_MULTIPLIER = 1.2;
+        /// <summary>
+        /// The developer token keyname in request metadata.
+        /// </summary>
+        public const string DEVELOPER_TOKEN_KEYNAME = "developer-token";
 
-    /// <summary>
-    /// The Google Ads API server URL.
-    /// </summary>
-    private const string GOOGLE_ADS_API_SERVER_URL = "https://googleads.googleapis.com";
+        /// <summary>
+        /// The configuration section name in App.config file.
+        /// </summary>
+        /// <remarks>This is kept as such to provide backwards compatibility with the SOAP client
+        /// libraries.</remarks>
+        private const string CONFIG_SECTION_NAME = "GoogleAdsApi";
 
-    /// <summary>
-    /// OAuth scope for Google Ads API.
-    /// </summary>
-    private const string DEFAULT_OAUTH_SCOPE = "https://www.googleapis.com/auth/adwords";
+        /// <summary>
+        /// OAuth2 client ID.
+        /// </summary>
+        private ConfigSetting<string> oAuth2ClientId =
+            new ConfigSetting<string>("OAuth2ClientId", "");
 
-    /// <summary>
-    /// The configuration section name in App.config file.
-    /// </summary>
-    /// <remarks>This is kept as such to provide backwards compatibility with the SOAP client
-    /// libraries.</remarks>
-    private const string CONFIG_SECTION_NAME = "GoogleAdsApi";
+        /// <summary>
+        /// OAuth2 server URL.
+        /// </summary>
+        private ConfigSetting<string> oAuth2ServerUrl =
+            new ConfigSetting<string>("OAuth2ServerUrl", DEFAULT_OAUTH2_SERVER);
 
-    /// <summary>
-    /// OAuth2 client ID.
-    /// </summary>
-    private ConfigSetting<string> oAuth2ClientId = new ConfigSetting<string>("OAuth2ClientId", "");
+        /// <summary>
+        /// OAuth2 client secret.
+        /// </summary>
+        private ConfigSetting<string> oAuth2ClientSecret = new ConfigSetting<string>(
+            "OAuth2ClientSecret", "");
 
-    /// <summary>
-    /// OAuth2 server URL.
-    /// </summary>
-    private ConfigSetting<string> oAuth2ServerUrl = new ConfigSetting<string>("OAuth2ServerUrl",
-        DEFAULT_OAUTH2_SERVER);
+        /// <summary>
+        /// OAuth2 access token.
+        /// </summary>
+        private ConfigSetting<string> oAuth2AccessToken = new ConfigSetting<string>(
+            "OAuth2AccessToken", "");
 
-    /// <summary>
-    /// OAuth2 client secret.
-    /// </summary>
-    private ConfigSetting<string> oAuth2ClientSecret = new ConfigSetting<string>(
-        "OAuth2ClientSecret", "");
+        /// <summary>
+        /// OAuth2 refresh token.
+        /// </summary>
+        private ConfigSetting<string> oAuth2RefreshToken = new ConfigSetting<string>(
+            "OAuth2RefreshToken", "");
 
-    /// <summary>
-    /// OAuth2 access token.
-    /// </summary>
-    private ConfigSetting<string> oAuth2AccessToken = new ConfigSetting<string>(
-        "OAuth2AccessToken", "");
+        /// <summary>
+        /// OAuth2 prn email.
+        /// </summary>
+        private ConfigSetting<string> oAuth2PrnEmail = new ConfigSetting<string>(
+            "OAuth2PrnEmail", "");
 
-    /// <summary>
-    /// OAuth2 refresh token.
-    /// </summary>
-    private ConfigSetting<string> oAuth2RefreshToken = new ConfigSetting<string>(
-        "OAuth2RefreshToken", "");
+        /// <summary>
+        /// OAuth2 service account email loaded from secrets JSON file.
+        /// </summary>
+        private ConfigSetting<string> oAuth2ServiceAccountEmail = new ConfigSetting<string>(
+            "client_email", null);
 
-    /// <summary>
-    /// OAuth2 prn email.
-    /// </summary>
-    private ConfigSetting<string> oAuth2PrnEmail = new ConfigSetting<string>("OAuth2PrnEmail", "");
+        /// <summary>
+        /// OAuth2 private key loaded from secrets JSON file.
+        /// </summary>
+        private ConfigSetting<string> oAuth2PrivateKey = new ConfigSetting<string>(
+            "private_key", "");
 
-    /// <summary>
-    /// OAuth2 service account email loaded from secrets JSON file.
-    /// </summary>
-    private ConfigSetting<string> oAuth2ServiceAccountEmail = new ConfigSetting<string>(
-        "client_email", null);
+        /// <summary>
+        /// OAuth2 secrets JSON file path.
+        /// </summary>
+        private ConfigSetting<string> oAuth2SecretsJsonPath = new ConfigSetting<string>(
+            "OAuth2SecretsJsonPath", "");
 
-    /// <summary>
-    /// OAuth2 private key loaded from secrets JSON file.
-    /// </summary>
-    private ConfigSetting<string> oAuth2PrivateKey = new ConfigSetting<string>("private_key", "");
+        /// <summary>
+        /// OAuth2 scope.
+        /// </summary>
+        private ConfigSetting<string> oAuth2Scope = new ConfigSetting<string>("OAuth2Scope",
+            DEFAULT_OAUTH_SCOPE);
 
-    /// <summary>
-    /// OAuth2 secrets JSON file path.
-    /// </summary>
-    private ConfigSetting<string> oAuth2SecretsJsonPath = new ConfigSetting<string>(
-        "OAuth2SecretsJsonPath", "");
+        /// <summary>
+        /// OAuth2 mode.
+        /// </summary>
+        private ConfigSetting<OAuth2Flow> oAuth2Mode = new ConfigSetting<OAuth2Flow>("OAuth2Mode",
+            OAuth2Flow.APPLICATION);
 
-    /// <summary>
-    /// OAuth2 scope.
-    /// </summary>
-    private ConfigSetting<string> oAuth2Scope = new ConfigSetting<string>("OAuth2Scope",
-        DEFAULT_OAUTH_SCOPE);
+        /// <summary>
+        /// Web proxy to be used with the services.
+        /// </summary>
+        private ConfigSetting<WebProxy> proxy = new ConfigSetting<WebProxy>("Proxy", null);
 
-    /// <summary>
-    /// OAuth2 mode.
-    /// </summary>
-    private ConfigSetting<OAuth2Flow> oAuth2Mode = new ConfigSetting<OAuth2Flow>("OAuth2Mode",
-        OAuth2Flow.APPLICATION);
+        /// <summary>
+        /// The timeout for individual API calls.
+        /// </summary>
+        private readonly ConfigSetting<int> timeout = new ConfigSetting<int>(
+            "Timeout", DEFAULT_TIMEOUT);
 
-    /// <summary>
-    /// Web proxy to be used with the services.
-    /// </summary>
-    private ConfigSetting<WebProxy> proxy = new ConfigSetting<WebProxy>("Proxy", null);
+        /// <summary>
+        /// The Google Ads API server URL.
+        /// </summary>
+        /// <remarks>This setting is used only for testing purposes.</remarks>
+        private readonly ConfigSetting<string> serverUrl = new ConfigSetting<string>(
+            "GoogleAds.Server", GOOGLE_ADS_API_SERVER_URL);
 
-    /// <summary>
-    /// The timeout for individual API calls.
-    /// </summary>
-    private readonly ConfigSetting<int> timeout = new ConfigSetting<int>(
-        "Timeout", DEFAULT_TIMEOUT);
+        /// <summary>
+        /// The developer token.
+        /// </summary>
+        private readonly ConfigSetting<string> developerToken = new ConfigSetting<string>(
+            "DeveloperToken", "");
 
-    /// <summary>
-    /// The Google Ads API server URL.
-    /// </summary>
-    /// <remarks>This setting is used only for testing purposes.</remarks>
-    private readonly ConfigSetting<string> serverUrl = new ConfigSetting<string>(
-        "GoogleAds.Server", GOOGLE_ADS_API_SERVER_URL);
-
-    /// <summary>
-    /// The developer token.
-    /// </summary>
-    private readonly ConfigSetting<string> developerToken = new ConfigSetting<string>(
-        "DeveloperToken", "");
-
-    /// <summary>
-    /// The backoff settings for retryable errors.
-    /// </summary>
-    private static readonly BackoffSettings backoffSettings = new BackoffSettings(
-        delay: TimeSpan.FromMilliseconds(MINIMUM_BACKOFF_DELAY),
-        maxDelay: TimeSpan.FromMilliseconds(MAXIMUM_BACKOFF_DELAY),
-        delayMultiplier: BACKOFF_DELAY_MULTIPLIER
-    );
-
-    /// <summary>
-    /// Default set of exceptions to be retried.
-    /// </summary>
-    private static readonly Predicate<RpcException> retryFilter =
-        RetrySettings.FilterForStatusCodes(StatusCode.DeadlineExceeded, StatusCode.Unavailable);
-
-    /// <summary>
-    /// Gets the call settings for individual API calls.
-    /// </summary>
-    public CallSettings CallSettings {
-      get => CallSettings.FromCallTiming(
-        CallTiming.FromRetry(new RetrySettings(
-            retryBackoff: backoffSettings,
-            timeoutBackoff: backoffSettings,
-            totalExpiration: Expiration.FromTimeout(TimeSpan.FromMilliseconds(this.Timeout)),
-            retryFilter: retryFilter
-        ))).WithHeader("developer-token", DeveloperToken);
-    }
-
-    /// <summary>
-    /// Gets or sets the timeout for individual API calls.
-    /// </summary>
-    public int Timeout {
-      get => timeout.Value;
-      set => SetPropertyAndNotify(timeout, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the web proxy to be used with the services.
-    /// </summary>
-    public WebProxy Proxy {
-      get => proxy.Value;
-      set => SetPropertyAndNotify(proxy, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the Google Ads API server URL.
-    /// </summary>
-    /// <remarks>This setting is used only for testing purposes.</remarks>
-    public string ServerUrl {
-      get => serverUrl.Value;
-      set => SetPropertyAndNotify(serverUrl, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the developer token.
-    /// </summary>
-    public string DeveloperToken {
-      get => developerToken.Value;
-      set => SetPropertyAndNotify(developerToken, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the OAuth2 server URL.
-    /// </summary>
-    /// <remarks>This property's setter is primarily used for testing purposes.
-    /// </remarks>
-    public string OAuth2ServerUrl {
-      get => oAuth2ServerUrl.Value;
-      set => SetPropertyAndNotify(oAuth2ServerUrl, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the OAuth2 client ID.
-    /// </summary>
-    public string OAuth2ClientId {
-      get => oAuth2ClientId.Value;
-      set => SetPropertyAndNotify(oAuth2ClientId, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the OAuth2 client secret.
-    /// </summary>
-    public string OAuth2ClientSecret {
-      get => oAuth2ClientSecret.Value;
-      set => SetPropertyAndNotify(oAuth2ClientSecret, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the OAuth2 access token.
-    /// </summary>
-    public string OAuth2AccessToken {
-      get => oAuth2AccessToken.Value;
-      set => SetPropertyAndNotify(oAuth2AccessToken, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the OAuth2 refresh token.
-    /// </summary>
-    /// <remarks>This setting is applicable only when using OAuth2 web / application
-    /// flow in offline mode.</remarks>
-    public string OAuth2RefreshToken {
-      get => oAuth2RefreshToken.Value;
-      set => SetPropertyAndNotify(oAuth2RefreshToken, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the OAuth2 scope.
-    /// </summary>
-    public string OAuth2Scope {
-      get => oAuth2Scope.Value;
-      set => SetPropertyAndNotify(oAuth2Scope, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the OAuth2 mode.
-    /// </summary>
-    public OAuth2Flow OAuth2Mode {
-      get => oAuth2Mode.Value;
-      set => SetPropertyAndNotify(oAuth2Mode, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the OAuth2 prn email.
-    /// </summary>
-    /// <remarks>This setting is applicable only when using OAuth2 service accounts.
-    /// </remarks>
-    public string OAuth2PrnEmail {
-      get => oAuth2PrnEmail.Value;
-      set => SetPropertyAndNotify(oAuth2PrnEmail, value);
-    }
-
-    /// <summary>
-    /// Gets the OAuth2 service account email.
-    /// </summary>
-    /// <remarks>
-    /// This setting is applicable only when using OAuth2 service accounts.
-    /// This setting is read directly from the file referred to in
-    /// <see cref="OAuth2SecretsJsonPath"/> setting.
-    /// </remarks>
-    public string OAuth2ServiceAccountEmail {
-      get => oAuth2ServiceAccountEmail.Value;
-      private set => SetPropertyAndNotify(oAuth2ServiceAccountEmail, value);
-    }
-
-    /// <summary>
-    /// Gets the OAuth2 private key for service account flow.
-    /// </summary>
-    /// <remarks>
-    /// This setting is applicable only when using OAuth2 service accounts.
-    /// This setting is read directly from the file referred to in
-    /// <see cref="OAuth2SecretsJsonPath"/> setting.
-    /// </remarks>
-    public string OAuth2PrivateKey {
-      get => oAuth2PrivateKey.Value;
-      private set => SetPropertyAndNotify(oAuth2PrivateKey, value);
-    }
-
-    /// <summary>
-    /// Gets or sets the OAuth2 secrets JSON file path.
-    /// </summary>
-    /// <remarks>
-    /// This setting is applicable only when using OAuth2 service accounts.
-    /// </remarks>
-    public string OAuth2SecretsJsonPath {
-      get => oAuth2SecretsJsonPath.Value;
-      set {
-        SetPropertyAndNotify(oAuth2SecretsJsonPath, value);
-        LoadOAuth2SecretsFromFile();
-      }
-    }
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="GoogleAdsConfig" /> class.
-    /// </summary>
-    public GoogleAdsConfig() {
-      ReadSettings(LoadConfigSection(CONFIG_SECTION_NAME));
-    }
-
-    /// <summary>
-    /// Public constructor.
-    /// </summary>
-    /// <param name="configurationRoot">The configuration root to read from.</param>
-    public GoogleAdsConfig(IConfigurationRoot configurationRoot) : base(configurationRoot) {
-      ReadSettings(LoadConfigRoot(configurationRoot));
-    }
-
-    /// <summary>
-    /// Read all settings from App.config.
-    /// </summary>
-    /// <param name="settings">The parsed App.config settings.</param>
-    protected override void ReadSettings(Dictionary<string, string> settings) {
-      ReadSetting(settings, timeout);
-      ReadSetting(settings, serverUrl);
-      ReadSetting(settings, developerToken);
-
-      ReadSetting(settings, oAuth2ServerUrl);
-      ReadSetting(settings, oAuth2ClientId);
-      ReadSetting(settings, oAuth2ClientSecret);
-      ReadSetting(settings, oAuth2AccessToken);
-      ReadSetting(settings, oAuth2RefreshToken);
-      ReadSetting(settings, oAuth2Scope);
-
-      // Read and parse the OAuth2 JSON secrets file if applicable.
-      ReadSetting(settings, oAuth2SecretsJsonPath);
-
-      if (!string.IsNullOrEmpty(oAuth2SecretsJsonPath.Value)) {
-        LoadOAuth2SecretsFromFile();
-      }
-
-      ReadSetting(settings, oAuth2PrnEmail);
-      ReadProxySettings(settings);
-    }
-
-    /// <summary>
-    /// Reads the proxy settings.
-    /// </summary>
-    /// <param name="settings">The parsed app.config settings.</param>
-    private void ReadProxySettings(Dictionary<string, string> settings) {
-      ConfigSetting<string> proxyServer = new ConfigSetting<string>("ProxyServer", null);
-      ConfigSetting<string> proxyUser = new ConfigSetting<string>("ProxyUser", null);
-      ConfigSetting<string> proxyPassword = new ConfigSetting<string>("ProxyPassword", null);
-      ConfigSetting<string> proxyDomain = new ConfigSetting<string>("ProxyDomain", null);
-
-      ReadSetting(settings, proxyServer);
-
-      if (!string.IsNullOrEmpty(proxyServer.Value)) {
-        WebProxy proxy = new WebProxy() {
-          Address = new Uri(proxyServer.Value)
-        };
-        ReadSetting(settings, proxyUser);
-        ReadSetting(settings, proxyPassword);
-        ReadSetting(settings, proxyDomain);
-
-        if (!string.IsNullOrEmpty(proxyUser.Value)) {
-          proxy.Credentials = new NetworkCredential(proxyUser.Value,
-              proxyPassword.Value, proxyDomain.Value);
+        /// <summary>
+        /// Gets or sets the timeout for individual API calls.
+        /// </summary>
+        public int Timeout
+        {
+            get => timeout.Value;
+            set => SetPropertyAndNotify(timeout, value);
         }
-        this.proxy.Value = proxy;
-      } else {
-        // System.Net.WebRequest will find a proxy if needed.
-        this.proxy.Value = null;
-      }
-    }
 
-    /// <summary>
-    /// Gets or sets the credentials.
-    /// </summary>
-    /// <value>
-    /// The credentials.
-    /// </value>
-    public ICredential Credentials {
-      get {
-        return CreateCredentialsFromSettings();
-      }
-    }
-
-    /// <summary>
-    /// Creates a credentials object from settings.
-    /// </summary>
-    /// <returns>The configuration settings.</returns>
-    private ICredential CreateCredentialsFromSettings() {
-      ICredential retval = null;
-      switch (OAuth2Mode) {
-        case OAuth2Flow.APPLICATION:
-          retval = new UserCredential(
-            new GoogleAuthorizationCodeFlow(
-              new GoogleAuthorizationCodeFlow.Initializer {
-                ClientSecrets = new ClientSecrets() {
-                  ClientId = OAuth2ClientId,
-                  ClientSecret = OAuth2ClientSecret,
-                },
-                Scopes = new string[] { OAuth2Scope },
-                HttpClientFactory = new AdsHttpClientFactory(this)
-              }),
-            DEFAULT_USER_ID,
-            new TokenResponse() {
-              RefreshToken = OAuth2RefreshToken,
-            });
-          break;
-
-        case OAuth2Flow.SERVICE_ACCOUNT:
-          retval = new ServiceAccountCredential(
-            new ServiceAccountCredential.Initializer(DEFAULT_USER_ID) {
-              User = OAuth2PrnEmail,
-              Scopes = new string[] { OAuth2Scope },
-              HttpClientFactory = new AdsHttpClientFactory(this)
-            }.FromPrivateKey(OAuth2PrivateKey));
-          break;
-
-        default:
-          throw new ApplicationException("Unrecognized json file format.");
-      }
-      return retval;
-    }
-
-    /// <summary>
-    /// Loads the OAuth2 private key and service account email settings from the
-    /// secrets JSON file.
-    /// </summary>
-    private void LoadOAuth2SecretsFromFile() {
-      try {
-        using (StreamReader reader = new StreamReader(OAuth2SecretsJsonPath)) {
-          string contents = reader.ReadToEnd();
-          Dictionary<string, string> config =
-              JsonConvert.DeserializeObject<Dictionary<string, string>>(contents);
-
-          ReadSetting(config, oAuth2ServiceAccountEmail);
-          if (string.IsNullOrEmpty(this.OAuth2ServiceAccountEmail)) {
-            throw new ApplicationException(ErrorMessages.ClientEmailIsMissingInJsonFile);
-          }
-
-          ReadSetting(config, oAuth2PrivateKey);
-          if (string.IsNullOrEmpty(this.OAuth2PrivateKey)) {
-            throw new ApplicationException(ErrorMessages.PrivateKeyIsMissingInJsonFile);
-          }
+        /// <summary>
+        /// Gets or sets the web proxy to be used with the services.
+        /// </summary>
+        public WebProxy Proxy
+        {
+            get => proxy.Value;
+            set => SetPropertyAndNotify(proxy, value);
         }
-      } catch (Exception e) {
-        throw new ArgumentException(ErrorMessages.FailedToLoadJsonSecretsFile, e);
-      }
+
+        /// <summary>
+        /// Gets or sets the Google Ads API server URL.
+        /// </summary>
+        /// <remarks>This setting is used only for testing purposes.</remarks>
+        public string ServerUrl
+        {
+            get => serverUrl.Value;
+            set => SetPropertyAndNotify(serverUrl, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the developer token.
+        /// </summary>
+        public string DeveloperToken
+        {
+            get => developerToken.Value;
+            set => SetPropertyAndNotify(developerToken, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 server URL.
+        /// </summary>
+        /// <remarks>This property's setter is primarily used for testing purposes.
+        /// </remarks>
+        public string OAuth2ServerUrl
+        {
+            get => oAuth2ServerUrl.Value;
+            set => SetPropertyAndNotify(oAuth2ServerUrl, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 client ID.
+        /// </summary>
+        public string OAuth2ClientId
+        {
+            get => oAuth2ClientId.Value;
+            set => SetPropertyAndNotify(oAuth2ClientId, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 client secret.
+        /// </summary>
+        public string OAuth2ClientSecret
+        {
+            get => oAuth2ClientSecret.Value;
+            set => SetPropertyAndNotify(oAuth2ClientSecret, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 access token.
+        /// </summary>
+        public string OAuth2AccessToken
+        {
+            get => oAuth2AccessToken.Value;
+            set => SetPropertyAndNotify(oAuth2AccessToken, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 refresh token.
+        /// </summary>
+        /// <remarks>This setting is applicable only when using OAuth2 web / application
+        /// flow in offline mode.</remarks>
+        public string OAuth2RefreshToken
+        {
+            get => oAuth2RefreshToken.Value;
+            set => SetPropertyAndNotify(oAuth2RefreshToken, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 scope.
+        /// </summary>
+        public string OAuth2Scope
+        {
+            get => oAuth2Scope.Value;
+            set => SetPropertyAndNotify(oAuth2Scope, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 mode.
+        /// </summary>
+        public OAuth2Flow OAuth2Mode
+        {
+            get => oAuth2Mode.Value;
+            set => SetPropertyAndNotify(oAuth2Mode, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 prn email.
+        /// </summary>
+        /// <remarks>This setting is applicable only when using OAuth2 service accounts.
+        /// </remarks>
+        public string OAuth2PrnEmail
+        {
+            get => oAuth2PrnEmail.Value;
+            set => SetPropertyAndNotify(oAuth2PrnEmail, value);
+        }
+
+        /// <summary>
+        /// Gets the OAuth2 service account email.
+        /// </summary>
+        /// <remarks>
+        /// This setting is applicable only when using OAuth2 service accounts.
+        /// This setting is read directly from the file referred to in
+        /// <see cref="OAuth2SecretsJsonPath"/> setting.
+        /// </remarks>
+        public string OAuth2ServiceAccountEmail
+        {
+            get => oAuth2ServiceAccountEmail.Value;
+            private set => SetPropertyAndNotify(oAuth2ServiceAccountEmail, value);
+        }
+
+        /// <summary>
+        /// Gets the OAuth2 private key for service account flow.
+        /// </summary>
+        /// <remarks>
+        /// This setting is applicable only when using OAuth2 service accounts.
+        /// This setting is read directly from the file referred to in
+        /// <see cref="OAuth2SecretsJsonPath"/> setting.
+        /// </remarks>
+        public string OAuth2PrivateKey
+        {
+            get => oAuth2PrivateKey.Value;
+            private set => SetPropertyAndNotify(oAuth2PrivateKey, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 secrets JSON file path.
+        /// </summary>
+        /// <remarks>
+        /// This setting is applicable only when using OAuth2 service accounts.
+        /// </remarks>
+        public string OAuth2SecretsJsonPath
+        {
+            get => oAuth2SecretsJsonPath.Value;
+            set
+            {
+                SetPropertyAndNotify(oAuth2SecretsJsonPath, value);
+                LoadOAuth2SecretsFromFile();
+            }
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GoogleAdsConfig" /> class.
+        /// </summary>
+        public GoogleAdsConfig()
+        {
+            ReadSettings(LoadConfigSection(CONFIG_SECTION_NAME));
+        }
+
+        /// <summary>
+        /// Public constructor.
+        /// </summary>
+        /// <param name="configurationRoot">The configuration root to read from.</param>
+        public GoogleAdsConfig(IConfigurationRoot configurationRoot) : base(configurationRoot)
+        {
+            ReadSettings(LoadConfigRoot(configurationRoot));
+        }
+
+        /// <summary>
+        /// Read all settings from App.config.
+        /// </summary>
+        /// <param name="settings">The parsed App.config settings.</param>
+        protected override void ReadSettings(Dictionary<string, string> settings)
+        {
+            ReadSetting(settings, timeout);
+            ReadSetting(settings, serverUrl);
+            ReadSetting(settings, developerToken);
+
+            ReadSetting(settings, oAuth2ServerUrl);
+            ReadSetting(settings, oAuth2ClientId);
+            ReadSetting(settings, oAuth2ClientSecret);
+            ReadSetting(settings, oAuth2AccessToken);
+            ReadSetting(settings, oAuth2RefreshToken);
+            ReadSetting(settings, oAuth2Scope);
+
+            // Read and parse the OAuth2 JSON secrets file if applicable.
+            ReadSetting(settings, oAuth2SecretsJsonPath);
+
+            if (!string.IsNullOrEmpty(oAuth2SecretsJsonPath.Value))
+            {
+                LoadOAuth2SecretsFromFile();
+            }
+
+            ReadSetting(settings, oAuth2PrnEmail);
+            ReadProxySettings(settings);
+        }
+
+        /// <summary>
+        /// Reads the proxy settings.
+        /// </summary>
+        /// <param name="settings">The parsed app.config settings.</param>
+        private void ReadProxySettings(Dictionary<string, string> settings)
+        {
+            ConfigSetting<string> proxyServer = new ConfigSetting<string>("ProxyServer", null);
+            ConfigSetting<string> proxyUser = new ConfigSetting<string>("ProxyUser", null);
+            ConfigSetting<string> proxyPassword = new ConfigSetting<string>("ProxyPassword", null);
+            ConfigSetting<string> proxyDomain = new ConfigSetting<string>("ProxyDomain", null);
+
+            ReadSetting(settings, proxyServer);
+
+            if (!string.IsNullOrEmpty(proxyServer.Value))
+            {
+                WebProxy proxy = new WebProxy()
+                {
+                    Address = new Uri(proxyServer.Value)
+                };
+                ReadSetting(settings, proxyUser);
+                ReadSetting(settings, proxyPassword);
+                ReadSetting(settings, proxyDomain);
+
+                if (!string.IsNullOrEmpty(proxyUser.Value))
+                {
+                    proxy.Credentials = new NetworkCredential(proxyUser.Value,
+                        proxyPassword.Value, proxyDomain.Value);
+                }
+                this.proxy.Value = proxy;
+            }
+            else
+            {
+                // System.Net.WebRequest will find a proxy if needed.
+                this.proxy.Value = null;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the credentials.
+        /// </summary>
+        /// <value>
+        /// The credentials.
+        /// </value>
+        public ICredential Credentials
+        {
+            get
+            {
+                return CreateCredentialsFromSettings();
+            }
+        }
+
+        /// <summary>
+        /// Creates a credentials object from settings.
+        /// </summary>
+        /// <returns>The configuration settings.</returns>
+        private ICredential CreateCredentialsFromSettings()
+        {
+            ICredential retval = null;
+            switch (OAuth2Mode)
+            {
+                case OAuth2Flow.APPLICATION:
+                    retval = new UserCredential(
+                      new GoogleAuthorizationCodeFlow(
+                        new GoogleAuthorizationCodeFlow.Initializer
+                        {
+                            ClientSecrets = new ClientSecrets()
+                            {
+                                ClientId = OAuth2ClientId,
+                                ClientSecret = OAuth2ClientSecret,
+                            },
+                            Scopes = new string[] { OAuth2Scope },
+                            HttpClientFactory = new AdsHttpClientFactory(this)
+                        }),
+                      DEFAULT_USER_ID,
+                      new TokenResponse()
+                      {
+                          RefreshToken = OAuth2RefreshToken,
+                      });
+                    break;
+
+                case OAuth2Flow.SERVICE_ACCOUNT:
+                    retval = new ServiceAccountCredential(
+                      new ServiceAccountCredential.Initializer(DEFAULT_USER_ID)
+                      {
+                          User = OAuth2PrnEmail,
+                          Scopes = new string[] { OAuth2Scope },
+                          HttpClientFactory = new AdsHttpClientFactory(this)
+                      }.FromPrivateKey(OAuth2PrivateKey));
+                    break;
+
+                default:
+                    throw new ApplicationException("Unrecognized json file format.");
+            }
+            return retval;
+        }
+
+        /// <summary>
+        /// Loads the OAuth2 private key and service account email settings from the
+        /// secrets JSON file.
+        /// </summary>
+        private void LoadOAuth2SecretsFromFile()
+        {
+            try
+            {
+                using (StreamReader reader = new StreamReader(OAuth2SecretsJsonPath))
+                {
+                    string contents = reader.ReadToEnd();
+                    Dictionary<string, string> config =
+                        JsonConvert.DeserializeObject<Dictionary<string, string>>(contents);
+
+                    ReadSetting(config, oAuth2ServiceAccountEmail);
+                    if (string.IsNullOrEmpty(this.OAuth2ServiceAccountEmail))
+                    {
+                        throw new ApplicationException(ErrorMessages.ClientEmailIsMissingInJsonFile);
+                    }
+
+                    ReadSetting(config, oAuth2PrivateKey);
+                    if (string.IsNullOrEmpty(this.OAuth2PrivateKey))
+                    {
+                        throw new ApplicationException(ErrorMessages.PrivateKeyIsMissingInJsonFile);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw new ArgumentException(ErrorMessages.FailedToLoadJsonSecretsFile, e);
+            }
+        }
     }
-  }
 }

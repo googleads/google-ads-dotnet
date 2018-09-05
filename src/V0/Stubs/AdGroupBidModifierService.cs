@@ -74,7 +74,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
   }
   #region Messages
   /// <summary>
-  /// Request message for [AdGroupCriterionService.GetAdGroupCriterion][google.ads.googleads.v0.services.AdGroupCriterionService.GetAdGroupCriterion].
+  /// Request message for [AdGroupBidModifierService.GetAdGroupBidModifier][google.ads.googleads.v0.services.AdGroupBidModifierService.GetAdGroupBidModifier].
   /// </summary>
   public sealed partial class GetAdGroupBidModifierRequest : pb::IMessage<GetAdGroupBidModifierRequest> {
     private static readonly pb::MessageParser<GetAdGroupBidModifierRequest> _parser = new pb::MessageParser<GetAdGroupBidModifierRequest>(() => new GetAdGroupBidModifierRequest());
@@ -209,7 +209,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
   }
 
   /// <summary>
-  /// Request message for [AdGroupCriterionService.MutateAdGroupCriteria][google.ads.googleads.v0.services.AdGroupCriterionService.MutateAdGroupCriteria].
+  /// Request message for [AdGroupBidModifierService.MutateAdGroupBidModifiers][google.ads.googleads.v0.services.AdGroupBidModifierService.MutateAdGroupBidModifiers].
   /// </summary>
   public sealed partial class MutateAdGroupBidModifiersRequest : pb::IMessage<MutateAdGroupBidModifiersRequest> {
     private static readonly pb::MessageParser<MutateAdGroupBidModifiersRequest> _parser = new pb::MessageParser<MutateAdGroupBidModifiersRequest>(() => new MutateAdGroupBidModifiersRequest());
@@ -394,7 +394,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AdGroupBidModifierOperation(AdGroupBidModifierOperation other) : this() {
-      UpdateMask = other.updateMask_ != null ? other.UpdateMask.Clone() : null;
+      updateMask_ = other.updateMask_ != null ? other.updateMask_.Clone() : null;
       switch (other.OperationCase) {
         case OperationOneofCase.Create:
           Create = other.Create.Clone();

@@ -25,15 +25,15 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cihnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9zbG90LnByb3RvEh1n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyKjAQoIU2xvdEVudW0ilgEK",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyKuAQoIU2xvdEVudW0ioQEK",
             "BFNsb3QSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESDwoLU0VBUkNI",
             "X1NJREUQAhIOCgpTRUFSQ0hfVE9QEAMSEAoMU0VBUkNIX09USEVSEAQSCwoH",
             "Q09OVEVOVBAFEhYKElNFQVJDSF9QQVJUTkVSX1RPUBAGEhgKFFNFQVJDSF9Q",
-            "QVJUTkVSX09USEVSEAdCugEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lbnVtc0IJU2xvdFByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6IC",
-            "A0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjBcRW51bXNiBnByb3RvMw=="));
+            "QVJUTkVSX09USEVSEAcSCQoFTUlYRUQQCEK6AQohY29tLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmVudW1zQglTbG90UHJvdG9QAVpCZ29vZ2xlLmdvbGFu",
+            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
+            "dW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51",
+            "bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -186,6 +186,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Search partners: Other.
         /// </summary>
         [pbr::OriginalName("SEARCH_PARTNER_OTHER")] SearchPartnerOther = 7,
+        /// <summary>
+        /// Cross-network.
+        /// </summary>
+        [pbr::OriginalName("MIXED")] Mixed = 8,
       }
 
     }

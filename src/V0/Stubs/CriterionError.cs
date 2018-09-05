@@ -512,7 +512,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         [pbr::OriginalName("CANNOT_EXCLUDE_CRITERION")] CannotExcludeCriterion = 68,
         /// <summary>
         /// The criterion is not allowed to be removed. For example, we cannot remove
-        /// any of the platform criterion.
+        /// any of the device criterion.
         /// </summary>
         [pbr::OriginalName("CANNOT_REMOVE_CRITERION")] CannotRemoveCriterion = 69,
         /// <summary>

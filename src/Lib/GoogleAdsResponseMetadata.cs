@@ -12,65 +12,53 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Api.Gax.Grpc;
 using Grpc.Core;
 
-namespace Google.Ads.GoogleAds.Lib {
-
-  /// <summary>
-  /// Metadata contained in a Google Ads API call response.
-  /// </summary>
-  public class GoogleAdsResponseMetadata {
-
+namespace Google.Ads.GoogleAds.Lib
+{
     /// <summary>
-    /// The gRPC metadata key name for request ID.
+    /// Metadata contained in a Google Ads API call response.
     /// </summary>
-    private const string RequestIdKey = "request-id";
+    public class GoogleAdsResponseMetadata
+    {
+        /// <summary>
+        /// The gRPC metadata key name for request ID.
+        /// </summary>
+        private const string RequestIdKey = "request-id";
 
-    /// <summary>
-    /// Gets the request ID.
-    /// </summary>
-    public string RequestId {
-      get;
-      private set;
-    }
-
-    /// <summary>
-    /// Pass this <see cref="CallSettings" /> property into an API call to populate the metadata.
-    /// </summary>
-    public CallSettings CallSettings {
-      get;
-    }
-
-    /// <summary>
-    /// Creates a new instance containing no metadata. Pass the <see cref="CallSettings" />
-    /// property into an API call to populate the metadata.
-    /// </summary>
-    public GoogleAdsResponseMetadata() {
-      CallSettings = CallSettings.FromResponseMetadataHandler(PopulateFromMetadata);
-    }
-
-    /// <summary>
-    /// Callback to populate this object from metadata.
-    /// </summary>
-    /// <param name="metadata">The metadata.</param>
-    private void PopulateFromMetadata(Metadata metadata) {
-      // Clear out all properties to start with, to end up with
-      // a consistent set.
-      RequestId = null;
-
-      if (metadata == null) {
-        return;
-      }
-
-      for (int i = 0; i < metadata.Count; i++) {
-        var entry = metadata[i];
-        switch (entry.Key) {
-          case RequestIdKey:
-            RequestId = entry.Value;
-            break;
+        /// <summary>
+        /// Gets the request ID.
+        /// </summary>
+        public string RequestId
+        {
+            get;
+            private set;
         }
-      }
+
+        /// <summary>
+        /// Creates a new instance with metadata.
+        /// </summary>
+        public GoogleAdsResponseMetadata(Metadata metadata) : base()
+        {
+            // Clear out all properties to start with, to end up with
+            // a consistent set.
+            RequestId = null;
+
+            if (metadata == null)
+            {
+                return;
+            }
+
+            for (int i = 0; i < metadata.Count; i++)
+            {
+                var entry = metadata[i];
+                switch (entry.Key)
+                {
+                    case RequestIdKey:
+                        RequestId = entry.Value;
+                        break;
+                }
+            }
+        }
     }
-  }
 }
