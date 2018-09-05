@@ -30,81 +30,99 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "cm90bxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvYWRfbmV0d29y",
             "a190eXBlLnByb3RvGi9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9k",
             "YXlfb2Zfd2Vlay5wcm90bxoqZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51",
-            "bXMvZGV2aWNlLnByb3RvGihnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVt",
-            "cy9zbG90LnByb3RvGjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJj",
-            "ZXMvYWRfZ3JvdXAucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL3Jl",
-            "c291cmNlcy9hZF9ncm91cF9hZC5wcm90bxo9Z29vZ2xlL2Fkcy9nb29nbGVh",
-            "ZHMvdjAvcmVzb3VyY2VzL2FkX2dyb3VwX2JpZF9tb2RpZmllci5wcm90bxo6",
-            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2FkX2dyb3VwX2Ny",
-            "aXRlcmlvbi5wcm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3Vy",
-            "Y2VzL2JpZGRpbmdfc3RyYXRlZ3kucHJvdG8aMGdvb2dsZS9hZHMvZ29vZ2xl",
-            "YWRzL3YwL3Jlc291cmNlcy9jYW1wYWlnbi5wcm90bxo3Z29vZ2xlL2Fkcy9n",
-            "b29nbGVhZHMvdjAvcmVzb3VyY2VzL2NhbXBhaWduX2J1ZGdldC5wcm90bxo6",
-            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2NhbXBhaWduX2Ny",
-            "aXRlcmlvbi5wcm90bxowZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3Vy",
-            "Y2VzL2N1c3RvbWVyLnByb3RvGjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9y",
-            "ZXNvdXJjZXMvZ2VvX3RhcmdldF9jb25zdGFudC5wcm90bxo0Z29vZ2xlL2Fk",
-            "cy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2tleXdvcmRfdmlldy5wcm90bxo2",
-            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL3JlY29tbWVuZGF0",
-            "aW9uLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGiBnb29n",
-            "bGUvcHJvdG9idWYvZmllbGRfbWFzay5wcm90bxoeZ29vZ2xlL3Byb3RvYnVm",
-            "L3dyYXBwZXJzLnByb3RvImMKFlNlYXJjaEdvb2dsZUFkc1JlcXVlc3QSEwoL",
-            "Y3VzdG9tZXJfaWQYASABKAkSDQoFcXVlcnkYAiABKAkSEgoKcGFnZV90b2tl",
-            "bhgDIAEoCRIRCglwYWdlX3NpemUYBCABKAUiwAEKF1NlYXJjaEdvb2dsZUFk",
-            "c1Jlc3BvbnNlEj8KB3Jlc3VsdHMYASADKAsyLi5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5zZXJ2aWNlcy5Hb29nbGVBZHNSb3cSFwoPbmV4dF9wYWdlX3Rv",
-            "a2VuGAIgASgJEhsKE3RvdGFsX3Jlc3VsdHNfY291bnQYAyABKAMSLgoKZmll",
-            "bGRfbWFzaxgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2si7AsK",
-            "DEdvb2dsZUFkc1JvdxI8CghhZF9ncm91cBgDIAEoCzIqLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLnJlc291cmNlcy5BZEdyb3VwEkEKC2FkX2dyb3VwX2Fk",
-            "GBAgASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkFk",
-            "R3JvdXBBZBJUChVhZF9ncm91cF9iaWRfbW9kaWZpZXIYGCABKAsyNS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQWRHcm91cEJpZE1vZGlm",
-            "aWVyEk8KEmFkX2dyb3VwX2NyaXRlcmlvbhgRIAEoCzIzLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLnJlc291cmNlcy5BZEdyb3VwQ3JpdGVyaW9uEkwKEGJp",
-            "ZGRpbmdfc3RyYXRlZ3kYEiABKAsyMi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5yZXNvdXJjZXMuQmlkZGluZ1N0cmF0ZWd5EkoKD2NhbXBhaWduX2J1ZGdl",
-            "dBgTIAEoCzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5D",
-            "YW1wYWlnbkJ1ZGdldBI9CghjYW1wYWlnbhgCIAEoCzIrLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLnJlc291cmNlcy5DYW1wYWlnbhJQChJjYW1wYWlnbl9j",
-            "cml0ZXJpb24YFCABKAsyNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNv",
-            "dXJjZXMuQ2FtcGFpZ25Dcml0ZXJpb24SPQoIY3VzdG9tZXIYASABKAsyKy5n",
+            "bXMvZGV2aWNlLnByb3RvGjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVt",
+            "cy9tb250aF9vZl95ZWFyLnByb3RvGihnb29nbGUvYWRzL2dvb2dsZWFkcy92",
+            "MC9lbnVtcy9zbG90LnByb3RvGjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9y",
+            "ZXNvdXJjZXMvYWRfZ3JvdXAucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRz",
+            "L3YwL3Jlc291cmNlcy9hZF9ncm91cF9hZC5wcm90bxo9Z29vZ2xlL2Fkcy9n",
+            "b29nbGVhZHMvdjAvcmVzb3VyY2VzL2FkX2dyb3VwX2JpZF9tb2RpZmllci5w",
+            "cm90bxo6Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2FkX2dy",
+            "b3VwX2NyaXRlcmlvbi5wcm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
+            "cmVzb3VyY2VzL2JpZGRpbmdfc3RyYXRlZ3kucHJvdG8aMGdvb2dsZS9hZHMv",
+            "Z29vZ2xlYWRzL3YwL3Jlc291cmNlcy9jYW1wYWlnbi5wcm90bxo9Z29vZ2xl",
+            "L2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2NhbXBhaWduX2JpZF9tb2Rp",
+            "Zmllci5wcm90bxo3Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2Vz",
+            "L2NhbXBhaWduX2J1ZGdldC5wcm90bxo6Z29vZ2xlL2Fkcy9nb29nbGVhZHMv",
+            "djAvcmVzb3VyY2VzL2NhbXBhaWduX2NyaXRlcmlvbi5wcm90bxo2Z29vZ2xl",
+            "L2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2NhbXBhaWduX2dyb3VwLnBy",
+            "b3RvGjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvY2FtcGFp",
+            "Z25fc2hhcmVkX3NldC5wcm90bxowZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
+            "cmVzb3VyY2VzL2N1c3RvbWVyLnByb3RvGjtnb29nbGUvYWRzL2dvb2dsZWFk",
+            "cy92MC9yZXNvdXJjZXMvZ2VvX3RhcmdldF9jb25zdGFudC5wcm90bxo0Z29v",
+            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2tleXdvcmRfdmlldy5w",
+            "cm90bxo2Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL3JlY29t",
+            "bWVuZGF0aW9uLnByb3RvGjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNv",
+            "dXJjZXMvc2hhcmVkX2NyaXRlcmlvbi5wcm90bxoyZ29vZ2xlL2Fkcy9nb29n",
+            "bGVhZHMvdjAvcmVzb3VyY2VzL3NoYXJlZF9zZXQucHJvdG8aHGdvb2dsZS9h",
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8aIGdvb2dsZS9wcm90b2J1Zi9maWVsZF9t",
+            "YXNrLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8iYwoW",
+            "U2VhcmNoR29vZ2xlQWRzUmVxdWVzdBITCgtjdXN0b21lcl9pZBgBIAEoCRIN",
+            "CgVxdWVyeRgCIAEoCRISCgpwYWdlX3Rva2VuGAMgASgJEhEKCXBhZ2Vfc2l6",
+            "ZRgEIAEoBSLAAQoXU2VhcmNoR29vZ2xlQWRzUmVzcG9uc2USPwoHcmVzdWx0",
+            "cxgBIAMoCzIuLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLkdv",
+            "b2dsZUFkc1JvdxIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkSGwoTdG90YWxf",
+            "cmVzdWx0c19jb3VudBgDIAEoAxIuCgpmaWVsZF9tYXNrGAUgASgLMhouZ29v",
+            "Z2xlLnByb3RvYnVmLkZpZWxkTWFzayLDDwoMR29vZ2xlQWRzUm93EjwKCGFk",
+            "X2dyb3VwGAMgASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3Vy",
+            "Y2VzLkFkR3JvdXASQQoLYWRfZ3JvdXBfYWQYECABKAsyLC5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQWRHcm91cEFkElQKFWFkX2dyb3Vw",
+            "X2JpZF9tb2RpZmllchgYIAEoCzI1Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LnJlc291cmNlcy5BZEdyb3VwQmlkTW9kaWZpZXISTwoSYWRfZ3JvdXBfY3Jp",
+            "dGVyaW9uGBEgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3Vy",
+            "Y2VzLkFkR3JvdXBDcml0ZXJpb24STAoQYmlkZGluZ19zdHJhdGVneRgSIAEo",
+            "CzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5CaWRkaW5n",
+            "U3RyYXRlZ3kSSgoPY2FtcGFpZ25fYnVkZ2V0GBMgASgLMjEuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkNhbXBhaWduQnVkZ2V0Ej0KCGNh",
+            "bXBhaWduGAIgASgLMisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3Vy",
+            "Y2VzLkNhbXBhaWduElUKFWNhbXBhaWduX2JpZF9tb2RpZmllchgaIAEoCzI2",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5DYW1wYWlnbkJp",
+            "ZE1vZGlmaWVyElAKEmNhbXBhaWduX2NyaXRlcmlvbhgUIAEoCzI0Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5DYW1wYWlnbkNyaXRlcmlv",
+            "bhJICg5jYW1wYWlnbl9ncm91cBgZIAEoCzIwLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLnJlc291cmNlcy5DYW1wYWlnbkdyb3VwElEKE2NhbXBhaWduX3No",
+            "YXJlZF9zZXQYHiABKAsyNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNv",
+            "dXJjZXMuQ2FtcGFpZ25TaGFyZWRTZXQSPQoIY3VzdG9tZXIYASABKAsyKy5n",
             "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQ3VzdG9tZXISUQoT",
             "Z2VvX3RhcmdldF9jb25zdGFudBgXIAEoCzI0Lmdvb2dsZS5hZHMuZ29vZ2xl",
             "YWRzLnYwLnJlc291cmNlcy5HZW9UYXJnZXRDb25zdGFudBJECgxrZXl3b3Jk",
             "X3ZpZXcYFSABKAsyLi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJj",
             "ZXMuS2V5d29yZFZpZXcSSQoOcmVjb21tZW5kYXRpb24YFiABKAsyMS5nb29n",
             "bGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuUmVjb21tZW5kYXRpb24S",
-            "OAoHbWV0cmljcxgEIAEoCzInLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNv",
-            "bW1vbi5NZXRyaWNzElcKD2FkX25ldHdvcmtfdHlwZRgFIAEoDjI+Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkFkTmV0d29ya1R5cGVFbnVtLkFk",
-            "TmV0d29ya1R5cGUSKgoEZGF0ZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRJLCgtkYXlfb2Zfd2VlaxgHIAEoDjI2Lmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLmVudW1zLkRheU9mV2Vla0VudW0uRGF5T2ZXZWVrEkAK",
-            "BmRldmljZRgIIAEoDjIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
-            "LkRldmljZUVudW0uRGV2aWNlEikKBGhvdXIYCSABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuSW50MzJWYWx1ZRIrCgVtb250aBgKIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRItCgdxdWFydGVyGAwgASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLlN0cmluZ1ZhbHVlEjoKBHNsb3QYDSABKA4yLC5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MC5lbnVtcy5TbG90RW51bS5TbG90EioKBHdlZWsYDiAB",
-            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKQoEeWVhchgPIAEo",
-            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlMs0BChBHb29nbGVBZHNT",
-            "ZXJ2aWNlErgBCgZTZWFyY2gSOC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5z",
-            "ZXJ2aWNlcy5TZWFyY2hHb29nbGVBZHNSZXF1ZXN0GjkuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjAuc2VydmljZXMuU2VhcmNoR29vZ2xlQWRzUmVzcG9uc2Ui",
-            "OYLT5JMCMyIuL3YwL2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn0vZ29vZ2xl",
-            "QWRzOnNlYXJjaDoBKkLVAQokY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LnNlcnZpY2VzQhVHb29nbGVBZHNTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
-            "L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjAuU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxTZXJ2",
-            "aWNlc2IGcHJvdG8z"));
+            "TAoQc2hhcmVkX2NyaXRlcmlvbhgdIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLnJlc291cmNlcy5TaGFyZWRDcml0ZXJpb24SQAoKc2hhcmVkX3Nl",
+            "dBgbIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5T",
+            "aGFyZWRTZXQSOAoHbWV0cmljcxgEIAEoCzInLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmNvbW1vbi5NZXRyaWNzElcKD2FkX25ldHdvcmtfdHlwZRgFIAEo",
+            "DjI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkFkTmV0d29ya1R5",
+            "cGVFbnVtLkFkTmV0d29ya1R5cGUSKgoEZGF0ZRgGIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRJLCgtkYXlfb2Zfd2VlaxgHIAEoDjI2Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkRheU9mV2Vla0VudW0uRGF5",
+            "T2ZXZWVrEkAKBmRldmljZRgIIAEoDjIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmVudW1zLkRldmljZUVudW0uRGV2aWNlEikKBGhvdXIYCSABKAsyGy5n",
+            "b29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRIrCgVtb250aBgKIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJRCg1tb250aF9vZl95ZWFyGBwg",
+            "ASgOMjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuTW9udGhPZlll",
+            "YXJFbnVtLk1vbnRoT2ZZZWFyEi0KB3F1YXJ0ZXIYDCABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUSOgoEc2xvdBgNIAEoDjIsLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlNsb3RFbnVtLlNsb3QSKgoEd2VlaxgO",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIpCgR5ZWFyGA8g",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUyzQEKEEdvb2dsZUFk",
+            "c1NlcnZpY2USuAEKBlNlYXJjaBI4Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LnNlcnZpY2VzLlNlYXJjaEdvb2dsZUFkc1JlcXVlc3QaOS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5TZWFyY2hHb29nbGVBZHNSZXNwb25z",
+            "ZSI5gtPkkwIzIi4vdjAvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfS9nb29n",
+            "bGVBZHM6c2VhcmNoOgEqQtUBCiRjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuc2VydmljZXNCFUdvb2dsZUFkc1NlcnZpY2VQcm90b1ABWkhnb29nbGUu",
+            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
+            "djAvc2VydmljZXM7c2VydmljZXOiAgNHQUGqAiBHb29nbGUuQWRzLkdvb2ds",
+            "ZUFkcy5WMC5TZXJ2aWNlc8oCIEdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFNl",
+            "cnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.MetricsReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdNetworkTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.SlotReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifierReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.BiddingStrategyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignBudgetReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CustomerReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstantReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.KeywordViewReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.RecommendationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.MetricsReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdNetworkTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.MonthOfYearReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.SlotReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifierReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.BiddingStrategyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignBidModifierReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignBudgetReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignGroupReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CampaignSharedSetReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.CustomerReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstantReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.KeywordViewReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.RecommendationReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.SharedCriterionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.SharedSetReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsRequest), global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsRequest.Parser, new[]{ "CustomerId", "Query", "PageToken", "PageSize" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsResponse), global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsResponse.Parser, new[]{ "Results", "NextPageToken", "TotalResultsCount", "FieldMask" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow), global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow.Parser, new[]{ "AdGroup", "AdGroupAd", "AdGroupBidModifier", "AdGroupCriterion", "BiddingStrategy", "CampaignBudget", "Campaign", "CampaignCriterion", "Customer", "GeoTargetConstant", "KeywordView", "Recommendation", "Metrics", "AdNetworkType", "Date", "DayOfWeek", "Device", "Hour", "Month", "Quarter", "Slot", "Week", "Year" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow), global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow.Parser, new[]{ "AdGroup", "AdGroupAd", "AdGroupBidModifier", "AdGroupCriterion", "BiddingStrategy", "CampaignBudget", "Campaign", "CampaignBidModifier", "CampaignCriterion", "CampaignGroup", "CampaignSharedSet", "Customer", "GeoTargetConstant", "KeywordView", "Recommendation", "SharedCriterion", "SharedSet", "Metrics", "AdNetworkType", "Date", "DayOfWeek", "Device", "Hour", "Month", "MonthOfYear", "Quarter", "Slot", "Week", "Year" }, null, null, null)
           }));
     }
     #endregion
@@ -375,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
       results_ = other.results_.Clone();
       nextPageToken_ = other.nextPageToken_;
       totalResultsCount_ = other.totalResultsCount_;
-      FieldMask = other.fieldMask_ != null ? other.FieldMask.Clone() : null;
+      fieldMask_ = other.fieldMask_ != null ? other.fieldMask_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -602,25 +620,31 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GoogleAdsRow(GoogleAdsRow other) : this() {
-      AdGroup = other.adGroup_ != null ? other.AdGroup.Clone() : null;
-      AdGroupAd = other.adGroupAd_ != null ? other.AdGroupAd.Clone() : null;
-      AdGroupBidModifier = other.adGroupBidModifier_ != null ? other.AdGroupBidModifier.Clone() : null;
-      AdGroupCriterion = other.adGroupCriterion_ != null ? other.AdGroupCriterion.Clone() : null;
-      BiddingStrategy = other.biddingStrategy_ != null ? other.BiddingStrategy.Clone() : null;
-      CampaignBudget = other.campaignBudget_ != null ? other.CampaignBudget.Clone() : null;
-      Campaign = other.campaign_ != null ? other.Campaign.Clone() : null;
-      CampaignCriterion = other.campaignCriterion_ != null ? other.CampaignCriterion.Clone() : null;
-      Customer = other.customer_ != null ? other.Customer.Clone() : null;
-      GeoTargetConstant = other.geoTargetConstant_ != null ? other.GeoTargetConstant.Clone() : null;
-      KeywordView = other.keywordView_ != null ? other.KeywordView.Clone() : null;
-      Recommendation = other.recommendation_ != null ? other.Recommendation.Clone() : null;
-      Metrics = other.metrics_ != null ? other.Metrics.Clone() : null;
+      adGroup_ = other.adGroup_ != null ? other.adGroup_.Clone() : null;
+      adGroupAd_ = other.adGroupAd_ != null ? other.adGroupAd_.Clone() : null;
+      adGroupBidModifier_ = other.adGroupBidModifier_ != null ? other.adGroupBidModifier_.Clone() : null;
+      adGroupCriterion_ = other.adGroupCriterion_ != null ? other.adGroupCriterion_.Clone() : null;
+      biddingStrategy_ = other.biddingStrategy_ != null ? other.biddingStrategy_.Clone() : null;
+      campaignBudget_ = other.campaignBudget_ != null ? other.campaignBudget_.Clone() : null;
+      campaign_ = other.campaign_ != null ? other.campaign_.Clone() : null;
+      campaignBidModifier_ = other.campaignBidModifier_ != null ? other.campaignBidModifier_.Clone() : null;
+      campaignCriterion_ = other.campaignCriterion_ != null ? other.campaignCriterion_.Clone() : null;
+      campaignGroup_ = other.campaignGroup_ != null ? other.campaignGroup_.Clone() : null;
+      campaignSharedSet_ = other.campaignSharedSet_ != null ? other.campaignSharedSet_.Clone() : null;
+      customer_ = other.customer_ != null ? other.customer_.Clone() : null;
+      geoTargetConstant_ = other.geoTargetConstant_ != null ? other.geoTargetConstant_.Clone() : null;
+      keywordView_ = other.keywordView_ != null ? other.keywordView_.Clone() : null;
+      recommendation_ = other.recommendation_ != null ? other.recommendation_.Clone() : null;
+      sharedCriterion_ = other.sharedCriterion_ != null ? other.sharedCriterion_.Clone() : null;
+      sharedSet_ = other.sharedSet_ != null ? other.sharedSet_.Clone() : null;
+      metrics_ = other.metrics_ != null ? other.metrics_.Clone() : null;
       adNetworkType_ = other.adNetworkType_;
       Date = other.Date;
       dayOfWeek_ = other.dayOfWeek_;
       device_ = other.device_;
       Hour = other.Hour;
       Month = other.Month;
+      monthOfYear_ = other.monthOfYear_;
       Quarter = other.Quarter;
       slot_ = other.slot_;
       Week = other.Week;
@@ -731,6 +755,20 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
     }
 
+    /// <summary>Field number for the "campaign_bid_modifier" field.</summary>
+    public const int CampaignBidModifierFieldNumber = 26;
+    private global::Google.Ads.GoogleAds.V0.Resources.CampaignBidModifier campaignBidModifier_;
+    /// <summary>
+    /// The campaign bid modifier referenced in the query.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.CampaignBidModifier CampaignBidModifier {
+      get { return campaignBidModifier_; }
+      set {
+        campaignBidModifier_ = value;
+      }
+    }
+
     /// <summary>Field number for the "campaign_criterion" field.</summary>
     public const int CampaignCriterionFieldNumber = 20;
     private global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterion campaignCriterion_;
@@ -742,6 +780,34 @@ namespace Google.Ads.GoogleAds.V0.Services {
       get { return campaignCriterion_; }
       set {
         campaignCriterion_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "campaign_group" field.</summary>
+    public const int CampaignGroupFieldNumber = 25;
+    private global::Google.Ads.GoogleAds.V0.Resources.CampaignGroup campaignGroup_;
+    /// <summary>
+    /// Campaign Group referenced in AWQL query.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.CampaignGroup CampaignGroup {
+      get { return campaignGroup_; }
+      set {
+        campaignGroup_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "campaign_shared_set" field.</summary>
+    public const int CampaignSharedSetFieldNumber = 30;
+    private global::Google.Ads.GoogleAds.V0.Resources.CampaignSharedSet campaignSharedSet_;
+    /// <summary>
+    /// Campaign Shared Set referenced in AWQL query.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.CampaignSharedSet CampaignSharedSet {
+      get { return campaignSharedSet_; }
+      set {
+        campaignSharedSet_ = value;
       }
     }
 
@@ -798,6 +864,34 @@ namespace Google.Ads.GoogleAds.V0.Services {
       get { return recommendation_; }
       set {
         recommendation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "shared_criterion" field.</summary>
+    public const int SharedCriterionFieldNumber = 29;
+    private global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion sharedCriterion_;
+    /// <summary>
+    /// The shared set referenced in the query.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion SharedCriterion {
+      get { return sharedCriterion_; }
+      set {
+        sharedCriterion_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "shared_set" field.</summary>
+    public const int SharedSetFieldNumber = 27;
+    private global::Google.Ads.GoogleAds.V0.Resources.SharedSet sharedSet_;
+    /// <summary>
+    /// The shared set referenced in the query.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.SharedSet SharedSet {
+      get { return sharedSet_; }
+      set {
+        sharedSet_ = value;
       }
     }
 
@@ -863,7 +957,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public const int DeviceFieldNumber = 8;
     private global::Google.Ads.GoogleAds.V0.Enums.DeviceEnum.Types.Device device_ = 0;
     /// <summary>
-    /// Platform to which metrics apply.
+    /// Device to which metrics apply.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V0.Enums.DeviceEnum.Types.Device Device {
@@ -900,6 +994,20 @@ namespace Google.Ads.GoogleAds.V0.Services {
       get { return month_; }
       set {
         month_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "month_of_year" field.</summary>
+    public const int MonthOfYearFieldNumber = 28;
+    private global::Google.Ads.GoogleAds.V0.Enums.MonthOfYearEnum.Types.MonthOfYear monthOfYear_ = 0;
+    /// <summary>
+    /// Month of the year, e.g., January.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.MonthOfYearEnum.Types.MonthOfYear MonthOfYear {
+      get { return monthOfYear_; }
+      set {
+        monthOfYear_ = value;
       }
     }
 
@@ -985,11 +1093,16 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (!object.Equals(BiddingStrategy, other.BiddingStrategy)) return false;
       if (!object.Equals(CampaignBudget, other.CampaignBudget)) return false;
       if (!object.Equals(Campaign, other.Campaign)) return false;
+      if (!object.Equals(CampaignBidModifier, other.CampaignBidModifier)) return false;
       if (!object.Equals(CampaignCriterion, other.CampaignCriterion)) return false;
+      if (!object.Equals(CampaignGroup, other.CampaignGroup)) return false;
+      if (!object.Equals(CampaignSharedSet, other.CampaignSharedSet)) return false;
       if (!object.Equals(Customer, other.Customer)) return false;
       if (!object.Equals(GeoTargetConstant, other.GeoTargetConstant)) return false;
       if (!object.Equals(KeywordView, other.KeywordView)) return false;
       if (!object.Equals(Recommendation, other.Recommendation)) return false;
+      if (!object.Equals(SharedCriterion, other.SharedCriterion)) return false;
+      if (!object.Equals(SharedSet, other.SharedSet)) return false;
       if (!object.Equals(Metrics, other.Metrics)) return false;
       if (AdNetworkType != other.AdNetworkType) return false;
       if (Date != other.Date) return false;
@@ -997,6 +1110,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (Device != other.Device) return false;
       if (Hour != other.Hour) return false;
       if (Month != other.Month) return false;
+      if (MonthOfYear != other.MonthOfYear) return false;
       if (Quarter != other.Quarter) return false;
       if (Slot != other.Slot) return false;
       if (Week != other.Week) return false;
@@ -1014,11 +1128,16 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (biddingStrategy_ != null) hash ^= BiddingStrategy.GetHashCode();
       if (campaignBudget_ != null) hash ^= CampaignBudget.GetHashCode();
       if (campaign_ != null) hash ^= Campaign.GetHashCode();
+      if (campaignBidModifier_ != null) hash ^= CampaignBidModifier.GetHashCode();
       if (campaignCriterion_ != null) hash ^= CampaignCriterion.GetHashCode();
+      if (campaignGroup_ != null) hash ^= CampaignGroup.GetHashCode();
+      if (campaignSharedSet_ != null) hash ^= CampaignSharedSet.GetHashCode();
       if (customer_ != null) hash ^= Customer.GetHashCode();
       if (geoTargetConstant_ != null) hash ^= GeoTargetConstant.GetHashCode();
       if (keywordView_ != null) hash ^= KeywordView.GetHashCode();
       if (recommendation_ != null) hash ^= Recommendation.GetHashCode();
+      if (sharedCriterion_ != null) hash ^= SharedCriterion.GetHashCode();
+      if (sharedSet_ != null) hash ^= SharedSet.GetHashCode();
       if (metrics_ != null) hash ^= Metrics.GetHashCode();
       if (AdNetworkType != 0) hash ^= AdNetworkType.GetHashCode();
       if (date_ != null) hash ^= Date.GetHashCode();
@@ -1026,6 +1145,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (Device != 0) hash ^= Device.GetHashCode();
       if (hour_ != null) hash ^= Hour.GetHashCode();
       if (month_ != null) hash ^= Month.GetHashCode();
+      if (MonthOfYear != 0) hash ^= MonthOfYear.GetHashCode();
       if (quarter_ != null) hash ^= Quarter.GetHashCode();
       if (Slot != 0) hash ^= Slot.GetHashCode();
       if (week_ != null) hash ^= Week.GetHashCode();
@@ -1129,6 +1249,30 @@ namespace Google.Ads.GoogleAds.V0.Services {
         output.WriteRawTag(194, 1);
         output.WriteMessage(AdGroupBidModifier);
       }
+      if (campaignGroup_ != null) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(CampaignGroup);
+      }
+      if (campaignBidModifier_ != null) {
+        output.WriteRawTag(210, 1);
+        output.WriteMessage(CampaignBidModifier);
+      }
+      if (sharedSet_ != null) {
+        output.WriteRawTag(218, 1);
+        output.WriteMessage(SharedSet);
+      }
+      if (MonthOfYear != 0) {
+        output.WriteRawTag(224, 1);
+        output.WriteEnum((int) MonthOfYear);
+      }
+      if (sharedCriterion_ != null) {
+        output.WriteRawTag(234, 1);
+        output.WriteMessage(SharedCriterion);
+      }
+      if (campaignSharedSet_ != null) {
+        output.WriteRawTag(242, 1);
+        output.WriteMessage(CampaignSharedSet);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1158,8 +1302,17 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (campaign_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Campaign);
       }
+      if (campaignBidModifier_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(CampaignBidModifier);
+      }
       if (campaignCriterion_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(CampaignCriterion);
+      }
+      if (campaignGroup_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(CampaignGroup);
+      }
+      if (campaignSharedSet_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(CampaignSharedSet);
       }
       if (customer_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customer);
@@ -1172,6 +1325,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
       if (recommendation_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Recommendation);
+      }
+      if (sharedCriterion_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(SharedCriterion);
+      }
+      if (sharedSet_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(SharedSet);
       }
       if (metrics_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Metrics);
@@ -1193,6 +1352,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
       if (month_ != null) {
         size += _single_month_codec.CalculateSizeWithTag(Month);
+      }
+      if (MonthOfYear != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) MonthOfYear);
       }
       if (quarter_ != null) {
         size += _single_quarter_codec.CalculateSizeWithTag(Quarter);
@@ -1259,11 +1421,29 @@ namespace Google.Ads.GoogleAds.V0.Services {
         }
         Campaign.MergeFrom(other.Campaign);
       }
+      if (other.campaignBidModifier_ != null) {
+        if (campaignBidModifier_ == null) {
+          campaignBidModifier_ = new global::Google.Ads.GoogleAds.V0.Resources.CampaignBidModifier();
+        }
+        CampaignBidModifier.MergeFrom(other.CampaignBidModifier);
+      }
       if (other.campaignCriterion_ != null) {
         if (campaignCriterion_ == null) {
           campaignCriterion_ = new global::Google.Ads.GoogleAds.V0.Resources.CampaignCriterion();
         }
         CampaignCriterion.MergeFrom(other.CampaignCriterion);
+      }
+      if (other.campaignGroup_ != null) {
+        if (campaignGroup_ == null) {
+          campaignGroup_ = new global::Google.Ads.GoogleAds.V0.Resources.CampaignGroup();
+        }
+        CampaignGroup.MergeFrom(other.CampaignGroup);
+      }
+      if (other.campaignSharedSet_ != null) {
+        if (campaignSharedSet_ == null) {
+          campaignSharedSet_ = new global::Google.Ads.GoogleAds.V0.Resources.CampaignSharedSet();
+        }
+        CampaignSharedSet.MergeFrom(other.CampaignSharedSet);
       }
       if (other.customer_ != null) {
         if (customer_ == null) {
@@ -1288,6 +1468,18 @@ namespace Google.Ads.GoogleAds.V0.Services {
           recommendation_ = new global::Google.Ads.GoogleAds.V0.Resources.Recommendation();
         }
         Recommendation.MergeFrom(other.Recommendation);
+      }
+      if (other.sharedCriterion_ != null) {
+        if (sharedCriterion_ == null) {
+          sharedCriterion_ = new global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion();
+        }
+        SharedCriterion.MergeFrom(other.SharedCriterion);
+      }
+      if (other.sharedSet_ != null) {
+        if (sharedSet_ == null) {
+          sharedSet_ = new global::Google.Ads.GoogleAds.V0.Resources.SharedSet();
+        }
+        SharedSet.MergeFrom(other.SharedSet);
       }
       if (other.metrics_ != null) {
         if (metrics_ == null) {
@@ -1318,6 +1510,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
         if (month_ == null || other.Month != "") {
           Month = other.Month;
         }
+      }
+      if (other.MonthOfYear != 0) {
+        MonthOfYear = other.MonthOfYear;
       }
       if (other.quarter_ != null) {
         if (quarter_ == null || other.Quarter != "") {
@@ -1495,6 +1690,45 @@ namespace Google.Ads.GoogleAds.V0.Services {
               adGroupBidModifier_ = new global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier();
             }
             input.ReadMessage(adGroupBidModifier_);
+            break;
+          }
+          case 202: {
+            if (campaignGroup_ == null) {
+              campaignGroup_ = new global::Google.Ads.GoogleAds.V0.Resources.CampaignGroup();
+            }
+            input.ReadMessage(campaignGroup_);
+            break;
+          }
+          case 210: {
+            if (campaignBidModifier_ == null) {
+              campaignBidModifier_ = new global::Google.Ads.GoogleAds.V0.Resources.CampaignBidModifier();
+            }
+            input.ReadMessage(campaignBidModifier_);
+            break;
+          }
+          case 218: {
+            if (sharedSet_ == null) {
+              sharedSet_ = new global::Google.Ads.GoogleAds.V0.Resources.SharedSet();
+            }
+            input.ReadMessage(sharedSet_);
+            break;
+          }
+          case 224: {
+            monthOfYear_ = (global::Google.Ads.GoogleAds.V0.Enums.MonthOfYearEnum.Types.MonthOfYear) input.ReadEnum();
+            break;
+          }
+          case 234: {
+            if (sharedCriterion_ == null) {
+              sharedCriterion_ = new global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion();
+            }
+            input.ReadMessage(sharedCriterion_);
+            break;
+          }
+          case 242: {
+            if (campaignSharedSet_ == null) {
+              campaignSharedSet_ = new global::Google.Ads.GoogleAds.V0.Resources.CampaignSharedSet();
+            }
+            input.ReadMessage(campaignSharedSet_);
             break;
           }
         }

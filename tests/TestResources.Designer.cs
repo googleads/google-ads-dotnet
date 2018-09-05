@@ -87,5 +87,89 @@ namespace Google.Ads.GoogleAds.Tests {
                 return ResourceManager.GetString("credentials_sa", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ---------------BEGIN API CALL---------------
+        ///
+        ///Request
+        ///-------
+        ///
+        ///Method Name: TEST_METHOD
+        ///Host: TEST_HOST
+        ///Headers: {
+        ///  &quot;developer-token&quot;: &quot;REDACTED&quot;,
+        ///  &quot;test_key1&quot;: &quot;TEST_VALUE1&quot;
+        ///}
+        ///
+        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot; }
+        ///
+        ///Response
+        ///--------
+        ///Headers: {
+        ///  &quot;request-id&quot;: &quot;TEST_REQUEST_ID&quot;,
+        ///  &quot;test_key2&quot;: &quot;TEST_VALUE2&quot;
+        ///}
+        ///
+        ///Fault: {
+        ///  &quot;StatusCode&quot;: 0,
+        ///  &quot;Details&quot;: &quot;&quot;,
+        ///  &quot;RequestId&quot;: &quot;TEST_REQUEST_ID&quot;
+        ///}
+        ///----------------END API CALL----------------.
+        /// </summary>
+        internal static string DetailedFailureLog {
+            get {
+                return ResourceManager.GetString("DetailedFailureLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ---------------BEGIN API CALL---------------
+        ///
+        ///Request
+        ///-------
+        ///
+        ///Method Name: TEST_METHOD
+        ///Host: TEST_HOST
+        ///Headers: {
+        ///  &quot;developer-token&quot;: &quot;REDACTED&quot;,
+        ///  &quot;test_key1&quot;: &quot;TEST_VALUE1&quot;
+        ///}
+        ///
+        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot; }
+        ///
+        ///Response
+        ///--------
+        ///Headers: {
+        ///  &quot;request-id&quot;: &quot;TEST_REQUEST_ID&quot;,
+        ///  &quot;test_key2&quot;: &quot;TEST_VALUE2&quot;
+        ///}
+        ///
+        ///{ &quot;name&quot;: &quot;API&quot; }
+        ///----------------END API CALL----------------.
+        /// </summary>
+        internal static string DetailedSuccessLog {
+            get {
+                return ResourceManager.GetString("DetailedSuccessLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: True, FaultMessage: Status(StatusCode=OK, Detail=&quot;&quot;).
+        /// </summary>
+        internal static string SummaryFailureLog {
+            get {
+                return ResourceManager.GetString("SummaryFailureLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=OK, Detail=&quot;&quot;).
+        /// </summary>
+        internal static string SummarySuccessLog {
+            get {
+                return ResourceManager.GetString("SummarySuccessLog", resourceCulture);
+            }
+        }
     }
 }

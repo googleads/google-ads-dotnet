@@ -25,15 +25,16 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9uZXR3b3JrX3R5",
-            "cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zIpgBChFB",
-            "ZE5ldHdvcmtUeXBlRW51bSKCAQoNQWROZXR3b3JrVHlwZRIPCgtVTlNQRUNJ",
+            "cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zIqMBChFB",
+            "ZE5ldHdvcmtUeXBlRW51bSKNAQoNQWROZXR3b3JrVHlwZRIPCgtVTlNQRUNJ",
             "RklFRBAAEgsKB1VOS05PV04QARIKCgZTRUFSQ0gQAhITCg9TRUFSQ0hfUEFS",
             "VE5FUlMQAxILCgdDT05URU5UEAQSEgoOWU9VVFVCRV9TRUFSQ0gQBRIRCg1Z",
-            "T1VUVUJFX1dBVENIEAZCwwEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lbnVtc0ISQWROZXR3b3JrVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcu",
-            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVt",
-            "cztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1z",
-            "ygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXNiBnByb3RvMw=="));
+            "T1VUVUJFX1dBVENIEAYSCQoFTUlYRUQQB0LDAQohY29tLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmVudW1zQhJBZE5ldHdvcmtUeXBlUHJvdG9QAVpCZ29v",
+            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
+            "YWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -45,7 +46,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
   }
   #region Messages
   /// <summary>
-  /// Container for enumeration of AdWords network types.
+  /// Container for enumeration of Google Ads network types.
   /// </summary>
   public sealed partial class AdNetworkTypeEnum : pb::IMessage<AdNetworkTypeEnum> {
     private static readonly pb::MessageParser<AdNetworkTypeEnum> _parser = new pb::MessageParser<AdNetworkTypeEnum>(() => new AdNetworkTypeEnum());
@@ -151,7 +152,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       /// <summary>
-      /// Enumerates AdWords network types.
+      /// Enumerates Google Ads network types.
       /// </summary>
       public enum AdNetworkType {
         /// <summary>
@@ -182,6 +183,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// YouTube Videos
         /// </summary>
         [pbr::OriginalName("YOUTUBE_WATCH")] YoutubeWatch = 6,
+        /// <summary>
+        /// Cross-network.
+        /// </summary>
+        [pbr::OriginalName("MIXED")] Mixed = 7,
       }
 
     }

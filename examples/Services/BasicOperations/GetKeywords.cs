@@ -18,48 +18,53 @@ using Google.Api.Gax;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V0 {
-
-  /// <summary>
-  /// This code example illustrates getting keywords.
-  /// </summary>
-  public class GetKeywords : ExampleBase {
-
+namespace Google.Ads.GoogleAds.Examples.V0
+{
     /// <summary>
-    /// Main method, to run this code example as a standalone application.
+    /// This code example illustrates getting keywords.
     /// </summary>
-    /// <param name="args">The command line arguments.</param>
-    public static void Main(string[] args) {
-      GetKeywords codeExample = new GetKeywords();
-      Console.WriteLine(codeExample.Description);
+    public class GetKeywords : ExampleBase
+    {
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            GetKeywords codeExample = new GetKeywords();
+            Console.WriteLine(codeExample.Description);
 
-      // The AdWords customer ID for which the call is made.
-      long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+            // The Google Ads customer ID for which the call is made.
+            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-      codeExample.Run(new GoogleAdsClient(), customerId);
-    }
+            codeExample.Run(new GoogleAdsClient(), customerId);
+        }
 
-    /// <summary>
-    /// Returns a description about the code example.
-    /// </summary>
-    public override string Description {
-      get {
-        return "This code example illustrates getting keywords.";
-      }
-    }
+        /// <summary>
+        /// Returns a description about the code example.
+        /// </summary>
+        public override string Description
+        {
+            get
+            {
+                return "This code example illustrates getting keywords.";
+            }
+        }
 
-    /// <summary>
-    /// Runs the code example.
-    /// </summary>
-    /// <param name="client">The Google Ads client.</param>
-    /// <param name="customerId">The AdWords customer ID for which the call is made.</param>
-    public void Run(GoogleAdsClient client, long customerId) {
-      // Get the GoogleAdsService.
-      GoogleAdsServiceClient googleAdsService = client.GetService(Services.V0.GoogleAdsService);
-      try {
-        PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> result =
-          googleAdsService.Search(customerId.ToString(),
-              $@"SELECT
+        /// <summary>
+        /// Runs the code example.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
+        public void Run(GoogleAdsClient client, long customerId)
+        {
+            // Get the GoogleAdsService.
+            GoogleAdsServiceClient googleAdsService = client.GetService(Services.V0.GoogleAdsService);
+            try
+            {
+                PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> result =
+                  googleAdsService.Search(customerId.ToString(),
+                      $@"SELECT
                     ad_group.id,
                     ad_group.status,
                     ad_group_criterion.criterion_id,
@@ -70,18 +75,21 @@ namespace Google.Ads.GoogleAds.Examples.V0 {
                     AND ad_group.status = 'ENABLED'
                     AND ad_group_criterion.status IN ('ENABLED', 'PAUSED')
                 LIMIT 50");
-        foreach (GoogleAdsRow criterionRow in result) {
-          Console.WriteLine($"Keyword with text '{criterionRow.AdGroupCriterion.Keyword.Text}', " +
-              $"id = '{criterionRow.AdGroupCriterion.CriterionId}' and " +
-              $"match type = '{criterionRow.AdGroupCriterion.Keyword.MatchType}' was retrieved " +
-              $"for ad group '{criterionRow.AdGroup.Id.ToString()}'");
+                foreach (GoogleAdsRow criterionRow in result)
+                {
+                    Console.WriteLine($"Keyword with text '{criterionRow.AdGroupCriterion.Keyword.Text}', " +
+                        $"id = '{criterionRow.AdGroupCriterion.CriterionId}' and " +
+                        $"match type = '{criterionRow.AdGroupCriterion.Keyword.MatchType}' was retrieved " +
+                        $"for ad group '{criterionRow.AdGroup.Id.ToString()}'");
+                }
+            }
+            catch (GoogleAdsException e)
+            {
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Failure: {e.Failure}");
+                Console.WriteLine($"Request ID: {e.RequestId}");
+            }
         }
-      } catch (GoogleAdsException e) {
-        Console.WriteLine("Failure:");
-        Console.WriteLine($"Message: {e.Message}");
-        Console.WriteLine($"Failure: {e.Failure}");
-        Console.WriteLine($"Request ID: {e.RequestId}");
-      }
     }
-  }
 }

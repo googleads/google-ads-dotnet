@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYXV0aG9yaXphdGlv",
             "bl9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
-            "It0BChZBdXRob3JpemF0aW9uRXJyb3JFbnVtIsIBChJBdXRob3JpemF0aW9u",
+            "Io4CChZBdXRob3JpemF0aW9uRXJyb3JFbnVtIvMBChJBdXRob3JpemF0aW9u",
             "RXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGgoWVVNFUl9Q",
             "RVJNSVNTSU9OX0RFTklFRBACEiMKH0RFVkVMT1BFUl9UT0tFTl9OT1RfV0hJ",
             "VEVMSVNURUQQAxIeChpERVZFTE9QRVJfVE9LRU5fUFJPSElCSVRFRBAEEhQK",
-            "EFBST0pFQ1RfRElTQUJMRUQQBRIXChNBVVRIT1JJWkFUSU9OX0VSUk9SEAZC",
-            "zQEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCF0F1dGhv",
-            "cml6YXRpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3Jz",
-            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
+            "EFBST0pFQ1RfRElTQUJMRUQQBRIXChNBVVRIT1JJWkFUSU9OX0VSUk9SEAYS",
+            "GAoUQUNUSU9OX05PVF9QRVJNSVRURUQQBxIVChFJTkNPTVBMRVRFX1NJR05V",
+            "UBAIQs0BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQhdB",
+            "dXRob3JpemF0aW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vy",
+            "cm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oC",
+            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -185,6 +186,15 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Authorization of the client failed.
         /// </summary>
         [pbr::OriginalName("AUTHORIZATION_ERROR")] AuthorizationError = 6,
+        /// <summary>
+        /// The user does not have permission to perform this action
+        /// (e.g., ADD, UPDATE, REMOVE) on the resource or call a method.
+        /// </summary>
+        [pbr::OriginalName("ACTION_NOT_PERMITTED")] ActionNotPermitted = 7,
+        /// <summary>
+        /// Signup not complete.
+        /// </summary>
+        [pbr::OriginalName("INCOMPLETE_SIGNUP")] IncompleteSignup = 8,
       }
 
     }

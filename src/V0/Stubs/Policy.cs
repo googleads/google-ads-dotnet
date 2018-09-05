@@ -25,19 +25,75 @@ namespace Google.Ads.GoogleAds.V0.Common {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vcG9saWN5LnByb3Rv",
-            "Eh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24aHmdvb2dsZS9wcm90",
-            "b2J1Zi93cmFwcGVycy5wcm90byJ9ChJQb2xpY3lWaW9sYXRpb25LZXkSMQoL",
-            "cG9saWN5X25hbWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
-            "dWUSNAoOdmlvbGF0aW5nX3RleHQYAiABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWVCwQEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5j",
-            "b21tb25CC1BvbGljeVByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9jb21tb247Y29tbW9u",
-            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuQ29tbW9uygIeR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjBcQ29tbW9uYgZwcm90bzM="));
+            "Eh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24aO2dvb2dsZS9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2VudW1zL3BvbGljeV90b3BpY19lbnRyeV90eXBlLnBy",
+            "b3RvGldnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9wb2xpY3lfdG9w",
+            "aWNfZXZpZGVuY2VfZGVzdGluYXRpb25fbWlzbWF0Y2hfdXJsX3R5cGUucHJv",
+            "dG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90byJ9ChJQb2xpY3lW",
+            "aW9sYXRpb25LZXkSMQoLcG9saWN5X25hbWUYASABKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUSNAoOdmlvbGF0aW5nX3RleHQYAiABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUirwIKEFBvbGljeVRvcGljRW50",
+            "cnkSKwoFdG9waWMYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWUSWgoEdHlwZRgCIAEoDjJMLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVu",
+            "dW1zLlBvbGljeVRvcGljRW50cnlUeXBlRW51bS5Qb2xpY3lUb3BpY0VudHJ5",
+            "VHlwZRJGCglldmlkZW5jZXMYAyADKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5jb21tb24uUG9saWN5VG9waWNFdmlkZW5jZRJKCgtjb25zdHJhaW50",
+            "cxgEIAMoCzI1Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Qb2xp",
+            "Y3lUb3BpY0NvbnN0cmFpbnQi+gYKE1BvbGljeVRvcGljRXZpZGVuY2USMAoJ",
+            "aHR0cF9jb2RlGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWVI",
+            "ABJXCgx3ZWJzaXRlX2xpc3QYAyABKAsyPy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5jb21tb24uUG9saWN5VG9waWNFdmlkZW5jZS5XZWJzaXRlTGlzdEgA",
+            "ElEKCXRleHRfbGlzdBgEIAEoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmNvbW1vbi5Qb2xpY3lUb3BpY0V2aWRlbmNlLlRleHRMaXN0SAASNQoNbGFu",
+            "Z3VhZ2VfY29kZRgFIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZUgAEmgKFWRlc3RpbmF0aW9uX3RleHRfbGlzdBgGIAEoCzJHLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Qb2xpY3lUb3BpY0V2aWRlbmNlLkRl",
+            "c3RpbmF0aW9uVGV4dExpc3RIABJnChRkZXN0aW5hdGlvbl9taXNtYXRjaBgH",
+            "IAEoCzJHLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Qb2xpY3lU",
+            "b3BpY0V2aWRlbmNlLkRlc3RpbmF0aW9uTWlzbWF0Y2hIABo3CghUZXh0TGlz",
+            "dBIrCgV0ZXh0cxgBIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZRo9CgtXZWJzaXRlTGlzdBIuCgh3ZWJzaXRlcxgBIAMoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRpOChNEZXN0aW5hdGlvblRleHRMaXN0EjcK",
+            "EWRlc3RpbmF0aW9uX3RleHRzGAEgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlGqkBChNEZXN0aW5hdGlvbk1pc21hdGNoEpEBCgl1cmxfdHlw",
+            "ZXMYASADKA4yfi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5Qb2xp",
+            "Y3lUb3BpY0V2aWRlbmNlRGVzdGluYXRpb25NaXNtYXRjaFVybFR5cGVFbnVt",
+            "LlBvbGljeVRvcGljRXZpZGVuY2VEZXN0aW5hdGlvbk1pc21hdGNoVXJsVHlw",
+            "ZUIHCgV2YWx1ZSKTBgoVUG9saWN5VG9waWNDb25zdHJhaW50Em4KF2NvdW50",
+            "cnlfY29uc3RyYWludF9saXN0GAEgASgLMksuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuY29tbW9uLlBvbGljeVRvcGljQ29uc3RyYWludC5Db3VudHJ5Q29u",
+            "c3RyYWludExpc3RIABJnChNyZXNlbGxlcl9jb25zdHJhaW50GAIgASgLMkgu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlBvbGljeVRvcGljQ29u",
+            "c3RyYWludC5SZXNlbGxlckNvbnN0cmFpbnRIABJ6CiNjZXJ0aWZpY2F0ZV9t",
+            "aXNzaW5nX2luX2NvdW50cnlfbGlzdBgDIAEoCzJLLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmNvbW1vbi5Qb2xpY3lUb3BpY0NvbnN0cmFpbnQuQ291bnRy",
+            "eUNvbnN0cmFpbnRMaXN0SAASggEKK2NlcnRpZmljYXRlX2RvbWFpbl9taXNt",
+            "YXRjaF9pbl9jb3VudHJ5X2xpc3QYBCABKAsySy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5jb21tb24uUG9saWN5VG9waWNDb25zdHJhaW50LkNvdW50cnlD",
+            "b25zdHJhaW50TGlzdEgAGrIBChVDb3VudHJ5Q29uc3RyYWludExpc3QSPQoY",
+            "dG90YWxfdGFyZ2V0ZWRfY291bnRyaWVzGAEgASgLMhsuZ29vZ2xlLnByb3Rv",
+            "YnVmLkludDMyVmFsdWUSWgoJY291bnRyaWVzGAIgAygLMkcuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuY29tbW9uLlBvbGljeVRvcGljQ29uc3RyYWludC5D",
+            "b3VudHJ5Q29uc3RyYWludBoUChJSZXNlbGxlckNvbnN0cmFpbnQaTAoRQ291",
+            "bnRyeUNvbnN0cmFpbnQSNwoRY291bnRyeV9jcml0ZXJpb24YASABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCBwoFdmFsdWVCwQEKImNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CC1BvbGljeVByb3RvUAFa",
+            "RGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
+            "b2dsZWFkcy92MC9jb21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5H",
+            "b29nbGVBZHMuVjAuQ29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBc",
+            "Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEntryTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyViolationKey), global::Google.Ads.GoogleAds.V0.Common.PolicyViolationKey.Parser, new[]{ "PolicyName", "ViolatingText" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyViolationKey), global::Google.Ads.GoogleAds.V0.Common.PolicyViolationKey.Parser, new[]{ "PolicyName", "ViolatingText" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEntry), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEntry.Parser, new[]{ "Topic", "Type", "Evidences", "Constraints" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Parser, new[]{ "HttpCode", "WebsiteList", "TextList", "LanguageCode", "DestinationTextList", "DestinationMismatch" }, new[]{ "Value" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.TextList), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.TextList.Parser, new[]{ "Texts" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.WebsiteList), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.WebsiteList.Parser, new[]{ "Websites" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationTextList), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationTextList.Parser, new[]{ "DestinationTexts" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationMismatch), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationMismatch.Parser, new[]{ "UrlTypes" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Parser, new[]{ "CountryConstraintList", "ResellerConstraint", "CertificateMissingInCountryList", "CertificateDomainMismatchInCountryList" }, new[]{ "Value" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList.Parser, new[]{ "TotalTargetedCountries", "Countries" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.ResellerConstraint), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.ResellerConstraint.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraint), global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraint.Parser, new[]{ "CountryCriterion" }, null, null, null)})
           }));
     }
     #endregion
@@ -222,6 +278,1857 @@ namespace Google.Ads.GoogleAds.V0.Common {
         }
       }
     }
+
+  }
+
+  /// <summary>
+  /// Policy finding attached to a resource (e.g. alcohol policy associated with
+  /// a site that sells alcohol).
+  ///
+  /// Each PolicyTopicEntry has a topic that indicates the specific ads policy
+  /// the entry is about and a type to indicate the effect that the entry will have
+  /// on serving. It may optionally have one or more evidences that indicate the
+  /// reason for the finding. It may also optionally have one or more constraints
+  /// that provide details about how serving may be restricted.
+  ///
+  /// Next tag: 5
+  /// </summary>
+  public sealed partial class PolicyTopicEntry : pb::IMessage<PolicyTopicEntry> {
+    private static readonly pb::MessageParser<PolicyTopicEntry> _parser = new pb::MessageParser<PolicyTopicEntry>(() => new PolicyTopicEntry());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PolicyTopicEntry> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.PolicyReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PolicyTopicEntry() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PolicyTopicEntry(PolicyTopicEntry other) : this() {
+      Topic = other.Topic;
+      type_ = other.type_;
+      evidences_ = other.evidences_.Clone();
+      constraints_ = other.constraints_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PolicyTopicEntry Clone() {
+      return new PolicyTopicEntry(this);
+    }
+
+    /// <summary>Field number for the "topic" field.</summary>
+    public const int TopicFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_topic_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string topic_;
+    /// <summary>
+    /// Policy topic this finding refers to. For example, "ALCOHOL",
+    /// "TRADEMARKS_IN_AD_TEXT", or "DESTINATION_NOT_WORKING". The set of possible
+    /// policy topics is not fixed for a particular API version and may change
+    /// at any time.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Topic {
+      get { return topic_; }
+      set {
+        topic_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType type_ = 0;
+    /// <summary>
+    /// Describes the negative or positive effect this policy will have on serving.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "evidences" field.</summary>
+    public const int EvidencesFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence> _repeated_evidences_codec
+        = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence> evidences_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence>();
+    /// <summary>
+    /// Additional information that explains policy finding
+    /// (e.g. the brand name for a trademark finding).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence> Evidences {
+      get { return evidences_; }
+    }
+
+    /// <summary>Field number for the "constraints" field.</summary>
+    public const int ConstraintsFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint> _repeated_constraints_codec
+        = pb::FieldCodec.ForMessage(34, global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint> constraints_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint>();
+    /// <summary>
+    /// Indicates how serving of this resource may be affected (e.g. not serving
+    /// in a country).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint> Constraints {
+      get { return constraints_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PolicyTopicEntry);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PolicyTopicEntry other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Topic != other.Topic) return false;
+      if (Type != other.Type) return false;
+      if(!evidences_.Equals(other.evidences_)) return false;
+      if(!constraints_.Equals(other.constraints_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (topic_ != null) hash ^= Topic.GetHashCode();
+      if (Type != 0) hash ^= Type.GetHashCode();
+      hash ^= evidences_.GetHashCode();
+      hash ^= constraints_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (topic_ != null) {
+        _single_topic_codec.WriteTagAndValue(output, Topic);
+      }
+      if (Type != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Type);
+      }
+      evidences_.WriteTo(output, _repeated_evidences_codec);
+      constraints_.WriteTo(output, _repeated_constraints_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (topic_ != null) {
+        size += _single_topic_codec.CalculateSizeWithTag(Topic);
+      }
+      if (Type != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      size += evidences_.CalculateSize(_repeated_evidences_codec);
+      size += constraints_.CalculateSize(_repeated_constraints_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PolicyTopicEntry other) {
+      if (other == null) {
+        return;
+      }
+      if (other.topic_ != null) {
+        if (topic_ == null || other.Topic != "") {
+          Topic = other.Topic;
+        }
+      }
+      if (other.Type != 0) {
+        Type = other.Type;
+      }
+      evidences_.Add(other.evidences_);
+      constraints_.Add(other.constraints_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_topic_codec.Read(input);
+            if (topic_ == null || value != "") {
+              Topic = value;
+            }
+            break;
+          }
+          case 16: {
+            type_ = (global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            evidences_.AddEntriesFrom(input, _repeated_evidences_codec);
+            break;
+          }
+          case 34: {
+            constraints_.AddEntriesFrom(input, _repeated_constraints_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Additional information that explains a policy finding.
+  ///
+  /// Next Id: 8
+  /// </summary>
+  public sealed partial class PolicyTopicEvidence : pb::IMessage<PolicyTopicEvidence> {
+    private static readonly pb::MessageParser<PolicyTopicEvidence> _parser = new pb::MessageParser<PolicyTopicEvidence>(() => new PolicyTopicEvidence());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PolicyTopicEvidence> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.PolicyReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PolicyTopicEvidence() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PolicyTopicEvidence(PolicyTopicEvidence other) : this() {
+      switch (other.ValueCase) {
+        case ValueOneofCase.HttpCode:
+          HttpCode = other.HttpCode;
+          break;
+        case ValueOneofCase.WebsiteList:
+          WebsiteList = other.WebsiteList.Clone();
+          break;
+        case ValueOneofCase.TextList:
+          TextList = other.TextList.Clone();
+          break;
+        case ValueOneofCase.LanguageCode:
+          LanguageCode = other.LanguageCode;
+          break;
+        case ValueOneofCase.DestinationTextList:
+          DestinationTextList = other.DestinationTextList.Clone();
+          break;
+        case ValueOneofCase.DestinationMismatch:
+          DestinationMismatch = other.DestinationMismatch.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PolicyTopicEvidence Clone() {
+      return new PolicyTopicEvidence(this);
+    }
+
+    /// <summary>Field number for the "http_code" field.</summary>
+    public const int HttpCodeFieldNumber = 2;
+    private static readonly pb::FieldCodec<int?> _oneof_httpCode_codec = pb::FieldCodec.ForStructWrapper<int>(18);
+    /// <summary>
+    /// HTTP code returned when the final URL was crawled.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int? HttpCode {
+      get { return valueCase_ == ValueOneofCase.HttpCode ? (int?) value_ : (int?) null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.HttpCode;
+      }
+    }
+
+    /// <summary>Field number for the "website_list" field.</summary>
+    public const int WebsiteListFieldNumber = 3;
+    /// <summary>
+    /// List of websites linked with this resource.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.WebsiteList WebsiteList {
+      get { return valueCase_ == ValueOneofCase.WebsiteList ? (global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.WebsiteList) value_ : null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.WebsiteList;
+      }
+    }
+
+    /// <summary>Field number for the "text_list" field.</summary>
+    public const int TextListFieldNumber = 4;
+    /// <summary>
+    /// List of evidence found in the text of a resource.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.TextList TextList {
+      get { return valueCase_ == ValueOneofCase.TextList ? (global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.TextList) value_ : null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.TextList;
+      }
+    }
+
+    /// <summary>Field number for the "language_code" field.</summary>
+    public const int LanguageCodeFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _oneof_languageCode_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+    /// <summary>
+    /// The language the resource was detected to be written in.
+    /// This is an IETF language tag such as "en-US".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LanguageCode {
+      get { return valueCase_ == ValueOneofCase.LanguageCode ? (string) value_ : (string) null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.LanguageCode;
+      }
+    }
+
+    /// <summary>Field number for the "destination_text_list" field.</summary>
+    public const int DestinationTextListFieldNumber = 6;
+    /// <summary>
+    /// The text in the destination of the resource that is causing a policy
+    /// finding.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationTextList DestinationTextList {
+      get { return valueCase_ == ValueOneofCase.DestinationTextList ? (global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationTextList) value_ : null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.DestinationTextList;
+      }
+    }
+
+    /// <summary>Field number for the "destination_mismatch" field.</summary>
+    public const int DestinationMismatchFieldNumber = 7;
+    /// <summary>
+    /// Mismatch between the destinations of a resource's URLs.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationMismatch DestinationMismatch {
+      get { return valueCase_ == ValueOneofCase.DestinationMismatch ? (global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationMismatch) value_ : null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.DestinationMismatch;
+      }
+    }
+
+    private object value_;
+    /// <summary>Enum of possible cases for the "value" oneof.</summary>
+    public enum ValueOneofCase {
+      None = 0,
+      HttpCode = 2,
+      WebsiteList = 3,
+      TextList = 4,
+      LanguageCode = 5,
+      DestinationTextList = 6,
+      DestinationMismatch = 7,
+    }
+    private ValueOneofCase valueCase_ = ValueOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ValueOneofCase ValueCase {
+      get { return valueCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearValue() {
+      valueCase_ = ValueOneofCase.None;
+      value_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PolicyTopicEvidence);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PolicyTopicEvidence other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (HttpCode != other.HttpCode) return false;
+      if (!object.Equals(WebsiteList, other.WebsiteList)) return false;
+      if (!object.Equals(TextList, other.TextList)) return false;
+      if (LanguageCode != other.LanguageCode) return false;
+      if (!object.Equals(DestinationTextList, other.DestinationTextList)) return false;
+      if (!object.Equals(DestinationMismatch, other.DestinationMismatch)) return false;
+      if (ValueCase != other.ValueCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (valueCase_ == ValueOneofCase.HttpCode) hash ^= HttpCode.GetHashCode();
+      if (valueCase_ == ValueOneofCase.WebsiteList) hash ^= WebsiteList.GetHashCode();
+      if (valueCase_ == ValueOneofCase.TextList) hash ^= TextList.GetHashCode();
+      if (valueCase_ == ValueOneofCase.LanguageCode) hash ^= LanguageCode.GetHashCode();
+      if (valueCase_ == ValueOneofCase.DestinationTextList) hash ^= DestinationTextList.GetHashCode();
+      if (valueCase_ == ValueOneofCase.DestinationMismatch) hash ^= DestinationMismatch.GetHashCode();
+      hash ^= (int) valueCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (valueCase_ == ValueOneofCase.HttpCode) {
+        _oneof_httpCode_codec.WriteTagAndValue(output, (int?) value_);
+      }
+      if (valueCase_ == ValueOneofCase.WebsiteList) {
+        output.WriteRawTag(26);
+        output.WriteMessage(WebsiteList);
+      }
+      if (valueCase_ == ValueOneofCase.TextList) {
+        output.WriteRawTag(34);
+        output.WriteMessage(TextList);
+      }
+      if (valueCase_ == ValueOneofCase.LanguageCode) {
+        _oneof_languageCode_codec.WriteTagAndValue(output, (string) value_);
+      }
+      if (valueCase_ == ValueOneofCase.DestinationTextList) {
+        output.WriteRawTag(50);
+        output.WriteMessage(DestinationTextList);
+      }
+      if (valueCase_ == ValueOneofCase.DestinationMismatch) {
+        output.WriteRawTag(58);
+        output.WriteMessage(DestinationMismatch);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (valueCase_ == ValueOneofCase.HttpCode) {
+        size += _oneof_httpCode_codec.CalculateSizeWithTag(HttpCode);
+      }
+      if (valueCase_ == ValueOneofCase.WebsiteList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WebsiteList);
+      }
+      if (valueCase_ == ValueOneofCase.TextList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TextList);
+      }
+      if (valueCase_ == ValueOneofCase.LanguageCode) {
+        size += _oneof_languageCode_codec.CalculateSizeWithTag(LanguageCode);
+      }
+      if (valueCase_ == ValueOneofCase.DestinationTextList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DestinationTextList);
+      }
+      if (valueCase_ == ValueOneofCase.DestinationMismatch) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DestinationMismatch);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PolicyTopicEvidence other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.ValueCase) {
+        case ValueOneofCase.HttpCode:
+          HttpCode = other.HttpCode;
+          break;
+        case ValueOneofCase.WebsiteList:
+          if (WebsiteList == null) {
+            WebsiteList = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.WebsiteList();
+          }
+          WebsiteList.MergeFrom(other.WebsiteList);
+          break;
+        case ValueOneofCase.TextList:
+          if (TextList == null) {
+            TextList = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.TextList();
+          }
+          TextList.MergeFrom(other.TextList);
+          break;
+        case ValueOneofCase.LanguageCode:
+          LanguageCode = other.LanguageCode;
+          break;
+        case ValueOneofCase.DestinationTextList:
+          if (DestinationTextList == null) {
+            DestinationTextList = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationTextList();
+          }
+          DestinationTextList.MergeFrom(other.DestinationTextList);
+          break;
+        case ValueOneofCase.DestinationMismatch:
+          if (DestinationMismatch == null) {
+            DestinationMismatch = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationMismatch();
+          }
+          DestinationMismatch.MergeFrom(other.DestinationMismatch);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 18: {
+            HttpCode = _oneof_httpCode_codec.Read(input);
+            break;
+          }
+          case 26: {
+            global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.WebsiteList subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.WebsiteList();
+            if (valueCase_ == ValueOneofCase.WebsiteList) {
+              subBuilder.MergeFrom(WebsiteList);
+            }
+            input.ReadMessage(subBuilder);
+            WebsiteList = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.TextList subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.TextList();
+            if (valueCase_ == ValueOneofCase.TextList) {
+              subBuilder.MergeFrom(TextList);
+            }
+            input.ReadMessage(subBuilder);
+            TextList = subBuilder;
+            break;
+          }
+          case 42: {
+            LanguageCode = _oneof_languageCode_codec.Read(input);
+            break;
+          }
+          case 50: {
+            global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationTextList subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationTextList();
+            if (valueCase_ == ValueOneofCase.DestinationTextList) {
+              subBuilder.MergeFrom(DestinationTextList);
+            }
+            input.ReadMessage(subBuilder);
+            DestinationTextList = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationMismatch subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Types.DestinationMismatch();
+            if (valueCase_ == ValueOneofCase.DestinationMismatch) {
+              subBuilder.MergeFrom(DestinationMismatch);
+            }
+            input.ReadMessage(subBuilder);
+            DestinationMismatch = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the PolicyTopicEvidence message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      /// <summary>
+      /// A list of fragments of text that violated a policy.
+      ///
+      /// Next Id: 2
+      /// </summary>
+      public sealed partial class TextList : pb::IMessage<TextList> {
+        private static readonly pb::MessageParser<TextList> _parser = new pb::MessageParser<TextList>(() => new TextList());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<TextList> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TextList() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TextList(TextList other) : this() {
+          texts_ = other.texts_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TextList Clone() {
+          return new TextList(this);
+        }
+
+        /// <summary>Field number for the "texts" field.</summary>
+        public const int TextsFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _repeated_texts_codec
+            = pb::FieldCodec.ForClassWrapper<string>(10);
+        private readonly pbc::RepeatedField<string> texts_ = new pbc::RepeatedField<string>();
+        /// <summary>
+        /// The fragments of text from the resource that caused the policy finding.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<string> Texts {
+          get { return texts_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as TextList);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(TextList other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!texts_.Equals(other.texts_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= texts_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          texts_.WriteTo(output, _repeated_texts_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += texts_.CalculateSize(_repeated_texts_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(TextList other) {
+          if (other == null) {
+            return;
+          }
+          texts_.Add(other.texts_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                texts_.AddEntriesFrom(input, _repeated_texts_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// A list of websites that caused a policy finding. Used for
+      /// ONE_WEBSITE_PER_AD_GROUP policy topic, for example. In case there are more
+      /// than five websites, only the top five (those that appear in resources the
+      /// most) will be listed here.
+      ///
+      /// Next Id: 2
+      /// </summary>
+      public sealed partial class WebsiteList : pb::IMessage<WebsiteList> {
+        private static readonly pb::MessageParser<WebsiteList> _parser = new pb::MessageParser<WebsiteList>(() => new WebsiteList());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<WebsiteList> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public WebsiteList() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public WebsiteList(WebsiteList other) : this() {
+          websites_ = other.websites_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public WebsiteList Clone() {
+          return new WebsiteList(this);
+        }
+
+        /// <summary>Field number for the "websites" field.</summary>
+        public const int WebsitesFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _repeated_websites_codec
+            = pb::FieldCodec.ForClassWrapper<string>(10);
+        private readonly pbc::RepeatedField<string> websites_ = new pbc::RepeatedField<string>();
+        /// <summary>
+        /// Websites that caused the policy finding.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<string> Websites {
+          get { return websites_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as WebsiteList);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(WebsiteList other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!websites_.Equals(other.websites_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= websites_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          websites_.WriteTo(output, _repeated_websites_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += websites_.CalculateSize(_repeated_websites_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(WebsiteList other) {
+          if (other == null) {
+            return;
+          }
+          websites_.Add(other.websites_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                websites_.AddEntriesFrom(input, _repeated_websites_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// A list of strings found in a destination page that caused a policy
+      /// finding.
+      ///
+      /// Next Id: 2
+      /// </summary>
+      public sealed partial class DestinationTextList : pb::IMessage<DestinationTextList> {
+        private static readonly pb::MessageParser<DestinationTextList> _parser = new pb::MessageParser<DestinationTextList>(() => new DestinationTextList());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<DestinationTextList> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Descriptor.NestedTypes[2]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DestinationTextList() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DestinationTextList(DestinationTextList other) : this() {
+          destinationTexts_ = other.destinationTexts_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DestinationTextList Clone() {
+          return new DestinationTextList(this);
+        }
+
+        /// <summary>Field number for the "destination_texts" field.</summary>
+        public const int DestinationTextsFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _repeated_destinationTexts_codec
+            = pb::FieldCodec.ForClassWrapper<string>(10);
+        private readonly pbc::RepeatedField<string> destinationTexts_ = new pbc::RepeatedField<string>();
+        /// <summary>
+        /// List of text found in the resource's destination page.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<string> DestinationTexts {
+          get { return destinationTexts_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as DestinationTextList);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(DestinationTextList other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!destinationTexts_.Equals(other.destinationTexts_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= destinationTexts_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          destinationTexts_.WriteTo(output, _repeated_destinationTexts_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += destinationTexts_.CalculateSize(_repeated_destinationTexts_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(DestinationTextList other) {
+          if (other == null) {
+            return;
+          }
+          destinationTexts_.Add(other.destinationTexts_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                destinationTexts_.AddEntriesFrom(input, _repeated_destinationTexts_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Evidence of mismatches between the URLs of a resource.
+      ///
+      /// Next Id: 2
+      /// </summary>
+      public sealed partial class DestinationMismatch : pb::IMessage<DestinationMismatch> {
+        private static readonly pb::MessageParser<DestinationMismatch> _parser = new pb::MessageParser<DestinationMismatch>(() => new DestinationMismatch());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<DestinationMismatch> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEvidence.Descriptor.NestedTypes[3]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DestinationMismatch() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DestinationMismatch(DestinationMismatch other) : this() {
+          urlTypes_ = other.urlTypes_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DestinationMismatch Clone() {
+          return new DestinationMismatch(this);
+        }
+
+        /// <summary>Field number for the "url_types" field.</summary>
+        public const int UrlTypesFieldNumber = 1;
+        private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum.Types.PolicyTopicEvidenceDestinationMismatchUrlType> _repeated_urlTypes_codec
+            = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum.Types.PolicyTopicEvidenceDestinationMismatchUrlType) x);
+        private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum.Types.PolicyTopicEvidenceDestinationMismatchUrlType> urlTypes_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum.Types.PolicyTopicEvidenceDestinationMismatchUrlType>();
+        /// <summary>
+        /// The set of URLs that did not match each other.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum.Types.PolicyTopicEvidenceDestinationMismatchUrlType> UrlTypes {
+          get { return urlTypes_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as DestinationMismatch);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(DestinationMismatch other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!urlTypes_.Equals(other.urlTypes_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= urlTypes_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          urlTypes_.WriteTo(output, _repeated_urlTypes_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += urlTypes_.CalculateSize(_repeated_urlTypes_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(DestinationMismatch other) {
+          if (other == null) {
+            return;
+          }
+          urlTypes_.Add(other.urlTypes_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10:
+              case 8: {
+                urlTypes_.AddEntriesFrom(input, _repeated_urlTypes_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
+
+  }
+
+  /// <summary>
+  /// Describes the effect on serving that a policy topic entry will have.
+  ///
+  /// Next Id: 5
+  /// </summary>
+  public sealed partial class PolicyTopicConstraint : pb::IMessage<PolicyTopicConstraint> {
+    private static readonly pb::MessageParser<PolicyTopicConstraint> _parser = new pb::MessageParser<PolicyTopicConstraint>(() => new PolicyTopicConstraint());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PolicyTopicConstraint> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.PolicyReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PolicyTopicConstraint() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PolicyTopicConstraint(PolicyTopicConstraint other) : this() {
+      switch (other.ValueCase) {
+        case ValueOneofCase.CountryConstraintList:
+          CountryConstraintList = other.CountryConstraintList.Clone();
+          break;
+        case ValueOneofCase.ResellerConstraint:
+          ResellerConstraint = other.ResellerConstraint.Clone();
+          break;
+        case ValueOneofCase.CertificateMissingInCountryList:
+          CertificateMissingInCountryList = other.CertificateMissingInCountryList.Clone();
+          break;
+        case ValueOneofCase.CertificateDomainMismatchInCountryList:
+          CertificateDomainMismatchInCountryList = other.CertificateDomainMismatchInCountryList.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PolicyTopicConstraint Clone() {
+      return new PolicyTopicConstraint(this);
+    }
+
+    /// <summary>Field number for the "country_constraint_list" field.</summary>
+    public const int CountryConstraintListFieldNumber = 1;
+    /// <summary>
+    /// Countries where the resource cannot serve.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList CountryConstraintList {
+      get { return valueCase_ == ValueOneofCase.CountryConstraintList ? (global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList) value_ : null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.CountryConstraintList;
+      }
+    }
+
+    /// <summary>Field number for the "reseller_constraint" field.</summary>
+    public const int ResellerConstraintFieldNumber = 2;
+    /// <summary>
+    /// Reseller constraint.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.ResellerConstraint ResellerConstraint {
+      get { return valueCase_ == ValueOneofCase.ResellerConstraint ? (global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.ResellerConstraint) value_ : null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.ResellerConstraint;
+      }
+    }
+
+    /// <summary>Field number for the "certificate_missing_in_country_list" field.</summary>
+    public const int CertificateMissingInCountryListFieldNumber = 3;
+    /// <summary>
+    /// Countries where a certificate is required for serving.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList CertificateMissingInCountryList {
+      get { return valueCase_ == ValueOneofCase.CertificateMissingInCountryList ? (global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList) value_ : null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.CertificateMissingInCountryList;
+      }
+    }
+
+    /// <summary>Field number for the "certificate_domain_mismatch_in_country_list" field.</summary>
+    public const int CertificateDomainMismatchInCountryListFieldNumber = 4;
+    /// <summary>
+    /// Countries where the resource's domain is not covered by the
+    /// certificates associated with it.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList CertificateDomainMismatchInCountryList {
+      get { return valueCase_ == ValueOneofCase.CertificateDomainMismatchInCountryList ? (global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList) value_ : null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.CertificateDomainMismatchInCountryList;
+      }
+    }
+
+    private object value_;
+    /// <summary>Enum of possible cases for the "value" oneof.</summary>
+    public enum ValueOneofCase {
+      None = 0,
+      CountryConstraintList = 1,
+      ResellerConstraint = 2,
+      CertificateMissingInCountryList = 3,
+      CertificateDomainMismatchInCountryList = 4,
+    }
+    private ValueOneofCase valueCase_ = ValueOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ValueOneofCase ValueCase {
+      get { return valueCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearValue() {
+      valueCase_ = ValueOneofCase.None;
+      value_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PolicyTopicConstraint);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PolicyTopicConstraint other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(CountryConstraintList, other.CountryConstraintList)) return false;
+      if (!object.Equals(ResellerConstraint, other.ResellerConstraint)) return false;
+      if (!object.Equals(CertificateMissingInCountryList, other.CertificateMissingInCountryList)) return false;
+      if (!object.Equals(CertificateDomainMismatchInCountryList, other.CertificateDomainMismatchInCountryList)) return false;
+      if (ValueCase != other.ValueCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (valueCase_ == ValueOneofCase.CountryConstraintList) hash ^= CountryConstraintList.GetHashCode();
+      if (valueCase_ == ValueOneofCase.ResellerConstraint) hash ^= ResellerConstraint.GetHashCode();
+      if (valueCase_ == ValueOneofCase.CertificateMissingInCountryList) hash ^= CertificateMissingInCountryList.GetHashCode();
+      if (valueCase_ == ValueOneofCase.CertificateDomainMismatchInCountryList) hash ^= CertificateDomainMismatchInCountryList.GetHashCode();
+      hash ^= (int) valueCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (valueCase_ == ValueOneofCase.CountryConstraintList) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CountryConstraintList);
+      }
+      if (valueCase_ == ValueOneofCase.ResellerConstraint) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ResellerConstraint);
+      }
+      if (valueCase_ == ValueOneofCase.CertificateMissingInCountryList) {
+        output.WriteRawTag(26);
+        output.WriteMessage(CertificateMissingInCountryList);
+      }
+      if (valueCase_ == ValueOneofCase.CertificateDomainMismatchInCountryList) {
+        output.WriteRawTag(34);
+        output.WriteMessage(CertificateDomainMismatchInCountryList);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (valueCase_ == ValueOneofCase.CountryConstraintList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CountryConstraintList);
+      }
+      if (valueCase_ == ValueOneofCase.ResellerConstraint) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ResellerConstraint);
+      }
+      if (valueCase_ == ValueOneofCase.CertificateMissingInCountryList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CertificateMissingInCountryList);
+      }
+      if (valueCase_ == ValueOneofCase.CertificateDomainMismatchInCountryList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CertificateDomainMismatchInCountryList);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PolicyTopicConstraint other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.ValueCase) {
+        case ValueOneofCase.CountryConstraintList:
+          if (CountryConstraintList == null) {
+            CountryConstraintList = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList();
+          }
+          CountryConstraintList.MergeFrom(other.CountryConstraintList);
+          break;
+        case ValueOneofCase.ResellerConstraint:
+          if (ResellerConstraint == null) {
+            ResellerConstraint = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.ResellerConstraint();
+          }
+          ResellerConstraint.MergeFrom(other.ResellerConstraint);
+          break;
+        case ValueOneofCase.CertificateMissingInCountryList:
+          if (CertificateMissingInCountryList == null) {
+            CertificateMissingInCountryList = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList();
+          }
+          CertificateMissingInCountryList.MergeFrom(other.CertificateMissingInCountryList);
+          break;
+        case ValueOneofCase.CertificateDomainMismatchInCountryList:
+          if (CertificateDomainMismatchInCountryList == null) {
+            CertificateDomainMismatchInCountryList = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList();
+          }
+          CertificateDomainMismatchInCountryList.MergeFrom(other.CertificateDomainMismatchInCountryList);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList();
+            if (valueCase_ == ValueOneofCase.CountryConstraintList) {
+              subBuilder.MergeFrom(CountryConstraintList);
+            }
+            input.ReadMessage(subBuilder);
+            CountryConstraintList = subBuilder;
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.ResellerConstraint subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.ResellerConstraint();
+            if (valueCase_ == ValueOneofCase.ResellerConstraint) {
+              subBuilder.MergeFrom(ResellerConstraint);
+            }
+            input.ReadMessage(subBuilder);
+            ResellerConstraint = subBuilder;
+            break;
+          }
+          case 26: {
+            global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList();
+            if (valueCase_ == ValueOneofCase.CertificateMissingInCountryList) {
+              subBuilder.MergeFrom(CertificateMissingInCountryList);
+            }
+            input.ReadMessage(subBuilder);
+            CertificateMissingInCountryList = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraintList();
+            if (valueCase_ == ValueOneofCase.CertificateDomainMismatchInCountryList) {
+              subBuilder.MergeFrom(CertificateDomainMismatchInCountryList);
+            }
+            input.ReadMessage(subBuilder);
+            CertificateDomainMismatchInCountryList = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the PolicyTopicConstraint message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      /// <summary>
+      /// A list of countries where a resource's serving is constrained.
+      ///
+      /// Next Id: 3
+      /// </summary>
+      public sealed partial class CountryConstraintList : pb::IMessage<CountryConstraintList> {
+        private static readonly pb::MessageParser<CountryConstraintList> _parser = new pb::MessageParser<CountryConstraintList>(() => new CountryConstraintList());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<CountryConstraintList> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CountryConstraintList() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CountryConstraintList(CountryConstraintList other) : this() {
+          TotalTargetedCountries = other.TotalTargetedCountries;
+          countries_ = other.countries_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CountryConstraintList Clone() {
+          return new CountryConstraintList(this);
+        }
+
+        /// <summary>Field number for the "total_targeted_countries" field.</summary>
+        public const int TotalTargetedCountriesFieldNumber = 1;
+        private static readonly pb::FieldCodec<int?> _single_totalTargetedCountries_codec = pb::FieldCodec.ForStructWrapper<int>(10);
+        private int? totalTargetedCountries_;
+        /// <summary>
+        /// Total number of countries targeted by the resource.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int? TotalTargetedCountries {
+          get { return totalTargetedCountries_; }
+          set {
+            totalTargetedCountries_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "countries" field.</summary>
+        public const int CountriesFieldNumber = 2;
+        private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraint> _repeated_countries_codec
+            = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraint.Parser);
+        private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraint> countries_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraint>();
+        /// <summary>
+        /// Countries in which serving is restricted.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Types.CountryConstraint> Countries {
+          get { return countries_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as CountryConstraintList);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(CountryConstraintList other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (TotalTargetedCountries != other.TotalTargetedCountries) return false;
+          if(!countries_.Equals(other.countries_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (totalTargetedCountries_ != null) hash ^= TotalTargetedCountries.GetHashCode();
+          hash ^= countries_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (totalTargetedCountries_ != null) {
+            _single_totalTargetedCountries_codec.WriteTagAndValue(output, TotalTargetedCountries);
+          }
+          countries_.WriteTo(output, _repeated_countries_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (totalTargetedCountries_ != null) {
+            size += _single_totalTargetedCountries_codec.CalculateSizeWithTag(TotalTargetedCountries);
+          }
+          size += countries_.CalculateSize(_repeated_countries_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(CountryConstraintList other) {
+          if (other == null) {
+            return;
+          }
+          if (other.totalTargetedCountries_ != null) {
+            if (totalTargetedCountries_ == null || other.TotalTargetedCountries != 0) {
+              TotalTargetedCountries = other.TotalTargetedCountries;
+            }
+          }
+          countries_.Add(other.countries_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                int? value = _single_totalTargetedCountries_codec.Read(input);
+                if (totalTargetedCountries_ == null || value != 0) {
+                  TotalTargetedCountries = value;
+                }
+                break;
+              }
+              case 18: {
+                countries_.AddEntriesFrom(input, _repeated_countries_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Indicates that a policy topic was constrained due to disapproval of the
+      /// website for reseller purposes.
+      ///
+      /// Next Id: 1
+      /// </summary>
+      public sealed partial class ResellerConstraint : pb::IMessage<ResellerConstraint> {
+        private static readonly pb::MessageParser<ResellerConstraint> _parser = new pb::MessageParser<ResellerConstraint>(() => new ResellerConstraint());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<ResellerConstraint> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ResellerConstraint() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ResellerConstraint(ResellerConstraint other) : this() {
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ResellerConstraint Clone() {
+          return new ResellerConstraint(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as ResellerConstraint);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(ResellerConstraint other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(ResellerConstraint other) {
+          if (other == null) {
+            return;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Indicates that a resource's ability to serve in a particular country is
+      /// constrained.
+      ///
+      /// Next Id: 2
+      /// </summary>
+      public sealed partial class CountryConstraint : pb::IMessage<CountryConstraint> {
+        private static readonly pb::MessageParser<CountryConstraint> _parser = new pb::MessageParser<CountryConstraint>(() => new CountryConstraint());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<CountryConstraint> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Common.PolicyTopicConstraint.Descriptor.NestedTypes[2]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CountryConstraint() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CountryConstraint(CountryConstraint other) : this() {
+          CountryCriterion = other.CountryCriterion;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CountryConstraint Clone() {
+          return new CountryConstraint(this);
+        }
+
+        /// <summary>Field number for the "country_criterion" field.</summary>
+        public const int CountryCriterionFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _single_countryCriterion_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+        private string countryCriterion_;
+        /// <summary>
+        /// Geo target constant resource name of the country in which serving is
+        /// constrained.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string CountryCriterion {
+          get { return countryCriterion_; }
+          set {
+            countryCriterion_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as CountryConstraint);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(CountryConstraint other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (CountryCriterion != other.CountryCriterion) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (countryCriterion_ != null) hash ^= CountryCriterion.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (countryCriterion_ != null) {
+            _single_countryCriterion_codec.WriteTagAndValue(output, CountryCriterion);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (countryCriterion_ != null) {
+            size += _single_countryCriterion_codec.CalculateSizeWithTag(CountryCriterion);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(CountryConstraint other) {
+          if (other == null) {
+            return;
+          }
+          if (other.countryCriterion_ != null) {
+            if (countryCriterion_ == null || other.CountryCriterion != "") {
+              CountryCriterion = other.CountryCriterion;
+            }
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                string value = _single_countryCriterion_codec.Read(input);
+                if (countryCriterion_ == null || value != "") {
+                  CountryCriterion = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
 
   }
 

@@ -25,15 +25,19 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9yZWNvbW1lbmRhdGlv",
-            "bl90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyKS",
-            "AQoWUmVjb21tZW5kYXRpb25UeXBlRW51bSJ4ChJSZWNvbW1lbmRhdGlvblR5",
-            "cGUSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESEwoPQ0FNUEFJR05f",
-            "QlVER0VUEAISCwoHS0VZV09SRBADEgsKB1RFWFRfQUQQBBIVChFUQVJHRVRf",
-            "Q1BBX09QVF9JThAFQsgBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "ZW51bXNCF1JlY29tbWVuZGF0aW9uVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9l",
-            "bnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVu",
-            "dW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXNiBnByb3RvMw=="));
+            "bl90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyKf",
+            "AgoWUmVjb21tZW5kYXRpb25UeXBlRW51bSKEAgoSUmVjb21tZW5kYXRpb25U",
+            "eXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhMKD0NBTVBBSUdO",
+            "X0JVREdFVBACEgsKB0tFWVdPUkQQAxILCgdURVhUX0FEEAQSFQoRVEFSR0VU",
+            "X0NQQV9PUFRfSU4QBRIfChtNQVhJTUlaRV9DT05WRVJTSU9OU19PUFRfSU4Q",
+            "BhIXChNFTkhBTkNFRF9DUENfT1BUX0lOEAcSGgoWU0VBUkNIX1BBUlRORVJT",
+            "X09QVF9JThAIEhoKFk1BWElNSVpFX0NMSUNLU19PUFRfSU4QCRIYChRPUFRJ",
+            "TUlaRV9BRF9ST1RBVElPThAKQsgBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuZW51bXNCF1JlY29tbWVuZGF0aW9uVHlwZVByb3RvUAFaQmdvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRz",
+            "LlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -178,6 +182,30 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Recommendation to update a campaign to use a Target CPA bidding strategy.
         /// </summary>
         [pbr::OriginalName("TARGET_CPA_OPT_IN")] TargetCpaOptIn = 5,
+        /// <summary>
+        /// Recommendation to update a campaign to use the Maximize Conversions
+        /// bidding strategy.
+        /// </summary>
+        [pbr::OriginalName("MAXIMIZE_CONVERSIONS_OPT_IN")] MaximizeConversionsOptIn = 6,
+        /// <summary>
+        /// Recommendation to enable Enhanced Cost Per Click for a campaign.
+        /// </summary>
+        [pbr::OriginalName("ENHANCED_CPC_OPT_IN")] EnhancedCpcOptIn = 7,
+        /// <summary>
+        /// Recommendation to start showing your campaign's ads on Google Search
+        /// Partners Websites.
+        /// </summary>
+        [pbr::OriginalName("SEARCH_PARTNERS_OPT_IN")] SearchPartnersOptIn = 8,
+        /// <summary>
+        /// Recommendation to update a campaign to use a Maximize Clicks bidding
+        /// strategy.
+        /// </summary>
+        [pbr::OriginalName("MAXIMIZE_CLICKS_OPT_IN")] MaximizeClicksOptIn = 9,
+        /// <summary>
+        /// Recommendation to start using the "Optimize" ad rotation setting for the
+        /// given ad group.
+        /// </summary>
+        [pbr::OriginalName("OPTIMIZE_AD_ROTATION")] OptimizeAdRotation = 10,
       }
 
     }

@@ -44,7 +44,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
   }
   #region Messages
   /// <summary>
-  /// Container for enumeration of AdWords platforms available for targeting.
+  /// Container for enumeration of Google Ads devices available for targeting.
   /// </summary>
   public sealed partial class DeviceEnum : pb::IMessage<DeviceEnum> {
     private static readonly pb::MessageParser<DeviceEnum> _parser = new pb::MessageParser<DeviceEnum>(() => new DeviceEnum());
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       /// <summary>
-      /// Enumerates AdWords platforms available for targeting.
+      /// Enumerates Google Ads devices available for targeting.
       /// </summary>
       public enum Device {
         /// <summary>

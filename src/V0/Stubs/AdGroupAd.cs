@@ -25,22 +25,22 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYWRfZ3JvdXBf",
-            "YWQucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxon",
-            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uL2FkLnByb3RvGjZnb29n",
-            "bGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF9hZF9zdGF0dXMu",
-            "cHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90byLWAQoJQWRH",
-            "cm91cEFkEhUKDXJlc291cmNlX25hbWUYASABKAkSUgoGc3RhdHVzGAMgASgO",
-            "MkIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQWRHcm91cEFkU3Rh",
-            "dHVzRW51bS5BZEdyb3VwQWRTdGF0dXMSLgoIYWRfZ3JvdXAYBCABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSLgoCYWQYBSABKAsyIi5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uQWRC0wEKJWNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDkFkR3JvdXBBZFByb3RvUAFa",
-            "Smdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xl",
-            "LkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29n",
-            "bGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
+            "YWQucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxo2",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvYWRfZ3JvdXBfYWRfc3Rh",
+            "dHVzLnByb3RvGipnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMv",
+            "YWQucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90byLZAQoJ",
+            "QWRHcm91cEFkEhUKDXJlc291cmNlX25hbWUYASABKAkSUgoGc3RhdHVzGAMg",
+            "ASgOMkIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQWRHcm91cEFk",
+            "U3RhdHVzRW51bS5BZEdyb3VwQWRTdGF0dXMSLgoIYWRfZ3JvdXAYBCABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMQoCYWQYBSABKAsyJS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQWRC0wEKJWNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDkFkR3JvdXBBZFBy",
+            "b3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
+            "YWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIh",
+            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.AdReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupAd), global::Google.Ads.GoogleAds.V0.Resources.AdGroupAd.Parser, new[]{ "ResourceName", "Status", "AdGroup", "Ad" }, null, null, null)
           }));
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       resourceName_ = other.resourceName_;
       status_ = other.status_;
       AdGroup = other.AdGroup;
-      Ad = other.ad_ != null ? other.Ad.Clone() : null;
+      ad_ = other.ad_ != null ? other.ad_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -139,12 +139,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
 
     /// <summary>Field number for the "ad" field.</summary>
     public const int AdFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V0.Common.Ad ad_;
+    private global::Google.Ads.GoogleAds.V0.Resources.Ad ad_;
     /// <summary>
     /// The ad.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Ads.GoogleAds.V0.Common.Ad Ad {
+    public global::Google.Ads.GoogleAds.V0.Resources.Ad Ad {
       get { return ad_; }
       set {
         ad_ = value;
@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (other.ad_ != null) {
         if (ad_ == null) {
-          ad_ = new global::Google.Ads.GoogleAds.V0.Common.Ad();
+          ad_ = new global::Google.Ads.GoogleAds.V0.Resources.Ad();
         }
         Ad.MergeFrom(other.Ad);
       }
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           }
           case 42: {
             if (ad_ == null) {
-              ad_ = new global::Google.Ads.GoogleAds.V0.Common.Ad();
+              ad_ = new global::Google.Ads.GoogleAds.V0.Resources.Ad();
             }
             input.ReadMessage(ad_);
             break;

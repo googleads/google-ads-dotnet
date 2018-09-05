@@ -14,43 +14,50 @@
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples {
+namespace Google.Ads.GoogleAds.Examples
+{
+    public partial class Login : System.Web.UI.Page
+    {
+        /// <summary>
+        /// The login helper.
+        /// </summary>
+        private WebLoginHelper loginHelper;
 
-  public partial class Login : System.Web.UI.Page {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Login"/> class.
+        /// </summary>
+        public Login()
+        {
+            loginHelper = new WebLoginHelper(this);
+        }
 
-    /// <summary>
-    /// The login helper.
-    /// </summary>
-    private WebLoginHelper loginHelper;
+        /// <summary>
+        /// Handles the Load event of the Page control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            // Initialize login helper only in the page load, otherwise session information
+            // won't be available.
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="Login"/> class.
-    /// </summary>
-    public Login() {
-      loginHelper = new WebLoginHelper(this);
+            if (loginHelper.IsLoggedIn)
+            {
+                // Redirect to the main page.
+                Response.Redirect("/Default.aspx");
+            }
+            else if (loginHelper.IsCallbackFromOAuthServer())
+            {
+                loginHelper.ExchangeAuthorizationCodeForCredentials();
+
+                // Redirect to the main page.
+                Response.Redirect("/Default.aspx");
+            }
+            else
+            {
+                // Redirect the user to the OAuth2 login page.
+                loginHelper.RedirectUsertoOAuthServer();
+            }
+        }
     }
-
-    /// <summary>
-    /// Handles the Load event of the Page control.
-    /// </summary>
-    /// <param name="sender">The source of the event.</param>
-    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
-    protected void Page_Load(object sender, EventArgs e) {
-      // Initialize login helper only in the page load, otherwise session information
-      // won't be available.
-
-      if (loginHelper.IsLoggedIn) {
-        // Redirect to the main page.
-        Response.Redirect("/Default.aspx");
-      } else if (loginHelper.IsCallbackFromOAuthServer()) {
-        loginHelper.ExchangeAuthorizationCodeForCredentials();
-
-        // Redirect to the main page.
-        Response.Redirect("/Default.aspx");
-      } else {
-        // Redirect the user to the OAuth2 login page.
-        loginHelper.RedirectUsertoOAuthServer();
-      }
-    }
-  }
 }

@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY2FtcGFpZ25fY3Jp",
             "dGVyaW9uX2Vycm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "cnJvcnMizwMKGkNhbXBhaWduQ3JpdGVyaW9uRXJyb3JFbnVtIrADChZDYW1w",
+            "cnJvcnMi9QMKGkNhbXBhaWduQ3JpdGVyaW9uRXJyb3JFbnVtItYDChZDYW1w",
             "YWlnbkNyaXRlcmlvbkVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
             "ThABEhoKFkNPTkNSRVRFX1RZUEVfUkVRVUlSRUQQAhIZChVJTlZBTElEX1BM",
             "QUNFTUVOVF9VUkwQAxIgChxDQU5OT1RfRVhDTFVERV9DUklURVJJQV9UWVBF",
@@ -36,12 +36,13 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "UkFUSU9OUxAIEi0KKU9QRVJBVE9SX05PVF9TVVBQT1JURURfRk9SX0NSSVRF",
             "UklPTl9UWVBFEAkSQwo/U0hPUFBJTkdfQ0FNUEFJR05fU0FMRVNfQ09VTlRS",
             "WV9OT1RfU1VQUE9SVEVEX0ZPUl9TQUxFU19DSEFOTkVMEAoSHQoZQ0FOTk9U",
-            "X0FERF9FWElTVElOR19GSUVMRBALQtEBCiJjb20uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuZXJyb3JzQhtDYW1wYWlnbkNyaXRlcmlvbkVycm9yUHJvdG9Q",
-            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRz",
-            "Lkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "MFxFcnJvcnNiBnByb3RvMw=="));
+            "X0FERF9FWElTVElOR19GSUVMRBALEiQKIENBTk5PVF9VUERBVEVfTkVHQVRJ",
+            "VkVfQ1JJVEVSSU9OEAxC0QEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5lcnJvcnNCG0NhbXBhaWduQ3JpdGVyaW9uRXJyb3JQcm90b1ABWkRnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xl",
+            "QWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9y",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -214,6 +215,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// updated with UPDATE operation only.
         /// </summary>
         [pbr::OriginalName("CANNOT_ADD_EXISTING_FIELD")] CannotAddExistingField = 11,
+        /// <summary>
+        /// Negative criteria are immutable, so updates are not allowed.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_UPDATE_NEGATIVE_CRITERION")] CannotUpdateNegativeCriterion = 12,
       }
 
     }

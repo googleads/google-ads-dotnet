@@ -140,4 +140,64 @@
   "client_x509_cert_url": "https://test-host"
 }</value>
   </data>
+  <data name="DetailedFailureLog" xml:space="preserve">
+    <value>---------------BEGIN API CALL---------------
+
+Request
+-------
+
+Method Name: TEST_METHOD
+Host: TEST_HOST
+Headers: {
+  "developer-token": "REDACTED",
+  "test_key1": "TEST_VALUE1"
+}
+
+{ "customerId": "1234567890", "name": "API" }
+
+Response
+--------
+Headers: {
+  "request-id": "TEST_REQUEST_ID",
+  "test_key2": "TEST_VALUE2"
+}
+
+Fault: {
+  "StatusCode": 0,
+  "Details": "",
+  "RequestId": "TEST_REQUEST_ID"
+}
+----------------END API CALL----------------</value>
+  </data>
+  <data name="DetailedSuccessLog" xml:space="preserve">
+    <value>---------------BEGIN API CALL---------------
+
+Request
+-------
+
+Method Name: TEST_METHOD
+Host: TEST_HOST
+Headers: {
+  "developer-token": "REDACTED",
+  "test_key1": "TEST_VALUE1"
+}
+
+{ "customerId": "1234567890", "name": "API" }
+
+Response
+--------
+Headers: {
+  "request-id": "TEST_REQUEST_ID",
+  "test_key2": "TEST_VALUE2"
+}
+
+{ "name": "API" }
+----------------END API CALL----------------</value>
+  </data>
+  <data name="SummaryFailureLog" xml:space="preserve">
+    <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: True, FaultMessage: Status(StatusCode=OK, Detail="")</value>
+  </data>
+  <data name="SummarySuccessLog" xml:space="preserve">
+    <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=OK, Detail="")</value>
+  </data>
 </root>

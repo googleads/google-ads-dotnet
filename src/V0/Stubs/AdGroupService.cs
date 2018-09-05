@@ -389,7 +389,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AdGroupOperation(AdGroupOperation other) : this() {
-      UpdateMask = other.updateMask_ != null ? other.UpdateMask.Clone() : null;
+      updateMask_ = other.updateMask_ != null ? other.updateMask_.Clone() : null;
       switch (other.OperationCase) {
         case OperationOneofCase.Create:
           Create = other.Create.Clone();

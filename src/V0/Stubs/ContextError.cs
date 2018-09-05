@@ -25,14 +25,16 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY29udGV4dF9lcnJv",
-            "ci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzImkKEENv",
-            "bnRleHRFcnJvckVudW0iVQoMQ29udGV4dEVycm9yEg8KC1VOU1BFQ0lGSUVE",
-            "EAASCwoHVU5LTk9XThABEicKI09QRVJBVElPTl9OT1RfUEVSTUlUVEVEX0ZP",
-            "Ul9DT05URVhUEAJCxwEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "cnJvcnNCEUNvbnRleHRFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3Jn",
-            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7",
-            "ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3Jz",
-            "ygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
+            "ci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzIpwBChBD",
+            "b250ZXh0RXJyb3JFbnVtIocBCgxDb250ZXh0RXJyb3ISDwoLVU5TUEVDSUZJ",
+            "RUQQABILCgdVTktOT1dOEAESJwojT1BFUkFUSU9OX05PVF9QRVJNSVRURURf",
+            "Rk9SX0NPTlRFWFQQAhIwCixPUEVSQVRJT05fTk9UX1BFUk1JVFRFRF9GT1Jf",
+            "UkVNT1ZFRF9SRVNPVVJDRRADQscBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuZXJyb3JzQhFDb250ZXh0RXJyb3JQcm90b1ABWkRnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
+            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYw",
+            "LkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -165,6 +167,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// The operation is not allowed for the given context.
         /// </summary>
         [pbr::OriginalName("OPERATION_NOT_PERMITTED_FOR_CONTEXT")] OperationNotPermittedForContext = 2,
+        /// <summary>
+        /// The operation is not allowed for removed resources.
+        /// </summary>
+        [pbr::OriginalName("OPERATION_NOT_PERMITTED_FOR_REMOVED_RESOURCE")] OperationNotPermittedForRemovedResource = 3,
       }
 
     }

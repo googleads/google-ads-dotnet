@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcmVjb21tZW5kYXRp",
             "b25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
-            "cyLpAQoXUmVjb21tZW5kYXRpb25FcnJvckVudW0izQEKE1JlY29tbWVuZGF0",
+            "cyKtAgoXUmVjb21tZW5kYXRpb25FcnJvckVudW0ikQIKE1JlY29tbWVuZGF0",
             "aW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGwoXQlVE",
             "R0VUX0FNT1VOVF9UT09fU01BTEwQAhIbChdCVURHRVRfQU1PVU5UX1RPT19M",
             "QVJHRRADEhkKFUlOVkFMSURfQlVER0VUX0FNT1VOVBAEEhAKDFBPTElDWV9F",
             "UlJPUhAFEhYKEklOVkFMSURfQklEX0FNT1VOVBAGEhkKFUFER1JPVVBfS0VZ",
-            "V09SRF9MSU1JVBAHQs4BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "ZXJyb3JzQhhSZWNvbW1lbmRhdGlvbkVycm9yUHJvdG9QAVpEZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
-            "L2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNiBnBy",
-            "b3RvMw=="));
+            "V09SRF9MSU1JVBAHEiIKHlJFQ09NTUVOREFUSU9OX0FMUkVBRFlfQVBQTElF",
+            "RBAIEh4KGlJFQ09NTUVOREFUSU9OX0lOVkFMSURBVEVEEAlCzgEKImNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCGFJlY29tbWVuZGF0aW9u",
+            "RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
+            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -192,6 +193,14 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// The number of keywords in ad group have reached the maximum allowed.
         /// </summary>
         [pbr::OriginalName("ADGROUP_KEYWORD_LIMIT")] AdgroupKeywordLimit = 7,
+        /// <summary>
+        /// The recommendation requested to apply has already been applied.
+        /// </summary>
+        [pbr::OriginalName("RECOMMENDATION_ALREADY_APPLIED")] RecommendationAlreadyApplied = 8,
+        /// <summary>
+        /// The recommendation requested to apply has been invalidated.
+        /// </summary>
+        [pbr::OriginalName("RECOMMENDATION_INVALIDATED")] RecommendationInvalidated = 9,
       }
 
     }

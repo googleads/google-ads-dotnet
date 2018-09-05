@@ -184,7 +184,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The campaign setting is not available for this AdWords account.
+        /// The campaign setting is not available for this Google Ads account.
         /// </summary>
         [pbr::OriginalName("SETTING_TYPE_IS_NOT_AVAILABLE")] SettingTypeIsNotAvailable = 3,
         /// <summary>

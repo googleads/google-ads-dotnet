@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY2FtcGFpZ25fZXJy",
-            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyLPDAoR",
-            "Q2FtcGFpZ25FcnJvckVudW0iuQwKDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVD",
+            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyKWDAoR",
+            "Q2FtcGFpZ25FcnJvckVudW0igAwKDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVD",
             "SUZJRUQQABILCgdVTktOT1dOEAESIQodQ0FOTk9UX1RBUkdFVF9DT05URU5U",
             "X05FVFdPUksQAxIgChxDQU5OT1RfVEFSR0VUX1NFQVJDSF9ORVRXT1JLEAQS",
             "NgoyQ0FOTk9UX1RBUkdFVF9TRUFSQ0hfTkVUV09SS19XSVRIT1VUX0dPT0dM",
@@ -50,23 +50,22 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "SF9UUklBTFMQFxIhCh1DQU1QQUlHTl9MQUJFTF9ET0VTX05PVF9FWElTVBAY",
             "EiEKHUNBTVBBSUdOX0xBQkVMX0FMUkVBRFlfRVhJU1RTEBkSHAoYTUlTU0lO",
             "R19TSE9QUElOR19TRVRUSU5HEBoSIgoeSU5WQUxJRF9TSE9QUElOR19TQUxF",
-            "U19DT1VOVFJZEBsSOQo1U0hPUFBJTkdfTUVSQ0hBTlRfTk9UX0FMTE9XRURf",
-            "Rk9SX1BVUkNIQVNFU19PTl9HT09HTEUQHBJACjxQVVJDSEFTRVNfT05fR09P",
-            "R0xFX05PVF9TVVBQT1JURURfRk9SX1NIT1BQSU5HX1NBTEVTX0NPVU5UUlkQ",
-            "HRIqCiZNSVNTSU5HX1VOSVZFUlNBTF9BUFBfQ0FNUEFJR05fU0VUVElORxAe",
-            "EjsKN0FEVkVSVElTSU5HX0NIQU5ORUxfVFlQRV9OT1RfQVZBSUxBQkxFX0ZP",
-            "Ul9BQ0NPVU5UX1RZUEUQHxIoCiRJTlZBTElEX0FEVkVSVElTSU5HX0NIQU5O",
-            "RUxfU1VCX1RZUEUQIBIsCihBVF9MRUFTVF9PTkVfQ09OVkVSU0lPTl9NVVNU",
-            "X0JFX1NFTEVDVEVEECESHwobQ0FOTk9UX1NFVF9BRF9ST1RBVElPTl9NT0RF",
-            "ECISLworQ0FOTk9UX01PRElGWV9TVEFSVF9EQVRFX0lGX0FMUkVBRFlfU1RB",
-            "UlRFRBAjEhsKF0NBTk5PVF9TRVRfREFURV9UT19QQVNUECQSHwobTUlTU0lO",
-            "R19IT1RFTF9DVVNUT01FUl9MSU5LECUSHwobSU5WQUxJRF9IT1RFTF9DVVNU",
-            "T01FUl9MSU5LECYSGQoVTUlTU0lOR19IT1RFTF9TRVRUSU5HECdCyAEKImNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCEkNhbXBhaWduRXJy",
-            "b3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "U19DT1VOVFJZEBsSKgomTUlTU0lOR19VTklWRVJTQUxfQVBQX0NBTVBBSUdO",
+            "X1NFVFRJTkcQHhI7CjdBRFZFUlRJU0lOR19DSEFOTkVMX1RZUEVfTk9UX0FW",
+            "QUlMQUJMRV9GT1JfQUNDT1VOVF9UWVBFEB8SKAokSU5WQUxJRF9BRFZFUlRJ",
+            "U0lOR19DSEFOTkVMX1NVQl9UWVBFECASLAooQVRfTEVBU1RfT05FX0NPTlZF",
+            "UlNJT05fTVVTVF9CRV9TRUxFQ1RFRBAhEh8KG0NBTk5PVF9TRVRfQURfUk9U",
+            "QVRJT05fTU9ERRAiEi8KK0NBTk5PVF9NT0RJRllfU1RBUlRfREFURV9JRl9B",
+            "TFJFQURZX1NUQVJURUQQIxIbChdDQU5OT1RfU0VUX0RBVEVfVE9fUEFTVBAk",
+            "Eh8KG01JU1NJTkdfSE9URUxfQ1VTVE9NRVJfTElOSxAlEh8KG0lOVkFMSURf",
+            "SE9URUxfQ1VTVE9NRVJfTElOSxAmEhkKFU1JU1NJTkdfSE9URUxfU0VUVElO",
+            "RxAnEkIKPkNBTk5PVF9VU0VfU0hBUkVEX0NBTVBBSUdOX0JVREdFVF9XSElM",
+            "RV9QQVJUX09GX0NBTVBBSUdOX0dST1VQEChCyAEKImNvbS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5lcnJvcnNCEkNhbXBhaWduRXJyb3JQcm90b1ABWkRn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVy",
+            "cm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -303,15 +302,6 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("INVALID_SHOPPING_SALES_COUNTRY")] InvalidShoppingSalesCountry = 27,
         /// <summary>
-        /// Shopping merchant is not enabled for Purchases on Google.
-        /// </summary>
-        [pbr::OriginalName("SHOPPING_MERCHANT_NOT_ALLOWED_FOR_PURCHASES_ON_GOOGLE")] ShoppingMerchantNotAllowedForPurchasesOnGoogle = 28,
-        /// <summary>
-        /// Purchases on Google not enabled for the shopping campaign's sales
-        /// country.
-        /// </summary>
-        [pbr::OriginalName("PURCHASES_ON_GOOGLE_NOT_SUPPORTED_FOR_SHOPPING_SALES_COUNTRY")] PurchasesOnGoogleNotSupportedForShoppingSalesCountry = 29,
-        /// <summary>
         /// A Campaign with channel sub type UNIVERSAL_APP_CAMPAIGN must have a
         /// UniversalAppCampaignSetting specified.
         /// </summary>
@@ -355,6 +345,11 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Hotel setting was not found when creating a hotel ads campaign.
         /// </summary>
         [pbr::OriginalName("MISSING_HOTEL_SETTING")] MissingHotelSetting = 39,
+        /// <summary>
+        /// A Campaign cannot use shared campaign budgets and be part of a campaign
+        /// group.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_USE_SHARED_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP")] CannotUseSharedCampaignBudgetWhilePartOfCampaignGroup = 40,
       }
 
     }

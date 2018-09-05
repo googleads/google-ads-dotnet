@@ -17,76 +17,95 @@ using Google.Ads.GoogleAds.V0.Services;
 using Google.Api.Gax;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V0 {
-
-  /// <summary>
-  /// This code example gets all campaigns. To add campaigns, run AddCampaigns.cs.
-  /// </summary>
-  public class GetCampaigns : ExampleBase {
-
+namespace Google.Ads.GoogleAds.Examples.V0
+{
     /// <summary>
-    /// The page size to be used by default.
+    /// This code example gets all campaigns. To add campaigns, run AddCampaigns.cs.
     /// </summary>
-    private const int PAGE_SIZE = 1_000;
+    public class GetCampaigns : ExampleBase
+    {
+        /// <summary>
+        /// The page size to be used by default.
+        /// </summary>
+        private const int PAGE_SIZE = 1_000;
 
-    /// <summary>
-    /// Main method, to run this code example as a standalone application.
-    /// </summary>
-    /// <param name="args">The command line arguments.</param>
-    public static void Main(string[] args) {
-      GetCampaigns codeExample = new GetCampaigns();
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            GetCampaigns codeExample = new GetCampaigns();
 
-      Console.WriteLine(codeExample.Description);
+            Console.WriteLine(codeExample.Description);
 
-      // The AdWords customer ID for which the call is made.
-      long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+            // The Google Ads customer ID for which the call is made.
+            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-      codeExample.Run(new GoogleAdsClient(), customerId);
-    }
-
-    /// <summary>
-    /// Returns a description about the code example.
-    /// </summary>
-    public override string Description {
-      get {
-        return "This code example gets all campaigns. To add campaigns, run AddCampaigns.cs.";
-      }
-    }
-
-    /// <summary>
-    /// Runs the code example.
-    /// </summary>
-    /// <param name="client">The Google Ads client.</param>
-    /// <param name="customerId">The AdWords customer ID for which the call is made.</param>
-    public void Run(GoogleAdsClient client, long customerId) {
-      // Get the GoogleAdsService.
-      GoogleAdsServiceClient googleAdsService = client.GetService(
-          Services.V0.GoogleAdsService);
-
-      // Create a request that will retrieve all campaigns using pages of the specified page size.
-      SearchGoogleAdsRequest request = new SearchGoogleAdsRequest() {
-        PageSize = PAGE_SIZE,
-        Query = "SELECT campaign.id, campaign.name FROM campaign ORDER BY campaign.id",
-        CustomerId = customerId.ToString()
-      };
-
-      try {
-        // Issue the search request.
-        PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
-            googleAdsService.Search(request);
-
-        // Iterate over all rows in all pages and prints the requested field values for the
-        // campaign in each row.
-        foreach (GoogleAdsRow googleAdsRow in searchPagedResponse) {
-          Console.WriteLine("Campaign with ID {0} and name '{1}' was found.",
-              googleAdsRow.Campaign.Id, googleAdsRow.Campaign.Name);
+            codeExample.Run(new GoogleAdsClient(), customerId);
         }
-      } catch (GoogleAdsException e) {
-        Console.WriteLine("Failure:");
-        Console.WriteLine($"Message: {e.Message}");
-        Console.WriteLine($"Failure: {e.Failure}");
-        Console.WriteLine($"Request ID: {e.RequestId}");
-      }
+
+        /// <summary>
+        /// Returns a description about the code example.
+        /// </summary>
+        public override string Description
+        {
+            get
+            {
+                return "This code example gets all campaigns. To add campaigns, run AddCampaigns.cs.";
+            }
+        }
+
+        /// <summary>
+        /// Runs the code example.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
+        public void Run(GoogleAdsClient client, long customerId)
+        {
+            // Get the GoogleAdsService.
+            GoogleAdsServiceClient googleAdsService = client.GetService(
+                Services.V0.GoogleAdsService);
+
+            // Create a request that will retrieve all campaigns using pages of the specified page size.
+            SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
+            {
+                PageSize = PAGE_SIZE,
+                Query = "SELECT campaign.id, campaign.network_settings.target_content_network " +
+                    "FROM campaign ORDER BY campaign.id",
+                CustomerId = customerId.ToString()
+            };
+
+            try
+            {
+                // Issue the search request.
+                PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
+                    googleAdsService.Search(request);
+
+                foreach (SearchGoogleAdsResponse response in searchPagedResponse.AsRawResponses())
+                {
+                    Console.WriteLine(response.FieldMask.Paths);
+                    foreach (GoogleAdsRow googleAdsRow in response.Results)
+                    {
+                        Console.WriteLine("Campaign with ID {0} and name '{1}' was found.",
+                            googleAdsRow.Campaign.Id, googleAdsRow.Campaign.Name);
+                    }
+                }
+                // Iterate over all rows in all pages and prints the requested field values for the
+                // campaign in each row.
+                foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
+                {
+                    Console.WriteLine("Campaign with ID {0} and name '{1}' was found.",
+                        googleAdsRow.Campaign.Id, googleAdsRow.Campaign.Name);
+                }
+            }
+            catch (GoogleAdsException e)
+            {
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Failure: {e.Failure}");
+                Console.WriteLine($"Request ID: {e.RequestId}");
+            }
+        }
     }
-  }
 }
