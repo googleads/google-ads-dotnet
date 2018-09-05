@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYXV0aGVudGljYXRp",
             "b25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
-            "cyLABAoXQXV0aGVudGljYXRpb25FcnJvckVudW0ipAQKE0F1dGhlbnRpY2F0",
+            "cyKOBQoXQXV0aGVudGljYXRpb25FcnJvckVudW0i8gQKE0F1dGhlbnRpY2F0",
             "aW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGAoUQVVU",
             "SEVOVElDQVRJT05fRVJST1IQAhIeChpDTElFTlRfQ1VTVE9NRVJfSURfSU5W",
             "QUxJRBAFEhYKEkNVU1RPTUVSX05PVF9GT1VORBAIEhoKFkdPT0dMRV9BQ0NP",
@@ -38,12 +38,14 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "WFBJUkVEEBASGAoUT0FVVEhfVE9LRU5fRElTQUJMRUQQERIXChNPQVVUSF9U",
             "T0tFTl9SRVZPS0VEEBISHgoaT0FVVEhfVE9LRU5fSEVBREVSX0lOVkFMSUQQ",
             "ExIYChRMT0dJTl9DT09LSUVfSU5WQUxJRBAUEiMKH0ZBSUxFRF9UT19SRVRS",
-            "SUVWRV9MT0dJTl9DT09LSUUQFRITCg9VU0VSX0lEX0lOVkFMSUQQFkLOAQoi",
-            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IYQXV0aGVudGlj",
-            "YXRpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3JzogID",
-            "R0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
+            "SUVWRV9MT0dJTl9DT09LSUUQFRITCg9VU0VSX0lEX0lOVkFMSUQQFhImCiJU",
+            "V09fU1RFUF9WRVJJRklDQVRJT05fTk9UX0VOUk9MTEVEEBcSJAogQURWQU5D",
+            "RURfUFJPVEVDVElPTl9OT1RfRU5ST0xMRUQQGELOAQoiY29tLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IYQXV0aGVudGljYXRpb25FcnJvclBy",
+            "b3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
+            "YWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xl",
+            "LkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVB",
+            "ZHNcVjBcRXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -181,7 +183,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("CLIENT_CUSTOMER_ID_INVALID")] ClientCustomerIdInvalid = 5,
         /// <summary>
-        /// No customer found for the customer id provided in the header.
+        /// No customer found for the provided customer id.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_FOUND")] CustomerNotFound = 8,
         /// <summary>
@@ -241,6 +243,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// User Id in the header is not a valid id.
         /// </summary>
         [pbr::OriginalName("USER_ID_INVALID")] UserIdInvalid = 22,
+        /// <summary>
+        /// An account administrator changed this account's authentication settings.
+        /// To access this Google Ads account, enable 2-Step Verification in your
+        /// Google account at https://www.google.com/landing/2step.
+        /// </summary>
+        [pbr::OriginalName("TWO_STEP_VERIFICATION_NOT_ENROLLED")] TwoStepVerificationNotEnrolled = 23,
+        /// <summary>
+        /// An account administrator changed this account's authentication settings.
+        /// To access this Google Ads account, enable Advanced Protection in your
+        /// Google account at https://landing.google.com/advancedprotection.
+        /// </summary>
+        [pbr::OriginalName("ADVANCED_PROTECTION_NOT_ENROLLED")] AdvancedProtectionNotEnrolled = 24,
       }
 
     }

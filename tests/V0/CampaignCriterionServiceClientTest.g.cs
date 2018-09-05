@@ -14,155 +14,184 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V0.Services.Tests {
+namespace Google.Ads.GoogleAds.V0.Services.Tests
+{
+    using Google.Ads.GoogleAds.V0.Resources;
+    using Google.Ads.GoogleAds.V0.Services;
+    using apis = Google.Ads.GoogleAds.V0.Services;
+    using Google.Api.Gax;
+    using Google.Api.Gax.Grpc;
+    using Google.Protobuf.WellKnownTypes;
+    using Grpc.Core;
+    using Moq;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using NUnit.Framework;
 
-  using Google.Ads.GoogleAds.V0.Resources;
-  using Google.Ads.GoogleAds.V0.Services;
-  using Grpc.Core;
-  using Moq;
-  using NUnit.Framework;
-  using System.Collections.Generic;
-  using System.Threading.Tasks;
+    /// <summary>Generated unit tests</summary>
+    public class GeneratedCampaignCriterionServiceClientTest
+    {
+        [Test]
+        public void GetCampaignCriterion()
+        {
+            Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
+            GetCampaignCriterionRequest expectedRequest = new GetCampaignCriterionRequest
+            {
+                ResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString(),
+            };
+            CampaignCriterion expectedResponse = new CampaignCriterion
+            {
+                ResourceName = "resourceName2625949903",
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignCriterion(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            string formattedResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString();
+            CampaignCriterion response = client.GetCampaignCriterion(formattedResourceName);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
 
-  /// <summary>Generated unit tests</summary>
-  public class GeneratedCampaignCriterionServiceClientTest {
+        [Test]
+        public async Task GetCampaignCriterionAsync()
+        {
+            Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
+            GetCampaignCriterionRequest expectedRequest = new GetCampaignCriterionRequest
+            {
+                ResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString(),
+            };
+            CampaignCriterion expectedResponse = new CampaignCriterion
+            {
+                ResourceName = "resourceName2625949903",
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignCriterionAsync(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignCriterion>(Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            string formattedResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString();
+            CampaignCriterion response = await client.GetCampaignCriterionAsync(formattedResourceName);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
 
-    [Test]
-    public void GetCampaignCriterion() {
-      Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
-      GetCampaignCriterionRequest expectedRequest = new GetCampaignCriterionRequest {
-        ResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString(),
-      };
-      CampaignCriterion expectedResponse = new CampaignCriterion {
-        ResourceName = "resourceName2625949903",
-      };
-      mockGrpcClient.Setup(x => x.GetCampaignCriterion(expectedRequest, It.IsAny<CallOptions>()))
-          .Returns(expectedResponse);
-      CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
-      string formattedResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString();
-      CampaignCriterion response = client.GetCampaignCriterion(formattedResourceName);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
+        [Test]
+        public void GetCampaignCriterion2()
+        {
+            Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
+            GetCampaignCriterionRequest request = new GetCampaignCriterionRequest
+            {
+                ResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString(),
+            };
+            CampaignCriterion expectedResponse = new CampaignCriterion
+            {
+                ResourceName = "resourceName2625949903",
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignCriterion(request, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CampaignCriterion response = client.GetCampaignCriterion(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task GetCampaignCriterionAsync2()
+        {
+            Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
+            GetCampaignCriterionRequest request = new GetCampaignCriterionRequest
+            {
+                ResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString(),
+            };
+            CampaignCriterion expectedResponse = new CampaignCriterion
+            {
+                ResourceName = "resourceName2625949903",
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignCriterionAsync(request, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignCriterion>(Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CampaignCriterion response = await client.GetCampaignCriterionAsync(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCampaignCriteria()
+        {
+            Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
+            MutateCampaignCriteriaRequest expectedRequest = new MutateCampaignCriteriaRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Operations = { },
+            };
+            MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
+            mockGrpcClient.Setup(x => x.MutateCampaignCriteria(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            IEnumerable<CampaignCriterionOperation> operations = new List<CampaignCriterionOperation>();
+            MutateCampaignCriteriaResponse response = client.MutateCampaignCriteria(customerId, operations);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task MutateCampaignCriteriaAsync()
+        {
+            Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
+            MutateCampaignCriteriaRequest expectedRequest = new MutateCampaignCriteriaRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Operations = { },
+            };
+            MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
+            mockGrpcClient.Setup(x => x.MutateCampaignCriteriaAsync(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            IEnumerable<CampaignCriterionOperation> operations = new List<CampaignCriterionOperation>();
+            MutateCampaignCriteriaResponse response = await client.MutateCampaignCriteriaAsync(customerId, operations);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCampaignCriteria2()
+        {
+            Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
+            MutateCampaignCriteriaRequest request = new MutateCampaignCriteriaRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Operations = { },
+            };
+            MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
+            mockGrpcClient.Setup(x => x.MutateCampaignCriteria(request, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignCriteriaResponse response = client.MutateCampaignCriteria(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task MutateCampaignCriteriaAsync2()
+        {
+            Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
+            MutateCampaignCriteriaRequest request = new MutateCampaignCriteriaRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Operations = { },
+            };
+            MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
+            mockGrpcClient.Setup(x => x.MutateCampaignCriteriaAsync(request, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignCriteriaResponse response = await client.MutateCampaignCriteriaAsync(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
     }
-
-    [Test]
-    public async Task GetCampaignCriterionAsync() {
-      Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
-      GetCampaignCriterionRequest expectedRequest = new GetCampaignCriterionRequest {
-        ResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString(),
-      };
-      CampaignCriterion expectedResponse = new CampaignCriterion {
-        ResourceName = "resourceName2625949903",
-      };
-      mockGrpcClient.Setup(x => x.GetCampaignCriterionAsync(expectedRequest, It.IsAny<CallOptions>()))
-          .Returns(new Grpc.Core.AsyncUnaryCall<CampaignCriterion>(Task.FromResult(expectedResponse), null, null, null, null));
-      CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
-      string formattedResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString();
-      CampaignCriterion response = await client.GetCampaignCriterionAsync(formattedResourceName);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-
-    [Test]
-    public void GetCampaignCriterion2() {
-      Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
-      GetCampaignCriterionRequest request = new GetCampaignCriterionRequest {
-        ResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString(),
-      };
-      CampaignCriterion expectedResponse = new CampaignCriterion {
-        ResourceName = "resourceName2625949903",
-      };
-      mockGrpcClient.Setup(x => x.GetCampaignCriterion(request, It.IsAny<CallOptions>()))
-          .Returns(expectedResponse);
-      CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
-      CampaignCriterion response = client.GetCampaignCriterion(request);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-
-    [Test]
-    public async Task GetCampaignCriterionAsync2() {
-      Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
-      GetCampaignCriterionRequest request = new GetCampaignCriterionRequest {
-        ResourceName = new CampaignCriteriaName("[CUSTOMER]", "[CAMPAIGN_CRITERIA]").ToString(),
-      };
-      CampaignCriterion expectedResponse = new CampaignCriterion {
-        ResourceName = "resourceName2625949903",
-      };
-      mockGrpcClient.Setup(x => x.GetCampaignCriterionAsync(request, It.IsAny<CallOptions>()))
-          .Returns(new Grpc.Core.AsyncUnaryCall<CampaignCriterion>(Task.FromResult(expectedResponse), null, null, null, null));
-      CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
-      CampaignCriterion response = await client.GetCampaignCriterionAsync(request);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-
-    [Test]
-    public void MutateCampaignCriteria() {
-      Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
-      MutateCampaignCriteriaRequest expectedRequest = new MutateCampaignCriteriaRequest {
-        CustomerId = "customerId-1772061412",
-        Operations = { },
-      };
-      MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
-      mockGrpcClient.Setup(x => x.MutateCampaignCriteria(expectedRequest, It.IsAny<CallOptions>()))
-          .Returns(expectedResponse);
-      CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
-      string customerId = "customerId-1772061412";
-      IEnumerable<CampaignCriterionOperation> operations = new List<CampaignCriterionOperation>();
-      MutateCampaignCriteriaResponse response = client.MutateCampaignCriteria(customerId, operations);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-
-    [Test]
-    public async Task MutateCampaignCriteriaAsync() {
-      Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
-      MutateCampaignCriteriaRequest expectedRequest = new MutateCampaignCriteriaRequest {
-        CustomerId = "customerId-1772061412",
-        Operations = { },
-      };
-      MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
-      mockGrpcClient.Setup(x => x.MutateCampaignCriteriaAsync(expectedRequest, It.IsAny<CallOptions>()))
-          .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-      CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
-      string customerId = "customerId-1772061412";
-      IEnumerable<CampaignCriterionOperation> operations = new List<CampaignCriterionOperation>();
-      MutateCampaignCriteriaResponse response = await client.MutateCampaignCriteriaAsync(customerId, operations);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-
-    [Test]
-    public void MutateCampaignCriteria2() {
-      Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
-      MutateCampaignCriteriaRequest request = new MutateCampaignCriteriaRequest {
-        CustomerId = "customerId-1772061412",
-        Operations = { },
-      };
-      MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
-      mockGrpcClient.Setup(x => x.MutateCampaignCriteria(request, It.IsAny<CallOptions>()))
-          .Returns(expectedResponse);
-      CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
-      MutateCampaignCriteriaResponse response = client.MutateCampaignCriteria(request);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-
-    [Test]
-    public async Task MutateCampaignCriteriaAsync2() {
-      Mock<CampaignCriterionService.CampaignCriterionServiceClient> mockGrpcClient = new Mock<CampaignCriterionService.CampaignCriterionServiceClient>(MockBehavior.Strict);
-      MutateCampaignCriteriaRequest request = new MutateCampaignCriteriaRequest {
-        CustomerId = "customerId-1772061412",
-        Operations = { },
-      };
-      MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
-      mockGrpcClient.Setup(x => x.MutateCampaignCriteriaAsync(request, It.IsAny<CallOptions>()))
-          .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-      CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
-      MutateCampaignCriteriaResponse response = await client.MutateCampaignCriteriaAsync(request);
-      Assert.AreEqual(expectedResponse, response);
-      mockGrpcClient.VerifyAll();
-    }
-  }
 }

@@ -17,80 +17,89 @@ using Google.Ads.GoogleAds.V0.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V0 {
-
-  /// <summary>
-  /// This code example applies a given recommendation. To retrieve recommendations for text ads,
-  /// run GetTextAdRecommendations.cs.
-  /// </summary>
-  public class ApplyRecommendation : ExampleBase {
-
+namespace Google.Ads.GoogleAds.Examples.V0
+{
     /// <summary>
-    /// Main method, to run this code example as a standalone application.
+    /// This code example applies a given recommendation. To retrieve recommendations for text ads,
+    /// run GetTextAdRecommendations.cs.
     /// </summary>
-    /// <param name="args">The command line arguments.</param>
-    public static void Main(string[] args) {
-      ApplyRecommendation codeExample = new ApplyRecommendation();
-      Console.WriteLine(codeExample.Description);
+    public class ApplyRecommendation : ExampleBase
+    {
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            ApplyRecommendation codeExample = new ApplyRecommendation();
+            Console.WriteLine(codeExample.Description);
 
-      //The customer ID for which the call is made.
-      int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
+            //The customer ID for which the call is made.
+            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
 
-      // ID of the recommendation to be applied.
-      int recommendationId = int.Parse("INSERT_RECOMMENDATION_ID_HERE");
+            // ID of the recommendation to be applied.
+            int recommendationId = int.Parse("INSERT_RECOMMENDATION_ID_HERE");
 
-      codeExample.Run(new GoogleAdsClient(), customerId, recommendationId);
-    }
-
-    /// <summary>
-    /// Returns a description about the code example.
-    /// </summary>
-    public override string Description {
-      get {
-        return "This code example applies a given recommendation. To retrieve recommendations " +
-            "for text ads, run GetTextAdRecommendations.cs.";
-      }
-    }
-
-    /// <summary>
-    /// Runs the code example.
-    /// </summary>
-    /// <param name="client">The Google Ads client.</param>
-    /// <param name="customerId">The customer ID for which the call is made.</param>
-    /// <param name="recommendationId">ID of the recommendation to apply.</param>
-    public void Run(GoogleAdsClient client, long customerId, long recommendationId) {
-      // Get the RecommendationServiceClient.
-      RecommendationServiceClient service = client.GetService(
-          Services.V0.RecommendationService);
-
-      ApplyRecommendationOperation operation = new ApplyRecommendationOperation() {
-        ResourceName = ResourceNames.Recommendation(customerId, recommendationId),
-
-        // Each recommendation types has optional parameters to override the recommended values.
-        // For example, you can override a recommended ad when a TextAdRecommendation is applied,
-        // as shown below.
-        // Please read https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.ApplyRecommendationOperation
-        // for details.
-        // TextAd = new TextAdParameters() {
-        //   Ad = new Ad() {
-        //     Id = long.Parse("INSERT_AD_ID_HERE")
-        //   }
-        // }
-      };
-
-      try {
-        ApplyRecommendationResponse response = service.ApplyRecommendation(customerId.ToString(),
-            new ApplyRecommendationOperation[] { operation });
-        Console.WriteLine($"Applied {0} recommendation(s):", response.Results.Count);
-        foreach (ApplyRecommendationResult result in response.Results) {
-          Console.WriteLine($"- {result.ResourceName}");
+            codeExample.Run(new GoogleAdsClient(), customerId, recommendationId);
         }
-      } catch (GoogleAdsException e) {
-        Console.WriteLine("Failure:");
-        Console.WriteLine($"Message: {e.Message}");
-        Console.WriteLine($"Failure: {e.Failure}");
-        Console.WriteLine($"Request ID: {e.RequestId}");
-      }
+
+        /// <summary>
+        /// Returns a description about the code example.
+        /// </summary>
+        public override string Description
+        {
+            get
+            {
+                return "This code example applies a given recommendation. To retrieve recommendations " +
+                    "for text ads, run GetTextAdRecommendations.cs.";
+            }
+        }
+
+        /// <summary>
+        /// Runs the code example.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
+        /// <param name="recommendationId">ID of the recommendation to apply.</param>
+        public void Run(GoogleAdsClient client, long customerId, long recommendationId)
+        {
+            // Get the RecommendationServiceClient.
+            RecommendationServiceClient service = client.GetService(
+                Services.V0.RecommendationService);
+
+            ApplyRecommendationOperation operation = new ApplyRecommendationOperation()
+            {
+                ResourceName = ResourceNames.Recommendation(customerId, recommendationId),
+
+                // Each recommendation types has optional parameters to override the recommended values.
+                // For example, you can override a recommended ad when a TextAdRecommendation is applied,
+                // as shown below.
+                // Please read https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.ApplyRecommendationOperation
+                // for details.
+                // TextAd = new TextAdParameters() {
+                //   Ad = new Ad() {
+                //     Id = long.Parse("INSERT_AD_ID_HERE")
+                //   }
+                // }
+            };
+
+            try
+            {
+                ApplyRecommendationResponse response = service.ApplyRecommendation(customerId.ToString(),
+                    new ApplyRecommendationOperation[] { operation });
+                Console.WriteLine($"Applied {0} recommendation(s):", response.Results.Count);
+                foreach (ApplyRecommendationResult result in response.Results)
+                {
+                    Console.WriteLine($"- {result.ResourceName}");
+                }
+            }
+            catch (GoogleAdsException e)
+            {
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Failure: {e.Failure}");
+                Console.WriteLine($"Request ID: {e.RequestId}");
+            }
+        }
     }
-  }
 }

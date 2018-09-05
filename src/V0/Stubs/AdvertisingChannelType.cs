@@ -26,14 +26,14 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZHZlcnRpc2luZ19j",
             "aGFubmVsX3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVu",
-            "dW1zImsKGkFkdmVydGlzaW5nQ2hhbm5lbFR5cGVFbnVtIk0KFkFkdmVydGlz",
-            "aW5nQ2hhbm5lbFR5cGUSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAES",
-            "CgoGU0VBUkNIEAISCQoFSE9URUwQBULMAQohY29tLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYwLmVudW1zQhtBZHZlcnRpc2luZ0NoYW5uZWxUeXBlUHJvdG9Q",
-            "AVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxF",
-            "bnVtc2IGcHJvdG8z"));
+            "dW1zIoYBChpBZHZlcnRpc2luZ0NoYW5uZWxUeXBlRW51bSJoChZBZHZlcnRp",
+            "c2luZ0NoYW5uZWxUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThAB",
+            "EgoKBlNFQVJDSBACEgsKB0RJU1BMQVkQAxIMCghTSE9QUElORxAEEgkKBUhP",
+            "VEVMEAVCzAEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0Ib",
+            "QWR2ZXJ0aXNpbmdDaGFubmVsVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcu",
+            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVt",
+            "cztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1z",
+            "ygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -166,6 +166,15 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Search Network. Includes display bundled, and Search+ campaigns.
         /// </summary>
         [pbr::OriginalName("SEARCH")] Search = 2,
+        /// <summary>
+        /// Google Display Network only.
+        /// </summary>
+        [pbr::OriginalName("DISPLAY")] Display = 3,
+        /// <summary>
+        /// Shopping campaigns serve on the shopping property
+        /// and on google.com search results.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING")] Shopping = 4,
         /// <summary>
         /// Hotel Ads campaigns.
         /// </summary>

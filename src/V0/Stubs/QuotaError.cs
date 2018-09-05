@@ -25,14 +25,15 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcXVvdGFfZXJyb3Iu",
-            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyJrCg5RdW90",
-            "YUVycm9yRW51bSJZCgpRdW90YUVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoH",
-            "VU5LTk9XThABEhYKElJFU09VUkNFX0VYSEFVU1RFRBACEhUKEUFDQ0VTU19Q",
-            "Uk9ISUJJVEVEEANCxQEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "cnJvcnNCD1F1b3RhRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vy",
-            "cm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oC",
-            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyKPAQoOUXVv",
+            "dGFFcnJvckVudW0ifQoKUXVvdGFFcnJvchIPCgtVTlNQRUNJRklFRBAAEgsK",
+            "B1VOS05PV04QARIWChJSRVNPVVJDRV9FWEhBVVNURUQQAhIVChFBQ0NFU1Nf",
+            "UFJPSElCSVRFRBADEiIKHlJFU09VUkNFX1RFTVBPUkFSSUxZX0VYSEFVU1RF",
+            "RBAEQsUBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQg9R",
+            "dW90YUVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNH",
+            "QUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -169,6 +170,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Access is prohibited.
         /// </summary>
         [pbr::OriginalName("ACCESS_PROHIBITED")] AccessProhibited = 3,
+        /// <summary>
+        /// Too many requests in a short amount of time.
+        /// </summary>
+        [pbr::OriginalName("RESOURCE_TEMPORARILY_EXHAUSTED")] ResourceTemporarilyExhausted = 4,
       }
 
     }

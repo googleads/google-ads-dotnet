@@ -134,7 +134,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       resourceName_ = other.resourceName_;
       CriterionId = other.CriterionId;
       status_ = other.status_;
-      QualityInfo = other.qualityInfo_ != null ? other.QualityInfo.Clone() : null;
+      qualityInfo_ = other.qualityInfo_ != null ? other.qualityInfo_.Clone() : null;
       AdGroup = other.AdGroup;
       type_ = other.type_;
       Negative = other.Negative;
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       effectiveCpmBidSource_ = other.effectiveCpmBidSource_;
       effectiveCpvBidSource_ = other.effectiveCpvBidSource_;
       effectivePercentCpcBidSource_ = other.effectivePercentCpcBidSource_;
-      PositionEstimates = other.positionEstimates_ != null ? other.PositionEstimates.Clone() : null;
+      positionEstimates_ = other.positionEstimates_ != null ? other.positionEstimates_.Clone() : null;
       finalUrls_ = other.finalUrls_.Clone();
       TrackingUrlTemplate = other.TrackingUrlTemplate;
       urlCustomParameters_ = other.urlCustomParameters_.Clone();

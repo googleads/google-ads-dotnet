@@ -25,14 +25,15 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF90eXBl",
-            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyJiCg9BZEdy",
-            "b3VwVHlwZUVudW0iTwoLQWRHcm91cFR5cGUSDwoLVU5TUEVDSUZJRUQQABIL",
-            "CgdVTktOT1dOEAESEwoPU0VBUkNIX1NUQU5EQVJEEAISDQoJSE9URUxfQURT",
-            "EAZCwQEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IQQWRH",
-            "cm91cFR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
-            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGq",
-            "Ah1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYwXEVudW1zYgZwcm90bzM="));
+            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyKQAQoPQWRH",
+            "cm91cFR5cGVFbnVtIn0KC0FkR3JvdXBUeXBlEg8KC1VOU1BFQ0lGSUVEEAAS",
+            "CwoHVU5LTk9XThABEhMKD1NFQVJDSF9TVEFOREFSRBACEhQKEERJU1BMQVlf",
+            "U1RBTkRBUkQQAxINCglIT1RFTF9BRFMQBhIWChJTSE9QUElOR19TTUFSVF9B",
+            "RFMQB0LBAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhBB",
+            "ZEdyb3VwVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
+            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjBcRW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -170,9 +171,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("SEARCH_STANDARD")] SearchStandard = 2,
         /// <summary>
+        /// The default ad group type for Display campaigns.
+        /// </summary>
+        [pbr::OriginalName("DISPLAY_STANDARD")] DisplayStandard = 3,
+        /// <summary>
         /// The default ad group type for Hotel campaigns.
         /// </summary>
         [pbr::OriginalName("HOTEL_ADS")] HotelAds = 6,
+        /// <summary>
+        /// The type for ad groups in Smart Shopping campaigns.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_SMART_ADS")] ShoppingSmartAds = 7,
       }
 
     }

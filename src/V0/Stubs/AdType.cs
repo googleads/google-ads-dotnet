@@ -25,16 +25,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF90eXBlLnByb3Rv",
-            "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyLKAQoKQWRUeXBlRW51",
-            "bSK7AQoGQWRUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsK",
+            "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyLhAQoKQWRUeXBlRW51",
+            "bSLSAQoGQWRUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsK",
             "B1RFWFRfQUQQAhIUChBFWFBBTkRFRF9URVhUX0FEEAMSFQoRRFlOQU1JQ19T",
             "RUFSQ0hfQUQQBBIZChVSRVNQT05TSVZFX0RJU1BMQVlfQUQQBRIQCgxDQUxM",
             "X09OTFlfQUQQBhIeChpFWFBBTkRFRF9EWU5BTUlDX1NFQVJDSF9BRBAHEgwK",
-            "CEhPVEVMX0FEEAhCvAEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "bnVtc0ILQWRUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
-            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogID",
-            "R0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVc",
-            "QWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IGcHJvdG8z"));
+            "CEhPVEVMX0FEEAgSFQoRU0hPUFBJTkdfU01BUlRfQUQQCUK8AQohY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQgtBZFR5cGVQcm90b1ABWkJn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2ds",
+            "ZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -193,6 +194,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// The ad is a hotel ad.
         /// </summary>
         [pbr::OriginalName("HOTEL_AD")] HotelAd = 8,
+        /// <summary>
+        /// The ad is a Smart Shopping ad.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_SMART_AD")] ShoppingSmartAd = 9,
       }
 
     }

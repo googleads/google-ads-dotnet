@@ -12,21 +12,21 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace Google.Ads.GoogleAds.Util {
-
-  /// <summary>
-  /// The type of OAuth2 flow.
-  /// </summary>
-  public enum OAuth2Flow {
-
+namespace Google.Ads.GoogleAds.Util
+{
     /// <summary>
-    /// Web and installed application flows.
+    /// The type of OAuth2 flow.
     /// </summary>
-    APPLICATION,
+    public enum OAuth2Flow
+    {
+        /// <summary>
+        /// Web and installed application flows.
+        /// </summary>
+        APPLICATION,
 
-    /// <summary>
-    /// Service account flow.
-    /// </summary>
-    SERVICE_ACCOUNT
-  }
+        /// <summary>
+        /// Service account flow.
+        /// </summary>
+        SERVICE_ACCOUNT
+    }
 }

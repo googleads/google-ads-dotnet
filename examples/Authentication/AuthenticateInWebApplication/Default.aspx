@@ -11,11 +11,14 @@
     <table>
       <tr>
         <td>Login Status</td>
-        <% if (loginHelper.IsLoggedIn) {%>
+        <% if (loginHelper.IsLoggedIn)
+            {%>
         <td>Logged In</td>
         <td>
           <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" /></td>
-        <% } else {%>
+        <% }
+          else
+          {%>
         <td>Not Logged In</td>
         <td>
           <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" /></td>

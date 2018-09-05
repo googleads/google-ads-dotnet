@@ -1,3 +1,16 @@
+0.4.0
+=====
+
+- Added support for Google Ads API v0.3.0. See release notes:
+ https://developers.google.com/google-ads/api/docs/release-notes#030_2018-08-29.
+- New code examples were added to illustrate shared keyword sets, campaign groups and campaign
+ bid modifiers.
+- Added support for logging of API requests and responses.
+- Reformatted the code to match Microsoft's C# coding conventions:
+ https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
+- Updated nuget package references for Grpc.Core and Google.Api.Gax.Grpc to the latest version.
+- Refactored service creation logic.
+
 0.3.0
 =====
 

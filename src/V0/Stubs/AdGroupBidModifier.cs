@@ -27,29 +27,36 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYWRfZ3JvdXBf",
             "YmlkX21vZGlmaWVyLnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5y",
             "ZXNvdXJjZXMaLWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbi9jcml0",
-            "ZXJpYS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIsEE",
-            "ChJBZEdyb3VwQmlkTW9kaWZpZXISFQoNcmVzb3VyY2VfbmFtZRgBIAEoCRIu",
-            "CghhZF9ncm91cBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZRIxCgxjcml0ZXJpb25faWQYAyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50",
-            "NjRWYWx1ZRIyCgxiaWRfbW9kaWZpZXIYBCABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuRG91YmxlVmFsdWUSXwoZaG90ZWxfZGF0ZV9zZWxlY3Rpb25fdHlwZRgF",
-            "IAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Ib3RlbERh",
-            "dGVTZWxlY3Rpb25UeXBlSW5mb0gAEmUKHGhvdGVsX2FkdmFuY2VfYm9va2lu",
-            "Z193aW5kb3cYBiABKAsyPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21t",
-            "b24uSG90ZWxBZHZhbmNlQm9va2luZ1dpbmRvd0luZm9IABJVChRob3RlbF9s",
-            "ZW5ndGhfb2Zfc3RheRgHIAEoCzI1Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmNvbW1vbi5Ib3RlbExlbmd0aE9mU3RheUluZm9IABJRChJob3RlbF9jaGVj",
-            "a19pbl9kYXkYCCABKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21t",
-            "b24uSG90ZWxDaGVja0luRGF5SW5mb0gAQgsKCWNyaXRlcmlvbkLcAQolY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IXQWRHcm91cEJp",
-            "ZE1vZGlmaWVyUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
-            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJj",
-            "ZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPK",
-            "AiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3RvMw=="));
+            "ZXJpYS5wcm90bxo3Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvYmlk",
+            "X21vZGlmaWVyX3NvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBw",
+            "ZXJzLnByb3RvIpkGChJBZEdyb3VwQmlkTW9kaWZpZXISFQoNcmVzb3VyY2Vf",
+            "bmFtZRgBIAEoCRIuCghhZF9ncm91cBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZRIxCgxjcml0ZXJpb25faWQYAyABKAsyGy5nb29nbGUu",
+            "cHJvdG9idWYuSW50NjRWYWx1ZRIyCgxiaWRfbW9kaWZpZXIYBCABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSMwoNYmFzZV9hZF9ncm91cBgJ",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJjChNiaWRfbW9k",
+            "aWZpZXJfc291cmNlGAogASgOMkYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZW51bXMuQmlkTW9kaWZpZXJTb3VyY2VFbnVtLkJpZE1vZGlmaWVyU291cmNl",
+            "El8KGWhvdGVsX2RhdGVfc2VsZWN0aW9uX3R5cGUYBSABKAsyOi5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5jb21tb24uSG90ZWxEYXRlU2VsZWN0aW9uVHlw",
+            "ZUluZm9IABJlChxob3RlbF9hZHZhbmNlX2Jvb2tpbmdfd2luZG93GAYgASgL",
+            "Mj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkhvdGVsQWR2YW5j",
+            "ZUJvb2tpbmdXaW5kb3dJbmZvSAASVQoUaG90ZWxfbGVuZ3RoX29mX3N0YXkY",
+            "ByABKAsyNS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uSG90ZWxM",
+            "ZW5ndGhPZlN0YXlJbmZvSAASUQoSaG90ZWxfY2hlY2tfaW5fZGF5GAggASgL",
+            "MjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkhvdGVsQ2hlY2tJ",
+            "bkRheUluZm9IABI8CgZkZXZpY2UYCyABKAsyKi5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5jb21tb24uRGV2aWNlSW5mb0gAQgsKCWNyaXRlcmlvbkLcAQol",
+            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IXQWRHcm91",
+            "cEJpZE1vZGlmaWVyUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
+            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNv",
+            "dXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJj",
+            "ZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BidModifierSourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier), global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier.Parser, new[]{ "ResourceName", "AdGroup", "CriterionId", "BidModifier", "HotelDateSelectionType", "HotelAdvanceBookingWindow", "HotelLengthOfStay", "HotelCheckInDay" }, new[]{ "Criterion" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier), global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier.Parser, new[]{ "ResourceName", "AdGroup", "CriterionId", "BidModifier", "BaseAdGroup", "BidModifierSource", "HotelDateSelectionType", "HotelAdvanceBookingWindow", "HotelLengthOfStay", "HotelCheckInDay", "Device" }, new[]{ "Criterion" }, null, null)
           }));
     }
     #endregion
@@ -88,6 +95,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       AdGroup = other.AdGroup;
       CriterionId = other.CriterionId;
       BidModifier = other.BidModifier;
+      BaseAdGroup = other.BaseAdGroup;
+      bidModifierSource_ = other.bidModifierSource_;
       switch (other.CriterionCase) {
         case CriterionOneofCase.HotelDateSelectionType:
           HotelDateSelectionType = other.HotelDateSelectionType.Clone();
@@ -100,6 +109,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case CriterionOneofCase.HotelCheckInDay:
           HotelCheckInDay = other.HotelCheckInDay.Clone();
+          break;
+        case CriterionOneofCase.Device:
+          Device = other.Device.Clone();
           break;
       }
 
@@ -177,6 +189,39 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "base_ad_group" field.</summary>
+    public const int BaseAdGroupFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _single_baseAdGroup_codec = pb::FieldCodec.ForClassWrapper<string>(74);
+    private string baseAdGroup_;
+    /// <summary>
+    /// The base ad group from which this draft/trial adgroup bid modifier was
+    /// created. If ad_group is a base ad group then this field will be equal to
+    /// ad_group. If the ad group was created in the draft or trial and has no
+    /// corresponding base ad group, then this field will be null.
+    /// This field is readonly.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BaseAdGroup {
+      get { return baseAdGroup_; }
+      set {
+        baseAdGroup_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bid_modifier_source" field.</summary>
+    public const int BidModifierSourceFieldNumber = 10;
+    private global::Google.Ads.GoogleAds.V0.Enums.BidModifierSourceEnum.Types.BidModifierSource bidModifierSource_ = 0;
+    /// <summary>
+    /// Bid modifier source.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.BidModifierSourceEnum.Types.BidModifierSource BidModifierSource {
+      get { return bidModifierSource_; }
+      set {
+        bidModifierSource_ = value;
+      }
+    }
+
     /// <summary>Field number for the "hotel_date_selection_type" field.</summary>
     public const int HotelDateSelectionTypeFieldNumber = 5;
     /// <summary>
@@ -233,6 +278,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "device" field.</summary>
+    public const int DeviceFieldNumber = 11;
+    /// <summary>
+    /// A device criterion.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.DeviceInfo Device {
+      get { return criterionCase_ == CriterionOneofCase.Device ? (global::Google.Ads.GoogleAds.V0.Common.DeviceInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.Device;
+      }
+    }
+
     private object criterion_;
     /// <summary>Enum of possible cases for the "criterion" oneof.</summary>
     public enum CriterionOneofCase {
@@ -241,6 +300,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       HotelAdvanceBookingWindow = 6,
       HotelLengthOfStay = 7,
       HotelCheckInDay = 8,
+      Device = 11,
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -271,10 +331,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (AdGroup != other.AdGroup) return false;
       if (CriterionId != other.CriterionId) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(BidModifier, other.BidModifier)) return false;
+      if (BaseAdGroup != other.BaseAdGroup) return false;
+      if (BidModifierSource != other.BidModifierSource) return false;
       if (!object.Equals(HotelDateSelectionType, other.HotelDateSelectionType)) return false;
       if (!object.Equals(HotelAdvanceBookingWindow, other.HotelAdvanceBookingWindow)) return false;
       if (!object.Equals(HotelLengthOfStay, other.HotelLengthOfStay)) return false;
       if (!object.Equals(HotelCheckInDay, other.HotelCheckInDay)) return false;
+      if (!object.Equals(Device, other.Device)) return false;
       if (CriterionCase != other.CriterionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -286,10 +349,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (adGroup_ != null) hash ^= AdGroup.GetHashCode();
       if (criterionId_ != null) hash ^= CriterionId.GetHashCode();
       if (bidModifier_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(BidModifier);
+      if (baseAdGroup_ != null) hash ^= BaseAdGroup.GetHashCode();
+      if (BidModifierSource != 0) hash ^= BidModifierSource.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.HotelDateSelectionType) hash ^= HotelDateSelectionType.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.HotelAdvanceBookingWindow) hash ^= HotelAdvanceBookingWindow.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.HotelLengthOfStay) hash ^= HotelLengthOfStay.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.HotelCheckInDay) hash ^= HotelCheckInDay.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.Device) hash ^= Device.GetHashCode();
       hash ^= (int) criterionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -333,6 +399,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(66);
         output.WriteMessage(HotelCheckInDay);
       }
+      if (baseAdGroup_ != null) {
+        _single_baseAdGroup_codec.WriteTagAndValue(output, BaseAdGroup);
+      }
+      if (BidModifierSource != 0) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) BidModifierSource);
+      }
+      if (criterionCase_ == CriterionOneofCase.Device) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Device);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -353,6 +430,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (bidModifier_ != null) {
         size += _single_bidModifier_codec.CalculateSizeWithTag(BidModifier);
       }
+      if (baseAdGroup_ != null) {
+        size += _single_baseAdGroup_codec.CalculateSizeWithTag(BaseAdGroup);
+      }
+      if (BidModifierSource != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) BidModifierSource);
+      }
       if (criterionCase_ == CriterionOneofCase.HotelDateSelectionType) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(HotelDateSelectionType);
       }
@@ -364,6 +447,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (criterionCase_ == CriterionOneofCase.HotelCheckInDay) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(HotelCheckInDay);
+      }
+      if (criterionCase_ == CriterionOneofCase.Device) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Device);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -394,6 +480,14 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           BidModifier = other.BidModifier;
         }
       }
+      if (other.baseAdGroup_ != null) {
+        if (baseAdGroup_ == null || other.BaseAdGroup != "") {
+          BaseAdGroup = other.BaseAdGroup;
+        }
+      }
+      if (other.BidModifierSource != 0) {
+        BidModifierSource = other.BidModifierSource;
+      }
       switch (other.CriterionCase) {
         case CriterionOneofCase.HotelDateSelectionType:
           if (HotelDateSelectionType == null) {
@@ -418,6 +512,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             HotelCheckInDay = new global::Google.Ads.GoogleAds.V0.Common.HotelCheckInDayInfo();
           }
           HotelCheckInDay.MergeFrom(other.HotelCheckInDay);
+          break;
+        case CriterionOneofCase.Device:
+          if (Device == null) {
+            Device = new global::Google.Ads.GoogleAds.V0.Common.DeviceInfo();
+          }
+          Device.MergeFrom(other.Device);
           break;
       }
 
@@ -491,6 +591,26 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             input.ReadMessage(subBuilder);
             HotelCheckInDay = subBuilder;
+            break;
+          }
+          case 74: {
+            string value = _single_baseAdGroup_codec.Read(input);
+            if (baseAdGroup_ == null || value != "") {
+              BaseAdGroup = value;
+            }
+            break;
+          }
+          case 80: {
+            bidModifierSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BidModifierSourceEnum.Types.BidModifierSource) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            global::Google.Ads.GoogleAds.V0.Common.DeviceInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.DeviceInfo();
+            if (criterionCase_ == CriterionOneofCase.Device) {
+              subBuilder.MergeFrom(Device);
+            }
+            input.ReadMessage(subBuilder);
+            Device = subBuilder;
             break;
           }
         }

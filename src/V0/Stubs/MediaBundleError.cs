@@ -248,7 +248,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("UNEXPECTED_SIZE")] UnexpectedSize = 20,
         /// <summary>
-        /// Google Web Designer not created for "AdWords" environment.
+        /// Google Web Designer not created for "Google Ads" environment.
         /// </summary>
         [pbr::OriginalName("UNSUPPORTED_GOOGLE_WEB_DESIGNER_ENVIRONMENT")] UnsupportedGoogleWebDesignerEnvironment = 21,
         /// <summary>

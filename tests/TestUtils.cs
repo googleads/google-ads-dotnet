@@ -1,0 +1,70 @@
+﻿// Copyright 2018 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+using Google.Ads.GoogleAds.Lib;
+using Google.Ads.GoogleAds.V0.Errors;
+using Google.Protobuf;
+using Grpc.Core;
+using System.IO;
+
+namespace Google.Ads.GoogleAds.Tests
+{
+    internal class TestUtils
+    {
+        /// <summary>
+        /// Creates an <see cref="RpcException"/> for testing purposes.
+        /// </summary>
+        internal static RpcException CreateRpcException(string errorMessage,
+            string errorTrigger, Metadata responseMetadata)
+        {
+            GoogleAdsFailure failure = new GoogleAdsFailure();
+            failure.Errors.Add(new GoogleAdsError()
+            {
+                ErrorCode = new ErrorCode()
+                {
+                    DistinctError = DistinctErrorEnum.Types.DistinctError.DuplicateElement
+                },
+                Location = new ErrorLocation()
+                {
+                    OperationIndex = 1,
+                },
+                Message = errorMessage,
+                Trigger = new V0.Common.Value()
+                {
+                    StringValue = errorTrigger
+                }
+            });
+
+            using (MemoryStream memoryStream = new MemoryStream())
+            {
+                failure.WriteTo(memoryStream);
+                // TODO(Anash): Uncomment once Grpc allows periods in metadata key names.
+                // responseMetadata.Add(GoogleAdsException.FAILURE_KEY,
+                //     memoryStream.ToArray());
+            }
+
+            return new RpcException(Status.DefaultSuccess, responseMetadata);
+        }
+
+        /// <summary>
+        /// Creates an <see cref="GoogleAdsException"/> for testing purposes.
+        /// </summary>
+        internal static GoogleAdsException CreateException(string errorMessage,
+            string errorTrigger, Metadata responseMetadata)
+        {
+            return GoogleAdsException.Create(CreateRpcException(errorMessage, errorTrigger,
+                responseMetadata));
+        }
+    }
+}
