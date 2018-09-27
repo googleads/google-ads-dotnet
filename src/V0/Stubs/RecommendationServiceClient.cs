@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -219,7 +218,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -228,7 +227,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -259,7 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -268,7 +267,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -355,7 +354,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::Recommendation> GetRecommendationAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetRecommendationAsync(
-                new gagvs::GetRecommendationRequest
+                new GetRecommendationRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -394,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::Recommendation GetRecommendation(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetRecommendation(
-                new gagvs::GetRecommendationRequest
+                new GetRecommendationRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -413,7 +412,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::Recommendation> GetRecommendationAsync(
-            gagvs::GetRecommendationRequest request,
+            GetRecommendationRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -432,7 +431,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::Recommendation> GetRecommendationAsync(
-            gagvs::GetRecommendationRequest request,
+            GetRecommendationRequest request,
             st::CancellationToken cancellationToken) => GetRecommendationAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -450,7 +449,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::Recommendation GetRecommendation(
-            gagvs::GetRecommendationRequest request,
+            GetRecommendationRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -471,11 +470,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::ApplyRecommendationResponse> ApplyRecommendationAsync(
+        public virtual stt::Task<ApplyRecommendationResponse> ApplyRecommendationAsync(
             string customerId,
-            scg::IEnumerable<gagvs::ApplyRecommendationOperation> operations,
+            scg::IEnumerable<ApplyRecommendationOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => ApplyRecommendationAsync(
-                new gagvs::ApplyRecommendationRequest
+                new ApplyRecommendationRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -497,9 +496,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::ApplyRecommendationResponse> ApplyRecommendationAsync(
+        public virtual stt::Task<ApplyRecommendationResponse> ApplyRecommendationAsync(
             string customerId,
-            scg::IEnumerable<gagvs::ApplyRecommendationOperation> operations,
+            scg::IEnumerable<ApplyRecommendationOperation> operations,
             st::CancellationToken cancellationToken) => ApplyRecommendationAsync(
                 customerId,
                 operations,
@@ -520,11 +519,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::ApplyRecommendationResponse ApplyRecommendation(
+        public virtual ApplyRecommendationResponse ApplyRecommendation(
             string customerId,
-            scg::IEnumerable<gagvs::ApplyRecommendationOperation> operations,
+            scg::IEnumerable<ApplyRecommendationOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => ApplyRecommendation(
-                new gagvs::ApplyRecommendationRequest
+                new ApplyRecommendationRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -543,8 +542,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::ApplyRecommendationResponse> ApplyRecommendationAsync(
-            gagvs::ApplyRecommendationRequest request,
+        public virtual stt::Task<ApplyRecommendationResponse> ApplyRecommendationAsync(
+            ApplyRecommendationRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -562,8 +561,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::ApplyRecommendationResponse> ApplyRecommendationAsync(
-            gagvs::ApplyRecommendationRequest request,
+        public virtual stt::Task<ApplyRecommendationResponse> ApplyRecommendationAsync(
+            ApplyRecommendationRequest request,
             st::CancellationToken cancellationToken) => ApplyRecommendationAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -580,8 +579,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::ApplyRecommendationResponse ApplyRecommendation(
-            gagvs::ApplyRecommendationRequest request,
+        public virtual ApplyRecommendationResponse ApplyRecommendation(
+            ApplyRecommendationRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -594,8 +593,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class RecommendationServiceClientImpl : RecommendationServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetRecommendationRequest, gagvr::Recommendation> _callGetRecommendation;
-        private readonly gaxgrpc::ApiCall<gagvs::ApplyRecommendationRequest, gagvs::ApplyRecommendationResponse> _callApplyRecommendation;
+        private readonly gaxgrpc::ApiCall<GetRecommendationRequest, gagvr::Recommendation> _callGetRecommendation;
+        private readonly gaxgrpc::ApiCall<ApplyRecommendationRequest, ApplyRecommendationResponse> _callApplyRecommendation;
 
         /// <summary>
         /// Constructs a client wrapper for the RecommendationService service, with the specified gRPC client and settings.
@@ -607,9 +606,9 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             RecommendationServiceSettings effectiveSettings = settings ?? RecommendationServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetRecommendation = clientHelper.BuildApiCall<gagvs::GetRecommendationRequest, gagvr::Recommendation>(
+            _callGetRecommendation = clientHelper.BuildApiCall<GetRecommendationRequest, gagvr::Recommendation>(
                 GrpcClient.GetRecommendationAsync, GrpcClient.GetRecommendation, effectiveSettings.GetRecommendationSettings);
-            _callApplyRecommendation = clientHelper.BuildApiCall<gagvs::ApplyRecommendationRequest, gagvs::ApplyRecommendationResponse>(
+            _callApplyRecommendation = clientHelper.BuildApiCall<ApplyRecommendationRequest, ApplyRecommendationResponse>(
                 GrpcClient.ApplyRecommendationAsync, GrpcClient.ApplyRecommendation, effectiveSettings.ApplyRecommendationSettings);
             Modify_ApiCall(ref _callGetRecommendation);
             Modify_GetRecommendationApiCall(ref _callGetRecommendation);
@@ -628,8 +627,8 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetRecommendationApiCall(ref gaxgrpc::ApiCall<gagvs::GetRecommendationRequest, gagvr::Recommendation> call);
-        partial void Modify_ApplyRecommendationApiCall(ref gaxgrpc::ApiCall<gagvs::ApplyRecommendationRequest, gagvs::ApplyRecommendationResponse> call);
+        partial void Modify_GetRecommendationApiCall(ref gaxgrpc::ApiCall<GetRecommendationRequest, gagvr::Recommendation> call);
+        partial void Modify_ApplyRecommendationApiCall(ref gaxgrpc::ApiCall<ApplyRecommendationRequest, ApplyRecommendationResponse> call);
         partial void OnConstruction(RecommendationService.RecommendationServiceClient grpcClient, RecommendationServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -640,8 +639,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetRecommendationRequest(ref gagvs::GetRecommendationRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_ApplyRecommendationRequest(ref gagvs::ApplyRecommendationRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetRecommendationRequest(ref GetRecommendationRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_ApplyRecommendationRequest(ref ApplyRecommendationRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested recommendation in full detail.
@@ -656,7 +655,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::Recommendation> GetRecommendationAsync(
-            gagvs::GetRecommendationRequest request,
+            GetRecommendationRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetRecommendationRequest(ref request, ref callSettings);
@@ -676,7 +675,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::Recommendation GetRecommendation(
-            gagvs::GetRecommendationRequest request,
+            GetRecommendationRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetRecommendationRequest(ref request, ref callSettings);
@@ -695,8 +694,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<gagvs::ApplyRecommendationResponse> ApplyRecommendationAsync(
-            gagvs::ApplyRecommendationRequest request,
+        public override stt::Task<ApplyRecommendationResponse> ApplyRecommendationAsync(
+            ApplyRecommendationRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_ApplyRecommendationRequest(ref request, ref callSettings);
@@ -715,8 +714,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override gagvs::ApplyRecommendationResponse ApplyRecommendation(
-            gagvs::ApplyRecommendationRequest request,
+        public override ApplyRecommendationResponse ApplyRecommendation(
+            ApplyRecommendationRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_ApplyRecommendationRequest(ref request, ref callSettings);

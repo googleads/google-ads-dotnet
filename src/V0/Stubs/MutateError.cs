@@ -25,15 +25,16 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvbXV0YXRlX2Vycm9y",
-            "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMimQEKD011",
-            "dGF0ZUVycm9yRW51bSKFAQoLTXV0YXRlRXJyb3ISDwoLVU5TUEVDSUZJRUQQ",
+            "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMisQEKD011",
+            "dGF0ZUVycm9yRW51bSKdAQoLTXV0YXRlRXJyb3ISDwoLVU5TUEVDSUZJRUQQ",
             "ABILCgdVTktOT1dOEAESFgoSUkVTT1VSQ0VfTk9UX0ZPVU5EEAMSIQodSURf",
             "RVhJU1RTX0lOX01VTFRJUExFX01VVEFURVMQBxIdChlJTkNPTlNJU1RFTlRf",
-            "RklFTERfVkFMVUVTEAhCxgEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lcnJvcnNCEE11dGF0ZUVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5v",
-            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9y",
-            "cztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJv",
-            "cnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNiBnByb3RvMw=="));
+            "RklFTERfVkFMVUVTEAgSFgoSTVVUQVRFX05PVF9BTExPV0VEEAlCxgEKImNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCEE11dGF0ZUVycm9y",
+            "UHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWMFxFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -175,6 +176,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// data.
         /// </summary>
         [pbr::OriginalName("INCONSISTENT_FIELD_VALUES")] InconsistentFieldValues = 8,
+        /// <summary>
+        /// Mutates are not allowed for the requested resource.
+        /// </summary>
+        [pbr::OriginalName("MUTATE_NOT_ALLOWED")] MutateNotAllowed = 9,
       }
 
     }

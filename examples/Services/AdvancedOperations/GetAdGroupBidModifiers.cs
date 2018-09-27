@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
             GoogleAdsServiceClient googleAdsService =
                 client.GetService(Services.V0.GoogleAdsService);
 
-            String searchQuery =
+            string searchQuery =
               "SELECT ad_group.id, ad_group_bid_modifier.criterion_id, "
                   + "ad_group_bid_modifier.bid_modifier, ad_group_bid_modifier.device.type, "
                   + "campaign.id FROM ad_group_bid_modifier";

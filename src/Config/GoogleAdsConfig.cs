@@ -13,13 +13,9 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Util;
-using Google.Api.Gax;
-using Google.Api.Gax.Grpc;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Auth.OAuth2.Flows;
 using Google.Apis.Auth.OAuth2.Responses;
-
-using Grpc.Core;
 
 using Microsoft.Extensions.Configuration;
 

@@ -25,11 +25,12 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF90eXBl",
-            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyKQAQoPQWRH",
-            "cm91cFR5cGVFbnVtIn0KC0FkR3JvdXBUeXBlEg8KC1VOU1BFQ0lGSUVEEAAS",
-            "CwoHVU5LTk9XThABEhMKD1NFQVJDSF9TVEFOREFSRBACEhQKEERJU1BMQVlf",
-            "U1RBTkRBUkQQAxINCglIT1RFTF9BRFMQBhIWChJTSE9QUElOR19TTUFSVF9B",
-            "RFMQB0LBAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhBB",
+            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyK9AQoPQWRH",
+            "cm91cFR5cGVFbnVtIqkBCgtBZEdyb3VwVHlwZRIPCgtVTlNQRUNJRklFRBAA",
+            "EgsKB1VOS05PV04QARITCg9TRUFSQ0hfU1RBTkRBUkQQAhIUChBESVNQTEFZ",
+            "X1NUQU5EQVJEEAMSGAoUU0hPUFBJTkdfUFJPRFVDVF9BRFMQBBINCglIT1RF",
+            "TF9BRFMQBhIWChJTSE9QUElOR19TTUFSVF9BRFMQBxIQCgxWSURFT19CVU1Q",
+            "RVIQCELBAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhBB",
             "ZEdyb3VwVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
             "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
             "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
@@ -175,6 +176,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("DISPLAY_STANDARD")] DisplayStandard = 3,
         /// <summary>
+        /// The ad group type for Shopping campaigns serving standard product ads.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_PRODUCT_ADS")] ShoppingProductAds = 4,
+        /// <summary>
         /// The default ad group type for Hotel campaigns.
         /// </summary>
         [pbr::OriginalName("HOTEL_ADS")] HotelAds = 6,
@@ -182,6 +187,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// The type for ad groups in Smart Shopping campaigns.
         /// </summary>
         [pbr::OriginalName("SHOPPING_SMART_ADS")] ShoppingSmartAds = 7,
+        /// <summary>
+        /// Short unskippable in-stream video ads.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_BUMPER")] VideoBumper = 8,
       }
 
     }

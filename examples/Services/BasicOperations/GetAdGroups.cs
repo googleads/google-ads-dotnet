@@ -66,16 +66,11 @@ namespace Google.Ads.GoogleAds.Examples.V0
         public void Run(GoogleAdsClient client, long customerId, long? campaignId)
         {
             // Get the AdGroupService.
-            GoogleAdsServiceClient googleAdsService = client.GetService(Services.V0.GoogleAdsService);
+            GoogleAdsServiceClient googleAdsService = client.GetService(
+                Services.V0.GoogleAdsService);
 
             // Create the search query.
-            String searchQuery =
-              $@"SELECT
-               campaign.id,
-               ad_group.id,
-               ad_group.name
-           FROM
-               ad_group";
+            string searchQuery = "SELECT campaign.id, ad_group.id, ad_group.name FROM ad_group";
             if (campaignId != null)
             {
                 searchQuery += $" WHERE campaign.id = {campaignId}";
@@ -93,8 +88,9 @@ namespace Google.Ads.GoogleAds.Examples.V0
                     AdGroup adGroup = googleAdsRow.AdGroup;
                     if (adGroup != null)
                     {
-                        Console.WriteLine("Ad group with ID {0} and name '{1}' was found in campaign with " +
-                            "ID: {2}.", adGroup.Id, adGroup.Name, googleAdsRow.Campaign.Id);
+                        Console.WriteLine("Ad group with ID {0} and name '{1}' was found in " +
+                            "campaign with ID: {2}.", adGroup.Id, adGroup.Name,
+                            googleAdsRow.Campaign.Id);
                     }
                     else
                     {

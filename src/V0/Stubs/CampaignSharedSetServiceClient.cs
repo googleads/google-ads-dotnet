@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -219,7 +218,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -228,7 +227,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -259,7 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -268,7 +267,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -355,7 +354,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::CampaignSharedSet> GetCampaignSharedSetAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetCampaignSharedSetAsync(
-                new gagvs::GetCampaignSharedSetRequest
+                new GetCampaignSharedSetRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -394,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::CampaignSharedSet GetCampaignSharedSet(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetCampaignSharedSet(
-                new gagvs::GetCampaignSharedSetRequest
+                new GetCampaignSharedSetRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -413,7 +412,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::CampaignSharedSet> GetCampaignSharedSetAsync(
-            gagvs::GetCampaignSharedSetRequest request,
+            GetCampaignSharedSetRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -432,7 +431,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::CampaignSharedSet> GetCampaignSharedSetAsync(
-            gagvs::GetCampaignSharedSetRequest request,
+            GetCampaignSharedSetRequest request,
             st::CancellationToken cancellationToken) => GetCampaignSharedSetAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -450,7 +449,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::CampaignSharedSet GetCampaignSharedSet(
-            gagvs::GetCampaignSharedSetRequest request,
+            GetCampaignSharedSetRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -471,11 +470,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
+        public virtual stt::Task<MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
             string customerId,
-            scg::IEnumerable<gagvs::CampaignSharedSetOperation> operations,
+            scg::IEnumerable<CampaignSharedSetOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaignSharedSetsAsync(
-                new gagvs::MutateCampaignSharedSetsRequest
+                new MutateCampaignSharedSetsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -497,9 +496,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
+        public virtual stt::Task<MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
             string customerId,
-            scg::IEnumerable<gagvs::CampaignSharedSetOperation> operations,
+            scg::IEnumerable<CampaignSharedSetOperation> operations,
             st::CancellationToken cancellationToken) => MutateCampaignSharedSetsAsync(
                 customerId,
                 operations,
@@ -520,11 +519,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateCampaignSharedSetsResponse MutateCampaignSharedSets(
+        public virtual MutateCampaignSharedSetsResponse MutateCampaignSharedSets(
             string customerId,
-            scg::IEnumerable<gagvs::CampaignSharedSetOperation> operations,
+            scg::IEnumerable<CampaignSharedSetOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaignSharedSets(
-                new gagvs::MutateCampaignSharedSetsRequest
+                new MutateCampaignSharedSetsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -543,8 +542,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
-            gagvs::MutateCampaignSharedSetsRequest request,
+        public virtual stt::Task<MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
+            MutateCampaignSharedSetsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -562,8 +561,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
-            gagvs::MutateCampaignSharedSetsRequest request,
+        public virtual stt::Task<MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
+            MutateCampaignSharedSetsRequest request,
             st::CancellationToken cancellationToken) => MutateCampaignSharedSetsAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -580,8 +579,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateCampaignSharedSetsResponse MutateCampaignSharedSets(
-            gagvs::MutateCampaignSharedSetsRequest request,
+        public virtual MutateCampaignSharedSetsResponse MutateCampaignSharedSets(
+            MutateCampaignSharedSetsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -594,8 +593,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class CampaignSharedSetServiceClientImpl : CampaignSharedSetServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetCampaignSharedSetRequest, gagvr::CampaignSharedSet> _callGetCampaignSharedSet;
-        private readonly gaxgrpc::ApiCall<gagvs::MutateCampaignSharedSetsRequest, gagvs::MutateCampaignSharedSetsResponse> _callMutateCampaignSharedSets;
+        private readonly gaxgrpc::ApiCall<GetCampaignSharedSetRequest, gagvr::CampaignSharedSet> _callGetCampaignSharedSet;
+        private readonly gaxgrpc::ApiCall<MutateCampaignSharedSetsRequest, MutateCampaignSharedSetsResponse> _callMutateCampaignSharedSets;
 
         /// <summary>
         /// Constructs a client wrapper for the CampaignSharedSetService service, with the specified gRPC client and settings.
@@ -607,9 +606,9 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             CampaignSharedSetServiceSettings effectiveSettings = settings ?? CampaignSharedSetServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetCampaignSharedSet = clientHelper.BuildApiCall<gagvs::GetCampaignSharedSetRequest, gagvr::CampaignSharedSet>(
+            _callGetCampaignSharedSet = clientHelper.BuildApiCall<GetCampaignSharedSetRequest, gagvr::CampaignSharedSet>(
                 GrpcClient.GetCampaignSharedSetAsync, GrpcClient.GetCampaignSharedSet, effectiveSettings.GetCampaignSharedSetSettings);
-            _callMutateCampaignSharedSets = clientHelper.BuildApiCall<gagvs::MutateCampaignSharedSetsRequest, gagvs::MutateCampaignSharedSetsResponse>(
+            _callMutateCampaignSharedSets = clientHelper.BuildApiCall<MutateCampaignSharedSetsRequest, MutateCampaignSharedSetsResponse>(
                 GrpcClient.MutateCampaignSharedSetsAsync, GrpcClient.MutateCampaignSharedSets, effectiveSettings.MutateCampaignSharedSetsSettings);
             Modify_ApiCall(ref _callGetCampaignSharedSet);
             Modify_GetCampaignSharedSetApiCall(ref _callGetCampaignSharedSet);
@@ -628,8 +627,8 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetCampaignSharedSetApiCall(ref gaxgrpc::ApiCall<gagvs::GetCampaignSharedSetRequest, gagvr::CampaignSharedSet> call);
-        partial void Modify_MutateCampaignSharedSetsApiCall(ref gaxgrpc::ApiCall<gagvs::MutateCampaignSharedSetsRequest, gagvs::MutateCampaignSharedSetsResponse> call);
+        partial void Modify_GetCampaignSharedSetApiCall(ref gaxgrpc::ApiCall<GetCampaignSharedSetRequest, gagvr::CampaignSharedSet> call);
+        partial void Modify_MutateCampaignSharedSetsApiCall(ref gaxgrpc::ApiCall<MutateCampaignSharedSetsRequest, MutateCampaignSharedSetsResponse> call);
         partial void OnConstruction(CampaignSharedSetService.CampaignSharedSetServiceClient grpcClient, CampaignSharedSetServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -640,8 +639,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetCampaignSharedSetRequest(ref gagvs::GetCampaignSharedSetRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_MutateCampaignSharedSetsRequest(ref gagvs::MutateCampaignSharedSetsRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetCampaignSharedSetRequest(ref GetCampaignSharedSetRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateCampaignSharedSetsRequest(ref MutateCampaignSharedSetsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested campaign shared set in full detail.
@@ -656,7 +655,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::CampaignSharedSet> GetCampaignSharedSetAsync(
-            gagvs::GetCampaignSharedSetRequest request,
+            GetCampaignSharedSetRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetCampaignSharedSetRequest(ref request, ref callSettings);
@@ -676,7 +675,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::CampaignSharedSet GetCampaignSharedSet(
-            gagvs::GetCampaignSharedSetRequest request,
+            GetCampaignSharedSetRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetCampaignSharedSetRequest(ref request, ref callSettings);
@@ -695,8 +694,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<gagvs::MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
-            gagvs::MutateCampaignSharedSetsRequest request,
+        public override stt::Task<MutateCampaignSharedSetsResponse> MutateCampaignSharedSetsAsync(
+            MutateCampaignSharedSetsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateCampaignSharedSetsRequest(ref request, ref callSettings);
@@ -715,8 +714,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override gagvs::MutateCampaignSharedSetsResponse MutateCampaignSharedSets(
-            gagvs::MutateCampaignSharedSetsRequest request,
+        public override MutateCampaignSharedSetsResponse MutateCampaignSharedSets(
+            MutateCampaignSharedSetsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateCampaignSharedSetsRequest(ref request, ref callSettings);

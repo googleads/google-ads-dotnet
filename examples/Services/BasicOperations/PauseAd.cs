@@ -56,7 +56,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example pauses a given ad. To list all ads, run GetExpandedTextAds.cs.";
+                return "This code example pauses a given ad. To list all ads, run " +
+                    "GetExpandedTextAds.cs.";
             }
         }
 
@@ -70,7 +71,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         public void Run(GoogleAdsClient client, long customerId, long adGroupId, long adId)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient adGroupAdService = client.GetService(Services.V0.AdGroupAdService);
+            AdGroupAdServiceClient adGroupAdService = client.GetService(
+                Services.V0.AdGroupAdService);
 
             // Create the ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd
@@ -85,8 +87,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Set the Update field to the ad group ad object.
                 Update = adGroupAd,
 
-                // Use the FieldMasks utility to set the UpdateMask field to  a list of all modified
-                // fields of the ad group ad.
+                // Use the FieldMasks utility to set the UpdateMask field to  a list of all
+                // modified fields of the ad group ad.
                 UpdateMask = FieldMasks.AllSetFieldsOf(adGroupAd)
             };
             try
@@ -99,7 +101,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Display the results.
                 foreach (MutateAdGroupAdResult result in response.Results)
                 {
-                    Console.WriteLine($"Ad with resource name = {result.ResourceName} was paused.");
+                    Console.WriteLine($"Ad with resource name = {result.ResourceName} was " +
+                        "paused.");
                 }
             }
             catch (GoogleAdsException e)

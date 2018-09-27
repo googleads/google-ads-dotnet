@@ -129,7 +129,8 @@ namespace Google.Ads.GoogleAds.Lib
             // and not merged, we will instead set each of them using reflection.
             PropertyInfo[] callSettingProperties = serviceSettings.GetType()
                 .GetProperties(BindingFlags.Public | BindingFlags.Instance)
-                .Where(delegate(PropertyInfo x) {
+                .Where(delegate (PropertyInfo x)
+                {
                     return x.PropertyType == typeof(CallSettings) && x.Name != "CallSettings";
                 }
             ).ToArray();

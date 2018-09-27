@@ -61,9 +61,9 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return " This code example illustrates how to update an ad group, setting its status " +
-                    "to 'PAUSED', and its CPC bid to a new value if specified. To create an ad group, " +
-                    "run AddAdGroup.cs.";
+                return " This code example illustrates how to update an ad group, setting its " +
+                    "status to 'PAUSED', and its CPC bid to a new value if specified. To create " +
+                    "an ad group, run AddAdGroup.cs.";
             }
         }
 
@@ -108,8 +108,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Display the results.
                 MutateAdGroupResult adGroupResult = retVal.Results[0];
 
-                Console.WriteLine($"Ad group with resource name '{adGroupResult.ResourceName}' was " +
-                    "updated.");
+                Console.WriteLine($"Ad group with resource name '{adGroupResult.ResourceName}' " +
+                    "was updated.");
             }
             catch (GoogleAdsException e)
             {

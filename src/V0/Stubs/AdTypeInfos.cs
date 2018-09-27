@@ -57,11 +57,12 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJQChtFeHBhbmRlZER5",
             "bmFtaWNTZWFyY2hBZEluZm8SMQoLZGVzY3JpcHRpb24YASABKAsyHC5nb29n",
             "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUiDQoLSG90ZWxBZEluZm8iFQoTU2hv",
-            "cHBpbmdTbWFydEFkSW5mb0LGAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLmNvbW1vbkIQQWRUeXBlSW5mb3NQcm90b1ABWkRnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvY29t",
-            "bW9uO2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkNv",
-            "bW1vbsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXENvbW1vbmIGcHJvdG8z"));
+            "cHBpbmdTbWFydEFkSW5mbyIXChVTaG9wcGluZ1Byb2R1Y3RBZEluZm9CxgEK",
+            "ImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CEEFkVHlwZUlu",
+            "Zm9zUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5H",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMFxDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -72,7 +73,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.CallOnlyAdInfo), global::Google.Ads.GoogleAds.V0.Common.CallOnlyAdInfo.Parser, new[]{ "CountryCode", "PhoneNumber", "BusinessName", "Description1", "Description2", "CallTracked", "DisableCallConversion", "PhoneNumberVerificationUrl" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ExpandedDynamicSearchAdInfo), global::Google.Ads.GoogleAds.V0.Common.ExpandedDynamicSearchAdInfo.Parser, new[]{ "Description" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.HotelAdInfo), global::Google.Ads.GoogleAds.V0.Common.HotelAdInfo.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ShoppingSmartAdInfo), global::Google.Ads.GoogleAds.V0.Common.ShoppingSmartAdInfo.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ShoppingSmartAdInfo), global::Google.Ads.GoogleAds.V0.Common.ShoppingSmartAdInfo.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ShoppingProductAdInfo), global::Google.Ads.GoogleAds.V0.Common.ShoppingProductAdInfo.Parser, null, null, null, null)
           }));
     }
     #endregion
@@ -1723,6 +1725,110 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(ShoppingSmartAdInfo other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A standard Shopping ad.
+  /// </summary>
+  public sealed partial class ShoppingProductAdInfo : pb::IMessage<ShoppingProductAdInfo> {
+    private static readonly pb::MessageParser<ShoppingProductAdInfo> _parser = new pb::MessageParser<ShoppingProductAdInfo>(() => new ShoppingProductAdInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ShoppingProductAdInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.AdTypeInfosReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ShoppingProductAdInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ShoppingProductAdInfo(ShoppingProductAdInfo other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ShoppingProductAdInfo Clone() {
+      return new ShoppingProductAdInfo(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ShoppingProductAdInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ShoppingProductAdInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ShoppingProductAdInfo other) {
       if (other == null) {
         return;
       }

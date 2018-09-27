@@ -54,7 +54,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example updates a campaign. To get campaigns, run GetCampaign.cs.";
+                return "This code example updates a campaign. To get campaigns, run " +
+                    "GetCampaign.cs.";
             }
         }
 
@@ -95,8 +96,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Display the results.
                 foreach (MutateCampaignResult updatedCampaign in response.Results)
                 {
-                    Console.WriteLine($"Campaign with resource ID = '{updatedCampaign.ResourceName}' " +
-                        "was updated.");
+                    Console.WriteLine($"Campaign with resource ID = " +
+                        $"'{updatedCampaign.ResourceName}' was updated.");
                 }
             }
             catch (GoogleAdsException e)

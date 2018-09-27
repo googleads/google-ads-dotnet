@@ -17,7 +17,6 @@
 namespace Google.Ads.GoogleAds.V0.Services.Tests
 {
     using Google.Ads.GoogleAds.V0.Resources;
-    using Google.Ads.GoogleAds.V0.Services;
     using apis = Google.Ads.GoogleAds.V0.Services;
     using Google.Api.Gax;
     using Google.Api.Gax.Grpc;

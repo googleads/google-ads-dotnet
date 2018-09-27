@@ -84,7 +84,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Display the results.
                 foreach (MutateAdGroupAdResult result in response.Results)
                 {
-                    Console.WriteLine($"Ad with resource name = {result.ResourceName} was removed.");
+                    Console.WriteLine($"Ad with resource name = {result.ResourceName} " +
+                        "was removed.");
                 }
             }
             catch (GoogleAdsException e)

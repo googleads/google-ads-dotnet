@@ -52,7 +52,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example gets all campaigns. To add campaigns, run AddCampaigns.cs.";
+                return "This code example gets all campaigns. To add campaigns, run " +
+                    "AddCampaigns.cs.";
             }
         }
 
@@ -67,7 +68,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V0.GoogleAdsService);
 
-            // Create a request that will retrieve all campaigns using pages of the specified page size.
+            // Create a request that will retrieve all campaigns using pages of the specified
+            // page size.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
                 PageSize = PAGE_SIZE,

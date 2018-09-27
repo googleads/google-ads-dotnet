@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -219,7 +218,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -228,7 +227,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -259,7 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -268,7 +267,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -355,7 +354,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::GoogleAdsField> GetGoogleAdsFieldAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetGoogleAdsFieldAsync(
-                new gagvs::GetGoogleAdsFieldRequest
+                new GetGoogleAdsFieldRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -394,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::GoogleAdsField GetGoogleAdsField(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetGoogleAdsField(
-                new gagvs::GetGoogleAdsFieldRequest
+                new GetGoogleAdsFieldRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -413,7 +412,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::GoogleAdsField> GetGoogleAdsFieldAsync(
-            gagvs::GetGoogleAdsFieldRequest request,
+            GetGoogleAdsFieldRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -432,7 +431,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::GoogleAdsField> GetGoogleAdsFieldAsync(
-            gagvs::GetGoogleAdsFieldRequest request,
+            GetGoogleAdsFieldRequest request,
             st::CancellationToken cancellationToken) => GetGoogleAdsFieldAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -450,7 +449,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::GoogleAdsField GetGoogleAdsField(
-            gagvs::GetGoogleAdsFieldRequest request,
+            GetGoogleAdsFieldRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -476,12 +475,12 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A pageable asynchronous sequence of <see cref="gagvr::GoogleAdsField"/> resources.
         /// </returns>
-        public virtual gax::PagedAsyncEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(
+        public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(
             string query,
             string pageToken = null,
             int? pageSize = null,
             gaxgrpc::CallSettings callSettings = null) => SearchGoogleAdsFieldsAsync(
-                new gagvs::SearchGoogleAdsFieldsRequest
+                new SearchGoogleAdsFieldsRequest
                 {
                     Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
                     PageToken = pageToken ?? "",
@@ -509,12 +508,12 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A pageable sequence of <see cref="gagvr::GoogleAdsField"/> resources.
         /// </returns>
-        public virtual gax::PagedEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(
+        public virtual gax::PagedEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(
             string query,
             string pageToken = null,
             int? pageSize = null,
             gaxgrpc::CallSettings callSettings = null) => SearchGoogleAdsFields(
-                new gagvs::SearchGoogleAdsFieldsRequest
+                new SearchGoogleAdsFieldsRequest
                 {
                     Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
                     PageToken = pageToken ?? "",
@@ -534,8 +533,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A pageable asynchronous sequence of <see cref="gagvr::GoogleAdsField"/> resources.
         /// </returns>
-        public virtual gax::PagedAsyncEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(
-            gagvs::SearchGoogleAdsFieldsRequest request,
+        public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(
+            SearchGoogleAdsFieldsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -553,8 +552,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A pageable sequence of <see cref="gagvr::GoogleAdsField"/> resources.
         /// </returns>
-        public virtual gax::PagedEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(
-            gagvs::SearchGoogleAdsFieldsRequest request,
+        public virtual gax::PagedEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(
+            SearchGoogleAdsFieldsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -567,8 +566,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class GoogleAdsFieldServiceClientImpl : GoogleAdsFieldServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetGoogleAdsFieldRequest, gagvr::GoogleAdsField> _callGetGoogleAdsField;
-        private readonly gaxgrpc::ApiCall<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse> _callSearchGoogleAdsFields;
+        private readonly gaxgrpc::ApiCall<GetGoogleAdsFieldRequest, gagvr::GoogleAdsField> _callGetGoogleAdsField;
+        private readonly gaxgrpc::ApiCall<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse> _callSearchGoogleAdsFields;
 
         /// <summary>
         /// Constructs a client wrapper for the GoogleAdsFieldService service, with the specified gRPC client and settings.
@@ -580,9 +579,9 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             GoogleAdsFieldServiceSettings effectiveSettings = settings ?? GoogleAdsFieldServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetGoogleAdsField = clientHelper.BuildApiCall<gagvs::GetGoogleAdsFieldRequest, gagvr::GoogleAdsField>(
+            _callGetGoogleAdsField = clientHelper.BuildApiCall<GetGoogleAdsFieldRequest, gagvr::GoogleAdsField>(
                 GrpcClient.GetGoogleAdsFieldAsync, GrpcClient.GetGoogleAdsField, effectiveSettings.GetGoogleAdsFieldSettings);
-            _callSearchGoogleAdsFields = clientHelper.BuildApiCall<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse>(
+            _callSearchGoogleAdsFields = clientHelper.BuildApiCall<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse>(
                 GrpcClient.SearchGoogleAdsFieldsAsync, GrpcClient.SearchGoogleAdsFields, effectiveSettings.SearchGoogleAdsFieldsSettings);
             Modify_ApiCall(ref _callGetGoogleAdsField);
             Modify_GetGoogleAdsFieldApiCall(ref _callGetGoogleAdsField);
@@ -601,8 +600,8 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetGoogleAdsFieldApiCall(ref gaxgrpc::ApiCall<gagvs::GetGoogleAdsFieldRequest, gagvr::GoogleAdsField> call);
-        partial void Modify_SearchGoogleAdsFieldsApiCall(ref gaxgrpc::ApiCall<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse> call);
+        partial void Modify_GetGoogleAdsFieldApiCall(ref gaxgrpc::ApiCall<GetGoogleAdsFieldRequest, gagvr::GoogleAdsField> call);
+        partial void Modify_SearchGoogleAdsFieldsApiCall(ref gaxgrpc::ApiCall<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse> call);
         partial void OnConstruction(GoogleAdsFieldService.GoogleAdsFieldServiceClient grpcClient, GoogleAdsFieldServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -613,8 +612,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetGoogleAdsFieldRequest(ref gagvs::GetGoogleAdsFieldRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_SearchGoogleAdsFieldsRequest(ref gagvs::SearchGoogleAdsFieldsRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetGoogleAdsFieldRequest(ref GetGoogleAdsFieldRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_SearchGoogleAdsFieldsRequest(ref SearchGoogleAdsFieldsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns just the requested field.
@@ -629,7 +628,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::GoogleAdsField> GetGoogleAdsFieldAsync(
-            gagvs::GetGoogleAdsFieldRequest request,
+            GetGoogleAdsFieldRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetGoogleAdsFieldRequest(ref request, ref callSettings);
@@ -649,7 +648,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::GoogleAdsField GetGoogleAdsField(
-            gagvs::GetGoogleAdsFieldRequest request,
+            GetGoogleAdsFieldRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetGoogleAdsFieldRequest(ref request, ref callSettings);
@@ -668,12 +667,12 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A pageable asynchronous sequence of <see cref="gagvr::GoogleAdsField"/> resources.
         /// </returns>
-        public override gax::PagedAsyncEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(
-            gagvs::SearchGoogleAdsFieldsRequest request,
+        public override gax::PagedAsyncEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(
+            SearchGoogleAdsFieldsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_SearchGoogleAdsFieldsRequest(ref request, ref callSettings);
-            return new gaxgrpc::GrpcPagedAsyncEnumerable<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField>(_callSearchGoogleAdsFields, request, callSettings);
+            return new gaxgrpc::GrpcPagedAsyncEnumerable<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField>(_callSearchGoogleAdsFields, request, callSettings);
         }
 
         /// <summary>
@@ -688,12 +687,12 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A pageable sequence of <see cref="gagvr::GoogleAdsField"/> resources.
         /// </returns>
-        public override gax::PagedEnumerable<gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(
-            gagvs::SearchGoogleAdsFieldsRequest request,
+        public override gax::PagedEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(
+            SearchGoogleAdsFieldsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_SearchGoogleAdsFieldsRequest(ref request, ref callSettings);
-            return new gaxgrpc::GrpcPagedEnumerable<gagvs::SearchGoogleAdsFieldsRequest, gagvs::SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField>(_callSearchGoogleAdsFields, request, callSettings);
+            return new gaxgrpc::GrpcPagedEnumerable<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField>(_callSearchGoogleAdsFields, request, callSettings);
         }
 
     }

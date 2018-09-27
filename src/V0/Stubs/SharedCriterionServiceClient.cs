@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -219,7 +218,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -228,7 +227,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -259,7 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -268,7 +267,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -355,7 +354,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::SharedCriterion> GetSharedCriterionAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetSharedCriterionAsync(
-                new gagvs::GetSharedCriterionRequest
+                new GetSharedCriterionRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -394,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::SharedCriterion GetSharedCriterion(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetSharedCriterion(
-                new gagvs::GetSharedCriterionRequest
+                new GetSharedCriterionRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -413,7 +412,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::SharedCriterion> GetSharedCriterionAsync(
-            gagvs::GetSharedCriterionRequest request,
+            GetSharedCriterionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -432,7 +431,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::SharedCriterion> GetSharedCriterionAsync(
-            gagvs::GetSharedCriterionRequest request,
+            GetSharedCriterionRequest request,
             st::CancellationToken cancellationToken) => GetSharedCriterionAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -450,7 +449,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::SharedCriterion GetSharedCriterion(
-            gagvs::GetSharedCriterionRequest request,
+            GetSharedCriterionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -471,11 +470,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
+        public virtual stt::Task<MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
             string customerId,
-            scg::IEnumerable<gagvs::SharedCriterionOperation> operations,
+            scg::IEnumerable<SharedCriterionOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateSharedCriteriaAsync(
-                new gagvs::MutateSharedCriteriaRequest
+                new MutateSharedCriteriaRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -497,9 +496,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
+        public virtual stt::Task<MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
             string customerId,
-            scg::IEnumerable<gagvs::SharedCriterionOperation> operations,
+            scg::IEnumerable<SharedCriterionOperation> operations,
             st::CancellationToken cancellationToken) => MutateSharedCriteriaAsync(
                 customerId,
                 operations,
@@ -520,11 +519,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateSharedCriteriaResponse MutateSharedCriteria(
+        public virtual MutateSharedCriteriaResponse MutateSharedCriteria(
             string customerId,
-            scg::IEnumerable<gagvs::SharedCriterionOperation> operations,
+            scg::IEnumerable<SharedCriterionOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateSharedCriteria(
-                new gagvs::MutateSharedCriteriaRequest
+                new MutateSharedCriteriaRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -543,8 +542,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
-            gagvs::MutateSharedCriteriaRequest request,
+        public virtual stt::Task<MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
+            MutateSharedCriteriaRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -562,8 +561,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
-            gagvs::MutateSharedCriteriaRequest request,
+        public virtual stt::Task<MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
+            MutateSharedCriteriaRequest request,
             st::CancellationToken cancellationToken) => MutateSharedCriteriaAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -580,8 +579,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateSharedCriteriaResponse MutateSharedCriteria(
-            gagvs::MutateSharedCriteriaRequest request,
+        public virtual MutateSharedCriteriaResponse MutateSharedCriteria(
+            MutateSharedCriteriaRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -594,8 +593,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class SharedCriterionServiceClientImpl : SharedCriterionServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetSharedCriterionRequest, gagvr::SharedCriterion> _callGetSharedCriterion;
-        private readonly gaxgrpc::ApiCall<gagvs::MutateSharedCriteriaRequest, gagvs::MutateSharedCriteriaResponse> _callMutateSharedCriteria;
+        private readonly gaxgrpc::ApiCall<GetSharedCriterionRequest, gagvr::SharedCriterion> _callGetSharedCriterion;
+        private readonly gaxgrpc::ApiCall<MutateSharedCriteriaRequest, MutateSharedCriteriaResponse> _callMutateSharedCriteria;
 
         /// <summary>
         /// Constructs a client wrapper for the SharedCriterionService service, with the specified gRPC client and settings.
@@ -607,9 +606,9 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             SharedCriterionServiceSettings effectiveSettings = settings ?? SharedCriterionServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetSharedCriterion = clientHelper.BuildApiCall<gagvs::GetSharedCriterionRequest, gagvr::SharedCriterion>(
+            _callGetSharedCriterion = clientHelper.BuildApiCall<GetSharedCriterionRequest, gagvr::SharedCriterion>(
                 GrpcClient.GetSharedCriterionAsync, GrpcClient.GetSharedCriterion, effectiveSettings.GetSharedCriterionSettings);
-            _callMutateSharedCriteria = clientHelper.BuildApiCall<gagvs::MutateSharedCriteriaRequest, gagvs::MutateSharedCriteriaResponse>(
+            _callMutateSharedCriteria = clientHelper.BuildApiCall<MutateSharedCriteriaRequest, MutateSharedCriteriaResponse>(
                 GrpcClient.MutateSharedCriteriaAsync, GrpcClient.MutateSharedCriteria, effectiveSettings.MutateSharedCriteriaSettings);
             Modify_ApiCall(ref _callGetSharedCriterion);
             Modify_GetSharedCriterionApiCall(ref _callGetSharedCriterion);
@@ -628,8 +627,8 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetSharedCriterionApiCall(ref gaxgrpc::ApiCall<gagvs::GetSharedCriterionRequest, gagvr::SharedCriterion> call);
-        partial void Modify_MutateSharedCriteriaApiCall(ref gaxgrpc::ApiCall<gagvs::MutateSharedCriteriaRequest, gagvs::MutateSharedCriteriaResponse> call);
+        partial void Modify_GetSharedCriterionApiCall(ref gaxgrpc::ApiCall<GetSharedCriterionRequest, gagvr::SharedCriterion> call);
+        partial void Modify_MutateSharedCriteriaApiCall(ref gaxgrpc::ApiCall<MutateSharedCriteriaRequest, MutateSharedCriteriaResponse> call);
         partial void OnConstruction(SharedCriterionService.SharedCriterionServiceClient grpcClient, SharedCriterionServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -640,8 +639,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetSharedCriterionRequest(ref gagvs::GetSharedCriterionRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_MutateSharedCriteriaRequest(ref gagvs::MutateSharedCriteriaRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetSharedCriterionRequest(ref GetSharedCriterionRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateSharedCriteriaRequest(ref MutateSharedCriteriaRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested shared criterion in full detail.
@@ -656,7 +655,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::SharedCriterion> GetSharedCriterionAsync(
-            gagvs::GetSharedCriterionRequest request,
+            GetSharedCriterionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetSharedCriterionRequest(ref request, ref callSettings);
@@ -676,7 +675,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::SharedCriterion GetSharedCriterion(
-            gagvs::GetSharedCriterionRequest request,
+            GetSharedCriterionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetSharedCriterionRequest(ref request, ref callSettings);
@@ -695,8 +694,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<gagvs::MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
-            gagvs::MutateSharedCriteriaRequest request,
+        public override stt::Task<MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
+            MutateSharedCriteriaRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateSharedCriteriaRequest(ref request, ref callSettings);
@@ -715,8 +714,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override gagvs::MutateSharedCriteriaResponse MutateSharedCriteria(
-            gagvs::MutateSharedCriteriaRequest request,
+        public override MutateSharedCriteriaResponse MutateSharedCriteria(
+            MutateSharedCriteriaRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateSharedCriteriaRequest(ref request, ref callSettings);

@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -189,7 +188,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -198,7 +197,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -229,7 +228,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -238,7 +237,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -325,7 +324,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::Customer> GetCustomerAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetCustomerAsync(
-                new gagvs::GetCustomerRequest
+                new GetCustomerRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -364,7 +363,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::Customer GetCustomer(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetCustomer(
-                new gagvs::GetCustomerRequest
+                new GetCustomerRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -383,7 +382,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::Customer> GetCustomerAsync(
-            gagvs::GetCustomerRequest request,
+            GetCustomerRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -402,7 +401,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::Customer> GetCustomerAsync(
-            gagvs::GetCustomerRequest request,
+            GetCustomerRequest request,
             st::CancellationToken cancellationToken) => GetCustomerAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -420,7 +419,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::Customer GetCustomer(
-            gagvs::GetCustomerRequest request,
+            GetCustomerRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -433,7 +432,7 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class CustomerServiceClientImpl : CustomerServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetCustomerRequest, gagvr::Customer> _callGetCustomer;
+        private readonly gaxgrpc::ApiCall<GetCustomerRequest, gagvr::Customer> _callGetCustomer;
 
         /// <summary>
         /// Constructs a client wrapper for the CustomerService service, with the specified gRPC client and settings.
@@ -445,7 +444,7 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             CustomerServiceSettings effectiveSettings = settings ?? CustomerServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetCustomer = clientHelper.BuildApiCall<gagvs::GetCustomerRequest, gagvr::Customer>(
+            _callGetCustomer = clientHelper.BuildApiCall<GetCustomerRequest, gagvr::Customer>(
                 GrpcClient.GetCustomerAsync, GrpcClient.GetCustomer, effectiveSettings.GetCustomerSettings);
             Modify_ApiCall(ref _callGetCustomer);
             Modify_GetCustomerApiCall(ref _callGetCustomer);
@@ -462,7 +461,7 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetCustomerApiCall(ref gaxgrpc::ApiCall<gagvs::GetCustomerRequest, gagvr::Customer> call);
+        partial void Modify_GetCustomerApiCall(ref gaxgrpc::ApiCall<GetCustomerRequest, gagvr::Customer> call);
         partial void OnConstruction(CustomerService.CustomerServiceClient grpcClient, CustomerServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -473,7 +472,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetCustomerRequest(ref gagvs::GetCustomerRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetCustomerRequest(ref GetCustomerRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested customer in full detail.
@@ -488,7 +487,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::Customer> GetCustomerAsync(
-            gagvs::GetCustomerRequest request,
+            GetCustomerRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetCustomerRequest(ref request, ref callSettings);
@@ -508,7 +507,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::Customer GetCustomer(
-            gagvs::GetCustomerRequest request,
+            GetCustomerRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetCustomerRequest(ref request, ref callSettings);

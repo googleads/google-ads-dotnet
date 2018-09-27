@@ -26,13 +26,14 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcG9saWN5X2ZpbmRp",
             "bmdfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
-            "cyJgChZQb2xpY3lGaW5kaW5nRXJyb3JFbnVtIkYKElBvbGljeUZpbmRpbmdF",
+            "cyJ8ChZQb2xpY3lGaW5kaW5nRXJyb3JFbnVtImIKElBvbGljeUZpbmRpbmdF",
             "cnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARISCg5QT0xJQ1lf",
-            "RklORElORxACQs0BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
-            "b3JzQhdQb2xpY3lGaW5kaW5nRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJy",
-            "b3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVy",
-            "cm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "RklORElORxACEhoKFlBPTElDWV9UT1BJQ19OT1RfRk9VTkQQA0LNAQoiY29t",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IXUG9saWN5RmluZGlu",
+            "Z0Vycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
+            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGq",
+            "Ah5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWMFxFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -166,6 +167,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// policy topics of type PROHIBITED.
         /// </summary>
         [pbr::OriginalName("POLICY_FINDING")] PolicyFinding = 2,
+        /// <summary>
+        /// The given policy topic does not exist.
+        /// </summary>
+        [pbr::OriginalName("POLICY_TOPIC_NOT_FOUND")] PolicyTopicNotFound = 3,
       }
 
     }

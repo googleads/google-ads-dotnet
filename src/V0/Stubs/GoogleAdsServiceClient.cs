@@ -14,7 +14,6 @@
 
 // Generated code. DO NOT EDIT!
 
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -187,7 +186,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -196,7 +195,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -227,7 +226,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -236,7 +235,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -329,15 +328,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// If not null, applies overrides to this RPC call.
         /// </param>
         /// <returns>
-        /// A pageable asynchronous sequence of <see cref="gagvs::GoogleAdsRow"/> resources.
+        /// A pageable asynchronous sequence of <see cref="GoogleAdsRow"/> resources.
         /// </returns>
-        public virtual gax::PagedAsyncEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow> SearchAsync(
+        public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> SearchAsync(
             string customerId,
             string query,
             string pageToken = null,
             int? pageSize = null,
             gaxgrpc::CallSettings callSettings = null) => SearchAsync(
-                new gagvs::SearchGoogleAdsRequest
+                new SearchGoogleAdsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
@@ -367,15 +366,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// If not null, applies overrides to this RPC call.
         /// </param>
         /// <returns>
-        /// A pageable sequence of <see cref="gagvs::GoogleAdsRow"/> resources.
+        /// A pageable sequence of <see cref="GoogleAdsRow"/> resources.
         /// </returns>
-        public virtual gax::PagedEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow> Search(
+        public virtual gax::PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> Search(
             string customerId,
             string query,
             string pageToken = null,
             int? pageSize = null,
             gaxgrpc::CallSettings callSettings = null) => Search(
-                new gagvs::SearchGoogleAdsRequest
+                new SearchGoogleAdsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
@@ -394,10 +393,10 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// If not null, applies overrides to this RPC call.
         /// </param>
         /// <returns>
-        /// A pageable asynchronous sequence of <see cref="gagvs::GoogleAdsRow"/> resources.
+        /// A pageable asynchronous sequence of <see cref="GoogleAdsRow"/> resources.
         /// </returns>
-        public virtual gax::PagedAsyncEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow> SearchAsync(
-            gagvs::SearchGoogleAdsRequest request,
+        public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> SearchAsync(
+            SearchGoogleAdsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -413,10 +412,10 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// If not null, applies overrides to this RPC call.
         /// </param>
         /// <returns>
-        /// A pageable sequence of <see cref="gagvs::GoogleAdsRow"/> resources.
+        /// A pageable sequence of <see cref="GoogleAdsRow"/> resources.
         /// </returns>
-        public virtual gax::PagedEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow> Search(
-            gagvs::SearchGoogleAdsRequest request,
+        public virtual gax::PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> Search(
+            SearchGoogleAdsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -429,7 +428,7 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class GoogleAdsServiceClientImpl : GoogleAdsServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::SearchGoogleAdsRequest, gagvs::SearchGoogleAdsResponse> _callSearch;
+        private readonly gaxgrpc::ApiCall<SearchGoogleAdsRequest, SearchGoogleAdsResponse> _callSearch;
 
         /// <summary>
         /// Constructs a client wrapper for the GoogleAdsService service, with the specified gRPC client and settings.
@@ -441,7 +440,7 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             GoogleAdsServiceSettings effectiveSettings = settings ?? GoogleAdsServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callSearch = clientHelper.BuildApiCall<gagvs::SearchGoogleAdsRequest, gagvs::SearchGoogleAdsResponse>(
+            _callSearch = clientHelper.BuildApiCall<SearchGoogleAdsRequest, SearchGoogleAdsResponse>(
                 GrpcClient.SearchAsync, GrpcClient.Search, effectiveSettings.SearchSettings);
             Modify_ApiCall(ref _callSearch);
             Modify_SearchApiCall(ref _callSearch);
@@ -458,7 +457,7 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_SearchApiCall(ref gaxgrpc::ApiCall<gagvs::SearchGoogleAdsRequest, gagvs::SearchGoogleAdsResponse> call);
+        partial void Modify_SearchApiCall(ref gaxgrpc::ApiCall<SearchGoogleAdsRequest, SearchGoogleAdsResponse> call);
         partial void OnConstruction(GoogleAdsService.GoogleAdsServiceClient grpcClient, GoogleAdsServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -469,7 +468,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_SearchGoogleAdsRequest(ref gagvs::SearchGoogleAdsRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_SearchGoogleAdsRequest(ref SearchGoogleAdsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns all rows that match the search query.
@@ -481,14 +480,14 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// If not null, applies overrides to this RPC call.
         /// </param>
         /// <returns>
-        /// A pageable asynchronous sequence of <see cref="gagvs::GoogleAdsRow"/> resources.
+        /// A pageable asynchronous sequence of <see cref="GoogleAdsRow"/> resources.
         /// </returns>
-        public override gax::PagedAsyncEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow> SearchAsync(
-            gagvs::SearchGoogleAdsRequest request,
+        public override gax::PagedAsyncEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> SearchAsync(
+            SearchGoogleAdsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_SearchGoogleAdsRequest(ref request, ref callSettings);
-            return new gaxgrpc::GrpcPagedAsyncEnumerable<gagvs::SearchGoogleAdsRequest, gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow>(_callSearch, request, callSettings);
+            return new gaxgrpc::GrpcPagedAsyncEnumerable<SearchGoogleAdsRequest, SearchGoogleAdsResponse, GoogleAdsRow>(_callSearch, request, callSettings);
         }
 
         /// <summary>
@@ -501,14 +500,14 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// If not null, applies overrides to this RPC call.
         /// </param>
         /// <returns>
-        /// A pageable sequence of <see cref="gagvs::GoogleAdsRow"/> resources.
+        /// A pageable sequence of <see cref="GoogleAdsRow"/> resources.
         /// </returns>
-        public override gax::PagedEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow> Search(
-            gagvs::SearchGoogleAdsRequest request,
+        public override gax::PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> Search(
+            SearchGoogleAdsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_SearchGoogleAdsRequest(ref request, ref callSettings);
-            return new gaxgrpc::GrpcPagedEnumerable<gagvs::SearchGoogleAdsRequest, gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow>(_callSearch, request, callSettings);
+            return new gaxgrpc::GrpcPagedEnumerable<SearchGoogleAdsRequest, SearchGoogleAdsResponse, GoogleAdsRow>(_callSearch, request, callSettings);
         }
 
     }
@@ -516,12 +515,12 @@ namespace Google.Ads.GoogleAds.V0.Services
     // Partial classes to enable page-streaming
 
     public partial class SearchGoogleAdsRequest : gaxgrpc::IPageRequest { }
-    public partial class SearchGoogleAdsResponse : gaxgrpc::IPageResponse<gagvs::GoogleAdsRow>
+    public partial class SearchGoogleAdsResponse : gaxgrpc::IPageResponse<GoogleAdsRow>
     {
         /// <summary>
         /// Returns an enumerator that iterates through the resources in this response.
         /// </summary>
-        public scg::IEnumerator<gagvs::GoogleAdsRow> GetEnumerator() => Results.GetEnumerator();
+        public scg::IEnumerator<GoogleAdsRow> GetEnumerator() => Results.GetEnumerator();
 
         /// <inheritdoc/>
         sc::IEnumerator sc::IEnumerable.GetEnumerator() => GetEnumerator();

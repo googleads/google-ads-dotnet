@@ -49,8 +49,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return " This code example lists basic information about an advertising account, " +
-                    "like the name, currency and time zone.";
+                return " This code example lists basic information about an advertising " +
+                    "account, like the name, currency and time zone.";
             }
         }
 
@@ -70,10 +70,11 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 Customer customer = customerService.GetCustomer(customerResourceName);
 
                 // Print account information.
-                Console.WriteLine("Customer with ID {0}, descriptive name '{1}', currency code '{2}', " +
-                    "timezone '{3}', tracking URL template '{4}' and auto tagging enabled '{5}' " +
-                    "was retrieved.", customer.Id, customer.DescriptiveName, customer.CurrencyCode,
-                    customer.TimeZone, customer.TrackingUrlTemplate, customer.AutoTaggingEnabled);
+                Console.WriteLine("Customer with ID {0}, descriptive name '{1}', currency " +
+                    "code '{2}', timezone '{3}', tracking URL template '{4}' and auto tagging " +
+                    "enabled '{5}' was retrieved.", customer.Id, customer.DescriptiveName,
+                    customer.CurrencyCode, customer.TimeZone, customer.TrackingUrlTemplate,
+                    customer.AutoTaggingEnabled);
             }
             catch (GoogleAdsException e)
             {
