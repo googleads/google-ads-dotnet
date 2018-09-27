@@ -218,5 +218,60 @@ namespace Google.Ads.GoogleAds.Lib
         {
             return $"customers/{customerId}/sharedSets/{sharedSetId}";
         }
+
+        /// <summary>
+        /// Generate resource name for an account budget proposal.
+        /// </summary>
+        /// <param name="customerId">The customer ID.</param>
+        /// <param name="accountBudgetProposalId">The account budget proposal ID.</param>
+        /// <returns>The account budget proposal name.</returns>
+        public static string AccountBudgetProposal(long customerId, long accountBudgetProposalId)
+        {
+            return $"customers/{customerId}/accountBudgetProposals/{accountBudgetProposalId}";
+        }
+
+        /// <summary>
+        /// Generate resource name for a change status.
+        /// </summary>
+        /// <param name="customerId">The customer ID.</param>
+        /// <param name="changeStatusId">The change status ID.</param>
+        /// <returns>The change status resource name.</returns>
+        public static string ChangeStatus(long customerId, long changeStatusId)
+        {
+            return $"customers/{customerId}/changeStatus/{changeStatusId}";
+        }
+
+        /// <summary>
+        /// Generate resource name for a conversion action.
+        /// </summary>
+        /// <param name="customerId">The customer ID.</param>
+        /// <param name="conversionActionId">The conversion action ID.</param>
+        /// <returns>The conversion action resource name.</returns>
+        public static string ConversionAction(long customerId, long conversionActionId)
+        {
+            return $"customers/{customerId}/conversionActions/{conversionActionId}";
+        }
+
+        /// <summary>
+        /// Generate resource name for a billing setup.
+        /// </summary>
+        /// <param name="customerId">The customer ID.</param>
+        /// <param name="billingSetupId">The billing setup ID.</param>
+        /// <returns>The billing setup resource name.</returns>
+        public static string BillingSetup(long customerId, long billingSetupId)
+        {
+            return $"customers/{customerId}/billingSetups/{billingSetupId}";
+        }
+
+        /// <summary>
+        /// Generate resource name for a video.
+        /// </summary>
+        /// <param name="customerId">The customer ID.</param>
+        /// <param name="videoId">The video ID.</param>
+        /// <returns>The video resource name.</returns>
+        public static string Video(long customerId, long videoId)
+        {
+            return $"customers/{customerId}/videos/{videoId}";
+        }
     }
 }

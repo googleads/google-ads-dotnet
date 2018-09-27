@@ -22,6 +22,7 @@ using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V0.Enums.AdvertisingChannelTypeEnum.Types;
 using static Google.Ads.GoogleAds.V0.Enums.BudgetDeliveryMethodEnum.Types;
 using static Google.Ads.GoogleAds.V0.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V0.Resources.Campaign.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V0
 {
@@ -94,11 +95,13 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 campaign.CampaignBudget = budget;
 
                 // Set the campaign network options.
-                campaign.NetworkSettings = new Campaign.Types.NetworkSettings();
-                campaign.NetworkSettings.TargetGoogleSearch = true;
-                campaign.NetworkSettings.TargetSearchNetwork = true;
-                campaign.NetworkSettings.TargetContentNetwork = false;
-                campaign.NetworkSettings.TargetPartnerSearchNetwork = false;
+                campaign.NetworkSettings = new NetworkSettings
+                {
+                    TargetGoogleSearch = true,
+                    TargetSearchNetwork = true,
+                    TargetContentNetwork = false,
+                    TargetPartnerSearchNetwork = false
+                };
 
                 // Optional: Set the start date.
                 campaign.StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd");
@@ -122,8 +125,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 {
                     foreach (MutateCampaignResult newCampaign in retVal.Results)
                     {
-                        Console.WriteLine($"Campaign with resource ID = '{newCampaign.ResourceName}' " +
-                            "was added.");
+                        Console.WriteLine("Campaign with resource ID = '{0}' was added.",
+                            newCampaign.ResourceName);
                     }
                 }
                 else

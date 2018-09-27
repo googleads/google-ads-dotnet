@@ -35,7 +35,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            AddExpandedTextAdWithUpgradedUrls codeExample = new AddExpandedTextAdWithUpgradedUrls();
+            AddExpandedTextAdWithUpgradedUrls codeExample =
+                new AddExpandedTextAdWithUpgradedUrls();
             Console.WriteLine(codeExample.Description);
 
             //The customer ID for which the call is made.
@@ -54,8 +55,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example adds an expanded text ad that uses advanced features of " +
-                  "upgraded URLs.";
+                return "This code example adds an expanded text ad that uses advanced features " +
+                    "of upgraded URLs.";
             }
         }
 

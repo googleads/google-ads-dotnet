@@ -22,6 +22,10 @@ namespace Google.Ads.GoogleAds.V0.Services
     {
     }
 
+    public abstract partial class AccountBudgetProposalServiceClient : GoogleAdsServiceClientBase
+    {
+    }
+
     public abstract partial class AdGroupBidModifierServiceClient : GoogleAdsServiceClientBase
     {
     }
@@ -35,6 +39,10 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     public abstract partial class BiddingStrategyServiceClient : GoogleAdsServiceClientBase
+    {
+    }
+
+    public abstract partial class BillingSetupServiceClient : GoogleAdsServiceClientBase
     {
     }
 
@@ -59,6 +67,14 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     public abstract partial class CampaignSharedSetServiceClient : GoogleAdsServiceClientBase
+    {
+    }
+
+    public abstract partial class ChangeStatusServiceClient : GoogleAdsServiceClientBase
+    {
+    }
+
+    public abstract partial class ConversionActionServiceClient : GoogleAdsServiceClientBase
     {
     }
 
@@ -91,6 +107,10 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     public abstract partial class SharedSetServiceClient : GoogleAdsServiceClientBase
+    {
+    }
+
+    public abstract partial class VideoServiceClient : GoogleAdsServiceClientBase
     {
     }
 }

@@ -100,7 +100,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 string sharedCriterionQuery =
                     "SELECT shared_criterion.type, shared_criterion.keyword.text, " +
                     "shared_criterion.keyword.match_type, shared_set.id FROM shared_criterion " +
-                    $"WHERE shared_set.id IN(" + 
+                    $"WHERE shared_set.id IN(" +
                     string.Join(",", sharedSetIds.ConvertAll(x => x.ToString())) + ")";
 
                 PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> sharedCriterionResponse =

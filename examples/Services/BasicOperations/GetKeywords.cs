@@ -59,7 +59,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the GoogleAdsService.
-            GoogleAdsServiceClient googleAdsService = client.GetService(Services.V0.GoogleAdsService);
+            GoogleAdsServiceClient googleAdsService = client.GetService(
+                Services.V0.GoogleAdsService);
             try
             {
                 PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> result =
@@ -77,10 +78,12 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 LIMIT 50");
                 foreach (GoogleAdsRow criterionRow in result)
                 {
-                    Console.WriteLine($"Keyword with text '{criterionRow.AdGroupCriterion.Keyword.Text}', " +
-                        $"id = '{criterionRow.AdGroupCriterion.CriterionId}' and " +
-                        $"match type = '{criterionRow.AdGroupCriterion.Keyword.MatchType}' was retrieved " +
-                        $"for ad group '{criterionRow.AdGroup.Id.ToString()}'");
+                    Console.WriteLine("Keyword with text '{0}', id = '{1}' and match type = " +
+                        "'{2}' was retrieved for ad group '{3}'.",
+                        criterionRow.AdGroupCriterion.Keyword.Text,
+                        criterionRow.AdGroupCriterion.CriterionId,
+                        criterionRow.AdGroupCriterion.Keyword.MatchType,
+                        criterionRow.AdGroup.Id.ToString());
                 }
             }
             catch (GoogleAdsException e)

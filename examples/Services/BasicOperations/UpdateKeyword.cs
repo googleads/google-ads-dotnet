@@ -96,8 +96,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Display the results.
                 foreach (MutateAdGroupCriterionResult criterionResult in response.Results)
                 {
-                    Console.WriteLine($"Keyword with resource name = '{criterionResult.ResourceName}' " +
-                        "was updated.");
+                    Console.WriteLine($"Keyword with resource name = " +
+                        $"'{criterionResult.ResourceName}' was updated.");
                 }
             }
             catch (GoogleAdsException e)

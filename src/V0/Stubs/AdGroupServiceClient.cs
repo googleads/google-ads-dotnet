@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -219,7 +218,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -228,7 +227,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -259,7 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -268,7 +267,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -355,7 +354,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::AdGroup> GetAdGroupAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetAdGroupAsync(
-                new gagvs::GetAdGroupRequest
+                new GetAdGroupRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -394,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::AdGroup GetAdGroup(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetAdGroup(
-                new gagvs::GetAdGroupRequest
+                new GetAdGroupRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -413,7 +412,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::AdGroup> GetAdGroupAsync(
-            gagvs::GetAdGroupRequest request,
+            GetAdGroupRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -432,7 +431,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::AdGroup> GetAdGroupAsync(
-            gagvs::GetAdGroupRequest request,
+            GetAdGroupRequest request,
             st::CancellationToken cancellationToken) => GetAdGroupAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -450,7 +449,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::AdGroup GetAdGroup(
-            gagvs::GetAdGroupRequest request,
+            GetAdGroupRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -471,11 +470,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
+        public virtual stt::Task<MutateAdGroupsResponse> MutateAdGroupsAsync(
             string customerId,
-            scg::IEnumerable<gagvs::AdGroupOperation> operations,
+            scg::IEnumerable<AdGroupOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateAdGroupsAsync(
-                new gagvs::MutateAdGroupsRequest
+                new MutateAdGroupsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -497,9 +496,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
+        public virtual stt::Task<MutateAdGroupsResponse> MutateAdGroupsAsync(
             string customerId,
-            scg::IEnumerable<gagvs::AdGroupOperation> operations,
+            scg::IEnumerable<AdGroupOperation> operations,
             st::CancellationToken cancellationToken) => MutateAdGroupsAsync(
                 customerId,
                 operations,
@@ -520,11 +519,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateAdGroupsResponse MutateAdGroups(
+        public virtual MutateAdGroupsResponse MutateAdGroups(
             string customerId,
-            scg::IEnumerable<gagvs::AdGroupOperation> operations,
+            scg::IEnumerable<AdGroupOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateAdGroups(
-                new gagvs::MutateAdGroupsRequest
+                new MutateAdGroupsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -543,8 +542,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
-            gagvs::MutateAdGroupsRequest request,
+        public virtual stt::Task<MutateAdGroupsResponse> MutateAdGroupsAsync(
+            MutateAdGroupsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -562,8 +561,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
-            gagvs::MutateAdGroupsRequest request,
+        public virtual stt::Task<MutateAdGroupsResponse> MutateAdGroupsAsync(
+            MutateAdGroupsRequest request,
             st::CancellationToken cancellationToken) => MutateAdGroupsAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -580,8 +579,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateAdGroupsResponse MutateAdGroups(
-            gagvs::MutateAdGroupsRequest request,
+        public virtual MutateAdGroupsResponse MutateAdGroups(
+            MutateAdGroupsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -594,8 +593,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class AdGroupServiceClientImpl : AdGroupServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetAdGroupRequest, gagvr::AdGroup> _callGetAdGroup;
-        private readonly gaxgrpc::ApiCall<gagvs::MutateAdGroupsRequest, gagvs::MutateAdGroupsResponse> _callMutateAdGroups;
+        private readonly gaxgrpc::ApiCall<GetAdGroupRequest, gagvr::AdGroup> _callGetAdGroup;
+        private readonly gaxgrpc::ApiCall<MutateAdGroupsRequest, MutateAdGroupsResponse> _callMutateAdGroups;
 
         /// <summary>
         /// Constructs a client wrapper for the AdGroupService service, with the specified gRPC client and settings.
@@ -607,9 +606,9 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             AdGroupServiceSettings effectiveSettings = settings ?? AdGroupServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetAdGroup = clientHelper.BuildApiCall<gagvs::GetAdGroupRequest, gagvr::AdGroup>(
+            _callGetAdGroup = clientHelper.BuildApiCall<GetAdGroupRequest, gagvr::AdGroup>(
                 GrpcClient.GetAdGroupAsync, GrpcClient.GetAdGroup, effectiveSettings.GetAdGroupSettings);
-            _callMutateAdGroups = clientHelper.BuildApiCall<gagvs::MutateAdGroupsRequest, gagvs::MutateAdGroupsResponse>(
+            _callMutateAdGroups = clientHelper.BuildApiCall<MutateAdGroupsRequest, MutateAdGroupsResponse>(
                 GrpcClient.MutateAdGroupsAsync, GrpcClient.MutateAdGroups, effectiveSettings.MutateAdGroupsSettings);
             Modify_ApiCall(ref _callGetAdGroup);
             Modify_GetAdGroupApiCall(ref _callGetAdGroup);
@@ -628,8 +627,8 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetAdGroupApiCall(ref gaxgrpc::ApiCall<gagvs::GetAdGroupRequest, gagvr::AdGroup> call);
-        partial void Modify_MutateAdGroupsApiCall(ref gaxgrpc::ApiCall<gagvs::MutateAdGroupsRequest, gagvs::MutateAdGroupsResponse> call);
+        partial void Modify_GetAdGroupApiCall(ref gaxgrpc::ApiCall<GetAdGroupRequest, gagvr::AdGroup> call);
+        partial void Modify_MutateAdGroupsApiCall(ref gaxgrpc::ApiCall<MutateAdGroupsRequest, MutateAdGroupsResponse> call);
         partial void OnConstruction(AdGroupService.AdGroupServiceClient grpcClient, AdGroupServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -640,8 +639,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetAdGroupRequest(ref gagvs::GetAdGroupRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_MutateAdGroupsRequest(ref gagvs::MutateAdGroupsRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetAdGroupRequest(ref GetAdGroupRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateAdGroupsRequest(ref MutateAdGroupsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested ad group in full detail.
@@ -656,7 +655,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::AdGroup> GetAdGroupAsync(
-            gagvs::GetAdGroupRequest request,
+            GetAdGroupRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetAdGroupRequest(ref request, ref callSettings);
@@ -676,7 +675,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::AdGroup GetAdGroup(
-            gagvs::GetAdGroupRequest request,
+            GetAdGroupRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetAdGroupRequest(ref request, ref callSettings);
@@ -695,8 +694,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<gagvs::MutateAdGroupsResponse> MutateAdGroupsAsync(
-            gagvs::MutateAdGroupsRequest request,
+        public override stt::Task<MutateAdGroupsResponse> MutateAdGroupsAsync(
+            MutateAdGroupsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateAdGroupsRequest(ref request, ref callSettings);
@@ -715,8 +714,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override gagvs::MutateAdGroupsResponse MutateAdGroups(
-            gagvs::MutateAdGroupsRequest request,
+        public override MutateAdGroupsResponse MutateAdGroups(
+            MutateAdGroupsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateAdGroupsRequest(ref request, ref callSettings);

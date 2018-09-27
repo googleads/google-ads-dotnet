@@ -53,8 +53,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
             // The customer ID for which the call is made.
             int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // Optional: Specify the maximum bid limit that can be set when creating a campaign using
-            // the Percent CPC bidding strategy.
+            // Optional: Specify the maximum bid limit that can be set when creating a campaign
+            // using the Percent CPC bidding strategy.
             long? cpcBidCeilingMicroAmount = CPC_BID_CEILING_MICRO_AMOUNT;
 
             long tempVal = 0;
@@ -63,10 +63,10 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 cpcBidCeilingMicroAmount = tempVal;
             }
 
-            // Specify your Hotels account ID below. You can see how to find the account ID in the Hotel
-            // Ads Center at: https://support.google.com/hotelprices/answer/6399770.
-            // This ID is the same account ID that you use in API requests to the Travel Partner APIs
-            // (https://developers.google.com/hotels/hotel-ads/api-reference/).
+            // Specify your Hotels account ID below. You can see how to find the account ID in the
+            // Hotel Ads Center at: https://support.google.com/hotelprices/answer/6399770.
+            // This ID is the same account ID that you use in API requests to the Travel Partner
+            // APIs (https://developers.google.com/hotels/hotel-ads/api-reference/).
             int hotelCenterAccountId = int.Parse("INSERT_HOTEL_CENTER_ACCOUNT_ID_HERE");
 
             codeExample.Run(new GoogleAdsClient(), customerId, hotelCenterAccountId,
@@ -80,10 +80,11 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return " This code example creates a hotel campaign, a hotel ad group and hotel ad " +
-                    "group ad. \n\n Prerequisite: You need to have access to the Hotel Ads Center, " +
-                    "which can be granted during integration with Google Hotels.The integration " +
-                    "instructions can be found at: https://support.google.com/hotelprices/answer/6101897.";
+                return " This code example creates a hotel campaign, a hotel ad group and " +
+                    "hotel ad group ad. \n\n Prerequisite: You need to have access to the Hotel " +
+                    "Ads Center, which can be granted during integration with Google Hotels. " +
+                    "The integration instructions can be found at: " +
+                    "https://support.google.com/hotelprices/answer/6101897.";
             }
         }
 
@@ -103,11 +104,12 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 string budgetResourceName = AddCampaignBudget(client, customerId);
 
                 // Create a hotel campaign.
-                string campaignResourceName = AddHotelCampaign(client, customerId, budgetResourceName,
-                    hotelCenterAccountId, cpcBidCeilingMicroAmount);
+                string campaignResourceName = AddHotelCampaign(client, customerId,
+                    budgetResourceName, hotelCenterAccountId, cpcBidCeilingMicroAmount);
 
                 // Create a hotel ad group.
-                string adGroupResourceName = AddHotelAdGroup(client, customerId, campaignResourceName);
+                string adGroupResourceName = AddHotelAdGroup(client, customerId,
+                    campaignResourceName);
 
                 // Create a hotel ad group ad.
                 AddHotelAdGroupAd(client, customerId, adGroupResourceName);
@@ -130,7 +132,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         private static string AddCampaignBudget(GoogleAdsClient client, long customerId)
         {
             // Get the CampaignBudgetService.
-            CampaignBudgetServiceClient service = client.GetService(Services.V0.CampaignBudgetService);
+            CampaignBudgetServiceClient service = client.GetService(
+                Services.V0.CampaignBudgetService);
 
             // Create a campaign budget.
             CampaignBudget budget = new CampaignBudget()
@@ -147,8 +150,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
             };
 
             // Create the budget.
-            MutateCampaignBudgetsResponse response = service.MutateCampaignBudgets(customerId.ToString(),
-                new CampaignBudgetOperation[] { campaignBudgetOperation });
+            MutateCampaignBudgetsResponse response = service.MutateCampaignBudgets(
+                customerId.ToString(), new CampaignBudgetOperation[] { campaignBudgetOperation });
 
             string budgetResourceName = response.Results[0].ResourceName;
             Console.WriteLine($"Added a budget with resource name: '{budgetResourceName}'.");
@@ -160,7 +163,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="budgetResourceName">The resource name of budget for a new campaign.</param>
+        /// <param name="budgetResourceName">The resource name of budget for a new campaign.
+        /// </param>
         /// <param name="hotelCenterAccountId">The Hotel Center account ID.</param>
         /// <param name="cpcBidCeilingMicroAmount">The CPC bid ceiling micro amount.</param>
         /// <returns>The resource name of the newly created campaign.</returns>
@@ -188,8 +192,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // targeting and the ads are ready to serve.
                 Status = CampaignStatus.Paused,
 
-                // Sets the bidding strategy to PercentCpc. Only Manual CPC and Percent CPC can be used for
-                // hotel campaigns.
+                // Sets the bidding strategy to PercentCpc. Only Manual CPC and Percent CPC can
+                // be used for hotel campaigns.
                 PercentCpc = new PercentCpc()
                 {
                     CpcBidCeilingMicros = cpcBidCeilingMicroAmount
@@ -266,8 +270,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="adGroupResourceName">The resource name of ad group that a new ad group ad will
-        /// belong to</param>
+        /// <param name="adGroupResourceName">The resource name of ad group that a new ad group
+        /// ad will belong to</param>
         private static void AddHotelAdGroupAd(GoogleAdsClient client, long customerId,
             string adGroupResourceName)
         {

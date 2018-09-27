@@ -12,12 +12,12 @@
     <AssemblyOriginatorKeyFile>..\src\GoogleAds.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-      <PackageReference Include="Google.Apis.Auth" Version="1.35.1" />
+      <PackageReference Include="Google.Apis.Auth" Version="1.35.2" />
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
-      <PackageReference Include="Moq" Version="4.9.0" />
+      <PackageReference Include="Moq" Version="4.10.0" />
       <PackageReference Include="NUnit" Version="3.10.1" />
       <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
-      <PackageReference Include="Google.Ads.GoogleAds" Version="0.4.0" />
+      <PackageReference Include="Google.Ads.GoogleAds" Version="0.5.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\App.config">

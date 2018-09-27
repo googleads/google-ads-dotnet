@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -189,7 +188,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -198,7 +197,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -229,7 +228,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -238,7 +237,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -325,7 +324,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::KeywordView> GetKeywordViewAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetKeywordViewAsync(
-                new gagvs::GetKeywordViewRequest
+                new GetKeywordViewRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -364,7 +363,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::KeywordView GetKeywordView(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetKeywordView(
-                new gagvs::GetKeywordViewRequest
+                new GetKeywordViewRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -383,7 +382,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::KeywordView> GetKeywordViewAsync(
-            gagvs::GetKeywordViewRequest request,
+            GetKeywordViewRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -402,7 +401,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::KeywordView> GetKeywordViewAsync(
-            gagvs::GetKeywordViewRequest request,
+            GetKeywordViewRequest request,
             st::CancellationToken cancellationToken) => GetKeywordViewAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -420,7 +419,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::KeywordView GetKeywordView(
-            gagvs::GetKeywordViewRequest request,
+            GetKeywordViewRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -433,7 +432,7 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class KeywordViewServiceClientImpl : KeywordViewServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetKeywordViewRequest, gagvr::KeywordView> _callGetKeywordView;
+        private readonly gaxgrpc::ApiCall<GetKeywordViewRequest, gagvr::KeywordView> _callGetKeywordView;
 
         /// <summary>
         /// Constructs a client wrapper for the KeywordViewService service, with the specified gRPC client and settings.
@@ -445,7 +444,7 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             KeywordViewServiceSettings effectiveSettings = settings ?? KeywordViewServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetKeywordView = clientHelper.BuildApiCall<gagvs::GetKeywordViewRequest, gagvr::KeywordView>(
+            _callGetKeywordView = clientHelper.BuildApiCall<GetKeywordViewRequest, gagvr::KeywordView>(
                 GrpcClient.GetKeywordViewAsync, GrpcClient.GetKeywordView, effectiveSettings.GetKeywordViewSettings);
             Modify_ApiCall(ref _callGetKeywordView);
             Modify_GetKeywordViewApiCall(ref _callGetKeywordView);
@@ -462,7 +461,7 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetKeywordViewApiCall(ref gaxgrpc::ApiCall<gagvs::GetKeywordViewRequest, gagvr::KeywordView> call);
+        partial void Modify_GetKeywordViewApiCall(ref gaxgrpc::ApiCall<GetKeywordViewRequest, gagvr::KeywordView> call);
         partial void OnConstruction(KeywordViewService.KeywordViewServiceClient grpcClient, KeywordViewServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -473,7 +472,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetKeywordViewRequest(ref gagvs::GetKeywordViewRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetKeywordViewRequest(ref GetKeywordViewRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested keyword view in full detail.
@@ -488,7 +487,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::KeywordView> GetKeywordViewAsync(
-            gagvs::GetKeywordViewRequest request,
+            GetKeywordViewRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetKeywordViewRequest(ref request, ref callSettings);
@@ -508,7 +507,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::KeywordView GetKeywordView(
-            gagvs::GetKeywordViewRequest request,
+            GetKeywordViewRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetKeywordViewRequest(ref request, ref callSettings);

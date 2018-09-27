@@ -37,7 +37,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "YWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jYW1wYWlnbl9zZXJ2aW5nX3N0YXR1",
             "cy5wcm90bxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvY2FtcGFp",
             "Z25fc3RhdHVzLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJv",
-            "dG8imBcKCENhbXBhaWduEhUKDXJlc291cmNlX25hbWUYASABKAkSJwoCaWQY",
+            "dG8i2RcKCENhbXBhaWduEhUKDXJlc291cmNlX25hbWUYASABKAkSJwoCaWQY",
             "AyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIqCgRuYW1lGAQg",
             "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElAKBnN0YXR1cxgF",
             "IAEoDjJALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkNhbXBhaWdu",
@@ -74,44 +74,46 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVIABI/CgptYW51YWxfY3Bj",
             "GBggASgLMikuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLk1hbnVh",
             "bENwY0gAEj8KCm1hbnVhbF9jcG0YGSABKAsyKS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5jb21tb24uTWFudWFsQ3BtSAASUwoUbWF4aW1pemVfY29udmVy",
-            "c2lvbnMYHiABKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24u",
-            "TWF4aW1pemVDb252ZXJzaW9uc0gAElwKGW1heGltaXplX2NvbnZlcnNpb25f",
-            "dmFsdWUYHyABKAsyNy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24u",
-            "TWF4aW1pemVDb252ZXJzaW9uVmFsdWVIABI/Cgp0YXJnZXRfY3BhGBogASgL",
-            "MikuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlRhcmdldENwYUgA",
-            "EkEKC3RhcmdldF9yb2FzGB0gASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAuY29tbW9uLlRhcmdldFJvYXNIABJDCgx0YXJnZXRfc3BlbmQYGyABKAsy",
-            "Ky5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uVGFyZ2V0U3BlbmRI",
-            "ABJBCgtwZXJjZW50X2NwYxgiIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLmNvbW1vbi5QZXJjZW50Q3BjSAAahQIKD05ldHdvcmtTZXR0aW5ncxI4",
-            "ChR0YXJnZXRfZ29vZ2xlX3NlYXJjaBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5Cb29sVmFsdWUSOQoVdGFyZ2V0X3NlYXJjaF9uZXR3b3JrGAIgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRI6ChZ0YXJnZXRfY29udGVudF9u",
-            "ZXR3b3JrGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJBCh10",
-            "YXJnZXRfcGFydG5lcl9zZWFyY2hfbmV0d29yaxgEIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5Cb29sVmFsdWUaSAoQSG90ZWxTZXR0aW5nSW5mbxI0Cg9ob3Rl",
-            "bF9jZW50ZXJfaWQYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
-            "ZRrsAQoXRHluYW1pY1NlYXJjaEFkc1NldHRpbmcSMQoLZG9tYWluX25hbWUY",
-            "ASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoNbGFuZ3Vh",
-            "Z2VfY29kZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI6",
-            "ChZ1c2Vfc3VwcGxpZWRfdXJsc19vbmx5GAMgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLkJvb2xWYWx1ZRItCghmZWVkX2lkcxgEIAMoCzIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5JbnQ2NFZhbHVlGuIBCg9TaG9wcGluZ1NldHRpbmcSMAoLbWVyY2hh",
-            "bnRfaWQYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIzCg1z",
-            "YWxlc19jb3VudHJ5GAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
-            "bHVlEjYKEWNhbXBhaWduX3ByaW9yaXR5GAMgASgLMhsuZ29vZ2xlLnByb3Rv",
-            "YnVmLkludDMyVmFsdWUSMAoMZW5hYmxlX2xvY2FsGAQgASgLMhouZ29vZ2xl",
-            "LnByb3RvYnVmLkJvb2xWYWx1ZUIbChljYW1wYWlnbl9iaWRkaW5nX3N0cmF0",
-            "ZWd5QtIBCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2Vz",
-            "Qg1DYW1wYWlnblByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3Vy",
-            "Y2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2Vz",
-            "ygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
+            "ZWFkcy52MC5jb21tb24uTWFudWFsQ3BtSAASPwoKbWFudWFsX2NwdhglIAEo",
+            "CzIpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5NYW51YWxDcHZI",
+            "ABJTChRtYXhpbWl6ZV9jb252ZXJzaW9ucxgeIAEoCzIzLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmNvbW1vbi5NYXhpbWl6ZUNvbnZlcnNpb25zSAASXAoZ",
+            "bWF4aW1pemVfY29udmVyc2lvbl92YWx1ZRgfIAEoCzI3Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmNvbW1vbi5NYXhpbWl6ZUNvbnZlcnNpb25WYWx1ZUgA",
+            "Ej8KCnRhcmdldF9jcGEYGiABKAsyKS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5jb21tb24uVGFyZ2V0Q3BhSAASQQoLdGFyZ2V0X3JvYXMYHSABKAsyKi5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uVGFyZ2V0Um9hc0gAEkMK",
+            "DHRhcmdldF9zcGVuZBgbIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmNvbW1vbi5UYXJnZXRTcGVuZEgAEkEKC3BlcmNlbnRfY3BjGCIgASgLMiou",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlBlcmNlbnRDcGNIABqF",
+            "AgoPTmV0d29ya1NldHRpbmdzEjgKFHRhcmdldF9nb29nbGVfc2VhcmNoGAEg",
+            "ASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRI5ChV0YXJnZXRfc2Vh",
+            "cmNoX25ldHdvcmsYAiABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVl",
+            "EjoKFnRhcmdldF9jb250ZW50X25ldHdvcmsYAyABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuQm9vbFZhbHVlEkEKHXRhcmdldF9wYXJ0bmVyX3NlYXJjaF9uZXR3",
+            "b3JrGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRpIChBIb3Rl",
+            "bFNldHRpbmdJbmZvEjQKD2hvdGVsX2NlbnRlcl9pZBgBIAEoCzIbLmdvb2ds",
+            "ZS5wcm90b2J1Zi5JbnQ2NFZhbHVlGuwBChdEeW5hbWljU2VhcmNoQWRzU2V0",
+            "dGluZxIxCgtkb21haW5fbmFtZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRIzCg1sYW5ndWFnZV9jb2RlGAIgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEjoKFnVzZV9zdXBwbGllZF91cmxzX29ubHkY",
+            "AyABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEi0KCGZlZWRfaWRz",
+            "GAQgAygLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUa4gEKD1Nob3Bw",
+            "aW5nU2V0dGluZxIwCgttZXJjaGFudF9pZBgBIAEoCzIbLmdvb2dsZS5wcm90",
+            "b2J1Zi5JbnQ2NFZhbHVlEjMKDXNhbGVzX2NvdW50cnkYAiABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNgoRY2FtcGFpZ25fcHJpb3JpdHkY",
+            "AyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRIwCgxlbmFibGVf",
+            "bG9jYWwYBCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlQhsKGWNh",
+            "bXBhaWduX2JpZGRpbmdfc3RyYXRlZ3lC0gEKJWNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5yZXNvdXJjZXNCDUNhbXBhaWduUHJvdG9QAVpKZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MFxSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdServingOptimizationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdvertisingChannelSubTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdvertisingChannelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BiddingStrategyTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CampaignServingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CampaignStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "ShoppingSetting", "CampaignBudget", "BiddingStrategyType", "StartDate", "CampaignGroup", "EndDate", "BiddingStrategy", "ManualCpc", "ManualCpm", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetRoas", "TargetSpend", "PercentCpc" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "ShoppingSetting", "CampaignBudget", "BiddingStrategyType", "StartDate", "CampaignGroup", "EndDate", "BiddingStrategy", "ManualCpc", "ManualCpm", "ManualCpv", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetRoas", "TargetSpend", "PercentCpc" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo.Parser, new[]{ "HotelCenterId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.DynamicSearchAdsSetting), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.DynamicSearchAdsSetting.Parser, new[]{ "DomainName", "LanguageCode", "UseSuppliedUrlsOnly", "FeedIds" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.ShoppingSetting), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.ShoppingSetting.Parser, new[]{ "MerchantId", "SalesCountry", "CampaignPriority", "EnableLocal" }, null, null, null)})
@@ -177,6 +179,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case CampaignBiddingStrategyOneofCase.ManualCpm:
           ManualCpm = other.ManualCpm.Clone();
+          break;
+        case CampaignBiddingStrategyOneofCase.ManualCpv:
+          ManualCpv = other.ManualCpv.Clone();
           break;
         case CampaignBiddingStrategyOneofCase.MaximizeConversions:
           MaximizeConversions = other.MaximizeConversions.Clone();
@@ -561,6 +566,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "manual_cpv" field.</summary>
+    public const int ManualCpvFieldNumber = 37;
+    /// <summary>
+    /// A bidding strategy that pays a configurable amount per video view.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.ManualCpv ManualCpv {
+      get { return campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.ManualCpv ? (global::Google.Ads.GoogleAds.V0.Common.ManualCpv) campaignBiddingStrategy_ : null; }
+      set {
+        campaignBiddingStrategy_ = value;
+        campaignBiddingStrategyCase_ = value == null ? CampaignBiddingStrategyOneofCase.None : CampaignBiddingStrategyOneofCase.ManualCpv;
+      }
+    }
+
     /// <summary>Field number for the "maximize_conversions" field.</summary>
     public const int MaximizeConversionsFieldNumber = 30;
     /// <summary>
@@ -659,6 +678,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       BiddingStrategy = 23,
       ManualCpc = 24,
       ManualCpm = 25,
+      ManualCpv = 37,
       MaximizeConversions = 30,
       MaximizeConversionValue = 31,
       TargetCpa = 26,
@@ -713,6 +733,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (BiddingStrategy != other.BiddingStrategy) return false;
       if (!object.Equals(ManualCpc, other.ManualCpc)) return false;
       if (!object.Equals(ManualCpm, other.ManualCpm)) return false;
+      if (!object.Equals(ManualCpv, other.ManualCpv)) return false;
       if (!object.Equals(MaximizeConversions, other.MaximizeConversions)) return false;
       if (!object.Equals(MaximizeConversionValue, other.MaximizeConversionValue)) return false;
       if (!object.Equals(TargetCpa, other.TargetCpa)) return false;
@@ -748,6 +769,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.BiddingStrategy) hash ^= BiddingStrategy.GetHashCode();
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.ManualCpc) hash ^= ManualCpc.GetHashCode();
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.ManualCpm) hash ^= ManualCpm.GetHashCode();
+      if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.ManualCpv) hash ^= ManualCpv.GetHashCode();
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.MaximizeConversions) hash ^= MaximizeConversions.GetHashCode();
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.MaximizeConversionValue) hash ^= MaximizeConversionValue.GetHashCode();
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.TargetCpa) hash ^= TargetCpa.GetHashCode();
@@ -869,6 +891,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(162, 2);
         output.WriteMessage(ShoppingSetting);
       }
+      if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.ManualCpv) {
+        output.WriteRawTag(170, 2);
+        output.WriteMessage(ManualCpv);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -940,6 +966,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.ManualCpm) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ManualCpm);
+      }
+      if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.ManualCpv) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ManualCpv);
       }
       if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.MaximizeConversions) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(MaximizeConversions);
@@ -1066,6 +1095,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             ManualCpm = new global::Google.Ads.GoogleAds.V0.Common.ManualCpm();
           }
           ManualCpm.MergeFrom(other.ManualCpm);
+          break;
+        case CampaignBiddingStrategyOneofCase.ManualCpv:
+          if (ManualCpv == null) {
+            ManualCpv = new global::Google.Ads.GoogleAds.V0.Common.ManualCpv();
+          }
+          ManualCpv.MergeFrom(other.ManualCpv);
           break;
         case CampaignBiddingStrategyOneofCase.MaximizeConversions:
           if (MaximizeConversions == null) {
@@ -1299,6 +1334,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
               shoppingSetting_ = new global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.ShoppingSetting();
             }
             input.ReadMessage(shoppingSetting_);
+            break;
+          }
+          case 298: {
+            global::Google.Ads.GoogleAds.V0.Common.ManualCpv subBuilder = new global::Google.Ads.GoogleAds.V0.Common.ManualCpv();
+            if (campaignBiddingStrategyCase_ == CampaignBiddingStrategyOneofCase.ManualCpv) {
+              subBuilder.MergeFrom(ManualCpv);
+            }
+            input.ReadMessage(subBuilder);
+            ManualCpv = subBuilder;
             break;
           }
         }

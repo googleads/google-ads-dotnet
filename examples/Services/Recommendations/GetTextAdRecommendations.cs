@@ -92,20 +92,21 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
                     service.Search(customerId.ToString(), query);
 
-                // Iterates over all rows in all pages and prints the requested field values for the
-                // recommendation in each row.
+                // Iterates over all rows in all pages and prints the requested field values
+                // for the recommendation in each row.
                 foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
                 {
                     Recommendation recommendation = googleAdsRow.Recommendation;
                     // [START_EXCLUDE]
                     Ad recommendedAd = recommendation.TextAdRecommendation.Ad;
 
-                    Console.WriteLine($"Recommendation ({recommendation.ResourceName}) was found for " +
-                        $"campaign {recommendation.Campaign}:");
+                    Console.WriteLine($"Recommendation ({recommendation.ResourceName}) was " +
+                        $"found for campaign {recommendation.Campaign}:");
                     if (recommendedAd.ExpandedTextAd != null)
                     {
                         ExpandedTextAdInfo eta = recommendedAd.ExpandedTextAd;
-                        Console.WriteLine("\tHeadline 1 = {0}\n\tHeadline 2 = {1}\tDescription = {2}",
+                        Console.WriteLine("\tHeadline 1 = {0}\n\tHeadline 2 = {1}\t" +
+                            "Description = {2}",
                             eta.HeadlinePart1, eta.HeadlinePart2, eta.Description);
                     }
                     Console.WriteLine($"\tDisplay URL = {recommendedAd.DisplayUrl}");

@@ -26,41 +26,44 @@ namespace Google.Ads.GoogleAds.V0.Services {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9zZXJ2aWNlcy9hZF9ncm91cF9h",
             "ZF9zZXJ2aWNlLnByb3RvEiBnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2",
-            "aWNlcxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2FkX2dy",
+            "aWNlcxorZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uL3BvbGljeS5w",
+            "cm90bxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2FkX2dy",
             "b3VwX2FkLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGiBn",
             "b29nbGUvcHJvdG9idWYvZmllbGRfbWFzay5wcm90byIsChNHZXRBZEdyb3Vw",
             "QWRSZXF1ZXN0EhUKDXJlc291cmNlX25hbWUYASABKAkieAoXTXV0YXRlQWRH",
             "cm91cEFkc1JlcXVlc3QSEwoLY3VzdG9tZXJfaWQYASABKAkSSAoKb3BlcmF0",
             "aW9ucxgCIAMoCzI0Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2Vz",
-            "LkFkR3JvdXBBZE9wZXJhdGlvbiLkAQoSQWRHcm91cEFkT3BlcmF0aW9uEi8K",
+            "LkFkR3JvdXBBZE9wZXJhdGlvbiLEAgoSQWRHcm91cEFkT3BlcmF0aW9uEi8K",
             "C3VwZGF0ZV9tYXNrGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFz",
-            "axI+CgZjcmVhdGUYASABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5y",
-            "ZXNvdXJjZXMuQWRHcm91cEFkSAASPgoGdXBkYXRlGAIgASgLMiwuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkFkR3JvdXBBZEgAEhAKBnJl",
-            "bW92ZRgDIAEoCUgAQgsKCW9wZXJhdGlvbiJkChhNdXRhdGVBZEdyb3VwQWRz",
-            "UmVzcG9uc2USSAoHcmVzdWx0cxgCIAMoCzI3Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLnNlcnZpY2VzLk11dGF0ZUFkR3JvdXBBZFJlc3VsdCIuChVNdXRh",
-            "dGVBZEdyb3VwQWRSZXN1bHQSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCTKGAwoQ",
-            "QWRHcm91cEFkU2VydmljZRKpAQoMR2V0QWRHcm91cEFkEjUuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjAuc2VydmljZXMuR2V0QWRHcm91cEFkUmVxdWVzdBos",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5BZEdyb3VwQWQi",
-            "NILT5JMCLhIsL3YwL3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8qL2FkR3Jv",
-            "dXBBZHMvKn0SxQEKEE11dGF0ZUFkR3JvdXBBZHMSOS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5zZXJ2aWNlcy5NdXRhdGVBZEdyb3VwQWRzUmVxdWVzdBo6",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLk11dGF0ZUFkR3Jv",
-            "dXBBZHNSZXNwb25zZSI6gtPkkwI0Ii8vdjAvY3VzdG9tZXJzL3tjdXN0b21l",
-            "cl9pZD0qfS9hZEdyb3VwQWRzOm11dGF0ZToBKkLVAQokY29tLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzQhVBZEdyb3VwQWRTZXJ2aWNlUHJv",
-            "dG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YwL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjAuU2VydmljZXPKAiBHb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMFxTZXJ2aWNlc2IGcHJvdG8z"));
+            "axJeChtwb2xpY3lfdmFsaWRhdGlvbl9wYXJhbWV0ZXIYBSABKAsyOS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uUG9saWN5VmFsaWRhdGlvblBh",
+            "cmFtZXRlchI+CgZjcmVhdGUYASABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5yZXNvdXJjZXMuQWRHcm91cEFkSAASPgoGdXBkYXRlGAIgASgLMiwu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkFkR3JvdXBBZEgA",
+            "EhAKBnJlbW92ZRgDIAEoCUgAQgsKCW9wZXJhdGlvbiJkChhNdXRhdGVBZEdy",
+            "b3VwQWRzUmVzcG9uc2USSAoHcmVzdWx0cxgCIAMoCzI3Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLnNlcnZpY2VzLk11dGF0ZUFkR3JvdXBBZFJlc3VsdCIu",
+            "ChVNdXRhdGVBZEdyb3VwQWRSZXN1bHQSFQoNcmVzb3VyY2VfbmFtZRgBIAEo",
+            "CTKGAwoQQWRHcm91cEFkU2VydmljZRKpAQoMR2V0QWRHcm91cEFkEjUuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMuR2V0QWRHcm91cEFkUmVx",
+            "dWVzdBosLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5BZEdy",
+            "b3VwQWQiNILT5JMCLhIsL3YwL3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8q",
+            "L2FkR3JvdXBBZHMvKn0SxQEKEE11dGF0ZUFkR3JvdXBBZHMSOS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5NdXRhdGVBZEdyb3VwQWRzUmVx",
+            "dWVzdBo6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLk11dGF0",
+            "ZUFkR3JvdXBBZHNSZXNwb25zZSI6gtPkkwI0Ii8vdjAvY3VzdG9tZXJzL3tj",
+            "dXN0b21lcl9pZD0qfS9hZEdyb3VwQWRzOm11dGF0ZToBKkLVAQokY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzQhVBZEdyb3VwQWRTZXJ2",
+            "aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FB",
+            "qgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuU2VydmljZXPKAiBHb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMFxTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetAdGroupAdRequest), global::Google.Ads.GoogleAds.V0.Services.GetAdGroupAdRequest.Parser, new[]{ "ResourceName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateAdGroupAdsRequest), global::Google.Ads.GoogleAds.V0.Services.MutateAdGroupAdsRequest.Parser, new[]{ "CustomerId", "Operations" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.AdGroupAdOperation), global::Google.Ads.GoogleAds.V0.Services.AdGroupAdOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.AdGroupAdOperation), global::Google.Ads.GoogleAds.V0.Services.AdGroupAdOperation.Parser, new[]{ "UpdateMask", "PolicyValidationParameter", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateAdGroupAdsResponse), global::Google.Ads.GoogleAds.V0.Services.MutateAdGroupAdsResponse.Parser, new[]{ "Results" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateAdGroupAdResult), global::Google.Ads.GoogleAds.V0.Services.MutateAdGroupAdResult.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -391,6 +394,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AdGroupAdOperation(AdGroupAdOperation other) : this() {
       updateMask_ = other.updateMask_ != null ? other.updateMask_.Clone() : null;
+      policyValidationParameter_ = other.policyValidationParameter_ != null ? other.policyValidationParameter_.Clone() : null;
       switch (other.OperationCase) {
         case OperationOneofCase.Create:
           Create = other.Create.Clone();
@@ -422,6 +426,20 @@ namespace Google.Ads.GoogleAds.V0.Services {
       get { return updateMask_; }
       set {
         updateMask_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "policy_validation_parameter" field.</summary>
+    public const int PolicyValidationParameterFieldNumber = 5;
+    private global::Google.Ads.GoogleAds.V0.Common.PolicyValidationParameter policyValidationParameter_;
+    /// <summary>
+    /// Configuration for how policies are validated.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PolicyValidationParameter PolicyValidationParameter {
+      get { return policyValidationParameter_; }
+      set {
+        policyValidationParameter_ = value;
       }
     }
 
@@ -504,6 +522,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return true;
       }
       if (!object.Equals(UpdateMask, other.UpdateMask)) return false;
+      if (!object.Equals(PolicyValidationParameter, other.PolicyValidationParameter)) return false;
       if (!object.Equals(Create, other.Create)) return false;
       if (!object.Equals(Update, other.Update)) return false;
       if (Remove != other.Remove) return false;
@@ -515,6 +534,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (updateMask_ != null) hash ^= UpdateMask.GetHashCode();
+      if (policyValidationParameter_ != null) hash ^= PolicyValidationParameter.GetHashCode();
       if (operationCase_ == OperationOneofCase.Create) hash ^= Create.GetHashCode();
       if (operationCase_ == OperationOneofCase.Update) hash ^= Update.GetHashCode();
       if (operationCase_ == OperationOneofCase.Remove) hash ^= Remove.GetHashCode();
@@ -548,6 +568,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
         output.WriteRawTag(34);
         output.WriteMessage(UpdateMask);
       }
+      if (policyValidationParameter_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(PolicyValidationParameter);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -558,6 +582,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
       int size = 0;
       if (updateMask_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateMask);
+      }
+      if (policyValidationParameter_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PolicyValidationParameter);
       }
       if (operationCase_ == OperationOneofCase.Create) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Create);
@@ -584,6 +611,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
           updateMask_ = new global::Google.Protobuf.WellKnownTypes.FieldMask();
         }
         UpdateMask.MergeFrom(other.UpdateMask);
+      }
+      if (other.policyValidationParameter_ != null) {
+        if (policyValidationParameter_ == null) {
+          policyValidationParameter_ = new global::Google.Ads.GoogleAds.V0.Common.PolicyValidationParameter();
+        }
+        PolicyValidationParameter.MergeFrom(other.PolicyValidationParameter);
       }
       switch (other.OperationCase) {
         case OperationOneofCase.Create:
@@ -641,6 +674,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
               updateMask_ = new global::Google.Protobuf.WellKnownTypes.FieldMask();
             }
             input.ReadMessage(updateMask_);
+            break;
+          }
+          case 42: {
+            if (policyValidationParameter_ == null) {
+              policyValidationParameter_ = new global::Google.Ads.GoogleAds.V0.Common.PolicyValidationParameter();
+            }
+            input.ReadMessage(policyValidationParameter_);
             break;
           }
         }

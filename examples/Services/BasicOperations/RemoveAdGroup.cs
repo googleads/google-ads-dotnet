@@ -49,7 +49,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example deletes an ad group. To get ad groups, run GetAdGroups.cs.";
+                return "This code example deletes an ad group. To get ad groups, run " +
+                    "GetAdGroups.cs.";
             }
         }
 
@@ -80,7 +81,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Display the result.
                 foreach (MutateAdGroupResult result in response.Results)
                 {
-                    Console.WriteLine($"Removed ad group with resourceName: {result.ResourceName}.");
+                    Console.WriteLine($"Removed ad group with resourceName: " +
+                        $"{result.ResourceName}.");
                 }
             }
             catch (GoogleAdsException e)

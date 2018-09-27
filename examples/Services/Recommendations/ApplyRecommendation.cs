@@ -50,8 +50,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example applies a given recommendation. To retrieve recommendations " +
-                    "for text ads, run GetTextAdRecommendations.cs.";
+                return "This code example applies a given recommendation. To retrieve " +
+                    "recommendations for text ads, run GetTextAdRecommendations.cs.";
             }
         }
 
@@ -71,9 +71,9 @@ namespace Google.Ads.GoogleAds.Examples.V0
             {
                 ResourceName = ResourceNames.Recommendation(customerId, recommendationId),
 
-                // Each recommendation types has optional parameters to override the recommended values.
-                // For example, you can override a recommended ad when a TextAdRecommendation is applied,
-                // as shown below.
+                // Each recommendation types has optional parameters to override the recommended
+                // values. For example, you can override a recommended ad when a
+                // TextAdRecommendation is applied, as shown below.
                 // Please read https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.ApplyRecommendationOperation
                 // for details.
                 // TextAd = new TextAdParameters() {
@@ -85,8 +85,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
 
             try
             {
-                ApplyRecommendationResponse response = service.ApplyRecommendation(customerId.ToString(),
-                    new ApplyRecommendationOperation[] { operation });
+                ApplyRecommendationResponse response = service.ApplyRecommendation(
+                    customerId.ToString(), new ApplyRecommendationOperation[] { operation });
                 Console.WriteLine($"Applied {0} recommendation(s):", response.Results.Count);
                 foreach (ApplyRecommendationResult result in response.Results)
                 {

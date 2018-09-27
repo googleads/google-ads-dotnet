@@ -87,7 +87,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                     Name = "API Negative keyword list - " + ExampleUtilities.GetRandomString(),
                     Type = SharedSetType.NegativeKeywords,
                 };
-                SharedSetOperation operation = new SharedSetOperation() {
+                SharedSetOperation operation = new SharedSetOperation()
+                {
                     Create = sharedSet
                 };
 
@@ -105,7 +106,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 {
                     SharedCriterion sharedCriterion = new SharedCriterion()
                     {
-                        Keyword = new KeywordInfo() {
+                        Keyword = new KeywordInfo()
+                        {
                             Text = keyword,
                             MatchType = KeywordMatchType.Broad
                         },
@@ -127,15 +129,17 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 }
 
                 // Attach shared set to campaign.
-                CampaignSharedSet campaignSet = new CampaignSharedSet() {
+                CampaignSharedSet campaignSet = new CampaignSharedSet()
+                {
                     Campaign = ResourceNames.Campaign(customerId, campaignId),
                     SharedSet = sharedSetResourceName
                 };
 
-                CampaignSharedSetOperation sharedSetoperation = new CampaignSharedSetOperation() {
+                CampaignSharedSetOperation sharedSetoperation = new CampaignSharedSetOperation()
+                {
                     Create = campaignSet
                 };
-                MutateCampaignSharedSetsResponse response = 
+                MutateCampaignSharedSetsResponse response =
                     campaignSharedSetService.MutateCampaignSharedSets(customerId.ToString(),
                         new CampaignSharedSetOperation[] { sharedSetoperation });
 

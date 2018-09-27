@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -219,7 +218,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -228,7 +227,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -259,7 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -268,7 +267,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -355,7 +354,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::AdGroupBidModifier> GetAdGroupBidModifierAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetAdGroupBidModifierAsync(
-                new gagvs::GetAdGroupBidModifierRequest
+                new GetAdGroupBidModifierRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -394,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::AdGroupBidModifier GetAdGroupBidModifier(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetAdGroupBidModifier(
-                new gagvs::GetAdGroupBidModifierRequest
+                new GetAdGroupBidModifierRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -413,7 +412,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::AdGroupBidModifier> GetAdGroupBidModifierAsync(
-            gagvs::GetAdGroupBidModifierRequest request,
+            GetAdGroupBidModifierRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -432,7 +431,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::AdGroupBidModifier> GetAdGroupBidModifierAsync(
-            gagvs::GetAdGroupBidModifierRequest request,
+            GetAdGroupBidModifierRequest request,
             st::CancellationToken cancellationToken) => GetAdGroupBidModifierAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -450,7 +449,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::AdGroupBidModifier GetAdGroupBidModifier(
-            gagvs::GetAdGroupBidModifierRequest request,
+            GetAdGroupBidModifierRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -472,11 +471,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
+        public virtual stt::Task<MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
             string customerId,
-            scg::IEnumerable<gagvs::AdGroupBidModifierOperation> operations,
+            scg::IEnumerable<AdGroupBidModifierOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateAdGroupBidModifiersAsync(
-                new gagvs::MutateAdGroupBidModifiersRequest
+                new MutateAdGroupBidModifiersRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -499,9 +498,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
+        public virtual stt::Task<MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
             string customerId,
-            scg::IEnumerable<gagvs::AdGroupBidModifierOperation> operations,
+            scg::IEnumerable<AdGroupBidModifierOperation> operations,
             st::CancellationToken cancellationToken) => MutateAdGroupBidModifiersAsync(
                 customerId,
                 operations,
@@ -523,11 +522,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateAdGroupBidModifiersResponse MutateAdGroupBidModifiers(
+        public virtual MutateAdGroupBidModifiersResponse MutateAdGroupBidModifiers(
             string customerId,
-            scg::IEnumerable<gagvs::AdGroupBidModifierOperation> operations,
+            scg::IEnumerable<AdGroupBidModifierOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateAdGroupBidModifiers(
-                new gagvs::MutateAdGroupBidModifiersRequest
+                new MutateAdGroupBidModifiersRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -547,8 +546,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
-            gagvs::MutateAdGroupBidModifiersRequest request,
+        public virtual stt::Task<MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
+            MutateAdGroupBidModifiersRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -567,8 +566,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
-            gagvs::MutateAdGroupBidModifiersRequest request,
+        public virtual stt::Task<MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
+            MutateAdGroupBidModifiersRequest request,
             st::CancellationToken cancellationToken) => MutateAdGroupBidModifiersAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -586,8 +585,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateAdGroupBidModifiersResponse MutateAdGroupBidModifiers(
-            gagvs::MutateAdGroupBidModifiersRequest request,
+        public virtual MutateAdGroupBidModifiersResponse MutateAdGroupBidModifiers(
+            MutateAdGroupBidModifiersRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -600,8 +599,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class AdGroupBidModifierServiceClientImpl : AdGroupBidModifierServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetAdGroupBidModifierRequest, gagvr::AdGroupBidModifier> _callGetAdGroupBidModifier;
-        private readonly gaxgrpc::ApiCall<gagvs::MutateAdGroupBidModifiersRequest, gagvs::MutateAdGroupBidModifiersResponse> _callMutateAdGroupBidModifiers;
+        private readonly gaxgrpc::ApiCall<GetAdGroupBidModifierRequest, gagvr::AdGroupBidModifier> _callGetAdGroupBidModifier;
+        private readonly gaxgrpc::ApiCall<MutateAdGroupBidModifiersRequest, MutateAdGroupBidModifiersResponse> _callMutateAdGroupBidModifiers;
 
         /// <summary>
         /// Constructs a client wrapper for the AdGroupBidModifierService service, with the specified gRPC client and settings.
@@ -613,9 +612,9 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             AdGroupBidModifierServiceSettings effectiveSettings = settings ?? AdGroupBidModifierServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetAdGroupBidModifier = clientHelper.BuildApiCall<gagvs::GetAdGroupBidModifierRequest, gagvr::AdGroupBidModifier>(
+            _callGetAdGroupBidModifier = clientHelper.BuildApiCall<GetAdGroupBidModifierRequest, gagvr::AdGroupBidModifier>(
                 GrpcClient.GetAdGroupBidModifierAsync, GrpcClient.GetAdGroupBidModifier, effectiveSettings.GetAdGroupBidModifierSettings);
-            _callMutateAdGroupBidModifiers = clientHelper.BuildApiCall<gagvs::MutateAdGroupBidModifiersRequest, gagvs::MutateAdGroupBidModifiersResponse>(
+            _callMutateAdGroupBidModifiers = clientHelper.BuildApiCall<MutateAdGroupBidModifiersRequest, MutateAdGroupBidModifiersResponse>(
                 GrpcClient.MutateAdGroupBidModifiersAsync, GrpcClient.MutateAdGroupBidModifiers, effectiveSettings.MutateAdGroupBidModifiersSettings);
             Modify_ApiCall(ref _callGetAdGroupBidModifier);
             Modify_GetAdGroupBidModifierApiCall(ref _callGetAdGroupBidModifier);
@@ -634,8 +633,8 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetAdGroupBidModifierApiCall(ref gaxgrpc::ApiCall<gagvs::GetAdGroupBidModifierRequest, gagvr::AdGroupBidModifier> call);
-        partial void Modify_MutateAdGroupBidModifiersApiCall(ref gaxgrpc::ApiCall<gagvs::MutateAdGroupBidModifiersRequest, gagvs::MutateAdGroupBidModifiersResponse> call);
+        partial void Modify_GetAdGroupBidModifierApiCall(ref gaxgrpc::ApiCall<GetAdGroupBidModifierRequest, gagvr::AdGroupBidModifier> call);
+        partial void Modify_MutateAdGroupBidModifiersApiCall(ref gaxgrpc::ApiCall<MutateAdGroupBidModifiersRequest, MutateAdGroupBidModifiersResponse> call);
         partial void OnConstruction(AdGroupBidModifierService.AdGroupBidModifierServiceClient grpcClient, AdGroupBidModifierServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -646,8 +645,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetAdGroupBidModifierRequest(ref gagvs::GetAdGroupBidModifierRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_MutateAdGroupBidModifiersRequest(ref gagvs::MutateAdGroupBidModifiersRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetAdGroupBidModifierRequest(ref GetAdGroupBidModifierRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateAdGroupBidModifiersRequest(ref MutateAdGroupBidModifiersRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested ad group bid modifier in full detail.
@@ -662,7 +661,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::AdGroupBidModifier> GetAdGroupBidModifierAsync(
-            gagvs::GetAdGroupBidModifierRequest request,
+            GetAdGroupBidModifierRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetAdGroupBidModifierRequest(ref request, ref callSettings);
@@ -682,7 +681,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::AdGroupBidModifier GetAdGroupBidModifier(
-            gagvs::GetAdGroupBidModifierRequest request,
+            GetAdGroupBidModifierRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetAdGroupBidModifierRequest(ref request, ref callSettings);
@@ -702,8 +701,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<gagvs::MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
-            gagvs::MutateAdGroupBidModifiersRequest request,
+        public override stt::Task<MutateAdGroupBidModifiersResponse> MutateAdGroupBidModifiersAsync(
+            MutateAdGroupBidModifiersRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateAdGroupBidModifiersRequest(ref request, ref callSettings);
@@ -723,8 +722,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override gagvs::MutateAdGroupBidModifiersResponse MutateAdGroupBidModifiers(
-            gagvs::MutateAdGroupBidModifiersRequest request,
+        public override MutateAdGroupBidModifiersResponse MutateAdGroupBidModifiers(
+            MutateAdGroupBidModifiersRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateAdGroupBidModifiersRequest(ref request, ref callSettings);

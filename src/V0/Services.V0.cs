@@ -35,6 +35,13 @@ namespace Google.Ads.GoogleAds
                 AdGroupAdService;
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.AccountBudgetProposalService
+            /// for details;
+            /// </summary>
+            public static readonly ServiceTemplate<AccountBudgetProposalServiceClient, AccountBudgetProposalServiceSettings>
+                AccountBudgetProposalService;
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.AdGroupBidModifierService
             /// for details;
             /// </summary>
@@ -61,6 +68,13 @@ namespace Google.Ads.GoogleAds
             /// </summary>
             public static readonly ServiceTemplate<BiddingStrategyServiceClient,
                 BiddingStrategyServiceSettings> BiddingStrategyService;
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.BillingSetupService
+            /// for details;
+            /// </summary>
+            public static readonly ServiceTemplate<BillingSetupServiceClient,
+                BillingSetupServiceSettings> BillingSetupService;
 
             /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.BudgetService
@@ -103,6 +117,20 @@ namespace Google.Ads.GoogleAds
             /// </summary>
             public static readonly ServiceTemplate<CampaignSharedSetServiceClient,
                 CampaignSharedSetServiceSettings> CampaignSharedSetService;
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.ChangeStatusService
+            /// for details;
+            /// </summary>
+            public static readonly ServiceTemplate<ChangeStatusServiceClient,
+                ChangeStatusServiceSettings> ChangeStatusService;
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.ConversionActionService
+            /// for details;
+            /// </summary>
+            public static readonly ServiceTemplate<ConversionActionServiceClient,
+                ConversionActionServiceSettings> ConversionActionService;
 
             /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.CustomerService
@@ -159,6 +187,13 @@ namespace Google.Ads.GoogleAds
             /// </summary>
             public static readonly ServiceTemplate<SharedSetServiceClient,
                 SharedSetServiceSettings> SharedSetService;
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.VideoService
+            /// for details;
+            /// </summary>
+            public static readonly ServiceTemplate<VideoServiceClient,
+                VideoServiceSettings> VideoService;
         }
     }
 }

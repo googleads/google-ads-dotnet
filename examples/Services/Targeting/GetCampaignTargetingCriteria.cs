@@ -62,18 +62,19 @@ namespace Google.Ads.GoogleAds.Examples.V0
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="campaignId">ID of the campaign to from which targeting criteria are retrieved.
-        /// </param>
+        /// <param name="campaignId">ID of the campaign to from which targeting criteria are
+        /// retrieved.</param>
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the GoogleAdsService.
-            GoogleAdsServiceClient googleAdsService = client.GetService(Services.V0.GoogleAdsService);
+            GoogleAdsServiceClient googleAdsService = client.GetService(
+                Services.V0.GoogleAdsService);
 
             // Create the query.
             string query = $@"SELECT campaign.id, campaign_criterion.campaign,
-          campaign_criterion.criterion_id, campaign_criterion.negative,
-          campaign_criterion.keyword.text, campaign_criterion.keyword.match_type
-          FROM campaign_criterion WHERE campaign.id = {campaignId}";
+                campaign_criterion.criterion_id, campaign_criterion.negative,
+                campaign_criterion.keyword.text, campaign_criterion.keyword.match_type
+                FROM campaign_criterion WHERE campaign.id = {campaignId}";
             try
             {
                 // Issue a search request.
@@ -84,7 +85,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 foreach (GoogleAdsRow criterionRow in result)
                 {
                     CampaignCriterion criterion = criterionRow.CampaignCriterion;
-                    Console.Write($"Campaign criterion with id = '{criterion.CriterionId}' was retrieved:");
+                    Console.Write($"Campaign criterion with id = '{criterion.CriterionId}' " +
+                        "was retrieved:");
                     if (criterion.Negative.Value)
                     {
                         Console.Write("Negative ");

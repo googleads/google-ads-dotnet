@@ -59,7 +59,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the GoogleAdsService.
-            GoogleAdsServiceClient googleAdsService = client.GetService(Services.V0.GoogleAdsService);
+            GoogleAdsServiceClient googleAdsService = client.GetService(
+                Services.V0.GoogleAdsService);
 
             // Create the query.
             string query =
@@ -90,7 +91,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Display the results.
                 foreach (GoogleAdsRow criterionRow in result)
                 {
-                    Console.WriteLine($"Keyword with text '{criterionRow.AdGroupCriterion.Keyword.Text}', " +
+                    Console.WriteLine(
+                        $"Keyword with text '{criterionRow.AdGroupCriterion.Keyword.Text}', " +
                         $" match type '{criterionRow.AdGroupCriterion.Keyword.MatchType}' and " +
                         $"ID {criterionRow.AdGroupCriterion.CriterionId} " +
                         $"in ad group '{criterionRow.AdGroup.Name}' with " +
