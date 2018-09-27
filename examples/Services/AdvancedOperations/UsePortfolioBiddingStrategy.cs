@@ -53,8 +53,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example adds a portfolio bidding strategy and uses it to construct " +
-                    "a campaign.";
+                return "This code example adds a portfolio bidding strategy and uses it to " +
+                    "construct a campaign.";
             }
         }
 
@@ -68,29 +68,34 @@ namespace Google.Ads.GoogleAds.Examples.V0
             try
             {
                 // Create the portfolio bidding strategy.
-                string BIDDINGSTRATEGY_NAME = "Maximize Clicks " + ExampleUtilities.GetRandomString();
+                string BIDDINGSTRATEGY_NAME = "Maximize Clicks " +
+                    ExampleUtilities.GetRandomString();
                 const long BID_CEILING = 2000000;
                 const long SPEND_TARGET = 20000000;
 
                 string portfolioBiddingStrategy = CreatePortfolioBiddingStrategy(
                     client, customerId, BIDDINGSTRATEGY_NAME, BID_CEILING, SPEND_TARGET);
 
-                Console.WriteLine("Portfolio bidding strategy with resource name '{0}' was created.",
-                    portfolioBiddingStrategy);
+                Console.WriteLine("Portfolio bidding strategy with resource name '{0}' " +
+                    "was created.", portfolioBiddingStrategy);
 
                 // Create the shared budget.
-                string BUDGET_NAME = "Shared Interplanetary Budget #" + ExampleUtilities.GetRandomString();
+                string BUDGET_NAME = "Shared Interplanetary Budget #" +
+                    ExampleUtilities.GetRandomString();
                 const long BUDGET_AMOUNT = 30000000;
 
-                string sharedBudget = CreateSharedBudget(client, customerId, BUDGET_NAME, BUDGET_AMOUNT);
+                string sharedBudget = CreateSharedBudget(client, customerId, BUDGET_NAME,
+                    BUDGET_AMOUNT);
 
-                Console.WriteLine("Shared budget with resource name '{0}' was created.", sharedBudget);
+                Console.WriteLine("Shared budget with resource name '{0}' was created.",
+                    sharedBudget);
 
                 // Create the campaign.
-                string CAMPAIGN_NAME = "Interplanetary Cruise #" + ExampleUtilities.GetRandomString();
+                string CAMPAIGN_NAME = "Interplanetary Cruise #" +
+                    ExampleUtilities.GetRandomString();
 
-                string newCampaign = CreateCampaignWithBiddingStrategy(client, customerId, CAMPAIGN_NAME,
-                    portfolioBiddingStrategy, sharedBudget);
+                string newCampaign = CreateCampaignWithBiddingStrategy(client, customerId,
+                    CAMPAIGN_NAME, portfolioBiddingStrategy, sharedBudget);
 
                 Console.WriteLine("Campaign with resource name '{0}' was created.", newCampaign);
             }

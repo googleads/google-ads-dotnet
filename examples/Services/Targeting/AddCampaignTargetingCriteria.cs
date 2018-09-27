@@ -62,7 +62,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="campaignId">ID of the campaign to which targeting criteria are added.</param>
+        /// <param name="campaignId">ID of the campaign to which targeting criteria are added.
+        /// </param>
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the CampaignCriterionService.
@@ -82,7 +83,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
             };
 
             // Create the operation.
-            CampaignCriterionOperation negativeCriterionOperation = new CampaignCriterionOperation()
+            CampaignCriterionOperation negativeCriterionOperation =
+                new CampaignCriterionOperation()
             {
                 Create = campaignCriterion
             };
@@ -98,7 +100,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 foreach (MutateCampaignCriterionResult criterionResult in response.Results)
                 {
                     Console.WriteLine($"New campaign criterion with resource name = " +
-                        $"'{criterionResult.ResourceName}' was added to campaign ID {campaignId}.");
+                        $"'{criterionResult.ResourceName}' was added to campaign " +
+                        "ID {campaignId}.");
                 }
             }
             catch (GoogleAdsException e)

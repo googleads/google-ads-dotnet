@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -219,7 +218,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -228,7 +227,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -259,7 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -268,7 +267,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -355,7 +354,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::BiddingStrategy> GetBiddingStrategyAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetBiddingStrategyAsync(
-                new gagvs::GetBiddingStrategyRequest
+                new GetBiddingStrategyRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -394,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::BiddingStrategy GetBiddingStrategy(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetBiddingStrategy(
-                new gagvs::GetBiddingStrategyRequest
+                new GetBiddingStrategyRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -413,7 +412,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::BiddingStrategy> GetBiddingStrategyAsync(
-            gagvs::GetBiddingStrategyRequest request,
+            GetBiddingStrategyRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -432,7 +431,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::BiddingStrategy> GetBiddingStrategyAsync(
-            gagvs::GetBiddingStrategyRequest request,
+            GetBiddingStrategyRequest request,
             st::CancellationToken cancellationToken) => GetBiddingStrategyAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -450,7 +449,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::BiddingStrategy GetBiddingStrategy(
-            gagvs::GetBiddingStrategyRequest request,
+            GetBiddingStrategyRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -472,11 +471,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
+        public virtual stt::Task<MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
             string customerId,
-            scg::IEnumerable<gagvs::BiddingStrategyOperation> operations,
+            scg::IEnumerable<BiddingStrategyOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateBiddingStrategiesAsync(
-                new gagvs::MutateBiddingStrategiesRequest
+                new MutateBiddingStrategiesRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -499,9 +498,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
+        public virtual stt::Task<MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
             string customerId,
-            scg::IEnumerable<gagvs::BiddingStrategyOperation> operations,
+            scg::IEnumerable<BiddingStrategyOperation> operations,
             st::CancellationToken cancellationToken) => MutateBiddingStrategiesAsync(
                 customerId,
                 operations,
@@ -523,11 +522,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateBiddingStrategiesResponse MutateBiddingStrategies(
+        public virtual MutateBiddingStrategiesResponse MutateBiddingStrategies(
             string customerId,
-            scg::IEnumerable<gagvs::BiddingStrategyOperation> operations,
+            scg::IEnumerable<BiddingStrategyOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateBiddingStrategies(
-                new gagvs::MutateBiddingStrategiesRequest
+                new MutateBiddingStrategiesRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -547,8 +546,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
-            gagvs::MutateBiddingStrategiesRequest request,
+        public virtual stt::Task<MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
+            MutateBiddingStrategiesRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -567,8 +566,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
-            gagvs::MutateBiddingStrategiesRequest request,
+        public virtual stt::Task<MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
+            MutateBiddingStrategiesRequest request,
             st::CancellationToken cancellationToken) => MutateBiddingStrategiesAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -586,8 +585,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateBiddingStrategiesResponse MutateBiddingStrategies(
-            gagvs::MutateBiddingStrategiesRequest request,
+        public virtual MutateBiddingStrategiesResponse MutateBiddingStrategies(
+            MutateBiddingStrategiesRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -600,8 +599,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class BiddingStrategyServiceClientImpl : BiddingStrategyServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetBiddingStrategyRequest, gagvr::BiddingStrategy> _callGetBiddingStrategy;
-        private readonly gaxgrpc::ApiCall<gagvs::MutateBiddingStrategiesRequest, gagvs::MutateBiddingStrategiesResponse> _callMutateBiddingStrategies;
+        private readonly gaxgrpc::ApiCall<GetBiddingStrategyRequest, gagvr::BiddingStrategy> _callGetBiddingStrategy;
+        private readonly gaxgrpc::ApiCall<MutateBiddingStrategiesRequest, MutateBiddingStrategiesResponse> _callMutateBiddingStrategies;
 
         /// <summary>
         /// Constructs a client wrapper for the BiddingStrategyService service, with the specified gRPC client and settings.
@@ -613,9 +612,9 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             BiddingStrategyServiceSettings effectiveSettings = settings ?? BiddingStrategyServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetBiddingStrategy = clientHelper.BuildApiCall<gagvs::GetBiddingStrategyRequest, gagvr::BiddingStrategy>(
+            _callGetBiddingStrategy = clientHelper.BuildApiCall<GetBiddingStrategyRequest, gagvr::BiddingStrategy>(
                 GrpcClient.GetBiddingStrategyAsync, GrpcClient.GetBiddingStrategy, effectiveSettings.GetBiddingStrategySettings);
-            _callMutateBiddingStrategies = clientHelper.BuildApiCall<gagvs::MutateBiddingStrategiesRequest, gagvs::MutateBiddingStrategiesResponse>(
+            _callMutateBiddingStrategies = clientHelper.BuildApiCall<MutateBiddingStrategiesRequest, MutateBiddingStrategiesResponse>(
                 GrpcClient.MutateBiddingStrategiesAsync, GrpcClient.MutateBiddingStrategies, effectiveSettings.MutateBiddingStrategiesSettings);
             Modify_ApiCall(ref _callGetBiddingStrategy);
             Modify_GetBiddingStrategyApiCall(ref _callGetBiddingStrategy);
@@ -634,8 +633,8 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetBiddingStrategyApiCall(ref gaxgrpc::ApiCall<gagvs::GetBiddingStrategyRequest, gagvr::BiddingStrategy> call);
-        partial void Modify_MutateBiddingStrategiesApiCall(ref gaxgrpc::ApiCall<gagvs::MutateBiddingStrategiesRequest, gagvs::MutateBiddingStrategiesResponse> call);
+        partial void Modify_GetBiddingStrategyApiCall(ref gaxgrpc::ApiCall<GetBiddingStrategyRequest, gagvr::BiddingStrategy> call);
+        partial void Modify_MutateBiddingStrategiesApiCall(ref gaxgrpc::ApiCall<MutateBiddingStrategiesRequest, MutateBiddingStrategiesResponse> call);
         partial void OnConstruction(BiddingStrategyService.BiddingStrategyServiceClient grpcClient, BiddingStrategyServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -646,8 +645,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetBiddingStrategyRequest(ref gagvs::GetBiddingStrategyRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_MutateBiddingStrategiesRequest(ref gagvs::MutateBiddingStrategiesRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetBiddingStrategyRequest(ref GetBiddingStrategyRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateBiddingStrategiesRequest(ref MutateBiddingStrategiesRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested bidding strategy in full detail.
@@ -662,7 +661,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::BiddingStrategy> GetBiddingStrategyAsync(
-            gagvs::GetBiddingStrategyRequest request,
+            GetBiddingStrategyRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetBiddingStrategyRequest(ref request, ref callSettings);
@@ -682,7 +681,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::BiddingStrategy GetBiddingStrategy(
-            gagvs::GetBiddingStrategyRequest request,
+            GetBiddingStrategyRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetBiddingStrategyRequest(ref request, ref callSettings);
@@ -702,8 +701,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<gagvs::MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
-            gagvs::MutateBiddingStrategiesRequest request,
+        public override stt::Task<MutateBiddingStrategiesResponse> MutateBiddingStrategiesAsync(
+            MutateBiddingStrategiesRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateBiddingStrategiesRequest(ref request, ref callSettings);
@@ -723,8 +722,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override gagvs::MutateBiddingStrategiesResponse MutateBiddingStrategies(
-            gagvs::MutateBiddingStrategiesRequest request,
+        public override MutateBiddingStrategiesResponse MutateBiddingStrategies(
+            MutateBiddingStrategiesRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateBiddingStrategiesRequest(ref request, ref callSettings);

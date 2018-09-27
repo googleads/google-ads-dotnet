@@ -26,14 +26,15 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZHZlcnRpc2luZ19j",
             "aGFubmVsX3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVu",
-            "dW1zIoYBChpBZHZlcnRpc2luZ0NoYW5uZWxUeXBlRW51bSJoChZBZHZlcnRp",
+            "dW1zIpEBChpBZHZlcnRpc2luZ0NoYW5uZWxUeXBlRW51bSJzChZBZHZlcnRp",
             "c2luZ0NoYW5uZWxUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThAB",
             "EgoKBlNFQVJDSBACEgsKB0RJU1BMQVkQAxIMCghTSE9QUElORxAEEgkKBUhP",
-            "VEVMEAVCzAEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0Ib",
-            "QWR2ZXJ0aXNpbmdDaGFubmVsVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcu",
-            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVt",
-            "cztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1z",
-            "ygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXNiBnByb3RvMw=="));
+            "VEVMEAUSCQoFVklERU8QBkLMAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmVudW1zQhtBZHZlcnRpc2luZ0NoYW5uZWxUeXBlUHJvdG9QAVpCZ29v",
+            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
+            "YWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -179,6 +180,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Hotel Ads campaigns.
         /// </summary>
         [pbr::OriginalName("HOTEL")] Hotel = 5,
+        /// <summary>
+        /// Video campaigns.
+        /// </summary>
+        [pbr::OriginalName("VIDEO")] Video = 6,
       }
 
     }

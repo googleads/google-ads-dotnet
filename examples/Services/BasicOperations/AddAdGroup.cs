@@ -58,8 +58,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example illustrates how to create ad groups. To create campaigns, " +
-                    "run AddCampaigns.cs";
+                return "This code example illustrates how to create ad groups. To create " +
+                    "campaigns, run AddCampaigns.cs";
             }
         }
 
@@ -106,8 +106,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Display the results.
                 foreach (MutateAdGroupResult newAdGroup in response.Results)
                 {
-                    Console.WriteLine($"Ad group with resource name '{newAdGroup.ResourceName}' was " +
-                        "created.");
+                    Console.WriteLine("Ad group with resource name '{0}' was created.",
+                        newAdGroup.ResourceName);
                 }
             }
             catch (GoogleAdsException e)

@@ -11,10 +11,13 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
 // Generated code - do not edit
+
 using Google.Api.Gax.Grpc;
 using Google.Protobuf;
 using Google.Ads.GoogleAds.Lib;
+
 namespace Google.Ads.GoogleAds.V0.Services
 {
     public partial class AdGroupBidModifierServiceClientImpl

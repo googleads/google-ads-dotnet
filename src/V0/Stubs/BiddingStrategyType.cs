@@ -26,18 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9iaWRkaW5nX3N0cmF0",
             "ZWd5X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
-            "Iq8CChdCaWRkaW5nU3RyYXRlZ3lUeXBlRW51bSKTAgoTQmlkZGluZ1N0cmF0",
+            "Ir8CChdCaWRkaW5nU3RyYXRlZ3lUeXBlRW51bSKjAgoTQmlkZGluZ1N0cmF0",
             "ZWd5VHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIQCgxFTkhB",
-            "TkNFRF9DUEMQAhIOCgpNQU5VQUxfQ1BDEAMSDgoKTUFOVUFMX0NQTRAEEhgK",
-            "FE1BWElNSVpFX0NPTlZFUlNJT05TEAoSHQoZTUFYSU1JWkVfQ09OVkVSU0lP",
-            "Tl9WQUxVRRALEhUKEVBBR0VfT05FX1BST01PVEVEEAUSDwoLUEVSQ0VOVF9D",
-            "UEMQDBIOCgpUQVJHRVRfQ1BBEAYSGAoUVEFSR0VUX09VVFJBTktfU0hBUkUQ",
-            "BxIPCgtUQVJHRVRfUk9BUxAIEhAKDFRBUkdFVF9TUEVORBAJQskBCiFjb20u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCGEJpZGRpbmdTdHJhdGVn",
-            "eVR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1H",
-            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYwXEVudW1zYgZwcm90bzM="));
+            "TkNFRF9DUEMQAhIOCgpNQU5VQUxfQ1BDEAMSDgoKTUFOVUFMX0NQTRAEEg4K",
+            "Ck1BTlVBTF9DUFYQDRIYChRNQVhJTUlaRV9DT05WRVJTSU9OUxAKEh0KGU1B",
+            "WElNSVpFX0NPTlZFUlNJT05fVkFMVUUQCxIVChFQQUdFX09ORV9QUk9NT1RF",
+            "RBAFEg8KC1BFUkNFTlRfQ1BDEAwSDgoKVEFSR0VUX0NQQRAGEhgKFFRBUkdF",
+            "VF9PVVRSQU5LX1NIQVJFEAcSDwoLVEFSR0VUX1JPQVMQCBIQCgxUQVJHRVRf",
+            "U1BFTkQQCULJAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
+            "QhhCaWRkaW5nU3RyYXRlZ3lUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1z",
+            "O2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPK",
+            "Ah1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -181,6 +181,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// where user pays per thousand impressions.
         /// </summary>
         [pbr::OriginalName("MANUAL_CPM")] ManualCpm = 4,
+        /// <summary>
+        /// A bidding strategy that pays a configurable amount per video view.
+        /// </summary>
+        [pbr::OriginalName("MANUAL_CPV")] ManualCpv = 13,
         /// <summary>
         /// A bidding strategy that automatically maximizes number of conversions
         /// given a daily budget.

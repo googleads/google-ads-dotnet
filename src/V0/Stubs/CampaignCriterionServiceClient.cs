@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -219,7 +218,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -228,7 +227,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -259,7 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -268,7 +267,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -355,7 +354,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::CampaignCriterion> GetCampaignCriterionAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetCampaignCriterionAsync(
-                new gagvs::GetCampaignCriterionRequest
+                new GetCampaignCriterionRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -394,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::CampaignCriterion GetCampaignCriterion(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetCampaignCriterion(
-                new gagvs::GetCampaignCriterionRequest
+                new GetCampaignCriterionRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -413,7 +412,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::CampaignCriterion> GetCampaignCriterionAsync(
-            gagvs::GetCampaignCriterionRequest request,
+            GetCampaignCriterionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -432,7 +431,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::CampaignCriterion> GetCampaignCriterionAsync(
-            gagvs::GetCampaignCriterionRequest request,
+            GetCampaignCriterionRequest request,
             st::CancellationToken cancellationToken) => GetCampaignCriterionAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -450,7 +449,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::CampaignCriterion GetCampaignCriterion(
-            gagvs::GetCampaignCriterionRequest request,
+            GetCampaignCriterionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -471,11 +470,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
+        public virtual stt::Task<MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
             string customerId,
-            scg::IEnumerable<gagvs::CampaignCriterionOperation> operations,
+            scg::IEnumerable<CampaignCriterionOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaignCriteriaAsync(
-                new gagvs::MutateCampaignCriteriaRequest
+                new MutateCampaignCriteriaRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -497,9 +496,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
+        public virtual stt::Task<MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
             string customerId,
-            scg::IEnumerable<gagvs::CampaignCriterionOperation> operations,
+            scg::IEnumerable<CampaignCriterionOperation> operations,
             st::CancellationToken cancellationToken) => MutateCampaignCriteriaAsync(
                 customerId,
                 operations,
@@ -520,11 +519,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateCampaignCriteriaResponse MutateCampaignCriteria(
+        public virtual MutateCampaignCriteriaResponse MutateCampaignCriteria(
             string customerId,
-            scg::IEnumerable<gagvs::CampaignCriterionOperation> operations,
+            scg::IEnumerable<CampaignCriterionOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaignCriteria(
-                new gagvs::MutateCampaignCriteriaRequest
+                new MutateCampaignCriteriaRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -543,8 +542,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
-            gagvs::MutateCampaignCriteriaRequest request,
+        public virtual stt::Task<MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
+            MutateCampaignCriteriaRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -562,8 +561,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
-            gagvs::MutateCampaignCriteriaRequest request,
+        public virtual stt::Task<MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
+            MutateCampaignCriteriaRequest request,
             st::CancellationToken cancellationToken) => MutateCampaignCriteriaAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -580,8 +579,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateCampaignCriteriaResponse MutateCampaignCriteria(
-            gagvs::MutateCampaignCriteriaRequest request,
+        public virtual MutateCampaignCriteriaResponse MutateCampaignCriteria(
+            MutateCampaignCriteriaRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -594,8 +593,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class CampaignCriterionServiceClientImpl : CampaignCriterionServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetCampaignCriterionRequest, gagvr::CampaignCriterion> _callGetCampaignCriterion;
-        private readonly gaxgrpc::ApiCall<gagvs::MutateCampaignCriteriaRequest, gagvs::MutateCampaignCriteriaResponse> _callMutateCampaignCriteria;
+        private readonly gaxgrpc::ApiCall<GetCampaignCriterionRequest, gagvr::CampaignCriterion> _callGetCampaignCriterion;
+        private readonly gaxgrpc::ApiCall<MutateCampaignCriteriaRequest, MutateCampaignCriteriaResponse> _callMutateCampaignCriteria;
 
         /// <summary>
         /// Constructs a client wrapper for the CampaignCriterionService service, with the specified gRPC client and settings.
@@ -607,9 +606,9 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             CampaignCriterionServiceSettings effectiveSettings = settings ?? CampaignCriterionServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetCampaignCriterion = clientHelper.BuildApiCall<gagvs::GetCampaignCriterionRequest, gagvr::CampaignCriterion>(
+            _callGetCampaignCriterion = clientHelper.BuildApiCall<GetCampaignCriterionRequest, gagvr::CampaignCriterion>(
                 GrpcClient.GetCampaignCriterionAsync, GrpcClient.GetCampaignCriterion, effectiveSettings.GetCampaignCriterionSettings);
-            _callMutateCampaignCriteria = clientHelper.BuildApiCall<gagvs::MutateCampaignCriteriaRequest, gagvs::MutateCampaignCriteriaResponse>(
+            _callMutateCampaignCriteria = clientHelper.BuildApiCall<MutateCampaignCriteriaRequest, MutateCampaignCriteriaResponse>(
                 GrpcClient.MutateCampaignCriteriaAsync, GrpcClient.MutateCampaignCriteria, effectiveSettings.MutateCampaignCriteriaSettings);
             Modify_ApiCall(ref _callGetCampaignCriterion);
             Modify_GetCampaignCriterionApiCall(ref _callGetCampaignCriterion);
@@ -628,8 +627,8 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetCampaignCriterionApiCall(ref gaxgrpc::ApiCall<gagvs::GetCampaignCriterionRequest, gagvr::CampaignCriterion> call);
-        partial void Modify_MutateCampaignCriteriaApiCall(ref gaxgrpc::ApiCall<gagvs::MutateCampaignCriteriaRequest, gagvs::MutateCampaignCriteriaResponse> call);
+        partial void Modify_GetCampaignCriterionApiCall(ref gaxgrpc::ApiCall<GetCampaignCriterionRequest, gagvr::CampaignCriterion> call);
+        partial void Modify_MutateCampaignCriteriaApiCall(ref gaxgrpc::ApiCall<MutateCampaignCriteriaRequest, MutateCampaignCriteriaResponse> call);
         partial void OnConstruction(CampaignCriterionService.CampaignCriterionServiceClient grpcClient, CampaignCriterionServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -640,8 +639,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetCampaignCriterionRequest(ref gagvs::GetCampaignCriterionRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_MutateCampaignCriteriaRequest(ref gagvs::MutateCampaignCriteriaRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetCampaignCriterionRequest(ref GetCampaignCriterionRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateCampaignCriteriaRequest(ref MutateCampaignCriteriaRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested criterion in full detail.
@@ -656,7 +655,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::CampaignCriterion> GetCampaignCriterionAsync(
-            gagvs::GetCampaignCriterionRequest request,
+            GetCampaignCriterionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetCampaignCriterionRequest(ref request, ref callSettings);
@@ -676,7 +675,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::CampaignCriterion GetCampaignCriterion(
-            gagvs::GetCampaignCriterionRequest request,
+            GetCampaignCriterionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetCampaignCriterionRequest(ref request, ref callSettings);
@@ -695,8 +694,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<gagvs::MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
-            gagvs::MutateCampaignCriteriaRequest request,
+        public override stt::Task<MutateCampaignCriteriaResponse> MutateCampaignCriteriaAsync(
+            MutateCampaignCriteriaRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateCampaignCriteriaRequest(ref request, ref callSettings);
@@ -715,8 +714,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override gagvs::MutateCampaignCriteriaResponse MutateCampaignCriteria(
-            gagvs::MutateCampaignCriteriaRequest request,
+        public override MutateCampaignCriteriaResponse MutateCampaignCriteria(
+            MutateCampaignCriteriaRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateCampaignCriteriaRequest(ref request, ref callSettings);

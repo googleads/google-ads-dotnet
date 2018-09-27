@@ -75,7 +75,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient adGroupAdService = client.GetService(Services.V0.AdGroupAdService);
+            AdGroupAdServiceClient adGroupAdService = client.GetService(
+                Services.V0.AdGroupAdService);
 
             List<AdGroupAdOperation> operations = new List<AdGroupAdOperation>();
             for (int i = 0; i < NUMBER_OF_ADS; i++)

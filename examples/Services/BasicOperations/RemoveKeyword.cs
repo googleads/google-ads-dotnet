@@ -77,13 +77,14 @@ namespace Google.Ads.GoogleAds.Examples.V0
             try
             {
                 // Remove the keyword.
-                MutateAdGroupCriteriaResponse retVal = adGroupCriterionService.MutateAdGroupCriteria(
-                    customerId.ToString(), new AdGroupCriterionOperation[] { operation });
+                MutateAdGroupCriteriaResponse retVal =
+                    adGroupCriterionService.MutateAdGroupCriteria(customerId.ToString(),
+                        new AdGroupCriterionOperation[] { operation });
 
                 // Display the results.
                 MutateAdGroupCriterionResult removedKeyword = retVal.Results[0];
-                Console.WriteLine($"Keyword with resource name = '{removedKeyword.ResourceName}' " +
-                    "was removed.");
+                Console.WriteLine($"Keyword with resource name = "+
+                    $"'{removedKeyword.ResourceName}' was removed.");
             }
             catch (GoogleAdsException e)
             {

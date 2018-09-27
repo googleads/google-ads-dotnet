@@ -71,7 +71,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         public void Run(GoogleAdsClient client, long customerId, long? adGroupId)
         {
             // Get the GoogleAdsService.
-            GoogleAdsServiceClient googleAdsService = client.GetService(Services.V0.GoogleAdsService);
+            GoogleAdsServiceClient googleAdsService = client.GetService(
+                Services.V0.GoogleAdsService);
 
             String searchQuery =
                 $@"SELECT
@@ -103,8 +104,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
                     googleAdsService.Search(request);
 
-                // Iterate over all rows in all pages and prints the requested field values for the ad
-                // in each row.
+                // Iterate over all rows in all pages and prints the requested field values for
+                // the ad in each row.
                 foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
                 {
                     Ad ad = googleAdsRow.AdGroupAd.Ad;

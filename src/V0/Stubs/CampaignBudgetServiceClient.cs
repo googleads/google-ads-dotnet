@@ -15,7 +15,6 @@
 // Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
-using gagvs = Google.Ads.GoogleAds.V0.Services;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using pb = Google.Protobuf;
@@ -219,7 +218,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -228,7 +227,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -259,7 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <example>
         /// This sample shows how to create a client using default credentials:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// ...
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
@@ -268,7 +267,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
-        /// using Google.Ads.Googleads.V0.Services;
+        /// using Google.Ads.GoogleAds.V0.Services;
         /// using Google.Apis.Auth.OAuth2;
         /// using Grpc.Auth;
         /// using Grpc.Core;
@@ -355,7 +354,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<gagvr::CampaignBudget> GetCampaignBudgetAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetCampaignBudgetAsync(
-                new gagvs::GetCampaignBudgetRequest
+                new GetCampaignBudgetRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -394,7 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gagvr::CampaignBudget GetCampaignBudget(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => GetCampaignBudget(
-                new gagvs::GetCampaignBudgetRequest
+                new GetCampaignBudgetRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
@@ -413,7 +412,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::CampaignBudget> GetCampaignBudgetAsync(
-            gagvs::GetCampaignBudgetRequest request,
+            GetCampaignBudgetRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -432,7 +431,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<gagvr::CampaignBudget> GetCampaignBudgetAsync(
-            gagvs::GetCampaignBudgetRequest request,
+            GetCampaignBudgetRequest request,
             st::CancellationToken cancellationToken) => GetCampaignBudgetAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -450,7 +449,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual gagvr::CampaignBudget GetCampaignBudget(
-            gagvs::GetCampaignBudgetRequest request,
+            GetCampaignBudgetRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -472,11 +471,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
+        public virtual stt::Task<MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
             string customerId,
-            scg::IEnumerable<gagvs::CampaignBudgetOperation> operations,
+            scg::IEnumerable<CampaignBudgetOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaignBudgetsAsync(
-                new gagvs::MutateCampaignBudgetsRequest
+                new MutateCampaignBudgetsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -499,9 +498,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
+        public virtual stt::Task<MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
             string customerId,
-            scg::IEnumerable<gagvs::CampaignBudgetOperation> operations,
+            scg::IEnumerable<CampaignBudgetOperation> operations,
             st::CancellationToken cancellationToken) => MutateCampaignBudgetsAsync(
                 customerId,
                 operations,
@@ -523,11 +522,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateCampaignBudgetsResponse MutateCampaignBudgets(
+        public virtual MutateCampaignBudgetsResponse MutateCampaignBudgets(
             string customerId,
-            scg::IEnumerable<gagvs::CampaignBudgetOperation> operations,
+            scg::IEnumerable<CampaignBudgetOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaignBudgets(
-                new gagvs::MutateCampaignBudgetsRequest
+                new MutateCampaignBudgetsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
@@ -547,8 +546,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
-            gagvs::MutateCampaignBudgetsRequest request,
+        public virtual stt::Task<MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
+            MutateCampaignBudgetsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -567,8 +566,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvs::MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
-            gagvs::MutateCampaignBudgetsRequest request,
+        public virtual stt::Task<MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
+            MutateCampaignBudgetsRequest request,
             st::CancellationToken cancellationToken) => MutateCampaignBudgetsAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
@@ -586,8 +585,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvs::MutateCampaignBudgetsResponse MutateCampaignBudgets(
-            gagvs::MutateCampaignBudgetsRequest request,
+        public virtual MutateCampaignBudgetsResponse MutateCampaignBudgets(
+            MutateCampaignBudgetsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -600,8 +599,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     /// </summary>
     public sealed partial class CampaignBudgetServiceClientImpl : CampaignBudgetServiceClient
     {
-        private readonly gaxgrpc::ApiCall<gagvs::GetCampaignBudgetRequest, gagvr::CampaignBudget> _callGetCampaignBudget;
-        private readonly gaxgrpc::ApiCall<gagvs::MutateCampaignBudgetsRequest, gagvs::MutateCampaignBudgetsResponse> _callMutateCampaignBudgets;
+        private readonly gaxgrpc::ApiCall<GetCampaignBudgetRequest, gagvr::CampaignBudget> _callGetCampaignBudget;
+        private readonly gaxgrpc::ApiCall<MutateCampaignBudgetsRequest, MutateCampaignBudgetsResponse> _callMutateCampaignBudgets;
 
         /// <summary>
         /// Constructs a client wrapper for the CampaignBudgetService service, with the specified gRPC client and settings.
@@ -613,9 +612,9 @@ namespace Google.Ads.GoogleAds.V0.Services
             GrpcClient = grpcClient;
             CampaignBudgetServiceSettings effectiveSettings = settings ?? CampaignBudgetServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetCampaignBudget = clientHelper.BuildApiCall<gagvs::GetCampaignBudgetRequest, gagvr::CampaignBudget>(
+            _callGetCampaignBudget = clientHelper.BuildApiCall<GetCampaignBudgetRequest, gagvr::CampaignBudget>(
                 GrpcClient.GetCampaignBudgetAsync, GrpcClient.GetCampaignBudget, effectiveSettings.GetCampaignBudgetSettings);
-            _callMutateCampaignBudgets = clientHelper.BuildApiCall<gagvs::MutateCampaignBudgetsRequest, gagvs::MutateCampaignBudgetsResponse>(
+            _callMutateCampaignBudgets = clientHelper.BuildApiCall<MutateCampaignBudgetsRequest, MutateCampaignBudgetsResponse>(
                 GrpcClient.MutateCampaignBudgetsAsync, GrpcClient.MutateCampaignBudgets, effectiveSettings.MutateCampaignBudgetsSettings);
             Modify_ApiCall(ref _callGetCampaignBudget);
             Modify_GetCampaignBudgetApiCall(ref _callGetCampaignBudget);
@@ -634,8 +633,8 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetCampaignBudgetApiCall(ref gaxgrpc::ApiCall<gagvs::GetCampaignBudgetRequest, gagvr::CampaignBudget> call);
-        partial void Modify_MutateCampaignBudgetsApiCall(ref gaxgrpc::ApiCall<gagvs::MutateCampaignBudgetsRequest, gagvs::MutateCampaignBudgetsResponse> call);
+        partial void Modify_GetCampaignBudgetApiCall(ref gaxgrpc::ApiCall<GetCampaignBudgetRequest, gagvr::CampaignBudget> call);
+        partial void Modify_MutateCampaignBudgetsApiCall(ref gaxgrpc::ApiCall<MutateCampaignBudgetsRequest, MutateCampaignBudgetsResponse> call);
         partial void OnConstruction(CampaignBudgetService.CampaignBudgetServiceClient grpcClient, CampaignBudgetServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -646,8 +645,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetCampaignBudgetRequest(ref gagvs::GetCampaignBudgetRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_MutateCampaignBudgetsRequest(ref gagvs::MutateCampaignBudgetsRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetCampaignBudgetRequest(ref GetCampaignBudgetRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateCampaignBudgetsRequest(ref MutateCampaignBudgetsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested Campaign Budget in full detail.
@@ -662,7 +661,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public override stt::Task<gagvr::CampaignBudget> GetCampaignBudgetAsync(
-            gagvs::GetCampaignBudgetRequest request,
+            GetCampaignBudgetRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetCampaignBudgetRequest(ref request, ref callSettings);
@@ -682,7 +681,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public override gagvr::CampaignBudget GetCampaignBudget(
-            gagvs::GetCampaignBudgetRequest request,
+            GetCampaignBudgetRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GetCampaignBudgetRequest(ref request, ref callSettings);
@@ -702,8 +701,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<gagvs::MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
-            gagvs::MutateCampaignBudgetsRequest request,
+        public override stt::Task<MutateCampaignBudgetsResponse> MutateCampaignBudgetsAsync(
+            MutateCampaignBudgetsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateCampaignBudgetsRequest(ref request, ref callSettings);
@@ -723,8 +722,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override gagvs::MutateCampaignBudgetsResponse MutateCampaignBudgets(
-            gagvs::MutateCampaignBudgetsRequest request,
+        public override MutateCampaignBudgetsResponse MutateCampaignBudgets(
+            MutateCampaignBudgetsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_MutateCampaignBudgetsRequest(ref request, ref callSettings);

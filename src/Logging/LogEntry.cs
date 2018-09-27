@@ -14,7 +14,6 @@
 
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Apis.Util;
 using Grpc.Core;
 using Newtonsoft.Json;
 using System.Collections.Generic;

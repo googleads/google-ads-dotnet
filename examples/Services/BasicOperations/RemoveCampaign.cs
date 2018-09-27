@@ -49,7 +49,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example removes a campaign. To get campaigns, run GetCampaign.cs.";
+                return "This code example removes a campaign. To get campaigns, run " +
+                    "GetCampaign.cs.";
             }
         }
 
@@ -64,8 +65,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
             // Get the CampaignService.
             CampaignServiceClient campaignService = client.GetService(Services.V0.CampaignService);
 
-            // Create the operation, and set the Remove field to the resource name of the campaign to
-            // be removed.
+            // Create the operation, and set the Remove field to the resource name of the
+            // campaign to be removed.
             CampaignOperation operation = new CampaignOperation()
             {
                 Remove = ResourceNames.Campaign(customerId, campaignId)

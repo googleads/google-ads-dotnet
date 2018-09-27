@@ -29,23 +29,23 @@ namespace Google.Ads.GoogleAds.Util
         /// <summary>
         /// Trace source for deprecation messages.
         /// </summary>
-        public const string DEPRECATION_MESSAGES_SOURCE = "AdsClientLibs.DeprecationMessages";
+        public const string DEPRECATION_MESSAGES_SOURCE = "GoogleAds.DeprecationMessages";
 
         /// <summary>
         /// Trace source for general warning messages.
         /// </summary>
         public const string GENERAL_WARNING_MESSAGES_SOURCE =
-            "AdsClientLibs.GeneralWarningMessages";
+            "GoogleAds.GeneralWarningMessages";
 
         /// <summary>
         /// Trace source for detailed HTTP request logs.
         /// </summary>
-        public const string DETAILED_REQUEST_LOGS_SOURCE = "AdsClientLibs.DetailedRequestLogs";
+        public const string DETAILED_REQUEST_LOGS_SOURCE = "GoogleAds.DetailedRequestLogs";
 
         /// <summary>
         /// Trace source for summarized HTTP request logs.
         /// </summary>
-        public const string SUMMARY_REQUEST_LOGS_SOURCE = "AdsClientLibs.SummaryRequestLogs";
+        public const string SUMMARY_REQUEST_LOGS_SOURCE = "GoogleAds.SummaryRequestLogs";
 
         /// <summary>
         /// The list of known Trace sources.

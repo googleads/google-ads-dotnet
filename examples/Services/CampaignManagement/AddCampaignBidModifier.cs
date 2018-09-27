@@ -13,13 +13,11 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V0.Common;
 using Google.Ads.GoogleAds.V0.Resources;
 using Google.Ads.GoogleAds.V0.Services;
 
 using System;
-using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V0.Enums.InteractionTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V0
@@ -84,7 +82,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
             CampaignBidModifier campaignBidModifier = new CampaignBidModifier()
             {
                 Campaign = campaignResourceName,
-                InteractionType = new InteractionTypeInfo() {
+                InteractionType = new InteractionTypeInfo()
+                {
                     Type = InteractionType.Calls
                 },
                 BidModifier = bidModifier

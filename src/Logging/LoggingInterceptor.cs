@@ -129,7 +129,7 @@ namespace Google.Ads.GoogleAds.Logging
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="logEntry">The log entry.</param>
-        void WriteLogEntry(object sender, LogEntry logEntry)
+        private void WriteLogEntry(object sender, LogEntry logEntry)
         {
             TraceWriter.WriteDetailedRequestLogs(logEntry);
             TraceWriter.WriteSummaryRequestLogs(logEntry);

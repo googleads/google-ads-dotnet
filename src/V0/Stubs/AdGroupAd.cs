@@ -25,24 +25,37 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYWRfZ3JvdXBf",
-            "YWQucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxo2",
+            "YWQucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxor",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uL3BvbGljeS5wcm90bxo2",
             "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvYWRfZ3JvdXBfYWRfc3Rh",
-            "dHVzLnByb3RvGipnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMv",
-            "YWQucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90byLZAQoJ",
-            "QWRHcm91cEFkEhUKDXJlc291cmNlX25hbWUYASABKAkSUgoGc3RhdHVzGAMg",
-            "ASgOMkIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQWRHcm91cEFk",
-            "U3RhdHVzRW51bS5BZEdyb3VwQWRTdGF0dXMSLgoIYWRfZ3JvdXAYBCABKAsy",
-            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMQoCYWQYBSABKAsyJS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQWRC0wEKJWNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDkFkR3JvdXBBZFBy",
-            "b3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
-            "YWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIh",
-            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
+            "dHVzLnByb3RvGjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9wb2xp",
+            "Y3lfYXBwcm92YWxfc3RhdHVzLnByb3RvGjhnb29nbGUvYWRzL2dvb2dsZWFk",
+            "cy92MC9lbnVtcy9wb2xpY3lfcmV2aWV3X3N0YXR1cy5wcm90bxoqZ29vZ2xl",
+            "L2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2FkLnByb3RvGh5nb29nbGUv",
+            "cHJvdG9idWYvd3JhcHBlcnMucHJvdG8irAIKCUFkR3JvdXBBZBIVCg1yZXNv",
+            "dXJjZV9uYW1lGAEgASgJElIKBnN0YXR1cxgDIAEoDjJCLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmVudW1zLkFkR3JvdXBBZFN0YXR1c0VudW0uQWRHcm91",
+            "cEFkU3RhdHVzEi4KCGFkX2dyb3VwGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEjEKAmFkGAUgASgLMiUuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAucmVzb3VyY2VzLkFkElEKDnBvbGljeV9zdW1tYXJ5GAYgASgLMjku",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkFkR3JvdXBBZFBv",
+            "bGljeVN1bW1hcnkisAIKFkFkR3JvdXBBZFBvbGljeVN1bW1hcnkSTgoUcG9s",
+            "aWN5X3RvcGljX2VudHJpZXMYASADKAsyMC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5jb21tb24uUG9saWN5VG9waWNFbnRyeRJfCg1yZXZpZXdfc3RhdHVz",
+            "GAIgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuUG9saWN5",
+            "UmV2aWV3U3RhdHVzRW51bS5Qb2xpY3lSZXZpZXdTdGF0dXMSZQoPYXBwcm92",
+            "YWxfc3RhdHVzGAMgASgOMkwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51",
+            "bXMuUG9saWN5QXBwcm92YWxTdGF0dXNFbnVtLlBvbGljeUFwcHJvdmFsU3Rh",
+            "dHVzQtMBCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2Vz",
+            "Qg5BZEdyb3VwQWRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
+            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291",
+            "cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNl",
+            "c8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PolicyApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PolicyReviewStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupAd), global::Google.Ads.GoogleAds.V0.Resources.AdGroupAd.Parser, new[]{ "ResourceName", "Status", "AdGroup", "Ad" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupAd), global::Google.Ads.GoogleAds.V0.Resources.AdGroupAd.Parser, new[]{ "ResourceName", "Status", "AdGroup", "Ad", "PolicySummary" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdPolicySummary), global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdPolicySummary.Parser, new[]{ "PolicyTopicEntries", "ReviewStatus", "ApprovalStatus" }, null, null, null)
           }));
     }
     #endregion
@@ -81,6 +94,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       status_ = other.status_;
       AdGroup = other.AdGroup;
       ad_ = other.ad_ != null ? other.ad_.Clone() : null;
+      policySummary_ = other.policySummary_ != null ? other.policySummary_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -151,6 +165,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "policy_summary" field.</summary>
+    public const int PolicySummaryFieldNumber = 6;
+    private global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdPolicySummary policySummary_;
+    /// <summary>
+    /// Policy information for the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdPolicySummary PolicySummary {
+      get { return policySummary_; }
+      set {
+        policySummary_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AdGroupAd);
@@ -168,6 +196,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (Status != other.Status) return false;
       if (AdGroup != other.AdGroup) return false;
       if (!object.Equals(Ad, other.Ad)) return false;
+      if (!object.Equals(PolicySummary, other.PolicySummary)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -178,6 +207,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (Status != 0) hash ^= Status.GetHashCode();
       if (adGroup_ != null) hash ^= AdGroup.GetHashCode();
       if (ad_ != null) hash ^= Ad.GetHashCode();
+      if (policySummary_ != null) hash ^= PolicySummary.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -206,6 +236,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(42);
         output.WriteMessage(Ad);
       }
+      if (policySummary_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(PolicySummary);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -225,6 +259,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (ad_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Ad);
+      }
+      if (policySummary_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PolicySummary);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -253,6 +290,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           ad_ = new global::Google.Ads.GoogleAds.V0.Resources.Ad();
         }
         Ad.MergeFrom(other.Ad);
+      }
+      if (other.policySummary_ != null) {
+        if (policySummary_ == null) {
+          policySummary_ = new global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdPolicySummary();
+        }
+        PolicySummary.MergeFrom(other.PolicySummary);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -285,6 +328,203 @@ namespace Google.Ads.GoogleAds.V0.Resources {
               ad_ = new global::Google.Ads.GoogleAds.V0.Resources.Ad();
             }
             input.ReadMessage(ad_);
+            break;
+          }
+          case 50: {
+            if (policySummary_ == null) {
+              policySummary_ = new global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdPolicySummary();
+            }
+            input.ReadMessage(policySummary_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Contains policy information for an ad.
+  /// </summary>
+  public sealed partial class AdGroupAdPolicySummary : pb::IMessage<AdGroupAdPolicySummary> {
+    private static readonly pb::MessageParser<AdGroupAdPolicySummary> _parser = new pb::MessageParser<AdGroupAdPolicySummary>(() => new AdGroupAdPolicySummary());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AdGroupAdPolicySummary> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdGroupAdPolicySummary() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdGroupAdPolicySummary(AdGroupAdPolicySummary other) : this() {
+      policyTopicEntries_ = other.policyTopicEntries_.Clone();
+      reviewStatus_ = other.reviewStatus_;
+      approvalStatus_ = other.approvalStatus_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdGroupAdPolicySummary Clone() {
+      return new AdGroupAdPolicySummary(this);
+    }
+
+    /// <summary>Field number for the "policy_topic_entries" field.</summary>
+    public const int PolicyTopicEntriesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEntry> _repeated_policyTopicEntries_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEntry.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEntry> policyTopicEntries_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEntry>();
+    /// <summary>
+    /// The list of policy findings for this ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.PolicyTopicEntry> PolicyTopicEntries {
+      get { return policyTopicEntries_; }
+    }
+
+    /// <summary>Field number for the "review_status" field.</summary>
+    public const int ReviewStatusFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V0.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus reviewStatus_ = 0;
+    /// <summary>
+    /// Where in the review process this ad is.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus ReviewStatus {
+      get { return reviewStatus_; }
+      set {
+        reviewStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "approval_status" field.</summary>
+    public const int ApprovalStatusFieldNumber = 3;
+    private global::Google.Ads.GoogleAds.V0.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus approvalStatus_ = 0;
+    /// <summary>
+    /// The overall approval status of this ad, calculated based on the status of
+    /// its individual policy topic entries.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus ApprovalStatus {
+      get { return approvalStatus_; }
+      set {
+        approvalStatus_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AdGroupAdPolicySummary);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AdGroupAdPolicySummary other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!policyTopicEntries_.Equals(other.policyTopicEntries_)) return false;
+      if (ReviewStatus != other.ReviewStatus) return false;
+      if (ApprovalStatus != other.ApprovalStatus) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= policyTopicEntries_.GetHashCode();
+      if (ReviewStatus != 0) hash ^= ReviewStatus.GetHashCode();
+      if (ApprovalStatus != 0) hash ^= ApprovalStatus.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      policyTopicEntries_.WriteTo(output, _repeated_policyTopicEntries_codec);
+      if (ReviewStatus != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) ReviewStatus);
+      }
+      if (ApprovalStatus != 0) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) ApprovalStatus);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += policyTopicEntries_.CalculateSize(_repeated_policyTopicEntries_codec);
+      if (ReviewStatus != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ReviewStatus);
+      }
+      if (ApprovalStatus != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ApprovalStatus);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AdGroupAdPolicySummary other) {
+      if (other == null) {
+        return;
+      }
+      policyTopicEntries_.Add(other.policyTopicEntries_);
+      if (other.ReviewStatus != 0) {
+        ReviewStatus = other.ReviewStatus;
+      }
+      if (other.ApprovalStatus != 0) {
+        ApprovalStatus = other.ApprovalStatus;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            policyTopicEntries_.AddEntriesFrom(input, _repeated_policyTopicEntries_codec);
+            break;
+          }
+          case 16: {
+            reviewStatus_ = (global::Google.Ads.GoogleAds.V0.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            approvalStatus_ = (global::Google.Ads.GoogleAds.V0.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus) input.ReadEnum();
             break;
           }
         }

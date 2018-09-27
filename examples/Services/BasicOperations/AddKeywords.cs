@@ -96,8 +96,9 @@ namespace Google.Ads.GoogleAds.Examples.V0
             try
             {
                 // Add the keywords.
-                MutateAdGroupCriteriaResponse retVal = adGroupCriterionService.MutateAdGroupCriteria(
-                    customerId.ToString(), new AdGroupCriterionOperation[] { operation });
+                MutateAdGroupCriteriaResponse retVal =
+                    adGroupCriterionService.MutateAdGroupCriteria(customerId.ToString(),
+                        new AdGroupCriterionOperation[] { operation });
 
                 // Display the results.
                 if (retVal.Results.Count > 0)
