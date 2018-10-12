@@ -176,7 +176,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("END")] End = 4,
         /// <summary>
-        /// Identifies a request to remove a budget that hasn’t started yet.
+        /// Identifies a request to remove a budget that hasn't started yet.
         /// </summary>
         [pbr::OriginalName("REMOVE")] Remove = 5,
       }

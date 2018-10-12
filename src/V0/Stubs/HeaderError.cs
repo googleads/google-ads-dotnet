@@ -162,7 +162,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The user selected customer id could not be parsed.
+        /// The user selected customer id could not be validated.
         /// </summary>
         [pbr::OriginalName("INVALID_USER_SELECTED_CUSTOMER_ID")] InvalidUserSelectedCustomerId = 2,
       }

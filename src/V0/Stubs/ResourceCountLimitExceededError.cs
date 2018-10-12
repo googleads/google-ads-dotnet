@@ -26,18 +26,19 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Ckhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcmVzb3VyY2VfY291",
             "bnRfbGltaXRfZXhjZWVkZWRfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYwLmVycm9ycyKJAgojUmVzb3VyY2VDb3VudExpbWl0RXhjZWVk",
-            "ZWRFcnJvckVudW0i4QEKH1Jlc291cmNlQ291bnRMaW1pdEV4Y2VlZGVkRXJy",
+            "Z2xlYWRzLnYwLmVycm9ycyKqAgojUmVzb3VyY2VDb3VudExpbWl0RXhjZWVk",
+            "ZWRFcnJvckVudW0iggIKH1Jlc291cmNlQ291bnRMaW1pdEV4Y2VlZGVkRXJy",
             "b3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESEQoNQUNDT1VOVF9M",
             "SU1JVBACEhIKDkNBTVBBSUdOX0xJTUlUEAMSEQoNQURHUk9VUF9MSU1JVBAE",
             "EhUKEUFEX0dST1VQX0FEX0xJTUlUEAUSHAoYQURfR1JPVVBfQ1JJVEVSSU9O",
             "X0xJTUlUEAYSFAoQU0hBUkVEX1NFVF9MSU1JVBAHEhsKF01BVENISU5HX0ZV",
-            "TkNUSU9OX0xJTUlUEAhC2gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lcnJvcnNCJFJlc291cmNlQ291bnRMaW1pdEV4Y2VlZGVkRXJyb3JQcm90",
-            "b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fk",
-            "cy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5B",
-            "ZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRz",
-            "XFYwXEVycm9yc2IGcHJvdG8z"));
+            "TkNUSU9OX0xJTUlUEAgSHwobUkVTUE9OU0VfUk9XX0xJTUlUX0VYQ0VFREVE",
+            "EAlC2gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCJFJl",
+            "c291cmNlQ291bnRMaW1pdEV4Y2VlZGVkRXJyb3JQcm90b1ABWkRnb29nbGUu",
+            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
+            "djAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRz",
+            "LlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -214,6 +215,11 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Exceeds a limit related to a matching function.
         /// </summary>
         [pbr::OriginalName("MATCHING_FUNCTION_LIMIT")] MatchingFunctionLimit = 8,
+        /// <summary>
+        /// The response for this request would exceed the maximum number of rows
+        /// that can be returned.
+        /// </summary>
+        [pbr::OriginalName("RESPONSE_ROW_LIMIT_EXCEEDED")] ResponseRowLimitExceeded = 9,
       }
 
     }
