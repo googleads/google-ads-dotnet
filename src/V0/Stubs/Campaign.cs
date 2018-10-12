@@ -438,8 +438,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private string campaignBudget_;
     /// <summary>
     /// The budget of the campaign.
-    ///
-    /// This field must not be used in WHERE clauses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CampaignBudget {
@@ -2029,7 +2027,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         /// <summary>
         /// ID of the Merchant Center account.
         /// This field is required for create operations. This field is immutable for
-        /// campaigns of type AdvertisingChannelType.SHOPPING.
+        /// Shopping campaigns.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long? MerchantId {
@@ -2045,9 +2043,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         private string salesCountry_;
         /// <summary>
         /// Sales country of products to include in the campaign.
-        /// This field is required for create operations. This field is immutable.
-        /// This field must be set to 'ZZ' for campaigns of types other than
-        /// AdvertisingChannelType.SHOPPING.
+        /// This field is required for Shopping campaigns. This field is immutable.
+        /// This field is optional for non-Shopping campaigns, but it must be equal
+        /// to 'ZZ' if set.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string SalesCountry {
@@ -2064,9 +2062,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         /// <summary>
         /// Priority of the campaign. Campaigns with numerically higher priorities
         /// take precedence over those with lower priorities.
-        /// This field is required for create operations. Allowed values are between
-        /// 0 and 2, inclusive. This field must be set to 3 for campaigns of type
-        /// AdvertisingChannelSubType.SHOPPING_SMART_ADS.
+        /// This field is required for Shopping campaigns, with values between 0 and
+        /// 2, inclusive.
+        /// This field is optional for Smart Shopping campaigns, but must be equal to
+        /// 3 if set.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int? CampaignPriority {
@@ -2081,7 +2080,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         private static readonly pb::FieldCodec<bool?> _single_enableLocal_codec = pb::FieldCodec.ForStructWrapper<bool>(34);
         private bool? enableLocal_;
         /// <summary>
-        /// Enable local inventory ads.
+        /// Enable local inventory ads. This field is ignored for Smart Shopping
+        /// campaigns.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public bool? EnableLocal {
