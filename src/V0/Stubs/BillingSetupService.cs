@@ -422,7 +422,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// Resource name of the billing setup to remove.  A setup cannot be
     /// removed unless it is in a pending state or its scheduled start time is in
     /// the future. The resource name looks like
-    /// “customers/{customer_id}/billingSetups/{billing_id}”.
+    /// `customers/{customer_id}/billingSetups/{billing_id}`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {
