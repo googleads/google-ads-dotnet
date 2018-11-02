@@ -34,7 +34,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "b29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jcml0ZXJpb25fdHlwZS5w",
             "cm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvcXVhbGl0eV9z",
             "Y29yZV9idWNrZXQucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5w",
-            "cm90byK8EgoQQWRHcm91cENyaXRlcmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEg",
+            "cm90byKjFwoQQWRHcm91cENyaXRlcmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEg",
             "ASgJEjEKDGNyaXRlcmlvbl9pZBgaIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
             "bnQ2NFZhbHVlEmAKBnN0YXR1cxgDIAEoDjJQLmdvb2dsZS5hZHMuZ29vZ2xl",
             "YWRzLnYwLmVudW1zLkFkR3JvdXBDcml0ZXJpb25TdGF0dXNFbnVtLkFkR3Jv",
@@ -44,58 +44,72 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "dG9idWYuU3RyaW5nVmFsdWUSTAoEdHlwZRgZIAEoDjI+Lmdvb2dsZS5hZHMu",
             "Z29vZ2xlYWRzLnYwLmVudW1zLkNyaXRlcmlvblR5cGVFbnVtLkNyaXRlcmlv",
             "blR5cGUSLAoIbmVnYXRpdmUYHyABKAsyGi5nb29nbGUucHJvdG9idWYuQm9v",
-            "bFZhbHVlEjMKDmNwY19iaWRfbWljcm9zGBAgASgLMhsuZ29vZ2xlLnByb3Rv",
-            "YnVmLkludDY0VmFsdWUSMwoOY3BtX2JpZF9taWNyb3MYESABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRIzCg5jcHZfYmlkX21pY3JvcxgYIAEo",
-            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjsKFnBlcmNlbnRfY3Bj",
-            "X2JpZF9taWNyb3MYISABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
-            "ZRI9ChhlZmZlY3RpdmVfY3BjX2JpZF9taWNyb3MYEiABKAsyGy5nb29nbGUu",
-            "cHJvdG9idWYuSW50NjRWYWx1ZRI9ChhlZmZlY3RpdmVfY3BtX2JpZF9taWNy",
-            "b3MYEyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI9ChhlZmZl",
-            "Y3RpdmVfY3B2X2JpZF9taWNyb3MYFCABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "SW50NjRWYWx1ZRJFCiBlZmZlY3RpdmVfcGVyY2VudF9jcGNfYmlkX21pY3Jv",
-            "cxgiIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEmAKGGVmZmVj",
-            "dGl2ZV9jcGNfYmlkX3NvdXJjZRgVIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVudW1zLkJpZGRpbmdTb3VyY2VFbnVtLkJpZGRpbmdTb3VyY2US",
-            "YAoYZWZmZWN0aXZlX2NwbV9iaWRfc291cmNlGBYgASgOMj4uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjAuZW51bXMuQmlkZGluZ1NvdXJjZUVudW0uQmlkZGlu",
-            "Z1NvdXJjZRJgChhlZmZlY3RpdmVfY3B2X2JpZF9zb3VyY2UYFyABKA4yPi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5CaWRkaW5nU291cmNlRW51",
-            "bS5CaWRkaW5nU291cmNlEmgKIGVmZmVjdGl2ZV9wZXJjZW50X2NwY19iaWRf",
-            "c291cmNlGCMgASgOMj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMu",
-            "QmlkZGluZ1NvdXJjZUVudW0uQmlkZGluZ1NvdXJjZRJhChJwb3NpdGlvbl9l",
-            "c3RpbWF0ZXMYCiABKAsyRS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNv",
-            "dXJjZXMuQWRHcm91cENyaXRlcmlvbi5Qb3NpdGlvbkVzdGltYXRlcxIwCgpm",
-            "aW5hbF91cmxzGAsgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "EjsKFXRyYWNraW5nX3VybF90ZW1wbGF0ZRgNIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRJOChV1cmxfY3VzdG9tX3BhcmFtZXRlcnMYDiAD",
-            "KAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uQ3VzdG9tUGFy",
-            "YW1ldGVyEj4KB2tleXdvcmQYGyABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MC5jb21tb24uS2V5d29yZEluZm9IABJJCg1saXN0aW5nX2dyb3VwGCAg",
-            "ASgLMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkxpc3RpbmdH",
-            "cm91cEluZm9IABr/AgoLUXVhbGl0eUluZm8SMgoNcXVhbGl0eV9zY29yZRgB",
-            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlEmgKFmNyZWF0aXZl",
-            "X3F1YWxpdHlfc2NvcmUYAiABKA4ySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lbnVtcy5RdWFsaXR5U2NvcmVCdWNrZXRFbnVtLlF1YWxpdHlTY29yZUJ1",
-            "Y2tldBJqChhwb3N0X2NsaWNrX3F1YWxpdHlfc2NvcmUYAyABKA4ySC5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5RdWFsaXR5U2NvcmVCdWNrZXRF",
-            "bnVtLlF1YWxpdHlTY29yZUJ1Y2tldBJmChRzZWFyY2hfcHJlZGljdGVkX2N0",
-            "chgEIAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlF1YWxp",
-            "dHlTY29yZUJ1Y2tldEVudW0uUXVhbGl0eVNjb3JlQnVja2V0GswBChFQb3Np",
-            "dGlvbkVzdGltYXRlcxI6ChVmaXJzdF9wYWdlX2NwY19taWNyb3MYASABKAsy",
-            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI+ChlmaXJzdF9wb3NpdGlv",
-            "bl9jcGNfbWljcm9zGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
-            "dWUSOwoWdG9wX29mX3BhZ2VfY3BjX21pY3JvcxgDIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5JbnQ2NFZhbHVlQgsKCWNyaXRlcmlvbkLaAQolY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IVQWRHcm91cENyaXRlcmlv",
-            "blByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FB",
-            "qgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
+            "bFZhbHVlEjIKDGJpZF9tb2RpZmllchgsIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5Eb3VibGVWYWx1ZRIzCg5jcGNfYmlkX21pY3JvcxgQIAEoCzIbLmdvb2ds",
+            "ZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjMKDmNwbV9iaWRfbWljcm9zGBEgASgL",
+            "MhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSMwoOY3B2X2JpZF9taWNy",
+            "b3MYGCABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI7ChZwZXJj",
+            "ZW50X2NwY19iaWRfbWljcm9zGCEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
+            "dDY0VmFsdWUSPQoYZWZmZWN0aXZlX2NwY19iaWRfbWljcm9zGBIgASgLMhsu",
+            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSPQoYZWZmZWN0aXZlX2NwbV9i",
+            "aWRfbWljcm9zGBMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUS",
+            "PQoYZWZmZWN0aXZlX2Nwdl9iaWRfbWljcm9zGBQgASgLMhsuZ29vZ2xlLnBy",
+            "b3RvYnVmLkludDY0VmFsdWUSRQogZWZmZWN0aXZlX3BlcmNlbnRfY3BjX2Jp",
+            "ZF9taWNyb3MYIiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRJg",
+            "ChhlZmZlY3RpdmVfY3BjX2JpZF9zb3VyY2UYFSABKA4yPi5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5lbnVtcy5CaWRkaW5nU291cmNlRW51bS5CaWRkaW5n",
+            "U291cmNlEmAKGGVmZmVjdGl2ZV9jcG1fYmlkX3NvdXJjZRgWIAEoDjI+Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkJpZGRpbmdTb3VyY2VFbnVt",
+            "LkJpZGRpbmdTb3VyY2USYAoYZWZmZWN0aXZlX2Nwdl9iaWRfc291cmNlGBcg",
+            "ASgOMj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQmlkZGluZ1Nv",
+            "dXJjZUVudW0uQmlkZGluZ1NvdXJjZRJoCiBlZmZlY3RpdmVfcGVyY2VudF9j",
+            "cGNfYmlkX3NvdXJjZRgjIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmVudW1zLkJpZGRpbmdTb3VyY2VFbnVtLkJpZGRpbmdTb3VyY2USYQoScG9z",
+            "aXRpb25fZXN0aW1hdGVzGAogASgLMkUuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAucmVzb3VyY2VzLkFkR3JvdXBDcml0ZXJpb24uUG9zaXRpb25Fc3RpbWF0",
+            "ZXMSMAoKZmluYWxfdXJscxgLIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRI7ChV0cmFja2luZ191cmxfdGVtcGxhdGUYDSABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSTgoVdXJsX2N1c3RvbV9wYXJhbWV0",
+            "ZXJzGA4gAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkN1",
+            "c3RvbVBhcmFtZXRlchI+CgdrZXl3b3JkGBsgASgLMisuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjAuY29tbW9uLktleXdvcmRJbmZvSAASQgoJcGxhY2VtZW50",
+            "GBwgASgLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlBsYWNl",
+            "bWVudEluZm9IABJJCg1saXN0aW5nX2dyb3VwGCAgASgLMjAuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuY29tbW9uLkxpc3RpbmdHcm91cEluZm9IABJBCglh",
+            "Z2VfcmFuZ2UYJCABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21t",
+            "b24uQWdlUmFuZ2VJbmZvSAASPAoGZ2VuZGVyGCUgASgLMiouZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuY29tbW9uLkdlbmRlckluZm9IABJHCgxpbmNvbWVf",
+            "cmFuZ2UYJiABKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24u",
+            "SW5jb21lUmFuZ2VJbmZvSAASTQoPcGFyZW50YWxfc3RhdHVzGCcgASgLMjIu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlBhcmVudGFsU3RhdHVz",
+            "SW5mb0gAEkkKDXlvdXR1YmVfdmlkZW8YKCABKAsyMC5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5jb21tb24uWW91VHViZVZpZGVvSW5mb0gAEk0KD3lvdXR1",
+            "YmVfY2hhbm5lbBgpIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNv",
+            "bW1vbi5Zb3VUdWJlQ2hhbm5lbEluZm9IABI6CgV0b3BpYxgrIAEoCzIpLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Ub3BpY0luZm9IABr/AgoL",
+            "UXVhbGl0eUluZm8SMgoNcXVhbGl0eV9zY29yZRgBIAEoCzIbLmdvb2dsZS5w",
+            "cm90b2J1Zi5JbnQzMlZhbHVlEmgKFmNyZWF0aXZlX3F1YWxpdHlfc2NvcmUY",
+            "AiABKA4ySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5RdWFsaXR5",
+            "U2NvcmVCdWNrZXRFbnVtLlF1YWxpdHlTY29yZUJ1Y2tldBJqChhwb3N0X2Ns",
+            "aWNrX3F1YWxpdHlfc2NvcmUYAyABKA4ySC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5lbnVtcy5RdWFsaXR5U2NvcmVCdWNrZXRFbnVtLlF1YWxpdHlTY29y",
+            "ZUJ1Y2tldBJmChRzZWFyY2hfcHJlZGljdGVkX2N0chgEIAEoDjJILmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlF1YWxpdHlTY29yZUJ1Y2tldEVu",
+            "dW0uUXVhbGl0eVNjb3JlQnVja2V0GswBChFQb3NpdGlvbkVzdGltYXRlcxI6",
+            "ChVmaXJzdF9wYWdlX2NwY19taWNyb3MYASABKAsyGy5nb29nbGUucHJvdG9i",
+            "dWYuSW50NjRWYWx1ZRI+ChlmaXJzdF9wb3NpdGlvbl9jcGNfbWljcm9zGAIg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOwoWdG9wX29mX3Bh",
+            "Z2VfY3BjX21pY3JvcxgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
+            "bHVlQgsKCWNyaXRlcmlvbkLaAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLnJlc291cmNlc0IVQWRHcm91cENyaXRlcmlvblByb3RvUAFaSmdvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5H",
+            "b29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNc",
+            "VjBcUmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupCriterionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Parser, new[]{ "ResourceName", "CriterionId", "Status", "QualityInfo", "AdGroup", "Type", "Negative", "CpcBidMicros", "CpmBidMicros", "CpvBidMicros", "PercentCpcBidMicros", "EffectiveCpcBidMicros", "EffectiveCpmBidMicros", "EffectiveCpvBidMicros", "EffectivePercentCpcBidMicros", "EffectiveCpcBidSource", "EffectiveCpmBidSource", "EffectiveCpvBidSource", "EffectivePercentCpcBidSource", "PositionEstimates", "FinalUrls", "TrackingUrlTemplate", "UrlCustomParameters", "Keyword", "ListingGroup" }, new[]{ "Criterion" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo.Parser, new[]{ "QualityScore", "CreativeQualityScore", "PostClickQualityScore", "SearchPredictedCtr" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Parser, new[]{ "ResourceName", "CriterionId", "Status", "QualityInfo", "AdGroup", "Type", "Negative", "BidModifier", "CpcBidMicros", "CpmBidMicros", "CpvBidMicros", "PercentCpcBidMicros", "EffectiveCpcBidMicros", "EffectiveCpmBidMicros", "EffectiveCpvBidMicros", "EffectivePercentCpcBidMicros", "EffectiveCpcBidSource", "EffectiveCpmBidSource", "EffectiveCpvBidSource", "EffectivePercentCpcBidSource", "PositionEstimates", "FinalUrls", "TrackingUrlTemplate", "UrlCustomParameters", "Keyword", "Placement", "ListingGroup", "AgeRange", "Gender", "IncomeRange", "ParentalStatus", "YoutubeVideo", "YoutubeChannel", "Topic" }, new[]{ "Criterion" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo.Parser, new[]{ "QualityScore", "CreativeQualityScore", "PostClickQualityScore", "SearchPredictedCtr" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.PositionEstimates), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.PositionEstimates.Parser, new[]{ "FirstPageCpcMicros", "FirstPositionCpcMicros", "TopOfPageCpcMicros" }, null, null, null)})
           }));
     }
@@ -138,6 +152,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       AdGroup = other.AdGroup;
       type_ = other.type_;
       Negative = other.Negative;
+      BidModifier = other.BidModifier;
       CpcBidMicros = other.CpcBidMicros;
       CpmBidMicros = other.CpmBidMicros;
       CpvBidMicros = other.CpvBidMicros;
@@ -158,8 +173,32 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         case CriterionOneofCase.Keyword:
           Keyword = other.Keyword.Clone();
           break;
+        case CriterionOneofCase.Placement:
+          Placement = other.Placement.Clone();
+          break;
         case CriterionOneofCase.ListingGroup:
           ListingGroup = other.ListingGroup.Clone();
+          break;
+        case CriterionOneofCase.AgeRange:
+          AgeRange = other.AgeRange.Clone();
+          break;
+        case CriterionOneofCase.Gender:
+          Gender = other.Gender.Clone();
+          break;
+        case CriterionOneofCase.IncomeRange:
+          IncomeRange = other.IncomeRange.Clone();
+          break;
+        case CriterionOneofCase.ParentalStatus:
+          ParentalStatus = other.ParentalStatus.Clone();
+          break;
+        case CriterionOneofCase.YoutubeVideo:
+          YoutubeVideo = other.YoutubeVideo.Clone();
+          break;
+        case CriterionOneofCase.YoutubeChannel:
+          YoutubeChannel = other.YoutubeChannel.Clone();
+          break;
+        case CriterionOneofCase.Topic:
+          Topic = other.Topic.Clone();
           break;
       }
 
@@ -239,8 +278,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private string adGroup_;
     /// <summary>
     /// The ad group to which the criterion belongs.
-    ///
-    /// This field must not be used in WHERE clauses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string AdGroup {
@@ -279,6 +316,22 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       get { return negative_; }
       set {
         negative_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bid_modifier" field.</summary>
+    public const int BidModifierFieldNumber = 44;
+    private static readonly pb::FieldCodec<double?> _single_bidModifier_codec = pb::FieldCodec.ForStructWrapper<double>(354);
+    private double? bidModifier_;
+    /// <summary>
+    /// The modifier for the bid when the criterion matches. The modifier must be
+    /// in the range: 0.1 - 10.0. Most targetable criteria types support modifiers.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? BidModifier {
+      get { return bidModifier_; }
+      set {
+        bidModifier_ = value;
       }
     }
 
@@ -531,6 +584,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "placement" field.</summary>
+    public const int PlacementFieldNumber = 28;
+    /// <summary>
+    /// Placement.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PlacementInfo Placement {
+      get { return criterionCase_ == CriterionOneofCase.Placement ? (global::Google.Ads.GoogleAds.V0.Common.PlacementInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.Placement;
+      }
+    }
+
     /// <summary>Field number for the "listing_group" field.</summary>
     public const int ListingGroupFieldNumber = 32;
     /// <summary>
@@ -545,12 +612,118 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "age_range" field.</summary>
+    public const int AgeRangeFieldNumber = 36;
+    /// <summary>
+    /// Age range.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.AgeRangeInfo AgeRange {
+      get { return criterionCase_ == CriterionOneofCase.AgeRange ? (global::Google.Ads.GoogleAds.V0.Common.AgeRangeInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.AgeRange;
+      }
+    }
+
+    /// <summary>Field number for the "gender" field.</summary>
+    public const int GenderFieldNumber = 37;
+    /// <summary>
+    /// Gender.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.GenderInfo Gender {
+      get { return criterionCase_ == CriterionOneofCase.Gender ? (global::Google.Ads.GoogleAds.V0.Common.GenderInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.Gender;
+      }
+    }
+
+    /// <summary>Field number for the "income_range" field.</summary>
+    public const int IncomeRangeFieldNumber = 38;
+    /// <summary>
+    /// Income range.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.IncomeRangeInfo IncomeRange {
+      get { return criterionCase_ == CriterionOneofCase.IncomeRange ? (global::Google.Ads.GoogleAds.V0.Common.IncomeRangeInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.IncomeRange;
+      }
+    }
+
+    /// <summary>Field number for the "parental_status" field.</summary>
+    public const int ParentalStatusFieldNumber = 39;
+    /// <summary>
+    /// Parental status.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.ParentalStatusInfo ParentalStatus {
+      get { return criterionCase_ == CriterionOneofCase.ParentalStatus ? (global::Google.Ads.GoogleAds.V0.Common.ParentalStatusInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.ParentalStatus;
+      }
+    }
+
+    /// <summary>Field number for the "youtube_video" field.</summary>
+    public const int YoutubeVideoFieldNumber = 40;
+    /// <summary>
+    /// YouTube Video.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.YouTubeVideoInfo YoutubeVideo {
+      get { return criterionCase_ == CriterionOneofCase.YoutubeVideo ? (global::Google.Ads.GoogleAds.V0.Common.YouTubeVideoInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.YoutubeVideo;
+      }
+    }
+
+    /// <summary>Field number for the "youtube_channel" field.</summary>
+    public const int YoutubeChannelFieldNumber = 41;
+    /// <summary>
+    /// YouTube Channel.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.YouTubeChannelInfo YoutubeChannel {
+      get { return criterionCase_ == CriterionOneofCase.YoutubeChannel ? (global::Google.Ads.GoogleAds.V0.Common.YouTubeChannelInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.YoutubeChannel;
+      }
+    }
+
+    /// <summary>Field number for the "topic" field.</summary>
+    public const int TopicFieldNumber = 43;
+    /// <summary>
+    /// Topic.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.TopicInfo Topic {
+      get { return criterionCase_ == CriterionOneofCase.Topic ? (global::Google.Ads.GoogleAds.V0.Common.TopicInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.Topic;
+      }
+    }
+
     private object criterion_;
     /// <summary>Enum of possible cases for the "criterion" oneof.</summary>
     public enum CriterionOneofCase {
       None = 0,
       Keyword = 27,
+      Placement = 28,
       ListingGroup = 32,
+      AgeRange = 36,
+      Gender = 37,
+      IncomeRange = 38,
+      ParentalStatus = 39,
+      YoutubeVideo = 40,
+      YoutubeChannel = 41,
+      Topic = 43,
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -584,6 +757,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (AdGroup != other.AdGroup) return false;
       if (Type != other.Type) return false;
       if (Negative != other.Negative) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(BidModifier, other.BidModifier)) return false;
       if (CpcBidMicros != other.CpcBidMicros) return false;
       if (CpmBidMicros != other.CpmBidMicros) return false;
       if (CpvBidMicros != other.CpvBidMicros) return false;
@@ -601,7 +775,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (TrackingUrlTemplate != other.TrackingUrlTemplate) return false;
       if(!urlCustomParameters_.Equals(other.urlCustomParameters_)) return false;
       if (!object.Equals(Keyword, other.Keyword)) return false;
+      if (!object.Equals(Placement, other.Placement)) return false;
       if (!object.Equals(ListingGroup, other.ListingGroup)) return false;
+      if (!object.Equals(AgeRange, other.AgeRange)) return false;
+      if (!object.Equals(Gender, other.Gender)) return false;
+      if (!object.Equals(IncomeRange, other.IncomeRange)) return false;
+      if (!object.Equals(ParentalStatus, other.ParentalStatus)) return false;
+      if (!object.Equals(YoutubeVideo, other.YoutubeVideo)) return false;
+      if (!object.Equals(YoutubeChannel, other.YoutubeChannel)) return false;
+      if (!object.Equals(Topic, other.Topic)) return false;
       if (CriterionCase != other.CriterionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -616,6 +798,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (adGroup_ != null) hash ^= AdGroup.GetHashCode();
       if (Type != 0) hash ^= Type.GetHashCode();
       if (negative_ != null) hash ^= Negative.GetHashCode();
+      if (bidModifier_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(BidModifier);
       if (cpcBidMicros_ != null) hash ^= CpcBidMicros.GetHashCode();
       if (cpmBidMicros_ != null) hash ^= CpmBidMicros.GetHashCode();
       if (cpvBidMicros_ != null) hash ^= CpvBidMicros.GetHashCode();
@@ -633,7 +816,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (trackingUrlTemplate_ != null) hash ^= TrackingUrlTemplate.GetHashCode();
       hash ^= urlCustomParameters_.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Keyword) hash ^= Keyword.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.Placement) hash ^= Placement.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.ListingGroup) hash ^= ListingGroup.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.AgeRange) hash ^= AgeRange.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.Gender) hash ^= Gender.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.IncomeRange) hash ^= IncomeRange.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.ParentalStatus) hash ^= ParentalStatus.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.YoutubeVideo) hash ^= YoutubeVideo.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.YoutubeChannel) hash ^= YoutubeChannel.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.Topic) hash ^= Topic.GetHashCode();
       hash ^= (int) criterionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -713,6 +904,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(218, 1);
         output.WriteMessage(Keyword);
       }
+      if (criterionCase_ == CriterionOneofCase.Placement) {
+        output.WriteRawTag(226, 1);
+        output.WriteMessage(Placement);
+      }
       if (negative_ != null) {
         _single_negative_codec.WriteTagAndValue(output, Negative);
       }
@@ -729,6 +924,37 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (EffectivePercentCpcBidSource != 0) {
         output.WriteRawTag(152, 2);
         output.WriteEnum((int) EffectivePercentCpcBidSource);
+      }
+      if (criterionCase_ == CriterionOneofCase.AgeRange) {
+        output.WriteRawTag(162, 2);
+        output.WriteMessage(AgeRange);
+      }
+      if (criterionCase_ == CriterionOneofCase.Gender) {
+        output.WriteRawTag(170, 2);
+        output.WriteMessage(Gender);
+      }
+      if (criterionCase_ == CriterionOneofCase.IncomeRange) {
+        output.WriteRawTag(178, 2);
+        output.WriteMessage(IncomeRange);
+      }
+      if (criterionCase_ == CriterionOneofCase.ParentalStatus) {
+        output.WriteRawTag(186, 2);
+        output.WriteMessage(ParentalStatus);
+      }
+      if (criterionCase_ == CriterionOneofCase.YoutubeVideo) {
+        output.WriteRawTag(194, 2);
+        output.WriteMessage(YoutubeVideo);
+      }
+      if (criterionCase_ == CriterionOneofCase.YoutubeChannel) {
+        output.WriteRawTag(202, 2);
+        output.WriteMessage(YoutubeChannel);
+      }
+      if (criterionCase_ == CriterionOneofCase.Topic) {
+        output.WriteRawTag(218, 2);
+        output.WriteMessage(Topic);
+      }
+      if (bidModifier_ != null) {
+        _single_bidModifier_codec.WriteTagAndValue(output, BidModifier);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -758,6 +984,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (negative_ != null) {
         size += _single_negative_codec.CalculateSizeWithTag(Negative);
+      }
+      if (bidModifier_ != null) {
+        size += _single_bidModifier_codec.CalculateSizeWithTag(BidModifier);
       }
       if (cpcBidMicros_ != null) {
         size += _single_cpcBidMicros_codec.CalculateSizeWithTag(CpcBidMicros);
@@ -806,8 +1035,32 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (criterionCase_ == CriterionOneofCase.Keyword) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Keyword);
       }
+      if (criterionCase_ == CriterionOneofCase.Placement) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Placement);
+      }
       if (criterionCase_ == CriterionOneofCase.ListingGroup) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ListingGroup);
+      }
+      if (criterionCase_ == CriterionOneofCase.AgeRange) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AgeRange);
+      }
+      if (criterionCase_ == CriterionOneofCase.Gender) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Gender);
+      }
+      if (criterionCase_ == CriterionOneofCase.IncomeRange) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(IncomeRange);
+      }
+      if (criterionCase_ == CriterionOneofCase.ParentalStatus) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ParentalStatus);
+      }
+      if (criterionCase_ == CriterionOneofCase.YoutubeVideo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(YoutubeVideo);
+      }
+      if (criterionCase_ == CriterionOneofCase.YoutubeChannel) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(YoutubeChannel);
+      }
+      if (criterionCase_ == CriterionOneofCase.Topic) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Topic);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -848,6 +1101,11 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (other.negative_ != null) {
         if (negative_ == null || other.Negative != false) {
           Negative = other.Negative;
+        }
+      }
+      if (other.bidModifier_ != null) {
+        if (bidModifier_ == null || other.BidModifier != 0D) {
+          BidModifier = other.BidModifier;
         }
       }
       if (other.cpcBidMicros_ != null) {
@@ -922,11 +1180,59 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           }
           Keyword.MergeFrom(other.Keyword);
           break;
+        case CriterionOneofCase.Placement:
+          if (Placement == null) {
+            Placement = new global::Google.Ads.GoogleAds.V0.Common.PlacementInfo();
+          }
+          Placement.MergeFrom(other.Placement);
+          break;
         case CriterionOneofCase.ListingGroup:
           if (ListingGroup == null) {
             ListingGroup = new global::Google.Ads.GoogleAds.V0.Common.ListingGroupInfo();
           }
           ListingGroup.MergeFrom(other.ListingGroup);
+          break;
+        case CriterionOneofCase.AgeRange:
+          if (AgeRange == null) {
+            AgeRange = new global::Google.Ads.GoogleAds.V0.Common.AgeRangeInfo();
+          }
+          AgeRange.MergeFrom(other.AgeRange);
+          break;
+        case CriterionOneofCase.Gender:
+          if (Gender == null) {
+            Gender = new global::Google.Ads.GoogleAds.V0.Common.GenderInfo();
+          }
+          Gender.MergeFrom(other.Gender);
+          break;
+        case CriterionOneofCase.IncomeRange:
+          if (IncomeRange == null) {
+            IncomeRange = new global::Google.Ads.GoogleAds.V0.Common.IncomeRangeInfo();
+          }
+          IncomeRange.MergeFrom(other.IncomeRange);
+          break;
+        case CriterionOneofCase.ParentalStatus:
+          if (ParentalStatus == null) {
+            ParentalStatus = new global::Google.Ads.GoogleAds.V0.Common.ParentalStatusInfo();
+          }
+          ParentalStatus.MergeFrom(other.ParentalStatus);
+          break;
+        case CriterionOneofCase.YoutubeVideo:
+          if (YoutubeVideo == null) {
+            YoutubeVideo = new global::Google.Ads.GoogleAds.V0.Common.YouTubeVideoInfo();
+          }
+          YoutubeVideo.MergeFrom(other.YoutubeVideo);
+          break;
+        case CriterionOneofCase.YoutubeChannel:
+          if (YoutubeChannel == null) {
+            YoutubeChannel = new global::Google.Ads.GoogleAds.V0.Common.YouTubeChannelInfo();
+          }
+          YoutubeChannel.MergeFrom(other.YoutubeChannel);
+          break;
+        case CriterionOneofCase.Topic:
+          if (Topic == null) {
+            Topic = new global::Google.Ads.GoogleAds.V0.Common.TopicInfo();
+          }
+          Topic.MergeFrom(other.Topic);
           break;
       }
 
@@ -1059,6 +1365,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             Keyword = subBuilder;
             break;
           }
+          case 226: {
+            global::Google.Ads.GoogleAds.V0.Common.PlacementInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PlacementInfo();
+            if (criterionCase_ == CriterionOneofCase.Placement) {
+              subBuilder.MergeFrom(Placement);
+            }
+            input.ReadMessage(subBuilder);
+            Placement = subBuilder;
+            break;
+          }
           case 250: {
             bool? value = _single_negative_codec.Read(input);
             if (negative_ == null || value != false) {
@@ -1091,6 +1406,76 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           }
           case 280: {
             effectivePercentCpcBidSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource) input.ReadEnum();
+            break;
+          }
+          case 290: {
+            global::Google.Ads.GoogleAds.V0.Common.AgeRangeInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.AgeRangeInfo();
+            if (criterionCase_ == CriterionOneofCase.AgeRange) {
+              subBuilder.MergeFrom(AgeRange);
+            }
+            input.ReadMessage(subBuilder);
+            AgeRange = subBuilder;
+            break;
+          }
+          case 298: {
+            global::Google.Ads.GoogleAds.V0.Common.GenderInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.GenderInfo();
+            if (criterionCase_ == CriterionOneofCase.Gender) {
+              subBuilder.MergeFrom(Gender);
+            }
+            input.ReadMessage(subBuilder);
+            Gender = subBuilder;
+            break;
+          }
+          case 306: {
+            global::Google.Ads.GoogleAds.V0.Common.IncomeRangeInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.IncomeRangeInfo();
+            if (criterionCase_ == CriterionOneofCase.IncomeRange) {
+              subBuilder.MergeFrom(IncomeRange);
+            }
+            input.ReadMessage(subBuilder);
+            IncomeRange = subBuilder;
+            break;
+          }
+          case 314: {
+            global::Google.Ads.GoogleAds.V0.Common.ParentalStatusInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.ParentalStatusInfo();
+            if (criterionCase_ == CriterionOneofCase.ParentalStatus) {
+              subBuilder.MergeFrom(ParentalStatus);
+            }
+            input.ReadMessage(subBuilder);
+            ParentalStatus = subBuilder;
+            break;
+          }
+          case 322: {
+            global::Google.Ads.GoogleAds.V0.Common.YouTubeVideoInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.YouTubeVideoInfo();
+            if (criterionCase_ == CriterionOneofCase.YoutubeVideo) {
+              subBuilder.MergeFrom(YoutubeVideo);
+            }
+            input.ReadMessage(subBuilder);
+            YoutubeVideo = subBuilder;
+            break;
+          }
+          case 330: {
+            global::Google.Ads.GoogleAds.V0.Common.YouTubeChannelInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.YouTubeChannelInfo();
+            if (criterionCase_ == CriterionOneofCase.YoutubeChannel) {
+              subBuilder.MergeFrom(YoutubeChannel);
+            }
+            input.ReadMessage(subBuilder);
+            YoutubeChannel = subBuilder;
+            break;
+          }
+          case 346: {
+            global::Google.Ads.GoogleAds.V0.Common.TopicInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.TopicInfo();
+            if (criterionCase_ == CriterionOneofCase.Topic) {
+              subBuilder.MergeFrom(Topic);
+            }
+            input.ReadMessage(subBuilder);
+            Topic = subBuilder;
+            break;
+          }
+          case 354: {
+            double? value = _single_bidModifier_codec.Read(input);
+            if (bidModifier_ == null || value != 0D) {
+              BidModifier = value;
+            }
             break;
           }
         }

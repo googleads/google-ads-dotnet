@@ -26,22 +26,25 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvZ2VvX3Rhcmdl",
             "dF9jb25zdGFudC5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVz",
-            "b3VyY2VzGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8i5gEKEUdl",
-            "b1RhcmdldENvbnN0YW50EhUKDXJlc291cmNlX25hbWUYASABKAkSJwoCaWQY",
-            "AyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIqCgRuYW1lGAQg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKDGNvdW50cnlf",
-            "Y29kZRgFIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgt0",
-            "YXJnZXRfdHlwZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZULbAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IW",
-            "R2VvVGFyZ2V0Q29uc3RhbnRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2Vz",
-            "O3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJl",
-            "c291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IG",
-            "cHJvdG8z"));
+            "b3VyY2VzGj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9nZW9fdGFy",
+            "Z2V0X2NvbnN0YW50X3N0YXR1cy5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dy",
+            "YXBwZXJzLnByb3RvIsoCChFHZW9UYXJnZXRDb25zdGFudBIVCg1yZXNvdXJj",
+            "ZV9uYW1lGAEgASgJEicKAmlkGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
+            "dDY0VmFsdWUSKgoEbmFtZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRIyCgxjb3VudHJ5X2NvZGUYBSABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUSMQoLdGFyZ2V0X3R5cGUYBiABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUSYgoGc3RhdHVzGAcgASgOMlIuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAuZW51bXMuR2VvVGFyZ2V0Q29uc3RhbnRTdGF0",
+            "dXNFbnVtLkdlb1RhcmdldENvbnN0YW50U3RhdHVzQtsBCiVjb20uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhZHZW9UYXJnZXRDb25zdGFu",
+            "dFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FB",
+            "qgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.GeoTargetConstantStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant), global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant.Parser, new[]{ "ResourceName", "Id", "Name", "CountryCode", "TargetType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant), global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant.Parser, new[]{ "ResourceName", "Id", "Name", "CountryCode", "TargetType", "Status" }, null, null, null)
           }));
     }
     #endregion
@@ -81,6 +84,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       Name = other.Name;
       CountryCode = other.CountryCode;
       TargetType = other.TargetType;
+      status_ = other.status_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -166,6 +170,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 7;
+    private global::Google.Ads.GoogleAds.V0.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus status_ = 0;
+    /// <summary>
+    /// Geo target constant status.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GeoTargetConstant);
@@ -184,6 +202,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (Name != other.Name) return false;
       if (CountryCode != other.CountryCode) return false;
       if (TargetType != other.TargetType) return false;
+      if (Status != other.Status) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -195,6 +214,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (name_ != null) hash ^= Name.GetHashCode();
       if (countryCode_ != null) hash ^= CountryCode.GetHashCode();
       if (targetType_ != null) hash ^= TargetType.GetHashCode();
+      if (Status != 0) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -224,6 +244,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (targetType_ != null) {
         _single_targetType_codec.WriteTagAndValue(output, TargetType);
       }
+      if (Status != 0) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) Status);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -246,6 +270,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (targetType_ != null) {
         size += _single_targetType_codec.CalculateSizeWithTag(TargetType);
+      }
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -280,6 +307,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         if (targetType_ == null || other.TargetType != "") {
           TargetType = other.TargetType;
         }
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -322,6 +352,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             if (targetType_ == null || value != "") {
               TargetType = value;
             }
+            break;
+          }
+          case 56: {
+            status_ = (global::Google.Ads.GoogleAds.V0.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus) input.ReadEnum();
             break;
           }
         }

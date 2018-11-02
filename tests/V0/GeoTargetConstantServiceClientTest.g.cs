@@ -116,5 +116,79 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public void SuggestGeoTargetConstants()
+        {
+            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            SuggestGeoTargetConstantsRequest expectedRequest = new SuggestGeoTargetConstantsRequest
+            {
+                Locale = new StringValue().Value,
+                // TODO(liseno): Implicit type cast from StringValue to String failed
+            };
+            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
+            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstants(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
+            StringValue locale = new StringValue();
+            SuggestGeoTargetConstantsResponse response = client.SuggestGeoTargetConstants(locale);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task SuggestGeoTargetConstantsAsync()
+        {
+            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            SuggestGeoTargetConstantsRequest expectedRequest = new SuggestGeoTargetConstantsRequest
+            {
+                Locale = new StringValue().Value,
+                // TODO(liseno): Implicit type cast from StringValue to String failed
+            };
+            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
+            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstantsAsync(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<SuggestGeoTargetConstantsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
+            StringValue locale = new StringValue();
+            SuggestGeoTargetConstantsResponse response = await client.SuggestGeoTargetConstantsAsync(locale);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void SuggestGeoTargetConstants2()
+        {
+            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            SuggestGeoTargetConstantsRequest request = new SuggestGeoTargetConstantsRequest
+            {
+                Locale = new StringValue().Value,
+                // TODO(liseno): Implicit type cast from StringValue to String failed
+            };
+            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
+            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstants(request, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
+            SuggestGeoTargetConstantsResponse response = client.SuggestGeoTargetConstants(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task SuggestGeoTargetConstantsAsync2()
+        {
+            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            SuggestGeoTargetConstantsRequest request = new SuggestGeoTargetConstantsRequest
+            {
+                Locale = new StringValue().Value,
+                // TODO(liseno): Implicit type cast from StringValue to String failed
+            };
+            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
+            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstantsAsync(request, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<SuggestGeoTargetConstantsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
+            SuggestGeoTargetConstantsResponse response = await client.SuggestGeoTargetConstantsAsync(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
     }
 }

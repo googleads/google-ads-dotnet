@@ -31,32 +31,34 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "byIvChZHZXRCaWxsaW5nU2V0dXBSZXF1ZXN0EhUKDXJlc291cmNlX25hbWUY",
             "ASABKAkifAoZTXV0YXRlQmlsbGluZ1NldHVwUmVxdWVzdBITCgtjdXN0b21l",
             "cl9pZBgBIAEoCRJKCglvcGVyYXRpb24YAiABKAsyNy5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5zZXJ2aWNlcy5CaWxsaW5nU2V0dXBPcGVyYXRpb24iNgoV",
-            "QmlsbGluZ1NldHVwT3BlcmF0aW9uEhAKBnJlbW92ZRgBIAEoCUgAQgsKCW9w",
-            "ZXJhdGlvbiJoChpNdXRhdGVCaWxsaW5nU2V0dXBSZXNwb25zZRJKCgZyZXN1",
-            "bHQYASABKAsyOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5N",
-            "dXRhdGVCaWxsaW5nU2V0dXBSZXN1bHQiMQoYTXV0YXRlQmlsbGluZ1NldHVw",
-            "UmVzdWx0EhUKDXJlc291cmNlX25hbWUYASABKAkyngMKE0JpbGxpbmdTZXR1",
-            "cFNlcnZpY2UStQEKD0dldEJpbGxpbmdTZXR1cBI4Lmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYwLnNlcnZpY2VzLkdldEJpbGxpbmdTZXR1cFJlcXVlc3QaLy5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQmlsbGluZ1NldHVw",
-            "IjeC0+STAjESLy92MC97cmVzb3VyY2VfbmFtZT1jdXN0b21lcnMvKi9iaWxs",
-            "aW5nU2V0dXBzLyp9Es4BChJNdXRhdGVCaWxsaW5nU2V0dXASOy5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5NdXRhdGVCaWxsaW5nU2V0dXBS",
-            "ZXF1ZXN0GjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMuTXV0",
-            "YXRlQmlsbGluZ1NldHVwUmVzcG9uc2UiPYLT5JMCNyIyL3YwL2N1c3RvbWVy",
-            "cy97Y3VzdG9tZXJfaWQ9Kn0vYmlsbGluZ1NldHVwczptdXRhdGU6ASpC2AEK",
-            "JGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlc0IYQmlsbGlu",
-            "Z1NldHVwU2VydmljZVByb3RvUAFaSGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9zZXJ2aWNlcztzZXJ2",
-            "aWNlc6ICA0dBQaoCIEdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlNlcnZpY2Vz",
-            "ygIgR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcU2VydmljZXNiBnByb3RvMw=="));
+            "b2dsZWFkcy52MC5zZXJ2aWNlcy5CaWxsaW5nU2V0dXBPcGVyYXRpb24ieQoV",
+            "QmlsbGluZ1NldHVwT3BlcmF0aW9uEkEKBmNyZWF0ZRgCIAEoCzIvLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5CaWxsaW5nU2V0dXBIABIQ",
+            "CgZyZW1vdmUYASABKAlIAEILCglvcGVyYXRpb24iaAoaTXV0YXRlQmlsbGlu",
+            "Z1NldHVwUmVzcG9uc2USSgoGcmVzdWx0GAEgASgLMjouZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjAuc2VydmljZXMuTXV0YXRlQmlsbGluZ1NldHVwUmVzdWx0",
+            "IjEKGE11dGF0ZUJpbGxpbmdTZXR1cFJlc3VsdBIVCg1yZXNvdXJjZV9uYW1l",
+            "GAEgASgJMp4DChNCaWxsaW5nU2V0dXBTZXJ2aWNlErUBCg9HZXRCaWxsaW5n",
+            "U2V0dXASOC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5HZXRC",
+            "aWxsaW5nU2V0dXBSZXF1ZXN0Gi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "cmVzb3VyY2VzLkJpbGxpbmdTZXR1cCI3gtPkkwIxEi8vdjAve3Jlc291cmNl",
+            "X25hbWU9Y3VzdG9tZXJzLyovYmlsbGluZ1NldHVwcy8qfRLOAQoSTXV0YXRl",
+            "QmlsbGluZ1NldHVwEjsuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2Vydmlj",
+            "ZXMuTXV0YXRlQmlsbGluZ1NldHVwUmVxdWVzdBo8Lmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLnNlcnZpY2VzLk11dGF0ZUJpbGxpbmdTZXR1cFJlc3BvbnNl",
+            "Ij2C0+STAjciMi92MC9jdXN0b21lcnMve2N1c3RvbWVyX2lkPSp9L2JpbGxp",
+            "bmdTZXR1cHM6bXV0YXRlOgEqQtgBCiRjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuc2VydmljZXNCGEJpbGxpbmdTZXR1cFNlcnZpY2VQcm90b1ABWkhn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjAvc2VydmljZXM7c2VydmljZXOiAgNHQUGqAiBHb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMC5TZXJ2aWNlc8oCIEdvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYwXFNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Resources.BillingSetupReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetBillingSetupRequest), global::Google.Ads.GoogleAds.V0.Services.GetBillingSetupRequest.Parser, new[]{ "ResourceName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateBillingSetupRequest), global::Google.Ads.GoogleAds.V0.Services.MutateBillingSetupRequest.Parser, new[]{ "CustomerId", "Operation" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.BillingSetupOperation), global::Google.Ads.GoogleAds.V0.Services.BillingSetupOperation.Parser, new[]{ "Remove" }, new[]{ "Operation" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.BillingSetupOperation), global::Google.Ads.GoogleAds.V0.Services.BillingSetupOperation.Parser, new[]{ "Create", "Remove" }, new[]{ "Operation" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateBillingSetupResponse), global::Google.Ads.GoogleAds.V0.Services.MutateBillingSetupResponse.Parser, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateBillingSetupResult), global::Google.Ads.GoogleAds.V0.Services.MutateBillingSetupResult.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -403,6 +405,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public BillingSetupOperation(BillingSetupOperation other) : this() {
       switch (other.OperationCase) {
+        case OperationOneofCase.Create:
+          Create = other.Create.Clone();
+          break;
         case OperationOneofCase.Remove:
           Remove = other.Remove;
           break;
@@ -416,10 +421,25 @@ namespace Google.Ads.GoogleAds.V0.Services {
       return new BillingSetupOperation(this);
     }
 
+    /// <summary>Field number for the "create" field.</summary>
+    public const int CreateFieldNumber = 2;
+    /// <summary>
+    /// Creates a billing setup. No resource name is expected for the new billing
+    /// setup.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.BillingSetup Create {
+      get { return operationCase_ == OperationOneofCase.Create ? (global::Google.Ads.GoogleAds.V0.Resources.BillingSetup) operation_ : null; }
+      set {
+        operation_ = value;
+        operationCase_ = value == null ? OperationOneofCase.None : OperationOneofCase.Create;
+      }
+    }
+
     /// <summary>Field number for the "remove" field.</summary>
     public const int RemoveFieldNumber = 1;
     /// <summary>
-    /// Resource name of the billing setup to remove.  A setup cannot be
+    /// Resource name of the billing setup to remove. A setup cannot be
     /// removed unless it is in a pending state or its scheduled start time is in
     /// the future. The resource name looks like
     /// `customers/{customer_id}/billingSetups/{billing_id}`.
@@ -437,6 +457,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// <summary>Enum of possible cases for the "operation" oneof.</summary>
     public enum OperationOneofCase {
       None = 0,
+      Create = 2,
       Remove = 1,
     }
     private OperationOneofCase operationCase_ = OperationOneofCase.None;
@@ -464,6 +485,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!object.Equals(Create, other.Create)) return false;
       if (Remove != other.Remove) return false;
       if (OperationCase != other.OperationCase) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -472,6 +494,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (operationCase_ == OperationOneofCase.Create) hash ^= Create.GetHashCode();
       if (operationCase_ == OperationOneofCase.Remove) hash ^= Remove.GetHashCode();
       hash ^= (int) operationCase_;
       if (_unknownFields != null) {
@@ -491,6 +514,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
         output.WriteRawTag(10);
         output.WriteString(Remove);
       }
+      if (operationCase_ == OperationOneofCase.Create) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Create);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -499,6 +526,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (operationCase_ == OperationOneofCase.Create) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Create);
+      }
       if (operationCase_ == OperationOneofCase.Remove) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Remove);
       }
@@ -514,6 +544,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return;
       }
       switch (other.OperationCase) {
+        case OperationOneofCase.Create:
+          if (Create == null) {
+            Create = new global::Google.Ads.GoogleAds.V0.Resources.BillingSetup();
+          }
+          Create.MergeFrom(other.Create);
+          break;
         case OperationOneofCase.Remove:
           Remove = other.Remove;
           break;
@@ -532,6 +568,15 @@ namespace Google.Ads.GoogleAds.V0.Services {
             break;
           case 10: {
             Remove = input.ReadString();
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V0.Resources.BillingSetup subBuilder = new global::Google.Ads.GoogleAds.V0.Resources.BillingSetup();
+            if (operationCase_ == OperationOneofCase.Create) {
+              subBuilder.MergeFrom(Create);
+            }
+            input.ReadMessage(subBuilder);
+            Create = subBuilder;
             break;
           }
         }

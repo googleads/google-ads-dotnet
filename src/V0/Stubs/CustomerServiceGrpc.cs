@@ -33,6 +33,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest> __Marshaller_GetCustomerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Resources.Customer> __Marshaller_Customer = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Resources.Customer.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest> __Marshaller_ListAccessibleCustomersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse> __Marshaller_ListAccessibleCustomersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest, global::Google.Ads.GoogleAds.V0.Resources.Customer> __Method_GetCustomer = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest, global::Google.Ads.GoogleAds.V0.Resources.Customer>(
         grpc::MethodType.Unary,
@@ -40,6 +42,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
         "GetCustomer",
         __Marshaller_GetCustomerRequest,
         __Marshaller_Customer);
+
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest, global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse> __Method_ListAccessibleCustomers = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest, global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListAccessibleCustomers",
+        __Marshaller_ListAccessibleCustomersRequest,
+        __Marshaller_ListAccessibleCustomersResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -57,6 +66,18 @@ namespace Google.Ads.GoogleAds.V0.Services {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Resources.Customer> GetCustomer(global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Returns resource names of customers directly accessible by the
+      /// user authenticating the call.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse> ListAccessibleCustomers(global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -130,6 +151,54 @@ namespace Google.Ads.GoogleAds.V0.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetCustomer, null, options, request);
       }
+      /// <summary>
+      /// Returns resource names of customers directly accessible by the
+      /// user authenticating the call.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse ListAccessibleCustomers(global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ListAccessibleCustomers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns resource names of customers directly accessible by the
+      /// user authenticating the call.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse ListAccessibleCustomers(global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListAccessibleCustomers, null, options, request);
+      }
+      /// <summary>
+      /// Returns resource names of customers directly accessible by the
+      /// user authenticating the call.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse> ListAccessibleCustomersAsync(global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return ListAccessibleCustomersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns resource names of customers directly accessible by the
+      /// user authenticating the call.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse> ListAccessibleCustomersAsync(global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListAccessibleCustomers, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override CustomerServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -142,7 +211,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public static grpc::ServerServiceDefinition BindService(CustomerServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetCustomer, serviceImpl.GetCustomer).Build();
+          .AddMethod(__Method_GetCustomer, serviceImpl.GetCustomer)
+          .AddMethod(__Method_ListAccessibleCustomers, serviceImpl.ListAccessibleCustomers).Build();
     }
 
   }

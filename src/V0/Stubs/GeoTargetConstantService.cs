@@ -30,21 +30,50 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "ZXMvZ2VvX3RhcmdldF9jb25zdGFudC5wcm90bxocZ29vZ2xlL2FwaS9hbm5v",
             "dGF0aW9ucy5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3Rv",
             "IjQKG0dldEdlb1RhcmdldENvbnN0YW50UmVxdWVzdBIVCg1yZXNvdXJjZV9u",
-            "YW1lGAEgASgJMtoBChhHZW9UYXJnZXRDb25zdGFudFNlcnZpY2USvQEKFEdl",
-            "dEdlb1RhcmdldENvbnN0YW50Ej0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "c2VydmljZXMuR2V0R2VvVGFyZ2V0Q29uc3RhbnRSZXF1ZXN0GjQuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkdlb1RhcmdldENvbnN0YW50",
-            "IjCC0+STAioSKC92MC97cmVzb3VyY2VfbmFtZT1nZW9UYXJnZXRDb25zdGFu",
-            "dHMvKn1C3QEKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNl",
-            "c0IdR2VvVGFyZ2V0Q29uc3RhbnRTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
-            "L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjAuU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxTZXJ2",
-            "aWNlc2IGcHJvdG8z"));
+            "YW1lGAEgASgJIrMDCiBTdWdnZXN0R2VvVGFyZ2V0Q29uc3RhbnRzUmVxdWVz",
+            "dBIsCgZsb2NhbGUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWUSagoObG9jYXRpb25fbmFtZXMYASABKAsyUC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5zZXJ2aWNlcy5TdWdnZXN0R2VvVGFyZ2V0Q29uc3RhbnRzUmVx",
+            "dWVzdC5Mb2NhdGlvbk5hbWVzSAASZAoLZ2VvX3RhcmdldHMYAiABKAsyTS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5TdWdnZXN0R2VvVGFy",
+            "Z2V0Q29uc3RhbnRzUmVxdWVzdC5HZW9UYXJnZXRzSAAaPAoNTG9jYXRpb25O",
+            "YW1lcxIrCgVuYW1lcxgBIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZRpICgpHZW9UYXJnZXRzEjoKFGdlb190YXJnZXRfY29uc3RhbnRzGAEg",
+            "AygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQgcKBXF1ZXJ5IosB",
+            "CiFTdWdnZXN0R2VvVGFyZ2V0Q29uc3RhbnRzUmVzcG9uc2USZgofZ2VvX3Rh",
+            "cmdldF9jb25zdGFudF9zdWdnZXN0aW9ucxgBIAMoCzI9Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLnNlcnZpY2VzLkdlb1RhcmdldENvbnN0YW50U3VnZ2Vz",
+            "dGlvbiLYAgobR2VvVGFyZ2V0Q29uc3RhbnRTdWdnZXN0aW9uEiwKBmxvY2Fs",
+            "ZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIqCgVyZWFj",
+            "aBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjEKC3NlYXJj",
+            "aF90ZXJtGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElEK",
+            "E2dlb190YXJnZXRfY29uc3RhbnQYBCABKAsyNC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5yZXNvdXJjZXMuR2VvVGFyZ2V0Q29uc3RhbnQSWQobZ2VvX3Rh",
+            "cmdldF9jb25zdGFudF9wYXJlbnRzGAUgAygLMjQuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAucmVzb3VyY2VzLkdlb1RhcmdldENvbnN0YW50MqwDChhHZW9U",
+            "YXJnZXRDb25zdGFudFNlcnZpY2USvQEKFEdldEdlb1RhcmdldENvbnN0YW50",
+            "Ej0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMuR2V0R2VvVGFy",
+            "Z2V0Q29uc3RhbnRSZXF1ZXN0GjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "cmVzb3VyY2VzLkdlb1RhcmdldENvbnN0YW50IjCC0+STAioSKC92MC97cmVz",
+            "b3VyY2VfbmFtZT1nZW9UYXJnZXRDb25zdGFudHMvKn0SzwEKGVN1Z2dlc3RH",
+            "ZW9UYXJnZXRDb25zdGFudHMSQi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5z",
+            "ZXJ2aWNlcy5TdWdnZXN0R2VvVGFyZ2V0Q29uc3RhbnRzUmVxdWVzdBpDLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLlN1Z2dlc3RHZW9UYXJn",
+            "ZXRDb25zdGFudHNSZXNwb25zZSIpgtPkkwIjIh4vdjAvZ2VvVGFyZ2V0Q29u",
+            "c3RhbnRzOnN1Z2dlc3Q6ASpC3QEKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5zZXJ2aWNlc0IdR2VvVGFyZ2V0Q29uc3RhbnRTZXJ2aWNlUHJvdG9Q",
+            "AVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YwL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xl",
+            "LkFkcy5Hb29nbGVBZHMuVjAuU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWMFxTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstantReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetGeoTargetConstantRequest), global::Google.Ads.GoogleAds.V0.Services.GetGeoTargetConstantRequest.Parser, new[]{ "ResourceName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetGeoTargetConstantRequest), global::Google.Ads.GoogleAds.V0.Services.GetGeoTargetConstantRequest.Parser, new[]{ "ResourceName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest), global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Parser, new[]{ "Locale", "LocationNames", "GeoTargets" }, new[]{ "Query" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.LocationNames), global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.LocationNames.Parser, new[]{ "Names" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.GeoTargets), global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.GeoTargets.Parser, new[]{ "GeoTargetConstants" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse), global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse.Parser, new[]{ "GeoTargetConstantSuggestions" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantSuggestion), global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantSuggestion.Parser, new[]{ "Locale", "Reach", "SearchTerm", "GeoTargetConstant", "GeoTargetConstantParents" }, null, null, null)
           }));
     }
     #endregion
@@ -178,6 +207,923 @@ namespace Google.Ads.GoogleAds.V0.Services {
             break;
           case 10: {
             ResourceName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for
+  /// [GeoTargetConstantService.SuggestGeoTargetConstantsRequest][].
+  /// </summary>
+  public sealed partial class SuggestGeoTargetConstantsRequest : pb::IMessage<SuggestGeoTargetConstantsRequest> {
+    private static readonly pb::MessageParser<SuggestGeoTargetConstantsRequest> _parser = new pb::MessageParser<SuggestGeoTargetConstantsRequest>(() => new SuggestGeoTargetConstantsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SuggestGeoTargetConstantsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantServiceReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestGeoTargetConstantsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestGeoTargetConstantsRequest(SuggestGeoTargetConstantsRequest other) : this() {
+      Locale = other.Locale;
+      switch (other.QueryCase) {
+        case QueryOneofCase.LocationNames:
+          LocationNames = other.LocationNames.Clone();
+          break;
+        case QueryOneofCase.GeoTargets:
+          GeoTargets = other.GeoTargets.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestGeoTargetConstantsRequest Clone() {
+      return new SuggestGeoTargetConstantsRequest(this);
+    }
+
+    /// <summary>Field number for the "locale" field.</summary>
+    public const int LocaleFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_locale_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string locale_;
+    /// <summary>
+    /// If possible, returned geo targets are translated using this locale. If not,
+    /// en is used by default. This is also used as a hint for returned geo
+    /// targets.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Locale {
+      get { return locale_; }
+      set {
+        locale_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "location_names" field.</summary>
+    public const int LocationNamesFieldNumber = 1;
+    /// <summary>
+    /// The location names to search by. At most 25 names can be set.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.LocationNames LocationNames {
+      get { return queryCase_ == QueryOneofCase.LocationNames ? (global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.LocationNames) query_ : null; }
+      set {
+        query_ = value;
+        queryCase_ = value == null ? QueryOneofCase.None : QueryOneofCase.LocationNames;
+      }
+    }
+
+    /// <summary>Field number for the "geo_targets" field.</summary>
+    public const int GeoTargetsFieldNumber = 2;
+    /// <summary>
+    /// The geo target constant resource names to filter by.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.GeoTargets GeoTargets {
+      get { return queryCase_ == QueryOneofCase.GeoTargets ? (global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.GeoTargets) query_ : null; }
+      set {
+        query_ = value;
+        queryCase_ = value == null ? QueryOneofCase.None : QueryOneofCase.GeoTargets;
+      }
+    }
+
+    private object query_;
+    /// <summary>Enum of possible cases for the "query" oneof.</summary>
+    public enum QueryOneofCase {
+      None = 0,
+      LocationNames = 1,
+      GeoTargets = 2,
+    }
+    private QueryOneofCase queryCase_ = QueryOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public QueryOneofCase QueryCase {
+      get { return queryCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearQuery() {
+      queryCase_ = QueryOneofCase.None;
+      query_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SuggestGeoTargetConstantsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SuggestGeoTargetConstantsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Locale != other.Locale) return false;
+      if (!object.Equals(LocationNames, other.LocationNames)) return false;
+      if (!object.Equals(GeoTargets, other.GeoTargets)) return false;
+      if (QueryCase != other.QueryCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (locale_ != null) hash ^= Locale.GetHashCode();
+      if (queryCase_ == QueryOneofCase.LocationNames) hash ^= LocationNames.GetHashCode();
+      if (queryCase_ == QueryOneofCase.GeoTargets) hash ^= GeoTargets.GetHashCode();
+      hash ^= (int) queryCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (queryCase_ == QueryOneofCase.LocationNames) {
+        output.WriteRawTag(10);
+        output.WriteMessage(LocationNames);
+      }
+      if (queryCase_ == QueryOneofCase.GeoTargets) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GeoTargets);
+      }
+      if (locale_ != null) {
+        _single_locale_codec.WriteTagAndValue(output, Locale);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (locale_ != null) {
+        size += _single_locale_codec.CalculateSizeWithTag(Locale);
+      }
+      if (queryCase_ == QueryOneofCase.LocationNames) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocationNames);
+      }
+      if (queryCase_ == QueryOneofCase.GeoTargets) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GeoTargets);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SuggestGeoTargetConstantsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.locale_ != null) {
+        if (locale_ == null || other.Locale != "") {
+          Locale = other.Locale;
+        }
+      }
+      switch (other.QueryCase) {
+        case QueryOneofCase.LocationNames:
+          if (LocationNames == null) {
+            LocationNames = new global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.LocationNames();
+          }
+          LocationNames.MergeFrom(other.LocationNames);
+          break;
+        case QueryOneofCase.GeoTargets:
+          if (GeoTargets == null) {
+            GeoTargets = new global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.GeoTargets();
+          }
+          GeoTargets.MergeFrom(other.GeoTargets);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.LocationNames subBuilder = new global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.LocationNames();
+            if (queryCase_ == QueryOneofCase.LocationNames) {
+              subBuilder.MergeFrom(LocationNames);
+            }
+            input.ReadMessage(subBuilder);
+            LocationNames = subBuilder;
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.GeoTargets subBuilder = new global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Types.GeoTargets();
+            if (queryCase_ == QueryOneofCase.GeoTargets) {
+              subBuilder.MergeFrom(GeoTargets);
+            }
+            input.ReadMessage(subBuilder);
+            GeoTargets = subBuilder;
+            break;
+          }
+          case 26: {
+            string value = _single_locale_codec.Read(input);
+            if (locale_ == null || value != "") {
+              Locale = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the SuggestGeoTargetConstantsRequest message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      /// <summary>
+      /// A list of location names.
+      /// </summary>
+      public sealed partial class LocationNames : pb::IMessage<LocationNames> {
+        private static readonly pb::MessageParser<LocationNames> _parser = new pb::MessageParser<LocationNames>(() => new LocationNames());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<LocationNames> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public LocationNames() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public LocationNames(LocationNames other) : this() {
+          names_ = other.names_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public LocationNames Clone() {
+          return new LocationNames(this);
+        }
+
+        /// <summary>Field number for the "names" field.</summary>
+        public const int NamesFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _repeated_names_codec
+            = pb::FieldCodec.ForClassWrapper<string>(10);
+        private readonly pbc::RepeatedField<string> names_ = new pbc::RepeatedField<string>();
+        /// <summary>
+        /// A list of location names.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<string> Names {
+          get { return names_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as LocationNames);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(LocationNames other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!names_.Equals(other.names_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= names_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          names_.WriteTo(output, _repeated_names_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += names_.CalculateSize(_repeated_names_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(LocationNames other) {
+          if (other == null) {
+            return;
+          }
+          names_.Add(other.names_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                names_.AddEntriesFrom(input, _repeated_names_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// A list of geo target constant resource names.
+      /// </summary>
+      public sealed partial class GeoTargets : pb::IMessage<GeoTargets> {
+        private static readonly pb::MessageParser<GeoTargets> _parser = new pb::MessageParser<GeoTargets>(() => new GeoTargets());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<GeoTargets> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public GeoTargets() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public GeoTargets(GeoTargets other) : this() {
+          geoTargetConstants_ = other.geoTargetConstants_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public GeoTargets Clone() {
+          return new GeoTargets(this);
+        }
+
+        /// <summary>Field number for the "geo_target_constants" field.</summary>
+        public const int GeoTargetConstantsFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _repeated_geoTargetConstants_codec
+            = pb::FieldCodec.ForClassWrapper<string>(10);
+        private readonly pbc::RepeatedField<string> geoTargetConstants_ = new pbc::RepeatedField<string>();
+        /// <summary>
+        /// A list of geo target constant resource names.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<string> GeoTargetConstants {
+          get { return geoTargetConstants_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as GeoTargets);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(GeoTargets other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!geoTargetConstants_.Equals(other.geoTargetConstants_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= geoTargetConstants_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          geoTargetConstants_.WriteTo(output, _repeated_geoTargetConstants_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += geoTargetConstants_.CalculateSize(_repeated_geoTargetConstants_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(GeoTargets other) {
+          if (other == null) {
+            return;
+          }
+          geoTargetConstants_.Add(other.geoTargetConstants_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                geoTargetConstants_.AddEntriesFrom(input, _repeated_geoTargetConstants_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
+
+  }
+
+  /// <summary>
+  /// Response message for [GeoTargetConstantService.SuggestGeoTargetConstants][google.ads.googleads.v0.services.GeoTargetConstantService.SuggestGeoTargetConstants]
+  /// </summary>
+  public sealed partial class SuggestGeoTargetConstantsResponse : pb::IMessage<SuggestGeoTargetConstantsResponse> {
+    private static readonly pb::MessageParser<SuggestGeoTargetConstantsResponse> _parser = new pb::MessageParser<SuggestGeoTargetConstantsResponse>(() => new SuggestGeoTargetConstantsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SuggestGeoTargetConstantsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantServiceReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestGeoTargetConstantsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestGeoTargetConstantsResponse(SuggestGeoTargetConstantsResponse other) : this() {
+      geoTargetConstantSuggestions_ = other.geoTargetConstantSuggestions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestGeoTargetConstantsResponse Clone() {
+      return new SuggestGeoTargetConstantsResponse(this);
+    }
+
+    /// <summary>Field number for the "geo_target_constant_suggestions" field.</summary>
+    public const int GeoTargetConstantSuggestionsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantSuggestion> _repeated_geoTargetConstantSuggestions_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantSuggestion.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantSuggestion> geoTargetConstantSuggestions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantSuggestion>();
+    /// <summary>
+    /// Geo target constant suggestions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantSuggestion> GeoTargetConstantSuggestions {
+      get { return geoTargetConstantSuggestions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SuggestGeoTargetConstantsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SuggestGeoTargetConstantsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!geoTargetConstantSuggestions_.Equals(other.geoTargetConstantSuggestions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= geoTargetConstantSuggestions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      geoTargetConstantSuggestions_.WriteTo(output, _repeated_geoTargetConstantSuggestions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += geoTargetConstantSuggestions_.CalculateSize(_repeated_geoTargetConstantSuggestions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SuggestGeoTargetConstantsResponse other) {
+      if (other == null) {
+        return;
+      }
+      geoTargetConstantSuggestions_.Add(other.geoTargetConstantSuggestions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            geoTargetConstantSuggestions_.AddEntriesFrom(input, _repeated_geoTargetConstantSuggestions_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A geo target constant suggestion.
+  /// </summary>
+  public sealed partial class GeoTargetConstantSuggestion : pb::IMessage<GeoTargetConstantSuggestion> {
+    private static readonly pb::MessageParser<GeoTargetConstantSuggestion> _parser = new pb::MessageParser<GeoTargetConstantSuggestion>(() => new GeoTargetConstantSuggestion());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GeoTargetConstantSuggestion> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.GeoTargetConstantServiceReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GeoTargetConstantSuggestion() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GeoTargetConstantSuggestion(GeoTargetConstantSuggestion other) : this() {
+      Locale = other.Locale;
+      Reach = other.Reach;
+      SearchTerm = other.SearchTerm;
+      geoTargetConstant_ = other.geoTargetConstant_ != null ? other.geoTargetConstant_.Clone() : null;
+      geoTargetConstantParents_ = other.geoTargetConstantParents_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GeoTargetConstantSuggestion Clone() {
+      return new GeoTargetConstantSuggestion(this);
+    }
+
+    /// <summary>Field number for the "locale" field.</summary>
+    public const int LocaleFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_locale_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string locale_;
+    /// <summary>
+    /// The language this GeoTargetConstantSuggestion is currently translated to.
+    /// It affects the name of geo target fields. For example, if locale=en, then
+    /// name=Spain. If locale=es, then name=España. The default locale will be
+    /// returned if no translation exists for the locale in the request.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Locale {
+      get { return locale_; }
+      set {
+        locale_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "reach" field.</summary>
+    public const int ReachFieldNumber = 2;
+    private static readonly pb::FieldCodec<long?> _single_reach_codec = pb::FieldCodec.ForStructWrapper<long>(18);
+    private long? reach_;
+    /// <summary>
+    /// Approximate user population that will be targeted, rounded to the
+    /// nearest 100.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? Reach {
+      get { return reach_; }
+      set {
+        reach_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "search_term" field.</summary>
+    public const int SearchTermFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_searchTerm_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string searchTerm_;
+    /// <summary>
+    /// If the request searched by location name, this is the location name that
+    /// matched the geo target.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SearchTerm {
+      get { return searchTerm_; }
+      set {
+        searchTerm_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "geo_target_constant" field.</summary>
+    public const int GeoTargetConstantFieldNumber = 4;
+    private global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant geoTargetConstant_;
+    /// <summary>
+    /// The GeoTargetConstant result.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant GeoTargetConstant {
+      get { return geoTargetConstant_; }
+      set {
+        geoTargetConstant_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "geo_target_constant_parents" field.</summary>
+    public const int GeoTargetConstantParentsFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant> _repeated_geoTargetConstantParents_codec
+        = pb::FieldCodec.ForMessage(42, global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant> geoTargetConstantParents_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant>();
+    /// <summary>
+    /// The list of parents of the geo target constant.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant> GeoTargetConstantParents {
+      get { return geoTargetConstantParents_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GeoTargetConstantSuggestion);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GeoTargetConstantSuggestion other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Locale != other.Locale) return false;
+      if (Reach != other.Reach) return false;
+      if (SearchTerm != other.SearchTerm) return false;
+      if (!object.Equals(GeoTargetConstant, other.GeoTargetConstant)) return false;
+      if(!geoTargetConstantParents_.Equals(other.geoTargetConstantParents_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (locale_ != null) hash ^= Locale.GetHashCode();
+      if (reach_ != null) hash ^= Reach.GetHashCode();
+      if (searchTerm_ != null) hash ^= SearchTerm.GetHashCode();
+      if (geoTargetConstant_ != null) hash ^= GeoTargetConstant.GetHashCode();
+      hash ^= geoTargetConstantParents_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (locale_ != null) {
+        _single_locale_codec.WriteTagAndValue(output, Locale);
+      }
+      if (reach_ != null) {
+        _single_reach_codec.WriteTagAndValue(output, Reach);
+      }
+      if (searchTerm_ != null) {
+        _single_searchTerm_codec.WriteTagAndValue(output, SearchTerm);
+      }
+      if (geoTargetConstant_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(GeoTargetConstant);
+      }
+      geoTargetConstantParents_.WriteTo(output, _repeated_geoTargetConstantParents_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (locale_ != null) {
+        size += _single_locale_codec.CalculateSizeWithTag(Locale);
+      }
+      if (reach_ != null) {
+        size += _single_reach_codec.CalculateSizeWithTag(Reach);
+      }
+      if (searchTerm_ != null) {
+        size += _single_searchTerm_codec.CalculateSizeWithTag(SearchTerm);
+      }
+      if (geoTargetConstant_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GeoTargetConstant);
+      }
+      size += geoTargetConstantParents_.CalculateSize(_repeated_geoTargetConstantParents_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GeoTargetConstantSuggestion other) {
+      if (other == null) {
+        return;
+      }
+      if (other.locale_ != null) {
+        if (locale_ == null || other.Locale != "") {
+          Locale = other.Locale;
+        }
+      }
+      if (other.reach_ != null) {
+        if (reach_ == null || other.Reach != 0L) {
+          Reach = other.Reach;
+        }
+      }
+      if (other.searchTerm_ != null) {
+        if (searchTerm_ == null || other.SearchTerm != "") {
+          SearchTerm = other.SearchTerm;
+        }
+      }
+      if (other.geoTargetConstant_ != null) {
+        if (geoTargetConstant_ == null) {
+          geoTargetConstant_ = new global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant();
+        }
+        GeoTargetConstant.MergeFrom(other.GeoTargetConstant);
+      }
+      geoTargetConstantParents_.Add(other.geoTargetConstantParents_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_locale_codec.Read(input);
+            if (locale_ == null || value != "") {
+              Locale = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_reach_codec.Read(input);
+            if (reach_ == null || value != 0L) {
+              Reach = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_searchTerm_codec.Read(input);
+            if (searchTerm_ == null || value != "") {
+              SearchTerm = value;
+            }
+            break;
+          }
+          case 34: {
+            if (geoTargetConstant_ == null) {
+              geoTargetConstant_ = new global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant();
+            }
+            input.ReadMessage(geoTargetConstant_);
+            break;
+          }
+          case 42: {
+            geoTargetConstantParents_.AddEntriesFrom(input, _repeated_geoTargetConstantParents_codec);
             break;
           }
         }

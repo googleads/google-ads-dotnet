@@ -27,27 +27,36 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYmlsbGluZ19z",
             "ZXR1cC5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2Vz",
             "Gjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9iaWxsaW5nX3NldHVw",
-            "X3N0YXR1cy5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3Rv",
-            "It0DCgxCaWxsaW5nU2V0dXASFQoNcmVzb3VyY2VfbmFtZRgBIAEoCRInCgJp",
-            "ZBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlElgKBnN0YXR1",
-            "cxgDIAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkJpbGxp",
-            "bmdTZXR1cFN0YXR1c0VudW0uQmlsbGluZ1NldHVwU3RhdHVzEjkKE3BheW1l",
-            "bnRzX2FjY291bnRfaWQYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUSOwoVcGF5bWVudHNfYWNjb3VudF9uYW1lGAUgASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEjkKE3BheW1lbnRzX3Byb2ZpbGVfaWQY",
-            "BiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSOwoVcGF5bWVu",
-            "dHNfcHJvZmlsZV9uYW1lGAcgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEkMKHXNlY29uZGFyeV9wYXltZW50c19wcm9maWxlX2lkGAggASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQtYBCiVjb20uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhFCaWxsaW5nU2V0dXBQcm90",
-            "b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fk",
-            "cy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
+            "X3N0YXR1cy5wcm90bxotZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMv",
+            "dGltZV90eXBlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJv",
+            "dG8iqQYKDEJpbGxpbmdTZXR1cBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEicK",
+            "AmlkGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSWAoGc3Rh",
+            "dHVzGAMgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQmls",
+            "bGluZ1NldHVwU3RhdHVzRW51bS5CaWxsaW5nU2V0dXBTdGF0dXMSNgoQcGF5",
+            "bWVudHNfYWNjb3VudBgLIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZRJiChVwYXltZW50c19hY2NvdW50X2luZm8YDCABKAsyQy5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQmlsbGluZ1NldHVwLlBheW1l",
+            "bnRzQWNjb3VudEluZm8SNwoPc3RhcnRfZGF0ZV90aW1lGAkgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlSAASTwoPc3RhcnRfdGltZV90eXBl",
+            "GAogASgOMjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuVGltZVR5",
+            "cGVFbnVtLlRpbWVUeXBlSAAaygIKE1BheW1lbnRzQWNjb3VudEluZm8SOQoT",
+            "cGF5bWVudHNfYWNjb3VudF9pZBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRI7ChVwYXltZW50c19hY2NvdW50X25hbWUYAiABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSOQoTcGF5bWVudHNfcHJvZmls",
+            "ZV9pZBgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI7ChVw",
+            "YXltZW50c19wcm9maWxlX25hbWUYBCABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "U3RyaW5nVmFsdWUSQwodc2Vjb25kYXJ5X3BheW1lbnRzX3Byb2ZpbGVfaWQY",
+            "BSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCDAoKc3RhcnRf",
+            "dGltZULWAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNl",
+            "c0IRQmlsbGluZ1NldHVwUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlczty",
+            "ZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNv",
+            "dXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.BillingSetupStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.BillingSetupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TimeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.BillingSetup), global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Parser, new[]{ "ResourceName", "Id", "Status", "PaymentsAccountId", "PaymentsAccountName", "PaymentsProfileId", "PaymentsProfileName", "SecondaryPaymentsProfileId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.BillingSetup), global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Parser, new[]{ "ResourceName", "Id", "Status", "PaymentsAccount", "PaymentsAccountInfo", "StartDateTime", "StartTimeType" }, new[]{ "StartTime" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo), global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo.Parser, new[]{ "PaymentsAccountId", "PaymentsAccountName", "PaymentsProfileId", "PaymentsProfileName", "SecondaryPaymentsProfileId" }, null, null, null)})
           }));
     }
     #endregion
@@ -87,11 +96,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       resourceName_ = other.resourceName_;
       Id = other.Id;
       status_ = other.status_;
-      PaymentsAccountId = other.PaymentsAccountId;
-      PaymentsAccountName = other.PaymentsAccountName;
-      PaymentsProfileId = other.PaymentsProfileId;
-      PaymentsProfileName = other.PaymentsProfileName;
-      SecondaryPaymentsProfileId = other.SecondaryPaymentsProfileId;
+      PaymentsAccount = other.PaymentsAccount;
+      paymentsAccountInfo_ = other.paymentsAccountInfo_ != null ? other.paymentsAccountInfo_.Clone() : null;
+      switch (other.StartTimeCase) {
+        case StartTimeOneofCase.StartDateTime:
+          StartDateTime = other.StartDateTime;
+          break;
+        case StartTimeOneofCase.StartTimeType:
+          StartTimeType = other.StartTimeType;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -146,91 +161,94 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
-    /// <summary>Field number for the "payments_account_id" field.</summary>
-    public const int PaymentsAccountIdFieldNumber = 4;
-    private static readonly pb::FieldCodec<string> _single_paymentsAccountId_codec = pb::FieldCodec.ForClassWrapper<string>(34);
-    private string paymentsAccountId_;
+    /// <summary>Field number for the "payments_account" field.</summary>
+    public const int PaymentsAccountFieldNumber = 11;
+    private static readonly pb::FieldCodec<string> _single_paymentsAccount_codec = pb::FieldCodec.ForClassWrapper<string>(90);
+    private string paymentsAccount_;
     /// <summary>
-    /// A 16 digit id used to identify the Payments account associated with the
-    /// billing setup.
+    /// The resource name of the Payments account associated with this billing
+    /// setup. Payments resource names have the form:
     ///
-    /// This must be passed as a string with dashes, e.g. "1234-5678-9012-3456".
+    /// `customers/{customer_id}/paymentsAccounts/
+    ///                       {payments_profile_id}_{payments_account_id}`
+    /// When setting up billing, this is used to signup with an existing Payments
+    /// account (and then payments_account_info should not be set).
+    /// When getting a billing setup, this and payments_account_info will be
+    /// populated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PaymentsAccountId {
-      get { return paymentsAccountId_; }
+    public string PaymentsAccount {
+      get { return paymentsAccount_; }
       set {
-        paymentsAccountId_ = value;
+        paymentsAccount_ = value;
       }
     }
 
-    /// <summary>Field number for the "payments_account_name" field.</summary>
-    public const int PaymentsAccountNameFieldNumber = 5;
-    private static readonly pb::FieldCodec<string> _single_paymentsAccountName_codec = pb::FieldCodec.ForClassWrapper<string>(42);
-    private string paymentsAccountName_;
+    /// <summary>Field number for the "payments_account_info" field.</summary>
+    public const int PaymentsAccountInfoFieldNumber = 12;
+    private global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo paymentsAccountInfo_;
     /// <summary>
-    /// The name of the Payments account associated with the billing setup.
-    ///
-    /// This enables the user to specify a meaningful name for a Payments account
-    /// to aid in reconciling monthly invoices.
-    ///
-    /// This name will be printed in the monthly invoices.
+    /// The Payments account information associated with this billing setup.
+    /// When setting up billing, this is used to signup with a new Payments account
+    /// (and then payments_account should not be set).
+    /// When getting a billing setup, this and payments_account will be
+    /// populated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PaymentsAccountName {
-      get { return paymentsAccountName_; }
+    public global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo PaymentsAccountInfo {
+      get { return paymentsAccountInfo_; }
       set {
-        paymentsAccountName_ = value;
+        paymentsAccountInfo_ = value;
       }
     }
 
-    /// <summary>Field number for the "payments_profile_id" field.</summary>
-    public const int PaymentsProfileIdFieldNumber = 6;
-    private static readonly pb::FieldCodec<string> _single_paymentsProfileId_codec = pb::FieldCodec.ForClassWrapper<string>(50);
-    private string paymentsProfileId_;
+    /// <summary>Field number for the "start_date_time" field.</summary>
+    public const int StartDateTimeFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _oneof_startDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(74);
     /// <summary>
-    /// A 12 digit id used to identify the Payments profile associated with the
-    /// billing setup.
-    ///
-    /// This must be passed in as a string with dashes, e.g. "1234-5678-9012".
+    /// The start date time in yyyy-MM-dd or yyyy-MM-dd HH:mm:ss format. Only a
+    /// future time is allowed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PaymentsProfileId {
-      get { return paymentsProfileId_; }
+    public string StartDateTime {
+      get { return startTimeCase_ == StartTimeOneofCase.StartDateTime ? (string) startTime_ : (string) null; }
       set {
-        paymentsProfileId_ = value;
+        startTime_ = value;
+        startTimeCase_ = value == null ? StartTimeOneofCase.None : StartTimeOneofCase.StartDateTime;
       }
     }
 
-    /// <summary>Field number for the "payments_profile_name" field.</summary>
-    public const int PaymentsProfileNameFieldNumber = 7;
-    private static readonly pb::FieldCodec<string> _single_paymentsProfileName_codec = pb::FieldCodec.ForClassWrapper<string>(58);
-    private string paymentsProfileName_;
+    /// <summary>Field number for the "start_time_type" field.</summary>
+    public const int StartTimeTypeFieldNumber = 10;
     /// <summary>
-    /// The name of the Payments profile associated with the billing setup.
+    /// The start time as a type. Only NOW is allowed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PaymentsProfileName {
-      get { return paymentsProfileName_; }
+    public global::Google.Ads.GoogleAds.V0.Enums.TimeTypeEnum.Types.TimeType StartTimeType {
+      get { return startTimeCase_ == StartTimeOneofCase.StartTimeType ? (global::Google.Ads.GoogleAds.V0.Enums.TimeTypeEnum.Types.TimeType) startTime_ : 0; }
       set {
-        paymentsProfileName_ = value;
+        startTime_ = value;
+        startTimeCase_ = StartTimeOneofCase.StartTimeType;
       }
     }
 
-    /// <summary>Field number for the "secondary_payments_profile_id" field.</summary>
-    public const int SecondaryPaymentsProfileIdFieldNumber = 8;
-    private static readonly pb::FieldCodec<string> _single_secondaryPaymentsProfileId_codec = pb::FieldCodec.ForClassWrapper<string>(66);
-    private string secondaryPaymentsProfileId_;
-    /// <summary>
-    /// A secondary payments profile id present in uncommon situations, e.g.
-    /// when a sequential liability agreement has been arranged.
-    /// </summary>
+    private object startTime_;
+    /// <summary>Enum of possible cases for the "start_time" oneof.</summary>
+    public enum StartTimeOneofCase {
+      None = 0,
+      StartDateTime = 9,
+      StartTimeType = 10,
+    }
+    private StartTimeOneofCase startTimeCase_ = StartTimeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string SecondaryPaymentsProfileId {
-      get { return secondaryPaymentsProfileId_; }
-      set {
-        secondaryPaymentsProfileId_ = value;
-      }
+    public StartTimeOneofCase StartTimeCase {
+      get { return startTimeCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearStartTime() {
+      startTimeCase_ = StartTimeOneofCase.None;
+      startTime_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -249,11 +267,11 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (ResourceName != other.ResourceName) return false;
       if (Id != other.Id) return false;
       if (Status != other.Status) return false;
-      if (PaymentsAccountId != other.PaymentsAccountId) return false;
-      if (PaymentsAccountName != other.PaymentsAccountName) return false;
-      if (PaymentsProfileId != other.PaymentsProfileId) return false;
-      if (PaymentsProfileName != other.PaymentsProfileName) return false;
-      if (SecondaryPaymentsProfileId != other.SecondaryPaymentsProfileId) return false;
+      if (PaymentsAccount != other.PaymentsAccount) return false;
+      if (!object.Equals(PaymentsAccountInfo, other.PaymentsAccountInfo)) return false;
+      if (StartDateTime != other.StartDateTime) return false;
+      if (StartTimeType != other.StartTimeType) return false;
+      if (StartTimeCase != other.StartTimeCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -263,11 +281,11 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
-      if (paymentsAccountId_ != null) hash ^= PaymentsAccountId.GetHashCode();
-      if (paymentsAccountName_ != null) hash ^= PaymentsAccountName.GetHashCode();
-      if (paymentsProfileId_ != null) hash ^= PaymentsProfileId.GetHashCode();
-      if (paymentsProfileName_ != null) hash ^= PaymentsProfileName.GetHashCode();
-      if (secondaryPaymentsProfileId_ != null) hash ^= SecondaryPaymentsProfileId.GetHashCode();
+      if (paymentsAccount_ != null) hash ^= PaymentsAccount.GetHashCode();
+      if (paymentsAccountInfo_ != null) hash ^= PaymentsAccountInfo.GetHashCode();
+      if (startTimeCase_ == StartTimeOneofCase.StartDateTime) hash ^= StartDateTime.GetHashCode();
+      if (startTimeCase_ == StartTimeOneofCase.StartTimeType) hash ^= StartTimeType.GetHashCode();
+      hash ^= (int) startTimeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -292,20 +310,19 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(24);
         output.WriteEnum((int) Status);
       }
-      if (paymentsAccountId_ != null) {
-        _single_paymentsAccountId_codec.WriteTagAndValue(output, PaymentsAccountId);
+      if (startTimeCase_ == StartTimeOneofCase.StartDateTime) {
+        _oneof_startDateTime_codec.WriteTagAndValue(output, (string) startTime_);
       }
-      if (paymentsAccountName_ != null) {
-        _single_paymentsAccountName_codec.WriteTagAndValue(output, PaymentsAccountName);
+      if (startTimeCase_ == StartTimeOneofCase.StartTimeType) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) StartTimeType);
       }
-      if (paymentsProfileId_ != null) {
-        _single_paymentsProfileId_codec.WriteTagAndValue(output, PaymentsProfileId);
+      if (paymentsAccount_ != null) {
+        _single_paymentsAccount_codec.WriteTagAndValue(output, PaymentsAccount);
       }
-      if (paymentsProfileName_ != null) {
-        _single_paymentsProfileName_codec.WriteTagAndValue(output, PaymentsProfileName);
-      }
-      if (secondaryPaymentsProfileId_ != null) {
-        _single_secondaryPaymentsProfileId_codec.WriteTagAndValue(output, SecondaryPaymentsProfileId);
+      if (paymentsAccountInfo_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(PaymentsAccountInfo);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -324,20 +341,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (Status != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
-      if (paymentsAccountId_ != null) {
-        size += _single_paymentsAccountId_codec.CalculateSizeWithTag(PaymentsAccountId);
+      if (paymentsAccount_ != null) {
+        size += _single_paymentsAccount_codec.CalculateSizeWithTag(PaymentsAccount);
       }
-      if (paymentsAccountName_ != null) {
-        size += _single_paymentsAccountName_codec.CalculateSizeWithTag(PaymentsAccountName);
+      if (paymentsAccountInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PaymentsAccountInfo);
       }
-      if (paymentsProfileId_ != null) {
-        size += _single_paymentsProfileId_codec.CalculateSizeWithTag(PaymentsProfileId);
+      if (startTimeCase_ == StartTimeOneofCase.StartDateTime) {
+        size += _oneof_startDateTime_codec.CalculateSizeWithTag(StartDateTime);
       }
-      if (paymentsProfileName_ != null) {
-        size += _single_paymentsProfileName_codec.CalculateSizeWithTag(PaymentsProfileName);
-      }
-      if (secondaryPaymentsProfileId_ != null) {
-        size += _single_secondaryPaymentsProfileId_codec.CalculateSizeWithTag(SecondaryPaymentsProfileId);
+      if (startTimeCase_ == StartTimeOneofCase.StartTimeType) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StartTimeType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -361,31 +375,26 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (other.Status != 0) {
         Status = other.Status;
       }
-      if (other.paymentsAccountId_ != null) {
-        if (paymentsAccountId_ == null || other.PaymentsAccountId != "") {
-          PaymentsAccountId = other.PaymentsAccountId;
+      if (other.paymentsAccount_ != null) {
+        if (paymentsAccount_ == null || other.PaymentsAccount != "") {
+          PaymentsAccount = other.PaymentsAccount;
         }
       }
-      if (other.paymentsAccountName_ != null) {
-        if (paymentsAccountName_ == null || other.PaymentsAccountName != "") {
-          PaymentsAccountName = other.PaymentsAccountName;
+      if (other.paymentsAccountInfo_ != null) {
+        if (paymentsAccountInfo_ == null) {
+          paymentsAccountInfo_ = new global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo();
         }
+        PaymentsAccountInfo.MergeFrom(other.PaymentsAccountInfo);
       }
-      if (other.paymentsProfileId_ != null) {
-        if (paymentsProfileId_ == null || other.PaymentsProfileId != "") {
-          PaymentsProfileId = other.PaymentsProfileId;
-        }
+      switch (other.StartTimeCase) {
+        case StartTimeOneofCase.StartDateTime:
+          StartDateTime = other.StartDateTime;
+          break;
+        case StartTimeOneofCase.StartTimeType:
+          StartTimeType = other.StartTimeType;
+          break;
       }
-      if (other.paymentsProfileName_ != null) {
-        if (paymentsProfileName_ == null || other.PaymentsProfileName != "") {
-          PaymentsProfileName = other.PaymentsProfileName;
-        }
-      }
-      if (other.secondaryPaymentsProfileId_ != null) {
-        if (secondaryPaymentsProfileId_ == null || other.SecondaryPaymentsProfileId != "") {
-          SecondaryPaymentsProfileId = other.SecondaryPaymentsProfileId;
-        }
-      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -412,44 +421,335 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             status_ = (global::Google.Ads.GoogleAds.V0.Enums.BillingSetupStatusEnum.Types.BillingSetupStatus) input.ReadEnum();
             break;
           }
-          case 34: {
-            string value = _single_paymentsAccountId_codec.Read(input);
-            if (paymentsAccountId_ == null || value != "") {
-              PaymentsAccountId = value;
+          case 74: {
+            StartDateTime = _oneof_startDateTime_codec.Read(input);
+            break;
+          }
+          case 80: {
+            startTime_ = input.ReadEnum();
+            startTimeCase_ = StartTimeOneofCase.StartTimeType;
+            break;
+          }
+          case 90: {
+            string value = _single_paymentsAccount_codec.Read(input);
+            if (paymentsAccount_ == null || value != "") {
+              PaymentsAccount = value;
             }
             break;
           }
-          case 42: {
-            string value = _single_paymentsAccountName_codec.Read(input);
-            if (paymentsAccountName_ == null || value != "") {
-              PaymentsAccountName = value;
+          case 98: {
+            if (paymentsAccountInfo_ == null) {
+              paymentsAccountInfo_ = new global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo();
             }
-            break;
-          }
-          case 50: {
-            string value = _single_paymentsProfileId_codec.Read(input);
-            if (paymentsProfileId_ == null || value != "") {
-              PaymentsProfileId = value;
-            }
-            break;
-          }
-          case 58: {
-            string value = _single_paymentsProfileName_codec.Read(input);
-            if (paymentsProfileName_ == null || value != "") {
-              PaymentsProfileName = value;
-            }
-            break;
-          }
-          case 66: {
-            string value = _single_secondaryPaymentsProfileId_codec.Read(input);
-            if (secondaryPaymentsProfileId_ == null || value != "") {
-              SecondaryPaymentsProfileId = value;
-            }
+            input.ReadMessage(paymentsAccountInfo_);
             break;
           }
         }
       }
     }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the BillingSetup message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      /// <summary>
+      /// Container of Payments account information for this billing.
+      /// </summary>
+      public sealed partial class PaymentsAccountInfo : pb::IMessage<PaymentsAccountInfo> {
+        private static readonly pb::MessageParser<PaymentsAccountInfo> _parser = new pb::MessageParser<PaymentsAccountInfo>(() => new PaymentsAccountInfo());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<PaymentsAccountInfo> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public PaymentsAccountInfo() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public PaymentsAccountInfo(PaymentsAccountInfo other) : this() {
+          PaymentsAccountId = other.PaymentsAccountId;
+          PaymentsAccountName = other.PaymentsAccountName;
+          PaymentsProfileId = other.PaymentsProfileId;
+          PaymentsProfileName = other.PaymentsProfileName;
+          SecondaryPaymentsProfileId = other.SecondaryPaymentsProfileId;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public PaymentsAccountInfo Clone() {
+          return new PaymentsAccountInfo(this);
+        }
+
+        /// <summary>Field number for the "payments_account_id" field.</summary>
+        public const int PaymentsAccountIdFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _single_paymentsAccountId_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+        private string paymentsAccountId_;
+        /// <summary>
+        /// A 16 digit id used to identify the Payments account associated with the
+        /// billing setup.
+        ///
+        /// This must be passed as a string with dashes, e.g. "1234-5678-9012-3456".
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string PaymentsAccountId {
+          get { return paymentsAccountId_; }
+          set {
+            paymentsAccountId_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "payments_account_name" field.</summary>
+        public const int PaymentsAccountNameFieldNumber = 2;
+        private static readonly pb::FieldCodec<string> _single_paymentsAccountName_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+        private string paymentsAccountName_;
+        /// <summary>
+        /// The name of the Payments account associated with the billing setup.
+        ///
+        /// This enables the user to specify a meaningful name for a Payments account
+        /// to aid in reconciling monthly invoices.
+        ///
+        /// This name will be printed in the monthly invoices.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string PaymentsAccountName {
+          get { return paymentsAccountName_; }
+          set {
+            paymentsAccountName_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "payments_profile_id" field.</summary>
+        public const int PaymentsProfileIdFieldNumber = 3;
+        private static readonly pb::FieldCodec<string> _single_paymentsProfileId_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+        private string paymentsProfileId_;
+        /// <summary>
+        /// A 12 digit id used to identify the Payments profile associated with the
+        /// billing setup.
+        ///
+        /// This must be passed in as a string with dashes, e.g. "1234-5678-9012".
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string PaymentsProfileId {
+          get { return paymentsProfileId_; }
+          set {
+            paymentsProfileId_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "payments_profile_name" field.</summary>
+        public const int PaymentsProfileNameFieldNumber = 4;
+        private static readonly pb::FieldCodec<string> _single_paymentsProfileName_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+        private string paymentsProfileName_;
+        /// <summary>
+        /// The name of the Payments profile associated with the billing setup.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string PaymentsProfileName {
+          get { return paymentsProfileName_; }
+          set {
+            paymentsProfileName_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "secondary_payments_profile_id" field.</summary>
+        public const int SecondaryPaymentsProfileIdFieldNumber = 5;
+        private static readonly pb::FieldCodec<string> _single_secondaryPaymentsProfileId_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+        private string secondaryPaymentsProfileId_;
+        /// <summary>
+        /// A secondary payments profile id present in uncommon situations, e.g.
+        /// when a sequential liability agreement has been arranged.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string SecondaryPaymentsProfileId {
+          get { return secondaryPaymentsProfileId_; }
+          set {
+            secondaryPaymentsProfileId_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as PaymentsAccountInfo);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(PaymentsAccountInfo other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (PaymentsAccountId != other.PaymentsAccountId) return false;
+          if (PaymentsAccountName != other.PaymentsAccountName) return false;
+          if (PaymentsProfileId != other.PaymentsProfileId) return false;
+          if (PaymentsProfileName != other.PaymentsProfileName) return false;
+          if (SecondaryPaymentsProfileId != other.SecondaryPaymentsProfileId) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (paymentsAccountId_ != null) hash ^= PaymentsAccountId.GetHashCode();
+          if (paymentsAccountName_ != null) hash ^= PaymentsAccountName.GetHashCode();
+          if (paymentsProfileId_ != null) hash ^= PaymentsProfileId.GetHashCode();
+          if (paymentsProfileName_ != null) hash ^= PaymentsProfileName.GetHashCode();
+          if (secondaryPaymentsProfileId_ != null) hash ^= SecondaryPaymentsProfileId.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (paymentsAccountId_ != null) {
+            _single_paymentsAccountId_codec.WriteTagAndValue(output, PaymentsAccountId);
+          }
+          if (paymentsAccountName_ != null) {
+            _single_paymentsAccountName_codec.WriteTagAndValue(output, PaymentsAccountName);
+          }
+          if (paymentsProfileId_ != null) {
+            _single_paymentsProfileId_codec.WriteTagAndValue(output, PaymentsProfileId);
+          }
+          if (paymentsProfileName_ != null) {
+            _single_paymentsProfileName_codec.WriteTagAndValue(output, PaymentsProfileName);
+          }
+          if (secondaryPaymentsProfileId_ != null) {
+            _single_secondaryPaymentsProfileId_codec.WriteTagAndValue(output, SecondaryPaymentsProfileId);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (paymentsAccountId_ != null) {
+            size += _single_paymentsAccountId_codec.CalculateSizeWithTag(PaymentsAccountId);
+          }
+          if (paymentsAccountName_ != null) {
+            size += _single_paymentsAccountName_codec.CalculateSizeWithTag(PaymentsAccountName);
+          }
+          if (paymentsProfileId_ != null) {
+            size += _single_paymentsProfileId_codec.CalculateSizeWithTag(PaymentsProfileId);
+          }
+          if (paymentsProfileName_ != null) {
+            size += _single_paymentsProfileName_codec.CalculateSizeWithTag(PaymentsProfileName);
+          }
+          if (secondaryPaymentsProfileId_ != null) {
+            size += _single_secondaryPaymentsProfileId_codec.CalculateSizeWithTag(SecondaryPaymentsProfileId);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(PaymentsAccountInfo other) {
+          if (other == null) {
+            return;
+          }
+          if (other.paymentsAccountId_ != null) {
+            if (paymentsAccountId_ == null || other.PaymentsAccountId != "") {
+              PaymentsAccountId = other.PaymentsAccountId;
+            }
+          }
+          if (other.paymentsAccountName_ != null) {
+            if (paymentsAccountName_ == null || other.PaymentsAccountName != "") {
+              PaymentsAccountName = other.PaymentsAccountName;
+            }
+          }
+          if (other.paymentsProfileId_ != null) {
+            if (paymentsProfileId_ == null || other.PaymentsProfileId != "") {
+              PaymentsProfileId = other.PaymentsProfileId;
+            }
+          }
+          if (other.paymentsProfileName_ != null) {
+            if (paymentsProfileName_ == null || other.PaymentsProfileName != "") {
+              PaymentsProfileName = other.PaymentsProfileName;
+            }
+          }
+          if (other.secondaryPaymentsProfileId_ != null) {
+            if (secondaryPaymentsProfileId_ == null || other.SecondaryPaymentsProfileId != "") {
+              SecondaryPaymentsProfileId = other.SecondaryPaymentsProfileId;
+            }
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                string value = _single_paymentsAccountId_codec.Read(input);
+                if (paymentsAccountId_ == null || value != "") {
+                  PaymentsAccountId = value;
+                }
+                break;
+              }
+              case 18: {
+                string value = _single_paymentsAccountName_codec.Read(input);
+                if (paymentsAccountName_ == null || value != "") {
+                  PaymentsAccountName = value;
+                }
+                break;
+              }
+              case 26: {
+                string value = _single_paymentsProfileId_codec.Read(input);
+                if (paymentsProfileId_ == null || value != "") {
+                  PaymentsProfileId = value;
+                }
+                break;
+              }
+              case 34: {
+                string value = _single_paymentsProfileName_codec.Read(input);
+                if (paymentsProfileName_ == null || value != "") {
+                  PaymentsProfileName = value;
+                }
+                break;
+              }
+              case 42: {
+                string value = _single_secondaryPaymentsProfileId_codec.Read(input);
+                if (secondaryPaymentsProfileId_ == null || value != "") {
+                  SecondaryPaymentsProfileId = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
 
   }
 

@@ -140,8 +140,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private string adGroup_;
     /// <summary>
     /// The ad group to which the ad belongs.
-    ///
-    /// This field must not be used in WHERE clauses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string AdGroup {

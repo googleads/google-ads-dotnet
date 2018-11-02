@@ -25,17 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF90eXBlLnByb3Rv",
-            "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyL6AQoKQWRUeXBlRW51",
-            "bSLrAQoGQWRUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsK",
+            "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyKPAgoKQWRUeXBlRW51",
+            "bSKAAgoGQWRUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsK",
             "B1RFWFRfQUQQAhIUChBFWFBBTkRFRF9URVhUX0FEEAMSFQoRRFlOQU1JQ19T",
             "RUFSQ0hfQUQQBBIZChVSRVNQT05TSVZFX0RJU1BMQVlfQUQQBRIQCgxDQUxM",
             "X09OTFlfQUQQBhIeChpFWFBBTkRFRF9EWU5BTUlDX1NFQVJDSF9BRBAHEgwK",
             "CEhPVEVMX0FEEAgSFQoRU0hPUFBJTkdfU01BUlRfQUQQCRIXChNTSE9QUElO",
-            "R19QUk9EVUNUX0FEEApCvAEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lbnVtc0ILQWRUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1z",
-            "ogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IGcHJvdG8z"));
+            "R19QUk9EVUNUX0FEEAoSEwoPVklERU9fT1VUU1RSRUFNEAtCvAEKIWNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0ILQWRUeXBlUHJvdG9QAVpC",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29n",
+            "bGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVt",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -202,6 +203,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// The ad is a standard Shopping ad.
         /// </summary>
         [pbr::OriginalName("SHOPPING_PRODUCT_AD")] ShoppingProductAd = 10,
+        /// <summary>
+        /// Video outstream ad.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_OUTSTREAM")] VideoOutstream = 11,
       }
 
     }
