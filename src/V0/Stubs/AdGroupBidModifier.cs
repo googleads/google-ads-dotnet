@@ -146,8 +146,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private string adGroup_;
     /// <summary>
     /// The ad group to which this criterion belongs.
-    ///
-    /// This field must not be used in WHERE clauses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string AdGroup {
@@ -179,7 +177,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private static readonly pb::FieldCodec<double?> _single_bidModifier_codec = pb::FieldCodec.ForStructWrapper<double>(34);
     private double? bidModifier_;
     /// <summary>
-    /// The modifier for the bid when the criterion matches.
+    /// The modifier for the bid when the criterion matches. The modifier must be
+    /// in the range: 0.1 - 10.0. The range is 1.0 - 6.0 for PreferredContent.
+    /// Use 0 to opt out of a Device type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? BidModifier {

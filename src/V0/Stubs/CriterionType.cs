@@ -25,15 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jcml0ZXJpb25fdHlw",
-            "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMijQEKEUNy",
-            "aXRlcmlvblR5cGVFbnVtIngKDUNyaXRlcmlvblR5cGUSDwoLVU5TUEVDSUZJ",
-            "RUQQABILCgdVTktOT1dOEAESCwoHS0VZV09SRBACEgoKBkRFVklDRRAGEgwK",
-            "CExPQ0FUSU9OEAcSEQoNTElTVElOR19HUk9VUBAIEg8KC0FEX1NDSEVEVUxF",
-            "EAlCwwEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0ISQ3Jp",
-            "dGVyaW9uVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
-            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjBcRW51bXNiBnByb3RvMw=="));
+            "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMioQIKEUNy",
+            "aXRlcmlvblR5cGVFbnVtIosCCg1Dcml0ZXJpb25UeXBlEg8KC1VOU1BFQ0lG",
+            "SUVEEAASCwoHVU5LTk9XThABEgsKB0tFWVdPUkQQAhINCglQTEFDRU1FTlQQ",
+            "AxIKCgZERVZJQ0UQBhIMCghMT0NBVElPThAHEhEKDUxJU1RJTkdfR1JPVVAQ",
+            "CBIPCgtBRF9TQ0hFRFVMRRAJEg0KCUFHRV9SQU5HRRAKEgoKBkdFTkRFUhAL",
+            "EhAKDElOQ09NRV9SQU5HRRAMEhMKD1BBUkVOVEFMX1NUQVRVUxANEhEKDVlP",
+            "VVRVQkVfVklERU8QDhITCg9ZT1VUVUJFX0NIQU5ORUwQDxINCglQUk9YSU1J",
+            "VFkQERIJCgVUT1BJQxASQsMBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuZW51bXNCEkNyaXRlcmlvblR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5n",
+            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51",
+            "bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVt",
+            "c8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -167,6 +170,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("KEYWORD")] Keyword = 2,
         /// <summary>
+        /// Placement, aka Website. e.g. 'www.flowers4sale.com'
+        /// </summary>
+        [pbr::OriginalName("PLACEMENT")] Placement = 3,
+        /// <summary>
         /// Devices to target.
         /// </summary>
         [pbr::OriginalName("DEVICE")] Device = 6,
@@ -182,6 +189,38 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Ad Schedule.
         /// </summary>
         [pbr::OriginalName("AD_SCHEDULE")] AdSchedule = 9,
+        /// <summary>
+        /// Age range.
+        /// </summary>
+        [pbr::OriginalName("AGE_RANGE")] AgeRange = 10,
+        /// <summary>
+        /// Gender.
+        /// </summary>
+        [pbr::OriginalName("GENDER")] Gender = 11,
+        /// <summary>
+        /// Income Range.
+        /// </summary>
+        [pbr::OriginalName("INCOME_RANGE")] IncomeRange = 12,
+        /// <summary>
+        /// Parental status.
+        /// </summary>
+        [pbr::OriginalName("PARENTAL_STATUS")] ParentalStatus = 13,
+        /// <summary>
+        /// YouTube Video.
+        /// </summary>
+        [pbr::OriginalName("YOUTUBE_VIDEO")] YoutubeVideo = 14,
+        /// <summary>
+        /// YouTube Channel.
+        /// </summary>
+        [pbr::OriginalName("YOUTUBE_CHANNEL")] YoutubeChannel = 15,
+        /// <summary>
+        /// Proximity.
+        /// </summary>
+        [pbr::OriginalName("PROXIMITY")] Proximity = 17,
+        /// <summary>
+        /// A topic target on the content network (e.g. "Pets &amp; Animals").
+        /// </summary>
+        [pbr::OriginalName("TOPIC")] Topic = 18,
       }
 
     }

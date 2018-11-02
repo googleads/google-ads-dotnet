@@ -51,6 +51,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             GetGeoTargetConstantSettings = existing.GetGeoTargetConstantSettings;
+            SuggestGeoTargetConstantsSettings = existing.SuggestGeoTargetConstantsSettings;
             OnCopy(existing);
         }
 
@@ -148,6 +149,35 @@ namespace Google.Ads.GoogleAds.V0.Services
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
                 totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
                 retryFilter: IdempotentRetryFilter
+            )));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>GeoTargetConstantServiceClient.SuggestGeoTargetConstants</c> and <c>GeoTargetConstantServiceClient.SuggestGeoTargetConstantsAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// The default <c>GeoTargetConstantServiceClient.SuggestGeoTargetConstants</c> and
+        /// <c>GeoTargetConstantServiceClient.SuggestGeoTargetConstantsAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Timeout multiplier: 1.0</description></item>
+        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// </list>
+        /// Retry will be attempted on the following response status codes:
+        /// <list>
+        /// <item><description>No status codes</description></item>
+        /// </list>
+        /// Default RPC expiration is 600000 milliseconds.
+        /// </remarks>
+        public gaxgrpc::CallSettings SuggestGeoTargetConstantsSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+            gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
+                retryBackoff: GetDefaultRetryBackoff(),
+                timeoutBackoff: GetDefaultTimeoutBackoff(),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                retryFilter: NonIdempotentRetryFilter
             )));
 
         /// <summary>
@@ -425,6 +455,130 @@ namespace Google.Ads.GoogleAds.V0.Services
             throw new sys::NotImplementedException();
         }
 
+        /// <summary>
+        /// Returns GeoTargetConstant suggestions by location name or by resource name.
+        /// </summary>
+        /// <param name="locale">
+        /// If possible, returned geo targets are translated using this locale. If not,
+        /// en is used by default. This is also used as a hint for returned geo
+        /// targets.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
+            pbwkt::StringValue locale,
+            gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstantsAsync(
+                new SuggestGeoTargetConstantsRequest
+                {
+                    Locale = gax::GaxPreconditions.CheckNotNull(locale, nameof(locale)).Value,
+                    // TODO(liseno): Implicit type cast from StringValue to String failed
+                },
+                callSettings);
+
+        /// <summary>
+        /// Returns GeoTargetConstant suggestions by location name or by resource name.
+        /// </summary>
+        /// <param name="locale">
+        /// If possible, returned geo targets are translated using this locale. If not,
+        /// en is used by default. This is also used as a hint for returned geo
+        /// targets.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
+            pbwkt::StringValue locale,
+            st::CancellationToken cancellationToken) => SuggestGeoTargetConstantsAsync(
+                locale,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns GeoTargetConstant suggestions by location name or by resource name.
+        /// </summary>
+        /// <param name="locale">
+        /// If possible, returned geo targets are translated using this locale. If not,
+        /// en is used by default. This is also used as a hint for returned geo
+        /// targets.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual SuggestGeoTargetConstantsResponse SuggestGeoTargetConstants(
+            pbwkt::StringValue locale,
+            gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstants(
+                new SuggestGeoTargetConstantsRequest
+                {
+                    Locale = gax::GaxPreconditions.CheckNotNull(locale, nameof(locale)).Value,
+                    // TODO(liseno): Implicit type cast from StringValue to String failed
+                },
+                callSettings);
+
+        /// <summary>
+        /// Returns GeoTargetConstant suggestions by location name or by resource name.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
+            SuggestGeoTargetConstantsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
+        /// <summary>
+        /// Returns GeoTargetConstant suggestions by location name or by resource name.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
+            SuggestGeoTargetConstantsRequest request,
+            st::CancellationToken cancellationToken) => SuggestGeoTargetConstantsAsync(
+                request,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns GeoTargetConstant suggestions by location name or by resource name.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual SuggestGeoTargetConstantsResponse SuggestGeoTargetConstants(
+            SuggestGeoTargetConstantsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
     }
 
     /// <summary>
@@ -433,6 +587,7 @@ namespace Google.Ads.GoogleAds.V0.Services
     public sealed partial class GeoTargetConstantServiceClientImpl : GeoTargetConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetGeoTargetConstantRequest, gagvr::GeoTargetConstant> _callGetGeoTargetConstant;
+        private readonly gaxgrpc::ApiCall<SuggestGeoTargetConstantsRequest, SuggestGeoTargetConstantsResponse> _callSuggestGeoTargetConstants;
 
         /// <summary>
         /// Constructs a client wrapper for the GeoTargetConstantService service, with the specified gRPC client and settings.
@@ -446,8 +601,12 @@ namespace Google.Ads.GoogleAds.V0.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetGeoTargetConstant = clientHelper.BuildApiCall<GetGeoTargetConstantRequest, gagvr::GeoTargetConstant>(
                 GrpcClient.GetGeoTargetConstantAsync, GrpcClient.GetGeoTargetConstant, effectiveSettings.GetGeoTargetConstantSettings);
+            _callSuggestGeoTargetConstants = clientHelper.BuildApiCall<SuggestGeoTargetConstantsRequest, SuggestGeoTargetConstantsResponse>(
+                GrpcClient.SuggestGeoTargetConstantsAsync, GrpcClient.SuggestGeoTargetConstants, effectiveSettings.SuggestGeoTargetConstantsSettings);
             Modify_ApiCall(ref _callGetGeoTargetConstant);
             Modify_GetGeoTargetConstantApiCall(ref _callGetGeoTargetConstant);
+            Modify_ApiCall(ref _callSuggestGeoTargetConstants);
+            Modify_SuggestGeoTargetConstantsApiCall(ref _callSuggestGeoTargetConstants);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -462,6 +621,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
         partial void Modify_GetGeoTargetConstantApiCall(ref gaxgrpc::ApiCall<GetGeoTargetConstantRequest, gagvr::GeoTargetConstant> call);
+        partial void Modify_SuggestGeoTargetConstantsApiCall(ref gaxgrpc::ApiCall<SuggestGeoTargetConstantsRequest, SuggestGeoTargetConstantsResponse> call);
         partial void OnConstruction(GeoTargetConstantService.GeoTargetConstantServiceClient grpcClient, GeoTargetConstantServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -473,6 +633,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
         partial void Modify_GetGeoTargetConstantRequest(ref GetGeoTargetConstantRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_SuggestGeoTargetConstantsRequest(ref SuggestGeoTargetConstantsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested geo target constant in full detail.
@@ -512,6 +673,46 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             Modify_GetGeoTargetConstantRequest(ref request, ref callSettings);
             return _callGetGeoTargetConstant.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns GeoTargetConstant suggestions by location name or by resource name.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public override stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
+            SuggestGeoTargetConstantsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_SuggestGeoTargetConstantsRequest(ref request, ref callSettings);
+            return _callSuggestGeoTargetConstants.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns GeoTargetConstant suggestions by location name or by resource name.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public override SuggestGeoTargetConstantsResponse SuggestGeoTargetConstants(
+            SuggestGeoTargetConstantsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_SuggestGeoTargetConstantsRequest(ref request, ref callSettings);
+            return _callSuggestGeoTargetConstants.Sync(request, callSettings);
         }
 
     }

@@ -51,6 +51,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             GetCustomerSettings = existing.GetCustomerSettings;
+            ListAccessibleCustomersSettings = existing.ListAccessibleCustomersSettings;
             OnCopy(existing);
         }
 
@@ -143,6 +144,36 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// Default RPC expiration is 600000 milliseconds.
         /// </remarks>
         public gaxgrpc::CallSettings GetCustomerSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+            gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
+                retryBackoff: GetDefaultRetryBackoff(),
+                timeoutBackoff: GetDefaultTimeoutBackoff(),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                retryFilter: IdempotentRetryFilter
+            )));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>CustomerServiceClient.ListAccessibleCustomers</c> and <c>CustomerServiceClient.ListAccessibleCustomersAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// The default <c>CustomerServiceClient.ListAccessibleCustomers</c> and
+        /// <c>CustomerServiceClient.ListAccessibleCustomersAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Timeout multiplier: 1.0</description></item>
+        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// </list>
+        /// Retry will be attempted on the following response status codes:
+        /// <list>
+        /// <item><description><see cref="grpccore::StatusCode.DeadlineExceeded"/></description></item>
+        /// <item><description><see cref="grpccore::StatusCode.Unavailable"/></description></item>
+        /// </list>
+        /// Default RPC expiration is 600000 milliseconds.
+        /// </remarks>
+        public gaxgrpc::CallSettings ListAccessibleCustomersSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
             gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
                 retryBackoff: GetDefaultRetryBackoff(),
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
@@ -425,6 +456,65 @@ namespace Google.Ads.GoogleAds.V0.Services
             throw new sys::NotImplementedException();
         }
 
+        /// <summary>
+        /// Returns resource names of customers directly accessible by the
+        /// user authenticating the call.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<ListAccessibleCustomersResponse> ListAccessibleCustomersAsync(
+            ListAccessibleCustomersRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
+        /// <summary>
+        /// Returns resource names of customers directly accessible by the
+        /// user authenticating the call.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<ListAccessibleCustomersResponse> ListAccessibleCustomersAsync(
+            ListAccessibleCustomersRequest request,
+            st::CancellationToken cancellationToken) => ListAccessibleCustomersAsync(
+                request,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns resource names of customers directly accessible by the
+        /// user authenticating the call.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual ListAccessibleCustomersResponse ListAccessibleCustomers(
+            ListAccessibleCustomersRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
     }
 
     /// <summary>
@@ -433,6 +523,7 @@ namespace Google.Ads.GoogleAds.V0.Services
     public sealed partial class CustomerServiceClientImpl : CustomerServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCustomerRequest, gagvr::Customer> _callGetCustomer;
+        private readonly gaxgrpc::ApiCall<ListAccessibleCustomersRequest, ListAccessibleCustomersResponse> _callListAccessibleCustomers;
 
         /// <summary>
         /// Constructs a client wrapper for the CustomerService service, with the specified gRPC client and settings.
@@ -446,8 +537,12 @@ namespace Google.Ads.GoogleAds.V0.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCustomer = clientHelper.BuildApiCall<GetCustomerRequest, gagvr::Customer>(
                 GrpcClient.GetCustomerAsync, GrpcClient.GetCustomer, effectiveSettings.GetCustomerSettings);
+            _callListAccessibleCustomers = clientHelper.BuildApiCall<ListAccessibleCustomersRequest, ListAccessibleCustomersResponse>(
+                GrpcClient.ListAccessibleCustomersAsync, GrpcClient.ListAccessibleCustomers, effectiveSettings.ListAccessibleCustomersSettings);
             Modify_ApiCall(ref _callGetCustomer);
             Modify_GetCustomerApiCall(ref _callGetCustomer);
+            Modify_ApiCall(ref _callListAccessibleCustomers);
+            Modify_ListAccessibleCustomersApiCall(ref _callListAccessibleCustomers);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -462,6 +557,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
         partial void Modify_GetCustomerApiCall(ref gaxgrpc::ApiCall<GetCustomerRequest, gagvr::Customer> call);
+        partial void Modify_ListAccessibleCustomersApiCall(ref gaxgrpc::ApiCall<ListAccessibleCustomersRequest, ListAccessibleCustomersResponse> call);
         partial void OnConstruction(CustomerService.CustomerServiceClient grpcClient, CustomerServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -473,6 +569,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
         partial void Modify_GetCustomerRequest(ref GetCustomerRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_ListAccessibleCustomersRequest(ref ListAccessibleCustomersRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested customer in full detail.
@@ -512,6 +609,48 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             Modify_GetCustomerRequest(ref request, ref callSettings);
             return _callGetCustomer.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns resource names of customers directly accessible by the
+        /// user authenticating the call.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public override stt::Task<ListAccessibleCustomersResponse> ListAccessibleCustomersAsync(
+            ListAccessibleCustomersRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_ListAccessibleCustomersRequest(ref request, ref callSettings);
+            return _callListAccessibleCustomers.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns resource names of customers directly accessible by the
+        /// user authenticating the call.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public override ListAccessibleCustomersResponse ListAccessibleCustomers(
+            ListAccessibleCustomersRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_ListAccessibleCustomersRequest(ref request, ref callSettings);
+            return _callListAccessibleCustomers.Sync(request, callSettings);
         }
 
     }

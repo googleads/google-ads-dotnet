@@ -116,5 +116,33 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public void ListAccessibleCustomers()
+        {
+            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            ListAccessibleCustomersRequest request = new ListAccessibleCustomersRequest();
+            ListAccessibleCustomersResponse expectedResponse = new ListAccessibleCustomersResponse();
+            mockGrpcClient.Setup(x => x.ListAccessibleCustomers(request, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            ListAccessibleCustomersResponse response = client.ListAccessibleCustomers(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task ListAccessibleCustomersAsync()
+        {
+            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            ListAccessibleCustomersRequest request = new ListAccessibleCustomersRequest();
+            ListAccessibleCustomersResponse expectedResponse = new ListAccessibleCustomersResponse();
+            mockGrpcClient.Setup(x => x.ListAccessibleCustomersAsync(request, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<ListAccessibleCustomersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            ListAccessibleCustomersResponse response = await client.ListAccessibleCustomersAsync(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
     }
 }

@@ -26,14 +26,13 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY2hhbmdlX3N0YXR1",
             "c19lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
-            "InoKFUNoYW5nZVN0YXR1c0Vycm9yRW51bSJhChFDaGFuZ2VTdGF0dXNFcnJv",
-            "chIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIWChJJTlZBTElEX1NU",
-            "QVJUX0RBVEUQAhIWChJTVEFSVF9EQVRFX1RPT19PTEQQA0LMAQoiY29tLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IWQ2hhbmdlU3RhdHVzRXJy",
-            "b3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "ImIKFUNoYW5nZVN0YXR1c0Vycm9yRW51bSJJChFDaGFuZ2VTdGF0dXNFcnJv",
+            "chIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIWChJTVEFSVF9EQVRF",
+            "X1RPT19PTEQQA0LMAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVy",
+            "cm9yc0IWQ2hhbmdlU3RhdHVzRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5n",
+            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJy",
+            "b3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVy",
+            "cm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -162,10 +161,6 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// The received error code is not known in this version.
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
-        /// <summary>
-        /// The requested start date is invalid.
-        /// </summary>
-        [pbr::OriginalName("INVALID_START_DATE")] InvalidStartDate = 2,
         /// <summary>
         /// The requested start date is too old.
         /// </summary>

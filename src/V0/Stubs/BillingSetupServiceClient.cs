@@ -456,7 +456,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
-        /// Cancels a pending billing setup.
+        /// Creates a billing setup, or cancels an existing billing setup.
         /// </summary>
         /// <param name="customerId">
         /// Id of the customer to apply the billing setup mutate operation to.
@@ -482,7 +482,7 @@ namespace Google.Ads.GoogleAds.V0.Services
                 callSettings);
 
         /// <summary>
-        /// Cancels a pending billing setup.
+        /// Creates a billing setup, or cancels an existing billing setup.
         /// </summary>
         /// <param name="customerId">
         /// Id of the customer to apply the billing setup mutate operation to.
@@ -505,7 +505,7 @@ namespace Google.Ads.GoogleAds.V0.Services
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Cancels a pending billing setup.
+        /// Creates a billing setup, or cancels an existing billing setup.
         /// </summary>
         /// <param name="customerId">
         /// Id of the customer to apply the billing setup mutate operation to.
@@ -531,7 +531,7 @@ namespace Google.Ads.GoogleAds.V0.Services
                 callSettings);
 
         /// <summary>
-        /// Cancels a pending billing setup.
+        /// Creates a billing setup, or cancels an existing billing setup.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -550,7 +550,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
-        /// Cancels a pending billing setup.
+        /// Creates a billing setup, or cancels an existing billing setup.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -568,7 +568,7 @@ namespace Google.Ads.GoogleAds.V0.Services
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Cancels a pending billing setup.
+        /// Creates a billing setup, or cancels an existing billing setup.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -683,7 +683,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
-        /// Cancels a pending billing setup.
+        /// Creates a billing setup, or cancels an existing billing setup.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -703,7 +703,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
-        /// Cancels a pending billing setup.
+        /// Creates a billing setup, or cancels an existing billing setup.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.

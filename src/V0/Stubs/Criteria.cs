@@ -25,113 +25,154 @@ namespace Google.Ads.GoogleAds.V0.Common {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vY3JpdGVyaWEucHJv",
-            "dG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbhovZ29vZ2xlL2Fk",
-            "cy9nb29nbGVhZHMvdjAvZW51bXMvZGF5X29mX3dlZWsucHJvdG8aKmdvb2ds",
-            "ZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2RldmljZS5wcm90bxo9Z29vZ2xl",
-            "L2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvaG90ZWxfZGF0ZV9zZWxlY3Rpb25f",
-            "dHlwZS5wcm90bxo0Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvaW50",
-            "ZXJhY3Rpb25fdHlwZS5wcm90bxo2Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
-            "ZW51bXMva2V5d29yZF9tYXRjaF90eXBlLnByb3RvGkJnb29nbGUvYWRzL2dv",
-            "b2dsZWFkcy92MC9lbnVtcy9saXN0aW5nX2N1c3RvbV9hdHRyaWJ1dGVfaW5k",
-            "ZXgucHJvdG8aNmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2xpc3Rp",
-            "bmdfZ3JvdXBfdHlwZS5wcm90bxoyZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
-            "ZW51bXMvbWludXRlX29mX2hvdXIucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xl",
-            "YWRzL3YwL2VudW1zL3Byb2R1Y3RfY2hhbm5lbC5wcm90bxo/Z29vZ2xlL2Fk",
-            "cy9nb29nbGVhZHMvdjAvZW51bXMvcHJvZHVjdF9jaGFubmVsX2V4Y2x1c2l2",
-            "aXR5LnByb3RvGjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9wcm9k",
-            "dWN0X2NvbmRpdGlvbi5wcm90bxo2Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
-            "ZW51bXMvcHJvZHVjdF90eXBlX2xldmVsLnByb3RvGh5nb29nbGUvcHJvdG9i",
-            "dWYvd3JhcHBlcnMucHJvdG8ikwEKC0tleXdvcmRJbmZvEioKBHRleHQYASAB",
-            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSWAoKbWF0Y2hfdHlw",
-            "ZRgCIAEoDjJELmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLktleXdv",
-            "cmRNYXRjaFR5cGVFbnVtLktleXdvcmRNYXRjaFR5cGUiSQoMTG9jYXRpb25J",
-            "bmZvEjkKE2dlb190YXJnZXRfY29uc3RhbnQYASABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUiTAoKRGV2aWNlSW5mbxI+CgR0eXBlGAEgASgO",
-            "MjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuRGV2aWNlRW51bS5E",
-            "ZXZpY2Ui8QEKEExpc3RpbmdHcm91cEluZm8SUgoEdHlwZRgBIAEoDjJELmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkxpc3RpbmdHcm91cFR5cGVF",
-            "bnVtLkxpc3RpbmdHcm91cFR5cGUSSAoKY2FzZV92YWx1ZRgCIAEoCzI0Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5MaXN0aW5nRGltZW5zaW9u",
-            "SW5mbxI/ChlwYXJlbnRfYWRfZ3JvdXBfY3JpdGVyaW9uGAMgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlItsHChRMaXN0aW5nRGltZW5zaW9u",
-            "SW5mbxJJCg1saXN0aW5nX2JyYW5kGAEgASgLMjAuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuY29tbW9uLkxpc3RpbmdCcmFuZEluZm9IABI/Cghob3RlbF9p",
-            "ZBgCIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Ib3Rl",
-            "bElkSW5mb0gAEkUKC2hvdGVsX2NsYXNzGAMgASgLMi4uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjAuY29tbW9uLkhvdGVsQ2xhc3NJbmZvSAASVgoUaG90ZWxf",
-            "Y291bnRyeV9yZWdpb24YBCABKAsyNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5jb21tb24uSG90ZWxDb3VudHJ5UmVnaW9uSW5mb0gAEkUKC2hvdGVsX3N0",
-            "YXRlGAUgASgLMi4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkhv",
-            "dGVsU3RhdGVJbmZvSAASQwoKaG90ZWxfY2l0eRgGIAEoCzItLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Ib3RlbENpdHlJbmZvSAASXgoYbGlz",
-            "dGluZ19jdXN0b21fYXR0cmlidXRlGAcgASgLMjouZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuY29tbW9uLkxpc3RpbmdDdXN0b21BdHRyaWJ1dGVJbmZvSAAS",
-            "TQoPcHJvZHVjdF9jaGFubmVsGAggASgLMjIuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAuY29tbW9uLlByb2R1Y3RDaGFubmVsSW5mb0gAEmQKG3Byb2R1Y3Rf",
-            "Y2hhbm5lbF9leGNsdXNpdml0eRgJIAEoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmNvbW1vbi5Qcm9kdWN0Q2hhbm5lbEV4Y2x1c2l2aXR5SW5mb0gA",
-            "ElEKEXByb2R1Y3RfY29uZGl0aW9uGAogASgLMjQuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuY29tbW9uLlByb2R1Y3RDb25kaXRpb25JbmZvSAASTgoQcHJv",
-            "ZHVjdF9vZmZlcl9pZBgLIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmNvbW1vbi5Qcm9kdWN0T2ZmZXJJZEluZm9IABJHCgxwcm9kdWN0X3R5cGUY",
-            "DCABKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uUHJvZHVj",
-            "dFR5cGVJbmZvSABCCwoJZGltZW5zaW9uIj8KEExpc3RpbmdCcmFuZEluZm8S",
-            "KwoFdmFsdWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUi",
-            "OgoLSG90ZWxJZEluZm8SKwoFdmFsdWUYASABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUiPAoOSG90ZWxDbGFzc0luZm8SKgoFdmFsdWUYASAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZSJYChZIb3RlbENvdW50",
-            "cnlSZWdpb25JbmZvEj4KGGNvdW50cnlfcmVnaW9uX2NyaXRlcmlvbhgBIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJHCg5Ib3RlbFN0YXRl",
-            "SW5mbxI1Cg9zdGF0ZV9jcml0ZXJpb24YASABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUiRQoNSG90ZWxDaXR5SW5mbxI0Cg5jaXR5X2NyaXRl",
-            "cmlvbhgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSK0AQoa",
-            "TGlzdGluZ0N1c3RvbUF0dHJpYnV0ZUluZm8SKwoFdmFsdWUYASABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSaQoFaW5kZXgYAiABKA4yWi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5MaXN0aW5nQ3VzdG9tQXR0",
-            "cmlidXRlSW5kZXhFbnVtLkxpc3RpbmdDdXN0b21BdHRyaWJ1dGVJbmRleCJn",
-            "ChJQcm9kdWN0Q2hhbm5lbEluZm8SUQoHY2hhbm5lbBgBIAEoDjJALmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlByb2R1Y3RDaGFubmVsRW51bS5Q",
-            "cm9kdWN0Q2hhbm5lbCKUAQodUHJvZHVjdENoYW5uZWxFeGNsdXNpdml0eUlu",
-            "Zm8ScwoTY2hhbm5lbF9leGNsdXNpdml0eRgBIAEoDjJWLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLmVudW1zLlByb2R1Y3RDaGFubmVsRXhjbHVzaXZpdHlF",
-            "bnVtLlByb2R1Y3RDaGFubmVsRXhjbHVzaXZpdHkibwoUUHJvZHVjdENvbmRp",
-            "dGlvbkluZm8SVwoJY29uZGl0aW9uGAEgASgOMkQuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuZW51bXMuUHJvZHVjdENvbmRpdGlvbkVudW0uUHJvZHVjdENv",
-            "bmRpdGlvbiJBChJQcm9kdWN0T2ZmZXJJZEluZm8SKwoFdmFsdWUYASABKAsy",
-            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUikwEKD1Byb2R1Y3RUeXBl",
-            "SW5mbxIrCgV2YWx1ZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZRJTCgVsZXZlbBgCIAEoDjJELmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmVudW1zLlByb2R1Y3RUeXBlTGV2ZWxFbnVtLlByb2R1Y3RUeXBlTGV2ZWwi",
-            "fAoaSG90ZWxEYXRlU2VsZWN0aW9uVHlwZUluZm8SXgoEdHlwZRgBIAEoDjJQ",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkhvdGVsRGF0ZVNlbGVj",
-            "dGlvblR5cGVFbnVtLkhvdGVsRGF0ZVNlbGVjdGlvblR5cGUifQodSG90ZWxB",
-            "ZHZhbmNlQm9va2luZ1dpbmRvd0luZm8SLQoIbWluX2RheXMYASABKAsyGy5n",
-            "b29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRItCghtYXhfZGF5cxgCIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlInkKFUhvdGVsTGVuZ3RoT2ZT",
-            "dGF5SW5mbxIvCgptaW5fbmlnaHRzGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVm",
-            "LkludDY0VmFsdWUSLwoKbWF4X25pZ2h0cxgCIAEoCzIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5JbnQ2NFZhbHVlImIKE0hvdGVsQ2hlY2tJbkRheUluZm8SSwoLZGF5",
-            "X29mX3dlZWsYASABKA4yNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVt",
-            "cy5EYXlPZldlZWtFbnVtLkRheU9mV2VlayJnChNJbnRlcmFjdGlvblR5cGVJ",
-            "bmZvElAKBHR5cGUYASABKA4yQi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "bnVtcy5JbnRlcmFjdGlvblR5cGVFbnVtLkludGVyYWN0aW9uVHlwZSLjAgoO",
-            "QWRTY2hlZHVsZUluZm8SUgoMc3RhcnRfbWludXRlGAEgASgOMjwuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAuZW51bXMuTWludXRlT2ZIb3VyRW51bS5NaW51",
-            "dGVPZkhvdXISUAoKZW5kX21pbnV0ZRgCIAEoDjI8Lmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYwLmVudW1zLk1pbnV0ZU9mSG91ckVudW0uTWludXRlT2ZIb3Vy",
-            "Ei8KCnN0YXJ0X2hvdXIYAyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50MzJW",
-            "YWx1ZRItCghlbmRfaG91chgEIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQz",
-            "MlZhbHVlEksKC2RheV9vZl93ZWVrGAUgASgOMjYuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuZW51bXMuRGF5T2ZXZWVrRW51bS5EYXlPZldlZWtCwwEKImNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CDUNyaXRlcmlhUHJv",
-            "dG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUu",
-            "QWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFk",
-            "c1xWMFxDb21tb25iBnByb3RvMw=="));
+            "dG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbhoyZ29vZ2xlL2Fk",
+            "cy9nb29nbGVhZHMvdjAvZW51bXMvYWdlX3JhbmdlX3R5cGUucHJvdG8aL2dv",
+            "b2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2RheV9vZl93ZWVrLnByb3Rv",
+            "Gipnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9kZXZpY2UucHJvdG8a",
+            "L2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2dlbmRlcl90eXBlLnBy",
+            "b3RvGj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9ob3RlbF9kYXRl",
+            "X3NlbGVjdGlvbl90eXBlLnByb3RvGjVnb29nbGUvYWRzL2dvb2dsZWFkcy92",
+            "MC9lbnVtcy9pbmNvbWVfcmFuZ2VfdHlwZS5wcm90bxo0Z29vZ2xlL2Fkcy9n",
+            "b29nbGVhZHMvdjAvZW51bXMvaW50ZXJhY3Rpb25fdHlwZS5wcm90bxo2Z29v",
+            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMva2V5d29yZF9tYXRjaF90eXBl",
+            "LnByb3RvGkJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9saXN0aW5n",
+            "X2N1c3RvbV9hdHRyaWJ1dGVfaW5kZXgucHJvdG8aNmdvb2dsZS9hZHMvZ29v",
+            "Z2xlYWRzL3YwL2VudW1zL2xpc3RpbmdfZ3JvdXBfdHlwZS5wcm90bxoyZ29v",
+            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvbWludXRlX29mX2hvdXIucHJv",
+            "dG8aOGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL3BhcmVudGFsX3N0",
+            "YXR1c190eXBlLnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVt",
+            "cy9wcm9kdWN0X2NoYW5uZWwucHJvdG8aP2dvb2dsZS9hZHMvZ29vZ2xlYWRz",
+            "L3YwL2VudW1zL3Byb2R1Y3RfY2hhbm5lbF9leGNsdXNpdml0eS5wcm90bxo1",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvcHJvZHVjdF9jb25kaXRp",
+            "b24ucHJvdG8aNmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL3Byb2R1",
+            "Y3RfdHlwZV9sZXZlbC5wcm90bxo6Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
+            "ZW51bXMvcHJveGltaXR5X3JhZGl1c191bml0cy5wcm90bxoeZ29vZ2xlL3By",
+            "b3RvYnVmL3dyYXBwZXJzLnByb3RvIpMBCgtLZXl3b3JkSW5mbxIqCgR0ZXh0",
+            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElgKCm1hdGNo",
+            "X3R5cGUYAiABKA4yRC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5L",
+            "ZXl3b3JkTWF0Y2hUeXBlRW51bS5LZXl3b3JkTWF0Y2hUeXBlIjoKDVBsYWNl",
+            "bWVudEluZm8SKQoDdXJsGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlIkkKDExvY2F0aW9uSW5mbxI5ChNnZW9fdGFyZ2V0X2NvbnN0YW50",
+            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIkwKCkRldmlj",
+            "ZUluZm8SPgoEdHlwZRgBIAEoDjIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmVudW1zLkRldmljZUVudW0uRGV2aWNlIvEBChBMaXN0aW5nR3JvdXBJbmZv",
+            "ElIKBHR5cGUYASABKA4yRC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVt",
+            "cy5MaXN0aW5nR3JvdXBUeXBlRW51bS5MaXN0aW5nR3JvdXBUeXBlEkgKCmNh",
+            "c2VfdmFsdWUYAiABKAsyNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21t",
+            "b24uTGlzdGluZ0RpbWVuc2lvbkluZm8SPwoZcGFyZW50X2FkX2dyb3VwX2Ny",
+            "aXRlcmlvbhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSLb",
+            "BwoUTGlzdGluZ0RpbWVuc2lvbkluZm8SSQoNbGlzdGluZ19icmFuZBgBIAEo",
+            "CzIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5MaXN0aW5nQnJh",
+            "bmRJbmZvSAASPwoIaG90ZWxfaWQYAiABKAsyKy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5jb21tb24uSG90ZWxJZEluZm9IABJFCgtob3RlbF9jbGFzcxgD",
+            "IAEoCzIuLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Ib3RlbENs",
+            "YXNzSW5mb0gAElYKFGhvdGVsX2NvdW50cnlfcmVnaW9uGAQgASgLMjYuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkhvdGVsQ291bnRyeVJlZ2lv",
+            "bkluZm9IABJFCgtob3RlbF9zdGF0ZRgFIAEoCzIuLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmNvbW1vbi5Ib3RlbFN0YXRlSW5mb0gAEkMKCmhvdGVsX2Np",
+            "dHkYBiABKAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uSG90",
+            "ZWxDaXR5SW5mb0gAEl4KGGxpc3RpbmdfY3VzdG9tX2F0dHJpYnV0ZRgHIAEo",
+            "CzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5MaXN0aW5nQ3Vz",
+            "dG9tQXR0cmlidXRlSW5mb0gAEk0KD3Byb2R1Y3RfY2hhbm5lbBgIIAEoCzIy",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Qcm9kdWN0Q2hhbm5l",
+            "bEluZm9IABJkChtwcm9kdWN0X2NoYW5uZWxfZXhjbHVzaXZpdHkYCSABKAsy",
+            "PS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uUHJvZHVjdENoYW5u",
+            "ZWxFeGNsdXNpdml0eUluZm9IABJRChFwcm9kdWN0X2NvbmRpdGlvbhgKIAEo",
+            "CzI0Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Qcm9kdWN0Q29u",
+            "ZGl0aW9uSW5mb0gAEk4KEHByb2R1Y3Rfb2ZmZXJfaWQYCyABKAsyMi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uUHJvZHVjdE9mZmVySWRJbmZv",
+            "SAASRwoMcHJvZHVjdF90eXBlGAwgASgLMi8uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuY29tbW9uLlByb2R1Y3RUeXBlSW5mb0gAQgsKCWRpbWVuc2lvbiI/",
+            "ChBMaXN0aW5nQnJhbmRJbmZvEisKBXZhbHVlGAEgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlIjoKC0hvdGVsSWRJbmZvEisKBXZhbHVlGAEg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIjwKDkhvdGVsQ2xh",
+            "c3NJbmZvEioKBXZhbHVlGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0",
+            "VmFsdWUiWAoWSG90ZWxDb3VudHJ5UmVnaW9uSW5mbxI+Chhjb3VudHJ5X3Jl",
+            "Z2lvbl9jcml0ZXJpb24YASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWUiRwoOSG90ZWxTdGF0ZUluZm8SNQoPc3RhdGVfY3JpdGVyaW9uGAEg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIkUKDUhvdGVsQ2l0",
+            "eUluZm8SNAoOY2l0eV9jcml0ZXJpb24YASABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUitAEKGkxpc3RpbmdDdXN0b21BdHRyaWJ1dGVJbmZv",
+            "EisKBXZhbHVlGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EmkKBWluZGV4GAIgASgOMlouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51",
+            "bXMuTGlzdGluZ0N1c3RvbUF0dHJpYnV0ZUluZGV4RW51bS5MaXN0aW5nQ3Vz",
+            "dG9tQXR0cmlidXRlSW5kZXgiZwoSUHJvZHVjdENoYW5uZWxJbmZvElEKB2No",
+            "YW5uZWwYASABKA4yQC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5Q",
+            "cm9kdWN0Q2hhbm5lbEVudW0uUHJvZHVjdENoYW5uZWwilAEKHVByb2R1Y3RD",
+            "aGFubmVsRXhjbHVzaXZpdHlJbmZvEnMKE2NoYW5uZWxfZXhjbHVzaXZpdHkY",
+            "ASABKA4yVi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5Qcm9kdWN0",
+            "Q2hhbm5lbEV4Y2x1c2l2aXR5RW51bS5Qcm9kdWN0Q2hhbm5lbEV4Y2x1c2l2",
+            "aXR5Im8KFFByb2R1Y3RDb25kaXRpb25JbmZvElcKCWNvbmRpdGlvbhgBIAEo",
+            "DjJELmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlByb2R1Y3RDb25k",
+            "aXRpb25FbnVtLlByb2R1Y3RDb25kaXRpb24iQQoSUHJvZHVjdE9mZmVySWRJ",
+            "bmZvEisKBXZhbHVlGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
+            "bHVlIpMBCg9Qcm9kdWN0VHlwZUluZm8SKwoFdmFsdWUYASABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSUwoFbGV2ZWwYAiABKA4yRC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5Qcm9kdWN0VHlwZUxldmVsRW51",
+            "bS5Qcm9kdWN0VHlwZUxldmVsInwKGkhvdGVsRGF0ZVNlbGVjdGlvblR5cGVJ",
+            "bmZvEl4KBHR5cGUYASABKA4yUC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
+            "bnVtcy5Ib3RlbERhdGVTZWxlY3Rpb25UeXBlRW51bS5Ib3RlbERhdGVTZWxl",
+            "Y3Rpb25UeXBlIn0KHUhvdGVsQWR2YW5jZUJvb2tpbmdXaW5kb3dJbmZvEi0K",
+            "CG1pbl9kYXlzGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUS",
+            "LQoIbWF4X2RheXMYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
+            "ZSJ5ChVIb3RlbExlbmd0aE9mU3RheUluZm8SLwoKbWluX25pZ2h0cxgBIAEo",
+            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEi8KCm1heF9uaWdodHMY",
+            "AiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZSJiChNIb3RlbENo",
+            "ZWNrSW5EYXlJbmZvEksKC2RheV9vZl93ZWVrGAEgASgOMjYuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuZW51bXMuRGF5T2ZXZWVrRW51bS5EYXlPZldlZWsi",
+            "ZwoTSW50ZXJhY3Rpb25UeXBlSW5mbxJQCgR0eXBlGAEgASgOMkIuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAuZW51bXMuSW50ZXJhY3Rpb25UeXBlRW51bS5J",
+            "bnRlcmFjdGlvblR5cGUi4wIKDkFkU2NoZWR1bGVJbmZvElIKDHN0YXJ0X21p",
+            "bnV0ZRgBIAEoDjI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLk1p",
+            "bnV0ZU9mSG91ckVudW0uTWludXRlT2ZIb3VyElAKCmVuZF9taW51dGUYAiAB",
+            "KA4yPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5NaW51dGVPZkhv",
+            "dXJFbnVtLk1pbnV0ZU9mSG91chIvCgpzdGFydF9ob3VyGAMgASgLMhsuZ29v",
+            "Z2xlLnByb3RvYnVmLkludDMyVmFsdWUSLQoIZW5kX2hvdXIYBCABKAsyGy5n",
+            "b29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRJLCgtkYXlfb2Zfd2VlaxgFIAEo",
+            "DjI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkRheU9mV2Vla0Vu",
+            "dW0uRGF5T2ZXZWVrIloKDEFnZVJhbmdlSW5mbxJKCgR0eXBlGAEgASgOMjwu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQWdlUmFuZ2VUeXBlRW51",
+            "bS5BZ2VSYW5nZVR5cGUiVAoKR2VuZGVySW5mbxJGCgR0eXBlGAEgASgOMjgu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuR2VuZGVyVHlwZUVudW0u",
+            "R2VuZGVyVHlwZSJjCg9JbmNvbWVSYW5nZUluZm8SUAoEdHlwZRgBIAEoDjJC",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkluY29tZVJhbmdlVHlw",
+            "ZUVudW0uSW5jb21lUmFuZ2VUeXBlImwKElBhcmVudGFsU3RhdHVzSW5mbxJW",
+            "CgR0eXBlGAEgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMu",
+            "UGFyZW50YWxTdGF0dXNUeXBlRW51bS5QYXJlbnRhbFN0YXR1c1R5cGUiQgoQ",
+            "WW91VHViZVZpZGVvSW5mbxIuCgh2aWRlb19pZBgBIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZSJGChJZb3VUdWJlQ2hhbm5lbEluZm8SMAoK",
+            "Y2hhbm5lbF9pZBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZSKgAgoNUHJveGltaXR5SW5mbxI/CglnZW9fcG9pbnQYASABKAsyLC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uR2VvUG9pbnRJbmZvEiwKBnJh",
+            "ZGl1cxgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJiCgxy",
+            "YWRpdXNfdW5pdHMYAyABKA4yTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
+            "bnVtcy5Qcm94aW1pdHlSYWRpdXNVbml0c0VudW0uUHJveGltaXR5UmFkaXVz",
+            "VW5pdHMSPAoHYWRkcmVzcxgEIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmNvbW1vbi5BZGRyZXNzSW5mbyKPAQoMR2VvUG9pbnRJbmZvEj8KGmxv",
+            "bmdpdHVkZV9pbl9taWNyb19kZWdyZWVzGAEgASgLMhsuZ29vZ2xlLnByb3Rv",
+            "YnVmLkludDMyVmFsdWUSPgoZbGF0aXR1ZGVfaW5fbWljcm9fZGVncmVlcxgC",
+            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlIvwCCgtBZGRyZXNz",
+            "SW5mbxIxCgtwb3N0YWxfY29kZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRIzCg1wcm92aW5jZV9jb2RlGAIgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEjIKDGNvdW50cnlfY29kZRgDIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1wcm92aW5jZV9uYW1lGAQg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjQKDnN0cmVldF9h",
+            "ZGRyZXNzGAUgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjUK",
+            "D3N0cmVldF9hZGRyZXNzMhgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRIvCgljaXR5X25hbWUYByABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "U3RyaW5nVmFsdWUibQoJVG9waWNJbmZvEjQKDnRvcGljX2NvbnN0YW50GAEg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEioKBHBhdGgYAiAD",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCwwEKImNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CDUNyaXRlcmlhUHJvdG9QAVpE",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxD",
+            "b21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.HotelDateSelectionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.InteractionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ListingCustomAttributeIndexReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ListingGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.MinuteOfHourReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ProductChannelExclusivityReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ProductTypeLevelReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.AgeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.GenderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.HotelDateSelectionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.IncomeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.InteractionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ListingCustomAttributeIndexReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ListingGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.MinuteOfHourReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ParentalStatusTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ProductChannelExclusivityReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ProductTypeLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ProximityRadiusUnitsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.KeywordInfo), global::Google.Ads.GoogleAds.V0.Common.KeywordInfo.Parser, new[]{ "Text", "MatchType" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PlacementInfo), global::Google.Ads.GoogleAds.V0.Common.PlacementInfo.Parser, new[]{ "Url" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.LocationInfo), global::Google.Ads.GoogleAds.V0.Common.LocationInfo.Parser, new[]{ "GeoTargetConstant" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.DeviceInfo), global::Google.Ads.GoogleAds.V0.Common.DeviceInfo.Parser, new[]{ "Type" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ListingGroupInfo), global::Google.Ads.GoogleAds.V0.Common.ListingGroupInfo.Parser, new[]{ "Type", "CaseValue", "ParentAdGroupCriterion" }, null, null, null),
@@ -153,7 +194,17 @@ namespace Google.Ads.GoogleAds.V0.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.HotelLengthOfStayInfo), global::Google.Ads.GoogleAds.V0.Common.HotelLengthOfStayInfo.Parser, new[]{ "MinNights", "MaxNights" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.HotelCheckInDayInfo), global::Google.Ads.GoogleAds.V0.Common.HotelCheckInDayInfo.Parser, new[]{ "DayOfWeek" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.InteractionTypeInfo), global::Google.Ads.GoogleAds.V0.Common.InteractionTypeInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.AdScheduleInfo), global::Google.Ads.GoogleAds.V0.Common.AdScheduleInfo.Parser, new[]{ "StartMinute", "EndMinute", "StartHour", "EndHour", "DayOfWeek" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.AdScheduleInfo), global::Google.Ads.GoogleAds.V0.Common.AdScheduleInfo.Parser, new[]{ "StartMinute", "EndMinute", "StartHour", "EndHour", "DayOfWeek" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.AgeRangeInfo), global::Google.Ads.GoogleAds.V0.Common.AgeRangeInfo.Parser, new[]{ "Type" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.GenderInfo), global::Google.Ads.GoogleAds.V0.Common.GenderInfo.Parser, new[]{ "Type" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.IncomeRangeInfo), global::Google.Ads.GoogleAds.V0.Common.IncomeRangeInfo.Parser, new[]{ "Type" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ParentalStatusInfo), global::Google.Ads.GoogleAds.V0.Common.ParentalStatusInfo.Parser, new[]{ "Type" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.YouTubeVideoInfo), global::Google.Ads.GoogleAds.V0.Common.YouTubeVideoInfo.Parser, new[]{ "VideoId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.YouTubeChannelInfo), global::Google.Ads.GoogleAds.V0.Common.YouTubeChannelInfo.Parser, new[]{ "ChannelId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ProximityInfo), global::Google.Ads.GoogleAds.V0.Common.ProximityInfo.Parser, new[]{ "GeoPoint", "Radius", "RadiusUnits", "Address" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.GeoPointInfo), global::Google.Ads.GoogleAds.V0.Common.GeoPointInfo.Parser, new[]{ "LongitudeInMicroDegrees", "LatitudeInMicroDegrees" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.AddressInfo), global::Google.Ads.GoogleAds.V0.Common.AddressInfo.Parser, new[]{ "PostalCode", "ProvinceCode", "CountryCode", "ProvinceName", "StreetAddress", "StreetAddress2", "CityName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TopicInfo), global::Google.Ads.GoogleAds.V0.Common.TopicInfo.Parser, new[]{ "TopicConstant", "Path" }, null, null, null)
           }));
     }
     #endregion
@@ -332,6 +383,149 @@ namespace Google.Ads.GoogleAds.V0.Common {
   }
 
   /// <summary>
+  /// A placement criterion. This can be used to modify bids for sites when
+  /// targeting the content network.
+  /// </summary>
+  public sealed partial class PlacementInfo : pb::IMessage<PlacementInfo> {
+    private static readonly pb::MessageParser<PlacementInfo> _parser = new pb::MessageParser<PlacementInfo>(() => new PlacementInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PlacementInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlacementInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlacementInfo(PlacementInfo other) : this() {
+      Url = other.Url;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PlacementInfo Clone() {
+      return new PlacementInfo(this);
+    }
+
+    /// <summary>Field number for the "url" field.</summary>
+    public const int UrlFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_url_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string url_;
+    /// <summary>
+    /// URL of the placement.
+    ///
+    /// For example, "http://www.domain.com".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Url {
+      get { return url_; }
+      set {
+        url_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PlacementInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PlacementInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Url != other.Url) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (url_ != null) hash ^= Url.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (url_ != null) {
+        _single_url_codec.WriteTagAndValue(output, Url);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (url_ != null) {
+        size += _single_url_codec.CalculateSizeWithTag(Url);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PlacementInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.url_ != null) {
+        if (url_ == null || other.Url != "") {
+          Url = other.Url;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_url_codec.Read(input);
+            if (url_ == null || value != "") {
+              Url = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// A location criterion.
   /// </summary>
   public sealed partial class LocationInfo : pb::IMessage<LocationInfo> {
@@ -342,7 +536,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -482,7 +676,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -617,7 +811,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -827,7 +1021,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1460,7 +1654,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1600,7 +1794,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1740,7 +1934,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1880,7 +2074,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2020,7 +2214,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2160,7 +2354,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2300,7 +2494,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2471,7 +2665,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2606,7 +2800,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2741,7 +2935,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2876,7 +3070,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3016,7 +3210,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3187,7 +3381,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3322,7 +3516,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3498,7 +3692,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3674,7 +3868,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3809,7 +4003,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3949,7 +4143,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4217,6 +4411,1780 @@ namespace Google.Ads.GoogleAds.V0.Common {
           }
           case 40: {
             dayOfWeek_ = (global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekEnum.Types.DayOfWeek) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// An age range criterion.
+  /// </summary>
+  public sealed partial class AgeRangeInfo : pb::IMessage<AgeRangeInfo> {
+    private static readonly pb::MessageParser<AgeRangeInfo> _parser = new pb::MessageParser<AgeRangeInfo>(() => new AgeRangeInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AgeRangeInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[24]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AgeRangeInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AgeRangeInfo(AgeRangeInfo other) : this() {
+      type_ = other.type_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AgeRangeInfo Clone() {
+      return new AgeRangeInfo(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.AgeRangeTypeEnum.Types.AgeRangeType type_ = 0;
+    /// <summary>
+    /// Type of the age range.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.AgeRangeTypeEnum.Types.AgeRangeType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AgeRangeInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AgeRangeInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Type != other.Type) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Type != 0) hash ^= Type.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Type != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Type != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AgeRangeInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Type != 0) {
+        Type = other.Type;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            type_ = (global::Google.Ads.GoogleAds.V0.Enums.AgeRangeTypeEnum.Types.AgeRangeType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A gender criterion.
+  /// </summary>
+  public sealed partial class GenderInfo : pb::IMessage<GenderInfo> {
+    private static readonly pb::MessageParser<GenderInfo> _parser = new pb::MessageParser<GenderInfo>(() => new GenderInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GenderInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[25]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GenderInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GenderInfo(GenderInfo other) : this() {
+      type_ = other.type_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GenderInfo Clone() {
+      return new GenderInfo(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.GenderTypeEnum.Types.GenderType type_ = 0;
+    /// <summary>
+    /// Type of the gender.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.GenderTypeEnum.Types.GenderType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GenderInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GenderInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Type != other.Type) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Type != 0) hash ^= Type.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Type != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Type != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GenderInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Type != 0) {
+        Type = other.Type;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            type_ = (global::Google.Ads.GoogleAds.V0.Enums.GenderTypeEnum.Types.GenderType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// An income range criterion.
+  /// </summary>
+  public sealed partial class IncomeRangeInfo : pb::IMessage<IncomeRangeInfo> {
+    private static readonly pb::MessageParser<IncomeRangeInfo> _parser = new pb::MessageParser<IncomeRangeInfo>(() => new IncomeRangeInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<IncomeRangeInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[26]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IncomeRangeInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IncomeRangeInfo(IncomeRangeInfo other) : this() {
+      type_ = other.type_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public IncomeRangeInfo Clone() {
+      return new IncomeRangeInfo(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType type_ = 0;
+    /// <summary>
+    /// Type of the income range.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as IncomeRangeInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(IncomeRangeInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Type != other.Type) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Type != 0) hash ^= Type.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Type != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Type != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(IncomeRangeInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Type != 0) {
+        Type = other.Type;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            type_ = (global::Google.Ads.GoogleAds.V0.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A parental status criterion.
+  /// </summary>
+  public sealed partial class ParentalStatusInfo : pb::IMessage<ParentalStatusInfo> {
+    private static readonly pb::MessageParser<ParentalStatusInfo> _parser = new pb::MessageParser<ParentalStatusInfo>(() => new ParentalStatusInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ParentalStatusInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[27]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ParentalStatusInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ParentalStatusInfo(ParentalStatusInfo other) : this() {
+      type_ = other.type_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ParentalStatusInfo Clone() {
+      return new ParentalStatusInfo(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType type_ = 0;
+    /// <summary>
+    /// Type of the parental status.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ParentalStatusInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ParentalStatusInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Type != other.Type) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Type != 0) hash ^= Type.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Type != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Type != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ParentalStatusInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Type != 0) {
+        Type = other.Type;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            type_ = (global::Google.Ads.GoogleAds.V0.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A YouTube Video criterion.
+  /// </summary>
+  public sealed partial class YouTubeVideoInfo : pb::IMessage<YouTubeVideoInfo> {
+    private static readonly pb::MessageParser<YouTubeVideoInfo> _parser = new pb::MessageParser<YouTubeVideoInfo>(() => new YouTubeVideoInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<YouTubeVideoInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[28]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public YouTubeVideoInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public YouTubeVideoInfo(YouTubeVideoInfo other) : this() {
+      VideoId = other.VideoId;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public YouTubeVideoInfo Clone() {
+      return new YouTubeVideoInfo(this);
+    }
+
+    /// <summary>Field number for the "video_id" field.</summary>
+    public const int VideoIdFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_videoId_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string videoId_;
+    /// <summary>
+    /// YouTube video id as it appears on the YouTube watch page.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string VideoId {
+      get { return videoId_; }
+      set {
+        videoId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as YouTubeVideoInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(YouTubeVideoInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (VideoId != other.VideoId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (videoId_ != null) hash ^= VideoId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (videoId_ != null) {
+        _single_videoId_codec.WriteTagAndValue(output, VideoId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (videoId_ != null) {
+        size += _single_videoId_codec.CalculateSizeWithTag(VideoId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(YouTubeVideoInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.videoId_ != null) {
+        if (videoId_ == null || other.VideoId != "") {
+          VideoId = other.VideoId;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_videoId_codec.Read(input);
+            if (videoId_ == null || value != "") {
+              VideoId = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A YouTube Channel criterion.
+  /// </summary>
+  public sealed partial class YouTubeChannelInfo : pb::IMessage<YouTubeChannelInfo> {
+    private static readonly pb::MessageParser<YouTubeChannelInfo> _parser = new pb::MessageParser<YouTubeChannelInfo>(() => new YouTubeChannelInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<YouTubeChannelInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[29]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public YouTubeChannelInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public YouTubeChannelInfo(YouTubeChannelInfo other) : this() {
+      ChannelId = other.ChannelId;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public YouTubeChannelInfo Clone() {
+      return new YouTubeChannelInfo(this);
+    }
+
+    /// <summary>Field number for the "channel_id" field.</summary>
+    public const int ChannelIdFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_channelId_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string channelId_;
+    /// <summary>
+    /// The YouTube uploader channel id or the channel code of a YouTube channel.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ChannelId {
+      get { return channelId_; }
+      set {
+        channelId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as YouTubeChannelInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(YouTubeChannelInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChannelId != other.ChannelId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (channelId_ != null) hash ^= ChannelId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (channelId_ != null) {
+        _single_channelId_codec.WriteTagAndValue(output, ChannelId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (channelId_ != null) {
+        size += _single_channelId_codec.CalculateSizeWithTag(ChannelId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(YouTubeChannelInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.channelId_ != null) {
+        if (channelId_ == null || other.ChannelId != "") {
+          ChannelId = other.ChannelId;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_channelId_codec.Read(input);
+            if (channelId_ == null || value != "") {
+              ChannelId = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A Proximity criterion. The geo point and radius determine what geographical
+  /// area is included. The address is a description of the geo point that does
+  /// not affect ad serving.
+  ///
+  /// There are two ways to create a proximity. First, by setting an address
+  /// and radius. The geo point will be automatically computed. Second, by
+  /// setting a geo point and radius. The address is an optional label that won't
+  /// be validated.
+  /// </summary>
+  public sealed partial class ProximityInfo : pb::IMessage<ProximityInfo> {
+    private static readonly pb::MessageParser<ProximityInfo> _parser = new pb::MessageParser<ProximityInfo>(() => new ProximityInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ProximityInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[30]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProximityInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProximityInfo(ProximityInfo other) : this() {
+      geoPoint_ = other.geoPoint_ != null ? other.geoPoint_.Clone() : null;
+      Radius = other.Radius;
+      radiusUnits_ = other.radiusUnits_;
+      address_ = other.address_ != null ? other.address_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ProximityInfo Clone() {
+      return new ProximityInfo(this);
+    }
+
+    /// <summary>Field number for the "geo_point" field.</summary>
+    public const int GeoPointFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Common.GeoPointInfo geoPoint_;
+    /// <summary>
+    /// Latitude and longitude.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.GeoPointInfo GeoPoint {
+      get { return geoPoint_; }
+      set {
+        geoPoint_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "radius" field.</summary>
+    public const int RadiusFieldNumber = 2;
+    private static readonly pb::FieldCodec<double?> _single_radius_codec = pb::FieldCodec.ForStructWrapper<double>(18);
+    private double? radius_;
+    /// <summary>
+    /// The radius of the proximity.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? Radius {
+      get { return radius_; }
+      set {
+        radius_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "radius_units" field.</summary>
+    public const int RadiusUnitsFieldNumber = 3;
+    private global::Google.Ads.GoogleAds.V0.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits radiusUnits_ = 0;
+    /// <summary>
+    /// The unit of measurement of the radius. Default is KILOMETERS.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits RadiusUnits {
+      get { return radiusUnits_; }
+      set {
+        radiusUnits_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "address" field.</summary>
+    public const int AddressFieldNumber = 4;
+    private global::Google.Ads.GoogleAds.V0.Common.AddressInfo address_;
+    /// <summary>
+    /// Full address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.AddressInfo Address {
+      get { return address_; }
+      set {
+        address_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ProximityInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ProximityInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(GeoPoint, other.GeoPoint)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(Radius, other.Radius)) return false;
+      if (RadiusUnits != other.RadiusUnits) return false;
+      if (!object.Equals(Address, other.Address)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (geoPoint_ != null) hash ^= GeoPoint.GetHashCode();
+      if (radius_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(Radius);
+      if (RadiusUnits != 0) hash ^= RadiusUnits.GetHashCode();
+      if (address_ != null) hash ^= Address.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (geoPoint_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(GeoPoint);
+      }
+      if (radius_ != null) {
+        _single_radius_codec.WriteTagAndValue(output, Radius);
+      }
+      if (RadiusUnits != 0) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) RadiusUnits);
+      }
+      if (address_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Address);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (geoPoint_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GeoPoint);
+      }
+      if (radius_ != null) {
+        size += _single_radius_codec.CalculateSizeWithTag(Radius);
+      }
+      if (RadiusUnits != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RadiusUnits);
+      }
+      if (address_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Address);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ProximityInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.geoPoint_ != null) {
+        if (geoPoint_ == null) {
+          geoPoint_ = new global::Google.Ads.GoogleAds.V0.Common.GeoPointInfo();
+        }
+        GeoPoint.MergeFrom(other.GeoPoint);
+      }
+      if (other.radius_ != null) {
+        if (radius_ == null || other.Radius != 0D) {
+          Radius = other.Radius;
+        }
+      }
+      if (other.RadiusUnits != 0) {
+        RadiusUnits = other.RadiusUnits;
+      }
+      if (other.address_ != null) {
+        if (address_ == null) {
+          address_ = new global::Google.Ads.GoogleAds.V0.Common.AddressInfo();
+        }
+        Address.MergeFrom(other.Address);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (geoPoint_ == null) {
+              geoPoint_ = new global::Google.Ads.GoogleAds.V0.Common.GeoPointInfo();
+            }
+            input.ReadMessage(geoPoint_);
+            break;
+          }
+          case 18: {
+            double? value = _single_radius_codec.Read(input);
+            if (radius_ == null || value != 0D) {
+              Radius = value;
+            }
+            break;
+          }
+          case 24: {
+            radiusUnits_ = (global::Google.Ads.GoogleAds.V0.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits) input.ReadEnum();
+            break;
+          }
+          case 34: {
+            if (address_ == null) {
+              address_ = new global::Google.Ads.GoogleAds.V0.Common.AddressInfo();
+            }
+            input.ReadMessage(address_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Geo point for proximity criterion.
+  /// </summary>
+  public sealed partial class GeoPointInfo : pb::IMessage<GeoPointInfo> {
+    private static readonly pb::MessageParser<GeoPointInfo> _parser = new pb::MessageParser<GeoPointInfo>(() => new GeoPointInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GeoPointInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[31]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GeoPointInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GeoPointInfo(GeoPointInfo other) : this() {
+      LongitudeInMicroDegrees = other.LongitudeInMicroDegrees;
+      LatitudeInMicroDegrees = other.LatitudeInMicroDegrees;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GeoPointInfo Clone() {
+      return new GeoPointInfo(this);
+    }
+
+    /// <summary>Field number for the "longitude_in_micro_degrees" field.</summary>
+    public const int LongitudeInMicroDegreesFieldNumber = 1;
+    private static readonly pb::FieldCodec<int?> _single_longitudeInMicroDegrees_codec = pb::FieldCodec.ForStructWrapper<int>(10);
+    private int? longitudeInMicroDegrees_;
+    /// <summary>
+    /// Micro degrees for the longitude.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int? LongitudeInMicroDegrees {
+      get { return longitudeInMicroDegrees_; }
+      set {
+        longitudeInMicroDegrees_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "latitude_in_micro_degrees" field.</summary>
+    public const int LatitudeInMicroDegreesFieldNumber = 2;
+    private static readonly pb::FieldCodec<int?> _single_latitudeInMicroDegrees_codec = pb::FieldCodec.ForStructWrapper<int>(18);
+    private int? latitudeInMicroDegrees_;
+    /// <summary>
+    /// Micro degrees for the latitude.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int? LatitudeInMicroDegrees {
+      get { return latitudeInMicroDegrees_; }
+      set {
+        latitudeInMicroDegrees_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GeoPointInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GeoPointInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (LongitudeInMicroDegrees != other.LongitudeInMicroDegrees) return false;
+      if (LatitudeInMicroDegrees != other.LatitudeInMicroDegrees) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (longitudeInMicroDegrees_ != null) hash ^= LongitudeInMicroDegrees.GetHashCode();
+      if (latitudeInMicroDegrees_ != null) hash ^= LatitudeInMicroDegrees.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (longitudeInMicroDegrees_ != null) {
+        _single_longitudeInMicroDegrees_codec.WriteTagAndValue(output, LongitudeInMicroDegrees);
+      }
+      if (latitudeInMicroDegrees_ != null) {
+        _single_latitudeInMicroDegrees_codec.WriteTagAndValue(output, LatitudeInMicroDegrees);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (longitudeInMicroDegrees_ != null) {
+        size += _single_longitudeInMicroDegrees_codec.CalculateSizeWithTag(LongitudeInMicroDegrees);
+      }
+      if (latitudeInMicroDegrees_ != null) {
+        size += _single_latitudeInMicroDegrees_codec.CalculateSizeWithTag(LatitudeInMicroDegrees);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GeoPointInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.longitudeInMicroDegrees_ != null) {
+        if (longitudeInMicroDegrees_ == null || other.LongitudeInMicroDegrees != 0) {
+          LongitudeInMicroDegrees = other.LongitudeInMicroDegrees;
+        }
+      }
+      if (other.latitudeInMicroDegrees_ != null) {
+        if (latitudeInMicroDegrees_ == null || other.LatitudeInMicroDegrees != 0) {
+          LatitudeInMicroDegrees = other.LatitudeInMicroDegrees;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            int? value = _single_longitudeInMicroDegrees_codec.Read(input);
+            if (longitudeInMicroDegrees_ == null || value != 0) {
+              LongitudeInMicroDegrees = value;
+            }
+            break;
+          }
+          case 18: {
+            int? value = _single_latitudeInMicroDegrees_codec.Read(input);
+            if (latitudeInMicroDegrees_ == null || value != 0) {
+              LatitudeInMicroDegrees = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Address for proximity criterion.
+  /// </summary>
+  public sealed partial class AddressInfo : pb::IMessage<AddressInfo> {
+    private static readonly pb::MessageParser<AddressInfo> _parser = new pb::MessageParser<AddressInfo>(() => new AddressInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AddressInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[32]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddressInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddressInfo(AddressInfo other) : this() {
+      PostalCode = other.PostalCode;
+      ProvinceCode = other.ProvinceCode;
+      CountryCode = other.CountryCode;
+      ProvinceName = other.ProvinceName;
+      StreetAddress = other.StreetAddress;
+      StreetAddress2 = other.StreetAddress2;
+      CityName = other.CityName;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AddressInfo Clone() {
+      return new AddressInfo(this);
+    }
+
+    /// <summary>Field number for the "postal_code" field.</summary>
+    public const int PostalCodeFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_postalCode_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string postalCode_;
+    /// <summary>
+    /// Postal code.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PostalCode {
+      get { return postalCode_; }
+      set {
+        postalCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "province_code" field.</summary>
+    public const int ProvinceCodeFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_provinceCode_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string provinceCode_;
+    /// <summary>
+    /// Province or state code.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ProvinceCode {
+      get { return provinceCode_; }
+      set {
+        provinceCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "country_code" field.</summary>
+    public const int CountryCodeFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_countryCode_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string countryCode_;
+    /// <summary>
+    /// Country code.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CountryCode {
+      get { return countryCode_; }
+      set {
+        countryCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "province_name" field.</summary>
+    public const int ProvinceNameFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_provinceName_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string provinceName_;
+    /// <summary>
+    /// Province or state name.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ProvinceName {
+      get { return provinceName_; }
+      set {
+        provinceName_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "street_address" field.</summary>
+    public const int StreetAddressFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _single_streetAddress_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+    private string streetAddress_;
+    /// <summary>
+    /// Street address line 1.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string StreetAddress {
+      get { return streetAddress_; }
+      set {
+        streetAddress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "street_address2" field.</summary>
+    public const int StreetAddress2FieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_streetAddress2_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string streetAddress2_;
+    /// <summary>
+    /// Street address line 2. This field is write-only. It is only used for
+    /// calculating the longitude and latitude of an address when geo_point is
+    /// empty.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string StreetAddress2 {
+      get { return streetAddress2_; }
+      set {
+        streetAddress2_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "city_name" field.</summary>
+    public const int CityNameFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _single_cityName_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string cityName_;
+    /// <summary>
+    /// Name of the city.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CityName {
+      get { return cityName_; }
+      set {
+        cityName_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AddressInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AddressInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PostalCode != other.PostalCode) return false;
+      if (ProvinceCode != other.ProvinceCode) return false;
+      if (CountryCode != other.CountryCode) return false;
+      if (ProvinceName != other.ProvinceName) return false;
+      if (StreetAddress != other.StreetAddress) return false;
+      if (StreetAddress2 != other.StreetAddress2) return false;
+      if (CityName != other.CityName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (postalCode_ != null) hash ^= PostalCode.GetHashCode();
+      if (provinceCode_ != null) hash ^= ProvinceCode.GetHashCode();
+      if (countryCode_ != null) hash ^= CountryCode.GetHashCode();
+      if (provinceName_ != null) hash ^= ProvinceName.GetHashCode();
+      if (streetAddress_ != null) hash ^= StreetAddress.GetHashCode();
+      if (streetAddress2_ != null) hash ^= StreetAddress2.GetHashCode();
+      if (cityName_ != null) hash ^= CityName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (postalCode_ != null) {
+        _single_postalCode_codec.WriteTagAndValue(output, PostalCode);
+      }
+      if (provinceCode_ != null) {
+        _single_provinceCode_codec.WriteTagAndValue(output, ProvinceCode);
+      }
+      if (countryCode_ != null) {
+        _single_countryCode_codec.WriteTagAndValue(output, CountryCode);
+      }
+      if (provinceName_ != null) {
+        _single_provinceName_codec.WriteTagAndValue(output, ProvinceName);
+      }
+      if (streetAddress_ != null) {
+        _single_streetAddress_codec.WriteTagAndValue(output, StreetAddress);
+      }
+      if (streetAddress2_ != null) {
+        _single_streetAddress2_codec.WriteTagAndValue(output, StreetAddress2);
+      }
+      if (cityName_ != null) {
+        _single_cityName_codec.WriteTagAndValue(output, CityName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (postalCode_ != null) {
+        size += _single_postalCode_codec.CalculateSizeWithTag(PostalCode);
+      }
+      if (provinceCode_ != null) {
+        size += _single_provinceCode_codec.CalculateSizeWithTag(ProvinceCode);
+      }
+      if (countryCode_ != null) {
+        size += _single_countryCode_codec.CalculateSizeWithTag(CountryCode);
+      }
+      if (provinceName_ != null) {
+        size += _single_provinceName_codec.CalculateSizeWithTag(ProvinceName);
+      }
+      if (streetAddress_ != null) {
+        size += _single_streetAddress_codec.CalculateSizeWithTag(StreetAddress);
+      }
+      if (streetAddress2_ != null) {
+        size += _single_streetAddress2_codec.CalculateSizeWithTag(StreetAddress2);
+      }
+      if (cityName_ != null) {
+        size += _single_cityName_codec.CalculateSizeWithTag(CityName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AddressInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.postalCode_ != null) {
+        if (postalCode_ == null || other.PostalCode != "") {
+          PostalCode = other.PostalCode;
+        }
+      }
+      if (other.provinceCode_ != null) {
+        if (provinceCode_ == null || other.ProvinceCode != "") {
+          ProvinceCode = other.ProvinceCode;
+        }
+      }
+      if (other.countryCode_ != null) {
+        if (countryCode_ == null || other.CountryCode != "") {
+          CountryCode = other.CountryCode;
+        }
+      }
+      if (other.provinceName_ != null) {
+        if (provinceName_ == null || other.ProvinceName != "") {
+          ProvinceName = other.ProvinceName;
+        }
+      }
+      if (other.streetAddress_ != null) {
+        if (streetAddress_ == null || other.StreetAddress != "") {
+          StreetAddress = other.StreetAddress;
+        }
+      }
+      if (other.streetAddress2_ != null) {
+        if (streetAddress2_ == null || other.StreetAddress2 != "") {
+          StreetAddress2 = other.StreetAddress2;
+        }
+      }
+      if (other.cityName_ != null) {
+        if (cityName_ == null || other.CityName != "") {
+          CityName = other.CityName;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_postalCode_codec.Read(input);
+            if (postalCode_ == null || value != "") {
+              PostalCode = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_provinceCode_codec.Read(input);
+            if (provinceCode_ == null || value != "") {
+              ProvinceCode = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_countryCode_codec.Read(input);
+            if (countryCode_ == null || value != "") {
+              CountryCode = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_provinceName_codec.Read(input);
+            if (provinceName_ == null || value != "") {
+              ProvinceName = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_streetAddress_codec.Read(input);
+            if (streetAddress_ == null || value != "") {
+              StreetAddress = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_streetAddress2_codec.Read(input);
+            if (streetAddress2_ == null || value != "") {
+              StreetAddress2 = value;
+            }
+            break;
+          }
+          case 58: {
+            string value = _single_cityName_codec.Read(input);
+            if (cityName_ == null || value != "") {
+              CityName = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A topic criterion. Use topics to target or exclude placements in the
+  /// Google Display Network based on the category into which the placement falls
+  /// (for example, "Pets &amp; Animals/Pets/Dogs").
+  /// </summary>
+  public sealed partial class TopicInfo : pb::IMessage<TopicInfo> {
+    private static readonly pb::MessageParser<TopicInfo> _parser = new pb::MessageParser<TopicInfo>(() => new TopicInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TopicInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor.MessageTypes[33]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TopicInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TopicInfo(TopicInfo other) : this() {
+      TopicConstant = other.TopicConstant;
+      path_ = other.path_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TopicInfo Clone() {
+      return new TopicInfo(this);
+    }
+
+    /// <summary>Field number for the "topic_constant" field.</summary>
+    public const int TopicConstantFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_topicConstant_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string topicConstant_;
+    /// <summary>
+    /// The Topic Constant resource name.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TopicConstant {
+      get { return topicConstant_; }
+      set {
+        topicConstant_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "path" field.</summary>
+    public const int PathFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_path_codec
+        = pb::FieldCodec.ForClassWrapper<string>(18);
+    private readonly pbc::RepeatedField<string> path_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// The category to target or exclude. Each subsequent element in the array
+    /// describes a more specific sub-category. For example,
+    /// "Pets &amp; Animals", "Pets", "Dogs" represents the "Pets &amp; Animals/Pets/Dogs"
+    /// category.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> Path {
+      get { return path_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TopicInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TopicInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TopicConstant != other.TopicConstant) return false;
+      if(!path_.Equals(other.path_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (topicConstant_ != null) hash ^= TopicConstant.GetHashCode();
+      hash ^= path_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (topicConstant_ != null) {
+        _single_topicConstant_codec.WriteTagAndValue(output, TopicConstant);
+      }
+      path_.WriteTo(output, _repeated_path_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (topicConstant_ != null) {
+        size += _single_topicConstant_codec.CalculateSizeWithTag(TopicConstant);
+      }
+      size += path_.CalculateSize(_repeated_path_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TopicInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.topicConstant_ != null) {
+        if (topicConstant_ == null || other.TopicConstant != "") {
+          TopicConstant = other.TopicConstant;
+        }
+      }
+      path_.Add(other.path_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_topicConstant_codec.Read(input);
+            if (topicConstant_ == null || value != "") {
+              TopicConstant = value;
+            }
+            break;
+          }
+          case 18: {
+            path_.AddEntriesFrom(input, _repeated_path_codec);
             break;
           }
         }

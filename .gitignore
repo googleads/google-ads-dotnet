@@ -29,6 +29,7 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+[Pp]ackages/
 
 # Visual Studio 2015
 .vs/

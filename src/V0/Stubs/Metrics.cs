@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
           string.Concat(
             "Cixnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vbWV0cmljcy5wcm90",
             "bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uGh5nb29nbGUvcHJv",
-            "dG9idWYvd3JhcHBlcnMucHJvdG8iwRgKB01ldHJpY3MSTAomYWxsX2NvbnZl",
+            "dG9idWYvd3JhcHBlcnMucHJvdG8iiBkKB01ldHJpY3MSTAomYWxsX2NvbnZl",
             "cnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3JhdGUYQSABKAsyHC5nb29nbGUu",
             "cHJvdG9idWYuRG91YmxlVmFsdWUSOwoVYWxsX2NvbnZlcnNpb25zX3ZhbHVl",
             "GEIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjUKD2FsbF9j",
@@ -65,46 +65,48 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "cHJvdG9idWYuRG91YmxlVmFsdWUSKQoDY3RyGB4gASgLMhwuZ29vZ2xlLnBy",
             "b3RvYnVmLkRvdWJsZVZhbHVlEjUKD2VuZ2FnZW1lbnRfcmF0ZRgfIAEoCzIc",
             "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIwCgtlbmdhZ2VtZW50cxgg",
-            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjAKC2ltcHJlc3Np",
-            "b25zGCUgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSNgoQaW50",
-            "ZXJhY3Rpb25fcmF0ZRgmIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVW",
-            "YWx1ZRIxCgxpbnRlcmFjdGlvbnMYJyABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "SW50NjRWYWx1ZRI4ChJpbnZhbGlkX2NsaWNrX3JhdGUYKCABKAsyHC5nb29n",
-            "bGUucHJvdG9idWYuRG91YmxlVmFsdWUSMwoOaW52YWxpZF9jbGlja3MYKSAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI6ChRwZXJjZW50X25l",
-            "d192aXNpdG9ycxgqIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
-            "ZRIwCgtwaG9uZV9jYWxscxgrIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
-            "NFZhbHVlEjYKEXBob25lX2ltcHJlc3Npb25zGCwgASgLMhsuZ29vZ2xlLnBy",
-            "b3RvYnVmLkludDY0VmFsdWUSOAoScGhvbmVfdGhyb3VnaF9yYXRlGC0gASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjIKDHJlbGF0aXZlX2N0",
-            "chguIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJJCiNzZWFy",
-            "Y2hfYnVkZ2V0X2xvc3RfaW1wcmVzc2lvbl9zaGFyZRgvIAEoCzIcLmdvb2ds",
-            "ZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJJCiNzZWFyY2hfZXhhY3RfbWF0Y2hf",
-            "aW1wcmVzc2lvbl9zaGFyZRgxIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3Vi",
-            "bGVWYWx1ZRI9ChdzZWFyY2hfaW1wcmVzc2lvbl9zaGFyZRgyIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJHCiFzZWFyY2hfcmFua19sb3N0",
-            "X2ltcHJlc3Npb25fc2hhcmUYMyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91",
-            "YmxlVmFsdWUSPwoZdmFsdWVfcGVyX2FsbF9jb252ZXJzaW9ucxg0IAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI6ChR2YWx1ZV9wZXJfY29u",
-            "dmVyc2lvbhg1IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI9",
-            "Chd2aWRlb19xdWFydGlsZV8xMDBfcmF0ZRg2IAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5Eb3VibGVWYWx1ZRI8ChZ2aWRlb19xdWFydGlsZV8yNV9yYXRlGDcg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjwKFnZpZGVvX3F1",
-            "YXJ0aWxlXzUwX3JhdGUYOCABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
-            "VmFsdWUSPAoWdmlkZW9fcXVhcnRpbGVfNzVfcmF0ZRg5IAEoCzIcLmdvb2ds",
-            "ZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI1Cg92aWRlb192aWV3X3JhdGUYOiAB",
-            "KAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSMAoLdmlkZW9fdmll",
-            "d3MYOyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI9Chh2aWV3",
-            "X3Rocm91Z2hfY29udmVyc2lvbnMYPCABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "SW50NjRWYWx1ZULCAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNv",
-            "bW1vbkIMTWV0cmljc1Byb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9jb21tb247Y29tbW9u",
-            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuQ29tbW9uygIeR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjBcQ29tbW9uYgZwcm90bzM="));
+            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEkUKH2hvdGVsX2F2",
+            "ZXJhZ2VfbGVhZF92YWx1ZV9taWNyb3MYSyABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuRG91YmxlVmFsdWUSMAoLaW1wcmVzc2lvbnMYJSABKAsyGy5nb29nbGUu",
+            "cHJvdG9idWYuSW50NjRWYWx1ZRI2ChBpbnRlcmFjdGlvbl9yYXRlGCYgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjEKDGludGVyYWN0aW9u",
+            "cxgnIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjgKEmludmFs",
+            "aWRfY2xpY2tfcmF0ZRgoIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVW",
+            "YWx1ZRIzCg5pbnZhbGlkX2NsaWNrcxgpIAEoCzIbLmdvb2dsZS5wcm90b2J1",
+            "Zi5JbnQ2NFZhbHVlEjoKFHBlcmNlbnRfbmV3X3Zpc2l0b3JzGCogASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjAKC3Bob25lX2NhbGxzGCsg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSNgoRcGhvbmVfaW1w",
+            "cmVzc2lvbnMYLCABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI4",
+            "ChJwaG9uZV90aHJvdWdoX3JhdGUYLSABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "RG91YmxlVmFsdWUSMgoMcmVsYXRpdmVfY3RyGC4gASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLkRvdWJsZVZhbHVlEkkKI3NlYXJjaF9idWRnZXRfbG9zdF9pbXBy",
+            "ZXNzaW9uX3NoYXJlGC8gASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZh",
+            "bHVlEkkKI3NlYXJjaF9leGFjdF9tYXRjaF9pbXByZXNzaW9uX3NoYXJlGDEg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEj0KF3NlYXJjaF9p",
+            "bXByZXNzaW9uX3NoYXJlGDIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
+            "ZVZhbHVlEkcKIXNlYXJjaF9yYW5rX2xvc3RfaW1wcmVzc2lvbl9zaGFyZRgz",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI/Chl2YWx1ZV9w",
+            "ZXJfYWxsX2NvbnZlcnNpb25zGDQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRv",
+            "dWJsZVZhbHVlEjoKFHZhbHVlX3Blcl9jb252ZXJzaW9uGDUgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEj0KF3ZpZGVvX3F1YXJ0aWxlXzEw",
+            "MF9yYXRlGDYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjwK",
+            "FnZpZGVvX3F1YXJ0aWxlXzI1X3JhdGUYNyABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuRG91YmxlVmFsdWUSPAoWdmlkZW9fcXVhcnRpbGVfNTBfcmF0ZRg4IAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI8ChZ2aWRlb19xdWFy",
+            "dGlsZV83NV9yYXRlGDkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZh",
+            "bHVlEjUKD3ZpZGVvX3ZpZXdfcmF0ZRg6IAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5Eb3VibGVWYWx1ZRIwCgt2aWRlb192aWV3cxg7IAEoCzIbLmdvb2dsZS5w",
+            "cm90b2J1Zi5JbnQ2NFZhbHVlEj0KGHZpZXdfdGhyb3VnaF9jb252ZXJzaW9u",
+            "cxg8IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQsIBCiJjb20u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uQgxNZXRyaWNzUHJvdG9Q",
+            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MFxDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.Metrics), global::Google.Ads.GoogleAds.V0.Common.Metrics.Parser, new[]{ "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromInteractionsValuePerInteraction", "AverageCost", "AverageCpc", "AverageCpm", "AveragePosition", "BounceRate", "Clicks", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CrossDeviceConversions", "Ctr", "EngagementRate", "Engagements", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchBudgetLostImpressionShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostImpressionShare", "ValuePerAllConversions", "ValuePerConversion", "VideoQuartile100Rate", "VideoQuartile25Rate", "VideoQuartile50Rate", "VideoQuartile75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.Metrics), global::Google.Ads.GoogleAds.V0.Common.Metrics.Parser, new[]{ "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromInteractionsValuePerInteraction", "AverageCost", "AverageCpc", "AverageCpm", "AveragePosition", "BounceRate", "Clicks", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CrossDeviceConversions", "Ctr", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchBudgetLostImpressionShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostImpressionShare", "ValuePerAllConversions", "ValuePerConversion", "VideoQuartile100Rate", "VideoQuartile25Rate", "VideoQuartile50Rate", "VideoQuartile75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null)
           }));
     }
     #endregion
@@ -167,6 +169,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
       Ctr = other.Ctr;
       EngagementRate = other.EngagementRate;
       Engagements = other.Engagements;
+      HotelAverageLeadValueMicros = other.HotelAverageLeadValueMicros;
       Impressions = other.Impressions;
       InteractionRate = other.InteractionRate;
       Interactions = other.Interactions;
@@ -649,6 +652,21 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
     }
 
+    /// <summary>Field number for the "hotel_average_lead_value_micros" field.</summary>
+    public const int HotelAverageLeadValueMicrosFieldNumber = 75;
+    private static readonly pb::FieldCodec<double?> _single_hotelAverageLeadValueMicros_codec = pb::FieldCodec.ForStructWrapper<double>(602);
+    private double? hotelAverageLeadValueMicros_;
+    /// <summary>
+    /// Average lead value of hotel.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? HotelAverageLeadValueMicros {
+      get { return hotelAverageLeadValueMicros_; }
+      set {
+        hotelAverageLeadValueMicros_ = value;
+      }
+    }
+
     /// <summary>Field number for the "impressions" field.</summary>
     public const int ImpressionsFieldNumber = 37;
     private static readonly pb::FieldCodec<long?> _single_impressions_codec = pb::FieldCodec.ForStructWrapper<long>(298);
@@ -1064,6 +1082,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(Ctr, other.Ctr)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(EngagementRate, other.EngagementRate)) return false;
       if (Engagements != other.Engagements) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(HotelAverageLeadValueMicros, other.HotelAverageLeadValueMicros)) return false;
       if (Impressions != other.Impressions) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(InteractionRate, other.InteractionRate)) return false;
       if (Interactions != other.Interactions) return false;
@@ -1121,6 +1140,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (ctr_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(Ctr);
       if (engagementRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(EngagementRate);
       if (engagements_ != null) hash ^= Engagements.GetHashCode();
+      if (hotelAverageLeadValueMicros_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(HotelAverageLeadValueMicros);
       if (impressions_ != null) hash ^= Impressions.GetHashCode();
       if (interactionRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(InteractionRate);
       if (interactions_ != null) hash ^= Interactions.GetHashCode();
@@ -1310,6 +1330,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (conversionLastConversionDate_ != null) {
         _single_conversionLastConversionDate_codec.WriteTagAndValue(output, ConversionLastConversionDate);
       }
+      if (hotelAverageLeadValueMicros_ != null) {
+        _single_hotelAverageLeadValueMicros_codec.WriteTagAndValue(output, HotelAverageLeadValueMicros);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1401,6 +1424,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
       if (engagements_ != null) {
         size += _single_engagements_codec.CalculateSizeWithTag(Engagements);
+      }
+      if (hotelAverageLeadValueMicros_ != null) {
+        size += _single_hotelAverageLeadValueMicros_codec.CalculateSizeWithTag(HotelAverageLeadValueMicros);
       }
       if (impressions_ != null) {
         size += _single_impressions_codec.CalculateSizeWithTag(Impressions);
@@ -1620,6 +1646,11 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (other.engagements_ != null) {
         if (engagements_ == null || other.Engagements != 0L) {
           Engagements = other.Engagements;
+        }
+      }
+      if (other.hotelAverageLeadValueMicros_ != null) {
+        if (hotelAverageLeadValueMicros_ == null || other.HotelAverageLeadValueMicros != 0D) {
+          HotelAverageLeadValueMicros = other.HotelAverageLeadValueMicros;
         }
       }
       if (other.impressions_ != null) {
@@ -2102,6 +2133,13 @@ namespace Google.Ads.GoogleAds.V0.Common {
             string value = _single_conversionLastConversionDate_codec.Read(input);
             if (conversionLastConversionDate_ == null || value != "") {
               ConversionLastConversionDate = value;
+            }
+            break;
+          }
+          case 602: {
+            double? value = _single_hotelAverageLeadValueMicros_codec.Read(input);
+            if (hotelAverageLeadValueMicros_ == null || value != 0D) {
+              HotelAverageLeadValueMicros = value;
             }
             break;
           }

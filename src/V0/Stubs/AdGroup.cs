@@ -27,36 +27,40 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYWRfZ3JvdXAu",
             "cHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxo1Z29v",
             "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uL2N1c3RvbV9wYXJhbWV0ZXIu",
-            "cHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2FkX2dyb3Vw",
-            "X3N0YXR1cy5wcm90bxoxZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMv",
-            "YWRfZ3JvdXBfdHlwZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJz",
-            "LnByb3RvIpkGCgdBZEdyb3VwEhUKDXJlc291cmNlX25hbWUYASABKAkSJwoC",
-            "aWQYAyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIqCgRuYW1l",
-            "GAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEk4KBnN0YXR1",
-            "cxgFIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkFkR3Jv",
-            "dXBTdGF0dXNFbnVtLkFkR3JvdXBTdGF0dXMSSAoEdHlwZRgMIAEoDjI6Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkFkR3JvdXBUeXBlRW51bS5B",
-            "ZEdyb3VwVHlwZRI7ChV0cmFja2luZ191cmxfdGVtcGxhdGUYDSABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSTgoVdXJsX2N1c3RvbV9wYXJh",
-            "bWV0ZXJzGAYgAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9u",
-            "LkN1c3RvbVBhcmFtZXRlchIuCghjYW1wYWlnbhgKIAEoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg5jcGNfYmlkX21pY3JvcxgOIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjMKDmNwbV9iaWRfbWljcm9z",
-            "GA8gASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSMwoOY3BhX2Jp",
-            "ZF9taWNyb3MYECABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIz",
-            "Cg5jcHZfYmlkX21pY3JvcxgRIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
-            "NFZhbHVlEjoKFHRhcmdldF9yb2FzX292ZXJyaWRlGBMgASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLkRvdWJsZVZhbHVlEjsKFnBlcmNlbnRfY3BjX2JpZF9taWNy",
-            "b3MYFCABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZULRAQolY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IMQWRHcm91cFBy",
-            "b3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
-            "YWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIh",
-            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
+            "cHJvdG8aPWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2FkX2dyb3Vw",
+            "X2FkX3JvdGF0aW9uX21vZGUucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRz",
+            "L3YwL2VudW1zL2FkX2dyb3VwX3N0YXR1cy5wcm90bxoxZ29vZ2xlL2Fkcy9n",
+            "b29nbGVhZHMvdjAvZW51bXMvYWRfZ3JvdXBfdHlwZS5wcm90bxoeZ29vZ2xl",
+            "L3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIoMHCgdBZEdyb3VwEhUKDXJlc291",
+            "cmNlX25hbWUYASABKAkSJwoCaWQYAyABKAsyGy5nb29nbGUucHJvdG9idWYu",
+            "SW50NjRWYWx1ZRIqCgRuYW1lGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlEk4KBnN0YXR1cxgFIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmVudW1zLkFkR3JvdXBTdGF0dXNFbnVtLkFkR3JvdXBTdGF0dXMS",
+            "SAoEdHlwZRgMIAEoDjI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
+            "LkFkR3JvdXBUeXBlRW51bS5BZEdyb3VwVHlwZRJoChBhZF9yb3RhdGlvbl9t",
+            "b2RlGBYgASgOMk4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQWRH",
+            "cm91cEFkUm90YXRpb25Nb2RlRW51bS5BZEdyb3VwQWRSb3RhdGlvbk1vZGUS",
+            "OwoVdHJhY2tpbmdfdXJsX3RlbXBsYXRlGA0gASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEk4KFXVybF9jdXN0b21fcGFyYW1ldGVycxgGIAMo",
+            "CzIvLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5DdXN0b21QYXJh",
+            "bWV0ZXISLgoIY2FtcGFpZ24YCiABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWUSMwoOY3BjX2JpZF9taWNyb3MYDiABKAsyGy5nb29nbGUucHJv",
+            "dG9idWYuSW50NjRWYWx1ZRIzCg5jcG1fYmlkX21pY3JvcxgPIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjMKDmNwYV9iaWRfbWljcm9zGBAg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSMwoOY3B2X2JpZF9t",
+            "aWNyb3MYESABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI6ChR0",
+            "YXJnZXRfcm9hc19vdmVycmlkZRgTIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5E",
+            "b3VibGVWYWx1ZRI7ChZwZXJjZW50X2NwY19iaWRfbWljcm9zGBQgASgLMhsu",
+            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVC0QEKJWNvbS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDEFkR3JvdXBQcm90b1ABWkpnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYwXFJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdRotationModeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroup), global::Google.Ads.GoogleAds.V0.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "CpaBidMicros", "CpvBidMicros", "TargetRoasOverride", "PercentCpcBidMicros" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroup), global::Google.Ads.GoogleAds.V0.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "CpaBidMicros", "CpvBidMicros", "TargetRoasOverride", "PercentCpcBidMicros" }, null, null, null)
           }));
     }
     #endregion
@@ -96,6 +100,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       Name = other.Name;
       status_ = other.status_;
       type_ = other.type_;
+      adRotationMode_ = other.adRotationMode_;
       TrackingUrlTemplate = other.TrackingUrlTemplate;
       urlCustomParameters_ = other.urlCustomParameters_.Clone();
       Campaign = other.Campaign;
@@ -196,6 +201,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "ad_rotation_mode" field.</summary>
+    public const int AdRotationModeFieldNumber = 22;
+    private global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode adRotationMode_ = 0;
+    /// <summary>
+    /// The ad rotation mode of the ad group.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode AdRotationMode {
+      get { return adRotationMode_; }
+      set {
+        adRotationMode_ = value;
+      }
+    }
+
     /// <summary>Field number for the "tracking_url_template" field.</summary>
     public const int TrackingUrlTemplateFieldNumber = 13;
     private static readonly pb::FieldCodec<string> _single_trackingUrlTemplate_codec = pb::FieldCodec.ForClassWrapper<string>(106);
@@ -231,8 +250,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private string campaign_;
     /// <summary>
     /// The campaign to which the ad group belongs.
-    ///
-    /// This field must not be used in WHERE clauses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Campaign {
@@ -355,6 +372,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (Name != other.Name) return false;
       if (Status != other.Status) return false;
       if (Type != other.Type) return false;
+      if (AdRotationMode != other.AdRotationMode) return false;
       if (TrackingUrlTemplate != other.TrackingUrlTemplate) return false;
       if(!urlCustomParameters_.Equals(other.urlCustomParameters_)) return false;
       if (Campaign != other.Campaign) return false;
@@ -375,6 +393,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (name_ != null) hash ^= Name.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
       if (Type != 0) hash ^= Type.GetHashCode();
+      if (AdRotationMode != 0) hash ^= AdRotationMode.GetHashCode();
       if (trackingUrlTemplate_ != null) hash ^= TrackingUrlTemplate.GetHashCode();
       hash ^= urlCustomParameters_.GetHashCode();
       if (campaign_ != null) hash ^= Campaign.GetHashCode();
@@ -440,6 +459,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (percentCpcBidMicros_ != null) {
         _single_percentCpcBidMicros_codec.WriteTagAndValue(output, PercentCpcBidMicros);
       }
+      if (AdRotationMode != 0) {
+        output.WriteRawTag(176, 1);
+        output.WriteEnum((int) AdRotationMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -462,6 +485,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (Type != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      if (AdRotationMode != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) AdRotationMode);
       }
       if (trackingUrlTemplate_ != null) {
         size += _single_trackingUrlTemplate_codec.CalculateSizeWithTag(TrackingUrlTemplate);
@@ -517,6 +543,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (other.Type != 0) {
         Type = other.Type;
+      }
+      if (other.AdRotationMode != 0) {
+        AdRotationMode = other.AdRotationMode;
       }
       if (other.trackingUrlTemplate_ != null) {
         if (trackingUrlTemplate_ == null || other.TrackingUrlTemplate != "") {
@@ -654,6 +683,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             if (percentCpcBidMicros_ == null || value != 0L) {
               PercentCpcBidMicros = value;
             }
+            break;
+          }
+          case 176: {
+            adRotationMode_ = (global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode) input.ReadEnum();
             break;
           }
         }

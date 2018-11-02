@@ -68,10 +68,17 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 Services.V0.GoogleAdsService);
 
             // Define a GAQL query to retrieve all billing setup information.
-            String searchQuery = "SELECT billing_setup.id, billing_setup.status, " +
-                "billing_setup.payments_account_id, billing_setup.payments_account_name, " +
-                "billing_setup.payments_profile_id, billing_setup.payments_profile_name, " +
-                "billing_setup.secondary_payments_profile_id FROM billing_setup";
+            string searchQuery = @"
+                SELECT
+                    billing_setup.id,
+                    billing_setup.status,
+                    billing_setup.payments_account,
+                    billing_setup.payments_account_info.payments_account_id,
+                    billing_setup.payments_account_info.payments_account_name,
+                    billing_setup.payments_account_info.payments_profile_id,
+                    billing_setup.payments_account_info.payments_profile_name,
+                    billing_setup.payments_account_info.secondary_payments_profile_id
+                FROM billing_setup";
 
             // Creates a request that will retrieve all billing setups using pages of the specified
             // page size.
@@ -93,13 +100,17 @@ namespace Google.Ads.GoogleAds.Examples.V0
                     {
                         BillingSetup billingSetup = googleAdsRow.BillingSetup;
                         Console.WriteLine("Billing setup with ID '{0}', status '{1}', " +
-                            "payments_account_id '{2}', payments_account_name '{3}', " +
-                            "payments_profile_id '{4}', payments_profile_name '{5}', " +
-                            "secondary_payments_profile_id '{6}'.",
-                            billingSetup.Id, billingSetup.Status, billingSetup.PaymentsAccountId,
-                            billingSetup.PaymentsAccountName, billingSetup.PaymentsProfileId,
-                            billingSetup.PaymentsProfileName,
-                            billingSetup.SecondaryPaymentsProfileId);
+                            "payments account '{2}', payments account Id '{3}', " +
+                            "payments account name '{4}', payments profile id '{5}', " +
+                            "payments profile name '{6}', secondary payments profile id '{7}'.",
+                            billingSetup.Id,
+                            billingSetup.Status,
+                            billingSetup.PaymentsAccount,
+                            billingSetup.PaymentsAccountInfo.PaymentsAccountId,
+                            billingSetup.PaymentsAccountInfo.PaymentsAccountName,
+                            billingSetup.PaymentsAccountInfo.PaymentsProfileId,
+                            billingSetup.PaymentsAccountInfo.PaymentsProfileName,
+                            billingSetup.PaymentsAccountInfo.SecondaryPaymentsProfileId);
                     }
                 }
             }
