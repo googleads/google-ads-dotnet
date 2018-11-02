@@ -25,16 +25,19 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF90eXBl",
-            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyK9AQoPQWRH",
-            "cm91cFR5cGVFbnVtIqkBCgtBZEdyb3VwVHlwZRIPCgtVTlNQRUNJRklFRBAA",
+            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyK0AgoPQWRH",
+            "cm91cFR5cGVFbnVtIqACCgtBZEdyb3VwVHlwZRIPCgtVTlNQRUNJRklFRBAA",
             "EgsKB1VOS05PV04QARITCg9TRUFSQ0hfU1RBTkRBUkQQAhIUChBESVNQTEFZ",
             "X1NUQU5EQVJEEAMSGAoUU0hPUFBJTkdfUFJPRFVDVF9BRFMQBBINCglIT1RF",
             "TF9BRFMQBhIWChJTSE9QUElOR19TTUFSVF9BRFMQBxIQCgxWSURFT19CVU1Q",
-            "RVIQCELBAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhBB",
-            "ZEdyb3VwVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
-            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjBcRW51bXNiBnByb3RvMw=="));
+            "RVIQCBIdChlWSURFT19UUlVFX1ZJRVdfSU5fU1RSRUFNEAkSHgoaVklERU9f",
+            "VFJVRV9WSUVXX0lOX0RJU1BMQVkQChIhCh1WSURFT19OT05fU0tJUFBBQkxF",
+            "X0lOX1NUUkVBTRALEhMKD1ZJREVPX09VVFNUUkVBTRAMQsEBCiFjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCEEFkR3JvdXBUeXBlUHJvdG9Q",
+            "AVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5H",
+            "b29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxF",
+            "bnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -191,6 +194,22 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Short unskippable in-stream video ads.
         /// </summary>
         [pbr::OriginalName("VIDEO_BUMPER")] VideoBumper = 8,
+        /// <summary>
+        /// TrueView (skippable) in-stream video ads.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_TRUE_VIEW_IN_STREAM")] VideoTrueViewInStream = 9,
+        /// <summary>
+        /// TrueView in-display video ads.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_TRUE_VIEW_IN_DISPLAY")] VideoTrueViewInDisplay = 10,
+        /// <summary>
+        /// Unskippable in-stream video ads.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_NON_SKIPPABLE_IN_STREAM")] VideoNonSkippableInStream = 11,
+        /// <summary>
+        /// Outstream video ads.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_OUTSTREAM")] VideoOutstream = 12,
       }
 
     }

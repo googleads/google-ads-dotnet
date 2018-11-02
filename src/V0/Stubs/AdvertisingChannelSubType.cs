@@ -26,16 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "CkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZHZlcnRpc2luZ19j",
             "aGFubmVsX3N1Yl90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lbnVtcyLLAQodQWR2ZXJ0aXNpbmdDaGFubmVsU3ViVHlwZUVudW0iqQEK",
+            "MC5lbnVtcyKSAgodQWR2ZXJ0aXNpbmdDaGFubmVsU3ViVHlwZUVudW0i8AEK",
             "GUFkdmVydGlzaW5nQ2hhbm5lbFN1YlR5cGUSDwoLVU5TUEVDSUZJRUQQABIL",
             "CgdVTktOT1dOEAESFQoRU0VBUkNIX01PQklMRV9BUFAQAhIWChJESVNQTEFZ",
             "X01PQklMRV9BUFAQAxISCg5TRUFSQ0hfRVhQUkVTUxAEEhMKD0RJU1BMQVlf",
-            "RVhQUkVTUxAFEhYKElNIT1BQSU5HX1NNQVJUX0FEUxAGQs8BCiFjb20uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCHkFkdmVydGlzaW5nQ2hhbm5l",
-            "bFN1YlR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
-            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGq",
-            "Ah1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYwXEVudW1zYgZwcm90bzM="));
+            "RVhQUkVTUxAFEhYKElNIT1BQSU5HX1NNQVJUX0FEUxAGEhQKEERJU1BMQVlf",
+            "R01BSUxfQUQQBxIaChZESVNQTEFZX1NNQVJUX0NBTVBBSUdOEAgSEwoPVklE",
+            "RU9fT1VUU1RSRUFNEAlCzwEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5lbnVtc0IeQWR2ZXJ0aXNpbmdDaGFubmVsU3ViVHlwZVByb3RvUAFaQmdv",
+            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
+            "ZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xl",
+            "QWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -184,6 +186,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Smart Shopping campaigns.
         /// </summary>
         [pbr::OriginalName("SHOPPING_SMART_ADS")] ShoppingSmartAds = 6,
+        /// <summary>
+        /// Gmail Ad campaigns.
+        /// </summary>
+        [pbr::OriginalName("DISPLAY_GMAIL_AD")] DisplayGmailAd = 7,
+        /// <summary>
+        /// Smart display campaigns.
+        /// </summary>
+        [pbr::OriginalName("DISPLAY_SMART_CAMPAIGN")] DisplaySmartCampaign = 8,
+        /// <summary>
+        /// Video Outstream campaigns.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_OUTSTREAM")] VideoOutstream = 9,
       }
 
     }

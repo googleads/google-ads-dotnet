@@ -15,8 +15,9 @@
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V0.Services;
 using Google.Api.Gax;
+using static Google.Ads.GoogleAds.V0.Enums.ChangeStatusResourceTypeEnum.Types;
+
 using System;
-using static Google.Ads.GoogleAds.V0.Enums.ResourceTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V0
 {
@@ -118,37 +119,37 @@ namespace Google.Ads.GoogleAds.Examples.V0
         /// Return the name of the most specific resource that changed.
         /// </summary>
         /// <param name="resourceType">Type of the resource.</param>
-        /// <param name="row">A single row returned from the GoogleAdsService.</param>
-        /// <returns>The name of the populated field that contains the most
-        /// specific resource that changed.</returns>
-        string SpecificResourceName(ResourceType resourceType, GoogleAdsRow row)
+        /// <param name="row">Each returned row contains all possible changed fields</param>
+        /// <returns>The resource name of the changed field based on the resource type.
+        /// The changed field's parent is also populated, but is not used.</returns>
+        string SpecificResourceName(ChangeStatusResourceType resourceType, GoogleAdsRow row)
         {
             string resourceName = "";
 
             switch (resourceType)
             {
-                case ResourceType.AdGroup:
+                case ChangeStatusResourceType.AdGroup:
                     resourceName = row.ChangeStatus.AdGroup;
                     break;
 
-                case ResourceType.AdGroupAd:
+                case ChangeStatusResourceType.AdGroupAd:
                     resourceName = row.ChangeStatus.AdGroupAd;
                     break;
 
-                case ResourceType.AdGroupCriterion:
+                case ChangeStatusResourceType.AdGroupCriterion:
                     resourceName = row.ChangeStatus.AdGroupCriterion;
                     break;
 
-                case ResourceType.Campaign:
+                case ChangeStatusResourceType.Campaign:
                     resourceName = row.ChangeStatus.Campaign;
                     break;
 
-                case ResourceType.CampaignCriterion:
+                case ChangeStatusResourceType.CampaignCriterion:
                     resourceName = row.ChangeStatus.CampaignCriterion;
                     break;
 
-                case ResourceType.Unknown:
-                case ResourceType.Unspecified:
+                case ChangeStatusResourceType.Unknown:
+                case ChangeStatusResourceType.Unspecified:
                 default:
                     resourceName = "";
                     break;

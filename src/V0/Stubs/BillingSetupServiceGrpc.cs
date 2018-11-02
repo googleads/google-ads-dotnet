@@ -33,8 +33,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
   ///
   /// Mutates:
   /// The REMOVE operation cancels a pending billing setup.
-  /// Functionality for creating new billing setups will be supported in a future
-  /// version.
+  /// The CREATE operation creates a new billing setup.
   /// </summary>
   public static partial class BillingSetupService
   {
@@ -80,7 +79,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
 
       /// <summary>
-      /// Cancels a pending billing setup.
+      /// Creates a billing setup, or cancels an existing billing setup.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -160,7 +159,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return CallInvoker.AsyncUnaryCall(__Method_GetBillingSetup, null, options, request);
       }
       /// <summary>
-      /// Cancels a pending billing setup.
+      /// Creates a billing setup, or cancels an existing billing setup.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -172,7 +171,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return MutateBillingSetup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Cancels a pending billing setup.
+      /// Creates a billing setup, or cancels an existing billing setup.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -182,7 +181,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return CallInvoker.BlockingUnaryCall(__Method_MutateBillingSetup, null, options, request);
       }
       /// <summary>
-      /// Cancels a pending billing setup.
+      /// Creates a billing setup, or cancels an existing billing setup.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -194,7 +193,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return MutateBillingSetupAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Cancels a pending billing setup.
+      /// Creates a billing setup, or cancels an existing billing setup.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

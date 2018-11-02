@@ -26,72 +26,62 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvY29udmVyc2lv",
             "bl9hY3Rpb24ucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291",
-            "cmNlcxo1Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvYXR0cmlidXRp",
-            "b25fbW9kZWwucHJvdG8aPmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1z",
-            "L2NvbnZlcnNpb25fYWN0aW9uX2NhdGVnb3J5LnByb3RvGkNnb29nbGUvYWRz",
-            "L2dvb2dsZWFkcy92MC9lbnVtcy9jb252ZXJzaW9uX2FjdGlvbl9jb3VudGlu",
-            "Z190eXBlLnByb3RvGjxnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9j",
-            "b252ZXJzaW9uX2FjdGlvbl9zdGF0dXMucHJvdG8aOmdvb2dsZS9hZHMvZ29v",
-            "Z2xlYWRzL3YwL2VudW1zL2NvbnZlcnNpb25fYWN0aW9uX3R5cGUucHJvdG8a",
-            "PGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2RhdGFfZHJpdmVuX21v",
-            "ZGVsX3N0YXR1cy5wcm90bxo9Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51",
-            "bXMvdHJhY2tpbmdfY29kZV9wYWdlX2Zvcm1hdC5wcm90bxo2Z29vZ2xlL2Fk",
-            "cy9nb29nbGVhZHMvdjAvZW51bXMvdHJhY2tpbmdfY29kZV90eXBlLnByb3Rv",
-            "Gh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8ing8KEENvbnZlcnNp",
-            "b25BY3Rpb24SFQoNcmVzb3VyY2VfbmFtZRgBIAEoCRInCgJpZBgCIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEioKBG5hbWUYAyABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSYAoGc3RhdHVzGAQgASgOMlAu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQ29udmVyc2lvbkFjdGlv",
-            "blN0YXR1c0VudW0uQ29udmVyc2lvbkFjdGlvblN0YXR1cxJaCgR0eXBlGAUg",
-            "ASgOMkwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQ29udmVyc2lv",
-            "bkFjdGlvblR5cGVFbnVtLkNvbnZlcnNpb25BY3Rpb25UeXBlEmYKCGNhdGVn",
-            "b3J5GAYgASgOMlQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQ29u",
-            "dmVyc2lvbkFjdGlvbkNhdGVnb3J5RW51bS5Db252ZXJzaW9uQWN0aW9uQ2F0",
-            "ZWdvcnkSNAoOb3duZXJfY3VzdG9tZXIYByABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSQQodaW5jbHVkZV9pbl9jb252ZXJzaW9uc19tZXRy",
-            "aWMYCCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEkcKImNsaWNr",
-            "X3Rocm91Z2hfbG9va2JhY2tfd2luZG93X2RheXMYCSABKAsyGy5nb29nbGUu",
-            "cHJvdG9idWYuSW50NjRWYWx1ZRJGCiF2aWV3X3Rocm91Z2hfbG9va2JhY2tf",
-            "d2luZG93X2RheXMYCiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
-            "ZRJZCg52YWx1ZV9zZXR0aW5ncxgLIAEoCzJBLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLnJlc291cmNlcy5Db252ZXJzaW9uQWN0aW9uLlZhbHVlU2V0dGlu",
-            "Z3MScwoNY291bnRpbmdfdHlwZRgMIAEoDjJcLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVudW1zLkNvbnZlcnNpb25BY3Rpb25Db3VudGluZ1R5cGVFbnVt",
-            "LkNvbnZlcnNpb25BY3Rpb25Db3VudGluZ1R5cGUScAoaYXR0cmlidXRpb25f",
-            "bW9kZWxfc2V0dGluZ3MYDSABKAsyTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5yZXNvdXJjZXMuQ29udmVyc2lvbkFjdGlvbi5BdHRyaWJ1dGlvbk1vZGVs",
-            "U2V0dGluZ3MSVAoMdGFnX3NuaXBwZXRzGA4gAygLMj4uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjAucmVzb3VyY2VzLkNvbnZlcnNpb25BY3Rpb24uVGFnU25p",
-            "cHBldBJAChtwaG9uZV9jYWxsX2R1cmF0aW9uX3NlY29uZHMYDyABKAsyGy5n",
-            "b29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIsCgZhcHBfaWQYECABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUa7QEKGEF0dHJpYnV0aW9uTW9k",
-            "ZWxTZXR0aW5ncxJfChFhdHRyaWJ1dGlvbl9tb2RlbBgBIAEoDjJELmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkF0dHJpYnV0aW9uTW9kZWxFbnVt",
-            "LkF0dHJpYnV0aW9uTW9kZWwScAoYZGF0YV9kcml2ZW5fbW9kZWxfc3RhdHVz",
-            "GAIgASgOMk4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuRGF0YURy",
-            "aXZlbk1vZGVsU3RhdHVzRW51bS5EYXRhRHJpdmVuTW9kZWxTdGF0dXMaswIK",
-            "ClRhZ1NuaXBwZXQSUgoEdHlwZRgBIAEoDjJELmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVudW1zLlRyYWNraW5nQ29kZVR5cGVFbnVtLlRyYWNraW5nQ29k",
-            "ZVR5cGUSZQoLcGFnZV9mb3JtYXQYAiABKA4yUC5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lbnVtcy5UcmFja2luZ0NvZGVQYWdlRm9ybWF0RW51bS5UcmFj",
-            "a2luZ0NvZGVQYWdlRm9ybWF0EjUKD2dsb2JhbF9zaXRlX3RhZxgDIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1ldmVudF9zbmlwcGV0",
-            "GAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlGr8BCg1WYWx1",
-            "ZVNldHRpbmdzEjMKDWRlZmF1bHRfdmFsdWUYASABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuRG91YmxlVmFsdWUSOwoVZGVmYXVsdF9jdXJyZW5jeV9jb2RlGAIg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjwKGGFsd2F5c191",
-            "c2VfZGVmYXVsdF92YWx1ZRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29s",
-            "VmFsdWVC2gEKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJj",
-            "ZXNCFUNvbnZlcnNpb25BY3Rpb25Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9y",
-            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3Vy",
-            "Y2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYw",
-            "LlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNl",
-            "c2IGcHJvdG8z"));
+            "cmNlcxowZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uL3RhZ19zbmlw",
+            "cGV0LnByb3RvGjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hdHRy",
+            "aWJ1dGlvbl9tb2RlbC5wcm90bxo+Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
+            "ZW51bXMvY29udmVyc2lvbl9hY3Rpb25fY2F0ZWdvcnkucHJvdG8aQ2dvb2ds",
+            "ZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2NvbnZlcnNpb25fYWN0aW9uX2Nv",
+            "dW50aW5nX3R5cGUucHJvdG8aPGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
+            "dW1zL2NvbnZlcnNpb25fYWN0aW9uX3N0YXR1cy5wcm90bxo6Z29vZ2xlL2Fk",
+            "cy9nb29nbGVhZHMvdjAvZW51bXMvY29udmVyc2lvbl9hY3Rpb25fdHlwZS5w",
+            "cm90bxo8Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvZGF0YV9kcml2",
+            "ZW5fbW9kZWxfc3RhdHVzLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBl",
+            "cnMucHJvdG8i1AwKEENvbnZlcnNpb25BY3Rpb24SFQoNcmVzb3VyY2VfbmFt",
+            "ZRgBIAEoCRInCgJpZBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
+            "bHVlEioKBG5hbWUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWUSYAoGc3RhdHVzGAQgASgOMlAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZW51bXMuQ29udmVyc2lvbkFjdGlvblN0YXR1c0VudW0uQ29udmVyc2lvbkFj",
+            "dGlvblN0YXR1cxJaCgR0eXBlGAUgASgOMkwuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuZW51bXMuQ29udmVyc2lvbkFjdGlvblR5cGVFbnVtLkNvbnZlcnNp",
+            "b25BY3Rpb25UeXBlEmYKCGNhdGVnb3J5GAYgASgOMlQuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjAuZW51bXMuQ29udmVyc2lvbkFjdGlvbkNhdGVnb3J5RW51",
+            "bS5Db252ZXJzaW9uQWN0aW9uQ2F0ZWdvcnkSNAoOb3duZXJfY3VzdG9tZXIY",
+            "ByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSQQodaW5jbHVk",
+            "ZV9pbl9jb252ZXJzaW9uc19tZXRyaWMYCCABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuQm9vbFZhbHVlEkcKImNsaWNrX3Rocm91Z2hfbG9va2JhY2tfd2luZG93",
+            "X2RheXMYCSABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRJGCiF2",
+            "aWV3X3Rocm91Z2hfbG9va2JhY2tfd2luZG93X2RheXMYCiABKAsyGy5nb29n",
+            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRJZCg52YWx1ZV9zZXR0aW5ncxgLIAEo",
+            "CzJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5Db252ZXJz",
+            "aW9uQWN0aW9uLlZhbHVlU2V0dGluZ3MScwoNY291bnRpbmdfdHlwZRgMIAEo",
+            "DjJcLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkNvbnZlcnNpb25B",
+            "Y3Rpb25Db3VudGluZ1R5cGVFbnVtLkNvbnZlcnNpb25BY3Rpb25Db3VudGlu",
+            "Z1R5cGUScAoaYXR0cmlidXRpb25fbW9kZWxfc2V0dGluZ3MYDSABKAsyTC5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQ29udmVyc2lvbkFj",
+            "dGlvbi5BdHRyaWJ1dGlvbk1vZGVsU2V0dGluZ3MSQAoMdGFnX3NuaXBwZXRz",
+            "GA4gAygLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlRhZ1Nu",
+            "aXBwZXQSQAobcGhvbmVfY2FsbF9kdXJhdGlvbl9zZWNvbmRzGA8gASgLMhsu",
+            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSLAoGYXBwX2lkGBAgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlGu0BChhBdHRyaWJ1dGlvbk1v",
+            "ZGVsU2V0dGluZ3MSXwoRYXR0cmlidXRpb25fbW9kZWwYASABKA4yRC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5BdHRyaWJ1dGlvbk1vZGVsRW51",
+            "bS5BdHRyaWJ1dGlvbk1vZGVsEnAKGGRhdGFfZHJpdmVuX21vZGVsX3N0YXR1",
+            "cxgCIAEoDjJOLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkRhdGFE",
+            "cml2ZW5Nb2RlbFN0YXR1c0VudW0uRGF0YURyaXZlbk1vZGVsU3RhdHVzGr8B",
+            "Cg1WYWx1ZVNldHRpbmdzEjMKDWRlZmF1bHRfdmFsdWUYASABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuRG91YmxlVmFsdWUSOwoVZGVmYXVsdF9jdXJyZW5jeV9j",
+            "b2RlGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjwKGGFs",
+            "d2F5c191c2VfZGVmYXVsdF92YWx1ZRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5Cb29sVmFsdWVC2gEKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5y",
+            "ZXNvdXJjZXNCFUNvbnZlcnNpb25BY3Rpb25Qcm90b1ABWkpnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
+            "cmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xl",
+            "QWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJl",
+            "c291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.AttributionModelReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ConversionActionCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ConversionActionCountingTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ConversionActionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ConversionActionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DataDrivenModelStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TrackingCodePageFormatReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TrackingCodeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.TagSnippetReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AttributionModelReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ConversionActionCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ConversionActionCountingTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ConversionActionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ConversionActionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DataDrivenModelStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ConversionAction), global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "Category", "OwnerCustomer", "IncludeInConversionsMetric", "ClickThroughLookbackWindowDays", "ViewThroughLookbackWindowDays", "ValueSettings", "CountingType", "AttributionModelSettings", "TagSnippets", "PhoneCallDurationSeconds", "AppId" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.AttributionModelSettings), global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.AttributionModelSettings.Parser, new[]{ "AttributionModel", "DataDrivenModelStatus" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.TagSnippet), global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.TagSnippet.Parser, new[]{ "Type", "PageFormat", "GlobalSiteTag", "EventSnippet" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.ValueSettings), global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.ValueSettings.Parser, new[]{ "DefaultValue", "DefaultCurrencyCode", "AlwaysUseDefaultValue" }, null, null, null)})
           }));
     }
@@ -352,14 +342,14 @@ namespace Google.Ads.GoogleAds.V0.Resources {
 
     /// <summary>Field number for the "tag_snippets" field.</summary>
     public const int TagSnippetsFieldNumber = 14;
-    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.TagSnippet> _repeated_tagSnippets_codec
-        = pb::FieldCodec.ForMessage(114, global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.TagSnippet.Parser);
-    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.TagSnippet> tagSnippets_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.TagSnippet>();
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.TagSnippet> _repeated_tagSnippets_codec
+        = pb::FieldCodec.ForMessage(114, global::Google.Ads.GoogleAds.V0.Common.TagSnippet.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.TagSnippet> tagSnippets_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.TagSnippet>();
     /// <summary>
     /// The snippets used for tracking conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Types.TagSnippet> TagSnippets {
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.TagSnippet> TagSnippets {
       get { return tagSnippets_; }
     }
 
@@ -927,247 +917,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
 
       /// <summary>
-      /// The site tag and event snippet pair for a TrackingCodeType.
-      /// </summary>
-      public sealed partial class TagSnippet : pb::IMessage<TagSnippet> {
-        private static readonly pb::MessageParser<TagSnippet> _parser = new pb::MessageParser<TagSnippet>(() => new TagSnippet());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<TagSnippet> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Descriptor.NestedTypes[1]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TagSnippet() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TagSnippet(TagSnippet other) : this() {
-          type_ = other.type_;
-          pageFormat_ = other.pageFormat_;
-          GlobalSiteTag = other.GlobalSiteTag;
-          EventSnippet = other.EventSnippet;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TagSnippet Clone() {
-          return new TagSnippet(this);
-        }
-
-        /// <summary>Field number for the "type" field.</summary>
-        public const int TypeFieldNumber = 1;
-        private global::Google.Ads.GoogleAds.V0.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType type_ = 0;
-        /// <summary>
-        /// The type of the generated tag snippets for tracking conversions.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Google.Ads.GoogleAds.V0.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType Type {
-          get { return type_; }
-          set {
-            type_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "page_format" field.</summary>
-        public const int PageFormatFieldNumber = 2;
-        private global::Google.Ads.GoogleAds.V0.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat pageFormat_ = 0;
-        /// <summary>
-        /// The format of the web page where the tracking tag and snippet will be
-        /// installed, e.g. HTML.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Google.Ads.GoogleAds.V0.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat PageFormat {
-          get { return pageFormat_; }
-          set {
-            pageFormat_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "global_site_tag" field.</summary>
-        public const int GlobalSiteTagFieldNumber = 3;
-        private static readonly pb::FieldCodec<string> _single_globalSiteTag_codec = pb::FieldCodec.ForClassWrapper<string>(26);
-        private string globalSiteTag_;
-        /// <summary>
-        /// The site tag that adds visitors to your basic remarketing lists and sets
-        /// new cookies on your domain.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string GlobalSiteTag {
-          get { return globalSiteTag_; }
-          set {
-            globalSiteTag_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "event_snippet" field.</summary>
-        public const int EventSnippetFieldNumber = 4;
-        private static readonly pb::FieldCodec<string> _single_eventSnippet_codec = pb::FieldCodec.ForClassWrapper<string>(34);
-        private string eventSnippet_;
-        /// <summary>
-        /// The event snippet that works with the site tag to track actions that
-        /// should be counted as conversions.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string EventSnippet {
-          get { return eventSnippet_; }
-          set {
-            eventSnippet_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as TagSnippet);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(TagSnippet other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (Type != other.Type) return false;
-          if (PageFormat != other.PageFormat) return false;
-          if (GlobalSiteTag != other.GlobalSiteTag) return false;
-          if (EventSnippet != other.EventSnippet) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (Type != 0) hash ^= Type.GetHashCode();
-          if (PageFormat != 0) hash ^= PageFormat.GetHashCode();
-          if (globalSiteTag_ != null) hash ^= GlobalSiteTag.GetHashCode();
-          if (eventSnippet_ != null) hash ^= EventSnippet.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (Type != 0) {
-            output.WriteRawTag(8);
-            output.WriteEnum((int) Type);
-          }
-          if (PageFormat != 0) {
-            output.WriteRawTag(16);
-            output.WriteEnum((int) PageFormat);
-          }
-          if (globalSiteTag_ != null) {
-            _single_globalSiteTag_codec.WriteTagAndValue(output, GlobalSiteTag);
-          }
-          if (eventSnippet_ != null) {
-            _single_eventSnippet_codec.WriteTagAndValue(output, EventSnippet);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (Type != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
-          }
-          if (PageFormat != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PageFormat);
-          }
-          if (globalSiteTag_ != null) {
-            size += _single_globalSiteTag_codec.CalculateSizeWithTag(GlobalSiteTag);
-          }
-          if (eventSnippet_ != null) {
-            size += _single_eventSnippet_codec.CalculateSizeWithTag(EventSnippet);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(TagSnippet other) {
-          if (other == null) {
-            return;
-          }
-          if (other.Type != 0) {
-            Type = other.Type;
-          }
-          if (other.PageFormat != 0) {
-            PageFormat = other.PageFormat;
-          }
-          if (other.globalSiteTag_ != null) {
-            if (globalSiteTag_ == null || other.GlobalSiteTag != "") {
-              GlobalSiteTag = other.GlobalSiteTag;
-            }
-          }
-          if (other.eventSnippet_ != null) {
-            if (eventSnippet_ == null || other.EventSnippet != "") {
-              EventSnippet = other.EventSnippet;
-            }
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                type_ = (global::Google.Ads.GoogleAds.V0.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType) input.ReadEnum();
-                break;
-              }
-              case 16: {
-                pageFormat_ = (global::Google.Ads.GoogleAds.V0.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat) input.ReadEnum();
-                break;
-              }
-              case 26: {
-                string value = _single_globalSiteTag_codec.Read(input);
-                if (globalSiteTag_ == null || value != "") {
-                  GlobalSiteTag = value;
-                }
-                break;
-              }
-              case 34: {
-                string value = _single_eventSnippet_codec.Read(input);
-                if (eventSnippet_ == null || value != "") {
-                  EventSnippet = value;
-                }
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      /// <summary>
       /// Settings related to the value for conversion events associated with this
       /// conversion action.
       /// </summary>
@@ -1179,7 +928,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Descriptor.NestedTypes[2]; }
+          get { return global::Google.Ads.GoogleAds.V0.Resources.ConversionAction.Descriptor.NestedTypes[1]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

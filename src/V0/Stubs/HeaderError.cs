@@ -25,14 +25,14 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvaGVhZGVyX2Vycm9y",
-            "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMiZQoPSGVh",
-            "ZGVyRXJyb3JFbnVtIlIKC0hlYWRlckVycm9yEg8KC1VOU1BFQ0lGSUVEEAAS",
-            "CwoHVU5LTk9XThABEiUKIUlOVkFMSURfVVNFUl9TRUxFQ1RFRF9DVVNUT01F",
-            "Ul9JRBACQsYBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
-            "QhBIZWFkZXJFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3Jz",
-            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
+            "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMiXQoPSGVh",
+            "ZGVyRXJyb3JFbnVtIkoKC0hlYWRlckVycm9yEg8KC1VOU1BFQ0lGSUVEEAAS",
+            "CwoHVU5LTk9XThABEh0KGUlOVkFMSURfTE9HSU5fQ1VTVE9NRVJfSUQQA0LG",
+            "AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IQSGVhZGVy",
+            "RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
+            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -162,9 +162,9 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The user selected customer id could not be validated.
+        /// The login customer id could not be validated.
         /// </summary>
-        [pbr::OriginalName("INVALID_USER_SELECTED_CUSTOMER_ID")] InvalidUserSelectedCustomerId = 2,
+        [pbr::OriginalName("INVALID_LOGIN_CUSTOMER_ID")] InvalidLoginCustomerId = 3,
       }
 
     }

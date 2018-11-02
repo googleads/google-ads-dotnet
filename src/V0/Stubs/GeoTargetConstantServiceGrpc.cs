@@ -33,6 +33,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.GetGeoTargetConstantRequest> __Marshaller_GetGeoTargetConstantRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.GetGeoTargetConstantRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant> __Marshaller_GeoTargetConstant = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest> __Marshaller_SuggestGeoTargetConstantsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse> __Marshaller_SuggestGeoTargetConstantsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.GetGeoTargetConstantRequest, global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant> __Method_GetGeoTargetConstant = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.GetGeoTargetConstantRequest, global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant>(
         grpc::MethodType.Unary,
@@ -40,6 +42,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
         "GetGeoTargetConstant",
         __Marshaller_GetGeoTargetConstantRequest,
         __Marshaller_GeoTargetConstant);
+
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest, global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse> __Method_SuggestGeoTargetConstants = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest, global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SuggestGeoTargetConstants",
+        __Marshaller_SuggestGeoTargetConstantsRequest,
+        __Marshaller_SuggestGeoTargetConstantsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -57,6 +66,17 @@ namespace Google.Ads.GoogleAds.V0.Services {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Resources.GeoTargetConstant> GetGeoTargetConstant(global::Google.Ads.GoogleAds.V0.Services.GetGeoTargetConstantRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Returns GeoTargetConstant suggestions by location name or by resource name.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstants(global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -130,6 +150,50 @@ namespace Google.Ads.GoogleAds.V0.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetGeoTargetConstant, null, options, request);
       }
+      /// <summary>
+      /// Returns GeoTargetConstant suggestions by location name or by resource name.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse SuggestGeoTargetConstants(global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SuggestGeoTargetConstants(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns GeoTargetConstant suggestions by location name or by resource name.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse SuggestGeoTargetConstants(global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SuggestGeoTargetConstants, null, options, request);
+      }
+      /// <summary>
+      /// Returns GeoTargetConstant suggestions by location name or by resource name.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return SuggestGeoTargetConstantsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns GeoTargetConstant suggestions by location name or by resource name.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(global::Google.Ads.GoogleAds.V0.Services.SuggestGeoTargetConstantsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SuggestGeoTargetConstants, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GeoTargetConstantServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -142,7 +206,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public static grpc::ServerServiceDefinition BindService(GeoTargetConstantServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetGeoTargetConstant, serviceImpl.GetGeoTargetConstant).Build();
+          .AddMethod(__Method_GetGeoTargetConstant, serviceImpl.GetGeoTargetConstant)
+          .AddMethod(__Method_SuggestGeoTargetConstants, serviceImpl.SuggestGeoTargetConstants).Build();
     }
 
   }

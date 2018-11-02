@@ -25,52 +25,76 @@ namespace Google.Ads.GoogleAds.V0.Common {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vYWRfdHlwZV9pbmZv",
-            "cy5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uGh5nb29n",
-            "bGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8ipAEKClRleHRBZEluZm8SLgoI",
-            "aGVhZGxpbmUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "MgoMZGVzY3JpcHRpb24xGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEjIKDGRlc2NyaXB0aW9uMhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZSKNAgoSRXhwYW5kZWRUZXh0QWRJbmZvEjQKDmhlYWRs",
-            "aW5lX3BhcnQxGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "EjQKDmhlYWRsaW5lX3BhcnQyGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cmluZ1ZhbHVlEjEKC2Rlc2NyaXB0aW9uGAMgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlEisKBXBhdGgxGAQgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlEisKBXBhdGgyGAUgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlIn0KE0R5bmFtaWNTZWFyY2hBZEluZm8SMgoMZGVz",
-            "Y3JpcHRpb24xGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "EjIKDGRlc2NyaXB0aW9uMhgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZSLsAQoXUmVzcG9uc2l2ZURpc3BsYXlBZEluZm8SNAoOc2hvcnRf",
-            "aGVhZGxpbmUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "MwoNbG9uZ19oZWFkbGluZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZRIxCgtkZXNjcmlwdGlvbhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRIzCg1idXNpbmVzc19uYW1lGAQgASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlIskDCg5DYWxsT25seUFkSW5mbxIyCgxj",
-            "b3VudHJ5X2NvZGUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
-            "dWUSMgoMcGhvbmVfbnVtYmVyGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cmluZ1ZhbHVlEjMKDWJ1c2luZXNzX25hbWUYAyABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUSMgoMZGVzY3JpcHRpb24xGAQgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKDGRlc2NyaXB0aW9uMhgFIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgxjYWxsX3RyYWNr",
-            "ZWQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjsKF2Rpc2Fi",
-            "bGVfY2FsbF9jb252ZXJzaW9uGAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJv",
-            "b2xWYWx1ZRJDCh1waG9uZV9udW1iZXJfdmVyaWZpY2F0aW9uX3VybBgIIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJQChtFeHBhbmRlZER5",
-            "bmFtaWNTZWFyY2hBZEluZm8SMQoLZGVzY3JpcHRpb24YASABKAsyHC5nb29n",
-            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUiDQoLSG90ZWxBZEluZm8iFQoTU2hv",
-            "cHBpbmdTbWFydEFkSW5mbyIXChVTaG9wcGluZ1Byb2R1Y3RBZEluZm9CxgEK",
-            "ImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CEEFkVHlwZUlu",
-            "Zm9zUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
-            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5H",
-            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMFxDb21tb25iBnByb3RvMw=="));
+            "cy5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uGkNnb29n",
+            "bGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jYWxsX2NvbnZlcnNpb25fcmVw",
+            "b3J0aW5nX3N0YXRlLnByb3RvGj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9l",
+            "bnVtcy9kaXNwbGF5X2FkX2Zvcm1hdF9zZXR0aW5nLnByb3RvGh5nb29nbGUv",
+            "cHJvdG9idWYvd3JhcHBlcnMucHJvdG8ipAEKClRleHRBZEluZm8SLgoIaGVh",
+            "ZGxpbmUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMgoM",
+            "ZGVzY3JpcHRpb24xGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
+            "bHVlEjIKDGRlc2NyaXB0aW9uMhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZSL3AgoSRXhwYW5kZWRUZXh0QWRJbmZvEjQKDmhlYWRsaW5l",
+            "X3BhcnQxGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjQK",
+            "DmhlYWRsaW5lX3BhcnQyGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEjQKDmhlYWRsaW5lX3BhcnQzGAYgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEjEKC2Rlc2NyaXB0aW9uGAMgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKDGRlc2NyaXB0aW9uMhgHIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIrCgVwYXRoMRgEIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIrCgVwYXRoMhgFIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJ9ChNEeW5hbWljU2VhcmNo",
+            "QWRJbmZvEjIKDGRlc2NyaXB0aW9uMRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZRIyCgxkZXNjcmlwdGlvbjIYAiABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUi9wYKF1Jlc3BvbnNpdmVEaXNwbGF5QWRJ",
+            "bmZvEjQKDnNob3J0X2hlYWRsaW5lGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEjMKDWxvbmdfaGVhZGxpbmUYAiABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUSMQoLZGVzY3JpcHRpb24YAyABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoNYnVzaW5lc3NfbmFtZRgE",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI4ChRhbGxvd19m",
+            "bGV4aWJsZV9jb2xvchgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFs",
+            "dWUSMgoMYWNjZW50X2NvbG9yGAYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlEjAKCm1haW5fY29sb3IYByABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUSOQoTY2FsbF90b19hY3Rpb25fdGV4dBgIIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgpsb2dvX2ltYWdlGAkg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjcKEXNxdWFyZV9s",
+            "b2dvX2ltYWdlGAogASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjUKD21hcmtldGluZ19pbWFnZRgLIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRI8ChZzcXVhcmVfbWFya2V0aW5nX2ltYWdlGAwgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEmgKDmZvcm1hdF9zZXR0aW5n",
+            "GA0gASgOMlAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuRGlzcGxh",
+            "eUFkRm9ybWF0U2V0dGluZ0VudW0uRGlzcGxheUFkRm9ybWF0U2V0dGluZxIy",
+            "CgxwcmljZV9wcmVmaXgYDiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWUSMAoKcHJvbW9fdGV4dBgPIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZSKFBQoOQ2FsbE9ubHlBZEluZm8SMgoMY291bnRyeV9jb2Rl",
+            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKDHBob25l",
+            "X251bWJlchgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIz",
+            "Cg1idXNpbmVzc19uYW1lGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEjIKDGRlc2NyaXB0aW9uMRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZRIyCgxkZXNjcmlwdGlvbjIYBSABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUSMAoMY2FsbF90cmFja2VkGAYgASgLMhou",
+            "Z29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRI7ChdkaXNhYmxlX2NhbGxfY29u",
+            "dmVyc2lvbhgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSQwod",
+            "cGhvbmVfbnVtYmVyX3ZlcmlmaWNhdGlvbl91cmwYCCABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUSNwoRY29udmVyc2lvbl9hY3Rpb24YCSAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSgAEKGmNvbnZlcnNp",
+            "b25fcmVwb3J0aW5nX3N0YXRlGAogASgOMlwuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuZW51bXMuQ2FsbENvbnZlcnNpb25SZXBvcnRpbmdTdGF0ZUVudW0u",
+            "Q2FsbENvbnZlcnNpb25SZXBvcnRpbmdTdGF0ZSJQChtFeHBhbmRlZER5bmFt",
+            "aWNTZWFyY2hBZEluZm8SMQoLZGVzY3JpcHRpb24YASABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUiDQoLSG90ZWxBZEluZm8iFQoTU2hvcHBp",
+            "bmdTbWFydEFkSW5mbyIXChVTaG9wcGluZ1Byb2R1Y3RBZEluZm9CxgEKImNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CEEFkVHlwZUluZm9z",
+            "UHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWMFxDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DisplayAdFormatSettingReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TextAdInfo), global::Google.Ads.GoogleAds.V0.Common.TextAdInfo.Parser, new[]{ "Headline", "Description1", "Description2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ExpandedTextAdInfo), global::Google.Ads.GoogleAds.V0.Common.ExpandedTextAdInfo.Parser, new[]{ "HeadlinePart1", "HeadlinePart2", "Description", "Path1", "Path2" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ExpandedTextAdInfo), global::Google.Ads.GoogleAds.V0.Common.ExpandedTextAdInfo.Parser, new[]{ "HeadlinePart1", "HeadlinePart2", "HeadlinePart3", "Description", "Description2", "Path1", "Path2" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.DynamicSearchAdInfo), global::Google.Ads.GoogleAds.V0.Common.DynamicSearchAdInfo.Parser, new[]{ "Description1", "Description2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ResponsiveDisplayAdInfo), global::Google.Ads.GoogleAds.V0.Common.ResponsiveDisplayAdInfo.Parser, new[]{ "ShortHeadline", "LongHeadline", "Description", "BusinessName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.CallOnlyAdInfo), global::Google.Ads.GoogleAds.V0.Common.CallOnlyAdInfo.Parser, new[]{ "CountryCode", "PhoneNumber", "BusinessName", "Description1", "Description2", "CallTracked", "DisableCallConversion", "PhoneNumberVerificationUrl" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ResponsiveDisplayAdInfo), global::Google.Ads.GoogleAds.V0.Common.ResponsiveDisplayAdInfo.Parser, new[]{ "ShortHeadline", "LongHeadline", "Description", "BusinessName", "AllowFlexibleColor", "AccentColor", "MainColor", "CallToActionText", "LogoImage", "SquareLogoImage", "MarketingImage", "SquareMarketingImage", "FormatSetting", "PricePrefix", "PromoText" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.CallOnlyAdInfo), global::Google.Ads.GoogleAds.V0.Common.CallOnlyAdInfo.Parser, new[]{ "CountryCode", "PhoneNumber", "BusinessName", "Description1", "Description2", "CallTracked", "DisableCallConversion", "PhoneNumberVerificationUrl", "ConversionAction", "ConversionReportingState" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ExpandedDynamicSearchAdInfo), global::Google.Ads.GoogleAds.V0.Common.ExpandedDynamicSearchAdInfo.Parser, new[]{ "Description" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.HotelAdInfo), global::Google.Ads.GoogleAds.V0.Common.HotelAdInfo.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ShoppingSmartAdInfo), global::Google.Ads.GoogleAds.V0.Common.ShoppingSmartAdInfo.Parser, null, null, null, null),
@@ -323,7 +347,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
     public ExpandedTextAdInfo(ExpandedTextAdInfo other) : this() {
       HeadlinePart1 = other.HeadlinePart1;
       HeadlinePart2 = other.HeadlinePart2;
+      HeadlinePart3 = other.HeadlinePart3;
       Description = other.Description;
+      Description2 = other.Description2;
       Path1 = other.Path1;
       Path2 = other.Path2;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -364,6 +390,21 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
     }
 
+    /// <summary>Field number for the "headline_part3" field.</summary>
+    public const int HeadlinePart3FieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_headlinePart3_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string headlinePart3_;
+    /// <summary>
+    /// The third part of the ad's headline.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HeadlinePart3 {
+      get { return headlinePart3_; }
+      set {
+        headlinePart3_ = value;
+      }
+    }
+
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 3;
     private static readonly pb::FieldCodec<string> _single_description_codec = pb::FieldCodec.ForClassWrapper<string>(26);
@@ -376,6 +417,21 @@ namespace Google.Ads.GoogleAds.V0.Common {
       get { return description_; }
       set {
         description_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "description2" field.</summary>
+    public const int Description2FieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _single_description2_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string description2_;
+    /// <summary>
+    /// The second description of the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description2 {
+      get { return description2_; }
+      set {
+        description2_ = value;
       }
     }
 
@@ -424,7 +480,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
       if (HeadlinePart1 != other.HeadlinePart1) return false;
       if (HeadlinePart2 != other.HeadlinePart2) return false;
+      if (HeadlinePart3 != other.HeadlinePart3) return false;
       if (Description != other.Description) return false;
+      if (Description2 != other.Description2) return false;
       if (Path1 != other.Path1) return false;
       if (Path2 != other.Path2) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -435,7 +493,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
       int hash = 1;
       if (headlinePart1_ != null) hash ^= HeadlinePart1.GetHashCode();
       if (headlinePart2_ != null) hash ^= HeadlinePart2.GetHashCode();
+      if (headlinePart3_ != null) hash ^= HeadlinePart3.GetHashCode();
       if (description_ != null) hash ^= Description.GetHashCode();
+      if (description2_ != null) hash ^= Description2.GetHashCode();
       if (path1_ != null) hash ^= Path1.GetHashCode();
       if (path2_ != null) hash ^= Path2.GetHashCode();
       if (_unknownFields != null) {
@@ -466,6 +526,12 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (path2_ != null) {
         _single_path2_codec.WriteTagAndValue(output, Path2);
       }
+      if (headlinePart3_ != null) {
+        _single_headlinePart3_codec.WriteTagAndValue(output, HeadlinePart3);
+      }
+      if (description2_ != null) {
+        _single_description2_codec.WriteTagAndValue(output, Description2);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -480,8 +546,14 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (headlinePart2_ != null) {
         size += _single_headlinePart2_codec.CalculateSizeWithTag(HeadlinePart2);
       }
+      if (headlinePart3_ != null) {
+        size += _single_headlinePart3_codec.CalculateSizeWithTag(HeadlinePart3);
+      }
       if (description_ != null) {
         size += _single_description_codec.CalculateSizeWithTag(Description);
+      }
+      if (description2_ != null) {
+        size += _single_description2_codec.CalculateSizeWithTag(Description2);
       }
       if (path1_ != null) {
         size += _single_path1_codec.CalculateSizeWithTag(Path1);
@@ -510,9 +582,19 @@ namespace Google.Ads.GoogleAds.V0.Common {
           HeadlinePart2 = other.HeadlinePart2;
         }
       }
+      if (other.headlinePart3_ != null) {
+        if (headlinePart3_ == null || other.HeadlinePart3 != "") {
+          HeadlinePart3 = other.HeadlinePart3;
+        }
+      }
       if (other.description_ != null) {
         if (description_ == null || other.Description != "") {
           Description = other.Description;
+        }
+      }
+      if (other.description2_ != null) {
+        if (description2_ == null || other.Description2 != "") {
+          Description2 = other.Description2;
         }
       }
       if (other.path1_ != null) {
@@ -568,6 +650,20 @@ namespace Google.Ads.GoogleAds.V0.Common {
             string value = _single_path2_codec.Read(input);
             if (path2_ == null || value != "") {
               Path2 = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_headlinePart3_codec.Read(input);
+            if (headlinePart3_ == null || value != "") {
+              HeadlinePart3 = value;
+            }
+            break;
+          }
+          case 58: {
+            string value = _single_description2_codec.Read(input);
+            if (description2_ == null || value != "") {
+              Description2 = value;
             }
             break;
           }
@@ -785,6 +881,17 @@ namespace Google.Ads.GoogleAds.V0.Common {
       LongHeadline = other.LongHeadline;
       Description = other.Description;
       BusinessName = other.BusinessName;
+      AllowFlexibleColor = other.AllowFlexibleColor;
+      AccentColor = other.AccentColor;
+      MainColor = other.MainColor;
+      CallToActionText = other.CallToActionText;
+      LogoImage = other.LogoImage;
+      SquareLogoImage = other.SquareLogoImage;
+      MarketingImage = other.MarketingImage;
+      SquareMarketingImage = other.SquareMarketingImage;
+      formatSetting_ = other.formatSetting_;
+      PricePrefix = other.PricePrefix;
+      PromoText = other.PromoText;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -853,6 +960,179 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
     }
 
+    /// <summary>Field number for the "allow_flexible_color" field.</summary>
+    public const int AllowFlexibleColorFieldNumber = 5;
+    private static readonly pb::FieldCodec<bool?> _single_allowFlexibleColor_codec = pb::FieldCodec.ForStructWrapper<bool>(42);
+    private bool? allowFlexibleColor_;
+    /// <summary>
+    /// Advertiser's consent to allow flexible color. When true, the ad may be
+    /// served with different color if necessary. When false, the ad will be served
+    /// with the specified colors or a neutral color.
+    /// The default value is true.
+    /// Must be true if main_color and accent_color are not set.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool? AllowFlexibleColor {
+      get { return allowFlexibleColor_; }
+      set {
+        allowFlexibleColor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "accent_color" field.</summary>
+    public const int AccentColorFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_accentColor_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string accentColor_;
+    /// <summary>
+    /// The accent color of the ad in hexadecimal, e.g. #ffffff for white.
+    /// If one of main_color and accent_color is set, the other is required as
+    /// well.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AccentColor {
+      get { return accentColor_; }
+      set {
+        accentColor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "main_color" field.</summary>
+    public const int MainColorFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _single_mainColor_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string mainColor_;
+    /// <summary>
+    /// The main color of the ad in hexadecimal, e.g. #ffffff for white.
+    /// If one of main_color and accent_color is set, the other is required as
+    /// well.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MainColor {
+      get { return mainColor_; }
+      set {
+        mainColor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "call_to_action_text" field.</summary>
+    public const int CallToActionTextFieldNumber = 8;
+    private static readonly pb::FieldCodec<string> _single_callToActionText_codec = pb::FieldCodec.ForClassWrapper<string>(66);
+    private string callToActionText_;
+    /// <summary>
+    /// The call-to-action text for the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CallToActionText {
+      get { return callToActionText_; }
+      set {
+        callToActionText_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "logo_image" field.</summary>
+    public const int LogoImageFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _single_logoImage_codec = pb::FieldCodec.ForClassWrapper<string>(74);
+    private string logoImage_;
+    /// <summary>
+    /// The MediaFile resource name of the logo image used in the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LogoImage {
+      get { return logoImage_; }
+      set {
+        logoImage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "square_logo_image" field.</summary>
+    public const int SquareLogoImageFieldNumber = 10;
+    private static readonly pb::FieldCodec<string> _single_squareLogoImage_codec = pb::FieldCodec.ForClassWrapper<string>(82);
+    private string squareLogoImage_;
+    /// <summary>
+    /// The MediaFile resource name of the square logo image used in the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SquareLogoImage {
+      get { return squareLogoImage_; }
+      set {
+        squareLogoImage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "marketing_image" field.</summary>
+    public const int MarketingImageFieldNumber = 11;
+    private static readonly pb::FieldCodec<string> _single_marketingImage_codec = pb::FieldCodec.ForClassWrapper<string>(90);
+    private string marketingImage_;
+    /// <summary>
+    /// The MediaFile resource name of the marketing image used in the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MarketingImage {
+      get { return marketingImage_; }
+      set {
+        marketingImage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "square_marketing_image" field.</summary>
+    public const int SquareMarketingImageFieldNumber = 12;
+    private static readonly pb::FieldCodec<string> _single_squareMarketingImage_codec = pb::FieldCodec.ForClassWrapper<string>(98);
+    private string squareMarketingImage_;
+    /// <summary>
+    /// The MediaFile resource name of the square marketing image used in the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SquareMarketingImage {
+      get { return squareMarketingImage_; }
+      set {
+        squareMarketingImage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "format_setting" field.</summary>
+    public const int FormatSettingFieldNumber = 13;
+    private global::Google.Ads.GoogleAds.V0.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting formatSetting_ = 0;
+    /// <summary>
+    /// Specifies which format the ad will be served in. Default is ALL_FORMATS.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting FormatSetting {
+      get { return formatSetting_; }
+      set {
+        formatSetting_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "price_prefix" field.</summary>
+    public const int PricePrefixFieldNumber = 14;
+    private static readonly pb::FieldCodec<string> _single_pricePrefix_codec = pb::FieldCodec.ForClassWrapper<string>(114);
+    private string pricePrefix_;
+    /// <summary>
+    /// Prefix before price. E.g. 'as low as'.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PricePrefix {
+      get { return pricePrefix_; }
+      set {
+        pricePrefix_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "promo_text" field.</summary>
+    public const int PromoTextFieldNumber = 15;
+    private static readonly pb::FieldCodec<string> _single_promoText_codec = pb::FieldCodec.ForClassWrapper<string>(122);
+    private string promoText_;
+    /// <summary>
+    /// Promotion text used for dyanmic formats of responsive ads. For example
+    /// 'Free two-day shipping'.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PromoText {
+      get { return promoText_; }
+      set {
+        promoText_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ResponsiveDisplayAdInfo);
@@ -870,6 +1150,17 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (LongHeadline != other.LongHeadline) return false;
       if (Description != other.Description) return false;
       if (BusinessName != other.BusinessName) return false;
+      if (AllowFlexibleColor != other.AllowFlexibleColor) return false;
+      if (AccentColor != other.AccentColor) return false;
+      if (MainColor != other.MainColor) return false;
+      if (CallToActionText != other.CallToActionText) return false;
+      if (LogoImage != other.LogoImage) return false;
+      if (SquareLogoImage != other.SquareLogoImage) return false;
+      if (MarketingImage != other.MarketingImage) return false;
+      if (SquareMarketingImage != other.SquareMarketingImage) return false;
+      if (FormatSetting != other.FormatSetting) return false;
+      if (PricePrefix != other.PricePrefix) return false;
+      if (PromoText != other.PromoText) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -880,6 +1171,17 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (longHeadline_ != null) hash ^= LongHeadline.GetHashCode();
       if (description_ != null) hash ^= Description.GetHashCode();
       if (businessName_ != null) hash ^= BusinessName.GetHashCode();
+      if (allowFlexibleColor_ != null) hash ^= AllowFlexibleColor.GetHashCode();
+      if (accentColor_ != null) hash ^= AccentColor.GetHashCode();
+      if (mainColor_ != null) hash ^= MainColor.GetHashCode();
+      if (callToActionText_ != null) hash ^= CallToActionText.GetHashCode();
+      if (logoImage_ != null) hash ^= LogoImage.GetHashCode();
+      if (squareLogoImage_ != null) hash ^= SquareLogoImage.GetHashCode();
+      if (marketingImage_ != null) hash ^= MarketingImage.GetHashCode();
+      if (squareMarketingImage_ != null) hash ^= SquareMarketingImage.GetHashCode();
+      if (FormatSetting != 0) hash ^= FormatSetting.GetHashCode();
+      if (pricePrefix_ != null) hash ^= PricePrefix.GetHashCode();
+      if (promoText_ != null) hash ^= PromoText.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -905,6 +1207,40 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (businessName_ != null) {
         _single_businessName_codec.WriteTagAndValue(output, BusinessName);
       }
+      if (allowFlexibleColor_ != null) {
+        _single_allowFlexibleColor_codec.WriteTagAndValue(output, AllowFlexibleColor);
+      }
+      if (accentColor_ != null) {
+        _single_accentColor_codec.WriteTagAndValue(output, AccentColor);
+      }
+      if (mainColor_ != null) {
+        _single_mainColor_codec.WriteTagAndValue(output, MainColor);
+      }
+      if (callToActionText_ != null) {
+        _single_callToActionText_codec.WriteTagAndValue(output, CallToActionText);
+      }
+      if (logoImage_ != null) {
+        _single_logoImage_codec.WriteTagAndValue(output, LogoImage);
+      }
+      if (squareLogoImage_ != null) {
+        _single_squareLogoImage_codec.WriteTagAndValue(output, SquareLogoImage);
+      }
+      if (marketingImage_ != null) {
+        _single_marketingImage_codec.WriteTagAndValue(output, MarketingImage);
+      }
+      if (squareMarketingImage_ != null) {
+        _single_squareMarketingImage_codec.WriteTagAndValue(output, SquareMarketingImage);
+      }
+      if (FormatSetting != 0) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) FormatSetting);
+      }
+      if (pricePrefix_ != null) {
+        _single_pricePrefix_codec.WriteTagAndValue(output, PricePrefix);
+      }
+      if (promoText_ != null) {
+        _single_promoText_codec.WriteTagAndValue(output, PromoText);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -924,6 +1260,39 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
       if (businessName_ != null) {
         size += _single_businessName_codec.CalculateSizeWithTag(BusinessName);
+      }
+      if (allowFlexibleColor_ != null) {
+        size += _single_allowFlexibleColor_codec.CalculateSizeWithTag(AllowFlexibleColor);
+      }
+      if (accentColor_ != null) {
+        size += _single_accentColor_codec.CalculateSizeWithTag(AccentColor);
+      }
+      if (mainColor_ != null) {
+        size += _single_mainColor_codec.CalculateSizeWithTag(MainColor);
+      }
+      if (callToActionText_ != null) {
+        size += _single_callToActionText_codec.CalculateSizeWithTag(CallToActionText);
+      }
+      if (logoImage_ != null) {
+        size += _single_logoImage_codec.CalculateSizeWithTag(LogoImage);
+      }
+      if (squareLogoImage_ != null) {
+        size += _single_squareLogoImage_codec.CalculateSizeWithTag(SquareLogoImage);
+      }
+      if (marketingImage_ != null) {
+        size += _single_marketingImage_codec.CalculateSizeWithTag(MarketingImage);
+      }
+      if (squareMarketingImage_ != null) {
+        size += _single_squareMarketingImage_codec.CalculateSizeWithTag(SquareMarketingImage);
+      }
+      if (FormatSetting != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) FormatSetting);
+      }
+      if (pricePrefix_ != null) {
+        size += _single_pricePrefix_codec.CalculateSizeWithTag(PricePrefix);
+      }
+      if (promoText_ != null) {
+        size += _single_promoText_codec.CalculateSizeWithTag(PromoText);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -954,6 +1323,59 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (other.businessName_ != null) {
         if (businessName_ == null || other.BusinessName != "") {
           BusinessName = other.BusinessName;
+        }
+      }
+      if (other.allowFlexibleColor_ != null) {
+        if (allowFlexibleColor_ == null || other.AllowFlexibleColor != false) {
+          AllowFlexibleColor = other.AllowFlexibleColor;
+        }
+      }
+      if (other.accentColor_ != null) {
+        if (accentColor_ == null || other.AccentColor != "") {
+          AccentColor = other.AccentColor;
+        }
+      }
+      if (other.mainColor_ != null) {
+        if (mainColor_ == null || other.MainColor != "") {
+          MainColor = other.MainColor;
+        }
+      }
+      if (other.callToActionText_ != null) {
+        if (callToActionText_ == null || other.CallToActionText != "") {
+          CallToActionText = other.CallToActionText;
+        }
+      }
+      if (other.logoImage_ != null) {
+        if (logoImage_ == null || other.LogoImage != "") {
+          LogoImage = other.LogoImage;
+        }
+      }
+      if (other.squareLogoImage_ != null) {
+        if (squareLogoImage_ == null || other.SquareLogoImage != "") {
+          SquareLogoImage = other.SquareLogoImage;
+        }
+      }
+      if (other.marketingImage_ != null) {
+        if (marketingImage_ == null || other.MarketingImage != "") {
+          MarketingImage = other.MarketingImage;
+        }
+      }
+      if (other.squareMarketingImage_ != null) {
+        if (squareMarketingImage_ == null || other.SquareMarketingImage != "") {
+          SquareMarketingImage = other.SquareMarketingImage;
+        }
+      }
+      if (other.FormatSetting != 0) {
+        FormatSetting = other.FormatSetting;
+      }
+      if (other.pricePrefix_ != null) {
+        if (pricePrefix_ == null || other.PricePrefix != "") {
+          PricePrefix = other.PricePrefix;
+        }
+      }
+      if (other.promoText_ != null) {
+        if (promoText_ == null || other.PromoText != "") {
+          PromoText = other.PromoText;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -992,6 +1414,80 @@ namespace Google.Ads.GoogleAds.V0.Common {
             string value = _single_businessName_codec.Read(input);
             if (businessName_ == null || value != "") {
               BusinessName = value;
+            }
+            break;
+          }
+          case 42: {
+            bool? value = _single_allowFlexibleColor_codec.Read(input);
+            if (allowFlexibleColor_ == null || value != false) {
+              AllowFlexibleColor = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_accentColor_codec.Read(input);
+            if (accentColor_ == null || value != "") {
+              AccentColor = value;
+            }
+            break;
+          }
+          case 58: {
+            string value = _single_mainColor_codec.Read(input);
+            if (mainColor_ == null || value != "") {
+              MainColor = value;
+            }
+            break;
+          }
+          case 66: {
+            string value = _single_callToActionText_codec.Read(input);
+            if (callToActionText_ == null || value != "") {
+              CallToActionText = value;
+            }
+            break;
+          }
+          case 74: {
+            string value = _single_logoImage_codec.Read(input);
+            if (logoImage_ == null || value != "") {
+              LogoImage = value;
+            }
+            break;
+          }
+          case 82: {
+            string value = _single_squareLogoImage_codec.Read(input);
+            if (squareLogoImage_ == null || value != "") {
+              SquareLogoImage = value;
+            }
+            break;
+          }
+          case 90: {
+            string value = _single_marketingImage_codec.Read(input);
+            if (marketingImage_ == null || value != "") {
+              MarketingImage = value;
+            }
+            break;
+          }
+          case 98: {
+            string value = _single_squareMarketingImage_codec.Read(input);
+            if (squareMarketingImage_ == null || value != "") {
+              SquareMarketingImage = value;
+            }
+            break;
+          }
+          case 104: {
+            formatSetting_ = (global::Google.Ads.GoogleAds.V0.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting) input.ReadEnum();
+            break;
+          }
+          case 114: {
+            string value = _single_pricePrefix_codec.Read(input);
+            if (pricePrefix_ == null || value != "") {
+              PricePrefix = value;
+            }
+            break;
+          }
+          case 122: {
+            string value = _single_promoText_codec.Read(input);
+            if (promoText_ == null || value != "") {
+              PromoText = value;
             }
             break;
           }
@@ -1037,6 +1533,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
       CallTracked = other.CallTracked;
       DisableCallConversion = other.DisableCallConversion;
       PhoneNumberVerificationUrl = other.PhoneNumberVerificationUrl;
+      ConversionAction = other.ConversionAction;
+      conversionReportingState_ = other.conversionReportingState_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1169,6 +1667,38 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
     }
 
+    /// <summary>Field number for the "conversion_action" field.</summary>
+    public const int ConversionActionFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _single_conversionAction_codec = pb::FieldCodec.ForClassWrapper<string>(74);
+    private string conversionAction_;
+    /// <summary>
+    /// The conversion action to attribute a call conversion to. If not set a
+    /// default conversion action is used. This field only has effect if
+    /// call_tracked is set to true. Otherwise this field is ignored.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ConversionAction {
+      get { return conversionAction_; }
+      set {
+        conversionAction_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "conversion_reporting_state" field.</summary>
+    public const int ConversionReportingStateFieldNumber = 10;
+    private global::Google.Ads.GoogleAds.V0.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState conversionReportingState_ = 0;
+    /// <summary>
+    /// The call conversion behavior of this call only ad. It can use its own call
+    /// conversion setting, inherit the account level setting, or be disabled.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState ConversionReportingState {
+      get { return conversionReportingState_; }
+      set {
+        conversionReportingState_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CallOnlyAdInfo);
@@ -1190,6 +1720,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (CallTracked != other.CallTracked) return false;
       if (DisableCallConversion != other.DisableCallConversion) return false;
       if (PhoneNumberVerificationUrl != other.PhoneNumberVerificationUrl) return false;
+      if (ConversionAction != other.ConversionAction) return false;
+      if (ConversionReportingState != other.ConversionReportingState) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1204,6 +1736,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (callTracked_ != null) hash ^= CallTracked.GetHashCode();
       if (disableCallConversion_ != null) hash ^= DisableCallConversion.GetHashCode();
       if (phoneNumberVerificationUrl_ != null) hash ^= PhoneNumberVerificationUrl.GetHashCode();
+      if (conversionAction_ != null) hash ^= ConversionAction.GetHashCode();
+      if (ConversionReportingState != 0) hash ^= ConversionReportingState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1241,6 +1775,13 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (phoneNumberVerificationUrl_ != null) {
         _single_phoneNumberVerificationUrl_codec.WriteTagAndValue(output, PhoneNumberVerificationUrl);
       }
+      if (conversionAction_ != null) {
+        _single_conversionAction_codec.WriteTagAndValue(output, ConversionAction);
+      }
+      if (ConversionReportingState != 0) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) ConversionReportingState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1272,6 +1813,12 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
       if (phoneNumberVerificationUrl_ != null) {
         size += _single_phoneNumberVerificationUrl_codec.CalculateSizeWithTag(PhoneNumberVerificationUrl);
+      }
+      if (conversionAction_ != null) {
+        size += _single_conversionAction_codec.CalculateSizeWithTag(ConversionAction);
+      }
+      if (ConversionReportingState != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ConversionReportingState);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1323,6 +1870,14 @@ namespace Google.Ads.GoogleAds.V0.Common {
         if (phoneNumberVerificationUrl_ == null || other.PhoneNumberVerificationUrl != "") {
           PhoneNumberVerificationUrl = other.PhoneNumberVerificationUrl;
         }
+      }
+      if (other.conversionAction_ != null) {
+        if (conversionAction_ == null || other.ConversionAction != "") {
+          ConversionAction = other.ConversionAction;
+        }
+      }
+      if (other.ConversionReportingState != 0) {
+        ConversionReportingState = other.ConversionReportingState;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1389,6 +1944,17 @@ namespace Google.Ads.GoogleAds.V0.Common {
             if (phoneNumberVerificationUrl_ == null || value != "") {
               PhoneNumberVerificationUrl = value;
             }
+            break;
+          }
+          case 74: {
+            string value = _single_conversionAction_codec.Read(input);
+            if (conversionAction_ == null || value != "") {
+              ConversionAction = value;
+            }
+            break;
+          }
+          case 80: {
+            conversionReportingState_ = (global::Google.Ads.GoogleAds.V0.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState) input.ReadEnum();
             break;
           }
         }

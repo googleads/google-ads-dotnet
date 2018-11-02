@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvdXJsX2ZpZWxkX2Vy",
-            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMi1wwK",
-            "EVVybEZpZWxkRXJyb3JFbnVtIsEMCg1VcmxGaWVsZEVycm9yEg8KC1VOU1BF",
+            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMinA0K",
+            "EVVybEZpZWxkRXJyb3JFbnVtIoYNCg1VcmxGaWVsZEVycm9yEg8KC1VOU1BF",
             "Q0lGSUVEEAASCwoHVU5LTk9XThABEiEKHUlOVkFMSURfVFJBQ0tJTkdfVVJM",
             "X1RFTVBMQVRFEAISKAokSU5WQUxJRF9UQUdfSU5fVFJBQ0tJTkdfVVJMX1RF",
             "TVBMQVRFEAMSJQohTUlTU0lOR19UUkFDS0lOR19VUkxfVEVNUExBVEVfVEFH",
@@ -62,11 +62,13 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "KxIPCgtJTlZBTElEX1VSTBAsEh4KGkRFU1RJTkFUSU9OX1VSTF9ERVBSRUNB",
             "VEVEEC0SFgoSSU5WQUxJRF9UQUdfSU5fVVJMEC4SEwoPTUlTU0lOR19VUkxf",
             "VEFHEC8SFAoQRFVQTElDQVRFX1VSTF9JRBAwEhIKDklOVkFMSURfVVJMX0lE",
-            "EDFCyAEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCElVy",
-            "bEZpZWxkRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
-            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6IC",
-            "A0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "EDESHgoaRklOQUxfVVJMX1NVRkZJWF9NQUxGT1JNRUQQMhIjCh9JTlZBTElE",
+            "X1RBR19JTl9GSU5BTF9VUkxfU1VGRklYEDNCyAEKImNvbS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5lcnJvcnNCElVybEZpZWxkRXJyb3JQcm90b1ABWkRn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVy",
+            "cm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -384,6 +386,15 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Invalid url id.
         /// </summary>
         [pbr::OriginalName("INVALID_URL_ID")] InvalidUrlId = 49,
+        /// <summary>
+        /// The final url suffix cannot begin with '?' or '&amp;' characters and must be
+        /// a valid query string.
+        /// </summary>
+        [pbr::OriginalName("FINAL_URL_SUFFIX_MALFORMED")] FinalUrlSuffixMalformed = 50,
+        /// <summary>
+        /// The final url suffix cannot contain {lpurl} related or {ignore} tags.
+        /// </summary>
+        [pbr::OriginalName("INVALID_TAG_IN_FINAL_URL_SUFFIX")] InvalidTagInFinalUrlSuffix = 51,
       }
 
     }

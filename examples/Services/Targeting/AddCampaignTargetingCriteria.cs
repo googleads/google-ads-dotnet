@@ -43,7 +43,14 @@ namespace Google.Ads.GoogleAds.Examples.V0
             // ID of the campaign to which targeting criteria are added.
             long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
+            // ID of the campaign to which targeting criteria are added.
+            string keywordText = "INSERT_KEYWORD_TEXT_HERE";
+
+            // ID of the campaign to which targeting criteria are added.
+            long locationId = long.Parse("INSERT_LOCATION_ID_HERE");
+
+            codeExample.Run(new GoogleAdsClient(), customerId, campaignId,
+                keywordText, locationId);
         }
 
         /// <summary>
@@ -64,29 +71,44 @@ namespace Google.Ads.GoogleAds.Examples.V0
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignId">ID of the campaign to which targeting criteria are added.
         /// </param>
-        public void Run(GoogleAdsClient client, long customerId, long campaignId)
+        /// <param name="keywordText">the keyword text for which to add a criterion.</param>
+        /// <param name="locationId">the locationId for which to add a criterion.</param>
+        public void Run(GoogleAdsClient client, long customerId, long campaignId,
+            string keywordText, long locationId)
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService =
                 client.GetService(Services.V0.CampaignCriterionService);
 
-            // Add a campaign level negative keyword.
-            CampaignCriterion campaignCriterion = new CampaignCriterion()
-            {
-                Campaign = ResourceNames.Campaign(customerId, campaignId),
-                Negative = true,
-                Keyword = new KeywordInfo()
-                {
-                    MatchType = KeywordMatchType.Broad,
-                    Text = "jupiter cruise"
-                }
-            };
+            // Set the Campaign Resource Name
+            string campaignResourceName = ResourceNames.Campaign(customerId, campaignId);
 
-            // Create the operation.
+            // Add a campaign level negative keyword from keywordText.
+            CampaignCriterion keywordCriterion = buildNegativeKeywordCriterion(keywordText,
+                campaignResourceName);
+
+            // Creates a location constant (provided by GeoTargetConstantService) as a campaign
+            // targeting criterion. Please refer to GetGeoTargetConstantsByName.cs for retrieval
+            // of location constants.
+            CampaignCriterion locationCriterion = buildLocationCriterion(locationId,
+                campaignResourceName);
+
+            // Create the operations.
             CampaignCriterionOperation negativeCriterionOperation =
                 new CampaignCriterionOperation()
-            {
-                Create = campaignCriterion
+                {
+                    Create = keywordCriterion
+                };
+
+            CampaignCriterionOperation locationCriterionOperation =
+                new CampaignCriterionOperation()
+                {
+                    Create = locationCriterion
+                };
+
+            CampaignCriterionOperation[] operations = new CampaignCriterionOperation[] {
+                negativeCriterionOperation,
+                locationCriterionOperation
             };
 
             try
@@ -94,7 +116,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Create the campaign criterion.
                 MutateCampaignCriteriaResponse response =
                     campaignCriterionService.MutateCampaignCriteria(customerId.ToString(),
-                        new CampaignCriterionOperation[] { negativeCriterionOperation });
+                        operations);
 
                 // Display the results.
                 foreach (MutateCampaignCriterionResult criterionResult in response.Results)
@@ -111,6 +133,50 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 Console.WriteLine($"Failure: {e.Failure}");
                 Console.WriteLine($"Request ID: {e.RequestId}");
             }
+        }
+
+        /// <summary>
+        /// Creates a negative keyword as a campaign targeting criterion.
+        /// </summary>
+        /// <param name="keywordText">the keyword text to exclude.</param>
+        /// <param name="campaignResourceName">the campaign where the keyword will be excluded.
+        /// </param>
+        /// <returns>a campaign criterion object with the negative keyword targeting.</returns>
+        private CampaignCriterion buildNegativeKeywordCriterion(string keywordText,
+            string campaignResourceName)
+        {
+            return new CampaignCriterion()
+            {
+                Campaign = campaignResourceName,
+                Negative = true,
+                Keyword = new KeywordInfo()
+                {
+                    MatchType = KeywordMatchType.Broad,
+                    Text = keywordText
+                }
+            };
+        }
+
+        /// <summary>
+        /// Creates a negative keyword as a campaign targeting criterion.
+        /// </summary>
+        /// <param name="locationId">the location to target.</param>
+        /// <param name="campaignResourceName">the campaign where the keyword will be excluded.
+        /// </param>
+        /// <returns>a campaign criterion object with the specified locationId and resource name.
+        /// </returns>
+        private CampaignCriterion buildLocationCriterion(long locationId,
+            string campaignResourceName)
+        {
+            GeoTargetConstantName location = new GeoTargetConstantName(locationId.ToString());
+            return new CampaignCriterion()
+            {
+                Campaign = campaignResourceName,
+                Location = new LocationInfo()
+                {
+                    GeoTargetConstant = location.ToString()
+                }
+            };
         }
     }
 }

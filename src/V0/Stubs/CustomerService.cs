@@ -27,21 +27,31 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9zZXJ2aWNlcy9jdXN0b21lcl9z",
             "ZXJ2aWNlLnByb3RvEiBnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNl",
             "cxowZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2N1c3RvbWVy",
-            "LnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIisKEkdldEN1",
-            "c3RvbWVyUmVxdWVzdBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJMq0BCg9DdXN0",
-            "b21lclNlcnZpY2USmQEKC0dldEN1c3RvbWVyEjQuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuc2VydmljZXMuR2V0Q3VzdG9tZXJSZXF1ZXN0GisuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkN1c3RvbWVyIieC0+STAiES",
-            "Hy92MC97cmVzb3VyY2VfbmFtZT1jdXN0b21lcnMvKn1C1AEKJGNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlc0IUQ3VzdG9tZXJTZXJ2aWNl",
-            "UHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
-            "cy9hZHMvZ29vZ2xlYWRzL3YwL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIg",
-            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuU2VydmljZXPKAiBHb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMFxTZXJ2aWNlc2IGcHJvdG8z"));
+            "LnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGh5nb29nbGUv",
+            "cHJvdG9idWYvd3JhcHBlcnMucHJvdG8iKwoSR2V0Q3VzdG9tZXJSZXF1ZXN0",
+            "EhUKDXJlc291cmNlX25hbWUYASABKAkiIAoeTGlzdEFjY2Vzc2libGVDdXN0",
+            "b21lcnNSZXF1ZXN0IjkKH0xpc3RBY2Nlc3NpYmxlQ3VzdG9tZXJzUmVzcG9u",
+            "c2USFgoOcmVzb3VyY2VfbmFtZXMYASADKAky/QIKD0N1c3RvbWVyU2Vydmlj",
+            "ZRKZAQoLR2V0Q3VzdG9tZXISNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5z",
+            "ZXJ2aWNlcy5HZXRDdXN0b21lclJlcXVlc3QaKy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5yZXNvdXJjZXMuQ3VzdG9tZXIiJ4LT5JMCIRIfL3YwL3tyZXNv",
+            "dXJjZV9uYW1lPWN1c3RvbWVycy8qfRLNAQoXTGlzdEFjY2Vzc2libGVDdXN0",
+            "b21lcnMSQC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5MaXN0",
+            "QWNjZXNzaWJsZUN1c3RvbWVyc1JlcXVlc3QaQS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5zZXJ2aWNlcy5MaXN0QWNjZXNzaWJsZUN1c3RvbWVyc1Jlc3Bv",
+            "bnNlIi2C0+STAicSJS92MC9jdXN0b21lcnM6bGlzdEFjY2Vzc2libGVDdXN0",
+            "b21lcnNC1AEKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNl",
+            "c0IUQ3VzdG9tZXJTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcv",
+            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3NlcnZpY2Vz",
+            "O3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuU2Vy",
+            "dmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxTZXJ2aWNlc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Resources.CustomerReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Resources.CustomerReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest), global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest.Parser, new[]{ "ResourceName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest), global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest.Parser, new[]{ "ResourceName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest), global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse), global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse.Parser, new[]{ "ResourceNames" }, null, null, null)
           }));
     }
     #endregion
@@ -175,6 +185,238 @@ namespace Google.Ads.GoogleAds.V0.Services {
             break;
           case 10: {
             ResourceName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for [CustomerService.ListAccessibleCustomers][google.ads.googleads.v0.services.CustomerService.ListAccessibleCustomers].
+  /// </summary>
+  public sealed partial class ListAccessibleCustomersRequest : pb::IMessage<ListAccessibleCustomersRequest> {
+    private static readonly pb::MessageParser<ListAccessibleCustomersRequest> _parser = new pb::MessageParser<ListAccessibleCustomersRequest>(() => new ListAccessibleCustomersRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ListAccessibleCustomersRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.CustomerServiceReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAccessibleCustomersRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAccessibleCustomersRequest(ListAccessibleCustomersRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAccessibleCustomersRequest Clone() {
+      return new ListAccessibleCustomersRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ListAccessibleCustomersRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ListAccessibleCustomersRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ListAccessibleCustomersRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for [CustomerService.ListAccessibleCustomers][google.ads.googleads.v0.services.CustomerService.ListAccessibleCustomers].
+  /// </summary>
+  public sealed partial class ListAccessibleCustomersResponse : pb::IMessage<ListAccessibleCustomersResponse> {
+    private static readonly pb::MessageParser<ListAccessibleCustomersResponse> _parser = new pb::MessageParser<ListAccessibleCustomersResponse>(() => new ListAccessibleCustomersResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ListAccessibleCustomersResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.CustomerServiceReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAccessibleCustomersResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAccessibleCustomersResponse(ListAccessibleCustomersResponse other) : this() {
+      resourceNames_ = other.resourceNames_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListAccessibleCustomersResponse Clone() {
+      return new ListAccessibleCustomersResponse(this);
+    }
+
+    /// <summary>Field number for the "resource_names" field.</summary>
+    public const int ResourceNamesFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_resourceNames_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> resourceNames_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Resource name of customers directly accessible by the
+    /// user authenticating the call.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> ResourceNames {
+      get { return resourceNames_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ListAccessibleCustomersResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ListAccessibleCustomersResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!resourceNames_.Equals(other.resourceNames_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= resourceNames_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      resourceNames_.WriteTo(output, _repeated_resourceNames_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += resourceNames_.CalculateSize(_repeated_resourceNames_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ListAccessibleCustomersResponse other) {
+      if (other == null) {
+        return;
+      }
+      resourceNames_.Add(other.resourceNames_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            resourceNames_.AddEntriesFrom(input, _repeated_resourceNames_codec);
             break;
           }
         }

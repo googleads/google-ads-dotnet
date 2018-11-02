@@ -15,7 +15,9 @@
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V0.Resources;
 using Google.Ads.GoogleAds.V0.Services;
-using Google.Api.Gax;
+using static Google.Ads.GoogleAds.V0.Enums.AccountBudgetProposalTypeEnum.Types;
+using static Google.Ads.GoogleAds.V0.Enums.TimeTypeEnum.Types;
+
 using System;
 
 namespace Google.Ads.GoogleAds.Examples.V0
@@ -42,7 +44,11 @@ namespace Google.Ads.GoogleAds.Examples.V0
 
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-            codeExample.Run(new GoogleAdsClient(), customerId);
+
+            // The Billing Setup ID for which the call is made.
+            long billingSetupId = long.Parse("INSERT_BILLING_SETUP_ID_HERE");
+
+            codeExample.Run(new GoogleAdsClient(), customerId, billingSetupId);
         }
 
         /// <summary>
@@ -53,8 +59,8 @@ namespace Google.Ads.GoogleAds.Examples.V0
             get
             {
                 return "This code example creates an account budget proposal using the 'CREATE' " +
-                    "operation. To get account budget proposals, run " +
-                    "GetAccountBudgetProposals.cs.";
+                    "operation. To get account budget proposals, " +
+                    "run GetAccountBudgetProposals.cs.";
             }
         }
 
@@ -63,47 +69,61 @@ namespace Google.Ads.GoogleAds.Examples.V0
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        public void Run(GoogleAdsClient client, long customerId)
+        /// <param name="billingSetupId">The Billing Setup ID for which the call is made.</param>
+        public void Run(GoogleAdsClient client, long customerId, long billingSetupId)
         {
-            // Get the GoogleAdsServiceClient.
-            GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V0.GoogleAdsService);
+            // Get the AccountBudgetProposalServiceClient.
+            AccountBudgetProposalServiceClient proposalService =
+                client.GetService(Services.V0.AccountBudgetProposalService);
 
-            // Define a GAQL query to retrieve all billing setup information.
-            String searchQuery = "SELECT billing_setup.id, billing_setup.status, " +
-                "billing_setup.payments_account_id, billing_setup.payments_account_name, " +
-                "billing_setup.payments_profile_id, billing_setup.payments_profile_name, " +
-                "billing_setup.secondary_payments_profile_id FROM billing_setup";
-
-            // Creates a request that will retrieve all billing setups using pages of the specified
-            // page size.
-            SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
+            // Create an AccountBudgetProposal.
+            // The proposal will be reviewed offline by Google Ads, and if approved will
+            // become an AccountBudget.
+            AccountBudgetProposal proposal = new AccountBudgetProposal()
             {
-                PageSize = PAGE_SIZE,
-                Query = searchQuery,
-                CustomerId = customerId.ToString()
+                BillingSetup = ResourceNames.BillingSetup(customerId, billingSetupId),
+                ProposalType = AccountBudgetProposalType.Create,
+                ProposedName = "Account Budget (example)",
+
+                // Specify the account budget starts immediately
+                ProposedStartTimeType = TimeType.Now,
+                // Alternatively, you can specify a specific start time. Refer to the
+                // AccountBudgetProposal resource documentation for allowed formats.
+                //
+                //ProposedStartDateTime = "2020-01-02 03:04:05",
+
+                // Specify that the budget runs forever.
+                ProposedEndTimeType = TimeType.Forever,
+                // Alternatively you can specify a specific end time. Allowed formats are as above.
+                //ProposedEndDateTime = "2021-02-03 04:05:06",
+
+                // Optional: set notes for the budget. These are free text and do not effect budget
+                // delivery.
+                //ProposedNotes = "Received prepayment of $0.01",
+
+                // Set the spending limit to 0.01, measured in the Google Ads account currency.
+                ProposedSpendingLimitMicros = 10_000
+
+                // Optional: set PO number for record keeping. This value is at the user's
+                // discretion, and has no effect on Google Billing & Payments.
+                //ProposedPurchaseOrderNumber = "PO number 12345"
+            };
+
+            // Create an operation which will add the new AccountBudgetProposal
+            AccountBudgetProposalOperation operation = new AccountBudgetProposalOperation()
+            {
+                Create = proposal
             };
 
             try
             {
-                PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
-                    googleAdsService.Search(request);
+                // Send the request to the Account Budget Proposal Service.
+                MutateAccountBudgetProposalResponse response = proposalService.
+                    MutateAccountBudgetProposal(customerId.ToString(), operation);
 
-                foreach (SearchGoogleAdsResponse response in searchPagedResponse.AsRawResponses())
-                {
-                    foreach (GoogleAdsRow googleAdsRow in response.Results)
-                    {
-                        BillingSetup billingSetup = googleAdsRow.BillingSetup;
-                        Console.WriteLine("Billing setup with ID '{0}', status '{1}', " +
-                            "payments_account_id '{2}', payments_account_name '{3}', " +
-                            "payments_profile_id '{4}', payments_profile_name '{5}', " +
-                            "secondary_payments_profile_id '{6}'.",
-                            billingSetup.Id, billingSetup.Status, billingSetup.PaymentsAccountId,
-                            billingSetup.PaymentsAccountName, billingSetup.PaymentsProfileId,
-                            billingSetup.PaymentsProfileName,
-                            billingSetup.SecondaryPaymentsProfileId);
-                    }
-                }
+                // Display the results.
+                Console.WriteLine($"Account budget proposal '{response.Result.ResourceName}' " +
+                    "was created.");
             }
             catch (GoogleAdsException e)
             {
@@ -112,6 +132,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 Console.WriteLine($"Failure: {e.Failure}");
                 Console.WriteLine($"Request ID: {e.RequestId}");
             }
+
         }
     }
 }

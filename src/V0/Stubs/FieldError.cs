@@ -25,16 +25,16 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvZmllbGRfZXJyb3Iu",
-            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyKoAQoORmll",
-            "bGRFcnJvckVudW0ilQEKCkZpZWxkRXJyb3ISDwoLVU5TUEVDSUZJRUQQABIL",
+            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyLFAQoORmll",
+            "bGRFcnJvckVudW0isgEKCkZpZWxkRXJyb3ISDwoLVU5TUEVDSUZJRUQQABIL",
             "CgdVTktOT1dOEAESDAoIUkVRVUlSRUQQAhITCg9JTU1VVEFCTEVfRklFTEQQ",
             "AxIRCg1JTlZBTElEX1ZBTFVFEAQSFwoTVkFMVUVfTVVTVF9CRV9VTlNFVBAF",
-            "EhoKFlJFUVVJUkVEX05PTkVNUFRZX0xJU1QQBkLFAQoiY29tLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IPRmllbGRFcnJvclByb3RvUAFaRGdv",
-            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
-            "ZWFkcy92MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJy",
-            "b3JzYgZwcm90bzM="));
+            "EhoKFlJFUVVJUkVEX05PTkVNUFRZX0xJU1QQBhIbChdGSUVMRF9DQU5OT1Rf",
+            "QkVfQ0xFQVJFRBAHQsUBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZXJyb3JzQg9GaWVsZEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcv",
+            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztl",
+            "cnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPK",
+            "Ah5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -183,6 +183,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// The required repeated field was empty.
         /// </summary>
         [pbr::OriginalName("REQUIRED_NONEMPTY_LIST")] RequiredNonemptyList = 6,
+        /// <summary>
+        /// The field cannot be cleared.
+        /// </summary>
+        [pbr::OriginalName("FIELD_CANNOT_BE_CLEARED")] FieldCannotBeCleared = 7,
       }
 
     }
