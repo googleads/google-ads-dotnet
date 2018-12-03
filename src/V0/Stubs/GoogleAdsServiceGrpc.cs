@@ -33,6 +33,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsRequest> __Marshaller_SearchGoogleAdsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsResponse> __Marshaller_SearchGoogleAdsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest> __Marshaller_MutateGoogleAdsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse> __Marshaller_MutateGoogleAdsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsRequest, global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsResponse> __Method_Search = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsRequest, global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsResponse>(
         grpc::MethodType.Unary,
@@ -40,6 +42,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
         "Search",
         __Marshaller_SearchGoogleAdsRequest,
         __Marshaller_SearchGoogleAdsResponse);
+
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest, global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse> __Method_Mutate = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest, global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Mutate",
+        __Marshaller_MutateGoogleAdsRequest,
+        __Marshaller_MutateGoogleAdsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -57,6 +66,17 @@ namespace Google.Ads.GoogleAds.V0.Services {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsResponse> Search(global::Google.Ads.GoogleAds.V0.Services.SearchGoogleAdsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Creates, updates, or removes resources. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse> Mutate(global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -130,6 +150,50 @@ namespace Google.Ads.GoogleAds.V0.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Search, null, options, request);
       }
+      /// <summary>
+      /// Creates, updates, or removes resources. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse Mutate(global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return Mutate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates, updates, or removes resources. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse Mutate(global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Mutate, null, options, request);
+      }
+      /// <summary>
+      /// Creates, updates, or removes resources. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse> MutateAsync(global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return MutateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates, updates, or removes resources. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse> MutateAsync(global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Mutate, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override GoogleAdsServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -142,7 +206,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public static grpc::ServerServiceDefinition BindService(GoogleAdsServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_Search, serviceImpl.Search).Build();
+          .AddMethod(__Method_Search, serviceImpl.Search)
+          .AddMethod(__Method_Mutate, serviceImpl.Mutate).Build();
     }
 
   }

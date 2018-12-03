@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Gjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9iaWxsaW5nX3NldHVw",
             "X3N0YXR1cy5wcm90bxotZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMv",
             "dGltZV90eXBlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJv",
-            "dG8iqQYKDEJpbGxpbmdTZXR1cBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEicK",
+            "dG8iuwcKDEJpbGxpbmdTZXR1cBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEicK",
             "AmlkGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSWAoGc3Rh",
             "dHVzGAMgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQmls",
             "bGluZ1NldHVwU3RhdHVzRW51bS5CaWxsaW5nU2V0dXBTdGF0dXMSNgoQcGF5",
@@ -39,24 +39,27 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "bnRzQWNjb3VudEluZm8SNwoPc3RhcnRfZGF0ZV90aW1lGAkgASgLMhwuZ29v",
             "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlSAASTwoPc3RhcnRfdGltZV90eXBl",
             "GAogASgOMjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuVGltZVR5",
-            "cGVFbnVtLlRpbWVUeXBlSAAaygIKE1BheW1lbnRzQWNjb3VudEluZm8SOQoT",
-            "cGF5bWVudHNfYWNjb3VudF9pZBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRI7ChVwYXltZW50c19hY2NvdW50X25hbWUYAiABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSOQoTcGF5bWVudHNfcHJvZmls",
-            "ZV9pZBgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI7ChVw",
-            "YXltZW50c19wcm9maWxlX25hbWUYBCABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUSQwodc2Vjb25kYXJ5X3BheW1lbnRzX3Byb2ZpbGVfaWQY",
-            "BSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCDAoKc3RhcnRf",
-            "dGltZULWAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNl",
-            "c0IRQmlsbGluZ1NldHVwUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlczty",
-            "ZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNv",
-            "dXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnBy",
-            "b3RvMw=="));
+            "cGVFbnVtLlRpbWVUeXBlSAASNQoNZW5kX2RhdGVfdGltZRgNIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUgBEk0KDWVuZF90aW1lX3R5cGUY",
+            "DiABKA4yNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5UaW1lVHlw",
+            "ZUVudW0uVGltZVR5cGVIARrKAgoTUGF5bWVudHNBY2NvdW50SW5mbxI5ChNw",
+            "YXltZW50c19hY2NvdW50X2lkGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlEjsKFXBheW1lbnRzX2FjY291bnRfbmFtZRgCIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI5ChNwYXltZW50c19wcm9maWxl",
+            "X2lkGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjsKFXBh",
+            "eW1lbnRzX3Byb2ZpbGVfbmFtZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRJDCh1zZWNvbmRhcnlfcGF5bWVudHNfcHJvZmlsZV9pZBgF",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUIMCgpzdGFydF90",
+            "aW1lQgoKCGVuZF90aW1lQtYBCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAucmVzb3VyY2VzQhFCaWxsaW5nU2V0dXBQcm90b1ABWkpnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
+            "cmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xl",
+            "QWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJl",
+            "c291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.BillingSetupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TimeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.BillingSetup), global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Parser, new[]{ "ResourceName", "Id", "Status", "PaymentsAccount", "PaymentsAccountInfo", "StartDateTime", "StartTimeType" }, new[]{ "StartTime" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo), global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo.Parser, new[]{ "PaymentsAccountId", "PaymentsAccountName", "PaymentsProfileId", "PaymentsProfileName", "SecondaryPaymentsProfileId" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.BillingSetup), global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Parser, new[]{ "ResourceName", "Id", "Status", "PaymentsAccount", "PaymentsAccountInfo", "StartDateTime", "StartTimeType", "EndDateTime", "EndTimeType" }, new[]{ "StartTime", "EndTime" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo), global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo.Parser, new[]{ "PaymentsAccountId", "PaymentsAccountName", "PaymentsProfileId", "PaymentsProfileName", "SecondaryPaymentsProfileId" }, null, null, null)})
           }));
     }
     #endregion
@@ -104,6 +107,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case StartTimeOneofCase.StartTimeType:
           StartTimeType = other.StartTimeType;
+          break;
+      }
+
+      switch (other.EndTimeCase) {
+        case EndTimeOneofCase.EndDateTime:
+          EndDateTime = other.EndDateTime;
+          break;
+        case EndTimeOneofCase.EndTimeType:
+          EndTimeType = other.EndTimeType;
           break;
       }
 
@@ -232,6 +244,35 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "end_date_time" field.</summary>
+    public const int EndDateTimeFieldNumber = 13;
+    private static readonly pb::FieldCodec<string> _oneof_endDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(106);
+    /// <summary>
+    /// The end date time in yyyy-MM-dd or yyyy-MM-dd HH:mm:ss format.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string EndDateTime {
+      get { return endTimeCase_ == EndTimeOneofCase.EndDateTime ? (string) endTime_ : (string) null; }
+      set {
+        endTime_ = value;
+        endTimeCase_ = value == null ? EndTimeOneofCase.None : EndTimeOneofCase.EndDateTime;
+      }
+    }
+
+    /// <summary>Field number for the "end_time_type" field.</summary>
+    public const int EndTimeTypeFieldNumber = 14;
+    /// <summary>
+    /// The end time as a type.  The only possible value is FOREVER.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.TimeTypeEnum.Types.TimeType EndTimeType {
+      get { return endTimeCase_ == EndTimeOneofCase.EndTimeType ? (global::Google.Ads.GoogleAds.V0.Enums.TimeTypeEnum.Types.TimeType) endTime_ : 0; }
+      set {
+        endTime_ = value;
+        endTimeCase_ = EndTimeOneofCase.EndTimeType;
+      }
+    }
+
     private object startTime_;
     /// <summary>Enum of possible cases for the "start_time" oneof.</summary>
     public enum StartTimeOneofCase {
@@ -249,6 +290,25 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     public void ClearStartTime() {
       startTimeCase_ = StartTimeOneofCase.None;
       startTime_ = null;
+    }
+
+    private object endTime_;
+    /// <summary>Enum of possible cases for the "end_time" oneof.</summary>
+    public enum EndTimeOneofCase {
+      None = 0,
+      EndDateTime = 13,
+      EndTimeType = 14,
+    }
+    private EndTimeOneofCase endTimeCase_ = EndTimeOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EndTimeOneofCase EndTimeCase {
+      get { return endTimeCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearEndTime() {
+      endTimeCase_ = EndTimeOneofCase.None;
+      endTime_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -271,7 +331,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (!object.Equals(PaymentsAccountInfo, other.PaymentsAccountInfo)) return false;
       if (StartDateTime != other.StartDateTime) return false;
       if (StartTimeType != other.StartTimeType) return false;
+      if (EndDateTime != other.EndDateTime) return false;
+      if (EndTimeType != other.EndTimeType) return false;
       if (StartTimeCase != other.StartTimeCase) return false;
+      if (EndTimeCase != other.EndTimeCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -285,7 +348,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (paymentsAccountInfo_ != null) hash ^= PaymentsAccountInfo.GetHashCode();
       if (startTimeCase_ == StartTimeOneofCase.StartDateTime) hash ^= StartDateTime.GetHashCode();
       if (startTimeCase_ == StartTimeOneofCase.StartTimeType) hash ^= StartTimeType.GetHashCode();
+      if (endTimeCase_ == EndTimeOneofCase.EndDateTime) hash ^= EndDateTime.GetHashCode();
+      if (endTimeCase_ == EndTimeOneofCase.EndTimeType) hash ^= EndTimeType.GetHashCode();
       hash ^= (int) startTimeCase_;
+      hash ^= (int) endTimeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -324,6 +390,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(98);
         output.WriteMessage(PaymentsAccountInfo);
       }
+      if (endTimeCase_ == EndTimeOneofCase.EndDateTime) {
+        _oneof_endDateTime_codec.WriteTagAndValue(output, (string) endTime_);
+      }
+      if (endTimeCase_ == EndTimeOneofCase.EndTimeType) {
+        output.WriteRawTag(112);
+        output.WriteEnum((int) EndTimeType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -352,6 +425,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (startTimeCase_ == StartTimeOneofCase.StartTimeType) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StartTimeType);
+      }
+      if (endTimeCase_ == EndTimeOneofCase.EndDateTime) {
+        size += _oneof_endDateTime_codec.CalculateSizeWithTag(EndDateTime);
+      }
+      if (endTimeCase_ == EndTimeOneofCase.EndTimeType) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EndTimeType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -392,6 +471,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case StartTimeOneofCase.StartTimeType:
           StartTimeType = other.StartTimeType;
+          break;
+      }
+
+      switch (other.EndTimeCase) {
+        case EndTimeOneofCase.EndDateTime:
+          EndDateTime = other.EndDateTime;
+          break;
+        case EndTimeOneofCase.EndTimeType:
+          EndTimeType = other.EndTimeType;
           break;
       }
 
@@ -442,6 +530,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
               paymentsAccountInfo_ = new global::Google.Ads.GoogleAds.V0.Resources.BillingSetup.Types.PaymentsAccountInfo();
             }
             input.ReadMessage(paymentsAccountInfo_);
+            break;
+          }
+          case 106: {
+            EndDateTime = _oneof_endDateTime_codec.Read(input);
+            break;
+          }
+          case 112: {
+            endTime_ = input.ReadEnum();
+            endTimeCase_ = EndTimeOneofCase.EndTimeType;
             break;
           }
         }

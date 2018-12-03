@@ -25,14 +25,15 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY3VzdG9tZXJfZXJy",
-            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyJgChFD",
-            "dXN0b21lckVycm9yRW51bSJLCg1DdXN0b21lckVycm9yEg8KC1VOU1BFQ0lG",
+            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyJ4ChFD",
+            "dXN0b21lckVycm9yRW51bSJjCg1DdXN0b21lckVycm9yEg8KC1VOU1BFQ0lG",
             "SUVEEAASCwoHVU5LTk9XThABEhwKGFNUQVRVU19DSEFOR0VfRElTQUxMT1dF",
-            "RBACQsgBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQhJD",
-            "dXN0b21lckVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
-            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOi",
-            "AgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNiBnByb3RvMw=="));
+            "RBACEhYKEkFDQ09VTlRfTk9UX1NFVF9VUBADQsgBCiJjb20uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuZXJyb3JzQhJDdXN0b21lckVycm9yUHJvdG9QAVpE",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxF",
+            "cnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -168,6 +169,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// set when status is changed to ENABLED.
         /// </summary>
         [pbr::OriginalName("STATUS_CHANGE_DISALLOWED")] StatusChangeDisallowed = 2,
+        /// <summary>
+        /// CustomerService cannot get a customer that has not been fully set up.
+        /// </summary>
+        [pbr::OriginalName("ACCOUNT_NOT_SET_UP")] AccountNotSetUp = 3,
       }
 
     }

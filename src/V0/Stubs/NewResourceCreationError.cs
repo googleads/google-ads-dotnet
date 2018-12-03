@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "CkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvbmV3X3Jlc291cmNl",
             "X2NyZWF0aW9uX2Vycm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lcnJvcnMirQEKHE5ld1Jlc291cmNlQ3JlYXRpb25FcnJvckVudW0ijAEK",
+            "MC5lcnJvcnMisAEKHE5ld1Jlc291cmNlQ3JlYXRpb25FcnJvckVudW0ijwEK",
             "GE5ld1Jlc291cmNlQ3JlYXRpb25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsK",
-            "B1VOS05PV04QARIZChVDQU5OT1RfU0VUX0lEX0ZPUl9BREQQAhIWChJEVVBM",
-            "SUNBVEVfVEVNUF9JRFMQAxIfChtURU1QX0lEX1JFU09VUkNFX0hBRF9FUlJP",
-            "UlMQBELTAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0Id",
-            "TmV3UmVzb3VyY2VDcmVhdGlvbkVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vy",
-            "cm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5F",
-            "cnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNiBnByb3Rv",
-            "Mw=="));
+            "B1VOS05PV04QARIcChhDQU5OT1RfU0VUX0lEX0ZPUl9DUkVBVEUQAhIWChJE",
+            "VVBMSUNBVEVfVEVNUF9JRFMQAxIfChtURU1QX0lEX1JFU09VUkNFX0hBRF9F",
+            "UlJPUlMQBELTAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
+            "c0IdTmV3UmVzb3VyY2VDcmVhdGlvbkVycm9yUHJvdG9QAVpEZ29vZ2xlLmdv",
+            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
+            "L2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
+            "MC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -165,15 +165,15 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Do not set the id field while creating new entities.
+        /// Do not set the id field while creating new resources.
         /// </summary>
-        [pbr::OriginalName("CANNOT_SET_ID_FOR_ADD")] CannotSetIdForAdd = 2,
+        [pbr::OriginalName("CANNOT_SET_ID_FOR_CREATE")] CannotSetIdForCreate = 2,
         /// <summary>
         /// Creating more than one resource with the same temp ID is not allowed.
         /// </summary>
         [pbr::OriginalName("DUPLICATE_TEMP_IDS")] DuplicateTempIds = 3,
         /// <summary>
-        /// Parent object with specified temp id failed validation, so no deep
+        /// Parent resource with specified temp ID failed validation, so no
         /// validation will be done for this child resource.
         /// </summary>
         [pbr::OriginalName("TEMP_ID_RESOURCE_HAD_ERRORS")] TempIdResourceHadErrors = 4,

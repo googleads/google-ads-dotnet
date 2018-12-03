@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Generated code. DO NOT EDIT!
+// TODO( b/119694056): Removed Comment
 
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
@@ -50,6 +50,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             SearchSettings = existing.SearchSettings;
+            MutateSettings = existing.MutateSettings;
             OnCopy(existing);
         }
 
@@ -141,6 +142,35 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// Default RPC expiration is 600000 milliseconds.
         /// </remarks>
         public gaxgrpc::CallSettings SearchSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+            gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
+                retryBackoff: GetDefaultRetryBackoff(),
+                timeoutBackoff: GetDefaultTimeoutBackoff(),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                retryFilter: NonIdempotentRetryFilter
+            )));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>GoogleAdsServiceClient.Mutate</c> and <c>GoogleAdsServiceClient.MutateAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// The default <c>GoogleAdsServiceClient.Mutate</c> and
+        /// <c>GoogleAdsServiceClient.MutateAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Timeout multiplier: 1.0</description></item>
+        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// </list>
+        /// Retry will be attempted on the following response status codes:
+        /// <list>
+        /// <item><description>No status codes</description></item>
+        /// </list>
+        /// Default RPC expiration is 600000 milliseconds.
+        /// </remarks>
+        public gaxgrpc::CallSettings MutateSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
             gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
                 retryBackoff: GetDefaultRetryBackoff(),
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
@@ -421,6 +451,137 @@ namespace Google.Ads.GoogleAds.V0.Services
             throw new sys::NotImplementedException();
         }
 
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose resources are being modified.
+        /// </param>
+        /// <param name="mutateOperations">
+        /// The list of operations to perform on individual resources.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
+            string customerId,
+            scg::IEnumerable<MutateOperation> mutateOperations,
+            gaxgrpc::CallSettings callSettings = null) => MutateAsync(
+                new MutateGoogleAdsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    MutateOperations = { gax::GaxPreconditions.CheckNotNull(mutateOperations, nameof(mutateOperations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose resources are being modified.
+        /// </param>
+        /// <param name="mutateOperations">
+        /// The list of operations to perform on individual resources.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
+            string customerId,
+            scg::IEnumerable<MutateOperation> mutateOperations,
+            st::CancellationToken cancellationToken) => MutateAsync(
+                customerId,
+                mutateOperations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose resources are being modified.
+        /// </param>
+        /// <param name="mutateOperations">
+        /// The list of operations to perform on individual resources.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateGoogleAdsResponse Mutate(
+            string customerId,
+            scg::IEnumerable<MutateOperation> mutateOperations,
+            gaxgrpc::CallSettings callSettings = null) => Mutate(
+                new MutateGoogleAdsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    MutateOperations = { gax::GaxPreconditions.CheckNotNull(mutateOperations, nameof(mutateOperations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
+            MutateGoogleAdsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
+            MutateGoogleAdsRequest request,
+            st::CancellationToken cancellationToken) => MutateAsync(
+                request,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateGoogleAdsResponse Mutate(
+            MutateGoogleAdsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
     }
 
     /// <summary>
@@ -429,6 +590,7 @@ namespace Google.Ads.GoogleAds.V0.Services
     public sealed partial class GoogleAdsServiceClientImpl : GoogleAdsServiceClient
     {
         private readonly gaxgrpc::ApiCall<SearchGoogleAdsRequest, SearchGoogleAdsResponse> _callSearch;
+        private readonly gaxgrpc::ApiCall<MutateGoogleAdsRequest, MutateGoogleAdsResponse> _callMutate;
 
         /// <summary>
         /// Constructs a client wrapper for the GoogleAdsService service, with the specified gRPC client and settings.
@@ -442,8 +604,12 @@ namespace Google.Ads.GoogleAds.V0.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callSearch = clientHelper.BuildApiCall<SearchGoogleAdsRequest, SearchGoogleAdsResponse>(
                 GrpcClient.SearchAsync, GrpcClient.Search, effectiveSettings.SearchSettings);
+            _callMutate = clientHelper.BuildApiCall<MutateGoogleAdsRequest, MutateGoogleAdsResponse>(
+                GrpcClient.MutateAsync, GrpcClient.Mutate, effectiveSettings.MutateSettings);
             Modify_ApiCall(ref _callSearch);
             Modify_SearchApiCall(ref _callSearch);
+            Modify_ApiCall(ref _callMutate);
+            Modify_MutateApiCall(ref _callMutate);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -458,6 +624,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
         partial void Modify_SearchApiCall(ref gaxgrpc::ApiCall<SearchGoogleAdsRequest, SearchGoogleAdsResponse> call);
+        partial void Modify_MutateApiCall(ref gaxgrpc::ApiCall<MutateGoogleAdsRequest, MutateGoogleAdsResponse> call);
         partial void OnConstruction(GoogleAdsService.GoogleAdsServiceClient grpcClient, GoogleAdsServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -469,6 +636,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
         partial void Modify_SearchGoogleAdsRequest(ref SearchGoogleAdsRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateGoogleAdsRequest(ref MutateGoogleAdsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns all rows that match the search query.
@@ -508,6 +676,46 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             Modify_SearchGoogleAdsRequest(ref request, ref callSettings);
             return new gaxgrpc::GrpcPagedEnumerable<SearchGoogleAdsRequest, SearchGoogleAdsResponse, GoogleAdsRow>(_callSearch, request, callSettings);
+        }
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public override stt::Task<MutateGoogleAdsResponse> MutateAsync(
+            MutateGoogleAdsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_MutateGoogleAdsRequest(ref request, ref callSettings);
+            return _callMutate.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public override MutateGoogleAdsResponse Mutate(
+            MutateGoogleAdsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_MutateGoogleAdsRequest(ref request, ref callSettings);
+            return _callMutate.Sync(request, callSettings);
         }
 
     }

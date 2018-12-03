@@ -33,8 +33,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest> __Marshaller_GetCustomerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Resources.Customer> __Marshaller_Customer = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Resources.Customer.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.MutateCustomerRequest> __Marshaller_MutateCustomerRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.MutateCustomerRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.MutateCustomerResponse> __Marshaller_MutateCustomerResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.MutateCustomerResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest> __Marshaller_ListAccessibleCustomersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse> __Marshaller_ListAccessibleCustomersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientRequest> __Marshaller_CreateCustomerClientRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientResponse> __Marshaller_CreateCustomerClientResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest, global::Google.Ads.GoogleAds.V0.Resources.Customer> __Method_GetCustomer = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.GetCustomerRequest, global::Google.Ads.GoogleAds.V0.Resources.Customer>(
         grpc::MethodType.Unary,
@@ -43,12 +47,26 @@ namespace Google.Ads.GoogleAds.V0.Services {
         __Marshaller_GetCustomerRequest,
         __Marshaller_Customer);
 
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.MutateCustomerRequest, global::Google.Ads.GoogleAds.V0.Services.MutateCustomerResponse> __Method_MutateCustomer = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.MutateCustomerRequest, global::Google.Ads.GoogleAds.V0.Services.MutateCustomerResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "MutateCustomer",
+        __Marshaller_MutateCustomerRequest,
+        __Marshaller_MutateCustomerResponse);
+
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest, global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse> __Method_ListAccessibleCustomers = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest, global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "ListAccessibleCustomers",
         __Marshaller_ListAccessibleCustomersRequest,
         __Marshaller_ListAccessibleCustomersResponse);
+
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientRequest, global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientResponse> __Method_CreateCustomerClient = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientRequest, global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateCustomerClient",
+        __Marshaller_CreateCustomerClientRequest,
+        __Marshaller_CreateCustomerClientResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -71,6 +89,17 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
 
       /// <summary>
+      /// Updates a customer. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Services.MutateCustomerResponse> MutateCustomer(global::Google.Ads.GoogleAds.V0.Services.MutateCustomerRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// Returns resource names of customers directly accessible by the
       /// user authenticating the call.
       /// </summary>
@@ -78,6 +107,17 @@ namespace Google.Ads.GoogleAds.V0.Services {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersResponse> ListAccessibleCustomers(global::Google.Ads.GoogleAds.V0.Services.ListAccessibleCustomersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Creates a new client under manager. The new client customer is returned.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientResponse> CreateCustomerClient(global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -152,6 +192,50 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return CallInvoker.AsyncUnaryCall(__Method_GetCustomer, null, options, request);
       }
       /// <summary>
+      /// Updates a customer. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.MutateCustomerResponse MutateCustomer(global::Google.Ads.GoogleAds.V0.Services.MutateCustomerRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return MutateCustomer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Updates a customer. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.MutateCustomerResponse MutateCustomer(global::Google.Ads.GoogleAds.V0.Services.MutateCustomerRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_MutateCustomer, null, options, request);
+      }
+      /// <summary>
+      /// Updates a customer. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.MutateCustomerResponse> MutateCustomerAsync(global::Google.Ads.GoogleAds.V0.Services.MutateCustomerRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return MutateCustomerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Updates a customer. Operation statuses are returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.MutateCustomerResponse> MutateCustomerAsync(global::Google.Ads.GoogleAds.V0.Services.MutateCustomerRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_MutateCustomer, null, options, request);
+      }
+      /// <summary>
       /// Returns resource names of customers directly accessible by the
       /// user authenticating the call.
       /// </summary>
@@ -199,6 +283,50 @@ namespace Google.Ads.GoogleAds.V0.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListAccessibleCustomers, null, options, request);
       }
+      /// <summary>
+      /// Creates a new client under manager. The new client customer is returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientResponse CreateCustomerClient(global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CreateCustomerClient(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates a new client under manager. The new client customer is returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientResponse CreateCustomerClient(global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateCustomerClient, null, options, request);
+      }
+      /// <summary>
+      /// Creates a new client under manager. The new client customer is returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientResponse> CreateCustomerClientAsync(global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return CreateCustomerClientAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates a new client under manager. The new client customer is returned.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientResponse> CreateCustomerClientAsync(global::Google.Ads.GoogleAds.V0.Services.CreateCustomerClientRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateCustomerClient, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override CustomerServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -212,7 +340,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetCustomer, serviceImpl.GetCustomer)
-          .AddMethod(__Method_ListAccessibleCustomers, serviceImpl.ListAccessibleCustomers).Build();
+          .AddMethod(__Method_MutateCustomer, serviceImpl.MutateCustomer)
+          .AddMethod(__Method_ListAccessibleCustomers, serviceImpl.ListAccessibleCustomers)
+          .AddMethod(__Method_CreateCustomerClient, serviceImpl.CreateCustomerClient).Build();
     }
 
   }

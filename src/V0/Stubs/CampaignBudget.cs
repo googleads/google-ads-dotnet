@@ -29,26 +29,27 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "ZXMaOmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2J1ZGdldF9kZWxp",
             "dmVyeV9tZXRob2QucHJvdG8aMWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
             "dW1zL2J1ZGdldF9zdGF0dXMucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFw",
-            "cGVycy5wcm90byLSAwoOQ2FtcGFpZ25CdWRnZXQSFQoNcmVzb3VyY2VfbmFt",
+            "cGVycy5wcm90byKMBAoOQ2FtcGFpZ25CdWRnZXQSFQoNcmVzb3VyY2VfbmFt",
             "ZRgBIAEoCRInCgJpZBgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
             "bHVlEioKBG5hbWUYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
             "dWUSMgoNYW1vdW50X21pY3JvcxgFIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
-            "bnQ2NFZhbHVlEkwKBnN0YXR1cxgGIAEoDjI8Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVudW1zLkJ1ZGdldFN0YXR1c0VudW0uQnVkZ2V0U3RhdHVzEmUK",
-            "D2RlbGl2ZXJ5X21ldGhvZBgHIAEoDjJMLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLmVudW1zLkJ1ZGdldERlbGl2ZXJ5TWV0aG9kRW51bS5CdWRnZXREZWxp",
-            "dmVyeU1ldGhvZBI1ChFleHBsaWNpdGx5X3NoYXJlZBgIIAEoCzIaLmdvb2ds",
-            "ZS5wcm90b2J1Zi5Cb29sVmFsdWUSNAoPcmVmZXJlbmNlX2NvdW50GAkgASgL",
-            "MhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVC2AEKJWNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCE0NhbXBhaWduQnVkZ2V0UHJv",
-            "dG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFH",
-            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3RvMw=="));
+            "bnQ2NFZhbHVlEjgKE3RvdGFsX2Ftb3VudF9taWNyb3MYCiABKAsyGy5nb29n",
+            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRJMCgZzdGF0dXMYBiABKA4yPC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5CdWRnZXRTdGF0dXNFbnVtLkJ1",
+            "ZGdldFN0YXR1cxJlCg9kZWxpdmVyeV9tZXRob2QYByABKA4yTC5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5lbnVtcy5CdWRnZXREZWxpdmVyeU1ldGhvZEVu",
+            "dW0uQnVkZ2V0RGVsaXZlcnlNZXRob2QSNQoRZXhwbGljaXRseV9zaGFyZWQY",
+            "CCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjQKD3JlZmVyZW5j",
+            "ZV9jb3VudBgJIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQtgB",
+            "CiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhNDYW1w",
+            "YWlnbkJ1ZGdldFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3Vy",
+            "Y2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2Vz",
+            "ygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.BudgetDeliveryMethodReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BudgetStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CampaignBudget), global::Google.Ads.GoogleAds.V0.Resources.CampaignBudget.Parser, new[]{ "ResourceName", "Id", "Name", "AmountMicros", "Status", "DeliveryMethod", "ExplicitlyShared", "ReferenceCount" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CampaignBudget), global::Google.Ads.GoogleAds.V0.Resources.CampaignBudget.Parser, new[]{ "ResourceName", "Id", "Name", "AmountMicros", "TotalAmountMicros", "Status", "DeliveryMethod", "ExplicitlyShared", "ReferenceCount" }, null, null, null)
           }));
     }
     #endregion
@@ -87,6 +88,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       Id = other.Id;
       Name = other.Name;
       AmountMicros = other.AmountMicros;
+      TotalAmountMicros = other.TotalAmountMicros;
       status_ = other.status_;
       deliveryMethod_ = other.deliveryMethod_;
       ExplicitlyShared = other.ExplicitlyShared;
@@ -173,6 +175,23 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       get { return amountMicros_; }
       set {
         amountMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "total_amount_micros" field.</summary>
+    public const int TotalAmountMicrosFieldNumber = 10;
+    private static readonly pb::FieldCodec<long?> _single_totalAmountMicros_codec = pb::FieldCodec.ForStructWrapper<long>(82);
+    private long? totalAmountMicros_;
+    /// <summary>
+    /// The lifetime amount of the budget, in the local currency for the account.
+    /// Amount is specified in micros, where one million is equivalent to one
+    /// currency unit.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? TotalAmountMicros {
+      get { return totalAmountMicros_; }
+      set {
+        totalAmountMicros_ = value;
       }
     }
 
@@ -271,6 +290,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (Id != other.Id) return false;
       if (Name != other.Name) return false;
       if (AmountMicros != other.AmountMicros) return false;
+      if (TotalAmountMicros != other.TotalAmountMicros) return false;
       if (Status != other.Status) return false;
       if (DeliveryMethod != other.DeliveryMethod) return false;
       if (ExplicitlyShared != other.ExplicitlyShared) return false;
@@ -285,6 +305,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (id_ != null) hash ^= Id.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
       if (amountMicros_ != null) hash ^= AmountMicros.GetHashCode();
+      if (totalAmountMicros_ != null) hash ^= TotalAmountMicros.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
       if (DeliveryMethod != 0) hash ^= DeliveryMethod.GetHashCode();
       if (explicitlyShared_ != null) hash ^= ExplicitlyShared.GetHashCode();
@@ -329,6 +350,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (referenceCount_ != null) {
         _single_referenceCount_codec.WriteTagAndValue(output, ReferenceCount);
       }
+      if (totalAmountMicros_ != null) {
+        _single_totalAmountMicros_codec.WriteTagAndValue(output, TotalAmountMicros);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -348,6 +372,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (amountMicros_ != null) {
         size += _single_amountMicros_codec.CalculateSizeWithTag(AmountMicros);
+      }
+      if (totalAmountMicros_ != null) {
+        size += _single_totalAmountMicros_codec.CalculateSizeWithTag(TotalAmountMicros);
       }
       if (Status != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
@@ -388,6 +415,11 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (other.amountMicros_ != null) {
         if (amountMicros_ == null || other.AmountMicros != 0L) {
           AmountMicros = other.AmountMicros;
+        }
+      }
+      if (other.totalAmountMicros_ != null) {
+        if (totalAmountMicros_ == null || other.TotalAmountMicros != 0L) {
+          TotalAmountMicros = other.TotalAmountMicros;
         }
       }
       if (other.Status != 0) {
@@ -461,6 +493,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             long? value = _single_referenceCount_codec.Read(input);
             if (referenceCount_ == null || value != 0L) {
               ReferenceCount = value;
+            }
+            break;
+          }
+          case 82: {
+            long? value = _single_totalAmountMicros_codec.Read(input);
+            if (totalAmountMicros_ == null || value != 0L) {
+              TotalAmountMicros = value;
             }
             break;
           }

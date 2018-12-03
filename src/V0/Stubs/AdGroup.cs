@@ -27,40 +27,49 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYWRfZ3JvdXAu",
             "cHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxo1Z29v",
             "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uL2N1c3RvbV9wYXJhbWV0ZXIu",
-            "cHJvdG8aPWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2FkX2dyb3Vw",
-            "X2FkX3JvdGF0aW9uX21vZGUucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRz",
-            "L3YwL2VudW1zL2FkX2dyb3VwX3N0YXR1cy5wcm90bxoxZ29vZ2xlL2Fkcy9n",
-            "b29nbGVhZHMvdjAvZW51bXMvYWRfZ3JvdXBfdHlwZS5wcm90bxoeZ29vZ2xl",
-            "L3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIoMHCgdBZEdyb3VwEhUKDXJlc291",
-            "cmNlX25hbWUYASABKAkSJwoCaWQYAyABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "SW50NjRWYWx1ZRIqCgRuYW1lGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cmluZ1ZhbHVlEk4KBnN0YXR1cxgFIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVudW1zLkFkR3JvdXBTdGF0dXNFbnVtLkFkR3JvdXBTdGF0dXMS",
-            "SAoEdHlwZRgMIAEoDjI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
-            "LkFkR3JvdXBUeXBlRW51bS5BZEdyb3VwVHlwZRJoChBhZF9yb3RhdGlvbl9t",
-            "b2RlGBYgASgOMk4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQWRH",
-            "cm91cEFkUm90YXRpb25Nb2RlRW51bS5BZEdyb3VwQWRSb3RhdGlvbk1vZGUS",
-            "OwoVdHJhY2tpbmdfdXJsX3RlbXBsYXRlGA0gASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlEk4KFXVybF9jdXN0b21fcGFyYW1ldGVycxgGIAMo",
-            "CzIvLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5DdXN0b21QYXJh",
-            "bWV0ZXISLgoIY2FtcGFpZ24YCiABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
-            "aW5nVmFsdWUSMwoOY3BjX2JpZF9taWNyb3MYDiABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuSW50NjRWYWx1ZRIzCg5jcG1fYmlkX21pY3JvcxgPIAEoCzIbLmdv",
-            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjMKDmNwYV9iaWRfbWljcm9zGBAg",
-            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSMwoOY3B2X2JpZF9t",
-            "aWNyb3MYESABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI6ChR0",
-            "YXJnZXRfcm9hc19vdmVycmlkZRgTIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5E",
-            "b3VibGVWYWx1ZRI7ChZwZXJjZW50X2NwY19iaWRfbWljcm9zGBQgASgLMhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVC0QEKJWNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDEFkR3JvdXBQcm90b1ABWkpnb29n",
-            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
-            "ZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRz",
-            "XFYwXFJlc291cmNlc2IGcHJvdG8z"));
+            "cHJvdG8aRGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbi9leHBsb3Jl",
+            "cl9hdXRvX29wdGltaXplcl9zZXR0aW5nLnByb3RvGj1nb29nbGUvYWRzL2dv",
+            "b2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF9hZF9yb3RhdGlvbl9tb2RlLnBy",
+            "b3RvGjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF9z",
+            "dGF0dXMucHJvdG8aMWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2Fk",
+            "X2dyb3VwX3R5cGUucHJvdG8aN2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
+            "dW1zL3RhcmdldGluZ19kaW1lbnNpb24ucHJvdG8aHmdvb2dsZS9wcm90b2J1",
+            "Zi93cmFwcGVycy5wcm90byKSCQoHQWRHcm91cBIVCg1yZXNvdXJjZV9uYW1l",
+            "GAEgASgJEicKAmlkGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
+            "dWUSKgoEbmFtZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZRJOCgZzdGF0dXMYBSABKA4yPi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
+            "bnVtcy5BZEdyb3VwU3RhdHVzRW51bS5BZEdyb3VwU3RhdHVzEkgKBHR5cGUY",
+            "DCABKA4yOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5BZEdyb3Vw",
+            "VHlwZUVudW0uQWRHcm91cFR5cGUSaAoQYWRfcm90YXRpb25fbW9kZRgWIAEo",
+            "DjJOLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkFkR3JvdXBBZFJv",
+            "dGF0aW9uTW9kZUVudW0uQWRHcm91cEFkUm90YXRpb25Nb2RlEjsKFXRyYWNr",
+            "aW5nX3VybF90ZW1wbGF0ZRgNIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRJOChV1cmxfY3VzdG9tX3BhcmFtZXRlcnMYBiADKAsyLy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uQ3VzdG9tUGFyYW1ldGVyEi4K",
+            "CGNhbXBhaWduGAogASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjMKDmNwY19iaWRfbWljcm9zGA4gASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
+            "dDY0VmFsdWUSMwoOY3BtX2JpZF9taWNyb3MYDyABKAsyGy5nb29nbGUucHJv",
+            "dG9idWYuSW50NjRWYWx1ZRIzCg5jcGFfYmlkX21pY3JvcxgQIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjMKDmNwdl9iaWRfbWljcm9zGBEg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOgoUdGFyZ2V0X3Jv",
+            "YXNfb3ZlcnJpZGUYEyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFs",
+            "dWUSOwoWcGVyY2VudF9jcGNfYmlkX21pY3JvcxgUIAEoCzIbLmdvb2dsZS5w",
+            "cm90b2J1Zi5JbnQ2NFZhbHVlEmUKH2V4cGxvcmVyX2F1dG9fb3B0aW1pemVy",
+            "X3NldHRpbmcYFSABKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21t",
+            "b24uRXhwbG9yZXJBdXRvT3B0aW1pemVyU2V0dGluZxJuChxkaXNwbGF5X2N1",
+            "c3RvbV9iaWRfZGltZW5zaW9uGBcgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuZW51bXMuVGFyZ2V0aW5nRGltZW5zaW9uRW51bS5UYXJnZXRpbmdE",
+            "aW1lbnNpb24SNgoQZmluYWxfdXJsX3N1ZmZpeBgYIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZULRAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLnJlc291cmNlc0IMQWRHcm91cFByb3RvUAFaSmdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9y",
+            "ZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVz",
+            "b3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdRotationModeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.ExplorerAutoOptimizerSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdRotationModeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TargetingDimensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroup), global::Google.Ads.GoogleAds.V0.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "CpaBidMicros", "CpvBidMicros", "TargetRoasOverride", "PercentCpcBidMicros" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroup), global::Google.Ads.GoogleAds.V0.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "CpaBidMicros", "CpvBidMicros", "TargetRoasOverride", "PercentCpcBidMicros", "ExplorerAutoOptimizerSetting", "DisplayCustomBidDimension", "FinalUrlSuffix" }, null, null, null)
           }));
     }
     #endregion
@@ -110,6 +119,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       CpvBidMicros = other.CpvBidMicros;
       TargetRoasOverride = other.TargetRoasOverride;
       PercentCpcBidMicros = other.PercentCpcBidMicros;
+      explorerAutoOptimizerSetting_ = other.explorerAutoOptimizerSetting_ != null ? other.explorerAutoOptimizerSetting_.Clone() : null;
+      displayCustomBidDimension_ = other.displayCustomBidDimension_;
+      FinalUrlSuffix = other.FinalUrlSuffix;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -354,6 +366,51 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "explorer_auto_optimizer_setting" field.</summary>
+    public const int ExplorerAutoOptimizerSettingFieldNumber = 21;
+    private global::Google.Ads.GoogleAds.V0.Common.ExplorerAutoOptimizerSetting explorerAutoOptimizerSetting_;
+    /// <summary>
+    /// Settings for the Display Campaign Optimizer, initially termed "Explorer".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.ExplorerAutoOptimizerSetting ExplorerAutoOptimizerSetting {
+      get { return explorerAutoOptimizerSetting_; }
+      set {
+        explorerAutoOptimizerSetting_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "display_custom_bid_dimension" field.</summary>
+    public const int DisplayCustomBidDimensionFieldNumber = 23;
+    private global::Google.Ads.GoogleAds.V0.Enums.TargetingDimensionEnum.Types.TargetingDimension displayCustomBidDimension_ = 0;
+    /// <summary>
+    /// Allows advertisers to specify a targeting dimension on which to place
+    /// absolute bids. This is only applicable for campaigns that target only the
+    /// display network and not search.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.TargetingDimensionEnum.Types.TargetingDimension DisplayCustomBidDimension {
+      get { return displayCustomBidDimension_; }
+      set {
+        displayCustomBidDimension_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "final_url_suffix" field.</summary>
+    public const int FinalUrlSuffixFieldNumber = 24;
+    private static readonly pb::FieldCodec<string> _single_finalUrlSuffix_codec = pb::FieldCodec.ForClassWrapper<string>(194);
+    private string finalUrlSuffix_;
+    /// <summary>
+    /// URL template for appending params to Final URL.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FinalUrlSuffix {
+      get { return finalUrlSuffix_; }
+      set {
+        finalUrlSuffix_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AdGroup);
@@ -382,6 +439,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (CpvBidMicros != other.CpvBidMicros) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(TargetRoasOverride, other.TargetRoasOverride)) return false;
       if (PercentCpcBidMicros != other.PercentCpcBidMicros) return false;
+      if (!object.Equals(ExplorerAutoOptimizerSetting, other.ExplorerAutoOptimizerSetting)) return false;
+      if (DisplayCustomBidDimension != other.DisplayCustomBidDimension) return false;
+      if (FinalUrlSuffix != other.FinalUrlSuffix) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -403,6 +463,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (cpvBidMicros_ != null) hash ^= CpvBidMicros.GetHashCode();
       if (targetRoasOverride_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(TargetRoasOverride);
       if (percentCpcBidMicros_ != null) hash ^= PercentCpcBidMicros.GetHashCode();
+      if (explorerAutoOptimizerSetting_ != null) hash ^= ExplorerAutoOptimizerSetting.GetHashCode();
+      if (DisplayCustomBidDimension != 0) hash ^= DisplayCustomBidDimension.GetHashCode();
+      if (finalUrlSuffix_ != null) hash ^= FinalUrlSuffix.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -459,9 +522,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (percentCpcBidMicros_ != null) {
         _single_percentCpcBidMicros_codec.WriteTagAndValue(output, PercentCpcBidMicros);
       }
+      if (explorerAutoOptimizerSetting_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(ExplorerAutoOptimizerSetting);
+      }
       if (AdRotationMode != 0) {
         output.WriteRawTag(176, 1);
         output.WriteEnum((int) AdRotationMode);
+      }
+      if (DisplayCustomBidDimension != 0) {
+        output.WriteRawTag(184, 1);
+        output.WriteEnum((int) DisplayCustomBidDimension);
+      }
+      if (finalUrlSuffix_ != null) {
+        _single_finalUrlSuffix_codec.WriteTagAndValue(output, FinalUrlSuffix);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -513,6 +587,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (percentCpcBidMicros_ != null) {
         size += _single_percentCpcBidMicros_codec.CalculateSizeWithTag(PercentCpcBidMicros);
+      }
+      if (explorerAutoOptimizerSetting_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ExplorerAutoOptimizerSetting);
+      }
+      if (DisplayCustomBidDimension != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) DisplayCustomBidDimension);
+      }
+      if (finalUrlSuffix_ != null) {
+        size += _single_finalUrlSuffix_codec.CalculateSizeWithTag(FinalUrlSuffix);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -586,6 +669,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (other.percentCpcBidMicros_ != null) {
         if (percentCpcBidMicros_ == null || other.PercentCpcBidMicros != 0L) {
           PercentCpcBidMicros = other.PercentCpcBidMicros;
+        }
+      }
+      if (other.explorerAutoOptimizerSetting_ != null) {
+        if (explorerAutoOptimizerSetting_ == null) {
+          explorerAutoOptimizerSetting_ = new global::Google.Ads.GoogleAds.V0.Common.ExplorerAutoOptimizerSetting();
+        }
+        ExplorerAutoOptimizerSetting.MergeFrom(other.ExplorerAutoOptimizerSetting);
+      }
+      if (other.DisplayCustomBidDimension != 0) {
+        DisplayCustomBidDimension = other.DisplayCustomBidDimension;
+      }
+      if (other.finalUrlSuffix_ != null) {
+        if (finalUrlSuffix_ == null || other.FinalUrlSuffix != "") {
+          FinalUrlSuffix = other.FinalUrlSuffix;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -685,8 +782,26 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             break;
           }
+          case 170: {
+            if (explorerAutoOptimizerSetting_ == null) {
+              explorerAutoOptimizerSetting_ = new global::Google.Ads.GoogleAds.V0.Common.ExplorerAutoOptimizerSetting();
+            }
+            input.ReadMessage(explorerAutoOptimizerSetting_);
+            break;
+          }
           case 176: {
             adRotationMode_ = (global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode) input.ReadEnum();
+            break;
+          }
+          case 184: {
+            displayCustomBidDimension_ = (global::Google.Ads.GoogleAds.V0.Enums.TargetingDimensionEnum.Types.TargetingDimension) input.ReadEnum();
+            break;
+          }
+          case 194: {
+            string value = _single_finalUrlSuffix_codec.Read(input);
+            if (finalUrlSuffix_ == null || value != "") {
+              FinalUrlSuffix = value;
+            }
             break;
           }
         }

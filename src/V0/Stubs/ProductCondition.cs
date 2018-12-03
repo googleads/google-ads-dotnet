@@ -25,15 +25,14 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9wcm9kdWN0X2NvbmRp",
-            "dGlvbi5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMidQoU",
-            "UHJvZHVjdENvbmRpdGlvbkVudW0iXQoQUHJvZHVjdENvbmRpdGlvbhIPCgtV",
-            "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIHCgNPTEQQAhIHCgNORVcQAxIP",
-            "CgtSRUZVUkJJU0hFRBAEEggKBFVTRUQQBULGAQohY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLmVudW1zQhVQcm9kdWN0Q29uZGl0aW9uUHJvdG9QAVpC",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVt",
-            "c2IGcHJvdG8z"));
+            "dGlvbi5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMibAoU",
+            "UHJvZHVjdENvbmRpdGlvbkVudW0iVAoQUHJvZHVjdENvbmRpdGlvbhIPCgtV",
+            "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIHCgNORVcQAxIPCgtSRUZVUkJJ",
+            "U0hFRBAEEggKBFVTRUQQBULGAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmVudW1zQhVQcm9kdWN0Q29uZGl0aW9uUHJvdG9QAVpCZ29vZ2xlLmdv",
+            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
+            "L2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAu",
+            "RW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -162,10 +161,6 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Used for return value only. Represents value unknown in this version.
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
-        /// <summary>
-        /// The product condition is old.
-        /// </summary>
-        [pbr::OriginalName("OLD")] Old = 2,
         /// <summary>
         /// The product condition is new.
         /// </summary>

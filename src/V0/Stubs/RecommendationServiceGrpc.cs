@@ -35,6 +35,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Resources.Recommendation> __Marshaller_Recommendation = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Resources.Recommendation.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationRequest> __Marshaller_ApplyRecommendationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResponse> __Marshaller_ApplyRecommendationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest> __Marshaller_DismissRecommendationRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse> __Marshaller_DismissRecommendationResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.GetRecommendationRequest, global::Google.Ads.GoogleAds.V0.Resources.Recommendation> __Method_GetRecommendation = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.GetRecommendationRequest, global::Google.Ads.GoogleAds.V0.Resources.Recommendation>(
         grpc::MethodType.Unary,
@@ -49,6 +51,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
         "ApplyRecommendation",
         __Marshaller_ApplyRecommendationRequest,
         __Marshaller_ApplyRecommendationResponse);
+
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest, global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse> __Method_DismissRecommendation = new grpc::Method<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest, global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DismissRecommendation",
+        __Marshaller_DismissRecommendationRequest,
+        __Marshaller_DismissRecommendationResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -77,6 +86,17 @@ namespace Google.Ads.GoogleAds.V0.Services {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResponse> ApplyRecommendation(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Dismisses given recommendations.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse> DismissRecommendation(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -194,6 +214,50 @@ namespace Google.Ads.GoogleAds.V0.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ApplyRecommendation, null, options, request);
       }
+      /// <summary>
+      /// Dismisses given recommendations.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse DismissRecommendation(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return DismissRecommendation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Dismisses given recommendations.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse DismissRecommendation(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DismissRecommendation, null, options, request);
+      }
+      /// <summary>
+      /// Dismisses given recommendations.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse> DismissRecommendationAsync(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      {
+        return DismissRecommendationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Dismisses given recommendations.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse> DismissRecommendationAsync(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DismissRecommendation, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override RecommendationServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -207,7 +271,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetRecommendation, serviceImpl.GetRecommendation)
-          .AddMethod(__Method_ApplyRecommendation, serviceImpl.ApplyRecommendation).Build();
+          .AddMethod(__Method_ApplyRecommendation, serviceImpl.ApplyRecommendation)
+          .AddMethod(__Method_DismissRecommendation, serviceImpl.DismissRecommendation).Build();
     }
 
   }

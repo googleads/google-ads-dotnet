@@ -78,6 +78,15 @@ namespace Google.Ads.GoogleAds.Examples
                     $"<add key = 'OAuth2RefreshToken' value = " +
                     $"'{credential.Token.RefreshToken}' />\n");
 
+                Console.WriteLine("/n" +
+                    "<!-- Required for manager accounts only: Specify the login customer -->\n" +
+                    "<!-- ID used to authenticate API calls. This will be the customer ID -->\n" +
+                    "<!-- of the authenticated manager account. It should be set without -->\n" +
+                    "<!-- dashes, for example: 1234567890 instead of 123-456-7890. You can -->\n" +
+                    "<!-- also specify this later in code if your application uses -->\n" +
+                    "<!-- multiple manager account OAuth pairs. -->\n" +
+                    "<add key = 'LoginCustomerId' value = INSERT_LOGIN_CUSTOMER_ID_HERE />/n/n");
+
                 Console.WriteLine("Press <Enter> to continue...");
                 Console.ReadLine();
             }
