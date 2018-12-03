@@ -25,14 +25,15 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvaGVhZGVyX2Vycm9y",
-            "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMiXQoPSGVh",
-            "ZGVyRXJyb3JFbnVtIkoKC0hlYWRlckVycm9yEg8KC1VOU1BFQ0lGSUVEEAAS",
-            "CwoHVU5LTk9XThABEh0KGUlOVkFMSURfTE9HSU5fQ1VTVE9NRVJfSUQQA0LG",
-            "AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IQSGVhZGVy",
-            "RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
-            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMidgoPSGVh",
+            "ZGVyRXJyb3JFbnVtImMKC0hlYWRlckVycm9yEg8KC1VOU1BFQ0lGSUVEEAAS",
+            "CwoHVU5LTk9XThABEh0KGUlOVkFMSURfTE9HSU5fQ1VTVE9NRVJfSUQQAxIX",
+            "ChNNQUxGT1JNRURfVEFTS19JTkZPEARCxgEKImNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5lcnJvcnNCEEhlYWRlckVycm9yUHJvdG9QAVpEZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFk",
+            "cy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -165,6 +166,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// The login customer id could not be validated.
         /// </summary>
         [pbr::OriginalName("INVALID_LOGIN_CUSTOMER_ID")] InvalidLoginCustomerId = 3,
+        /// <summary>
+        /// One or more task headers could not be parsed.
+        /// </summary>
+        [pbr::OriginalName("MALFORMED_TASK_INFO")] MalformedTaskInfo = 4,
       }
 
     }

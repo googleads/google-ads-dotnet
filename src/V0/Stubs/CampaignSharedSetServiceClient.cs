@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Generated code. DO NOT EDIT!
+// TODO( b/119694056): Removed Comment
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
 using gax = Google.Api.Gax;

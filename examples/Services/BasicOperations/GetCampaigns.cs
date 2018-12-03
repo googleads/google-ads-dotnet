@@ -73,8 +73,12 @@ namespace Google.Ads.GoogleAds.Examples.V0
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
                 PageSize = PAGE_SIZE,
-                Query = "SELECT campaign.id, campaign.network_settings.target_content_network " +
-                    "FROM campaign ORDER BY campaign.id",
+                Query = @"SELECT
+                            campaign.id,
+                            campaign.name,
+                            campaign.network_settings.target_content_network
+                        FROM campaign
+                        ORDER BY campaign.id",
                 CustomerId = customerId.ToString()
             };
 

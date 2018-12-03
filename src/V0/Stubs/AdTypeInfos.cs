@@ -28,67 +28,97 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "cy5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uGkNnb29n",
             "bGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jYWxsX2NvbnZlcnNpb25fcmVw",
             "b3J0aW5nX3N0YXRlLnByb3RvGj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9l",
-            "bnVtcy9kaXNwbGF5X2FkX2Zvcm1hdF9zZXR0aW5nLnByb3RvGh5nb29nbGUv",
-            "cHJvdG9idWYvd3JhcHBlcnMucHJvdG8ipAEKClRleHRBZEluZm8SLgoIaGVh",
-            "ZGxpbmUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMgoM",
-            "ZGVzY3JpcHRpb24xGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
-            "bHVlEjIKDGRlc2NyaXB0aW9uMhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZSL3AgoSRXhwYW5kZWRUZXh0QWRJbmZvEjQKDmhlYWRsaW5l",
-            "X3BhcnQxGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjQK",
-            "DmhlYWRsaW5lX3BhcnQyGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEjQKDmhlYWRsaW5lX3BhcnQzGAYgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlEjEKC2Rlc2NyaXB0aW9uGAMgASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKDGRlc2NyaXB0aW9uMhgHIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIrCgVwYXRoMRgEIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIrCgVwYXRoMhgFIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJ9ChNEeW5hbWljU2VhcmNo",
-            "QWRJbmZvEjIKDGRlc2NyaXB0aW9uMRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRIyCgxkZXNjcmlwdGlvbjIYAiABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUi9wYKF1Jlc3BvbnNpdmVEaXNwbGF5QWRJ",
-            "bmZvEjQKDnNob3J0X2hlYWRsaW5lGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LlN0cmluZ1ZhbHVlEjMKDWxvbmdfaGVhZGxpbmUYAiABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUSMQoLZGVzY3JpcHRpb24YAyABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoNYnVzaW5lc3NfbmFtZRgE",
-            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI4ChRhbGxvd19m",
-            "bGV4aWJsZV9jb2xvchgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFs",
-            "dWUSMgoMYWNjZW50X2NvbG9yGAYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cmluZ1ZhbHVlEjAKCm1haW5fY29sb3IYByABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSOQoTY2FsbF90b19hY3Rpb25fdGV4dBgIIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgpsb2dvX2ltYWdlGAkg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjcKEXNxdWFyZV9s",
-            "b2dvX2ltYWdlGAogASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "EjUKD21hcmtldGluZ19pbWFnZRgLIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRI8ChZzcXVhcmVfbWFya2V0aW5nX2ltYWdlGAwgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEmgKDmZvcm1hdF9zZXR0aW5n",
-            "GA0gASgOMlAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuRGlzcGxh",
-            "eUFkRm9ybWF0U2V0dGluZ0VudW0uRGlzcGxheUFkRm9ybWF0U2V0dGluZxIy",
-            "CgxwcmljZV9wcmVmaXgYDiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUSMAoKcHJvbW9fdGV4dBgPIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZSKFBQoOQ2FsbE9ubHlBZEluZm8SMgoMY291bnRyeV9jb2Rl",
-            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKDHBob25l",
-            "X251bWJlchgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIz",
-            "Cg1idXNpbmVzc19uYW1lGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEjIKDGRlc2NyaXB0aW9uMRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRIyCgxkZXNjcmlwdGlvbjIYBSABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUSMAoMY2FsbF90cmFja2VkGAYgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRI7ChdkaXNhYmxlX2NhbGxfY29u",
-            "dmVyc2lvbhgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSQwod",
-            "cGhvbmVfbnVtYmVyX3ZlcmlmaWNhdGlvbl91cmwYCCABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUSNwoRY29udmVyc2lvbl9hY3Rpb24YCSAB",
-            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSgAEKGmNvbnZlcnNp",
-            "b25fcmVwb3J0aW5nX3N0YXRlGAogASgOMlwuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAuZW51bXMuQ2FsbENvbnZlcnNpb25SZXBvcnRpbmdTdGF0ZUVudW0u",
-            "Q2FsbENvbnZlcnNpb25SZXBvcnRpbmdTdGF0ZSJQChtFeHBhbmRlZER5bmFt",
-            "aWNTZWFyY2hBZEluZm8SMQoLZGVzY3JpcHRpb24YASABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUiDQoLSG90ZWxBZEluZm8iFQoTU2hvcHBp",
-            "bmdTbWFydEFkSW5mbyIXChVTaG9wcGluZ1Byb2R1Y3RBZEluZm9CxgEKImNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CEEFkVHlwZUluZm9z",
-            "UHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
-            "cy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29n",
-            "bGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2ds",
-            "ZUFkc1xWMFxDb21tb25iBnByb3RvMw=="));
+            "bnVtcy9kaXNwbGF5X2FkX2Zvcm1hdF9zZXR0aW5nLnByb3RvGi1nb29nbGUv",
+            "YWRzL2dvb2dsZWFkcy92MC9lbnVtcy9taW1lX3R5cGUucHJvdG8aHmdvb2ds",
+            "ZS9wcm90b2J1Zi93cmFwcGVycy5wcm90byKkAQoKVGV4dEFkSW5mbxIuCgho",
+            "ZWFkbGluZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIy",
+            "CgxkZXNjcmlwdGlvbjEYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWUSMgoMZGVzY3JpcHRpb24yGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlIvcCChJFeHBhbmRlZFRleHRBZEluZm8SNAoOaGVhZGxp",
+            "bmVfcGFydDEYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
+            "NAoOaGVhZGxpbmVfcGFydDIYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWUSNAoOaGVhZGxpbmVfcGFydDMYBiABKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUSMQoLZGVzY3JpcHRpb24YAyABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMgoMZGVzY3JpcHRpb24yGAcgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEisKBXBhdGgxGAQgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEisKBXBhdGgyGAUgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIn0KE0R5bmFtaWNTZWFy",
+            "Y2hBZEluZm8SMgoMZGVzY3JpcHRpb24xGAEgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEjIKDGRlc2NyaXB0aW9uMhgCIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSL3BgoXUmVzcG9uc2l2ZURpc3BsYXlB",
+            "ZEluZm8SNAoOc2hvcnRfaGVhZGxpbmUYASABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUSMwoNbG9uZ19oZWFkbGluZRgCIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgtkZXNjcmlwdGlvbhgDIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1idXNpbmVzc19uYW1l",
+            "GAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjgKFGFsbG93",
+            "X2ZsZXhpYmxlX2NvbG9yGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xW",
+            "YWx1ZRIyCgxhY2NlbnRfY29sb3IYBiABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "U3RyaW5nVmFsdWUSMAoKbWFpbl9jb2xvchgHIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5TdHJpbmdWYWx1ZRI5ChNjYWxsX3RvX2FjdGlvbl90ZXh0GAggASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjAKCmxvZ29faW1hZ2UY",
+            "CSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNwoRc3F1YXJl",
+            "X2xvZ29faW1hZ2UYCiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWUSNQoPbWFya2V0aW5nX2ltYWdlGAsgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEjwKFnNxdWFyZV9tYXJrZXRpbmdfaW1hZ2UYDCABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSaAoOZm9ybWF0X3NldHRp",
+            "bmcYDSABKA4yUC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5EaXNw",
+            "bGF5QWRGb3JtYXRTZXR0aW5nRW51bS5EaXNwbGF5QWRGb3JtYXRTZXR0aW5n",
+            "EjIKDHByaWNlX3ByZWZpeBgOIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRIwCgpwcm9tb190ZXh0GA8gASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlIoUFCg5DYWxsT25seUFkSW5mbxIyCgxjb3VudHJ5X2Nv",
+            "ZGUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMgoMcGhv",
+            "bmVfbnVtYmVyGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjMKDWJ1c2luZXNzX25hbWUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWUSMgoMZGVzY3JpcHRpb24xGAQgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEjIKDGRlc2NyaXB0aW9uMhgFIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgxjYWxsX3RyYWNrZWQYBiABKAsy",
+            "Gi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjsKF2Rpc2FibGVfY2FsbF9j",
+            "b252ZXJzaW9uGAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJD",
+            "Ch1waG9uZV9udW1iZXJfdmVyaWZpY2F0aW9uX3VybBgIIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI3ChFjb252ZXJzaW9uX2FjdGlvbhgJ",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRKAAQoaY29udmVy",
+            "c2lvbl9yZXBvcnRpbmdfc3RhdGUYCiABKA4yXC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5lbnVtcy5DYWxsQ29udmVyc2lvblJlcG9ydGluZ1N0YXRlRW51",
+            "bS5DYWxsQ29udmVyc2lvblJlcG9ydGluZ1N0YXRlIlAKG0V4cGFuZGVkRHlu",
+            "YW1pY1NlYXJjaEFkSW5mbxIxCgtkZXNjcmlwdGlvbhgBIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSINCgtIb3RlbEFkSW5mbyIVChNTaG9w",
+            "cGluZ1NtYXJ0QWRJbmZvIhcKFVNob3BwaW5nUHJvZHVjdEFkSW5mbyKdAwoL",
+            "R21haWxBZEluZm8SOwoGdGVhc2VyGAEgASgLMisuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAuY29tbW9uLkdtYWlsVGVhc2VyEjIKDGhlYWRlcl9pbWFnZRgC",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI1Cg9tYXJrZXRp",
+            "bmdfaW1hZ2UYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
+            "PgoYbWFya2V0aW5nX2ltYWdlX2hlYWRsaW5lGAQgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEkEKG21hcmtldGluZ19pbWFnZV9kZXNjcmlw",
+            "dGlvbhgFIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJjCiZt",
+            "YXJrZXRpbmdfaW1hZ2VfZGlzcGxheV9jYWxsX3RvX2FjdGlvbhgGIAEoCzIz",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5EaXNwbGF5Q2FsbFRv",
+            "QWN0aW9uItcBCgtHbWFpbFRlYXNlchIuCghoZWFkbGluZRgBIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgtkZXNjcmlwdGlvbhgCIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1idXNpbmVzc19u",
+            "YW1lGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjAKCmxv",
+            "Z29faW1hZ2UYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUi",
+            "cwoTRGlzcGxheUNhbGxUb0FjdGlvbhIqCgR0ZXh0GAEgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEjAKCnRleHRfY29sb3IYAiABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUisAQKC0ltYWdlQWRJbmZvEjAK",
+            "C3BpeGVsX3dpZHRoGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
+            "dWUSMQoMcGl4ZWxfaGVpZ2h0GAUgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
+            "dDY0VmFsdWUSLwoJaW1hZ2VfdXJsGAYgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEjgKE3ByZXZpZXdfcGl4ZWxfd2lkdGgYByABKAsyGy5n",
+            "b29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI5ChRwcmV2aWV3X3BpeGVsX2hl",
+            "aWdodBgIIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjcKEXBy",
+            "ZXZpZXdfaW1hZ2VfdXJsGAkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEkcKCW1pbWVfdHlwZRgKIAEoDjI0Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmVudW1zLk1pbWVUeXBlRW51bS5NaW1lVHlwZRIqCgRuYW1lGAsg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKCm1lZGlhX2Zp",
+            "bGUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVIABIrCgRk",
+            "YXRhGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkJ5dGVzVmFsdWVIAEIHCgVp",
+            "bWFnZULGAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbkIQ",
+            "QWRUeXBlSW5mb3NQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
+            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uO2NvbW1vbqIC",
+            "A0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkNvbW1vbsoCHkdvb2ds",
+            "ZVxBZHNcR29vZ2xlQWRzXFYwXENvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DisplayAdFormatSettingReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DisplayAdFormatSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.MimeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TextAdInfo), global::Google.Ads.GoogleAds.V0.Common.TextAdInfo.Parser, new[]{ "Headline", "Description1", "Description2" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ExpandedTextAdInfo), global::Google.Ads.GoogleAds.V0.Common.ExpandedTextAdInfo.Parser, new[]{ "HeadlinePart1", "HeadlinePart2", "HeadlinePart3", "Description", "Description2", "Path1", "Path2" }, null, null, null),
@@ -98,7 +128,11 @@ namespace Google.Ads.GoogleAds.V0.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ExpandedDynamicSearchAdInfo), global::Google.Ads.GoogleAds.V0.Common.ExpandedDynamicSearchAdInfo.Parser, new[]{ "Description" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.HotelAdInfo), global::Google.Ads.GoogleAds.V0.Common.HotelAdInfo.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ShoppingSmartAdInfo), global::Google.Ads.GoogleAds.V0.Common.ShoppingSmartAdInfo.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ShoppingProductAdInfo), global::Google.Ads.GoogleAds.V0.Common.ShoppingProductAdInfo.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ShoppingProductAdInfo), global::Google.Ads.GoogleAds.V0.Common.ShoppingProductAdInfo.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.GmailAdInfo), global::Google.Ads.GoogleAds.V0.Common.GmailAdInfo.Parser, new[]{ "Teaser", "HeaderImage", "MarketingImage", "MarketingImageHeadline", "MarketingImageDescription", "MarketingImageDisplayCallToAction" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.GmailTeaser), global::Google.Ads.GoogleAds.V0.Common.GmailTeaser.Parser, new[]{ "Headline", "Description", "BusinessName", "LogoImage" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.DisplayCallToAction), global::Google.Ads.GoogleAds.V0.Common.DisplayCallToAction.Parser, new[]{ "Text", "TextColor" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ImageAdInfo), global::Google.Ads.GoogleAds.V0.Common.ImageAdInfo.Parser, new[]{ "PixelWidth", "PixelHeight", "ImageUrl", "PreviewPixelWidth", "PreviewPixelHeight", "PreviewImageUrl", "MimeType", "Name", "MediaFile", "Data" }, new[]{ "Image" }, null, null)
           }));
     }
     #endregion
@@ -2409,6 +2443,1244 @@ namespace Google.Ads.GoogleAds.V0.Common {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A Gmail ad.
+  /// </summary>
+  public sealed partial class GmailAdInfo : pb::IMessage<GmailAdInfo> {
+    private static readonly pb::MessageParser<GmailAdInfo> _parser = new pb::MessageParser<GmailAdInfo>(() => new GmailAdInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GmailAdInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.AdTypeInfosReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GmailAdInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GmailAdInfo(GmailAdInfo other) : this() {
+      teaser_ = other.teaser_ != null ? other.teaser_.Clone() : null;
+      HeaderImage = other.HeaderImage;
+      MarketingImage = other.MarketingImage;
+      MarketingImageHeadline = other.MarketingImageHeadline;
+      MarketingImageDescription = other.MarketingImageDescription;
+      marketingImageDisplayCallToAction_ = other.marketingImageDisplayCallToAction_ != null ? other.marketingImageDisplayCallToAction_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GmailAdInfo Clone() {
+      return new GmailAdInfo(this);
+    }
+
+    /// <summary>Field number for the "teaser" field.</summary>
+    public const int TeaserFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Common.GmailTeaser teaser_;
+    /// <summary>
+    /// The Gmail teaser.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.GmailTeaser Teaser {
+      get { return teaser_; }
+      set {
+        teaser_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "header_image" field.</summary>
+    public const int HeaderImageFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_headerImage_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string headerImage_;
+    /// <summary>
+    /// The MediaFile resource name of the header image. Valid image types are GIF,
+    /// JPEG and PNG. The minimum size is 300x100 pixels and the aspect ratio must
+    /// be between 3:1 and 5:1 (+-1%).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HeaderImage {
+      get { return headerImage_; }
+      set {
+        headerImage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "marketing_image" field.</summary>
+    public const int MarketingImageFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_marketingImage_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string marketingImage_;
+    /// <summary>
+    /// The MediaFile resource name of the marketing image. Valid image types are
+    /// GIF, JPEG and PNG. The image must either be landscape with a minimum size
+    /// of 600x314 pixels and aspect ratio of 600:314 (+-1%) or square with a
+    /// minimum size of 300x300 pixels and aspect ratio of 1:1 (+-1%)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MarketingImage {
+      get { return marketingImage_; }
+      set {
+        marketingImage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "marketing_image_headline" field.</summary>
+    public const int MarketingImageHeadlineFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_marketingImageHeadline_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string marketingImageHeadline_;
+    /// <summary>
+    /// Headline of the marketing image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MarketingImageHeadline {
+      get { return marketingImageHeadline_; }
+      set {
+        marketingImageHeadline_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "marketing_image_description" field.</summary>
+    public const int MarketingImageDescriptionFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _single_marketingImageDescription_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+    private string marketingImageDescription_;
+    /// <summary>
+    /// Description of the marketing image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MarketingImageDescription {
+      get { return marketingImageDescription_; }
+      set {
+        marketingImageDescription_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "marketing_image_display_call_to_action" field.</summary>
+    public const int MarketingImageDisplayCallToActionFieldNumber = 6;
+    private global::Google.Ads.GoogleAds.V0.Common.DisplayCallToAction marketingImageDisplayCallToAction_;
+    /// <summary>
+    /// Display-call-to-action of the marketing image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.DisplayCallToAction MarketingImageDisplayCallToAction {
+      get { return marketingImageDisplayCallToAction_; }
+      set {
+        marketingImageDisplayCallToAction_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GmailAdInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GmailAdInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Teaser, other.Teaser)) return false;
+      if (HeaderImage != other.HeaderImage) return false;
+      if (MarketingImage != other.MarketingImage) return false;
+      if (MarketingImageHeadline != other.MarketingImageHeadline) return false;
+      if (MarketingImageDescription != other.MarketingImageDescription) return false;
+      if (!object.Equals(MarketingImageDisplayCallToAction, other.MarketingImageDisplayCallToAction)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (teaser_ != null) hash ^= Teaser.GetHashCode();
+      if (headerImage_ != null) hash ^= HeaderImage.GetHashCode();
+      if (marketingImage_ != null) hash ^= MarketingImage.GetHashCode();
+      if (marketingImageHeadline_ != null) hash ^= MarketingImageHeadline.GetHashCode();
+      if (marketingImageDescription_ != null) hash ^= MarketingImageDescription.GetHashCode();
+      if (marketingImageDisplayCallToAction_ != null) hash ^= MarketingImageDisplayCallToAction.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (teaser_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Teaser);
+      }
+      if (headerImage_ != null) {
+        _single_headerImage_codec.WriteTagAndValue(output, HeaderImage);
+      }
+      if (marketingImage_ != null) {
+        _single_marketingImage_codec.WriteTagAndValue(output, MarketingImage);
+      }
+      if (marketingImageHeadline_ != null) {
+        _single_marketingImageHeadline_codec.WriteTagAndValue(output, MarketingImageHeadline);
+      }
+      if (marketingImageDescription_ != null) {
+        _single_marketingImageDescription_codec.WriteTagAndValue(output, MarketingImageDescription);
+      }
+      if (marketingImageDisplayCallToAction_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(MarketingImageDisplayCallToAction);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (teaser_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Teaser);
+      }
+      if (headerImage_ != null) {
+        size += _single_headerImage_codec.CalculateSizeWithTag(HeaderImage);
+      }
+      if (marketingImage_ != null) {
+        size += _single_marketingImage_codec.CalculateSizeWithTag(MarketingImage);
+      }
+      if (marketingImageHeadline_ != null) {
+        size += _single_marketingImageHeadline_codec.CalculateSizeWithTag(MarketingImageHeadline);
+      }
+      if (marketingImageDescription_ != null) {
+        size += _single_marketingImageDescription_codec.CalculateSizeWithTag(MarketingImageDescription);
+      }
+      if (marketingImageDisplayCallToAction_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MarketingImageDisplayCallToAction);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GmailAdInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.teaser_ != null) {
+        if (teaser_ == null) {
+          teaser_ = new global::Google.Ads.GoogleAds.V0.Common.GmailTeaser();
+        }
+        Teaser.MergeFrom(other.Teaser);
+      }
+      if (other.headerImage_ != null) {
+        if (headerImage_ == null || other.HeaderImage != "") {
+          HeaderImage = other.HeaderImage;
+        }
+      }
+      if (other.marketingImage_ != null) {
+        if (marketingImage_ == null || other.MarketingImage != "") {
+          MarketingImage = other.MarketingImage;
+        }
+      }
+      if (other.marketingImageHeadline_ != null) {
+        if (marketingImageHeadline_ == null || other.MarketingImageHeadline != "") {
+          MarketingImageHeadline = other.MarketingImageHeadline;
+        }
+      }
+      if (other.marketingImageDescription_ != null) {
+        if (marketingImageDescription_ == null || other.MarketingImageDescription != "") {
+          MarketingImageDescription = other.MarketingImageDescription;
+        }
+      }
+      if (other.marketingImageDisplayCallToAction_ != null) {
+        if (marketingImageDisplayCallToAction_ == null) {
+          marketingImageDisplayCallToAction_ = new global::Google.Ads.GoogleAds.V0.Common.DisplayCallToAction();
+        }
+        MarketingImageDisplayCallToAction.MergeFrom(other.MarketingImageDisplayCallToAction);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (teaser_ == null) {
+              teaser_ = new global::Google.Ads.GoogleAds.V0.Common.GmailTeaser();
+            }
+            input.ReadMessage(teaser_);
+            break;
+          }
+          case 18: {
+            string value = _single_headerImage_codec.Read(input);
+            if (headerImage_ == null || value != "") {
+              HeaderImage = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_marketingImage_codec.Read(input);
+            if (marketingImage_ == null || value != "") {
+              MarketingImage = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_marketingImageHeadline_codec.Read(input);
+            if (marketingImageHeadline_ == null || value != "") {
+              MarketingImageHeadline = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_marketingImageDescription_codec.Read(input);
+            if (marketingImageDescription_ == null || value != "") {
+              MarketingImageDescription = value;
+            }
+            break;
+          }
+          case 50: {
+            if (marketingImageDisplayCallToAction_ == null) {
+              marketingImageDisplayCallToAction_ = new global::Google.Ads.GoogleAds.V0.Common.DisplayCallToAction();
+            }
+            input.ReadMessage(marketingImageDisplayCallToAction_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Gmail teaser data. The teaser is a small header that acts as an invitation
+  /// to view the rest of the ad (the body).
+  /// </summary>
+  public sealed partial class GmailTeaser : pb::IMessage<GmailTeaser> {
+    private static readonly pb::MessageParser<GmailTeaser> _parser = new pb::MessageParser<GmailTeaser>(() => new GmailTeaser());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GmailTeaser> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.AdTypeInfosReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GmailTeaser() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GmailTeaser(GmailTeaser other) : this() {
+      Headline = other.Headline;
+      Description = other.Description;
+      BusinessName = other.BusinessName;
+      LogoImage = other.LogoImage;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GmailTeaser Clone() {
+      return new GmailTeaser(this);
+    }
+
+    /// <summary>Field number for the "headline" field.</summary>
+    public const int HeadlineFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_headline_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string headline_;
+    /// <summary>
+    /// Headline of the teaser.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Headline {
+      get { return headline_; }
+      set {
+        headline_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_description_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string description_;
+    /// <summary>
+    /// Description of the teaser.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "business_name" field.</summary>
+    public const int BusinessNameFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_businessName_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string businessName_;
+    /// <summary>
+    /// Business name of the advertiser.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BusinessName {
+      get { return businessName_; }
+      set {
+        businessName_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "logo_image" field.</summary>
+    public const int LogoImageFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_logoImage_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string logoImage_;
+    /// <summary>
+    /// The MediaFile resource name of the logo image. Valid image types are GIF,
+    /// JPEG and PNG. The minimum size is 144x144 pixels and the aspect ratio must
+    /// be 1:1 (+-1%).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LogoImage {
+      get { return logoImage_; }
+      set {
+        logoImage_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GmailTeaser);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GmailTeaser other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Headline != other.Headline) return false;
+      if (Description != other.Description) return false;
+      if (BusinessName != other.BusinessName) return false;
+      if (LogoImage != other.LogoImage) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (headline_ != null) hash ^= Headline.GetHashCode();
+      if (description_ != null) hash ^= Description.GetHashCode();
+      if (businessName_ != null) hash ^= BusinessName.GetHashCode();
+      if (logoImage_ != null) hash ^= LogoImage.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (headline_ != null) {
+        _single_headline_codec.WriteTagAndValue(output, Headline);
+      }
+      if (description_ != null) {
+        _single_description_codec.WriteTagAndValue(output, Description);
+      }
+      if (businessName_ != null) {
+        _single_businessName_codec.WriteTagAndValue(output, BusinessName);
+      }
+      if (logoImage_ != null) {
+        _single_logoImage_codec.WriteTagAndValue(output, LogoImage);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (headline_ != null) {
+        size += _single_headline_codec.CalculateSizeWithTag(Headline);
+      }
+      if (description_ != null) {
+        size += _single_description_codec.CalculateSizeWithTag(Description);
+      }
+      if (businessName_ != null) {
+        size += _single_businessName_codec.CalculateSizeWithTag(BusinessName);
+      }
+      if (logoImage_ != null) {
+        size += _single_logoImage_codec.CalculateSizeWithTag(LogoImage);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GmailTeaser other) {
+      if (other == null) {
+        return;
+      }
+      if (other.headline_ != null) {
+        if (headline_ == null || other.Headline != "") {
+          Headline = other.Headline;
+        }
+      }
+      if (other.description_ != null) {
+        if (description_ == null || other.Description != "") {
+          Description = other.Description;
+        }
+      }
+      if (other.businessName_ != null) {
+        if (businessName_ == null || other.BusinessName != "") {
+          BusinessName = other.BusinessName;
+        }
+      }
+      if (other.logoImage_ != null) {
+        if (logoImage_ == null || other.LogoImage != "") {
+          LogoImage = other.LogoImage;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_headline_codec.Read(input);
+            if (headline_ == null || value != "") {
+              Headline = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_description_codec.Read(input);
+            if (description_ == null || value != "") {
+              Description = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_businessName_codec.Read(input);
+            if (businessName_ == null || value != "") {
+              BusinessName = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_logoImage_codec.Read(input);
+            if (logoImage_ == null || value != "") {
+              LogoImage = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Data for display call to action. The call to action is a piece of the ad
+  /// that prompts the user to do something. Like clicking a link or making a phone
+  /// call.
+  /// </summary>
+  public sealed partial class DisplayCallToAction : pb::IMessage<DisplayCallToAction> {
+    private static readonly pb::MessageParser<DisplayCallToAction> _parser = new pb::MessageParser<DisplayCallToAction>(() => new DisplayCallToAction());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<DisplayCallToAction> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.AdTypeInfosReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DisplayCallToAction() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DisplayCallToAction(DisplayCallToAction other) : this() {
+      Text = other.Text;
+      TextColor = other.TextColor;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DisplayCallToAction Clone() {
+      return new DisplayCallToAction(this);
+    }
+
+    /// <summary>Field number for the "text" field.</summary>
+    public const int TextFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_text_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string text_;
+    /// <summary>
+    /// Text for the display-call-to-action.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Text {
+      get { return text_; }
+      set {
+        text_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "text_color" field.</summary>
+    public const int TextColorFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_textColor_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string textColor_;
+    /// <summary>
+    /// Text color for the display-call-to-action in hexadecimal, e.g. #ffffff for
+    /// white.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TextColor {
+      get { return textColor_; }
+      set {
+        textColor_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as DisplayCallToAction);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(DisplayCallToAction other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Text != other.Text) return false;
+      if (TextColor != other.TextColor) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (text_ != null) hash ^= Text.GetHashCode();
+      if (textColor_ != null) hash ^= TextColor.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (text_ != null) {
+        _single_text_codec.WriteTagAndValue(output, Text);
+      }
+      if (textColor_ != null) {
+        _single_textColor_codec.WriteTagAndValue(output, TextColor);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (text_ != null) {
+        size += _single_text_codec.CalculateSizeWithTag(Text);
+      }
+      if (textColor_ != null) {
+        size += _single_textColor_codec.CalculateSizeWithTag(TextColor);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(DisplayCallToAction other) {
+      if (other == null) {
+        return;
+      }
+      if (other.text_ != null) {
+        if (text_ == null || other.Text != "") {
+          Text = other.Text;
+        }
+      }
+      if (other.textColor_ != null) {
+        if (textColor_ == null || other.TextColor != "") {
+          TextColor = other.TextColor;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_text_codec.Read(input);
+            if (text_ == null || value != "") {
+              Text = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_textColor_codec.Read(input);
+            if (textColor_ == null || value != "") {
+              TextColor = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// An image ad.
+  /// </summary>
+  public sealed partial class ImageAdInfo : pb::IMessage<ImageAdInfo> {
+    private static readonly pb::MessageParser<ImageAdInfo> _parser = new pb::MessageParser<ImageAdInfo>(() => new ImageAdInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ImageAdInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.AdTypeInfosReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ImageAdInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ImageAdInfo(ImageAdInfo other) : this() {
+      PixelWidth = other.PixelWidth;
+      PixelHeight = other.PixelHeight;
+      ImageUrl = other.ImageUrl;
+      PreviewPixelWidth = other.PreviewPixelWidth;
+      PreviewPixelHeight = other.PreviewPixelHeight;
+      PreviewImageUrl = other.PreviewImageUrl;
+      mimeType_ = other.mimeType_;
+      Name = other.Name;
+      switch (other.ImageCase) {
+        case ImageOneofCase.MediaFile:
+          MediaFile = other.MediaFile;
+          break;
+        case ImageOneofCase.Data:
+          Data = other.Data;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ImageAdInfo Clone() {
+      return new ImageAdInfo(this);
+    }
+
+    /// <summary>Field number for the "pixel_width" field.</summary>
+    public const int PixelWidthFieldNumber = 4;
+    private static readonly pb::FieldCodec<long?> _single_pixelWidth_codec = pb::FieldCodec.ForStructWrapper<long>(34);
+    private long? pixelWidth_;
+    /// <summary>
+    /// Width in pixels of the full size image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? PixelWidth {
+      get { return pixelWidth_; }
+      set {
+        pixelWidth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pixel_height" field.</summary>
+    public const int PixelHeightFieldNumber = 5;
+    private static readonly pb::FieldCodec<long?> _single_pixelHeight_codec = pb::FieldCodec.ForStructWrapper<long>(42);
+    private long? pixelHeight_;
+    /// <summary>
+    /// Height in pixels of the full size image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? PixelHeight {
+      get { return pixelHeight_; }
+      set {
+        pixelHeight_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "image_url" field.</summary>
+    public const int ImageUrlFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_imageUrl_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string imageUrl_;
+    /// <summary>
+    /// URL of the full size image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ImageUrl {
+      get { return imageUrl_; }
+      set {
+        imageUrl_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "preview_pixel_width" field.</summary>
+    public const int PreviewPixelWidthFieldNumber = 7;
+    private static readonly pb::FieldCodec<long?> _single_previewPixelWidth_codec = pb::FieldCodec.ForStructWrapper<long>(58);
+    private long? previewPixelWidth_;
+    /// <summary>
+    /// Width in pixels of the preview size image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? PreviewPixelWidth {
+      get { return previewPixelWidth_; }
+      set {
+        previewPixelWidth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "preview_pixel_height" field.</summary>
+    public const int PreviewPixelHeightFieldNumber = 8;
+    private static readonly pb::FieldCodec<long?> _single_previewPixelHeight_codec = pb::FieldCodec.ForStructWrapper<long>(66);
+    private long? previewPixelHeight_;
+    /// <summary>
+    /// Height in pixels of the preview size image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? PreviewPixelHeight {
+      get { return previewPixelHeight_; }
+      set {
+        previewPixelHeight_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "preview_image_url" field.</summary>
+    public const int PreviewImageUrlFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _single_previewImageUrl_codec = pb::FieldCodec.ForClassWrapper<string>(74);
+    private string previewImageUrl_;
+    /// <summary>
+    /// URL of the preview size image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PreviewImageUrl {
+      get { return previewImageUrl_; }
+      set {
+        previewImageUrl_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mime_type" field.</summary>
+    public const int MimeTypeFieldNumber = 10;
+    private global::Google.Ads.GoogleAds.V0.Enums.MimeTypeEnum.Types.MimeType mimeType_ = 0;
+    /// <summary>
+    /// The mime type of the image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.MimeTypeEnum.Types.MimeType MimeType {
+      get { return mimeType_; }
+      set {
+        mimeType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 11;
+    private static readonly pb::FieldCodec<string> _single_name_codec = pb::FieldCodec.ForClassWrapper<string>(90);
+    private string name_;
+    /// <summary>
+    /// The name of the image. If the image was created from a MediaFile, this is
+    /// the MediaFile's name. If the image was created from bytes, this is empty.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "media_file" field.</summary>
+    public const int MediaFileFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _oneof_mediaFile_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    /// <summary>
+    /// The MediaFile resource to use for the image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MediaFile {
+      get { return imageCase_ == ImageOneofCase.MediaFile ? (string) image_ : (string) null; }
+      set {
+        image_ = value;
+        imageCase_ = value == null ? ImageOneofCase.None : ImageOneofCase.MediaFile;
+      }
+    }
+
+    /// <summary>Field number for the "data" field.</summary>
+    public const int DataFieldNumber = 2;
+    private static readonly pb::FieldCodec<pb::ByteString> _oneof_data_codec = pb::FieldCodec.ForClassWrapper<pb::ByteString>(18);
+    /// <summary>
+    /// Raw image data as bytes.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString Data {
+      get { return imageCase_ == ImageOneofCase.Data ? (pb::ByteString) image_ : (pb::ByteString) null; }
+      set {
+        image_ = value;
+        imageCase_ = value == null ? ImageOneofCase.None : ImageOneofCase.Data;
+      }
+    }
+
+    private object image_;
+    /// <summary>Enum of possible cases for the "image" oneof.</summary>
+    public enum ImageOneofCase {
+      None = 0,
+      MediaFile = 1,
+      Data = 2,
+    }
+    private ImageOneofCase imageCase_ = ImageOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ImageOneofCase ImageCase {
+      get { return imageCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearImage() {
+      imageCase_ = ImageOneofCase.None;
+      image_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ImageAdInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ImageAdInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PixelWidth != other.PixelWidth) return false;
+      if (PixelHeight != other.PixelHeight) return false;
+      if (ImageUrl != other.ImageUrl) return false;
+      if (PreviewPixelWidth != other.PreviewPixelWidth) return false;
+      if (PreviewPixelHeight != other.PreviewPixelHeight) return false;
+      if (PreviewImageUrl != other.PreviewImageUrl) return false;
+      if (MimeType != other.MimeType) return false;
+      if (Name != other.Name) return false;
+      if (MediaFile != other.MediaFile) return false;
+      if (Data != other.Data) return false;
+      if (ImageCase != other.ImageCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (pixelWidth_ != null) hash ^= PixelWidth.GetHashCode();
+      if (pixelHeight_ != null) hash ^= PixelHeight.GetHashCode();
+      if (imageUrl_ != null) hash ^= ImageUrl.GetHashCode();
+      if (previewPixelWidth_ != null) hash ^= PreviewPixelWidth.GetHashCode();
+      if (previewPixelHeight_ != null) hash ^= PreviewPixelHeight.GetHashCode();
+      if (previewImageUrl_ != null) hash ^= PreviewImageUrl.GetHashCode();
+      if (MimeType != 0) hash ^= MimeType.GetHashCode();
+      if (name_ != null) hash ^= Name.GetHashCode();
+      if (imageCase_ == ImageOneofCase.MediaFile) hash ^= MediaFile.GetHashCode();
+      if (imageCase_ == ImageOneofCase.Data) hash ^= Data.GetHashCode();
+      hash ^= (int) imageCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (imageCase_ == ImageOneofCase.MediaFile) {
+        _oneof_mediaFile_codec.WriteTagAndValue(output, (string) image_);
+      }
+      if (imageCase_ == ImageOneofCase.Data) {
+        _oneof_data_codec.WriteTagAndValue(output, (pb::ByteString) image_);
+      }
+      if (pixelWidth_ != null) {
+        _single_pixelWidth_codec.WriteTagAndValue(output, PixelWidth);
+      }
+      if (pixelHeight_ != null) {
+        _single_pixelHeight_codec.WriteTagAndValue(output, PixelHeight);
+      }
+      if (imageUrl_ != null) {
+        _single_imageUrl_codec.WriteTagAndValue(output, ImageUrl);
+      }
+      if (previewPixelWidth_ != null) {
+        _single_previewPixelWidth_codec.WriteTagAndValue(output, PreviewPixelWidth);
+      }
+      if (previewPixelHeight_ != null) {
+        _single_previewPixelHeight_codec.WriteTagAndValue(output, PreviewPixelHeight);
+      }
+      if (previewImageUrl_ != null) {
+        _single_previewImageUrl_codec.WriteTagAndValue(output, PreviewImageUrl);
+      }
+      if (MimeType != 0) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) MimeType);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(output, Name);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (pixelWidth_ != null) {
+        size += _single_pixelWidth_codec.CalculateSizeWithTag(PixelWidth);
+      }
+      if (pixelHeight_ != null) {
+        size += _single_pixelHeight_codec.CalculateSizeWithTag(PixelHeight);
+      }
+      if (imageUrl_ != null) {
+        size += _single_imageUrl_codec.CalculateSizeWithTag(ImageUrl);
+      }
+      if (previewPixelWidth_ != null) {
+        size += _single_previewPixelWidth_codec.CalculateSizeWithTag(PreviewPixelWidth);
+      }
+      if (previewPixelHeight_ != null) {
+        size += _single_previewPixelHeight_codec.CalculateSizeWithTag(PreviewPixelHeight);
+      }
+      if (previewImageUrl_ != null) {
+        size += _single_previewImageUrl_codec.CalculateSizeWithTag(PreviewImageUrl);
+      }
+      if (MimeType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MimeType);
+      }
+      if (name_ != null) {
+        size += _single_name_codec.CalculateSizeWithTag(Name);
+      }
+      if (imageCase_ == ImageOneofCase.MediaFile) {
+        size += _oneof_mediaFile_codec.CalculateSizeWithTag(MediaFile);
+      }
+      if (imageCase_ == ImageOneofCase.Data) {
+        size += _oneof_data_codec.CalculateSizeWithTag(Data);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ImageAdInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.pixelWidth_ != null) {
+        if (pixelWidth_ == null || other.PixelWidth != 0L) {
+          PixelWidth = other.PixelWidth;
+        }
+      }
+      if (other.pixelHeight_ != null) {
+        if (pixelHeight_ == null || other.PixelHeight != 0L) {
+          PixelHeight = other.PixelHeight;
+        }
+      }
+      if (other.imageUrl_ != null) {
+        if (imageUrl_ == null || other.ImageUrl != "") {
+          ImageUrl = other.ImageUrl;
+        }
+      }
+      if (other.previewPixelWidth_ != null) {
+        if (previewPixelWidth_ == null || other.PreviewPixelWidth != 0L) {
+          PreviewPixelWidth = other.PreviewPixelWidth;
+        }
+      }
+      if (other.previewPixelHeight_ != null) {
+        if (previewPixelHeight_ == null || other.PreviewPixelHeight != 0L) {
+          PreviewPixelHeight = other.PreviewPixelHeight;
+        }
+      }
+      if (other.previewImageUrl_ != null) {
+        if (previewImageUrl_ == null || other.PreviewImageUrl != "") {
+          PreviewImageUrl = other.PreviewImageUrl;
+        }
+      }
+      if (other.MimeType != 0) {
+        MimeType = other.MimeType;
+      }
+      if (other.name_ != null) {
+        if (name_ == null || other.Name != "") {
+          Name = other.Name;
+        }
+      }
+      switch (other.ImageCase) {
+        case ImageOneofCase.MediaFile:
+          MediaFile = other.MediaFile;
+          break;
+        case ImageOneofCase.Data:
+          Data = other.Data;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            MediaFile = _oneof_mediaFile_codec.Read(input);
+            break;
+          }
+          case 18: {
+            Data = _oneof_data_codec.Read(input);
+            break;
+          }
+          case 34: {
+            long? value = _single_pixelWidth_codec.Read(input);
+            if (pixelWidth_ == null || value != 0L) {
+              PixelWidth = value;
+            }
+            break;
+          }
+          case 42: {
+            long? value = _single_pixelHeight_codec.Read(input);
+            if (pixelHeight_ == null || value != 0L) {
+              PixelHeight = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_imageUrl_codec.Read(input);
+            if (imageUrl_ == null || value != "") {
+              ImageUrl = value;
+            }
+            break;
+          }
+          case 58: {
+            long? value = _single_previewPixelWidth_codec.Read(input);
+            if (previewPixelWidth_ == null || value != 0L) {
+              PreviewPixelWidth = value;
+            }
+            break;
+          }
+          case 66: {
+            long? value = _single_previewPixelHeight_codec.Read(input);
+            if (previewPixelHeight_ == null || value != 0L) {
+              PreviewPixelHeight = value;
+            }
+            break;
+          }
+          case 74: {
+            string value = _single_previewImageUrl_codec.Read(input);
+            if (previewImageUrl_ == null || value != "") {
+              PreviewImageUrl = value;
+            }
+            break;
+          }
+          case 80: {
+            mimeType_ = (global::Google.Ads.GoogleAds.V0.Enums.MimeTypeEnum.Types.MimeType) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            string value = _single_name_codec.Read(input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
         }
       }
     }

@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvdXJsX2ZpZWxkX2Vy",
-            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMinA0K",
-            "EVVybEZpZWxkRXJyb3JFbnVtIoYNCg1VcmxGaWVsZEVycm9yEg8KC1VOU1BF",
+            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMilQ4K",
+            "EVVybEZpZWxkRXJyb3JFbnVtIv8NCg1VcmxGaWVsZEVycm9yEg8KC1VOU1BF",
             "Q0lGSUVEEAASCwoHVU5LTk9XThABEiEKHUlOVkFMSURfVFJBQ0tJTkdfVVJM",
             "X1RFTVBMQVRFEAISKAokSU5WQUxJRF9UQUdfSU5fVFJBQ0tJTkdfVVJMX1RF",
             "TVBMQVRFEAMSJQohTUlTU0lOR19UUkFDS0lOR19VUkxfVEVNUExBVEVfVEFH",
@@ -59,16 +59,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "T01fUEFSQU1FVEVSX1ZBTFVFECgSLQopSU5WQUxJRF9UQUdfSU5fVVJMX0NV",
             "U1RPTV9QQVJBTUVURVJfVkFMVUUQKRItCilSRURVTkRBTlRfTkVTVEVEX1VS",
             "TF9DVVNUT01fUEFSQU1FVEVSX1RBRxAqEhQKEE1JU1NJTkdfUFJPVE9DT0wQ",
-            "KxIPCgtJTlZBTElEX1VSTBAsEh4KGkRFU1RJTkFUSU9OX1VSTF9ERVBSRUNB",
-            "VEVEEC0SFgoSSU5WQUxJRF9UQUdfSU5fVVJMEC4SEwoPTUlTU0lOR19VUkxf",
-            "VEFHEC8SFAoQRFVQTElDQVRFX1VSTF9JRBAwEhIKDklOVkFMSURfVVJMX0lE",
-            "EDESHgoaRklOQUxfVVJMX1NVRkZJWF9NQUxGT1JNRUQQMhIjCh9JTlZBTElE",
-            "X1RBR19JTl9GSU5BTF9VUkxfU1VGRklYEDNCyAEKImNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MC5lcnJvcnNCElVybEZpZWxkRXJyb3JQcm90b1ABWkRn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVy",
-            "cm9yc2IGcHJvdG8z"));
+            "KxIUChBJTlZBTElEX1BST1RPQ09MEDQSDwoLSU5WQUxJRF9VUkwQLBIeChpE",
+            "RVNUSU5BVElPTl9VUkxfREVQUkVDQVRFRBAtEhYKEklOVkFMSURfVEFHX0lO",
+            "X1VSTBAuEhMKD01JU1NJTkdfVVJMX1RBRxAvEhQKEERVUExJQ0FURV9VUkxf",
+            "SUQQMBISCg5JTlZBTElEX1VSTF9JRBAxEh4KGkZJTkFMX1VSTF9TVUZGSVhf",
+            "TUFMRk9STUVEEDISIwofSU5WQUxJRF9UQUdfSU5fRklOQUxfVVJMX1NVRkZJ",
+            "WBAzEhwKGElOVkFMSURfVE9QX0xFVkVMX0RPTUFJThA1Eh4KGk1BTEZPUk1F",
+            "RF9UT1BfTEVWRUxfRE9NQUlOEDYSEQoNTUFMRk9STUVEX1VSTBA3EhAKDE1J",
+            "U1NJTkdfSE9TVBA4QsgBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZXJyb3JzQhJVcmxGaWVsZEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9y",
+            "cztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJv",
+            "cnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -362,6 +364,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("MISSING_PROTOCOL")] MissingProtocol = 43,
         /// <summary>
+        /// Unsupported protocol in URL. Only http and https are supported.
+        /// </summary>
+        [pbr::OriginalName("INVALID_PROTOCOL")] InvalidProtocol = 52,
+        /// <summary>
         /// The url is invalid.
         /// </summary>
         [pbr::OriginalName("INVALID_URL")] InvalidUrl = 44,
@@ -395,6 +401,23 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// The final url suffix cannot contain {lpurl} related or {ignore} tags.
         /// </summary>
         [pbr::OriginalName("INVALID_TAG_IN_FINAL_URL_SUFFIX")] InvalidTagInFinalUrlSuffix = 51,
+        /// <summary>
+        /// The top level domain is invalid, e.g, not a public top level domain
+        /// listed in publicsuffix.org.
+        /// </summary>
+        [pbr::OriginalName("INVALID_TOP_LEVEL_DOMAIN")] InvalidTopLevelDomain = 53,
+        /// <summary>
+        /// Malformed top level domain in URL.
+        /// </summary>
+        [pbr::OriginalName("MALFORMED_TOP_LEVEL_DOMAIN")] MalformedTopLevelDomain = 54,
+        /// <summary>
+        /// Malformed URL.
+        /// </summary>
+        [pbr::OriginalName("MALFORMED_URL")] MalformedUrl = 55,
+        /// <summary>
+        /// No host found in URL.
+        /// </summary>
+        [pbr::OriginalName("MISSING_HOST")] MissingHost = 56,
       }
 
     }
