@@ -59,11 +59,20 @@ namespace Google.Ads.GoogleAds.Examples.V0
             GeoTargetConstantServiceClient geoService =
                 client.GetService(Services.V0.GeoTargetConstantService);
 
+            // Locale is using ISO 639-1 format. If an invalid locale is given,
+            // 'en' is used by default.
+            string locale = "en";
+
+            // A list of country codes can be referenced here:
+            // https://developers.google.com/adwords/api/docs/appendix/geotargeting
+            string countryCode = "FR";
+
             String[] locations = { "Paris", "Quebec", "Spain", "Deutschland" };
 
             SuggestGeoTargetConstantsRequest request = new SuggestGeoTargetConstantsRequest()
             {
-                Locale = "en",
+                Locale = locale,
+                CountryCode = countryCode,
                 LocationNames = new SuggestGeoTargetConstantsRequest.Types.LocationNames()
             };
 

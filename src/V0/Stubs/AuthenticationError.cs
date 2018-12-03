@@ -26,26 +26,25 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYXV0aGVudGljYXRp",
             "b25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
-            "cyKOBQoXQXV0aGVudGljYXRpb25FcnJvckVudW0i8gQKE0F1dGhlbnRpY2F0",
+            "cyLoBAoXQXV0aGVudGljYXRpb25FcnJvckVudW0izAQKE0F1dGhlbnRpY2F0",
             "aW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGAoUQVVU",
             "SEVOVElDQVRJT05fRVJST1IQAhIeChpDTElFTlRfQ1VTVE9NRVJfSURfSU5W",
             "QUxJRBAFEhYKEkNVU1RPTUVSX05PVF9GT1VORBAIEhoKFkdPT0dMRV9BQ0NP",
             "VU5UX0RFTEVURUQQCRIhCh1HT09HTEVfQUNDT1VOVF9DT09LSUVfSU5WQUxJ",
-            "RBAKEikKJUZBSUxFRF9UT19BVVRIRU5USUNBVEVfR09PR0xFX0FDQ09VTlQQ",
-            "CxItCilHT09HTEVfQUNDT1VOVF9VU0VSX0FORF9BRFNfVVNFUl9NSVNNQVRD",
-            "SBAMEhkKFUxPR0lOX0NPT0tJRV9SRVFVSVJFRBANEhAKDE5PVF9BRFNfVVNF",
-            "UhAOEhcKE09BVVRIX1RPS0VOX0lOVkFMSUQQDxIXChNPQVVUSF9UT0tFTl9F",
-            "WFBJUkVEEBASGAoUT0FVVEhfVE9LRU5fRElTQUJMRUQQERIXChNPQVVUSF9U",
-            "T0tFTl9SRVZPS0VEEBISHgoaT0FVVEhfVE9LRU5fSEVBREVSX0lOVkFMSUQQ",
-            "ExIYChRMT0dJTl9DT09LSUVfSU5WQUxJRBAUEiMKH0ZBSUxFRF9UT19SRVRS",
-            "SUVWRV9MT0dJTl9DT09LSUUQFRITCg9VU0VSX0lEX0lOVkFMSUQQFhImCiJU",
-            "V09fU1RFUF9WRVJJRklDQVRJT05fTk9UX0VOUk9MTEVEEBcSJAogQURWQU5D",
-            "RURfUFJPVEVDVElPTl9OT1RfRU5ST0xMRUQQGELOAQoiY29tLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IYQXV0aGVudGljYXRpb25FcnJvclBy",
-            "b3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
-            "YWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xl",
-            "LkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVB",
-            "ZHNcVjBcRXJyb3JzYgZwcm90bzM="));
+            "RBAKEigKJEdPT0dMRV9BQ0NPVU5UX0FVVEhFTlRJQ0FUSU9OX0ZBSUxFRBAZ",
+            "Ei0KKUdPT0dMRV9BQ0NPVU5UX1VTRVJfQU5EX0FEU19VU0VSX01JU01BVENI",
+            "EAwSGQoVTE9HSU5fQ09PS0lFX1JFUVVJUkVEEA0SEAoMTk9UX0FEU19VU0VS",
+            "EA4SFwoTT0FVVEhfVE9LRU5fSU5WQUxJRBAPEhcKE09BVVRIX1RPS0VOX0VY",
+            "UElSRUQQEBIYChRPQVVUSF9UT0tFTl9ESVNBQkxFRBAREhcKE09BVVRIX1RP",
+            "S0VOX1JFVk9LRUQQEhIeChpPQVVUSF9UT0tFTl9IRUFERVJfSU5WQUxJRBAT",
+            "EhgKFExPR0lOX0NPT0tJRV9JTlZBTElEEBQSEwoPVVNFUl9JRF9JTlZBTElE",
+            "EBYSJgoiVFdPX1NURVBfVkVSSUZJQ0FUSU9OX05PVF9FTlJPTExFRBAXEiQK",
+            "IEFEVkFOQ0VEX1BST1RFQ1RJT05fTk9UX0VOUk9MTEVEEBhCzgEKImNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCGEF1dGhlbnRpY2F0aW9u",
+            "RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
+            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -179,7 +178,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("AUTHENTICATION_ERROR")] AuthenticationError = 2,
         /// <summary>
-        /// Client customer Id is not a number.
+        /// Client Customer Id is not a number.
         /// </summary>
         [pbr::OriginalName("CLIENT_CUSTOMER_ID_INVALID")] ClientCustomerIdInvalid = 5,
         /// <summary>
@@ -197,7 +196,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// <summary>
         /// A problem occurred during Google account authentication.
         /// </summary>
-        [pbr::OriginalName("FAILED_TO_AUTHENTICATE_GOOGLE_ACCOUNT")] FailedToAuthenticateGoogleAccount = 11,
+        [pbr::OriginalName("GOOGLE_ACCOUNT_AUTHENTICATION_FAILED")] GoogleAccountAuthenticationFailed = 25,
         /// <summary>
         /// The user in the google account login token does not match the UserId in
         /// the cookie.
@@ -235,10 +234,6 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Login cookie is not valid.
         /// </summary>
         [pbr::OriginalName("LOGIN_COOKIE_INVALID")] LoginCookieInvalid = 20,
-        /// <summary>
-        /// Failed to decrypt the login cookie.
-        /// </summary>
-        [pbr::OriginalName("FAILED_TO_RETRIEVE_LOGIN_COOKIE")] FailedToRetrieveLoginCookie = 21,
         /// <summary>
         /// User Id in the header is not a valid id.
         /// </summary>

@@ -152,13 +152,19 @@ namespace Google.Ads.GoogleAds.Config
         /// </summary>
         /// <remarks>This setting is used only for testing purposes.</remarks>
         private readonly ConfigSetting<string> serverUrl = new ConfigSetting<string>(
-            "GoogleAds.Server", GOOGLE_ADS_API_SERVER_URL);
+            "ServerUrl", GOOGLE_ADS_API_SERVER_URL);
 
         /// <summary>
         /// The developer token.
         /// </summary>
         private readonly ConfigSetting<string> developerToken = new ConfigSetting<string>(
             "DeveloperToken", "");
+
+        /// <summary>
+        /// The Login Customer ID.
+        /// </summary>
+        private readonly ConfigSetting<string> loginCustomerId = new ConfigSetting<string>(
+            "LoginCustomerId", "");
 
         /// <summary>
         /// Gets or sets the timeout for individual API calls.
@@ -195,6 +201,21 @@ namespace Google.Ads.GoogleAds.Config
         {
             get => developerToken.Value;
             set => SetPropertyAndNotify(developerToken, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the login customer id.
+        /// </summary>
+        /// <remarks>
+        /// Required for manager accounts only. When authenticating as a Google Ads
+        /// manager account, specifies the customer ID of the authenticating manager account.
+        /// If your OAuth credentials are for a user with access to multiple manager accounts you
+        /// must create a separate GoogleAdsClient instance for each manager account.
+        /// </remarks>
+        public string LoginCustomerId
+        {
+            get => loginCustomerId.Value;
+            set => SetPropertyAndNotify(loginCustomerId, value);
         }
 
         /// <summary>

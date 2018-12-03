@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Generated code. DO NOT EDIT!
+// TODO( b/119694056): Removed Comment
 
 namespace Google.Ads.GoogleAds.V0.Services.Tests
 {
@@ -123,14 +123,17 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             SuggestGeoTargetConstantsRequest expectedRequest = new SuggestGeoTargetConstantsRequest
             {
                 Locale = new StringValue().Value,
-                // TODO(liseno): Implicit type cast from StringValue to String failed
+                // TODO(liseno): Implicit type cast from StringValue to String failed,
+                CountryCode = new StringValue().Value,
+                // TODO(liseno): Implicit type cast from StringValue to String failed,
             };
             SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
             mockGrpcClient.Setup(x => x.SuggestGeoTargetConstants(expectedRequest, It.IsAny<CallOptions>()))
                 .Returns(expectedResponse);
             GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
             StringValue locale = new StringValue();
-            SuggestGeoTargetConstantsResponse response = client.SuggestGeoTargetConstants(locale);
+            StringValue countryCode = new StringValue();
+            SuggestGeoTargetConstantsResponse response = client.SuggestGeoTargetConstants(locale, countryCode);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -142,14 +145,17 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             SuggestGeoTargetConstantsRequest expectedRequest = new SuggestGeoTargetConstantsRequest
             {
                 Locale = new StringValue().Value,
-                // TODO(liseno): Implicit type cast from StringValue to String failed
+                // TODO(liseno): Implicit type cast from StringValue to String failed,
+                CountryCode = new StringValue().Value,
+                // TODO(liseno): Implicit type cast from StringValue to String failed,
             };
             SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
             mockGrpcClient.Setup(x => x.SuggestGeoTargetConstantsAsync(expectedRequest, It.IsAny<CallOptions>()))
                 .Returns(new Grpc.Core.AsyncUnaryCall<SuggestGeoTargetConstantsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
             GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
             StringValue locale = new StringValue();
-            SuggestGeoTargetConstantsResponse response = await client.SuggestGeoTargetConstantsAsync(locale);
+            StringValue countryCode = new StringValue();
+            SuggestGeoTargetConstantsResponse response = await client.SuggestGeoTargetConstantsAsync(locale, countryCode);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -161,7 +167,9 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             SuggestGeoTargetConstantsRequest request = new SuggestGeoTargetConstantsRequest
             {
                 Locale = new StringValue().Value,
-                // TODO(liseno): Implicit type cast from StringValue to String failed
+                // TODO(liseno): Implicit type cast from StringValue to String failed,
+                CountryCode = new StringValue().Value,
+                // TODO(liseno): Implicit type cast from StringValue to String failed,
             };
             SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
             mockGrpcClient.Setup(x => x.SuggestGeoTargetConstants(request, It.IsAny<CallOptions>()))
@@ -179,7 +187,9 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             SuggestGeoTargetConstantsRequest request = new SuggestGeoTargetConstantsRequest
             {
                 Locale = new StringValue().Value,
-                // TODO(liseno): Implicit type cast from StringValue to String failed
+                // TODO(liseno): Implicit type cast from StringValue to String failed,
+                CountryCode = new StringValue().Value,
+                // TODO(liseno): Implicit type cast from StringValue to String failed,
             };
             SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
             mockGrpcClient.Setup(x => x.SuggestGeoTargetConstantsAsync(request, It.IsAny<CallOptions>()))

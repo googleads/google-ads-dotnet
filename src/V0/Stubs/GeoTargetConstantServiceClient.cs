@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Generated code. DO NOT EDIT!
+// TODO( b/119694056): Removed Comment
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
 using gax = Google.Api.Gax;
@@ -463,6 +463,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// en is used by default. This is also used as a hint for returned geo
         /// targets.
         /// </param>
+        /// <param name="countryCode">
+        /// Returned geo targets are restricted to this country code.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -471,11 +474,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
             pbwkt::StringValue locale,
+            pbwkt::StringValue countryCode,
             gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstantsAsync(
                 new SuggestGeoTargetConstantsRequest
                 {
                     Locale = gax::GaxPreconditions.CheckNotNull(locale, nameof(locale)).Value,
-                    // TODO(liseno): Implicit type cast from StringValue to String failed
+                    // TODO(liseno): Implicit type cast from StringValue to String failed,
+                    CountryCode = gax::GaxPreconditions.CheckNotNull(countryCode,
+                        nameof(countryCode)).Value,
+                    // TODO(liseno): Implicit type cast from StringValue to String failed,
                 },
                 callSettings);
 
@@ -487,6 +494,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// en is used by default. This is also used as a hint for returned geo
         /// targets.
         /// </param>
+        /// <param name="countryCode">
+        /// Returned geo targets are restricted to this country code.
+        /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
         /// </param>
@@ -495,8 +505,10 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
             pbwkt::StringValue locale,
+            pbwkt::StringValue countryCode,
             st::CancellationToken cancellationToken) => SuggestGeoTargetConstantsAsync(
                 locale,
+                countryCode,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
@@ -507,6 +519,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// en is used by default. This is also used as a hint for returned geo
         /// targets.
         /// </param>
+        /// <param name="countryCode">
+        /// Returned geo targets are restricted to this country code.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -515,11 +530,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual SuggestGeoTargetConstantsResponse SuggestGeoTargetConstants(
             pbwkt::StringValue locale,
+            pbwkt::StringValue countryCode,
             gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstants(
                 new SuggestGeoTargetConstantsRequest
                 {
                     Locale = gax::GaxPreconditions.CheckNotNull(locale, nameof(locale)).Value,
-                    // TODO(liseno): Implicit type cast from StringValue to String failed
+                    // TODO(liseno): Implicit type cast from StringValue to String failed,
+                    CountryCode = gax::GaxPreconditions.CheckNotNull(countryCode,
+                        nameof(countryCode)).Value,
+                    // TODO(liseno): Implicit type cast from StringValue to String failed,
                 },
                 callSettings);
 

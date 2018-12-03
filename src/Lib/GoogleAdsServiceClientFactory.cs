@@ -108,6 +108,12 @@ namespace Google.Ads.GoogleAds.Lib
                     GoogleAdsResponseMetadata responseMetadata = new GoogleAdsResponseMetadata(metadata);
                     serviceContext.OnResponseMetadataReceived(responseMetadata);
                 });
+
+            if (!string.IsNullOrEmpty(config.LoginCustomerId))
+            {
+                callSettings.WithHeader("login-customer-id", config.LoginCustomerId);
+            }
+
             serviceContext.CallSettings = callSettings;
             return serviceContext;
         }

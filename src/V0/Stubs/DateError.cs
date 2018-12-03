@@ -25,12 +25,13 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvZGF0ZV9lcnJvci5w",
-            "cm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzIuACCg1EYXRl",
-            "RXJyb3JFbnVtIs4CCglEYXRlRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdV",
+            "cm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzIo0DCg1EYXRl",
+            "RXJyb3JFbnVtIvsCCglEYXRlRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdV",
             "TktOT1dOEAESIAocSU5WQUxJRF9GSUVMRF9WQUxVRVNfSU5fREFURRACEiUK",
             "IUlOVkFMSURfRklFTERfVkFMVUVTX0lOX0RBVEVfVElNRRADEhcKE0lOVkFM",
-            "SURfU1RSSU5HX0RBVEUQBBIcChhJTlZBTElEX1NUUklOR19EQVRFX1RJTUUQ",
-            "BhIdChlFQVJMSUVSX1RIQU5fTUlOSU1VTV9EQVRFEAcSGwoXTEFURVJfVEhB",
+            "SURfU1RSSU5HX0RBVEUQBBIjCh9JTlZBTElEX1NUUklOR19EQVRFX1RJTUVf",
+            "TUlDUk9TEAYSJAogSU5WQUxJRF9TVFJJTkdfREFURV9USU1FX1NFQ09ORFMQ",
+            "CxIdChlFQVJMSUVSX1RIQU5fTUlOSU1VTV9EQVRFEAcSGwoXTEFURVJfVEhB",
             "Tl9NQVhJTVVNX0RBVEUQCBIzCi9EQVRFX1JBTkdFX01JTklNVU1fREFURV9M",
             "QVRFUl9USEFOX01BWElNVU1fREFURRAJEjIKLkRBVEVfUkFOR0VfTUlOSU1V",
             "TV9BTkRfTUFYSU1VTV9EQVRFU19CT1RIX05VTEwQCkLEAQoiY29tLmdvb2ds",
@@ -176,13 +177,17 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("INVALID_FIELD_VALUES_IN_DATE_TIME")] InvalidFieldValuesInDateTime = 3,
         /// <summary>
-        /// The string date's format should be yyyymmdd.
+        /// The string date's format should be yyyy-mm-dd.
         /// </summary>
         [pbr::OriginalName("INVALID_STRING_DATE")] InvalidStringDate = 4,
         /// <summary>
-        /// The string date time's format should be yyyymmdd hhmmss [tz].
+        /// The string date time's format should be yyyy-mm-dd hh:mm:ss.ssssss.
         /// </summary>
-        [pbr::OriginalName("INVALID_STRING_DATE_TIME")] InvalidStringDateTime = 6,
+        [pbr::OriginalName("INVALID_STRING_DATE_TIME_MICROS")] InvalidStringDateTimeMicros = 6,
+        /// <summary>
+        /// The string date time's format should be yyyy-mm-dd hh:mm:ss.
+        /// </summary>
+        [pbr::OriginalName("INVALID_STRING_DATE_TIME_SECONDS")] InvalidStringDateTimeSeconds = 11,
         /// <summary>
         /// Date is before allowed minimum.
         /// </summary>

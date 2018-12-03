@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "ZXNvdXJjZXMaLWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbi9jcml0",
             "ZXJpYS5wcm90bxo3Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvYmlk",
             "X21vZGlmaWVyX3NvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBw",
-            "ZXJzLnByb3RvIpkGChJBZEdyb3VwQmlkTW9kaWZpZXISFQoNcmVzb3VyY2Vf",
+            "ZXJzLnByb3RvIuwGChJBZEdyb3VwQmlkTW9kaWZpZXISFQoNcmVzb3VyY2Vf",
             "bmFtZRgBIAEoCRIuCghhZF9ncm91cBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1",
             "Zi5TdHJpbmdWYWx1ZRIxCgxjcml0ZXJpb25faWQYAyABKAsyGy5nb29nbGUu",
             "cHJvdG9idWYuSW50NjRWYWx1ZRIyCgxiaWRfbW9kaWZpZXIYBCABKAsyHC5n",
@@ -46,17 +46,18 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "ZW5ndGhPZlN0YXlJbmZvSAASUQoSaG90ZWxfY2hlY2tfaW5fZGF5GAggASgL",
             "MjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkhvdGVsQ2hlY2tJ",
             "bkRheUluZm9IABI8CgZkZXZpY2UYCyABKAsyKi5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5jb21tb24uRGV2aWNlSW5mb0gAQgsKCWNyaXRlcmlvbkLcAQol",
-            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IXQWRHcm91",
-            "cEJpZE1vZGlmaWVyUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
-            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNv",
-            "dXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJj",
-            "ZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3Rv",
-            "Mw=="));
+            "ZWFkcy52MC5jb21tb24uRGV2aWNlSW5mb0gAElEKEXByZWZlcnJlZF9jb250",
+            "ZW50GAwgASgLMjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlBy",
+            "ZWZlcnJlZENvbnRlbnRJbmZvSABCCwoJY3JpdGVyaW9uQtwBCiVjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhdBZEdyb3VwQmlkTW9k",
+            "aWZpZXJQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6IC",
+            "A0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BidModifierSourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier), global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier.Parser, new[]{ "ResourceName", "AdGroup", "CriterionId", "BidModifier", "BaseAdGroup", "BidModifierSource", "HotelDateSelectionType", "HotelAdvanceBookingWindow", "HotelLengthOfStay", "HotelCheckInDay", "Device" }, new[]{ "Criterion" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier), global::Google.Ads.GoogleAds.V0.Resources.AdGroupBidModifier.Parser, new[]{ "ResourceName", "AdGroup", "CriterionId", "BidModifier", "BaseAdGroup", "BidModifierSource", "HotelDateSelectionType", "HotelAdvanceBookingWindow", "HotelLengthOfStay", "HotelCheckInDay", "Device", "PreferredContent" }, new[]{ "Criterion" }, null, null)
           }));
     }
     #endregion
@@ -112,6 +113,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case CriterionOneofCase.Device:
           Device = other.Device.Clone();
+          break;
+        case CriterionOneofCase.PreferredContent:
+          PreferredContent = other.PreferredContent.Clone();
           break;
       }
 
@@ -292,6 +296,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "preferred_content" field.</summary>
+    public const int PreferredContentFieldNumber = 12;
+    /// <summary>
+    /// A preferred content criterion.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.PreferredContentInfo PreferredContent {
+      get { return criterionCase_ == CriterionOneofCase.PreferredContent ? (global::Google.Ads.GoogleAds.V0.Common.PreferredContentInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.PreferredContent;
+      }
+    }
+
     private object criterion_;
     /// <summary>Enum of possible cases for the "criterion" oneof.</summary>
     public enum CriterionOneofCase {
@@ -301,6 +319,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       HotelLengthOfStay = 7,
       HotelCheckInDay = 8,
       Device = 11,
+      PreferredContent = 12,
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -338,6 +357,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (!object.Equals(HotelLengthOfStay, other.HotelLengthOfStay)) return false;
       if (!object.Equals(HotelCheckInDay, other.HotelCheckInDay)) return false;
       if (!object.Equals(Device, other.Device)) return false;
+      if (!object.Equals(PreferredContent, other.PreferredContent)) return false;
       if (CriterionCase != other.CriterionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -356,6 +376,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (criterionCase_ == CriterionOneofCase.HotelLengthOfStay) hash ^= HotelLengthOfStay.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.HotelCheckInDay) hash ^= HotelCheckInDay.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Device) hash ^= Device.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.PreferredContent) hash ^= PreferredContent.GetHashCode();
       hash ^= (int) criterionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -410,6 +431,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(90);
         output.WriteMessage(Device);
       }
+      if (criterionCase_ == CriterionOneofCase.PreferredContent) {
+        output.WriteRawTag(98);
+        output.WriteMessage(PreferredContent);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -450,6 +475,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (criterionCase_ == CriterionOneofCase.Device) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Device);
+      }
+      if (criterionCase_ == CriterionOneofCase.PreferredContent) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PreferredContent);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -518,6 +546,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             Device = new global::Google.Ads.GoogleAds.V0.Common.DeviceInfo();
           }
           Device.MergeFrom(other.Device);
+          break;
+        case CriterionOneofCase.PreferredContent:
+          if (PreferredContent == null) {
+            PreferredContent = new global::Google.Ads.GoogleAds.V0.Common.PreferredContentInfo();
+          }
+          PreferredContent.MergeFrom(other.PreferredContent);
           break;
       }
 
@@ -611,6 +645,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             input.ReadMessage(subBuilder);
             Device = subBuilder;
+            break;
+          }
+          case 98: {
+            global::Google.Ads.GoogleAds.V0.Common.PreferredContentInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.PreferredContentInfo();
+            if (criterionCase_ == CriterionOneofCase.PreferredContent) {
+              subBuilder.MergeFrom(PreferredContent);
+            }
+            input.ReadMessage(subBuilder);
+            PreferredContent = subBuilder;
             break;
           }
         }

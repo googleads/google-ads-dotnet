@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "CkJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvb3BlcmF0aW9uX2Fj",
             "Y2Vzc19kZW5pZWRfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLmVycm9ycyLEAwoeT3BlcmF0aW9uQWNjZXNzRGVuaWVkRXJyb3JFbnVt",
-            "IqEDChpPcGVyYXRpb25BY2Nlc3NEZW5pZWRFcnJvchIPCgtVTlNQRUNJRklF",
+            "LnYwLmVycm9ycyLrAwoeT3BlcmF0aW9uQWNjZXNzRGVuaWVkRXJyb3JFbnVt",
+            "IsgDChpPcGVyYXRpb25BY2Nlc3NEZW5pZWRFcnJvchIPCgtVTlNQRUNJRklF",
             "RBAAEgsKB1VOS05PV04QARIYChRBQ1RJT05fTk9UX1BFUk1JVFRFRBACEiIK",
             "HkNSRUFURV9PUEVSQVRJT05fTk9UX1BFUk1JVFRFRBADEiIKHlJFTU9WRV9P",
             "UEVSQVRJT05fTk9UX1BFUk1JVFRFRBAEEiIKHlVQREFURV9PUEVSQVRJT05f",
@@ -36,12 +36,13 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "X0NBTVBBSUdOX1RZUEUQBxIjCh9DUkVBVEVfQVNfUkVNT1ZFRF9OT1RfUEVS",
             "TUlUVEVEEAgSMAosT1BFUkFUSU9OX05PVF9QRVJNSVRURURfRk9SX1JFTU9W",
             "RURfUkVTT1VSQ0UQCRItCilPUEVSQVRJT05fTk9UX1BFUk1JVFRFRF9GT1Jf",
-            "QURfR1JPVVBfVFlQRRAKQtUBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAuZXJyb3JzQh9PcGVyYXRpb25BY2Nlc3NEZW5pZWRFcnJvclByb3RvUAFa",
-            "RGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBc",
-            "RXJyb3JzYgZwcm90bzM="));
+            "QURfR1JPVVBfVFlQRRAKEiUKIU1VVEFURV9OT1RfUEVSTUlUVEVEX0ZPUl9D",
+            "VVNUT01FUhALQtUBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
+            "b3JzQh9PcGVyYXRpb25BY2Nlc3NEZW5pZWRFcnJvclByb3RvUAFaRGdvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3Jz",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -206,6 +207,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// This operation is not permitted on this ad group type.
         /// </summary>
         [pbr::OriginalName("OPERATION_NOT_PERMITTED_FOR_AD_GROUP_TYPE")] OperationNotPermittedForAdGroupType = 10,
+        /// <summary>
+        /// The mutate is not allowed for this customer.
+        /// </summary>
+        [pbr::OriginalName("MUTATE_NOT_PERMITTED_FOR_CUSTOMER")] MutateNotPermittedForCustomer = 11,
       }
 
     }

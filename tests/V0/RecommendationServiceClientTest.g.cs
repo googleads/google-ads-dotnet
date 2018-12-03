@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Generated code. DO NOT EDIT!
+// TODO( b/119694056): Removed Comment
 
 namespace Google.Ads.GoogleAds.V0.Services.Tests
 {
@@ -123,6 +123,7 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             ApplyRecommendationRequest expectedRequest = new ApplyRecommendationRequest
             {
                 CustomerId = "customerId-1772061412",
+                PartialFailure = true,
                 Operations = { },
             };
             ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
@@ -130,8 +131,9 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
                 .Returns(expectedResponse);
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
+            bool partialFailure = true;
             IEnumerable<ApplyRecommendationOperation> operations = new List<ApplyRecommendationOperation>();
-            ApplyRecommendationResponse response = client.ApplyRecommendation(customerId, operations);
+            ApplyRecommendationResponse response = client.ApplyRecommendation(customerId, partialFailure, operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -143,6 +145,7 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             ApplyRecommendationRequest expectedRequest = new ApplyRecommendationRequest
             {
                 CustomerId = "customerId-1772061412",
+                PartialFailure = true,
                 Operations = { },
             };
             ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
@@ -150,8 +153,9 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
                 .Returns(new Grpc.Core.AsyncUnaryCall<ApplyRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
+            bool partialFailure = true;
             IEnumerable<ApplyRecommendationOperation> operations = new List<ApplyRecommendationOperation>();
-            ApplyRecommendationResponse response = await client.ApplyRecommendationAsync(customerId, operations);
+            ApplyRecommendationResponse response = await client.ApplyRecommendationAsync(customerId, partialFailure, operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -163,6 +167,7 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             ApplyRecommendationRequest request = new ApplyRecommendationRequest
             {
                 CustomerId = "customerId-1772061412",
+                PartialFailure = true,
                 Operations = { },
             };
             ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
@@ -181,6 +186,7 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             ApplyRecommendationRequest request = new ApplyRecommendationRequest
             {
                 CustomerId = "customerId-1772061412",
+                PartialFailure = true,
                 Operations = { },
             };
             ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
@@ -188,6 +194,88 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
                 .Returns(new Grpc.Core.AsyncUnaryCall<ApplyRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
             ApplyRecommendationResponse response = await client.ApplyRecommendationAsync(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void DismissRecommendation()
+        {
+            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            DismissRecommendationRequest expectedRequest = new DismissRecommendationRequest
+            {
+                CustomerId = "customerId-1772061412",
+                PartialFailure = true,
+                Operations = { },
+            };
+            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
+            mockGrpcClient.Setup(x => x.DismissRecommendation(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            bool partialFailure = true;
+            IEnumerable<DismissRecommendationRequest.Types.DismissRecommendationOperation> operations = new List<DismissRecommendationRequest.Types.DismissRecommendationOperation>();
+            DismissRecommendationResponse response = client.DismissRecommendation(customerId, partialFailure, operations);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task DismissRecommendationAsync()
+        {
+            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            DismissRecommendationRequest expectedRequest = new DismissRecommendationRequest
+            {
+                CustomerId = "customerId-1772061412",
+                PartialFailure = true,
+                Operations = { },
+            };
+            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
+            mockGrpcClient.Setup(x => x.DismissRecommendationAsync(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<DismissRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            bool partialFailure = true;
+            IEnumerable<DismissRecommendationRequest.Types.DismissRecommendationOperation> operations = new List<DismissRecommendationRequest.Types.DismissRecommendationOperation>();
+            DismissRecommendationResponse response = await client.DismissRecommendationAsync(customerId, partialFailure, operations);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void DismissRecommendation2()
+        {
+            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            DismissRecommendationRequest request = new DismissRecommendationRequest
+            {
+                CustomerId = "customerId-1772061412",
+                PartialFailure = true,
+                Operations = { },
+            };
+            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
+            mockGrpcClient.Setup(x => x.DismissRecommendation(request, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            DismissRecommendationResponse response = client.DismissRecommendation(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task DismissRecommendationAsync2()
+        {
+            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            DismissRecommendationRequest request = new DismissRecommendationRequest
+            {
+                CustomerId = "customerId-1772061412",
+                PartialFailure = true,
+                Operations = { },
+            };
+            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
+            mockGrpcClient.Setup(x => x.DismissRecommendationAsync(request, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<DismissRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            DismissRecommendationResponse response = await client.DismissRecommendationAsync(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

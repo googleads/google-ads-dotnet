@@ -20,6 +20,7 @@ using Google.Ads.GoogleAds.V0.Services;
 using System;
 
 using static Google.Ads.GoogleAds.V0.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V0.Enums.ProximityRadiusUnitsEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V0
 {
@@ -93,6 +94,9 @@ namespace Google.Ads.GoogleAds.Examples.V0
             CampaignCriterion locationCriterion = buildLocationCriterion(locationId,
                 campaignResourceName);
 
+            // Add a proximity criterion
+            CampaignCriterion proximityCriterion = buildProximityCriterion(campaignResourceName);
+
             // Create the operations.
             CampaignCriterionOperation negativeCriterionOperation =
                 new CampaignCriterionOperation()
@@ -106,9 +110,16 @@ namespace Google.Ads.GoogleAds.Examples.V0
                     Create = locationCriterion
                 };
 
+            CampaignCriterionOperation proximityCriterionOperation =
+                new CampaignCriterionOperation()
+                {
+                    Create = proximityCriterion
+                };
+
             CampaignCriterionOperation[] operations = new CampaignCriterionOperation[] {
                 negativeCriterionOperation,
-                locationCriterionOperation
+                locationCriterionOperation,
+                proximityCriterionOperation
             };
 
             try
@@ -176,6 +187,36 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 {
                     GeoTargetConstant = location.ToString()
                 }
+            };
+        }
+
+        /// <summary>
+        /// Creates a proximity Criterion.
+        /// </summary>
+        /// <param name="campaignResourceName">the campaign where the proximity will be added.
+        /// </param>
+        /// <returns>a campaign criterion object with the specified locationId and resource name.
+        /// </returns>
+        private CampaignCriterion buildProximityCriterion(string campaignResourceName)
+        {
+            ProximityInfo proximity = new ProximityInfo()
+            {
+                Address = new AddressInfo()
+                {
+                    StreetAddress = "38 avenue de l'Opéra",
+                    CityName = "Paris",
+                    PostalCode = "75002",
+                    CountryCode = "FR"
+                },
+                Radius = 10d,
+                // Default is kilometers.
+                RadiusUnits = ProximityRadiusUnits.Miles
+            };
+
+            return new CampaignCriterion()
+            {
+                Campaign = campaignResourceName,
+                Proximity = proximity
             };
         }
     }

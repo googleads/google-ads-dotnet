@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Generated code. DO NOT EDIT!
+// TODO( b/119694056): Removed Comment
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
 using gax = Google.Api.Gax;
@@ -52,6 +52,7 @@ namespace Google.Ads.GoogleAds.V0.Services
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             GetRecommendationSettings = existing.GetRecommendationSettings;
             ApplyRecommendationSettings = existing.ApplyRecommendationSettings;
+            DismissRecommendationSettings = existing.DismissRecommendationSettings;
             OnCopy(existing);
         }
 
@@ -173,6 +174,35 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// Default RPC expiration is 600000 milliseconds.
         /// </remarks>
         public gaxgrpc::CallSettings ApplyRecommendationSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+            gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
+                retryBackoff: GetDefaultRetryBackoff(),
+                timeoutBackoff: GetDefaultTimeoutBackoff(),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                retryFilter: NonIdempotentRetryFilter
+            )));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>RecommendationServiceClient.DismissRecommendation</c> and <c>RecommendationServiceClient.DismissRecommendationAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// The default <c>RecommendationServiceClient.DismissRecommendation</c> and
+        /// <c>RecommendationServiceClient.DismissRecommendationAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Timeout multiplier: 1.0</description></item>
+        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// </list>
+        /// Retry will be attempted on the following response status codes:
+        /// <list>
+        /// <item><description>No status codes</description></item>
+        /// </list>
+        /// Default RPC expiration is 600000 milliseconds.
+        /// </remarks>
+        public gaxgrpc::CallSettings DismissRecommendationSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
             gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
                 retryBackoff: GetDefaultRetryBackoff(),
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
@@ -461,8 +491,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="customerId">
         /// The ID of the customer with the recommendation.
         /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, operations will be carried
+        /// out as a transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
         /// <param name="operations">
         /// The list of operations to apply recommendations.
+        /// If partial_failure=false all recommendations should be of the same type
+        /// There is a limit of 100 operations per request.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -472,11 +510,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual stt::Task<ApplyRecommendationResponse> ApplyRecommendationAsync(
             string customerId,
+            bool partialFailure,
             scg::IEnumerable<ApplyRecommendationOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => ApplyRecommendationAsync(
                 new ApplyRecommendationRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    PartialFailure = partialFailure,
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
@@ -487,8 +527,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="customerId">
         /// The ID of the customer with the recommendation.
         /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, operations will be carried
+        /// out as a transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
         /// <param name="operations">
         /// The list of operations to apply recommendations.
+        /// If partial_failure=false all recommendations should be of the same type
+        /// There is a limit of 100 operations per request.
         /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
@@ -498,9 +546,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual stt::Task<ApplyRecommendationResponse> ApplyRecommendationAsync(
             string customerId,
+            bool partialFailure,
             scg::IEnumerable<ApplyRecommendationOperation> operations,
             st::CancellationToken cancellationToken) => ApplyRecommendationAsync(
                 customerId,
+                partialFailure,
                 operations,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
@@ -510,8 +560,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="customerId">
         /// The ID of the customer with the recommendation.
         /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, operations will be carried
+        /// out as a transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
         /// <param name="operations">
         /// The list of operations to apply recommendations.
+        /// If partial_failure=false all recommendations should be of the same type
+        /// There is a limit of 100 operations per request.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -521,11 +579,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual ApplyRecommendationResponse ApplyRecommendation(
             string customerId,
+            bool partialFailure,
             scg::IEnumerable<ApplyRecommendationOperation> operations,
             gaxgrpc::CallSettings callSettings = null) => ApplyRecommendation(
                 new ApplyRecommendationRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    PartialFailure = partialFailure,
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
@@ -586,6 +646,167 @@ namespace Google.Ads.GoogleAds.V0.Services
             throw new sys::NotImplementedException();
         }
 
+        /// <summary>
+        /// Dismisses given recommendations.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer with the recommendation.
+        /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, operations will be carried in a
+        /// single transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to dismiss recommendations.
+        /// If partial_failure=false all recommendations should be of the same type
+        /// There is a limit of 100 operations per request.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<DismissRecommendationResponse> DismissRecommendationAsync(
+            string customerId,
+            bool partialFailure,
+            scg::IEnumerable<DismissRecommendationRequest.Types.DismissRecommendationOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => DismissRecommendationAsync(
+                new DismissRecommendationRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    PartialFailure = partialFailure,
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Dismisses given recommendations.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer with the recommendation.
+        /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, operations will be carried in a
+        /// single transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to dismiss recommendations.
+        /// If partial_failure=false all recommendations should be of the same type
+        /// There is a limit of 100 operations per request.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<DismissRecommendationResponse> DismissRecommendationAsync(
+            string customerId,
+            bool partialFailure,
+            scg::IEnumerable<DismissRecommendationRequest.Types.DismissRecommendationOperation> operations,
+            st::CancellationToken cancellationToken) => DismissRecommendationAsync(
+                customerId,
+                partialFailure,
+                operations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Dismisses given recommendations.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer with the recommendation.
+        /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, operations will be carried in a
+        /// single transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to dismiss recommendations.
+        /// If partial_failure=false all recommendations should be of the same type
+        /// There is a limit of 100 operations per request.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual DismissRecommendationResponse DismissRecommendation(
+            string customerId,
+            bool partialFailure,
+            scg::IEnumerable<DismissRecommendationRequest.Types.DismissRecommendationOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => DismissRecommendation(
+                new DismissRecommendationRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    PartialFailure = partialFailure,
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Dismisses given recommendations.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<DismissRecommendationResponse> DismissRecommendationAsync(
+            DismissRecommendationRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
+        /// <summary>
+        /// Dismisses given recommendations.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<DismissRecommendationResponse> DismissRecommendationAsync(
+            DismissRecommendationRequest request,
+            st::CancellationToken cancellationToken) => DismissRecommendationAsync(
+                request,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Dismisses given recommendations.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual DismissRecommendationResponse DismissRecommendation(
+            DismissRecommendationRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
     }
 
     /// <summary>
@@ -595,6 +816,7 @@ namespace Google.Ads.GoogleAds.V0.Services
     {
         private readonly gaxgrpc::ApiCall<GetRecommendationRequest, gagvr::Recommendation> _callGetRecommendation;
         private readonly gaxgrpc::ApiCall<ApplyRecommendationRequest, ApplyRecommendationResponse> _callApplyRecommendation;
+        private readonly gaxgrpc::ApiCall<DismissRecommendationRequest, DismissRecommendationResponse> _callDismissRecommendation;
 
         /// <summary>
         /// Constructs a client wrapper for the RecommendationService service, with the specified gRPC client and settings.
@@ -610,10 +832,14 @@ namespace Google.Ads.GoogleAds.V0.Services
                 GrpcClient.GetRecommendationAsync, GrpcClient.GetRecommendation, effectiveSettings.GetRecommendationSettings);
             _callApplyRecommendation = clientHelper.BuildApiCall<ApplyRecommendationRequest, ApplyRecommendationResponse>(
                 GrpcClient.ApplyRecommendationAsync, GrpcClient.ApplyRecommendation, effectiveSettings.ApplyRecommendationSettings);
+            _callDismissRecommendation = clientHelper.BuildApiCall<DismissRecommendationRequest, DismissRecommendationResponse>(
+                GrpcClient.DismissRecommendationAsync, GrpcClient.DismissRecommendation, effectiveSettings.DismissRecommendationSettings);
             Modify_ApiCall(ref _callGetRecommendation);
             Modify_GetRecommendationApiCall(ref _callGetRecommendation);
             Modify_ApiCall(ref _callApplyRecommendation);
             Modify_ApplyRecommendationApiCall(ref _callApplyRecommendation);
+            Modify_ApiCall(ref _callDismissRecommendation);
+            Modify_DismissRecommendationApiCall(ref _callDismissRecommendation);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -629,6 +855,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Allows per-RPC-method modification of the underlying ApiCall object.
         partial void Modify_GetRecommendationApiCall(ref gaxgrpc::ApiCall<GetRecommendationRequest, gagvr::Recommendation> call);
         partial void Modify_ApplyRecommendationApiCall(ref gaxgrpc::ApiCall<ApplyRecommendationRequest, ApplyRecommendationResponse> call);
+        partial void Modify_DismissRecommendationApiCall(ref gaxgrpc::ApiCall<DismissRecommendationRequest, DismissRecommendationResponse> call);
         partial void OnConstruction(RecommendationService.RecommendationServiceClient grpcClient, RecommendationServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -641,6 +868,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // before the underlying RPC is performed.
         partial void Modify_GetRecommendationRequest(ref GetRecommendationRequest request, ref gaxgrpc::CallSettings settings);
         partial void Modify_ApplyRecommendationRequest(ref ApplyRecommendationRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_DismissRecommendationRequest(ref DismissRecommendationRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested recommendation in full detail.
@@ -720,6 +948,46 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             Modify_ApplyRecommendationRequest(ref request, ref callSettings);
             return _callApplyRecommendation.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Dismisses given recommendations.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public override stt::Task<DismissRecommendationResponse> DismissRecommendationAsync(
+            DismissRecommendationRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_DismissRecommendationRequest(ref request, ref callSettings);
+            return _callDismissRecommendation.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Dismisses given recommendations.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public override DismissRecommendationResponse DismissRecommendation(
+            DismissRecommendationRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_DismissRecommendationRequest(ref request, ref callSettings);
+            return _callDismissRecommendation.Sync(request, callSettings);
         }
 
     }

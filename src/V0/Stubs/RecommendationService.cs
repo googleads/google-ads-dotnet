@@ -32,64 +32,82 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "c291cmNlcy9yZWNvbW1lbmRhdGlvbi5wcm90bxocZ29vZ2xlL2FwaS9hbm5v",
             "dGF0aW9ucy5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3Rv",
             "Ghdnb29nbGUvcnBjL3N0YXR1cy5wcm90byIxChhHZXRSZWNvbW1lbmRhdGlv",
-            "blJlcXVlc3QSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCSKFAQoaQXBwbHlSZWNv",
-            "bW1lbmRhdGlvblJlcXVlc3QSEwoLY3VzdG9tZXJfaWQYASABKAkSUgoKb3Bl",
-            "cmF0aW9ucxgCIAMoCzI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZp",
-            "Y2VzLkFwcGx5UmVjb21tZW5kYXRpb25PcGVyYXRpb24ikAgKHEFwcGx5UmVj",
-            "b21tZW5kYXRpb25PcGVyYXRpb24SFQoNcmVzb3VyY2VfbmFtZRgBIAEoCRJy",
-            "Cg9jYW1wYWlnbl9idWRnZXQYAiABKAsyVy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MC5zZXJ2aWNlcy5BcHBseVJlY29tbWVuZGF0aW9uT3BlcmF0aW9uLkNh",
-            "bXBhaWduQnVkZ2V0UGFyYW1ldGVyc0gAEmIKB3RleHRfYWQYAyABKAsyTy5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5BcHBseVJlY29tbWVu",
-            "ZGF0aW9uT3BlcmF0aW9uLlRleHRBZFBhcmFtZXRlcnNIABJjCgdrZXl3b3Jk",
-            "GAQgASgLMlAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMuQXBw",
-            "bHlSZWNvbW1lbmRhdGlvbk9wZXJhdGlvbi5LZXl3b3JkUGFyYW1ldGVyc0gA",
-            "EnQKEXRhcmdldF9jcGFfb3B0X2luGAUgASgLMlcuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvbk9wZXJhdGlv",
-            "bi5UYXJnZXRDcGFPcHRJblBhcmFtZXRlcnNIABpZChhDYW1wYWlnbkJ1ZGdl",
-            "dFBhcmFtZXRlcnMSPQoYbmV3X2J1ZGdldF9hbW91bnRfbWljcm9zGAEgASgL",
-            "MhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUaRQoQVGV4dEFkUGFyYW1l",
-            "dGVycxIxCgJhZBgBIAEoCzIlLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJl",
-            "c291cmNlcy5BZBrSAQoRS2V5d29yZFBhcmFtZXRlcnMSLgoIYWRfZ3JvdXAY",
-            "ASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSWAoKbWF0Y2hf",
-            "dHlwZRgCIAEoDjJELmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLktl",
-            "eXdvcmRNYXRjaFR5cGVFbnVtLktleXdvcmRNYXRjaFR5cGUSMwoOY3BjX2Jp",
-            "ZF9taWNyb3MYAyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRqa",
-            "AQoYVGFyZ2V0Q3BhT3B0SW5QYXJhbWV0ZXJzEjYKEXRhcmdldF9jcGFfbWlj",
-            "cm9zGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSRgohbmV3",
-            "X2NhbXBhaWduX2J1ZGdldF9hbW91bnRfbWljcm9zGAIgASgLMhsuZ29vZ2xl",
-            "LnByb3RvYnVmLkludDY0VmFsdWVCEgoQYXBwbHlfcGFyYW1ldGVycyJrChtB",
-            "cHBseVJlY29tbWVuZGF0aW9uUmVzcG9uc2USTAoHcmVzdWx0cxgBIAMoCzI7",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLkFwcGx5UmVjb21t",
-            "ZW5kYXRpb25SZXN1bHQiZAoZQXBwbHlSZWNvbW1lbmRhdGlvblJlc3VsdBIX",
-            "Cg1yZXNvdXJjZV9uYW1lGAEgASgJSAASJAoGc3RhdHVzGAIgASgLMhIuZ29v",
-            "Z2xlLnJwYy5TdGF0dXNIAEIICgZyZXN1bHQyrAMKFVJlY29tbWVuZGF0aW9u",
-            "U2VydmljZRK9AQoRR2V0UmVjb21tZW5kYXRpb24SOi5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5zZXJ2aWNlcy5HZXRSZWNvbW1lbmRhdGlvblJlcXVlc3Qa",
-            "MS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuUmVjb21tZW5k",
-            "YXRpb24iOYLT5JMCMxIxL3YwL3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8q",
-            "L3JlY29tbWVuZGF0aW9ucy8qfRLSAQoTQXBwbHlSZWNvbW1lbmRhdGlvbhI8",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLkFwcGx5UmVjb21t",
-            "ZW5kYXRpb25SZXF1ZXN0Gj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2Vy",
-            "dmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvblJlc3BvbnNlIj6C0+STAjgiMy92",
-            "MC9jdXN0b21lcnMve2N1c3RvbWVyX2lkPSp9L3JlY29tbWVuZGF0aW9uczph",
-            "cHBseToBKkLaAQokY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZp",
-            "Y2VzQhpSZWNvbW1lbmRhdGlvblNlcnZpY2VQcm90b1ABWkhnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
-            "c2VydmljZXM7c2VydmljZXOiAgNHQUGqAiBHb29nbGUuQWRzLkdvb2dsZUFk",
-            "cy5WMC5TZXJ2aWNlc8oCIEdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFNlcnZp",
-            "Y2VzYgZwcm90bzM="));
+            "blJlcXVlc3QSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCSKeAQoaQXBwbHlSZWNv",
+            "bW1lbmRhdGlvblJlcXVlc3QSEwoLY3VzdG9tZXJfaWQYASABKAkSFwoPcGFy",
+            "dGlhbF9mYWlsdXJlGAMgASgIElIKCm9wZXJhdGlvbnMYAiADKAsyPi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5BcHBseVJlY29tbWVuZGF0",
+            "aW9uT3BlcmF0aW9uIpAIChxBcHBseVJlY29tbWVuZGF0aW9uT3BlcmF0aW9u",
+            "EhUKDXJlc291cmNlX25hbWUYASABKAkScgoPY2FtcGFpZ25fYnVkZ2V0GAIg",
+            "ASgLMlcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMuQXBwbHlS",
+            "ZWNvbW1lbmRhdGlvbk9wZXJhdGlvbi5DYW1wYWlnbkJ1ZGdldFBhcmFtZXRl",
+            "cnNIABJiCgd0ZXh0X2FkGAMgASgLMk8uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvbk9wZXJhdGlvbi5UZXh0",
+            "QWRQYXJhbWV0ZXJzSAASYwoHa2V5d29yZBgEIAEoCzJQLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLnNlcnZpY2VzLkFwcGx5UmVjb21tZW5kYXRpb25PcGVy",
+            "YXRpb24uS2V5d29yZFBhcmFtZXRlcnNIABJ0ChF0YXJnZXRfY3BhX29wdF9p",
+            "bhgFIAEoCzJXLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLkFw",
+            "cGx5UmVjb21tZW5kYXRpb25PcGVyYXRpb24uVGFyZ2V0Q3BhT3B0SW5QYXJh",
+            "bWV0ZXJzSAAaWQoYQ2FtcGFpZ25CdWRnZXRQYXJhbWV0ZXJzEj0KGG5ld19i",
+            "dWRnZXRfYW1vdW50X21pY3JvcxgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
+            "bnQ2NFZhbHVlGkUKEFRleHRBZFBhcmFtZXRlcnMSMQoCYWQYASABKAsyJS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQWQa0gEKEUtleXdv",
+            "cmRQYXJhbWV0ZXJzEi4KCGFkX2dyb3VwGAEgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlElgKCm1hdGNoX3R5cGUYAiABKA4yRC5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5lbnVtcy5LZXl3b3JkTWF0Y2hUeXBlRW51bS5L",
+            "ZXl3b3JkTWF0Y2hUeXBlEjMKDmNwY19iaWRfbWljcm9zGAMgASgLMhsuZ29v",
+            "Z2xlLnByb3RvYnVmLkludDY0VmFsdWUamgEKGFRhcmdldENwYU9wdEluUGFy",
+            "YW1ldGVycxI2ChF0YXJnZXRfY3BhX21pY3JvcxgBIAEoCzIbLmdvb2dsZS5w",
+            "cm90b2J1Zi5JbnQ2NFZhbHVlEkYKIW5ld19jYW1wYWlnbl9idWRnZXRfYW1v",
+            "dW50X21pY3JvcxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVl",
+            "QhIKEGFwcGx5X3BhcmFtZXRlcnMingEKG0FwcGx5UmVjb21tZW5kYXRpb25S",
+            "ZXNwb25zZRJMCgdyZXN1bHRzGAEgAygLMjsuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvblJlc3VsdBIxChVw",
+            "YXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAiABKAsyEi5nb29nbGUucnBjLlN0YXR1",
+            "cyIyChlBcHBseVJlY29tbWVuZGF0aW9uUmVzdWx0EhUKDXJlc291cmNlX25h",
+            "bWUYASABKAki+AEKHERpc21pc3NSZWNvbW1lbmRhdGlvblJlcXVlc3QSEwoL",
+            "Y3VzdG9tZXJfaWQYASABKAkSFwoPcGFydGlhbF9mYWlsdXJlGAIgASgIEnEK",
+            "Cm9wZXJhdGlvbnMYAyADKAsyXS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5z",
+            "ZXJ2aWNlcy5EaXNtaXNzUmVjb21tZW5kYXRpb25SZXF1ZXN0LkRpc21pc3NS",
+            "ZWNvbW1lbmRhdGlvbk9wZXJhdGlvbho3Ch5EaXNtaXNzUmVjb21tZW5kYXRp",
+            "b25PcGVyYXRpb24SFQoNcmVzb3VyY2VfbmFtZRgBIAEoCSL2AQodRGlzbWlz",
+            "c1JlY29tbWVuZGF0aW9uUmVzcG9uc2USbAoHcmVzdWx0cxgBIAMoCzJbLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLkRpc21pc3NSZWNvbW1l",
+            "bmRhdGlvblJlc3BvbnNlLkRpc21pc3NSZWNvbW1lbmRhdGlvblJlc3VsdBIx",
+            "ChVwYXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAiABKAsyEi5nb29nbGUucnBjLlN0",
+            "YXR1cxo0ChtEaXNtaXNzUmVjb21tZW5kYXRpb25SZXN1bHQSFQoNcmVzb3Vy",
+            "Y2VfbmFtZRgBIAEoCTKJBQoVUmVjb21tZW5kYXRpb25TZXJ2aWNlEr0BChFH",
+            "ZXRSZWNvbW1lbmRhdGlvbhI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNl",
+            "cnZpY2VzLkdldFJlY29tbWVuZGF0aW9uUmVxdWVzdBoxLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLnJlc291cmNlcy5SZWNvbW1lbmRhdGlvbiI5gtPkkwIz",
+            "EjEvdjAve3Jlc291cmNlX25hbWU9Y3VzdG9tZXJzLyovcmVjb21tZW5kYXRp",
+            "b25zLyp9EtIBChNBcHBseVJlY29tbWVuZGF0aW9uEjwuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjAuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvblJlcXVl",
+            "c3QaPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5BcHBseVJl",
+            "Y29tbWVuZGF0aW9uUmVzcG9uc2UiPoLT5JMCOCIzL3YwL2N1c3RvbWVycy97",
+            "Y3VzdG9tZXJfaWQ9Kn0vcmVjb21tZW5kYXRpb25zOmFwcGx5OgEqEtoBChVE",
+            "aXNtaXNzUmVjb21tZW5kYXRpb24SPi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5zZXJ2aWNlcy5EaXNtaXNzUmVjb21tZW5kYXRpb25SZXF1ZXN0Gj8uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMuRGlzbWlzc1JlY29tbWVu",
+            "ZGF0aW9uUmVzcG9uc2UiQILT5JMCOiI1L3YwL2N1c3RvbWVycy97Y3VzdG9t",
+            "ZXJfaWQ9Kn0vcmVjb21tZW5kYXRpb25zOmRpc21pc3M6ASpC2gEKJGNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlc0IaUmVjb21tZW5kYXRp",
+            "b25TZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3NlcnZpY2VzO3NlcnZpY2Vz",
+            "ogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuU2VydmljZXPKAiBH",
+            "b29nbGVcQWRzXEdvb2dsZUFkc1xWMFxTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.RecommendationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetRecommendationRequest), global::Google.Ads.GoogleAds.V0.Services.GetRecommendationRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationRequest), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationRequest.Parser, new[]{ "CustomerId", "Operations" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationRequest), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationRequest.Parser, new[]{ "CustomerId", "PartialFailure", "Operations" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Parser, new[]{ "ResourceName", "CampaignBudget", "TextAd", "Keyword", "TargetCpaOptIn" }, new[]{ "ApplyParameters" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters.Parser, new[]{ "NewBudgetAmountMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.TextAdParameters), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.TextAdParameters.Parser, new[]{ "Ad" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.KeywordParameters), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.KeywordParameters.Parser, new[]{ "AdGroup", "MatchType", "CpcBidMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters.Parser, new[]{ "TargetCpaMicros", "NewCampaignBudgetAmountMicros" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResponse), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResponse.Parser, new[]{ "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResult), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResult.Parser, new[]{ "ResourceName", "Status" }, new[]{ "Result" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResponse), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResult), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Parser, new[]{ "CustomerId", "PartialFailure", "Operations" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation.Parser, new[]{ "ResourceName" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Types.DismissRecommendationResult), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Types.DismissRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null)})
           }));
     }
     #endregion
@@ -260,6 +278,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ApplyRecommendationRequest(ApplyRecommendationRequest other) : this() {
       customerId_ = other.customerId_;
+      partialFailure_ = other.partialFailure_;
       operations_ = other.operations_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -283,6 +302,23 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
     }
 
+    /// <summary>Field number for the "partial_failure" field.</summary>
+    public const int PartialFailureFieldNumber = 3;
+    private bool partialFailure_;
+    /// <summary>
+    /// If true, successful operations will be carried out and invalid
+    /// operations will return errors. If false, operations will be carried
+    /// out as a transaction if and only if they are all valid.
+    /// Default is false.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PartialFailure {
+      get { return partialFailure_; }
+      set {
+        partialFailure_ = value;
+      }
+    }
+
     /// <summary>Field number for the "operations" field.</summary>
     public const int OperationsFieldNumber = 2;
     private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation> _repeated_operations_codec
@@ -290,6 +326,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation> operations_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation>();
     /// <summary>
     /// The list of operations to apply recommendations.
+    /// If partial_failure=false all recommendations should be of the same type
+    /// There is a limit of 100 operations per request.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation> Operations {
@@ -310,6 +348,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return true;
       }
       if (CustomerId != other.CustomerId) return false;
+      if (PartialFailure != other.PartialFailure) return false;
       if(!operations_.Equals(other.operations_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -318,6 +357,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
+      if (PartialFailure != false) hash ^= PartialFailure.GetHashCode();
       hash ^= operations_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -337,6 +377,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
         output.WriteString(CustomerId);
       }
       operations_.WriteTo(output, _repeated_operations_codec);
+      if (PartialFailure != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(PartialFailure);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -347,6 +391,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
       int size = 0;
       if (CustomerId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerId);
+      }
+      if (PartialFailure != false) {
+        size += 1 + 1;
       }
       size += operations_.CalculateSize(_repeated_operations_codec);
       if (_unknownFields != null) {
@@ -362,6 +409,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
       if (other.CustomerId.Length != 0) {
         CustomerId = other.CustomerId;
+      }
+      if (other.PartialFailure != false) {
+        PartialFailure = other.PartialFailure;
       }
       operations_.Add(other.operations_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -381,6 +431,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
           }
           case 18: {
             operations_.AddEntriesFrom(input, _repeated_operations_codec);
+            break;
+          }
+          case 24: {
+            PartialFailure = input.ReadBool();
             break;
           }
         }
@@ -1425,6 +1479,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ApplyRecommendationResponse(ApplyRecommendationResponse other) : this() {
       results_ = other.results_.Clone();
+      partialFailureError_ = other.partialFailureError_ != null ? other.partialFailureError_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1446,6 +1501,23 @@ namespace Google.Ads.GoogleAds.V0.Services {
       get { return results_; }
     }
 
+    /// <summary>Field number for the "partial_failure_error" field.</summary>
+    public const int PartialFailureErrorFieldNumber = 2;
+    private global::Google.Rpc.Status partialFailureError_;
+    /// <summary>
+    /// Errors that pertain to operation failures in the partial failure mode.
+    /// Returned only when partial_failure = true and all errors occur inside the
+    /// operations. If any errors occur outside the operations (e.g. auth errors)
+    /// we return the RPC level error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Rpc.Status PartialFailureError {
+      get { return partialFailureError_; }
+      set {
+        partialFailureError_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ApplyRecommendationResponse);
@@ -1460,6 +1532,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return true;
       }
       if(!results_.Equals(other.results_)) return false;
+      if (!object.Equals(PartialFailureError, other.PartialFailureError)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1467,6 +1540,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= results_.GetHashCode();
+      if (partialFailureError_ != null) hash ^= PartialFailureError.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1481,6 +1555,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       results_.WriteTo(output, _repeated_results_codec);
+      if (partialFailureError_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(PartialFailureError);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1490,6 +1568,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public int CalculateSize() {
       int size = 0;
       size += results_.CalculateSize(_repeated_results_codec);
+      if (partialFailureError_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartialFailureError);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1502,6 +1583,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return;
       }
       results_.Add(other.results_);
+      if (other.partialFailureError_ != null) {
+        if (partialFailureError_ == null) {
+          partialFailureError_ = new global::Google.Rpc.Status();
+        }
+        PartialFailureError.MergeFrom(other.PartialFailureError);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1515,6 +1602,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
             break;
           case 10: {
             results_.AddEntriesFrom(input, _repeated_results_codec);
+            break;
+          }
+          case 18: {
+            if (partialFailureError_ == null) {
+              partialFailureError_ = new global::Google.Rpc.Status();
+            }
+            input.ReadMessage(partialFailureError_);
             break;
           }
         }
@@ -1551,15 +1645,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ApplyRecommendationResult(ApplyRecommendationResult other) : this() {
-      switch (other.ResultCase) {
-        case ResultOneofCase.ResourceName:
-          ResourceName = other.ResourceName;
-          break;
-        case ResultOneofCase.Status:
-          Status = other.Status.Clone();
-          break;
-      }
-
+      resourceName_ = other.resourceName_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1570,49 +1656,16 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     /// <summary>Field number for the "resource_name" field.</summary>
     public const int ResourceNameFieldNumber = 1;
+    private string resourceName_ = "";
     /// <summary>
     /// Returned for successful applies.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {
-      get { return resultCase_ == ResultOneofCase.ResourceName ? (string) result_ : ""; }
+      get { return resourceName_; }
       set {
-        result_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-        resultCase_ = ResultOneofCase.ResourceName;
+        resourceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
-    }
-
-    /// <summary>Field number for the "status" field.</summary>
-    public const int StatusFieldNumber = 2;
-    /// <summary>
-    /// Returned for failed operations.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Rpc.Status Status {
-      get { return resultCase_ == ResultOneofCase.Status ? (global::Google.Rpc.Status) result_ : null; }
-      set {
-        result_ = value;
-        resultCase_ = value == null ? ResultOneofCase.None : ResultOneofCase.Status;
-      }
-    }
-
-    private object result_;
-    /// <summary>Enum of possible cases for the "result" oneof.</summary>
-    public enum ResultOneofCase {
-      None = 0,
-      ResourceName = 1,
-      Status = 2,
-    }
-    private ResultOneofCase resultCase_ = ResultOneofCase.None;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ResultOneofCase ResultCase {
-      get { return resultCase_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearResult() {
-      resultCase_ = ResultOneofCase.None;
-      result_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1629,17 +1682,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return true;
       }
       if (ResourceName != other.ResourceName) return false;
-      if (!object.Equals(Status, other.Status)) return false;
-      if (ResultCase != other.ResultCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (resultCase_ == ResultOneofCase.ResourceName) hash ^= ResourceName.GetHashCode();
-      if (resultCase_ == ResultOneofCase.Status) hash ^= Status.GetHashCode();
-      hash ^= (int) resultCase_;
+      if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1653,13 +1702,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (resultCase_ == ResultOneofCase.ResourceName) {
+      if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
-      }
-      if (resultCase_ == ResultOneofCase.Status) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Status);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1669,11 +1714,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (resultCase_ == ResultOneofCase.ResourceName) {
+      if (ResourceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
-      }
-      if (resultCase_ == ResultOneofCase.Status) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1686,18 +1728,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (other == null) {
         return;
       }
-      switch (other.ResultCase) {
-        case ResultOneofCase.ResourceName:
-          ResourceName = other.ResourceName;
-          break;
-        case ResultOneofCase.Status:
-          if (Status == null) {
-            Status = new global::Google.Rpc.Status();
-          }
-          Status.MergeFrom(other.Status);
-          break;
+      if (other.ResourceName.Length != 0) {
+        ResourceName = other.ResourceName;
       }
-
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1713,18 +1746,654 @@ namespace Google.Ads.GoogleAds.V0.Services {
             ResourceName = input.ReadString();
             break;
           }
-          case 18: {
-            global::Google.Rpc.Status subBuilder = new global::Google.Rpc.Status();
-            if (resultCase_ == ResultOneofCase.Status) {
-              subBuilder.MergeFrom(Status);
-            }
-            input.ReadMessage(subBuilder);
-            Status = subBuilder;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for [RecommendationService.DismissRecommendation][google.ads.googleads.v0.services.RecommendationService.DismissRecommendation].
+  /// </summary>
+  public sealed partial class DismissRecommendationRequest : pb::IMessage<DismissRecommendationRequest> {
+    private static readonly pb::MessageParser<DismissRecommendationRequest> _parser = new pb::MessageParser<DismissRecommendationRequest>(() => new DismissRecommendationRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<DismissRecommendationRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.RecommendationServiceReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DismissRecommendationRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DismissRecommendationRequest(DismissRecommendationRequest other) : this() {
+      customerId_ = other.customerId_;
+      partialFailure_ = other.partialFailure_;
+      operations_ = other.operations_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DismissRecommendationRequest Clone() {
+      return new DismissRecommendationRequest(this);
+    }
+
+    /// <summary>Field number for the "customer_id" field.</summary>
+    public const int CustomerIdFieldNumber = 1;
+    private string customerId_ = "";
+    /// <summary>
+    /// The ID of the customer with the recommendation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CustomerId {
+      get { return customerId_; }
+      set {
+        customerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "partial_failure" field.</summary>
+    public const int PartialFailureFieldNumber = 2;
+    private bool partialFailure_;
+    /// <summary>
+    /// If true, successful operations will be carried out and invalid
+    /// operations will return errors. If false, operations will be carried in a
+    /// single transaction if and only if they are all valid.
+    /// Default is false.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PartialFailure {
+      get { return partialFailure_; }
+      set {
+        partialFailure_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "operations" field.</summary>
+    public const int OperationsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation> _repeated_operations_codec
+        = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation> operations_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation>();
+    /// <summary>
+    /// The list of operations to dismiss recommendations.
+    /// If partial_failure=false all recommendations should be of the same type
+    /// There is a limit of 100 operations per request.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation> Operations {
+      get { return operations_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as DismissRecommendationRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(DismissRecommendationRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CustomerId != other.CustomerId) return false;
+      if (PartialFailure != other.PartialFailure) return false;
+      if(!operations_.Equals(other.operations_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
+      if (PartialFailure != false) hash ^= PartialFailure.GetHashCode();
+      hash ^= operations_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      if (PartialFailure != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(PartialFailure);
+      }
+      operations_.WriteTo(output, _repeated_operations_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (CustomerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerId);
+      }
+      if (PartialFailure != false) {
+        size += 1 + 1;
+      }
+      size += operations_.CalculateSize(_repeated_operations_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(DismissRecommendationRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CustomerId.Length != 0) {
+        CustomerId = other.CustomerId;
+      }
+      if (other.PartialFailure != false) {
+        PartialFailure = other.PartialFailure;
+      }
+      operations_.Add(other.operations_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+          case 16: {
+            PartialFailure = input.ReadBool();
+            break;
+          }
+          case 26: {
+            operations_.AddEntriesFrom(input, _repeated_operations_codec);
             break;
           }
         }
       }
     }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the DismissRecommendationRequest message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      /// <summary>
+      /// Operation to dismiss a single recommendation identified by resource_name.
+      /// </summary>
+      public sealed partial class DismissRecommendationOperation : pb::IMessage<DismissRecommendationOperation> {
+        private static readonly pb::MessageParser<DismissRecommendationOperation> _parser = new pb::MessageParser<DismissRecommendationOperation>(() => new DismissRecommendationOperation());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<DismissRecommendationOperation> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DismissRecommendationOperation() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DismissRecommendationOperation(DismissRecommendationOperation other) : this() {
+          resourceName_ = other.resourceName_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DismissRecommendationOperation Clone() {
+          return new DismissRecommendationOperation(this);
+        }
+
+        /// <summary>Field number for the "resource_name" field.</summary>
+        public const int ResourceNameFieldNumber = 1;
+        private string resourceName_ = "";
+        /// <summary>
+        /// The resource name of the recommendation to dismiss.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string ResourceName {
+          get { return resourceName_; }
+          set {
+            resourceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as DismissRecommendationOperation);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(DismissRecommendationOperation other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (ResourceName != other.ResourceName) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (ResourceName.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(ResourceName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (ResourceName.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(DismissRecommendationOperation other) {
+          if (other == null) {
+            return;
+          }
+          if (other.ResourceName.Length != 0) {
+            ResourceName = other.ResourceName;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                ResourceName = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
+
+  }
+
+  /// <summary>
+  /// Response message for [RecommendationService.DismissRecommendation][google.ads.googleads.v0.services.RecommendationService.DismissRecommendation].
+  /// </summary>
+  public sealed partial class DismissRecommendationResponse : pb::IMessage<DismissRecommendationResponse> {
+    private static readonly pb::MessageParser<DismissRecommendationResponse> _parser = new pb::MessageParser<DismissRecommendationResponse>(() => new DismissRecommendationResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<DismissRecommendationResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.RecommendationServiceReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DismissRecommendationResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DismissRecommendationResponse(DismissRecommendationResponse other) : this() {
+      results_ = other.results_.Clone();
+      partialFailureError_ = other.partialFailureError_ != null ? other.partialFailureError_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DismissRecommendationResponse Clone() {
+      return new DismissRecommendationResponse(this);
+    }
+
+    /// <summary>Field number for the "results" field.</summary>
+    public const int ResultsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Types.DismissRecommendationResult> _repeated_results_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Types.DismissRecommendationResult.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Types.DismissRecommendationResult> results_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Types.DismissRecommendationResult>();
+    /// <summary>
+    /// Results of operations to dismiss recommendations.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Types.DismissRecommendationResult> Results {
+      get { return results_; }
+    }
+
+    /// <summary>Field number for the "partial_failure_error" field.</summary>
+    public const int PartialFailureErrorFieldNumber = 2;
+    private global::Google.Rpc.Status partialFailureError_;
+    /// <summary>
+    /// Errors that pertain to operation failures in the partial failure mode.
+    /// Returned only when partial_failure = true and all errors occur inside the
+    /// operations. If any errors occur outside the operations (e.g. auth errors)
+    /// we return the RPC level error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Rpc.Status PartialFailureError {
+      get { return partialFailureError_; }
+      set {
+        partialFailureError_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as DismissRecommendationResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(DismissRecommendationResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!results_.Equals(other.results_)) return false;
+      if (!object.Equals(PartialFailureError, other.PartialFailureError)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= results_.GetHashCode();
+      if (partialFailureError_ != null) hash ^= PartialFailureError.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      results_.WriteTo(output, _repeated_results_codec);
+      if (partialFailureError_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(PartialFailureError);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += results_.CalculateSize(_repeated_results_codec);
+      if (partialFailureError_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartialFailureError);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(DismissRecommendationResponse other) {
+      if (other == null) {
+        return;
+      }
+      results_.Add(other.results_);
+      if (other.partialFailureError_ != null) {
+        if (partialFailureError_ == null) {
+          partialFailureError_ = new global::Google.Rpc.Status();
+        }
+        PartialFailureError.MergeFrom(other.PartialFailureError);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            results_.AddEntriesFrom(input, _repeated_results_codec);
+            break;
+          }
+          case 18: {
+            if (partialFailureError_ == null) {
+              partialFailureError_ = new global::Google.Rpc.Status();
+            }
+            input.ReadMessage(partialFailureError_);
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the DismissRecommendationResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      /// <summary>
+      /// The result of dismissing a recommendation.
+      /// </summary>
+      public sealed partial class DismissRecommendationResult : pb::IMessage<DismissRecommendationResult> {
+        private static readonly pb::MessageParser<DismissRecommendationResult> _parser = new pb::MessageParser<DismissRecommendationResult>(() => new DismissRecommendationResult());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<DismissRecommendationResult> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DismissRecommendationResult() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DismissRecommendationResult(DismissRecommendationResult other) : this() {
+          resourceName_ = other.resourceName_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DismissRecommendationResult Clone() {
+          return new DismissRecommendationResult(this);
+        }
+
+        /// <summary>Field number for the "resource_name" field.</summary>
+        public const int ResourceNameFieldNumber = 1;
+        private string resourceName_ = "";
+        /// <summary>
+        /// Returned for successful dismissals.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string ResourceName {
+          get { return resourceName_; }
+          set {
+            resourceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as DismissRecommendationResult);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(DismissRecommendationResult other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (ResourceName != other.ResourceName) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (ResourceName.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(ResourceName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (ResourceName.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(DismissRecommendationResult other) {
+          if (other == null) {
+            return;
+          }
+          if (other.ResourceName.Length != 0) {
+            ResourceName = other.ResourceName;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                ResourceName = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
 
   }
 

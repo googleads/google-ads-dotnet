@@ -1,3 +1,9 @@
+0.7.0
+=====
+
+- Added support for Google Ads API v0.6.0. See release notes:
+ https://developers.google.com/google-ads/api/docs/release-notes#060_2018-11-29
+
 0.6.0
 =====
 

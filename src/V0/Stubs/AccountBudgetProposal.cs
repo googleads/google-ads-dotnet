@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
   /// For example, proposed spending limits may be adjusted before their
   /// application.  This is true if the 'proposed' field has an 'approved'
   /// counterpart, e.g. spending limits.
-  ///
+  /// 
   /// Please note that the proposal type (proposal_type) changes which fields are
   /// required and which must remain empty.
   /// </summary>
@@ -300,7 +300,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private static readonly pb::FieldCodec<string> _single_approvedStartDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(162);
     private string approvedStartDateTime_;
     /// <summary>
-    /// The approved start date time in yyyy-MM-dd HH:mm:ss format.
+    /// The approved start date time in date time in yyyy-MM-dd HH:mm:ss format.
+    /// TODO(b/120288064): auto-generate the correct datetime format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ApprovedStartDateTime {
@@ -376,7 +377,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     public const int ProposedStartDateTimeFieldNumber = 18;
     private static readonly pb::FieldCodec<string> _oneof_proposedStartDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(146);
     /// <summary>
-    /// The proposed start date time in yyyy-MM-dd HH:mm:ss format.
+    /// The proposed start date time in date time in yyyy-MM-dd HH:mm:ss format.
+    /// TODO(b/120288064): auto-generate the correct datetime format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ProposedStartDateTime {
@@ -405,7 +407,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     public const int ProposedEndDateTimeFieldNumber = 19;
     private static readonly pb::FieldCodec<string> _oneof_proposedEndDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(154);
     /// <summary>
-    /// The proposed end date time in yyyy-MM-dd HH:mm:ss format.
+    /// The proposed end date time in date time in yyyy-MM-dd HH:mm:ss format.
+    /// TODO(b/120288064): auto-generate the correct datetime format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ProposedEndDateTime {
@@ -434,7 +437,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     public const int ApprovedEndDateTimeFieldNumber = 21;
     private static readonly pb::FieldCodec<string> _oneof_approvedEndDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(170);
     /// <summary>
-    /// The approved end date time in yyyy-MM-dd HH:mm:ss format.
+    /// The approved end date time in date time in yyyy-MM-dd HH:mm:ss format.
+    /// TODO(b/120288064): auto-generate the correct datetime format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ApprovedEndDateTime {

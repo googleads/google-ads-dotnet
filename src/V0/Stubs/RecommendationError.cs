@@ -26,18 +26,21 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcmVjb21tZW5kYXRp",
             "b25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
-            "cyKtAgoXUmVjb21tZW5kYXRpb25FcnJvckVudW0ikQIKE1JlY29tbWVuZGF0",
+            "cyK/AwoXUmVjb21tZW5kYXRpb25FcnJvckVudW0iowMKE1JlY29tbWVuZGF0",
             "aW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGwoXQlVE",
             "R0VUX0FNT1VOVF9UT09fU01BTEwQAhIbChdCVURHRVRfQU1PVU5UX1RPT19M",
             "QVJHRRADEhkKFUlOVkFMSURfQlVER0VUX0FNT1VOVBAEEhAKDFBPTElDWV9F",
             "UlJPUhAFEhYKEklOVkFMSURfQklEX0FNT1VOVBAGEhkKFUFER1JPVVBfS0VZ",
             "V09SRF9MSU1JVBAHEiIKHlJFQ09NTUVOREFUSU9OX0FMUkVBRFlfQVBQTElF",
-            "RBAIEh4KGlJFQ09NTUVOREFUSU9OX0lOVkFMSURBVEVEEAlCzgEKImNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCGFJlY29tbWVuZGF0aW9u",
-            "RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
-            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "RBAIEh4KGlJFQ09NTUVOREFUSU9OX0lOVkFMSURBVEVEEAkSFwoTVE9PX01B",
+            "TllfT1BFUkFUSU9OUxAKEhEKDU5PX09QRVJBVElPTlMQCxIhCh1ESUZGRVJF",
+            "TlRfVFlQRVNfTk9UX1NVUFBPUlRFRBAMEhsKF0RVUExJQ0FURV9SRVNPVVJD",
+            "RV9OQU1FEA0SJAogUkVDT01NRU5EQVRJT05fQUxSRUFEWV9ESVNNSVNTRUQQ",
+            "DkLOAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IYUmVj",
+            "b21tZW5kYXRpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dl",
+            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJy",
+            "b3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIe",
+            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -201,6 +204,27 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// The recommendation requested to apply has been invalidated.
         /// </summary>
         [pbr::OriginalName("RECOMMENDATION_INVALIDATED")] RecommendationInvalidated = 9,
+        /// <summary>
+        /// The number of operations in a single request exceeds the maximum allowed.
+        /// </summary>
+        [pbr::OriginalName("TOO_MANY_OPERATIONS")] TooManyOperations = 10,
+        /// <summary>
+        /// There are no operations in the request.
+        /// </summary>
+        [pbr::OriginalName("NO_OPERATIONS")] NoOperations = 11,
+        /// <summary>
+        /// Operations with multiple recommendation types are not supported when
+        /// partial failure mode is not enabled.
+        /// </summary>
+        [pbr::OriginalName("DIFFERENT_TYPES_NOT_SUPPORTED")] DifferentTypesNotSupported = 12,
+        /// <summary>
+        /// Request contains multiple operations with the same resource_name.
+        /// </summary>
+        [pbr::OriginalName("DUPLICATE_RESOURCE_NAME")] DuplicateResourceName = 13,
+        /// <summary>
+        /// The recommendation requested to dismiss has already been dismissed.
+        /// </summary>
+        [pbr::OriginalName("RECOMMENDATION_ALREADY_DISMISSED")] RecommendationAlreadyDismissed = 14,
       }
 
     }

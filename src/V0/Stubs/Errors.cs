@@ -36,271 +36,319 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "ZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9hZF9ncm91cF9iaWRfbW9kaWZpZXJf",
             "ZXJyb3IucHJvdG8aPWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9h",
             "ZF9ncm91cF9jcml0ZXJpb25fZXJyb3IucHJvdG8aM2dvb2dsZS9hZHMvZ29v",
-            "Z2xlYWRzL3YwL2Vycm9ycy9hZF9ncm91cF9lcnJvci5wcm90bxo1Z29vZ2xl",
-            "L2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2FkX3NoYXJpbmdfZXJyb3IucHJv",
-            "dG8aLmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9hZHhfZXJyb3Iu",
-            "cHJvdG8aOWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9hdXRoZW50",
-            "aWNhdGlvbl9lcnJvci5wcm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
-            "ZXJyb3JzL2F1dGhvcml6YXRpb25fZXJyb3IucHJvdG8aMmdvb2dsZS9hZHMv",
-            "Z29vZ2xlYWRzL3YwL2Vycm9ycy9iaWRkaW5nX2Vycm9yLnByb3RvGjtnb29n",
-            "bGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYmlkZGluZ19zdHJhdGVneV9l",
-            "cnJvci5wcm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2Jp",
-            "bGxpbmdfc2V0dXBfZXJyb3IucHJvdG8aOmdvb2dsZS9hZHMvZ29vZ2xlYWRz",
-            "L3YwL2Vycm9ycy9jYW1wYWlnbl9idWRnZXRfZXJyb3IucHJvdG8aPWdvb2ds",
-            "ZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9jYW1wYWlnbl9jcml0ZXJpb25f",
-            "ZXJyb3IucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9j",
-            "YW1wYWlnbl9lcnJvci5wcm90bxo5Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
-            "ZXJyb3JzL2NhbXBhaWduX2dyb3VwX2Vycm9yLnByb3RvGj5nb29nbGUvYWRz",
-            "L2dvb2dsZWFkcy92MC9lcnJvcnMvY2FtcGFpZ25fc2hhcmVkX3NldF9lcnJv",
-            "ci5wcm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2NoYW5n",
-            "ZV9zdGF0dXNfZXJyb3IucHJvdG8aOmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Yw",
-            "L2Vycm9ycy9jb2xsZWN0aW9uX3NpemVfZXJyb3IucHJvdG8aMmdvb2dsZS9h",
-            "ZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9jb250ZXh0X2Vycm9yLnByb3RvGjxn",
-            "b29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY29udmVyc2lvbl9hY3Rp",
-            "b25fZXJyb3IucHJvdG8aNGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9y",
-            "cy9jcml0ZXJpb25fZXJyb3IucHJvdG8aP2dvb2dsZS9hZHMvZ29vZ2xlYWRz",
-            "L3YwL2Vycm9ycy9jdXN0b21lcl9jbGllbnRfbGlua19lcnJvci5wcm90bxoz",
-            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2N1c3RvbWVyX2Vycm9y",
-            "LnByb3RvGkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY3VzdG9t",
-            "ZXJfbWFuYWdlcl9saW5rX2Vycm9yLnByb3RvGjNnb29nbGUvYWRzL2dvb2ds",
-            "ZWFkcy92MC9lcnJvcnMvZGF0YWJhc2VfZXJyb3IucHJvdG8aL2dvb2dsZS9h",
-            "ZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9kYXRlX2Vycm9yLnByb3RvGjVnb29n",
-            "bGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvZGF0ZV9yYW5nZV9lcnJvci5w",
-            "cm90bxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2Rpc3RpbmN0",
-            "X2Vycm9yLnByb3RvGi9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMv",
-            "ZW51bV9lcnJvci5wcm90bxpDZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJy",
-            "b3JzL2ZlZWRfYXR0cmlidXRlX3JlZmVyZW5jZV9lcnJvci5wcm90bxowZ29v",
-            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2ZpZWxkX2Vycm9yLnByb3Rv",
-            "GjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvZmllbGRfbWFza19l",
-            "cnJvci5wcm90bxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2Z1",
-            "bmN0aW9uX2Vycm9yLnByb3RvGjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9l",
-            "cnJvcnMvZnVuY3Rpb25fcGFyc2luZ19lcnJvci5wcm90bxpJZ29vZ2xlL2Fk",
-            "cy9nb29nbGVhZHMvdjAvZXJyb3JzL2dlb190YXJnZXRfY29uc3RhbnRfc3Vn",
-            "Z2VzdGlvbl9lcnJvci5wcm90bxoxZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
-            "ZXJyb3JzL2hlYWRlcl9lcnJvci5wcm90bxotZ29vZ2xlL2Fkcy9nb29nbGVh",
-            "ZHMvdjAvZXJyb3JzL2lkX2Vycm9yLnByb3RvGjBnb29nbGUvYWRzL2dvb2ds",
-            "ZWFkcy92MC9lcnJvcnMvaW1hZ2VfZXJyb3IucHJvdG8aM2dvb2dsZS9hZHMv",
-            "Z29vZ2xlYWRzL3YwL2Vycm9ycy9pbnRlcm5hbF9lcnJvci5wcm90bxo5Z29v",
-            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2xpc3Rfb3BlcmF0aW9uX2Vy",
-            "cm9yLnByb3RvGjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvbWVk",
-            "aWFfYnVuZGxlX2Vycm9yLnByb3RvGjVnb29nbGUvYWRzL2dvb2dsZWFkcy92",
-            "MC9lcnJvcnMvbWVkaWFfZmlsZV9lcnJvci5wcm90bxo1Z29vZ2xlL2Fkcy9n",
-            "b29nbGVhZHMvdjAvZXJyb3JzL211bHRpcGxpZXJfZXJyb3IucHJvdG8aMWdv",
-            "b2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9tdXRhdGVfZXJyb3IucHJv",
-            "dG8aQGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9uZXdfcmVzb3Vy",
-            "Y2VfY3JlYXRpb25fZXJyb3IucHJvdG8aNGdvb2dsZS9hZHMvZ29vZ2xlYWRz",
-            "L3YwL2Vycm9ycy9ub3RfZW1wdHlfZXJyb3IucHJvdG8aL2dvb2dsZS9hZHMv",
-            "Z29vZ2xlYWRzL3YwL2Vycm9ycy9udWxsX2Vycm9yLnByb3RvGkJnb29nbGUv",
-            "YWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvb3BlcmF0aW9uX2FjY2Vzc19kZW5p",
-            "ZWRfZXJyb3IucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9y",
-            "cy9vcGVyYXRvcl9lcnJvci5wcm90bxo5Z29vZ2xlL2Fkcy9nb29nbGVhZHMv",
-            "djAvZXJyb3JzL3BvbGljeV9maW5kaW5nX2Vycm9yLnByb3RvGjBnb29nbGUv",
-            "YWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcXVlcnlfZXJyb3IucHJvdG8aMGdv",
-            "b2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9xdW90YV9lcnJvci5wcm90",
-            "bxowZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL3JhbmdlX2Vycm9y",
-            "LnByb3RvGjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcmVjb21t",
-            "ZW5kYXRpb25fZXJyb3IucHJvdG8aNmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Yw",
-            "L2Vycm9ycy9yZWdpb25fY29kZV9lcnJvci5wcm90bxoyZ29vZ2xlL2Fkcy9n",
-            "b29nbGVhZHMvdjAvZXJyb3JzL3JlcXVlc3RfZXJyb3IucHJvdG8aQWdvb2ds",
-            "ZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9yZXNvdXJjZV9hY2Nlc3NfZGVu",
-            "aWVkX2Vycm9yLnByb3RvGkhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJv",
-            "cnMvcmVzb3VyY2VfY291bnRfbGltaXRfZXhjZWVkZWRfZXJyb3IucHJvdG8a",
-            "Mmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9zZXR0aW5nX2Vycm9y",
-            "LnByb3RvGjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvc2hhcmVk",
-            "X2NyaXRlcmlvbl9lcnJvci5wcm90bxo1Z29vZ2xlL2Fkcy9nb29nbGVhZHMv",
-            "djAvZXJyb3JzL3NoYXJlZF9zZXRfZXJyb3IucHJvdG8aOGdvb2dsZS9hZHMv",
-            "Z29vZ2xlYWRzL3YwL2Vycm9ycy9zdHJpbmdfZm9ybWF0X2Vycm9yLnByb3Rv",
-            "Gjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvc3RyaW5nX2xlbmd0",
-            "aF9lcnJvci5wcm90bxo0Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3Jz",
-            "L3VybF9maWVsZF9lcnJvci5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBw",
-            "ZXJzLnByb3RvIlIKEEdvb2dsZUFkc0ZhaWx1cmUSPgoGZXJyb3JzGAEgAygL",
-            "Mi4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkdvb2dsZUFkc0Vy",
-            "cm9yIpgCCg5Hb29nbGVBZHNFcnJvchI9CgplcnJvcl9jb2RlGAEgASgLMiku",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkVycm9yQ29kZRIPCgdt",
-            "ZXNzYWdlGAIgASgJEjYKB3RyaWdnZXIYAyABKAsyJS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5jb21tb24uVmFsdWUSPwoIbG9jYXRpb24YBCABKAsyLS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuRXJyb3JMb2NhdGlvbhI9",
-            "CgdkZXRhaWxzGAUgASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
-            "b3JzLkVycm9yRGV0YWlscyKeNQoJRXJyb3JDb2RlElYKDXJlcXVlc3RfZXJy",
-            "b3IYASABKA4yPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuUmVx",
-            "dWVzdEVycm9yRW51bS5SZXF1ZXN0RXJyb3JIABJvChZiaWRkaW5nX3N0cmF0",
-            "ZWd5X2Vycm9yGAIgASgOMk0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
-            "b3JzLkJpZGRpbmdTdHJhdGVneUVycm9yRW51bS5CaWRkaW5nU3RyYXRlZ3lF",
-            "cnJvckgAEloKD3VybF9maWVsZF9lcnJvchgDIAEoDjI/Lmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLmVycm9ycy5VcmxGaWVsZEVycm9yRW51bS5VcmxGaWVs",
-            "ZEVycm9ySAASaQoUbGlzdF9vcGVyYXRpb25fZXJyb3IYBCABKA4ySS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuTGlzdE9wZXJhdGlvbkVycm9y",
-            "RW51bS5MaXN0T3BlcmF0aW9uRXJyb3JIABJQCgtxdWVyeV9lcnJvchgFIAEo",
-            "DjI5Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5RdWVyeUVycm9y",
-            "RW51bS5RdWVyeUVycm9ySAASUwoMbXV0YXRlX2Vycm9yGAcgASgOMjsuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLk11dGF0ZUVycm9yRW51bS5N",
-            "dXRhdGVFcnJvckgAEl0KEGZpZWxkX21hc2tfZXJyb3IYCCABKA4yQS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuRmllbGRNYXNrRXJyb3JFbnVt",
-            "LkZpZWxkTWFza0Vycm9ySAASaAoTYXV0aG9yaXphdGlvbl9lcnJvchgJIAEo",
-            "DjJJLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5BdXRob3JpemF0",
-            "aW9uRXJyb3JFbnVtLkF1dGhvcml6YXRpb25FcnJvckgAElkKDmludGVybmFs",
-            "X2Vycm9yGAogASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
-            "LkludGVybmFsRXJyb3JFbnVtLkludGVybmFsRXJyb3JIABJQCgtxdW90YV9l",
-            "cnJvchgLIAEoDjI5Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5R",
-            "dW90YUVycm9yRW51bS5RdW90YUVycm9ySAASRwoIYWRfZXJyb3IYDCABKA4y",
-            "My5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuQWRFcnJvckVudW0u",
-            "QWRFcnJvckgAElcKDmFkX2dyb3VwX2Vycm9yGA0gASgOMj0uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjAuZXJyb3JzLkFkR3JvdXBFcnJvckVudW0uQWRHcm91",
-            "cEVycm9ySAASbAoVY2FtcGFpZ25fYnVkZ2V0X2Vycm9yGA4gASgOMksuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkNhbXBhaWduQnVkZ2V0RXJy",
-            "b3JFbnVtLkNhbXBhaWduQnVkZ2V0RXJyb3JIABJZCg5jYW1wYWlnbl9lcnJv",
-            "chgPIAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5DYW1w",
-            "YWlnbkVycm9yRW51bS5DYW1wYWlnbkVycm9ySAASawoUYXV0aGVudGljYXRp",
-            "b25fZXJyb3IYESABKA4ySy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJv",
-            "cnMuQXV0aGVudGljYXRpb25FcnJvckVudW0uQXV0aGVudGljYXRpb25FcnJv",
-            "ckgAEnMKGGFkX2dyb3VwX2NyaXRlcmlvbl9lcnJvchgSIAEoDjJPLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5BZEdyb3VwQ3JpdGVyaW9uRXJy",
-            "b3JFbnVtLkFkR3JvdXBDcml0ZXJpb25FcnJvckgAEmYKE2FkX2N1c3RvbWl6",
-            "ZXJfZXJyb3IYEyABKA4yRy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJv",
-            "cnMuQWRDdXN0b21pemVyRXJyb3JFbnVtLkFkQ3VzdG9taXplckVycm9ySAAS",
-            "XgoRYWRfZ3JvdXBfYWRfZXJyb3IYFSABKA4yQS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lcnJvcnMuQWRHcm91cEFkRXJyb3JFbnVtLkFkR3JvdXBBZEVy",
-            "cm9ySAASXQoQYWRfc2hhcmluZ19lcnJvchgYIAEoDjJBLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLmVycm9ycy5BZFNoYXJpbmdFcnJvckVudW0uQWRTaGFy",
-            "aW5nRXJyb3JIABJKCglhZHhfZXJyb3IYGSABKA4yNS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5lcnJvcnMuQWR4RXJyb3JFbnVtLkFkeEVycm9ySAASVgoN",
-            "YmlkZGluZ19lcnJvchgaIAEoDjI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmVycm9ycy5CaWRkaW5nRXJyb3JFbnVtLkJpZGRpbmdFcnJvckgAEnUKGGNh",
-            "bXBhaWduX2NyaXRlcmlvbl9lcnJvchgdIAEoDjJRLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYwLmVycm9ycy5DYW1wYWlnbkNyaXRlcmlvbkVycm9yRW51bS5D",
-            "YW1wYWlnbkNyaXRlcmlvbkVycm9ySAASbAoVY29sbGVjdGlvbl9zaXplX2Vy",
-            "cm9yGB8gASgOMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkNv",
-            "bGxlY3Rpb25TaXplRXJyb3JFbnVtLkNvbGxlY3Rpb25TaXplRXJyb3JIABJc",
-            "Cg9jcml0ZXJpb25fZXJyb3IYICABKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MC5lcnJvcnMuQ3JpdGVyaW9uRXJyb3JFbnVtLkNyaXRlcmlvbkVycm9y",
-            "SAASWQoOY3VzdG9tZXJfZXJyb3IYWiABKA4yPy5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lcnJvcnMuQ3VzdG9tZXJFcnJvckVudW0uQ3VzdG9tZXJFcnJv",
-            "ckgAEk0KCmRhdGVfZXJyb3IYISABKA4yNy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MC5lcnJvcnMuRGF0ZUVycm9yRW51bS5EYXRlRXJyb3JIABJdChBkYXRl",
-            "X3JhbmdlX2Vycm9yGCIgASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "ZXJyb3JzLkRhdGVSYW5nZUVycm9yRW51bS5EYXRlUmFuZ2VFcnJvckgAElkK",
-            "DmRpc3RpbmN0X2Vycm9yGCMgASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAuZXJyb3JzLkRpc3RpbmN0RXJyb3JFbnVtLkRpc3RpbmN0RXJyb3JIABKF",
-            "AQoeZmVlZF9hdHRyaWJ1dGVfcmVmZXJlbmNlX2Vycm9yGCQgASgOMlsuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkZlZWRBdHRyaWJ1dGVSZWZl",
-            "cmVuY2VFcnJvckVudW0uRmVlZEF0dHJpYnV0ZVJlZmVyZW5jZUVycm9ySAAS",
-            "WQoOZnVuY3Rpb25fZXJyb3IYJSABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MC5lcnJvcnMuRnVuY3Rpb25FcnJvckVudW0uRnVuY3Rpb25FcnJvckgA",
-            "Em8KFmZ1bmN0aW9uX3BhcnNpbmdfZXJyb3IYJiABKA4yTS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MC5lcnJvcnMuRnVuY3Rpb25QYXJzaW5nRXJyb3JFbnVt",
-            "LkZ1bmN0aW9uUGFyc2luZ0Vycm9ySAASRwoIaWRfZXJyb3IYJyABKA4yMy5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuSWRFcnJvckVudW0uSWRF",
-            "cnJvckgAElAKC2ltYWdlX2Vycm9yGCggASgOMjkuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuZXJyb3JzLkltYWdlRXJyb3JFbnVtLkltYWdlRXJyb3JIABJj",
-            "ChJtZWRpYV9idW5kbGVfZXJyb3IYKiABKA4yRS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lcnJvcnMuTWVkaWFCdW5kbGVFcnJvckVudW0uTWVkaWFCdW5k",
-            "bGVFcnJvckgAEl0KEG1lZGlhX2ZpbGVfZXJyb3IYViABKA4yQS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuTWVkaWFGaWxlRXJyb3JFbnVtLk1l",
-            "ZGlhRmlsZUVycm9ySAASXwoQbXVsdGlwbGllcl9lcnJvchgsIAEoDjJDLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5NdWx0aXBsaWVyRXJyb3JF",
-            "bnVtLk11bHRpcGxpZXJFcnJvckgAEnwKG25ld19yZXNvdXJjZV9jcmVhdGlv",
-            "bl9lcnJvchgtIAEoDjJVLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
-            "cy5OZXdSZXNvdXJjZUNyZWF0aW9uRXJyb3JFbnVtLk5ld1Jlc291cmNlQ3Jl",
-            "YXRpb25FcnJvckgAEloKD25vdF9lbXB0eV9lcnJvchguIAEoDjI/Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5Ob3RFbXB0eUVycm9yRW51bS5O",
-            "b3RFbXB0eUVycm9ySAASTQoKbnVsbF9lcnJvchgvIAEoDjI3Lmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5OdWxsRXJyb3JFbnVtLk51bGxFcnJv",
-            "ckgAElkKDm9wZXJhdG9yX2Vycm9yGDAgASgOMj8uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuZXJyb3JzLk9wZXJhdG9yRXJyb3JFbnVtLk9wZXJhdG9yRXJy",
-            "b3JIABJQCgtyYW5nZV9lcnJvchgxIAEoDjI5Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVycm9ycy5SYW5nZUVycm9yRW51bS5SYW5nZUVycm9ySAASawoU",
-            "cmVjb21tZW5kYXRpb25fZXJyb3IYOiABKA4ySy5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lcnJvcnMuUmVjb21tZW5kYXRpb25FcnJvckVudW0uUmVjb21t",
-            "ZW5kYXRpb25FcnJvckgAEmAKEXJlZ2lvbl9jb2RlX2Vycm9yGDMgASgOMkMu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLlJlZ2lvbkNvZGVFcnJv",
-            "ckVudW0uUmVnaW9uQ29kZUVycm9ySAASVgoNc2V0dGluZ19lcnJvchg0IAEo",
-            "DjI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5TZXR0aW5nRXJy",
-            "b3JFbnVtLlNldHRpbmdFcnJvckgAEmYKE3N0cmluZ19mb3JtYXRfZXJyb3IY",
-            "NSABKA4yRy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuU3RyaW5n",
-            "Rm9ybWF0RXJyb3JFbnVtLlN0cmluZ0Zvcm1hdEVycm9ySAASZgoTc3RyaW5n",
-            "X2xlbmd0aF9lcnJvchg2IAEoDjJHLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmVycm9ycy5TdHJpbmdMZW5ndGhFcnJvckVudW0uU3RyaW5nTGVuZ3RoRXJy",
-            "b3JIABKCAQodb3BlcmF0aW9uX2FjY2Vzc19kZW5pZWRfZXJyb3IYNyABKA4y",
-            "WS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuT3BlcmF0aW9uQWNj",
-            "ZXNzRGVuaWVkRXJyb3JFbnVtLk9wZXJhdGlvbkFjY2Vzc0RlbmllZEVycm9y",
-            "SAASfwoccmVzb3VyY2VfYWNjZXNzX2RlbmllZF9lcnJvchg4IAEoDjJXLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5SZXNvdXJjZUFjY2Vzc0Rl",
-            "bmllZEVycm9yRW51bS5SZXNvdXJjZUFjY2Vzc0RlbmllZEVycm9ySAASkgEK",
-            "I3Jlc291cmNlX2NvdW50X2xpbWl0X2V4Y2VlZGVkX2Vycm9yGDkgASgOMmMu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLlJlc291cmNlQ291bnRM",
-            "aW1pdEV4Y2VlZGVkRXJyb3JFbnVtLlJlc291cmNlQ291bnRMaW1pdEV4Y2Vl",
-            "ZGVkRXJyb3JIABJ6ChthZF9ncm91cF9iaWRfbW9kaWZpZXJfZXJyb3IYOyAB",
-            "KA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuQWRHcm91cEJp",
-            "ZE1vZGlmaWVyRXJyb3JFbnVtLkFkR3JvdXBCaWRNb2RpZmllckVycm9ySAAS",
-            "VgoNY29udGV4dF9lcnJvchg8IAEoDjI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLmVycm9ycy5Db250ZXh0RXJyb3JFbnVtLkNvbnRleHRFcnJvckgAElAK",
-            "C2ZpZWxkX2Vycm9yGD0gASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "ZXJyb3JzLkZpZWxkRXJyb3JFbnVtLkZpZWxkRXJyb3JIABJdChBzaGFyZWRf",
-            "c2V0X2Vycm9yGD4gASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
-            "b3JzLlNoYXJlZFNldEVycm9yRW51bS5TaGFyZWRTZXRFcnJvckgAEm8KFnNo",
-            "YXJlZF9jcml0ZXJpb25fZXJyb3IYPyABKA4yTS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lcnJvcnMuU2hhcmVkQ3JpdGVyaW9uRXJyb3JFbnVtLlNoYXJl",
-            "ZENyaXRlcmlvbkVycm9ySAASdgoZY2FtcGFpZ25fc2hhcmVkX3NldF9lcnJv",
-            "chhAIAEoDjJRLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5DYW1w",
-            "YWlnblNoYXJlZFNldEVycm9yRW51bS5DYW1wYWlnblNoYXJlZFNldEVycm9y",
-            "SAAScgoXY29udmVyc2lvbl9hY3Rpb25fZXJyb3IYQSABKA4yTy5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuQ29udmVyc2lvbkFjdGlvbkVycm9y",
-            "RW51bS5Db252ZXJzaW9uQWN0aW9uRXJyb3JIABJTCgxoZWFkZXJfZXJyb3IY",
-            "QiABKA4yOy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuSGVhZGVy",
-            "RXJyb3JFbnVtLkhlYWRlckVycm9ySAASWQoOZGF0YWJhc2VfZXJyb3IYQyAB",
-            "KA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuRGF0YWJhc2VF",
-            "cnJvckVudW0uRGF0YWJhc2VFcnJvckgAEmkKFHBvbGljeV9maW5kaW5nX2Vy",
-            "cm9yGEQgASgOMkkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLlBv",
-            "bGljeUZpbmRpbmdFcnJvckVudW0uUG9saWN5RmluZGluZ0Vycm9ySAASaQoU",
-            "Y2FtcGFpZ25fZ3JvdXBfZXJyb3IYRSABKA4ySS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lcnJvcnMuQ2FtcGFpZ25Hcm91cEVycm9yRW51bS5DYW1wYWln",
-            "bkdyb3VwRXJyb3JIABJNCgplbnVtX2Vycm9yGEYgASgOMjcuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjAuZXJyb3JzLkVudW1FcnJvckVudW0uRW51bUVycm9y",
-            "SAASggEKHWFjY291bnRfYnVkZ2V0X3Byb3Bvc2FsX2Vycm9yGE0gASgOMlku",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkFjY291bnRCdWRnZXRQ",
-            "cm9wb3NhbEVycm9yRW51bS5BY2NvdW50QnVkZ2V0UHJvcG9zYWxFcnJvckgA",
-            "EmYKE2NoYW5nZV9zdGF0dXNfZXJyb3IYTyABKA4yRy5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5lcnJvcnMuQ2hhbmdlU3RhdHVzRXJyb3JFbnVtLkNoYW5n",
-            "ZVN0YXR1c0Vycm9ySAASlQEKJGdlb190YXJnZXRfY29uc3RhbnRfc3VnZ2Vz",
-            "dGlvbl9lcnJvchhRIAEoDjJlLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVy",
-            "cm9ycy5HZW9UYXJnZXRDb25zdGFudFN1Z2dlc3Rpb25FcnJvckVudW0uR2Vv",
-            "VGFyZ2V0Q29uc3RhbnRTdWdnZXN0aW9uRXJyb3JIABJmChNiaWxsaW5nX3Nl",
-            "dHVwX2Vycm9yGFcgASgOMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
-            "b3JzLkJpbGxpbmdTZXR1cEVycm9yRW51bS5CaWxsaW5nU2V0dXBFcnJvckgA",
-            "EnkKGmN1c3RvbWVyX2NsaWVudF9saW5rX2Vycm9yGFggASgOMlMuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkN1c3RvbWVyQ2xpZW50TGlua0Vy",
-            "cm9yRW51bS5DdXN0b21lckNsaWVudExpbmtFcnJvckgAEnwKG2N1c3RvbWVy",
-            "X21hbmFnZXJfbGlua19lcnJvchhbIAEoDjJVLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVycm9ycy5DdXN0b21lck1hbmFnZXJMaW5rRXJyb3JFbnVtLkN1",
-            "c3RvbWVyTWFuYWdlckxpbmtFcnJvckgAQgwKCmVycm9yX2NvZGUi9gEKDUVy",
-            "cm9yTG9jYXRpb24SNAoPb3BlcmF0aW9uX2luZGV4GAEgASgLMhsuZ29vZ2xl",
-            "LnByb3RvYnVmLkludDY0VmFsdWUSWwoTZmllbGRfcGF0aF9lbGVtZW50cxgC",
-            "IAMoCzI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5FcnJvckxv",
-            "Y2F0aW9uLkZpZWxkUGF0aEVsZW1lbnQaUgoQRmllbGRQYXRoRWxlbWVudBIS",
-            "CgpmaWVsZF9uYW1lGAEgASgJEioKBWluZGV4GAIgASgLMhsuZ29vZ2xlLnBy",
-            "b3RvYnVmLkludDY0VmFsdWUi3gEKDEVycm9yRGV0YWlscxIeChZ1bnB1Ymxp",
-            "c2hlZF9lcnJvcl9jb2RlGAEgASgJElgKGHBvbGljeV92aW9sYXRpb25fZGV0",
-            "YWlscxgCIAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5Q",
-            "b2xpY3lWaW9sYXRpb25EZXRhaWxzElQKFnBvbGljeV9maW5kaW5nX2RldGFp",
-            "bHMYAyABKAsyNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuUG9s",
-            "aWN5RmluZGluZ0RldGFpbHMiswEKFlBvbGljeVZpb2xhdGlvbkRldGFpbHMS",
-            "IwobZXh0ZXJuYWxfcG9saWN5X2Rlc2NyaXB0aW9uGAIgASgJEj8KA2tleRgE",
-            "IAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Qb2xpY3lW",
-            "aW9sYXRpb25LZXkSHAoUZXh0ZXJuYWxfcG9saWN5X25hbWUYBSABKAkSFQoN",
-            "aXNfZXhlbXB0aWJsZRgGIAEoCCJmChRQb2xpY3lGaW5kaW5nRGV0YWlscxJO",
-            "ChRwb2xpY3lfdG9waWNfZW50cmllcxgBIAMoCzIwLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYwLmNvbW1vbi5Qb2xpY3lUb3BpY0VudHJ5QsEBCiJjb20uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQgtFcnJvcnNQcm90b1ABWkRn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVy",
-            "cm9yc2IGcHJvdG8z"));
+            "Z2xlYWRzL3YwL2Vycm9ycy9hZF9ncm91cF9lcnJvci5wcm90bxo4Z29vZ2xl",
+            "L2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2FkX2dyb3VwX2ZlZWRfZXJyb3Iu",
+            "cHJvdG8aNWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9hZF9zaGFy",
+            "aW5nX2Vycm9yLnByb3RvGi5nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJv",
+            "cnMvYWR4X2Vycm9yLnByb3RvGjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9l",
+            "cnJvcnMvYXV0aGVudGljYXRpb25fZXJyb3IucHJvdG8aOGdvb2dsZS9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2Vycm9ycy9hdXRob3JpemF0aW9uX2Vycm9yLnByb3Rv",
+            "GjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYmlkZGluZ19lcnJv",
+            "ci5wcm90bxo7Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2JpZGRp",
+            "bmdfc3RyYXRlZ3lfZXJyb3IucHJvdG8aOGdvb2dsZS9hZHMvZ29vZ2xlYWRz",
+            "L3YwL2Vycm9ycy9iaWxsaW5nX3NldHVwX2Vycm9yLnByb3RvGjpnb29nbGUv",
+            "YWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY2FtcGFpZ25fYnVkZ2V0X2Vycm9y",
+            "LnByb3RvGj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY2FtcGFp",
+            "Z25fY3JpdGVyaW9uX2Vycm9yLnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFk",
+            "cy92MC9lcnJvcnMvY2FtcGFpZ25fZXJyb3IucHJvdG8aOGdvb2dsZS9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2Vycm9ycy9jYW1wYWlnbl9mZWVkX2Vycm9yLnByb3Rv",
+            "Gjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY2FtcGFpZ25fZ3Jv",
+            "dXBfZXJyb3IucHJvdG8aPmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9y",
+            "cy9jYW1wYWlnbl9zaGFyZWRfc2V0X2Vycm9yLnByb3RvGjhnb29nbGUvYWRz",
+            "L2dvb2dsZWFkcy92MC9lcnJvcnMvY2hhbmdlX3N0YXR1c19lcnJvci5wcm90",
+            "bxo6Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2NvbGxlY3Rpb25f",
+            "c2l6ZV9lcnJvci5wcm90bxoyZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJy",
+            "b3JzL2NvbnRleHRfZXJyb3IucHJvdG8aPGdvb2dsZS9hZHMvZ29vZ2xlYWRz",
+            "L3YwL2Vycm9ycy9jb252ZXJzaW9uX2FjdGlvbl9lcnJvci5wcm90bxo0Z29v",
+            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2NyaXRlcmlvbl9lcnJvci5w",
+            "cm90bxo/Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2N1c3RvbWVy",
+            "X2NsaWVudF9saW5rX2Vycm9yLnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFk",
+            "cy92MC9lcnJvcnMvY3VzdG9tZXJfZXJyb3IucHJvdG8aOGdvb2dsZS9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2Vycm9ycy9jdXN0b21lcl9mZWVkX2Vycm9yLnByb3Rv",
+            "GkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY3VzdG9tZXJfbWFu",
+            "YWdlcl9saW5rX2Vycm9yLnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFkcy92",
+            "MC9lcnJvcnMvZGF0YWJhc2VfZXJyb3IucHJvdG8aL2dvb2dsZS9hZHMvZ29v",
+            "Z2xlYWRzL3YwL2Vycm9ycy9kYXRlX2Vycm9yLnByb3RvGjVnb29nbGUvYWRz",
+            "L2dvb2dsZWFkcy92MC9lcnJvcnMvZGF0ZV9yYW5nZV9lcnJvci5wcm90bxoz",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2Rpc3RpbmN0X2Vycm9y",
+            "LnByb3RvGi9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvZW51bV9l",
+            "cnJvci5wcm90bxpDZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2Zl",
+            "ZWRfYXR0cmlidXRlX3JlZmVyZW5jZV9lcnJvci5wcm90bxovZ29vZ2xlL2Fk",
+            "cy9nb29nbGVhZHMvdjAvZXJyb3JzL2ZlZWRfZXJyb3IucHJvdG8aNGdvb2ds",
+            "ZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9mZWVkX2l0ZW1fZXJyb3IucHJv",
+            "dG8aN2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9mZWVkX21hcHBp",
+            "bmdfZXJyb3IucHJvdG8aMGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9y",
+            "cy9maWVsZF9lcnJvci5wcm90bxo1Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
+            "ZXJyb3JzL2ZpZWxkX21hc2tfZXJyb3IucHJvdG8aM2dvb2dsZS9hZHMvZ29v",
+            "Z2xlYWRzL3YwL2Vycm9ycy9mdW5jdGlvbl9lcnJvci5wcm90bxo7Z29vZ2xl",
+            "L2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2Z1bmN0aW9uX3BhcnNpbmdfZXJy",
+            "b3IucHJvdG8aSWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9nZW9f",
+            "dGFyZ2V0X2NvbnN0YW50X3N1Z2dlc3Rpb25fZXJyb3IucHJvdG8aMWdvb2ds",
+            "ZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9oZWFkZXJfZXJyb3IucHJvdG8a",
+            "LWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9pZF9lcnJvci5wcm90",
+            "bxowZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2ltYWdlX2Vycm9y",
+            "LnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvaW50ZXJu",
+            "YWxfZXJyb3IucHJvdG8aQGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9y",
+            "cy9rZXl3b3JkX3BsYW5fYWRfZ3JvdXBfZXJyb3IucHJvdG8aQGdvb2dsZS9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9rZXl3b3JkX3BsYW5fY2FtcGFpZ25f",
+            "ZXJyb3IucHJvdG8aN2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9r",
+            "ZXl3b3JkX3BsYW5fZXJyb3IucHJvdG8aPGdvb2dsZS9hZHMvZ29vZ2xlYWRz",
+            "L3YwL2Vycm9ycy9rZXl3b3JkX3BsYW5faWRlYV9lcnJvci5wcm90bxo/Z29v",
+            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL2tleXdvcmRfcGxhbl9rZXl3",
+            "b3JkX2Vycm9yLnByb3RvGkhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJv",
+            "cnMva2V5d29yZF9wbGFuX25lZ2F0aXZlX2tleXdvcmRfZXJyb3IucHJvdG8a",
+            "OWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9saXN0X29wZXJhdGlv",
+            "bl9lcnJvci5wcm90bxo3Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3Jz",
+            "L21lZGlhX2J1bmRsZV9lcnJvci5wcm90bxo1Z29vZ2xlL2Fkcy9nb29nbGVh",
+            "ZHMvdjAvZXJyb3JzL21lZGlhX2ZpbGVfZXJyb3IucHJvdG8aNWdvb2dsZS9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9tdWx0aXBsaWVyX2Vycm9yLnByb3Rv",
+            "GjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvbXV0YXRlX2Vycm9y",
+            "LnByb3RvGkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvbmV3X3Jl",
+            "c291cmNlX2NyZWF0aW9uX2Vycm9yLnByb3RvGjRnb29nbGUvYWRzL2dvb2ds",
+            "ZWFkcy92MC9lcnJvcnMvbm90X2VtcHR5X2Vycm9yLnByb3RvGi9nb29nbGUv",
+            "YWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvbnVsbF9lcnJvci5wcm90bxpCZ29v",
+            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL29wZXJhdGlvbl9hY2Nlc3Nf",
+            "ZGVuaWVkX2Vycm9yLnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9l",
+            "cnJvcnMvb3BlcmF0b3JfZXJyb3IucHJvdG8aOWdvb2dsZS9hZHMvZ29vZ2xl",
+            "YWRzL3YwL2Vycm9ycy9wb2xpY3lfZmluZGluZ19lcnJvci5wcm90bxowZ29v",
+            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL3F1ZXJ5X2Vycm9yLnByb3Rv",
+            "GjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcXVvdGFfZXJyb3Iu",
+            "cHJvdG8aMGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9yYW5nZV9l",
+            "cnJvci5wcm90bxo5Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL3Jl",
+            "Y29tbWVuZGF0aW9uX2Vycm9yLnByb3RvGjZnb29nbGUvYWRzL2dvb2dsZWFk",
+            "cy92MC9lcnJvcnMvcmVnaW9uX2NvZGVfZXJyb3IucHJvdG8aMmdvb2dsZS9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycy9yZXF1ZXN0X2Vycm9yLnByb3RvGkFn",
+            "b29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcmVzb3VyY2VfYWNjZXNz",
+            "X2RlbmllZF9lcnJvci5wcm90bxpIZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAv",
+            "ZXJyb3JzL3Jlc291cmNlX2NvdW50X2xpbWl0X2V4Y2VlZGVkX2Vycm9yLnBy",
+            "b3RvGjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvc2V0dGluZ19l",
+            "cnJvci5wcm90bxo7Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL3No",
+            "YXJlZF9jcml0ZXJpb25fZXJyb3IucHJvdG8aNWdvb2dsZS9hZHMvZ29vZ2xl",
+            "YWRzL3YwL2Vycm9ycy9zaGFyZWRfc2V0X2Vycm9yLnByb3RvGjhnb29nbGUv",
+            "YWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvc3RyaW5nX2Zvcm1hdF9lcnJvci5w",
+            "cm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzL3N0cmluZ19s",
+            "ZW5ndGhfZXJyb3IucHJvdG8aNGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vy",
+            "cm9ycy91cmxfZmllbGRfZXJyb3IucHJvdG8aNGdvb2dsZS9hZHMvZ29vZ2xl",
+            "YWRzL3YwL2Vycm9ycy91c2VyX2xpc3RfZXJyb3IucHJvdG8aHmdvb2dsZS9w",
+            "cm90b2J1Zi93cmFwcGVycy5wcm90byJSChBHb29nbGVBZHNGYWlsdXJlEj4K",
+            "BmVycm9ycxgBIAMoCzIuLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
+            "cy5Hb29nbGVBZHNFcnJvciKYAgoOR29vZ2xlQWRzRXJyb3ISPQoKZXJyb3Jf",
+            "Y29kZRgBIAEoCzIpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5F",
+            "cnJvckNvZGUSDwoHbWVzc2FnZRgCIAEoCRI2Cgd0cmlnZ2VyGAMgASgLMiUu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlZhbHVlEj8KCGxvY2F0",
+            "aW9uGAQgASgLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkVy",
+            "cm9yTG9jYXRpb24SPQoHZGV0YWlscxgFIAEoCzIsLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmVycm9ycy5FcnJvckRldGFpbHMioUAKCUVycm9yQ29kZRJW",
+            "Cg1yZXF1ZXN0X2Vycm9yGAEgASgOMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuZXJyb3JzLlJlcXVlc3RFcnJvckVudW0uUmVxdWVzdEVycm9ySAASbwoW",
+            "YmlkZGluZ19zdHJhdGVneV9lcnJvchgCIAEoDjJNLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmVycm9ycy5CaWRkaW5nU3RyYXRlZ3lFcnJvckVudW0uQmlk",
+            "ZGluZ1N0cmF0ZWd5RXJyb3JIABJaCg91cmxfZmllbGRfZXJyb3IYAyABKA4y",
+            "Py5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuVXJsRmllbGRFcnJv",
+            "ckVudW0uVXJsRmllbGRFcnJvckgAEmkKFGxpc3Rfb3BlcmF0aW9uX2Vycm9y",
+            "GAQgASgOMkkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkxpc3RP",
+            "cGVyYXRpb25FcnJvckVudW0uTGlzdE9wZXJhdGlvbkVycm9ySAASUAoLcXVl",
+            "cnlfZXJyb3IYBSABKA4yOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJv",
+            "cnMuUXVlcnlFcnJvckVudW0uUXVlcnlFcnJvckgAElMKDG11dGF0ZV9lcnJv",
+            "chgHIAEoDjI7Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5NdXRh",
+            "dGVFcnJvckVudW0uTXV0YXRlRXJyb3JIABJdChBmaWVsZF9tYXNrX2Vycm9y",
+            "GAggASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkZpZWxk",
+            "TWFza0Vycm9yRW51bS5GaWVsZE1hc2tFcnJvckgAEmgKE2F1dGhvcml6YXRp",
+            "b25fZXJyb3IYCSABKA4ySS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJv",
+            "cnMuQXV0aG9yaXphdGlvbkVycm9yRW51bS5BdXRob3JpemF0aW9uRXJyb3JI",
+            "ABJZCg5pbnRlcm5hbF9lcnJvchgKIAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmVycm9ycy5JbnRlcm5hbEVycm9yRW51bS5JbnRlcm5hbEVycm9y",
+            "SAASUAoLcXVvdGFfZXJyb3IYCyABKA4yOS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5lcnJvcnMuUXVvdGFFcnJvckVudW0uUXVvdGFFcnJvckgAEkcKCGFk",
+            "X2Vycm9yGAwgASgOMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
+            "LkFkRXJyb3JFbnVtLkFkRXJyb3JIABJXCg5hZF9ncm91cF9lcnJvchgNIAEo",
+            "DjI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5BZEdyb3VwRXJy",
+            "b3JFbnVtLkFkR3JvdXBFcnJvckgAEmwKFWNhbXBhaWduX2J1ZGdldF9lcnJv",
+            "chgOIAEoDjJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5DYW1w",
+            "YWlnbkJ1ZGdldEVycm9yRW51bS5DYW1wYWlnbkJ1ZGdldEVycm9ySAASWQoO",
+            "Y2FtcGFpZ25fZXJyb3IYDyABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5lcnJvcnMuQ2FtcGFpZ25FcnJvckVudW0uQ2FtcGFpZ25FcnJvckgAEmsK",
+            "FGF1dGhlbnRpY2F0aW9uX2Vycm9yGBEgASgOMksuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAuZXJyb3JzLkF1dGhlbnRpY2F0aW9uRXJyb3JFbnVtLkF1dGhl",
+            "bnRpY2F0aW9uRXJyb3JIABJzChhhZF9ncm91cF9jcml0ZXJpb25fZXJyb3IY",
+            "EiABKA4yTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuQWRHcm91",
+            "cENyaXRlcmlvbkVycm9yRW51bS5BZEdyb3VwQ3JpdGVyaW9uRXJyb3JIABJm",
+            "ChNhZF9jdXN0b21pemVyX2Vycm9yGBMgASgOMkcuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAuZXJyb3JzLkFkQ3VzdG9taXplckVycm9yRW51bS5BZEN1c3Rv",
+            "bWl6ZXJFcnJvckgAEl4KEWFkX2dyb3VwX2FkX2Vycm9yGBUgASgOMkEuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkFkR3JvdXBBZEVycm9yRW51",
+            "bS5BZEdyb3VwQWRFcnJvckgAEl0KEGFkX3NoYXJpbmdfZXJyb3IYGCABKA4y",
+            "QS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuQWRTaGFyaW5nRXJy",
+            "b3JFbnVtLkFkU2hhcmluZ0Vycm9ySAASSgoJYWR4X2Vycm9yGBkgASgOMjUu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkFkeEVycm9yRW51bS5B",
+            "ZHhFcnJvckgAElYKDWJpZGRpbmdfZXJyb3IYGiABKA4yPS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5lcnJvcnMuQmlkZGluZ0Vycm9yRW51bS5CaWRkaW5n",
+            "RXJyb3JIABJ1ChhjYW1wYWlnbl9jcml0ZXJpb25fZXJyb3IYHSABKA4yUS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuQ2FtcGFpZ25Dcml0ZXJp",
+            "b25FcnJvckVudW0uQ2FtcGFpZ25Dcml0ZXJpb25FcnJvckgAEmwKFWNvbGxl",
+            "Y3Rpb25fc2l6ZV9lcnJvchgfIAEoDjJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmVycm9ycy5Db2xsZWN0aW9uU2l6ZUVycm9yRW51bS5Db2xsZWN0aW9u",
+            "U2l6ZUVycm9ySAASXAoPY3JpdGVyaW9uX2Vycm9yGCAgASgOMkEuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkNyaXRlcmlvbkVycm9yRW51bS5D",
+            "cml0ZXJpb25FcnJvckgAElkKDmN1c3RvbWVyX2Vycm9yGFogASgOMj8uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkN1c3RvbWVyRXJyb3JFbnVt",
+            "LkN1c3RvbWVyRXJyb3JIABJNCgpkYXRlX2Vycm9yGCEgASgOMjcuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkRhdGVFcnJvckVudW0uRGF0ZUVy",
+            "cm9ySAASXQoQZGF0ZV9yYW5nZV9lcnJvchgiIAEoDjJBLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmVycm9ycy5EYXRlUmFuZ2VFcnJvckVudW0uRGF0ZVJh",
+            "bmdlRXJyb3JIABJZCg5kaXN0aW5jdF9lcnJvchgjIAEoDjI/Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5EaXN0aW5jdEVycm9yRW51bS5EaXN0",
+            "aW5jdEVycm9ySAAShQEKHmZlZWRfYXR0cmlidXRlX3JlZmVyZW5jZV9lcnJv",
+            "chgkIAEoDjJbLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5GZWVk",
+            "QXR0cmlidXRlUmVmZXJlbmNlRXJyb3JFbnVtLkZlZWRBdHRyaWJ1dGVSZWZl",
+            "cmVuY2VFcnJvckgAElkKDmZ1bmN0aW9uX2Vycm9yGCUgASgOMj8uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkZ1bmN0aW9uRXJyb3JFbnVtLkZ1",
+            "bmN0aW9uRXJyb3JIABJvChZmdW5jdGlvbl9wYXJzaW5nX2Vycm9yGCYgASgO",
+            "Mk0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkZ1bmN0aW9uUGFy",
+            "c2luZ0Vycm9yRW51bS5GdW5jdGlvblBhcnNpbmdFcnJvckgAEkcKCGlkX2Vy",
+            "cm9yGCcgASgOMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLklk",
+            "RXJyb3JFbnVtLklkRXJyb3JIABJQCgtpbWFnZV9lcnJvchgoIAEoDjI5Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5JbWFnZUVycm9yRW51bS5J",
+            "bWFnZUVycm9ySAASYwoSbWVkaWFfYnVuZGxlX2Vycm9yGCogASgOMkUuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLk1lZGlhQnVuZGxlRXJyb3JF",
+            "bnVtLk1lZGlhQnVuZGxlRXJyb3JIABJdChBtZWRpYV9maWxlX2Vycm9yGFYg",
+            "ASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLk1lZGlhRmls",
+            "ZUVycm9yRW51bS5NZWRpYUZpbGVFcnJvckgAEl8KEG11bHRpcGxpZXJfZXJy",
+            "b3IYLCABKA4yQy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuTXVs",
+            "dGlwbGllckVycm9yRW51bS5NdWx0aXBsaWVyRXJyb3JIABJ8ChtuZXdfcmVz",
+            "b3VyY2VfY3JlYXRpb25fZXJyb3IYLSABKA4yVS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5lcnJvcnMuTmV3UmVzb3VyY2VDcmVhdGlvbkVycm9yRW51bS5O",
+            "ZXdSZXNvdXJjZUNyZWF0aW9uRXJyb3JIABJaCg9ub3RfZW1wdHlfZXJyb3IY",
+            "LiABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuTm90RW1w",
+            "dHlFcnJvckVudW0uTm90RW1wdHlFcnJvckgAEk0KCm51bGxfZXJyb3IYLyAB",
+            "KA4yNy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuTnVsbEVycm9y",
+            "RW51bS5OdWxsRXJyb3JIABJZCg5vcGVyYXRvcl9lcnJvchgwIAEoDjI/Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5PcGVyYXRvckVycm9yRW51",
+            "bS5PcGVyYXRvckVycm9ySAASUAoLcmFuZ2VfZXJyb3IYMSABKA4yOS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuUmFuZ2VFcnJvckVudW0uUmFu",
+            "Z2VFcnJvckgAEmsKFHJlY29tbWVuZGF0aW9uX2Vycm9yGDogASgOMksuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLlJlY29tbWVuZGF0aW9uRXJy",
+            "b3JFbnVtLlJlY29tbWVuZGF0aW9uRXJyb3JIABJgChFyZWdpb25fY29kZV9l",
+            "cnJvchgzIAEoDjJDLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5S",
+            "ZWdpb25Db2RlRXJyb3JFbnVtLlJlZ2lvbkNvZGVFcnJvckgAElYKDXNldHRp",
+            "bmdfZXJyb3IYNCABKA4yPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJv",
+            "cnMuU2V0dGluZ0Vycm9yRW51bS5TZXR0aW5nRXJyb3JIABJmChNzdHJpbmdf",
+            "Zm9ybWF0X2Vycm9yGDUgASgOMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZXJyb3JzLlN0cmluZ0Zvcm1hdEVycm9yRW51bS5TdHJpbmdGb3JtYXRFcnJv",
+            "ckgAEmYKE3N0cmluZ19sZW5ndGhfZXJyb3IYNiABKA4yRy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5lcnJvcnMuU3RyaW5nTGVuZ3RoRXJyb3JFbnVtLlN0",
+            "cmluZ0xlbmd0aEVycm9ySAASggEKHW9wZXJhdGlvbl9hY2Nlc3NfZGVuaWVk",
+            "X2Vycm9yGDcgASgOMlkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
+            "Lk9wZXJhdGlvbkFjY2Vzc0RlbmllZEVycm9yRW51bS5PcGVyYXRpb25BY2Nl",
+            "c3NEZW5pZWRFcnJvckgAEn8KHHJlc291cmNlX2FjY2Vzc19kZW5pZWRfZXJy",
+            "b3IYOCABKA4yVy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuUmVz",
+            "b3VyY2VBY2Nlc3NEZW5pZWRFcnJvckVudW0uUmVzb3VyY2VBY2Nlc3NEZW5p",
+            "ZWRFcnJvckgAEpIBCiNyZXNvdXJjZV9jb3VudF9saW1pdF9leGNlZWRlZF9l",
+            "cnJvchg5IAEoDjJjLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5S",
+            "ZXNvdXJjZUNvdW50TGltaXRFeGNlZWRlZEVycm9yRW51bS5SZXNvdXJjZUNv",
+            "dW50TGltaXRFeGNlZWRlZEVycm9ySAASegobYWRfZ3JvdXBfYmlkX21vZGlm",
+            "aWVyX2Vycm9yGDsgASgOMlMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
+            "b3JzLkFkR3JvdXBCaWRNb2RpZmllckVycm9yRW51bS5BZEdyb3VwQmlkTW9k",
+            "aWZpZXJFcnJvckgAElYKDWNvbnRleHRfZXJyb3IYPCABKA4yPS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuQ29udGV4dEVycm9yRW51bS5Db250",
+            "ZXh0RXJyb3JIABJQCgtmaWVsZF9lcnJvchg9IAEoDjI5Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmVycm9ycy5GaWVsZEVycm9yRW51bS5GaWVsZEVycm9y",
+            "SAASXQoQc2hhcmVkX3NldF9lcnJvchg+IAEoDjJBLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmVycm9ycy5TaGFyZWRTZXRFcnJvckVudW0uU2hhcmVkU2V0",
+            "RXJyb3JIABJvChZzaGFyZWRfY3JpdGVyaW9uX2Vycm9yGD8gASgOMk0uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLlNoYXJlZENyaXRlcmlvbkVy",
+            "cm9yRW51bS5TaGFyZWRDcml0ZXJpb25FcnJvckgAEnYKGWNhbXBhaWduX3No",
+            "YXJlZF9zZXRfZXJyb3IYQCABKA4yUS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5lcnJvcnMuQ2FtcGFpZ25TaGFyZWRTZXRFcnJvckVudW0uQ2FtcGFpZ25T",
+            "aGFyZWRTZXRFcnJvckgAEnIKF2NvbnZlcnNpb25fYWN0aW9uX2Vycm9yGEEg",
+            "ASgOMk8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkNvbnZlcnNp",
+            "b25BY3Rpb25FcnJvckVudW0uQ29udmVyc2lvbkFjdGlvbkVycm9ySAASUwoM",
+            "aGVhZGVyX2Vycm9yGEIgASgOMjsuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZXJyb3JzLkhlYWRlckVycm9yRW51bS5IZWFkZXJFcnJvckgAElkKDmRhdGFi",
+            "YXNlX2Vycm9yGEMgASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
+            "b3JzLkRhdGFiYXNlRXJyb3JFbnVtLkRhdGFiYXNlRXJyb3JIABJpChRwb2xp",
+            "Y3lfZmluZGluZ19lcnJvchhEIAEoDjJJLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmVycm9ycy5Qb2xpY3lGaW5kaW5nRXJyb3JFbnVtLlBvbGljeUZpbmRp",
+            "bmdFcnJvckgAEmkKFGNhbXBhaWduX2dyb3VwX2Vycm9yGEUgASgOMkkuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkNhbXBhaWduR3JvdXBFcnJv",
+            "ckVudW0uQ2FtcGFpZ25Hcm91cEVycm9ySAASTQoKZW51bV9lcnJvchhGIAEo",
+            "DjI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5FbnVtRXJyb3JF",
+            "bnVtLkVudW1FcnJvckgAEmMKEmtleXdvcmRfcGxhbl9lcnJvchhHIAEoDjJF",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5LZXl3b3JkUGxhbkVy",
+            "cm9yRW51bS5LZXl3b3JkUGxhbkVycm9ySAASfAoba2V5d29yZF9wbGFuX2Nh",
+            "bXBhaWduX2Vycm9yGEggASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZXJyb3JzLktleXdvcmRQbGFuQ2FtcGFpZ25FcnJvckVudW0uS2V5d29yZFBs",
+            "YW5DYW1wYWlnbkVycm9ySAASkgEKI2tleXdvcmRfcGxhbl9uZWdhdGl2ZV9r",
+            "ZXl3b3JkX2Vycm9yGEkgASgOMmMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZXJyb3JzLktleXdvcmRQbGFuTmVnYXRpdmVLZXl3b3JkRXJyb3JFbnVtLktl",
+            "eXdvcmRQbGFuTmVnYXRpdmVLZXl3b3JkRXJyb3JIABJ6ChtrZXl3b3JkX3Bs",
+            "YW5fYWRfZ3JvdXBfZXJyb3IYSiABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5lcnJvcnMuS2V5d29yZFBsYW5BZEdyb3VwRXJyb3JFbnVtLktleXdv",
+            "cmRQbGFuQWRHcm91cEVycm9ySAASeQoaa2V5d29yZF9wbGFuX2tleXdvcmRf",
+            "ZXJyb3IYSyABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMu",
+            "S2V5d29yZFBsYW5LZXl3b3JkRXJyb3JFbnVtLktleXdvcmRQbGFuS2V5d29y",
+            "ZEVycm9ySAAScAoXa2V5d29yZF9wbGFuX2lkZWFfZXJyb3IYTCABKA4yTS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuS2V5d29yZFBsYW5JZGVh",
+            "RXJyb3JFbnVtLktleXdvcmRQbGFuSWRlYUVycm9ySAASggEKHWFjY291bnRf",
+            "YnVkZ2V0X3Byb3Bvc2FsX2Vycm9yGE0gASgOMlkuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAuZXJyb3JzLkFjY291bnRCdWRnZXRQcm9wb3NhbEVycm9yRW51",
+            "bS5BY2NvdW50QnVkZ2V0UHJvcG9zYWxFcnJvckgAEloKD3VzZXJfbGlzdF9l",
+            "cnJvchhOIAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5V",
+            "c2VyTGlzdEVycm9yRW51bS5Vc2VyTGlzdEVycm9ySAASZgoTY2hhbmdlX3N0",
+            "YXR1c19lcnJvchhPIAEoDjJHLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVy",
+            "cm9ycy5DaGFuZ2VTdGF0dXNFcnJvckVudW0uQ2hhbmdlU3RhdHVzRXJyb3JI",
+            "ABJNCgpmZWVkX2Vycm9yGFAgASgOMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuZXJyb3JzLkZlZWRFcnJvckVudW0uRmVlZEVycm9ySAASlQEKJGdlb190",
+            "YXJnZXRfY29uc3RhbnRfc3VnZ2VzdGlvbl9lcnJvchhRIAEoDjJlLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5HZW9UYXJnZXRDb25zdGFudFN1",
+            "Z2dlc3Rpb25FcnJvckVudW0uR2VvVGFyZ2V0Q29uc3RhbnRTdWdnZXN0aW9u",
+            "RXJyb3JIABJaCg9mZWVkX2l0ZW1fZXJyb3IYUyABKA4yPy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5lcnJvcnMuRmVlZEl0ZW1FcnJvckVudW0uRmVlZEl0",
+            "ZW1FcnJvckgAEmYKE2JpbGxpbmdfc2V0dXBfZXJyb3IYVyABKA4yRy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMuQmlsbGluZ1NldHVwRXJyb3JF",
+            "bnVtLkJpbGxpbmdTZXR1cEVycm9ySAASeQoaY3VzdG9tZXJfY2xpZW50X2xp",
+            "bmtfZXJyb3IYWCABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJv",
+            "cnMuQ3VzdG9tZXJDbGllbnRMaW5rRXJyb3JFbnVtLkN1c3RvbWVyQ2xpZW50",
+            "TGlua0Vycm9ySAASfAobY3VzdG9tZXJfbWFuYWdlcl9saW5rX2Vycm9yGFsg",
+            "ASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkN1c3RvbWVy",
+            "TWFuYWdlckxpbmtFcnJvckVudW0uQ3VzdG9tZXJNYW5hZ2VyTGlua0Vycm9y",
+            "SAASYwoSZmVlZF9tYXBwaW5nX2Vycm9yGFwgASgOMkUuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjAuZXJyb3JzLkZlZWRNYXBwaW5nRXJyb3JFbnVtLkZlZWRN",
+            "YXBwaW5nRXJyb3JIABJmChNjdXN0b21lcl9mZWVkX2Vycm9yGF0gASgOMkcu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLkN1c3RvbWVyRmVlZEVy",
+            "cm9yRW51bS5DdXN0b21lckZlZWRFcnJvckgAEmQKE2FkX2dyb3VwX2ZlZWRf",
+            "ZXJyb3IYXiABKA4yRS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMu",
+            "QWRHcm91cEZlZWRFcnJvckVudW0uQWRHcm91cEZlZWRFcnJvckgAEmYKE2Nh",
+            "bXBhaWduX2ZlZWRfZXJyb3IYYCABKA4yRy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5lcnJvcnMuQ2FtcGFpZ25GZWVkRXJyb3JFbnVtLkNhbXBhaWduRmVl",
+            "ZEVycm9ySABCDAoKZXJyb3JfY29kZSL2AQoNRXJyb3JMb2NhdGlvbhI0Cg9v",
+            "cGVyYXRpb25faW5kZXgYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRW",
+            "YWx1ZRJbChNmaWVsZF9wYXRoX2VsZW1lbnRzGAIgAygLMj4uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuZXJyb3JzLkVycm9yTG9jYXRpb24uRmllbGRQYXRo",
+            "RWxlbWVudBpSChBGaWVsZFBhdGhFbGVtZW50EhIKCmZpZWxkX25hbWUYASAB",
+            "KAkSKgoFaW5kZXgYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
+            "ZSLeAQoMRXJyb3JEZXRhaWxzEh4KFnVucHVibGlzaGVkX2Vycm9yX2NvZGUY",
+            "ASABKAkSWAoYcG9saWN5X3Zpb2xhdGlvbl9kZXRhaWxzGAIgASgLMjYuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzLlBvbGljeVZpb2xhdGlvbkRl",
+            "dGFpbHMSVAoWcG9saWN5X2ZpbmRpbmdfZGV0YWlscxgDIAEoCzI0Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycy5Qb2xpY3lGaW5kaW5nRGV0YWls",
+            "cyKzAQoWUG9saWN5VmlvbGF0aW9uRGV0YWlscxIjChtleHRlcm5hbF9wb2xp",
+            "Y3lfZGVzY3JpcHRpb24YAiABKAkSPwoDa2V5GAQgASgLMjIuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuY29tbW9uLlBvbGljeVZpb2xhdGlvbktleRIcChRl",
+            "eHRlcm5hbF9wb2xpY3lfbmFtZRgFIAEoCRIVCg1pc19leGVtcHRpYmxlGAYg",
+            "ASgIImYKFFBvbGljeUZpbmRpbmdEZXRhaWxzEk4KFHBvbGljeV90b3BpY19l",
+            "bnRyaWVzGAEgAygLMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9u",
+            "LlBvbGljeVRvcGljRW50cnlCwQEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5lcnJvcnNCC0Vycm9yc1Byb3RvUAFaRGdvb2dsZS5nb2xhbmcub3Jn",
+            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7",
+            "ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3Jz",
+            "ygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.ValueReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AccountBudgetProposalErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdCustomizerErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdGroupAdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdGroupBidModifierErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdGroupCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdGroupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdSharingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdxErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AuthenticationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AuthorizationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.BiddingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.BiddingStrategyErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.BillingSetupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignBudgetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignGroupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignSharedSetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ChangeStatusErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CollectionSizeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ContextErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ConversionActionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CustomerClientLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CustomerErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CustomerManagerLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.DatabaseErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.DateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.DateRangeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.DistinctErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.EnumErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FeedAttributeReferenceErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FieldErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FieldMaskErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FunctionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FunctionParsingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.GeoTargetConstantSuggestionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.HeaderErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.IdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ImageErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.InternalErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ListOperationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.MediaBundleErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.MediaFileErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.MultiplierErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.MutateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.NewResourceCreationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.NotEmptyErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.NullErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.OperationAccessDeniedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.OperatorErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.PolicyFindingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.QueryErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.QuotaErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.RangeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.RecommendationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.RegionCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.RequestErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ResourceAccessDeniedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ResourceCountLimitExceededErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.SettingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.SharedCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.SharedSetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.StringFormatErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.StringLengthErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.UrlFieldErrorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.ValueReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AccountBudgetProposalErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdCustomizerErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdGroupAdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdGroupBidModifierErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdGroupCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdGroupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdGroupFeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdSharingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AdxErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AuthenticationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.AuthorizationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.BiddingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.BiddingStrategyErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.BillingSetupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignBudgetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignFeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignGroupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CampaignSharedSetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ChangeStatusErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CollectionSizeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ContextErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ConversionActionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CustomerClientLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CustomerErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CustomerFeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.CustomerManagerLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.DatabaseErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.DateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.DateRangeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.DistinctErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.EnumErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FeedAttributeReferenceErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FeedItemErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FeedMappingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FieldErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FieldMaskErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FunctionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.FunctionParsingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.GeoTargetConstantSuggestionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.HeaderErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.IdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ImageErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.InternalErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanAdGroupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanCampaignErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanIdeaErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanKeywordErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanNegativeKeywordErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ListOperationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.MediaBundleErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.MediaFileErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.MultiplierErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.MutateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.NewResourceCreationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.NotEmptyErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.NullErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.OperationAccessDeniedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.OperatorErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.PolicyFindingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.QueryErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.QuotaErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.RangeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.RecommendationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.RegionCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.RequestErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ResourceAccessDeniedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.ResourceCountLimitExceededErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.SettingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.SharedCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.SharedSetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.StringFormatErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.StringLengthErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.UrlFieldErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Errors.UserListErrorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.GoogleAdsFailure), global::Google.Ads.GoogleAds.V0.Errors.GoogleAdsFailure.Parser, new[]{ "Errors" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.GoogleAdsError), global::Google.Ads.GoogleAds.V0.Errors.GoogleAdsError.Parser, new[]{ "ErrorCode", "Message", "Trigger", "Location", "Details" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.ErrorCode), global::Google.Ads.GoogleAds.V0.Errors.ErrorCode.Parser, new[]{ "RequestError", "BiddingStrategyError", "UrlFieldError", "ListOperationError", "QueryError", "MutateError", "FieldMaskError", "AuthorizationError", "InternalError", "QuotaError", "AdError", "AdGroupError", "CampaignBudgetError", "CampaignError", "AuthenticationError", "AdGroupCriterionError", "AdCustomizerError", "AdGroupAdError", "AdSharingError", "AdxError", "BiddingError", "CampaignCriterionError", "CollectionSizeError", "CriterionError", "CustomerError", "DateError", "DateRangeError", "DistinctError", "FeedAttributeReferenceError", "FunctionError", "FunctionParsingError", "IdError", "ImageError", "MediaBundleError", "MediaFileError", "MultiplierError", "NewResourceCreationError", "NotEmptyError", "NullError", "OperatorError", "RangeError", "RecommendationError", "RegionCodeError", "SettingError", "StringFormatError", "StringLengthError", "OperationAccessDeniedError", "ResourceAccessDeniedError", "ResourceCountLimitExceededError", "AdGroupBidModifierError", "ContextError", "FieldError", "SharedSetError", "SharedCriterionError", "CampaignSharedSetError", "ConversionActionError", "HeaderError", "DatabaseError", "PolicyFindingError", "CampaignGroupError", "EnumError", "AccountBudgetProposalError", "ChangeStatusError", "GeoTargetConstantSuggestionError", "BillingSetupError", "CustomerClientLinkError", "CustomerManagerLinkError" }, new[]{ "ErrorCode" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.ErrorCode), global::Google.Ads.GoogleAds.V0.Errors.ErrorCode.Parser, new[]{ "RequestError", "BiddingStrategyError", "UrlFieldError", "ListOperationError", "QueryError", "MutateError", "FieldMaskError", "AuthorizationError", "InternalError", "QuotaError", "AdError", "AdGroupError", "CampaignBudgetError", "CampaignError", "AuthenticationError", "AdGroupCriterionError", "AdCustomizerError", "AdGroupAdError", "AdSharingError", "AdxError", "BiddingError", "CampaignCriterionError", "CollectionSizeError", "CriterionError", "CustomerError", "DateError", "DateRangeError", "DistinctError", "FeedAttributeReferenceError", "FunctionError", "FunctionParsingError", "IdError", "ImageError", "MediaBundleError", "MediaFileError", "MultiplierError", "NewResourceCreationError", "NotEmptyError", "NullError", "OperatorError", "RangeError", "RecommendationError", "RegionCodeError", "SettingError", "StringFormatError", "StringLengthError", "OperationAccessDeniedError", "ResourceAccessDeniedError", "ResourceCountLimitExceededError", "AdGroupBidModifierError", "ContextError", "FieldError", "SharedSetError", "SharedCriterionError", "CampaignSharedSetError", "ConversionActionError", "HeaderError", "DatabaseError", "PolicyFindingError", "CampaignGroupError", "EnumError", "KeywordPlanError", "KeywordPlanCampaignError", "KeywordPlanNegativeKeywordError", "KeywordPlanAdGroupError", "KeywordPlanKeywordError", "KeywordPlanIdeaError", "AccountBudgetProposalError", "UserListError", "ChangeStatusError", "FeedError", "GeoTargetConstantSuggestionError", "FeedItemError", "BillingSetupError", "CustomerClientLinkError", "CustomerManagerLinkError", "FeedMappingError", "CustomerFeedError", "AdGroupFeedError", "CampaignFeedError" }, new[]{ "ErrorCode" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.ErrorLocation), global::Google.Ads.GoogleAds.V0.Errors.ErrorLocation.Parser, new[]{ "OperationIndex", "FieldPathElements" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.ErrorLocation.Types.FieldPathElement), global::Google.Ads.GoogleAds.V0.Errors.ErrorLocation.Types.FieldPathElement.Parser, new[]{ "FieldName", "Index" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.ErrorDetails), global::Google.Ads.GoogleAds.V0.Errors.ErrorDetails.Parser, new[]{ "UnpublishedErrorCode", "PolicyViolationDetails", "PolicyFindingDetails" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.PolicyViolationDetails), global::Google.Ads.GoogleAds.V0.Errors.PolicyViolationDetails.Parser, new[]{ "ExternalPolicyDescription", "Key", "ExternalPolicyName", "IsExemptible" }, null, null, null),
@@ -935,14 +983,41 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         case ErrorCodeOneofCase.EnumError:
           EnumError = other.EnumError;
           break;
+        case ErrorCodeOneofCase.KeywordPlanError:
+          KeywordPlanError = other.KeywordPlanError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanCampaignError:
+          KeywordPlanCampaignError = other.KeywordPlanCampaignError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanNegativeKeywordError:
+          KeywordPlanNegativeKeywordError = other.KeywordPlanNegativeKeywordError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanAdGroupError:
+          KeywordPlanAdGroupError = other.KeywordPlanAdGroupError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanKeywordError:
+          KeywordPlanKeywordError = other.KeywordPlanKeywordError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanIdeaError:
+          KeywordPlanIdeaError = other.KeywordPlanIdeaError;
+          break;
         case ErrorCodeOneofCase.AccountBudgetProposalError:
           AccountBudgetProposalError = other.AccountBudgetProposalError;
+          break;
+        case ErrorCodeOneofCase.UserListError:
+          UserListError = other.UserListError;
           break;
         case ErrorCodeOneofCase.ChangeStatusError:
           ChangeStatusError = other.ChangeStatusError;
           break;
+        case ErrorCodeOneofCase.FeedError:
+          FeedError = other.FeedError;
+          break;
         case ErrorCodeOneofCase.GeoTargetConstantSuggestionError:
           GeoTargetConstantSuggestionError = other.GeoTargetConstantSuggestionError;
+          break;
+        case ErrorCodeOneofCase.FeedItemError:
+          FeedItemError = other.FeedItemError;
           break;
         case ErrorCodeOneofCase.BillingSetupError:
           BillingSetupError = other.BillingSetupError;
@@ -952,6 +1027,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           break;
         case ErrorCodeOneofCase.CustomerManagerLinkError:
           CustomerManagerLinkError = other.CustomerManagerLinkError;
+          break;
+        case ErrorCodeOneofCase.FeedMappingError:
+          FeedMappingError = other.FeedMappingError;
+          break;
+        case ErrorCodeOneofCase.CustomerFeedError:
+          CustomerFeedError = other.CustomerFeedError;
+          break;
+        case ErrorCodeOneofCase.AdGroupFeedError:
+          AdGroupFeedError = other.AdGroupFeedError;
+          break;
+        case ErrorCodeOneofCase.CampaignFeedError:
+          CampaignFeedError = other.CampaignFeedError;
           break;
       }
 
@@ -1817,6 +1904,90 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       }
     }
 
+    /// <summary>Field number for the "keyword_plan_error" field.</summary>
+    public const int KeywordPlanErrorFieldNumber = 71;
+    /// <summary>
+    /// The reason for keyword plan error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanErrorEnum.Types.KeywordPlanError KeywordPlanError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanError ? (global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanErrorEnum.Types.KeywordPlanError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanError;
+      }
+    }
+
+    /// <summary>Field number for the "keyword_plan_campaign_error" field.</summary>
+    public const int KeywordPlanCampaignErrorFieldNumber = 72;
+    /// <summary>
+    /// The reason for keyword plan campaign error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanCampaignErrorEnum.Types.KeywordPlanCampaignError KeywordPlanCampaignError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanCampaignError ? (global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanCampaignErrorEnum.Types.KeywordPlanCampaignError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanCampaignError;
+      }
+    }
+
+    /// <summary>Field number for the "keyword_plan_negative_keyword_error" field.</summary>
+    public const int KeywordPlanNegativeKeywordErrorFieldNumber = 73;
+    /// <summary>
+    /// The reason for keyword plan negative keyword error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanNegativeKeywordErrorEnum.Types.KeywordPlanNegativeKeywordError KeywordPlanNegativeKeywordError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanNegativeKeywordError ? (global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanNegativeKeywordErrorEnum.Types.KeywordPlanNegativeKeywordError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanNegativeKeywordError;
+      }
+    }
+
+    /// <summary>Field number for the "keyword_plan_ad_group_error" field.</summary>
+    public const int KeywordPlanAdGroupErrorFieldNumber = 74;
+    /// <summary>
+    /// The reason for keyword plan ad group error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanAdGroupErrorEnum.Types.KeywordPlanAdGroupError KeywordPlanAdGroupError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanAdGroupError ? (global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanAdGroupErrorEnum.Types.KeywordPlanAdGroupError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanAdGroupError;
+      }
+    }
+
+    /// <summary>Field number for the "keyword_plan_keyword_error" field.</summary>
+    public const int KeywordPlanKeywordErrorFieldNumber = 75;
+    /// <summary>
+    /// The reason for keyword plan keyword error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanKeywordErrorEnum.Types.KeywordPlanKeywordError KeywordPlanKeywordError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanKeywordError ? (global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanKeywordErrorEnum.Types.KeywordPlanKeywordError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanKeywordError;
+      }
+    }
+
+    /// <summary>Field number for the "keyword_plan_idea_error" field.</summary>
+    public const int KeywordPlanIdeaErrorFieldNumber = 76;
+    /// <summary>
+    /// The reason for keyword idea error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanIdeaErrorEnum.Types.KeywordPlanIdeaError KeywordPlanIdeaError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanIdeaError ? (global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanIdeaErrorEnum.Types.KeywordPlanIdeaError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanIdeaError;
+      }
+    }
+
     /// <summary>Field number for the "account_budget_proposal_error" field.</summary>
     public const int AccountBudgetProposalErrorFieldNumber = 77;
     /// <summary>
@@ -1828,6 +1999,20 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AccountBudgetProposalError;
+      }
+    }
+
+    /// <summary>Field number for the "user_list_error" field.</summary>
+    public const int UserListErrorFieldNumber = 78;
+    /// <summary>
+    /// The reasons for the user list error
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.UserListErrorEnum.Types.UserListError UserListError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.UserListError ? (global::Google.Ads.GoogleAds.V0.Errors.UserListErrorEnum.Types.UserListError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.UserListError;
       }
     }
 
@@ -1845,6 +2030,20 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       }
     }
 
+    /// <summary>Field number for the "feed_error" field.</summary>
+    public const int FeedErrorFieldNumber = 80;
+    /// <summary>
+    /// The reasons for the feed error
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.FeedErrorEnum.Types.FeedError FeedError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedError ? (global::Google.Ads.GoogleAds.V0.Errors.FeedErrorEnum.Types.FeedError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.FeedError;
+      }
+    }
+
     /// <summary>Field number for the "geo_target_constant_suggestion_error" field.</summary>
     public const int GeoTargetConstantSuggestionErrorFieldNumber = 81;
     /// <summary>
@@ -1856,6 +2055,20 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.GeoTargetConstantSuggestionError;
+      }
+    }
+
+    /// <summary>Field number for the "feed_item_error" field.</summary>
+    public const int FeedItemErrorFieldNumber = 83;
+    /// <summary>
+    /// The reasons for the feed item error
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.FeedItemErrorEnum.Types.FeedItemError FeedItemError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedItemError ? (global::Google.Ads.GoogleAds.V0.Errors.FeedItemErrorEnum.Types.FeedItemError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.FeedItemError;
       }
     }
 
@@ -1898,6 +2111,62 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CustomerManagerLinkError;
+      }
+    }
+
+    /// <summary>Field number for the "feed_mapping_error" field.</summary>
+    public const int FeedMappingErrorFieldNumber = 92;
+    /// <summary>
+    /// The reasons for the feed mapping error
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.FeedMappingErrorEnum.Types.FeedMappingError FeedMappingError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedMappingError ? (global::Google.Ads.GoogleAds.V0.Errors.FeedMappingErrorEnum.Types.FeedMappingError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.FeedMappingError;
+      }
+    }
+
+    /// <summary>Field number for the "customer_feed_error" field.</summary>
+    public const int CustomerFeedErrorFieldNumber = 93;
+    /// <summary>
+    /// The reasons for the customer feed error
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.CustomerFeedErrorEnum.Types.CustomerFeedError CustomerFeedError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomerFeedError ? (global::Google.Ads.GoogleAds.V0.Errors.CustomerFeedErrorEnum.Types.CustomerFeedError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.CustomerFeedError;
+      }
+    }
+
+    /// <summary>Field number for the "ad_group_feed_error" field.</summary>
+    public const int AdGroupFeedErrorFieldNumber = 94;
+    /// <summary>
+    /// The reasons for the ad group feed error
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.AdGroupFeedErrorEnum.Types.AdGroupFeedError AdGroupFeedError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupFeedError ? (global::Google.Ads.GoogleAds.V0.Errors.AdGroupFeedErrorEnum.Types.AdGroupFeedError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.AdGroupFeedError;
+      }
+    }
+
+    /// <summary>Field number for the "campaign_feed_error" field.</summary>
+    public const int CampaignFeedErrorFieldNumber = 96;
+    /// <summary>
+    /// The reasons for the campaign feed error
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Errors.CampaignFeedErrorEnum.Types.CampaignFeedError CampaignFeedError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignFeedError ? (global::Google.Ads.GoogleAds.V0.Errors.CampaignFeedErrorEnum.Types.CampaignFeedError) errorCode_ : 0; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.CampaignFeedError;
       }
     }
 
@@ -1966,12 +2235,25 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       PolicyFindingError = 68,
       CampaignGroupError = 69,
       EnumError = 70,
+      KeywordPlanError = 71,
+      KeywordPlanCampaignError = 72,
+      KeywordPlanNegativeKeywordError = 73,
+      KeywordPlanAdGroupError = 74,
+      KeywordPlanKeywordError = 75,
+      KeywordPlanIdeaError = 76,
       AccountBudgetProposalError = 77,
+      UserListError = 78,
       ChangeStatusError = 79,
+      FeedError = 80,
       GeoTargetConstantSuggestionError = 81,
+      FeedItemError = 83,
       BillingSetupError = 87,
       CustomerClientLinkError = 88,
       CustomerManagerLinkError = 91,
+      FeedMappingError = 92,
+      CustomerFeedError = 93,
+      AdGroupFeedError = 94,
+      CampaignFeedError = 96,
     }
     private ErrorCodeOneofCase errorCodeCase_ = ErrorCodeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2059,12 +2341,25 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       if (PolicyFindingError != other.PolicyFindingError) return false;
       if (CampaignGroupError != other.CampaignGroupError) return false;
       if (EnumError != other.EnumError) return false;
+      if (KeywordPlanError != other.KeywordPlanError) return false;
+      if (KeywordPlanCampaignError != other.KeywordPlanCampaignError) return false;
+      if (KeywordPlanNegativeKeywordError != other.KeywordPlanNegativeKeywordError) return false;
+      if (KeywordPlanAdGroupError != other.KeywordPlanAdGroupError) return false;
+      if (KeywordPlanKeywordError != other.KeywordPlanKeywordError) return false;
+      if (KeywordPlanIdeaError != other.KeywordPlanIdeaError) return false;
       if (AccountBudgetProposalError != other.AccountBudgetProposalError) return false;
+      if (UserListError != other.UserListError) return false;
       if (ChangeStatusError != other.ChangeStatusError) return false;
+      if (FeedError != other.FeedError) return false;
       if (GeoTargetConstantSuggestionError != other.GeoTargetConstantSuggestionError) return false;
+      if (FeedItemError != other.FeedItemError) return false;
       if (BillingSetupError != other.BillingSetupError) return false;
       if (CustomerClientLinkError != other.CustomerClientLinkError) return false;
       if (CustomerManagerLinkError != other.CustomerManagerLinkError) return false;
+      if (FeedMappingError != other.FeedMappingError) return false;
+      if (CustomerFeedError != other.CustomerFeedError) return false;
+      if (AdGroupFeedError != other.AdGroupFeedError) return false;
+      if (CampaignFeedError != other.CampaignFeedError) return false;
       if (ErrorCodeCase != other.ErrorCodeCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2133,12 +2428,25 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       if (errorCodeCase_ == ErrorCodeOneofCase.PolicyFindingError) hash ^= PolicyFindingError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.CampaignGroupError) hash ^= CampaignGroupError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.EnumError) hash ^= EnumError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanError) hash ^= KeywordPlanError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanCampaignError) hash ^= KeywordPlanCampaignError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanNegativeKeywordError) hash ^= KeywordPlanNegativeKeywordError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanAdGroupError) hash ^= KeywordPlanAdGroupError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanKeywordError) hash ^= KeywordPlanKeywordError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanIdeaError) hash ^= KeywordPlanIdeaError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.AccountBudgetProposalError) hash ^= AccountBudgetProposalError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.UserListError) hash ^= UserListError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.ChangeStatusError) hash ^= ChangeStatusError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedError) hash ^= FeedError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.GeoTargetConstantSuggestionError) hash ^= GeoTargetConstantSuggestionError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedItemError) hash ^= FeedItemError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.BillingSetupError) hash ^= BillingSetupError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.CustomerClientLinkError) hash ^= CustomerClientLinkError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.CustomerManagerLinkError) hash ^= CustomerManagerLinkError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedMappingError) hash ^= FeedMappingError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.CustomerFeedError) hash ^= CustomerFeedError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdGroupFeedError) hash ^= AdGroupFeedError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignFeedError) hash ^= CampaignFeedError.GetHashCode();
       hash ^= (int) errorCodeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2389,17 +2697,53 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         output.WriteRawTag(176, 4);
         output.WriteEnum((int) EnumError);
       }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanError) {
+        output.WriteRawTag(184, 4);
+        output.WriteEnum((int) KeywordPlanError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanCampaignError) {
+        output.WriteRawTag(192, 4);
+        output.WriteEnum((int) KeywordPlanCampaignError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanNegativeKeywordError) {
+        output.WriteRawTag(200, 4);
+        output.WriteEnum((int) KeywordPlanNegativeKeywordError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanAdGroupError) {
+        output.WriteRawTag(208, 4);
+        output.WriteEnum((int) KeywordPlanAdGroupError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanKeywordError) {
+        output.WriteRawTag(216, 4);
+        output.WriteEnum((int) KeywordPlanKeywordError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanIdeaError) {
+        output.WriteRawTag(224, 4);
+        output.WriteEnum((int) KeywordPlanIdeaError);
+      }
       if (errorCodeCase_ == ErrorCodeOneofCase.AccountBudgetProposalError) {
         output.WriteRawTag(232, 4);
         output.WriteEnum((int) AccountBudgetProposalError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.UserListError) {
+        output.WriteRawTag(240, 4);
+        output.WriteEnum((int) UserListError);
       }
       if (errorCodeCase_ == ErrorCodeOneofCase.ChangeStatusError) {
         output.WriteRawTag(248, 4);
         output.WriteEnum((int) ChangeStatusError);
       }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedError) {
+        output.WriteRawTag(128, 5);
+        output.WriteEnum((int) FeedError);
+      }
       if (errorCodeCase_ == ErrorCodeOneofCase.GeoTargetConstantSuggestionError) {
         output.WriteRawTag(136, 5);
         output.WriteEnum((int) GeoTargetConstantSuggestionError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedItemError) {
+        output.WriteRawTag(152, 5);
+        output.WriteEnum((int) FeedItemError);
       }
       if (errorCodeCase_ == ErrorCodeOneofCase.MediaFileError) {
         output.WriteRawTag(176, 5);
@@ -2420,6 +2764,22 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       if (errorCodeCase_ == ErrorCodeOneofCase.CustomerManagerLinkError) {
         output.WriteRawTag(216, 5);
         output.WriteEnum((int) CustomerManagerLinkError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedMappingError) {
+        output.WriteRawTag(224, 5);
+        output.WriteEnum((int) FeedMappingError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CustomerFeedError) {
+        output.WriteRawTag(232, 5);
+        output.WriteEnum((int) CustomerFeedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdGroupFeedError) {
+        output.WriteRawTag(240, 5);
+        output.WriteEnum((int) AdGroupFeedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignFeedError) {
+        output.WriteRawTag(128, 6);
+        output.WriteEnum((int) CampaignFeedError);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2612,14 +2972,41 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       if (errorCodeCase_ == ErrorCodeOneofCase.EnumError) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EnumError);
       }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanCampaignError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanCampaignError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanNegativeKeywordError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanNegativeKeywordError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanAdGroupError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanAdGroupError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanKeywordError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanKeywordError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanIdeaError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanIdeaError);
+      }
       if (errorCodeCase_ == ErrorCodeOneofCase.AccountBudgetProposalError) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) AccountBudgetProposalError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.UserListError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) UserListError);
       }
       if (errorCodeCase_ == ErrorCodeOneofCase.ChangeStatusError) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ChangeStatusError);
       }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) FeedError);
+      }
       if (errorCodeCase_ == ErrorCodeOneofCase.GeoTargetConstantSuggestionError) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) GeoTargetConstantSuggestionError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedItemError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) FeedItemError);
       }
       if (errorCodeCase_ == ErrorCodeOneofCase.BillingSetupError) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) BillingSetupError);
@@ -2629,6 +3016,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       }
       if (errorCodeCase_ == ErrorCodeOneofCase.CustomerManagerLinkError) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) CustomerManagerLinkError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedMappingError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) FeedMappingError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CustomerFeedError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) CustomerFeedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdGroupFeedError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) AdGroupFeedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignFeedError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) CampaignFeedError);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2825,14 +3224,41 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         case ErrorCodeOneofCase.EnumError:
           EnumError = other.EnumError;
           break;
+        case ErrorCodeOneofCase.KeywordPlanError:
+          KeywordPlanError = other.KeywordPlanError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanCampaignError:
+          KeywordPlanCampaignError = other.KeywordPlanCampaignError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanNegativeKeywordError:
+          KeywordPlanNegativeKeywordError = other.KeywordPlanNegativeKeywordError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanAdGroupError:
+          KeywordPlanAdGroupError = other.KeywordPlanAdGroupError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanKeywordError:
+          KeywordPlanKeywordError = other.KeywordPlanKeywordError;
+          break;
+        case ErrorCodeOneofCase.KeywordPlanIdeaError:
+          KeywordPlanIdeaError = other.KeywordPlanIdeaError;
+          break;
         case ErrorCodeOneofCase.AccountBudgetProposalError:
           AccountBudgetProposalError = other.AccountBudgetProposalError;
+          break;
+        case ErrorCodeOneofCase.UserListError:
+          UserListError = other.UserListError;
           break;
         case ErrorCodeOneofCase.ChangeStatusError:
           ChangeStatusError = other.ChangeStatusError;
           break;
+        case ErrorCodeOneofCase.FeedError:
+          FeedError = other.FeedError;
+          break;
         case ErrorCodeOneofCase.GeoTargetConstantSuggestionError:
           GeoTargetConstantSuggestionError = other.GeoTargetConstantSuggestionError;
+          break;
+        case ErrorCodeOneofCase.FeedItemError:
+          FeedItemError = other.FeedItemError;
           break;
         case ErrorCodeOneofCase.BillingSetupError:
           BillingSetupError = other.BillingSetupError;
@@ -2842,6 +3268,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           break;
         case ErrorCodeOneofCase.CustomerManagerLinkError:
           CustomerManagerLinkError = other.CustomerManagerLinkError;
+          break;
+        case ErrorCodeOneofCase.FeedMappingError:
+          FeedMappingError = other.FeedMappingError;
+          break;
+        case ErrorCodeOneofCase.CustomerFeedError:
+          CustomerFeedError = other.CustomerFeedError;
+          break;
+        case ErrorCodeOneofCase.AdGroupFeedError:
+          AdGroupFeedError = other.AdGroupFeedError;
+          break;
+        case ErrorCodeOneofCase.CampaignFeedError:
+          CampaignFeedError = other.CampaignFeedError;
           break;
       }
 
@@ -3151,9 +3589,44 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             errorCodeCase_ = ErrorCodeOneofCase.EnumError;
             break;
           }
+          case 568: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanError;
+            break;
+          }
+          case 576: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanCampaignError;
+            break;
+          }
+          case 584: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanNegativeKeywordError;
+            break;
+          }
+          case 592: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanAdGroupError;
+            break;
+          }
+          case 600: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanKeywordError;
+            break;
+          }
+          case 608: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanIdeaError;
+            break;
+          }
           case 616: {
             errorCode_ = input.ReadEnum();
             errorCodeCase_ = ErrorCodeOneofCase.AccountBudgetProposalError;
+            break;
+          }
+          case 624: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.UserListError;
             break;
           }
           case 632: {
@@ -3161,9 +3634,19 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             errorCodeCase_ = ErrorCodeOneofCase.ChangeStatusError;
             break;
           }
+          case 640: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FeedError;
+            break;
+          }
           case 648: {
             errorCode_ = input.ReadEnum();
             errorCodeCase_ = ErrorCodeOneofCase.GeoTargetConstantSuggestionError;
+            break;
+          }
+          case 664: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FeedItemError;
             break;
           }
           case 688: {
@@ -3189,6 +3672,26 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           case 728: {
             errorCode_ = input.ReadEnum();
             errorCodeCase_ = ErrorCodeOneofCase.CustomerManagerLinkError;
+            break;
+          }
+          case 736: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FeedMappingError;
+            break;
+          }
+          case 744: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CustomerFeedError;
+            break;
+          }
+          case 752: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdGroupFeedError;
+            break;
+          }
+          case 768: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CampaignFeedError;
             break;
           }
         }
@@ -3256,8 +3759,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V0.Errors.ErrorLocation.Types.FieldPathElement.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Errors.ErrorLocation.Types.FieldPathElement> fieldPathElements_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Errors.ErrorLocation.Types.FieldPathElement>();
     /// <summary>
-    /// A field path that indicates which field was invalid in the resource being
-    /// mutated.
+    /// A field path that indicates which field was invalid in the request.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Errors.ErrorLocation.Types.FieldPathElement> FieldPathElements {
@@ -3405,7 +3907,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         public const int FieldNameFieldNumber = 1;
         private string fieldName_ = "";
         /// <summary>
-        /// The name of a field
+        /// The name of a field or a oneof
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string FieldName {
@@ -3420,7 +3922,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         private static readonly pb::FieldCodec<long?> _single_index_codec = pb::FieldCodec.ForStructWrapper<long>(18);
         private long? index_;
         /// <summary>
-        /// If field_name is a list, this is the element that failed
+        /// If field_name is a repeated field, this is the element that failed
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public long? Index {

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Generated code. DO NOT EDIT!
+// TODO( b/119694056): Removed Comment
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
 using gax = Google.Api.Gax;
@@ -51,7 +51,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             GetCustomerSettings = existing.GetCustomerSettings;
+            MutateCustomerSettings = existing.MutateCustomerSettings;
             ListAccessibleCustomersSettings = existing.ListAccessibleCustomersSettings;
+            CreateCustomerClientSettings = existing.CreateCustomerClientSettings;
             OnCopy(existing);
         }
 
@@ -153,6 +155,35 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>CustomerServiceClient.MutateCustomer</c> and <c>CustomerServiceClient.MutateCustomerAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// The default <c>CustomerServiceClient.MutateCustomer</c> and
+        /// <c>CustomerServiceClient.MutateCustomerAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Timeout multiplier: 1.0</description></item>
+        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// </list>
+        /// Retry will be attempted on the following response status codes:
+        /// <list>
+        /// <item><description>No status codes</description></item>
+        /// </list>
+        /// Default RPC expiration is 600000 milliseconds.
+        /// </remarks>
+        public gaxgrpc::CallSettings MutateCustomerSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+            gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
+                retryBackoff: GetDefaultRetryBackoff(),
+                timeoutBackoff: GetDefaultTimeoutBackoff(),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                retryFilter: NonIdempotentRetryFilter
+            )));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
         /// <c>CustomerServiceClient.ListAccessibleCustomers</c> and <c>CustomerServiceClient.ListAccessibleCustomersAsync</c>.
         /// </summary>
         /// <remarks>
@@ -179,6 +210,35 @@ namespace Google.Ads.GoogleAds.V0.Services
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
                 totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
                 retryFilter: IdempotentRetryFilter
+            )));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>CustomerServiceClient.CreateCustomerClient</c> and <c>CustomerServiceClient.CreateCustomerClientAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// The default <c>CustomerServiceClient.CreateCustomerClient</c> and
+        /// <c>CustomerServiceClient.CreateCustomerClientAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Timeout multiplier: 1.0</description></item>
+        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// </list>
+        /// Retry will be attempted on the following response status codes:
+        /// <list>
+        /// <item><description>No status codes</description></item>
+        /// </list>
+        /// Default RPC expiration is 600000 milliseconds.
+        /// </remarks>
+        public gaxgrpc::CallSettings CreateCustomerClientSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+            gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
+                retryBackoff: GetDefaultRetryBackoff(),
+                timeoutBackoff: GetDefaultTimeoutBackoff(),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                retryFilter: NonIdempotentRetryFilter
             )));
 
         /// <summary>
@@ -457,6 +517,137 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer being modified.
+        /// </param>
+        /// <param name="operation">
+        /// The operation to perform on the customer
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
+            string customerId,
+            CustomerOperation operation,
+            gaxgrpc::CallSettings callSettings = null) => MutateCustomerAsync(
+                new MutateCustomerRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
+                },
+                callSettings);
+
+        /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer being modified.
+        /// </param>
+        /// <param name="operation">
+        /// The operation to perform on the customer
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
+            string customerId,
+            CustomerOperation operation,
+            st::CancellationToken cancellationToken) => MutateCustomerAsync(
+                customerId,
+                operation,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer being modified.
+        /// </param>
+        /// <param name="operation">
+        /// The operation to perform on the customer
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateCustomerResponse MutateCustomer(
+            string customerId,
+            CustomerOperation operation,
+            gaxgrpc::CallSettings callSettings = null) => MutateCustomer(
+                new MutateCustomerRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
+                },
+                callSettings);
+
+        /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
+            MutateCustomerRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
+        /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
+            MutateCustomerRequest request,
+            st::CancellationToken cancellationToken) => MutateCustomerAsync(
+                request,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateCustomerResponse MutateCustomer(
+            MutateCustomerRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
+        /// <summary>
         /// Returns resource names of customers directly accessible by the
         /// user authenticating the call.
         /// </summary>
@@ -515,6 +706,140 @@ namespace Google.Ads.GoogleAds.V0.Services
             throw new sys::NotImplementedException();
         }
 
+        /// <summary>
+        /// Creates a new client under manager. The new client customer is returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the Manager under whom client customer is being created.
+        /// </param>
+        /// <param name="customerClient">
+        /// The new client customer to create. The resource name on this customer
+        /// will be ignored.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<CreateCustomerClientResponse> CreateCustomerClientAsync(
+            string customerId,
+            gagvr::Customer customerClient,
+            gaxgrpc::CallSettings callSettings = null) => CreateCustomerClientAsync(
+                new CreateCustomerClientRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    CustomerClient = gax::GaxPreconditions.CheckNotNull(customerClient, nameof(customerClient)),
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates a new client under manager. The new client customer is returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the Manager under whom client customer is being created.
+        /// </param>
+        /// <param name="customerClient">
+        /// The new client customer to create. The resource name on this customer
+        /// will be ignored.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<CreateCustomerClientResponse> CreateCustomerClientAsync(
+            string customerId,
+            gagvr::Customer customerClient,
+            st::CancellationToken cancellationToken) => CreateCustomerClientAsync(
+                customerId,
+                customerClient,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates a new client under manager. The new client customer is returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the Manager under whom client customer is being created.
+        /// </param>
+        /// <param name="customerClient">
+        /// The new client customer to create. The resource name on this customer
+        /// will be ignored.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual CreateCustomerClientResponse CreateCustomerClient(
+            string customerId,
+            gagvr::Customer customerClient,
+            gaxgrpc::CallSettings callSettings = null) => CreateCustomerClient(
+                new CreateCustomerClientRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    CustomerClient = gax::GaxPreconditions.CheckNotNull(customerClient, nameof(customerClient)),
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates a new client under manager. The new client customer is returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<CreateCustomerClientResponse> CreateCustomerClientAsync(
+            CreateCustomerClientRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
+        /// <summary>
+        /// Creates a new client under manager. The new client customer is returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<CreateCustomerClientResponse> CreateCustomerClientAsync(
+            CreateCustomerClientRequest request,
+            st::CancellationToken cancellationToken) => CreateCustomerClientAsync(
+                request,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates a new client under manager. The new client customer is returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual CreateCustomerClientResponse CreateCustomerClient(
+            CreateCustomerClientRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
     }
 
     /// <summary>
@@ -523,7 +848,9 @@ namespace Google.Ads.GoogleAds.V0.Services
     public sealed partial class CustomerServiceClientImpl : CustomerServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCustomerRequest, gagvr::Customer> _callGetCustomer;
+        private readonly gaxgrpc::ApiCall<MutateCustomerRequest, MutateCustomerResponse> _callMutateCustomer;
         private readonly gaxgrpc::ApiCall<ListAccessibleCustomersRequest, ListAccessibleCustomersResponse> _callListAccessibleCustomers;
+        private readonly gaxgrpc::ApiCall<CreateCustomerClientRequest, CreateCustomerClientResponse> _callCreateCustomerClient;
 
         /// <summary>
         /// Constructs a client wrapper for the CustomerService service, with the specified gRPC client and settings.
@@ -537,12 +864,20 @@ namespace Google.Ads.GoogleAds.V0.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCustomer = clientHelper.BuildApiCall<GetCustomerRequest, gagvr::Customer>(
                 GrpcClient.GetCustomerAsync, GrpcClient.GetCustomer, effectiveSettings.GetCustomerSettings);
+            _callMutateCustomer = clientHelper.BuildApiCall<MutateCustomerRequest, MutateCustomerResponse>(
+                GrpcClient.MutateCustomerAsync, GrpcClient.MutateCustomer, effectiveSettings.MutateCustomerSettings);
             _callListAccessibleCustomers = clientHelper.BuildApiCall<ListAccessibleCustomersRequest, ListAccessibleCustomersResponse>(
                 GrpcClient.ListAccessibleCustomersAsync, GrpcClient.ListAccessibleCustomers, effectiveSettings.ListAccessibleCustomersSettings);
+            _callCreateCustomerClient = clientHelper.BuildApiCall<CreateCustomerClientRequest, CreateCustomerClientResponse>(
+                GrpcClient.CreateCustomerClientAsync, GrpcClient.CreateCustomerClient, effectiveSettings.CreateCustomerClientSettings);
             Modify_ApiCall(ref _callGetCustomer);
             Modify_GetCustomerApiCall(ref _callGetCustomer);
+            Modify_ApiCall(ref _callMutateCustomer);
+            Modify_MutateCustomerApiCall(ref _callMutateCustomer);
             Modify_ApiCall(ref _callListAccessibleCustomers);
             Modify_ListAccessibleCustomersApiCall(ref _callListAccessibleCustomers);
+            Modify_ApiCall(ref _callCreateCustomerClient);
+            Modify_CreateCustomerClientApiCall(ref _callCreateCustomerClient);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -557,7 +892,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
         partial void Modify_GetCustomerApiCall(ref gaxgrpc::ApiCall<GetCustomerRequest, gagvr::Customer> call);
+        partial void Modify_MutateCustomerApiCall(ref gaxgrpc::ApiCall<MutateCustomerRequest, MutateCustomerResponse> call);
         partial void Modify_ListAccessibleCustomersApiCall(ref gaxgrpc::ApiCall<ListAccessibleCustomersRequest, ListAccessibleCustomersResponse> call);
+        partial void Modify_CreateCustomerClientApiCall(ref gaxgrpc::ApiCall<CreateCustomerClientRequest, CreateCustomerClientResponse> call);
         partial void OnConstruction(CustomerService.CustomerServiceClient grpcClient, CustomerServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -569,7 +906,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
         partial void Modify_GetCustomerRequest(ref GetCustomerRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateCustomerRequest(ref MutateCustomerRequest request, ref gaxgrpc::CallSettings settings);
         partial void Modify_ListAccessibleCustomersRequest(ref ListAccessibleCustomersRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_CreateCustomerClientRequest(ref CreateCustomerClientRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested customer in full detail.
@@ -612,6 +951,46 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public override stt::Task<MutateCustomerResponse> MutateCustomerAsync(
+            MutateCustomerRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_MutateCustomerRequest(ref request, ref callSettings);
+            return _callMutateCustomer.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public override MutateCustomerResponse MutateCustomer(
+            MutateCustomerRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_MutateCustomerRequest(ref request, ref callSettings);
+            return _callMutateCustomer.Sync(request, callSettings);
+        }
+
+        /// <summary>
         /// Returns resource names of customers directly accessible by the
         /// user authenticating the call.
         /// </summary>
@@ -651,6 +1030,46 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             Modify_ListAccessibleCustomersRequest(ref request, ref callSettings);
             return _callListAccessibleCustomers.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Creates a new client under manager. The new client customer is returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public override stt::Task<CreateCustomerClientResponse> CreateCustomerClientAsync(
+            CreateCustomerClientRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_CreateCustomerClientRequest(ref request, ref callSettings);
+            return _callCreateCustomerClient.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Creates a new client under manager. The new client customer is returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public override CreateCustomerClientResponse CreateCustomerClient(
+            CreateCustomerClientRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_CreateCustomerClientRequest(ref request, ref callSettings);
+            return _callCreateCustomerClient.Sync(request, callSettings);
         }
 
     }

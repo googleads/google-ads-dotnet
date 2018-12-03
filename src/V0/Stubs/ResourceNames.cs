@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Generated code. DO NOT EDIT!
+// TODO( b/119694056): Removed Comment
 
 using gax = Google.Api.Gax;
 using sys = System;
@@ -20,6 +20,98 @@ using linq = System.Linq;
 
 namespace Google.Ads.GoogleAds.V0.Services
 {
+    /// <summary>
+    /// Resource name for the 'account_budget' resource.
+    /// </summary>
+    public sealed partial class AccountBudgetName : gax::IResourceName, sys::IEquatable<AccountBudgetName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/accountBudgets/{account_budget}");
+
+        /// <summary>
+        /// Parses the given account_budget resource name in string form into a new
+        /// <see cref="AccountBudgetName"/> instance.
+        /// </summary>
+        /// <param name="accountBudgetName">The account_budget resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="AccountBudgetName"/> if successful.</returns>
+        public static AccountBudgetName Parse(string accountBudgetName)
+        {
+            gax::GaxPreconditions.CheckNotNull(accountBudgetName, nameof(accountBudgetName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(accountBudgetName);
+            return new AccountBudgetName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given account_budget resource name in string form into a new
+        /// <see cref="AccountBudgetName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="accountBudgetName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="accountBudgetName">The account_budget resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="AccountBudgetName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string accountBudgetName, out AccountBudgetName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(accountBudgetName, nameof(accountBudgetName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(accountBudgetName, out resourceName))
+            {
+                result = new AccountBudgetName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="AccountBudgetName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="accountBudgetId">The accountBudget ID. Must not be <c>null</c>.</param>
+        public AccountBudgetName(string customerId, string accountBudgetId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            AccountBudgetId = gax::GaxPreconditions.CheckNotNull(accountBudgetId, nameof(accountBudgetId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The accountBudget ID. Never <c>null</c>.
+        /// </summary>
+        public string AccountBudgetId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, AccountBudgetId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as AccountBudgetName);
+
+        /// <inheritdoc />
+        public bool Equals(AccountBudgetName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(AccountBudgetName a, AccountBudgetName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(AccountBudgetName a, AccountBudgetName b) => !(a == b);
+    }
+
     /// <summary>
     /// Resource name for the 'account_budget_proposal' resource.
     /// </summary>
@@ -113,44 +205,44 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
-    /// Resource name for the 'account_budget' resource.
+    /// Resource name for the 'ad_group' resource.
     /// </summary>
-    public sealed partial class AccountBudgetName : gax::IResourceName, sys::IEquatable<AccountBudgetName>
+    public sealed partial class AdGroupName : gax::IResourceName, sys::IEquatable<AdGroupName>
     {
-        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/accountBudgets/{account_budget}");
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/adGroups/{ad_group}");
 
         /// <summary>
-        /// Parses the given account_budget resource name in string form into a new
-        /// <see cref="AccountBudgetName"/> instance.
+        /// Parses the given ad_group resource name in string form into a new
+        /// <see cref="AdGroupName"/> instance.
         /// </summary>
-        /// <param name="accountBudgetName">The account_budget resource name in string form. Must not be <c>null</c>.</param>
-        /// <returns>The parsed <see cref="AccountBudgetName"/> if successful.</returns>
-        public static AccountBudgetName Parse(string accountBudgetName)
+        /// <param name="adGroupName">The ad_group resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="AdGroupName"/> if successful.</returns>
+        public static AdGroupName Parse(string adGroupName)
         {
-            gax::GaxPreconditions.CheckNotNull(accountBudgetName, nameof(accountBudgetName));
-            gax::TemplatedResourceName resourceName = s_template.ParseName(accountBudgetName);
-            return new AccountBudgetName(resourceName[0], resourceName[1]);
+            gax::GaxPreconditions.CheckNotNull(adGroupName, nameof(adGroupName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(adGroupName);
+            return new AdGroupName(resourceName[0], resourceName[1]);
         }
 
         /// <summary>
-        /// Tries to parse the given account_budget resource name in string form into a new
-        /// <see cref="AccountBudgetName"/> instance.
+        /// Tries to parse the given ad_group resource name in string form into a new
+        /// <see cref="AdGroupName"/> instance.
         /// </summary>
         /// <remarks>
-        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="accountBudgetName"/> is null,
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="adGroupName"/> is null,
         /// as this would usually indicate a programming error rather than a data error.
         /// </remarks>
-        /// <param name="accountBudgetName">The account_budget resource name in string form. Must not be <c>null</c>.</param>
-        /// <param name="result">When this method returns, the parsed <see cref="AccountBudgetName"/>,
+        /// <param name="adGroupName">The ad_group resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="AdGroupName"/>,
         /// or <c>null</c> if parsing fails.</param>
         /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
-        public static bool TryParse(string accountBudgetName, out AccountBudgetName result)
+        public static bool TryParse(string adGroupName, out AdGroupName result)
         {
-            gax::GaxPreconditions.CheckNotNull(accountBudgetName, nameof(accountBudgetName));
+            gax::GaxPreconditions.CheckNotNull(adGroupName, nameof(adGroupName));
             gax::TemplatedResourceName resourceName;
-            if (s_template.TryParseName(accountBudgetName, out resourceName))
+            if (s_template.TryParseName(adGroupName, out resourceName))
             {
-                result = new AccountBudgetName(resourceName[0], resourceName[1]);
+                result = new AdGroupName(resourceName[0], resourceName[1]);
                 return true;
             }
             else
@@ -161,15 +253,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
-        /// Constructs a new instance of the <see cref="AccountBudgetName"/> resource name class
+        /// Constructs a new instance of the <see cref="AdGroupName"/> resource name class
         /// from its component parts.
         /// </summary>
         /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
-        /// <param name="accountBudgetId">The accountBudget ID. Must not be <c>null</c>.</param>
-        public AccountBudgetName(string customerId, string accountBudgetId)
+        /// <param name="adGroupId">The adGroup ID. Must not be <c>null</c>.</param>
+        public AdGroupName(string customerId, string adGroupId)
         {
             CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
-            AccountBudgetId = gax::GaxPreconditions.CheckNotNull(accountBudgetId, nameof(accountBudgetId));
+            AdGroupId = gax::GaxPreconditions.CheckNotNull(adGroupId, nameof(adGroupId));
         }
 
         /// <summary>
@@ -178,30 +270,30 @@ namespace Google.Ads.GoogleAds.V0.Services
         public string CustomerId { get; }
 
         /// <summary>
-        /// The accountBudget ID. Never <c>null</c>.
+        /// The adGroup ID. Never <c>null</c>.
         /// </summary>
-        public string AccountBudgetId { get; }
+        public string AdGroupId { get; }
 
         /// <inheritdoc />
         public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
 
         /// <inheritdoc />
-        public override string ToString() => s_template.Expand(CustomerId, AccountBudgetId);
+        public override string ToString() => s_template.Expand(CustomerId, AdGroupId);
 
         /// <inheritdoc />
         public override int GetHashCode() => ToString().GetHashCode();
 
         /// <inheritdoc />
-        public override bool Equals(object obj) => Equals(obj as AccountBudgetName);
+        public override bool Equals(object obj) => Equals(obj as AdGroupName);
 
         /// <inheritdoc />
-        public bool Equals(AccountBudgetName other) => ToString() == other?.ToString();
+        public bool Equals(AdGroupName other) => ToString() == other?.ToString();
 
         /// <inheritdoc />
-        public static bool operator ==(AccountBudgetName a, AccountBudgetName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+        public static bool operator ==(AdGroupName a, AdGroupName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
 
         /// <inheritdoc />
-        public static bool operator !=(AccountBudgetName a, AccountBudgetName b) => !(a == b);
+        public static bool operator !=(AdGroupName a, AdGroupName b) => !(a == b);
     }
 
     /// <summary>
@@ -573,44 +665,44 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
-    /// Resource name for the 'ad_group' resource.
+    /// Resource name for the 'ad_group_feed' resource.
     /// </summary>
-    public sealed partial class AdGroupName : gax::IResourceName, sys::IEquatable<AdGroupName>
+    public sealed partial class AdGroupFeedName : gax::IResourceName, sys::IEquatable<AdGroupFeedName>
     {
-        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/adGroups/{ad_group}");
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/adGroupFeeds/{ad_group_feed}");
 
         /// <summary>
-        /// Parses the given ad_group resource name in string form into a new
-        /// <see cref="AdGroupName"/> instance.
+        /// Parses the given ad_group_feed resource name in string form into a new
+        /// <see cref="AdGroupFeedName"/> instance.
         /// </summary>
-        /// <param name="adGroupName">The ad_group resource name in string form. Must not be <c>null</c>.</param>
-        /// <returns>The parsed <see cref="AdGroupName"/> if successful.</returns>
-        public static AdGroupName Parse(string adGroupName)
+        /// <param name="adGroupFeedName">The ad_group_feed resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="AdGroupFeedName"/> if successful.</returns>
+        public static AdGroupFeedName Parse(string adGroupFeedName)
         {
-            gax::GaxPreconditions.CheckNotNull(adGroupName, nameof(adGroupName));
-            gax::TemplatedResourceName resourceName = s_template.ParseName(adGroupName);
-            return new AdGroupName(resourceName[0], resourceName[1]);
+            gax::GaxPreconditions.CheckNotNull(adGroupFeedName, nameof(adGroupFeedName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(adGroupFeedName);
+            return new AdGroupFeedName(resourceName[0], resourceName[1]);
         }
 
         /// <summary>
-        /// Tries to parse the given ad_group resource name in string form into a new
-        /// <see cref="AdGroupName"/> instance.
+        /// Tries to parse the given ad_group_feed resource name in string form into a new
+        /// <see cref="AdGroupFeedName"/> instance.
         /// </summary>
         /// <remarks>
-        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="adGroupName"/> is null,
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="adGroupFeedName"/> is null,
         /// as this would usually indicate a programming error rather than a data error.
         /// </remarks>
-        /// <param name="adGroupName">The ad_group resource name in string form. Must not be <c>null</c>.</param>
-        /// <param name="result">When this method returns, the parsed <see cref="AdGroupName"/>,
+        /// <param name="adGroupFeedName">The ad_group_feed resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="AdGroupFeedName"/>,
         /// or <c>null</c> if parsing fails.</param>
         /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
-        public static bool TryParse(string adGroupName, out AdGroupName result)
+        public static bool TryParse(string adGroupFeedName, out AdGroupFeedName result)
         {
-            gax::GaxPreconditions.CheckNotNull(adGroupName, nameof(adGroupName));
+            gax::GaxPreconditions.CheckNotNull(adGroupFeedName, nameof(adGroupFeedName));
             gax::TemplatedResourceName resourceName;
-            if (s_template.TryParseName(adGroupName, out resourceName))
+            if (s_template.TryParseName(adGroupFeedName, out resourceName))
             {
-                result = new AdGroupName(resourceName[0], resourceName[1]);
+                result = new AdGroupFeedName(resourceName[0], resourceName[1]);
                 return true;
             }
             else
@@ -621,15 +713,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
-        /// Constructs a new instance of the <see cref="AdGroupName"/> resource name class
+        /// Constructs a new instance of the <see cref="AdGroupFeedName"/> resource name class
         /// from its component parts.
         /// </summary>
         /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
-        /// <param name="adGroupId">The adGroup ID. Must not be <c>null</c>.</param>
-        public AdGroupName(string customerId, string adGroupId)
+        /// <param name="adGroupFeedId">The adGroupFeed ID. Must not be <c>null</c>.</param>
+        public AdGroupFeedName(string customerId, string adGroupFeedId)
         {
             CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
-            AdGroupId = gax::GaxPreconditions.CheckNotNull(adGroupId, nameof(adGroupId));
+            AdGroupFeedId = gax::GaxPreconditions.CheckNotNull(adGroupFeedId, nameof(adGroupFeedId));
         }
 
         /// <summary>
@@ -638,30 +730,30 @@ namespace Google.Ads.GoogleAds.V0.Services
         public string CustomerId { get; }
 
         /// <summary>
-        /// The adGroup ID. Never <c>null</c>.
+        /// The adGroupFeed ID. Never <c>null</c>.
         /// </summary>
-        public string AdGroupId { get; }
+        public string AdGroupFeedId { get; }
 
         /// <inheritdoc />
         public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
 
         /// <inheritdoc />
-        public override string ToString() => s_template.Expand(CustomerId, AdGroupId);
+        public override string ToString() => s_template.Expand(CustomerId, AdGroupFeedId);
 
         /// <inheritdoc />
         public override int GetHashCode() => ToString().GetHashCode();
 
         /// <inheritdoc />
-        public override bool Equals(object obj) => Equals(obj as AdGroupName);
+        public override bool Equals(object obj) => Equals(obj as AdGroupFeedName);
 
         /// <inheritdoc />
-        public bool Equals(AdGroupName other) => ToString() == other?.ToString();
+        public bool Equals(AdGroupFeedName other) => ToString() == other?.ToString();
 
         /// <inheritdoc />
-        public static bool operator ==(AdGroupName a, AdGroupName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+        public static bool operator ==(AdGroupFeedName a, AdGroupFeedName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
 
         /// <inheritdoc />
-        public static bool operator !=(AdGroupName a, AdGroupName b) => !(a == b);
+        public static bool operator !=(AdGroupFeedName a, AdGroupFeedName b) => !(a == b);
     }
 
     /// <summary>
@@ -941,6 +1033,190 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
+    /// Resource name for the 'campaign' resource.
+    /// </summary>
+    public sealed partial class CampaignName : gax::IResourceName, sys::IEquatable<CampaignName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaigns/{campaign}");
+
+        /// <summary>
+        /// Parses the given campaign resource name in string form into a new
+        /// <see cref="CampaignName"/> instance.
+        /// </summary>
+        /// <param name="campaignName">The campaign resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="CampaignName"/> if successful.</returns>
+        public static CampaignName Parse(string campaignName)
+        {
+            gax::GaxPreconditions.CheckNotNull(campaignName, nameof(campaignName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(campaignName);
+            return new CampaignName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given campaign resource name in string form into a new
+        /// <see cref="CampaignName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="campaignName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="campaignName">The campaign resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="CampaignName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string campaignName, out CampaignName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(campaignName, nameof(campaignName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(campaignName, out resourceName))
+            {
+                result = new CampaignName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="CampaignName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignId">The campaign ID. Must not be <c>null</c>.</param>
+        public CampaignName(string customerId, string campaignId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            CampaignId = gax::GaxPreconditions.CheckNotNull(campaignId, nameof(campaignId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The campaign ID. Never <c>null</c>.
+        /// </summary>
+        public string CampaignId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, CampaignId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as CampaignName);
+
+        /// <inheritdoc />
+        public bool Equals(CampaignName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(CampaignName a, CampaignName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(CampaignName a, CampaignName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'campaign_audience_view' resource.
+    /// </summary>
+    public sealed partial class CampaignAudienceViewName : gax::IResourceName, sys::IEquatable<CampaignAudienceViewName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaignAudienceViews/{campaign_audience_view}");
+
+        /// <summary>
+        /// Parses the given campaign_audience_view resource name in string form into a new
+        /// <see cref="CampaignAudienceViewName"/> instance.
+        /// </summary>
+        /// <param name="campaignAudienceViewName">The campaign_audience_view resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="CampaignAudienceViewName"/> if successful.</returns>
+        public static CampaignAudienceViewName Parse(string campaignAudienceViewName)
+        {
+            gax::GaxPreconditions.CheckNotNull(campaignAudienceViewName, nameof(campaignAudienceViewName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(campaignAudienceViewName);
+            return new CampaignAudienceViewName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given campaign_audience_view resource name in string form into a new
+        /// <see cref="CampaignAudienceViewName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="campaignAudienceViewName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="campaignAudienceViewName">The campaign_audience_view resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="CampaignAudienceViewName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string campaignAudienceViewName, out CampaignAudienceViewName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(campaignAudienceViewName, nameof(campaignAudienceViewName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(campaignAudienceViewName, out resourceName))
+            {
+                result = new CampaignAudienceViewName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="CampaignAudienceViewName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignAudienceViewId">The campaignAudienceView ID. Must not be <c>null</c>.</param>
+        public CampaignAudienceViewName(string customerId, string campaignAudienceViewId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            CampaignAudienceViewId = gax::GaxPreconditions.CheckNotNull(campaignAudienceViewId, nameof(campaignAudienceViewId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The campaignAudienceView ID. Never <c>null</c>.
+        /// </summary>
+        public string CampaignAudienceViewId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, CampaignAudienceViewId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as CampaignAudienceViewName);
+
+        /// <inheritdoc />
+        public bool Equals(CampaignAudienceViewName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(CampaignAudienceViewName a, CampaignAudienceViewName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(CampaignAudienceViewName a, CampaignAudienceViewName b) => !(a == b);
+    }
+
+    /// <summary>
     /// Resource name for the 'campaign_bid_modifier' resource.
     /// </summary>
     public sealed partial class CampaignBidModifierName : gax::IResourceName, sys::IEquatable<CampaignBidModifierName>
@@ -1217,6 +1493,98 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
+    /// Resource name for the 'campaign_feed' resource.
+    /// </summary>
+    public sealed partial class CampaignFeedName : gax::IResourceName, sys::IEquatable<CampaignFeedName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaignFeeds/{campaign_feed}");
+
+        /// <summary>
+        /// Parses the given campaign_feed resource name in string form into a new
+        /// <see cref="CampaignFeedName"/> instance.
+        /// </summary>
+        /// <param name="campaignFeedName">The campaign_feed resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="CampaignFeedName"/> if successful.</returns>
+        public static CampaignFeedName Parse(string campaignFeedName)
+        {
+            gax::GaxPreconditions.CheckNotNull(campaignFeedName, nameof(campaignFeedName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(campaignFeedName);
+            return new CampaignFeedName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given campaign_feed resource name in string form into a new
+        /// <see cref="CampaignFeedName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="campaignFeedName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="campaignFeedName">The campaign_feed resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="CampaignFeedName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string campaignFeedName, out CampaignFeedName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(campaignFeedName, nameof(campaignFeedName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(campaignFeedName, out resourceName))
+            {
+                result = new CampaignFeedName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="CampaignFeedName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignFeedId">The campaignFeed ID. Must not be <c>null</c>.</param>
+        public CampaignFeedName(string customerId, string campaignFeedId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            CampaignFeedId = gax::GaxPreconditions.CheckNotNull(campaignFeedId, nameof(campaignFeedId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The campaignFeed ID. Never <c>null</c>.
+        /// </summary>
+        public string CampaignFeedId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, CampaignFeedId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as CampaignFeedName);
+
+        /// <inheritdoc />
+        public bool Equals(CampaignFeedName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(CampaignFeedName a, CampaignFeedName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(CampaignFeedName a, CampaignFeedName b) => !(a == b);
+    }
+
+    /// <summary>
     /// Resource name for the 'campaign_group' resource.
     /// </summary>
     public sealed partial class CampaignGroupName : gax::IResourceName, sys::IEquatable<CampaignGroupName>
@@ -1309,98 +1677,6 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
-    /// Resource name for the 'campaign' resource.
-    /// </summary>
-    public sealed partial class CampaignName : gax::IResourceName, sys::IEquatable<CampaignName>
-    {
-        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaigns/{campaign}");
-
-        /// <summary>
-        /// Parses the given campaign resource name in string form into a new
-        /// <see cref="CampaignName"/> instance.
-        /// </summary>
-        /// <param name="campaignName">The campaign resource name in string form. Must not be <c>null</c>.</param>
-        /// <returns>The parsed <see cref="CampaignName"/> if successful.</returns>
-        public static CampaignName Parse(string campaignName)
-        {
-            gax::GaxPreconditions.CheckNotNull(campaignName, nameof(campaignName));
-            gax::TemplatedResourceName resourceName = s_template.ParseName(campaignName);
-            return new CampaignName(resourceName[0], resourceName[1]);
-        }
-
-        /// <summary>
-        /// Tries to parse the given campaign resource name in string form into a new
-        /// <see cref="CampaignName"/> instance.
-        /// </summary>
-        /// <remarks>
-        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="campaignName"/> is null,
-        /// as this would usually indicate a programming error rather than a data error.
-        /// </remarks>
-        /// <param name="campaignName">The campaign resource name in string form. Must not be <c>null</c>.</param>
-        /// <param name="result">When this method returns, the parsed <see cref="CampaignName"/>,
-        /// or <c>null</c> if parsing fails.</param>
-        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
-        public static bool TryParse(string campaignName, out CampaignName result)
-        {
-            gax::GaxPreconditions.CheckNotNull(campaignName, nameof(campaignName));
-            gax::TemplatedResourceName resourceName;
-            if (s_template.TryParseName(campaignName, out resourceName))
-            {
-                result = new CampaignName(resourceName[0], resourceName[1]);
-                return true;
-            }
-            else
-            {
-                result = null;
-                return false;
-            }
-        }
-
-        /// <summary>
-        /// Constructs a new instance of the <see cref="CampaignName"/> resource name class
-        /// from its component parts.
-        /// </summary>
-        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
-        /// <param name="campaignId">The campaign ID. Must not be <c>null</c>.</param>
-        public CampaignName(string customerId, string campaignId)
-        {
-            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
-            CampaignId = gax::GaxPreconditions.CheckNotNull(campaignId, nameof(campaignId));
-        }
-
-        /// <summary>
-        /// The customer ID. Never <c>null</c>.
-        /// </summary>
-        public string CustomerId { get; }
-
-        /// <summary>
-        /// The campaign ID. Never <c>null</c>.
-        /// </summary>
-        public string CampaignId { get; }
-
-        /// <inheritdoc />
-        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
-
-        /// <inheritdoc />
-        public override string ToString() => s_template.Expand(CustomerId, CampaignId);
-
-        /// <inheritdoc />
-        public override int GetHashCode() => ToString().GetHashCode();
-
-        /// <inheritdoc />
-        public override bool Equals(object obj) => Equals(obj as CampaignName);
-
-        /// <inheritdoc />
-        public bool Equals(CampaignName other) => ToString() == other?.ToString();
-
-        /// <inheritdoc />
-        public static bool operator ==(CampaignName a, CampaignName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
-
-        /// <inheritdoc />
-        public static bool operator !=(CampaignName a, CampaignName b) => !(a == b);
-    }
-
-    /// <summary>
     /// Resource name for the 'campaign_shared_set' resource.
     /// </summary>
     public sealed partial class CampaignSharedSetName : gax::IResourceName, sys::IEquatable<CampaignSharedSetName>
@@ -1490,6 +1766,91 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         /// <inheritdoc />
         public static bool operator !=(CampaignSharedSetName a, CampaignSharedSetName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'carrier_constant' resource.
+    /// </summary>
+    public sealed partial class CarrierConstantName : gax::IResourceName, sys::IEquatable<CarrierConstantName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("carrierConstants/{carrier_constant}");
+
+        /// <summary>
+        /// Parses the given carrier_constant resource name in string form into a new
+        /// <see cref="CarrierConstantName"/> instance.
+        /// </summary>
+        /// <param name="carrierConstantName">The carrier_constant resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="CarrierConstantName"/> if successful.</returns>
+        public static CarrierConstantName Parse(string carrierConstantName)
+        {
+            gax::GaxPreconditions.CheckNotNull(carrierConstantName, nameof(carrierConstantName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(carrierConstantName);
+            return new CarrierConstantName(resourceName[0]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given carrier_constant resource name in string form into a new
+        /// <see cref="CarrierConstantName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="carrierConstantName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="carrierConstantName">The carrier_constant resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="CarrierConstantName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string carrierConstantName, out CarrierConstantName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(carrierConstantName, nameof(carrierConstantName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(carrierConstantName, out resourceName))
+            {
+                result = new CarrierConstantName(resourceName[0]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="CarrierConstantName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="carrierConstantId">The carrierConstant ID. Must not be <c>null</c>.</param>
+        public CarrierConstantName(string carrierConstantId)
+        {
+            CarrierConstantId = gax::GaxPreconditions.CheckNotNull(carrierConstantId, nameof(carrierConstantId));
+        }
+
+        /// <summary>
+        /// The carrierConstant ID. Never <c>null</c>.
+        /// </summary>
+        public string CarrierConstantId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CarrierConstantId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as CarrierConstantName);
+
+        /// <inheritdoc />
+        public bool Equals(CarrierConstantName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(CarrierConstantName a, CarrierConstantName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(CarrierConstantName a, CarrierConstantName b) => !(a == b);
     }
 
     /// <summary>
@@ -1677,6 +2038,183 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
+    /// Resource name for the 'customer' resource.
+    /// </summary>
+    public sealed partial class CustomerName : gax::IResourceName, sys::IEquatable<CustomerName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}");
+
+        /// <summary>
+        /// Parses the given customer resource name in string form into a new
+        /// <see cref="CustomerName"/> instance.
+        /// </summary>
+        /// <param name="customerName">The customer resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="CustomerName"/> if successful.</returns>
+        public static CustomerName Parse(string customerName)
+        {
+            gax::GaxPreconditions.CheckNotNull(customerName, nameof(customerName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(customerName);
+            return new CustomerName(resourceName[0]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given customer resource name in string form into a new
+        /// <see cref="CustomerName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="customerName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="customerName">The customer resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="CustomerName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string customerName, out CustomerName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(customerName, nameof(customerName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(customerName, out resourceName))
+            {
+                result = new CustomerName(resourceName[0]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="CustomerName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        public CustomerName(string customerId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as CustomerName);
+
+        /// <inheritdoc />
+        public bool Equals(CustomerName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(CustomerName a, CustomerName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(CustomerName a, CustomerName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'customer_client' resource.
+    /// </summary>
+    public sealed partial class CustomerClientName : gax::IResourceName, sys::IEquatable<CustomerClientName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/customerClients/{customer_client}");
+
+        /// <summary>
+        /// Parses the given customer_client resource name in string form into a new
+        /// <see cref="CustomerClientName"/> instance.
+        /// </summary>
+        /// <param name="customerClientName">The customer_client resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="CustomerClientName"/> if successful.</returns>
+        public static CustomerClientName Parse(string customerClientName)
+        {
+            gax::GaxPreconditions.CheckNotNull(customerClientName, nameof(customerClientName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(customerClientName);
+            return new CustomerClientName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given customer_client resource name in string form into a new
+        /// <see cref="CustomerClientName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="customerClientName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="customerClientName">The customer_client resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="CustomerClientName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string customerClientName, out CustomerClientName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(customerClientName, nameof(customerClientName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(customerClientName, out resourceName))
+            {
+                result = new CustomerClientName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="CustomerClientName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="customerClientId">The customerClient ID. Must not be <c>null</c>.</param>
+        public CustomerClientName(string customerId, string customerClientId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            CustomerClientId = gax::GaxPreconditions.CheckNotNull(customerClientId, nameof(customerClientId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The customerClient ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerClientId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, CustomerClientId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as CustomerClientName);
+
+        /// <inheritdoc />
+        public bool Equals(CustomerClientName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(CustomerClientName a, CustomerClientName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(CustomerClientName a, CustomerClientName b) => !(a == b);
+    }
+
+    /// <summary>
     /// Resource name for the 'customer_client_link' resource.
     /// </summary>
     public sealed partial class CustomerClientLinkName : gax::IResourceName, sys::IEquatable<CustomerClientLinkName>
@@ -1766,6 +2304,98 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         /// <inheritdoc />
         public static bool operator !=(CustomerClientLinkName a, CustomerClientLinkName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'customer_feed' resource.
+    /// </summary>
+    public sealed partial class CustomerFeedName : gax::IResourceName, sys::IEquatable<CustomerFeedName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/customerFeeds/{customer_feed}");
+
+        /// <summary>
+        /// Parses the given customer_feed resource name in string form into a new
+        /// <see cref="CustomerFeedName"/> instance.
+        /// </summary>
+        /// <param name="customerFeedName">The customer_feed resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="CustomerFeedName"/> if successful.</returns>
+        public static CustomerFeedName Parse(string customerFeedName)
+        {
+            gax::GaxPreconditions.CheckNotNull(customerFeedName, nameof(customerFeedName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(customerFeedName);
+            return new CustomerFeedName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given customer_feed resource name in string form into a new
+        /// <see cref="CustomerFeedName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="customerFeedName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="customerFeedName">The customer_feed resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="CustomerFeedName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string customerFeedName, out CustomerFeedName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(customerFeedName, nameof(customerFeedName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(customerFeedName, out resourceName))
+            {
+                result = new CustomerFeedName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="CustomerFeedName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="customerFeedId">The customerFeed ID. Must not be <c>null</c>.</param>
+        public CustomerFeedName(string customerId, string customerFeedId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            CustomerFeedId = gax::GaxPreconditions.CheckNotNull(customerFeedId, nameof(customerFeedId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The customerFeed ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerFeedId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, CustomerFeedId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as CustomerFeedName);
+
+        /// <inheritdoc />
+        public bool Equals(CustomerFeedName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(CustomerFeedName a, CustomerFeedName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(CustomerFeedName a, CustomerFeedName b) => !(a == b);
     }
 
     /// <summary>
@@ -1861,91 +2491,6 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
-    /// Resource name for the 'customer' resource.
-    /// </summary>
-    public sealed partial class CustomerName : gax::IResourceName, sys::IEquatable<CustomerName>
-    {
-        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}");
-
-        /// <summary>
-        /// Parses the given customer resource name in string form into a new
-        /// <see cref="CustomerName"/> instance.
-        /// </summary>
-        /// <param name="customerName">The customer resource name in string form. Must not be <c>null</c>.</param>
-        /// <returns>The parsed <see cref="CustomerName"/> if successful.</returns>
-        public static CustomerName Parse(string customerName)
-        {
-            gax::GaxPreconditions.CheckNotNull(customerName, nameof(customerName));
-            gax::TemplatedResourceName resourceName = s_template.ParseName(customerName);
-            return new CustomerName(resourceName[0]);
-        }
-
-        /// <summary>
-        /// Tries to parse the given customer resource name in string form into a new
-        /// <see cref="CustomerName"/> instance.
-        /// </summary>
-        /// <remarks>
-        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="customerName"/> is null,
-        /// as this would usually indicate a programming error rather than a data error.
-        /// </remarks>
-        /// <param name="customerName">The customer resource name in string form. Must not be <c>null</c>.</param>
-        /// <param name="result">When this method returns, the parsed <see cref="CustomerName"/>,
-        /// or <c>null</c> if parsing fails.</param>
-        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
-        public static bool TryParse(string customerName, out CustomerName result)
-        {
-            gax::GaxPreconditions.CheckNotNull(customerName, nameof(customerName));
-            gax::TemplatedResourceName resourceName;
-            if (s_template.TryParseName(customerName, out resourceName))
-            {
-                result = new CustomerName(resourceName[0]);
-                return true;
-            }
-            else
-            {
-                result = null;
-                return false;
-            }
-        }
-
-        /// <summary>
-        /// Constructs a new instance of the <see cref="CustomerName"/> resource name class
-        /// from its component parts.
-        /// </summary>
-        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
-        public CustomerName(string customerId)
-        {
-            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
-        }
-
-        /// <summary>
-        /// The customer ID. Never <c>null</c>.
-        /// </summary>
-        public string CustomerId { get; }
-
-        /// <inheritdoc />
-        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
-
-        /// <inheritdoc />
-        public override string ToString() => s_template.Expand(CustomerId);
-
-        /// <inheritdoc />
-        public override int GetHashCode() => ToString().GetHashCode();
-
-        /// <inheritdoc />
-        public override bool Equals(object obj) => Equals(obj as CustomerName);
-
-        /// <inheritdoc />
-        public bool Equals(CustomerName other) => ToString() == other?.ToString();
-
-        /// <inheritdoc />
-        public static bool operator ==(CustomerName a, CustomerName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
-
-        /// <inheritdoc />
-        public static bool operator !=(CustomerName a, CustomerName b) => !(a == b);
-    }
-
-    /// <summary>
     /// Resource name for the 'display_keyword_view' resource.
     /// </summary>
     public sealed partial class DisplayKeywordViewName : gax::IResourceName, sys::IEquatable<DisplayKeywordViewName>
@@ -2035,6 +2580,282 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         /// <inheritdoc />
         public static bool operator !=(DisplayKeywordViewName a, DisplayKeywordViewName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'feed' resource.
+    /// </summary>
+    public sealed partial class FeedName : gax::IResourceName, sys::IEquatable<FeedName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/feeds/{feed}");
+
+        /// <summary>
+        /// Parses the given feed resource name in string form into a new
+        /// <see cref="FeedName"/> instance.
+        /// </summary>
+        /// <param name="feedName">The feed resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="FeedName"/> if successful.</returns>
+        public static FeedName Parse(string feedName)
+        {
+            gax::GaxPreconditions.CheckNotNull(feedName, nameof(feedName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(feedName);
+            return new FeedName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given feed resource name in string form into a new
+        /// <see cref="FeedName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="feedName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="feedName">The feed resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="FeedName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string feedName, out FeedName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(feedName, nameof(feedName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(feedName, out resourceName))
+            {
+                result = new FeedName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="FeedName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="feedId">The feed ID. Must not be <c>null</c>.</param>
+        public FeedName(string customerId, string feedId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            FeedId = gax::GaxPreconditions.CheckNotNull(feedId, nameof(feedId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The feed ID. Never <c>null</c>.
+        /// </summary>
+        public string FeedId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, FeedId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as FeedName);
+
+        /// <inheritdoc />
+        public bool Equals(FeedName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(FeedName a, FeedName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(FeedName a, FeedName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'feed_item' resource.
+    /// </summary>
+    public sealed partial class FeedItemName : gax::IResourceName, sys::IEquatable<FeedItemName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/feedItems/{feed_item}");
+
+        /// <summary>
+        /// Parses the given feed_item resource name in string form into a new
+        /// <see cref="FeedItemName"/> instance.
+        /// </summary>
+        /// <param name="feedItemName">The feed_item resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="FeedItemName"/> if successful.</returns>
+        public static FeedItemName Parse(string feedItemName)
+        {
+            gax::GaxPreconditions.CheckNotNull(feedItemName, nameof(feedItemName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(feedItemName);
+            return new FeedItemName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given feed_item resource name in string form into a new
+        /// <see cref="FeedItemName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="feedItemName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="feedItemName">The feed_item resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="FeedItemName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string feedItemName, out FeedItemName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(feedItemName, nameof(feedItemName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(feedItemName, out resourceName))
+            {
+                result = new FeedItemName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="FeedItemName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="feedItemId">The feedItem ID. Must not be <c>null</c>.</param>
+        public FeedItemName(string customerId, string feedItemId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            FeedItemId = gax::GaxPreconditions.CheckNotNull(feedItemId, nameof(feedItemId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The feedItem ID. Never <c>null</c>.
+        /// </summary>
+        public string FeedItemId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, FeedItemId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as FeedItemName);
+
+        /// <inheritdoc />
+        public bool Equals(FeedItemName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(FeedItemName a, FeedItemName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(FeedItemName a, FeedItemName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'feed_mapping' resource.
+    /// </summary>
+    public sealed partial class FeedMappingName : gax::IResourceName, sys::IEquatable<FeedMappingName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/feedMappings/{feed_mapping}");
+
+        /// <summary>
+        /// Parses the given feed_mapping resource name in string form into a new
+        /// <see cref="FeedMappingName"/> instance.
+        /// </summary>
+        /// <param name="feedMappingName">The feed_mapping resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="FeedMappingName"/> if successful.</returns>
+        public static FeedMappingName Parse(string feedMappingName)
+        {
+            gax::GaxPreconditions.CheckNotNull(feedMappingName, nameof(feedMappingName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(feedMappingName);
+            return new FeedMappingName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given feed_mapping resource name in string form into a new
+        /// <see cref="FeedMappingName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="feedMappingName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="feedMappingName">The feed_mapping resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="FeedMappingName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string feedMappingName, out FeedMappingName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(feedMappingName, nameof(feedMappingName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(feedMappingName, out resourceName))
+            {
+                result = new FeedMappingName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="FeedMappingName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="feedMappingId">The feedMapping ID. Must not be <c>null</c>.</param>
+        public FeedMappingName(string customerId, string feedMappingId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            FeedMappingId = gax::GaxPreconditions.CheckNotNull(feedMappingId, nameof(feedMappingId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The feedMapping ID. Never <c>null</c>.
+        /// </summary>
+        public string FeedMappingId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, FeedMappingId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as FeedMappingName);
+
+        /// <inheritdoc />
+        public bool Equals(FeedMappingName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(FeedMappingName a, FeedMappingName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(FeedMappingName a, FeedMappingName b) => !(a == b);
     }
 
     /// <summary>
@@ -2392,6 +3213,551 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
+    /// Resource name for the 'hotel_performance_view' resource.
+    /// </summary>
+    public sealed partial class HotelPerformanceViewName : gax::IResourceName, sys::IEquatable<HotelPerformanceViewName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/hotelPerformanceView");
+
+        /// <summary>
+        /// Parses the given hotel_performance_view resource name in string form into a new
+        /// <see cref="HotelPerformanceViewName"/> instance.
+        /// </summary>
+        /// <param name="hotelPerformanceViewName">The hotel_performance_view resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="HotelPerformanceViewName"/> if successful.</returns>
+        public static HotelPerformanceViewName Parse(string hotelPerformanceViewName)
+        {
+            gax::GaxPreconditions.CheckNotNull(hotelPerformanceViewName, nameof(hotelPerformanceViewName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(hotelPerformanceViewName);
+            return new HotelPerformanceViewName(resourceName[0]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given hotel_performance_view resource name in string form into a new
+        /// <see cref="HotelPerformanceViewName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="hotelPerformanceViewName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="hotelPerformanceViewName">The hotel_performance_view resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="HotelPerformanceViewName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string hotelPerformanceViewName, out HotelPerformanceViewName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(hotelPerformanceViewName, nameof(hotelPerformanceViewName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(hotelPerformanceViewName, out resourceName))
+            {
+                result = new HotelPerformanceViewName(resourceName[0]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="HotelPerformanceViewName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        public HotelPerformanceViewName(string customerId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as HotelPerformanceViewName);
+
+        /// <inheritdoc />
+        public bool Equals(HotelPerformanceViewName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(HotelPerformanceViewName a, HotelPerformanceViewName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(HotelPerformanceViewName a, HotelPerformanceViewName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'keyword_plan' resource.
+    /// </summary>
+    public sealed partial class KeywordPlanName : gax::IResourceName, sys::IEquatable<KeywordPlanName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlans/{keyword_plan}");
+
+        /// <summary>
+        /// Parses the given keyword_plan resource name in string form into a new
+        /// <see cref="KeywordPlanName"/> instance.
+        /// </summary>
+        /// <param name="keywordPlanName">The keyword_plan resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="KeywordPlanName"/> if successful.</returns>
+        public static KeywordPlanName Parse(string keywordPlanName)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanName, nameof(keywordPlanName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(keywordPlanName);
+            return new KeywordPlanName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given keyword_plan resource name in string form into a new
+        /// <see cref="KeywordPlanName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="keywordPlanName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="keywordPlanName">The keyword_plan resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="KeywordPlanName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string keywordPlanName, out KeywordPlanName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanName, nameof(keywordPlanName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(keywordPlanName, out resourceName))
+            {
+                result = new KeywordPlanName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="KeywordPlanName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanId">The keywordPlan ID. Must not be <c>null</c>.</param>
+        public KeywordPlanName(string customerId, string keywordPlanId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            KeywordPlanId = gax::GaxPreconditions.CheckNotNull(keywordPlanId, nameof(keywordPlanId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The keywordPlan ID. Never <c>null</c>.
+        /// </summary>
+        public string KeywordPlanId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, KeywordPlanId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as KeywordPlanName);
+
+        /// <inheritdoc />
+        public bool Equals(KeywordPlanName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(KeywordPlanName a, KeywordPlanName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(KeywordPlanName a, KeywordPlanName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'keyword_plan_ad_group' resource.
+    /// </summary>
+    public sealed partial class KeywordPlanAdGroupName : gax::IResourceName, sys::IEquatable<KeywordPlanAdGroupName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlanAdGroups/{keyword_plan_ad_group}");
+
+        /// <summary>
+        /// Parses the given keyword_plan_ad_group resource name in string form into a new
+        /// <see cref="KeywordPlanAdGroupName"/> instance.
+        /// </summary>
+        /// <param name="keywordPlanAdGroupName">The keyword_plan_ad_group resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="KeywordPlanAdGroupName"/> if successful.</returns>
+        public static KeywordPlanAdGroupName Parse(string keywordPlanAdGroupName)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanAdGroupName, nameof(keywordPlanAdGroupName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(keywordPlanAdGroupName);
+            return new KeywordPlanAdGroupName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given keyword_plan_ad_group resource name in string form into a new
+        /// <see cref="KeywordPlanAdGroupName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="keywordPlanAdGroupName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="keywordPlanAdGroupName">The keyword_plan_ad_group resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="KeywordPlanAdGroupName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string keywordPlanAdGroupName, out KeywordPlanAdGroupName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanAdGroupName, nameof(keywordPlanAdGroupName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(keywordPlanAdGroupName, out resourceName))
+            {
+                result = new KeywordPlanAdGroupName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="KeywordPlanAdGroupName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanAdGroupId">The keywordPlanAdGroup ID. Must not be <c>null</c>.</param>
+        public KeywordPlanAdGroupName(string customerId, string keywordPlanAdGroupId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            KeywordPlanAdGroupId = gax::GaxPreconditions.CheckNotNull(keywordPlanAdGroupId, nameof(keywordPlanAdGroupId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The keywordPlanAdGroup ID. Never <c>null</c>.
+        /// </summary>
+        public string KeywordPlanAdGroupId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, KeywordPlanAdGroupId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as KeywordPlanAdGroupName);
+
+        /// <inheritdoc />
+        public bool Equals(KeywordPlanAdGroupName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(KeywordPlanAdGroupName a, KeywordPlanAdGroupName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(KeywordPlanAdGroupName a, KeywordPlanAdGroupName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'keyword_plan_campaign' resource.
+    /// </summary>
+    public sealed partial class KeywordPlanCampaignName : gax::IResourceName, sys::IEquatable<KeywordPlanCampaignName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlanCampaigns/{keyword_plan_campaign}");
+
+        /// <summary>
+        /// Parses the given keyword_plan_campaign resource name in string form into a new
+        /// <see cref="KeywordPlanCampaignName"/> instance.
+        /// </summary>
+        /// <param name="keywordPlanCampaignName">The keyword_plan_campaign resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="KeywordPlanCampaignName"/> if successful.</returns>
+        public static KeywordPlanCampaignName Parse(string keywordPlanCampaignName)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanCampaignName, nameof(keywordPlanCampaignName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(keywordPlanCampaignName);
+            return new KeywordPlanCampaignName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given keyword_plan_campaign resource name in string form into a new
+        /// <see cref="KeywordPlanCampaignName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="keywordPlanCampaignName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="keywordPlanCampaignName">The keyword_plan_campaign resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="KeywordPlanCampaignName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string keywordPlanCampaignName, out KeywordPlanCampaignName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanCampaignName, nameof(keywordPlanCampaignName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(keywordPlanCampaignName, out resourceName))
+            {
+                result = new KeywordPlanCampaignName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="KeywordPlanCampaignName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanCampaignId">The keywordPlanCampaign ID. Must not be <c>null</c>.</param>
+        public KeywordPlanCampaignName(string customerId, string keywordPlanCampaignId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            KeywordPlanCampaignId = gax::GaxPreconditions.CheckNotNull(keywordPlanCampaignId, nameof(keywordPlanCampaignId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The keywordPlanCampaign ID. Never <c>null</c>.
+        /// </summary>
+        public string KeywordPlanCampaignId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, KeywordPlanCampaignId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as KeywordPlanCampaignName);
+
+        /// <inheritdoc />
+        public bool Equals(KeywordPlanCampaignName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(KeywordPlanCampaignName a, KeywordPlanCampaignName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(KeywordPlanCampaignName a, KeywordPlanCampaignName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'keyword_plan_keyword' resource.
+    /// </summary>
+    public sealed partial class KeywordPlanKeywordName : gax::IResourceName, sys::IEquatable<KeywordPlanKeywordName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlanKeywords/{keyword_plan_keyword}");
+
+        /// <summary>
+        /// Parses the given keyword_plan_keyword resource name in string form into a new
+        /// <see cref="KeywordPlanKeywordName"/> instance.
+        /// </summary>
+        /// <param name="keywordPlanKeywordName">The keyword_plan_keyword resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="KeywordPlanKeywordName"/> if successful.</returns>
+        public static KeywordPlanKeywordName Parse(string keywordPlanKeywordName)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanKeywordName, nameof(keywordPlanKeywordName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(keywordPlanKeywordName);
+            return new KeywordPlanKeywordName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given keyword_plan_keyword resource name in string form into a new
+        /// <see cref="KeywordPlanKeywordName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="keywordPlanKeywordName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="keywordPlanKeywordName">The keyword_plan_keyword resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="KeywordPlanKeywordName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string keywordPlanKeywordName, out KeywordPlanKeywordName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanKeywordName, nameof(keywordPlanKeywordName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(keywordPlanKeywordName, out resourceName))
+            {
+                result = new KeywordPlanKeywordName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="KeywordPlanKeywordName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanKeywordId">The keywordPlanKeyword ID. Must not be <c>null</c>.</param>
+        public KeywordPlanKeywordName(string customerId, string keywordPlanKeywordId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            KeywordPlanKeywordId = gax::GaxPreconditions.CheckNotNull(keywordPlanKeywordId, nameof(keywordPlanKeywordId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The keywordPlanKeyword ID. Never <c>null</c>.
+        /// </summary>
+        public string KeywordPlanKeywordId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, KeywordPlanKeywordId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as KeywordPlanKeywordName);
+
+        /// <inheritdoc />
+        public bool Equals(KeywordPlanKeywordName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(KeywordPlanKeywordName a, KeywordPlanKeywordName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(KeywordPlanKeywordName a, KeywordPlanKeywordName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'keyword_plan_negative_keyword' resource.
+    /// </summary>
+    public sealed partial class KeywordPlanNegativeKeywordName : gax::IResourceName, sys::IEquatable<KeywordPlanNegativeKeywordName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlanNegativeKeywords/{keyword_plan_negative_keyword}");
+
+        /// <summary>
+        /// Parses the given keyword_plan_negative_keyword resource name in string form into a new
+        /// <see cref="KeywordPlanNegativeKeywordName"/> instance.
+        /// </summary>
+        /// <param name="keywordPlanNegativeKeywordName">The keyword_plan_negative_keyword resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="KeywordPlanNegativeKeywordName"/> if successful.</returns>
+        public static KeywordPlanNegativeKeywordName Parse(string keywordPlanNegativeKeywordName)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanNegativeKeywordName, nameof(keywordPlanNegativeKeywordName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(keywordPlanNegativeKeywordName);
+            return new KeywordPlanNegativeKeywordName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given keyword_plan_negative_keyword resource name in string form into a new
+        /// <see cref="KeywordPlanNegativeKeywordName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="keywordPlanNegativeKeywordName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="keywordPlanNegativeKeywordName">The keyword_plan_negative_keyword resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="KeywordPlanNegativeKeywordName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string keywordPlanNegativeKeywordName, out KeywordPlanNegativeKeywordName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(keywordPlanNegativeKeywordName, nameof(keywordPlanNegativeKeywordName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(keywordPlanNegativeKeywordName, out resourceName))
+            {
+                result = new KeywordPlanNegativeKeywordName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="KeywordPlanNegativeKeywordName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanNegativeKeywordId">The keywordPlanNegativeKeyword ID. Must not be <c>null</c>.</param>
+        public KeywordPlanNegativeKeywordName(string customerId, string keywordPlanNegativeKeywordId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            KeywordPlanNegativeKeywordId = gax::GaxPreconditions.CheckNotNull(keywordPlanNegativeKeywordId, nameof(keywordPlanNegativeKeywordId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The keywordPlanNegativeKeyword ID. Never <c>null</c>.
+        /// </summary>
+        public string KeywordPlanNegativeKeywordId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, KeywordPlanNegativeKeywordId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as KeywordPlanNegativeKeywordName);
+
+        /// <inheritdoc />
+        public bool Equals(KeywordPlanNegativeKeywordName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(KeywordPlanNegativeKeywordName a, KeywordPlanNegativeKeywordName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(KeywordPlanNegativeKeywordName a, KeywordPlanNegativeKeywordName b) => !(a == b);
+    }
+
+    /// <summary>
     /// Resource name for the 'keyword_view' resource.
     /// </summary>
     public sealed partial class KeywordViewName : gax::IResourceName, sys::IEquatable<KeywordViewName>
@@ -2481,6 +3847,91 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         /// <inheritdoc />
         public static bool operator !=(KeywordViewName a, KeywordViewName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'language_constant' resource.
+    /// </summary>
+    public sealed partial class LanguageConstantName : gax::IResourceName, sys::IEquatable<LanguageConstantName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("languageConstants/{language_constant}");
+
+        /// <summary>
+        /// Parses the given language_constant resource name in string form into a new
+        /// <see cref="LanguageConstantName"/> instance.
+        /// </summary>
+        /// <param name="languageConstantName">The language_constant resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="LanguageConstantName"/> if successful.</returns>
+        public static LanguageConstantName Parse(string languageConstantName)
+        {
+            gax::GaxPreconditions.CheckNotNull(languageConstantName, nameof(languageConstantName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(languageConstantName);
+            return new LanguageConstantName(resourceName[0]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given language_constant resource name in string form into a new
+        /// <see cref="LanguageConstantName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="languageConstantName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="languageConstantName">The language_constant resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="LanguageConstantName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string languageConstantName, out LanguageConstantName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(languageConstantName, nameof(languageConstantName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(languageConstantName, out resourceName))
+            {
+                result = new LanguageConstantName(resourceName[0]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="LanguageConstantName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="languageConstantId">The languageConstant ID. Must not be <c>null</c>.</param>
+        public LanguageConstantName(string languageConstantId)
+        {
+            LanguageConstantId = gax::GaxPreconditions.CheckNotNull(languageConstantId, nameof(languageConstantId));
+        }
+
+        /// <summary>
+        /// The languageConstant ID. Never <c>null</c>.
+        /// </summary>
+        public string LanguageConstantId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(LanguageConstantId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as LanguageConstantName);
+
+        /// <inheritdoc />
+        public bool Equals(LanguageConstantName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(LanguageConstantName a, LanguageConstantName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(LanguageConstantName a, LanguageConstantName b) => !(a == b);
     }
 
     /// <summary>
@@ -2944,6 +4395,98 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
+    /// Resource name for the 'search_term_view' resource.
+    /// </summary>
+    public sealed partial class SearchTermViewName : gax::IResourceName, sys::IEquatable<SearchTermViewName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/searchTermViews/{search_term_view}");
+
+        /// <summary>
+        /// Parses the given search_term_view resource name in string form into a new
+        /// <see cref="SearchTermViewName"/> instance.
+        /// </summary>
+        /// <param name="searchTermViewName">The search_term_view resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="SearchTermViewName"/> if successful.</returns>
+        public static SearchTermViewName Parse(string searchTermViewName)
+        {
+            gax::GaxPreconditions.CheckNotNull(searchTermViewName, nameof(searchTermViewName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(searchTermViewName);
+            return new SearchTermViewName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given search_term_view resource name in string form into a new
+        /// <see cref="SearchTermViewName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="searchTermViewName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="searchTermViewName">The search_term_view resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="SearchTermViewName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string searchTermViewName, out SearchTermViewName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(searchTermViewName, nameof(searchTermViewName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(searchTermViewName, out resourceName))
+            {
+                result = new SearchTermViewName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="SearchTermViewName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="searchTermViewId">The searchTermView ID. Must not be <c>null</c>.</param>
+        public SearchTermViewName(string customerId, string searchTermViewId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            SearchTermViewId = gax::GaxPreconditions.CheckNotNull(searchTermViewId, nameof(searchTermViewId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The searchTermView ID. Never <c>null</c>.
+        /// </summary>
+        public string SearchTermViewId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, SearchTermViewId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as SearchTermViewName);
+
+        /// <inheritdoc />
+        public bool Equals(SearchTermViewName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(SearchTermViewName a, SearchTermViewName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(SearchTermViewName a, SearchTermViewName b) => !(a == b);
+    }
+
+    /// <summary>
     /// Resource name for the 'shared_criteria' resource.
     /// </summary>
     public sealed partial class SharedCriteriaName : gax::IResourceName, sys::IEquatable<SharedCriteriaName>
@@ -3302,6 +4845,190 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         /// <inheritdoc />
         public static bool operator !=(TopicViewName a, TopicViewName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'user_interest' resource.
+    /// </summary>
+    public sealed partial class UserInterestName : gax::IResourceName, sys::IEquatable<UserInterestName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/userInterests/{user_interest}");
+
+        /// <summary>
+        /// Parses the given user_interest resource name in string form into a new
+        /// <see cref="UserInterestName"/> instance.
+        /// </summary>
+        /// <param name="userInterestName">The user_interest resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="UserInterestName"/> if successful.</returns>
+        public static UserInterestName Parse(string userInterestName)
+        {
+            gax::GaxPreconditions.CheckNotNull(userInterestName, nameof(userInterestName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(userInterestName);
+            return new UserInterestName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given user_interest resource name in string form into a new
+        /// <see cref="UserInterestName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="userInterestName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="userInterestName">The user_interest resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="UserInterestName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string userInterestName, out UserInterestName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(userInterestName, nameof(userInterestName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(userInterestName, out resourceName))
+            {
+                result = new UserInterestName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="UserInterestName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="userInterestId">The userInterest ID. Must not be <c>null</c>.</param>
+        public UserInterestName(string customerId, string userInterestId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            UserInterestId = gax::GaxPreconditions.CheckNotNull(userInterestId, nameof(userInterestId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The userInterest ID. Never <c>null</c>.
+        /// </summary>
+        public string UserInterestId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, UserInterestId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as UserInterestName);
+
+        /// <inheritdoc />
+        public bool Equals(UserInterestName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(UserInterestName a, UserInterestName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(UserInterestName a, UserInterestName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'user_list' resource.
+    /// </summary>
+    public sealed partial class UserListName : gax::IResourceName, sys::IEquatable<UserListName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/userLists/{user_list}");
+
+        /// <summary>
+        /// Parses the given user_list resource name in string form into a new
+        /// <see cref="UserListName"/> instance.
+        /// </summary>
+        /// <param name="userListName">The user_list resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="UserListName"/> if successful.</returns>
+        public static UserListName Parse(string userListName)
+        {
+            gax::GaxPreconditions.CheckNotNull(userListName, nameof(userListName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(userListName);
+            return new UserListName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given user_list resource name in string form into a new
+        /// <see cref="UserListName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="userListName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="userListName">The user_list resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="UserListName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string userListName, out UserListName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(userListName, nameof(userListName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(userListName, out resourceName))
+            {
+                result = new UserListName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="UserListName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="userListId">The userList ID. Must not be <c>null</c>.</param>
+        public UserListName(string customerId, string userListId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            UserListId = gax::GaxPreconditions.CheckNotNull(userListId, nameof(userListId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The userList ID. Never <c>null</c>.
+        /// </summary>
+        public string UserListId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, UserListId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as UserListName);
+
+        /// <inheritdoc />
+        public bool Equals(UserListName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(UserListName a, UserListName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(UserListName a, UserListName b) => !(a == b);
     }
 
     /// <summary>

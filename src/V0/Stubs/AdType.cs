@@ -25,18 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Citnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF90eXBlLnByb3Rv",
-            "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyKPAgoKQWRUeXBlRW51",
-            "bSKAAgoGQWRUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsK",
+            "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyKkAgoKQWRUeXBlRW51",
+            "bSKVAgoGQWRUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsK",
             "B1RFWFRfQUQQAhIUChBFWFBBTkRFRF9URVhUX0FEEAMSFQoRRFlOQU1JQ19T",
             "RUFSQ0hfQUQQBBIZChVSRVNQT05TSVZFX0RJU1BMQVlfQUQQBRIQCgxDQUxM",
             "X09OTFlfQUQQBhIeChpFWFBBTkRFRF9EWU5BTUlDX1NFQVJDSF9BRBAHEgwK",
             "CEhPVEVMX0FEEAgSFQoRU0hPUFBJTkdfU01BUlRfQUQQCRIXChNTSE9QUElO",
-            "R19QUk9EVUNUX0FEEAoSEwoPVklERU9fT1VUU1RSRUFNEAtCvAEKIWNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0ILQWRUeXBlUHJvdG9QAVpC",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVt",
-            "c2IGcHJvdG8z"));
+            "R19QUk9EVUNUX0FEEAoSDAoIVklERU9fQUQQDBIMCghHTUFJTF9BRBANEgwK",
+            "CElNQUdFX0FEEA5CvAEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
+            "bnVtc0ILQWRUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
+            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogID",
+            "R0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -204,9 +204,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("SHOPPING_PRODUCT_AD")] ShoppingProductAd = 10,
         /// <summary>
-        /// Video outstream ad.
+        /// The ad is a video ad.
         /// </summary>
-        [pbr::OriginalName("VIDEO_OUTSTREAM")] VideoOutstream = 11,
+        [pbr::OriginalName("VIDEO_AD")] VideoAd = 12,
+        /// <summary>
+        /// This ad is a Gmail ad.
+        /// </summary>
+        [pbr::OriginalName("GMAIL_AD")] GmailAd = 13,
+        /// <summary>
+        /// This ad is an Image ad.
+        /// </summary>
+        [pbr::OriginalName("IMAGE_AD")] ImageAd = 14,
       }
 
     }

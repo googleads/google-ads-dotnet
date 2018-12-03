@@ -25,18 +25,21 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jcml0ZXJpb25fdHlw",
-            "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMioQIKEUNy",
-            "aXRlcmlvblR5cGVFbnVtIosCCg1Dcml0ZXJpb25UeXBlEg8KC1VOU1BFQ0lG",
+            "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMikgMKEUNy",
+            "aXRlcmlvblR5cGVFbnVtIvwCCg1Dcml0ZXJpb25UeXBlEg8KC1VOU1BFQ0lG",
             "SUVEEAASCwoHVU5LTk9XThABEgsKB0tFWVdPUkQQAhINCglQTEFDRU1FTlQQ",
             "AxIKCgZERVZJQ0UQBhIMCghMT0NBVElPThAHEhEKDUxJU1RJTkdfR1JPVVAQ",
             "CBIPCgtBRF9TQ0hFRFVMRRAJEg0KCUFHRV9SQU5HRRAKEgoKBkdFTkRFUhAL",
             "EhAKDElOQ09NRV9SQU5HRRAMEhMKD1BBUkVOVEFMX1NUQVRVUxANEhEKDVlP",
-            "VVRVQkVfVklERU8QDhITCg9ZT1VUVUJFX0NIQU5ORUwQDxINCglQUk9YSU1J",
-            "VFkQERIJCgVUT1BJQxASQsMBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAuZW51bXNCEkNyaXRlcmlvblR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51",
-            "bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVt",
-            "c8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1zYgZwcm90bzM="));
+            "VVRVQkVfVklERU8QDhITCg9ZT1VUVUJFX0NIQU5ORUwQDxINCglVU0VSX0xJ",
+            "U1QQEBINCglQUk9YSU1JVFkQERIJCgVUT1BJQxASEhEKDUxJU1RJTkdfU0NP",
+            "UEUQExIMCghMQU5HVUFHRRAUEgwKCElQX0JMT0NLEBUSEQoNQ09OVEVOVF9M",
+            "QUJFTBAWEgsKB0NBUlJJRVIQFxIRCg1VU0VSX0lOVEVSRVNUEBhCwwEKIWNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0ISQ3JpdGVyaW9uVHlw",
+            "ZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2ds",
+            "ZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVB",
+            "ZHNcVjBcRW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -214,13 +217,41 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("YOUTUBE_CHANNEL")] YoutubeChannel = 15,
         /// <summary>
+        /// User list.
+        /// </summary>
+        [pbr::OriginalName("USER_LIST")] UserList = 16,
+        /// <summary>
         /// Proximity.
         /// </summary>
         [pbr::OriginalName("PROXIMITY")] Proximity = 17,
         /// <summary>
-        /// A topic target on the content network (e.g. "Pets &amp; Animals").
+        /// A topic target on the display network (e.g. "Pets &amp; Animals").
         /// </summary>
         [pbr::OriginalName("TOPIC")] Topic = 18,
+        /// <summary>
+        /// Listing scope to target.
+        /// </summary>
+        [pbr::OriginalName("LISTING_SCOPE")] ListingScope = 19,
+        /// <summary>
+        /// Language.
+        /// </summary>
+        [pbr::OriginalName("LANGUAGE")] Language = 20,
+        /// <summary>
+        /// IpBlock.
+        /// </summary>
+        [pbr::OriginalName("IP_BLOCK")] IpBlock = 21,
+        /// <summary>
+        /// Content Label for category exclusion.
+        /// </summary>
+        [pbr::OriginalName("CONTENT_LABEL")] ContentLabel = 22,
+        /// <summary>
+        /// Carrier.
+        /// </summary>
+        [pbr::OriginalName("CARRIER")] Carrier = 23,
+        /// <summary>
+        /// A category the user is interested in.
+        /// </summary>
+        [pbr::OriginalName("USER_INTEREST")] UserInterest = 24,
       }
 
     }

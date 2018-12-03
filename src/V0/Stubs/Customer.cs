@@ -26,32 +26,33 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvY3VzdG9tZXIu",
             "cHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxoeZ29v",
-            "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIvADCghDdXN0b21lchIVCg1y",
+            "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIqgECghDdXN0b21lchIVCg1y",
             "ZXNvdXJjZV9uYW1lGAEgASgJEicKAmlkGAMgASgLMhsuZ29vZ2xlLnByb3Rv",
             "YnVmLkludDY0VmFsdWUSNgoQZGVzY3JpcHRpdmVfbmFtZRgEIAEoCzIcLmdv",
             "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1jdXJyZW5jeV9jb2RlGAUg",
             "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEi8KCXRpbWVfem9u",
             "ZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI7ChV0cmFj",
             "a2luZ191cmxfdGVtcGxhdGUYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
-            "aW5nVmFsdWUSOAoUYXV0b190YWdnaW5nX2VuYWJsZWQYCCABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuQm9vbFZhbHVlEjYKEmhhc19wYXJ0bmVyc19iYWRnZRgJ",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSVwoWY2FsbF9yZXBv",
-            "cnRpbmdfc2V0dGluZxgKIAEoCzI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LnJlc291cmNlcy5DYWxsUmVwb3J0aW5nU2V0dGluZyLXAQoUQ2FsbFJlcG9y",
-            "dGluZ1NldHRpbmcSOgoWY2FsbF9yZXBvcnRpbmdfZW5hYmxlZBgBIAEoCzIa",
-            "Lmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSRQohY2FsbF9jb252ZXJzaW9u",
-            "X3JlcG9ydGluZ19lbmFibGVkGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJv",
-            "b2xWYWx1ZRI8ChZjYWxsX2NvbnZlcnNpb25fYWN0aW9uGAkgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQtIBCiVjb20uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjAucmVzb3VyY2VzQg1DdXN0b21lclByb3RvUAFaSmdvb2ds",
-            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
-            "cy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNc",
-            "VjBcUmVzb3VyY2VzYgZwcm90bzM="));
+            "aW5nVmFsdWUSNgoQZmluYWxfdXJsX3N1ZmZpeBgLIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRI4ChRhdXRvX3RhZ2dpbmdfZW5hYmxlZBgI",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSNgoSaGFzX3BhcnRu",
+            "ZXJzX2JhZGdlGAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJX",
+            "ChZjYWxsX3JlcG9ydGluZ19zZXR0aW5nGAogASgLMjcuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjAucmVzb3VyY2VzLkNhbGxSZXBvcnRpbmdTZXR0aW5nItcB",
+            "ChRDYWxsUmVwb3J0aW5nU2V0dGluZxI6ChZjYWxsX3JlcG9ydGluZ19lbmFi",
+            "bGVkGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJFCiFjYWxs",
+            "X2NvbnZlcnNpb25fcmVwb3J0aW5nX2VuYWJsZWQYAiABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuQm9vbFZhbHVlEjwKFmNhbGxfY29udmVyc2lvbl9hY3Rpb24Y",
+            "CSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVC0gEKJWNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDUN1c3RvbWVyUHJv",
+            "dG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFH",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Customer), global::Google.Ads.GoogleAds.V0.Resources.Customer.Parser, new[]{ "ResourceName", "Id", "DescriptiveName", "CurrencyCode", "TimeZone", "TrackingUrlTemplate", "AutoTaggingEnabled", "HasPartnersBadge", "CallReportingSetting" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Customer), global::Google.Ads.GoogleAds.V0.Resources.Customer.Parser, new[]{ "ResourceName", "Id", "DescriptiveName", "CurrencyCode", "TimeZone", "TrackingUrlTemplate", "FinalUrlSuffix", "AutoTaggingEnabled", "HasPartnersBadge", "CallReportingSetting" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CallReportingSetting), global::Google.Ads.GoogleAds.V0.Resources.CallReportingSetting.Parser, new[]{ "CallReportingEnabled", "CallConversionReportingEnabled", "CallConversionAction" }, null, null, null)
           }));
     }
@@ -93,6 +94,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       CurrencyCode = other.CurrencyCode;
       TimeZone = other.TimeZone;
       TrackingUrlTemplate = other.TrackingUrlTemplate;
+      FinalUrlSuffix = other.FinalUrlSuffix;
       AutoTaggingEnabled = other.AutoTaggingEnabled;
       HasPartnersBadge = other.HasPartnersBadge;
       callReportingSetting_ = other.callReportingSetting_ != null ? other.callReportingSetting_.Clone() : null;
@@ -198,6 +200,21 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "final_url_suffix" field.</summary>
+    public const int FinalUrlSuffixFieldNumber = 11;
+    private static readonly pb::FieldCodec<string> _single_finalUrlSuffix_codec = pb::FieldCodec.ForClassWrapper<string>(90);
+    private string finalUrlSuffix_;
+    /// <summary>
+    /// The URL template for appending params to the final URL
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FinalUrlSuffix {
+      get { return finalUrlSuffix_; }
+      set {
+        finalUrlSuffix_ = value;
+      }
+    }
+
     /// <summary>Field number for the "auto_tagging_enabled" field.</summary>
     public const int AutoTaggingEnabledFieldNumber = 8;
     private static readonly pb::FieldCodec<bool?> _single_autoTaggingEnabled_codec = pb::FieldCodec.ForStructWrapper<bool>(66);
@@ -263,6 +280,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (CurrencyCode != other.CurrencyCode) return false;
       if (TimeZone != other.TimeZone) return false;
       if (TrackingUrlTemplate != other.TrackingUrlTemplate) return false;
+      if (FinalUrlSuffix != other.FinalUrlSuffix) return false;
       if (AutoTaggingEnabled != other.AutoTaggingEnabled) return false;
       if (HasPartnersBadge != other.HasPartnersBadge) return false;
       if (!object.Equals(CallReportingSetting, other.CallReportingSetting)) return false;
@@ -278,6 +296,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (currencyCode_ != null) hash ^= CurrencyCode.GetHashCode();
       if (timeZone_ != null) hash ^= TimeZone.GetHashCode();
       if (trackingUrlTemplate_ != null) hash ^= TrackingUrlTemplate.GetHashCode();
+      if (finalUrlSuffix_ != null) hash ^= FinalUrlSuffix.GetHashCode();
       if (autoTaggingEnabled_ != null) hash ^= AutoTaggingEnabled.GetHashCode();
       if (hasPartnersBadge_ != null) hash ^= HasPartnersBadge.GetHashCode();
       if (callReportingSetting_ != null) hash ^= CallReportingSetting.GetHashCode();
@@ -323,6 +342,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(82);
         output.WriteMessage(CallReportingSetting);
       }
+      if (finalUrlSuffix_ != null) {
+        _single_finalUrlSuffix_codec.WriteTagAndValue(output, FinalUrlSuffix);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -348,6 +370,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (trackingUrlTemplate_ != null) {
         size += _single_trackingUrlTemplate_codec.CalculateSizeWithTag(TrackingUrlTemplate);
+      }
+      if (finalUrlSuffix_ != null) {
+        size += _single_finalUrlSuffix_codec.CalculateSizeWithTag(FinalUrlSuffix);
       }
       if (autoTaggingEnabled_ != null) {
         size += _single_autoTaggingEnabled_codec.CalculateSizeWithTag(AutoTaggingEnabled);
@@ -395,6 +420,11 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (other.trackingUrlTemplate_ != null) {
         if (trackingUrlTemplate_ == null || other.TrackingUrlTemplate != "") {
           TrackingUrlTemplate = other.TrackingUrlTemplate;
+        }
+      }
+      if (other.finalUrlSuffix_ != null) {
+        if (finalUrlSuffix_ == null || other.FinalUrlSuffix != "") {
+          FinalUrlSuffix = other.FinalUrlSuffix;
         }
       }
       if (other.autoTaggingEnabled_ != null) {
@@ -482,6 +512,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
               callReportingSetting_ = new global::Google.Ads.GoogleAds.V0.Resources.CallReportingSetting();
             }
             input.ReadMessage(callReportingSetting_);
+            break;
+          }
+          case 90: {
+            string value = _single_finalUrlSuffix_codec.Read(input);
+            if (finalUrlSuffix_ == null || value != "") {
+              FinalUrlSuffix = value;
+            }
             break;
           }
         }
