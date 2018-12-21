@@ -12,11 +12,76 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Api.Gax;
+using System;
+
 namespace Google.Ads.GoogleAds.Lib
 {
-    /// <summary>
-    /// Helper class to generate resource names for various entities.
-    /// </summary>
+
+    //public class ResourceNames
+    //{
+        // public static string AccountB(long customerId, long adGroupId)
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/accountBudgets/{account_budget}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/accountBudgetProposals/{account_budget_proposal}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/adGroups/{ad_group}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/adGroupAds/{ad_group_ad}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/adGroupAudienceViews/{ad_group_audience_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/adGroupBidModifiers/{ad_group_bid_modifier}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/adGroupCriteria/{ad_group_criteria}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/adGroupFeeds/{ad_group_feed}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/ageRangeViews/{age_range_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/biddingStrategies/{bidding_strategy}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/hotelPerformanceView");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/hotelGroupViews/{hotel_group_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("googleAdsFields/{google_ads_field}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("geoTargetConstants/{geo_target_constant}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/genderViews/{gender_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/feedMappings/{feed_mapping}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/feedItems/{feed_item}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/feeds/{feed}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/displayKeywordViews/{display_keyword_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/customerManagerLinks/{customer_manager_link}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/customerFeeds/{customer_feed}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/customerClientLinks/{customer_client_link}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/customerClients/{customer_client}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/conversionActions/{conversion_action}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/changeStatus/{change_status}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("carrierConstants/{carrier_constant}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaignSharedSets/{campaign_shared_set}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaignGroups/{campaign_group}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaignFeeds/{campaign_feed}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaignCriteria/{campaign_criteria}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaignBudgets/{campaign_budget}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaignBidModifiers/{campaign_bid_modifier}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaignAudienceViews/{campaign_audience_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/billingSetups/{billing_setup}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/campaigns/{campaign}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/videos/{video}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/userLists/{user_list}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/userInterests/{user_interest}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/topicViews/{topic_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("topicConstants/{topic_constant}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/sharedSets/{shared_set}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/sharedCriteria/{shared_criteria}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/searchTermViews/{search_term_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/recommendations/{recommendation}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/productGroupViews/{product_group_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/parentalStatusViews/{parental_status_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/mediaFiles/{media_file}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/managedPlacementViews/{managed_placement_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("languageConstants/{language_constant}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordViews/{keyword_view}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlanNegativeKeywords/{keyword_plan_negative_keyword}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlanKeywords/{keyword_plan_keyword}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlanCampaigns/{keyword_plan_campaign}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlanAdGroups/{keyword_plan_ad_group}");
+        //private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/keywordPlans/{keyword_plan}");
+
+
+        /// <summary>
+        /// Helper class to generate resource names for various entities.
+        /// </summary>
     public class ResourceNames
     {
         /// <summary>
@@ -27,6 +92,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// <returns>The ad group resource name.</returns>
         public static string AdGroup(long customerId, long adGroupId)
         {
+            new PathTemplate("customers/{customer}/accountBudgets/{account_budget}").Expand(customerId.ToString(), adGroupId.ToString());
             return $"customers/{customerId}/adGroups/{adGroupId}";
         }
 
@@ -152,6 +218,16 @@ namespace Google.Ads.GoogleAds.Lib
         public static string Recommendation(long customerId, long recommendationId)
         {
             return $"customers/{customerId}/recommendations/{recommendationId}";
+        }
+
+        /// <summary>
+        /// Generate resource name for a language constant.
+        /// </summary>
+        /// <param name="languageConstantId">The language constant ID.</param>
+        /// <returns>The language constant resource name.</returns>
+        public static string LanguageConstant(long languageConstantId)
+        {
+            return $"languageConstants/{languageConstantId}";
         }
 
         /// <summary>

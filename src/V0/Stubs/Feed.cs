@@ -576,6 +576,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         private global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo oauthInfo_;
         /// <summary>
         /// Required authentication token (from OAuth API) for the email.
+        /// This field can only be specified in a create request. All its subfields
+        /// are not selectable.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo OauthInfo {
