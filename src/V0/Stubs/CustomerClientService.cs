@@ -91,7 +91,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// The resource name of the customer client to fetch.
+    /// The resource name of the client to fetch.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// TODO( b/119694056): Removed Comment
+// Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
 using gax = Google.Api.Gax;
@@ -454,6 +454,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             throw new sys::NotImplementedException();
         }
+
 
         /// <summary>
         /// Returns GeoTargetConstant suggestions by location name or by resource name.

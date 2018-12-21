@@ -47,7 +47,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
   }
   #region Messages
   /// <summary>
-  /// For a manager, it returns all the customers in its hierarchy and self.
+  /// A link between the given customer and a client customer. CustomerClients only
+  /// exist for manager customers. All direct and indirect client customers are
+  /// included, as well as the manager itself.
   /// </summary>
   public sealed partial class CustomerClient : pb::IMessage<CustomerClient> {
     private static readonly pb::MessageParser<CustomerClient> _parser = new pb::MessageParser<CustomerClient>(() => new CustomerClient());
@@ -107,7 +109,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private static readonly pb::FieldCodec<string> _single_clientCustomer_codec = pb::FieldCodec.ForClassWrapper<string>(26);
     private string clientCustomer_;
     /// <summary>
-    /// The client customer linked to this customer. Read only.
+    /// The resource name of the client-customer which is linked to
+    /// the given customer. Read only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ClientCustomer {
@@ -122,7 +125,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private static readonly pb::FieldCodec<bool?> _single_hidden_codec = pb::FieldCodec.ForStructWrapper<bool>(34);
     private bool? hidden_;
     /// <summary>
-    /// Whether the client is hidden or not. Default value is false. Read only.
+    /// Specifies whether this is a hidden account. Learn more about hidden
+    /// accounts
+    /// &lt;a href="https://support.google.com/google-ads/answer/7519830">here&lt;/a>.
+    /// Read only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool? Hidden {
@@ -137,8 +143,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private static readonly pb::FieldCodec<long?> _single_level_codec = pb::FieldCodec.ForStructWrapper<long>(42);
     private long? level_;
     /// <summary>
-    /// Distance between customer and client. For self link, the level value will
-    /// be 0. Read only.
+    /// Distance between given customer and client. For self link, the level value
+    /// will be 0. Read only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long? Level {
