@@ -37,12 +37,19 @@ namespace Google.Ads.GoogleAds.Examples
         public static void Main(string[] args)
         {
             Console.WriteLine("This application generates an OAuth2 refresh token for use with " +
-              "the Google Ads API .NET client library. To use this application\n" +
-              "1) Follow the instructions on " +
-              "https://developers.google.com/adwords/api/docs/guides/authentication#create_a_client_id_and_client_secret " +
-              "to generate a new client ID and secret.\n" + "2) Enter the client ID and client Secret " +
-              "when prompted.\n" +
-              "3) Once the output is generated, copy its contents into your App.config file.\n\n");
+                  "the Google Ads API .NET client library. To use this application\n" +
+                  "1) Follow the instructions on " +
+                  "https://developers.google.com/adwords/api/docs/guides/authentication#create_a_client_id_and_client_secret " +
+                  "to generate a new client ID and secret.\n" +
+                  "2) Enter the client ID and client Secret when prompted.\n" +
+                  "3) Once the output is generated, copy its contents into your App.config " +
+                  "file.\n\n");
+
+            Console.WriteLine("Important note: The client ID you use with the example should be " +
+                "of type 'Other'. If you are using a Web application client, you should add " +
+                "'http://127.0.0.1/authorize' and 'http://localhost/authorize' to the list of " +
+                "Authorized redirect URIs in your Google Developer Console to avoid getting a " +
+                "redirect_uri_mismatch error.\n\n");
 
             // Accept the client ID from user.
             Console.Write("Enter the client ID: ");
