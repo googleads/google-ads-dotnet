@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// TODO( b/119694056): Removed Comment
+// Generated code. DO NOT EDIT!
 
 using gagvr = Google.Ads.GoogleAds.V0.Resources;
 using gax = Google.Api.Gax;
@@ -310,10 +310,10 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
-        /// Returns the requested customer client in full detail.
+        /// Returns the requested client in full detail.
         /// </summary>
         /// <param name="resourceName">
-        /// The resource name of the customer client to fetch.
+        /// The resource name of the client to fetch.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -331,10 +331,10 @@ namespace Google.Ads.GoogleAds.V0.Services
                 callSettings);
 
         /// <summary>
-        /// Returns the requested customer client in full detail.
+        /// Returns the requested client in full detail.
         /// </summary>
         /// <param name="resourceName">
-        /// The resource name of the customer client to fetch.
+        /// The resource name of the client to fetch.
         /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
@@ -349,10 +349,10 @@ namespace Google.Ads.GoogleAds.V0.Services
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Returns the requested customer client in full detail.
+        /// Returns the requested client in full detail.
         /// </summary>
         /// <param name="resourceName">
-        /// The resource name of the customer client to fetch.
+        /// The resource name of the client to fetch.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -370,7 +370,7 @@ namespace Google.Ads.GoogleAds.V0.Services
                 callSettings);
 
         /// <summary>
-        /// Returns the requested customer client in full detail.
+        /// Returns the requested client in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -389,7 +389,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
-        /// Returns the requested customer client in full detail.
+        /// Returns the requested client in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -407,7 +407,7 @@ namespace Google.Ads.GoogleAds.V0.Services
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Returns the requested customer client in full detail.
+        /// Returns the requested client in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -475,7 +475,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         partial void Modify_GetCustomerClientRequest(ref GetCustomerClientRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
-        /// Returns the requested customer client in full detail.
+        /// Returns the requested client in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -495,7 +495,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         }
 
         /// <summary>
-        /// Returns the requested customer client in full detail.
+        /// Returns the requested client in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
