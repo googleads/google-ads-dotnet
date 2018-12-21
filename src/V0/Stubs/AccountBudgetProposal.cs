@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
   /// For example, proposed spending limits may be adjusted before their
   /// application.  This is true if the 'proposed' field has an 'approved'
   /// counterpart, e.g. spending limits.
-  /// 
+  ///
   /// Please note that the proposal type (proposal_type) changes which fields are
   /// required and which must remain empty.
   /// </summary>
