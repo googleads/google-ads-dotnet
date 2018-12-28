@@ -25,7 +25,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
     /// has access to. This example may can be used to display a list of customer IDs that can be
     /// selected by the user for setting the login-customer-id in a subsequent call. See
     /// https://developers.google.com/google-ads/api/docs/concepts/call-structure#login-customer-id
-    /// to learn more about login-customer-id header.
+    /// to learn more about the login-customer-id header.
     /// </summary>
     public class GetAccessibleCustomers : ExampleBase
     {
@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
                     "list of customer IDs that can be selected by the user for setting the " +
                     "login-customer-id in a subsequent call. See "+
                     "https://developers.google.com/google-ads/api/docs/concepts/call-structure#login-customer-id "+
-                    "to learn more about login-customer-id header.";
+                    "to learn more about the login-customer-id header.";
             }
         }
 
@@ -71,13 +71,11 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // Retrieve the list of customer resources.
                 string[] customerResourceNames = customerService.ListAccessibleCustomers();
 
-                Console.WriteLine($"Total results: {customerResourceNames.Length}.");
-
                 // Display the result.
-                int i = 1;
                 foreach (string customerResourceName in customerResourceNames)
                 {
-                    Console.WriteLine($"{i++}) Customer resource name: {customerResourceName}");
+                    Console.WriteLine(
+                        $"Found customer with resource name = '{customerResourceName}'.");
                 }
             }
             catch (GoogleAdsException e)
