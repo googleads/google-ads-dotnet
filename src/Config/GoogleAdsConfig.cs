@@ -152,7 +152,7 @@ namespace Google.Ads.GoogleAds.Config
         /// </summary>
         /// <remarks>This setting is used only for testing purposes.</remarks>
         private readonly ConfigSetting<string> serverUrl = new ConfigSetting<string>(
-            "ServerUrl", GOOGLE_ADS_API_SERVER_URL);
+            "GoogleAds.Server", GOOGLE_ADS_API_SERVER_URL);
 
         /// <summary>
         /// The developer token.
@@ -341,20 +341,29 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GoogleAdsConfig" /> class.
+        /// Public constructor. Loads the configuration from the <code>GoogleAdsApi</code> section
+        /// of the App.config / Web.config.
         /// </summary>
-        public GoogleAdsConfig()
+        public GoogleAdsConfig() : base()
         {
-            ReadSettings(LoadConfigSection(CONFIG_SECTION_NAME));
+            LoadFromAppConfigSection(CONFIG_SECTION_NAME);
         }
 
         /// <summary>
-        /// Public constructor.
+        /// Public constructor. Loads the configuration from an <see cref="IConfigurationRoot"/>.
         /// </summary>
-        /// <param name="configurationRoot">The configuration root to read from.</param>
+        /// <param name="configurationRoot">The configuration root.</param>
         public GoogleAdsConfig(IConfigurationRoot configurationRoot) : base(configurationRoot)
         {
-            ReadSettings(LoadConfigRoot(configurationRoot));
+        }
+
+        /// <summary>
+        /// Public constructor. Loads the configuration from a <see cref="IConfigurationSection"/>.
+        /// </summary>
+        /// <param name="configurationSection">The configuration section.</param>
+        public GoogleAdsConfig(IConfigurationSection configurationSection)
+            : base(configurationSection)
+        {
         }
 
         /// <summary>
@@ -366,6 +375,7 @@ namespace Google.Ads.GoogleAds.Config
             ReadSetting(settings, timeout);
             ReadSetting(settings, serverUrl);
             ReadSetting(settings, developerToken);
+            ReadSetting(settings, loginCustomerId);
 
             ReadSetting(settings, oAuth2ServerUrl);
             ReadSetting(settings, oAuth2ClientId);

@@ -22,6 +22,11 @@ using System.Configuration;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
+#if NET452
+using System.Web.Configuration;
+using System.Web.Hosting;
+#endif
+
 namespace Google.Ads.GoogleAds.Config
 {
     /// <summary>
@@ -40,21 +45,28 @@ namespace Google.Ads.GoogleAds.Config
         /// Initializes a new instance of the <see cref="ConfigBase"/> class.
         /// </summary>
         /// <param name="configurationRoot">The configuration root.</param>
-        protected ConfigBase(IConfigurationRoot configurationRoot) : base()
+        public ConfigBase(IConfigurationRoot configurationRoot) : base()
         {
-            ReadSettings(LoadConfigRoot(configurationRoot));
+            LoadFromConfiguration(configurationRoot, "");
         }
 
         /// <summary>
-        /// Attempts to load the configuration from a configuration root.
+        /// Initializes a new instance of the <see cref="ConfigBase"/> class.
         /// </summary>
-        /// <param name="configurationRoot">The configuration root.</param>
-        /// The configuration, or <code>null</code> if none was found.
-        protected Dictionary<string, string> LoadConfigRoot(IConfigurationRoot configurationRoot)
+        /// <param name="configurationSection">The configuration section.</param>
+        public ConfigBase(IConfigurationSection configurationSection) : base()
         {
-            return configurationRoot.AsEnumerable().ToDictionary(
-                setting => setting.Key.ToString(),
-                setting => setting.Value.ToString());
+            LoadFromConfiguration(configurationSection, configurationSection.Key);
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConfigBase"/> class.
+        /// </summary>
+        /// <param name="configuration">The configuration section.</param>
+        /// <param name="sectionName"></param>
+        protected void LoadFromConfiguration(IConfiguration configuration, string sectionName)
+        {
+            ReadSettings(ToDictionary(configuration, sectionName));
         }
 
         /// <summary>
@@ -64,33 +76,55 @@ namespace Google.Ads.GoogleAds.Config
         /// <returns>
         /// The request configuration section, or <code>null</code> if none was found.
         /// </returns>
-        protected Dictionary<string, string> LoadConfigSection(string sectionName)
+        protected void LoadFromAppConfigSection(string sectionName)
         {
-            IConfigurationRoot configurationRoot =
-                MemoryConfigurationBuilderExtensions.AddInMemoryCollection(
-                    new ConfigurationBuilder(), LoadAppConfig(sectionName)).Build();
-            return LoadConfigRoot(configurationRoot);
+            ReadSettings(ReadAppConfigSection(sectionName));
         }
 
         /// <summary>
-        /// Loads the application configuration XML.
+        /// Reads the application configuration section.
         /// </summary>
         /// <param name="sectionName">Name of the section.</param>
-        /// <returns>The App.config loaded as a list of KeyValuePair.</returns>
-        private IEnumerable<KeyValuePair<string, string>> LoadAppConfig(string sectionName)
+        /// <returns>A dictionary with key as configuration keyname and value as configuration
+        /// value.</returns>
+        private static Dictionary<string, string> ReadAppConfigSection(string sectionName)
         {
-            Hashtable config = (Hashtable) ConfigurationManager.GetSection(sectionName);
+            Hashtable config = null;
 
-            Dictionary<string, string> retval = new Dictionary<string, string>();
-            if (config != null)
+#if NET452
+            if (HostingEnvironment.IsHosted)
             {
-                foreach (string key in config.Keys)
-                {
-                    retval.Add(key, (string) config[key]);
-                }
+                config = (Hashtable) WebConfigurationManager.GetSection(sectionName);
             }
+            else
+            {
+                config = (Hashtable) ConfigurationManager.GetSection(sectionName);
+            }
+#else
+            config = (Hashtable) ConfigurationManager.GetSection(sectionName);
+#endif
+            return config != null ?
+                config.Cast<DictionaryEntry>().ToDictionary(
+                    d => d.Key.ToString(), d => d.Value?.ToString()) :
+                new Dictionary<string, string>();
+            ;
+        }
 
-            return retval;
+        /// <summary>
+        /// Converts a configuration section into a dictionary. Section name prefix is stripped
+        /// from the key names.
+        /// </summary>
+        /// <param name="configuration">The configuration section.</param>
+        /// <param name="sectionName">Name of the section.</param>
+        /// <returns>A dictionary with key as configuration keyname and value as configuration
+        /// value.</returns>
+        private static Dictionary<string, string> ToDictionary(IConfiguration configuration,
+            string sectionName)
+        {
+            string sectionPrefix = sectionName + ":";
+            return configuration.AsEnumerable().ToDictionary(
+                setting => setting.Key.ToString().Replace(sectionPrefix, ""),
+                setting => setting.Value?.ToString());
         }
 
         /// <summary>
