@@ -23,7 +23,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
 {
     /// <summary>
     /// This code example dismisses a given recommendation. To retrieve recommendations for text
-    /// ads, run GetTextAdRecommendations.php.
+    /// ads, run GetTextAdRecommendations.cs.
     /// </summary>
     public class DismissRecommendation : ExampleBase
     {
@@ -36,7 +36,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
             DismissRecommendation codeExample = new DismissRecommendation();
             Console.WriteLine(codeExample.Description);
 
-            //The customer ID for which the call is made.
+            // The customer ID for which the call is made.
             int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // ID of the recommendation to be dismissed.
@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
         {
             get
             {
-                return "This code example applies a given recommendation. To retrieve " +
+                return "This code example dismisses a given recommendation. To retrieve " +
                     "recommendations for text ads, run GetTextAdRecommendations.cs.";
             }
         }
@@ -62,7 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V0
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="recommendationId">ID of the recommendation to apply.</param>
+        /// <param name="recommendationId">ID of the recommendation to dismiss.</param>
         public void Run(GoogleAdsClient client, long customerId, long recommendationId)
         {
             // Get the RecommendationServiceClient.
@@ -82,10 +82,10 @@ namespace Google.Ads.GoogleAds.Examples.V0
                     customerId.ToString(), partialFailure, new DismissRecommendationOperation[] {
                         operation
                     });
-                Console.WriteLine($"Dismissed {0} recommendation(s):", response.Results.Count);
                 foreach (DismissRecommendationResult result in response.Results)
                 {
-                    Console.WriteLine($"- {result.ResourceName}");
+                    Console.WriteLine($"Dismissed recommendation with resource name = " +
+                        $"'{result.ResourceName}'.");
                 }
             }
             catch (GoogleAdsException e)
