@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
                 var temp = stringFlag.Value;
             });
 
-            // Invalid operation is thrwn if the flag is non-repeatable, and Values property is
+            // Invalid operation is thrown if the flag is non-repeatable, and Values property is
             // invoked.
             stringFlag = new Flag<string>($"--{STRING_REPEATED_FLAG}=", "", false);
 
@@ -144,18 +144,35 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
         [Test]
         public void TestReset()
         {
-            Flag<string> stringFlag = new Flag<string>($"--{STRING_FLAG}=", "", false);
+            Flag<string> stringFlag = null;
+
+            // Test for single value flag.
+            stringFlag = new Flag<string>($"--{STRING_FLAG}=", "", false);
 
             // Initially, the flag is empty.
             Assert.AreEqual(default(string), stringFlag.Value);
 
-            // After adding a value, that value comes back in both Value and Values.
+            // After adding a value, that value comes back in Value.
             stringFlag.Parse(STRING_ARG1);
             Assert.AreEqual(STRING_ARG1, stringFlag.Value);
 
             // After resetting, the flag is empty again.
             stringFlag.Reset();
             Assert.AreEqual(default(string), stringFlag.Value);
+
+            // Test for repeatable value flag.
+            stringFlag = new Flag<string>($"--{STRING_FLAG}=", "", true);
+
+            // Initially, the flag is empty.
+            Assert.IsEmpty(stringFlag.Values);
+
+            // After adding a value, that value comes back in Values.
+            stringFlag.Parse(STRING_ARG1);
+            Assert.AreEqual(new string[] { STRING_ARG1 }, stringFlag.Values);
+
+            // After resetting, the flag is empty again.
+            stringFlag.Reset();
+            Assert.IsEmpty(stringFlag.Values);
         }
 
         /// <summary>
@@ -207,18 +224,26 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
                 "TestMethod", BindingFlags.NonPublic | BindingFlags.Instance);
 
             ParameterInfo[] paramInfos = methodInfo.GetParameters();
+            VerifyFlag<int>(paramInfos[0], "--intArgs=", true);
+            VerifyFlag<long>(paramInfos[1], "--longArg=", false);
+        }
 
+        /// <summary>
+        /// Convert the parameter info into flag and verify its properties.
+        /// </summary>
+        /// <typeparam name="T">The expected type of the flag.</typeparam>
+        /// <param name="paramInfo">The parameter information.</param>
+        /// <param name="expectedFlagPrototype">The expected flag prototype.</param>
+        /// <param name="expectedIsRepeatable">The expected value for the flag's IsRepeatable
+        /// property.</param>
+        private static void VerifyFlag<T>(ParameterInfo paramInfo, string expectedFlagPrototype,
+            bool expectedIsRepeatable)
+        {
             // Convert the first parameter info into flag and verify its properties.
-            Flag<int> firstFlag = Flags.FromParameterInfo(paramInfos[0]) as Flag<int>;
-            Assert.IsNotNull(firstFlag);
-            Assert.IsTrue(firstFlag.IsRepeatable);
-            Assert.AreEqual($"--intArgs=", firstFlag.Prototype);
-
-            // Convert the first parameter info into flag and verify its properties.
-            Flag<long> secondFlag = Flags.FromParameterInfo(paramInfos[0]) as Flag<long>;
-            Assert.IsNotNull(secondFlag);
-            Assert.IsTrue(secondFlag.IsRepeatable);
-            Assert.AreEqual($"--longArg=", secondFlag.Prototype);
+            Flag<T> flag = Flags.FromParameterInfo(paramInfo) as Flag<T>;
+            Assert.IsNotNull(flag);
+            Assert.AreEqual(expectedIsRepeatable, flag.IsRepeatable);
+            Assert.AreEqual(expectedFlagPrototype, flag.Prototype);
         }
 
         /// <summary>
