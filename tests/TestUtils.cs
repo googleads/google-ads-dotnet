@@ -25,8 +25,7 @@ namespace Google.Ads.GoogleAds.Tests
         /// <summary>
         /// Creates an <see cref="RpcException"/> for testing purposes.
         /// </summary>
-        internal static RpcException CreateRpcException(string errorMessage,
-            string errorTrigger, Metadata responseMetadata)
+        internal static RpcException CreateRpcException(string errorMessage, string errorTrigger)
         {
             GoogleAdsFailure failure = new GoogleAdsFailure();
             failure.Errors.Add(new GoogleAdsError()
@@ -46,25 +45,24 @@ namespace Google.Ads.GoogleAds.Tests
                 }
             });
 
+            Metadata metadata = new Metadata();
             using (MemoryStream memoryStream = new MemoryStream())
             {
                 failure.WriteTo(memoryStream);
-                // TODO(Anash): Uncomment once Grpc allows periods in metadata key names.
-                // responseMetadata.Add(GoogleAdsException.FAILURE_KEY,
-                //     memoryStream.ToArray());
+                metadata.Add(GoogleAdsException.FAILURE_KEY,
+                     memoryStream.ToArray());
             }
 
-            return new RpcException(Status.DefaultSuccess, responseMetadata);
+            return new RpcException(Status.DefaultSuccess, metadata);
         }
 
         /// <summary>
         /// Creates an <see cref="GoogleAdsException"/> for testing purposes.
         /// </summary>
         internal static GoogleAdsException CreateException(string errorMessage,
-            string errorTrigger, Metadata responseMetadata)
+            string errorTrigger)
         {
-            return GoogleAdsException.Create(CreateRpcException(errorMessage, errorTrigger,
-                responseMetadata));
+            return GoogleAdsException.Create(CreateRpcException(errorMessage, errorTrigger));
         }
     }
 }
