@@ -39,7 +39,7 @@ We provide a zip package for the examples. To run the code examples,
  Visual Studio project. When prompted, provide the client ID and client secret
  from the previous step. `AuthenticateInStandaloneApplication` performs
  the authentication and prints the configuration in XML format. Copy the
- configuration into the `App.config` of the `Google.Ads.Adwords.Examples`
+ configuration into the `App.config` of the `Google.Ads.GoogleAds.Examples`
  project.
 1. Open the **Properties** dialog for the Examples project by
  right clicking `Google.Ads.GoogleAds.Examples` project in the Solution
@@ -48,10 +48,10 @@ We provide a zip package for the examples. To run the code examples,
 1. Navigate to the **Debug Tab** and enter the command-line options,
  which are of the form `version.examplename`. For instance,
  `V0.GetCampaigns` is the command-line option to run `GetCampaigns`
- in the `V0` version of the AdWords API.
+ in the `V0` version of the Google Ads API.
 1. Compile and run the `Google.Ads.GoogleAds.Examples` project.
 
-As an alternative to steps 8-10, each code example has a `main()` 
+As an alternative to steps 8-10, each code example has a `main()`
 method, so you can set the appropriate code example as the Startup
 object (Select the **Application tab** on the Examples Properties dialog
  and pick the desired class from the "Startup object" dropdown.).
@@ -90,7 +90,7 @@ for more details, and examples folder for code examples that show how to use var
 
 ### Issue tracker
 
-- https://github.com/googleads/google-ads-dotnet/issues 
+- https://github.com/googleads/google-ads-dotnet/issues
 
 ### API Documentation
 
