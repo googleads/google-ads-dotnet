@@ -122,8 +122,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging
             TEST_RESPONSE_METADATA.Add(GoogleAdsException.REQUEST_ID_KEY, TEST_REQUEST_ID);
 
             // Create the test exception.
-            TEST_EXCEPTION = TestUtils.CreateRpcException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER,
-                TEST_RESPONSE_METADATA);
+            TEST_EXCEPTION = TestUtils.CreateRpcException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER);
         }
 
         /// <summary>
@@ -166,13 +165,19 @@ namespace Google.Ads.GoogleAds.Tests.Logging
                 Assert.AreSame(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 Assert.AreSame(TEST_RESPONSE_METADATA, logEntry.ResponseHeaders);
                 Assert.AreSame(TEST_REQUEST, logEntry.Request);
-                Assert.AreSame(TEST_RESPONSE, logEntry.Response);
+
+                // Response is null if there's an exception.
+                Assert.IsNull(logEntry.Response);
+
                 Assert.AreEqual(TEST_CUSTOMER_ID, logEntry.CustomerId);
                 Assert.True(logEntry.IsFailure);
                 Assert.NotNull(logEntry.Exception);
                 Assert.AreEqual(TEST_REQUEST_ID, logEntry.Exception.RequestId);
 
-                // TODO(Anash): Add more tests once Grpc allows periods in metadata key names.
+                Assert.NotNull(logEntry.Exception.Failure);
+                Assert.AreEqual(1, logEntry.Exception.Failure.Errors.Count);
+                Assert.NotNull(logEntry.Exception.Failure.Errors[0].ErrorCode);
+                Assert.NotNull(logEntry.Exception.Failure.Errors[0].ErrorCode.DistinctError);
             };
             this.AsyncUnaryCall(TEST_REQUEST, context, ContinuationWithException);
         }
@@ -229,8 +234,8 @@ namespace Google.Ads.GoogleAds.Tests.Logging
         private AsyncUnaryCall<HelloResponse> ContinuationWithException(HelloRequest request,
             ClientInterceptorContext<HelloRequest, HelloResponse> context)
         {
-            Task<HelloResponse> responseTask = FromException<HelloResponse>(TEST_EXCEPTION);
             Task<Metadata> responseHeadersTask = Task.FromResult(TEST_RESPONSE_METADATA);
+            Task<HelloResponse> responseTask = FromException<HelloResponse>(TEST_EXCEPTION);
             return new AsyncUnaryCall<HelloResponse>(responseTask, responseHeadersTask,
                 null, null, null);
         }
