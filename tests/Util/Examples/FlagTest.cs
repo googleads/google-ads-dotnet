@@ -94,7 +94,8 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
         {
             Flag<string> stringFlag = null;
 
-            // Invalid operation is thrwn if the flag is repeatable, and Value property is invoked.
+            // Invalid operation is thrown if the flag is repeatable, and Value property is
+            // invoked.
             stringFlag = new Flag<string>($"--{STRING_REPEATED_FLAG}=", "", true);
 
             Assert.Throws(typeof(InvalidOperationException), delegate ()
@@ -104,7 +105,7 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
 
             // Invalid operation is thrown if the flag is non-repeatable, and Values property is
             // invoked.
-            stringFlag = new Flag<string>($"--{STRING_REPEATED_FLAG}=", "", false);
+            stringFlag = new Flag<string>($"--{STRING_FLAG}=", "", false);
 
             Assert.Throws(typeof(InvalidOperationException), delegate ()
             {
