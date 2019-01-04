@@ -129,8 +129,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging
 
             // Create an exception for testing purposes.
 
-            TEST_EXCEPTION = TestUtils.CreateException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER,
-                TEST_RESPONSE_METADATA);
+            TEST_EXCEPTION = TestUtils.CreateException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER);
         }
 
         /// <summary>
