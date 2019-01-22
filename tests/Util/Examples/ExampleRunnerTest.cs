@@ -144,16 +144,15 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
             Action<string> afterRunCallback)
         {
             StringWriter writer = new StringWriter();
-            TextWriter oldWriter = null;
-            TextReader oldReader = null;
             StringReader reader = new StringReader("\r\n");
+
+            TextWriter oldWriter = Console.Out;
+            TextReader oldReader = Console.In;
 
             try
             {
                 // Capture the console input and output.
-                oldWriter = Console.Out;
                 Console.SetOut(writer);
-                oldReader = Console.In;
                 Console.SetIn(reader);
 
                 functionToRun?.Invoke();
