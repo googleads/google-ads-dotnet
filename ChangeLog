@@ -1,3 +1,25 @@
+0.7.1
+=====
+
+- Added support for running code examples from command line.
+- Fixed minor errors with the README.md file.
+- Made minor fixes to LogEntry tests.
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/40
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/39
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/31
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/30
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/28
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/27
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/26
+- Added new code examples.
+    -- AccountManagement/GetAccessibleCustomers.cs
+    -- Recommendations/DismissRecommendation.cs
+    -- AccountManagement/CreateCustomer.cs
+    -- Planning/GenerateKeywordIdeas.cs
+    -- Planning/AddKeywordPlan.cs
+    -- Planning/GenerateForecastMetrics.cs    
+- Fixed a file encoding issue with Targeting/AddCampaignTargetingCriteria.cs example.
+
 0.7.0
 =====
 
