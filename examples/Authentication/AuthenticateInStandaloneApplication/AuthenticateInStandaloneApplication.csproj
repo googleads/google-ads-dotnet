@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0;net452</TargetFrameworks>
     <RootNamespace>Google.Ads.GoogleAds.Examples</RootNamespace>
@@ -12,7 +12,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Apis.Auth" Version="1.36.1" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.38.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web" />
