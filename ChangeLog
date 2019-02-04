@@ -1,3 +1,17 @@
+0.8.0
+=====
+
+Added support for Google Ads API v0.7.0. See release notes:
+https://developers.google.com/google-ads/api/docs/release-notes#070_2019-01-30
+- Added new code examples.
+    -- HotelAds/GetHotelAdsPerformance.cs
+- Removed code example.
+    --  CampaignManagement/AddCampaignGroup.cs
+- Updated code examples.
+    -- Reporting/GetKeywordStats.cs now uses segments.date field instead of fields date.
+- Added new overloaded methods for all services that use validateOnly and partialFailure headers as
+ optional parameters.
+
 0.7.1
 =====
 
