@@ -55,12 +55,13 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "YmlsaXR5TW9kZUVudW0uQ3JpdGVyaW9uQ2F0ZWdvcnlMb2NhbGVBdmFpbGFi",
             "aWxpdHlNb2RlEjIKDGNvdW50cnlfY29kZRgCIAEoCzIcLmdvb2dsZS5wcm90",
             "b2J1Zi5TdHJpbmdWYWx1ZRIzCg1sYW5ndWFnZV9jb2RlGAMgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQtgBCiJjb20uZ29vZ2xlLmFkcy5n",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQv0BCiJjb20uZ29vZ2xlLmFkcy5n",
             "b29nbGVhZHMudjAuY29tbW9uQiJDcml0ZXJpb25DYXRlZ29yeUF2YWlsYWJp",
             "bGl0eVByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
             "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9jb21tb247Y29tbW9uogIDR0FBqgIe",
             "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuQ29tbW9uygIeR29vZ2xlXEFkc1xH",
-            "b29nbGVBZHNcVjBcQ29tbW9uYgZwcm90bzM="));
+            "b29nbGVBZHNcVjBcQ29tbW9u6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjA6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.AdvertisingChannelSubTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdvertisingChannelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionCategoryChannelAvailabilityModeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionCategoryLocaleAvailabilityModeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

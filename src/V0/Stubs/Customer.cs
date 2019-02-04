@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvY3VzdG9tZXIu",
             "cHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxoeZ29v",
-            "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIqgECghDdXN0b21lchIVCg1y",
+            "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIuoFCghDdXN0b21lchIVCg1y",
             "ZXNvdXJjZV9uYW1lGAEgASgJEicKAmlkGAMgASgLMhsuZ29vZ2xlLnByb3Rv",
             "YnVmLkludDY0VmFsdWUSNgoQZGVzY3JpcHRpdmVfbmFtZRgEIAEoCzIcLmdv",
             "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1jdXJyZW5jeV9jb2RlGAUg",
@@ -36,24 +36,34 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "aW5nVmFsdWUSNgoQZmluYWxfdXJsX3N1ZmZpeBgLIAEoCzIcLmdvb2dsZS5w",
             "cm90b2J1Zi5TdHJpbmdWYWx1ZRI4ChRhdXRvX3RhZ2dpbmdfZW5hYmxlZBgI",
             "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSNgoSaGFzX3BhcnRu",
-            "ZXJzX2JhZGdlGAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJX",
-            "ChZjYWxsX3JlcG9ydGluZ19zZXR0aW5nGAogASgLMjcuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjAucmVzb3VyY2VzLkNhbGxSZXBvcnRpbmdTZXR0aW5nItcB",
-            "ChRDYWxsUmVwb3J0aW5nU2V0dGluZxI6ChZjYWxsX3JlcG9ydGluZ19lbmFi",
-            "bGVkGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJFCiFjYWxs",
-            "X2NvbnZlcnNpb25fcmVwb3J0aW5nX2VuYWJsZWQYAiABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuQm9vbFZhbHVlEjwKFmNhbGxfY29udmVyc2lvbl9hY3Rpb24Y",
-            "CSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVC0gEKJWNvbS5n",
+            "ZXJzX2JhZGdlGAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRIr",
+            "CgdtYW5hZ2VyGAwgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRIw",
+            "Cgx0ZXN0X2FjY291bnQYDSABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZh",
+            "bHVlElcKFmNhbGxfcmVwb3J0aW5nX3NldHRpbmcYCiABKAsyNy5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuQ2FsbFJlcG9ydGluZ1NldHRp",
+            "bmcSYQobY29udmVyc2lvbl90cmFja2luZ19zZXR0aW5nGA4gASgLMjwuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkNvbnZlcnNpb25UcmFj",
+            "a2luZ1NldHRpbmci1wEKFENhbGxSZXBvcnRpbmdTZXR0aW5nEjoKFmNhbGxf",
+            "cmVwb3J0aW5nX2VuYWJsZWQYASABKAsyGi5nb29nbGUucHJvdG9idWYuQm9v",
+            "bFZhbHVlEkUKIWNhbGxfY29udmVyc2lvbl9yZXBvcnRpbmdfZW5hYmxlZBgC",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSPAoWY2FsbF9jb252",
+            "ZXJzaW9uX2FjdGlvbhgJIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZSKjAQoZQ29udmVyc2lvblRyYWNraW5nU2V0dGluZxI7ChZjb252ZXJz",
+            "aW9uX3RyYWNraW5nX2lkGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0",
+            "VmFsdWUSSQokY3Jvc3NfYWNjb3VudF9jb252ZXJzaW9uX3RyYWNraW5nX2lk",
+            "GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVC+gEKJWNvbS5n",
             "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDUN1c3RvbWVyUHJv",
             "dG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
             "ZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFH",
             "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3RvMw=="));
+            "XEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xl",
+            "QWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Customer), global::Google.Ads.GoogleAds.V0.Resources.Customer.Parser, new[]{ "ResourceName", "Id", "DescriptiveName", "CurrencyCode", "TimeZone", "TrackingUrlTemplate", "FinalUrlSuffix", "AutoTaggingEnabled", "HasPartnersBadge", "CallReportingSetting" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CallReportingSetting), global::Google.Ads.GoogleAds.V0.Resources.CallReportingSetting.Parser, new[]{ "CallReportingEnabled", "CallConversionReportingEnabled", "CallConversionAction" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Customer), global::Google.Ads.GoogleAds.V0.Resources.Customer.Parser, new[]{ "ResourceName", "Id", "DescriptiveName", "CurrencyCode", "TimeZone", "TrackingUrlTemplate", "FinalUrlSuffix", "AutoTaggingEnabled", "HasPartnersBadge", "Manager", "TestAccount", "CallReportingSetting", "ConversionTrackingSetting" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CallReportingSetting), global::Google.Ads.GoogleAds.V0.Resources.CallReportingSetting.Parser, new[]{ "CallReportingEnabled", "CallConversionReportingEnabled", "CallConversionAction" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ConversionTrackingSetting), global::Google.Ads.GoogleAds.V0.Resources.ConversionTrackingSetting.Parser, new[]{ "ConversionTrackingId", "CrossAccountConversionTrackingId" }, null, null, null)
           }));
     }
     #endregion
@@ -97,7 +107,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       FinalUrlSuffix = other.FinalUrlSuffix;
       AutoTaggingEnabled = other.AutoTaggingEnabled;
       HasPartnersBadge = other.HasPartnersBadge;
+      Manager = other.Manager;
+      TestAccount = other.TestAccount;
       callReportingSetting_ = other.callReportingSetting_ != null ? other.callReportingSetting_.Clone() : null;
+      conversionTrackingSetting_ = other.conversionTrackingSetting_ != null ? other.conversionTrackingSetting_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -247,6 +260,36 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "manager" field.</summary>
+    public const int ManagerFieldNumber = 12;
+    private static readonly pb::FieldCodec<bool?> _single_manager_codec = pb::FieldCodec.ForStructWrapper<bool>(98);
+    private bool? manager_;
+    /// <summary>
+    /// Whether the customer is a manager.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool? Manager {
+      get { return manager_; }
+      set {
+        manager_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "test_account" field.</summary>
+    public const int TestAccountFieldNumber = 13;
+    private static readonly pb::FieldCodec<bool?> _single_testAccount_codec = pb::FieldCodec.ForStructWrapper<bool>(106);
+    private bool? testAccount_;
+    /// <summary>
+    /// Whether the customer is a test account.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool? TestAccount {
+      get { return testAccount_; }
+      set {
+        testAccount_ = value;
+      }
+    }
+
     /// <summary>Field number for the "call_reporting_setting" field.</summary>
     public const int CallReportingSettingFieldNumber = 10;
     private global::Google.Ads.GoogleAds.V0.Resources.CallReportingSetting callReportingSetting_;
@@ -258,6 +301,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       get { return callReportingSetting_; }
       set {
         callReportingSetting_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "conversion_tracking_setting" field.</summary>
+    public const int ConversionTrackingSettingFieldNumber = 14;
+    private global::Google.Ads.GoogleAds.V0.Resources.ConversionTrackingSetting conversionTrackingSetting_;
+    /// <summary>
+    /// Conversion tracking setting for a customer.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.ConversionTrackingSetting ConversionTrackingSetting {
+      get { return conversionTrackingSetting_; }
+      set {
+        conversionTrackingSetting_ = value;
       }
     }
 
@@ -283,7 +340,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (FinalUrlSuffix != other.FinalUrlSuffix) return false;
       if (AutoTaggingEnabled != other.AutoTaggingEnabled) return false;
       if (HasPartnersBadge != other.HasPartnersBadge) return false;
+      if (Manager != other.Manager) return false;
+      if (TestAccount != other.TestAccount) return false;
       if (!object.Equals(CallReportingSetting, other.CallReportingSetting)) return false;
+      if (!object.Equals(ConversionTrackingSetting, other.ConversionTrackingSetting)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -299,7 +359,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (finalUrlSuffix_ != null) hash ^= FinalUrlSuffix.GetHashCode();
       if (autoTaggingEnabled_ != null) hash ^= AutoTaggingEnabled.GetHashCode();
       if (hasPartnersBadge_ != null) hash ^= HasPartnersBadge.GetHashCode();
+      if (manager_ != null) hash ^= Manager.GetHashCode();
+      if (testAccount_ != null) hash ^= TestAccount.GetHashCode();
       if (callReportingSetting_ != null) hash ^= CallReportingSetting.GetHashCode();
+      if (conversionTrackingSetting_ != null) hash ^= ConversionTrackingSetting.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -345,6 +408,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (finalUrlSuffix_ != null) {
         _single_finalUrlSuffix_codec.WriteTagAndValue(output, FinalUrlSuffix);
       }
+      if (manager_ != null) {
+        _single_manager_codec.WriteTagAndValue(output, Manager);
+      }
+      if (testAccount_ != null) {
+        _single_testAccount_codec.WriteTagAndValue(output, TestAccount);
+      }
+      if (conversionTrackingSetting_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(ConversionTrackingSetting);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -380,8 +453,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (hasPartnersBadge_ != null) {
         size += _single_hasPartnersBadge_codec.CalculateSizeWithTag(HasPartnersBadge);
       }
+      if (manager_ != null) {
+        size += _single_manager_codec.CalculateSizeWithTag(Manager);
+      }
+      if (testAccount_ != null) {
+        size += _single_testAccount_codec.CalculateSizeWithTag(TestAccount);
+      }
       if (callReportingSetting_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CallReportingSetting);
+      }
+      if (conversionTrackingSetting_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ConversionTrackingSetting);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -437,11 +519,27 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           HasPartnersBadge = other.HasPartnersBadge;
         }
       }
+      if (other.manager_ != null) {
+        if (manager_ == null || other.Manager != false) {
+          Manager = other.Manager;
+        }
+      }
+      if (other.testAccount_ != null) {
+        if (testAccount_ == null || other.TestAccount != false) {
+          TestAccount = other.TestAccount;
+        }
+      }
       if (other.callReportingSetting_ != null) {
         if (callReportingSetting_ == null) {
           callReportingSetting_ = new global::Google.Ads.GoogleAds.V0.Resources.CallReportingSetting();
         }
         CallReportingSetting.MergeFrom(other.CallReportingSetting);
+      }
+      if (other.conversionTrackingSetting_ != null) {
+        if (conversionTrackingSetting_ == null) {
+          conversionTrackingSetting_ = new global::Google.Ads.GoogleAds.V0.Resources.ConversionTrackingSetting();
+        }
+        ConversionTrackingSetting.MergeFrom(other.ConversionTrackingSetting);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -519,6 +617,27 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             if (finalUrlSuffix_ == null || value != "") {
               FinalUrlSuffix = value;
             }
+            break;
+          }
+          case 98: {
+            bool? value = _single_manager_codec.Read(input);
+            if (manager_ == null || value != false) {
+              Manager = value;
+            }
+            break;
+          }
+          case 106: {
+            bool? value = _single_testAccount_codec.Read(input);
+            if (testAccount_ == null || value != false) {
+              TestAccount = value;
+            }
+            break;
+          }
+          case 114: {
+            if (conversionTrackingSetting_ == null) {
+              conversionTrackingSetting_ = new global::Google.Ads.GoogleAds.V0.Resources.ConversionTrackingSetting();
+            }
+            input.ReadMessage(conversionTrackingSetting_);
             break;
           }
         }
@@ -733,6 +852,188 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             string value = _single_callConversionAction_codec.Read(input);
             if (callConversionAction_ == null || value != "") {
               CallConversionAction = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A collection of customer-wide settings related to Google Ads Conversion
+  /// Tracking.
+  /// </summary>
+  public sealed partial class ConversionTrackingSetting : pb::IMessage<ConversionTrackingSetting> {
+    private static readonly pb::MessageParser<ConversionTrackingSetting> _parser = new pb::MessageParser<ConversionTrackingSetting>(() => new ConversionTrackingSetting());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ConversionTrackingSetting> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Resources.CustomerReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ConversionTrackingSetting() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ConversionTrackingSetting(ConversionTrackingSetting other) : this() {
+      ConversionTrackingId = other.ConversionTrackingId;
+      CrossAccountConversionTrackingId = other.CrossAccountConversionTrackingId;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ConversionTrackingSetting Clone() {
+      return new ConversionTrackingSetting(this);
+    }
+
+    /// <summary>Field number for the "conversion_tracking_id" field.</summary>
+    public const int ConversionTrackingIdFieldNumber = 1;
+    private static readonly pb::FieldCodec<long?> _single_conversionTrackingId_codec = pb::FieldCodec.ForStructWrapper<long>(10);
+    private long? conversionTrackingId_;
+    /// <summary>
+    /// The conversion tracking id used for this account. This id is automatically
+    /// assigned after any conversion tracking feature is used. If the customer
+    /// doesn't use conversion tracking, this is 0. This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ConversionTrackingId {
+      get { return conversionTrackingId_; }
+      set {
+        conversionTrackingId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cross_account_conversion_tracking_id" field.</summary>
+    public const int CrossAccountConversionTrackingIdFieldNumber = 2;
+    private static readonly pb::FieldCodec<long?> _single_crossAccountConversionTrackingId_codec = pb::FieldCodec.ForStructWrapper<long>(18);
+    private long? crossAccountConversionTrackingId_;
+    /// <summary>
+    /// The conversion tracking id of the customer's manager. This is set when the
+    /// customer is opted into cross account conversion tracking, and it overrides
+    /// conversion_tracking_id. This field can only be managed through the Google
+    /// Ads UI. This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? CrossAccountConversionTrackingId {
+      get { return crossAccountConversionTrackingId_; }
+      set {
+        crossAccountConversionTrackingId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ConversionTrackingSetting);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ConversionTrackingSetting other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ConversionTrackingId != other.ConversionTrackingId) return false;
+      if (CrossAccountConversionTrackingId != other.CrossAccountConversionTrackingId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (conversionTrackingId_ != null) hash ^= ConversionTrackingId.GetHashCode();
+      if (crossAccountConversionTrackingId_ != null) hash ^= CrossAccountConversionTrackingId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (conversionTrackingId_ != null) {
+        _single_conversionTrackingId_codec.WriteTagAndValue(output, ConversionTrackingId);
+      }
+      if (crossAccountConversionTrackingId_ != null) {
+        _single_crossAccountConversionTrackingId_codec.WriteTagAndValue(output, CrossAccountConversionTrackingId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (conversionTrackingId_ != null) {
+        size += _single_conversionTrackingId_codec.CalculateSizeWithTag(ConversionTrackingId);
+      }
+      if (crossAccountConversionTrackingId_ != null) {
+        size += _single_crossAccountConversionTrackingId_codec.CalculateSizeWithTag(CrossAccountConversionTrackingId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ConversionTrackingSetting other) {
+      if (other == null) {
+        return;
+      }
+      if (other.conversionTrackingId_ != null) {
+        if (conversionTrackingId_ == null || other.ConversionTrackingId != 0L) {
+          ConversionTrackingId = other.ConversionTrackingId;
+        }
+      }
+      if (other.crossAccountConversionTrackingId_ != null) {
+        if (crossAccountConversionTrackingId_ == null || other.CrossAccountConversionTrackingId != 0L) {
+          CrossAccountConversionTrackingId = other.CrossAccountConversionTrackingId;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            long? value = _single_conversionTrackingId_codec.Read(input);
+            if (conversionTrackingId_ == null || value != 0L) {
+              ConversionTrackingId = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_crossAccountConversionTrackingId_codec.Read(input);
+            if (crossAccountConversionTrackingId_ == null || value != 0L) {
+              CrossAccountConversionTrackingId = value;
             }
             break;
           }

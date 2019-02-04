@@ -74,12 +74,10 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 ResourceName = ResourceNames.Recommendation(customerId, recommendationId),
             };
 
-            bool partialFailure = false;
-
             try
             {
                 DismissRecommendationResponse response = service.DismissRecommendation(
-                    customerId.ToString(), partialFailure, new DismissRecommendationOperation[] {
+                    customerId.ToString(), new DismissRecommendationOperation[] {
                         operation
                     });
                 foreach (DismissRecommendationResult result in response.Results)

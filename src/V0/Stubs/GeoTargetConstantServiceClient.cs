@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -455,7 +455,6 @@ namespace Google.Ads.GoogleAds.V0.Services
             throw new sys::NotImplementedException();
         }
 
-
         /// <summary>
         /// Returns GeoTargetConstant suggestions by location name or by resource name.
         /// </summary>
@@ -474,16 +473,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
-            pbwkt::StringValue locale,
-            pbwkt::StringValue countryCode,
+            string locale,
+            string countryCode,
             gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstantsAsync(
                 new SuggestGeoTargetConstantsRequest
                 {
-                    Locale = gax::GaxPreconditions.CheckNotNull(locale, nameof(locale)).Value,
-                    // TODO(liseno): Implicit type cast from StringValue to String failed,
-                    CountryCode = gax::GaxPreconditions.CheckNotNull(countryCode,
-                        nameof(countryCode)).Value,
-                    // TODO(liseno): Implicit type cast from StringValue to String failed,
+                    Locale = gax::GaxPreconditions.CheckNotNullOrEmpty(locale, nameof(locale)),
+                    CountryCode = gax::GaxPreconditions.CheckNotNullOrEmpty(countryCode, nameof(countryCode)),
                 },
                 callSettings);
 
@@ -505,8 +501,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// A Task containing the RPC response.
         /// </returns>
         public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
-            pbwkt::StringValue locale,
-            pbwkt::StringValue countryCode,
+            string locale,
+            string countryCode,
             st::CancellationToken cancellationToken) => SuggestGeoTargetConstantsAsync(
                 locale,
                 countryCode,
@@ -530,16 +526,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// The RPC response.
         /// </returns>
         public virtual SuggestGeoTargetConstantsResponse SuggestGeoTargetConstants(
-            pbwkt::StringValue locale,
-            pbwkt::StringValue countryCode,
+            string locale,
+            string countryCode,
             gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstants(
                 new SuggestGeoTargetConstantsRequest
                 {
-                    Locale = gax::GaxPreconditions.CheckNotNull(locale, nameof(locale)).Value,
-                    // TODO(liseno): Implicit type cast from StringValue to String failed,
-                    CountryCode = gax::GaxPreconditions.CheckNotNull(countryCode,
-                        nameof(countryCode)).Value,
-                    // TODO(liseno): Implicit type cast from StringValue to String failed,
+                    Locale = gax::GaxPreconditions.CheckNotNullOrEmpty(locale, nameof(locale)),
+                    CountryCode = gax::GaxPreconditions.CheckNotNullOrEmpty(countryCode, nameof(countryCode)),
                 },
                 callSettings);
 

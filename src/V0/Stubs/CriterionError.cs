@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY3JpdGVyaW9uX2Vy",
-            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMioBgK",
-            "EkNyaXRlcmlvbkVycm9yRW51bSKJGAoOQ3JpdGVyaW9uRXJyb3ISDwoLVU5T",
+            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMiyhwK",
+            "EkNyaXRlcmlvbkVycm9yRW51bSKzHAoOQ3JpdGVyaW9uRXJyb3ISDwoLVU5T",
             "UEVDSUZJRUQQABILCgdVTktOT1dOEAESGgoWQ09OQ1JFVEVfVFlQRV9SRVFV",
             "SVJFRBACEh0KGUlOVkFMSURfRVhDTFVERURfQ0FURUdPUlkQAxIYChRJTlZB",
             "TElEX0tFWVdPUkRfVEVYVBAEEhkKFUtFWVdPUkRfVEVYVF9UT09fTE9ORxAF",
@@ -94,12 +94,25 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "VVAQURI5CjVIT1RFTF9MRU5HVEhfT0ZfU1RBWV9PVkVSTEFQU19XSVRIX0VY",
             "SVNUSU5HX0NSSVRFUklPThBSEkEKPUhPVEVMX0FEVkFOQ0VfQk9PS0lOR19X",
             "SU5ET1dfT1ZFUkxBUFNfV0lUSF9FWElTVElOR19DUklURVJJT04QUxIuCipG",
-            "SUVMRF9JTkNPTVBBVElCTEVfV0lUSF9ORUdBVElWRV9UQVJHRVRJTkcQVELJ",
-            "AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0ITQ3JpdGVy",
-            "aW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
-            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dB",
-            "QaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxB",
-            "ZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "SUVMRF9JTkNPTVBBVElCTEVfV0lUSF9ORUdBVElWRV9UQVJHRVRJTkcQVBId",
+            "ChlJTlZBTElEX1dFQlBBR0VfQ09ORElUSU9OEFUSIQodSU5WQUxJRF9XRUJQ",
+            "QUdFX0NPTkRJVElPTl9VUkwQVhIpCiVXRUJQQUdFX0NPTkRJVElPTl9VUkxf",
+            "Q0FOTk9UX0JFX0VNUFRZEFcSLgoqV0VCUEFHRV9DT05ESVRJT05fVVJMX1VO",
+            "U1VQUE9SVEVEX1BST1RPQ09MEFgSLgoqV0VCUEFHRV9DT05ESVRJT05fVVJM",
+            "X0NBTk5PVF9CRV9JUF9BRERSRVNTEFkSRQpBV0VCUEFHRV9DT05ESVRJT05f",
+            "VVJMX0RPTUFJTl9OT1RfQ09OU0lTVEVOVF9XSVRIX0NBTVBBSUdOX1NFVFRJ",
+            "TkcQWhIxCi1XRUJQQUdFX0NPTkRJVElPTl9VUkxfQ0FOTk9UX0JFX1BVQkxJ",
+            "Q19TVUZGSVgQWxIvCitXRUJQQUdFX0NPTkRJVElPTl9VUkxfSU5WQUxJRF9Q",
+            "VUJMSUNfU1VGRklYEFwSOQo1V0VCUEFHRV9DT05ESVRJT05fVVJMX1ZBTFVF",
+            "X1RSQUNLX1ZBTFVFX05PVF9TVVBQT1JURUQQXRI8CjhXRUJQQUdFX0NSSVRF",
+            "UklPTl9VUkxfRVFVQUxTX0NBTl9IQVZFX09OTFlfT05FX0NPTkRJVElPThBe",
+            "EjcKM1dFQlBBR0VfQ1JJVEVSSU9OX05PVF9TVVBQT1JURURfT05fTk9OX0RT",
+            "QV9BRF9HUk9VUBBfQu4BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZXJyb3JzQhNDcml0ZXJpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcu",
+            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJv",
+            "cnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJy",
+            "b3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3Jz6gIiR29vZ2xl",
+            "OjpBZHM6Okdvb2dsZUFkczo6VjA6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -592,6 +605,52 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// true, e.g. we don't allow bids in negative ad group or campaign criteria.
         /// </summary>
         [pbr::OriginalName("FIELD_INCOMPATIBLE_WITH_NEGATIVE_TARGETING")] FieldIncompatibleWithNegativeTargeting = 84,
+        /// <summary>
+        /// The combination of operand and operator in webpage condition is invalid.
+        /// </summary>
+        [pbr::OriginalName("INVALID_WEBPAGE_CONDITION")] InvalidWebpageCondition = 85,
+        /// <summary>
+        /// The URL of webpage condition is invalid.
+        /// </summary>
+        [pbr::OriginalName("INVALID_WEBPAGE_CONDITION_URL")] InvalidWebpageConditionUrl = 86,
+        /// <summary>
+        /// The URL of webpage condition cannot be empty or contain white space.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE_CONDITION_URL_CANNOT_BE_EMPTY")] WebpageConditionUrlCannotBeEmpty = 87,
+        /// <summary>
+        /// The URL of webpage condition contains an unsupported protocol.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE_CONDITION_URL_UNSUPPORTED_PROTOCOL")] WebpageConditionUrlUnsupportedProtocol = 88,
+        /// <summary>
+        /// The URL of webpage condition cannot be an IP address.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE_CONDITION_URL_CANNOT_BE_IP_ADDRESS")] WebpageConditionUrlCannotBeIpAddress = 89,
+        /// <summary>
+        /// The domain of the URL is not consistent with the domain in campaign
+        /// setting.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE_CONDITION_URL_DOMAIN_NOT_CONSISTENT_WITH_CAMPAIGN_SETTING")] WebpageConditionUrlDomainNotConsistentWithCampaignSetting = 90,
+        /// <summary>
+        /// The URL of webpage condition cannot be a public suffix itself.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE_CONDITION_URL_CANNOT_BE_PUBLIC_SUFFIX")] WebpageConditionUrlCannotBePublicSuffix = 91,
+        /// <summary>
+        /// The URL of webpage condition has an invalid public suffix.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE_CONDITION_URL_INVALID_PUBLIC_SUFFIX")] WebpageConditionUrlInvalidPublicSuffix = 92,
+        /// <summary>
+        /// Value track parameter is not supported in webpage condition URL.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE_CONDITION_URL_VALUE_TRACK_VALUE_NOT_SUPPORTED")] WebpageConditionUrlValueTrackValueNotSupported = 93,
+        /// <summary>
+        /// Only one URL-EQUALS webpage condition is allowed in a webpage
+        /// criterion and it cannot be combined with other conditions.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE_CRITERION_URL_EQUALS_CAN_HAVE_ONLY_ONE_CONDITION")] WebpageCriterionUrlEqualsCanHaveOnlyOneCondition = 94,
+        /// <summary>
+        /// A webpage criterion cannot be added to a non-DSA ad group.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE_CRITERION_NOT_SUPPORTED_ON_NON_DSA_AD_GROUP")] WebpageCriterionNotSupportedOnNonDsaAdGroup = 95,
       }
 
     }

@@ -47,29 +47,30 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "cHJvdG9idWYuSW50NjRWYWx1ZRI7ChZjcGNfYmlkX2NlaWxpbmdfbWljcm9z",
             "GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOQoUY3BjX2Jp",
             "ZF9mbG9vcl9taWNyb3MYAyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRW",
-            "YWx1ZSLSAgoSVGFyZ2V0T3V0cmFua1NoYXJlEkAKG3RhcmdldF9vdXRyYW5r",
-            "X3NoYXJlX21pY3JvcxgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZh",
-            "bHVlEjcKEWNvbXBldGl0b3JfZG9tYWluGAIgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlEjsKFmNwY19iaWRfY2VpbGluZ19taWNyb3MYAyAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI3ChNvbmx5X3JhaXNl",
-            "X2NwY19iaWRzGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJL",
-            "CidyYWlzZV9jcGNfYmlkX3doZW5fcXVhbGl0eV9zY29yZV9pc19sb3cYBSAB",
-            "KAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlIrcBCgpUYXJnZXRSb2Fz",
-            "EjEKC3RhcmdldF9yb2FzGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
-            "ZVZhbHVlEjsKFmNwY19iaWRfY2VpbGluZ19taWNyb3MYAiABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRI5ChRjcGNfYmlkX2Zsb29yX21pY3Jv",
-            "cxgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlIoQBCgtUYXJn",
-            "ZXRTcGVuZBI4ChN0YXJnZXRfc3BlbmRfbWljcm9zGAEgASgLMhsuZ29vZ2xl",
-            "LnByb3RvYnVmLkludDY0VmFsdWUSOwoWY3BjX2JpZF9jZWlsaW5nX21pY3Jv",
-            "cxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlIoMBCgpQZXJj",
-            "ZW50Q3BjEjsKFmNwY19iaWRfY2VpbGluZ19taWNyb3MYASABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRI4ChRlbmhhbmNlZF9jcGNfZW5hYmxl",
-            "ZBgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWVCwgEKImNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CDEJpZGRpbmdQcm90b1AB",
-            "WkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjAvY29tbW9uO2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlYwLkNvbW1vbsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYw",
-            "XENvbW1vbmIGcHJvdG8z"));
+            "YWx1ZSILCglUYXJnZXRDcG0i0gIKElRhcmdldE91dHJhbmtTaGFyZRJACht0",
+            "YXJnZXRfb3V0cmFua19zaGFyZV9taWNyb3MYASABKAsyGy5nb29nbGUucHJv",
+            "dG9idWYuSW50MzJWYWx1ZRI3ChFjb21wZXRpdG9yX2RvbWFpbhgCIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI7ChZjcGNfYmlkX2NlaWxp",
+            "bmdfbWljcm9zGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUS",
+            "NwoTb25seV9yYWlzZV9jcGNfYmlkcxgEIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5Cb29sVmFsdWUSSwoncmFpc2VfY3BjX2JpZF93aGVuX3F1YWxpdHlfc2Nv",
+            "cmVfaXNfbG93GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZSK3",
+            "AQoKVGFyZ2V0Um9hcxIxCgt0YXJnZXRfcm9hcxgBIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5Eb3VibGVWYWx1ZRI7ChZjcGNfYmlkX2NlaWxpbmdfbWljcm9z",
+            "GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOQoUY3BjX2Jp",
+            "ZF9mbG9vcl9taWNyb3MYAyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRW",
+            "YWx1ZSKEAQoLVGFyZ2V0U3BlbmQSOAoTdGFyZ2V0X3NwZW5kX21pY3JvcxgB",
+            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjsKFmNwY19iaWRf",
+            "Y2VpbGluZ19taWNyb3MYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRW",
+            "YWx1ZSKDAQoKUGVyY2VudENwYxI7ChZjcGNfYmlkX2NlaWxpbmdfbWljcm9z",
+            "GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOAoUZW5oYW5j",
+            "ZWRfY3BjX2VuYWJsZWQYAiABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZh",
+            "bHVlQucBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uQgxC",
+            "aWRkaW5nUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
+            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGq",
+            "Ah5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWMFxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMDo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.PageOnePromotedStrategyGoalReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -81,6 +82,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.MaximizeConversionValue), global::Google.Ads.GoogleAds.V0.Common.MaximizeConversionValue.Parser, new[]{ "TargetRoas" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.PageOnePromoted), global::Google.Ads.GoogleAds.V0.Common.PageOnePromoted.Parser, new[]{ "StrategyGoal", "CpcBidCeilingMicros", "BidModifier", "OnlyRaiseCpcBids", "RaiseCpcBidWhenBudgetConstrained", "RaiseCpcBidWhenQualityScoreIsLow" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetCpa), global::Google.Ads.GoogleAds.V0.Common.TargetCpa.Parser, new[]{ "TargetCpaMicros", "CpcBidCeilingMicros", "CpcBidFloorMicros" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetCpm), global::Google.Ads.GoogleAds.V0.Common.TargetCpm.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetOutrankShare), global::Google.Ads.GoogleAds.V0.Common.TargetOutrankShare.Parser, new[]{ "TargetOutrankShareMicros", "CompetitorDomain", "CpcBidCeilingMicros", "OnlyRaiseCpcBids", "RaiseCpcBidWhenQualityScoreIsLow" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetRoas), global::Google.Ads.GoogleAds.V0.Common.TargetRoas.Parser, new[]{ "TargetRoas_", "CpcBidCeilingMicros", "CpcBidFloorMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.TargetSpend), global::Google.Ads.GoogleAds.V0.Common.TargetSpend.Parser, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, null, null, null),
@@ -1338,6 +1340,111 @@ namespace Google.Ads.GoogleAds.V0.Common {
   }
 
   /// <summary>
+  /// Target CPM (cost per thousand impressions) is an automated bidding strategy
+  /// that sets bids to optimize performance given the target CPM you set.
+  /// </summary>
+  public sealed partial class TargetCpm : pb::IMessage<TargetCpm> {
+    private static readonly pb::MessageParser<TargetCpm> _parser = new pb::MessageParser<TargetCpm>(() => new TargetCpm());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TargetCpm> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TargetCpm() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TargetCpm(TargetCpm other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TargetCpm Clone() {
+      return new TargetCpm(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TargetCpm);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TargetCpm other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TargetCpm other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// An automated bidding strategy that sets bids based on the target fraction of
   /// auctions where the advertiser should outrank a specific competitor.
   /// </summary>
@@ -1349,7 +1456,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1645,7 +1752,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1861,7 +1968,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2042,7 +2149,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Google.Ads.GoogleAds.V0.Common.BiddingReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

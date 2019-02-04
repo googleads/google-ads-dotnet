@@ -28,40 +28,44 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "X3NlcnZpY2UucHJvdG8SIGdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZp",
             "Y2VzGjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvc2hhcmVk",
             "X3NldC5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxogZ29v",
-            "Z2xlL3Byb3RvYnVmL2ZpZWxkX21hc2sucHJvdG8iLAoTR2V0U2hhcmVkU2V0",
-            "UmVxdWVzdBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJIngKF011dGF0ZVNoYXJl",
-            "ZFNldHNSZXF1ZXN0EhMKC2N1c3RvbWVyX2lkGAEgASgJEkgKCm9wZXJhdGlv",
-            "bnMYAiADKAsyNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5T",
-            "aGFyZWRTZXRPcGVyYXRpb24i5AEKElNoYXJlZFNldE9wZXJhdGlvbhIvCgt1",
-            "cGRhdGVfbWFzaxgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2sS",
-            "PgoGY3JlYXRlGAEgASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVz",
-            "b3VyY2VzLlNoYXJlZFNldEgAEj4KBnVwZGF0ZRgCIAEoCzIsLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5TaGFyZWRTZXRIABIQCgZyZW1v",
-            "dmUYAyABKAlIAEILCglvcGVyYXRpb24iZAoYTXV0YXRlU2hhcmVkU2V0c1Jl",
-            "c3BvbnNlEkgKB3Jlc3VsdHMYAiADKAsyNy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MC5zZXJ2aWNlcy5NdXRhdGVTaGFyZWRTZXRSZXN1bHQiLgoVTXV0YXRl",
-            "U2hhcmVkU2V0UmVzdWx0EhUKDXJlc291cmNlX25hbWUYASABKAkyhgMKEFNo",
-            "YXJlZFNldFNlcnZpY2USqQEKDEdldFNoYXJlZFNldBI1Lmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLnNlcnZpY2VzLkdldFNoYXJlZFNldFJlcXVlc3QaLC5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuU2hhcmVkU2V0IjSC",
-            "0+STAi4SLC92MC97cmVzb3VyY2VfbmFtZT1jdXN0b21lcnMvKi9zaGFyZWRT",
-            "ZXRzLyp9EsUBChBNdXRhdGVTaGFyZWRTZXRzEjkuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuc2VydmljZXMuTXV0YXRlU2hhcmVkU2V0c1JlcXVlc3QaOi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5NdXRhdGVTaGFyZWRT",
-            "ZXRzUmVzcG9uc2UiOoLT5JMCNCIvL3YwL2N1c3RvbWVycy97Y3VzdG9tZXJf",
-            "aWQ9Kn0vc2hhcmVkU2V0czptdXRhdGU6ASpC1QEKJGNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MC5zZXJ2aWNlc0IVU2hhcmVkU2V0U2VydmljZVByb3Rv",
-            "UAFaSGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
-            "L2dvb2dsZWFkcy92MC9zZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIEdvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYwLlNlcnZpY2VzygIgR29vZ2xlXEFkc1xHb29n",
-            "bGVBZHNcVjBcU2VydmljZXNiBnByb3RvMw=="));
+            "Z2xlL3Byb3RvYnVmL2ZpZWxkX21hc2sucHJvdG8aHmdvb2dsZS9wcm90b2J1",
+            "Zi93cmFwcGVycy5wcm90bxoXZ29vZ2xlL3JwYy9zdGF0dXMucHJvdG8iLAoT",
+            "R2V0U2hhcmVkU2V0UmVxdWVzdBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJIqgB",
+            "ChdNdXRhdGVTaGFyZWRTZXRzUmVxdWVzdBITCgtjdXN0b21lcl9pZBgBIAEo",
+            "CRJICgpvcGVyYXRpb25zGAIgAygLMjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuc2VydmljZXMuU2hhcmVkU2V0T3BlcmF0aW9uEhcKD3BhcnRpYWxfZmFp",
+            "bHVyZRgDIAEoCBIVCg12YWxpZGF0ZV9vbmx5GAQgASgIIuQBChJTaGFyZWRT",
+            "ZXRPcGVyYXRpb24SLwoLdXBkYXRlX21hc2sYBCABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuRmllbGRNYXNrEj4KBmNyZWF0ZRgBIAEoCzIsLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLnJlc291cmNlcy5TaGFyZWRTZXRIABI+CgZ1cGRhdGUY",
+            "AiABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuU2hh",
+            "cmVkU2V0SAASEAoGcmVtb3ZlGAMgASgJSABCCwoJb3BlcmF0aW9uIpcBChhN",
+            "dXRhdGVTaGFyZWRTZXRzUmVzcG9uc2USMQoVcGFydGlhbF9mYWlsdXJlX2Vy",
+            "cm9yGAMgASgLMhIuZ29vZ2xlLnJwYy5TdGF0dXMSSAoHcmVzdWx0cxgCIAMo",
+            "CzI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLk11dGF0ZVNo",
+            "YXJlZFNldFJlc3VsdCIuChVNdXRhdGVTaGFyZWRTZXRSZXN1bHQSFQoNcmVz",
+            "b3VyY2VfbmFtZRgBIAEoCTKGAwoQU2hhcmVkU2V0U2VydmljZRKpAQoMR2V0",
+            "U2hhcmVkU2V0EjUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMu",
+            "R2V0U2hhcmVkU2V0UmVxdWVzdBosLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LnJlc291cmNlcy5TaGFyZWRTZXQiNILT5JMCLhIsL3YwL3tyZXNvdXJjZV9u",
+            "YW1lPWN1c3RvbWVycy8qL3NoYXJlZFNldHMvKn0SxQEKEE11dGF0ZVNoYXJl",
+            "ZFNldHMSOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5NdXRh",
+            "dGVTaGFyZWRTZXRzUmVxdWVzdBo6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LnNlcnZpY2VzLk11dGF0ZVNoYXJlZFNldHNSZXNwb25zZSI6gtPkkwI0Ii8v",
+            "djAvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfS9zaGFyZWRTZXRzOm11dGF0",
+            "ZToBKkL8AQokY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2Vz",
+            "QhVTaGFyZWRTZXRTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcv",
+            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3NlcnZpY2Vz",
+            "O3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuU2Vy",
+            "dmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxTZXJ2aWNlc+oCJEdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Resources.SharedSetReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Resources.SharedSetReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetSharedSetRequest), global::Google.Ads.GoogleAds.V0.Services.GetSharedSetRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetsRequest), global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetsRequest.Parser, new[]{ "CustomerId", "Operations" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetsRequest), global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.SharedSetOperation), global::Google.Ads.GoogleAds.V0.Services.SharedSetOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetsResponse), global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetsResponse.Parser, new[]{ "Results" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetsResponse), global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetResult), global::Google.Ads.GoogleAds.V0.Services.MutateSharedSetResult.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
     }
@@ -234,6 +238,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public MutateSharedSetsRequest(MutateSharedSetsRequest other) : this() {
       customerId_ = other.customerId_;
       operations_ = other.operations_.Clone();
+      partialFailure_ = other.partialFailure_;
+      validateOnly_ = other.validateOnly_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -269,6 +275,38 @@ namespace Google.Ads.GoogleAds.V0.Services {
       get { return operations_; }
     }
 
+    /// <summary>Field number for the "partial_failure" field.</summary>
+    public const int PartialFailureFieldNumber = 3;
+    private bool partialFailure_;
+    /// <summary>
+    /// If true, successful operations will be carried out and invalid
+    /// operations will return errors. If false, all operations will be carried
+    /// out in one transaction if and only if they are all valid.
+    /// Default is false.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PartialFailure {
+      get { return partialFailure_; }
+      set {
+        partialFailure_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "validate_only" field.</summary>
+    public const int ValidateOnlyFieldNumber = 4;
+    private bool validateOnly_;
+    /// <summary>
+    /// If true, the request is validated but not executed. Only errors are
+    /// returned, not results.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool ValidateOnly {
+      get { return validateOnly_; }
+      set {
+        validateOnly_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MutateSharedSetsRequest);
@@ -284,6 +322,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
       if (CustomerId != other.CustomerId) return false;
       if(!operations_.Equals(other.operations_)) return false;
+      if (PartialFailure != other.PartialFailure) return false;
+      if (ValidateOnly != other.ValidateOnly) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -292,6 +332,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
       int hash = 1;
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
       hash ^= operations_.GetHashCode();
+      if (PartialFailure != false) hash ^= PartialFailure.GetHashCode();
+      if (ValidateOnly != false) hash ^= ValidateOnly.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -310,6 +352,14 @@ namespace Google.Ads.GoogleAds.V0.Services {
         output.WriteString(CustomerId);
       }
       operations_.WriteTo(output, _repeated_operations_codec);
+      if (PartialFailure != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(PartialFailure);
+      }
+      if (ValidateOnly != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(ValidateOnly);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -322,6 +372,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerId);
       }
       size += operations_.CalculateSize(_repeated_operations_codec);
+      if (PartialFailure != false) {
+        size += 1 + 1;
+      }
+      if (ValidateOnly != false) {
+        size += 1 + 1;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -337,6 +393,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
         CustomerId = other.CustomerId;
       }
       operations_.Add(other.operations_);
+      if (other.PartialFailure != false) {
+        PartialFailure = other.PartialFailure;
+      }
+      if (other.ValidateOnly != false) {
+        ValidateOnly = other.ValidateOnly;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -354,6 +416,14 @@ namespace Google.Ads.GoogleAds.V0.Services {
           }
           case 18: {
             operations_.AddEntriesFrom(input, _repeated_operations_codec);
+            break;
+          }
+          case 24: {
+            PartialFailure = input.ReadBool();
+            break;
+          }
+          case 32: {
+            ValidateOnly = input.ReadBool();
             break;
           }
         }
@@ -678,6 +748,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MutateSharedSetsResponse(MutateSharedSetsResponse other) : this() {
+      partialFailureError_ = other.partialFailureError_ != null ? other.partialFailureError_.Clone() : null;
       results_ = other.results_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -685,6 +756,23 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MutateSharedSetsResponse Clone() {
       return new MutateSharedSetsResponse(this);
+    }
+
+    /// <summary>Field number for the "partial_failure_error" field.</summary>
+    public const int PartialFailureErrorFieldNumber = 3;
+    private global::Google.Rpc.Status partialFailureError_;
+    /// <summary>
+    /// Errors that pertain to operation failures in the partial failure mode.
+    /// Returned only when partial_failure = true and all errors occur inside the
+    /// operations. If any errors occur outside the operations (e.g. auth errors),
+    /// we return an RPC level error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Rpc.Status PartialFailureError {
+      get { return partialFailureError_; }
+      set {
+        partialFailureError_ = value;
+      }
     }
 
     /// <summary>Field number for the "results" field.</summary>
@@ -713,6 +801,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!object.Equals(PartialFailureError, other.PartialFailureError)) return false;
       if(!results_.Equals(other.results_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -720,6 +809,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (partialFailureError_ != null) hash ^= PartialFailureError.GetHashCode();
       hash ^= results_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -735,6 +825,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       results_.WriteTo(output, _repeated_results_codec);
+      if (partialFailureError_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(PartialFailureError);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -743,6 +837,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (partialFailureError_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartialFailureError);
+      }
       size += results_.CalculateSize(_repeated_results_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -754,6 +851,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public void MergeFrom(MutateSharedSetsResponse other) {
       if (other == null) {
         return;
+      }
+      if (other.partialFailureError_ != null) {
+        if (partialFailureError_ == null) {
+          partialFailureError_ = new global::Google.Rpc.Status();
+        }
+        PartialFailureError.MergeFrom(other.PartialFailureError);
       }
       results_.Add(other.results_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -769,6 +872,13 @@ namespace Google.Ads.GoogleAds.V0.Services {
             break;
           case 18: {
             results_.AddEntriesFrom(input, _repeated_results_codec);
+            break;
+          }
+          case 26: {
+            if (partialFailureError_ == null) {
+              partialFailureError_ = new global::Google.Rpc.Status();
+            }
+            input.ReadMessage(partialFailureError_);
             break;
           }
         }

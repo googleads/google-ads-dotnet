@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Gjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jaGFuZ2Vfc3RhdHVz",
             "X29wZXJhdGlvbi5wcm90bxo/Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51",
             "bXMvY2hhbmdlX3N0YXR1c19yZXNvdXJjZV90eXBlLnByb3RvGh5nb29nbGUv",
-            "cHJvdG9idWYvd3JhcHBlcnMucHJvdG8ivwQKDENoYW5nZVN0YXR1cxIVCg1y",
+            "cHJvdG9idWYvd3JhcHBlcnMucHJvdG8inAUKDENoYW5nZVN0YXR1cxIVCg1y",
             "ZXNvdXJjZV9uYW1lGAEgASgJEjsKFWxhc3RfY2hhbmdlX2RhdGVfdGltZRgD",
             "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJrCg1yZXNvdXJj",
             "ZV90eXBlGAQgASgOMlQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMu",
@@ -42,16 +42,19 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "CSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSOAoSYWRfZ3Jv",
             "dXBfY3JpdGVyaW9uGAogASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
             "bHVlEjgKEmNhbXBhaWduX2NyaXRlcmlvbhgLIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZULWAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLnJlc291cmNlc0IRQ2hhbmdlU3RhdHVzUHJvdG9QAVpKZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
-            "L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2ds",
-            "ZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxS",
-            "ZXNvdXJjZXNiBnByb3RvMw=="));
+            "b2J1Zi5TdHJpbmdWYWx1ZRIqCgRmZWVkGAwgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEi8KCWZlZWRfaXRlbRgNIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZUL+AQolY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLnJlc291cmNlc0IRQ2hhbmdlU3RhdHVzUHJvdG9QAVpKZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6UmVz",
+            "b3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.ChangeStatusOperationReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.ChangeStatusResourceTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ChangeStatus), global::Google.Ads.GoogleAds.V0.Resources.ChangeStatus.Parser, new[]{ "ResourceName", "LastChangeDateTime", "ResourceType", "Campaign", "AdGroup", "ResourceStatus", "AdGroupAd", "AdGroupCriterion", "CampaignCriterion" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ChangeStatus), global::Google.Ads.GoogleAds.V0.Resources.ChangeStatus.Parser, new[]{ "ResourceName", "LastChangeDateTime", "ResourceType", "Campaign", "AdGroup", "ResourceStatus", "AdGroupAd", "AdGroupCriterion", "CampaignCriterion", "Feed", "FeedItem" }, null, null, null)
           }));
     }
     #endregion
@@ -95,6 +98,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       AdGroupAd = other.AdGroupAd;
       AdGroupCriterion = other.AdGroupCriterion;
       CampaignCriterion = other.CampaignCriterion;
+      Feed = other.Feed;
+      FeedItem = other.FeedItem;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -240,6 +245,36 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "feed" field.</summary>
+    public const int FeedFieldNumber = 12;
+    private static readonly pb::FieldCodec<string> _single_feed_codec = pb::FieldCodec.ForClassWrapper<string>(98);
+    private string feed_;
+    /// <summary>
+    /// The Feed affected by this change.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Feed {
+      get { return feed_; }
+      set {
+        feed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "feed_item" field.</summary>
+    public const int FeedItemFieldNumber = 13;
+    private static readonly pb::FieldCodec<string> _single_feedItem_codec = pb::FieldCodec.ForClassWrapper<string>(106);
+    private string feedItem_;
+    /// <summary>
+    /// The FeedItem affected by this change.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FeedItem {
+      get { return feedItem_; }
+      set {
+        feedItem_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ChangeStatus);
@@ -262,6 +297,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (AdGroupAd != other.AdGroupAd) return false;
       if (AdGroupCriterion != other.AdGroupCriterion) return false;
       if (CampaignCriterion != other.CampaignCriterion) return false;
+      if (Feed != other.Feed) return false;
+      if (FeedItem != other.FeedItem) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -277,6 +314,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (adGroupAd_ != null) hash ^= AdGroupAd.GetHashCode();
       if (adGroupCriterion_ != null) hash ^= AdGroupCriterion.GetHashCode();
       if (campaignCriterion_ != null) hash ^= CampaignCriterion.GetHashCode();
+      if (feed_ != null) hash ^= Feed.GetHashCode();
+      if (feedItem_ != null) hash ^= FeedItem.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -320,6 +359,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (campaignCriterion_ != null) {
         _single_campaignCriterion_codec.WriteTagAndValue(output, CampaignCriterion);
       }
+      if (feed_ != null) {
+        _single_feed_codec.WriteTagAndValue(output, Feed);
+      }
+      if (feedItem_ != null) {
+        _single_feedItem_codec.WriteTagAndValue(output, FeedItem);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -354,6 +399,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (campaignCriterion_ != null) {
         size += _single_campaignCriterion_codec.CalculateSizeWithTag(CampaignCriterion);
+      }
+      if (feed_ != null) {
+        size += _single_feed_codec.CalculateSizeWithTag(Feed);
+      }
+      if (feedItem_ != null) {
+        size += _single_feedItem_codec.CalculateSizeWithTag(FeedItem);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -403,6 +454,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (other.campaignCriterion_ != null) {
         if (campaignCriterion_ == null || other.CampaignCriterion != "") {
           CampaignCriterion = other.CampaignCriterion;
+        }
+      }
+      if (other.feed_ != null) {
+        if (feed_ == null || other.Feed != "") {
+          Feed = other.Feed;
+        }
+      }
+      if (other.feedItem_ != null) {
+        if (feedItem_ == null || other.FeedItem != "") {
+          FeedItem = other.FeedItem;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -467,6 +528,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             string value = _single_campaignCriterion_codec.Read(input);
             if (campaignCriterion_ == null || value != "") {
               CampaignCriterion = value;
+            }
+            break;
+          }
+          case 98: {
+            string value = _single_feed_codec.Read(input);
+            if (feed_ == null || value != "") {
+              Feed = value;
+            }
+            break;
+          }
+          case 106: {
+            string value = _single_feedItem_codec.Read(input);
+            if (feedItem_ == null || value != "") {
+              FeedItem = value;
             }
             break;
           }

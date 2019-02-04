@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -491,16 +491,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="customerId">
         /// The ID of the customer with the recommendation.
         /// </param>
+        /// <param name="operations">
+        /// The list of operations to apply recommendations.
+        /// If partial_failure=false all recommendations should be of the same type
+        /// There is a limit of 100 operations per request.
+        /// </param>
         /// <param name="partialFailure">
         /// If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, operations will be carried
         /// out as a transaction if and only if they are all valid.
         /// Default is false.
-        /// </param>
-        /// <param name="operations">
-        /// The list of operations to apply recommendations.
-        /// If partial_failure=false all recommendations should be of the same type
-        /// There is a limit of 100 operations per request.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -510,14 +510,14 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual stt::Task<ApplyRecommendationResponse> ApplyRecommendationAsync(
             string customerId,
-            bool partialFailure,
             scg::IEnumerable<ApplyRecommendationOperation> operations,
+            bool partialFailure,
             gaxgrpc::CallSettings callSettings = null) => ApplyRecommendationAsync(
                 new ApplyRecommendationRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
-                    PartialFailure = partialFailure,
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                    PartialFailure = partialFailure,
                 },
                 callSettings);
 
@@ -527,16 +527,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="customerId">
         /// The ID of the customer with the recommendation.
         /// </param>
+        /// <param name="operations">
+        /// The list of operations to apply recommendations.
+        /// If partial_failure=false all recommendations should be of the same type
+        /// There is a limit of 100 operations per request.
+        /// </param>
         /// <param name="partialFailure">
         /// If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, operations will be carried
         /// out as a transaction if and only if they are all valid.
         /// Default is false.
-        /// </param>
-        /// <param name="operations">
-        /// The list of operations to apply recommendations.
-        /// If partial_failure=false all recommendations should be of the same type
-        /// There is a limit of 100 operations per request.
         /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
@@ -546,12 +546,12 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual stt::Task<ApplyRecommendationResponse> ApplyRecommendationAsync(
             string customerId,
-            bool partialFailure,
             scg::IEnumerable<ApplyRecommendationOperation> operations,
+            bool partialFailure,
             st::CancellationToken cancellationToken) => ApplyRecommendationAsync(
                 customerId,
-                partialFailure,
                 operations,
+                partialFailure,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
@@ -560,16 +560,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="customerId">
         /// The ID of the customer with the recommendation.
         /// </param>
+        /// <param name="operations">
+        /// The list of operations to apply recommendations.
+        /// If partial_failure=false all recommendations should be of the same type
+        /// There is a limit of 100 operations per request.
+        /// </param>
         /// <param name="partialFailure">
         /// If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, operations will be carried
         /// out as a transaction if and only if they are all valid.
         /// Default is false.
-        /// </param>
-        /// <param name="operations">
-        /// The list of operations to apply recommendations.
-        /// If partial_failure=false all recommendations should be of the same type
-        /// There is a limit of 100 operations per request.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -579,14 +579,14 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual ApplyRecommendationResponse ApplyRecommendation(
             string customerId,
-            bool partialFailure,
             scg::IEnumerable<ApplyRecommendationOperation> operations,
+            bool partialFailure,
             gaxgrpc::CallSettings callSettings = null) => ApplyRecommendation(
                 new ApplyRecommendationRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
-                    PartialFailure = partialFailure,
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                    PartialFailure = partialFailure,
                 },
                 callSettings);
 

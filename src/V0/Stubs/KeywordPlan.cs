@@ -38,12 +38,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "KA4yWi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5LZXl3b3JkUGxh",
             "bkZvcmVjYXN0SW50ZXJ2YWxFbnVtLktleXdvcmRQbGFuRm9yZWNhc3RJbnRl",
             "cnZhbEgAEj8KCmRhdGVfcmFuZ2UYAiABKAsyKS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5jb21tb24uRGF0ZVJhbmdlSABCCgoIaW50ZXJ2YWxC1QEKJWNv",
+            "ZWFkcy52MC5jb21tb24uRGF0ZVJhbmdlSABCCgoIaW50ZXJ2YWxC/QEKJWNv",
             "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCEEtleXdvcmRQ",
             "bGFuUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
             "YXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNH",
             "QUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3RvMw=="));
+            "bGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6",
+            "R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.DatesReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanForecastIntervalReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -57,6 +58,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
   #region Messages
   /// <summary>
   /// A Keyword Planner plan.
+  /// Max number of saved keyword plans: 10000.
+  /// It's possible to remove plans if limit is reached.
   /// </summary>
   public sealed partial class KeywordPlan : pb::IMessage<KeywordPlan> {
     private static readonly pb::MessageParser<KeywordPlan> _parser = new pb::MessageParser<KeywordPlan>(() => new KeywordPlan());

@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvdXNlcl9saXN0X2Vy",
-            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMi1AYK",
-            "EVVzZXJMaXN0RXJyb3JFbnVtIr4GCg1Vc2VyTGlzdEVycm9yEg8KC1VOU1BF",
+            "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMi7AcK",
+            "EVVzZXJMaXN0RXJyb3JFbnVtItYHCg1Vc2VyTGlzdEVycm9yEg8KC1VOU1BF",
             "Q0lGSUVEEAASCwoHVU5LTk9XThABEjcKM0VYVEVSTkFMX1JFTUFSS0VUSU5H",
             "X1VTRVJfTElTVF9NVVRBVEVfTk9UX1NVUFBPUlRFRBACEhoKFkNPTkNSRVRF",
             "X1RZUEVfUkVRVUlSRUQQAxIfChtDT05WRVJTSU9OX1RZUEVfSURfUkVRVUlS",
@@ -44,12 +44,16 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "X1VTRVJMSVNUUxAdEicKI0NBTk5PVF9NT0RJRllfQklMTEFCTEVfUkVDT1JE",
             "X0NPVU5UEB4SEgoOQVBQX0lEX05PVF9TRVQQHxItCilVU0VSTElTVF9OQU1F",
             "X0lTX1JFU0VSVkVEX0ZPUl9TWVNURU1fTElTVBAgEjYKMkFEVkVSVElTRVJf",
-            "Tk9UX1dISVRFTElTVEVEX0ZPUl9VU0lOR19VUExPQURFRF9EQVRBECFCyAEK",
-            "ImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCElVzZXJMaXN0",
-            "RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
-            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "Tk9UX1dISVRFTElTVEVEX0ZPUl9VU0lOR19VUExPQURFRF9EQVRBECESHgoa",
+            "UlVMRV9UWVBFX0lTX05PVF9TVVBQT1JURUQQIhI6CjZDQU5fTk9UX0FERF9B",
+            "X1NJTUlMQVJfVVNFUkxJU1RfQVNfTE9HSUNBTF9MSVNUX09QRVJBTkQQIxI6",
+            "CjZDQU5fTk9UX01JWF9DUk1fQkFTRURfSU5fTE9HSUNBTF9MSVNUX1dJVEhf",
+            "T1RIRVJfTElTVFMQJELtAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmVycm9yc0ISVXNlckxpc3RFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcu",
+            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJv",
+            "cnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJy",
+            "b3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3Jz6gIiR29vZ2xl",
+            "OjpBZHM6Okdvb2dsZUFkczo6VjA6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -236,7 +240,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("OWNERSHIP_REQUIRED_FOR_SET")] OwnershipRequiredForSet = 15,
         /// <summary>
-        /// The user list of the type is not mutable.
+        /// Creating user list without setting type in oneof user_list field, or
+        /// creating/updating read-only user list types is not allowed.
         /// </summary>
         [pbr::OriginalName("USER_LIST_MUTATE_NOT_SUPPORTED")] UserListMutateNotSupported = 16,
         /// <summary>
@@ -275,6 +280,19 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// advertiser uploaded data (e.g., Customer Match lists).
         /// </summary>
         [pbr::OriginalName("ADVERTISER_NOT_WHITELISTED_FOR_USING_UPLOADED_DATA")] AdvertiserNotWhitelistedForUsingUploadedData = 33,
+        /// <summary>
+        /// The provided rule_type is not supported for the user list.
+        /// </summary>
+        [pbr::OriginalName("RULE_TYPE_IS_NOT_SUPPORTED")] RuleTypeIsNotSupported = 34,
+        /// <summary>
+        /// Similar user list cannot be used as a logical user list operand.
+        /// </summary>
+        [pbr::OriginalName("CAN_NOT_ADD_A_SIMILAR_USERLIST_AS_LOGICAL_LIST_OPERAND")] CanNotAddASimilarUserlistAsLogicalListOperand = 35,
+        /// <summary>
+        /// Logical user list should not have a mix of CRM based user list and other
+        /// types of lists in its rules.
+        /// </summary>
+        [pbr::OriginalName("CAN_NOT_MIX_CRM_BASED_IN_LOGICAL_LIST_WITH_OTHER_LISTS")] CanNotMixCrmBasedInLogicalListWithOtherLists = 36,
       }
 
     }

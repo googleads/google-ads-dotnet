@@ -25,21 +25,24 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jcml0ZXJpb25fdHlw",
-            "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMikgMKEUNy",
-            "aXRlcmlvblR5cGVFbnVtIvwCCg1Dcml0ZXJpb25UeXBlEg8KC1VOU1BFQ0lG",
+            "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMi7QMKEUNy",
+            "aXRlcmlvblR5cGVFbnVtItcDCg1Dcml0ZXJpb25UeXBlEg8KC1VOU1BFQ0lG",
             "SUVEEAASCwoHVU5LTk9XThABEgsKB0tFWVdPUkQQAhINCglQTEFDRU1FTlQQ",
-            "AxIKCgZERVZJQ0UQBhIMCghMT0NBVElPThAHEhEKDUxJU1RJTkdfR1JPVVAQ",
-            "CBIPCgtBRF9TQ0hFRFVMRRAJEg0KCUFHRV9SQU5HRRAKEgoKBkdFTkRFUhAL",
-            "EhAKDElOQ09NRV9SQU5HRRAMEhMKD1BBUkVOVEFMX1NUQVRVUxANEhEKDVlP",
-            "VVRVQkVfVklERU8QDhITCg9ZT1VUVUJFX0NIQU5ORUwQDxINCglVU0VSX0xJ",
-            "U1QQEBINCglQUk9YSU1JVFkQERIJCgVUT1BJQxASEhEKDUxJU1RJTkdfU0NP",
-            "UEUQExIMCghMQU5HVUFHRRAUEgwKCElQX0JMT0NLEBUSEQoNQ09OVEVOVF9M",
-            "QUJFTBAWEgsKB0NBUlJJRVIQFxIRCg1VU0VSX0lOVEVSRVNUEBhCwwEKIWNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0ISQ3JpdGVyaW9uVHlw",
-            "ZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVB",
-            "ZHNcVjBcRW51bXNiBnByb3RvMw=="));
+            "AxIXChNNT0JJTEVfQVBQX0NBVEVHT1JZEAQSCgoGREVWSUNFEAYSDAoITE9D",
+            "QVRJT04QBxIRCg1MSVNUSU5HX0dST1VQEAgSDwoLQURfU0NIRURVTEUQCRIN",
+            "CglBR0VfUkFOR0UQChIKCgZHRU5ERVIQCxIQCgxJTkNPTUVfUkFOR0UQDBIT",
+            "Cg9QQVJFTlRBTF9TVEFUVVMQDRIRCg1ZT1VUVUJFX1ZJREVPEA4SEwoPWU9V",
+            "VFVCRV9DSEFOTkVMEA8SDQoJVVNFUl9MSVNUEBASDQoJUFJPWElNSVRZEBES",
+            "CQoFVE9QSUMQEhIRCg1MSVNUSU5HX1NDT1BFEBMSDAoITEFOR1VBR0UQFBIM",
+            "CghJUF9CTE9DSxAVEhEKDUNPTlRFTlRfTEFCRUwQFhILCgdDQVJSSUVSEBcS",
+            "EQoNVVNFUl9JTlRFUkVTVBAYEgsKB1dFQlBBR0UQGRIcChhPUEVSQVRJTkdf",
+            "U1lTVEVNX1ZFUlNJT04QGhIVChFBUFBfUEFZTUVOVF9NT0RFTBAbQucBCiFj",
+            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCEkNyaXRlcmlvblR5",
+            "cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
+            "cGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xl",
+            "QWRzXFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVu",
+            "dW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -177,6 +180,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("PLACEMENT")] Placement = 3,
         /// <summary>
+        /// Mobile application categories to target.
+        /// </summary>
+        [pbr::OriginalName("MOBILE_APP_CATEGORY")] MobileAppCategory = 4,
+        /// <summary>
         /// Devices to target.
         /// </summary>
         [pbr::OriginalName("DEVICE")] Device = 6,
@@ -252,6 +259,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// A category the user is interested in.
         /// </summary>
         [pbr::OriginalName("USER_INTEREST")] UserInterest = 24,
+        /// <summary>
+        /// Webpage criterion for dynamic search ads.
+        /// </summary>
+        [pbr::OriginalName("WEBPAGE")] Webpage = 25,
+        /// <summary>
+        /// Operating system version.
+        /// </summary>
+        [pbr::OriginalName("OPERATING_SYSTEM_VERSION")] OperatingSystemVersion = 26,
+        /// <summary>
+        /// App payment model.
+        /// </summary>
+        [pbr::OriginalName("APP_PAYMENT_MODEL")] AppPaymentModel = 27,
       }
 
     }

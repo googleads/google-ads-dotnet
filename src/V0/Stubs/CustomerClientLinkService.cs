@@ -28,23 +28,46 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "bGllbnRfbGlua19zZXJ2aWNlLnByb3RvEiBnb29nbGUuYWRzLmdvb2dsZWFk",
             "cy52MC5zZXJ2aWNlcxo8Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3Vy",
             "Y2VzL2N1c3RvbWVyX2NsaWVudF9saW5rLnByb3RvGhxnb29nbGUvYXBpL2Fu",
-            "bm90YXRpb25zLnByb3RvIjUKHEdldEN1c3RvbWVyQ2xpZW50TGlua1JlcXVl",
-            "c3QSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCTLrAQoZQ3VzdG9tZXJDbGllbnRM",
-            "aW5rU2VydmljZRLNAQoVR2V0Q3VzdG9tZXJDbGllbnRMaW5rEj4uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMuR2V0Q3VzdG9tZXJDbGllbnRM",
-            "aW5rUmVxdWVzdBo1Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNl",
-            "cy5DdXN0b21lckNsaWVudExpbmsiPYLT5JMCNxI1L3YwL3tyZXNvdXJjZV9u",
-            "YW1lPWN1c3RvbWVycy8qL2N1c3RvbWVyQ2xpZW50TGlua3MvKn1C3gEKJGNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlc0IeQ3VzdG9tZXJD",
-            "bGllbnRMaW5rU2VydmljZVByb3RvUAFaSGdvb2dsZS5nb2xhbmcub3JnL2dl",
-            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9zZXJ2aWNlcztz",
-            "ZXJ2aWNlc6ICA0dBQaoCIEdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlNlcnZp",
-            "Y2VzygIgR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcU2VydmljZXNiBnByb3Rv",
-            "Mw=="));
+            "bm90YXRpb25zLnByb3RvGiBnb29nbGUvcHJvdG9idWYvZmllbGRfbWFzay5w",
+            "cm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIjUKHEdldEN1",
+            "c3RvbWVyQ2xpZW50TGlua1JlcXVlc3QSFQoNcmVzb3VyY2VfbmFtZRgBIAEo",
+            "CSKIAQofTXV0YXRlQ3VzdG9tZXJDbGllbnRMaW5rUmVxdWVzdBITCgtjdXN0",
+            "b21lcl9pZBgBIAEoCRJQCglvcGVyYXRpb24YAiABKAsyPS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5DdXN0b21lckNsaWVudExpbmtPcGVy",
+            "YXRpb24i7QEKG0N1c3RvbWVyQ2xpZW50TGlua09wZXJhdGlvbhIvCgt1cGRh",
+            "dGVfbWFzaxgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2sSRwoG",
+            "Y3JlYXRlGAEgASgLMjUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3Vy",
+            "Y2VzLkN1c3RvbWVyQ2xpZW50TGlua0gAEkcKBnVwZGF0ZRgCIAEoCzI1Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5DdXN0b21lckNsaWVu",
+            "dExpbmtIAEILCglvcGVyYXRpb24idAogTXV0YXRlQ3VzdG9tZXJDbGllbnRM",
+            "aW5rUmVzcG9uc2USUAoGcmVzdWx0GAEgASgLMkAuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAuc2VydmljZXMuTXV0YXRlQ3VzdG9tZXJDbGllbnRMaW5rUmVz",
+            "dWx0IjcKHk11dGF0ZUN1c3RvbWVyQ2xpZW50TGlua1Jlc3VsdBIVCg1yZXNv",
+            "dXJjZV9uYW1lGAEgASgJMtQDChlDdXN0b21lckNsaWVudExpbmtTZXJ2aWNl",
+            "Es0BChVHZXRDdXN0b21lckNsaWVudExpbmsSPi5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5zZXJ2aWNlcy5HZXRDdXN0b21lckNsaWVudExpbmtSZXF1ZXN0",
+            "GjUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkN1c3RvbWVy",
+            "Q2xpZW50TGluayI9gtPkkwI3EjUvdjAve3Jlc291cmNlX25hbWU9Y3VzdG9t",
+            "ZXJzLyovY3VzdG9tZXJDbGllbnRMaW5rcy8qfRLmAQoYTXV0YXRlQ3VzdG9t",
+            "ZXJDbGllbnRMaW5rEkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2Vydmlj",
+            "ZXMuTXV0YXRlQ3VzdG9tZXJDbGllbnRMaW5rUmVxdWVzdBpCLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLk11dGF0ZUN1c3RvbWVyQ2xpZW50",
+            "TGlua1Jlc3BvbnNlIkOC0+STAj0iOC92MC9jdXN0b21lcnMve2N1c3RvbWVy",
+            "X2lkPSp9L2N1c3RvbWVyQ2xpZW50TGlua3M6bXV0YXRlOgEqQoUCCiRjb20u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXNCHkN1c3RvbWVyQ2xp",
+            "ZW50TGlua1NlcnZpY2VQcm90b1ABWkhnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvc2VydmljZXM7c2Vy",
+            "dmljZXOiAgNHQUGqAiBHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5TZXJ2aWNl",
+            "c8oCIEdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFNlcnZpY2Vz6gIkR29vZ2xl",
+            "OjpBZHM6Okdvb2dsZUFkczo6VjA6OlNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLinkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLinkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetCustomerClientLinkRequest), global::Google.Ads.GoogleAds.V0.Services.GetCustomerClientLinkRequest.Parser, new[]{ "ResourceName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GetCustomerClientLinkRequest), global::Google.Ads.GoogleAds.V0.Services.GetCustomerClientLinkRequest.Parser, new[]{ "ResourceName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkRequest), global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkRequest.Parser, new[]{ "CustomerId", "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkOperation), global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkOperation.Parser, new[]{ "UpdateMask", "Create", "Update" }, new[]{ "Operation" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkResponse), global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkResponse.Parser, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkResult), global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkResult.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
     }
     #endregion
@@ -159,6 +182,704 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(GetCustomerClientLinkRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ResourceName.Length != 0) {
+        ResourceName = other.ResourceName;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Request message for [CustomerClientLinkService.MutateCustomerClientLink][google.ads.googleads.v0.services.CustomerClientLinkService.MutateCustomerClientLink].
+  /// </summary>
+  public sealed partial class MutateCustomerClientLinkRequest : pb::IMessage<MutateCustomerClientLinkRequest> {
+    private static readonly pb::MessageParser<MutateCustomerClientLinkRequest> _parser = new pb::MessageParser<MutateCustomerClientLinkRequest>(() => new MutateCustomerClientLinkRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MutateCustomerClientLinkRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkServiceReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MutateCustomerClientLinkRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MutateCustomerClientLinkRequest(MutateCustomerClientLinkRequest other) : this() {
+      customerId_ = other.customerId_;
+      operation_ = other.operation_ != null ? other.operation_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MutateCustomerClientLinkRequest Clone() {
+      return new MutateCustomerClientLinkRequest(this);
+    }
+
+    /// <summary>Field number for the "customer_id" field.</summary>
+    public const int CustomerIdFieldNumber = 1;
+    private string customerId_ = "";
+    /// <summary>
+    /// The ID of the customer whose customer link are being modified.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CustomerId {
+      get { return customerId_; }
+      set {
+        customerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "operation" field.</summary>
+    public const int OperationFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkOperation operation_;
+    /// <summary>
+    /// The operation to perform on the individual CustomerClientLink.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkOperation Operation {
+      get { return operation_; }
+      set {
+        operation_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MutateCustomerClientLinkRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MutateCustomerClientLinkRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CustomerId != other.CustomerId) return false;
+      if (!object.Equals(Operation, other.Operation)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
+      if (operation_ != null) hash ^= Operation.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      if (operation_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Operation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (CustomerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerId);
+      }
+      if (operation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Operation);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MutateCustomerClientLinkRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CustomerId.Length != 0) {
+        CustomerId = other.CustomerId;
+      }
+      if (other.operation_ != null) {
+        if (operation_ == null) {
+          operation_ = new global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkOperation();
+        }
+        Operation.MergeFrom(other.Operation);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (operation_ == null) {
+              operation_ = new global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkOperation();
+            }
+            input.ReadMessage(operation_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A single operation (create, update) on a CustomerClientLink.
+  /// </summary>
+  public sealed partial class CustomerClientLinkOperation : pb::IMessage<CustomerClientLinkOperation> {
+    private static readonly pb::MessageParser<CustomerClientLinkOperation> _parser = new pb::MessageParser<CustomerClientLinkOperation>(() => new CustomerClientLinkOperation());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CustomerClientLinkOperation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkServiceReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CustomerClientLinkOperation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CustomerClientLinkOperation(CustomerClientLinkOperation other) : this() {
+      updateMask_ = other.updateMask_ != null ? other.updateMask_.Clone() : null;
+      switch (other.OperationCase) {
+        case OperationOneofCase.Create:
+          Create = other.Create.Clone();
+          break;
+        case OperationOneofCase.Update:
+          Update = other.Update.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CustomerClientLinkOperation Clone() {
+      return new CustomerClientLinkOperation(this);
+    }
+
+    /// <summary>Field number for the "update_mask" field.</summary>
+    public const int UpdateMaskFieldNumber = 4;
+    private global::Google.Protobuf.WellKnownTypes.FieldMask updateMask_;
+    /// <summary>
+    /// FieldMask that determines which resource fields are modified in an update.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.FieldMask UpdateMask {
+      get { return updateMask_; }
+      set {
+        updateMask_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "create" field.</summary>
+    public const int CreateFieldNumber = 1;
+    /// <summary>
+    /// Create operation: No resource name is expected for the new link.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink Create {
+      get { return operationCase_ == OperationOneofCase.Create ? (global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink) operation_ : null; }
+      set {
+        operation_ = value;
+        operationCase_ = value == null ? OperationOneofCase.None : OperationOneofCase.Create;
+      }
+    }
+
+    /// <summary>Field number for the "update" field.</summary>
+    public const int UpdateFieldNumber = 2;
+    /// <summary>
+    /// Update operation: The link is expected to have a valid resource name.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink Update {
+      get { return operationCase_ == OperationOneofCase.Update ? (global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink) operation_ : null; }
+      set {
+        operation_ = value;
+        operationCase_ = value == null ? OperationOneofCase.None : OperationOneofCase.Update;
+      }
+    }
+
+    private object operation_;
+    /// <summary>Enum of possible cases for the "operation" oneof.</summary>
+    public enum OperationOneofCase {
+      None = 0,
+      Create = 1,
+      Update = 2,
+    }
+    private OperationOneofCase operationCase_ = OperationOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OperationOneofCase OperationCase {
+      get { return operationCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOperation() {
+      operationCase_ = OperationOneofCase.None;
+      operation_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CustomerClientLinkOperation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CustomerClientLinkOperation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(UpdateMask, other.UpdateMask)) return false;
+      if (!object.Equals(Create, other.Create)) return false;
+      if (!object.Equals(Update, other.Update)) return false;
+      if (OperationCase != other.OperationCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (updateMask_ != null) hash ^= UpdateMask.GetHashCode();
+      if (operationCase_ == OperationOneofCase.Create) hash ^= Create.GetHashCode();
+      if (operationCase_ == OperationOneofCase.Update) hash ^= Update.GetHashCode();
+      hash ^= (int) operationCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (operationCase_ == OperationOneofCase.Create) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Create);
+      }
+      if (operationCase_ == OperationOneofCase.Update) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Update);
+      }
+      if (updateMask_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(UpdateMask);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (updateMask_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateMask);
+      }
+      if (operationCase_ == OperationOneofCase.Create) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Create);
+      }
+      if (operationCase_ == OperationOneofCase.Update) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Update);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CustomerClientLinkOperation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.updateMask_ != null) {
+        if (updateMask_ == null) {
+          updateMask_ = new global::Google.Protobuf.WellKnownTypes.FieldMask();
+        }
+        UpdateMask.MergeFrom(other.UpdateMask);
+      }
+      switch (other.OperationCase) {
+        case OperationOneofCase.Create:
+          if (Create == null) {
+            Create = new global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink();
+          }
+          Create.MergeFrom(other.Create);
+          break;
+        case OperationOneofCase.Update:
+          if (Update == null) {
+            Update = new global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink();
+          }
+          Update.MergeFrom(other.Update);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink subBuilder = new global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink();
+            if (operationCase_ == OperationOneofCase.Create) {
+              subBuilder.MergeFrom(Create);
+            }
+            input.ReadMessage(subBuilder);
+            Create = subBuilder;
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink subBuilder = new global::Google.Ads.GoogleAds.V0.Resources.CustomerClientLink();
+            if (operationCase_ == OperationOneofCase.Update) {
+              subBuilder.MergeFrom(Update);
+            }
+            input.ReadMessage(subBuilder);
+            Update = subBuilder;
+            break;
+          }
+          case 34: {
+            if (updateMask_ == null) {
+              updateMask_ = new global::Google.Protobuf.WellKnownTypes.FieldMask();
+            }
+            input.ReadMessage(updateMask_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for a CustomerClientLink mutate.
+  /// </summary>
+  public sealed partial class MutateCustomerClientLinkResponse : pb::IMessage<MutateCustomerClientLinkResponse> {
+    private static readonly pb::MessageParser<MutateCustomerClientLinkResponse> _parser = new pb::MessageParser<MutateCustomerClientLinkResponse>(() => new MutateCustomerClientLinkResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MutateCustomerClientLinkResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkServiceReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MutateCustomerClientLinkResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MutateCustomerClientLinkResponse(MutateCustomerClientLinkResponse other) : this() {
+      result_ = other.result_ != null ? other.result_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MutateCustomerClientLinkResponse Clone() {
+      return new MutateCustomerClientLinkResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkResult result_;
+    /// <summary>
+    /// A result that identifies the resource affected by the mutate request.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkResult Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MutateCustomerClientLinkResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MutateCustomerClientLinkResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Result, other.Result)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (result_ != null) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (result_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (result_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MutateCustomerClientLinkResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.result_ != null) {
+        if (result_ == null) {
+          result_ = new global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkResult();
+        }
+        Result.MergeFrom(other.Result);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (result_ == null) {
+              result_ = new global::Google.Ads.GoogleAds.V0.Services.MutateCustomerClientLinkResult();
+            }
+            input.ReadMessage(result_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// The result for a single customer client link mutate.
+  /// </summary>
+  public sealed partial class MutateCustomerClientLinkResult : pb::IMessage<MutateCustomerClientLinkResult> {
+    private static readonly pb::MessageParser<MutateCustomerClientLinkResult> _parser = new pb::MessageParser<MutateCustomerClientLinkResult>(() => new MutateCustomerClientLinkResult());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MutateCustomerClientLinkResult> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Services.CustomerClientLinkServiceReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MutateCustomerClientLinkResult() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MutateCustomerClientLinkResult(MutateCustomerClientLinkResult other) : this() {
+      resourceName_ = other.resourceName_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MutateCustomerClientLinkResult Clone() {
+      return new MutateCustomerClientLinkResult(this);
+    }
+
+    /// <summary>Field number for the "resource_name" field.</summary>
+    public const int ResourceNameFieldNumber = 1;
+    private string resourceName_ = "";
+    /// <summary>
+    /// Returned for successful operations.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ResourceName {
+      get { return resourceName_; }
+      set {
+        resourceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MutateCustomerClientLinkResult);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MutateCustomerClientLinkResult other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ResourceName != other.ResourceName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ResourceName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MutateCustomerClientLinkResult other) {
       if (other == null) {
         return;
       }

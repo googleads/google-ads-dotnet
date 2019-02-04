@@ -33,12 +33,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "cHJvdG9idWYuU3RyaW5nVmFsdWUSNAoPbWFuYWdlcl9saW5rX2lkGAQgASgL",
             "MhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSVgoGc3RhdHVzGAUgASgO",
             "MkYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuTWFuYWdlckxpbmtT",
-            "dGF0dXNFbnVtLk1hbmFnZXJMaW5rU3RhdHVzQt0BCiVjb20uZ29vZ2xlLmFk",
+            "dGF0dXNFbnVtLk1hbmFnZXJMaW5rU3RhdHVzQoUCCiVjb20uZ29vZ2xlLmFk",
             "cy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhhDdXN0b21lck1hbmFnZXJMaW5r",
             "UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
             "cy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGq",
             "AiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVc",
-            "QWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3RvMw=="));
+            "QWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29v",
+            "Z2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.ManagerLinkStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -111,7 +112,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private static readonly pb::FieldCodec<string> _single_managerCustomer_codec = pb::FieldCodec.ForClassWrapper<string>(26);
     private string managerCustomer_;
     /// <summary>
-    /// The manager customer linked to the customer. This field is read only.
+    /// The manager customer linked to the customer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ManagerCustomer {

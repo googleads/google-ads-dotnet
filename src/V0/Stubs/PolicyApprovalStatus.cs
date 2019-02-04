@@ -29,12 +29,13 @@ namespace Google.Ads.GoogleAds.V0.Enums {
             "cyKhAQoYUG9saWN5QXBwcm92YWxTdGF0dXNFbnVtIoQBChRQb2xpY3lBcHBy",
             "b3ZhbFN0YXR1cxIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIPCgtE",
             "SVNBUFBST1ZFRBACEhQKEEFQUFJPVkVEX0xJTUlURUQQAxIMCghBUFBST1ZF",
-            "RBAEEhkKFUFSRUFfT0ZfSU5URVJFU1RfT05MWRAFQsoBCiFjb20uZ29vZ2xl",
+            "RBAEEhkKFUFSRUFfT0ZfSU5URVJFU1RfT05MWRAFQu4BCiFjb20uZ29vZ2xl",
             "LmFkcy5nb29nbGVhZHMudjAuZW51bXNCGVBvbGljeUFwcHJvdmFsU3RhdHVz",
             "UHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
             "cy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xl",
             "LkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFk",
-            "c1xWMFxFbnVtc2IGcHJvdG8z"));
+            "c1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVt",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

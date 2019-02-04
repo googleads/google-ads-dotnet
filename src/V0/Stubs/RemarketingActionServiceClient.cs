@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -30,36 +30,36 @@ using stt = System.Threading.Tasks;
 namespace Google.Ads.GoogleAds.V0.Services
 {
     /// <summary>
-    /// Settings for a <see cref="CampaignGroupServiceClient"/>.
+    /// Settings for a <see cref="RemarketingActionServiceClient"/>.
     /// </summary>
-    public sealed partial class CampaignGroupServiceSettings : gaxgrpc::ServiceSettingsBase
+    public sealed partial class RemarketingActionServiceSettings : gaxgrpc::ServiceSettingsBase
     {
         /// <summary>
-        /// Get a new instance of the default <see cref="CampaignGroupServiceSettings"/>.
+        /// Get a new instance of the default <see cref="RemarketingActionServiceSettings"/>.
         /// </summary>
         /// <returns>
-        /// A new instance of the default <see cref="CampaignGroupServiceSettings"/>.
+        /// A new instance of the default <see cref="RemarketingActionServiceSettings"/>.
         /// </returns>
-        public static CampaignGroupServiceSettings GetDefault() => new CampaignGroupServiceSettings();
+        public static RemarketingActionServiceSettings GetDefault() => new RemarketingActionServiceSettings();
 
         /// <summary>
-        /// Constructs a new <see cref="CampaignGroupServiceSettings"/> object with default settings.
+        /// Constructs a new <see cref="RemarketingActionServiceSettings"/> object with default settings.
         /// </summary>
-        public CampaignGroupServiceSettings() { }
+        public RemarketingActionServiceSettings() { }
 
-        private CampaignGroupServiceSettings(CampaignGroupServiceSettings existing) : base(existing)
+        private RemarketingActionServiceSettings(RemarketingActionServiceSettings existing) : base(existing)
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
-            GetCampaignGroupSettings = existing.GetCampaignGroupSettings;
-            MutateCampaignGroupsSettings = existing.MutateCampaignGroupsSettings;
+            GetRemarketingActionSettings = existing.GetRemarketingActionSettings;
+            MutateRemarketingActionsSettings = existing.MutateRemarketingActionsSettings;
             OnCopy(existing);
         }
 
-        partial void OnCopy(CampaignGroupServiceSettings existing);
+        partial void OnCopy(RemarketingActionServiceSettings existing);
 
         /// <summary>
         /// The filter specifying which RPC <see cref="grpccore::StatusCode"/>s are eligible for retry
-        /// for "Idempotent" <see cref="CampaignGroupServiceClient"/> RPC methods.
+        /// for "Idempotent" <see cref="RemarketingActionServiceClient"/> RPC methods.
         /// </summary>
         /// <remarks>
         /// The eligible RPC <see cref="grpccore::StatusCode"/>s for retry for "Idempotent" RPC methods are:
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         /// <summary>
         /// The filter specifying which RPC <see cref="grpccore::StatusCode"/>s are eligible for retry
-        /// for "NonIdempotent" <see cref="CampaignGroupServiceClient"/> RPC methods.
+        /// for "NonIdempotent" <see cref="RemarketingActionServiceClient"/> RPC methods.
         /// </summary>
         /// <remarks>
         /// There are no RPC <see cref="grpccore::StatusCode"/>s eligible for retry for "NonIdempotent" RPC methods.
@@ -82,13 +82,13 @@ namespace Google.Ads.GoogleAds.V0.Services
             gaxgrpc::RetrySettings.FilterForStatusCodes();
 
         /// <summary>
-        /// "Default" retry backoff for <see cref="CampaignGroupServiceClient"/> RPC methods.
+        /// "Default" retry backoff for <see cref="RemarketingActionServiceClient"/> RPC methods.
         /// </summary>
         /// <returns>
-        /// The "Default" retry backoff for <see cref="CampaignGroupServiceClient"/> RPC methods.
+        /// The "Default" retry backoff for <see cref="RemarketingActionServiceClient"/> RPC methods.
         /// </returns>
         /// <remarks>
-        /// The "Default" retry backoff for <see cref="CampaignGroupServiceClient"/> RPC methods is defined as:
+        /// The "Default" retry backoff for <see cref="RemarketingActionServiceClient"/> RPC methods is defined as:
         /// <list type="bullet">
         /// <item><description>Initial delay: 100 milliseconds</description></item>
         /// <item><description>Maximum delay: 60000 milliseconds</description></item>
@@ -102,13 +102,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         );
 
         /// <summary>
-        /// "Default" timeout backoff for <see cref="CampaignGroupServiceClient"/> RPC methods.
+        /// "Default" timeout backoff for <see cref="RemarketingActionServiceClient"/> RPC methods.
         /// </summary>
         /// <returns>
-        /// The "Default" timeout backoff for <see cref="CampaignGroupServiceClient"/> RPC methods.
+        /// The "Default" timeout backoff for <see cref="RemarketingActionServiceClient"/> RPC methods.
         /// </returns>
         /// <remarks>
-        /// The "Default" timeout backoff for <see cref="CampaignGroupServiceClient"/> RPC methods is defined as:
+        /// The "Default" timeout backoff for <see cref="RemarketingActionServiceClient"/> RPC methods is defined as:
         /// <list type="bullet">
         /// <item><description>Initial timeout: 20000 milliseconds</description></item>
         /// <item><description>Timeout multiplier: 1.0</description></item>
@@ -123,11 +123,11 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
-        /// <c>CampaignGroupServiceClient.GetCampaignGroup</c> and <c>CampaignGroupServiceClient.GetCampaignGroupAsync</c>.
+        /// <c>RemarketingActionServiceClient.GetRemarketingAction</c> and <c>RemarketingActionServiceClient.GetRemarketingActionAsync</c>.
         /// </summary>
         /// <remarks>
-        /// The default <c>CampaignGroupServiceClient.GetCampaignGroup</c> and
-        /// <c>CampaignGroupServiceClient.GetCampaignGroupAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// The default <c>RemarketingActionServiceClient.GetRemarketingAction</c> and
+        /// <c>RemarketingActionServiceClient.GetRemarketingActionAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
         /// <list type="bullet">
         /// <item><description>Initial retry delay: 100 milliseconds</description></item>
         /// <item><description>Retry delay multiplier: 1.3</description></item>
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </list>
         /// Default RPC expiration is 600000 milliseconds.
         /// </remarks>
-        public gaxgrpc::CallSettings GetCampaignGroupSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+        public gaxgrpc::CallSettings GetRemarketingActionSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
             gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
                 retryBackoff: GetDefaultRetryBackoff(),
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
@@ -153,11 +153,11 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
-        /// <c>CampaignGroupServiceClient.MutateCampaignGroups</c> and <c>CampaignGroupServiceClient.MutateCampaignGroupsAsync</c>.
+        /// <c>RemarketingActionServiceClient.MutateRemarketingActions</c> and <c>RemarketingActionServiceClient.MutateRemarketingActionsAsync</c>.
         /// </summary>
         /// <remarks>
-        /// The default <c>CampaignGroupServiceClient.MutateCampaignGroups</c> and
-        /// <c>CampaignGroupServiceClient.MutateCampaignGroupsAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// The default <c>RemarketingActionServiceClient.MutateRemarketingActions</c> and
+        /// <c>RemarketingActionServiceClient.MutateRemarketingActionsAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
         /// <list type="bullet">
         /// <item><description>Initial retry delay: 100 milliseconds</description></item>
         /// <item><description>Retry delay multiplier: 1.3</description></item>
@@ -172,7 +172,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </list>
         /// Default RPC expiration is 600000 milliseconds.
         /// </remarks>
-        public gaxgrpc::CallSettings MutateCampaignGroupsSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+        public gaxgrpc::CallSettings MutateRemarketingActionsSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
             gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
                 retryBackoff: GetDefaultRetryBackoff(),
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
@@ -183,25 +183,25 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <summary>
         /// Creates a deep clone of this object, with all the same property values.
         /// </summary>
-        /// <returns>A deep clone of this <see cref="CampaignGroupServiceSettings"/> object.</returns>
-        public CampaignGroupServiceSettings Clone() => new CampaignGroupServiceSettings(this);
+        /// <returns>A deep clone of this <see cref="RemarketingActionServiceSettings"/> object.</returns>
+        public RemarketingActionServiceSettings Clone() => new RemarketingActionServiceSettings(this);
     }
 
     /// <summary>
-    /// CampaignGroupService client wrapper, for convenient use.
+    /// RemarketingActionService client wrapper, for convenient use.
     /// </summary>
-    public abstract partial class CampaignGroupServiceClient
+    public abstract partial class RemarketingActionServiceClient
     {
         /// <summary>
-        /// The default endpoint for the CampaignGroupService service, which is a host of "googleads.googleapis.com" and a port of 443.
+        /// The default endpoint for the RemarketingActionService service, which is a host of "googleads.googleapis.com" and a port of 443.
         /// </summary>
         public static gaxgrpc::ServiceEndpoint DefaultEndpoint { get; } = new gaxgrpc::ServiceEndpoint("googleads.googleapis.com", 443);
 
         /// <summary>
-        /// The default CampaignGroupService scopes.
+        /// The default RemarketingActionService scopes.
         /// </summary>
         /// <remarks>
-        /// The default CampaignGroupService scopes are:
+        /// The default RemarketingActionService scopes are:
         /// <list type="bullet">
         /// </list>
         /// </remarks>
@@ -211,7 +211,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         private static readonly gaxgrpc::ChannelPool s_channelPool = new gaxgrpc::ChannelPool(DefaultScopes);
 
         /// <summary>
-        /// Asynchronously creates a <see cref="CampaignGroupServiceClient"/>, applying defaults for all unspecified settings,
+        /// Asynchronously creates a <see cref="RemarketingActionServiceClient"/>, applying defaults for all unspecified settings,
         /// and creating a channel connecting to the given endpoint with application default credentials where
         /// necessary. See the example for how to use custom credentials.
         /// </summary>
@@ -223,7 +223,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
         /// // credential file to use that credential.
-        /// CampaignGroupServiceClient client = await CampaignGroupServiceClient.CreateAsync();
+        /// RemarketingActionServiceClient client = await RemarketingActionServiceClient.CreateAsync();
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
@@ -234,24 +234,24 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// ...
         /// GoogleCredential cred = GoogleCredential.FromFile("/path/to/credentials.json");
         /// Channel channel = new Channel(
-        ///     CampaignGroupServiceClient.DefaultEndpoint.Host, CampaignGroupServiceClient.DefaultEndpoint.Port, cred.ToChannelCredentials());
-        /// CampaignGroupServiceClient client = CampaignGroupServiceClient.Create(channel);
+        ///     RemarketingActionServiceClient.DefaultEndpoint.Host, RemarketingActionServiceClient.DefaultEndpoint.Port, cred.ToChannelCredentials());
+        /// RemarketingActionServiceClient client = RemarketingActionServiceClient.Create(channel);
         /// ...
         /// // Shutdown the channel when it is no longer required.
         /// await channel.ShutdownAsync();
         /// </code>
         /// </example>
         /// <param name="endpoint">Optional <see cref="gaxgrpc::ServiceEndpoint"/>.</param>
-        /// <param name="settings">Optional <see cref="CampaignGroupServiceSettings"/>.</param>
-        /// <returns>The task representing the created <see cref="CampaignGroupServiceClient"/>.</returns>
-        public static async stt::Task<CampaignGroupServiceClient> CreateAsync(gaxgrpc::ServiceEndpoint endpoint = null, CampaignGroupServiceSettings settings = null)
+        /// <param name="settings">Optional <see cref="RemarketingActionServiceSettings"/>.</param>
+        /// <returns>The task representing the created <see cref="RemarketingActionServiceClient"/>.</returns>
+        public static async stt::Task<RemarketingActionServiceClient> CreateAsync(gaxgrpc::ServiceEndpoint endpoint = null, RemarketingActionServiceSettings settings = null)
         {
             grpccore::Channel channel = await s_channelPool.GetChannelAsync(endpoint ?? DefaultEndpoint).ConfigureAwait(false);
             return Create(channel, settings);
         }
 
         /// <summary>
-        /// Synchronously creates a <see cref="CampaignGroupServiceClient"/>, applying defaults for all unspecified settings,
+        /// Synchronously creates a <see cref="RemarketingActionServiceClient"/>, applying defaults for all unspecified settings,
         /// and creating a channel connecting to the given endpoint with application default credentials where
         /// necessary. See the example for how to use custom credentials.
         /// </summary>
@@ -263,7 +263,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// // When running on Google Cloud Platform this will use the project Compute Credential.
         /// // Or set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of a JSON
         /// // credential file to use that credential.
-        /// CampaignGroupServiceClient client = CampaignGroupServiceClient.Create();
+        /// RemarketingActionServiceClient client = RemarketingActionServiceClient.Create();
         /// </code>
         /// This sample shows how to create a client using credentials loaded from a JSON file:
         /// <code>
@@ -274,41 +274,41 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// ...
         /// GoogleCredential cred = GoogleCredential.FromFile("/path/to/credentials.json");
         /// Channel channel = new Channel(
-        ///     CampaignGroupServiceClient.DefaultEndpoint.Host, CampaignGroupServiceClient.DefaultEndpoint.Port, cred.ToChannelCredentials());
-        /// CampaignGroupServiceClient client = CampaignGroupServiceClient.Create(channel);
+        ///     RemarketingActionServiceClient.DefaultEndpoint.Host, RemarketingActionServiceClient.DefaultEndpoint.Port, cred.ToChannelCredentials());
+        /// RemarketingActionServiceClient client = RemarketingActionServiceClient.Create(channel);
         /// ...
         /// // Shutdown the channel when it is no longer required.
         /// channel.ShutdownAsync().Wait();
         /// </code>
         /// </example>
         /// <param name="endpoint">Optional <see cref="gaxgrpc::ServiceEndpoint"/>.</param>
-        /// <param name="settings">Optional <see cref="CampaignGroupServiceSettings"/>.</param>
-        /// <returns>The created <see cref="CampaignGroupServiceClient"/>.</returns>
-        public static CampaignGroupServiceClient Create(gaxgrpc::ServiceEndpoint endpoint = null, CampaignGroupServiceSettings settings = null)
+        /// <param name="settings">Optional <see cref="RemarketingActionServiceSettings"/>.</param>
+        /// <returns>The created <see cref="RemarketingActionServiceClient"/>.</returns>
+        public static RemarketingActionServiceClient Create(gaxgrpc::ServiceEndpoint endpoint = null, RemarketingActionServiceSettings settings = null)
         {
             grpccore::Channel channel = s_channelPool.GetChannel(endpoint ?? DefaultEndpoint);
             return Create(channel, settings);
         }
 
         /// <summary>
-        /// Creates a <see cref="CampaignGroupServiceClient"/> which uses the specified channel for remote operations.
+        /// Creates a <see cref="RemarketingActionServiceClient"/> which uses the specified channel for remote operations.
         /// </summary>
         /// <param name="channel">The <see cref="grpccore::Channel"/> for remote operations. Must not be null.</param>
-        /// <param name="settings">Optional <see cref="CampaignGroupServiceSettings"/>.</param>
-        /// <returns>The created <see cref="CampaignGroupServiceClient"/>.</returns>
-        public static CampaignGroupServiceClient Create(grpccore::Channel channel, CampaignGroupServiceSettings settings = null)
+        /// <param name="settings">Optional <see cref="RemarketingActionServiceSettings"/>.</param>
+        /// <returns>The created <see cref="RemarketingActionServiceClient"/>.</returns>
+        public static RemarketingActionServiceClient Create(grpccore::Channel channel, RemarketingActionServiceSettings settings = null)
         {
             gax::GaxPreconditions.CheckNotNull(channel, nameof(channel));
             return Create(new grpccore::DefaultCallInvoker(channel), settings);
         }
 
         /// <summary>
-        /// Creates a <see cref="CampaignGroupServiceClient"/> which uses the specified call invoker for remote operations.
+        /// Creates a <see cref="RemarketingActionServiceClient"/> which uses the specified call invoker for remote operations.
         /// </summary>
         /// <param name="callInvoker">The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.</param>
-        /// <param name="settings">Optional <see cref="CampaignGroupServiceSettings"/>.</param>
-        /// <returns>The created <see cref="CampaignGroupServiceClient"/>.</returns>
-        public static CampaignGroupServiceClient Create(grpccore::CallInvoker callInvoker, CampaignGroupServiceSettings settings = null)
+        /// <param name="settings">Optional <see cref="RemarketingActionServiceSettings"/>.</param>
+        /// <returns>The created <see cref="RemarketingActionServiceClient"/>.</returns>
+        public static RemarketingActionServiceClient Create(grpccore::CallInvoker callInvoker, RemarketingActionServiceSettings settings = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpccore::Interceptors.Interceptor interceptor = settings?.Interceptor;
@@ -316,34 +316,34 @@ namespace Google.Ads.GoogleAds.V0.Services
             {
                 callInvoker = grpccore::Interceptors.CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
-            CampaignGroupService.CampaignGroupServiceClient grpcClient = new CampaignGroupService.CampaignGroupServiceClient(callInvoker);
-            return new CampaignGroupServiceClientImpl(grpcClient, settings);
+            RemarketingActionService.RemarketingActionServiceClient grpcClient = new RemarketingActionService.RemarketingActionServiceClient(callInvoker);
+            return new RemarketingActionServiceClientImpl(grpcClient, settings);
         }
 
         /// <summary>
-        /// Shuts down any channels automatically created by <see cref="Create(gaxgrpc::ServiceEndpoint, CampaignGroupServiceSettings)"/>
-        /// and <see cref="CreateAsync(gaxgrpc::ServiceEndpoint, CampaignGroupServiceSettings)"/>. Channels which weren't automatically
+        /// Shuts down any channels automatically created by <see cref="Create(gaxgrpc::ServiceEndpoint, RemarketingActionServiceSettings)"/>
+        /// and <see cref="CreateAsync(gaxgrpc::ServiceEndpoint, RemarketingActionServiceSettings)"/>. Channels which weren't automatically
         /// created are not affected.
         /// </summary>
-        /// <remarks>After calling this method, further calls to <see cref="Create(gaxgrpc::ServiceEndpoint, CampaignGroupServiceSettings)"/>
-        /// and <see cref="CreateAsync(gaxgrpc::ServiceEndpoint, CampaignGroupServiceSettings)"/> will create new channels, which could
+        /// <remarks>After calling this method, further calls to <see cref="Create(gaxgrpc::ServiceEndpoint, RemarketingActionServiceSettings)"/>
+        /// and <see cref="CreateAsync(gaxgrpc::ServiceEndpoint, RemarketingActionServiceSettings)"/> will create new channels, which could
         /// in turn be shut down by another call to this method.</remarks>
         /// <returns>A task representing the asynchronous shutdown operation.</returns>
         public static stt::Task ShutdownDefaultChannelsAsync() => s_channelPool.ShutdownChannelsAsync();
 
         /// <summary>
-        /// The underlying gRPC CampaignGroupService client.
+        /// The underlying gRPC RemarketingActionService client.
         /// </summary>
-        public virtual CampaignGroupService.CampaignGroupServiceClient GrpcClient
+        public virtual RemarketingActionService.RemarketingActionServiceClient GrpcClient
         {
             get { throw new sys::NotImplementedException(); }
         }
 
         /// <summary>
-        /// Returns the requested campaign group in full detail.
+        /// Returns the requested remarketing action in full detail.
         /// </summary>
         /// <param name="resourceName">
-        /// The resource name of the campaign group to fetch.
+        /// The resource name of the remarketing action to fetch.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -351,20 +351,20 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvr::CampaignGroup> GetCampaignGroupAsync(
+        public virtual stt::Task<gagvr::RemarketingAction> GetRemarketingActionAsync(
             string resourceName,
-            gaxgrpc::CallSettings callSettings = null) => GetCampaignGroupAsync(
-                new GetCampaignGroupRequest
+            gaxgrpc::CallSettings callSettings = null) => GetRemarketingActionAsync(
+                new GetRemarketingActionRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
                 callSettings);
 
         /// <summary>
-        /// Returns the requested campaign group in full detail.
+        /// Returns the requested remarketing action in full detail.
         /// </summary>
         /// <param name="resourceName">
-        /// The resource name of the campaign group to fetch.
+        /// The resource name of the remarketing action to fetch.
         /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
@@ -372,17 +372,17 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvr::CampaignGroup> GetCampaignGroupAsync(
+        public virtual stt::Task<gagvr::RemarketingAction> GetRemarketingActionAsync(
             string resourceName,
-            st::CancellationToken cancellationToken) => GetCampaignGroupAsync(
+            st::CancellationToken cancellationToken) => GetRemarketingActionAsync(
                 resourceName,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Returns the requested campaign group in full detail.
+        /// Returns the requested remarketing action in full detail.
         /// </summary>
         /// <param name="resourceName">
-        /// The resource name of the campaign group to fetch.
+        /// The resource name of the remarketing action to fetch.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -390,17 +390,17 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvr::CampaignGroup GetCampaignGroup(
+        public virtual gagvr::RemarketingAction GetRemarketingAction(
             string resourceName,
-            gaxgrpc::CallSettings callSettings = null) => GetCampaignGroup(
-                new GetCampaignGroupRequest
+            gaxgrpc::CallSettings callSettings = null) => GetRemarketingAction(
+                new GetRemarketingActionRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
                 },
                 callSettings);
 
         /// <summary>
-        /// Returns the requested campaign group in full detail.
+        /// Returns the requested remarketing action in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -411,15 +411,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvr::CampaignGroup> GetCampaignGroupAsync(
-            GetCampaignGroupRequest request,
+        public virtual stt::Task<gagvr::RemarketingAction> GetRemarketingActionAsync(
+            GetRemarketingActionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
         }
 
         /// <summary>
-        /// Returns the requested campaign group in full detail.
+        /// Returns the requested remarketing action in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -430,14 +430,14 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<gagvr::CampaignGroup> GetCampaignGroupAsync(
-            GetCampaignGroupRequest request,
-            st::CancellationToken cancellationToken) => GetCampaignGroupAsync(
+        public virtual stt::Task<gagvr::RemarketingAction> GetRemarketingActionAsync(
+            GetRemarketingActionRequest request,
+            st::CancellationToken cancellationToken) => GetRemarketingActionAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Returns the requested campaign group in full detail.
+        /// Returns the requested remarketing action in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -448,22 +448,31 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual gagvr::CampaignGroup GetCampaignGroup(
-            GetCampaignGroupRequest request,
+        public virtual gagvr::RemarketingAction GetRemarketingAction(
+            GetRemarketingActionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
         }
 
         /// <summary>
-        /// Creates, updates, or removes campaign groups. Operation statuses are
-        /// returned.
+        /// Creates or updates remarketing actions. Operation statuses are returned.
         /// </summary>
         /// <param name="customerId">
-        /// The ID of the customer whose campaign groups are being modified.
+        /// The ID of the customer whose remarketing actions are being modified.
         /// </param>
         /// <param name="operations">
-        /// The list of operations to perform on individual campaign groups.
+        /// The list of operations to perform on individual remarketing actions.
+        /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -471,26 +480,39 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<MutateCampaignGroupsResponse> MutateCampaignGroupsAsync(
+        public virtual stt::Task<MutateRemarketingActionsResponse> MutateRemarketingActionsAsync(
             string customerId,
-            scg::IEnumerable<CampaignGroupOperation> operations,
-            gaxgrpc::CallSettings callSettings = null) => MutateCampaignGroupsAsync(
-                new MutateCampaignGroupsRequest
+            scg::IEnumerable<RemarketingActionOperation> operations,
+            bool partialFailure,
+            bool validateOnly,
+            gaxgrpc::CallSettings callSettings = null) => MutateRemarketingActionsAsync(
+                new MutateRemarketingActionsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                    PartialFailure = partialFailure,
+                    ValidateOnly = validateOnly,
                 },
                 callSettings);
 
         /// <summary>
-        /// Creates, updates, or removes campaign groups. Operation statuses are
-        /// returned.
+        /// Creates or updates remarketing actions. Operation statuses are returned.
         /// </summary>
         /// <param name="customerId">
-        /// The ID of the customer whose campaign groups are being modified.
+        /// The ID of the customer whose remarketing actions are being modified.
         /// </param>
         /// <param name="operations">
-        /// The list of operations to perform on individual campaign groups.
+        /// The list of operations to perform on individual remarketing actions.
+        /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
         /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
@@ -498,23 +520,36 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<MutateCampaignGroupsResponse> MutateCampaignGroupsAsync(
+        public virtual stt::Task<MutateRemarketingActionsResponse> MutateRemarketingActionsAsync(
             string customerId,
-            scg::IEnumerable<CampaignGroupOperation> operations,
-            st::CancellationToken cancellationToken) => MutateCampaignGroupsAsync(
+            scg::IEnumerable<RemarketingActionOperation> operations,
+            bool partialFailure,
+            bool validateOnly,
+            st::CancellationToken cancellationToken) => MutateRemarketingActionsAsync(
                 customerId,
                 operations,
+                partialFailure,
+                validateOnly,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Creates, updates, or removes campaign groups. Operation statuses are
-        /// returned.
+        /// Creates or updates remarketing actions. Operation statuses are returned.
         /// </summary>
         /// <param name="customerId">
-        /// The ID of the customer whose campaign groups are being modified.
+        /// The ID of the customer whose remarketing actions are being modified.
         /// </param>
         /// <param name="operations">
-        /// The list of operations to perform on individual campaign groups.
+        /// The list of operations to perform on individual remarketing actions.
+        /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
         /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
@@ -522,20 +557,23 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual MutateCampaignGroupsResponse MutateCampaignGroups(
+        public virtual MutateRemarketingActionsResponse MutateRemarketingActions(
             string customerId,
-            scg::IEnumerable<CampaignGroupOperation> operations,
-            gaxgrpc::CallSettings callSettings = null) => MutateCampaignGroups(
-                new MutateCampaignGroupsRequest
+            scg::IEnumerable<RemarketingActionOperation> operations,
+            bool partialFailure,
+            bool validateOnly,
+            gaxgrpc::CallSettings callSettings = null) => MutateRemarketingActions(
+                new MutateRemarketingActionsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                    PartialFailure = partialFailure,
+                    ValidateOnly = validateOnly,
                 },
                 callSettings);
 
         /// <summary>
-        /// Creates, updates, or removes campaign groups. Operation statuses are
-        /// returned.
+        /// Creates or updates remarketing actions. Operation statuses are returned.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -546,16 +584,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<MutateCampaignGroupsResponse> MutateCampaignGroupsAsync(
-            MutateCampaignGroupsRequest request,
+        public virtual stt::Task<MutateRemarketingActionsResponse> MutateRemarketingActionsAsync(
+            MutateRemarketingActionsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
         }
 
         /// <summary>
-        /// Creates, updates, or removes campaign groups. Operation statuses are
-        /// returned.
+        /// Creates or updates remarketing actions. Operation statuses are returned.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -566,15 +603,14 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<MutateCampaignGroupsResponse> MutateCampaignGroupsAsync(
-            MutateCampaignGroupsRequest request,
-            st::CancellationToken cancellationToken) => MutateCampaignGroupsAsync(
+        public virtual stt::Task<MutateRemarketingActionsResponse> MutateRemarketingActionsAsync(
+            MutateRemarketingActionsRequest request,
+            st::CancellationToken cancellationToken) => MutateRemarketingActionsAsync(
                 request,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Creates, updates, or removes campaign groups. Operation statuses are
-        /// returned.
+        /// Creates or updates remarketing actions. Operation statuses are returned.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -585,8 +621,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual MutateCampaignGroupsResponse MutateCampaignGroups(
-            MutateCampaignGroupsRequest request,
+        public virtual MutateRemarketingActionsResponse MutateRemarketingActions(
+            MutateRemarketingActionsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             throw new sys::NotImplementedException();
@@ -595,31 +631,31 @@ namespace Google.Ads.GoogleAds.V0.Services
     }
 
     /// <summary>
-    /// CampaignGroupService client wrapper implementation, for convenient use.
+    /// RemarketingActionService client wrapper implementation, for convenient use.
     /// </summary>
-    public sealed partial class CampaignGroupServiceClientImpl : CampaignGroupServiceClient
+    public sealed partial class RemarketingActionServiceClientImpl : RemarketingActionServiceClient
     {
-        private readonly gaxgrpc::ApiCall<GetCampaignGroupRequest, gagvr::CampaignGroup> _callGetCampaignGroup;
-        private readonly gaxgrpc::ApiCall<MutateCampaignGroupsRequest, MutateCampaignGroupsResponse> _callMutateCampaignGroups;
+        private readonly gaxgrpc::ApiCall<GetRemarketingActionRequest, gagvr::RemarketingAction> _callGetRemarketingAction;
+        private readonly gaxgrpc::ApiCall<MutateRemarketingActionsRequest, MutateRemarketingActionsResponse> _callMutateRemarketingActions;
 
         /// <summary>
-        /// Constructs a client wrapper for the CampaignGroupService service, with the specified gRPC client and settings.
+        /// Constructs a client wrapper for the RemarketingActionService service, with the specified gRPC client and settings.
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
-        /// <param name="settings">The base <see cref="CampaignGroupServiceSettings"/> used within this client </param>
-        public CampaignGroupServiceClientImpl(CampaignGroupService.CampaignGroupServiceClient grpcClient, CampaignGroupServiceSettings settings)
+        /// <param name="settings">The base <see cref="RemarketingActionServiceSettings"/> used within this client </param>
+        public RemarketingActionServiceClientImpl(RemarketingActionService.RemarketingActionServiceClient grpcClient, RemarketingActionServiceSettings settings)
         {
             GrpcClient = grpcClient;
-            CampaignGroupServiceSettings effectiveSettings = settings ?? CampaignGroupServiceSettings.GetDefault();
+            RemarketingActionServiceSettings effectiveSettings = settings ?? RemarketingActionServiceSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetCampaignGroup = clientHelper.BuildApiCall<GetCampaignGroupRequest, gagvr::CampaignGroup>(
-                GrpcClient.GetCampaignGroupAsync, GrpcClient.GetCampaignGroup, effectiveSettings.GetCampaignGroupSettings);
-            _callMutateCampaignGroups = clientHelper.BuildApiCall<MutateCampaignGroupsRequest, MutateCampaignGroupsResponse>(
-                GrpcClient.MutateCampaignGroupsAsync, GrpcClient.MutateCampaignGroups, effectiveSettings.MutateCampaignGroupsSettings);
-            Modify_ApiCall(ref _callGetCampaignGroup);
-            Modify_GetCampaignGroupApiCall(ref _callGetCampaignGroup);
-            Modify_ApiCall(ref _callMutateCampaignGroups);
-            Modify_MutateCampaignGroupsApiCall(ref _callMutateCampaignGroups);
+            _callGetRemarketingAction = clientHelper.BuildApiCall<GetRemarketingActionRequest, gagvr::RemarketingAction>(
+                GrpcClient.GetRemarketingActionAsync, GrpcClient.GetRemarketingAction, effectiveSettings.GetRemarketingActionSettings);
+            _callMutateRemarketingActions = clientHelper.BuildApiCall<MutateRemarketingActionsRequest, MutateRemarketingActionsResponse>(
+                GrpcClient.MutateRemarketingActionsAsync, GrpcClient.MutateRemarketingActions, effectiveSettings.MutateRemarketingActionsSettings);
+            Modify_ApiCall(ref _callGetRemarketingAction);
+            Modify_GetRemarketingActionApiCall(ref _callGetRemarketingAction);
+            Modify_ApiCall(ref _callMutateRemarketingActions);
+            Modify_MutateRemarketingActionsApiCall(ref _callMutateRemarketingActions);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -633,23 +669,23 @@ namespace Google.Ads.GoogleAds.V0.Services
 
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
-        partial void Modify_GetCampaignGroupApiCall(ref gaxgrpc::ApiCall<GetCampaignGroupRequest, gagvr::CampaignGroup> call);
-        partial void Modify_MutateCampaignGroupsApiCall(ref gaxgrpc::ApiCall<MutateCampaignGroupsRequest, MutateCampaignGroupsResponse> call);
-        partial void OnConstruction(CampaignGroupService.CampaignGroupServiceClient grpcClient, CampaignGroupServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
+        partial void Modify_GetRemarketingActionApiCall(ref gaxgrpc::ApiCall<GetRemarketingActionRequest, gagvr::RemarketingAction> call);
+        partial void Modify_MutateRemarketingActionsApiCall(ref gaxgrpc::ApiCall<MutateRemarketingActionsRequest, MutateRemarketingActionsResponse> call);
+        partial void OnConstruction(RemarketingActionService.RemarketingActionServiceClient grpcClient, RemarketingActionServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
-        /// The underlying gRPC CampaignGroupService client.
+        /// The underlying gRPC RemarketingActionService client.
         /// </summary>
-        public override CampaignGroupService.CampaignGroupServiceClient GrpcClient { get; }
+        public override RemarketingActionService.RemarketingActionServiceClient GrpcClient { get; }
 
         // Partial methods called on each request.
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
-        partial void Modify_GetCampaignGroupRequest(ref GetCampaignGroupRequest request, ref gaxgrpc::CallSettings settings);
-        partial void Modify_MutateCampaignGroupsRequest(ref MutateCampaignGroupsRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_GetRemarketingActionRequest(ref GetRemarketingActionRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateRemarketingActionsRequest(ref MutateRemarketingActionsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
-        /// Returns the requested campaign group in full detail.
+        /// Returns the requested remarketing action in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -660,16 +696,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<gagvr::CampaignGroup> GetCampaignGroupAsync(
-            GetCampaignGroupRequest request,
+        public override stt::Task<gagvr::RemarketingAction> GetRemarketingActionAsync(
+            GetRemarketingActionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
-            Modify_GetCampaignGroupRequest(ref request, ref callSettings);
-            return _callGetCampaignGroup.Async(request, callSettings);
+            Modify_GetRemarketingActionRequest(ref request, ref callSettings);
+            return _callGetRemarketingAction.Async(request, callSettings);
         }
 
         /// <summary>
-        /// Returns the requested campaign group in full detail.
+        /// Returns the requested remarketing action in full detail.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -680,17 +716,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override gagvr::CampaignGroup GetCampaignGroup(
-            GetCampaignGroupRequest request,
+        public override gagvr::RemarketingAction GetRemarketingAction(
+            GetRemarketingActionRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
-            Modify_GetCampaignGroupRequest(ref request, ref callSettings);
-            return _callGetCampaignGroup.Sync(request, callSettings);
+            Modify_GetRemarketingActionRequest(ref request, ref callSettings);
+            return _callGetRemarketingAction.Sync(request, callSettings);
         }
 
         /// <summary>
-        /// Creates, updates, or removes campaign groups. Operation statuses are
-        /// returned.
+        /// Creates or updates remarketing actions. Operation statuses are returned.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -701,17 +736,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override stt::Task<MutateCampaignGroupsResponse> MutateCampaignGroupsAsync(
-            MutateCampaignGroupsRequest request,
+        public override stt::Task<MutateRemarketingActionsResponse> MutateRemarketingActionsAsync(
+            MutateRemarketingActionsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
-            Modify_MutateCampaignGroupsRequest(ref request, ref callSettings);
-            return _callMutateCampaignGroups.Async(request, callSettings);
+            Modify_MutateRemarketingActionsRequest(ref request, ref callSettings);
+            return _callMutateRemarketingActions.Async(request, callSettings);
         }
 
         /// <summary>
-        /// Creates, updates, or removes campaign groups. Operation statuses are
-        /// returned.
+        /// Creates or updates remarketing actions. Operation statuses are returned.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -722,12 +756,12 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override MutateCampaignGroupsResponse MutateCampaignGroups(
-            MutateCampaignGroupsRequest request,
+        public override MutateRemarketingActionsResponse MutateRemarketingActions(
+            MutateRemarketingActionsRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
-            Modify_MutateCampaignGroupsRequest(ref request, ref callSettings);
-            return _callMutateCampaignGroups.Sync(request, callSettings);
+            Modify_MutateRemarketingActionsRequest(ref request, ref callSettings);
+            return _callMutateRemarketingActions.Sync(request, callSettings);
         }
 
     }

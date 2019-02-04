@@ -133,7 +133,7 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             string customerId = "customerId-1772061412";
             bool partialFailure = true;
             IEnumerable<ApplyRecommendationOperation> operations = new List<ApplyRecommendationOperation>();
-            ApplyRecommendationResponse response = client.ApplyRecommendation(customerId, partialFailure, operations);
+            ApplyRecommendationResponse response = client.ApplyRecommendation(customerId, operations, partialFailure);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -155,7 +155,7 @@ namespace Google.Ads.GoogleAds.V0.Services.Tests
             string customerId = "customerId-1772061412";
             bool partialFailure = true;
             IEnumerable<ApplyRecommendationOperation> operations = new List<ApplyRecommendationOperation>();
-            ApplyRecommendationResponse response = await client.ApplyRecommendationAsync(customerId, partialFailure, operations);
+            ApplyRecommendationResponse response = await client.ApplyRecommendationAsync(customerId, operations, partialFailure);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

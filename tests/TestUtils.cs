@@ -34,10 +34,6 @@ namespace Google.Ads.GoogleAds.Tests
                 {
                     DistinctError = DistinctErrorEnum.Types.DistinctError.DuplicateElement
                 },
-                Location = new ErrorLocation()
-                {
-                    OperationIndex = 1,
-                },
                 Message = errorMessage,
                 Trigger = new V0.Common.Value()
                 {

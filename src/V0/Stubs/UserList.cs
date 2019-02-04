@@ -35,7 +35,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "cF9zdGF0dXMucHJvdG8aOGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1z",
             "L3VzZXJfbGlzdF9zaXplX3JhbmdlLnByb3RvGjJnb29nbGUvYWRzL2dvb2ds",
             "ZWFkcy92MC9lbnVtcy91c2VyX2xpc3RfdHlwZS5wcm90bxoeZ29vZ2xlL3By",
-            "b3RvYnVmL3dyYXBwZXJzLnByb3RvIpgLCghVc2VyTGlzdBIVCg1yZXNvdXJj",
+            "b3RvYnVmL3dyYXBwZXJzLnByb3RvIo8NCghVc2VyTGlzdBIVCg1yZXNvdXJj",
             "ZV9uYW1lGAEgASgJEicKAmlkGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
             "dDY0VmFsdWUSLQoJcmVhZF9vbmx5GAMgASgLMhouZ29vZ2xlLnByb3RvYnVm",
             "LkJvb2xWYWx1ZRIqCgRuYW1lGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
@@ -67,16 +67,22 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "MjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkNybUJhc2VkVXNl",
             "ckxpc3RJbmZvSAASUAoRc2ltaWxhcl91c2VyX2xpc3QYFCABKAsyMy5nb29n",
             "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uU2ltaWxhclVzZXJMaXN0SW5m",
-            "b0gAQgsKCXVzZXJfbGlzdELSAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLnJlc291cmNlc0INVXNlckxpc3RQcm90b1ABWkpnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVz",
-            "b3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291",
-            "cmNlc2IGcHJvdG8z"));
+            "b0gAElUKFHJ1bGVfYmFzZWRfdXNlcl9saXN0GBUgASgLMjUuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuY29tbW9uLlJ1bGVCYXNlZFVzZXJMaXN0SW5mb0gA",
+            "ElAKEWxvZ2ljYWxfdXNlcl9saXN0GBYgASgLMjMuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAuY29tbW9uLkxvZ2ljYWxVc2VyTGlzdEluZm9IABJMCg9iYXNp",
+            "Y191c2VyX2xpc3QYFyABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5j",
+            "b21tb24uQmFzaWNVc2VyTGlzdEluZm9IAEILCgl1c2VyX2xpc3RC+gEKJWNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDVVzZXJMaXN0",
+            "UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGq",
+            "AiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29v",
+            "Z2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AccessReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListAccessStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListClosingReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListMembershipStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListSizeRangeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.UserList), global::Google.Ads.GoogleAds.V0.Resources.UserList.Parser, new[]{ "ResourceName", "Id", "ReadOnly", "Name", "Description", "MembershipStatus", "IntegrationCode", "MembershipLifeSpan", "SizeForDisplay", "SizeRangeForDisplay", "SizeForSearch", "SizeRangeForSearch", "Type", "ClosingReason", "AccessReason", "AccountUserListStatus", "EligibleForSearch", "EligibleForDisplay", "CrmBasedUserList", "SimilarUserList" }, new[]{ "UserList" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.UserList), global::Google.Ads.GoogleAds.V0.Resources.UserList.Parser, new[]{ "ResourceName", "Id", "ReadOnly", "Name", "Description", "MembershipStatus", "IntegrationCode", "MembershipLifeSpan", "SizeForDisplay", "SizeRangeForDisplay", "SizeForSearch", "SizeRangeForSearch", "Type", "ClosingReason", "AccessReason", "AccountUserListStatus", "EligibleForSearch", "EligibleForDisplay", "CrmBasedUserList", "SimilarUserList", "RuleBasedUserList", "LogicalUserList", "BasicUserList" }, new[]{ "UserList" }, null, null)
           }));
     }
     #endregion
@@ -135,6 +141,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case UserListOneofCase.SimilarUserList:
           SimilarUserList = other.SimilarUserList.Clone();
+          break;
+        case UserListOneofCase.RuleBasedUserList:
+          RuleBasedUserList = other.RuleBasedUserList.Clone();
+          break;
+        case UserListOneofCase.LogicalUserList:
+          LogicalUserList = other.LogicalUserList.Clone();
+          break;
+        case UserListOneofCase.BasicUserList:
+          BasicUserList = other.BasicUserList.Clone();
           break;
       }
 
@@ -477,12 +492,57 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "rule_based_user_list" field.</summary>
+    public const int RuleBasedUserListFieldNumber = 21;
+    /// <summary>
+    /// User list generated by a rule.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.RuleBasedUserListInfo RuleBasedUserList {
+      get { return userListCase_ == UserListOneofCase.RuleBasedUserList ? (global::Google.Ads.GoogleAds.V0.Common.RuleBasedUserListInfo) userList_ : null; }
+      set {
+        userList_ = value;
+        userListCase_ = value == null ? UserListOneofCase.None : UserListOneofCase.RuleBasedUserList;
+      }
+    }
+
+    /// <summary>Field number for the "logical_user_list" field.</summary>
+    public const int LogicalUserListFieldNumber = 22;
+    /// <summary>
+    /// User list that is a custom combination of user lists and user interests.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.LogicalUserListInfo LogicalUserList {
+      get { return userListCase_ == UserListOneofCase.LogicalUserList ? (global::Google.Ads.GoogleAds.V0.Common.LogicalUserListInfo) userList_ : null; }
+      set {
+        userList_ = value;
+        userListCase_ = value == null ? UserListOneofCase.None : UserListOneofCase.LogicalUserList;
+      }
+    }
+
+    /// <summary>Field number for the "basic_user_list" field.</summary>
+    public const int BasicUserListFieldNumber = 23;
+    /// <summary>
+    /// User list targeting as a collection of conversion or remarketing actions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.BasicUserListInfo BasicUserList {
+      get { return userListCase_ == UserListOneofCase.BasicUserList ? (global::Google.Ads.GoogleAds.V0.Common.BasicUserListInfo) userList_ : null; }
+      set {
+        userList_ = value;
+        userListCase_ = value == null ? UserListOneofCase.None : UserListOneofCase.BasicUserList;
+      }
+    }
+
     private object userList_;
     /// <summary>Enum of possible cases for the "user_list" oneof.</summary>
     public enum UserListOneofCase {
       None = 0,
       CrmBasedUserList = 19,
       SimilarUserList = 20,
+      RuleBasedUserList = 21,
+      LogicalUserList = 22,
+      BasicUserList = 23,
     }
     private UserListOneofCase userListCase_ = UserListOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -529,6 +589,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (EligibleForDisplay != other.EligibleForDisplay) return false;
       if (!object.Equals(CrmBasedUserList, other.CrmBasedUserList)) return false;
       if (!object.Equals(SimilarUserList, other.SimilarUserList)) return false;
+      if (!object.Equals(RuleBasedUserList, other.RuleBasedUserList)) return false;
+      if (!object.Equals(LogicalUserList, other.LogicalUserList)) return false;
+      if (!object.Equals(BasicUserList, other.BasicUserList)) return false;
       if (UserListCase != other.UserListCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -556,6 +619,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (eligibleForDisplay_ != null) hash ^= EligibleForDisplay.GetHashCode();
       if (userListCase_ == UserListOneofCase.CrmBasedUserList) hash ^= CrmBasedUserList.GetHashCode();
       if (userListCase_ == UserListOneofCase.SimilarUserList) hash ^= SimilarUserList.GetHashCode();
+      if (userListCase_ == UserListOneofCase.RuleBasedUserList) hash ^= RuleBasedUserList.GetHashCode();
+      if (userListCase_ == UserListOneofCase.LogicalUserList) hash ^= LogicalUserList.GetHashCode();
+      if (userListCase_ == UserListOneofCase.BasicUserList) hash ^= BasicUserList.GetHashCode();
       hash ^= (int) userListCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -640,6 +706,18 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(162, 1);
         output.WriteMessage(SimilarUserList);
       }
+      if (userListCase_ == UserListOneofCase.RuleBasedUserList) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(RuleBasedUserList);
+      }
+      if (userListCase_ == UserListOneofCase.LogicalUserList) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(LogicalUserList);
+      }
+      if (userListCase_ == UserListOneofCase.BasicUserList) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(BasicUserList);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -707,6 +785,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (userListCase_ == UserListOneofCase.SimilarUserList) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(SimilarUserList);
+      }
+      if (userListCase_ == UserListOneofCase.RuleBasedUserList) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(RuleBasedUserList);
+      }
+      if (userListCase_ == UserListOneofCase.LogicalUserList) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LogicalUserList);
+      }
+      if (userListCase_ == UserListOneofCase.BasicUserList) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(BasicUserList);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -805,6 +892,24 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             SimilarUserList = new global::Google.Ads.GoogleAds.V0.Common.SimilarUserListInfo();
           }
           SimilarUserList.MergeFrom(other.SimilarUserList);
+          break;
+        case UserListOneofCase.RuleBasedUserList:
+          if (RuleBasedUserList == null) {
+            RuleBasedUserList = new global::Google.Ads.GoogleAds.V0.Common.RuleBasedUserListInfo();
+          }
+          RuleBasedUserList.MergeFrom(other.RuleBasedUserList);
+          break;
+        case UserListOneofCase.LogicalUserList:
+          if (LogicalUserList == null) {
+            LogicalUserList = new global::Google.Ads.GoogleAds.V0.Common.LogicalUserListInfo();
+          }
+          LogicalUserList.MergeFrom(other.LogicalUserList);
+          break;
+        case UserListOneofCase.BasicUserList:
+          if (BasicUserList == null) {
+            BasicUserList = new global::Google.Ads.GoogleAds.V0.Common.BasicUserListInfo();
+          }
+          BasicUserList.MergeFrom(other.BasicUserList);
           break;
       }
 
@@ -937,6 +1042,33 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             input.ReadMessage(subBuilder);
             SimilarUserList = subBuilder;
+            break;
+          }
+          case 170: {
+            global::Google.Ads.GoogleAds.V0.Common.RuleBasedUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.RuleBasedUserListInfo();
+            if (userListCase_ == UserListOneofCase.RuleBasedUserList) {
+              subBuilder.MergeFrom(RuleBasedUserList);
+            }
+            input.ReadMessage(subBuilder);
+            RuleBasedUserList = subBuilder;
+            break;
+          }
+          case 178: {
+            global::Google.Ads.GoogleAds.V0.Common.LogicalUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.LogicalUserListInfo();
+            if (userListCase_ == UserListOneofCase.LogicalUserList) {
+              subBuilder.MergeFrom(LogicalUserList);
+            }
+            input.ReadMessage(subBuilder);
+            LogicalUserList = subBuilder;
+            break;
+          }
+          case 186: {
+            global::Google.Ads.GoogleAds.V0.Common.BasicUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.BasicUserListInfo();
+            if (userListCase_ == UserListOneofCase.BasicUserList) {
+              subBuilder.MergeFrom(BasicUserList);
+            }
+            input.ReadMessage(subBuilder);
+            BasicUserList = subBuilder;
             break;
           }
         }

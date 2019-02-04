@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -333,20 +333,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual stt::Task<GenerateKeywordIdeaResponse> GenerateKeywordIdeasAsync(
             string customerId,
-            pbwkt::StringValue language,
+            string language,
             scg::IEnumerable<string> geoTargetConstants,
-            // TODO(liseno): Implicit type cast from pbwkt::StringValue to String failed
             gagve::KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork,
             gaxgrpc::CallSettings callSettings = null) => GenerateKeywordIdeasAsync(
                 new GenerateKeywordIdeasRequest
                 {
-                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId,
-                        nameof(customerId)),
-                    Language = gax::GaxPreconditions.CheckNotNull(language,
-                        nameof(language)).Value,
-                    // TODO(liseno): Implicit type cast from StringValue to String failed
-                    GeoTargetConstants = { gax::GaxPreconditions.CheckNotNull(geoTargetConstants,
-                        nameof(geoTargetConstants)) },
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Language = gax::GaxPreconditions.CheckNotNullOrEmpty(language, nameof(language)),
+                    GeoTargetConstants = { gax::GaxPreconditions.CheckNotNull(geoTargetConstants, nameof(geoTargetConstants)) },
                     KeywordPlanNetwork = keywordPlanNetwork,
                 },
                 callSettings);
@@ -376,9 +371,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual stt::Task<GenerateKeywordIdeaResponse> GenerateKeywordIdeasAsync(
             string customerId,
-            pbwkt::StringValue language,
+            string language,
             scg::IEnumerable<string> geoTargetConstants,
-            // TODO(liseno): Implicit type cast from pbwkt::StringValue to String failed
             gagve::KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork,
             st::CancellationToken cancellationToken) => GenerateKeywordIdeasAsync(
                 customerId,
@@ -412,20 +406,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// </returns>
         public virtual GenerateKeywordIdeaResponse GenerateKeywordIdeas(
             string customerId,
-            pbwkt::StringValue language,
+            string language,
             scg::IEnumerable<string> geoTargetConstants,
-            // TODO(liseno): Implicit type cast from pbwkt::StringValue to String failed
             gagve::KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork,
             gaxgrpc::CallSettings callSettings = null) => GenerateKeywordIdeas(
                 new GenerateKeywordIdeasRequest
                 {
-                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId,
-                        nameof(customerId)),
-                    Language = gax::GaxPreconditions.CheckNotNull(language,
-                        nameof(language)).Value,
-                    // TODO(liseno): Implicit type cast from StringValue to String failed
-                    GeoTargetConstants = { gax::GaxPreconditions.CheckNotNull(geoTargetConstants,
-                        nameof(geoTargetConstants)) },
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Language = gax::GaxPreconditions.CheckNotNullOrEmpty(language, nameof(language)),
+                    GeoTargetConstants = { gax::GaxPreconditions.CheckNotNull(geoTargetConstants, nameof(geoTargetConstants)) },
                     KeywordPlanNetwork = keywordPlanNetwork,
                 },
                 callSettings);
