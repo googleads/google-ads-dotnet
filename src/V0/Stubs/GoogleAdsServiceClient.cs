@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -346,6 +346,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="query">
         /// The query string.
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed.
+        /// </param>
         /// <param name="pageToken">
         /// The token returned from the previous request.
         /// A value of <c>null</c> or an empty string retrieves the first page.
@@ -363,6 +366,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> SearchAsync(
             string customerId,
             string query,
+            bool validateOnly,
             string pageToken = null,
             int? pageSize = null,
             gaxgrpc::CallSettings callSettings = null) => SearchAsync(
@@ -370,6 +374,7 @@ namespace Google.Ads.GoogleAds.V0.Services
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
+                    ValidateOnly = validateOnly,
                     PageToken = pageToken ?? "",
                     PageSize = pageSize ?? 0,
                 },
@@ -384,6 +389,9 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="query">
         /// The query string.
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed.
+        /// </param>
         /// <param name="pageToken">
         /// The token returned from the previous request.
         /// A value of <c>null</c> or an empty string retrieves the first page.
@@ -401,6 +409,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gax::PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> Search(
             string customerId,
             string query,
+            bool validateOnly,
             string pageToken = null,
             int? pageSize = null,
             gaxgrpc::CallSettings callSettings = null) => Search(
@@ -408,6 +417,7 @@ namespace Google.Ads.GoogleAds.V0.Services
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
+                    ValidateOnly = validateOnly,
                     PageToken = pageToken ?? "",
                     PageSize = pageSize ?? 0,
                 },
@@ -460,6 +470,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="mutateOperations">
         /// The list of operations to perform on individual resources.
         /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -469,11 +489,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
             string customerId,
             scg::IEnumerable<MutateOperation> mutateOperations,
+            bool partialFailure,
+            bool validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateAsync(
                 new MutateGoogleAdsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     MutateOperations = { gax::GaxPreconditions.CheckNotNull(mutateOperations, nameof(mutateOperations)) },
+                    PartialFailure = partialFailure,
+                    ValidateOnly = validateOnly,
                 },
                 callSettings);
 
@@ -486,6 +510,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="mutateOperations">
         /// The list of operations to perform on individual resources.
         /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
         /// </param>
@@ -495,9 +529,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
             string customerId,
             scg::IEnumerable<MutateOperation> mutateOperations,
+            bool partialFailure,
+            bool validateOnly,
             st::CancellationToken cancellationToken) => MutateAsync(
                 customerId,
                 mutateOperations,
+                partialFailure,
+                validateOnly,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
@@ -509,6 +547,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="mutateOperations">
         /// The list of operations to perform on individual resources.
         /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -518,11 +566,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateGoogleAdsResponse Mutate(
             string customerId,
             scg::IEnumerable<MutateOperation> mutateOperations,
+            bool partialFailure,
+            bool validateOnly,
             gaxgrpc::CallSettings callSettings = null) => Mutate(
                 new MutateGoogleAdsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     MutateOperations = { gax::GaxPreconditions.CheckNotNull(mutateOperations, nameof(mutateOperations)) },
+                    PartialFailure = partialFailure,
+                    ValidateOnly = validateOnly,
                 },
                 callSettings);
 

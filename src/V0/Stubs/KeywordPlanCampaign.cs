@@ -40,12 +40,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "dWUSTAoLZ2VvX3RhcmdldHMYCCADKAsyNy5nb29nbGUuYWRzLmdvb2dsZWFk",
             "cy52MC5yZXNvdXJjZXMuS2V5d29yZFBsYW5HZW9UYXJnZXQiUQoUS2V5d29y",
             "ZFBsYW5HZW9UYXJnZXQSOQoTZ2VvX3RhcmdldF9jb25zdGFudBgBIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZULdAQolY29tLmdvb2dsZS5h",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUKFAgolY29tLmdvb2dsZS5h",
             "ZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IYS2V5d29yZFBsYW5DYW1wYWln",
             "blByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
             "aXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FB",
             "qgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
+            "XEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdv",
+            "b2dsZUFkczo6VjA6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanNetworkReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -59,6 +60,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
   #region Messages
   /// <summary>
   /// A Keyword Plan campaign.
+  /// Max number of keyword plan campaigns per plan allowed: 1.
   /// </summary>
   public sealed partial class KeywordPlanCampaign : pb::IMessage<KeywordPlanCampaign> {
     private static readonly pb::MessageParser<KeywordPlanCampaign> _parser = new pb::MessageParser<KeywordPlanCampaign>(() => new KeywordPlanCampaign());
@@ -173,6 +175,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private readonly pbc::RepeatedField<string> languageConstants_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// The languages targeted for the Keyword Plan campaign.
+    /// Max allowed: 1.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> LanguageConstants {
@@ -222,6 +225,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Resources.KeywordPlanGeoTarget> geoTargets_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Resources.KeywordPlanGeoTarget>();
     /// <summary>
     /// The geo targets.
+    /// Max number allowed: 20.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Resources.KeywordPlanGeoTarget> GeoTargets {

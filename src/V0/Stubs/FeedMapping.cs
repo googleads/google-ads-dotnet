@@ -109,12 +109,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "ZWFkcy52MC5lbnVtcy5Mb2NhbFBsYWNlaG9sZGVyRmllbGRFbnVtLkxvY2Fs",
             "UGxhY2Vob2xkZXJGaWVsZEgAEl8KCWpvYl9maWVsZBgXIAEoDjJKLmdvb2ds",
             "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkpvYlBsYWNlaG9sZGVyRmllbGRF",
-            "bnVtLkpvYlBsYWNlaG9sZGVyRmllbGRIAEIHCgVmaWVsZELVAQolY29tLmdv",
+            "bnVtLkpvYlBsYWNlaG9sZGVyRmllbGRIAEIHCgVmaWVsZEL9AQolY29tLmdv",
             "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IQRmVlZE1hcHBpbmdQ",
             "cm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
             "L2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoC",
             "IUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxB",
-            "ZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
+            "ZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29n",
+            "bGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.AdCustomizerPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AppPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CallPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CalloutPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CustomPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.EducationPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.FeedMappingCriterionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.FeedMappingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.FlightPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.HotelPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.JobPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.LocalPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.MessagePlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PlaceholderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PricePlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PromotionPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.RealEstatePlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.SitelinkPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.StructuredSnippetPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TravelPlaceholderFieldReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

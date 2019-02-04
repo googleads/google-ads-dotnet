@@ -1,4 +1,4 @@
-// Copyright 2018, Google LLC
+// Copyright 2019, Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -85,6 +85,20 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.AdParameterService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<AdParameterServiceClient, AdParameterServiceSettings> AdParameterService;
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.AdScheduleViewService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<AdScheduleViewServiceClient, AdScheduleViewServiceSettings> AdScheduleViewService;
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.AgeRangeViewService
             /// for details.
             /// </summary>
@@ -138,13 +152,6 @@ namespace Google.Ads.GoogleAds
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignFeedServiceClient, CampaignFeedServiceSettings> CampaignFeedService;
-
-
-            /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.CampaignGroupService
-            /// for details.
-            /// </summary>
-            public static readonly ServiceTemplate<CampaignGroupServiceClient, CampaignGroupServiceSettings> CampaignGroupService;
 
 
             /// <summary>
@@ -358,6 +365,27 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.MobileAppCategoryConstantService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<MobileAppCategoryConstantServiceClient, MobileAppCategoryConstantServiceSettings> MobileAppCategoryConstantService;
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.MobileDeviceConstantService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<MobileDeviceConstantServiceClient, MobileDeviceConstantServiceSettings> MobileDeviceConstantService;
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.OperatingSystemVersionConstantService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<OperatingSystemVersionConstantServiceClient, OperatingSystemVersionConstantServiceSettings> OperatingSystemVersionConstantService;
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.ParentalStatusViewService
             /// for details.
             /// </summary>
@@ -383,6 +411,13 @@ namespace Google.Ads.GoogleAds
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<RecommendationServiceClient, RecommendationServiceSettings> RecommendationService;
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.RemarketingActionService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<RemarketingActionServiceClient, RemarketingActionServiceSettings> RemarketingActionService;
 
 
             /// <summary>

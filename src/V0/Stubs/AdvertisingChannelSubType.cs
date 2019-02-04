@@ -26,18 +26,19 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "CkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZHZlcnRpc2luZ19j",
             "aGFubmVsX3N1Yl90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lbnVtcyKSAgodQWR2ZXJ0aXNpbmdDaGFubmVsU3ViVHlwZUVudW0i8AEK",
+            "MC5lbnVtcyKkAgodQWR2ZXJ0aXNpbmdDaGFubmVsU3ViVHlwZUVudW0iggIK",
             "GUFkdmVydGlzaW5nQ2hhbm5lbFN1YlR5cGUSDwoLVU5TUEVDSUZJRUQQABIL",
             "CgdVTktOT1dOEAESFQoRU0VBUkNIX01PQklMRV9BUFAQAhIWChJESVNQTEFZ",
             "X01PQklMRV9BUFAQAxISCg5TRUFSQ0hfRVhQUkVTUxAEEhMKD0RJU1BMQVlf",
             "RVhQUkVTUxAFEhYKElNIT1BQSU5HX1NNQVJUX0FEUxAGEhQKEERJU1BMQVlf",
             "R01BSUxfQUQQBxIaChZESVNQTEFZX1NNQVJUX0NBTVBBSUdOEAgSEwoPVklE",
-            "RU9fT1VUU1RSRUFNEAlCzwEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lbnVtc0IeQWR2ZXJ0aXNpbmdDaGFubmVsU3ViVHlwZVByb3RvUAFaQmdv",
-            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
-            "ZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xl",
-            "QWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXNi",
-            "BnByb3RvMw=="));
+            "RU9fT1VUU1RSRUFNEAkSEAoMVklERU9fQUNUSU9OEApC8wEKIWNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IeQWR2ZXJ0aXNpbmdDaGFubmVs",
+            "U3ViVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
+            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoC",
+            "HUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xH",
+            "b29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MDo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -198,6 +199,10 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// Video Outstream campaigns.
         /// </summary>
         [pbr::OriginalName("VIDEO_OUTSTREAM")] VideoOutstream = 9,
+        /// <summary>
+        /// Video TrueView for Action campaigns.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_ACTION")] VideoAction = 10,
       }
 
     }

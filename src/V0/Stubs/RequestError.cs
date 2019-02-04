@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcmVxdWVzdF9lcnJv",
-            "ci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzIowEChBS",
-            "ZXF1ZXN0RXJyb3JFbnVtIvcDCgxSZXF1ZXN0RXJyb3ISDwoLVU5TUEVDSUZJ",
+            "ci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzIrYEChBS",
+            "ZXF1ZXN0RXJyb3JFbnVtIqEECgxSZXF1ZXN0RXJyb3ISDwoLVU5TUEVDSUZJ",
             "RUQQABILCgdVTktOT1dOEAESGQoVUkVTT1VSQ0VfTkFNRV9NSVNTSU5HEAMS",
             "GwoXUkVTT1VSQ0VfTkFNRV9NQUxGT1JNRUQQBBITCg9CQURfUkVTT1VSQ0Vf",
             "SUQQERIXChNJTlZBTElEX0NVU1RPTUVSX0lEEBASFgoST1BFUkFUSU9OX1JF",
@@ -37,12 +37,13 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "VEVEX0JZX01BTkFHRVJfQUNDT1VOVBAOEh8KG0NBTk5PVF9NT0RJRllfRk9S",
             "RUlHTl9GSUVMRBAPEhYKEklOVkFMSURfRU5VTV9WQUxVRRASEiUKIURFVkVM",
             "T1BFUl9UT0tFTl9QQVJBTUVURVJfTUlTU0lORxATEicKI0xPR0lOX0NVU1RP",
-            "TUVSX0lEX1BBUkFNRVRFUl9NSVNTSU5HEBRCxwEKImNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MC5lcnJvcnNCEVJlcXVlc3RFcnJvclByb3RvUAFaRGdv",
-            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
-            "ZWFkcy92MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJy",
-            "b3JzYgZwcm90bzM="));
+            "TUVSX0lEX1BBUkFNRVRFUl9NSVNTSU5HEBQSKAokVkFMSURBVEVfT05MWV9S",
+            "RVFVRVNUX0hBU19QQUdFX1RPS0VOEBVC7AEKImNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5lcnJvcnNCEVJlcXVlc3RFcnJvclByb3RvUAFaRGdvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3Jz",
+            "6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -238,6 +239,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// The login-customer-id parameter is required for this request.
         /// </summary>
         [pbr::OriginalName("LOGIN_CUSTOMER_ID_PARAMETER_MISSING")] LoginCustomerIdParameterMissing = 20,
+        /// <summary>
+        /// page_token is set in the validate only request
+        /// </summary>
+        [pbr::OriginalName("VALIDATE_ONLY_REQUEST_HAS_PAGE_TOKEN")] ValidateOnlyRequestHasPageToken = 21,
       }
 
     }

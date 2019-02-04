@@ -50,12 +50,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "eW1lbnRzX3Byb2ZpbGVfbmFtZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
             "dHJpbmdWYWx1ZRJDCh1zZWNvbmRhcnlfcGF5bWVudHNfcHJvZmlsZV9pZBgF",
             "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUIMCgpzdGFydF90",
-            "aW1lQgoKCGVuZF90aW1lQtYBCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "aW1lQgoKCGVuZF90aW1lQv4BCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
             "djAucmVzb3VyY2VzQhFCaWxsaW5nU2V0dXBQcm90b1ABWkpnb29nbGUuZ29s",
             "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
             "cmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xl",
             "QWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJl",
-            "c291cmNlc2IGcHJvdG8z"));
+            "c291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNvdXJj",
+            "ZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.BillingSetupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TimeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -181,8 +182,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the Payments account associated with this billing
     /// setup. Payments resource names have the form:
     ///
-    /// `customers/{customer_id}/paymentsAccounts/
-    ///                       {payments_profile_id}_{payments_account_id}`
+    /// `customers/{customer_id}/paymentsAccounts/{payments_account_id}`
     /// When setting up billing, this is used to signup with an existing Payments
     /// account (and then payments_account_info should not be set).
     /// When getting a billing setup, this and payments_account_info will be

@@ -83,12 +83,10 @@ namespace Google.Ads.GoogleAds.Examples.V0
                 // }
             };
 
-            bool partialFailure = false;
-
             try
             {
                 ApplyRecommendationResponse response = service.ApplyRecommendation(
-                    customerId.ToString(), partialFailure, new ApplyRecommendationOperation[] {
+                    customerId.ToString(), new ApplyRecommendationOperation[] {
                         operation
                     });
                 Console.WriteLine($"Applied {0} recommendation(s):", response.Results.Count);

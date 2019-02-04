@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jaGFuZ2Vfc3RhdHVz",
             "X3Jlc291cmNlX3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmVudW1zIrYBChxDaGFuZ2VTdGF0dXNSZXNvdXJjZVR5cGVFbnVtIpUBChhD",
+            "LmVudW1zIs8BChxDaGFuZ2VTdGF0dXNSZXNvdXJjZVR5cGVFbnVtIq4BChhD",
             "aGFuZ2VTdGF0dXNSZXNvdXJjZVR5cGUSDwoLVU5TUEVDSUZJRUQQABILCgdV",
             "TktOT1dOEAESDAoIQURfR1JPVVAQAxIPCgtBRF9HUk9VUF9BRBAEEhYKEkFE",
             "X0dST1VQX0NSSVRFUklPThAFEgwKCENBTVBBSUdOEAYSFgoSQ0FNUEFJR05f",
-            "Q1JJVEVSSU9OEAdCzgEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "bnVtc0IdQ2hhbmdlU3RhdHVzUmVzb3VyY2VUeXBlUHJvdG9QAVpCZ29vZ2xl",
-            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
-            "L3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
-            "VjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IGcHJv",
-            "dG8z"));
+            "Q1JJVEVSSU9OEAcSCAoERkVFRBAJEg0KCUZFRURfSVRFTRAKQvIBCiFjb20u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCHUNoYW5nZVN0YXR1c1Jl",
+            "c291cmNlVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
+            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMDo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -186,6 +187,14 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// A CampaignCriterion resource change.
         /// </summary>
         [pbr::OriginalName("CAMPAIGN_CRITERION")] CampaignCriterion = 7,
+        /// <summary>
+        /// A Feed resource change.
+        /// </summary>
+        [pbr::OriginalName("FEED")] Feed = 9,
+        /// <summary>
+        /// A FeedItem resource change.
+        /// </summary>
+        [pbr::OriginalName("FEED_ITEM")] FeedItem = 10,
       }
 
     }

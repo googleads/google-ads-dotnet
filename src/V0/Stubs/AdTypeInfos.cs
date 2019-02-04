@@ -112,11 +112,19 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKCm1lZGlhX2Zp",
             "bGUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVIABIrCgRk",
             "YXRhGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkJ5dGVzVmFsdWVIAEIHCgVp",
-            "bWFnZULGAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbkIQ",
-            "QWRUeXBlSW5mb3NQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
-            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uO2NvbW1vbqIC",
-            "A0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkNvbW1vbsoCHkdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYwXENvbW1vbmIGcHJvdG8z"));
+            "bWFnZSKPAQobVmlkZW9UcnVlVmlld0luU3RyZWFtQWRJbmZvEjkKE2FjdGlv",
+            "bl9idXR0b25fbGFiZWwYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWUSNQoPYWN0aW9uX2hlYWRsaW5lGAIgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlIpsBCgtWaWRlb0FkSW5mbxIwCgptZWRpYV9maWxl",
+            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElAKCWluX3N0",
+            "cmVhbRgCIAEoCzI7Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5W",
+            "aWRlb1RydWVWaWV3SW5TdHJlYW1BZEluZm9IAEIICgZmb3JtYXRC6wEKImNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CEEFkVHlwZUluZm9z",
+            "UHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWMFxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6",
+            "Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DisplayAdFormatSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.MimeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -132,7 +140,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.GmailAdInfo), global::Google.Ads.GoogleAds.V0.Common.GmailAdInfo.Parser, new[]{ "Teaser", "HeaderImage", "MarketingImage", "MarketingImageHeadline", "MarketingImageDescription", "MarketingImageDisplayCallToAction" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.GmailTeaser), global::Google.Ads.GoogleAds.V0.Common.GmailTeaser.Parser, new[]{ "Headline", "Description", "BusinessName", "LogoImage" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.DisplayCallToAction), global::Google.Ads.GoogleAds.V0.Common.DisplayCallToAction.Parser, new[]{ "Text", "TextColor" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ImageAdInfo), global::Google.Ads.GoogleAds.V0.Common.ImageAdInfo.Parser, new[]{ "PixelWidth", "PixelHeight", "ImageUrl", "PreviewPixelWidth", "PreviewPixelHeight", "PreviewImageUrl", "MimeType", "Name", "MediaFile", "Data" }, new[]{ "Image" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ImageAdInfo), global::Google.Ads.GoogleAds.V0.Common.ImageAdInfo.Parser, new[]{ "PixelWidth", "PixelHeight", "ImageUrl", "PreviewPixelWidth", "PreviewPixelHeight", "PreviewImageUrl", "MimeType", "Name", "MediaFile", "Data" }, new[]{ "Image" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.VideoTrueViewInStreamAdInfo), global::Google.Ads.GoogleAds.V0.Common.VideoTrueViewInStreamAdInfo.Parser, new[]{ "ActionButtonLabel", "ActionHeadline" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.VideoAdInfo), global::Google.Ads.GoogleAds.V0.Common.VideoAdInfo.Parser, new[]{ "MediaFile", "InStream" }, new[]{ "Format" }, null, null)
           }));
     }
     #endregion
@@ -3679,6 +3689,394 @@ namespace Google.Ads.GoogleAds.V0.Common {
             if (name_ == null || value != "") {
               Name = value;
             }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Representation of video TrueView in-stream ad format (ad shown during video
+  /// playback, often at beginning, which displays a skip button a few seconds into
+  /// the video).
+  /// </summary>
+  public sealed partial class VideoTrueViewInStreamAdInfo : pb::IMessage<VideoTrueViewInStreamAdInfo> {
+    private static readonly pb::MessageParser<VideoTrueViewInStreamAdInfo> _parser = new pb::MessageParser<VideoTrueViewInStreamAdInfo>(() => new VideoTrueViewInStreamAdInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<VideoTrueViewInStreamAdInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.AdTypeInfosReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public VideoTrueViewInStreamAdInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public VideoTrueViewInStreamAdInfo(VideoTrueViewInStreamAdInfo other) : this() {
+      ActionButtonLabel = other.ActionButtonLabel;
+      ActionHeadline = other.ActionHeadline;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public VideoTrueViewInStreamAdInfo Clone() {
+      return new VideoTrueViewInStreamAdInfo(this);
+    }
+
+    /// <summary>Field number for the "action_button_label" field.</summary>
+    public const int ActionButtonLabelFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_actionButtonLabel_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string actionButtonLabel_;
+    /// <summary>
+    /// Label on the CTA (call-to-action) button taking the user to the video ad's
+    /// final URL.
+    /// Required for TrueView for action campaigns, optional otherwise.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ActionButtonLabel {
+      get { return actionButtonLabel_; }
+      set {
+        actionButtonLabel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "action_headline" field.</summary>
+    public const int ActionHeadlineFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_actionHeadline_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string actionHeadline_;
+    /// <summary>
+    /// Additional text displayed with the CTA (call-to-action) button to give
+    /// context and encourage clicking on the button.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ActionHeadline {
+      get { return actionHeadline_; }
+      set {
+        actionHeadline_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as VideoTrueViewInStreamAdInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(VideoTrueViewInStreamAdInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ActionButtonLabel != other.ActionButtonLabel) return false;
+      if (ActionHeadline != other.ActionHeadline) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (actionButtonLabel_ != null) hash ^= ActionButtonLabel.GetHashCode();
+      if (actionHeadline_ != null) hash ^= ActionHeadline.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (actionButtonLabel_ != null) {
+        _single_actionButtonLabel_codec.WriteTagAndValue(output, ActionButtonLabel);
+      }
+      if (actionHeadline_ != null) {
+        _single_actionHeadline_codec.WriteTagAndValue(output, ActionHeadline);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (actionButtonLabel_ != null) {
+        size += _single_actionButtonLabel_codec.CalculateSizeWithTag(ActionButtonLabel);
+      }
+      if (actionHeadline_ != null) {
+        size += _single_actionHeadline_codec.CalculateSizeWithTag(ActionHeadline);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(VideoTrueViewInStreamAdInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.actionButtonLabel_ != null) {
+        if (actionButtonLabel_ == null || other.ActionButtonLabel != "") {
+          ActionButtonLabel = other.ActionButtonLabel;
+        }
+      }
+      if (other.actionHeadline_ != null) {
+        if (actionHeadline_ == null || other.ActionHeadline != "") {
+          ActionHeadline = other.ActionHeadline;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_actionButtonLabel_codec.Read(input);
+            if (actionButtonLabel_ == null || value != "") {
+              ActionButtonLabel = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_actionHeadline_codec.Read(input);
+            if (actionHeadline_ == null || value != "") {
+              ActionHeadline = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A video ad.
+  /// </summary>
+  public sealed partial class VideoAdInfo : pb::IMessage<VideoAdInfo> {
+    private static readonly pb::MessageParser<VideoAdInfo> _parser = new pb::MessageParser<VideoAdInfo>(() => new VideoAdInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<VideoAdInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.AdTypeInfosReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public VideoAdInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public VideoAdInfo(VideoAdInfo other) : this() {
+      MediaFile = other.MediaFile;
+      switch (other.FormatCase) {
+        case FormatOneofCase.InStream:
+          InStream = other.InStream.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public VideoAdInfo Clone() {
+      return new VideoAdInfo(this);
+    }
+
+    /// <summary>Field number for the "media_file" field.</summary>
+    public const int MediaFileFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_mediaFile_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string mediaFile_;
+    /// <summary>
+    /// The MediaFile resource to use for the video.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MediaFile {
+      get { return mediaFile_; }
+      set {
+        mediaFile_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "in_stream" field.</summary>
+    public const int InStreamFieldNumber = 2;
+    /// <summary>
+    /// Video TrueView in-stream format.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.VideoTrueViewInStreamAdInfo InStream {
+      get { return formatCase_ == FormatOneofCase.InStream ? (global::Google.Ads.GoogleAds.V0.Common.VideoTrueViewInStreamAdInfo) format_ : null; }
+      set {
+        format_ = value;
+        formatCase_ = value == null ? FormatOneofCase.None : FormatOneofCase.InStream;
+      }
+    }
+
+    private object format_;
+    /// <summary>Enum of possible cases for the "format" oneof.</summary>
+    public enum FormatOneofCase {
+      None = 0,
+      InStream = 2,
+    }
+    private FormatOneofCase formatCase_ = FormatOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FormatOneofCase FormatCase {
+      get { return formatCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearFormat() {
+      formatCase_ = FormatOneofCase.None;
+      format_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as VideoAdInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(VideoAdInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MediaFile != other.MediaFile) return false;
+      if (!object.Equals(InStream, other.InStream)) return false;
+      if (FormatCase != other.FormatCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (mediaFile_ != null) hash ^= MediaFile.GetHashCode();
+      if (formatCase_ == FormatOneofCase.InStream) hash ^= InStream.GetHashCode();
+      hash ^= (int) formatCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (mediaFile_ != null) {
+        _single_mediaFile_codec.WriteTagAndValue(output, MediaFile);
+      }
+      if (formatCase_ == FormatOneofCase.InStream) {
+        output.WriteRawTag(18);
+        output.WriteMessage(InStream);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (mediaFile_ != null) {
+        size += _single_mediaFile_codec.CalculateSizeWithTag(MediaFile);
+      }
+      if (formatCase_ == FormatOneofCase.InStream) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(InStream);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(VideoAdInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.mediaFile_ != null) {
+        if (mediaFile_ == null || other.MediaFile != "") {
+          MediaFile = other.MediaFile;
+        }
+      }
+      switch (other.FormatCase) {
+        case FormatOneofCase.InStream:
+          if (InStream == null) {
+            InStream = new global::Google.Ads.GoogleAds.V0.Common.VideoTrueViewInStreamAdInfo();
+          }
+          InStream.MergeFrom(other.InStream);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_mediaFile_codec.Read(input);
+            if (mediaFile_ == null || value != "") {
+              MediaFile = value;
+            }
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V0.Common.VideoTrueViewInStreamAdInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.VideoTrueViewInStreamAdInfo();
+            if (formatCase_ == FormatOneofCase.InStream) {
+              subBuilder.MergeFrom(InStream);
+            }
+            input.ReadMessage(subBuilder);
+            InStream = subBuilder;
             break;
           }
         }

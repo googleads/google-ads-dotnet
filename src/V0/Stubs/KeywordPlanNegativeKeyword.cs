@@ -34,13 +34,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "GAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSKgoEdGV4dBgE",
             "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJYCgptYXRjaF90",
             "eXBlGAUgASgOMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuS2V5",
-            "d29yZE1hdGNoVHlwZUVudW0uS2V5d29yZE1hdGNoVHlwZULkAQolY29tLmdv",
+            "d29yZE1hdGNoVHlwZUVudW0uS2V5d29yZE1hdGNoVHlwZUKMAgolY29tLmdv",
             "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IfS2V5d29yZFBsYW5O",
             "ZWdhdGl2ZUtleXdvcmRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
             "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jl",
             "c291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291",
-            "cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJv",
-            "dG8z"));
+            "cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -53,6 +53,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
   #region Messages
   /// <summary>
   /// A Keyword Plan negative keyword.
+  /// Max number of keyword plan negative keywords per plan: 1000.
   /// </summary>
   public sealed partial class KeywordPlanNegativeKeyword : pb::IMessage<KeywordPlanNegativeKeyword> {
     private static readonly pb::MessageParser<KeywordPlanNegativeKeyword> _parser = new pb::MessageParser<KeywordPlanNegativeKeyword>(() => new KeywordPlanNegativeKeyword());

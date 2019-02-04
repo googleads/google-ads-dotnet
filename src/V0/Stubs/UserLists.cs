@@ -27,27 +27,119 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "Ci9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vdXNlcl9saXN0cy5w",
             "cm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uGkJnb29nbGUv",
             "YWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jdXN0b21lcl9tYXRjaF91cGxvYWRf",
-            "a2V5X3R5cGUucHJvdG8aQmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1z",
-            "L3VzZXJfbGlzdF9jcm1fZGF0YV9zb3VyY2VfdHlwZS5wcm90bxoeZ29vZ2xl",
-            "L3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIksKE1NpbWlsYXJVc2VyTGlzdElu",
-            "Zm8SNAoOc2VlZF91c2VyX2xpc3QYASABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUiqQIKFENybUJhc2VkVXNlckxpc3RJbmZvEiwKBmFwcF9p",
-            "ZBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJxCg91cGxv",
-            "YWRfa2V5X3R5cGUYAiABKA4yWC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "bnVtcy5DdXN0b21lck1hdGNoVXBsb2FkS2V5VHlwZUVudW0uQ3VzdG9tZXJN",
-            "YXRjaFVwbG9hZEtleVR5cGUScAoQZGF0YV9zb3VyY2VfdHlwZRgDIAEoDjJW",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlVzZXJMaXN0Q3JtRGF0",
-            "YVNvdXJjZVR5cGVFbnVtLlVzZXJMaXN0Q3JtRGF0YVNvdXJjZVR5cGVCxAEK",
-            "ImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CDlVzZXJMaXN0",
-            "c1Byb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MC9jb21tb247Y29tbW9uogIDR0FBqgIeR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjAuQ29tbW9uygIeR29vZ2xlXEFkc1xHb29n",
-            "bGVBZHNcVjBcQ29tbW9uYgZwcm90bzM="));
+            "a2V5X3R5cGUucHJvdG8aRGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1z",
+            "L3VzZXJfbGlzdF9jb21iaW5lZF9ydWxlX29wZXJhdG9yLnByb3RvGkJnb29n",
+            "bGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy91c2VyX2xpc3RfY3JtX2RhdGFf",
+            "c291cmNlX3R5cGUucHJvdG8aRWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
+            "dW1zL3VzZXJfbGlzdF9kYXRlX3J1bGVfaXRlbV9vcGVyYXRvci5wcm90bxpD",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvdXNlcl9saXN0X2xvZ2lj",
+            "YWxfcnVsZV9vcGVyYXRvci5wcm90bxpHZ29vZ2xlL2Fkcy9nb29nbGVhZHMv",
+            "djAvZW51bXMvdXNlcl9saXN0X251bWJlcl9ydWxlX2l0ZW1fb3BlcmF0b3Iu",
+            "cHJvdG8aQmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL3VzZXJfbGlz",
+            "dF9wcmVwb3B1bGF0aW9uX3N0YXR1cy5wcm90bxo3Z29vZ2xlL2Fkcy9nb29n",
+            "bGVhZHMvdjAvZW51bXMvdXNlcl9saXN0X3J1bGVfdHlwZS5wcm90bxpHZ29v",
+            "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvdXNlcl9saXN0X3N0cmluZ19y",
+            "dWxlX2l0ZW1fb3BlcmF0b3IucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFw",
+            "cGVycy5wcm90byJLChNTaW1pbGFyVXNlckxpc3RJbmZvEjQKDnNlZWRfdXNl",
+            "cl9saXN0GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIqkC",
+            "ChRDcm1CYXNlZFVzZXJMaXN0SW5mbxIsCgZhcHBfaWQYASABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUScQoPdXBsb2FkX2tleV90eXBlGAIg",
+            "ASgOMlguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQ3VzdG9tZXJN",
+            "YXRjaFVwbG9hZEtleVR5cGVFbnVtLkN1c3RvbWVyTWF0Y2hVcGxvYWRLZXlU",
+            "eXBlEnAKEGRhdGFfc291cmNlX3R5cGUYAyABKA4yVi5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5lbnVtcy5Vc2VyTGlzdENybURhdGFTb3VyY2VUeXBlRW51",
+            "bS5Vc2VyTGlzdENybURhdGFTb3VyY2VUeXBlIsABChBVc2VyTGlzdFJ1bGVJ",
+            "bmZvElcKCXJ1bGVfdHlwZRgBIAEoDjJELmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmVudW1zLlVzZXJMaXN0UnVsZVR5cGVFbnVtLlVzZXJMaXN0UnVsZVR5",
+            "cGUSUwoQcnVsZV9pdGVtX2dyb3VwcxgCIAMoCzI5Lmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmNvbW1vbi5Vc2VyTGlzdFJ1bGVJdGVtR3JvdXBJbmZvImUK",
+            "GVVzZXJMaXN0UnVsZUl0ZW1Hcm91cEluZm8SSAoKcnVsZV9pdGVtcxgBIAMo",
+            "CzI0Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Vc2VyTGlzdFJ1",
+            "bGVJdGVtSW5mbyLTAgoUVXNlckxpc3RSdWxlSXRlbUluZm8SKgoEbmFtZRgB",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJWChBudW1iZXJf",
+            "cnVsZV9pdGVtGAIgASgLMjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29t",
+            "bW9uLlVzZXJMaXN0TnVtYmVyUnVsZUl0ZW1JbmZvSAASVgoQc3RyaW5nX3J1",
+            "bGVfaXRlbRgDIAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1v",
+            "bi5Vc2VyTGlzdFN0cmluZ1J1bGVJdGVtSW5mb0gAElIKDmRhdGVfcnVsZV9p",
+            "dGVtGAQgASgLMjguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlVz",
+            "ZXJMaXN0RGF0ZVJ1bGVJdGVtSW5mb0gAQgsKCXJ1bGVfaXRlbSLsAQoYVXNl",
+            "ckxpc3REYXRlUnVsZUl0ZW1JbmZvEm4KCG9wZXJhdG9yGAEgASgOMlwuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuVXNlckxpc3REYXRlUnVsZUl0",
+            "ZW1PcGVyYXRvckVudW0uVXNlckxpc3REYXRlUnVsZUl0ZW1PcGVyYXRvchIr",
+            "CgV2YWx1ZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIz",
+            "Cg5vZmZzZXRfaW5fZGF5cxgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
+            "NFZhbHVlIr0BChpVc2VyTGlzdE51bWJlclJ1bGVJdGVtSW5mbxJyCghvcGVy",
+            "YXRvchgBIAEoDjJgLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlVz",
+            "ZXJMaXN0TnVtYmVyUnVsZUl0ZW1PcGVyYXRvckVudW0uVXNlckxpc3ROdW1i",
+            "ZXJSdWxlSXRlbU9wZXJhdG9yEisKBXZhbHVlGAIgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLkRvdWJsZVZhbHVlIr0BChpVc2VyTGlzdFN0cmluZ1J1bGVJdGVt",
+            "SW5mbxJyCghvcGVyYXRvchgBIAEoDjJgLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmVudW1zLlVzZXJMaXN0U3RyaW5nUnVsZUl0ZW1PcGVyYXRvckVudW0u",
+            "VXNlckxpc3RTdHJpbmdSdWxlSXRlbU9wZXJhdG9yEisKBXZhbHVlGAIgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIqACChhDb21iaW5lZFJ1",
+            "bGVVc2VyTGlzdEluZm8SRgoMbGVmdF9vcGVyYW5kGAEgASgLMjAuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlVzZXJMaXN0UnVsZUluZm8SRwoN",
+            "cmlnaHRfb3BlcmFuZBgCIAEoCzIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmNvbW1vbi5Vc2VyTGlzdFJ1bGVJbmZvEnMKDXJ1bGVfb3BlcmF0b3IYAyAB",
+            "KA4yXC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5Vc2VyTGlzdENv",
+            "bWJpbmVkUnVsZU9wZXJhdG9yRW51bS5Vc2VyTGlzdENvbWJpbmVkUnVsZU9w",
+            "ZXJhdG9yIsABChxEYXRlU3BlY2lmaWNSdWxlVXNlckxpc3RJbmZvEj4KBHJ1",
+            "bGUYASABKAsyMC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uVXNl",
+            "ckxpc3RSdWxlSW5mbxIwCgpzdGFydF9kYXRlGAIgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEi4KCGVuZF9kYXRlGAMgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlIlwKGkV4cHJlc3Npb25SdWxlVXNlckxp",
+            "c3RJbmZvEj4KBHJ1bGUYASABKAsyMC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5jb21tb24uVXNlckxpc3RSdWxlSW5mbyLNAwoVUnVsZUJhc2VkVXNlckxp",
+            "c3RJbmZvEngKFHByZXBvcHVsYXRpb25fc3RhdHVzGAEgASgOMlouZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAuZW51bXMuVXNlckxpc3RQcmVwb3B1bGF0aW9u",
+            "U3RhdHVzRW51bS5Vc2VyTGlzdFByZXBvcHVsYXRpb25TdGF0dXMSWwoXY29t",
+            "YmluZWRfcnVsZV91c2VyX2xpc3QYAiABKAsyOC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5jb21tb24uQ29tYmluZWRSdWxlVXNlckxpc3RJbmZvSAASZAoc",
+            "ZGF0ZV9zcGVjaWZpY19ydWxlX3VzZXJfbGlzdBgDIAEoCzI8Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5EYXRlU3BlY2lmaWNSdWxlVXNlckxp",
+            "c3RJbmZvSAASXwoZZXhwcmVzc2lvbl9ydWxlX3VzZXJfbGlzdBgEIAEoCzI6",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5FeHByZXNzaW9uUnVs",
+            "ZVVzZXJMaXN0SW5mb0gAQhYKFHJ1bGVfYmFzZWRfdXNlcl9saXN0Il0KE0xv",
+            "Z2ljYWxVc2VyTGlzdEluZm8SRgoFcnVsZXMYASADKAsyNy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5jb21tb24uVXNlckxpc3RMb2dpY2FsUnVsZUluZm8i",
+            "2gEKF1VzZXJMaXN0TG9naWNhbFJ1bGVJbmZvEmwKCG9wZXJhdG9yGAEgASgO",
+            "MlouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuVXNlckxpc3RMb2dp",
+            "Y2FsUnVsZU9wZXJhdG9yRW51bS5Vc2VyTGlzdExvZ2ljYWxSdWxlT3BlcmF0",
+            "b3ISUQoNcnVsZV9vcGVyYW5kcxgCIAMoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmNvbW1vbi5Mb2dpY2FsVXNlckxpc3RPcGVyYW5kSW5mbyJNChpM",
+            "b2dpY2FsVXNlckxpc3RPcGVyYW5kSW5mbxIvCgl1c2VyX2xpc3QYASABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUiWAoRQmFzaWNVc2VyTGlz",
+            "dEluZm8SQwoHYWN0aW9ucxgBIAMoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmNvbW1vbi5Vc2VyTGlzdEFjdGlvbkluZm8inwEKElVzZXJMaXN0QWN0",
+            "aW9uSW5mbxI5ChFjb252ZXJzaW9uX2FjdGlvbhgBIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZUgAEjoKEnJlbWFya2V0aW5nX2FjdGlvbhgC",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUgAQhIKEHVzZXJf",
+            "bGlzdF9hY3Rpb25C6QEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5j",
+            "b21tb25CDlVzZXJMaXN0c1Byb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dl",
+            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9jb21tb247Y29t",
+            "bW9uogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuQ29tbW9uygIe",
+            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcQ29tbW9u6gIiR29vZ2xlOjpBZHM6",
+            "Okdvb2dsZUFkczo6VjA6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.CustomerMatchUploadKeyTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListCrmDataSourceTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.CustomerMatchUploadKeyTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListCombinedRuleOperatorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListCrmDataSourceTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListDateRuleItemOperatorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListLogicalRuleOperatorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListNumberRuleItemOperatorReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListPrepopulationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListRuleTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.UserListStringRuleItemOperatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.SimilarUserListInfo), global::Google.Ads.GoogleAds.V0.Common.SimilarUserListInfo.Parser, new[]{ "SeedUserList" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.CrmBasedUserListInfo), global::Google.Ads.GoogleAds.V0.Common.CrmBasedUserListInfo.Parser, new[]{ "AppId", "UploadKeyType", "DataSourceType" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.CrmBasedUserListInfo), global::Google.Ads.GoogleAds.V0.Common.CrmBasedUserListInfo.Parser, new[]{ "AppId", "UploadKeyType", "DataSourceType" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo), global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo.Parser, new[]{ "RuleType", "RuleItemGroups" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemGroupInfo), global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemGroupInfo.Parser, new[]{ "RuleItems" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemInfo), global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemInfo.Parser, new[]{ "Name", "NumberRuleItem", "StringRuleItem", "DateRuleItem" }, new[]{ "RuleItem" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.UserListDateRuleItemInfo), global::Google.Ads.GoogleAds.V0.Common.UserListDateRuleItemInfo.Parser, new[]{ "Operator", "Value", "OffsetInDays" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.UserListNumberRuleItemInfo), global::Google.Ads.GoogleAds.V0.Common.UserListNumberRuleItemInfo.Parser, new[]{ "Operator", "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.UserListStringRuleItemInfo), global::Google.Ads.GoogleAds.V0.Common.UserListStringRuleItemInfo.Parser, new[]{ "Operator", "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.CombinedRuleUserListInfo), global::Google.Ads.GoogleAds.V0.Common.CombinedRuleUserListInfo.Parser, new[]{ "LeftOperand", "RightOperand", "RuleOperator" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.DateSpecificRuleUserListInfo), global::Google.Ads.GoogleAds.V0.Common.DateSpecificRuleUserListInfo.Parser, new[]{ "Rule", "StartDate", "EndDate" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ExpressionRuleUserListInfo), global::Google.Ads.GoogleAds.V0.Common.ExpressionRuleUserListInfo.Parser, new[]{ "Rule" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.RuleBasedUserListInfo), global::Google.Ads.GoogleAds.V0.Common.RuleBasedUserListInfo.Parser, new[]{ "PrepopulationStatus", "CombinedRuleUserList", "DateSpecificRuleUserList", "ExpressionRuleUserList" }, new[]{ "RuleBasedUserList" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.LogicalUserListInfo), global::Google.Ads.GoogleAds.V0.Common.LogicalUserListInfo.Parser, new[]{ "Rules" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.UserListLogicalRuleInfo), global::Google.Ads.GoogleAds.V0.Common.UserListLogicalRuleInfo.Parser, new[]{ "Operator", "RuleOperands" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.LogicalUserListOperandInfo), global::Google.Ads.GoogleAds.V0.Common.LogicalUserListOperandInfo.Parser, new[]{ "UserList" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.BasicUserListInfo), global::Google.Ads.GoogleAds.V0.Common.BasicUserListInfo.Parser, new[]{ "Actions" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.UserListActionInfo), global::Google.Ads.GoogleAds.V0.Common.UserListActionInfo.Parser, new[]{ "ConversionAction", "RemarketingAction" }, new[]{ "UserListAction" }, null, null)
           }));
     }
     #endregion
@@ -401,6 +493,2800 @@ namespace Google.Ads.GoogleAds.V0.Common {
           }
           case 24: {
             dataSourceType_ = (global::Google.Ads.GoogleAds.V0.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A client defined rule based on custom parameters sent by web sites or
+  /// uploaded by the advertiser.
+  /// </summary>
+  public sealed partial class UserListRuleInfo : pb::IMessage<UserListRuleInfo> {
+    private static readonly pb::MessageParser<UserListRuleInfo> _parser = new pb::MessageParser<UserListRuleInfo>(() => new UserListRuleInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserListRuleInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListRuleInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListRuleInfo(UserListRuleInfo other) : this() {
+      ruleType_ = other.ruleType_;
+      ruleItemGroups_ = other.ruleItemGroups_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListRuleInfo Clone() {
+      return new UserListRuleInfo(this);
+    }
+
+    /// <summary>Field number for the "rule_type" field.</summary>
+    public const int RuleTypeFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.UserListRuleTypeEnum.Types.UserListRuleType ruleType_ = 0;
+    /// <summary>
+    /// Rule type is used to determine how to group rule items.
+    ///
+    /// The default is OR of ANDs (disjunctive normal form).
+    /// That is, rule items will be ANDed together within rule item groups and the
+    /// groups themselves will be ORed together.
+    ///
+    /// Currently AND of ORs (conjunctive normal form) is only supported for
+    /// ExpressionRuleUserList.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.UserListRuleTypeEnum.Types.UserListRuleType RuleType {
+      get { return ruleType_; }
+      set {
+        ruleType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rule_item_groups" field.</summary>
+    public const int RuleItemGroupsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemGroupInfo> _repeated_ruleItemGroups_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemGroupInfo.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemGroupInfo> ruleItemGroups_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemGroupInfo>();
+    /// <summary>
+    /// List of rule item groups that defines this rule.
+    /// Rule item groups are grouped together based on rule_type.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemGroupInfo> RuleItemGroups {
+      get { return ruleItemGroups_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserListRuleInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserListRuleInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RuleType != other.RuleType) return false;
+      if(!ruleItemGroups_.Equals(other.ruleItemGroups_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RuleType != 0) hash ^= RuleType.GetHashCode();
+      hash ^= ruleItemGroups_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (RuleType != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) RuleType);
+      }
+      ruleItemGroups_.WriteTo(output, _repeated_ruleItemGroups_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RuleType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RuleType);
+      }
+      size += ruleItemGroups_.CalculateSize(_repeated_ruleItemGroups_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserListRuleInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RuleType != 0) {
+        RuleType = other.RuleType;
+      }
+      ruleItemGroups_.Add(other.ruleItemGroups_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ruleType_ = (global::Google.Ads.GoogleAds.V0.Enums.UserListRuleTypeEnum.Types.UserListRuleType) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            ruleItemGroups_.AddEntriesFrom(input, _repeated_ruleItemGroups_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A group of rule items.
+  /// </summary>
+  public sealed partial class UserListRuleItemGroupInfo : pb::IMessage<UserListRuleItemGroupInfo> {
+    private static readonly pb::MessageParser<UserListRuleItemGroupInfo> _parser = new pb::MessageParser<UserListRuleItemGroupInfo>(() => new UserListRuleItemGroupInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserListRuleItemGroupInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListRuleItemGroupInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListRuleItemGroupInfo(UserListRuleItemGroupInfo other) : this() {
+      ruleItems_ = other.ruleItems_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListRuleItemGroupInfo Clone() {
+      return new UserListRuleItemGroupInfo(this);
+    }
+
+    /// <summary>Field number for the "rule_items" field.</summary>
+    public const int RuleItemsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemInfo> _repeated_ruleItems_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemInfo.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemInfo> ruleItems_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemInfo>();
+    /// <summary>
+    /// Rule items that will be grouped together based on rule_type.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListRuleItemInfo> RuleItems {
+      get { return ruleItems_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserListRuleItemGroupInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserListRuleItemGroupInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!ruleItems_.Equals(other.ruleItems_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= ruleItems_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      ruleItems_.WriteTo(output, _repeated_ruleItems_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += ruleItems_.CalculateSize(_repeated_ruleItems_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserListRuleItemGroupInfo other) {
+      if (other == null) {
+        return;
+      }
+      ruleItems_.Add(other.ruleItems_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ruleItems_.AddEntriesFrom(input, _repeated_ruleItems_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// An atomic rule fragment.
+  /// </summary>
+  public sealed partial class UserListRuleItemInfo : pb::IMessage<UserListRuleItemInfo> {
+    private static readonly pb::MessageParser<UserListRuleItemInfo> _parser = new pb::MessageParser<UserListRuleItemInfo>(() => new UserListRuleItemInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserListRuleItemInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListRuleItemInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListRuleItemInfo(UserListRuleItemInfo other) : this() {
+      Name = other.Name;
+      switch (other.RuleItemCase) {
+        case RuleItemOneofCase.NumberRuleItem:
+          NumberRuleItem = other.NumberRuleItem.Clone();
+          break;
+        case RuleItemOneofCase.StringRuleItem:
+          StringRuleItem = other.StringRuleItem.Clone();
+          break;
+        case RuleItemOneofCase.DateRuleItem:
+          DateRuleItem = other.DateRuleItem.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListRuleItemInfo Clone() {
+      return new UserListRuleItemInfo(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_name_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string name_;
+    /// <summary>
+    /// Rule variable name. It should match the corresponding key name fired
+    /// by the pixel.
+    /// A name must begin with US-ascii letters or underscore or UTF8 code that is
+    /// greater than 127 and consist of US-ascii letters or digits or underscore or
+    /// UTF8 code that is greater than 127.
+    /// For websites, there are two built-in variable URL (name = 'url__') and
+    /// referrer URL (name = 'ref_url__').
+    /// This field must be populated when creating a new rule item.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "number_rule_item" field.</summary>
+    public const int NumberRuleItemFieldNumber = 2;
+    /// <summary>
+    /// An atomic rule fragment composed of a number operation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.UserListNumberRuleItemInfo NumberRuleItem {
+      get { return ruleItemCase_ == RuleItemOneofCase.NumberRuleItem ? (global::Google.Ads.GoogleAds.V0.Common.UserListNumberRuleItemInfo) ruleItem_ : null; }
+      set {
+        ruleItem_ = value;
+        ruleItemCase_ = value == null ? RuleItemOneofCase.None : RuleItemOneofCase.NumberRuleItem;
+      }
+    }
+
+    /// <summary>Field number for the "string_rule_item" field.</summary>
+    public const int StringRuleItemFieldNumber = 3;
+    /// <summary>
+    /// An atomic rule fragment composed of a string operation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.UserListStringRuleItemInfo StringRuleItem {
+      get { return ruleItemCase_ == RuleItemOneofCase.StringRuleItem ? (global::Google.Ads.GoogleAds.V0.Common.UserListStringRuleItemInfo) ruleItem_ : null; }
+      set {
+        ruleItem_ = value;
+        ruleItemCase_ = value == null ? RuleItemOneofCase.None : RuleItemOneofCase.StringRuleItem;
+      }
+    }
+
+    /// <summary>Field number for the "date_rule_item" field.</summary>
+    public const int DateRuleItemFieldNumber = 4;
+    /// <summary>
+    /// An atomic rule fragment composed of a date operation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.UserListDateRuleItemInfo DateRuleItem {
+      get { return ruleItemCase_ == RuleItemOneofCase.DateRuleItem ? (global::Google.Ads.GoogleAds.V0.Common.UserListDateRuleItemInfo) ruleItem_ : null; }
+      set {
+        ruleItem_ = value;
+        ruleItemCase_ = value == null ? RuleItemOneofCase.None : RuleItemOneofCase.DateRuleItem;
+      }
+    }
+
+    private object ruleItem_;
+    /// <summary>Enum of possible cases for the "rule_item" oneof.</summary>
+    public enum RuleItemOneofCase {
+      None = 0,
+      NumberRuleItem = 2,
+      StringRuleItem = 3,
+      DateRuleItem = 4,
+    }
+    private RuleItemOneofCase ruleItemCase_ = RuleItemOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RuleItemOneofCase RuleItemCase {
+      get { return ruleItemCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearRuleItem() {
+      ruleItemCase_ = RuleItemOneofCase.None;
+      ruleItem_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserListRuleItemInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserListRuleItemInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if (!object.Equals(NumberRuleItem, other.NumberRuleItem)) return false;
+      if (!object.Equals(StringRuleItem, other.StringRuleItem)) return false;
+      if (!object.Equals(DateRuleItem, other.DateRuleItem)) return false;
+      if (RuleItemCase != other.RuleItemCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (name_ != null) hash ^= Name.GetHashCode();
+      if (ruleItemCase_ == RuleItemOneofCase.NumberRuleItem) hash ^= NumberRuleItem.GetHashCode();
+      if (ruleItemCase_ == RuleItemOneofCase.StringRuleItem) hash ^= StringRuleItem.GetHashCode();
+      if (ruleItemCase_ == RuleItemOneofCase.DateRuleItem) hash ^= DateRuleItem.GetHashCode();
+      hash ^= (int) ruleItemCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(output, Name);
+      }
+      if (ruleItemCase_ == RuleItemOneofCase.NumberRuleItem) {
+        output.WriteRawTag(18);
+        output.WriteMessage(NumberRuleItem);
+      }
+      if (ruleItemCase_ == RuleItemOneofCase.StringRuleItem) {
+        output.WriteRawTag(26);
+        output.WriteMessage(StringRuleItem);
+      }
+      if (ruleItemCase_ == RuleItemOneofCase.DateRuleItem) {
+        output.WriteRawTag(34);
+        output.WriteMessage(DateRuleItem);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (name_ != null) {
+        size += _single_name_codec.CalculateSizeWithTag(Name);
+      }
+      if (ruleItemCase_ == RuleItemOneofCase.NumberRuleItem) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NumberRuleItem);
+      }
+      if (ruleItemCase_ == RuleItemOneofCase.StringRuleItem) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StringRuleItem);
+      }
+      if (ruleItemCase_ == RuleItemOneofCase.DateRuleItem) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DateRuleItem);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserListRuleItemInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.name_ != null) {
+        if (name_ == null || other.Name != "") {
+          Name = other.Name;
+        }
+      }
+      switch (other.RuleItemCase) {
+        case RuleItemOneofCase.NumberRuleItem:
+          if (NumberRuleItem == null) {
+            NumberRuleItem = new global::Google.Ads.GoogleAds.V0.Common.UserListNumberRuleItemInfo();
+          }
+          NumberRuleItem.MergeFrom(other.NumberRuleItem);
+          break;
+        case RuleItemOneofCase.StringRuleItem:
+          if (StringRuleItem == null) {
+            StringRuleItem = new global::Google.Ads.GoogleAds.V0.Common.UserListStringRuleItemInfo();
+          }
+          StringRuleItem.MergeFrom(other.StringRuleItem);
+          break;
+        case RuleItemOneofCase.DateRuleItem:
+          if (DateRuleItem == null) {
+            DateRuleItem = new global::Google.Ads.GoogleAds.V0.Common.UserListDateRuleItemInfo();
+          }
+          DateRuleItem.MergeFrom(other.DateRuleItem);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_name_codec.Read(input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V0.Common.UserListNumberRuleItemInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.UserListNumberRuleItemInfo();
+            if (ruleItemCase_ == RuleItemOneofCase.NumberRuleItem) {
+              subBuilder.MergeFrom(NumberRuleItem);
+            }
+            input.ReadMessage(subBuilder);
+            NumberRuleItem = subBuilder;
+            break;
+          }
+          case 26: {
+            global::Google.Ads.GoogleAds.V0.Common.UserListStringRuleItemInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.UserListStringRuleItemInfo();
+            if (ruleItemCase_ == RuleItemOneofCase.StringRuleItem) {
+              subBuilder.MergeFrom(StringRuleItem);
+            }
+            input.ReadMessage(subBuilder);
+            StringRuleItem = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Google.Ads.GoogleAds.V0.Common.UserListDateRuleItemInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.UserListDateRuleItemInfo();
+            if (ruleItemCase_ == RuleItemOneofCase.DateRuleItem) {
+              subBuilder.MergeFrom(DateRuleItem);
+            }
+            input.ReadMessage(subBuilder);
+            DateRuleItem = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A rule item composed of date operation.
+  /// </summary>
+  public sealed partial class UserListDateRuleItemInfo : pb::IMessage<UserListDateRuleItemInfo> {
+    private static readonly pb::MessageParser<UserListDateRuleItemInfo> _parser = new pb::MessageParser<UserListDateRuleItemInfo>(() => new UserListDateRuleItemInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserListDateRuleItemInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListDateRuleItemInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListDateRuleItemInfo(UserListDateRuleItemInfo other) : this() {
+      operator_ = other.operator_;
+      Value = other.Value;
+      OffsetInDays = other.OffsetInDays;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListDateRuleItemInfo Clone() {
+      return new UserListDateRuleItemInfo(this);
+    }
+
+    /// <summary>Field number for the "operator" field.</summary>
+    public const int OperatorFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator operator_ = 0;
+    /// <summary>
+    /// Date comparison operator.
+    /// This field is required and must be populated when creating new date
+    /// rule item.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator Operator {
+      get { return operator_; }
+      set {
+        operator_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_value_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string value_;
+    /// <summary>
+    /// String representing date value to be compared with the rule variable.
+    /// Supported date format is YYYY-MM-DD.
+    /// Times are reported in the customer's time zone.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "offset_in_days" field.</summary>
+    public const int OffsetInDaysFieldNumber = 3;
+    private static readonly pb::FieldCodec<long?> _single_offsetInDays_codec = pb::FieldCodec.ForStructWrapper<long>(26);
+    private long? offsetInDays_;
+    /// <summary>
+    /// The relative date value of the right hand side denoted by number of days
+    /// offset from now. The value field will override this field when both are
+    /// present.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? OffsetInDays {
+      get { return offsetInDays_; }
+      set {
+        offsetInDays_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserListDateRuleItemInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserListDateRuleItemInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Operator != other.Operator) return false;
+      if (Value != other.Value) return false;
+      if (OffsetInDays != other.OffsetInDays) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (value_ != null) hash ^= Value.GetHashCode();
+      if (offsetInDays_ != null) hash ^= OffsetInDays.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Operator != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Operator);
+      }
+      if (value_ != null) {
+        _single_value_codec.WriteTagAndValue(output, Value);
+      }
+      if (offsetInDays_ != null) {
+        _single_offsetInDays_codec.WriteTagAndValue(output, OffsetInDays);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Operator != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
+      }
+      if (value_ != null) {
+        size += _single_value_codec.CalculateSizeWithTag(Value);
+      }
+      if (offsetInDays_ != null) {
+        size += _single_offsetInDays_codec.CalculateSizeWithTag(OffsetInDays);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserListDateRuleItemInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Operator != 0) {
+        Operator = other.Operator;
+      }
+      if (other.value_ != null) {
+        if (value_ == null || other.Value != "") {
+          Value = other.Value;
+        }
+      }
+      if (other.offsetInDays_ != null) {
+        if (offsetInDays_ == null || other.OffsetInDays != 0L) {
+          OffsetInDays = other.OffsetInDays;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            operator_ = (global::Google.Ads.GoogleAds.V0.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            string value = _single_value_codec.Read(input);
+            if (value_ == null || value != "") {
+              Value = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_offsetInDays_codec.Read(input);
+            if (offsetInDays_ == null || value != 0L) {
+              OffsetInDays = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A rule item composed of number operation.
+  /// </summary>
+  public sealed partial class UserListNumberRuleItemInfo : pb::IMessage<UserListNumberRuleItemInfo> {
+    private static readonly pb::MessageParser<UserListNumberRuleItemInfo> _parser = new pb::MessageParser<UserListNumberRuleItemInfo>(() => new UserListNumberRuleItemInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserListNumberRuleItemInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListNumberRuleItemInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListNumberRuleItemInfo(UserListNumberRuleItemInfo other) : this() {
+      operator_ = other.operator_;
+      Value = other.Value;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListNumberRuleItemInfo Clone() {
+      return new UserListNumberRuleItemInfo(this);
+    }
+
+    /// <summary>Field number for the "operator" field.</summary>
+    public const int OperatorFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator operator_ = 0;
+    /// <summary>
+    /// Number comparison operator.
+    /// This field is required and must be populated when creating a new number
+    /// rule item.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator Operator {
+      get { return operator_; }
+      set {
+        operator_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 2;
+    private static readonly pb::FieldCodec<double?> _single_value_codec = pb::FieldCodec.ForStructWrapper<double>(18);
+    private double? value_;
+    /// <summary>
+    /// Number value to be compared with the variable.
+    /// This field is required and must be populated when creating a new number
+    /// rule item.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserListNumberRuleItemInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserListNumberRuleItemInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Operator != other.Operator) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(Value, other.Value)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (value_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(Value);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Operator != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Operator);
+      }
+      if (value_ != null) {
+        _single_value_codec.WriteTagAndValue(output, Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Operator != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
+      }
+      if (value_ != null) {
+        size += _single_value_codec.CalculateSizeWithTag(Value);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserListNumberRuleItemInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Operator != 0) {
+        Operator = other.Operator;
+      }
+      if (other.value_ != null) {
+        if (value_ == null || other.Value != 0D) {
+          Value = other.Value;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            operator_ = (global::Google.Ads.GoogleAds.V0.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            double? value = _single_value_codec.Read(input);
+            if (value_ == null || value != 0D) {
+              Value = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A rule item fragment composed of date operation.
+  /// </summary>
+  public sealed partial class UserListStringRuleItemInfo : pb::IMessage<UserListStringRuleItemInfo> {
+    private static readonly pb::MessageParser<UserListStringRuleItemInfo> _parser = new pb::MessageParser<UserListStringRuleItemInfo>(() => new UserListStringRuleItemInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserListStringRuleItemInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListStringRuleItemInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListStringRuleItemInfo(UserListStringRuleItemInfo other) : this() {
+      operator_ = other.operator_;
+      Value = other.Value;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListStringRuleItemInfo Clone() {
+      return new UserListStringRuleItemInfo(this);
+    }
+
+    /// <summary>Field number for the "operator" field.</summary>
+    public const int OperatorFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator operator_ = 0;
+    /// <summary>
+    /// String comparison operator.
+    /// This field is required and must be populated when creating a new string
+    /// rule item.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator Operator {
+      get { return operator_; }
+      set {
+        operator_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_value_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string value_;
+    /// <summary>
+    /// The right hand side of the string rule item. For URLs or referrer URLs,
+    /// the value can not contain illegal URL chars such as newlines, quotes,
+    /// tabs, or parentheses. This field is required and must be populated when
+    /// creating a new string rule item.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserListStringRuleItemInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserListStringRuleItemInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Operator != other.Operator) return false;
+      if (Value != other.Value) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (value_ != null) hash ^= Value.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Operator != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Operator);
+      }
+      if (value_ != null) {
+        _single_value_codec.WriteTagAndValue(output, Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Operator != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
+      }
+      if (value_ != null) {
+        size += _single_value_codec.CalculateSizeWithTag(Value);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserListStringRuleItemInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Operator != 0) {
+        Operator = other.Operator;
+      }
+      if (other.value_ != null) {
+        if (value_ == null || other.Value != "") {
+          Value = other.Value;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            operator_ = (global::Google.Ads.GoogleAds.V0.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            string value = _single_value_codec.Read(input);
+            if (value_ == null || value != "") {
+              Value = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// User lists defined by combining two rules, left operand and right operand.
+  /// There are two operators: AND where left operand and right operand have to be
+  /// true; AND_NOT where left operand is true but right operand is false.
+  /// </summary>
+  public sealed partial class CombinedRuleUserListInfo : pb::IMessage<CombinedRuleUserListInfo> {
+    private static readonly pb::MessageParser<CombinedRuleUserListInfo> _parser = new pb::MessageParser<CombinedRuleUserListInfo>(() => new CombinedRuleUserListInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CombinedRuleUserListInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CombinedRuleUserListInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CombinedRuleUserListInfo(CombinedRuleUserListInfo other) : this() {
+      leftOperand_ = other.leftOperand_ != null ? other.leftOperand_.Clone() : null;
+      rightOperand_ = other.rightOperand_ != null ? other.rightOperand_.Clone() : null;
+      ruleOperator_ = other.ruleOperator_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CombinedRuleUserListInfo Clone() {
+      return new CombinedRuleUserListInfo(this);
+    }
+
+    /// <summary>Field number for the "left_operand" field.</summary>
+    public const int LeftOperandFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo leftOperand_;
+    /// <summary>
+    /// Left operand of the combined rule.
+    /// This field is required and must be populated when creating new combined
+    /// rule based user list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo LeftOperand {
+      get { return leftOperand_; }
+      set {
+        leftOperand_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "right_operand" field.</summary>
+    public const int RightOperandFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo rightOperand_;
+    /// <summary>
+    /// Right operand of the combined rule.
+    /// This field is required and must be populated when creating new combined
+    /// rule based user list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo RightOperand {
+      get { return rightOperand_; }
+      set {
+        rightOperand_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rule_operator" field.</summary>
+    public const int RuleOperatorFieldNumber = 3;
+    private global::Google.Ads.GoogleAds.V0.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator ruleOperator_ = 0;
+    /// <summary>
+    /// Operator to connect the two operands.
+    ///
+    /// Required for creating a combined rule user list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator RuleOperator {
+      get { return ruleOperator_; }
+      set {
+        ruleOperator_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CombinedRuleUserListInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CombinedRuleUserListInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(LeftOperand, other.LeftOperand)) return false;
+      if (!object.Equals(RightOperand, other.RightOperand)) return false;
+      if (RuleOperator != other.RuleOperator) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (leftOperand_ != null) hash ^= LeftOperand.GetHashCode();
+      if (rightOperand_ != null) hash ^= RightOperand.GetHashCode();
+      if (RuleOperator != 0) hash ^= RuleOperator.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (leftOperand_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(LeftOperand);
+      }
+      if (rightOperand_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(RightOperand);
+      }
+      if (RuleOperator != 0) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) RuleOperator);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (leftOperand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LeftOperand);
+      }
+      if (rightOperand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RightOperand);
+      }
+      if (RuleOperator != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RuleOperator);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CombinedRuleUserListInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.leftOperand_ != null) {
+        if (leftOperand_ == null) {
+          leftOperand_ = new global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo();
+        }
+        LeftOperand.MergeFrom(other.LeftOperand);
+      }
+      if (other.rightOperand_ != null) {
+        if (rightOperand_ == null) {
+          rightOperand_ = new global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo();
+        }
+        RightOperand.MergeFrom(other.RightOperand);
+      }
+      if (other.RuleOperator != 0) {
+        RuleOperator = other.RuleOperator;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (leftOperand_ == null) {
+              leftOperand_ = new global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo();
+            }
+            input.ReadMessage(leftOperand_);
+            break;
+          }
+          case 18: {
+            if (rightOperand_ == null) {
+              rightOperand_ = new global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo();
+            }
+            input.ReadMessage(rightOperand_);
+            break;
+          }
+          case 24: {
+            ruleOperator_ = (global::Google.Ads.GoogleAds.V0.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Visitors of a page during specific dates.
+  /// </summary>
+  public sealed partial class DateSpecificRuleUserListInfo : pb::IMessage<DateSpecificRuleUserListInfo> {
+    private static readonly pb::MessageParser<DateSpecificRuleUserListInfo> _parser = new pb::MessageParser<DateSpecificRuleUserListInfo>(() => new DateSpecificRuleUserListInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<DateSpecificRuleUserListInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DateSpecificRuleUserListInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DateSpecificRuleUserListInfo(DateSpecificRuleUserListInfo other) : this() {
+      rule_ = other.rule_ != null ? other.rule_.Clone() : null;
+      StartDate = other.StartDate;
+      EndDate = other.EndDate;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DateSpecificRuleUserListInfo Clone() {
+      return new DateSpecificRuleUserListInfo(this);
+    }
+
+    /// <summary>Field number for the "rule" field.</summary>
+    public const int RuleFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo rule_;
+    /// <summary>
+    /// Boolean rule that defines visitor of a page.
+    ///
+    /// Required for creating a date specific rule user list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo Rule {
+      get { return rule_; }
+      set {
+        rule_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_date" field.</summary>
+    public const int StartDateFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_startDate_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string startDate_;
+    /// <summary>
+    /// Start date of users visit. If set to 2000-01-01, then the list includes all
+    /// users before end_date. The date's format should be YYYY-MM-DD.
+    ///
+    /// Required for creating a data specific rule user list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string StartDate {
+      get { return startDate_; }
+      set {
+        startDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "end_date" field.</summary>
+    public const int EndDateFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_endDate_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string endDate_;
+    /// <summary>
+    /// End date of users visit. If set to 2037-12-30, then the list includes all
+    /// users after start_date. The date's format should be YYYY-MM-DD.
+    ///
+    /// Required for creating a data specific rule user list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string EndDate {
+      get { return endDate_; }
+      set {
+        endDate_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as DateSpecificRuleUserListInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(DateSpecificRuleUserListInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Rule, other.Rule)) return false;
+      if (StartDate != other.StartDate) return false;
+      if (EndDate != other.EndDate) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (rule_ != null) hash ^= Rule.GetHashCode();
+      if (startDate_ != null) hash ^= StartDate.GetHashCode();
+      if (endDate_ != null) hash ^= EndDate.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (rule_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Rule);
+      }
+      if (startDate_ != null) {
+        _single_startDate_codec.WriteTagAndValue(output, StartDate);
+      }
+      if (endDate_ != null) {
+        _single_endDate_codec.WriteTagAndValue(output, EndDate);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (rule_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rule);
+      }
+      if (startDate_ != null) {
+        size += _single_startDate_codec.CalculateSizeWithTag(StartDate);
+      }
+      if (endDate_ != null) {
+        size += _single_endDate_codec.CalculateSizeWithTag(EndDate);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(DateSpecificRuleUserListInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.rule_ != null) {
+        if (rule_ == null) {
+          rule_ = new global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo();
+        }
+        Rule.MergeFrom(other.Rule);
+      }
+      if (other.startDate_ != null) {
+        if (startDate_ == null || other.StartDate != "") {
+          StartDate = other.StartDate;
+        }
+      }
+      if (other.endDate_ != null) {
+        if (endDate_ == null || other.EndDate != "") {
+          EndDate = other.EndDate;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (rule_ == null) {
+              rule_ = new global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo();
+            }
+            input.ReadMessage(rule_);
+            break;
+          }
+          case 18: {
+            string value = _single_startDate_codec.Read(input);
+            if (startDate_ == null || value != "") {
+              StartDate = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_endDate_codec.Read(input);
+            if (endDate_ == null || value != "") {
+              EndDate = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Visitors of a page. The page visit is defined by one boolean rule expression.
+  /// </summary>
+  public sealed partial class ExpressionRuleUserListInfo : pb::IMessage<ExpressionRuleUserListInfo> {
+    private static readonly pb::MessageParser<ExpressionRuleUserListInfo> _parser = new pb::MessageParser<ExpressionRuleUserListInfo>(() => new ExpressionRuleUserListInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ExpressionRuleUserListInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExpressionRuleUserListInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExpressionRuleUserListInfo(ExpressionRuleUserListInfo other) : this() {
+      rule_ = other.rule_ != null ? other.rule_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ExpressionRuleUserListInfo Clone() {
+      return new ExpressionRuleUserListInfo(this);
+    }
+
+    /// <summary>Field number for the "rule" field.</summary>
+    public const int RuleFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo rule_;
+    /// <summary>
+    /// Boolean rule that defines this user list. The rule consists of a list of
+    /// rule item groups and each rule item group consists of a list of rule items.
+    /// All the rule item groups are ORed or ANDed together for evaluation based on
+    /// rule.rule_type.
+    ///
+    /// Required for creating an expression rule user list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo Rule {
+      get { return rule_; }
+      set {
+        rule_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ExpressionRuleUserListInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ExpressionRuleUserListInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Rule, other.Rule)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (rule_ != null) hash ^= Rule.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (rule_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Rule);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (rule_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rule);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ExpressionRuleUserListInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.rule_ != null) {
+        if (rule_ == null) {
+          rule_ = new global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo();
+        }
+        Rule.MergeFrom(other.Rule);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (rule_ == null) {
+              rule_ = new global::Google.Ads.GoogleAds.V0.Common.UserListRuleInfo();
+            }
+            input.ReadMessage(rule_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Representation of a userlist that is generated by a rule.
+  /// </summary>
+  public sealed partial class RuleBasedUserListInfo : pb::IMessage<RuleBasedUserListInfo> {
+    private static readonly pb::MessageParser<RuleBasedUserListInfo> _parser = new pb::MessageParser<RuleBasedUserListInfo>(() => new RuleBasedUserListInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RuleBasedUserListInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RuleBasedUserListInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RuleBasedUserListInfo(RuleBasedUserListInfo other) : this() {
+      prepopulationStatus_ = other.prepopulationStatus_;
+      switch (other.RuleBasedUserListCase) {
+        case RuleBasedUserListOneofCase.CombinedRuleUserList:
+          CombinedRuleUserList = other.CombinedRuleUserList.Clone();
+          break;
+        case RuleBasedUserListOneofCase.DateSpecificRuleUserList:
+          DateSpecificRuleUserList = other.DateSpecificRuleUserList.Clone();
+          break;
+        case RuleBasedUserListOneofCase.ExpressionRuleUserList:
+          ExpressionRuleUserList = other.ExpressionRuleUserList.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RuleBasedUserListInfo Clone() {
+      return new RuleBasedUserListInfo(this);
+    }
+
+    /// <summary>Field number for the "prepopulation_status" field.</summary>
+    public const int PrepopulationStatusFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus prepopulationStatus_ = 0;
+    /// <summary>
+    /// The status of pre-population. The field is default to NONE if not set which
+    /// means the previous users will not be considered. If set to REQUESTED, past
+    /// site visitors or app users who match the list definition will be included
+    /// in the list (works on the Display Network only). This will only
+    /// add past users from within the last 30 days, depending on the
+    /// list's membership duration and the date when the remarketing tag is added.
+    /// The status will be updated to FINISHED once request is processed, or FAILED
+    /// if the request fails.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus PrepopulationStatus {
+      get { return prepopulationStatus_; }
+      set {
+        prepopulationStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "combined_rule_user_list" field.</summary>
+    public const int CombinedRuleUserListFieldNumber = 2;
+    /// <summary>
+    /// User lists defined by combining two rules.
+    /// There are two operators: AND, where the left and right operands have to
+    /// be true; AND_NOT where left operand is true but right operand is false.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.CombinedRuleUserListInfo CombinedRuleUserList {
+      get { return ruleBasedUserListCase_ == RuleBasedUserListOneofCase.CombinedRuleUserList ? (global::Google.Ads.GoogleAds.V0.Common.CombinedRuleUserListInfo) ruleBasedUserList_ : null; }
+      set {
+        ruleBasedUserList_ = value;
+        ruleBasedUserListCase_ = value == null ? RuleBasedUserListOneofCase.None : RuleBasedUserListOneofCase.CombinedRuleUserList;
+      }
+    }
+
+    /// <summary>Field number for the "date_specific_rule_user_list" field.</summary>
+    public const int DateSpecificRuleUserListFieldNumber = 3;
+    /// <summary>
+    /// Visitors of a page during specific dates. The visiting periods are
+    /// defined as follows:
+    /// Between start_date (inclusive) and end_date (inclusive);
+    /// Before end_date (exclusive) with start_date = 2000-01-01;
+    /// After start_date (exclusive) with end_date = 2037-12-30.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.DateSpecificRuleUserListInfo DateSpecificRuleUserList {
+      get { return ruleBasedUserListCase_ == RuleBasedUserListOneofCase.DateSpecificRuleUserList ? (global::Google.Ads.GoogleAds.V0.Common.DateSpecificRuleUserListInfo) ruleBasedUserList_ : null; }
+      set {
+        ruleBasedUserList_ = value;
+        ruleBasedUserListCase_ = value == null ? RuleBasedUserListOneofCase.None : RuleBasedUserListOneofCase.DateSpecificRuleUserList;
+      }
+    }
+
+    /// <summary>Field number for the "expression_rule_user_list" field.</summary>
+    public const int ExpressionRuleUserListFieldNumber = 4;
+    /// <summary>
+    /// Visitors of a page. The page visit is defined by one boolean rule
+    /// expression.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.ExpressionRuleUserListInfo ExpressionRuleUserList {
+      get { return ruleBasedUserListCase_ == RuleBasedUserListOneofCase.ExpressionRuleUserList ? (global::Google.Ads.GoogleAds.V0.Common.ExpressionRuleUserListInfo) ruleBasedUserList_ : null; }
+      set {
+        ruleBasedUserList_ = value;
+        ruleBasedUserListCase_ = value == null ? RuleBasedUserListOneofCase.None : RuleBasedUserListOneofCase.ExpressionRuleUserList;
+      }
+    }
+
+    private object ruleBasedUserList_;
+    /// <summary>Enum of possible cases for the "rule_based_user_list" oneof.</summary>
+    public enum RuleBasedUserListOneofCase {
+      None = 0,
+      CombinedRuleUserList = 2,
+      DateSpecificRuleUserList = 3,
+      ExpressionRuleUserList = 4,
+    }
+    private RuleBasedUserListOneofCase ruleBasedUserListCase_ = RuleBasedUserListOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RuleBasedUserListOneofCase RuleBasedUserListCase {
+      get { return ruleBasedUserListCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearRuleBasedUserList() {
+      ruleBasedUserListCase_ = RuleBasedUserListOneofCase.None;
+      ruleBasedUserList_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RuleBasedUserListInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RuleBasedUserListInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PrepopulationStatus != other.PrepopulationStatus) return false;
+      if (!object.Equals(CombinedRuleUserList, other.CombinedRuleUserList)) return false;
+      if (!object.Equals(DateSpecificRuleUserList, other.DateSpecificRuleUserList)) return false;
+      if (!object.Equals(ExpressionRuleUserList, other.ExpressionRuleUserList)) return false;
+      if (RuleBasedUserListCase != other.RuleBasedUserListCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (PrepopulationStatus != 0) hash ^= PrepopulationStatus.GetHashCode();
+      if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.CombinedRuleUserList) hash ^= CombinedRuleUserList.GetHashCode();
+      if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.DateSpecificRuleUserList) hash ^= DateSpecificRuleUserList.GetHashCode();
+      if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.ExpressionRuleUserList) hash ^= ExpressionRuleUserList.GetHashCode();
+      hash ^= (int) ruleBasedUserListCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (PrepopulationStatus != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) PrepopulationStatus);
+      }
+      if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.CombinedRuleUserList) {
+        output.WriteRawTag(18);
+        output.WriteMessage(CombinedRuleUserList);
+      }
+      if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.DateSpecificRuleUserList) {
+        output.WriteRawTag(26);
+        output.WriteMessage(DateSpecificRuleUserList);
+      }
+      if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.ExpressionRuleUserList) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ExpressionRuleUserList);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (PrepopulationStatus != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PrepopulationStatus);
+      }
+      if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.CombinedRuleUserList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CombinedRuleUserList);
+      }
+      if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.DateSpecificRuleUserList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DateSpecificRuleUserList);
+      }
+      if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.ExpressionRuleUserList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExpressionRuleUserList);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RuleBasedUserListInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.PrepopulationStatus != 0) {
+        PrepopulationStatus = other.PrepopulationStatus;
+      }
+      switch (other.RuleBasedUserListCase) {
+        case RuleBasedUserListOneofCase.CombinedRuleUserList:
+          if (CombinedRuleUserList == null) {
+            CombinedRuleUserList = new global::Google.Ads.GoogleAds.V0.Common.CombinedRuleUserListInfo();
+          }
+          CombinedRuleUserList.MergeFrom(other.CombinedRuleUserList);
+          break;
+        case RuleBasedUserListOneofCase.DateSpecificRuleUserList:
+          if (DateSpecificRuleUserList == null) {
+            DateSpecificRuleUserList = new global::Google.Ads.GoogleAds.V0.Common.DateSpecificRuleUserListInfo();
+          }
+          DateSpecificRuleUserList.MergeFrom(other.DateSpecificRuleUserList);
+          break;
+        case RuleBasedUserListOneofCase.ExpressionRuleUserList:
+          if (ExpressionRuleUserList == null) {
+            ExpressionRuleUserList = new global::Google.Ads.GoogleAds.V0.Common.ExpressionRuleUserListInfo();
+          }
+          ExpressionRuleUserList.MergeFrom(other.ExpressionRuleUserList);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            prepopulationStatus_ = (global::Google.Ads.GoogleAds.V0.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V0.Common.CombinedRuleUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.CombinedRuleUserListInfo();
+            if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.CombinedRuleUserList) {
+              subBuilder.MergeFrom(CombinedRuleUserList);
+            }
+            input.ReadMessage(subBuilder);
+            CombinedRuleUserList = subBuilder;
+            break;
+          }
+          case 26: {
+            global::Google.Ads.GoogleAds.V0.Common.DateSpecificRuleUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.DateSpecificRuleUserListInfo();
+            if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.DateSpecificRuleUserList) {
+              subBuilder.MergeFrom(DateSpecificRuleUserList);
+            }
+            input.ReadMessage(subBuilder);
+            DateSpecificRuleUserList = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Google.Ads.GoogleAds.V0.Common.ExpressionRuleUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.ExpressionRuleUserListInfo();
+            if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.ExpressionRuleUserList) {
+              subBuilder.MergeFrom(ExpressionRuleUserList);
+            }
+            input.ReadMessage(subBuilder);
+            ExpressionRuleUserList = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Represents a user list that is a custom combination of user lists.
+  /// </summary>
+  public sealed partial class LogicalUserListInfo : pb::IMessage<LogicalUserListInfo> {
+    private static readonly pb::MessageParser<LogicalUserListInfo> _parser = new pb::MessageParser<LogicalUserListInfo>(() => new LogicalUserListInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LogicalUserListInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogicalUserListInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogicalUserListInfo(LogicalUserListInfo other) : this() {
+      rules_ = other.rules_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogicalUserListInfo Clone() {
+      return new LogicalUserListInfo(this);
+    }
+
+    /// <summary>Field number for the "rules" field.</summary>
+    public const int RulesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.UserListLogicalRuleInfo> _repeated_rules_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V0.Common.UserListLogicalRuleInfo.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListLogicalRuleInfo> rules_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListLogicalRuleInfo>();
+    /// <summary>
+    /// Logical list rules that define this user list. The rules are defined as a
+    /// logical operator (ALL/ANY/NONE) and a list of user lists. All the rules are
+    /// ANDed when they are evaluated.
+    ///
+    /// Required for creating a logical user list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListLogicalRuleInfo> Rules {
+      get { return rules_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LogicalUserListInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LogicalUserListInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!rules_.Equals(other.rules_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= rules_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      rules_.WriteTo(output, _repeated_rules_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += rules_.CalculateSize(_repeated_rules_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LogicalUserListInfo other) {
+      if (other == null) {
+        return;
+      }
+      rules_.Add(other.rules_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            rules_.AddEntriesFrom(input, _repeated_rules_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A user list logical rule. A rule has a logical operator (and/or/not) and a
+  /// list of user lists as operands.
+  /// </summary>
+  public sealed partial class UserListLogicalRuleInfo : pb::IMessage<UserListLogicalRuleInfo> {
+    private static readonly pb::MessageParser<UserListLogicalRuleInfo> _parser = new pb::MessageParser<UserListLogicalRuleInfo>(() => new UserListLogicalRuleInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserListLogicalRuleInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListLogicalRuleInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListLogicalRuleInfo(UserListLogicalRuleInfo other) : this() {
+      operator_ = other.operator_;
+      ruleOperands_ = other.ruleOperands_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListLogicalRuleInfo Clone() {
+      return new UserListLogicalRuleInfo(this);
+    }
+
+    /// <summary>Field number for the "operator" field.</summary>
+    public const int OperatorFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V0.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator operator_ = 0;
+    /// <summary>
+    /// The logical operator of the rule.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator Operator {
+      get { return operator_; }
+      set {
+        operator_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rule_operands" field.</summary>
+    public const int RuleOperandsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.LogicalUserListOperandInfo> _repeated_ruleOperands_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V0.Common.LogicalUserListOperandInfo.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.LogicalUserListOperandInfo> ruleOperands_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.LogicalUserListOperandInfo>();
+    /// <summary>
+    /// The list of operands of the rule.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.LogicalUserListOperandInfo> RuleOperands {
+      get { return ruleOperands_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserListLogicalRuleInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserListLogicalRuleInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Operator != other.Operator) return false;
+      if(!ruleOperands_.Equals(other.ruleOperands_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Operator != 0) hash ^= Operator.GetHashCode();
+      hash ^= ruleOperands_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Operator != 0) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Operator);
+      }
+      ruleOperands_.WriteTo(output, _repeated_ruleOperands_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Operator != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
+      }
+      size += ruleOperands_.CalculateSize(_repeated_ruleOperands_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserListLogicalRuleInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Operator != 0) {
+        Operator = other.Operator;
+      }
+      ruleOperands_.Add(other.ruleOperands_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            operator_ = (global::Google.Ads.GoogleAds.V0.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            ruleOperands_.AddEntriesFrom(input, _repeated_ruleOperands_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Operand of logical user list that consists of a user list.
+  /// </summary>
+  public sealed partial class LogicalUserListOperandInfo : pb::IMessage<LogicalUserListOperandInfo> {
+    private static readonly pb::MessageParser<LogicalUserListOperandInfo> _parser = new pb::MessageParser<LogicalUserListOperandInfo>(() => new LogicalUserListOperandInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LogicalUserListOperandInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogicalUserListOperandInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogicalUserListOperandInfo(LogicalUserListOperandInfo other) : this() {
+      UserList = other.UserList;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LogicalUserListOperandInfo Clone() {
+      return new LogicalUserListOperandInfo(this);
+    }
+
+    /// <summary>Field number for the "user_list" field.</summary>
+    public const int UserListFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_userList_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string userList_;
+    /// <summary>
+    /// Resource name of a user list as an operand.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string UserList {
+      get { return userList_; }
+      set {
+        userList_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LogicalUserListOperandInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LogicalUserListOperandInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (UserList != other.UserList) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (userList_ != null) hash ^= UserList.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (userList_ != null) {
+        _single_userList_codec.WriteTagAndValue(output, UserList);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (userList_ != null) {
+        size += _single_userList_codec.CalculateSizeWithTag(UserList);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LogicalUserListOperandInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.userList_ != null) {
+        if (userList_ == null || other.UserList != "") {
+          UserList = other.UserList;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_userList_codec.Read(input);
+            if (userList_ == null || value != "") {
+              UserList = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// User list targeting as a collection of conversions or remarketing actions.
+  /// </summary>
+  public sealed partial class BasicUserListInfo : pb::IMessage<BasicUserListInfo> {
+    private static readonly pb::MessageParser<BasicUserListInfo> _parser = new pb::MessageParser<BasicUserListInfo>(() => new BasicUserListInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<BasicUserListInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[15]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BasicUserListInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BasicUserListInfo(BasicUserListInfo other) : this() {
+      actions_ = other.actions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BasicUserListInfo Clone() {
+      return new BasicUserListInfo(this);
+    }
+
+    /// <summary>Field number for the "actions" field.</summary>
+    public const int ActionsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Common.UserListActionInfo> _repeated_actions_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V0.Common.UserListActionInfo.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListActionInfo> actions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListActionInfo>();
+    /// <summary>
+    /// Actions associated with this user list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.UserListActionInfo> Actions {
+      get { return actions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as BasicUserListInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(BasicUserListInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!actions_.Equals(other.actions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= actions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      actions_.WriteTo(output, _repeated_actions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += actions_.CalculateSize(_repeated_actions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(BasicUserListInfo other) {
+      if (other == null) {
+        return;
+      }
+      actions_.Add(other.actions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            actions_.AddEntriesFrom(input, _repeated_actions_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Represents an action type used for building remarketing user lists.
+  /// </summary>
+  public sealed partial class UserListActionInfo : pb::IMessage<UserListActionInfo> {
+    private static readonly pb::MessageParser<UserListActionInfo> _parser = new pb::MessageParser<UserListActionInfo>(() => new UserListActionInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserListActionInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V0.Common.UserListsReflection.Descriptor.MessageTypes[16]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListActionInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListActionInfo(UserListActionInfo other) : this() {
+      switch (other.UserListActionCase) {
+        case UserListActionOneofCase.ConversionAction:
+          ConversionAction = other.ConversionAction;
+          break;
+        case UserListActionOneofCase.RemarketingAction:
+          RemarketingAction = other.RemarketingAction;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListActionInfo Clone() {
+      return new UserListActionInfo(this);
+    }
+
+    /// <summary>Field number for the "conversion_action" field.</summary>
+    public const int ConversionActionFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _oneof_conversionAction_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    /// <summary>
+    /// A conversion action that's not generated from remarketing.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ConversionAction {
+      get { return userListActionCase_ == UserListActionOneofCase.ConversionAction ? (string) userListAction_ : (string) null; }
+      set {
+        userListAction_ = value;
+        userListActionCase_ = value == null ? UserListActionOneofCase.None : UserListActionOneofCase.ConversionAction;
+      }
+    }
+
+    /// <summary>Field number for the "remarketing_action" field.</summary>
+    public const int RemarketingActionFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _oneof_remarketingAction_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    /// <summary>
+    /// A remarketing action.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RemarketingAction {
+      get { return userListActionCase_ == UserListActionOneofCase.RemarketingAction ? (string) userListAction_ : (string) null; }
+      set {
+        userListAction_ = value;
+        userListActionCase_ = value == null ? UserListActionOneofCase.None : UserListActionOneofCase.RemarketingAction;
+      }
+    }
+
+    private object userListAction_;
+    /// <summary>Enum of possible cases for the "user_list_action" oneof.</summary>
+    public enum UserListActionOneofCase {
+      None = 0,
+      ConversionAction = 1,
+      RemarketingAction = 2,
+    }
+    private UserListActionOneofCase userListActionCase_ = UserListActionOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserListActionOneofCase UserListActionCase {
+      get { return userListActionCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearUserListAction() {
+      userListActionCase_ = UserListActionOneofCase.None;
+      userListAction_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserListActionInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserListActionInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ConversionAction != other.ConversionAction) return false;
+      if (RemarketingAction != other.RemarketingAction) return false;
+      if (UserListActionCase != other.UserListActionCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (userListActionCase_ == UserListActionOneofCase.ConversionAction) hash ^= ConversionAction.GetHashCode();
+      if (userListActionCase_ == UserListActionOneofCase.RemarketingAction) hash ^= RemarketingAction.GetHashCode();
+      hash ^= (int) userListActionCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (userListActionCase_ == UserListActionOneofCase.ConversionAction) {
+        _oneof_conversionAction_codec.WriteTagAndValue(output, (string) userListAction_);
+      }
+      if (userListActionCase_ == UserListActionOneofCase.RemarketingAction) {
+        _oneof_remarketingAction_codec.WriteTagAndValue(output, (string) userListAction_);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (userListActionCase_ == UserListActionOneofCase.ConversionAction) {
+        size += _oneof_conversionAction_codec.CalculateSizeWithTag(ConversionAction);
+      }
+      if (userListActionCase_ == UserListActionOneofCase.RemarketingAction) {
+        size += _oneof_remarketingAction_codec.CalculateSizeWithTag(RemarketingAction);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserListActionInfo other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.UserListActionCase) {
+        case UserListActionOneofCase.ConversionAction:
+          ConversionAction = other.ConversionAction;
+          break;
+        case UserListActionOneofCase.RemarketingAction:
+          RemarketingAction = other.RemarketingAction;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ConversionAction = _oneof_conversionAction_codec.Read(input);
+            break;
+          }
+          case 18: {
+            RemarketingAction = _oneof_remarketingAction_codec.Read(input);
             break;
           }
         }

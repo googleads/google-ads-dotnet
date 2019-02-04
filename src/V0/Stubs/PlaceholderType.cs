@@ -34,12 +34,13 @@ namespace Google.Ads.GoogleAds.V0.Enums {
             "U1RPTUlaRVIQDBIVChFEWU5BTUlDX0VEVUNBVElPThANEhIKDkRZTkFNSUNf",
             "RkxJR0hUEA4SEgoORFlOQU1JQ19DVVNUT00QDxIRCg1EWU5BTUlDX0hPVEVM",
             "EBASFwoTRFlOQU1JQ19SRUFMX0VTVEFURRAREhIKDkRZTkFNSUNfVFJBVkVM",
-            "EBISEQoNRFlOQU1JQ19MT0NBTBATEg8KC0RZTkFNSUNfSk9CEBRCxQEKIWNv",
+            "EBISEQoNRFlOQU1JQ19MT0NBTBATEg8KC0RZTkFNSUNfSk9CEBRC6QEKIWNv",
             "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IUUGxhY2Vob2xkZXJU",
             "eXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
             "YXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29v",
             "Z2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2ds",
-            "ZUFkc1xWMFxFbnVtc2IGcHJvdG8z"));
+            "ZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpF",
+            "bnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -169,79 +170,99 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Sitelink.
+        /// Lets you show links in your ad to pages from your website, including the
+        /// main landing page.
         /// </summary>
         [pbr::OriginalName("SITELINK")] Sitelink = 2,
         /// <summary>
-        /// Call.
+        /// Lets you attach a phone number to an ad, allowing customers to call
+        /// directly from the ad.
         /// </summary>
         [pbr::OriginalName("CALL")] Call = 3,
         /// <summary>
-        /// App.
+        /// Lets you provide users with a link that points to a mobile app in
+        /// addition to a website.
         /// </summary>
         [pbr::OriginalName("APP")] App = 4,
         /// <summary>
-        /// Location.
+        /// Lets you show locations of businesses from your Google My Business
+        /// account in your ad. This helps people find your locations by showing your
+        /// ads with your address, a map to your location, or the distance to your
+        /// business. This extension type is useful to draw customers to your
+        /// brick-and-mortar location.
         /// </summary>
         [pbr::OriginalName("LOCATION")] Location = 5,
         /// <summary>
-        /// Affiliate location.
+        /// If you sell your product through retail chains, affiliate location
+        /// extensions let you show nearby stores that carry your products.
         /// </summary>
         [pbr::OriginalName("AFFILIATE_LOCATION")] AffiliateLocation = 6,
         /// <summary>
-        /// Callout.
+        /// Lets you include additional text with your search ads that provide
+        /// detailed information about your business, including products and services
+        /// you offer. Callouts appear in ads at the top and bottom of Google search
+        /// results.
         /// </summary>
         [pbr::OriginalName("CALLOUT")] Callout = 7,
         /// <summary>
-        /// Structured snippet.
+        /// Lets you add more info to your ad, specific to some predefined categories
+        /// such as types, brands, styles, etc. A minimum of 3 text (SNIPPETS) values
+        /// are required.
         /// </summary>
         [pbr::OriginalName("STRUCTURED_SNIPPET")] StructuredSnippet = 8,
         /// <summary>
-        /// Message.
+        /// Allows users to see your ad, click an icon, and contact you directly by
+        /// text message. With one tap on your ad, people can contact you to book an
+        /// appointment, get a quote, ask for information, or request a service.
         /// </summary>
         [pbr::OriginalName("MESSAGE")] Message = 9,
         /// <summary>
-        /// Price.
+        /// Lets you display prices for a list of items along with your ads. A price
+        /// feed is composed of three to eight price table rows.
         /// </summary>
         [pbr::OriginalName("PRICE")] Price = 10,
         /// <summary>
-        /// Promotion.
+        /// Allows you to highlight sales and other promotions that let users see how
+        /// they can save by buying now.
         /// </summary>
         [pbr::OriginalName("PROMOTION")] Promotion = 11,
         /// <summary>
-        /// Ad customizer.
+        /// Lets you dynamically inject custom data into the title and description
+        /// of your ads.
         /// </summary>
         [pbr::OriginalName("AD_CUSTOMIZER")] AdCustomizer = 12,
         /// <summary>
-        /// Dynamic education.
+        /// Indicates that this feed is for education dynamic remarketing.
         /// </summary>
         [pbr::OriginalName("DYNAMIC_EDUCATION")] DynamicEducation = 13,
         /// <summary>
-        /// Dynamic flights.
+        /// Indicates that this feed is for flight dynamic remarketing.
         /// </summary>
         [pbr::OriginalName("DYNAMIC_FLIGHT")] DynamicFlight = 14,
         /// <summary>
-        /// Dynamic custom.
+        /// Indicates that this feed is for a custom dynamic remarketing type. Use
+        /// this only if the other business types don't apply to your products or
+        /// services.
         /// </summary>
         [pbr::OriginalName("DYNAMIC_CUSTOM")] DynamicCustom = 15,
         /// <summary>
-        /// Dynamic hotels.
+        /// Indicates that this feed is for hotels and rentals dynamic remarketing.
         /// </summary>
         [pbr::OriginalName("DYNAMIC_HOTEL")] DynamicHotel = 16,
         /// <summary>
-        /// Dynamic real estate.
+        /// Indicates that this feed is for real estate dynamic remarketing.
         /// </summary>
         [pbr::OriginalName("DYNAMIC_REAL_ESTATE")] DynamicRealEstate = 17,
         /// <summary>
-        /// Dynamic travel.
+        /// Indicates that this feed is for travel dynamic remarketing.
         /// </summary>
         [pbr::OriginalName("DYNAMIC_TRAVEL")] DynamicTravel = 18,
         /// <summary>
-        /// Dynamic local.
+        /// Indicates that this feed is for local deals dynamic remarketing.
         /// </summary>
         [pbr::OriginalName("DYNAMIC_LOCAL")] DynamicLocal = 19,
         /// <summary>
-        /// Dynamic jobs.
+        /// Indicates that this feed is for job dynamic remarketing.
         /// </summary>
         [pbr::OriginalName("DYNAMIC_JOB")] DynamicJob = 20,
       }

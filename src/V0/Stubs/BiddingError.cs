@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYmlkZGluZ19lcnJv",
-            "ci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzIrkHChBC",
-            "aWRkaW5nRXJyb3JFbnVtIqQHCgxCaWRkaW5nRXJyb3ISDwoLVU5TUEVDSUZJ",
+            "ci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzIt8HChBC",
+            "aWRkaW5nRXJyb3JFbnVtIsoHCgxCaWRkaW5nRXJyb3ISDwoLVU5TUEVDSUZJ",
             "RUQQABILCgdVTktOT1dOEAESKwonQklERElOR19TVFJBVEVHWV9UUkFOU0lU",
             "SU9OX05PVF9BTExPV0VEEAISLgoqQ0FOTk9UX0FUVEFDSF9CSURESU5HX1NU",
             "UkFURUdZX1RPX0NBTVBBSUdOEAcSKwonSU5WQUxJRF9BTk9OWU1PVVNfQklE",
@@ -47,11 +47,13 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "T1RfU1VQUE9SVF9QUk9EVUNUX1RZUEVfQURHUk9VUF9DUklURVJJT04QHRIR",
             "Cg1CSURfVE9PX1NNQUxMEB4SDwoLQklEX1RPT19CSUcQHxIiCh5CSURfVE9P",
             "X01BTllfRlJBQ1RJT05BTF9ESUdJVFMQIBIXChNJTlZBTElEX0RPTUFJTl9O",
-            "QU1FECFCxwEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNC",
-            "EUJpZGRpbmdFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3Jz",
-            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3JzYgZwcm90bzM="));
+            "QU1FECESJAogTk9UX0NPTVBBVElCTEVfV0lUSF9QQVlNRU5UX01PREUQIkLs",
+            "AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IRQmlkZGlu",
+            "Z0Vycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
+            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGq",
+            "Ah5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWMFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMDo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -265,6 +267,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Invalid domain name specified.
         /// </summary>
         [pbr::OriginalName("INVALID_DOMAIN_NAME")] InvalidDomainName = 33,
+        /// <summary>
+        /// The field is not compatible with payment mode.
+        /// </summary>
+        [pbr::OriginalName("NOT_COMPATIBLE_WITH_PAYMENT_MODE")] NotCompatibleWithPaymentMode = 34,
       }
 
     }

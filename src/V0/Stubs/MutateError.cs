@@ -25,16 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvbXV0YXRlX2Vycm9y",
-            "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMisQEKD011",
-            "dGF0ZUVycm9yRW51bSKdAQoLTXV0YXRlRXJyb3ISDwoLVU5TUEVDSUZJRUQQ",
+            "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMi0QEKD011",
+            "dGF0ZUVycm9yRW51bSK9AQoLTXV0YXRlRXJyb3ISDwoLVU5TUEVDSUZJRUQQ",
             "ABILCgdVTktOT1dOEAESFgoSUkVTT1VSQ0VfTk9UX0ZPVU5EEAMSIQodSURf",
             "RVhJU1RTX0lOX01VTFRJUExFX01VVEFURVMQBxIdChlJTkNPTlNJU1RFTlRf",
-            "RklFTERfVkFMVUVTEAgSFgoSTVVUQVRFX05PVF9BTExPV0VEEAlCxgEKImNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCEE11dGF0ZUVycm9y",
-            "UHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
-            "cy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29n",
-            "bGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2ds",
-            "ZUFkc1xWMFxFcnJvcnNiBnByb3RvMw=="));
+            "RklFTERfVkFMVUVTEAgSFgoSTVVUQVRFX05PVF9BTExPV0VEEAkSHgoaUkVT",
+            "T1VSQ0VfTk9UX0lOX0dPT0dMRV9BRFMQCkLrAQoiY29tLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLmVycm9yc0IQTXV0YXRlRXJyb3JQcm90b1ABWkRnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xl",
+            "QWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9y",
+            "c+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJvcnNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -180,6 +182,10 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Mutates are not allowed for the requested resource.
         /// </summary>
         [pbr::OriginalName("MUTATE_NOT_ALLOWED")] MutateNotAllowed = 9,
+        /// <summary>
+        /// The resource isn't in Google Ads. It belongs to another ads system.
+        /// </summary>
+        [pbr::OriginalName("RESOURCE_NOT_IN_GOOGLE_ADS")] ResourceNotInGoogleAds = 10,
       }
 
     }

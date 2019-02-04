@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -51,6 +51,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             GetCustomerClientLinkSettings = existing.GetCustomerClientLinkSettings;
+            MutateCustomerClientLinkSettings = existing.MutateCustomerClientLinkSettings;
             OnCopy(existing);
         }
 
@@ -148,6 +149,35 @@ namespace Google.Ads.GoogleAds.V0.Services
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
                 totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
                 retryFilter: IdempotentRetryFilter
+            )));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>CustomerClientLinkServiceClient.MutateCustomerClientLink</c> and <c>CustomerClientLinkServiceClient.MutateCustomerClientLinkAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// The default <c>CustomerClientLinkServiceClient.MutateCustomerClientLink</c> and
+        /// <c>CustomerClientLinkServiceClient.MutateCustomerClientLinkAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Timeout multiplier: 1.0</description></item>
+        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// </list>
+        /// Retry will be attempted on the following response status codes:
+        /// <list>
+        /// <item><description>No status codes</description></item>
+        /// </list>
+        /// Default RPC expiration is 600000 milliseconds.
+        /// </remarks>
+        public gaxgrpc::CallSettings MutateCustomerClientLinkSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+            gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
+                retryBackoff: GetDefaultRetryBackoff(),
+                timeoutBackoff: GetDefaultTimeoutBackoff(),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                retryFilter: NonIdempotentRetryFilter
             )));
 
         /// <summary>
@@ -425,6 +455,137 @@ namespace Google.Ads.GoogleAds.V0.Services
             throw new sys::NotImplementedException();
         }
 
+        /// <summary>
+        /// Creates or updates a customer client link. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose customer link are being modified.
+        /// </param>
+        /// <param name="operation">
+        /// The operation to perform on the individual CustomerClientLink.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerClientLinkResponse> MutateCustomerClientLinkAsync(
+            string customerId,
+            CustomerClientLinkOperation operation,
+            gaxgrpc::CallSettings callSettings = null) => MutateCustomerClientLinkAsync(
+                new MutateCustomerClientLinkRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates or updates a customer client link. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose customer link are being modified.
+        /// </param>
+        /// <param name="operation">
+        /// The operation to perform on the individual CustomerClientLink.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerClientLinkResponse> MutateCustomerClientLinkAsync(
+            string customerId,
+            CustomerClientLinkOperation operation,
+            st::CancellationToken cancellationToken) => MutateCustomerClientLinkAsync(
+                customerId,
+                operation,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates or updates a customer client link. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose customer link are being modified.
+        /// </param>
+        /// <param name="operation">
+        /// The operation to perform on the individual CustomerClientLink.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateCustomerClientLinkResponse MutateCustomerClientLink(
+            string customerId,
+            CustomerClientLinkOperation operation,
+            gaxgrpc::CallSettings callSettings = null) => MutateCustomerClientLink(
+                new MutateCustomerClientLinkRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates or updates a customer client link. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerClientLinkResponse> MutateCustomerClientLinkAsync(
+            MutateCustomerClientLinkRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
+        /// <summary>
+        /// Creates or updates a customer client link. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerClientLinkResponse> MutateCustomerClientLinkAsync(
+            MutateCustomerClientLinkRequest request,
+            st::CancellationToken cancellationToken) => MutateCustomerClientLinkAsync(
+                request,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates or updates a customer client link. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateCustomerClientLinkResponse MutateCustomerClientLink(
+            MutateCustomerClientLinkRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
     }
 
     /// <summary>
@@ -433,6 +594,7 @@ namespace Google.Ads.GoogleAds.V0.Services
     public sealed partial class CustomerClientLinkServiceClientImpl : CustomerClientLinkServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCustomerClientLinkRequest, gagvr::CustomerClientLink> _callGetCustomerClientLink;
+        private readonly gaxgrpc::ApiCall<MutateCustomerClientLinkRequest, MutateCustomerClientLinkResponse> _callMutateCustomerClientLink;
 
         /// <summary>
         /// Constructs a client wrapper for the CustomerClientLinkService service, with the specified gRPC client and settings.
@@ -446,8 +608,12 @@ namespace Google.Ads.GoogleAds.V0.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCustomerClientLink = clientHelper.BuildApiCall<GetCustomerClientLinkRequest, gagvr::CustomerClientLink>(
                 GrpcClient.GetCustomerClientLinkAsync, GrpcClient.GetCustomerClientLink, effectiveSettings.GetCustomerClientLinkSettings);
+            _callMutateCustomerClientLink = clientHelper.BuildApiCall<MutateCustomerClientLinkRequest, MutateCustomerClientLinkResponse>(
+                GrpcClient.MutateCustomerClientLinkAsync, GrpcClient.MutateCustomerClientLink, effectiveSettings.MutateCustomerClientLinkSettings);
             Modify_ApiCall(ref _callGetCustomerClientLink);
             Modify_GetCustomerClientLinkApiCall(ref _callGetCustomerClientLink);
+            Modify_ApiCall(ref _callMutateCustomerClientLink);
+            Modify_MutateCustomerClientLinkApiCall(ref _callMutateCustomerClientLink);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -462,6 +628,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
         partial void Modify_GetCustomerClientLinkApiCall(ref gaxgrpc::ApiCall<GetCustomerClientLinkRequest, gagvr::CustomerClientLink> call);
+        partial void Modify_MutateCustomerClientLinkApiCall(ref gaxgrpc::ApiCall<MutateCustomerClientLinkRequest, MutateCustomerClientLinkResponse> call);
         partial void OnConstruction(CustomerClientLinkService.CustomerClientLinkServiceClient grpcClient, CustomerClientLinkServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -473,6 +640,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
         partial void Modify_GetCustomerClientLinkRequest(ref GetCustomerClientLinkRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_MutateCustomerClientLinkRequest(ref MutateCustomerClientLinkRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the requested CustomerClientLink in full detail.
@@ -512,6 +680,46 @@ namespace Google.Ads.GoogleAds.V0.Services
         {
             Modify_GetCustomerClientLinkRequest(ref request, ref callSettings);
             return _callGetCustomerClientLink.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Creates or updates a customer client link. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public override stt::Task<MutateCustomerClientLinkResponse> MutateCustomerClientLinkAsync(
+            MutateCustomerClientLinkRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_MutateCustomerClientLinkRequest(ref request, ref callSettings);
+            return _callMutateCustomerClientLink.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Creates or updates a customer client link. Operation statuses are returned.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public override MutateCustomerClientLinkResponse MutateCustomerClientLink(
+            MutateCustomerClientLinkRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_MutateCustomerClientLinkRequest(ref request, ref callSettings);
+            return _callMutateCustomerClientLink.Sync(request, callSettings);
         }
 
     }

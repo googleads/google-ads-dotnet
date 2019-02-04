@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcXVlcnlfZXJyb3Iu",
-            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyLkDAoOUXVl",
-            "cnlFcnJvckVudW0i0QwKClF1ZXJ5RXJyb3ISDwoLVU5TUEVDSUZJRUQQABIL",
+            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyKHDQoOUXVl",
+            "cnlFcnJvckVudW0i9AwKClF1ZXJ5RXJyb3ISDwoLVU5TUEVDSUZJRUQQABIL",
             "CgdVTktOT1dOEAESDwoLUVVFUllfRVJST1IQMhIVChFCQURfRU5VTV9DT05T",
             "VEFOVBASEhcKE0JBRF9FU0NBUEVfU0VRVUVOQ0UQBxISCg5CQURfRklFTERf",
             "TkFNRRAMEhMKD0JBRF9MSU1JVF9WQUxVRRAPEg4KCkJBRF9OVU1CRVIQBRIQ",
@@ -62,11 +62,13 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "SU5HX05PVF9URVJNSU5BVEVEEAYSFQoRVE9PX01BTllfU0VHTUVOVFMQIhIb",
             "ChdVTkVYUEVDVEVEX0VORF9PRl9RVUVSWRAJEhoKFlVORVhQRUNURURfRlJP",
             "TV9DTEFVU0UQLxIWChJVTlJFQ09HTklaRURfRklFTEQQIBIUChBVTkVYUEVD",
-            "VEVEX0lOUFVUEAtCxQEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "cnJvcnNCD1F1ZXJ5RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vy",
-            "cm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oC",
-            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJvdG8z"));
+            "VEVEX0lOUFVUEAsSIQodUkVRVUVTVEVEX01FVFJJQ1NfRk9SX01BTkFHRVIQ",
+            "O0LqAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IPUXVl",
+            "cnlFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
+            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3JzogIDR0FB",
+            "qgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjBcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
+            "czo6VjA6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -403,6 +405,12 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// Query has an unexpected extra part.
         /// </summary>
         [pbr::OriginalName("UNEXPECTED_INPUT")] UnexpectedInput = 11,
+        /// <summary>
+        /// Metrics cannot be requested for a manager account. To retrieve metrics,
+        /// issue separate requests against each client account under the manager
+        /// account.
+        /// </summary>
+        [pbr::OriginalName("REQUESTED_METRICS_FOR_MANAGER")] RequestedMetricsForManager = 59,
       }
 
     }

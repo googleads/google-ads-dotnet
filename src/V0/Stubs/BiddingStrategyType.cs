@@ -26,18 +26,20 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9iaWRkaW5nX3N0cmF0",
             "ZWd5X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
-            "Ir8CChdCaWRkaW5nU3RyYXRlZ3lUeXBlRW51bSKjAgoTQmlkZGluZ1N0cmF0",
+            "Is8CChdCaWRkaW5nU3RyYXRlZ3lUeXBlRW51bSKzAgoTQmlkZGluZ1N0cmF0",
             "ZWd5VHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIQCgxFTkhB",
             "TkNFRF9DUEMQAhIOCgpNQU5VQUxfQ1BDEAMSDgoKTUFOVUFMX0NQTRAEEg4K",
             "Ck1BTlVBTF9DUFYQDRIYChRNQVhJTUlaRV9DT05WRVJTSU9OUxAKEh0KGU1B",
             "WElNSVpFX0NPTlZFUlNJT05fVkFMVUUQCxIVChFQQUdFX09ORV9QUk9NT1RF",
-            "RBAFEg8KC1BFUkNFTlRfQ1BDEAwSDgoKVEFSR0VUX0NQQRAGEhgKFFRBUkdF",
-            "VF9PVVRSQU5LX1NIQVJFEAcSDwoLVEFSR0VUX1JPQVMQCBIQCgxUQVJHRVRf",
-            "U1BFTkQQCULJAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1z",
-            "QhhCaWRkaW5nU3RyYXRlZ3lUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5v",
-            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1z",
-            "O2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPK",
-            "Ah1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc2IGcHJvdG8z"));
+            "RBAFEg8KC1BFUkNFTlRfQ1BDEAwSDgoKVEFSR0VUX0NQQRAGEg4KClRBUkdF",
+            "VF9DUE0QDhIYChRUQVJHRVRfT1VUUkFOS19TSEFSRRAHEg8KC1RBUkdFVF9S",
+            "T0FTEAgSEAoMVEFSR0VUX1NQRU5EEAlC7QEKIWNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5lbnVtc0IYQmlkZGluZ1N0cmF0ZWd5VHlwZVByb3RvUAFa",
+            "Qmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
+            "b2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51",
+            "bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -211,6 +213,12 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// at the target cost-per-acquisition (CPA) you set.
         /// </summary>
         [pbr::OriginalName("TARGET_CPA")] TargetCpa = 6,
+        /// <summary>
+        /// Target CPM is an automated bid strategy that sets bids to help get
+        /// as many impressions as possible at the target cost per one thousand
+        /// impressions (CPM) you set.
+        /// </summary>
+        [pbr::OriginalName("TARGET_CPM")] TargetCpm = 14,
         /// <summary>
         /// Target Outrank Share is an automated bidding strategy that sets bids
         /// based on the target fraction of auctions where the advertiser

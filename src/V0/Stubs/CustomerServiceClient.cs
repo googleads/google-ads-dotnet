@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -525,6 +525,10 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="operation">
         /// The operation to perform on the customer
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -534,11 +538,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
             string customerId,
             CustomerOperation operation,
+            bool validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateCustomerAsync(
                 new MutateCustomerRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
+                    ValidateOnly = validateOnly,
                 },
                 callSettings);
 
@@ -551,6 +557,10 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="operation">
         /// The operation to perform on the customer
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
         /// </param>
@@ -560,9 +570,11 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
             string customerId,
             CustomerOperation operation,
+            bool validateOnly,
             st::CancellationToken cancellationToken) => MutateCustomerAsync(
                 customerId,
                 operation,
+                validateOnly,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
@@ -574,6 +586,10 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="operation">
         /// The operation to perform on the customer
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -583,11 +599,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateCustomerResponse MutateCustomer(
             string customerId,
             CustomerOperation operation,
+            bool validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateCustomer(
                 new MutateCustomerRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
+                    ValidateOnly = validateOnly,
                 },
                 callSettings);
 
