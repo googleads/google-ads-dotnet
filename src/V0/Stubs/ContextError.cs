@@ -29,12 +29,12 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "b250ZXh0RXJyb3JFbnVtIocBCgxDb250ZXh0RXJyb3ISDwoLVU5TUEVDSUZJ",
             "RUQQABILCgdVTktOT1dOEAESJwojT1BFUkFUSU9OX05PVF9QRVJNSVRURURf",
             "Rk9SX0NPTlRFWFQQAhIwCixPUEVSQVRJT05fTk9UX1BFUk1JVFRFRF9GT1Jf",
-            "UkVNT1ZFRF9SRVNPVVJDRRADQscBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "UkVNT1ZFRF9SRVNPVVJDRRADQuwBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
             "ZHMudjAuZXJyb3JzQhFDb250ZXh0RXJyb3JQcm90b1ABWkRnb29nbGUuZ29s",
             "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
             "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYw",
-            "LkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc2IGcHJv",
-            "dG8z"));
+            "LkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc+oCIkdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

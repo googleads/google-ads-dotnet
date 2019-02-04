@@ -28,28 +28,43 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "YnVkZ2V0LnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJj",
             "ZXMaOmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2J1ZGdldF9kZWxp",
             "dmVyeV9tZXRob2QucHJvdG8aMWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
-            "dW1zL2J1ZGdldF9zdGF0dXMucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFw",
-            "cGVycy5wcm90byKMBAoOQ2FtcGFpZ25CdWRnZXQSFQoNcmVzb3VyY2VfbmFt",
-            "ZRgBIAEoCRInCgJpZBgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
-            "bHVlEioKBG5hbWUYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
-            "dWUSMgoNYW1vdW50X21pY3JvcxgFIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
-            "bnQ2NFZhbHVlEjgKE3RvdGFsX2Ftb3VudF9taWNyb3MYCiABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRJMCgZzdGF0dXMYBiABKA4yPC5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5CdWRnZXRTdGF0dXNFbnVtLkJ1",
-            "ZGdldFN0YXR1cxJlCg9kZWxpdmVyeV9tZXRob2QYByABKA4yTC5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5lbnVtcy5CdWRnZXREZWxpdmVyeU1ldGhvZEVu",
-            "dW0uQnVkZ2V0RGVsaXZlcnlNZXRob2QSNQoRZXhwbGljaXRseV9zaGFyZWQY",
-            "CCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjQKD3JlZmVyZW5j",
-            "ZV9jb3VudBgJIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQtgB",
-            "CiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhNDYW1w",
-            "YWlnbkJ1ZGdldFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3Vy",
-            "Y2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2Vz",
-            "ygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZwcm90bzM="));
+            "dW1zL2J1ZGdldF9wZXJpb2QucHJvdG8aMWdvb2dsZS9hZHMvZ29vZ2xlYWRz",
+            "L3YwL2VudW1zL2J1ZGdldF9zdGF0dXMucHJvdG8aHmdvb2dsZS9wcm90b2J1",
+            "Zi93cmFwcGVycy5wcm90byLHCAoOQ2FtcGFpZ25CdWRnZXQSFQoNcmVzb3Vy",
+            "Y2VfbmFtZRgBIAEoCRInCgJpZBgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
+            "bnQ2NFZhbHVlEioKBG5hbWUYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWUSMgoNYW1vdW50X21pY3JvcxgFIAEoCzIbLmdvb2dsZS5wcm90",
+            "b2J1Zi5JbnQ2NFZhbHVlEjgKE3RvdGFsX2Ftb3VudF9taWNyb3MYCiABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRJMCgZzdGF0dXMYBiABKA4y",
+            "PC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5CdWRnZXRTdGF0dXNF",
+            "bnVtLkJ1ZGdldFN0YXR1cxJlCg9kZWxpdmVyeV9tZXRob2QYByABKA4yTC5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5CdWRnZXREZWxpdmVyeU1l",
+            "dGhvZEVudW0uQnVkZ2V0RGVsaXZlcnlNZXRob2QSNQoRZXhwbGljaXRseV9z",
+            "aGFyZWQYCCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjQKD3Jl",
+            "ZmVyZW5jZV9jb3VudBgJIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
+            "bHVlEjoKFmhhc19yZWNvbW1lbmRlZF9idWRnZXQYCyABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuQm9vbFZhbHVlEkUKIHJlY29tbWVuZGVkX2J1ZGdldF9hbW91",
+            "bnRfbWljcm9zGAwgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUS",
+            "TAoGcGVyaW9kGA0gASgOMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51",
+            "bXMuQnVkZ2V0UGVyaW9kRW51bS5CdWRnZXRQZXJpb2QSVgoxcmVjb21tZW5k",
+            "ZWRfYnVkZ2V0X2VzdGltYXRlZF9jaGFuZ2Vfd2Vla2x5X2NsaWNrcxgOIAEo",
+            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlElsKNnJlY29tbWVuZGVk",
+            "X2J1ZGdldF9lc3RpbWF0ZWRfY2hhbmdlX3dlZWtseV9jb3N0X21pY3JvcxgP",
+            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlElwKN3JlY29tbWVu",
+            "ZGVkX2J1ZGdldF9lc3RpbWF0ZWRfY2hhbmdlX3dlZWtseV9pbnRlcmFjdGlv",
+            "bnMYECABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRJVCjByZWNv",
+            "bW1lbmRlZF9idWRnZXRfZXN0aW1hdGVkX2NoYW5nZV93ZWVrbHlfdmlld3MY",
+            "ESABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUKAAgolY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0ITQ2FtcGFpZ25CdWRn",
+            "ZXRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
+            "cGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dB",
+            "QaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2ds",
+            "ZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpH",
+            "b29nbGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.BudgetDeliveryMethodReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BudgetStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.BudgetDeliveryMethodReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BudgetPeriodReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BudgetStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CampaignBudget), global::Google.Ads.GoogleAds.V0.Resources.CampaignBudget.Parser, new[]{ "ResourceName", "Id", "Name", "AmountMicros", "TotalAmountMicros", "Status", "DeliveryMethod", "ExplicitlyShared", "ReferenceCount" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CampaignBudget), global::Google.Ads.GoogleAds.V0.Resources.CampaignBudget.Parser, new[]{ "ResourceName", "Id", "Name", "AmountMicros", "TotalAmountMicros", "Status", "DeliveryMethod", "ExplicitlyShared", "ReferenceCount", "HasRecommendedBudget", "RecommendedBudgetAmountMicros", "Period", "RecommendedBudgetEstimatedChangeWeeklyClicks", "RecommendedBudgetEstimatedChangeWeeklyCostMicros", "RecommendedBudgetEstimatedChangeWeeklyInteractions", "RecommendedBudgetEstimatedChangeWeeklyViews" }, null, null, null)
           }));
     }
     #endregion
@@ -93,6 +108,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       deliveryMethod_ = other.deliveryMethod_;
       ExplicitlyShared = other.ExplicitlyShared;
       ReferenceCount = other.ReferenceCount;
+      HasRecommendedBudget = other.HasRecommendedBudget;
+      RecommendedBudgetAmountMicros = other.RecommendedBudgetAmountMicros;
+      period_ = other.period_;
+      RecommendedBudgetEstimatedChangeWeeklyClicks = other.RecommendedBudgetEstimatedChangeWeeklyClicks;
+      RecommendedBudgetEstimatedChangeWeeklyCostMicros = other.RecommendedBudgetEstimatedChangeWeeklyCostMicros;
+      RecommendedBudgetEstimatedChangeWeeklyInteractions = other.RecommendedBudgetEstimatedChangeWeeklyInteractions;
+      RecommendedBudgetEstimatedChangeWeeklyViews = other.RecommendedBudgetEstimatedChangeWeeklyViews;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -231,8 +253,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private static readonly pb::FieldCodec<bool?> _single_explicitlyShared_codec = pb::FieldCodec.ForStructWrapper<bool>(66);
     private bool? explicitlyShared_;
     /// <summary>
-    /// Whether the budget is explicitly shared. This field is set to false by
-    /// default.
+    /// Specifies whether the budget is explicitly shared. Defaults to true if
+    /// unspecified in a create operation.
     ///
     /// If true, the budget was created with the purpose of sharing
     /// across one or more campaigns.
@@ -273,6 +295,127 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "has_recommended_budget" field.</summary>
+    public const int HasRecommendedBudgetFieldNumber = 11;
+    private static readonly pb::FieldCodec<bool?> _single_hasRecommendedBudget_codec = pb::FieldCodec.ForStructWrapper<bool>(90);
+    private bool? hasRecommendedBudget_;
+    /// <summary>
+    /// Indicates whether there is a recommended budget for this campaign budget.
+    ///
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool? HasRecommendedBudget {
+      get { return hasRecommendedBudget_; }
+      set {
+        hasRecommendedBudget_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recommended_budget_amount_micros" field.</summary>
+    public const int RecommendedBudgetAmountMicrosFieldNumber = 12;
+    private static readonly pb::FieldCodec<long?> _single_recommendedBudgetAmountMicros_codec = pb::FieldCodec.ForStructWrapper<long>(98);
+    private long? recommendedBudgetAmountMicros_;
+    /// <summary>
+    /// The recommended budget amount. If no recommendation is available, this will
+    /// be set to the budget amount.
+    /// Amount is specified in micros, where one million is equivalent to one
+    /// currency unit.
+    ///
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? RecommendedBudgetAmountMicros {
+      get { return recommendedBudgetAmountMicros_; }
+      set {
+        recommendedBudgetAmountMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "period" field.</summary>
+    public const int PeriodFieldNumber = 13;
+    private global::Google.Ads.GoogleAds.V0.Enums.BudgetPeriodEnum.Types.BudgetPeriod period_ = 0;
+    /// <summary>
+    /// Period over which to spend the budget. Defaults to DAILY if not specified.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.BudgetPeriodEnum.Types.BudgetPeriod Period {
+      get { return period_; }
+      set {
+        period_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recommended_budget_estimated_change_weekly_clicks" field.</summary>
+    public const int RecommendedBudgetEstimatedChangeWeeklyClicksFieldNumber = 14;
+    private static readonly pb::FieldCodec<long?> _single_recommendedBudgetEstimatedChangeWeeklyClicks_codec = pb::FieldCodec.ForStructWrapper<long>(114);
+    private long? recommendedBudgetEstimatedChangeWeeklyClicks_;
+    /// <summary>
+    /// The estimated change in weekly clicks if the recommended budget is applied.
+    ///
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? RecommendedBudgetEstimatedChangeWeeklyClicks {
+      get { return recommendedBudgetEstimatedChangeWeeklyClicks_; }
+      set {
+        recommendedBudgetEstimatedChangeWeeklyClicks_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recommended_budget_estimated_change_weekly_cost_micros" field.</summary>
+    public const int RecommendedBudgetEstimatedChangeWeeklyCostMicrosFieldNumber = 15;
+    private static readonly pb::FieldCodec<long?> _single_recommendedBudgetEstimatedChangeWeeklyCostMicros_codec = pb::FieldCodec.ForStructWrapper<long>(122);
+    private long? recommendedBudgetEstimatedChangeWeeklyCostMicros_;
+    /// <summary>
+    /// The estimated change in weekly cost in micros if the recommended budget is
+    /// applied. One million is equivalent to one currency unit.
+    ///
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? RecommendedBudgetEstimatedChangeWeeklyCostMicros {
+      get { return recommendedBudgetEstimatedChangeWeeklyCostMicros_; }
+      set {
+        recommendedBudgetEstimatedChangeWeeklyCostMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recommended_budget_estimated_change_weekly_interactions" field.</summary>
+    public const int RecommendedBudgetEstimatedChangeWeeklyInteractionsFieldNumber = 16;
+    private static readonly pb::FieldCodec<long?> _single_recommendedBudgetEstimatedChangeWeeklyInteractions_codec = pb::FieldCodec.ForStructWrapper<long>(130);
+    private long? recommendedBudgetEstimatedChangeWeeklyInteractions_;
+    /// <summary>
+    /// The estimated change in weekly interactions if the recommended budget is
+    /// applied.
+    ///
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? RecommendedBudgetEstimatedChangeWeeklyInteractions {
+      get { return recommendedBudgetEstimatedChangeWeeklyInteractions_; }
+      set {
+        recommendedBudgetEstimatedChangeWeeklyInteractions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recommended_budget_estimated_change_weekly_views" field.</summary>
+    public const int RecommendedBudgetEstimatedChangeWeeklyViewsFieldNumber = 17;
+    private static readonly pb::FieldCodec<long?> _single_recommendedBudgetEstimatedChangeWeeklyViews_codec = pb::FieldCodec.ForStructWrapper<long>(138);
+    private long? recommendedBudgetEstimatedChangeWeeklyViews_;
+    /// <summary>
+    /// The estimated change in weekly views if the recommended budget is applied.
+    ///
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? RecommendedBudgetEstimatedChangeWeeklyViews {
+      get { return recommendedBudgetEstimatedChangeWeeklyViews_; }
+      set {
+        recommendedBudgetEstimatedChangeWeeklyViews_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CampaignBudget);
@@ -295,6 +438,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (DeliveryMethod != other.DeliveryMethod) return false;
       if (ExplicitlyShared != other.ExplicitlyShared) return false;
       if (ReferenceCount != other.ReferenceCount) return false;
+      if (HasRecommendedBudget != other.HasRecommendedBudget) return false;
+      if (RecommendedBudgetAmountMicros != other.RecommendedBudgetAmountMicros) return false;
+      if (Period != other.Period) return false;
+      if (RecommendedBudgetEstimatedChangeWeeklyClicks != other.RecommendedBudgetEstimatedChangeWeeklyClicks) return false;
+      if (RecommendedBudgetEstimatedChangeWeeklyCostMicros != other.RecommendedBudgetEstimatedChangeWeeklyCostMicros) return false;
+      if (RecommendedBudgetEstimatedChangeWeeklyInteractions != other.RecommendedBudgetEstimatedChangeWeeklyInteractions) return false;
+      if (RecommendedBudgetEstimatedChangeWeeklyViews != other.RecommendedBudgetEstimatedChangeWeeklyViews) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -310,6 +460,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (DeliveryMethod != 0) hash ^= DeliveryMethod.GetHashCode();
       if (explicitlyShared_ != null) hash ^= ExplicitlyShared.GetHashCode();
       if (referenceCount_ != null) hash ^= ReferenceCount.GetHashCode();
+      if (hasRecommendedBudget_ != null) hash ^= HasRecommendedBudget.GetHashCode();
+      if (recommendedBudgetAmountMicros_ != null) hash ^= RecommendedBudgetAmountMicros.GetHashCode();
+      if (Period != 0) hash ^= Period.GetHashCode();
+      if (recommendedBudgetEstimatedChangeWeeklyClicks_ != null) hash ^= RecommendedBudgetEstimatedChangeWeeklyClicks.GetHashCode();
+      if (recommendedBudgetEstimatedChangeWeeklyCostMicros_ != null) hash ^= RecommendedBudgetEstimatedChangeWeeklyCostMicros.GetHashCode();
+      if (recommendedBudgetEstimatedChangeWeeklyInteractions_ != null) hash ^= RecommendedBudgetEstimatedChangeWeeklyInteractions.GetHashCode();
+      if (recommendedBudgetEstimatedChangeWeeklyViews_ != null) hash ^= RecommendedBudgetEstimatedChangeWeeklyViews.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -353,6 +510,28 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (totalAmountMicros_ != null) {
         _single_totalAmountMicros_codec.WriteTagAndValue(output, TotalAmountMicros);
       }
+      if (hasRecommendedBudget_ != null) {
+        _single_hasRecommendedBudget_codec.WriteTagAndValue(output, HasRecommendedBudget);
+      }
+      if (recommendedBudgetAmountMicros_ != null) {
+        _single_recommendedBudgetAmountMicros_codec.WriteTagAndValue(output, RecommendedBudgetAmountMicros);
+      }
+      if (Period != 0) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) Period);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyClicks_ != null) {
+        _single_recommendedBudgetEstimatedChangeWeeklyClicks_codec.WriteTagAndValue(output, RecommendedBudgetEstimatedChangeWeeklyClicks);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyCostMicros_ != null) {
+        _single_recommendedBudgetEstimatedChangeWeeklyCostMicros_codec.WriteTagAndValue(output, RecommendedBudgetEstimatedChangeWeeklyCostMicros);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyInteractions_ != null) {
+        _single_recommendedBudgetEstimatedChangeWeeklyInteractions_codec.WriteTagAndValue(output, RecommendedBudgetEstimatedChangeWeeklyInteractions);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyViews_ != null) {
+        _single_recommendedBudgetEstimatedChangeWeeklyViews_codec.WriteTagAndValue(output, RecommendedBudgetEstimatedChangeWeeklyViews);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -387,6 +566,27 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (referenceCount_ != null) {
         size += _single_referenceCount_codec.CalculateSizeWithTag(ReferenceCount);
+      }
+      if (hasRecommendedBudget_ != null) {
+        size += _single_hasRecommendedBudget_codec.CalculateSizeWithTag(HasRecommendedBudget);
+      }
+      if (recommendedBudgetAmountMicros_ != null) {
+        size += _single_recommendedBudgetAmountMicros_codec.CalculateSizeWithTag(RecommendedBudgetAmountMicros);
+      }
+      if (Period != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Period);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyClicks_ != null) {
+        size += _single_recommendedBudgetEstimatedChangeWeeklyClicks_codec.CalculateSizeWithTag(RecommendedBudgetEstimatedChangeWeeklyClicks);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyCostMicros_ != null) {
+        size += _single_recommendedBudgetEstimatedChangeWeeklyCostMicros_codec.CalculateSizeWithTag(RecommendedBudgetEstimatedChangeWeeklyCostMicros);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyInteractions_ != null) {
+        size += _single_recommendedBudgetEstimatedChangeWeeklyInteractions_codec.CalculateSizeWithTag(RecommendedBudgetEstimatedChangeWeeklyInteractions);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyViews_ != null) {
+        size += _single_recommendedBudgetEstimatedChangeWeeklyViews_codec.CalculateSizeWithTag(RecommendedBudgetEstimatedChangeWeeklyViews);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -436,6 +636,39 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (other.referenceCount_ != null) {
         if (referenceCount_ == null || other.ReferenceCount != 0L) {
           ReferenceCount = other.ReferenceCount;
+        }
+      }
+      if (other.hasRecommendedBudget_ != null) {
+        if (hasRecommendedBudget_ == null || other.HasRecommendedBudget != false) {
+          HasRecommendedBudget = other.HasRecommendedBudget;
+        }
+      }
+      if (other.recommendedBudgetAmountMicros_ != null) {
+        if (recommendedBudgetAmountMicros_ == null || other.RecommendedBudgetAmountMicros != 0L) {
+          RecommendedBudgetAmountMicros = other.RecommendedBudgetAmountMicros;
+        }
+      }
+      if (other.Period != 0) {
+        Period = other.Period;
+      }
+      if (other.recommendedBudgetEstimatedChangeWeeklyClicks_ != null) {
+        if (recommendedBudgetEstimatedChangeWeeklyClicks_ == null || other.RecommendedBudgetEstimatedChangeWeeklyClicks != 0L) {
+          RecommendedBudgetEstimatedChangeWeeklyClicks = other.RecommendedBudgetEstimatedChangeWeeklyClicks;
+        }
+      }
+      if (other.recommendedBudgetEstimatedChangeWeeklyCostMicros_ != null) {
+        if (recommendedBudgetEstimatedChangeWeeklyCostMicros_ == null || other.RecommendedBudgetEstimatedChangeWeeklyCostMicros != 0L) {
+          RecommendedBudgetEstimatedChangeWeeklyCostMicros = other.RecommendedBudgetEstimatedChangeWeeklyCostMicros;
+        }
+      }
+      if (other.recommendedBudgetEstimatedChangeWeeklyInteractions_ != null) {
+        if (recommendedBudgetEstimatedChangeWeeklyInteractions_ == null || other.RecommendedBudgetEstimatedChangeWeeklyInteractions != 0L) {
+          RecommendedBudgetEstimatedChangeWeeklyInteractions = other.RecommendedBudgetEstimatedChangeWeeklyInteractions;
+        }
+      }
+      if (other.recommendedBudgetEstimatedChangeWeeklyViews_ != null) {
+        if (recommendedBudgetEstimatedChangeWeeklyViews_ == null || other.RecommendedBudgetEstimatedChangeWeeklyViews != 0L) {
+          RecommendedBudgetEstimatedChangeWeeklyViews = other.RecommendedBudgetEstimatedChangeWeeklyViews;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -500,6 +733,52 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             long? value = _single_totalAmountMicros_codec.Read(input);
             if (totalAmountMicros_ == null || value != 0L) {
               TotalAmountMicros = value;
+            }
+            break;
+          }
+          case 90: {
+            bool? value = _single_hasRecommendedBudget_codec.Read(input);
+            if (hasRecommendedBudget_ == null || value != false) {
+              HasRecommendedBudget = value;
+            }
+            break;
+          }
+          case 98: {
+            long? value = _single_recommendedBudgetAmountMicros_codec.Read(input);
+            if (recommendedBudgetAmountMicros_ == null || value != 0L) {
+              RecommendedBudgetAmountMicros = value;
+            }
+            break;
+          }
+          case 104: {
+            period_ = (global::Google.Ads.GoogleAds.V0.Enums.BudgetPeriodEnum.Types.BudgetPeriod) input.ReadEnum();
+            break;
+          }
+          case 114: {
+            long? value = _single_recommendedBudgetEstimatedChangeWeeklyClicks_codec.Read(input);
+            if (recommendedBudgetEstimatedChangeWeeklyClicks_ == null || value != 0L) {
+              RecommendedBudgetEstimatedChangeWeeklyClicks = value;
+            }
+            break;
+          }
+          case 122: {
+            long? value = _single_recommendedBudgetEstimatedChangeWeeklyCostMicros_codec.Read(input);
+            if (recommendedBudgetEstimatedChangeWeeklyCostMicros_ == null || value != 0L) {
+              RecommendedBudgetEstimatedChangeWeeklyCostMicros = value;
+            }
+            break;
+          }
+          case 130: {
+            long? value = _single_recommendedBudgetEstimatedChangeWeeklyInteractions_codec.Read(input);
+            if (recommendedBudgetEstimatedChangeWeeklyInteractions_ == null || value != 0L) {
+              RecommendedBudgetEstimatedChangeWeeklyInteractions = value;
+            }
+            break;
+          }
+          case 138: {
+            long? value = _single_recommendedBudgetEstimatedChangeWeeklyViews_codec.Read(input);
+            if (recommendedBudgetEstimatedChangeWeeklyViews_ == null || value != 0L) {
+              RecommendedBudgetEstimatedChangeWeeklyViews = value;
             }
             break;
           }

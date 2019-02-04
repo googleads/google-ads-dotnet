@@ -34,12 +34,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "cmluZ1ZhbHVlEjkKE3BheW1lbnRzX3Byb2ZpbGVfaWQYBSABKAsyHC5nb29n",
             "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSQwodc2Vjb25kYXJ5X3BheW1lbnRz",
             "X3Byb2ZpbGVfaWQYBiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
-            "dWVC2QEKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNC",
+            "dWVCgQIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNC",
             "FFBheW1lbnRzQWNjb3VudFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dl",
             "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7",
             "cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVz",
-            "b3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2VzYgZw",
-            "cm90bzM="));
+            "b3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2Vz6gIl",
+            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -99,8 +99,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the Payments account.
     /// PaymentsAccount resource names have the form:
     ///
-    /// `customers/{customer_id}/paymentsAccounts/
-    ///                               {payments_profile_id}_{payments_account_id}`
+    /// `customers/{customer_id}/paymentsAccounts/{payments_account_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

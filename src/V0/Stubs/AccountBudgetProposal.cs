@@ -70,12 +70,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Z0xpbWl0VHlwZUVudW0uU3BlbmRpbmdMaW1pdFR5cGVIBEIVChNwcm9wb3Nl",
             "ZF9zdGFydF90aW1lQhMKEXByb3Bvc2VkX2VuZF90aW1lQhMKEWFwcHJvdmVk",
             "X2VuZF90aW1lQhkKF3Byb3Bvc2VkX3NwZW5kaW5nX2xpbWl0QhkKF2FwcHJv",
-            "dmVkX3NwZW5kaW5nX2xpbWl0Qt8BCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "dmVkX3NwZW5kaW5nX2xpbWl0QocCCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
             "ZHMudjAucmVzb3VyY2VzQhpBY2NvdW50QnVkZ2V0UHJvcG9zYWxQcm90b1AB",
             "Wkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
             "b29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2ds",
             "ZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
+            "Z2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
+            "OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.AccountBudgetProposalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AccountBudgetProposalTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.SpendingLimitTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TimeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -300,8 +301,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private static readonly pb::FieldCodec<string> _single_approvedStartDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(162);
     private string approvedStartDateTime_;
     /// <summary>
-    /// The approved start date time in date time in yyyy-MM-dd HH:mm:ss format.
-    /// TODO(b/120288064): auto-generate the correct datetime format.
+    /// The approved start date time in yyyy-mm-dd hh:mm:ss format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ApprovedStartDateTime {
@@ -377,8 +377,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     public const int ProposedStartDateTimeFieldNumber = 18;
     private static readonly pb::FieldCodec<string> _oneof_proposedStartDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(146);
     /// <summary>
-    /// The proposed start date time in date time in yyyy-MM-dd HH:mm:ss format.
-    /// TODO(b/120288064): auto-generate the correct datetime format.
+    /// The proposed start date time in yyyy-mm-dd hh:mm:ss format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ProposedStartDateTime {
@@ -407,8 +406,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     public const int ProposedEndDateTimeFieldNumber = 19;
     private static readonly pb::FieldCodec<string> _oneof_proposedEndDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(154);
     /// <summary>
-    /// The proposed end date time in date time in yyyy-MM-dd HH:mm:ss format.
-    /// TODO(b/120288064): auto-generate the correct datetime format.
+    /// The proposed end date time in yyyy-mm-dd hh:mm:ss format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ProposedEndDateTime {
@@ -437,8 +435,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     public const int ApprovedEndDateTimeFieldNumber = 21;
     private static readonly pb::FieldCodec<string> _oneof_approvedEndDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(170);
     /// <summary>
-    /// The approved end date time in date time in yyyy-MM-dd HH:mm:ss format.
-    /// TODO(b/120288064): auto-generate the correct datetime format.
+    /// The approved end date time in yyyy-mm-dd hh:mm:ss format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ApprovedEndDateTime {

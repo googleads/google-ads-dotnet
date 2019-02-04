@@ -34,7 +34,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "b29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jcml0ZXJpb25fdHlwZS5w",
             "cm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvcXVhbGl0eV9z",
             "Y29yZV9idWNrZXQucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5w",
-            "cm90byKxGAoQQWRHcm91cENyaXRlcmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEg",
+            "cm90byK5GwoQQWRHcm91cENyaXRlcmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEg",
             "ASgJEjEKDGNyaXRlcmlvbl9pZBgaIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
             "bnQ2NFZhbHVlEmAKBnN0YXR1cxgDIAEoDjJQLmdvb2dsZS5hZHMuZ29vZ2xl",
             "YWRzLnYwLmVudW1zLkFkR3JvdXBDcml0ZXJpb25TdGF0dXNFbnVtLkFkR3Jv",
@@ -74,46 +74,56 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "c3RvbVBhcmFtZXRlchI+CgdrZXl3b3JkGBsgASgLMisuZ29vZ2xlLmFkcy5n",
             "b29nbGVhZHMudjAuY29tbW9uLktleXdvcmRJbmZvSAASQgoJcGxhY2VtZW50",
             "GBwgASgLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlBsYWNl",
-            "bWVudEluZm9IABJJCg1saXN0aW5nX2dyb3VwGCAgASgLMjAuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjAuY29tbW9uLkxpc3RpbmdHcm91cEluZm9IABJBCglh",
-            "Z2VfcmFuZ2UYJCABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21t",
-            "b24uQWdlUmFuZ2VJbmZvSAASPAoGZ2VuZGVyGCUgASgLMiouZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjAuY29tbW9uLkdlbmRlckluZm9IABJHCgxpbmNvbWVf",
-            "cmFuZ2UYJiABKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24u",
-            "SW5jb21lUmFuZ2VJbmZvSAASTQoPcGFyZW50YWxfc3RhdHVzGCcgASgLMjIu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlBhcmVudGFsU3RhdHVz",
-            "SW5mb0gAEkEKCXVzZXJfbGlzdBgqIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmNvbW1vbi5Vc2VyTGlzdEluZm9IABJJCg15b3V0dWJlX3ZpZGVv",
-            "GCggASgLMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLllvdVR1",
-            "YmVWaWRlb0luZm9IABJNCg95b3V0dWJlX2NoYW5uZWwYKSABKAsyMi5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uWW91VHViZUNoYW5uZWxJbmZv",
-            "SAASOgoFdG9waWMYKyABKAsyKS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5j",
-            "b21tb24uVG9waWNJbmZvSAASSQoNdXNlcl9pbnRlcmVzdBgtIAEoCzIwLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Vc2VySW50ZXJlc3RJbmZv",
-            "SAAa/wIKC1F1YWxpdHlJbmZvEjIKDXF1YWxpdHlfc2NvcmUYASABKAsyGy5n",
-            "b29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRJoChZjcmVhdGl2ZV9xdWFsaXR5",
-            "X3Njb3JlGAIgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMu",
-            "UXVhbGl0eVNjb3JlQnVja2V0RW51bS5RdWFsaXR5U2NvcmVCdWNrZXQSagoY",
-            "cG9zdF9jbGlja19xdWFsaXR5X3Njb3JlGAMgASgOMkguZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjAuZW51bXMuUXVhbGl0eVNjb3JlQnVja2V0RW51bS5RdWFs",
-            "aXR5U2NvcmVCdWNrZXQSZgoUc2VhcmNoX3ByZWRpY3RlZF9jdHIYBCABKA4y",
-            "SC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5RdWFsaXR5U2NvcmVC",
-            "dWNrZXRFbnVtLlF1YWxpdHlTY29yZUJ1Y2tldBrMAQoRUG9zaXRpb25Fc3Rp",
-            "bWF0ZXMSOgoVZmlyc3RfcGFnZV9jcGNfbWljcm9zGAEgASgLMhsuZ29vZ2xl",
-            "LnByb3RvYnVmLkludDY0VmFsdWUSPgoZZmlyc3RfcG9zaXRpb25fY3BjX21p",
-            "Y3JvcxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjsKFnRv",
-            "cF9vZl9wYWdlX2NwY19taWNyb3MYAyABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "SW50NjRWYWx1ZUILCgljcml0ZXJpb25C2gEKJWNvbS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5yZXNvdXJjZXNCFUFkR3JvdXBDcml0ZXJpb25Qcm90b1AB",
-            "Wkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
+            "bWVudEluZm9IABJUChNtb2JpbGVfYXBwX2NhdGVnb3J5GB0gASgLMjUuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLk1vYmlsZUFwcENhdGVnb3J5",
+            "SW5mb0gAEkkKDWxpc3RpbmdfZ3JvdXAYICABKAsyMC5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5jb21tb24uTGlzdGluZ0dyb3VwSW5mb0gAEkEKCWFnZV9y",
+            "YW5nZRgkIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5B",
+            "Z2VSYW5nZUluZm9IABI8CgZnZW5kZXIYJSABKAsyKi5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5jb21tb24uR2VuZGVySW5mb0gAEkcKDGluY29tZV9yYW5n",
+            "ZRgmIAEoCzIvLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5JbmNv",
+            "bWVSYW5nZUluZm9IABJNCg9wYXJlbnRhbF9zdGF0dXMYJyABKAsyMi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uUGFyZW50YWxTdGF0dXNJbmZv",
+            "SAASQQoJdXNlcl9saXN0GCogASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuY29tbW9uLlVzZXJMaXN0SW5mb0gAEkkKDXlvdXR1YmVfdmlkZW8YKCAB",
+            "KAsyMC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uWW91VHViZVZp",
+            "ZGVvSW5mb0gAEk0KD3lvdXR1YmVfY2hhbm5lbBgpIAEoCzIyLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Zb3VUdWJlQ2hhbm5lbEluZm9IABI6",
+            "CgV0b3BpYxgrIAEoCzIpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1v",
+            "bi5Ub3BpY0luZm9IABJJCg11c2VyX2ludGVyZXN0GC0gASgLMjAuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAuY29tbW9uLlVzZXJJbnRlcmVzdEluZm9IABI+",
+            "Cgd3ZWJwYWdlGC4gASgLMisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29t",
+            "bW9uLldlYnBhZ2VJbmZvSAASUAoRYXBwX3BheW1lbnRfbW9kZWwYLyABKAsy",
+            "My5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uQXBwUGF5bWVudE1v",
+            "ZGVsSW5mb0gAGv8CCgtRdWFsaXR5SW5mbxIyCg1xdWFsaXR5X3Njb3JlGAEg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUSaAoWY3JlYXRpdmVf",
+            "cXVhbGl0eV9zY29yZRgCIAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmVudW1zLlF1YWxpdHlTY29yZUJ1Y2tldEVudW0uUXVhbGl0eVNjb3JlQnVj",
+            "a2V0EmoKGHBvc3RfY2xpY2tfcXVhbGl0eV9zY29yZRgDIAEoDjJILmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlF1YWxpdHlTY29yZUJ1Y2tldEVu",
+            "dW0uUXVhbGl0eVNjb3JlQnVja2V0EmYKFHNlYXJjaF9wcmVkaWN0ZWRfY3Ry",
+            "GAQgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuUXVhbGl0",
+            "eVNjb3JlQnVja2V0RW51bS5RdWFsaXR5U2NvcmVCdWNrZXQa7AIKEVBvc2l0",
+            "aW9uRXN0aW1hdGVzEjoKFWZpcnN0X3BhZ2VfY3BjX21pY3JvcxgBIAEoCzIb",
+            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEj4KGWZpcnN0X3Bvc2l0aW9u",
+            "X2NwY19taWNyb3MYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
+            "ZRI7ChZ0b3Bfb2ZfcGFnZV9jcGNfbWljcm9zGAMgASgLMhsuZ29vZ2xlLnBy",
+            "b3RvYnVmLkludDY0VmFsdWUSTwoqZXN0aW1hdGVkX2FkZF9jbGlja3NfYXRf",
+            "Zmlyc3RfcG9zaXRpb25fY3BjGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
+            "dDY0VmFsdWUSTQooZXN0aW1hdGVkX2FkZF9jb3N0X2F0X2ZpcnN0X3Bvc2l0",
+            "aW9uX2NwYxgFIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQgsK",
+            "CWNyaXRlcmlvbkKCAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJl",
+            "c291cmNlc0IVQWRHcm91cENyaXRlcmlvblByb3RvUAFaSmdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9y",
+            "ZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVz",
+            "b3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OlJlc291cmNl",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupCriterionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Parser, new[]{ "ResourceName", "CriterionId", "Status", "QualityInfo", "AdGroup", "Type", "Negative", "BidModifier", "CpcBidMicros", "CpmBidMicros", "CpvBidMicros", "PercentCpcBidMicros", "EffectiveCpcBidMicros", "EffectiveCpmBidMicros", "EffectiveCpvBidMicros", "EffectivePercentCpcBidMicros", "EffectiveCpcBidSource", "EffectiveCpmBidSource", "EffectiveCpvBidSource", "EffectivePercentCpcBidSource", "PositionEstimates", "FinalUrls", "TrackingUrlTemplate", "UrlCustomParameters", "Keyword", "Placement", "ListingGroup", "AgeRange", "Gender", "IncomeRange", "ParentalStatus", "UserList", "YoutubeVideo", "YoutubeChannel", "Topic", "UserInterest" }, new[]{ "Criterion" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo.Parser, new[]{ "QualityScore", "CreativeQualityScore", "PostClickQualityScore", "SearchPredictedCtr" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.PositionEstimates), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.PositionEstimates.Parser, new[]{ "FirstPageCpcMicros", "FirstPositionCpcMicros", "TopOfPageCpcMicros" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Parser, new[]{ "ResourceName", "CriterionId", "Status", "QualityInfo", "AdGroup", "Type", "Negative", "BidModifier", "CpcBidMicros", "CpmBidMicros", "CpvBidMicros", "PercentCpcBidMicros", "EffectiveCpcBidMicros", "EffectiveCpmBidMicros", "EffectiveCpvBidMicros", "EffectivePercentCpcBidMicros", "EffectiveCpcBidSource", "EffectiveCpmBidSource", "EffectiveCpvBidSource", "EffectivePercentCpcBidSource", "PositionEstimates", "FinalUrls", "TrackingUrlTemplate", "UrlCustomParameters", "Keyword", "Placement", "MobileAppCategory", "ListingGroup", "AgeRange", "Gender", "IncomeRange", "ParentalStatus", "UserList", "YoutubeVideo", "YoutubeChannel", "Topic", "UserInterest", "Webpage", "AppPaymentModel" }, new[]{ "Criterion" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.QualityInfo.Parser, new[]{ "QualityScore", "CreativeQualityScore", "PostClickQualityScore", "SearchPredictedCtr" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.PositionEstimates), global::Google.Ads.GoogleAds.V0.Resources.AdGroupCriterion.Types.PositionEstimates.Parser, new[]{ "FirstPageCpcMicros", "FirstPositionCpcMicros", "TopOfPageCpcMicros", "EstimatedAddClicksAtFirstPositionCpc", "EstimatedAddCostAtFirstPositionCpc" }, null, null, null)})
           }));
     }
     #endregion
@@ -179,6 +189,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         case CriterionOneofCase.Placement:
           Placement = other.Placement.Clone();
           break;
+        case CriterionOneofCase.MobileAppCategory:
+          MobileAppCategory = other.MobileAppCategory.Clone();
+          break;
         case CriterionOneofCase.ListingGroup:
           ListingGroup = other.ListingGroup.Clone();
           break;
@@ -208,6 +221,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case CriterionOneofCase.UserInterest:
           UserInterest = other.UserInterest.Clone();
+          break;
+        case CriterionOneofCase.Webpage:
+          Webpage = other.Webpage.Clone();
+          break;
+        case CriterionOneofCase.AppPaymentModel:
+          AppPaymentModel = other.AppPaymentModel.Clone();
           break;
       }
 
@@ -607,6 +626,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "mobile_app_category" field.</summary>
+    public const int MobileAppCategoryFieldNumber = 29;
+    /// <summary>
+    /// Mobile app category.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo MobileAppCategory {
+      get { return criterionCase_ == CriterionOneofCase.MobileAppCategory ? (global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.MobileAppCategory;
+      }
+    }
+
     /// <summary>Field number for the "listing_group" field.</summary>
     public const int ListingGroupFieldNumber = 32;
     /// <summary>
@@ -747,12 +780,41 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "webpage" field.</summary>
+    public const int WebpageFieldNumber = 46;
+    /// <summary>
+    /// Webpage
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.WebpageInfo Webpage {
+      get { return criterionCase_ == CriterionOneofCase.Webpage ? (global::Google.Ads.GoogleAds.V0.Common.WebpageInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.Webpage;
+      }
+    }
+
+    /// <summary>Field number for the "app_payment_model" field.</summary>
+    public const int AppPaymentModelFieldNumber = 47;
+    /// <summary>
+    /// App Payment Model.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.AppPaymentModelInfo AppPaymentModel {
+      get { return criterionCase_ == CriterionOneofCase.AppPaymentModel ? (global::Google.Ads.GoogleAds.V0.Common.AppPaymentModelInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.AppPaymentModel;
+      }
+    }
+
     private object criterion_;
     /// <summary>Enum of possible cases for the "criterion" oneof.</summary>
     public enum CriterionOneofCase {
       None = 0,
       Keyword = 27,
       Placement = 28,
+      MobileAppCategory = 29,
       ListingGroup = 32,
       AgeRange = 36,
       Gender = 37,
@@ -763,6 +825,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       YoutubeChannel = 41,
       Topic = 43,
       UserInterest = 45,
+      Webpage = 46,
+      AppPaymentModel = 47,
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -815,6 +879,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if(!urlCustomParameters_.Equals(other.urlCustomParameters_)) return false;
       if (!object.Equals(Keyword, other.Keyword)) return false;
       if (!object.Equals(Placement, other.Placement)) return false;
+      if (!object.Equals(MobileAppCategory, other.MobileAppCategory)) return false;
       if (!object.Equals(ListingGroup, other.ListingGroup)) return false;
       if (!object.Equals(AgeRange, other.AgeRange)) return false;
       if (!object.Equals(Gender, other.Gender)) return false;
@@ -825,6 +890,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (!object.Equals(YoutubeChannel, other.YoutubeChannel)) return false;
       if (!object.Equals(Topic, other.Topic)) return false;
       if (!object.Equals(UserInterest, other.UserInterest)) return false;
+      if (!object.Equals(Webpage, other.Webpage)) return false;
+      if (!object.Equals(AppPaymentModel, other.AppPaymentModel)) return false;
       if (CriterionCase != other.CriterionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -858,6 +925,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       hash ^= urlCustomParameters_.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Keyword) hash ^= Keyword.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Placement) hash ^= Placement.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.MobileAppCategory) hash ^= MobileAppCategory.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.ListingGroup) hash ^= ListingGroup.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.AgeRange) hash ^= AgeRange.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Gender) hash ^= Gender.GetHashCode();
@@ -868,6 +936,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (criterionCase_ == CriterionOneofCase.YoutubeChannel) hash ^= YoutubeChannel.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Topic) hash ^= Topic.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.UserInterest) hash ^= UserInterest.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.Webpage) hash ^= Webpage.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.AppPaymentModel) hash ^= AppPaymentModel.GetHashCode();
       hash ^= (int) criterionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -951,6 +1021,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(226, 1);
         output.WriteMessage(Placement);
       }
+      if (criterionCase_ == CriterionOneofCase.MobileAppCategory) {
+        output.WriteRawTag(234, 1);
+        output.WriteMessage(MobileAppCategory);
+      }
       if (negative_ != null) {
         _single_negative_codec.WriteTagAndValue(output, Negative);
       }
@@ -1006,6 +1080,14 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (criterionCase_ == CriterionOneofCase.UserInterest) {
         output.WriteRawTag(234, 2);
         output.WriteMessage(UserInterest);
+      }
+      if (criterionCase_ == CriterionOneofCase.Webpage) {
+        output.WriteRawTag(242, 2);
+        output.WriteMessage(Webpage);
+      }
+      if (criterionCase_ == CriterionOneofCase.AppPaymentModel) {
+        output.WriteRawTag(250, 2);
+        output.WriteMessage(AppPaymentModel);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1089,6 +1171,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (criterionCase_ == CriterionOneofCase.Placement) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Placement);
       }
+      if (criterionCase_ == CriterionOneofCase.MobileAppCategory) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(MobileAppCategory);
+      }
       if (criterionCase_ == CriterionOneofCase.ListingGroup) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ListingGroup);
       }
@@ -1118,6 +1203,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (criterionCase_ == CriterionOneofCase.UserInterest) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(UserInterest);
+      }
+      if (criterionCase_ == CriterionOneofCase.Webpage) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Webpage);
+      }
+      if (criterionCase_ == CriterionOneofCase.AppPaymentModel) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AppPaymentModel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1243,6 +1334,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           }
           Placement.MergeFrom(other.Placement);
           break;
+        case CriterionOneofCase.MobileAppCategory:
+          if (MobileAppCategory == null) {
+            MobileAppCategory = new global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo();
+          }
+          MobileAppCategory.MergeFrom(other.MobileAppCategory);
+          break;
         case CriterionOneofCase.ListingGroup:
           if (ListingGroup == null) {
             ListingGroup = new global::Google.Ads.GoogleAds.V0.Common.ListingGroupInfo();
@@ -1302,6 +1399,18 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             UserInterest = new global::Google.Ads.GoogleAds.V0.Common.UserInterestInfo();
           }
           UserInterest.MergeFrom(other.UserInterest);
+          break;
+        case CriterionOneofCase.Webpage:
+          if (Webpage == null) {
+            Webpage = new global::Google.Ads.GoogleAds.V0.Common.WebpageInfo();
+          }
+          Webpage.MergeFrom(other.Webpage);
+          break;
+        case CriterionOneofCase.AppPaymentModel:
+          if (AppPaymentModel == null) {
+            AppPaymentModel = new global::Google.Ads.GoogleAds.V0.Common.AppPaymentModelInfo();
+          }
+          AppPaymentModel.MergeFrom(other.AppPaymentModel);
           break;
       }
 
@@ -1443,6 +1552,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             Placement = subBuilder;
             break;
           }
+          case 234: {
+            global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo();
+            if (criterionCase_ == CriterionOneofCase.MobileAppCategory) {
+              subBuilder.MergeFrom(MobileAppCategory);
+            }
+            input.ReadMessage(subBuilder);
+            MobileAppCategory = subBuilder;
+            break;
+          }
           case 250: {
             bool? value = _single_negative_codec.Read(input);
             if (negative_ == null || value != false) {
@@ -1563,6 +1681,24 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             input.ReadMessage(subBuilder);
             UserInterest = subBuilder;
+            break;
+          }
+          case 370: {
+            global::Google.Ads.GoogleAds.V0.Common.WebpageInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.WebpageInfo();
+            if (criterionCase_ == CriterionOneofCase.Webpage) {
+              subBuilder.MergeFrom(Webpage);
+            }
+            input.ReadMessage(subBuilder);
+            Webpage = subBuilder;
+            break;
+          }
+          case 378: {
+            global::Google.Ads.GoogleAds.V0.Common.AppPaymentModelInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.AppPaymentModelInfo();
+            if (criterionCase_ == CriterionOneofCase.AppPaymentModel) {
+              subBuilder.MergeFrom(AppPaymentModel);
+            }
+            input.ReadMessage(subBuilder);
+            AppPaymentModel = subBuilder;
             break;
           }
         }
@@ -1840,6 +1976,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           FirstPageCpcMicros = other.FirstPageCpcMicros;
           FirstPositionCpcMicros = other.FirstPositionCpcMicros;
           TopOfPageCpcMicros = other.TopOfPageCpcMicros;
+          EstimatedAddClicksAtFirstPositionCpc = other.EstimatedAddClicksAtFirstPositionCpc;
+          EstimatedAddCostAtFirstPositionCpc = other.EstimatedAddCostAtFirstPositionCpc;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -1896,6 +2034,38 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           }
         }
 
+        /// <summary>Field number for the "estimated_add_clicks_at_first_position_cpc" field.</summary>
+        public const int EstimatedAddClicksAtFirstPositionCpcFieldNumber = 4;
+        private static readonly pb::FieldCodec<long?> _single_estimatedAddClicksAtFirstPositionCpc_codec = pb::FieldCodec.ForStructWrapper<long>(34);
+        private long? estimatedAddClicksAtFirstPositionCpc_;
+        /// <summary>
+        /// Estimate of how many clicks per week you might get by changing your
+        /// keyword bid to the value in first_position_cpc_micros.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public long? EstimatedAddClicksAtFirstPositionCpc {
+          get { return estimatedAddClicksAtFirstPositionCpc_; }
+          set {
+            estimatedAddClicksAtFirstPositionCpc_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "estimated_add_cost_at_first_position_cpc" field.</summary>
+        public const int EstimatedAddCostAtFirstPositionCpcFieldNumber = 5;
+        private static readonly pb::FieldCodec<long?> _single_estimatedAddCostAtFirstPositionCpc_codec = pb::FieldCodec.ForStructWrapper<long>(42);
+        private long? estimatedAddCostAtFirstPositionCpc_;
+        /// <summary>
+        /// Estimate of how your cost per week might change when changing your
+        /// keyword bid to the value in first_position_cpc_micros.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public long? EstimatedAddCostAtFirstPositionCpc {
+          get { return estimatedAddCostAtFirstPositionCpc_; }
+          set {
+            estimatedAddCostAtFirstPositionCpc_ = value;
+          }
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as PositionEstimates);
@@ -1912,6 +2082,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           if (FirstPageCpcMicros != other.FirstPageCpcMicros) return false;
           if (FirstPositionCpcMicros != other.FirstPositionCpcMicros) return false;
           if (TopOfPageCpcMicros != other.TopOfPageCpcMicros) return false;
+          if (EstimatedAddClicksAtFirstPositionCpc != other.EstimatedAddClicksAtFirstPositionCpc) return false;
+          if (EstimatedAddCostAtFirstPositionCpc != other.EstimatedAddCostAtFirstPositionCpc) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -1921,6 +2093,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           if (firstPageCpcMicros_ != null) hash ^= FirstPageCpcMicros.GetHashCode();
           if (firstPositionCpcMicros_ != null) hash ^= FirstPositionCpcMicros.GetHashCode();
           if (topOfPageCpcMicros_ != null) hash ^= TopOfPageCpcMicros.GetHashCode();
+          if (estimatedAddClicksAtFirstPositionCpc_ != null) hash ^= EstimatedAddClicksAtFirstPositionCpc.GetHashCode();
+          if (estimatedAddCostAtFirstPositionCpc_ != null) hash ^= EstimatedAddCostAtFirstPositionCpc.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -1943,6 +2117,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           if (topOfPageCpcMicros_ != null) {
             _single_topOfPageCpcMicros_codec.WriteTagAndValue(output, TopOfPageCpcMicros);
           }
+          if (estimatedAddClicksAtFirstPositionCpc_ != null) {
+            _single_estimatedAddClicksAtFirstPositionCpc_codec.WriteTagAndValue(output, EstimatedAddClicksAtFirstPositionCpc);
+          }
+          if (estimatedAddCostAtFirstPositionCpc_ != null) {
+            _single_estimatedAddCostAtFirstPositionCpc_codec.WriteTagAndValue(output, EstimatedAddCostAtFirstPositionCpc);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -1959,6 +2139,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           }
           if (topOfPageCpcMicros_ != null) {
             size += _single_topOfPageCpcMicros_codec.CalculateSizeWithTag(TopOfPageCpcMicros);
+          }
+          if (estimatedAddClicksAtFirstPositionCpc_ != null) {
+            size += _single_estimatedAddClicksAtFirstPositionCpc_codec.CalculateSizeWithTag(EstimatedAddClicksAtFirstPositionCpc);
+          }
+          if (estimatedAddCostAtFirstPositionCpc_ != null) {
+            size += _single_estimatedAddCostAtFirstPositionCpc_codec.CalculateSizeWithTag(EstimatedAddCostAtFirstPositionCpc);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -1984,6 +2170,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           if (other.topOfPageCpcMicros_ != null) {
             if (topOfPageCpcMicros_ == null || other.TopOfPageCpcMicros != 0L) {
               TopOfPageCpcMicros = other.TopOfPageCpcMicros;
+            }
+          }
+          if (other.estimatedAddClicksAtFirstPositionCpc_ != null) {
+            if (estimatedAddClicksAtFirstPositionCpc_ == null || other.EstimatedAddClicksAtFirstPositionCpc != 0L) {
+              EstimatedAddClicksAtFirstPositionCpc = other.EstimatedAddClicksAtFirstPositionCpc;
+            }
+          }
+          if (other.estimatedAddCostAtFirstPositionCpc_ != null) {
+            if (estimatedAddCostAtFirstPositionCpc_ == null || other.EstimatedAddCostAtFirstPositionCpc != 0L) {
+              EstimatedAddCostAtFirstPositionCpc = other.EstimatedAddCostAtFirstPositionCpc;
             }
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -2015,6 +2211,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
                 long? value = _single_topOfPageCpcMicros_codec.Read(input);
                 if (topOfPageCpcMicros_ == null || value != 0L) {
                   TopOfPageCpcMicros = value;
+                }
+                break;
+              }
+              case 34: {
+                long? value = _single_estimatedAddClicksAtFirstPositionCpc_codec.Read(input);
+                if (estimatedAddClicksAtFirstPositionCpc_ == null || value != 0L) {
+                  EstimatedAddClicksAtFirstPositionCpc = value;
+                }
+                break;
+              }
+              case 42: {
+                long? value = _single_estimatedAddCostAtFirstPositionCpc_codec.Read(input);
+                if (estimatedAddCostAtFirstPositionCpc_ == null || value != 0L) {
+                  EstimatedAddCostAtFirstPositionCpc = value;
                 }
                 break;
               }

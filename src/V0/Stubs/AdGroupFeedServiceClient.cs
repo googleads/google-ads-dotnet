@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -465,6 +465,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="operations">
         /// The list of operations to perform on individual ad group feeds.
         /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -474,11 +484,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateAdGroupFeedsResponse> MutateAdGroupFeedsAsync(
             string customerId,
             scg::IEnumerable<AdGroupFeedOperation> operations,
+            bool partialFailure,
+            bool validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateAdGroupFeedsAsync(
                 new MutateAdGroupFeedsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                    PartialFailure = partialFailure,
+                    ValidateOnly = validateOnly,
                 },
                 callSettings);
 
@@ -492,6 +506,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="operations">
         /// The list of operations to perform on individual ad group feeds.
         /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
         /// </param>
@@ -501,9 +525,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateAdGroupFeedsResponse> MutateAdGroupFeedsAsync(
             string customerId,
             scg::IEnumerable<AdGroupFeedOperation> operations,
+            bool partialFailure,
+            bool validateOnly,
             st::CancellationToken cancellationToken) => MutateAdGroupFeedsAsync(
                 customerId,
                 operations,
+                partialFailure,
+                validateOnly,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
@@ -516,6 +544,16 @@ namespace Google.Ads.GoogleAds.V0.Services
         /// <param name="operations">
         /// The list of operations to perform on individual ad group feeds.
         /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// Default is false.
+        /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -525,11 +563,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateAdGroupFeedsResponse MutateAdGroupFeeds(
             string customerId,
             scg::IEnumerable<AdGroupFeedOperation> operations,
+            bool partialFailure,
+            bool validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateAdGroupFeeds(
                 new MutateAdGroupFeedsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                    PartialFailure = partialFailure,
+                    ValidateOnly = validateOnly,
                 },
                 callSettings);
 

@@ -1,4 +1,4 @@
-﻿// Copyright 2018 Google LLC
+﻿// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the \"License\");
 // you may not use this file except in compliance with the License.
@@ -119,6 +119,30 @@ namespace Google.Ads.GoogleAds.Lib
         }
 
         /// <summary>
+        /// Constructs a resource name for AdParameter entity from its component parts.
+        /// </summary>
+        /// <param name='customerId'>The customer ID.</param>
+        /// <param name='adParameterId'>The adParameter ID.</param>
+        /// <returns>The formatted resource name.</returns>
+        public static string AdParameter(long customerId, long adParameterId)
+        {
+            return new PathTemplate("customers/{customer}/adParameters/{ad_parameter}")
+                .Expand(customerId.ToString(), adParameterId.ToString());
+        }
+
+        /// <summary>
+        /// Constructs a resource name for AdScheduleView entity from its component parts.
+        /// </summary>
+        /// <param name='customerId'>The customer ID.</param>
+        /// <param name='adScheduleViewId'>The adScheduleView ID.</param>
+        /// <returns>The formatted resource name.</returns>
+        public static string AdScheduleView(long customerId, long adScheduleViewId)
+        {
+            return new PathTemplate("customers/{customer}/adScheduleViews/{ad_schedule_view}")
+                .Expand(customerId.ToString(), adScheduleViewId.ToString());
+        }
+
+        /// <summary>
         /// Constructs a resource name for AgeRangeView entity from its component parts.
         /// </summary>
         /// <param name='customerId'>The customer ID.</param>
@@ -224,18 +248,6 @@ namespace Google.Ads.GoogleAds.Lib
         {
             return new PathTemplate("customers/{customer}/campaignFeeds/{campaign_feed}")
                 .Expand(customerId.ToString(), campaignFeedId.ToString());
-        }
-
-        /// <summary>
-        /// Constructs a resource name for CampaignGroup entity from its component parts.
-        /// </summary>
-        /// <param name='customerId'>The customer ID.</param>
-        /// <param name='campaignGroupId'>The campaignGroup ID.</param>
-        /// <returns>The formatted resource name.</returns>
-        public static string CampaignGroup(long customerId, long campaignGroupId)
-        {
-            return new PathTemplate("customers/{customer}/campaignGroups/{campaign_group}")
-                .Expand(customerId.ToString(), campaignGroupId.ToString());
         }
 
         /// <summary>
@@ -557,6 +569,39 @@ namespace Google.Ads.GoogleAds.Lib
         }
 
         /// <summary>
+        /// Constructs a resource name for MobileAppCategoryConstant entity from its component parts.
+        /// </summary>
+        /// <param name='mobileAppCategoryConstantId'>The mobileAppCategoryConstant ID.</param>
+        /// <returns>The formatted resource name.</returns>
+        public static string MobileAppCategoryConstant(long mobileAppCategoryConstantId)
+        {
+            return new PathTemplate("mobileAppCategoryConstants/{mobile_app_category_constant}")
+                .Expand(mobileAppCategoryConstantId.ToString());
+        }
+
+        /// <summary>
+        /// Constructs a resource name for MobileDeviceConstant entity from its component parts.
+        /// </summary>
+        /// <param name='mobileDeviceConstantId'>The mobileDeviceConstant ID.</param>
+        /// <returns>The formatted resource name.</returns>
+        public static string MobileDeviceConstant(long mobileDeviceConstantId)
+        {
+            return new PathTemplate("mobileDeviceConstants/{mobile_device_constant}")
+                .Expand(mobileDeviceConstantId.ToString());
+        }
+
+        /// <summary>
+        /// Constructs a resource name for OperatingSystemVersionConstant entity from its component parts.
+        /// </summary>
+        /// <param name='operatingSystemVersionConstantId'>The operatingSystemVersionConstant ID.</param>
+        /// <returns>The formatted resource name.</returns>
+        public static string OperatingSystemVersionConstant(long operatingSystemVersionConstantId)
+        {
+            return new PathTemplate("operatingSystemVersionConstants/{operating_system_version_constant}")
+                .Expand(operatingSystemVersionConstantId.ToString());
+        }
+
+        /// <summary>
         /// Constructs a resource name for ParentalStatusView entity from its component parts.
         /// </summary>
         /// <param name='customerId'>The customer ID.</param>
@@ -590,6 +635,18 @@ namespace Google.Ads.GoogleAds.Lib
         {
             return new PathTemplate("customers/{customer}/recommendations/{recommendation}")
                 .Expand(customerId.ToString(), recommendationId.ToString());
+        }
+
+        /// <summary>
+        /// Constructs a resource name for RemarketingAction entity from its component parts.
+        /// </summary>
+        /// <param name='customerId'>The customer ID.</param>
+        /// <param name='remarketingActionId'>The remarketingAction ID.</param>
+        /// <returns>The formatted resource name.</returns>
+        public static string RemarketingAction(long customerId, long remarketingActionId)
+        {
+            return new PathTemplate("customers/{customer}/remarketingActions/{remarketing_action}")
+                .Expand(customerId.ToString(), remarketingActionId.ToString());
         }
 
         /// <summary>

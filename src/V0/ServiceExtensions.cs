@@ -1,4 +1,4 @@
-﻿// Copyright 2018 Google LLC
+﻿// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -26,6 +26,8 @@ namespace Google.Ads.GoogleAds.V0.Services
     public abstract partial class AdGroupCriterionServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupFeedServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class AdParameterServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class AdScheduleViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AgeRangeViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class BiddingStrategyServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class BillingSetupServiceClient : GoogleAdsServiceClientBase {}
@@ -34,7 +36,6 @@ namespace Google.Ads.GoogleAds.V0.Services
     public abstract partial class CampaignBudgetServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignCriterionServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignFeedServiceClient : GoogleAdsServiceClientBase {}
-    public abstract partial class CampaignGroupServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignSharedSetServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CarrierConstantServiceClient : GoogleAdsServiceClientBase {}
@@ -65,10 +66,14 @@ namespace Google.Ads.GoogleAds.V0.Services
     public abstract partial class LanguageConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ManagedPlacementViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class MediaFileServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class MobileAppCategoryConstantServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class MobileDeviceConstantServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class OperatingSystemVersionConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ParentalStatusViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class PaymentsAccountServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ProductGroupViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class RecommendationServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class RemarketingActionServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class SearchTermViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class SharedCriterionServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class SharedSetServiceClient : GoogleAdsServiceClientBase {}

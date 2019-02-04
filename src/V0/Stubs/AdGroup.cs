@@ -28,48 +28,61 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "cHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxo1Z29v",
             "Z2xlL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uL2N1c3RvbV9wYXJhbWV0ZXIu",
             "cHJvdG8aRGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbi9leHBsb3Jl",
-            "cl9hdXRvX29wdGltaXplcl9zZXR0aW5nLnByb3RvGj1nb29nbGUvYWRzL2dv",
-            "b2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF9hZF9yb3RhdGlvbl9tb2RlLnBy",
-            "b3RvGjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF9z",
-            "dGF0dXMucHJvdG8aMWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2Fk",
-            "X2dyb3VwX3R5cGUucHJvdG8aN2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
-            "dW1zL3RhcmdldGluZ19kaW1lbnNpb24ucHJvdG8aHmdvb2dsZS9wcm90b2J1",
-            "Zi93cmFwcGVycy5wcm90byKSCQoHQWRHcm91cBIVCg1yZXNvdXJjZV9uYW1l",
-            "GAEgASgJEicKAmlkGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
-            "dWUSKgoEbmFtZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZRJOCgZzdGF0dXMYBSABKA4yPi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "bnVtcy5BZEdyb3VwU3RhdHVzRW51bS5BZEdyb3VwU3RhdHVzEkgKBHR5cGUY",
-            "DCABKA4yOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5BZEdyb3Vw",
-            "VHlwZUVudW0uQWRHcm91cFR5cGUSaAoQYWRfcm90YXRpb25fbW9kZRgWIAEo",
-            "DjJOLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkFkR3JvdXBBZFJv",
-            "dGF0aW9uTW9kZUVudW0uQWRHcm91cEFkUm90YXRpb25Nb2RlEjsKFXRyYWNr",
-            "aW5nX3VybF90ZW1wbGF0ZRgNIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZRJOChV1cmxfY3VzdG9tX3BhcmFtZXRlcnMYBiADKAsyLy5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uQ3VzdG9tUGFyYW1ldGVyEi4K",
-            "CGNhbXBhaWduGAogASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "EjMKDmNwY19iaWRfbWljcm9zGA4gASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDY0VmFsdWUSMwoOY3BtX2JpZF9taWNyb3MYDyABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuSW50NjRWYWx1ZRIzCg5jcGFfYmlkX21pY3JvcxgQIAEoCzIbLmdv",
-            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjMKDmNwdl9iaWRfbWljcm9zGBEg",
-            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOgoUdGFyZ2V0X3Jv",
-            "YXNfb3ZlcnJpZGUYEyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFs",
-            "dWUSOwoWcGVyY2VudF9jcGNfYmlkX21pY3JvcxgUIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5JbnQ2NFZhbHVlEmUKH2V4cGxvcmVyX2F1dG9fb3B0aW1pemVy",
-            "X3NldHRpbmcYFSABKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21t",
-            "b24uRXhwbG9yZXJBdXRvT3B0aW1pemVyU2V0dGluZxJuChxkaXNwbGF5X2N1",
-            "c3RvbV9iaWRfZGltZW5zaW9uGBcgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAuZW51bXMuVGFyZ2V0aW5nRGltZW5zaW9uRW51bS5UYXJnZXRpbmdE",
-            "aW1lbnNpb24SNgoQZmluYWxfdXJsX3N1ZmZpeBgYIAEoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5TdHJpbmdWYWx1ZULRAQolY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLnJlc291cmNlc0IMQWRHcm91cFByb3RvUAFaSmdvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9y",
-            "ZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVz",
-            "b3VyY2VzYgZwcm90bzM="));
+            "cl9hdXRvX29wdGltaXplcl9zZXR0aW5nLnByb3RvGjZnb29nbGUvYWRzL2dv",
+            "b2dsZWFkcy92MC9jb21tb24vdGFyZ2V0aW5nX3NldHRpbmcucHJvdG8aPWdv",
+            "b2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2FkX2dyb3VwX2FkX3JvdGF0",
+            "aW9uX21vZGUucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1z",
+            "L2FkX2dyb3VwX3N0YXR1cy5wcm90bxoxZ29vZ2xlL2Fkcy9nb29nbGVhZHMv",
+            "djAvZW51bXMvYWRfZ3JvdXBfdHlwZS5wcm90bxoyZ29vZ2xlL2Fkcy9nb29n",
+            "bGVhZHMvdjAvZW51bXMvYmlkZGluZ19zb3VyY2UucHJvdG8aN2dvb2dsZS9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL2VudW1zL3RhcmdldGluZ19kaW1lbnNpb24ucHJv",
+            "dG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90byLbDAoHQWRHcm91",
+            "cBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEicKAmlkGAMgASgLMhsuZ29vZ2xl",
+            "LnByb3RvYnVmLkludDY0VmFsdWUSKgoEbmFtZRgEIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRJOCgZzdGF0dXMYBSABKA4yPi5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5lbnVtcy5BZEdyb3VwU3RhdHVzRW51bS5BZEdy",
+            "b3VwU3RhdHVzEkgKBHR5cGUYDCABKA4yOi5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5lbnVtcy5BZEdyb3VwVHlwZUVudW0uQWRHcm91cFR5cGUSaAoQYWRf",
+            "cm90YXRpb25fbW9kZRgWIAEoDjJOLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmVudW1zLkFkR3JvdXBBZFJvdGF0aW9uTW9kZUVudW0uQWRHcm91cEFkUm90",
+            "YXRpb25Nb2RlEjsKFXRyYWNraW5nX3VybF90ZW1wbGF0ZRgNIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJOChV1cmxfY3VzdG9tX3BhcmFt",
+            "ZXRlcnMYBiADKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24u",
+            "Q3VzdG9tUGFyYW1ldGVyEi4KCGNhbXBhaWduGAogASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEjMKDmNwY19iaWRfbWljcm9zGA4gASgLMhsu",
+            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSMwoOY3BtX2JpZF9taWNyb3MY",
+            "DyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI2ChF0YXJnZXRf",
+            "Y3BhX21pY3JvcxgbIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVl",
+            "EjMKDmNwdl9iaWRfbWljcm9zGBEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
+            "dDY0VmFsdWUSNgoRdGFyZ2V0X2NwbV9taWNyb3MYGiABKAsyGy5nb29nbGUu",
+            "cHJvdG9idWYuSW50NjRWYWx1ZRIxCgt0YXJnZXRfcm9hcxgeIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI7ChZwZXJjZW50X2NwY19iaWRf",
+            "bWljcm9zGBQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSZQof",
+            "ZXhwbG9yZXJfYXV0b19vcHRpbWl6ZXJfc2V0dGluZxgVIAEoCzI8Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5FeHBsb3JlckF1dG9PcHRpbWl6",
+            "ZXJTZXR0aW5nEm4KHGRpc3BsYXlfY3VzdG9tX2JpZF9kaW1lbnNpb24YFyAB",
+            "KA4ySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5UYXJnZXRpbmdE",
+            "aW1lbnNpb25FbnVtLlRhcmdldGluZ0RpbWVuc2lvbhI2ChBmaW5hbF91cmxf",
+            "c3VmZml4GBggASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEksK",
+            "EXRhcmdldGluZ19zZXR0aW5nGBkgASgLMjAuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuY29tbW9uLlRhcmdldGluZ1NldHRpbmcSQAobZWZmZWN0aXZlX3Rh",
+            "cmdldF9jcGFfbWljcm9zGBwgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0",
+            "VmFsdWUSYwobZWZmZWN0aXZlX3RhcmdldF9jcGFfc291cmNlGB0gASgOMj4u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuQmlkZGluZ1NvdXJjZUVu",
+            "dW0uQmlkZGluZ1NvdXJjZRI7ChVlZmZlY3RpdmVfdGFyZ2V0X3JvYXMYHyAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSZAocZWZmZWN0aXZl",
+            "X3RhcmdldF9yb2FzX3NvdXJjZRggIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmVudW1zLkJpZGRpbmdTb3VyY2VFbnVtLkJpZGRpbmdTb3VyY2VC",
+            "+QEKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCDEFk",
+            "R3JvdXBQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6IC",
+            "A0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.ExplorerAutoOptimizerSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdRotationModeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TargetingDimensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.ExplorerAutoOptimizerSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.TargetingSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdRotationModeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.TargetingDimensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroup), global::Google.Ads.GoogleAds.V0.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "CpaBidMicros", "CpvBidMicros", "TargetRoasOverride", "PercentCpcBidMicros", "ExplorerAutoOptimizerSetting", "DisplayCustomBidDimension", "FinalUrlSuffix" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroup), global::Google.Ads.GoogleAds.V0.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "ExplorerAutoOptimizerSetting", "DisplayCustomBidDimension", "FinalUrlSuffix", "TargetingSetting", "EffectiveTargetCpaMicros", "EffectiveTargetCpaSource", "EffectiveTargetRoas", "EffectiveTargetRoasSource" }, null, null, null)
           }));
     }
     #endregion
@@ -115,13 +128,19 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       Campaign = other.Campaign;
       CpcBidMicros = other.CpcBidMicros;
       CpmBidMicros = other.CpmBidMicros;
-      CpaBidMicros = other.CpaBidMicros;
+      TargetCpaMicros = other.TargetCpaMicros;
       CpvBidMicros = other.CpvBidMicros;
-      TargetRoasOverride = other.TargetRoasOverride;
+      TargetCpmMicros = other.TargetCpmMicros;
+      TargetRoas = other.TargetRoas;
       PercentCpcBidMicros = other.PercentCpcBidMicros;
       explorerAutoOptimizerSetting_ = other.explorerAutoOptimizerSetting_ != null ? other.explorerAutoOptimizerSetting_.Clone() : null;
       displayCustomBidDimension_ = other.displayCustomBidDimension_;
       FinalUrlSuffix = other.FinalUrlSuffix;
+      targetingSetting_ = other.targetingSetting_ != null ? other.targetingSetting_.Clone() : null;
+      EffectiveTargetCpaMicros = other.EffectiveTargetCpaMicros;
+      effectiveTargetCpaSource_ = other.effectiveTargetCpaSource_;
+      EffectiveTargetRoas = other.EffectiveTargetRoas;
+      effectiveTargetRoasSource_ = other.effectiveTargetRoasSource_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -301,18 +320,18 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
-    /// <summary>Field number for the "cpa_bid_micros" field.</summary>
-    public const int CpaBidMicrosFieldNumber = 16;
-    private static readonly pb::FieldCodec<long?> _single_cpaBidMicros_codec = pb::FieldCodec.ForStructWrapper<long>(130);
-    private long? cpaBidMicros_;
+    /// <summary>Field number for the "target_cpa_micros" field.</summary>
+    public const int TargetCpaMicrosFieldNumber = 27;
+    private static readonly pb::FieldCodec<long?> _single_targetCpaMicros_codec = pb::FieldCodec.ForStructWrapper<long>(218);
+    private long? targetCpaMicros_;
     /// <summary>
-    /// The target cost-per-acquisition (conversion) bid.
+    /// The target CPA (cost-per-acquisition).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long? CpaBidMicros {
-      get { return cpaBidMicros_; }
+    public long? TargetCpaMicros {
+      get { return targetCpaMicros_; }
       set {
-        cpaBidMicros_ = value;
+        targetCpaMicros_ = value;
       }
     }
 
@@ -331,21 +350,37 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
-    /// <summary>Field number for the "target_roas_override" field.</summary>
-    public const int TargetRoasOverrideFieldNumber = 19;
-    private static readonly pb::FieldCodec<double?> _single_targetRoasOverride_codec = pb::FieldCodec.ForStructWrapper<double>(154);
-    private double? targetRoasOverride_;
+    /// <summary>Field number for the "target_cpm_micros" field.</summary>
+    public const int TargetCpmMicrosFieldNumber = 26;
+    private static readonly pb::FieldCodec<long?> _single_targetCpmMicros_codec = pb::FieldCodec.ForStructWrapper<long>(210);
+    private long? targetCpmMicros_;
     /// <summary>
-    /// The target return on ad spend (ROAS) override. If the ad group's campaign
+    /// Average amount in micros that the advertiser is willing to pay for every
+    /// thousand times the ad is shown.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? TargetCpmMicros {
+      get { return targetCpmMicros_; }
+      set {
+        targetCpmMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "target_roas" field.</summary>
+    public const int TargetRoasFieldNumber = 30;
+    private static readonly pb::FieldCodec<double?> _single_targetRoas_codec = pb::FieldCodec.ForStructWrapper<double>(242);
+    private double? targetRoas_;
+    /// <summary>
+    /// The target ROAS (return-on-ad-spend) override. If the ad group's campaign
     /// bidding strategy is a standard Target ROAS strategy, then this field
     /// overrides the target ROAS specified in the campaign's bidding strategy.
     /// Otherwise, this value is ignored.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public double? TargetRoasOverride {
-      get { return targetRoasOverride_; }
+    public double? TargetRoas {
+      get { return targetRoas_; }
       set {
-        targetRoasOverride_ = value;
+        targetRoas_ = value;
       }
     }
 
@@ -411,6 +446,82 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "targeting_setting" field.</summary>
+    public const int TargetingSettingFieldNumber = 25;
+    private global::Google.Ads.GoogleAds.V0.Common.TargetingSetting targetingSetting_;
+    /// <summary>
+    /// Setting for targeting related features.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.TargetingSetting TargetingSetting {
+      get { return targetingSetting_; }
+      set {
+        targetingSetting_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "effective_target_cpa_micros" field.</summary>
+    public const int EffectiveTargetCpaMicrosFieldNumber = 28;
+    private static readonly pb::FieldCodec<long?> _single_effectiveTargetCpaMicros_codec = pb::FieldCodec.ForStructWrapper<long>(226);
+    private long? effectiveTargetCpaMicros_;
+    /// <summary>
+    /// The effective target CPA (cost-per-acquisition).
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? EffectiveTargetCpaMicros {
+      get { return effectiveTargetCpaMicros_; }
+      set {
+        effectiveTargetCpaMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "effective_target_cpa_source" field.</summary>
+    public const int EffectiveTargetCpaSourceFieldNumber = 29;
+    private global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource effectiveTargetCpaSource_ = 0;
+    /// <summary>
+    /// Source of the effective target CPA.
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource EffectiveTargetCpaSource {
+      get { return effectiveTargetCpaSource_; }
+      set {
+        effectiveTargetCpaSource_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "effective_target_roas" field.</summary>
+    public const int EffectiveTargetRoasFieldNumber = 31;
+    private static readonly pb::FieldCodec<double?> _single_effectiveTargetRoas_codec = pb::FieldCodec.ForStructWrapper<double>(250);
+    private double? effectiveTargetRoas_;
+    /// <summary>
+    /// The effective target ROAS (return-on-ad-spend).
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? EffectiveTargetRoas {
+      get { return effectiveTargetRoas_; }
+      set {
+        effectiveTargetRoas_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "effective_target_roas_source" field.</summary>
+    public const int EffectiveTargetRoasSourceFieldNumber = 32;
+    private global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource effectiveTargetRoasSource_ = 0;
+    /// <summary>
+    /// Source of the effective target ROAS.
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource EffectiveTargetRoasSource {
+      get { return effectiveTargetRoasSource_; }
+      set {
+        effectiveTargetRoasSource_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AdGroup);
@@ -435,13 +546,19 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (Campaign != other.Campaign) return false;
       if (CpcBidMicros != other.CpcBidMicros) return false;
       if (CpmBidMicros != other.CpmBidMicros) return false;
-      if (CpaBidMicros != other.CpaBidMicros) return false;
+      if (TargetCpaMicros != other.TargetCpaMicros) return false;
       if (CpvBidMicros != other.CpvBidMicros) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(TargetRoasOverride, other.TargetRoasOverride)) return false;
+      if (TargetCpmMicros != other.TargetCpmMicros) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(TargetRoas, other.TargetRoas)) return false;
       if (PercentCpcBidMicros != other.PercentCpcBidMicros) return false;
       if (!object.Equals(ExplorerAutoOptimizerSetting, other.ExplorerAutoOptimizerSetting)) return false;
       if (DisplayCustomBidDimension != other.DisplayCustomBidDimension) return false;
       if (FinalUrlSuffix != other.FinalUrlSuffix) return false;
+      if (!object.Equals(TargetingSetting, other.TargetingSetting)) return false;
+      if (EffectiveTargetCpaMicros != other.EffectiveTargetCpaMicros) return false;
+      if (EffectiveTargetCpaSource != other.EffectiveTargetCpaSource) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(EffectiveTargetRoas, other.EffectiveTargetRoas)) return false;
+      if (EffectiveTargetRoasSource != other.EffectiveTargetRoasSource) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -459,13 +576,19 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (campaign_ != null) hash ^= Campaign.GetHashCode();
       if (cpcBidMicros_ != null) hash ^= CpcBidMicros.GetHashCode();
       if (cpmBidMicros_ != null) hash ^= CpmBidMicros.GetHashCode();
-      if (cpaBidMicros_ != null) hash ^= CpaBidMicros.GetHashCode();
+      if (targetCpaMicros_ != null) hash ^= TargetCpaMicros.GetHashCode();
       if (cpvBidMicros_ != null) hash ^= CpvBidMicros.GetHashCode();
-      if (targetRoasOverride_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(TargetRoasOverride);
+      if (targetCpmMicros_ != null) hash ^= TargetCpmMicros.GetHashCode();
+      if (targetRoas_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(TargetRoas);
       if (percentCpcBidMicros_ != null) hash ^= PercentCpcBidMicros.GetHashCode();
       if (explorerAutoOptimizerSetting_ != null) hash ^= ExplorerAutoOptimizerSetting.GetHashCode();
       if (DisplayCustomBidDimension != 0) hash ^= DisplayCustomBidDimension.GetHashCode();
       if (finalUrlSuffix_ != null) hash ^= FinalUrlSuffix.GetHashCode();
+      if (targetingSetting_ != null) hash ^= TargetingSetting.GetHashCode();
+      if (effectiveTargetCpaMicros_ != null) hash ^= EffectiveTargetCpaMicros.GetHashCode();
+      if (EffectiveTargetCpaSource != 0) hash ^= EffectiveTargetCpaSource.GetHashCode();
+      if (effectiveTargetRoas_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(EffectiveTargetRoas);
+      if (EffectiveTargetRoasSource != 0) hash ^= EffectiveTargetRoasSource.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -510,14 +633,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (cpmBidMicros_ != null) {
         _single_cpmBidMicros_codec.WriteTagAndValue(output, CpmBidMicros);
       }
-      if (cpaBidMicros_ != null) {
-        _single_cpaBidMicros_codec.WriteTagAndValue(output, CpaBidMicros);
-      }
       if (cpvBidMicros_ != null) {
         _single_cpvBidMicros_codec.WriteTagAndValue(output, CpvBidMicros);
-      }
-      if (targetRoasOverride_ != null) {
-        _single_targetRoasOverride_codec.WriteTagAndValue(output, TargetRoasOverride);
       }
       if (percentCpcBidMicros_ != null) {
         _single_percentCpcBidMicros_codec.WriteTagAndValue(output, PercentCpcBidMicros);
@@ -536,6 +653,33 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (finalUrlSuffix_ != null) {
         _single_finalUrlSuffix_codec.WriteTagAndValue(output, FinalUrlSuffix);
+      }
+      if (targetingSetting_ != null) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(TargetingSetting);
+      }
+      if (targetCpmMicros_ != null) {
+        _single_targetCpmMicros_codec.WriteTagAndValue(output, TargetCpmMicros);
+      }
+      if (targetCpaMicros_ != null) {
+        _single_targetCpaMicros_codec.WriteTagAndValue(output, TargetCpaMicros);
+      }
+      if (effectiveTargetCpaMicros_ != null) {
+        _single_effectiveTargetCpaMicros_codec.WriteTagAndValue(output, EffectiveTargetCpaMicros);
+      }
+      if (EffectiveTargetCpaSource != 0) {
+        output.WriteRawTag(232, 1);
+        output.WriteEnum((int) EffectiveTargetCpaSource);
+      }
+      if (targetRoas_ != null) {
+        _single_targetRoas_codec.WriteTagAndValue(output, TargetRoas);
+      }
+      if (effectiveTargetRoas_ != null) {
+        _single_effectiveTargetRoas_codec.WriteTagAndValue(output, EffectiveTargetRoas);
+      }
+      if (EffectiveTargetRoasSource != 0) {
+        output.WriteRawTag(128, 2);
+        output.WriteEnum((int) EffectiveTargetRoasSource);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -576,14 +720,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (cpmBidMicros_ != null) {
         size += _single_cpmBidMicros_codec.CalculateSizeWithTag(CpmBidMicros);
       }
-      if (cpaBidMicros_ != null) {
-        size += _single_cpaBidMicros_codec.CalculateSizeWithTag(CpaBidMicros);
+      if (targetCpaMicros_ != null) {
+        size += _single_targetCpaMicros_codec.CalculateSizeWithTag(TargetCpaMicros);
       }
       if (cpvBidMicros_ != null) {
         size += _single_cpvBidMicros_codec.CalculateSizeWithTag(CpvBidMicros);
       }
-      if (targetRoasOverride_ != null) {
-        size += _single_targetRoasOverride_codec.CalculateSizeWithTag(TargetRoasOverride);
+      if (targetCpmMicros_ != null) {
+        size += _single_targetCpmMicros_codec.CalculateSizeWithTag(TargetCpmMicros);
+      }
+      if (targetRoas_ != null) {
+        size += _single_targetRoas_codec.CalculateSizeWithTag(TargetRoas);
       }
       if (percentCpcBidMicros_ != null) {
         size += _single_percentCpcBidMicros_codec.CalculateSizeWithTag(PercentCpcBidMicros);
@@ -596,6 +743,21 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (finalUrlSuffix_ != null) {
         size += _single_finalUrlSuffix_codec.CalculateSizeWithTag(FinalUrlSuffix);
+      }
+      if (targetingSetting_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TargetingSetting);
+      }
+      if (effectiveTargetCpaMicros_ != null) {
+        size += _single_effectiveTargetCpaMicros_codec.CalculateSizeWithTag(EffectiveTargetCpaMicros);
+      }
+      if (EffectiveTargetCpaSource != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectiveTargetCpaSource);
+      }
+      if (effectiveTargetRoas_ != null) {
+        size += _single_effectiveTargetRoas_codec.CalculateSizeWithTag(EffectiveTargetRoas);
+      }
+      if (EffectiveTargetRoasSource != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectiveTargetRoasSource);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -651,9 +813,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           CpmBidMicros = other.CpmBidMicros;
         }
       }
-      if (other.cpaBidMicros_ != null) {
-        if (cpaBidMicros_ == null || other.CpaBidMicros != 0L) {
-          CpaBidMicros = other.CpaBidMicros;
+      if (other.targetCpaMicros_ != null) {
+        if (targetCpaMicros_ == null || other.TargetCpaMicros != 0L) {
+          TargetCpaMicros = other.TargetCpaMicros;
         }
       }
       if (other.cpvBidMicros_ != null) {
@@ -661,9 +823,14 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           CpvBidMicros = other.CpvBidMicros;
         }
       }
-      if (other.targetRoasOverride_ != null) {
-        if (targetRoasOverride_ == null || other.TargetRoasOverride != 0D) {
-          TargetRoasOverride = other.TargetRoasOverride;
+      if (other.targetCpmMicros_ != null) {
+        if (targetCpmMicros_ == null || other.TargetCpmMicros != 0L) {
+          TargetCpmMicros = other.TargetCpmMicros;
+        }
+      }
+      if (other.targetRoas_ != null) {
+        if (targetRoas_ == null || other.TargetRoas != 0D) {
+          TargetRoas = other.TargetRoas;
         }
       }
       if (other.percentCpcBidMicros_ != null) {
@@ -684,6 +851,28 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         if (finalUrlSuffix_ == null || other.FinalUrlSuffix != "") {
           FinalUrlSuffix = other.FinalUrlSuffix;
         }
+      }
+      if (other.targetingSetting_ != null) {
+        if (targetingSetting_ == null) {
+          targetingSetting_ = new global::Google.Ads.GoogleAds.V0.Common.TargetingSetting();
+        }
+        TargetingSetting.MergeFrom(other.TargetingSetting);
+      }
+      if (other.effectiveTargetCpaMicros_ != null) {
+        if (effectiveTargetCpaMicros_ == null || other.EffectiveTargetCpaMicros != 0L) {
+          EffectiveTargetCpaMicros = other.EffectiveTargetCpaMicros;
+        }
+      }
+      if (other.EffectiveTargetCpaSource != 0) {
+        EffectiveTargetCpaSource = other.EffectiveTargetCpaSource;
+      }
+      if (other.effectiveTargetRoas_ != null) {
+        if (effectiveTargetRoas_ == null || other.EffectiveTargetRoas != 0D) {
+          EffectiveTargetRoas = other.EffectiveTargetRoas;
+        }
+      }
+      if (other.EffectiveTargetRoasSource != 0) {
+        EffectiveTargetRoasSource = other.EffectiveTargetRoasSource;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -754,24 +943,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             break;
           }
-          case 130: {
-            long? value = _single_cpaBidMicros_codec.Read(input);
-            if (cpaBidMicros_ == null || value != 0L) {
-              CpaBidMicros = value;
-            }
-            break;
-          }
           case 138: {
             long? value = _single_cpvBidMicros_codec.Read(input);
             if (cpvBidMicros_ == null || value != 0L) {
               CpvBidMicros = value;
-            }
-            break;
-          }
-          case 154: {
-            double? value = _single_targetRoasOverride_codec.Read(input);
-            if (targetRoasOverride_ == null || value != 0D) {
-              TargetRoasOverride = value;
             }
             break;
           }
@@ -802,6 +977,56 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             if (finalUrlSuffix_ == null || value != "") {
               FinalUrlSuffix = value;
             }
+            break;
+          }
+          case 202: {
+            if (targetingSetting_ == null) {
+              targetingSetting_ = new global::Google.Ads.GoogleAds.V0.Common.TargetingSetting();
+            }
+            input.ReadMessage(targetingSetting_);
+            break;
+          }
+          case 210: {
+            long? value = _single_targetCpmMicros_codec.Read(input);
+            if (targetCpmMicros_ == null || value != 0L) {
+              TargetCpmMicros = value;
+            }
+            break;
+          }
+          case 218: {
+            long? value = _single_targetCpaMicros_codec.Read(input);
+            if (targetCpaMicros_ == null || value != 0L) {
+              TargetCpaMicros = value;
+            }
+            break;
+          }
+          case 226: {
+            long? value = _single_effectiveTargetCpaMicros_codec.Read(input);
+            if (effectiveTargetCpaMicros_ == null || value != 0L) {
+              EffectiveTargetCpaMicros = value;
+            }
+            break;
+          }
+          case 232: {
+            effectiveTargetCpaSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource) input.ReadEnum();
+            break;
+          }
+          case 242: {
+            double? value = _single_targetRoas_codec.Read(input);
+            if (targetRoas_ == null || value != 0D) {
+              TargetRoas = value;
+            }
+            break;
+          }
+          case 250: {
+            double? value = _single_effectiveTargetRoas_codec.Read(input);
+            if (effectiveTargetRoas_ == null || value != 0D) {
+              EffectiveTargetRoas = value;
+            }
+            break;
+          }
+          case 256: {
+            effectiveTargetRoasSource_ = (global::Google.Ads.GoogleAds.V0.Enums.BiddingSourceEnum.Types.BiddingSource) input.ReadEnum();
             break;
           }
         }

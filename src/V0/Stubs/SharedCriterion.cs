@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Y2VzGi1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vY3JpdGVyaWEu",
             "cHJvdG8aMmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2NyaXRlcmlv",
             "bl90eXBlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8i",
-            "hgQKD1NoYXJlZENyaXRlcmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEjAK",
+            "3AQKD1NoYXJlZENyaXRlcmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEjAK",
             "CnNoYXJlZF9zZXQYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
             "dWUSMQoMY3JpdGVyaW9uX2lkGBogASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
             "dDY0VmFsdWUSTAoEdHlwZRgEIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
@@ -40,16 +40,19 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Ek0KD3lvdXR1YmVfY2hhbm5lbBgGIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xl",
             "YWRzLnYwLmNvbW1vbi5Zb3VUdWJlQ2hhbm5lbEluZm9IABJCCglwbGFjZW1l",
             "bnQYByABKAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uUGxh",
-            "Y2VtZW50SW5mb0gAQgsKCWNyaXRlcmlvbkLZAQolY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLnJlc291cmNlc0IUU2hhcmVkQ3JpdGVyaW9uUHJvdG9Q",
-            "AVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29n",
-            "bGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMFxSZXNvdXJjZXNiBnByb3RvMw=="));
+            "Y2VtZW50SW5mb0gAElQKE21vYmlsZV9hcHBfY2F0ZWdvcnkYCCABKAsyNS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uTW9iaWxlQXBwQ2F0ZWdv",
+            "cnlJbmZvSABCCwoJY3JpdGVyaW9uQoECCiVjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAucmVzb3VyY2VzQhRTaGFyZWRDcml0ZXJpb25Qcm90b1ABWkpn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5B",
+            "ZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xl",
+            "QWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYw",
+            "OjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion), global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion.Parser, new[]{ "ResourceName", "SharedSet", "CriterionId", "Type", "Keyword", "YoutubeVideo", "YoutubeChannel", "Placement" }, new[]{ "Criterion" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion), global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion.Parser, new[]{ "ResourceName", "SharedSet", "CriterionId", "Type", "Keyword", "YoutubeVideo", "YoutubeChannel", "Placement", "MobileAppCategory" }, new[]{ "Criterion" }, null, null)
           }));
     }
     #endregion
@@ -100,6 +103,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case CriterionOneofCase.Placement:
           Placement = other.Placement.Clone();
+          break;
+        case CriterionOneofCase.MobileAppCategory:
+          MobileAppCategory = other.MobileAppCategory.Clone();
           break;
       }
 
@@ -230,6 +236,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
+    /// <summary>Field number for the "mobile_app_category" field.</summary>
+    public const int MobileAppCategoryFieldNumber = 8;
+    /// <summary>
+    /// Mobile App Category.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo MobileAppCategory {
+      get { return criterionCase_ == CriterionOneofCase.MobileAppCategory ? (global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.MobileAppCategory;
+      }
+    }
+
     private object criterion_;
     /// <summary>Enum of possible cases for the "criterion" oneof.</summary>
     public enum CriterionOneofCase {
@@ -238,6 +258,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       YoutubeVideo = 5,
       YoutubeChannel = 6,
       Placement = 7,
+      MobileAppCategory = 8,
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -272,6 +293,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (!object.Equals(YoutubeVideo, other.YoutubeVideo)) return false;
       if (!object.Equals(YoutubeChannel, other.YoutubeChannel)) return false;
       if (!object.Equals(Placement, other.Placement)) return false;
+      if (!object.Equals(MobileAppCategory, other.MobileAppCategory)) return false;
       if (CriterionCase != other.CriterionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -287,6 +309,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (criterionCase_ == CriterionOneofCase.YoutubeVideo) hash ^= YoutubeVideo.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.YoutubeChannel) hash ^= YoutubeChannel.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Placement) hash ^= Placement.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.MobileAppCategory) hash ^= MobileAppCategory.GetHashCode();
       hash ^= (int) criterionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -328,6 +351,10 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         output.WriteRawTag(58);
         output.WriteMessage(Placement);
       }
+      if (criterionCase_ == CriterionOneofCase.MobileAppCategory) {
+        output.WriteRawTag(66);
+        output.WriteMessage(MobileAppCategory);
+      }
       if (criterionId_ != null) {
         _single_criterionId_codec.WriteTagAndValue(output, CriterionId);
       }
@@ -362,6 +389,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
       if (criterionCase_ == CriterionOneofCase.Placement) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Placement);
+      }
+      if (criterionCase_ == CriterionOneofCase.MobileAppCategory) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileAppCategory);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -414,6 +444,12 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             Placement = new global::Google.Ads.GoogleAds.V0.Common.PlacementInfo();
           }
           Placement.MergeFrom(other.Placement);
+          break;
+        case CriterionOneofCase.MobileAppCategory:
+          if (MobileAppCategory == null) {
+            MobileAppCategory = new global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo();
+          }
+          MobileAppCategory.MergeFrom(other.MobileAppCategory);
           break;
       }
 
@@ -477,6 +513,15 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             input.ReadMessage(subBuilder);
             Placement = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.MobileAppCategoryInfo();
+            if (criterionCase_ == CriterionOneofCase.MobileAppCategory) {
+              subBuilder.MergeFrom(MobileAppCategory);
+            }
+            input.ReadMessage(subBuilder);
+            MobileAppCategory = subBuilder;
             break;
           }
           case 210: {

@@ -25,92 +25,155 @@ namespace Google.Ads.GoogleAds.V0.Common {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cixnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vbWV0cmljcy5wcm90",
-            "bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uGh5nb29nbGUvcHJv",
-            "dG9idWYvd3JhcHBlcnMucHJvdG8ivBoKB01ldHJpY3MSTAomYWxsX2NvbnZl",
-            "cnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3JhdGUYQSABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuRG91YmxlVmFsdWUSOwoVYWxsX2NvbnZlcnNpb25zX3ZhbHVl",
-            "GEIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjUKD2FsbF9j",
-            "b252ZXJzaW9ucxgHIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
-            "ZRJECh5hbGxfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3QYPiABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSXQo3YWxsX2NvbnZlcnNpb25z",
-            "X2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbhhDIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIyCgxhdmVyYWdlX2Nv",
-            "c3QYCCABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSMQoLYXZl",
-            "cmFnZV9jcGMYCSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
-            "MQoLYXZlcmFnZV9jcG0YCiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
-            "VmFsdWUSMQoLYXZlcmFnZV9jcHYYCyABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "RG91YmxlVmFsdWUSNgoQYXZlcmFnZV9wb3NpdGlvbhgNIAEoCzIcLmdvb2ds",
-            "ZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIzCg1iZW5jaG1hcmtfY3RyGE0gASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjEKC2JvdW5jZV9yYXRl",
-            "GA8gASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEisKBmNsaWNr",
-            "cxgTIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEkoKJGNvbnRl",
-            "bnRfYnVkZ2V0X2xvc3RfaW1wcmVzc2lvbl9zaGFyZRgUIAEoCzIcLmdvb2ds",
-            "ZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI+Chhjb250ZW50X2ltcHJlc3Npb25f",
-            "c2hhcmUYFSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSUAoq",
-            "Y29udmVyc2lvbl9sYXN0X3JlY2VpdmVkX3JlcXVlc3RfZGF0ZV90aW1lGEkg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEkUKH2NvbnZlcnNp",
-            "b25fbGFzdF9jb252ZXJzaW9uX2RhdGUYSiABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSSAoiY29udGVudF9yYW5rX2xvc3RfaW1wcmVzc2lv",
-            "bl9zaGFyZRgWIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJI",
-            "CiJjb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc19yYXRlGEUgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjcKEWNvbnZlcnNpb25zX3Zh",
-            "bHVlGEYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEkAKGmNv",
-            "bnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0GEcgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLkRvdWJsZVZhbHVlElkKM2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rp",
-            "b25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbhhIIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5Eb3VibGVWYWx1ZRIxCgtjb252ZXJzaW9ucxgZIAEoCzIcLmdvb2ds",
-            "ZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIwCgtjb3N0X21pY3JvcxgaIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEj4KGGNvc3RfcGVyX2FsbF9j",
-            "b252ZXJzaW9ucxhEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
-            "ZRI5ChNjb3N0X3Blcl9jb252ZXJzaW9uGBwgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLkRvdWJsZVZhbHVlEj4KGGNyb3NzX2RldmljZV9jb252ZXJzaW9ucxgd",
-            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIpCgNjdHIYHiAB",
-            "KAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSNQoPZW5nYWdlbWVu",
-            "dF9yYXRlGB8gASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjAK",
-            "C2VuZ2FnZW1lbnRzGCAgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
-            "dWUSRQofaG90ZWxfYXZlcmFnZV9sZWFkX3ZhbHVlX21pY3JvcxhLIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIwCgtpbXByZXNzaW9ucxgl",
-            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjYKEGludGVyYWN0",
-            "aW9uX3JhdGUYJiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
-            "MQoMaW50ZXJhY3Rpb25zGCcgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0",
-            "VmFsdWUSOAoSaW52YWxpZF9jbGlja19yYXRlGCggASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLkRvdWJsZVZhbHVlEjMKDmludmFsaWRfY2xpY2tzGCkgASgLMhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOgoUcGVyY2VudF9uZXdfdmlz",
-            "aXRvcnMYKiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSMAoL",
-            "cGhvbmVfY2FsbHMYKyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
-            "ZRI2ChFwaG9uZV9pbXByZXNzaW9ucxgsIAEoCzIbLmdvb2dsZS5wcm90b2J1",
-            "Zi5JbnQ2NFZhbHVlEjgKEnBob25lX3Rocm91Z2hfcmF0ZRgtIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIyCgxyZWxhdGl2ZV9jdHIYLiAB",
-            "KAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSSgokc2VhcmNoX2Fi",
-            "c29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJlGE4gASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLkRvdWJsZVZhbHVlEkkKI3NlYXJjaF9idWRnZXRfbG9zdF9pbXBy",
-            "ZXNzaW9uX3NoYXJlGC8gASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZh",
-            "bHVlEkkKI3NlYXJjaF9leGFjdF9tYXRjaF9pbXByZXNzaW9uX3NoYXJlGDEg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEj0KF3NlYXJjaF9p",
-            "bXByZXNzaW9uX3NoYXJlGDIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
-            "ZVZhbHVlEkcKIXNlYXJjaF9yYW5rX2xvc3RfaW1wcmVzc2lvbl9zaGFyZRgz",
-            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI/Chl2YWx1ZV9w",
-            "ZXJfYWxsX2NvbnZlcnNpb25zGDQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRv",
-            "dWJsZVZhbHVlEjoKFHZhbHVlX3Blcl9jb252ZXJzaW9uGDUgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEj0KF3ZpZGVvX3F1YXJ0aWxlXzEw",
-            "MF9yYXRlGDYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjwK",
-            "FnZpZGVvX3F1YXJ0aWxlXzI1X3JhdGUYNyABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuRG91YmxlVmFsdWUSPAoWdmlkZW9fcXVhcnRpbGVfNTBfcmF0ZRg4IAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI8ChZ2aWRlb19xdWFy",
-            "dGlsZV83NV9yYXRlGDkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZh",
-            "bHVlEjUKD3ZpZGVvX3ZpZXdfcmF0ZRg6IAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5Eb3VibGVWYWx1ZRIwCgt2aWRlb192aWV3cxg7IAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5JbnQ2NFZhbHVlEj0KGHZpZXdfdGhyb3VnaF9jb252ZXJzaW9u",
-            "cxg8IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQsIBCiJjb20u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uQgxNZXRyaWNzUHJvdG9Q",
-            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRz",
-            "Lkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "MFxDb21tb25iBnByb3RvMw=="));
+            "bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uGjpnb29nbGUvYWRz",
+            "L2dvb2dsZWFkcy92MC9lbnVtcy9pbnRlcmFjdGlvbl9ldmVudF90eXBlLnBy",
+            "b3RvGjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9xdWFsaXR5X3Nj",
+            "b3JlX2J1Y2tldC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnBy",
+            "b3RvIswvCgdNZXRyaWNzEkgKImFic29sdXRlX3RvcF9pbXByZXNzaW9uX3Bl",
+            "cmNlbnRhZ2UYXyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
+            "NQoPYWN0aXZlX3ZpZXdfY3BtGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRv",
+            "dWJsZVZhbHVlEjUKD2FjdGl2ZV92aWV3X2N0chhPIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5Eb3VibGVWYWx1ZRI8ChdhY3RpdmVfdmlld19pbXByZXNzaW9u",
+            "cxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEj8KGWFjdGl2",
+            "ZV92aWV3X21lYXN1cmFiaWxpdHkYYCABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "RG91YmxlVmFsdWUSRwoiYWN0aXZlX3ZpZXdfbWVhc3VyYWJsZV9jb3N0X21p",
+            "Y3JvcxgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEkcKImFj",
+            "dGl2ZV92aWV3X21lYXN1cmFibGVfaW1wcmVzc2lvbnMYBCABKAsyGy5nb29n",
+            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRI9ChdhY3RpdmVfdmlld192aWV3YWJp",
+            "bGl0eRhhIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJMCiZh",
+            "bGxfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfcmF0ZRhBIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI7ChVhbGxfY29udmVyc2lv",
+            "bnNfdmFsdWUYQiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
+            "NQoPYWxsX2NvbnZlcnNpb25zGAcgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRv",
+            "dWJsZVZhbHVlEkQKHmFsbF9jb252ZXJzaW9uc192YWx1ZV9wZXJfY29zdBg+",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJdCjdhbGxfY29u",
+            "dmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0",
+            "aW9uGEMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjIKDGF2",
+            "ZXJhZ2VfY29zdBgIIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
+            "ZRIxCgthdmVyYWdlX2NwYxgJIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3Vi",
+            "bGVWYWx1ZRIxCgthdmVyYWdlX2NwZRhiIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5Eb3VibGVWYWx1ZRIxCgthdmVyYWdlX2NwbRgKIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5Eb3VibGVWYWx1ZRIxCgthdmVyYWdlX2NwdhgLIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI3ChFhdmVyYWdlX2ZyZXF1ZW5j",
+            "eRgMIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI4ChJhdmVy",
+            "YWdlX3BhZ2Vfdmlld3MYYyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
+            "VmFsdWUSNgoQYXZlcmFnZV9wb3NpdGlvbhgNIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5Eb3VibGVWYWx1ZRI6ChRhdmVyYWdlX3RpbWVfb25fc2l0ZRhUIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI/ChliZW5jaG1hcmtf",
+            "YXZlcmFnZV9tYXhfY3BjGA4gASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
+            "ZVZhbHVlEjMKDWJlbmNobWFya19jdHIYTSABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuRG91YmxlVmFsdWUSMQoLYm91bmNlX3JhdGUYDyABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuRG91YmxlVmFsdWUSKwoGY2xpY2tzGBMgASgLMhsuZ29vZ2xl",
+            "LnByb3RvYnVmLkludDY0VmFsdWUSSgokY29udGVudF9idWRnZXRfbG9zdF9p",
+            "bXByZXNzaW9uX3NoYXJlGBQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
+            "ZVZhbHVlEj4KGGNvbnRlbnRfaW1wcmVzc2lvbl9zaGFyZRgVIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJQCipjb252ZXJzaW9uX2xhc3Rf",
+            "cmVjZWl2ZWRfcmVxdWVzdF9kYXRlX3RpbWUYSSABKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUSRQofY29udmVyc2lvbl9sYXN0X2NvbnZlcnNp",
+            "b25fZGF0ZRhKIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJI",
+            "CiJjb250ZW50X3JhbmtfbG9zdF9pbXByZXNzaW9uX3NoYXJlGBYgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEkgKImNvbnZlcnNpb25zX2Zy",
+            "b21faW50ZXJhY3Rpb25zX3JhdGUYRSABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "RG91YmxlVmFsdWUSNwoRY29udmVyc2lvbnNfdmFsdWUYRiABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuRG91YmxlVmFsdWUSQAoaY29udmVyc2lvbnNfdmFsdWVf",
+            "cGVyX2Nvc3QYRyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
+            "WQozY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2lu",
+            "dGVyYWN0aW9uGEggASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVl",
+            "EjEKC2NvbnZlcnNpb25zGBkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
+            "ZVZhbHVlEjAKC2Nvc3RfbWljcm9zGBogASgLMhsuZ29vZ2xlLnByb3RvYnVm",
+            "LkludDY0VmFsdWUSPgoYY29zdF9wZXJfYWxsX2NvbnZlcnNpb25zGEQgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjkKE2Nvc3RfcGVyX2Nv",
+            "bnZlcnNpb24YHCABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
+            "UgosY29zdF9wZXJfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNp",
+            "b24YaiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSPgoYY3Jv",
+            "c3NfZGV2aWNlX2NvbnZlcnNpb25zGB0gASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LkRvdWJsZVZhbHVlEikKA2N0chgeIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5E",
+            "b3VibGVWYWx1ZRJKCiRjdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVy",
+            "c2lvbnMYZSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSYQo7",
+            "Y3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX2Zyb21faW50",
+            "ZXJhY3Rpb25zX3JhdGUYZiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
+            "VmFsdWUScgpMY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25z",
+            "X2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbhhnIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJQCipjdXJyZW50X21v",
+            "ZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfdmFsdWUYaCABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuRG91YmxlVmFsdWUSWQozY3VycmVudF9tb2RlbF9hdHRy",
+            "aWJ1dGVkX2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0GGkgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjUKD2VuZ2FnZW1lbnRfcmF0ZRgf",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIwCgtlbmdhZ2Vt",
+            "ZW50cxggIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEkUKH2hv",
+            "dGVsX2F2ZXJhZ2VfbGVhZF92YWx1ZV9taWNyb3MYSyABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuRG91YmxlVmFsdWUScwohaGlzdG9yaWNhbF9jcmVhdGl2ZV9x",
+            "dWFsaXR5X3Njb3JlGFAgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZW51bXMuUXVhbGl0eVNjb3JlQnVja2V0RW51bS5RdWFsaXR5U2NvcmVCdWNr",
+            "ZXQSdwolaGlzdG9yaWNhbF9sYW5kaW5nX3BhZ2VfcXVhbGl0eV9zY29yZRhR",
+            "IAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlF1YWxpdHlT",
+            "Y29yZUJ1Y2tldEVudW0uUXVhbGl0eVNjb3JlQnVja2V0Ej0KGGhpc3Rvcmlj",
+            "YWxfcXVhbGl0eV9zY29yZRhSIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
+            "NFZhbHVlEnEKH2hpc3RvcmljYWxfc2VhcmNoX3ByZWRpY3RlZF9jdHIYUyAB",
+            "KA4ySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5RdWFsaXR5U2Nv",
+            "cmVCdWNrZXRFbnVtLlF1YWxpdHlTY29yZUJ1Y2tldBIzCg5nbWFpbF9mb3J3",
+            "YXJkcxhVIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjAKC2dt",
+            "YWlsX3NhdmVzGFYgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUS",
+            "OwoWZ21haWxfc2Vjb25kYXJ5X2NsaWNrcxhXIAEoCzIbLmdvb2dsZS5wcm90",
+            "b2J1Zi5JbnQ2NFZhbHVlEjUKEGltcHJlc3Npb25fcmVhY2gYJCABKAsyGy5n",
+            "b29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIwCgtpbXByZXNzaW9ucxglIAEo",
+            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjYKEGludGVyYWN0aW9u",
+            "X3JhdGUYJiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSMQoM",
+            "aW50ZXJhY3Rpb25zGCcgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
+            "dWUSZwoRaW50ZXJhY3Rpb25fdHlwZXMYZCADKA4yTC5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5lbnVtcy5JbnRlcmFjdGlvbkV2ZW50VHlwZUVudW0uSW50",
+            "ZXJhY3Rpb25FdmVudFR5cGUSOAoSaW52YWxpZF9jbGlja19yYXRlGCggASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjMKDmludmFsaWRfY2xp",
+            "Y2tzGCkgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOgoUcGVy",
+            "Y2VudF9uZXdfdmlzaXRvcnMYKiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91",
+            "YmxlVmFsdWUSMAoLcGhvbmVfY2FsbHMYKyABKAsyGy5nb29nbGUucHJvdG9i",
+            "dWYuSW50NjRWYWx1ZRI2ChFwaG9uZV9pbXByZXNzaW9ucxgsIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjgKEnBob25lX3Rocm91Z2hfcmF0",
+            "ZRgtIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIyCgxyZWxh",
+            "dGl2ZV9jdHIYLiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
+            "Sgokc2VhcmNoX2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJlGE4gASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlElYKMHNlYXJjaF9idWRn",
+            "ZXRfbG9zdF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9zaGFyZRhYIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJJCiNzZWFyY2hfYnVkZ2V0",
+            "X2xvc3RfaW1wcmVzc2lvbl9zaGFyZRgvIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5Eb3VibGVWYWx1ZRJNCidzZWFyY2hfYnVkZ2V0X2xvc3RfdG9wX2ltcHJl",
+            "c3Npb25fc2hhcmUYWSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFs",
+            "dWUSOAoSc2VhcmNoX2NsaWNrX3NoYXJlGDAgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLkRvdWJsZVZhbHVlEkkKI3NlYXJjaF9leGFjdF9tYXRjaF9pbXByZXNz",
+            "aW9uX3NoYXJlGDEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVl",
+            "Ej0KF3NlYXJjaF9pbXByZXNzaW9uX3NoYXJlGDIgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLkRvdWJsZVZhbHVlElQKLnNlYXJjaF9yYW5rX2xvc3RfYWJzb2x1",
+            "dGVfdG9wX2ltcHJlc3Npb25fc2hhcmUYWiABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuRG91YmxlVmFsdWUSRwohc2VhcmNoX3JhbmtfbG9zdF9pbXByZXNzaW9u",
+            "X3NoYXJlGDMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEksK",
+            "JXNlYXJjaF9yYW5rX2xvc3RfdG9wX2ltcHJlc3Npb25fc2hhcmUYWyABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSQQobc2VhcmNoX3RvcF9p",
+            "bXByZXNzaW9uX3NoYXJlGFwgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
+            "ZVZhbHVlEj8KGXRvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2UYXSABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSPwoZdmFsdWVfcGVyX2FsbF9j",
+            "b252ZXJzaW9ucxg0IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
+            "ZRI6ChR2YWx1ZV9wZXJfY29udmVyc2lvbhg1IAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5Eb3VibGVWYWx1ZRJTCi12YWx1ZV9wZXJfY3VycmVudF9tb2RlbF9h",
+            "dHRyaWJ1dGVkX2NvbnZlcnNpb24YXiABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "RG91YmxlVmFsdWUSPQoXdmlkZW9fcXVhcnRpbGVfMTAwX3JhdGUYNiABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSPAoWdmlkZW9fcXVhcnRp",
+            "bGVfMjVfcmF0ZRg3IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
+            "ZRI8ChZ2aWRlb19xdWFydGlsZV81MF9yYXRlGDggASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLkRvdWJsZVZhbHVlEjwKFnZpZGVvX3F1YXJ0aWxlXzc1X3JhdGUY",
+            "OSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSNQoPdmlkZW9f",
+            "dmlld19yYXRlGDogASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVl",
+            "EjAKC3ZpZGVvX3ZpZXdzGDsgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0",
+            "VmFsdWUSPQoYdmlld190aHJvdWdoX2NvbnZlcnNpb25zGDwgASgLMhsuZ29v",
+            "Z2xlLnByb3RvYnVmLkludDY0VmFsdWVC5wEKImNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5jb21tb25CDE1ldHJpY3NQcm90b1ABWkRnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
+            "Y29tbW9uO2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYw",
+            "LkNvbW1vbsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXENvbW1vbuoCIkdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.Metrics), global::Google.Ads.GoogleAds.V0.Common.Metrics.Parser, new[]{ "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromInteractionsValuePerInteraction", "AverageCost", "AverageCpc", "AverageCpm", "AverageCpv", "AveragePosition", "BenchmarkCtr", "BounceRate", "Clicks", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CrossDeviceConversions", "Ctr", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostImpressionShare", "ValuePerAllConversions", "ValuePerConversion", "VideoQuartile100Rate", "VideoQuartile25Rate", "VideoQuartile50Rate", "VideoQuartile75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.Metrics), global::Google.Ads.GoogleAds.V0.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromInteractionsValuePerInteraction", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AverageFrequency", "AveragePageViews", "AveragePosition", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BenchmarkCtr", "BounceRate", "Clicks", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionReach", "Impressions", "InteractionRate", "Interactions", "InteractionTypes", "InvalidClickRate", "InvalidClicks", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "TopImpressionPercentage", "ValuePerAllConversions", "ValuePerConversion", "ValuePerCurrentModelAttributedConversion", "VideoQuartile100Rate", "VideoQuartile25Rate", "VideoQuartile50Rate", "VideoQuartile75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null)
           }));
     }
     #endregion
@@ -145,6 +208,14 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Metrics(Metrics other) : this() {
+      AbsoluteTopImpressionPercentage = other.AbsoluteTopImpressionPercentage;
+      ActiveViewCpm = other.ActiveViewCpm;
+      ActiveViewCtr = other.ActiveViewCtr;
+      ActiveViewImpressions = other.ActiveViewImpressions;
+      ActiveViewMeasurability = other.ActiveViewMeasurability;
+      ActiveViewMeasurableCostMicros = other.ActiveViewMeasurableCostMicros;
+      ActiveViewMeasurableImpressions = other.ActiveViewMeasurableImpressions;
+      ActiveViewViewability = other.ActiveViewViewability;
       AllConversionsFromInteractionsRate = other.AllConversionsFromInteractionsRate;
       AllConversionsValue = other.AllConversionsValue;
       AllConversions = other.AllConversions;
@@ -152,9 +223,14 @@ namespace Google.Ads.GoogleAds.V0.Common {
       AllConversionsFromInteractionsValuePerInteraction = other.AllConversionsFromInteractionsValuePerInteraction;
       AverageCost = other.AverageCost;
       AverageCpc = other.AverageCpc;
+      AverageCpe = other.AverageCpe;
       AverageCpm = other.AverageCpm;
       AverageCpv = other.AverageCpv;
+      AverageFrequency = other.AverageFrequency;
+      AveragePageViews = other.AveragePageViews;
       AveragePosition = other.AveragePosition;
+      AverageTimeOnSite = other.AverageTimeOnSite;
+      BenchmarkAverageMaxCpc = other.BenchmarkAverageMaxCpc;
       BenchmarkCtr = other.BenchmarkCtr;
       BounceRate = other.BounceRate;
       Clicks = other.Clicks;
@@ -171,14 +247,29 @@ namespace Google.Ads.GoogleAds.V0.Common {
       CostMicros = other.CostMicros;
       CostPerAllConversions = other.CostPerAllConversions;
       CostPerConversion = other.CostPerConversion;
+      CostPerCurrentModelAttributedConversion = other.CostPerCurrentModelAttributedConversion;
       CrossDeviceConversions = other.CrossDeviceConversions;
       Ctr = other.Ctr;
+      CurrentModelAttributedConversions = other.CurrentModelAttributedConversions;
+      CurrentModelAttributedConversionsFromInteractionsRate = other.CurrentModelAttributedConversionsFromInteractionsRate;
+      CurrentModelAttributedConversionsFromInteractionsValuePerInteraction = other.CurrentModelAttributedConversionsFromInteractionsValuePerInteraction;
+      CurrentModelAttributedConversionsValue = other.CurrentModelAttributedConversionsValue;
+      CurrentModelAttributedConversionsValuePerCost = other.CurrentModelAttributedConversionsValuePerCost;
       EngagementRate = other.EngagementRate;
       Engagements = other.Engagements;
       HotelAverageLeadValueMicros = other.HotelAverageLeadValueMicros;
+      historicalCreativeQualityScore_ = other.historicalCreativeQualityScore_;
+      historicalLandingPageQualityScore_ = other.historicalLandingPageQualityScore_;
+      HistoricalQualityScore = other.HistoricalQualityScore;
+      historicalSearchPredictedCtr_ = other.historicalSearchPredictedCtr_;
+      GmailForwards = other.GmailForwards;
+      GmailSaves = other.GmailSaves;
+      GmailSecondaryClicks = other.GmailSecondaryClicks;
+      ImpressionReach = other.ImpressionReach;
       Impressions = other.Impressions;
       InteractionRate = other.InteractionRate;
       Interactions = other.Interactions;
+      interactionTypes_ = other.interactionTypes_.Clone();
       InvalidClickRate = other.InvalidClickRate;
       InvalidClicks = other.InvalidClicks;
       PercentNewVisitors = other.PercentNewVisitors;
@@ -187,12 +278,20 @@ namespace Google.Ads.GoogleAds.V0.Common {
       PhoneThroughRate = other.PhoneThroughRate;
       RelativeCtr = other.RelativeCtr;
       SearchAbsoluteTopImpressionShare = other.SearchAbsoluteTopImpressionShare;
+      SearchBudgetLostAbsoluteTopImpressionShare = other.SearchBudgetLostAbsoluteTopImpressionShare;
       SearchBudgetLostImpressionShare = other.SearchBudgetLostImpressionShare;
+      SearchBudgetLostTopImpressionShare = other.SearchBudgetLostTopImpressionShare;
+      SearchClickShare = other.SearchClickShare;
       SearchExactMatchImpressionShare = other.SearchExactMatchImpressionShare;
       SearchImpressionShare = other.SearchImpressionShare;
+      SearchRankLostAbsoluteTopImpressionShare = other.SearchRankLostAbsoluteTopImpressionShare;
       SearchRankLostImpressionShare = other.SearchRankLostImpressionShare;
+      SearchRankLostTopImpressionShare = other.SearchRankLostTopImpressionShare;
+      SearchTopImpressionShare = other.SearchTopImpressionShare;
+      TopImpressionPercentage = other.TopImpressionPercentage;
       ValuePerAllConversions = other.ValuePerAllConversions;
       ValuePerConversion = other.ValuePerConversion;
+      ValuePerCurrentModelAttributedConversion = other.ValuePerCurrentModelAttributedConversion;
       VideoQuartile100Rate = other.VideoQuartile100Rate;
       VideoQuartile25Rate = other.VideoQuartile25Rate;
       VideoQuartile50Rate = other.VideoQuartile50Rate;
@@ -206,6 +305,133 @@ namespace Google.Ads.GoogleAds.V0.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Metrics Clone() {
       return new Metrics(this);
+    }
+
+    /// <summary>Field number for the "absolute_top_impression_percentage" field.</summary>
+    public const int AbsoluteTopImpressionPercentageFieldNumber = 95;
+    private static readonly pb::FieldCodec<double?> _single_absoluteTopImpressionPercentage_codec = pb::FieldCodec.ForStructWrapper<double>(762);
+    private double? absoluteTopImpressionPercentage_;
+    /// <summary>
+    /// The percent of your ad impressions that are shown as the very first ad
+    /// above the organic search results.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? AbsoluteTopImpressionPercentage {
+      get { return absoluteTopImpressionPercentage_; }
+      set {
+        absoluteTopImpressionPercentage_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "active_view_cpm" field.</summary>
+    public const int ActiveViewCpmFieldNumber = 1;
+    private static readonly pb::FieldCodec<double?> _single_activeViewCpm_codec = pb::FieldCodec.ForStructWrapper<double>(10);
+    private double? activeViewCpm_;
+    /// <summary>
+    /// Average cost of viewable impressions (`active_view_impressions`).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? ActiveViewCpm {
+      get { return activeViewCpm_; }
+      set {
+        activeViewCpm_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "active_view_ctr" field.</summary>
+    public const int ActiveViewCtrFieldNumber = 79;
+    private static readonly pb::FieldCodec<double?> _single_activeViewCtr_codec = pb::FieldCodec.ForStructWrapper<double>(634);
+    private double? activeViewCtr_;
+    /// <summary>
+    /// Active view measurable clicks divided by active view viewable impressions.
+    /// This metric is reported only for display network.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? ActiveViewCtr {
+      get { return activeViewCtr_; }
+      set {
+        activeViewCtr_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "active_view_impressions" field.</summary>
+    public const int ActiveViewImpressionsFieldNumber = 2;
+    private static readonly pb::FieldCodec<long?> _single_activeViewImpressions_codec = pb::FieldCodec.ForStructWrapper<long>(18);
+    private long? activeViewImpressions_;
+    /// <summary>
+    /// A measurement of how often your ad has become viewable on a Display
+    /// Network site.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ActiveViewImpressions {
+      get { return activeViewImpressions_; }
+      set {
+        activeViewImpressions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "active_view_measurability" field.</summary>
+    public const int ActiveViewMeasurabilityFieldNumber = 96;
+    private static readonly pb::FieldCodec<double?> _single_activeViewMeasurability_codec = pb::FieldCodec.ForStructWrapper<double>(770);
+    private double? activeViewMeasurability_;
+    /// <summary>
+    /// The ratio of impressions that could be measured by Active View over the
+    /// number of served impressions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? ActiveViewMeasurability {
+      get { return activeViewMeasurability_; }
+      set {
+        activeViewMeasurability_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "active_view_measurable_cost_micros" field.</summary>
+    public const int ActiveViewMeasurableCostMicrosFieldNumber = 3;
+    private static readonly pb::FieldCodec<long?> _single_activeViewMeasurableCostMicros_codec = pb::FieldCodec.ForStructWrapper<long>(26);
+    private long? activeViewMeasurableCostMicros_;
+    /// <summary>
+    /// The cost of the impressions you received that were measurable by Active
+    /// View.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ActiveViewMeasurableCostMicros {
+      get { return activeViewMeasurableCostMicros_; }
+      set {
+        activeViewMeasurableCostMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "active_view_measurable_impressions" field.</summary>
+    public const int ActiveViewMeasurableImpressionsFieldNumber = 4;
+    private static readonly pb::FieldCodec<long?> _single_activeViewMeasurableImpressions_codec = pb::FieldCodec.ForStructWrapper<long>(34);
+    private long? activeViewMeasurableImpressions_;
+    /// <summary>
+    /// The number of times your ads are appearing on placements in positions
+    /// where they can be seen.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ActiveViewMeasurableImpressions {
+      get { return activeViewMeasurableImpressions_; }
+      set {
+        activeViewMeasurableImpressions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "active_view_viewability" field.</summary>
+    public const int ActiveViewViewabilityFieldNumber = 97;
+    private static readonly pb::FieldCodec<double?> _single_activeViewViewability_codec = pb::FieldCodec.ForStructWrapper<double>(778);
+    private double? activeViewViewability_;
+    /// <summary>
+    /// The percentage of time when your ad appeared on an Active View enabled site
+    /// (measurable impressions) and was viewable (viewable impressions).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? ActiveViewViewability {
+      get { return activeViewViewability_; }
+      set {
+        activeViewViewability_ = value;
+      }
     }
 
     /// <summary>Field number for the "all_conversions_from_interactions_rate" field.</summary>
@@ -244,8 +470,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private static readonly pb::FieldCodec<double?> _single_allConversions_codec = pb::FieldCodec.ForStructWrapper<double>(58);
     private double? allConversions_;
     /// <summary>
-    /// The total number of conversions. This includes "Conversions" plus
-    /// conversions that have their "Include in Conversions" setting unchecked.
+    /// The total number of conversions. This only includes conversion actions
+    /// which include_in_conversions_metric attribute is set to true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? AllConversions {
@@ -319,6 +545,23 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
     }
 
+    /// <summary>Field number for the "average_cpe" field.</summary>
+    public const int AverageCpeFieldNumber = 98;
+    private static readonly pb::FieldCodec<double?> _single_averageCpe_codec = pb::FieldCodec.ForStructWrapper<double>(786);
+    private double? averageCpe_;
+    /// <summary>
+    /// The average amount that you've been charged for an ad engagement. This
+    /// amount is the total cost of all ad engagements divided by the total number
+    /// of ad engagements.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? AverageCpe {
+      get { return averageCpe_; }
+      set {
+        averageCpe_ = value;
+      }
+    }
+
     /// <summary>Field number for the "average_cpm" field.</summary>
     public const int AverageCpmFieldNumber = 10;
     private static readonly pb::FieldCodec<double?> _single_averageCpm_codec = pb::FieldCodec.ForStructWrapper<double>(82);
@@ -351,6 +594,37 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
     }
 
+    /// <summary>Field number for the "average_frequency" field.</summary>
+    public const int AverageFrequencyFieldNumber = 12;
+    private static readonly pb::FieldCodec<double?> _single_averageFrequency_codec = pb::FieldCodec.ForStructWrapper<double>(98);
+    private double? averageFrequency_;
+    /// <summary>
+    /// Average number of times a unique cookie was exposed to your ad
+    /// over a given time period. Imported from Google Analytics.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? AverageFrequency {
+      get { return averageFrequency_; }
+      set {
+        averageFrequency_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "average_page_views" field.</summary>
+    public const int AveragePageViewsFieldNumber = 99;
+    private static readonly pb::FieldCodec<double?> _single_averagePageViews_codec = pb::FieldCodec.ForStructWrapper<double>(794);
+    private double? averagePageViews_;
+    /// <summary>
+    /// Average number of pages viewed per session.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? AveragePageViews {
+      get { return averagePageViews_; }
+      set {
+        averagePageViews_ = value;
+      }
+    }
+
     /// <summary>Field number for the "average_position" field.</summary>
     public const int AveragePositionFieldNumber = 13;
     private static readonly pb::FieldCodec<double?> _single_averagePosition_codec = pb::FieldCodec.ForStructWrapper<double>(106);
@@ -363,6 +637,37 @@ namespace Google.Ads.GoogleAds.V0.Common {
       get { return averagePosition_; }
       set {
         averagePosition_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "average_time_on_site" field.</summary>
+    public const int AverageTimeOnSiteFieldNumber = 84;
+    private static readonly pb::FieldCodec<double?> _single_averageTimeOnSite_codec = pb::FieldCodec.ForStructWrapper<double>(674);
+    private double? averageTimeOnSite_;
+    /// <summary>
+    /// Total duration of all sessions (in seconds) / number of sessions. Imported
+    /// from Google Analytics.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? AverageTimeOnSite {
+      get { return averageTimeOnSite_; }
+      set {
+        averageTimeOnSite_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "benchmark_average_max_cpc" field.</summary>
+    public const int BenchmarkAverageMaxCpcFieldNumber = 14;
+    private static readonly pb::FieldCodec<double?> _single_benchmarkAverageMaxCpc_codec = pb::FieldCodec.ForStructWrapper<double>(114);
+    private double? benchmarkAverageMaxCpc_;
+    /// <summary>
+    /// An indication of how other advertisers are bidding on similar products.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? BenchmarkAverageMaxCpc {
+      get { return benchmarkAverageMaxCpc_; }
+      set {
+        benchmarkAverageMaxCpc_ = value;
       }
     }
 
@@ -508,7 +813,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private double? conversionsFromInteractionsRate_;
     /// <summary>
     /// Conversions from interactions divided by the number of ad interactions
-    /// (such as clicks for text ads or views for video ads).
+    /// (such as clicks for text ads or views for video ads). This only includes
+    /// conversion actions which include_in_conversions_metric attribute is set to
+    /// true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsFromInteractionsRate {
@@ -523,7 +830,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private static readonly pb::FieldCodec<double?> _single_conversionsValue_codec = pb::FieldCodec.ForStructWrapper<double>(562);
     private double? conversionsValue_;
     /// <summary>
-    /// The total value of conversions.
+    /// The total value of conversions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsValue {
@@ -538,7 +846,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private static readonly pb::FieldCodec<double?> _single_conversionsValuePerCost_codec = pb::FieldCodec.ForStructWrapper<double>(570);
     private double? conversionsValuePerCost_;
     /// <summary>
-    /// The value of conversions divided by the cost of ad interactions.
+    /// The value of conversions divided by the cost of ad interactions. This only
+    /// includes conversion actions which include_in_conversions_metric attribute
+    /// is set to true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsValuePerCost {
@@ -554,7 +864,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private double? conversionsFromInteractionsValuePerInteraction_;
     /// <summary>
     /// The value of conversions from interactions divided by the number of ad
-    /// interactions.
+    /// interactions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsFromInteractionsValuePerInteraction {
@@ -569,8 +880,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private static readonly pb::FieldCodec<double?> _single_conversions_codec = pb::FieldCodec.ForStructWrapper<double>(202);
     private double? conversions_;
     /// <summary>
-    /// The number of conversions. This only includes conversion actions which have
-    /// "Include in Conversions" checked.
+    /// The number of conversions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? Conversions {
@@ -616,13 +927,32 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private static readonly pb::FieldCodec<double?> _single_costPerConversion_codec = pb::FieldCodec.ForStructWrapper<double>(226);
     private double? costPerConversion_;
     /// <summary>
-    /// The cost of ad interactions divided by conversions.
+    /// The cost of ad interactions divided by conversions. This only includes
+    /// conversion actions which include_in_conversions_metric attribute is set to
+    /// true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CostPerConversion {
       get { return costPerConversion_; }
       set {
         costPerConversion_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cost_per_current_model_attributed_conversion" field.</summary>
+    public const int CostPerCurrentModelAttributedConversionFieldNumber = 106;
+    private static readonly pb::FieldCodec<double?> _single_costPerCurrentModelAttributedConversion_codec = pb::FieldCodec.ForStructWrapper<double>(850);
+    private double? costPerCurrentModelAttributedConversion_;
+    /// <summary>
+    /// The cost of ad interactions divided by current model attributed
+    /// conversions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? CostPerCurrentModelAttributedConversion {
+      get { return costPerCurrentModelAttributedConversion_; }
+      set {
+        costPerCurrentModelAttributedConversion_ = value;
       }
     }
 
@@ -656,6 +986,92 @@ namespace Google.Ads.GoogleAds.V0.Common {
       get { return ctr_; }
       set {
         ctr_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "current_model_attributed_conversions" field.</summary>
+    public const int CurrentModelAttributedConversionsFieldNumber = 101;
+    private static readonly pb::FieldCodec<double?> _single_currentModelAttributedConversions_codec = pb::FieldCodec.ForStructWrapper<double>(810);
+    private double? currentModelAttributedConversions_;
+    /// <summary>
+    /// Shows how your historic conversions data would look under the attribution
+    /// model you've currently selected. This only includes conversion actions
+    /// which include_in_conversions_metric attribute is set to true.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? CurrentModelAttributedConversions {
+      get { return currentModelAttributedConversions_; }
+      set {
+        currentModelAttributedConversions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "current_model_attributed_conversions_from_interactions_rate" field.</summary>
+    public const int CurrentModelAttributedConversionsFromInteractionsRateFieldNumber = 102;
+    private static readonly pb::FieldCodec<double?> _single_currentModelAttributedConversionsFromInteractionsRate_codec = pb::FieldCodec.ForStructWrapper<double>(818);
+    private double? currentModelAttributedConversionsFromInteractionsRate_;
+    /// <summary>
+    /// Current model attributed conversions from interactions divided by the
+    /// number of ad interactions (such as clicks for text ads or views for video
+    /// ads). This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? CurrentModelAttributedConversionsFromInteractionsRate {
+      get { return currentModelAttributedConversionsFromInteractionsRate_; }
+      set {
+        currentModelAttributedConversionsFromInteractionsRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "current_model_attributed_conversions_from_interactions_value_per_interaction" field.</summary>
+    public const int CurrentModelAttributedConversionsFromInteractionsValuePerInteractionFieldNumber = 103;
+    private static readonly pb::FieldCodec<double?> _single_currentModelAttributedConversionsFromInteractionsValuePerInteraction_codec = pb::FieldCodec.ForStructWrapper<double>(826);
+    private double? currentModelAttributedConversionsFromInteractionsValuePerInteraction_;
+    /// <summary>
+    /// The value of current model attributed conversions from interactions divided
+    /// by the number of ad interactions. This only includes conversion actions
+    /// which include_in_conversions_metric attribute is set to true.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? CurrentModelAttributedConversionsFromInteractionsValuePerInteraction {
+      get { return currentModelAttributedConversionsFromInteractionsValuePerInteraction_; }
+      set {
+        currentModelAttributedConversionsFromInteractionsValuePerInteraction_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "current_model_attributed_conversions_value" field.</summary>
+    public const int CurrentModelAttributedConversionsValueFieldNumber = 104;
+    private static readonly pb::FieldCodec<double?> _single_currentModelAttributedConversionsValue_codec = pb::FieldCodec.ForStructWrapper<double>(834);
+    private double? currentModelAttributedConversionsValue_;
+    /// <summary>
+    /// The total value of current model attributed conversions. This only includes
+    /// conversion actions which include_in_conversions_metric attribute is set to
+    /// true.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? CurrentModelAttributedConversionsValue {
+      get { return currentModelAttributedConversionsValue_; }
+      set {
+        currentModelAttributedConversionsValue_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "current_model_attributed_conversions_value_per_cost" field.</summary>
+    public const int CurrentModelAttributedConversionsValuePerCostFieldNumber = 105;
+    private static readonly pb::FieldCodec<double?> _single_currentModelAttributedConversionsValuePerCost_codec = pb::FieldCodec.ForStructWrapper<double>(842);
+    private double? currentModelAttributedConversionsValuePerCost_;
+    /// <summary>
+    /// The value of current model attributed conversions divided by the cost of ad
+    /// interactions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? CurrentModelAttributedConversionsValuePerCost {
+      get { return currentModelAttributedConversionsValuePerCost_; }
+      set {
+        currentModelAttributedConversionsValuePerCost_ = value;
       }
     }
 
@@ -707,6 +1123,126 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
     }
 
+    /// <summary>Field number for the "historical_creative_quality_score" field.</summary>
+    public const int HistoricalCreativeQualityScoreFieldNumber = 80;
+    private global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalCreativeQualityScore_ = 0;
+    /// <summary>
+    /// The creative historical quality score.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket HistoricalCreativeQualityScore {
+      get { return historicalCreativeQualityScore_; }
+      set {
+        historicalCreativeQualityScore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "historical_landing_page_quality_score" field.</summary>
+    public const int HistoricalLandingPageQualityScoreFieldNumber = 81;
+    private global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalLandingPageQualityScore_ = 0;
+    /// <summary>
+    /// The quality of historical landing page experience.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket HistoricalLandingPageQualityScore {
+      get { return historicalLandingPageQualityScore_; }
+      set {
+        historicalLandingPageQualityScore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "historical_quality_score" field.</summary>
+    public const int HistoricalQualityScoreFieldNumber = 82;
+    private static readonly pb::FieldCodec<long?> _single_historicalQualityScore_codec = pb::FieldCodec.ForStructWrapper<long>(658);
+    private long? historicalQualityScore_;
+    /// <summary>
+    /// The historical quality score.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? HistoricalQualityScore {
+      get { return historicalQualityScore_; }
+      set {
+        historicalQualityScore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "historical_search_predicted_ctr" field.</summary>
+    public const int HistoricalSearchPredictedCtrFieldNumber = 83;
+    private global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalSearchPredictedCtr_ = 0;
+    /// <summary>
+    /// The historical search predicted click through rate (CTR).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket HistoricalSearchPredictedCtr {
+      get { return historicalSearchPredictedCtr_; }
+      set {
+        historicalSearchPredictedCtr_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gmail_forwards" field.</summary>
+    public const int GmailForwardsFieldNumber = 85;
+    private static readonly pb::FieldCodec<long?> _single_gmailForwards_codec = pb::FieldCodec.ForStructWrapper<long>(682);
+    private long? gmailForwards_;
+    /// <summary>
+    /// The number of times the ad was forwarded to someone else as a message.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? GmailForwards {
+      get { return gmailForwards_; }
+      set {
+        gmailForwards_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gmail_saves" field.</summary>
+    public const int GmailSavesFieldNumber = 86;
+    private static readonly pb::FieldCodec<long?> _single_gmailSaves_codec = pb::FieldCodec.ForStructWrapper<long>(690);
+    private long? gmailSaves_;
+    /// <summary>
+    /// The number of times someone has saved your Gmail ad to their inbox as a
+    /// message.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? GmailSaves {
+      get { return gmailSaves_; }
+      set {
+        gmailSaves_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gmail_secondary_clicks" field.</summary>
+    public const int GmailSecondaryClicksFieldNumber = 87;
+    private static readonly pb::FieldCodec<long?> _single_gmailSecondaryClicks_codec = pb::FieldCodec.ForStructWrapper<long>(698);
+    private long? gmailSecondaryClicks_;
+    /// <summary>
+    /// The number of clicks to the landing page on the expanded state of Gmail
+    /// ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? GmailSecondaryClicks {
+      get { return gmailSecondaryClicks_; }
+      set {
+        gmailSecondaryClicks_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "impression_reach" field.</summary>
+    public const int ImpressionReachFieldNumber = 36;
+    private static readonly pb::FieldCodec<long?> _single_impressionReach_codec = pb::FieldCodec.ForStructWrapper<long>(290);
+    private long? impressionReach_;
+    /// <summary>
+    /// Number of unique cookies that were exposed to your ad over a given time
+    /// period.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ImpressionReach {
+      get { return impressionReach_; }
+      set {
+        impressionReach_ = value;
+      }
+    }
+
     /// <summary>Field number for the "impressions" field.</summary>
     public const int ImpressionsFieldNumber = 37;
     private static readonly pb::FieldCodec<long?> _single_impressions_codec = pb::FieldCodec.ForStructWrapper<long>(298);
@@ -755,6 +1291,19 @@ namespace Google.Ads.GoogleAds.V0.Common {
       set {
         interactions_ = value;
       }
+    }
+
+    /// <summary>Field number for the "interaction_types" field.</summary>
+    public const int InteractionTypesFieldNumber = 100;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType> _repeated_interactionTypes_codec
+        = pb::FieldCodec.ForEnum(802, x => (int) x, x => (global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType) x);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType> interactionTypes_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType>();
+    /// <summary>
+    /// The types of payable and free interactions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType> InteractionTypes {
+      get { return interactionTypes_; }
     }
 
     /// <summary>Field number for the "invalid_click_rate" field.</summary>
@@ -872,8 +1421,8 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private static readonly pb::FieldCodec<double?> _single_searchAbsoluteTopImpressionShare_codec = pb::FieldCodec.ForStructWrapper<double>(626);
     private double? searchAbsoluteTopImpressionShare_;
     /// <summary>
-    /// The percentage of the customer's Shopping ad impressions that are shown in
-    /// the most prominent Shopping position. See
+    /// The percentage of the customer's Shopping or Search ad impressions that are
+    /// shown in the most prominent Shopping position. See
     /// &lt;a href="https://support.google.com/adwords/answer/7501826">this Merchant
     /// Center article&lt;/a> for details. Any value below 0.1 is reported as 0.0999.
     /// </summary>
@@ -882,6 +1431,24 @@ namespace Google.Ads.GoogleAds.V0.Common {
       get { return searchAbsoluteTopImpressionShare_; }
       set {
         searchAbsoluteTopImpressionShare_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "search_budget_lost_absolute_top_impression_share" field.</summary>
+    public const int SearchBudgetLostAbsoluteTopImpressionShareFieldNumber = 88;
+    private static readonly pb::FieldCodec<double?> _single_searchBudgetLostAbsoluteTopImpressionShare_codec = pb::FieldCodec.ForStructWrapper<double>(706);
+    private double? searchBudgetLostAbsoluteTopImpressionShare_;
+    /// <summary>
+    /// The number estimating how often your ad wasn't the very first ad above the
+    /// organic search results due to a low budget. Note: Search
+    /// budget lost absolute top impression share is reported in the range of 0 to
+    /// 0.9. Any value above 0.9 is reported as 0.9001.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? SearchBudgetLostAbsoluteTopImpressionShare {
+      get { return searchBudgetLostAbsoluteTopImpressionShare_; }
+      set {
+        searchBudgetLostAbsoluteTopImpressionShare_ = value;
       }
     }
 
@@ -900,6 +1467,42 @@ namespace Google.Ads.GoogleAds.V0.Common {
       get { return searchBudgetLostImpressionShare_; }
       set {
         searchBudgetLostImpressionShare_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "search_budget_lost_top_impression_share" field.</summary>
+    public const int SearchBudgetLostTopImpressionShareFieldNumber = 89;
+    private static readonly pb::FieldCodec<double?> _single_searchBudgetLostTopImpressionShare_codec = pb::FieldCodec.ForStructWrapper<double>(714);
+    private double? searchBudgetLostTopImpressionShare_;
+    /// <summary>
+    /// The number estimating how often your ad didn't show anywhere above the
+    /// organic search results due to a low budget. Note: Search
+    /// budget lost top impression share is reported in the range of 0 to 0.9. Any
+    /// value above 0.9 is reported as 0.9001.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? SearchBudgetLostTopImpressionShare {
+      get { return searchBudgetLostTopImpressionShare_; }
+      set {
+        searchBudgetLostTopImpressionShare_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "search_click_share" field.</summary>
+    public const int SearchClickShareFieldNumber = 48;
+    private static readonly pb::FieldCodec<double?> _single_searchClickShare_codec = pb::FieldCodec.ForStructWrapper<double>(386);
+    private double? searchClickShare_;
+    /// <summary>
+    /// The number of clicks you've received on the Search Network
+    /// divided by the estimated number of clicks you were eligible to receive.
+    /// Note: Search click share is reported in the range of 0.1 to 1. Any value
+    /// below 0.1 is reported as 0.0999.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? SearchClickShare {
+      get { return searchClickShare_; }
+      set {
+        searchClickShare_ = value;
       }
     }
 
@@ -941,6 +1544,24 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
     }
 
+    /// <summary>Field number for the "search_rank_lost_absolute_top_impression_share" field.</summary>
+    public const int SearchRankLostAbsoluteTopImpressionShareFieldNumber = 90;
+    private static readonly pb::FieldCodec<double?> _single_searchRankLostAbsoluteTopImpressionShare_codec = pb::FieldCodec.ForStructWrapper<double>(722);
+    private double? searchRankLostAbsoluteTopImpressionShare_;
+    /// <summary>
+    /// The number estimating how often your ad wasn't the very first ad above the
+    /// organic search results due to poor Ad Rank.
+    /// Note: Search rank lost absolute top impression share is reported in the
+    /// range of 0 to 0.9. Any value above 0.9 is reported as 0.9001.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? SearchRankLostAbsoluteTopImpressionShare {
+      get { return searchRankLostAbsoluteTopImpressionShare_; }
+      set {
+        searchRankLostAbsoluteTopImpressionShare_ = value;
+      }
+    }
+
     /// <summary>Field number for the "search_rank_lost_impression_share" field.</summary>
     public const int SearchRankLostImpressionShareFieldNumber = 51;
     private static readonly pb::FieldCodec<double?> _single_searchRankLostImpressionShare_codec = pb::FieldCodec.ForStructWrapper<double>(410);
@@ -956,6 +1577,59 @@ namespace Google.Ads.GoogleAds.V0.Common {
       get { return searchRankLostImpressionShare_; }
       set {
         searchRankLostImpressionShare_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "search_rank_lost_top_impression_share" field.</summary>
+    public const int SearchRankLostTopImpressionShareFieldNumber = 91;
+    private static readonly pb::FieldCodec<double?> _single_searchRankLostTopImpressionShare_codec = pb::FieldCodec.ForStructWrapper<double>(730);
+    private double? searchRankLostTopImpressionShare_;
+    /// <summary>
+    /// The number estimating how often your ad didn't show anywhere above the
+    /// organic search results due to poor Ad Rank.
+    /// Note: Search rank lost top impression share is reported in the range of 0
+    /// to 0.9. Any value above 0.9 is reported as 0.9001.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? SearchRankLostTopImpressionShare {
+      get { return searchRankLostTopImpressionShare_; }
+      set {
+        searchRankLostTopImpressionShare_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "search_top_impression_share" field.</summary>
+    public const int SearchTopImpressionShareFieldNumber = 92;
+    private static readonly pb::FieldCodec<double?> _single_searchTopImpressionShare_codec = pb::FieldCodec.ForStructWrapper<double>(738);
+    private double? searchTopImpressionShare_;
+    /// <summary>
+    /// The impressions you've received in the top location (anywhere above the
+    /// organic search results) compared to the estimated number of impressions you
+    /// were eligible to receive in the top location.
+    /// Note: Search top impression share is reported in the range of 0.1 to 1. Any
+    /// value below 0.1 is reported as 0.0999.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? SearchTopImpressionShare {
+      get { return searchTopImpressionShare_; }
+      set {
+        searchTopImpressionShare_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "top_impression_percentage" field.</summary>
+    public const int TopImpressionPercentageFieldNumber = 93;
+    private static readonly pb::FieldCodec<double?> _single_topImpressionPercentage_codec = pb::FieldCodec.ForStructWrapper<double>(746);
+    private double? topImpressionPercentage_;
+    /// <summary>
+    /// The percent of your ad impressions that are shown anywhere above the
+    /// organic search results.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? TopImpressionPercentage {
+      get { return topImpressionPercentage_; }
+      set {
+        topImpressionPercentage_ = value;
       }
     }
 
@@ -979,13 +1653,32 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private static readonly pb::FieldCodec<double?> _single_valuePerConversion_codec = pb::FieldCodec.ForStructWrapper<double>(426);
     private double? valuePerConversion_;
     /// <summary>
-    /// The value of conversions divided by the number of conversions.
+    /// The value of conversions divided by the number of conversions. This only
+    /// includes conversion actions which include_in_conversions_metric attribute
+    /// is set to true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ValuePerConversion {
       get { return valuePerConversion_; }
       set {
         valuePerConversion_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "value_per_current_model_attributed_conversion" field.</summary>
+    public const int ValuePerCurrentModelAttributedConversionFieldNumber = 94;
+    private static readonly pb::FieldCodec<double?> _single_valuePerCurrentModelAttributedConversion_codec = pb::FieldCodec.ForStructWrapper<double>(754);
+    private double? valuePerCurrentModelAttributedConversion_;
+    /// <summary>
+    /// The value of current model attributed conversions divided by the number of
+    /// the conversions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? ValuePerCurrentModelAttributedConversion {
+      get { return valuePerCurrentModelAttributedConversion_; }
+      set {
+        valuePerCurrentModelAttributedConversion_ = value;
       }
     }
 
@@ -1112,6 +1805,14 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AbsoluteTopImpressionPercentage, other.AbsoluteTopImpressionPercentage)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ActiveViewCpm, other.ActiveViewCpm)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ActiveViewCtr, other.ActiveViewCtr)) return false;
+      if (ActiveViewImpressions != other.ActiveViewImpressions) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ActiveViewMeasurability, other.ActiveViewMeasurability)) return false;
+      if (ActiveViewMeasurableCostMicros != other.ActiveViewMeasurableCostMicros) return false;
+      if (ActiveViewMeasurableImpressions != other.ActiveViewMeasurableImpressions) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ActiveViewViewability, other.ActiveViewViewability)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AllConversionsFromInteractionsRate, other.AllConversionsFromInteractionsRate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AllConversionsValue, other.AllConversionsValue)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AllConversions, other.AllConversions)) return false;
@@ -1119,9 +1820,14 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AllConversionsFromInteractionsValuePerInteraction, other.AllConversionsFromInteractionsValuePerInteraction)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AverageCost, other.AverageCost)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AverageCpc, other.AverageCpc)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AverageCpe, other.AverageCpe)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AverageCpm, other.AverageCpm)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AverageCpv, other.AverageCpv)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AverageFrequency, other.AverageFrequency)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AveragePageViews, other.AveragePageViews)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AveragePosition, other.AveragePosition)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(AverageTimeOnSite, other.AverageTimeOnSite)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(BenchmarkAverageMaxCpc, other.BenchmarkAverageMaxCpc)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(BenchmarkCtr, other.BenchmarkCtr)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(BounceRate, other.BounceRate)) return false;
       if (Clicks != other.Clicks) return false;
@@ -1138,14 +1844,29 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (CostMicros != other.CostMicros) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(CostPerAllConversions, other.CostPerAllConversions)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(CostPerConversion, other.CostPerConversion)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(CostPerCurrentModelAttributedConversion, other.CostPerCurrentModelAttributedConversion)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(CrossDeviceConversions, other.CrossDeviceConversions)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(Ctr, other.Ctr)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(CurrentModelAttributedConversions, other.CurrentModelAttributedConversions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(CurrentModelAttributedConversionsFromInteractionsRate, other.CurrentModelAttributedConversionsFromInteractionsRate)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(CurrentModelAttributedConversionsFromInteractionsValuePerInteraction, other.CurrentModelAttributedConversionsFromInteractionsValuePerInteraction)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(CurrentModelAttributedConversionsValue, other.CurrentModelAttributedConversionsValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(CurrentModelAttributedConversionsValuePerCost, other.CurrentModelAttributedConversionsValuePerCost)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(EngagementRate, other.EngagementRate)) return false;
       if (Engagements != other.Engagements) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(HotelAverageLeadValueMicros, other.HotelAverageLeadValueMicros)) return false;
+      if (HistoricalCreativeQualityScore != other.HistoricalCreativeQualityScore) return false;
+      if (HistoricalLandingPageQualityScore != other.HistoricalLandingPageQualityScore) return false;
+      if (HistoricalQualityScore != other.HistoricalQualityScore) return false;
+      if (HistoricalSearchPredictedCtr != other.HistoricalSearchPredictedCtr) return false;
+      if (GmailForwards != other.GmailForwards) return false;
+      if (GmailSaves != other.GmailSaves) return false;
+      if (GmailSecondaryClicks != other.GmailSecondaryClicks) return false;
+      if (ImpressionReach != other.ImpressionReach) return false;
       if (Impressions != other.Impressions) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(InteractionRate, other.InteractionRate)) return false;
       if (Interactions != other.Interactions) return false;
+      if(!interactionTypes_.Equals(other.interactionTypes_)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(InvalidClickRate, other.InvalidClickRate)) return false;
       if (InvalidClicks != other.InvalidClicks) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(PercentNewVisitors, other.PercentNewVisitors)) return false;
@@ -1154,12 +1875,20 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(PhoneThroughRate, other.PhoneThroughRate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(RelativeCtr, other.RelativeCtr)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchAbsoluteTopImpressionShare, other.SearchAbsoluteTopImpressionShare)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchBudgetLostAbsoluteTopImpressionShare, other.SearchBudgetLostAbsoluteTopImpressionShare)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchBudgetLostImpressionShare, other.SearchBudgetLostImpressionShare)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchBudgetLostTopImpressionShare, other.SearchBudgetLostTopImpressionShare)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchClickShare, other.SearchClickShare)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchExactMatchImpressionShare, other.SearchExactMatchImpressionShare)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchImpressionShare, other.SearchImpressionShare)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchRankLostAbsoluteTopImpressionShare, other.SearchRankLostAbsoluteTopImpressionShare)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchRankLostImpressionShare, other.SearchRankLostImpressionShare)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchRankLostTopImpressionShare, other.SearchRankLostTopImpressionShare)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(SearchTopImpressionShare, other.SearchTopImpressionShare)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(TopImpressionPercentage, other.TopImpressionPercentage)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ValuePerAllConversions, other.ValuePerAllConversions)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ValuePerConversion, other.ValuePerConversion)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ValuePerCurrentModelAttributedConversion, other.ValuePerCurrentModelAttributedConversion)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(VideoQuartile100Rate, other.VideoQuartile100Rate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(VideoQuartile25Rate, other.VideoQuartile25Rate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(VideoQuartile50Rate, other.VideoQuartile50Rate)) return false;
@@ -1173,6 +1902,14 @@ namespace Google.Ads.GoogleAds.V0.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (absoluteTopImpressionPercentage_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AbsoluteTopImpressionPercentage);
+      if (activeViewCpm_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ActiveViewCpm);
+      if (activeViewCtr_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ActiveViewCtr);
+      if (activeViewImpressions_ != null) hash ^= ActiveViewImpressions.GetHashCode();
+      if (activeViewMeasurability_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ActiveViewMeasurability);
+      if (activeViewMeasurableCostMicros_ != null) hash ^= ActiveViewMeasurableCostMicros.GetHashCode();
+      if (activeViewMeasurableImpressions_ != null) hash ^= ActiveViewMeasurableImpressions.GetHashCode();
+      if (activeViewViewability_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ActiveViewViewability);
       if (allConversionsFromInteractionsRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AllConversionsFromInteractionsRate);
       if (allConversionsValue_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AllConversionsValue);
       if (allConversions_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AllConversions);
@@ -1180,9 +1917,14 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (allConversionsFromInteractionsValuePerInteraction_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AllConversionsFromInteractionsValuePerInteraction);
       if (averageCost_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AverageCost);
       if (averageCpc_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AverageCpc);
+      if (averageCpe_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AverageCpe);
       if (averageCpm_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AverageCpm);
       if (averageCpv_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AverageCpv);
+      if (averageFrequency_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AverageFrequency);
+      if (averagePageViews_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AveragePageViews);
       if (averagePosition_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AveragePosition);
+      if (averageTimeOnSite_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(AverageTimeOnSite);
+      if (benchmarkAverageMaxCpc_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(BenchmarkAverageMaxCpc);
       if (benchmarkCtr_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(BenchmarkCtr);
       if (bounceRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(BounceRate);
       if (clicks_ != null) hash ^= Clicks.GetHashCode();
@@ -1199,14 +1941,29 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (costMicros_ != null) hash ^= CostMicros.GetHashCode();
       if (costPerAllConversions_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(CostPerAllConversions);
       if (costPerConversion_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(CostPerConversion);
+      if (costPerCurrentModelAttributedConversion_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(CostPerCurrentModelAttributedConversion);
       if (crossDeviceConversions_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(CrossDeviceConversions);
       if (ctr_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(Ctr);
+      if (currentModelAttributedConversions_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(CurrentModelAttributedConversions);
+      if (currentModelAttributedConversionsFromInteractionsRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(CurrentModelAttributedConversionsFromInteractionsRate);
+      if (currentModelAttributedConversionsFromInteractionsValuePerInteraction_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(CurrentModelAttributedConversionsFromInteractionsValuePerInteraction);
+      if (currentModelAttributedConversionsValue_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(CurrentModelAttributedConversionsValue);
+      if (currentModelAttributedConversionsValuePerCost_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(CurrentModelAttributedConversionsValuePerCost);
       if (engagementRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(EngagementRate);
       if (engagements_ != null) hash ^= Engagements.GetHashCode();
       if (hotelAverageLeadValueMicros_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(HotelAverageLeadValueMicros);
+      if (HistoricalCreativeQualityScore != 0) hash ^= HistoricalCreativeQualityScore.GetHashCode();
+      if (HistoricalLandingPageQualityScore != 0) hash ^= HistoricalLandingPageQualityScore.GetHashCode();
+      if (historicalQualityScore_ != null) hash ^= HistoricalQualityScore.GetHashCode();
+      if (HistoricalSearchPredictedCtr != 0) hash ^= HistoricalSearchPredictedCtr.GetHashCode();
+      if (gmailForwards_ != null) hash ^= GmailForwards.GetHashCode();
+      if (gmailSaves_ != null) hash ^= GmailSaves.GetHashCode();
+      if (gmailSecondaryClicks_ != null) hash ^= GmailSecondaryClicks.GetHashCode();
+      if (impressionReach_ != null) hash ^= ImpressionReach.GetHashCode();
       if (impressions_ != null) hash ^= Impressions.GetHashCode();
       if (interactionRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(InteractionRate);
       if (interactions_ != null) hash ^= Interactions.GetHashCode();
+      hash ^= interactionTypes_.GetHashCode();
       if (invalidClickRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(InvalidClickRate);
       if (invalidClicks_ != null) hash ^= InvalidClicks.GetHashCode();
       if (percentNewVisitors_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(PercentNewVisitors);
@@ -1215,12 +1972,20 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (phoneThroughRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(PhoneThroughRate);
       if (relativeCtr_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(RelativeCtr);
       if (searchAbsoluteTopImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchAbsoluteTopImpressionShare);
+      if (searchBudgetLostAbsoluteTopImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchBudgetLostAbsoluteTopImpressionShare);
       if (searchBudgetLostImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchBudgetLostImpressionShare);
+      if (searchBudgetLostTopImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchBudgetLostTopImpressionShare);
+      if (searchClickShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchClickShare);
       if (searchExactMatchImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchExactMatchImpressionShare);
       if (searchImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchImpressionShare);
+      if (searchRankLostAbsoluteTopImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchRankLostAbsoluteTopImpressionShare);
       if (searchRankLostImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchRankLostImpressionShare);
+      if (searchRankLostTopImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchRankLostTopImpressionShare);
+      if (searchTopImpressionShare_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(SearchTopImpressionShare);
+      if (topImpressionPercentage_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(TopImpressionPercentage);
       if (valuePerAllConversions_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ValuePerAllConversions);
       if (valuePerConversion_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ValuePerConversion);
+      if (valuePerCurrentModelAttributedConversion_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ValuePerCurrentModelAttributedConversion);
       if (videoQuartile100Rate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(VideoQuartile100Rate);
       if (videoQuartile25Rate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(VideoQuartile25Rate);
       if (videoQuartile50Rate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(VideoQuartile50Rate);
@@ -1241,6 +2006,18 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (activeViewCpm_ != null) {
+        _single_activeViewCpm_codec.WriteTagAndValue(output, ActiveViewCpm);
+      }
+      if (activeViewImpressions_ != null) {
+        _single_activeViewImpressions_codec.WriteTagAndValue(output, ActiveViewImpressions);
+      }
+      if (activeViewMeasurableCostMicros_ != null) {
+        _single_activeViewMeasurableCostMicros_codec.WriteTagAndValue(output, ActiveViewMeasurableCostMicros);
+      }
+      if (activeViewMeasurableImpressions_ != null) {
+        _single_activeViewMeasurableImpressions_codec.WriteTagAndValue(output, ActiveViewMeasurableImpressions);
+      }
       if (allConversions_ != null) {
         _single_allConversions_codec.WriteTagAndValue(output, AllConversions);
       }
@@ -1256,8 +2033,14 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (averageCpv_ != null) {
         _single_averageCpv_codec.WriteTagAndValue(output, AverageCpv);
       }
+      if (averageFrequency_ != null) {
+        _single_averageFrequency_codec.WriteTagAndValue(output, AverageFrequency);
+      }
       if (averagePosition_ != null) {
         _single_averagePosition_codec.WriteTagAndValue(output, AveragePosition);
+      }
+      if (benchmarkAverageMaxCpc_ != null) {
+        _single_benchmarkAverageMaxCpc_codec.WriteTagAndValue(output, BenchmarkAverageMaxCpc);
       }
       if (bounceRate_ != null) {
         _single_bounceRate_codec.WriteTagAndValue(output, BounceRate);
@@ -1295,6 +2078,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (engagements_ != null) {
         _single_engagements_codec.WriteTagAndValue(output, Engagements);
       }
+      if (impressionReach_ != null) {
+        _single_impressionReach_codec.WriteTagAndValue(output, ImpressionReach);
+      }
       if (impressions_ != null) {
         _single_impressions_codec.WriteTagAndValue(output, Impressions);
       }
@@ -1327,6 +2113,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
       if (searchBudgetLostImpressionShare_ != null) {
         _single_searchBudgetLostImpressionShare_codec.WriteTagAndValue(output, SearchBudgetLostImpressionShare);
+      }
+      if (searchClickShare_ != null) {
+        _single_searchClickShare_codec.WriteTagAndValue(output, SearchClickShare);
       }
       if (searchExactMatchImpressionShare_ != null) {
         _single_searchExactMatchImpressionShare_codec.WriteTagAndValue(output, SearchExactMatchImpressionShare);
@@ -1406,6 +2195,91 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (searchAbsoluteTopImpressionShare_ != null) {
         _single_searchAbsoluteTopImpressionShare_codec.WriteTagAndValue(output, SearchAbsoluteTopImpressionShare);
       }
+      if (activeViewCtr_ != null) {
+        _single_activeViewCtr_codec.WriteTagAndValue(output, ActiveViewCtr);
+      }
+      if (HistoricalCreativeQualityScore != 0) {
+        output.WriteRawTag(128, 5);
+        output.WriteEnum((int) HistoricalCreativeQualityScore);
+      }
+      if (HistoricalLandingPageQualityScore != 0) {
+        output.WriteRawTag(136, 5);
+        output.WriteEnum((int) HistoricalLandingPageQualityScore);
+      }
+      if (historicalQualityScore_ != null) {
+        _single_historicalQualityScore_codec.WriteTagAndValue(output, HistoricalQualityScore);
+      }
+      if (HistoricalSearchPredictedCtr != 0) {
+        output.WriteRawTag(152, 5);
+        output.WriteEnum((int) HistoricalSearchPredictedCtr);
+      }
+      if (averageTimeOnSite_ != null) {
+        _single_averageTimeOnSite_codec.WriteTagAndValue(output, AverageTimeOnSite);
+      }
+      if (gmailForwards_ != null) {
+        _single_gmailForwards_codec.WriteTagAndValue(output, GmailForwards);
+      }
+      if (gmailSaves_ != null) {
+        _single_gmailSaves_codec.WriteTagAndValue(output, GmailSaves);
+      }
+      if (gmailSecondaryClicks_ != null) {
+        _single_gmailSecondaryClicks_codec.WriteTagAndValue(output, GmailSecondaryClicks);
+      }
+      if (searchBudgetLostAbsoluteTopImpressionShare_ != null) {
+        _single_searchBudgetLostAbsoluteTopImpressionShare_codec.WriteTagAndValue(output, SearchBudgetLostAbsoluteTopImpressionShare);
+      }
+      if (searchBudgetLostTopImpressionShare_ != null) {
+        _single_searchBudgetLostTopImpressionShare_codec.WriteTagAndValue(output, SearchBudgetLostTopImpressionShare);
+      }
+      if (searchRankLostAbsoluteTopImpressionShare_ != null) {
+        _single_searchRankLostAbsoluteTopImpressionShare_codec.WriteTagAndValue(output, SearchRankLostAbsoluteTopImpressionShare);
+      }
+      if (searchRankLostTopImpressionShare_ != null) {
+        _single_searchRankLostTopImpressionShare_codec.WriteTagAndValue(output, SearchRankLostTopImpressionShare);
+      }
+      if (searchTopImpressionShare_ != null) {
+        _single_searchTopImpressionShare_codec.WriteTagAndValue(output, SearchTopImpressionShare);
+      }
+      if (topImpressionPercentage_ != null) {
+        _single_topImpressionPercentage_codec.WriteTagAndValue(output, TopImpressionPercentage);
+      }
+      if (valuePerCurrentModelAttributedConversion_ != null) {
+        _single_valuePerCurrentModelAttributedConversion_codec.WriteTagAndValue(output, ValuePerCurrentModelAttributedConversion);
+      }
+      if (absoluteTopImpressionPercentage_ != null) {
+        _single_absoluteTopImpressionPercentage_codec.WriteTagAndValue(output, AbsoluteTopImpressionPercentage);
+      }
+      if (activeViewMeasurability_ != null) {
+        _single_activeViewMeasurability_codec.WriteTagAndValue(output, ActiveViewMeasurability);
+      }
+      if (activeViewViewability_ != null) {
+        _single_activeViewViewability_codec.WriteTagAndValue(output, ActiveViewViewability);
+      }
+      if (averageCpe_ != null) {
+        _single_averageCpe_codec.WriteTagAndValue(output, AverageCpe);
+      }
+      if (averagePageViews_ != null) {
+        _single_averagePageViews_codec.WriteTagAndValue(output, AveragePageViews);
+      }
+      interactionTypes_.WriteTo(output, _repeated_interactionTypes_codec);
+      if (currentModelAttributedConversions_ != null) {
+        _single_currentModelAttributedConversions_codec.WriteTagAndValue(output, CurrentModelAttributedConversions);
+      }
+      if (currentModelAttributedConversionsFromInteractionsRate_ != null) {
+        _single_currentModelAttributedConversionsFromInteractionsRate_codec.WriteTagAndValue(output, CurrentModelAttributedConversionsFromInteractionsRate);
+      }
+      if (currentModelAttributedConversionsFromInteractionsValuePerInteraction_ != null) {
+        _single_currentModelAttributedConversionsFromInteractionsValuePerInteraction_codec.WriteTagAndValue(output, CurrentModelAttributedConversionsFromInteractionsValuePerInteraction);
+      }
+      if (currentModelAttributedConversionsValue_ != null) {
+        _single_currentModelAttributedConversionsValue_codec.WriteTagAndValue(output, CurrentModelAttributedConversionsValue);
+      }
+      if (currentModelAttributedConversionsValuePerCost_ != null) {
+        _single_currentModelAttributedConversionsValuePerCost_codec.WriteTagAndValue(output, CurrentModelAttributedConversionsValuePerCost);
+      }
+      if (costPerCurrentModelAttributedConversion_ != null) {
+        _single_costPerCurrentModelAttributedConversion_codec.WriteTagAndValue(output, CostPerCurrentModelAttributedConversion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1414,6 +2288,30 @@ namespace Google.Ads.GoogleAds.V0.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (absoluteTopImpressionPercentage_ != null) {
+        size += _single_absoluteTopImpressionPercentage_codec.CalculateSizeWithTag(AbsoluteTopImpressionPercentage);
+      }
+      if (activeViewCpm_ != null) {
+        size += _single_activeViewCpm_codec.CalculateSizeWithTag(ActiveViewCpm);
+      }
+      if (activeViewCtr_ != null) {
+        size += _single_activeViewCtr_codec.CalculateSizeWithTag(ActiveViewCtr);
+      }
+      if (activeViewImpressions_ != null) {
+        size += _single_activeViewImpressions_codec.CalculateSizeWithTag(ActiveViewImpressions);
+      }
+      if (activeViewMeasurability_ != null) {
+        size += _single_activeViewMeasurability_codec.CalculateSizeWithTag(ActiveViewMeasurability);
+      }
+      if (activeViewMeasurableCostMicros_ != null) {
+        size += _single_activeViewMeasurableCostMicros_codec.CalculateSizeWithTag(ActiveViewMeasurableCostMicros);
+      }
+      if (activeViewMeasurableImpressions_ != null) {
+        size += _single_activeViewMeasurableImpressions_codec.CalculateSizeWithTag(ActiveViewMeasurableImpressions);
+      }
+      if (activeViewViewability_ != null) {
+        size += _single_activeViewViewability_codec.CalculateSizeWithTag(ActiveViewViewability);
+      }
       if (allConversionsFromInteractionsRate_ != null) {
         size += _single_allConversionsFromInteractionsRate_codec.CalculateSizeWithTag(AllConversionsFromInteractionsRate);
       }
@@ -1435,14 +2333,29 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (averageCpc_ != null) {
         size += _single_averageCpc_codec.CalculateSizeWithTag(AverageCpc);
       }
+      if (averageCpe_ != null) {
+        size += _single_averageCpe_codec.CalculateSizeWithTag(AverageCpe);
+      }
       if (averageCpm_ != null) {
         size += _single_averageCpm_codec.CalculateSizeWithTag(AverageCpm);
       }
       if (averageCpv_ != null) {
         size += _single_averageCpv_codec.CalculateSizeWithTag(AverageCpv);
       }
+      if (averageFrequency_ != null) {
+        size += _single_averageFrequency_codec.CalculateSizeWithTag(AverageFrequency);
+      }
+      if (averagePageViews_ != null) {
+        size += _single_averagePageViews_codec.CalculateSizeWithTag(AveragePageViews);
+      }
       if (averagePosition_ != null) {
         size += _single_averagePosition_codec.CalculateSizeWithTag(AveragePosition);
+      }
+      if (averageTimeOnSite_ != null) {
+        size += _single_averageTimeOnSite_codec.CalculateSizeWithTag(AverageTimeOnSite);
+      }
+      if (benchmarkAverageMaxCpc_ != null) {
+        size += _single_benchmarkAverageMaxCpc_codec.CalculateSizeWithTag(BenchmarkAverageMaxCpc);
       }
       if (benchmarkCtr_ != null) {
         size += _single_benchmarkCtr_codec.CalculateSizeWithTag(BenchmarkCtr);
@@ -1492,11 +2405,29 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (costPerConversion_ != null) {
         size += _single_costPerConversion_codec.CalculateSizeWithTag(CostPerConversion);
       }
+      if (costPerCurrentModelAttributedConversion_ != null) {
+        size += _single_costPerCurrentModelAttributedConversion_codec.CalculateSizeWithTag(CostPerCurrentModelAttributedConversion);
+      }
       if (crossDeviceConversions_ != null) {
         size += _single_crossDeviceConversions_codec.CalculateSizeWithTag(CrossDeviceConversions);
       }
       if (ctr_ != null) {
         size += _single_ctr_codec.CalculateSizeWithTag(Ctr);
+      }
+      if (currentModelAttributedConversions_ != null) {
+        size += _single_currentModelAttributedConversions_codec.CalculateSizeWithTag(CurrentModelAttributedConversions);
+      }
+      if (currentModelAttributedConversionsFromInteractionsRate_ != null) {
+        size += _single_currentModelAttributedConversionsFromInteractionsRate_codec.CalculateSizeWithTag(CurrentModelAttributedConversionsFromInteractionsRate);
+      }
+      if (currentModelAttributedConversionsFromInteractionsValuePerInteraction_ != null) {
+        size += _single_currentModelAttributedConversionsFromInteractionsValuePerInteraction_codec.CalculateSizeWithTag(CurrentModelAttributedConversionsFromInteractionsValuePerInteraction);
+      }
+      if (currentModelAttributedConversionsValue_ != null) {
+        size += _single_currentModelAttributedConversionsValue_codec.CalculateSizeWithTag(CurrentModelAttributedConversionsValue);
+      }
+      if (currentModelAttributedConversionsValuePerCost_ != null) {
+        size += _single_currentModelAttributedConversionsValuePerCost_codec.CalculateSizeWithTag(CurrentModelAttributedConversionsValuePerCost);
       }
       if (engagementRate_ != null) {
         size += _single_engagementRate_codec.CalculateSizeWithTag(EngagementRate);
@@ -1507,6 +2438,30 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (hotelAverageLeadValueMicros_ != null) {
         size += _single_hotelAverageLeadValueMicros_codec.CalculateSizeWithTag(HotelAverageLeadValueMicros);
       }
+      if (HistoricalCreativeQualityScore != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) HistoricalCreativeQualityScore);
+      }
+      if (HistoricalLandingPageQualityScore != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) HistoricalLandingPageQualityScore);
+      }
+      if (historicalQualityScore_ != null) {
+        size += _single_historicalQualityScore_codec.CalculateSizeWithTag(HistoricalQualityScore);
+      }
+      if (HistoricalSearchPredictedCtr != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) HistoricalSearchPredictedCtr);
+      }
+      if (gmailForwards_ != null) {
+        size += _single_gmailForwards_codec.CalculateSizeWithTag(GmailForwards);
+      }
+      if (gmailSaves_ != null) {
+        size += _single_gmailSaves_codec.CalculateSizeWithTag(GmailSaves);
+      }
+      if (gmailSecondaryClicks_ != null) {
+        size += _single_gmailSecondaryClicks_codec.CalculateSizeWithTag(GmailSecondaryClicks);
+      }
+      if (impressionReach_ != null) {
+        size += _single_impressionReach_codec.CalculateSizeWithTag(ImpressionReach);
+      }
       if (impressions_ != null) {
         size += _single_impressions_codec.CalculateSizeWithTag(Impressions);
       }
@@ -1516,6 +2471,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (interactions_ != null) {
         size += _single_interactions_codec.CalculateSizeWithTag(Interactions);
       }
+      size += interactionTypes_.CalculateSize(_repeated_interactionTypes_codec);
       if (invalidClickRate_ != null) {
         size += _single_invalidClickRate_codec.CalculateSizeWithTag(InvalidClickRate);
       }
@@ -1540,8 +2496,17 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (searchAbsoluteTopImpressionShare_ != null) {
         size += _single_searchAbsoluteTopImpressionShare_codec.CalculateSizeWithTag(SearchAbsoluteTopImpressionShare);
       }
+      if (searchBudgetLostAbsoluteTopImpressionShare_ != null) {
+        size += _single_searchBudgetLostAbsoluteTopImpressionShare_codec.CalculateSizeWithTag(SearchBudgetLostAbsoluteTopImpressionShare);
+      }
       if (searchBudgetLostImpressionShare_ != null) {
         size += _single_searchBudgetLostImpressionShare_codec.CalculateSizeWithTag(SearchBudgetLostImpressionShare);
+      }
+      if (searchBudgetLostTopImpressionShare_ != null) {
+        size += _single_searchBudgetLostTopImpressionShare_codec.CalculateSizeWithTag(SearchBudgetLostTopImpressionShare);
+      }
+      if (searchClickShare_ != null) {
+        size += _single_searchClickShare_codec.CalculateSizeWithTag(SearchClickShare);
       }
       if (searchExactMatchImpressionShare_ != null) {
         size += _single_searchExactMatchImpressionShare_codec.CalculateSizeWithTag(SearchExactMatchImpressionShare);
@@ -1549,14 +2514,29 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (searchImpressionShare_ != null) {
         size += _single_searchImpressionShare_codec.CalculateSizeWithTag(SearchImpressionShare);
       }
+      if (searchRankLostAbsoluteTopImpressionShare_ != null) {
+        size += _single_searchRankLostAbsoluteTopImpressionShare_codec.CalculateSizeWithTag(SearchRankLostAbsoluteTopImpressionShare);
+      }
       if (searchRankLostImpressionShare_ != null) {
         size += _single_searchRankLostImpressionShare_codec.CalculateSizeWithTag(SearchRankLostImpressionShare);
+      }
+      if (searchRankLostTopImpressionShare_ != null) {
+        size += _single_searchRankLostTopImpressionShare_codec.CalculateSizeWithTag(SearchRankLostTopImpressionShare);
+      }
+      if (searchTopImpressionShare_ != null) {
+        size += _single_searchTopImpressionShare_codec.CalculateSizeWithTag(SearchTopImpressionShare);
+      }
+      if (topImpressionPercentage_ != null) {
+        size += _single_topImpressionPercentage_codec.CalculateSizeWithTag(TopImpressionPercentage);
       }
       if (valuePerAllConversions_ != null) {
         size += _single_valuePerAllConversions_codec.CalculateSizeWithTag(ValuePerAllConversions);
       }
       if (valuePerConversion_ != null) {
         size += _single_valuePerConversion_codec.CalculateSizeWithTag(ValuePerConversion);
+      }
+      if (valuePerCurrentModelAttributedConversion_ != null) {
+        size += _single_valuePerCurrentModelAttributedConversion_codec.CalculateSizeWithTag(ValuePerCurrentModelAttributedConversion);
       }
       if (videoQuartile100Rate_ != null) {
         size += _single_videoQuartile100Rate_codec.CalculateSizeWithTag(VideoQuartile100Rate);
@@ -1589,6 +2569,46 @@ namespace Google.Ads.GoogleAds.V0.Common {
     public void MergeFrom(Metrics other) {
       if (other == null) {
         return;
+      }
+      if (other.absoluteTopImpressionPercentage_ != null) {
+        if (absoluteTopImpressionPercentage_ == null || other.AbsoluteTopImpressionPercentage != 0D) {
+          AbsoluteTopImpressionPercentage = other.AbsoluteTopImpressionPercentage;
+        }
+      }
+      if (other.activeViewCpm_ != null) {
+        if (activeViewCpm_ == null || other.ActiveViewCpm != 0D) {
+          ActiveViewCpm = other.ActiveViewCpm;
+        }
+      }
+      if (other.activeViewCtr_ != null) {
+        if (activeViewCtr_ == null || other.ActiveViewCtr != 0D) {
+          ActiveViewCtr = other.ActiveViewCtr;
+        }
+      }
+      if (other.activeViewImpressions_ != null) {
+        if (activeViewImpressions_ == null || other.ActiveViewImpressions != 0L) {
+          ActiveViewImpressions = other.ActiveViewImpressions;
+        }
+      }
+      if (other.activeViewMeasurability_ != null) {
+        if (activeViewMeasurability_ == null || other.ActiveViewMeasurability != 0D) {
+          ActiveViewMeasurability = other.ActiveViewMeasurability;
+        }
+      }
+      if (other.activeViewMeasurableCostMicros_ != null) {
+        if (activeViewMeasurableCostMicros_ == null || other.ActiveViewMeasurableCostMicros != 0L) {
+          ActiveViewMeasurableCostMicros = other.ActiveViewMeasurableCostMicros;
+        }
+      }
+      if (other.activeViewMeasurableImpressions_ != null) {
+        if (activeViewMeasurableImpressions_ == null || other.ActiveViewMeasurableImpressions != 0L) {
+          ActiveViewMeasurableImpressions = other.ActiveViewMeasurableImpressions;
+        }
+      }
+      if (other.activeViewViewability_ != null) {
+        if (activeViewViewability_ == null || other.ActiveViewViewability != 0D) {
+          ActiveViewViewability = other.ActiveViewViewability;
+        }
       }
       if (other.allConversionsFromInteractionsRate_ != null) {
         if (allConversionsFromInteractionsRate_ == null || other.AllConversionsFromInteractionsRate != 0D) {
@@ -1625,6 +2645,11 @@ namespace Google.Ads.GoogleAds.V0.Common {
           AverageCpc = other.AverageCpc;
         }
       }
+      if (other.averageCpe_ != null) {
+        if (averageCpe_ == null || other.AverageCpe != 0D) {
+          AverageCpe = other.AverageCpe;
+        }
+      }
       if (other.averageCpm_ != null) {
         if (averageCpm_ == null || other.AverageCpm != 0D) {
           AverageCpm = other.AverageCpm;
@@ -1635,9 +2660,29 @@ namespace Google.Ads.GoogleAds.V0.Common {
           AverageCpv = other.AverageCpv;
         }
       }
+      if (other.averageFrequency_ != null) {
+        if (averageFrequency_ == null || other.AverageFrequency != 0D) {
+          AverageFrequency = other.AverageFrequency;
+        }
+      }
+      if (other.averagePageViews_ != null) {
+        if (averagePageViews_ == null || other.AveragePageViews != 0D) {
+          AveragePageViews = other.AveragePageViews;
+        }
+      }
       if (other.averagePosition_ != null) {
         if (averagePosition_ == null || other.AveragePosition != 0D) {
           AveragePosition = other.AveragePosition;
+        }
+      }
+      if (other.averageTimeOnSite_ != null) {
+        if (averageTimeOnSite_ == null || other.AverageTimeOnSite != 0D) {
+          AverageTimeOnSite = other.AverageTimeOnSite;
+        }
+      }
+      if (other.benchmarkAverageMaxCpc_ != null) {
+        if (benchmarkAverageMaxCpc_ == null || other.BenchmarkAverageMaxCpc != 0D) {
+          BenchmarkAverageMaxCpc = other.BenchmarkAverageMaxCpc;
         }
       }
       if (other.benchmarkCtr_ != null) {
@@ -1720,6 +2765,11 @@ namespace Google.Ads.GoogleAds.V0.Common {
           CostPerConversion = other.CostPerConversion;
         }
       }
+      if (other.costPerCurrentModelAttributedConversion_ != null) {
+        if (costPerCurrentModelAttributedConversion_ == null || other.CostPerCurrentModelAttributedConversion != 0D) {
+          CostPerCurrentModelAttributedConversion = other.CostPerCurrentModelAttributedConversion;
+        }
+      }
       if (other.crossDeviceConversions_ != null) {
         if (crossDeviceConversions_ == null || other.CrossDeviceConversions != 0D) {
           CrossDeviceConversions = other.CrossDeviceConversions;
@@ -1728,6 +2778,31 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (other.ctr_ != null) {
         if (ctr_ == null || other.Ctr != 0D) {
           Ctr = other.Ctr;
+        }
+      }
+      if (other.currentModelAttributedConversions_ != null) {
+        if (currentModelAttributedConversions_ == null || other.CurrentModelAttributedConversions != 0D) {
+          CurrentModelAttributedConversions = other.CurrentModelAttributedConversions;
+        }
+      }
+      if (other.currentModelAttributedConversionsFromInteractionsRate_ != null) {
+        if (currentModelAttributedConversionsFromInteractionsRate_ == null || other.CurrentModelAttributedConversionsFromInteractionsRate != 0D) {
+          CurrentModelAttributedConversionsFromInteractionsRate = other.CurrentModelAttributedConversionsFromInteractionsRate;
+        }
+      }
+      if (other.currentModelAttributedConversionsFromInteractionsValuePerInteraction_ != null) {
+        if (currentModelAttributedConversionsFromInteractionsValuePerInteraction_ == null || other.CurrentModelAttributedConversionsFromInteractionsValuePerInteraction != 0D) {
+          CurrentModelAttributedConversionsFromInteractionsValuePerInteraction = other.CurrentModelAttributedConversionsFromInteractionsValuePerInteraction;
+        }
+      }
+      if (other.currentModelAttributedConversionsValue_ != null) {
+        if (currentModelAttributedConversionsValue_ == null || other.CurrentModelAttributedConversionsValue != 0D) {
+          CurrentModelAttributedConversionsValue = other.CurrentModelAttributedConversionsValue;
+        }
+      }
+      if (other.currentModelAttributedConversionsValuePerCost_ != null) {
+        if (currentModelAttributedConversionsValuePerCost_ == null || other.CurrentModelAttributedConversionsValuePerCost != 0D) {
+          CurrentModelAttributedConversionsValuePerCost = other.CurrentModelAttributedConversionsValuePerCost;
         }
       }
       if (other.engagementRate_ != null) {
@@ -1745,6 +2820,40 @@ namespace Google.Ads.GoogleAds.V0.Common {
           HotelAverageLeadValueMicros = other.HotelAverageLeadValueMicros;
         }
       }
+      if (other.HistoricalCreativeQualityScore != 0) {
+        HistoricalCreativeQualityScore = other.HistoricalCreativeQualityScore;
+      }
+      if (other.HistoricalLandingPageQualityScore != 0) {
+        HistoricalLandingPageQualityScore = other.HistoricalLandingPageQualityScore;
+      }
+      if (other.historicalQualityScore_ != null) {
+        if (historicalQualityScore_ == null || other.HistoricalQualityScore != 0L) {
+          HistoricalQualityScore = other.HistoricalQualityScore;
+        }
+      }
+      if (other.HistoricalSearchPredictedCtr != 0) {
+        HistoricalSearchPredictedCtr = other.HistoricalSearchPredictedCtr;
+      }
+      if (other.gmailForwards_ != null) {
+        if (gmailForwards_ == null || other.GmailForwards != 0L) {
+          GmailForwards = other.GmailForwards;
+        }
+      }
+      if (other.gmailSaves_ != null) {
+        if (gmailSaves_ == null || other.GmailSaves != 0L) {
+          GmailSaves = other.GmailSaves;
+        }
+      }
+      if (other.gmailSecondaryClicks_ != null) {
+        if (gmailSecondaryClicks_ == null || other.GmailSecondaryClicks != 0L) {
+          GmailSecondaryClicks = other.GmailSecondaryClicks;
+        }
+      }
+      if (other.impressionReach_ != null) {
+        if (impressionReach_ == null || other.ImpressionReach != 0L) {
+          ImpressionReach = other.ImpressionReach;
+        }
+      }
       if (other.impressions_ != null) {
         if (impressions_ == null || other.Impressions != 0L) {
           Impressions = other.Impressions;
@@ -1760,6 +2869,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
           Interactions = other.Interactions;
         }
       }
+      interactionTypes_.Add(other.interactionTypes_);
       if (other.invalidClickRate_ != null) {
         if (invalidClickRate_ == null || other.InvalidClickRate != 0D) {
           InvalidClickRate = other.InvalidClickRate;
@@ -1800,9 +2910,24 @@ namespace Google.Ads.GoogleAds.V0.Common {
           SearchAbsoluteTopImpressionShare = other.SearchAbsoluteTopImpressionShare;
         }
       }
+      if (other.searchBudgetLostAbsoluteTopImpressionShare_ != null) {
+        if (searchBudgetLostAbsoluteTopImpressionShare_ == null || other.SearchBudgetLostAbsoluteTopImpressionShare != 0D) {
+          SearchBudgetLostAbsoluteTopImpressionShare = other.SearchBudgetLostAbsoluteTopImpressionShare;
+        }
+      }
       if (other.searchBudgetLostImpressionShare_ != null) {
         if (searchBudgetLostImpressionShare_ == null || other.SearchBudgetLostImpressionShare != 0D) {
           SearchBudgetLostImpressionShare = other.SearchBudgetLostImpressionShare;
+        }
+      }
+      if (other.searchBudgetLostTopImpressionShare_ != null) {
+        if (searchBudgetLostTopImpressionShare_ == null || other.SearchBudgetLostTopImpressionShare != 0D) {
+          SearchBudgetLostTopImpressionShare = other.SearchBudgetLostTopImpressionShare;
+        }
+      }
+      if (other.searchClickShare_ != null) {
+        if (searchClickShare_ == null || other.SearchClickShare != 0D) {
+          SearchClickShare = other.SearchClickShare;
         }
       }
       if (other.searchExactMatchImpressionShare_ != null) {
@@ -1815,9 +2940,29 @@ namespace Google.Ads.GoogleAds.V0.Common {
           SearchImpressionShare = other.SearchImpressionShare;
         }
       }
+      if (other.searchRankLostAbsoluteTopImpressionShare_ != null) {
+        if (searchRankLostAbsoluteTopImpressionShare_ == null || other.SearchRankLostAbsoluteTopImpressionShare != 0D) {
+          SearchRankLostAbsoluteTopImpressionShare = other.SearchRankLostAbsoluteTopImpressionShare;
+        }
+      }
       if (other.searchRankLostImpressionShare_ != null) {
         if (searchRankLostImpressionShare_ == null || other.SearchRankLostImpressionShare != 0D) {
           SearchRankLostImpressionShare = other.SearchRankLostImpressionShare;
+        }
+      }
+      if (other.searchRankLostTopImpressionShare_ != null) {
+        if (searchRankLostTopImpressionShare_ == null || other.SearchRankLostTopImpressionShare != 0D) {
+          SearchRankLostTopImpressionShare = other.SearchRankLostTopImpressionShare;
+        }
+      }
+      if (other.searchTopImpressionShare_ != null) {
+        if (searchTopImpressionShare_ == null || other.SearchTopImpressionShare != 0D) {
+          SearchTopImpressionShare = other.SearchTopImpressionShare;
+        }
+      }
+      if (other.topImpressionPercentage_ != null) {
+        if (topImpressionPercentage_ == null || other.TopImpressionPercentage != 0D) {
+          TopImpressionPercentage = other.TopImpressionPercentage;
         }
       }
       if (other.valuePerAllConversions_ != null) {
@@ -1828,6 +2973,11 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (other.valuePerConversion_ != null) {
         if (valuePerConversion_ == null || other.ValuePerConversion != 0D) {
           ValuePerConversion = other.ValuePerConversion;
+        }
+      }
+      if (other.valuePerCurrentModelAttributedConversion_ != null) {
+        if (valuePerCurrentModelAttributedConversion_ == null || other.ValuePerCurrentModelAttributedConversion != 0D) {
+          ValuePerCurrentModelAttributedConversion = other.ValuePerCurrentModelAttributedConversion;
         }
       }
       if (other.videoQuartile100Rate_ != null) {
@@ -1876,6 +3026,34 @@ namespace Google.Ads.GoogleAds.V0.Common {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            double? value = _single_activeViewCpm_codec.Read(input);
+            if (activeViewCpm_ == null || value != 0D) {
+              ActiveViewCpm = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_activeViewImpressions_codec.Read(input);
+            if (activeViewImpressions_ == null || value != 0L) {
+              ActiveViewImpressions = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_activeViewMeasurableCostMicros_codec.Read(input);
+            if (activeViewMeasurableCostMicros_ == null || value != 0L) {
+              ActiveViewMeasurableCostMicros = value;
+            }
+            break;
+          }
+          case 34: {
+            long? value = _single_activeViewMeasurableImpressions_codec.Read(input);
+            if (activeViewMeasurableImpressions_ == null || value != 0L) {
+              ActiveViewMeasurableImpressions = value;
+            }
+            break;
+          }
           case 58: {
             double? value = _single_allConversions_codec.Read(input);
             if (allConversions_ == null || value != 0D) {
@@ -1911,10 +3089,24 @@ namespace Google.Ads.GoogleAds.V0.Common {
             }
             break;
           }
+          case 98: {
+            double? value = _single_averageFrequency_codec.Read(input);
+            if (averageFrequency_ == null || value != 0D) {
+              AverageFrequency = value;
+            }
+            break;
+          }
           case 106: {
             double? value = _single_averagePosition_codec.Read(input);
             if (averagePosition_ == null || value != 0D) {
               AveragePosition = value;
+            }
+            break;
+          }
+          case 114: {
+            double? value = _single_benchmarkAverageMaxCpc_codec.Read(input);
+            if (benchmarkAverageMaxCpc_ == null || value != 0D) {
+              BenchmarkAverageMaxCpc = value;
             }
             break;
           }
@@ -2002,6 +3194,13 @@ namespace Google.Ads.GoogleAds.V0.Common {
             }
             break;
           }
+          case 290: {
+            long? value = _single_impressionReach_codec.Read(input);
+            if (impressionReach_ == null || value != 0L) {
+              ImpressionReach = value;
+            }
+            break;
+          }
           case 298: {
             long? value = _single_impressions_codec.Read(input);
             if (impressions_ == null || value != 0L) {
@@ -2076,6 +3275,13 @@ namespace Google.Ads.GoogleAds.V0.Common {
             double? value = _single_searchBudgetLostImpressionShare_codec.Read(input);
             if (searchBudgetLostImpressionShare_ == null || value != 0D) {
               SearchBudgetLostImpressionShare = value;
+            }
+            break;
+          }
+          case 386: {
+            double? value = _single_searchClickShare_codec.Read(input);
+            if (searchClickShare_ == null || value != 0D) {
+              SearchClickShare = value;
             }
             break;
           }
@@ -2258,6 +3464,191 @@ namespace Google.Ads.GoogleAds.V0.Common {
             double? value = _single_searchAbsoluteTopImpressionShare_codec.Read(input);
             if (searchAbsoluteTopImpressionShare_ == null || value != 0D) {
               SearchAbsoluteTopImpressionShare = value;
+            }
+            break;
+          }
+          case 634: {
+            double? value = _single_activeViewCtr_codec.Read(input);
+            if (activeViewCtr_ == null || value != 0D) {
+              ActiveViewCtr = value;
+            }
+            break;
+          }
+          case 640: {
+            historicalCreativeQualityScore_ = (global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket) input.ReadEnum();
+            break;
+          }
+          case 648: {
+            historicalLandingPageQualityScore_ = (global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket) input.ReadEnum();
+            break;
+          }
+          case 658: {
+            long? value = _single_historicalQualityScore_codec.Read(input);
+            if (historicalQualityScore_ == null || value != 0L) {
+              HistoricalQualityScore = value;
+            }
+            break;
+          }
+          case 664: {
+            historicalSearchPredictedCtr_ = (global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket) input.ReadEnum();
+            break;
+          }
+          case 674: {
+            double? value = _single_averageTimeOnSite_codec.Read(input);
+            if (averageTimeOnSite_ == null || value != 0D) {
+              AverageTimeOnSite = value;
+            }
+            break;
+          }
+          case 682: {
+            long? value = _single_gmailForwards_codec.Read(input);
+            if (gmailForwards_ == null || value != 0L) {
+              GmailForwards = value;
+            }
+            break;
+          }
+          case 690: {
+            long? value = _single_gmailSaves_codec.Read(input);
+            if (gmailSaves_ == null || value != 0L) {
+              GmailSaves = value;
+            }
+            break;
+          }
+          case 698: {
+            long? value = _single_gmailSecondaryClicks_codec.Read(input);
+            if (gmailSecondaryClicks_ == null || value != 0L) {
+              GmailSecondaryClicks = value;
+            }
+            break;
+          }
+          case 706: {
+            double? value = _single_searchBudgetLostAbsoluteTopImpressionShare_codec.Read(input);
+            if (searchBudgetLostAbsoluteTopImpressionShare_ == null || value != 0D) {
+              SearchBudgetLostAbsoluteTopImpressionShare = value;
+            }
+            break;
+          }
+          case 714: {
+            double? value = _single_searchBudgetLostTopImpressionShare_codec.Read(input);
+            if (searchBudgetLostTopImpressionShare_ == null || value != 0D) {
+              SearchBudgetLostTopImpressionShare = value;
+            }
+            break;
+          }
+          case 722: {
+            double? value = _single_searchRankLostAbsoluteTopImpressionShare_codec.Read(input);
+            if (searchRankLostAbsoluteTopImpressionShare_ == null || value != 0D) {
+              SearchRankLostAbsoluteTopImpressionShare = value;
+            }
+            break;
+          }
+          case 730: {
+            double? value = _single_searchRankLostTopImpressionShare_codec.Read(input);
+            if (searchRankLostTopImpressionShare_ == null || value != 0D) {
+              SearchRankLostTopImpressionShare = value;
+            }
+            break;
+          }
+          case 738: {
+            double? value = _single_searchTopImpressionShare_codec.Read(input);
+            if (searchTopImpressionShare_ == null || value != 0D) {
+              SearchTopImpressionShare = value;
+            }
+            break;
+          }
+          case 746: {
+            double? value = _single_topImpressionPercentage_codec.Read(input);
+            if (topImpressionPercentage_ == null || value != 0D) {
+              TopImpressionPercentage = value;
+            }
+            break;
+          }
+          case 754: {
+            double? value = _single_valuePerCurrentModelAttributedConversion_codec.Read(input);
+            if (valuePerCurrentModelAttributedConversion_ == null || value != 0D) {
+              ValuePerCurrentModelAttributedConversion = value;
+            }
+            break;
+          }
+          case 762: {
+            double? value = _single_absoluteTopImpressionPercentage_codec.Read(input);
+            if (absoluteTopImpressionPercentage_ == null || value != 0D) {
+              AbsoluteTopImpressionPercentage = value;
+            }
+            break;
+          }
+          case 770: {
+            double? value = _single_activeViewMeasurability_codec.Read(input);
+            if (activeViewMeasurability_ == null || value != 0D) {
+              ActiveViewMeasurability = value;
+            }
+            break;
+          }
+          case 778: {
+            double? value = _single_activeViewViewability_codec.Read(input);
+            if (activeViewViewability_ == null || value != 0D) {
+              ActiveViewViewability = value;
+            }
+            break;
+          }
+          case 786: {
+            double? value = _single_averageCpe_codec.Read(input);
+            if (averageCpe_ == null || value != 0D) {
+              AverageCpe = value;
+            }
+            break;
+          }
+          case 794: {
+            double? value = _single_averagePageViews_codec.Read(input);
+            if (averagePageViews_ == null || value != 0D) {
+              AveragePageViews = value;
+            }
+            break;
+          }
+          case 802:
+          case 800: {
+            interactionTypes_.AddEntriesFrom(input, _repeated_interactionTypes_codec);
+            break;
+          }
+          case 810: {
+            double? value = _single_currentModelAttributedConversions_codec.Read(input);
+            if (currentModelAttributedConversions_ == null || value != 0D) {
+              CurrentModelAttributedConversions = value;
+            }
+            break;
+          }
+          case 818: {
+            double? value = _single_currentModelAttributedConversionsFromInteractionsRate_codec.Read(input);
+            if (currentModelAttributedConversionsFromInteractionsRate_ == null || value != 0D) {
+              CurrentModelAttributedConversionsFromInteractionsRate = value;
+            }
+            break;
+          }
+          case 826: {
+            double? value = _single_currentModelAttributedConversionsFromInteractionsValuePerInteraction_codec.Read(input);
+            if (currentModelAttributedConversionsFromInteractionsValuePerInteraction_ == null || value != 0D) {
+              CurrentModelAttributedConversionsFromInteractionsValuePerInteraction = value;
+            }
+            break;
+          }
+          case 834: {
+            double? value = _single_currentModelAttributedConversionsValue_codec.Read(input);
+            if (currentModelAttributedConversionsValue_ == null || value != 0D) {
+              CurrentModelAttributedConversionsValue = value;
+            }
+            break;
+          }
+          case 842: {
+            double? value = _single_currentModelAttributedConversionsValuePerCost_codec.Read(input);
+            if (currentModelAttributedConversionsValuePerCost_ == null || value != 0D) {
+              CurrentModelAttributedConversionsValuePerCost = value;
+            }
+            break;
+          }
+          case 850: {
+            double? value = _single_costPerCurrentModelAttributedConversion_codec.Read(input);
+            if (costPerCurrentModelAttributedConversion_ == null || value != 0D) {
+              CostPerCurrentModelAttributedConversion = value;
             }
             break;
           }

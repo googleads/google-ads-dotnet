@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC. All Rights Reserved.
+// Copyright 2019 Google LLC. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ using Google.Protobuf;
 using Google.Ads.GoogleAds.Lib;
 namespace Google.Ads.GoogleAds.V0.Services
 {
-    public partial class CampaignGroupServiceClientImpl
+    public partial class RemarketingActionServiceClientImpl
     {
         // Modify every API call on construction to use GoogleAdsException
         partial void Modify_ApiCall<TRequest, TResponse>(ref ApiCall<TRequest, TResponse> call)

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "ZHMvdjAvZW51bXMvZmVlZF9hdHRyaWJ1dGVfdHlwZS5wcm90bxovZ29vZ2xl",
             "L2Fkcy9nb29nbGVhZHMvdjAvZW51bXMvZmVlZF9vcmlnaW4ucHJvdG8aL2dv",
             "b2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2ZlZWRfc3RhdHVzLnByb3Rv",
-            "Gh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8iwgsKBEZlZWQSFQoN",
+            "Gh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8iugsKBEZlZWQSFQoN",
             "cmVzb3VyY2VfbmFtZRgBIAEoCRInCgJpZBgCIAEoCzIbLmdvb2dsZS5wcm90",
             "b2J1Zi5JbnQ2NFZhbHVlEioKBG5hbWUYAyABKAsyHC5nb29nbGUucHJvdG9i",
             "dWYuU3RyaW5nVmFsdWUSRAoKYXR0cmlidXRlcxgEIAMoCzIwLmdvb2dsZS5h",
@@ -45,45 +45,46 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuRmVlZC5QbGFjZXNM",
             "b2NhdGlvbkZlZWREYXRhSAASaQocYWZmaWxpYXRlX2xvY2F0aW9uX2ZlZWRf",
             "ZGF0YRgHIAEoCzJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNl",
-            "cy5GZWVkLkFmZmlsaWF0ZUxvY2F0aW9uRmVlZERhdGFIABrRBAoWUGxhY2Vz",
+            "cy5GZWVkLkFmZmlsaWF0ZUxvY2F0aW9uRmVlZERhdGFIABrJBAoWUGxhY2Vz",
             "TG9jYXRpb25GZWVkRGF0YRJcCgpvYXV0aF9pbmZvGAEgASgLMkguZ29vZ2xl",
             "LmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkZlZWQuUGxhY2VzTG9jYXRp",
             "b25GZWVkRGF0YS5PQXV0aEluZm8SMwoNZW1haWxfYWRkcmVzcxgCIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJBChtidXNpbmVzc19hY2Nv",
-            "dW50X2lkZW50aWZpZXIYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUSOgoUYnVzaW5lc3NfbmFtZV9maWx0ZXIYBCABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUSNgoQY2F0ZWdvcnlfZmlsdGVycxgFIAMo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1sYWJlbF9maWx0",
-            "ZXJzGAYgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlGrcBCglP",
-            "QXV0aEluZm8SMQoLaHR0cF9tZXRob2QYASABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSNgoQaHR0cF9yZXF1ZXN0X3VybBgCIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI/ChlodHRwX2F1dGhvcml6YXRp",
-            "b25faGVhZGVyGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "GtcBChlBZmZpbGlhdGVMb2NhdGlvbkZlZWREYXRhEi4KCWNoYWluX2lkcxgB",
-            "IAMoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEokBChFyZWxhdGlv",
-            "bnNoaXBfdHlwZRgCIAEoDjJuLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVu",
-            "dW1zLkFmZmlsaWF0ZUxvY2F0aW9uRmVlZFJlbGF0aW9uc2hpcFR5cGVFbnVt",
-            "LkFmZmlsaWF0ZUxvY2F0aW9uRmVlZFJlbGF0aW9uc2hpcFR5cGVCHQobc3lz",
-            "dGVtX2ZlZWRfZ2VuZXJhdGlvbl9kYXRhIu4BCg1GZWVkQXR0cmlidXRlEicK",
-            "AmlkGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSKgoEbmFt",
-            "ZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJUCgR0eXBl",
-            "GAMgASgOMkYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuRmVlZEF0",
-            "dHJpYnV0ZVR5cGVFbnVtLkZlZWRBdHRyaWJ1dGVUeXBlEjIKDmlzX3BhcnRf",
-            "b2Zfa2V5GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZSLiAQoW",
-            "RmVlZEF0dHJpYnV0ZU9wZXJhdGlvbhJUCghvcGVyYXRvchgBIAEoDjJCLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcy5GZWVkQXR0cmlidXRl",
-            "T3BlcmF0aW9uLk9wZXJhdG9yEj8KBXZhbHVlGAIgASgLMjAuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkZlZWRBdHRyaWJ1dGUiMQoIT3Bl",
-            "cmF0b3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESBwoDQUREEAJC",
-            "zgEKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCCUZl",
-            "ZWRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dB",
-            "QaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc2IGcHJvdG8z"));
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI5ChNidXNpbmVzc19hY2Nv",
+            "dW50X2lkGAogASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjoK",
+            "FGJ1c2luZXNzX25hbWVfZmlsdGVyGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEjYKEGNhdGVnb3J5X2ZpbHRlcnMYBSADKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoNbGFiZWxfZmlsdGVycxgGIAMo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRq3AQoJT0F1dGhJbmZv",
+            "EjEKC2h0dHBfbWV0aG9kGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEjYKEGh0dHBfcmVxdWVzdF91cmwYAiABKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUSPwoZaHR0cF9hdXRob3JpemF0aW9uX2hlYWRl",
+            "chgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRrXAQoZQWZm",
+            "aWxpYXRlTG9jYXRpb25GZWVkRGF0YRIuCgljaGFpbl9pZHMYASADKAsyGy5n",
+            "b29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRKJAQoRcmVsYXRpb25zaGlwX3R5",
+            "cGUYAiABKA4ybi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5BZmZp",
+            "bGlhdGVMb2NhdGlvbkZlZWRSZWxhdGlvbnNoaXBUeXBlRW51bS5BZmZpbGlh",
+            "dGVMb2NhdGlvbkZlZWRSZWxhdGlvbnNoaXBUeXBlQh0KG3N5c3RlbV9mZWVk",
+            "X2dlbmVyYXRpb25fZGF0YSLuAQoNRmVlZEF0dHJpYnV0ZRInCgJpZBgBIAEo",
+            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEioKBG5hbWUYAiABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSVAoEdHlwZRgDIAEoDjJG",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkZlZWRBdHRyaWJ1dGVU",
+            "eXBlRW51bS5GZWVkQXR0cmlidXRlVHlwZRIyCg5pc19wYXJ0X29mX2tleRgE",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUi4gEKFkZlZWRBdHRy",
+            "aWJ1dGVPcGVyYXRpb24SVAoIb3BlcmF0b3IYASABKA4yQi5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5yZXNvdXJjZXMuRmVlZEF0dHJpYnV0ZU9wZXJhdGlv",
+            "bi5PcGVyYXRvchI/CgV2YWx1ZRgCIAEoCzIwLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLnJlc291cmNlcy5GZWVkQXR0cmlidXRlIjEKCE9wZXJhdG9yEg8K",
+            "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgcKA0FERBACQvYBCiVjb20u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQglGZWVkUHJvdG9Q",
+            "AVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.AffiliateLocationFeedRelationshipTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.FeedAttributeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.FeedOriginReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.FeedStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Feed), global::Google.Ads.GoogleAds.V0.Resources.Feed.Parser, new[]{ "ResourceName", "Id", "Name", "Attributes", "AttributeOperations", "Origin", "Status", "PlacesLocationFeedData", "AffiliateLocationFeedData" }, new[]{ "SystemFeedGenerationData" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData), global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData.Parser, new[]{ "OauthInfo", "EmailAddress", "BusinessAccountIdentifier", "BusinessNameFilter", "CategoryFilters", "LabelFilters" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo), global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo.Parser, new[]{ "HttpMethod", "HttpRequestUrl", "HttpAuthorizationHeader" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Feed), global::Google.Ads.GoogleAds.V0.Resources.Feed.Parser, new[]{ "ResourceName", "Id", "Name", "Attributes", "AttributeOperations", "Origin", "Status", "PlacesLocationFeedData", "AffiliateLocationFeedData" }, new[]{ "SystemFeedGenerationData" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData), global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData.Parser, new[]{ "OauthInfo", "EmailAddress", "BusinessAccountId", "BusinessNameFilter", "CategoryFilters", "LabelFilters" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo), global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo.Parser, new[]{ "HttpMethod", "HttpRequestUrl", "HttpAuthorizationHeader" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.AffiliateLocationFeedData), global::Google.Ads.GoogleAds.V0.Resources.Feed.Types.AffiliateLocationFeedData.Parser, new[]{ "ChainIds", "RelationshipType" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.FeedAttribute), global::Google.Ads.GoogleAds.V0.Resources.FeedAttribute.Parser, new[]{ "Id", "Name", "Type", "IsPartOfKey" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.FeedAttributeOperation), global::Google.Ads.GoogleAds.V0.Resources.FeedAttributeOperation.Parser, new[]{ "Operator", "Value" }, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Resources.FeedAttributeOperation.Types.Operator) }, null)
@@ -559,7 +560,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         public PlacesLocationFeedData(PlacesLocationFeedData other) : this() {
           oauthInfo_ = other.oauthInfo_ != null ? other.oauthInfo_.Clone() : null;
           EmailAddress = other.EmailAddress;
-          BusinessAccountIdentifier = other.BusinessAccountIdentifier;
+          BusinessAccountId = other.BusinessAccountId;
           BusinessNameFilter = other.BusinessNameFilter;
           categoryFilters_ = other.categoryFilters_.Clone();
           labelFilters_ = other.labelFilters_.Clone();
@@ -603,20 +604,21 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           }
         }
 
-        /// <summary>Field number for the "business_account_identifier" field.</summary>
-        public const int BusinessAccountIdentifierFieldNumber = 3;
-        private static readonly pb::FieldCodec<string> _single_businessAccountIdentifier_codec = pb::FieldCodec.ForClassWrapper<string>(26);
-        private string businessAccountIdentifier_;
+        /// <summary>Field number for the "business_account_id" field.</summary>
+        public const int BusinessAccountIdFieldNumber = 10;
+        private static readonly pb::FieldCodec<string> _single_businessAccountId_codec = pb::FieldCodec.ForClassWrapper<string>(82);
+        private string businessAccountId_;
         /// <summary>
         /// Plus page ID of the managed business whose locations should be used. If
         /// this field is not set, then all businesses accessible by the user
         /// (specified by email_address) are used.
+        /// This field is mutate-only and is not selectable.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string BusinessAccountIdentifier {
-          get { return businessAccountIdentifier_; }
+        public string BusinessAccountId {
+          get { return businessAccountId_; }
           set {
-            businessAccountIdentifier_ = value;
+            businessAccountId_ = value;
           }
         }
 
@@ -684,7 +686,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           }
           if (!object.Equals(OauthInfo, other.OauthInfo)) return false;
           if (EmailAddress != other.EmailAddress) return false;
-          if (BusinessAccountIdentifier != other.BusinessAccountIdentifier) return false;
+          if (BusinessAccountId != other.BusinessAccountId) return false;
           if (BusinessNameFilter != other.BusinessNameFilter) return false;
           if(!categoryFilters_.Equals(other.categoryFilters_)) return false;
           if(!labelFilters_.Equals(other.labelFilters_)) return false;
@@ -696,7 +698,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           int hash = 1;
           if (oauthInfo_ != null) hash ^= OauthInfo.GetHashCode();
           if (emailAddress_ != null) hash ^= EmailAddress.GetHashCode();
-          if (businessAccountIdentifier_ != null) hash ^= BusinessAccountIdentifier.GetHashCode();
+          if (businessAccountId_ != null) hash ^= BusinessAccountId.GetHashCode();
           if (businessNameFilter_ != null) hash ^= BusinessNameFilter.GetHashCode();
           hash ^= categoryFilters_.GetHashCode();
           hash ^= labelFilters_.GetHashCode();
@@ -720,14 +722,14 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           if (emailAddress_ != null) {
             _single_emailAddress_codec.WriteTagAndValue(output, EmailAddress);
           }
-          if (businessAccountIdentifier_ != null) {
-            _single_businessAccountIdentifier_codec.WriteTagAndValue(output, BusinessAccountIdentifier);
-          }
           if (businessNameFilter_ != null) {
             _single_businessNameFilter_codec.WriteTagAndValue(output, BusinessNameFilter);
           }
           categoryFilters_.WriteTo(output, _repeated_categoryFilters_codec);
           labelFilters_.WriteTo(output, _repeated_labelFilters_codec);
+          if (businessAccountId_ != null) {
+            _single_businessAccountId_codec.WriteTagAndValue(output, BusinessAccountId);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -742,8 +744,8 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           if (emailAddress_ != null) {
             size += _single_emailAddress_codec.CalculateSizeWithTag(EmailAddress);
           }
-          if (businessAccountIdentifier_ != null) {
-            size += _single_businessAccountIdentifier_codec.CalculateSizeWithTag(BusinessAccountIdentifier);
+          if (businessAccountId_ != null) {
+            size += _single_businessAccountId_codec.CalculateSizeWithTag(BusinessAccountId);
           }
           if (businessNameFilter_ != null) {
             size += _single_businessNameFilter_codec.CalculateSizeWithTag(BusinessNameFilter);
@@ -772,9 +774,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
               EmailAddress = other.EmailAddress;
             }
           }
-          if (other.businessAccountIdentifier_ != null) {
-            if (businessAccountIdentifier_ == null || other.BusinessAccountIdentifier != "") {
-              BusinessAccountIdentifier = other.BusinessAccountIdentifier;
+          if (other.businessAccountId_ != null) {
+            if (businessAccountId_ == null || other.BusinessAccountId != "") {
+              BusinessAccountId = other.BusinessAccountId;
             }
           }
           if (other.businessNameFilter_ != null) {
@@ -809,13 +811,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
                 }
                 break;
               }
-              case 26: {
-                string value = _single_businessAccountIdentifier_codec.Read(input);
-                if (businessAccountIdentifier_ == null || value != "") {
-                  BusinessAccountIdentifier = value;
-                }
-                break;
-              }
               case 34: {
                 string value = _single_businessNameFilter_codec.Read(input);
                 if (businessNameFilter_ == null || value != "") {
@@ -829,6 +824,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
               }
               case 50: {
                 labelFilters_.AddEntriesFrom(input, _repeated_labelFilters_codec);
+                break;
+              }
+              case 82: {
+                string value = _single_businessAccountId_codec.Read(input);
+                if (businessAccountId_ == null || value != "") {
+                  BusinessAccountId = value;
+                }
                 break;
               }
             }
