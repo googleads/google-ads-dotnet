@@ -111,7 +111,7 @@ namespace Google.Ads.GoogleAds.Lib
 
             if (!string.IsNullOrEmpty(config.LoginCustomerId))
             {
-                callSettings.WithHeader("login-customer-id", config.LoginCustomerId);
+                callSettings = callSettings.WithHeader("login-customer-id", config.LoginCustomerId);
             }
 
             serviceContext.CallSettings = callSettings;
