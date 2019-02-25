@@ -1,3 +1,7 @@
+0.8.1
+=====
+- Fixed an issue with login-customer-id header not being sent correctly to the server.
+
 0.8.0
 =====
 
