@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvcHJvZHVjdF9n",
             "cm91cF92aWV3LnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNv",
-            "dXJjZXMiKQoQUHJvZHVjdEdyb3VwVmlldxIVCg1yZXNvdXJjZV9uYW1lGAEg",
-            "ASgJQoICCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2Vz",
-            "QhVQcm9kdWN0R3JvdXBWaWV3UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcv",
-            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNl",
-            "cztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5S",
-            "ZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPq",
-            "AiVHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90",
-            "bzM="));
+            "dXJjZXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iKQoQUHJvZHVj",
+            "dEdyb3VwVmlldxIVCg1yZXNvdXJjZV9uYW1lGAEgASgJQoICCiVjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhVQcm9kdWN0R3JvdXBW",
+            "aWV3UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNH",
+            "QUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29n",
+            "bGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6",
+            "R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ProductGroupView), global::Google.Ads.GoogleAds.V0.Resources.ProductGroupView.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the product group view.
     /// Product group view resource names have the form:
     ///
-    /// `customers/{customer_id}/productGroupViews/{ad_group_id}_{criterion_id}`
+    /// `customers/{customer_id}/productGroupViews/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

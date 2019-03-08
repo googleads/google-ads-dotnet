@@ -17,7 +17,7 @@
       <PackageReference Include="Moq" Version="4.10.1" />
       <PackageReference Include="NUnit" Version="3.11.0" />
       <PackageReference Include="NUnit3TestAdapter" Version="3.12.0" />
-      <PackageReference Include="Google.Ads.GoogleAds" Version="0.8.1" />
+      <PackageReference Include="Google.Ads.GoogleAds" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\App.config">

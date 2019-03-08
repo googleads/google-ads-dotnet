@@ -81,7 +81,7 @@ namespace Google.Ads.GoogleAds.Logging
         /// <summary>
         /// Gets or sets the response.
         /// </summary>
-        public GoogleAdsException Exception
+        public RpcException Exception
         {
             get;
             set;

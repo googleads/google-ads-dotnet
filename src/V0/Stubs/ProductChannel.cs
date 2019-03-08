@@ -25,17 +25,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9wcm9kdWN0X2NoYW5u",
-            "ZWwucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zIlsKElBy",
-            "b2R1Y3RDaGFubmVsRW51bSJFCg5Qcm9kdWN0Q2hhbm5lbBIPCgtVTlNQRUNJ",
-            "RklFRBAAEgsKB1VOS05PV04QARIKCgZPTkxJTkUQAhIJCgVMT0NBTBADQugB",
-            "CiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCE1Byb2R1Y3RD",
-            "aGFubmVsUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
-            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgId",
-            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYw",
-            "OjpFbnVtc2IGcHJvdG8z"));
+            "ZWwucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zGhxnb29n",
+            "bGUvYXBpL2Fubm90YXRpb25zLnByb3RvIlsKElByb2R1Y3RDaGFubmVsRW51",
+            "bSJFCg5Qcm9kdWN0Q2hhbm5lbBIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05P",
+            "V04QARIKCgZPTkxJTkUQAhIJCgVMT0NBTBADQugBCiFjb20uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuZW51bXNCE1Byb2R1Y3RDaGFubmVsUHJvdG9QAVpC",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29n",
+            "bGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVt",
+            "c+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.ProductChannelEnum), global::Google.Ads.GoogleAds.V0.Enums.ProductChannelEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.ProductChannelEnum.Types.ProductChannel) }, null)
           }));

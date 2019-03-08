@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY2hhbmdlX3N0YXR1",
             "c19lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
-            "ImIKFUNoYW5nZVN0YXR1c0Vycm9yRW51bSJJChFDaGFuZ2VTdGF0dXNFcnJv",
-            "chIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIWChJTVEFSVF9EQVRF",
-            "X1RPT19PTEQQA0LxAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVy",
-            "cm9yc0IWQ2hhbmdlU3RhdHVzRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJy",
-            "b3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVy",
-            "cm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc+oCIkdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJvcnNiBnByb3RvMw=="));
+            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvImIKFUNoYW5nZVN0YXR1",
+            "c0Vycm9yRW51bSJJChFDaGFuZ2VTdGF0dXNFcnJvchIPCgtVTlNQRUNJRklF",
+            "RBAAEgsKB1VOS05PV04QARIWChJTVEFSVF9EQVRFX1RPT19PTEQQA0LxAQoi",
+            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IWQ2hhbmdlU3Rh",
+            "dHVzRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
+            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dB",
+            "QaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxB",
+            "ZHNcR29vZ2xlQWRzXFYwXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVB",
+            "ZHM6OlYwOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.ChangeStatusErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.ChangeStatusErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.ChangeStatusErrorEnum.Types.ChangeStatusError) }, null)
           }));

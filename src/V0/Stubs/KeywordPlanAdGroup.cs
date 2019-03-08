@@ -26,21 +26,22 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMva2V5d29yZF9w",
             "bGFuX2FkX2dyb3VwLnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5y",
-            "ZXNvdXJjZXMaHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90byLyAQoS",
-            "S2V5d29yZFBsYW5BZEdyb3VwEhUKDXJlc291cmNlX25hbWUYASABKAkSOwoV",
-            "a2V5d29yZF9wbGFuX2NhbXBhaWduGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LlN0cmluZ1ZhbHVlEicKAmlkGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDY0VmFsdWUSKgoEbmFtZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZRIzCg5jcGNfYmlkX21pY3JvcxgFIAEoCzIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5JbnQ2NFZhbHVlQoQCCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAucmVzb3VyY2VzQhdLZXl3b3JkUGxhbkFkR3JvdXBQcm90b1ABWkpnb29n",
-            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
-            "ZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRz",
-            "XFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpS",
-            "ZXNvdXJjZXNiBnByb3RvMw=="));
+            "ZXNvdXJjZXMaHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29v",
+            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLyAQoSS2V5d29yZFBsYW5BZEdy",
+            "b3VwEhUKDXJlc291cmNlX25hbWUYASABKAkSOwoVa2V5d29yZF9wbGFuX2Nh",
+            "bXBhaWduGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEicK",
+            "AmlkGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSKgoEbmFt",
+            "ZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg5jcGNf",
+            "YmlkX21pY3JvcxgFIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVl",
+            "QoQCCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhdL",
+            "ZXl3b3JkUGxhbkFkR3JvdXBQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2Vz",
+            "O3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJl",
+            "c291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oC",
+            "JUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.KeywordPlanAdGroup), global::Google.Ads.GoogleAds.V0.Resources.KeywordPlanAdGroup.Parser, new[]{ "ResourceName", "KeywordPlanCampaign", "Id", "Name", "CpcBidMicros" }, null, null, null)
           }));
@@ -51,7 +52,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
   #region Messages
   /// <summary>
   /// A Keyword Planner ad group.
-  /// Max number of keyword plan ad groups per plan: 50.
+  /// Max number of keyword plan ad groups per plan: 200.
   /// </summary>
   public sealed partial class KeywordPlanAdGroup : pb::IMessage<KeywordPlanAdGroup> {
     private static readonly pb::MessageParser<KeywordPlanAdGroup> _parser = new pb::MessageParser<KeywordPlanAdGroup>(() => new KeywordPlanAdGroup());

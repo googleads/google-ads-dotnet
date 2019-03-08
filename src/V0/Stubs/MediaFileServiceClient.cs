@@ -483,15 +483,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateMediaFilesResponse> MutateMediaFilesAsync(
             string customerId,
             scg::IEnumerable<MediaFileOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateMediaFilesAsync(
                 new MutateMediaFilesRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -523,8 +523,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateMediaFilesResponse> MutateMediaFilesAsync(
             string customerId,
             scg::IEnumerable<MediaFileOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => MutateMediaFilesAsync(
                 customerId,
                 operations,
@@ -560,15 +560,90 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateMediaFilesResponse MutateMediaFiles(
             string customerId,
             scg::IEnumerable<MediaFileOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateMediaFiles(
                 new MutateMediaFilesRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates media files. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose media files are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual media file.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateMediaFilesResponse> MutateMediaFilesAsync(
+            string customerId,
+            scg::IEnumerable<MediaFileOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateMediaFilesAsync(
+                new MutateMediaFilesRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates media files. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose media files are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual media file.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateMediaFilesResponse> MutateMediaFilesAsync(
+            string customerId,
+            scg::IEnumerable<MediaFileOperation> operations,
+            st::CancellationToken cancellationToken) => MutateMediaFilesAsync(
+                customerId,
+                operations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates media files. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose media files are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual media file.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateMediaFilesResponse MutateMediaFiles(
+            string customerId,
+            scg::IEnumerable<MediaFileOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateMediaFiles(
+                new MutateMediaFilesRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
 

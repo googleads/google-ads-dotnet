@@ -26,17 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9mcmVxdWVuY3lfY2Fw",
             "X2V2ZW50X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVu",
-            "dW1zInIKGUZyZXF1ZW5jeUNhcEV2ZW50VHlwZUVudW0iVQoVRnJlcXVlbmN5",
-            "Q2FwRXZlbnRUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEg4K",
-            "CklNUFJFU1NJT04QAhIOCgpWSURFT19WSUVXEANC7wEKIWNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5lbnVtc0IaRnJlcXVlbmN5Q2FwRXZlbnRUeXBl",
-            "UHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
-            "cy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xl",
-            "LkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFk",
-            "c1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVt",
-            "c2IGcHJvdG8z"));
+            "dW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvInIKGUZyZXF1ZW5j",
+            "eUNhcEV2ZW50VHlwZUVudW0iVQoVRnJlcXVlbmN5Q2FwRXZlbnRUeXBlEg8K",
+            "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEg4KCklNUFJFU1NJT04QAhIO",
+            "CgpWSURFT19WSUVXEANC7wEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5lbnVtc0IaRnJlcXVlbmN5Q2FwRXZlbnRUeXBlUHJvdG9QAVpCZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
+            "VjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.FrequencyCapEventTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.FrequencyCapEventTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType) }, null)
           }));

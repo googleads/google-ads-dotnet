@@ -25,16 +25,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMva2V5d29yZF92",
-            "aWV3LnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMi",
-            "JAoLS2V5d29yZFZpZXcSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCUL9AQolY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IQS2V5d29yZFZp",
-            "ZXdQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dB",
-            "QaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpH",
-            "b29nbGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "aWV3LnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMa",
+            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iJAoLS2V5d29yZFZpZXcS",
+            "FQoNcmVzb3VyY2VfbmFtZRgBIAEoCUL9AQolY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLnJlc291cmNlc0IQS2V5d29yZFZpZXdQcm90b1ABWkpnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpS",
+            "ZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.KeywordView), global::Google.Ads.GoogleAds.V0.Resources.KeywordView.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -87,7 +88,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the keyword view.
     /// Keyword view resource names have the form:
     ///
-    /// `customers/{customer_id}/keywordViews/{ad_group_id}_{criterion_id}`
+    /// `customers/{customer_id}/keywordViews/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

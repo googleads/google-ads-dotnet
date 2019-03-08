@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Common {
           string.Concat(
             "CkRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vZXhwbG9yZXJfYXV0",
             "b19vcHRpbWl6ZXJfc2V0dGluZy5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAuY29tbW9uGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8i",
-            "SgocRXhwbG9yZXJBdXRvT3B0aW1pemVyU2V0dGluZxIqCgZvcHRfaW4YASAB",
-            "KAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlQvwBCiJjb20uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAuY29tbW9uQiFFeHBsb3JlckF1dG9PcHRpbWl6",
-            "ZXJTZXR0aW5nUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
-            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNH",
-            "QUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVc",
-            "QWRzXEdvb2dsZUFkc1xWMFxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xl",
-            "QWRzOjpWMDo6Q29tbW9uYgZwcm90bzM="));
+            "ZHMudjAuY29tbW9uGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8a",
+            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iSgocRXhwbG9yZXJBdXRv",
+            "T3B0aW1pemVyU2V0dGluZxIqCgZvcHRfaW4YASABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuQm9vbFZhbHVlQvwBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuY29tbW9uQiFFeHBsb3JlckF1dG9PcHRpbWl6ZXJTZXR0aW5nUHJvdG9Q",
+            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MFxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6Q29tbW9u",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.ExplorerAutoOptimizerSetting), global::Google.Ads.GoogleAds.V0.Common.ExplorerAutoOptimizerSetting.Parser, new[]{ "OptIn" }, null, null, null)
           }));

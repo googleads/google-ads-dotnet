@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Ckhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMva2V5d29yZF9wbGFu",
             "X25lZ2F0aXZlX2tleXdvcmRfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYwLmVycm9ycyJmCiNLZXl3b3JkUGxhbk5lZ2F0aXZlS2V5d29y",
-            "ZEVycm9yRW51bSI/Ch9LZXl3b3JkUGxhbk5lZ2F0aXZlS2V5d29yZEVycm9y",
-            "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABQv8BCiJjb20uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQiRLZXl3b3JkUGxhbk5lZ2F0aXZl",
-            "S2V5d29yZEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
-            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOi",
-            "AgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29v",
-            "Z2xlQWRzOjpWMDo6RXJyb3JzYgZwcm90bzM="));
+            "Z2xlYWRzLnYwLmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90",
+            "byJmCiNLZXl3b3JkUGxhbk5lZ2F0aXZlS2V5d29yZEVycm9yRW51bSI/Ch9L",
+            "ZXl3b3JkUGxhbk5lZ2F0aXZlS2V5d29yZEVycm9yEg8KC1VOU1BFQ0lGSUVE",
+            "EAASCwoHVU5LTk9XThABQv8BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuZXJyb3JzQiRLZXl3b3JkUGxhbk5lZ2F0aXZlS2V5d29yZEVycm9yUHJv",
+            "dG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUu",
+            "QWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFk",
+            "c1xWMFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RXJy",
+            "b3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanNegativeKeywordErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanNegativeKeywordErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.KeywordPlanNegativeKeywordErrorEnum.Types.KeywordPlanNegativeKeywordError) }, null)
           }));

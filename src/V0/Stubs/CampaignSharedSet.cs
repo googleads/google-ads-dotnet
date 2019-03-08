@@ -28,20 +28,21 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "c2hhcmVkX3NldC5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVz",
             "b3VyY2VzGj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jYW1wYWln",
             "bl9zaGFyZWRfc2V0X3N0YXR1cy5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dy",
-            "YXBwZXJzLnByb3RvIvABChFDYW1wYWlnblNoYXJlZFNldBIVCg1yZXNvdXJj",
-            "ZV9uYW1lGAEgASgJEi4KCGNhbXBhaWduGAMgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlEjAKCnNoYXJlZF9zZXQYBCABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUSYgoGc3RhdHVzGAIgASgOMlIuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAuZW51bXMuQ2FtcGFpZ25TaGFyZWRTZXRTdGF0",
-            "dXNFbnVtLkNhbXBhaWduU2hhcmVkU2V0U3RhdHVzQoMCCiVjb20uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhZDYW1wYWlnblNoYXJlZFNl",
-            "dFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FB",
-            "qgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdv",
-            "b2dsZUFkczo6VjA6OlJlc291cmNlc2IGcHJvdG8z"));
+            "YXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIvAB",
+            "ChFDYW1wYWlnblNoYXJlZFNldBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEi4K",
+            "CGNhbXBhaWduGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjAKCnNoYXJlZF9zZXQYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWUSYgoGc3RhdHVzGAIgASgOMlIuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAuZW51bXMuQ2FtcGFpZ25TaGFyZWRTZXRTdGF0dXNFbnVtLkNhbXBhaWdu",
+            "U2hhcmVkU2V0U3RhdHVzQoMCCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djAucmVzb3VyY2VzQhZDYW1wYWlnblNoYXJlZFNldFByb3RvUAFaSmdvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5H",
+            "b29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNc",
+            "VjBcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OlJl",
+            "c291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.CampaignSharedSetStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.CampaignSharedSetStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CampaignSharedSet), global::Google.Ads.GoogleAds.V0.Resources.CampaignSharedSet.Parser, new[]{ "ResourceName", "Campaign", "SharedSet", "Status" }, null, null, null)
           }));
@@ -98,7 +99,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the campaign shared set.
     /// Campaign shared set resource names have the form:
     ///
-    /// `customers/{customer_id}/campaignSharedSets/{campaign_id}_{shared_set_id}`
+    /// `customers/{customer_id}/campaignSharedSets/{campaign_id}~{shared_set_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

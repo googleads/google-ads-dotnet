@@ -28,19 +28,20 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "X2NvbW1vbi5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9u",
             "GkJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9rZXl3b3JkX3BsYW5f",
             "Y29tcGV0aXRpb25fbGV2ZWwucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFw",
-            "cGVycy5wcm90byLKAQocS2V5d29yZFBsYW5IaXN0b3JpY2FsTWV0cmljcxI5",
-            "ChRhdmdfbW9udGhseV9zZWFyY2hlcxgBIAEoCzIbLmdvb2dsZS5wcm90b2J1",
-            "Zi5JbnQ2NFZhbHVlEm8KC2NvbXBldGl0aW9uGAIgASgOMlouZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjAuZW51bXMuS2V5d29yZFBsYW5Db21wZXRpdGlvbkxl",
-            "dmVsRW51bS5LZXl3b3JkUGxhbkNvbXBldGl0aW9uTGV2ZWxC8QEKImNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb25CFktleXdvcmRQbGFuQ29t",
-            "bW9uUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
-            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5H",
-            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMFxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
-            "MDo6Q29tbW9uYgZwcm90bzM="));
+            "cGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLKAQoc",
+            "S2V5d29yZFBsYW5IaXN0b3JpY2FsTWV0cmljcxI5ChRhdmdfbW9udGhseV9z",
+            "ZWFyY2hlcxgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEm8K",
+            "C2NvbXBldGl0aW9uGAIgASgOMlouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZW51bXMuS2V5d29yZFBsYW5Db21wZXRpdGlvbkxldmVsRW51bS5LZXl3b3Jk",
+            "UGxhbkNvbXBldGl0aW9uTGV2ZWxC8QEKImNvbS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5jb21tb25CFktleXdvcmRQbGFuQ29tbW9uUHJvdG9QAVpEZ29v",
+            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
+            "YWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2ds",
+            "ZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxDb21t",
+            "b27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6Q29tbW9uYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanCompetitionLevelReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanCompetitionLevelReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.KeywordPlanHistoricalMetrics), global::Google.Ads.GoogleAds.V0.Common.KeywordPlanHistoricalMetrics.Parser, new[]{ "AvgMonthlySearches", "Competition" }, null, null, null)
           }));

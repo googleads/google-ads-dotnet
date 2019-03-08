@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hcHBfcGF5bWVudF9t",
             "b2RlbF90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVt",
-            "cyJYChdBcHBQYXltZW50TW9kZWxUeXBlRW51bSI9ChNBcHBQYXltZW50TW9k",
-            "ZWxUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEggKBFBBSUQQ",
-            "HkLtAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhhBcHBQ",
-            "YXltZW50TW9kZWxUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1z",
-            "ogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29n",
-            "bGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
+            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJYChdBcHBQYXltZW50",
+            "TW9kZWxUeXBlRW51bSI9ChNBcHBQYXltZW50TW9kZWxUeXBlEg8KC1VOU1BF",
+            "Q0lGSUVEEAASCwoHVU5LTk9XThABEggKBFBBSUQQHkLtAQohY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhhBcHBQYXltZW50TW9kZWxUeXBl",
+            "UHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xl",
+            "LkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFk",
+            "c1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVt",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.AppPaymentModelTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.AppPaymentModelTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.AppPaymentModelTypeEnum.Types.AppPaymentModelType) }, null)
           }));

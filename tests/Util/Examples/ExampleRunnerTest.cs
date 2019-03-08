@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
                     Assert.Throws(typeof(KeyNotFoundException),
                         delegate ()
                         {
-                            runner.Run("V0.NoSuchExample", client, new string[] { });
+                            runner.Run("V1.NoSuchExample", client, new string[] { });
                         }
                     );
                 }, null

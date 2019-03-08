@@ -484,15 +484,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateCampaignFeedsResponse> MutateCampaignFeedsAsync(
             string customerId,
             scg::IEnumerable<CampaignFeedOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaignFeedsAsync(
                 new MutateCampaignFeedsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -525,8 +525,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateCampaignFeedsResponse> MutateCampaignFeedsAsync(
             string customerId,
             scg::IEnumerable<CampaignFeedOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => MutateCampaignFeedsAsync(
                 customerId,
                 operations,
@@ -563,15 +563,93 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateCampaignFeedsResponse MutateCampaignFeeds(
             string customerId,
             scg::IEnumerable<CampaignFeedOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaignFeeds(
                 new MutateCampaignFeedsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes campaign feeds. Operation statuses are
+        /// returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose campaign feeds are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual campaign feeds.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCampaignFeedsResponse> MutateCampaignFeedsAsync(
+            string customerId,
+            scg::IEnumerable<CampaignFeedOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateCampaignFeedsAsync(
+                new MutateCampaignFeedsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes campaign feeds. Operation statuses are
+        /// returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose campaign feeds are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual campaign feeds.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCampaignFeedsResponse> MutateCampaignFeedsAsync(
+            string customerId,
+            scg::IEnumerable<CampaignFeedOperation> operations,
+            st::CancellationToken cancellationToken) => MutateCampaignFeedsAsync(
+                customerId,
+                operations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates, updates, or removes campaign feeds. Operation statuses are
+        /// returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose campaign feeds are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual campaign feeds.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateCampaignFeedsResponse MutateCampaignFeeds(
+            string customerId,
+            scg::IEnumerable<CampaignFeedOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateCampaignFeeds(
+                new MutateCampaignFeedsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
 

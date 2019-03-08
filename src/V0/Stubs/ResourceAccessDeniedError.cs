@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "CkFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcmVzb3VyY2VfYWNj",
             "ZXNzX2RlbmllZF9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAuZXJyb3JzInMKHVJlc291cmNlQWNjZXNzRGVuaWVkRXJyb3JFbnVtIlIK",
-            "GVJlc291cmNlQWNjZXNzRGVuaWVkRXJyb3ISDwoLVU5TUEVDSUZJRUQQABIL",
-            "CgdVTktOT1dOEAESFwoTV1JJVEVfQUNDRVNTX0RFTklFRBADQvkBCiJjb20u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQh5SZXNvdXJjZUFjY2Vz",
-            "c0RlbmllZEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
-            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOi",
-            "AgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29v",
-            "Z2xlQWRzOjpWMDo6RXJyb3JzYgZwcm90bzM="));
+            "djAuZXJyb3JzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvInMKHVJl",
+            "c291cmNlQWNjZXNzRGVuaWVkRXJyb3JFbnVtIlIKGVJlc291cmNlQWNjZXNz",
+            "RGVuaWVkRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESFwoT",
+            "V1JJVEVfQUNDRVNTX0RFTklFRBADQvkBCiJjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAuZXJyb3JzQh5SZXNvdXJjZUFjY2Vzc0RlbmllZEVycm9yUHJv",
+            "dG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUu",
+            "QWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFk",
+            "c1xWMFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RXJy",
+            "b3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.ResourceAccessDeniedErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.ResourceAccessDeniedErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.ResourceAccessDeniedErrorEnum.Types.ResourceAccessDeniedError) }, null)
           }));

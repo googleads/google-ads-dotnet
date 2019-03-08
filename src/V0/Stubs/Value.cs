@@ -25,18 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Common {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cipnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vdmFsdWUucHJvdG8S",
-            "Hmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbiKHAQoFVmFsdWUSFwoN",
-            "Ym9vbGVhbl92YWx1ZRgBIAEoCEgAEhUKC2ludDY0X3ZhbHVlGAIgASgDSAAS",
-            "FQoLZmxvYXRfdmFsdWUYAyABKAJIABIWCgxkb3VibGVfdmFsdWUYBCABKAFI",
-            "ABIWCgxzdHJpbmdfdmFsdWUYBSABKAlIAEIHCgV2YWx1ZULlAQoiY29tLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbkIKVmFsdWVQcm90b1ABWkRn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjAvY29tbW9uO2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYwLkNvbW1vbsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXENv",
-            "bW1vbuoCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpDb21tb25iBnBy",
-            "b3RvMw=="));
+            "Hmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbhocZ29vZ2xlL2FwaS9h",
+            "bm5vdGF0aW9ucy5wcm90byKHAQoFVmFsdWUSFwoNYm9vbGVhbl92YWx1ZRgB",
+            "IAEoCEgAEhUKC2ludDY0X3ZhbHVlGAIgASgDSAASFQoLZmxvYXRfdmFsdWUY",
+            "AyABKAJIABIWCgxkb3VibGVfdmFsdWUYBCABKAFIABIWCgxzdHJpbmdfdmFs",
+            "dWUYBSABKAlIAEIHCgV2YWx1ZULlAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmNvbW1vbkIKVmFsdWVQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9u",
+            "O2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkNvbW1v",
+            "bsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXENvbW1vbuoCIkdvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYwOjpDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.Value), global::Google.Ads.GoogleAds.V0.Common.Value.Parser, new[]{ "BooleanValue", "Int64Value", "FloatValue", "DoubleValue", "StringValue" }, new[]{ "Value" }, null, null)
           }));

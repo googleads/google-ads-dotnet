@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "CkJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9rZXl3b3JkX3BsYW5f",
             "Y29tcGV0aXRpb25fbGV2ZWwucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLmVudW1zIn0KH0tleXdvcmRQbGFuQ29tcGV0aXRpb25MZXZlbEVudW0i",
-            "WgobS2V5d29yZFBsYW5Db21wZXRpdGlvbkxldmVsEg8KC1VOU1BFQ0lGSUVE",
-            "EAASCwoHVU5LTk9XThABEgcKA0xPVxACEgoKBk1FRElVTRADEggKBEhJR0gQ",
-            "BEL1AQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQiBLZXl3",
-            "b3JkUGxhbkNvbXBldGl0aW9uTGV2ZWxQcm90b1ABWkJnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51",
-            "bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVt",
-            "c8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xlOjpB",
-            "ZHM6Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
+            "LnYwLmVudW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIn0KH0tl",
+            "eXdvcmRQbGFuQ29tcGV0aXRpb25MZXZlbEVudW0iWgobS2V5d29yZFBsYW5D",
+            "b21wZXRpdGlvbkxldmVsEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThAB",
+            "EgcKA0xPVxACEgoKBk1FRElVTRADEggKBEhJR0gQBEL1AQohY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQiBLZXl3b3JkUGxhbkNvbXBldGl0",
+            "aW9uTGV2ZWxQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
+            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGq",
+            "Ah1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjA6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanCompetitionLevelEnum), global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanCompetitionLevelEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel) }, null)
           }));

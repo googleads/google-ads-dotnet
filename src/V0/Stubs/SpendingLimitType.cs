@@ -25,17 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9zcGVuZGluZ19saW1p",
-            "dF90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyJY",
-            "ChVTcGVuZGluZ0xpbWl0VHlwZUVudW0iPwoRU3BlbmRpbmdMaW1pdFR5cGUS",
-            "DwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESDAoISU5GSU5JVEUQAkLr",
-            "AQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhZTcGVuZGlu",
-            "Z0xpbWl0VHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
-            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMDo6RW51bXNiBnByb3RvMw=="));
+            "dF90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcxoc",
+            "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJYChVTcGVuZGluZ0xpbWl0",
+            "VHlwZUVudW0iPwoRU3BlbmRpbmdMaW1pdFR5cGUSDwoLVU5TUEVDSUZJRUQQ",
+            "ABILCgdVTktOT1dOEAESDAoISU5GSU5JVEUQAkLrAQohY29tLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhZTcGVuZGluZ0xpbWl0VHlwZVByb3Rv",
+            "UAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBc",
+            "RW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.SpendingLimitTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.SpendingLimitTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType) }, null)
           }));

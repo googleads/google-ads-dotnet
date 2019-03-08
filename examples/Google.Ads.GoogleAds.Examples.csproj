@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;net452</TargetFrameworks>
+    <RootNamespace>Google.Ads.GoogleAds.Examples</RootNamespace>
+    <AssemblyName>Google.Ads.GoogleAds.Examples</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Google.Ads.GoogleAds.Examples.Program</StartupObject>
+    <DebugType>pdbonly</DebugType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Authentication\**" />
+    <Compile Remove="Migration\**" />
+    <EmbeddedResource Remove="Authentication\**" />
+    <EmbeddedResource Remove="Migration\**" />
+    <None Remove="Authentication\**" />
+    <None Remove="Migration\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Ads.GoogleAds" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+   <!-- Include local projects over nuget dependencies if available -->
+    <ProjectReference Condition="Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="..\src\Google.Ads.GoogleAds.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Condition="Exists('..\src\App.config')" Include="..\src\App.config">
+      <Link>App.config</Link>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

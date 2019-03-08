@@ -25,18 +25,19 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcXVvdGFfZXJyb3Iu",
-            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyKPAQoOUXVv",
-            "dGFFcnJvckVudW0ifQoKUXVvdGFFcnJvchIPCgtVTlNQRUNJRklFRBAAEgsK",
-            "B1VOS05PV04QARIWChJSRVNPVVJDRV9FWEhBVVNURUQQAhIVChFBQ0NFU1Nf",
-            "UFJPSElCSVRFRBADEiIKHlJFU09VUkNFX1RFTVBPUkFSSUxZX0VYSEFVU1RF",
-            "RBAEQuoBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQg9R",
-            "dW90YUVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
-            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNH",
-            "QUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVc",
-            "QWRzXEdvb2dsZUFkc1xWMFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xl",
-            "QWRzOjpWMDo6RXJyb3JzYgZwcm90bzM="));
+            "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycxocZ29vZ2xl",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byKPAQoOUXVvdGFFcnJvckVudW0ifQoK",
+            "UXVvdGFFcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIWChJS",
+            "RVNPVVJDRV9FWEhBVVNURUQQAhIVChFBQ0NFU1NfUFJPSElCSVRFRBADEiIK",
+            "HlJFU09VUkNFX1RFTVBPUkFSSUxZX0VYSEFVU1RFRBAEQuoBCiJjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQg9RdW90YUVycm9yUHJvdG9Q",
+            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RXJyb3Jz",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.QuotaErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.QuotaErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.QuotaErrorEnum.Types.QuotaError) }, null)
           }));

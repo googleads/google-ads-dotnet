@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvbWFuYWdlZF9w",
             "bGFjZW1lbnRfdmlldy5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "cmVzb3VyY2VzIi0KFE1hbmFnZWRQbGFjZW1lbnRWaWV3EhUKDXJlc291cmNl",
-            "X25hbWUYASABKAlChgIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5y",
-            "ZXNvdXJjZXNCGU1hbmFnZWRQbGFjZW1lbnRWaWV3UHJvdG9QAVpKZ29vZ2xl",
-            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
-            "L3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdv",
-            "b2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "MFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6UmVz",
-            "b3VyY2VzYgZwcm90bzM="));
+            "cmVzb3VyY2VzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIi0KFE1h",
+            "bmFnZWRQbGFjZW1lbnRWaWV3EhUKDXJlc291cmNlX25hbWUYASABKAlChgIK",
+            "JWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCGU1hbmFn",
+            "ZWRQbGFjZW1lbnRWaWV3UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlczty",
+            "ZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNv",
+            "dXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVH",
+            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ManagedPlacementView), global::Google.Ads.GoogleAds.V0.Resources.ManagedPlacementView.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the Managed Placement view.
     /// Managed placement view resource names have the form:
     ///
-    /// `customers/{customer_id}/managedPlacementViews/{ad_group_id}_{criterion_id}`
+    /// `customers/{customer_id}/managedPlacementViews/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

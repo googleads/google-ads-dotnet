@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC. All Rights Reserved.
+// Copyright 2018 Google LLC. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 // Generated code - do not edit
 using Google.Api.Gax.Grpc;
 using Google.Protobuf;
-using Google.Ads.GoogleAds.Lib;
+using Google.Ads.GoogleAds.V0.Errors;
 namespace Google.Ads.GoogleAds.V0.Services
 {
     public partial class BillingSetupServiceClientImpl

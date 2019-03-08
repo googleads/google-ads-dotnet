@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9wcm94aW1pdHlfcmFk",
             "aXVzX3VuaXRzLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVt",
-            "cyJrChhQcm94aW1pdHlSYWRpdXNVbml0c0VudW0iTwoUUHJveGltaXR5UmFk",
-            "aXVzVW5pdHMSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESCQoFTUlM",
-            "RVMQAhIOCgpLSUxPTUVURVJTEANC7gEKIWNvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lbnVtc0IZUHJveGltaXR5UmFkaXVzVW5pdHNQcm90b1ABWkJn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2ds",
-            "ZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z",
-            "6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
+            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJrChhQcm94aW1pdHlS",
+            "YWRpdXNVbml0c0VudW0iTwoUUHJveGltaXR5UmFkaXVzVW5pdHMSDwoLVU5T",
+            "UEVDSUZJRUQQABILCgdVTktOT1dOEAESCQoFTUlMRVMQAhIOCgpLSUxPTUVU",
+            "RVJTEANC7gEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IZ",
+            "UHJveGltaXR5UmFkaXVzVW5pdHNQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7",
+            "ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oC",
+            "HUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6",
+            "Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.ProximityRadiusUnitsEnum), global::Google.Ads.GoogleAds.V0.Enums.ProximityRadiusUnitsEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits) }, null)
           }));

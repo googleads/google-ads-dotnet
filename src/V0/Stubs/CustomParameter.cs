@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Common {
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vY3VzdG9tX3BhcmFt",
             "ZXRlci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uGh5n",
-            "b29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8iaQoPQ3VzdG9tUGFyYW1l",
-            "dGVyEikKA2tleRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZRIrCgV2YWx1ZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZULvAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbkIUQ3Vz",
-            "dG9tUGFyYW1ldGVyUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
-            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26i",
-            "AgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMFxDb21tb27qAiJHb29nbGU6OkFkczo6R29v",
-            "Z2xlQWRzOjpWMDo6Q29tbW9uYgZwcm90bzM="));
+            "b29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aHGdvb2dsZS9hcGkvYW5u",
+            "b3RhdGlvbnMucHJvdG8iaQoPQ3VzdG9tUGFyYW1ldGVyEikKA2tleRgBIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIrCgV2YWx1ZRgCIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZULvAQoiY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbkIUQ3VzdG9tUGFyYW1ldGVyUHJv",
+            "dG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUu",
+            "QWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFk",
+            "c1xWMFxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6Q29t",
+            "bW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.CustomParameter), global::Google.Ads.GoogleAds.V0.Common.CustomParameter.Parser, new[]{ "Key", "Value" }, null, null, null)
           }));

@@ -65,10 +65,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "YXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAiABKAsyEi5nb29nbGUucnBjLlN0YXR1",
             "cyIyChlBcHBseVJlY29tbWVuZGF0aW9uUmVzdWx0EhUKDXJlc291cmNlX25h",
             "bWUYASABKAki+AEKHERpc21pc3NSZWNvbW1lbmRhdGlvblJlcXVlc3QSEwoL",
-            "Y3VzdG9tZXJfaWQYASABKAkSFwoPcGFydGlhbF9mYWlsdXJlGAIgASgIEnEK",
-            "Cm9wZXJhdGlvbnMYAyADKAsyXS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5z",
-            "ZXJ2aWNlcy5EaXNtaXNzUmVjb21tZW5kYXRpb25SZXF1ZXN0LkRpc21pc3NS",
-            "ZWNvbW1lbmRhdGlvbk9wZXJhdGlvbho3Ch5EaXNtaXNzUmVjb21tZW5kYXRp",
+            "Y3VzdG9tZXJfaWQYASABKAkScQoKb3BlcmF0aW9ucxgDIAMoCzJdLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLkRpc21pc3NSZWNvbW1lbmRh",
+            "dGlvblJlcXVlc3QuRGlzbWlzc1JlY29tbWVuZGF0aW9uT3BlcmF0aW9uEhcK",
+            "D3BhcnRpYWxfZmFpbHVyZRgCIAEoCBo3Ch5EaXNtaXNzUmVjb21tZW5kYXRp",
             "b25PcGVyYXRpb24SFQoNcmVzb3VyY2VfbmFtZRgBIAEoCSL2AQodRGlzbWlz",
             "c1JlY29tbWVuZGF0aW9uUmVzcG9uc2USbAoHcmVzdWx0cxgBIAMoCzJbLmdv",
             "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLkRpc21pc3NSZWNvbW1l",
@@ -107,7 +107,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters.Parser, new[]{ "TargetCpaMicros", "NewCampaignBudgetAmountMicros" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResponse), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResult), global::Google.Ads.GoogleAds.V0.Services.ApplyRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Parser, new[]{ "CustomerId", "PartialFailure", "Operations" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation.Parser, new[]{ "ResourceName" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation.Parser, new[]{ "ResourceName" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Types.DismissRecommendationResult), global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationResponse.Types.DismissRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null)})
           }));
     }
@@ -1782,8 +1782,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public DismissRecommendationRequest(DismissRecommendationRequest other) : this() {
       customerId_ = other.customerId_;
-      partialFailure_ = other.partialFailure_;
       operations_ = other.operations_.Clone();
+      partialFailure_ = other.partialFailure_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1806,6 +1806,21 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
     }
 
+    /// <summary>Field number for the "operations" field.</summary>
+    public const int OperationsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation> _repeated_operations_codec
+        = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation> operations_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation>();
+    /// <summary>
+    /// The list of operations to dismiss recommendations.
+    /// If partial_failure=false all recommendations should be of the same type
+    /// There is a limit of 100 operations per request.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation> Operations {
+      get { return operations_; }
+    }
+
     /// <summary>Field number for the "partial_failure" field.</summary>
     public const int PartialFailureFieldNumber = 2;
     private bool partialFailure_;
@@ -1823,21 +1838,6 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
     }
 
-    /// <summary>Field number for the "operations" field.</summary>
-    public const int OperationsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation> _repeated_operations_codec
-        = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation.Parser);
-    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation> operations_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation>();
-    /// <summary>
-    /// The list of operations to dismiss recommendations.
-    /// If partial_failure=false all recommendations should be of the same type
-    /// There is a limit of 100 operations per request.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation> Operations {
-      get { return operations_; }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as DismissRecommendationRequest);
@@ -1852,8 +1852,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
         return true;
       }
       if (CustomerId != other.CustomerId) return false;
-      if (PartialFailure != other.PartialFailure) return false;
       if(!operations_.Equals(other.operations_)) return false;
+      if (PartialFailure != other.PartialFailure) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1861,8 +1861,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
-      if (PartialFailure != false) hash ^= PartialFailure.GetHashCode();
       hash ^= operations_.GetHashCode();
+      if (PartialFailure != false) hash ^= PartialFailure.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1896,10 +1896,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (CustomerId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerId);
       }
+      size += operations_.CalculateSize(_repeated_operations_codec);
       if (PartialFailure != false) {
         size += 1 + 1;
       }
-      size += operations_.CalculateSize(_repeated_operations_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1914,10 +1914,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (other.CustomerId.Length != 0) {
         CustomerId = other.CustomerId;
       }
+      operations_.Add(other.operations_);
       if (other.PartialFailure != false) {
         PartialFailure = other.PartialFailure;
       }
-      operations_.Add(other.operations_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

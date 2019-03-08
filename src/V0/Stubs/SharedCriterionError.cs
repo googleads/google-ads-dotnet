@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvc2hhcmVkX2NyaXRl",
             "cmlvbl9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
-            "b3JzIoQBChhTaGFyZWRDcml0ZXJpb25FcnJvckVudW0iaAoUU2hhcmVkQ3Jp",
-            "dGVyaW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESMgou",
-            "Q1JJVEVSSU9OX1RZUEVfTk9UX0FMTE9XRURfRk9SX1NIQVJFRF9TRVRfVFlQ",
-            "RRACQvQBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQhlT",
-            "aGFyZWRDcml0ZXJpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3Jn",
-            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7",
-            "ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3Jz",
-            "ygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3Jz6gIiR29vZ2xlOjpB",
-            "ZHM6Okdvb2dsZUFkczo6VjA6OkVycm9yc2IGcHJvdG8z"));
+            "b3JzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIoQBChhTaGFyZWRD",
+            "cml0ZXJpb25FcnJvckVudW0iaAoUU2hhcmVkQ3JpdGVyaW9uRXJyb3ISDwoL",
+            "VU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESMgouQ1JJVEVSSU9OX1RZUEVf",
+            "Tk9UX0FMTE9XRURfRk9SX1NIQVJFRF9TRVRfVFlQRRACQvQBCiJjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQhlTaGFyZWRDcml0ZXJpb25F",
+            "cnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
+            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIe",
+            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFkc1xH",
+            "b29nbGVBZHNcVjBcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjA6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.SharedCriterionErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.SharedCriterionErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.SharedCriterionErrorEnum.Types.SharedCriterionError) }, null)
           }));

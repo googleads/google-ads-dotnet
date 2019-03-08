@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcG9saWN5X3Zpb2xh",
             "dGlvbl9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJy",
-            "b3JzImIKGFBvbGljeVZpb2xhdGlvbkVycm9yRW51bSJGChRQb2xpY3lWaW9s",
-            "YXRpb25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIQCgxQ",
-            "T0xJQ1lfRVJST1IQAkL0AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmVycm9yc0IZUG9saWN5VmlvbGF0aW9uRXJyb3JQcm90b1ABWkRnb29nbGUu",
-            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
-            "djAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc+oC",
-            "Ikdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJvcnNiBnByb3RvMw=="));
+            "b3JzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvImIKGFBvbGljeVZp",
+            "b2xhdGlvbkVycm9yRW51bSJGChRQb2xpY3lWaW9sYXRpb25FcnJvchIPCgtV",
+            "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIQCgxQT0xJQ1lfRVJST1IQAkL0",
+            "AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IZUG9saWN5",
+            "VmlvbGF0aW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9y",
+            "c6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpH",
+            "b29nbGVBZHM6OlYwOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.PolicyViolationErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.PolicyViolationErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.PolicyViolationErrorEnum.Types.PolicyViolationError) }, null)
           }));

@@ -26,17 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Common {
           string.Concat(
             "Cipnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vZGF0ZXMucHJvdG8S",
             "Hmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbhoeZ29vZ2xlL3Byb3Rv",
-            "YnVmL3dyYXBwZXJzLnByb3RvIm0KCURhdGVSYW5nZRIwCgpzdGFydF9kYXRl",
-            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEi4KCGVuZF9k",
-            "YXRlGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQuUBCiJj",
-            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uQgpEYXRlc1Byb3Rv",
-            "UAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
-            "L2dvb2dsZWFkcy92MC9jb21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjAuQ29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNc",
-            "VjBcQ29tbW9u6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkNvbW1v",
-            "bmIGcHJvdG8z"));
+            "YnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnBy",
+            "b3RvIm0KCURhdGVSYW5nZRIwCgpzdGFydF9kYXRlGAEgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEi4KCGVuZF9kYXRlGAIgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQuUBCiJjb20uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjAuY29tbW9uQgpEYXRlc1Byb3RvUAFaRGdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9j",
+            "b21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAu",
+            "Q29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcQ29tbW9u6gIiR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.DateRange), global::Google.Ads.GoogleAds.V0.Common.DateRange.Parser, new[]{ "StartDate", "EndDate" }, null, null, null)
           }));

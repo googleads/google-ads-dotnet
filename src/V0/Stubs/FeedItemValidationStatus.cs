@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9mZWVkX2l0ZW1fdmFs",
             "aWRhdGlvbl9zdGF0dXMucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmVudW1zIn0KHEZlZWRJdGVtVmFsaWRhdGlvblN0YXR1c0VudW0iXQoYRmVl",
-            "ZEl0ZW1WYWxpZGF0aW9uU3RhdHVzEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5L",
-            "Tk9XThABEgsKB1BFTkRJTkcQAhILCgdJTlZBTElEEAMSCQoFVkFMSUQQBELy",
-            "AQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQh1GZWVkSXRl",
-            "bVZhbGlkYXRpb25TdGF0dXNQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51",
-            "bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdv",
-            "b2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdv",
-            "b2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
+            "LmVudW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIn0KHEZlZWRJ",
+            "dGVtVmFsaWRhdGlvblN0YXR1c0VudW0iXQoYRmVlZEl0ZW1WYWxpZGF0aW9u",
+            "U3RhdHVzEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB1BFTkRJ",
+            "TkcQAhILCgdJTlZBTElEEAMSCQoFVkFMSUQQBELyAQohY29tLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmVudW1zQh1GZWVkSXRlbVZhbGlkYXRpb25TdGF0",
+            "dXNQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
+            "cGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xl",
+            "QWRzXFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVu",
+            "dW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.FeedItemValidationStatusEnum), global::Google.Ads.GoogleAds.V0.Enums.FeedItemValidationStatusEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.FeedItemValidationStatusEnum.Types.FeedItemValidationStatus) }, null)
           }));

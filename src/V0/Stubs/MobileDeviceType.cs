@@ -25,17 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9tb2JpbGVfZGV2aWNl",
-            "X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zImAK",
-            "FE1vYmlsZURldmljZVR5cGVFbnVtIkgKEE1vYmlsZURldmljZVR5cGUSDwoL",
-            "VU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESCgoGTU9CSUxFEAISCgoGVEFC",
-            "TEVUEANC6gEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IV",
-            "TW9iaWxlRGV2aWNlVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dl",
-            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVt",
-            "c6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29v",
-            "Z2xlQWRzOjpWMDo6RW51bXNiBnByb3RvMw=="));
+            "X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zGhxn",
+            "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvImAKFE1vYmlsZURldmljZVR5",
+            "cGVFbnVtIkgKEE1vYmlsZURldmljZVR5cGUSDwoLVU5TUEVDSUZJRUQQABIL",
+            "CgdVTktOT1dOEAESCgoGTU9CSUxFEAISCgoGVEFCTEVUEANC6gEKIWNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IVTW9iaWxlRGV2aWNlVHlw",
+            "ZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2ds",
+            "ZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVB",
+            "ZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51",
+            "bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.MobileDeviceTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.MobileDeviceTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.MobileDeviceTypeEnum.Types.MobileDeviceType) }, null)
           }));

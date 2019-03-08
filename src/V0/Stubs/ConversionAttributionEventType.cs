@@ -26,18 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "CkVnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9jb252ZXJzaW9uX2F0",
             "dHJpYnV0aW9uX2V2ZW50X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVudW1zIoUBCiJDb252ZXJzaW9uQXR0cmlidXRpb25FdmVudFR5",
-            "cGVFbnVtIl8KHkNvbnZlcnNpb25BdHRyaWJ1dGlvbkV2ZW50VHlwZRIPCgtV",
-            "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIOCgpJTVBSRVNTSU9OEAISDwoL",
-            "SU5URVJBQ1RJT04QA0L4AQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmVudW1zQiNDb252ZXJzaW9uQXR0cmlidXRpb25FdmVudFR5cGVQcm90b1AB",
-            "WkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdv",
-            "b2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVu",
-            "dW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90",
-            "bzM="));
+            "YWRzLnYwLmVudW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIoUB",
+            "CiJDb252ZXJzaW9uQXR0cmlidXRpb25FdmVudFR5cGVFbnVtIl8KHkNvbnZl",
+            "cnNpb25BdHRyaWJ1dGlvbkV2ZW50VHlwZRIPCgtVTlNQRUNJRklFRBAAEgsK",
+            "B1VOS05PV04QARIOCgpJTVBSRVNTSU9OEAISDwoLSU5URVJBQ1RJT04QA0L4",
+            "AQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQiNDb252ZXJz",
+            "aW9uQXR0cmlidXRpb25FdmVudFR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5n",
+            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51",
+            "bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVt",
+            "c8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xlOjpB",
+            "ZHM6Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.ConversionAttributionEventTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.ConversionAttributionEventTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType) }, null)
           }));

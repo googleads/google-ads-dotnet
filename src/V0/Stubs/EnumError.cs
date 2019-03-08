@@ -25,17 +25,17 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvZW51bV9lcnJvci5w",
-            "cm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzIlgKDUVudW1F",
-            "cnJvckVudW0iRwoJRW51bUVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5L",
-            "Tk9XThABEhwKGEVOVU1fVkFMVUVfTk9UX1BFUk1JVFRFRBADQukBCiJjb20u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQg5FbnVtRXJyb3JQcm90",
-            "b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fk",
-            "cy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5B",
-            "ZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRz",
-            "XFYwXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJv",
-            "cnNiBnByb3RvMw=="));
+            "cm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzGhxnb29nbGUv",
+            "YXBpL2Fubm90YXRpb25zLnByb3RvIlgKDUVudW1FcnJvckVudW0iRwoJRW51",
+            "bUVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhwKGEVOVU1f",
+            "VkFMVUVfTk9UX1BFUk1JVFRFRBADQukBCiJjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAuZXJyb3JzQg5FbnVtRXJyb3JQcm90b1ABWkRnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
+            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYw",
+            "LkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc+oCIkdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.EnumErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.EnumErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.EnumErrorEnum.Types.EnumError) }, null)
           }));

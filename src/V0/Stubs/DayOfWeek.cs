@@ -25,18 +25,19 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9kYXlfb2Zfd2Vlay5w",
-            "cm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMilwEKDURheU9m",
-            "V2Vla0VudW0ihQEKCURheU9mV2VlaxIPCgtVTlNQRUNJRklFRBAAEgsKB1VO",
-            "S05PV04QARIKCgZNT05EQVkQAhILCgdUVUVTREFZEAMSDQoJV0VETkVTREFZ",
-            "EAQSDAoIVEhVUlNEQVkQBRIKCgZGUklEQVkQBhIMCghTQVRVUkRBWRAHEgoK",
-            "BlNVTkRBWRAIQuMBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51",
-            "bXNCDkRheU9mV2Vla1Byb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6IC",
-            "A0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xl",
-            "QWRzOjpWMDo6RW51bXNiBnByb3RvMw=="));
+            "cm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMaHGdvb2dsZS9h",
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8ilwEKDURheU9mV2Vla0VudW0ihQEKCURh",
+            "eU9mV2VlaxIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIKCgZNT05E",
+            "QVkQAhILCgdUVUVTREFZEAMSDQoJV0VETkVTREFZEAQSDAoIVEhVUlNEQVkQ",
+            "BRIKCgZGUklEQVkQBhIMCghTQVRVUkRBWRAHEgoKBlNVTkRBWRAIQuMBCiFj",
+            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCDkRheU9mV2Vla1By",
+            "b3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
+            "YWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5B",
+            "ZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNc",
+            "VjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekEnum), global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.DayOfWeekEnum.Types.DayOfWeek) }, null)
           }));

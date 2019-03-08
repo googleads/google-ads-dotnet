@@ -26,22 +26,23 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9wcm9tb3Rpb25fcGxh",
             "Y2Vob2xkZXJfZmllbGQucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LmVudW1zIu4CCh1Qcm9tb3Rpb25QbGFjZWhvbGRlckZpZWxkRW51bSLMAgoZ",
-            "UHJvbW90aW9uUGxhY2Vob2xkZXJGaWVsZBIPCgtVTlNQRUNJRklFRBAAEgsK",
-            "B1VOS05PV04QARIUChBQUk9NT1RJT05fVEFSR0VUEAISFQoRRElTQ09VTlRf",
-            "TU9ESUZJRVIQAxIPCgtQRVJDRU5UX09GRhAEEhQKEE1PTkVZX0FNT1VOVF9P",
-            "RkYQBRISCg5QUk9NT1RJT05fQ09ERRAGEhYKEk9SREVSU19PVkVSX0FNT1VO",
-            "VBAHEhMKD1BST01PVElPTl9TVEFSVBAIEhEKDVBST01PVElPTl9FTkQQCRIM",
-            "CghPQ0NBU0lPThAKEg4KCkZJTkFMX1VSTFMQCxIVChFGSU5BTF9NT0JJTEVf",
-            "VVJMUxAMEhAKDFRSQUNLSU5HX1VSTBANEgwKCExBTkdVQUdFEA4SFAoQRklO",
-            "QUxfVVJMX1NVRkZJWBAPQvMBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAuZW51bXNCHlByb21vdGlvblBsYWNlaG9sZGVyRmllbGRQcm90b1ABWkJn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2ds",
-            "ZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z",
-            "6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
+            "LmVudW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIu4CCh1Qcm9t",
+            "b3Rpb25QbGFjZWhvbGRlckZpZWxkRW51bSLMAgoZUHJvbW90aW9uUGxhY2Vo",
+            "b2xkZXJGaWVsZBIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIUChBQ",
+            "Uk9NT1RJT05fVEFSR0VUEAISFQoRRElTQ09VTlRfTU9ESUZJRVIQAxIPCgtQ",
+            "RVJDRU5UX09GRhAEEhQKEE1PTkVZX0FNT1VOVF9PRkYQBRISCg5QUk9NT1RJ",
+            "T05fQ09ERRAGEhYKEk9SREVSU19PVkVSX0FNT1VOVBAHEhMKD1BST01PVElP",
+            "Tl9TVEFSVBAIEhEKDVBST01PVElPTl9FTkQQCRIMCghPQ0NBU0lPThAKEg4K",
+            "CkZJTkFMX1VSTFMQCxIVChFGSU5BTF9NT0JJTEVfVVJMUxAMEhAKDFRSQUNL",
+            "SU5HX1VSTBANEgwKCExBTkdVQUdFEA4SFAoQRklOQUxfVVJMX1NVRkZJWBAP",
+            "QvMBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCHlByb21v",
+            "dGlvblBsYWNlaG9sZGVyRmllbGRQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7",
+            "ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oC",
+            "HUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6",
+            "Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.PromotionPlaceholderFieldEnum), global::Google.Ads.GoogleAds.V0.Enums.PromotionPlaceholderFieldEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.PromotionPlaceholderFieldEnum.Types.PromotionPlaceholderField) }, null)
           }));
@@ -184,7 +185,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("PERCENT_OFF")] PercentOff = 4,
         /// <summary>
-        /// Data Type: PRICE. Requires a currency and an amount of money.
+        /// Data Type: MONEY. Requires a currency and an amount of money.
         /// </summary>
         [pbr::OriginalName("MONEY_AMOUNT_OFF")] MoneyAmountOff = 5,
         /// <summary>
@@ -192,7 +193,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("PROMOTION_CODE")] PromotionCode = 6,
         /// <summary>
-        /// Data Type: PRICE. A minimum spend before the user qualifies for the
+        /// Data Type: MONEY. A minimum spend before the user qualifies for the
         /// promotion.
         /// </summary>
         [pbr::OriginalName("ORDERS_OVER_AMOUNT")] OrdersOverAmount = 7,

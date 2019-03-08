@@ -25,16 +25,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy90aW1lX3R5cGUucHJv",
-            "dG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zIk4KDFRpbWVUeXBl",
-            "RW51bSI+CghUaW1lVHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04Q",
-            "ARIHCgNOT1cQAhILCgdGT1JFVkVSEANC4gEKIWNvbS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5lbnVtc0INVGltZVR5cGVQcm90b1ABWkJnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
-            "ZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5F",
-            "bnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xl",
-            "OjpBZHM6Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
+            "dG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zGhxnb29nbGUvYXBp",
+            "L2Fubm90YXRpb25zLnByb3RvIk4KDFRpbWVUeXBlRW51bSI+CghUaW1lVHlw",
+            "ZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIHCgNOT1cQAhILCgdG",
+            "T1JFVkVSEANC4gEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVt",
+            "c0INVGltZVR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
+            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNH",
+            "QUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxB",
+            "ZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
+            "czo6VjA6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.TimeTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.TimeTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.TimeTypeEnum.Types.TimeType) }, null)
           }));

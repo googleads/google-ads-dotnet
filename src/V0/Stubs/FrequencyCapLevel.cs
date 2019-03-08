@@ -25,18 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9mcmVxdWVuY3lfY2Fw",
-            "X2xldmVsLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyJ3",
-            "ChVGcmVxdWVuY3lDYXBMZXZlbEVudW0iXgoRRnJlcXVlbmN5Q2FwTGV2ZWwS",
-            "DwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESDwoLQURfR1JPVVBfQUQQ",
-            "AhIMCghBRF9HUk9VUBADEgwKCENBTVBBSUdOEARC6wEKIWNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MC5lbnVtc0IWRnJlcXVlbmN5Q2FwTGV2ZWxQcm90",
-            "b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fk",
-            "cy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRz",
-            "Lkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYw",
-            "XEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVudW1zYgZw",
-            "cm90bzM="));
+            "X2xldmVsLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcxoc",
+            "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJ3ChVGcmVxdWVuY3lDYXBM",
+            "ZXZlbEVudW0iXgoRRnJlcXVlbmN5Q2FwTGV2ZWwSDwoLVU5TUEVDSUZJRUQQ",
+            "ABILCgdVTktOT1dOEAESDwoLQURfR1JPVVBfQUQQAhIMCghBRF9HUk9VUBAD",
+            "EgwKCENBTVBBSUdOEARC6wEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5lbnVtc0IWRnJlcXVlbmN5Q2FwTGV2ZWxQcm90b1ABWkJnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
+            "ZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5F",
+            "bnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xl",
+            "OjpBZHM6Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.FrequencyCapLevelEnum), global::Google.Ads.GoogleAds.V0.Enums.FrequencyCapLevelEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel) }, null)
           }));

@@ -548,7 +548,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// Remove operation: A resource name for the removed ad is expected,
     /// in this format:
     ///
-    /// `customers/{customer_id}/adGroupAds/{ad_group_id}_{ad_id}`
+    /// `customers/{customer_id}/adGroupAds/{ad_group_id}~{ad_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

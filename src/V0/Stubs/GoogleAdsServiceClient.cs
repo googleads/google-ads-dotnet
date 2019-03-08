@@ -366,7 +366,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> SearchAsync(
             string customerId,
             string query,
-            bool validateOnly,
+            bool? validateOnly,
             string pageToken = null,
             int? pageSize = null,
             gaxgrpc::CallSettings callSettings = null) => SearchAsync(
@@ -374,7 +374,7 @@ namespace Google.Ads.GoogleAds.V0.Services
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
-                    ValidateOnly = validateOnly,
+                    ValidateOnly = validateOnly ?? false, // Optional
                     PageToken = pageToken ?? "",
                     PageSize = pageSize ?? 0,
                 },
@@ -409,7 +409,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual gax::PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> Search(
             string customerId,
             string query,
-            bool validateOnly,
+            bool? validateOnly,
             string pageToken = null,
             int? pageSize = null,
             gaxgrpc::CallSettings callSettings = null) => Search(
@@ -417,7 +417,83 @@ namespace Google.Ads.GoogleAds.V0.Services
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
-                    ValidateOnly = validateOnly,
+                    ValidateOnly = validateOnly ?? false, // Optional
+                    PageToken = pageToken ?? "",
+                    PageSize = pageSize ?? 0,
+                },
+                callSettings);
+
+        /// <summary>
+        /// Returns all rows that match the search query.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer being queried.
+        /// </param>
+        /// <param name="query">
+        /// The query string.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request.
+        /// A value of <c>null</c> or an empty string retrieves the first page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller.
+        /// A value of <c>null</c> or 0 uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A pageable asynchronous sequence of <see cref="GoogleAdsRow"/> resources.
+        /// </returns>
+        public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> SearchAsync(
+            string customerId,
+            string query,
+            string pageToken = null,
+            int? pageSize = null,
+            gaxgrpc::CallSettings callSettings = null) => SearchAsync(
+                new SearchGoogleAdsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
+                    PageToken = pageToken ?? "",
+                    PageSize = pageSize ?? 0,
+                },
+                callSettings);
+
+        /// <summary>
+        /// Returns all rows that match the search query.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer being queried.
+        /// </param>
+        /// <param name="query">
+        /// The query string.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request.
+        /// A value of <c>null</c> or an empty string retrieves the first page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller.
+        /// A value of <c>null</c> or 0 uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A pageable sequence of <see cref="GoogleAdsRow"/> resources.
+        /// </returns>
+        public virtual gax::PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> Search(
+            string customerId,
+            string query,
+            string pageToken = null,
+            int? pageSize = null,
+            gaxgrpc::CallSettings callSettings = null) => Search(
+                new SearchGoogleAdsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
                     PageToken = pageToken ?? "",
                     PageSize = pageSize ?? 0,
                 },
@@ -489,15 +565,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
             string customerId,
             scg::IEnumerable<MutateOperation> mutateOperations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateAsync(
                 new MutateGoogleAdsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     MutateOperations = { gax::GaxPreconditions.CheckNotNull(mutateOperations, nameof(mutateOperations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -529,8 +605,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
             string customerId,
             scg::IEnumerable<MutateOperation> mutateOperations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => MutateAsync(
                 customerId,
                 mutateOperations,
@@ -566,15 +642,90 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateGoogleAdsResponse Mutate(
             string customerId,
             scg::IEnumerable<MutateOperation> mutateOperations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => Mutate(
                 new MutateGoogleAdsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     MutateOperations = { gax::GaxPreconditions.CheckNotNull(mutateOperations, nameof(mutateOperations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose resources are being modified.
+        /// </param>
+        /// <param name="mutateOperations">
+        /// The list of operations to perform on individual resources.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
+            string customerId,
+            scg::IEnumerable<MutateOperation> mutateOperations,
+            gaxgrpc::CallSettings callSettings = null) => MutateAsync(
+                new MutateGoogleAdsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    MutateOperations = { gax::GaxPreconditions.CheckNotNull(mutateOperations, nameof(mutateOperations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose resources are being modified.
+        /// </param>
+        /// <param name="mutateOperations">
+        /// The list of operations to perform on individual resources.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateGoogleAdsResponse> MutateAsync(
+            string customerId,
+            scg::IEnumerable<MutateOperation> mutateOperations,
+            st::CancellationToken cancellationToken) => MutateAsync(
+                customerId,
+                mutateOperations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates, updates, or removes resources. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose resources are being modified.
+        /// </param>
+        /// <param name="mutateOperations">
+        /// The list of operations to perform on individual resources.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateGoogleAdsResponse Mutate(
+            string customerId,
+            scg::IEnumerable<MutateOperation> mutateOperations,
+            gaxgrpc::CallSettings callSettings = null) => Mutate(
+                new MutateGoogleAdsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    MutateOperations = { gax::GaxPreconditions.CheckNotNull(mutateOperations, nameof(mutateOperations)) },
                 },
                 callSettings);
 

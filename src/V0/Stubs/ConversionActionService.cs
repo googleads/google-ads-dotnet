@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
   }
   #region Messages
   /// <summary>
-  /// Request message for [ConversionActionService.GetConversionAction].
+  /// Request message for [ConversionActionService.GetConversionAction][google.ads.googleads.v0.services.ConversionActionService.GetConversionAction].
   /// </summary>
   public sealed partial class GetConversionActionRequest : pb::IMessage<GetConversionActionRequest> {
     private static readonly pb::MessageParser<GetConversionActionRequest> _parser = new pb::MessageParser<GetConversionActionRequest>(() => new GetConversionActionRequest());
@@ -213,7 +213,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
   }
 
   /// <summary>
-  /// Request message for [ConversionActionService.MutateConversionActions].
+  /// Request message for [ConversionActionService.MutateConversionActions][google.ads.googleads.v0.services.ConversionActionService.MutateConversionActions].
   /// </summary>
   public sealed partial class MutateConversionActionsRequest : pb::IMessage<MutateConversionActionsRequest> {
     private static readonly pb::MessageParser<MutateConversionActionsRequest> _parser = new pb::MessageParser<MutateConversionActionsRequest>(() => new MutateConversionActionsRequest());
@@ -726,7 +726,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
   }
 
   /// <summary>
-  /// Response message for conversion action mutate.
+  /// Response message for [ConversionActionService.MutateConversionActions][google.ads.googleads.v0.services.ConversionActionService.MutateConversionActions].
   /// </summary>
   public sealed partial class MutateConversionActionsResponse : pb::IMessage<MutateConversionActionsResponse> {
     private static readonly pb::MessageParser<MutateConversionActionsResponse> _parser = new pb::MessageParser<MutateConversionActionsResponse>(() => new MutateConversionActionsResponse());

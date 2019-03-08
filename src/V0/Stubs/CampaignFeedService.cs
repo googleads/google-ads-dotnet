@@ -532,7 +532,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// Remove operation: A resource name for the removed campaign feed is
     /// expected, in this format:
     ///
-    /// `customers/{customer_id}/campaignFeeds/{campaign_id}_{feed_id}`
+    /// `customers/{customer_id}/campaignFeeds/{campaign_id}~{feed_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

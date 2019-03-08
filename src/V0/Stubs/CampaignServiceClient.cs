@@ -483,15 +483,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateCampaignsResponse> MutateCampaignsAsync(
             string customerId,
             scg::IEnumerable<CampaignOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaignsAsync(
                 new MutateCampaignsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -523,8 +523,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateCampaignsResponse> MutateCampaignsAsync(
             string customerId,
             scg::IEnumerable<CampaignOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => MutateCampaignsAsync(
                 customerId,
                 operations,
@@ -560,15 +560,90 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateCampaignsResponse MutateCampaigns(
             string customerId,
             scg::IEnumerable<CampaignOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateCampaigns(
                 new MutateCampaignsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes campaigns. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose campaigns are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual campaigns.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCampaignsResponse> MutateCampaignsAsync(
+            string customerId,
+            scg::IEnumerable<CampaignOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateCampaignsAsync(
+                new MutateCampaignsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes campaigns. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose campaigns are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual campaigns.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCampaignsResponse> MutateCampaignsAsync(
+            string customerId,
+            scg::IEnumerable<CampaignOperation> operations,
+            st::CancellationToken cancellationToken) => MutateCampaignsAsync(
+                customerId,
+                operations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates, updates, or removes campaigns. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose campaigns are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual campaigns.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateCampaignsResponse MutateCampaigns(
+            string customerId,
+            scg::IEnumerable<CampaignOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateCampaigns(
+                new MutateCampaignsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
 

@@ -25,17 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9taW51dGVfb2ZfaG91",
-            "ci5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMicwoQTWlu",
-            "dXRlT2ZIb3VyRW51bSJfCgxNaW51dGVPZkhvdXISDwoLVU5TUEVDSUZJRUQQ",
-            "ABILCgdVTktOT1dOEAESCAoEWkVSTxACEgsKB0ZJRlRFRU4QAxIKCgZUSElS",
-            "VFkQBBIOCgpGT1JUWV9GSVZFEAVC5gEKIWNvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lbnVtc0IRTWludXRlT2ZIb3VyUHJvdG9QAVpCZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
-            "L2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAu",
-            "RW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
+            "ci5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMaHGdvb2ds",
+            "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8icwoQTWludXRlT2ZIb3VyRW51bSJf",
+            "CgxNaW51dGVPZkhvdXISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAES",
+            "CAoEWkVSTxACEgsKB0ZJRlRFRU4QAxIKCgZUSElSVFkQBBIOCgpGT1JUWV9G",
+            "SVZFEAVC5gEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IR",
+            "TWludXRlT2ZIb3VyUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
+            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogID",
+            "R0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVB",
+            "ZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.MinuteOfHourEnum), global::Google.Ads.GoogleAds.V0.Enums.MinuteOfHourEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.MinuteOfHourEnum.Types.MinuteOfHour) }, null)
           }));
