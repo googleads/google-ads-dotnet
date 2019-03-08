@@ -26,15 +26,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYWdlX3Jhbmdl",
             "X3ZpZXcucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNl",
-            "cyIlCgxBZ2VSYW5nZVZpZXcSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCUL+AQol",
-            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IRQWdlUmFu",
-            "Z2VWaWV3UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
-            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOi",
-            "AgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFH",
-            "b29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFk",
-            "czo6R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byIlCgxBZ2VSYW5nZVZp",
+            "ZXcSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCUL+AQolY29tLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYwLnJlc291cmNlc0IRQWdlUmFuZ2VWaWV3UHJvdG9QAVpK",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUu",
+            "QWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AgeRangeView), global::Google.Ads.GoogleAds.V0.Resources.AgeRangeView.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -87,7 +88,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the age range view.
     /// Age range view resource names have the form:
     ///
-    /// `customers/{customer_id}/ageRangeViews/{ad_group_id}_{criterion_id}`
+    /// `customers/{customer_id}/ageRangeViews/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

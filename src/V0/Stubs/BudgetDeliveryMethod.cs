@@ -26,17 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9idWRnZXRfZGVsaXZl",
             "cnlfbWV0aG9kLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVt",
-            "cyJvChhCdWRnZXREZWxpdmVyeU1ldGhvZEVudW0iUwoUQnVkZ2V0RGVsaXZl",
-            "cnlNZXRob2QSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESDAoIU1RB",
-            "TkRBUkQQAhIPCgtBQ0NFTEVSQVRFRBADQu4BCiFjb20uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjAuZW51bXNCGUJ1ZGdldERlbGl2ZXJ5TWV0aG9kUHJvdG9Q",
-            "AVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxF",
-            "bnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJv",
-            "dG8z"));
+            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJvChhCdWRnZXREZWxp",
+            "dmVyeU1ldGhvZEVudW0iUwoUQnVkZ2V0RGVsaXZlcnlNZXRob2QSDwoLVU5T",
+            "UEVDSUZJRUQQABILCgdVTktOT1dOEAESDAoIU1RBTkRBUkQQAhIPCgtBQ0NF",
+            "TEVSQVRFRBADQu4BCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51",
+            "bXNCGUJ1ZGdldERlbGl2ZXJ5TWV0aG9kUHJvdG9QAVpCZ29vZ2xlLmdvbGFu",
+            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
+            "dW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51",
+            "bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.BudgetDeliveryMethodEnum), global::Google.Ads.GoogleAds.V0.Enums.BudgetDeliveryMethodEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod) }, null)
           }));

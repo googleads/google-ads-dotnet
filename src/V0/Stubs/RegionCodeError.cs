@@ -25,17 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcmVnaW9uX2NvZGVf",
-            "ZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyJf",
-            "ChNSZWdpb25Db2RlRXJyb3JFbnVtIkgKD1JlZ2lvbkNvZGVFcnJvchIPCgtV",
-            "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIXChNJTlZBTElEX1JFR0lPTl9D",
-            "T0RFEAJC7wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNC",
-            "FFJlZ2lvbkNvZGVFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dl",
-            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJy",
-            "b3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIe",
-            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6",
-            "Okdvb2dsZUFkczo6VjA6OkVycm9yc2IGcHJvdG8z"));
+            "ZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycxoc",
+            "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJfChNSZWdpb25Db2RlRXJy",
+            "b3JFbnVtIkgKD1JlZ2lvbkNvZGVFcnJvchIPCgtVTlNQRUNJRklFRBAAEgsK",
+            "B1VOS05PV04QARIXChNJTlZBTElEX1JFR0lPTl9DT0RFEAJC7wEKImNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCFFJlZ2lvbkNvZGVFcnJv",
+            "clByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29v",
+            "Z2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29n",
+            "bGVBZHNcVjBcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6",
+            "OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.RegionCodeErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.RegionCodeErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.RegionCodeErrorEnum.Types.RegionCodeError) }, null)
           }));

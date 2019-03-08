@@ -25,17 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvZGF0YWJhc2VfZXJy",
-            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycyJfChFE",
-            "YXRhYmFzZUVycm9yRW51bSJKCg1EYXRhYmFzZUVycm9yEg8KC1VOU1BFQ0lG",
-            "SUVEEAASCwoHVU5LTk9XThABEhsKF0NPTkNVUlJFTlRfTU9ESUZJQ0FUSU9O",
-            "EAJC7QEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCEkRh",
-            "dGFiYXNlRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
-            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6IC",
-            "A0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29n",
-            "bGVBZHM6OlYwOjpFcnJvcnNiBnByb3RvMw=="));
+            "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9ycxocZ29v",
+            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJfChFEYXRhYmFzZUVycm9yRW51",
+            "bSJKCg1EYXRhYmFzZUVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
+            "ThABEhsKF0NPTkNVUlJFTlRfTU9ESUZJQ0FUSU9OEAJC7QEKImNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCEkRhdGFiYXNlRXJyb3JQcm90",
+            "b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fk",
+            "cy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5B",
+            "ZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYwXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJv",
+            "cnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.DatabaseErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.DatabaseErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.DatabaseErrorEnum.Types.DatabaseError) }, null)
           }));

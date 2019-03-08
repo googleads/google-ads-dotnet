@@ -26,42 +26,43 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9wcmljZV9wbGFjZWhv",
             "bGRlcl9maWVsZC5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51",
-            "bXMi7wkKGVByaWNlUGxhY2Vob2xkZXJGaWVsZEVudW0i0QkKFVByaWNlUGxh",
-            "Y2Vob2xkZXJGaWVsZBIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARII",
-            "CgRUWVBFEAISEwoPUFJJQ0VfUVVBTElGSUVSEAMSFQoRVFJBQ0tJTkdfVEVN",
-            "UExBVEUQBBIMCghMQU5HVUFHRRAFEhQKEEZJTkFMX1VSTF9TVUZGSVgQBhIR",
-            "Cg1JVEVNXzFfSEVBREVSEGQSFgoSSVRFTV8xX0RFU0NSSVBUSU9OEGUSEAoM",
-            "SVRFTV8xX1BSSUNFEGYSDwoLSVRFTV8xX1VOSVQQZxIVChFJVEVNXzFfRklO",
-            "QUxfVVJMUxBoEhwKGElURU1fMV9GSU5BTF9NT0JJTEVfVVJMUxBpEhIKDUlU",
-            "RU1fMl9IRUFERVIQyAESFwoSSVRFTV8yX0RFU0NSSVBUSU9OEMkBEhEKDElU",
-            "RU1fMl9QUklDRRDKARIQCgtJVEVNXzJfVU5JVBDLARIWChFJVEVNXzJfRklO",
-            "QUxfVVJMUxDMARIdChhJVEVNXzJfRklOQUxfTU9CSUxFX1VSTFMQzQESEgoN",
-            "SVRFTV8zX0hFQURFUhCsAhIXChJJVEVNXzNfREVTQ1JJUFRJT04QrQISEQoM",
-            "SVRFTV8zX1BSSUNFEK4CEhAKC0lURU1fM19VTklUEK8CEhYKEUlURU1fM19G",
-            "SU5BTF9VUkxTELACEh0KGElURU1fM19GSU5BTF9NT0JJTEVfVVJMUxCxAhIS",
-            "Cg1JVEVNXzRfSEVBREVSEJADEhcKEklURU1fNF9ERVNDUklQVElPThCRAxIR",
-            "CgxJVEVNXzRfUFJJQ0UQkgMSEAoLSVRFTV80X1VOSVQQkwMSFgoRSVRFTV80",
-            "X0ZJTkFMX1VSTFMQlAMSHQoYSVRFTV80X0ZJTkFMX01PQklMRV9VUkxTEJUD",
-            "EhIKDUlURU1fNV9IRUFERVIQ9AMSFwoSSVRFTV81X0RFU0NSSVBUSU9OEPUD",
-            "EhEKDElURU1fNV9QUklDRRD2AxIQCgtJVEVNXzVfVU5JVBD3AxIWChFJVEVN",
-            "XzVfRklOQUxfVVJMUxD4AxIdChhJVEVNXzVfRklOQUxfTU9CSUxFX1VSTFMQ",
-            "+QMSEgoNSVRFTV82X0hFQURFUhDYBBIXChJJVEVNXzZfREVTQ1JJUFRJT04Q",
-            "2QQSEQoMSVRFTV82X1BSSUNFENoEEhAKC0lURU1fNl9VTklUENsEEhYKEUlU",
-            "RU1fNl9GSU5BTF9VUkxTENwEEh0KGElURU1fNl9GSU5BTF9NT0JJTEVfVVJM",
-            "UxDdBBISCg1JVEVNXzdfSEVBREVSELwFEhcKEklURU1fN19ERVNDUklQVElP",
-            "ThC9BRIRCgxJVEVNXzdfUFJJQ0UQvgUSEAoLSVRFTV83X1VOSVQQvwUSFgoR",
-            "SVRFTV83X0ZJTkFMX1VSTFMQwAUSHQoYSVRFTV83X0ZJTkFMX01PQklMRV9V",
-            "UkxTEMEFEhIKDUlURU1fOF9IRUFERVIQoAYSFwoSSVRFTV84X0RFU0NSSVBU",
-            "SU9OEKEGEhEKDElURU1fOF9QUklDRRCiBhIQCgtJVEVNXzhfVU5JVBCjBhIW",
-            "ChFJVEVNXzhfRklOQUxfVVJMUxCkBhIdChhJVEVNXzhfRklOQUxfTU9CSUxF",
-            "X1VSTFMQpQZC7wEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVt",
-            "c0IaUHJpY2VQbGFjZWhvbGRlckZpZWxkUHJvdG9QAVpCZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
-            "dW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51",
-            "bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6",
-            "QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
+            "bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i7wkKGVByaWNlUGxh",
+            "Y2Vob2xkZXJGaWVsZEVudW0i0QkKFVByaWNlUGxhY2Vob2xkZXJGaWVsZBIP",
+            "CgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIICgRUWVBFEAISEwoPUFJJ",
+            "Q0VfUVVBTElGSUVSEAMSFQoRVFJBQ0tJTkdfVEVNUExBVEUQBBIMCghMQU5H",
+            "VUFHRRAFEhQKEEZJTkFMX1VSTF9TVUZGSVgQBhIRCg1JVEVNXzFfSEVBREVS",
+            "EGQSFgoSSVRFTV8xX0RFU0NSSVBUSU9OEGUSEAoMSVRFTV8xX1BSSUNFEGYS",
+            "DwoLSVRFTV8xX1VOSVQQZxIVChFJVEVNXzFfRklOQUxfVVJMUxBoEhwKGElU",
+            "RU1fMV9GSU5BTF9NT0JJTEVfVVJMUxBpEhIKDUlURU1fMl9IRUFERVIQyAES",
+            "FwoSSVRFTV8yX0RFU0NSSVBUSU9OEMkBEhEKDElURU1fMl9QUklDRRDKARIQ",
+            "CgtJVEVNXzJfVU5JVBDLARIWChFJVEVNXzJfRklOQUxfVVJMUxDMARIdChhJ",
+            "VEVNXzJfRklOQUxfTU9CSUxFX1VSTFMQzQESEgoNSVRFTV8zX0hFQURFUhCs",
+            "AhIXChJJVEVNXzNfREVTQ1JJUFRJT04QrQISEQoMSVRFTV8zX1BSSUNFEK4C",
+            "EhAKC0lURU1fM19VTklUEK8CEhYKEUlURU1fM19GSU5BTF9VUkxTELACEh0K",
+            "GElURU1fM19GSU5BTF9NT0JJTEVfVVJMUxCxAhISCg1JVEVNXzRfSEVBREVS",
+            "EJADEhcKEklURU1fNF9ERVNDUklQVElPThCRAxIRCgxJVEVNXzRfUFJJQ0UQ",
+            "kgMSEAoLSVRFTV80X1VOSVQQkwMSFgoRSVRFTV80X0ZJTkFMX1VSTFMQlAMS",
+            "HQoYSVRFTV80X0ZJTkFMX01PQklMRV9VUkxTEJUDEhIKDUlURU1fNV9IRUFE",
+            "RVIQ9AMSFwoSSVRFTV81X0RFU0NSSVBUSU9OEPUDEhEKDElURU1fNV9QUklD",
+            "RRD2AxIQCgtJVEVNXzVfVU5JVBD3AxIWChFJVEVNXzVfRklOQUxfVVJMUxD4",
+            "AxIdChhJVEVNXzVfRklOQUxfTU9CSUxFX1VSTFMQ+QMSEgoNSVRFTV82X0hF",
+            "QURFUhDYBBIXChJJVEVNXzZfREVTQ1JJUFRJT04Q2QQSEQoMSVRFTV82X1BS",
+            "SUNFENoEEhAKC0lURU1fNl9VTklUENsEEhYKEUlURU1fNl9GSU5BTF9VUkxT",
+            "ENwEEh0KGElURU1fNl9GSU5BTF9NT0JJTEVfVVJMUxDdBBISCg1JVEVNXzdf",
+            "SEVBREVSELwFEhcKEklURU1fN19ERVNDUklQVElPThC9BRIRCgxJVEVNXzdf",
+            "UFJJQ0UQvgUSEAoLSVRFTV83X1VOSVQQvwUSFgoRSVRFTV83X0ZJTkFMX1VS",
+            "TFMQwAUSHQoYSVRFTV83X0ZJTkFMX01PQklMRV9VUkxTEMEFEhIKDUlURU1f",
+            "OF9IRUFERVIQoAYSFwoSSVRFTV84X0RFU0NSSVBUSU9OEKEGEhEKDElURU1f",
+            "OF9QUklDRRCiBhIQCgtJVEVNXzhfVU5JVBCjBhIWChFJVEVNXzhfRklOQUxf",
+            "VVJMUxCkBhIdChhJVEVNXzhfRklOQUxfTU9CSUxFX1VSTFMQpQZC7wEKIWNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IaUHJpY2VQbGFjZWhv",
+            "bGRlckZpZWxkUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FB",
+            "qgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
+            "OlYwOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.PricePlaceholderFieldEnum), global::Google.Ads.GoogleAds.V0.Enums.PricePlaceholderFieldEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.PricePlaceholderFieldEnum.Types.PricePlaceholderField) }, null)
           }));
@@ -222,7 +223,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("ITEM_1_DESCRIPTION")] Item1Description = 101,
         /// <summary>
-        /// Data Type: PRICE. The price (money with currency) of item 1 of the table,
+        /// Data Type: MONEY. The price (money with currency) of item 1 of the table,
         /// e.g., 30 USD. The currency must match one of the available currencies.
         /// </summary>
         [pbr::OriginalName("ITEM_1_PRICE")] Item1Price = 102,
@@ -250,7 +251,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("ITEM_2_DESCRIPTION")] Item2Description = 201,
         /// <summary>
-        /// Data Type: PRICE. The price (money with currency) of item 2 of the table,
+        /// Data Type: MONEY. The price (money with currency) of item 2 of the table,
         /// e.g., 30 USD. The currency must match one of the available currencies.
         /// </summary>
         [pbr::OriginalName("ITEM_2_PRICE")] Item2Price = 202,
@@ -278,7 +279,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("ITEM_3_DESCRIPTION")] Item3Description = 301,
         /// <summary>
-        /// Data Type: PRICE. The price (money with currency) of item 3 of the table,
+        /// Data Type: MONEY. The price (money with currency) of item 3 of the table,
         /// e.g., 30 USD. The currency must match one of the available currencies.
         /// </summary>
         [pbr::OriginalName("ITEM_3_PRICE")] Item3Price = 302,
@@ -306,7 +307,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("ITEM_4_DESCRIPTION")] Item4Description = 401,
         /// <summary>
-        /// Data Type: PRICE. The price (money with currency) of item 4 of the table,
+        /// Data Type: MONEY. The price (money with currency) of item 4 of the table,
         /// e.g., 30 USD. The currency must match one of the available currencies.
         /// </summary>
         [pbr::OriginalName("ITEM_4_PRICE")] Item4Price = 402,
@@ -334,7 +335,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("ITEM_5_DESCRIPTION")] Item5Description = 501,
         /// <summary>
-        /// Data Type: PRICE. The price (money with currency) of item 5 of the table,
+        /// Data Type: MONEY. The price (money with currency) of item 5 of the table,
         /// e.g., 30 USD. The currency must match one of the available currencies.
         /// </summary>
         [pbr::OriginalName("ITEM_5_PRICE")] Item5Price = 502,
@@ -362,7 +363,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("ITEM_6_DESCRIPTION")] Item6Description = 601,
         /// <summary>
-        /// Data Type: PRICE. The price (money with currency) of item 6 of the table,
+        /// Data Type: MONEY. The price (money with currency) of item 6 of the table,
         /// e.g., 30 USD. The currency must match one of the available currencies.
         /// </summary>
         [pbr::OriginalName("ITEM_6_PRICE")] Item6Price = 602,
@@ -390,7 +391,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("ITEM_7_DESCRIPTION")] Item7Description = 701,
         /// <summary>
-        /// Data Type: PRICE. The price (money with currency) of item 7 of the table,
+        /// Data Type: MONEY. The price (money with currency) of item 7 of the table,
         /// e.g., 30 USD. The currency must match one of the available currencies.
         /// </summary>
         [pbr::OriginalName("ITEM_7_PRICE")] Item7Price = 702,
@@ -418,7 +419,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("ITEM_8_DESCRIPTION")] Item8Description = 801,
         /// <summary>
-        /// Data Type: PRICE. The price (money with currency) of item 8 of the table,
+        /// Data Type: MONEY. The price (money with currency) of item 8 of the table,
         /// e.g., 30 USD. The currency must match one of the available currencies.
         /// </summary>
         [pbr::OriginalName("ITEM_8_PRICE")] Item8Price = 802,

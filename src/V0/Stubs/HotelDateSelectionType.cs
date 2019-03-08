@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9ob3RlbF9kYXRlX3Nl",
             "bGVjdGlvbl90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "bnVtcyJ+ChpIb3RlbERhdGVTZWxlY3Rpb25UeXBlRW51bSJgChZIb3RlbERh",
-            "dGVTZWxlY3Rpb25UeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThAB",
-            "EhUKEURFRkFVTFRfU0VMRUNUSU9OEDISEQoNVVNFUl9TRUxFQ1RFRBAzQvAB",
-            "CiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCG0hvdGVsRGF0",
-            "ZVNlbGVjdGlvblR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
-            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOi",
-            "AgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2ds",
-            "ZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
+            "bnVtcxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJ+ChpIb3RlbERh",
+            "dGVTZWxlY3Rpb25UeXBlRW51bSJgChZIb3RlbERhdGVTZWxlY3Rpb25UeXBl",
+            "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhUKEURFRkFVTFRfU0VM",
+            "RUNUSU9OEDISEQoNVVNFUl9TRUxFQ1RFRBAzQvABCiFjb20uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAuZW51bXNCG0hvdGVsRGF0ZVNlbGVjdGlvblR5cGVQ",
+            "cm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
+            "L2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUu",
+            "QWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVudW1z",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.HotelDateSelectionTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.HotelDateSelectionTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType) }, null)
           }));

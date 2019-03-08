@@ -483,15 +483,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateSharedSetsResponse> MutateSharedSetsAsync(
             string customerId,
             scg::IEnumerable<SharedSetOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateSharedSetsAsync(
                 new MutateSharedSetsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -523,8 +523,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateSharedSetsResponse> MutateSharedSetsAsync(
             string customerId,
             scg::IEnumerable<SharedSetOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => MutateSharedSetsAsync(
                 customerId,
                 operations,
@@ -560,15 +560,90 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateSharedSetsResponse MutateSharedSets(
             string customerId,
             scg::IEnumerable<SharedSetOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateSharedSets(
                 new MutateSharedSetsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes shared sets. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose shared sets are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual shared sets.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateSharedSetsResponse> MutateSharedSetsAsync(
+            string customerId,
+            scg::IEnumerable<SharedSetOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateSharedSetsAsync(
+                new MutateSharedSetsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes shared sets. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose shared sets are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual shared sets.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateSharedSetsResponse> MutateSharedSetsAsync(
+            string customerId,
+            scg::IEnumerable<SharedSetOperation> operations,
+            st::CancellationToken cancellationToken) => MutateSharedSetsAsync(
+                customerId,
+                operations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates, updates, or removes shared sets. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose shared sets are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual shared sets.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateSharedSetsResponse MutateSharedSets(
+            string customerId,
+            scg::IEnumerable<SharedSetOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateSharedSets(
+                new MutateSharedSetsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
 

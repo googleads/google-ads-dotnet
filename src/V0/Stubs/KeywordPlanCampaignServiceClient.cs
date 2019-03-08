@@ -484,15 +484,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateKeywordPlanCampaignsResponse> MutateKeywordPlanCampaignsAsync(
             string customerId,
             scg::IEnumerable<KeywordPlanCampaignOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateKeywordPlanCampaignsAsync(
                 new MutateKeywordPlanCampaignsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -525,8 +525,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateKeywordPlanCampaignsResponse> MutateKeywordPlanCampaignsAsync(
             string customerId,
             scg::IEnumerable<KeywordPlanCampaignOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => MutateKeywordPlanCampaignsAsync(
                 customerId,
                 operations,
@@ -563,15 +563,93 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateKeywordPlanCampaignsResponse MutateKeywordPlanCampaigns(
             string customerId,
             scg::IEnumerable<KeywordPlanCampaignOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateKeywordPlanCampaigns(
                 new MutateKeywordPlanCampaignsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes Keyword Plan campaigns. Operation statuses are
+        /// returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose Keyword Plan campaigns are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual Keyword Plan campaigns.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateKeywordPlanCampaignsResponse> MutateKeywordPlanCampaignsAsync(
+            string customerId,
+            scg::IEnumerable<KeywordPlanCampaignOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateKeywordPlanCampaignsAsync(
+                new MutateKeywordPlanCampaignsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes Keyword Plan campaigns. Operation statuses are
+        /// returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose Keyword Plan campaigns are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual Keyword Plan campaigns.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateKeywordPlanCampaignsResponse> MutateKeywordPlanCampaignsAsync(
+            string customerId,
+            scg::IEnumerable<KeywordPlanCampaignOperation> operations,
+            st::CancellationToken cancellationToken) => MutateKeywordPlanCampaignsAsync(
+                customerId,
+                operations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates, updates, or removes Keyword Plan campaigns. Operation statuses are
+        /// returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose Keyword Plan campaigns are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual Keyword Plan campaigns.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateKeywordPlanCampaignsResponse MutateKeywordPlanCampaigns(
+            string customerId,
+            scg::IEnumerable<KeywordPlanCampaignOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateKeywordPlanCampaigns(
+                new MutateKeywordPlanCampaignsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
 

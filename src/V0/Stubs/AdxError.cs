@@ -25,17 +25,17 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvYWR4X2Vycm9yLnBy",
-            "b3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMiUQoMQWR4RXJy",
-            "b3JFbnVtIkEKCEFkeEVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
-            "ThABEhcKE1VOU1VQUE9SVEVEX0ZFQVRVUkUQAkLoAQoiY29tLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0INQWR4RXJyb3JQcm90b1ABWkRnb29n",
-            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
-            "ZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xl",
-            "QWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9y",
-            "c+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJvcnNiBnByb3Rv",
-            "Mw=="));
+            "b3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnMaHGdvb2dsZS9h",
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8iUQoMQWR4RXJyb3JFbnVtIkEKCEFkeEVy",
+            "cm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhcKE1VOU1VQUE9S",
+            "VEVEX0ZFQVRVUkUQAkLoAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmVycm9yc0INQWR4RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vy",
+            "cm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oC",
+            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc+oCIkdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYwOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.AdxErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.AdxErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.AdxErrorEnum.Types.AdxError) }, null)
           }));

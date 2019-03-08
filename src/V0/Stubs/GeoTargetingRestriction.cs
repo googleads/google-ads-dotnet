@@ -26,17 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9nZW9fdGFyZ2V0aW5n",
             "X3Jlc3RyaWN0aW9uLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "bnVtcyJwChtHZW9UYXJnZXRpbmdSZXN0cmljdGlvbkVudW0iUQoXR2VvVGFy",
-            "Z2V0aW5nUmVzdHJpY3Rpb24SDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dO",
-            "EAESGAoUTE9DQVRJT05fT0ZfUFJFU0VOQ0UQAkLxAQohY29tLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhxHZW9UYXJnZXRpbmdSZXN0cmljdGlv",
-            "blByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVB",
-            "ZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51",
-            "bXNiBnByb3RvMw=="));
+            "bnVtcxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJwChtHZW9UYXJn",
+            "ZXRpbmdSZXN0cmljdGlvbkVudW0iUQoXR2VvVGFyZ2V0aW5nUmVzdHJpY3Rp",
+            "b24SDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGAoUTE9DQVRJT05f",
+            "T0ZfUFJFU0VOQ0UQAkLxAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
+            "LmVudW1zQhxHZW9UYXJnZXRpbmdSZXN0cmljdGlvblByb3RvUAFaQmdvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRz",
+            "LlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXPqAiFH",
+            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.GeoTargetingRestrictionEnum), global::Google.Ads.GoogleAds.V0.Enums.GeoTargetingRestrictionEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction) }, null)
           }));

@@ -13,7 +13,6 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Config;
-using Google.Ads.GoogleAds.Lib;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using System;
@@ -172,7 +171,7 @@ namespace Google.Ads.GoogleAds.Logging
         /// <param name="e">The aggregate exception from the task.</param>
         /// <returns>The deserialized exception, or null if the exception cannot be deserialized.
         /// </returns>
-        private static GoogleAdsException GetGoogleAdsException(AggregateException e)
+        private static RpcException GetGoogleAdsException(AggregateException e)
         {
             RpcException rpcException = e?.InnerExceptions?.FirstOrDefault(
                 delegate (Exception innerException)
@@ -180,7 +179,25 @@ namespace Google.Ads.GoogleAds.Logging
                     return (innerException is RpcException);
                 }
             ) as RpcException;
-            return rpcException == null ? null : GoogleAdsException.Create(rpcException);
+
+            if (rpcException == null)
+            {
+                return null;
+            }
+
+            foreach (Metadata.Entry entry in rpcException.Trailers)
+            {
+                switch (entry.Key)
+                {
+                    case V1.Errors.GoogleAdsException.FAILURE_KEY:
+                        return V1.Errors.GoogleAdsException.Create(rpcException);
+
+                    case V0.Errors.GoogleAdsException.FAILURE_KEY:
+                        return V0.Errors.GoogleAdsException.Create(rpcException);
+                }
+
+            }
+            return rpcException;
         }
     }
 }

@@ -25,17 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9mZWVkX2xpbmtfc3Rh",
-            "dHVzLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyJeChJG",
-            "ZWVkTGlua1N0YXR1c0VudW0iSAoORmVlZExpbmtTdGF0dXMSDwoLVU5TUEVD",
-            "SUZJRUQQABILCgdVTktOT1dOEAESCwoHRU5BQkxFRBACEgsKB1JFTU9WRUQQ",
-            "A0LoAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhNGZWVk",
-            "TGlua1N0YXR1c1Byb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
-            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMDo6RW51bXNiBnByb3RvMw=="));
+            "dHVzLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcxocZ29v",
+            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJeChJGZWVkTGlua1N0YXR1c0Vu",
+            "dW0iSAoORmVlZExpbmtTdGF0dXMSDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
+            "T1dOEAESCwoHRU5BQkxFRBACEgsKB1JFTU9WRUQQA0LoAQohY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhNGZWVkTGlua1N0YXR1c1Byb3Rv",
+            "UAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBc",
+            "RW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.FeedLinkStatusEnum), global::Google.Ads.GoogleAds.V0.Enums.FeedLinkStatusEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus) }, null)
           }));

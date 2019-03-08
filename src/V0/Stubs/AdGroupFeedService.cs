@@ -531,7 +531,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// Remove operation: A resource name for the removed ad group feed is
     /// expected, in this format:
     ///
-    /// `customers/{customer_id}/adGroupFeeds/{ad_group_id}_{feed_id}`
+    /// `customers/{customer_id}/adGroupFeeds/{ad_group_id}~{feed_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

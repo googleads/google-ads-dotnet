@@ -25,16 +25,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvdG9waWNfdmll",
-            "dy5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzIiIK",
-            "CVRvcGljVmlldxIVCg1yZXNvdXJjZV9uYW1lGAEgASgJQvsBCiVjb20uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQg5Ub3BpY1ZpZXdQcm90",
-            "b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fk",
-            "cy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVB",
-            "ZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "dy5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzGhxn",
+            "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIiIKCVRvcGljVmlldxIVCg1y",
+            "ZXNvdXJjZV9uYW1lGAEgASgJQvsBCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAucmVzb3VyY2VzQg5Ub3BpY1ZpZXdQcm90b1ABWkpnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
+            "cmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xl",
+            "QWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJl",
+            "c291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNvdXJj",
+            "ZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.TopicView), global::Google.Ads.GoogleAds.V0.Resources.TopicView.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -87,7 +88,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the topic view.
     /// Topic view resource names have the form:
     ///
-    /// `customers/{customer_id}/topicViews/{ad_group_id}_{criterion_id}`
+    /// `customers/{customer_id}/topicViews/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

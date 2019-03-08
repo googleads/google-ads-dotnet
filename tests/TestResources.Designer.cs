@@ -113,9 +113,12 @@ namespace Google.Ads.GoogleAds.Tests {
         ///Fault: {
         ///  &quot;StatusCode&quot;: 0,
         ///  &quot;Details&quot;: &quot;&quot;,
-        ///  &quot;RequestId&quot;: &quot;TEST_REQUEST_ID&quot;
-        ///}
-        ///----------------END API CALL----------------.
+        ///  &quot;RequestId&quot;: &quot;TEST_REQUEST_ID&quot;,
+        ///  &quot;Failure&quot;: {
+        ///    &quot;errors&quot;: [
+        ///      {
+        ///        &quot;errorCode&quot;: {
+        ///          &quot;distinct [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DetailedFailureLog {
             get {

@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9zZWFyY2hfdGVybV9t",
             "YXRjaF90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVt",
-            "cyKRAQoXU2VhcmNoVGVybU1hdGNoVHlwZUVudW0idgoTU2VhcmNoVGVybU1h",
-            "dGNoVHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIJCgVCUk9B",
-            "RBACEgkKBUVYQUNUEAMSCgoGUEhSQVNFEAQSDgoKTkVBUl9FWEFDVBAFEg8K",
-            "C05FQVJfUEhSQVNFEAZC7QEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lbnVtc0IYU2VhcmNoVGVybU1hdGNoVHlwZVByb3RvUAFaQmdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYw",
-            "LkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29n",
-            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnByb3RvMw=="));
+            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKRAQoXU2VhcmNoVGVy",
+            "bU1hdGNoVHlwZUVudW0idgoTU2VhcmNoVGVybU1hdGNoVHlwZRIPCgtVTlNQ",
+            "RUNJRklFRBAAEgsKB1VOS05PV04QARIJCgVCUk9BRBACEgkKBUVYQUNUEAMS",
+            "CgoGUEhSQVNFEAQSDgoKTkVBUl9FWEFDVBAFEg8KC05FQVJfUEhSQVNFEAZC",
+            "7QEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IYU2VhcmNo",
+            "VGVybU1hdGNoVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
+            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6IC",
+            "A0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xl",
+            "QWRzOjpWMDo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.SearchTermMatchTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.SearchTermMatchTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType) }, null)
           }));

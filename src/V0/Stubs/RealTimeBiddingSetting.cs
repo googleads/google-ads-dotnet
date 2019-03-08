@@ -26,17 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Common {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vcmVhbF90aW1lX2Jp",
             "ZGRpbmdfc2V0dGluZy5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "Y29tbW9uGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8iRAoWUmVh",
-            "bFRpbWVCaWRkaW5nU2V0dGluZxIqCgZvcHRfaW4YASABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuQm9vbFZhbHVlQvYBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAuY29tbW9uQhtSZWFsVGltZUJpZGRpbmdTZXR0aW5nUHJvdG9QAVpE",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
-            "b2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxD",
-            "b21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6Q29tbW9uYgZw",
-            "cm90bzM="));
+            "Y29tbW9uGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aHGdvb2ds",
+            "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iRAoWUmVhbFRpbWVCaWRkaW5nU2V0",
+            "dGluZxIqCgZvcHRfaW4YASABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZh",
+            "bHVlQvYBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uQhtS",
+            "ZWFsVGltZUJpZGRpbmdTZXR0aW5nUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1v",
+            "bjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5Db21t",
+            "b27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxDb21tb27qAiJHb29nbGU6",
+            "OkFkczo6R29vZ2xlQWRzOjpWMDo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.RealTimeBiddingSetting), global::Google.Ads.GoogleAds.V0.Common.RealTimeBiddingSetting.Parser, new[]{ "OptIn" }, null, null, null)
           }));

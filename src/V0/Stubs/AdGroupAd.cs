@@ -32,28 +32,29 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Y3lfYXBwcm92YWxfc3RhdHVzLnByb3RvGjhnb29nbGUvYWRzL2dvb2dsZWFk",
             "cy92MC9lbnVtcy9wb2xpY3lfcmV2aWV3X3N0YXR1cy5wcm90bxoqZ29vZ2xl",
             "L2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzL2FkLnByb3RvGh5nb29nbGUv",
-            "cHJvdG9idWYvd3JhcHBlcnMucHJvdG8irAIKCUFkR3JvdXBBZBIVCg1yZXNv",
-            "dXJjZV9uYW1lGAEgASgJElIKBnN0YXR1cxgDIAEoDjJCLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLmVudW1zLkFkR3JvdXBBZFN0YXR1c0VudW0uQWRHcm91",
-            "cEFkU3RhdHVzEi4KCGFkX2dyb3VwGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LlN0cmluZ1ZhbHVlEjEKAmFkGAUgASgLMiUuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjAucmVzb3VyY2VzLkFkElEKDnBvbGljeV9zdW1tYXJ5GAYgASgLMjku",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzLkFkR3JvdXBBZFBv",
-            "bGljeVN1bW1hcnkisAIKFkFkR3JvdXBBZFBvbGljeVN1bW1hcnkSTgoUcG9s",
-            "aWN5X3RvcGljX2VudHJpZXMYASADKAsyMC5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MC5jb21tb24uUG9saWN5VG9waWNFbnRyeRJfCg1yZXZpZXdfc3RhdHVz",
-            "GAIgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuUG9saWN5",
-            "UmV2aWV3U3RhdHVzRW51bS5Qb2xpY3lSZXZpZXdTdGF0dXMSZQoPYXBwcm92",
-            "YWxfc3RhdHVzGAMgASgOMkwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51",
-            "bXMuUG9saWN5QXBwcm92YWxTdGF0dXNFbnVtLlBvbGljeUFwcHJvdmFsU3Rh",
-            "dHVzQvsBCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2Vz",
-            "Qg5BZEdyb3VwQWRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
-            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291",
-            "cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNl",
-            "c8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "cHJvdG9idWYvd3JhcHBlcnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlv",
+            "bnMucHJvdG8irAIKCUFkR3JvdXBBZBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJ",
+            "ElIKBnN0YXR1cxgDIAEoDjJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVu",
+            "dW1zLkFkR3JvdXBBZFN0YXR1c0VudW0uQWRHcm91cEFkU3RhdHVzEi4KCGFk",
+            "X2dyb3VwGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjEK",
+            "AmFkGAUgASgLMiUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2Vz",
+            "LkFkElEKDnBvbGljeV9zdW1tYXJ5GAYgASgLMjkuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjAucmVzb3VyY2VzLkFkR3JvdXBBZFBvbGljeVN1bW1hcnkisAIK",
+            "FkFkR3JvdXBBZFBvbGljeVN1bW1hcnkSTgoUcG9saWN5X3RvcGljX2VudHJp",
+            "ZXMYASADKAsyMC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uUG9s",
+            "aWN5VG9waWNFbnRyeRJfCg1yZXZpZXdfc3RhdHVzGAIgASgOMkguZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjAuZW51bXMuUG9saWN5UmV2aWV3U3RhdHVzRW51",
+            "bS5Qb2xpY3lSZXZpZXdTdGF0dXMSZQoPYXBwcm92YWxfc3RhdHVzGAMgASgO",
+            "MkwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuUG9saWN5QXBwcm92",
+            "YWxTdGF0dXNFbnVtLlBvbGljeUFwcHJvdmFsU3RhdHVzQvsBCiVjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQg5BZEdyb3VwQWRQcm90",
+            "b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fk",
+            "cy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVB",
+            "ZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PolicyApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PolicyReviewStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdGroupAdStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PolicyApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PolicyReviewStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Resources.AdReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupAd), global::Google.Ads.GoogleAds.V0.Resources.AdGroupAd.Parser, new[]{ "ResourceName", "Status", "AdGroup", "Ad", "PolicySummary" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdPolicySummary), global::Google.Ads.GoogleAds.V0.Resources.AdGroupAdPolicySummary.Parser, new[]{ "PolicyTopicEntries", "ReviewStatus", "ApprovalStatus" }, null, null, null)
@@ -111,7 +112,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the ad.
     /// Ad group ad resource names have the form:
     ///
-    /// `customers/{customer_id}/adGroupAds/{ad_group_id}_{ad_id}`
+    /// `customers/{customer_id}/adGroupAds/{ad_group_id}~{ad_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

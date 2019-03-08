@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF9jcml0",
             "ZXJpb25fc3RhdHVzLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5l",
-            "bnVtcyJ6ChpBZEdyb3VwQ3JpdGVyaW9uU3RhdHVzRW51bSJcChZBZEdyb3Vw",
-            "Q3JpdGVyaW9uU3RhdHVzEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThAB",
-            "EgsKB0VOQUJMRUQQAhIKCgZQQVVTRUQQAxILCgdSRU1PVkVEEARC8AEKIWNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IbQWRHcm91cENyaXRl",
-            "cmlvblN0YXR1c1Byb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
-            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMDo6RW51bXNiBnByb3RvMw=="));
+            "bnVtcxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJ6ChpBZEdyb3Vw",
+            "Q3JpdGVyaW9uU3RhdHVzRW51bSJcChZBZEdyb3VwQ3JpdGVyaW9uU3RhdHVz",
+            "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB0VOQUJMRUQQAhIK",
+            "CgZQQVVTRUQQAxILCgdSRU1PVkVEEARC8AEKIWNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MC5lbnVtc0IbQWRHcm91cENyaXRlcmlvblN0YXR1c1Byb3Rv",
+            "UAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBc",
+            "RW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.AdGroupCriterionStatusEnum), global::Google.Ads.GoogleAds.V0.Enums.AdGroupCriterionStatusEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.AdGroupCriterionStatusEnum.Types.AdGroupCriterionStatus) }, null)
           }));

@@ -495,10 +495,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
     public const int RemoveFieldNumber = 3;
     /// <summary>
     /// Remove operation: A resource name for the removed shared criterion is
-    /// expected,
-    /// in this format:
+    /// expected, in this format:
     ///
-    /// `customers/{customer_id}/sharedCriteria/{shared_set_id}_{criterion_id}`
+    /// `customers/{customer_id}/sharedCriteria/{shared_set_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

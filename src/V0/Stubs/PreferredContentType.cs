@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9wcmVmZXJyZWRfY29u",
             "dGVudF90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVt",
-            "cyJqChhQcmVmZXJyZWRDb250ZW50VHlwZUVudW0iTgoUUHJlZmVycmVkQ29u",
-            "dGVudFR5cGUSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGAoTWU9V",
-            "VFVCRV9UT1BfQ09OVEVOVBCQA0LuAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmVudW1zQhlQcmVmZXJyZWRDb250ZW50VHlwZVByb3RvUAFaQmdv",
-            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
-            "ZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xl",
-            "QWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXPq",
-            "AiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnByb3RvMw=="));
+            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJqChhQcmVmZXJyZWRD",
+            "b250ZW50VHlwZUVudW0iTgoUUHJlZmVycmVkQ29udGVudFR5cGUSDwoLVU5T",
+            "UEVDSUZJRUQQABILCgdVTktOT1dOEAESGAoTWU9VVFVCRV9UT1BfQ09OVEVO",
+            "VBCQA0LuAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhlQ",
+            "cmVmZXJyZWRDb250ZW50VHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3Jn",
+            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztl",
+            "bnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygId",
+            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6",
+            "R29vZ2xlQWRzOjpWMDo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.PreferredContentTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.PreferredContentTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.PreferredContentTypeEnum.Types.PreferredContentType) }, null)
           }));

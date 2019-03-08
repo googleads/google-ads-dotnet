@@ -533,7 +533,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// Remove operation: A resource name for the removed criterion is expected,
     /// in this format:
     ///
-    /// `customers/{customer_id}/adGroupCriteria/{ad_group_id}_{criterion_id}`
+    /// `customers/{customer_id}/adGroupCriteria/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

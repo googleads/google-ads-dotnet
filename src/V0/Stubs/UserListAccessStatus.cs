@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy91c2VyX2xpc3RfYWNj",
             "ZXNzX3N0YXR1cy5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51",
-            "bXMiawoYVXNlckxpc3RBY2Nlc3NTdGF0dXNFbnVtIk8KFFVzZXJMaXN0QWNj",
-            "ZXNzU3RhdHVzEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB0VO",
-            "QUJMRUQQAhIMCghESVNBQkxFRBADQu4BCiFjb20uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuZW51bXNCGVVzZXJMaXN0QWNjZXNzU3RhdHVzUHJvdG9QAVpC",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVt",
-            "c+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
+            "bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iawoYVXNlckxpc3RB",
+            "Y2Nlc3NTdGF0dXNFbnVtIk8KFFVzZXJMaXN0QWNjZXNzU3RhdHVzEg8KC1VO",
+            "U1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB0VOQUJMRUQQAhIMCghESVNB",
+            "QkxFRBADQu4BCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNC",
+            "GVVzZXJMaXN0QWNjZXNzU3RhdHVzUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1z",
+            "O2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPK",
+            "Ah1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.UserListAccessStatusEnum), global::Google.Ads.GoogleAds.V0.Enums.UserListAccessStatusEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus) }, null)
           }));

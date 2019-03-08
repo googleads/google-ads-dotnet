@@ -499,7 +499,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// Remove operation: A resource name for the removed campaign shared set is
     /// expected, in this format:
     ///
-    /// `customers/{customer_id}/campaignSharedSets/{campaign_id}_{shared_set_id}`
+    /// `customers/{customer_id}/campaignSharedSets/{campaign_id}~{shared_set_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

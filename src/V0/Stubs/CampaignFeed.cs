@@ -30,23 +30,24 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Y3Rpb24ucHJvdG8aNGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2Zl",
             "ZWRfbGlua19zdGF0dXMucHJvdG8aNGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Yw",
             "L2VudW1zL3BsYWNlaG9sZGVyX3R5cGUucHJvdG8aHmdvb2dsZS9wcm90b2J1",
-            "Zi93cmFwcGVycy5wcm90byL/AgoMQ2FtcGFpZ25GZWVkEhUKDXJlc291cmNl",
-            "X25hbWUYASABKAkSKgoEZmVlZBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRIuCghjYW1wYWlnbhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRJdChFwbGFjZWhvbGRlcl90eXBlcxgEIAMoDjJCLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlBsYWNlaG9sZGVyVHlwZUVu",
-            "dW0uUGxhY2Vob2xkZXJUeXBlEksKEW1hdGNoaW5nX2Z1bmN0aW9uGAUgASgL",
-            "MjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLk1hdGNoaW5nRnVu",
-            "Y3Rpb24SUAoGc3RhdHVzGAYgASgOMkAuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAuZW51bXMuRmVlZExpbmtTdGF0dXNFbnVtLkZlZWRMaW5rU3RhdHVzQv4B",
-            "CiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhFDYW1w",
-            "YWlnbkZlZWRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
-            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNl",
-            "c6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oC",
-            "IUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6",
-            "QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90",
+            "byL/AgoMQ2FtcGFpZ25GZWVkEhUKDXJlc291cmNlX25hbWUYASABKAkSKgoE",
+            "ZmVlZBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIuCghj",
+            "YW1wYWlnbhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJd",
+            "ChFwbGFjZWhvbGRlcl90eXBlcxgEIAMoDjJCLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYwLmVudW1zLlBsYWNlaG9sZGVyVHlwZUVudW0uUGxhY2Vob2xkZXJU",
+            "eXBlEksKEW1hdGNoaW5nX2Z1bmN0aW9uGAUgASgLMjAuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjAuY29tbW9uLk1hdGNoaW5nRnVuY3Rpb24SUAoGc3RhdHVz",
+            "GAYgASgOMkAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuRmVlZExp",
+            "bmtTdGF0dXNFbnVtLkZlZWRMaW5rU3RhdHVzQv4BCiVjb20uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhFDYW1wYWlnbkZlZWRQcm90b1AB",
+            "Wkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
+            "b29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2ds",
+            "ZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
+            "OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.MatchingFunctionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.FeedLinkStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PlaceholderTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.MatchingFunctionReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.FeedLinkStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.PlaceholderTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CampaignFeed), global::Google.Ads.GoogleAds.V0.Resources.CampaignFeed.Parser, new[]{ "ResourceName", "Feed", "Campaign", "PlaceholderTypes", "MatchingFunction", "Status" }, null, null, null)
           }));
@@ -104,7 +105,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the campaign feed.
     /// Campaign feed resource names have the form:
     ///
-    /// `customers/{customer_id}/campaignFeeds/{campaign_id}_{feed_id}
+    /// `customers/{customer_id}/campaignFeeds/{campaign_id}~{feed_id}
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

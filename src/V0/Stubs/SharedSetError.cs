@@ -25,19 +25,20 @@ namespace Google.Ads.GoogleAds.V0.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvc2hhcmVkX3NldF9l",
-            "cnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzIrwB",
-            "ChJTaGFyZWRTZXRFcnJvckVudW0ipQEKDlNoYXJlZFNldEVycm9yEg8KC1VO",
-            "U1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEjIKLkNVU1RPTUVSX0NBTk5PVF9D",
-            "UkVBVEVfU0hBUkVEX1NFVF9PRl9USElTX1RZUEUQAhISCg5EVVBMSUNBVEVf",
-            "TkFNRRADEhYKElNIQVJFRF9TRVRfUkVNT1ZFRBAEEhUKEVNIQVJFRF9TRVRf",
-            "SU5fVVNFEAVC7gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJv",
-            "cnNCE1NoYXJlZFNldEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcv",
-            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztl",
-            "cnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPK",
-            "Ah5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFcnJvcnPqAiJHb29nbGU6OkFk",
-            "czo6R29vZ2xlQWRzOjpWMDo6RXJyb3JzYgZwcm90bzM="));
+            "cnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzGhxn",
+            "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIrwBChJTaGFyZWRTZXRFcnJv",
+            "ckVudW0ipQEKDlNoYXJlZFNldEVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoH",
+            "VU5LTk9XThABEjIKLkNVU1RPTUVSX0NBTk5PVF9DUkVBVEVfU0hBUkVEX1NF",
+            "VF9PRl9USElTX1RZUEUQAhISCg5EVVBMSUNBVEVfTkFNRRADEhYKElNIQVJF",
+            "RF9TRVRfUkVNT1ZFRBAEEhUKEVNIQVJFRF9TRVRfSU5fVVNFEAVC7gEKImNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCE1NoYXJlZFNldEVy",
+            "cm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5H",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MDo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.SharedSetErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.SharedSetErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.SharedSetErrorEnum.Types.SharedSetError) }, null)
           }));

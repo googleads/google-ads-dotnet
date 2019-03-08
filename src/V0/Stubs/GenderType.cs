@@ -25,17 +25,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci9nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9nZW5kZXJfdHlwZS5w",
-            "cm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMiZAoOR2VuZGVy",
-            "VHlwZUVudW0iUgoKR2VuZGVyVHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VO",
-            "S05PV04QARIICgRNQUxFEAoSCgoGRkVNQUxFEAsSEAoMVU5ERVRFUk1JTkVE",
-            "EBRC5AEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IPR2Vu",
-            "ZGVyVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
-            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoC",
-            "HUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xH",
-            "b29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
-            "MDo6RW51bXNiBnByb3RvMw=="));
+            "cm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMaHGdvb2dsZS9h",
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8iZAoOR2VuZGVyVHlwZUVudW0iUgoKR2Vu",
+            "ZGVyVHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIICgRNQUxF",
+            "EAoSCgoGRkVNQUxFEAsSEAoMVU5ERVRFUk1JTkVEEBRC5AEKIWNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0IPR2VuZGVyVHlwZVByb3RvUAFa",
+            "Qmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
+            "b2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51",
+            "bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.GenderTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.GenderTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.GenderTypeEnum.Types.GenderType) }, null)
           }));

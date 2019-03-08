@@ -28,20 +28,21 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "cm1fdmlldy5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3Vy",
             "Y2VzGkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9zZWFyY2hfdGVy",
             "bV90YXJnZXRpbmdfc3RhdHVzLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3Jh",
-            "cHBlcnMucHJvdG8i8gEKDlNlYXJjaFRlcm1WaWV3EhUKDXJlc291cmNlX25h",
-            "bWUYASABKAkSMQoLc2VhcmNoX3Rlcm0YAiABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSLgoIYWRfZ3JvdXAYAyABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUSZgoGc3RhdHVzGAQgASgOMlYuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjAuZW51bXMuU2VhcmNoVGVybVRhcmdldGluZ1N0YXR1",
-            "c0VudW0uU2VhcmNoVGVybVRhcmdldGluZ1N0YXR1c0KAAgolY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0ITU2VhcmNoVGVybVZpZXdQ",
-            "cm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
-            "L2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoC",
-            "IUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxB",
-            "ZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29n",
-            "bGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "cHBlcnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i8gEK",
+            "DlNlYXJjaFRlcm1WaWV3EhUKDXJlc291cmNlX25hbWUYASABKAkSMQoLc2Vh",
+            "cmNoX3Rlcm0YAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
+            "LgoIYWRfZ3JvdXAYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWUSZgoGc3RhdHVzGAQgASgOMlYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
+            "ZW51bXMuU2VhcmNoVGVybVRhcmdldGluZ1N0YXR1c0VudW0uU2VhcmNoVGVy",
+            "bVRhcmdldGluZ1N0YXR1c0KAAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLnJlc291cmNlc0ITU2VhcmNoVGVybVZpZXdQcm90b1ABWkpnb29nbGUu",
+            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
+            "djAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYw",
+            "XFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNv",
+            "dXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.SearchTermTargetingStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.SearchTermTargetingStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.SearchTermView), global::Google.Ads.GoogleAds.V0.Resources.SearchTermView.Parser, new[]{ "ResourceName", "SearchTerm", "AdGroup", "Status" }, null, null, null)
           }));
@@ -98,7 +99,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the search term view.
     /// Search term view resource names have the form:
     ///
-    /// `customers/{customer_id}/searchTermViews/{campaign_id}_{ad_group_id}_
+    /// `customers/{customer_id}/searchTermViews/{campaign_id}~{ad_group_id}_
     /// {URL-base64 search term}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

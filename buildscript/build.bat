@@ -14,7 +14,7 @@ if %errorlevel% neq 0 exit /b %errorlevel%
 
 echo Build the examples.
 echo ===================
-dotnet build "%RootPath%\examples\Services\Google.Ads.GoogleAds.Examples.csproj"
+dotnet build "%RootPath%\examples\Google.Ads.GoogleAds.Examples.csproj"
 if %errorlevel% neq 0 exit /b %errorlevel%
 
 echo Run the tests.

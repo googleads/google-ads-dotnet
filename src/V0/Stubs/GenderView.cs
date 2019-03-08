@@ -25,16 +25,17 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvZ2VuZGVyX3Zp",
-            "ZXcucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcyIj",
-            "CgpHZW5kZXJWaWV3EhUKDXJlc291cmNlX25hbWUYASABKAlC/AEKJWNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCD0dlbmRlclZpZXdQ",
-            "cm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
-            "L2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoC",
-            "IUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxB",
-            "ZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29n",
-            "bGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "ZXcucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlcxoc",
+            "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byIjCgpHZW5kZXJWaWV3EhUK",
+            "DXJlc291cmNlX25hbWUYASABKAlC/AEKJWNvbS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5yZXNvdXJjZXNCD0dlbmRlclZpZXdQcm90b1ABWkpnb29nbGUu",
+            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
+            "djAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYw",
+            "XFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNv",
+            "dXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.GenderView), global::Google.Ads.GoogleAds.V0.Resources.GenderView.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -87,7 +88,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the gender view.
     /// Gender view resource names have the form:
     ///
-    /// `customers/{customer_id}/genderViews/{ad_group_id}_{criterion_id}`
+    /// `customers/{customer_id}/genderViews/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

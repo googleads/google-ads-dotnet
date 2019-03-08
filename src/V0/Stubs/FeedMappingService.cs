@@ -495,7 +495,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// Remove operation: A resource name for the removed feed mapping is
     /// expected, in this format:
     ///
-    /// `customers/{customer_id}/feedMappings/{feed_id}_{feed_mapping_id}`
+    /// `customers/{customer_id}/feedMappings/{feed_id}~{feed_mapping_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

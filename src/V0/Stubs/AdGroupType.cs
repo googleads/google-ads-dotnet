@@ -25,22 +25,22 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF9ncm91cF90eXBl",
-            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcyK0AgoPQWRH",
-            "cm91cFR5cGVFbnVtIqACCgtBZEdyb3VwVHlwZRIPCgtVTlNQRUNJRklFRBAA",
-            "EgsKB1VOS05PV04QARITCg9TRUFSQ0hfU1RBTkRBUkQQAhIUChBESVNQTEFZ",
-            "X1NUQU5EQVJEEAMSGAoUU0hPUFBJTkdfUFJPRFVDVF9BRFMQBBINCglIT1RF",
-            "TF9BRFMQBhIWChJTSE9QUElOR19TTUFSVF9BRFMQBxIQCgxWSURFT19CVU1Q",
-            "RVIQCBIdChlWSURFT19UUlVFX1ZJRVdfSU5fU1RSRUFNEAkSHgoaVklERU9f",
-            "VFJVRV9WSUVXX0lOX0RJU1BMQVkQChIhCh1WSURFT19OT05fU0tJUFBBQkxF",
-            "X0lOX1NUUkVBTRALEhMKD1ZJREVPX09VVFNUUkVBTRAMQuUBCiFjb20uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCEEFkR3JvdXBUeXBlUHJvdG9Q",
-            "AVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxF",
-            "bnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJv",
-            "dG8z"));
+            "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcxocZ29vZ2xl",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byK0AgoPQWRHcm91cFR5cGVFbnVtIqAC",
+            "CgtBZEdyb3VwVHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIT",
+            "Cg9TRUFSQ0hfU1RBTkRBUkQQAhIUChBESVNQTEFZX1NUQU5EQVJEEAMSGAoU",
+            "U0hPUFBJTkdfUFJPRFVDVF9BRFMQBBINCglIT1RFTF9BRFMQBhIWChJTSE9Q",
+            "UElOR19TTUFSVF9BRFMQBxIQCgxWSURFT19CVU1QRVIQCBIdChlWSURFT19U",
+            "UlVFX1ZJRVdfSU5fU1RSRUFNEAkSHgoaVklERU9fVFJVRV9WSUVXX0lOX0RJ",
+            "U1BMQVkQChIhCh1WSURFT19OT05fU0tJUFBBQkxFX0lOX1NUUkVBTRALEhMK",
+            "D1ZJREVPX09VVFNUUkVBTRAMQuUBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjAuZW51bXNCEEFkR3JvdXBUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFu",
+            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vu",
+            "dW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51",
+            "bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeEnum), global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.AdGroupTypeEnum.Types.AdGroupType) }, null)
           }));

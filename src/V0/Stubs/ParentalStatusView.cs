@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvcGFyZW50YWxf",
             "c3RhdHVzX3ZpZXcucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJl",
-            "c291cmNlcyIrChJQYXJlbnRhbFN0YXR1c1ZpZXcSFQoNcmVzb3VyY2VfbmFt",
-            "ZRgBIAEoCUKEAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291",
-            "cmNlc0IXUGFyZW50YWxTdGF0dXNWaWV3UHJvdG9QAVpKZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jl",
-            "c291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFk",
-            "cy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNv",
-            "dXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2Vz",
-            "YgZwcm90bzM="));
+            "c291cmNlcxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byIrChJQYXJl",
+            "bnRhbFN0YXR1c1ZpZXcSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCUKEAgolY29t",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IXUGFyZW50YWxT",
+            "dGF0dXNWaWV3UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJj",
+            "ZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPK",
+            "AiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6",
+            "OkFkczo6R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.ParentalStatusView), global::Google.Ads.GoogleAds.V0.Resources.ParentalStatusView.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the parental status view.
     /// Parental Status view resource names have the form:
     ///
-    /// `customers/{customer_id}/parentalStatusViews/{ad_group_id}_{criterion_id}`
+    /// `customers/{customer_id}/parentalStatusViews/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {
