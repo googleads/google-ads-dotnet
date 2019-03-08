@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9nZW9fdGFyZ2V0X2Nv",
             "bnN0YW50X3N0YXR1cy5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "ZW51bXMieAobR2VvVGFyZ2V0Q29uc3RhbnRTdGF0dXNFbnVtIlkKF0dlb1Rh",
-            "cmdldENvbnN0YW50U3RhdHVzEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
-            "ThABEgsKB0VOQUJMRUQQAhITCg9SRU1PVkFMX1BMQU5ORUQQA0LxAQohY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQhxHZW9UYXJnZXRDb25z",
-            "dGFudFN0YXR1c1Byb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
-            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMDo6RW51bXNiBnByb3RvMw=="));
+            "ZW51bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ieAobR2VvVGFy",
+            "Z2V0Q29uc3RhbnRTdGF0dXNFbnVtIlkKF0dlb1RhcmdldENvbnN0YW50U3Rh",
+            "dHVzEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB0VOQUJMRUQQ",
+            "AhITCg9SRU1PVkFMX1BMQU5ORUQQA0LxAQohY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmVudW1zQhxHZW9UYXJnZXRDb25zdGFudFN0YXR1c1Byb3Rv",
+            "UAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBc",
+            "RW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.GeoTargetConstantStatusEnum), global::Google.Ads.GoogleAds.V0.Enums.GeoTargetConstantStatusEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus) }, null)
           }));

@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvcG9saWN5X2ZpbmRp",
             "bmdfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9y",
-            "cyJ8ChZQb2xpY3lGaW5kaW5nRXJyb3JFbnVtImIKElBvbGljeUZpbmRpbmdF",
-            "cnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARISCg5QT0xJQ1lf",
-            "RklORElORxACEhoKFlBPTElDWV9UT1BJQ19OT1RfRk9VTkQQA0LyAQoiY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVycm9yc0IXUG9saWN5RmluZGlu",
-            "Z0Vycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
-            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGq",
-            "Ah5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMDo6RXJyb3JzYgZwcm90bzM="));
+            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJ8ChZQb2xpY3lGaW5k",
+            "aW5nRXJyb3JFbnVtImIKElBvbGljeUZpbmRpbmdFcnJvchIPCgtVTlNQRUNJ",
+            "RklFRBAAEgsKB1VOS05PV04QARISCg5QT0xJQ1lfRklORElORxACEhoKFlBP",
+            "TElDWV9UT1BJQ19OT1RfRk9VTkQQA0LyAQoiY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLmVycm9yc0IXUG9saWN5RmluZGluZ0Vycm9yUHJvdG9QAVpE",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxF",
+            "cnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RXJyb3JzYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.PolicyFindingErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.PolicyFindingErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.PolicyFindingErrorEnum.Types.PolicyFindingError) }, null)
           }));

@@ -26,18 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "CkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9zZWFyY2hfdGVybV90",
             "YXJnZXRpbmdfc3RhdHVzLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MC5lbnVtcyKRAQodU2VhcmNoVGVybVRhcmdldGluZ1N0YXR1c0VudW0icAoZ",
-            "U2VhcmNoVGVybVRhcmdldGluZ1N0YXR1cxIPCgtVTlNQRUNJRklFRBAAEgsK",
-            "B1VOS05PV04QARIJCgVBRERFRBACEgwKCEVYQ0xVREVEEAMSEgoOQURERURf",
-            "RVhDTFVERUQQBBIICgROT05FEAVC8wEKIWNvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lbnVtc0IeU2VhcmNoVGVybVRhcmdldGluZ1N0YXR1c1Byb3Rv",
-            "UAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
-            "L2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBc",
-            "RW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnBy",
-            "b3RvMw=="));
+            "MC5lbnVtcxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKRAQodU2Vh",
+            "cmNoVGVybVRhcmdldGluZ1N0YXR1c0VudW0icAoZU2VhcmNoVGVybVRhcmdl",
+            "dGluZ1N0YXR1cxIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIJCgVB",
+            "RERFRBACEgwKCEVYQ0xVREVEEAMSEgoOQURERURfRVhDTFVERUQQBBIICgRO",
+            "T05FEAVC8wEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0Ie",
+            "U2VhcmNoVGVybVRhcmdldGluZ1N0YXR1c1Byb3RvUAFaQmdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9l",
+            "bnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVu",
+            "dW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6",
+            "OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.SearchTermTargetingStatusEnum), global::Google.Ads.GoogleAds.V0.Enums.SearchTermTargetingStatusEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus) }, null)
           }));

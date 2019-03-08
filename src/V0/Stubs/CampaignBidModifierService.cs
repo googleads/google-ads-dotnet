@@ -536,7 +536,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// Remove operation: A resource name for the removed campaign bid modifier
     /// is expected, in this format:
     ///
-    /// `customers/{customer_id}/CampaignBidModifiers/{campaign_id}_{criterion_id}`
+    /// `customers/{customer_id}/CampaignBidModifiers/{campaign_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

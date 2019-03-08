@@ -26,15 +26,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYWRfc2NoZWR1",
             "bGVfdmlldy5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3Vy",
-            "Y2VzIicKDkFkU2NoZWR1bGVWaWV3EhUKDXJlc291cmNlX25hbWUYASABKAlC",
-            "gAIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCE0Fk",
-            "U2NoZWR1bGVWaWV3UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
-            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNv",
-            "dXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJj",
-            "ZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29n",
-            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "Y2VzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIicKDkFkU2NoZWR1",
+            "bGVWaWV3EhUKDXJlc291cmNlX25hbWUYASABKAlCgAIKJWNvbS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCE0FkU2NoZWR1bGVWaWV3UHJv",
+            "dG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
+            "ZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFH",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFHb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xl",
+            "QWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdScheduleView), global::Google.Ads.GoogleAds.V0.Resources.AdScheduleView.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -88,7 +89,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the ad schedule view.
     /// AdSchedule view resource names have the form:
     ///
-    /// `customers/{customer_id}/adScheduleViews/{campaign_id}_{criterion_id}`
+    /// `customers/{customer_id}/adScheduleViews/{campaign_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

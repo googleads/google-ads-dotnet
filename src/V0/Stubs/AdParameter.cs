@@ -26,20 +26,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYWRfcGFyYW1l",
             "dGVyLnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXMa",
-            "Hmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90byLKAQoLQWRQYXJhbWV0",
-            "ZXISFQoNcmVzb3VyY2VfbmFtZRgBIAEoCRI4ChJhZF9ncm91cF9jcml0ZXJp",
-            "b24YAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNAoPcGFy",
-            "YW1ldGVyX2luZGV4GAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
-            "dWUSNAoOaW5zZXJ0aW9uX3RleHQYBCABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWVC/QEKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5y",
-            "ZXNvdXJjZXNCEEFkUGFyYW1ldGVyUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5v",
-            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291",
-            "cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MC5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJj",
-            "ZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZw",
-            "cm90bzM="));
+            "Hmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9h",
+            "bm5vdGF0aW9ucy5wcm90byLKAQoLQWRQYXJhbWV0ZXISFQoNcmVzb3VyY2Vf",
+            "bmFtZRgBIAEoCRI4ChJhZF9ncm91cF9jcml0ZXJpb24YAiABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNAoPcGFyYW1ldGVyX2luZGV4GAMg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSNAoOaW5zZXJ0aW9u",
+            "X3RleHQYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVC/QEK",
+            "JWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCEEFkUGFy",
+            "YW1ldGVyUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
+            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL3Jlc291cmNlcztyZXNvdXJjZXOi",
+            "AgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5SZXNvdXJjZXPKAiFH",
+            "b29nbGVcQWRzXEdvb2dsZUFkc1xWMFxSZXNvdXJjZXPqAiVHb29nbGU6OkFk",
+            "czo6R29vZ2xlQWRzOjpWMDo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdParameter), global::Google.Ads.GoogleAds.V0.Resources.AdParameter.Parser, new[]{ "ResourceName", "AdGroupCriterion", "ParameterIndex", "InsertionText" }, null, null, null)
           }));
@@ -100,7 +100,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the ad parameter.
     /// Ad parameter resource names have the form:
     ///
-    /// `customers/{customer_id}/adParameters/{ad_group_id}_{criterion_id}_{parameter_index}`
+    /// `customers/{customer_id}/adParameters/{ad_group_id}~{criterion_id}~{parameter_index}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

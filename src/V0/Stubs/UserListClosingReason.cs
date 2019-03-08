@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy91c2VyX2xpc3RfY2xv",
             "c2luZ19yZWFzb24ucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVu",
-            "dW1zIl4KGVVzZXJMaXN0Q2xvc2luZ1JlYXNvbkVudW0iQQoVVXNlckxpc3RD",
-            "bG9zaW5nUmVhc29uEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgoK",
-            "BlVOVVNFRBACQu8BCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51",
-            "bXNCGlVzZXJMaXN0Q2xvc2luZ1JlYXNvblByb3RvUAFaQmdvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9l",
-            "bnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVu",
-            "dW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6",
-            "OkFkczo6R29vZ2xlQWRzOjpWMDo6RW51bXNiBnByb3RvMw=="));
+            "dW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIl4KGVVzZXJMaXN0",
+            "Q2xvc2luZ1JlYXNvbkVudW0iQQoVVXNlckxpc3RDbG9zaW5nUmVhc29uEg8K",
+            "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgoKBlVOVVNFRBACQu8BCiFj",
+            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXNCGlVzZXJMaXN0Q2xv",
+            "c2luZ1JlYXNvblByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lbnVtcztlbnVtc6ICA0dB",
+            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVudW1zygIdR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjBcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMDo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.UserListClosingReasonEnum), global::Google.Ads.GoogleAds.V0.Enums.UserListClosingReasonEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.UserListClosingReasonEnum.Types.UserListClosingReason) }, null)
           }));

@@ -29,32 +29,33 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Y2VzGj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9nb29nbGVfYWRz",
             "X2ZpZWxkX2NhdGVnb3J5LnByb3RvGj5nb29nbGUvYWRzL2dvb2dsZWFkcy92",
             "MC9lbnVtcy9nb29nbGVfYWRzX2ZpZWxkX2RhdGFfdHlwZS5wcm90bxoeZ29v",
-            "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIo8GCg5Hb29nbGVBZHNGaWVs",
-            "ZBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEioKBG5hbWUYAiABKAsyHC5nb29n",
-            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSYgoIY2F0ZWdvcnkYAyABKA4yUC5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5Hb29nbGVBZHNGaWVsZENh",
-            "dGVnb3J5RW51bS5Hb29nbGVBZHNGaWVsZENhdGVnb3J5Ei4KCnNlbGVjdGFi",
-            "bGUYBCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEi4KCmZpbHRl",
-            "cmFibGUYBSABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEiwKCHNv",
-            "cnRhYmxlGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRI1Cg9z",
-            "ZWxlY3RhYmxlX3dpdGgYByADKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUSOQoTYXR0cmlidXRlX3Jlc291cmNlcxgIIAMoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5TdHJpbmdWYWx1ZRItCgdtZXRyaWNzGAkgAygLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEi4KCHNlZ21lbnRzGAogAygLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjEKC2VudW1fdmFsdWVzGAsgAygL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEmMKCWRhdGFfdHlwZRgM",
-            "IAEoDjJQLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkdvb2dsZUFk",
-            "c0ZpZWxkRGF0YVR5cGVFbnVtLkdvb2dsZUFkc0ZpZWxkRGF0YVR5cGUSLgoI",
-            "dHlwZV91cmwYDSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "LwoLaXNfcmVwZWF0ZWQYDiABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZh",
-            "bHVlQoACCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2Vz",
-            "QhNHb29nbGVBZHNGaWVsZFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dl",
-            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7",
-            "cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVz",
-            "b3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2Vz6gIl",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OlJlc291cmNlc2IGcHJvdG8z"));
+            "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90",
+            "YXRpb25zLnByb3RvIo8GCg5Hb29nbGVBZHNGaWVsZBIVCg1yZXNvdXJjZV9u",
+            "YW1lGAEgASgJEioKBG5hbWUYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWUSYgoIY2F0ZWdvcnkYAyABKA4yUC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5lbnVtcy5Hb29nbGVBZHNGaWVsZENhdGVnb3J5RW51bS5Hb29n",
+            "bGVBZHNGaWVsZENhdGVnb3J5Ei4KCnNlbGVjdGFibGUYBCABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuQm9vbFZhbHVlEi4KCmZpbHRlcmFibGUYBSABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuQm9vbFZhbHVlEiwKCHNvcnRhYmxlGAYgASgLMhou",
+            "Z29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRI1Cg9zZWxlY3RhYmxlX3dpdGgY",
+            "ByADKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSOQoTYXR0cmli",
+            "dXRlX3Jlc291cmNlcxgIIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZRItCgdtZXRyaWNzGAkgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEi4KCHNlZ21lbnRzGAogAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlEjEKC2VudW1fdmFsdWVzGAsgAygLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEmMKCWRhdGFfdHlwZRgMIAEoDjJQLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkdvb2dsZUFkc0ZpZWxkRGF0YVR5cGVF",
+            "bnVtLkdvb2dsZUFkc0ZpZWxkRGF0YVR5cGUSLgoIdHlwZV91cmwYDSABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSLwoLaXNfcmVwZWF0ZWQY",
+            "DiABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlQoACCiVjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3VyY2VzQhNHb29nbGVBZHNGaWVs",
+            "ZFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FB",
+            "qgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdv",
+            "b2dsZUFkczo6VjA6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.GoogleAdsFieldCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.GoogleAdsFieldDataTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.GoogleAdsFieldCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.GoogleAdsFieldDataTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.GoogleAdsField), global::Google.Ads.GoogleAds.V0.Resources.GoogleAdsField.Parser, new[]{ "ResourceName", "Name", "Category", "Selectable", "Filterable", "Sortable", "SelectableWith", "AttributeResources", "Metrics", "Segments", "EnumValues", "DataType", "TypeUrl", "IsRepeated" }, null, null, null)
           }));
@@ -244,10 +245,13 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         = pb::FieldCodec.ForClassWrapper<string>(74);
     private readonly pbc::RepeatedField<string> metrics_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The names of all metrics that are selectable with the described artifact.
+    /// At and beyond version V1 this field lists the names of all metrics that are
+    /// selectable with the described artifact when it is used in the FROM clause.
+    /// It is only set for artifacts whose category is RESOURCE.
     ///
-    /// This field is only set for artifacts whose category is either RESOURCE or
-    /// SEGMENT.
+    /// Before version V1 this field lists the names of all metrics that are
+    /// selectable with the described artifact. It is only set for artifacts whose
+    /// category is either RESOURCE or SEGMENT
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> Metrics {
@@ -260,10 +264,14 @@ namespace Google.Ads.GoogleAds.V0.Resources {
         = pb::FieldCodec.ForClassWrapper<string>(82);
     private readonly pbc::RepeatedField<string> segments_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The names of all artifacts, whether a segment or another resource, that
-    /// segment metrics when included in search queries.
+    /// At and beyond version V1 this field lists the names of all artifacts,
+    /// whether a segment or another resource, that segment metrics when included
+    /// in search queries and when the described artifact is used in the FROM
+    /// clause. It is only set for artifacts whose category is RESOURCE.
     ///
-    /// This field is only set for artifacts of category RESOURCE, SEGMENT or
+    /// Before version V1 this field lists the names of all artifacts, whether a
+    /// segment or another resource, that segment metrics when included in search
+    /// queries. It is only set for artifacts of category RESOURCE, SEGMENT or
     /// METRIC.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

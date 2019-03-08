@@ -1,3 +1,8 @@
+1.0.0
+=====
+- Added support for Google Ads API v0.6.0. See release notes:
+ https://developers.google.com/google-ads/api/docs/release-notes#100_2019-02-27
+
 0.8.1
 =====
 - Fixed an issue with login-customer-id header not being sent correctly to the server.

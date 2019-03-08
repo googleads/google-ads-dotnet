@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvYWRfZ3JvdXBf",
             "YXVkaWVuY2Vfdmlldy5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "cmVzb3VyY2VzIiwKE0FkR3JvdXBBdWRpZW5jZVZpZXcSFQoNcmVzb3VyY2Vf",
-            "bmFtZRgBIAEoCUKFAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJl",
-            "c291cmNlc0IYQWRHcm91cEF1ZGllbmNlVmlld1Byb3RvUAFaSmdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBc",
-            "UmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OlJlc291",
-            "cmNlc2IGcHJvdG8z"));
+            "cmVzb3VyY2VzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIiwKE0Fk",
+            "R3JvdXBBdWRpZW5jZVZpZXcSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCUKFAgol",
+            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IYQWRHcm91",
+            "cEF1ZGllbmNlVmlld1Byb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
+            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVz",
+            "b3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3Vy",
+            "Y2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2Vz6gIlR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.AdGroupAudienceView), global::Google.Ads.GoogleAds.V0.Resources.AdGroupAudienceView.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -91,7 +91,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the ad group audience view.
     /// Ad group audience view resource names have the form:
     ///
-    /// `customers/{customer_id}/adGroupAudienceViews/{ad_group_id}_{criterion_id}`
+    /// `customers/{customer_id}/adGroupAudienceViews/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

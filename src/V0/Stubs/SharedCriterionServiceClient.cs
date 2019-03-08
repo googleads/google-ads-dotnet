@@ -483,15 +483,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
             string customerId,
             scg::IEnumerable<SharedCriterionOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateSharedCriteriaAsync(
                 new MutateSharedCriteriaRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -523,8 +523,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
             string customerId,
             scg::IEnumerable<SharedCriterionOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => MutateSharedCriteriaAsync(
                 customerId,
                 operations,
@@ -560,15 +560,90 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateSharedCriteriaResponse MutateSharedCriteria(
             string customerId,
             scg::IEnumerable<SharedCriterionOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateSharedCriteria(
                 new MutateSharedCriteriaRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates or removes shared criteria. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose shared criteria are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual shared criteria.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
+            string customerId,
+            scg::IEnumerable<SharedCriterionOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateSharedCriteriaAsync(
+                new MutateSharedCriteriaRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates or removes shared criteria. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose shared criteria are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual shared criteria.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateSharedCriteriaResponse> MutateSharedCriteriaAsync(
+            string customerId,
+            scg::IEnumerable<SharedCriterionOperation> operations,
+            st::CancellationToken cancellationToken) => MutateSharedCriteriaAsync(
+                customerId,
+                operations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates or removes shared criteria. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose shared criteria are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual shared criteria.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateSharedCriteriaResponse MutateSharedCriteria(
+            string customerId,
+            scg::IEnumerable<SharedCriterionOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateSharedCriteria(
+                new MutateSharedCriteriaRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
 

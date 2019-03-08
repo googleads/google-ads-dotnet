@@ -26,17 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvc3RyaW5nX2Zvcm1h",
             "dF9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
-            "InEKFVN0cmluZ0Zvcm1hdEVycm9yRW51bSJYChFTdHJpbmdGb3JtYXRFcnJv",
-            "chIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIRCg1JTExFR0FMX0NI",
-            "QVJTEAISEgoOSU5WQUxJRF9GT1JNQVQQA0LxAQoiY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYwLmVycm9yc0IWU3RyaW5nRm9ybWF0RXJyb3JQcm90b1AB",
-            "WkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYw",
-            "XEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJvcnNi",
-            "BnByb3RvMw=="));
+            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvInEKFVN0cmluZ0Zvcm1h",
+            "dEVycm9yRW51bSJYChFTdHJpbmdGb3JtYXRFcnJvchIPCgtVTlNQRUNJRklF",
+            "RBAAEgsKB1VOS05PV04QARIRCg1JTExFR0FMX0NIQVJTEAISEgoOSU5WQUxJ",
+            "RF9GT1JNQVQQA0LxAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVy",
+            "cm9yc0IWU3RyaW5nRm9ybWF0RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5n",
+            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJy",
+            "b3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVy",
+            "cm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVycm9yc+oCIkdvb2ds",
+            "ZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.StringFormatErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.StringFormatErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.StringFormatErrorEnum.Types.StringFormatError) }, null)
           }));

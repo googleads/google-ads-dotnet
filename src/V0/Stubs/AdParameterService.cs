@@ -531,7 +531,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
     /// Remove operation: A resource name for the ad parameter to remove is
     /// expected in this format:
     ///
-    /// `customers/{customer_id}/adParameters/{ad_group_id}_{criterion_id}_{parameter_index}`
+    /// `customers/{customer_id}/adParameters/{ad_group_id}~{criterion_id}~{parameter_index}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

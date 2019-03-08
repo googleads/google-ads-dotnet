@@ -29,151 +29,152 @@ namespace Google.Ads.GoogleAds.V0.Common {
             "L2dvb2dsZWFkcy92MC9lbnVtcy9pbnRlcmFjdGlvbl9ldmVudF90eXBlLnBy",
             "b3RvGjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9xdWFsaXR5X3Nj",
             "b3JlX2J1Y2tldC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnBy",
-            "b3RvIswvCgdNZXRyaWNzEkgKImFic29sdXRlX3RvcF9pbXByZXNzaW9uX3Bl",
-            "cmNlbnRhZ2UYXyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
-            "NQoPYWN0aXZlX3ZpZXdfY3BtGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRv",
-            "dWJsZVZhbHVlEjUKD2FjdGl2ZV92aWV3X2N0chhPIAEoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5Eb3VibGVWYWx1ZRI8ChdhY3RpdmVfdmlld19pbXByZXNzaW9u",
-            "cxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEj8KGWFjdGl2",
-            "ZV92aWV3X21lYXN1cmFiaWxpdHkYYCABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "RG91YmxlVmFsdWUSRwoiYWN0aXZlX3ZpZXdfbWVhc3VyYWJsZV9jb3N0X21p",
-            "Y3JvcxgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEkcKImFj",
-            "dGl2ZV92aWV3X21lYXN1cmFibGVfaW1wcmVzc2lvbnMYBCABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRI9ChdhY3RpdmVfdmlld192aWV3YWJp",
-            "bGl0eRhhIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJMCiZh",
-            "bGxfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfcmF0ZRhBIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI7ChVhbGxfY29udmVyc2lv",
-            "bnNfdmFsdWUYQiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
-            "NQoPYWxsX2NvbnZlcnNpb25zGAcgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRv",
-            "dWJsZVZhbHVlEkQKHmFsbF9jb252ZXJzaW9uc192YWx1ZV9wZXJfY29zdBg+",
-            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJdCjdhbGxfY29u",
-            "dmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0",
-            "aW9uGEMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjIKDGF2",
-            "ZXJhZ2VfY29zdBgIIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
-            "ZRIxCgthdmVyYWdlX2NwYxgJIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3Vi",
-            "bGVWYWx1ZRIxCgthdmVyYWdlX2NwZRhiIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5Eb3VibGVWYWx1ZRIxCgthdmVyYWdlX2NwbRgKIAEoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5Eb3VibGVWYWx1ZRIxCgthdmVyYWdlX2NwdhgLIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI3ChFhdmVyYWdlX2ZyZXF1ZW5j",
-            "eRgMIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI4ChJhdmVy",
-            "YWdlX3BhZ2Vfdmlld3MYYyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
-            "VmFsdWUSNgoQYXZlcmFnZV9wb3NpdGlvbhgNIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5Eb3VibGVWYWx1ZRI6ChRhdmVyYWdlX3RpbWVfb25fc2l0ZRhUIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI/ChliZW5jaG1hcmtf",
-            "YXZlcmFnZV9tYXhfY3BjGA4gASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
-            "ZVZhbHVlEjMKDWJlbmNobWFya19jdHIYTSABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuRG91YmxlVmFsdWUSMQoLYm91bmNlX3JhdGUYDyABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuRG91YmxlVmFsdWUSKwoGY2xpY2tzGBMgASgLMhsuZ29vZ2xl",
-            "LnByb3RvYnVmLkludDY0VmFsdWUSSgokY29udGVudF9idWRnZXRfbG9zdF9p",
-            "bXByZXNzaW9uX3NoYXJlGBQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
-            "ZVZhbHVlEj4KGGNvbnRlbnRfaW1wcmVzc2lvbl9zaGFyZRgVIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJQCipjb252ZXJzaW9uX2xhc3Rf",
-            "cmVjZWl2ZWRfcmVxdWVzdF9kYXRlX3RpbWUYSSABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUSRQofY29udmVyc2lvbl9sYXN0X2NvbnZlcnNp",
-            "b25fZGF0ZRhKIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJI",
-            "CiJjb250ZW50X3JhbmtfbG9zdF9pbXByZXNzaW9uX3NoYXJlGBYgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEkgKImNvbnZlcnNpb25zX2Zy",
-            "b21faW50ZXJhY3Rpb25zX3JhdGUYRSABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "RG91YmxlVmFsdWUSNwoRY29udmVyc2lvbnNfdmFsdWUYRiABKAsyHC5nb29n",
-            "bGUucHJvdG9idWYuRG91YmxlVmFsdWUSQAoaY29udmVyc2lvbnNfdmFsdWVf",
-            "cGVyX2Nvc3QYRyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
-            "WQozY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2lu",
-            "dGVyYWN0aW9uGEggASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVl",
-            "EjEKC2NvbnZlcnNpb25zGBkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
-            "ZVZhbHVlEjAKC2Nvc3RfbWljcm9zGBogASgLMhsuZ29vZ2xlLnByb3RvYnVm",
-            "LkludDY0VmFsdWUSPgoYY29zdF9wZXJfYWxsX2NvbnZlcnNpb25zGEQgASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjkKE2Nvc3RfcGVyX2Nv",
-            "bnZlcnNpb24YHCABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
-            "UgosY29zdF9wZXJfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNp",
-            "b24YaiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSPgoYY3Jv",
-            "c3NfZGV2aWNlX2NvbnZlcnNpb25zGB0gASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LkRvdWJsZVZhbHVlEikKA2N0chgeIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5E",
-            "b3VibGVWYWx1ZRJKCiRjdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVy",
-            "c2lvbnMYZSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSYQo7",
-            "Y3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX2Zyb21faW50",
-            "ZXJhY3Rpb25zX3JhdGUYZiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
-            "VmFsdWUScgpMY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25z",
-            "X2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbhhnIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJQCipjdXJyZW50X21v",
-            "ZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfdmFsdWUYaCABKAsyHC5nb29n",
-            "bGUucHJvdG9idWYuRG91YmxlVmFsdWUSWQozY3VycmVudF9tb2RlbF9hdHRy",
-            "aWJ1dGVkX2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0GGkgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjUKD2VuZ2FnZW1lbnRfcmF0ZRgf",
-            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIwCgtlbmdhZ2Vt",
-            "ZW50cxggIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEkUKH2hv",
-            "dGVsX2F2ZXJhZ2VfbGVhZF92YWx1ZV9taWNyb3MYSyABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuRG91YmxlVmFsdWUScwohaGlzdG9yaWNhbF9jcmVhdGl2ZV9x",
-            "dWFsaXR5X3Njb3JlGFAgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "ZW51bXMuUXVhbGl0eVNjb3JlQnVja2V0RW51bS5RdWFsaXR5U2NvcmVCdWNr",
-            "ZXQSdwolaGlzdG9yaWNhbF9sYW5kaW5nX3BhZ2VfcXVhbGl0eV9zY29yZRhR",
-            "IAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlF1YWxpdHlT",
-            "Y29yZUJ1Y2tldEVudW0uUXVhbGl0eVNjb3JlQnVja2V0Ej0KGGhpc3Rvcmlj",
-            "YWxfcXVhbGl0eV9zY29yZRhSIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
-            "NFZhbHVlEnEKH2hpc3RvcmljYWxfc2VhcmNoX3ByZWRpY3RlZF9jdHIYUyAB",
-            "KA4ySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcy5RdWFsaXR5U2Nv",
-            "cmVCdWNrZXRFbnVtLlF1YWxpdHlTY29yZUJ1Y2tldBIzCg5nbWFpbF9mb3J3",
-            "YXJkcxhVIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjAKC2dt",
-            "YWlsX3NhdmVzGFYgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUS",
-            "OwoWZ21haWxfc2Vjb25kYXJ5X2NsaWNrcxhXIAEoCzIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5JbnQ2NFZhbHVlEjUKEGltcHJlc3Npb25fcmVhY2gYJCABKAsyGy5n",
-            "b29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIwCgtpbXByZXNzaW9ucxglIAEo",
-            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjYKEGludGVyYWN0aW9u",
-            "X3JhdGUYJiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSMQoM",
-            "aW50ZXJhY3Rpb25zGCcgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
-            "dWUSZwoRaW50ZXJhY3Rpb25fdHlwZXMYZCADKA4yTC5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5lbnVtcy5JbnRlcmFjdGlvbkV2ZW50VHlwZUVudW0uSW50",
-            "ZXJhY3Rpb25FdmVudFR5cGUSOAoSaW52YWxpZF9jbGlja19yYXRlGCggASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjMKDmludmFsaWRfY2xp",
-            "Y2tzGCkgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOgoUcGVy",
-            "Y2VudF9uZXdfdmlzaXRvcnMYKiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91",
-            "YmxlVmFsdWUSMAoLcGhvbmVfY2FsbHMYKyABKAsyGy5nb29nbGUucHJvdG9i",
-            "dWYuSW50NjRWYWx1ZRI2ChFwaG9uZV9pbXByZXNzaW9ucxgsIAEoCzIbLmdv",
-            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjgKEnBob25lX3Rocm91Z2hfcmF0",
-            "ZRgtIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIyCgxyZWxh",
-            "dGl2ZV9jdHIYLiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
-            "Sgokc2VhcmNoX2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJlGE4gASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlElYKMHNlYXJjaF9idWRn",
-            "ZXRfbG9zdF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9zaGFyZRhYIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJJCiNzZWFyY2hfYnVkZ2V0",
-            "X2xvc3RfaW1wcmVzc2lvbl9zaGFyZRgvIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5Eb3VibGVWYWx1ZRJNCidzZWFyY2hfYnVkZ2V0X2xvc3RfdG9wX2ltcHJl",
-            "c3Npb25fc2hhcmUYWSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFs",
-            "dWUSOAoSc2VhcmNoX2NsaWNrX3NoYXJlGDAgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLkRvdWJsZVZhbHVlEkkKI3NlYXJjaF9leGFjdF9tYXRjaF9pbXByZXNz",
-            "aW9uX3NoYXJlGDEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVl",
-            "Ej0KF3NlYXJjaF9pbXByZXNzaW9uX3NoYXJlGDIgASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLkRvdWJsZVZhbHVlElQKLnNlYXJjaF9yYW5rX2xvc3RfYWJzb2x1",
-            "dGVfdG9wX2ltcHJlc3Npb25fc2hhcmUYWiABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuRG91YmxlVmFsdWUSRwohc2VhcmNoX3JhbmtfbG9zdF9pbXByZXNzaW9u",
-            "X3NoYXJlGDMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEksK",
-            "JXNlYXJjaF9yYW5rX2xvc3RfdG9wX2ltcHJlc3Npb25fc2hhcmUYWyABKAsy",
-            "HC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSQQobc2VhcmNoX3RvcF9p",
-            "bXByZXNzaW9uX3NoYXJlGFwgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
-            "ZVZhbHVlEj8KGXRvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2UYXSABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSPwoZdmFsdWVfcGVyX2FsbF9j",
-            "b252ZXJzaW9ucxg0IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
-            "ZRI6ChR2YWx1ZV9wZXJfY29udmVyc2lvbhg1IAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5Eb3VibGVWYWx1ZRJTCi12YWx1ZV9wZXJfY3VycmVudF9tb2RlbF9h",
-            "dHRyaWJ1dGVkX2NvbnZlcnNpb24YXiABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "RG91YmxlVmFsdWUSPQoXdmlkZW9fcXVhcnRpbGVfMTAwX3JhdGUYNiABKAsy",
-            "HC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSPAoWdmlkZW9fcXVhcnRp",
-            "bGVfMjVfcmF0ZRg3IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
-            "ZRI8ChZ2aWRlb19xdWFydGlsZV81MF9yYXRlGDggASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLkRvdWJsZVZhbHVlEjwKFnZpZGVvX3F1YXJ0aWxlXzc1X3JhdGUY",
-            "OSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSNQoPdmlkZW9f",
-            "dmlld19yYXRlGDogASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVl",
-            "EjAKC3ZpZGVvX3ZpZXdzGDsgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0",
-            "VmFsdWUSPQoYdmlld190aHJvdWdoX2NvbnZlcnNpb25zGDwgASgLMhsuZ29v",
-            "Z2xlLnByb3RvYnVmLkludDY0VmFsdWVC5wEKImNvbS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MC5jb21tb25CDE1ldHJpY3NQcm90b1ABWkRnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAv",
-            "Y29tbW9uO2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYw",
-            "LkNvbW1vbsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXENvbW1vbuoCIkdv",
-            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpDb21tb25iBnByb3RvMw=="));
+            "b3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvItIvCgdNZXRyaWNz",
+            "EkgKImFic29sdXRlX3RvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2UYXyABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSNQoPYWN0aXZlX3ZpZXdf",
+            "Y3BtGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjUKD2Fj",
+            "dGl2ZV92aWV3X2N0chhPIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVW",
+            "YWx1ZRI8ChdhY3RpdmVfdmlld19pbXByZXNzaW9ucxgCIAEoCzIbLmdvb2ds",
+            "ZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEj8KGWFjdGl2ZV92aWV3X21lYXN1cmFi",
+            "aWxpdHkYYCABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSRwoi",
+            "YWN0aXZlX3ZpZXdfbWVhc3VyYWJsZV9jb3N0X21pY3JvcxgDIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEkcKImFjdGl2ZV92aWV3X21lYXN1",
+            "cmFibGVfaW1wcmVzc2lvbnMYBCABKAsyGy5nb29nbGUucHJvdG9idWYuSW50",
+            "NjRWYWx1ZRI9ChdhY3RpdmVfdmlld192aWV3YWJpbGl0eRhhIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJMCiZhbGxfY29udmVyc2lvbnNf",
+            "ZnJvbV9pbnRlcmFjdGlvbnNfcmF0ZRhBIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5Eb3VibGVWYWx1ZRI7ChVhbGxfY29udmVyc2lvbnNfdmFsdWUYQiABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSNQoPYWxsX2NvbnZlcnNp",
+            "b25zGAcgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEkQKHmFs",
+            "bF9jb252ZXJzaW9uc192YWx1ZV9wZXJfY29zdBg+IAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5Eb3VibGVWYWx1ZRJdCjdhbGxfY29udmVyc2lvbnNfZnJvbV9p",
+            "bnRlcmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0aW9uGEMgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjIKDGF2ZXJhZ2VfY29zdBgIIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIxCgthdmVyYWdlX2Nw",
+            "YxgJIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIxCgthdmVy",
+            "YWdlX2NwZRhiIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIx",
+            "CgthdmVyYWdlX2NwbRgKIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVW",
+            "YWx1ZRIxCgthdmVyYWdlX2NwdhgLIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5E",
+            "b3VibGVWYWx1ZRI3ChFhdmVyYWdlX2ZyZXF1ZW5jeRgMIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI4ChJhdmVyYWdlX3BhZ2Vfdmlld3MY",
+            "YyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSNgoQYXZlcmFn",
+            "ZV9wb3NpdGlvbhgNIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1",
+            "ZRI6ChRhdmVyYWdlX3RpbWVfb25fc2l0ZRhUIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5Eb3VibGVWYWx1ZRI/ChliZW5jaG1hcmtfYXZlcmFnZV9tYXhfY3Bj",
+            "GA4gASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjMKDWJlbmNo",
+            "bWFya19jdHIYTSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
+            "MQoLYm91bmNlX3JhdGUYDyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
+            "VmFsdWUSKwoGY2xpY2tzGBMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0",
+            "VmFsdWUSSgokY29udGVudF9idWRnZXRfbG9zdF9pbXByZXNzaW9uX3NoYXJl",
+            "GBQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEj4KGGNvbnRl",
+            "bnRfaW1wcmVzc2lvbl9zaGFyZRgVIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5E",
+            "b3VibGVWYWx1ZRJQCipjb252ZXJzaW9uX2xhc3RfcmVjZWl2ZWRfcmVxdWVz",
+            "dF9kYXRlX3RpbWUYSSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWUSRQofY29udmVyc2lvbl9sYXN0X2NvbnZlcnNpb25fZGF0ZRhKIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJICiJjb250ZW50X3Jhbmtf",
+            "bG9zdF9pbXByZXNzaW9uX3NoYXJlGBYgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LkRvdWJsZVZhbHVlEkgKImNvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25z",
+            "X3JhdGUYRSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSNwoR",
+            "Y29udmVyc2lvbnNfdmFsdWUYRiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91",
+            "YmxlVmFsdWUSQAoaY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3QYRyABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSWQozY29udmVyc2lvbnNf",
+            "ZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0aW9uGEggASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjEKC2NvbnZlcnNpb25z",
+            "GBkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjAKC2Nvc3Rf",
+            "bWljcm9zGBogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSPgoY",
+            "Y29zdF9wZXJfYWxsX2NvbnZlcnNpb25zGEQgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLkRvdWJsZVZhbHVlEjkKE2Nvc3RfcGVyX2NvbnZlcnNpb24YHCABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSUgosY29zdF9wZXJfY3Vy",
+            "cmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb24YaiABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuRG91YmxlVmFsdWUSPgoYY3Jvc3NfZGV2aWNlX2NvbnZl",
+            "cnNpb25zGB0gASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEikK",
+            "A2N0chgeIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJKCiRj",
+            "dXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnMYZSABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSYQo7Y3VycmVudF9tb2RlbF9h",
+            "dHRyaWJ1dGVkX2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3JhdGUY",
+            "ZiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUScgpMY3VycmVu",
+            "dF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rp",
+            "b25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbhhnIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5Eb3VibGVWYWx1ZRJQCipjdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRf",
+            "Y29udmVyc2lvbnNfdmFsdWUYaCABKAsyHC5nb29nbGUucHJvdG9idWYuRG91",
+            "YmxlVmFsdWUSWQozY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNp",
+            "b25zX3ZhbHVlX3Blcl9jb3N0GGkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRv",
+            "dWJsZVZhbHVlEjUKD2VuZ2FnZW1lbnRfcmF0ZRgfIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5Eb3VibGVWYWx1ZRIwCgtlbmdhZ2VtZW50cxggIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEkUKH2hvdGVsX2F2ZXJhZ2VfbGVh",
+            "ZF92YWx1ZV9taWNyb3MYSyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
+            "VmFsdWUScwohaGlzdG9yaWNhbF9jcmVhdGl2ZV9xdWFsaXR5X3Njb3JlGFAg",
+            "ASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMuUXVhbGl0eVNj",
+            "b3JlQnVja2V0RW51bS5RdWFsaXR5U2NvcmVCdWNrZXQSdwolaGlzdG9yaWNh",
+            "bF9sYW5kaW5nX3BhZ2VfcXVhbGl0eV9zY29yZRhRIAEoDjJILmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLmVudW1zLlF1YWxpdHlTY29yZUJ1Y2tldEVudW0u",
+            "UXVhbGl0eVNjb3JlQnVja2V0Ej0KGGhpc3RvcmljYWxfcXVhbGl0eV9zY29y",
+            "ZRhSIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEnEKH2hpc3Rv",
+            "cmljYWxfc2VhcmNoX3ByZWRpY3RlZF9jdHIYUyABKA4ySC5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5lbnVtcy5RdWFsaXR5U2NvcmVCdWNrZXRFbnVtLlF1",
+            "YWxpdHlTY29yZUJ1Y2tldBIzCg5nbWFpbF9mb3J3YXJkcxhVIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjAKC2dtYWlsX3NhdmVzGFYgASgL",
+            "MhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOwoWZ21haWxfc2Vjb25k",
+            "YXJ5X2NsaWNrcxhXIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVl",
+            "EjUKEGltcHJlc3Npb25fcmVhY2gYJCABKAsyGy5nb29nbGUucHJvdG9idWYu",
+            "SW50NjRWYWx1ZRIwCgtpbXByZXNzaW9ucxglIAEoCzIbLmdvb2dsZS5wcm90",
+            "b2J1Zi5JbnQ2NFZhbHVlEjYKEGludGVyYWN0aW9uX3JhdGUYJiABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSMQoMaW50ZXJhY3Rpb25zGCcg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSbQoXaW50ZXJhY3Rp",
+            "b25fZXZlbnRfdHlwZXMYZCADKA4yTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5lbnVtcy5JbnRlcmFjdGlvbkV2ZW50VHlwZUVudW0uSW50ZXJhY3Rpb25F",
+            "dmVudFR5cGUSOAoSaW52YWxpZF9jbGlja19yYXRlGCggASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLkRvdWJsZVZhbHVlEjMKDmludmFsaWRfY2xpY2tzGCkgASgL",
+            "MhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOgoUcGVyY2VudF9uZXdf",
+            "dmlzaXRvcnMYKiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUS",
+            "MAoLcGhvbmVfY2FsbHMYKyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRW",
+            "YWx1ZRI2ChFwaG9uZV9pbXByZXNzaW9ucxgsIAEoCzIbLmdvb2dsZS5wcm90",
+            "b2J1Zi5JbnQ2NFZhbHVlEjgKEnBob25lX3Rocm91Z2hfcmF0ZRgtIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIyCgxyZWxhdGl2ZV9jdHIY",
+            "LiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSSgokc2VhcmNo",
+            "X2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJlGE4gASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLkRvdWJsZVZhbHVlElYKMHNlYXJjaF9idWRnZXRfbG9zdF9h",
+            "YnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9zaGFyZRhYIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5Eb3VibGVWYWx1ZRJJCiNzZWFyY2hfYnVkZ2V0X2xvc3RfaW1w",
+            "cmVzc2lvbl9zaGFyZRgvIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVW",
+            "YWx1ZRJNCidzZWFyY2hfYnVkZ2V0X2xvc3RfdG9wX2ltcHJlc3Npb25fc2hh",
+            "cmUYWSABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSOAoSc2Vh",
+            "cmNoX2NsaWNrX3NoYXJlGDAgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJs",
+            "ZVZhbHVlEkkKI3NlYXJjaF9leGFjdF9tYXRjaF9pbXByZXNzaW9uX3NoYXJl",
+            "GDEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEj0KF3NlYXJj",
+            "aF9pbXByZXNzaW9uX3NoYXJlGDIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRv",
+            "dWJsZVZhbHVlElQKLnNlYXJjaF9yYW5rX2xvc3RfYWJzb2x1dGVfdG9wX2lt",
+            "cHJlc3Npb25fc2hhcmUYWiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
+            "VmFsdWUSRwohc2VhcmNoX3JhbmtfbG9zdF9pbXByZXNzaW9uX3NoYXJlGDMg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEksKJXNlYXJjaF9y",
+            "YW5rX2xvc3RfdG9wX2ltcHJlc3Npb25fc2hhcmUYWyABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuRG91YmxlVmFsdWUSQQobc2VhcmNoX3RvcF9pbXByZXNzaW9u",
+            "X3NoYXJlGFwgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEj8K",
+            "GXRvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2UYXSABKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuRG91YmxlVmFsdWUSPwoZdmFsdWVfcGVyX2FsbF9jb252ZXJzaW9u",
+            "cxg0IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI6ChR2YWx1",
+            "ZV9wZXJfY29udmVyc2lvbhg1IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3Vi",
+            "bGVWYWx1ZRJTCi12YWx1ZV9wZXJfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVk",
+            "X2NvbnZlcnNpb24YXiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFs",
+            "dWUSPQoXdmlkZW9fcXVhcnRpbGVfMTAwX3JhdGUYNiABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuRG91YmxlVmFsdWUSPAoWdmlkZW9fcXVhcnRpbGVfMjVfcmF0",
+            "ZRg3IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI8ChZ2aWRl",
+            "b19xdWFydGlsZV81MF9yYXRlGDggASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRv",
+            "dWJsZVZhbHVlEjwKFnZpZGVvX3F1YXJ0aWxlXzc1X3JhdGUYOSABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSNQoPdmlkZW9fdmlld19yYXRl",
+            "GDogASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjAKC3ZpZGVv",
+            "X3ZpZXdzGDsgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSPQoY",
+            "dmlld190aHJvdWdoX2NvbnZlcnNpb25zGDwgASgLMhsuZ29vZ2xlLnByb3Rv",
+            "YnVmLkludDY0VmFsdWVC5wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5jb21tb25CDE1ldHJpY3NQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvY29tbW9uO2Nv",
+            "bW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkNvbW1vbsoC",
+            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXENvbW1vbuoCIkdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYwOjpDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.Metrics), global::Google.Ads.GoogleAds.V0.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromInteractionsValuePerInteraction", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AverageFrequency", "AveragePageViews", "AveragePosition", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BenchmarkCtr", "BounceRate", "Clicks", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionReach", "Impressions", "InteractionRate", "Interactions", "InteractionTypes", "InvalidClickRate", "InvalidClicks", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "TopImpressionPercentage", "ValuePerAllConversions", "ValuePerConversion", "ValuePerCurrentModelAttributedConversion", "VideoQuartile100Rate", "VideoQuartile25Rate", "VideoQuartile50Rate", "VideoQuartile75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.Metrics), global::Google.Ads.GoogleAds.V0.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromInteractionsValuePerInteraction", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AverageFrequency", "AveragePageViews", "AveragePosition", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BenchmarkCtr", "BounceRate", "Clicks", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "TopImpressionPercentage", "ValuePerAllConversions", "ValuePerConversion", "ValuePerCurrentModelAttributedConversion", "VideoQuartile100Rate", "VideoQuartile25Rate", "VideoQuartile50Rate", "VideoQuartile75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null)
           }));
     }
     #endregion
@@ -269,7 +270,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
       Impressions = other.Impressions;
       InteractionRate = other.InteractionRate;
       Interactions = other.Interactions;
-      interactionTypes_ = other.interactionTypes_.Clone();
+      interactionEventTypes_ = other.interactionEventTypes_.Clone();
       InvalidClickRate = other.InvalidClickRate;
       InvalidClicks = other.InvalidClicks;
       PercentNewVisitors = other.PercentNewVisitors;
@@ -1293,17 +1294,17 @@ namespace Google.Ads.GoogleAds.V0.Common {
       }
     }
 
-    /// <summary>Field number for the "interaction_types" field.</summary>
-    public const int InteractionTypesFieldNumber = 100;
-    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType> _repeated_interactionTypes_codec
+    /// <summary>Field number for the "interaction_event_types" field.</summary>
+    public const int InteractionEventTypesFieldNumber = 100;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType> _repeated_interactionEventTypes_codec
         = pb::FieldCodec.ForEnum(802, x => (int) x, x => (global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType) x);
-    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType> interactionTypes_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType>();
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType> interactionEventTypes_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType>();
     /// <summary>
     /// The types of payable and free interactions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType> InteractionTypes {
-      get { return interactionTypes_; }
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Enums.InteractionEventTypeEnum.Types.InteractionEventType> InteractionEventTypes {
+      get { return interactionEventTypes_; }
     }
 
     /// <summary>Field number for the "invalid_click_rate" field.</summary>
@@ -1866,7 +1867,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (Impressions != other.Impressions) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(InteractionRate, other.InteractionRate)) return false;
       if (Interactions != other.Interactions) return false;
-      if(!interactionTypes_.Equals(other.interactionTypes_)) return false;
+      if(!interactionEventTypes_.Equals(other.interactionEventTypes_)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(InvalidClickRate, other.InvalidClickRate)) return false;
       if (InvalidClicks != other.InvalidClicks) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(PercentNewVisitors, other.PercentNewVisitors)) return false;
@@ -1963,7 +1964,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (impressions_ != null) hash ^= Impressions.GetHashCode();
       if (interactionRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(InteractionRate);
       if (interactions_ != null) hash ^= Interactions.GetHashCode();
-      hash ^= interactionTypes_.GetHashCode();
+      hash ^= interactionEventTypes_.GetHashCode();
       if (invalidClickRate_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(InvalidClickRate);
       if (invalidClicks_ != null) hash ^= InvalidClicks.GetHashCode();
       if (percentNewVisitors_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(PercentNewVisitors);
@@ -2261,7 +2262,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (averagePageViews_ != null) {
         _single_averagePageViews_codec.WriteTagAndValue(output, AveragePageViews);
       }
-      interactionTypes_.WriteTo(output, _repeated_interactionTypes_codec);
+      interactionEventTypes_.WriteTo(output, _repeated_interactionEventTypes_codec);
       if (currentModelAttributedConversions_ != null) {
         _single_currentModelAttributedConversions_codec.WriteTagAndValue(output, CurrentModelAttributedConversions);
       }
@@ -2471,7 +2472,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
       if (interactions_ != null) {
         size += _single_interactions_codec.CalculateSizeWithTag(Interactions);
       }
-      size += interactionTypes_.CalculateSize(_repeated_interactionTypes_codec);
+      size += interactionEventTypes_.CalculateSize(_repeated_interactionEventTypes_codec);
       if (invalidClickRate_ != null) {
         size += _single_invalidClickRate_codec.CalculateSizeWithTag(InvalidClickRate);
       }
@@ -2869,7 +2870,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
           Interactions = other.Interactions;
         }
       }
-      interactionTypes_.Add(other.interactionTypes_);
+      interactionEventTypes_.Add(other.interactionEventTypes_);
       if (other.invalidClickRate_ != null) {
         if (invalidClickRate_ == null || other.InvalidClickRate != 0D) {
           InvalidClickRate = other.InvalidClickRate;
@@ -3607,7 +3608,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
           }
           case 802:
           case 800: {
-            interactionTypes_.AddEntriesFrom(input, _repeated_interactionTypes_codec);
+            interactionEventTypes_.AddEntriesFrom(input, _repeated_interactionEventTypes_codec);
             break;
           }
           case 810: {

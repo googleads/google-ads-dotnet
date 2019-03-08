@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvY2FtcGFpZ25fc2hh",
             "cmVkX3NldF9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAu",
-            "ZXJyb3JzInIKGkNhbXBhaWduU2hhcmVkU2V0RXJyb3JFbnVtIlQKFkNhbXBh",
-            "aWduU2hhcmVkU2V0RXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dO",
-            "EAESHAoYU0hBUkVEX1NFVF9BQ0NFU1NfREVOSUVEEAJC9gEKImNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNCG0NhbXBhaWduU2hhcmVkU2V0",
-            "RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
-            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYwXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
-            "OlYwOjpFcnJvcnNiBnByb3RvMw=="));
+            "ZXJyb3JzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvInIKGkNhbXBh",
+            "aWduU2hhcmVkU2V0RXJyb3JFbnVtIlQKFkNhbXBhaWduU2hhcmVkU2V0RXJy",
+            "b3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESHAoYU0hBUkVEX1NF",
+            "VF9BQ0NFU1NfREVOSUVEEAJC9gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5lcnJvcnNCG0NhbXBhaWduU2hhcmVkU2V0RXJyb3JQcm90b1ABWkRn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYwLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVy",
+            "cm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFcnJvcnNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.CampaignSharedSetErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.CampaignSharedSetErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.CampaignSharedSetErrorEnum.Types.CampaignSharedSetError) }, null)
           }));

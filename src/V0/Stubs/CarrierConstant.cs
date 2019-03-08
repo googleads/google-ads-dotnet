@@ -26,19 +26,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvY2Fycmllcl9j",
             "b25zdGFudC5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3Vy",
-            "Y2VzGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8isQEKD0NhcnJp",
-            "ZXJDb25zdGFudBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEicKAmlkGAIgASgL",
-            "MhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSKgoEbmFtZRgDIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIyCgxjb3VudHJ5X2NvZGUY",
-            "BCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCgQIKJWNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNvdXJjZXNCFENhcnJpZXJDb25z",
-            "dGFudFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
-            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogID",
-            "R0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjBcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6",
-            "Okdvb2dsZUFkczo6VjA6OlJlc291cmNlc2IGcHJvdG8z"));
+            "Y2VzGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aHGdvb2dsZS9h",
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8isQEKD0NhcnJpZXJDb25zdGFudBIVCg1y",
+            "ZXNvdXJjZV9uYW1lGAEgASgJEicKAmlkGAIgASgLMhsuZ29vZ2xlLnByb3Rv",
+            "YnVmLkludDY0VmFsdWUSKgoEbmFtZRgDIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZRIyCgxjb3VudHJ5X2NvZGUYBCABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWVCgQIKJWNvbS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5yZXNvdXJjZXNCFENhcnJpZXJDb25zdGFudFByb3RvUAFaSmdv",
+            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
+            "ZWFkcy92MC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFk",
+            "cy5Hb29nbGVBZHMuVjAuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVB",
+            "ZHNcVjBcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6",
+            "OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.CarrierConstant), global::Google.Ads.GoogleAds.V0.Resources.CarrierConstant.Parser, new[]{ "ResourceName", "Id", "Name", "CountryCode" }, null, null, null)
           }));

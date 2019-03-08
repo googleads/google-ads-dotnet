@@ -165,7 +165,20 @@ Headers: {
 Fault: {
   "StatusCode": 0,
   "Details": "",
-  "RequestId": "TEST_REQUEST_ID"
+  "RequestId": "TEST_REQUEST_ID",
+  "Failure": {
+    "errors": [
+      {
+        "errorCode": {
+          "distinctError": "DUPLICATE_ELEMENT"
+        },
+        "message": "TEST_ERROR_MESSAGE",
+        "trigger": {
+          "stringValue": "TEST_ERROR_TRIGGER"
+        }
+      }
+    ]
+  }
 }
 ----------------END API CALL----------------</value>
   </data>

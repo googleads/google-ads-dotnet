@@ -26,18 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "CkJnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9rZXl3b3JkX3BsYW5f",
             "Zm9yZWNhc3RfaW50ZXJ2YWwucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLmVudW1zIo8BCh9LZXl3b3JkUGxhbkZvcmVjYXN0SW50ZXJ2YWxFbnVt",
-            "ImwKG0tleXdvcmRQbGFuRm9yZWNhc3RJbnRlcnZhbBIPCgtVTlNQRUNJRklF",
-            "RBAAEgsKB1VOS05PV04QARINCglORVhUX1dFRUsQAxIOCgpORVhUX01PTlRI",
-            "EAQSEAoMTkVYVF9RVUFSVEVSEAVC9QEKIWNvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5lbnVtc0IgS2V5d29yZFBsYW5Gb3JlY2FzdEludGVydmFsUHJv",
-            "dG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "MFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IG",
-            "cHJvdG8z"));
+            "LnYwLmVudW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIo8BCh9L",
+            "ZXl3b3JkUGxhbkZvcmVjYXN0SW50ZXJ2YWxFbnVtImwKG0tleXdvcmRQbGFu",
+            "Rm9yZWNhc3RJbnRlcnZhbBIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04Q",
+            "ARINCglORVhUX1dFRUsQAxIOCgpORVhUX01PTlRIEAQSEAoMTkVYVF9RVUFS",
+            "VEVSEAVC9QEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0Ig",
+            "S2V5d29yZFBsYW5Gb3JlY2FzdEludGVydmFsUHJvdG9QAVpCZ29vZ2xlLmdv",
+            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yw",
+            "L2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAu",
+            "RW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2ds",
+            "ZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanForecastIntervalEnum), global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanForecastIntervalEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.KeywordPlanForecastIntervalEnum.Types.KeywordPlanForecastInterval) }, null)
           }));

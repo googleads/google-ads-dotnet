@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V0.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnMvc3RyaW5nX2xlbmd0",
             "aF9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3Jz",
-            "ImcKFVN0cmluZ0xlbmd0aEVycm9yRW51bSJOChFTdHJpbmdMZW5ndGhFcnJv",
-            "chIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARINCglUT09fU0hPUlQQ",
-            "AhIMCghUT09fTE9ORxADQvEBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djAuZXJyb3JzQhZTdHJpbmdMZW5ndGhFcnJvclByb3RvUAFaRGdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
-            "VjAuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3Jz6gIi",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVycm9yc2IGcHJvdG8z"));
+            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvImcKFVN0cmluZ0xlbmd0",
+            "aEVycm9yRW51bSJOChFTdHJpbmdMZW5ndGhFcnJvchIPCgtVTlNQRUNJRklF",
+            "RBAAEgsKB1VOS05PV04QARINCglUT09fU0hPUlQQAhIMCghUT09fTE9ORxAD",
+            "QvEBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZXJyb3JzQhZTdHJp",
+            "bmdMZW5ndGhFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
+            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MC9lcnJvcnM7ZXJyb3Jz",
+            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRXJyb3JzygIeR29v",
+            "Z2xlXEFkc1xHb29nbGVBZHNcVjBcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdv",
+            "b2dsZUFkczo6VjA6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Errors.StringLengthErrorEnum), global::Google.Ads.GoogleAds.V0.Errors.StringLengthErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Errors.StringLengthErrorEnum.Types.StringLengthError) }, null)
           }));

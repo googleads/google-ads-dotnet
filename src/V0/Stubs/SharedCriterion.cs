@@ -28,29 +28,30 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "aXRlcmlvbi5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3Vy",
             "Y2VzGi1nb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vY3JpdGVyaWEu",
             "cHJvdG8aMmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zL2NyaXRlcmlv",
-            "bl90eXBlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8i",
-            "3AQKD1NoYXJlZENyaXRlcmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEjAK",
-            "CnNoYXJlZF9zZXQYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
-            "dWUSMQoMY3JpdGVyaW9uX2lkGBogASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDY0VmFsdWUSTAoEdHlwZRgEIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLmVudW1zLkNyaXRlcmlvblR5cGVFbnVtLkNyaXRlcmlvblR5cGUSPgoH",
-            "a2V5d29yZBgDIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1v",
-            "bi5LZXl3b3JkSW5mb0gAEkkKDXlvdXR1YmVfdmlkZW8YBSABKAsyMC5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uWW91VHViZVZpZGVvSW5mb0gA",
-            "Ek0KD3lvdXR1YmVfY2hhbm5lbBgGIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYwLmNvbW1vbi5Zb3VUdWJlQ2hhbm5lbEluZm9IABJCCglwbGFjZW1l",
-            "bnQYByABKAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uUGxh",
-            "Y2VtZW50SW5mb0gAElQKE21vYmlsZV9hcHBfY2F0ZWdvcnkYCCABKAsyNS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uTW9iaWxlQXBwQ2F0ZWdv",
-            "cnlJbmZvSABCCwoJY3JpdGVyaW9uQoECCiVjb20uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAucmVzb3VyY2VzQhRTaGFyZWRDcml0ZXJpb25Qcm90b1ABWkpn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5B",
-            "ZHMuR29vZ2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xl",
-            "QWRzXFYwXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYw",
-            "OjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "bl90eXBlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8a",
+            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i3AQKD1NoYXJlZENyaXRl",
+            "cmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEjAKCnNoYXJlZF9zZXQYAiAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMQoMY3JpdGVyaW9u",
+            "X2lkGBogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSTAoEdHlw",
+            "ZRgEIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zLkNyaXRl",
+            "cmlvblR5cGVFbnVtLkNyaXRlcmlvblR5cGUSPgoHa2V5d29yZBgDIAEoCzIr",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5LZXl3b3JkSW5mb0gA",
+            "EkkKDXlvdXR1YmVfdmlkZW8YBSABKAsyMC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MC5jb21tb24uWW91VHViZVZpZGVvSW5mb0gAEk0KD3lvdXR1YmVfY2hh",
+            "bm5lbBgGIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbi5Z",
+            "b3VUdWJlQ2hhbm5lbEluZm9IABJCCglwbGFjZW1lbnQYByABKAsyLS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uUGxhY2VtZW50SW5mb0gAElQK",
+            "E21vYmlsZV9hcHBfY2F0ZWdvcnkYCCABKAsyNS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MC5jb21tb24uTW9iaWxlQXBwQ2F0ZWdvcnlJbmZvSABCCwoJY3Jp",
+            "dGVyaW9uQoECCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAucmVzb3Vy",
+            "Y2VzQhRTaGFyZWRDcml0ZXJpb25Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3Vy",
+            "Y2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYw",
+            "LlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNl",
+            "c+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNvdXJjZXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.CriterionTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion), global::Google.Ads.GoogleAds.V0.Resources.SharedCriterion.Parser, new[]{ "ResourceName", "SharedSet", "CriterionId", "Type", "Keyword", "YoutubeVideo", "YoutubeChannel", "Placement", "MobileAppCategory" }, new[]{ "Criterion" }, null, null)
           }));
@@ -124,7 +125,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// The resource name of the shared criterion.
     /// Shared set resource names have the form:
     ///
-    /// `customers/{customer_id}/sharedCriteria/{shared_set_id}_{criterion_id}`
+    /// `customers/{customer_id}/sharedCriteria/{shared_set_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

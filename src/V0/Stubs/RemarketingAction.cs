@@ -27,20 +27,20 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9yZXNvdXJjZXMvcmVtYXJrZXRp",
             "bmdfYWN0aW9uLnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52MC5yZXNv",
             "dXJjZXMaMGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbi90YWdfc25p",
-            "cHBldC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIsEB",
-            "ChFSZW1hcmtldGluZ0FjdGlvbhIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEicK",
-            "AmlkGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSKgoEbmFt",
-            "ZRgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJACgx0YWdf",
-            "c25pcHBldHMYBCADKAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21t",
-            "b24uVGFnU25pcHBldEKDAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYw",
-            "LnJlc291cmNlc0IWUmVtYXJrZXRpbmdBY3Rpb25Qcm90b1ABWkpnb29nbGUu",
-            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
-            "djAvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYwLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYw",
-            "XFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNv",
-            "dXJjZXNiBnByb3RvMw=="));
+            "cHBldC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxn",
+            "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIsEBChFSZW1hcmtldGluZ0Fj",
+            "dGlvbhIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEicKAmlkGAIgASgLMhsuZ29v",
+            "Z2xlLnByb3RvYnVmLkludDY0VmFsdWUSKgoEbmFtZRgDIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJACgx0YWdfc25pcHBldHMYBCADKAsy",
+            "Ki5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uVGFnU25pcHBldEKD",
+            "AgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnJlc291cmNlc0IWUmVt",
+            "YXJrZXRpbmdBY3Rpb25Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvcmVzb3VyY2VzO3Jl",
+            "c291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYwLlJlc291",
+            "cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXFJlc291cmNlc+oCJUdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.TagSnippetReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.TagSnippetReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.RemarketingAction), global::Google.Ads.GoogleAds.V0.Resources.RemarketingAction.Parser, new[]{ "ResourceName", "Id", "Name", "TagSnippets" }, null, null, null)
           }));

@@ -25,16 +25,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cipnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9kZXZpY2UucHJvdG8S",
-            "HWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zIlkKCkRldmljZUVudW0i",
-            "SwoGRGV2aWNlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgoKBk1P",
-            "QklMRRACEgoKBlRBQkxFVBADEgsKB0RFU0tUT1AQBELgAQohY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zQgtEZXZpY2VQcm90b1ABWkJnb29n",
-            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
-            "ZHMvdjAvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFk",
-            "cy5WMC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIh",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
+            "HWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmVudW1zGhxnb29nbGUvYXBpL2Fu",
+            "bm90YXRpb25zLnByb3RvIlkKCkRldmljZUVudW0iSwoGRGV2aWNlEg8KC1VO",
+            "U1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgoKBk1PQklMRRACEgoKBlRBQkxF",
+            "VBADEgsKB0RFU0tUT1AQBELgAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYwLmVudW1zQgtEZXZpY2VQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51bXM7ZW51",
+            "bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVtc8oCHUdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYwXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdv",
+            "b2dsZUFkczo6VjA6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Enums.DeviceEnum), global::Google.Ads.GoogleAds.V0.Enums.DeviceEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V0.Enums.DeviceEnum.Types.Device) }, null)
           }));

@@ -484,15 +484,15 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateAdGroupFeedsResponse> MutateAdGroupFeedsAsync(
             string customerId,
             scg::IEnumerable<AdGroupFeedOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateAdGroupFeedsAsync(
                 new MutateAdGroupFeedsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -525,8 +525,8 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateAdGroupFeedsResponse> MutateAdGroupFeedsAsync(
             string customerId,
             scg::IEnumerable<AdGroupFeedOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => MutateAdGroupFeedsAsync(
                 customerId,
                 operations,
@@ -563,15 +563,93 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateAdGroupFeedsResponse MutateAdGroupFeeds(
             string customerId,
             scg::IEnumerable<AdGroupFeedOperation> operations,
-            bool partialFailure,
-            bool validateOnly,
+            bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateAdGroupFeeds(
                 new MutateAdGroupFeedsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
-                    PartialFailure = partialFailure,
-                    ValidateOnly = validateOnly,
+                    PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes ad group feeds. Operation statuses are
+        /// returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose ad group feeds are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual ad group feeds.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateAdGroupFeedsResponse> MutateAdGroupFeedsAsync(
+            string customerId,
+            scg::IEnumerable<AdGroupFeedOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateAdGroupFeedsAsync(
+                new MutateAdGroupFeedsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Creates, updates, or removes ad group feeds. Operation statuses are
+        /// returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose ad group feeds are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual ad group feeds.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateAdGroupFeedsResponse> MutateAdGroupFeedsAsync(
+            string customerId,
+            scg::IEnumerable<AdGroupFeedOperation> operations,
+            st::CancellationToken cancellationToken) => MutateAdGroupFeedsAsync(
+                customerId,
+                operations,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates, updates, or removes ad group feeds. Operation statuses are
+        /// returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer whose ad group feeds are being modified.
+        /// </param>
+        /// <param name="operations">
+        /// The list of operations to perform on individual ad group feeds.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateAdGroupFeedsResponse MutateAdGroupFeeds(
+            string customerId,
+            scg::IEnumerable<AdGroupFeedOperation> operations,
+            gaxgrpc::CallSettings callSettings = null) => MutateAdGroupFeeds(
+                new MutateAdGroupFeedsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
 

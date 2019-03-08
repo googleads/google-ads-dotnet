@@ -26,19 +26,20 @@ namespace Google.Ads.GoogleAds.V0.Common {
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9jb21tb24vZmVlZF9jb21tb24u",
             "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNvbW1vbhoeZ29vZ2xl",
-            "L3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvInAKBVByaWNlEjMKDWN1cnJlbmN5",
-            "X2NvZGUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMgoN",
-            "YW1vdW50X21pY3JvcxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
-            "bHVlQuoBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uQg9G",
-            "ZWVkQ29tbW9uUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
-            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNH",
-            "QUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVc",
-            "QWRzXEdvb2dsZUFkc1xWMFxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xl",
-            "QWRzOjpWMDo6Q29tbW9uYgZwcm90bzM="));
+            "L3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRp",
+            "b25zLnByb3RvInAKBU1vbmV5EjMKDWN1cnJlbmN5X2NvZGUYASABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMgoNYW1vdW50X21pY3JvcxgC",
+            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQuoBCiJjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uQg9GZWVkQ29tbW9uUHJvdG9Q",
+            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YwL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MFxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMDo6Q29tbW9u",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.Price), global::Google.Ads.GoogleAds.V0.Common.Price.Parser, new[]{ "CurrencyCode", "AmountMicros" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Common.Money), global::Google.Ads.GoogleAds.V0.Common.Money.Parser, new[]{ "CurrencyCode", "AmountMicros" }, null, null, null)
           }));
     }
     #endregion
@@ -48,11 +49,11 @@ namespace Google.Ads.GoogleAds.V0.Common {
   /// <summary>
   /// Represents a price in a particular currency.
   /// </summary>
-  public sealed partial class Price : pb::IMessage<Price> {
-    private static readonly pb::MessageParser<Price> _parser = new pb::MessageParser<Price>(() => new Price());
+  public sealed partial class Money : pb::IMessage<Money> {
+    private static readonly pb::MessageParser<Money> _parser = new pb::MessageParser<Money>(() => new Money());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Price> Parser { get { return _parser; } }
+    public static pb::MessageParser<Money> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -65,22 +66,22 @@ namespace Google.Ads.GoogleAds.V0.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Price() {
+    public Money() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Price(Price other) : this() {
+    public Money(Money other) : this() {
       CurrencyCode = other.CurrencyCode;
       AmountMicros = other.AmountMicros;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Price Clone() {
-      return new Price(this);
+    public Money Clone() {
+      return new Money(this);
     }
 
     /// <summary>Field number for the "currency_code" field.</summary>
@@ -115,11 +116,11 @@ namespace Google.Ads.GoogleAds.V0.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as Price);
+      return Equals(other as Money);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Price other) {
+    public bool Equals(Money other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -176,7 +177,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Price other) {
+    public void MergeFrom(Money other) {
       if (other == null) {
         return;
       }

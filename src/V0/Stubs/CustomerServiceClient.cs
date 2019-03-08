@@ -538,13 +538,13 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
             string customerId,
             CustomerOperation operation,
-            bool validateOnly,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateCustomerAsync(
                 new MutateCustomerRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
-                    ValidateOnly = validateOnly,
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -570,7 +570,7 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
             string customerId,
             CustomerOperation operation,
-            bool validateOnly,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => MutateCustomerAsync(
                 customerId,
                 operation,
@@ -599,13 +599,88 @@ namespace Google.Ads.GoogleAds.V0.Services
         public virtual MutateCustomerResponse MutateCustomer(
             string customerId,
             CustomerOperation operation,
-            bool validateOnly,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => MutateCustomer(
                 new MutateCustomerRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
-                    ValidateOnly = validateOnly,
+                    ValidateOnly = validateOnly ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer being modified.
+        /// </param>
+        /// <param name="operation">
+        /// The operation to perform on the customer
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
+            string customerId,
+            CustomerOperation operation,
+            gaxgrpc::CallSettings callSettings = null) => MutateCustomerAsync(
+                new MutateCustomerRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
+                },
+                callSettings);
+
+        /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer being modified.
+        /// </param>
+        /// <param name="operation">
+        /// The operation to perform on the customer
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<MutateCustomerResponse> MutateCustomerAsync(
+            string customerId,
+            CustomerOperation operation,
+            st::CancellationToken cancellationToken) => MutateCustomerAsync(
+                customerId,
+                operation,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Updates a customer. Operation statuses are returned.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer being modified.
+        /// </param>
+        /// <param name="operation">
+        /// The operation to perform on the customer
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual MutateCustomerResponse MutateCustomer(
+            string customerId,
+            CustomerOperation operation,
+            gaxgrpc::CallSettings callSettings = null) => MutateCustomer(
+                new MutateCustomerRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Operation = gax::GaxPreconditions.CheckNotNull(operation, nameof(operation)),
                 },
                 callSettings);
 
