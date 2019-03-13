@@ -38,10 +38,17 @@ namespace Google.Ads.GoogleAds.Examples
             // and Google Ads API.
             string developerToken = "INSERT_YOUR_DEVELOPER_TOKEN_HERE";
             long clientCustomerId = long.Parse("INSERT_YOUR_CLIENT_CUSTOMER_ID_HERE");
-            long loginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
             string oAuth2clientId = "INSERT_OAUTH2_CLIENT_ID_HERE";
             string oAuth2Secret = "INSERT_OAUTH2_CLIENT_SECRET_HERE";
             string oAuth2RefreshToken = "INSERT_OAUTH2_REFRESH_TOKEN_HERE";
+
+            // Login Customer ID is a new configuration setting required in Google Ads API. This
+            // is the customer ID of the authorized customer to use in the request, without
+            // hyphens(-).If your access to the customer account is through a manager account,
+            //this header is required and must be set to the customer ID of the manager account.
+            // See https://developers.google.com/google-ads/api/docs/concepts/call-structure#login-customer-id
+            // to learn more about this setting.
+            long loginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
 
             // Initialize logging. Since this code example uses the same log file for both APIs,
             // you need to initialize the log stream once and reuse it for both libraries.

@@ -22,14 +22,14 @@ using aw = global::Google.Api.Ads.AdWords.v201809;
 namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
 {
     /// <summary>
-    /// This code example is the first one in a series of code examples that shows how to create
-    /// a Search campaign using AdWords API, and then migrate it to Google Ads API one
+    /// This code example is the first in a series of code examples that shows how to create
+    /// a Search campaign using the AdWords API, and then migrate it to Google Ads API one
     /// functionality at a time. See Step0.cs through Step5.cs for code examples in various
     /// stages of migration. 
     /// 
-    /// This code example represents the initial state, where AdWords API is used to create a
+    /// This code example represents the initial state, where the AdWords API is used to create a
     /// campaign budget, a Search campaign, ad groups, keywords and expanded text ads. None of the
-    /// functionality has been migrated to Google Ads API.
+    /// functionality has yet been migrated to the Google Ads API.
     /// </summary>
     public class Step0 : ExampleBase
     {
@@ -54,13 +54,14 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         {
             get
             {
-                return "This code example is the first one in a series of code examples that " +
-                    "shows how to create a Search campaign using AdWords API, and then migrate " +
-                    "it to Google Ads API one functionality at a time. See Step0.cs through " +
-                    "Step5.cs for code examples in various stages of migration. This code " +
-                    "example represents the initial state, where AdWords API is used to create a" +
-                    " campaign budget, a Search campaign, ad groups, keywords and expanded " +
-                    "text ads. None of the functionality has been migrated to Google Ads API.";
+                return "This code example is the first in a series of code examples that " +
+                    "shows how to create a Search campaign using the AdWords API, and then " +
+                    "migrate it to Google Ads API one functionality at a time. See Step0.cs " +
+                    "through Step5.cs for code examples in various stages of migration. This " +
+                    "code example represents the initial state, where the AdWords API is used " +
+                    "to create a campaign budget, a Search campaign, ad groups, keywords and " +
+                    "expanded text ads. None of the functionality has yet been migrated to " +
+                    "the Google Ads API.";
             }
         }
 

@@ -36,14 +36,14 @@ using gagvs = Google.Ads.GoogleAds.V1.Services;
 namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
 {
     /// <summary>
-    /// This code example is the fourth one in a series of code examples that shows how to create
-    /// a Search campaign using AdWords API, and then migrate it to Google Ads API one
+    /// This code example is the fourth in a series of code examples that shows how to create
+    /// a Search campaign using the AdWords API, and then migrate it to the Google Ads API one
     /// functionality at a time. See Step0.cs through Step5.cs for code examples in various
     /// stages of migration.
     ///
     /// In this code example, the functionality to create campaign budget, search campaigns and
-    /// ad groups have been migrated to Google Ads API. The rest of the functionality - creating
-    /// keywords and expanded text ads are done using AdWords API.
+    /// ad groups have been migrated to the Google Ads API. The rest of the functionality - 
+    /// creating keywords and expanded text ads are done using the AdWords API.
     /// </summary>
     public class Step3 : ExampleBase
     {
@@ -68,14 +68,14 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         {
             get
             {
-                return "This code example is the fourth one in a series of code examples that " +
-                    "shows how to create a Search campaign using AdWords API, and then migrate " +
-                    "it to Google Ads API one functionality at a time. See Step0.cs through " +
-                    "Step5.cs for code examples in various stages of migration. In this code " +
-                    "example, the functionality to create campaign budget, search campaigns and" +
-                    "ad groups have been migrated to Google Ads API. The rest of the " +
-                    "functionality - creating keywords and expanded text ads are done using " +
-                    "AdWords API.";
+                return "This code example is the fourth in a series of code examples that " +
+                    "shows how to create a Search campaign using the AdWords API, and then " +
+                    "migrate it to the Google Ads API one functionality at a time. See Step0.cs " +
+                    "through Step5.cs for code examples in various stages of migration. In this " +
+                    "code example, the functionality to create campaign budget, search " +
+                    "campaigns and ad groups have been migrated to the Google Ads API. The rest " +
+                    "of the functionality - creating keywords and expanded text ads are done " +
+                    "using the AdWords API.";
             }
         }
 
@@ -86,6 +86,8 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         /// <param name="client">The Google Ads client.</param>
         public void Run(AdWordsUser user, GoogleAdsClient client)
         {
+            // Note: The IDs returned for various entities by both APIs are the same, and can
+            // be used interchangeably.
             long customerId = long.Parse((user.Config as AdWordsAppConfig).ClientCustomerId);
 
             gagvr::CampaignBudget budget = CreateBudget(client, customerId);
