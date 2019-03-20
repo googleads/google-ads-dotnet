@@ -17,5 +17,5 @@ The code example does the following operations:
 The code example starts with CreateCompleteCampaignAdWordsApiOnly.cs that shows the whole
 functionality developed in AdWords API. CreateCompleteCampaignBothApisPhase1.cs through
 CreateCompleteCampaignBothApisPhase4.cs shows how to migrate functionality
- incrementally from the AdWords API to the Google Ads API. CreateCompleteCampaignGoogleAdsApiOnly.cs
- shows the code example fully transformed into using the Google Ads API.
+incrementally from the AdWords API to the Google Ads API. CreateCompleteCampaignGoogleAdsApiOnly.cs
+shows the code example fully transformed into using the Google Ads API.
