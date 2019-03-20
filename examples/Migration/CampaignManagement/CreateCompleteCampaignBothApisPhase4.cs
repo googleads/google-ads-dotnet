@@ -13,19 +13,20 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
+using Google.Api.Ads.AdWords.Lib;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 
+using aw = global::Google.Api.Ads.AdWords.v201809;
 using gag__AdGroupAdRotationMode = Google.Ads.GoogleAds.V1.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode;
 using gag__AdGroupAdStatus = Google.Ads.GoogleAds.V1.Enums.AdGroupAdStatusEnum.Types.AdGroupAdStatus;
-using gag__AdGroupCriterionStatus = Google.Ads.GoogleAds.V1.Enums.AdGroupCriterionStatusEnum.Types.AdGroupCriterionStatus;
 using gag__AdGroupStatus = Google.Ads.GoogleAds.V1.Enums.AdGroupStatusEnum.Types.AdGroupStatus;
 using gag__AdvertisingChannelType = Google.Ads.GoogleAds.V1.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType;
 using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V1.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
 using gag__CampaignStatus = Google.Ads.GoogleAds.V1.Enums.CampaignStatusEnum.Types.CampaignStatus;
-using gag__KeywordMatchType = Google.Ads.GoogleAds.V1.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType;
 using gag__NetworkSettings = Google.Ads.GoogleAds.V1.Resources.Campaign.Types.NetworkSettings;
 
 using gagvc = Google.Ads.GoogleAds.V1.Common;
@@ -36,16 +37,16 @@ using gagvs = Google.Ads.GoogleAds.V1.Services;
 namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
 {
     /// <summary>
-    /// This code example is the last in a series of code examples that shows how to create
-    /// a Search campign using the AdWords API, and then migrate it to the Google Ads API one
-    /// functionality at a time. See Step0.cs through Step5.cs for code examples in various stages
-    /// of migration.
+    /// This code example is the fifth in a series of code examples that shows how to create
+    /// a Search campaign using the AdWords API, and then migrate it to the Google Ads API one
+    /// functionality at a time. See other examples in this directory for code examples in various
+    /// stages of migration.
     ///
-    /// This code example represents the final state, where all the functionality - create a
-    /// campaign budget, a Search campaign, ad groups, keywords and expanded text ads have been 
-    /// migrated to using the Google Ads API. The AdWords API is not used.
+    /// In this code example, the functionality to create campaign budget, search campaigns and
+    /// ad groups and expanded text ads have been migrated to the Google Ads API. The only
+    /// remaining functionality that uses the AdWords API is creating keywords.
     /// </summary>
-    public class Step5 : ExampleBase
+    public class CreateCompleteCampaignBothApisPhase4 : ExampleBase
     {
         /// <summary>
         /// Number of ads being added / updated in this code example.
@@ -68,29 +69,34 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         {
             get
             {
-                return "This code example is the last one in a series of code examples that " +
-                    "shows how to create a Search campign using the AdWords API, and then " +
-                    "migrate it to Google Ads API one functionality at a time. See Step0.cs " +
-                    "through Step5.cs for code examples in various stages of migration. This " +
-                    "code example represents the final state, where all the functionality - " +
-                    "create a campaign budget, a Search campaign, ad groups, keywords and " +
-                    "expanded text ads have been migrated to using the Google Ads API. The " +
-                    "AdWords API is not used.";
+                return "This code example is the fifth in a series of code examples that " +
+                    "shows how to create a Search campaign using the AdWords API, and then " +
+                    "migrate it to the Google Ads API one functionality at a time. See other " +
+                    "examples in this directory for code examples in various stages of " +
+                    "migration. In this code example, the functionality to create " +
+                    "campaign budget, search campaigns and ad groups and expanded text ads " +
+                    "have been migrated to the Google Ads API. The only remaining functionality " +
+                    "that uses the AdWords API is creating keywords.";
             }
         }
 
         /// <summary>
         /// Runs the code example.
         /// </summary>
-        /// <param name="user">The AdWords user.</param>
-        public void Run(GoogleAdsClient client, long customerId)
+        /// <param name="user">The Google Ads user.</param>
+        /// <param name="client">The Google Ads client.</param>
+        public void Run(AdWordsUser user, GoogleAdsClient client)
         {
+            // Note: The IDs returned for various entities by both APIs are the same, and can
+            // be used interchangeably.
+            long customerId = long.Parse((user.Config as AdWordsAppConfig).ClientCustomerId);
+
             gagvr::CampaignBudget budget = CreateBudget(client, customerId);
             gagvr::Campaign campaign = CreateCampaign(client, customerId, budget.Id.Value);
             gagvr::AdGroup adGroup = CreateAdGroup(client, customerId, campaign.Id.Value);
             gagvr::AdGroupAd[] adGroupAds = CreateTextAds(client, customerId, adGroup.Id.Value);
-            gagvr::AdGroupCriterion[] adGroupCriteria = CreateKeywords(client, customerId,
-                adGroup.Id.Value, KEYWORDS_TO_ADD);
+            aw::AdGroupCriterion[] adGroupCriteria = CreateKeywords(user, adGroup.Id.Value,
+                KEYWORDS_TO_ADD);
         }
 
         /// <summary>
@@ -281,7 +287,7 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
                 CpcBidMicros = 10000000,
 
                 // Optional: Set the rotation mode.
-                AdRotationMode = gag__AdGroupAdRotationMode.Optimize,
+                AdRotationMode = gag__AdGroupAdRotationMode.Optimize
             };
 
             // Create the operation.
@@ -442,104 +448,79 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         /// <summary>
         /// Creates the keywords.
         /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="adGroupId">ID of the ad group in which ads are created.</param>
+        /// <param name="user">The Google Ads user.</param>
+        /// <param name="adGroupId">The ad group ID.</param>
         /// <param name="keywords">The keywords to create.</param>
-        /// <returns>The list of newly created ad group criteria.</returns>
-        private static gagvr::AdGroupCriterion[] CreateKeywords(GoogleAdsClient client,
-            long customerId, long adGroupId, string[] keywords)
+        /// <returns>The newly created ad group criteria.</returns>
+        public aw::AdGroupCriterion[] CreateKeywords(AdWordsUser user, long adGroupId,
+            string[] keywords)
         {
             // Get the AdGroupCriterionService.
-            gagvs::AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V1.AdGroupCriterionService);
-
-            List<gagvs::AdGroupCriterionOperation> operations =
-                new List<gagvs::AdGroupCriterionOperation>();
-
-            foreach (string keywordText in keywords)
+            using (aw::AdGroupCriterionService adGroupCriterionService =
+                (aw::AdGroupCriterionService) user.GetService(AdWordsService.v201809
+                    .AdGroupCriterionService))
             {
-                // Create a keyword.
-                gagvr::AdGroupCriterion criterion = new gagvr::AdGroupCriterion()
+                List<aw::AdGroupCriterionOperation> operations =
+                    new List<aw::AdGroupCriterionOperation>();
+
+                foreach (string keywordText in keywords)
                 {
-                    AdGroup = gagver::ResourceNames.AdGroup(customerId, adGroupId),
-                    Status = gag__AdGroupCriterionStatus.Enabled,
-                    Keyword = new gagvc::KeywordInfo()
+                    // Create the keyword.
+                    aw::Keyword keyword = new aw::Keyword
                     {
-                        Text = keywordText,
-                        MatchType = gag__KeywordMatchType.Exact
-                    }
-                };
+                        text = keywordText,
+                        matchType = aw::KeywordMatchType.BROAD
+                    };
 
-                // Create the operation.
-                gagvs::AdGroupCriterionOperation operation = new gagvs::AdGroupCriterionOperation()
+                    // Create the biddable ad group criterion.
+                    aw::BiddableAdGroupCriterion keywordCriterion =
+                        new aw::BiddableAdGroupCriterion
+                        {
+                            adGroupId = adGroupId,
+                            criterion = keyword,
+
+                            // Optional: Set the user status.
+                            userStatus = aw::UserStatus.PAUSED,
+
+                            // Optional: Set the keyword destination url.
+                            finalUrls = new aw::UrlList()
+                            {
+                                urls = new string[]
+                            {
+                                "http://example.com/mars/cruise/?kw=" +
+                                HttpUtility.UrlEncode(keywordText)
+                            }
+                            }
+                        };
+
+                    // Create the operations.
+                    aw::AdGroupCriterionOperation operation = new aw::AdGroupCriterionOperation
+                    {
+                        @operator = aw::Operator.ADD,
+                        operand = keywordCriterion
+                    };
+
+                    operations.Add(operation);
+                }
+
+                // Create the keywords.
+                aw::AdGroupCriterionReturnValue retVal =
+                    adGroupCriterionService.mutate(operations.ToArray());
+
+                // Display the results.
+                foreach (aw::AdGroupCriterion adGroupCriterion in retVal.value)
                 {
-                    Create = criterion,
-                };
-                operations.Add(operation);
+                    Console.WriteLine(
+                        "Keyword with ad group id = '{0}', keyword id = '{1}', text = " +
+                        "'{2}' and match type = '{3}' was created.",
+                        adGroupCriterion.adGroupId, adGroupCriterion.criterion.id,
+                        (adGroupCriterion.criterion as aw::Keyword).text,
+                        (adGroupCriterion.criterion as aw::Keyword).matchType);
+                }
+
+                // Return the newly created keywords.
+                return retVal.value;
             }
-
-            // Add the keywords.
-            gagvs::MutateAdGroupCriteriaResponse response =
-                adGroupCriterionService.MutateAdGroupCriteria(customerId.ToString(),
-                    operations);
-
-            // Retrieve the newly created keywords.
-            List<string> newResourceNames =
-                response.Results.Select(result => result.ResourceName).ToList();
-            gagvr::AdGroupCriterion[] newCriteria = GetKeywords(client, customerId,
-                newResourceNames);
-
-            // Display the results.
-            foreach (gagvr::AdGroupCriterion newCriterion in newCriteria)
-            {
-                Console.WriteLine("Keyword with text '{0}', id = '{1}' and match type = " +
-                    "'{2}' was retrieved for ad group '{3}'.",
-                    newCriterion.Keyword.Text,
-                    newCriterion.CriterionId,
-                    newCriterion.Keyword.MatchType,
-                    newCriterion.AdGroup);
-            }
-
-            // Return the newly created ad group criteria.
-            return newCriteria;
-        }
-
-        /// <summary>
-        /// Gets the keywords.
-        /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="adGroupResourceName">The ad group criteria resource.</param>
-        /// <returns>The ad group criteria.</returns>
-        private static gagvr::AdGroupCriterion[] GetKeywords(GoogleAdsClient client,
-            long customerId, List<string> adGroupCriteriaResourceNames)
-        {
-            // Get the GoogleAdsService.
-            gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V1.GoogleAdsService);
-
-            string searchQuery =
-                $@"SELECT
-                    ad_group.id,
-                    ad_group.status,
-                    ad_group_criterion.criterion_id,
-                    ad_group_criterion.keyword.text,
-                    ad_group_criterion.keyword.match_type
-                FROM ad_group_criterion
-                WHERE ad_group_criterion.type = 'KEYWORD'
-                    AND ad_group.status = 'ENABLED'
-                    AND ad_group_criterion.status IN ('ENABLED', 'PAUSED')
-                    AND ad_group_criterion.resource_name IN (" +
-                string.Join(",", adGroupCriteriaResourceNames.Select(
-                    resourceName => $"'{resourceName}'")) + ")";
-
-            // Retrieve the ad group criteria.
-            PagedEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow>
-                searchPagedResponse = googleAdsService.Search(customerId.ToString(), searchQuery);
-
-            // Return the results.
-            return searchPagedResponse.Select(row => row.AdGroupCriterion).ToArray();
         }
     }
 }

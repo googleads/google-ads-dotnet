@@ -21,29 +21,23 @@ using System.Linq;
 using System.Web;
 
 using aw = global::Google.Api.Ads.AdWords.v201809;
-using gag__AdvertisingChannelType = Google.Ads.GoogleAds.V1.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType;
 using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V1.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
-using gag__CampaignStatus = Google.Ads.GoogleAds.V1.Enums.CampaignStatusEnum.Types.CampaignStatus;
-using gag__NetworkSettings = Google.Ads.GoogleAds.V1.Resources.Campaign.Types.NetworkSettings;
-
-using gagvc = Google.Ads.GoogleAds.V1.Common;
-using gagver = Google.Ads.GoogleAds.V1.Errors;
 using gagvr = Google.Ads.GoogleAds.V1.Resources;
 using gagvs = Google.Ads.GoogleAds.V1.Services;
 
 namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
 {
     /// <summary>
-    /// This code example is the third in a series of code examples that shows how to create
+    /// This code example is the second in a series of code examples that shows how to create
     /// a Search campaign using the AdWords API, and then migrate it to the Google Ads API one
-    /// functionality at a time. See Step0.cs through Step5.cs for code examples in various
+    /// functionality at a time. See other examples in this directory for code examples in various
     /// stages of migration.
     ///
-    /// In this code example, the functionality to create campaign budget and search campaign have
-    /// been migrated to the Google Ads API. The rest of the functionality - creating ad groups,
+    /// In this code example, the functionality to create campaign budget has been migrated to
+    /// the Google Ads API. The rest of the functionality - creating a Search campaign, ad groups,
     /// keywords and expanded text ads are done using the AdWords API.
     /// </summary>
-    public class Step2 : ExampleBase
+    public class CreateCompleteCampaignBothApisPhase1 : ExampleBase
     {
         /// <summary>
         /// Number of ads being added / updated in this code example.
@@ -66,14 +60,14 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         {
             get
             {
-                return "This code example is the third in a series of code examples that " +
+                return "This code example is the second in a series of code examples that " +
                     "shows how to create a Search campaign using the AdWords API, and then " +
-                    "migrate it to the Google Ads API one functionality at a time. See Step0.cs " +
-                    "through Step5.cs for code examples in various stages of migration. In this " +
-                    "code example, the functionality to create campaign budget and search " +
-                    "campaign have been migrated to the Google Ads API. The rest of the " +
-                    "functionality - creating ad groups, keywords and expanded text ads are " +
-                    "done using the AdWords API.";
+                    "migrate it to the Google Ads API one functionality at a time. See other " +
+                    "examples in this directory for code examples in various stages of " +
+                    "migration. In this code example, the functionality to create campaign " +
+                    "budget has been migrated to the Google Ads API. The rest of the " +
+                    "functionality - creating a Search campaign, ad groups, keywords and " +
+                    "expanded text ads are done using the AdWords API.";
             }
         }
 
@@ -88,9 +82,10 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
             // be used interchangeably.
             long customerId = long.Parse((user.Config as AdWordsAppConfig).ClientCustomerId);
 
-            gagvr::CampaignBudget budget = CreateBudget(client, customerId);
-            gagvr::Campaign campaign = CreateCampaign(client, customerId, budget.Id.Value);
-            aw::AdGroup adGroup = CreateAdGroup(user, campaign.Id.Value);
+            gagvr::CampaignBudget budget = CreateBudget(client,
+                long.Parse((user.Config as AdWordsAppConfig).ClientCustomerId));
+            aw::Campaign campaign = CreateCampaign(user, budget.Id.Value);
+            aw::AdGroup adGroup = CreateAdGroup(user, campaign.id);
             aw::AdGroupAd[] adGroupAds = CreateTextAds(user, adGroup.id);
             aw::AdGroupCriterion[] adGroupCriteria = CreateKeywords(user, adGroup.id,
                 KEYWORDS_TO_ADD);
@@ -169,94 +164,75 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         /// <summary>
         /// Creates the campaign.
         /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
+        /// <param name="user">The Google Ads user.</param>
         /// <param name="budgetId">The budget ID.</param>
         /// <returns>The newly created campaign instance.</returns>
-        private static gagvr::Campaign CreateCampaign(GoogleAdsClient client, long customerId,
-            long budgetId)
+        public aw::Campaign CreateCampaign(AdWordsUser user, long budgetId)
         {
             // Get the CampaignService.
-            gagvs::CampaignServiceClient campaignService = client.GetService(
-                Services.V1.CampaignService);
-
-            // Create a budget to be used for the campaign.
-            string budgetResource = gagver::ResourceNames.CampaignBudget(customerId, budgetId);
-
-            // Create the campaign.
-            gagvr::Campaign campaign = new gagvr::Campaign();
-            campaign.Name = "Interplanetary Cruise #" + ExampleUtilities.GetRandomString();
-            campaign.AdvertisingChannelType = gag__AdvertisingChannelType.Search;
-
-            // Recommendation: Set the campaign to PAUSED when creating it to prevent
-            // the ads from immediately serving. Set to ENABLED once you've added
-            // targeting and the ads are ready to serve
-            campaign.Status = gag__CampaignStatus.Paused;
-
-            // Set the bidding strategy and budget.
-            campaign.ManualCpc = new gagvc::ManualCpc();
-            campaign.CampaignBudget = budgetResource;
-
-            // Set the campaign network options.
-            campaign.NetworkSettings = new gag__NetworkSettings
+            using (aw::CampaignService campaignService =
+                (aw::CampaignService) user.GetService(AdWordsService.v201809.CampaignService))
             {
-                TargetGoogleSearch = true,
-                TargetSearchNetwork = true,
-                TargetContentNetwork = false,
-                TargetPartnerSearchNetwork = false
-            };
+                // Create the campaign.
+                aw::Campaign campaign = new aw::Campaign
+                {
+                    name = "Interplanetary Cruise #" + ExampleUtilities.GetRandomString(),
+                    advertisingChannelType = aw::AdvertisingChannelType.SEARCH,
 
-            // Optional: Set the start date.
-            campaign.StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd");
+                    // Recommendation: Set the campaign to PAUSED when creating it to prevent
+                    // the ads from immediately serving. Set to ENABLED once you've added
+                    // targeting and the ads are ready to serve.
+                    status = aw::CampaignStatus.PAUSED
+                };
 
-            // Optional: Set the end date.
-            campaign.EndDate = DateTime.Now.AddYears(1).ToString("yyyyMMdd");
+                aw::BiddingStrategyConfiguration biddingConfig =
+                    new aw::BiddingStrategyConfiguration
+                    {
+                        biddingStrategyType = aw::BiddingStrategyType.MANUAL_CPC
+                    };
+                campaign.biddingStrategyConfiguration = biddingConfig;
 
-            // Create the operation.
-            gagvs::CampaignOperation operation = new gagvs::CampaignOperation();
-            operation.Create = campaign;
+                campaign.budget = new aw::Budget
+                {
+                    budgetId = budgetId
+                };
 
-            // Add the campaign.
-            gagvs::MutateCampaignsResponse retVal = campaignService.MutateCampaigns(
-                customerId.ToString(), new gagvs::CampaignOperation[] { operation });
+                // Set the campaign network options.
+                campaign.networkSetting = new aw::NetworkSetting
+                {
+                    targetGoogleSearch = true,
+                    targetSearchNetwork = true,
+                    targetContentNetwork = false,
+                    targetPartnerSearchNetwork = false
+                };
 
-            // Retrieve the newly created campaign.
-            string newResourceName = retVal.Results.First().ResourceName;
-            gagvr::Campaign newCampaign = GetCampaign(client, customerId, newResourceName);
+                // Optional: Set the start date.
+                campaign.startDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd");
 
-            // Display the results.
-            Console.WriteLine($"Campaign with ID={newCampaign.Id} and name=" +
-            $"'{newCampaign.Name}' was created.");
+                // Optional: Set the end date.
+                campaign.endDate = DateTime.Now.AddYears(1).ToString("yyyyMMdd");
 
-            // Return the newly created campaign.
-            return newCampaign;
-        }
+                // Create the operation.
+                aw::CampaignOperation operation = new aw::CampaignOperation
+                {
+                    @operator = aw::Operator.ADD,
+                    operand = campaign
+                };
 
-        /// <summary>
-        /// Gets the campaign.
-        /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="campaignResourceName">The campaign resource.</param>
-        /// <returns>The campaign.</returns>
-        private static gagvr::Campaign GetCampaign(GoogleAdsClient client, long customerId,
-            string campaignResourceName)
-        {
-            // Get the GoogleAdsService.
-            gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V1.GoogleAdsService);
+                // Add the campaign.
+                aw::CampaignReturnValue retVal = campaignService.mutate(
+                    new aw::CampaignOperation[] { operation });
 
-            // Create the search query.
-            string searchQuery = "SELECT campaign.id, campaign.name, " +
-                $"campaign.resource_name from campaign where " +
-                $"campaign.resource_name='{campaignResourceName}'";
+                // Retrieve the newly created campaign.
+                aw::Campaign newCampaign = retVal.value[0];
 
-            // Retrieve the campaigns.
-            PagedEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow>
-                searchPagedResponse = googleAdsService.Search(customerId.ToString(), searchQuery);
+                // Display the results.
+                Console.WriteLine($"Campaign with ID={newCampaign.id} and name=" +
+                    $"'{newCampaign.name}' was created.");
 
-            // Return the results.
-            return searchPagedResponse.First().Campaign;
+                // return the newly created campaign.
+                return newCampaign;
+            }
         }
 
         /// <summary>

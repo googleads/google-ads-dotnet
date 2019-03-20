@@ -21,9 +21,6 @@ using System.Linq;
 using System.Web;
 
 using aw = global::Google.Api.Ads.AdWords.v201809;
-using gag__AdGroupAdRotationMode = Google.Ads.GoogleAds.V1.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode;
-using gag__AdGroupAdStatus = Google.Ads.GoogleAds.V1.Enums.AdGroupAdStatusEnum.Types.AdGroupAdStatus;
-using gag__AdGroupStatus = Google.Ads.GoogleAds.V1.Enums.AdGroupStatusEnum.Types.AdGroupStatus;
 using gag__AdvertisingChannelType = Google.Ads.GoogleAds.V1.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType;
 using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V1.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
 using gag__CampaignStatus = Google.Ads.GoogleAds.V1.Enums.CampaignStatusEnum.Types.CampaignStatus;
@@ -37,16 +34,16 @@ using gagvs = Google.Ads.GoogleAds.V1.Services;
 namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
 {
     /// <summary>
-    /// This code example is the fifth in a series of code examples that shows how to create
+    /// This code example is the third in a series of code examples that shows how to create
     /// a Search campaign using the AdWords API, and then migrate it to the Google Ads API one
-    /// functionality at a time. See Step0.cs through Step5.cs for code examples in various
+    /// functionality at a time. See other examples in this directory for code examples in various
     /// stages of migration.
     ///
-    /// In this code example, the functionality to create campaign budget, search campaigns and
-    /// ad groups and expanded text ads have been migrated to the Google Ads API. The only
-    /// remaining functionality that uses the AdWords API is creating keywords.
+    /// In this code example, the functionality to create campaign budget and search campaign have
+    /// been migrated to the Google Ads API. The rest of the functionality - creating ad groups,
+    /// keywords and expanded text ads are done using the AdWords API.
     /// </summary>
-    public class Step4 : ExampleBase
+    public class CreateCompleteCampaignBothApisPhase2 : ExampleBase
     {
         /// <summary>
         /// Number of ads being added / updated in this code example.
@@ -69,14 +66,14 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         {
             get
             {
-                return "This code example is the fifth in a series of code examples that " +
+                return "This code example is the third in a series of code examples that " +
                     "shows how to create a Search campaign using the AdWords API, and then " +
-                    "migrate it to the Google Ads API one functionality at a time. See Step0.cs " +
-                    "through Step5.cs for code examples in various stages of migration. In this " +
-                    "code example, the functionality to create campaign budget, search campaigns" +
-                    " and ad groups and expanded text ads have been migrated to the Google Ads " +
-                    "API. The only remaining functionality that uses the AdWords API is " +
-                    "creating keywords.";
+                    "migrate it to the Google Ads API one functionality at a time. See other " +
+                    "examples in this directory for code examples in various stages of " +
+                    "migration. In this code example, the functionality to create campaign " +
+                    "budget and search campaign have been migrated to the Google Ads API. The " +
+                    "rest of the functionality - creating ad groups, keywords and expanded " +
+                    "text ads are done using the AdWords API.";
             }
         }
 
@@ -93,9 +90,9 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
 
             gagvr::CampaignBudget budget = CreateBudget(client, customerId);
             gagvr::Campaign campaign = CreateCampaign(client, customerId, budget.Id.Value);
-            gagvr::AdGroup adGroup = CreateAdGroup(client, customerId, campaign.Id.Value);
-            gagvr::AdGroupAd[] adGroupAds = CreateTextAds(client, customerId, adGroup.Id.Value);
-            aw::AdGroupCriterion[] adGroupCriteria = CreateKeywords(user, adGroup.Id.Value,
+            aw::AdGroup adGroup = CreateAdGroup(user, campaign.Id.Value);
+            aw::AdGroupAd[] adGroupAds = CreateTextAds(user, adGroup.id);
+            aw::AdGroupCriterion[] adGroupCriteria = CreateKeywords(user, adGroup.id,
                 KEYWORDS_TO_ADD);
         }
 
@@ -265,184 +262,134 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         /// <summary>
         /// Creates the ad group.
         /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
+        /// <param name="user">The Google Ads user.</param>
         /// <param name="campaignId">The campaign ID.</param>
         /// <returns>The newly created ad group instance.</returns>
-        private static gagvr::AdGroup CreateAdGroup(GoogleAdsClient client, long customerId,
-            long campaignId)
+        public aw::AdGroup CreateAdGroup(AdWordsUser user, long campaignId)
         {
             // Get the AdGroupService.
-            gagvs::AdGroupServiceClient adGroupService = client.GetService(
-                Services.V1.AdGroupService);
-
-            // Create the ad group.
-            gagvr::AdGroup adGroup = new gagvr::AdGroup()
+            using (aw::AdGroupService adGroupService =
+                (aw::AdGroupService) user.GetService(AdWordsService.v201809.AdGroupService))
             {
-                Name = $"Earth to Mars Cruises #{ExampleUtilities.GetRandomString()}",
-                Status = gag__AdGroupStatus.Enabled,
-                Campaign = gagver::ResourceNames.Campaign(customerId, campaignId),
+                // Create the ad group.
+                aw::AdGroup adGroup = new aw::AdGroup
+                {
+                    name = string.Format("Earth to Mars Cruises #{0}",
+                        ExampleUtilities.GetRandomString()),
+                    status = aw::AdGroupStatus.ENABLED,
+                    campaignId = campaignId,
 
-                // Set the ad group bids.
-                CpcBidMicros = 10000000,
+                    // Set the ad group bids.
+                    biddingStrategyConfiguration = new aw::BiddingStrategyConfiguration()
+                    {
+                        bids = new aw::Bids[]
+                        {
+                            new aw::CpcBid
+                            {
+                                bid = new aw::Money
+                                {
+                                    microAmount = 10000000
+                                }
+                            }
+                        }
+                    },
 
-                // Optional: Set the rotation mode.
-                AdRotationMode = gag__AdGroupAdRotationMode.Optimize
-            };
+                    // Optional: Set the rotation mode.
+                    adGroupAdRotationMode = new aw::AdGroupAdRotationMode
+                    {
+                        adRotationMode = aw::AdRotationMode.OPTIMIZE
+                    }
+                };
 
-            // Create the operation.
-            gagvs::AdGroupOperation operation = new gagvs::AdGroupOperation()
-            {
-                Create = adGroup
-            };
+                // Create the operation.
+                aw::AdGroupOperation operation = new aw::AdGroupOperation
+                {
+                    @operator = aw::Operator.ADD,
+                    operand = adGroup
+                };
 
-            // Create the ad groups.
-            gagvs::MutateAdGroupsResponse response = adGroupService.MutateAdGroups(
-                customerId.ToString(), new gagvs::AdGroupOperation[] { operation });
+                // Create the ad group.
+                aw::AdGroupReturnValue retVal = adGroupService.mutate(
+                    new aw::AdGroupOperation[] { operation });
 
-            // Retrieve the newly created ad group.
-            string newResourceName = response.Results.First().ResourceName;
-            gagvr::AdGroup newAdGroup = GetAdGroup(client, customerId, newResourceName);
+                // Retrieve the newly created ad group.
+                aw::AdGroup newAdGroup = retVal.value[0];
 
-            // Display the results.
-            Console.WriteLine($"Ad group with ID={newAdGroup.Id} and name=" +
-                $"'{newAdGroup.Name}' was created.");
+                // Display the results.
+                Console.WriteLine($"Ad Group with ID={newAdGroup.id} and name=" +
+                    $"'{newAdGroup.name}' was created.");
 
-            // Return the newly created ad group.
-            return newAdGroup;
-        }
-
-        /// <summary>
-        /// Gets the ad group.
-        /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="adGroupResourceName">The ad group resource.</param>
-        /// <returns>The ad group.</returns>
-        private static gagvr::AdGroup GetAdGroup(GoogleAdsClient client, long customerId,
-            string adGroupResourceName)
-        {
-            // Get the GoogleAdsService.
-            gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V1.GoogleAdsService);
-
-            // Create the search query.
-            string searchQuery = "SELECT ad_group.id, ad_group.name, " +
-                $"ad_group.resource_name from ad_group where " +
-                $"ad_group.resource_name='{adGroupResourceName}'";
-
-            // Retrieve the ad groups.
-            PagedEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow>
-                searchPagedResponse = googleAdsService.Search(customerId.ToString(), searchQuery);
-
-            // Return the results.
-            return searchPagedResponse.First().AdGroup;
+                // Return the newly created ad group.
+                return newAdGroup;
+            }
         }
 
         /// <summary>
         /// Creates the text ads.
         /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="adGroupId">ID of the ad group in which ads are created.</param>
-        /// <returns>The newly created ad group ad instances.</returns>
-        private gagvr::AdGroupAd[] CreateTextAds(GoogleAdsClient client, long customerId,
-            long adGroupId)
+        /// <param name="user">The Google Ads user.</param>
+        /// <param name="adGroupId">The ad group ID.</param>
+        /// <returns>The list of newly created ad group ads.</returns>
+        public aw::AdGroupAd[] CreateTextAds(AdWordsUser user, long adGroupId)
         {
             // Get the AdGroupAdService.
-            gagvs::AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V1.AdGroupAdService);
-
-            List<gagvs::AdGroupAdOperation> operations = new List<gagvs::AdGroupAdOperation>();
-            for (int i = 0; i < NUMBER_OF_ADS; i++)
+            using (aw::AdGroupAdService adGroupAdService =
+                (aw::AdGroupAdService) user.GetService(AdWordsService.v201809.AdGroupAdService))
             {
-                // Create the ad group ad object.
-                gagvr::AdGroupAd adGroupAd = new gagvr::AdGroupAd
+                List<aw::AdGroupAdOperation> operations = new List<aw::AdGroupAdOperation>();
+
+                for (int i = 0; i < NUMBER_OF_ADS; i++)
                 {
-                    AdGroup = gagver::ResourceNames.AdGroup(customerId, adGroupId),
-                    // Optional: Set the status.
-                    Status = gag__AdGroupAdStatus.Paused,
-                    Ad = new gagvr::Ad
+                    // Create the expanded text ad.
+                    aw::ExpandedTextAd expandedTextAd = new aw::ExpandedTextAd
                     {
-                        FinalUrls = { "http://www.example.com/" + i },
-                        ExpandedTextAd = new gagvc::ExpandedTextAdInfo
+                        headlinePart1 = "Cruise #" + i.ToString() + " to Mars",
+                        headlinePart2 = "Best Space Cruise Line",
+                        headlinePart3 = "For Your Loved Ones",
+                        description = "Buy your tickets now!",
+                        description2 = "Discount ends soon",
+                        finalUrls = new string[]
                         {
-                            Description = "Buy your tickets now!",
-                            HeadlinePart1 = "Cruise #" + i.ToString() + " to Mars",
-                            HeadlinePart2 = "Best Space Cruise Line",
-                            Path1 = "path1",
-                            Path2 = "path2"
+                            "http://www.example.com/" + i
                         }
-                    }
-                };
+                    };
 
-                // Create the operation.
-                operations.Add(new gagvs::AdGroupAdOperation
+                    aw::AdGroupAd expandedTextAdGroupAd = new aw::AdGroupAd
+                    {
+                        adGroupId = adGroupId,
+                        ad = expandedTextAd,
+
+                        // Optional: Set the status.
+                        status = aw::AdGroupAdStatus.PAUSED
+                    };
+
+                    // Create the operation.
+                    aw::AdGroupAdOperation operation = new aw::AdGroupAdOperation
+                    {
+                        @operator = aw::Operator.ADD,
+                        operand = expandedTextAdGroupAd
+                    };
+
+                    operations.Add(operation);
+                }
+
+                // Create the ads.
+                aw::AdGroupAdReturnValue retVal = adGroupAdService.mutate(operations.ToArray());
+
+                foreach (aw::AdGroupAd adGroupAd in retVal.value)
                 {
-                    Create = adGroupAd
-                });
+                    // Retrieve the newly created ad.
+                    aw::ExpandedTextAd newAd = adGroupAd.ad as aw::ExpandedTextAd;
+
+                    // Display the results.
+                    Console.WriteLine(
+                        "Expanded text ad with ID '{0}' and headline '{1} - {2}' " +
+                        "was added.", newAd.id, newAd.headlinePart1, newAd.headlinePart2);
+                }
+
+                // Return the newly created ad.
+                return retVal.value;
             }
-
-            // Create the ads.
-            gagvs::MutateAdGroupAdsResponse response = adGroupAdService.MutateAdGroupAds(
-                customerId.ToString(), operations);
-
-            // Retrieve the newly created ad group ads.
-            List<string> newResourceNames =
-                response.Results.Select(result => result.ResourceName).ToList();
-            gagvr::AdGroupAd[] newAdGroupAds = GetAdGroupAds(client, customerId, newResourceNames);
-
-            // Display the results.
-            foreach (gagvr::AdGroupAd newAdGroupAd in newAdGroupAds)
-            {
-                gagvr::Ad ad = newAdGroupAd.Ad;
-                gagvc::ExpandedTextAdInfo expandedTextAdInfo = ad.ExpandedTextAd;
-                Console.WriteLine("Expanded text ad with ID {0}, status '{1}', and headline " +
-                    "'{2} - {3}' was found in ad group with ID {4}.",
-                    ad.Id, newAdGroupAd.Status, expandedTextAdInfo.HeadlinePart1,
-                    expandedTextAdInfo.HeadlinePart2, adGroupId);
-            }
-
-            // Return the newly created ad group ads.
-            return newAdGroupAds;
-        }
-
-        /// <summary>
-        /// Gets the ad group ads.
-        /// </summary>
-        /// <param name="client">The client.</param>
-        /// <param name="customerId">The customer identifier.</param>
-        /// <param name="adGroupResourceNames">The ad group resource names.</param>
-        /// <returns></returns>
-        private static gagvr::AdGroupAd[] GetAdGroupAds(GoogleAdsClient client, long customerId,
-            List<string> adGroupResourceNames)
-        {
-            // Get the GoogleAdsService.
-            gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V1.GoogleAdsService);
-
-            // Create the search query.
-            string searchQuery =
-                $@"SELECT
-                    ad_group.id,
-                    ad_group_ad.ad.id,
-                    ad_group_ad.ad.expanded_text_ad.headline_part1,
-                    ad_group_ad.ad.expanded_text_ad.headline_part2,
-                    ad_group_ad.status,
-                    ad_group_ad.ad.final_urls,
-                    ad_group_ad.resource_name
-                from ad_group_ad
-                where
-                    ad_group_ad.resource_name IN (" +
-                string.Join(",", adGroupResourceNames.Select(
-                    resourceName => $"'{resourceName}'")) + ")";
-
-            // Retrieve the ad group ads.
-            PagedEnumerable<gagvs::SearchGoogleAdsResponse, gagvs::GoogleAdsRow>
-                searchPagedResponse = googleAdsService.Search(customerId.ToString(), searchQuery);
-
-            // Return the results.
-            return searchPagedResponse.Select(row => row.AdGroupAd).ToArray();
         }
 
         /// <summary>
