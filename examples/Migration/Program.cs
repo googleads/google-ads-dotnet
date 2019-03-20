@@ -87,12 +87,12 @@ namespace Google.Ads.GoogleAds.Examples
             // Uncomment the relevant code example to run it.
 
             // CampaignManagement example.
-            // new Step0().Run(adWordsUser);
-            // new Step1().Run(adWordsUser, googleAdsClient);
-            // new Step2().Run(adWordsUser, googleAdsClient);
-            // new Step3().Run(adWordsUser, googleAdsClient);
-            // new Step4().Run(adWordsUser, googleAdsClient);
-            // new Step5().Run(googleAdsClient, clientCustomerId);
+            // new CreateCompleteCampaignAdWordsApiOnly().Run(adWordsUser);
+            // new CreateCompleteCampaignBothApisPhase1().Run(adWordsUser, googleAdsClient);
+            // new CreateCompleteCampaignBothApisPhase2().Run(adWordsUser, googleAdsClient);
+            // new CreateCompleteCampaignBothApisPhase3().Run(adWordsUser, googleAdsClient);
+            // new CreateCompleteCampaignBothApisPhase4().Run(adWordsUser, googleAdsClient);
+            // new CreateCompleteCampaignGoogleAdsApiOnly().Run(googleAdsClient, clientCustomerId);
         }
     }
 }
