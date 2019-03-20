@@ -5,8 +5,8 @@ Google Ads API in a step-by-step manner. The following code examples are provide
 
 ## CampaignManagement
 
-This folder contains a code example that shows how to create a Google Ads
- Search campaign. The code example does the following operations:
+This folder contains a code example that shows how to create a Google Ads Search campaign. 
+The code example does the following operations:
 
   - Create a budget
   - Create a campaign
@@ -14,6 +14,8 @@ This folder contains a code example that shows how to create a Google Ads
   - Create Text Ads
   - Create keywords
 
-The code examples are numbered from Step 0 to 5, in which we show how to migrate functionality
- incrementally from the AdWords API to the Google Ads API. Step 0 example is fully written using
- the AdWords API, and by Step 5, the has been fully transformed into using the Google Ads API.
+The code example starts with CreateCompleteCampaignAdWordsApiOnly.cs that shows the whole
+functionality developed in AdWords API. CreateCompleteCampaignBothApisPhase1.cs through
+CreateCompleteCampaignBothApisPhase4.cs shows how to migrate functionality
+ incrementally from the AdWords API to the Google Ads API. CreateCompleteCampaignGoogleAdsApiOnly.cs
+ shows the code example fully transformed into using the Google Ads API.
