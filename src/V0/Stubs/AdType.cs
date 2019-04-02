@@ -26,19 +26,18 @@ namespace Google.Ads.GoogleAds.V0.Enums {
           string.Concat(
             "Citnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF90eXBlLnByb3Rv",
             "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtcxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90byKkAgoKQWRUeXBlRW51bSKVAgoGQWRUeXBlEg8K",
+            "bm5vdGF0aW9ucy5wcm90byKJAgoKQWRUeXBlRW51bSL6AQoGQWRUeXBlEg8K",
             "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB1RFWFRfQUQQAhIUChBF",
-            "WFBBTkRFRF9URVhUX0FEEAMSFQoRRFlOQU1JQ19TRUFSQ0hfQUQQBBIZChVS",
-            "RVNQT05TSVZFX0RJU1BMQVlfQUQQBRIQCgxDQUxMX09OTFlfQUQQBhIeChpF",
-            "WFBBTkRFRF9EWU5BTUlDX1NFQVJDSF9BRBAHEgwKCEhPVEVMX0FEEAgSFQoR",
-            "U0hPUFBJTkdfU01BUlRfQUQQCRIXChNTSE9QUElOR19QUk9EVUNUX0FEEAoS",
-            "DAoIVklERU9fQUQQDBIMCghHTUFJTF9BRBANEgwKCElNQUdFX0FEEA5C4AEK",
-            "IWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lbnVtc0ILQWRUeXBlUHJv",
-            "dG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "MFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYwOjpFbnVtc2IG",
-            "cHJvdG8z"));
+            "WFBBTkRFRF9URVhUX0FEEAMSFQoRRFlOQU1JQ19TRUFSQ0hfQUQQBBIQCgxD",
+            "QUxMX09OTFlfQUQQBhIeChpFWFBBTkRFRF9EWU5BTUlDX1NFQVJDSF9BRBAH",
+            "EgwKCEhPVEVMX0FEEAgSFQoRU0hPUFBJTkdfU01BUlRfQUQQCRIXChNTSE9Q",
+            "UElOR19QUk9EVUNUX0FEEAoSDAoIVklERU9fQUQQDBIMCghHTUFJTF9BRBAN",
+            "EgwKCElNQUdFX0FEEA5C4AEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MC5lbnVtc0ILQWRUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YwL2VudW1zO2VudW1z",
+            "ogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjAuRW51bXPKAh1Hb29n",
+            "bGVcQWRzXEdvb2dsZUFkc1xWMFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29n",
+            "bGVBZHM6OlYwOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -181,10 +180,6 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// The ad is a dynamic search ad.
         /// </summary>
         [pbr::OriginalName("DYNAMIC_SEARCH_AD")] DynamicSearchAd = 4,
-        /// <summary>
-        /// The ad is a responsive display ad.
-        /// </summary>
-        [pbr::OriginalName("RESPONSIVE_DISPLAY_AD")] ResponsiveDisplayAd = 5,
         /// <summary>
         /// The ad is a call only ad.
         /// </summary>

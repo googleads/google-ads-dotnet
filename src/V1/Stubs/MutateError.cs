@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvbXV0YXRlX2Vycm9y",
             "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lcnJvcnMaHGdvb2ds",
-            "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i0QEKD011dGF0ZUVycm9yRW51bSK9",
+            "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i7gEKD011dGF0ZUVycm9yRW51bSLa",
             "AQoLTXV0YXRlRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAES",
             "FgoSUkVTT1VSQ0VfTk9UX0ZPVU5EEAMSIQodSURfRVhJU1RTX0lOX01VTFRJ",
             "UExFX01VVEFURVMQBxIdChlJTkNPTlNJU1RFTlRfRklFTERfVkFMVUVTEAgS",
             "FgoSTVVUQVRFX05PVF9BTExPV0VEEAkSHgoaUkVTT1VSQ0VfTk9UX0lOX0dP",
-            "T0dMRV9BRFMQCkLrAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVy",
-            "cm9yc0IQTXV0YXRlRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvZXJyb3JzO2Vy",
-            "cm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVycm9yc8oC",
-            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXEVycm9yc+oCIkdvb2dsZTo6QWRz",
-            "OjpHb29nbGVBZHM6OlYxOjpFcnJvcnNiBnByb3RvMw=="));
+            "T0dMRV9BRFMQChIbChdSRVNPVVJDRV9BTFJFQURZX0VYSVNUUxALQusBCiJj",
+            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZXJyb3JzQhBNdXRhdGVFcnJv",
+            "clByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29v",
+            "Z2xlLkFkcy5Hb29nbGVBZHMuVjEuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29n",
+            "bGVBZHNcVjFcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6",
+            "OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -186,6 +187,10 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// The resource isn't in Google Ads. It belongs to another ads system.
         /// </summary>
         [pbr::OriginalName("RESOURCE_NOT_IN_GOOGLE_ADS")] ResourceNotInGoogleAds = 10,
+        /// <summary>
+        /// The resource being created already exists.
+        /// </summary>
+        [pbr::OriginalName("RESOURCE_ALREADY_EXISTS")] ResourceAlreadyExists = 11,
       }
 
     }

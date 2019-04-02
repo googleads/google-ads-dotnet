@@ -50,6 +50,7 @@ namespace Google.Ads.GoogleAds.V1.Services
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             UploadClickConversionsSettings = existing.UploadClickConversionsSettings;
+            UploadCallConversionsSettings = existing.UploadCallConversionsSettings;
             OnCopy(existing);
         }
 
@@ -141,6 +142,35 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// Default RPC expiration is 600000 milliseconds.
         /// </remarks>
         public gaxgrpc::CallSettings UploadClickConversionsSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
+            gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
+                retryBackoff: GetDefaultRetryBackoff(),
+                timeoutBackoff: GetDefaultTimeoutBackoff(),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                retryFilter: NonIdempotentRetryFilter
+            )));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>ConversionUploadServiceClient.UploadCallConversions</c> and <c>ConversionUploadServiceClient.UploadCallConversionsAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// The default <c>ConversionUploadServiceClient.UploadCallConversions</c> and
+        /// <c>ConversionUploadServiceClient.UploadCallConversionsAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Timeout multiplier: 1.0</description></item>
+        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// </list>
+        /// Retry will be attempted on the following response status codes:
+        /// <list>
+        /// <item><description>No status codes</description></item>
+        /// </list>
+        /// Default RPC expiration is 600000 milliseconds.
+        /// </remarks>
+        public gaxgrpc::CallSettings UploadCallConversionsSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
             gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
                 retryBackoff: GetDefaultRetryBackoff(),
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
@@ -537,6 +567,236 @@ namespace Google.Ads.GoogleAds.V1.Services
             throw new sys::NotImplementedException();
         }
 
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer performing the upload.
+        /// </param>
+        /// <param name="conversions">
+        /// The conversions that are being uploaded.
+        /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// This should always be set to true.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<UploadCallConversionsResponse> UploadCallConversionsAsync(
+            string customerId,
+            scg::IEnumerable<CallConversion> conversions,
+            bool? partialFailure,
+            gaxgrpc::CallSettings callSettings = null) => UploadCallConversionsAsync(
+                new UploadCallConversionsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Conversions = { gax::GaxPreconditions.CheckNotNull(conversions, nameof(conversions)) },
+                    PartialFailure = partialFailure ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer performing the upload.
+        /// </param>
+        /// <param name="conversions">
+        /// The conversions that are being uploaded.
+        /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// This should always be set to true.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<UploadCallConversionsResponse> UploadCallConversionsAsync(
+            string customerId,
+            scg::IEnumerable<CallConversion> conversions,
+            bool? partialFailure,
+            st::CancellationToken cancellationToken) => UploadCallConversionsAsync(
+                customerId,
+                conversions,
+                partialFailure,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer performing the upload.
+        /// </param>
+        /// <param name="conversions">
+        /// The conversions that are being uploaded.
+        /// </param>
+        /// <param name="partialFailure">
+        /// If true, successful operations will be carried out and invalid
+        /// operations will return errors. If false, all operations will be carried
+        /// out in one transaction if and only if they are all valid.
+        /// This should always be set to true.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual UploadCallConversionsResponse UploadCallConversions(
+            string customerId,
+            scg::IEnumerable<CallConversion> conversions,
+            bool? partialFailure,
+            gaxgrpc::CallSettings callSettings = null) => UploadCallConversions(
+                new UploadCallConversionsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Conversions = { gax::GaxPreconditions.CheckNotNull(conversions, nameof(conversions)) },
+                    PartialFailure = partialFailure ?? false, // Optional
+                },
+                callSettings);
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer performing the upload.
+        /// </param>
+        /// <param name="conversions">
+        /// The conversions that are being uploaded.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<UploadCallConversionsResponse> UploadCallConversionsAsync(
+            string customerId,
+            scg::IEnumerable<CallConversion> conversions,
+            gaxgrpc::CallSettings callSettings = null) => UploadCallConversionsAsync(
+                new UploadCallConversionsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Conversions = { gax::GaxPreconditions.CheckNotNull(conversions, nameof(conversions)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer performing the upload.
+        /// </param>
+        /// <param name="conversions">
+        /// The conversions that are being uploaded.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<UploadCallConversionsResponse> UploadCallConversionsAsync(
+            string customerId,
+            scg::IEnumerable<CallConversion> conversions,
+            st::CancellationToken cancellationToken) => UploadCallConversionsAsync(
+                customerId,
+                conversions,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="customerId">
+        /// The ID of the customer performing the upload.
+        /// </param>
+        /// <param name="conversions">
+        /// The conversions that are being uploaded.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual UploadCallConversionsResponse UploadCallConversions(
+            string customerId,
+            scg::IEnumerable<CallConversion> conversions,
+            gaxgrpc::CallSettings callSettings = null) => UploadCallConversions(
+                new UploadCallConversionsRequest
+                {
+                    CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                    Conversions = { gax::GaxPreconditions.CheckNotNull(conversions, nameof(conversions)) },
+                },
+                callSettings);
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<UploadCallConversionsResponse> UploadCallConversionsAsync(
+            UploadCallConversionsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="st::CancellationToken"/> to use for this RPC.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public virtual stt::Task<UploadCallConversionsResponse> UploadCallConversionsAsync(
+            UploadCallConversionsRequest request,
+            st::CancellationToken cancellationToken) => UploadCallConversionsAsync(
+                request,
+                gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public virtual UploadCallConversionsResponse UploadCallConversions(
+            UploadCallConversionsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            throw new sys::NotImplementedException();
+        }
+
     }
 
     /// <summary>
@@ -545,6 +805,7 @@ namespace Google.Ads.GoogleAds.V1.Services
     public sealed partial class ConversionUploadServiceClientImpl : ConversionUploadServiceClient
     {
         private readonly gaxgrpc::ApiCall<UploadClickConversionsRequest, UploadClickConversionsResponse> _callUploadClickConversions;
+        private readonly gaxgrpc::ApiCall<UploadCallConversionsRequest, UploadCallConversionsResponse> _callUploadCallConversions;
 
         /// <summary>
         /// Constructs a client wrapper for the ConversionUploadService service, with the specified gRPC client and settings.
@@ -558,8 +819,12 @@ namespace Google.Ads.GoogleAds.V1.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callUploadClickConversions = clientHelper.BuildApiCall<UploadClickConversionsRequest, UploadClickConversionsResponse>(
                 GrpcClient.UploadClickConversionsAsync, GrpcClient.UploadClickConversions, effectiveSettings.UploadClickConversionsSettings);
+            _callUploadCallConversions = clientHelper.BuildApiCall<UploadCallConversionsRequest, UploadCallConversionsResponse>(
+                GrpcClient.UploadCallConversionsAsync, GrpcClient.UploadCallConversions, effectiveSettings.UploadCallConversionsSettings);
             Modify_ApiCall(ref _callUploadClickConversions);
             Modify_UploadClickConversionsApiCall(ref _callUploadClickConversions);
+            Modify_ApiCall(ref _callUploadCallConversions);
+            Modify_UploadCallConversionsApiCall(ref _callUploadCallConversions);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -574,6 +839,7 @@ namespace Google.Ads.GoogleAds.V1.Services
         // Partial methods called for each ApiCall on construction.
         // Allows per-RPC-method modification of the underlying ApiCall object.
         partial void Modify_UploadClickConversionsApiCall(ref gaxgrpc::ApiCall<UploadClickConversionsRequest, UploadClickConversionsResponse> call);
+        partial void Modify_UploadCallConversionsApiCall(ref gaxgrpc::ApiCall<UploadCallConversionsRequest, UploadCallConversionsResponse> call);
         partial void OnConstruction(ConversionUploadService.ConversionUploadServiceClient grpcClient, ConversionUploadServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>
@@ -585,6 +851,7 @@ namespace Google.Ads.GoogleAds.V1.Services
         // Allows per-RPC-call modification to the request and CallSettings objects,
         // before the underlying RPC is performed.
         partial void Modify_UploadClickConversionsRequest(ref UploadClickConversionsRequest request, ref gaxgrpc::CallSettings settings);
+        partial void Modify_UploadCallConversionsRequest(ref UploadCallConversionsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Processes the given click conversions.
@@ -624,6 +891,46 @@ namespace Google.Ads.GoogleAds.V1.Services
         {
             Modify_UploadClickConversionsRequest(ref request, ref callSettings);
             return _callUploadClickConversions.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// A Task containing the RPC response.
+        /// </returns>
+        public override stt::Task<UploadCallConversionsResponse> UploadCallConversionsAsync(
+            UploadCallConversionsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_UploadCallConversionsRequest(ref request, ref callSettings);
+            return _callUploadCallConversions.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Processes the given call conversions.
+        /// </summary>
+        /// <param name="request">
+        /// The request object containing all of the parameters for the API call.
+        /// </param>
+        /// <param name="callSettings">
+        /// If not null, applies overrides to this RPC call.
+        /// </param>
+        /// <returns>
+        /// The RPC response.
+        /// </returns>
+        public override UploadCallConversionsResponse UploadCallConversions(
+            UploadCallConversionsRequest request,
+            gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_UploadCallConversionsRequest(ref request, ref callSettings);
+            return _callUploadCallConversions.Sync(request, callSettings);
         }
 
     }

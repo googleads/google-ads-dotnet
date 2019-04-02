@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Logging
             AsyncUnaryCallContinuation<TRequest, TResponse> continuation)
         {
             AsyncUnaryCall<TResponse> call = continuation(request, context);
-            call.ResponseAsync.ContinueWith(
+            Task t = call.ResponseAsync.ContinueWith(
                 delegate (Task<TResponse> oldTask)
             {
                 LogEntry logEntry = new LogEntry()
@@ -120,6 +120,7 @@ namespace Google.Ads.GoogleAds.Logging
                 };
                 OnLogEventAvailable?.Invoke(this, logEntry);
             });
+            t.Wait();
             return call;
         }
 

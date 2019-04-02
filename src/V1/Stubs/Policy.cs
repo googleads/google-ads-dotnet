@@ -33,63 +33,65 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "aS9hbm5vdGF0aW9ucy5wcm90byJ9ChJQb2xpY3lWaW9sYXRpb25LZXkSMQoL",
             "cG9saWN5X25hbWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
             "dWUSNAoOdmlvbGF0aW5nX3RleHQYAiABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUiWgoZUG9saWN5VmFsaWRhdGlvblBhcmFtZXRlchI9Chdp",
-            "Z25vcmFibGVfcG9saWN5X3RvcGljcxgBIAMoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZSKvAgoQUG9saWN5VG9waWNFbnRyeRIrCgV0b3BpYxgB",
-            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJaCgR0eXBlGAIg",
-            "ASgOMkwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuUG9saWN5VG9w",
-            "aWNFbnRyeVR5cGVFbnVtLlBvbGljeVRvcGljRW50cnlUeXBlEkYKCWV2aWRl",
-            "bmNlcxgDIAMoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Q",
-            "b2xpY3lUb3BpY0V2aWRlbmNlEkoKC2NvbnN0cmFpbnRzGAQgAygLMjUuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlBvbGljeVRvcGljQ29uc3Ry",
-            "YWludCL6BgoTUG9saWN5VG9waWNFdmlkZW5jZRIwCglodHRwX2NvZGUYAiAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1ZUgAElcKDHdlYnNpdGVf",
-            "bGlzdBgDIAEoCzI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Q",
-            "b2xpY3lUb3BpY0V2aWRlbmNlLldlYnNpdGVMaXN0SAASUQoJdGV4dF9saXN0",
-            "GAQgASgLMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlBvbGlj",
-            "eVRvcGljRXZpZGVuY2UuVGV4dExpc3RIABI1Cg1sYW5ndWFnZV9jb2RlGAUg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlSAASaAoVZGVzdGlu",
-            "YXRpb25fdGV4dF9saXN0GAYgASgLMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djEuY29tbW9uLlBvbGljeVRvcGljRXZpZGVuY2UuRGVzdGluYXRpb25UZXh0",
-            "TGlzdEgAEmcKFGRlc3RpbmF0aW9uX21pc21hdGNoGAcgASgLMkcuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlBvbGljeVRvcGljRXZpZGVuY2Uu",
-            "RGVzdGluYXRpb25NaXNtYXRjaEgAGjcKCFRleHRMaXN0EisKBXRleHRzGAEg",
-            "AygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlGj0KC1dlYnNpdGVM",
-            "aXN0Ei4KCHdlYnNpdGVzGAEgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlGk4KE0Rlc3RpbmF0aW9uVGV4dExpc3QSNwoRZGVzdGluYXRpb25f",
-            "dGV4dHMYASADKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUaqQEK",
-            "E0Rlc3RpbmF0aW9uTWlzbWF0Y2gSkQEKCXVybF90eXBlcxgBIAMoDjJ+Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLlBvbGljeVRvcGljRXZpZGVu",
-            "Y2VEZXN0aW5hdGlvbk1pc21hdGNoVXJsVHlwZUVudW0uUG9saWN5VG9waWNF",
-            "dmlkZW5jZURlc3RpbmF0aW9uTWlzbWF0Y2hVcmxUeXBlQgcKBXZhbHVlIpMG",
-            "ChVQb2xpY3lUb3BpY0NvbnN0cmFpbnQSbgoXY291bnRyeV9jb25zdHJhaW50",
-            "X2xpc3QYASABKAsySy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24u",
-            "UG9saWN5VG9waWNDb25zdHJhaW50LkNvdW50cnlDb25zdHJhaW50TGlzdEgA",
-            "EmcKE3Jlc2VsbGVyX2NvbnN0cmFpbnQYAiABKAsySC5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MS5jb21tb24uUG9saWN5VG9waWNDb25zdHJhaW50LlJlc2Vs",
-            "bGVyQ29uc3RyYWludEgAEnoKI2NlcnRpZmljYXRlX21pc3NpbmdfaW5fY291",
-            "bnRyeV9saXN0GAMgASgLMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29t",
-            "bW9uLlBvbGljeVRvcGljQ29uc3RyYWludC5Db3VudHJ5Q29uc3RyYWludExp",
-            "c3RIABKCAQorY2VydGlmaWNhdGVfZG9tYWluX21pc21hdGNoX2luX2NvdW50",
-            "cnlfbGlzdBgEIAEoCzJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1v",
-            "bi5Qb2xpY3lUb3BpY0NvbnN0cmFpbnQuQ291bnRyeUNvbnN0cmFpbnRMaXN0",
-            "SAAasgEKFUNvdW50cnlDb25zdHJhaW50TGlzdBI9Chh0b3RhbF90YXJnZXRl",
-            "ZF9jb3VudHJpZXMYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1",
-            "ZRJaCgljb3VudHJpZXMYAiADKAsyRy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MS5jb21tb24uUG9saWN5VG9waWNDb25zdHJhaW50LkNvdW50cnlDb25zdHJh",
-            "aW50GhQKElJlc2VsbGVyQ29uc3RyYWludBpMChFDb3VudHJ5Q29uc3RyYWlu",
-            "dBI3ChFjb3VudHJ5X2NyaXRlcmlvbhgBIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZUIHCgV2YWx1ZULmAQoiY29tLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxLmNvbW1vbkILUG9saWN5UHJvdG9QAVpEZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2Nv",
-            "bW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5D",
-            "b21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMVxDb21tb27qAiJHb29n",
-            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6Q29tbW9uYgZwcm90bzM="));
+            "U3RyaW5nVmFsdWUitAEKGVBvbGljeVZhbGlkYXRpb25QYXJhbWV0ZXISPQoX",
+            "aWdub3JhYmxlX3BvbGljeV90b3BpY3MYASADKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUSWAocZXhlbXB0X3BvbGljeV92aW9sYXRpb25fa2V5",
+            "cxgCIAMoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Qb2xp",
+            "Y3lWaW9sYXRpb25LZXkirwIKEFBvbGljeVRvcGljRW50cnkSKwoFdG9waWMY",
+            "ASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSWgoEdHlwZRgC",
+            "IAEoDjJMLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLlBvbGljeVRv",
+            "cGljRW50cnlUeXBlRW51bS5Qb2xpY3lUb3BpY0VudHJ5VHlwZRJGCglldmlk",
+            "ZW5jZXMYAyADKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24u",
+            "UG9saWN5VG9waWNFdmlkZW5jZRJKCgtjb25zdHJhaW50cxgEIAMoCzI1Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Qb2xpY3lUb3BpY0NvbnN0",
+            "cmFpbnQi+gYKE1BvbGljeVRvcGljRXZpZGVuY2USMAoJaHR0cF9jb2RlGAIg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWVIABJXCgx3ZWJzaXRl",
+            "X2xpc3QYAyABKAsyPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24u",
+            "UG9saWN5VG9waWNFdmlkZW5jZS5XZWJzaXRlTGlzdEgAElEKCXRleHRfbGlz",
+            "dBgEIAEoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Qb2xp",
+            "Y3lUb3BpY0V2aWRlbmNlLlRleHRMaXN0SAASNQoNbGFuZ3VhZ2VfY29kZRgF",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUgAEmgKFWRlc3Rp",
+            "bmF0aW9uX3RleHRfbGlzdBgGIAEoCzJHLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxLmNvbW1vbi5Qb2xpY3lUb3BpY0V2aWRlbmNlLkRlc3RpbmF0aW9uVGV4",
+            "dExpc3RIABJnChRkZXN0aW5hdGlvbl9taXNtYXRjaBgHIAEoCzJHLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Qb2xpY3lUb3BpY0V2aWRlbmNl",
+            "LkRlc3RpbmF0aW9uTWlzbWF0Y2hIABo3CghUZXh0TGlzdBIrCgV0ZXh0cxgB",
+            "IAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRo9CgtXZWJzaXRl",
+            "TGlzdBIuCgh3ZWJzaXRlcxgBIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRpOChNEZXN0aW5hdGlvblRleHRMaXN0EjcKEWRlc3RpbmF0aW9u",
+            "X3RleHRzGAEgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlGqkB",
+            "ChNEZXN0aW5hdGlvbk1pc21hdGNoEpEBCgl1cmxfdHlwZXMYASADKA4yfi5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5Qb2xpY3lUb3BpY0V2aWRl",
+            "bmNlRGVzdGluYXRpb25NaXNtYXRjaFVybFR5cGVFbnVtLlBvbGljeVRvcGlj",
+            "RXZpZGVuY2VEZXN0aW5hdGlvbk1pc21hdGNoVXJsVHlwZUIHCgV2YWx1ZSKT",
+            "BgoVUG9saWN5VG9waWNDb25zdHJhaW50Em4KF2NvdW50cnlfY29uc3RyYWlu",
+            "dF9saXN0GAEgASgLMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9u",
+            "LlBvbGljeVRvcGljQ29uc3RyYWludC5Db3VudHJ5Q29uc3RyYWludExpc3RI",
+            "ABJnChNyZXNlbGxlcl9jb25zdHJhaW50GAIgASgLMkguZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjEuY29tbW9uLlBvbGljeVRvcGljQ29uc3RyYWludC5SZXNl",
+            "bGxlckNvbnN0cmFpbnRIABJ6CiNjZXJ0aWZpY2F0ZV9taXNzaW5nX2luX2Nv",
+            "dW50cnlfbGlzdBgDIAEoCzJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNv",
+            "bW1vbi5Qb2xpY3lUb3BpY0NvbnN0cmFpbnQuQ291bnRyeUNvbnN0cmFpbnRM",
+            "aXN0SAASggEKK2NlcnRpZmljYXRlX2RvbWFpbl9taXNtYXRjaF9pbl9jb3Vu",
+            "dHJ5X2xpc3QYBCABKAsySy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21t",
+            "b24uUG9saWN5VG9waWNDb25zdHJhaW50LkNvdW50cnlDb25zdHJhaW50TGlz",
+            "dEgAGrIBChVDb3VudHJ5Q29uc3RyYWludExpc3QSPQoYdG90YWxfdGFyZ2V0",
+            "ZWRfY291bnRyaWVzGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFs",
+            "dWUSWgoJY291bnRyaWVzGAIgAygLMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djEuY29tbW9uLlBvbGljeVRvcGljQ29uc3RyYWludC5Db3VudHJ5Q29uc3Ry",
+            "YWludBoUChJSZXNlbGxlckNvbnN0cmFpbnQaTAoRQ291bnRyeUNvbnN0cmFp",
+            "bnQSNwoRY291bnRyeV9jcml0ZXJpb24YASABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWVCBwoFdmFsdWVC5gEKImNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MS5jb21tb25CC1BvbGljeVByb3RvUAFaRGdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9j",
+            "b21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEu",
+            "Q29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcQ29tbW9u6gIiR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEntryTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey), global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey.Parser, new[]{ "PolicyName", "ViolatingText" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyValidationParameter), global::Google.Ads.GoogleAds.V1.Common.PolicyValidationParameter.Parser, new[]{ "IgnorablePolicyTopics" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyValidationParameter), global::Google.Ads.GoogleAds.V1.Common.PolicyValidationParameter.Parser, new[]{ "IgnorablePolicyTopics", "ExemptPolicyViolationKeys" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEntry), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEntry.Parser, new[]{ "Topic", "Type", "Evidences", "Constraints" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Parser, new[]{ "HttpCode", "WebsiteList", "TextList", "LanguageCode", "DestinationTextList", "DestinationMismatch" }, new[]{ "Value" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.TextList), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.TextList.Parser, new[]{ "Texts" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.WebsiteList), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.WebsiteList.Parser, new[]{ "Websites" }, null, null, null),
@@ -316,6 +318,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PolicyValidationParameter(PolicyValidationParameter other) : this() {
       ignorablePolicyTopics_ = other.ignorablePolicyTopics_.Clone();
+      exemptPolicyViolationKeys_ = other.exemptPolicyViolationKeys_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -344,6 +347,27 @@ namespace Google.Ads.GoogleAds.V1.Common {
       get { return ignorablePolicyTopics_; }
     }
 
+    /// <summary>Field number for the "exempt_policy_violation_keys" field.</summary>
+    public const int ExemptPolicyViolationKeysFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey> _repeated_exemptPolicyViolationKeys_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey> exemptPolicyViolationKeys_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey>();
+    /// <summary>
+    /// The list of policy violation keys that should not cause a
+    /// PolicyViolationError to be reported. Not all policy violations are
+    /// exemptable, please refer to the is_exemptible field in the returned
+    /// PolicyViolationError.
+    ///
+    /// Resources violating these polices will be saved, but will not be eligible
+    /// to serve. They may begin serving at a later time due to a change in
+    /// policies, re-review of the resource, or a change in advertiser
+    /// certificates.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey> ExemptPolicyViolationKeys {
+      get { return exemptPolicyViolationKeys_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PolicyValidationParameter);
@@ -358,6 +382,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
         return true;
       }
       if(!ignorablePolicyTopics_.Equals(other.ignorablePolicyTopics_)) return false;
+      if(!exemptPolicyViolationKeys_.Equals(other.exemptPolicyViolationKeys_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -365,6 +390,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= ignorablePolicyTopics_.GetHashCode();
+      hash ^= exemptPolicyViolationKeys_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -379,6 +405,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       ignorablePolicyTopics_.WriteTo(output, _repeated_ignorablePolicyTopics_codec);
+      exemptPolicyViolationKeys_.WriteTo(output, _repeated_exemptPolicyViolationKeys_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -388,6 +415,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     public int CalculateSize() {
       int size = 0;
       size += ignorablePolicyTopics_.CalculateSize(_repeated_ignorablePolicyTopics_codec);
+      size += exemptPolicyViolationKeys_.CalculateSize(_repeated_exemptPolicyViolationKeys_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -400,6 +428,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
         return;
       }
       ignorablePolicyTopics_.Add(other.ignorablePolicyTopics_);
+      exemptPolicyViolationKeys_.Add(other.exemptPolicyViolationKeys_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -413,6 +442,10 @@ namespace Google.Ads.GoogleAds.V1.Common {
             break;
           case 10: {
             ignorablePolicyTopics_.AddEntriesFrom(input, _repeated_ignorablePolicyTopics_codec);
+            break;
+          }
+          case 18: {
+            exemptPolicyViolationKeys_.AddEntriesFrom(input, _repeated_exemptPolicyViolationKeys_codec);
             break;
           }
         }

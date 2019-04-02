@@ -46,7 +46,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
   }
   #region Messages
   /// <summary>
-  /// Indicates the way the entity such as user list is related to a user.
+  /// Indicates the way the resource such as user list is related to a user.
   /// </summary>
   public sealed partial class AccessReasonEnum : pb::IMessage<AccessReasonEnum> {
     private static readonly pb::MessageParser<AccessReasonEnum> _parser = new pb::MessageParser<AccessReasonEnum>(() => new AccessReasonEnum());
@@ -164,23 +164,23 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The entity is owned by the user.
+        /// The resource is owned by the user.
         /// </summary>
         [pbr::OriginalName("OWNED")] Owned = 2,
         /// <summary>
-        /// The entity is shared to the user.
+        /// The resource is shared to the user.
         /// </summary>
         [pbr::OriginalName("SHARED")] Shared = 3,
         /// <summary>
-        /// The entity is licensed to the user.
+        /// The resource is licensed to the user.
         /// </summary>
         [pbr::OriginalName("LICENSED")] Licensed = 4,
         /// <summary>
-        /// The user subscribed to the entity.
+        /// The user subscribed to the resource.
         /// </summary>
         [pbr::OriginalName("SUBSCRIBED")] Subscribed = 5,
         /// <summary>
-        /// The entity is accessible to the user.
+        /// The resource is accessible to the user.
         /// </summary>
         [pbr::OriginalName("AFFILIATED")] Affiliated = 6,
       }

@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvYmlkZGluZ19lcnJv",
             "ci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZXJyb3JzGhxnb29n",
-            "bGUvYXBpL2Fubm90YXRpb25zLnByb3RvIt8HChBCaWRkaW5nRXJyb3JFbnVt",
-            "IsoHCgxCaWRkaW5nRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dO",
+            "bGUvYXBpL2Fubm90YXRpb25zLnByb3RvIoQIChBCaWRkaW5nRXJyb3JFbnVt",
+            "Iu8HCgxCaWRkaW5nRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dO",
             "EAESKwonQklERElOR19TVFJBVEVHWV9UUkFOU0lUSU9OX05PVF9BTExPV0VE",
             "EAISLgoqQ0FOTk9UX0FUVEFDSF9CSURESU5HX1NUUkFURUdZX1RPX0NBTVBB",
             "SUdOEAcSKwonSU5WQUxJRF9BTk9OWU1PVVNfQklERElOR19TVFJBVEVHWV9U",
@@ -48,13 +48,13 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "VUNUX1RZUEVfQURHUk9VUF9DUklURVJJT04QHRIRCg1CSURfVE9PX1NNQUxM",
             "EB4SDwoLQklEX1RPT19CSUcQHxIiCh5CSURfVE9PX01BTllfRlJBQ1RJT05B",
             "TF9ESUdJVFMQIBIXChNJTlZBTElEX0RPTUFJTl9OQU1FECESJAogTk9UX0NP",
-            "TVBBVElCTEVfV0lUSF9QQVlNRU5UX01PREUQIkLsAQoiY29tLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxLmVycm9yc0IRQmlkZGluZ0Vycm9yUHJvdG9QAVpE",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
-            "b2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMVxF",
-            "cnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RXJyb3JzYgZw",
-            "cm90bzM="));
+            "TVBBVElCTEVfV0lUSF9QQVlNRU5UX01PREUQIhIjCh9OT1RfQ09NUEFUSUJM",
+            "RV9XSVRIX0JVREdFVF9UWVBFECNC7AEKImNvbS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5lcnJvcnNCEUJpZGRpbmdFcnJvclByb3RvUAFaRGdvb2dsZS5n",
+            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
+            "MS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
+            "VjEuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRXJyb3Jz6gIi",
+            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -272,6 +272,10 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// The field is not compatible with payment mode.
         /// </summary>
         [pbr::OriginalName("NOT_COMPATIBLE_WITH_PAYMENT_MODE")] NotCompatibleWithPaymentMode = 34,
+        /// <summary>
+        /// Bidding strategy is incompatible with the budget type.
+        /// </summary>
+        [pbr::OriginalName("NOT_COMPATIBLE_WITH_BUDGET_TYPE")] NotCompatibleWithBudgetType = 35,
       }
 
     }

@@ -1401,6 +1401,98 @@ namespace Google.Ads.GoogleAds.V1.Services
     }
 
     /// <summary>
+    /// Resource name for the 'asset' resource.
+    /// </summary>
+    public sealed partial class AssetName : gax::IResourceName, sys::IEquatable<AssetName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/assets/{asset}");
+
+        /// <summary>
+        /// Parses the given asset resource name in string form into a new
+        /// <see cref="AssetName"/> instance.
+        /// </summary>
+        /// <param name="assetName">The asset resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="AssetName"/> if successful.</returns>
+        public static AssetName Parse(string assetName)
+        {
+            gax::GaxPreconditions.CheckNotNull(assetName, nameof(assetName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(assetName);
+            return new AssetName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given asset resource name in string form into a new
+        /// <see cref="AssetName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="assetName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="assetName">The asset resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="AssetName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string assetName, out AssetName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(assetName, nameof(assetName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(assetName, out resourceName))
+            {
+                result = new AssetName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="AssetName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="assetId">The asset ID. Must not be <c>null</c>.</param>
+        public AssetName(string customerId, string assetId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            AssetId = gax::GaxPreconditions.CheckNotNull(assetId, nameof(assetId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The asset ID. Never <c>null</c>.
+        /// </summary>
+        public string AssetId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, AssetId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as AssetName);
+
+        /// <inheritdoc />
+        public bool Equals(AssetName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(AssetName a, AssetName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(AssetName a, AssetName b) => !(a == b);
+    }
+
+    /// <summary>
     /// Resource name for the 'bidding_strategy' resource.
     /// </summary>
     public sealed partial class BiddingStrategyName : gax::IResourceName, sys::IEquatable<BiddingStrategyName>
@@ -7315,7 +7407,7 @@ namespace Google.Ads.GoogleAds.V1.Services
     /// </summary>
     public sealed partial class ShoppingPerformanceViewName : gax::IResourceName, sys::IEquatable<ShoppingPerformanceViewName>
     {
-        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/shoppingPerformanceView/{shopping_performance_view}");
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/shoppingPerformanceView");
 
         /// <summary>
         /// Parses the given shopping_performance_view resource name in string form into a new
@@ -7327,7 +7419,7 @@ namespace Google.Ads.GoogleAds.V1.Services
         {
             gax::GaxPreconditions.CheckNotNull(shoppingPerformanceViewName, nameof(shoppingPerformanceViewName));
             gax::TemplatedResourceName resourceName = s_template.ParseName(shoppingPerformanceViewName);
-            return new ShoppingPerformanceViewName(resourceName[0], resourceName[1]);
+            return new ShoppingPerformanceViewName(resourceName[0]);
         }
 
         /// <summary>
@@ -7348,7 +7440,7 @@ namespace Google.Ads.GoogleAds.V1.Services
             gax::TemplatedResourceName resourceName;
             if (s_template.TryParseName(shoppingPerformanceViewName, out resourceName))
             {
-                result = new ShoppingPerformanceViewName(resourceName[0], resourceName[1]);
+                result = new ShoppingPerformanceViewName(resourceName[0]);
                 return true;
             }
             else
@@ -7363,11 +7455,9 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// from its component parts.
         /// </summary>
         /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
-        /// <param name="shoppingPerformanceViewId">The shoppingPerformanceView ID. Must not be <c>null</c>.</param>
-        public ShoppingPerformanceViewName(string customerId, string shoppingPerformanceViewId)
+        public ShoppingPerformanceViewName(string customerId)
         {
             CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
-            ShoppingPerformanceViewId = gax::GaxPreconditions.CheckNotNull(shoppingPerformanceViewId, nameof(shoppingPerformanceViewId));
         }
 
         /// <summary>
@@ -7375,16 +7465,11 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// </summary>
         public string CustomerId { get; }
 
-        /// <summary>
-        /// The shoppingPerformanceView ID. Never <c>null</c>.
-        /// </summary>
-        public string ShoppingPerformanceViewId { get; }
-
         /// <inheritdoc />
         public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
 
         /// <inheritdoc />
-        public override string ToString() => s_template.Expand(CustomerId, ShoppingPerformanceViewId);
+        public override string ToString() => s_template.Expand(CustomerId);
 
         /// <inheritdoc />
         public override int GetHashCode() => ToString().GetHashCode();

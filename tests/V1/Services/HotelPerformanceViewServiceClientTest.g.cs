@@ -40,7 +40,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(MockBehavior.Strict);
             GetHotelPerformanceViewRequest expectedRequest = new GetHotelPerformanceViewRequest
             {
-                ResourceName = new CustomerName("[CUSTOMER]").ToString(),
+                ResourceName = new HotelPerformanceViewName("[CUSTOMER]").ToString(),
             };
             HotelPerformanceView expectedResponse = new HotelPerformanceView
             {
@@ -49,7 +49,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             mockGrpcClient.Setup(x => x.GetHotelPerformanceView(expectedRequest, It.IsAny<CallOptions>()))
                 .Returns(expectedResponse);
             HotelPerformanceViewServiceClient client = new HotelPerformanceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerName("[CUSTOMER]").ToString();
+            string formattedResourceName = new HotelPerformanceViewName("[CUSTOMER]").ToString();
             HotelPerformanceView response = client.GetHotelPerformanceView(formattedResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -61,7 +61,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(MockBehavior.Strict);
             GetHotelPerformanceViewRequest expectedRequest = new GetHotelPerformanceViewRequest
             {
-                ResourceName = new CustomerName("[CUSTOMER]").ToString(),
+                ResourceName = new HotelPerformanceViewName("[CUSTOMER]").ToString(),
             };
             HotelPerformanceView expectedResponse = new HotelPerformanceView
             {
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             mockGrpcClient.Setup(x => x.GetHotelPerformanceViewAsync(expectedRequest, It.IsAny<CallOptions>()))
                 .Returns(new Grpc.Core.AsyncUnaryCall<HotelPerformanceView>(Task.FromResult(expectedResponse), null, null, null, null));
             HotelPerformanceViewServiceClient client = new HotelPerformanceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerName("[CUSTOMER]").ToString();
+            string formattedResourceName = new HotelPerformanceViewName("[CUSTOMER]").ToString();
             HotelPerformanceView response = await client.GetHotelPerformanceViewAsync(formattedResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(MockBehavior.Strict);
             GetHotelPerformanceViewRequest request = new GetHotelPerformanceViewRequest
             {
-                ResourceName = new CustomerName("[CUSTOMER]").ToString(),
+                ResourceName = new HotelPerformanceViewName("[CUSTOMER]").ToString(),
             };
             HotelPerformanceView expectedResponse = new HotelPerformanceView
             {
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(MockBehavior.Strict);
             GetHotelPerformanceViewRequest request = new GetHotelPerformanceViewRequest
             {
-                ResourceName = new CustomerName("[CUSTOMER]").ToString(),
+                ResourceName = new HotelPerformanceViewName("[CUSTOMER]").ToString(),
             };
             HotelPerformanceView expectedResponse = new HotelPerformanceView
             {

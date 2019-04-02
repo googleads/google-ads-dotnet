@@ -136,7 +136,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private global::Google.Ads.GoogleAds.V0.Enums.SharedSetTypeEnum.Types.SharedSetType type_ = 0;
     /// <summary>
     /// The type of this shared set: each shared set holds only a single kind
-    /// of entity. Required. Immutable.
+    /// of resource. Required. Immutable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V0.Enums.SharedSetTypeEnum.Types.SharedSetType Type {

@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvY29udmVyc2lvbl91",
             "cGxvYWRfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVy",
-            "cm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKjBQoZQ29udmVy",
-            "c2lvblVwbG9hZEVycm9yRW51bSKFBQoVQ29udmVyc2lvblVwbG9hZEVycm9y",
+            "cm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLUBgoZQ29udmVy",
+            "c2lvblVwbG9hZEVycm9yRW51bSK2BgoVQ29udmVyc2lvblVwbG9hZEVycm9y",
             "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEiMKH1RPT19NQU5ZX0NP",
             "TlZFUlNJT05TX0lOX1JFUVVFU1QQAhIVChFVTlBBUlNFQUJMRV9HQ0xJRBAD",
             "Eh0KGUNPTlZFUlNJT05fUFJFQ0VERVNfR0NMSUQQBBIRCg1FWFBJUkVEX0dD",
@@ -41,13 +41,17 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "VF9GT1JfRVhURVJOQUxMWV9BVFRSSUJVVEVEX0NPTlZFUlNJT05fQUNUSU9O",
             "EA0SRgpCT1JERVJfSURfTk9UX1BFUk1JVFRFRF9GT1JfRVhURVJOQUxMWV9B",
             "VFRSSUJVVEVEX0NPTlZFUlNJT05fQUNUSU9OEA4SGwoXT1JERVJfSURfQUxS",
-            "RUFEWV9JTl9VU0UQDxIWChJEVVBMSUNBVEVfT1JERVJfSUQQEEL1AQoiY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9yc0IaQ29udmVyc2lvblVw",
-            "bG9hZEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
-            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNH",
-            "QUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVc",
-            "QWRzXEdvb2dsZUFkc1xWMVxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xl",
-            "QWRzOjpWMTo6RXJyb3JzYgZwcm90bzM="));
+            "RUFEWV9JTl9VU0UQDxIWChJEVVBMSUNBVEVfT1JERVJfSUQQEBITCg9UT09f",
+            "UkVDRU5UX0NBTEwQERIQCgxFWFBJUkVEX0NBTEwQEhISCg5DQUxMX05PVF9G",
+            "T1VORBATEhwKGENPTlZFUlNJT05fUFJFQ0VERVNfQ0FMTBAUEjAKLENPTlZF",
+            "UlNJT05fVFJBQ0tJTkdfTk9UX0VOQUJMRURfQVRfQ0FMTF9USU1FEBUSJAog",
+            "VU5QQVJTRUFCTEVfQ0FMTEVSU19QSE9ORV9OVU1CRVIQFkL1AQoiY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9yc0IaQ29udmVyc2lvblVwbG9h",
+            "ZEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
+            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNHQUGq",
+            "Ah5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWMVxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMTo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -254,6 +258,35 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// conversion action combination.
         /// </summary>
         [pbr::OriginalName("DUPLICATE_ORDER_ID")] DuplicateOrderId = 16,
+        /// <summary>
+        /// The call occurred too recently. Please try uploading again after 24 hours
+        /// have passed since the call occurred.
+        /// </summary>
+        [pbr::OriginalName("TOO_RECENT_CALL")] TooRecentCall = 17,
+        /// <summary>
+        /// The click that initiated the call is too old for this conversion to be
+        /// imported.
+        /// </summary>
+        [pbr::OriginalName("EXPIRED_CALL")] ExpiredCall = 18,
+        /// <summary>
+        /// The call or the click leading to the call was not found.
+        /// </summary>
+        [pbr::OriginalName("CALL_NOT_FOUND")] CallNotFound = 19,
+        /// <summary>
+        /// The specified conversion_date_time is before the call_start_date_time.
+        /// </summary>
+        [pbr::OriginalName("CONVERSION_PRECEDES_CALL")] ConversionPrecedesCall = 20,
+        /// <summary>
+        /// The click associated with the call does not contain conversion tracking
+        /// information.
+        /// </summary>
+        [pbr::OriginalName("CONVERSION_TRACKING_NOT_ENABLED_AT_CALL_TIME")] ConversionTrackingNotEnabledAtCallTime = 21,
+        /// <summary>
+        /// The caller’s phone number cannot be parsed. It should be formatted either
+        /// as E.164 "+16502531234", International "+64 3-331 6005" or US national
+        /// number "6502531234".
+        /// </summary>
+        [pbr::OriginalName("UNPARSEABLE_CALLERS_PHONE_NUMBER")] UnparseableCallersPhoneNumber = 22,
       }
 
     }

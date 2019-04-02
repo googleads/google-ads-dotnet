@@ -98,6 +98,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
     /// 4) CONTAINS_ANY(FeedAttribute[12345678,0],{"Mars cruise","Venus cruise"})
     /// 5) AND(IN(FEED_ITEM_ID,{10001,10002}),EQUALS(CONTEXT.DEVICE,"Mobile"))
     /// See
+    ///
     /// https:
     /// //developers.google.com/adwords/api/docs/guides/feed-matching-functions
     ///

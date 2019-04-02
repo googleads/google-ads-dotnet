@@ -28,8 +28,8 @@ namespace Google.Ads.GoogleAds.V0.Enums {
             "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuZW51bXMaHGdvb2ds",
             "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ifQoRQmlkZGluZ1NvdXJjZUVudW0i",
             "aAoNQmlkZGluZ1NvdXJjZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04Q",
-            "ARILCgdBREdST1VQEAISDQoJQ1JJVEVSSU9OEAMSHQoZQ0FNUEFJR05fQklE",
-            "RElOR19TVFJBVEVHWRAFQucBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "ARIdChlDQU1QQUlHTl9CSURESU5HX1NUUkFURUdZEAUSCwoHQURHUk9VUBAC",
+            "Eg0KCUNSSVRFUklPThADQucBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
             "djAuZW51bXNCEkJpZGRpbmdTb3VyY2VQcm90b1ABWkJnb29nbGUuZ29sYW5n",
             "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjAvZW51",
             "bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMC5FbnVt",
@@ -152,7 +152,9 @@ namespace Google.Ads.GoogleAds.V0.Enums {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       /// <summary>
-      /// Enum describing possible bidding sources.
+      /// Indicates where a bid or target is defined. For example, an ad group
+      /// criterion may define a cpc bid directly, or it can inherit its cpc bid from
+      /// the ad group.
       /// </summary>
       public enum BiddingSource {
         /// <summary>
@@ -164,17 +166,17 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Bidding entity is defined on the ad group.
+        /// Effective bid or target is inherited from campaign bidding strategy.
+        /// </summary>
+        [pbr::OriginalName("CAMPAIGN_BIDDING_STRATEGY")] CampaignBiddingStrategy = 5,
+        /// <summary>
+        /// The bid or target is defined on the ad group.
         /// </summary>
         [pbr::OriginalName("ADGROUP")] Adgroup = 2,
         /// <summary>
-        /// Bidding entity is defined on the ad group criterion.
+        /// The bid or target is defined on the ad group criterion.
         /// </summary>
         [pbr::OriginalName("CRITERION")] Criterion = 3,
-        /// <summary>
-        /// Effective bidding entity is inherited from campaign bidding strategy.
-        /// </summary>
-        [pbr::OriginalName("CAMPAIGN_BIDDING_STRATEGY")] CampaignBiddingStrategy = 5,
       }
 
     }

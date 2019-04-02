@@ -29,134 +29,178 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "bGUvYWRzL2dvb2dsZWFkcy92MS9jb21tb24vYWRfYXNzZXQucHJvdG8aQ2dv",
             "b2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zL2NhbGxfY29udmVyc2lvbl9y",
             "ZXBvcnRpbmdfc3RhdGUucHJvdG8aPWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Yx",
-            "L2VudW1zL2Rpc3BsYXlfYWRfZm9ybWF0X3NldHRpbmcucHJvdG8aLWdvb2ds",
-            "ZS9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zL21pbWVfdHlwZS5wcm90bxoeZ29v",
-            "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90",
-            "YXRpb25zLnByb3RvIqQBCgpUZXh0QWRJbmZvEi4KCGhlYWRsaW5lGAEgASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKDGRlc2NyaXB0aW9u",
-            "MRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIyCgxkZXNj",
-            "cmlwdGlvbjIYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUi",
-            "9wIKEkV4cGFuZGVkVGV4dEFkSW5mbxI0Cg5oZWFkbGluZV9wYXJ0MRgBIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI0Cg5oZWFkbGluZV9w",
-            "YXJ0MhgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI0Cg5o",
-            "ZWFkbGluZV9wYXJ0MxgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZRIxCgtkZXNjcmlwdGlvbhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRIyCgxkZXNjcmlwdGlvbjIYByABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUSKwoFcGF0aDEYBCABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUSKwoFcGF0aDIYBSABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUihQUKDkNhbGxPbmx5QWRJbmZvEjIKDGNvdW50",
-            "cnlfY29kZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIy",
-            "CgxwaG9uZV9udW1iZXIYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUSMwoNYnVzaW5lc3NfbmFtZRgDIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRIyCgxkZXNjcmlwdGlvbjEYBCABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUSMgoMZGVzY3JpcHRpb24yGAUgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjAKDGNhbGxfdHJhY2tlZBgG",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSOwoXZGlzYWJsZV9j",
-            "YWxsX2NvbnZlcnNpb24YByABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZh",
-            "bHVlEkMKHXBob25lX251bWJlcl92ZXJpZmljYXRpb25fdXJsGAggASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjcKEWNvbnZlcnNpb25fYWN0",
-            "aW9uGAkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEoABChpj",
-            "b252ZXJzaW9uX3JlcG9ydGluZ19zdGF0ZRgKIAEoDjJcLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxLmVudW1zLkNhbGxDb252ZXJzaW9uUmVwb3J0aW5nU3Rh",
-            "dGVFbnVtLkNhbGxDb252ZXJzaW9uUmVwb3J0aW5nU3RhdGUiUAobRXhwYW5k",
-            "ZWREeW5hbWljU2VhcmNoQWRJbmZvEjEKC2Rlc2NyaXB0aW9uGAEgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIg0KC0hvdGVsQWRJbmZvIhUK",
-            "E1Nob3BwaW5nU21hcnRBZEluZm8iFwoVU2hvcHBpbmdQcm9kdWN0QWRJbmZv",
-            "IqkECgtHbWFpbEFkSW5mbxI7CgZ0ZWFzZXIYASABKAsyKy5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MS5jb21tb24uR21haWxUZWFzZXISMgoMaGVhZGVyX2lt",
-            "YWdlGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjUKD21h",
-            "cmtldGluZ19pbWFnZRgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZRI+ChhtYXJrZXRpbmdfaW1hZ2VfaGVhZGxpbmUYBCABKAsyHC5nb29n",
-            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSQQobbWFya2V0aW5nX2ltYWdlX2Rl",
-            "c2NyaXB0aW9uGAUgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "EmMKJm1hcmtldGluZ19pbWFnZV9kaXNwbGF5X2NhbGxfdG9fYWN0aW9uGAYg",
-            "ASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkRpc3BsYXlD",
-            "YWxsVG9BY3Rpb24SRAoOcHJvZHVjdF9pbWFnZXMYByADKAsyLC5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MS5jb21tb24uUHJvZHVjdEltYWdlEkQKDnByb2R1",
-            "Y3RfdmlkZW9zGAggAygLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29t",
-            "bW9uLlByb2R1Y3RWaWRlbyLXAQoLR21haWxUZWFzZXISLgoIaGVhZGxpbmUY",
-            "ASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMQoLZGVzY3Jp",
-            "cHRpb24YAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoN",
-            "YnVzaW5lc3NfbmFtZRgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZRIwCgpsb2dvX2ltYWdlGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cmluZ1ZhbHVlIqwBChNEaXNwbGF5Q2FsbFRvQWN0aW9uEioKBHRleHQYASAB",
-            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMAoKdGV4dF9jb2xv",
-            "chgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI3ChF1cmxf",
-            "Y29sbGVjdGlvbl9pZBgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZSLLAQoMUHJvZHVjdEltYWdlEjMKDXByb2R1Y3RfaW1hZ2UYASABKAsy",
-            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMQoLZGVzY3JpcHRpb24Y",
-            "AiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSUwoWZGlzcGxh",
-            "eV9jYWxsX3RvX2FjdGlvbhgDIAEoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxLmNvbW1vbi5EaXNwbGF5Q2FsbFRvQWN0aW9uIkMKDFByb2R1Y3RWaWRl",
-            "bxIzCg1wcm9kdWN0X3ZpZGVvGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cmluZ1ZhbHVlIvEECgtJbWFnZUFkSW5mbxIwCgtwaXhlbF93aWR0aBgEIAEo",
-            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjEKDHBpeGVsX2hlaWdo",
-            "dBgFIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEi8KCWltYWdl",
-            "X3VybBgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI4ChNw",
-            "cmV2aWV3X3BpeGVsX3dpZHRoGAcgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDY0VmFsdWUSOQoUcHJldmlld19waXhlbF9oZWlnaHQYCCABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuSW50NjRWYWx1ZRI3ChFwcmV2aWV3X2ltYWdlX3VybBgJ",
-            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJHCgltaW1lX3R5",
-            "cGUYCiABKA4yNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5NaW1l",
-            "VHlwZUVudW0uTWltZVR5cGUSKgoEbmFtZRgLIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRIyCgptZWRpYV9maWxlGAEgASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlSAASKwoEZGF0YRgCIAEoCzIbLmdvb2ds",
-            "ZS5wcm90b2J1Zi5CeXRlc1ZhbHVlSAASPwoYYWRfaWRfdG9fY29weV9pbWFn",
-            "ZV9mcm9tGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVIAEIH",
-            "CgVpbWFnZSIbChlWaWRlb0J1bXBlckluU3RyZWFtQWRJbmZvIiEKH1ZpZGVv",
-            "Tm9uU2tpcHBhYmxlSW5TdHJlYW1BZEluZm8ijwEKG1ZpZGVvVHJ1ZVZpZXdJ",
-            "blN0cmVhbUFkSW5mbxI5ChNhY3Rpb25fYnV0dG9uX2xhYmVsGAEgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjUKD2FjdGlvbl9oZWFkbGlu",
-            "ZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJ5ChRWaWRl",
-            "b091dHN0cmVhbUFkSW5mbxIuCghoZWFkbGluZRgBIAEoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgtkZXNjcmlwdGlvbhgCIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSKOAwoLVmlkZW9BZEluZm8SMAoK",
-            "bWVkaWFfZmlsZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZRJQCglpbl9zdHJlYW0YAiABKAsyOy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MS5jb21tb24uVmlkZW9UcnVlVmlld0luU3RyZWFtQWRJbmZvSAASSwoGYnVt",
-            "cGVyGAMgASgLMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlZp",
-            "ZGVvQnVtcGVySW5TdHJlYW1BZEluZm9IABJKCgpvdXRfc3RyZWFtGAQgASgL",
-            "MjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlZpZGVvT3V0c3Ry",
-            "ZWFtQWRJbmZvSAASWAoNbm9uX3NraXBwYWJsZRgFIAEoCzI/Lmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5WaWRlb05vblNraXBwYWJsZUluU3Ry",
-            "ZWFtQWRJbmZvSABCCAoGZm9ybWF0IvUBChZSZXNwb25zaXZlU2VhcmNoQWRJ",
-            "bmZvEj4KCWhlYWRsaW5lcxgBIAMoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxLmNvbW1vbi5BZFRleHRBc3NldBJBCgxkZXNjcmlwdGlvbnMYAiADKAsy",
-            "Ky5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uQWRUZXh0QXNzZXQS",
-            "KwoFcGF0aDEYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "KwoFcGF0aDIYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUi",
-            "/QYKHUxlZ2FjeVJlc3BvbnNpdmVEaXNwbGF5QWRJbmZvEjQKDnNob3J0X2hl",
-            "YWRsaW5lGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjMK",
-            "DWxvbmdfaGVhZGxpbmUYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUSMQoLZGVzY3JpcHRpb24YAyABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUSMwoNYnVzaW5lc3NfbmFtZRgEIAEoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5TdHJpbmdWYWx1ZRI4ChRhbGxvd19mbGV4aWJsZV9jb2xvchgF",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSMgoMYWNjZW50X2Nv",
-            "bG9yGAYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjAKCm1h",
-            "aW5fY29sb3IYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "OQoTY2FsbF90b19hY3Rpb25fdGV4dBgIIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRIwCgpsb2dvX2ltYWdlGAkgASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLlN0cmluZ1ZhbHVlEjcKEXNxdWFyZV9sb2dvX2ltYWdlGAogASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjUKD21hcmtldGluZ19p",
-            "bWFnZRgLIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI8ChZz",
-            "cXVhcmVfbWFya2V0aW5nX2ltYWdlGAwgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LlN0cmluZ1ZhbHVlEmgKDmZvcm1hdF9zZXR0aW5nGA0gASgOMlAuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjEuZW51bXMuRGlzcGxheUFkRm9ybWF0U2V0dGlu",
-            "Z0VudW0uRGlzcGxheUFkRm9ybWF0U2V0dGluZxIyCgxwcmljZV9wcmVmaXgY",
-            "DiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMAoKcHJvbW9f",
-            "dGV4dBgPIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZULrAQoi",
-            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbkIQQWRUeXBlSW5m",
-            "b3NQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjEvY29tbW9uO2NvbW1vbqICA0dBQaoCHkdv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlYxLkNvbW1vbsoCHkdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYxXENvbW1vbuoCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYx",
-            "OjpDb21tb25iBnByb3RvMw=="));
+            "L2VudW1zL2Rpc3BsYXlfYWRfZm9ybWF0X3NldHRpbmcucHJvdG8aQ2dvb2ds",
+            "ZS9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zL2xlZ2FjeV9hcHBfaW5zdGFsbF9h",
+            "ZF9hcHBfc3RvcmUucHJvdG8aLWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2Vu",
+            "dW1zL21pbWVfdHlwZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJz",
+            "LnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIqQBCgpUZXh0",
+            "QWRJbmZvEi4KCGhlYWRsaW5lGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlEjIKDGRlc2NyaXB0aW9uMRgCIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5TdHJpbmdWYWx1ZRIyCgxkZXNjcmlwdGlvbjIYAyABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUi9wIKEkV4cGFuZGVkVGV4dEFkSW5m",
+            "bxI0Cg5oZWFkbGluZV9wYXJ0MRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRI0Cg5oZWFkbGluZV9wYXJ0MhgCIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRI0Cg5oZWFkbGluZV9wYXJ0MxgGIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgtkZXNjcmlwdGlvbhgD",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIyCgxkZXNjcmlw",
+            "dGlvbjIYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKwoF",
+            "cGF0aDEYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKwoF",
+            "cGF0aDIYBSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUi5wUK",
+            "DkNhbGxPbmx5QWRJbmZvEjIKDGNvdW50cnlfY29kZRgBIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIyCgxwaG9uZV9udW1iZXIYAiABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoNYnVzaW5lc3NfbmFt",
+            "ZRgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIvCgloZWFk",
+            "bGluZTEYCyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSLwoJ",
+            "aGVhZGxpbmUyGAwgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjIKDGRlc2NyaXB0aW9uMRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRIyCgxkZXNjcmlwdGlvbjIYBSABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUSMAoMY2FsbF90cmFja2VkGAYgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLkJvb2xWYWx1ZRI7ChdkaXNhYmxlX2NhbGxfY29udmVyc2lv",
+            "bhgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSQwodcGhvbmVf",
+            "bnVtYmVyX3ZlcmlmaWNhdGlvbl91cmwYCCABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUSNwoRY29udmVyc2lvbl9hY3Rpb24YCSABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSgAEKGmNvbnZlcnNpb25fcmVw",
+            "b3J0aW5nX3N0YXRlGAogASgOMlwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEu",
+            "ZW51bXMuQ2FsbENvbnZlcnNpb25SZXBvcnRpbmdTdGF0ZUVudW0uQ2FsbENv",
+            "bnZlcnNpb25SZXBvcnRpbmdTdGF0ZSJQChtFeHBhbmRlZER5bmFtaWNTZWFy",
+            "Y2hBZEluZm8SMQoLZGVzY3JpcHRpb24YASABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUiDQoLSG90ZWxBZEluZm8iFQoTU2hvcHBpbmdTbWFy",
+            "dEFkSW5mbyIXChVTaG9wcGluZ1Byb2R1Y3RBZEluZm8iqQQKC0dtYWlsQWRJ",
+            "bmZvEjsKBnRlYXNlchgBIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "LmNvbW1vbi5HbWFpbFRlYXNlchIyCgxoZWFkZXJfaW1hZ2UYAiABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNQoPbWFya2V0aW5nX2ltYWdl",
+            "GAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEj4KGG1hcmtl",
+            "dGluZ19pbWFnZV9oZWFkbGluZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRJBChttYXJrZXRpbmdfaW1hZ2VfZGVzY3JpcHRpb24YBSAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSYwombWFya2V0aW5n",
+            "X2ltYWdlX2Rpc3BsYXlfY2FsbF90b19hY3Rpb24YBiABKAsyMy5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MS5jb21tb24uRGlzcGxheUNhbGxUb0FjdGlvbhJE",
+            "Cg5wcm9kdWN0X2ltYWdlcxgHIAMoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxLmNvbW1vbi5Qcm9kdWN0SW1hZ2USRAoOcHJvZHVjdF92aWRlb3MYCCAD",
+            "KAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uUHJvZHVjdFZp",
+            "ZGVvItcBCgtHbWFpbFRlYXNlchIuCghoZWFkbGluZRgBIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgtkZXNjcmlwdGlvbhgCIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1idXNpbmVzc19uYW1l",
+            "GAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjAKCmxvZ29f",
+            "aW1hZ2UYBCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUirAEK",
+            "E0Rpc3BsYXlDYWxsVG9BY3Rpb24SKgoEdGV4dBgBIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgp0ZXh0X2NvbG9yGAIgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjcKEXVybF9jb2xsZWN0aW9uX2lk",
+            "GAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIssBCgxQcm9k",
+            "dWN0SW1hZ2USMwoNcHJvZHVjdF9pbWFnZRgBIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5TdHJpbmdWYWx1ZRIxCgtkZXNjcmlwdGlvbhgCIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJTChZkaXNwbGF5X2NhbGxfdG9fYWN0",
+            "aW9uGAMgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkRp",
+            "c3BsYXlDYWxsVG9BY3Rpb24iQwoMUHJvZHVjdFZpZGVvEjMKDXByb2R1Y3Rf",
+            "dmlkZW8YASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUi8QQK",
+            "C0ltYWdlQWRJbmZvEjAKC3BpeGVsX3dpZHRoGAQgASgLMhsuZ29vZ2xlLnBy",
+            "b3RvYnVmLkludDY0VmFsdWUSMQoMcGl4ZWxfaGVpZ2h0GAUgASgLMhsuZ29v",
+            "Z2xlLnByb3RvYnVmLkludDY0VmFsdWUSLwoJaW1hZ2VfdXJsGAYgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjgKE3ByZXZpZXdfcGl4ZWxf",
+            "d2lkdGgYByABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI5ChRw",
+            "cmV2aWV3X3BpeGVsX2hlaWdodBgIIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
+            "bnQ2NFZhbHVlEjcKEXByZXZpZXdfaW1hZ2VfdXJsGAkgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEkcKCW1pbWVfdHlwZRgKIAEoDjI0Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLk1pbWVUeXBlRW51bS5NaW1l",
+            "VHlwZRIqCgRuYW1lGAsgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
+            "bHVlEjIKCm1lZGlhX2ZpbGUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWVIABIrCgRkYXRhGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkJ5",
+            "dGVzVmFsdWVIABI/ChhhZF9pZF90b19jb3B5X2ltYWdlX2Zyb20YAyABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUgAQgcKBWltYWdlIhsKGVZp",
+            "ZGVvQnVtcGVySW5TdHJlYW1BZEluZm8iIQofVmlkZW9Ob25Ta2lwcGFibGVJ",
+            "blN0cmVhbUFkSW5mbyKPAQobVmlkZW9UcnVlVmlld0luU3RyZWFtQWRJbmZv",
+            "EjkKE2FjdGlvbl9idXR0b25fbGFiZWwYASABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUSNQoPYWN0aW9uX2hlYWRsaW5lGAIgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlInkKFFZpZGVvT3V0c3RyZWFtQWRJ",
+            "bmZvEi4KCGhlYWRsaW5lGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEjEKC2Rlc2NyaXB0aW9uGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlIo4DCgtWaWRlb0FkSW5mbxIwCgptZWRpYV9maWxlGAEg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElAKCWluX3N0cmVh",
+            "bRgCIAEoCzI7Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5WaWRl",
+            "b1RydWVWaWV3SW5TdHJlYW1BZEluZm9IABJLCgZidW1wZXIYAyABKAsyOS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uVmlkZW9CdW1wZXJJblN0",
+            "cmVhbUFkSW5mb0gAEkoKCm91dF9zdHJlYW0YBCABKAsyNC5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MS5jb21tb24uVmlkZW9PdXRzdHJlYW1BZEluZm9IABJY",
+            "Cg1ub25fc2tpcHBhYmxlGAUgASgLMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djEuY29tbW9uLlZpZGVvTm9uU2tpcHBhYmxlSW5TdHJlYW1BZEluZm9IAEII",
+            "CgZmb3JtYXQi9QEKFlJlc3BvbnNpdmVTZWFyY2hBZEluZm8SPgoJaGVhZGxp",
+            "bmVzGAEgAygLMisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkFk",
+            "VGV4dEFzc2V0EkEKDGRlc2NyaXB0aW9ucxgCIAMoCzIrLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYxLmNvbW1vbi5BZFRleHRBc3NldBIrCgVwYXRoMRgDIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIrCgVwYXRoMhgEIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSL9BgodTGVnYWN5UmVz",
+            "cG9uc2l2ZURpc3BsYXlBZEluZm8SNAoOc2hvcnRfaGVhZGxpbmUYASABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoNbG9uZ19oZWFkbGlu",
+            "ZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgtkZXNj",
+            "cmlwdGlvbhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIz",
+            "Cg1idXNpbmVzc19uYW1lGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEjgKFGFsbG93X2ZsZXhpYmxlX2NvbG9yGAUgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLkJvb2xWYWx1ZRIyCgxhY2NlbnRfY29sb3IYBiABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMAoKbWFpbl9jb2xvchgHIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI5ChNjYWxsX3RvX2Fj",
+            "dGlvbl90ZXh0GAggASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjAKCmxvZ29faW1hZ2UYCSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWUSNwoRc3F1YXJlX2xvZ29faW1hZ2UYCiABKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUSNQoPbWFya2V0aW5nX2ltYWdlGAsgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjwKFnNxdWFyZV9tYXJrZXRp",
+            "bmdfaW1hZ2UYDCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
+            "aAoOZm9ybWF0X3NldHRpbmcYDSABKA4yUC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MS5lbnVtcy5EaXNwbGF5QWRGb3JtYXRTZXR0aW5nRW51bS5EaXNwbGF5",
+            "QWRGb3JtYXRTZXR0aW5nEjIKDHByaWNlX3ByZWZpeBgOIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgpwcm9tb190ZXh0GA8gASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIqsDCglBcHBBZEluZm8SRgoR",
+            "bWFuZGF0b3J5X2FkX3RleHQYASABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MS5jb21tb24uQWRUZXh0QXNzZXQSPgoJaGVhZGxpbmVzGAIgAygLMisu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkFkVGV4dEFzc2V0EkEK",
+            "DGRlc2NyaXB0aW9ucxgDIAMoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "LmNvbW1vbi5BZFRleHRBc3NldBI8CgZpbWFnZXMYBCADKAsyLC5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MS5jb21tb24uQWRJbWFnZUFzc2V0EkQKDnlvdXR1",
+            "YmVfdmlkZW9zGAUgAygLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29t",
+            "bW9uLkFkVmlkZW9Bc3NldBJPChNodG1sNV9tZWRpYV9idW5kbGVzGAYgAygL",
+            "MjIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkFkTWVkaWFCdW5k",
+            "bGVBc3NldCLLAgoWTGVnYWN5QXBwSW5zdGFsbEFkSW5mbxIsCgZhcHBfaWQY",
+            "ASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSawoJYXBwX3N0",
+            "b3JlGAIgASgOMlguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuTGVn",
+            "YWN5QXBwSW5zdGFsbEFkQXBwU3RvcmVFbnVtLkxlZ2FjeUFwcEluc3RhbGxB",
+            "ZEFwcFN0b3JlEi4KCGhlYWRsaW5lGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEjIKDGRlc2NyaXB0aW9uMRgEIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRIyCgxkZXNjcmlwdGlvbjIYBSABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUiqggKF1Jlc3BvbnNpdmVEaXNw",
+            "bGF5QWRJbmZvEkYKEG1hcmtldGluZ19pbWFnZXMYASADKAsyLC5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MS5jb21tb24uQWRJbWFnZUFzc2V0Ek0KF3NxdWFy",
+            "ZV9tYXJrZXRpbmdfaW1hZ2VzGAIgAygLMiwuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjEuY29tbW9uLkFkSW1hZ2VBc3NldBJBCgtsb2dvX2ltYWdlcxgDIAMo",
+            "CzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5BZEltYWdlQXNz",
+            "ZXQSSAoSc3F1YXJlX2xvZ29faW1hZ2VzGAQgAygLMiwuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjEuY29tbW9uLkFkSW1hZ2VBc3NldBI+CgloZWFkbGluZXMY",
+            "BSADKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uQWRUZXh0",
+            "QXNzZXQSQgoNbG9uZ19oZWFkbGluZRgGIAEoCzIrLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYxLmNvbW1vbi5BZFRleHRBc3NldBJBCgxkZXNjcmlwdGlvbnMY",
+            "ByADKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uQWRUZXh0",
+            "QXNzZXQSRAoOeW91dHViZV92aWRlb3MYCCADKAsyLC5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MS5jb21tb24uQWRWaWRlb0Fzc2V0EjMKDWJ1c2luZXNzX25h",
+            "bWUYCSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMAoKbWFp",
+            "bl9jb2xvchgKIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIy",
+            "CgxhY2NlbnRfY29sb3IYCyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWUSOAoUYWxsb3dfZmxleGlibGVfY29sb3IYDCABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuQm9vbFZhbHVlEjkKE2NhbGxfdG9fYWN0aW9uX3RleHQYDSAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMgoMcHJpY2VfcHJl",
+            "Zml4GA4gASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjAKCnBy",
+            "b21vX3RleHQYDyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
+            "aAoOZm9ybWF0X3NldHRpbmcYECABKA4yUC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MS5lbnVtcy5EaXNwbGF5QWRGb3JtYXRTZXR0aW5nRW51bS5EaXNwbGF5",
+            "QWRGb3JtYXRTZXR0aW5nQusBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djEuY29tbW9uQhBBZFR5cGVJbmZvc1Byb3RvUAFaRGdvb2dsZS5nb2xhbmcu",
+            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9jb21t",
+            "b247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEuQ29t",
+            "bW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcQ29tbW9u6gIiR29vZ2xl",
+            "OjpBZHM6Okdvb2dsZUFkczo6VjE6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.AdAssetReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DisplayAdFormatSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.MimeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.AdAssetReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DisplayAdFormatSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.LegacyAppInstallAdAppStoreReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.MimeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.TextAdInfo), global::Google.Ads.GoogleAds.V1.Common.TextAdInfo.Parser, new[]{ "Headline", "Description1", "Description2" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ExpandedTextAdInfo), global::Google.Ads.GoogleAds.V1.Common.ExpandedTextAdInfo.Parser, new[]{ "HeadlinePart1", "HeadlinePart2", "HeadlinePart3", "Description", "Description2", "Path1", "Path2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.CallOnlyAdInfo), global::Google.Ads.GoogleAds.V1.Common.CallOnlyAdInfo.Parser, new[]{ "CountryCode", "PhoneNumber", "BusinessName", "Description1", "Description2", "CallTracked", "DisableCallConversion", "PhoneNumberVerificationUrl", "ConversionAction", "ConversionReportingState" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.CallOnlyAdInfo), global::Google.Ads.GoogleAds.V1.Common.CallOnlyAdInfo.Parser, new[]{ "CountryCode", "PhoneNumber", "BusinessName", "Headline1", "Headline2", "Description1", "Description2", "CallTracked", "DisableCallConversion", "PhoneNumberVerificationUrl", "ConversionAction", "ConversionReportingState" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ExpandedDynamicSearchAdInfo), global::Google.Ads.GoogleAds.V1.Common.ExpandedDynamicSearchAdInfo.Parser, new[]{ "Description" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.HotelAdInfo), global::Google.Ads.GoogleAds.V1.Common.HotelAdInfo.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ShoppingSmartAdInfo), global::Google.Ads.GoogleAds.V1.Common.ShoppingSmartAdInfo.Parser, null, null, null, null),
@@ -173,7 +217,10 @@ namespace Google.Ads.GoogleAds.V1.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.VideoOutstreamAdInfo), global::Google.Ads.GoogleAds.V1.Common.VideoOutstreamAdInfo.Parser, new[]{ "Headline", "Description" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.VideoAdInfo), global::Google.Ads.GoogleAds.V1.Common.VideoAdInfo.Parser, new[]{ "MediaFile", "InStream", "Bumper", "OutStream", "NonSkippable" }, new[]{ "Format" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ResponsiveSearchAdInfo), global::Google.Ads.GoogleAds.V1.Common.ResponsiveSearchAdInfo.Parser, new[]{ "Headlines", "Descriptions", "Path1", "Path2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.LegacyResponsiveDisplayAdInfo), global::Google.Ads.GoogleAds.V1.Common.LegacyResponsiveDisplayAdInfo.Parser, new[]{ "ShortHeadline", "LongHeadline", "Description", "BusinessName", "AllowFlexibleColor", "AccentColor", "MainColor", "CallToActionText", "LogoImage", "SquareLogoImage", "MarketingImage", "SquareMarketingImage", "FormatSetting", "PricePrefix", "PromoText" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.LegacyResponsiveDisplayAdInfo), global::Google.Ads.GoogleAds.V1.Common.LegacyResponsiveDisplayAdInfo.Parser, new[]{ "ShortHeadline", "LongHeadline", "Description", "BusinessName", "AllowFlexibleColor", "AccentColor", "MainColor", "CallToActionText", "LogoImage", "SquareLogoImage", "MarketingImage", "SquareMarketingImage", "FormatSetting", "PricePrefix", "PromoText" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.AppAdInfo), global::Google.Ads.GoogleAds.V1.Common.AppAdInfo.Parser, new[]{ "MandatoryAdText", "Headlines", "Descriptions", "Images", "YoutubeVideos", "Html5MediaBundles" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.LegacyAppInstallAdInfo), global::Google.Ads.GoogleAds.V1.Common.LegacyAppInstallAdInfo.Parser, new[]{ "AppId", "AppStore", "Headline", "Description1", "Description2" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ResponsiveDisplayAdInfo), global::Google.Ads.GoogleAds.V1.Common.ResponsiveDisplayAdInfo.Parser, new[]{ "MarketingImages", "SquareMarketingImages", "LogoImages", "SquareLogoImages", "Headlines", "LongHeadline", "Descriptions", "YoutubeVideos", "BusinessName", "MainColor", "AccentColor", "AllowFlexibleColor", "CallToActionText", "PricePrefix", "PromoText", "FormatSetting" }, null, null, null)
           }));
     }
     #endregion
@@ -779,6 +826,8 @@ namespace Google.Ads.GoogleAds.V1.Common {
       CountryCode = other.CountryCode;
       PhoneNumber = other.PhoneNumber;
       BusinessName = other.BusinessName;
+      Headline1 = other.Headline1;
+      Headline2 = other.Headline2;
       Description1 = other.Description1;
       Description2 = other.Description2;
       CallTracked = other.CallTracked;
@@ -836,6 +885,36 @@ namespace Google.Ads.GoogleAds.V1.Common {
       get { return businessName_; }
       set {
         businessName_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "headline1" field.</summary>
+    public const int Headline1FieldNumber = 11;
+    private static readonly pb::FieldCodec<string> _single_headline1_codec = pb::FieldCodec.ForClassWrapper<string>(90);
+    private string headline1_;
+    /// <summary>
+    /// First headline in the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Headline1 {
+      get { return headline1_; }
+      set {
+        headline1_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "headline2" field.</summary>
+    public const int Headline2FieldNumber = 12;
+    private static readonly pb::FieldCodec<string> _single_headline2_codec = pb::FieldCodec.ForClassWrapper<string>(98);
+    private string headline2_;
+    /// <summary>
+    /// Second headline in the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Headline2 {
+      get { return headline2_; }
+      set {
+        headline2_ = value;
       }
     }
 
@@ -966,6 +1045,8 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (CountryCode != other.CountryCode) return false;
       if (PhoneNumber != other.PhoneNumber) return false;
       if (BusinessName != other.BusinessName) return false;
+      if (Headline1 != other.Headline1) return false;
+      if (Headline2 != other.Headline2) return false;
       if (Description1 != other.Description1) return false;
       if (Description2 != other.Description2) return false;
       if (CallTracked != other.CallTracked) return false;
@@ -982,6 +1063,8 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (countryCode_ != null) hash ^= CountryCode.GetHashCode();
       if (phoneNumber_ != null) hash ^= PhoneNumber.GetHashCode();
       if (businessName_ != null) hash ^= BusinessName.GetHashCode();
+      if (headline1_ != null) hash ^= Headline1.GetHashCode();
+      if (headline2_ != null) hash ^= Headline2.GetHashCode();
       if (description1_ != null) hash ^= Description1.GetHashCode();
       if (description2_ != null) hash ^= Description2.GetHashCode();
       if (callTracked_ != null) hash ^= CallTracked.GetHashCode();
@@ -1033,6 +1116,12 @@ namespace Google.Ads.GoogleAds.V1.Common {
         output.WriteRawTag(80);
         output.WriteEnum((int) ConversionReportingState);
       }
+      if (headline1_ != null) {
+        _single_headline1_codec.WriteTagAndValue(output, Headline1);
+      }
+      if (headline2_ != null) {
+        _single_headline2_codec.WriteTagAndValue(output, Headline2);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1049,6 +1138,12 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
       if (businessName_ != null) {
         size += _single_businessName_codec.CalculateSizeWithTag(BusinessName);
+      }
+      if (headline1_ != null) {
+        size += _single_headline1_codec.CalculateSizeWithTag(Headline1);
+      }
+      if (headline2_ != null) {
+        size += _single_headline2_codec.CalculateSizeWithTag(Headline2);
       }
       if (description1_ != null) {
         size += _single_description1_codec.CalculateSizeWithTag(Description1);
@@ -1095,6 +1190,16 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (other.businessName_ != null) {
         if (businessName_ == null || other.BusinessName != "") {
           BusinessName = other.BusinessName;
+        }
+      }
+      if (other.headline1_ != null) {
+        if (headline1_ == null || other.Headline1 != "") {
+          Headline1 = other.Headline1;
+        }
+      }
+      if (other.headline2_ != null) {
+        if (headline2_ == null || other.Headline2 != "") {
+          Headline2 = other.Headline2;
         }
       }
       if (other.description1_ != null) {
@@ -1206,6 +1311,20 @@ namespace Google.Ads.GoogleAds.V1.Common {
           }
           case 80: {
             conversionReportingState_ = (global::Google.Ads.GoogleAds.V1.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            string value = _single_headline1_codec.Read(input);
+            if (headline1_ == null || value != "") {
+              Headline1 = value;
+            }
+            break;
+          }
+          case 98: {
+            string value = _single_headline2_codec.Read(input);
+            if (headline2_ == null || value != "") {
+              Headline2 = value;
+            }
             break;
           }
         }
@@ -5154,6 +5273,1150 @@ namespace Google.Ads.GoogleAds.V1.Common {
             if (promoText_ == null || value != "") {
               PromoText = value;
             }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// An app ad.
+  /// </summary>
+  public sealed partial class AppAdInfo : pb::IMessage<AppAdInfo> {
+    private static readonly pb::MessageParser<AppAdInfo> _parser = new pb::MessageParser<AppAdInfo>(() => new AppAdInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AppAdInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.AdTypeInfosReflection.Descriptor.MessageTypes[20]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AppAdInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AppAdInfo(AppAdInfo other) : this() {
+      mandatoryAdText_ = other.mandatoryAdText_ != null ? other.mandatoryAdText_.Clone() : null;
+      headlines_ = other.headlines_.Clone();
+      descriptions_ = other.descriptions_.Clone();
+      images_ = other.images_.Clone();
+      youtubeVideos_ = other.youtubeVideos_.Clone();
+      html5MediaBundles_ = other.html5MediaBundles_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AppAdInfo Clone() {
+      return new AppAdInfo(this);
+    }
+
+    /// <summary>Field number for the "mandatory_ad_text" field.</summary>
+    public const int MandatoryAdTextFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V1.Common.AdTextAsset mandatoryAdText_;
+    /// <summary>
+    /// An optional text asset that, if specified, must always be displayed when
+    /// the ad is served.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.AdTextAsset MandatoryAdText {
+      get { return mandatoryAdText_; }
+      set {
+        mandatoryAdText_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "headlines" field.</summary>
+    public const int HeadlinesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> _repeated_headlines_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V1.Common.AdTextAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> headlines_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset>();
+    /// <summary>
+    /// List of text assets for headlines. When the ad serves the headlines will
+    /// be selected from this list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> Headlines {
+      get { return headlines_; }
+    }
+
+    /// <summary>Field number for the "descriptions" field.</summary>
+    public const int DescriptionsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> _repeated_descriptions_codec
+        = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V1.Common.AdTextAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> descriptions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset>();
+    /// <summary>
+    /// List of text assets for descriptions. When the ad serves the descriptions
+    /// will be selected from this list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> Descriptions {
+      get { return descriptions_; }
+    }
+
+    /// <summary>Field number for the "images" field.</summary>
+    public const int ImagesFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> _repeated_images_codec
+        = pb::FieldCodec.ForMessage(34, global::Google.Ads.GoogleAds.V1.Common.AdImageAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> images_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset>();
+    /// <summary>
+    /// List of image assets that may be displayed with the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> Images {
+      get { return images_; }
+    }
+
+    /// <summary>Field number for the "youtube_videos" field.</summary>
+    public const int YoutubeVideosFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset> _repeated_youtubeVideos_codec
+        = pb::FieldCodec.ForMessage(42, global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset> youtubeVideos_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset>();
+    /// <summary>
+    /// List of YouTube video assets that may be displayed with the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset> YoutubeVideos {
+      get { return youtubeVideos_; }
+    }
+
+    /// <summary>Field number for the "html5_media_bundles" field.</summary>
+    public const int Html5MediaBundlesFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdMediaBundleAsset> _repeated_html5MediaBundles_codec
+        = pb::FieldCodec.ForMessage(50, global::Google.Ads.GoogleAds.V1.Common.AdMediaBundleAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdMediaBundleAsset> html5MediaBundles_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdMediaBundleAsset>();
+    /// <summary>
+    /// List of media bundle assets that may be used with the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdMediaBundleAsset> Html5MediaBundles {
+      get { return html5MediaBundles_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AppAdInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AppAdInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(MandatoryAdText, other.MandatoryAdText)) return false;
+      if(!headlines_.Equals(other.headlines_)) return false;
+      if(!descriptions_.Equals(other.descriptions_)) return false;
+      if(!images_.Equals(other.images_)) return false;
+      if(!youtubeVideos_.Equals(other.youtubeVideos_)) return false;
+      if(!html5MediaBundles_.Equals(other.html5MediaBundles_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (mandatoryAdText_ != null) hash ^= MandatoryAdText.GetHashCode();
+      hash ^= headlines_.GetHashCode();
+      hash ^= descriptions_.GetHashCode();
+      hash ^= images_.GetHashCode();
+      hash ^= youtubeVideos_.GetHashCode();
+      hash ^= html5MediaBundles_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (mandatoryAdText_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(MandatoryAdText);
+      }
+      headlines_.WriteTo(output, _repeated_headlines_codec);
+      descriptions_.WriteTo(output, _repeated_descriptions_codec);
+      images_.WriteTo(output, _repeated_images_codec);
+      youtubeVideos_.WriteTo(output, _repeated_youtubeVideos_codec);
+      html5MediaBundles_.WriteTo(output, _repeated_html5MediaBundles_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (mandatoryAdText_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MandatoryAdText);
+      }
+      size += headlines_.CalculateSize(_repeated_headlines_codec);
+      size += descriptions_.CalculateSize(_repeated_descriptions_codec);
+      size += images_.CalculateSize(_repeated_images_codec);
+      size += youtubeVideos_.CalculateSize(_repeated_youtubeVideos_codec);
+      size += html5MediaBundles_.CalculateSize(_repeated_html5MediaBundles_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AppAdInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.mandatoryAdText_ != null) {
+        if (mandatoryAdText_ == null) {
+          mandatoryAdText_ = new global::Google.Ads.GoogleAds.V1.Common.AdTextAsset();
+        }
+        MandatoryAdText.MergeFrom(other.MandatoryAdText);
+      }
+      headlines_.Add(other.headlines_);
+      descriptions_.Add(other.descriptions_);
+      images_.Add(other.images_);
+      youtubeVideos_.Add(other.youtubeVideos_);
+      html5MediaBundles_.Add(other.html5MediaBundles_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (mandatoryAdText_ == null) {
+              mandatoryAdText_ = new global::Google.Ads.GoogleAds.V1.Common.AdTextAsset();
+            }
+            input.ReadMessage(mandatoryAdText_);
+            break;
+          }
+          case 18: {
+            headlines_.AddEntriesFrom(input, _repeated_headlines_codec);
+            break;
+          }
+          case 26: {
+            descriptions_.AddEntriesFrom(input, _repeated_descriptions_codec);
+            break;
+          }
+          case 34: {
+            images_.AddEntriesFrom(input, _repeated_images_codec);
+            break;
+          }
+          case 42: {
+            youtubeVideos_.AddEntriesFrom(input, _repeated_youtubeVideos_codec);
+            break;
+          }
+          case 50: {
+            html5MediaBundles_.AddEntriesFrom(input, _repeated_html5MediaBundles_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A legacy app install ad that only can be used by a few select customers.
+  /// </summary>
+  public sealed partial class LegacyAppInstallAdInfo : pb::IMessage<LegacyAppInstallAdInfo> {
+    private static readonly pb::MessageParser<LegacyAppInstallAdInfo> _parser = new pb::MessageParser<LegacyAppInstallAdInfo>(() => new LegacyAppInstallAdInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LegacyAppInstallAdInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.AdTypeInfosReflection.Descriptor.MessageTypes[21]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LegacyAppInstallAdInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LegacyAppInstallAdInfo(LegacyAppInstallAdInfo other) : this() {
+      AppId = other.AppId;
+      appStore_ = other.appStore_;
+      Headline = other.Headline;
+      Description1 = other.Description1;
+      Description2 = other.Description2;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LegacyAppInstallAdInfo Clone() {
+      return new LegacyAppInstallAdInfo(this);
+    }
+
+    /// <summary>Field number for the "app_id" field.</summary>
+    public const int AppIdFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_appId_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string appId_;
+    /// <summary>
+    /// The id of the mobile app.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AppId {
+      get { return appId_; }
+      set {
+        appId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "app_store" field.</summary>
+    public const int AppStoreFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V1.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore appStore_ = 0;
+    /// <summary>
+    /// The app store the mobile app is available in.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore AppStore {
+      get { return appStore_; }
+      set {
+        appStore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "headline" field.</summary>
+    public const int HeadlineFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_headline_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string headline_;
+    /// <summary>
+    /// The headline of the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Headline {
+      get { return headline_; }
+      set {
+        headline_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "description1" field.</summary>
+    public const int Description1FieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_description1_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string description1_;
+    /// <summary>
+    /// The first description line of the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description1 {
+      get { return description1_; }
+      set {
+        description1_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "description2" field.</summary>
+    public const int Description2FieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _single_description2_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+    private string description2_;
+    /// <summary>
+    /// The second description line of the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description2 {
+      get { return description2_; }
+      set {
+        description2_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LegacyAppInstallAdInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LegacyAppInstallAdInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AppId != other.AppId) return false;
+      if (AppStore != other.AppStore) return false;
+      if (Headline != other.Headline) return false;
+      if (Description1 != other.Description1) return false;
+      if (Description2 != other.Description2) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (appId_ != null) hash ^= AppId.GetHashCode();
+      if (AppStore != 0) hash ^= AppStore.GetHashCode();
+      if (headline_ != null) hash ^= Headline.GetHashCode();
+      if (description1_ != null) hash ^= Description1.GetHashCode();
+      if (description2_ != null) hash ^= Description2.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (appId_ != null) {
+        _single_appId_codec.WriteTagAndValue(output, AppId);
+      }
+      if (AppStore != 0) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) AppStore);
+      }
+      if (headline_ != null) {
+        _single_headline_codec.WriteTagAndValue(output, Headline);
+      }
+      if (description1_ != null) {
+        _single_description1_codec.WriteTagAndValue(output, Description1);
+      }
+      if (description2_ != null) {
+        _single_description2_codec.WriteTagAndValue(output, Description2);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (appId_ != null) {
+        size += _single_appId_codec.CalculateSizeWithTag(AppId);
+      }
+      if (AppStore != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AppStore);
+      }
+      if (headline_ != null) {
+        size += _single_headline_codec.CalculateSizeWithTag(Headline);
+      }
+      if (description1_ != null) {
+        size += _single_description1_codec.CalculateSizeWithTag(Description1);
+      }
+      if (description2_ != null) {
+        size += _single_description2_codec.CalculateSizeWithTag(Description2);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LegacyAppInstallAdInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.appId_ != null) {
+        if (appId_ == null || other.AppId != "") {
+          AppId = other.AppId;
+        }
+      }
+      if (other.AppStore != 0) {
+        AppStore = other.AppStore;
+      }
+      if (other.headline_ != null) {
+        if (headline_ == null || other.Headline != "") {
+          Headline = other.Headline;
+        }
+      }
+      if (other.description1_ != null) {
+        if (description1_ == null || other.Description1 != "") {
+          Description1 = other.Description1;
+        }
+      }
+      if (other.description2_ != null) {
+        if (description2_ == null || other.Description2 != "") {
+          Description2 = other.Description2;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_appId_codec.Read(input);
+            if (appId_ == null || value != "") {
+              AppId = value;
+            }
+            break;
+          }
+          case 16: {
+            appStore_ = (global::Google.Ads.GoogleAds.V1.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            string value = _single_headline_codec.Read(input);
+            if (headline_ == null || value != "") {
+              Headline = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_description1_codec.Read(input);
+            if (description1_ == null || value != "") {
+              Description1 = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_description2_codec.Read(input);
+            if (description2_ == null || value != "") {
+              Description2 = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A responsive display ad.
+  /// </summary>
+  public sealed partial class ResponsiveDisplayAdInfo : pb::IMessage<ResponsiveDisplayAdInfo> {
+    private static readonly pb::MessageParser<ResponsiveDisplayAdInfo> _parser = new pb::MessageParser<ResponsiveDisplayAdInfo>(() => new ResponsiveDisplayAdInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ResponsiveDisplayAdInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.AdTypeInfosReflection.Descriptor.MessageTypes[22]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResponsiveDisplayAdInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResponsiveDisplayAdInfo(ResponsiveDisplayAdInfo other) : this() {
+      marketingImages_ = other.marketingImages_.Clone();
+      squareMarketingImages_ = other.squareMarketingImages_.Clone();
+      logoImages_ = other.logoImages_.Clone();
+      squareLogoImages_ = other.squareLogoImages_.Clone();
+      headlines_ = other.headlines_.Clone();
+      longHeadline_ = other.longHeadline_ != null ? other.longHeadline_.Clone() : null;
+      descriptions_ = other.descriptions_.Clone();
+      youtubeVideos_ = other.youtubeVideos_.Clone();
+      BusinessName = other.BusinessName;
+      MainColor = other.MainColor;
+      AccentColor = other.AccentColor;
+      AllowFlexibleColor = other.AllowFlexibleColor;
+      CallToActionText = other.CallToActionText;
+      PricePrefix = other.PricePrefix;
+      PromoText = other.PromoText;
+      formatSetting_ = other.formatSetting_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResponsiveDisplayAdInfo Clone() {
+      return new ResponsiveDisplayAdInfo(this);
+    }
+
+    /// <summary>Field number for the "marketing_images" field.</summary>
+    public const int MarketingImagesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> _repeated_marketingImages_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V1.Common.AdImageAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> marketingImages_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset>();
+    /// <summary>
+    /// Marketing images to be used in the ad. Valid image types are GIF,
+    /// JPEG, and PNG. The minimum size is 600x314 and the aspect ratio must
+    /// be 1.91:1 (+-1%). At least one marketing_image is required. Combined with
+    /// square_marketing_images the maximum is 15.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> MarketingImages {
+      get { return marketingImages_; }
+    }
+
+    /// <summary>Field number for the "square_marketing_images" field.</summary>
+    public const int SquareMarketingImagesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> _repeated_squareMarketingImages_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V1.Common.AdImageAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> squareMarketingImages_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset>();
+    /// <summary>
+    /// Square marketing images to be used in the ad. Valid image types are GIF,
+    /// JPEG, and PNG. The minimum size is 300x300 and the aspect ratio must
+    /// be 1:1 (+-1%). At least one square marketing_image is required. Combined
+    /// with marketing_images the maximum is 15.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> SquareMarketingImages {
+      get { return squareMarketingImages_; }
+    }
+
+    /// <summary>Field number for the "logo_images" field.</summary>
+    public const int LogoImagesFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> _repeated_logoImages_codec
+        = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V1.Common.AdImageAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> logoImages_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset>();
+    /// <summary>
+    /// Logo images to be used in the ad. Valid image types are GIF,
+    /// JPEG, and PNG. The minimum size is 512x128 and the aspect ratio must
+    /// be 4:1 (+-1%). Combined with square_logo_images the maximum is 5.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> LogoImages {
+      get { return logoImages_; }
+    }
+
+    /// <summary>Field number for the "square_logo_images" field.</summary>
+    public const int SquareLogoImagesFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> _repeated_squareLogoImages_codec
+        = pb::FieldCodec.ForMessage(34, global::Google.Ads.GoogleAds.V1.Common.AdImageAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> squareLogoImages_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset>();
+    /// <summary>
+    /// Square logo images to be used in the ad. Valid image types are GIF,
+    /// JPEG, and PNG. The minimum size is 128x128 and the aspect ratio must
+    /// be 1:1 (+-1%). Combined with square_logo_images the maximum is 5.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdImageAsset> SquareLogoImages {
+      get { return squareLogoImages_; }
+    }
+
+    /// <summary>Field number for the "headlines" field.</summary>
+    public const int HeadlinesFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> _repeated_headlines_codec
+        = pb::FieldCodec.ForMessage(42, global::Google.Ads.GoogleAds.V1.Common.AdTextAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> headlines_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset>();
+    /// <summary>
+    /// Short format headlines for the ad. The maximum length is 30 characters.
+    /// At least 1 and max 5 headlines can be specified.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> Headlines {
+      get { return headlines_; }
+    }
+
+    /// <summary>Field number for the "long_headline" field.</summary>
+    public const int LongHeadlineFieldNumber = 6;
+    private global::Google.Ads.GoogleAds.V1.Common.AdTextAsset longHeadline_;
+    /// <summary>
+    /// A required long format headline. The maximum length is 90 characters.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.AdTextAsset LongHeadline {
+      get { return longHeadline_; }
+      set {
+        longHeadline_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "descriptions" field.</summary>
+    public const int DescriptionsFieldNumber = 7;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> _repeated_descriptions_codec
+        = pb::FieldCodec.ForMessage(58, global::Google.Ads.GoogleAds.V1.Common.AdTextAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> descriptions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset>();
+    /// <summary>
+    /// Descriptive texts for the ad. The maximum length is 90 characters. At
+    /// least 1 and max 5 headlines can be specified.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdTextAsset> Descriptions {
+      get { return descriptions_; }
+    }
+
+    /// <summary>Field number for the "youtube_videos" field.</summary>
+    public const int YoutubeVideosFieldNumber = 8;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset> _repeated_youtubeVideos_codec
+        = pb::FieldCodec.ForMessage(66, global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset> youtubeVideos_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset>();
+    /// <summary>
+    /// Optional YouTube vidoes for the ad. A maximum of 5 videos can be specified.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset> YoutubeVideos {
+      get { return youtubeVideos_; }
+    }
+
+    /// <summary>Field number for the "business_name" field.</summary>
+    public const int BusinessNameFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _single_businessName_codec = pb::FieldCodec.ForClassWrapper<string>(74);
+    private string businessName_;
+    /// <summary>
+    /// The advertiser/brand name. Maximum display width is 25.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BusinessName {
+      get { return businessName_; }
+      set {
+        businessName_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "main_color" field.</summary>
+    public const int MainColorFieldNumber = 10;
+    private static readonly pb::FieldCodec<string> _single_mainColor_codec = pb::FieldCodec.ForClassWrapper<string>(82);
+    private string mainColor_;
+    /// <summary>
+    /// The main color of the ad in hexadecimal, e.g. #ffffff for white.
+    /// If one of main_color and accent_color is set, the other is required as
+    /// well.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string MainColor {
+      get { return mainColor_; }
+      set {
+        mainColor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "accent_color" field.</summary>
+    public const int AccentColorFieldNumber = 11;
+    private static readonly pb::FieldCodec<string> _single_accentColor_codec = pb::FieldCodec.ForClassWrapper<string>(90);
+    private string accentColor_;
+    /// <summary>
+    /// The accent color of the ad in hexadecimal, e.g. #ffffff for white.
+    /// If one of main_color and accent_color is set, the other is required as
+    /// well.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AccentColor {
+      get { return accentColor_; }
+      set {
+        accentColor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "allow_flexible_color" field.</summary>
+    public const int AllowFlexibleColorFieldNumber = 12;
+    private static readonly pb::FieldCodec<bool?> _single_allowFlexibleColor_codec = pb::FieldCodec.ForStructWrapper<bool>(98);
+    private bool? allowFlexibleColor_;
+    /// <summary>
+    /// Advertiser's consent to allow flexible color. When true, the ad may be
+    /// served with different color if necessary. When false, the ad will be served
+    /// with the specified colors or a neutral color.
+    /// The default value is true.
+    /// Must be true if main_color and accent_color are not set.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool? AllowFlexibleColor {
+      get { return allowFlexibleColor_; }
+      set {
+        allowFlexibleColor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "call_to_action_text" field.</summary>
+    public const int CallToActionTextFieldNumber = 13;
+    private static readonly pb::FieldCodec<string> _single_callToActionText_codec = pb::FieldCodec.ForClassWrapper<string>(106);
+    private string callToActionText_;
+    /// <summary>
+    /// The call-to-action text for the ad. Maximum display width is 30.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CallToActionText {
+      get { return callToActionText_; }
+      set {
+        callToActionText_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "price_prefix" field.</summary>
+    public const int PricePrefixFieldNumber = 14;
+    private static readonly pb::FieldCodec<string> _single_pricePrefix_codec = pb::FieldCodec.ForClassWrapper<string>(114);
+    private string pricePrefix_;
+    /// <summary>
+    /// Prefix before price. E.g. 'as low as'.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PricePrefix {
+      get { return pricePrefix_; }
+      set {
+        pricePrefix_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "promo_text" field.</summary>
+    public const int PromoTextFieldNumber = 15;
+    private static readonly pb::FieldCodec<string> _single_promoText_codec = pb::FieldCodec.ForClassWrapper<string>(122);
+    private string promoText_;
+    /// <summary>
+    /// Promotion text used for dyanmic formats of responsive ads. For example
+    /// 'Free two-day shipping'.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PromoText {
+      get { return promoText_; }
+      set {
+        promoText_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "format_setting" field.</summary>
+    public const int FormatSettingFieldNumber = 16;
+    private global::Google.Ads.GoogleAds.V1.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting formatSetting_ = 0;
+    /// <summary>
+    /// Specifies which format the ad will be served in. Default is ALL_FORMATS.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting FormatSetting {
+      get { return formatSetting_; }
+      set {
+        formatSetting_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ResponsiveDisplayAdInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ResponsiveDisplayAdInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!marketingImages_.Equals(other.marketingImages_)) return false;
+      if(!squareMarketingImages_.Equals(other.squareMarketingImages_)) return false;
+      if(!logoImages_.Equals(other.logoImages_)) return false;
+      if(!squareLogoImages_.Equals(other.squareLogoImages_)) return false;
+      if(!headlines_.Equals(other.headlines_)) return false;
+      if (!object.Equals(LongHeadline, other.LongHeadline)) return false;
+      if(!descriptions_.Equals(other.descriptions_)) return false;
+      if(!youtubeVideos_.Equals(other.youtubeVideos_)) return false;
+      if (BusinessName != other.BusinessName) return false;
+      if (MainColor != other.MainColor) return false;
+      if (AccentColor != other.AccentColor) return false;
+      if (AllowFlexibleColor != other.AllowFlexibleColor) return false;
+      if (CallToActionText != other.CallToActionText) return false;
+      if (PricePrefix != other.PricePrefix) return false;
+      if (PromoText != other.PromoText) return false;
+      if (FormatSetting != other.FormatSetting) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= marketingImages_.GetHashCode();
+      hash ^= squareMarketingImages_.GetHashCode();
+      hash ^= logoImages_.GetHashCode();
+      hash ^= squareLogoImages_.GetHashCode();
+      hash ^= headlines_.GetHashCode();
+      if (longHeadline_ != null) hash ^= LongHeadline.GetHashCode();
+      hash ^= descriptions_.GetHashCode();
+      hash ^= youtubeVideos_.GetHashCode();
+      if (businessName_ != null) hash ^= BusinessName.GetHashCode();
+      if (mainColor_ != null) hash ^= MainColor.GetHashCode();
+      if (accentColor_ != null) hash ^= AccentColor.GetHashCode();
+      if (allowFlexibleColor_ != null) hash ^= AllowFlexibleColor.GetHashCode();
+      if (callToActionText_ != null) hash ^= CallToActionText.GetHashCode();
+      if (pricePrefix_ != null) hash ^= PricePrefix.GetHashCode();
+      if (promoText_ != null) hash ^= PromoText.GetHashCode();
+      if (FormatSetting != 0) hash ^= FormatSetting.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      marketingImages_.WriteTo(output, _repeated_marketingImages_codec);
+      squareMarketingImages_.WriteTo(output, _repeated_squareMarketingImages_codec);
+      logoImages_.WriteTo(output, _repeated_logoImages_codec);
+      squareLogoImages_.WriteTo(output, _repeated_squareLogoImages_codec);
+      headlines_.WriteTo(output, _repeated_headlines_codec);
+      if (longHeadline_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(LongHeadline);
+      }
+      descriptions_.WriteTo(output, _repeated_descriptions_codec);
+      youtubeVideos_.WriteTo(output, _repeated_youtubeVideos_codec);
+      if (businessName_ != null) {
+        _single_businessName_codec.WriteTagAndValue(output, BusinessName);
+      }
+      if (mainColor_ != null) {
+        _single_mainColor_codec.WriteTagAndValue(output, MainColor);
+      }
+      if (accentColor_ != null) {
+        _single_accentColor_codec.WriteTagAndValue(output, AccentColor);
+      }
+      if (allowFlexibleColor_ != null) {
+        _single_allowFlexibleColor_codec.WriteTagAndValue(output, AllowFlexibleColor);
+      }
+      if (callToActionText_ != null) {
+        _single_callToActionText_codec.WriteTagAndValue(output, CallToActionText);
+      }
+      if (pricePrefix_ != null) {
+        _single_pricePrefix_codec.WriteTagAndValue(output, PricePrefix);
+      }
+      if (promoText_ != null) {
+        _single_promoText_codec.WriteTagAndValue(output, PromoText);
+      }
+      if (FormatSetting != 0) {
+        output.WriteRawTag(128, 1);
+        output.WriteEnum((int) FormatSetting);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += marketingImages_.CalculateSize(_repeated_marketingImages_codec);
+      size += squareMarketingImages_.CalculateSize(_repeated_squareMarketingImages_codec);
+      size += logoImages_.CalculateSize(_repeated_logoImages_codec);
+      size += squareLogoImages_.CalculateSize(_repeated_squareLogoImages_codec);
+      size += headlines_.CalculateSize(_repeated_headlines_codec);
+      if (longHeadline_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LongHeadline);
+      }
+      size += descriptions_.CalculateSize(_repeated_descriptions_codec);
+      size += youtubeVideos_.CalculateSize(_repeated_youtubeVideos_codec);
+      if (businessName_ != null) {
+        size += _single_businessName_codec.CalculateSizeWithTag(BusinessName);
+      }
+      if (mainColor_ != null) {
+        size += _single_mainColor_codec.CalculateSizeWithTag(MainColor);
+      }
+      if (accentColor_ != null) {
+        size += _single_accentColor_codec.CalculateSizeWithTag(AccentColor);
+      }
+      if (allowFlexibleColor_ != null) {
+        size += _single_allowFlexibleColor_codec.CalculateSizeWithTag(AllowFlexibleColor);
+      }
+      if (callToActionText_ != null) {
+        size += _single_callToActionText_codec.CalculateSizeWithTag(CallToActionText);
+      }
+      if (pricePrefix_ != null) {
+        size += _single_pricePrefix_codec.CalculateSizeWithTag(PricePrefix);
+      }
+      if (promoText_ != null) {
+        size += _single_promoText_codec.CalculateSizeWithTag(PromoText);
+      }
+      if (FormatSetting != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) FormatSetting);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ResponsiveDisplayAdInfo other) {
+      if (other == null) {
+        return;
+      }
+      marketingImages_.Add(other.marketingImages_);
+      squareMarketingImages_.Add(other.squareMarketingImages_);
+      logoImages_.Add(other.logoImages_);
+      squareLogoImages_.Add(other.squareLogoImages_);
+      headlines_.Add(other.headlines_);
+      if (other.longHeadline_ != null) {
+        if (longHeadline_ == null) {
+          longHeadline_ = new global::Google.Ads.GoogleAds.V1.Common.AdTextAsset();
+        }
+        LongHeadline.MergeFrom(other.LongHeadline);
+      }
+      descriptions_.Add(other.descriptions_);
+      youtubeVideos_.Add(other.youtubeVideos_);
+      if (other.businessName_ != null) {
+        if (businessName_ == null || other.BusinessName != "") {
+          BusinessName = other.BusinessName;
+        }
+      }
+      if (other.mainColor_ != null) {
+        if (mainColor_ == null || other.MainColor != "") {
+          MainColor = other.MainColor;
+        }
+      }
+      if (other.accentColor_ != null) {
+        if (accentColor_ == null || other.AccentColor != "") {
+          AccentColor = other.AccentColor;
+        }
+      }
+      if (other.allowFlexibleColor_ != null) {
+        if (allowFlexibleColor_ == null || other.AllowFlexibleColor != false) {
+          AllowFlexibleColor = other.AllowFlexibleColor;
+        }
+      }
+      if (other.callToActionText_ != null) {
+        if (callToActionText_ == null || other.CallToActionText != "") {
+          CallToActionText = other.CallToActionText;
+        }
+      }
+      if (other.pricePrefix_ != null) {
+        if (pricePrefix_ == null || other.PricePrefix != "") {
+          PricePrefix = other.PricePrefix;
+        }
+      }
+      if (other.promoText_ != null) {
+        if (promoText_ == null || other.PromoText != "") {
+          PromoText = other.PromoText;
+        }
+      }
+      if (other.FormatSetting != 0) {
+        FormatSetting = other.FormatSetting;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            marketingImages_.AddEntriesFrom(input, _repeated_marketingImages_codec);
+            break;
+          }
+          case 18: {
+            squareMarketingImages_.AddEntriesFrom(input, _repeated_squareMarketingImages_codec);
+            break;
+          }
+          case 26: {
+            logoImages_.AddEntriesFrom(input, _repeated_logoImages_codec);
+            break;
+          }
+          case 34: {
+            squareLogoImages_.AddEntriesFrom(input, _repeated_squareLogoImages_codec);
+            break;
+          }
+          case 42: {
+            headlines_.AddEntriesFrom(input, _repeated_headlines_codec);
+            break;
+          }
+          case 50: {
+            if (longHeadline_ == null) {
+              longHeadline_ = new global::Google.Ads.GoogleAds.V1.Common.AdTextAsset();
+            }
+            input.ReadMessage(longHeadline_);
+            break;
+          }
+          case 58: {
+            descriptions_.AddEntriesFrom(input, _repeated_descriptions_codec);
+            break;
+          }
+          case 66: {
+            youtubeVideos_.AddEntriesFrom(input, _repeated_youtubeVideos_codec);
+            break;
+          }
+          case 74: {
+            string value = _single_businessName_codec.Read(input);
+            if (businessName_ == null || value != "") {
+              BusinessName = value;
+            }
+            break;
+          }
+          case 82: {
+            string value = _single_mainColor_codec.Read(input);
+            if (mainColor_ == null || value != "") {
+              MainColor = value;
+            }
+            break;
+          }
+          case 90: {
+            string value = _single_accentColor_codec.Read(input);
+            if (accentColor_ == null || value != "") {
+              AccentColor = value;
+            }
+            break;
+          }
+          case 98: {
+            bool? value = _single_allowFlexibleColor_codec.Read(input);
+            if (allowFlexibleColor_ == null || value != false) {
+              AllowFlexibleColor = value;
+            }
+            break;
+          }
+          case 106: {
+            string value = _single_callToActionText_codec.Read(input);
+            if (callToActionText_ == null || value != "") {
+              CallToActionText = value;
+            }
+            break;
+          }
+          case 114: {
+            string value = _single_pricePrefix_codec.Read(input);
+            if (pricePrefix_ == null || value != "") {
+              PricePrefix = value;
+            }
+            break;
+          }
+          case 122: {
+            string value = _single_promoText_codec.Read(input);
+            if (promoText_ == null || value != "") {
+              PromoText = value;
+            }
+            break;
+          }
+          case 128: {
+            formatSetting_ = (global::Google.Ads.GoogleAds.V1.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting) input.ReadEnum();
             break;
           }
         }

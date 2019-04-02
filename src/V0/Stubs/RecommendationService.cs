@@ -446,8 +446,7 @@ namespace Google.Ads.GoogleAds.V0.Services {
 
   /// <summary>
   /// Information about the operation to apply a recommendation and any parameters
-  /// to
-  /// customize it.
+  /// to customize it.
   /// </summary>
   public sealed partial class ApplyRecommendationOperation : pb::IMessage<ApplyRecommendationOperation> {
     private static readonly pb::MessageParser<ApplyRecommendationOperation> _parser = new pb::MessageParser<ApplyRecommendationOperation>(() => new ApplyRecommendationOperation());

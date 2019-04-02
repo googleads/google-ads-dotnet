@@ -28,28 +28,31 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "Yi5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEucmVzb3VyY2VzGjVn",
             "b29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9tdXRhdGVfam9iX3N0YXR1",
             "cy5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29n",
-            "bGUvYXBpL2Fubm90YXRpb25zLnByb3RvIv4DCglNdXRhdGVKb2ISFQoNcmVz",
+            "bGUvYXBpL2Fubm90YXRpb25zLnByb3RvIvMECglNdXRhdGVKb2ISFQoNcmVz",
             "b3VyY2VfbmFtZRgBIAEoCRInCgJpZBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1",
             "Zi5JbnQ2NFZhbHVlEj0KF25leHRfYWRkX3NlcXVlbmNlX3Rva2VuGAMgASgL",
             "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElAKCG1ldGFkYXRhGAQg",
             "ASgLMj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEucmVzb3VyY2VzLk11dGF0",
             "ZUpvYi5NdXRhdGVKb2JNZXRhZGF0YRJSCgZzdGF0dXMYBSABKA4yQi5nb29n",
             "bGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5NdXRhdGVKb2JTdGF0dXNFbnVt",
-            "Lk11dGF0ZUpvYlN0YXR1cxrLAQoRTXV0YXRlSm9iTWV0YWRhdGESOAoSY3Jl",
+            "Lk11dGF0ZUpvYlN0YXR1cxrAAgoRTXV0YXRlSm9iTWV0YWRhdGESOAoSY3Jl",
             "YXRpb25fZGF0ZV90aW1lGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
             "Z1ZhbHVlEjoKFGNvbXBsZXRpb25fZGF0ZV90aW1lGAIgASgLMhwuZ29vZ2xl",
             "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEkAKGmVzdGltYXRlZF9jb21wbGV0aW9u",
-            "X3JhdGlvGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlQvsB",
-            "CiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEucmVzb3VyY2VzQg5NdXRh",
-            "dGVKb2JQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvcmVzb3VyY2VzO3Jlc291cmNlc6IC",
-            "A0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLlJlc291cmNlc8oCIUdv",
-            "b2dsZVxBZHNcR29vZ2xlQWRzXFYxXFJlc291cmNlc+oCJUdvb2dsZTo6QWRz",
-            "OjpHb29nbGVBZHM6OlYxOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "X3JhdGlvGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjQK",
+            "D29wZXJhdGlvbl9jb3VudBgEIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
+            "NFZhbHVlEj0KGGV4ZWN1dGVkX29wZXJhdGlvbl9jb3VudBgFIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQvsBCiVjb20uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjEucmVzb3VyY2VzQg5NdXRhdGVKb2JQcm90b1ABWkpnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjEvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYxLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYxXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpS",
+            "ZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Enums.MutateJobStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.MutateJob), global::Google.Ads.GoogleAds.V1.Resources.MutateJob.Parser, new[]{ "ResourceName", "Id", "NextAddSequenceToken", "Metadata", "Status" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.MutateJob.Types.MutateJobMetadata), global::Google.Ads.GoogleAds.V1.Resources.MutateJob.Types.MutateJobMetadata.Parser, new[]{ "CreationDateTime", "CompletionDateTime", "EstimatedCompletionRatio" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.MutateJob), global::Google.Ads.GoogleAds.V1.Resources.MutateJob.Parser, new[]{ "ResourceName", "Id", "NextAddSequenceToken", "Metadata", "Status" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.MutateJob.Types.MutateJobMetadata), global::Google.Ads.GoogleAds.V1.Resources.MutateJob.Types.MutateJobMetadata.Parser, new[]{ "CreationDateTime", "CompletionDateTime", "EstimatedCompletionRatio", "OperationCount", "ExecutedOperationCount" }, null, null, null)})
           }));
     }
     #endregion
@@ -371,6 +374,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           CreationDateTime = other.CreationDateTime;
           CompletionDateTime = other.CompletionDateTime;
           EstimatedCompletionRatio = other.EstimatedCompletionRatio;
+          OperationCount = other.OperationCount;
+          ExecutedOperationCount = other.ExecutedOperationCount;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -427,6 +432,37 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           }
         }
 
+        /// <summary>Field number for the "operation_count" field.</summary>
+        public const int OperationCountFieldNumber = 4;
+        private static readonly pb::FieldCodec<long?> _single_operationCount_codec = pb::FieldCodec.ForStructWrapper<long>(34);
+        private long? operationCount_;
+        /// <summary>
+        /// The number of mutate operations in the mutate job.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public long? OperationCount {
+          get { return operationCount_; }
+          set {
+            operationCount_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "executed_operation_count" field.</summary>
+        public const int ExecutedOperationCountFieldNumber = 5;
+        private static readonly pb::FieldCodec<long?> _single_executedOperationCount_codec = pb::FieldCodec.ForStructWrapper<long>(42);
+        private long? executedOperationCount_;
+        /// <summary>
+        /// The number of mutate operations executed by the mutate job.
+        /// Present only if the job has started running.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public long? ExecutedOperationCount {
+          get { return executedOperationCount_; }
+          set {
+            executedOperationCount_ = value;
+          }
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as MutateJobMetadata);
@@ -443,6 +479,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           if (CreationDateTime != other.CreationDateTime) return false;
           if (CompletionDateTime != other.CompletionDateTime) return false;
           if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(EstimatedCompletionRatio, other.EstimatedCompletionRatio)) return false;
+          if (OperationCount != other.OperationCount) return false;
+          if (ExecutedOperationCount != other.ExecutedOperationCount) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -452,6 +490,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           if (creationDateTime_ != null) hash ^= CreationDateTime.GetHashCode();
           if (completionDateTime_ != null) hash ^= CompletionDateTime.GetHashCode();
           if (estimatedCompletionRatio_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(EstimatedCompletionRatio);
+          if (operationCount_ != null) hash ^= OperationCount.GetHashCode();
+          if (executedOperationCount_ != null) hash ^= ExecutedOperationCount.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -474,6 +514,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           if (estimatedCompletionRatio_ != null) {
             _single_estimatedCompletionRatio_codec.WriteTagAndValue(output, EstimatedCompletionRatio);
           }
+          if (operationCount_ != null) {
+            _single_operationCount_codec.WriteTagAndValue(output, OperationCount);
+          }
+          if (executedOperationCount_ != null) {
+            _single_executedOperationCount_codec.WriteTagAndValue(output, ExecutedOperationCount);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -490,6 +536,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           }
           if (estimatedCompletionRatio_ != null) {
             size += _single_estimatedCompletionRatio_codec.CalculateSizeWithTag(EstimatedCompletionRatio);
+          }
+          if (operationCount_ != null) {
+            size += _single_operationCount_codec.CalculateSizeWithTag(OperationCount);
+          }
+          if (executedOperationCount_ != null) {
+            size += _single_executedOperationCount_codec.CalculateSizeWithTag(ExecutedOperationCount);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -515,6 +567,16 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           if (other.estimatedCompletionRatio_ != null) {
             if (estimatedCompletionRatio_ == null || other.EstimatedCompletionRatio != 0D) {
               EstimatedCompletionRatio = other.EstimatedCompletionRatio;
+            }
+          }
+          if (other.operationCount_ != null) {
+            if (operationCount_ == null || other.OperationCount != 0L) {
+              OperationCount = other.OperationCount;
+            }
+          }
+          if (other.executedOperationCount_ != null) {
+            if (executedOperationCount_ == null || other.ExecutedOperationCount != 0L) {
+              ExecutedOperationCount = other.ExecutedOperationCount;
             }
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -546,6 +608,20 @@ namespace Google.Ads.GoogleAds.V1.Resources {
                 double? value = _single_estimatedCompletionRatio_codec.Read(input);
                 if (estimatedCompletionRatio_ == null || value != 0D) {
                   EstimatedCompletionRatio = value;
+                }
+                break;
+              }
+              case 34: {
+                long? value = _single_operationCount_codec.Read(input);
+                if (operationCount_ == null || value != 0L) {
+                  OperationCount = value;
+                }
+                break;
+              }
+              case 42: {
+                long? value = _single_executedOperationCount_codec.Read(input);
+                if (executedOperationCount_ == null || value != 0L) {
+                  ExecutedOperationCount = value;
                 }
                 break;
               }

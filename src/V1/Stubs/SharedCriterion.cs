@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "Y2VzGi1nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9jb21tb24vY3JpdGVyaWEu",
             "cHJvdG8aMmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zL2NyaXRlcmlv",
             "bl90eXBlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8a",
-            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i3AQKD1NoYXJlZENyaXRl",
+            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8isQUKD1NoYXJlZENyaXRl",
             "cmlvbhIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEjAKCnNoYXJlZF9zZXQYAiAB",
             "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMQoMY3JpdGVyaW9u",
             "X2lkGBogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSTAoEdHlw",
@@ -42,18 +42,19 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "b3VUdWJlQ2hhbm5lbEluZm9IABJCCglwbGFjZW1lbnQYByABKAsyLS5nb29n",
             "bGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uUGxhY2VtZW50SW5mb0gAElQK",
             "E21vYmlsZV9hcHBfY2F0ZWdvcnkYCCABKAsyNS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MS5jb21tb24uTW9iaWxlQXBwQ2F0ZWdvcnlJbmZvSABCCwoJY3Jp",
-            "dGVyaW9uQoECCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEucmVzb3Vy",
-            "Y2VzQhRTaGFyZWRDcml0ZXJpb25Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9y",
-            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvcmVzb3Vy",
-            "Y2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
-            "LlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXFJlc291cmNl",
-            "c+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpSZXNvdXJjZXNiBnBy",
-            "b3RvMw=="));
+            "ZWFkcy52MS5jb21tb24uTW9iaWxlQXBwQ2F0ZWdvcnlJbmZvSAASUwoSbW9i",
+            "aWxlX2FwcGxpY2F0aW9uGAkgASgLMjUuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djEuY29tbW9uLk1vYmlsZUFwcGxpY2F0aW9uSW5mb0gAQgsKCWNyaXRlcmlv",
+            "bkKBAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnJlc291cmNlc0IU",
+            "U2hhcmVkQ3JpdGVyaW9uUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL3Jlc291cmNlczty",
+            "ZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5SZXNv",
+            "dXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMVxSZXNvdXJjZXPqAiVH",
+            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.CriterionTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.SharedCriterion), global::Google.Ads.GoogleAds.V1.Resources.SharedCriterion.Parser, new[]{ "ResourceName", "SharedSet", "CriterionId", "Type", "Keyword", "YoutubeVideo", "YoutubeChannel", "Placement", "MobileAppCategory" }, new[]{ "Criterion" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.SharedCriterion), global::Google.Ads.GoogleAds.V1.Resources.SharedCriterion.Parser, new[]{ "ResourceName", "SharedSet", "CriterionId", "Type", "Keyword", "YoutubeVideo", "YoutubeChannel", "Placement", "MobileAppCategory", "MobileApplication" }, new[]{ "Criterion" }, null, null)
           }));
     }
     #endregion
@@ -107,6 +108,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           break;
         case CriterionOneofCase.MobileAppCategory:
           MobileAppCategory = other.MobileAppCategory.Clone();
+          break;
+        case CriterionOneofCase.MobileApplication:
+          MobileApplication = other.MobileApplication.Clone();
           break;
       }
 
@@ -251,6 +255,20 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
     }
 
+    /// <summary>Field number for the "mobile_application" field.</summary>
+    public const int MobileApplicationFieldNumber = 9;
+    /// <summary>
+    /// Mobile application.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.MobileApplicationInfo MobileApplication {
+      get { return criterionCase_ == CriterionOneofCase.MobileApplication ? (global::Google.Ads.GoogleAds.V1.Common.MobileApplicationInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.MobileApplication;
+      }
+    }
+
     private object criterion_;
     /// <summary>Enum of possible cases for the "criterion" oneof.</summary>
     public enum CriterionOneofCase {
@@ -260,6 +278,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       YoutubeChannel = 6,
       Placement = 7,
       MobileAppCategory = 8,
+      MobileApplication = 9,
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -295,6 +314,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (!object.Equals(YoutubeChannel, other.YoutubeChannel)) return false;
       if (!object.Equals(Placement, other.Placement)) return false;
       if (!object.Equals(MobileAppCategory, other.MobileAppCategory)) return false;
+      if (!object.Equals(MobileApplication, other.MobileApplication)) return false;
       if (CriterionCase != other.CriterionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -311,6 +331,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (criterionCase_ == CriterionOneofCase.YoutubeChannel) hash ^= YoutubeChannel.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Placement) hash ^= Placement.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.MobileAppCategory) hash ^= MobileAppCategory.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.MobileApplication) hash ^= MobileApplication.GetHashCode();
       hash ^= (int) criterionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -356,6 +377,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteRawTag(66);
         output.WriteMessage(MobileAppCategory);
       }
+      if (criterionCase_ == CriterionOneofCase.MobileApplication) {
+        output.WriteRawTag(74);
+        output.WriteMessage(MobileApplication);
+      }
       if (criterionId_ != null) {
         _single_criterionId_codec.WriteTagAndValue(output, CriterionId);
       }
@@ -393,6 +418,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
       if (criterionCase_ == CriterionOneofCase.MobileAppCategory) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileAppCategory);
+      }
+      if (criterionCase_ == CriterionOneofCase.MobileApplication) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileApplication);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -451,6 +479,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             MobileAppCategory = new global::Google.Ads.GoogleAds.V1.Common.MobileAppCategoryInfo();
           }
           MobileAppCategory.MergeFrom(other.MobileAppCategory);
+          break;
+        case CriterionOneofCase.MobileApplication:
+          if (MobileApplication == null) {
+            MobileApplication = new global::Google.Ads.GoogleAds.V1.Common.MobileApplicationInfo();
+          }
+          MobileApplication.MergeFrom(other.MobileApplication);
           break;
       }
 
@@ -523,6 +557,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             }
             input.ReadMessage(subBuilder);
             MobileAppCategory = subBuilder;
+            break;
+          }
+          case 74: {
+            global::Google.Ads.GoogleAds.V1.Common.MobileApplicationInfo subBuilder = new global::Google.Ads.GoogleAds.V1.Common.MobileApplicationInfo();
+            if (criterionCase_ == CriterionOneofCase.MobileApplication) {
+              subBuilder.MergeFrom(MobileApplication);
+            }
+            input.ReadMessage(subBuilder);
+            MobileApplication = subBuilder;
             break;
           }
           case 210: {

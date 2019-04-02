@@ -171,8 +171,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// <summary>
         /// Indicates that this request would exceed the number of allowed resources
         /// for the Google Ads account. The exact resource type and limit being
-        /// checked
-        /// can be inferred from accountLimitType.
+        /// checked can be inferred from accountLimitType.
         /// </summary>
         [pbr::OriginalName("ACCOUNT_LIMIT")] AccountLimit = 2,
         /// <summary>

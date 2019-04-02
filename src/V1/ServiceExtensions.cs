@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -33,6 +33,7 @@ namespace Google.Ads.GoogleAds.V1.Services
     public abstract partial class AdParameterServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdScheduleViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AgeRangeViewServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class AssetServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class BiddingStrategyServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class BillingSetupServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignAudienceViewServiceClient : GoogleAdsServiceClientBase {}
@@ -48,6 +49,7 @@ namespace Google.Ads.GoogleAds.V1.Services
     public abstract partial class ChangeStatusServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ClickViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ConversionActionServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class ConversionAdjustmentUploadServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ConversionUploadServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CustomerClientLinkServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CustomerClientServiceClient : GoogleAdsServiceClientBase {}

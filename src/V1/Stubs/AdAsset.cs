@@ -32,16 +32,23 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "dBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJiCgxwaW5u",
             "ZWRfZmllbGQYAiABKA4yTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVt",
             "cy5TZXJ2ZWRBc3NldEZpZWxkVHlwZUVudW0uU2VydmVkQXNzZXRGaWVsZFR5",
-            "cGVC5wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb25CDEFk",
-            "QXNzZXRQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvY29tbW9uO2NvbW1vbqICA0dBQaoC",
-            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkNvbW1vbsoCHkdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYxXENvbW1vbuoCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
-            "OlYxOjpDb21tb25iBnByb3RvMw=="));
+            "cGUiOwoMQWRJbWFnZUFzc2V0EisKBWFzc2V0GAEgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlIjsKDEFkVmlkZW9Bc3NldBIrCgVhc3NldBgB",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJBChJBZE1lZGlh",
+            "QnVuZGxlQXNzZXQSKwoFYXNzZXQYASABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "U3RyaW5nVmFsdWVC5wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5j",
+            "b21tb25CDEFkQXNzZXRQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvY29tbW9uO2NvbW1v",
+            "bqICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkNvbW1vbsoCHkdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYxXENvbW1vbuoCIkdvb2dsZTo6QWRzOjpH",
+            "b29nbGVBZHM6OlYxOjpDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Enums.ServedAssetFieldTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.AdTextAsset), global::Google.Ads.GoogleAds.V1.Common.AdTextAsset.Parser, new[]{ "Text", "PinnedField" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.AdTextAsset), global::Google.Ads.GoogleAds.V1.Common.AdTextAsset.Parser, new[]{ "Text", "PinnedField" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.AdImageAsset), global::Google.Ads.GoogleAds.V1.Common.AdImageAsset.Parser, new[]{ "Asset" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset), global::Google.Ads.GoogleAds.V1.Common.AdVideoAsset.Parser, new[]{ "Asset" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.AdMediaBundleAsset), global::Google.Ads.GoogleAds.V1.Common.AdMediaBundleAsset.Parser, new[]{ "Asset" }, null, null, null)
           }));
     }
     #endregion
@@ -214,6 +221,426 @@ namespace Google.Ads.GoogleAds.V1.Common {
           }
           case 16: {
             pinnedField_ = (global::Google.Ads.GoogleAds.V1.Enums.ServedAssetFieldTypeEnum.Types.ServedAssetFieldType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// An image asset used inside an ad.
+  /// </summary>
+  public sealed partial class AdImageAsset : pb::IMessage<AdImageAsset> {
+    private static readonly pb::MessageParser<AdImageAsset> _parser = new pb::MessageParser<AdImageAsset>(() => new AdImageAsset());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AdImageAsset> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.AdAssetReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdImageAsset() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdImageAsset(AdImageAsset other) : this() {
+      Asset = other.Asset;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdImageAsset Clone() {
+      return new AdImageAsset(this);
+    }
+
+    /// <summary>Field number for the "asset" field.</summary>
+    public const int AssetFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_asset_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string asset_;
+    /// <summary>
+    /// The Asset resource name of this image.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Asset {
+      get { return asset_; }
+      set {
+        asset_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AdImageAsset);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AdImageAsset other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Asset != other.Asset) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (asset_ != null) hash ^= Asset.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (asset_ != null) {
+        _single_asset_codec.WriteTagAndValue(output, Asset);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (asset_ != null) {
+        size += _single_asset_codec.CalculateSizeWithTag(Asset);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AdImageAsset other) {
+      if (other == null) {
+        return;
+      }
+      if (other.asset_ != null) {
+        if (asset_ == null || other.Asset != "") {
+          Asset = other.Asset;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_asset_codec.Read(input);
+            if (asset_ == null || value != "") {
+              Asset = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A video asset used inside an ad.
+  /// </summary>
+  public sealed partial class AdVideoAsset : pb::IMessage<AdVideoAsset> {
+    private static readonly pb::MessageParser<AdVideoAsset> _parser = new pb::MessageParser<AdVideoAsset>(() => new AdVideoAsset());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AdVideoAsset> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.AdAssetReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdVideoAsset() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdVideoAsset(AdVideoAsset other) : this() {
+      Asset = other.Asset;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdVideoAsset Clone() {
+      return new AdVideoAsset(this);
+    }
+
+    /// <summary>Field number for the "asset" field.</summary>
+    public const int AssetFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_asset_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string asset_;
+    /// <summary>
+    /// The Asset resource name of this video.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Asset {
+      get { return asset_; }
+      set {
+        asset_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AdVideoAsset);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AdVideoAsset other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Asset != other.Asset) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (asset_ != null) hash ^= Asset.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (asset_ != null) {
+        _single_asset_codec.WriteTagAndValue(output, Asset);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (asset_ != null) {
+        size += _single_asset_codec.CalculateSizeWithTag(Asset);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AdVideoAsset other) {
+      if (other == null) {
+        return;
+      }
+      if (other.asset_ != null) {
+        if (asset_ == null || other.Asset != "") {
+          Asset = other.Asset;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_asset_codec.Read(input);
+            if (asset_ == null || value != "") {
+              Asset = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A media bundle asset used inside an ad.
+  /// </summary>
+  public sealed partial class AdMediaBundleAsset : pb::IMessage<AdMediaBundleAsset> {
+    private static readonly pb::MessageParser<AdMediaBundleAsset> _parser = new pb::MessageParser<AdMediaBundleAsset>(() => new AdMediaBundleAsset());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AdMediaBundleAsset> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.AdAssetReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdMediaBundleAsset() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdMediaBundleAsset(AdMediaBundleAsset other) : this() {
+      Asset = other.Asset;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AdMediaBundleAsset Clone() {
+      return new AdMediaBundleAsset(this);
+    }
+
+    /// <summary>Field number for the "asset" field.</summary>
+    public const int AssetFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_asset_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string asset_;
+    /// <summary>
+    /// The Asset resource name of this media bundle.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Asset {
+      get { return asset_; }
+      set {
+        asset_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AdMediaBundleAsset);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AdMediaBundleAsset other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Asset != other.Asset) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (asset_ != null) hash ^= Asset.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (asset_ != null) {
+        _single_asset_codec.WriteTagAndValue(output, Asset);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (asset_ != null) {
+        size += _single_asset_codec.CalculateSizeWithTag(Asset);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AdMediaBundleAsset other) {
+      if (other == null) {
+        return;
+      }
+      if (other.asset_ != null) {
+        if (asset_ == null || other.Asset != "") {
+          Asset = other.Asset;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_asset_codec.Read(input);
+            if (asset_ == null || value != "") {
+              Asset = value;
+            }
             break;
           }
         }

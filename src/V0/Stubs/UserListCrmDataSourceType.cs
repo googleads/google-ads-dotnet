@@ -166,15 +166,15 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The uploaded data is first party data.
+        /// The uploaded data is first-party data.
         /// </summary>
         [pbr::OriginalName("FIRST_PARTY")] FirstParty = 2,
         /// <summary>
-        /// The uploaded data is from a third party credit bureau.
+        /// The uploaded data is from a third-party credit bureau.
         /// </summary>
         [pbr::OriginalName("THIRD_PARTY_CREDIT_BUREAU")] ThirdPartyCreditBureau = 3,
         /// <summary>
-        /// The uploaded data is from a third party voter file.
+        /// The uploaded data is from a third-party voter file.
         /// </summary>
         [pbr::OriginalName("THIRD_PARTY_VOTER_FILE")] ThirdPartyVoterFile = 4,
       }

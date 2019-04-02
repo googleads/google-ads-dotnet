@@ -185,7 +185,7 @@ namespace Google.Ads.GoogleAds.V0.Enums {
         /// </summary>
         [pbr::OriginalName("SIMILAR")] Similar = 6,
         /// <summary>
-        /// UserList of first party CRM data provided by advertiser in the form of
+        /// UserList of first-party CRM data provided by advertiser in the form of
         /// emails or other formats.
         /// </summary>
         [pbr::OriginalName("CRM_BASED")] CrmBased = 7,

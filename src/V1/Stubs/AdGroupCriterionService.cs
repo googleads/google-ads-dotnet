@@ -26,7 +26,8 @@ namespace Google.Ads.GoogleAds.V1.Services {
           string.Concat(
             "CkFnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9zZXJ2aWNlcy9hZF9ncm91cF9j",
             "cml0ZXJpb25fc2VydmljZS5wcm90bxIgZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djEuc2VydmljZXMaOmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL3Jlc291cmNl",
+            "djEuc2VydmljZXMaK2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2NvbW1vbi9w",
+            "b2xpY3kucHJvdG8aOmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL3Jlc291cmNl",
             "cy9hZF9ncm91cF9jcml0ZXJpb24ucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3Rh",
             "dGlvbnMucHJvdG8aIGdvb2dsZS9wcm90b2J1Zi9maWVsZF9tYXNrLnByb3Rv",
             "Gh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aF2dvb2dsZS9ycGMv",
@@ -35,9 +36,11 @@ namespace Google.Ads.GoogleAds.V1.Services {
             "YVJlcXVlc3QSEwoLY3VzdG9tZXJfaWQYASABKAkSTwoKb3BlcmF0aW9ucxgC",
             "IAMoCzI7Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2VzLkFkR3Jv",
             "dXBDcml0ZXJpb25PcGVyYXRpb24SFwoPcGFydGlhbF9mYWlsdXJlGAMgASgI",
-            "EhUKDXZhbGlkYXRlX29ubHkYBCABKAgi+QEKGUFkR3JvdXBDcml0ZXJpb25P",
+            "EhUKDXZhbGlkYXRlX29ubHkYBCABKAgi0wIKGUFkR3JvdXBDcml0ZXJpb25P",
             "cGVyYXRpb24SLwoLdXBkYXRlX21hc2sYBCABKAsyGi5nb29nbGUucHJvdG9i",
-            "dWYuRmllbGRNYXNrEkUKBmNyZWF0ZRgBIAEoCzIzLmdvb2dsZS5hZHMuZ29v",
+            "dWYuRmllbGRNYXNrElgKHGV4ZW1wdF9wb2xpY3lfdmlvbGF0aW9uX2tleXMY",
+            "BSADKAsyMi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uUG9saWN5",
+            "VmlvbGF0aW9uS2V5EkUKBmNyZWF0ZRgBIAEoCzIzLmdvb2dsZS5hZHMuZ29v",
             "Z2xlYWRzLnYxLnJlc291cmNlcy5BZEdyb3VwQ3JpdGVyaW9uSAASRQoGdXBk",
             "YXRlGAIgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEucmVzb3VyY2Vz",
             "LkFkR3JvdXBDcml0ZXJpb25IABIQCgZyZW1vdmUYAyABKAlIAEILCglvcGVy",
@@ -63,11 +66,11 @@ namespace Google.Ads.GoogleAds.V1.Services {
             "dmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWMVxTZXJ2aWNlc+oCJEdv",
             "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Resources.AdGroupCriterionReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Resources.AdGroupCriterionReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.GetAdGroupCriterionRequest), global::Google.Ads.GoogleAds.V1.Services.GetAdGroupCriterionRequest.Parser, new[]{ "ResourceName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.MutateAdGroupCriteriaRequest), global::Google.Ads.GoogleAds.V1.Services.MutateAdGroupCriteriaRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.AdGroupCriterionOperation), global::Google.Ads.GoogleAds.V1.Services.AdGroupCriterionOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.AdGroupCriterionOperation), global::Google.Ads.GoogleAds.V1.Services.AdGroupCriterionOperation.Parser, new[]{ "UpdateMask", "ExemptPolicyViolationKeys", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.MutateAdGroupCriteriaResponse), global::Google.Ads.GoogleAds.V1.Services.MutateAdGroupCriteriaResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.MutateAdGroupCriterionResult), global::Google.Ads.GoogleAds.V1.Services.MutateAdGroupCriterionResult.Parser, new[]{ "ResourceName" }, null, null, null)
           }));
@@ -464,6 +467,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AdGroupCriterionOperation(AdGroupCriterionOperation other) : this() {
       updateMask_ = other.updateMask_ != null ? other.updateMask_.Clone() : null;
+      exemptPolicyViolationKeys_ = other.exemptPolicyViolationKeys_.Clone();
       switch (other.OperationCase) {
         case OperationOneofCase.Create:
           Create = other.Create.Clone();
@@ -496,6 +500,27 @@ namespace Google.Ads.GoogleAds.V1.Services {
       set {
         updateMask_ = value;
       }
+    }
+
+    /// <summary>Field number for the "exempt_policy_violation_keys" field.</summary>
+    public const int ExemptPolicyViolationKeysFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey> _repeated_exemptPolicyViolationKeys_codec
+        = pb::FieldCodec.ForMessage(42, global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey> exemptPolicyViolationKeys_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey>();
+    /// <summary>
+    /// The list of policy violation keys that should not cause a
+    /// PolicyViolationError to be reported. Not all policy violations are
+    /// exemptable, please refer to the is_exemptible field in the returned
+    /// PolicyViolationError.
+    ///
+    /// Resources violating these polices will be saved, but will not be eligible
+    /// to serve. They may begin serving at a later time due to a change in
+    /// policies, re-review of the resource, or a change in advertiser
+    /// certificates.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey> ExemptPolicyViolationKeys {
+      get { return exemptPolicyViolationKeys_; }
     }
 
     /// <summary>Field number for the "create" field.</summary>
@@ -578,6 +603,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
         return true;
       }
       if (!object.Equals(UpdateMask, other.UpdateMask)) return false;
+      if(!exemptPolicyViolationKeys_.Equals(other.exemptPolicyViolationKeys_)) return false;
       if (!object.Equals(Create, other.Create)) return false;
       if (!object.Equals(Update, other.Update)) return false;
       if (Remove != other.Remove) return false;
@@ -589,6 +615,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (updateMask_ != null) hash ^= UpdateMask.GetHashCode();
+      hash ^= exemptPolicyViolationKeys_.GetHashCode();
       if (operationCase_ == OperationOneofCase.Create) hash ^= Create.GetHashCode();
       if (operationCase_ == OperationOneofCase.Update) hash ^= Update.GetHashCode();
       if (operationCase_ == OperationOneofCase.Remove) hash ^= Remove.GetHashCode();
@@ -622,6 +649,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
         output.WriteRawTag(34);
         output.WriteMessage(UpdateMask);
       }
+      exemptPolicyViolationKeys_.WriteTo(output, _repeated_exemptPolicyViolationKeys_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -633,6 +661,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
       if (updateMask_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateMask);
       }
+      size += exemptPolicyViolationKeys_.CalculateSize(_repeated_exemptPolicyViolationKeys_codec);
       if (operationCase_ == OperationOneofCase.Create) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Create);
       }
@@ -659,6 +688,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
         }
         UpdateMask.MergeFrom(other.UpdateMask);
       }
+      exemptPolicyViolationKeys_.Add(other.exemptPolicyViolationKeys_);
       switch (other.OperationCase) {
         case OperationOneofCase.Create:
           if (Create == null) {
@@ -715,6 +745,10 @@ namespace Google.Ads.GoogleAds.V1.Services {
               updateMask_ = new global::Google.Protobuf.WellKnownTypes.FieldMask();
             }
             input.ReadMessage(updateMask_);
+            break;
+          }
+          case 42: {
+            exemptPolicyViolationKeys_.AddEntriesFrom(input, _repeated_exemptPolicyViolationKeys_codec);
             break;
           }
         }

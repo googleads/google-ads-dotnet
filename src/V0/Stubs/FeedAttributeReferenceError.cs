@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
             "cy52MC5lcnJvcnMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iugEK",
             "H0ZlZWRBdHRyaWJ1dGVSZWZlcmVuY2VFcnJvckVudW0ilgEKG0ZlZWRBdHRy",
             "aWJ1dGVSZWZlcmVuY2VFcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05P",
-            "V04QARIhCh1DQU5OT1RfUkVGRVJFTkNFX0RFTEVURURfRkVFRBACEhUKEUlO",
+            "V04QARIhCh1DQU5OT1RfUkVGRVJFTkNFX1JFTU9WRURfRkVFRBACEhUKEUlO",
             "VkFMSURfRkVFRF9OQU1FEAMSHwobSU5WQUxJRF9GRUVEX0FUVFJJQlVURV9O",
             "QU1FEARC+wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5lcnJvcnNC",
             "IEZlZWRBdHRyaWJ1dGVSZWZlcmVuY2VFcnJvclByb3RvUAFaRGdvb2dsZS5n",
@@ -166,15 +166,15 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// A feed referenced by ID has been deleted.
+        /// A feed referenced by ID has been removed.
         /// </summary>
-        [pbr::OriginalName("CANNOT_REFERENCE_DELETED_FEED")] CannotReferenceDeletedFeed = 2,
+        [pbr::OriginalName("CANNOT_REFERENCE_REMOVED_FEED")] CannotReferenceRemovedFeed = 2,
         /// <summary>
-        /// There is no active feed with the given name.
+        /// There is no enabled feed with the given name.
         /// </summary>
         [pbr::OriginalName("INVALID_FEED_NAME")] InvalidFeedName = 3,
         /// <summary>
-        /// There is no feed attribute in an active feed with the given name.
+        /// There is no feed attribute in an enabled feed with the given name.
         /// </summary>
         [pbr::OriginalName("INVALID_FEED_ATTRIBUTE_NAME")] InvalidFeedAttributeName = 4,
       }

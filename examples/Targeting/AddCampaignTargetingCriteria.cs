@@ -204,7 +204,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
             {
                 Address = new AddressInfo()
                 {
-                    StreetAddress = "38 avenue de l'Opéra",
+                    StreetAddress = "38 avenue de l'OpÃ©ra",
                     CityName = "Paris",
                     PostalCode = "75002",
                     CountryCode = "FR"
