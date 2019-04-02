@@ -1412,7 +1412,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
     public const int OperationIndexFieldNumber = 1;
     private long operationIndex_;
     /// <summary>
-    /// Index of the Simply operation.
+    /// Index of the mutate operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long OperationIndex {

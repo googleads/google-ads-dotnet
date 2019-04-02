@@ -128,9 +128,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private bool? hidden_;
     /// <summary>
     /// Specifies whether this is a hidden account. Learn more about hidden
-    /// accounts
-    /// &lt;a href="https://support.google.com/google-ads/answer/7519830">here&lt;/a>.
-    /// Read only.
+    /// accounts &lt;a
+    /// href="https://support.google.com/google-ads/answer/7519830">here&lt;/a>. Read
+    /// only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool? Hidden {

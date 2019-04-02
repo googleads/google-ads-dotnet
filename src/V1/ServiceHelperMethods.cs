@@ -23,20 +23,6 @@ using stt = System.Threading.Tasks;
 
 namespace Google.Ads.GoogleAds.V1.Services
 {
-    public partial class MutateAdGroupCriterionResult
-    {
-        public bool IsEmpty
-        {
-            get
-            {
-                return Equals(new MutateAdGroupCriterionResult());
-            }
-        }
-    }
-}
-
-namespace Google.Ads.GoogleAds.V1.Services
-{
     public abstract partial class CustomerServiceClient
     {
         public string[] ListAccessibleCustomers()

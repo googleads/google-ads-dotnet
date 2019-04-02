@@ -34,7 +34,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "L2RldmljZS5wcm90bxpAZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjEvZW51bXMv",
             "c3lzdGVtX21hbmFnZWRfZW50aXR5X3NvdXJjZS5wcm90bxoeZ29vZ2xlL3By",
             "b3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25z",
-            "LnByb3RvIscNCgJBZBInCgJpZBgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
+            "LnByb3RvIrcPCgJBZBInCgJpZBgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
             "bnQ2NFZhbHVlEjAKCmZpbmFsX3VybHMYAiADKAsyHC5nb29nbGUucHJvdG9i",
             "dWYuU3RyaW5nVmFsdWUSNwoRZmluYWxfbW9iaWxlX3VybHMYECADKAsyHC5n",
             "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSOwoVdHJhY2tpbmdfdXJsX3Rl",
@@ -72,17 +72,22 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlJlc3BvbnNpdmVTZWFy",
             "Y2hBZEluZm9IABJlChxsZWdhY3lfcmVzcG9uc2l2ZV9kaXNwbGF5X2FkGBwg",
             "ASgLMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkxlZ2FjeVJl",
-            "c3BvbnNpdmVEaXNwbGF5QWRJbmZvSABCCQoHYWRfZGF0YUL0AQolY29tLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnJlc291cmNlc0IHQWRQcm90b1ABWkpn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjEvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5B",
-            "ZHMuR29vZ2xlQWRzLlYxLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xl",
-            "QWRzXFYxXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYx",
-            "OjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "c3BvbnNpdmVEaXNwbGF5QWRJbmZvSAASOwoGYXBwX2FkGB0gASgLMikuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkFwcEFkSW5mb0gAElcKFWxl",
+            "Z2FjeV9hcHBfaW5zdGFsbF9hZBgeIAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYxLmNvbW1vbi5MZWdhY3lBcHBJbnN0YWxsQWRJbmZvSAASWAoVcmVz",
+            "cG9uc2l2ZV9kaXNwbGF5X2FkGB8gASgLMjcuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjEuY29tbW9uLlJlc3BvbnNpdmVEaXNwbGF5QWRJbmZvSABCCQoHYWRf",
+            "ZGF0YUL0AQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnJlc291cmNl",
+            "c0IHQWRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvcmVzb3VyY2VzO3Jlc291cmNlc6IC",
+            "A0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLlJlc291cmNlc8oCIUdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYxXFJlc291cmNlc+oCJUdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYxOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.AdTypeInfosReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.UrlCollectionReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AdTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.SystemManagedEntitySourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Ad), global::Google.Ads.GoogleAds.V1.Resources.Ad.Parser, new[]{ "Id", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "UrlCollections", "Name", "SystemManagedResourceSource", "TextAd", "ExpandedTextAd", "CallOnlyAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "GmailAd", "ImageAd", "VideoAd", "ResponsiveSearchAd", "LegacyResponsiveDisplayAd" }, new[]{ "AdData" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Ad), global::Google.Ads.GoogleAds.V1.Resources.Ad.Parser, new[]{ "Id", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "UrlCollections", "Name", "SystemManagedResourceSource", "TextAd", "ExpandedTextAd", "CallOnlyAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "GmailAd", "ImageAd", "VideoAd", "ResponsiveSearchAd", "LegacyResponsiveDisplayAd", "AppAd", "LegacyAppInstallAd", "ResponsiveDisplayAd" }, new[]{ "AdData" }, null, null)
           }));
     }
     #endregion
@@ -165,6 +170,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           break;
         case AdDataOneofCase.LegacyResponsiveDisplayAd:
           LegacyResponsiveDisplayAd = other.LegacyResponsiveDisplayAd.Clone();
+          break;
+        case AdDataOneofCase.AppAd:
+          AppAd = other.AppAd.Clone();
+          break;
+        case AdDataOneofCase.LegacyAppInstallAd:
+          LegacyAppInstallAd = other.LegacyAppInstallAd.Clone();
+          break;
+        case AdDataOneofCase.ResponsiveDisplayAd:
+          ResponsiveDisplayAd = other.ResponsiveDisplayAd.Clone();
           break;
       }
 
@@ -531,6 +545,48 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
     }
 
+    /// <summary>Field number for the "app_ad" field.</summary>
+    public const int AppAdFieldNumber = 29;
+    /// <summary>
+    /// Details pertaining to an app ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.AppAdInfo AppAd {
+      get { return adDataCase_ == AdDataOneofCase.AppAd ? (global::Google.Ads.GoogleAds.V1.Common.AppAdInfo) adData_ : null; }
+      set {
+        adData_ = value;
+        adDataCase_ = value == null ? AdDataOneofCase.None : AdDataOneofCase.AppAd;
+      }
+    }
+
+    /// <summary>Field number for the "legacy_app_install_ad" field.</summary>
+    public const int LegacyAppInstallAdFieldNumber = 30;
+    /// <summary>
+    /// Details pertaining to a legacy app install ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.LegacyAppInstallAdInfo LegacyAppInstallAd {
+      get { return adDataCase_ == AdDataOneofCase.LegacyAppInstallAd ? (global::Google.Ads.GoogleAds.V1.Common.LegacyAppInstallAdInfo) adData_ : null; }
+      set {
+        adData_ = value;
+        adDataCase_ = value == null ? AdDataOneofCase.None : AdDataOneofCase.LegacyAppInstallAd;
+      }
+    }
+
+    /// <summary>Field number for the "responsive_display_ad" field.</summary>
+    public const int ResponsiveDisplayAdFieldNumber = 31;
+    /// <summary>
+    /// Details pertaining to a responsive display ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.ResponsiveDisplayAdInfo ResponsiveDisplayAd {
+      get { return adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd ? (global::Google.Ads.GoogleAds.V1.Common.ResponsiveDisplayAdInfo) adData_ : null; }
+      set {
+        adData_ = value;
+        adDataCase_ = value == null ? AdDataOneofCase.None : AdDataOneofCase.ResponsiveDisplayAd;
+      }
+    }
+
     private object adData_;
     /// <summary>Enum of possible cases for the "ad_data" oneof.</summary>
     public enum AdDataOneofCase {
@@ -547,6 +603,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       VideoAd = 24,
       ResponsiveSearchAd = 25,
       LegacyResponsiveDisplayAd = 28,
+      AppAd = 29,
+      LegacyAppInstallAd = 30,
+      ResponsiveDisplayAd = 31,
     }
     private AdDataOneofCase adDataCase_ = AdDataOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -597,6 +656,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (!object.Equals(VideoAd, other.VideoAd)) return false;
       if (!object.Equals(ResponsiveSearchAd, other.ResponsiveSearchAd)) return false;
       if (!object.Equals(LegacyResponsiveDisplayAd, other.LegacyResponsiveDisplayAd)) return false;
+      if (!object.Equals(AppAd, other.AppAd)) return false;
+      if (!object.Equals(LegacyAppInstallAd, other.LegacyAppInstallAd)) return false;
+      if (!object.Equals(ResponsiveDisplayAd, other.ResponsiveDisplayAd)) return false;
       if (AdDataCase != other.AdDataCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -628,6 +690,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (adDataCase_ == AdDataOneofCase.VideoAd) hash ^= VideoAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.ResponsiveSearchAd) hash ^= ResponsiveSearchAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.LegacyResponsiveDisplayAd) hash ^= LegacyResponsiveDisplayAd.GetHashCode();
+      if (adDataCase_ == AdDataOneofCase.AppAd) hash ^= AppAd.GetHashCode();
+      if (adDataCase_ == AdDataOneofCase.LegacyAppInstallAd) hash ^= LegacyAppInstallAd.GetHashCode();
+      if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) hash ^= ResponsiveDisplayAd.GetHashCode();
       hash ^= (int) adDataCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -721,6 +786,18 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteRawTag(226, 1);
         output.WriteMessage(LegacyResponsiveDisplayAd);
       }
+      if (adDataCase_ == AdDataOneofCase.AppAd) {
+        output.WriteRawTag(234, 1);
+        output.WriteMessage(AppAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.LegacyAppInstallAd) {
+        output.WriteRawTag(242, 1);
+        output.WriteMessage(LegacyAppInstallAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) {
+        output.WriteRawTag(250, 1);
+        output.WriteMessage(ResponsiveDisplayAd);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -792,6 +869,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
       if (adDataCase_ == AdDataOneofCase.LegacyResponsiveDisplayAd) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(LegacyResponsiveDisplayAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.AppAd) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AppAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.LegacyAppInstallAd) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LegacyAppInstallAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ResponsiveDisplayAd);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -914,6 +1000,24 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             LegacyResponsiveDisplayAd = new global::Google.Ads.GoogleAds.V1.Common.LegacyResponsiveDisplayAdInfo();
           }
           LegacyResponsiveDisplayAd.MergeFrom(other.LegacyResponsiveDisplayAd);
+          break;
+        case AdDataOneofCase.AppAd:
+          if (AppAd == null) {
+            AppAd = new global::Google.Ads.GoogleAds.V1.Common.AppAdInfo();
+          }
+          AppAd.MergeFrom(other.AppAd);
+          break;
+        case AdDataOneofCase.LegacyAppInstallAd:
+          if (LegacyAppInstallAd == null) {
+            LegacyAppInstallAd = new global::Google.Ads.GoogleAds.V1.Common.LegacyAppInstallAdInfo();
+          }
+          LegacyAppInstallAd.MergeFrom(other.LegacyAppInstallAd);
+          break;
+        case AdDataOneofCase.ResponsiveDisplayAd:
+          if (ResponsiveDisplayAd == null) {
+            ResponsiveDisplayAd = new global::Google.Ads.GoogleAds.V1.Common.ResponsiveDisplayAdInfo();
+          }
+          ResponsiveDisplayAd.MergeFrom(other.ResponsiveDisplayAd);
           break;
       }
 
@@ -1097,6 +1201,33 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             }
             input.ReadMessage(subBuilder);
             LegacyResponsiveDisplayAd = subBuilder;
+            break;
+          }
+          case 234: {
+            global::Google.Ads.GoogleAds.V1.Common.AppAdInfo subBuilder = new global::Google.Ads.GoogleAds.V1.Common.AppAdInfo();
+            if (adDataCase_ == AdDataOneofCase.AppAd) {
+              subBuilder.MergeFrom(AppAd);
+            }
+            input.ReadMessage(subBuilder);
+            AppAd = subBuilder;
+            break;
+          }
+          case 242: {
+            global::Google.Ads.GoogleAds.V1.Common.LegacyAppInstallAdInfo subBuilder = new global::Google.Ads.GoogleAds.V1.Common.LegacyAppInstallAdInfo();
+            if (adDataCase_ == AdDataOneofCase.LegacyAppInstallAd) {
+              subBuilder.MergeFrom(LegacyAppInstallAd);
+            }
+            input.ReadMessage(subBuilder);
+            LegacyAppInstallAd = subBuilder;
+            break;
+          }
+          case 250: {
+            global::Google.Ads.GoogleAds.V1.Common.ResponsiveDisplayAdInfo subBuilder = new global::Google.Ads.GoogleAds.V1.Common.ResponsiveDisplayAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) {
+              subBuilder.MergeFrom(ResponsiveDisplayAd);
+            }
+            input.ReadMessage(subBuilder);
+            ResponsiveDisplayAd = subBuilder;
             break;
           }
         }

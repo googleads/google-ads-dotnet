@@ -372,7 +372,7 @@ namespace Google.Ads.GoogleAds.V0.Common {
     private global::Google.Ads.GoogleAds.V0.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType dataSourceType_ = 0;
     /// <summary>
     /// Data source of the list. Default value is FIRST_PARTY.
-    /// Only whitelisted customers can create third party sourced crm lists.
+    /// Only whitelisted customers can create third-party sourced CRM lists.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V0.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType DataSourceType {

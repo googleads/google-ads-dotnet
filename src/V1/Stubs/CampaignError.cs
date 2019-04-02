@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvY2FtcGFpZ25fZXJy",
             "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9ycxocZ29v",
-            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKWDAoRQ2FtcGFpZ25FcnJvckVu",
-            "dW0igAwKDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
+            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKpDAoRQ2FtcGFpZ25FcnJvckVu",
+            "dW0ikwwKDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
             "T1dOEAESIQodQ0FOTk9UX1RBUkdFVF9DT05URU5UX05FVFdPUksQAxIgChxD",
             "QU5OT1RfVEFSR0VUX1NFQVJDSF9ORVRXT1JLEAQSNgoyQ0FOTk9UX1RBUkdF",
             "VF9TRUFSQ0hfTkVUV09SS19XSVRIT1VUX0dPT0dMRV9TRUFSQ0gQBRIwCixD",
@@ -61,12 +61,13 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "RUxfQ1VTVE9NRVJfTElOSxAlEh8KG0lOVkFMSURfSE9URUxfQ1VTVE9NRVJf",
             "TElOSxAmEhkKFU1JU1NJTkdfSE9URUxfU0VUVElORxAnEkIKPkNBTk5PVF9V",
             "U0VfU0hBUkVEX0NBTVBBSUdOX0JVREdFVF9XSElMRV9QQVJUX09GX0NBTVBB",
-            "SUdOX0dST1VQEChC7QEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5l",
-            "cnJvcnNCEkNhbXBhaWduRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9y",
-            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvZXJyb3Jz",
-            "O2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVycm9y",
-            "c8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXEVycm9yc+oCIkdvb2dsZTo6",
-            "QWRzOjpHb29nbGVBZHM6OlYxOjpFcnJvcnNiBnByb3RvMw=="));
+            "SUdOX0dST1VQECgSEQoNQVBQX05PVF9GT1VORBApQu0BCiJjb20uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjEuZXJyb3JzQhJDYW1wYWlnbkVycm9yUHJvdG9Q",
+            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MVxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RXJyb3Jz",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -351,6 +352,10 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// group.
         /// </summary>
         [pbr::OriginalName("CANNOT_USE_SHARED_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP")] CannotUseSharedCampaignBudgetWhilePartOfCampaignGroup = 40,
+        /// <summary>
+        /// The app ID was not found.
+        /// </summary>
+        [pbr::OriginalName("APP_NOT_FOUND")] AppNotFound = 41,
       }
 
     }

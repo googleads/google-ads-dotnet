@@ -26,19 +26,20 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9hZF9ncm91cF90eXBl",
             "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byK0AgoPQWRHcm91cFR5cGVFbnVtIqAC",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byLMAgoPQWRHcm91cFR5cGVFbnVtIrgC",
             "CgtBZEdyb3VwVHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIT",
             "Cg9TRUFSQ0hfU1RBTkRBUkQQAhIUChBESVNQTEFZX1NUQU5EQVJEEAMSGAoU",
             "U0hPUFBJTkdfUFJPRFVDVF9BRFMQBBINCglIT1RFTF9BRFMQBhIWChJTSE9Q",
             "UElOR19TTUFSVF9BRFMQBxIQCgxWSURFT19CVU1QRVIQCBIdChlWSURFT19U",
             "UlVFX1ZJRVdfSU5fU1RSRUFNEAkSHgoaVklERU9fVFJVRV9WSUVXX0lOX0RJ",
             "U1BMQVkQChIhCh1WSURFT19OT05fU0tJUFBBQkxFX0lOX1NUUkVBTRALEhMK",
-            "D1ZJREVPX09VVFNUUkVBTRAMQuUBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjEuZW51bXNCEEFkR3JvdXBUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2Vu",
-            "dW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEuRW51",
-            "bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMVxFbnVtc+oCIUdvb2dsZTo6",
-            "QWRzOjpHb29nbGVBZHM6OlYxOjpFbnVtc2IGcHJvdG8z"));
+            "D1ZJREVPX09VVFNUUkVBTRAMEhYKElNFQVJDSF9EWU5BTUlDX0FEUxANQuUB",
+            "CiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXNCEEFkR3JvdXBU",
+            "eXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zO2VudW1zogIDR0FBqgIdR29v",
+            "Z2xlLkFkcy5Hb29nbGVBZHMuVjEuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWMVxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpF",
+            "bnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -211,6 +212,10 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// Outstream video ads.
         /// </summary>
         [pbr::OriginalName("VIDEO_OUTSTREAM")] VideoOutstream = 12,
+        /// <summary>
+        /// Ad group type for Dynamic Search Ads ad groups.
+        /// </summary>
+        [pbr::OriginalName("SEARCH_DYNAMIC_ADS")] SearchDynamicAds = 13,
       }
 
     }

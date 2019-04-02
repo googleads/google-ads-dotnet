@@ -81,6 +81,24 @@ CampaignServiceClient campaignService =
 See the [Getting Started](https://github.com/googleads/google-ads-dotnet/wiki/Getting-started) guide
 for more details, and examples folder for code examples that show how to use various services.
 
+## How do I enable logging?
+
+You can enable logging by adding the following line in your Program.cs before making any API calls.
+
+```
+TraceUtilities.Configure(TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE,
+    "C:\\logs\\details.log", System.Diagnostics.SourceLevels.All);
+```
+If the API log doesn't give you enough details, then you can enable more low level logging at grpc
+level. Keep in mind that this can get pretty detailed and long. The grpc logs are written to
+`stderr`. You can find all the supported environment variables here:
+https://github.com/grpc/grpc/blob/master/doc/environment_variables.md
+
+```
+Environment.SetEnvironmentVariable("GRPC_VERBOSITY", "DEBUG");
+Environment.SetEnvironmentVariable("GRPC_TRACE", "http");
+```
+
 ## Miscellaneous
 
 

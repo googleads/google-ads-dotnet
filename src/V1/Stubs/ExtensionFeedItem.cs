@@ -27,39 +27,42 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9yZXNvdXJjZXMvZXh0ZW5zaW9u",
             "X2ZlZWRfaXRlbS5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEucmVz",
             "b3VyY2VzGi9nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9jb21tb24vZXh0ZW5z",
-            "aW9ucy5wcm90bxo0Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjEvZW51bXMvZmVl",
-            "ZF9pdGVtX3N0YXR1cy5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJz",
-            "LnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIvcGChFFeHRl",
-            "bnNpb25GZWVkSXRlbRIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEjUKD3N0YXJ0",
-            "X2RhdGVfdGltZRgFIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZRIzCg1lbmRfZGF0ZV90aW1lGAYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cmluZ1ZhbHVlElAKBnN0YXR1cxgEIAEoDjJALmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxLmVudW1zLkZlZWRJdGVtU3RhdHVzRW51bS5GZWVkSXRlbVN0YXR1",
-            "cxJOChJzaXRlbGlua19mZWVkX2l0ZW0YAiABKAsyMC5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MS5jb21tb24uU2l0ZWxpbmtGZWVkSXRlbUgAEmEKHHN0cnVj",
-            "dHVyZWRfc25pcHBldF9mZWVkX2l0ZW0YAyABKAsyOS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MS5jb21tb24uU3RydWN0dXJlZFNuaXBwZXRGZWVkSXRlbUgA",
-            "EkQKDWFwcF9mZWVkX2l0ZW0YByABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MS5jb21tb24uQXBwRmVlZEl0ZW1IABJGCg5jYWxsX2ZlZWRfaXRlbRgI",
-            "IAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5DYWxsRmVl",
-            "ZEl0ZW1IABJMChFjYWxsb3V0X2ZlZWRfaXRlbRgJIAEoCzIvLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5DYWxsb3V0RmVlZEl0ZW1IABJVChZ0",
-            "ZXh0X21lc3NhZ2VfZmVlZF9pdGVtGAogASgLMjMuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjEuY29tbW9uLlRleHRNZXNzYWdlRmVlZEl0ZW1IABJICg9wcmlj",
-            "ZV9mZWVkX2l0ZW0YCyABKAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5j",
-            "b21tb24uUHJpY2VGZWVkSXRlbUgAElAKE3Byb21vdGlvbl9mZWVkX2l0ZW0Y",
-            "DCABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uUHJvbW90",
-            "aW9uRmVlZEl0ZW1IAEILCglleHRlbnNpb25CgwIKJWNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MS5yZXNvdXJjZXNCFkV4dGVuc2lvbkZlZWRJdGVtUHJv",
-            "dG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YxL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFH",
-            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMS5SZXNvdXJjZXPKAiFHb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMVxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xl",
-            "QWRzOjpWMTo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "aW9ucy5wcm90bxoyZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjEvZW51bXMvZXh0",
+            "ZW5zaW9uX3R5cGUucHJvdG8aNGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2Vu",
+            "dW1zL2ZlZWRfaXRlbV9zdGF0dXMucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93",
+            "cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLP",
+            "BwoRRXh0ZW5zaW9uRmVlZEl0ZW0SFQoNcmVzb3VyY2VfbmFtZRgBIAEoCRJW",
+            "Cg5leHRlbnNpb25fdHlwZRgNIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxLmVudW1zLkV4dGVuc2lvblR5cGVFbnVtLkV4dGVuc2lvblR5cGUSNQoP",
+            "c3RhcnRfZGF0ZV90aW1lGAUgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEjMKDWVuZF9kYXRlX3RpbWUYBiABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUSUAoGc3RhdHVzGAQgASgOMkAuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjEuZW51bXMuRmVlZEl0ZW1TdGF0dXNFbnVtLkZlZWRJdGVt",
+            "U3RhdHVzEk4KEnNpdGVsaW5rX2ZlZWRfaXRlbRgCIAEoCzIwLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5TaXRlbGlua0ZlZWRJdGVtSAASYQoc",
+            "c3RydWN0dXJlZF9zbmlwcGV0X2ZlZWRfaXRlbRgDIAEoCzI5Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5TdHJ1Y3R1cmVkU25pcHBldEZlZWRJ",
+            "dGVtSAASRAoNYXBwX2ZlZWRfaXRlbRgHIAEoCzIrLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYxLmNvbW1vbi5BcHBGZWVkSXRlbUgAEkYKDmNhbGxfZmVlZF9p",
+            "dGVtGAggASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkNh",
+            "bGxGZWVkSXRlbUgAEkwKEWNhbGxvdXRfZmVlZF9pdGVtGAkgASgLMi8uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkNhbGxvdXRGZWVkSXRlbUgA",
+            "ElUKFnRleHRfbWVzc2FnZV9mZWVkX2l0ZW0YCiABKAsyMy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MS5jb21tb24uVGV4dE1lc3NhZ2VGZWVkSXRlbUgAEkgK",
+            "D3ByaWNlX2ZlZWRfaXRlbRgLIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxLmNvbW1vbi5QcmljZUZlZWRJdGVtSAASUAoTcHJvbW90aW9uX2ZlZWRf",
+            "aXRlbRgMIAEoCzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Q",
+            "cm9tb3Rpb25GZWVkSXRlbUgAQgsKCWV4dGVuc2lvbkKDAgolY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxLnJlc291cmNlc0IWRXh0ZW5zaW9uRmVlZEl0",
+            "ZW1Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
+            "cGlzL2Fkcy9nb29nbGVhZHMvdjEvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dB",
+            "QaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLlJlc291cmNlc8oCIUdvb2ds",
+            "ZVxBZHNcR29vZ2xlQWRzXFYxXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpH",
+            "b29nbGVBZHM6OlYxOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.FeedItemStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ExtensionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.FeedItemStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem), global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem.Parser, new[]{ "ResourceName", "StartDateTime", "EndDateTime", "Status", "SitelinkFeedItem", "StructuredSnippetFeedItem", "AppFeedItem", "CallFeedItem", "CalloutFeedItem", "TextMessageFeedItem", "PriceFeedItem", "PromotionFeedItem" }, new[]{ "Extension" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem), global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem.Parser, new[]{ "ResourceName", "ExtensionType", "StartDateTime", "EndDateTime", "Status", "SitelinkFeedItem", "StructuredSnippetFeedItem", "AppFeedItem", "CallFeedItem", "CalloutFeedItem", "TextMessageFeedItem", "PriceFeedItem", "PromotionFeedItem" }, new[]{ "Extension" }, null, null)
           }));
     }
     #endregion
@@ -95,6 +98,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ExtensionFeedItem(ExtensionFeedItem other) : this() {
       resourceName_ = other.resourceName_;
+      extensionType_ = other.extensionType_;
       StartDateTime = other.StartDateTime;
       EndDateTime = other.EndDateTime;
       status_ = other.status_;
@@ -147,6 +151,21 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       get { return resourceName_; }
       set {
         resourceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "extension_type" field.</summary>
+    public const int ExtensionTypeFieldNumber = 13;
+    private global::Google.Ads.GoogleAds.V1.Enums.ExtensionTypeEnum.Types.ExtensionType extensionType_ = 0;
+    /// <summary>
+    /// The extension type of the extension feed item.
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Enums.ExtensionTypeEnum.Types.ExtensionType ExtensionType {
+      get { return extensionType_; }
+      set {
+        extensionType_ = value;
       }
     }
 
@@ -351,6 +370,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         return true;
       }
       if (ResourceName != other.ResourceName) return false;
+      if (ExtensionType != other.ExtensionType) return false;
       if (StartDateTime != other.StartDateTime) return false;
       if (EndDateTime != other.EndDateTime) return false;
       if (Status != other.Status) return false;
@@ -370,6 +390,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
+      if (ExtensionType != 0) hash ^= ExtensionType.GetHashCode();
       if (startDateTime_ != null) hash ^= StartDateTime.GetHashCode();
       if (endDateTime_ != null) hash ^= EndDateTime.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
@@ -441,6 +462,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteRawTag(98);
         output.WriteMessage(PromotionFeedItem);
       }
+      if (ExtensionType != 0) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) ExtensionType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -451,6 +476,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       int size = 0;
       if (ResourceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
+      }
+      if (ExtensionType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ExtensionType);
       }
       if (startDateTime_ != null) {
         size += _single_startDateTime_codec.CalculateSizeWithTag(StartDateTime);
@@ -498,6 +526,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
       if (other.ResourceName.Length != 0) {
         ResourceName = other.ResourceName;
+      }
+      if (other.ExtensionType != 0) {
+        ExtensionType = other.ExtensionType;
       }
       if (other.startDateTime_ != null) {
         if (startDateTime_ == null || other.StartDateTime != "") {
@@ -666,6 +697,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             }
             input.ReadMessage(subBuilder);
             PromotionFeedItem = subBuilder;
+            break;
+          }
+          case 104: {
+            extensionType_ = (global::Google.Ads.GoogleAds.V1.Enums.ExtensionTypeEnum.Types.ExtensionType) input.ReadEnum();
             break;
           }
         }

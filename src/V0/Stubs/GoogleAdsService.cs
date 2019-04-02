@@ -261,15 +261,15 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "LmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMuQ2FtcGFpZ25CaWRNb2RpZmll",
             "ck9wZXJhdGlvbkgAEl4KGWNhbXBhaWduX2J1ZGdldF9vcGVyYXRpb24YCCAB",
             "KAsyOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5DYW1wYWln",
-            "bkJ1ZGdldE9wZXJhdGlvbkgAElEKEmNhbXBhaWduX29wZXJhdGlvbhgKIAEo",
-            "CzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLkNhbXBhaWdu",
-            "T3BlcmF0aW9uSAASZQodY2FtcGFpZ25fc2hhcmVkX3NldF9vcGVyYXRpb24Y",
-            "CyABKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5DYW1w",
-            "YWlnblNoYXJlZFNldE9wZXJhdGlvbkgAEmIKG2NvbnZlcnNpb25fYWN0aW9u",
-            "X29wZXJhdGlvbhgMIAEoCzI7Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNl",
-            "cnZpY2VzLkNvbnZlcnNpb25BY3Rpb25PcGVyYXRpb25IABJkChxjYW1wYWln",
-            "bl9jcml0ZXJpb25fb3BlcmF0aW9uGA0gASgLMjwuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjAuc2VydmljZXMuQ2FtcGFpZ25Dcml0ZXJpb25PcGVyYXRpb25I",
+            "bkJ1ZGdldE9wZXJhdGlvbkgAEmQKHGNhbXBhaWduX2NyaXRlcmlvbl9vcGVy",
+            "YXRpb24YDSABKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNl",
+            "cy5DYW1wYWlnbkNyaXRlcmlvbk9wZXJhdGlvbkgAElEKEmNhbXBhaWduX29w",
+            "ZXJhdGlvbhgKIAEoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZp",
+            "Y2VzLkNhbXBhaWduT3BlcmF0aW9uSAASZQodY2FtcGFpZ25fc2hhcmVkX3Nl",
+            "dF9vcGVyYXRpb24YCyABKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5z",
+            "ZXJ2aWNlcy5DYW1wYWlnblNoYXJlZFNldE9wZXJhdGlvbkgAEmIKG2NvbnZl",
+            "cnNpb25fYWN0aW9uX29wZXJhdGlvbhgMIAEoCzI7Lmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYwLnNlcnZpY2VzLkNvbnZlcnNpb25BY3Rpb25PcGVyYXRpb25I",
             "ABJgChpzaGFyZWRfY3JpdGVyaW9uX29wZXJhdGlvbhgOIAEoCzI6Lmdvb2ds",
             "ZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLlNoYXJlZENyaXRlcmlvbk9w",
             "ZXJhdGlvbkgAElQKFHNoYXJlZF9zZXRfb3BlcmF0aW9uGA8gASgLMjQuZ29v",
@@ -291,16 +291,16 @@ namespace Google.Ads.GoogleAds.V0.Services {
             "cmVzdWx0GAcgASgLMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2Vydmlj",
             "ZXMuTXV0YXRlQ2FtcGFpZ25CaWRNb2RpZmllclJlc3VsdEgAEl4KFmNhbXBh",
             "aWduX2J1ZGdldF9yZXN1bHQYCCABKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MC5zZXJ2aWNlcy5NdXRhdGVDYW1wYWlnbkJ1ZGdldFJlc3VsdEgAElEK",
-            "D2NhbXBhaWduX3Jlc3VsdBgKIAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYwLnNlcnZpY2VzLk11dGF0ZUNhbXBhaWduUmVzdWx0SAASZQoaY2FtcGFp",
-            "Z25fc2hhcmVkX3NldF9yZXN1bHQYCyABKAsyPy5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MC5zZXJ2aWNlcy5NdXRhdGVDYW1wYWlnblNoYXJlZFNldFJlc3Vs",
-            "dEgAEmIKGGNvbnZlcnNpb25fYWN0aW9uX3Jlc3VsdBgMIAEoCzI+Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLk11dGF0ZUNvbnZlcnNpb25B",
-            "Y3Rpb25SZXN1bHRIABJkChljYW1wYWlnbl9jcml0ZXJpb25fcmVzdWx0GA0g",
-            "ASgLMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2VydmljZXMuTXV0YXRl",
-            "Q2FtcGFpZ25Dcml0ZXJpb25SZXN1bHRIABJgChdzaGFyZWRfY3JpdGVyaW9u",
+            "cy52MC5zZXJ2aWNlcy5NdXRhdGVDYW1wYWlnbkJ1ZGdldFJlc3VsdEgAEmQK",
+            "GWNhbXBhaWduX2NyaXRlcmlvbl9yZXN1bHQYDSABKAsyPy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5NdXRhdGVDYW1wYWlnbkNyaXRlcmlv",
+            "blJlc3VsdEgAElEKD2NhbXBhaWduX3Jlc3VsdBgKIAEoCzI2Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLk11dGF0ZUNhbXBhaWduUmVzdWx0",
+            "SAASZQoaY2FtcGFpZ25fc2hhcmVkX3NldF9yZXN1bHQYCyABKAsyPy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MC5zZXJ2aWNlcy5NdXRhdGVDYW1wYWlnblNo",
+            "YXJlZFNldFJlc3VsdEgAEmIKGGNvbnZlcnNpb25fYWN0aW9uX3Jlc3VsdBgM",
+            "IAEoCzI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZpY2VzLk11dGF0",
+            "ZUNvbnZlcnNpb25BY3Rpb25SZXN1bHRIABJgChdzaGFyZWRfY3JpdGVyaW9u",
             "X3Jlc3VsdBgOIAEoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLnNlcnZp",
             "Y2VzLk11dGF0ZVNoYXJlZENyaXRlcmlvblJlc3VsdEgAElQKEXNoYXJlZF9z",
             "ZXRfcmVzdWx0GA8gASgLMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuc2Vy",
@@ -330,8 +330,8 @@ namespace Google.Ads.GoogleAds.V0.Services {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow), global::Google.Ads.GoogleAds.V0.Services.GoogleAdsRow.Parser, new[]{ "AccountBudget", "AccountBudgetProposal", "AdGroup", "AdGroupAd", "AdGroupAudienceView", "AdGroupBidModifier", "AdGroupCriterion", "AdGroupFeed", "AgeRangeView", "AdScheduleView", "BiddingStrategy", "BillingSetup", "CampaignBudget", "Campaign", "CampaignAudienceView", "CampaignBidModifier", "CampaignCriterion", "CampaignFeed", "CampaignSharedSet", "CarrierConstant", "ChangeStatus", "ConversionAction", "Customer", "CustomerManagerLink", "CustomerClientLink", "CustomerClient", "CustomerFeed", "DisplayKeywordView", "Feed", "FeedItem", "FeedMapping", "GenderView", "GeoTargetConstant", "HotelGroupView", "HotelPerformanceView", "KeywordView", "KeywordPlan", "KeywordPlanCampaign", "KeywordPlanNegativeKeyword", "KeywordPlanAdGroup", "KeywordPlanKeyword", "LanguageConstant", "ManagedPlacementView", "MediaFile", "MobileAppCategoryConstant", "MobileDeviceConstant", "OperatingSystemVersionConstant", "ParentalStatusView", "ProductGroupView", "Recommendation", "SearchTermView", "SharedCriterion", "SharedSet", "TopicView", "UserInterest", "UserList", "RemarketingAction", "TopicConstant", "Video", "Metrics", "Segments" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest), global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsRequest.Parser, new[]{ "CustomerId", "MutateOperations", "PartialFailure", "ValidateOnly" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse), global::Google.Ads.GoogleAds.V0.Services.MutateGoogleAdsResponse.Parser, new[]{ "PartialFailureError", "MutateOperationResponses" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateOperation), global::Google.Ads.GoogleAds.V0.Services.MutateOperation.Parser, new[]{ "AdGroupAdOperation", "AdGroupBidModifierOperation", "AdGroupCriterionOperation", "AdGroupOperation", "BiddingStrategyOperation", "CampaignBidModifierOperation", "CampaignBudgetOperation", "CampaignOperation", "CampaignSharedSetOperation", "ConversionActionOperation", "CampaignCriterionOperation", "SharedCriterionOperation", "SharedSetOperation", "UserListOperation" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateOperationResponse), global::Google.Ads.GoogleAds.V0.Services.MutateOperationResponse.Parser, new[]{ "AdGroupAdResult", "AdGroupBidModifierResult", "AdGroupCriterionResult", "AdGroupResult", "BiddingStrategyResult", "CampaignBidModifierResult", "CampaignBudgetResult", "CampaignResult", "CampaignSharedSetResult", "ConversionActionResult", "CampaignCriterionResult", "SharedCriterionResult", "SharedSetResult", "UserListResult" }, new[]{ "Response" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateOperation), global::Google.Ads.GoogleAds.V0.Services.MutateOperation.Parser, new[]{ "AdGroupAdOperation", "AdGroupBidModifierOperation", "AdGroupCriterionOperation", "AdGroupOperation", "BiddingStrategyOperation", "CampaignBidModifierOperation", "CampaignBudgetOperation", "CampaignCriterionOperation", "CampaignOperation", "CampaignSharedSetOperation", "ConversionActionOperation", "SharedCriterionOperation", "SharedSetOperation", "UserListOperation" }, new[]{ "Operation" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Services.MutateOperationResponse), global::Google.Ads.GoogleAds.V0.Services.MutateOperationResponse.Parser, new[]{ "AdGroupAdResult", "AdGroupBidModifierResult", "AdGroupCriterionResult", "AdGroupResult", "BiddingStrategyResult", "CampaignBidModifierResult", "CampaignBudgetResult", "CampaignCriterionResult", "CampaignResult", "CampaignSharedSetResult", "ConversionActionResult", "SharedCriterionResult", "SharedSetResult", "UserListResult" }, new[]{ "Response" }, null, null)
           }));
     }
     #endregion
@@ -3634,6 +3634,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
         case OperationOneofCase.CampaignBudgetOperation:
           CampaignBudgetOperation = other.CampaignBudgetOperation.Clone();
           break;
+        case OperationOneofCase.CampaignCriterionOperation:
+          CampaignCriterionOperation = other.CampaignCriterionOperation.Clone();
+          break;
         case OperationOneofCase.CampaignOperation:
           CampaignOperation = other.CampaignOperation.Clone();
           break;
@@ -3642,9 +3645,6 @@ namespace Google.Ads.GoogleAds.V0.Services {
           break;
         case OperationOneofCase.ConversionActionOperation:
           ConversionActionOperation = other.ConversionActionOperation.Clone();
-          break;
-        case OperationOneofCase.CampaignCriterionOperation:
-          CampaignCriterionOperation = other.CampaignCriterionOperation.Clone();
           break;
         case OperationOneofCase.SharedCriterionOperation:
           SharedCriterionOperation = other.SharedCriterionOperation.Clone();
@@ -3763,6 +3763,20 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
     }
 
+    /// <summary>Field number for the "campaign_criterion_operation" field.</summary>
+    public const int CampaignCriterionOperationFieldNumber = 13;
+    /// <summary>
+    /// A campaign criterion mutate operation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Services.CampaignCriterionOperation CampaignCriterionOperation {
+      get { return operationCase_ == OperationOneofCase.CampaignCriterionOperation ? (global::Google.Ads.GoogleAds.V0.Services.CampaignCriterionOperation) operation_ : null; }
+      set {
+        operation_ = value;
+        operationCase_ = value == null ? OperationOneofCase.None : OperationOneofCase.CampaignCriterionOperation;
+      }
+    }
+
     /// <summary>Field number for the "campaign_operation" field.</summary>
     public const int CampaignOperationFieldNumber = 10;
     /// <summary>
@@ -3802,20 +3816,6 @@ namespace Google.Ads.GoogleAds.V0.Services {
       set {
         operation_ = value;
         operationCase_ = value == null ? OperationOneofCase.None : OperationOneofCase.ConversionActionOperation;
-      }
-    }
-
-    /// <summary>Field number for the "campaign_criterion_operation" field.</summary>
-    public const int CampaignCriterionOperationFieldNumber = 13;
-    /// <summary>
-    /// A campaign criterion mutate operation.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Ads.GoogleAds.V0.Services.CampaignCriterionOperation CampaignCriterionOperation {
-      get { return operationCase_ == OperationOneofCase.CampaignCriterionOperation ? (global::Google.Ads.GoogleAds.V0.Services.CampaignCriterionOperation) operation_ : null; }
-      set {
-        operation_ = value;
-        operationCase_ = value == null ? OperationOneofCase.None : OperationOneofCase.CampaignCriterionOperation;
       }
     }
 
@@ -3872,10 +3872,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
       BiddingStrategyOperation = 6,
       CampaignBidModifierOperation = 7,
       CampaignBudgetOperation = 8,
+      CampaignCriterionOperation = 13,
       CampaignOperation = 10,
       CampaignSharedSetOperation = 11,
       ConversionActionOperation = 12,
-      CampaignCriterionOperation = 13,
       SharedCriterionOperation = 14,
       SharedSetOperation = 15,
       UserListOperation = 16,
@@ -3912,10 +3912,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (!object.Equals(BiddingStrategyOperation, other.BiddingStrategyOperation)) return false;
       if (!object.Equals(CampaignBidModifierOperation, other.CampaignBidModifierOperation)) return false;
       if (!object.Equals(CampaignBudgetOperation, other.CampaignBudgetOperation)) return false;
+      if (!object.Equals(CampaignCriterionOperation, other.CampaignCriterionOperation)) return false;
       if (!object.Equals(CampaignOperation, other.CampaignOperation)) return false;
       if (!object.Equals(CampaignSharedSetOperation, other.CampaignSharedSetOperation)) return false;
       if (!object.Equals(ConversionActionOperation, other.ConversionActionOperation)) return false;
-      if (!object.Equals(CampaignCriterionOperation, other.CampaignCriterionOperation)) return false;
       if (!object.Equals(SharedCriterionOperation, other.SharedCriterionOperation)) return false;
       if (!object.Equals(SharedSetOperation, other.SharedSetOperation)) return false;
       if (!object.Equals(UserListOperation, other.UserListOperation)) return false;
@@ -3933,10 +3933,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (operationCase_ == OperationOneofCase.BiddingStrategyOperation) hash ^= BiddingStrategyOperation.GetHashCode();
       if (operationCase_ == OperationOneofCase.CampaignBidModifierOperation) hash ^= CampaignBidModifierOperation.GetHashCode();
       if (operationCase_ == OperationOneofCase.CampaignBudgetOperation) hash ^= CampaignBudgetOperation.GetHashCode();
+      if (operationCase_ == OperationOneofCase.CampaignCriterionOperation) hash ^= CampaignCriterionOperation.GetHashCode();
       if (operationCase_ == OperationOneofCase.CampaignOperation) hash ^= CampaignOperation.GetHashCode();
       if (operationCase_ == OperationOneofCase.CampaignSharedSetOperation) hash ^= CampaignSharedSetOperation.GetHashCode();
       if (operationCase_ == OperationOneofCase.ConversionActionOperation) hash ^= ConversionActionOperation.GetHashCode();
-      if (operationCase_ == OperationOneofCase.CampaignCriterionOperation) hash ^= CampaignCriterionOperation.GetHashCode();
       if (operationCase_ == OperationOneofCase.SharedCriterionOperation) hash ^= SharedCriterionOperation.GetHashCode();
       if (operationCase_ == OperationOneofCase.SharedSetOperation) hash ^= SharedSetOperation.GetHashCode();
       if (operationCase_ == OperationOneofCase.UserListOperation) hash ^= UserListOperation.GetHashCode();
@@ -4039,6 +4039,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (operationCase_ == OperationOneofCase.CampaignBudgetOperation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CampaignBudgetOperation);
       }
+      if (operationCase_ == OperationOneofCase.CampaignCriterionOperation) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CampaignCriterionOperation);
+      }
       if (operationCase_ == OperationOneofCase.CampaignOperation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CampaignOperation);
       }
@@ -4047,9 +4050,6 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
       if (operationCase_ == OperationOneofCase.ConversionActionOperation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ConversionActionOperation);
-      }
-      if (operationCase_ == OperationOneofCase.CampaignCriterionOperation) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CampaignCriterionOperation);
       }
       if (operationCase_ == OperationOneofCase.SharedCriterionOperation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SharedCriterionOperation);
@@ -4114,6 +4114,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
           }
           CampaignBudgetOperation.MergeFrom(other.CampaignBudgetOperation);
           break;
+        case OperationOneofCase.CampaignCriterionOperation:
+          if (CampaignCriterionOperation == null) {
+            CampaignCriterionOperation = new global::Google.Ads.GoogleAds.V0.Services.CampaignCriterionOperation();
+          }
+          CampaignCriterionOperation.MergeFrom(other.CampaignCriterionOperation);
+          break;
         case OperationOneofCase.CampaignOperation:
           if (CampaignOperation == null) {
             CampaignOperation = new global::Google.Ads.GoogleAds.V0.Services.CampaignOperation();
@@ -4131,12 +4137,6 @@ namespace Google.Ads.GoogleAds.V0.Services {
             ConversionActionOperation = new global::Google.Ads.GoogleAds.V0.Services.ConversionActionOperation();
           }
           ConversionActionOperation.MergeFrom(other.ConversionActionOperation);
-          break;
-        case OperationOneofCase.CampaignCriterionOperation:
-          if (CampaignCriterionOperation == null) {
-            CampaignCriterionOperation = new global::Google.Ads.GoogleAds.V0.Services.CampaignCriterionOperation();
-          }
-          CampaignCriterionOperation.MergeFrom(other.CampaignCriterionOperation);
           break;
         case OperationOneofCase.SharedCriterionOperation:
           if (SharedCriterionOperation == null) {
@@ -4351,6 +4351,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
         case ResponseOneofCase.CampaignBudgetResult:
           CampaignBudgetResult = other.CampaignBudgetResult.Clone();
           break;
+        case ResponseOneofCase.CampaignCriterionResult:
+          CampaignCriterionResult = other.CampaignCriterionResult.Clone();
+          break;
         case ResponseOneofCase.CampaignResult:
           CampaignResult = other.CampaignResult.Clone();
           break;
@@ -4359,9 +4362,6 @@ namespace Google.Ads.GoogleAds.V0.Services {
           break;
         case ResponseOneofCase.ConversionActionResult:
           ConversionActionResult = other.ConversionActionResult.Clone();
-          break;
-        case ResponseOneofCase.CampaignCriterionResult:
-          CampaignCriterionResult = other.CampaignCriterionResult.Clone();
           break;
         case ResponseOneofCase.SharedCriterionResult:
           SharedCriterionResult = other.SharedCriterionResult.Clone();
@@ -4480,6 +4480,20 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
     }
 
+    /// <summary>Field number for the "campaign_criterion_result" field.</summary>
+    public const int CampaignCriterionResultFieldNumber = 13;
+    /// <summary>
+    /// The result for the campaign criterion mutate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V0.Services.MutateCampaignCriterionResult CampaignCriterionResult {
+      get { return responseCase_ == ResponseOneofCase.CampaignCriterionResult ? (global::Google.Ads.GoogleAds.V0.Services.MutateCampaignCriterionResult) response_ : null; }
+      set {
+        response_ = value;
+        responseCase_ = value == null ? ResponseOneofCase.None : ResponseOneofCase.CampaignCriterionResult;
+      }
+    }
+
     /// <summary>Field number for the "campaign_result" field.</summary>
     public const int CampaignResultFieldNumber = 10;
     /// <summary>
@@ -4519,20 +4533,6 @@ namespace Google.Ads.GoogleAds.V0.Services {
       set {
         response_ = value;
         responseCase_ = value == null ? ResponseOneofCase.None : ResponseOneofCase.ConversionActionResult;
-      }
-    }
-
-    /// <summary>Field number for the "campaign_criterion_result" field.</summary>
-    public const int CampaignCriterionResultFieldNumber = 13;
-    /// <summary>
-    /// The result for the campaign criterion mutate.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Ads.GoogleAds.V0.Services.MutateCampaignCriterionResult CampaignCriterionResult {
-      get { return responseCase_ == ResponseOneofCase.CampaignCriterionResult ? (global::Google.Ads.GoogleAds.V0.Services.MutateCampaignCriterionResult) response_ : null; }
-      set {
-        response_ = value;
-        responseCase_ = value == null ? ResponseOneofCase.None : ResponseOneofCase.CampaignCriterionResult;
       }
     }
 
@@ -4589,10 +4589,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
       BiddingStrategyResult = 6,
       CampaignBidModifierResult = 7,
       CampaignBudgetResult = 8,
+      CampaignCriterionResult = 13,
       CampaignResult = 10,
       CampaignSharedSetResult = 11,
       ConversionActionResult = 12,
-      CampaignCriterionResult = 13,
       SharedCriterionResult = 14,
       SharedSetResult = 15,
       UserListResult = 16,
@@ -4629,10 +4629,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (!object.Equals(BiddingStrategyResult, other.BiddingStrategyResult)) return false;
       if (!object.Equals(CampaignBidModifierResult, other.CampaignBidModifierResult)) return false;
       if (!object.Equals(CampaignBudgetResult, other.CampaignBudgetResult)) return false;
+      if (!object.Equals(CampaignCriterionResult, other.CampaignCriterionResult)) return false;
       if (!object.Equals(CampaignResult, other.CampaignResult)) return false;
       if (!object.Equals(CampaignSharedSetResult, other.CampaignSharedSetResult)) return false;
       if (!object.Equals(ConversionActionResult, other.ConversionActionResult)) return false;
-      if (!object.Equals(CampaignCriterionResult, other.CampaignCriterionResult)) return false;
       if (!object.Equals(SharedCriterionResult, other.SharedCriterionResult)) return false;
       if (!object.Equals(SharedSetResult, other.SharedSetResult)) return false;
       if (!object.Equals(UserListResult, other.UserListResult)) return false;
@@ -4650,10 +4650,10 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (responseCase_ == ResponseOneofCase.BiddingStrategyResult) hash ^= BiddingStrategyResult.GetHashCode();
       if (responseCase_ == ResponseOneofCase.CampaignBidModifierResult) hash ^= CampaignBidModifierResult.GetHashCode();
       if (responseCase_ == ResponseOneofCase.CampaignBudgetResult) hash ^= CampaignBudgetResult.GetHashCode();
+      if (responseCase_ == ResponseOneofCase.CampaignCriterionResult) hash ^= CampaignCriterionResult.GetHashCode();
       if (responseCase_ == ResponseOneofCase.CampaignResult) hash ^= CampaignResult.GetHashCode();
       if (responseCase_ == ResponseOneofCase.CampaignSharedSetResult) hash ^= CampaignSharedSetResult.GetHashCode();
       if (responseCase_ == ResponseOneofCase.ConversionActionResult) hash ^= ConversionActionResult.GetHashCode();
-      if (responseCase_ == ResponseOneofCase.CampaignCriterionResult) hash ^= CampaignCriterionResult.GetHashCode();
       if (responseCase_ == ResponseOneofCase.SharedCriterionResult) hash ^= SharedCriterionResult.GetHashCode();
       if (responseCase_ == ResponseOneofCase.SharedSetResult) hash ^= SharedSetResult.GetHashCode();
       if (responseCase_ == ResponseOneofCase.UserListResult) hash ^= UserListResult.GetHashCode();
@@ -4756,6 +4756,9 @@ namespace Google.Ads.GoogleAds.V0.Services {
       if (responseCase_ == ResponseOneofCase.CampaignBudgetResult) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CampaignBudgetResult);
       }
+      if (responseCase_ == ResponseOneofCase.CampaignCriterionResult) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CampaignCriterionResult);
+      }
       if (responseCase_ == ResponseOneofCase.CampaignResult) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CampaignResult);
       }
@@ -4764,9 +4767,6 @@ namespace Google.Ads.GoogleAds.V0.Services {
       }
       if (responseCase_ == ResponseOneofCase.ConversionActionResult) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ConversionActionResult);
-      }
-      if (responseCase_ == ResponseOneofCase.CampaignCriterionResult) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CampaignCriterionResult);
       }
       if (responseCase_ == ResponseOneofCase.SharedCriterionResult) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SharedCriterionResult);
@@ -4831,6 +4831,12 @@ namespace Google.Ads.GoogleAds.V0.Services {
           }
           CampaignBudgetResult.MergeFrom(other.CampaignBudgetResult);
           break;
+        case ResponseOneofCase.CampaignCriterionResult:
+          if (CampaignCriterionResult == null) {
+            CampaignCriterionResult = new global::Google.Ads.GoogleAds.V0.Services.MutateCampaignCriterionResult();
+          }
+          CampaignCriterionResult.MergeFrom(other.CampaignCriterionResult);
+          break;
         case ResponseOneofCase.CampaignResult:
           if (CampaignResult == null) {
             CampaignResult = new global::Google.Ads.GoogleAds.V0.Services.MutateCampaignResult();
@@ -4848,12 +4854,6 @@ namespace Google.Ads.GoogleAds.V0.Services {
             ConversionActionResult = new global::Google.Ads.GoogleAds.V0.Services.MutateConversionActionResult();
           }
           ConversionActionResult.MergeFrom(other.ConversionActionResult);
-          break;
-        case ResponseOneofCase.CampaignCriterionResult:
-          if (CampaignCriterionResult == null) {
-            CampaignCriterionResult = new global::Google.Ads.GoogleAds.V0.Services.MutateCampaignCriterionResult();
-          }
-          CampaignCriterionResult.MergeFrom(other.CampaignCriterionResult);
           break;
         case ResponseOneofCase.SharedCriterionResult:
           if (SharedCriterionResult == null) {

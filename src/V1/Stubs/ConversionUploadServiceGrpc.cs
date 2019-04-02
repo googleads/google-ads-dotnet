@@ -33,6 +33,8 @@ namespace Google.Ads.GoogleAds.V1.Services {
 
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsRequest> __Marshaller_google_ads_googleads_v1_services_UploadClickConversionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsResponse> __Marshaller_google_ads_googleads_v1_services_UploadClickConversionsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest> __Marshaller_google_ads_googleads_v1_services_UploadCallConversionsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse> __Marshaller_google_ads_googleads_v1_services_UploadCallConversionsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsRequest, global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsResponse> __Method_UploadClickConversions = new grpc::Method<global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsRequest, global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsResponse>(
         grpc::MethodType.Unary,
@@ -40,6 +42,13 @@ namespace Google.Ads.GoogleAds.V1.Services {
         "UploadClickConversions",
         __Marshaller_google_ads_googleads_v1_services_UploadClickConversionsRequest,
         __Marshaller_google_ads_googleads_v1_services_UploadClickConversionsResponse);
+
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest, global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse> __Method_UploadCallConversions = new grpc::Method<global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest, global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UploadCallConversions",
+        __Marshaller_google_ads_googleads_v1_services_UploadCallConversionsRequest,
+        __Marshaller_google_ads_googleads_v1_services_UploadCallConversionsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -57,6 +66,17 @@ namespace Google.Ads.GoogleAds.V1.Services {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsResponse> UploadClickConversions(global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Processes the given call conversions.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse> UploadCallConversions(global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -130,6 +150,50 @@ namespace Google.Ads.GoogleAds.V1.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_UploadClickConversions, null, options, request);
       }
+      /// <summary>
+      /// Processes the given call conversions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse UploadCallConversions(global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UploadCallConversions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Processes the given call conversions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse UploadCallConversions(global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UploadCallConversions, null, options, request);
+      }
+      /// <summary>
+      /// Processes the given call conversions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse> UploadCallConversionsAsync(global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UploadCallConversionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Processes the given call conversions.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse> UploadCallConversionsAsync(global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UploadCallConversions, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override ConversionUploadServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -142,7 +206,8 @@ namespace Google.Ads.GoogleAds.V1.Services {
     public static grpc::ServerServiceDefinition BindService(ConversionUploadServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_UploadClickConversions, serviceImpl.UploadClickConversions).Build();
+          .AddMethod(__Method_UploadClickConversions, serviceImpl.UploadClickConversions)
+          .AddMethod(__Method_UploadCallConversions, serviceImpl.UploadCallConversions).Build();
     }
 
     /// <summary>Register service method implementations with a service binder. Useful when customizing the service binding logic.
@@ -152,6 +217,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ConversionUploadServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_UploadClickConversions, serviceImpl.UploadClickConversions);
+      serviceBinder.AddMethod(__Method_UploadCallConversions, serviceImpl.UploadCallConversions);
     }
 
   }

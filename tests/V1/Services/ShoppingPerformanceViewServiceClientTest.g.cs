@@ -40,7 +40,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(MockBehavior.Strict);
             GetShoppingPerformanceViewRequest expectedRequest = new GetShoppingPerformanceViewRequest
             {
-                ResourceName = new ShoppingPerformanceViewName("[CUSTOMER]", "[SHOPPING_PERFORMANCE_VIEW]").ToString(),
+                ResourceName = new ShoppingPerformanceViewName("[CUSTOMER]").ToString(),
             };
             ShoppingPerformanceView expectedResponse = new ShoppingPerformanceView
             {
@@ -49,7 +49,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             mockGrpcClient.Setup(x => x.GetShoppingPerformanceView(expectedRequest, It.IsAny<CallOptions>()))
                 .Returns(expectedResponse);
             ShoppingPerformanceViewServiceClient client = new ShoppingPerformanceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ShoppingPerformanceViewName("[CUSTOMER]", "[SHOPPING_PERFORMANCE_VIEW]").ToString();
+            string formattedResourceName = new ShoppingPerformanceViewName("[CUSTOMER]").ToString();
             ShoppingPerformanceView response = client.GetShoppingPerformanceView(formattedResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -61,7 +61,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(MockBehavior.Strict);
             GetShoppingPerformanceViewRequest expectedRequest = new GetShoppingPerformanceViewRequest
             {
-                ResourceName = new ShoppingPerformanceViewName("[CUSTOMER]", "[SHOPPING_PERFORMANCE_VIEW]").ToString(),
+                ResourceName = new ShoppingPerformanceViewName("[CUSTOMER]").ToString(),
             };
             ShoppingPerformanceView expectedResponse = new ShoppingPerformanceView
             {
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             mockGrpcClient.Setup(x => x.GetShoppingPerformanceViewAsync(expectedRequest, It.IsAny<CallOptions>()))
                 .Returns(new Grpc.Core.AsyncUnaryCall<ShoppingPerformanceView>(Task.FromResult(expectedResponse), null, null, null, null));
             ShoppingPerformanceViewServiceClient client = new ShoppingPerformanceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ShoppingPerformanceViewName("[CUSTOMER]", "[SHOPPING_PERFORMANCE_VIEW]").ToString();
+            string formattedResourceName = new ShoppingPerformanceViewName("[CUSTOMER]").ToString();
             ShoppingPerformanceView response = await client.GetShoppingPerformanceViewAsync(formattedResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(MockBehavior.Strict);
             GetShoppingPerformanceViewRequest request = new GetShoppingPerformanceViewRequest
             {
-                ResourceName = new ShoppingPerformanceViewName("[CUSTOMER]", "[SHOPPING_PERFORMANCE_VIEW]").ToString(),
+                ResourceName = new ShoppingPerformanceViewName("[CUSTOMER]").ToString(),
             };
             ShoppingPerformanceView expectedResponse = new ShoppingPerformanceView
             {
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(MockBehavior.Strict);
             GetShoppingPerformanceViewRequest request = new GetShoppingPerformanceViewRequest
             {
-                ResourceName = new ShoppingPerformanceViewName("[CUSTOMER]", "[SHOPPING_PERFORMANCE_VIEW]").ToString(),
+                ResourceName = new ShoppingPerformanceViewName("[CUSTOMER]").ToString(),
             };
             ShoppingPerformanceView expectedResponse = new ShoppingPerformanceView
             {

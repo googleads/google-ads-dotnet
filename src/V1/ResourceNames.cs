@@ -97,6 +97,11 @@ namespace Google.Ads.GoogleAds.V1.Errors
             return $"customers/{customerId}/ageRangeViews/{adGroupId}~{criterionId}";
         }
 
+        public static string Asset(long customerId, long assetId)
+        {
+            return $"customers/{customerId}/assets/{assetId}";
+        }
+
         public static string BiddingStrategy(long customerId, long biddingStrategyId)
         {
             return $"customers/{customerId}/biddingStrategies/{biddingStrategyId}";

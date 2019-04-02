@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "b3VwX2NyaXRlcmlvbhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
             "YWx1ZSJcChBMaXN0aW5nU2NvcGVJbmZvEkgKCmRpbWVuc2lvbnMYAiADKAsy",
             "NC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uTGlzdGluZ0RpbWVu",
-            "c2lvbkluZm8iuQgKFExpc3RpbmdEaW1lbnNpb25JbmZvEkkKDWxpc3Rpbmdf",
+            "c2lvbkluZm8imwkKFExpc3RpbmdEaW1lbnNpb25JbmZvEkkKDWxpc3Rpbmdf",
             "YnJhbmQYASABKAsyMC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24u",
             "TGlzdGluZ0JyYW5kSW5mb0gAEj8KCGhvdGVsX2lkGAIgASgLMisuZ29vZ2xl",
             "LmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkhvdGVsSWRJbmZvSAASRQoLaG90",
@@ -101,128 +101,130 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "b21tb24uUHJvZHVjdENvbmRpdGlvbkluZm9IABJMCg9wcm9kdWN0X2l0ZW1f",
             "aWQYCyABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uUHJv",
             "ZHVjdEl0ZW1JZEluZm9IABJHCgxwcm9kdWN0X3R5cGUYDCABKAsyLy5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uUHJvZHVjdFR5cGVJbmZvSABC",
-            "CwoJZGltZW5zaW9uIj8KEExpc3RpbmdCcmFuZEluZm8SKwoFdmFsdWUYASAB",
-            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUiOgoLSG90ZWxJZElu",
-            "Zm8SKwoFdmFsdWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
-            "dWUiPAoOSG90ZWxDbGFzc0luZm8SKgoFdmFsdWUYASABKAsyGy5nb29nbGUu",
-            "cHJvdG9idWYuSW50NjRWYWx1ZSJYChZIb3RlbENvdW50cnlSZWdpb25JbmZv",
-            "Ej4KGGNvdW50cnlfcmVnaW9uX2NyaXRlcmlvbhgBIAEoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5TdHJpbmdWYWx1ZSJHCg5Ib3RlbFN0YXRlSW5mbxI1Cg9zdGF0",
-            "ZV9jcml0ZXJpb24YASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
-            "dWUiRQoNSG90ZWxDaXR5SW5mbxI0Cg5jaXR5X2NyaXRlcmlvbhgBIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSK0AQoaTGlzdGluZ0N1c3Rv",
-            "bUF0dHJpYnV0ZUluZm8SKwoFdmFsdWUYASABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSaQoFaW5kZXgYAiABKA4yWi5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MS5lbnVtcy5MaXN0aW5nQ3VzdG9tQXR0cmlidXRlSW5kZXhF",
-            "bnVtLkxpc3RpbmdDdXN0b21BdHRyaWJ1dGVJbmRleCLkAQoaUHJvZHVjdEJp",
-            "ZGRpbmdDYXRlZ29yeUluZm8SJwoCaWQYASABKAsyGy5nb29nbGUucHJvdG9i",
-            "dWYuSW50NjRWYWx1ZRIyCgxjb3VudHJ5X2NvZGUYAiABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUSaQoFbGV2ZWwYAyABKA4yWi5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MS5lbnVtcy5Qcm9kdWN0QmlkZGluZ0NhdGVnb3J5",
-            "TGV2ZWxFbnVtLlByb2R1Y3RCaWRkaW5nQ2F0ZWdvcnlMZXZlbCJnChJQcm9k",
-            "dWN0Q2hhbm5lbEluZm8SUQoHY2hhbm5lbBgBIAEoDjJALmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxLmVudW1zLlByb2R1Y3RDaGFubmVsRW51bS5Qcm9kdWN0",
-            "Q2hhbm5lbCKUAQodUHJvZHVjdENoYW5uZWxFeGNsdXNpdml0eUluZm8ScwoT",
-            "Y2hhbm5lbF9leGNsdXNpdml0eRgBIAEoDjJWLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxLmVudW1zLlByb2R1Y3RDaGFubmVsRXhjbHVzaXZpdHlFbnVtLlBy",
-            "b2R1Y3RDaGFubmVsRXhjbHVzaXZpdHkibwoUUHJvZHVjdENvbmRpdGlvbklu",
-            "Zm8SVwoJY29uZGl0aW9uGAEgASgOMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djEuZW51bXMuUHJvZHVjdENvbmRpdGlvbkVudW0uUHJvZHVjdENvbmRpdGlv",
-            "biJAChFQcm9kdWN0SXRlbUlkSW5mbxIrCgV2YWx1ZRgBIAEoCzIcLmdvb2ds",
-            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSKTAQoPUHJvZHVjdFR5cGVJbmZvEisK",
-            "BXZhbHVlGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElMK",
-            "BWxldmVsGAIgASgOMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMu",
-            "UHJvZHVjdFR5cGVMZXZlbEVudW0uUHJvZHVjdFR5cGVMZXZlbCJ8ChpIb3Rl",
-            "bERhdGVTZWxlY3Rpb25UeXBlSW5mbxJeCgR0eXBlGAEgASgOMlAuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjEuZW51bXMuSG90ZWxEYXRlU2VsZWN0aW9uVHlw",
-            "ZUVudW0uSG90ZWxEYXRlU2VsZWN0aW9uVHlwZSJ9Ch1Ib3RlbEFkdmFuY2VC",
-            "b29raW5nV2luZG93SW5mbxItCghtaW5fZGF5cxgBIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5JbnQ2NFZhbHVlEi0KCG1heF9kYXlzGAIgASgLMhsuZ29vZ2xl",
-            "LnByb3RvYnVmLkludDY0VmFsdWUieQoVSG90ZWxMZW5ndGhPZlN0YXlJbmZv",
-            "Ei8KCm1pbl9uaWdodHMYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRW",
-            "YWx1ZRIvCgptYXhfbmlnaHRzGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDY0VmFsdWUiYgoTSG90ZWxDaGVja0luRGF5SW5mbxJLCgtkYXlfb2Zfd2Vl",
-            "axgBIAEoDjI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkRheU9m",
-            "V2Vla0VudW0uRGF5T2ZXZWVrImcKE0ludGVyYWN0aW9uVHlwZUluZm8SUAoE",
-            "dHlwZRgBIAEoDjJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLklu",
-            "dGVyYWN0aW9uVHlwZUVudW0uSW50ZXJhY3Rpb25UeXBlIuMCCg5BZFNjaGVk",
-            "dWxlSW5mbxJSCgxzdGFydF9taW51dGUYASABKA4yPC5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MS5lbnVtcy5NaW51dGVPZkhvdXJFbnVtLk1pbnV0ZU9mSG91",
-            "chJQCgplbmRfbWludXRlGAIgASgOMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djEuZW51bXMuTWludXRlT2ZIb3VyRW51bS5NaW51dGVPZkhvdXISLwoKc3Rh",
-            "cnRfaG91chgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlEi0K",
-            "CGVuZF9ob3VyGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUS",
-            "SwoLZGF5X29mX3dlZWsYBSABKA4yNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MS5lbnVtcy5EYXlPZldlZWtFbnVtLkRheU9mV2VlayJaCgxBZ2VSYW5nZUlu",
-            "Zm8SSgoEdHlwZRgBIAEoDjI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVu",
-            "dW1zLkFnZVJhbmdlVHlwZUVudW0uQWdlUmFuZ2VUeXBlIlQKCkdlbmRlcklu",
-            "Zm8SRgoEdHlwZRgBIAEoDjI4Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVu",
-            "dW1zLkdlbmRlclR5cGVFbnVtLkdlbmRlclR5cGUiYwoPSW5jb21lUmFuZ2VJ",
-            "bmZvElAKBHR5cGUYASABKA4yQi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5l",
-            "bnVtcy5JbmNvbWVSYW5nZVR5cGVFbnVtLkluY29tZVJhbmdlVHlwZSJsChJQ",
-            "YXJlbnRhbFN0YXR1c0luZm8SVgoEdHlwZRgBIAEoDjJILmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxLmVudW1zLlBhcmVudGFsU3RhdHVzVHlwZUVudW0uUGFy",
-            "ZW50YWxTdGF0dXNUeXBlIkIKEFlvdVR1YmVWaWRlb0luZm8SLgoIdmlkZW9f",
-            "aWQYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUiRgoSWW91",
-            "VHViZUNoYW5uZWxJbmZvEjAKCmNoYW5uZWxfaWQYASABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUiPwoMVXNlckxpc3RJbmZvEi8KCXVzZXJf",
-            "bGlzdBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSKgAgoN",
-            "UHJveGltaXR5SW5mbxI/CglnZW9fcG9pbnQYASABKAsyLC5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MS5jb21tb24uR2VvUG9pbnRJbmZvEiwKBnJhZGl1cxgC",
-            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJiCgxyYWRpdXNf",
-            "dW5pdHMYAyABKA4yTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5Q",
-            "cm94aW1pdHlSYWRpdXNVbml0c0VudW0uUHJveGltaXR5UmFkaXVzVW5pdHMS",
-            "PAoHYWRkcmVzcxgEIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNv",
-            "bW1vbi5BZGRyZXNzSW5mbyKPAQoMR2VvUG9pbnRJbmZvEj8KGmxvbmdpdHVk",
-            "ZV9pbl9taWNyb19kZWdyZWVzGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDMyVmFsdWUSPgoZbGF0aXR1ZGVfaW5fbWljcm9fZGVncmVlcxgCIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlIvwCCgtBZGRyZXNzSW5mbxIx",
-            "Cgtwb3N0YWxfY29kZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZRIzCg1wcm92aW5jZV9jb2RlGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LlN0cmluZ1ZhbHVlEjIKDGNvdW50cnlfY29kZRgDIAEoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1wcm92aW5jZV9uYW1lGAQgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjQKDnN0cmVldF9hZGRyZXNz",
-            "GAUgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjUKD3N0cmVl",
-            "dF9hZGRyZXNzMhgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZRIvCgljaXR5X25hbWUYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUibQoJVG9waWNJbmZvEjQKDnRvcGljX2NvbnN0YW50GAEgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEioKBHBhdGgYAiADKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUiRwoMTGFuZ3VhZ2VJbmZvEjcK",
-            "EWxhbmd1YWdlX2NvbnN0YW50GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
-            "cmluZ1ZhbHVlIj8KC0lwQmxvY2tJbmZvEjAKCmlwX2FkZHJlc3MYASABKAsy",
-            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUiZgoQQ29udGVudExhYmVs",
-            "SW5mbxJSCgR0eXBlGAEgASgOMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEu",
-            "ZW51bXMuQ29udGVudExhYmVsVHlwZUVudW0uQ29udGVudExhYmVsVHlwZSJF",
-            "CgtDYXJyaWVySW5mbxI2ChBjYXJyaWVyX2NvbnN0YW50GAEgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIlAKEFVzZXJJbnRlcmVzdEluZm8S",
-            "PAoWdXNlcl9pbnRlcmVzdF9jYXRlZ29yeRgBIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZSKNAQoLV2VicGFnZUluZm8SNAoOY3JpdGVyaW9u",
-            "X25hbWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSSAoK",
-            "Y29uZGl0aW9ucxgCIAMoCzI0Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNv",
-            "bW1vbi5XZWJwYWdlQ29uZGl0aW9uSW5mbyKTAgoUV2VicGFnZUNvbmRpdGlv",
-            "bkluZm8SYwoHb3BlcmFuZBgBIAEoDjJSLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxLmVudW1zLldlYnBhZ2VDb25kaXRpb25PcGVyYW5kRW51bS5XZWJwYWdl",
-            "Q29uZGl0aW9uT3BlcmFuZBJmCghvcGVyYXRvchgCIAEoDjJULmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxLmVudW1zLldlYnBhZ2VDb25kaXRpb25PcGVyYXRv",
-            "ckVudW0uV2VicGFnZUNvbmRpdGlvbk9wZXJhdG9yEi4KCGFyZ3VtZW50GAMg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlImUKGk9wZXJhdGlu",
-            "Z1N5c3RlbVZlcnNpb25JbmZvEkcKIW9wZXJhdGluZ19zeXN0ZW1fdmVyc2lv",
-            "bl9jb25zdGFudBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZSJvChNBcHBQYXltZW50TW9kZWxJbmZvElgKBHR5cGUYASABKA4ySi5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5BcHBQYXltZW50TW9kZWxUeXBl",
-            "RW51bS5BcHBQYXltZW50TW9kZWxUeXBlIlAKEE1vYmlsZURldmljZUluZm8S",
-            "PAoWbW9iaWxlX2RldmljZV9jb25zdGFudBgBIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZSJLChJDdXN0b21BZmZpbml0eUluZm8SNQoPY3Vz",
-            "dG9tX2FmZmluaXR5GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
-            "bHVlIkcKEEN1c3RvbUludGVudEluZm8SMwoNY3VzdG9tX2ludGVudBgBIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZULoAQoiY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbkINQ3JpdGVyaWFQcm90b1ABWkRn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjEvY29tbW9uO2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYxLkNvbW1vbsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXENv",
-            "bW1vbuoCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpDb21tb25iBnBy",
-            "b3RvMw=="));
+            "bGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uUHJvZHVjdFR5cGVJbmZvSAAS",
+            "YAoZdW5rbm93bl9saXN0aW5nX2RpbWVuc2lvbhgOIAEoCzI7Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Vbmtub3duTGlzdGluZ0RpbWVuc2lv",
+            "bkluZm9IAEILCglkaW1lbnNpb24iPwoQTGlzdGluZ0JyYW5kSW5mbxIrCgV2",
+            "YWx1ZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSI6CgtI",
+            "b3RlbElkSW5mbxIrCgV2YWx1ZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZSI8Cg5Ib3RlbENsYXNzSW5mbxIqCgV2YWx1ZRgBIAEoCzIb",
+            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlIlgKFkhvdGVsQ291bnRyeVJl",
+            "Z2lvbkluZm8SPgoYY291bnRyeV9yZWdpb25fY3JpdGVyaW9uGAEgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIkcKDkhvdGVsU3RhdGVJbmZv",
+            "EjUKD3N0YXRlX2NyaXRlcmlvbhgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZSJFCg1Ib3RlbENpdHlJbmZvEjQKDmNpdHlfY3JpdGVyaW9u",
+            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIrQBChpMaXN0",
+            "aW5nQ3VzdG9tQXR0cmlidXRlSW5mbxIrCgV2YWx1ZRgBIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJpCgVpbmRleBgCIAEoDjJaLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkxpc3RpbmdDdXN0b21BdHRyaWJ1",
+            "dGVJbmRleEVudW0uTGlzdGluZ0N1c3RvbUF0dHJpYnV0ZUluZGV4IuQBChpQ",
+            "cm9kdWN0QmlkZGluZ0NhdGVnb3J5SW5mbxInCgJpZBgBIAEoCzIbLmdvb2ds",
+            "ZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjIKDGNvdW50cnlfY29kZRgCIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJpCgVsZXZlbBgDIAEoDjJa",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLlByb2R1Y3RCaWRkaW5n",
+            "Q2F0ZWdvcnlMZXZlbEVudW0uUHJvZHVjdEJpZGRpbmdDYXRlZ29yeUxldmVs",
+            "ImcKElByb2R1Y3RDaGFubmVsSW5mbxJRCgdjaGFubmVsGAEgASgOMkAuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuUHJvZHVjdENoYW5uZWxFbnVt",
+            "LlByb2R1Y3RDaGFubmVsIpQBCh1Qcm9kdWN0Q2hhbm5lbEV4Y2x1c2l2aXR5",
+            "SW5mbxJzChNjaGFubmVsX2V4Y2x1c2l2aXR5GAEgASgOMlYuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjEuZW51bXMuUHJvZHVjdENoYW5uZWxFeGNsdXNpdml0",
+            "eUVudW0uUHJvZHVjdENoYW5uZWxFeGNsdXNpdml0eSJvChRQcm9kdWN0Q29u",
+            "ZGl0aW9uSW5mbxJXCgljb25kaXRpb24YASABKA4yRC5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MS5lbnVtcy5Qcm9kdWN0Q29uZGl0aW9uRW51bS5Qcm9kdWN0",
+            "Q29uZGl0aW9uIkAKEVByb2R1Y3RJdGVtSWRJbmZvEisKBXZhbHVlGAEgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIpMBCg9Qcm9kdWN0VHlw",
+            "ZUluZm8SKwoFdmFsdWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWUSUwoFbGV2ZWwYAiABKA4yRC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MS5lbnVtcy5Qcm9kdWN0VHlwZUxldmVsRW51bS5Qcm9kdWN0VHlwZUxldmVs",
+            "Ih0KG1Vua25vd25MaXN0aW5nRGltZW5zaW9uSW5mbyJ8ChpIb3RlbERhdGVT",
+            "ZWxlY3Rpb25UeXBlSW5mbxJeCgR0eXBlGAEgASgOMlAuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjEuZW51bXMuSG90ZWxEYXRlU2VsZWN0aW9uVHlwZUVudW0u",
+            "SG90ZWxEYXRlU2VsZWN0aW9uVHlwZSJ9Ch1Ib3RlbEFkdmFuY2VCb29raW5n",
+            "V2luZG93SW5mbxItCghtaW5fZGF5cxgBIAEoCzIbLmdvb2dsZS5wcm90b2J1",
+            "Zi5JbnQ2NFZhbHVlEi0KCG1heF9kYXlzGAIgASgLMhsuZ29vZ2xlLnByb3Rv",
+            "YnVmLkludDY0VmFsdWUieQoVSG90ZWxMZW5ndGhPZlN0YXlJbmZvEi8KCm1p",
+            "bl9uaWdodHMYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIv",
+            "CgptYXhfbmlnaHRzGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
+            "dWUiYgoTSG90ZWxDaGVja0luRGF5SW5mbxJLCgtkYXlfb2Zfd2VlaxgBIAEo",
+            "DjI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkRheU9mV2Vla0Vu",
+            "dW0uRGF5T2ZXZWVrImcKE0ludGVyYWN0aW9uVHlwZUluZm8SUAoEdHlwZRgB",
+            "IAEoDjJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkludGVyYWN0",
+            "aW9uVHlwZUVudW0uSW50ZXJhY3Rpb25UeXBlIuMCCg5BZFNjaGVkdWxlSW5m",
+            "bxJSCgxzdGFydF9taW51dGUYASABKA4yPC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MS5lbnVtcy5NaW51dGVPZkhvdXJFbnVtLk1pbnV0ZU9mSG91chJQCgpl",
+            "bmRfbWludXRlGAIgASgOMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51",
+            "bXMuTWludXRlT2ZIb3VyRW51bS5NaW51dGVPZkhvdXISLwoKc3RhcnRfaG91",
+            "chgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlEi0KCGVuZF9o",
+            "b3VyGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUSSwoLZGF5",
+            "X29mX3dlZWsYBSABKA4yNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVt",
+            "cy5EYXlPZldlZWtFbnVtLkRheU9mV2VlayJaCgxBZ2VSYW5nZUluZm8SSgoE",
+            "dHlwZRgBIAEoDjI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkFn",
+            "ZVJhbmdlVHlwZUVudW0uQWdlUmFuZ2VUeXBlIlQKCkdlbmRlckluZm8SRgoE",
+            "dHlwZRgBIAEoDjI4Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkdl",
+            "bmRlclR5cGVFbnVtLkdlbmRlclR5cGUiYwoPSW5jb21lUmFuZ2VJbmZvElAK",
+            "BHR5cGUYASABKA4yQi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5J",
+            "bmNvbWVSYW5nZVR5cGVFbnVtLkluY29tZVJhbmdlVHlwZSJsChJQYXJlbnRh",
+            "bFN0YXR1c0luZm8SVgoEdHlwZRgBIAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYxLmVudW1zLlBhcmVudGFsU3RhdHVzVHlwZUVudW0uUGFyZW50YWxT",
+            "dGF0dXNUeXBlIkIKEFlvdVR1YmVWaWRlb0luZm8SLgoIdmlkZW9faWQYASAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUiRgoSWW91VHViZUNo",
+            "YW5uZWxJbmZvEjAKCmNoYW5uZWxfaWQYASABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUiPwoMVXNlckxpc3RJbmZvEi8KCXVzZXJfbGlzdBgB",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSKgAgoNUHJveGlt",
+            "aXR5SW5mbxI/CglnZW9fcG9pbnQYASABKAsyLC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5jb21tb24uR2VvUG9pbnRJbmZvEiwKBnJhZGl1cxgCIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJiCgxyYWRpdXNfdW5pdHMY",
+            "AyABKA4yTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5Qcm94aW1p",
+            "dHlSYWRpdXNVbml0c0VudW0uUHJveGltaXR5UmFkaXVzVW5pdHMSPAoHYWRk",
+            "cmVzcxgEIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5B",
+            "ZGRyZXNzSW5mbyKPAQoMR2VvUG9pbnRJbmZvEj8KGmxvbmdpdHVkZV9pbl9t",
+            "aWNyb19kZWdyZWVzGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFs",
+            "dWUSPgoZbGF0aXR1ZGVfaW5fbWljcm9fZGVncmVlcxgCIAEoCzIbLmdvb2ds",
+            "ZS5wcm90b2J1Zi5JbnQzMlZhbHVlIvwCCgtBZGRyZXNzSW5mbxIxCgtwb3N0",
+            "YWxfY29kZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIz",
+            "Cg1wcm92aW5jZV9jb2RlGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEjIKDGNvdW50cnlfY29kZRgDIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZRIzCg1wcm92aW5jZV9uYW1lGAQgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEjQKDnN0cmVldF9hZGRyZXNzGAUgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjUKD3N0cmVldF9hZGRy",
+            "ZXNzMhgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIvCglj",
+            "aXR5X25hbWUYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUi",
+            "bQoJVG9waWNJbmZvEjQKDnRvcGljX2NvbnN0YW50GAEgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEioKBHBhdGgYAiADKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUiRwoMTGFuZ3VhZ2VJbmZvEjcKEWxhbmd1",
+            "YWdlX2NvbnN0YW50GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
+            "bHVlIj8KC0lwQmxvY2tJbmZvEjAKCmlwX2FkZHJlc3MYASABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUiZgoQQ29udGVudExhYmVsSW5mbxJS",
+            "CgR0eXBlGAEgASgOMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMu",
+            "Q29udGVudExhYmVsVHlwZUVudW0uQ29udGVudExhYmVsVHlwZSJFCgtDYXJy",
+            "aWVySW5mbxI2ChBjYXJyaWVyX2NvbnN0YW50GAEgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlIlAKEFVzZXJJbnRlcmVzdEluZm8SPAoWdXNl",
+            "cl9pbnRlcmVzdF9jYXRlZ29yeRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZSKNAQoLV2VicGFnZUluZm8SNAoOY3JpdGVyaW9uX25hbWUY",
+            "ASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSSAoKY29uZGl0",
+            "aW9ucxgCIAMoCzI0Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5X",
+            "ZWJwYWdlQ29uZGl0aW9uSW5mbyKTAgoUV2VicGFnZUNvbmRpdGlvbkluZm8S",
+            "YwoHb3BlcmFuZBgBIAEoDjJSLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVu",
+            "dW1zLldlYnBhZ2VDb25kaXRpb25PcGVyYW5kRW51bS5XZWJwYWdlQ29uZGl0",
+            "aW9uT3BlcmFuZBJmCghvcGVyYXRvchgCIAEoDjJULmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYxLmVudW1zLldlYnBhZ2VDb25kaXRpb25PcGVyYXRvckVudW0u",
+            "V2VicGFnZUNvbmRpdGlvbk9wZXJhdG9yEi4KCGFyZ3VtZW50GAMgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlImUKGk9wZXJhdGluZ1N5c3Rl",
+            "bVZlcnNpb25JbmZvEkcKIW9wZXJhdGluZ19zeXN0ZW1fdmVyc2lvbl9jb25z",
+            "dGFudBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJvChNB",
+            "cHBQYXltZW50TW9kZWxJbmZvElgKBHR5cGUYASABKA4ySi5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MS5lbnVtcy5BcHBQYXltZW50TW9kZWxUeXBlRW51bS5B",
+            "cHBQYXltZW50TW9kZWxUeXBlIlAKEE1vYmlsZURldmljZUluZm8SPAoWbW9i",
+            "aWxlX2RldmljZV9jb25zdGFudBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZSJLChJDdXN0b21BZmZpbml0eUluZm8SNQoPY3VzdG9tX2Fm",
+            "ZmluaXR5GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIkcK",
+            "EEN1c3RvbUludGVudEluZm8SMwoNY3VzdG9tX2ludGVudBgBIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZULoAQoiY29tLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYxLmNvbW1vbkINQ3JpdGVyaWFQcm90b1ABWkRnb29nbGUu",
+            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
+            "djEvY29tbW9uO2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRz",
+            "LlYxLkNvbW1vbsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXENvbW1vbuoC",
+            "Ikdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Enums.AgeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AppPaymentModelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ContentLabelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.GenderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.HotelDateSelectionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.IncomeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.InteractionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ListingCustomAttributeIndexReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ListingGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.MinuteOfHourReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ParentalStatusTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PreferredContentTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductBiddingCategoryLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductChannelExclusivityReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductTypeLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProximityRadiusUnitsReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.WebpageConditionOperandReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.WebpageConditionOperatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -235,7 +237,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PreferredContentInfo), global::Google.Ads.GoogleAds.V1.Common.PreferredContentInfo.Parser, new[]{ "Type" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ListingGroupInfo), global::Google.Ads.GoogleAds.V1.Common.ListingGroupInfo.Parser, new[]{ "Type", "CaseValue", "ParentAdGroupCriterion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ListingScopeInfo), global::Google.Ads.GoogleAds.V1.Common.ListingScopeInfo.Parser, new[]{ "Dimensions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ListingDimensionInfo), global::Google.Ads.GoogleAds.V1.Common.ListingDimensionInfo.Parser, new[]{ "ListingBrand", "HotelId", "HotelClass", "HotelCountryRegion", "HotelState", "HotelCity", "ListingCustomAttribute", "ProductBiddingCategory", "ProductChannel", "ProductChannelExclusivity", "ProductCondition", "ProductItemId", "ProductType" }, new[]{ "Dimension" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ListingDimensionInfo), global::Google.Ads.GoogleAds.V1.Common.ListingDimensionInfo.Parser, new[]{ "ListingBrand", "HotelId", "HotelClass", "HotelCountryRegion", "HotelState", "HotelCity", "ListingCustomAttribute", "ProductBiddingCategory", "ProductChannel", "ProductChannelExclusivity", "ProductCondition", "ProductItemId", "ProductType", "UnknownListingDimension" }, new[]{ "Dimension" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ListingBrandInfo), global::Google.Ads.GoogleAds.V1.Common.ListingBrandInfo.Parser, new[]{ "Value" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.HotelIdInfo), global::Google.Ads.GoogleAds.V1.Common.HotelIdInfo.Parser, new[]{ "Value" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.HotelClassInfo), global::Google.Ads.GoogleAds.V1.Common.HotelClassInfo.Parser, new[]{ "Value" }, null, null, null),
@@ -249,6 +251,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ProductConditionInfo), global::Google.Ads.GoogleAds.V1.Common.ProductConditionInfo.Parser, new[]{ "Condition" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ProductItemIdInfo), global::Google.Ads.GoogleAds.V1.Common.ProductItemIdInfo.Parser, new[]{ "Value" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.ProductTypeInfo), global::Google.Ads.GoogleAds.V1.Common.ProductTypeInfo.Parser, new[]{ "Value", "Level" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.UnknownListingDimensionInfo), global::Google.Ads.GoogleAds.V1.Common.UnknownListingDimensionInfo.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.HotelDateSelectionTypeInfo), global::Google.Ads.GoogleAds.V1.Common.HotelDateSelectionTypeInfo.Parser, new[]{ "Type" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.HotelAdvanceBookingWindowInfo), global::Google.Ads.GoogleAds.V1.Common.HotelAdvanceBookingWindowInfo.Parser, new[]{ "MinDays", "MaxDays" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.HotelLengthOfStayInfo), global::Google.Ads.GoogleAds.V1.Common.HotelLengthOfStayInfo.Parser, new[]{ "MinNights", "MaxNights" }, null, null, null),
@@ -1706,6 +1709,9 @@ namespace Google.Ads.GoogleAds.V1.Common {
         case DimensionOneofCase.ProductType:
           ProductType = other.ProductType.Clone();
           break;
+        case DimensionOneofCase.UnknownListingDimension:
+          UnknownListingDimension = other.UnknownListingDimension.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1898,6 +1904,20 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
     }
 
+    /// <summary>Field number for the "unknown_listing_dimension" field.</summary>
+    public const int UnknownListingDimensionFieldNumber = 14;
+    /// <summary>
+    /// Unknown dimension. Set when no other listing dimension is set.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.UnknownListingDimensionInfo UnknownListingDimension {
+      get { return dimensionCase_ == DimensionOneofCase.UnknownListingDimension ? (global::Google.Ads.GoogleAds.V1.Common.UnknownListingDimensionInfo) dimension_ : null; }
+      set {
+        dimension_ = value;
+        dimensionCase_ = value == null ? DimensionOneofCase.None : DimensionOneofCase.UnknownListingDimension;
+      }
+    }
+
     private object dimension_;
     /// <summary>Enum of possible cases for the "dimension" oneof.</summary>
     public enum DimensionOneofCase {
@@ -1915,6 +1935,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
       ProductCondition = 10,
       ProductItemId = 11,
       ProductType = 12,
+      UnknownListingDimension = 14,
     }
     private DimensionOneofCase dimensionCase_ = DimensionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1954,6 +1975,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (!object.Equals(ProductCondition, other.ProductCondition)) return false;
       if (!object.Equals(ProductItemId, other.ProductItemId)) return false;
       if (!object.Equals(ProductType, other.ProductType)) return false;
+      if (!object.Equals(UnknownListingDimension, other.UnknownListingDimension)) return false;
       if (DimensionCase != other.DimensionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1974,6 +1996,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (dimensionCase_ == DimensionOneofCase.ProductCondition) hash ^= ProductCondition.GetHashCode();
       if (dimensionCase_ == DimensionOneofCase.ProductItemId) hash ^= ProductItemId.GetHashCode();
       if (dimensionCase_ == DimensionOneofCase.ProductType) hash ^= ProductType.GetHashCode();
+      if (dimensionCase_ == DimensionOneofCase.UnknownListingDimension) hash ^= UnknownListingDimension.GetHashCode();
       hash ^= (int) dimensionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2040,6 +2063,10 @@ namespace Google.Ads.GoogleAds.V1.Common {
         output.WriteRawTag(106);
         output.WriteMessage(ProductBiddingCategory);
       }
+      if (dimensionCase_ == DimensionOneofCase.UnknownListingDimension) {
+        output.WriteRawTag(114);
+        output.WriteMessage(UnknownListingDimension);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2086,6 +2113,9 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
       if (dimensionCase_ == DimensionOneofCase.ProductType) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProductType);
+      }
+      if (dimensionCase_ == DimensionOneofCase.UnknownListingDimension) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UnknownListingDimension);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2176,6 +2206,12 @@ namespace Google.Ads.GoogleAds.V1.Common {
             ProductType = new global::Google.Ads.GoogleAds.V1.Common.ProductTypeInfo();
           }
           ProductType.MergeFrom(other.ProductType);
+          break;
+        case DimensionOneofCase.UnknownListingDimension:
+          if (UnknownListingDimension == null) {
+            UnknownListingDimension = new global::Google.Ads.GoogleAds.V1.Common.UnknownListingDimensionInfo();
+          }
+          UnknownListingDimension.MergeFrom(other.UnknownListingDimension);
           break;
       }
 
@@ -2305,6 +2341,15 @@ namespace Google.Ads.GoogleAds.V1.Common {
             }
             input.ReadMessage(subBuilder);
             ProductBiddingCategory = subBuilder;
+            break;
+          }
+          case 114: {
+            global::Google.Ads.GoogleAds.V1.Common.UnknownListingDimensionInfo subBuilder = new global::Google.Ads.GoogleAds.V1.Common.UnknownListingDimensionInfo();
+            if (dimensionCase_ == DimensionOneofCase.UnknownListingDimension) {
+              subBuilder.MergeFrom(UnknownListingDimension);
+            }
+            input.ReadMessage(subBuilder);
+            UnknownListingDimension = subBuilder;
             break;
           }
         }
@@ -4252,6 +4297,110 @@ namespace Google.Ads.GoogleAds.V1.Common {
   }
 
   /// <summary>
+  /// Unknown listing dimension.
+  /// </summary>
+  public sealed partial class UnknownListingDimensionInfo : pb::IMessage<UnknownListingDimensionInfo> {
+    private static readonly pb::MessageParser<UnknownListingDimensionInfo> _parser = new pb::MessageParser<UnknownListingDimensionInfo>(() => new UnknownListingDimensionInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UnknownListingDimensionInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[23]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UnknownListingDimensionInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UnknownListingDimensionInfo(UnknownListingDimensionInfo other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UnknownListingDimensionInfo Clone() {
+      return new UnknownListingDimensionInfo(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UnknownListingDimensionInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UnknownListingDimensionInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UnknownListingDimensionInfo other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// Criterion for hotel date selection (default dates vs. user selected).
   /// </summary>
   public sealed partial class HotelDateSelectionTypeInfo : pb::IMessage<HotelDateSelectionTypeInfo> {
@@ -4262,7 +4411,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4397,7 +4546,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4573,7 +4722,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4749,7 +4898,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4884,7 +5033,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[27]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5024,7 +5173,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5311,7 +5460,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[29]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5446,7 +5595,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[30]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5581,7 +5730,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[31]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5716,7 +5865,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[32]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5851,7 +6000,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[33]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[34]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5991,7 +6140,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[34]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[35]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6132,7 +6281,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[35]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[36]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6279,7 +6428,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[36]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[37]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6524,7 +6673,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[37]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[38]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6700,7 +6849,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[38]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[39]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7060,7 +7209,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[39]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[40]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7226,7 +7375,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[40]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[41]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7370,7 +7519,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[41]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[42]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7510,7 +7659,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[42]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[43]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7645,7 +7794,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[43]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[44]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7785,7 +7934,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[44]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[45]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7925,7 +8074,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[45]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[46]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8098,7 +8247,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[46]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[47]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8300,7 +8449,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[47]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[48]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8440,7 +8589,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[48]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[49]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8575,7 +8724,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[49]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[50]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8716,7 +8865,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[50]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[51]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8857,7 +9006,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[51]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor.MessageTypes[52]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

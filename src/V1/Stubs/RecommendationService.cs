@@ -36,7 +36,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
             "bW1lbmRhdGlvblJlcXVlc3QSEwoLY3VzdG9tZXJfaWQYASABKAkSUgoKb3Bl",
             "cmF0aW9ucxgCIAMoCzI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZp",
             "Y2VzLkFwcGx5UmVjb21tZW5kYXRpb25PcGVyYXRpb24SFwoPcGFydGlhbF9m",
-            "YWlsdXJlGAMgASgIIpAIChxBcHBseVJlY29tbWVuZGF0aW9uT3BlcmF0aW9u",
+            "YWlsdXJlGAMgASgIIuMJChxBcHBseVJlY29tbWVuZGF0aW9uT3BlcmF0aW9u",
             "EhUKDXJlc291cmNlX25hbWUYASABKAkScgoPY2FtcGFpZ25fYnVkZ2V0GAIg",
             "ASgLMlcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuc2VydmljZXMuQXBwbHlS",
             "ZWNvbW1lbmRhdGlvbk9wZXJhdGlvbi5DYW1wYWlnbkJ1ZGdldFBhcmFtZXRl",
@@ -47,64 +47,70 @@ namespace Google.Ads.GoogleAds.V1.Services {
             "YXRpb24uS2V5d29yZFBhcmFtZXRlcnNIABJ0ChF0YXJnZXRfY3BhX29wdF9p",
             "bhgFIAEoCzJXLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2VzLkFw",
             "cGx5UmVjb21tZW5kYXRpb25PcGVyYXRpb24uVGFyZ2V0Q3BhT3B0SW5QYXJh",
-            "bWV0ZXJzSAAaWQoYQ2FtcGFpZ25CdWRnZXRQYXJhbWV0ZXJzEj0KGG5ld19i",
-            "dWRnZXRfYW1vdW50X21pY3JvcxgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
-            "bnQ2NFZhbHVlGkUKEFRleHRBZFBhcmFtZXRlcnMSMQoCYWQYASABKAsyJS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5yZXNvdXJjZXMuQWQa0gEKEUtleXdv",
-            "cmRQYXJhbWV0ZXJzEi4KCGFkX2dyb3VwGAEgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlElgKCm1hdGNoX3R5cGUYAiABKA4yRC5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MS5lbnVtcy5LZXl3b3JkTWF0Y2hUeXBlRW51bS5L",
-            "ZXl3b3JkTWF0Y2hUeXBlEjMKDmNwY19iaWRfbWljcm9zGAMgASgLMhsuZ29v",
-            "Z2xlLnByb3RvYnVmLkludDY0VmFsdWUamgEKGFRhcmdldENwYU9wdEluUGFy",
-            "YW1ldGVycxI2ChF0YXJnZXRfY3BhX21pY3JvcxgBIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5JbnQ2NFZhbHVlEkYKIW5ld19jYW1wYWlnbl9idWRnZXRfYW1v",
-            "dW50X21pY3JvcxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVl",
-            "QhIKEGFwcGx5X3BhcmFtZXRlcnMingEKG0FwcGx5UmVjb21tZW5kYXRpb25S",
-            "ZXNwb25zZRJMCgdyZXN1bHRzGAEgAygLMjsuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjEuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvblJlc3VsdBIxChVw",
-            "YXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAiABKAsyEi5nb29nbGUucnBjLlN0YXR1",
-            "cyIyChlBcHBseVJlY29tbWVuZGF0aW9uUmVzdWx0EhUKDXJlc291cmNlX25h",
-            "bWUYASABKAki+AEKHERpc21pc3NSZWNvbW1lbmRhdGlvblJlcXVlc3QSEwoL",
-            "Y3VzdG9tZXJfaWQYASABKAkScQoKb3BlcmF0aW9ucxgDIAMoCzJdLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2VzLkRpc21pc3NSZWNvbW1lbmRh",
-            "dGlvblJlcXVlc3QuRGlzbWlzc1JlY29tbWVuZGF0aW9uT3BlcmF0aW9uEhcK",
-            "D3BhcnRpYWxfZmFpbHVyZRgCIAEoCBo3Ch5EaXNtaXNzUmVjb21tZW5kYXRp",
-            "b25PcGVyYXRpb24SFQoNcmVzb3VyY2VfbmFtZRgBIAEoCSL2AQodRGlzbWlz",
-            "c1JlY29tbWVuZGF0aW9uUmVzcG9uc2USbAoHcmVzdWx0cxgBIAMoCzJbLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2VzLkRpc21pc3NSZWNvbW1l",
-            "bmRhdGlvblJlc3BvbnNlLkRpc21pc3NSZWNvbW1lbmRhdGlvblJlc3VsdBIx",
-            "ChVwYXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAiABKAsyEi5nb29nbGUucnBjLlN0",
-            "YXR1cxo0ChtEaXNtaXNzUmVjb21tZW5kYXRpb25SZXN1bHQSFQoNcmVzb3Vy",
-            "Y2VfbmFtZRgBIAEoCTKJBQoVUmVjb21tZW5kYXRpb25TZXJ2aWNlEr0BChFH",
-            "ZXRSZWNvbW1lbmRhdGlvbhI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNl",
-            "cnZpY2VzLkdldFJlY29tbWVuZGF0aW9uUmVxdWVzdBoxLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxLnJlc291cmNlcy5SZWNvbW1lbmRhdGlvbiI5gtPkkwIz",
-            "EjEvdjEve3Jlc291cmNlX25hbWU9Y3VzdG9tZXJzLyovcmVjb21tZW5kYXRp",
-            "b25zLyp9EtIBChNBcHBseVJlY29tbWVuZGF0aW9uEjwuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjEuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvblJlcXVl",
-            "c3QaPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5zZXJ2aWNlcy5BcHBseVJl",
-            "Y29tbWVuZGF0aW9uUmVzcG9uc2UiPoLT5JMCOCIzL3YxL2N1c3RvbWVycy97",
-            "Y3VzdG9tZXJfaWQ9Kn0vcmVjb21tZW5kYXRpb25zOmFwcGx5OgEqEtoBChVE",
-            "aXNtaXNzUmVjb21tZW5kYXRpb24SPi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MS5zZXJ2aWNlcy5EaXNtaXNzUmVjb21tZW5kYXRpb25SZXF1ZXN0Gj8uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjEuc2VydmljZXMuRGlzbWlzc1JlY29tbWVu",
-            "ZGF0aW9uUmVzcG9uc2UiQILT5JMCOiI1L3YxL2N1c3RvbWVycy97Y3VzdG9t",
-            "ZXJfaWQ9Kn0vcmVjb21tZW5kYXRpb25zOmRpc21pc3M6ASpCgQIKJGNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5zZXJ2aWNlc0IaUmVjb21tZW5kYXRp",
-            "b25TZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
-            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL3NlcnZpY2VzO3NlcnZpY2Vz",
-            "ogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEuU2VydmljZXPKAiBH",
-            "b29nbGVcQWRzXEdvb2dsZUFkc1xWMVxTZXJ2aWNlc+oCJEdvb2dsZTo6QWRz",
-            "OjpHb29nbGVBZHM6OlYxOjpTZXJ2aWNlc2IGcHJvdG8z"));
+            "bWV0ZXJzSAASdwoSbW92ZV91bnVzZWRfYnVkZ2V0GAkgASgLMlkuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjEuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlv",
+            "bk9wZXJhdGlvbi5Nb3ZlVW51c2VkQnVkZ2V0UGFyYW1ldGVyc0gAGlkKGENh",
+            "bXBhaWduQnVkZ2V0UGFyYW1ldGVycxI9ChhuZXdfYnVkZ2V0X2Ftb3VudF9t",
+            "aWNyb3MYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRpFChBU",
+            "ZXh0QWRQYXJhbWV0ZXJzEjEKAmFkGAEgASgLMiUuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjEucmVzb3VyY2VzLkFkGtIBChFLZXl3b3JkUGFyYW1ldGVycxIu",
+            "CghhZF9ncm91cBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZRJYCgptYXRjaF90eXBlGAIgASgOMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djEuZW51bXMuS2V5d29yZE1hdGNoVHlwZUVudW0uS2V5d29yZE1hdGNoVHlw",
+            "ZRIzCg5jcGNfYmlkX21pY3JvcxgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
+            "bnQ2NFZhbHVlGpoBChhUYXJnZXRDcGFPcHRJblBhcmFtZXRlcnMSNgoRdGFy",
+            "Z2V0X2NwYV9taWNyb3MYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRW",
+            "YWx1ZRJGCiFuZXdfY2FtcGFpZ25fYnVkZ2V0X2Ftb3VudF9taWNyb3MYAiAB",
+            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRpYChpNb3ZlVW51c2Vk",
+            "QnVkZ2V0UGFyYW1ldGVycxI6ChVidWRnZXRfbWljcm9zX3RvX21vdmUYASAB",
+            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUISChBhcHBseV9wYXJh",
+            "bWV0ZXJzIp4BChtBcHBseVJlY29tbWVuZGF0aW9uUmVzcG9uc2USTAoHcmVz",
+            "dWx0cxgBIAMoCzI7Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2Vz",
+            "LkFwcGx5UmVjb21tZW5kYXRpb25SZXN1bHQSMQoVcGFydGlhbF9mYWlsdXJl",
+            "X2Vycm9yGAIgASgLMhIuZ29vZ2xlLnJwYy5TdGF0dXMiMgoZQXBwbHlSZWNv",
+            "bW1lbmRhdGlvblJlc3VsdBIVCg1yZXNvdXJjZV9uYW1lGAEgASgJIvgBChxE",
+            "aXNtaXNzUmVjb21tZW5kYXRpb25SZXF1ZXN0EhMKC2N1c3RvbWVyX2lkGAEg",
+            "ASgJEnEKCm9wZXJhdGlvbnMYAyADKAsyXS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MS5zZXJ2aWNlcy5EaXNtaXNzUmVjb21tZW5kYXRpb25SZXF1ZXN0LkRp",
+            "c21pc3NSZWNvbW1lbmRhdGlvbk9wZXJhdGlvbhIXCg9wYXJ0aWFsX2ZhaWx1",
+            "cmUYAiABKAgaNwoeRGlzbWlzc1JlY29tbWVuZGF0aW9uT3BlcmF0aW9uEhUK",
+            "DXJlc291cmNlX25hbWUYASABKAki9gEKHURpc21pc3NSZWNvbW1lbmRhdGlv",
+            "blJlc3BvbnNlEmwKB3Jlc3VsdHMYASADKAsyWy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5zZXJ2aWNlcy5EaXNtaXNzUmVjb21tZW5kYXRpb25SZXNwb25z",
+            "ZS5EaXNtaXNzUmVjb21tZW5kYXRpb25SZXN1bHQSMQoVcGFydGlhbF9mYWls",
+            "dXJlX2Vycm9yGAIgASgLMhIuZ29vZ2xlLnJwYy5TdGF0dXMaNAobRGlzbWlz",
+            "c1JlY29tbWVuZGF0aW9uUmVzdWx0EhUKDXJlc291cmNlX25hbWUYASABKAky",
+            "iQUKFVJlY29tbWVuZGF0aW9uU2VydmljZRK9AQoRR2V0UmVjb21tZW5kYXRp",
+            "b24SOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5zZXJ2aWNlcy5HZXRSZWNv",
+            "bW1lbmRhdGlvblJlcXVlc3QaMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5y",
+            "ZXNvdXJjZXMuUmVjb21tZW5kYXRpb24iOYLT5JMCMxIxL3YxL3tyZXNvdXJj",
+            "ZV9uYW1lPWN1c3RvbWVycy8qL3JlY29tbWVuZGF0aW9ucy8qfRLSAQoTQXBw",
+            "bHlSZWNvbW1lbmRhdGlvbhI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNl",
+            "cnZpY2VzLkFwcGx5UmVjb21tZW5kYXRpb25SZXF1ZXN0Gj0uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjEuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvblJl",
+            "c3BvbnNlIj6C0+STAjgiMy92MS9jdXN0b21lcnMve2N1c3RvbWVyX2lkPSp9",
+            "L3JlY29tbWVuZGF0aW9uczphcHBseToBKhLaAQoVRGlzbWlzc1JlY29tbWVu",
+            "ZGF0aW9uEj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuc2VydmljZXMuRGlz",
+            "bWlzc1JlY29tbWVuZGF0aW9uUmVxdWVzdBo/Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYxLnNlcnZpY2VzLkRpc21pc3NSZWNvbW1lbmRhdGlvblJlc3BvbnNl",
+            "IkCC0+STAjoiNS92MS9jdXN0b21lcnMve2N1c3RvbWVyX2lkPSp9L3JlY29t",
+            "bWVuZGF0aW9uczpkaXNtaXNzOgEqQoECCiRjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjEuc2VydmljZXNCGlJlY29tbWVuZGF0aW9uU2VydmljZVByb3Rv",
+            "UAFaSGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MS9zZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIEdvb2ds",
+            "ZS5BZHMuR29vZ2xlQWRzLlYxLlNlcnZpY2VzygIgR29vZ2xlXEFkc1xHb29n",
+            "bGVBZHNcVjFcU2VydmljZXPqAiRHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MTo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Resources.AdReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Resources.RecommendationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.GetRecommendationRequest), global::Google.Ads.GoogleAds.V1.Services.GetRecommendationRequest.Parser, new[]{ "ResourceName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationRequest), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Parser, new[]{ "ResourceName", "CampaignBudget", "TextAd", "Keyword", "TargetCpaOptIn" }, new[]{ "ApplyParameters" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters.Parser, new[]{ "NewBudgetAmountMicros" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Parser, new[]{ "ResourceName", "CampaignBudget", "TextAd", "Keyword", "TargetCpaOptIn", "MoveUnusedBudget" }, new[]{ "ApplyParameters" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters.Parser, new[]{ "NewBudgetAmountMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TextAdParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TextAdParameters.Parser, new[]{ "Ad" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.KeywordParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.KeywordParameters.Parser, new[]{ "AdGroup", "MatchType", "CpcBidMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters.Parser, new[]{ "TargetCpaMicros", "NewCampaignBudgetAmountMicros" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters.Parser, new[]{ "TargetCpaMicros", "NewCampaignBudgetAmountMicros" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters.Parser, new[]{ "BudgetMicrosToMove" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationResponse), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationResult), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.DismissRecommendationRequest), global::Google.Ads.GoogleAds.V1.Services.DismissRecommendationRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation), global::Google.Ads.GoogleAds.V1.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation.Parser, new[]{ "ResourceName" }, null, null, null)}),
@@ -487,6 +493,9 @@ namespace Google.Ads.GoogleAds.V1.Services {
         case ApplyParametersOneofCase.TargetCpaOptIn:
           TargetCpaOptIn = other.TargetCpaOptIn.Clone();
           break;
+        case ApplyParametersOneofCase.MoveUnusedBudget:
+          MoveUnusedBudget = other.MoveUnusedBudget.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -569,6 +578,20 @@ namespace Google.Ads.GoogleAds.V1.Services {
       }
     }
 
+    /// <summary>Field number for the "move_unused_budget" field.</summary>
+    public const int MoveUnusedBudgetFieldNumber = 9;
+    /// <summary>
+    /// Parameters to use when applying move unused budget recommendation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters MoveUnusedBudget {
+      get { return applyParametersCase_ == ApplyParametersOneofCase.MoveUnusedBudget ? (global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters) applyParameters_ : null; }
+      set {
+        applyParameters_ = value;
+        applyParametersCase_ = value == null ? ApplyParametersOneofCase.None : ApplyParametersOneofCase.MoveUnusedBudget;
+      }
+    }
+
     private object applyParameters_;
     /// <summary>Enum of possible cases for the "apply_parameters" oneof.</summary>
     public enum ApplyParametersOneofCase {
@@ -577,6 +600,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
       TextAd = 3,
       Keyword = 4,
       TargetCpaOptIn = 5,
+      MoveUnusedBudget = 9,
     }
     private ApplyParametersOneofCase applyParametersCase_ = ApplyParametersOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -608,6 +632,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
       if (!object.Equals(TextAd, other.TextAd)) return false;
       if (!object.Equals(Keyword, other.Keyword)) return false;
       if (!object.Equals(TargetCpaOptIn, other.TargetCpaOptIn)) return false;
+      if (!object.Equals(MoveUnusedBudget, other.MoveUnusedBudget)) return false;
       if (ApplyParametersCase != other.ApplyParametersCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -620,6 +645,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
       if (applyParametersCase_ == ApplyParametersOneofCase.TextAd) hash ^= TextAd.GetHashCode();
       if (applyParametersCase_ == ApplyParametersOneofCase.Keyword) hash ^= Keyword.GetHashCode();
       if (applyParametersCase_ == ApplyParametersOneofCase.TargetCpaOptIn) hash ^= TargetCpaOptIn.GetHashCode();
+      if (applyParametersCase_ == ApplyParametersOneofCase.MoveUnusedBudget) hash ^= MoveUnusedBudget.GetHashCode();
       hash ^= (int) applyParametersCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -654,6 +680,10 @@ namespace Google.Ads.GoogleAds.V1.Services {
         output.WriteRawTag(42);
         output.WriteMessage(TargetCpaOptIn);
       }
+      if (applyParametersCase_ == ApplyParametersOneofCase.MoveUnusedBudget) {
+        output.WriteRawTag(74);
+        output.WriteMessage(MoveUnusedBudget);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -676,6 +706,9 @@ namespace Google.Ads.GoogleAds.V1.Services {
       }
       if (applyParametersCase_ == ApplyParametersOneofCase.TargetCpaOptIn) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TargetCpaOptIn);
+      }
+      if (applyParametersCase_ == ApplyParametersOneofCase.MoveUnusedBudget) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MoveUnusedBudget);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -715,6 +748,12 @@ namespace Google.Ads.GoogleAds.V1.Services {
             TargetCpaOptIn = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters();
           }
           TargetCpaOptIn.MergeFrom(other.TargetCpaOptIn);
+          break;
+        case ApplyParametersOneofCase.MoveUnusedBudget:
+          if (MoveUnusedBudget == null) {
+            MoveUnusedBudget = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters();
+          }
+          MoveUnusedBudget.MergeFrom(other.MoveUnusedBudget);
           break;
       }
 
@@ -767,6 +806,15 @@ namespace Google.Ads.GoogleAds.V1.Services {
             }
             input.ReadMessage(subBuilder);
             TargetCpaOptIn = subBuilder;
+            break;
+          }
+          case 74: {
+            global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters subBuilder = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters();
+            if (applyParametersCase_ == ApplyParametersOneofCase.MoveUnusedBudget) {
+              subBuilder.MergeFrom(MoveUnusedBudget);
+            }
+            input.ReadMessage(subBuilder);
+            MoveUnusedBudget = subBuilder;
             break;
           }
         }
@@ -1436,6 +1484,147 @@ namespace Google.Ads.GoogleAds.V1.Services {
                 long? value = _single_newCampaignBudgetAmountMicros_codec.Read(input);
                 if (newCampaignBudgetAmountMicros_ == null || value != 0L) {
                   NewCampaignBudgetAmountMicros = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Parameters to use when applying move unused budget recommendation.
+      /// </summary>
+      public sealed partial class MoveUnusedBudgetParameters : pb::IMessage<MoveUnusedBudgetParameters> {
+        private static readonly pb::MessageParser<MoveUnusedBudgetParameters> _parser = new pb::MessageParser<MoveUnusedBudgetParameters>(() => new MoveUnusedBudgetParameters());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<MoveUnusedBudgetParameters> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Descriptor.NestedTypes[4]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public MoveUnusedBudgetParameters() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public MoveUnusedBudgetParameters(MoveUnusedBudgetParameters other) : this() {
+          BudgetMicrosToMove = other.BudgetMicrosToMove;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public MoveUnusedBudgetParameters Clone() {
+          return new MoveUnusedBudgetParameters(this);
+        }
+
+        /// <summary>Field number for the "budget_micros_to_move" field.</summary>
+        public const int BudgetMicrosToMoveFieldNumber = 1;
+        private static readonly pb::FieldCodec<long?> _single_budgetMicrosToMove_codec = pb::FieldCodec.ForStructWrapper<long>(10);
+        private long? budgetMicrosToMove_;
+        /// <summary>
+        /// Budget amount to move from excess budget to constrained budget. This is
+        /// a required field.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public long? BudgetMicrosToMove {
+          get { return budgetMicrosToMove_; }
+          set {
+            budgetMicrosToMove_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as MoveUnusedBudgetParameters);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(MoveUnusedBudgetParameters other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (BudgetMicrosToMove != other.BudgetMicrosToMove) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (budgetMicrosToMove_ != null) hash ^= BudgetMicrosToMove.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (budgetMicrosToMove_ != null) {
+            _single_budgetMicrosToMove_codec.WriteTagAndValue(output, BudgetMicrosToMove);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (budgetMicrosToMove_ != null) {
+            size += _single_budgetMicrosToMove_codec.CalculateSizeWithTag(BudgetMicrosToMove);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(MoveUnusedBudgetParameters other) {
+          if (other == null) {
+            return;
+          }
+          if (other.budgetMicrosToMove_ != null) {
+            if (budgetMicrosToMove_ == null || other.BudgetMicrosToMove != 0L) {
+              BudgetMicrosToMove = other.BudgetMicrosToMove;
+            }
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                long? value = _single_budgetMicrosToMove_codec.Read(input);
+                if (budgetMicrosToMove_ == null || value != 0L) {
+                  BudgetMicrosToMove = value;
                 }
                 break;
               }

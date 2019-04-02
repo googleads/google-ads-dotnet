@@ -1,4 +1,4 @@
-// Copyright 2018, Google LLC
+// Copyright 2019, Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -134,6 +134,13 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.AssetService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<AssetServiceClient, AssetServiceSettings> AssetService;
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.BiddingStrategyService
             /// for details.
             /// </summary>
@@ -236,6 +243,13 @@ namespace Google.Ads.GoogleAds
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ConversionActionServiceClient, ConversionActionServiceSettings> ConversionActionService;
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.ConversionAdjustmentUploadService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<ConversionAdjustmentUploadServiceClient, ConversionAdjustmentUploadServiceSettings> ConversionAdjustmentUploadService;
 
 
             /// <summary>

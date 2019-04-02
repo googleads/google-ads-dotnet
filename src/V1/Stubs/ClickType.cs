@@ -400,7 +400,7 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// </summary>
         [pbr::OriginalName("PRICE_EXTENSION")] PriceExtension = 54,
         /// <summary>
-        /// Hotel Book-on-Google room selection.
+        /// Book on Google hotel room selection.
         /// </summary>
         [pbr::OriginalName("HOTEL_BOOK_ON_GOOGLE_ROOM_SELECTION")] HotelBookOnGoogleRoomSelection = 55,
       }
