@@ -117,19 +117,19 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "Z2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJBCh10YXJnZXRfcGFydG5lcl9zZWFy",
             "Y2hfbmV0d29yaxgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUa",
             "SAoQSG90ZWxTZXR0aW5nSW5mbxI0Cg9ob3RlbF9jZW50ZXJfaWQYASABKAsy",
-            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRriAQoPU2hvcHBpbmdTZXR0",
-            "aW5nEjAKC21lcmNoYW50X2lkGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDY0VmFsdWUSMwoNc2FsZXNfY291bnRyeRgCIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRI2ChFjYW1wYWlnbl9wcmlvcml0eRgDIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlEjAKDGVuYWJsZV9sb2NhbBgE",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUaUQoVU2VsZWN0aXZl",
-            "T3B0aW1pemF0aW9uEjgKEmNvbnZlcnNpb25fYWN0aW9ucxgBIAMoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRrsAQoXRHluYW1pY1NlYXJjaEFk",
-            "c1NldHRpbmcSMQoLZG9tYWluX25hbWUYASABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSMwoNbGFuZ3VhZ2VfY29kZRgCIAEoCzIcLmdvb2ds",
-            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI6ChZ1c2Vfc3VwcGxpZWRfdXJsc19v",
-            "bmx5GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRItCghmZWVk",
-            "X2lkcxgEIAMoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlGkUKD1Ry",
+            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRpRChVTZWxlY3RpdmVPcHRp",
+            "bWl6YXRpb24SOAoSY29udmVyc2lvbl9hY3Rpb25zGAEgAygLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlGuwBChdEeW5hbWljU2VhcmNoQWRzU2V0",
+            "dGluZxIxCgtkb21haW5fbmFtZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRIzCg1sYW5ndWFnZV9jb2RlGAIgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEjoKFnVzZV9zdXBwbGllZF91cmxzX29ubHkY",
+            "AyABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEi0KCGZlZWRfaWRz",
+            "GAQgAygLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUa4gEKD1Nob3Bw",
+            "aW5nU2V0dGluZxIwCgttZXJjaGFudF9pZBgBIAEoCzIbLmdvb2dsZS5wcm90",
+            "b2J1Zi5JbnQ2NFZhbHVlEjMKDXNhbGVzX2NvdW50cnkYAiABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNgoRY2FtcGFpZ25fcHJpb3JpdHkY",
+            "AyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRIwCgxlbmFibGVf",
+            "bG9jYWwYBCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlGkUKD1Ry",
             "YWNraW5nU2V0dGluZxIyCgx0cmFja2luZ191cmwYASABKAsyHC5nb29nbGUu",
             "cHJvdG9idWYuU3RyaW5nVmFsdWUa8wEKDFZhbml0eVBoYXJtYRKAAQoedmFu",
             "aXR5X3BoYXJtYV9kaXNwbGF5X3VybF9tb2RlGAEgASgOMlguZ29vZ2xlLmFk",
@@ -149,9 +149,9 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "RealTimeBiddingSetting", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "ShoppingSetting", "TargetingSetting", "CampaignBudget", "BiddingStrategyType", "StartDate", "EndDate", "FinalUrlSuffix", "FrequencyCaps", "VideoBrandSafetySuitability", "VanityPharma", "SelectiveOptimization", "TrackingSetting", "BiddingStrategy", "ManualCpc", "ManualCpm", "ManualCpv", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetRoas", "TargetSpend", "PercentCpc", "TargetCpm" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.HotelSettingInfo.Parser, new[]{ "HotelCenterId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.ShoppingSetting), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.ShoppingSetting.Parser, new[]{ "MerchantId", "SalesCountry", "CampaignPriority", "EnableLocal" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.SelectiveOptimization), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.SelectiveOptimization.Parser, new[]{ "ConversionActions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.DynamicSearchAdsSetting), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.DynamicSearchAdsSetting.Parser, new[]{ "DomainName", "LanguageCode", "UseSuppliedUrlsOnly", "FeedIds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.ShoppingSetting), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.ShoppingSetting.Parser, new[]{ "MerchantId", "SalesCountry", "CampaignPriority", "EnableLocal" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.TrackingSetting), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.TrackingSetting.Parser, new[]{ "TrackingUrl" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.VanityPharma), global::Google.Ads.GoogleAds.V0.Resources.Campaign.Types.VanityPharma.Parser, new[]{ "VanityPharmaDisplayUrlMode", "VanityPharmaText" }, null, null, null)})
           }));
@@ -2063,267 +2063,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
 
       /// <summary>
-      /// The setting for Shopping campaigns. Defines the universe of products that
-      /// can be advertised by the campaign, and how this campaign interacts with
-      /// other Shopping campaigns.
-      /// </summary>
-      public sealed partial class ShoppingSetting : pb::IMessage<ShoppingSetting> {
-        private static readonly pb::MessageParser<ShoppingSetting> _parser = new pb::MessageParser<ShoppingSetting>(() => new ShoppingSetting());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<ShoppingSetting> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V0.Resources.Campaign.Descriptor.NestedTypes[2]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ShoppingSetting() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ShoppingSetting(ShoppingSetting other) : this() {
-          MerchantId = other.MerchantId;
-          SalesCountry = other.SalesCountry;
-          CampaignPriority = other.CampaignPriority;
-          EnableLocal = other.EnableLocal;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ShoppingSetting Clone() {
-          return new ShoppingSetting(this);
-        }
-
-        /// <summary>Field number for the "merchant_id" field.</summary>
-        public const int MerchantIdFieldNumber = 1;
-        private static readonly pb::FieldCodec<long?> _single_merchantId_codec = pb::FieldCodec.ForStructWrapper<long>(10);
-        private long? merchantId_;
-        /// <summary>
-        /// ID of the Merchant Center account.
-        /// This field is required for create operations. This field is immutable for
-        /// Shopping campaigns.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public long? MerchantId {
-          get { return merchantId_; }
-          set {
-            merchantId_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "sales_country" field.</summary>
-        public const int SalesCountryFieldNumber = 2;
-        private static readonly pb::FieldCodec<string> _single_salesCountry_codec = pb::FieldCodec.ForClassWrapper<string>(18);
-        private string salesCountry_;
-        /// <summary>
-        /// Sales country of products to include in the campaign.
-        /// This field is required for Shopping campaigns. This field is immutable.
-        /// This field is optional for non-Shopping campaigns, but it must be equal
-        /// to 'ZZ' if set.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string SalesCountry {
-          get { return salesCountry_; }
-          set {
-            salesCountry_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "campaign_priority" field.</summary>
-        public const int CampaignPriorityFieldNumber = 3;
-        private static readonly pb::FieldCodec<int?> _single_campaignPriority_codec = pb::FieldCodec.ForStructWrapper<int>(26);
-        private int? campaignPriority_;
-        /// <summary>
-        /// Priority of the campaign. Campaigns with numerically higher priorities
-        /// take precedence over those with lower priorities.
-        /// This field is required for Shopping campaigns, with values between 0 and
-        /// 2, inclusive.
-        /// This field is optional for Smart Shopping campaigns, but must be equal to
-        /// 3 if set.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int? CampaignPriority {
-          get { return campaignPriority_; }
-          set {
-            campaignPriority_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "enable_local" field.</summary>
-        public const int EnableLocalFieldNumber = 4;
-        private static readonly pb::FieldCodec<bool?> _single_enableLocal_codec = pb::FieldCodec.ForStructWrapper<bool>(34);
-        private bool? enableLocal_;
-        /// <summary>
-        /// Enable local inventory ads. This field is ignored for Smart Shopping
-        /// campaigns.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool? EnableLocal {
-          get { return enableLocal_; }
-          set {
-            enableLocal_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as ShoppingSetting);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(ShoppingSetting other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (MerchantId != other.MerchantId) return false;
-          if (SalesCountry != other.SalesCountry) return false;
-          if (CampaignPriority != other.CampaignPriority) return false;
-          if (EnableLocal != other.EnableLocal) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (merchantId_ != null) hash ^= MerchantId.GetHashCode();
-          if (salesCountry_ != null) hash ^= SalesCountry.GetHashCode();
-          if (campaignPriority_ != null) hash ^= CampaignPriority.GetHashCode();
-          if (enableLocal_ != null) hash ^= EnableLocal.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (merchantId_ != null) {
-            _single_merchantId_codec.WriteTagAndValue(output, MerchantId);
-          }
-          if (salesCountry_ != null) {
-            _single_salesCountry_codec.WriteTagAndValue(output, SalesCountry);
-          }
-          if (campaignPriority_ != null) {
-            _single_campaignPriority_codec.WriteTagAndValue(output, CampaignPriority);
-          }
-          if (enableLocal_ != null) {
-            _single_enableLocal_codec.WriteTagAndValue(output, EnableLocal);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (merchantId_ != null) {
-            size += _single_merchantId_codec.CalculateSizeWithTag(MerchantId);
-          }
-          if (salesCountry_ != null) {
-            size += _single_salesCountry_codec.CalculateSizeWithTag(SalesCountry);
-          }
-          if (campaignPriority_ != null) {
-            size += _single_campaignPriority_codec.CalculateSizeWithTag(CampaignPriority);
-          }
-          if (enableLocal_ != null) {
-            size += _single_enableLocal_codec.CalculateSizeWithTag(EnableLocal);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(ShoppingSetting other) {
-          if (other == null) {
-            return;
-          }
-          if (other.merchantId_ != null) {
-            if (merchantId_ == null || other.MerchantId != 0L) {
-              MerchantId = other.MerchantId;
-            }
-          }
-          if (other.salesCountry_ != null) {
-            if (salesCountry_ == null || other.SalesCountry != "") {
-              SalesCountry = other.SalesCountry;
-            }
-          }
-          if (other.campaignPriority_ != null) {
-            if (campaignPriority_ == null || other.CampaignPriority != 0) {
-              CampaignPriority = other.CampaignPriority;
-            }
-          }
-          if (other.enableLocal_ != null) {
-            if (enableLocal_ == null || other.EnableLocal != false) {
-              EnableLocal = other.EnableLocal;
-            }
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                long? value = _single_merchantId_codec.Read(input);
-                if (merchantId_ == null || value != 0L) {
-                  MerchantId = value;
-                }
-                break;
-              }
-              case 18: {
-                string value = _single_salesCountry_codec.Read(input);
-                if (salesCountry_ == null || value != "") {
-                  SalesCountry = value;
-                }
-                break;
-              }
-              case 26: {
-                int? value = _single_campaignPriority_codec.Read(input);
-                if (campaignPriority_ == null || value != 0) {
-                  CampaignPriority = value;
-                }
-                break;
-              }
-              case 34: {
-                bool? value = _single_enableLocal_codec.Read(input);
-                if (enableLocal_ == null || value != false) {
-                  EnableLocal = value;
-                }
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      /// <summary>
       /// Selective optimization setting for this campaign, which includes a set of
       /// conversion actions to optimize this campaign towards.
       /// </summary>
@@ -2335,7 +2074,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V0.Resources.Campaign.Descriptor.NestedTypes[3]; }
+          get { return global::Google.Ads.GoogleAds.V0.Resources.Campaign.Descriptor.NestedTypes[2]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2462,7 +2201,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V0.Resources.Campaign.Descriptor.NestedTypes[4]; }
+          get { return global::Google.Ads.GoogleAds.V0.Resources.Campaign.Descriptor.NestedTypes[3]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2679,6 +2418,266 @@ namespace Google.Ads.GoogleAds.V0.Resources {
               }
               case 34: {
                 feedIds_.AddEntriesFrom(input, _repeated_feedIds_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// The setting for Shopping campaigns. Defines the universe of products that
+      /// can be advertised by the campaign, and how this campaign interacts with
+      /// other Shopping campaigns.
+      /// </summary>
+      public sealed partial class ShoppingSetting : pb::IMessage<ShoppingSetting> {
+        private static readonly pb::MessageParser<ShoppingSetting> _parser = new pb::MessageParser<ShoppingSetting>(() => new ShoppingSetting());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<ShoppingSetting> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V0.Resources.Campaign.Descriptor.NestedTypes[4]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ShoppingSetting() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ShoppingSetting(ShoppingSetting other) : this() {
+          MerchantId = other.MerchantId;
+          SalesCountry = other.SalesCountry;
+          CampaignPriority = other.CampaignPriority;
+          EnableLocal = other.EnableLocal;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ShoppingSetting Clone() {
+          return new ShoppingSetting(this);
+        }
+
+        /// <summary>Field number for the "merchant_id" field.</summary>
+        public const int MerchantIdFieldNumber = 1;
+        private static readonly pb::FieldCodec<long?> _single_merchantId_codec = pb::FieldCodec.ForStructWrapper<long>(10);
+        private long? merchantId_;
+        /// <summary>
+        /// ID of the Merchant Center account.
+        /// This field is required for create operations. This field is immutable for
+        /// Shopping campaigns.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public long? MerchantId {
+          get { return merchantId_; }
+          set {
+            merchantId_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "sales_country" field.</summary>
+        public const int SalesCountryFieldNumber = 2;
+        private static readonly pb::FieldCodec<string> _single_salesCountry_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+        private string salesCountry_;
+        /// <summary>
+        /// Sales country of products to include in the campaign.
+        /// This field is required for Shopping campaigns. This field is immutable.
+        /// This field is optional for non-Shopping campaigns, but it must be equal
+        /// to 'ZZ' if set.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string SalesCountry {
+          get { return salesCountry_; }
+          set {
+            salesCountry_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "campaign_priority" field.</summary>
+        public const int CampaignPriorityFieldNumber = 3;
+        private static readonly pb::FieldCodec<int?> _single_campaignPriority_codec = pb::FieldCodec.ForStructWrapper<int>(26);
+        private int? campaignPriority_;
+        /// <summary>
+        /// Priority of the campaign. Campaigns with numerically higher priorities
+        /// take precedence over those with lower priorities.
+        /// This field is required for Shopping campaigns, with values between 0 and
+        /// 2, inclusive.
+        /// This field is optional for Smart Shopping campaigns, but must be equal to
+        /// 3 if set.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int? CampaignPriority {
+          get { return campaignPriority_; }
+          set {
+            campaignPriority_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "enable_local" field.</summary>
+        public const int EnableLocalFieldNumber = 4;
+        private static readonly pb::FieldCodec<bool?> _single_enableLocal_codec = pb::FieldCodec.ForStructWrapper<bool>(34);
+        private bool? enableLocal_;
+        /// <summary>
+        /// Whether to include local products.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool? EnableLocal {
+          get { return enableLocal_; }
+          set {
+            enableLocal_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as ShoppingSetting);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(ShoppingSetting other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (MerchantId != other.MerchantId) return false;
+          if (SalesCountry != other.SalesCountry) return false;
+          if (CampaignPriority != other.CampaignPriority) return false;
+          if (EnableLocal != other.EnableLocal) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (merchantId_ != null) hash ^= MerchantId.GetHashCode();
+          if (salesCountry_ != null) hash ^= SalesCountry.GetHashCode();
+          if (campaignPriority_ != null) hash ^= CampaignPriority.GetHashCode();
+          if (enableLocal_ != null) hash ^= EnableLocal.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (merchantId_ != null) {
+            _single_merchantId_codec.WriteTagAndValue(output, MerchantId);
+          }
+          if (salesCountry_ != null) {
+            _single_salesCountry_codec.WriteTagAndValue(output, SalesCountry);
+          }
+          if (campaignPriority_ != null) {
+            _single_campaignPriority_codec.WriteTagAndValue(output, CampaignPriority);
+          }
+          if (enableLocal_ != null) {
+            _single_enableLocal_codec.WriteTagAndValue(output, EnableLocal);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (merchantId_ != null) {
+            size += _single_merchantId_codec.CalculateSizeWithTag(MerchantId);
+          }
+          if (salesCountry_ != null) {
+            size += _single_salesCountry_codec.CalculateSizeWithTag(SalesCountry);
+          }
+          if (campaignPriority_ != null) {
+            size += _single_campaignPriority_codec.CalculateSizeWithTag(CampaignPriority);
+          }
+          if (enableLocal_ != null) {
+            size += _single_enableLocal_codec.CalculateSizeWithTag(EnableLocal);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(ShoppingSetting other) {
+          if (other == null) {
+            return;
+          }
+          if (other.merchantId_ != null) {
+            if (merchantId_ == null || other.MerchantId != 0L) {
+              MerchantId = other.MerchantId;
+            }
+          }
+          if (other.salesCountry_ != null) {
+            if (salesCountry_ == null || other.SalesCountry != "") {
+              SalesCountry = other.SalesCountry;
+            }
+          }
+          if (other.campaignPriority_ != null) {
+            if (campaignPriority_ == null || other.CampaignPriority != 0) {
+              CampaignPriority = other.CampaignPriority;
+            }
+          }
+          if (other.enableLocal_ != null) {
+            if (enableLocal_ == null || other.EnableLocal != false) {
+              EnableLocal = other.EnableLocal;
+            }
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                long? value = _single_merchantId_codec.Read(input);
+                if (merchantId_ == null || value != 0L) {
+                  MerchantId = value;
+                }
+                break;
+              }
+              case 18: {
+                string value = _single_salesCountry_codec.Read(input);
+                if (salesCountry_ == null || value != "") {
+                  SalesCountry = value;
+                }
+                break;
+              }
+              case 26: {
+                int? value = _single_campaignPriority_codec.Read(input);
+                if (campaignPriority_ == null || value != 0) {
+                  CampaignPriority = value;
+                }
+                break;
+              }
+              case 34: {
+                bool? value = _single_enableLocal_codec.Read(input);
+                if (enableLocal_ == null || value != false) {
+                  EnableLocal = value;
+                }
                 break;
               }
             }

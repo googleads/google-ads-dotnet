@@ -153,5 +153,125 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public void UploadCallConversions()
+        {
+            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            UploadCallConversionsRequest expectedRequest = new UploadCallConversionsRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Conversions = { },
+                PartialFailure = true,
+            };
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
+            mockGrpcClient.Setup(x => x.UploadCallConversions(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            IEnumerable<CallConversion> conversions = new List<CallConversion>();
+            bool partialFailure = true;
+            UploadCallConversionsResponse response = client.UploadCallConversions(customerId, conversions, partialFailure);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task UploadCallConversionsAsync()
+        {
+            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            UploadCallConversionsRequest expectedRequest = new UploadCallConversionsRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Conversions = { },
+                PartialFailure = true,
+            };
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
+            mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<UploadCallConversionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            IEnumerable<CallConversion> conversions = new List<CallConversion>();
+            bool partialFailure = true;
+            UploadCallConversionsResponse response = await client.UploadCallConversionsAsync(customerId, conversions, partialFailure);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void UploadCallConversions2()
+        {
+            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            UploadCallConversionsRequest expectedRequest = new UploadCallConversionsRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Conversions = { },
+            };
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
+            mockGrpcClient.Setup(x => x.UploadCallConversions(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            IEnumerable<CallConversion> conversions = new List<CallConversion>();
+            UploadCallConversionsResponse response = client.UploadCallConversions(customerId, conversions);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task UploadCallConversionsAsync2()
+        {
+            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            UploadCallConversionsRequest expectedRequest = new UploadCallConversionsRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Conversions = { },
+            };
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
+            mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<UploadCallConversionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            IEnumerable<CallConversion> conversions = new List<CallConversion>();
+            UploadCallConversionsResponse response = await client.UploadCallConversionsAsync(customerId, conversions);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void UploadCallConversions3()
+        {
+            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            UploadCallConversionsRequest request = new UploadCallConversionsRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Conversions = { },
+            };
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
+            mockGrpcClient.Setup(x => x.UploadCallConversions(request, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            UploadCallConversionsResponse response = client.UploadCallConversions(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task UploadCallConversionsAsync3()
+        {
+            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            UploadCallConversionsRequest request = new UploadCallConversionsRequest
+            {
+                CustomerId = "customerId-1772061412",
+                Conversions = { },
+            };
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
+            mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(request, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<UploadCallConversionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            UploadCallConversionsResponse response = await client.UploadCallConversionsAsync(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
     }
 }

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "LnByb3RvGitnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9hZF90eXBl",
             "LnByb3RvGipnb29nbGUvYWRzL2dvb2dsZWFkcy92MC9lbnVtcy9kZXZpY2Uu",
             "cHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byLnCwoCQWQSJwoCaWQYASABKAsyGy5n",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byKNCwoCQWQSJwoCaWQYASABKAsyGy5n",
             "b29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIwCgpmaW5hbF91cmxzGAIgAygL",
             "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjcKEWZpbmFsX21vYmls",
             "ZV91cmxzGBAgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjsK",
@@ -49,9 +49,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             "TgoQZXhwYW5kZWRfdGV4dF9hZBgHIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xl",
             "YWRzLnYwLmNvbW1vbi5FeHBhbmRlZFRleHRBZEluZm9IABJQChFkeW5hbWlj",
             "X3NlYXJjaF9hZBgIIAEoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYwLmNv",
-            "bW1vbi5EeW5hbWljU2VhcmNoQWRJbmZvSAASWAoVcmVzcG9uc2l2ZV9kaXNw",
-            "bGF5X2FkGAkgASgLMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9u",
-            "LlJlc3BvbnNpdmVEaXNwbGF5QWRJbmZvSAASRgoMY2FsbF9vbmx5X2FkGA0g",
+            "bW1vbi5EeW5hbWljU2VhcmNoQWRJbmZvSAASRgoMY2FsbF9vbmx5X2FkGA0g",
             "ASgLMi4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjAuY29tbW9uLkNhbGxPbmx5",
             "QWRJbmZvSAASYQoaZXhwYW5kZWRfZHluYW1pY19zZWFyY2hfYWQYDiABKAsy",
             "Oy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MC5jb21tb24uRXhwYW5kZWREeW5h",
@@ -74,7 +72,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V0.Common.AdTypeInfosReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.AdTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V0.Enums.DeviceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Ad), global::Google.Ads.GoogleAds.V0.Resources.Ad.Parser, new[]{ "Id", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "Name", "TextAd", "ExpandedTextAd", "DynamicSearchAd", "ResponsiveDisplayAd", "CallOnlyAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "GmailAd", "ImageAd", "VideoAd" }, new[]{ "AdData" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V0.Resources.Ad), global::Google.Ads.GoogleAds.V0.Resources.Ad.Parser, new[]{ "Id", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "Name", "TextAd", "ExpandedTextAd", "DynamicSearchAd", "CallOnlyAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "GmailAd", "ImageAd", "VideoAd" }, new[]{ "AdData" }, null, null)
           }));
     }
     #endregion
@@ -128,9 +126,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
           break;
         case AdDataOneofCase.DynamicSearchAd:
           DynamicSearchAd = other.DynamicSearchAd.Clone();
-          break;
-        case AdDataOneofCase.ResponsiveDisplayAd:
-          ResponsiveDisplayAd = other.ResponsiveDisplayAd.Clone();
           break;
         case AdDataOneofCase.CallOnlyAd:
           CallOnlyAd = other.CallOnlyAd.Clone();
@@ -231,8 +226,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.CustomParameter> urlCustomParameters_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.CustomParameter>();
     /// <summary>
     /// The list of mappings that can be used to substitute custom parameter tags
-    /// in a
-    /// `tracking_url_template`, `final_urls`, or `mobile_final_urls`.
+    /// in a `tracking_url_template`, `final_urls`, or `mobile_final_urls`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V0.Common.CustomParameter> UrlCustomParameters {
@@ -363,20 +357,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       }
     }
 
-    /// <summary>Field number for the "responsive_display_ad" field.</summary>
-    public const int ResponsiveDisplayAdFieldNumber = 9;
-    /// <summary>
-    /// Details pertaining to a responsive display ad.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Ads.GoogleAds.V0.Common.ResponsiveDisplayAdInfo ResponsiveDisplayAd {
-      get { return adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd ? (global::Google.Ads.GoogleAds.V0.Common.ResponsiveDisplayAdInfo) adData_ : null; }
-      set {
-        adData_ = value;
-        adDataCase_ = value == null ? AdDataOneofCase.None : AdDataOneofCase.ResponsiveDisplayAd;
-      }
-    }
-
     /// <summary>Field number for the "call_only_ad" field.</summary>
     public const int CallOnlyAdFieldNumber = 13;
     /// <summary>
@@ -500,7 +480,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       TextAd = 6,
       ExpandedTextAd = 7,
       DynamicSearchAd = 8,
-      ResponsiveDisplayAd = 9,
       CallOnlyAd = 13,
       ExpandedDynamicSearchAd = 14,
       HotelAd = 15,
@@ -548,7 +527,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (!object.Equals(TextAd, other.TextAd)) return false;
       if (!object.Equals(ExpandedTextAd, other.ExpandedTextAd)) return false;
       if (!object.Equals(DynamicSearchAd, other.DynamicSearchAd)) return false;
-      if (!object.Equals(ResponsiveDisplayAd, other.ResponsiveDisplayAd)) return false;
       if (!object.Equals(CallOnlyAd, other.CallOnlyAd)) return false;
       if (!object.Equals(ExpandedDynamicSearchAd, other.ExpandedDynamicSearchAd)) return false;
       if (!object.Equals(HotelAd, other.HotelAd)) return false;
@@ -577,7 +555,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (adDataCase_ == AdDataOneofCase.TextAd) hash ^= TextAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.ExpandedTextAd) hash ^= ExpandedTextAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.DynamicSearchAd) hash ^= DynamicSearchAd.GetHashCode();
-      if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) hash ^= ResponsiveDisplayAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.CallOnlyAd) hash ^= CallOnlyAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.ExpandedDynamicSearchAd) hash ^= ExpandedDynamicSearchAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.HotelAd) hash ^= HotelAd.GetHashCode();
@@ -622,10 +599,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (adDataCase_ == AdDataOneofCase.DynamicSearchAd) {
         output.WriteRawTag(66);
         output.WriteMessage(DynamicSearchAd);
-      }
-      if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) {
-        output.WriteRawTag(74);
-        output.WriteMessage(ResponsiveDisplayAd);
       }
       urlCustomParameters_.WriteTo(output, _repeated_urlCustomParameters_codec);
       if (trackingUrlTemplate_ != null) {
@@ -715,9 +688,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
       if (adDataCase_ == AdDataOneofCase.DynamicSearchAd) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DynamicSearchAd);
       }
-      if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ResponsiveDisplayAd);
-      }
       if (adDataCase_ == AdDataOneofCase.CallOnlyAd) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CallOnlyAd);
       }
@@ -805,12 +775,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             DynamicSearchAd = new global::Google.Ads.GoogleAds.V0.Common.DynamicSearchAdInfo();
           }
           DynamicSearchAd.MergeFrom(other.DynamicSearchAd);
-          break;
-        case AdDataOneofCase.ResponsiveDisplayAd:
-          if (ResponsiveDisplayAd == null) {
-            ResponsiveDisplayAd = new global::Google.Ads.GoogleAds.V0.Common.ResponsiveDisplayAdInfo();
-          }
-          ResponsiveDisplayAd.MergeFrom(other.ResponsiveDisplayAd);
           break;
         case AdDataOneofCase.CallOnlyAd:
           if (CallOnlyAd == null) {
@@ -920,15 +884,6 @@ namespace Google.Ads.GoogleAds.V0.Resources {
             }
             input.ReadMessage(subBuilder);
             DynamicSearchAd = subBuilder;
-            break;
-          }
-          case 74: {
-            global::Google.Ads.GoogleAds.V0.Common.ResponsiveDisplayAdInfo subBuilder = new global::Google.Ads.GoogleAds.V0.Common.ResponsiveDisplayAdInfo();
-            if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) {
-              subBuilder.MergeFrom(ResponsiveDisplayAd);
-            }
-            input.ReadMessage(subBuilder);
-            ResponsiveDisplayAd = subBuilder;
             break;
           }
           case 82: {

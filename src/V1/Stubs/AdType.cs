@@ -26,19 +26,20 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Citnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9hZF90eXBlLnByb3Rv",
             "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90byKuAgoKQWRUeXBlRW51bSKfAgoGQWRUeXBlEg8K",
+            "bm5vdGF0aW9ucy5wcm90byLwAgoKQWRUeXBlRW51bSLhAgoGQWRUeXBlEg8K",
             "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB1RFWFRfQUQQAhIUChBF",
             "WFBBTkRFRF9URVhUX0FEEAMSEAoMQ0FMTF9PTkxZX0FEEAYSHgoaRVhQQU5E",
             "RURfRFlOQU1JQ19TRUFSQ0hfQUQQBxIMCghIT1RFTF9BRBAIEhUKEVNIT1BQ",
             "SU5HX1NNQVJUX0FEEAkSFwoTU0hPUFBJTkdfUFJPRFVDVF9BRBAKEgwKCFZJ",
             "REVPX0FEEAwSDAoIR01BSUxfQUQQDRIMCghJTUFHRV9BRBAOEhgKFFJFU1BP",
             "TlNJVkVfU0VBUkNIX0FEEA8SIAocTEVHQUNZX1JFU1BPTlNJVkVfRElTUExB",
-            "WV9BRBAQQuABCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXNC",
-            "C0FkVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
-            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoC",
-            "HUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xH",
-            "b29nbGVBZHNcVjFcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
-            "MTo6RW51bXNiBnByb3RvMw=="));
+            "WV9BRBAQEgoKBkFQUF9BRBAREhkKFUxFR0FDWV9BUFBfSU5TVEFMTF9BRBAS",
+            "EhkKFVJFU1BPTlNJVkVfRElTUExBWV9BRBATQuABCiFjb20uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjEuZW51bXNCC0FkVHlwZVByb3RvUAFaQmdvb2dsZS5n",
+            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
+            "MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
+            "LkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRW51bXPqAiFHb29n",
+            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -217,6 +218,18 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// The ad is a legacy responsive display ad.
         /// </summary>
         [pbr::OriginalName("LEGACY_RESPONSIVE_DISPLAY_AD")] LegacyResponsiveDisplayAd = 16,
+        /// <summary>
+        /// The ad is an app ad.
+        /// </summary>
+        [pbr::OriginalName("APP_AD")] AppAd = 17,
+        /// <summary>
+        /// The ad is a legacy app install ad.
+        /// </summary>
+        [pbr::OriginalName("LEGACY_APP_INSTALL_AD")] LegacyAppInstallAd = 18,
+        /// <summary>
+        /// The ad is a responsive display ad.
+        /// </summary>
+        [pbr::OriginalName("RESPONSIVE_DISPLAY_AD")] ResponsiveDisplayAd = 19,
       }
 
     }

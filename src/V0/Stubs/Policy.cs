@@ -286,7 +286,9 @@ namespace Google.Ads.GoogleAds.V0.Common {
   }
 
   /// <summary>
-  /// Parameter for controlling how policy checking is done.
+  /// Parameter for controlling how policy exemption is done. Ignorable policy
+  /// topics are only usable with expanded text ads and responsive search ads. All
+  /// other ad types must use policy violation keys.
   /// </summary>
   public sealed partial class PolicyValidationParameter : pb::IMessage<PolicyValidationParameter> {
     private static readonly pb::MessageParser<PolicyValidationParameter> _parser = new pb::MessageParser<PolicyValidationParameter>(() => new PolicyValidationParameter());

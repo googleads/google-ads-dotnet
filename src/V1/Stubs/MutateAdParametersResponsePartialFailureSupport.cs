@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC. All Rights Reserved.
+// Copyright 2019 Google LLC. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -22,15 +22,24 @@ namespace Google.Ads.GoogleAds.V1.Services
     public sealed partial class MutateAdParametersResponse 
     {
         /// <summary>
-        /// Gets the partial failure errors, if any.
+        /// Gets a GoogleAdsFailure instance that combines all the errors
+        /// from a failed API call.
         /// </summary>
-        public IEnumerable<GoogleAdsFailure> PartialFailures
+        public GoogleAdsFailure PartialFailure
         {
             get
             {
-                foreach (Any any in this.PartialFailureError.Details) {
-                    yield return any.Unpack<GoogleAdsFailure>();
+                if (this.PartialFailureError == null)
+                {
+                    return null;
                 }
+                GoogleAdsFailure retval = new GoogleAdsFailure();
+                foreach (Any any in this.PartialFailureError.Details)
+                {
+                    GoogleAdsFailure failure = any.Unpack<GoogleAdsFailure>();
+                    retval.Errors.AddRange(failure.Errors);
+                }
+                return retval;
             }
         }
     }

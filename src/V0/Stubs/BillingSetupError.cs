@@ -199,7 +199,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("INVALID_PAYMENTS_ACCOUNT")] InvalidPaymentsAccount = 6,
         /// <summary>
-        /// Only billable and third party customers can create billing setups.
+        /// Only billable and third-party customers can create billing setups.
         /// </summary>
         [pbr::OriginalName("BILLING_SETUP_NOT_PERMITTED_FOR_CUSTOMER_CATEGORY")] BillingSetupNotPermittedForCustomerCategory = 7,
         /// <summary>
@@ -207,7 +207,7 @@ namespace Google.Ads.GoogleAds.V0.Errors {
         /// </summary>
         [pbr::OriginalName("INVALID_START_TIME_TYPE")] InvalidStartTimeType = 8,
         /// <summary>
-        /// Billing Setups can only be created for a third party customer if they do
+        /// Billing Setups can only be created for a third-party customer if they do
         /// not already have a setup.
         /// </summary>
         [pbr::OriginalName("THIRD_PARTY_ALREADY_HAS_BILLING")] ThirdPartyAlreadyHasBilling = 9,

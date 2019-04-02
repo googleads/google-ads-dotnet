@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9hZHZlcnRpc2luZ19j",
             "aGFubmVsX3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVu",
-            "dW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIpEBChpBZHZlcnRp",
-            "c2luZ0NoYW5uZWxUeXBlRW51bSJzChZBZHZlcnRpc2luZ0NoYW5uZWxUeXBl",
-            "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgoKBlNFQVJDSBACEgsK",
-            "B0RJU1BMQVkQAxIMCghTSE9QUElORxAEEgkKBUhPVEVMEAUSCQoFVklERU8Q",
-            "BkLwAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zQhtBZHZl",
-            "cnRpc2luZ0NoYW5uZWxUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcv",
-            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zO2Vu",
-            "dW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEuRW51bXPKAh1H",
-            "b29nbGVcQWRzXEdvb2dsZUFkc1xWMVxFbnVtc+oCIUdvb2dsZTo6QWRzOjpH",
-            "b29nbGVBZHM6OlYxOjpFbnVtc2IGcHJvdG8z"));
+            "dW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIqUBChpBZHZlcnRp",
+            "c2luZ0NoYW5uZWxUeXBlRW51bSKGAQoWQWR2ZXJ0aXNpbmdDaGFubmVsVHlw",
+            "ZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIKCgZTRUFSQ0gQAhIL",
+            "CgdESVNQTEFZEAMSDAoIU0hPUFBJTkcQBBIJCgVIT1RFTBAFEgkKBVZJREVP",
+            "EAYSEQoNTVVMVElfQ0hBTk5FTBAHQvABCiFjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjEuZW51bXNCG0FkdmVydGlzaW5nQ2hhbm5lbFR5cGVQcm90b1AB",
+            "WkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
+            "b29nbGVhZHMvdjEvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMS5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXEVu",
+            "dW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkVudW1zYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -185,6 +186,11 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// Video campaigns.
         /// </summary>
         [pbr::OriginalName("VIDEO")] Video = 6,
+        /// <summary>
+        /// Universal App Campaigns, including universal app install and universal
+        /// app reengagement campaigns, that run across multiple channels.
+        /// </summary>
+        [pbr::OriginalName("MULTI_CHANNEL")] MultiChannel = 7,
       }
 
     }

@@ -497,7 +497,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
     /// Remove operation: A resource name for the ad group label
     /// being removed, in this format:
     ///
-    /// `customers/{customer_id}/adGroupLabels/{ad_group_id}_{label_id}`
+    /// `customers/{customer_id}/adGroupLabels/{ad_group_id}~{label_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

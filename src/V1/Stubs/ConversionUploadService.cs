@@ -35,44 +35,73 @@ namespace Google.Ads.GoogleAds.V1.Services {
             "cnNpb25zUmVzcG9uc2USMQoVcGFydGlhbF9mYWlsdXJlX2Vycm9yGAEgASgL",
             "MhIuZ29vZ2xlLnJwYy5TdGF0dXMSSAoHcmVzdWx0cxgCIAMoCzI3Lmdvb2ds",
             "ZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2VzLkNsaWNrQ29udmVyc2lvblJl",
-            "c3VsdCKuAwoPQ2xpY2tDb252ZXJzaW9uEisKBWdjbGlkGAEgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjcKEWNvbnZlcnNpb25fYWN0aW9u",
-            "GAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjoKFGNvbnZl",
-            "cnNpb25fZGF0ZV90aW1lGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEjYKEGNvbnZlcnNpb25fdmFsdWUYBCABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuRG91YmxlVmFsdWUSMwoNY3VycmVuY3lfY29kZRgFIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIuCghvcmRlcl9pZBgGIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJcChlleHRlcm5hbF9hdHRy",
-            "aWJ1dGlvbl9kYXRhGAcgASgLMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEu",
-            "c2VydmljZXMuRXh0ZXJuYWxBdHRyaWJ1dGlvbkRhdGEingEKF0V4dGVybmFs",
-            "QXR0cmlidXRpb25EYXRhEkEKG2V4dGVybmFsX2F0dHJpYnV0aW9uX2NyZWRp",
-            "dBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJAChpleHRl",
-            "cm5hbF9hdHRyaWJ1dGlvbl9tb2RlbBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZSK5AQoVQ2xpY2tDb252ZXJzaW9uUmVzdWx0EisKBWdj",
-            "bGlkGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjcKEWNv",
-            "bnZlcnNpb25fYWN0aW9uGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEjoKFGNvbnZlcnNpb25fZGF0ZV90aW1lGAMgASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlMvgBChdDb252ZXJzaW9uVXBsb2FkU2Vy",
-            "dmljZRLcAQoWVXBsb2FkQ2xpY2tDb252ZXJzaW9ucxI/Lmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxLnNlcnZpY2VzLlVwbG9hZENsaWNrQ29udmVyc2lvbnNS",
-            "ZXF1ZXN0GkAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuc2VydmljZXMuVXBs",
-            "b2FkQ2xpY2tDb252ZXJzaW9uc1Jlc3BvbnNlIj+C0+STAjkiNC92MS9jdXN0",
-            "b21lcnMve2N1c3RvbWVyX2lkPSp9OnVwbG9hZENsaWNrQ29udmVyc2lvbnM6",
-            "ASpCgwIKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5zZXJ2aWNlc0Ic",
-            "Q29udmVyc2lvblVwbG9hZFNlcnZpY2VQcm90b1ABWkhnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvc2Vy",
-            "dmljZXM7c2VydmljZXOiAgNHQUGqAiBHb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MS5TZXJ2aWNlc8oCIEdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXFNlcnZpY2Vz",
-            "6gIkR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OlNlcnZpY2VzYgZwcm90",
-            "bzM="));
+            "c3VsdCKTAQocVXBsb2FkQ2FsbENvbnZlcnNpb25zUmVxdWVzdBITCgtjdXN0",
+            "b21lcl9pZBgBIAEoCRJFCgtjb252ZXJzaW9ucxgCIAMoCzIwLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2VzLkNhbGxDb252ZXJzaW9uEhcKD3Bh",
+            "cnRpYWxfZmFpbHVyZRgDIAEoCCKbAQodVXBsb2FkQ2FsbENvbnZlcnNpb25z",
+            "UmVzcG9uc2USMQoVcGFydGlhbF9mYWlsdXJlX2Vycm9yGAEgASgLMhIuZ29v",
+            "Z2xlLnJwYy5TdGF0dXMSRwoHcmVzdWx0cxgCIAMoCzI2Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYxLnNlcnZpY2VzLkNhbGxDb252ZXJzaW9uUmVzdWx0Iq4D",
+            "Cg9DbGlja0NvbnZlcnNpb24SKwoFZ2NsaWQYASABKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUSNwoRY29udmVyc2lvbl9hY3Rpb24YAiABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSOgoUY29udmVyc2lvbl9k",
+            "YXRlX3RpbWUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
+            "NgoQY29udmVyc2lvbl92YWx1ZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5E",
+            "b3VibGVWYWx1ZRIzCg1jdXJyZW5jeV9jb2RlGAUgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEi4KCG9yZGVyX2lkGAYgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlElwKGWV4dGVybmFsX2F0dHJpYnV0aW9u",
+            "X2RhdGEYByABKAsyOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5zZXJ2aWNl",
+            "cy5FeHRlcm5hbEF0dHJpYnV0aW9uRGF0YSLfAgoOQ2FsbENvbnZlcnNpb24S",
+            "LwoJY2FsbGVyX2lkGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
+            "bHVlEjoKFGNhbGxfc3RhcnRfZGF0ZV90aW1lGAIgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEjcKEWNvbnZlcnNpb25fYWN0aW9uGAMgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjoKFGNvbnZlcnNpb25f",
+            "ZGF0ZV90aW1lGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjYKEGNvbnZlcnNpb25fdmFsdWUYBSABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "RG91YmxlVmFsdWUSMwoNY3VycmVuY3lfY29kZRgGIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZSKeAQoXRXh0ZXJuYWxBdHRyaWJ1dGlvbkRh",
+            "dGESQQobZXh0ZXJuYWxfYXR0cmlidXRpb25fY3JlZGl0GAEgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEkAKGmV4dGVybmFsX2F0dHJpYnV0",
+            "aW9uX21vZGVsGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "IrkBChVDbGlja0NvbnZlcnNpb25SZXN1bHQSKwoFZ2NsaWQYASABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNwoRY29udmVyc2lvbl9hY3Rp",
+            "b24YAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSOgoUY29u",
+            "dmVyc2lvbl9kYXRlX3RpbWUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWUi+AEKFENhbGxDb252ZXJzaW9uUmVzdWx0Ei8KCWNhbGxlcl9p",
+            "ZBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI6ChRjYWxs",
+            "X3N0YXJ0X2RhdGVfdGltZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRI3ChFjb252ZXJzaW9uX2FjdGlvbhgDIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRI6ChRjb252ZXJzaW9uX2RhdGVfdGltZRgE",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZTLTAwoXQ29udmVy",
+            "c2lvblVwbG9hZFNlcnZpY2US3AEKFlVwbG9hZENsaWNrQ29udmVyc2lvbnMS",
+            "Py5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5zZXJ2aWNlcy5VcGxvYWRDbGlj",
+            "a0NvbnZlcnNpb25zUmVxdWVzdBpALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "LnNlcnZpY2VzLlVwbG9hZENsaWNrQ29udmVyc2lvbnNSZXNwb25zZSI/gtPk",
+            "kwI5IjQvdjEvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfTp1cGxvYWRDbGlj",
+            "a0NvbnZlcnNpb25zOgEqEtgBChVVcGxvYWRDYWxsQ29udmVyc2lvbnMSPi5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5zZXJ2aWNlcy5VcGxvYWRDYWxsQ29u",
+            "dmVyc2lvbnNSZXF1ZXN0Gj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuc2Vy",
+            "dmljZXMuVXBsb2FkQ2FsbENvbnZlcnNpb25zUmVzcG9uc2UiPoLT5JMCOCIz",
+            "L3YxL2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn06dXBsb2FkQ2FsbENvbnZl",
+            "cnNpb25zOgEqQoMCCiRjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuc2Vy",
+            "dmljZXNCHENvbnZlcnNpb25VcGxvYWRTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YxL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29n",
+            "bGVBZHMuVjEuU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWMVxT",
+            "ZXJ2aWNlc+oCJEdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpTZXJ2aWNl",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsRequest), global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsRequest.Parser, new[]{ "CustomerId", "Conversions", "PartialFailure" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsResponse), global::Google.Ads.GoogleAds.V1.Services.UploadClickConversionsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest), global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsRequest.Parser, new[]{ "CustomerId", "Conversions", "PartialFailure" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse), global::Google.Ads.GoogleAds.V1.Services.UploadCallConversionsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ClickConversion), global::Google.Ads.GoogleAds.V1.Services.ClickConversion.Parser, new[]{ "Gclid", "ConversionAction", "ConversionDateTime", "ConversionValue", "CurrencyCode", "OrderId", "ExternalAttributionData" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.CallConversion), global::Google.Ads.GoogleAds.V1.Services.CallConversion.Parser, new[]{ "CallerId", "CallStartDateTime", "ConversionAction", "ConversionDateTime", "ConversionValue", "CurrencyCode" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ExternalAttributionData), global::Google.Ads.GoogleAds.V1.Services.ExternalAttributionData.Parser, new[]{ "ExternalAttributionCredit", "ExternalAttributionModel" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ClickConversionResult), global::Google.Ads.GoogleAds.V1.Services.ClickConversionResult.Parser, new[]{ "Gclid", "ConversionAction", "ConversionDateTime" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ClickConversionResult), global::Google.Ads.GoogleAds.V1.Services.ClickConversionResult.Parser, new[]{ "Gclid", "ConversionAction", "ConversionDateTime" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.CallConversionResult), global::Google.Ads.GoogleAds.V1.Services.CallConversionResult.Parser, new[]{ "CallerId", "CallStartDateTime", "ConversionAction", "ConversionDateTime" }, null, null, null)
           }));
     }
     #endregion
@@ -439,6 +468,365 @@ namespace Google.Ads.GoogleAds.V1.Services {
   }
 
   /// <summary>
+  /// Request message for [ConversionUploadService.UploadCallConversions][google.ads.googleads.v1.services.ConversionUploadService.UploadCallConversions].
+  /// </summary>
+  public sealed partial class UploadCallConversionsRequest : pb::IMessage<UploadCallConversionsRequest> {
+    private static readonly pb::MessageParser<UploadCallConversionsRequest> _parser = new pb::MessageParser<UploadCallConversionsRequest>(() => new UploadCallConversionsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UploadCallConversionsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadCallConversionsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadCallConversionsRequest(UploadCallConversionsRequest other) : this() {
+      customerId_ = other.customerId_;
+      conversions_ = other.conversions_.Clone();
+      partialFailure_ = other.partialFailure_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadCallConversionsRequest Clone() {
+      return new UploadCallConversionsRequest(this);
+    }
+
+    /// <summary>Field number for the "customer_id" field.</summary>
+    public const int CustomerIdFieldNumber = 1;
+    private string customerId_ = "";
+    /// <summary>
+    /// The ID of the customer performing the upload.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CustomerId {
+      get { return customerId_; }
+      set {
+        customerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "conversions" field.</summary>
+    public const int ConversionsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Services.CallConversion> _repeated_conversions_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V1.Services.CallConversion.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.CallConversion> conversions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.CallConversion>();
+    /// <summary>
+    /// The conversions that are being uploaded.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.CallConversion> Conversions {
+      get { return conversions_; }
+    }
+
+    /// <summary>Field number for the "partial_failure" field.</summary>
+    public const int PartialFailureFieldNumber = 3;
+    private bool partialFailure_;
+    /// <summary>
+    /// If true, successful operations will be carried out and invalid
+    /// operations will return errors. If false, all operations will be carried
+    /// out in one transaction if and only if they are all valid.
+    /// This should always be set to true.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool PartialFailure {
+      get { return partialFailure_; }
+      set {
+        partialFailure_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UploadCallConversionsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UploadCallConversionsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CustomerId != other.CustomerId) return false;
+      if(!conversions_.Equals(other.conversions_)) return false;
+      if (PartialFailure != other.PartialFailure) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
+      hash ^= conversions_.GetHashCode();
+      if (PartialFailure != false) hash ^= PartialFailure.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      conversions_.WriteTo(output, _repeated_conversions_codec);
+      if (PartialFailure != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(PartialFailure);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (CustomerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerId);
+      }
+      size += conversions_.CalculateSize(_repeated_conversions_codec);
+      if (PartialFailure != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UploadCallConversionsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CustomerId.Length != 0) {
+        CustomerId = other.CustomerId;
+      }
+      conversions_.Add(other.conversions_);
+      if (other.PartialFailure != false) {
+        PartialFailure = other.PartialFailure;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+          case 18: {
+            conversions_.AddEntriesFrom(input, _repeated_conversions_codec);
+            break;
+          }
+          case 24: {
+            PartialFailure = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for [ConversionUploadService.UploadCallConversions][google.ads.googleads.v1.services.ConversionUploadService.UploadCallConversions].
+  /// </summary>
+  public sealed partial class UploadCallConversionsResponse : pb::IMessage<UploadCallConversionsResponse> {
+    private static readonly pb::MessageParser<UploadCallConversionsResponse> _parser = new pb::MessageParser<UploadCallConversionsResponse>(() => new UploadCallConversionsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UploadCallConversionsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadCallConversionsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadCallConversionsResponse(UploadCallConversionsResponse other) : this() {
+      partialFailureError_ = other.partialFailureError_ != null ? other.partialFailureError_.Clone() : null;
+      results_ = other.results_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UploadCallConversionsResponse Clone() {
+      return new UploadCallConversionsResponse(this);
+    }
+
+    /// <summary>Field number for the "partial_failure_error" field.</summary>
+    public const int PartialFailureErrorFieldNumber = 1;
+    private global::Google.Rpc.Status partialFailureError_;
+    /// <summary>
+    /// Errors that pertain to conversion failures in the partial failure mode.
+    /// Returned when all errors occur inside the conversions. If any errors occur
+    /// outside the conversions (e.g. auth errors), we return an RPC level error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Rpc.Status PartialFailureError {
+      get { return partialFailureError_; }
+      set {
+        partialFailureError_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "results" field.</summary>
+    public const int ResultsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Services.CallConversionResult> _repeated_results_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V1.Services.CallConversionResult.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.CallConversionResult> results_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.CallConversionResult>();
+    /// <summary>
+    /// Returned for successfully processed conversions. Proto will be empty for
+    /// rows that received an error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.CallConversionResult> Results {
+      get { return results_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UploadCallConversionsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UploadCallConversionsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(PartialFailureError, other.PartialFailureError)) return false;
+      if(!results_.Equals(other.results_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (partialFailureError_ != null) hash ^= PartialFailureError.GetHashCode();
+      hash ^= results_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (partialFailureError_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(PartialFailureError);
+      }
+      results_.WriteTo(output, _repeated_results_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (partialFailureError_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartialFailureError);
+      }
+      size += results_.CalculateSize(_repeated_results_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UploadCallConversionsResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.partialFailureError_ != null) {
+        if (partialFailureError_ == null) {
+          partialFailureError_ = new global::Google.Rpc.Status();
+        }
+        PartialFailureError.MergeFrom(other.PartialFailureError);
+      }
+      results_.Add(other.results_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (partialFailureError_ == null) {
+              partialFailureError_ = new global::Google.Rpc.Status();
+            }
+            input.ReadMessage(partialFailureError_);
+            break;
+          }
+          case 18: {
+            results_.AddEntriesFrom(input, _repeated_results_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// A click conversion.
   /// </summary>
   public sealed partial class ClickConversion : pb::IMessage<ClickConversion> {
@@ -449,7 +837,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -805,6 +1193,335 @@ namespace Google.Ads.GoogleAds.V1.Services {
   }
 
   /// <summary>
+  /// A call conversion.
+  /// </summary>
+  public sealed partial class CallConversion : pb::IMessage<CallConversion> {
+    private static readonly pb::MessageParser<CallConversion> _parser = new pb::MessageParser<CallConversion>(() => new CallConversion());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CallConversion> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CallConversion() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CallConversion(CallConversion other) : this() {
+      CallerId = other.CallerId;
+      CallStartDateTime = other.CallStartDateTime;
+      ConversionAction = other.ConversionAction;
+      ConversionDateTime = other.ConversionDateTime;
+      ConversionValue = other.ConversionValue;
+      CurrencyCode = other.CurrencyCode;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CallConversion Clone() {
+      return new CallConversion(this);
+    }
+
+    /// <summary>Field number for the "caller_id" field.</summary>
+    public const int CallerIdFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_callerId_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string callerId_;
+    /// <summary>
+    /// The caller id from which this call was placed. Caller id is expected to be
+    /// in E.164 format with preceding '+' sign. e.g. "+16502531234".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CallerId {
+      get { return callerId_; }
+      set {
+        callerId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "call_start_date_time" field.</summary>
+    public const int CallStartDateTimeFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_callStartDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string callStartDateTime_;
+    /// <summary>
+    /// The date time at which the call occurred. The timezone must be specified.
+    /// The format is "yyyy-mm-dd hh:mm:ss+|-hh:mm",
+    /// e.g. "2019-01-01 12:32:45-08:00".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CallStartDateTime {
+      get { return callStartDateTime_; }
+      set {
+        callStartDateTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "conversion_action" field.</summary>
+    public const int ConversionActionFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_conversionAction_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string conversionAction_;
+    /// <summary>
+    /// Resource name of the conversion action associated with this conversion.
+    /// Note: Although this resource name consists of a customer id and a
+    /// conversion action id, validation will ignore the customer id and use the
+    /// conversion action id as the sole identifier of the conversion action.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ConversionAction {
+      get { return conversionAction_; }
+      set {
+        conversionAction_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "conversion_date_time" field.</summary>
+    public const int ConversionDateTimeFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_conversionDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string conversionDateTime_;
+    /// <summary>
+    /// The date time at which the conversion occurred. Must be after the call
+    /// time. The timezone must be specified. The format is
+    /// "yyyy-mm-dd hh:mm:ss+|-hh:mm", e.g. "2019-01-01 12:32:45-08:00".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ConversionDateTime {
+      get { return conversionDateTime_; }
+      set {
+        conversionDateTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "conversion_value" field.</summary>
+    public const int ConversionValueFieldNumber = 5;
+    private static readonly pb::FieldCodec<double?> _single_conversionValue_codec = pb::FieldCodec.ForStructWrapper<double>(42);
+    private double? conversionValue_;
+    /// <summary>
+    /// The value of the conversion for the advertiser.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? ConversionValue {
+      get { return conversionValue_; }
+      set {
+        conversionValue_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "currency_code" field.</summary>
+    public const int CurrencyCodeFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_currencyCode_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string currencyCode_;
+    /// <summary>
+    /// Currency associated with the conversion value. This is the ISO 4217
+    /// 3-character currency code. For example: USD, EUR.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CurrencyCode {
+      get { return currencyCode_; }
+      set {
+        currencyCode_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CallConversion);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CallConversion other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CallerId != other.CallerId) return false;
+      if (CallStartDateTime != other.CallStartDateTime) return false;
+      if (ConversionAction != other.ConversionAction) return false;
+      if (ConversionDateTime != other.ConversionDateTime) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ConversionValue, other.ConversionValue)) return false;
+      if (CurrencyCode != other.CurrencyCode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (callerId_ != null) hash ^= CallerId.GetHashCode();
+      if (callStartDateTime_ != null) hash ^= CallStartDateTime.GetHashCode();
+      if (conversionAction_ != null) hash ^= ConversionAction.GetHashCode();
+      if (conversionDateTime_ != null) hash ^= ConversionDateTime.GetHashCode();
+      if (conversionValue_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ConversionValue);
+      if (currencyCode_ != null) hash ^= CurrencyCode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (callerId_ != null) {
+        _single_callerId_codec.WriteTagAndValue(output, CallerId);
+      }
+      if (callStartDateTime_ != null) {
+        _single_callStartDateTime_codec.WriteTagAndValue(output, CallStartDateTime);
+      }
+      if (conversionAction_ != null) {
+        _single_conversionAction_codec.WriteTagAndValue(output, ConversionAction);
+      }
+      if (conversionDateTime_ != null) {
+        _single_conversionDateTime_codec.WriteTagAndValue(output, ConversionDateTime);
+      }
+      if (conversionValue_ != null) {
+        _single_conversionValue_codec.WriteTagAndValue(output, ConversionValue);
+      }
+      if (currencyCode_ != null) {
+        _single_currencyCode_codec.WriteTagAndValue(output, CurrencyCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (callerId_ != null) {
+        size += _single_callerId_codec.CalculateSizeWithTag(CallerId);
+      }
+      if (callStartDateTime_ != null) {
+        size += _single_callStartDateTime_codec.CalculateSizeWithTag(CallStartDateTime);
+      }
+      if (conversionAction_ != null) {
+        size += _single_conversionAction_codec.CalculateSizeWithTag(ConversionAction);
+      }
+      if (conversionDateTime_ != null) {
+        size += _single_conversionDateTime_codec.CalculateSizeWithTag(ConversionDateTime);
+      }
+      if (conversionValue_ != null) {
+        size += _single_conversionValue_codec.CalculateSizeWithTag(ConversionValue);
+      }
+      if (currencyCode_ != null) {
+        size += _single_currencyCode_codec.CalculateSizeWithTag(CurrencyCode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CallConversion other) {
+      if (other == null) {
+        return;
+      }
+      if (other.callerId_ != null) {
+        if (callerId_ == null || other.CallerId != "") {
+          CallerId = other.CallerId;
+        }
+      }
+      if (other.callStartDateTime_ != null) {
+        if (callStartDateTime_ == null || other.CallStartDateTime != "") {
+          CallStartDateTime = other.CallStartDateTime;
+        }
+      }
+      if (other.conversionAction_ != null) {
+        if (conversionAction_ == null || other.ConversionAction != "") {
+          ConversionAction = other.ConversionAction;
+        }
+      }
+      if (other.conversionDateTime_ != null) {
+        if (conversionDateTime_ == null || other.ConversionDateTime != "") {
+          ConversionDateTime = other.ConversionDateTime;
+        }
+      }
+      if (other.conversionValue_ != null) {
+        if (conversionValue_ == null || other.ConversionValue != 0D) {
+          ConversionValue = other.ConversionValue;
+        }
+      }
+      if (other.currencyCode_ != null) {
+        if (currencyCode_ == null || other.CurrencyCode != "") {
+          CurrencyCode = other.CurrencyCode;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_callerId_codec.Read(input);
+            if (callerId_ == null || value != "") {
+              CallerId = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_callStartDateTime_codec.Read(input);
+            if (callStartDateTime_ == null || value != "") {
+              CallStartDateTime = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_conversionAction_codec.Read(input);
+            if (conversionAction_ == null || value != "") {
+              ConversionAction = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_conversionDateTime_codec.Read(input);
+            if (conversionDateTime_ == null || value != "") {
+              ConversionDateTime = value;
+            }
+            break;
+          }
+          case 42: {
+            double? value = _single_conversionValue_codec.Read(input);
+            if (conversionValue_ == null || value != 0D) {
+              ConversionValue = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_currencyCode_codec.Read(input);
+            if (currencyCode_ == null || value != "") {
+              CurrencyCode = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// Contains additional information about externally attributed conversions.
   /// </summary>
   public sealed partial class ExternalAttributionData : pb::IMessage<ExternalAttributionData> {
@@ -815,7 +1532,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -992,7 +1709,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1182,6 +1899,257 @@ namespace Google.Ads.GoogleAds.V1.Services {
             break;
           }
           case 26: {
+            string value = _single_conversionDateTime_codec.Read(input);
+            if (conversionDateTime_ == null || value != "") {
+              ConversionDateTime = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Identifying information for a successfully processed CallConversionUpload.
+  /// </summary>
+  public sealed partial class CallConversionResult : pb::IMessage<CallConversionResult> {
+    private static readonly pb::MessageParser<CallConversionResult> _parser = new pb::MessageParser<CallConversionResult>(() => new CallConversionResult());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CallConversionResult> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CallConversionResult() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CallConversionResult(CallConversionResult other) : this() {
+      CallerId = other.CallerId;
+      CallStartDateTime = other.CallStartDateTime;
+      ConversionAction = other.ConversionAction;
+      ConversionDateTime = other.ConversionDateTime;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CallConversionResult Clone() {
+      return new CallConversionResult(this);
+    }
+
+    /// <summary>Field number for the "caller_id" field.</summary>
+    public const int CallerIdFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_callerId_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string callerId_;
+    /// <summary>
+    /// The caller id from which this call was placed. Caller id is expected to be
+    /// in E.164 format with preceding '+' sign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CallerId {
+      get { return callerId_; }
+      set {
+        callerId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "call_start_date_time" field.</summary>
+    public const int CallStartDateTimeFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_callStartDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string callStartDateTime_;
+    /// <summary>
+    /// The date time at which the call occurred. The format is
+    /// "yyyy-mm-dd hh:mm:ss+|-hh:mm", e.g. "2019-01-01 12:32:45-08:00".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CallStartDateTime {
+      get { return callStartDateTime_; }
+      set {
+        callStartDateTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "conversion_action" field.</summary>
+    public const int ConversionActionFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_conversionAction_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string conversionAction_;
+    /// <summary>
+    /// Resource name of the conversion action associated with this conversion.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ConversionAction {
+      get { return conversionAction_; }
+      set {
+        conversionAction_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "conversion_date_time" field.</summary>
+    public const int ConversionDateTimeFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_conversionDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string conversionDateTime_;
+    /// <summary>
+    /// The date time at which the conversion occurred. The format is
+    /// "yyyy-mm-dd hh:mm:ss+|-hh:mm", e.g. "2019-01-01 12:32:45-08:00".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ConversionDateTime {
+      get { return conversionDateTime_; }
+      set {
+        conversionDateTime_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CallConversionResult);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CallConversionResult other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CallerId != other.CallerId) return false;
+      if (CallStartDateTime != other.CallStartDateTime) return false;
+      if (ConversionAction != other.ConversionAction) return false;
+      if (ConversionDateTime != other.ConversionDateTime) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (callerId_ != null) hash ^= CallerId.GetHashCode();
+      if (callStartDateTime_ != null) hash ^= CallStartDateTime.GetHashCode();
+      if (conversionAction_ != null) hash ^= ConversionAction.GetHashCode();
+      if (conversionDateTime_ != null) hash ^= ConversionDateTime.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (callerId_ != null) {
+        _single_callerId_codec.WriteTagAndValue(output, CallerId);
+      }
+      if (callStartDateTime_ != null) {
+        _single_callStartDateTime_codec.WriteTagAndValue(output, CallStartDateTime);
+      }
+      if (conversionAction_ != null) {
+        _single_conversionAction_codec.WriteTagAndValue(output, ConversionAction);
+      }
+      if (conversionDateTime_ != null) {
+        _single_conversionDateTime_codec.WriteTagAndValue(output, ConversionDateTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (callerId_ != null) {
+        size += _single_callerId_codec.CalculateSizeWithTag(CallerId);
+      }
+      if (callStartDateTime_ != null) {
+        size += _single_callStartDateTime_codec.CalculateSizeWithTag(CallStartDateTime);
+      }
+      if (conversionAction_ != null) {
+        size += _single_conversionAction_codec.CalculateSizeWithTag(ConversionAction);
+      }
+      if (conversionDateTime_ != null) {
+        size += _single_conversionDateTime_codec.CalculateSizeWithTag(ConversionDateTime);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CallConversionResult other) {
+      if (other == null) {
+        return;
+      }
+      if (other.callerId_ != null) {
+        if (callerId_ == null || other.CallerId != "") {
+          CallerId = other.CallerId;
+        }
+      }
+      if (other.callStartDateTime_ != null) {
+        if (callStartDateTime_ == null || other.CallStartDateTime != "") {
+          CallStartDateTime = other.CallStartDateTime;
+        }
+      }
+      if (other.conversionAction_ != null) {
+        if (conversionAction_ == null || other.ConversionAction != "") {
+          ConversionAction = other.ConversionAction;
+        }
+      }
+      if (other.conversionDateTime_ != null) {
+        if (conversionDateTime_ == null || other.ConversionDateTime != "") {
+          ConversionDateTime = other.ConversionDateTime;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_callerId_codec.Read(input);
+            if (callerId_ == null || value != "") {
+              CallerId = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_callStartDateTime_codec.Read(input);
+            if (callStartDateTime_ == null || value != "") {
+              CallStartDateTime = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_conversionAction_codec.Read(input);
+            if (conversionAction_ == null || value != "") {
+              ConversionAction = value;
+            }
+            break;
+          }
+          case 34: {
             string value = _single_conversionDateTime_codec.Read(input);
             if (conversionDateTime_ == null || value != "") {
               ConversionDateTime = value;

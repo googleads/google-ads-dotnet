@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvcmVjb21tZW5kYXRp",
             "b25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9y",
-            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byK/AwoXUmVjb21tZW5k",
-            "YXRpb25FcnJvckVudW0iowMKE1JlY29tbWVuZGF0aW9uRXJyb3ISDwoLVU5T",
+            "cxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLaAwoXUmVjb21tZW5k",
+            "YXRpb25FcnJvckVudW0ivgMKE1JlY29tbWVuZGF0aW9uRXJyb3ISDwoLVU5T",
             "UEVDSUZJRUQQABILCgdVTktOT1dOEAESGwoXQlVER0VUX0FNT1VOVF9UT09f",
             "U01BTEwQAhIbChdCVURHRVRfQU1PVU5UX1RPT19MQVJHRRADEhkKFUlOVkFM",
             "SURfQlVER0VUX0FNT1VOVBAEEhAKDFBPTElDWV9FUlJPUhAFEhYKEklOVkFM",
@@ -36,13 +36,13 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "REFUSU9OX0lOVkFMSURBVEVEEAkSFwoTVE9PX01BTllfT1BFUkFUSU9OUxAK",
             "EhEKDU5PX09QRVJBVElPTlMQCxIhCh1ESUZGRVJFTlRfVFlQRVNfTk9UX1NV",
             "UFBPUlRFRBAMEhsKF0RVUExJQ0FURV9SRVNPVVJDRV9OQU1FEA0SJAogUkVD",
-            "T01NRU5EQVRJT05fQUxSRUFEWV9ESVNNSVNTRUQQDkLzAQoiY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9yc0IYUmVjb21tZW5kYXRpb25FcnJv",
-            "clByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjEuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29n",
-            "bGVBZHNcVjFcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6",
-            "OkVycm9yc2IGcHJvdG8z"));
+            "T01NRU5EQVRJT05fQUxSRUFEWV9ESVNNSVNTRUQQDhIZChVJTlZBTElEX0FQ",
+            "UExZX1JFUVVFU1QQD0LzAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "LmVycm9yc0IYUmVjb21tZW5kYXRpb25FcnJvclByb3RvUAFaRGdvb2dsZS5n",
+            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
+            "MS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
+            "VjEuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRXJyb3Jz6gIi",
+            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -227,6 +227,10 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// The recommendation requested to dismiss has already been dismissed.
         /// </summary>
         [pbr::OriginalName("RECOMMENDATION_ALREADY_DISMISSED")] RecommendationAlreadyDismissed = 14,
+        /// <summary>
+        /// The recommendation apply request was malformed and invalid.
+        /// </summary>
+        [pbr::OriginalName("INVALID_APPLY_REQUEST")] InvalidApplyRequest = 15,
       }
 
     }

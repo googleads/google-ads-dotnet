@@ -266,8 +266,7 @@ namespace Google.Ads.GoogleAds.V0.Resources {
     /// second campaign will result in an error.
     ///
     /// A non-shared budget can become an explicitly shared. The same operation
-    /// must
-    /// also assign the budget a name.
+    /// must also assign the budget a name.
     ///
     /// A shared campaign budget can never become non-shared.
     /// </summary>

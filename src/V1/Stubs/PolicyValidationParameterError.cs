@@ -27,16 +27,19 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "CkZnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvcG9saWN5X3ZhbGlk",
             "YXRpb25fcGFyYW1ldGVyX2Vycm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2ds",
             "ZWFkcy52MS5lcnJvcnMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i",
-            "mQEKIlBvbGljeVZhbGlkYXRpb25QYXJhbWV0ZXJFcnJvckVudW0icwoeUG9s",
-            "aWN5VmFsaWRhdGlvblBhcmFtZXRlckVycm9yEg8KC1VOU1BFQ0lGSUVEEAAS",
-            "CwoHVU5LTk9XThABEjMKL1VOU1VQUE9SVEVEX0FEX1RZUEVfRk9SX0lHTk9S",
-            "QUJMRV9QT0xJQ1lfVE9QSUNTEAJC/gEKImNvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MS5lcnJvcnNCI1BvbGljeVZhbGlkYXRpb25QYXJhbWV0ZXJFcnJv",
-            "clByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjEuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29n",
-            "bGVBZHNcVjFcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6",
-            "OkVycm9yc2IGcHJvdG8z"));
+            "ogIKIlBvbGljeVZhbGlkYXRpb25QYXJhbWV0ZXJFcnJvckVudW0i+wEKHlBv",
+            "bGljeVZhbGlkYXRpb25QYXJhbWV0ZXJFcnJvchIPCgtVTlNQRUNJRklFRBAA",
+            "EgsKB1VOS05PV04QARIzCi9VTlNVUFBPUlRFRF9BRF9UWVBFX0ZPUl9JR05P",
+            "UkFCTEVfUE9MSUNZX1RPUElDUxACEjgKNFVOU1VQUE9SVEVEX0FEX1RZUEVf",
+            "Rk9SX0VYRU1QVF9QT0xJQ1lfVklPTEFUSU9OX0tFWVMQAxJMCkhDQU5OT1Rf",
+            "U0VUX0JPVEhfSUdOT1JBQkxFX1BPTElDWV9UT1BJQ1NfQU5EX0VYRU1QVF9Q",
+            "T0xJQ1lfVklPTEFUSU9OX0tFWVMQBEL+AQoiY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYxLmVycm9yc0IjUG9saWN5VmFsaWRhdGlvblBhcmFtZXRlckVy",
+            "cm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5H",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMVxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MTo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -169,6 +172,15 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// Ignorable policy topics are not supported for the ad type.
         /// </summary>
         [pbr::OriginalName("UNSUPPORTED_AD_TYPE_FOR_IGNORABLE_POLICY_TOPICS")] UnsupportedAdTypeForIgnorablePolicyTopics = 2,
+        /// <summary>
+        /// Exempt policy violation keys are not supported for the ad type.
+        /// </summary>
+        [pbr::OriginalName("UNSUPPORTED_AD_TYPE_FOR_EXEMPT_POLICY_VIOLATION_KEYS")] UnsupportedAdTypeForExemptPolicyViolationKeys = 3,
+        /// <summary>
+        /// Cannot set ignorable policy topics and exempt policy violation keys in
+        /// the same policy violation parameter.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_SET_BOTH_IGNORABLE_POLICY_TOPICS_AND_EXEMPT_POLICY_VIOLATION_KEYS")] CannotSetBothIgnorablePolicyTopicsAndExemptPolicyViolationKeys = 4,
       }
 
     }
