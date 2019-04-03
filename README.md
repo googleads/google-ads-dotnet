@@ -97,6 +97,7 @@ https://github.com/grpc/grpc/blob/master/doc/environment_variables.md
 ```
 Environment.SetEnvironmentVariable("GRPC_VERBOSITY", "DEBUG");
 Environment.SetEnvironmentVariable("GRPC_TRACE", "http");
+GrpcEnvironment.SetLogger(new ConsoleLogger());
 ```
 
 ## Miscellaneous
