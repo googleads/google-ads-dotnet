@@ -1,6 +1,11 @@
+1.1.0
+=====
+- Added support for Google Ads API v1.1 See release notes:
+ https://developers.google.com/google-ads/api/docs/release-notes#110_2019-03-27
+
 1.0.0
 =====
-- Added support for Google Ads API v0.6.0. See release notes:
+- Added support for Google Ads API v1.0 See release notes:
  https://developers.google.com/google-ads/api/docs/release-notes#100_2019-02-27
 
 0.8.1
@@ -10,7 +15,7 @@
 0.8.0
 =====
 
-Added support for Google Ads API v0.7.0. See release notes:
+Added support for Google Ads API v0.7. See release notes:
 https://developers.google.com/google-ads/api/docs/release-notes#070_2019-01-30
 - Added new code examples.
     -- HotelAds/GetHotelAdsPerformance.cs
@@ -46,13 +51,13 @@ https://developers.google.com/google-ads/api/docs/release-notes#070_2019-01-30
 0.7.0
 =====
 
-- Added support for Google Ads API v0.6.0. See release notes:
+- Added support for Google Ads API v0.6. See release notes:
  https://developers.google.com/google-ads/api/docs/release-notes#060_2018-11-29
 
 0.6.0
 =====
 
-- Added support for Google Ads API v0.5.0. See release notes:
+- Added support for Google Ads API v0.5. See release notes:
  https://developers.google.com/google-ads/api/docs/release-notes#050_2018-10-31
 
 0.5.1
@@ -63,7 +68,7 @@ https://developers.google.com/google-ads/api/docs/release-notes#070_2019-01-30
 0.5.0
 =====
 
-- Added support for Google Ads API v0.4.0. See release notes:
+- Added support for Google Ads API v0.4. See release notes:
  https://developers.google.com/google-ads/api/docs/release-notes#040_2018-09-21.
 - New code examples were added to illustrate shopping campaigns, billing and retrieving account
  changes.
@@ -72,7 +77,7 @@ https://developers.google.com/google-ads/api/docs/release-notes#070_2019-01-30
 0.4.0
 =====
 
-- Added support for Google Ads API v0.3.0. See release notes:
+- Added support for Google Ads API v0.3. See release notes:
  https://developers.google.com/google-ads/api/docs/release-notes#030_2018-08-29.
 - New code examples were added to illustrate shared keyword sets, campaign groups and campaign
  bid modifiers.
