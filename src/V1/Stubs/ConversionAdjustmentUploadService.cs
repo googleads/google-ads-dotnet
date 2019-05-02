@@ -347,7 +347,8 @@ namespace Google.Ads.GoogleAds.V1.Services {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.ConversionAdjustmentResult> results_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.ConversionAdjustmentResult>();
     /// <summary>
     /// Returned for successfully processed conversion adjustments. Proto will be
-    /// empty for rows that received an error.
+    /// empty for rows that received an error. Results are not returned when
+    /// validate_only is true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.ConversionAdjustmentResult> Results {

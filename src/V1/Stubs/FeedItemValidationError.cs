@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvZmVlZF9pdGVtX3Zh",
             "bGlkYXRpb25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
-            "LmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKWGAobRmVl",
-            "ZEl0ZW1WYWxpZGF0aW9uRXJyb3JFbnVtIvYXChdGZWVkSXRlbVZhbGlkYXRp",
+            "LmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byK0GQobRmVl",
+            "ZEl0ZW1WYWxpZGF0aW9uRXJyb3JFbnVtIpQZChdGZWVkSXRlbVZhbGlkYXRp",
             "b25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIUChBTVFJJ",
             "TkdfVE9PX1NIT1JUEAISEwoPU1RSSU5HX1RPT19MT05HEAMSFwoTVkFMVUVf",
             "Tk9UX1NQRUNJRklFRBAEEigKJElOVkFMSURfRE9NRVNUSUNfUEhPTkVfTlVN",
@@ -95,13 +95,16 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "X09QVElPTl9JU19TRVQQVhImCiJJTlZBTElEX0NPTlZFUlNJT05fUkVQT1JU",
             "SU5HX1NUQVRFEFcSFAoQSU1BR0VfU0laRV9XUk9ORxBYEisKJ0VNQUlMX0RF",
             "TElWRVJZX05PVF9BVkFJTEFCTEVfSU5fQ09VTlRSWRBZEicKI0FVVE9fUkVQ",
-            "TFlfTk9UX0FWQUlMQUJMRV9JTl9DT1VOVFJZEFpC9wEKImNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MS5lcnJvcnNCHEZlZWRJdGVtVmFsaWRhdGlvbkVy",
-            "cm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
-            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5H",
-            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMVxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
-            "MTo6RXJyb3JzYgZwcm90bzM="));
+            "TFlfTk9UX0FWQUlMQUJMRV9JTl9DT1VOVFJZEFoSGgoWSU5WQUxJRF9MQVRJ",
+            "VFVERV9WQUxVRRBbEhsKF0lOVkFMSURfTE9OR0lUVURFX1ZBTFVFEFwSEwoP",
+            "VE9PX01BTllfTEFCRUxTEF0SFQoRSU5WQUxJRF9JTUFHRV9VUkwQXhIaChZN",
+            "SVNTSU5HX0xBVElUVURFX1ZBTFVFEF8SGwoXTUlTU0lOR19MT05HSVRVREVf",
+            "VkFMVUUQYEL3AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9y",
+            "c0IcRmVlZEl0ZW1WYWxpZGF0aW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEv",
+            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
+            "LkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXEVycm9yc+oCIkdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -574,7 +577,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         [pbr::OriginalName("INVALID_FINAL_URL_SUFFIX_FORMAT")] InvalidFinalUrlSuffixFormat = 83,
         /// <summary>
         /// Consent for call recording, which is required for the use of call
-        /// extensions, was not provided by the advertiser.
+        /// extensions, was not provided by the advertiser. Please see
+        /// https://support.google.com/google-ads/answer/7412639.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_CONSENT_FOR_CALL_RECORDING_REQUIRED")] CustomerConsentForCallRecordingRequired = 84,
         /// <summary>
@@ -603,6 +607,30 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// field.
         /// </summary>
         [pbr::OriginalName("AUTO_REPLY_NOT_AVAILABLE_IN_COUNTRY")] AutoReplyNotAvailableInCountry = 90,
+        /// <summary>
+        /// Invalid value specified for latitude.
+        /// </summary>
+        [pbr::OriginalName("INVALID_LATITUDE_VALUE")] InvalidLatitudeValue = 91,
+        /// <summary>
+        /// Invalid value specified for longitude.
+        /// </summary>
+        [pbr::OriginalName("INVALID_LONGITUDE_VALUE")] InvalidLongitudeValue = 92,
+        /// <summary>
+        /// Too many label fields provided.
+        /// </summary>
+        [pbr::OriginalName("TOO_MANY_LABELS")] TooManyLabels = 93,
+        /// <summary>
+        /// Invalid image url.
+        /// </summary>
+        [pbr::OriginalName("INVALID_IMAGE_URL")] InvalidImageUrl = 94,
+        /// <summary>
+        /// Latitude value is missing.
+        /// </summary>
+        [pbr::OriginalName("MISSING_LATITUDE_VALUE")] MissingLatitudeValue = 95,
+        /// <summary>
+        /// Longitude value is missing.
+        /// </summary>
+        [pbr::OriginalName("MISSING_LONGITUDE_VALUE")] MissingLongitudeValue = 96,
       }
 
     }

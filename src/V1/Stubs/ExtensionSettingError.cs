@@ -486,7 +486,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         [pbr::OriginalName("UNSUPPORTED_LANGUAGE")] UnsupportedLanguage = 65,
         /// <summary>
         /// Customer hasn't consented for call recording, which is required for
-        /// adding/updating call extensions.
+        /// adding/updating call extensions. Please see
+        /// https://support.google.com/google-ads/answer/7412639.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_CONSENT_FOR_CALL_RECORDING_REQUIRED")] CustomerConsentForCallRecordingRequired = 66,
         /// <summary>

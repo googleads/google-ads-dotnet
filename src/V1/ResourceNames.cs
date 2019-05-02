@@ -17,6 +17,8 @@ using System.Text;
 using static Google.Ads.GoogleAds.V1.Enums.ExtensionTypeEnum.Types;
 using static Google.Ads.GoogleAds.V1.Enums.FeedItemTargetTypeEnum.Types;
 using static Google.Ads.GoogleAds.V1.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V1.Enums.SimulationModificationMethodEnum.Types;
+using static Google.Ads.GoogleAds.V1.Enums.SimulationTypeEnum.Types;
 
 #pragma warning disable 1591
 
@@ -465,6 +467,36 @@ namespace Google.Ads.GoogleAds.V1.Errors
         public static string Video(long customerId, long videoId)
         {
             return $"customers/{customerId}/videos/{videoId}";
+        }
+
+        public static string PaidOrganicSearchTermView(long customerId, long campaignId, long adGroupId, string searchterm)
+        {
+            return $"customers/{customerId}/paidOrganicSearchTermViews/{campaignId}~{adGroupId}_{Base64Encode(searchterm)}";
+        }
+
+        public static string LandingPageView(long customerId, long campaignId, long adGroupId, string unexpandedFinalUrlFingerprint)
+        {
+            return $"customers/{customerId}/landingPageViews/{unexpandedFinalUrlFingerprint}";
+        }
+
+        public static string ExpandedLandingPageView(long customerId, long campaignId, long adGroupId, string expandedFinalUrlFingerprint)
+        {
+            return $"customers/{customerId}/expandedLandingPageViews/{expandedFinalUrlFingerprint}";
+        }
+
+        public static string CampaignCriterionSimulation(long customerId, long campaignId, long criterionId, SimulationType type, SimulationModificationMethod modificationMethod, DateTime startDate, DateTime endDate)
+        {
+            return $"customers/{customerId}/campaignCriterionSimulations/{campaignId}~{criterionId}~{type}~{modificationMethod}~{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
+        }
+
+        public static string AdGroupSimulation(long customerId, long adGroupId, SimulationType type, SimulationModificationMethod modificationMethod, DateTime startDate, DateTime endDate)
+        {
+            return $"customers/{customerId}/adGroupSimulations/{adGroupId}~{type}~{modificationMethod}~{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
+        }
+
+        public static string AdGroupCriterionSimulation(long customerId, long adGroupId, long criterionId, SimulationType type, SimulationModificationMethod modificationMethod, DateTime startDate, DateTime endDate)
+        {
+            return $"customers/{customerId}/adGroupCriterionSimulations/{adGroupId}~{criterionId}~{type}~{modificationMethod}~{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
         }
     }
 }

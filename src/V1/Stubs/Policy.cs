@@ -29,6 +29,8 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "Z29vZ2xlYWRzL3YxL2VudW1zL3BvbGljeV90b3BpY19lbnRyeV90eXBlLnBy",
             "b3RvGldnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9wb2xpY3lfdG9w",
             "aWNfZXZpZGVuY2VfZGVzdGluYXRpb25fbWlzbWF0Y2hfdXJsX3R5cGUucHJv",
+            "dG8aWGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zL3BvbGljeV90b3Bp",
+            "Y19ldmlkZW5jZV9kZXN0aW5hdGlvbl9ub3Rfd29ya2luZ19kZXZpY2UucHJv",
             "dG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2Fw",
             "aS9hbm5vdGF0aW9ucy5wcm90byJ9ChJQb2xpY3lWaW9sYXRpb25LZXkSMQoL",
             "cG9saWN5X25hbWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
@@ -44,7 +46,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "ZW5jZXMYAyADKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24u",
             "UG9saWN5VG9waWNFdmlkZW5jZRJKCgtjb25zdHJhaW50cxgEIAMoCzI1Lmdv",
             "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Qb2xpY3lUb3BpY0NvbnN0",
-            "cmFpbnQi+gYKE1BvbGljeVRvcGljRXZpZGVuY2USMAoJaHR0cF9jb2RlGAIg",
+            "cmFpbnQiiAoKE1BvbGljeVRvcGljRXZpZGVuY2USMAoJaHR0cF9jb2RlGAIg",
             "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWVIABJXCgx3ZWJzaXRl",
             "X2xpc3QYAyABKAsyPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24u",
             "UG9saWN5VG9waWNFdmlkZW5jZS5XZWJzaXRlTGlzdEgAElEKCXRleHRfbGlz",
@@ -55,48 +57,58 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "LnYxLmNvbW1vbi5Qb2xpY3lUb3BpY0V2aWRlbmNlLkRlc3RpbmF0aW9uVGV4",
             "dExpc3RIABJnChRkZXN0aW5hdGlvbl9taXNtYXRjaBgHIAEoCzJHLmdvb2ds",
             "ZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Qb2xpY3lUb3BpY0V2aWRlbmNl",
-            "LkRlc3RpbmF0aW9uTWlzbWF0Y2hIABo3CghUZXh0TGlzdBIrCgV0ZXh0cxgB",
-            "IAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRo9CgtXZWJzaXRl",
-            "TGlzdBIuCgh3ZWJzaXRlcxgBIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZRpOChNEZXN0aW5hdGlvblRleHRMaXN0EjcKEWRlc3RpbmF0aW9u",
-            "X3RleHRzGAEgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlGqkB",
-            "ChNEZXN0aW5hdGlvbk1pc21hdGNoEpEBCgl1cmxfdHlwZXMYASADKA4yfi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5Qb2xpY3lUb3BpY0V2aWRl",
-            "bmNlRGVzdGluYXRpb25NaXNtYXRjaFVybFR5cGVFbnVtLlBvbGljeVRvcGlj",
-            "RXZpZGVuY2VEZXN0aW5hdGlvbk1pc21hdGNoVXJsVHlwZUIHCgV2YWx1ZSKT",
-            "BgoVUG9saWN5VG9waWNDb25zdHJhaW50Em4KF2NvdW50cnlfY29uc3RyYWlu",
-            "dF9saXN0GAEgASgLMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9u",
-            "LlBvbGljeVRvcGljQ29uc3RyYWludC5Db3VudHJ5Q29uc3RyYWludExpc3RI",
-            "ABJnChNyZXNlbGxlcl9jb25zdHJhaW50GAIgASgLMkguZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjEuY29tbW9uLlBvbGljeVRvcGljQ29uc3RyYWludC5SZXNl",
-            "bGxlckNvbnN0cmFpbnRIABJ6CiNjZXJ0aWZpY2F0ZV9taXNzaW5nX2luX2Nv",
-            "dW50cnlfbGlzdBgDIAEoCzJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNv",
-            "bW1vbi5Qb2xpY3lUb3BpY0NvbnN0cmFpbnQuQ291bnRyeUNvbnN0cmFpbnRM",
-            "aXN0SAASggEKK2NlcnRpZmljYXRlX2RvbWFpbl9taXNtYXRjaF9pbl9jb3Vu",
-            "dHJ5X2xpc3QYBCABKAsySy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21t",
-            "b24uUG9saWN5VG9waWNDb25zdHJhaW50LkNvdW50cnlDb25zdHJhaW50TGlz",
-            "dEgAGrIBChVDb3VudHJ5Q29uc3RyYWludExpc3QSPQoYdG90YWxfdGFyZ2V0",
-            "ZWRfY291bnRyaWVzGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFs",
-            "dWUSWgoJY291bnRyaWVzGAIgAygLMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djEuY29tbW9uLlBvbGljeVRvcGljQ29uc3RyYWludC5Db3VudHJ5Q29uc3Ry",
-            "YWludBoUChJSZXNlbGxlckNvbnN0cmFpbnQaTAoRQ291bnRyeUNvbnN0cmFp",
-            "bnQSNwoRY291bnRyeV9jcml0ZXJpb24YASABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWVCBwoFdmFsdWVC5gEKImNvbS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MS5jb21tb25CC1BvbGljeVByb3RvUAFaRGdvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9j",
-            "b21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEu",
-            "Q29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcQ29tbW9u6gIiR29v",
-            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkNvbW1vbmIGcHJvdG8z"));
+            "LkRlc3RpbmF0aW9uTWlzbWF0Y2hIABJsChdkZXN0aW5hdGlvbl9ub3Rfd29y",
+            "a2luZxgIIAEoCzJJLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Q",
+            "b2xpY3lUb3BpY0V2aWRlbmNlLkRlc3RpbmF0aW9uTm90V29ya2luZ0gAGjcK",
+            "CFRleHRMaXN0EisKBXRleHRzGAEgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlGj0KC1dlYnNpdGVMaXN0Ei4KCHdlYnNpdGVzGAEgAygLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlGk4KE0Rlc3RpbmF0aW9uVGV4",
+            "dExpc3QSNwoRZGVzdGluYXRpb25fdGV4dHMYASADKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUaqQEKE0Rlc3RpbmF0aW9uTWlzbWF0Y2gSkQEK",
+            "CXVybF90eXBlcxgBIAMoDjJ+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVu",
+            "dW1zLlBvbGljeVRvcGljRXZpZGVuY2VEZXN0aW5hdGlvbk1pc21hdGNoVXJs",
+            "VHlwZUVudW0uUG9saWN5VG9waWNFdmlkZW5jZURlc3RpbmF0aW9uTWlzbWF0",
+            "Y2hVcmxUeXBlGp0CChVEZXN0aW5hdGlvbk5vdFdvcmtpbmcSMgoMZXhwYW5k",
+            "ZWRfdXJsGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEpEB",
+            "CgZkZXZpY2UYBCABKA4ygAEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51",
+            "bXMuUG9saWN5VG9waWNFdmlkZW5jZURlc3RpbmF0aW9uTm90V29ya2luZ0Rl",
+            "dmljZUVudW0uUG9saWN5VG9waWNFdmlkZW5jZURlc3RpbmF0aW9uTm90V29y",
+            "a2luZ0RldmljZRI8ChZsYXN0X2NoZWNrZWRfZGF0ZV90aW1lGAUgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQgcKBXZhbHVlIpMGChVQb2xp",
+            "Y3lUb3BpY0NvbnN0cmFpbnQSbgoXY291bnRyeV9jb25zdHJhaW50X2xpc3QY",
+            "ASABKAsySy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uUG9saWN5",
+            "VG9waWNDb25zdHJhaW50LkNvdW50cnlDb25zdHJhaW50TGlzdEgAEmcKE3Jl",
+            "c2VsbGVyX2NvbnN0cmFpbnQYAiABKAsySC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MS5jb21tb24uUG9saWN5VG9waWNDb25zdHJhaW50LlJlc2VsbGVyQ29u",
+            "c3RyYWludEgAEnoKI2NlcnRpZmljYXRlX21pc3NpbmdfaW5fY291bnRyeV9s",
+            "aXN0GAMgASgLMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlBv",
+            "bGljeVRvcGljQ29uc3RyYWludC5Db3VudHJ5Q29uc3RyYWludExpc3RIABKC",
+            "AQorY2VydGlmaWNhdGVfZG9tYWluX21pc21hdGNoX2luX2NvdW50cnlfbGlz",
+            "dBgEIAEoCzJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Qb2xp",
+            "Y3lUb3BpY0NvbnN0cmFpbnQuQ291bnRyeUNvbnN0cmFpbnRMaXN0SAAasgEK",
+            "FUNvdW50cnlDb25zdHJhaW50TGlzdBI9Chh0b3RhbF90YXJnZXRlZF9jb3Vu",
+            "dHJpZXMYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRJaCglj",
+            "b3VudHJpZXMYAiADKAsyRy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21t",
+            "b24uUG9saWN5VG9waWNDb25zdHJhaW50LkNvdW50cnlDb25zdHJhaW50GhQK",
+            "ElJlc2VsbGVyQ29uc3RyYWludBpMChFDb3VudHJ5Q29uc3RyYWludBI3ChFj",
+            "b3VudHJ5X2NyaXRlcmlvbhgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZUIHCgV2YWx1ZULmAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxLmNvbW1vbkILUG9saWN5UHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcv",
+            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2NvbW1vbjtj",
+            "b21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5Db21tb27K",
+            "Ah5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMVxDb21tb27qAiJHb29nbGU6OkFk",
+            "czo6R29vZ2xlQWRzOjpWMTo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEntryTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEntryTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey), global::Google.Ads.GoogleAds.V1.Common.PolicyViolationKey.Parser, new[]{ "PolicyName", "ViolatingText" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyValidationParameter), global::Google.Ads.GoogleAds.V1.Common.PolicyValidationParameter.Parser, new[]{ "IgnorablePolicyTopics", "ExemptPolicyViolationKeys" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEntry), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEntry.Parser, new[]{ "Topic", "Type", "Evidences", "Constraints" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Parser, new[]{ "HttpCode", "WebsiteList", "TextList", "LanguageCode", "DestinationTextList", "DestinationMismatch" }, new[]{ "Value" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.TextList), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.TextList.Parser, new[]{ "Texts" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Parser, new[]{ "HttpCode", "WebsiteList", "TextList", "LanguageCode", "DestinationTextList", "DestinationMismatch", "DestinationNotWorking" }, new[]{ "Value" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.TextList), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.TextList.Parser, new[]{ "Texts" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.WebsiteList), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.WebsiteList.Parser, new[]{ "Websites" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationTextList), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationTextList.Parser, new[]{ "DestinationTexts" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationMismatch), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationMismatch.Parser, new[]{ "UrlTypes" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationMismatch), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationMismatch.Parser, new[]{ "UrlTypes" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationNotWorking), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationNotWorking.Parser, new[]{ "ExpandedUrl", "Device", "LastCheckedDateTime" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicConstraint), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicConstraint.Parser, new[]{ "CountryConstraintList", "ResellerConstraint", "CertificateMissingInCountryList", "CertificateDomainMismatchInCountryList" }, new[]{ "Value" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicConstraint.Types.CountryConstraintList), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicConstraint.Types.CountryConstraintList.Parser, new[]{ "TotalTargetedCountries", "Countries" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicConstraint.Types.ResellerConstraint), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicConstraint.Types.ResellerConstraint.Parser, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PolicyTopicConstraint.Types.CountryConstraint), global::Google.Ads.GoogleAds.V1.Common.PolicyTopicConstraint.Types.CountryConstraint.Parser, new[]{ "CountryCriterion" }, null, null, null)})
@@ -463,8 +475,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
   /// on serving. It may optionally have one or more evidences that indicate the
   /// reason for the finding. It may also optionally have one or more constraints
   /// that provide details about how serving may be restricted.
-  ///
-  /// Next tag: 5
   /// </summary>
   public sealed partial class PolicyTopicEntry : pb::IMessage<PolicyTopicEntry> {
     private static readonly pb::MessageParser<PolicyTopicEntry> _parser = new pb::MessageParser<PolicyTopicEntry>(() => new PolicyTopicEntry());
@@ -687,8 +697,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
   /// <summary>
   /// Additional information that explains a policy finding.
-  ///
-  /// Next Id: 8
   /// </summary>
   public sealed partial class PolicyTopicEvidence : pb::IMessage<PolicyTopicEvidence> {
     private static readonly pb::MessageParser<PolicyTopicEvidence> _parser = new pb::MessageParser<PolicyTopicEvidence>(() => new PolicyTopicEvidence());
@@ -733,6 +741,9 @@ namespace Google.Ads.GoogleAds.V1.Common {
           break;
         case ValueOneofCase.DestinationMismatch:
           DestinationMismatch = other.DestinationMismatch.Clone();
+          break;
+        case ValueOneofCase.DestinationNotWorking:
+          DestinationNotWorking = other.DestinationNotWorking.Clone();
           break;
       }
 
@@ -832,6 +843,21 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
     }
 
+    /// <summary>Field number for the "destination_not_working" field.</summary>
+    public const int DestinationNotWorkingFieldNumber = 8;
+    /// <summary>
+    /// Details when the destination is returning an HTTP error code or isn't
+    /// functional in all locations for commonly used devices.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationNotWorking DestinationNotWorking {
+      get { return valueCase_ == ValueOneofCase.DestinationNotWorking ? (global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationNotWorking) value_ : null; }
+      set {
+        value_ = value;
+        valueCase_ = value == null ? ValueOneofCase.None : ValueOneofCase.DestinationNotWorking;
+      }
+    }
+
     private object value_;
     /// <summary>Enum of possible cases for the "value" oneof.</summary>
     public enum ValueOneofCase {
@@ -842,6 +868,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
       LanguageCode = 5,
       DestinationTextList = 6,
       DestinationMismatch = 7,
+      DestinationNotWorking = 8,
     }
     private ValueOneofCase valueCase_ = ValueOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -874,6 +901,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (LanguageCode != other.LanguageCode) return false;
       if (!object.Equals(DestinationTextList, other.DestinationTextList)) return false;
       if (!object.Equals(DestinationMismatch, other.DestinationMismatch)) return false;
+      if (!object.Equals(DestinationNotWorking, other.DestinationNotWorking)) return false;
       if (ValueCase != other.ValueCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -887,6 +915,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (valueCase_ == ValueOneofCase.LanguageCode) hash ^= LanguageCode.GetHashCode();
       if (valueCase_ == ValueOneofCase.DestinationTextList) hash ^= DestinationTextList.GetHashCode();
       if (valueCase_ == ValueOneofCase.DestinationMismatch) hash ^= DestinationMismatch.GetHashCode();
+      if (valueCase_ == ValueOneofCase.DestinationNotWorking) hash ^= DestinationNotWorking.GetHashCode();
       hash ^= (int) valueCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -923,6 +952,10 @@ namespace Google.Ads.GoogleAds.V1.Common {
         output.WriteRawTag(58);
         output.WriteMessage(DestinationMismatch);
       }
+      if (valueCase_ == ValueOneofCase.DestinationNotWorking) {
+        output.WriteRawTag(66);
+        output.WriteMessage(DestinationNotWorking);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -948,6 +981,9 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
       if (valueCase_ == ValueOneofCase.DestinationMismatch) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DestinationMismatch);
+      }
+      if (valueCase_ == ValueOneofCase.DestinationNotWorking) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DestinationNotWorking);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -990,6 +1026,12 @@ namespace Google.Ads.GoogleAds.V1.Common {
             DestinationMismatch = new global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationMismatch();
           }
           DestinationMismatch.MergeFrom(other.DestinationMismatch);
+          break;
+        case ValueOneofCase.DestinationNotWorking:
+          if (DestinationNotWorking == null) {
+            DestinationNotWorking = new global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationNotWorking();
+          }
+          DestinationNotWorking.MergeFrom(other.DestinationNotWorking);
           break;
       }
 
@@ -1048,6 +1090,15 @@ namespace Google.Ads.GoogleAds.V1.Common {
             DestinationMismatch = subBuilder;
             break;
           }
+          case 66: {
+            global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationNotWorking subBuilder = new global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Types.DestinationNotWorking();
+            if (valueCase_ == ValueOneofCase.DestinationNotWorking) {
+              subBuilder.MergeFrom(DestinationNotWorking);
+            }
+            input.ReadMessage(subBuilder);
+            DestinationNotWorking = subBuilder;
+            break;
+          }
         }
       }
     }
@@ -1058,8 +1109,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
     public static partial class Types {
       /// <summary>
       /// A list of fragments of text that violated a policy.
-      ///
-      /// Next Id: 2
       /// </summary>
       public sealed partial class TextList : pb::IMessage<TextList> {
         private static readonly pb::MessageParser<TextList> _parser = new pb::MessageParser<TextList>(() => new TextList());
@@ -1190,8 +1239,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
       /// ONE_WEBSITE_PER_AD_GROUP policy topic, for example. In case there are more
       /// than five websites, only the top five (those that appear in resources the
       /// most) will be listed here.
-      ///
-      /// Next Id: 2
       /// </summary>
       public sealed partial class WebsiteList : pb::IMessage<WebsiteList> {
         private static readonly pb::MessageParser<WebsiteList> _parser = new pb::MessageParser<WebsiteList>(() => new WebsiteList());
@@ -1320,8 +1367,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
       /// <summary>
       /// A list of strings found in a destination page that caused a policy
       /// finding.
-      ///
-      /// Next Id: 2
       /// </summary>
       public sealed partial class DestinationTextList : pb::IMessage<DestinationTextList> {
         private static readonly pb::MessageParser<DestinationTextList> _parser = new pb::MessageParser<DestinationTextList>(() => new DestinationTextList());
@@ -1449,8 +1494,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
       /// <summary>
       /// Evidence of mismatches between the URLs of a resource.
-      ///
-      /// Next Id: 2
       /// </summary>
       public sealed partial class DestinationMismatch : pb::IMessage<DestinationMismatch> {
         private static readonly pb::MessageParser<DestinationMismatch> _parser = new pb::MessageParser<DestinationMismatch>(() => new DestinationMismatch());
@@ -1577,6 +1620,216 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
       }
 
+      /// <summary>
+      /// Evidence details when the destination is returning an HTTP error
+      /// code or isn't functional in all locations for commonly used devices.
+      /// </summary>
+      public sealed partial class DestinationNotWorking : pb::IMessage<DestinationNotWorking> {
+        private static readonly pb::MessageParser<DestinationNotWorking> _parser = new pb::MessageParser<DestinationNotWorking>(() => new DestinationNotWorking());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<DestinationNotWorking> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V1.Common.PolicyTopicEvidence.Descriptor.NestedTypes[4]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DestinationNotWorking() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DestinationNotWorking(DestinationNotWorking other) : this() {
+          ExpandedUrl = other.ExpandedUrl;
+          device_ = other.device_;
+          LastCheckedDateTime = other.LastCheckedDateTime;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public DestinationNotWorking Clone() {
+          return new DestinationNotWorking(this);
+        }
+
+        /// <summary>Field number for the "expanded_url" field.</summary>
+        public const int ExpandedUrlFieldNumber = 3;
+        private static readonly pb::FieldCodec<string> _single_expandedUrl_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+        private string expandedUrl_;
+        /// <summary>
+        /// The full URL that didn't work.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string ExpandedUrl {
+          get { return expandedUrl_; }
+          set {
+            expandedUrl_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "device" field.</summary>
+        public const int DeviceFieldNumber = 4;
+        private global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice device_ = 0;
+        /// <summary>
+        /// The type of device that failed to load the URL.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice Device {
+          get { return device_; }
+          set {
+            device_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "last_checked_date_time" field.</summary>
+        public const int LastCheckedDateTimeFieldNumber = 5;
+        private static readonly pb::FieldCodec<string> _single_lastCheckedDateTime_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+        private string lastCheckedDateTime_;
+        /// <summary>
+        /// The time the URL was last checked.
+        /// The format is "YYYY-MM-DD HH:MM:SS".
+        /// Examples: "2018-03-05 09:15:00" or "2018-02-01 14:34:30"
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string LastCheckedDateTime {
+          get { return lastCheckedDateTime_; }
+          set {
+            lastCheckedDateTime_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as DestinationNotWorking);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(DestinationNotWorking other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (ExpandedUrl != other.ExpandedUrl) return false;
+          if (Device != other.Device) return false;
+          if (LastCheckedDateTime != other.LastCheckedDateTime) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (expandedUrl_ != null) hash ^= ExpandedUrl.GetHashCode();
+          if (Device != 0) hash ^= Device.GetHashCode();
+          if (lastCheckedDateTime_ != null) hash ^= LastCheckedDateTime.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (expandedUrl_ != null) {
+            _single_expandedUrl_codec.WriteTagAndValue(output, ExpandedUrl);
+          }
+          if (Device != 0) {
+            output.WriteRawTag(32);
+            output.WriteEnum((int) Device);
+          }
+          if (lastCheckedDateTime_ != null) {
+            _single_lastCheckedDateTime_codec.WriteTagAndValue(output, LastCheckedDateTime);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (expandedUrl_ != null) {
+            size += _single_expandedUrl_codec.CalculateSizeWithTag(ExpandedUrl);
+          }
+          if (Device != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Device);
+          }
+          if (lastCheckedDateTime_ != null) {
+            size += _single_lastCheckedDateTime_codec.CalculateSizeWithTag(LastCheckedDateTime);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(DestinationNotWorking other) {
+          if (other == null) {
+            return;
+          }
+          if (other.expandedUrl_ != null) {
+            if (expandedUrl_ == null || other.ExpandedUrl != "") {
+              ExpandedUrl = other.ExpandedUrl;
+            }
+          }
+          if (other.Device != 0) {
+            Device = other.Device;
+          }
+          if (other.lastCheckedDateTime_ != null) {
+            if (lastCheckedDateTime_ == null || other.LastCheckedDateTime != "") {
+              LastCheckedDateTime = other.LastCheckedDateTime;
+            }
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 26: {
+                string value = _single_expandedUrl_codec.Read(input);
+                if (expandedUrl_ == null || value != "") {
+                  ExpandedUrl = value;
+                }
+                break;
+              }
+              case 32: {
+                device_ = (global::Google.Ads.GoogleAds.V1.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice) input.ReadEnum();
+                break;
+              }
+              case 42: {
+                string value = _single_lastCheckedDateTime_codec.Read(input);
+                if (lastCheckedDateTime_ == null || value != "") {
+                  LastCheckedDateTime = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
     }
     #endregion
 
@@ -1584,8 +1837,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
   /// <summary>
   /// Describes the effect on serving that a policy topic entry will have.
-  ///
-  /// Next Id: 5
   /// </summary>
   public sealed partial class PolicyTopicConstraint : pb::IMessage<PolicyTopicConstraint> {
     private static readonly pb::MessageParser<PolicyTopicConstraint> _parser = new pb::MessageParser<PolicyTopicConstraint>(() => new PolicyTopicConstraint());
@@ -1886,8 +2137,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
     public static partial class Types {
       /// <summary>
       /// A list of countries where a resource's serving is constrained.
-      ///
-      /// Next Id: 3
       /// </summary>
       public sealed partial class CountryConstraintList : pb::IMessage<CountryConstraintList> {
         private static readonly pb::MessageParser<CountryConstraintList> _parser = new pb::MessageParser<CountryConstraintList>(() => new CountryConstraintList());
@@ -2052,8 +2301,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
       /// <summary>
       /// Indicates that a policy topic was constrained due to disapproval of the
       /// website for reseller purposes.
-      ///
-      /// Next Id: 1
       /// </summary>
       public sealed partial class ResellerConstraint : pb::IMessage<ResellerConstraint> {
         private static readonly pb::MessageParser<ResellerConstraint> _parser = new pb::MessageParser<ResellerConstraint>(() => new ResellerConstraint());
@@ -2159,8 +2406,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
       /// <summary>
       /// Indicates that a resource's ability to serve in a particular country is
       /// constrained.
-      ///
-      /// Next Id: 2
       /// </summary>
       public sealed partial class CountryConstraint : pb::IMessage<CountryConstraint> {
         private static readonly pb::MessageParser<CountryConstraint> _parser = new pb::MessageParser<CountryConstraint>(() => new CountryConstraint());

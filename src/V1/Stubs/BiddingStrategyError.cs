@@ -26,18 +26,19 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvYmlkZGluZ19zdHJh",
             "dGVneV9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZXJy",
-            "b3JzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvItkBChhCaWRkaW5n",
-            "U3RyYXRlZ3lFcnJvckVudW0ivAEKFEJpZGRpbmdTdHJhdGVneUVycm9yEg8K",
+            "b3JzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIpsCChhCaWRkaW5n",
+            "U3RyYXRlZ3lFcnJvckVudW0i/gEKFEJpZGRpbmdTdHJhdGVneUVycm9yEg8K",
             "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhIKDkRVUExJQ0FURV9OQU1F",
             "EAISJwojQ0FOTk9UX0NIQU5HRV9CSURESU5HX1NUUkFURUdZX1RZUEUQAxIl",
             "CiFDQU5OT1RfUkVNT1ZFX0FTU09DSUFURURfU1RSQVRFR1kQBBIiCh5CSURE",
-            "SU5HX1NUUkFURUdZX05PVF9TVVBQT1JURUQQBUL0AQoiY29tLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxLmVycm9yc0IZQmlkZGluZ1N0cmF0ZWd5RXJyb3JQ",
-            "cm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
-            "L2Fkcy9nb29nbGVhZHMvdjEvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYxLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xl",
-            "QWRzXFYxXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpF",
-            "cnJvcnNiBnByb3RvMw=="));
+            "SU5HX1NUUkFURUdZX05PVF9TVVBQT1JURUQQBRJACjxJTkNPTVBBVElCTEVf",
+            "QklERElOR19TVFJBVEVHWV9BTkRfQklERElOR19TVFJBVEVHWV9HT0FMX1RZ",
+            "UEUQBkL0AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9yc0IZ",
+            "QmlkZGluZ1N0cmF0ZWd5RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvZXJyb3Jz",
+            "O2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVycm9y",
+            "c8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXEVycm9yc+oCIkdvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYxOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -183,6 +184,11 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// The specified bidding strategy is not supported.
         /// </summary>
         [pbr::OriginalName("BIDDING_STRATEGY_NOT_SUPPORTED")] BiddingStrategyNotSupported = 5,
+        /// <summary>
+        /// The bidding strategy is incompatible with the campaign's bidding
+        /// strategy goal type.
+        /// </summary>
+        [pbr::OriginalName("INCOMPATIBLE_BIDDING_STRATEGY_AND_BIDDING_STRATEGY_GOAL_TYPE")] IncompatibleBiddingStrategyAndBiddingStrategyGoalType = 6,
       }
 
     }

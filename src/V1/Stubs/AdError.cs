@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "Ci1nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvYWRfZXJyb3IucHJv",
             "dG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9ycxocZ29vZ2xlL2Fw",
-            "aS9hbm5vdGF0aW9ucy5wcm90byLnHwoLQWRFcnJvckVudW0i1x8KB0FkRXJy",
+            "aS9hbm5vdGF0aW9ucy5wcm90byLwIAoLQWRFcnJvckVudW0i4CAKB0FkRXJy",
             "b3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESLAooQURfQ1VTVE9N",
             "SVpFUlNfTk9UX1NVUFBPUlRFRF9GT1JfQURfVFlQRRACEhoKFkFQUFJPWElN",
             "QVRFTFlfVE9PX0xPTkcQAxIbChdBUFBST1hJTUFURUxZX1RPT19TSE9SVBAE",
@@ -116,13 +116,16 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "TEVfQ0FMTF9DT05WRVJTSU9OX0FORF9TRVRfQ09OVkVSU0lPTl9UWVBFX0lE",
             "EH8SIwoeQ0FOTk9UX1NFVF9QQVRIMl9XSVRIT1VUX1BBVEgxEIABEjMKLk1J",
             "U1NJTkdfRFlOQU1JQ19TRUFSQ0hfQURTX1NFVFRJTkdfRE9NQUlOX05BTUUQ",
-            "gQESJwoiSU5DT01QQVRJQkxFX1dJVEhfUkVTVFJJQ1RJT05fVFlQRRCCAULn",
-            "AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9yc0IMQWRFcnJv",
-            "clByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjEuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29n",
-            "bGVBZHNcVjFcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6",
-            "OkVycm9yc2IGcHJvdG8z"));
+            "gQESJwoiSU5DT01QQVRJQkxFX1dJVEhfUkVTVFJJQ1RJT05fVFlQRRCCARIx",
+            "CixDVVNUT01FUl9DT05TRU5UX0ZPUl9DQUxMX1JFQ09SRElOR19SRVFVSVJF",
+            "RBCDARIiCh1NSVNTSU5HX0lNQUdFX09SX01FRElBX0JVTkRMRRCEARIwCitQ",
+            "Uk9EVUNUX1RZUEVfTk9UX1NVUFBPUlRFRF9JTl9USElTX0NBTVBBSUdOEIUB",
+            "QucBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZXJyb3JzQgxBZEVy",
+            "cm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5H",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMVxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MTo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -777,6 +780,19 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// The associated ad is not compatible with restriction type.
         /// </summary>
         [pbr::OriginalName("INCOMPATIBLE_WITH_RESTRICTION_TYPE")] IncompatibleWithRestrictionType = 130,
+        /// <summary>
+        /// Consent for call recording is required for creating/updating call only
+        /// ads. Please see https://support.google.com/google-ads/answer/7412639.
+        /// </summary>
+        [pbr::OriginalName("CUSTOMER_CONSENT_FOR_CALL_RECORDING_REQUIRED")] CustomerConsentForCallRecordingRequired = 131,
+        /// <summary>
+        /// Either an image or a media bundle is required in a display upload ad.
+        /// </summary>
+        [pbr::OriginalName("MISSING_IMAGE_OR_MEDIA_BUNDLE")] MissingImageOrMediaBundle = 132,
+        /// <summary>
+        /// The display upload product type is not supported in this campaign.
+        /// </summary>
+        [pbr::OriginalName("PRODUCT_TYPE_NOT_SUPPORTED_IN_THIS_CAMPAIGN")] ProductTypeNotSupportedInThisCampaign = 133,
       }
 
     }

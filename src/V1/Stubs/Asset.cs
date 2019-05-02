@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "L2Fkcy9nb29nbGVhZHMvdjEvY29tbW9uL2Fzc2V0X3R5cGVzLnByb3RvGi5n",
             "b29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9hc3NldF90eXBlLnByb3Rv",
             "Gh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aHGdvb2dsZS9hcGkv",
-            "YW5ub3RhdGlvbnMucHJvdG8irAMKBUFzc2V0EhUKDXJlc291cmNlX25hbWUY",
+            "YW5ub3RhdGlvbnMucHJvdG8i7QMKBUFzc2V0EhUKDXJlc291cmNlX25hbWUY",
             "ASABKAkSJwoCaWQYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
             "ZRIqCgRuYW1lGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
             "EkQKBHR5cGUYBCABKA4yNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVt",
@@ -38,17 +38,19 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "dXR1YmVWaWRlb0Fzc2V0SAASTgoSbWVkaWFfYnVuZGxlX2Fzc2V0GAYgASgL",
             "MjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLk1lZGlhQnVuZGxl",
             "QXNzZXRIABJBCgtpbWFnZV9hc3NldBgHIAEoCzIqLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxLmNvbW1vbi5JbWFnZUFzc2V0SABCDAoKYXNzZXRfZGF0YUL3",
-            "AQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnJlc291cmNlc0IKQXNz",
-            "ZXRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjEvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dB",
-            "QaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLlJlc291cmNlc8oCIUdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYxXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpH",
-            "b29nbGVBZHM6OlYxOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "Z2xlYWRzLnYxLmNvbW1vbi5JbWFnZUFzc2V0SAASPwoKdGV4dF9hc3NldBgI",
+            "IAEoCzIpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5UZXh0QXNz",
+            "ZXRIAEIMCgphc3NldF9kYXRhQvcBCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjEucmVzb3VyY2VzQgpBc3NldFByb3RvUAFaSmdvb2dsZS5nb2xhbmcu",
+            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9yZXNv",
+            "dXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
+            "VjEuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcUmVzb3Vy",
+            "Y2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OlJlc291cmNlc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.AssetTypesReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AssetTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Asset), global::Google.Ads.GoogleAds.V1.Resources.Asset.Parser, new[]{ "ResourceName", "Id", "Name", "Type", "YoutubeVideoAsset", "MediaBundleAsset", "ImageAsset" }, new[]{ "AssetData" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Asset), global::Google.Ads.GoogleAds.V1.Resources.Asset.Parser, new[]{ "ResourceName", "Id", "Name", "Type", "YoutubeVideoAsset", "MediaBundleAsset", "ImageAsset", "TextAsset" }, new[]{ "AssetData" }, null, null)
           }));
     }
     #endregion
@@ -97,6 +99,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           break;
         case AssetDataOneofCase.ImageAsset:
           ImageAsset = other.ImageAsset.Clone();
+          break;
+        case AssetDataOneofCase.TextAsset:
+          TextAsset = other.TextAsset.Clone();
           break;
       }
 
@@ -211,6 +216,20 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
     }
 
+    /// <summary>Field number for the "text_asset" field.</summary>
+    public const int TextAssetFieldNumber = 8;
+    /// <summary>
+    /// A text asset.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.TextAsset TextAsset {
+      get { return assetDataCase_ == AssetDataOneofCase.TextAsset ? (global::Google.Ads.GoogleAds.V1.Common.TextAsset) assetData_ : null; }
+      set {
+        assetData_ = value;
+        assetDataCase_ = value == null ? AssetDataOneofCase.None : AssetDataOneofCase.TextAsset;
+      }
+    }
+
     private object assetData_;
     /// <summary>Enum of possible cases for the "asset_data" oneof.</summary>
     public enum AssetDataOneofCase {
@@ -218,6 +237,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       YoutubeVideoAsset = 5,
       MediaBundleAsset = 6,
       ImageAsset = 7,
+      TextAsset = 8,
     }
     private AssetDataOneofCase assetDataCase_ = AssetDataOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -251,6 +271,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (!object.Equals(YoutubeVideoAsset, other.YoutubeVideoAsset)) return false;
       if (!object.Equals(MediaBundleAsset, other.MediaBundleAsset)) return false;
       if (!object.Equals(ImageAsset, other.ImageAsset)) return false;
+      if (!object.Equals(TextAsset, other.TextAsset)) return false;
       if (AssetDataCase != other.AssetDataCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -265,6 +286,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (assetDataCase_ == AssetDataOneofCase.YoutubeVideoAsset) hash ^= YoutubeVideoAsset.GetHashCode();
       if (assetDataCase_ == AssetDataOneofCase.MediaBundleAsset) hash ^= MediaBundleAsset.GetHashCode();
       if (assetDataCase_ == AssetDataOneofCase.ImageAsset) hash ^= ImageAsset.GetHashCode();
+      if (assetDataCase_ == AssetDataOneofCase.TextAsset) hash ^= TextAsset.GetHashCode();
       hash ^= (int) assetDataCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -305,6 +327,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteRawTag(58);
         output.WriteMessage(ImageAsset);
       }
+      if (assetDataCase_ == AssetDataOneofCase.TextAsset) {
+        output.WriteRawTag(66);
+        output.WriteMessage(TextAsset);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -333,6 +359,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
       if (assetDataCase_ == AssetDataOneofCase.ImageAsset) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ImageAsset);
+      }
+      if (assetDataCase_ == AssetDataOneofCase.TextAsset) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TextAsset);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -379,6 +408,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             ImageAsset = new global::Google.Ads.GoogleAds.V1.Common.ImageAsset();
           }
           ImageAsset.MergeFrom(other.ImageAsset);
+          break;
+        case AssetDataOneofCase.TextAsset:
+          if (TextAsset == null) {
+            TextAsset = new global::Google.Ads.GoogleAds.V1.Common.TextAsset();
+          }
+          TextAsset.MergeFrom(other.TextAsset);
           break;
       }
 
@@ -440,6 +475,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             }
             input.ReadMessage(subBuilder);
             ImageAsset = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V1.Common.TextAsset subBuilder = new global::Google.Ads.GoogleAds.V1.Common.TextAsset();
+            if (assetDataCase_ == AssetDataOneofCase.TextAsset) {
+              subBuilder.MergeFrom(TextAsset);
+            }
+            input.ReadMessage(subBuilder);
+            TextAsset = subBuilder;
             break;
           }
         }

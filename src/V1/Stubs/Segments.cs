@@ -46,124 +46,135 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "dWN0X2NoYW5uZWwucHJvdG8aP2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2Vu",
             "dW1zL3Byb2R1Y3RfY2hhbm5lbF9leGNsdXNpdml0eS5wcm90bxo1Z29vZ2xl",
             "L2Fkcy9nb29nbGVhZHMvdjEvZW51bXMvcHJvZHVjdF9jb25kaXRpb24ucHJv",
-            "dG8aOmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zL3NlYXJjaF90ZXJt",
-            "X21hdGNoX3R5cGUucHJvdG8aKGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2Vu",
-            "dW1zL3Nsb3QucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90",
-            "bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLVIwoIU2VnbWVudHMS",
-            "VwoPYWRfbmV0d29ya190eXBlGAMgASgOMj4uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjEuZW51bXMuQWROZXR3b3JrVHlwZUVudW0uQWROZXR3b3JrVHlwZRJK",
-            "CgpjbGlja190eXBlGBogASgOMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEu",
-            "ZW51bXMuQ2xpY2tUeXBlRW51bS5DbGlja1R5cGUSNwoRY29udmVyc2lvbl9h",
-            "Y3Rpb24YNCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSeAoa",
-            "Y29udmVyc2lvbl9hY3Rpb25fY2F0ZWdvcnkYNSABKA4yVC5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MS5lbnVtcy5Db252ZXJzaW9uQWN0aW9uQ2F0ZWdvcnlF",
-            "bnVtLkNvbnZlcnNpb25BY3Rpb25DYXRlZ29yeRI8ChZjb252ZXJzaW9uX2Fj",
-            "dGlvbl9uYW1lGDYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "EjkKFWNvbnZlcnNpb25fYWRqdXN0bWVudBgbIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5Cb29sVmFsdWUSiwEKIWNvbnZlcnNpb25fYXR0cmlidXRpb25fZXZl",
-            "bnRfdHlwZRgCIAEoDjJgLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1z",
-            "LkNvbnZlcnNpb25BdHRyaWJ1dGlvbkV2ZW50VHlwZUVudW0uQ29udmVyc2lv",
-            "bkF0dHJpYnV0aW9uRXZlbnRUeXBlEmkKFWNvbnZlcnNpb25fbGFnX2J1Y2tl",
-            "dBgyIAEoDjJKLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkNvbnZl",
-            "cnNpb25MYWdCdWNrZXRFbnVtLkNvbnZlcnNpb25MYWdCdWNrZXQSjwEKI2Nv",
-            "bnZlcnNpb25fb3JfYWRqdXN0bWVudF9sYWdfYnVja2V0GDMgASgOMmIuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuQ29udmVyc2lvbk9yQWRqdXN0",
-            "bWVudExhZ0J1Y2tldEVudW0uQ29udmVyc2lvbk9yQWRqdXN0bWVudExhZ0J1",
-            "Y2tldBIqCgRkYXRlGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
-            "bHVlEksKC2RheV9vZl93ZWVrGAUgASgOMjYuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjEuZW51bXMuRGF5T2ZXZWVrRW51bS5EYXlPZldlZWsSQAoGZGV2aWNl",
-            "GAEgASgOMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuRGV2aWNl",
-            "RW51bS5EZXZpY2USeAoaZXh0ZXJuYWxfY29udmVyc2lvbl9zb3VyY2UYNyAB",
-            "KA4yVC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5FeHRlcm5hbENv",
-            "bnZlcnNpb25Tb3VyY2VFbnVtLkV4dGVybmFsQ29udmVyc2lvblNvdXJjZRI4",
-            "ChJnZW9fdGFyZ2V0X2FpcnBvcnQYQSABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUSNQoPZ2VvX3RhcmdldF9jaXR5GD4gASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEjYKEGdlb190YXJnZXRfbWV0cm8YPyAB",
-            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNwoRZ2VvX3Rhcmdl",
-            "dF9yZWdpb24YQCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "PgoZaG90ZWxfYm9va2luZ193aW5kb3dfZGF5cxgGIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5JbnQ2NFZhbHVlEjQKD2hvdGVsX2NlbnRlcl9pZBgHIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjkKE2hvdGVsX2NoZWNrX2lu",
-            "X2RhdGUYCCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSWgoa",
-            "aG90ZWxfY2hlY2tfaW5fZGF5X29mX3dlZWsYCSABKA4yNi5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MS5lbnVtcy5EYXlPZldlZWtFbnVtLkRheU9mV2VlaxIw",
-            "Cgpob3RlbF9jaXR5GAogASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
-            "bHVlEjAKC2hvdGVsX2NsYXNzGAsgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDMyVmFsdWUSMwoNaG90ZWxfY291bnRyeRgMIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRJzChlob3RlbF9kYXRlX3NlbGVjdGlvbl90eXBl",
-            "GA0gASgOMlAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuSG90ZWxE",
-            "YXRlU2VsZWN0aW9uVHlwZUVudW0uSG90ZWxEYXRlU2VsZWN0aW9uVHlwZRI5",
-            "ChRob3RlbF9sZW5ndGhfb2Zfc3RheRgOIAEoCzIbLmdvb2dsZS5wcm90b2J1",
-            "Zi5JbnQzMlZhbHVlEjEKC2hvdGVsX3N0YXRlGA8gASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLlN0cmluZ1ZhbHVlEikKBGhvdXIYECABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuSW50MzJWYWx1ZRJBCh1pbnRlcmFjdGlvbl9vbl90aGlzX2V4dGVu",
-            "c2lvbhgxIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSOAoHa2V5",
-            "d29yZBg9IAEoCzInLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5L",
-            "ZXl3b3JkEisKBW1vbnRoGBEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlElEKDW1vbnRoX29mX3llYXIYEiABKA4yOi5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MS5lbnVtcy5Nb250aE9mWWVhckVudW0uTW9udGhPZlllYXIS",
-            "NgoQcGFydG5lcl9ob3RlbF9pZBgTIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRJcChBwbGFjZWhvbGRlcl90eXBlGBQgASgOMkIuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjEuZW51bXMuUGxhY2Vob2xkZXJUeXBlRW51bS5Q",
-            "bGFjZWhvbGRlclR5cGUSOwoVcHJvZHVjdF9hZ2dyZWdhdG9yX2lkGBwgASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLlVJbnQ2NFZhbHVlEkUKH3Byb2R1Y3RfYmlk",
-            "ZGluZ19jYXRlZ29yeV9sZXZlbDEYOCABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUSRQofcHJvZHVjdF9iaWRkaW5nX2NhdGVnb3J5X2xldmVs",
-            "Mhg5IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJFCh9wcm9k",
-            "dWN0X2JpZGRpbmdfY2F0ZWdvcnlfbGV2ZWwzGDogASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLlN0cmluZ1ZhbHVlEkUKH3Byb2R1Y3RfYmlkZGluZ19jYXRlZ29y",
-            "eV9sZXZlbDQYOyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "RQofcHJvZHVjdF9iaWRkaW5nX2NhdGVnb3J5X2xldmVsNRg8IAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1wcm9kdWN0X2JyYW5kGB0g",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElkKD3Byb2R1Y3Rf",
-            "Y2hhbm5lbBgeIAEoDjJALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1z",
-            "LlByb2R1Y3RDaGFubmVsRW51bS5Qcm9kdWN0Q2hhbm5lbBJ7Chtwcm9kdWN0",
-            "X2NoYW5uZWxfZXhjbHVzaXZpdHkYHyABKA4yVi5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MS5lbnVtcy5Qcm9kdWN0Q2hhbm5lbEV4Y2x1c2l2aXR5RW51bS5Q",
-            "cm9kdWN0Q2hhbm5lbEV4Y2x1c2l2aXR5El8KEXByb2R1Y3RfY29uZGl0aW9u",
-            "GCAgASgOMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuUHJvZHVj",
-            "dENvbmRpdGlvbkVudW0uUHJvZHVjdENvbmRpdGlvbhI1Cg9wcm9kdWN0X2Nv",
-            "dW50cnkYISABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSPwoZ",
-            "cHJvZHVjdF9jdXN0b21fYXR0cmlidXRlMBgiIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRI/Chlwcm9kdWN0X2N1c3RvbV9hdHRyaWJ1dGUx",
-            "GCMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEj8KGXByb2R1",
-            "Y3RfY3VzdG9tX2F0dHJpYnV0ZTIYJCABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUSPwoZcHJvZHVjdF9jdXN0b21fYXR0cmlidXRlMxglIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI/Chlwcm9kdWN0X2N1",
-            "c3RvbV9hdHRyaWJ1dGU0GCYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEjUKD3Byb2R1Y3RfaXRlbV9pZBgnIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRI2ChBwcm9kdWN0X2xhbmd1YWdlGCggASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjkKE3Byb2R1Y3RfbWVyY2hh",
-            "bnRfaWQYKSABKAsyHC5nb29nbGUucHJvdG9idWYuVUludDY0VmFsdWUSNgoQ",
-            "cHJvZHVjdF9zdG9yZV9pZBgqIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZRIzCg1wcm9kdWN0X3RpdGxlGCsgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlEjUKD3Byb2R1Y3RfdHlwZV9sMRgsIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI1Cg9wcm9kdWN0X3R5cGVfbDIY",
-            "LSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNQoPcHJvZHVj",
-            "dF90eXBlX2wzGC4gASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "EjUKD3Byb2R1Y3RfdHlwZV9sNBgvIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRI1Cg9wcm9kdWN0X3R5cGVfbDUYMCABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWUSLQoHcXVhcnRlchgVIAEoCzIcLmdvb2ds",
-            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJqChZzZWFyY2hfdGVybV9tYXRjaF90",
-            "eXBlGBYgASgOMkouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuU2Vh",
-            "cmNoVGVybU1hdGNoVHlwZUVudW0uU2VhcmNoVGVybU1hdGNoVHlwZRI6CgRz",
-            "bG90GBcgASgOMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuU2xv",
-            "dEVudW0uU2xvdBItCgd3ZWJwYWdlGEIgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LlN0cmluZ1ZhbHVlEioKBHdlZWsYGCABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUSKQoEeWVhchgZIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
-            "bnQzMlZhbHVlIn4KB0tleXdvcmQSOAoSYWRfZ3JvdXBfY3JpdGVyaW9uGAEg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjkKBGluZm8YAiAB",
-            "KAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uS2V5d29yZElu",
-            "Zm9C6AEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb25CDVNl",
-            "Z21lbnRzUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
-            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2NvbW1vbjtjb21tb26iAgNHQUGq",
-            "Ah5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5Db21tb27KAh5Hb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMVxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMTo6Q29tbW9uYgZwcm90bzM="));
+            "dG8aQ2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zL3NlYXJjaF9lbmdp",
+            "bmVfcmVzdWx0c19wYWdlX3R5cGUucHJvdG8aOmdvb2dsZS9hZHMvZ29vZ2xl",
+            "YWRzL3YxL2VudW1zL3NlYXJjaF90ZXJtX21hdGNoX3R5cGUucHJvdG8aKGdv",
+            "b2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zL3Nsb3QucHJvdG8aHmdvb2ds",
+            "ZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0",
+            "aW9ucy5wcm90byKOJwoIU2VnbWVudHMSVwoPYWRfbmV0d29ya190eXBlGAMg",
+            "ASgOMj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuQWROZXR3b3Jr",
+            "VHlwZUVudW0uQWROZXR3b3JrVHlwZRJKCgpjbGlja190eXBlGBogASgOMjYu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuQ2xpY2tUeXBlRW51bS5D",
+            "bGlja1R5cGUSNwoRY29udmVyc2lvbl9hY3Rpb24YNCABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUSeAoaY29udmVyc2lvbl9hY3Rpb25fY2F0",
+            "ZWdvcnkYNSABKA4yVC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5D",
+            "b252ZXJzaW9uQWN0aW9uQ2F0ZWdvcnlFbnVtLkNvbnZlcnNpb25BY3Rpb25D",
+            "YXRlZ29yeRI8ChZjb252ZXJzaW9uX2FjdGlvbl9uYW1lGDYgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjkKFWNvbnZlcnNpb25fYWRqdXN0",
+            "bWVudBgbIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSiwEKIWNv",
+            "bnZlcnNpb25fYXR0cmlidXRpb25fZXZlbnRfdHlwZRgCIAEoDjJgLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkNvbnZlcnNpb25BdHRyaWJ1dGlv",
+            "bkV2ZW50VHlwZUVudW0uQ29udmVyc2lvbkF0dHJpYnV0aW9uRXZlbnRUeXBl",
+            "EmkKFWNvbnZlcnNpb25fbGFnX2J1Y2tldBgyIAEoDjJKLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYxLmVudW1zLkNvbnZlcnNpb25MYWdCdWNrZXRFbnVtLkNv",
+            "bnZlcnNpb25MYWdCdWNrZXQSjwEKI2NvbnZlcnNpb25fb3JfYWRqdXN0bWVu",
+            "dF9sYWdfYnVja2V0GDMgASgOMmIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEu",
+            "ZW51bXMuQ29udmVyc2lvbk9yQWRqdXN0bWVudExhZ0J1Y2tldEVudW0uQ29u",
+            "dmVyc2lvbk9yQWRqdXN0bWVudExhZ0J1Y2tldBIqCgRkYXRlGAQgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEksKC2RheV9vZl93ZWVrGAUg",
+            "ASgOMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuRGF5T2ZXZWVr",
+            "RW51bS5EYXlPZldlZWsSQAoGZGV2aWNlGAEgASgOMjAuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjEuZW51bXMuRGV2aWNlRW51bS5EZXZpY2USeAoaZXh0ZXJu",
+            "YWxfY29udmVyc2lvbl9zb3VyY2UYNyABKA4yVC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5lbnVtcy5FeHRlcm5hbENvbnZlcnNpb25Tb3VyY2VFbnVtLkV4",
+            "dGVybmFsQ29udmVyc2lvblNvdXJjZRI4ChJnZW9fdGFyZ2V0X2FpcnBvcnQY",
+            "QSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNQoPZ2VvX3Rh",
+            "cmdldF9jaXR5GD4gASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjcKEWdlb190YXJnZXRfY291bnR5GEQgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEjkKE2dlb190YXJnZXRfZGlzdHJpY3QYRSABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNgoQZ2VvX3RhcmdldF9tZXRy",
+            "bxg/IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJHCiFnZW9f",
+            "dGFyZ2V0X21vc3Rfc3BlY2lmaWNfbG9jYXRpb24YSCABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUSPAoWZ2VvX3RhcmdldF9wb3N0YWxfY29k",
+            "ZRhHIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI3ChFnZW9f",
+            "dGFyZ2V0X3JlZ2lvbhhAIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZRI2ChBnZW9fdGFyZ2V0X3N0YXRlGEMgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEj4KGWhvdGVsX2Jvb2tpbmdfd2luZG93X2RheXMY",
+            "BiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI0Cg9ob3RlbF9j",
+            "ZW50ZXJfaWQYByABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI5",
+            "ChNob3RlbF9jaGVja19pbl9kYXRlGAggASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEloKGmhvdGVsX2NoZWNrX2luX2RheV9vZl93ZWVrGAkg",
+            "ASgOMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuRGF5T2ZXZWVr",
+            "RW51bS5EYXlPZldlZWsSMAoKaG90ZWxfY2l0eRgKIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgtob3RlbF9jbGFzcxgLIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlEjMKDWhvdGVsX2NvdW50cnkYDCAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUScwoZaG90ZWxfZGF0",
+            "ZV9zZWxlY3Rpb25fdHlwZRgNIAEoDjJQLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxLmVudW1zLkhvdGVsRGF0ZVNlbGVjdGlvblR5cGVFbnVtLkhvdGVsRGF0",
+            "ZVNlbGVjdGlvblR5cGUSOQoUaG90ZWxfbGVuZ3RoX29mX3N0YXkYDiABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRIxCgtob3RlbF9zdGF0ZRgP",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIpCgRob3VyGBAg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUSQQodaW50ZXJhY3Rp",
+            "b25fb25fdGhpc19leHRlbnNpb24YMSABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "Qm9vbFZhbHVlEjgKB2tleXdvcmQYPSABKAsyJy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5jb21tb24uS2V5d29yZBIrCgVtb250aBgRIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJRCg1tb250aF9vZl95ZWFyGBIgASgO",
+            "MjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuTW9udGhPZlllYXJF",
+            "bnVtLk1vbnRoT2ZZZWFyEjYKEHBhcnRuZXJfaG90ZWxfaWQYEyABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSXAoQcGxhY2Vob2xkZXJfdHlw",
+            "ZRgUIAEoDjJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLlBsYWNl",
+            "aG9sZGVyVHlwZUVudW0uUGxhY2Vob2xkZXJUeXBlEjsKFXByb2R1Y3RfYWdn",
+            "cmVnYXRvcl9pZBgcIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5VSW50NjRWYWx1",
+            "ZRJFCh9wcm9kdWN0X2JpZGRpbmdfY2F0ZWdvcnlfbGV2ZWwxGDggASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEkUKH3Byb2R1Y3RfYmlkZGlu",
+            "Z19jYXRlZ29yeV9sZXZlbDIYOSABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWUSRQofcHJvZHVjdF9iaWRkaW5nX2NhdGVnb3J5X2xldmVsMxg6",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJFCh9wcm9kdWN0",
+            "X2JpZGRpbmdfY2F0ZWdvcnlfbGV2ZWw0GDsgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEkUKH3Byb2R1Y3RfYmlkZGluZ19jYXRlZ29yeV9s",
+            "ZXZlbDUYPCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoN",
+            "cHJvZHVjdF9icmFuZBgdIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZRJZCg9wcm9kdWN0X2NoYW5uZWwYHiABKA4yQC5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MS5lbnVtcy5Qcm9kdWN0Q2hhbm5lbEVudW0uUHJvZHVjdENo",
+            "YW5uZWwSewobcHJvZHVjdF9jaGFubmVsX2V4Y2x1c2l2aXR5GB8gASgOMlYu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuUHJvZHVjdENoYW5uZWxF",
+            "eGNsdXNpdml0eUVudW0uUHJvZHVjdENoYW5uZWxFeGNsdXNpdml0eRJfChFw",
+            "cm9kdWN0X2NvbmRpdGlvbhggIAEoDjJELmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxLmVudW1zLlByb2R1Y3RDb25kaXRpb25FbnVtLlByb2R1Y3RDb25kaXRp",
+            "b24SNQoPcHJvZHVjdF9jb3VudHJ5GCEgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlEj8KGXByb2R1Y3RfY3VzdG9tX2F0dHJpYnV0ZTAYIiAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSPwoZcHJvZHVjdF9j",
+            "dXN0b21fYXR0cmlidXRlMRgjIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRI/Chlwcm9kdWN0X2N1c3RvbV9hdHRyaWJ1dGUyGCQgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEj8KGXByb2R1Y3RfY3VzdG9t",
+            "X2F0dHJpYnV0ZTMYJSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWUSPwoZcHJvZHVjdF9jdXN0b21fYXR0cmlidXRlNBgmIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI1Cg9wcm9kdWN0X2l0ZW1faWQYJyAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNgoQcHJvZHVjdF9s",
+            "YW5ndWFnZRgoIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI5",
+            "ChNwcm9kdWN0X21lcmNoYW50X2lkGCkgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlVJbnQ2NFZhbHVlEjYKEHByb2R1Y3Rfc3RvcmVfaWQYKiABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoNcHJvZHVjdF90aXRsZRgrIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI1Cg9wcm9kdWN0X3R5",
+            "cGVfbDEYLCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNQoP",
+            "cHJvZHVjdF90eXBlX2wyGC0gASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEjUKD3Byb2R1Y3RfdHlwZV9sMxguIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5TdHJpbmdWYWx1ZRI1Cg9wcm9kdWN0X3R5cGVfbDQYLyABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNQoPcHJvZHVjdF90eXBlX2w1",
+            "GDAgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEi0KB3F1YXJ0",
+            "ZXIYFSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSgwEKH3Nl",
+            "YXJjaF9lbmdpbmVfcmVzdWx0c19wYWdlX3R5cGUYRiABKA4yWi5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MS5lbnVtcy5TZWFyY2hFbmdpbmVSZXN1bHRzUGFn",
+            "ZVR5cGVFbnVtLlNlYXJjaEVuZ2luZVJlc3VsdHNQYWdlVHlwZRJqChZzZWFy",
+            "Y2hfdGVybV9tYXRjaF90eXBlGBYgASgOMkouZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjEuZW51bXMuU2VhcmNoVGVybU1hdGNoVHlwZUVudW0uU2VhcmNoVGVy",
+            "bU1hdGNoVHlwZRI6CgRzbG90GBcgASgOMiwuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjEuZW51bXMuU2xvdEVudW0uU2xvdBItCgd3ZWJwYWdlGEIgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEioKBHdlZWsYGCABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKQoEeWVhchgZIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlIn4KB0tleXdvcmQSOAoSYWRfZ3Jv",
+            "dXBfY3JpdGVyaW9uGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
+            "bHVlEjkKBGluZm8YAiABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5j",
+            "b21tb24uS2V5d29yZEluZm9C6AEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MS5jb21tb25CDVNlZ21lbnRzUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2NvbW1v",
+            "bjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5Db21t",
+            "b27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMVxDb21tb27qAiJHb29nbGU6",
+            "OkFkczo6R29vZ2xlQWRzOjpWMTo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AdNetworkTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ClickTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ConversionActionCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ConversionAttributionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ConversionLagBucketReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ConversionOrAdjustmentLagBucketReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ExternalConversionSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.HotelDateSelectionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.MonthOfYearReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PlaceholderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductChannelExclusivityReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.SearchTermMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.SlotReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AdNetworkTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ClickTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ConversionActionCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ConversionAttributionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ConversionLagBucketReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ConversionOrAdjustmentLagBucketReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ExternalConversionSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.HotelDateSelectionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.MonthOfYearReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PlaceholderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductChannelExclusivityReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.SearchEngineResultsPageTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.SearchTermMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.SlotReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.Segments), global::Google.Ads.GoogleAds.V1.Common.Segments.Parser, new[]{ "AdNetworkType", "ClickType", "ConversionAction", "ConversionActionCategory", "ConversionActionName", "ConversionAdjustment", "ConversionAttributionEventType", "ConversionLagBucket", "ConversionOrAdjustmentLagBucket", "Date", "DayOfWeek", "Device", "ExternalConversionSource", "GeoTargetAirport", "GeoTargetCity", "GeoTargetMetro", "GeoTargetRegion", "HotelBookingWindowDays", "HotelCenterId", "HotelCheckInDate", "HotelCheckInDayOfWeek", "HotelCity", "HotelClass", "HotelCountry", "HotelDateSelectionType", "HotelLengthOfStay", "HotelState", "Hour", "InteractionOnThisExtension", "Keyword", "Month", "MonthOfYear", "PartnerHotelId", "PlaceholderType", "ProductAggregatorId", "ProductBiddingCategoryLevel1", "ProductBiddingCategoryLevel2", "ProductBiddingCategoryLevel3", "ProductBiddingCategoryLevel4", "ProductBiddingCategoryLevel5", "ProductBrand", "ProductChannel", "ProductChannelExclusivity", "ProductCondition", "ProductCountry", "ProductCustomAttribute0", "ProductCustomAttribute1", "ProductCustomAttribute2", "ProductCustomAttribute3", "ProductCustomAttribute4", "ProductItemId", "ProductLanguage", "ProductMerchantId", "ProductStoreId", "ProductTitle", "ProductTypeL1", "ProductTypeL2", "ProductTypeL3", "ProductTypeL4", "ProductTypeL5", "Quarter", "SearchTermMatchType", "Slot", "Webpage", "Week", "Year" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.Segments), global::Google.Ads.GoogleAds.V1.Common.Segments.Parser, new[]{ "AdNetworkType", "ClickType", "ConversionAction", "ConversionActionCategory", "ConversionActionName", "ConversionAdjustment", "ConversionAttributionEventType", "ConversionLagBucket", "ConversionOrAdjustmentLagBucket", "Date", "DayOfWeek", "Device", "ExternalConversionSource", "GeoTargetAirport", "GeoTargetCity", "GeoTargetCounty", "GeoTargetDistrict", "GeoTargetMetro", "GeoTargetMostSpecificLocation", "GeoTargetPostalCode", "GeoTargetRegion", "GeoTargetState", "HotelBookingWindowDays", "HotelCenterId", "HotelCheckInDate", "HotelCheckInDayOfWeek", "HotelCity", "HotelClass", "HotelCountry", "HotelDateSelectionType", "HotelLengthOfStay", "HotelState", "Hour", "InteractionOnThisExtension", "Keyword", "Month", "MonthOfYear", "PartnerHotelId", "PlaceholderType", "ProductAggregatorId", "ProductBiddingCategoryLevel1", "ProductBiddingCategoryLevel2", "ProductBiddingCategoryLevel3", "ProductBiddingCategoryLevel4", "ProductBiddingCategoryLevel5", "ProductBrand", "ProductChannel", "ProductChannelExclusivity", "ProductCondition", "ProductCountry", "ProductCustomAttribute0", "ProductCustomAttribute1", "ProductCustomAttribute2", "ProductCustomAttribute3", "ProductCustomAttribute4", "ProductItemId", "ProductLanguage", "ProductMerchantId", "ProductStoreId", "ProductTitle", "ProductTypeL1", "ProductTypeL2", "ProductTypeL3", "ProductTypeL4", "ProductTypeL5", "Quarter", "SearchEngineResultsPageType", "SearchTermMatchType", "Slot", "Webpage", "Week", "Year" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.Keyword), global::Google.Ads.GoogleAds.V1.Common.Keyword.Parser, new[]{ "AdGroupCriterion", "Info" }, null, null, null)
           }));
     }
@@ -214,8 +225,13 @@ namespace Google.Ads.GoogleAds.V1.Common {
       externalConversionSource_ = other.externalConversionSource_;
       GeoTargetAirport = other.GeoTargetAirport;
       GeoTargetCity = other.GeoTargetCity;
+      GeoTargetCounty = other.GeoTargetCounty;
+      GeoTargetDistrict = other.GeoTargetDistrict;
       GeoTargetMetro = other.GeoTargetMetro;
+      GeoTargetMostSpecificLocation = other.GeoTargetMostSpecificLocation;
+      GeoTargetPostalCode = other.GeoTargetPostalCode;
       GeoTargetRegion = other.GeoTargetRegion;
+      GeoTargetState = other.GeoTargetState;
       HotelBookingWindowDays = other.HotelBookingWindowDays;
       HotelCenterId = other.HotelCenterId;
       HotelCheckInDate = other.HotelCheckInDate;
@@ -260,6 +276,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
       ProductTypeL4 = other.ProductTypeL4;
       ProductTypeL5 = other.ProductTypeL5;
       Quarter = other.Quarter;
+      searchEngineResultsPageType_ = other.searchEngineResultsPageType_;
       searchTermMatchType_ = other.searchTermMatchType_;
       slot_ = other.slot_;
       Webpage = other.Webpage;
@@ -496,6 +513,36 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
     }
 
+    /// <summary>Field number for the "geo_target_county" field.</summary>
+    public const int GeoTargetCountyFieldNumber = 68;
+    private static readonly pb::FieldCodec<string> _single_geoTargetCounty_codec = pb::FieldCodec.ForClassWrapper<string>(546);
+    private string geoTargetCounty_;
+    /// <summary>
+    /// Resource name of the geo target constant that represents a county.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GeoTargetCounty {
+      get { return geoTargetCounty_; }
+      set {
+        geoTargetCounty_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "geo_target_district" field.</summary>
+    public const int GeoTargetDistrictFieldNumber = 69;
+    private static readonly pb::FieldCodec<string> _single_geoTargetDistrict_codec = pb::FieldCodec.ForClassWrapper<string>(554);
+    private string geoTargetDistrict_;
+    /// <summary>
+    /// Resource name of the geo target constant that represents a district.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GeoTargetDistrict {
+      get { return geoTargetDistrict_; }
+      set {
+        geoTargetDistrict_ = value;
+      }
+    }
+
     /// <summary>Field number for the "geo_target_metro" field.</summary>
     public const int GeoTargetMetroFieldNumber = 63;
     private static readonly pb::FieldCodec<string> _single_geoTargetMetro_codec = pb::FieldCodec.ForClassWrapper<string>(506);
@@ -511,6 +558,37 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
     }
 
+    /// <summary>Field number for the "geo_target_most_specific_location" field.</summary>
+    public const int GeoTargetMostSpecificLocationFieldNumber = 72;
+    private static readonly pb::FieldCodec<string> _single_geoTargetMostSpecificLocation_codec = pb::FieldCodec.ForClassWrapper<string>(578);
+    private string geoTargetMostSpecificLocation_;
+    /// <summary>
+    /// Resource name of the geo target constant that represents the most
+    /// specific location.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GeoTargetMostSpecificLocation {
+      get { return geoTargetMostSpecificLocation_; }
+      set {
+        geoTargetMostSpecificLocation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "geo_target_postal_code" field.</summary>
+    public const int GeoTargetPostalCodeFieldNumber = 71;
+    private static readonly pb::FieldCodec<string> _single_geoTargetPostalCode_codec = pb::FieldCodec.ForClassWrapper<string>(570);
+    private string geoTargetPostalCode_;
+    /// <summary>
+    /// Resource name of the geo target constant that represents a postal code.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GeoTargetPostalCode {
+      get { return geoTargetPostalCode_; }
+      set {
+        geoTargetPostalCode_ = value;
+      }
+    }
+
     /// <summary>Field number for the "geo_target_region" field.</summary>
     public const int GeoTargetRegionFieldNumber = 64;
     private static readonly pb::FieldCodec<string> _single_geoTargetRegion_codec = pb::FieldCodec.ForClassWrapper<string>(514);
@@ -523,6 +601,21 @@ namespace Google.Ads.GoogleAds.V1.Common {
       get { return geoTargetRegion_; }
       set {
         geoTargetRegion_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "geo_target_state" field.</summary>
+    public const int GeoTargetStateFieldNumber = 67;
+    private static readonly pb::FieldCodec<string> _single_geoTargetState_codec = pb::FieldCodec.ForClassWrapper<string>(538);
+    private string geoTargetState_;
+    /// <summary>
+    /// Resource name of the geo target constant that represents a state.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string GeoTargetState {
+      get { return geoTargetState_; }
+      set {
+        geoTargetState_ = value;
       }
     }
 
@@ -1184,6 +1277,20 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
     }
 
+    /// <summary>Field number for the "search_engine_results_page_type" field.</summary>
+    public const int SearchEngineResultsPageTypeFieldNumber = 70;
+    private global::Google.Ads.GoogleAds.V1.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType searchEngineResultsPageType_ = 0;
+    /// <summary>
+    /// Type of the search engine results page.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType SearchEngineResultsPageType {
+      get { return searchEngineResultsPageType_; }
+      set {
+        searchEngineResultsPageType_ = value;
+      }
+    }
+
     /// <summary>Field number for the "search_term_match_type" field.</summary>
     public const int SearchTermMatchTypeFieldNumber = 22;
     private global::Google.Ads.GoogleAds.V1.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType searchTermMatchType_ = 0;
@@ -1286,8 +1393,13 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (ExternalConversionSource != other.ExternalConversionSource) return false;
       if (GeoTargetAirport != other.GeoTargetAirport) return false;
       if (GeoTargetCity != other.GeoTargetCity) return false;
+      if (GeoTargetCounty != other.GeoTargetCounty) return false;
+      if (GeoTargetDistrict != other.GeoTargetDistrict) return false;
       if (GeoTargetMetro != other.GeoTargetMetro) return false;
+      if (GeoTargetMostSpecificLocation != other.GeoTargetMostSpecificLocation) return false;
+      if (GeoTargetPostalCode != other.GeoTargetPostalCode) return false;
       if (GeoTargetRegion != other.GeoTargetRegion) return false;
+      if (GeoTargetState != other.GeoTargetState) return false;
       if (HotelBookingWindowDays != other.HotelBookingWindowDays) return false;
       if (HotelCenterId != other.HotelCenterId) return false;
       if (HotelCheckInDate != other.HotelCheckInDate) return false;
@@ -1332,6 +1444,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (ProductTypeL4 != other.ProductTypeL4) return false;
       if (ProductTypeL5 != other.ProductTypeL5) return false;
       if (Quarter != other.Quarter) return false;
+      if (SearchEngineResultsPageType != other.SearchEngineResultsPageType) return false;
       if (SearchTermMatchType != other.SearchTermMatchType) return false;
       if (Slot != other.Slot) return false;
       if (Webpage != other.Webpage) return false;
@@ -1358,8 +1471,13 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (ExternalConversionSource != 0) hash ^= ExternalConversionSource.GetHashCode();
       if (geoTargetAirport_ != null) hash ^= GeoTargetAirport.GetHashCode();
       if (geoTargetCity_ != null) hash ^= GeoTargetCity.GetHashCode();
+      if (geoTargetCounty_ != null) hash ^= GeoTargetCounty.GetHashCode();
+      if (geoTargetDistrict_ != null) hash ^= GeoTargetDistrict.GetHashCode();
       if (geoTargetMetro_ != null) hash ^= GeoTargetMetro.GetHashCode();
+      if (geoTargetMostSpecificLocation_ != null) hash ^= GeoTargetMostSpecificLocation.GetHashCode();
+      if (geoTargetPostalCode_ != null) hash ^= GeoTargetPostalCode.GetHashCode();
       if (geoTargetRegion_ != null) hash ^= GeoTargetRegion.GetHashCode();
+      if (geoTargetState_ != null) hash ^= GeoTargetState.GetHashCode();
       if (hotelBookingWindowDays_ != null) hash ^= HotelBookingWindowDays.GetHashCode();
       if (hotelCenterId_ != null) hash ^= HotelCenterId.GetHashCode();
       if (hotelCheckInDate_ != null) hash ^= HotelCheckInDate.GetHashCode();
@@ -1404,6 +1522,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (productTypeL4_ != null) hash ^= ProductTypeL4.GetHashCode();
       if (productTypeL5_ != null) hash ^= ProductTypeL5.GetHashCode();
       if (quarter_ != null) hash ^= Quarter.GetHashCode();
+      if (SearchEngineResultsPageType != 0) hash ^= SearchEngineResultsPageType.GetHashCode();
       if (SearchTermMatchType != 0) hash ^= SearchTermMatchType.GetHashCode();
       if (Slot != 0) hash ^= Slot.GetHashCode();
       if (webpage_ != null) hash ^= Webpage.GetHashCode();
@@ -1639,6 +1758,25 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (webpage_ != null) {
         _single_webpage_codec.WriteTagAndValue(output, Webpage);
       }
+      if (geoTargetState_ != null) {
+        _single_geoTargetState_codec.WriteTagAndValue(output, GeoTargetState);
+      }
+      if (geoTargetCounty_ != null) {
+        _single_geoTargetCounty_codec.WriteTagAndValue(output, GeoTargetCounty);
+      }
+      if (geoTargetDistrict_ != null) {
+        _single_geoTargetDistrict_codec.WriteTagAndValue(output, GeoTargetDistrict);
+      }
+      if (SearchEngineResultsPageType != 0) {
+        output.WriteRawTag(176, 4);
+        output.WriteEnum((int) SearchEngineResultsPageType);
+      }
+      if (geoTargetPostalCode_ != null) {
+        _single_geoTargetPostalCode_codec.WriteTagAndValue(output, GeoTargetPostalCode);
+      }
+      if (geoTargetMostSpecificLocation_ != null) {
+        _single_geoTargetMostSpecificLocation_codec.WriteTagAndValue(output, GeoTargetMostSpecificLocation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1692,11 +1830,26 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (geoTargetCity_ != null) {
         size += _single_geoTargetCity_codec.CalculateSizeWithTag(GeoTargetCity);
       }
+      if (geoTargetCounty_ != null) {
+        size += _single_geoTargetCounty_codec.CalculateSizeWithTag(GeoTargetCounty);
+      }
+      if (geoTargetDistrict_ != null) {
+        size += _single_geoTargetDistrict_codec.CalculateSizeWithTag(GeoTargetDistrict);
+      }
       if (geoTargetMetro_ != null) {
         size += _single_geoTargetMetro_codec.CalculateSizeWithTag(GeoTargetMetro);
       }
+      if (geoTargetMostSpecificLocation_ != null) {
+        size += _single_geoTargetMostSpecificLocation_codec.CalculateSizeWithTag(GeoTargetMostSpecificLocation);
+      }
+      if (geoTargetPostalCode_ != null) {
+        size += _single_geoTargetPostalCode_codec.CalculateSizeWithTag(GeoTargetPostalCode);
+      }
       if (geoTargetRegion_ != null) {
         size += _single_geoTargetRegion_codec.CalculateSizeWithTag(GeoTargetRegion);
+      }
+      if (geoTargetState_ != null) {
+        size += _single_geoTargetState_codec.CalculateSizeWithTag(GeoTargetState);
       }
       if (hotelBookingWindowDays_ != null) {
         size += _single_hotelBookingWindowDays_codec.CalculateSizeWithTag(HotelBookingWindowDays);
@@ -1830,6 +1983,9 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (quarter_ != null) {
         size += _single_quarter_codec.CalculateSizeWithTag(Quarter);
       }
+      if (SearchEngineResultsPageType != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) SearchEngineResultsPageType);
+      }
       if (SearchTermMatchType != 0) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) SearchTermMatchType);
       }
@@ -1913,14 +2069,39 @@ namespace Google.Ads.GoogleAds.V1.Common {
           GeoTargetCity = other.GeoTargetCity;
         }
       }
+      if (other.geoTargetCounty_ != null) {
+        if (geoTargetCounty_ == null || other.GeoTargetCounty != "") {
+          GeoTargetCounty = other.GeoTargetCounty;
+        }
+      }
+      if (other.geoTargetDistrict_ != null) {
+        if (geoTargetDistrict_ == null || other.GeoTargetDistrict != "") {
+          GeoTargetDistrict = other.GeoTargetDistrict;
+        }
+      }
       if (other.geoTargetMetro_ != null) {
         if (geoTargetMetro_ == null || other.GeoTargetMetro != "") {
           GeoTargetMetro = other.GeoTargetMetro;
         }
       }
+      if (other.geoTargetMostSpecificLocation_ != null) {
+        if (geoTargetMostSpecificLocation_ == null || other.GeoTargetMostSpecificLocation != "") {
+          GeoTargetMostSpecificLocation = other.GeoTargetMostSpecificLocation;
+        }
+      }
+      if (other.geoTargetPostalCode_ != null) {
+        if (geoTargetPostalCode_ == null || other.GeoTargetPostalCode != "") {
+          GeoTargetPostalCode = other.GeoTargetPostalCode;
+        }
+      }
       if (other.geoTargetRegion_ != null) {
         if (geoTargetRegion_ == null || other.GeoTargetRegion != "") {
           GeoTargetRegion = other.GeoTargetRegion;
+        }
+      }
+      if (other.geoTargetState_ != null) {
+        if (geoTargetState_ == null || other.GeoTargetState != "") {
+          GeoTargetState = other.GeoTargetState;
         }
       }
       if (other.hotelBookingWindowDays_ != null) {
@@ -2129,6 +2310,9 @@ namespace Google.Ads.GoogleAds.V1.Common {
         if (quarter_ == null || other.Quarter != "") {
           Quarter = other.Quarter;
         }
+      }
+      if (other.SearchEngineResultsPageType != 0) {
+        SearchEngineResultsPageType = other.SearchEngineResultsPageType;
       }
       if (other.SearchTermMatchType != 0) {
         SearchTermMatchType = other.SearchTermMatchType;
@@ -2567,6 +2751,45 @@ namespace Google.Ads.GoogleAds.V1.Common {
             string value = _single_webpage_codec.Read(input);
             if (webpage_ == null || value != "") {
               Webpage = value;
+            }
+            break;
+          }
+          case 538: {
+            string value = _single_geoTargetState_codec.Read(input);
+            if (geoTargetState_ == null || value != "") {
+              GeoTargetState = value;
+            }
+            break;
+          }
+          case 546: {
+            string value = _single_geoTargetCounty_codec.Read(input);
+            if (geoTargetCounty_ == null || value != "") {
+              GeoTargetCounty = value;
+            }
+            break;
+          }
+          case 554: {
+            string value = _single_geoTargetDistrict_codec.Read(input);
+            if (geoTargetDistrict_ == null || value != "") {
+              GeoTargetDistrict = value;
+            }
+            break;
+          }
+          case 560: {
+            searchEngineResultsPageType_ = (global::Google.Ads.GoogleAds.V1.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType) input.ReadEnum();
+            break;
+          }
+          case 570: {
+            string value = _single_geoTargetPostalCode_codec.Read(input);
+            if (geoTargetPostalCode_ == null || value != "") {
+              GeoTargetPostalCode = value;
+            }
+            break;
+          }
+          case 578: {
+            string value = _single_geoTargetMostSpecificLocation_codec.Read(input);
+            if (geoTargetMostSpecificLocation_ == null || value != "") {
+              GeoTargetMostSpecificLocation = value;
             }
             break;
           }

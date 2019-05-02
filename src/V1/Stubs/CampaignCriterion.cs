@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "dXJjZXMaLWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2NvbW1vbi9jcml0ZXJp",
             "YS5wcm90bxoyZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjEvZW51bXMvY3JpdGVy",
             "aW9uX3R5cGUucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90",
-            "bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLEEAoRQ2FtcGFpZ25D",
+            "bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKREQoRQ2FtcGFpZ25D",
             "cml0ZXJpb24SFQoNcmVzb3VyY2VfbmFtZRgBIAEoCRIuCghjYW1wYWlnbhgE",
             "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgxjcml0ZXJp",
             "b25faWQYBSABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIxCgxi",
@@ -76,17 +76,19 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "c3lzdGVtX3ZlcnNpb24YICABKAsyOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
             "MS5jb21tb24uT3BlcmF0aW5nU3lzdGVtVmVyc2lvbkluZm9IABJJCg1tb2Jp",
             "bGVfZGV2aWNlGCEgASgLMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29t",
-            "bW9uLk1vYmlsZURldmljZUluZm9IAEILCgljcml0ZXJpb25CgwIKJWNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5yZXNvdXJjZXNCFkNhbXBhaWduQ3Jp",
-            "dGVyaW9uUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
-            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL3Jlc291cmNlcztyZXNvdXJjZXOi",
-            "AgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5SZXNvdXJjZXPKAiFH",
-            "b29nbGVcQWRzXEdvb2dsZUFkc1xWMVxSZXNvdXJjZXPqAiVHb29nbGU6OkFk",
-            "czo6R29vZ2xlQWRzOjpWMTo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "bW9uLk1vYmlsZURldmljZUluZm9IABJLCg5sb2NhdGlvbl9ncm91cBgiIAEo",
+            "CzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Mb2NhdGlvbkdy",
+            "b3VwSW5mb0gAQgsKCWNyaXRlcmlvbkKDAgolY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYxLnJlc291cmNlc0IWQ2FtcGFpZ25Dcml0ZXJpb25Qcm90b1AB",
+            "Wkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
+            "b29nbGVhZHMvdjEvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2ds",
+            "ZS5BZHMuR29vZ2xlQWRzLlYxLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYxXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
+            "OlYxOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.CriterionTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.CampaignCriterion), global::Google.Ads.GoogleAds.V1.Resources.CampaignCriterion.Parser, new[]{ "ResourceName", "Campaign", "CriterionId", "BidModifier", "Negative", "Type", "Keyword", "Placement", "MobileAppCategory", "MobileApplication", "Location", "Device", "AdSchedule", "AgeRange", "Gender", "IncomeRange", "ParentalStatus", "UserList", "YoutubeVideo", "YoutubeChannel", "Proximity", "Topic", "ListingScope", "Language", "IpBlock", "ContentLabel", "Carrier", "UserInterest", "Webpage", "OperatingSystemVersion", "MobileDevice" }, new[]{ "Criterion" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.CampaignCriterion), global::Google.Ads.GoogleAds.V1.Resources.CampaignCriterion.Parser, new[]{ "ResourceName", "Campaign", "CriterionId", "BidModifier", "Negative", "Type", "Keyword", "Placement", "MobileAppCategory", "MobileApplication", "Location", "Device", "AdSchedule", "AgeRange", "Gender", "IncomeRange", "ParentalStatus", "UserList", "YoutubeVideo", "YoutubeChannel", "Proximity", "Topic", "ListingScope", "Language", "IpBlock", "ContentLabel", "Carrier", "UserInterest", "Webpage", "OperatingSystemVersion", "MobileDevice", "LocationGroup" }, new[]{ "Criterion" }, null, null)
           }));
     }
     #endregion
@@ -202,6 +204,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           break;
         case CriterionOneofCase.MobileDevice:
           MobileDevice = other.MobileDevice.Clone();
+          break;
+        case CriterionOneofCase.LocationGroup:
+          LocationGroup = other.LocationGroup.Clone();
           break;
       }
 
@@ -658,6 +663,20 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
     }
 
+    /// <summary>Field number for the "location_group" field.</summary>
+    public const int LocationGroupFieldNumber = 34;
+    /// <summary>
+    /// Location Group
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.LocationGroupInfo LocationGroup {
+      get { return criterionCase_ == CriterionOneofCase.LocationGroup ? (global::Google.Ads.GoogleAds.V1.Common.LocationGroupInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.LocationGroup;
+      }
+    }
+
     private object criterion_;
     /// <summary>Enum of possible cases for the "criterion" oneof.</summary>
     public enum CriterionOneofCase {
@@ -687,6 +706,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       Webpage = 31,
       OperatingSystemVersion = 32,
       MobileDevice = 33,
+      LocationGroup = 34,
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -744,6 +764,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (!object.Equals(Webpage, other.Webpage)) return false;
       if (!object.Equals(OperatingSystemVersion, other.OperatingSystemVersion)) return false;
       if (!object.Equals(MobileDevice, other.MobileDevice)) return false;
+      if (!object.Equals(LocationGroup, other.LocationGroup)) return false;
       if (CriterionCase != other.CriterionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -782,6 +803,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (criterionCase_ == CriterionOneofCase.Webpage) hash ^= Webpage.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.OperatingSystemVersion) hash ^= OperatingSystemVersion.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.MobileDevice) hash ^= MobileDevice.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.LocationGroup) hash ^= LocationGroup.GetHashCode();
       hash ^= (int) criterionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -916,6 +938,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteRawTag(138, 2);
         output.WriteMessage(MobileDevice);
       }
+      if (criterionCase_ == CriterionOneofCase.LocationGroup) {
+        output.WriteRawTag(146, 2);
+        output.WriteMessage(LocationGroup);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1016,6 +1042,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
       if (criterionCase_ == CriterionOneofCase.MobileDevice) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(MobileDevice);
+      }
+      if (criterionCase_ == CriterionOneofCase.LocationGroup) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LocationGroup);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1204,6 +1233,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             MobileDevice = new global::Google.Ads.GoogleAds.V1.Common.MobileDeviceInfo();
           }
           MobileDevice.MergeFrom(other.MobileDevice);
+          break;
+        case CriterionOneofCase.LocationGroup:
+          if (LocationGroup == null) {
+            LocationGroup = new global::Google.Ads.GoogleAds.V1.Common.LocationGroupInfo();
+          }
+          LocationGroup.MergeFrom(other.LocationGroup);
           break;
       }
 
@@ -1477,6 +1512,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             }
             input.ReadMessage(subBuilder);
             MobileDevice = subBuilder;
+            break;
+          }
+          case 274: {
+            global::Google.Ads.GoogleAds.V1.Common.LocationGroupInfo subBuilder = new global::Google.Ads.GoogleAds.V1.Common.LocationGroupInfo();
+            if (criterionCase_ == CriterionOneofCase.LocationGroup) {
+              subBuilder.MergeFrom(LocationGroup);
+            }
+            input.ReadMessage(subBuilder);
+            LocationGroup = subBuilder;
             break;
           }
         }
