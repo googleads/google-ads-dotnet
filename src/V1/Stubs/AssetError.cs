@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvYXNzZXRfZXJyb3Iu",
             "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9ycxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byK0AQoOQXNzZXRFcnJvckVudW0ioQEK",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byLSAQoOQXNzZXRFcnJvckVudW0ivwEK",
             "CkFzc2V0RXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESKwon",
             "Q1VTVE9NRVJfTk9UX1dISVRFTElTVEVEX0ZPUl9BU1NFVF9UWVBFEAISEwoP",
             "RFVQTElDQVRFX0FTU0VUEAMSGAoURFVQTElDQVRFX0FTU0VUX05BTUUQBBIZ",
-            "ChVBU1NFVF9EQVRBX0lTX01JU1NJTkcQBULqAQoiY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxLmVycm9yc0IPQXNzZXRFcnJvclByb3RvUAFaRGdvb2ds",
-            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
-            "cy92MS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjEuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRXJyb3Jz",
-            "6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkVycm9yc2IGcHJvdG8z"));
+            "ChVBU1NFVF9EQVRBX0lTX01JU1NJTkcQBRIcChhDQU5OT1RfTU9ESUZZX0FT",
+            "U0VUX05BTUUQBkLqAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVy",
+            "cm9yc0IPQXNzZXRFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dl",
+            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnM7ZXJy",
+            "b3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEuRXJyb3JzygIe",
+            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6",
+            "Okdvb2dsZUFkczo6VjE6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -181,6 +182,11 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// The Asset.asset_data oneof is empty.
         /// </summary>
         [pbr::OriginalName("ASSET_DATA_IS_MISSING")] AssetDataIsMissing = 5,
+        /// <summary>
+        /// The asset has a name which is different from an existing duplicate that
+        /// represents the same content.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_MODIFY_ASSET_NAME")] CannotModifyAssetName = 6,
       }
 
     }

@@ -268,7 +268,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         [pbr::OriginalName("CALLTRACKING_NOT_SUPPORTED_FOR_COUNTRY")] CalltrackingNotSupportedForCountry = 16,
         /// <summary>
         /// Customer hasn't consented for call recording, which is required for
-        /// creating/updating call feed items.
+        /// creating/updating call feed items. Please see
+        /// https://support.google.com/google-ads/answer/7412639.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_CONSENT_FOR_CALL_RECORDING_REQUIRED")] CustomerConsentForCallRecordingRequired = 17,
         /// <summary>

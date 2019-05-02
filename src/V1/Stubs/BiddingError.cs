@@ -269,11 +269,11 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// </summary>
         [pbr::OriginalName("INVALID_DOMAIN_NAME")] InvalidDomainName = 33,
         /// <summary>
-        /// The field is not compatible with payment mode.
+        /// The field is not compatible with the payment mode.
         /// </summary>
         [pbr::OriginalName("NOT_COMPATIBLE_WITH_PAYMENT_MODE")] NotCompatibleWithPaymentMode = 34,
         /// <summary>
-        /// Bidding strategy is incompatible with the budget type.
+        /// The field is not compatible with the budget type.
         /// </summary>
         [pbr::OriginalName("NOT_COMPATIBLE_WITH_BUDGET_TYPE")] NotCompatibleWithBudgetType = 35,
       }

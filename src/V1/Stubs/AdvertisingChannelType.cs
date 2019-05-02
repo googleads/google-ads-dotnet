@@ -187,8 +187,8 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// </summary>
         [pbr::OriginalName("VIDEO")] Video = 6,
         /// <summary>
-        /// Universal App Campaigns, including universal app install and universal
-        /// app reengagement campaigns, that run across multiple channels.
+        /// App Campaigns, and App Campaigns for Engagement, that run
+        /// across multiple channels.
         /// </summary>
         [pbr::OriginalName("MULTI_CHANNEL")] MultiChannel = 7,
       }

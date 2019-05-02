@@ -26,10 +26,12 @@ namespace Google.Ads.GoogleAds.V1.Services
     public abstract partial class AdGroupBidModifierServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupCriterionLabelServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupCriterionServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class AdGroupCriterionSimulationServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupExtensionSettingServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupFeedServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupLabelServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class AdGroupSimulationServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdParameterServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdScheduleViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AgeRangeViewServiceClient : GoogleAdsServiceClientBase {}
@@ -40,6 +42,7 @@ namespace Google.Ads.GoogleAds.V1.Services
     public abstract partial class CampaignBidModifierServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignBudgetServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignCriterionServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class CampaignCriterionSimulationServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignExtensionSettingServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignFeedServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignLabelServiceClient : GoogleAdsServiceClientBase {}
@@ -64,6 +67,7 @@ namespace Google.Ads.GoogleAds.V1.Services
     public abstract partial class DisplayKeywordViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class DomainCategoryServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class DynamicSearchAdsSearchTermViewServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class ExpandedLandingPageViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ExtensionFeedItemServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class FeedItemServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class FeedItemTargetServiceClient : GoogleAdsServiceClientBase {}
@@ -86,6 +90,7 @@ namespace Google.Ads.GoogleAds.V1.Services
     public abstract partial class KeywordPlanServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class KeywordViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class LabelServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class LandingPageViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class LanguageConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class LocationViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ManagedPlacementViewServiceClient : GoogleAdsServiceClientBase {}
@@ -95,6 +100,7 @@ namespace Google.Ads.GoogleAds.V1.Services
     public abstract partial class MobileDeviceConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class MutateJobServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class OperatingSystemVersionConstantServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class PaidOrganicSearchTermViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ParentalStatusViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class PaymentsAccountServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ProductBiddingCategoryConstantServiceClient : GoogleAdsServiceClientBase {}

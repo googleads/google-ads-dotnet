@@ -61,80 +61,104 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "YXRlGAYgASgOMlwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuQ2Fs",
             "bENvbnZlcnNpb25SZXBvcnRpbmdTdGF0ZUVudW0uQ2FsbENvbnZlcnNpb25S",
             "ZXBvcnRpbmdTdGF0ZSJFCg9DYWxsb3V0RmVlZEl0ZW0SMgoMY2FsbG91dF90",
-            "ZXh0GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIpQCChNU",
-            "ZXh0TWVzc2FnZUZlZWRJdGVtEjMKDWJ1c2luZXNzX25hbWUYASABKAsyHC5n",
-            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMgoMY291bnRyeV9jb2RlGAIg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjIKDHBob25lX251",
-            "bWJlchgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIqCgR0",
-            "ZXh0GAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjQKDmV4",
-            "dGVuc2lvbl90ZXh0GAUgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
-            "bHVlIs0DCg1QcmljZUZlZWRJdGVtElYKBHR5cGUYASABKA4ySC5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MS5lbnVtcy5QcmljZUV4dGVuc2lvblR5cGVFbnVt",
-            "LlByaWNlRXh0ZW5zaW9uVHlwZRJ1Cg9wcmljZV9xdWFsaWZpZXIYAiABKA4y",
-            "XC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5QcmljZUV4dGVuc2lv",
-            "blByaWNlUXVhbGlmaWVyRW51bS5QcmljZUV4dGVuc2lvblByaWNlUXVhbGlm",
-            "aWVyEjsKFXRyYWNraW5nX3VybF90ZW1wbGF0ZRgDIAEoCzIcLmdvb2dsZS5w",
-            "cm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1sYW5ndWFnZV9jb2RlGAQgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEkMKD3ByaWNlX29mZmVyaW5n",
-            "cxgFIAMoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Qcmlj",
-            "ZU9mZmVyEjYKEGZpbmFsX3VybF9zdWZmaXgYBiABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUi8AIKClByaWNlT2ZmZXISLAoGaGVhZGVyGAEg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjEKC2Rlc2NyaXB0",
-            "aW9uGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjQKBXBy",
-            "aWNlGAMgASgLMiUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLk1v",
-            "bmV5EmAKBHVuaXQYBCABKA4yUi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5l",
-            "bnVtcy5QcmljZUV4dGVuc2lvblByaWNlVW5pdEVudW0uUHJpY2VFeHRlbnNp",
-            "b25QcmljZVVuaXQSMAoKZmluYWxfdXJscxgFIAMoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRI3ChFmaW5hbF9tb2JpbGVfdXJscxgGIAMoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSKyCAoRUHJvbW90aW9uRmVl",
-            "ZEl0ZW0SNgoQcHJvbW90aW9uX3RhcmdldBgBIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRKDAQoRZGlzY291bnRfbW9kaWZpZXIYAiABKA4y",
-            "aC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5Qcm9tb3Rpb25FeHRl",
-            "bnNpb25EaXNjb3VudE1vZGlmaWVyRW51bS5Qcm9tb3Rpb25FeHRlbnNpb25E",
-            "aXNjb3VudE1vZGlmaWVyEjoKFHByb21vdGlvbl9zdGFydF9kYXRlGAcgASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjgKEnByb21vdGlvbl9l",
-            "bmRfZGF0ZRgIIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJq",
-            "CghvY2Nhc2lvbhgJIAEoDjJYLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVu",
-            "dW1zLlByb21vdGlvbkV4dGVuc2lvbk9jY2FzaW9uRW51bS5Qcm9tb3Rpb25F",
-            "eHRlbnNpb25PY2Nhc2lvbhIwCgpmaW5hbF91cmxzGAogAygLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEjcKEWZpbmFsX21vYmlsZV91cmxzGAsg",
-            "AygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjsKFXRyYWNraW5n",
-            "X3VybF90ZW1wbGF0ZRgMIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZRJOChV1cmxfY3VzdG9tX3BhcmFtZXRlcnMYDSADKAsyLy5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MS5jb21tb24uQ3VzdG9tUGFyYW1ldGVyEjYKEGZp",
-            "bmFsX3VybF9zdWZmaXgYDiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUSMwoNbGFuZ3VhZ2VfY29kZRgPIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRIyCgtwZXJjZW50X29mZhgDIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5JbnQ2NFZhbHVlSAASQQoQbW9uZXlfYW1vdW50X29mZhgEIAEo",
-            "CzIlLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Nb25leUgAEjYK",
-            "DnByb21vdGlvbl9jb2RlGAUgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlSAESQwoSb3JkZXJzX292ZXJfYW1vdW50GAYgASgLMiUuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjEuY29tbW9uLk1vbmV5SAFCDwoNZGlzY291bnRf",
-            "dHlwZUITChFwcm9tb3Rpb25fdHJpZ2dlciJ3ChlTdHJ1Y3R1cmVkU25pcHBl",
-            "dEZlZWRJdGVtEiwKBmhlYWRlchgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRIsCgZ2YWx1ZXMYAiADKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUizQMKEFNpdGVsaW5rRmVlZEl0ZW0SLwoJbGlua190ZXh0",
-            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEisKBWxpbmUx",
-            "GAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEisKBWxpbmUy",
-            "GAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjAKCmZpbmFs",
-            "X3VybHMYBCADKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNwoR",
-            "ZmluYWxfbW9iaWxlX3VybHMYBSADKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
-            "aW5nVmFsdWUSOwoVdHJhY2tpbmdfdXJsX3RlbXBsYXRlGAYgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEk4KFXVybF9jdXN0b21fcGFyYW1l",
-            "dGVycxgHIAMoCzIvLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5D",
-            "dXN0b21QYXJhbWV0ZXISNgoQZmluYWxfdXJsX3N1ZmZpeBgIIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZULqAQoiY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxLmNvbW1vbkIPRXh0ZW5zaW9uc1Byb3RvUAFaRGdvb2ds",
-            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
-            "cy92MS9jb21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjEuQ29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcQ29tbW9u",
-            "6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkNvbW1vbmIGcHJvdG8z"));
+            "ZXh0GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIqoDChBM",
+            "b2NhdGlvbkZlZWRJdGVtEjMKDWJ1c2luZXNzX25hbWUYASABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNAoOYWRkcmVzc19saW5lXzEYAiAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNAoOYWRkcmVzc19s",
+            "aW5lXzIYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKgoE",
+            "Y2l0eRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIuCghw",
+            "cm92aW5jZRgFIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIx",
+            "Cgtwb3N0YWxfY29kZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZRIyCgxjb3VudHJ5X2NvZGUYByABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "U3RyaW5nVmFsdWUSMgoMcGhvbmVfbnVtYmVyGAggASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlIpQEChlBZmZpbGlhdGVMb2NhdGlvbkZlZWRJ",
+            "dGVtEjMKDWJ1c2luZXNzX25hbWUYASABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "U3RyaW5nVmFsdWUSNAoOYWRkcmVzc19saW5lXzEYAiABKAsyHC5nb29nbGUu",
+            "cHJvdG9idWYuU3RyaW5nVmFsdWUSNAoOYWRkcmVzc19saW5lXzIYAyABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKgoEY2l0eRgEIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIuCghwcm92aW5jZRgFIAEo",
+            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgtwb3N0YWxfY29k",
+            "ZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIyCgxjb3Vu",
+            "dHJ5X2NvZGUYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
+            "MgoMcGhvbmVfbnVtYmVyGAggASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlEi0KCGNoYWluX2lkGAkgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
+            "dDY0VmFsdWUSMAoKY2hhaW5fbmFtZRgKIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZSKUAgoTVGV4dE1lc3NhZ2VGZWVkSXRlbRIzCg1idXNp",
+            "bmVzc19uYW1lGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjIKDGNvdW50cnlfY29kZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRIyCgxwaG9uZV9udW1iZXIYAyABKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUSKgoEdGV4dBgEIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZRI0Cg5leHRlbnNpb25fdGV4dBgFIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSLNAwoNUHJpY2VGZWVkSXRlbRJWCgR0",
+            "eXBlGAEgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuUHJp",
+            "Y2VFeHRlbnNpb25UeXBlRW51bS5QcmljZUV4dGVuc2lvblR5cGUSdQoPcHJp",
+            "Y2VfcXVhbGlmaWVyGAIgASgOMlwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEu",
+            "ZW51bXMuUHJpY2VFeHRlbnNpb25QcmljZVF1YWxpZmllckVudW0uUHJpY2VF",
+            "eHRlbnNpb25QcmljZVF1YWxpZmllchI7ChV0cmFja2luZ191cmxfdGVtcGxh",
+            "dGUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMwoNbGFu",
+            "Z3VhZ2VfY29kZRgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZRJDCg9wcmljZV9vZmZlcmluZ3MYBSADKAsyKi5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5jb21tb24uUHJpY2VPZmZlchI2ChBmaW5hbF91cmxfc3VmZml4",
+            "GAYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIvACCgpQcmlj",
+            "ZU9mZmVyEiwKBmhlYWRlchgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRIxCgtkZXNjcmlwdGlvbhgCIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZRI0CgVwcmljZRgDIAEoCzIlLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYxLmNvbW1vbi5Nb25leRJgCgR1bml0GAQgASgOMlIuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjEuZW51bXMuUHJpY2VFeHRlbnNpb25QcmljZVVu",
+            "aXRFbnVtLlByaWNlRXh0ZW5zaW9uUHJpY2VVbml0EjAKCmZpbmFsX3VybHMY",
+            "BSADKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNwoRZmluYWxf",
+            "bW9iaWxlX3VybHMYBiADKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWUisggKEVByb21vdGlvbkZlZWRJdGVtEjYKEHByb21vdGlvbl90YXJnZXQY",
+            "ASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSgwEKEWRpc2Nv",
+            "dW50X21vZGlmaWVyGAIgASgOMmguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEu",
+            "ZW51bXMuUHJvbW90aW9uRXh0ZW5zaW9uRGlzY291bnRNb2RpZmllckVudW0u",
+            "UHJvbW90aW9uRXh0ZW5zaW9uRGlzY291bnRNb2RpZmllchI6ChRwcm9tb3Rp",
+            "b25fc3RhcnRfZGF0ZRgHIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZRI4ChJwcm9tb3Rpb25fZW5kX2RhdGUYCCABKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUSagoIb2NjYXNpb24YCSABKA4yWC5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MS5lbnVtcy5Qcm9tb3Rpb25FeHRlbnNpb25PY2Nh",
+            "c2lvbkVudW0uUHJvbW90aW9uRXh0ZW5zaW9uT2NjYXNpb24SMAoKZmluYWxf",
+            "dXJscxgKIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI3ChFm",
+            "aW5hbF9tb2JpbGVfdXJscxgLIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRI7ChV0cmFja2luZ191cmxfdGVtcGxhdGUYDCABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSTgoVdXJsX2N1c3RvbV9wYXJhbWV0",
+            "ZXJzGA0gAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkN1",
+            "c3RvbVBhcmFtZXRlchI2ChBmaW5hbF91cmxfc3VmZml4GA4gASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjMKDWxhbmd1YWdlX2NvZGUYDyAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMgoLcGVyY2VudF9v",
+            "ZmYYAyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUgAEkEKEG1v",
+            "bmV5X2Ftb3VudF9vZmYYBCABKAsyJS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MS5jb21tb24uTW9uZXlIABI2Cg5wcm9tb3Rpb25fY29kZRgFIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUgBEkMKEm9yZGVyc19vdmVyX2Ft",
+            "b3VudBgGIAEoCzIlLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5N",
+            "b25leUgBQg8KDWRpc2NvdW50X3R5cGVCEwoRcHJvbW90aW9uX3RyaWdnZXIi",
+            "dwoZU3RydWN0dXJlZFNuaXBwZXRGZWVkSXRlbRIsCgZoZWFkZXIYASABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSLAoGdmFsdWVzGAIgAygL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIs0DChBTaXRlbGlua0Zl",
+            "ZWRJdGVtEi8KCWxpbmtfdGV4dBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRIrCgVsaW5lMRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRIrCgVsaW5lMhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZRIwCgpmaW5hbF91cmxzGAQgAygLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEjcKEWZpbmFsX21vYmlsZV91cmxzGAUgAygLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjsKFXRyYWNraW5nX3VybF90",
+            "ZW1wbGF0ZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJO",
+            "ChV1cmxfY3VzdG9tX3BhcmFtZXRlcnMYByADKAsyLy5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MS5jb21tb24uQ3VzdG9tUGFyYW1ldGVyEjYKEGZpbmFsX3Vy",
+            "bF9zdWZmaXgYCCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVC",
+            "6gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb25CD0V4dGVu",
+            "c2lvbnNQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvY29tbW9uO2NvbW1vbqICA0dBQaoC",
+            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkNvbW1vbsoCHkdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYxXENvbW1vbuoCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
+            "OlYxOjpDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.FeedCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AppStoreReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PriceExtensionPriceQualifierReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PriceExtensionPriceUnitReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PriceExtensionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PromotionExtensionDiscountModifierReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PromotionExtensionOccasionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.AppFeedItem), global::Google.Ads.GoogleAds.V1.Common.AppFeedItem.Parser, new[]{ "LinkText", "AppId", "AppStore", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.CallFeedItem), global::Google.Ads.GoogleAds.V1.Common.CallFeedItem.Parser, new[]{ "PhoneNumber", "CountryCode", "CallTrackingEnabled", "CallConversionAction", "CallConversionTrackingDisabled", "CallConversionReportingState" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.CalloutFeedItem), global::Google.Ads.GoogleAds.V1.Common.CalloutFeedItem.Parser, new[]{ "CalloutText" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.LocationFeedItem), global::Google.Ads.GoogleAds.V1.Common.LocationFeedItem.Parser, new[]{ "BusinessName", "AddressLine1", "AddressLine2", "City", "Province", "PostalCode", "CountryCode", "PhoneNumber" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.AffiliateLocationFeedItem), global::Google.Ads.GoogleAds.V1.Common.AffiliateLocationFeedItem.Parser, new[]{ "BusinessName", "AddressLine1", "AddressLine2", "City", "Province", "PostalCode", "CountryCode", "PhoneNumber", "ChainId", "ChainName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.TextMessageFeedItem), global::Google.Ads.GoogleAds.V1.Common.TextMessageFeedItem.Parser, new[]{ "BusinessName", "CountryCode", "PhoneNumber", "Text", "ExtensionText" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PriceFeedItem), global::Google.Ads.GoogleAds.V1.Common.PriceFeedItem.Parser, new[]{ "Type", "PriceQualifier", "TrackingUrlTemplate", "LanguageCode", "PriceOfferings", "FinalUrlSuffix" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.PriceOffer), global::Google.Ads.GoogleAds.V1.Common.PriceOffer.Parser, new[]{ "Header", "Description", "Price", "Unit", "FinalUrls", "FinalMobileUrls" }, null, null, null),
@@ -964,6 +988,862 @@ namespace Google.Ads.GoogleAds.V1.Common {
   }
 
   /// <summary>
+  /// Represents a location extension.
+  /// </summary>
+  public sealed partial class LocationFeedItem : pb::IMessage<LocationFeedItem> {
+    private static readonly pb::MessageParser<LocationFeedItem> _parser = new pb::MessageParser<LocationFeedItem>(() => new LocationFeedItem());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LocationFeedItem> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LocationFeedItem() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LocationFeedItem(LocationFeedItem other) : this() {
+      BusinessName = other.BusinessName;
+      AddressLine1 = other.AddressLine1;
+      AddressLine2 = other.AddressLine2;
+      City = other.City;
+      Province = other.Province;
+      PostalCode = other.PostalCode;
+      CountryCode = other.CountryCode;
+      PhoneNumber = other.PhoneNumber;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LocationFeedItem Clone() {
+      return new LocationFeedItem(this);
+    }
+
+    /// <summary>Field number for the "business_name" field.</summary>
+    public const int BusinessNameFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_businessName_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string businessName_;
+    /// <summary>
+    /// The name of the business.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BusinessName {
+      get { return businessName_; }
+      set {
+        businessName_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "address_line_1" field.</summary>
+    public const int AddressLine1FieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_addressLine1_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string addressLine1_;
+    /// <summary>
+    /// Line 1 of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AddressLine1 {
+      get { return addressLine1_; }
+      set {
+        addressLine1_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "address_line_2" field.</summary>
+    public const int AddressLine2FieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_addressLine2_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string addressLine2_;
+    /// <summary>
+    /// Line 2 of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AddressLine2 {
+      get { return addressLine2_; }
+      set {
+        addressLine2_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "city" field.</summary>
+    public const int CityFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_city_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string city_;
+    /// <summary>
+    /// City of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string City {
+      get { return city_; }
+      set {
+        city_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "province" field.</summary>
+    public const int ProvinceFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _single_province_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+    private string province_;
+    /// <summary>
+    /// Province of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Province {
+      get { return province_; }
+      set {
+        province_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "postal_code" field.</summary>
+    public const int PostalCodeFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_postalCode_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string postalCode_;
+    /// <summary>
+    /// Postal code of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PostalCode {
+      get { return postalCode_; }
+      set {
+        postalCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "country_code" field.</summary>
+    public const int CountryCodeFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _single_countryCode_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string countryCode_;
+    /// <summary>
+    /// Country code of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CountryCode {
+      get { return countryCode_; }
+      set {
+        countryCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "phone_number" field.</summary>
+    public const int PhoneNumberFieldNumber = 8;
+    private static readonly pb::FieldCodec<string> _single_phoneNumber_codec = pb::FieldCodec.ForClassWrapper<string>(66);
+    private string phoneNumber_;
+    /// <summary>
+    /// Phone number of the business.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PhoneNumber {
+      get { return phoneNumber_; }
+      set {
+        phoneNumber_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LocationFeedItem);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LocationFeedItem other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BusinessName != other.BusinessName) return false;
+      if (AddressLine1 != other.AddressLine1) return false;
+      if (AddressLine2 != other.AddressLine2) return false;
+      if (City != other.City) return false;
+      if (Province != other.Province) return false;
+      if (PostalCode != other.PostalCode) return false;
+      if (CountryCode != other.CountryCode) return false;
+      if (PhoneNumber != other.PhoneNumber) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (businessName_ != null) hash ^= BusinessName.GetHashCode();
+      if (addressLine1_ != null) hash ^= AddressLine1.GetHashCode();
+      if (addressLine2_ != null) hash ^= AddressLine2.GetHashCode();
+      if (city_ != null) hash ^= City.GetHashCode();
+      if (province_ != null) hash ^= Province.GetHashCode();
+      if (postalCode_ != null) hash ^= PostalCode.GetHashCode();
+      if (countryCode_ != null) hash ^= CountryCode.GetHashCode();
+      if (phoneNumber_ != null) hash ^= PhoneNumber.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (businessName_ != null) {
+        _single_businessName_codec.WriteTagAndValue(output, BusinessName);
+      }
+      if (addressLine1_ != null) {
+        _single_addressLine1_codec.WriteTagAndValue(output, AddressLine1);
+      }
+      if (addressLine2_ != null) {
+        _single_addressLine2_codec.WriteTagAndValue(output, AddressLine2);
+      }
+      if (city_ != null) {
+        _single_city_codec.WriteTagAndValue(output, City);
+      }
+      if (province_ != null) {
+        _single_province_codec.WriteTagAndValue(output, Province);
+      }
+      if (postalCode_ != null) {
+        _single_postalCode_codec.WriteTagAndValue(output, PostalCode);
+      }
+      if (countryCode_ != null) {
+        _single_countryCode_codec.WriteTagAndValue(output, CountryCode);
+      }
+      if (phoneNumber_ != null) {
+        _single_phoneNumber_codec.WriteTagAndValue(output, PhoneNumber);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (businessName_ != null) {
+        size += _single_businessName_codec.CalculateSizeWithTag(BusinessName);
+      }
+      if (addressLine1_ != null) {
+        size += _single_addressLine1_codec.CalculateSizeWithTag(AddressLine1);
+      }
+      if (addressLine2_ != null) {
+        size += _single_addressLine2_codec.CalculateSizeWithTag(AddressLine2);
+      }
+      if (city_ != null) {
+        size += _single_city_codec.CalculateSizeWithTag(City);
+      }
+      if (province_ != null) {
+        size += _single_province_codec.CalculateSizeWithTag(Province);
+      }
+      if (postalCode_ != null) {
+        size += _single_postalCode_codec.CalculateSizeWithTag(PostalCode);
+      }
+      if (countryCode_ != null) {
+        size += _single_countryCode_codec.CalculateSizeWithTag(CountryCode);
+      }
+      if (phoneNumber_ != null) {
+        size += _single_phoneNumber_codec.CalculateSizeWithTag(PhoneNumber);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LocationFeedItem other) {
+      if (other == null) {
+        return;
+      }
+      if (other.businessName_ != null) {
+        if (businessName_ == null || other.BusinessName != "") {
+          BusinessName = other.BusinessName;
+        }
+      }
+      if (other.addressLine1_ != null) {
+        if (addressLine1_ == null || other.AddressLine1 != "") {
+          AddressLine1 = other.AddressLine1;
+        }
+      }
+      if (other.addressLine2_ != null) {
+        if (addressLine2_ == null || other.AddressLine2 != "") {
+          AddressLine2 = other.AddressLine2;
+        }
+      }
+      if (other.city_ != null) {
+        if (city_ == null || other.City != "") {
+          City = other.City;
+        }
+      }
+      if (other.province_ != null) {
+        if (province_ == null || other.Province != "") {
+          Province = other.Province;
+        }
+      }
+      if (other.postalCode_ != null) {
+        if (postalCode_ == null || other.PostalCode != "") {
+          PostalCode = other.PostalCode;
+        }
+      }
+      if (other.countryCode_ != null) {
+        if (countryCode_ == null || other.CountryCode != "") {
+          CountryCode = other.CountryCode;
+        }
+      }
+      if (other.phoneNumber_ != null) {
+        if (phoneNumber_ == null || other.PhoneNumber != "") {
+          PhoneNumber = other.PhoneNumber;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_businessName_codec.Read(input);
+            if (businessName_ == null || value != "") {
+              BusinessName = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_addressLine1_codec.Read(input);
+            if (addressLine1_ == null || value != "") {
+              AddressLine1 = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_addressLine2_codec.Read(input);
+            if (addressLine2_ == null || value != "") {
+              AddressLine2 = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_city_codec.Read(input);
+            if (city_ == null || value != "") {
+              City = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_province_codec.Read(input);
+            if (province_ == null || value != "") {
+              Province = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_postalCode_codec.Read(input);
+            if (postalCode_ == null || value != "") {
+              PostalCode = value;
+            }
+            break;
+          }
+          case 58: {
+            string value = _single_countryCode_codec.Read(input);
+            if (countryCode_ == null || value != "") {
+              CountryCode = value;
+            }
+            break;
+          }
+          case 66: {
+            string value = _single_phoneNumber_codec.Read(input);
+            if (phoneNumber_ == null || value != "") {
+              PhoneNumber = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Represents an affiliate location extension.
+  /// </summary>
+  public sealed partial class AffiliateLocationFeedItem : pb::IMessage<AffiliateLocationFeedItem> {
+    private static readonly pb::MessageParser<AffiliateLocationFeedItem> _parser = new pb::MessageParser<AffiliateLocationFeedItem>(() => new AffiliateLocationFeedItem());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AffiliateLocationFeedItem> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AffiliateLocationFeedItem() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AffiliateLocationFeedItem(AffiliateLocationFeedItem other) : this() {
+      BusinessName = other.BusinessName;
+      AddressLine1 = other.AddressLine1;
+      AddressLine2 = other.AddressLine2;
+      City = other.City;
+      Province = other.Province;
+      PostalCode = other.PostalCode;
+      CountryCode = other.CountryCode;
+      PhoneNumber = other.PhoneNumber;
+      ChainId = other.ChainId;
+      ChainName = other.ChainName;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AffiliateLocationFeedItem Clone() {
+      return new AffiliateLocationFeedItem(this);
+    }
+
+    /// <summary>Field number for the "business_name" field.</summary>
+    public const int BusinessNameFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_businessName_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string businessName_;
+    /// <summary>
+    /// The name of the business.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BusinessName {
+      get { return businessName_; }
+      set {
+        businessName_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "address_line_1" field.</summary>
+    public const int AddressLine1FieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_addressLine1_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string addressLine1_;
+    /// <summary>
+    /// Line 1 of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AddressLine1 {
+      get { return addressLine1_; }
+      set {
+        addressLine1_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "address_line_2" field.</summary>
+    public const int AddressLine2FieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_addressLine2_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string addressLine2_;
+    /// <summary>
+    /// Line 2 of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AddressLine2 {
+      get { return addressLine2_; }
+      set {
+        addressLine2_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "city" field.</summary>
+    public const int CityFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_city_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string city_;
+    /// <summary>
+    /// City of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string City {
+      get { return city_; }
+      set {
+        city_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "province" field.</summary>
+    public const int ProvinceFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _single_province_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+    private string province_;
+    /// <summary>
+    /// Province of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Province {
+      get { return province_; }
+      set {
+        province_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "postal_code" field.</summary>
+    public const int PostalCodeFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_postalCode_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string postalCode_;
+    /// <summary>
+    /// Postal code of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PostalCode {
+      get { return postalCode_; }
+      set {
+        postalCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "country_code" field.</summary>
+    public const int CountryCodeFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _single_countryCode_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string countryCode_;
+    /// <summary>
+    /// Country code of the business address.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CountryCode {
+      get { return countryCode_; }
+      set {
+        countryCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "phone_number" field.</summary>
+    public const int PhoneNumberFieldNumber = 8;
+    private static readonly pb::FieldCodec<string> _single_phoneNumber_codec = pb::FieldCodec.ForClassWrapper<string>(66);
+    private string phoneNumber_;
+    /// <summary>
+    /// Phone number of the business.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PhoneNumber {
+      get { return phoneNumber_; }
+      set {
+        phoneNumber_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "chain_id" field.</summary>
+    public const int ChainIdFieldNumber = 9;
+    private static readonly pb::FieldCodec<long?> _single_chainId_codec = pb::FieldCodec.ForStructWrapper<long>(74);
+    private long? chainId_;
+    /// <summary>
+    /// Id of the retail chain that is advertised as a seller of your product.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ChainId {
+      get { return chainId_; }
+      set {
+        chainId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "chain_name" field.</summary>
+    public const int ChainNameFieldNumber = 10;
+    private static readonly pb::FieldCodec<string> _single_chainName_codec = pb::FieldCodec.ForClassWrapper<string>(82);
+    private string chainName_;
+    /// <summary>
+    /// Name of chain.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ChainName {
+      get { return chainName_; }
+      set {
+        chainName_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AffiliateLocationFeedItem);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AffiliateLocationFeedItem other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BusinessName != other.BusinessName) return false;
+      if (AddressLine1 != other.AddressLine1) return false;
+      if (AddressLine2 != other.AddressLine2) return false;
+      if (City != other.City) return false;
+      if (Province != other.Province) return false;
+      if (PostalCode != other.PostalCode) return false;
+      if (CountryCode != other.CountryCode) return false;
+      if (PhoneNumber != other.PhoneNumber) return false;
+      if (ChainId != other.ChainId) return false;
+      if (ChainName != other.ChainName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (businessName_ != null) hash ^= BusinessName.GetHashCode();
+      if (addressLine1_ != null) hash ^= AddressLine1.GetHashCode();
+      if (addressLine2_ != null) hash ^= AddressLine2.GetHashCode();
+      if (city_ != null) hash ^= City.GetHashCode();
+      if (province_ != null) hash ^= Province.GetHashCode();
+      if (postalCode_ != null) hash ^= PostalCode.GetHashCode();
+      if (countryCode_ != null) hash ^= CountryCode.GetHashCode();
+      if (phoneNumber_ != null) hash ^= PhoneNumber.GetHashCode();
+      if (chainId_ != null) hash ^= ChainId.GetHashCode();
+      if (chainName_ != null) hash ^= ChainName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (businessName_ != null) {
+        _single_businessName_codec.WriteTagAndValue(output, BusinessName);
+      }
+      if (addressLine1_ != null) {
+        _single_addressLine1_codec.WriteTagAndValue(output, AddressLine1);
+      }
+      if (addressLine2_ != null) {
+        _single_addressLine2_codec.WriteTagAndValue(output, AddressLine2);
+      }
+      if (city_ != null) {
+        _single_city_codec.WriteTagAndValue(output, City);
+      }
+      if (province_ != null) {
+        _single_province_codec.WriteTagAndValue(output, Province);
+      }
+      if (postalCode_ != null) {
+        _single_postalCode_codec.WriteTagAndValue(output, PostalCode);
+      }
+      if (countryCode_ != null) {
+        _single_countryCode_codec.WriteTagAndValue(output, CountryCode);
+      }
+      if (phoneNumber_ != null) {
+        _single_phoneNumber_codec.WriteTagAndValue(output, PhoneNumber);
+      }
+      if (chainId_ != null) {
+        _single_chainId_codec.WriteTagAndValue(output, ChainId);
+      }
+      if (chainName_ != null) {
+        _single_chainName_codec.WriteTagAndValue(output, ChainName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (businessName_ != null) {
+        size += _single_businessName_codec.CalculateSizeWithTag(BusinessName);
+      }
+      if (addressLine1_ != null) {
+        size += _single_addressLine1_codec.CalculateSizeWithTag(AddressLine1);
+      }
+      if (addressLine2_ != null) {
+        size += _single_addressLine2_codec.CalculateSizeWithTag(AddressLine2);
+      }
+      if (city_ != null) {
+        size += _single_city_codec.CalculateSizeWithTag(City);
+      }
+      if (province_ != null) {
+        size += _single_province_codec.CalculateSizeWithTag(Province);
+      }
+      if (postalCode_ != null) {
+        size += _single_postalCode_codec.CalculateSizeWithTag(PostalCode);
+      }
+      if (countryCode_ != null) {
+        size += _single_countryCode_codec.CalculateSizeWithTag(CountryCode);
+      }
+      if (phoneNumber_ != null) {
+        size += _single_phoneNumber_codec.CalculateSizeWithTag(PhoneNumber);
+      }
+      if (chainId_ != null) {
+        size += _single_chainId_codec.CalculateSizeWithTag(ChainId);
+      }
+      if (chainName_ != null) {
+        size += _single_chainName_codec.CalculateSizeWithTag(ChainName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AffiliateLocationFeedItem other) {
+      if (other == null) {
+        return;
+      }
+      if (other.businessName_ != null) {
+        if (businessName_ == null || other.BusinessName != "") {
+          BusinessName = other.BusinessName;
+        }
+      }
+      if (other.addressLine1_ != null) {
+        if (addressLine1_ == null || other.AddressLine1 != "") {
+          AddressLine1 = other.AddressLine1;
+        }
+      }
+      if (other.addressLine2_ != null) {
+        if (addressLine2_ == null || other.AddressLine2 != "") {
+          AddressLine2 = other.AddressLine2;
+        }
+      }
+      if (other.city_ != null) {
+        if (city_ == null || other.City != "") {
+          City = other.City;
+        }
+      }
+      if (other.province_ != null) {
+        if (province_ == null || other.Province != "") {
+          Province = other.Province;
+        }
+      }
+      if (other.postalCode_ != null) {
+        if (postalCode_ == null || other.PostalCode != "") {
+          PostalCode = other.PostalCode;
+        }
+      }
+      if (other.countryCode_ != null) {
+        if (countryCode_ == null || other.CountryCode != "") {
+          CountryCode = other.CountryCode;
+        }
+      }
+      if (other.phoneNumber_ != null) {
+        if (phoneNumber_ == null || other.PhoneNumber != "") {
+          PhoneNumber = other.PhoneNumber;
+        }
+      }
+      if (other.chainId_ != null) {
+        if (chainId_ == null || other.ChainId != 0L) {
+          ChainId = other.ChainId;
+        }
+      }
+      if (other.chainName_ != null) {
+        if (chainName_ == null || other.ChainName != "") {
+          ChainName = other.ChainName;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_businessName_codec.Read(input);
+            if (businessName_ == null || value != "") {
+              BusinessName = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_addressLine1_codec.Read(input);
+            if (addressLine1_ == null || value != "") {
+              AddressLine1 = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_addressLine2_codec.Read(input);
+            if (addressLine2_ == null || value != "") {
+              AddressLine2 = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_city_codec.Read(input);
+            if (city_ == null || value != "") {
+              City = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_province_codec.Read(input);
+            if (province_ == null || value != "") {
+              Province = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_postalCode_codec.Read(input);
+            if (postalCode_ == null || value != "") {
+              PostalCode = value;
+            }
+            break;
+          }
+          case 58: {
+            string value = _single_countryCode_codec.Read(input);
+            if (countryCode_ == null || value != "") {
+              CountryCode = value;
+            }
+            break;
+          }
+          case 66: {
+            string value = _single_phoneNumber_codec.Read(input);
+            if (phoneNumber_ == null || value != "") {
+              PhoneNumber = value;
+            }
+            break;
+          }
+          case 74: {
+            long? value = _single_chainId_codec.Read(input);
+            if (chainId_ == null || value != 0L) {
+              ChainId = value;
+            }
+            break;
+          }
+          case 82: {
+            string value = _single_chainName_codec.Read(input);
+            if (chainName_ == null || value != "") {
+              ChainName = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// An extension that users can click on to send a text message to the
   /// advertiser.
   /// </summary>
@@ -975,7 +1855,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1262,7 +2142,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1560,7 +2440,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1850,7 +2730,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1940,7 +2820,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
     private string promotionStartDate_;
     /// <summary>
     /// Start date of when the promotion is eligible to be redeemed.
-    /// This field is currently mutate only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PromotionStartDate {
@@ -1956,7 +2835,6 @@ namespace Google.Ads.GoogleAds.V1.Common {
     private string promotionEndDate_;
     /// <summary>
     /// End date of when the promotion is eligible to be redeemed.
-    /// This field is currently mutate only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PromotionEndDate {
@@ -2516,7 +3394,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2681,7 +3559,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -26,17 +26,17 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9wb2xpY3lfdG9waWNf",
             "ZW50cnlfdHlwZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51",
-            "bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iqgEKGFBvbGljeVRv",
-            "cGljRW50cnlUeXBlRW51bSKNAQoUUG9saWN5VG9waWNFbnRyeVR5cGUSDwoL",
+            "bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ivQEKGFBvbGljeVRv",
+            "cGljRW50cnlUeXBlRW51bSKgAQoUUG9saWN5VG9waWNFbnRyeVR5cGUSDwoL",
             "VU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESDgoKUFJPSElCSVRFRBACEgsK",
-            "B0xJTUlURUQQBBIPCgtERVNDUklQVElWRRAFEg4KCkJST0FERU5JTkcQBhIZ",
-            "ChVBUkVBX09GX0lOVEVSRVNUX09OTFkQB0LuAQohY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxLmVudW1zQhlQb2xpY3lUb3BpY0VudHJ5VHlwZVByb3Rv",
-            "UAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
-            "L2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFc",
-            "RW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnBy",
-            "b3RvMw=="));
+            "B0xJTUlURUQQBBIRCg1GVUxMWV9MSU1JVEVEEAgSDwoLREVTQ1JJUFRJVkUQ",
+            "BRIOCgpCUk9BREVOSU5HEAYSGQoVQVJFQV9PRl9JTlRFUkVTVF9PTkxZEAdC",
+            "7gEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtc0IZUG9saWN5",
+            "VG9waWNFbnRyeVR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvZW51bXM7ZW51bXOi",
+            "AgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5FbnVtc8oCHUdvb2ds",
+            "ZVxBZHNcR29vZ2xlQWRzXFYxXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjE6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -175,6 +175,11 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// The resource will not be served under some circumstances.
         /// </summary>
         [pbr::OriginalName("LIMITED")] Limited = 4,
+        /// <summary>
+        /// The resource cannot serve at all because of the current targeting
+        /// criteria.
+        /// </summary>
+        [pbr::OriginalName("FULLY_LIMITED")] FullyLimited = 8,
         /// <summary>
         /// May be of interest, but does not limit how the resource is served.
         /// </summary>

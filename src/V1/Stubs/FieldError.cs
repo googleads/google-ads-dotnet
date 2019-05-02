@@ -166,7 +166,7 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The required field was not present in the resource.
+        /// The required field was not present.
         /// </summary>
         [pbr::OriginalName("REQUIRED")] Required = 2,
         /// <summary>

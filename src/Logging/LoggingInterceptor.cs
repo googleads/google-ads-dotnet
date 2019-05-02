@@ -192,9 +192,6 @@ namespace Google.Ads.GoogleAds.Logging
                 {
                     case V1.Errors.GoogleAdsException.FAILURE_KEY:
                         return V1.Errors.GoogleAdsException.Create(rpcException);
-
-                    case V0.Errors.GoogleAdsException.FAILURE_KEY:
-                        return V0.Errors.GoogleAdsException.Create(rpcException);
                 }
 
             }

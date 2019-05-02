@@ -85,6 +85,13 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.AdGroupCriterionSimulationService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<AdGroupCriterionSimulationServiceClient, AdGroupCriterionSimulationServiceSettings> AdGroupCriterionSimulationService;
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.AdGroupExtensionSettingService
             /// for details.
             /// </summary>
@@ -110,6 +117,13 @@ namespace Google.Ads.GoogleAds
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupServiceClient, AdGroupServiceSettings> AdGroupService;
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.AdGroupSimulationService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<AdGroupSimulationServiceClient, AdGroupSimulationServiceSettings> AdGroupSimulationService;
 
 
             /// <summary>
@@ -180,6 +194,13 @@ namespace Google.Ads.GoogleAds
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignCriterionServiceClient, CampaignCriterionServiceSettings> CampaignCriterionService;
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.CampaignCriterionSimulationService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<CampaignCriterionSimulationServiceClient, CampaignCriterionSimulationServiceSettings> CampaignCriterionSimulationService;
 
 
             /// <summary>
@@ -351,6 +372,13 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.ExpandedLandingPageViewService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<ExpandedLandingPageViewServiceClient, ExpandedLandingPageViewServiceSettings> ExpandedLandingPageViewService;
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.ExtensionFeedItemService
             /// for details.
             /// </summary>
@@ -505,6 +533,13 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.LandingPageViewService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<LandingPageViewServiceClient, LandingPageViewServiceSettings> LandingPageViewService;
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.LanguageConstantService
             /// for details.
             /// </summary>
@@ -565,6 +600,13 @@ namespace Google.Ads.GoogleAds
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<OperatingSystemVersionConstantServiceClient, OperatingSystemVersionConstantServiceSettings> OperatingSystemVersionConstantService;
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v1.services#google.ads.googleads.v1.services.PaidOrganicSearchTermViewService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<PaidOrganicSearchTermViewServiceClient, PaidOrganicSearchTermViewServiceSettings> PaidOrganicSearchTermViewService;
 
 
             /// <summary>

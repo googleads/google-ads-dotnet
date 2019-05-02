@@ -361,7 +361,8 @@ namespace Google.Ads.GoogleAds.V1.Services {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.ClickConversionResult> results_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.ClickConversionResult>();
     /// <summary>
     /// Returned for successfully processed conversions. Proto will be empty for
-    /// rows that received an error.
+    /// rows that received an error. Results are not returned when validate_only is
+    /// true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.ClickConversionResult> Results {
@@ -720,7 +721,8 @@ namespace Google.Ads.GoogleAds.V1.Services {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.CallConversionResult> results_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.CallConversionResult>();
     /// <summary>
     /// Returned for successfully processed conversions. Proto will be empty for
-    /// rows that received an error.
+    /// rows that received an error. Results are not returned when validate_only is
+    /// true.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Services.CallConversionResult> Results {

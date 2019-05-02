@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9leHRlbnNpb25fdHlw",
             "ZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMaHGdvb2ds",
-            "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ixgEKEUV4dGVuc2lvblR5cGVFbnVt",
-            "IrABCg1FeHRlbnNpb25UeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
+            "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i7AEKEUV4dGVuc2lvblR5cGVFbnVt",
+            "ItYBCg1FeHRlbnNpb25UeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
             "ThABEggKBE5PTkUQAhIHCgNBUFAQAxIICgRDQUxMEAQSCwoHQ0FMTE9VVBAF",
             "EgsKB01FU1NBR0UQBhIJCgVQUklDRRAHEg0KCVBST01PVElPThAIEgoKBlJF",
-            "VklFVxAJEgwKCFNJVEVMSU5LEAoSFgoSU1RSVUNUVVJFRF9TTklQUEVUEAtC",
-            "5wEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtc0ISRXh0ZW5z",
-            "aW9uVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
-            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoC",
-            "HUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xH",
-            "b29nbGVBZHNcVjFcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
-            "MTo6RW51bXNiBnByb3RvMw=="));
+            "VklFVxAJEgwKCFNJVEVMSU5LEAoSFgoSU1RSVUNUVVJFRF9TTklQUEVUEAsS",
+            "DAoITE9DQVRJT04QDBIWChJBRkZJTElBVEVfTE9DQVRJT04QDULnAQohY29t",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zQhJFeHRlbnNpb25UeXBl",
+            "UHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xl",
+            "LkFkcy5Hb29nbGVBZHMuVjEuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFk",
+            "c1xWMVxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpFbnVt",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -206,6 +207,14 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// Structured snippet.
         /// </summary>
         [pbr::OriginalName("STRUCTURED_SNIPPET")] StructuredSnippet = 11,
+        /// <summary>
+        /// Location.
+        /// </summary>
+        [pbr::OriginalName("LOCATION")] Location = 12,
+        /// <summary>
+        /// Affiliate location.
+        /// </summary>
+        [pbr::OriginalName("AFFILIATE_LOCATION")] AffiliateLocation = 13,
       }
 
     }

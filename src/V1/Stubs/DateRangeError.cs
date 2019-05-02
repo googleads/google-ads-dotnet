@@ -183,7 +183,7 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// </summary>
         [pbr::OriginalName("AFTER_MAXIMUM_ALLOWABLE_DATE")] AfterMaximumAllowableDate = 5,
         /// <summary>
-        /// Trying to change start date on a campaign that has started.
+        /// Trying to change start date on a resource that has started.
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_START_DATE_IF_ALREADY_STARTED")] CannotModifyStartDateIfAlreadyStarted = 6,
       }

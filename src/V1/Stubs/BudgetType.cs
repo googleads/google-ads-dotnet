@@ -26,15 +26,15 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Ci9nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9idWRnZXRfdHlwZS5w",
             "cm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMaHGdvb2dsZS9h",
-            "cGkvYW5ub3RhdGlvbnMucHJvdG8iZAoOQnVkZ2V0VHlwZUVudW0iUgoKQnVk",
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8icwoOQnVkZ2V0VHlwZUVudW0iYQoKQnVk",
             "Z2V0VHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIMCghTVEFO",
-            "REFSRBACEhgKFEhPVEVMX0FEU19DT01NSVNTSU9OEANC5AEKIWNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtc0IPQnVkZ2V0VHlwZVByb3RvUAFa",
-            "Qmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRW51",
-            "bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnByb3Rv",
-            "Mw=="));
+            "REFSRBACEhgKFEhPVEVMX0FEU19DT01NSVNTSU9OEAMSDQoJRklYRURfQ1BB",
+            "EARC5AEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtc0IPQnVk",
+            "Z2V0VHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
+            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoC",
+            "HUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xH",
+            "b29nbGVBZHNcVjFcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MTo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -165,12 +165,29 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
         /// Budget type for standard Google Ads usage.
+        /// Caps daily spend at two times the specified budget amount.
+        /// Full details: https://support.google.com/google-ads/answer/6385083
         /// </summary>
         [pbr::OriginalName("STANDARD")] Standard = 2,
         /// <summary>
         /// Budget type for Hotels Ads commission program.
+        /// Full details: https://support.google.com/google-ads/answer/9243945
+        ///
+        /// This type is only supported by campaigns with
+        /// AdvertisingChannelType.HOTEL, BiddingStrategyType.COMMISSION and
+        /// PaymentMode.CONVERSION_VALUE.
         /// </summary>
         [pbr::OriginalName("HOTEL_ADS_COMMISSION")] HotelAdsCommission = 3,
+        /// <summary>
+        /// Budget type with a fixed cost-per-acquisition (conversion).
+        /// Full details: https://support.google.com/google-ads/answer/7528254
+        ///
+        /// This type is only supported by campaigns with
+        /// AdvertisingChannelType.DISPLAY (excluding
+        /// AdvertisingChannelSubType.DISPLAY_GMAIL),
+        /// BiddingStrategyType.TARGET_CPA and PaymentMode.CONVERSIONS.
+        /// </summary>
+        [pbr::OriginalName("FIXED_CPA")] FixedCpa = 4,
       }
 
     }
