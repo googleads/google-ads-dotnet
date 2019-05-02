@@ -26,14 +26,15 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9wYXltZW50X21vZGUu",
             "cHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zGhxnb29nbGUv",
-            "YXBpL2Fubm90YXRpb25zLnByb3RvImAKD1BheW1lbnRNb2RlRW51bSJNCgtQ",
+            "YXBpL2Fubm90YXRpb25zLnByb3RvInEKD1BheW1lbnRNb2RlRW51bSJeCgtQ",
             "YXltZW50TW9kZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIKCgZD",
-            "TElDS1MQBBIUChBDT05WRVJTSU9OX1ZBTFVFEAVC5QEKIWNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MS5lbnVtc0IQUGF5bWVudE1vZGVQcm90b1ABWkJn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjEvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2ds",
-            "ZUFkcy5WMS5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXEVudW1z",
-            "6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkVudW1zYgZwcm90bzM="));
+            "TElDS1MQBBIUChBDT05WRVJTSU9OX1ZBTFVFEAUSDwoLQ09OVkVSU0lPTlMQ",
+            "BkLlAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zQhBQYXlt",
+            "ZW50TW9kZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
+            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoC",
+            "HUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xH",
+            "b29nbGVBZHNcVjFcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MTo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -167,9 +168,19 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// </summary>
         [pbr::OriginalName("CLICKS")] Clicks = 4,
         /// <summary>
-        /// Pay per conversion value.
+        /// Pay per conversion value. This mode is only supported by campaigns with
+        /// AdvertisingChannelType.HOTEL, BiddingStrategyType.COMMISSION, and
+        /// BudgetType.HOTEL_ADS_COMMISSION.
         /// </summary>
         [pbr::OriginalName("CONVERSION_VALUE")] ConversionValue = 5,
+        /// <summary>
+        /// Pay per conversion. This mode is only supported by campaigns with
+        /// AdvertisingChannelType.DISPLAY (excluding
+        /// AdvertisingChannelSubType.DISPLAY_GMAIL), BiddingStrategyType.TARGET_CPA,
+        /// and BudgetType.FIXED_CPA. The customer must also be eligible for this
+        /// mode. See Customer.eligibility_failure_reasons for details.
+        /// </summary>
+        [pbr::OriginalName("CONVERSIONS")] Conversions = 6,
       }
 
     }

@@ -26,43 +26,53 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9yZXNvdXJjZXMvZXh0ZW5zaW9u",
             "X2ZlZWRfaXRlbS5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEucmVz",
-            "b3VyY2VzGi9nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9jb21tb24vZXh0ZW5z",
-            "aW9ucy5wcm90bxoyZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjEvZW51bXMvZXh0",
-            "ZW5zaW9uX3R5cGUucHJvdG8aNGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2Vu",
-            "dW1zL2ZlZWRfaXRlbV9zdGF0dXMucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93",
-            "cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLP",
-            "BwoRRXh0ZW5zaW9uRmVlZEl0ZW0SFQoNcmVzb3VyY2VfbmFtZRgBIAEoCRJW",
-            "Cg5leHRlbnNpb25fdHlwZRgNIAEoDjI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxLmVudW1zLkV4dGVuc2lvblR5cGVFbnVtLkV4dGVuc2lvblR5cGUSNQoP",
-            "c3RhcnRfZGF0ZV90aW1lGAUgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEjMKDWVuZF9kYXRlX3RpbWUYBiABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSUAoGc3RhdHVzGAQgASgOMkAuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjEuZW51bXMuRmVlZEl0ZW1TdGF0dXNFbnVtLkZlZWRJdGVt",
-            "U3RhdHVzEk4KEnNpdGVsaW5rX2ZlZWRfaXRlbRgCIAEoCzIwLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5TaXRlbGlua0ZlZWRJdGVtSAASYQoc",
-            "c3RydWN0dXJlZF9zbmlwcGV0X2ZlZWRfaXRlbRgDIAEoCzI5Lmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5TdHJ1Y3R1cmVkU25pcHBldEZlZWRJ",
-            "dGVtSAASRAoNYXBwX2ZlZWRfaXRlbRgHIAEoCzIrLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxLmNvbW1vbi5BcHBGZWVkSXRlbUgAEkYKDmNhbGxfZmVlZF9p",
-            "dGVtGAggASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkNh",
-            "bGxGZWVkSXRlbUgAEkwKEWNhbGxvdXRfZmVlZF9pdGVtGAkgASgLMi8uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkNhbGxvdXRGZWVkSXRlbUgA",
-            "ElUKFnRleHRfbWVzc2FnZV9mZWVkX2l0ZW0YCiABKAsyMy5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MS5jb21tb24uVGV4dE1lc3NhZ2VGZWVkSXRlbUgAEkgK",
-            "D3ByaWNlX2ZlZWRfaXRlbRgLIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxLmNvbW1vbi5QcmljZUZlZWRJdGVtSAASUAoTcHJvbW90aW9uX2ZlZWRf",
-            "aXRlbRgMIAEoCzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Q",
-            "cm9tb3Rpb25GZWVkSXRlbUgAQgsKCWV4dGVuc2lvbkKDAgolY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLnJlc291cmNlc0IWRXh0ZW5zaW9uRmVlZEl0",
-            "ZW1Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjEvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dB",
-            "QaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLlJlc291cmNlc8oCIUdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYxXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpH",
-            "b29nbGVBZHM6OlYxOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "b3VyY2VzGi1nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9jb21tb24vY3JpdGVy",
+            "aWEucHJvdG8aL2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2NvbW1vbi9leHRl",
+            "bnNpb25zLnByb3RvGjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9l",
+            "eHRlbnNpb25fdHlwZS5wcm90bxo0Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjEv",
+            "ZW51bXMvZmVlZF9pdGVtX3N0YXR1cy5wcm90bxo7Z29vZ2xlL2Fkcy9nb29n",
+            "bGVhZHMvdjEvZW51bXMvZmVlZF9pdGVtX3RhcmdldF9kZXZpY2UucHJvdG8a",
+            "Hmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9h",
+            "bm5vdGF0aW9ucy5wcm90byKmCgoRRXh0ZW5zaW9uRmVlZEl0ZW0SFQoNcmVz",
+            "b3VyY2VfbmFtZRgBIAEoCRJWCg5leHRlbnNpb25fdHlwZRgNIAEoDjI+Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkV4dGVuc2lvblR5cGVFbnVt",
+            "LkV4dGVuc2lvblR5cGUSNQoPc3RhcnRfZGF0ZV90aW1lGAUgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjMKDWVuZF9kYXRlX3RpbWUYBiAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSRAoMYWRfc2NoZWR1",
+            "bGVzGBAgAygLMi4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkFk",
+            "U2NoZWR1bGVJbmZvElwKBmRldmljZRgRIAEoDjJMLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYxLmVudW1zLkZlZWRJdGVtVGFyZ2V0RGV2aWNlRW51bS5GZWVk",
+            "SXRlbVRhcmdldERldmljZRJQCgZzdGF0dXMYBCABKA4yQC5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MS5lbnVtcy5GZWVkSXRlbVN0YXR1c0VudW0uRmVlZEl0",
+            "ZW1TdGF0dXMSTgoSc2l0ZWxpbmtfZmVlZF9pdGVtGAIgASgLMjAuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlNpdGVsaW5rRmVlZEl0ZW1IABJh",
+            "ChxzdHJ1Y3R1cmVkX3NuaXBwZXRfZmVlZF9pdGVtGAMgASgLMjkuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlN0cnVjdHVyZWRTbmlwcGV0RmVl",
+            "ZEl0ZW1IABJECg1hcHBfZmVlZF9pdGVtGAcgASgLMisuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjEuY29tbW9uLkFwcEZlZWRJdGVtSAASRgoOY2FsbF9mZWVk",
+            "X2l0ZW0YCCABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24u",
+            "Q2FsbEZlZWRJdGVtSAASTAoRY2FsbG91dF9mZWVkX2l0ZW0YCSABKAsyLy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uQ2FsbG91dEZlZWRJdGVt",
+            "SAASVQoWdGV4dF9tZXNzYWdlX2ZlZWRfaXRlbRgKIAEoCzIzLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5UZXh0TWVzc2FnZUZlZWRJdGVtSAAS",
+            "SAoPcHJpY2VfZmVlZF9pdGVtGAsgASgLMi0uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjEuY29tbW9uLlByaWNlRmVlZEl0ZW1IABJQChNwcm9tb3Rpb25fZmVl",
+            "ZF9pdGVtGAwgASgLMjEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9u",
+            "LlByb21vdGlvbkZlZWRJdGVtSAASTgoSbG9jYXRpb25fZmVlZF9pdGVtGA4g",
+            "ASgLMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkxvY2F0aW9u",
+            "RmVlZEl0ZW1IABJhChxhZmZpbGlhdGVfbG9jYXRpb25fZmVlZF9pdGVtGA8g",
+            "ASgLMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkFmZmlsaWF0",
+            "ZUxvY2F0aW9uRmVlZEl0ZW1IAEILCglleHRlbnNpb25CgwIKJWNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MS5yZXNvdXJjZXNCFkV4dGVuc2lvbkZlZWRJ",
+            "dGVtUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxL3Jlc291cmNlcztyZXNvdXJjZXOiAgNH",
+            "QUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5SZXNvdXJjZXPKAiFHb29n",
+            "bGVcQWRzXEdvb2dsZUFkc1xWMVxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6",
+            "R29vZ2xlQWRzOjpWMTo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ExtensionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.FeedItemStatusReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ExtensionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.FeedItemStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.FeedItemTargetDeviceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem), global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem.Parser, new[]{ "ResourceName", "ExtensionType", "StartDateTime", "EndDateTime", "Status", "SitelinkFeedItem", "StructuredSnippetFeedItem", "AppFeedItem", "CallFeedItem", "CalloutFeedItem", "TextMessageFeedItem", "PriceFeedItem", "PromotionFeedItem" }, new[]{ "Extension" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem), global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem.Parser, new[]{ "ResourceName", "ExtensionType", "StartDateTime", "EndDateTime", "AdSchedules", "Device", "Status", "SitelinkFeedItem", "StructuredSnippetFeedItem", "AppFeedItem", "CallFeedItem", "CalloutFeedItem", "TextMessageFeedItem", "PriceFeedItem", "PromotionFeedItem", "LocationFeedItem", "AffiliateLocationFeedItem" }, new[]{ "Extension" }, null, null)
           }));
     }
     #endregion
@@ -101,6 +111,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       extensionType_ = other.extensionType_;
       StartDateTime = other.StartDateTime;
       EndDateTime = other.EndDateTime;
+      adSchedules_ = other.adSchedules_.Clone();
+      device_ = other.device_;
       status_ = other.status_;
       switch (other.ExtensionCase) {
         case ExtensionOneofCase.SitelinkFeedItem:
@@ -126,6 +138,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           break;
         case ExtensionOneofCase.PromotionFeedItem:
           PromotionFeedItem = other.PromotionFeedItem.Clone();
+          break;
+        case ExtensionOneofCase.LocationFeedItem:
+          LocationFeedItem = other.LocationFeedItem.Clone();
+          break;
+        case ExtensionOneofCase.AffiliateLocationFeedItem:
+          AffiliateLocationFeedItem = other.AffiliateLocationFeedItem.Clone();
           break;
       }
 
@@ -201,6 +219,35 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       get { return endDateTime_; }
       set {
         endDateTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ad_schedules" field.</summary>
+    public const int AdSchedulesFieldNumber = 16;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.AdScheduleInfo> _repeated_adSchedules_codec
+        = pb::FieldCodec.ForMessage(130, global::Google.Ads.GoogleAds.V1.Common.AdScheduleInfo.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdScheduleInfo> adSchedules_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdScheduleInfo>();
+    /// <summary>
+    /// List of non-overlapping schedules specifying all time intervals
+    /// for which the feed item may serve. There can be a maximum of 6 schedules
+    /// per day.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.AdScheduleInfo> AdSchedules {
+      get { return adSchedules_; }
+    }
+
+    /// <summary>Field number for the "device" field.</summary>
+    public const int DeviceFieldNumber = 17;
+    private global::Google.Ads.GoogleAds.V1.Enums.FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice device_ = 0;
+    /// <summary>
+    /// The targeted device.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Enums.FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice Device {
+      get { return device_; }
+      set {
+        device_ = value;
       }
     }
 
@@ -331,6 +378,37 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
     }
 
+    /// <summary>Field number for the "location_feed_item" field.</summary>
+    public const int LocationFeedItemFieldNumber = 14;
+    /// <summary>
+    /// Location extension. Locations are synced from a GMB account into a feed.
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.LocationFeedItem LocationFeedItem {
+      get { return extensionCase_ == ExtensionOneofCase.LocationFeedItem ? (global::Google.Ads.GoogleAds.V1.Common.LocationFeedItem) extension_ : null; }
+      set {
+        extension_ = value;
+        extensionCase_ = value == null ? ExtensionOneofCase.None : ExtensionOneofCase.LocationFeedItem;
+      }
+    }
+
+    /// <summary>Field number for the "affiliate_location_feed_item" field.</summary>
+    public const int AffiliateLocationFeedItemFieldNumber = 15;
+    /// <summary>
+    /// Affiliate location extension. Feed locations are populated by Google Ads
+    /// based on a chain ID.
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.AffiliateLocationFeedItem AffiliateLocationFeedItem {
+      get { return extensionCase_ == ExtensionOneofCase.AffiliateLocationFeedItem ? (global::Google.Ads.GoogleAds.V1.Common.AffiliateLocationFeedItem) extension_ : null; }
+      set {
+        extension_ = value;
+        extensionCase_ = value == null ? ExtensionOneofCase.None : ExtensionOneofCase.AffiliateLocationFeedItem;
+      }
+    }
+
     private object extension_;
     /// <summary>Enum of possible cases for the "extension" oneof.</summary>
     public enum ExtensionOneofCase {
@@ -343,6 +421,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       TextMessageFeedItem = 10,
       PriceFeedItem = 11,
       PromotionFeedItem = 12,
+      LocationFeedItem = 14,
+      AffiliateLocationFeedItem = 15,
     }
     private ExtensionOneofCase extensionCase_ = ExtensionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -373,6 +453,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (ExtensionType != other.ExtensionType) return false;
       if (StartDateTime != other.StartDateTime) return false;
       if (EndDateTime != other.EndDateTime) return false;
+      if(!adSchedules_.Equals(other.adSchedules_)) return false;
+      if (Device != other.Device) return false;
       if (Status != other.Status) return false;
       if (!object.Equals(SitelinkFeedItem, other.SitelinkFeedItem)) return false;
       if (!object.Equals(StructuredSnippetFeedItem, other.StructuredSnippetFeedItem)) return false;
@@ -382,6 +464,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (!object.Equals(TextMessageFeedItem, other.TextMessageFeedItem)) return false;
       if (!object.Equals(PriceFeedItem, other.PriceFeedItem)) return false;
       if (!object.Equals(PromotionFeedItem, other.PromotionFeedItem)) return false;
+      if (!object.Equals(LocationFeedItem, other.LocationFeedItem)) return false;
+      if (!object.Equals(AffiliateLocationFeedItem, other.AffiliateLocationFeedItem)) return false;
       if (ExtensionCase != other.ExtensionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -393,6 +477,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (ExtensionType != 0) hash ^= ExtensionType.GetHashCode();
       if (startDateTime_ != null) hash ^= StartDateTime.GetHashCode();
       if (endDateTime_ != null) hash ^= EndDateTime.GetHashCode();
+      hash ^= adSchedules_.GetHashCode();
+      if (Device != 0) hash ^= Device.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
       if (extensionCase_ == ExtensionOneofCase.SitelinkFeedItem) hash ^= SitelinkFeedItem.GetHashCode();
       if (extensionCase_ == ExtensionOneofCase.StructuredSnippetFeedItem) hash ^= StructuredSnippetFeedItem.GetHashCode();
@@ -402,6 +488,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (extensionCase_ == ExtensionOneofCase.TextMessageFeedItem) hash ^= TextMessageFeedItem.GetHashCode();
       if (extensionCase_ == ExtensionOneofCase.PriceFeedItem) hash ^= PriceFeedItem.GetHashCode();
       if (extensionCase_ == ExtensionOneofCase.PromotionFeedItem) hash ^= PromotionFeedItem.GetHashCode();
+      if (extensionCase_ == ExtensionOneofCase.LocationFeedItem) hash ^= LocationFeedItem.GetHashCode();
+      if (extensionCase_ == ExtensionOneofCase.AffiliateLocationFeedItem) hash ^= AffiliateLocationFeedItem.GetHashCode();
       hash ^= (int) extensionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -466,6 +554,19 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteRawTag(104);
         output.WriteEnum((int) ExtensionType);
       }
+      if (extensionCase_ == ExtensionOneofCase.LocationFeedItem) {
+        output.WriteRawTag(114);
+        output.WriteMessage(LocationFeedItem);
+      }
+      if (extensionCase_ == ExtensionOneofCase.AffiliateLocationFeedItem) {
+        output.WriteRawTag(122);
+        output.WriteMessage(AffiliateLocationFeedItem);
+      }
+      adSchedules_.WriteTo(output, _repeated_adSchedules_codec);
+      if (Device != 0) {
+        output.WriteRawTag(136, 1);
+        output.WriteEnum((int) Device);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -485,6 +586,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
       if (endDateTime_ != null) {
         size += _single_endDateTime_codec.CalculateSizeWithTag(EndDateTime);
+      }
+      size += adSchedules_.CalculateSize(_repeated_adSchedules_codec);
+      if (Device != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Device);
       }
       if (Status != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
@@ -513,6 +618,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (extensionCase_ == ExtensionOneofCase.PromotionFeedItem) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PromotionFeedItem);
       }
+      if (extensionCase_ == ExtensionOneofCase.LocationFeedItem) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocationFeedItem);
+      }
+      if (extensionCase_ == ExtensionOneofCase.AffiliateLocationFeedItem) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AffiliateLocationFeedItem);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -539,6 +650,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         if (endDateTime_ == null || other.EndDateTime != "") {
           EndDateTime = other.EndDateTime;
         }
+      }
+      adSchedules_.Add(other.adSchedules_);
+      if (other.Device != 0) {
+        Device = other.Device;
       }
       if (other.Status != 0) {
         Status = other.Status;
@@ -591,6 +706,18 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             PromotionFeedItem = new global::Google.Ads.GoogleAds.V1.Common.PromotionFeedItem();
           }
           PromotionFeedItem.MergeFrom(other.PromotionFeedItem);
+          break;
+        case ExtensionOneofCase.LocationFeedItem:
+          if (LocationFeedItem == null) {
+            LocationFeedItem = new global::Google.Ads.GoogleAds.V1.Common.LocationFeedItem();
+          }
+          LocationFeedItem.MergeFrom(other.LocationFeedItem);
+          break;
+        case ExtensionOneofCase.AffiliateLocationFeedItem:
+          if (AffiliateLocationFeedItem == null) {
+            AffiliateLocationFeedItem = new global::Google.Ads.GoogleAds.V1.Common.AffiliateLocationFeedItem();
+          }
+          AffiliateLocationFeedItem.MergeFrom(other.AffiliateLocationFeedItem);
           break;
       }
 
@@ -701,6 +828,32 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           }
           case 104: {
             extensionType_ = (global::Google.Ads.GoogleAds.V1.Enums.ExtensionTypeEnum.Types.ExtensionType) input.ReadEnum();
+            break;
+          }
+          case 114: {
+            global::Google.Ads.GoogleAds.V1.Common.LocationFeedItem subBuilder = new global::Google.Ads.GoogleAds.V1.Common.LocationFeedItem();
+            if (extensionCase_ == ExtensionOneofCase.LocationFeedItem) {
+              subBuilder.MergeFrom(LocationFeedItem);
+            }
+            input.ReadMessage(subBuilder);
+            LocationFeedItem = subBuilder;
+            break;
+          }
+          case 122: {
+            global::Google.Ads.GoogleAds.V1.Common.AffiliateLocationFeedItem subBuilder = new global::Google.Ads.GoogleAds.V1.Common.AffiliateLocationFeedItem();
+            if (extensionCase_ == ExtensionOneofCase.AffiliateLocationFeedItem) {
+              subBuilder.MergeFrom(AffiliateLocationFeedItem);
+            }
+            input.ReadMessage(subBuilder);
+            AffiliateLocationFeedItem = subBuilder;
+            break;
+          }
+          case 130: {
+            adSchedules_.AddEntriesFrom(input, _repeated_adSchedules_codec);
+            break;
+          }
+          case 136: {
+            device_ = (global::Google.Ads.GoogleAds.V1.Enums.FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice) input.ReadEnum();
             break;
           }
         }

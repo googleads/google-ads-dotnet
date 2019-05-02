@@ -170,7 +170,11 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// User doesn't have permission to access customer.
+        /// User doesn't have permission to access customer. Note: If you're
+        /// accessing a client customer, the manager's customer id must be set in the
+        /// 'login-customer-id' header. See
+        /// https://developers.google.com/google-ads/api/docs/concepts/
+        /// call-structure#login-customer-id
         /// </summary>
         [pbr::OriginalName("USER_PERMISSION_DENIED")] UserPermissionDenied = 2,
         /// <summary>

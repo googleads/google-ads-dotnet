@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Citnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9hZF90eXBlLnByb3Rv",
             "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90byLwAgoKQWRUeXBlRW51bSLhAgoGQWRUeXBlEg8K",
+            "bm5vdGF0aW9ucy5wcm90byKyAwoKQWRUeXBlRW51bSKjAwoGQWRUeXBlEg8K",
             "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB1RFWFRfQUQQAhIUChBF",
             "WFBBTkRFRF9URVhUX0FEEAMSEAoMQ0FMTF9PTkxZX0FEEAYSHgoaRVhQQU5E",
             "RURfRFlOQU1JQ19TRUFSQ0hfQUQQBxIMCghIT1RFTF9BRBAIEhUKEVNIT1BQ",
@@ -34,12 +34,14 @@ namespace Google.Ads.GoogleAds.V1.Enums {
             "REVPX0FEEAwSDAoIR01BSUxfQUQQDRIMCghJTUFHRV9BRBAOEhgKFFJFU1BP",
             "TlNJVkVfU0VBUkNIX0FEEA8SIAocTEVHQUNZX1JFU1BPTlNJVkVfRElTUExB",
             "WV9BRBAQEgoKBkFQUF9BRBAREhkKFUxFR0FDWV9BUFBfSU5TVEFMTF9BRBAS",
-            "EhkKFVJFU1BPTlNJVkVfRElTUExBWV9BRBATQuABCiFjb20uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjEuZW51bXNCC0FkVHlwZVByb3RvUAFaQmdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
-            "LkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRW51bXPqAiFHb29n",
-            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnByb3RvMw=="));
+            "EhkKFVJFU1BPTlNJVkVfRElTUExBWV9BRBATEhMKD0hUTUw1X1VQTE9BRF9B",
+            "RBAVEhQKEERZTkFNSUNfSFRNTDVfQUQQFhIVChFBUFBfRU5HQUdFTUVOVF9B",
+            "RBAXQuABCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXNCC0Fk",
+            "VHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
+            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29n",
+            "bGVBZHNcVjFcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6",
+            "RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -230,6 +232,19 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// The ad is a responsive display ad.
         /// </summary>
         [pbr::OriginalName("RESPONSIVE_DISPLAY_AD")] ResponsiveDisplayAd = 19,
+        /// <summary>
+        /// The ad is a display upload ad with the HTML5_UPLOAD_AD product type.
+        /// </summary>
+        [pbr::OriginalName("HTML5_UPLOAD_AD")] Html5UploadAd = 21,
+        /// <summary>
+        /// The ad is a display upload ad with one of the DYNAMIC_HTML5_* product
+        /// types.
+        /// </summary>
+        [pbr::OriginalName("DYNAMIC_HTML5_AD")] DynamicHtml5Ad = 22,
+        /// <summary>
+        /// The ad is an app engagement ad.
+        /// </summary>
+        [pbr::OriginalName("APP_ENGAGEMENT_AD")] AppEngagementAd = 23,
       }
 
     }

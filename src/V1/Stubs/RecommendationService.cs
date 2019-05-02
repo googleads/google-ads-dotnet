@@ -26,27 +26,36 @@ namespace Google.Ads.GoogleAds.V1.Services {
           string.Concat(
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9zZXJ2aWNlcy9yZWNvbW1lbmRh",
             "dGlvbl9zZXJ2aWNlLnByb3RvEiBnb29nbGUuYWRzLmdvb2dsZWFkcy52MS5z",
-            "ZXJ2aWNlcxo2Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjEvZW51bXMva2V5d29y",
-            "ZF9tYXRjaF90eXBlLnByb3RvGipnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9y",
-            "ZXNvdXJjZXMvYWQucHJvdG8aNmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL3Jl",
-            "c291cmNlcy9yZWNvbW1lbmRhdGlvbi5wcm90bxocZ29vZ2xlL2FwaS9hbm5v",
-            "dGF0aW9ucy5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3Rv",
-            "Ghdnb29nbGUvcnBjL3N0YXR1cy5wcm90byIxChhHZXRSZWNvbW1lbmRhdGlv",
-            "blJlcXVlc3QSFQoNcmVzb3VyY2VfbmFtZRgBIAEoCSKeAQoaQXBwbHlSZWNv",
-            "bW1lbmRhdGlvblJlcXVlc3QSEwoLY3VzdG9tZXJfaWQYASABKAkSUgoKb3Bl",
-            "cmF0aW9ucxgCIAMoCzI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZp",
-            "Y2VzLkFwcGx5UmVjb21tZW5kYXRpb25PcGVyYXRpb24SFwoPcGFydGlhbF9m",
-            "YWlsdXJlGAMgASgIIuMJChxBcHBseVJlY29tbWVuZGF0aW9uT3BlcmF0aW9u",
-            "EhUKDXJlc291cmNlX25hbWUYASABKAkScgoPY2FtcGFpZ25fYnVkZ2V0GAIg",
-            "ASgLMlcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuc2VydmljZXMuQXBwbHlS",
-            "ZWNvbW1lbmRhdGlvbk9wZXJhdGlvbi5DYW1wYWlnbkJ1ZGdldFBhcmFtZXRl",
-            "cnNIABJiCgd0ZXh0X2FkGAMgASgLMk8uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djEuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvbk9wZXJhdGlvbi5UZXh0",
-            "QWRQYXJhbWV0ZXJzSAASYwoHa2V5d29yZBgEIAEoCzJQLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxLnNlcnZpY2VzLkFwcGx5UmVjb21tZW5kYXRpb25PcGVy",
-            "YXRpb24uS2V5d29yZFBhcmFtZXRlcnNIABJ0ChF0YXJnZXRfY3BhX29wdF9p",
-            "bhgFIAEoCzJXLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2VzLkFw",
-            "cGx5UmVjb21tZW5kYXRpb25PcGVyYXRpb24uVGFyZ2V0Q3BhT3B0SW5QYXJh",
+            "ZXJ2aWNlcxovZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjEvY29tbW9uL2V4dGVu",
+            "c2lvbnMucHJvdG8aNmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zL2tl",
+            "eXdvcmRfbWF0Y2hfdHlwZS5wcm90bxoqZ29vZ2xlL2Fkcy9nb29nbGVhZHMv",
+            "djEvcmVzb3VyY2VzL2FkLnByb3RvGjZnb29nbGUvYWRzL2dvb2dsZWFkcy92",
+            "MS9yZXNvdXJjZXMvcmVjb21tZW5kYXRpb24ucHJvdG8aHGdvb2dsZS9hcGkv",
+            "YW5ub3RhdGlvbnMucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5w",
+            "cm90bxoXZ29vZ2xlL3JwYy9zdGF0dXMucHJvdG8iMQoYR2V0UmVjb21tZW5k",
+            "YXRpb25SZXF1ZXN0EhUKDXJlc291cmNlX25hbWUYASABKAkingEKGkFwcGx5",
+            "UmVjb21tZW5kYXRpb25SZXF1ZXN0EhMKC2N1c3RvbWVyX2lkGAEgASgJElIK",
+            "Cm9wZXJhdGlvbnMYAiADKAsyPi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5z",
+            "ZXJ2aWNlcy5BcHBseVJlY29tbWVuZGF0aW9uT3BlcmF0aW9uEhcKD3BhcnRp",
+            "YWxfZmFpbHVyZRgDIAEoCCKCDwocQXBwbHlSZWNvbW1lbmRhdGlvbk9wZXJh",
+            "dGlvbhIVCg1yZXNvdXJjZV9uYW1lGAEgASgJEnIKD2NhbXBhaWduX2J1ZGdl",
+            "dBgCIAEoCzJXLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2VzLkFw",
+            "cGx5UmVjb21tZW5kYXRpb25PcGVyYXRpb24uQ2FtcGFpZ25CdWRnZXRQYXJh",
+            "bWV0ZXJzSAASYgoHdGV4dF9hZBgDIAEoCzJPLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYxLnNlcnZpY2VzLkFwcGx5UmVjb21tZW5kYXRpb25PcGVyYXRpb24u",
+            "VGV4dEFkUGFyYW1ldGVyc0gAEmMKB2tleXdvcmQYBCABKAsyUC5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MS5zZXJ2aWNlcy5BcHBseVJlY29tbWVuZGF0aW9u",
+            "T3BlcmF0aW9uLktleXdvcmRQYXJhbWV0ZXJzSAASdAoRdGFyZ2V0X2NwYV9v",
+            "cHRfaW4YBSABKAsyVy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5zZXJ2aWNl",
+            "cy5BcHBseVJlY29tbWVuZGF0aW9uT3BlcmF0aW9uLlRhcmdldENwYU9wdElu",
+            "UGFyYW1ldGVyc0gAEnYKEWNhbGxvdXRfZXh0ZW5zaW9uGAYgASgLMlkuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjEuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRh",
+            "dGlvbk9wZXJhdGlvbi5DYWxsb3V0RXh0ZW5zaW9uUGFyYW1ldGVyc0gAEnAK",
+            "DmNhbGxfZXh0ZW5zaW9uGAcgASgLMlYuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djEuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlvbk9wZXJhdGlvbi5DYWxs",
+            "RXh0ZW5zaW9uUGFyYW1ldGVyc0gAEngKEnNpdGVsaW5rX2V4dGVuc2lvbhgI",
+            "IAEoCzJaLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnNlcnZpY2VzLkFwcGx5",
+            "UmVjb21tZW5kYXRpb25PcGVyYXRpb24uU2l0ZWxpbmtFeHRlbnNpb25QYXJh",
             "bWV0ZXJzSAASdwoSbW92ZV91bnVzZWRfYnVkZ2V0GAkgASgLMlkuZ29vZ2xl",
             "LmFkcy5nb29nbGVhZHMudjEuc2VydmljZXMuQXBwbHlSZWNvbW1lbmRhdGlv",
             "bk9wZXJhdGlvbi5Nb3ZlVW51c2VkQnVkZ2V0UGFyYW1ldGVyc0gAGlkKGENh",
@@ -61,7 +70,14 @@ namespace Google.Ads.GoogleAds.V1.Services {
             "bnQ2NFZhbHVlGpoBChhUYXJnZXRDcGFPcHRJblBhcmFtZXRlcnMSNgoRdGFy",
             "Z2V0X2NwYV9taWNyb3MYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRW",
             "YWx1ZRJGCiFuZXdfY2FtcGFpZ25fYnVkZ2V0X2Ftb3VudF9taWNyb3MYAiAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRpYChpNb3ZlVW51c2Vk",
+            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRppChpDYWxsb3V0RXh0",
+            "ZW5zaW9uUGFyYW1ldGVycxJLChJjYWxsb3V0X2V4dGVuc2lvbnMYASADKAsy",
+            "Ly5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uQ2FsbG91dEZlZWRJ",
+            "dGVtGmAKF0NhbGxFeHRlbnNpb25QYXJhbWV0ZXJzEkUKD2NhbGxfZXh0ZW5z",
+            "aW9ucxgBIAMoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5D",
+            "YWxsRmVlZEl0ZW0abAobU2l0ZWxpbmtFeHRlbnNpb25QYXJhbWV0ZXJzEk0K",
+            "E3NpdGVsaW5rX2V4dGVuc2lvbnMYASADKAsyMC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5jb21tb24uU2l0ZWxpbmtGZWVkSXRlbRpYChpNb3ZlVW51c2Vk",
             "QnVkZ2V0UGFyYW1ldGVycxI6ChVidWRnZXRfbWljcm9zX3RvX21vdmUYASAB",
             "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUISChBhcHBseV9wYXJh",
             "bWV0ZXJzIp4BChtBcHBseVJlY29tbWVuZGF0aW9uUmVzcG9uc2USTAoHcmVz",
@@ -102,14 +118,17 @@ namespace Google.Ads.GoogleAds.V1.Services {
             "bGVBZHNcVjFcU2VydmljZXPqAiRHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
             "MTo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Resources.AdReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Resources.RecommendationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Resources.AdReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Resources.RecommendationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.GetRecommendationRequest), global::Google.Ads.GoogleAds.V1.Services.GetRecommendationRequest.Parser, new[]{ "ResourceName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationRequest), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Parser, new[]{ "ResourceName", "CampaignBudget", "TextAd", "Keyword", "TargetCpaOptIn", "MoveUnusedBudget" }, new[]{ "ApplyParameters" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters.Parser, new[]{ "NewBudgetAmountMicros" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Parser, new[]{ "ResourceName", "CampaignBudget", "TextAd", "Keyword", "TargetCpaOptIn", "CalloutExtension", "CallExtension", "SitelinkExtension", "MoveUnusedBudget" }, new[]{ "ApplyParameters" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters.Parser, new[]{ "NewBudgetAmountMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TextAdParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TextAdParameters.Parser, new[]{ "Ad" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.KeywordParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.KeywordParameters.Parser, new[]{ "AdGroup", "MatchType", "CpcBidMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters.Parser, new[]{ "TargetCpaMicros", "NewCampaignBudgetAmountMicros" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters.Parser, new[]{ "CalloutExtensions" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CallExtensionParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CallExtensionParameters.Parser, new[]{ "CallExtensions" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters.Parser, new[]{ "SitelinkExtensions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters.Parser, new[]{ "BudgetMicrosToMove" }, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationResponse), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationResult), global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null),
@@ -493,6 +512,15 @@ namespace Google.Ads.GoogleAds.V1.Services {
         case ApplyParametersOneofCase.TargetCpaOptIn:
           TargetCpaOptIn = other.TargetCpaOptIn.Clone();
           break;
+        case ApplyParametersOneofCase.CalloutExtension:
+          CalloutExtension = other.CalloutExtension.Clone();
+          break;
+        case ApplyParametersOneofCase.CallExtension:
+          CallExtension = other.CallExtension.Clone();
+          break;
+        case ApplyParametersOneofCase.SitelinkExtension:
+          SitelinkExtension = other.SitelinkExtension.Clone();
+          break;
         case ApplyParametersOneofCase.MoveUnusedBudget:
           MoveUnusedBudget = other.MoveUnusedBudget.Clone();
           break;
@@ -578,6 +606,48 @@ namespace Google.Ads.GoogleAds.V1.Services {
       }
     }
 
+    /// <summary>Field number for the "callout_extension" field.</summary>
+    public const int CalloutExtensionFieldNumber = 6;
+    /// <summary>
+    /// Parameters to use when applying callout extension recommendation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters CalloutExtension {
+      get { return applyParametersCase_ == ApplyParametersOneofCase.CalloutExtension ? (global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters) applyParameters_ : null; }
+      set {
+        applyParameters_ = value;
+        applyParametersCase_ = value == null ? ApplyParametersOneofCase.None : ApplyParametersOneofCase.CalloutExtension;
+      }
+    }
+
+    /// <summary>Field number for the "call_extension" field.</summary>
+    public const int CallExtensionFieldNumber = 7;
+    /// <summary>
+    /// Parameters to use when applying call extension recommendation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CallExtensionParameters CallExtension {
+      get { return applyParametersCase_ == ApplyParametersOneofCase.CallExtension ? (global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CallExtensionParameters) applyParameters_ : null; }
+      set {
+        applyParameters_ = value;
+        applyParametersCase_ = value == null ? ApplyParametersOneofCase.None : ApplyParametersOneofCase.CallExtension;
+      }
+    }
+
+    /// <summary>Field number for the "sitelink_extension" field.</summary>
+    public const int SitelinkExtensionFieldNumber = 8;
+    /// <summary>
+    /// Parameters to use when applying call extension recommendation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters SitelinkExtension {
+      get { return applyParametersCase_ == ApplyParametersOneofCase.SitelinkExtension ? (global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters) applyParameters_ : null; }
+      set {
+        applyParameters_ = value;
+        applyParametersCase_ = value == null ? ApplyParametersOneofCase.None : ApplyParametersOneofCase.SitelinkExtension;
+      }
+    }
+
     /// <summary>Field number for the "move_unused_budget" field.</summary>
     public const int MoveUnusedBudgetFieldNumber = 9;
     /// <summary>
@@ -600,6 +670,9 @@ namespace Google.Ads.GoogleAds.V1.Services {
       TextAd = 3,
       Keyword = 4,
       TargetCpaOptIn = 5,
+      CalloutExtension = 6,
+      CallExtension = 7,
+      SitelinkExtension = 8,
       MoveUnusedBudget = 9,
     }
     private ApplyParametersOneofCase applyParametersCase_ = ApplyParametersOneofCase.None;
@@ -632,6 +705,9 @@ namespace Google.Ads.GoogleAds.V1.Services {
       if (!object.Equals(TextAd, other.TextAd)) return false;
       if (!object.Equals(Keyword, other.Keyword)) return false;
       if (!object.Equals(TargetCpaOptIn, other.TargetCpaOptIn)) return false;
+      if (!object.Equals(CalloutExtension, other.CalloutExtension)) return false;
+      if (!object.Equals(CallExtension, other.CallExtension)) return false;
+      if (!object.Equals(SitelinkExtension, other.SitelinkExtension)) return false;
       if (!object.Equals(MoveUnusedBudget, other.MoveUnusedBudget)) return false;
       if (ApplyParametersCase != other.ApplyParametersCase) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -645,6 +721,9 @@ namespace Google.Ads.GoogleAds.V1.Services {
       if (applyParametersCase_ == ApplyParametersOneofCase.TextAd) hash ^= TextAd.GetHashCode();
       if (applyParametersCase_ == ApplyParametersOneofCase.Keyword) hash ^= Keyword.GetHashCode();
       if (applyParametersCase_ == ApplyParametersOneofCase.TargetCpaOptIn) hash ^= TargetCpaOptIn.GetHashCode();
+      if (applyParametersCase_ == ApplyParametersOneofCase.CalloutExtension) hash ^= CalloutExtension.GetHashCode();
+      if (applyParametersCase_ == ApplyParametersOneofCase.CallExtension) hash ^= CallExtension.GetHashCode();
+      if (applyParametersCase_ == ApplyParametersOneofCase.SitelinkExtension) hash ^= SitelinkExtension.GetHashCode();
       if (applyParametersCase_ == ApplyParametersOneofCase.MoveUnusedBudget) hash ^= MoveUnusedBudget.GetHashCode();
       hash ^= (int) applyParametersCase_;
       if (_unknownFields != null) {
@@ -680,6 +759,18 @@ namespace Google.Ads.GoogleAds.V1.Services {
         output.WriteRawTag(42);
         output.WriteMessage(TargetCpaOptIn);
       }
+      if (applyParametersCase_ == ApplyParametersOneofCase.CalloutExtension) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CalloutExtension);
+      }
+      if (applyParametersCase_ == ApplyParametersOneofCase.CallExtension) {
+        output.WriteRawTag(58);
+        output.WriteMessage(CallExtension);
+      }
+      if (applyParametersCase_ == ApplyParametersOneofCase.SitelinkExtension) {
+        output.WriteRawTag(66);
+        output.WriteMessage(SitelinkExtension);
+      }
       if (applyParametersCase_ == ApplyParametersOneofCase.MoveUnusedBudget) {
         output.WriteRawTag(74);
         output.WriteMessage(MoveUnusedBudget);
@@ -706,6 +797,15 @@ namespace Google.Ads.GoogleAds.V1.Services {
       }
       if (applyParametersCase_ == ApplyParametersOneofCase.TargetCpaOptIn) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TargetCpaOptIn);
+      }
+      if (applyParametersCase_ == ApplyParametersOneofCase.CalloutExtension) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CalloutExtension);
+      }
+      if (applyParametersCase_ == ApplyParametersOneofCase.CallExtension) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CallExtension);
+      }
+      if (applyParametersCase_ == ApplyParametersOneofCase.SitelinkExtension) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SitelinkExtension);
       }
       if (applyParametersCase_ == ApplyParametersOneofCase.MoveUnusedBudget) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MoveUnusedBudget);
@@ -748,6 +848,24 @@ namespace Google.Ads.GoogleAds.V1.Services {
             TargetCpaOptIn = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters();
           }
           TargetCpaOptIn.MergeFrom(other.TargetCpaOptIn);
+          break;
+        case ApplyParametersOneofCase.CalloutExtension:
+          if (CalloutExtension == null) {
+            CalloutExtension = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters();
+          }
+          CalloutExtension.MergeFrom(other.CalloutExtension);
+          break;
+        case ApplyParametersOneofCase.CallExtension:
+          if (CallExtension == null) {
+            CallExtension = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CallExtensionParameters();
+          }
+          CallExtension.MergeFrom(other.CallExtension);
+          break;
+        case ApplyParametersOneofCase.SitelinkExtension:
+          if (SitelinkExtension == null) {
+            SitelinkExtension = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters();
+          }
+          SitelinkExtension.MergeFrom(other.SitelinkExtension);
           break;
         case ApplyParametersOneofCase.MoveUnusedBudget:
           if (MoveUnusedBudget == null) {
@@ -806,6 +924,33 @@ namespace Google.Ads.GoogleAds.V1.Services {
             }
             input.ReadMessage(subBuilder);
             TargetCpaOptIn = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters subBuilder = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters();
+            if (applyParametersCase_ == ApplyParametersOneofCase.CalloutExtension) {
+              subBuilder.MergeFrom(CalloutExtension);
+            }
+            input.ReadMessage(subBuilder);
+            CalloutExtension = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CallExtensionParameters subBuilder = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.CallExtensionParameters();
+            if (applyParametersCase_ == ApplyParametersOneofCase.CallExtension) {
+              subBuilder.MergeFrom(CallExtension);
+            }
+            input.ReadMessage(subBuilder);
+            CallExtension = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters subBuilder = new global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters();
+            if (applyParametersCase_ == ApplyParametersOneofCase.SitelinkExtension) {
+              subBuilder.MergeFrom(SitelinkExtension);
+            }
+            input.ReadMessage(subBuilder);
+            SitelinkExtension = subBuilder;
             break;
           }
           case 74: {
@@ -1494,6 +1639,387 @@ namespace Google.Ads.GoogleAds.V1.Services {
       }
 
       /// <summary>
+      /// Parameters to use when applying callout extension recommendation.
+      /// </summary>
+      public sealed partial class CalloutExtensionParameters : pb::IMessage<CalloutExtensionParameters> {
+        private static readonly pb::MessageParser<CalloutExtensionParameters> _parser = new pb::MessageParser<CalloutExtensionParameters>(() => new CalloutExtensionParameters());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<CalloutExtensionParameters> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Descriptor.NestedTypes[4]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CalloutExtensionParameters() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CalloutExtensionParameters(CalloutExtensionParameters other) : this() {
+          calloutExtensions_ = other.calloutExtensions_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CalloutExtensionParameters Clone() {
+          return new CalloutExtensionParameters(this);
+        }
+
+        /// <summary>Field number for the "callout_extensions" field.</summary>
+        public const int CalloutExtensionsFieldNumber = 1;
+        private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.CalloutFeedItem> _repeated_calloutExtensions_codec
+            = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V1.Common.CalloutFeedItem.Parser);
+        private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CalloutFeedItem> calloutExtensions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CalloutFeedItem>();
+        /// <summary>
+        /// Callout extensions to be added. This is a required field.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CalloutFeedItem> CalloutExtensions {
+          get { return calloutExtensions_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as CalloutExtensionParameters);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(CalloutExtensionParameters other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!calloutExtensions_.Equals(other.calloutExtensions_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= calloutExtensions_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          calloutExtensions_.WriteTo(output, _repeated_calloutExtensions_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += calloutExtensions_.CalculateSize(_repeated_calloutExtensions_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(CalloutExtensionParameters other) {
+          if (other == null) {
+            return;
+          }
+          calloutExtensions_.Add(other.calloutExtensions_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                calloutExtensions_.AddEntriesFrom(input, _repeated_calloutExtensions_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Parameters to use when applying call extension recommendation.
+      /// </summary>
+      public sealed partial class CallExtensionParameters : pb::IMessage<CallExtensionParameters> {
+        private static readonly pb::MessageParser<CallExtensionParameters> _parser = new pb::MessageParser<CallExtensionParameters>(() => new CallExtensionParameters());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<CallExtensionParameters> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Descriptor.NestedTypes[5]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CallExtensionParameters() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CallExtensionParameters(CallExtensionParameters other) : this() {
+          callExtensions_ = other.callExtensions_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public CallExtensionParameters Clone() {
+          return new CallExtensionParameters(this);
+        }
+
+        /// <summary>Field number for the "call_extensions" field.</summary>
+        public const int CallExtensionsFieldNumber = 1;
+        private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.CallFeedItem> _repeated_callExtensions_codec
+            = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V1.Common.CallFeedItem.Parser);
+        private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CallFeedItem> callExtensions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CallFeedItem>();
+        /// <summary>
+        /// Call extensions to be added. This is a required field.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CallFeedItem> CallExtensions {
+          get { return callExtensions_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as CallExtensionParameters);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(CallExtensionParameters other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!callExtensions_.Equals(other.callExtensions_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= callExtensions_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          callExtensions_.WriteTo(output, _repeated_callExtensions_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += callExtensions_.CalculateSize(_repeated_callExtensions_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(CallExtensionParameters other) {
+          if (other == null) {
+            return;
+          }
+          callExtensions_.Add(other.callExtensions_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                callExtensions_.AddEntriesFrom(input, _repeated_callExtensions_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Parameters to use when applying call extension recommendation.
+      /// </summary>
+      public sealed partial class SitelinkExtensionParameters : pb::IMessage<SitelinkExtensionParameters> {
+        private static readonly pb::MessageParser<SitelinkExtensionParameters> _parser = new pb::MessageParser<SitelinkExtensionParameters>(() => new SitelinkExtensionParameters());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<SitelinkExtensionParameters> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Descriptor.NestedTypes[6]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SitelinkExtensionParameters() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SitelinkExtensionParameters(SitelinkExtensionParameters other) : this() {
+          sitelinkExtensions_ = other.sitelinkExtensions_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SitelinkExtensionParameters Clone() {
+          return new SitelinkExtensionParameters(this);
+        }
+
+        /// <summary>Field number for the "sitelink_extensions" field.</summary>
+        public const int SitelinkExtensionsFieldNumber = 1;
+        private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.SitelinkFeedItem> _repeated_sitelinkExtensions_codec
+            = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V1.Common.SitelinkFeedItem.Parser);
+        private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.SitelinkFeedItem> sitelinkExtensions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.SitelinkFeedItem>();
+        /// <summary>
+        /// Sitelink extensions to be added. This is a required field.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.SitelinkFeedItem> SitelinkExtensions {
+          get { return sitelinkExtensions_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as SitelinkExtensionParameters);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(SitelinkExtensionParameters other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!sitelinkExtensions_.Equals(other.sitelinkExtensions_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= sitelinkExtensions_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          sitelinkExtensions_.WriteTo(output, _repeated_sitelinkExtensions_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += sitelinkExtensions_.CalculateSize(_repeated_sitelinkExtensions_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(SitelinkExtensionParameters other) {
+          if (other == null) {
+            return;
+          }
+          sitelinkExtensions_.Add(other.sitelinkExtensions_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                sitelinkExtensions_.AddEntriesFrom(input, _repeated_sitelinkExtensions_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
       /// Parameters to use when applying move unused budget recommendation.
       /// </summary>
       public sealed partial class MoveUnusedBudgetParameters : pb::IMessage<MoveUnusedBudgetParameters> {
@@ -1504,7 +2030,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Descriptor.NestedTypes[4]; }
+          get { return global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Descriptor.NestedTypes[7]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

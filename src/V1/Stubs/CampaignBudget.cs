@@ -195,7 +195,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
     /// <summary>
     /// The amount of the budget, in the local currency for the account.
     /// Amount is specified in micros, where one million is equivalent to one
-    /// currency unit.
+    /// currency unit. Monthly spend is capped at 30.4 times this amount.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long? AmountMicros {
