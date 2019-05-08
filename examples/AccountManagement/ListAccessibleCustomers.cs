@@ -27,7 +27,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
     /// https://developers.google.com/google-ads/api/docs/concepts/call-structure#login-customer-id
     /// to learn more about the login-customer-id header.
     /// </summary>
-    public class GetAccessibleCustomers : ExampleBase
+    public class ListAccessibleCustomers : ExampleBase
     {
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -35,7 +35,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            GetAccessibleCustomers codeExample = new GetAccessibleCustomers();
+            ListAccessibleCustomers codeExample = new ListAccessibleCustomers();
 
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient());
