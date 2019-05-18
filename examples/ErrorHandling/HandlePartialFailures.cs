@@ -67,7 +67,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="campaignId">Id of the campaign to which ad groups are added.</param>
+        /// <param name="campaignId">ID of the campaign to which ad groups are added.</param>
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the AdGroupServiceClient.
