@@ -165,14 +165,13 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Specifies that a user is excluded from seeing the ad if either their
-        /// Area of Interest (AOI) or their Location of Presence (LOP) matches the
-        /// geo target.
+        /// Specifies that a user is excluded from seeing the ad if they
+        /// are in, or show interest in, advertiser's excluded locations.
         /// </summary>
         [pbr::OriginalName("DONT_CARE")] DontCare = 2,
         /// <summary>
-        /// Specifies that a user is excluded from seeing the ad
-        /// only if their Location of Presence (LOP) matches the geo target.
+        /// Specifies that a user is excluded from seeing the ad if they
+        /// are in advertiser's excluded locations.
         /// </summary>
         [pbr::OriginalName("LOCATION_OF_PRESENCE")] LocationOfPresence = 3,
       }

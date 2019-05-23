@@ -637,7 +637,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
     /// <summary>Field number for the "sitelink_extension" field.</summary>
     public const int SitelinkExtensionFieldNumber = 8;
     /// <summary>
-    /// Parameters to use when applying call extension recommendation.
+    /// Parameters to use when applying sitelink extension recommendation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V1.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters SitelinkExtension {
@@ -1893,7 +1893,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
       }
 
       /// <summary>
-      /// Parameters to use when applying call extension recommendation.
+      /// Parameters to use when applying sitelink extension recommendation.
       /// </summary>
       public sealed partial class SitelinkExtensionParameters : pb::IMessage<SitelinkExtensionParameters> {
         private static readonly pb::MessageParser<SitelinkExtensionParameters> _parser = new pb::MessageParser<SitelinkExtensionParameters>(() => new SitelinkExtensionParameters());

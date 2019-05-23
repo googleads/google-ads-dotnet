@@ -43,6 +43,8 @@ namespace Google.Ads.GoogleAds.V1.Services
     public abstract partial class CampaignBudgetServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignCriterionServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignCriterionSimulationServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class CampaignDraftServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class CampaignExperimentServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignExtensionSettingServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignFeedServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CampaignLabelServiceClient : GoogleAdsServiceClientBase {}

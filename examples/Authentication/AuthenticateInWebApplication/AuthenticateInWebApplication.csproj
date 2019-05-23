@@ -48,8 +48,8 @@
     <ProjectReference Condition="Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="..\..\..\src\Google.Ads.GoogleAds.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Google.Ads.GoogleAds, Version=2.0.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.2.0.0\lib\net452\Google.Ads.GoogleAds.dll</HintPath>
+    <Reference Include="Google.Ads.GoogleAds, Version=2.1.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.2.1.0\lib\net452\Google.Ads.GoogleAds.dll</HintPath>
     </Reference>
     <Reference Include="Google.Api.CommonProtos, Version=1.6.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Api.CommonProtos.1.6.0\lib\net45\Google.Api.CommonProtos.dll</HintPath>

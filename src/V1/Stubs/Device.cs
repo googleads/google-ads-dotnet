@@ -26,14 +26,15 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Cipnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9kZXZpY2UucHJvdG8S",
             "HWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zGhxnb29nbGUvYXBpL2Fu",
-            "bm90YXRpb25zLnByb3RvImQKCkRldmljZUVudW0iVgoGRGV2aWNlEg8KC1VO",
+            "bm90YXRpb25zLnByb3RvInYKCkRldmljZUVudW0iaAoGRGV2aWNlEg8KC1VO",
             "U1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgoKBk1PQklMRRACEgoKBlRBQkxF",
-            "VBADEgsKB0RFU0tUT1AQBBIJCgVPVEhFUhAFQuABCiFjb20uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjEuZW51bXNCC0RldmljZVByb3RvUAFaQmdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
-            "LkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRW51bXPqAiFHb29n",
-            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnByb3RvMw=="));
+            "VBADEgsKB0RFU0tUT1AQBBIQCgxDT05ORUNURURfVFYQBhIJCgVPVEhFUhAF",
+            "QuABCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXNCC0Rldmlj",
+            "ZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2ds",
+            "ZS5BZHMuR29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVB",
+            "ZHNcVjFcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51",
+            "bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -174,6 +175,10 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// Computers.
         /// </summary>
         [pbr::OriginalName("DESKTOP")] Desktop = 4,
+        /// <summary>
+        /// Smart TVs and game consoles.
+        /// </summary>
+        [pbr::OriginalName("CONNECTED_TV")] ConnectedTv = 6,
         /// <summary>
         /// Other device types.
         /// </summary>

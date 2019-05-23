@@ -63,10 +63,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
   #region Messages
   /// <summary>
   /// An ad group criterion simulation. Supported combinations of advertising
-  /// channel type, criterion types, simulation type, and simulation modification
+  /// channel type, criterion type, simulation type, and simulation modification
   /// method are detailed below respectively.
   ///
-  /// SEARCH  KEYWORDS  CPC_BID  UNIFORM
+  /// SEARCH  KEYWORD  CPC_BID  UNIFORM
   /// </summary>
   public sealed partial class AdGroupCriterionSimulation : pb::IMessage<AdGroupCriterionSimulation> {
     private static readonly pb::MessageParser<AdGroupCriterionSimulation> _parser = new pb::MessageParser<AdGroupCriterionSimulation>(() => new AdGroupCriterionSimulation());

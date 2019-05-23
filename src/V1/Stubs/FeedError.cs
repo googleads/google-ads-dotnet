@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "Ci9nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvZmVlZF9lcnJvci5w",
             "cm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZXJyb3JzGhxnb29nbGUv",
-            "YXBpL2Fubm90YXRpb25zLnByb3RvIt4FCg1GZWVkRXJyb3JFbnVtIswFCglG",
+            "YXBpL2Fubm90YXRpb25zLnByb3RvIvkFCg1GZWVkRXJyb3JFbnVtIucFCglG",
             "ZWVkRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESHgoaQVRU",
             "UklCVVRFX05BTUVTX05PVF9VTklRVUUQAhIvCitBVFRSSUJVVEVTX0RPX05P",
             "VF9NQVRDSF9FWElTVElOR19BVFRSSUJVVEVTEAMSLgoqQ0FOTk9UX1NQRUNJ",
@@ -42,13 +42,13 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "VEVfQ0FOTk9UX0JFX1BBUlRfT0ZfVU5JUVVFX0tFWRAQEhcKE1RPT19NQU5Z",
             "X0FUVFJJQlVURVMQERIcChhJTlZBTElEX0JVU0lORVNTX0FDQ09VTlQQEhIz",
             "Ci9CVVNJTkVTU19BQ0NPVU5UX0NBTk5PVF9BQ0NFU1NfTE9DQVRJT05fQUND",
-            "T1VOVBATEh4KGklOVkFMSURfQUZGSUxJQVRFX0NIQUlOX0lEEBRC6QEKImNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lcnJvcnNCDkZlZWRFcnJvclBy",
-            "b3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
-            "YWRzL2dvb2dsZWFkcy92MS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xl",
-            "LkFkcy5Hb29nbGVBZHMuVjEuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVB",
-            "ZHNcVjFcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkVy",
-            "cm9yc2IGcHJvdG8z"));
+            "T1VOVBATEh4KGklOVkFMSURfQUZGSUxJQVRFX0NIQUlOX0lEEBQSGQoVRFVQ",
+            "TElDQVRFX1NZU1RFTV9GRUVEEBVC6QEKImNvbS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5lcnJvcnNCDkZlZWRFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9l",
+            "cnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEu",
+            "RXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRXJyb3Jz6gIiR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -254,6 +254,10 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// Invalid chain ID provided for affiliate location feed.
         /// </summary>
         [pbr::OriginalName("INVALID_AFFILIATE_CHAIN_ID")] InvalidAffiliateChainId = 20,
+        /// <summary>
+        /// There is already a feed with the given system feed generation data.
+        /// </summary>
+        [pbr::OriginalName("DUPLICATE_SYSTEM_FEED")] DuplicateSystemFeed = 21,
       }
 
     }

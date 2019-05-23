@@ -165,18 +165,18 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Specifies that either Area of Interest (AOI) or
-        /// Location of Presence (LOP) may trigger the ad.
+        /// Specifies that an ad is triggered if the user is in,
+        /// or shows interest in, advertiser's targeted locations.
         /// </summary>
         [pbr::OriginalName("DONT_CARE")] DontCare = 2,
         /// <summary>
-        /// Specifies that the ad is triggered only if the user's Area of Interest
-        /// (AOI) matches.
+        /// Specifies that an ad is triggered if the user
+        /// searches for advertiser's targeted locations.
         /// </summary>
         [pbr::OriginalName("AREA_OF_INTEREST")] AreaOfInterest = 3,
         /// <summary>
-        /// Specifies that the ad is triggered only if the user's
-        /// Location of Presence (LOP) matches.
+        /// Specifies that an ad is triggered if the user is in
+        /// or regularly in advertiser's targeted locations.
         /// </summary>
         [pbr::OriginalName("LOCATION_OF_PRESENCE")] LocationOfPresence = 4,
       }

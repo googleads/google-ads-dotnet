@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "dWxhdGlvbl9tb2RpZmljYXRpb25fbWV0aG9kLnByb3RvGjNnb29nbGUvYWRz",
             "L2dvb2dsZWFkcy92MS9lbnVtcy9zaW11bGF0aW9uX3R5cGUucHJvdG8aHmdv",
             "b2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5v",
-            "dGF0aW9ucy5wcm90byLPBAoRQWRHcm91cFNpbXVsYXRpb24SFQoNcmVzb3Vy",
+            "dGF0aW9ucy5wcm90byKoBQoRQWRHcm91cFNpbXVsYXRpb24SFQoNcmVzb3Vy",
             "Y2VfbmFtZRgBIAEoCRIwCgthZF9ncm91cF9pZBgCIAEoCzIbLmdvb2dsZS5w",
             "cm90b2J1Zi5JbnQ2NFZhbHVlEk4KBHR5cGUYAyABKA4yQC5nb29nbGUuYWRz",
             "Lmdvb2dsZWFkcy52MS5lbnVtcy5TaW11bGF0aW9uVHlwZUVudW0uU2ltdWxh",
@@ -42,19 +42,21 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "ZRIuCghlbmRfZGF0ZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
             "YWx1ZRJXChJjcGNfYmlkX3BvaW50X2xpc3QYCCABKAsyOS5nb29nbGUuYWRz",
             "Lmdvb2dsZWFkcy52MS5jb21tb24uQ3BjQmlkU2ltdWxhdGlvblBvaW50TGlz",
-            "dEgAEl0KFXRhcmdldF9jcGFfcG9pbnRfbGlzdBgJIAEoCzI8Lmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5UYXJnZXRDcGFTaW11bGF0aW9uUG9p",
-            "bnRMaXN0SABCDAoKcG9pbnRfbGlzdEKDAgolY29tLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxLnJlc291cmNlc0IWQWRHcm91cFNpbXVsYXRpb25Qcm90b1AB",
-            "Wkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjEvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYxLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYxXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
-            "OlYxOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "dEgAElcKEmNwdl9iaWRfcG9pbnRfbGlzdBgKIAEoCzI5Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYxLmNvbW1vbi5DcHZCaWRTaW11bGF0aW9uUG9pbnRMaXN0",
+            "SAASXQoVdGFyZ2V0X2NwYV9wb2ludF9saXN0GAkgASgLMjwuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjEuY29tbW9uLlRhcmdldENwYVNpbXVsYXRpb25Qb2lu",
+            "dExpc3RIAEIMCgpwb2ludF9saXN0QoMCCiVjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjEucmVzb3VyY2VzQhZBZEdyb3VwU2ltdWxhdGlvblByb3RvUAFa",
+            "Smdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
+            "b2dsZWFkcy92MS9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xl",
+            "LkFkcy5Hb29nbGVBZHMuVjEuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29n",
+            "bGVBZHNcVjFcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjE6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.SimulationModificationMethodReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.SimulationTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.AdGroupSimulation), global::Google.Ads.GoogleAds.V1.Resources.AdGroupSimulation.Parser, new[]{ "ResourceName", "AdGroupId", "Type", "ModificationMethod", "StartDate", "EndDate", "CpcBidPointList", "TargetCpaPointList" }, new[]{ "PointList" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.AdGroupSimulation), global::Google.Ads.GoogleAds.V1.Resources.AdGroupSimulation.Parser, new[]{ "ResourceName", "AdGroupId", "Type", "ModificationMethod", "StartDate", "EndDate", "CpcBidPointList", "CpvBidPointList", "TargetCpaPointList" }, new[]{ "PointList" }, null, null)
           }));
     }
     #endregion
@@ -72,6 +74,8 @@ namespace Google.Ads.GoogleAds.V1.Resources {
   /// DISPLAY  CPC_BID     DEFAULT
   /// DISPLAY  CPC_BID     UNIFORM
   /// DISPLAY  TARGET_CPA  UNIFORM
+  /// VIDEO    CPV_BID     DEFAULT
+  /// VIDEO    CPV_BID     UNIFORM
   /// </summary>
   public sealed partial class AdGroupSimulation : pb::IMessage<AdGroupSimulation> {
     private static readonly pb::MessageParser<AdGroupSimulation> _parser = new pb::MessageParser<AdGroupSimulation>(() => new AdGroupSimulation());
@@ -107,6 +111,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       switch (other.PointListCase) {
         case PointListOneofCase.CpcBidPointList:
           CpcBidPointList = other.CpcBidPointList.Clone();
+          break;
+        case PointListOneofCase.CpvBidPointList:
+          CpvBidPointList = other.CpvBidPointList.Clone();
           break;
         case PointListOneofCase.TargetCpaPointList:
           TargetCpaPointList = other.TargetCpaPointList.Clone();
@@ -225,6 +232,20 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
     }
 
+    /// <summary>Field number for the "cpv_bid_point_list" field.</summary>
+    public const int CpvBidPointListFieldNumber = 10;
+    /// <summary>
+    /// Simulation points if the simulation type is CPV_BID.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPointList CpvBidPointList {
+      get { return pointListCase_ == PointListOneofCase.CpvBidPointList ? (global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPointList) pointList_ : null; }
+      set {
+        pointList_ = value;
+        pointListCase_ = value == null ? PointListOneofCase.None : PointListOneofCase.CpvBidPointList;
+      }
+    }
+
     /// <summary>Field number for the "target_cpa_point_list" field.</summary>
     public const int TargetCpaPointListFieldNumber = 9;
     /// <summary>
@@ -244,6 +265,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
     public enum PointListOneofCase {
       None = 0,
       CpcBidPointList = 8,
+      CpvBidPointList = 10,
       TargetCpaPointList = 9,
     }
     private PointListOneofCase pointListCase_ = PointListOneofCase.None;
@@ -278,6 +300,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (StartDate != other.StartDate) return false;
       if (EndDate != other.EndDate) return false;
       if (!object.Equals(CpcBidPointList, other.CpcBidPointList)) return false;
+      if (!object.Equals(CpvBidPointList, other.CpvBidPointList)) return false;
       if (!object.Equals(TargetCpaPointList, other.TargetCpaPointList)) return false;
       if (PointListCase != other.PointListCase) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -293,6 +316,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (startDate_ != null) hash ^= StartDate.GetHashCode();
       if (endDate_ != null) hash ^= EndDate.GetHashCode();
       if (pointListCase_ == PointListOneofCase.CpcBidPointList) hash ^= CpcBidPointList.GetHashCode();
+      if (pointListCase_ == PointListOneofCase.CpvBidPointList) hash ^= CpvBidPointList.GetHashCode();
       if (pointListCase_ == PointListOneofCase.TargetCpaPointList) hash ^= TargetCpaPointList.GetHashCode();
       hash ^= (int) pointListCase_;
       if (_unknownFields != null) {
@@ -337,6 +361,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteRawTag(74);
         output.WriteMessage(TargetCpaPointList);
       }
+      if (pointListCase_ == PointListOneofCase.CpvBidPointList) {
+        output.WriteRawTag(82);
+        output.WriteMessage(CpvBidPointList);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -365,6 +393,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
       if (pointListCase_ == PointListOneofCase.CpcBidPointList) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CpcBidPointList);
+      }
+      if (pointListCase_ == PointListOneofCase.CpvBidPointList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CpvBidPointList);
       }
       if (pointListCase_ == PointListOneofCase.TargetCpaPointList) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TargetCpaPointList);
@@ -410,6 +441,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             CpcBidPointList = new global::Google.Ads.GoogleAds.V1.Common.CpcBidSimulationPointList();
           }
           CpcBidPointList.MergeFrom(other.CpcBidPointList);
+          break;
+        case PointListOneofCase.CpvBidPointList:
+          if (CpvBidPointList == null) {
+            CpvBidPointList = new global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPointList();
+          }
+          CpvBidPointList.MergeFrom(other.CpvBidPointList);
           break;
         case PointListOneofCase.TargetCpaPointList:
           if (TargetCpaPointList == null) {
@@ -479,6 +516,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             }
             input.ReadMessage(subBuilder);
             TargetCpaPointList = subBuilder;
+            break;
+          }
+          case 82: {
+            global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPointList subBuilder = new global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPointList();
+            if (pointListCase_ == PointListOneofCase.CpvBidPointList) {
+              subBuilder.MergeFrom(CpvBidPointList);
+            }
+            input.ReadMessage(subBuilder);
+            CpvBidPointList = subBuilder;
             break;
           }
         }

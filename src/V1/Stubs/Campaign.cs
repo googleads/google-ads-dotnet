@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "L2Fkcy9nb29nbGVhZHMvdjEvZW51bXMvdmFuaXR5X3BoYXJtYV9kaXNwbGF5",
             "X3VybF9tb2RlLnByb3RvGjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVt",
             "cy92YW5pdHlfcGhhcm1hX3RleHQucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93",
-            "cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKh",
+            "cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLP",
             "KQoIQ2FtcGFpZ24SFQoNcmVzb3VyY2VfbmFtZRgBIAEoCRInCgJpZBgDIAEo",
             "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEioKBG5hbWUYBCABKAsy",
             "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSUAoGc3RhdHVzGAUgASgO",
@@ -88,108 +88,109 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "LmFkcy5nb29nbGVhZHMudjEucmVzb3VyY2VzLkNhbXBhaWduLkdlb1Rhcmdl",
             "dFR5cGVTZXR0aW5nElwKFGFwcF9jYW1wYWlnbl9zZXR0aW5nGDMgASgLMj4u",
             "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjEucmVzb3VyY2VzLkNhbXBhaWduLkFw",
-            "cENhbXBhaWduU2V0dGluZxJpCg9leHBlcmltZW50X3R5cGUYESABKA4yUC5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5DYW1wYWlnbkV4cGVyaW1l",
-            "bnRUeXBlRW51bS5DYW1wYWlnbkV4cGVyaW1lbnRUeXBlEjMKDWJhc2VfY2Ft",
-            "cGFpZ24YHCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNQoP",
-            "Y2FtcGFpZ25fYnVkZ2V0GAYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEmkKFWJpZGRpbmdfc3RyYXRlZ3lfdHlwZRgWIAEoDjJKLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkJpZGRpbmdTdHJhdGVneVR5cGVF",
-            "bnVtLkJpZGRpbmdTdHJhdGVneVR5cGUSMAoKc3RhcnRfZGF0ZRgTIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIuCghlbmRfZGF0ZRgUIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI2ChBmaW5hbF91cmxf",
-            "c3VmZml4GCYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEkkK",
-            "DmZyZXF1ZW5jeV9jYXBzGCggAygLMjEuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djEuY29tbW9uLkZyZXF1ZW5jeUNhcEVudHJ5EngKHnZpZGVvX2JyYW5kX3Nh",
-            "ZmV0eV9zdWl0YWJpbGl0eRgqIAEoDjJQLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxLmVudW1zLkJyYW5kU2FmZXR5U3VpdGFiaWxpdHlFbnVtLkJyYW5kU2Fm",
-            "ZXR5U3VpdGFiaWxpdHkSTwoNdmFuaXR5X3BoYXJtYRgsIAEoCzI4Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLnJlc291cmNlcy5DYW1wYWlnbi5WYW5pdHlQ",
-            "aGFybWESYQoWc2VsZWN0aXZlX29wdGltaXphdGlvbhgtIAEoCzJBLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLnJlc291cmNlcy5DYW1wYWlnbi5TZWxlY3Rp",
-            "dmVPcHRpbWl6YXRpb24SVQoQdHJhY2tpbmdfc2V0dGluZxguIAEoCzI7Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLnJlc291cmNlcy5DYW1wYWlnbi5UcmFj",
-            "a2luZ1NldHRpbmcSUAoMcGF5bWVudF9tb2RlGDQgASgOMjouZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjEuZW51bXMuUGF5bWVudE1vZGVFbnVtLlBheW1lbnRN",
-            "b2RlEjgKEGJpZGRpbmdfc3RyYXRlZ3kYFyABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWVIABJACgpjb21taXNzaW9uGDEgASgLMiouZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkNvbW1pc3Npb25IABI/CgptYW51",
-            "YWxfY3BjGBggASgLMikuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9u",
-            "Lk1hbnVhbENwY0gAEj8KCm1hbnVhbF9jcG0YGSABKAsyKS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MS5jb21tb24uTWFudWFsQ3BtSAASPwoKbWFudWFsX2Nw",
-            "dhglIAEoCzIpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5NYW51",
-            "YWxDcHZIABJTChRtYXhpbWl6ZV9jb252ZXJzaW9ucxgeIAEoCzIzLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5NYXhpbWl6ZUNvbnZlcnNpb25z",
-            "SAASXAoZbWF4aW1pemVfY29udmVyc2lvbl92YWx1ZRgfIAEoCzI3Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5NYXhpbWl6ZUNvbnZlcnNpb25W",
-            "YWx1ZUgAEj8KCnRhcmdldF9jcGEYGiABKAsyKS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MS5jb21tb24uVGFyZ2V0Q3BhSAASWAoXdGFyZ2V0X2ltcHJlc3Np",
-            "b25fc2hhcmUYMCABKAsyNS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21t",
-            "b24uVGFyZ2V0SW1wcmVzc2lvblNoYXJlSAASQQoLdGFyZ2V0X3JvYXMYHSAB",
-            "KAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uVGFyZ2V0Um9h",
-            "c0gAEkMKDHRhcmdldF9zcGVuZBgbIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxLmNvbW1vbi5UYXJnZXRTcGVuZEgAEkEKC3BlcmNlbnRfY3BjGCIg",
-            "ASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlBlcmNlbnRD",
-            "cGNIABI/Cgp0YXJnZXRfY3BtGCkgASgLMikuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjEuY29tbW9uLlRhcmdldENwbUgAGoUCCg9OZXR3b3JrU2V0dGluZ3MS",
-            "OAoUdGFyZ2V0X2dvb2dsZV9zZWFyY2gYASABKAsyGi5nb29nbGUucHJvdG9i",
-            "dWYuQm9vbFZhbHVlEjkKFXRhcmdldF9zZWFyY2hfbmV0d29yaxgCIAEoCzIa",
-            "Lmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSOgoWdGFyZ2V0X2NvbnRlbnRf",
-            "bmV0d29yaxgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSQQod",
-            "dGFyZ2V0X3BhcnRuZXJfc2VhcmNoX25ldHdvcmsYBCABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuQm9vbFZhbHVlGkgKEEhvdGVsU2V0dGluZ0luZm8SNAoPaG90",
-            "ZWxfY2VudGVyX2lkGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
-            "dWUa6gEKF0R5bmFtaWNTZWFyY2hBZHNTZXR0aW5nEjEKC2RvbWFpbl9uYW1l",
-            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjMKDWxhbmd1",
-            "YWdlX2NvZGUYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "OgoWdXNlX3N1cHBsaWVkX3VybHNfb25seRgDIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5Cb29sVmFsdWUSKwoFZmVlZHMYBSADKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUaRQoPVHJhY2tpbmdTZXR0aW5nEjIKDHRyYWNraW5n",
-            "X3VybBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRr6AQoU",
-            "R2VvVGFyZ2V0VHlwZVNldHRpbmcScAoYcG9zaXRpdmVfZ2VvX3RhcmdldF90",
-            "eXBlGAEgASgOMk4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuUG9z",
-            "aXRpdmVHZW9UYXJnZXRUeXBlRW51bS5Qb3NpdGl2ZUdlb1RhcmdldFR5cGUS",
-            "cAoYbmVnYXRpdmVfZ2VvX3RhcmdldF90eXBlGAIgASgOMk4uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjEuZW51bXMuTmVnYXRpdmVHZW9UYXJnZXRUeXBlRW51",
-            "bS5OZWdhdGl2ZUdlb1RhcmdldFR5cGUaUQoVU2VsZWN0aXZlT3B0aW1pemF0",
-            "aW9uEjgKEmNvbnZlcnNpb25fYWN0aW9ucxgBIAMoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZRriAQoPU2hvcHBpbmdTZXR0aW5nEjAKC21lcmNo",
-            "YW50X2lkGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSMwoN",
-            "c2FsZXNfY291bnRyeRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZRI2ChFjYW1wYWlnbl9wcmlvcml0eRgDIAEoCzIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5JbnQzMlZhbHVlEjAKDGVuYWJsZV9sb2NhbBgEIAEoCzIaLmdvb2ds",
-            "ZS5wcm90b2J1Zi5Cb29sVmFsdWUasAIKEkFwcENhbXBhaWduU2V0dGluZxKM",
-            "AQoaYmlkZGluZ19zdHJhdGVneV9nb2FsX3R5cGUYASABKA4yaC5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MS5lbnVtcy5BcHBDYW1wYWlnbkJpZGRpbmdTdHJh",
-            "dGVneUdvYWxUeXBlRW51bS5BcHBDYW1wYWlnbkJpZGRpbmdTdHJhdGVneUdv",
-            "YWxUeXBlEiwKBmFwcF9pZBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZRJdCglhcHBfc3RvcmUYAyABKA4ySi5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MS5lbnVtcy5BcHBDYW1wYWlnbkFwcFN0b3JlRW51bS5BcHBDYW1w",
-            "YWlnbkFwcFN0b3JlGvMBCgxWYW5pdHlQaGFybWESgAEKHnZhbml0eV9waGFy",
-            "bWFfZGlzcGxheV91cmxfbW9kZRgBIAEoDjJYLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxLmVudW1zLlZhbml0eVBoYXJtYURpc3BsYXlVcmxNb2RlRW51bS5W",
-            "YW5pdHlQaGFybWFEaXNwbGF5VXJsTW9kZRJgChJ2YW5pdHlfcGhhcm1hX3Rl",
-            "eHQYAiABKA4yRC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5WYW5p",
-            "dHlQaGFybWFUZXh0RW51bS5WYW5pdHlQaGFybWFUZXh0QhsKGWNhbXBhaWdu",
-            "X2JpZGRpbmdfc3RyYXRlZ3lC+gEKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MS5yZXNvdXJjZXNCDUNhbXBhaWduUHJvdG9QAVpKZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL3Jl",
-            "c291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFk",
-            "cy5WMS5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMVxSZXNv",
-            "dXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6UmVzb3VyY2Vz",
-            "YgZwcm90bzM="));
+            "cENhbXBhaWduU2V0dGluZxIsCgZsYWJlbHMYNSADKAsyHC5nb29nbGUucHJv",
+            "dG9idWYuU3RyaW5nVmFsdWUSaQoPZXhwZXJpbWVudF90eXBlGBEgASgOMlAu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXMuQ2FtcGFpZ25FeHBlcmlt",
+            "ZW50VHlwZUVudW0uQ2FtcGFpZ25FeHBlcmltZW50VHlwZRIzCg1iYXNlX2Nh",
+            "bXBhaWduGBwgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjUK",
+            "D2NhbXBhaWduX2J1ZGdldBgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRJpChViaWRkaW5nX3N0cmF0ZWd5X3R5cGUYFiABKA4ySi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5CaWRkaW5nU3RyYXRlZ3lUeXBl",
+            "RW51bS5CaWRkaW5nU3RyYXRlZ3lUeXBlEjAKCnN0YXJ0X2RhdGUYEyABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSLgoIZW5kX2RhdGUYFCAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSNgoQZmluYWxfdXJs",
+            "X3N1ZmZpeBgmIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJJ",
+            "Cg5mcmVxdWVuY3lfY2FwcxgoIAMoCzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxLmNvbW1vbi5GcmVxdWVuY3lDYXBFbnRyeRJ4Ch52aWRlb19icmFuZF9z",
+            "YWZldHlfc3VpdGFiaWxpdHkYKiABKA4yUC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MS5lbnVtcy5CcmFuZFNhZmV0eVN1aXRhYmlsaXR5RW51bS5CcmFuZFNh",
+            "ZmV0eVN1aXRhYmlsaXR5Ek8KDXZhbml0eV9waGFybWEYLCABKAsyOC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MS5yZXNvdXJjZXMuQ2FtcGFpZ24uVmFuaXR5",
+            "UGhhcm1hEmEKFnNlbGVjdGl2ZV9vcHRpbWl6YXRpb24YLSABKAsyQS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MS5yZXNvdXJjZXMuQ2FtcGFpZ24uU2VsZWN0",
+            "aXZlT3B0aW1pemF0aW9uElUKEHRyYWNraW5nX3NldHRpbmcYLiABKAsyOy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5yZXNvdXJjZXMuQ2FtcGFpZ24uVHJh",
+            "Y2tpbmdTZXR0aW5nElAKDHBheW1lbnRfbW9kZRg0IAEoDjI6Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxLmVudW1zLlBheW1lbnRNb2RlRW51bS5QYXltZW50",
+            "TW9kZRI4ChBiaWRkaW5nX3N0cmF0ZWd5GBcgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlSAASQAoKY29tbWlzc2lvbhgxIAEoCzIqLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5Db21taXNzaW9uSAASPwoKbWFu",
+            "dWFsX2NwYxgYIAEoCzIpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1v",
+            "bi5NYW51YWxDcGNIABI/CgptYW51YWxfY3BtGBkgASgLMikuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjEuY29tbW9uLk1hbnVhbENwbUgAEj8KCm1hbnVhbF9j",
+            "cHYYJSABKAsyKS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uTWFu",
+            "dWFsQ3B2SAASUwoUbWF4aW1pemVfY29udmVyc2lvbnMYHiABKAsyMy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uTWF4aW1pemVDb252ZXJzaW9u",
+            "c0gAElwKGW1heGltaXplX2NvbnZlcnNpb25fdmFsdWUYHyABKAsyNy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uTWF4aW1pemVDb252ZXJzaW9u",
+            "VmFsdWVIABI/Cgp0YXJnZXRfY3BhGBogASgLMikuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjEuY29tbW9uLlRhcmdldENwYUgAElgKF3RhcmdldF9pbXByZXNz",
+            "aW9uX3NoYXJlGDAgASgLMjUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29t",
+            "bW9uLlRhcmdldEltcHJlc3Npb25TaGFyZUgAEkEKC3RhcmdldF9yb2FzGB0g",
+            "ASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlRhcmdldFJv",
+            "YXNIABJDCgx0YXJnZXRfc3BlbmQYGyABKAsyKy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5jb21tb24uVGFyZ2V0U3BlbmRIABJBCgtwZXJjZW50X2NwYxgi",
+            "IAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5QZXJjZW50",
+            "Q3BjSAASPwoKdGFyZ2V0X2NwbRgpIAEoCzIpLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYxLmNvbW1vbi5UYXJnZXRDcG1IABqFAgoPTmV0d29ya1NldHRpbmdz",
+            "EjgKFHRhcmdldF9nb29nbGVfc2VhcmNoGAEgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLkJvb2xWYWx1ZRI5ChV0YXJnZXRfc2VhcmNoX25ldHdvcmsYAiABKAsy",
+            "Gi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjoKFnRhcmdldF9jb250ZW50",
+            "X25ldHdvcmsYAyABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEkEK",
+            "HXRhcmdldF9wYXJ0bmVyX3NlYXJjaF9uZXR3b3JrGAQgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLkJvb2xWYWx1ZRpIChBIb3RlbFNldHRpbmdJbmZvEjQKD2hv",
+            "dGVsX2NlbnRlcl9pZBgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
+            "bHVlGvMBCgxWYW5pdHlQaGFybWESgAEKHnZhbml0eV9waGFybWFfZGlzcGxh",
+            "eV91cmxfbW9kZRgBIAEoDjJYLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVu",
+            "dW1zLlZhbml0eVBoYXJtYURpc3BsYXlVcmxNb2RlRW51bS5WYW5pdHlQaGFy",
+            "bWFEaXNwbGF5VXJsTW9kZRJgChJ2YW5pdHlfcGhhcm1hX3RleHQYAiABKA4y",
+            "RC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5WYW5pdHlQaGFybWFU",
+            "ZXh0RW51bS5WYW5pdHlQaGFybWFUZXh0GuoBChdEeW5hbWljU2VhcmNoQWRz",
+            "U2V0dGluZxIxCgtkb21haW5fbmFtZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZRIzCg1sYW5ndWFnZV9jb2RlGAIgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEjoKFnVzZV9zdXBwbGllZF91cmxzX29u",
+            "bHkYAyABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEisKBWZlZWRz",
+            "GAUgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlGuIBCg9TaG9w",
+            "cGluZ1NldHRpbmcSMAoLbWVyY2hhbnRfaWQYASABKAsyGy5nb29nbGUucHJv",
+            "dG9idWYuSW50NjRWYWx1ZRIzCg1zYWxlc19jb3VudHJ5GAIgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjYKEWNhbXBhaWduX3ByaW9yaXR5",
+            "GAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUSMAoMZW5hYmxl",
+            "X2xvY2FsGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRpFCg9U",
+            "cmFja2luZ1NldHRpbmcSMgoMdHJhY2tpbmdfdXJsGAEgASgLMhwuZ29vZ2xl",
+            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlGlEKFVNlbGVjdGl2ZU9wdGltaXphdGlv",
+            "bhI4ChJjb252ZXJzaW9uX2FjdGlvbnMYASADKAsyHC5nb29nbGUucHJvdG9i",
+            "dWYuU3RyaW5nVmFsdWUasAIKEkFwcENhbXBhaWduU2V0dGluZxKMAQoaYmlk",
+            "ZGluZ19zdHJhdGVneV9nb2FsX3R5cGUYASABKA4yaC5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MS5lbnVtcy5BcHBDYW1wYWlnbkJpZGRpbmdTdHJhdGVneUdv",
+            "YWxUeXBlRW51bS5BcHBDYW1wYWlnbkJpZGRpbmdTdHJhdGVneUdvYWxUeXBl",
+            "EiwKBmFwcF9pZBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZRJdCglhcHBfc3RvcmUYAyABKA4ySi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MS5lbnVtcy5BcHBDYW1wYWlnbkFwcFN0b3JlRW51bS5BcHBDYW1wYWlnbkFw",
+            "cFN0b3JlGvoBChRHZW9UYXJnZXRUeXBlU2V0dGluZxJwChhwb3NpdGl2ZV9n",
+            "ZW9fdGFyZ2V0X3R5cGUYASABKA4yTi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MS5lbnVtcy5Qb3NpdGl2ZUdlb1RhcmdldFR5cGVFbnVtLlBvc2l0aXZlR2Vv",
+            "VGFyZ2V0VHlwZRJwChhuZWdhdGl2ZV9nZW9fdGFyZ2V0X3R5cGUYAiABKA4y",
+            "Ti5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcy5OZWdhdGl2ZUdlb1Rh",
+            "cmdldFR5cGVFbnVtLk5lZ2F0aXZlR2VvVGFyZ2V0VHlwZUIbChljYW1wYWln",
+            "bl9iaWRkaW5nX3N0cmF0ZWd5QvoBCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjEucmVzb3VyY2VzQg1DYW1wYWlnblByb3RvUAFaSmdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9y",
+            "ZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjEuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcUmVz",
+            "b3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OlJlc291cmNl",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.BiddingReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.FrequencyCapReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.RealTimeBiddingSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.TargetingSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AdServingOptimizationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AdvertisingChannelSubTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AdvertisingChannelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AppCampaignAppStoreReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AppCampaignBiddingStrategyGoalTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.BiddingStrategyTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.BrandSafetySuitabilityReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.CampaignExperimentTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.CampaignServingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.CampaignStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.NegativeGeoTargetTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PaymentModeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.PositiveGeoTargetTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaDisplayUrlModeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaTextReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "RealTimeBiddingSetting", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "ShoppingSetting", "TargetingSetting", "GeoTargetTypeSetting", "AppCampaignSetting", "ExperimentType", "BaseCampaign", "CampaignBudget", "BiddingStrategyType", "StartDate", "EndDate", "FinalUrlSuffix", "FrequencyCaps", "VideoBrandSafetySuitability", "VanityPharma", "SelectiveOptimization", "TrackingSetting", "PaymentMode", "BiddingStrategy", "Commission", "ManualCpc", "ManualCpm", "ManualCpv", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetImpressionShare", "TargetRoas", "TargetSpend", "PercentCpc", "TargetCpm" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "RealTimeBiddingSetting", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "ShoppingSetting", "TargetingSetting", "GeoTargetTypeSetting", "AppCampaignSetting", "Labels", "ExperimentType", "BaseCampaign", "CampaignBudget", "BiddingStrategyType", "StartDate", "EndDate", "FinalUrlSuffix", "FrequencyCaps", "VideoBrandSafetySuitability", "VanityPharma", "SelectiveOptimization", "TrackingSetting", "PaymentMode", "BiddingStrategy", "Commission", "ManualCpc", "ManualCpm", "ManualCpv", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetImpressionShare", "TargetRoas", "TargetSpend", "PercentCpc", "TargetCpm" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.HotelSettingInfo), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.HotelSettingInfo.Parser, new[]{ "HotelCenterId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.VanityPharma), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.VanityPharma.Parser, new[]{ "VanityPharmaDisplayUrlMode", "VanityPharmaText" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.DynamicSearchAdsSetting), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.DynamicSearchAdsSetting.Parser, new[]{ "DomainName", "LanguageCode", "UseSuppliedUrlsOnly", "Feeds" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.TrackingSetting), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.TrackingSetting.Parser, new[]{ "TrackingUrl" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.GeoTargetTypeSetting), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.GeoTargetTypeSetting.Parser, new[]{ "PositiveGeoTargetType", "NegativeGeoTargetType" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.SelectiveOptimization), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.SelectiveOptimization.Parser, new[]{ "ConversionActions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.ShoppingSetting), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.ShoppingSetting.Parser, new[]{ "MerchantId", "SalesCountry", "CampaignPriority", "EnableLocal" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.TrackingSetting), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.TrackingSetting.Parser, new[]{ "TrackingUrl" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.SelectiveOptimization), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.SelectiveOptimization.Parser, new[]{ "ConversionActions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.AppCampaignSetting), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.AppCampaignSetting.Parser, new[]{ "BiddingStrategyGoalType", "AppId", "AppStore" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.VanityPharma), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.VanityPharma.Parser, new[]{ "VanityPharmaDisplayUrlMode", "VanityPharmaText" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.GeoTargetTypeSetting), global::Google.Ads.GoogleAds.V1.Resources.Campaign.Types.GeoTargetTypeSetting.Parser, new[]{ "PositiveGeoTargetType", "NegativeGeoTargetType" }, null, null, null)})
           }));
     }
     #endregion
@@ -242,6 +243,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       targetingSetting_ = other.targetingSetting_ != null ? other.targetingSetting_.Clone() : null;
       geoTargetTypeSetting_ = other.geoTargetTypeSetting_ != null ? other.geoTargetTypeSetting_.Clone() : null;
       appCampaignSetting_ = other.appCampaignSetting_ != null ? other.appCampaignSetting_.Clone() : null;
+      labels_ = other.labels_.Clone();
       experimentType_ = other.experimentType_;
       BaseCampaign = other.BaseCampaign;
       CampaignBudget = other.CampaignBudget;
@@ -581,6 +583,19 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       set {
         appCampaignSetting_ = value;
       }
+    }
+
+    /// <summary>Field number for the "labels" field.</summary>
+    public const int LabelsFieldNumber = 53;
+    private static readonly pb::FieldCodec<string> _repeated_labels_codec
+        = pb::FieldCodec.ForClassWrapper<string>(426);
+    private readonly pbc::RepeatedField<string> labels_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// The resource names of labels attached to this campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> Labels {
+      get { return labels_; }
     }
 
     /// <summary>Field number for the "experiment_type" field.</summary>
@@ -1041,6 +1056,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (!object.Equals(TargetingSetting, other.TargetingSetting)) return false;
       if (!object.Equals(GeoTargetTypeSetting, other.GeoTargetTypeSetting)) return false;
       if (!object.Equals(AppCampaignSetting, other.AppCampaignSetting)) return false;
+      if(!labels_.Equals(other.labels_)) return false;
       if (ExperimentType != other.ExperimentType) return false;
       if (BaseCampaign != other.BaseCampaign) return false;
       if (CampaignBudget != other.CampaignBudget) return false;
@@ -1092,6 +1108,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (targetingSetting_ != null) hash ^= TargetingSetting.GetHashCode();
       if (geoTargetTypeSetting_ != null) hash ^= GeoTargetTypeSetting.GetHashCode();
       if (appCampaignSetting_ != null) hash ^= AppCampaignSetting.GetHashCode();
+      hash ^= labels_.GetHashCode();
       if (ExperimentType != 0) hash ^= ExperimentType.GetHashCode();
       if (baseCampaign_ != null) hash ^= BaseCampaign.GetHashCode();
       if (campaignBudget_ != null) hash ^= CampaignBudget.GetHashCode();
@@ -1293,6 +1310,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteRawTag(160, 3);
         output.WriteEnum((int) PaymentMode);
       }
+      labels_.WriteTo(output, _repeated_labels_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1353,6 +1371,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (appCampaignSetting_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(AppCampaignSetting);
       }
+      size += labels_.CalculateSize(_repeated_labels_codec);
       if (ExperimentType != 0) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ExperimentType);
       }
@@ -1522,6 +1541,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         }
         AppCampaignSetting.MergeFrom(other.AppCampaignSetting);
       }
+      labels_.Add(other.labels_);
       if (other.ExperimentType != 0) {
         ExperimentType = other.ExperimentType;
       }
@@ -1960,6 +1980,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             paymentMode_ = (global::Google.Ads.GoogleAds.V1.Enums.PaymentModeEnum.Types.PaymentMode) input.ReadEnum();
             break;
           }
+          case 426: {
+            labels_.AddEntriesFrom(input, _repeated_labels_codec);
+            break;
+          }
         }
       }
     }
@@ -2360,6 +2384,173 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
 
       /// <summary>
+      /// Describes how unbranded pharma ads will be displayed.
+      /// </summary>
+      public sealed partial class VanityPharma : pb::IMessage<VanityPharma> {
+        private static readonly pb::MessageParser<VanityPharma> _parser = new pb::MessageParser<VanityPharma>(() => new VanityPharma());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<VanityPharma> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[2]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public VanityPharma() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public VanityPharma(VanityPharma other) : this() {
+          vanityPharmaDisplayUrlMode_ = other.vanityPharmaDisplayUrlMode_;
+          vanityPharmaText_ = other.vanityPharmaText_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public VanityPharma Clone() {
+          return new VanityPharma(this);
+        }
+
+        /// <summary>Field number for the "vanity_pharma_display_url_mode" field.</summary>
+        public const int VanityPharmaDisplayUrlModeFieldNumber = 1;
+        private global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode vanityPharmaDisplayUrlMode_ = 0;
+        /// <summary>
+        /// The display mode for vanity pharma URLs.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode VanityPharmaDisplayUrlMode {
+          get { return vanityPharmaDisplayUrlMode_; }
+          set {
+            vanityPharmaDisplayUrlMode_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "vanity_pharma_text" field.</summary>
+        public const int VanityPharmaTextFieldNumber = 2;
+        private global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaTextEnum.Types.VanityPharmaText vanityPharmaText_ = 0;
+        /// <summary>
+        /// The text that will be displayed in display URL of the text ad when
+        /// website description is the selected display mode for vanity pharma URLs.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaTextEnum.Types.VanityPharmaText VanityPharmaText {
+          get { return vanityPharmaText_; }
+          set {
+            vanityPharmaText_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as VanityPharma);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(VanityPharma other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (VanityPharmaDisplayUrlMode != other.VanityPharmaDisplayUrlMode) return false;
+          if (VanityPharmaText != other.VanityPharmaText) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (VanityPharmaDisplayUrlMode != 0) hash ^= VanityPharmaDisplayUrlMode.GetHashCode();
+          if (VanityPharmaText != 0) hash ^= VanityPharmaText.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (VanityPharmaDisplayUrlMode != 0) {
+            output.WriteRawTag(8);
+            output.WriteEnum((int) VanityPharmaDisplayUrlMode);
+          }
+          if (VanityPharmaText != 0) {
+            output.WriteRawTag(16);
+            output.WriteEnum((int) VanityPharmaText);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (VanityPharmaDisplayUrlMode != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VanityPharmaDisplayUrlMode);
+          }
+          if (VanityPharmaText != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VanityPharmaText);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(VanityPharma other) {
+          if (other == null) {
+            return;
+          }
+          if (other.VanityPharmaDisplayUrlMode != 0) {
+            VanityPharmaDisplayUrlMode = other.VanityPharmaDisplayUrlMode;
+          }
+          if (other.VanityPharmaText != 0) {
+            VanityPharmaText = other.VanityPharmaText;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                vanityPharmaDisplayUrlMode_ = (global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode) input.ReadEnum();
+                break;
+              }
+              case 16: {
+                vanityPharmaText_ = (global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaTextEnum.Types.VanityPharmaText) input.ReadEnum();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
       /// The setting for controlling Dynamic Search Ads (DSA).
       /// </summary>
       public sealed partial class DynamicSearchAdsSetting : pb::IMessage<DynamicSearchAdsSetting> {
@@ -2370,7 +2561,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[2]; }
+          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[3]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2596,440 +2787,6 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
 
       /// <summary>
-      /// Campaign level settings for tracking information.
-      /// </summary>
-      public sealed partial class TrackingSetting : pb::IMessage<TrackingSetting> {
-        private static readonly pb::MessageParser<TrackingSetting> _parser = new pb::MessageParser<TrackingSetting>(() => new TrackingSetting());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<TrackingSetting> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[3]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TrackingSetting() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TrackingSetting(TrackingSetting other) : this() {
-          TrackingUrl = other.TrackingUrl;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TrackingSetting Clone() {
-          return new TrackingSetting(this);
-        }
-
-        /// <summary>Field number for the "tracking_url" field.</summary>
-        public const int TrackingUrlFieldNumber = 1;
-        private static readonly pb::FieldCodec<string> _single_trackingUrl_codec = pb::FieldCodec.ForClassWrapper<string>(10);
-        private string trackingUrl_;
-        /// <summary>
-        /// The url used for dynamic tracking.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string TrackingUrl {
-          get { return trackingUrl_; }
-          set {
-            trackingUrl_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as TrackingSetting);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(TrackingSetting other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (TrackingUrl != other.TrackingUrl) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (trackingUrl_ != null) hash ^= TrackingUrl.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (trackingUrl_ != null) {
-            _single_trackingUrl_codec.WriteTagAndValue(output, TrackingUrl);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (trackingUrl_ != null) {
-            size += _single_trackingUrl_codec.CalculateSizeWithTag(TrackingUrl);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(TrackingSetting other) {
-          if (other == null) {
-            return;
-          }
-          if (other.trackingUrl_ != null) {
-            if (trackingUrl_ == null || other.TrackingUrl != "") {
-              TrackingUrl = other.TrackingUrl;
-            }
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                string value = _single_trackingUrl_codec.Read(input);
-                if (trackingUrl_ == null || value != "") {
-                  TrackingUrl = value;
-                }
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      /// <summary>
-      /// Represents a collection of settings related to ads geotargeting.
-      /// </summary>
-      public sealed partial class GeoTargetTypeSetting : pb::IMessage<GeoTargetTypeSetting> {
-        private static readonly pb::MessageParser<GeoTargetTypeSetting> _parser = new pb::MessageParser<GeoTargetTypeSetting>(() => new GeoTargetTypeSetting());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<GeoTargetTypeSetting> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[4]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public GeoTargetTypeSetting() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public GeoTargetTypeSetting(GeoTargetTypeSetting other) : this() {
-          positiveGeoTargetType_ = other.positiveGeoTargetType_;
-          negativeGeoTargetType_ = other.negativeGeoTargetType_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public GeoTargetTypeSetting Clone() {
-          return new GeoTargetTypeSetting(this);
-        }
-
-        /// <summary>Field number for the "positive_geo_target_type" field.</summary>
-        public const int PositiveGeoTargetTypeFieldNumber = 1;
-        private global::Google.Ads.GoogleAds.V1.Enums.PositiveGeoTargetTypeEnum.Types.PositiveGeoTargetType positiveGeoTargetType_ = 0;
-        /// <summary>
-        /// The setting used for positive geotargeting in this particular campaign.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Google.Ads.GoogleAds.V1.Enums.PositiveGeoTargetTypeEnum.Types.PositiveGeoTargetType PositiveGeoTargetType {
-          get { return positiveGeoTargetType_; }
-          set {
-            positiveGeoTargetType_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "negative_geo_target_type" field.</summary>
-        public const int NegativeGeoTargetTypeFieldNumber = 2;
-        private global::Google.Ads.GoogleAds.V1.Enums.NegativeGeoTargetTypeEnum.Types.NegativeGeoTargetType negativeGeoTargetType_ = 0;
-        /// <summary>
-        /// The setting used for negative geotargeting in this particular campaign.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Google.Ads.GoogleAds.V1.Enums.NegativeGeoTargetTypeEnum.Types.NegativeGeoTargetType NegativeGeoTargetType {
-          get { return negativeGeoTargetType_; }
-          set {
-            negativeGeoTargetType_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as GeoTargetTypeSetting);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(GeoTargetTypeSetting other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (PositiveGeoTargetType != other.PositiveGeoTargetType) return false;
-          if (NegativeGeoTargetType != other.NegativeGeoTargetType) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (PositiveGeoTargetType != 0) hash ^= PositiveGeoTargetType.GetHashCode();
-          if (NegativeGeoTargetType != 0) hash ^= NegativeGeoTargetType.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (PositiveGeoTargetType != 0) {
-            output.WriteRawTag(8);
-            output.WriteEnum((int) PositiveGeoTargetType);
-          }
-          if (NegativeGeoTargetType != 0) {
-            output.WriteRawTag(16);
-            output.WriteEnum((int) NegativeGeoTargetType);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (PositiveGeoTargetType != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PositiveGeoTargetType);
-          }
-          if (NegativeGeoTargetType != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) NegativeGeoTargetType);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(GeoTargetTypeSetting other) {
-          if (other == null) {
-            return;
-          }
-          if (other.PositiveGeoTargetType != 0) {
-            PositiveGeoTargetType = other.PositiveGeoTargetType;
-          }
-          if (other.NegativeGeoTargetType != 0) {
-            NegativeGeoTargetType = other.NegativeGeoTargetType;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                positiveGeoTargetType_ = (global::Google.Ads.GoogleAds.V1.Enums.PositiveGeoTargetTypeEnum.Types.PositiveGeoTargetType) input.ReadEnum();
-                break;
-              }
-              case 16: {
-                negativeGeoTargetType_ = (global::Google.Ads.GoogleAds.V1.Enums.NegativeGeoTargetTypeEnum.Types.NegativeGeoTargetType) input.ReadEnum();
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      /// <summary>
-      /// Selective optimization setting for this campaign, which includes a set of
-      /// conversion actions to optimize this campaign towards.
-      /// </summary>
-      public sealed partial class SelectiveOptimization : pb::IMessage<SelectiveOptimization> {
-        private static readonly pb::MessageParser<SelectiveOptimization> _parser = new pb::MessageParser<SelectiveOptimization>(() => new SelectiveOptimization());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<SelectiveOptimization> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[5]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public SelectiveOptimization() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public SelectiveOptimization(SelectiveOptimization other) : this() {
-          conversionActions_ = other.conversionActions_.Clone();
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public SelectiveOptimization Clone() {
-          return new SelectiveOptimization(this);
-        }
-
-        /// <summary>Field number for the "conversion_actions" field.</summary>
-        public const int ConversionActionsFieldNumber = 1;
-        private static readonly pb::FieldCodec<string> _repeated_conversionActions_codec
-            = pb::FieldCodec.ForClassWrapper<string>(10);
-        private readonly pbc::RepeatedField<string> conversionActions_ = new pbc::RepeatedField<string>();
-        /// <summary>
-        /// The selected set of conversion actions for optimizing this campaign.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<string> ConversionActions {
-          get { return conversionActions_; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as SelectiveOptimization);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(SelectiveOptimization other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if(!conversionActions_.Equals(other.conversionActions_)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          hash ^= conversionActions_.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          conversionActions_.WriteTo(output, _repeated_conversionActions_codec);
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          size += conversionActions_.CalculateSize(_repeated_conversionActions_codec);
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(SelectiveOptimization other) {
-          if (other == null) {
-            return;
-          }
-          conversionActions_.Add(other.conversionActions_);
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                conversionActions_.AddEntriesFrom(input, _repeated_conversionActions_codec);
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      /// <summary>
       /// The setting for Shopping campaigns. Defines the universe of products that
       /// can be advertised by the campaign, and how this campaign interacts with
       /// other Shopping campaigns.
@@ -3042,7 +2799,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[6]; }
+          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[4]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3290,6 +3047,274 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
 
       /// <summary>
+      /// Campaign level settings for tracking information.
+      /// </summary>
+      public sealed partial class TrackingSetting : pb::IMessage<TrackingSetting> {
+        private static readonly pb::MessageParser<TrackingSetting> _parser = new pb::MessageParser<TrackingSetting>(() => new TrackingSetting());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<TrackingSetting> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[5]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TrackingSetting() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TrackingSetting(TrackingSetting other) : this() {
+          TrackingUrl = other.TrackingUrl;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TrackingSetting Clone() {
+          return new TrackingSetting(this);
+        }
+
+        /// <summary>Field number for the "tracking_url" field.</summary>
+        public const int TrackingUrlFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _single_trackingUrl_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+        private string trackingUrl_;
+        /// <summary>
+        /// The url used for dynamic tracking.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string TrackingUrl {
+          get { return trackingUrl_; }
+          set {
+            trackingUrl_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as TrackingSetting);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(TrackingSetting other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (TrackingUrl != other.TrackingUrl) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (trackingUrl_ != null) hash ^= TrackingUrl.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (trackingUrl_ != null) {
+            _single_trackingUrl_codec.WriteTagAndValue(output, TrackingUrl);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (trackingUrl_ != null) {
+            size += _single_trackingUrl_codec.CalculateSizeWithTag(TrackingUrl);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(TrackingSetting other) {
+          if (other == null) {
+            return;
+          }
+          if (other.trackingUrl_ != null) {
+            if (trackingUrl_ == null || other.TrackingUrl != "") {
+              TrackingUrl = other.TrackingUrl;
+            }
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                string value = _single_trackingUrl_codec.Read(input);
+                if (trackingUrl_ == null || value != "") {
+                  TrackingUrl = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Selective optimization setting for this campaign, which includes a set of
+      /// conversion actions to optimize this campaign towards.
+      /// </summary>
+      public sealed partial class SelectiveOptimization : pb::IMessage<SelectiveOptimization> {
+        private static readonly pb::MessageParser<SelectiveOptimization> _parser = new pb::MessageParser<SelectiveOptimization>(() => new SelectiveOptimization());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<SelectiveOptimization> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V1.Resources.Campaign.Descriptor.NestedTypes[6]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SelectiveOptimization() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SelectiveOptimization(SelectiveOptimization other) : this() {
+          conversionActions_ = other.conversionActions_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SelectiveOptimization Clone() {
+          return new SelectiveOptimization(this);
+        }
+
+        /// <summary>Field number for the "conversion_actions" field.</summary>
+        public const int ConversionActionsFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _repeated_conversionActions_codec
+            = pb::FieldCodec.ForClassWrapper<string>(10);
+        private readonly pbc::RepeatedField<string> conversionActions_ = new pbc::RepeatedField<string>();
+        /// <summary>
+        /// The selected set of conversion actions for optimizing this campaign.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<string> ConversionActions {
+          get { return conversionActions_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as SelectiveOptimization);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(SelectiveOptimization other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!conversionActions_.Equals(other.conversionActions_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= conversionActions_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          conversionActions_.WriteTo(output, _repeated_conversionActions_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += conversionActions_.CalculateSize(_repeated_conversionActions_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(SelectiveOptimization other) {
+          if (other == null) {
+            return;
+          }
+          conversionActions_.Add(other.conversionActions_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                conversionActions_.AddEntriesFrom(input, _repeated_conversionActions_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
       /// Campaign level settings for App Campaigns.
       /// </summary>
       public sealed partial class AppCampaignSetting : pb::IMessage<AppCampaignSetting> {
@@ -3493,13 +3518,13 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
 
       /// <summary>
-      /// Describes how unbranded pharma ads will be displayed.
+      /// Represents a collection of settings related to ads geotargeting.
       /// </summary>
-      public sealed partial class VanityPharma : pb::IMessage<VanityPharma> {
-        private static readonly pb::MessageParser<VanityPharma> _parser = new pb::MessageParser<VanityPharma>(() => new VanityPharma());
+      public sealed partial class GeoTargetTypeSetting : pb::IMessage<GeoTargetTypeSetting> {
+        private static readonly pb::MessageParser<GeoTargetTypeSetting> _parser = new pb::MessageParser<GeoTargetTypeSetting>(() => new GeoTargetTypeSetting());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<VanityPharma> Parser { get { return _parser; } }
+        public static pb::MessageParser<GeoTargetTypeSetting> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
@@ -3512,76 +3537,75 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public VanityPharma() {
+        public GeoTargetTypeSetting() {
           OnConstruction();
         }
 
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public VanityPharma(VanityPharma other) : this() {
-          vanityPharmaDisplayUrlMode_ = other.vanityPharmaDisplayUrlMode_;
-          vanityPharmaText_ = other.vanityPharmaText_;
+        public GeoTargetTypeSetting(GeoTargetTypeSetting other) : this() {
+          positiveGeoTargetType_ = other.positiveGeoTargetType_;
+          negativeGeoTargetType_ = other.negativeGeoTargetType_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public VanityPharma Clone() {
-          return new VanityPharma(this);
+        public GeoTargetTypeSetting Clone() {
+          return new GeoTargetTypeSetting(this);
         }
 
-        /// <summary>Field number for the "vanity_pharma_display_url_mode" field.</summary>
-        public const int VanityPharmaDisplayUrlModeFieldNumber = 1;
-        private global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode vanityPharmaDisplayUrlMode_ = 0;
+        /// <summary>Field number for the "positive_geo_target_type" field.</summary>
+        public const int PositiveGeoTargetTypeFieldNumber = 1;
+        private global::Google.Ads.GoogleAds.V1.Enums.PositiveGeoTargetTypeEnum.Types.PositiveGeoTargetType positiveGeoTargetType_ = 0;
         /// <summary>
-        /// The display mode for vanity pharma URLs.
+        /// The setting used for positive geotargeting in this particular campaign.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode VanityPharmaDisplayUrlMode {
-          get { return vanityPharmaDisplayUrlMode_; }
+        public global::Google.Ads.GoogleAds.V1.Enums.PositiveGeoTargetTypeEnum.Types.PositiveGeoTargetType PositiveGeoTargetType {
+          get { return positiveGeoTargetType_; }
           set {
-            vanityPharmaDisplayUrlMode_ = value;
+            positiveGeoTargetType_ = value;
           }
         }
 
-        /// <summary>Field number for the "vanity_pharma_text" field.</summary>
-        public const int VanityPharmaTextFieldNumber = 2;
-        private global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaTextEnum.Types.VanityPharmaText vanityPharmaText_ = 0;
+        /// <summary>Field number for the "negative_geo_target_type" field.</summary>
+        public const int NegativeGeoTargetTypeFieldNumber = 2;
+        private global::Google.Ads.GoogleAds.V1.Enums.NegativeGeoTargetTypeEnum.Types.NegativeGeoTargetType negativeGeoTargetType_ = 0;
         /// <summary>
-        /// The text that will be displayed in display URL of the text ad when
-        /// website description is the selected display mode for vanity pharma URLs.
+        /// The setting used for negative geotargeting in this particular campaign.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaTextEnum.Types.VanityPharmaText VanityPharmaText {
-          get { return vanityPharmaText_; }
+        public global::Google.Ads.GoogleAds.V1.Enums.NegativeGeoTargetTypeEnum.Types.NegativeGeoTargetType NegativeGeoTargetType {
+          get { return negativeGeoTargetType_; }
           set {
-            vanityPharmaText_ = value;
+            negativeGeoTargetType_ = value;
           }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
-          return Equals(other as VanityPharma);
+          return Equals(other as GeoTargetTypeSetting);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(VanityPharma other) {
+        public bool Equals(GeoTargetTypeSetting other) {
           if (ReferenceEquals(other, null)) {
             return false;
           }
           if (ReferenceEquals(other, this)) {
             return true;
           }
-          if (VanityPharmaDisplayUrlMode != other.VanityPharmaDisplayUrlMode) return false;
-          if (VanityPharmaText != other.VanityPharmaText) return false;
+          if (PositiveGeoTargetType != other.PositiveGeoTargetType) return false;
+          if (NegativeGeoTargetType != other.NegativeGeoTargetType) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
-          if (VanityPharmaDisplayUrlMode != 0) hash ^= VanityPharmaDisplayUrlMode.GetHashCode();
-          if (VanityPharmaText != 0) hash ^= VanityPharmaText.GetHashCode();
+          if (PositiveGeoTargetType != 0) hash ^= PositiveGeoTargetType.GetHashCode();
+          if (NegativeGeoTargetType != 0) hash ^= NegativeGeoTargetType.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -3595,13 +3619,13 @@ namespace Google.Ads.GoogleAds.V1.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
-          if (VanityPharmaDisplayUrlMode != 0) {
+          if (PositiveGeoTargetType != 0) {
             output.WriteRawTag(8);
-            output.WriteEnum((int) VanityPharmaDisplayUrlMode);
+            output.WriteEnum((int) PositiveGeoTargetType);
           }
-          if (VanityPharmaText != 0) {
+          if (NegativeGeoTargetType != 0) {
             output.WriteRawTag(16);
-            output.WriteEnum((int) VanityPharmaText);
+            output.WriteEnum((int) NegativeGeoTargetType);
           }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
@@ -3611,11 +3635,11 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
-          if (VanityPharmaDisplayUrlMode != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VanityPharmaDisplayUrlMode);
+          if (PositiveGeoTargetType != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PositiveGeoTargetType);
           }
-          if (VanityPharmaText != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VanityPharmaText);
+          if (NegativeGeoTargetType != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) NegativeGeoTargetType);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -3624,15 +3648,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(VanityPharma other) {
+        public void MergeFrom(GeoTargetTypeSetting other) {
           if (other == null) {
             return;
           }
-          if (other.VanityPharmaDisplayUrlMode != 0) {
-            VanityPharmaDisplayUrlMode = other.VanityPharmaDisplayUrlMode;
+          if (other.PositiveGeoTargetType != 0) {
+            PositiveGeoTargetType = other.PositiveGeoTargetType;
           }
-          if (other.VanityPharmaText != 0) {
-            VanityPharmaText = other.VanityPharmaText;
+          if (other.NegativeGeoTargetType != 0) {
+            NegativeGeoTargetType = other.NegativeGeoTargetType;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
@@ -3646,11 +3670,11 @@ namespace Google.Ads.GoogleAds.V1.Resources {
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
               case 8: {
-                vanityPharmaDisplayUrlMode_ = (global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode) input.ReadEnum();
+                positiveGeoTargetType_ = (global::Google.Ads.GoogleAds.V1.Enums.PositiveGeoTargetTypeEnum.Types.PositiveGeoTargetType) input.ReadEnum();
                 break;
               }
               case 16: {
-                vanityPharmaText_ = (global::Google.Ads.GoogleAds.V1.Enums.VanityPharmaTextEnum.Types.VanityPharmaText) input.ReadEnum();
+                negativeGeoTargetType_ = (global::Google.Ads.GoogleAds.V1.Enums.NegativeGeoTargetTypeEnum.Types.NegativeGeoTargetType) input.ReadEnum();
                 break;
               }
             }

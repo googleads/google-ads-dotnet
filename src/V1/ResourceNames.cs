@@ -134,6 +134,16 @@ namespace Google.Ads.GoogleAds.V1.Errors
             return $"customers/{customerId}/campaignBudgets/{budgetId}";
         }
 
+        public static string CampaignDraft(long customerId, long baseCampaignId, long draftId)
+        {
+            return $"customers/{customerId}/campaignDrafts/{baseCampaignId}~{draftId}";
+        }
+
+        public static string CampaignExperiments(long customerId, long campaignExperimentId)
+        {
+            return $"customers/{customerId}/campaignExperiments/{campaignExperimentId}";
+        }
+
         public static string CampaignCriteria(long customerId, long campaignId, long criterionId)
         {
             return $"customers/{customerId}/campaignCriteria/{campaignId}~{criterionId}";
