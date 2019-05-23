@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvdXJsX2ZpZWxkX2Vy",
             "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lcnJvcnMaHGdv",
-            "b2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ilQ4KEVVybEZpZWxkRXJyb3JF",
-            "bnVtIv8NCg1VcmxGaWVsZEVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5L",
+            "b2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8itg4KEVVybEZpZWxkRXJyb3JF",
+            "bnVtIqAOCg1VcmxGaWVsZEVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5L",
             "Tk9XThABEiEKHUlOVkFMSURfVFJBQ0tJTkdfVVJMX1RFTVBMQVRFEAISKAok",
             "SU5WQUxJRF9UQUdfSU5fVFJBQ0tJTkdfVVJMX1RFTVBMQVRFEAMSJQohTUlT",
             "U0lOR19UUkFDS0lOR19VUkxfVEVNUExBVEVfVEFHEAQSLQopTUlTU0lOR19Q",
@@ -66,13 +66,14 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "X1VSTF9JRBAxEh4KGkZJTkFMX1VSTF9TVUZGSVhfTUFMRk9STUVEEDISIwof",
             "SU5WQUxJRF9UQUdfSU5fRklOQUxfVVJMX1NVRkZJWBAzEhwKGElOVkFMSURf",
             "VE9QX0xFVkVMX0RPTUFJThA1Eh4KGk1BTEZPUk1FRF9UT1BfTEVWRUxfRE9N",
-            "QUlOEDYSEQoNTUFMRk9STUVEX1VSTBA3EhAKDE1JU1NJTkdfSE9TVBA4Qu0B",
-            "CiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZXJyb3JzQhJVcmxGaWVs",
-            "ZEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
-            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNHQUGq",
-            "Ah5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMVxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMTo6RXJyb3JzYgZwcm90bzM="));
+            "QUlOEDYSEQoNTUFMRk9STUVEX1VSTBA3EhAKDE1JU1NJTkdfSE9TVBA4Eh8K",
+            "G05VTExfQ1VTVE9NX1BBUkFNRVRFUl9WQUxVRRA5Qu0BCiJjb20uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjEuZXJyb3JzQhJVcmxGaWVsZEVycm9yUHJvdG9Q",
+            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MVxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RXJyb3Jz",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -420,6 +421,10 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// No host found in URL.
         /// </summary>
         [pbr::OriginalName("MISSING_HOST")] MissingHost = 56,
+        /// <summary>
+        /// Custom parameter value cannot be null.
+        /// </summary>
+        [pbr::OriginalName("NULL_CUSTOM_PARAMETER_VALUE")] NullCustomParameterValue = 57,
       }
 
     }

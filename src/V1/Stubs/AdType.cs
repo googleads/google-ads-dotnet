@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Citnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9hZF90eXBlLnByb3Rv",
             "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90byKyAwoKQWRUeXBlRW51bSKjAwoGQWRUeXBlEg8K",
+            "bm5vdGF0aW9ucy5wcm90byLWAwoKQWRUeXBlRW51bSLHAwoGQWRUeXBlEg8K",
             "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB1RFWFRfQUQQAhIUChBF",
             "WFBBTkRFRF9URVhUX0FEEAMSEAoMQ0FMTF9PTkxZX0FEEAYSHgoaRVhQQU5E",
             "RURfRFlOQU1JQ19TRUFSQ0hfQUQQBxIMCghIT1RFTF9BRBAIEhUKEVNIT1BQ",
@@ -36,12 +36,13 @@ namespace Google.Ads.GoogleAds.V1.Enums {
             "WV9BRBAQEgoKBkFQUF9BRBAREhkKFUxFR0FDWV9BUFBfSU5TVEFMTF9BRBAS",
             "EhkKFVJFU1BPTlNJVkVfRElTUExBWV9BRBATEhMKD0hUTUw1X1VQTE9BRF9B",
             "RBAVEhQKEERZTkFNSUNfSFRNTDVfQUQQFhIVChFBUFBfRU5HQUdFTUVOVF9B",
-            "RBAXQuABCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXNCC0Fk",
-            "VHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
-            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29n",
-            "bGVBZHNcVjFcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6",
-            "RW51bXNiBnByb3RvMw=="));
+            "RBAXEiIKHlNIT1BQSU5HX0NPTVBBUklTT05fTElTVElOR19BRBAYQuABCiFj",
+            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXNCC0FkVHlwZVByb3Rv",
+            "UAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFc",
+            "RW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -245,6 +246,10 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// The ad is an app engagement ad.
         /// </summary>
         [pbr::OriginalName("APP_ENGAGEMENT_AD")] AppEngagementAd = 23,
+        /// <summary>
+        /// The ad is a Shopping Comparison Listing ad.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_COMPARISON_LISTING_AD")] ShoppingComparisonListingAd = 24,
       }
 
     }

@@ -551,7 +551,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     private double? allConversionsFromClickToCall_;
     /// <summary>
     /// The number of times people clicked the "Call" button to call a store during
-    /// or after clicking an ad. This number doesn’t include whether or not calls
+    /// or after clicking an ad. This number doesn't include whether or not calls
     /// were connected, or the duration of any calls.
     /// This metric applies to feed items only.
     /// </summary>
@@ -601,7 +601,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     private static readonly pb::FieldCodec<double?> _single_allConversionsFromMenu_codec = pb::FieldCodec.ForStructWrapper<double>(962);
     private double? allConversionsFromMenu_;
     /// <summary>
-    /// The number of times people clicked a link to view a store’s menu after
+    /// The number of times people clicked a link to view a store's menu after
     /// clicking an ad.
     /// This metric applies to feed items only.
     /// </summary>

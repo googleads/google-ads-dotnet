@@ -542,7 +542,7 @@ namespace Google.Ads.GoogleAds.V1.Services {
     /// Remove operation: A resource name for the removed campaign extension
     /// setting is expected, in this format:
     ///
-    /// `customers/{customer_id}/campaignExtensionSettings/{feed_id}`
+    /// `customers/{customer_id}/campaignExtensionSettings/{campaign_id}~{extension_type}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Remove {

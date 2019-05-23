@@ -26,20 +26,21 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9hZF9ncm91cF90eXBl",
             "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byLMAgoPQWRHcm91cFR5cGVFbnVtIrgC",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byLxAgoPQWRHcm91cFR5cGVFbnVtIt0C",
             "CgtBZEdyb3VwVHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIT",
             "Cg9TRUFSQ0hfU1RBTkRBUkQQAhIUChBESVNQTEFZX1NUQU5EQVJEEAMSGAoU",
             "U0hPUFBJTkdfUFJPRFVDVF9BRFMQBBINCglIT1RFTF9BRFMQBhIWChJTSE9Q",
             "UElOR19TTUFSVF9BRFMQBxIQCgxWSURFT19CVU1QRVIQCBIdChlWSURFT19U",
             "UlVFX1ZJRVdfSU5fU1RSRUFNEAkSHgoaVklERU9fVFJVRV9WSUVXX0lOX0RJ",
             "U1BMQVkQChIhCh1WSURFT19OT05fU0tJUFBBQkxFX0lOX1NUUkVBTRALEhMK",
-            "D1ZJREVPX09VVFNUUkVBTRAMEhYKElNFQVJDSF9EWU5BTUlDX0FEUxANQuUB",
-            "CiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXNCEEFkR3JvdXBU",
-            "eXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
-            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zO2VudW1zogIDR0FBqgIdR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjEuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2ds",
-            "ZUFkc1xWMVxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpF",
-            "bnVtc2IGcHJvdG8z"));
+            "D1ZJREVPX09VVFNUUkVBTRAMEhYKElNFQVJDSF9EWU5BTUlDX0FEUxANEiMK",
+            "H1NIT1BQSU5HX0NPTVBBUklTT05fTElTVElOR19BRFMQDkLlAQohY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zQhBBZEdyb3VwVHlwZVByb3Rv",
+            "UAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFc",
+            "RW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -216,6 +217,10 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// Ad group type for Dynamic Search Ads ad groups.
         /// </summary>
         [pbr::OriginalName("SEARCH_DYNAMIC_ADS")] SearchDynamicAds = 13,
+        /// <summary>
+        /// The type for ad groups in Shopping Comparison Listing campaigns.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_COMPARISON_LISTING_ADS")] ShoppingComparisonListingAds = 14,
       }
 
     }

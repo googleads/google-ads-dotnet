@@ -31,51 +31,67 @@ namespace Google.Ads.GoogleAds.V1.Common {
             "BnBvaW50cxgBIAMoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1v",
             "bi5CaWRNb2RpZmllclNpbXVsYXRpb25Qb2ludCJiChlDcGNCaWRTaW11bGF0",
             "aW9uUG9pbnRMaXN0EkUKBnBvaW50cxgBIAMoCzI1Lmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxLmNvbW1vbi5DcGNCaWRTaW11bGF0aW9uUG9pbnQiaAocVGFy",
-            "Z2V0Q3BhU2ltdWxhdGlvblBvaW50TGlzdBJICgZwb2ludHMYASADKAsyOC5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uVGFyZ2V0Q3BhU2ltdWxh",
-            "dGlvblBvaW50IpoDChpCaWRNb2RpZmllclNpbXVsYXRpb25Qb2ludBIyCgxi",
-            "aWRfbW9kaWZpZXIYASABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFs",
-            "dWUSOgoUYmlkZGFibGVfY29udmVyc2lvbnMYAiABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuRG91YmxlVmFsdWUSQAoaYmlkZGFibGVfY29udmVyc2lvbnNfdmFs",
-            "dWUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSKwoGY2xp",
-            "Y2tzGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSMAoLY29z",
-            "dF9taWNyb3MYBSABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIw",
-            "CgtpbXByZXNzaW9ucxgGIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
-            "bHVlEjkKFHRvcF9zbG90X2ltcHJlc3Npb25zGAcgASgLMhsuZ29vZ2xlLnBy",
-            "b3RvYnVmLkludDY0VmFsdWUilgMKFUNwY0JpZFNpbXVsYXRpb25Qb2ludBIz",
-            "Cg5jcGNfYmlkX21pY3JvcxgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
-            "NFZhbHVlEjoKFGJpZGRhYmxlX2NvbnZlcnNpb25zGAIgASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLkRvdWJsZVZhbHVlEkAKGmJpZGRhYmxlX2NvbnZlcnNpb25z",
-            "X3ZhbHVlGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEisK",
-            "BmNsaWNrcxgEIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjAK",
-            "C2Nvc3RfbWljcm9zGAUgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFs",
-            "dWUSMAoLaW1wcmVzc2lvbnMYBiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50",
-            "NjRWYWx1ZRI5ChR0b3Bfc2xvdF9pbXByZXNzaW9ucxgHIAEoCzIbLmdvb2ds",
-            "ZS5wcm90b2J1Zi5JbnQ2NFZhbHVlIpwDChhUYXJnZXRDcGFTaW11bGF0aW9u",
-            "UG9pbnQSNgoRdGFyZ2V0X2NwYV9taWNyb3MYASABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuSW50NjRWYWx1ZRI6ChRiaWRkYWJsZV9jb252ZXJzaW9ucxgCIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJAChpiaWRkYWJsZV9j",
-            "b252ZXJzaW9uc192YWx1ZRgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3Vi",
-            "bGVWYWx1ZRIrCgZjbGlja3MYBCABKAsyGy5nb29nbGUucHJvdG9idWYuSW50",
-            "NjRWYWx1ZRIwCgtjb3N0X21pY3JvcxgFIAEoCzIbLmdvb2dsZS5wcm90b2J1",
-            "Zi5JbnQ2NFZhbHVlEjAKC2ltcHJlc3Npb25zGAYgASgLMhsuZ29vZ2xlLnBy",
-            "b3RvYnVmLkludDY0VmFsdWUSOQoUdG9wX3Nsb3RfaW1wcmVzc2lvbnMYByAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZULqAQoiY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbkIPU2ltdWxhdGlvblByb3RvUAFa",
-            "RGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92MS9jb21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjEuQ29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFc",
-            "Q29tbW9u6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE6OkNvbW1vbmIG",
-            "cHJvdG8z"));
+            "Z2xlYWRzLnYxLmNvbW1vbi5DcGNCaWRTaW11bGF0aW9uUG9pbnQiYgoZQ3B2",
+            "QmlkU2ltdWxhdGlvblBvaW50TGlzdBJFCgZwb2ludHMYASADKAsyNS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uQ3B2QmlkU2ltdWxhdGlvblBv",
+            "aW50ImgKHFRhcmdldENwYVNpbXVsYXRpb25Qb2ludExpc3QSSAoGcG9pbnRz",
+            "GAEgAygLMjguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlRhcmdl",
+            "dENwYVNpbXVsYXRpb25Qb2ludCKOBgoaQmlkTW9kaWZpZXJTaW11bGF0aW9u",
+            "UG9pbnQSMgoMYmlkX21vZGlmaWVyGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LkRvdWJsZVZhbHVlEjoKFGJpZGRhYmxlX2NvbnZlcnNpb25zGAIgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEkAKGmJpZGRhYmxlX2NvbnZl",
+            "cnNpb25zX3ZhbHVlGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZh",
+            "bHVlEisKBmNsaWNrcxgEIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
+            "bHVlEjAKC2Nvc3RfbWljcm9zGAUgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
+            "dDY0VmFsdWUSMAoLaW1wcmVzc2lvbnMYBiABKAsyGy5nb29nbGUucHJvdG9i",
+            "dWYuSW50NjRWYWx1ZRI5ChR0b3Bfc2xvdF9pbXByZXNzaW9ucxgHIAEoCzIb",
+            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEkEKG3BhcmVudF9iaWRkYWJs",
+            "ZV9jb252ZXJzaW9ucxgIIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVW",
+            "YWx1ZRJHCiFwYXJlbnRfYmlkZGFibGVfY29udmVyc2lvbnNfdmFsdWUYCSAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSMgoNcGFyZW50X2Ns",
+            "aWNrcxgKIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjcKEnBh",
+            "cmVudF9jb3N0X21pY3JvcxgLIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
+            "NFZhbHVlEjcKEnBhcmVudF9pbXByZXNzaW9ucxgMIAEoCzIbLmdvb2dsZS5w",
+            "cm90b2J1Zi5JbnQ2NFZhbHVlEkAKG3BhcmVudF90b3Bfc2xvdF9pbXByZXNz",
+            "aW9ucxgNIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlIpYDChVD",
+            "cGNCaWRTaW11bGF0aW9uUG9pbnQSMwoOY3BjX2JpZF9taWNyb3MYASABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI6ChRiaWRkYWJsZV9jb252",
+            "ZXJzaW9ucxgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRJA",
+            "ChpiaWRkYWJsZV9jb252ZXJzaW9uc192YWx1ZRgDIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5Eb3VibGVWYWx1ZRIrCgZjbGlja3MYBCABKAsyGy5nb29nbGUu",
+            "cHJvdG9idWYuSW50NjRWYWx1ZRIwCgtjb3N0X21pY3JvcxgFIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjAKC2ltcHJlc3Npb25zGAYgASgL",
+            "MhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOQoUdG9wX3Nsb3RfaW1w",
+            "cmVzc2lvbnMYByABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZSKw",
+            "AQoVQ3B2QmlkU2ltdWxhdGlvblBvaW50EjMKDmNwdl9iaWRfbWljcm9zGAEg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSMAoLY29zdF9taWNy",
+            "b3MYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIwCgtpbXBy",
+            "ZXNzaW9ucxgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlIpwD",
+            "ChhUYXJnZXRDcGFTaW11bGF0aW9uUG9pbnQSNgoRdGFyZ2V0X2NwYV9taWNy",
+            "b3MYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRI6ChRiaWRk",
+            "YWJsZV9jb252ZXJzaW9ucxgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3Vi",
+            "bGVWYWx1ZRJAChpiaWRkYWJsZV9jb252ZXJzaW9uc192YWx1ZRgDIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIrCgZjbGlja3MYBCABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIwCgtjb3N0X21pY3JvcxgF",
+            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEjAKC2ltcHJlc3Np",
+            "b25zGAYgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSOQoUdG9w",
+            "X3Nsb3RfaW1wcmVzc2lvbnMYByABKAsyGy5nb29nbGUucHJvdG9idWYuSW50",
+            "NjRWYWx1ZULqAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1v",
+            "bkIPU2ltdWxhdGlvblByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
+            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9jb21tb247Y29tbW9u",
+            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEuQ29tbW9uygIeR29v",
+            "Z2xlXEFkc1xHb29nbGVBZHNcVjFcQ29tbW9u6gIiR29vZ2xlOjpBZHM6Okdv",
+            "b2dsZUFkczo6VjE6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.BidModifierSimulationPointList), global::Google.Ads.GoogleAds.V1.Common.BidModifierSimulationPointList.Parser, new[]{ "Points" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.CpcBidSimulationPointList), global::Google.Ads.GoogleAds.V1.Common.CpcBidSimulationPointList.Parser, new[]{ "Points" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPointList), global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPointList.Parser, new[]{ "Points" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.TargetCpaSimulationPointList), global::Google.Ads.GoogleAds.V1.Common.TargetCpaSimulationPointList.Parser, new[]{ "Points" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.BidModifierSimulationPoint), global::Google.Ads.GoogleAds.V1.Common.BidModifierSimulationPoint.Parser, new[]{ "BidModifier", "BiddableConversions", "BiddableConversionsValue", "Clicks", "CostMicros", "Impressions", "TopSlotImpressions" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.BidModifierSimulationPoint), global::Google.Ads.GoogleAds.V1.Common.BidModifierSimulationPoint.Parser, new[]{ "BidModifier", "BiddableConversions", "BiddableConversionsValue", "Clicks", "CostMicros", "Impressions", "TopSlotImpressions", "ParentBiddableConversions", "ParentBiddableConversionsValue", "ParentClicks", "ParentCostMicros", "ParentImpressions", "ParentTopSlotImpressions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.CpcBidSimulationPoint), global::Google.Ads.GoogleAds.V1.Common.CpcBidSimulationPoint.Parser, new[]{ "CpcBidMicros", "BiddableConversions", "BiddableConversionsValue", "Clicks", "CostMicros", "Impressions", "TopSlotImpressions" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPoint), global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPoint.Parser, new[]{ "CpvBidMicros", "CostMicros", "Impressions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Common.TargetCpaSimulationPoint), global::Google.Ads.GoogleAds.V1.Common.TargetCpaSimulationPoint.Parser, new[]{ "TargetCpaMicros", "BiddableConversions", "BiddableConversionsValue", "Clicks", "CostMicros", "Impressions", "TopSlotImpressions" }, null, null, null)
           }));
     }
@@ -253,7 +269,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
         = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V1.Common.CpcBidSimulationPoint.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CpcBidSimulationPoint> points_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CpcBidSimulationPoint>();
     /// <summary>
-    /// Projected metrics for a series of cpc bid amounts.
+    /// Projected metrics for a series of CPC bid amounts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CpcBidSimulationPoint> Points {
@@ -338,6 +354,133 @@ namespace Google.Ads.GoogleAds.V1.Common {
   }
 
   /// <summary>
+  /// A container for simulation points for simulations of type CPV_BID.
+  /// </summary>
+  public sealed partial class CpvBidSimulationPointList : pb::IMessage<CpvBidSimulationPointList> {
+    private static readonly pb::MessageParser<CpvBidSimulationPointList> _parser = new pb::MessageParser<CpvBidSimulationPointList>(() => new CpvBidSimulationPointList());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CpvBidSimulationPointList> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CpvBidSimulationPointList() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CpvBidSimulationPointList(CpvBidSimulationPointList other) : this() {
+      points_ = other.points_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CpvBidSimulationPointList Clone() {
+      return new CpvBidSimulationPointList(this);
+    }
+
+    /// <summary>Field number for the "points" field.</summary>
+    public const int PointsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPoint> _repeated_points_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPoint.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPoint> points_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPoint>();
+    /// <summary>
+    /// Projected metrics for a series of CPV bid amounts.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.CpvBidSimulationPoint> Points {
+      get { return points_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CpvBidSimulationPointList);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CpvBidSimulationPointList other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!points_.Equals(other.points_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= points_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      points_.WriteTo(output, _repeated_points_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += points_.CalculateSize(_repeated_points_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CpvBidSimulationPointList other) {
+      if (other == null) {
+        return;
+      }
+      points_.Add(other.points_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            points_.AddEntriesFrom(input, _repeated_points_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// A container for simulation points for simulations of type TARGET_CPA.
   /// </summary>
   public sealed partial class TargetCpaSimulationPointList : pb::IMessage<TargetCpaSimulationPointList> {
@@ -348,7 +491,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -380,7 +523,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
         = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V1.Common.TargetCpaSimulationPoint.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.TargetCpaSimulationPoint> points_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.TargetCpaSimulationPoint>();
     /// <summary>
-    /// Projected metrics for a series of target cpa amounts.
+    /// Projected metrics for a series of target CPA amounts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V1.Common.TargetCpaSimulationPoint> Points {
@@ -475,7 +618,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -499,6 +642,12 @@ namespace Google.Ads.GoogleAds.V1.Common {
       CostMicros = other.CostMicros;
       Impressions = other.Impressions;
       TopSlotImpressions = other.TopSlotImpressions;
+      ParentBiddableConversions = other.ParentBiddableConversions;
+      ParentBiddableConversionsValue = other.ParentBiddableConversionsValue;
+      ParentClicks = other.ParentClicks;
+      ParentCostMicros = other.ParentCostMicros;
+      ParentImpressions = other.ParentImpressions;
+      ParentTopSlotImpressions = other.ParentTopSlotImpressions;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -612,6 +761,96 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
     }
 
+    /// <summary>Field number for the "parent_biddable_conversions" field.</summary>
+    public const int ParentBiddableConversionsFieldNumber = 8;
+    private static readonly pb::FieldCodec<double?> _single_parentBiddableConversions_codec = pb::FieldCodec.ForStructWrapper<double>(66);
+    private double? parentBiddableConversions_;
+    /// <summary>
+    /// Projected number of biddable conversions for the parent resource.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? ParentBiddableConversions {
+      get { return parentBiddableConversions_; }
+      set {
+        parentBiddableConversions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "parent_biddable_conversions_value" field.</summary>
+    public const int ParentBiddableConversionsValueFieldNumber = 9;
+    private static readonly pb::FieldCodec<double?> _single_parentBiddableConversionsValue_codec = pb::FieldCodec.ForStructWrapper<double>(74);
+    private double? parentBiddableConversionsValue_;
+    /// <summary>
+    /// Projected total value of biddable conversions for the parent resource.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? ParentBiddableConversionsValue {
+      get { return parentBiddableConversionsValue_; }
+      set {
+        parentBiddableConversionsValue_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "parent_clicks" field.</summary>
+    public const int ParentClicksFieldNumber = 10;
+    private static readonly pb::FieldCodec<long?> _single_parentClicks_codec = pb::FieldCodec.ForStructWrapper<long>(82);
+    private long? parentClicks_;
+    /// <summary>
+    /// Projected number of clicks for the parent resource.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ParentClicks {
+      get { return parentClicks_; }
+      set {
+        parentClicks_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "parent_cost_micros" field.</summary>
+    public const int ParentCostMicrosFieldNumber = 11;
+    private static readonly pb::FieldCodec<long?> _single_parentCostMicros_codec = pb::FieldCodec.ForStructWrapper<long>(90);
+    private long? parentCostMicros_;
+    /// <summary>
+    /// Projected cost in micros for the parent resource.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ParentCostMicros {
+      get { return parentCostMicros_; }
+      set {
+        parentCostMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "parent_impressions" field.</summary>
+    public const int ParentImpressionsFieldNumber = 12;
+    private static readonly pb::FieldCodec<long?> _single_parentImpressions_codec = pb::FieldCodec.ForStructWrapper<long>(98);
+    private long? parentImpressions_;
+    /// <summary>
+    /// Projected number of impressions for the parent resource.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ParentImpressions {
+      get { return parentImpressions_; }
+      set {
+        parentImpressions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "parent_top_slot_impressions" field.</summary>
+    public const int ParentTopSlotImpressionsFieldNumber = 13;
+    private static readonly pb::FieldCodec<long?> _single_parentTopSlotImpressions_codec = pb::FieldCodec.ForStructWrapper<long>(106);
+    private long? parentTopSlotImpressions_;
+    /// <summary>
+    /// Projected number of top slot impressions for the parent resource.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? ParentTopSlotImpressions {
+      get { return parentTopSlotImpressions_; }
+      set {
+        parentTopSlotImpressions_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as BidModifierSimulationPoint);
@@ -632,6 +871,12 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (CostMicros != other.CostMicros) return false;
       if (Impressions != other.Impressions) return false;
       if (TopSlotImpressions != other.TopSlotImpressions) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ParentBiddableConversions, other.ParentBiddableConversions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(ParentBiddableConversionsValue, other.ParentBiddableConversionsValue)) return false;
+      if (ParentClicks != other.ParentClicks) return false;
+      if (ParentCostMicros != other.ParentCostMicros) return false;
+      if (ParentImpressions != other.ParentImpressions) return false;
+      if (ParentTopSlotImpressions != other.ParentTopSlotImpressions) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -645,6 +890,12 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (costMicros_ != null) hash ^= CostMicros.GetHashCode();
       if (impressions_ != null) hash ^= Impressions.GetHashCode();
       if (topSlotImpressions_ != null) hash ^= TopSlotImpressions.GetHashCode();
+      if (parentBiddableConversions_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ParentBiddableConversions);
+      if (parentBiddableConversionsValue_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(ParentBiddableConversionsValue);
+      if (parentClicks_ != null) hash ^= ParentClicks.GetHashCode();
+      if (parentCostMicros_ != null) hash ^= ParentCostMicros.GetHashCode();
+      if (parentImpressions_ != null) hash ^= ParentImpressions.GetHashCode();
+      if (parentTopSlotImpressions_ != null) hash ^= ParentTopSlotImpressions.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -679,6 +930,24 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (topSlotImpressions_ != null) {
         _single_topSlotImpressions_codec.WriteTagAndValue(output, TopSlotImpressions);
       }
+      if (parentBiddableConversions_ != null) {
+        _single_parentBiddableConversions_codec.WriteTagAndValue(output, ParentBiddableConversions);
+      }
+      if (parentBiddableConversionsValue_ != null) {
+        _single_parentBiddableConversionsValue_codec.WriteTagAndValue(output, ParentBiddableConversionsValue);
+      }
+      if (parentClicks_ != null) {
+        _single_parentClicks_codec.WriteTagAndValue(output, ParentClicks);
+      }
+      if (parentCostMicros_ != null) {
+        _single_parentCostMicros_codec.WriteTagAndValue(output, ParentCostMicros);
+      }
+      if (parentImpressions_ != null) {
+        _single_parentImpressions_codec.WriteTagAndValue(output, ParentImpressions);
+      }
+      if (parentTopSlotImpressions_ != null) {
+        _single_parentTopSlotImpressions_codec.WriteTagAndValue(output, ParentTopSlotImpressions);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -707,6 +976,24 @@ namespace Google.Ads.GoogleAds.V1.Common {
       }
       if (topSlotImpressions_ != null) {
         size += _single_topSlotImpressions_codec.CalculateSizeWithTag(TopSlotImpressions);
+      }
+      if (parentBiddableConversions_ != null) {
+        size += _single_parentBiddableConversions_codec.CalculateSizeWithTag(ParentBiddableConversions);
+      }
+      if (parentBiddableConversionsValue_ != null) {
+        size += _single_parentBiddableConversionsValue_codec.CalculateSizeWithTag(ParentBiddableConversionsValue);
+      }
+      if (parentClicks_ != null) {
+        size += _single_parentClicks_codec.CalculateSizeWithTag(ParentClicks);
+      }
+      if (parentCostMicros_ != null) {
+        size += _single_parentCostMicros_codec.CalculateSizeWithTag(ParentCostMicros);
+      }
+      if (parentImpressions_ != null) {
+        size += _single_parentImpressions_codec.CalculateSizeWithTag(ParentImpressions);
+      }
+      if (parentTopSlotImpressions_ != null) {
+        size += _single_parentTopSlotImpressions_codec.CalculateSizeWithTag(ParentTopSlotImpressions);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -752,6 +1039,36 @@ namespace Google.Ads.GoogleAds.V1.Common {
       if (other.topSlotImpressions_ != null) {
         if (topSlotImpressions_ == null || other.TopSlotImpressions != 0L) {
           TopSlotImpressions = other.TopSlotImpressions;
+        }
+      }
+      if (other.parentBiddableConversions_ != null) {
+        if (parentBiddableConversions_ == null || other.ParentBiddableConversions != 0D) {
+          ParentBiddableConversions = other.ParentBiddableConversions;
+        }
+      }
+      if (other.parentBiddableConversionsValue_ != null) {
+        if (parentBiddableConversionsValue_ == null || other.ParentBiddableConversionsValue != 0D) {
+          ParentBiddableConversionsValue = other.ParentBiddableConversionsValue;
+        }
+      }
+      if (other.parentClicks_ != null) {
+        if (parentClicks_ == null || other.ParentClicks != 0L) {
+          ParentClicks = other.ParentClicks;
+        }
+      }
+      if (other.parentCostMicros_ != null) {
+        if (parentCostMicros_ == null || other.ParentCostMicros != 0L) {
+          ParentCostMicros = other.ParentCostMicros;
+        }
+      }
+      if (other.parentImpressions_ != null) {
+        if (parentImpressions_ == null || other.ParentImpressions != 0L) {
+          ParentImpressions = other.ParentImpressions;
+        }
+      }
+      if (other.parentTopSlotImpressions_ != null) {
+        if (parentTopSlotImpressions_ == null || other.ParentTopSlotImpressions != 0L) {
+          ParentTopSlotImpressions = other.ParentTopSlotImpressions;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -814,6 +1131,48 @@ namespace Google.Ads.GoogleAds.V1.Common {
             }
             break;
           }
+          case 66: {
+            double? value = _single_parentBiddableConversions_codec.Read(input);
+            if (parentBiddableConversions_ == null || value != 0D) {
+              ParentBiddableConversions = value;
+            }
+            break;
+          }
+          case 74: {
+            double? value = _single_parentBiddableConversionsValue_codec.Read(input);
+            if (parentBiddableConversionsValue_ == null || value != 0D) {
+              ParentBiddableConversionsValue = value;
+            }
+            break;
+          }
+          case 82: {
+            long? value = _single_parentClicks_codec.Read(input);
+            if (parentClicks_ == null || value != 0L) {
+              ParentClicks = value;
+            }
+            break;
+          }
+          case 90: {
+            long? value = _single_parentCostMicros_codec.Read(input);
+            if (parentCostMicros_ == null || value != 0L) {
+              ParentCostMicros = value;
+            }
+            break;
+          }
+          case 98: {
+            long? value = _single_parentImpressions_codec.Read(input);
+            if (parentImpressions_ == null || value != 0L) {
+              ParentImpressions = value;
+            }
+            break;
+          }
+          case 106: {
+            long? value = _single_parentTopSlotImpressions_codec.Read(input);
+            if (parentTopSlotImpressions_ == null || value != 0L) {
+              ParentTopSlotImpressions = value;
+            }
+            break;
+          }
         }
       }
     }
@@ -821,7 +1180,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
   }
 
   /// <summary>
-  /// Projected metrics for a specific cpc bid amount.
+  /// Projected metrics for a specific CPC bid amount.
   /// </summary>
   public sealed partial class CpcBidSimulationPoint : pb::IMessage<CpcBidSimulationPoint> {
     private static readonly pb::MessageParser<CpcBidSimulationPoint> _parser = new pb::MessageParser<CpcBidSimulationPoint>(() => new CpcBidSimulationPoint());
@@ -831,7 +1190,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -868,7 +1227,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     private static readonly pb::FieldCodec<long?> _single_cpcBidMicros_codec = pb::FieldCodec.ForStructWrapper<long>(10);
     private long? cpcBidMicros_;
     /// <summary>
-    /// The simulated cpc bid upon which projected metrics are based.
+    /// The simulated CPC bid upon which projected metrics are based.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long? CpcBidMicros {
@@ -1178,7 +1537,219 @@ namespace Google.Ads.GoogleAds.V1.Common {
   }
 
   /// <summary>
-  /// Projected metrics for a specific target cpa amount.
+  /// Projected metrics for a specific CPV bid amount.
+  /// </summary>
+  public sealed partial class CpvBidSimulationPoint : pb::IMessage<CpvBidSimulationPoint> {
+    private static readonly pb::MessageParser<CpvBidSimulationPoint> _parser = new pb::MessageParser<CpvBidSimulationPoint>(() => new CpvBidSimulationPoint());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CpvBidSimulationPoint> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CpvBidSimulationPoint() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CpvBidSimulationPoint(CpvBidSimulationPoint other) : this() {
+      CpvBidMicros = other.CpvBidMicros;
+      CostMicros = other.CostMicros;
+      Impressions = other.Impressions;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CpvBidSimulationPoint Clone() {
+      return new CpvBidSimulationPoint(this);
+    }
+
+    /// <summary>Field number for the "cpv_bid_micros" field.</summary>
+    public const int CpvBidMicrosFieldNumber = 1;
+    private static readonly pb::FieldCodec<long?> _single_cpvBidMicros_codec = pb::FieldCodec.ForStructWrapper<long>(10);
+    private long? cpvBidMicros_;
+    /// <summary>
+    /// The simulated CPV bid upon which projected metrics are based.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? CpvBidMicros {
+      get { return cpvBidMicros_; }
+      set {
+        cpvBidMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cost_micros" field.</summary>
+    public const int CostMicrosFieldNumber = 2;
+    private static readonly pb::FieldCodec<long?> _single_costMicros_codec = pb::FieldCodec.ForStructWrapper<long>(18);
+    private long? costMicros_;
+    /// <summary>
+    /// Projected cost in micros.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? CostMicros {
+      get { return costMicros_; }
+      set {
+        costMicros_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "impressions" field.</summary>
+    public const int ImpressionsFieldNumber = 3;
+    private static readonly pb::FieldCodec<long?> _single_impressions_codec = pb::FieldCodec.ForStructWrapper<long>(26);
+    private long? impressions_;
+    /// <summary>
+    /// Projected number of impressions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? Impressions {
+      get { return impressions_; }
+      set {
+        impressions_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CpvBidSimulationPoint);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CpvBidSimulationPoint other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CpvBidMicros != other.CpvBidMicros) return false;
+      if (CostMicros != other.CostMicros) return false;
+      if (Impressions != other.Impressions) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (cpvBidMicros_ != null) hash ^= CpvBidMicros.GetHashCode();
+      if (costMicros_ != null) hash ^= CostMicros.GetHashCode();
+      if (impressions_ != null) hash ^= Impressions.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (cpvBidMicros_ != null) {
+        _single_cpvBidMicros_codec.WriteTagAndValue(output, CpvBidMicros);
+      }
+      if (costMicros_ != null) {
+        _single_costMicros_codec.WriteTagAndValue(output, CostMicros);
+      }
+      if (impressions_ != null) {
+        _single_impressions_codec.WriteTagAndValue(output, Impressions);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (cpvBidMicros_ != null) {
+        size += _single_cpvBidMicros_codec.CalculateSizeWithTag(CpvBidMicros);
+      }
+      if (costMicros_ != null) {
+        size += _single_costMicros_codec.CalculateSizeWithTag(CostMicros);
+      }
+      if (impressions_ != null) {
+        size += _single_impressions_codec.CalculateSizeWithTag(Impressions);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CpvBidSimulationPoint other) {
+      if (other == null) {
+        return;
+      }
+      if (other.cpvBidMicros_ != null) {
+        if (cpvBidMicros_ == null || other.CpvBidMicros != 0L) {
+          CpvBidMicros = other.CpvBidMicros;
+        }
+      }
+      if (other.costMicros_ != null) {
+        if (costMicros_ == null || other.CostMicros != 0L) {
+          CostMicros = other.CostMicros;
+        }
+      }
+      if (other.impressions_ != null) {
+        if (impressions_ == null || other.Impressions != 0L) {
+          Impressions = other.Impressions;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            long? value = _single_cpvBidMicros_codec.Read(input);
+            if (cpvBidMicros_ == null || value != 0L) {
+              CpvBidMicros = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_costMicros_codec.Read(input);
+            if (costMicros_ == null || value != 0L) {
+              CostMicros = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_impressions_codec.Read(input);
+            if (impressions_ == null || value != 0L) {
+              Impressions = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Projected metrics for a specific target CPA amount.
   /// </summary>
   public sealed partial class TargetCpaSimulationPoint : pb::IMessage<TargetCpaSimulationPoint> {
     private static readonly pb::MessageParser<TargetCpaSimulationPoint> _parser = new pb::MessageParser<TargetCpaSimulationPoint>(() => new TargetCpaSimulationPoint());
@@ -1188,7 +1759,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Google.Ads.GoogleAds.V1.Common.SimulationReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1225,7 +1796,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     private static readonly pb::FieldCodec<long?> _single_targetCpaMicros_codec = pb::FieldCodec.ForStructWrapper<long>(10);
     private long? targetCpaMicros_;
     /// <summary>
-    /// The simulated target cpa upon which projected metrics are based.
+    /// The simulated target CPA upon which projected metrics are based.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long? TargetCpaMicros {

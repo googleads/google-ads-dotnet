@@ -121,6 +121,21 @@ namespace Google.Ads.GoogleAds.Util
         }
 
         /// <summary>
+        /// Decide whether the library should attempt to generate logs.
+        /// </summary>
+        internal static bool ShouldGenerateRequestLogs()
+        {
+            TraceSource detailedSource = GetSource(DETAILED_REQUEST_LOGS_SOURCE);
+            TraceSource summarySource = GetSource(SUMMARY_REQUEST_LOGS_SOURCE);
+
+            return (
+                ((detailedSource.Switch.Level & SourceLevels.Information) ==
+                    SourceLevels.Information) ||
+                ((summarySource.Switch.Level & SourceLevels.Warning) == SourceLevels.Warning)
+            );
+        }
+
+        /// <summary>
         /// Writes the deprecation warnings.
         /// </summary>
         /// <param name="message">The message.</param>
@@ -160,7 +175,7 @@ namespace Google.Ads.GoogleAds.Util
         /// <param name="isError">Indicates whether or not these are error logs.</param>
         /// <remarks>The trace levels may be controlled from App.config by setting
         /// the level for AdsClientLibs.DetailedRequestLogs trace switch.</remarks>
-        public static void WriteDetailedRequestLogs(string message, Boolean isError)
+        public static void WriteDetailedRequestLogs(string message, bool isError)
         {
             TraceEventType type = isError ? TraceEventType.Information : TraceEventType.Verbose;
             Write(DETAILED_REQUEST_LOGS_SOURCE, type, message);
@@ -173,7 +188,7 @@ namespace Google.Ads.GoogleAds.Util
         /// <param name="isError">Indicates whether or not these are error logs.</param>
         /// <remarks>The trace levels may be controlled from App.config by setting
         /// the level for AdsClientLibs.SummaryRequestLogs trace switch.</remarks>
-        public static void WriteSummaryRequestLogs(string message, Boolean isError)
+        public static void WriteSummaryRequestLogs(string message, bool isError)
         {
             TraceEventType type = isError ? TraceEventType.Warning : TraceEventType.Information;
             Write(SUMMARY_REQUEST_LOGS_SOURCE, type, message);

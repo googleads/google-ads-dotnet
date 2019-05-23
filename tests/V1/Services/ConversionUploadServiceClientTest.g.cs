@@ -42,6 +42,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
                 CustomerId = "customerId-1772061412",
                 Conversions = { },
                 PartialFailure = true,
+                ValidateOnly = false,
             };
             UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse();
             mockGrpcClient.Setup(x => x.UploadClickConversions(expectedRequest, It.IsAny<CallOptions>()))
@@ -50,7 +51,8 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             string customerId = "customerId-1772061412";
             IEnumerable<ClickConversion> conversions = new List<ClickConversion>();
             bool partialFailure = true;
-            UploadClickConversionsResponse response = client.UploadClickConversions(customerId, conversions, partialFailure);
+            bool validateOnly = false;
+            UploadClickConversionsResponse response = client.UploadClickConversions(customerId, conversions, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -64,6 +66,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
                 CustomerId = "customerId-1772061412",
                 Conversions = { },
                 PartialFailure = true,
+                ValidateOnly = false,
             };
             UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse();
             mockGrpcClient.Setup(x => x.UploadClickConversionsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -72,7 +75,8 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             string customerId = "customerId-1772061412";
             IEnumerable<ClickConversion> conversions = new List<ClickConversion>();
             bool partialFailure = true;
-            UploadClickConversionsResponse response = await client.UploadClickConversionsAsync(customerId, conversions, partialFailure);
+            bool validateOnly = false;
+            UploadClickConversionsResponse response = await client.UploadClickConversionsAsync(customerId, conversions, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -162,6 +166,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
                 CustomerId = "customerId-1772061412",
                 Conversions = { },
                 PartialFailure = true,
+                ValidateOnly = false,
             };
             UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
             mockGrpcClient.Setup(x => x.UploadCallConversions(expectedRequest, It.IsAny<CallOptions>()))
@@ -170,7 +175,8 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             string customerId = "customerId-1772061412";
             IEnumerable<CallConversion> conversions = new List<CallConversion>();
             bool partialFailure = true;
-            UploadCallConversionsResponse response = client.UploadCallConversions(customerId, conversions, partialFailure);
+            bool validateOnly = false;
+            UploadCallConversionsResponse response = client.UploadCallConversions(customerId, conversions, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -184,6 +190,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
                 CustomerId = "customerId-1772061412",
                 Conversions = { },
                 PartialFailure = true,
+                ValidateOnly = false,
             };
             UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
             mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -192,7 +199,8 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             string customerId = "customerId-1772061412";
             IEnumerable<CallConversion> conversions = new List<CallConversion>();
             bool partialFailure = true;
-            UploadCallConversionsResponse response = await client.UploadCallConversionsAsync(customerId, conversions, partialFailure);
+            bool validateOnly = false;
+            UploadCallConversionsResponse response = await client.UploadCallConversionsAsync(customerId, conversions, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

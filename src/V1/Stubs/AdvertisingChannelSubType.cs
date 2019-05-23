@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "CkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9hZHZlcnRpc2luZ19j",
             "aGFubmVsX3N1Yl90eXBlLnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MS5lbnVtcxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLwAgodQWR2",
-            "ZXJ0aXNpbmdDaGFubmVsU3ViVHlwZUVudW0izgIKGUFkdmVydGlzaW5nQ2hh",
+            "MS5lbnVtcxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKVAwodQWR2",
+            "ZXJ0aXNpbmdDaGFubmVsU3ViVHlwZUVudW0i8wIKGUFkdmVydGlzaW5nQ2hh",
             "bm5lbFN1YlR5cGUSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESFQoR",
             "U0VBUkNIX01PQklMRV9BUFAQAhIWChJESVNQTEFZX01PQklMRV9BUFAQAxIS",
             "Cg5TRUFSQ0hfRVhQUkVTUxAEEhMKD0RJU1BMQVlfRVhQUkVTUxAFEhYKElNI",
@@ -35,12 +35,13 @@ namespace Google.Ads.GoogleAds.V1.Enums {
             "SVNQTEFZX1NNQVJUX0NBTVBBSUdOEAgSEwoPVklERU9fT1VUU1RSRUFNEAkS",
             "EAoMVklERU9fQUNUSU9OEAoSFwoTVklERU9fTk9OX1NLSVBQQUJMRRALEhAK",
             "DEFQUF9DQU1QQUlHThAMEh8KG0FQUF9DQU1QQUlHTl9GT1JfRU5HQUdFTUVO",
-            "VBANQvMBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXNCHkFk",
-            "dmVydGlzaW5nQ2hhbm5lbFN1YlR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvZW51",
-            "bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5FbnVt",
-            "c8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXEVudW1z6gIhR29vZ2xlOjpB",
-            "ZHM6Okdvb2dsZUFkczo6VjE6OkVudW1zYgZwcm90bzM="));
+            "VBANEiMKH1NIT1BQSU5HX0NPTVBBUklTT05fTElTVElOR19BRFMQD0LzAQoh",
+            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zQh5BZHZlcnRpc2lu",
+            "Z0NoYW5uZWxTdWJUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zO2VudW1z",
+            "ogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEuRW51bXPKAh1Hb29n",
+            "bGVcQWRzXEdvb2dsZUFkc1xWMVxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29n",
+            "bGVBZHM6OlYxOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -221,6 +222,10 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// and the Google Display Network.
         /// </summary>
         [pbr::OriginalName("APP_CAMPAIGN_FOR_ENGAGEMENT")] AppCampaignForEngagement = 13,
+        /// <summary>
+        /// Shopping Comparison Listing campaigns.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_COMPARISON_LISTING_ADS")] ShoppingComparisonListingAds = 15,
       }
 
     }

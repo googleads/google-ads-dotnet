@@ -26,21 +26,21 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9iaWRkaW5nX3N0cmF0",
             "ZWd5X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1z",
-            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIuwCChdCaWRkaW5nU3Ry",
-            "YXRlZ3lUeXBlRW51bSLQAgoTQmlkZGluZ1N0cmF0ZWd5VHlwZRIPCgtVTlNQ",
-            "RUNJRklFRBAAEgsKB1VOS05PV04QARIQCgxFTkhBTkNFRF9DUEMQAhIOCgpN",
-            "QU5VQUxfQ1BDEAMSDgoKTUFOVUFMX0NQTRAEEg4KCk1BTlVBTF9DUFYQDRIY",
-            "ChRNQVhJTUlaRV9DT05WRVJTSU9OUxAKEh0KGU1BWElNSVpFX0NPTlZFUlNJ",
-            "T05fVkFMVUUQCxIVChFQQUdFX09ORV9QUk9NT1RFRBAFEg8KC1BFUkNFTlRf",
-            "Q1BDEAwSDgoKVEFSR0VUX0NQQRAGEg4KClRBUkdFVF9DUE0QDhIbChdUQVJH",
-            "RVRfSU1QUkVTU0lPTl9TSEFSRRAPEhgKFFRBUkdFVF9PVVRSQU5LX1NIQVJF",
-            "EAcSDwoLVEFSR0VUX1JPQVMQCBIQCgxUQVJHRVRfU1BFTkQQCULtAQohY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zQhhCaWRkaW5nU3RyYXRl",
-            "Z3lUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
-            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxL2VudW1zO2VudW1zogIDR0FBqgId",
-            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEuRW51bXPKAh1Hb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMVxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYx",
-            "OjpFbnVtc2IGcHJvdG8z"));
+            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIvwCChdCaWRkaW5nU3Ry",
+            "YXRlZ3lUeXBlRW51bSLgAgoTQmlkZGluZ1N0cmF0ZWd5VHlwZRIPCgtVTlNQ",
+            "RUNJRklFRBAAEgsKB1VOS05PV04QARIOCgpDT01NSVNTSU9OEBASEAoMRU5I",
+            "QU5DRURfQ1BDEAISDgoKTUFOVUFMX0NQQxADEg4KCk1BTlVBTF9DUE0QBBIO",
+            "CgpNQU5VQUxfQ1BWEA0SGAoUTUFYSU1JWkVfQ09OVkVSU0lPTlMQChIdChlN",
+            "QVhJTUlaRV9DT05WRVJTSU9OX1ZBTFVFEAsSFQoRUEFHRV9PTkVfUFJPTU9U",
+            "RUQQBRIPCgtQRVJDRU5UX0NQQxAMEg4KClRBUkdFVF9DUEEQBhIOCgpUQVJH",
+            "RVRfQ1BNEA4SGwoXVEFSR0VUX0lNUFJFU1NJT05fU0hBUkUQDxIYChRUQVJH",
+            "RVRfT1VUUkFOS19TSEFSRRAHEg8KC1RBUkdFVF9ST0FTEAgSEAoMVEFSR0VU",
+            "X1NQRU5EEAlC7QEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVt",
+            "c0IYQmlkZGluZ1N0cmF0ZWd5VHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcu",
+            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lbnVt",
+            "cztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVudW1z",
+            "ygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRW51bXPqAiFHb29nbGU6OkFk",
+            "czo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -169,6 +169,11 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// Used for return value only. Represents value unknown in this version.
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
+        /// <summary>
+        /// Commission is an automatic bidding strategy in which the advertiser pays
+        /// a certain portion of the conversion value.
+        /// </summary>
+        [pbr::OriginalName("COMMISSION")] Commission = 16,
         /// <summary>
         /// Enhanced CPC is a bidding strategy that raises bids for clicks
         /// that seem more likely to lead to a conversion and lowers
