@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Config;
+using Google.Ads.GoogleAds.Util;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using System;
@@ -106,19 +107,24 @@ namespace Google.Ads.GoogleAds.Logging
             Task t = call.ResponseAsync.ContinueWith(
                 delegate (Task<TResponse> oldTask)
             {
-                LogEntry logEntry = new LogEntry()
+                // Generating log entry is expensive, so let's do that only if the log source
+                // has been configured to do so.
+                if (TraceUtilities.ShouldGenerateRequestLogs())
                 {
-                    Host = Config.ServerUrl,
-                    Method = context.Method.FullName,
-                    RequestHeaders = context.Options.Headers,
-                    Request = request,
-                    ResponseHeaders = GetResponseHeader(call),
-                    Response = (oldTask.IsFaulted) ? default(TResponse) : oldTask.Result,
-                    Exception = GetGoogleAdsException(oldTask.Exception),
-                    IsFailure = oldTask.IsFaulted,
-                    CustomerId = GetCustomerId(request)
-                };
-                OnLogEventAvailable?.Invoke(this, logEntry);
+                    LogEntry logEntry = new LogEntry()
+                    {
+                        Host = Config.ServerUrl,
+                        Method = context.Method.FullName,
+                        RequestHeaders = context.Options.Headers,
+                        Request = request,
+                        ResponseHeaders = GetResponseHeader(call),
+                        Response = (oldTask.IsFaulted) ? default(TResponse) : oldTask.Result,
+                        Exception = GetGoogleAdsException(oldTask.Exception),
+                        IsFailure = oldTask.IsFaulted,
+                        CustomerId = GetCustomerId(request)
+                    };
+                    OnLogEventAvailable?.Invoke(this, logEntry);
+                }
             });
             t.Wait();
             return call;

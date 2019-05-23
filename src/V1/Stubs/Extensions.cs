@@ -221,7 +221,8 @@ namespace Google.Ads.GoogleAds.V1.Common {
     private string linkText_;
     /// <summary>
     /// The visible text displayed when the link is rendered in an ad.
-    /// The length of this string should be between 1 and 25, inclusive.
+    /// This string must not be empty, and the length of this string should
+    /// be between 1 and 25, inclusive.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string LinkText {
@@ -252,6 +253,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     private global::Google.Ads.GoogleAds.V1.Enums.AppStoreEnum.Types.AppStore appStore_ = 0;
     /// <summary>
     /// The application store that the target application belongs to.
+    /// This field is required.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V1.Enums.AppStoreEnum.Types.AppStore AppStore {
@@ -268,6 +270,7 @@ namespace Google.Ads.GoogleAds.V1.Common {
     private readonly pbc::RepeatedField<string> finalUrls_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// A list of possible final URLs after all cross domain redirects.
+    /// This list must not be empty.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> FinalUrls {

@@ -1,3 +1,11 @@
+2.1.0
+=====
+- Added support for Google Ads API v1.3. See release notes:
+ https://developers.google.com/google-ads/api/docs/release-notes#130_2019-05-22
+- Increased the default timeout for services to 120 seconds.
+- Made a change to generate logs only if appropriate logging levels are set.
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/59.
+
 2.0.0
 =====
 - Added support for Google Ads API v1.2 See release notes:

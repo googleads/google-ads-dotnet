@@ -358,7 +358,9 @@ namespace Google.Ads.GoogleAds.V1.Services {
   }
 
   /// <summary>
-  /// A single operation to create an asset.
+  /// A single operation to create an asset. Supported asset types are
+  /// YoutubeVideoAsset, MediaBundleAsset and ImageAsset. TextAsset should be
+  /// created with Ad inline.
   /// </summary>
   public sealed partial class AssetOperation : pb::IMessage<AssetOperation> {
     private static readonly pb::MessageParser<AssetOperation> _parser = new pb::MessageParser<AssetOperation>(() => new AssetOperation());

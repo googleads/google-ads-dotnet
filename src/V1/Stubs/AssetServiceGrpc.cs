@@ -25,7 +25,9 @@ using grpc = global::Grpc.Core;
 
 namespace Google.Ads.GoogleAds.V1.Services {
   /// <summary>
-  /// Service to manage assets.
+  /// Service to manage assets. Asset types can be created with AssetService are
+  /// YoutubeVideoAsset, MediaBundleAsset and ImageAsset. TextAsset should be
+  /// created with Ad inline.
   /// </summary>
   public static partial class AssetService
   {

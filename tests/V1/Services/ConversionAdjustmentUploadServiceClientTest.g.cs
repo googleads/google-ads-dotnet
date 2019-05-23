@@ -42,6 +42,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
                 CustomerId = "customerId-1772061412",
                 ConversionAdjustments = { },
                 PartialFailure = true,
+                ValidateOnly = false,
             };
             UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse();
             mockGrpcClient.Setup(x => x.UploadConversionAdjustments(expectedRequest, It.IsAny<CallOptions>()))
@@ -50,7 +51,8 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             string customerId = "customerId-1772061412";
             IEnumerable<ConversionAdjustment> conversionAdjustments = new List<ConversionAdjustment>();
             bool partialFailure = true;
-            UploadConversionAdjustmentsResponse response = client.UploadConversionAdjustments(customerId, conversionAdjustments, partialFailure);
+            bool validateOnly = false;
+            UploadConversionAdjustmentsResponse response = client.UploadConversionAdjustments(customerId, conversionAdjustments, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -64,6 +66,7 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
                 CustomerId = "customerId-1772061412",
                 ConversionAdjustments = { },
                 PartialFailure = true,
+                ValidateOnly = false,
             };
             UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse();
             mockGrpcClient.Setup(x => x.UploadConversionAdjustmentsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -72,7 +75,8 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
             string customerId = "customerId-1772061412";
             IEnumerable<ConversionAdjustment> conversionAdjustments = new List<ConversionAdjustment>();
             bool partialFailure = true;
-            UploadConversionAdjustmentsResponse response = await client.UploadConversionAdjustmentsAsync(customerId, conversionAdjustments, partialFailure);
+            bool validateOnly = false;
+            UploadConversionAdjustmentsResponse response = await client.UploadConversionAdjustmentsAsync(customerId, conversionAdjustments, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

@@ -352,6 +352,10 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -362,12 +366,14 @@ namespace Google.Ads.GoogleAds.V1.Services
             string customerId,
             scg::IEnumerable<ClickConversion> conversions,
             bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => UploadClickConversionsAsync(
                 new UploadClickConversionsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Conversions = { gax::GaxPreconditions.CheckNotNull(conversions, nameof(conversions)) },
                     PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -386,6 +392,10 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
         /// </param>
@@ -396,10 +406,12 @@ namespace Google.Ads.GoogleAds.V1.Services
             string customerId,
             scg::IEnumerable<ClickConversion> conversions,
             bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => UploadClickConversionsAsync(
                 customerId,
                 conversions,
                 partialFailure,
+                validateOnly,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
@@ -417,6 +429,10 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -427,12 +443,14 @@ namespace Google.Ads.GoogleAds.V1.Services
             string customerId,
             scg::IEnumerable<ClickConversion> conversions,
             bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => UploadClickConversions(
                 new UploadClickConversionsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Conversions = { gax::GaxPreconditions.CheckNotNull(conversions, nameof(conversions)) },
                     PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -582,6 +600,10 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -592,12 +614,14 @@ namespace Google.Ads.GoogleAds.V1.Services
             string customerId,
             scg::IEnumerable<CallConversion> conversions,
             bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => UploadCallConversionsAsync(
                 new UploadCallConversionsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Conversions = { gax::GaxPreconditions.CheckNotNull(conversions, nameof(conversions)) },
                     PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 
@@ -616,6 +640,10 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="cancellationToken">
         /// A <see cref="st::CancellationToken"/> to use for this RPC.
         /// </param>
@@ -626,10 +654,12 @@ namespace Google.Ads.GoogleAds.V1.Services
             string customerId,
             scg::IEnumerable<CallConversion> conversions,
             bool? partialFailure,
+            bool? validateOnly,
             st::CancellationToken cancellationToken) => UploadCallConversionsAsync(
                 customerId,
                 conversions,
                 partialFailure,
+                validateOnly,
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
@@ -647,6 +677,10 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
         /// </param>
+        /// <param name="validateOnly">
+        /// If true, the request is validated but not executed. Only errors are
+        /// returned, not results.
+        /// </param>
         /// <param name="callSettings">
         /// If not null, applies overrides to this RPC call.
         /// </param>
@@ -657,12 +691,14 @@ namespace Google.Ads.GoogleAds.V1.Services
             string customerId,
             scg::IEnumerable<CallConversion> conversions,
             bool? partialFailure,
+            bool? validateOnly,
             gaxgrpc::CallSettings callSettings = null) => UploadCallConversions(
                 new UploadCallConversionsRequest
                 {
                     CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                     Conversions = { gax::GaxPreconditions.CheckNotNull(conversions, nameof(conversions)) },
                     PartialFailure = partialFailure ?? false, // Optional
+                    ValidateOnly = validateOnly ?? false, // Optional
                 },
                 callSettings);
 

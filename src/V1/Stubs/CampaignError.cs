@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V1.Errors {
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnMvY2FtcGFpZ25fZXJy",
             "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9ycxocZ29v",
-            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKpDAoRQ2FtcGFpZ25FcnJvckVu",
-            "dW0ikwwKDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
+            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKZDQoRQ2FtcGFpZ25FcnJvckVu",
+            "dW0igw0KDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
             "T1dOEAESIQodQ0FOTk9UX1RBUkdFVF9DT05URU5UX05FVFdPUksQAxIgChxD",
             "QU5OT1RfVEFSR0VUX1NFQVJDSF9ORVRXT1JLEAQSNgoyQ0FOTk9UX1RBUkdF",
             "VF9TRUFSQ0hfTkVUV09SS19XSVRIT1VUX0dPT0dMRV9TRUFSQ0gQBRIwCixD",
@@ -61,13 +61,15 @@ namespace Google.Ads.GoogleAds.V1.Errors {
             "RUxfQ1VTVE9NRVJfTElOSxAlEh8KG0lOVkFMSURfSE9URUxfQ1VTVE9NRVJf",
             "TElOSxAmEhkKFU1JU1NJTkdfSE9URUxfU0VUVElORxAnEkIKPkNBTk5PVF9V",
             "U0VfU0hBUkVEX0NBTVBBSUdOX0JVREdFVF9XSElMRV9QQVJUX09GX0NBTVBB",
-            "SUdOX0dST1VQECgSEQoNQVBQX05PVF9GT1VORBApQu0BCiJjb20uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjEuZXJyb3JzQhJDYW1wYWlnbkVycm9yUHJvdG9Q",
-            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3YxL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRz",
-            "Lkdvb2dsZUFkcy5WMS5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "MVxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RXJyb3Jz",
-            "YgZwcm90bzM="));
+            "SUdOX0dST1VQECgSEQoNQVBQX05PVF9GT1VORBApEjkKNVNIT1BQSU5HX0VO",
+            "QUJMRV9MT0NBTF9OT1RfU1VQUE9SVEVEX0ZPUl9DQU1QQUlHTl9UWVBFECoS",
+            "MwovTUVSQ0hBTlRfTk9UX0FMTE9XRURfRk9SX0NPTVBBUklTT05fTElTVElO",
+            "R19BRFMQK0LtAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVycm9y",
+            "c0ISQ2FtcGFpZ25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dl",
+            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lcnJvcnM7ZXJy",
+            "b3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEuRXJyb3JzygIe",
+            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6",
+            "Okdvb2dsZUFkczo6VjE6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -356,6 +358,16 @@ namespace Google.Ads.GoogleAds.V1.Errors {
         /// The app ID was not found.
         /// </summary>
         [pbr::OriginalName("APP_NOT_FOUND")] AppNotFound = 41,
+        /// <summary>
+        /// Campaign.shopping_setting.enable_local is not supported for the specified
+        /// campaign type.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_ENABLE_LOCAL_NOT_SUPPORTED_FOR_CAMPAIGN_TYPE")] ShoppingEnableLocalNotSupportedForCampaignType = 42,
+        /// <summary>
+        /// The merchant does not support the creation of campaigns for Shopping
+        /// Comparison Listing Ads.
+        /// </summary>
+        [pbr::OriginalName("MERCHANT_NOT_ALLOWED_FOR_COMPARISON_LISTING_ADS")] MerchantNotAllowedForComparisonListingAds = 43,
       }
 
     }

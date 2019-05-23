@@ -35,7 +35,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "MS9lbnVtcy9kZXZpY2UucHJvdG8aQGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Yx",
             "L2VudW1zL3N5c3RlbV9tYW5hZ2VkX2VudGl0eV9zb3VyY2UucHJvdG8aHmdv",
             "b2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5v",
-            "dGF0aW9ucy5wcm90byKgEQoCQWQSJwoCaWQYASABKAsyGy5nb29nbGUucHJv",
+            "dGF0aW9ucy5wcm90byKLEgoCQWQSJwoCaWQYASABKAsyGy5nb29nbGUucHJv",
             "dG9idWYuSW50NjRWYWx1ZRIwCgpmaW5hbF91cmxzGAIgAygLMhwuZ29vZ2xl",
             "LnByb3RvYnVmLlN0cmluZ1ZhbHVlEkMKDmZpbmFsX2FwcF91cmxzGCMgAygL",
             "MisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkZpbmFsQXBwVXJs",
@@ -84,17 +84,19 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "GCEgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkRpc3Bs",
             "YXlVcGxvYWRBZEluZm9IABJQChFhcHBfZW5nYWdlbWVudF9hZBgiIAEoCzIz",
             "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5BcHBFbmdhZ2VtZW50",
-            "QWRJbmZvSABCCQoHYWRfZGF0YUL0AQolY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxLnJlc291cmNlc0IHQWRQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9y",
-            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEvcmVzb3Vy",
-            "Y2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
-            "LlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxXFJlc291cmNl",
-            "c+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOjpSZXNvdXJjZXNiBnBy",
-            "b3RvMw=="));
+            "QWRJbmZvSAASaQoec2hvcHBpbmdfY29tcGFyaXNvbl9saXN0aW5nX2FkGCQg",
+            "ASgLMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlNob3BwaW5n",
+            "Q29tcGFyaXNvbkxpc3RpbmdBZEluZm9IAEIJCgdhZF9kYXRhQvQBCiVjb20u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjEucmVzb3VyY2VzQgdBZFByb3RvUAFa",
+            "Smdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
+            "b2dsZWFkcy92MS9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xl",
+            "LkFkcy5Hb29nbGVBZHMuVjEuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29n",
+            "bGVBZHNcVjFcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjE6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.AdTypeInfosReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.FinalAppUrlReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.UrlCollectionReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.AdTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.SystemManagedEntitySourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Ad), global::Google.Ads.GoogleAds.V1.Resources.Ad.Parser, new[]{ "Id", "FinalUrls", "FinalAppUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "UrlCollections", "Name", "SystemManagedResourceSource", "TextAd", "ExpandedTextAd", "CallOnlyAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "GmailAd", "ImageAd", "VideoAd", "ResponsiveSearchAd", "LegacyResponsiveDisplayAd", "AppAd", "LegacyAppInstallAd", "ResponsiveDisplayAd", "DisplayUploadAd", "AppEngagementAd" }, new[]{ "AdData" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.Ad), global::Google.Ads.GoogleAds.V1.Resources.Ad.Parser, new[]{ "Id", "FinalUrls", "FinalAppUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "UrlCollections", "Name", "SystemManagedResourceSource", "TextAd", "ExpandedTextAd", "CallOnlyAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "GmailAd", "ImageAd", "VideoAd", "ResponsiveSearchAd", "LegacyResponsiveDisplayAd", "AppAd", "LegacyAppInstallAd", "ResponsiveDisplayAd", "DisplayUploadAd", "AppEngagementAd", "ShoppingComparisonListingAd" }, new[]{ "AdData" }, null, null)
           }));
     }
     #endregion
@@ -193,6 +195,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           break;
         case AdDataOneofCase.AppEngagementAd:
           AppEngagementAd = other.AppEngagementAd.Clone();
+          break;
+        case AdDataOneofCase.ShoppingComparisonListingAd:
+          ShoppingComparisonListingAd = other.ShoppingComparisonListingAd.Clone();
           break;
       }
 
@@ -643,6 +648,20 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
     }
 
+    /// <summary>Field number for the "shopping_comparison_listing_ad" field.</summary>
+    public const int ShoppingComparisonListingAdFieldNumber = 36;
+    /// <summary>
+    /// Details pertaining to a Shopping Comparison Listing ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V1.Common.ShoppingComparisonListingAdInfo ShoppingComparisonListingAd {
+      get { return adDataCase_ == AdDataOneofCase.ShoppingComparisonListingAd ? (global::Google.Ads.GoogleAds.V1.Common.ShoppingComparisonListingAdInfo) adData_ : null; }
+      set {
+        adData_ = value;
+        adDataCase_ = value == null ? AdDataOneofCase.None : AdDataOneofCase.ShoppingComparisonListingAd;
+      }
+    }
+
     private object adData_;
     /// <summary>Enum of possible cases for the "ad_data" oneof.</summary>
     public enum AdDataOneofCase {
@@ -664,6 +683,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       ResponsiveDisplayAd = 31,
       DisplayUploadAd = 33,
       AppEngagementAd = 34,
+      ShoppingComparisonListingAd = 36,
     }
     private AdDataOneofCase adDataCase_ = AdDataOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -720,6 +740,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (!object.Equals(ResponsiveDisplayAd, other.ResponsiveDisplayAd)) return false;
       if (!object.Equals(DisplayUploadAd, other.DisplayUploadAd)) return false;
       if (!object.Equals(AppEngagementAd, other.AppEngagementAd)) return false;
+      if (!object.Equals(ShoppingComparisonListingAd, other.ShoppingComparisonListingAd)) return false;
       if (AdDataCase != other.AdDataCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -757,6 +778,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) hash ^= ResponsiveDisplayAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.DisplayUploadAd) hash ^= DisplayUploadAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.AppEngagementAd) hash ^= AppEngagementAd.GetHashCode();
+      if (adDataCase_ == AdDataOneofCase.ShoppingComparisonListingAd) hash ^= ShoppingComparisonListingAd.GetHashCode();
       hash ^= (int) adDataCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -871,6 +893,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteMessage(AppEngagementAd);
       }
       finalAppUrls_.WriteTo(output, _repeated_finalAppUrls_codec);
+      if (adDataCase_ == AdDataOneofCase.ShoppingComparisonListingAd) {
+        output.WriteRawTag(162, 2);
+        output.WriteMessage(ShoppingComparisonListingAd);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -958,6 +984,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
       if (adDataCase_ == AdDataOneofCase.AppEngagementAd) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(AppEngagementAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.ShoppingComparisonListingAd) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ShoppingComparisonListingAd);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1111,6 +1140,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             AppEngagementAd = new global::Google.Ads.GoogleAds.V1.Common.AppEngagementAdInfo();
           }
           AppEngagementAd.MergeFrom(other.AppEngagementAd);
+          break;
+        case AdDataOneofCase.ShoppingComparisonListingAd:
+          if (ShoppingComparisonListingAd == null) {
+            ShoppingComparisonListingAd = new global::Google.Ads.GoogleAds.V1.Common.ShoppingComparisonListingAdInfo();
+          }
+          ShoppingComparisonListingAd.MergeFrom(other.ShoppingComparisonListingAd);
           break;
       }
 
@@ -1343,6 +1378,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           }
           case 282: {
             finalAppUrls_.AddEntriesFrom(input, _repeated_finalAppUrls_codec);
+            break;
+          }
+          case 290: {
+            global::Google.Ads.GoogleAds.V1.Common.ShoppingComparisonListingAdInfo subBuilder = new global::Google.Ads.GoogleAds.V1.Common.ShoppingComparisonListingAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ShoppingComparisonListingAd) {
+              subBuilder.MergeFrom(ShoppingComparisonListingAd);
+            }
+            input.ReadMessage(subBuilder);
+            ShoppingComparisonListingAd = subBuilder;
             break;
           }
         }

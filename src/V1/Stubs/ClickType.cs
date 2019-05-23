@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Ci5nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9jbGlja190eXBlLnBy",
             "b3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtcxocZ29vZ2xlL2Fw",
-            "aS9hbm5vdGF0aW9ucy5wcm90byKFDAoNQ2xpY2tUeXBlRW51bSLzCwoJQ2xp",
+            "aS9hbm5vdGF0aW9ucy5wcm90byKmDAoNQ2xpY2tUeXBlRW51bSKUDAoJQ2xp",
             "Y2tUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhAKDEFQUF9E",
             "RUVQTElOSxACEg8KC0JSRUFEQ1JVTUJTEAMSEgoOQlJPQURCQU5EX1BMQU4Q",
             "BBIRCg1DQUxMX1RSQUNLSU5HEAUSCQoFQ0FMTFMQBhIaChZDTElDS19PTl9F",
@@ -60,13 +60,13 @@ namespace Google.Ads.GoogleAds.V1.Enums {
             "S19USFJFRRAyEiYKIlNXSVBFQUJMRV9HQUxMRVJZX0FEX1NJVEVMSU5LX0ZP",
             "VVIQMxImCiJTV0lQRUFCTEVfR0FMTEVSWV9BRF9TSVRFTElOS19GSVZFEDQS",
             "DwoLSE9URUxfUFJJQ0UQNRITCg9QUklDRV9FWFRFTlNJT04QNhInCiNIT1RF",
-            "TF9CT09LX09OX0dPT0dMRV9ST09NX1NFTEVDVElPThA3QuMBCiFjb20uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjEuZW51bXNCDkNsaWNrVHlwZVByb3RvUAFa",
-            "Qmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRW51",
-            "bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnByb3Rv",
-            "Mw=="));
+            "TF9CT09LX09OX0dPT0dMRV9ST09NX1NFTEVDVElPThA3Eh8KG1NIT1BQSU5H",
+            "X0NPTVBBUklTT05fTElTVElORxA4QuMBCiFjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjEuZW51bXNCDkNsaWNrVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9l",
+            "bnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVu",
+            "dW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRW51bXPqAiFHb29nbGU6",
+            "OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -403,6 +403,10 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// Book on Google hotel room selection.
         /// </summary>
         [pbr::OriginalName("HOTEL_BOOK_ON_GOOGLE_ROOM_SELECTION")] HotelBookOnGoogleRoomSelection = 55,
+        /// <summary>
+        /// Shopping - Comparison Listing.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_COMPARISON_LISTING")] ShoppingComparisonListing = 56,
       }
 
     }

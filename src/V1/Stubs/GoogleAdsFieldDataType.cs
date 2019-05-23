@@ -26,18 +26,18 @@ namespace Google.Ads.GoogleAds.V1.Enums {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MS9lbnVtcy9nb29nbGVfYWRzX2Zp",
             "ZWxkX2RhdGFfdHlwZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEu",
-            "ZW51bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8izwEKGkdvb2ds",
-            "ZUFkc0ZpZWxkRGF0YVR5cGVFbnVtIrABChZHb29nbGVBZHNGaWVsZERhdGFU",
+            "ZW51bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i2wEKGkdvb2ds",
+            "ZUFkc0ZpZWxkRGF0YVR5cGVFbnVtIrwBChZHb29nbGVBZHNGaWVsZERhdGFU",
             "eXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB0JPT0xFQU4Q",
             "AhIICgREQVRFEAMSCgoGRE9VQkxFEAQSCAoERU5VTRAFEgkKBUZMT0FUEAYS",
             "CQoFSU5UMzIQBxIJCgVJTlQ2NBAIEgsKB01FU1NBR0UQCRIRCg1SRVNPVVJD",
-            "RV9OQU1FEAoSCgoGU1RSSU5HEAtC8AEKIWNvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MS5lbnVtc0IbR29vZ2xlQWRzRmllbGREYXRhVHlwZVByb3RvUAFa",
-            "Qmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjFcRW51",
-            "bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6RW51bXNiBnByb3Rv",
-            "Mw=="));
+            "RV9OQU1FEAoSCgoGU1RSSU5HEAsSCgoGVUlOVDY0EAxC8AEKIWNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MS5lbnVtc0IbR29vZ2xlQWRzRmllbGREYXRh",
+            "VHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
+            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MS9lbnVtcztlbnVtc6ICA0dBQaoCHUdv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYxLkVudW1zygIdR29vZ2xlXEFkc1xHb29n",
+            "bGVBZHNcVjFcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTo6",
+            "RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -229,6 +229,12 @@ namespace Google.Ads.GoogleAds.V1.Enums {
         /// Applicable operators:  =, !=, LIKE, NOT LIKE, IN, NOT IN
         /// </summary>
         [pbr::OriginalName("STRING")] String = 11,
+        /// <summary>
+        /// Maps to google.protobuf.UInt64Value
+        ///
+        /// Applicable operators:  =, !=, &lt;, >, &lt;=, >=, BETWEEN, IN, NOT IN
+        /// </summary>
+        [pbr::OriginalName("UINT64")] Uint64 = 12,
       }
 
     }

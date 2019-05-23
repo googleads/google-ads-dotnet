@@ -167,6 +167,11 @@ namespace Google.Ads.GoogleAds.Lib
                 Environment.SetEnvironmentVariable("http_proxy", config.Proxy.Address.ToString());
             }
 
+            // GRPC uses c-ares DNS resolver, which doesn't seem to work on some Windows machines.
+            // Turn it off for now.
+            // https://github.com/googleads/google-ads-dotnet/issues/59
+            Environment.SetEnvironmentVariable("GRPC_DNS_RESOLVER", "native");
+
             Uri uri = new Uri(config.ServerUrl);
             return new Channel(uri.Host, uri.Port, channelCredentials, null);
         }

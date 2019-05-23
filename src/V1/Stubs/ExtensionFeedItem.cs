@@ -33,7 +33,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "ZW51bXMvZmVlZF9pdGVtX3N0YXR1cy5wcm90bxo7Z29vZ2xlL2Fkcy9nb29n",
             "bGVhZHMvdjEvZW51bXMvZmVlZF9pdGVtX3RhcmdldF9kZXZpY2UucHJvdG8a",
             "Hmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90byKmCgoRRXh0ZW5zaW9uRmVlZEl0ZW0SFQoNcmVz",
+            "bm5vdGF0aW9ucy5wcm90byL+CwoRRXh0ZW5zaW9uRmVlZEl0ZW0SFQoNcmVz",
             "b3VyY2VfbmFtZRgBIAEoCRJWCg5leHRlbnNpb25fdHlwZRgNIAEoDjI+Lmdv",
             "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkV4dGVuc2lvblR5cGVFbnVt",
             "LkV4dGVuc2lvblR5cGUSNQoPc3RhcnRfZGF0ZV90aW1lGAUgASgLMhwuZ29v",
@@ -42,37 +42,42 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             "bGVzGBAgAygLMi4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkFk",
             "U2NoZWR1bGVJbmZvElwKBmRldmljZRgRIAEoDjJMLmdvb2dsZS5hZHMuZ29v",
             "Z2xlYWRzLnYxLmVudW1zLkZlZWRJdGVtVGFyZ2V0RGV2aWNlRW51bS5GZWVk",
-            "SXRlbVRhcmdldERldmljZRJQCgZzdGF0dXMYBCABKA4yQC5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MS5lbnVtcy5GZWVkSXRlbVN0YXR1c0VudW0uRmVlZEl0",
-            "ZW1TdGF0dXMSTgoSc2l0ZWxpbmtfZmVlZF9pdGVtGAIgASgLMjAuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlNpdGVsaW5rRmVlZEl0ZW1IABJh",
-            "ChxzdHJ1Y3R1cmVkX3NuaXBwZXRfZmVlZF9pdGVtGAMgASgLMjkuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjEuY29tbW9uLlN0cnVjdHVyZWRTbmlwcGV0RmVl",
-            "ZEl0ZW1IABJECg1hcHBfZmVlZF9pdGVtGAcgASgLMisuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjEuY29tbW9uLkFwcEZlZWRJdGVtSAASRgoOY2FsbF9mZWVk",
-            "X2l0ZW0YCCABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24u",
-            "Q2FsbEZlZWRJdGVtSAASTAoRY2FsbG91dF9mZWVkX2l0ZW0YCSABKAsyLy5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uQ2FsbG91dEZlZWRJdGVt",
-            "SAASVQoWdGV4dF9tZXNzYWdlX2ZlZWRfaXRlbRgKIAEoCzIzLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5UZXh0TWVzc2FnZUZlZWRJdGVtSAAS",
-            "SAoPcHJpY2VfZmVlZF9pdGVtGAsgASgLMi0uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjEuY29tbW9uLlByaWNlRmVlZEl0ZW1IABJQChNwcm9tb3Rpb25fZmVl",
-            "ZF9pdGVtGAwgASgLMjEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9u",
-            "LlByb21vdGlvbkZlZWRJdGVtSAASTgoSbG9jYXRpb25fZmVlZF9pdGVtGA4g",
-            "ASgLMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkxvY2F0aW9u",
-            "RmVlZEl0ZW1IABJhChxhZmZpbGlhdGVfbG9jYXRpb25fZmVlZF9pdGVtGA8g",
-            "ASgLMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9uLkFmZmlsaWF0",
-            "ZUxvY2F0aW9uRmVlZEl0ZW1IAEILCglleHRlbnNpb25CgwIKJWNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MS5yZXNvdXJjZXNCFkV4dGVuc2lvbkZlZWRJ",
-            "dGVtUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
-            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxL3Jlc291cmNlcztyZXNvdXJjZXOiAgNH",
-            "QUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMS5SZXNvdXJjZXPKAiFHb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMVxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6",
-            "R29vZ2xlQWRzOjpWMTo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "SXRlbVRhcmdldERldmljZRJCChx0YXJnZXRlZF9nZW9fdGFyZ2V0X2NvbnN0",
+            "YW50GBQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlElAKBnN0",
+            "YXR1cxgEIAEoDjJALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxLmVudW1zLkZl",
+            "ZWRJdGVtU3RhdHVzRW51bS5GZWVkSXRlbVN0YXR1cxJOChJzaXRlbGlua19m",
+            "ZWVkX2l0ZW0YAiABKAsyMC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21t",
+            "b24uU2l0ZWxpbmtGZWVkSXRlbUgAEmEKHHN0cnVjdHVyZWRfc25pcHBldF9m",
+            "ZWVkX2l0ZW0YAyABKAsyOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21t",
+            "b24uU3RydWN0dXJlZFNuaXBwZXRGZWVkSXRlbUgAEkQKDWFwcF9mZWVkX2l0",
+            "ZW0YByABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uQXBw",
+            "RmVlZEl0ZW1IABJGCg5jYWxsX2ZlZWRfaXRlbRgIIAEoCzIsLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxLmNvbW1vbi5DYWxsRmVlZEl0ZW1IABJMChFjYWxs",
+            "b3V0X2ZlZWRfaXRlbRgJIAEoCzIvLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "LmNvbW1vbi5DYWxsb3V0RmVlZEl0ZW1IABJVChZ0ZXh0X21lc3NhZ2VfZmVl",
+            "ZF9pdGVtGAogASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEuY29tbW9u",
+            "LlRleHRNZXNzYWdlRmVlZEl0ZW1IABJICg9wcmljZV9mZWVkX2l0ZW0YCyAB",
+            "KAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MS5jb21tb24uUHJpY2VGZWVk",
+            "SXRlbUgAElAKE3Byb21vdGlvbl9mZWVkX2l0ZW0YDCABKAsyMS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MS5jb21tb24uUHJvbW90aW9uRmVlZEl0ZW1IABJO",
+            "ChJsb2NhdGlvbl9mZWVkX2l0ZW0YDiABKAsyMC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5jb21tb24uTG9jYXRpb25GZWVkSXRlbUgAEmEKHGFmZmlsaWF0",
+            "ZV9sb2NhdGlvbl9mZWVkX2l0ZW0YDyABKAsyOS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MS5jb21tb24uQWZmaWxpYXRlTG9jYXRpb25GZWVkSXRlbUgAEjkK",
+            "EXRhcmdldGVkX2NhbXBhaWduGBIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlSAESOQoRdGFyZ2V0ZWRfYWRfZ3JvdXAYEyABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWVIAUILCglleHRlbnNpb25CHAoac2Vy",
+            "dmluZ19yZXNvdXJjZV90YXJnZXRpbmdCgwIKJWNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MS5yZXNvdXJjZXNCFkV4dGVuc2lvbkZlZWRJdGVtUHJvdG9Q",
+            "AVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YxL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMS5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMVxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMTo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V1.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Common.ExtensionsReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.ExtensionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.FeedItemStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V1.Enums.FeedItemTargetDeviceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem), global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem.Parser, new[]{ "ResourceName", "ExtensionType", "StartDateTime", "EndDateTime", "AdSchedules", "Device", "Status", "SitelinkFeedItem", "StructuredSnippetFeedItem", "AppFeedItem", "CallFeedItem", "CalloutFeedItem", "TextMessageFeedItem", "PriceFeedItem", "PromotionFeedItem", "LocationFeedItem", "AffiliateLocationFeedItem" }, new[]{ "Extension" }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem), global::Google.Ads.GoogleAds.V1.Resources.ExtensionFeedItem.Parser, new[]{ "ResourceName", "ExtensionType", "StartDateTime", "EndDateTime", "AdSchedules", "Device", "TargetedGeoTargetConstant", "Status", "SitelinkFeedItem", "StructuredSnippetFeedItem", "AppFeedItem", "CallFeedItem", "CalloutFeedItem", "TextMessageFeedItem", "PriceFeedItem", "PromotionFeedItem", "LocationFeedItem", "AffiliateLocationFeedItem", "TargetedCampaign", "TargetedAdGroup" }, new[]{ "Extension", "ServingResourceTargeting" }, null, null)
           }));
     }
     #endregion
@@ -113,6 +118,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       EndDateTime = other.EndDateTime;
       adSchedules_ = other.adSchedules_.Clone();
       device_ = other.device_;
+      TargetedGeoTargetConstant = other.TargetedGeoTargetConstant;
       status_ = other.status_;
       switch (other.ExtensionCase) {
         case ExtensionOneofCase.SitelinkFeedItem:
@@ -144,6 +150,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           break;
         case ExtensionOneofCase.AffiliateLocationFeedItem:
           AffiliateLocationFeedItem = other.AffiliateLocationFeedItem.Clone();
+          break;
+      }
+
+      switch (other.ServingResourceTargetingCase) {
+        case ServingResourceTargetingOneofCase.TargetedCampaign:
+          TargetedCampaign = other.TargetedCampaign;
+          break;
+        case ServingResourceTargetingOneofCase.TargetedAdGroup:
+          TargetedAdGroup = other.TargetedAdGroup;
           break;
       }
 
@@ -248,6 +263,21 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       get { return device_; }
       set {
         device_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "targeted_geo_target_constant" field.</summary>
+    public const int TargetedGeoTargetConstantFieldNumber = 20;
+    private static readonly pb::FieldCodec<string> _single_targetedGeoTargetConstant_codec = pb::FieldCodec.ForClassWrapper<string>(162);
+    private string targetedGeoTargetConstant_;
+    /// <summary>
+    /// The targeted geo target constant.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TargetedGeoTargetConstant {
+      get { return targetedGeoTargetConstant_; }
+      set {
+        targetedGeoTargetConstant_ = value;
       }
     }
 
@@ -409,6 +439,36 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       }
     }
 
+    /// <summary>Field number for the "targeted_campaign" field.</summary>
+    public const int TargetedCampaignFieldNumber = 18;
+    private static readonly pb::FieldCodec<string> _oneof_targetedCampaign_codec = pb::FieldCodec.ForClassWrapper<string>(146);
+    /// <summary>
+    /// The targeted campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TargetedCampaign {
+      get { return servingResourceTargetingCase_ == ServingResourceTargetingOneofCase.TargetedCampaign ? (string) servingResourceTargeting_ : (string) null; }
+      set {
+        servingResourceTargeting_ = value;
+        servingResourceTargetingCase_ = value == null ? ServingResourceTargetingOneofCase.None : ServingResourceTargetingOneofCase.TargetedCampaign;
+      }
+    }
+
+    /// <summary>Field number for the "targeted_ad_group" field.</summary>
+    public const int TargetedAdGroupFieldNumber = 19;
+    private static readonly pb::FieldCodec<string> _oneof_targetedAdGroup_codec = pb::FieldCodec.ForClassWrapper<string>(154);
+    /// <summary>
+    /// The targeted ad group.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TargetedAdGroup {
+      get { return servingResourceTargetingCase_ == ServingResourceTargetingOneofCase.TargetedAdGroup ? (string) servingResourceTargeting_ : (string) null; }
+      set {
+        servingResourceTargeting_ = value;
+        servingResourceTargetingCase_ = value == null ? ServingResourceTargetingOneofCase.None : ServingResourceTargetingOneofCase.TargetedAdGroup;
+      }
+    }
+
     private object extension_;
     /// <summary>Enum of possible cases for the "extension" oneof.</summary>
     public enum ExtensionOneofCase {
@@ -436,6 +496,25 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       extension_ = null;
     }
 
+    private object servingResourceTargeting_;
+    /// <summary>Enum of possible cases for the "serving_resource_targeting" oneof.</summary>
+    public enum ServingResourceTargetingOneofCase {
+      None = 0,
+      TargetedCampaign = 18,
+      TargetedAdGroup = 19,
+    }
+    private ServingResourceTargetingOneofCase servingResourceTargetingCase_ = ServingResourceTargetingOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ServingResourceTargetingOneofCase ServingResourceTargetingCase {
+      get { return servingResourceTargetingCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearServingResourceTargeting() {
+      servingResourceTargetingCase_ = ServingResourceTargetingOneofCase.None;
+      servingResourceTargeting_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ExtensionFeedItem);
@@ -455,6 +534,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (EndDateTime != other.EndDateTime) return false;
       if(!adSchedules_.Equals(other.adSchedules_)) return false;
       if (Device != other.Device) return false;
+      if (TargetedGeoTargetConstant != other.TargetedGeoTargetConstant) return false;
       if (Status != other.Status) return false;
       if (!object.Equals(SitelinkFeedItem, other.SitelinkFeedItem)) return false;
       if (!object.Equals(StructuredSnippetFeedItem, other.StructuredSnippetFeedItem)) return false;
@@ -466,7 +546,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (!object.Equals(PromotionFeedItem, other.PromotionFeedItem)) return false;
       if (!object.Equals(LocationFeedItem, other.LocationFeedItem)) return false;
       if (!object.Equals(AffiliateLocationFeedItem, other.AffiliateLocationFeedItem)) return false;
+      if (TargetedCampaign != other.TargetedCampaign) return false;
+      if (TargetedAdGroup != other.TargetedAdGroup) return false;
       if (ExtensionCase != other.ExtensionCase) return false;
+      if (ServingResourceTargetingCase != other.ServingResourceTargetingCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -479,6 +562,7 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (endDateTime_ != null) hash ^= EndDateTime.GetHashCode();
       hash ^= adSchedules_.GetHashCode();
       if (Device != 0) hash ^= Device.GetHashCode();
+      if (targetedGeoTargetConstant_ != null) hash ^= TargetedGeoTargetConstant.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
       if (extensionCase_ == ExtensionOneofCase.SitelinkFeedItem) hash ^= SitelinkFeedItem.GetHashCode();
       if (extensionCase_ == ExtensionOneofCase.StructuredSnippetFeedItem) hash ^= StructuredSnippetFeedItem.GetHashCode();
@@ -490,7 +574,10 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (extensionCase_ == ExtensionOneofCase.PromotionFeedItem) hash ^= PromotionFeedItem.GetHashCode();
       if (extensionCase_ == ExtensionOneofCase.LocationFeedItem) hash ^= LocationFeedItem.GetHashCode();
       if (extensionCase_ == ExtensionOneofCase.AffiliateLocationFeedItem) hash ^= AffiliateLocationFeedItem.GetHashCode();
+      if (servingResourceTargetingCase_ == ServingResourceTargetingOneofCase.TargetedCampaign) hash ^= TargetedCampaign.GetHashCode();
+      if (servingResourceTargetingCase_ == ServingResourceTargetingOneofCase.TargetedAdGroup) hash ^= TargetedAdGroup.GetHashCode();
       hash ^= (int) extensionCase_;
+      hash ^= (int) servingResourceTargetingCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -567,6 +654,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
         output.WriteRawTag(136, 1);
         output.WriteEnum((int) Device);
       }
+      if (servingResourceTargetingCase_ == ServingResourceTargetingOneofCase.TargetedCampaign) {
+        _oneof_targetedCampaign_codec.WriteTagAndValue(output, (string) servingResourceTargeting_);
+      }
+      if (servingResourceTargetingCase_ == ServingResourceTargetingOneofCase.TargetedAdGroup) {
+        _oneof_targetedAdGroup_codec.WriteTagAndValue(output, (string) servingResourceTargeting_);
+      }
+      if (targetedGeoTargetConstant_ != null) {
+        _single_targetedGeoTargetConstant_codec.WriteTagAndValue(output, TargetedGeoTargetConstant);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -590,6 +686,9 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       size += adSchedules_.CalculateSize(_repeated_adSchedules_codec);
       if (Device != 0) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Device);
+      }
+      if (targetedGeoTargetConstant_ != null) {
+        size += _single_targetedGeoTargetConstant_codec.CalculateSizeWithTag(TargetedGeoTargetConstant);
       }
       if (Status != 0) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
@@ -624,6 +723,12 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       if (extensionCase_ == ExtensionOneofCase.AffiliateLocationFeedItem) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AffiliateLocationFeedItem);
       }
+      if (servingResourceTargetingCase_ == ServingResourceTargetingOneofCase.TargetedCampaign) {
+        size += _oneof_targetedCampaign_codec.CalculateSizeWithTag(TargetedCampaign);
+      }
+      if (servingResourceTargetingCase_ == ServingResourceTargetingOneofCase.TargetedAdGroup) {
+        size += _oneof_targetedAdGroup_codec.CalculateSizeWithTag(TargetedAdGroup);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -654,6 +759,11 @@ namespace Google.Ads.GoogleAds.V1.Resources {
       adSchedules_.Add(other.adSchedules_);
       if (other.Device != 0) {
         Device = other.Device;
+      }
+      if (other.targetedGeoTargetConstant_ != null) {
+        if (targetedGeoTargetConstant_ == null || other.TargetedGeoTargetConstant != "") {
+          TargetedGeoTargetConstant = other.TargetedGeoTargetConstant;
+        }
       }
       if (other.Status != 0) {
         Status = other.Status;
@@ -718,6 +828,15 @@ namespace Google.Ads.GoogleAds.V1.Resources {
             AffiliateLocationFeedItem = new global::Google.Ads.GoogleAds.V1.Common.AffiliateLocationFeedItem();
           }
           AffiliateLocationFeedItem.MergeFrom(other.AffiliateLocationFeedItem);
+          break;
+      }
+
+      switch (other.ServingResourceTargetingCase) {
+        case ServingResourceTargetingOneofCase.TargetedCampaign:
+          TargetedCampaign = other.TargetedCampaign;
+          break;
+        case ServingResourceTargetingOneofCase.TargetedAdGroup:
+          TargetedAdGroup = other.TargetedAdGroup;
           break;
       }
 
@@ -854,6 +973,21 @@ namespace Google.Ads.GoogleAds.V1.Resources {
           }
           case 136: {
             device_ = (global::Google.Ads.GoogleAds.V1.Enums.FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice) input.ReadEnum();
+            break;
+          }
+          case 146: {
+            TargetedCampaign = _oneof_targetedCampaign_codec.Read(input);
+            break;
+          }
+          case 154: {
+            TargetedAdGroup = _oneof_targetedAdGroup_codec.Read(input);
+            break;
+          }
+          case 162: {
+            string value = _single_targetedGeoTargetConstant_codec.Read(input);
+            if (targetedGeoTargetConstant_ == null || value != "") {
+              TargetedGeoTargetConstant = value;
+            }
             break;
           }
         }
