@@ -15,12 +15,15 @@
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Logging;
 using Google.Ads.GoogleAds.Tests.V1;
+using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V1.Errors;
 using Google.Protobuf;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using NUnit.Framework;
 using System;
+using System.Diagnostics;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace Google.Ads.GoogleAds.Tests.Logging.V1
@@ -77,6 +80,11 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V1
         private const string TEST_CUSTOMER_ID = "1234567890";
 
         /// <summary>
+        /// The customer ID.
+        /// </summary>
+        private const string TEST_PARTIAL_FAILURE_TEXT = "TEST_PARTIAL_FAILURE_TEXT";
+
+        /// <summary>
         /// The request object to send to the service.
         /// </summary>
         private readonly HelloRequest TEST_REQUEST = new HelloRequest()
@@ -91,6 +99,15 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V1
         private readonly HelloResponse TEST_RESPONSE = new HelloResponse()
         {
             Name = "API"
+        };
+
+        /// <summary>
+        /// The response to be returned by the service for partial failures.
+        /// </summary>
+        private readonly HelloResponse TEST_RESPONSE_PARTIAL_FAILURES = new HelloResponse()
+        {
+            Name = "API",
+            PartialFailure = "TEST_PARTIAL_FAILURE_TEXT"
         };
 
         /// <summary>
@@ -125,6 +142,8 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V1
             // Create the test exception.
             TEST_EXCEPTION = TestUtils.CreateRpcException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER,
                 TEST_REQUEST_ID);
+            TraceUtilities.Configure(TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE,
+                new StringWriter(), SourceLevels.All);
         }
 
         /// <summary>
@@ -187,6 +206,31 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V1
         }
 
         /// <summary>
+        /// Tests whether an asynchronous unary call with partial failure response
+        /// is intercepted correctly and partial failures are logged.
+        /// </summary>
+        [Test]
+        public void TestAsyncUnaryCallWithPartialFailure()
+        {
+            ClientInterceptorContext<HelloRequest, HelloResponse> context =
+                GetClientInterceptorContext();
+
+            this.OnLogEventAvailable += delegate (object sender, LogEntry logEntry)
+            {
+                Assert.AreEqual(this.Config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                Assert.AreSame(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                Assert.AreSame(TEST_RESPONSE_METADATA, logEntry.ResponseHeaders);
+                Assert.AreSame(TEST_REQUEST, logEntry.Request);
+                Assert.AreSame(TEST_RESPONSE_PARTIAL_FAILURES, logEntry.Response);
+                Assert.AreEqual(TEST_CUSTOMER_ID, logEntry.CustomerId);
+                Assert.False(logEntry.IsFailure);
+                Assert.AreEqual(TEST_PARTIAL_FAILURE_TEXT, logEntry.PartialFailures);
+            };
+            this.AsyncUnaryCall(TEST_REQUEST, context, ContinuationWithPartialFailures);
+        }
+
+        /// <summary>
         /// Gets the client interceptor context for testing purposes.
         /// </summary>
         /// <returns>The client interceptor context.</returns>
@@ -222,6 +266,22 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V1
             ClientInterceptorContext<HelloRequest, HelloResponse> context)
         {
             Task<HelloResponse> responseTask = Task.FromResult(TEST_RESPONSE);
+            Task<Metadata> responseHeadersTask = Task.FromResult(TEST_RESPONSE_METADATA);
+            return new AsyncUnaryCall<HelloResponse>(responseTask, responseHeadersTask,
+                null, null, null);
+        }
+
+        /// <summary>
+        /// Creates a continuation with test partial failure results.
+        /// </summary>
+        /// <param name="request">The test request.</param>
+        /// <param name="context">The client interceptor context.</param>
+        /// <returns>An async unary call that returns test response and metadata upon completion.
+        /// </returns>
+        private AsyncUnaryCall<HelloResponse> ContinuationWithPartialFailures(HelloRequest request,
+            ClientInterceptorContext<HelloRequest, HelloResponse> context)
+        {
+            Task<HelloResponse> responseTask = Task.FromResult(TEST_RESPONSE_PARTIAL_FAILURES);
             Task<Metadata> responseHeadersTask = Task.FromResult(TEST_RESPONSE_METADATA);
             return new AsyncUnaryCall<HelloResponse>(responseTask, responseHeadersTask,
                 null, null, null);

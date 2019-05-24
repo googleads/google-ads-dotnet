@@ -25,15 +25,15 @@ namespace Google.Ads.GoogleAds.Tests {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CgtIZWxsby5wcm90byIxCgxIZWxsb1JlcXVlc3QSEwoLY3VzdG9tZXJfaWQY",
-            "ASABKAkSDAoEbmFtZRgCIAEoCSIdCg1IZWxsb1Jlc3BvbnNlEgwKBG5hbWUY",
-            "ASABKAkyNgoMSGVsbG9TZXJ2aWNlEiYKBUhlbGxvEg0uSGVsbG9SZXF1ZXN0",
-            "Gg4uSGVsbG9SZXNwb25zZUIdqgIaR29vZ2xlLkFkcy5Hb29nbGVBZHMuVGVz",
-            "dHNiBnByb3RvMw=="));
+            "ASABKAkSDAoEbmFtZRgCIAEoCSI2Cg1IZWxsb1Jlc3BvbnNlEgwKBG5hbWUY",
+            "ASABKAkSFwoPcGFydGlhbF9mYWlsdXJlGAIgASgJMjYKDEhlbGxvU2Vydmlj",
+            "ZRImCgVIZWxsbxINLkhlbGxvUmVxdWVzdBoOLkhlbGxvUmVzcG9uc2VCHaoC",
+            "Gkdvb2dsZS5BZHMuR29vZ2xlQWRzLlRlc3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloRequest), global::Google.Ads.GoogleAds.Tests.HelloRequest.Parser, new[]{ "CustomerId", "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloResponse), global::Google.Ads.GoogleAds.Tests.HelloResponse.Parser, new[]{ "Name" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloResponse), global::Google.Ads.GoogleAds.Tests.HelloResponse.Parser, new[]{ "Name", "PartialFailure" }, null, null, null)
           }));
     }
     #endregion
@@ -223,6 +223,7 @@ namespace Google.Ads.GoogleAds.Tests {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public HelloResponse(HelloResponse other) : this() {
       name_ = other.name_;
+      partialFailure_ = other.partialFailure_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -242,6 +243,17 @@ namespace Google.Ads.GoogleAds.Tests {
       }
     }
 
+    /// <summary>Field number for the "partial_failure" field.</summary>
+    public const int PartialFailureFieldNumber = 2;
+    private string partialFailure_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PartialFailure {
+      get { return partialFailure_; }
+      set {
+        partialFailure_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as HelloResponse);
@@ -256,6 +268,7 @@ namespace Google.Ads.GoogleAds.Tests {
         return true;
       }
       if (Name != other.Name) return false;
+      if (PartialFailure != other.PartialFailure) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -263,6 +276,7 @@ namespace Google.Ads.GoogleAds.Tests {
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (PartialFailure.Length != 0) hash ^= PartialFailure.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -280,6 +294,10 @@ namespace Google.Ads.GoogleAds.Tests {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
+      if (PartialFailure.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartialFailure);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -290,6 +308,9 @@ namespace Google.Ads.GoogleAds.Tests {
       int size = 0;
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (PartialFailure.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartialFailure);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -305,6 +326,9 @@ namespace Google.Ads.GoogleAds.Tests {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
+      if (other.PartialFailure.Length != 0) {
+        PartialFailure = other.PartialFailure;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -318,6 +342,10 @@ namespace Google.Ads.GoogleAds.Tests {
             break;
           case 10: {
             Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            PartialFailure = input.ReadString();
             break;
           }
         }

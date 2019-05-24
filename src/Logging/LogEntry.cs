@@ -88,6 +88,15 @@ namespace Google.Ads.GoogleAds.Logging
         }
 
         /// <summary>
+        /// Gets or sets the partial failures text.
+        /// </summary>
+        public string PartialFailures
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Gets or sets the request headers.
         /// </summary>
         public Metadata RequestHeaders
@@ -214,6 +223,11 @@ namespace Google.Ads.GoogleAds.Logging
                 {
                     builder.AppendFormat("\r\n\r\n{0}\r\n",
                         formatter.MaskContents(Response.ToString(), null));
+
+                    if (!string.IsNullOrEmpty(PartialFailures))
+                    {
+                        builder.Append($"\r\nPartial failures: {PartialFailures}\r\n");
+                    }
                 }
 
                 builder.AppendFormat("----------------END API CALL----------------\r\n");
