@@ -130,22 +130,36 @@ namespace Google.Ads.GoogleAds.Lib
         {
             TServiceSetting serviceSettings = new TServiceSetting();
 
-            // Service settings have a client-specific callsetting, and
-            // one callsetting per method. Since these are all kept separate
-            // and not merged, we will instead set each of them using reflection.
-            PropertyInfo[] callSettingProperties = serviceSettings.GetType()
+            SetAllPropertySettings(serviceSettings, serviceContext.CallSettings);
+            SetAllPropertySettings(serviceSettings, serviceContext.OperationsSettings);
+            return serviceSettings;
+        }
+
+        /// <summary>
+        /// Sets all property settings of a given type with a given value.
+        /// </summary>
+        /// <typeparam name="TServiceSetting">The type of the service setting.</typeparam>
+        /// <typeparam name="TPropertyType">The type of the property to be scanned for.</typeparam>
+        /// <param name="serviceSettings">The service settings object whose properties should be
+        /// set.</param>
+        /// <param name="propertyValue">The property value to be set.</param>
+        private static void SetAllPropertySettings<TServiceSetting, TPropertyType>(
+            TServiceSetting serviceSettings, TPropertyType propertyValue)
+            where TServiceSetting : ServiceSettingsBase, new()
+        {
+            PropertyInfo[] settingProperties = serviceSettings.GetType()
                 .GetProperties(BindingFlags.Public | BindingFlags.Instance)
                 .Where(delegate (PropertyInfo x)
                 {
-                    return x.PropertyType == typeof(CallSettings) && x.Name != "CallSettings";
+                    return x.PropertyType == typeof(TPropertyType) && x.Name != "CallSettings";
                 }
             ).ToArray();
 
-            foreach (PropertyInfo pi in callSettingProperties)
+            foreach (PropertyInfo pi in settingProperties)
             {
-                pi.SetValue(serviceSettings, serviceContext.CallSettings);
+                pi.SetValue(serviceSettings, propertyValue);
             }
-            return serviceSettings;
+            return;
         }
 
         /// <summary>
