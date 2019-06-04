@@ -213,4 +213,31 @@ Headers: {
   <data name="SummarySuccessLog" xml:space="preserve">
     <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=OK, Detail="")</value>
   </data>
+  <data name="DetailedPartialFailureLog" xml:space="preserve">
+    <value>---------------BEGIN API CALL---------------
+
+Request
+-------
+
+Method Name: TEST_METHOD
+Host: TEST_HOST
+Headers: {
+  "developer-token": "REDACTED",
+  "test_key1": "TEST_VALUE1"
+}
+
+{ "customerId": "1234567890", "name": "API" }
+
+Response
+--------
+Headers: {
+  "request-id": "TEST_REQUEST_ID",
+  "test_key2": "TEST_VALUE2"
+}
+
+{ "name": "API" }
+
+Partial failures: PARTIAL_FAILURES
+----------------END API CALL----------------</value>
+  </data>
 </root>

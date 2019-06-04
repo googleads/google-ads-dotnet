@@ -9,6 +9,7 @@ message HelloRequest {
 
 message HelloResponse {
   string name = 1;
+  string partial_failure = 2;
 }
 
 service HelloService {

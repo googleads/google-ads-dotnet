@@ -17,7 +17,9 @@ using Google.Ads.GoogleAds.Util;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Google.Ads.GoogleAds.Logging
@@ -121,13 +123,32 @@ namespace Google.Ads.GoogleAds.Logging
                         Response = (oldTask.IsFaulted) ? default(TResponse) : oldTask.Result,
                         Exception = GetGoogleAdsException(oldTask.Exception),
                         IsFailure = oldTask.IsFaulted,
-                        CustomerId = GetCustomerId(request)
+                        CustomerId = GetCustomerId(request),
+                        PartialFailures = GetPartialFailures(oldTask.Result)
                     };
                     OnLogEventAvailable?.Invoke(this, logEntry);
                 }
             });
             t.Wait();
             return call;
+        }
+
+        /// <summary>
+        /// Gets the partial failures.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <returns></returns>
+        private string GetPartialFailures(object response)
+        {
+            try
+            {
+                return response.GetType().GetProperty("PartialFailure")
+                    .GetValue(response).ToString();
+            }
+            catch
+            {
+                return "";
+            }
         }
 
         /// <summary>

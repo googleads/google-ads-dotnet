@@ -51,6 +51,11 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V1
         /// </summary>
         private const string TEST_CUSTOMER_ID = "1234567890";
 
+        /// <summary>
+        /// The partial failures.
+        /// </summary>
+        private const string TEST_PARTIAL_FAILURES = "PARTIAL_FAILURES";
+
         #endregion constants related to summary logs
 
         #region miscellaneous keys for metadata.
@@ -88,7 +93,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V1
         /// </summary>
         private readonly HelloResponse TEST_RESPONSE = new HelloResponse()
         {
-            Name = "API"
+            Name = "API",
         };
 
         #endregion constants for request and response data.
@@ -178,6 +183,31 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V1
 
             Assert.AreEqual(TestResources.DetailedFailureLog.Trim(), logEntry.DetailedLog.Trim());
             Assert.AreEqual(TestResources.SummaryFailureLog.Trim(), logEntry.SummaryLog.Trim());
+        }
+
+        /// <summary>
+        /// Test for Log entry files for a successful API call with partial failures.
+        /// </summary>
+        [Test]
+        public void TestPartialFailureLogs()
+        {
+            LogEntry logEntry = new LogEntry()
+            {
+                Host = TEST_HOST,
+                Method = TEST_METHOD,
+                RequestHeaders = TEST_REQUEST_METADATA,
+                Request = TEST_REQUEST,
+                ResponseHeaders = TEST_RESPONSE_METADATA,
+                Response = TEST_RESPONSE,
+                Exception = TEST_EXCEPTION,
+                IsFailure = false,
+                CustomerId = TEST_CUSTOMER_ID,
+                PartialFailures = TEST_PARTIAL_FAILURES
+            };
+
+            Assert.AreEqual(TestResources.DetailedPartialFailureLog.Trim(),
+                logEntry.DetailedLog.Trim());
+            Assert.AreEqual(TestResources.SummarySuccessLog.Trim(), logEntry.SummaryLog.Trim());
         }
     }
 }
