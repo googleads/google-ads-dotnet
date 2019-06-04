@@ -149,6 +149,39 @@ namespace Google.Ads.GoogleAds.Tests {
         ///}
         ///
         ///{ &quot;name&quot;: &quot;API&quot; }
+        ///
+        ///Partial failures: PARTIAL_FAILURES
+        ///----------------END API CALL----------------.
+        /// </summary>
+        internal static string DetailedPartialFailureLog {
+            get {
+                return ResourceManager.GetString("DetailedPartialFailureLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ---------------BEGIN API CALL---------------
+        ///
+        ///Request
+        ///-------
+        ///
+        ///Method Name: TEST_METHOD
+        ///Host: TEST_HOST
+        ///Headers: {
+        ///  &quot;developer-token&quot;: &quot;REDACTED&quot;,
+        ///  &quot;test_key1&quot;: &quot;TEST_VALUE1&quot;
+        ///}
+        ///
+        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot; }
+        ///
+        ///Response
+        ///--------
+        ///Headers: {
+        ///  &quot;request-id&quot;: &quot;TEST_REQUEST_ID&quot;,
+        ///  &quot;test_key2&quot;: &quot;TEST_VALUE2&quot;
+        ///}
+        ///
+        ///{ &quot;name&quot;: &quot;API&quot; }
         ///----------------END API CALL----------------.
         /// </summary>
         internal static string DetailedSuccessLog {
