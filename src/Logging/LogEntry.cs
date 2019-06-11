@@ -247,7 +247,7 @@ namespace Google.Ads.GoogleAds.Logging
             {
                 foreach (Metadata.Entry entry in metadata)
                 {
-                    headers.Add(entry.Key, entry.Value);
+                    headers[entry.Key] = entry.Value;
                 }
             }
             return JsonConvert.SerializeObject(headers);

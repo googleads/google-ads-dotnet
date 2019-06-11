@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Api.Gax.Grpc;
+using Google.LongRunning;
 
 namespace Google.Ads.GoogleAds.Lib
 {
@@ -47,6 +48,20 @@ namespace Google.Ads.GoogleAds.Lib
         {
             get;
             set;
+        }
+
+        /// <summary>
+        /// Gets the LRO settings.
+        /// </summary>
+        public OperationsSettings OperationsSettings
+        {
+            get
+            {
+                return new OperationsSettings()
+                {
+                    CallSettings = CallSettings
+                };
+            }
         }
 
         /// <summary>
