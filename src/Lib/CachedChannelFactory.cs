@@ -31,26 +31,26 @@ namespace Google.Ads.GoogleAds.Lib
         private static Dictionary<string, Channel> cache = new Dictionary<string, Channel>();
 
         /// <summary>
-        /// The grpc setting name for maximum message length that can be received.
+        /// The gRPC setting name for maximum message length in bytes that can be received.
         /// </summary>
-        private const string GRPC_MAX_RECEIVE_MESSAGE_LENGTH_SETTING =
+        private const string GRPC_MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES_SETTING_NAME =
             "grpc.max_receive_message_length";
 
         /// <summary>
-        /// The maximum message length that the client library can receive (64 MB).
+        /// The maximum message length in bytes that the client library can receive (64 MB).
         /// </summary>
-        private const long MAX_RECEIVE_MESSAGE_LENGTH = 64 * 1024 * 1024;
+        private const long MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES = 64 * 1024 * 1024;
 
         /// <summary>
-        /// The grpc setting name for maximum metadata size that can be handled.
+        /// The gRPC setting name for maximum metadata size in bytes that can be handled.
         /// </summary>
-        private const string GRPC_MAX_METADATA_SIZE_SETTING =
+        private const string GRPC_MAX_METADATA_SIZE_IN_BYTES_SETTING_NAME =
             "grpc.max_metadata_size";
 
         /// <summary>
-        /// The maximum metadata size that the client library can receive (16 MB).
+        /// The maximum metadata size in bytes that the client library can receive (16 MB).
         /// </summary>
-        private const long MAX_METADATA_SIZE = 16 * 1024 * 1024;
+        private const long MAX_METADATA_SIZE_IN_BYTES = 16 * 1024 * 1024;
 
         /// <summary>
         /// Gets the channel for the specified configuration.
@@ -115,10 +115,10 @@ namespace Google.Ads.GoogleAds.Lib
             return new Channel(uri.Host, uri.Port, channelCredentials,
                 new List<ChannelOption>()
                 {
-                    new ChannelOption(GRPC_MAX_RECEIVE_MESSAGE_LENGTH_SETTING,
-                        MAX_RECEIVE_MESSAGE_LENGTH.ToString()),
-                    new ChannelOption(GRPC_MAX_METADATA_SIZE_SETTING,
-                        MAX_METADATA_SIZE.ToString()),
+                    new ChannelOption(GRPC_MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES_SETTING_NAME,
+                        MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES.ToString()),
+                    new ChannelOption(GRPC_MAX_METADATA_SIZE_IN_BYTES_SETTING_NAME,
+                        MAX_METADATA_SIZE_IN_BYTES.ToString()),
                 }
             );
         }
