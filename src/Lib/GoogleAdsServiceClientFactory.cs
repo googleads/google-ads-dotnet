@@ -42,6 +42,22 @@ namespace Google.Ads.GoogleAds.Lib
                 where TServiceSetting : ServiceSettingsBase, new()
                 where TService : GoogleAdsServiceClientBase
         {
+            return GetService(serviceTemplate, null, config);
+        }
+
+        /// <summary>
+        /// Gets an instance of the specified service.
+        /// </summary>
+        /// <param name="serviceTemplate">The service template.</param>
+        /// <param name="userCallSettings">The call settings.</param>
+        /// <param name="config">The configuration.</param>
+        /// <returns>A service instance.</returns>
+        internal TService GetService<TService, TServiceSetting>(
+            ServiceTemplate<TService, TServiceSetting> serviceTemplate,
+                CallSettings userCallSettings, GoogleAdsConfig config)
+                where TServiceSetting : ServiceSettingsBase, new()
+                where TService : GoogleAdsServiceClientBase
+        {
             Channel channel = CreateChannel(config);
             CallInvoker callInvoker = channel.Intercept(
                 LoggingInterceptor.GetInstance(config));
@@ -50,7 +66,8 @@ namespace Google.Ads.GoogleAds.Lib
             GoogleAdsServiceContext serviceContext = new GoogleAdsServiceContext();
 
             // Build the call settings.
-            CallSettings callSettings = CreateCallSettings<TServiceSetting>(config, serviceContext);
+            CallSettings callSettings = CreateCallSettings<TServiceSetting>(
+                userCallSettings, config, serviceContext);
             serviceContext.CallSettings = callSettings;
 
             // Create the service settings.
@@ -113,11 +130,12 @@ namespace Google.Ads.GoogleAds.Lib
         /// Creates the call settings.
         /// </summary>
         /// <typeparam name="TServiceSetting">The type of the service setting.</typeparam>
+        /// <param name="userCallSettings">The user call settings.</param>
         /// <param name="config">The configuration.</param>
         /// <param name="serviceContext">The service context.</param>
         /// <returns>The call settings.</returns>
-        private CallSettings CreateCallSettings<TServiceSetting>(GoogleAdsConfig config,
-            GoogleAdsServiceContext serviceContext)
+        private CallSettings CreateCallSettings<TServiceSetting>(CallSettings userCallSettings,
+            GoogleAdsConfig config, GoogleAdsServiceContext serviceContext)
             where TServiceSetting : ServiceSettingsBase, new()
         {
             // Get the default call settings from the generated stubs.
@@ -126,6 +144,13 @@ namespace Google.Ads.GoogleAds.Lib
             // Override various parameters with configuration parameters.
             callSettings = UpdateCallSettingsWithConfigParameters(callSettings,
                 config, serviceContext);
+
+            // If the user has provided a call settings at the runtime, then override specific
+            // settings from there.
+            if (userCallSettings != null)
+            {
+                callSettings = callSettings.MergedWith(userCallSettings);
+            }
 
             return callSettings;
         }
