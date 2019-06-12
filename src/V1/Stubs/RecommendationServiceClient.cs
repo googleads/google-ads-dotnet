@@ -91,13 +91,13 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// <remarks>
         /// The "Default" retry backoff for <see cref="RecommendationServiceClient"/> RPC methods is defined as:
         /// <list type="bullet">
-        /// <item><description>Initial delay: 100 milliseconds</description></item>
+        /// <item><description>Initial delay: 5000 milliseconds</description></item>
         /// <item><description>Maximum delay: 60000 milliseconds</description></item>
         /// <item><description>Delay multiplier: 1.3</description></item>
         /// </list>
         /// </remarks>
         public static gaxgrpc::BackoffSettings GetDefaultRetryBackoff() => new gaxgrpc::BackoffSettings(
-            delay: sys::TimeSpan.FromMilliseconds(100),
+            delay: sys::TimeSpan.FromMilliseconds(5000),
             maxDelay: sys::TimeSpan.FromMilliseconds(60000),
             delayMultiplier: 1.3
         );
@@ -111,14 +111,14 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// <remarks>
         /// The "Default" timeout backoff for <see cref="RecommendationServiceClient"/> RPC methods is defined as:
         /// <list type="bullet">
-        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 3600000 milliseconds</description></item>
         /// <item><description>Timeout multiplier: 1.0</description></item>
-        /// <item><description>Maximum timeout: 20000 milliseconds</description></item>
+        /// <item><description>Maximum timeout: 3600000 milliseconds</description></item>
         /// </list>
         /// </remarks>
         public static gaxgrpc::BackoffSettings GetDefaultTimeoutBackoff() => new gaxgrpc::BackoffSettings(
-            delay: sys::TimeSpan.FromMilliseconds(20000),
-            maxDelay: sys::TimeSpan.FromMilliseconds(20000),
+            delay: sys::TimeSpan.FromMilliseconds(3600000),
+            maxDelay: sys::TimeSpan.FromMilliseconds(3600000),
             delayMultiplier: 1.0
         );
 
@@ -130,25 +130,25 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// The default <c>RecommendationServiceClient.GetRecommendation</c> and
         /// <c>RecommendationServiceClient.GetRecommendationAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
         /// <list type="bullet">
-        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Initial retry delay: 5000 milliseconds</description></item>
         /// <item><description>Retry delay multiplier: 1.3</description></item>
         /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
-        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 3600000 milliseconds</description></item>
         /// <item><description>Timeout multiplier: 1.0</description></item>
-        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// <item><description>Timeout maximum delay: 3600000 milliseconds</description></item>
         /// </list>
         /// Retry will be attempted on the following response status codes:
         /// <list>
         /// <item><description><see cref="grpccore::StatusCode.DeadlineExceeded"/></description></item>
         /// <item><description><see cref="grpccore::StatusCode.Unavailable"/></description></item>
         /// </list>
-        /// Default RPC expiration is 600000 milliseconds.
+        /// Default RPC expiration is 3600000 milliseconds.
         /// </remarks>
         public gaxgrpc::CallSettings GetRecommendationSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
             gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
                 retryBackoff: GetDefaultRetryBackoff(),
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
-                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(3600000)),
                 retryFilter: IdempotentRetryFilter
             )));
 
@@ -160,24 +160,24 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// The default <c>RecommendationServiceClient.ApplyRecommendation</c> and
         /// <c>RecommendationServiceClient.ApplyRecommendationAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
         /// <list type="bullet">
-        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Initial retry delay: 5000 milliseconds</description></item>
         /// <item><description>Retry delay multiplier: 1.3</description></item>
         /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
-        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 3600000 milliseconds</description></item>
         /// <item><description>Timeout multiplier: 1.0</description></item>
-        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// <item><description>Timeout maximum delay: 3600000 milliseconds</description></item>
         /// </list>
         /// Retry will be attempted on the following response status codes:
         /// <list>
         /// <item><description>No status codes</description></item>
         /// </list>
-        /// Default RPC expiration is 600000 milliseconds.
+        /// Default RPC expiration is 3600000 milliseconds.
         /// </remarks>
         public gaxgrpc::CallSettings ApplyRecommendationSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
             gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
                 retryBackoff: GetDefaultRetryBackoff(),
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
-                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(3600000)),
                 retryFilter: NonIdempotentRetryFilter
             )));
 
@@ -189,24 +189,24 @@ namespace Google.Ads.GoogleAds.V1.Services
         /// The default <c>RecommendationServiceClient.DismissRecommendation</c> and
         /// <c>RecommendationServiceClient.DismissRecommendationAsync</c> <see cref="gaxgrpc::RetrySettings"/> are:
         /// <list type="bullet">
-        /// <item><description>Initial retry delay: 100 milliseconds</description></item>
+        /// <item><description>Initial retry delay: 5000 milliseconds</description></item>
         /// <item><description>Retry delay multiplier: 1.3</description></item>
         /// <item><description>Retry maximum delay: 60000 milliseconds</description></item>
-        /// <item><description>Initial timeout: 20000 milliseconds</description></item>
+        /// <item><description>Initial timeout: 3600000 milliseconds</description></item>
         /// <item><description>Timeout multiplier: 1.0</description></item>
-        /// <item><description>Timeout maximum delay: 20000 milliseconds</description></item>
+        /// <item><description>Timeout maximum delay: 3600000 milliseconds</description></item>
         /// </list>
         /// Retry will be attempted on the following response status codes:
         /// <list>
         /// <item><description>No status codes</description></item>
         /// </list>
-        /// Default RPC expiration is 600000 milliseconds.
+        /// Default RPC expiration is 3600000 milliseconds.
         /// </remarks>
         public gaxgrpc::CallSettings DismissRecommendationSettings { get; set; } = gaxgrpc::CallSettings.FromCallTiming(
             gaxgrpc::CallTiming.FromRetry(new gaxgrpc::RetrySettings(
                 retryBackoff: GetDefaultRetryBackoff(),
                 timeoutBackoff: GetDefaultTimeoutBackoff(),
-                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(600000)),
+                totalExpiration: gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(3600000)),
                 retryFilter: NonIdempotentRetryFilter
             )));
 
