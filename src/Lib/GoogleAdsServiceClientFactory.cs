@@ -14,14 +14,15 @@
 
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Logging;
-using Google.Api.Gax;
 using Google.Api.Gax.Grpc;
 using Grpc.Auth;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace Google.Ads.GoogleAds.Lib
 {
@@ -30,37 +31,6 @@ namespace Google.Ads.GoogleAds.Lib
     /// </summary>
     internal class GoogleAdsServiceClientFactory
     {
-        /// <summary>
-        /// The minimum backoff delay in milliseconds.
-        /// </summary>
-        private const int MINIMUM_BACKOFF_DELAY = 30000;
-
-        /// <summary>
-        /// The maximum backoff delay in milliseconds.
-        /// </summary>
-        private const int MAXIMUM_BACKOFF_DELAY = 60000;
-
-        /// <summary>
-        /// The backoff delay multiplier.
-        /// </summary>
-        private const double BACKOFF_DELAY_MULTIPLIER = 1.2;
-
-        /// <summary>
-        /// The backoff settings for retryable errors.
-        /// </summary>
-        private static readonly BackoffSettings backoffSettings = new BackoffSettings(
-            TimeSpan.FromMilliseconds(MINIMUM_BACKOFF_DELAY),
-            TimeSpan.FromMilliseconds(MAXIMUM_BACKOFF_DELAY),
-            BACKOFF_DELAY_MULTIPLIER
-        );
-
-        /// <summary>
-        /// Default set of exceptions to be retried.
-        /// </summary>
-        private static readonly Predicate<RpcException> retryFilter =
-            RetrySettings.FilterForStatusCodes(StatusCode.DeadlineExceeded,
-                StatusCode.Unavailable);
-
         /// <summary>
         /// Gets an instance of the specified service.
         /// </summary>
@@ -76,46 +46,23 @@ namespace Google.Ads.GoogleAds.Lib
             CallInvoker callInvoker = channel.Intercept(
                 LoggingInterceptor.GetInstance(config));
 
-            GoogleAdsServiceContext serviceContext = CreateServiceContext(config);
+            // Build a service context to bind the service, configuration and CallSettings.
+            GoogleAdsServiceContext serviceContext = new GoogleAdsServiceContext();
+
+            // Build the call settings.
+            CallSettings callSettings = CreateCallSettings<TServiceSetting>(config, serviceContext);
+            serviceContext.CallSettings = callSettings;
+
+            // Create the service settings.
             TServiceSetting serviceSettings = CreateServiceSettings<TServiceSetting>(
                 serviceContext);
+
+            // Create the service.
             TService service = Create<TService, TServiceSetting>(
                 callInvoker, serviceSettings);
             serviceContext.Service = service;
             service.ServiceContext = serviceContext;
             return service;
-        }
-
-        /// <summary>
-        /// Creates a service context that binds the service, callsettings and the client.
-        /// </summary>
-        /// <param name="config">The configuration.</param>
-        /// <returns>The service context.</returns>
-        private GoogleAdsServiceContext CreateServiceContext(GoogleAdsConfig config)
-        {
-            GoogleAdsServiceContext serviceContext = new GoogleAdsServiceContext();
-            CallSettings callSettings = CallSettings.FromCallTiming(
-                CallTiming.FromRetry(new RetrySettings(
-                    retryBackoff: backoffSettings,
-                    timeoutBackoff: backoffSettings,
-                    totalExpiration: Expiration.FromTimeout(TimeSpan.FromMilliseconds(
-                        config.Timeout)),
-                    retryFilter: retryFilter
-                )))
-                .WithHeader(GoogleAdsConfig.DEVELOPER_TOKEN_KEYNAME, config.DeveloperToken)
-                .WithResponseMetadataHandler(delegate (Metadata metadata)
-                {
-                    GoogleAdsResponseMetadata responseMetadata = new GoogleAdsResponseMetadata(metadata);
-                    serviceContext.OnResponseMetadataReceived(responseMetadata);
-                });
-
-            if (!string.IsNullOrEmpty(config.LoginCustomerId))
-            {
-                callSettings = callSettings.WithHeader("login-customer-id", config.LoginCustomerId);
-            }
-
-            serviceContext.CallSettings = callSettings;
-            return serviceContext;
         }
 
         /// <summary>
@@ -160,6 +107,57 @@ namespace Google.Ads.GoogleAds.Lib
                 pi.SetValue(serviceSettings, propertyValue);
             }
             return;
+        }
+
+        /// <summary>
+        /// Creates the call settings.
+        /// </summary>
+        /// <typeparam name="TServiceSetting">The type of the service setting.</typeparam>
+        /// <param name="config">The configuration.</param>
+        /// <param name="serviceContext">The service context.</param>
+        /// <returns>The call settings.</returns>
+        private CallSettings CreateCallSettings<TServiceSetting>(GoogleAdsConfig config,
+            GoogleAdsServiceContext serviceContext)
+            where TServiceSetting : ServiceSettingsBase, new()
+        {
+            // Get the default call settings from the generated stubs.
+            CallSettings callSettings = new TServiceSetting().CallSettings;
+
+            // Override various parameters with configuration parameters.
+            callSettings = UpdateCallSettingsWithConfigParameters(callSettings,
+                config, serviceContext);
+
+            return callSettings;
+        }
+
+        /// <summary>
+        /// Updates the call settings with configuration parameters.
+        /// </summary>
+        /// <param name="callSettings">The call settings.</param>
+        /// <param name="config">The configuration.</param>
+        /// <param name="serviceContext">The service context.</param>
+        /// <returns></returns>
+        private CallSettings UpdateCallSettingsWithConfigParameters(CallSettings callSettings,
+                    GoogleAdsConfig config, GoogleAdsServiceContext serviceContext)
+        {
+            callSettings = callSettings.WithHeader(GoogleAdsConfig.DEVELOPER_TOKEN_KEYNAME,
+                config.DeveloperToken)
+                .WithResponseMetadataHandler(delegate (Metadata metadata)
+                {
+                    GoogleAdsResponseMetadata responseMetadata =
+                        new GoogleAdsResponseMetadata(metadata);
+                    serviceContext.OnResponseMetadataReceived(responseMetadata);
+                });
+
+            if (!string.IsNullOrEmpty(config.LoginCustomerId))
+            {
+                callSettings = callSettings.WithHeader("login-customer-id", config.LoginCustomerId);
+            }
+
+            callSettings = callSettings.WithCallTiming(CallTiming.FromTimeout(
+                TimeSpan.FromMilliseconds(config.Timeout)));
+
+            return callSettings;
         }
 
         /// <summary>
