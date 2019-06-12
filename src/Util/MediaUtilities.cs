@@ -26,9 +26,9 @@ namespace Google.Ads.GoogleAds.Util
     public static class MediaUtilities
     {
         /// <summary>
-        /// Retrieves an asset from the web given its url.
+        /// Retrieves an asset from the web given its URL.
         /// </summary>
-        /// <param name="assetUrl">The url of the asset to be retrieved.</param>
+        /// <param name="assetUrl">The URL of the asset to be retrieved.</param>
         /// <param name="config">The application configuration instance.</param>
         /// <returns>Asset data, as an array of bytes.</returns>
         /// <exception cref="ArgumentNullException">Thrown if
@@ -59,9 +59,9 @@ namespace Google.Ads.GoogleAds.Util
         }
 
         /// <summary>
-        /// Retrieves an asset from the web given its url.
+        /// Retrieves an asset from the web given its URL.
         /// </summary>
-        /// <param name="assetUrl">The url of the asset to be retrieved.</param>
+        /// <param name="assetUrl">The URL of the asset to be retrieved.</param>
         /// <param name="config">The application configuration instance.</param>
         /// <returns>Asset data, as an array of bytes.</returns>
         /// <exception cref="ArgumentNullException">Thrown if
