@@ -167,9 +167,6 @@ namespace Google.Ads.GoogleAds.Lib
         /// <returns>The new channel.</returns>
         private Channel CreateChannel(GoogleAdsConfig config)
         {
-            ChannelCredentials channelCredentials =
-                GoogleGrpcCredentials.ToChannelCredentials(config.Credentials);
-
             if (config.Proxy == null)
             {
                 Environment.SetEnvironmentVariable("http_proxy", null);
@@ -184,8 +181,7 @@ namespace Google.Ads.GoogleAds.Lib
             // https://github.com/googleads/google-ads-dotnet/issues/59
             Environment.SetEnvironmentVariable("GRPC_DNS_RESOLVER", "native");
 
-            Uri uri = new Uri(config.ServerUrl);
-            return new Channel(uri.Host, uri.Port, channelCredentials, null);
+            return CachedChannelFactory.GetChannel(config);
         }
 
         /// <summary>
