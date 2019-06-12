@@ -49,7 +49,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // ID of the campaign for which dynamic page feeds are added.
-            long campaignId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
 
             // ID of the ad group for which dynamic page feeds are added.
             long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
@@ -89,8 +89,9 @@ namespace Google.Ads.GoogleAds.Examples.V1
                 String feedResourceName = CreateFeed(client, customerId);
                 Dictionary<DsaPageFeedCriterionField, FeedAttribute> feedAttributes =
                   GetFeed(client, customerId, feedResourceName);
-                CreateFeedMapping(client, customerId, feedAttributes, feedResourceName);
-                CreateFeedItems(client, customerId, feedAttributes, feedResourceName, dsaPageUrlLabel);
+                CreateFeedMapping(client, customerId, feedResourceName, feedAttributes);
+                CreateFeedItems(client, customerId, feedResourceName, feedAttributes,
+                    dsaPageUrlLabel);
 
                 // Associates the page feed with the campaign.
                 UpdateCampaignDsaSetting(client, customerId, feedResourceName, campaignId);
@@ -98,7 +99,8 @@ namespace Google.Ads.GoogleAds.Examples.V1
                 // Optional: Targets web pages matching the feed's label in the ad group.
                 AddDsaTarget(client, customerId, adGroupId, dsaPageUrlLabel);
 
-                Console.WriteLine($"Dynamic page feed setup is complete for campaign ID {campaignId}");
+                Console.WriteLine($"Dynamic page feed setup is complete for campaign " +
+                    $"ID {campaignId}");
             }
             catch (GoogleAdsException e)
             {
@@ -223,8 +225,9 @@ namespace Google.Ads.GoogleAds.Examples.V1
         /// </param>
         /// <param name="feedAttributes">The feed attributes.</param>
         private void CreateFeedMapping(GoogleAdsClient client, long customerId,
-            Dictionary<DsaPageFeedCriterionField, FeedAttribute> feedAttributes,
-            string feedResourceName)
+            string feedResourceName,
+             Dictionary<DsaPageFeedCriterionField, FeedAttribute> feedAttributes
+        )
         {
             // Get the FeedMappingService.
             FeedMappingServiceClient feedMappingService = client.GetService(
@@ -280,8 +283,9 @@ namespace Google.Ads.GoogleAds.Examples.V1
         /// <param name="feedAttributes">The feed attributes.</param>
         /// <param name="dsaPageUrlLabel">The DSA page URL label.</param>
         private void CreateFeedItems(GoogleAdsClient client, long customerId,
+            string feedResourceName,
             Dictionary<DsaPageFeedCriterionField, FeedAttribute> feedAttributes,
-            string feedResourceName, string dsaPageUrlLabel)
+            string dsaPageUrlLabel)
         {
             // Get the FeedItemService.
             FeedItemServiceClient feedItemService = client.GetService(

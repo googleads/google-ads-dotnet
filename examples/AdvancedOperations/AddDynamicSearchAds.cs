@@ -33,7 +33,7 @@ using static Google.Ads.GoogleAds.V1.Resources.Campaign.Types;
 namespace Google.Ads.GoogleAds.Examples.V1
 {
     /// <summary>
-    /// This code example adds expanded text ads to a given ad group. To list
+    /// This code example adds dynamic search ads to a given ad group. To list
     /// ad groups, run GetAdGroups.cs.
     /// </summary>
     public class AddDynamicSearchAds : ExampleBase
@@ -64,8 +64,8 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             get
             {
-                return "This code example adds an expanded text ad that uses advanced features " +
-                    "of upgraded URLs.";
+                return "This code example adds dynamic search ads to a given ad group. To " +
+                    "list ad groups, run GetAdGroups.cs.";
             }
         }
 
@@ -79,6 +79,11 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             try
             {
+                string budgetResourceName = AddCampaignBudget(client, customerId);
+                string campaignResourceName = AddCampaign(client, customerId, budgetResourceName);
+                string adGroupResourceName = AddAdGroup(client, customerId, campaignResourceName);
+                AddExpandedDSA(client, customerId, adGroupResourceName);
+                AddWebPageCriteria(client, customerId, adGroupResourceName);
             }
             catch (GoogleAdsException e)
             {
@@ -125,7 +130,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
             Console.WriteLine($"Added budget with resource name '{budgetResourceName}'.");
             return budgetResourceName;
         }
-  
+
         /// <summary>
         /// Adds a campaign.
         /// </summary>
@@ -147,7 +152,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
                 Status = CampaignStatus.Paused,
                 ManualCpc = new ManualCpc(),
                 CampaignBudget = budgetResourceName,
-                
+
                 // Enable the campaign for DSAs.
                 DynamicSearchAdsSetting = new DynamicSearchAdsSetting()
                 {
@@ -189,7 +194,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
-            {                    
+            {
                 Name = "Earth to Mars Cruises #" + ExampleUtilities.GetRandomString(),
                 Campaign = campaignResourceName,
                 Type = AdGroupType.SearchDynamicAds,
@@ -294,9 +299,8 @@ namespace Google.Ads.GoogleAds.Examples.V1
                         // and-ed together when evaluated for targeting.
                         new WebpageConditionInfo()
                         {
-                                                        Operand = WebpageConditionOperand.PageTitle,
+                            Operand = WebpageConditionOperand.PageTitle,
                             Argument = "Special Offer"
-
                         }
                     }
                 }
