@@ -30,6 +30,27 @@ namespace Google.Ads.GoogleAds.Lib
         /// </summary>
         private static Dictionary<string, Channel> cache = new Dictionary<string, Channel>();
 
+        /// <summary>
+        /// The grpc setting name for maximum message length that can be received.
+        /// </summary>
+        private const string GRPC_MAX_RECEIVE_MESSAGE_LENGTH_SETTING =
+            "grpc.max_receive_message_length";
+
+        /// <summary>
+        /// The maximum message length that the client library can receive (64 MB).
+        /// </summary>
+        private const long MAX_RECEIVE_MESSAGE_LENGTH = 64 * 1024 * 1024;
+
+        /// <summary>
+        /// The grpc setting name for maximum metadata size that can be handled.
+        /// </summary>
+        private const string GRPC_MAX_METADATA_SIZE_SETTING =
+            "grpc.max_metadata_size";
+
+        /// <summary>
+        /// The maximum metadata size that the client library can receive (16 MB).
+        /// </summary>
+        private const long MAX_METADATA_SIZE = 16 * 1024 * 1024;
 
         /// <summary>
         /// Gets the channel for the specified configuration.
@@ -91,7 +112,15 @@ namespace Google.Ads.GoogleAds.Lib
             ChannelCredentials channelCredentials =
                 GoogleGrpcCredentials.ToChannelCredentials(config.Credentials);
             Uri uri = new Uri(config.ServerUrl);
-            return new Channel(uri.Host, uri.Port, channelCredentials);
+            return new Channel(uri.Host, uri.Port, channelCredentials,
+                new List<ChannelOption>()
+                {
+                    new ChannelOption(GRPC_MAX_RECEIVE_MESSAGE_LENGTH_SETTING,
+                        MAX_RECEIVE_MESSAGE_LENGTH.ToString()),
+                    new ChannelOption(GRPC_MAX_METADATA_SIZE_SETTING,
+                        MAX_METADATA_SIZE.ToString()),
+                }
+            );
         }
     }
 }
