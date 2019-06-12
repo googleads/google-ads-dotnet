@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Tests.Util
         }
 
         /// <summary>
-        /// Tests if data can be retrieved from a url.
+        /// Tests if data can be retrieved from a URL.
         /// </summary>
         [Test]
         [Category("Small")]
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.Util
         }
 
         /// <summary>
-        /// Tests if data can be retrieved from a url.
+        /// Tests if data can be retrieved from a URL.
         /// </summary>
         [Test]
         [Category("Small")]
