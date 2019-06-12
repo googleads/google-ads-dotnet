@@ -224,9 +224,9 @@ namespace Google.Ads.GoogleAds.V1.Errors
             return $"customers/{customerId}/customerLabels/{labelId}";
         }
 
-        public static string CustomerManagerLink(long customerId, long manager_customerId, long managerLinkId)
+        public static string CustomerManagerLink(long customerId, long managerCustomerId, long managerLinkId)
         {
-            return $"customers/{customerId}/customerManagerLinks/{manager_customerId}~{managerLinkId}";
+            return $"customers/{customerId}/customerManagerLinks/{managerCustomerId}~{managerLinkId}";
         }
 
         public static string CustomerNegativeCriteria(long customerId, long criterionId)
