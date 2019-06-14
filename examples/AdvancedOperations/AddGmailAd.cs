@@ -213,7 +213,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
             };
 
 
-            // Creates the ad group ad service client.
+            // Create the ad group ad.
             MutateAdGroupAdsResponse response =
                 adGroupAdService.MutateAdGroupAds(customerId.ToString(), new[] { operation });
 
