@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,15 +14,13 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Common;
 using Google.Ads.GoogleAds.V1.Resources;
 using Google.Ads.GoogleAds.V1.Services;
-
+using Google.LongRunning;
+using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Linq;
 using static Google.Ads.GoogleAds.V1.Enums.CampaignExperimentTrafficSplitTypeEnum.Types;
-using Google.Protobuf.WellKnownTypes;
-using Google.LongRunning;
 
 namespace Google.Ads.GoogleAds.Examples.V1
 {
@@ -72,17 +70,13 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             try
             {
-                LongRunning.Operation<Empty, CreateCampaignExperimentMetadata> operation =
+                Operation<Empty, CreateCampaignExperimentMetadata> operation =
                     CreateExperiment(client, customerId, campaignDraftResourceName);
-
-                // Use the credentials from the current client.
-                //operation = operation.UseClient(client);
 
                 Console.WriteLine("Waiting until operation completes...");
                 operation.PollUntilCompleted();
 
-                //DisplayExperimentDetails(client, customerId,
-                //    operation1.Metadata.CampaignExperiment);
+                DisplayExperimentDetails(client, customerId, operation.Metadata.CampaignExperiment);
             }
             catch (GoogleAdsException e)
             {
@@ -91,7 +85,6 @@ namespace Google.Ads.GoogleAds.Examples.V1
                 Console.WriteLine($"Failure: {e.Failure}");
                 Console.WriteLine($"Request ID: {e.RequestId}");
             }
-
         }
 
         /// <summary>
@@ -102,7 +95,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         /// <param name="campaignDraftResourceName">The resource name Name of the campaign
         /// draft.</param>
         /// <returns>The long running operation for experiment creation.</returns>
-        private static LongRunning.Operation<Empty, CreateCampaignExperimentMetadata>
+        private static Operation<Empty, CreateCampaignExperimentMetadata>
             CreateExperiment(GoogleAdsClient client, long customerId,
                 string campaignDraftResourceName)
         {
@@ -118,7 +111,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
                 TrafficSplitType = CampaignExperimentTrafficSplitType.RandomQuery
             };
 
-            LongRunning.Operation<Empty, CreateCampaignExperimentMetadata> operation =
+            Operation<Empty, CreateCampaignExperimentMetadata> operation =
                 campaignExperimentService.CreateCampaignExperiment(
                     customerId.ToString(), experiment);
 
@@ -147,7 +140,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
             // a real campaign. For example, you may add criteria, adjust bids, or even
             // include additional ads. Adding a criterion is shown here.
             string query = $@"
-                SELECT 
+                SELECT
                     campaign_experiment.experiment_campaign
                 FROM
                     campaign_experiment
