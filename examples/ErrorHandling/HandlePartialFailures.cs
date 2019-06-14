@@ -17,8 +17,8 @@ using Google.Ads.GoogleAds.V1.Errors;
 using Google.Ads.GoogleAds.V1.Resources;
 using Google.Ads.GoogleAds.V1.Services;
 using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V1
 {
@@ -70,6 +70,100 @@ namespace Google.Ads.GoogleAds.Examples.V1
         /// <param name="campaignId">ID of the campaign to which ad groups are added.</param>
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
+            try
+            {
+                MutateAdGroupsResponse response = CreateAdGroups(client, customerId, campaignId);
+
+                // Checks for existence of any partial failures in the response.
+                if (CheckIfPartialFailureErrorExists(response))
+                {
+                    Console.WriteLine("Partial failures occurred. Details will be shown below.");
+                }
+                else
+                {
+                    Console.WriteLine("All operations completed successfully. No partial " +
+                        "failures to show.");
+                    return;
+                }
+
+                // Finds the failed operations by looping through the results.
+                PrintResults(response);
+
+                // Display the results.
+                if (response.PartialFailureError == null)
+                {
+                    Console.WriteLine("Partial failures occurred. Details will be shown below.");
+                }
+                else
+                {
+                    Console.WriteLine("All operations completed successfully. No partial " +
+                        "failures to show.");
+                    return;
+                }
+
+                // Finds the failed operations by looping through the results.
+                PrintResults(response);
+            }
+            catch (GoogleAdsException e)
+            {
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Failure: {e.Failure}");
+                Console.WriteLine($"Request ID: {e.RequestId}");
+            }
+        }
+
+        /// <summary>
+        /// Displays the result from the mutate operation.
+        /// </summary>
+        /// <param name="response">The mutate response from the Google Ads API server..</param>
+        private void PrintResults(MutateAdGroupsResponse response)
+        {
+            // Finds the failed operations by looping through the results.
+            int operationIndex = 0;
+            foreach (MutateAdGroupResult result in response.Results)
+            {
+                // This represents the result of a failed operation.
+                if (result.IsEmpty())
+                {
+                    List<GoogleAdsError> errors =
+                        response.PartialFailure.GetErrorsByOperationIndex(operationIndex);
+                    foreach (GoogleAdsError error in errors)
+                    {
+                        Console.WriteLine($"Operation {operationIndex} failed with " +
+                            $"error: {error}.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Operation {operationIndex} succeeded.",
+                        operationIndex);
+                }
+                operationIndex++;
+            }
+        }
+
+        /// <summary>
+        /// Inspects a response to check for presence of partial failure errors.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <returns>True if there are partial failures, false otherwise.</returns>
+        private static bool CheckIfPartialFailureErrorExists(MutateAdGroupsResponse response)
+        {
+            return response.PartialFailureError == null;
+        }
+
+        /// <summary>
+        /// Attempts to create 3 ad groups with partial failure enabled. One of the ad groups
+        /// will succeed, while the other will fail.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
+        /// <param name="campaignId">ID of the campaign to which ad groups are added.</param>
+        /// <returns>The mutate response from the Google Ads server.</returns>
+        private static MutateAdGroupsResponse CreateAdGroups(GoogleAdsClient client,
+            long customerId, long campaignId)
+        {
             // Get the AdGroupServiceClient.
             AdGroupServiceClient adGroupService = client.GetService(Services.V1.AdGroupService);
 
@@ -101,7 +195,6 @@ namespace Google.Ads.GoogleAds.Examples.V1
                 // group from the first operation. Duplicate ad group names are not allowed.
                 new AdGroupOperation()
                 {
-
                     Create = new AdGroup()
                     {
                         Campaign = ResourceNames.Campaign(customerId, campaignId),
@@ -109,53 +202,11 @@ namespace Google.Ads.GoogleAds.Examples.V1
                     }
                 }
             };
-            
-            try
-            {
-                // Add the ad groups.
-                MutateAdGroupsResponse response =
-                    adGroupService.MutateAdGroups(customerId.ToString(), operations, true, false);
 
-                // Display the results.
-                if (response.PartialFailureError == null)
-                {
-                    Console.WriteLine("All operations completed successfully. No partial " +
-                        "failures to show.");
-                    return;
-                }
-                else
-                {
-                    // Finds the failed operations by looping through the results.
-                    int operationIndex = 0;
-                    foreach (MutateAdGroupResult result in response.Results)
-                    {
-                        // This represents the result of a failed operation.
-                        if (result.IsEmpty())
-                        {
-                            List<GoogleAdsError> errors =
-                                response.PartialFailure.GetErrorsByOperationIndex(operationIndex);
-                            foreach (GoogleAdsError error in errors)
-                            {
-                                Console.WriteLine($"Operation {operationIndex} failed with " +
-                                    $"error: {error}.");
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine($"Operation {operationIndex} succeeded.",
-                                operationIndex);
-                        }
-                        operationIndex++;
-                    }
-                }
-            }
-            catch (GoogleAdsException e)
-            {
-                Console.WriteLine("Failure:");
-                Console.WriteLine($"Message: {e.Message}");
-                Console.WriteLine($"Failure: {e.Failure}");
-                Console.WriteLine($"Request ID: {e.RequestId}");
-            }
+            // Add the ad groups.
+            MutateAdGroupsResponse response =
+                adGroupService.MutateAdGroups(customerId.ToString(), operations, true, false);
+            return response;
         }
     }
 }
