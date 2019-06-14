@@ -16,7 +16,7 @@
   -- AdvancedOperations/AddDynamicPageFeed.cs
   -- AdvancedOperations/AddDynamicSearchAds.cs
 - Updated the API to allow users to specify their own custom callsettings when creating a service.
-- Ported HttpUtilities and MediaUtilities from the AdWords API library. These utilities simplifies
+- Ported HttpUtilities and MediaUtilities from the AdWords API library. These utilities simplify
  code when working with Media assets.
 
  
