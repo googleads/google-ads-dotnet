@@ -1,3 +1,25 @@
+2.2.0
+=====
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/98
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/97
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/96
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/95
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/94
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/93
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/86
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/82
+- Added new examples
+  -- CampaignManagement/AddCampaignDraft.cs
+  -- CampaignManagement/CreateCampaignExperiment.cs
+  -- AdvancedOperations/AddGmailAd.cs
+  -- AccountManagement/LinkManagerToClient.cs
+  -- AdvancedOperations/AddDynamicPageFeed.cs
+  -- AdvancedOperations/AddDynamicSearchAds.cs
+- Updated the API to allow users to specify their own custom callsettings when creating a service.
+- Ported HttpUtilities and MediaUtilities from the AdWords API library. These utilities simplifies
+ code when working with Media assets.
+
+ 
 2.1.0
 =====
 - Added support for Google Ads API v1.3. See release notes:
