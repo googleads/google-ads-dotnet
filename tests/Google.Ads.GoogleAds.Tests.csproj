@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net452</TargetFrameworks>
+    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netcoreapp2.0;net452</TargetFrameworks>
+    <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFrameworks>
     <RootNamespace>Google.Ads.GoogleAds.Tests</RootNamespace>
     <AssemblyName>Google.Ads.GoogleAds.Tests</AssemblyName>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
