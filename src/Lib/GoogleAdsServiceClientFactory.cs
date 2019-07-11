@@ -15,14 +15,11 @@
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Logging;
 using Google.Api.Gax.Grpc;
-using Grpc.Auth;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.InteropServices;
 
 namespace Google.Ads.GoogleAds.Lib
 {

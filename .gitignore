@@ -36,3 +36,6 @@ msbuild.wrn
 
 # Transform files
 *.transform
+
+# Nano stack dump
+nano.exe.stackdump

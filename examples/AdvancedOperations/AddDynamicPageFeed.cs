@@ -14,21 +14,21 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V1.Enums.DsaPageFeedCriterionFieldEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.FeedMappingCriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.WebpageConditionOperandEnum.Types;
-using static Google.Ads.GoogleAds.V1.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V2.Enums.DsaPageFeedCriterionFieldEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.FeedMappingCriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V2.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example adds a page feed to specify precisely which URLs to use with your
@@ -120,7 +120,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         private string CreateFeed(GoogleAdsClient client, long customerId)
         {
             // Get the FeedService.
-            FeedServiceClient feedService = client.GetService(Services.V1.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V2.FeedService);
 
             // Create a URL attribute.
             FeedAttribute urlAttribute = new FeedAttribute()
@@ -174,7 +174,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V1.GoogleAdsService);
+                Services.V2.GoogleAdsService);
 
             // Construct the query.
             String query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name" +
@@ -231,7 +231,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the FeedMappingService.
             FeedMappingServiceClient feedMappingService = client.GetService(
-                Services.V1.FeedMappingService);
+                Services.V2.FeedMappingService);
 
             FeedMapping feedMapping = new FeedMapping()
             {
@@ -289,7 +289,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the FeedItemService.
             FeedItemServiceClient feedItemService = client.GetService(
-                Services.V1.FeedItemService);
+                Services.V2.FeedItemService);
 
             List<string> urls = new List<string>
             {
@@ -353,7 +353,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService = client.GetService(
-                Services.V1.CampaignService);
+                Services.V2.CampaignService);
 
             DynamicSearchAdsSetting dsaSetting = GetDsaSetting(client, customerId, campaignId);
             dsaSetting.Feeds.Add(feedResourceName);
@@ -396,7 +396,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V1.GoogleAdsService);
+                Services.V2.GoogleAdsService);
 
             // Creates the query.
             // You must request all DSA fields in order to update the DSA settings in the
@@ -440,7 +440,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V1.AdGroupCriterionService);
+                Services.V2.AdGroupCriterionService);
 
             // Create the webpage condition info.
             WebpageConditionInfo webpageConditionInfo = new WebpageConditionInfo()
