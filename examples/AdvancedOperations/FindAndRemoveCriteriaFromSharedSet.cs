@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V1.Enums.CriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.CriterionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example demonstrates how to find shared sets, shared set criteria, and
@@ -72,10 +72,10 @@ namespace Google.Ads.GoogleAds.Examples.V1
             try
             {
                 SharedCriterionServiceClient sharedCriterionService = client.GetService(
-                    Services.V1.SharedCriterionService);
+                    Services.V2.SharedCriterionService);
 
                 GoogleAdsServiceClient googleAdsService = client.GetService(
-                    Services.V1.GoogleAdsService);
+                    Services.V2.GoogleAdsService);
 
                 List<long?> sharedSetIds = new List<long?>();
                 List<string> criterionResources = new List<string>();

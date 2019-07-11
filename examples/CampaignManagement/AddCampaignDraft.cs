@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example adds a campaign draft for a campaign. Make sure you specify a
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the CampaignDraftService.
             CampaignDraftServiceClient campaignDraftService =
-                client.GetService(Services.V1.CampaignDraftService);
+                client.GetService(Services.V2.CampaignDraftService);
 
             CampaignDraft campaignDraft = new CampaignDraft()
             {
@@ -128,7 +128,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V1.GoogleAdsService);
+                client.GetService(Services.V2.GoogleAdsService);
 
             // Once the draft is created, you can modify the draft campaign as if it were
             // a real campaign. For example, you may add criteria, adjust bids, or even
@@ -159,7 +159,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService =
-                client.GetService(Services.V1.CampaignCriterionService);
+                client.GetService(Services.V2.CampaignCriterionService);
 
             // Add a language criterion.
             CampaignCriterionOperation criterionOperation = new CampaignCriterionOperation()

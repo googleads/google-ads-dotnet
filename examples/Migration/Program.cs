@@ -13,7 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Config;
-using Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement;
+using Google.Ads.GoogleAds.Examples.V2.Migration.CampaignManagement;
 using Google.Ads.GoogleAds.Lib;
 using Google.Api.Ads.AdWords.Lib;
 using System.IO;

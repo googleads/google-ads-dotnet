@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,11 +13,11 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Services;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example removes a billing setup, specified by ID. To get available billing setup,
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the BillingSetupServiceClient.
             BillingSetupServiceClient billingSetupService = client.GetService(
-                Services.V1.BillingSetupService);
+                Services.V2.BillingSetupService);
 
             // Create the billing setup resource.
             String billingSetupResource = ResourceNames.BillingSetup(customerId, billingSetupId);

@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,16 +13,16 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupAdStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example adds expanded text ads to a given ad group. To list
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient service = client.GetService(Services.V1.AdGroupAdService);
+            AdGroupAdServiceClient service = client.GetService(Services.V2.AdGroupAdService);
 
             // Create the expanded text ad.
             AdGroupAd ad = new AdGroupAd

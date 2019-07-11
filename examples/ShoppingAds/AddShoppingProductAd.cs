@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,23 +13,23 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example creates a standard shopping campaign, a shopping product ad group and a
@@ -145,7 +145,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V1.CampaignBudgetService);
+                client.GetService(Services.V2.CampaignBudgetService);
 
             CampaignBudget budget = new CampaignBudget()
             {
@@ -183,7 +183,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService =
-                client.GetService(Services.V1.CampaignService);
+                client.GetService(Services.V2.CampaignService);
 
             // Configures the shopping settings.
             ShoppingSetting shoppingSetting = new ShoppingSetting()
@@ -261,7 +261,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
                     string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V1.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V2.AdGroupService);
 
             // Creates an ad group.
             AdGroup adGroup = new AdGroup()
@@ -306,7 +306,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V1.AdGroupAdService);
+                Services.V2.AdGroupAdService);
 
             // Creates a new shopping product ad.
             Ad ad = new Ad()
@@ -361,7 +361,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V1.AdGroupCriterionService);
+                Services.V2.AdGroupCriterionService);
 
             // Creates a new ad group criterion. This will contain the "default" listing group (All
             // products).

@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC.
+// Copyright 2019 Google LLC.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,15 +14,15 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupCriterionStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example illustrates udating a keyword.
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the CampaignCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V1.AdGroupCriterionService);
+                client.GetService(Services.V2.AdGroupCriterionService);
 
             // Create the keyword for update.
             AdGroupCriterion keyword = new AdGroupCriterion()

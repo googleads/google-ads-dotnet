@@ -1,4 +1,4 @@
-﻿// Copyright 2018 Google LLC
+﻿// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example generates forecast metrics for a keyword plan. To create a keyword plan,
@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         public void Run(GoogleAdsClient client, long customerId, long keywordPlanId)
         {
             KeywordPlanServiceClient kpServiceClient =
-                client.GetService(Services.V1.KeywordPlanService);
+                client.GetService(Services.V2.KeywordPlanService);
             string keywordPlanResource = ResourceNames.KeywordPlan(customerId, keywordPlanId);
 
             try

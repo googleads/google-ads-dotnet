@@ -1,3 +1,8 @@
+2.3.0
+=====
+- Added support for Google Ads API v2.0. See release notes:
+ https://developers.google.com/google-ads/api/docs/release-notes#200_2019-06-26
+
 2.2.0
 =====
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/98

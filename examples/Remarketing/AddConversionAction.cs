@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,16 +13,16 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V1.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.ConversionActionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.ConversionActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.ConversionActionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.ConversionActionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example illustrates adding a conversion action.
@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the ConversionActionService.
             ConversionActionServiceClient conversionActionService =
-                client.GetService(Services.V1.ConversionActionService);
+                client.GetService(Services.V2.ConversionActionService);
 
             // Add a conversion action.
             ConversionAction conversionAction = new ConversionAction()

@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
-using static Google.Ads.GoogleAds.V1.Enums.AccountBudgetProposalTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.TimeTypeEnum.Types;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
+using static Google.Ads.GoogleAds.V2.Enums.AccountBudgetProposalTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.TimeTypeEnum.Types;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example creates an account budget proposal using the 'CREATE' operation. To get
@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the AccountBudgetProposalServiceClient.
             AccountBudgetProposalServiceClient proposalService =
-                client.GetService(Services.V1.AccountBudgetProposalService);
+                client.GetService(Services.V2.AccountBudgetProposalService);
 
             // Create an AccountBudgetProposal.
             // The proposal will be reviewed offline by Google Ads, and if approved will

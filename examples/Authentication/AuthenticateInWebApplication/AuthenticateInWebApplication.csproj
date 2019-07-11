@@ -33,6 +33,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,11 +47,11 @@
   <ItemGroup>
     <!-- Include local projects over nuget dependencies if available -->
     <ProjectReference Condition="Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="..\..\..\src\Google.Ads.GoogleAds.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Google.Ads.GoogleAds, Version=2.2.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+    <Reference Condition="!Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds, Version=2.3.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Ads.GoogleAds.2.2.0\lib\net452\Google.Ads.GoogleAds.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="Google.Api.CommonProtos, Version=1.6.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Api.CommonProtos.1.6.0\lib\net45\Google.Api.CommonProtos.dll</HintPath>
     </Reference>

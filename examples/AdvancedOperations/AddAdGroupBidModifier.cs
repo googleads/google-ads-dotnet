@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V1.Enums.DeviceEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.DeviceEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example demonstrates how to add an ad group bid modifier for mobile devices.
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient adGroupBidModifierService =
-                client.GetService(Services.V1.AdGroupBidModifierService);
+                client.GetService(Services.V2.AdGroupBidModifierService);
 
             // Creates an ad group bid modifier for mobile devices with the specified ad group
             // ID and bid modifier value.
