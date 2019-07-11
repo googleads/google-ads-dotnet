@@ -14,8 +14,9 @@ This project hosts the .NET client library for the Google Ads API.
 
 ## Requirements
 
-- .NET Framework 4.5.2+
+- .NET Framework 4.5.2+ (Windows only)
 - .NET Standard 2.0
+- .NET Core 2.0 (non Windows)
 
 ## Announcements and updates
 
