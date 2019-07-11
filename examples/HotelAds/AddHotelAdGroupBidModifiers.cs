@@ -1,4 +1,4 @@
-﻿// Copyright 2018 Google LLC
+﻿// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 using System;
-using DayOfWeek = Google.Ads.GoogleAds.V1.Enums.DayOfWeekEnum.Types.DayOfWeek;
+using DayOfWeek = Google.Ads.GoogleAds.V2.Enums.DayOfWeekEnum.Types.DayOfWeek;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example shows how to add ad group bid modifiers to a hotel ad group based on
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient service = client.GetService(
-                Services.V1.AdGroupBidModifierService);
+                Services.V2.AdGroupBidModifierService);
 
             // Constructs the ad group resource name to use for each bid modifier.
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);

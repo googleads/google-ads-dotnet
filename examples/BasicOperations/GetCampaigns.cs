@@ -1,4 +1,4 @@
-﻿// Copyright 2018 Google LLC
+﻿// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Services;
 using Google.Api.Gax;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example gets all campaigns. To add campaigns, run AddCampaigns.cs.
@@ -67,7 +67,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V1.GoogleAdsService);
+                Services.V2.GoogleAdsService);
 
             // Create a request that will retrieve all campaigns using pages of the specified
             // page size.

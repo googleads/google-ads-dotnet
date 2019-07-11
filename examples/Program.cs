@@ -70,12 +70,12 @@ namespace Google.Ads.GoogleAds.Examples
             //GoogleAdsClient googleAdsClient = new GoogleAdsClient(googleAdsConfig);
 
             // Run the code example.
-            //new V1.GetCampaigns().Run(new GoogleAdsClient(), 1234567890);
+            // new V2.GetCampaigns().Run(new GoogleAdsClient(), 1234567890);
 
             // Alternatively, you can pass command line arguments to run the code example. E.g.
-            // V1.GetCampaigns --customerId=1234567890
-            // The first argument has the form VersionName.ExampleName, e.g. V1.GetCampaigns to run
-            // Google.Ads.GoogleAds.Examples.V1.GetCampaigns example.
+            // V2.GetCampaigns --customerId=1234567890
+            // The first argument has the form VersionName.ExampleName, e.g. V2.GetCampaigns to run
+            // Google.Ads.GoogleAds.Examples.V2.GetCampaigns example.
             // The subsequent arguments can be inferred by looking at the Run method of the code
             // example and skipping the first parameter.
             // E.g. GetCampaigns.cs has a Run method is defined as
@@ -84,7 +84,7 @@ namespace Google.Ads.GoogleAds.Examples
             //
             // So, this example can be run with the command line arguments
             //
-            //     V1.GetCampaigns --customerId=1234567890
+            //     V2.GetCampaigns --customerId=1234567890
             RunExamplesFromCommandLineArguments(args);
         }
 

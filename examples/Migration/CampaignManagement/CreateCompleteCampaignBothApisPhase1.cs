@@ -21,11 +21,11 @@ using System.Linq;
 using System.Web;
 
 using aw = global::Google.Api.Ads.AdWords.v201809;
-using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V1.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
-using gagvr = Google.Ads.GoogleAds.V1.Resources;
-using gagvs = Google.Ads.GoogleAds.V1.Services;
+using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V2.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gagvs = Google.Ads.GoogleAds.V2.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
+namespace Google.Ads.GoogleAds.Examples.V2.Migration.CampaignManagement
 {
     /// <summary>
     /// This code example is the second in a series of code examples that shows how to create
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         {
             // Get the CampaignBudgetService.
             gagvs::CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V1.CampaignBudgetService);
+                Services.V2.CampaignBudgetService);
 
             // Create the campaign budget.
             gagvr::CampaignBudget budget = new gagvr::CampaignBudget()
@@ -146,7 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V1.Migration.CampaignManagement
         {
             // Get the GoogleAdsService.
             gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V1.GoogleAdsService);
+                Services.V2.GoogleAdsService);
 
             // Create the search query.
             string searchQuery = "SELECT campaign_budget.id, campaign_budget.name, " +

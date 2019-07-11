@@ -1,4 +1,4 @@
-﻿// Copyright 2018 Google LLC
+﻿// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,19 +13,19 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 using System;
 using System.Collections.Generic;
 
-using static Google.Ads.GoogleAds.V1.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example adds campaigns.
@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V1.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V2.CampaignService);
 
             // Create a budget to be used for the campaign.
             string budget = CreateBudget(client, customerId);
@@ -154,7 +154,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V1.CampaignBudgetService);
+                Services.V2.CampaignBudgetService);
 
             // Create the campaign budget.
             CampaignBudget budget = new CampaignBudget()

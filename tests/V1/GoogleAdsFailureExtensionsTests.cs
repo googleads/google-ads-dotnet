@@ -20,7 +20,7 @@ using NUnit.Framework;
 using System.Linq;
 using static Google.Ads.GoogleAds.V1.Errors.ErrorLocation.Types;
 
-namespace Google.Ads.GoogleAds.Tests.Logging
+namespace Google.Ads.GoogleAds.Tests.V1.Errors
 {
     /// <summary>
     /// UnitTests for extensions in GoogleAdsFailureExtensionsTests.cs.

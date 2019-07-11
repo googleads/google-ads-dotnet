@@ -13,24 +13,24 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.WebpageConditionOperandEnum.Types;
-using static Google.Ads.GoogleAds.V1.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V2.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example adds dynamic search ads to a given ad group. To list
@@ -104,7 +104,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V1.CampaignBudgetService);
+                client.GetService(Services.V2.CampaignBudgetService);
 
             // Create the budget.
             CampaignBudget campaignBudget = new CampaignBudget()
@@ -142,7 +142,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V1.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V2.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -190,7 +190,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V1.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V2.AdGroupService);
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
@@ -230,7 +230,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V1.AdGroupAdService);
+                client.GetService(Services.V2.AdGroupAdService);
 
             // Create an ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd()
@@ -273,7 +273,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V1.AdGroupCriterionService);
+                client.GetService(Services.V2.AdGroupCriterionService);
 
             // Create the criterion.
             AdGroupCriterion adGroupCriterion = new AdGroupCriterion()

@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,17 +13,17 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Resources;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Resources;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V1.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V1.Enums.ProximityRadiusUnitsEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.ProximityRadiusUnitsEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example illustrates adding campaign targeting criteria.
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService =
-                client.GetService(Services.V1.CampaignCriterionService);
+                client.GetService(Services.V2.CampaignCriterionService);
 
             // Set the Campaign Resource Name
             string campaignResourceName = ResourceNames.Campaign(customerId, campaignId);

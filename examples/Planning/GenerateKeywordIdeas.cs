@@ -1,4 +1,4 @@
-﻿// Copyright 2018 Google LLC
+﻿// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Common;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Common;
+using Google.Ads.GoogleAds.V2.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V1.Enums.KeywordPlanNetworkEnum.Types;
+using static Google.Ads.GoogleAds.V2.Enums.KeywordPlanNetworkEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example generates keyword ideas from a list of seed keywords or a seed page URL.
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
             long languageId, string[] keywordTexts, string pageUrl)
         {
             KeywordPlanIdeaServiceClient keywordPlanIdeaService =
-                client.GetService(Services.V1.KeywordPlanIdeaService);
+                client.GetService(Services.V2.KeywordPlanIdeaService);
 
             // Make sure that keywords and/or page URL were specified. The request must have
             // exactly one of urlSeed, keywordSeed, or keywordAndUrlSeed set.

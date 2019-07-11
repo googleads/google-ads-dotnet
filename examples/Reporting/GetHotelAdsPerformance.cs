@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V1.Errors;
-using Google.Ads.GoogleAds.V1.Services;
+using Google.Ads.GoogleAds.V2.Errors;
+using Google.Ads.GoogleAds.V2.Services;
 using Google.Api.Gax;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V1
+namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example gets Hotel-ads performance statistics for the 50 Hotel ad groups with
@@ -62,7 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V1
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V1.GoogleAdsService);
+                Services.V2.GoogleAdsService);
 
             // Creates a query that retrieves hotel-ads statistics for each campaign and ad group.
             // Returned statistics will be segmented by the check-in day of week and length of
