@@ -12,7 +12,7 @@ This project hosts the .NET client library for the Google Ads API.
 - Easy management of credentials, authentication, and session information.
 - Docs available in HTML and XML format.
 
-## Requirements
+## Supported Frameworks
 
 - .NET Framework 4.5.2+
 - .NET Standard 2.0
