@@ -16,6 +16,7 @@ using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace Google.Ads.GoogleAds.Tests.Lib
@@ -33,8 +34,14 @@ namespace Google.Ads.GoogleAds.Tests.Lib
         [Test]
         public void TestGetService()
         {
-            MethodInfo method = typeof(GoogleAdsServiceClientFactory).GetMethod("GetService",
-                BindingFlags.NonPublic | BindingFlags.Instance);
+            // Get the method with two parameters.
+            MethodInfo method = typeof(GoogleAdsServiceClientFactory).GetMethods(
+                BindingFlags.NonPublic | BindingFlags.Instance)
+                .ToList().Where(delegate (MethodInfo mi)
+                {
+                    return mi.Name == "GetService" && mi.GetParameters().Length == 2;
+                }).First();
+
             StubIntegrityTestHelper.EnumerateServices<Services>(
               delegate (System.Type serviceSignatureType)
               {

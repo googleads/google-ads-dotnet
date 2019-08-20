@@ -15,7 +15,7 @@
 using Google.Ads.GoogleAds.Lib;
 
 using NUnit.Framework;
-
+using System.Linq;
 using System.Reflection;
 
 namespace Google.Ads.GoogleAds.Tests.Lib {
@@ -26,20 +26,30 @@ namespace Google.Ads.GoogleAds.Tests.Lib {
   internal class GoogleAdsClientTests {
     private GoogleAdsClient googleAdsClient = new GoogleAdsClient();
 
-    /// <summary>
-    /// Tests if all the available service types can be created.
-    /// </summary>
-    [Test]
-    public void TestGetService() {
-      MethodInfo method = typeof(GoogleAdsClient).GetMethod("GetService");
-      StubIntegrityTestHelper.EnumerateServices<Services>(
-        delegate (System.Type serviceSignatureType) {
-          Assert.DoesNotThrow(delegate () {
-            MethodInfo genericMethod = method.MakeGenericMethod(
-                serviceSignatureType.GenericTypeArguments);
-            object result = genericMethod.Invoke(googleAdsClient, new object[] { null });
-          });
-        });
-    }
+        /// <summary>
+        /// Tests if all the available service types can be created.
+        /// </summary>
+        [Test]
+        public void TestGetService()
+        {
+            // Get the method with one parameter.
+            MethodInfo method = typeof(GoogleAdsClient).GetMethods()
+                .ToList().Where(delegate (MethodInfo mi)
+                {
+                return mi.Name == "GetService" && mi.GetParameters().Length == 1;
+                }).First();
+
+            StubIntegrityTestHelper.EnumerateServices<Services>(
+            delegate (System.Type serviceSignatureType)
+            {
+            
+                Assert.DoesNotThrow(delegate ()
+                {
+                    MethodInfo genericMethod = method.MakeGenericMethod(
+                    serviceSignatureType.GenericTypeArguments);
+                    object result = genericMethod.Invoke(googleAdsClient, new object[] { null });
+                });
+            });
+        }
   }
 }
