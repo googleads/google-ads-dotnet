@@ -14,9 +14,9 @@
 
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Logging;
-using Google.Ads.GoogleAds.Tests.V1;
+using Google.Ads.GoogleAds.Tests.V2;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V1.Errors;
+using Google.Ads.GoogleAds.V2.Errors;
 using Google.Protobuf;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
@@ -26,7 +26,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Google.Ads.GoogleAds.Tests.Logging.V1
+namespace Google.Ads.GoogleAds.Tests.Logging.V2
 {
     /// <summary>
     /// Tests for <see cref="LoggingInterceptor"/> class.

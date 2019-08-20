@@ -124,7 +124,8 @@ namespace Google.Ads.GoogleAds.Logging
                         Exception = GetGoogleAdsException(oldTask.Exception),
                         IsFailure = oldTask.IsFaulted,
                         CustomerId = GetCustomerId(request),
-                        PartialFailures = GetPartialFailures(oldTask.Result)
+                        PartialFailures = (oldTask.IsFaulted)? "" : 
+                            GetPartialFailures(oldTask.Result)
                     };
                     OnLogEventAvailable?.Invoke(this, logEntry);
                 }
@@ -219,6 +220,8 @@ namespace Google.Ads.GoogleAds.Logging
                 {
                     case V1.Errors.GoogleAdsException.FAILURE_KEY:
                         return V1.Errors.GoogleAdsException.Create(rpcException);
+                    case V2.Errors.GoogleAdsException.FAILURE_KEY:
+                        return V2.Errors.GoogleAdsException.Create(rpcException);
                 }
 
             }
