@@ -110,6 +110,7 @@ namespace Google.Ads.GoogleAds.V2.Services
     public abstract partial class PaymentsAccountServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ProductBiddingCategoryConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ProductGroupViewServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class ReachPlanServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class RecommendationServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class RemarketingActionServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class SearchTermViewServiceClient : GoogleAdsServiceClientBase {}

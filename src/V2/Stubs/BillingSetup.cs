@@ -68,9 +68,8 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   }
   #region Messages
   /// <summary>
-  /// A billing setup across Ads and Payments systems; an association between a
-  /// Payments account and an advertiser. A billing setup is specific to one
-  /// advertiser.
+  /// A billing setup, which associates a payments account and an advertiser. A
+  /// billing setup is specific to one advertiser.
   /// </summary>
   public sealed partial class BillingSetup : pb::IMessage<BillingSetup> {
     private static readonly pb::MessageParser<BillingSetup> _parser = new pb::MessageParser<BillingSetup>(() => new BillingSetup());
@@ -180,11 +179,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     private static readonly pb::FieldCodec<string> _single_paymentsAccount_codec = pb::FieldCodec.ForClassWrapper<string>(90);
     private string paymentsAccount_;
     /// <summary>
-    /// The resource name of the Payments account associated with this billing
+    /// The resource name of the payments account associated with this billing
     /// setup. Payments resource names have the form:
     ///
     /// `customers/{customer_id}/paymentsAccounts/{payments_account_id}`
-    /// When setting up billing, this is used to signup with an existing Payments
+    /// When setting up billing, this is used to signup with an existing payments
     /// account (and then payments_account_info should not be set).
     /// When getting a billing setup, this and payments_account_info will be
     /// populated.
@@ -202,8 +201,8 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     public const int PaymentsAccountInfoFieldNumber = 12;
     private global::Google.Ads.GoogleAds.V2.Resources.BillingSetup.Types.PaymentsAccountInfo paymentsAccountInfo_;
     /// <summary>
-    /// The Payments account information associated with this billing setup.
-    /// When setting up billing, this is used to signup with a new Payments account
+    /// The payments account information associated with this billing setup.
+    /// When setting up billing, this is used to signup with a new payments account
     /// (and then payments_account should not be set).
     /// When getting a billing setup, this and payments_account will be
     /// populated.
@@ -552,7 +551,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       /// <summary>
-      /// Container of Payments account information for this billing.
+      /// Container of payments account information for this billing.
       /// </summary>
       public sealed partial class PaymentsAccountInfo : pb::IMessage<PaymentsAccountInfo> {
         private static readonly pb::MessageParser<PaymentsAccountInfo> _parser = new pb::MessageParser<PaymentsAccountInfo>(() => new PaymentsAccountInfo());
@@ -597,7 +596,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
         private static readonly pb::FieldCodec<string> _single_paymentsAccountId_codec = pb::FieldCodec.ForClassWrapper<string>(10);
         private string paymentsAccountId_;
         /// <summary>
-        /// A 16 digit id used to identify the Payments account associated with the
+        /// A 16 digit id used to identify the payments account associated with the
         /// billing setup.
         ///
         /// This must be passed as a string with dashes, e.g. "1234-5678-9012-3456".
@@ -616,9 +615,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
         private static readonly pb::FieldCodec<string> _single_paymentsAccountName_codec = pb::FieldCodec.ForClassWrapper<string>(18);
         private string paymentsAccountName_;
         /// <summary>
-        /// The name of the Payments account associated with the billing setup.
+        /// The name of the payments account associated with the billing setup.
         ///
-        /// This enables the user to specify a meaningful name for a Payments account
+        /// This enables the user to specify a meaningful name for a payments account
         /// to aid in reconciling monthly invoices.
         ///
         /// This name will be printed in the monthly invoices.
@@ -637,7 +636,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
         private static readonly pb::FieldCodec<string> _single_paymentsProfileId_codec = pb::FieldCodec.ForClassWrapper<string>(26);
         private string paymentsProfileId_;
         /// <summary>
-        /// A 12 digit id used to identify the Payments profile associated with the
+        /// A 12 digit id used to identify the payments profile associated with the
         /// billing setup.
         ///
         /// This must be passed in as a string with dashes, e.g. "1234-5678-9012".
@@ -656,7 +655,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
         private static readonly pb::FieldCodec<string> _single_paymentsProfileName_codec = pb::FieldCodec.ForClassWrapper<string>(34);
         private string paymentsProfileName_;
         /// <summary>
-        /// The name of the Payments profile associated with the billing setup.
+        /// The name of the payments profile associated with the billing setup.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public string PaymentsProfileName {

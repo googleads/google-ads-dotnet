@@ -25,7 +25,7 @@ using grpc = global::Grpc.Core;
 
 namespace Google.Ads.GoogleAds.V2.Services {
   /// <summary>
-  /// Service to provide Payments accounts that can be used to set up consolidated
+  /// Service to provide payments accounts that can be used to set up consolidated
   /// billing.
   /// </summary>
   public static partial class PaymentsAccountService
@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
     public abstract partial class PaymentsAccountServiceBase
     {
       /// <summary>
-      /// Returns all Payments accounts associated with all managers
+      /// Returns all payments accounts associated with all managers
       /// between the login customer ID and specified serving customer in the
       /// hierarchy, inclusive.
       /// </summary>
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
       }
 
       /// <summary>
-      /// Returns all Payments accounts associated with all managers
+      /// Returns all payments accounts associated with all managers
       /// between the login customer ID and specified serving customer in the
       /// hierarchy, inclusive.
       /// </summary>
@@ -104,7 +104,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         return ListPaymentsAccounts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Returns all Payments accounts associated with all managers
+      /// Returns all payments accounts associated with all managers
       /// between the login customer ID and specified serving customer in the
       /// hierarchy, inclusive.
       /// </summary>
@@ -116,7 +116,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         return CallInvoker.BlockingUnaryCall(__Method_ListPaymentsAccounts, null, options, request);
       }
       /// <summary>
-      /// Returns all Payments accounts associated with all managers
+      /// Returns all payments accounts associated with all managers
       /// between the login customer ID and specified serving customer in the
       /// hierarchy, inclusive.
       /// </summary>
@@ -130,7 +130,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         return ListPaymentsAccountsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Returns all Payments accounts associated with all managers
+      /// Returns all payments accounts associated with all managers
       /// between the login customer ID and specified serving customer in the
       /// hierarchy, inclusive.
       /// </summary>

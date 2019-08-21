@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V2.Enums {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92Mi9lbnVtcy9wb2xpY3lfcmV2aWV3",
             "X3N0YXR1cy5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIuZW51bXMa",
-            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ihAEKFlBvbGljeVJldmll",
-            "d1N0YXR1c0VudW0iagoSUG9saWN5UmV2aWV3U3RhdHVzEg8KC1VOU1BFQ0lG",
-            "SUVEEAASCwoHVU5LTk9XThABEhYKElJFVklFV19JTl9QUk9HUkVTUxACEgwK",
-            "CFJFVklFV0VEEAMSEAoMVU5ERVJfQVBQRUFMEARC7AEKIWNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52Mi5lbnVtc0IXUG9saWN5UmV2aWV3U3RhdHVzUHJv",
-            "dG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YyL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjIuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "MlxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyOjpFbnVtc2IG",
-            "cHJvdG8z"));
+            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8inQEKFlBvbGljeVJldmll",
+            "d1N0YXR1c0VudW0iggEKElBvbGljeVJldmlld1N0YXR1cxIPCgtVTlNQRUNJ",
+            "RklFRBAAEgsKB1VOS05PV04QARIWChJSRVZJRVdfSU5fUFJPR1JFU1MQAhIM",
+            "CghSRVZJRVdFRBADEhAKDFVOREVSX0FQUEVBTBAEEhYKEkVMSUdJQkxFX01B",
+            "WV9TRVJWRRAFQuwBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIuZW51",
+            "bXNCF1BvbGljeVJldmlld1N0YXR1c1Byb3RvUAFaQmdvb2dsZS5nb2xhbmcu",
+            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92Mi9lbnVt",
+            "cztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyLkVudW1z",
+            "ygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjJcRW51bXPqAiFHb29nbGU6OkFk",
+            "czo6R29vZ2xlQWRzOjpWMjo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -179,6 +179,11 @@ namespace Google.Ads.GoogleAds.V2.Enums {
         /// been appealed.
         /// </summary>
         [pbr::OriginalName("UNDER_APPEAL")] UnderAppeal = 4,
+        /// <summary>
+        /// The resource is eligible and may be serving but could still undergo
+        /// further review.
+        /// </summary>
+        [pbr::OriginalName("ELIGIBLE_MAY_SERVE")] EligibleMayServe = 5,
       }
 
     }

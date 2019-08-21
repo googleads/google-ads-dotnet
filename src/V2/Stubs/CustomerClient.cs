@@ -27,21 +27,27 @@ namespace Google.Ads.GoogleAds.V2.Resources {
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92Mi9yZXNvdXJjZXMvY3VzdG9tZXJf",
             "Y2xpZW50LnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5yZXNvdXJj",
             "ZXMaHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2Fw",
-            "aS9hbm5vdGF0aW9ucy5wcm90byK2AQoOQ3VzdG9tZXJDbGllbnQSFQoNcmVz",
+            "aS9hbm5vdGF0aW9ucy5wcm90byLcAwoOQ3VzdG9tZXJDbGllbnQSFQoNcmVz",
             "b3VyY2VfbmFtZRgBIAEoCRI1Cg9jbGllbnRfY3VzdG9tZXIYAyABKAsyHC5n",
             "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKgoGaGlkZGVuGAQgASgLMhou",
             "Z29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRIqCgVsZXZlbBgFIAEoCzIbLmdv",
-            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQoACCiVjb20uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjIucmVzb3VyY2VzQhNDdXN0b21lckNsaWVudFByb3RvUAFa",
-            "Smdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92Mi9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xl",
-            "LkFkcy5Hb29nbGVBZHMuVjIuUmVzb3VyY2VzygIhR29vZ2xlXEFkc1xHb29n",
-            "bGVBZHNcVjJcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
-            "VjI6OlJlc291cmNlc2IGcHJvdG8z"));
+            "b2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEi8KCXRpbWVfem9uZRgGIAEoCzIc",
+            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgx0ZXN0X2FjY291bnQY",
+            "ByABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEisKB21hbmFnZXIY",
+            "CCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEjYKEGRlc2NyaXB0",
+            "aXZlX25hbWUYCSABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
+            "MwoNY3VycmVuY3lfY29kZRgKIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRInCgJpZBgLIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
+            "bHVlQoACCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIucmVzb3VyY2Vz",
+            "QhNDdXN0b21lckNsaWVudFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dl",
+            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92Mi9yZXNvdXJjZXM7",
+            "cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIuUmVz",
+            "b3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjJcUmVzb3VyY2Vz6gIl",
+            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjI6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.CustomerClient), global::Google.Ads.GoogleAds.V2.Resources.CustomerClient.Parser, new[]{ "ResourceName", "ClientCustomer", "Hidden", "Level" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.CustomerClient), global::Google.Ads.GoogleAds.V2.Resources.CustomerClient.Parser, new[]{ "ResourceName", "ClientCustomer", "Hidden", "Level", "TimeZone", "TestAccount", "Manager", "DescriptiveName", "CurrencyCode", "Id" }, null, null, null)
           }));
     }
     #endregion
@@ -82,6 +88,12 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       ClientCustomer = other.ClientCustomer;
       Hidden = other.Hidden;
       Level = other.Level;
+      TimeZone = other.TimeZone;
+      TestAccount = other.TestAccount;
+      Manager = other.Manager;
+      DescriptiveName = other.DescriptiveName;
+      CurrencyCode = other.CurrencyCode;
+      Id = other.Id;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -158,6 +170,103 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     }
 
 
+    /// <summary>Field number for the "time_zone" field.</summary>
+    public const int TimeZoneFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_timeZone_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string timeZone_;
+    /// <summary>
+    /// Common Locale Data Repository (CLDR) string representation of the
+    /// time zone of the client, e.g. America/Los_Angeles. Read only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TimeZone {
+      get { return timeZone_; }
+      set {
+        timeZone_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "test_account" field.</summary>
+    public const int TestAccountFieldNumber = 7;
+    private static readonly pb::FieldCodec<bool?> _single_testAccount_codec = pb::FieldCodec.ForStructWrapper<bool>(58);
+    private bool? testAccount_;
+    /// <summary>
+    /// Identifies if the client is a test account. Read only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool? TestAccount {
+      get { return testAccount_; }
+      set {
+        testAccount_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "manager" field.</summary>
+    public const int ManagerFieldNumber = 8;
+    private static readonly pb::FieldCodec<bool?> _single_manager_codec = pb::FieldCodec.ForStructWrapper<bool>(66);
+    private bool? manager_;
+    /// <summary>
+    /// Identifies if the client is a manager. Read only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool? Manager {
+      get { return manager_; }
+      set {
+        manager_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "descriptive_name" field.</summary>
+    public const int DescriptiveNameFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _single_descriptiveName_codec = pb::FieldCodec.ForClassWrapper<string>(74);
+    private string descriptiveName_;
+    /// <summary>
+    /// Descriptive name for the client. Read only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string DescriptiveName {
+      get { return descriptiveName_; }
+      set {
+        descriptiveName_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "currency_code" field.</summary>
+    public const int CurrencyCodeFieldNumber = 10;
+    private static readonly pb::FieldCodec<string> _single_currencyCode_codec = pb::FieldCodec.ForClassWrapper<string>(82);
+    private string currencyCode_;
+    /// <summary>
+    /// Currency code (e.g. 'USD', 'EUR') for the client. Read only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CurrencyCode {
+      get { return currencyCode_; }
+      set {
+        currencyCode_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 11;
+    private static readonly pb::FieldCodec<long?> _single_id_codec = pb::FieldCodec.ForStructWrapper<long>(90);
+    private long? id_;
+    /// <summary>
+    /// The ID of the client customer. Read only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CustomerClient);
@@ -175,6 +284,12 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (ClientCustomer != other.ClientCustomer) return false;
       if (Hidden != other.Hidden) return false;
       if (Level != other.Level) return false;
+      if (TimeZone != other.TimeZone) return false;
+      if (TestAccount != other.TestAccount) return false;
+      if (Manager != other.Manager) return false;
+      if (DescriptiveName != other.DescriptiveName) return false;
+      if (CurrencyCode != other.CurrencyCode) return false;
+      if (Id != other.Id) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -185,6 +300,12 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (clientCustomer_ != null) hash ^= ClientCustomer.GetHashCode();
       if (hidden_ != null) hash ^= Hidden.GetHashCode();
       if (level_ != null) hash ^= Level.GetHashCode();
+      if (timeZone_ != null) hash ^= TimeZone.GetHashCode();
+      if (testAccount_ != null) hash ^= TestAccount.GetHashCode();
+      if (manager_ != null) hash ^= Manager.GetHashCode();
+      if (descriptiveName_ != null) hash ^= DescriptiveName.GetHashCode();
+      if (currencyCode_ != null) hash ^= CurrencyCode.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -211,6 +332,24 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (level_ != null) {
         _single_level_codec.WriteTagAndValue(output, Level);
       }
+      if (timeZone_ != null) {
+        _single_timeZone_codec.WriteTagAndValue(output, TimeZone);
+      }
+      if (testAccount_ != null) {
+        _single_testAccount_codec.WriteTagAndValue(output, TestAccount);
+      }
+      if (manager_ != null) {
+        _single_manager_codec.WriteTagAndValue(output, Manager);
+      }
+      if (descriptiveName_ != null) {
+        _single_descriptiveName_codec.WriteTagAndValue(output, DescriptiveName);
+      }
+      if (currencyCode_ != null) {
+        _single_currencyCode_codec.WriteTagAndValue(output, CurrencyCode);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(output, Id);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -230,6 +369,24 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       }
       if (level_ != null) {
         size += _single_level_codec.CalculateSizeWithTag(Level);
+      }
+      if (timeZone_ != null) {
+        size += _single_timeZone_codec.CalculateSizeWithTag(TimeZone);
+      }
+      if (testAccount_ != null) {
+        size += _single_testAccount_codec.CalculateSizeWithTag(TestAccount);
+      }
+      if (manager_ != null) {
+        size += _single_manager_codec.CalculateSizeWithTag(Manager);
+      }
+      if (descriptiveName_ != null) {
+        size += _single_descriptiveName_codec.CalculateSizeWithTag(DescriptiveName);
+      }
+      if (currencyCode_ != null) {
+        size += _single_currencyCode_codec.CalculateSizeWithTag(CurrencyCode);
+      }
+      if (id_ != null) {
+        size += _single_id_codec.CalculateSizeWithTag(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -258,6 +415,36 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (other.level_ != null) {
         if (level_ == null || other.Level != 0L) {
           Level = other.Level;
+        }
+      }
+      if (other.timeZone_ != null) {
+        if (timeZone_ == null || other.TimeZone != "") {
+          TimeZone = other.TimeZone;
+        }
+      }
+      if (other.testAccount_ != null) {
+        if (testAccount_ == null || other.TestAccount != false) {
+          TestAccount = other.TestAccount;
+        }
+      }
+      if (other.manager_ != null) {
+        if (manager_ == null || other.Manager != false) {
+          Manager = other.Manager;
+        }
+      }
+      if (other.descriptiveName_ != null) {
+        if (descriptiveName_ == null || other.DescriptiveName != "") {
+          DescriptiveName = other.DescriptiveName;
+        }
+      }
+      if (other.currencyCode_ != null) {
+        if (currencyCode_ == null || other.CurrencyCode != "") {
+          CurrencyCode = other.CurrencyCode;
+        }
+      }
+      if (other.id_ != null) {
+        if (id_ == null || other.Id != 0L) {
+          Id = other.Id;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -293,6 +480,48 @@ namespace Google.Ads.GoogleAds.V2.Resources {
             long? value = _single_level_codec.Read(input);
             if (level_ == null || value != 0L) {
               Level = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_timeZone_codec.Read(input);
+            if (timeZone_ == null || value != "") {
+              TimeZone = value;
+            }
+            break;
+          }
+          case 58: {
+            bool? value = _single_testAccount_codec.Read(input);
+            if (testAccount_ == null || value != false) {
+              TestAccount = value;
+            }
+            break;
+          }
+          case 66: {
+            bool? value = _single_manager_codec.Read(input);
+            if (manager_ == null || value != false) {
+              Manager = value;
+            }
+            break;
+          }
+          case 74: {
+            string value = _single_descriptiveName_codec.Read(input);
+            if (descriptiveName_ == null || value != "") {
+              DescriptiveName = value;
+            }
+            break;
+          }
+          case 82: {
+            string value = _single_currencyCode_codec.Read(input);
+            if (currencyCode_ == null || value != "") {
+              CurrencyCode = value;
+            }
+            break;
+          }
+          case 90: {
+            long? value = _single_id_codec.Read(input);
+            if (id_ == null || value != 0L) {
+              Id = value;
             }
             break;
           }

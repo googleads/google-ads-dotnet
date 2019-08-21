@@ -347,7 +347,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Returns all Payments accounts associated with all managers
+        /// Returns all payments accounts associated with all managers
         /// between the login customer ID and specified serving customer in the
         /// hierarchy, inclusive.
         /// </summary>
@@ -370,7 +370,7 @@ namespace Google.Ads.GoogleAds.V2.Services
                 callSettings);
 
         /// <summary>
-        /// Returns all Payments accounts associated with all managers
+        /// Returns all payments accounts associated with all managers
         /// between the login customer ID and specified serving customer in the
         /// hierarchy, inclusive.
         /// </summary>
@@ -390,7 +390,7 @@ namespace Google.Ads.GoogleAds.V2.Services
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Returns all Payments accounts associated with all managers
+        /// Returns all payments accounts associated with all managers
         /// between the login customer ID and specified serving customer in the
         /// hierarchy, inclusive.
         /// </summary>
@@ -413,7 +413,7 @@ namespace Google.Ads.GoogleAds.V2.Services
                 callSettings);
 
         /// <summary>
-        /// Returns all Payments accounts associated with all managers
+        /// Returns all payments accounts associated with all managers
         /// between the login customer ID and specified serving customer in the
         /// hierarchy, inclusive.
         /// </summary>
@@ -434,7 +434,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Returns all Payments accounts associated with all managers
+        /// Returns all payments accounts associated with all managers
         /// between the login customer ID and specified serving customer in the
         /// hierarchy, inclusive.
         /// </summary>
@@ -454,7 +454,7 @@ namespace Google.Ads.GoogleAds.V2.Services
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Returns all Payments accounts associated with all managers
+        /// Returns all payments accounts associated with all managers
         /// between the login customer ID and specified serving customer in the
         /// hierarchy, inclusive.
         /// </summary>
@@ -525,7 +525,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         partial void Modify_ListPaymentsAccountsRequest(ref ListPaymentsAccountsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
-        /// Returns all Payments accounts associated with all managers
+        /// Returns all payments accounts associated with all managers
         /// between the login customer ID and specified serving customer in the
         /// hierarchy, inclusive.
         /// </summary>
@@ -547,7 +547,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Returns all Payments accounts associated with all managers
+        /// Returns all payments accounts associated with all managers
         /// between the login customer ID and specified serving customer in the
         /// hierarchy, inclusive.
         /// </summary>
