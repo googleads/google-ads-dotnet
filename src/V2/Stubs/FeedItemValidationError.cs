@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V2.Errors {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92Mi9lcnJvcnMvZmVlZF9pdGVtX3Zh",
             "bGlkYXRpb25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "LmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byK0GQobRmVl",
-            "ZEl0ZW1WYWxpZGF0aW9uRXJyb3JFbnVtIpQZChdGZWVkSXRlbVZhbGlkYXRp",
+            "LmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLnGQobRmVl",
+            "ZEl0ZW1WYWxpZGF0aW9uRXJyb3JFbnVtIscZChdGZWVkSXRlbVZhbGlkYXRp",
             "b25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIUChBTVFJJ",
             "TkdfVE9PX1NIT1JUEAISEwoPU1RSSU5HX1RPT19MT05HEAMSFwoTVkFMVUVf",
             "Tk9UX1NQRUNJRklFRBAEEigKJElOVkFMSURfRE9NRVNUSUNfUEhPTkVfTlVN",
@@ -99,12 +99,14 @@ namespace Google.Ads.GoogleAds.V2.Errors {
             "VFVERV9WQUxVRRBbEhsKF0lOVkFMSURfTE9OR0lUVURFX1ZBTFVFEFwSEwoP",
             "VE9PX01BTllfTEFCRUxTEF0SFQoRSU5WQUxJRF9JTUFHRV9VUkwQXhIaChZN",
             "SVNTSU5HX0xBVElUVURFX1ZBTFVFEF8SGwoXTUlTU0lOR19MT05HSVRVREVf",
-            "VkFMVUUQYEL3AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmVycm9y",
-            "c0IcRmVlZEl0ZW1WYWxpZGF0aW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIv",
-            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYy",
-            "LkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyXEVycm9yc+oCIkdv",
-            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyOjpFcnJvcnNiBnByb3RvMw=="));
+            "VkFMVUUQYBIVChFBRERSRVNTX05PVF9GT1VORBBhEhoKFkFERFJFU1NfTk9U",
+            "X1RBUkdFVEFCTEUQYkL3AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "LmVycm9yc0IcRmVlZEl0ZW1WYWxpZGF0aW9uRXJyb3JQcm90b1ABWkRnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjIvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xl",
+            "QWRzLlYyLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyXEVycm9y",
+            "c+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyOjpFcnJvcnNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -631,6 +633,14 @@ namespace Google.Ads.GoogleAds.V2.Errors {
         /// Longitude value is missing.
         /// </summary>
         [pbr::OriginalName("MISSING_LONGITUDE_VALUE")] MissingLongitudeValue = 96,
+        /// <summary>
+        /// Unable to find address.
+        /// </summary>
+        [pbr::OriginalName("ADDRESS_NOT_FOUND")] AddressNotFound = 97,
+        /// <summary>
+        /// Cannot target provided address.
+        /// </summary>
+        [pbr::OriginalName("ADDRESS_NOT_TARGETABLE")] AddressNotTargetable = 98,
       }
 
     }

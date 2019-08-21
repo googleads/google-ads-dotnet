@@ -272,7 +272,9 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
             CreateCustomerClientRequest expectedRequest = new CreateCustomerClientRequest
             {
                 CustomerId = "customerId-1772061412",
-                CustomerClient = new Customer()
+                CustomerClient = new Customer(),
+                EmailAddress = null,
+                AccessRole = AccessRoleEnum.Types.AccessRole.Unspecified,
             };
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
@@ -283,7 +285,9 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             Customer customerClient = new Customer();
-            CreateCustomerClientResponse response = client.CreateCustomerClient(customerId, customerClient);
+            string emailAddress = null;
+            AccessRoleEnum.Types.AccessRole accessRole = AccessRoleEnum.Types.AccessRole.Unspecified;
+            CreateCustomerClientResponse response = client.CreateCustomerClient(customerId, customerClient, emailAddress, accessRole);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -319,12 +323,56 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         public void CreateCustomerClient2()
         {
             Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            CreateCustomerClientRequest expectedRequest = new CreateCustomerClientRequest
+            {
+                CustomerId = "customerId-1772061412",
+                CustomerClient = new Customer(),
+            };
+            CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
+            {
+                ResourceName = "resourceName979421212",
+            };
+            mockGrpcClient.Setup(x => x.CreateCustomerClient(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(expectedResponse);
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            Customer customerClient = new Customer();
+            CreateCustomerClientResponse response = client.CreateCustomerClient(customerId, customerClient);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async Task CreateCustomerClientAsync2()
+        {
+            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            CreateCustomerClientRequest expectedRequest = new CreateCustomerClientRequest
+            {
+                CustomerId = "customerId-1772061412",
+                CustomerClient = new Customer(),
+            };
+            CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
+            {
+                ResourceName = "resourceName979421212",
+            };
+            mockGrpcClient.Setup(x => x.CreateCustomerClientAsync(expectedRequest, It.IsAny<CallOptions>()))
+                .Returns(new Grpc.Core.AsyncUnaryCall<CreateCustomerClientResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            string customerId = "customerId-1772061412";
+            Customer customerClient = new Customer();
+            CreateCustomerClientResponse response = await client.CreateCustomerClientAsync(customerId, customerClient);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void CreateCustomerClient3()
+        {
+            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
             CreateCustomerClientRequest request = new CreateCustomerClientRequest
             {
                 CustomerId = "customerId-1772061412",
                 CustomerClient = new Customer(),
-                EmailAddress = null,
-                AccessRole = AccessRoleEnum.Types.AccessRole.Unspecified,
             };
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
@@ -339,15 +387,13 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task CreateCustomerClientAsync2()
+        public async Task CreateCustomerClientAsync3()
         {
             Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
             CreateCustomerClientRequest request = new CreateCustomerClientRequest
             {
                 CustomerId = "customerId-1772061412",
                 CustomerClient = new Customer(),
-                EmailAddress = null,
-                AccessRole = AccessRoleEnum.Types.AccessRole.Unspecified,
             };
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {

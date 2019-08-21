@@ -47,7 +47,7 @@
   <ItemGroup>
     <!-- Include local projects over nuget dependencies if available -->
     <ProjectReference Condition="Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="..\..\..\src\Google.Ads.GoogleAds.csproj" />
-    <Reference Condition="!Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds, Version=2.3.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+    <Reference Condition="!Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds, Version=2.4.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Ads.GoogleAds.2.2.0\lib\net452\Google.Ads.GoogleAds.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -196,7 +196,7 @@
     <Error Condition="!Exists('..\..\..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props'))" />
   </Target>
   <Import Project="..\..\..\packages\Grpc.Core.1.20.1\build\net45\Grpc.Core.targets" Condition="Exists('..\..\..\packages\Grpc.Core.1.20.1\build\net45\Grpc.Core.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
