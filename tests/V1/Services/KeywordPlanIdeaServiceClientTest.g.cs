@@ -38,10 +38,11 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         public void GenerateKeywordIdeas()
         {
             Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient> mockGrpcClient = new Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient>(MockBehavior.Strict);
+            string language = "English";
             GenerateKeywordIdeasRequest expectedRequest = new GenerateKeywordIdeasRequest
             {
                 CustomerId = "customerId-1772061412",
-                Language = null,
+                Language = language,
                 GeoTargetConstants = { },
                 KeywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified,
             };
@@ -50,7 +51,6 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
                 .Returns(expectedResponse);
             KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
-            string language = null;
             IEnumerable<string> geoTargetConstants = new List<string>();
             KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified;
             GenerateKeywordIdeaResponse response = client.GenerateKeywordIdeas(customerId, language, geoTargetConstants, keywordPlanNetwork);
@@ -62,10 +62,11 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         public async Task GenerateKeywordIdeasAsync()
         {
             Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient> mockGrpcClient = new Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient>(MockBehavior.Strict);
+            string language = "English";
             GenerateKeywordIdeasRequest expectedRequest = new GenerateKeywordIdeasRequest
             {
                 CustomerId = "customerId-1772061412",
-                Language = null,
+                Language = language,
                 GeoTargetConstants = { },
                 KeywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified,
             };
@@ -74,7 +75,6 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
                 .Returns(new Grpc.Core.AsyncUnaryCall<GenerateKeywordIdeaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
             KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
-            string language = null;
             IEnumerable<string> geoTargetConstants = new List<string>();
             KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified;
             GenerateKeywordIdeaResponse response = await client.GenerateKeywordIdeasAsync(customerId, language, geoTargetConstants, keywordPlanNetwork);

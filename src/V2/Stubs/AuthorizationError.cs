@@ -26,21 +26,22 @@ namespace Google.Ads.GoogleAds.V2.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92Mi9lcnJvcnMvYXV0aG9yaXphdGlv",
             "bl9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIuZXJyb3Jz",
-            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvItsCChZBdXRob3JpemF0",
-            "aW9uRXJyb3JFbnVtIsACChJBdXRob3JpemF0aW9uRXJyb3ISDwoLVU5TUEVD",
+            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIpoDChZBdXRob3JpemF0",
+            "aW9uRXJyb3JFbnVtIv8CChJBdXRob3JpemF0aW9uRXJyb3ISDwoLVU5TUEVD",
             "SUZJRUQQABILCgdVTktOT1dOEAESGgoWVVNFUl9QRVJNSVNTSU9OX0RFTklF",
             "RBACEiMKH0RFVkVMT1BFUl9UT0tFTl9OT1RfV0hJVEVMSVNURUQQAxIeChpE",
             "RVZFTE9QRVJfVE9LRU5fUFJPSElCSVRFRBAEEhQKEFBST0pFQ1RfRElTQUJM",
             "RUQQBRIXChNBVVRIT1JJWkFUSU9OX0VSUk9SEAYSGAoUQUNUSU9OX05PVF9Q",
             "RVJNSVRURUQQBxIVChFJTkNPTVBMRVRFX1NJR05VUBAIEhgKFENVU1RPTUVS",
             "X05PVF9FTkFCTEVEEBgSDwoLTUlTU0lOR19UT1MQCRIgChxERVZFTE9QRVJf",
-            "VE9LRU5fTk9UX0FQUFJPVkVEEApC8gEKImNvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52Mi5lcnJvcnNCF0F1dGhvcml6YXRpb25FcnJvclByb3RvUAFaRGdv",
-            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
-            "ZWFkcy92Mi9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjIuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjJcRXJy",
-            "b3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjI6OkVycm9yc2IGcHJv",
-            "dG8z"));
+            "VE9LRU5fTk9UX0FQUFJPVkVEEAoSPQo5SU5WQUxJRF9MT0dJTl9DVVNUT01F",
+            "Ul9JRF9TRVJWSU5HX0NVU1RPTUVSX0lEX0NPTUJJTkFUSU9OEAtC8gEKImNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5lcnJvcnNCF0F1dGhvcml6YXRp",
+            "b25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
+            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92Mi9lcnJvcnM7ZXJyb3JzogIDR0FB",
+            "qgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIuRXJyb3JzygIeR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjJcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
+            "czo6VjI6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -216,6 +217,11 @@ namespace Google.Ads.GoogleAds.V2.Errors {
         /// only be used with test accounts.
         /// </summary>
         [pbr::OriginalName("DEVELOPER_TOKEN_NOT_APPROVED")] DeveloperTokenNotApproved = 10,
+        /// <summary>
+        /// The login customer specified does not have access to the account
+        /// specified, so the request is invalid.
+        /// </summary>
+        [pbr::OriginalName("INVALID_LOGIN_CUSTOMER_ID_SERVING_CUSTOMER_ID_COMBINATION")] InvalidLoginCustomerIdServingCustomerIdCombination = 11,
       }
 
     }

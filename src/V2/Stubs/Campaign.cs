@@ -140,31 +140,31 @@ namespace Google.Ads.GoogleAds.V2.Resources {
             "HXRhcmdldF9wYXJ0bmVyX3NlYXJjaF9uZXR3b3JrGAQgASgLMhouZ29vZ2xl",
             "LnByb3RvYnVmLkJvb2xWYWx1ZRpIChBIb3RlbFNldHRpbmdJbmZvEjQKD2hv",
             "dGVsX2NlbnRlcl9pZBgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
-            "bHVlGkUKD1RyYWNraW5nU2V0dGluZxIyCgx0cmFja2luZ191cmwYASABKAsy",
-            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUa8wEKDFZhbml0eVBoYXJt",
-            "YRKAAQoedmFuaXR5X3BoYXJtYV9kaXNwbGF5X3VybF9tb2RlGAEgASgOMlgu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjIuZW51bXMuVmFuaXR5UGhhcm1hRGlz",
-            "cGxheVVybE1vZGVFbnVtLlZhbml0eVBoYXJtYURpc3BsYXlVcmxNb2RlEmAK",
-            "EnZhbml0eV9waGFybWFfdGV4dBgCIAEoDjJELmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyLmVudW1zLlZhbml0eVBoYXJtYVRleHRFbnVtLlZhbml0eVBoYXJt",
-            "YVRleHQa6gEKF0R5bmFtaWNTZWFyY2hBZHNTZXR0aW5nEjEKC2RvbWFpbl9u",
-            "YW1lGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjMKDWxh",
-            "bmd1YWdlX2NvZGUYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
-            "dWUSOgoWdXNlX3N1cHBsaWVkX3VybHNfb25seRgDIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5Cb29sVmFsdWUSKwoFZmVlZHMYBSADKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUaUQoVU2VsZWN0aXZlT3B0aW1pemF0aW9uEjgK",
-            "EmNvbnZlcnNpb25fYWN0aW9ucxgBIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRriAQoPU2hvcHBpbmdTZXR0aW5nEjAKC21lcmNoYW50X2lk",
-            "GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSMwoNc2FsZXNf",
-            "Y291bnRyeRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI2",
-            "ChFjYW1wYWlnbl9wcmlvcml0eRgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
-            "bnQzMlZhbHVlEjAKDGVuYWJsZV9sb2NhbBgEIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5Cb29sVmFsdWUa+gEKFEdlb1RhcmdldFR5cGVTZXR0aW5nEnAKGHBv",
-            "c2l0aXZlX2dlb190YXJnZXRfdHlwZRgBIAEoDjJOLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYyLmVudW1zLlBvc2l0aXZlR2VvVGFyZ2V0VHlwZUVudW0uUG9z",
-            "aXRpdmVHZW9UYXJnZXRUeXBlEnAKGG5lZ2F0aXZlX2dlb190YXJnZXRfdHlw",
-            "ZRgCIAEoDjJOLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmVudW1zLk5lZ2F0",
-            "aXZlR2VvVGFyZ2V0VHlwZUVudW0uTmVnYXRpdmVHZW9UYXJnZXRUeXBlGrAC",
+            "bHVlGuoBChdEeW5hbWljU2VhcmNoQWRzU2V0dGluZxIxCgtkb21haW5fbmFt",
+            "ZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1sYW5n",
+            "dWFnZV9jb2RlGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "EjoKFnVzZV9zdXBwbGllZF91cmxzX29ubHkYAyABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuQm9vbFZhbHVlEisKBWZlZWRzGAUgAygLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlGuIBCg9TaG9wcGluZ1NldHRpbmcSMAoLbWVyY2hh",
+            "bnRfaWQYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIzCg1z",
+            "YWxlc19jb3VudHJ5GAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
+            "bHVlEjYKEWNhbXBhaWduX3ByaW9yaXR5GAMgASgLMhsuZ29vZ2xlLnByb3Rv",
+            "YnVmLkludDMyVmFsdWUSMAoMZW5hYmxlX2xvY2FsGAQgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLkJvb2xWYWx1ZRpFCg9UcmFja2luZ1NldHRpbmcSMgoMdHJh",
+            "Y2tpbmdfdXJsGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "GvMBCgxWYW5pdHlQaGFybWESgAEKHnZhbml0eV9waGFybWFfZGlzcGxheV91",
+            "cmxfbW9kZRgBIAEoDjJYLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmVudW1z",
+            "LlZhbml0eVBoYXJtYURpc3BsYXlVcmxNb2RlRW51bS5WYW5pdHlQaGFybWFE",
+            "aXNwbGF5VXJsTW9kZRJgChJ2YW5pdHlfcGhhcm1hX3RleHQYAiABKA4yRC5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52Mi5lbnVtcy5WYW5pdHlQaGFybWFUZXh0",
+            "RW51bS5WYW5pdHlQaGFybWFUZXh0GvoBChRHZW9UYXJnZXRUeXBlU2V0dGlu",
+            "ZxJwChhwb3NpdGl2ZV9nZW9fdGFyZ2V0X3R5cGUYASABKA4yTi5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52Mi5lbnVtcy5Qb3NpdGl2ZUdlb1RhcmdldFR5cGVF",
+            "bnVtLlBvc2l0aXZlR2VvVGFyZ2V0VHlwZRJwChhuZWdhdGl2ZV9nZW9fdGFy",
+            "Z2V0X3R5cGUYAiABKA4yTi5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5lbnVt",
+            "cy5OZWdhdGl2ZUdlb1RhcmdldFR5cGVFbnVtLk5lZ2F0aXZlR2VvVGFyZ2V0",
+            "VHlwZRpRChVTZWxlY3RpdmVPcHRpbWl6YXRpb24SOAoSY29udmVyc2lvbl9h",
+            "Y3Rpb25zGAEgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlGrAC",
             "ChJBcHBDYW1wYWlnblNldHRpbmcSjAEKGmJpZGRpbmdfc3RyYXRlZ3lfZ29h",
             "bF90eXBlGAEgASgOMmguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIuZW51bXMu",
             "QXBwQ2FtcGFpZ25CaWRkaW5nU3RyYXRlZ3lHb2FsVHlwZUVudW0uQXBwQ2Ft",
@@ -184,12 +184,12 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "ServingStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "RealTimeBiddingSetting", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "ShoppingSetting", "TargetingSetting", "GeoTargetTypeSetting", "AppCampaignSetting", "Labels", "ExperimentType", "BaseCampaign", "CampaignBudget", "BiddingStrategyType", "StartDate", "EndDate", "FinalUrlSuffix", "FrequencyCaps", "VideoBrandSafetySuitability", "VanityPharma", "SelectiveOptimization", "TrackingSetting", "PaymentMode", "BiddingStrategy", "Commission", "ManualCpc", "ManualCpm", "ManualCpv", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetImpressionShare", "TargetRoas", "TargetSpend", "PercentCpc", "TargetCpm" }, new[]{ "CampaignBiddingStrategy" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.HotelSettingInfo), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.HotelSettingInfo.Parser, new[]{ "HotelCenterId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.DynamicSearchAdsSetting), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.DynamicSearchAdsSetting.Parser, new[]{ "DomainName", "LanguageCode", "UseSuppliedUrlsOnly", "Feeds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.ShoppingSetting), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.ShoppingSetting.Parser, new[]{ "MerchantId", "SalesCountry", "CampaignPriority", "EnableLocal" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.TrackingSetting), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.TrackingSetting.Parser, new[]{ "TrackingUrl" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.VanityPharma), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.VanityPharma.Parser, new[]{ "VanityPharmaDisplayUrlMode", "VanityPharmaText" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.DynamicSearchAdsSetting), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.DynamicSearchAdsSetting.Parser, new[]{ "DomainName", "LanguageCode", "UseSuppliedUrlsOnly", "Feeds" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.SelectiveOptimization), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.SelectiveOptimization.Parser, new[]{ "ConversionActions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.ShoppingSetting), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.ShoppingSetting.Parser, new[]{ "MerchantId", "SalesCountry", "CampaignPriority", "EnableLocal" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.GeoTargetTypeSetting), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.GeoTargetTypeSetting.Parser, new[]{ "PositiveGeoTargetType", "NegativeGeoTargetType" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.SelectiveOptimization), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.SelectiveOptimization.Parser, new[]{ "ConversionActions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.AppCampaignSetting), global::Google.Ads.GoogleAds.V2.Resources.Campaign.Types.AppCampaignSetting.Parser, new[]{ "BiddingStrategyGoalType", "AppId", "AppStore" }, null, null, null)})
           }));
     }
@@ -2397,314 +2397,6 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       }
 
       /// <summary>
-      /// Campaign level settings for tracking information.
-      /// </summary>
-      public sealed partial class TrackingSetting : pb::IMessage<TrackingSetting> {
-        private static readonly pb::MessageParser<TrackingSetting> _parser = new pb::MessageParser<TrackingSetting>(() => new TrackingSetting());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<TrackingSetting> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[2]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TrackingSetting() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TrackingSetting(TrackingSetting other) : this() {
-          TrackingUrl = other.TrackingUrl;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TrackingSetting Clone() {
-          return new TrackingSetting(this);
-        }
-
-        /// <summary>Field number for the "tracking_url" field.</summary>
-        public const int TrackingUrlFieldNumber = 1;
-        private static readonly pb::FieldCodec<string> _single_trackingUrl_codec = pb::FieldCodec.ForClassWrapper<string>(10);
-        private string trackingUrl_;
-        /// <summary>
-        /// The url used for dynamic tracking.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string TrackingUrl {
-          get { return trackingUrl_; }
-          set {
-            trackingUrl_ = value;
-          }
-        }
-
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as TrackingSetting);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(TrackingSetting other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (TrackingUrl != other.TrackingUrl) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (trackingUrl_ != null) hash ^= TrackingUrl.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (trackingUrl_ != null) {
-            _single_trackingUrl_codec.WriteTagAndValue(output, TrackingUrl);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (trackingUrl_ != null) {
-            size += _single_trackingUrl_codec.CalculateSizeWithTag(TrackingUrl);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(TrackingSetting other) {
-          if (other == null) {
-            return;
-          }
-          if (other.trackingUrl_ != null) {
-            if (trackingUrl_ == null || other.TrackingUrl != "") {
-              TrackingUrl = other.TrackingUrl;
-            }
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                string value = _single_trackingUrl_codec.Read(input);
-                if (trackingUrl_ == null || value != "") {
-                  TrackingUrl = value;
-                }
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      /// <summary>
-      /// Describes how unbranded pharma ads will be displayed.
-      /// </summary>
-      public sealed partial class VanityPharma : pb::IMessage<VanityPharma> {
-        private static readonly pb::MessageParser<VanityPharma> _parser = new pb::MessageParser<VanityPharma>(() => new VanityPharma());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<VanityPharma> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[3]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public VanityPharma() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public VanityPharma(VanityPharma other) : this() {
-          vanityPharmaDisplayUrlMode_ = other.vanityPharmaDisplayUrlMode_;
-          vanityPharmaText_ = other.vanityPharmaText_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public VanityPharma Clone() {
-          return new VanityPharma(this);
-        }
-
-        /// <summary>Field number for the "vanity_pharma_display_url_mode" field.</summary>
-        public const int VanityPharmaDisplayUrlModeFieldNumber = 1;
-        private global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode vanityPharmaDisplayUrlMode_ = 0;
-        /// <summary>
-        /// The display mode for vanity pharma URLs.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode VanityPharmaDisplayUrlMode {
-          get { return vanityPharmaDisplayUrlMode_; }
-          set {
-            vanityPharmaDisplayUrlMode_ = value;
-          }
-        }
-
-        /// <summary>Field number for the "vanity_pharma_text" field.</summary>
-        public const int VanityPharmaTextFieldNumber = 2;
-        private global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaTextEnum.Types.VanityPharmaText vanityPharmaText_ = 0;
-        /// <summary>
-        /// The text that will be displayed in display URL of the text ad when
-        /// website description is the selected display mode for vanity pharma URLs.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaTextEnum.Types.VanityPharmaText VanityPharmaText {
-          get { return vanityPharmaText_; }
-          set {
-            vanityPharmaText_ = value;
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as VanityPharma);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(VanityPharma other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (VanityPharmaDisplayUrlMode != other.VanityPharmaDisplayUrlMode) return false;
-          if (VanityPharmaText != other.VanityPharmaText) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (VanityPharmaDisplayUrlMode != 0) hash ^= VanityPharmaDisplayUrlMode.GetHashCode();
-          if (VanityPharmaText != 0) hash ^= VanityPharmaText.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          if (VanityPharmaDisplayUrlMode != 0) {
-            output.WriteRawTag(8);
-            output.WriteEnum((int) VanityPharmaDisplayUrlMode);
-          }
-          if (VanityPharmaText != 0) {
-            output.WriteRawTag(16);
-            output.WriteEnum((int) VanityPharmaText);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (VanityPharmaDisplayUrlMode != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VanityPharmaDisplayUrlMode);
-          }
-          if (VanityPharmaText != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VanityPharmaText);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(VanityPharma other) {
-          if (other == null) {
-            return;
-          }
-          if (other.VanityPharmaDisplayUrlMode != 0) {
-            VanityPharmaDisplayUrlMode = other.VanityPharmaDisplayUrlMode;
-          }
-          if (other.VanityPharmaText != 0) {
-            VanityPharmaText = other.VanityPharmaText;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                VanityPharmaDisplayUrlMode = (global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode) input.ReadEnum();
-                break;
-              }
-              case 16: {
-                VanityPharmaText = (global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaTextEnum.Types.VanityPharmaText) input.ReadEnum();
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      /// <summary>
       /// The setting for controlling Dynamic Search Ads (DSA).
       /// </summary>
       public sealed partial class DynamicSearchAdsSetting : pb::IMessage<DynamicSearchAdsSetting> {
@@ -2715,7 +2407,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[4]; }
+          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[2]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2944,134 +2636,6 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       }
 
       /// <summary>
-      /// Selective optimization setting for this campaign, which includes a set of
-      /// conversion actions to optimize this campaign towards.
-      /// </summary>
-      public sealed partial class SelectiveOptimization : pb::IMessage<SelectiveOptimization> {
-        private static readonly pb::MessageParser<SelectiveOptimization> _parser = new pb::MessageParser<SelectiveOptimization>(() => new SelectiveOptimization());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<SelectiveOptimization> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[5]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public SelectiveOptimization() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public SelectiveOptimization(SelectiveOptimization other) : this() {
-          conversionActions_ = other.conversionActions_.Clone();
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public SelectiveOptimization Clone() {
-          return new SelectiveOptimization(this);
-        }
-
-        /// <summary>Field number for the "conversion_actions" field.</summary>
-        public const int ConversionActionsFieldNumber = 1;
-        private static readonly pb::FieldCodec<string> _repeated_conversionActions_codec
-            = pb::FieldCodec.ForClassWrapper<string>(10);
-        private readonly pbc::RepeatedField<string> conversionActions_ = new pbc::RepeatedField<string>();
-        /// <summary>
-        /// The selected set of conversion actions for optimizing this campaign.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public pbc::RepeatedField<string> ConversionActions {
-          get { return conversionActions_; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as SelectiveOptimization);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(SelectiveOptimization other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if(!conversionActions_.Equals(other.conversionActions_)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          hash ^= conversionActions_.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-          conversionActions_.WriteTo(output, _repeated_conversionActions_codec);
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          size += conversionActions_.CalculateSize(_repeated_conversionActions_codec);
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(SelectiveOptimization other) {
-          if (other == null) {
-            return;
-          }
-          conversionActions_.Add(other.conversionActions_);
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                conversionActions_.AddEntriesFrom(input, _repeated_conversionActions_codec);
-                break;
-              }
-            }
-          }
-        }
-
-      }
-
-      /// <summary>
       /// The setting for Shopping campaigns. Defines the universe of products that
       /// can be advertised by the campaign, and how this campaign interacts with
       /// other Shopping campaigns.
@@ -3084,7 +2648,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[6]; }
+          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[3]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3336,6 +2900,314 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       }
 
       /// <summary>
+      /// Campaign level settings for tracking information.
+      /// </summary>
+      public sealed partial class TrackingSetting : pb::IMessage<TrackingSetting> {
+        private static readonly pb::MessageParser<TrackingSetting> _parser = new pb::MessageParser<TrackingSetting>(() => new TrackingSetting());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<TrackingSetting> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[4]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TrackingSetting() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TrackingSetting(TrackingSetting other) : this() {
+          TrackingUrl = other.TrackingUrl;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TrackingSetting Clone() {
+          return new TrackingSetting(this);
+        }
+
+        /// <summary>Field number for the "tracking_url" field.</summary>
+        public const int TrackingUrlFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _single_trackingUrl_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+        private string trackingUrl_;
+        /// <summary>
+        /// The url used for dynamic tracking.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string TrackingUrl {
+          get { return trackingUrl_; }
+          set {
+            trackingUrl_ = value;
+          }
+        }
+
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as TrackingSetting);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(TrackingSetting other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (TrackingUrl != other.TrackingUrl) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (trackingUrl_ != null) hash ^= TrackingUrl.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (trackingUrl_ != null) {
+            _single_trackingUrl_codec.WriteTagAndValue(output, TrackingUrl);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (trackingUrl_ != null) {
+            size += _single_trackingUrl_codec.CalculateSizeWithTag(TrackingUrl);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(TrackingSetting other) {
+          if (other == null) {
+            return;
+          }
+          if (other.trackingUrl_ != null) {
+            if (trackingUrl_ == null || other.TrackingUrl != "") {
+              TrackingUrl = other.TrackingUrl;
+            }
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                string value = _single_trackingUrl_codec.Read(input);
+                if (trackingUrl_ == null || value != "") {
+                  TrackingUrl = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Describes how unbranded pharma ads will be displayed.
+      /// </summary>
+      public sealed partial class VanityPharma : pb::IMessage<VanityPharma> {
+        private static readonly pb::MessageParser<VanityPharma> _parser = new pb::MessageParser<VanityPharma>(() => new VanityPharma());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<VanityPharma> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[5]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public VanityPharma() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public VanityPharma(VanityPharma other) : this() {
+          vanityPharmaDisplayUrlMode_ = other.vanityPharmaDisplayUrlMode_;
+          vanityPharmaText_ = other.vanityPharmaText_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public VanityPharma Clone() {
+          return new VanityPharma(this);
+        }
+
+        /// <summary>Field number for the "vanity_pharma_display_url_mode" field.</summary>
+        public const int VanityPharmaDisplayUrlModeFieldNumber = 1;
+        private global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode vanityPharmaDisplayUrlMode_ = 0;
+        /// <summary>
+        /// The display mode for vanity pharma URLs.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode VanityPharmaDisplayUrlMode {
+          get { return vanityPharmaDisplayUrlMode_; }
+          set {
+            vanityPharmaDisplayUrlMode_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "vanity_pharma_text" field.</summary>
+        public const int VanityPharmaTextFieldNumber = 2;
+        private global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaTextEnum.Types.VanityPharmaText vanityPharmaText_ = 0;
+        /// <summary>
+        /// The text that will be displayed in display URL of the text ad when
+        /// website description is the selected display mode for vanity pharma URLs.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaTextEnum.Types.VanityPharmaText VanityPharmaText {
+          get { return vanityPharmaText_; }
+          set {
+            vanityPharmaText_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as VanityPharma);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(VanityPharma other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (VanityPharmaDisplayUrlMode != other.VanityPharmaDisplayUrlMode) return false;
+          if (VanityPharmaText != other.VanityPharmaText) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (VanityPharmaDisplayUrlMode != 0) hash ^= VanityPharmaDisplayUrlMode.GetHashCode();
+          if (VanityPharmaText != 0) hash ^= VanityPharmaText.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (VanityPharmaDisplayUrlMode != 0) {
+            output.WriteRawTag(8);
+            output.WriteEnum((int) VanityPharmaDisplayUrlMode);
+          }
+          if (VanityPharmaText != 0) {
+            output.WriteRawTag(16);
+            output.WriteEnum((int) VanityPharmaText);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (VanityPharmaDisplayUrlMode != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VanityPharmaDisplayUrlMode);
+          }
+          if (VanityPharmaText != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VanityPharmaText);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(VanityPharma other) {
+          if (other == null) {
+            return;
+          }
+          if (other.VanityPharmaDisplayUrlMode != 0) {
+            VanityPharmaDisplayUrlMode = other.VanityPharmaDisplayUrlMode;
+          }
+          if (other.VanityPharmaText != 0) {
+            VanityPharmaText = other.VanityPharmaText;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                VanityPharmaDisplayUrlMode = (global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaDisplayUrlModeEnum.Types.VanityPharmaDisplayUrlMode) input.ReadEnum();
+                break;
+              }
+              case 16: {
+                VanityPharmaText = (global::Google.Ads.GoogleAds.V2.Enums.VanityPharmaTextEnum.Types.VanityPharmaText) input.ReadEnum();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
       /// Represents a collection of settings related to ads geotargeting.
       /// </summary>
       public sealed partial class GeoTargetTypeSetting : pb::IMessage<GeoTargetTypeSetting> {
@@ -3346,7 +3218,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[7]; }
+          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[6]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3493,6 +3365,134 @@ namespace Google.Ads.GoogleAds.V2.Resources {
               }
               case 16: {
                 NegativeGeoTargetType = (global::Google.Ads.GoogleAds.V2.Enums.NegativeGeoTargetTypeEnum.Types.NegativeGeoTargetType) input.ReadEnum();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      /// <summary>
+      /// Selective optimization setting for this campaign, which includes a set of
+      /// conversion actions to optimize this campaign towards.
+      /// </summary>
+      public sealed partial class SelectiveOptimization : pb::IMessage<SelectiveOptimization> {
+        private static readonly pb::MessageParser<SelectiveOptimization> _parser = new pb::MessageParser<SelectiveOptimization>(() => new SelectiveOptimization());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<SelectiveOptimization> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V2.Resources.Campaign.Descriptor.NestedTypes[7]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SelectiveOptimization() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SelectiveOptimization(SelectiveOptimization other) : this() {
+          conversionActions_ = other.conversionActions_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SelectiveOptimization Clone() {
+          return new SelectiveOptimization(this);
+        }
+
+        /// <summary>Field number for the "conversion_actions" field.</summary>
+        public const int ConversionActionsFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _repeated_conversionActions_codec
+            = pb::FieldCodec.ForClassWrapper<string>(10);
+        private readonly pbc::RepeatedField<string> conversionActions_ = new pbc::RepeatedField<string>();
+        /// <summary>
+        /// The selected set of conversion actions for optimizing this campaign.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<string> ConversionActions {
+          get { return conversionActions_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as SelectiveOptimization);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(SelectiveOptimization other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!conversionActions_.Equals(other.conversionActions_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= conversionActions_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          conversionActions_.WriteTo(output, _repeated_conversionActions_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += conversionActions_.CalculateSize(_repeated_conversionActions_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(SelectiveOptimization other) {
+          if (other == null) {
+            return;
+          }
+          conversionActions_.Add(other.conversionActions_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                conversionActions_.AddEntriesFrom(input, _repeated_conversionActions_codec);
                 break;
               }
             }

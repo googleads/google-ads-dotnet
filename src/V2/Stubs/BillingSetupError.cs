@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V2.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92Mi9lcnJvcnMvYmlsbGluZ19zZXR1",
             "cF9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIuZXJyb3Jz",
-            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIvsEChVCaWxsaW5nU2V0",
-            "dXBFcnJvckVudW0i4QQKEUJpbGxpbmdTZXR1cEVycm9yEg8KC1VOU1BFQ0lG",
+            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIqEFChVCaWxsaW5nU2V0",
+            "dXBFcnJvckVudW0ihwUKEUJpbGxpbmdTZXR1cEVycm9yEg8KC1VOU1BFQ0lG",
             "SUVEEAASCwoHVU5LTk9XThABEicKI0NBTk5PVF9VU0VfRVhJU1RJTkdfQU5E",
             "X05FV19BQ0NPVU5UEAISJwojQ0FOTk9UX1JFTU9WRV9TVEFSVEVEX0JJTExJ",
             "TkdfU0VUVVAQAxIyCi5DQU5OT1RfQ0hBTkdFX0JJTExJTkdfVE9fU0FNRV9Q",
@@ -40,13 +40,14 @@ namespace Google.Ads.GoogleAds.V2.Errors {
             "SVNTSU9OEAsSIQodQ0hBTkdFX09GX0JJTExfVE9fSU5fUFJPR1JFU1MQDBIe",
             "ChpQQVlNRU5UU19QUk9GSUxFX05PVF9GT1VORBANEh4KGlBBWU1FTlRTX0FD",
             "Q09VTlRfTk9UX0ZPVU5EEA4SHwobUEFZTUVOVFNfUFJPRklMRV9JTkVMSUdJ",
-            "QkxFEA8SHwobUEFZTUVOVFNfQUNDT1VOVF9JTkVMSUdJQkxFEBBC8QEKImNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5lcnJvcnNCFkJpbGxpbmdTZXR1",
-            "cEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
-            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyL2Vycm9ycztlcnJvcnOiAgNHQUGq",
-            "Ah5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMi5FcnJvcnPKAh5Hb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMlxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMjo6RXJyb3JzYgZwcm90bzM="));
+            "QkxFEA8SHwobUEFZTUVOVFNfQUNDT1VOVF9JTkVMSUdJQkxFEBASJAogQ1VT",
+            "VE9NRVJfTkVFRFNfSU5URVJOQUxfQVBQUk9WQUwQEULxAQoiY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyLmVycm9yc0IWQmlsbGluZ1NldHVwRXJyb3JQ",
+            "cm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
+            "L2Fkcy9nb29nbGVhZHMvdjIvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2ds",
+            "ZS5BZHMuR29vZ2xlQWRzLlYyLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xl",
+            "QWRzXFYyXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyOjpF",
+            "cnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -176,26 +177,26 @@ namespace Google.Ads.GoogleAds.V2.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Cannot use both an existing Payments account and a new Payments account
-        /// when setting up billing.
+        /// Cannot specify both an existing payments account and a new payments
+        /// account when setting up billing.
         /// </summary>
         [pbr::OriginalName("CANNOT_USE_EXISTING_AND_NEW_ACCOUNT")] CannotUseExistingAndNewAccount = 2,
         /// <summary>
-        /// Cannot cancel an APPROVED billing setup whose start time has passed.
+        /// Cannot cancel an approved billing setup whose start time has passed.
         /// </summary>
         [pbr::OriginalName("CANNOT_REMOVE_STARTED_BILLING_SETUP")] CannotRemoveStartedBillingSetup = 3,
         /// <summary>
-        /// Cannot perform a Change of Bill-To (CBT) to the same Payments account.
+        /// Cannot perform a Change of Bill-To (CBT) to the same payments account.
         /// </summary>
         [pbr::OriginalName("CANNOT_CHANGE_BILLING_TO_SAME_PAYMENTS_ACCOUNT")] CannotChangeBillingToSamePaymentsAccount = 4,
         /// <summary>
-        /// Billing Setups can only be used by customers with ENABLED or DRAFT
+        /// Billing setups can only be used by customers with ENABLED or DRAFT
         /// status.
         /// </summary>
         [pbr::OriginalName("BILLING_SETUP_NOT_PERMITTED_FOR_CUSTOMER_STATUS")] BillingSetupNotPermittedForCustomerStatus = 5,
         /// <summary>
-        /// Billing Setups must either include a correctly formatted existing
-        /// Payments account id, or a non-empty new Payments account name.
+        /// Billing setups must either include a correctly formatted existing
+        /// payments account id, or a non-empty new payments account name.
         /// </summary>
         [pbr::OriginalName("INVALID_PAYMENTS_ACCOUNT")] InvalidPaymentsAccount = 6,
         /// <summary>
@@ -203,50 +204,51 @@ namespace Google.Ads.GoogleAds.V2.Errors {
         /// </summary>
         [pbr::OriginalName("BILLING_SETUP_NOT_PERMITTED_FOR_CUSTOMER_CATEGORY")] BillingSetupNotPermittedForCustomerCategory = 7,
         /// <summary>
-        /// Billing Setup creations can only use NOW for start time type.
+        /// Billing setup creations can only use NOW for start time type.
         /// </summary>
         [pbr::OriginalName("INVALID_START_TIME_TYPE")] InvalidStartTimeType = 8,
         /// <summary>
-        /// Billing Setups can only be created for a third-party customer if they do
+        /// Billing setups can only be created for a third-party customer if they do
         /// not already have a setup.
         /// </summary>
         [pbr::OriginalName("THIRD_PARTY_ALREADY_HAS_BILLING")] ThirdPartyAlreadyHasBilling = 9,
         /// <summary>
-        /// Billing Setups cannot be created if there is already a pending billing in
-        /// progress, ie. a billing known to Payments.
+        /// Billing setups cannot be created if there is already a pending billing in
+        /// progress.
         /// </summary>
         [pbr::OriginalName("BILLING_SETUP_IN_PROGRESS")] BillingSetupInProgress = 10,
         /// <summary>
-        /// Billing Setups can only be created by customers who have permission to
+        /// Billing setups can only be created by customers who have permission to
         /// setup billings. Users can contact a representative for help setting up
         /// permissions.
         /// </summary>
         [pbr::OriginalName("NO_SIGNUP_PERMISSION")] NoSignupPermission = 11,
         /// <summary>
-        /// Billing Setups cannot be created if there is already a future-approved
+        /// Billing setups cannot be created if there is already a future-approved
         /// billing.
         /// </summary>
         [pbr::OriginalName("CHANGE_OF_BILL_TO_IN_PROGRESS")] ChangeOfBillToInProgress = 12,
         /// <summary>
-        /// Billing Setup creation failed because Payments could not find the
-        /// requested Payments profile.
+        /// Requested payments profile not found.
         /// </summary>
         [pbr::OriginalName("PAYMENTS_PROFILE_NOT_FOUND")] PaymentsProfileNotFound = 13,
         /// <summary>
-        /// Billing Setup creation failed because Payments could not find the
-        /// requested Payments account.
+        /// Requested payments account not found.
         /// </summary>
         [pbr::OriginalName("PAYMENTS_ACCOUNT_NOT_FOUND")] PaymentsAccountNotFound = 14,
         /// <summary>
-        /// Billing Setup creation failed because Payments considers requested
-        /// Payments profile ineligible.
+        /// Billing setup creation failed because the payments profile is ineligible.
         /// </summary>
         [pbr::OriginalName("PAYMENTS_PROFILE_INELIGIBLE")] PaymentsProfileIneligible = 15,
         /// <summary>
-        /// Billing Setup creation failed because Payments considers requested
-        /// Payments account ineligible.
+        /// Billing setup creation failed because the payments account is ineligible.
         /// </summary>
         [pbr::OriginalName("PAYMENTS_ACCOUNT_INELIGIBLE")] PaymentsAccountIneligible = 16,
+        /// <summary>
+        /// Billing setup creation failed because the payments profile needs internal
+        /// approval.
+        /// </summary>
+        [pbr::OriginalName("CUSTOMER_NEEDS_INTERNAL_APPROVAL")] CustomerNeedsInternalApproval = 17,
       }
 
     }
