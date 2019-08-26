@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
   }
   #region Messages
   /// <summary>
-  /// Request message for fetching all accessible Payments accounts.
+  /// Request message for fetching all accessible payments accounts.
   /// </summary>
   public sealed partial class ListPaymentsAccountsRequest : pb::IMessage<ListPaymentsAccountsRequest> {
     private static readonly pb::MessageParser<ListPaymentsAccountsRequest> _parser = new pb::MessageParser<ListPaymentsAccountsRequest>(() => new ListPaymentsAccountsRequest());
@@ -234,7 +234,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V2.Resources.PaymentsAccount.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V2.Resources.PaymentsAccount> paymentsAccounts_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V2.Resources.PaymentsAccount>();
     /// <summary>
-    /// The list of accessible Payments accounts.
+    /// The list of accessible payments accounts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V2.Resources.PaymentsAccount> PaymentsAccounts {

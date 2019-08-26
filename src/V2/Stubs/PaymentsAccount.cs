@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   }
   #region Messages
   /// <summary>
-  /// A Payments account, which can be used to set up billing for an Ads customer.
+  /// A payments account, which can be used to set up billing for an Ads customer.
   /// </summary>
   public sealed partial class PaymentsAccount : pb::IMessage<PaymentsAccount> {
     private static readonly pb::MessageParser<PaymentsAccount> _parser = new pb::MessageParser<PaymentsAccount>(() => new PaymentsAccount());
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// The resource name of the Payments account.
+    /// The resource name of the payments account.
     /// PaymentsAccount resource names have the form:
     ///
     /// `customers/{customer_id}/paymentsAccounts/{payments_account_id}`
@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     private static readonly pb::FieldCodec<string> _single_paymentsAccountId_codec = pb::FieldCodec.ForClassWrapper<string>(18);
     private string paymentsAccountId_;
     /// <summary>
-    /// A 16 digit ID used to identify a Payments account.
+    /// A 16 digit ID used to identify a payments account.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PaymentsAccountId {
@@ -131,7 +131,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     private static readonly pb::FieldCodec<string> _single_name_codec = pb::FieldCodec.ForClassWrapper<string>(26);
     private string name_;
     /// <summary>
-    /// The name of the Payments account.
+    /// The name of the payments account.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -147,7 +147,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     private static readonly pb::FieldCodec<string> _single_currencyCode_codec = pb::FieldCodec.ForClassWrapper<string>(34);
     private string currencyCode_;
     /// <summary>
-    /// The currency code of the Payments account.
+    /// The currency code of the payments account.
     /// A subset of the currency codes derived from the ISO 4217 standard is
     /// supported.
     /// </summary>
@@ -165,8 +165,8 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     private static readonly pb::FieldCodec<string> _single_paymentsProfileId_codec = pb::FieldCodec.ForClassWrapper<string>(42);
     private string paymentsProfileId_;
     /// <summary>
-    /// A 12 digit ID used to identify the Payments profile associated with the
-    /// Payments account.
+    /// A 12 digit ID used to identify the payments profile associated with the
+    /// payments account.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PaymentsProfileId {
@@ -182,7 +182,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     private static readonly pb::FieldCodec<string> _single_secondaryPaymentsProfileId_codec = pb::FieldCodec.ForClassWrapper<string>(50);
     private string secondaryPaymentsProfileId_;
     /// <summary>
-    /// A secondary Payments profile ID present in uncommon situations, e.g.
+    /// A secondary payments profile ID present in uncommon situations, e.g.
     /// when a sequential liability agreement has been arranged.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

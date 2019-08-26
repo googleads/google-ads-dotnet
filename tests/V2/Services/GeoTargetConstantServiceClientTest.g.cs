@@ -120,17 +120,17 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         public void SuggestGeoTargetConstants()
         {
             Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            string locale = "en";
+            string countryCode = "US";
             SuggestGeoTargetConstantsRequest expectedRequest = new SuggestGeoTargetConstantsRequest
             {
-                Locale = null,
-                CountryCode = null,
+                Locale = locale,
+                CountryCode = countryCode,
             };
             SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
             mockGrpcClient.Setup(x => x.SuggestGeoTargetConstants(expectedRequest, It.IsAny<CallOptions>()))
                 .Returns(expectedResponse);
             GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string locale = null;
-            string countryCode = null;
             SuggestGeoTargetConstantsResponse response = client.SuggestGeoTargetConstants(locale, countryCode);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -140,17 +140,17 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         public async Task SuggestGeoTargetConstantsAsync()
         {
             Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            string locale = "en";
+            string countryCode = "US";
             SuggestGeoTargetConstantsRequest expectedRequest = new SuggestGeoTargetConstantsRequest
             {
-                Locale = null,
-                CountryCode = null,
+                Locale = locale,
+                CountryCode = countryCode,
             };
             SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
             mockGrpcClient.Setup(x => x.SuggestGeoTargetConstantsAsync(expectedRequest, It.IsAny<CallOptions>()))
                 .Returns(new Grpc.Core.AsyncUnaryCall<SuggestGeoTargetConstantsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
             GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string locale = null;
-            string countryCode = null;
             SuggestGeoTargetConstantsResponse response = await client.SuggestGeoTargetConstantsAsync(locale, countryCode);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();

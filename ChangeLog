@@ -1,3 +1,14 @@
+2.4.0
+=====
+- Added support for Google Ads API v2.1. See release notes:
+ https://developers.google.com/google-ads/api/docs/release-notes#210_beta_2019-08-08
+- Added Channel Caching
+- Fixed Partial failure support for Google.Ads.GoogleAds.Logging.LoggingInterceptor
+- Updated Timeouts to align with server-side configuration
+- Added ability to override call settings
+- Increase grpc.max_metadata_size to 16MB and grpc.max_receive_message_length to 64MB
+- LRO Credential bug fixed
+
 2.3.0
 =====
 - Added support for Google Ads API v2.0. See release notes:
@@ -24,7 +35,7 @@
 - Ported HttpUtilities and MediaUtilities from the AdWords API library. These utilities simplify
  code when working with Media assets.
 
- 
+
 2.1.0
 =====
 - Added support for Google Ads API v1.3. See release notes:
@@ -41,7 +52,7 @@
  https://ads-developers.googleblog.com/2019/03/upgrade-to-new-google-ads-api-to-get.html
 - Made a major version bump due to removal of support for v0.
 - Updated all nuget dependencies to the latest stable versions.
- 
+
 1.1.0
 =====
 - Added support for Google Ads API v1.1 See release notes:
@@ -89,7 +100,7 @@ https://developers.google.com/google-ads/api/docs/release-notes#070_2019-01-30
     -- AccountManagement/CreateCustomer.cs
     -- Planning/GenerateKeywordIdeas.cs
     -- Planning/AddKeywordPlan.cs
-    -- Planning/GenerateForecastMetrics.cs    
+    -- Planning/GenerateForecastMetrics.cs
 - Fixed a file encoding issue with Targeting/AddCampaignTargetingCriteria.cs example.
 
 0.7.0

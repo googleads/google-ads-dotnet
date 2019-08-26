@@ -124,6 +124,7 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
                 ValidateOnly = false,
             };
             MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse();
@@ -132,7 +133,9 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
             ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<ExtensionFeedItemOperation> operations = new List<ExtensionFeedItemOperation>();
-            MutateExtensionFeedItemsResponse response = client.MutateExtensionFeedItems(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateExtensionFeedItemsResponse response = client.MutateExtensionFeedItems(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -145,6 +148,7 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
                 ValidateOnly = false,
             };
             MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse();
@@ -153,7 +157,9 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
             ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<ExtensionFeedItemOperation> operations = new List<ExtensionFeedItemOperation>();
-            MutateExtensionFeedItemsResponse response = await client.MutateExtensionFeedItemsAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateExtensionFeedItemsResponse response = await client.MutateExtensionFeedItemsAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

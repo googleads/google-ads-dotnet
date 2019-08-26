@@ -41,12 +41,16 @@ namespace Google.Ads.GoogleAds.Examples
         {
             SystemType[] types = assembly.GetTypes();
 
+            ExampleBase codeExample = null;
             foreach (SystemType type in types)
             {
                 if (type.IsSubclassOf(typeof(ExampleBase)))
                 {
                     ExampleBase example = (ExampleBase) Activator.CreateInstance(type);
-                    codeExampleMap.Add(example.Name, example);
+                    if (!codeExampleMap.TryGetValue(example.Name, out codeExample))
+                    {
+                        codeExampleMap.Add(example.Name, example);
+                    }
                 }
             }
         }
