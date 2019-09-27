@@ -39,16 +39,16 @@ namespace Google.Ads.GoogleAds.Examples
         /// <param name="assembly">The assembly.</param>
         public void LoadCodeExamples(Assembly assembly)
         {
-            SystemType[] types = assembly.GetTypes();
-
-            ExampleBase codeExample = null;
-            foreach (SystemType type in types)
+            lock (codeExampleMap)
             {
-                if (type.IsSubclassOf(typeof(ExampleBase)))
+                codeExampleMap.Clear();
+                SystemType[] types = assembly.GetTypes();
+
+                foreach (SystemType type in types)
                 {
-                    ExampleBase example = (ExampleBase) Activator.CreateInstance(type);
-                    if (!codeExampleMap.TryGetValue(example.Name, out codeExample))
+                    if (type.IsSubclassOf(typeof(ExampleBase)))
                     {
+                        ExampleBase example = (ExampleBase) Activator.CreateInstance(type);
                         codeExampleMap.Add(example.Name, example);
                     }
                 }

@@ -1,5 +1,5 @@
 ﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\..\..\packages\Microsoft.Net.Compilers.3.2.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\packages\Microsoft.Net.Compilers.3.2.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -46,47 +46,50 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- Include local projects over nuget dependencies if available -->
-    <ProjectReference Condition="Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="..\..\..\src\Google.Ads.GoogleAds.csproj" />
-    <Reference Condition="!Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds, Version=2.4.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.2.2.0\lib\net452\Google.Ads.GoogleAds.dll</HintPath>
+    <ProjectReference Condition="Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="..\..\..\src\Google.Ads.GoogleAds.csproj">
+      <Project>{C691BD4D-683D-425B-8BC7-52F161475C7C}</Project>
+      <Name>Google.Ads.GoogleAds</Name>
+    </ProjectReference>
+    <Reference Condition="!Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds, Version=2.5.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.2.5.0\lib\net452\Google.Ads.GoogleAds.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Google.Api.CommonProtos, Version=1.6.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Api.CommonProtos.1.6.0\lib\net45\Google.Api.CommonProtos.dll</HintPath>
+    <Reference Include="Google.Api.CommonProtos, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Api.CommonProtos.1.7.0\lib\net45\Google.Api.CommonProtos.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Api.Gax, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Api.Gax.2.7.0\lib\net45\Google.Api.Gax.dll</HintPath>
+    <Reference Include="Google.Api.Gax, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Api.Gax.2.9.0\lib\net45\Google.Api.Gax.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Api.Gax.Grpc, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Api.Gax.Grpc.2.7.0\lib\net45\Google.Api.Gax.Grpc.dll</HintPath>
+    <Reference Include="Google.Api.Gax.Grpc, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Api.Gax.Grpc.2.9.0\lib\net45\Google.Api.Gax.Grpc.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis, Version=1.39.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Apis.1.39.0\lib\net45\Google.Apis.dll</HintPath>
+    <Reference Include="Google.Apis, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Apis.1.41.1\lib\net45\Google.Apis.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.Auth, Version=1.39.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Apis.Auth.1.39.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    <Reference Include="Google.Apis.Auth, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Apis.Auth.1.41.1\lib\net45\Google.Apis.Auth.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.39.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Apis.Auth.1.39.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Apis.Auth.1.41.1\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.Core, Version=1.39.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Apis.Core.1.39.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    <Reference Include="Google.Apis.Core, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Apis.Core.1.41.1\lib\net45\Google.Apis.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.PlatformServices, Version=1.39.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Apis.1.39.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Apis.1.41.1\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf, Version=3.7.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Protobuf.3.7.0\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf, Version=3.9.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Protobuf.3.9.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="Grpc.Auth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Grpc.Auth.1.20.1\lib\net45\Grpc.Auth.dll</HintPath>
+    <Reference Include="Grpc.Auth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Grpc.Auth.2.23.0\lib\net45\Grpc.Auth.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Grpc.Core.1.20.1\lib\net45\Grpc.Core.dll</HintPath>
+      <HintPath>..\..\..\packages\Grpc.Core.1.22.1\lib\net45\Grpc.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Grpc.Core.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Grpc.Core.Api.1.20.1\lib\net45\Grpc.Core.Api.dll</HintPath>
+    <Reference Include="Grpc.Core.Api, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Grpc.Core.Api.2.23.0\lib\net45\Grpc.Core.Api.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -104,11 +107,17 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Buffers.4.5.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Interactive.Async, Version=3.2.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\System.Interactive.Async.3.2.0\lib\net45\System.Interactive.Async.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\System.Memory.4.5.3\lib\netstandard1.1\System.Memory.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -192,11 +201,11 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\..\..\packages\Grpc.Core.1.20.1\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Grpc.Core.1.20.1\build\net45\Grpc.Core.targets'))" />
-    <Error Condition="!Exists('..\..\..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Microsoft.Net.Compilers.3.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\..\packages\Microsoft.Net.Compilers.3.2.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Microsoft.Net.Compilers.3.2.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\..\packages\Grpc.Core.1.22.1\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Grpc.Core.1.22.1\build\net45\Grpc.Core.targets'))" />
   </Target>
-  <Import Project="..\..\..\packages\Grpc.Core.1.20.1\build\net45\Grpc.Core.targets" Condition="Exists('..\..\..\packages\Grpc.Core.1.20.1\build\net45\Grpc.Core.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <Import Project="..\..\..\packages\Grpc.Core.1.22.1\build\net45\Grpc.Core.targets" Condition="Exists('..\..\..\packages\Grpc.Core.1.22.1\build\net45\Grpc.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

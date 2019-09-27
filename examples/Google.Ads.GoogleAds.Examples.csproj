@@ -21,7 +21,7 @@
     <None Remove="Migration\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Ads.GoogleAds" Version="2.4.0" />
+    <PackageReference Include="Google.Ads.GoogleAds" Version="2.5.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web" />

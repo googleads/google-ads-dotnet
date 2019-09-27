@@ -64,6 +64,16 @@ namespace Google.Ads.GoogleAds.Config
         public const string DEVELOPER_TOKEN_KEYNAME = "developer-token";
 
         /// <summary>
+        /// The login customer ID keyname in request metadata.
+        /// </summary>
+        public const string LOGIN_CUSTOMER_ID_KEYNAME = "login-customer-id";
+
+        /// <summary>
+        /// The library identifier keyname in request metadata.
+        /// </summary>
+        internal const string LIBRARY_IDENTIFIER_KEYNAME = "x-goog-api-client";
+
+        /// <summary>
         /// The configuration section name in App.config file.
         /// </summary>
         /// <remarks>This is kept as such to provide backwards compatibility with the SOAP client
@@ -137,6 +147,16 @@ namespace Google.Ads.GoogleAds.Config
             OAuth2Flow.APPLICATION);
 
         /// <summary>
+        /// Authorization method.
+        /// </summary>
+        /// <remarks>
+        /// This setting is only for testing purposes.
+        /// </remarks>
+        private ConfigSetting<AuthorizationMethod> authorizationMethod =
+            new ConfigSetting<AuthorizationMethod>("AuthorizationMethod",
+                AuthorizationMethod.OAuth);
+
+        /// <summary>
         /// Web proxy to be used with the services.
         /// </summary>
         private ConfigSetting<WebProxy> proxy = new ConfigSetting<WebProxy>("Proxy", null);
@@ -167,12 +187,32 @@ namespace Google.Ads.GoogleAds.Config
             "LoginCustomerId", "");
 
         /// <summary>
+        /// The library identifier override.
+        /// </summary>
+        private readonly ConfigSetting<string> libraryIdentifierOverride =
+            new ConfigSetting<string>(
+            "LibraryIdentifierOverride", "");
+
+        /// <summary>
         /// Gets or sets the timeout for individual API calls.
         /// </summary>
         public int Timeout
         {
             get => timeout.Value;
             set => SetPropertyAndNotify(timeout, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the library identifier override.
+        /// </summary>
+        /// <value>
+        /// The library identifier override.
+        /// </value>
+        /// <remarks>This setting is only for testing purposes.</remarks>
+        internal string LibraryIdentifierOverride
+        {
+            get => libraryIdentifierOverride.Value;
+            set => SetPropertyAndNotify(libraryIdentifierOverride, value);
         }
 
         /// <summary>
@@ -283,6 +323,16 @@ namespace Google.Ads.GoogleAds.Config
         {
             get => oAuth2Mode.Value;
             set => SetPropertyAndNotify(oAuth2Mode, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the authorization method.
+        /// </summary>
+        /// <remarks>This setting is only for testing purposes.</remarks>
+        internal AuthorizationMethod AuthorizationMethod
+        {
+            get => authorizationMethod.Value;
+            set => SetPropertyAndNotify(authorizationMethod, value);
         }
 
         /// <summary>

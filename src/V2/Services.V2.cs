@@ -512,6 +512,13 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v2.services#google.ads.googleads.v2.services.InvoiceService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<InvoiceServiceClient, InvoiceServiceSettings> InvoiceService;
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v2.services#google.ads.googleads.v2.services.KeywordPlanAdGroupService
             /// for details.
             /// </summary>

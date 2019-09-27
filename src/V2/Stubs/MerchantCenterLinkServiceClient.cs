@@ -409,7 +409,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Returns Merchant Center links available tor this customer.
+        /// Returns Merchant Center links available for this customer.
         /// </summary>
         /// <param name="customerId">
         /// The ID of the customer onto which to apply the Merchant Center link list
@@ -431,7 +431,7 @@ namespace Google.Ads.GoogleAds.V2.Services
                 callSettings);
 
         /// <summary>
-        /// Returns Merchant Center links available tor this customer.
+        /// Returns Merchant Center links available for this customer.
         /// </summary>
         /// <param name="customerId">
         /// The ID of the customer onto which to apply the Merchant Center link list
@@ -450,7 +450,7 @@ namespace Google.Ads.GoogleAds.V2.Services
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Returns Merchant Center links available tor this customer.
+        /// Returns Merchant Center links available for this customer.
         /// </summary>
         /// <param name="customerId">
         /// The ID of the customer onto which to apply the Merchant Center link list
@@ -472,7 +472,7 @@ namespace Google.Ads.GoogleAds.V2.Services
                 callSettings);
 
         /// <summary>
-        /// Returns Merchant Center links available tor this customer.
+        /// Returns Merchant Center links available for this customer.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -491,7 +491,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Returns Merchant Center links available tor this customer.
+        /// Returns Merchant Center links available for this customer.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -509,7 +509,7 @@ namespace Google.Ads.GoogleAds.V2.Services
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Returns Merchant Center links available tor this customer.
+        /// Returns Merchant Center links available for this customer.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -841,7 +841,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         partial void Modify_MutateMerchantCenterLinkRequest(ref MutateMerchantCenterLinkRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
-        /// Returns Merchant Center links available tor this customer.
+        /// Returns Merchant Center links available for this customer.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -861,7 +861,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Returns Merchant Center links available tor this customer.
+        /// Returns Merchant Center links available for this customer.
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.

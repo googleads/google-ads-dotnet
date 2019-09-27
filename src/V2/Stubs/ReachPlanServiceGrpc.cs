@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
     public abstract partial class ReachPlanServiceBase
     {
       /// <summary>
-      /// Returns the list of plannable locations (e.g. countries, DMAs).
+      /// Returns the list of plannable locations (for example, countries &amp; DMAs).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -154,7 +154,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
       }
 
       /// <summary>
-      /// Returns the list of plannable locations (e.g. countries, DMAs).
+      /// Returns the list of plannable locations (for example, countries &amp; DMAs).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -166,7 +166,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         return ListPlannableLocations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Returns the list of plannable locations (e.g. countries, DMAs).
+      /// Returns the list of plannable locations (for example, countries &amp; DMAs).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -176,7 +176,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         return CallInvoker.BlockingUnaryCall(__Method_ListPlannableLocations, null, options, request);
       }
       /// <summary>
-      /// Returns the list of plannable locations (e.g. countries, DMAs).
+      /// Returns the list of plannable locations (for example, countries &amp; DMAs).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -188,7 +188,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         return ListPlannableLocationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Returns the list of plannable locations (e.g. countries, DMAs).
+      /// Returns the list of plannable locations (for example, countries &amp; DMAs).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
