@@ -173,7 +173,14 @@ namespace Google.Ads.GoogleAds.Lib
 
             if (!string.IsNullOrEmpty(config.LoginCustomerId))
             {
-                callSettings = callSettings.WithHeader("login-customer-id", config.LoginCustomerId);
+                callSettings = callSettings.WithHeader(GoogleAdsConfig.LOGIN_CUSTOMER_ID_KEYNAME,
+                    config.LoginCustomerId);
+            }
+
+            if (!string.IsNullOrEmpty(config.LibraryIdentifierOverride))
+            {
+                callSettings = callSettings.WithHeader(GoogleAdsConfig.LIBRARY_IDENTIFIER_KEYNAME,
+                    config.LibraryIdentifierOverride);
             }
 
             callSettings = callSettings.WithCallTiming(CallTiming.FromTimeout(

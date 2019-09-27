@@ -436,7 +436,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Returns the list of plannable locations (e.g. countries, DMAs).
+        /// Returns the list of plannable locations (for example, countries &amp; DMAs).
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -455,7 +455,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Returns the list of plannable locations (e.g. countries, DMAs).
+        /// Returns the list of plannable locations (for example, countries &amp; DMAs).
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -473,7 +473,7 @@ namespace Google.Ads.GoogleAds.V2.Services
                 gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Returns the list of plannable locations (e.g. countries, DMAs).
+        /// Returns the list of plannable locations (for example, countries &amp; DMAs).
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -807,7 +807,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         partial void Modify_GenerateReachForecastRequest(ref GenerateReachForecastRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
-        /// Returns the list of plannable locations (e.g. countries, DMAs).
+        /// Returns the list of plannable locations (for example, countries &amp; DMAs).
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.
@@ -827,7 +827,7 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Returns the list of plannable locations (e.g. countries, DMAs).
+        /// Returns the list of plannable locations (for example, countries &amp; DMAs).
         /// </summary>
         /// <param name="request">
         /// The request object containing all of the parameters for the API call.

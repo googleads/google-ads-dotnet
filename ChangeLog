@@ -1,3 +1,20 @@
+2.5.0
+=====
+- Added support for Google Ads API v2.2. See release notes:
+ https://developers.google.com/google-ads/api/docs/release-notes#220_beta_2019-09-25
+- Fix the namespace for OAuth2Flow enum.
+- Fix the CachedChannelFactory so that various grpc settings work as intended.
+- Add a fix to check for null values of LoginCustomerId.
+- Minor code refactor to improve how the GoogleAdsServiceClientFactory class handles LoginCustomerId
+ setting.
+- Fix a bug in ExampleRunner around running code examples multiple times.
+- Fix a broken web.config for the AuthenticateInWebApplication example.
+- Bump all the external library dependencies to their latest versions. Grpc.Core is still on 1.22.1
+ since its 2.x version is breaking in nature. See
+ https://github.com/grpc/proposal/blob/master/L57-csharp-new-major-version.md for additional context.
+- Added a few internal properties and methods for better testing of the client library.
+
+
 2.4.0
 =====
 - Added support for Google Ads API v2.1. See release notes:

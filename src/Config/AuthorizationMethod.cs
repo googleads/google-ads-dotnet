@@ -1,4 +1,4 @@
-﻿// Copyright 2018 Google LLC
+﻿// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,18 +15,18 @@
 namespace Google.Ads.GoogleAds.Config
 {
     /// <summary>
-    /// The type of OAuth2 flow.
+    /// The type of authentication to use.
     /// </summary>
-    public enum OAuth2Flow
+    public enum AuthorizationMethod
     {
         /// <summary>
-        /// Web and installed application flows.
+        /// Insecure credentials.
         /// </summary>
-        APPLICATION,
+        Insecure,
 
         /// <summary>
-        /// Service account flow.
+        /// OAuth2 credentials.
         /// </summary>
-        SERVICE_ACCOUNT
+        OAuth
     }
 }

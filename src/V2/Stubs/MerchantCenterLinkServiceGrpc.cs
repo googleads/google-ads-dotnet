@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
     public abstract partial class MerchantCenterLinkServiceBase
     {
       /// <summary>
-      /// Returns Merchant Center links available tor this customer.
+      /// Returns Merchant Center links available for this customer.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -128,7 +128,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
       }
 
       /// <summary>
-      /// Returns Merchant Center links available tor this customer.
+      /// Returns Merchant Center links available for this customer.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -140,7 +140,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         return ListMerchantCenterLinks(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Returns Merchant Center links available tor this customer.
+      /// Returns Merchant Center links available for this customer.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         return CallInvoker.BlockingUnaryCall(__Method_ListMerchantCenterLinks, null, options, request);
       }
       /// <summary>
-      /// Returns Merchant Center links available tor this customer.
+      /// Returns Merchant Center links available for this customer.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -162,7 +162,7 @@ namespace Google.Ads.GoogleAds.V2.Services {
         return ListMerchantCenterLinksAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Returns Merchant Center links available tor this customer.
+      /// Returns Merchant Center links available for this customer.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
