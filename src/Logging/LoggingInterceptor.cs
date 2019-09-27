@@ -17,7 +17,6 @@ using Google.Ads.GoogleAds.Util;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -124,7 +123,7 @@ namespace Google.Ads.GoogleAds.Logging
                         Exception = GetGoogleAdsException(oldTask.Exception),
                         IsFailure = oldTask.IsFaulted,
                         CustomerId = GetCustomerId(request),
-                        PartialFailures = (oldTask.IsFaulted)? "" : 
+                        PartialFailures = (oldTask.IsFaulted) ? "" :
                             GetPartialFailures(oldTask.Result)
                     };
                     OnLogEventAvailable?.Invoke(this, logEntry);
@@ -202,6 +201,8 @@ namespace Google.Ads.GoogleAds.Logging
         /// </returns>
         private static RpcException GetGoogleAdsException(AggregateException e)
         {
+            Assembly myAssembly = MethodBase.GetCurrentMethod().DeclaringType.Assembly;
+
             RpcException rpcException = e?.InnerExceptions?.FirstOrDefault(
                 delegate (Exception innerException)
                 {
@@ -216,14 +217,16 @@ namespace Google.Ads.GoogleAds.Logging
 
             foreach (Metadata.Entry entry in rpcException.Trailers)
             {
-                switch (entry.Key)
+                if (entry.Key.EndsWith(".googleadsfailure-bin"))
                 {
-                    case V1.Errors.GoogleAdsException.FAILURE_KEY:
-                        return V1.Errors.GoogleAdsException.Create(rpcException);
-                    case V2.Errors.GoogleAdsException.FAILURE_KEY:
-                        return V2.Errors.GoogleAdsException.Create(rpcException);
-                }
+                    string version = entry.Key.Replace("google.ads.googleads.", "")
+                        .Replace(".errors.googleadsfailure-bin", "").ToUpper();
 
+                    return (RpcException) myAssembly.GetType(
+                        $"Google.Ads.GoogleAds.{version}.Errors.GoogleAdsException")
+                        .GetMethod("Create", BindingFlags.Public | BindingFlags.Static)
+                        .Invoke(null, new object[] { rpcException });
+                }
             }
             return rpcException;
         }

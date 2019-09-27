@@ -39,7 +39,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// <summary>
         /// The maximum message length in bytes that the client library can receive (64 MB).
         /// </summary>
-        private const long MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES = 64 * 1024 * 1024;
+        private const int MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES = 64 * 1024 * 1024;
 
         /// <summary>
         /// The gRPC setting name for maximum metadata size in bytes that can be handled.
@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// <summary>
         /// The maximum metadata size in bytes that the client library can receive (16 MB).
         /// </summary>
-        private const long MAX_METADATA_SIZE_IN_BYTES = 16 * 1024 * 1024;
+        private const int MAX_METADATA_SIZE_IN_BYTES = 16 * 1024 * 1024;
 
         /// <summary>
         /// Gets the channel for the specified configuration.
@@ -109,16 +109,25 @@ namespace Google.Ads.GoogleAds.Lib
         /// <returns>The channel.</returns>
         private static Channel CreateChannel(GoogleAdsConfig config)
         {
-            ChannelCredentials channelCredentials =
-                GoogleGrpcCredentials.ToChannelCredentials(config.Credentials);
+            ChannelCredentials channelCredentials = null;
+
+            if (config.AuthorizationMethod == AuthorizationMethod.Insecure)
+            {
+                channelCredentials = ChannelCredentials.Insecure;
+            }
+            else // if config.AuthenticationMode == AuthenticationMode.OAUTH)
+            {
+                channelCredentials =
+                    GoogleGrpcCredentials.ToChannelCredentials(config.Credentials);
+            }
             Uri uri = new Uri(config.ServerUrl);
             return new Channel(uri.Host, uri.Port, channelCredentials,
                 new List<ChannelOption>()
                 {
                     new ChannelOption(GRPC_MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES_SETTING_NAME,
-                        MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES.ToString()),
+                        MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES),
                     new ChannelOption(GRPC_MAX_METADATA_SIZE_IN_BYTES_SETTING_NAME,
-                        MAX_METADATA_SIZE_IN_BYTES.ToString()),
+                        MAX_METADATA_SIZE_IN_BYTES),
                 }
             );
         }

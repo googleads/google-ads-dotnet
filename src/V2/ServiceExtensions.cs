@@ -87,6 +87,7 @@ namespace Google.Ads.GoogleAds.V2.Services
     public abstract partial class GroupPlacementViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class HotelGroupViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class HotelPerformanceViewServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class InvoiceServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class KeywordPlanAdGroupServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class KeywordPlanCampaignServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class KeywordPlanIdeaServiceClient : GoogleAdsServiceClientBase {}

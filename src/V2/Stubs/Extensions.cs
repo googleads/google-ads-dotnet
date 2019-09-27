@@ -144,13 +144,16 @@ namespace Google.Ads.GoogleAds.V2.Common {
             "ZW1wbGF0ZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJO",
             "ChV1cmxfY3VzdG9tX3BhcmFtZXRlcnMYByADKAsyLy5nb29nbGUuYWRzLmdv",
             "b2dsZWFkcy52Mi5jb21tb24uQ3VzdG9tUGFyYW1ldGVyEjYKEGZpbmFsX3Vy",
-            "bF9zdWZmaXgYCCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVC",
-            "6gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5jb21tb25CD0V4dGVu",
-            "c2lvbnNQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIvY29tbW9uO2NvbW1vbqICA0dBQaoC",
-            "Hkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyLkNvbW1vbsoCHkdvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYyXENvbW1vbuoCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
-            "OlYyOjpDb21tb25iBnByb3RvMw=="));
+            "bF9zdWZmaXgYCCABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUi",
+            "dwoUSG90ZWxDYWxsb3V0RmVlZEl0ZW0SKgoEdGV4dBgBIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIzCg1sYW5ndWFnZV9jb2RlGAIgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQuoBCiJjb20uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjIuY29tbW9uQg9FeHRlbnNpb25zUHJvdG9QAVpE",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YyL2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMi5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMlxD",
+            "b21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjo6Q29tbW9uYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V2.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Common.FeedCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.AppStoreReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.PriceExtensionPriceQualifierReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.PriceExtensionPriceUnitReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.PriceExtensionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.PromotionExtensionDiscountModifierReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.PromotionExtensionOccasionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -164,7 +167,8 @@ namespace Google.Ads.GoogleAds.V2.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Common.PriceOffer), global::Google.Ads.GoogleAds.V2.Common.PriceOffer.Parser, new[]{ "Header", "Description", "Price", "Unit", "FinalUrls", "FinalMobileUrls" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Common.PromotionFeedItem), global::Google.Ads.GoogleAds.V2.Common.PromotionFeedItem.Parser, new[]{ "PromotionTarget", "DiscountModifier", "PromotionStartDate", "PromotionEndDate", "Occasion", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix", "LanguageCode", "PercentOff", "MoneyAmountOff", "PromotionCode", "OrdersOverAmount" }, new[]{ "DiscountType", "PromotionTrigger" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Common.StructuredSnippetFeedItem), global::Google.Ads.GoogleAds.V2.Common.StructuredSnippetFeedItem.Parser, new[]{ "Header", "Values" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Common.SitelinkFeedItem), global::Google.Ads.GoogleAds.V2.Common.SitelinkFeedItem.Parser, new[]{ "LinkText", "Line1", "Line2", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Common.SitelinkFeedItem), global::Google.Ads.GoogleAds.V2.Common.SitelinkFeedItem.Parser, new[]{ "LinkText", "Line1", "Line2", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V2.Common.HotelCalloutFeedItem), global::Google.Ads.GoogleAds.V2.Common.HotelCalloutFeedItem.Parser, new[]{ "Text", "LanguageCode" }, null, null, null)
           }));
     }
     #endregion
@@ -3952,6 +3956,186 @@ namespace Google.Ads.GoogleAds.V2.Common {
             string value = _single_finalUrlSuffix_codec.Read(input);
             if (finalUrlSuffix_ == null || value != "") {
               FinalUrlSuffix = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Represents a hotel callout extension.
+  /// </summary>
+  public sealed partial class HotelCalloutFeedItem : pb::IMessage<HotelCalloutFeedItem> {
+    private static readonly pb::MessageParser<HotelCalloutFeedItem> _parser = new pb::MessageParser<HotelCalloutFeedItem>(() => new HotelCalloutFeedItem());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<HotelCalloutFeedItem> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V2.Common.ExtensionsReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HotelCalloutFeedItem() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HotelCalloutFeedItem(HotelCalloutFeedItem other) : this() {
+      Text = other.Text;
+      LanguageCode = other.LanguageCode;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public HotelCalloutFeedItem Clone() {
+      return new HotelCalloutFeedItem(this);
+    }
+
+    /// <summary>Field number for the "text" field.</summary>
+    public const int TextFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_text_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string text_;
+    /// <summary>
+    /// The callout text.
+    /// The length of this string should be between 1 and 25, inclusive.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Text {
+      get { return text_; }
+      set {
+        text_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "language_code" field.</summary>
+    public const int LanguageCodeFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_languageCode_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string languageCode_;
+    /// <summary>
+    /// The language of the hotel callout text.
+    /// IETF BCP 47 compliant language code.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LanguageCode {
+      get { return languageCode_; }
+      set {
+        languageCode_ = value;
+      }
+    }
+
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as HotelCalloutFeedItem);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(HotelCalloutFeedItem other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Text != other.Text) return false;
+      if (LanguageCode != other.LanguageCode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (text_ != null) hash ^= Text.GetHashCode();
+      if (languageCode_ != null) hash ^= LanguageCode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (text_ != null) {
+        _single_text_codec.WriteTagAndValue(output, Text);
+      }
+      if (languageCode_ != null) {
+        _single_languageCode_codec.WriteTagAndValue(output, LanguageCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (text_ != null) {
+        size += _single_text_codec.CalculateSizeWithTag(Text);
+      }
+      if (languageCode_ != null) {
+        size += _single_languageCode_codec.CalculateSizeWithTag(LanguageCode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(HotelCalloutFeedItem other) {
+      if (other == null) {
+        return;
+      }
+      if (other.text_ != null) {
+        if (text_ == null || other.Text != "") {
+          Text = other.Text;
+        }
+      }
+      if (other.languageCode_ != null) {
+        if (languageCode_ == null || other.LanguageCode != "") {
+          LanguageCode = other.LanguageCode;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_text_codec.Read(input);
+            if (text_ == null || value != "") {
+              Text = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_languageCode_codec.Read(input);
+            if (languageCode_ == null || value != "") {
+              LanguageCode = value;
             }
             break;
           }
