@@ -27,7 +27,8 @@ using static Google.Ads.GoogleAds.V2.Enums.ReachPlanAgeRangeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
-    /// This code demonstrates how to generate a video ads reach forecast.
+    /// This example demonstrates how to interact with the ReachPlanService to find plannable
+    /// locations and product codes, build a media plan, and generate a video ads reach forecast.
     /// </summary>
     public class ForecastReach : ExampleBase
     {
@@ -53,12 +54,15 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             get
             {
-                return "This code example generates a reach forecast for a given targeting and preferences.";
+                return "This example demonstrates how to interact with the ReachPlanService to " +
+                    "find plannable locations and product codes, build a media plan, and " +
+                    "generate a video ads reach forecast.";
             }
         }
 
         /// <summary>
-        /// Runs the code example.
+        /// Runs the code example, showing a typical series of calls to the
+        /// <see cref="Services.V2.ReachPlanService"/>.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
@@ -66,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             string locationId = "2840";  // US
             string currencyCode = "USD";
-            long budget = 500_000L;
+            long budgetMicros = 500_000_000_000L;
             ReachPlanServiceClient reachPlanService =
                 client.GetService(Services.V2.ReachPlanService);
 
@@ -74,8 +78,10 @@ namespace Google.Ads.GoogleAds.Examples.V2
             {
                 ShowPlannableLocations(reachPlanService);
                 ShowPlannableProducts(reachPlanService, locationId);
-                ForecastManualMix(reachPlanService, customerId.ToString(), locationId, currencyCode, budget);
-                ForecastSuggestedMix(reachPlanService, customerId.ToString(), locationId, currencyCode, budget);
+                ForecastManualMix(
+                    reachPlanService, customerId.ToString(), locationId, currencyCode, budgetMicros);
+                ForecastSuggestedMix(
+                    reachPlanService, customerId.ToString(), locationId, currencyCode, budgetMicros);
             }
             catch (GoogleAdsException e)
             {
@@ -87,19 +93,22 @@ namespace Google.Ads.GoogleAds.Examples.V2
         }
 
         /// <summary>
-        /// Maps friendly names of plannable locations to location IDs usable within ReachPlanService.
+        /// Maps friendly names of plannable locations to location IDs usable with
+        /// <see cref="ReachPlanServiceClient"/>.
         /// </summary>
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         public void ShowPlannableLocations(ReachPlanServiceClient reachPlanService)
         {
             ListPlannableLocationsRequest request = new ListPlannableLocationsRequest();
-            ListPlannableLocationsResponse response = reachPlanService.ListPlannableLocations(request);
+            ListPlannableLocationsResponse response = reachPlanService.ListPlannableLocations(
+                request);
 
             Console.WriteLine("Plannable Locations:");
             Console.WriteLine("Name,\tId,\t,ParentCountryId");
             foreach (PlannableLocation location in response.PlannableLocations)
             {
-                Console.WriteLine($"\"{location.Name}\",\t{location.Id},{location.ParentCountryId}");
+                Console.WriteLine(
+                    $"\"{location.Name}\",\t{location.Id},{location.ParentCountryId}");
             }
         }
 
@@ -108,14 +117,18 @@ namespace Google.Ads.GoogleAds.Examples.V2
         /// Lists plannable products for a given location.
         /// </summary>
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
-        /// <param name="locationId">Location ID from somewhere returned by ListPlannableLocations.</param>
-        public void ShowPlannableProducts(ReachPlanServiceClient reachPlanService, string locationId)
+        /// <param name="locationId">Location ID to plan for. To find a valid locaction ID, either
+        /// see https://developers.google.com/adwords/api/docs/appendix/geotargeting or call
+        /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
+        public void ShowPlannableProducts(
+            ReachPlanServiceClient reachPlanService, string locationId)
         {
             ListPlannableProductsRequest request = new ListPlannableProductsRequest()
             {
                 PlannableLocationId = locationId
             };
-            ListPlannableProductsResponse response = reachPlanService.ListPlannableProducts(request);
+            ListPlannableProductsResponse response = reachPlanService.ListPlannableProducts(
+                request);
 
             Console.WriteLine($"Plannable Products for location {locationId}:");
             foreach (ProductMetadata product in response.ProductMetadata)
@@ -144,17 +157,18 @@ namespace Google.Ads.GoogleAds.Examples.V2
         /// </summary>
         /// <param name="customerId">The customer ID for the reach forecast.</param>
         /// <param name="productMix">The product mix for the reach forecast.</param>
-        /// <param name="locationId">Location ID from somewhere returned by ListPlannableLocations.</param>
+        /// <param name="locationId">Location ID to plan for. To find a valid locaction ID, either
+        /// see https://developers.google.com/adwords/api/docs/appendix/geotargeting or call
+        /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
         /// <param name="currencyCode">Three-character ISO 4217 currency code.</param>
         public GenerateReachForecastRequest BuildReachRequest(
-                   string customerId,
-                   List<PlannedProduct> productMix,
-                   string locationId,
-                   string currencyCode)
+            string customerId, List<PlannedProduct> productMix, string locationId,
+            string currencyCode)
         {
+            // Valid durations are between 1 and 90 days.
             CampaignDuration duration = new CampaignDuration()
             {
-                DurationInDays = 30
+                DurationInDays = 28
             };
 
             GenderInfo[] genders = new GenderInfo[]
@@ -179,13 +193,15 @@ namespace Google.Ads.GoogleAds.Examples.V2
             targeting.Genders.AddRange(genders);
             targeting.Devices.AddRange(devices);
 
+            // See the docs for defaults and valid ranges:
+            // https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v2.services#google.ads.googleads.v2.services.GenerateReachForecastRequest
             GenerateReachForecastRequest request = new GenerateReachForecastRequest()
             {
                 CustomerId = customerId,
                 CurrencyCode = currencyCode,
                 CampaignDuration = duration,
                 Targeting = targeting,
-                MinEffectiveFrequency = 3
+                MinEffectiveFrequency = 1
             };
 
             request.PlannedProducts.AddRange(productMix);
@@ -198,16 +214,19 @@ namespace Google.Ads.GoogleAds.Examples.V2
         /// </summary>
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         /// <param name="request">An already-populated reach curve request.</param>
-        public void PullReachCurve(ReachPlanServiceClient reachPlanService, GenerateReachForecastRequest request)
+        public void PullReachCurve(
+            ReachPlanServiceClient reachPlanService, GenerateReachForecastRequest request)
         {
-            GenerateReachForecastResponse response = reachPlanService.GenerateReachForecast(request);
+            GenerateReachForecastResponse response = reachPlanService.GenerateReachForecast(
+                request);
             Console.WriteLine("Reach curve output:");
             Console.WriteLine(
-                "Currency,\tCost,\tOn-Target Reach,\tOn-Target Imprs,\tTotal Reach,\tTotal Imprs,\tProducts");
+                "Currency,\tCost Micros,\tOn-Target Reach,\tOn-Target Imprs,\tTotal Reach," +
+                    "\tTotal Imprs,\tProducts");
             foreach (ReachForecast point in response.ReachCurve.ReachForecasts)
             {
                 Console.Write($"{request.CurrencyCode},\t");
-                Console.Write($"{point.CostMicros / 1.0e6},\t");
+                Console.Write($"{point.CostMicros},\t");
                 Console.Write($"{point.Forecast.OnTargetReach},\t");
                 Console.Write($"{point.Forecast.OnTargetImpressions},\t");
                 Console.Write($"{point.Forecast.TotalReach},\t");
@@ -216,37 +235,47 @@ namespace Google.Ads.GoogleAds.Examples.V2
                 foreach (ProductAllocation product in point.ForecastedProductAllocations)
                 {
                     Console.Write($"(Product: {product.PlannableProductCode}, ");
-                    Console.Write($"Budget: {product.BudgetMicros / 1.0e6}), ");
+                    Console.Write($"Budget Micros: {product.BudgetMicros}), ");
                 }
                 Console.WriteLine($"]\"");
             }
         }
 
         /// <summary>
-        /// Pulls a forecast for a manually allocated product mix.
+        /// Pulls a forecast for a budget split 15% and 85% between two products.
         /// </summary>
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         /// <param name="customerId">The customer ID for the reach forecast.</param>
-        /// <param name="locationId">Location ID from somewhere returned by ListPlannableLocations.</param>
+        /// <param name="locationId">Location ID to plan for. To find a valid locaction ID, either
+        /// see https://developers.google.com/adwords/api/docs/appendix/geotargeting or call
+        /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
         /// <param name="currencyCode">Three-character ISO 4217 currency code.</param>
-        /// <param name="budget">Budget in currency to plan for.</param>
+        /// <param name="budgetMicros">Budget in currency to plan for.</param>
         public void ForecastManualMix(
                         ReachPlanServiceClient reachPlanService,
                         string customerId,
                         string locationId,
                         string currencyCode,
-                        long budget)
+                        long budgetMicros)
         {
             List<PlannedProduct> productMix = new List<PlannedProduct>();
+
+            // Set up a ratio to split the budget between two products.
+            double trueviewAllocation = 0.15;
+            double bumperAllocation = 1 - trueviewAllocation;
+
+            // See listPlannableProducts on ReachPlanService to retrieve a list
+            // of valid PlannableProductCode's for a given location:
+            // https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v2.services#reachplanservice
             productMix.Add(new PlannedProduct()
             {
                 PlannableProductCode = "TRUEVIEW_IN_STREAM",
-                BudgetMicros = Convert.ToInt64((double)budget * 1.0e6 * 0.15)
+                BudgetMicros = Convert.ToInt64((double)budgetMicros * trueviewAllocation)
             });
             productMix.Add(new PlannedProduct()
             {
                 PlannableProductCode = "BUMPER",
-                BudgetMicros = Convert.ToInt64((double)budget * 1.0e6 * 0.85)
+                BudgetMicros = Convert.ToInt64((double)budgetMicros * bumperAllocation)
             });
 
             GenerateReachForecastRequest request =
@@ -256,21 +285,25 @@ namespace Google.Ads.GoogleAds.Examples.V2
         }
 
         /// <summary>
-        /// Pulls a forecast for a product mix suggested based on a set of preferences.
+        /// Pulls a forecast for a product mix suggested based on preferences for whether the ad
+        /// would have a guaranteed price, play with sound, would be skippable, would include top
+        /// content, and a desired ad length.
         /// </summary>
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         /// <param name="customerId">The customer ID for the reach forecast.</param>
-        /// <param name="locationId">Location ID from somewhere returned by ListPlannableLocations.</param>
+        /// <param name="locationId">Location ID to plan for. To find a valid locaction ID, either
+        /// see https://developers.google.com/adwords/api/docs/appendix/geotargeting or call
+        /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
         /// <param name="currencyCode">Three-character ISO 4217 currency code.</param>
-        /// <param name="budget">Budget in currency to plan for.</param>
+        /// <param name="budgetMicros">Budget in currency micro-units to plan for.</param>
         public void ForecastSuggestedMix(
             ReachPlanServiceClient reachPlanService,
             string customerId,
             string locationId,
             string currencyCode,
-            long budget)
+            long budgetMicros)
         {
-            // Note: If your preferences are too restrictive, then ReachPlanService will return an empty mix.
+            // Note: If preferences are too restrictive, then the response will be empty.
             Preferences preferences = new Preferences()
             {
                 HasGuaranteedPrice = true,
@@ -282,7 +315,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
 
             GenerateProductMixIdeasRequest mixRequest = new GenerateProductMixIdeasRequest()
             {
-                BudgetMicros = Convert.ToInt64((double)budget * 1.0e6),
+                BudgetMicros = Convert.ToInt64((double)budgetMicros),
                 CurrencyCode = currencyCode,
                 CustomerId = customerId,
                 PlannableLocationId = locationId,
