@@ -289,7 +289,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
                 },
                 // Set the ad group.
                 AdGroup = adGroupResourceName,
-                Status = AdGroupAdStatus.Paused
+                Status = AdGroupAdStatus.Enabled
             };
 
             // Create an ad group ad operation.
