@@ -36,7 +36,7 @@ namespace Google.Ads.GoogleAds.Config
         /// <summary>
         /// The default timeout for API calls in milliseconds.
         /// </summary>
-        private const int DEFAULT_TIMEOUT = 120_000;
+        private static readonly int DEFAULT_TIMEOUT = (int) new TimeSpan(1, 0, 0).TotalMilliseconds;
 
         /// <summary>
         /// The default value of OAuth2 server URL.
