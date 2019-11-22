@@ -130,10 +130,19 @@ namespace Google.Ads.GoogleAds.Config
         private static Dictionary<string, string> ToDictionary(IConfiguration configuration,
             string sectionName)
         {
-            string sectionPrefix = sectionName + ":";
-            return configuration.AsEnumerable().ToDictionary(
-                setting => setting.Key.ToString().Replace(sectionPrefix, ""),
-                setting => setting.Value?.ToString());
+            if (string.IsNullOrEmpty(sectionName))
+            {
+                return configuration.AsEnumerable().ToDictionary(
+                    setting => setting.Key,
+                    setting => setting.Value);
+            }
+            else
+            {
+                string sectionPrefix = sectionName + ":";
+                return configuration.AsEnumerable().ToDictionary(
+                    setting => setting.Key.Replace(sectionPrefix, ""),
+                    setting => setting.Value);
+            }
         }
 
         /// <summary>
