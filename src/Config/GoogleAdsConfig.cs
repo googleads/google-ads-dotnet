@@ -417,6 +417,12 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="GoogleAdsConfig"/> class.
+        /// </summary>
+        /// <param name="settings">The settings.</param>
+        public GoogleAdsConfig(Dictionary<string, string> settings) : base(settings) { }
+
+        /// <summary>
         /// Read all settings from App.config.
         /// </summary>
         /// <param name="settings">The parsed App.config settings.</param>
