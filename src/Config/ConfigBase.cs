@@ -42,6 +42,15 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="ConfigBase" /> class.
+        /// </summary>
+        /// <param name="settings">The settings.</param>
+        public ConfigBase(Dictionary<string, string> settings)
+        {
+            ReadSettings(settings);
+        }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="ConfigBase"/> class.
         /// </summary>
         /// <param name="configurationRoot">The configuration root.</param>
