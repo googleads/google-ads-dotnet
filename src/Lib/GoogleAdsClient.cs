@@ -68,23 +68,8 @@ namespace Google.Ads.GoogleAds.Lib
                 where TServiceSetting : ServiceSettingsBase, new()
                 where TService : GoogleAdsServiceClientBase
         {
-            return GetService(serviceTemplate, null);
-        }
-
-        /// <summary>
-        /// Gets an instance of the specified service.
-        /// </summary>
-        /// <param name="serviceTemplate">The service template.</param>
-        /// <param name="callSettings">The call settings.</param>
-        /// <returns>A service instance.</returns>
-        public TService GetService<TService, TServiceSetting>(
-            ServiceTemplate<TService, TServiceSetting> serviceTemplate,
-            CallSettings callSettings)
-                where TServiceSetting : ServiceSettingsBase, new()
-                where TService : GoogleAdsServiceClientBase
-        {
             GoogleAdsServiceClientFactory factory = new GoogleAdsServiceClientFactory();
-            TService service = factory.GetService(serviceTemplate, callSettings, Config);
+            TService service = factory.GetService(serviceTemplate, Config);
             service.ServiceContext.Client = this;
             return service;
         }

@@ -36,7 +36,7 @@ namespace Google.Ads.GoogleAds.Config
         /// <summary>
         /// The default timeout for API calls in milliseconds.
         /// </summary>
-        private const int DEFAULT_TIMEOUT = 120_000;
+        private static readonly int DEFAULT_TIMEOUT = (int) new TimeSpan(1, 0, 0).TotalMilliseconds;
 
         /// <summary>
         /// The default value of OAuth2 server URL.
@@ -83,61 +83,61 @@ namespace Google.Ads.GoogleAds.Config
         /// <summary>
         /// OAuth2 client ID.
         /// </summary>
-        private ConfigSetting<string> oAuth2ClientId =
-            new ConfigSetting<string>("OAuth2ClientId", "");
+        private StringConfigSetting oAuth2ClientId =
+            new StringConfigSetting("OAuth2ClientId", "");
 
         /// <summary>
         /// OAuth2 server URL.
         /// </summary>
-        private ConfigSetting<string> oAuth2ServerUrl =
-            new ConfigSetting<string>("OAuth2ServerUrl", DEFAULT_OAUTH2_SERVER);
+        private StringConfigSetting oAuth2ServerUrl =
+            new StringConfigSetting("OAuth2ServerUrl", DEFAULT_OAUTH2_SERVER);
 
         /// <summary>
         /// OAuth2 client secret.
         /// </summary>
-        private ConfigSetting<string> oAuth2ClientSecret = new ConfigSetting<string>(
+        private StringConfigSetting oAuth2ClientSecret = new StringConfigSetting(
             "OAuth2ClientSecret", "");
 
         /// <summary>
         /// OAuth2 access token.
         /// </summary>
-        private ConfigSetting<string> oAuth2AccessToken = new ConfigSetting<string>(
+        private StringConfigSetting oAuth2AccessToken = new StringConfigSetting(
             "OAuth2AccessToken", "");
 
         /// <summary>
         /// OAuth2 refresh token.
         /// </summary>
-        private ConfigSetting<string> oAuth2RefreshToken = new ConfigSetting<string>(
+        private StringConfigSetting oAuth2RefreshToken = new StringConfigSetting(
             "OAuth2RefreshToken", "");
 
         /// <summary>
         /// OAuth2 prn email.
         /// </summary>
-        private ConfigSetting<string> oAuth2PrnEmail = new ConfigSetting<string>(
+        private StringConfigSetting oAuth2PrnEmail = new StringConfigSetting(
             "OAuth2PrnEmail", "");
 
         /// <summary>
         /// OAuth2 service account email loaded from secrets JSON file.
         /// </summary>
-        private ConfigSetting<string> oAuth2ServiceAccountEmail = new ConfigSetting<string>(
+        private StringConfigSetting oAuth2ServiceAccountEmail = new StringConfigSetting(
             "client_email", null);
 
         /// <summary>
         /// OAuth2 private key loaded from secrets JSON file.
         /// </summary>
-        private ConfigSetting<string> oAuth2PrivateKey = new ConfigSetting<string>(
+        private StringConfigSetting oAuth2PrivateKey = new StringConfigSetting(
             "private_key", "");
 
         /// <summary>
         /// OAuth2 secrets JSON file path.
         /// </summary>
-        private ConfigSetting<string> oAuth2SecretsJsonPath = new ConfigSetting<string>(
+        private StringConfigSetting oAuth2SecretsJsonPath = new StringConfigSetting(
             "OAuth2SecretsJsonPath", "");
 
         /// <summary>
         /// OAuth2 scope.
         /// </summary>
-        private ConfigSetting<string> oAuth2Scope = new ConfigSetting<string>("OAuth2Scope",
+        private StringConfigSetting oAuth2Scope = new StringConfigSetting("OAuth2Scope",
             DEFAULT_OAUTH_SCOPE);
 
         /// <summary>
@@ -171,26 +171,26 @@ namespace Google.Ads.GoogleAds.Config
         /// The Google Ads API server URL.
         /// </summary>
         /// <remarks>This setting is used only for testing purposes.</remarks>
-        private readonly ConfigSetting<string> serverUrl = new ConfigSetting<string>(
+        private readonly StringConfigSetting serverUrl = new StringConfigSetting(
             "GoogleAds.Server", GOOGLE_ADS_API_SERVER_URL);
 
         /// <summary>
         /// The developer token.
         /// </summary>
-        private readonly ConfigSetting<string> developerToken = new ConfigSetting<string>(
+        private readonly StringConfigSetting developerToken = new StringConfigSetting(
             "DeveloperToken", "");
 
         /// <summary>
         /// The Login Customer ID.
         /// </summary>
-        private readonly ConfigSetting<string> loginCustomerId = new ConfigSetting<string>(
+        private readonly StringConfigSetting loginCustomerId = new StringConfigSetting(
             "LoginCustomerId", "");
 
         /// <summary>
         /// The library identifier override.
         /// </summary>
-        private readonly ConfigSetting<string> libraryIdentifierOverride =
-            new ConfigSetting<string>(
+        private readonly StringConfigSetting libraryIdentifierOverride =
+            new StringConfigSetting(
             "LibraryIdentifierOverride", "");
 
         /// <summary>
@@ -417,6 +417,12 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="GoogleAdsConfig"/> class.
+        /// </summary>
+        /// <param name="settings">The settings.</param>
+        public GoogleAdsConfig(Dictionary<string, string> settings) : base(settings) { }
+
+        /// <summary>
         /// Read all settings from App.config.
         /// </summary>
         /// <param name="settings">The parsed App.config settings.</param>
@@ -452,10 +458,10 @@ namespace Google.Ads.GoogleAds.Config
         /// <param name="settings">The parsed app.config settings.</param>
         private void ReadProxySettings(Dictionary<string, string> settings)
         {
-            ConfigSetting<string> proxyServer = new ConfigSetting<string>("ProxyServer", null);
-            ConfigSetting<string> proxyUser = new ConfigSetting<string>("ProxyUser", null);
-            ConfigSetting<string> proxyPassword = new ConfigSetting<string>("ProxyPassword", null);
-            ConfigSetting<string> proxyDomain = new ConfigSetting<string>("ProxyDomain", null);
+            StringConfigSetting proxyServer = new StringConfigSetting("ProxyServer", null);
+            StringConfigSetting proxyUser = new StringConfigSetting("ProxyUser", null);
+            StringConfigSetting proxyPassword = new StringConfigSetting("ProxyPassword", null);
+            StringConfigSetting proxyDomain = new StringConfigSetting("ProxyDomain", null);
 
             ReadSetting(settings, proxyServer);
 
