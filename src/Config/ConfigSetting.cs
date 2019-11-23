@@ -91,4 +91,28 @@ namespace Google.Ads.GoogleAds.Config
             }
         }
     }
+
+    /// <summary>
+    /// A specialized config setting class for string type so parsing can be skipped.
+    /// </summary>
+    public class StringConfigSetting : ConfigSetting<string>
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StringConfigSetting"/> class.
+        /// </summary>
+        /// <param name="name">Name of the setting.</param>
+        /// <param name="defaultValue">The default value.</param>
+        public StringConfigSetting(string name, string defaultValue) : base(name, defaultValue)
+        {
+        }
+
+        /// <summary>
+        /// Tries to parse a value.
+        /// </summary>
+        /// <param name="valueText">The value text.</param>
+        public override void TryParse(string valueText)
+        {
+            this.Value = valueText;
+        }
+    }
 }

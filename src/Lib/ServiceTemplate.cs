@@ -13,21 +13,60 @@
 // limitations under the License.
 
 using Google.Api.Gax.Grpc;
+using Grpc.Core;
 
 namespace Google.Ads.GoogleAds.Lib
 {
     /// <summary>
     /// Defines a service template.
     /// </summary>
-    /// <typeparam name="T">Type of the service.</typeparam>
-    /// <typeparam name="U">Type of the service settings.</typeparam>
-    public class ServiceTemplate<T, U> where U : ServiceSettingsBase, new()
+    /// <typeparam name="TService">Type of the service.</typeparam>
+    /// <typeparam name="TServiceSetting">Type of the service setting.</typeparam>
+    public class ServiceTemplate<TService, TServiceSetting> where TService : GoogleAdsServiceClientBase
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ServiceTemplate{T, U}"/> class.
+        /// Initializes a new instance of the <see cref="ServiceTemplate{TService, TServiceSetting}"/> class.
         /// </summary>
-        public ServiceTemplate()
+        /// <param name="createService">The service creation method.</param>
+        public ServiceTemplate(Create createService)
         {
+            this.createService = createService;
+        }
+
+        /// <summary>
+        /// Gets the name of the service type.
+        /// </summary>
+        /// <value>
+        /// The name of the service type.
+        /// </value>
+        public string ServiceTypeName
+        {
+            get
+            {
+                return typeof(TService).Name;
+            }
+        }
+
+        /// <summary>
+        /// Method that creates the service instance.
+        /// </summary>
+        /// <param name="serviceName">Name of the service.</param>
+        /// <param name="callInvoker">The call invoker.</param>
+        /// <param name="settings">The settings.</param>
+        /// <returns></returns>
+        public delegate GoogleAdsServiceClientBase Create(string serviceName, CallInvoker callInvoker,
+            ServiceSettingsBase settings);
+
+        readonly Create createService;
+        /// <summary>
+        /// Gets the create service method.
+        /// </summary>
+        public Create CreateService
+        {
+            get
+            {
+                return createService;
+            }
         }
     }
 }
