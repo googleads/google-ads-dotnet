@@ -289,6 +289,9 @@ namespace Google.Ads.GoogleAds.Examples.V2
                 },
                 // Set the ad group.
                 AdGroup = adGroupResourceName,
+                // Set the ad group ad to enabled.  Setting this to paused will cause an error
+                // for hotel campaigns.  For hotels pausing should happen at either the ad group or
+                // campaign level.  
                 Status = AdGroupAdStatus.Enabled
             };
 
