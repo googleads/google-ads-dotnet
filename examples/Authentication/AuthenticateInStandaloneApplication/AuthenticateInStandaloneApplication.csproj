@@ -12,7 +12,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Apis.Auth" Version="1.39.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.42.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web" />
