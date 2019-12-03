@@ -13,6 +13,7 @@
 - Bump all nuget dependencies to the latest versions.
 - Remove deprecated PackageLicenseUrl setting from Google.Ads.GoogleAds.csproj, and replace it with
  PackageLicenseExpression setting instead.
+- Update AddHotelAd.cs example to change the AdGroupAd status to be Enabled.
 
 2.5.0
 =====
