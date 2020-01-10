@@ -157,6 +157,15 @@ namespace Google.Ads.GoogleAds.Config
                 AuthorizationMethod.OAuth);
 
         /// <summary>
+        /// The client customer ID.
+        /// </summary>
+        /// <remarks>
+        /// This setting is only for testing purposes.
+        /// </remarks>
+        private ConfigSetting<long> clientCustomerId =
+            new ConfigSetting<long>("ClientCustomerId", 0);
+
+        /// <summary>
         /// Web proxy to be used with the services.
         /// </summary>
         private ConfigSetting<WebProxy> proxy = new ConfigSetting<WebProxy>("Proxy", null);
@@ -336,6 +345,16 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
+        /// Gets or sets the client customerId.
+        /// </summary>
+        /// <remarks>This setting is only for testing purposes.</remarks>
+        internal long ClientCustomerId
+        {
+            get => clientCustomerId.Value;
+            set => SetPropertyAndNotify(clientCustomerId, value);
+        }
+
+        /// <summary>
         /// Gets or sets the OAuth2 prn email.
         /// </summary>
         /// <remarks>This setting is applicable only when using OAuth2 service accounts.
@@ -432,6 +451,7 @@ namespace Google.Ads.GoogleAds.Config
             ReadSetting(settings, serverUrl);
             ReadSetting(settings, developerToken);
             ReadSetting(settings, loginCustomerId);
+            ReadSetting(settings, clientCustomerId);
 
             ReadSetting(settings, oAuth2ServerUrl);
             ReadSetting(settings, oAuth2ClientId);
@@ -492,9 +512,6 @@ namespace Google.Ads.GoogleAds.Config
         /// <summary>
         /// Gets or sets the credentials.
         /// </summary>
-        /// <value>
-        /// The credentials.
-        /// </value>
         public ICredential Credentials
         {
             get
