@@ -82,44 +82,44 @@ namespace Google.Ads.GoogleAds.Examples.V2
             for (int i = 0; i < NUM_CAMPAIGNS_TO_CREATE; i++)
             {
                 // Create the campaign.
-                Campaign campaign = new Campaign();
-                campaign.Name = "Interplanetary Cruise #" + ExampleUtilities.GetRandomString();
-                campaign.AdvertisingChannelType = AdvertisingChannelType.Search;
-
-                // Recommendation: Set the campaign to PAUSED when creating it to prevent
-                // the ads from immediately serving. Set to ENABLED once you've added
-                // targeting and the ads are ready to serve
-                campaign.Status = CampaignStatus.Paused;
-
-                // Set the bidding strategy and budget.
-                campaign.ManualCpc = new ManualCpc();
-                campaign.CampaignBudget = budget;
-
-                // Set the campaign network options.
-                campaign.NetworkSettings = new NetworkSettings
+                Campaign campaign = new Campaign()
                 {
-                    TargetGoogleSearch = true,
-                    TargetSearchNetwork = true,
-                    TargetContentNetwork = false,
-                    TargetPartnerSearchNetwork = false
+                    Name = "Interplanetary Cruise #" + ExampleUtilities.GetRandomString(),
+                    AdvertisingChannelType = AdvertisingChannelType.Search,
+
+                    // Recommendation: Set the campaign to PAUSED when creating it to prevent
+                    // the ads from immediately serving. Set to ENABLED once you've added
+                    // targeting and the ads are ready to serve
+                    Status = CampaignStatus.Paused,
+
+                    // Set the bidding strategy and budget.
+                    ManualCpc = new ManualCpc(),
+                    CampaignBudget = budget,
+
+                    // Set the campaign network options.
+                    NetworkSettings = new NetworkSettings
+                    {
+                        TargetGoogleSearch = true,
+                        TargetSearchNetwork = true,
+                        TargetContentNetwork = false,
+                        TargetPartnerSearchNetwork = false
+                    },
+
+                    // Optional: Set the start date.
+                    StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
+
+                    // Optional: Set the end date.
+                    EndDate = DateTime.Now.AddYears(1).ToString("yyyyMMdd"),
                 };
 
-                // Optional: Set the start date.
-                campaign.StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd");
-
-                // Optional: Set the end date.
-                campaign.EndDate = DateTime.Now.AddYears(1).ToString("yyyyMMdd");
-
                 // Create the operation.
-                CampaignOperation operation = new CampaignOperation();
-                operation.Create = campaign;
-                operations.Add(operation);
+                operations.Add(new CampaignOperation() { Create = campaign });
             }
             try
             {
                 // Add the campaigns.
                 MutateCampaignsResponse retVal = campaignService.MutateCampaigns(
-                    customerId.ToString(), operations.ToArray());
+                    customerId.ToString(), operations);
 
                 // Display the results.
                 if (retVal.Results.Count > 0)
