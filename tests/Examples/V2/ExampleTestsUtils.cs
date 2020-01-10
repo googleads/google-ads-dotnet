@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+﻿// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -41,7 +41,6 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
         /// <returns>The resource name of the newly created campaign budget.</returns>
         internal static string CreateBudget(GoogleAdsClient client)
         {
-            // Create the campaign budget.
             CampaignBudget budget = new CampaignBudget()
             {
                 Name = "Interplanetary Cruise Budget #" + ExampleUtilities.GetRandomString(),
@@ -49,7 +48,6 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
                 AmountMicros = 500000
             };
 
-            // Create the operation.
             MutateOperation mutateOperation = new MutateOperation()
             {
                 CampaignBudgetOperation = new CampaignBudgetOperation()
@@ -74,17 +72,9 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
             {
                 Name = "Interplanetary Cruise #" + ExampleUtilities.GetRandomString(),
                 AdvertisingChannelType = AdvertisingChannelType.Search,
-
-                // Recommendation: Set the campaign to PAUSED when creating it to prevent
-                // the ads from immediately serving. Set to ENABLED once you've added
-                // targeting and the ads are ready to serve
                 Status = CampaignStatus.Paused,
-
-                // Set the bidding strategy and budget.
                 ManualCpc = new ManualCpc(),
                 CampaignBudget = budgetResourceName,
-
-                // Set the campaign network options.
                 NetworkSettings = new NetworkSettings
                 {
                     TargetGoogleSearch = true,
@@ -92,15 +82,10 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
                     TargetContentNetwork = false,
                     TargetPartnerSearchNetwork = false
                 },
-
-                // Optional: Set the start date.
                 StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
-
-                // Optional: Set the end date.
                 EndDate = DateTime.Now.AddYears(1).ToString("yyyyMMdd"),
             };
 
-            // Create the operation.
             MutateOperation mutateOperation = new MutateOperation()
             {
                 CampaignOperation = new CampaignOperation() { Create = campaign }
@@ -118,18 +103,14 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
         /// <returns>The resource name of the newly created ad group.</returns>
         internal static string CreateAdGroup(GoogleAdsClient client, string campaignResourceName)
         {
-            // Create the ad group.
             AdGroup adGroup = new AdGroup()
             {
                 Name = $"Earth to Mars Cruises #{ExampleUtilities.GetRandomString()}",
                 Status = AdGroupStatusEnum.Types.AdGroupStatus.Enabled,
                 Campaign = campaignResourceName,
-
-                // Set the ad group bids.
                 CpcBidMicros = 10000000
             };
 
-            // Create the operation.
             MutateOperation mutateOperation = new MutateOperation()
             {
                 AdGroupOperation = new AdGroupOperation() { Create = adGroup }
@@ -148,11 +129,9 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
         internal static string CreateExpandedTextAd(GoogleAdsClient client,
             string adGroupResourceName)
         {
-            // Create the ad group ad object.
             AdGroupAd adGroupAd = new AdGroupAd
             {
                 AdGroup = adGroupResourceName,
-                // Optional: Set the status.
                 Status = AdGroupAdStatus.Paused,
                 Ad = new Ad
                 {
@@ -168,7 +147,6 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
                 }
             };
 
-            // Create the operation.
             MutateOperation mutateOperation = new MutateOperation()
             {
                 AdGroupAdOperation = new AdGroupAdOperation() { Create = adGroupAd }
@@ -186,7 +164,6 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
         /// <returns>The resource name of the newly created keyword.</returns>
         internal static string CreateKeyword(GoogleAdsClient client, string adGroupResourceName)
         {
-            // Create a keyword.
             AdGroupCriterion criterion = new AdGroupCriterion()
             {
                 AdGroup = adGroupResourceName,
@@ -197,9 +174,6 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
                     MatchType = KeywordMatchType.Exact
                 }
             };
-
-            // Create the operation.
-            // Create the operation.
             MutateOperation mutateOperation = new MutateOperation()
             {
                 AdGroupCriterionOperation = new AdGroupCriterionOperation() { Create = criterion }
@@ -269,7 +243,6 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
         internal static IEnumerable<MutateOperationResponse> ExecuteOperations(
             GoogleAdsClient client, MutateOperation[] operations)
         {
-            // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V2.GoogleAdsService);
 
@@ -291,19 +264,15 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V2
         internal static IEnumerable<GoogleAdsRow> GetGoogleAdsRows(GoogleAdsClient client,
             string query)
         {
-            // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V2.GoogleAdsService);
 
-            // Create a request that will retrieve all campaigns using pages of the specified
-            // page size.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
                 Query = query,
                 CustomerId = client.Config.ClientCustomerId.ToString()
             };
 
-            // Issue the search request.
             return googleAdsService.Search(request);
         }
     }

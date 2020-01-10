@@ -18,7 +18,7 @@ using NUnit.Framework;
 namespace Google.Ads.GoogleAds.Tests.Examples
 {
     [SetUpFixture]
-    public class ExamplesTestSetup
+    public class ExampleTestsSetup
     {
         [OneTimeSetUp]
         public void RunBeforeAnyTests()

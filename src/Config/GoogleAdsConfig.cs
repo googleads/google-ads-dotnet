@@ -347,9 +347,6 @@ namespace Google.Ads.GoogleAds.Config
         /// <summary>
         /// Gets or sets the client customerId.
         /// </summary>
-        /// <value>
-        /// The client customer ID.
-        /// </value>
         /// <remarks>This setting is only for testing purposes.</remarks>
         internal long ClientCustomerId
         {
@@ -515,9 +512,6 @@ namespace Google.Ads.GoogleAds.Config
         /// <summary>
         /// Gets or sets the credentials.
         /// </summary>
-        /// <value>
-        /// The credentials.
-        /// </value>
         public ICredential Credentials
         {
             get
