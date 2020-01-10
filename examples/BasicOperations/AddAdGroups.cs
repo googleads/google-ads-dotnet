@@ -27,7 +27,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
     /// This code example illustrates how to create ad groups. To create campaigns, run
     /// AddCampaigns.cs.
     /// </summary>
-    public class AddAdGroup : ExampleBase
+    public class AddAdGroups : ExampleBase
     {
         /// <summary>
         /// Number of ad groups to create.
@@ -40,7 +40,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            AddAdGroup codeExample = new AddAdGroup();
+            AddAdGroups codeExample = new AddAdGroups();
             Console.WriteLine(codeExample.Description);
 
             // The Google Ads customer ID for which the call is made.

@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V2.GoogleAdsService);
 
-            String searchQuery =
+            string searchQuery =
                 $@"SELECT
                  ad_group.id,
                  ad_group_ad.ad.id,
