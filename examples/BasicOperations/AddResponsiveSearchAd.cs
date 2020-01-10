@@ -32,11 +32,6 @@ namespace Google.Ads.GoogleAds.Examples.V2
     public class AddResponsiveSearchAd : ExampleBase
     {
         /// <summary>
-        /// Number of ad groups to create.
-        /// </summary>
-        private const int NUM_ADGROUPS_TO_CREATE = 5;
-
-        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
