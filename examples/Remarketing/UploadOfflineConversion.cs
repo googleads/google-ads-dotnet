@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,13 +14,9 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Resources;
 using Google.Ads.GoogleAds.V2.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V2.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.ConversionActionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.ConversionActionTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V2
 {
@@ -109,7 +105,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
                     conversionUploadService.UploadClickConversions(
                     customerId.ToString(), new[] { clickConversion }, true, false);
 
-                // Prints the result;
+                // Prints the result.
                 ClickConversionResult uploadedClickConversion = response.Results[0];
                 Console.WriteLine($"Uploaded conversion that occurred at " +
                     $"'{uploadedClickConversion.ConversionDateTime}' from Google " +

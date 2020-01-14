@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
     /// This code example adds a flights feed, creates the associated feed mapping, and
-    /// adds a feed item.
+    /// adds a feed item. To update feeds, see UpdateFeedItemAttributeValue.cs.
     /// </summary>
     public class AddFlightsFeed : ExampleBase
     {
@@ -55,7 +55,8 @@ namespace Google.Ads.GoogleAds.Examples.V2
             get
             {
                 return "This code example adds a flights feed, creates the associated feed " +
-                    "mapping, and adds a feed item.";
+                    "mapping, and adds a feed item. To update feeds, see " +
+                    "UpdateFeedItemAttributeValue.cs.";
             }
         }
 
@@ -204,12 +205,11 @@ namespace Google.Ads.GoogleAds.Examples.V2
             };
 
             // Issues the search request and get the first result, since we only need the
-            // single feed item we created previously..
+            // single feed item we created previously.
             GoogleAdsRow googleAdsRow = googleAdsService.Search(request).First();
 
             // Gets the attributes list from the feed and creates a map with keys of each attribute and
             // values of each corresponding ID.
-
             Dictionary<FlightPlaceholderField, FeedAttribute> feedAttributes =
                 new Dictionary<FlightPlaceholderField, FeedAttribute>();
 
@@ -278,7 +278,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
             AttributeFieldMapping flightPriceMapping = new AttributeFieldMapping()
             {
                 FeedAttributeId = feedAttributes[FlightPlaceholderField.FlightPrice].Id,
-                FlightField = FlightPlaceholderField.DestinationId
+                FlightField = FlightPlaceholderField.FlightPrice
             };
 
             AttributeFieldMapping flightSalePriceMapping = new AttributeFieldMapping()
