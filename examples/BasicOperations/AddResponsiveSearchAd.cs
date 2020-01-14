@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -20,7 +20,6 @@ using Google.Ads.GoogleAds.V2.Resources;
 using Google.Ads.GoogleAds.V2.Services;
 
 using System;
-using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V2.Enums.ServedAssetFieldTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V2
@@ -121,7 +120,6 @@ namespace Google.Ads.GoogleAds.Examples.V2
                     Console.WriteLine($"Responsive search ad created with resource name:" +
                         $" '{result.ResourceName}'.");
                 }
-
             }
             catch (GoogleAdsException e)
             {
