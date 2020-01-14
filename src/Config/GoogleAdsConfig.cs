@@ -516,7 +516,7 @@ namespace Google.Ads.GoogleAds.Config
         {
             get
             {
-                return CreateCredentialsFromSettings();
+                return CreateCredentials();
             }
         }
 
@@ -524,7 +524,7 @@ namespace Google.Ads.GoogleAds.Config
         /// Creates a credentials object from settings.
         /// </summary>
         /// <returns>The configuration settings.</returns>
-        private ICredential CreateCredentialsFromSettings()
+        protected virtual ICredential CreateCredentials()
         {
             ICredential retval = null;
             switch (OAuth2Mode)
