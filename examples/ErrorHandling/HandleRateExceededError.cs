@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -31,9 +31,9 @@ namespace Google.Ads.GoogleAds.Examples.V2
     /// <summary>
     /// This code example demonstrates how to handle RateExceededError in an application.
     /// This code example runs 5 threads in parallel, each thread attempting to validate
-    /// 100 keywords in a single request.While spanning 5 parallel threads is unlikely to
+    /// 100 keywords in a single request. While spanning 5 parallel threads is unlikely to
     /// trigger a rate exceeded error, substantially increasing the  number of threads may
-    /// have that effect.Note that this example is for illustrative purposes only, and you
+    /// have that effect. Note that this example is for illustrative purposes only, and you
     /// shouldn't intentionally try to trigger a rate exceed error in your application.
     /// </summary>
     public class HandleRateExceededError : ExampleBase
@@ -42,7 +42,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         private const int NUM_THREADS = 5;
 
         // Number of keywords to be validated in each API call.
-        private const int NUM_KEYWORDS = 100;
+        private const int NUM_KEYWORDS = 5000;
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
                 // The Google Ads customer ID for which the call is made.
                 long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-                // the ad group ID to which keywords are added.
+                // The ad group ID to which keywords are added.
                 long campaignId = long.Parse("INSERT_ADGROUP_ID_HERE");
 
                 codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
             {
                 return "This code example demonstrates how to handle RateExceededError in an " +
                     "application. This code example runs 5 threads in parallel, each thread " +
-                    "attempting to validate 100 keywords in a single request.While spanning 5" +
+                    "attempting to validate 100 keywords in a single request. While spanning 5" +
                     " parallel threads is unlikely to trigger a rate exceeded error, " +
                     "substantially increasing the  number of threads may have that effect. Note " +
                     "that this example is for illustrative purposes only, and you shouldn't " +
@@ -98,7 +98,6 @@ namespace Google.Ads.GoogleAds.Examples.V2
             for (int i = 0; i < NUM_THREADS; i++)
             {
                 Task t = CreateKeyword(client, i, customerId, adGroupId);
-                t.Start();
                 tasks.Add(t);
             }
 
@@ -115,78 +114,98 @@ namespace Google.Ads.GoogleAds.Examples.V2
         private async Task CreateKeyword(GoogleAdsClient client, int threadIndex, long customerId,
             long adGroupId)
         {
-            // Get the AdGroupCriterionServiceClient.
-            AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V2.AdGroupCriterionService);
-
-            List<AdGroupCriterionOperation> operations = new List<AdGroupCriterionOperation>();
-
-            for (int i = 0; i < NUM_KEYWORDS; i++)
+            await Task.Run(() => 
             {
-                AdGroupCriterion criterion = new AdGroupCriterion()
+                // Get the AdGroupCriterionServiceClient.
+                AdGroupCriterionServiceClient adGroupCriterionService =
+                    client.GetService(Services.V2.AdGroupCriterionService);
+
+                List<AdGroupCriterionOperation> operations = new List<AdGroupCriterionOperation>();
+
+                for (int i = 0; i < NUM_KEYWORDS; i++)
                 {
-                    Keyword = new KeywordInfo()
+                    AdGroupCriterion criterion = new AdGroupCriterion()
                     {
-                        Text = $"mars cruise thread {threadIndex} seed {i}",
-                        MatchType = KeywordMatchType.Exact
-                    },
-                    AdGroup = ResourceNames.AdGroup(customerId, adGroupId),
-                    Status = AdGroupCriterionStatus.Paused
-                };
+                        Keyword = new KeywordInfo()
+                        {
+                            Text = $"mars cruise thread {threadIndex} seed {i}",
+                            MatchType = KeywordMatchType.Exact
+                        },
+                        AdGroup = ResourceNames.AdGroup(customerId, adGroupId),
+                        Status = AdGroupCriterionStatus.Paused
+                    };
 
-                // Creates the operation.
-                operations.Add(new AdGroupCriterionOperation() { Create = criterion });
-            }
-
-            int retryCount = 0;
-            int retrySeconds = 10;
-            const int NUM_RETRIES = 3;
-
-            while (retryCount < NUM_RETRIES)
-            {
-                try
-                {
-                    // Makes the validateOnly mutate request.
-                    MutateAdGroupCriteriaResponse response =
-                        await adGroupCriterionService.MutateAdGroupCriteriaAsync(
-                            customerId.ToString(), operations, false, true);
-                    Console.WriteLine($"Validated {operations.Count} ad group criteria:");
-                    break;
+                    // Creates the operation.
+                    operations.Add(new AdGroupCriterionOperation() { Create = criterion });
                 }
-                catch (GoogleAdsException e)
+
+                int retryCount = 0;
+                int retrySeconds = 30;
+                const int NUM_RETRIES = 3;
+
+                while (retryCount < NUM_RETRIES)
                 {
-                    // Checks if any of the errors are QuotaError.RESOURCE_EXHAUSTED or
-                    // QuotaError.RESOURCE_TEMPORARILY_EXHAUSTED.
-                    if (e.Failure.Errors.Where(err =>
-                        err.ErrorCode.QuotaError == QuotaError.ResourceExhausted ||
-                        err.ErrorCode.QuotaError == QuotaError.ResourceTemporarilyExhausted)
-                        .Count() > 0)
+                    try
                     {
-                        Console.Error.WriteLine(
-                            $"Received rate exceeded error, retry after {retrySeconds} seconds.");
-                        Thread.Sleep(retrySeconds * 1000);
-                        retryCount++;
-                        // Uses an exponential backoff policy to avoid polling too aggressively.
-                        retrySeconds *= 2;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Failure:");
-                        Console.WriteLine($"Message: {e.Message}");
-                        Console.WriteLine($"Failure: {e.Failure}");
-                        Console.WriteLine($"Request ID: {e.RequestId}");
+                        // Makes the validateOnly mutate request.
+                        MutateAdGroupCriteriaResponse response =
+                            adGroupCriterionService.MutateAdGroupCriteria(
+                                customerId.ToString(), operations, false, true);
+                        Console.WriteLine($"[{threadIndex}] Validated {operations.Count} " +
+                            $"ad group criteria:");
                         break;
                     }
-                }
-                finally
-                {
-                    if (retryCount == NUM_RETRIES)
+                    catch (GoogleAdsException e)
                     {
-                        throw new Exception($"Could not recover after making {retryCount} " +
-                            $"attempts.");
+                        // Checks if any of the errors are QuotaError.RESOURCE_EXHAUSTED or
+                        // QuotaError.RESOURCE_TEMPORARILY_EXHAUSTED.
+                        // Note: The code assumes that the developer token is approved for
+                        // Standard Access.
+                        if (e.Failure != null)
+                        {
+                            bool isRateExceededError = false;
+                            e.Failure.Errors
+                            .Where(err =>
+                                err.ErrorCode.QuotaError == QuotaError.ResourceExhausted ||
+                                err.ErrorCode.QuotaError == QuotaError.ResourceTemporarilyExhausted)
+                            .ToList()
+                            .ForEach(delegate (GoogleAdsError err)
+                                {
+                                    Console.Error.WriteLine($"[{threadIndex}] Received rate " +
+                                        $"exceeded error. Message says, \"{err.Message}\".");
+                                    isRateExceededError = true;
+                                }
+                            );
+                            if (isRateExceededError)
+                            {
+                                Console.Error.WriteLine(
+                                    $"[{threadIndex}] Will retry after  {retrySeconds} seconds.");
+                                Thread.Sleep(retrySeconds * 1000);
+                                retryCount++;
+                                // Uses an exponential backoff policy to avoid polling too
+                                // aggressively.
+                                retrySeconds *= 2;
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Failure:");
+                            Console.WriteLine($"Message: {e.Message}");
+                            Console.WriteLine($"Failure: {e.Failure}");
+                            Console.WriteLine($"Request ID: {e.RequestId}");
+                            break;
+                        }
+                    }
+                    finally
+                    {
+                        if (retryCount == NUM_RETRIES)
+                        {
+                            throw new Exception($"[{ threadIndex }] Could not recover after " +
+                                $"making {retryCount} attempts.");
+                        }
                     }
                 }
-            }
+            });
         }
     }
 }

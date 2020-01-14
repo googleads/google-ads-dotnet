@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+﻿// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
     /// <summary>
     /// This code example updates a FeedItemAttributeValue in a flights feed. To create a flights
     /// feed, run the AddFlightsFeed.cs. This code example is specific to feeds of type
-    /// DYNAMIC_FLIGHT.The attribute you are updating must be present on the feed. This code
+    /// DYNAMIC_FLIGHT. The attribute you are updating must be present on the feed. This code
     /// example is specifically for updating the StringValue of an attribute.
     /// </summary>
     public class UpdateFeedItemAttributeValue : ExampleBase
@@ -131,7 +131,6 @@ namespace Google.Ads.GoogleAds.Examples.V2
 
             // Gets the ID of the attribute to update. This is needed to specify which
             // FeedItemAttributeValue will be updated in the given FeedItem.
-
             FlightPlaceholderField placeholderField = (FlightPlaceholderField) Enum.Parse(
                 typeof(FlightPlaceholderField), flightPlaceholderField);
             long attributeId = feedAttributes[placeholderField].Id.Value;
