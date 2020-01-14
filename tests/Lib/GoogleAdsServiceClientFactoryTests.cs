@@ -43,17 +43,18 @@ namespace Google.Ads.GoogleAds.Tests.Lib
                 }).First();
 
             StubIntegrityTestHelper.EnumerateServices<Services>(
-              delegate (System.Type serviceSignatureType)
+              delegate (object serviceSignature)
               {
                   Assert.DoesNotThrow(delegate ()
                   {
+                      System.Type serviceSignatureType = serviceSignature.GetType();
                       List<System.Type> arguments = new List<System.Type>(
                           serviceSignatureType.GenericTypeArguments);
                       arguments.Add(typeof(GoogleAdsConfig));
                       MethodInfo genericMethod = method.MakeGenericMethod(
                           serviceSignatureType.GenericTypeArguments);
                       object result = genericMethod.Invoke(serviceClientFactory,
-                          new object[] { null, config });
+                          new object[] { serviceSignature, config });
                   });
               });
         }
