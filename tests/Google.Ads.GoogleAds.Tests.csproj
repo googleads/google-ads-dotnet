@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netcoreapp2.0;net452</TargetFrameworks>
-    <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFrameworks>
+    <TargetFramework>net452</TargetFramework>
     <RootNamespace>Google.Ads.GoogleAds.Tests</RootNamespace>
     <AssemblyName>Google.Ads.GoogleAds.Tests</AssemblyName>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -16,10 +15,13 @@
   <ItemGroup>
       <PackageReference Include="Google.Apis.Auth" Version="1.42.0" />
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+      <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      </PackageReference>
       <PackageReference Include="Moq" Version="4.13.1" />
       <PackageReference Include="NUnit" Version="3.12.0" />
       <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
-      <PackageReference Include="Google.Ads.GoogleAds" Version="2.6.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\App.config">
@@ -28,7 +30,8 @@
     <EmbeddedResource Include="Util\field_mask_tests.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Condition="Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="..\src\Google.Ads.GoogleAds.csproj" />
+    <ProjectReference Include="..\examples\Google.Ads.GoogleAds.Examples.csproj" />
+    <ProjectReference Include="..\src\Google.Ads.GoogleAds.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="TestResources.Designer.cs">
