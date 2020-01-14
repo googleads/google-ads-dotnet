@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -33,14 +33,14 @@ using static Google.Ads.GoogleAds.V2.Enums.AdvertisingChannelSubTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V2
 {
     /// <summary>
-    /// This code example creates a standard shopping campaign, a shopping product ad group and a
-    /// shopping product ad.
-    ///
+    /// This code example creates a Smart Shopping campaign, a Smart Shopping ad group, a Smart 
+    /// Shopping ad group ad and a listing group for "All products".
+    /// 
     /// Prerequisite: You need to have access to a Merchant Center account. You can find
-    /// instructions to create a Merchant Center account here:
-    /// https://support.google.com/merchants/answer/188924.
-    /// This account must be linked to your AdWords account.The integration instructions can be
-    /// found at: https://developers.google.com/adwords/shopping/full-automation/articles/t15.
+    /// instructions to create a Merchant Center account here: 
+    /// https://support.google.com/merchants/answer/188924. This account must be 
+    /// linked to your Google Ads account.The integration instructions can be found at:
+    /// https://developers.google.com/adwords/shopping/full-automation/articles/t15.
     /// </summary>
     public class AddShoppingSmartAd : ExampleBase
     {
