@@ -32,6 +32,8 @@ namespace Google.Ads.GoogleAds.Logging
         private readonly HashSet<string> RESPONSE_HEADERS_TO_MASK =
             new HashSet<string>() { };
 
+        private const string MASK_PATTERN = "REDACTED";
+
         /// <summary>
         /// The max length of a summary log error message.
         /// </summary>
@@ -181,19 +183,15 @@ namespace Google.Ads.GoogleAds.Logging
         {
             get
             {
-                TraceFormatter formatter = new JsonBodyFormatter();
-
                 StringBuilder builder = new StringBuilder();
-                builder.AppendFormat("\r\n---------------BEGIN API CALL---------------\r\n");
-                builder.AppendFormat("\r\nRequest\r\n");
-                builder.AppendFormat("-------\r\n\r\n");
+                builder.Append("\r\n---------------BEGIN API CALL---------------\r\n");
+                builder.Append("\r\nRequest\r\n");
+                builder.Append("-------\r\n\r\n");
 
-                builder.AppendFormat($"Method Name: {Method}\r\n");
-                builder.AppendFormat($"Host: {Host}\r\n");
-                builder.Append("Headers: " + formatter.MaskContents(FormatHeaders(RequestHeaders),
-                    REQUEST_HEADERS_TO_MASK));
-                builder.AppendFormat("\r\n\r\n{0}\r\n", formatter.MaskContents(Request.ToString(),
-                    null));
+                builder.Append($"Method Name: {Method}\r\n");
+                builder.Append($"Host: {Host}\r\n");
+                builder.Append("Headers: " + FormatHeaders(RequestHeaders, RESPONSE_HEADERS_TO_MASK));
+                builder.Append("\r\n\r\n" + Request.ToString() + "\r\n");
                 return builder.ToString();
             }
         }
@@ -205,24 +203,19 @@ namespace Google.Ads.GoogleAds.Logging
         {
             get
             {
-                TraceFormatter formatter = new JsonBodyFormatter();
-
                 StringBuilder builder = new StringBuilder();
-                builder.AppendFormat("\r\nResponse\r\n");
-                builder.AppendFormat("--------\r\n");
+                builder.Append("\r\nResponse\r\n");
+                builder.Append("--------\r\n");
 
-                builder.Append("Headers: " + formatter.MaskContents(FormatHeaders(ResponseHeaders),
-                    RESPONSE_HEADERS_TO_MASK));
+                builder.Append("Headers: " + FormatHeaders(ResponseHeaders, RESPONSE_HEADERS_TO_MASK));
 
                 if (IsFailure)
                 {
-                    builder.AppendFormat("\r\n\r\nFault: {0}\r\n",
-                        formatter.MaskContents(Exception.ToString(), null));
+                    builder.Append($"\r\n\r\nFault: {Exception}\r\n");
                 }
                 else
                 {
-                    builder.AppendFormat("\r\n\r\n{0}\r\n",
-                        formatter.MaskContents(Response.ToString(), null));
+                    builder.Append($"\r\n\r\n{Response}\r\n");
 
                     if (!string.IsNullOrEmpty(PartialFailures))
                     {
@@ -238,16 +231,24 @@ namespace Google.Ads.GoogleAds.Logging
         /// <summary>
         /// Formats the metadata headers.
         /// </summary>
-        /// <param name="metadata">The metadata.</param>
+        /// <param name="metadata">The header metadata.</param>
+        /// <param name="keysToMask">The keys to mask.</param>
         /// <returns>The formatted text.</returns>
-        private static string FormatHeaders(Metadata metadata)
+        private static string FormatHeaders(Metadata metadata, HashSet<string> keysToMask)
         {
             Dictionary<string, string> headers = new Dictionary<string, string>();
             if (metadata != null)
             {
                 foreach (Metadata.Entry entry in metadata)
                 {
-                    headers[entry.Key] = entry.Value;
+                    if (keysToMask.Contains(entry.Key))
+                    {
+                        headers[entry.Key] = MASK_PATTERN;
+                    }
+                    else
+                    {
+                        headers[entry.Key] = entry.Value;
+                    }
                 }
             }
             return JsonConvert.SerializeObject(headers);
