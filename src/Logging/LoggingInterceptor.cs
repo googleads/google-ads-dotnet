@@ -140,14 +140,23 @@ namespace Google.Ads.GoogleAds.Logging
         /// <returns></returns>
         private string GetPartialFailures(object response)
         {
-            try
-            {
-                return response.GetType().GetProperty("PartialFailure")
-                    .GetValue(response).ToString();
-            }
-            catch
+            if (response == null)
             {
                 return "";
+            }
+            PropertyInfo propInfo = response.GetType().GetProperty("PartialFailure");
+            if (propInfo == null)
+            {
+                return "";
+            }
+            object propValue = propInfo.GetValue(response);
+            if (propValue == null)
+            {
+                return "";
+            }
+            else
+            {
+                return propValue.ToString();
             }
         }
 
