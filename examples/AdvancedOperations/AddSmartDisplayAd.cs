@@ -138,7 +138,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
 
             string budgetResourceName = response.Results.First().ResourceName;
 
-            // Print out some information about the added ad group.
+            // Print out some information about the added budget.
             Console.WriteLine($"Added campaign budget with resource name = '{budgetResourceName}'.");
 
             return budgetResourceName;
@@ -195,7 +195,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
 
             string campaignResourceName = response.Results.First().ResourceName;
 
-            // Print out some information about the added ad group.
+            // Print out some information about the added campaign.
             Console.WriteLine($"Added campaign with resource name = '{campaignResourceName}'.");
 
             return campaignResourceName;
@@ -240,6 +240,15 @@ namespace Google.Ads.GoogleAds.Examples.V2
             return adGroupResourceName;
         }
 
+        /// <summary>
+        /// Uploads the image asset.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
+        /// <param name="imageUrl">The image URL.</param>
+        /// <param name="width">The image width in pixels.</param>
+        /// <param name="height">The image height in pixels.</param>
+        /// <returns></returns>
         private static string UploadImageAsset(GoogleAdsClient client, long customerId,
             string imageUrl, long width, long height)
         {
@@ -288,7 +297,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
 
             string assetResourceName = response.Results.First().ResourceName;
 
-            // Print out some information about the added ad group.
+            // Print out some information about the added asset.
             Console.WriteLine($"Added asset with resource name = '{assetResourceName}'.");
 
             return assetResourceName;
@@ -363,7 +372,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
 
             string adGroupAdResourceName = response.Results.First().ResourceName;
 
-            // Print out some information about the added ad group.
+            // Print out some information about the added ad group ad.
             Console.WriteLine($"Added ad group ad with resource name = '{adGroupAdResourceName}'.");
 
             return adGroupAdResourceName;
