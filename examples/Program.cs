@@ -14,6 +14,7 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -33,9 +34,11 @@ namespace Google.Ads.GoogleAds.Examples
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            // Turn on logging. This is useful for debugging your requests.
-            TraceUtilities.Configure(TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE,
-                "C:\\logs\\details.log", System.Diagnostics.SourceLevels.All);
+            // Turn on detailed logging. This is useful for debugging your requests.
+            // You should also replace INSERT_PATH_TO_DETAILED_LOGS_HERE to a file path that will
+            // be used to write the detailed logs to. E.g. C:\\logs\\details.log
+            // TraceUtilities.Configure(TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE,
+            //    "INSERT_PATH_TO_DETAILED_LOGS_HERE", System.Diagnostics.SourceLevels.All);
 
             // If the API log doesn't give you enough details, then you can enable more low level
             // logging at grpc level. Keep in mind that this can get pretty detailed and long. The
