@@ -123,9 +123,9 @@ namespace Google.Ads.GoogleAds.Examples
         /// </summary>
         private static void ShowUsage(ExampleRunner runner)
         {
-            string exeName = Path.GetFileName(Assembly.GetExecutingAssembly().FullName);
+            string exeName = ExampleRunner.GetExecutableName();
             Console.WriteLine("Runs Google Ads API code examples");
-            Console.WriteLine("Usage : {0} examplename [flags]\n", exeName);
+            Console.WriteLine("Usage : dotnet {0} examplename [flags]\n", exeName);
             Console.WriteLine($"Supported examples: \n");
             runner.PrintAvailableExamples();
             Console.WriteLine("Press [Enter] to continue");

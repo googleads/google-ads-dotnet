@@ -18,6 +18,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using SystemType = System.Type;
 
 namespace Google.Ads.GoogleAds.Examples
@@ -62,7 +63,9 @@ namespace Google.Ads.GoogleAds.Examples
         {
             foreach (ExampleBase codeExample in codeExampleMap.Values)
             {
-                Console.WriteLine("{0} : {1}", codeExample.Name, codeExample.Description);
+                Console.WriteLine("\n{0}\n{1}\n{2}\n\nUsage\n\n    {3}\n\n", codeExample.Name,
+                    new string('=', codeExample.Name.Length),
+                    codeExample.Description, GetUsage(codeExample));
             }
         }
 
@@ -142,6 +145,49 @@ namespace Google.Ads.GoogleAds.Examples
         private static MethodInfo GetRunMethod(ExampleBase codeExample)
         {
             return codeExample.GetType().GetMethod("Run");
+        }
+
+        /// <summary>
+        /// Gets the name of the executable.
+        /// </summary>
+        /// <returns>The name of the executable.</returns>
+        public static string GetExecutableName()
+        {
+            return Path.GetFileName(Assembly.GetExecutingAssembly().Location);
+        }
+
+        /// <summary>
+        /// Gets the usage instructions for a code example.
+        /// </summary>
+        /// <param name="codeExample">The code example.</param>
+        /// <returns>The usage instructions.</returns>
+        public static string GetUsage(ExampleBase codeExample)
+        {
+            List<string> prototypes = new List<string>();
+
+            prototypes.Add($"dotnet {GetExecutableName()} {codeExample.Name}");
+
+            Flag[] flags = GetFlagsFromRunMethodSignature(codeExample);
+            foreach (Flag flag in flags)
+            {
+                StringBuilder formatted = new StringBuilder();
+                string argNameOnly = flag.Prototype.Replace("=", "").Replace("--", "");
+                for (int i = 0; i < argNameOnly.Length; i++)
+                {
+                    if (char.IsUpper(argNameOnly[i]))
+                    {
+                        formatted.Append("_");
+                        formatted.Append(argNameOnly[i]);
+                    }
+                    else
+                    {
+                        formatted.Append(char.ToUpper(argNameOnly[i]));
+                    }
+                }
+                string argValue = $"INSERT_{formatted.ToString()}_HERE";
+                prototypes.Add($"{flag.Prototype}{argValue}");
+            }
+            return string.Join(" ", prototypes);
         }
 
         /// <summary>
