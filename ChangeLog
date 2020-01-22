@@ -44,7 +44,7 @@ Frontlog
  until https://github.com/nunit/nunit3-vs-adapter/issues/17 is fixed for netcore and makes its way
  into a stable release.
 - Remove reference to Google.Ads.GoogleAds nuget package in Google.Ads.GoogleAds.Tests.csproj. Tests
-should build and run against the csproj intsead.
+should build and run against the csproj instead.
 - Added nuget package references to the new nuget packages for .NET SDK. This allows you to build
  .NET SDK projects using dotnet command only.
 - Refactored the tests suite.
