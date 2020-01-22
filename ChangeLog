@@ -1,3 +1,58 @@
+Frontlog
+========
+
+- Added new code examples.
+  - AdvancedOperations\AddAdCustomerizer.cs
+  - AdvancedOperations\AddSmartDisplayAd.cs
+  - BasicOperations\AddResponsiveSearchAd.cs
+  - BasicOperations\AddAdGroup.cs renamed to BasicOperations\AddAdGroups.cs 
+  - CampaignManagement\AddCampaignLabels.cs
+  - CampaignManagement\GetCampaignsByLabel.cs
+  - CampaignManagement\SetAdParameters.cs
+  - CampaignManagement\ValidateTextAd.cs
+  - ErrorHandling\HandleRateExceededError.cs
+  - Extensions\AddSitelinks.cs
+  - Extensions\UpdateFeedItemAttributeValue.cs
+  - Misc\GetAllImageAssets.cs
+  - Misc\GetAllVideosAndImages.cs.cs
+  - Misc\UploadImage.cs
+  - Misc\UploadImageAsset.cs
+  - Misc\UploadMediaBundle.cs
+  - Remarketing\AddFlightsFeed.cs
+  - Remarketing\AddRealEstateFeed.cs
+  - Remarketing\AddRemarketingAction.cs
+  - Remarketing\UploadConversionAdjustment.cs
+  - ShoppingAds\AddShoppingSmartAd.cs
+  - ShoppingAds\GetProductBiddingCategoryConstant.cs
+  - Targeting\AddCustomerNegativeCriteria.cs
+  - Targeting\AddDemographicTargetingCriteria.cs
+- Added tests for some code examples. All new code examples will have tests, tests for previous code
+ examples will be backfilled in upcoming releases.
+- Signing was added to Google.Ads.GoogleAds.Examples.csproj to facilitate tests for code examples.
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/118. You can now extend GoogleAdsConfig
+ class, override CreateCredentials() method to provide your own logic for caching credentials.
+- Removed JsonBodyFormatter and TraceFormatter classes. Since the library works with proto objects,
+ it is cleaner to do the formatting directly with the objects instead of converting it into a Json
+ object and processing it. Part of the relevant functionality was pulled into LogEntry class.
+- Additional null checks were added into LoggingInterceptor::GetPartialFailures() method. This provides
+ a less noisy debugging experience as well as better performance.
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/117
+- https://github.com/googleads/google-ads-dotnet/issues/116
+- Fixed broken tests in GoogleAdsClientTests suite and GoogleAdsServiceClientFactoryTests suite. Also
+  fixed StubIntegrityTestHelper.cs to work with the fixed suites.
+- Google.Ads.GoogleAds.Tests.csproj currently runs only for net452 target. This is a temporary workaround
+ until https://github.com/nunit/nunit3-vs-adapter/issues/17 is fixed for netcore and makes its way
+ into a stable release.
+- Remove reference to Google.Ads.GoogleAds nuget package in Google.Ads.GoogleAds.Tests.csproj. Tests
+should build and run against the csproj instead.
+- Added nuget package references to the new nuget packages for .NET SDK. This allows you to build
+ .NET SDK projects using dotnet command only.
+- Refactored the tests suite.
+  - Move ExampleTestsBase.cs to v2 folder.
+  - Add an ExamplesTestSetup.cs file for single-place initialization for the whole test suite.
+  - Add an ExampleTestsUtils.cs file with several methods for Setup for tests.
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/99
+
 2.6.0
 =====
 - Optimize for a check on section name if it is empty in the GoogleAdsConfig class.
