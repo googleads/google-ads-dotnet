@@ -117,16 +117,17 @@ namespace Google.Ads.GoogleAds.Examples.V2
 
                 if (e.Failure != null)
                 {
+                    // Note: Depending on the ad type, you may get back policy violation errors as
+                    // either PolicyFindingError or PolicyViolationError. ExpandedTextAds return
+                    // errors as PolicyFindingError, so only this case is illustrated here. See
+                    // https://developers.google.com/google-ads/api/docs/policy-exemption/overview
+                    // for additional details.
                     e.Failure.Errors
                         .Where(err =>
-                            err.ErrorCode.PolicyFindingError == PolicyFindingError.PolicyFinding ||
-                            err.ErrorCode.PolicyViolationError == PolicyViolationError.PolicyError)
+                            err.ErrorCode.PolicyFindingError == PolicyFindingError.PolicyFinding)
                         .ToList()
                         .ForEach(delegate (GoogleAdsError err)
                         {
-                            // Only one of PolicyFindingDetails or PolicyViolationDetails will be
-                            // populated. PolicyViolationDetails is used by some ad formats, and
-                            // PolicyFindingDetails by others.
                             int count = 1;
                             if (err.Details.PolicyFindingDetails != null)
                             {
@@ -137,14 +138,6 @@ namespace Google.Ads.GoogleAds.Examples.V2
                                         $"\"{entry.Topic}\" and type = \"{entry.Type}\" " +
                                         $"was found.");
                                 }
-                            }
-                            else if (err.Details.PolicyViolationDetails != null)
-                            {
-                                PolicyViolationDetails details = err.Details.PolicyViolationDetails;
-                                Console.WriteLine(
-                                    $"{count}) Policy violation with name = " +
-                                    $"\"{details.ExternalPolicyName}\" and isExemptable: " +
-                                    $"{details.IsExemptible} was found.");
                             }
                             count++;
                         });
