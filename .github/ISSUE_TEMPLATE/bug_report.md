@@ -16,7 +16,7 @@ Please check existing issues to see if your bug has already been reported before
 
 **Which version of the client library are you using?**
 
-**Which version of Java are you using?**
+**Which version of .NET are you using?**
 
 **Which operating system (Linux, Windows, ...) and version?**
 
