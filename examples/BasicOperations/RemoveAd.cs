@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example removes an ad. To list ads, run GetExpandedTextAds.cs.
@@ -67,7 +67,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         public void Run(GoogleAdsClient client, long customerId, long adGroupId, long adId)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient service = client.GetService(Services.V2.AdGroupAdService);
+            AdGroupAdServiceClient service = client.GetService(Services.V3.AdGroupAdService);
 
             // Create a new operation.
             AdGroupAdOperation operation = new AdGroupAdOperation

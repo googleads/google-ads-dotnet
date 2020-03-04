@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Common;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 using Google.Api.Gax;
 using System;
-using static Google.Ads.GoogleAds.V2.Enums.PolicyApprovalStatusEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example retrieves all the disapproved ads in a given campaign.
@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V2.GoogleAdsService);
+                Services.V3.GoogleAdsService);
 
             String searchQuery =
                 $@"SELECT

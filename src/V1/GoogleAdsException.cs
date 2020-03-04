@@ -12,74 +12,32 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Protobuf;
+using Google.Ads.GoogleAds.Lib;
 using Grpc.Core;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+using System;
+using System.Linq;
+using System.Reflection;
 
 namespace Google.Ads.GoogleAds.V1.Errors
 {
     /// <summary>
     /// Exception thrown in response to an API error from the GoogleAds servers.
     /// </summary>
-    public sealed class GoogleAdsException : RpcException
+    public sealed class GoogleAdsException : GoogleAdsBaseException<GoogleAdsFailure>
     {
         /// <summary>
-        /// The gRPC metadata key name for the serialized failure object.
+        /// Initializes a new instance of the <see cref="GoogleAdsException"/> class.
         /// </summary>
-        public const string FAILURE_KEY = "google.ads.googleads.v1.errors.googleadsfailure-bin";
-
-        /// <summary>
-        /// The gRPC metadata key name for request ID.
-        /// </summary>
-        public const string REQUEST_ID_KEY = "request-id";
-
-        /// <summary>
-        /// Gets the Google Ads failure details.
-        /// </summary>
-        public GoogleAdsFailure Failure
-        {
-            get;
-        }
-
-        /// <summary>
-        /// Gets the request ID.
-        /// </summary>
-        public string RequestId
-        {
-            get;
-        }
+        /// <param name="status">Resulting status of a call.</param>
+        /// <param name="message">The exception message.</param>
+        private GoogleAdsException(Status status, string message) : base(status, message) { }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GoogleAdsException"/> class.
         /// </summary>
         /// <param name="status">Resulting status of a call.</param>
         /// <param name="trailers">Response trailing metadata.</param>
-        private GoogleAdsException(Status status, Metadata trailers) : base(status, trailers)
-        {
-            foreach (Metadata.Entry entry in trailers)
-            {
-                switch (entry.Key)
-                {
-                    case FAILURE_KEY:
-                        Failure = GoogleAdsFailure.Parser.ParseFrom(entry.ValueBytes);
-                        break;
-
-                    case REQUEST_ID_KEY:
-                        RequestId = entry.Value;
-                        break;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="GoogleAdsException"/> class.
-        /// </summary>
-        /// <param name="status">Resulting status of a call.</param>
-        /// <param name="message">The exception message.</param>
-        private GoogleAdsException(Status status, string message) : base(status, message)
-        {
-        }
+        private GoogleAdsException(Status status, Metadata trailers) : base(status, trailers) { }
 
         /// <summary>
         /// Creates a new instance of the <see cref="GoogleAdsException"/> class from an
@@ -87,7 +45,7 @@ namespace Google.Ads.GoogleAds.V1.Errors
         /// </summary>
         /// <param name="rpcException">The original gRPC exception.</param>
         /// <returns></returns>
-        public static GoogleAdsException Create(RpcException rpcException)
+        public static GoogleAdsBaseException Create(RpcException rpcException)
         {
             return (rpcException.Trailers != null)
                 ? new GoogleAdsException(rpcException.Status, rpcException.Trailers)
@@ -95,26 +53,17 @@ namespace Google.Ads.GoogleAds.V1.Errors
         }
 
         /// <summary>
-        /// Returns a <see cref="System.String" /> that represents this instance.
+        /// Extracts a <see cref="GoogleAdsException"/> from an <see cref="AggregateException"/>
         /// </summary>
-        /// <returns>
-        /// A <see cref="System.String" /> that represents this instance.
-        /// </returns>
-        public override string ToString()
+        /// <param name="ae">The aggregate exception.</param>
+        /// <returns>An underlying GoogleAdsException if present, or <code>null</code> if one 
+        /// is missing.</returns>
+        public static GoogleAdsException FromTaskException(AggregateException ae)
         {
-            JObject jsonObject = new JObject(
-                new JProperty("StatusCode", this.StatusCode),
-                new JProperty("Details", this.Status.Detail),
-                new JProperty("RequestId", this.RequestId)
-            );
-
-            if (this.Failure != null)
+            return ae.Flatten().InnerExceptions.Where((Exception ex) =>
             {
-                jsonObject.Add(new JProperty("Failure", JObject.Parse(
-                    JsonFormatter.ToDiagnosticString(this.Failure))));
-            }
-
-            return JsonConvert.SerializeObject(jsonObject, Formatting.Indented);
+                return ex is GoogleAdsException;
+            }).FirstOrDefault() as GoogleAdsException;
         }
     }
 }

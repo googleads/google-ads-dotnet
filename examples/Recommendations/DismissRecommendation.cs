@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V2.Services.DismissRecommendationRequest.Types;
-using static Google.Ads.GoogleAds.V2.Services.DismissRecommendationResponse.Types;
+using static Google.Ads.GoogleAds.V3.Services.DismissRecommendationRequest.Types;
+using static Google.Ads.GoogleAds.V3.Services.DismissRecommendationResponse.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example dismisses a given recommendation. To retrieve recommendations for text
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the RecommendationServiceClient.
             RecommendationServiceClient service = client.GetService(
-                Services.V2.RecommendationService);
+                Services.V3.RecommendationService);
 
             DismissRecommendationOperation operation = new DismissRecommendationOperation()
             {

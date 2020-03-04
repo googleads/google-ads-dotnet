@@ -14,17 +14,17 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V2.Common;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 using Google.Protobuf;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V2.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.MimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example uploads an image asset. To get image assets, run GetAllImageAssets.cs.
@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the AssetServiceClient.
             AssetServiceClient assetService =
-                client.GetService(Services.V2.AssetService);
+                client.GetService(Services.V3.AssetService);
 
             // Creates an image content.
             byte[] imageContent = MediaUtilities.GetAssetDataFromUrl(IMAGE_URL, client.Config);

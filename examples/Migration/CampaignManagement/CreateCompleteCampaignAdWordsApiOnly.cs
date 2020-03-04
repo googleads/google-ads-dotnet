@@ -19,7 +19,7 @@ using System.Web;
 
 using aw = global::Google.Api.Ads.AdWords.v201809;
 
-namespace Google.Ads.GoogleAds.Examples.V2.Migration.CampaignManagement
+namespace Google.Ads.GoogleAds.Examples.V3.Migration.CampaignManagement
 {
     /// <summary>
     /// This code example is the first in a series of code examples that shows how to create

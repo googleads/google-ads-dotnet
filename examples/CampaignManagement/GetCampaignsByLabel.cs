@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example gets all campaigns with a specific label.
@@ -64,7 +64,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V2.GoogleAdsService);
+                client.GetService(Services.V3.GoogleAdsService);
 
             // Creates a request that will retrieve all campaign labels with the specified
             // labelId using pages of the specified page size.

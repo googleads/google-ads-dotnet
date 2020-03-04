@@ -13,17 +13,17 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Common;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V2.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.ProximityRadiusUnitsEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example illustrates adding campaign targeting criteria.
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService =
-                client.GetService(Services.V2.CampaignCriterionService);
+                client.GetService(Services.V3.CampaignCriterionService);
 
             // Set the Campaign Resource Name
             string campaignResourceName = ResourceNames.Campaign(customerId, campaignId);

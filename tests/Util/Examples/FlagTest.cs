@@ -24,14 +24,15 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
     /// UnitTests for <see cref="Flag{T}"/>  and <see cref="Flags"/> classes.
     /// </summary>
     [TestFixture]
-    public class FlagTest
+    [Category("Smoke")]
+    internal class FlagTest
     {
-        internal const string STRING_FLAG = "stringFlag";
-        internal const string STRING_REPEATED_FLAG = "stringRepeatFlag";
-        internal const string STRING_ARG1 = "stringArg1";
-        internal const string STRING_ARG2 = "stringArg2";
-        internal const string LONG_FLAG = "longFlag";
-        internal const long LONG_ARG1 = 1234;
+        private const string STRING_FLAG = "stringFlag";
+        private const string STRING_REPEATED_FLAG = "stringRepeatFlag";
+        private const string STRING_ARG1 = "stringArg1";
+        private const string STRING_ARG2 = "stringArg2";
+        private const string LONG_FLAG = "longFlag";
+        private const long LONG_ARG1 = 1234;
 
         /// <summary>
         /// Inits this instance.
