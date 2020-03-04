@@ -26,7 +26,8 @@ namespace Google.Ads.GoogleAds.Tests.Util
     /// UnitTests for <see cref="HttpUtilities"/> class.
     /// </summary>
     [TestFixture]
-    public class HttpUtilitiesTest
+    [Category("Smoke")]
+    internal class HttpUtilitiesTest
     {
         private const string TEST_URL = "http://www.example.com";
         private const string TEST_METHOD = "GET";

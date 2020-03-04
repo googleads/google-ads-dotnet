@@ -13,19 +13,19 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Common;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V2.Enums.AdCustomizerPlaceholderFieldEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.AdCustomizerPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example adds an ad customizer feed and associates it with the customer.
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient adGroupBidModifierService =
-                client.GetService(Services.V2.AdGroupBidModifierService);
+                client.GetService(Services.V3.AdGroupBidModifierService);
 
             string feedName = "Ad Customizer example feed " + ExampleUtilities.GetRandomString();
 
@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
             string feedName)
         {
             // Get the FeedServiceClient.
-            FeedServiceClient feedService = client.GetService(Services.V2.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V3.FeedService);
 
             // Creates three feed attributes: a name, a price and a date. The attribute names
             // are arbitrary choices and will be used as placeholders in the ad text fields.
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V2.GoogleAdsService);
+                client.GetService(Services.V3.GoogleAdsService);
 
             string query = $"SELECT feed.attributes, feed.name FROM feed WHERE " +
                 $"feed.resource_name = '{feedResourceName}'";
@@ -213,11 +213,11 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the FeedMappingService.
             FeedMappingServiceClient feedMappingService =
-                client.GetService(Services.V2.FeedMappingService);
+                client.GetService(Services.V3.FeedMappingService);
 
             // Map the feed attributes to ad customizer placeholder fields.
             // For a full list of ad customizer placeholder fields, see
-            // https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v2.enums#google.ads.googleads.v2.enums.AdCustomizerPlaceholderFieldEnum.AdCustomizerPlaceholderField
+            // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V3.enums#Google.Ads.GoogleAds.V3.enums.AdCustomizerPlaceholderFieldEnum.AdCustomizerPlaceholderField
             AttributeFieldMapping nameFieldMapping = new AttributeFieldMapping()
             {
                 FeedAttributeId = feedAttributes["Name"].Id,
@@ -268,7 +268,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService =
-                client.GetService(Services.V2.FeedItemService);
+                client.GetService(Services.V3.FeedItemService);
 
             List<FeedItemOperation> feedItemOperations = new List<FeedItemOperation>();
 
@@ -353,7 +353,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the FeedItemTargetServiceClient.
             FeedItemTargetServiceClient feedItemTargetService =
-                client.GetService(Services.V2.FeedItemTargetService);
+                client.GetService(Services.V3.FeedItemTargetService);
 
             // Bind each feed item to a specific ad group to make sure it will only be used to
             // customize ads inside that ad group; using the feed item elsewhere will result
@@ -396,7 +396,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V2.AdGroupAdService);
+                client.GetService(Services.V3.AdGroupAdService);
 
 
             // Creates an expanded text ad using the feed attribute names as placeholders.

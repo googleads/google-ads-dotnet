@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example illustrates getting GeoTargetConstants by given location names.
@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GeoTargetConstantServiceClient.
             GeoTargetConstantServiceClient geoService =
-                client.GetService(Services.V2.GeoTargetConstantService);
+                client.GetService(Services.V3.GeoTargetConstantService);
 
             // Locale is using ISO 639-1 format. If an invalid locale is given,
             // 'en' is used by default.

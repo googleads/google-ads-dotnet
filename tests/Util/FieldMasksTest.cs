@@ -13,7 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Util;
-
+using Google.Protobuf.WellKnownTypes;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 
@@ -21,54 +21,54 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Tests.Util {
-
-  /// <summary>
-  /// Tests for <see cref="FieldMasks"/> class.
-  /// </summary>
-  [TestFixture]
-  public class FieldMasksTest {
-
+namespace Google.Ads.GoogleAds.Tests.Util
+{
     /// <summary>
-    /// The list of test cases.
+    /// Tests for <see cref="FieldMasks"/> class.
     /// </summary>
-    private static IEnumerable<ITestCaseData> protoTestCases =
-        LoadTestSuite().TestCases.Select(c => new TestCaseData(c) {
-          TestName = c.Description
-        }).ToList();
+    [TestFixture]
+    [Category("Smoke")]
+    internal class FieldMasksTest
+    {
+        /// <summary>
+        /// Gets the proto test cases.
+        /// </summary>
+        internal static IEnumerable<ITestCaseData> ProtoTestCases
+        {
+            get;
+        } =
+            LoadTestSuite().TestCases.Select(c => new TestCaseData(c)
+            {
+                TestName = c.Description
+            }).ToList();
 
-    /// <summary>
-    /// Gets the proto test cases.
-    /// </summary>
-    public static IEnumerable<ITestCaseData> ProtoTestCases {
-      get {
-        return protoTestCases;
-      }
+        /// <summary>
+        /// Tests for <see cref="FieldMasks.FromChanges{T}(Protobuf.IMessage{T}, Protobuf.IMessage{T})"/>
+        /// method.
+        /// </summary>
+        /// <param name="testCase">The test case.</param>
+        [Test]
+        [TestCaseSource(nameof(ProtoTestCases))]
+        public void TestFromChanges(TestCase testCase)
+        {
+            FieldMask actual = FieldMasks.FromChanges(testCase.OriginalResource,
+                testCase.ModifiedResource);
+            Assert.AreEqual(testCase.ExpectedMask, actual);
+        }
+
+        /// <summary>
+        /// Loads the test suite.
+        /// </summary>
+        /// <returns>The test suite</returns>
+        private static TestSuite LoadTestSuite()
+        {
+            string json;
+            using (var stream = typeof(FieldMasksTest).Assembly.GetManifestResourceStream(
+                "Google.Ads.GoogleAds.Tests.Util.field_mask_tests.json"))
+            {
+                json = new StreamReader(stream).ReadToEnd();
+            }
+            return TestSuite.Parser.ParseJson(json);
+        }
     }
-
-    /// <summary>
-    /// Tests for <see cref="FieldMasks.FromChanges{T}(Protobuf.IMessage{T}, Protobuf.IMessage{T})"/>
-    /// method.
-    /// </summary>
-    /// <param name="testCase">The test case.</param>
-    [Test]
-    [TestCaseSource(nameof(ProtoTestCases))]
-    public void TestFromChanges(TestCase testCase) {
-      var actual = FieldMasks.FromChanges(testCase.OriginalResource, testCase.ModifiedResource);
-      Assert.AreEqual(testCase.ExpectedMask, actual);
-    }
-
-    /// <summary>
-    /// Loads the test suite.
-    /// </summary>
-    /// <returns>The test suite</returns>
-    private static TestSuite LoadTestSuite() {
-      string json;
-      using (var stream = typeof(FieldMasksTest).Assembly.GetManifestResourceStream(
-          "Google.Ads.GoogleAds.Tests.Util.field_mask_tests.json")) {
-        json = new StreamReader(stream).ReadToEnd();
-      }
-      return TestSuite.Parser.ParseJson(json);
-    }
-  }
 }

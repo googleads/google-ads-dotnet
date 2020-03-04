@@ -27,7 +27,8 @@ namespace Google.Ads.GoogleAds.Tests.Util
     /// UnitTests for <see cref="MediaUtilities"/> class.
     /// </summary>
     [TestFixture]
-    public class MediaUtilitiesTest
+    [Category("Smoke")]
+    internal class MediaUtilitiesTest
     {
         private const string FILE_CONTENTS = "Hello world";
 
@@ -60,7 +61,6 @@ namespace Google.Ads.GoogleAds.Tests.Util
         /// Tests if data can be retrieved from a URL.
         /// </summary>
         [Test]
-        [Category("Small")]
         public void TestGetAssetDataFromUrl1()
         {
             byte[] data = MediaUtilities.GetAssetDataFromUrl(fileUri, new GoogleAdsConfig());
@@ -71,7 +71,6 @@ namespace Google.Ads.GoogleAds.Tests.Util
         /// Tests if data can be retrieved from a URL.
         /// </summary>
         [Test]
-        [Category("Small")]
         public void TestGetAssetDataFromUrl2()
         {
             byte[] data = MediaUtilities.GetAssetDataFromUrl(fileUri.AbsoluteUri,

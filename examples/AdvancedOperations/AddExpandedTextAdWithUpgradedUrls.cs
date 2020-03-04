@@ -13,16 +13,16 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Common;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V2.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.AdGroupAdStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example adds expanded text ads to a given ad group. To list
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient service = client.GetService(Services.V2.AdGroupAdService);
+            AdGroupAdServiceClient service = client.GetService(Services.V3.AdGroupAdService);
 
             // Create the expanded text ad.
             AdGroupAd ad = new AdGroupAd

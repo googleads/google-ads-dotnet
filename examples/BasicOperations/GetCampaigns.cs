@@ -13,23 +13,21 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 using Google.Api.Gax;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
+using static Google.Ads.GoogleAds.V3.Services.GoogleAdsServiceClient;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example gets all campaigns. To add campaigns, run AddCampaigns.cs.
     /// </summary>
     public class GetCampaigns : ExampleBase
     {
-        /// <summary>
-        /// The page size to be used by default.
-        /// </summary>
-        private const int PAGE_SIZE = 1_000;
-
         /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
@@ -67,44 +65,29 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V2.GoogleAdsService);
+                Services.V3.GoogleAdsService);
 
-            // Create a request that will retrieve all campaigns using pages of the specified
-            // page size.
-            SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
-            {
-                PageSize = PAGE_SIZE,
-                Query = @"SELECT
+            // Create a query that will retrieve all campaigns.
+            string query = @"SELECT
                             campaign.id,
                             campaign.name,
                             campaign.network_settings.target_content_network
                         FROM campaign
-                        ORDER BY campaign.id",
-                CustomerId = customerId.ToString()
-            };
+                        ORDER BY campaign.id";
 
             try
             {
-                // Issue the search request.
-                PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
-                    googleAdsService.Search(request);
-
-                foreach (SearchGoogleAdsResponse response in searchPagedResponse.AsRawResponses())
-                {
-                    Console.WriteLine(response.FieldMask.Paths);
-                    foreach (GoogleAdsRow googleAdsRow in response.Results)
+                // Issue a search request.
+                googleAdsService.SearchStream(customerId.ToString(), query, 
+                    delegate (SearchGoogleAdsStreamResponse resp)
                     {
-                        Console.WriteLine("Campaign with ID {0} and name '{1}' was found.",
-                            googleAdsRow.Campaign.Id, googleAdsRow.Campaign.Name);
+                        foreach (GoogleAdsRow googleAdsRow in resp.Results)
+                        {
+                            Console.WriteLine("Campaign with ID {0} and name '{1}' was found.",
+                                googleAdsRow.Campaign.Id, googleAdsRow.Campaign.Name);
+                        }
                     }
-                }
-                // Iterate over all rows in all pages and prints the requested field values for the
-                // campaign in each row.
-                foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
-                {
-                    Console.WriteLine("Campaign with ID {0} and name '{1}' was found.",
-                        googleAdsRow.Campaign.Id, googleAdsRow.Campaign.Name);
-                }
+                );
             }
             catch (GoogleAdsException e)
             {

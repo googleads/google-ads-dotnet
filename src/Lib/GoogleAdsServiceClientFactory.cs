@@ -13,7 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Config;
-using Google.Ads.GoogleAds.Logging;
+using Google.Ads.GoogleAds.Interceptors;
 using Google.Api.Gax.Grpc;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
@@ -40,8 +40,8 @@ namespace Google.Ads.GoogleAds.Lib
                 where TService : GoogleAdsServiceClientBase
         {
             Channel channel = CreateChannel(config);
-            CallInvoker callInvoker = channel.Intercept(
-                LoggingInterceptor.GetInstance(config));
+            CallInvoker callInvoker = channel
+                .Intercept(GoogleAdsGrpcInterceptor.GetInstance(config));
 
             // Build a service context to bind the service, configuration and CallSettings.
             GoogleAdsServiceContext serviceContext = new GoogleAdsServiceContext();
@@ -135,7 +135,7 @@ namespace Google.Ads.GoogleAds.Lib
         private CallSettings UpdateCallSettingsWithConfigParameters(CallSettings callSettings,
                     GoogleAdsConfig config, GoogleAdsServiceContext serviceContext)
         {
-            callSettings = callSettings.WithHeader(GoogleAdsConfig.DEVELOPER_TOKEN_KEYNAME,
+            callSettings = callSettings.WithHeader(MetadataKeyNames.DeveloperToken,
                 config.DeveloperToken)
                 .WithResponseMetadataHandler(delegate (Metadata metadata)
                 {
@@ -146,13 +146,13 @@ namespace Google.Ads.GoogleAds.Lib
 
             if (!string.IsNullOrEmpty(config.LoginCustomerId))
             {
-                callSettings = callSettings.WithHeader(GoogleAdsConfig.LOGIN_CUSTOMER_ID_KEYNAME,
+                callSettings = callSettings.WithHeader(MetadataKeyNames.LoginCustomerId,
                     config.LoginCustomerId);
             }
 
             if (!string.IsNullOrEmpty(config.LibraryIdentifierOverride))
             {
-                callSettings = callSettings.WithHeader(GoogleAdsConfig.LIBRARY_IDENTIFIER_KEYNAME,
+                callSettings = callSettings.WithHeader(MetadataKeyNames.LibraryIdentifier,
                     config.LibraryIdentifierOverride);
             }
 

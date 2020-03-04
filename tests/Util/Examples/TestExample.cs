@@ -19,10 +19,12 @@ using NUnit.Framework;
 namespace Google.Ads.GoogleAds.Tests.Util.Examples.V0
 {
     /// <summary>
-    /// A Test example for running <see cref="ExampleRunnerTest"/>.
+    /// A Test example for running <see cref="TestExample"/>.
     /// </summary>
-    /// <seealso cref="Google.Ads.GoogleAds.Examples.ExampleBase" />
-    public class TestExample : ExampleBase
+    /// <seealso cref="ExampleBase" />
+    [TestFixture]
+    [Category("Smoke")]
+    internal class TestExample : ExampleBase
     {
         internal const long LONG_ARG1 = 12345;
         internal const long LONG_ARG2 = 34567;
@@ -75,10 +77,10 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples.V0
     /// A Test example for running <see cref="ExampleRunnerTest"/>. This example has no Run method.
     /// </summary>
     /// <seealso cref="Google.Ads.GoogleAds.Examples.ExampleBase" />
-    public class NoRunTestExample : ExampleBase
+    internal class NoRunTestExample : ExampleBase
     {
-        public const string TEST_EXAMPLE_NAME = "V0.NoRunTestExample";
-        public const string TEST_EXAMPLE_DESCRIPTION = "No Run Test example";
+        internal const string TEST_EXAMPLE_NAME = "V0.NoRunTestExample";
+        internal const string TEST_EXAMPLE_DESCRIPTION = "No Run Test example";
 
         public override string Description
         {

@@ -13,16 +13,16 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V2.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.ConversionActionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.ConversionActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ConversionActionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ConversionActionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example illustrates adding a conversion action.
@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the ConversionActionService.
             ConversionActionServiceClient conversionActionService =
-                client.GetService(Services.V2.ConversionActionService);
+                client.GetService(Services.V3.ConversionActionService);
 
             // Add a conversion action.
             ConversionAction conversionAction = new ConversionAction()

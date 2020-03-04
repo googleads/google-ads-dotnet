@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 using Google.Api.Gax;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This example retrieves all account budgets for a Google Ads customer.
@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V2.GoogleAdsService);
+                Services.V3.GoogleAdsService);
 
             // Construct a GAQL query which will retrieve AccountBudgetProposals.
             String searchQuery =

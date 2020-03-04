@@ -18,13 +18,16 @@ using NUnit.Framework;
 using System.Linq;
 using System.Reflection;
 
-namespace Google.Ads.GoogleAds.Tests.Lib {
-
-  /// <summary>
-  /// Tests for <see cref="GoogleAdsClient"/> class.
-  /// </summary>
-  internal class GoogleAdsClientTests {
-    private GoogleAdsClient googleAdsClient = new GoogleAdsClient();
+namespace Google.Ads.GoogleAds.Tests.Lib
+{
+    /// <summary>
+    /// Tests for <see cref="GoogleAdsClient"/> class.
+    /// </summary>
+    [TestFixture]
+    [Category("Smoke")]
+    internal class GoogleAdsClientTests
+    {
+        private GoogleAdsClient googleAdsClient = new GoogleAdsClient();
 
         /// <summary>
         /// Tests if all the available service types can be created.
@@ -36,7 +39,7 @@ namespace Google.Ads.GoogleAds.Tests.Lib {
             MethodInfo method = typeof(GoogleAdsClient).GetMethods()
                 .ToList().Where(delegate (MethodInfo mi)
                 {
-                return mi.Name == "GetService" && mi.GetParameters().Length == 1;
+                    return mi.Name == "GetService" && mi.GetParameters().Length == 1;
                 }).First();
 
             StubIntegrityTestHelper.EnumerateServices<Services>(
@@ -52,5 +55,5 @@ namespace Google.Ads.GoogleAds.Tests.Lib {
                 });
             });
         }
-  }
+    }
 }

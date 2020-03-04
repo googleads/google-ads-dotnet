@@ -19,6 +19,11 @@ using NUnit.Framework;
 
 namespace Google.Ads.GoogleAds.Tests.Lib
 {
+    /// <summary>
+    /// Tests for <see cref="CachedChannelFactory"/> class.
+    /// </summary>
+    [TestFixture]
+    [Category("Smoke")]
     internal class CachedChannelFactoryTests
     {
         private GoogleAdsConfig config = new GoogleAdsConfig();

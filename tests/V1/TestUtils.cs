@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V1;
 using Google.Ads.GoogleAds.V1.Common;
 using Google.Ads.GoogleAds.V1.Errors;
@@ -47,10 +48,9 @@ namespace Google.Ads.GoogleAds.Tests.V1
             using (MemoryStream memoryStream = new MemoryStream())
             {
                 failure.WriteTo(memoryStream);
-                metadata.Add(GoogleAdsException.FAILURE_KEY,
-                     memoryStream.ToArray());
-                metadata.Add(GoogleAdsException.REQUEST_ID_KEY,
-                     requestId);
+                metadata.Add(GoogleAdsBaseException.GetFailureKeyFromTypeName(
+                    typeof(GoogleAdsException)), memoryStream.ToArray());
+                metadata.Add(MetadataKeyNames.RequestId, requestId);
             }
 
             return new RpcException(Status.DefaultSuccess, metadata);
@@ -62,7 +62,7 @@ namespace Google.Ads.GoogleAds.Tests.V1
         internal static GoogleAdsException CreateException(string errorMessage,
             string errorTrigger, string requestId)
         {
-            return GoogleAdsException.Create(CreateRpcException(
+            return (GoogleAdsException) GoogleAdsException.Create(CreateRpcException(
                 errorMessage, errorTrigger, requestId));
         }
     }

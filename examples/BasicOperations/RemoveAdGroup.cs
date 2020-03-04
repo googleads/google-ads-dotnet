@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example deletes an ad group. To get ad groups, run GetAdGroups.cs.
@@ -64,7 +64,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient service = client.GetService(Services.V2.AdGroupService);
+            AdGroupServiceClient service = client.GetService(Services.V3.AdGroupService);
 
             // Construct an operation that will remove the ad group with the specified
             // resource name.

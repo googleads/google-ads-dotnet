@@ -13,16 +13,16 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Common;
-using Google.Ads.GoogleAds.V2.Enums;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Enums;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V2.Enums.ServedAssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example adds a responsive search ad to a given ad group. To get ad groups,
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V2.AdGroupAdService);
+                client.GetService(Services.V3.AdGroupAdService);
 
             // Create the ad.
             Ad ad = new Ad()

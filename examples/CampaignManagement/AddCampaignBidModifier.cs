@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Common;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V2.Enums.InteractionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.InteractionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example demonstrates how to add a campaign-level bid modifier for call
@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the CampaignBidModifierService.
             CampaignBidModifierServiceClient campaignBidModifierService =
-                client.GetService(Services.V2.CampaignBidModifierService);
+                client.GetService(Services.V3.CampaignBidModifierService);
 
             String campaignResourceName = ResourceNames.Campaign(customerId, campaignId);
 

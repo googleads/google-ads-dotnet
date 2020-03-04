@@ -1,0 +1,2 @@
+# Custom dependent nuget packages which were locally built to validate a fix.
+*.nupkg

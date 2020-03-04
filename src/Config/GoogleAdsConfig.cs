@@ -16,7 +16,7 @@ using Google.Ads.GoogleAds.Util;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Auth.OAuth2.Flows;
 using Google.Apis.Auth.OAuth2.Responses;
-
+using Google.Apis.Util;
 using Microsoft.Extensions.Configuration;
 
 using Newtonsoft.Json;
@@ -25,6 +25,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace Google.Ads.GoogleAds.Config
 {
@@ -59,21 +60,6 @@ namespace Google.Ads.GoogleAds.Config
         private const string DEFAULT_OAUTH_SCOPE = "https://www.googleapis.com/auth/adwords";
 
         /// <summary>
-        /// The developer token keyname in request metadata.
-        /// </summary>
-        public const string DEVELOPER_TOKEN_KEYNAME = "developer-token";
-
-        /// <summary>
-        /// The login customer ID keyname in request metadata.
-        /// </summary>
-        public const string LOGIN_CUSTOMER_ID_KEYNAME = "login-customer-id";
-
-        /// <summary>
-        /// The library identifier keyname in request metadata.
-        /// </summary>
-        internal const string LIBRARY_IDENTIFIER_KEYNAME = "x-goog-api-client";
-
-        /// <summary>
         /// The configuration section name in App.config file.
         /// </summary>
         /// <remarks>This is kept as such to provide backwards compatibility with the SOAP client
@@ -87,22 +73,10 @@ namespace Google.Ads.GoogleAds.Config
             new StringConfigSetting("OAuth2ClientId", "");
 
         /// <summary>
-        /// OAuth2 server URL.
-        /// </summary>
-        private StringConfigSetting oAuth2ServerUrl =
-            new StringConfigSetting("OAuth2ServerUrl", DEFAULT_OAUTH2_SERVER);
-
-        /// <summary>
         /// OAuth2 client secret.
         /// </summary>
         private StringConfigSetting oAuth2ClientSecret = new StringConfigSetting(
             "OAuth2ClientSecret", "");
-
-        /// <summary>
-        /// OAuth2 access token.
-        /// </summary>
-        private StringConfigSetting oAuth2AccessToken = new StringConfigSetting(
-            "OAuth2AccessToken", "");
 
         /// <summary>
         /// OAuth2 refresh token.
@@ -164,6 +138,24 @@ namespace Google.Ads.GoogleAds.Config
         /// </remarks>
         private ConfigSetting<long> clientCustomerId =
             new ConfigSetting<long>("ClientCustomerId", 0);
+
+        /// <summary>
+        /// The GMB login email.
+        /// </summary>
+        /// <remarks>
+        /// This setting is only for testing purposes.
+        /// </remarks>
+        private ConfigSetting<string> gmbLoginEmail =
+            new ConfigSetting<string>("GMBLoginEmail", "");
+
+        /// <summary>
+        /// Merchant Center ID to be used for Shopping campaigns.
+        /// </summary>
+        /// <remarks>
+        /// This setting is only for testing purposes.
+        /// </remarks>
+        private ConfigSetting<string> merchantCenterAccountId =
+            new ConfigSetting<string>("MerchantCenterAccountId", "");
 
         /// <summary>
         /// Web proxy to be used with the services.
@@ -268,23 +260,16 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
-        /// Gets or sets the OAuth2 server URL.
-        /// </summary>
-        /// <remarks>This property's setter is primarily used for testing purposes.
-        /// </remarks>
-        public string OAuth2ServerUrl
-        {
-            get => oAuth2ServerUrl.Value;
-            set => SetPropertyAndNotify(oAuth2ServerUrl, value);
-        }
-
-        /// <summary>
         /// Gets or sets the OAuth2 client ID.
         /// </summary>
         public string OAuth2ClientId
         {
             get => oAuth2ClientId.Value;
-            set => SetPropertyAndNotify(oAuth2ClientId, value);
+            set
+            {
+                SetPropertyAndNotify(oAuth2ClientId, value);
+                credential = null;
+            }
         }
 
         /// <summary>
@@ -293,7 +278,11 @@ namespace Google.Ads.GoogleAds.Config
         public string OAuth2ClientSecret
         {
             get => oAuth2ClientSecret.Value;
-            set => SetPropertyAndNotify(oAuth2ClientSecret, value);
+            set
+            {
+                SetPropertyAndNotify(oAuth2ClientSecret, value);
+                credential = null;
+            }
         }
 
         /// <summary>
@@ -301,8 +290,12 @@ namespace Google.Ads.GoogleAds.Config
         /// </summary>
         public string OAuth2AccessToken
         {
-            get => oAuth2AccessToken.Value;
-            set => SetPropertyAndNotify(oAuth2AccessToken, value);
+            get
+            {
+                Task<string> task = this.Credentials.GetAccessTokenForRequestAsync();
+                task.Wait();
+                return task.Result;
+            }
         }
 
         /// <summary>
@@ -313,7 +306,11 @@ namespace Google.Ads.GoogleAds.Config
         public string OAuth2RefreshToken
         {
             get => oAuth2RefreshToken.Value;
-            set => SetPropertyAndNotify(oAuth2RefreshToken, value);
+            set
+            {
+                SetPropertyAndNotify(oAuth2RefreshToken, value);
+                credential = null;
+            }
         }
 
         /// <summary>
@@ -322,7 +319,11 @@ namespace Google.Ads.GoogleAds.Config
         public string OAuth2Scope
         {
             get => oAuth2Scope.Value;
-            set => SetPropertyAndNotify(oAuth2Scope, value);
+            set
+            {
+                SetPropertyAndNotify(oAuth2Scope, value);
+                credential = null;
+            }
         }
 
         /// <summary>
@@ -331,7 +332,11 @@ namespace Google.Ads.GoogleAds.Config
         public OAuth2Flow OAuth2Mode
         {
             get => oAuth2Mode.Value;
-            set => SetPropertyAndNotify(oAuth2Mode, value);
+            set
+            {
+                SetPropertyAndNotify(oAuth2Mode, value);
+                credential = null;
+            }
         }
 
         /// <summary>
@@ -355,6 +360,26 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
+        /// Gets or sets the GMB login email.
+        /// </summary>
+        /// <remarks>This setting is only for testing purposes.</remarks>
+        internal string GMBLoginEmail
+        {
+            get => gmbLoginEmail.Value;
+            set => SetPropertyAndNotify(gmbLoginEmail, value);
+        }
+
+        /// <summary>
+        /// Merchant Center ID to be used for Shopping campaigns.
+        /// </summary>
+        /// <remarks>This setting is only for testing purposes.</remarks>
+        internal string MerchantCenterAccountId
+        {
+            get => merchantCenterAccountId.Value;
+            set => SetPropertyAndNotify(merchantCenterAccountId, value);
+        }
+
+        /// <summary>
         /// Gets or sets the OAuth2 prn email.
         /// </summary>
         /// <remarks>This setting is applicable only when using OAuth2 service accounts.
@@ -362,7 +387,11 @@ namespace Google.Ads.GoogleAds.Config
         public string OAuth2PrnEmail
         {
             get => oAuth2PrnEmail.Value;
-            set => SetPropertyAndNotify(oAuth2PrnEmail, value);
+            set
+            {
+                SetPropertyAndNotify(oAuth2PrnEmail, value);
+                credential = null;
+            }
         }
 
         /// <summary>
@@ -376,7 +405,11 @@ namespace Google.Ads.GoogleAds.Config
         public string OAuth2ServiceAccountEmail
         {
             get => oAuth2ServiceAccountEmail.Value;
-            private set => SetPropertyAndNotify(oAuth2ServiceAccountEmail, value);
+            private set
+            {
+                SetPropertyAndNotify(oAuth2ServiceAccountEmail, value);
+                credential = null;
+            }
         }
 
         /// <summary>
@@ -390,7 +423,11 @@ namespace Google.Ads.GoogleAds.Config
         public string OAuth2PrivateKey
         {
             get => oAuth2PrivateKey.Value;
-            private set => SetPropertyAndNotify(oAuth2PrivateKey, value);
+            private set
+            {
+                SetPropertyAndNotify(oAuth2PrivateKey, value);
+                credential = null;
+            }
         }
 
         /// <summary>
@@ -452,11 +489,11 @@ namespace Google.Ads.GoogleAds.Config
             ReadSetting(settings, developerToken);
             ReadSetting(settings, loginCustomerId);
             ReadSetting(settings, clientCustomerId);
+            ReadSetting(settings, gmbLoginEmail);
+            ReadSetting(settings, merchantCenterAccountId);
 
-            ReadSetting(settings, oAuth2ServerUrl);
             ReadSetting(settings, oAuth2ClientId);
             ReadSetting(settings, oAuth2ClientSecret);
-            ReadSetting(settings, oAuth2AccessToken);
             ReadSetting(settings, oAuth2RefreshToken);
             ReadSetting(settings, oAuth2Scope);
 
@@ -510,13 +547,22 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
-        /// Gets or sets the credentials.
+        /// The credential object that was created from settings.
+        /// </summary>
+        ICredential credential = null;
+
+        /// <summary>
+        /// Gets the credentials.
         /// </summary>
         public ICredential Credentials
         {
             get
             {
-                return CreateCredentials();
+                if (credential == null)
+                {
+                    credential = CreateCredentials();
+                }
+                return credential;
             }
         }
 

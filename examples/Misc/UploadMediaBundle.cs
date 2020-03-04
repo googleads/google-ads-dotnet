@@ -14,15 +14,15 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 using Google.Protobuf;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V2.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.MediaTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example uploads an HTML5 zip file as a media bundle.
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the MediaFileServiceClient.
-            MediaFileServiceClient mediaFileService = client.GetService(Services.V2.MediaFileService);
+            MediaFileServiceClient mediaFileService = client.GetService(Services.V3.MediaFileService);
 
             // Creates an HTML5 zip file media bundle content.
             byte[] bundleContent = MediaUtilities.GetAssetDataFromUrl(BUNDLE_URL, client.Config);
