@@ -13,11 +13,11 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example removes a billing setup, specified by ID. To get available billing setup,
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the BillingSetupServiceClient.
             BillingSetupServiceClient billingSetupService = client.GetService(
-                Services.V2.BillingSetupService);
+                Services.V3.BillingSetupService);
 
             // Create the billing setup resource.
             String billingSetupResource = ResourceNames.BillingSetup(customerId, billingSetupId);

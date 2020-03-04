@@ -13,16 +13,18 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
-using Google.Api.Gax;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
+using System.Threading;
+using System.Threading.Tasks;
+using static Google.Ads.GoogleAds.V3.Services.GoogleAdsServiceClient;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
-    /// This code example illustrates getting campaign targeting criteria.
+    /// This code example illustrates getting keyword stats.
     /// </summary>
     public class GetKeywordStats : ExampleBase
     {
@@ -61,7 +63,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V2.GoogleAdsService);
+                Services.V3.GoogleAdsService);
 
             // Create the query.
             string query =
@@ -84,28 +86,32 @@ namespace Google.Ads.GoogleAds.Examples.V2
                  AND ad_group_criterion.status IN ('ENABLED','PAUSED')
              ORDER BY metrics.impressions DESC
              LIMIT 50";
+
             try
             {
                 // Issue a search request.
-                PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> result =
-                    googleAdsService.Search(customerId.ToString(), query);
-
-                // Display the results.
-                foreach (GoogleAdsRow criterionRow in result)
-                {
-                    Console.WriteLine(
-                        $"Keyword with text '{criterionRow.AdGroupCriterion.Keyword.Text}', " +
-                        $" match type '{criterionRow.AdGroupCriterion.Keyword.MatchType}' and " +
-                        $"ID {criterionRow.AdGroupCriterion.CriterionId} " +
-                        $"in ad group '{criterionRow.AdGroup.Name}' with " +
-                        $"ID {criterionRow.AdGroup.Id} " +
-                        $"in campaign '{criterionRow.Campaign.Name}' " +
-                        $"with ID {criterionRow.Campaign.Id} " +
-                        $"had {criterionRow.Metrics.Impressions.ToString()} impressions, " +
-                        $"{criterionRow.Metrics.Clicks} clicks, and " +
-                        $"{criterionRow.Metrics.CostMicros} cost (in micros)" +
-                        "during the last 7 days.");
-                }
+                googleAdsService.SearchStream(customerId.ToString(), query,
+                    delegate (SearchGoogleAdsStreamResponse resp)
+                    {
+                        // Display the results.
+                        foreach (GoogleAdsRow criterionRow in resp.Results)
+                        {
+                            Console.WriteLine(
+                                $"Keyword with text " +
+                                $"'{criterionRow.AdGroupCriterion.Keyword.Text}', match type " +
+                                $"'{criterionRow.AdGroupCriterion.Keyword.MatchType}' and ID " +
+                                $"{criterionRow.AdGroupCriterion.CriterionId} in ad group " +
+                                $"'{criterionRow.AdGroup.Name}' with ID " +
+                                $"{criterionRow.AdGroup.Id} in campaign " +
+                                $"'{criterionRow.Campaign.Name}' with ID " +
+                                $"{criterionRow.Campaign.Id} had " +
+                                $"{criterionRow.Metrics.Impressions.ToString()} impressions, " +
+                                $"{criterionRow.Metrics.Clicks} clicks, and " +
+                                $"{criterionRow.Metrics.CostMicros} cost (in micros) during the " +
+                                $"last 7 days.");
+                        }
+                    }
+                );
             }
             catch (GoogleAdsException e)
             {

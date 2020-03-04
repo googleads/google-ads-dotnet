@@ -23,7 +23,7 @@ namespace Google.Ads.GoogleAds.Tests.Examples
     /// <summary>
     /// Base class for all code example tests.
     /// </summary>
-    public class ExampleTestsBase
+    internal class ExampleTestsBase
     {
         /// <summary>
         /// The GoogleAdsConfig instance for running code examples.
@@ -36,9 +36,9 @@ namespace Google.Ads.GoogleAds.Tests.Examples
         protected GoogleAdsClient client;
 
         /// <summary>
-        /// Default public constructor.
+        /// Default constructor.
         /// </summary>
-        public ExampleTestsBase()
+        internal ExampleTestsBase()
         {
             config = new GoogleAdsConfig();
             client = new GoogleAdsClient(config);

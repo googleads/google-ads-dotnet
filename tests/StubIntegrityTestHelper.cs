@@ -24,14 +24,14 @@ namespace Google.Ads.GoogleAds.Tests
     /// Utility class that provides functionality to test the integrity of
     /// generated stub code for various API services.
     /// </summary>
-    public class StubIntegrityTestHelper
+    internal class StubIntegrityTestHelper
     {
         /// <summary>
         /// The callback to be called when the <see cref="EnumerateServices"/> method
         /// finds a matching service signature.
         /// </summary>
         /// <param name="serviceSignature">The service signature.</param>
-        public delegate void EnumerateServiceCallback(object serviceSignature);
+        internal delegate void EnumerateServiceCallback(object serviceSignature);
 
         /// <summary>
         /// The callback to be called when the <see cref="EnumerateEnumFields"/> method
@@ -40,7 +40,7 @@ namespace Google.Ads.GoogleAds.Tests
         /// <param name="hashedFieldName">The field name in a hashed format
         /// (typename_fieldname).</param>
         /// <param name="enumValue">The enum value.</param>
-        public delegate void EnumerateEnumFieldsCallback(string hashedFieldName, int enumValue);
+        internal delegate void EnumerateEnumFieldsCallback(string hashedFieldName, int enumValue);
 
         /// <summary>
         /// Enumerates the services supported in a Ads Service.
@@ -49,7 +49,7 @@ namespace Google.Ads.GoogleAds.Tests
         /// (e.g. <see cref="Services"/>)</typeparam>
         /// <param name="onServiceFound">The callback to be called when a matching
         /// service is found.</param>
-        public static void EnumerateServices<ServiceType>(EnumerateServiceCallback onServiceFound)
+        internal static void EnumerateServices<ServiceType>(EnumerateServiceCallback onServiceFound)
         {
             SystemType serviceType = typeof(ServiceType);
 
@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.Tests
         /// <param name="rootNameSpace">The root name space.</param>
         /// <param name="onEnumFieldDeclarationFound">The callback to be called when
         /// a matching enumeration field is found.</param>
-        public static void EnumerateEnumFields<ServiceType>(string rootNameSpace,
+        internal static void EnumerateEnumFields<ServiceType>(string rootNameSpace,
             EnumerateEnumFieldsCallback onEnumFieldDeclarationFound)
         {
             // Find all supported versions.

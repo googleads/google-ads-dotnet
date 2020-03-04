@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.GoogleAds.Config;
+using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Logging;
 using Google.Ads.GoogleAds.Tests.V1;
 using Google.Ads.GoogleAds.V1.Errors;
@@ -21,8 +21,12 @@ using NUnit.Framework;
 
 namespace Google.Ads.GoogleAds.Tests.Logging.V1
 {
+    /// <summary>
+    /// Tests for <see cref="LogEntry"/> class.
+    /// </summary>
     [TestFixture]
-    public class LogEntryTests
+    [Category("Smoke")]
+    internal class LogEntryTests
     {
         #region constants related to summary logs
 
@@ -124,13 +128,12 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V1
         {
             // Initialize request metadata.
             TEST_REQUEST_METADATA = new Metadata();
-            TEST_REQUEST_METADATA.Add(GoogleAdsConfig.DEVELOPER_TOKEN_KEYNAME,
-                TEST_DEVELOPER_TOKEN);
+            TEST_REQUEST_METADATA.Add(MetadataKeyNames.DeveloperToken, TEST_DEVELOPER_TOKEN);
             TEST_REQUEST_METADATA.Add(TEST_KEY1, TEST_VALUE1);
 
             // Initialize response metadata.
             TEST_RESPONSE_METADATA = new Metadata();
-            TEST_RESPONSE_METADATA.Add(GoogleAdsException.REQUEST_ID_KEY, TEST_REQUEST_ID);
+            TEST_RESPONSE_METADATA.Add(MetadataKeyNames.RequestId, TEST_REQUEST_ID);
             TEST_RESPONSE_METADATA.Add(TEST_KEY2, TEST_VALUE2);
 
             // Create an exception for testing purposes.

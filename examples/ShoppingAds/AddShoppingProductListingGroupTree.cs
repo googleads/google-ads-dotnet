@@ -13,18 +13,18 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Common;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V2.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.ProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example shows how to add a shopping listing group tree to a shopping ad group.
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V2.AdGroupCriterionService);
+                client.GetService(Services.V3.AdGroupCriterionService);
 
             try
             {
@@ -216,7 +216,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
                         adGroupCriterionResourceNameConditionOther,
                         new ListingDimensionInfo()
                         {
-                            ListingBrand = new ListingBrandInfo()
+                            ProductBrand = new ProductBrandInfo()
                             {
                                 Value = "CoolBrand"
                             }
@@ -237,7 +237,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
                         adGroupCriterionResourceNameConditionOther,
                         new ListingDimensionInfo()
                         {
-                            ListingBrand = new ListingBrandInfo()
+                            ProductBrand = new ProductBrandInfo()
                             {
                                 Value = "CheapBrand"
                             }
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
                         adGroupCriterionResourceNameConditionOther,
                         new ListingDimensionInfo()
                         {
-                            ListingBrand = new ListingBrandInfo()
+                            ProductBrand = new ProductBrandInfo()
                         },
                         50_000L);
                 operations.Add(new AdGroupCriterionOperation()
@@ -305,11 +305,11 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V2.GoogleAdsService);
+                Services.V3.GoogleAdsService);
 
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V2.AdGroupCriterionService);
+                client.GetService(Services.V3.AdGroupCriterionService);
 
             String searchQuery = "SELECT ad_group_criterion.resource_name FROM " +
                 "ad_group_criterion WHERE ad_group_criterion.type = LISTING_GROUP AND " +

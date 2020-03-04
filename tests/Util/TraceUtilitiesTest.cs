@@ -27,7 +27,8 @@ namespace Google.Ads.GoogleAds.Tests.Util
     /// UnitTests for <see cref="TraceUtilities"/> class.
     /// </summary>
     [TestFixture]
-    public class TraceUtilitiesTest
+    [Category("Smoke")]
+    internal class TraceUtilitiesTest
     {
         /// <summary>
         /// A test log message that is guaranteed to not contain any value that would cause false
@@ -45,7 +46,6 @@ namespace Google.Ads.GoogleAds.Tests.Util
         /// log level.
         /// </summary>
         [Test]
-        [Category("Small")]
         public void WriteDeprecationWarnings()
         {
             VerifyLog(TraceUtilities.DEPRECATION_MESSAGES_SOURCE, delegate ()
@@ -60,7 +60,6 @@ namespace Google.Ads.GoogleAds.Tests.Util
         /// level.
         /// </summary>
         [Test]
-        [Category("Small")]
         public void WriteGeneralWarnings()
         {
             VerifyLog(TraceUtilities.GENERAL_WARNING_MESSAGES_SOURCE, delegate ()
@@ -75,7 +74,6 @@ namespace Google.Ads.GoogleAds.Tests.Util
         /// level.
         /// </summary>
         [Test]
-        [Category("Small")]
         public void WriteGeneralErrors()
         {
             VerifyLog(TraceUtilities.GENERAL_WARNING_MESSAGES_SOURCE, delegate ()
@@ -90,7 +88,6 @@ namespace Google.Ads.GoogleAds.Tests.Util
         /// log level.
         /// </summary>
         [Test]
-        [Category("Small")]
         public void TestWriteSummaryRequestLogsSuccess()
         {
             VerifyLog(TraceUtilities.SUMMARY_REQUEST_LOGS_SOURCE, delegate ()
@@ -105,7 +102,6 @@ namespace Google.Ads.GoogleAds.Tests.Util
         /// log level.
         /// </summary>
         [Test]
-        [Category("Small")]
         public void TestWriteSummaryRequestLogsFailure()
         {
             VerifyLog(TraceUtilities.SUMMARY_REQUEST_LOGS_SOURCE, delegate ()
@@ -115,13 +111,11 @@ namespace Google.Ads.GoogleAds.Tests.Util
             }, WARNING_MARKER);
         }
 
-
         /// <summary>
         /// Tests that detailed success logs are written to the correct logs source at the
         /// expected log level.
         /// </summary>
         [Test]
-        [Category("Small")]
         public void TestWriteDetailedRequestLogsSuccess()
         {
             VerifyLog(TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE, delegate ()
@@ -136,7 +130,6 @@ namespace Google.Ads.GoogleAds.Tests.Util
         /// expected log level.
         /// </summary>
         [Test]
-        [Category("Small")]
         public void TestWriteDetailedRequestLogsFailure()
         {
             VerifyLog(TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE, delegate ()
@@ -166,8 +159,6 @@ namespace Google.Ads.GoogleAds.Tests.Util
                 string logFromMemStream = Encoding.UTF8.GetString(stream.ToArray());
                 StringAssert.Contains(markerToVerify, logFromMemStream);
             }
-
         }
-
     }
 }

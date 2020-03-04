@@ -19,33 +19,27 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Tests.Util.Examples
 {
     /// <summary>
-    /// UnitTests for <see cref="CollectionUtilitiesTest"/> class.
+    /// UnitTests for <see cref="ExampleRunner"/> class.
     /// </summary>
     [TestFixture]
-    public class ExampleRunnerTest
+    [Category("Smoke")]
+    internal class ExampleRunnerTest
     {
-        private ExampleRunner runner;
-
-        /// <summary>
-        /// Inits this instance.
-        /// </summary>
-        [SetUp]
-        public void Init()
-        {
-            runner = new ExampleRunner();
-            runner.LoadCodeExamples(this.GetType().Assembly);
-        }
-
         /// <summary>
         /// Test for <see cref="ExampleRunner.PrintAvailableExamples"/>
         /// </summary>
         [Test]
         public void TestPrintAvailableExamples()
         {
+            ExampleRunner runner = new ExampleRunner();
+            runner.LoadCodeExamples(this.GetType().Assembly,
+                new System.Type[] { typeof(NoRunTestExample) });
+
             CaptureConsoleIOAndExecute(
                 delegate ()
                 {
@@ -53,11 +47,19 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
                 },
                 delegate (string output)
                 {
-                    string[] outputs = output.Split(new char[] { '\r', '\n' },
-                        StringSplitOptions.RemoveEmptyEntries);
+                string[] outputs = output.Split(new char[] { '\r', '\n' },
+                    StringSplitOptions.RemoveEmptyEntries)
+                    .Select(c => c.Trim())
+                    .ToArray();
+
+                    TestExample testExample = new TestExample();
+
                     string[] expectedOutputs = new string[] {
-                        $"{TestExample.TEST_EXAMPLE_NAME} : {TestExample.TEST_EXAMPLE_DESCRIPTION}",
-                        $"{NoRunTestExample.TEST_EXAMPLE_NAME} : {NoRunTestExample.TEST_EXAMPLE_DESCRIPTION}"
+                        testExample.Name,
+                        new string('=', testExample.Name.Length),
+                        testExample.Description,
+                        "Usage",
+                        ExampleRunner.GetUsage(testExample).Trim(),
                     };
                     Assert.That(outputs, Is.EquivalentTo(expectedOutputs));
                 }
@@ -70,6 +72,9 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
         [Test]
         public void TestRun()
         {
+            ExampleRunner runner = new ExampleRunner();
+            runner.LoadCodeExamples(this.GetType().Assembly);
+
             GoogleAdsClient client = new GoogleAdsClient();
 
             // Verify that you can run an example with the right set of arguments.

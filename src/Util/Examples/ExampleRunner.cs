@@ -35,10 +35,11 @@ namespace Google.Ads.GoogleAds.Examples
             new SortedDictionary<string, ExampleBase>(StringComparer.OrdinalIgnoreCase);
 
         /// <summary>
-        /// Finds the code examples.
+        /// Finds the code examples in a given assembly.
         /// </summary>
-        /// <param name="assembly">The assembly.</param>
-        public void LoadCodeExamples(Assembly assembly)
+        /// <param name="assembly">The assembly to search for.</param>
+        /// <param name="typesToExclude">List of types to exclude.</param>
+        public void LoadCodeExamples(Assembly assembly, SystemType[] typesToExclude)
         {
             lock (codeExampleMap)
             {
@@ -47,7 +48,7 @@ namespace Google.Ads.GoogleAds.Examples
 
                 foreach (SystemType type in types)
                 {
-                    if (type.IsSubclassOf(typeof(ExampleBase)))
+                    if (type.IsSubclassOf(typeof(ExampleBase)) && !typesToExclude.Contains(type))
                     {
                         ExampleBase example = (ExampleBase) Activator.CreateInstance(type);
                         codeExampleMap.Add(example.Name, example);
@@ -55,6 +56,12 @@ namespace Google.Ads.GoogleAds.Examples
                 }
             }
         }
+
+        /// <summary>
+        /// Finds the code examples in a given assembly.
+        /// </summary>
+        /// <param name="assembly">The assembly to search for.</param>
+        public void LoadCodeExamples(Assembly assembly) => LoadCodeExamples(assembly, new SystemType[] { });
 
         /// <summary>
         /// Prints the list of available code examples.

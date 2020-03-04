@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example generates forecast metrics for a keyword plan. To create a keyword plan,
@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         public void Run(GoogleAdsClient client, long customerId, long keywordPlanId)
         {
             KeywordPlanServiceClient kpServiceClient =
-                client.GetService(Services.V2.KeywordPlanService);
+                client.GetService(Services.V3.KeywordPlanService);
             string keywordPlanResource = ResourceNames.KeywordPlan(customerId, keywordPlanId);
 
             try

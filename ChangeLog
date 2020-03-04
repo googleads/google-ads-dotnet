@@ -1,3 +1,26 @@
+2.8.0
+=====
+
+- Added support for v3 of Google Ads API.
+- Upgraded all code examples and tests to use v3.
+- Fixed AddShoppingProductListingGroupTree example to work with v3.
+- Made changes to logging and exception handling framework to support streaming methods.
+- The generated stubs no longer use the ExceptionCustomization feature of gax libraries, since the
+exception handling logic have moved to grpc interceptors. These stub classes have been removed from
+the distribution.
+- Convert GetCampaigns and GetKeywordStats examples to use server streaming.
+ See https://developers.google.com/google-ads/api/docs/reporting/streaming to learn more about
+ server streaming.
+- Add an empty `custom_nupkg` folder in the repo to help with testing dependent packages that are
+ custom-built from GitHub sources.
+- Fixed the visibility of several test classes and methods.
+- Added new code examples:
+  - AddPrices
+  - AddGoogleMyBusinessLocationExtensions
+  - AddAppCampaign
+  - UpdateCampaignCriterionBidModifier
+- Refactored all the grpc metadata keynames into a standalone class.
+
 2.7.0
 =====
 
@@ -5,7 +28,7 @@
   - AdvancedOperations\AddAdCustomerizer.cs
   - AdvancedOperations\AddSmartDisplayAd.cs
   - BasicOperations\AddResponsiveSearchAd.cs
-  - BasicOperations\AddAdGroup.cs renamed to BasicOperations\AddAdGroups.cs 
+  - BasicOperations\AddAdGroup.cs renamed to BasicOperations\AddAdGroups.cs
   - CampaignManagement\AddCampaignLabels.cs
   - CampaignManagement\GetCampaignsByLabel.cs
   - CampaignManagement\SetAdParameters.cs
@@ -57,7 +80,7 @@ should build and run against the csproj instead.
 =====
 - Optimize for a check on section name if it is empty in the GoogleAdsConfig class.
 - Add a specialized ConfigSetting class named StringConfigSetting for string
- settings, so its parsing can be bypassed. Switch all string-based setting parsing to this type in 
+ settings, so its parsing can be bypassed. Switch all string-based setting parsing to this type in
  the GoogleAdsConfig class.
 - Expose the Dictionary constructor in the base class at GoogleAdsConfig level.
 - Improve how DEFAULT_TIMEOUT is represented in GoogleAdsConfig class.

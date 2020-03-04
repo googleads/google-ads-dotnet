@@ -13,18 +13,18 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Common;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V2.Enums.DeviceEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.GenderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.ReachPlanAdLengthEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.ReachPlanAgeRangeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.GenderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ReachPlanAdLengthEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This example demonstrates how to interact with the ReachPlanService to find plannable
@@ -62,7 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
 
         /// <summary>
         /// Runs the code example, showing a typical series of calls to the
-        /// <see cref="Services.V2.ReachPlanService"/>.
+        /// <see cref="Services.V3.ReachPlanService"/>.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
             string currencyCode = "USD";
             long budgetMicros = 500_000_000_000L;
             ReachPlanServiceClient reachPlanService =
-                client.GetService(Services.V2.ReachPlanService);
+                client.GetService(Services.V3.ReachPlanService);
 
             try
             {
@@ -194,7 +194,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
             targeting.Devices.AddRange(devices);
 
             // See the docs for defaults and valid ranges:
-            // https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v2.services#google.ads.googleads.v2.services.GenerateReachForecastRequest
+            // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V3.services#Google.Ads.GoogleAds.V3.services.GenerateReachForecastRequest
             GenerateReachForecastRequest request = new GenerateReachForecastRequest()
             {
                 CustomerId = customerId,
@@ -266,7 +266,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
 
             // See listPlannableProducts on ReachPlanService to retrieve a list
             // of valid PlannableProductCode's for a given location:
-            // https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v2.services#reachplanservice
+            // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V3.services#reachplanservice
             productMix.Add(new PlannedProduct()
             {
                 PlannableProductCode = "TRUEVIEW_IN_STREAM",

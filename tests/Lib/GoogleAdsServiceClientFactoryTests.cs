@@ -21,6 +21,11 @@ using System.Reflection;
 
 namespace Google.Ads.GoogleAds.Tests.Lib
 {
+    /// <summary>
+    /// Tests for <see cref="GoogleAdsServiceClientFactory"/> class.
+    /// </summary>
+    [TestFixture]
+    [Category("Smoke")]
     internal class GoogleAdsServiceClientFactoryTests
     {
         private GoogleAdsServiceClientFactory serviceClientFactory =

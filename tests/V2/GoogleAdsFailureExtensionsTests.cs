@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Errors
     /// UnitTests for extensions in GoogleAdsFailureExtensionsTests.cs.
     /// </summary>
     [TestFixture]
-    public class GoogleAdsFailureExtensionsTests
+    internal class GoogleAdsFailureExtensionsTests
     {
         private static readonly FieldPathElement OPERATIONS = new FieldPathElement()
         {

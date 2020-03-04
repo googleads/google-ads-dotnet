@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example imports offline conversion values for specific clicks to your account.
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the ConversionActionService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V2.ConversionUploadService);
+                client.GetService(Services.V3.ConversionUploadService);
 
             // Creates a click conversion by specifying currency as USD.
             ClickConversion clickConversion = new ClickConversion()

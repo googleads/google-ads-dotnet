@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 using Google.Api.Gax;
-using static Google.Ads.GoogleAds.V2.Enums.ChangeStatusResourceTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ChangeStatusResourceTypeEnum.Types;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example gets the changes in an account during the last 7 days.
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V2.GoogleAdsService);
+                Services.V3.GoogleAdsService);
 
             string searchQuery = "SELECT change_status.resource_name, " +
                 "change_status.last_change_date_time, change_status.resource_type, " +

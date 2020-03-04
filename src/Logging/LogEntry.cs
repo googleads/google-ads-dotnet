@@ -16,6 +16,7 @@ using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
 using Grpc.Core;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -27,7 +28,7 @@ namespace Google.Ads.GoogleAds.Logging
     public class LogEntry
     {
         private readonly HashSet<string> REQUEST_HEADERS_TO_MASK =
-            new HashSet<string>() { GoogleAdsConfig.DEVELOPER_TOKEN_KEYNAME };
+            new HashSet<string>() { MetadataKeyNames.DeveloperToken };
 
         private readonly HashSet<string> RESPONSE_HEADERS_TO_MASK =
             new HashSet<string>() { };
@@ -190,7 +191,7 @@ namespace Google.Ads.GoogleAds.Logging
 
                 builder.Append($"Method Name: {Method}\r\n");
                 builder.Append($"Host: {Host}\r\n");
-                builder.Append("Headers: " + FormatHeaders(RequestHeaders, RESPONSE_HEADERS_TO_MASK));
+                builder.Append("Headers: " + FormatHeaders(RequestHeaders, REQUEST_HEADERS_TO_MASK));
                 builder.Append("\r\n\r\n" + Request.ToString() + "\r\n");
                 return builder.ToString();
             }
@@ -247,11 +248,18 @@ namespace Google.Ads.GoogleAds.Logging
                     }
                     else
                     {
-                        headers[entry.Key] = entry.Value;
+                        if (entry.IsBinary)
+                        {
+                            headers[entry.Key] = Convert.ToBase64String(entry.ValueBytes);
+                        }
+                        else
+                        {
+                            headers[entry.Key] = entry.Value;
+                        }
                     }
                 }
             }
-            return JsonConvert.SerializeObject(headers);
+            return JsonConvert.SerializeObject(headers, Formatting.Indented);
         }
     }
 }

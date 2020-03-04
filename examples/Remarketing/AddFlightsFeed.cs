@@ -13,18 +13,18 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Resources;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V2.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.FlightPlaceholderFieldEnum.Types;
-using static Google.Ads.GoogleAds.V2.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.FlightPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example adds a flights feed, creates the associated feed mapping, and
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         private string CreateFeed(GoogleAdsClient client, long customerId)
         {
             // Get the FeedService.
-            FeedServiceClient feedService = client.GetService(Services.V2.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V3.FeedService);
 
             // Creates a Flight Description attribute.
             FeedAttribute flightDescriptionAttribute = new FeedAttribute()
@@ -191,7 +191,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V2.GoogleAdsService);
+                Services.V3.GoogleAdsService);
 
             // Constructs the query.
             string query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -238,7 +238,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
                         feedAttributes[FlightPlaceholderField.FinalUrls] = feedAttribute;
                         break;
                     // The full list of FlightPlaceholderFields can be found here
-                    // https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v2.enums#flightplaceholderfieldenum.
+                    // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V3.enums#flightplaceholderfieldenum.
                     default:
                         throw new Exception("Invalid attribute name.");
                 }
@@ -260,7 +260,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the FeedMappingServiceClient.
             FeedMappingServiceClient feedMappingService = client.GetService(
-                Services.V2.FeedMappingService);
+                Services.V3.FeedMappingService);
 
             // Maps the FeedAttributeIds to the fieldId constants.
             AttributeFieldMapping flightDescriptionMapping = new AttributeFieldMapping()
@@ -340,7 +340,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService = client.GetService(
-                Services.V2.FeedItemService);
+                Services.V3.FeedItemService);
 
             // Creates the flight description feed attribute value.
             FeedItemAttributeValue flightDescription = new FeedItemAttributeValue()

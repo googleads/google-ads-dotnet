@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example applies a given recommendation. To retrieve recommendations for text ads,
@@ -66,7 +66,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         {
             // Get the RecommendationServiceClient.
             RecommendationServiceClient service = client.GetService(
-                Services.V2.RecommendationService);
+                Services.V3.RecommendationService);
 
             ApplyRecommendationOperation operation = new ApplyRecommendationOperation()
             {

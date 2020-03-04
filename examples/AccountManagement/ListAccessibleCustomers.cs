@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V2.Errors;
-using Google.Ads.GoogleAds.V2.Services;
+using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.V3.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V2
+namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This code example lists the resource names for the customers that the authenticating user
@@ -64,7 +64,7 @@ namespace Google.Ads.GoogleAds.Examples.V2
         public void Run(GoogleAdsClient client)
         {
             // Get the CustomerService.
-            CustomerServiceClient customerService = client.GetService(Services.V2.CustomerService);
+            CustomerServiceClient customerService = client.GetService(Services.V3.CustomerService);
 
             try
             {
