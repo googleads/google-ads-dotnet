@@ -84,7 +84,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                  ad_group_ad.status
              FROM ad_group_ad
              WHERE
-                 ad_group_ad.type = EXPANDED_TEXT_AD ";
+                 ad_group_ad.ad.type = EXPANDED_TEXT_AD ";
 
             if (adGroupId != null)
             {
