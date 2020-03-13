@@ -44,6 +44,11 @@ namespace Google.Ads.GoogleAds.V3.Errors
             return $"customers/{customerId}/adGroupAds/{adGroupId}~{adId}";
         }
 
+        public static string Ad(long customerId, long adId)
+        {
+            return $"customers/{customerId}/ads/{adId}";
+        }
+
         public static string AdGroupAdLabel(long customerId, long adGroupId, long adId, long labelId)
         {
             return $"customers/{customerId}/adGroupAdLabels/{adGroupId}~{adId}~{labelId}";
