@@ -25,7 +25,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
     /// <summary>
     /// This code example demonstrates how to handle partial failures.
     /// </summary>
-    public class HandlePartialFailures : ExampleBase
+    public class HandlePartialFailure : ExampleBase
     {
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -33,7 +33,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            HandlePartialFailures codeExample = new HandlePartialFailures();
+            HandlePartialFailure codeExample = new HandlePartialFailure();
             Console.WriteLine(codeExample.Description);
             try
             {
