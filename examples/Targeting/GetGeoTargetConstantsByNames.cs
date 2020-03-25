@@ -23,7 +23,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
     /// <summary>
     /// This code example illustrates getting GeoTargetConstants by given location names.
     /// </summary>
-    public class GetGeoTargetConstantsByName : ExampleBase
+    public class GetGeoTargetConstantsByNames : ExampleBase
     {
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            GetGeoTargetConstantsByName codeExample = new GetGeoTargetConstantsByName();
+            GetGeoTargetConstantsByNames codeExample = new GetGeoTargetConstantsByNames();
 
             Console.WriteLine(codeExample.Description);
 
