@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
     /// DYNAMIC_FLIGHT. The attribute you are updating must be present on the feed. This code
     /// example is specifically for updating the StringValue of an attribute.
     /// </summary>
-    public class UpdateFeedItemAttributeValue : ExampleBase
+    public class UpdateFlightsFeedItemStringAttributeValue : ExampleBase
     {
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -39,7 +39,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            UpdateFeedItemAttributeValue codeExample = new UpdateFeedItemAttributeValue();
+            UpdateFlightsFeedItemStringAttributeValue codeExample =
+                new UpdateFlightsFeedItemStringAttributeValue();
             Console.WriteLine(codeExample.Description);
 
             // The customer ID for which the call is made.
