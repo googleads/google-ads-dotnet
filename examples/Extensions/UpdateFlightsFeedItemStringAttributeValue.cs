@@ -101,6 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 Console.WriteLine($"Message: {e.Message}");
                 Console.WriteLine($"Failure: {e.Failure}");
                 Console.WriteLine($"Request ID: {e.RequestId}");
+                throw;
             }
         }
 
