@@ -14,6 +14,7 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Errors;
 using Google.Ads.GoogleAds.V3.Resources;
 using Google.Ads.GoogleAds.V3.Services;
 using Google.Api.Gax;
