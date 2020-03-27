@@ -84,30 +84,42 @@ namespace Google.Ads.GoogleAds.Examples.V3
 
             string feedName = "Ad Customizer example feed " + ExampleUtilities.GetRandomString();
 
-            // Create a feed to be used as the ad customizer.
-            string adCustomizerFeedResourceName =
-                CreateAdCustomizerFeed(client, customerId, feedName);
+            try
+            {
+                // Create a feed to be used as the ad customizer.
+                string adCustomizerFeedResourceName =
+                    CreateAdCustomizerFeed(client, customerId, feedName);
 
-            // Retrieve the attributes for the newly created feed.
-            Dictionary<string, FeedAttribute> adCustomizerFeedAttributes =
-                GetFeedAttributes(client, customerId, adCustomizerFeedResourceName);
+                // Retrieve the attributes for the newly created feed.
+                Dictionary<string, FeedAttribute> adCustomizerFeedAttributes =
+                    GetFeedAttributes(client, customerId, adCustomizerFeedResourceName);
 
-            // Map the feed to the ad customizer placeholder type to mark it as an ad customizer.
-            CreateAdCustomizerMapping(client, customerId, adCustomizerFeedResourceName,
-                adCustomizerFeedAttributes);
+                // Map the feed to the ad customizer placeholder type to mark it as an ad customizer.
+                CreateAdCustomizerMapping(client, customerId, adCustomizerFeedResourceName,
+                    adCustomizerFeedAttributes);
 
-            // Create the feed items that will fill the placeholders in the ads customized by the feed.
-            List<string> feedItemResourceNames = CreateFeedItems(client, customerId,
-                adCustomizerFeedResourceName, adCustomizerFeedAttributes);
+                // Create the feed items that will fill the placeholders in the ads customized by the feed.
+                List<string> feedItemResourceNames = CreateFeedItems(client, customerId,
+                    adCustomizerFeedResourceName, adCustomizerFeedAttributes);
 
-            // Create a feed item targeting to associate the feed items with specific ad groups to
-            // prevent them from being used in other ways.
-            CreateFeedItemTargets(client, customerId, new[] { adGroupId1, adGroupId2 },
-                feedItemResourceNames);
+                // Create a feed item targeting to associate the feed items with specific ad groups to
+                // prevent them from being used in other ways.
+                CreateFeedItemTargets(client, customerId, new[] { adGroupId1, adGroupId2 },
+                    feedItemResourceNames);
 
-            // Create ads with the customizations provided by the feed items.
-            CreateAdsWithCustomizations(client, customerId, new[] { adGroupId1, adGroupId2 },
-                feedName);
+                // Create ads with the customizations provided by the feed items.
+                CreateAdsWithCustomizations(client, customerId, new[] { adGroupId1, adGroupId2 },
+                    feedName);
+            }
+            catch (GoogleAdsException e)
+            {
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Failure: {e.Failure}");
+                Console.WriteLine($"Request ID: {e.RequestId}");
+                throw;
+            }
+
         }
 
         /// <summary>

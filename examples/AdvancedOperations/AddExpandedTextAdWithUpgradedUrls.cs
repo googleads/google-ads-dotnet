@@ -95,24 +95,24 @@ namespace Google.Ads.GoogleAds.Examples.V3
                     // values too. This can be provided at campaign, ad group, ad, criterion
                     // or feed item levels.
                     UrlCustomParameters = {
-            new CustomParameter { Key = "season", Value = "christmas" },
-            new CustomParameter { Key = "promocode", Value = "NY123" }
-          },
+                      new CustomParameter { Key = "season", Value = "christmas" },
+                      new CustomParameter { Key = "promocode", Value = "NY123" }
+                    },
 
                     // Specify a list of final URLs. This field cannot be set if URL field is
                     // set. This may be specified at ad, criterion and feed item levels.
                     FinalUrls = {
-            "http://www.example.com/cruise/space/",
-            "http://www.example.com/locations/mars/"
-          },
+                      "http://www.example.com/cruise/space/",
+                      "http://www.example.com/locations/mars/"
+                    },
 
                     // Specify a list of final mobile URLs. This field cannot be set if URL
                     // field is set, or finalUrls is unset. This may be specified at ad,
                     // criterion and feed item levels.
                     FinalMobileUrls = {
-            "http://mobile.example.com/cruise/space/",
-            "http://mobile.example.com/locations/mars/"
-          }
+                      "http://mobile.example.com/cruise/space/",
+                      "http://mobile.example.com/locations/mars/"
+                    }
                 },
                 // Optional: Set the status.
                 Status = AdGroupAdStatus.Paused
@@ -143,6 +143,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 Console.WriteLine($"Message: {e.Message}");
                 Console.WriteLine($"Failure: {e.Failure}");
                 Console.WriteLine($"Request ID: {e.RequestId}");
+                throw;
             }
         }
     }

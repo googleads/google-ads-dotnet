@@ -14,6 +14,7 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Errors;
 using Google.Ads.GoogleAds.V3.Resources;
 using Google.Ads.GoogleAds.V3.Services;
 using Google.Api.Gax;
@@ -151,9 +152,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
 
                 Console.WriteLine("Number of disapproved ads found: {0}", disapprovedAdsCount);
             }
-            catch (Exception e)
+            catch (GoogleAdsException e)
             {
-                throw new System.ApplicationException("Failed to get disapproved ads.", e);
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Failure: {e.Failure}");
+                Console.WriteLine($"Request ID: {e.RequestId}");
+                throw;
             }
         }
     }
