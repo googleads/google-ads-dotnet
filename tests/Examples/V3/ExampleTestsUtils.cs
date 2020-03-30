@@ -28,6 +28,7 @@ using static Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types;
 using static Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types;
 using static Google.Ads.GoogleAds.V3.Enums.CampaignStatusEnum.Types;
 using static Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types;
 using static Google.Ads.GoogleAds.V3.Resources.Campaign.Types;
 
 namespace Google.Ads.GoogleAds.Tests.Examples.V3
@@ -159,6 +160,46 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V3
         }
 
         /// <summary>
+        /// Creates the responsive search ad.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="adGroupResourceName">Resource name of the ad group in which responsive
+        /// search ad is created.</param>
+        /// <returns>The resource name of the newly created responsive search ad.</returns>
+        internal static string CreateResponsiveSearchAd(GoogleAdsClient client,
+            string adGroupResourceName)
+        {
+            Ad ad = new Ad()
+            {
+                ResponsiveSearchAd = new ResponsiveSearchAdInfo()
+                {
+                    Headlines =
+                    {
+                        // Sets a pinning to always choose this asset for HEADLINE_1. Pinning is
+                        // optional; if no pinning is set, then headlines and descriptions will be
+                        // rotated and the ones that perform best will be used more often.
+                        new AdTextAsset() {
+                            Text = "Cruise to Mars #" + ExampleUtilities.GetShortRandomString(),
+                            PinnedField = ServedAssetFieldType.Headline1
+                        },
+                        new AdTextAsset() { Text = "Best Space Cruise Line" },
+                        new AdTextAsset() { Text = "Experience the Stars" },
+                    },
+                    Descriptions =
+                    {
+                        new AdTextAsset() { Text = "Buy your tickets now" },
+                        new AdTextAsset() { Text = "Visit the Red Planet" },
+                    },
+                    Path1 = "all-inclusive",
+                    Path2 = "deals"
+                },
+                FinalUrls = { "http://www.example.com" }
+            };
+
+            return CreateAdGroupAd(client, ad, adGroupResourceName);
+        }
+
+        /// <summary>
         /// Creates the expanded text ad.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
@@ -168,22 +209,38 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V3
         internal static string CreateExpandedTextAd(GoogleAdsClient client,
             string adGroupResourceName)
         {
+            Ad ad = new Ad
+            {
+                FinalUrls = { "http://www.example.com/" },
+                ExpandedTextAd = new ExpandedTextAdInfo
+                {
+                    Description = "Buy your tickets now!",
+                    HeadlinePart1 = $"Cruise #{DateTime.Now.Ticks % 1000} to Mars",
+                    HeadlinePart2 = "Best Space Cruise Line",
+                    Path1 = "path1",
+                    Path2 = "path2"
+                }
+            };
+
+            return CreateAdGroupAd(client, ad, adGroupResourceName);
+        }
+
+        /// <summary>
+        /// Creates an ad group ad.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="adGroupResourceName">Resource name of the ad group in which expanded
+        /// text ad is created.</param>
+        /// <param name="ad">The ad to create.</param>
+        /// <returns>The resource name of the newly created ad group ad.</returns>
+        internal static string CreateAdGroupAd(GoogleAdsClient client, Ad ad,
+            string adGroupResourceName)
+        {
             AdGroupAd adGroupAd = new AdGroupAd
             {
                 AdGroup = adGroupResourceName,
                 Status = AdGroupAdStatus.Paused,
-                Ad = new Ad
-                {
-                    FinalUrls = { "http://www.example.com/" },
-                    ExpandedTextAd = new ExpandedTextAdInfo
-                    {
-                        Description = "Buy your tickets now!",
-                        HeadlinePart1 = $"Cruise #{DateTime.Now.Ticks % 1000} to Mars",
-                        HeadlinePart2 = "Best Space Cruise Line",
-                        Path1 = "path1",
-                        Path2 = "path2"
-                    }
-                }
+                Ad = ad
             };
 
             MutateOperation mutateOperation = new MutateOperation()

@@ -87,7 +87,10 @@ namespace Google.Ads.GoogleAds.Examples.V3
                             PinnedField = ServedAssetFieldType.Headline1
                         },
                         new AdTextAsset() { Text = "Best Space Cruise Line" },
-                        new AdTextAsset() { Text = "Experience the Stars" },
+                        new AdTextAsset() { Text = "Experience the Stars" }
+                    },
+                    Descriptions =
+                    {
                         new AdTextAsset() { Text = "Buy your tickets now" },
                         new AdTextAsset() { Text = "Visit the Red Planet" },
                     },
