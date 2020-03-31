@@ -229,8 +229,8 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V3
         /// Creates an ad group ad.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="adGroupResourceName">Resource name of the ad group in which expanded
-        /// text ad is created.</param>
+        /// <param name="adGroupResourceName">Resource name of the ad group in which the ad
+        /// is created.</param>
         /// <param name="ad">The ad to create.</param>
         /// <returns>The resource name of the newly created ad group ad.</returns>
         internal static string CreateAdGroupAd(GoogleAdsClient client, Ad ad,

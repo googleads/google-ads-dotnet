@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // Optional: ID of the ad group to restrict search to.
-            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
         }
@@ -111,7 +111,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
                     googleAdsService.Search(request);
 
-                // Iterate over all rows in all pages and prints the requested field values for
+                // Iterates over all rows in all pages and prints the requested field values for
                 // the ad in each row.
                 foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
                 {
@@ -122,8 +122,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
                     // Prints the ad text asset detail.
                     ResponsiveSearchAdInfo responsiveSearchAdInfo = ad.ResponsiveSearchAd;
                     Console.WriteLine("Headlines:{0},\nDescriptions:{1}",
-                        AdTextAssetsToStrings(responsiveSearchAdInfo.Headlines),
-                        AdTextAssetsToStrings(responsiveSearchAdInfo.Descriptions));
+                        FormatAdTextAssetsAsString(responsiveSearchAdInfo.Headlines),
+                        FormatAdTextAssetsAsString(responsiveSearchAdInfo.Descriptions));
                 }
             }
             catch (GoogleAdsException e)
@@ -136,11 +136,11 @@ namespace Google.Ads.GoogleAds.Examples.V3
             }
         }
 
-        /// <summary>Converts the the text assets to strings.</summary>
+        /// <summary>Formats the text assets to a string format for display.</summary>
         /// <param name="adTextAssets">The ad text assets.</param>
         /// <returns>The string representation of the provided list of AdTextAsset
         /// objects.</returns>
-        private static string AdTextAssetsToStrings(RepeatedField<AdTextAsset> adTextAssets)
+        private static string FormatAdTextAssetsAsString(RepeatedField<AdTextAsset> adTextAssets)
         {
             return string.Join(",", adTextAssets.Select(delegate (AdTextAsset asset)
             {

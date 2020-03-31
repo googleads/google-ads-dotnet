@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // Optional: ID of the ad group to restrict search to.
-            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
         }
