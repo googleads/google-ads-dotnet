@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+﻿// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,20 +13,23 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
 using Google.Ads.GoogleAds.V3.Common;
+using Google.Ads.GoogleAds.V3.Errors;
 using Google.Ads.GoogleAds.V3.Resources;
 using Google.Ads.GoogleAds.V3.Services;
 using Google.Api.Gax;
-
+using Google.Protobuf.Collections;
 using System;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
-    /// This code example gets expanded text ads.
+    /// This code example gets non-removed responsive search ads in a specified ad group.
+    /// To add responsive search ads, run AddResponsiveSearchAd.cs. To get ad groups, run
+    /// GetAdGroups.cs.
     /// </summary>
-    public class GetExpandedTextAds : ExampleBase
+    public class GetResponsiveSearchAds : ExampleBase
     {
         /// <summary>
         /// The page size to be used by default.
@@ -39,7 +42,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            GetExpandedTextAds codeExample = new GetExpandedTextAds();
+            GetResponsiveSearchAds codeExample = new GetResponsiveSearchAds();
 
             Console.WriteLine(codeExample.Description);
 
@@ -59,7 +62,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             get
             {
-                return "This example gets expanded text ads.";
+                return "This code example gets non-removed responsive search ads in a specified " +
+                    "ad group. To add responsive search ads, run AddResponsiveSearchAd.cs. " +
+                    "To get ad groups, run GetAdGroups.cs.";
             }
         }
 
@@ -79,12 +84,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 $@"SELECT
                  ad_group.id,
                  ad_group_ad.ad.id,
-                 ad_group_ad.ad.expanded_text_ad.headline_part1,
-                 ad_group_ad.ad.expanded_text_ad.headline_part2,
+                 ad_group_ad.ad.responsive_search_ad.headlines,
+                 ad_group_ad.ad.responsive_search_ad.descriptions,
                  ad_group_ad.status
-             FROM ad_group_ad
-             WHERE
-                 ad_group_ad.ad.type = EXPANDED_TEXT_AD ";
+            FROM ad_group_ad
+            WHERE
+                ad_group_ad.ad.type = RESPONSIVE_SEARCH_AD
+                AND ad_group_ad.status != 'REMOVED'";
 
             if (adGroupId != null)
             {
@@ -105,16 +111,19 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
                     googleAdsService.Search(request);
 
-                // Iterate over all rows in all pages and prints the requested field values for
+                // Iterates over all rows in all pages and prints the requested field values for
                 // the ad in each row.
                 foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
                 {
                     Ad ad = googleAdsRow.AdGroupAd.Ad;
-                    ExpandedTextAdInfo expandedTextAdInfo = ad.ExpandedTextAd;
-                    Console.WriteLine("Expanded text ad with ID {0}, status '{1}', and headline " +
-                        "'{2} - {3}' was found in ad group with ID {4}.",
-                        ad.Id, googleAdsRow.AdGroupAd.Status, expandedTextAdInfo.HeadlinePart1,
-                        expandedTextAdInfo.HeadlinePart2, googleAdsRow.AdGroup.Id);
+
+                    Console.WriteLine($"Responsive search ad with resource name '{ad.ResourceName}'," +
+                        $"status '{googleAdsRow.AdGroupAd.Status}' was found.");
+                    // Prints the ad text asset detail.
+                    ResponsiveSearchAdInfo responsiveSearchAdInfo = ad.ResponsiveSearchAd;
+                    Console.WriteLine("Headlines:{0},\nDescriptions:{1}",
+                        FormatAdTextAssetsAsString(responsiveSearchAdInfo.Headlines),
+                        FormatAdTextAssetsAsString(responsiveSearchAdInfo.Descriptions));
                 }
             }
             catch (GoogleAdsException e)
@@ -125,6 +134,18 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
+        }
+
+        /// <summary>Formats the text assets to a string format for display.</summary>
+        /// <param name="adTextAssets">The ad text assets.</param>
+        /// <returns>The string representation of the provided list of AdTextAsset
+        /// objects.</returns>
+        private static string FormatAdTextAssetsAsString(RepeatedField<AdTextAsset> adTextAssets)
+        {
+            return string.Join(",", adTextAssets.Select(delegate (AdTextAsset asset)
+            {
+                return asset.Text + " pinned to " + asset.PinnedField;
+            }).ToArray());
         }
     }
 }
