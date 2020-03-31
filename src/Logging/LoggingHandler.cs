@@ -173,8 +173,26 @@ namespace Google.Ads.GoogleAds.Logging
         {
             try
             {
-                return request.GetType().GetProperty("CustomerId").GetValue(
-                    request, null).ToString();
+                PropertyInfo propertyInfo = request.GetType().GetProperty("CustomerId");
+                if (propertyInfo != null)
+                {
+                    return propertyInfo.GetValue(request, null).ToString();
+                }
+                // Try to parse out of resource name.
+                propertyInfo = request.GetType().GetProperty("Name");
+                if (propertyInfo != null)
+                {
+                    string resourceName = propertyInfo.GetValue(request, null).ToString();
+                    if (resourceName.StartsWith("customers"))
+                    {
+                        string[] parts = resourceName.Split('/');
+                        if (parts.Length >= 2)
+                        {
+                            return parts[1];
+                        }
+                    }
+                }
+                return "";
             }
             catch
             {
