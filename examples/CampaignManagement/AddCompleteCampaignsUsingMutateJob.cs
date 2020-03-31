@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -45,14 +45,14 @@ namespace Google.Ads.GoogleAds.Examples.V3
         private const int NUMBER_OF_CAMPAIGNS_TO_ADD = 2;
 
         /// <summary>
-        /// The number of ad groups to add.
+        /// The number of ad groups per campaign to add.
         /// </summary>
         private const int NUMBER_OF_AD_GROUPS_TO_ADD = 2;
 
         /// <summary>
-        /// The number of keywords to add.
+        /// The number of keywords per ad group to add.
         /// </summary>
-        private const int NUMBER_OF_KEYWORDS_TO_ADD = 5;
+        private const int NUMBER_OF_KEYWORDS_TO_ADD = 4;
 
         /// <summary>
         /// The maximum total poll interval in seconds.
@@ -104,11 +104,10 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         public void Run(GoogleAdsClient client, long customerId)
         {
-            // Get the CampaignBidModifierService.
+            // Gets the MutateJobService.
             MutateJobServiceClient mutateJobService =
                 client.GetService(Services.V3.MutateJobService);
 
-            // Send the operation in a mutate request.
             try
             {
                 string mutateJobResourceName = CreateMutateJob(mutateJobService, customerId);
@@ -147,7 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
 
         /// <summary>
         /// Adds all mutate job operations to the mutate job. As this is the first time for this
-        /// mutate job, the sequence token is not set.The response will contain the next sequence
+        /// mutate job, the sequence token is not set. The response will contain the next sequence
         /// token that you can use to upload more operations in the future.
         /// </summary>
         /// <param name="mutateJobService">The mutate job service.</param>
