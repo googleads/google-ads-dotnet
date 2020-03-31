@@ -43,7 +43,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // ID of the ad group to which ads are added.
-            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
         }
@@ -87,7 +87,10 @@ namespace Google.Ads.GoogleAds.Examples.V3
                             PinnedField = ServedAssetFieldType.Headline1
                         },
                         new AdTextAsset() { Text = "Best Space Cruise Line" },
-                        new AdTextAsset() { Text = "Experience the Stars" },
+                        new AdTextAsset() { Text = "Experience the Stars" }
+                    },
+                    Descriptions =
+                    {
                         new AdTextAsset() { Text = "Buy your tickets now" },
                         new AdTextAsset() { Text = "Visit the Red Planet" },
                     },
