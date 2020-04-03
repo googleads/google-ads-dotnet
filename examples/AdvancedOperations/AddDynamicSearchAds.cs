@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             //The ad group ID that contains the ad.
-            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
         }

@@ -41,7 +41,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // the Google Ads Customer Id
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
             // the Google Ads adgroup Id
-            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
             // the Google Ads adgroup criterion Id
             long keywordId = long.Parse("INSERT_ADGROUP_CRITERION_ID_HERE");
 

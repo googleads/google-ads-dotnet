@@ -38,7 +38,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // ID of the label for which ad groups are retrieved.
-            long labelId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long labelId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             codeExample.Run(new GoogleAdsClient(), customerId, labelId);
         }

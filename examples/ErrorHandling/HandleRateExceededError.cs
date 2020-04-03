@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
                 // The ad group ID to which keywords are added.
-                long campaignId = long.Parse("INSERT_ADGROUP_ID_HERE");
+                long campaignId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
                 codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
             }
