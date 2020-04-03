@@ -91,15 +91,16 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             try
             {
-                string aleFeedResourceName = CreateALEFeed(client, customerId, chainId);
-                // After the completion of the Feed ADD operation above the added feed will not be
-                // available for usage in a CampaignFeed until the FeedMappings are created.
-                // We will wait with an exponential back-off policy until the feedmappings have
+                string feedResourceName = CreateAffiliateLocationExtensionFeed(
+                    client, customerId, chainId);
+                // After the completion of the feed creation operation above the added feed will not
+                // be available for usage in a campaign feed until the feed mappings are created.
+                // We will wait with an exponential back-off policy until the feed mappings have
                 // been created.
-                FeedMapping aleFeedMapping = WaitForALEFeedToBeReady(client, customerId,
-                    aleFeedResourceName);
-                CreateCampaignFeed(client, customerId, campaignId, aleFeedMapping,
-                    aleFeedResourceName, chainId);
+                FeedMapping feedMapping = WaitForFeedToBeReady(client, customerId,
+                    feedResourceName);
+                CreateCampaignFeed(client, customerId, campaignId, feedMapping,
+                    feedResourceName, chainId);
             }
             catch (GoogleAdsException e)
             {
@@ -118,7 +119,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="chainId">The retail chain ID.</param>
         /// <returns>Resource name of the newly created Affiliate Location Extension feed.</returns>
-        private static string CreateALEFeed(GoogleAdsClient client, long customerId, long chainId)
+        private static string CreateAffiliateLocationExtensionFeed(GoogleAdsClient client,
+            long customerId, long chainId)
         {
             // Optional: Delete all existing location extension feeds. This is an optional step,
             // and is required for this code example to run correctly more than once.
@@ -133,7 +135,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // Creates a feed that will sync to retail addresses for a given retail chain ID.
             // Do not add FeedAttributes to this object as Google Ads will add
             // them automatically because this will be a system generated feed.
-            Feed aleFeed = new Feed()
+            Feed feed = new Feed()
             {
                 Name = "Affiliate Location Extension feed #" + ExampleUtilities.GetRandomString(),
 
@@ -142,14 +144,14 @@ namespace Google.Ads.GoogleAds.Examples.V3
                     ChainIds = { chainId },
                     RelationshipType = AffiliateLocationFeedRelationshipType.GeneralRetailer
                 },
-                // Since this feed's feed items will be managed by Google,
+                // Since this feed's contents will be managed by Google,
                 // you must set its origin to GOOGLE.
                 Origin = FeedOrigin.Google
             };
 
             FeedOperation operation = new FeedOperation()
             {
-                Create = aleFeed
+                Create = feed
             };
 
             // Adds the feed.
@@ -157,9 +159,10 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 feedService.MutateFeeds(customerId.ToString(), new[] { operation });
 
             // Displays the results.
-            string aleFeedResourceName = response.Results[0].ResourceName;
-            Console.WriteLine($"ALE feed created with resource name: {aleFeedResourceName}.");
-            return aleFeedResourceName;
+            string feedResourceName = response.Results[0].ResourceName;
+            Console.WriteLine($"Affliate location extension feed created with resource name: " +
+                $"{feedResourceName}.");
+            return feedResourceName;
         }
 
         /// <summary>
@@ -173,7 +176,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // 1. Delete the CustomerFeed so that the location extensions from the feed stop
             // serving.
             // 2. Delete the feed so that Google Ads will no longer sync from the GMB account.
-            CustomerFeed[] oldCustomerFeeds = GetLocationExtensionCustomerFeeds(client, customerId);
+            CustomerFeed[] oldCustomerFeeds =
+                GetLocationExtensionCustomerFeeds(client, customerId);
             if (oldCustomerFeeds.Length != 0)
             {
                 // Optional: You may also want to delete the CampaignFeeds and AdGroupFeeds.
@@ -301,10 +305,10 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="aleFeedResourceName">The ALE feed resource name.</param>
+        /// <param name="feedResourceName">The feed resource name.</param>
         /// <returns>The newly created feed mapping.</returns>
-        private static FeedMapping GetALEFeedMapping(GoogleAdsClient client, long customerId,
-            string aleFeedResourceName)
+        private static FeedMapping GetAffiliateLocationExtensionFeedMapping(GoogleAdsClient client,
+            long customerId, string feedResourceName)
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
@@ -313,7 +317,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // Create the query.
             string query = $"SELECT feed_mapping.resource_name, " +
                 $"feed_mapping.attribute_field_mappings, feed_mapping.status FROM " +
-                $"feed_mapping WHERE feed_mapping.feed = '{aleFeedResourceName}' and " +
+                $"feed_mapping WHERE feed_mapping.feed = '{feedResourceName}' and " +
                 $"feed_mapping.status = ENABLED and feed_mapping.placeholder_type = " +
                 "AFFILIATE_LOCATION LIMIT 1";
 
@@ -327,13 +331,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
         }
 
         /// <summary>
-        /// Waits for ALE feed to be ready.
+        /// Waits for the Affliate location extension feed to be ready.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="aleFeedResourceName">Resource name of the ALE feed.</param>
-        private static FeedMapping WaitForALEFeedToBeReady(GoogleAdsClient client, long customerId,
-            string aleFeedResourceName)
+        /// <param name="feedResourceName">Resource name of the feed.</param>
+        private static FeedMapping WaitForFeedToBeReady(GoogleAdsClient client, long customerId,
+            string feedResourceName)
         {
             int numAttempts = 0;
             int sleepSeconds = 0;
@@ -341,29 +345,29 @@ namespace Google.Ads.GoogleAds.Examples.V3
             while (numAttempts < MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS)
             {
                 // Once you create a feed, Google's servers will setup the feed by creating feed
-                // attributes and feedmapping. Once the feedmapping is created, it is ready to be
+                // attributes and feed mapping. Once the feed mapping is created, it is ready to be
                 // used for creating customer feed.
                 // This process is asynchronous, so we wait until the feed mapping is created,
                 // peforming exponential backoff.
-                FeedMapping feedMapping = GetALEFeedMapping(client, customerId,
-                    aleFeedResourceName);
+                FeedMapping feedMapping = GetAffiliateLocationExtensionFeedMapping(
+                    client, customerId, feedResourceName);
 
                 if (feedMapping == null)
                 {
                     numAttempts++;
                     sleepSeconds = (int)(5 * Math.Pow(2, numAttempts));
-                    Console.WriteLine($"Checked: #{numAttempts} time(s). ALE feed is not ready " +
+                    Console.WriteLine($"Checked: #{numAttempts} time(s). Feed is not ready " +
                         $"yet. Waiting {sleepSeconds} seconds before trying again.");
                     Thread.Sleep(sleepSeconds * 1000);
                 }
                 else
                 {
-                    Console.WriteLine($"ALE Feed {aleFeedResourceName} is now ready.");
+                    Console.WriteLine($"Feed {feedResourceName} is now ready.");
                     return feedMapping;
                 }
             }
             throw new RpcException(new Status(StatusCode.DeadlineExceeded,
-                $"ALE Feed is not ready after {MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS}" +
+                $"Feed is not ready after {MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS}" +
                 $" retries."));
         }
 
@@ -374,19 +378,19 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="campaignId">The campaign ID for which the affiliate location extensions
         /// are added.</param>
-        /// <param name="feedMapping">The ALE feedmapping for
-        /// <paramref name="aleFeedResourceName"/></param>
-        /// <param name="aleFeedResourceName">The ALE feed resource name.</param>
+        /// <param name="feedMapping">The affliate location extension feedmapping for
+        /// <paramref name="feedResourceName"/></param>
+        /// <param name="feedResourceName">The feed resource name.</param>
         /// <param name="chainId">The retail chain ID.</param>
         private static void CreateCampaignFeed(GoogleAdsClient client, long customerId,
-            long campaignId, FeedMapping feedMapping, string aleFeedResourceName, long chainId)
+            long campaignId, FeedMapping feedMapping, string feedResourceName, long chainId)
         {
             // Get the CampaignFeedService.
             CampaignFeedServiceClient campaignFeedService = client.GetService(
                 Services.V3.CampaignFeedService);
 
             long attributeIdForChainId = GetAttributeIdForChainId(feedMapping);
-            string feedId = FeedName.Parse(aleFeedResourceName).FeedId;
+            string feedId = FeedName.Parse(feedResourceName).FeedId;
 
             string matchingFunction =
                 $"IN(FeedAttribute[{feedId}, {attributeIdForChainId}], {chainId})";
@@ -394,7 +398,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // the AFFILIATE_LOCATION placeholder type.
             CampaignFeed campaignFeed = new CampaignFeed()
             {
-                Feed = aleFeedResourceName,
+                Feed = feedResourceName,
                 PlaceholderTypes = { PlaceholderType.AffiliateLocation },
                 MatchingFunction = new MatchingFunction()
                 {
@@ -429,7 +433,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             foreach (AttributeFieldMapping fieldMapping in feedMapping.AttributeFieldMappings)
             {
-                if (fieldMapping.AffiliateLocationField == AffiliateLocationPlaceholderField.ChainId)
+                if (fieldMapping.AffiliateLocationField ==
+                    AffiliateLocationPlaceholderField.ChainId)
                 {
                     return fieldMapping.FeedAttributeId.Value;
                 }
