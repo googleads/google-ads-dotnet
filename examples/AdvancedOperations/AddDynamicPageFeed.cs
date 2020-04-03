@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
 
             // ID of the ad group for which dynamic page feeds are added.
-            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             codeExample.Run(new GoogleAdsClient(), customerId, campaignId, adGroupId);
         }

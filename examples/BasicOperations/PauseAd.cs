@@ -42,7 +42,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // ID of the ad group that contains the ad.
-            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             // ID of the ad to be paused.
             long adId = long.Parse("INSERT_AD_ID_HERE");

@@ -42,7 +42,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // ID of the ad group where the bid modifier will be added.
-            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             // The value of the bid modifier to add.
             double bidModifier = double.Parse("INSERT_BID_MODIFIER_HERE");

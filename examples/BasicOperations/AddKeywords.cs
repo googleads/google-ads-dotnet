@@ -44,7 +44,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // The ad group to which new keyword is added.
-            long adGroupId = long.Parse("INSERT_ADGROUP_ID_HERE");
+            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             // The new keyword text.
             string keyword = "INSERT_KEYWORD_TEXT_HERE";
