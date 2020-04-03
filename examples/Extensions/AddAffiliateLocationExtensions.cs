@@ -176,6 +176,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             CustomerFeed[] oldCustomerFeeds = GetLocationExtensionCustomerFeeds(client, customerId);
             if (oldCustomerFeeds.Length != 0)
             {
+                // Optional: You may also want to delete the CampaignFeeds and AdGroupFeeds.
                 DeleteCustomerFeeds(client, customerId, oldCustomerFeeds);
             }
             Feed[] feeds = GetLocationExtensionFeeds(client, customerId);
@@ -296,7 +297,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         }
 
         /// <summary>
-        /// Gets the Google My Business feed mapping.
+        /// Gets the Affiliate Location Extension feed mapping.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
@@ -367,15 +368,15 @@ namespace Google.Ads.GoogleAds.Examples.V3
         }
 
         /// <summary>
-        /// Creates the customer feed.
+        /// Creates the campaign feed.
         /// </summary>
-        /// <param name="client">The client.</param>
-        /// <param name="customerId">The customer identifier.</param>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="campaignId">The campaign ID for which the affiliate location extensions
         /// are added.</param>
         /// <param name="feedMapping">The ALE feedmapping for
         /// <paramref name="aleFeedResourceName"/></param>
-        /// <param name="aleFeedResourceName">Name of the ALE feed resource.</param>
+        /// <param name="aleFeedResourceName">The ALE feed resource name.</param>
         /// <param name="chainId">The retail chain ID.</param>
         private static void CreateCampaignFeed(GoogleAdsClient client, long customerId,
             long campaignId, FeedMapping feedMapping, string aleFeedResourceName, long chainId)
