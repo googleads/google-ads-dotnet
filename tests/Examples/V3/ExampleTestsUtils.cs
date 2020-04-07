@@ -17,8 +17,11 @@ using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Tests.V3;
 using Google.Ads.GoogleAds.V3.Common;
 using Google.Ads.GoogleAds.V3.Enums;
+using Google.Ads.GoogleAds.V3.Errors;
 using Google.Ads.GoogleAds.V3.Resources;
 using Google.Ads.GoogleAds.V3.Services;
+using Google.LongRunning;
+using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +29,7 @@ using static Google.Ads.GoogleAds.V3.Enums.AdGroupAdStatusEnum.Types;
 using static Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types;
 using static Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types;
 using static Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.CampaignExperimentTrafficSplitTypeEnum.Types;
 using static Google.Ads.GoogleAds.V3.Enums.CampaignStatusEnum.Types;
 using static Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types;
 using static Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types;
@@ -39,14 +43,17 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V3
         /// Creates the budget for the campaign.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
+        /// <param name="isExplicitlyShared">True, if the campaign is shared, false otherwise.
+        /// </param>
         /// <returns>The resource name of the newly created campaign budget.</returns>
-        internal static string CreateBudget(GoogleAdsClient client)
+        internal static string CreateBudget(GoogleAdsClient client, bool isExplicitlyShared = true)
         {
             CampaignBudget budget = new CampaignBudget()
             {
                 Name = "Interplanetary Cruise Budget #" + ExampleUtilities.GetRandomString(),
                 DeliveryMethod = BudgetDeliveryMethod.Standard,
-                AmountMicros = 500000
+                AmountMicros = 500000,
+                ExplicitlyShared = isExplicitlyShared
             };
 
             MutateOperation mutateOperation = new MutateOperation()
@@ -328,6 +335,84 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V3
             string query = $"SELECT ad_group_criterion.criterion_id FROM ad_group_criterion" +
                 $" WHERE ad_group_criterion.resource_name = '{adGroupCriterionResourceName}'";
             return GetGoogleAdsRows(client, query).First().AdGroupCriterion.CriterionId.Value;
+        }
+
+        /// <summary>
+        /// Creates the campaign experiment.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
+        /// <param name="campaignDraftResourceName">The campaign draft resource name.</param>
+        /// <returns>The resource name of the newly created campaign experiment.</returns>
+        internal static string CreateCampaignExperiment(GoogleAdsClient client, long customerId,
+            string campaignDraftResourceName)
+        {
+            // Get the CampaignExperimentService.
+            CampaignExperimentServiceClient campaignExperimentService =
+                client.GetService(Services.V3.CampaignExperimentService);
+
+            CampaignExperiment experiment = new CampaignExperiment()
+            {
+                CampaignDraft = campaignDraftResourceName,
+                Name = "Campaign Experiment - " + ExampleUtilities.GetRandomString(),
+                TrafficSplitPercent = 50,
+                TrafficSplitType = CampaignExperimentTrafficSplitType.RandomQuery
+            };
+
+            Operation<Empty, CreateCampaignExperimentMetadata> operation =
+                campaignExperimentService.CreateCampaignExperiment(
+                    customerId.ToString(), experiment);
+
+            string experimentResourceName = operation.Metadata.CampaignExperiment;
+            operation.PollUntilCompleted();
+            return experimentResourceName;
+        }
+
+        /// <summary>
+        /// Creates the campaign draft.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
+        /// <param name="baseCampaignId">The base campaign ID.</param>
+        /// <returns>The resource name of the newly created campaign draft.</returns>
+        internal static string CreateCampaignDraft(GoogleAdsClient client, long customerId,
+            long baseCampaignId)
+        {
+            // Get the CampaignDraftService.
+            CampaignDraftServiceClient campaignDraftService =
+                client.GetService(Services.V3.CampaignDraftService);
+
+            CampaignDraft campaignDraft = new CampaignDraft()
+            {
+                BaseCampaign = ResourceNames.Campaign(customerId, baseCampaignId),
+                Name = "Campaign Draft #" + ExampleUtilities.GetRandomString(),
+            };
+
+            CampaignDraftOperation operation = new CampaignDraftOperation()
+            {
+                Create = campaignDraft
+            };
+
+            MutateCampaignDraftsResponse response = campaignDraftService.MutateCampaignDrafts(
+                customerId.ToString(), new CampaignDraftOperation[] { operation });
+
+            return response.Results[0].ResourceName;
+        }
+
+        /// <summary>
+        /// Gets the campaign experiment.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
+        /// <param name="experimentResourceName">The experiment resource name.</param>
+        /// <returns>ID of the campagin experiment.</returns>
+        internal static long GetCampaignExperiment(GoogleAdsClient client, long customerId,
+            string experimentResourceName)
+        {
+            string query = $"SELECT campaign_experiment.experiment_campaign, " +
+                $"campaign_experiment.id FROM campaign_experiment WHERE " +
+                $"campaign_experiment.resource_name = '{experimentResourceName}'";
+            return GetGoogleAdsRows(client, query).First().CampaignExperiment.Id.Value;
         }
 
         /// <summary>
