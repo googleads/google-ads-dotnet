@@ -12,18 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System.Collections;
+using System;
 using System.Collections.Generic;
+using Google.Ads.GoogleAds.Lib;
+using Google.Ads.GoogleAds.V3.Errors;
 using Google.Ads.GoogleAds.V3.Resources;
+using Google.Ads.GoogleAds.V3.Services;
 using Google.Api.Gax;
 
 namespace Google.Ads.GoogleAds.Examples.V3
 {
-    using Lib;
-    using Google.Ads.GoogleAds.V3.Errors;
-    using Google.Ads.GoogleAds.V3.Services;
-    using System;
-
     /// <summary>
     /// This example gets the account hierarchy of the specified manager account. If you don't specify
     /// manager customer ID, the example will instead print the hierarchies of all accessible customer
@@ -34,7 +32,6 @@ namespace Google.Ads.GoogleAds.Examples.V3
     /// </summary>
     public class GetAccountHierarchy : ExampleBase
     {
-        // private const string MANAGER_CUSTOMER_ID = "3955750366";//"INSERT_MANAGER_CUSTOMER_ID_HERE";
         private const int PAGE_SIZE = 1000;
 
         /// <summary>
@@ -44,7 +41,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
         public static void Main(string[] args)
         {
             GetAccountHierarchy codeExample = new GetAccountHierarchy();
+            
             Console.WriteLine(codeExample.Description);
+            
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
             
             try
@@ -64,68 +63,85 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description =>
-            "This code example gets the account hierarchy of a specified manager account. " +
-            "If you don't specify a manager customer ID, the example will instead print the hierarchies " +
-            "of all accessible customer accounts for your authenticated Google account.";
+        public override string Description
+        {
+            get
+            {
+                return "This code example gets the account hierarchy of a specified manager account. " +
+                       "If you don't specify a manager customer ID, the example will instead print the hierarchies " +
+                       "of all accessible customer accounts for your authenticated Google account.";
+            }
+        }
 
         /// <summary>
         /// Runs the code example.
         /// </summary>
         /// <param name="googleAdsClient">The Google Ads client instance.</param>
-        /// <param name="customerId">The customer ID.</param>
+        /// <param name="customerId">Optional manager account ID. If none provided, this method will instead list
+        ///             the accounts accessible from the authenticated Google Ads account.</param>
         public void Run(GoogleAdsClient googleAdsClient, long? customerId = null)
         {
-             // googleAdsServiceClient = googleAdsClient.GetService(Services.V3.GoogleAdsService);
+            GoogleAdsServiceClient googleAdsServiceClient = googleAdsClient.GetService(Services.V3.GoogleAdsService);
+            
+            CustomerServiceClient customerServiceClient = googleAdsClient.GetService(Services.V3.CustomerService);
             
             // List of Customer IDs to handle.
-            ArrayList seedCustomerIds = new ArrayList();
+            List<long> seedCustomerIds = new List<long>();
             
-            // If a Manager ID was provided above, it will be the only ID in the list.
+            // If a Manager ID was provided in the customerId parameter, it will be the only ID in the list.
             // Otherwise, we will issue a request for all customers accessible by this authenticated Google account.
             if(customerId.HasValue)
             {
-                seedCustomerIds.Add(customerId);
+                seedCustomerIds.Add(customerId.Value);
             }
             else
             {
                 Console.WriteLine("No manager customer ID is specified. The example will print the hierarchies of " + 
                                   "all accessible customer IDs:");
-                CustomerServiceClient customerServiceClient = googleAdsClient.GetService(Services.V3.CustomerService);
-                string[] accessibleCustomers =  customerServiceClient.ListAccessibleCustomers();
+                
+                string[] customerResourceNames =  customerServiceClient.ListAccessibleCustomers();
 
-                foreach (string customerResourceName in accessibleCustomers)
+                foreach (string customerResourceName in customerResourceNames)
                 {
                     Customer customer = customerServiceClient.GetCustomer(customerResourceName);
-                    Console.WriteLine(customer.Id);
-                    seedCustomerIds.Add(customer.Id);
+                    Console.WriteLine(customer.Id.Value);
+                    seedCustomerIds.Add(customer.Id.Value);
                 }
                 Console.WriteLine();
             }
             
             // Creates a query that retrieves all child accounts of the manager specified in search calls below.
-            const string query = "SELECT customer_client.client_customer, customer_client.level,"
-                                 + " customer_client.manager, customer_client.descriptive_name,"
-                                 + " customer_client.currency_code, customer_client.time_zone,"
-                                 + " customer_client.id FROM customer_client WHERE customer_client.level <= 1";
+            const string query = @"SELECT 
+                                    customer_client.client_customer, 
+                                    customer_client.level,
+                                    customer_client.manager, 
+                                    customer_client.descriptive_name,
+                                    customer_client.currency_code, 
+                                    customer_client.time_zone,
+                                    customer_client.id 
+                                FROM customer_client 
+                                WHERE 
+                                    customer_client.level <= 1";
 
             foreach (long seedCustomerId in seedCustomerIds)
             {
-                GoogleAdsServiceClient googleAdsServiceClient = googleAdsClient.GetService(Services.V3.GoogleAdsService);
-                
-                // Performs a breadth-first search to build an associative array mapping
-                // managers to their child accounts (customerIdsToChildAccounts).
+                // Performs a breadth-first search to build a Dictionary that maps managers to their
+                // child accounts (customerIdsToChildAccounts).
                 Queue<long> unprocessedCustomerIds = new Queue<long>();
                 unprocessedCustomerIds.Enqueue(seedCustomerId);
-                Dictionary<long, ArrayList> customerIdsToChildAccounts =
-                    new Dictionary<long, ArrayList>();
+                Dictionary<long, List<CustomerClient>> customerIdsToChildAccounts =
+                    new Dictionary<long, List<CustomerClient>>();
                 CustomerClient rootCustomerClient = null;
 
                 while (unprocessedCustomerIds.Count > 0)
                 {
                     customerId = unprocessedCustomerIds.Dequeue();
                     PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> response = 
-                        googleAdsServiceClient.Search(customerId.ToString(), query, pageSize: PAGE_SIZE);
+                        googleAdsServiceClient.Search(
+                            customerId.ToString(), 
+                            query, 
+                            pageSize: PAGE_SIZE
+                        );
 
                     // Iterates over all rows in all pages to get all customer clients under the
                     // specified customer's hierarchy.
@@ -150,16 +166,15 @@ namespace Google.Ads.GoogleAds.Examples.V3
                         
                         if(!customerIdsToChildAccounts.ContainsKey(customerId.Value))
                         {
-                            customerIdsToChildAccounts.Add(customerId.Value, new ArrayList());
+                            customerIdsToChildAccounts.Add(customerId.Value, new List<CustomerClient>());
                         }
 
                         customerIdsToChildAccounts[customerId.Value].Add(customerClient);
                         
                         if (customerClient.Manager.HasValue && customerClient.Manager.Value)
                         {
-                            // A customer can be managed by multiple managers, so to prevent visiting
-                            // the same customer many times, we need to check if it's already in the
-                            // Dictionary.
+                            // A customer can be managed by multiple managers, so to prevent visiting the same
+                            // customer many times, we need to check if it's already in the Dictionary.
                             if (!customerIdsToChildAccounts.ContainsKey(customerClient.Id.Value) &&
                                 customerClient.Level == 1)
                             {
@@ -193,7 +208,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="depth"> the current integer depth we are printing from in the account hierarchy</param>
         ///</summary>
         private void PrintAccountHierarchy(CustomerClient customerClient, 
-            Dictionary<long, ArrayList> customerIdsToChildAccounts, int depth)
+            Dictionary<long, List<CustomerClient>> customerIdsToChildAccounts, int depth)
         {
             if (depth == 0)
             {
