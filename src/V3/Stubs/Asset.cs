@@ -30,27 +30,27 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b29nbGUvYWRzL2dvb2dsZWFkcy92My9lbnVtcy9hc3NldF90eXBlLnByb3Rv",
             "Gh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBp",
             "L3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJv",
-            "dG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iggUKBUFzc2V0Ej0K",
+            "dG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i/QQKBUFzc2V0Ej0K",
             "DXJlc291cmNlX25hbWUYASABKAlCJuBBBfpBIAoeZ29vZ2xlYWRzLmdvb2ds",
             "ZWFwaXMuY29tL0Fzc2V0EiwKAmlkGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVm",
-            "LkludDY0VmFsdWVCA+BBAxIvCgRuYW1lGAMgASgLMhwuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cmluZ1ZhbHVlQgPgQQUSSQoEdHlwZRgEIAEoDjI2Lmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYzLmVudW1zLkFzc2V0VHlwZUVudW0uQXNzZXRUeXBl",
-            "QgPgQQMSVQoTeW91dHViZV92aWRlb19hc3NldBgFIAEoCzIxLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYzLmNvbW1vbi5Zb3V0dWJlVmlkZW9Bc3NldEID4EEF",
-            "SAASUwoSbWVkaWFfYnVuZGxlX2Fzc2V0GAYgASgLMjAuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjMuY29tbW9uLk1lZGlhQnVuZGxlQXNzZXRCA+BBBUgAEkYK",
-            "C2ltYWdlX2Fzc2V0GAcgASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
-            "Y29tbW9uLkltYWdlQXNzZXRCA+BBA0gAEkQKCnRleHRfYXNzZXQYCCABKAsy",
-            "KS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5jb21tb24uVGV4dEFzc2V0QgPg",
-            "QQNIADpI6kFFCh5nb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQXNzZXQSI2N1",
-            "c3RvbWVycy97Y3VzdG9tZXJ9L2Fzc2V0cy97YXNzZXR9QgwKCmFzc2V0X2Rh",
-            "dGFC9wEKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5yZXNvdXJjZXNC",
-            "CkFzc2V0UHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
-            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YzL3Jlc291cmNlcztyZXNvdXJjZXOi",
-            "AgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMy5SZXNvdXJjZXPKAiFH",
-            "b29nbGVcQWRzXEdvb2dsZUFkc1xWM1xSZXNvdXJjZXPqAiVHb29nbGU6OkFk",
-            "czo6R29vZ2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "LkludDY0VmFsdWVCA+BBAxIqCgRuYW1lGAMgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlEkkKBHR5cGUYBCABKA4yNi5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52My5lbnVtcy5Bc3NldFR5cGVFbnVtLkFzc2V0VHlwZUID4EED",
+            "ElUKE3lvdXR1YmVfdmlkZW9fYXNzZXQYBSABKAsyMS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52My5jb21tb24uWW91dHViZVZpZGVvQXNzZXRCA+BBBUgAElMK",
+            "Em1lZGlhX2J1bmRsZV9hc3NldBgGIAEoCzIwLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYzLmNvbW1vbi5NZWRpYUJ1bmRsZUFzc2V0QgPgQQVIABJGCgtpbWFn",
+            "ZV9hc3NldBgHIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmNvbW1v",
+            "bi5JbWFnZUFzc2V0QgPgQQNIABJECgp0ZXh0X2Fzc2V0GAggASgLMikuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjMuY29tbW9uLlRleHRBc3NldEID4EEDSAA6",
+            "SOpBRQoeZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fzc2V0EiNjdXN0b21l",
+            "cnMve2N1c3RvbWVyfS9hc3NldHMve2Fzc2V0fUIMCgphc3NldF9kYXRhQvcB",
+            "CiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMucmVzb3VyY2VzQgpBc3Nl",
+            "dFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92My9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FB",
+            "qgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMuUmVzb3VyY2VzygIhR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjNcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdv",
+            "b2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.AssetTypesReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AssetTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -155,7 +155,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     private static readonly pb::FieldCodec<string> _single_name_codec = pb::FieldCodec.ForClassWrapper<string>(26);
     private string name_;
     /// <summary>
-    /// Immutable. Optional name of the asset.
+    /// Optional name of the asset.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {

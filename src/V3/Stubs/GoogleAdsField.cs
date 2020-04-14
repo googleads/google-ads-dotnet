@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Z2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNv",
             "dXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxn",
             "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvItMHCg5Hb29nbGVBZHNGaWVs",
-            "ZBJGCg1yZXNvdXJjZV9uYW1lGAEgASgJQi/gQQX6QSkKJ2dvb2dsZWFkcy5n",
+            "ZBJGCg1yZXNvdXJjZV9uYW1lGAEgASgJQi/gQQP6QSkKJ2dvb2dsZWFkcy5n",
             "b29nbGVhcGlzLmNvbS9Hb29nbGVBZHNGaWVsZBIvCgRuYW1lGAIgASgLMhwu",
             "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQgPgQQMSZwoIY2F0ZWdvcnkY",
             "AyABKA4yUC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lbnVtcy5Hb29nbGVB",
@@ -124,7 +124,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the artifact.
+    /// Output only. The resource name of the artifact.
     /// Artifact resource names have the form:
     ///
     /// `googleAdsFields/{name}`

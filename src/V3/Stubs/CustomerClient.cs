@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZXMaH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9h",
             "cGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5w",
             "cm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKgBQoOQ3VzdG9t",
-            "ZXJDbGllbnQSRgoNcmVzb3VyY2VfbmFtZRgBIAEoCUIv4EEF+kEpCidnb29n",
+            "ZXJDbGllbnQSRgoNcmVzb3VyY2VfbmFtZRgBIAEoCUIv4EED+kEpCidnb29n",
             "bGVhZHMuZ29vZ2xlYXBpcy5jb20vQ3VzdG9tZXJDbGllbnQSOgoPY2xpZW50",
             "X2N1c3RvbWVyGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
             "QgPgQQMSLwoGaGlkZGVuGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xW",
@@ -112,7 +112,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the customer client.
+    /// Output only. The resource name of the customer client.
     /// CustomerClient resource names have the form:
     /// `customers/{customer_id}/customerClients/{client_customer_id}`
     /// </summary>

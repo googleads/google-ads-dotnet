@@ -34,7 +34,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2ds",
             "ZS9hcGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVy",
             "cy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLYFgoNQWNj",
-            "b3VudEJ1ZGdldBJFCg1yZXNvdXJjZV9uYW1lGAEgASgJQi7gQQX6QSgKJmdv",
+            "b3VudEJ1ZGdldBJFCg1yZXNvdXJjZV9uYW1lGAEgASgJQi7gQQP6QSgKJmdv",
             "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BY2NvdW50QnVkZ2V0EiwKAmlkGAIg",
             "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVCA+BBAxJiCg1iaWxs",
             "aW5nX3NldHVwGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
@@ -227,7 +227,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the account-level budget.
+    /// Output only. The resource name of the account-level budget.
     /// AccountBudget resource names have the form:
     ///
     /// `customers/{customer_id}/accountBudgets/{account_budget_id}`

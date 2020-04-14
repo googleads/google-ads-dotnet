@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Z29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9y",
             "ZXNvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3Rv",
             "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIssOCgdJbnZvaWNlEj8K",
-            "DXJlc291cmNlX25hbWUYASABKAlCKOBBBfpBIgogZ29vZ2xlYWRzLmdvb2ds",
+            "DXJlc291cmNlX25hbWUYASABKAlCKOBBA/pBIgogZ29vZ2xlYWRzLmdvb2ds",
             "ZWFwaXMuY29tL0ludm9pY2USLQoCaWQYAiABKAsyHC5nb29nbGUucHJvdG9i",
             "dWYuU3RyaW5nVmFsdWVCA+BBAxJNCgR0eXBlGAMgASgOMjouZ29vZ2xlLmFk",
             "cy5nb29nbGVhZHMudjMuZW51bXMuSW52b2ljZVR5cGVFbnVtLkludm9pY2VU",
@@ -148,7 +148,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the invoice. Multiple customers can share a given
+    /// Output only. The resource name of the invoice. Multiple customers can share a given
     /// invoice, so multiple resource names may point to the same invoice.
     /// Invoice resource names have the form:
     ///

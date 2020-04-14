@@ -3704,7 +3704,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
     private long? totalImpressions_;
     /// <summary>
     /// Total number of ad impressions. This includes impressions that may fall
-    /// outside the specified Targeting, due to insufficent information on
+    /// outside the specified Targeting, due to insufficient information on
     /// signed-in users.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

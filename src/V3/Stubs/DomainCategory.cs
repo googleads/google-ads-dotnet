@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZXMaH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9h",
             "cGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5w",
             "cm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKwBQoORG9tYWlu",
-            "Q2F0ZWdvcnkSRgoNcmVzb3VyY2VfbmFtZRgBIAEoCUIv4EEF+kEpCidnb29n",
+            "Q2F0ZWdvcnkSRgoNcmVzb3VyY2VfbmFtZRgBIAEoCUIv4EED+kEpCidnb29n",
             "bGVhZHMuZ29vZ2xlYXBpcy5jb20vRG9tYWluQ2F0ZWdvcnkSWQoIY2FtcGFp",
             "Z24YAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCKeBBA/pB",
             "IwohZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NhbXBhaWduEjMKCGNhdGVn",
@@ -113,7 +113,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the domain category.
+    /// Output only. The resource name of the domain category.
     /// Domain category resource names have the form:
     ///
     /// `customers/{customer_id}/domainCategories/{campaign_id}~{category_base64}~{language_code}`

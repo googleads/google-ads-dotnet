@@ -33,7 +33,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkvcmVz",
             "b3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoc",
             "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byL0BgoRQWRHcm91cFNpbXVs",
-            "YXRpb24SSQoNcmVzb3VyY2VfbmFtZRgBIAEoCUIy4EEF+kEsCipnb29nbGVh",
+            "YXRpb24SSQoNcmVzb3VyY2VfbmFtZRgBIAEoCUIy4EED+kEsCipnb29nbGVh",
             "ZHMuZ29vZ2xlYXBpcy5jb20vQWRHcm91cFNpbXVsYXRpb24SNQoLYWRfZ3Jv",
             "dXBfaWQYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUID4EED",
             "ElMKBHR5cGUYAyABKA4yQC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lbnVt",
@@ -138,7 +138,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the ad group simulation.
+    /// Output only. The resource name of the ad group simulation.
     /// Ad group simulation resource names have the form:
     ///
     /// `customers/{customer_id}/adGroupSimulations/{ad_group_id}~{type}~{modification_method}~{start_date}~{end_date}`

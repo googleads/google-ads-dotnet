@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZXcucHJvdG8SIWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnJlc291cmNlcxof",
             "Z29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9y",
             "ZXNvdXJjZS5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKq",
-            "AQoKR2VuZGVyVmlldxJCCg1yZXNvdXJjZV9uYW1lGAEgASgJQivgQQX6QSUK",
+            "AQoKR2VuZGVyVmlldxJCCg1yZXNvdXJjZV9uYW1lGAEgASgJQivgQQP6QSUK",
             "I2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9HZW5kZXJWaWV3OljqQVUKI2dv",
             "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9HZW5kZXJWaWV3Ei5jdXN0b21lcnMv",
             "e2N1c3RvbWVyfS9nZW5kZXJWaWV3cy97Z2VuZGVyX3ZpZXd9QvwBCiVjb20u",
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the gender view.
+    /// Output only. The resource name of the gender view.
     /// Gender view resource names have the form:
     ///
     /// `customers/{customer_id}/genderViews/{ad_group_id}~{criterion_id}`

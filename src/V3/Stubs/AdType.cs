@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V3.Enums {
           string.Concat(
             "Citnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lbnVtcy9hZF90eXBlLnByb3Rv",
             "Eh1nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lbnVtcxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90byLWAwoKQWRUeXBlRW51bSLHAwoGQWRUeXBlEg8K",
+            "bm5vdGF0aW9ucy5wcm90byLvAwoKQWRUeXBlRW51bSLgAwoGQWRUeXBlEg8K",
             "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB1RFWFRfQUQQAhIUChBF",
             "WFBBTkRFRF9URVhUX0FEEAMSEAoMQ0FMTF9PTkxZX0FEEAYSHgoaRVhQQU5E",
             "RURfRFlOQU1JQ19TRUFSQ0hfQUQQBxIMCghIT1RFTF9BRBAIEhUKEVNIT1BQ",
@@ -36,13 +36,13 @@ namespace Google.Ads.GoogleAds.V3.Enums {
             "WV9BRBAQEgoKBkFQUF9BRBAREhkKFUxFR0FDWV9BUFBfSU5TVEFMTF9BRBAS",
             "EhkKFVJFU1BPTlNJVkVfRElTUExBWV9BRBATEhMKD0hUTUw1X1VQTE9BRF9B",
             "RBAVEhQKEERZTkFNSUNfSFRNTDVfQUQQFhIVChFBUFBfRU5HQUdFTUVOVF9B",
-            "RBAXEiIKHlNIT1BQSU5HX0NPTVBBUklTT05fTElTVElOR19BRBAYQuABCiFj",
-            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZW51bXNCC0FkVHlwZVByb3Rv",
-            "UAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
-            "L2dvb2dsZWFkcy92My9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlYzLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjNc",
-            "RW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6RW51bXNiBnBy",
-            "b3RvMw=="));
+            "RBAXEiIKHlNIT1BQSU5HX0NPTVBBUklTT05fTElTVElOR19BRBAYEhcKE1ZJ",
+            "REVPX1JFU1BPTlNJVkVfQUQQHkLgAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYzLmVudW1zQgtBZFR5cGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjMvZW51bXM7",
+            "ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMy5FbnVtc8oC",
+            "HUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYzXEVudW1z6gIhR29vZ2xlOjpBZHM6",
+            "Okdvb2dsZUFkczo6VjM6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -250,6 +250,10 @@ namespace Google.Ads.GoogleAds.V3.Enums {
         /// The ad is a Shopping Comparison Listing ad.
         /// </summary>
         [pbr::OriginalName("SHOPPING_COMPARISON_LISTING_AD")] ShoppingComparisonListingAd = 24,
+        /// <summary>
+        /// Video responsive ad.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_RESPONSIVE_AD")] VideoResponsiveAd = 30,
       }
 
     }

@@ -1360,7 +1360,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     private static readonly pb::FieldCodec<double?> _single_hotelAverageLeadValueMicros_codec = pb::FieldCodec.ForStructWrapper<double>(602);
     private double? hotelAverageLeadValueMicros_;
     /// <summary>
-    /// Average lead value of hotel.
+    /// Average lead value based on clicks.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? HotelAverageLeadValueMicros {

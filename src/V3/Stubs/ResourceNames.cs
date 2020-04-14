@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -7591,6 +7591,98 @@ namespace Google.Ads.GoogleAds.V3.Services
 
         /// <inheritdoc />
         public static bool operator !=(MutateJobName a, MutateJobName b) => !(a == b);
+    }
+
+    /// <summary>
+    /// Resource name for the 'offline_user_data_job' resource.
+    /// </summary>
+    public sealed partial class OfflineUserDataJobName : gax::IResourceName, sys::IEquatable<OfflineUserDataJobName>
+    {
+        private static readonly gax::PathTemplate s_template = new gax::PathTemplate("customers/{customer}/offlineUserDataJobs/{offline_user_data_job}");
+
+        /// <summary>
+        /// Parses the given offline_user_data_job resource name in string form into a new
+        /// <see cref="OfflineUserDataJobName"/> instance.
+        /// </summary>
+        /// <param name="offlineUserDataJobName">The offline_user_data_job resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="OfflineUserDataJobName"/> if successful.</returns>
+        public static OfflineUserDataJobName Parse(string offlineUserDataJobName)
+        {
+            gax::GaxPreconditions.CheckNotNull(offlineUserDataJobName, nameof(offlineUserDataJobName));
+            gax::TemplatedResourceName resourceName = s_template.ParseName(offlineUserDataJobName);
+            return new OfflineUserDataJobName(resourceName[0], resourceName[1]);
+        }
+
+        /// <summary>
+        /// Tries to parse the given offline_user_data_job resource name in string form into a new
+        /// <see cref="OfflineUserDataJobName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// This method still throws <see cref="sys::ArgumentNullException"/> if <paramref name="offlineUserDataJobName"/> is null,
+        /// as this would usually indicate a programming error rather than a data error.
+        /// </remarks>
+        /// <param name="offlineUserDataJobName">The offline_user_data_job resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">When this method returns, the parsed <see cref="OfflineUserDataJobName"/>,
+        /// or <c>null</c> if parsing fails.</param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string offlineUserDataJobName, out OfflineUserDataJobName result)
+        {
+            gax::GaxPreconditions.CheckNotNull(offlineUserDataJobName, nameof(offlineUserDataJobName));
+            gax::TemplatedResourceName resourceName;
+            if (s_template.TryParseName(offlineUserDataJobName, out resourceName))
+            {
+                result = new OfflineUserDataJobName(resourceName[0], resourceName[1]);
+                return true;
+            }
+            else
+            {
+                result = null;
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Constructs a new instance of the <see cref="OfflineUserDataJobName"/> resource name class
+        /// from its component parts.
+        /// </summary>
+        /// <param name="customerId">The customer ID. Must not be <c>null</c>.</param>
+        /// <param name="offlineUserDataJobId">The offlineUserDataJob ID. Must not be <c>null</c>.</param>
+        public OfflineUserDataJobName(string customerId, string offlineUserDataJobId)
+        {
+            CustomerId = gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId));
+            OfflineUserDataJobId = gax::GaxPreconditions.CheckNotNull(offlineUserDataJobId, nameof(offlineUserDataJobId));
+        }
+
+        /// <summary>
+        /// The customer ID. Never <c>null</c>.
+        /// </summary>
+        public string CustomerId { get; }
+
+        /// <summary>
+        /// The offlineUserDataJob ID. Never <c>null</c>.
+        /// </summary>
+        public string OfflineUserDataJobId { get; }
+
+        /// <inheritdoc />
+        public gax::ResourceNameKind Kind => gax::ResourceNameKind.Simple;
+
+        /// <inheritdoc />
+        public override string ToString() => s_template.Expand(CustomerId, OfflineUserDataJobId);
+
+        /// <inheritdoc />
+        public override int GetHashCode() => ToString().GetHashCode();
+
+        /// <inheritdoc />
+        public override bool Equals(object obj) => Equals(obj as OfflineUserDataJobName);
+
+        /// <inheritdoc />
+        public bool Equals(OfflineUserDataJobName other) => ToString() == other?.ToString();
+
+        /// <inheritdoc />
+        public static bool operator ==(OfflineUserDataJobName a, OfflineUserDataJobName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+
+        /// <inheritdoc />
+        public static bool operator !=(OfflineUserDataJobName a, OfflineUserDataJobName b) => !(a == b);
     }
 
     /// <summary>

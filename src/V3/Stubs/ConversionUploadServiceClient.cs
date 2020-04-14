@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -385,7 +385,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// If true, successful operations will be carried out and invalid
+        /// Required. If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, all operations will be carried
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
@@ -425,7 +425,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// If true, successful operations will be carried out and invalid
+        /// Required. If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, all operations will be carried
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
@@ -462,7 +462,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// If true, successful operations will be carried out and invalid
+        /// Required. If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, all operations will be carried
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
@@ -633,7 +633,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// If true, successful operations will be carried out and invalid
+        /// Required. If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, all operations will be carried
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
@@ -673,7 +673,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// If true, successful operations will be carried out and invalid
+        /// Required. If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, all operations will be carried
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.
@@ -710,7 +710,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// If true, successful operations will be carried out and invalid
+        /// Required. If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, all operations will be carried
         /// out in one transaction if and only if they are all valid.
         /// This should always be set to true.

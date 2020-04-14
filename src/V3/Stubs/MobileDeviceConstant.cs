@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b3IucHJvdG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9w",
             "cm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9u",
             "cy5wcm90byKABAoUTW9iaWxlRGV2aWNlQ29uc3RhbnQSTAoNcmVzb3VyY2Vf",
-            "bmFtZRgBIAEoCUI14EEF+kEvCi1nb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20v",
+            "bmFtZRgBIAEoCUI14EED+kEvCi1nb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20v",
             "TW9iaWxlRGV2aWNlQ29uc3RhbnQSLAoCaWQYAiABKAsyGy5nb29nbGUucHJv",
             "dG9idWYuSW50NjRWYWx1ZUID4EEDEi8KBG5hbWUYAyABKAsyHC5nb29nbGUu",
             "cHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAxI8ChFtYW51ZmFjdHVyZXJfbmFt",
@@ -104,7 +104,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the mobile device constant.
+    /// Output only. The resource name of the mobile device constant.
     /// Mobile device constant resource names have the form:
     ///
     /// `mobileDeviceConstants/{criterion_id}`

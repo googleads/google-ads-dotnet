@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cmVzb3VyY2VzGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhln",
             "b29nbGUvYXBpL3Jlc291cmNlLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRp",
             "b25zLnByb3RvItkBChNBZEdyb3VwQXVkaWVuY2VWaWV3EksKDXJlc291cmNl",
-            "X25hbWUYASABKAlCNOBBBfpBLgosZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29t",
+            "X25hbWUYASABKAlCNOBBA/pBLgosZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29t",
             "L0FkR3JvdXBBdWRpZW5jZVZpZXc6depBcgosZ29vZ2xlYWRzLmdvb2dsZWFw",
             "aXMuY29tL0FkR3JvdXBBdWRpZW5jZVZpZXcSQmN1c3RvbWVycy97Y3VzdG9t",
             "ZXJ9L2FkR3JvdXBBdWRpZW5jZVZpZXdzL3thZF9ncm91cF9hdWRpZW5jZV92",
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the ad group audience view.
+    /// Output only. The resource name of the ad group audience view.
     /// Ad group audience view resource names have the form:
     ///
     /// `customers/{customer_id}/adGroupAudienceViews/{ad_group_id}~{criterion_id}`

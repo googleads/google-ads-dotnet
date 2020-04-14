@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cmVzb3VyY2VzGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhln",
             "b29nbGUvYXBpL3Jlc291cmNlLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRp",
             "b25zLnByb3RvIsMBChRIb3RlbFBlcmZvcm1hbmNlVmlldxJMCg1yZXNvdXJj",
-            "ZV9uYW1lGAEgASgJQjXgQQX6QS8KLWdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
+            "ZV9uYW1lGAEgASgJQjXgQQP6QS8KLWdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
             "bS9Ib3RlbFBlcmZvcm1hbmNlVmlldzpd6kFaCi1nb29nbGVhZHMuZ29vZ2xl",
             "YXBpcy5jb20vSG90ZWxQZXJmb3JtYW5jZVZpZXcSKWN1c3RvbWVycy97Y3Vz",
             "dG9tZXJ9L2hvdGVsUGVyZm9ybWFuY2VWaWV3QoYCCiVjb20uZ29vZ2xlLmFk",
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the hotel performance view.
+    /// Output only. The resource name of the hotel performance view.
     /// Hotel performance view resource names have the form:
     ///
     /// `customers/{customer_id}/hotelPerformanceView`

@@ -36,7 +36,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cHJvdG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90",
             "b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5w",
             "cm90byKtBQoSQWRHcm91cEFkQXNzZXRWaWV3EkoKDXJlc291cmNlX25hbWUY",
-            "ASABKAlCM+BBBfpBLQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3Jv",
+            "ASABKAlCM+BBA/pBLQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3Jv",
             "dXBBZEFzc2V0VmlldxJdCgthZF9ncm91cF9hZBgFIAEoCzIcLmdvb2dsZS5w",
             "cm90b2J1Zi5TdHJpbmdWYWx1ZUIq4EED+kEkCiJnb29nbGVhZHMuZ29vZ2xl",
             "YXBpcy5jb20vQWRHcm91cEFkElMKBWFzc2V0GAYgASgLMhwuZ29vZ2xlLnBy",
@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the ad group ad asset view.
+    /// Output only. The resource name of the ad group ad asset view.
     /// Ad group ad asset view resource names have the form:
     ///
     /// `customers/{customer_id}/adGroupAdAssets/{AdGroupAdAsset.ad_group_id}~{AdGroupAdAsset.ad.ad_id}~{AdGroupAdAsset.asset_id}~{AdGroupAdAsset.asset_field_type}`

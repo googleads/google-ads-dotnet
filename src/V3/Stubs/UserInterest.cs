@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Gh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBp",
             "L3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJv",
             "dG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ilAUKDFVzZXJJbnRl",
-            "cmVzdBJECg1yZXNvdXJjZV9uYW1lGAEgASgJQi3gQQX6QScKJWdvb2dsZWFk",
+            "cmVzdBJECg1yZXNvdXJjZV9uYW1lGAEgASgJQi3gQQP6QScKJWdvb2dsZWFk",
             "cy5nb29nbGVhcGlzLmNvbS9Vc2VySW50ZXJlc3QScAoNdGF4b25vbXlfdHlw",
             "ZRgCIAEoDjJULmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVudW1zLlVzZXJJ",
             "bnRlcmVzdFRheG9ub215VHlwZUVudW0uVXNlckludGVyZXN0VGF4b25vbXlU",
@@ -110,7 +110,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the user interest.
+    /// Output only. The resource name of the user interest.
     /// User interest resource names have the form:
     ///
     /// `customers/{customer_id}/userInterests/{user_interest_id}`

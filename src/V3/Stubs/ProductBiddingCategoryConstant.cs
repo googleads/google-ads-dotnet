@@ -33,7 +33,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xl",
             "L3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRp",
             "b25zLnByb3RvIs0GCh5Qcm9kdWN0QmlkZGluZ0NhdGVnb3J5Q29uc3RhbnQS",
-            "VgoNcmVzb3VyY2VfbmFtZRgBIAEoCUI/4EEF+kE5Cjdnb29nbGVhZHMuZ29v",
+            "VgoNcmVzb3VyY2VfbmFtZRgBIAEoCUI/4EED+kE5Cjdnb29nbGVhZHMuZ29v",
             "Z2xlYXBpcy5jb20vUHJvZHVjdEJpZGRpbmdDYXRlZ29yeUNvbnN0YW50EiwK",
             "AmlkGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVCA+BBAxI3",
             "Cgxjb3VudHJ5X2NvZGUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
@@ -116,7 +116,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the product bidding category.
+    /// Output only. The resource name of the product bidding category.
     /// Product bidding category resource names have the form:
     ///
     /// `productBiddingCategoryConstants/{country_code}~{level}~{id}`

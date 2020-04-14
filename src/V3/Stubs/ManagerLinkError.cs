@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V3.Errors {
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvbWFuYWdlcl9saW5r",
             "X2Vycm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMa",
-            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ilgQKFE1hbmFnZXJMaW5r",
-            "RXJyb3JFbnVtIv0DChBNYW5hZ2VyTGlua0Vycm9yEg8KC1VOU1BFQ0lGSUVE",
+            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ixQQKFE1hbmFnZXJMaW5r",
+            "RXJyb3JFbnVtIqwEChBNYW5hZ2VyTGlua0Vycm9yEg8KC1VOU1BFQ0lGSUVE",
             "EAASCwoHVU5LTk9XThABEicKI0FDQ09VTlRTX05PVF9DT01QQVRJQkxFX0ZP",
             "Ul9MSU5LSU5HEAISFQoRVE9PX01BTllfTUFOQUdFUlMQAxIUChBUT09fTUFO",
             "WV9JTlZJVEVTEAQSIwofQUxSRUFEWV9JTlZJVEVEX0JZX1RISVNfTUFOQUdF",
@@ -38,13 +38,14 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             "ChFUT09fTUFOWV9BQ0NPVU5UUxAMEiAKHFRPT19NQU5ZX0FDQ09VTlRTX0FU",
             "X01BTkFHRVIQDRIlCiFOT05fT1dORVJfVVNFUl9DQU5OT1RfTU9ESUZZX0xJ",
             "TksQDhIoCiRTVVNQRU5ERURfQUNDT1VOVF9DQU5OT1RfQUREX0NMSUVOVFMQ",
-            "DxIXChNDTElFTlRfT1VUU0lERV9UUkVFEBBC8AEKImNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52My5lcnJvcnNCFU1hbmFnZXJMaW5rRXJyb3JQcm90b1AB",
-            "WkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjMvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlYzLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYz",
-            "XEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpFcnJvcnNi",
-            "BnByb3RvMw=="));
+            "DxIXChNDTElFTlRfT1VUU0lERV9UUkVFEBASGQoVSU5WQUxJRF9TVEFUVVNf",
+            "Q0hBTkdFEBESEgoOSU5WQUxJRF9DSEFOR0UQEkLwAQoiY29tLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYzLmVycm9yc0IVTWFuYWdlckxpbmtFcnJvclByb3Rv",
+            "UAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92My9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFk",
+            "cy5Hb29nbGVBZHMuVjMuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNc",
+            "VjNcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OkVycm9y",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -235,6 +236,14 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         /// current hierarchy.
         /// </summary>
         [pbr::OriginalName("CLIENT_OUTSIDE_TREE")] ClientOutsideTree = 16,
+        /// <summary>
+        /// The changed status for mutate link is invalid.
+        /// </summary>
+        [pbr::OriginalName("INVALID_STATUS_CHANGE")] InvalidStatusChange = 17,
+        /// <summary>
+        /// The change for mutate link is invalid.
+        /// </summary>
+        [pbr::OriginalName("INVALID_CHANGE")] InvalidChange = 18,
       }
 
     }

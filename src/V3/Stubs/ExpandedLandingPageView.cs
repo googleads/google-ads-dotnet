@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVm",
             "L3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3Rv",
             "Iq0CChdFeHBhbmRlZExhbmRpbmdQYWdlVmlldxJPCg1yZXNvdXJjZV9uYW1l",
-            "GAEgASgJQjjgQQX6QTIKMGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9FeHBh",
+            "GAEgASgJQjjgQQP6QTIKMGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9FeHBh",
             "bmRlZExhbmRpbmdQYWdlVmlldxI9ChJleHBhbmRlZF9maW5hbF91cmwYAiAB",
             "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAzqBAepBfgow",
             "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0V4cGFuZGVkTGFuZGluZ1BhZ2VW",
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the expanded landing page view.
+    /// Output only. The resource name of the expanded landing page view.
     /// Expanded landing page view resource names have the form:
     ///
     /// `customers/{customer_id}/expandedLandingPageViews/{expanded_final_url_fingerprint}`

@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V3.Enums {
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lbnVtcy9hZF9ncm91cF90eXBl",
             "LnByb3RvEh1nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lbnVtcxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byKJAwoPQWRHcm91cFR5cGVFbnVtIvUC",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byKfAwoPQWRHcm91cFR5cGVFbnVtIosD",
             "CgtBZEdyb3VwVHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIT",
             "Cg9TRUFSQ0hfU1RBTkRBUkQQAhIUChBESVNQTEFZX1NUQU5EQVJEEAMSGAoU",
             "U0hPUFBJTkdfUFJPRFVDVF9BRFMQBBINCglIT1RFTF9BRFMQBhIWChJTSE9Q",
@@ -35,12 +35,13 @@ namespace Google.Ads.GoogleAds.V3.Enums {
             "U1BMQVkQChIhCh1WSURFT19OT05fU0tJUFBBQkxFX0lOX1NUUkVBTRALEhMK",
             "D1ZJREVPX09VVFNUUkVBTRAMEhYKElNFQVJDSF9EWU5BTUlDX0FEUxANEiMK",
             "H1NIT1BQSU5HX0NPTVBBUklTT05fTElTVElOR19BRFMQDhIWChJQUk9NT1RF",
-            "RF9IT1RFTF9BRFMQD0LlAQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
-            "LmVudW1zQhBBZEdyb3VwVHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3Jn",
-            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9lbnVtcztl",
-            "bnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYzLkVudW1zygId",
-            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjNcRW51bXPqAiFHb29nbGU6OkFkczo6",
-            "R29vZ2xlQWRzOjpWMzo6RW51bXNiBnByb3RvMw=="));
+            "RF9IT1RFTF9BRFMQDxIUChBWSURFT19SRVNQT05TSVZFEBBC5QEKIWNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52My5lbnVtc0IQQWRHcm91cFR5cGVQcm90",
+            "b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fk",
+            "cy9nb29nbGVhZHMvdjMvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMy5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYz",
+            "XEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OkVudW1zYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -225,6 +226,10 @@ namespace Google.Ads.GoogleAds.V3.Enums {
         /// The ad group type for Promoted Hotel ad groups.
         /// </summary>
         [pbr::OriginalName("PROMOTED_HOTEL_ADS")] PromotedHotelAds = 15,
+        /// <summary>
+        /// Video responsive ad groups.
+        /// </summary>
+        [pbr::OriginalName("VIDEO_RESPONSIVE")] VideoResponsive = 16,
       }
 
     }

@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cmNlcxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xl",
             "L2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJz",
             "LnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIvgCChBMYW5n",
-            "dWFnZUNvbnN0YW50EkgKDXJlc291cmNlX25hbWUYASABKAlCMeBBBfpBKwop",
+            "dWFnZUNvbnN0YW50EkgKDXJlc291cmNlX25hbWUYASABKAlCMeBBA/pBKwop",
             "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0xhbmd1YWdlQ29uc3RhbnQSLAoC",
             "aWQYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUID4EEDEi8K",
             "BGNvZGUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BB",
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the language constant.
+    /// Output only. The resource name of the language constant.
     /// Language constant resource names have the form:
     ///
     /// `languageConstants/{criterion_id}`

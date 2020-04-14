@@ -34,7 +34,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bGUvYXBpL3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBl",
             "cnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8imgYKGkFk",
             "R3JvdXBDcml0ZXJpb25TaW11bGF0aW9uElIKDXJlc291cmNlX25hbWUYASAB",
-            "KAlCO+BBBfpBNQozZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3JvdXBD",
+            "KAlCO+BBA/pBNQozZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3JvdXBD",
             "cml0ZXJpb25TaW11bGF0aW9uEjUKC2FkX2dyb3VwX2lkGAIgASgLMhsuZ29v",
             "Z2xlLnByb3RvYnVmLkludDY0VmFsdWVCA+BBAxI2Cgxjcml0ZXJpb25faWQY",
             "AyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUID4EEDElMKBHR5",
@@ -126,7 +126,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the ad group criterion simulation.
+    /// Output only. The resource name of the ad group criterion simulation.
     /// Ad group criterion simulation resource names have the form:
     ///
     /// `customers/{customer_id}/adGroupCriterionSimulations/{ad_group_id}~{criterion_id}~{type}~{modification_method}~{start_date}~{end_date}`

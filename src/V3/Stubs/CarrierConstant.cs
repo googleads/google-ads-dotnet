@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Y2VzGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUv",
             "YXBpL3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMu",
             "cHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ixgIKD0NhcnJp",
-            "ZXJDb25zdGFudBJHCg1yZXNvdXJjZV9uYW1lGAEgASgJQjDgQQX6QSoKKGdv",
+            "ZXJDb25zdGFudBJHCg1yZXNvdXJjZV9uYW1lGAEgASgJQjDgQQP6QSoKKGdv",
             "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DYXJyaWVyQ29uc3RhbnQSLAoCaWQY",
             "AiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUID4EEDEi8KBG5h",
             "bWUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAxI3",
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the carrier criterion.
+    /// Output only. The resource name of the carrier criterion.
     /// Carrier criterion resource names have the form:
     ///
     /// `carrierConstants/{criterion_id}`

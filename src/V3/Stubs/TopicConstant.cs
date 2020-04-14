@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2Fw",
             "aS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnBy",
             "b3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIvACCg1Ub3BpY0Nv",
-            "bnN0YW50EkUKDXJlc291cmNlX25hbWUYASABKAlCLuBBBfpBKAomZ29vZ2xl",
+            "bnN0YW50EkUKDXJlc291cmNlX25hbWUYASABKAlCLuBBA/pBKAomZ29vZ2xl",
             "YWRzLmdvb2dsZWFwaXMuY29tL1RvcGljQ29uc3RhbnQSLAoCaWQYAiABKAsy",
             "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUID4EEDEmsKFXRvcGljX2Nv",
             "bnN0YW50X3BhcmVudBgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the topic constant.
+    /// Output only. The resource name of the topic constant.
     /// topic constant resource names have the form:
     ///
     /// `topicConstants/{topic_id}`

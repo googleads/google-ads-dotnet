@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxoeZ29v",
             "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90",
             "YXRpb25zLnByb3RvIq0EChFHZW9UYXJnZXRDb25zdGFudBJJCg1yZXNvdXJj",
-            "ZV9uYW1lGAEgASgJQjLgQQX6QSwKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
+            "ZV9uYW1lGAEgASgJQjLgQQP6QSwKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
             "bS9HZW9UYXJnZXRDb25zdGFudBIsCgJpZBgDIAEoCzIbLmdvb2dsZS5wcm90",
             "b2J1Zi5JbnQ2NFZhbHVlQgPgQQMSLwoEbmFtZRgEIAEoCzIcLmdvb2dsZS5w",
             "cm90b2J1Zi5TdHJpbmdWYWx1ZUID4EEDEjcKDGNvdW50cnlfY29kZRgFIAEo",
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the geo target constant.
+    /// Output only. The resource name of the geo target constant.
     /// Geo target constant resource names have the form:
     ///
     /// `geoTargetConstants/{geo_target_constant_id}`

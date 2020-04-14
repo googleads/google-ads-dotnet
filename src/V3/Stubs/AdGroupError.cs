@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V3.Errors {
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvYWRfZ3JvdXBfZXJy",
             "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycxocZ29v",
-            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKgBAoQQWRHcm91cEVycm9yRW51",
-            "bSKLBAoMQWRHcm91cEVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
+            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLZBAoQQWRHcm91cEVycm9yRW51",
+            "bSLEBAoMQWRHcm91cEVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
             "ThABEhoKFkRVUExJQ0FURV9BREdST1VQX05BTUUQAhIYChRJTlZBTElEX0FE",
             "R1JPVVBfTkFNRRADEiUKIUFEVkVSVElTRVJfTk9UX09OX0NPTlRFTlRfTkVU",
             "V09SSxAFEg8KC0JJRF9UT09fQklHEAYSKgomQklEX1RZUEVfQU5EX0JJRERJ",
@@ -38,13 +38,14 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             "Tk9UX1ZBTElEX0ZPUl9BRFZFUlRJU0lOR19DSEFOTkVMX1RZUEUQDBI5CjVB",
             "REdST1VQX1RZUEVfTk9UX1NVUFBPUlRFRF9GT1JfQ0FNUEFJR05fU0FMRVNf",
             "Q09VTlRSWRANEkIKPkNBTk5PVF9BRERfQURHUk9VUF9PRl9UWVBFX0RTQV9U",
-            "T19DQU1QQUlHTl9XSVRIT1VUX0RTQV9TRVRUSU5HEA5C7AEKImNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnNCEUFkR3JvdXBFcnJvclByb3Rv",
-            "UAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
-            "L2dvb2dsZWFkcy92My9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjMuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNc",
-            "VjNcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OkVycm9y",
-            "c2IGcHJvdG8z"));
+            "T19DQU1QQUlHTl9XSVRIT1VUX0RTQV9TRVRUSU5HEA4SNwozUFJPTU9URURf",
+            "SE9URUxfQURfR1JPVVBTX05PVF9BVkFJTEFCTEVfRk9SX0NVU1RPTUVSEA9C",
+            "7AEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnNCEUFkR3Jv",
+            "dXBFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
+            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9lcnJvcnM7ZXJyb3JzogIDR0FB",
+            "qgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMuRXJyb3JzygIeR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjNcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
+            "czo6VjM6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -224,6 +225,10 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         /// campaigns that have DynamicSearchAdsSetting attached.
         /// </summary>
         [pbr::OriginalName("CANNOT_ADD_ADGROUP_OF_TYPE_DSA_TO_CAMPAIGN_WITHOUT_DSA_SETTING")] CannotAddAdgroupOfTypeDsaToCampaignWithoutDsaSetting = 14,
+        /// <summary>
+        /// Promoted hotels ad groups are only available to whitelisted customers.
+        /// </summary>
+        [pbr::OriginalName("PROMOTED_HOTEL_AD_GROUPS_NOT_AVAILABLE_FOR_CUSTOMER")] PromotedHotelAdGroupsNotAvailableForCustomer = 15,
       }
 
     }

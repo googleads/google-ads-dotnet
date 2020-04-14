@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Y2VzGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUv",
             "YXBpL3Jlc291cmNlLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnBy",
             "b3RvIr8BCg5BZFNjaGVkdWxlVmlldxJGCg1yZXNvdXJjZV9uYW1lGAEgASgJ",
-            "Qi/gQQX6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BZFNjaGVkdWxl",
+            "Qi/gQQP6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BZFNjaGVkdWxl",
             "Vmlldzpl6kFiCidnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQWRTY2hlZHVs",
             "ZVZpZXcSN2N1c3RvbWVycy97Y3VzdG9tZXJ9L2FkU2NoZWR1bGVWaWV3cy97",
             "YWRfc2NoZWR1bGVfdmlld31CgAIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
@@ -91,7 +91,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the ad schedule view.
+    /// Output only. The resource name of the ad schedule view.
     /// AdSchedule view resource names have the form:
     ///
     /// `customers/{customer_id}/adScheduleViews/{campaign_id}~{criterion_id}`

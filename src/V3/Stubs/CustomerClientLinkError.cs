@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V3.Errors {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvY3VzdG9tZXJfY2xp",
             "ZW50X2xpbmtfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
-            "LmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLtAgobQ3Vz",
-            "dG9tZXJDbGllbnRMaW5rRXJyb3JFbnVtIs0CChdDdXN0b21lckNsaWVudExp",
+            "LmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKPAwobQ3Vz",
+            "dG9tZXJDbGllbnRMaW5rRXJyb3JFbnVtIu8CChdDdXN0b21lckNsaWVudExp",
             "bmtFcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIqCiZDTElF",
             "TlRfQUxSRUFEWV9JTlZJVEVEX0JZX1RISVNfTUFOQUdFUhACEicKI0NMSUVO",
             "VF9BTFJFQURZX01BTkFHRURfSU5fSElFUkFSQ0hZEAMSGwoXQ1lDTElDX0xJ",
@@ -35,12 +35,13 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             "T1VOVFMQBRIjCh9DTElFTlRfSEFTX1RPT19NQU5ZX0lOVklUQVRJT05TEAYS",
             "KgomQ0FOTk9UX0hJREVfT1JfVU5ISURFX01BTkFHRVJfQUNDT1VOVFMQBxIt",
             "CilDVVNUT01FUl9IQVNfVE9PX01BTllfQUNDT1VOVFNfQVRfTUFOQUdFUhAI",
-            "QvcBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzQhxDdXN0",
-            "b21lckNsaWVudExpbmtFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3Jn",
-            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9lcnJvcnM7",
-            "ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMuRXJyb3Jz",
-            "ygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjNcRXJyb3Jz6gIiR29vZ2xlOjpB",
-            "ZHM6Okdvb2dsZUFkczo6VjM6OkVycm9yc2IGcHJvdG8z"));
+            "EiAKHENMSUVOVF9IQVNfVE9PX01BTllfTUFOQUdFUlMQCUL3AQoiY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9yc0IcQ3VzdG9tZXJDbGllbnRM",
+            "aW5rRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
+            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjMvZXJyb3JzO2Vycm9yc6ICA0dB",
+            "QaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYzLkVycm9yc8oCHkdvb2dsZVxB",
+            "ZHNcR29vZ2xlQWRzXFYzXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVB",
+            "ZHM6OlYzOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -197,6 +198,10 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         /// Parent manager account has the maximum number of linked accounts.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_HAS_TOO_MANY_ACCOUNTS_AT_MANAGER")] CustomerHasTooManyAccountsAtManager = 8,
+        /// <summary>
+        /// Client has too many managers.
+        /// </summary>
+        [pbr::OriginalName("CLIENT_HAS_TOO_MANY_MANAGERS")] ClientHasTooManyManagers = 9,
       }
 
     }

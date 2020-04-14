@@ -184,7 +184,7 @@ namespace Google.Ads.GoogleAds.V3.Enums {
         /// <summary>
         /// Pay per guest stay value. This mode is only supported by campaigns with
         /// AdvertisingChannelType.HOTEL, BiddingStrategyType.COMMISSION, and
-        /// BudgetType.HOTEL_ADS_COMMISSION.
+        /// BudgetType.STANDARD.
         /// </summary>
         [pbr::OriginalName("GUEST_STAY")] GuestStay = 7,
       }

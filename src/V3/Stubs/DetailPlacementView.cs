@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9i",
             "dWYvd3JhcHBlcnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJv",
             "dG8iogQKE0RldGFpbFBsYWNlbWVudFZpZXcSSwoNcmVzb3VyY2VfbmFtZRgB",
-            "IAEoCUI04EEF+kEuCixnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vRGV0YWls",
+            "IAEoCUI04EED+kEuCixnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vRGV0YWls",
             "UGxhY2VtZW50VmlldxI0CglwbGFjZW1lbnQYAiABKAsyHC5nb29nbGUucHJv",
             "dG9idWYuU3RyaW5nVmFsdWVCA+BBAxI3CgxkaXNwbGF5X25hbWUYAyABKAsy",
             "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAxJFChpncm91cF9w",
@@ -105,7 +105,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the detail placement view.
+    /// Output only. The resource name of the detail placement view.
     /// Detail placement view resource names have the form:
     ///
     /// `customers/{customer_id}/detailPlacementViews/{ad_group_id}~{base64_placement}`

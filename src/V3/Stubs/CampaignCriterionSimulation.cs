@@ -34,7 +34,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bGUvYXBpL3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBl",
             "cnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iqAYKG0Nh",
             "bXBhaWduQ3JpdGVyaW9uU2ltdWxhdGlvbhJTCg1yZXNvdXJjZV9uYW1lGAEg",
-            "ASgJQjzgQQX6QTYKNGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DYW1wYWln",
+            "ASgJQjzgQQP6QTYKNGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DYW1wYWln",
             "bkNyaXRlcmlvblNpbXVsYXRpb24SNQoLY2FtcGFpZ25faWQYAiABKAsyGy5n",
             "b29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUID4EEDEjYKDGNyaXRlcmlvbl9p",
             "ZBgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQgPgQQMSUwoE",
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the campaign criterion simulation.
+    /// Output only. The resource name of the campaign criterion simulation.
     /// Campaign criterion simulation resource names have the form:
     ///
     /// `customers/{customer_id}/campaignCriterionSimulations/{campaign_id}~{criterion_id}~{type}~{modification_method}~{start_date}~{end_date}`

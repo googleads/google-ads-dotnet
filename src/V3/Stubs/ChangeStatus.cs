@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "YXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNl",
             "LnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aHGdvb2ds",
             "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8irAsKDENoYW5nZVN0YXR1cxJECg1y",
-            "ZXNvdXJjZV9uYW1lGAEgASgJQi3gQQX6QScKJWdvb2dsZWFkcy5nb29nbGVh",
+            "ZXNvdXJjZV9uYW1lGAEgASgJQi3gQQP6QScKJWdvb2dsZWFkcy5nb29nbGVh",
             "cGlzLmNvbS9DaGFuZ2VTdGF0dXMSQAoVbGFzdF9jaGFuZ2VfZGF0ZV90aW1l",
             "GAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQgPgQQMScAoN",
             "cmVzb3VyY2VfdHlwZRgEIAEoDjJULmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
@@ -134,7 +134,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the change status.
+    /// Output only. The resource name of the change status.
     /// Change status resource names have the form:
     ///
     /// `customers/{customer_id}/changeStatus/{change_status_id}`

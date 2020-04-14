@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "aG9sZGVyX3R5cGUucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3Iu",
             "cHJvdG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aHGdvb2dsZS9hcGkv",
             "YW5ub3RhdGlvbnMucHJvdG8iuwIKE0ZlZWRQbGFjZWhvbGRlclZpZXcSSwoN",
-            "cmVzb3VyY2VfbmFtZRgBIAEoCUI04EEF+kEuCixnb29nbGVhZHMuZ29vZ2xl",
+            "cmVzb3VyY2VfbmFtZRgBIAEoCUI04EED+kEuCixnb29nbGVhZHMuZ29vZ2xl",
             "YXBpcy5jb20vRmVlZFBsYWNlaG9sZGVyVmlldxJhChBwbGFjZWhvbGRlcl90",
             "eXBlGAIgASgOMkIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZW51bXMuUGxh",
             "Y2Vob2xkZXJUeXBlRW51bS5QbGFjZWhvbGRlclR5cGVCA+BBAzp06kFxCixn",
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the feed placeholder view.
+    /// Output only. The resource name of the feed placeholder view.
     /// Feed placeholder view resource names have the form:
     ///
     /// `customers/{customer_id}/feedPlaceholderViews/{placeholder_type}`

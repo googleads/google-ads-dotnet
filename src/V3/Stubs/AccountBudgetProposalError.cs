@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V3.Errors {
           string.Concat(
             "CkJnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvYWNjb3VudF9idWRn",
             "ZXRfcHJvcG9zYWxfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYzLmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLUBgoe",
-            "QWNjb3VudEJ1ZGdldFByb3Bvc2FsRXJyb3JFbnVtIrEGChpBY2NvdW50QnVk",
+            "LnYzLmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLyBgoe",
+            "QWNjb3VudEJ1ZGdldFByb3Bvc2FsRXJyb3JFbnVtIs8GChpBY2NvdW50QnVk",
             "Z2V0UHJvcG9zYWxFcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04Q",
             "ARIaChZGSUVMRF9NQVNLX05PVF9BTExPV0VEEAISEwoPSU1NVVRBQkxFX0ZJ",
             "RUxEEAMSGgoWUkVRVUlSRURfRklFTERfTUlTU0lORxAEEiMKH0NBTk5PVF9D",
@@ -45,13 +45,14 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             "VF9OT1RfQUxMT1dFRBASEhMKD1VQREFURV9JU19OT19PUBATEiMKH0VORF9U",
             "SU1FX01VU1RfRk9MTE9XX1NUQVJUX1RJTUUQFBI1CjFCVURHRVRfREFURV9S",
             "QU5HRV9JTkNPTVBBVElCTEVfV0lUSF9CSUxMSU5HX1NFVFVQEBUSEgoOTk9U",
-            "X0FVVEhPUklaRUQQFhIZChVJTlZBTElEX0JJTExJTkdfU0VUVVAQF0L6AQoi",
-            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9yc0IfQWNjb3VudEJ1",
-            "ZGdldFByb3Bvc2FsRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjMvZXJyb3JzO2Vy",
-            "cm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYzLkVycm9yc8oC",
-            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYzXEVycm9yc+oCIkdvb2dsZTo6QWRz",
-            "OjpHb29nbGVBZHM6OlYzOjpFcnJvcnNiBnByb3RvMw=="));
+            "X0FVVEhPUklaRUQQFhIZChVJTlZBTElEX0JJTExJTkdfU0VUVVAQFxIcChhP",
+            "VkVSTEFQU19FWElTVElOR19CVURHRVQQGEL6AQoiY29tLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYzLmVycm9yc0IfQWNjb3VudEJ1ZGdldFByb3Bvc2FsRXJy",
+            "b3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
+            "cGlzL2Fkcy9nb29nbGVhZHMvdjMvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYzLkVycm9yc8oCHkdvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYzXEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYz",
+            "OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -272,6 +273,11 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         /// Mutates are not allowed for the given billing setup.
         /// </summary>
         [pbr::OriginalName("INVALID_BILLING_SETUP")] InvalidBillingSetup = 23,
+        /// <summary>
+        /// Budget creation failed as it overlaps with an pending budget proposal
+        /// or an approved budget.
+        /// </summary>
+        [pbr::OriginalName("OVERLAPS_EXISTING_BUDGET")] OverlapsExistingBudget = 24,
       }
 
     }

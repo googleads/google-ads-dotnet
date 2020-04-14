@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2ds",
             "ZS9hcGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVy",
             "cy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKNBAoJQ2xp",
-            "Y2tWaWV3EkEKDXJlc291cmNlX25hbWUYASABKAlCKuBBBfpBJAoiZ29vZ2xl",
+            "Y2tWaWV3EkEKDXJlc291cmNlX25hbWUYASABKAlCKuBBA/pBJAoiZ29vZ2xl",
             "YWRzLmdvb2dsZWFwaXMuY29tL0NsaWNrVmlldxIwCgVnY2xpZBgCIAEoCzIc",
             "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUID4EEDEkwKEGFyZWFfb2Zf",
             "aW50ZXJlc3QYAyABKAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5jb21t",
@@ -109,7 +109,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the click view.
+    /// Output only. The resource name of the click view.
     /// Click view resource names have the form:
     ///
     /// `customers/{customer_id}/clickViews/{date (yyyy-MM-dd)}~{gclid}`

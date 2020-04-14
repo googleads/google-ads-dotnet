@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "aGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGh5nb29n",
             "bGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3Rh",
             "dGlvbnMucHJvdG8ivgMKDlNlYXJjaFRlcm1WaWV3EkYKDXJlc291cmNlX25h",
-            "bWUYASABKAlCL+BBBfpBKQonZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL1Nl",
+            "bWUYASABKAlCL+BBA/pBKQonZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL1Nl",
             "YXJjaFRlcm1WaWV3EjYKC3NlYXJjaF90ZXJtGAIgASgLMhwuZ29vZ2xlLnBy",
             "b3RvYnVmLlN0cmluZ1ZhbHVlQgPgQQMSWAoIYWRfZ3JvdXAYAyABKAsyHC5n",
             "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCKOBBA/pBIgogZ29vZ2xlYWRz",
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the search term view.
+    /// Output only. The resource name of the search term view.
     /// Search term view resource names have the form:
     ///
     /// `customers/{customer_id}/searchTermViews/{campaign_id}~{ad_group_id}~{URL-base64_search_term}`

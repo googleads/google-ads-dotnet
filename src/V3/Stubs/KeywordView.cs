@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "aWV3LnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFkcy52My5yZXNvdXJjZXMa",
             "H2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkv",
             "cmVzb3VyY2UucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i",
-            "rwEKC0tleXdvcmRWaWV3EkMKDXJlc291cmNlX25hbWUYASABKAlCLOBBBfpB",
+            "rwEKC0tleXdvcmRWaWV3EkMKDXJlc291cmNlX25hbWUYASABKAlCLOBBA/pB",
             "JgokZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0tleXdvcmRWaWV3OlvqQVgK",
             "JGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9LZXl3b3JkVmlldxIwY3VzdG9t",
             "ZXJzL3tjdXN0b21lcn0va2V5d29yZFZpZXdzL3trZXl3b3JkX3ZpZXd9Qv0B",
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the keyword view.
+    /// Output only. The resource name of the keyword view.
     /// Keyword view resource names have the form:
     ///
     /// `customers/{customer_id}/keywordViews/{ad_group_id}~{criterion_id}`

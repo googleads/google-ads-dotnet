@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V3.Errors {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvY2FtcGFpZ25fYnVk",
             "Z2V0X2Vycm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJv",
-            "cnMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i4AUKF0NhbXBhaWdu",
-            "QnVkZ2V0RXJyb3JFbnVtIsQFChNDYW1wYWlnbkJ1ZGdldEVycm9yEg8KC1VO",
+            "cnMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8inwYKF0NhbXBhaWdu",
+            "QnVkZ2V0RXJyb3JFbnVtIoMGChNDYW1wYWlnbkJ1ZGdldEVycm9yEg8KC1VO",
             "U1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEiQKIENBTVBBSUdOX0JVREdFVF9D",
             "QU5OT1RfQkVfU0hBUkVEEBESGwoXQ0FNUEFJR05fQlVER0VUX1JFTU9WRUQQ",
             "AhIaChZDQU1QQUlHTl9CVURHRVRfSU5fVVNFEAMSKAokQ0FNUEFJR05fQlVE",
@@ -43,12 +43,14 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             "TkVZX0FNT1VOVF9MRVNTX1RIQU5fQ1VSUkVOQ1lfTUlOSU1VTV9DUEMQDRIa",
             "ChZNT05FWV9BTU9VTlRfVE9PX0xBUkdFEA4SGQoVTkVHQVRJVkVfTU9ORVlf",
             "QU1PVU5UEA8SKQolTk9OX01VTFRJUExFX09GX01JTklNVU1fQ1VSUkVOQ1lf",
-            "VU5JVBAQQvMBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3Jz",
-            "QhhDYW1wYWlnbkJ1ZGdldEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5v",
-            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YzL2Vycm9y",
-            "cztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMy5FcnJv",
-            "cnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWM1xFcnJvcnPqAiJHb29nbGU6",
-            "OkFkczo6R29vZ2xlQWRzOjpWMzo6RXJyb3JzYgZwcm90bzM="));
+            "VU5JVBAQEj0KOVRPVEFMX0JVREdFVF9BTU9VTlRfTVVTVF9CRV9VTlNFVF9G",
+            "T1JfQlVER0VUX1BFUklPRF9EQUlMWRASQvMBCiJjb20uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjMuZXJyb3JzQhhDYW1wYWlnbkJ1ZGdldEVycm9yUHJvdG9Q",
+            "AVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YzL2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMy5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "M1xFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6RXJyb3Jz",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -242,6 +244,10 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         /// A money amount was not a multiple of a minimum unit.
         /// </summary>
         [pbr::OriginalName("NON_MULTIPLE_OF_MINIMUM_CURRENCY_UNIT")] NonMultipleOfMinimumCurrencyUnit = 16,
+        /// <summary>
+        /// Total budget amount must be unset when BudgetPeriod is DAILY.
+        /// </summary>
+        [pbr::OriginalName("TOTAL_BUDGET_AMOUNT_MUST_BE_UNSET_FOR_BUDGET_PERIOD_DAILY")] TotalBudgetAmountMustBeUnsetForBudgetPeriodDaily = 18,
       }
 
     }

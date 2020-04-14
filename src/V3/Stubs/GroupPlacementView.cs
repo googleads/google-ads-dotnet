@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1",
             "Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90",
             "byLWAwoSR3JvdXBQbGFjZW1lbnRWaWV3EkoKDXJlc291cmNlX25hbWUYASAB",
-            "KAlCM+BBBfpBLQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0dyb3VwUGxh",
+            "KAlCM+BBA/pBLQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0dyb3VwUGxh",
             "Y2VtZW50VmlldxI0CglwbGFjZW1lbnQYAiABKAsyHC5nb29nbGUucHJvdG9i",
             "dWYuU3RyaW5nVmFsdWVCA+BBAxI3CgxkaXNwbGF5X25hbWUYAyABKAsyHC5n",
             "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAxI1Cgp0YXJnZXRfdXJs",
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the group placement view.
+    /// Output only. The resource name of the group placement view.
     /// Group placement view resource names have the form:
     ///
     /// `customers/{customer_id}/groupPlacementViews/{ad_group_id}~{base64_placement}`

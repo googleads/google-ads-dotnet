@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZXQucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdv",
             "b2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFw",
             "cGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLMAgoM",
-            "RGlzdGFuY2VWaWV3EkQKDXJlc291cmNlX25hbWUYASABKAlCLeBBBfpBJwol",
+            "RGlzdGFuY2VWaWV3EkQKDXJlc291cmNlX25hbWUYASABKAlCLeBBA/pBJwol",
             "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Rpc3RhbmNlVmlldxJeCg9kaXN0",
             "YW5jZV9idWNrZXQYAiABKA4yQC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5l",
             "bnVtcy5EaXN0YW5jZUJ1Y2tldEVudW0uRGlzdGFuY2VCdWNrZXRCA+BBAxI2",
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the distance view.
+    /// Output only. The resource name of the distance view.
     /// Distance view resource names have the form:
     ///
     /// `customers/{customer_id}/distanceViews/1~{distance_bucket}`

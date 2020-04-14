@@ -445,7 +445,6 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
   /// <summary>
   /// A geo target.
-  /// Next ID: 3
   /// </summary>
   public sealed partial class KeywordPlanGeoTarget : pb::IMessage<KeywordPlanGeoTarget> {
     private static readonly pb::MessageParser<KeywordPlanGeoTarget> _parser = new pb::MessageParser<KeywordPlanGeoTarget>(() => new KeywordPlanGeoTarget());

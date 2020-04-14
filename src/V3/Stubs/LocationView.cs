@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dmlldy5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMucmVzb3VyY2Vz",
             "Gh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBp",
             "L3Jlc291cmNlLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3Rv",
-            "IrQBCgxMb2NhdGlvblZpZXcSRAoNcmVzb3VyY2VfbmFtZRgBIAEoCUIt4EEF",
+            "IrQBCgxMb2NhdGlvblZpZXcSRAoNcmVzb3VyY2VfbmFtZRgBIAEoCUIt4EED",
             "+kEnCiVnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vTG9jYXRpb25WaWV3Ol7q",
             "QVsKJWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Mb2NhdGlvblZpZXcSMmN1",
             "c3RvbWVycy97Y3VzdG9tZXJ9L2xvY2F0aW9uVmlld3Mve2xvY2F0aW9uX3Zp",
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the location view.
+    /// Output only. The resource name of the location view.
     /// Location view resource names have the form:
     ///
     /// `customers/{customer_id}/locationViews/{campaign_id}~{criterion_id}`

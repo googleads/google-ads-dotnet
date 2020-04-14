@@ -26,17 +26,22 @@ namespace Google.Ads.GoogleAds.V3.Enums {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92My9lbnVtcy9jb252ZXJzaW9uX2Fj",
             "dGlvbl9jYXRlZ29yeS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
-            "ZW51bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ipwEKHENvbnZl",
-            "cnNpb25BY3Rpb25DYXRlZ29yeUVudW0ihgEKGENvbnZlcnNpb25BY3Rpb25D",
+            "ZW51bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8irQMKHENvbnZl",
+            "cnNpb25BY3Rpb25DYXRlZ29yeUVudW0ijAMKGENvbnZlcnNpb25BY3Rpb25D",
             "YXRlZ29yeRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARILCgdERUZB",
             "VUxUEAISDQoJUEFHRV9WSUVXEAMSDAoIUFVSQ0hBU0UQBBIKCgZTSUdOVVAQ",
-            "BRIICgRMRUFEEAYSDAoIRE9XTkxPQUQQB0LyAQohY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYzLmVudW1zQh1Db252ZXJzaW9uQWN0aW9uQ2F0ZWdvcnlQ",
-            "cm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
-            "L2Fkcy9nb29nbGVhZHMvdjMvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUu",
-            "QWRzLkdvb2dsZUFkcy5WMy5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRz",
-            "XFYzXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OkVudW1z",
-            "YgZwcm90bzM="));
+            "BRIICgRMRUFEEAYSDAoIRE9XTkxPQUQQBxIPCgtBRERfVE9fQ0FSVBAIEhIK",
+            "DkJFR0lOX0NIRUNLT1VUEAkSEgoOU1VCU0NSSUJFX1BBSUQQChITCg9QSE9O",
+            "RV9DQUxMX0xFQUQQCxIRCg1JTVBPUlRFRF9MRUFEEAwSFAoQU1VCTUlUX0xF",
+            "QURfRk9STRANEhQKEEJPT0tfQVBQT0lOVE1FTlQQDhIRCg1SRVFVRVNUX1FV",
+            "T1RFEA8SEgoOR0VUX0RJUkVDVElPTlMQEBISCg5PVVRCT1VORF9DTElDSxAR",
+            "EgsKB0NPTlRBQ1QQEhIOCgpFTkdBR0VNRU5UEBMSDwoLU1RPUkVfVklTSVQQ",
+            "FBIOCgpTVE9SRV9TQUxFEBVC8gEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52My5lbnVtc0IdQ29udmVyc2lvbkFjdGlvbkNhdGVnb3J5UHJvdG9QAVpC",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YzL2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29n",
+            "bGVBZHMuVjMuRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xWM1xFbnVt",
+            "c+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -190,6 +195,65 @@ namespace Google.Ads.GoogleAds.V3.Enums {
         /// Software download action (as for an app).
         /// </summary>
         [pbr::OriginalName("DOWNLOAD")] Download = 7,
+        /// <summary>
+        /// The addition of items to a shopping cart or bag on an advertiser site.
+        /// </summary>
+        [pbr::OriginalName("ADD_TO_CART")] AddToCart = 8,
+        /// <summary>
+        /// When someone enters the checkout flow on an advertiser site.
+        /// </summary>
+        [pbr::OriginalName("BEGIN_CHECKOUT")] BeginCheckout = 9,
+        /// <summary>
+        /// The start of a paid subscription for a product or service.
+        /// </summary>
+        [pbr::OriginalName("SUBSCRIBE_PAID")] SubscribePaid = 10,
+        /// <summary>
+        /// A call to indicate interest in an advertiser's offering.
+        /// </summary>
+        [pbr::OriginalName("PHONE_CALL_LEAD")] PhoneCallLead = 11,
+        /// <summary>
+        /// A lead conversion imported from an external source into Google Ads.
+        /// </summary>
+        [pbr::OriginalName("IMPORTED_LEAD")] ImportedLead = 12,
+        /// <summary>
+        /// A submission of a form on an advertiser site indicating business
+        /// interest.
+        /// </summary>
+        [pbr::OriginalName("SUBMIT_LEAD_FORM")] SubmitLeadForm = 13,
+        /// <summary>
+        /// A booking of an appointment with an advertiser's business.
+        /// </summary>
+        [pbr::OriginalName("BOOK_APPOINTMENT")] BookAppointment = 14,
+        /// <summary>
+        /// A quote or price estimate request.
+        /// </summary>
+        [pbr::OriginalName("REQUEST_QUOTE")] RequestQuote = 15,
+        /// <summary>
+        /// A search for an advertiser's business location with intention to visit.
+        /// </summary>
+        [pbr::OriginalName("GET_DIRECTIONS")] GetDirections = 16,
+        /// <summary>
+        /// A click to an advertiser's partner's site.
+        /// </summary>
+        [pbr::OriginalName("OUTBOUND_CLICK")] OutboundClick = 17,
+        /// <summary>
+        /// A call, SMS, email, chat or other type of contact to an advertiser.
+        /// </summary>
+        [pbr::OriginalName("CONTACT")] Contact = 18,
+        /// <summary>
+        /// A website engagement event such as long site time or a Google Analytics
+        /// (GA) Smart Goal. Intended to be used for GA, Firebase, GA Gold goal
+        /// imports.
+        /// </summary>
+        [pbr::OriginalName("ENGAGEMENT")] Engagement = 19,
+        /// <summary>
+        /// A visit to a physical store location.
+        /// </summary>
+        [pbr::OriginalName("STORE_VISIT")] StoreVisit = 20,
+        /// <summary>
+        /// A sale occurring in a physical store.
+        /// </summary>
+        [pbr::OriginalName("STORE_SALE")] StoreSale = 21,
       }
 
     }

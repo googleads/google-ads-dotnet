@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVm",
             "L3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3Rv",
             "IuACCg5HZW9ncmFwaGljVmlldxJGCg1yZXNvdXJjZV9uYW1lGAEgASgJQi/g",
-            "QQX6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9HZW9ncmFwaGljVmll",
+            "QQP6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9HZW9ncmFwaGljVmll",
             "dxJgCg1sb2NhdGlvbl90eXBlGAMgASgOMkQuZ29vZ2xlLmFkcy5nb29nbGVh",
             "ZHMudjMuZW51bXMuR2VvVGFyZ2V0aW5nVHlwZUVudW0uR2VvVGFyZ2V0aW5n",
             "VHlwZUID4EEDEj4KFGNvdW50cnlfY3JpdGVyaW9uX2lkGAQgASgLMhsuZ29v",
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the geographic view.
+    /// Output only. The resource name of the geographic view.
     /// Geographic view resource names have the form:
     ///
     /// `customers/{customer_id}/geographicViews/{country_criterion_id}~{location_type}`

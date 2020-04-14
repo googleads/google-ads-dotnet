@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bGUvYXBpL3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBl",
             "cnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i2gQKHk9w",
             "ZXJhdGluZ1N5c3RlbVZlcnNpb25Db25zdGFudBJWCg1yZXNvdXJjZV9uYW1l",
-            "GAEgASgJQj/gQQX6QTkKN2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9PcGVy",
+            "GAEgASgJQj/gQQP6QTkKN2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9PcGVy",
             "YXRpbmdTeXN0ZW1WZXJzaW9uQ29uc3RhbnQSLAoCaWQYAiABKAsyGy5nb29n",
             "bGUucHJvdG9idWYuSW50NjRWYWx1ZUID4EEDEi8KBG5hbWUYAyABKAsyHC5n",
             "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAxI6ChBvc19tYWpvcl92",
@@ -109,7 +109,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the operating system version constant.
+    /// Output only. The resource name of the operating system version constant.
     /// Operating system version constant resource names have the form:
     ///
     /// `operatingSystemVersionConstants/{criterion_id}`

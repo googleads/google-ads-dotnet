@@ -28,8 +28,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "YWNjb3VudC5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMucmVzb3Vy",
             "Y2VzGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUv",
             "YXBpL3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMu",
-            "cHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i+AMKD1BheW1l",
-            "bnRzQWNjb3VudBJHCg1yZXNvdXJjZV9uYW1lGAEgASgJQjDgQQX6QSoKKGdv",
+            "cHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ivAQKD1BheW1l",
+            "bnRzQWNjb3VudBJHCg1yZXNvdXJjZV9uYW1lGAEgASgJQjDgQQP6QSoKKGdv",
             "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9QYXltZW50c0FjY291bnQSPgoTcGF5",
             "bWVudHNfYWNjb3VudF9pZBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
             "bmdWYWx1ZUID4EEDEi8KBG5hbWUYAyABKAsyHC5nb29nbGUucHJvdG9idWYu",
@@ -37,19 +37,21 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQgPgQQMSPgoTcGF5bWVudHNfcHJv",
             "ZmlsZV9pZBgFIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUID",
             "4EEDEkgKHXNlY29uZGFyeV9wYXltZW50c19wcm9maWxlX2lkGAYgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQgPgQQM6Z+pBZAooZ29vZ2xl",
-            "YWRzLmdvb2dsZWFwaXMuY29tL1BheW1lbnRzQWNjb3VudBI4Y3VzdG9tZXJz",
-            "L3tjdXN0b21lcn0vcGF5bWVudHNBY2NvdW50cy97cGF5bWVudHNfYWNjb3Vu",
-            "dH1CgQIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5yZXNvdXJjZXNC",
-            "FFBheW1lbnRzQWNjb3VudFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dl",
-            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9yZXNvdXJjZXM7",
-            "cmVzb3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMuUmVz",
-            "b3VyY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjNcUmVzb3VyY2Vz6gIl",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQgPgQQMSQgoXcGF5aW5nX21h",
+            "bmFnZXJfY3VzdG9tZXIYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWVCA+BBAzpn6kFkCihnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vUGF5",
+            "bWVudHNBY2NvdW50EjhjdXN0b21lcnMve2N1c3RvbWVyfS9wYXltZW50c0Fj",
+            "Y291bnRzL3twYXltZW50c19hY2NvdW50fUKBAgolY29tLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYzLnJlc291cmNlc0IUUGF5bWVudHNBY2NvdW50UHJvdG9Q",
+            "AVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YzL3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMy5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWM1xSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.PaymentsAccount), global::Google.Ads.GoogleAds.V3.Resources.PaymentsAccount.Parser, new[]{ "ResourceName", "PaymentsAccountId", "Name", "CurrencyCode", "PaymentsProfileId", "SecondaryPaymentsProfileId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.PaymentsAccount), global::Google.Ads.GoogleAds.V3.Resources.PaymentsAccount.Parser, new[]{ "ResourceName", "PaymentsAccountId", "Name", "CurrencyCode", "PaymentsProfileId", "SecondaryPaymentsProfileId", "PayingManagerCustomer" }, null, null, null)
           }));
     }
     #endregion
@@ -90,6 +92,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       CurrencyCode = other.CurrencyCode;
       PaymentsProfileId = other.PaymentsProfileId;
       SecondaryPaymentsProfileId = other.SecondaryPaymentsProfileId;
+      PayingManagerCustomer = other.PayingManagerCustomer;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -102,7 +105,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the payments account.
+    /// Output only. The resource name of the payments account.
     /// PaymentsAccount resource names have the form:
     ///
     /// `customers/{customer_id}/paymentsAccounts/{payments_account_id}`
@@ -199,6 +202,22 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     }
 
 
+    /// <summary>Field number for the "paying_manager_customer" field.</summary>
+    public const int PayingManagerCustomerFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _single_payingManagerCustomer_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string payingManagerCustomer_;
+    /// <summary>
+    /// Output only. Paying manager of this payment account.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PayingManagerCustomer {
+      get { return payingManagerCustomer_; }
+      set {
+        payingManagerCustomer_ = value;
+      }
+    }
+
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as PaymentsAccount);
@@ -218,6 +237,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (CurrencyCode != other.CurrencyCode) return false;
       if (PaymentsProfileId != other.PaymentsProfileId) return false;
       if (SecondaryPaymentsProfileId != other.SecondaryPaymentsProfileId) return false;
+      if (PayingManagerCustomer != other.PayingManagerCustomer) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -230,6 +250,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (currencyCode_ != null) hash ^= CurrencyCode.GetHashCode();
       if (paymentsProfileId_ != null) hash ^= PaymentsProfileId.GetHashCode();
       if (secondaryPaymentsProfileId_ != null) hash ^= SecondaryPaymentsProfileId.GetHashCode();
+      if (payingManagerCustomer_ != null) hash ^= PayingManagerCustomer.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -262,6 +283,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (secondaryPaymentsProfileId_ != null) {
         _single_secondaryPaymentsProfileId_codec.WriteTagAndValue(output, SecondaryPaymentsProfileId);
       }
+      if (payingManagerCustomer_ != null) {
+        _single_payingManagerCustomer_codec.WriteTagAndValue(output, PayingManagerCustomer);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -287,6 +311,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       }
       if (secondaryPaymentsProfileId_ != null) {
         size += _single_secondaryPaymentsProfileId_codec.CalculateSizeWithTag(SecondaryPaymentsProfileId);
+      }
+      if (payingManagerCustomer_ != null) {
+        size += _single_payingManagerCustomer_codec.CalculateSizeWithTag(PayingManagerCustomer);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -325,6 +352,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (other.secondaryPaymentsProfileId_ != null) {
         if (secondaryPaymentsProfileId_ == null || other.SecondaryPaymentsProfileId != "") {
           SecondaryPaymentsProfileId = other.SecondaryPaymentsProfileId;
+        }
+      }
+      if (other.payingManagerCustomer_ != null) {
+        if (payingManagerCustomer_ == null || other.PayingManagerCustomer != "") {
+          PayingManagerCustomer = other.PayingManagerCustomer;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -374,6 +406,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             string value = _single_secondaryPaymentsProfileId_codec.Read(input);
             if (secondaryPaymentsProfileId_ == null || value != "") {
               SecondaryPaymentsProfileId = value;
+            }
+            break;
+          }
+          case 58: {
+            string value = _single_payingManagerCustomer_codec.Read(input);
+            if (payingManagerCustomer_ == null || value != "") {
+              PayingManagerCustomer = value;
             }
             break;
           }

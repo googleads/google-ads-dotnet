@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dXJjZXMaH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2ds",
             "ZS9hcGkvcmVzb3VyY2UucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMu",
             "cHJvdG8iyQEKEFByb2R1Y3RHcm91cFZpZXcSSAoNcmVzb3VyY2VfbmFtZRgB",
-            "IAEoCUIx4EEF+kErCilnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vUHJvZHVj",
+            "IAEoCUIx4EED+kErCilnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vUHJvZHVj",
             "dEdyb3VwVmlldzpr6kFoCilnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vUHJv",
             "ZHVjdEdyb3VwVmlldxI7Y3VzdG9tZXJzL3tjdXN0b21lcn0vcHJvZHVjdEdy",
             "b3VwVmlld3Mve3Byb2R1Y3RfZ3JvdXBfdmlld31CggIKJWNvbS5nb29nbGUu",
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the product group view.
+    /// Output only. The resource name of the product group view.
     /// Product group view resource names have the form:
     ///
     /// `customers/{customer_id}/productGroupViews/{ad_group_id}~{criterion_id}`

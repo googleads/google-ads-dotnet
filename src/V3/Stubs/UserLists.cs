@@ -799,7 +799,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
   }
 
   /// <summary>
-  /// An atomic rule fragment.
+  /// An atomic rule item.
   /// </summary>
   public sealed partial class UserListRuleItemInfo : pb::IMessage<UserListRuleItemInfo> {
     private static readonly pb::MessageParser<UserListRuleItemInfo> _parser = new pb::MessageParser<UserListRuleItemInfo>(() => new UserListRuleItemInfo());
@@ -873,7 +873,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>Field number for the "number_rule_item" field.</summary>
     public const int NumberRuleItemFieldNumber = 2;
     /// <summary>
-    /// An atomic rule fragment composed of a number operation.
+    /// An atomic rule item composed of a number operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Common.UserListNumberRuleItemInfo NumberRuleItem {
@@ -887,7 +887,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>Field number for the "string_rule_item" field.</summary>
     public const int StringRuleItemFieldNumber = 3;
     /// <summary>
-    /// An atomic rule fragment composed of a string operation.
+    /// An atomic rule item composed of a string operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Common.UserListStringRuleItemInfo StringRuleItem {
@@ -901,7 +901,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>Field number for the "date_rule_item" field.</summary>
     public const int DateRuleItemFieldNumber = 4;
     /// <summary>
-    /// An atomic rule fragment composed of a date operation.
+    /// An atomic rule item composed of a date operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Common.UserListDateRuleItemInfo DateRuleItem {
@@ -1098,7 +1098,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
   }
 
   /// <summary>
-  /// A rule item composed of date operation.
+  /// A rule item composed of a date operation.
   /// </summary>
   public sealed partial class UserListDateRuleItemInfo : pb::IMessage<UserListDateRuleItemInfo> {
     private static readonly pb::MessageParser<UserListDateRuleItemInfo> _parser = new pb::MessageParser<UserListDateRuleItemInfo>(() => new UserListDateRuleItemInfo());
@@ -1313,7 +1313,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
   }
 
   /// <summary>
-  /// A rule item composed of number operation.
+  /// A rule item composed of a number operation.
   /// </summary>
   public sealed partial class UserListNumberRuleItemInfo : pb::IMessage<UserListNumberRuleItemInfo> {
     private static readonly pb::MessageParser<UserListNumberRuleItemInfo> _parser = new pb::MessageParser<UserListNumberRuleItemInfo>(() => new UserListNumberRuleItemInfo());
@@ -1489,7 +1489,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
   }
 
   /// <summary>
-  /// A rule item fragment composed of date operation.
+  /// A rule item composed of a string operation.
   /// </summary>
   public sealed partial class UserListStringRuleItemInfo : pb::IMessage<UserListStringRuleItemInfo> {
     private static readonly pb::MessageParser<UserListStringRuleItemInfo> _parser = new pb::MessageParser<UserListStringRuleItemInfo>(() => new UserListStringRuleItemInfo());

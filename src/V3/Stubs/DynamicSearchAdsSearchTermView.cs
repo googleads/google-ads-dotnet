@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xl",
             "L3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRp",
             "b25zLnByb3RvIqgFCh5EeW5hbWljU2VhcmNoQWRzU2VhcmNoVGVybVZpZXcS",
-            "VgoNcmVzb3VyY2VfbmFtZRgBIAEoCUI/4EEF+kE5Cjdnb29nbGVhZHMuZ29v",
+            "VgoNcmVzb3VyY2VfbmFtZRgBIAEoCUI/4EED+kE5Cjdnb29nbGVhZHMuZ29v",
             "Z2xlYXBpcy5jb20vRHluYW1pY1NlYXJjaEFkc1NlYXJjaFRlcm1WaWV3EjYK",
             "C3NlYXJjaF90ZXJtGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
             "bHVlQgPgQQMSMwoIaGVhZGxpbmUYAyABKAsyHC5nb29nbGUucHJvdG9idWYu",
@@ -109,7 +109,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the dynamic search ads search term view.
+    /// Output only. The resource name of the dynamic search ads search term view.
     /// Dynamic search ads search term view resource names have the form:
     ///
     /// `customers/{customer_id}/dynamicSearchAdsSearchTermViews/{ad_group_id}~{search_term_fp}~{headline_fp}~{landing_page_fp}~{page_url_fp}`

@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9i",
             "dWYvd3JhcHBlcnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJv",
             "dG8iwQIKGU1vYmlsZUFwcENhdGVnb3J5Q29uc3RhbnQSUQoNcmVzb3VyY2Vf",
-            "bmFtZRgBIAEoCUI64EEF+kE0CjJnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20v",
+            "bmFtZRgBIAEoCUI64EED+kE0CjJnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20v",
             "TW9iaWxlQXBwQ2F0ZWdvcnlDb25zdGFudBIsCgJpZBgCIAEoCzIbLmdvb2ds",
             "ZS5wcm90b2J1Zi5JbnQzMlZhbHVlQgPgQQMSLwoEbmFtZRgDIAEoCzIcLmdv",
             "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUID4EEDOnLqQW8KMmdvb2dsZWFk",
@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the mobile app category constant.
+    /// Output only. The resource name of the mobile app category constant.
     /// Mobile app category constant resource names have the form:
     ///
     /// `mobileAppCategoryConstants/{mobile_app_category_id}`
