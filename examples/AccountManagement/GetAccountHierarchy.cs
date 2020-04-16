@@ -23,29 +23,38 @@ using Google.Api.Gax;
 namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
-    /// This example gets the account hierarchy of the specified manager account. If you don't specify
-    /// manager customer ID, the example will instead print the hierarchies of all accessible customer
-    /// accounts for your authenticated Google account.
-    /// Note that if the list of accessible customers for your authenticated Google account includes
-    /// accounts within the same hierarchy, this example will retrieve and print the overlapping
-    /// portions of the hierarchy for each accessible customer.
+    ///     This example gets the account hierarchy of the specified manager account. If you don't
+    ///     specify manager customer ID, the example will instead print the hierarchies of all
+    ///     accessible customer accounts for your authenticated Google account.
+    ///     Note that if the list of accessible customers for your authenticated Google account
+    ///     includes accounts within the same hierarchy, this example will retrieve and print
+    ///     the overlapping portions of the hierarchy for each accessible customer.
     /// </summary>
     public class GetAccountHierarchy : ExampleBase
     {
         private const int PAGE_SIZE = 1000;
 
         /// <summary>
-        /// Main method, to run this code example as a standalone application.
+        ///     Returns a description about the code example.
+        /// </summary>
+        public override string Description =>
+            "This code example gets the account hierarchy of a specified manager " +
+            "account. If you don't specify a manager customer ID, the example will " +
+            "instead print " + "the hierarchies of all accessible customer accounts " +
+            "for your authenticated Google account.";
+
+        /// <summary>
+        ///     Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
             GetAccountHierarchy codeExample = new GetAccountHierarchy();
-            
+
             Console.WriteLine(codeExample.Description);
-            
+
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-            
+
             try
             {
                 codeExample.Run(new GoogleAdsClient(), customerId);
@@ -61,45 +70,39 @@ namespace Google.Ads.GoogleAds.Examples.V3
         }
 
         /// <summary>
-        /// Returns a description about the code example.
-        /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example gets the account hierarchy of a specified manager account. " +
-                       "If you don't specify a manager customer ID, the example will instead print the hierarchies " +
-                       "of all accessible customer accounts for your authenticated Google account.";
-            }
-        }
-
-        /// <summary>
-        /// Runs the code example.
+        ///     Runs the code example.
         /// </summary>
         /// <param name="googleAdsClient">The Google Ads client instance.</param>
-        /// <param name="customerId">Optional manager account ID. If none provided, this method will instead list
-        ///             the accounts accessible from the authenticated Google Ads account.</param>
+        /// <param name="customerId">
+        ///     Optional manager account ID. If none provided, this method will
+        ///     instead list the accounts accessible from the authenticated Google Ads
+        ///     account.
+        /// </param>
         public void Run(GoogleAdsClient googleAdsClient, long? customerId = null)
         {
-            GoogleAdsServiceClient googleAdsServiceClient = googleAdsClient.GetService(Services.V3.GoogleAdsService);
-            
-            CustomerServiceClient customerServiceClient = googleAdsClient.GetService(Services.V3.CustomerService);
-            
+            GoogleAdsServiceClient googleAdsServiceClient =
+                googleAdsClient.GetService(Services.V3.GoogleAdsService);
+
+            CustomerServiceClient customerServiceClient =
+                googleAdsClient.GetService(Services.V3.CustomerService);
+
             // List of Customer IDs to handle.
             List<long> seedCustomerIds = new List<long>();
-            
-            // If a Manager ID was provided in the customerId parameter, it will be the only ID in the list.
-            // Otherwise, we will issue a request for all customers accessible by this authenticated Google account.
-            if(customerId.HasValue)
+
+            // If a Manager ID was provided in the customerId parameter, it will be the only ID
+            // in the list. Otherwise, we will issue a request for all customers accessible by
+            // this authenticated Google account.
+            if (customerId.HasValue)
             {
                 seedCustomerIds.Add(customerId.Value);
             }
             else
             {
-                Console.WriteLine("No manager customer ID is specified. The example will print the hierarchies of " + 
-                                  "all accessible customer IDs:");
-                
-                string[] customerResourceNames =  customerServiceClient.ListAccessibleCustomers();
+                Console.WriteLine(
+                    "No manager customer ID is specified. The example will print the hierarchies " +
+                    " of all accessible customer IDs:");
+
+                string[] customerResourceNames = customerServiceClient.ListAccessibleCustomers();
 
                 foreach (string customerResourceName in customerResourceNames)
                 {
@@ -107,10 +110,12 @@ namespace Google.Ads.GoogleAds.Examples.V3
                     Console.WriteLine(customer.Id.Value);
                     seedCustomerIds.Add(customer.Id.Value);
                 }
+
                 Console.WriteLine();
             }
-            
-            // Creates a query that retrieves all child accounts of the manager specified in search calls below.
+
+            // Creates a query that retrieves all child accounts of the manager specified in
+            // search calls below.
             const string query = @"SELECT 
                                     customer_client.client_customer, 
                                     customer_client.level,
@@ -136,10 +141,10 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 while (unprocessedCustomerIds.Count > 0)
                 {
                     customerId = unprocessedCustomerIds.Dequeue();
-                    PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> response = 
+                    PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> response =
                         googleAdsServiceClient.Search(
-                            customerId.ToString(), 
-                            query, 
+                            customerId.ToString(),
+                            query,
                             pageSize: PAGE_SIZE
                         );
 
@@ -152,82 +157,75 @@ namespace Google.Ads.GoogleAds.Examples.V3
                         // The customer client that with level 0 is the specified customer.
                         if (customerClient.Level == 0)
                         {
-                            if (rootCustomerClient == null)
-                            {
-                                rootCustomerClient = customerClient;
-                            }
+                            if (rootCustomerClient == null) rootCustomerClient = customerClient;
 
                             continue;
                         }
 
-                        // For all level-1 (direct child) accounts that are a manager account, the above
-                        // query will be run against them to create a Dictionary of managers mapped to
-                        // their child accounts for printing the hierarchy afterwards.
-                        
-                        if(!customerIdsToChildAccounts.ContainsKey(customerId.Value))
-                        {
-                            customerIdsToChildAccounts.Add(customerId.Value, new List<CustomerClient>());
-                        }
+                        // For all level-1 (direct child) accounts that are a manager account,
+                        // the above query will be run against them to create a Dictionary of
+                        // managers mapped to their child accounts for printing the hierarchy
+                        // afterwards.
+                        if (!customerIdsToChildAccounts.ContainsKey(customerId.Value))
+                            customerIdsToChildAccounts.Add(customerId.Value,
+                                new List<CustomerClient>());
 
                         customerIdsToChildAccounts[customerId.Value].Add(customerClient);
-                        
+
                         if (customerClient.Manager.HasValue && customerClient.Manager.Value)
-                        {
-                            // A customer can be managed by multiple managers, so to prevent visiting the same
-                            // customer many times, we need to check if it's already in the Dictionary.
+                            // A customer can be managed by multiple managers, so to prevent
+                            // visiting the same customer many times, we need to check if it's
+                            // already in the Dictionary.
                             if (!customerIdsToChildAccounts.ContainsKey(customerClient.Id.Value) &&
                                 customerClient.Level == 1)
-                            {
                                 unprocessedCustomerIds.Enqueue(customerClient.Id.Value);
-                            }
-                        }
                     }
                 }
 
                 if (rootCustomerClient != null)
                 {
-                    Console.WriteLine("The hierarchy of customer ID {0} is printed below:", rootCustomerClient.Id);
+                    Console.WriteLine("The hierarchy of customer ID {0} is printed below:",
+                        rootCustomerClient.Id);
                     PrintAccountHierarchy(rootCustomerClient, customerIdsToChildAccounts, 0);
                     Console.WriteLine();
                 }
                 else
                 {
-                    Console.WriteLine("Customer ID {0} is likely a test account, so its customer client " +
-                                      " information cannot be retrieved.", customerId);
+                    Console.WriteLine(
+                        "Customer ID {0} is likely a test account, so its customer client " +
+                        " information cannot be retrieved.", customerId);
                 }
             }
-            
         }
 
         /// <summary>
-        /// Prints the specified account's hierarchy using recursion.
-        ///
-        /// <param name="customerClient"> the customer client whose info will be printed and
-        ///     its child accounts will be processed if it's a manager</param>
-        /// <param name="customerIdsToChildAccounts">  a Dictionary mapping customer IDs to child accounts</param>
-        /// <param name="depth"> the current integer depth we are printing from in the account hierarchy</param>
-        ///</summary>
-        private void PrintAccountHierarchy(CustomerClient customerClient, 
+        ///     Prints the specified account's hierarchy using recursion.
+        ///     <param name="customerClient">
+        ///         the customer client whose info will be printed and
+        ///         its child accounts will be processed if it's a manager
+        ///     </param>
+        ///     <param name="customerIdsToChildAccounts"> a Dictionary mapping customer IDs to
+        ///                 child accounts</param>
+        ///     <param name="depth"> the current integer depth we are printing from in the
+        ///                 account hierarchy</param>
+        /// </summary>
+        private void PrintAccountHierarchy(CustomerClient customerClient,
             Dictionary<long, List<CustomerClient>> customerIdsToChildAccounts, int depth)
         {
             if (depth == 0)
-            {
                 Console.WriteLine("Customer ID (Descriptive Name, Currency Code, Time Zone)");
-            }
 
             long customerId = customerClient.Id.Value;
             Console.Write(new string('-', depth * 2));
             Console.WriteLine("{0} ({1}, {2}, {3})",
-                customerId, customerClient.DescriptiveName, customerClient.CurrencyCode, customerClient.TimeZone);
+                customerId, customerClient.DescriptiveName, customerClient.CurrencyCode,
+                customerClient.TimeZone);
 
             // Recursively call this function for all child accounts of $customerClient.
             if (customerIdsToChildAccounts.ContainsKey(customerId))
-            {
                 foreach (CustomerClient childAccount in customerIdsToChildAccounts[customerId])
-                {
-                    this.PrintAccountHierarchy(childAccount, customerIdsToChildAccounts, depth+1);
-                }
-            }
+                    PrintAccountHierarchy(childAccount, customerIdsToChildAccounts, 
+                        depth + 1);
         }
     }
 }
