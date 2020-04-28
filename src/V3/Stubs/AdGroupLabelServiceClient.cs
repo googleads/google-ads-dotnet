@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -772,10 +772,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetAdGroupLabel = clientHelper.BuildApiCall<GetAdGroupLabelRequest, gagvr::AdGroupLabel>(
                 GrpcClient.GetAdGroupLabelAsync, GrpcClient.GetAdGroupLabel, effectiveSettings.GetAdGroupLabelSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateAdGroupLabels = clientHelper.BuildApiCall<MutateAdGroupLabelsRequest, MutateAdGroupLabelsResponse>(
                 GrpcClient.MutateAdGroupLabelsAsync, GrpcClient.MutateAdGroupLabels, effectiveSettings.MutateAdGroupLabelsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetAdGroupLabel);
             Modify_GetAdGroupLabelApiCall(ref _callGetAdGroupLabel);
             Modify_ApiCall(ref _callMutateAdGroupLabels);

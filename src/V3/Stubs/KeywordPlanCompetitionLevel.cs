@@ -38,8 +38,8 @@ namespace Google.Ads.GoogleAds.V3.Enums {
             "VjM6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum), global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum), global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel) }, null, null)
           }));
     }
     #endregion
@@ -169,15 +169,15 @@ namespace Google.Ads.GoogleAds.V3.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Low competition.
+        /// Low competition. The Competition Index range for this is [0, 33].
         /// </summary>
         [pbr::OriginalName("LOW")] Low = 2,
         /// <summary>
-        /// Medium competition.
+        /// Medium competition. The Competition Index range for this is [34, 66].
         /// </summary>
         [pbr::OriginalName("MEDIUM")] Medium = 3,
         /// <summary>
-        /// High competition.
+        /// High competition. The Competition Index range for this is [67, 100].
         /// </summary>
         [pbr::OriginalName("HIGH")] High = 4,
       }

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -733,7 +733,7 @@ namespace Google.Ads.GoogleAds.V3.Services
                 new AddOfflineUserDataJobOperationsRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
-                    EnablePartialFailure = enablePartialFailure,
+                    EnablePartialFailure = enablePartialFailure ?? throw new sys::ArgumentNullException(nameof(enablePartialFailure)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
@@ -792,7 +792,7 @@ namespace Google.Ads.GoogleAds.V3.Services
                 new AddOfflineUserDataJobOperationsRequest
                 {
                     ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
-                    EnablePartialFailure = enablePartialFailure,
+                    EnablePartialFailure = enablePartialFailure ?? throw new sys::ArgumentNullException(nameof(enablePartialFailure)),
                     Operations = { gax::GaxPreconditions.CheckNotNull(operations, nameof(operations)) },
                 },
                 callSettings);
@@ -868,7 +868,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty>> RunOfflineUserDataJobAsync(
+        public virtual stt::Task<lro::Operation<pbwkt::Empty, pbwkt::Empty>> RunOfflineUserDataJobAsync(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => RunOfflineUserDataJobAsync(
                 new RunOfflineUserDataJobRequest
@@ -892,7 +892,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty>> RunOfflineUserDataJobAsync(
+        public virtual stt::Task<lro::Operation<pbwkt::Empty, pbwkt::Empty>> RunOfflineUserDataJobAsync(
             string resourceName,
             st::CancellationToken cancellationToken) => RunOfflineUserDataJobAsync(
                 resourceName,
@@ -913,7 +913,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty> RunOfflineUserDataJob(
+        public virtual lro::Operation<pbwkt::Empty, pbwkt::Empty> RunOfflineUserDataJob(
             string resourceName,
             gaxgrpc::CallSettings callSettings = null) => RunOfflineUserDataJob(
                 new RunOfflineUserDataJobRequest
@@ -937,7 +937,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public virtual stt::Task<lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty>> RunOfflineUserDataJobAsync(
+        public virtual stt::Task<lro::Operation<pbwkt::Empty, pbwkt::Empty>> RunOfflineUserDataJobAsync(
             RunOfflineUserDataJobRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
@@ -950,9 +950,9 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <param name="operationName">The name of a previously invoked operation. Must not be <c>null</c> or empty.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A task representing the result of polling the operation.</returns>
-        public virtual stt::Task<lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty>> PollOnceRunOfflineUserDataJobAsync(
+        public virtual stt::Task<lro::Operation<pbwkt::Empty, pbwkt::Empty>> PollOnceRunOfflineUserDataJobAsync(
             string operationName,
-            gaxgrpc::CallSettings callSettings = null) => lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty>.PollOnceFromNameAsync(
+            gaxgrpc::CallSettings callSettings = null) => lro::Operation<pbwkt::Empty, pbwkt::Empty>.PollOnceFromNameAsync(
                 gax::GaxPreconditions.CheckNotNullOrEmpty(operationName, nameof(operationName)),
                 RunOfflineUserDataJobOperationsClient,
                 callSettings);
@@ -972,7 +972,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public virtual lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty> RunOfflineUserDataJob(
+        public virtual lro::Operation<pbwkt::Empty, pbwkt::Empty> RunOfflineUserDataJob(
             RunOfflineUserDataJobRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
@@ -993,9 +993,9 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <param name="operationName">The name of a previously invoked operation. Must not be <c>null</c> or empty.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The result of polling the operation.</returns>
-        public virtual lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty> PollOnceRunOfflineUserDataJob(
+        public virtual lro::Operation<pbwkt::Empty, pbwkt::Empty> PollOnceRunOfflineUserDataJob(
             string operationName,
-            gaxgrpc::CallSettings callSettings = null) => lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty>.PollOnceFromName(
+            gaxgrpc::CallSettings callSettings = null) => lro::Operation<pbwkt::Empty, pbwkt::Empty>.PollOnceFromName(
                 gax::GaxPreconditions.CheckNotNullOrEmpty(operationName, nameof(operationName)),
                 RunOfflineUserDataJobOperationsClient,
                 callSettings);
@@ -1026,16 +1026,16 @@ namespace Google.Ads.GoogleAds.V3.Services
                 grpcClient.CreateOperationsClient(), effectiveSettings.RunOfflineUserDataJobOperationsSettings);
             _callCreateOfflineUserDataJob = clientHelper.BuildApiCall<CreateOfflineUserDataJobRequest, CreateOfflineUserDataJobResponse>(
                 GrpcClient.CreateOfflineUserDataJobAsync, GrpcClient.CreateOfflineUserDataJob, effectiveSettings.CreateOfflineUserDataJobSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callGetOfflineUserDataJob = clientHelper.BuildApiCall<GetOfflineUserDataJobRequest, gagvr::OfflineUserDataJob>(
                 GrpcClient.GetOfflineUserDataJobAsync, GrpcClient.GetOfflineUserDataJob, effectiveSettings.GetOfflineUserDataJobSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callAddOfflineUserDataJobOperations = clientHelper.BuildApiCall<AddOfflineUserDataJobOperationsRequest, AddOfflineUserDataJobOperationsResponse>(
                 GrpcClient.AddOfflineUserDataJobOperationsAsync, GrpcClient.AddOfflineUserDataJobOperations, effectiveSettings.AddOfflineUserDataJobOperationsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callRunOfflineUserDataJob = clientHelper.BuildApiCall<RunOfflineUserDataJobRequest, lro::Operation>(
                 GrpcClient.RunOfflineUserDataJobAsync, GrpcClient.RunOfflineUserDataJob, effectiveSettings.RunOfflineUserDataJobSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callCreateOfflineUserDataJob);
             Modify_CreateOfflineUserDataJobApiCall(ref _callCreateOfflineUserDataJob);
             Modify_ApiCall(ref _callGetOfflineUserDataJob);
@@ -1211,12 +1211,12 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <returns>
         /// A Task containing the RPC response.
         /// </returns>
-        public override async stt::Task<lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty>> RunOfflineUserDataJobAsync(
+        public override async stt::Task<lro::Operation<pbwkt::Empty, pbwkt::Empty>> RunOfflineUserDataJobAsync(
             RunOfflineUserDataJobRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_RunOfflineUserDataJobRequest(ref request, ref callSettings);
-            return new lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty>(
+            return new lro::Operation<pbwkt::Empty, pbwkt::Empty>(
                 await _callRunOfflineUserDataJob.Async(request, callSettings).ConfigureAwait(false), RunOfflineUserDataJobOperationsClient);
         }
 
@@ -1235,12 +1235,12 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <returns>
         /// The RPC response.
         /// </returns>
-        public override lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty> RunOfflineUserDataJob(
+        public override lro::Operation<pbwkt::Empty, pbwkt::Empty> RunOfflineUserDataJob(
             RunOfflineUserDataJobRequest request,
             gaxgrpc::CallSettings callSettings = null)
         {
             Modify_RunOfflineUserDataJobRequest(ref request, ref callSettings);
-            return new lro::Operation<AddOfflineUserDataJobOperationsResponse, pbwkt::Empty>(
+            return new lro::Operation<pbwkt::Empty, pbwkt::Empty>(
                 _callRunOfflineUserDataJob.Sync(request, callSettings), RunOfflineUserDataJobOperationsClient);
         }
 

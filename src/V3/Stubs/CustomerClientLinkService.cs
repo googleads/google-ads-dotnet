@@ -66,12 +66,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.CustomerClientLinkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomerClientLinkRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomerClientLinkRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkRequest.Parser, new[]{ "CustomerId", "Operation" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomerClientLinkOperation), global::Google.Ads.GoogleAds.V3.Services.CustomerClientLinkOperation.Parser, new[]{ "UpdateMask", "Create", "Update" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomerClientLinkRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomerClientLinkRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkRequest.Parser, new[]{ "CustomerId", "Operation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomerClientLinkOperation), global::Google.Ads.GoogleAds.V3.Services.CustomerClientLinkOperation.Parser, new[]{ "UpdateMask", "Create", "Update" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkResponse.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerClientLinkResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

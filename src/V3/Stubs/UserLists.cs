@@ -123,24 +123,24 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.CustomerMatchUploadKeyTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListCombinedRuleOperatorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListCrmDataSourceTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListDateRuleItemOperatorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListLogicalRuleOperatorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListNumberRuleItemOperatorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListPrepopulationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListRuleTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListStringRuleItemOperatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.SimilarUserListInfo), global::Google.Ads.GoogleAds.V3.Common.SimilarUserListInfo.Parser, new[]{ "SeedUserList" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CrmBasedUserListInfo), global::Google.Ads.GoogleAds.V3.Common.CrmBasedUserListInfo.Parser, new[]{ "AppId", "UploadKeyType", "DataSourceType" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListRuleInfo), global::Google.Ads.GoogleAds.V3.Common.UserListRuleInfo.Parser, new[]{ "RuleType", "RuleItemGroups" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListRuleItemGroupInfo), global::Google.Ads.GoogleAds.V3.Common.UserListRuleItemGroupInfo.Parser, new[]{ "RuleItems" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListRuleItemInfo), global::Google.Ads.GoogleAds.V3.Common.UserListRuleItemInfo.Parser, new[]{ "Name", "NumberRuleItem", "StringRuleItem", "DateRuleItem" }, new[]{ "RuleItem" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListDateRuleItemInfo), global::Google.Ads.GoogleAds.V3.Common.UserListDateRuleItemInfo.Parser, new[]{ "Operator", "Value", "OffsetInDays" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListNumberRuleItemInfo), global::Google.Ads.GoogleAds.V3.Common.UserListNumberRuleItemInfo.Parser, new[]{ "Operator", "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListStringRuleItemInfo), global::Google.Ads.GoogleAds.V3.Common.UserListStringRuleItemInfo.Parser, new[]{ "Operator", "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CombinedRuleUserListInfo), global::Google.Ads.GoogleAds.V3.Common.CombinedRuleUserListInfo.Parser, new[]{ "LeftOperand", "RightOperand", "RuleOperator" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DateSpecificRuleUserListInfo), global::Google.Ads.GoogleAds.V3.Common.DateSpecificRuleUserListInfo.Parser, new[]{ "Rule", "StartDate", "EndDate" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ExpressionRuleUserListInfo), global::Google.Ads.GoogleAds.V3.Common.ExpressionRuleUserListInfo.Parser, new[]{ "Rule" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.RuleBasedUserListInfo), global::Google.Ads.GoogleAds.V3.Common.RuleBasedUserListInfo.Parser, new[]{ "PrepopulationStatus", "CombinedRuleUserList", "DateSpecificRuleUserList", "ExpressionRuleUserList" }, new[]{ "RuleBasedUserList" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LogicalUserListInfo), global::Google.Ads.GoogleAds.V3.Common.LogicalUserListInfo.Parser, new[]{ "Rules" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListLogicalRuleInfo), global::Google.Ads.GoogleAds.V3.Common.UserListLogicalRuleInfo.Parser, new[]{ "Operator", "RuleOperands" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LogicalUserListOperandInfo), global::Google.Ads.GoogleAds.V3.Common.LogicalUserListOperandInfo.Parser, new[]{ "UserList" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.BasicUserListInfo), global::Google.Ads.GoogleAds.V3.Common.BasicUserListInfo.Parser, new[]{ "Actions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListActionInfo), global::Google.Ads.GoogleAds.V3.Common.UserListActionInfo.Parser, new[]{ "ConversionAction", "RemarketingAction" }, new[]{ "UserListAction" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.SimilarUserListInfo), global::Google.Ads.GoogleAds.V3.Common.SimilarUserListInfo.Parser, new[]{ "SeedUserList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CrmBasedUserListInfo), global::Google.Ads.GoogleAds.V3.Common.CrmBasedUserListInfo.Parser, new[]{ "AppId", "UploadKeyType", "DataSourceType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListRuleInfo), global::Google.Ads.GoogleAds.V3.Common.UserListRuleInfo.Parser, new[]{ "RuleType", "RuleItemGroups" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListRuleItemGroupInfo), global::Google.Ads.GoogleAds.V3.Common.UserListRuleItemGroupInfo.Parser, new[]{ "RuleItems" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListRuleItemInfo), global::Google.Ads.GoogleAds.V3.Common.UserListRuleItemInfo.Parser, new[]{ "Name", "NumberRuleItem", "StringRuleItem", "DateRuleItem" }, new[]{ "RuleItem" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListDateRuleItemInfo), global::Google.Ads.GoogleAds.V3.Common.UserListDateRuleItemInfo.Parser, new[]{ "Operator", "Value", "OffsetInDays" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListNumberRuleItemInfo), global::Google.Ads.GoogleAds.V3.Common.UserListNumberRuleItemInfo.Parser, new[]{ "Operator", "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListStringRuleItemInfo), global::Google.Ads.GoogleAds.V3.Common.UserListStringRuleItemInfo.Parser, new[]{ "Operator", "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CombinedRuleUserListInfo), global::Google.Ads.GoogleAds.V3.Common.CombinedRuleUserListInfo.Parser, new[]{ "LeftOperand", "RightOperand", "RuleOperator" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DateSpecificRuleUserListInfo), global::Google.Ads.GoogleAds.V3.Common.DateSpecificRuleUserListInfo.Parser, new[]{ "Rule", "StartDate", "EndDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ExpressionRuleUserListInfo), global::Google.Ads.GoogleAds.V3.Common.ExpressionRuleUserListInfo.Parser, new[]{ "Rule" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.RuleBasedUserListInfo), global::Google.Ads.GoogleAds.V3.Common.RuleBasedUserListInfo.Parser, new[]{ "PrepopulationStatus", "CombinedRuleUserList", "DateSpecificRuleUserList", "ExpressionRuleUserList" }, new[]{ "RuleBasedUserList" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LogicalUserListInfo), global::Google.Ads.GoogleAds.V3.Common.LogicalUserListInfo.Parser, new[]{ "Rules" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListLogicalRuleInfo), global::Google.Ads.GoogleAds.V3.Common.UserListLogicalRuleInfo.Parser, new[]{ "Operator", "RuleOperands" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LogicalUserListOperandInfo), global::Google.Ads.GoogleAds.V3.Common.LogicalUserListOperandInfo.Parser, new[]{ "UserList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.BasicUserListInfo), global::Google.Ads.GoogleAds.V3.Common.BasicUserListInfo.Parser, new[]{ "Actions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListActionInfo), global::Google.Ads.GoogleAds.V3.Common.UserListActionInfo.Parser, new[]{ "ConversionAction", "RemarketingAction" }, new[]{ "UserListAction" }, null, null, null)
           }));
     }
     #endregion
@@ -355,7 +355,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "upload_key_type" field.</summary>
     public const int UploadKeyTypeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.CustomerMatchUploadKeyTypeEnum.Types.CustomerMatchUploadKeyType uploadKeyType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CustomerMatchUploadKeyTypeEnum.Types.CustomerMatchUploadKeyType uploadKeyType_ = global::Google.Ads.GoogleAds.V3.Enums.CustomerMatchUploadKeyTypeEnum.Types.CustomerMatchUploadKeyType.Unspecified;
     /// <summary>
     /// Matching key type of the list.
     /// Mixed data types are not allowed on the same list.
@@ -371,7 +371,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "data_source_type" field.</summary>
     public const int DataSourceTypeFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType dataSourceType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType dataSourceType_ = global::Google.Ads.GoogleAds.V3.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType.Unspecified;
     /// <summary>
     /// Data source of the list. Default value is FIRST_PARTY.
     /// Only whitelisted customers can create third-party sourced CRM lists.
@@ -407,8 +407,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (appId_ != null) hash ^= AppId.GetHashCode();
-      if (UploadKeyType != 0) hash ^= UploadKeyType.GetHashCode();
-      if (DataSourceType != 0) hash ^= DataSourceType.GetHashCode();
+      if (UploadKeyType != global::Google.Ads.GoogleAds.V3.Enums.CustomerMatchUploadKeyTypeEnum.Types.CustomerMatchUploadKeyType.Unspecified) hash ^= UploadKeyType.GetHashCode();
+      if (DataSourceType != global::Google.Ads.GoogleAds.V3.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType.Unspecified) hash ^= DataSourceType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -425,11 +425,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (appId_ != null) {
         _single_appId_codec.WriteTagAndValue(output, AppId);
       }
-      if (UploadKeyType != 0) {
+      if (UploadKeyType != global::Google.Ads.GoogleAds.V3.Enums.CustomerMatchUploadKeyTypeEnum.Types.CustomerMatchUploadKeyType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) UploadKeyType);
       }
-      if (DataSourceType != 0) {
+      if (DataSourceType != global::Google.Ads.GoogleAds.V3.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) DataSourceType);
       }
@@ -444,10 +444,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (appId_ != null) {
         size += _single_appId_codec.CalculateSizeWithTag(AppId);
       }
-      if (UploadKeyType != 0) {
+      if (UploadKeyType != global::Google.Ads.GoogleAds.V3.Enums.CustomerMatchUploadKeyTypeEnum.Types.CustomerMatchUploadKeyType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) UploadKeyType);
       }
-      if (DataSourceType != 0) {
+      if (DataSourceType != global::Google.Ads.GoogleAds.V3.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DataSourceType);
       }
       if (_unknownFields != null) {
@@ -466,10 +466,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
           AppId = other.AppId;
         }
       }
-      if (other.UploadKeyType != 0) {
+      if (other.UploadKeyType != global::Google.Ads.GoogleAds.V3.Enums.CustomerMatchUploadKeyTypeEnum.Types.CustomerMatchUploadKeyType.Unspecified) {
         UploadKeyType = other.UploadKeyType;
       }
-      if (other.DataSourceType != 0) {
+      if (other.DataSourceType != global::Google.Ads.GoogleAds.V3.Enums.UserListCrmDataSourceTypeEnum.Types.UserListCrmDataSourceType.Unspecified) {
         DataSourceType = other.DataSourceType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -545,7 +545,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "rule_type" field.</summary>
     public const int RuleTypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListRuleTypeEnum.Types.UserListRuleType ruleType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListRuleTypeEnum.Types.UserListRuleType ruleType_ = global::Google.Ads.GoogleAds.V3.Enums.UserListRuleTypeEnum.Types.UserListRuleType.Unspecified;
     /// <summary>
     /// Rule type is used to determine how to group rule items.
     ///
@@ -599,7 +599,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (RuleType != 0) hash ^= RuleType.GetHashCode();
+      if (RuleType != global::Google.Ads.GoogleAds.V3.Enums.UserListRuleTypeEnum.Types.UserListRuleType.Unspecified) hash ^= RuleType.GetHashCode();
       hash ^= ruleItemGroups_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -614,7 +614,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (RuleType != 0) {
+      if (RuleType != global::Google.Ads.GoogleAds.V3.Enums.UserListRuleTypeEnum.Types.UserListRuleType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) RuleType);
       }
@@ -627,7 +627,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (RuleType != 0) {
+      if (RuleType != global::Google.Ads.GoogleAds.V3.Enums.UserListRuleTypeEnum.Types.UserListRuleType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RuleType);
       }
       size += ruleItemGroups_.CalculateSize(_repeated_ruleItemGroups_codec);
@@ -642,7 +642,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.RuleType != 0) {
+      if (other.RuleType != global::Google.Ads.GoogleAds.V3.Enums.UserListRuleTypeEnum.Types.UserListRuleType.Unspecified) {
         RuleType = other.RuleType;
       }
       ruleItemGroups_.Add(other.ruleItemGroups_);
@@ -1138,7 +1138,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "operator" field.</summary>
     public const int OperatorFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator operator_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator operator_ = global::Google.Ads.GoogleAds.V3.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator.Unspecified;
     /// <summary>
     /// Date comparison operator.
     /// This field is required and must be populated when creating new date
@@ -1210,7 +1210,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator.Unspecified) hash ^= Operator.GetHashCode();
       if (value_ != null) hash ^= Value.GetHashCode();
       if (offsetInDays_ != null) hash ^= OffsetInDays.GetHashCode();
       if (_unknownFields != null) {
@@ -1226,7 +1226,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Operator);
       }
@@ -1244,7 +1244,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
       }
       if (value_ != null) {
@@ -1264,7 +1264,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Operator != 0) {
+      if (other.Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListDateRuleItemOperatorEnum.Types.UserListDateRuleItemOperator.Unspecified) {
         Operator = other.Operator;
       }
       if (other.value_ != null) {
@@ -1352,7 +1352,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "operator" field.</summary>
     public const int OperatorFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator operator_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator operator_ = global::Google.Ads.GoogleAds.V3.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator.Unspecified;
     /// <summary>
     /// Number comparison operator.
     /// This field is required and must be populated when creating a new number
@@ -1405,7 +1405,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator.Unspecified) hash ^= Operator.GetHashCode();
       if (value_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(Value);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1420,7 +1420,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Operator);
       }
@@ -1435,7 +1435,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
       }
       if (value_ != null) {
@@ -1452,7 +1452,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Operator != 0) {
+      if (other.Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListNumberRuleItemOperatorEnum.Types.UserListNumberRuleItemOperator.Unspecified) {
         Operator = other.Operator;
       }
       if (other.value_ != null) {
@@ -1528,7 +1528,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "operator" field.</summary>
     public const int OperatorFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator operator_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator operator_ = global::Google.Ads.GoogleAds.V3.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator.Unspecified;
     /// <summary>
     /// String comparison operator.
     /// This field is required and must be populated when creating a new string
@@ -1582,7 +1582,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator.Unspecified) hash ^= Operator.GetHashCode();
       if (value_ != null) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1597,7 +1597,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Operator);
       }
@@ -1612,7 +1612,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
       }
       if (value_ != null) {
@@ -1629,7 +1629,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Operator != 0) {
+      if (other.Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListStringRuleItemOperatorEnum.Types.UserListStringRuleItemOperator.Unspecified) {
         Operator = other.Operator;
       }
       if (other.value_ != null) {
@@ -1740,7 +1740,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "rule_operator" field.</summary>
     public const int RuleOperatorFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator ruleOperator_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator ruleOperator_ = global::Google.Ads.GoogleAds.V3.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator.Unspecified;
     /// <summary>
     /// Operator to connect the two operands.
     ///
@@ -1778,7 +1778,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       int hash = 1;
       if (leftOperand_ != null) hash ^= LeftOperand.GetHashCode();
       if (rightOperand_ != null) hash ^= RightOperand.GetHashCode();
-      if (RuleOperator != 0) hash ^= RuleOperator.GetHashCode();
+      if (RuleOperator != global::Google.Ads.GoogleAds.V3.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator.Unspecified) hash ^= RuleOperator.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1800,7 +1800,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
         output.WriteRawTag(18);
         output.WriteMessage(RightOperand);
       }
-      if (RuleOperator != 0) {
+      if (RuleOperator != global::Google.Ads.GoogleAds.V3.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) RuleOperator);
       }
@@ -1818,7 +1818,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (rightOperand_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RightOperand);
       }
-      if (RuleOperator != 0) {
+      if (RuleOperator != global::Google.Ads.GoogleAds.V3.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RuleOperator);
       }
       if (_unknownFields != null) {
@@ -1844,7 +1844,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
         }
         RightOperand.MergeFrom(other.RightOperand);
       }
-      if (other.RuleOperator != 0) {
+      if (other.RuleOperator != global::Google.Ads.GoogleAds.V3.Enums.UserListCombinedRuleOperatorEnum.Types.UserListCombinedRuleOperator.Unspecified) {
         RuleOperator = other.RuleOperator;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -2302,7 +2302,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "prepopulation_status" field.</summary>
     public const int PrepopulationStatusFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus prepopulationStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus prepopulationStatus_ = global::Google.Ads.GoogleAds.V3.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus.Unspecified;
     /// <summary>
     /// The status of pre-population. The field is default to NONE if not set which
     /// means the previous users will not be considered. If set to REQUESTED, past
@@ -2414,7 +2414,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (PrepopulationStatus != 0) hash ^= PrepopulationStatus.GetHashCode();
+      if (PrepopulationStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus.Unspecified) hash ^= PrepopulationStatus.GetHashCode();
       if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.CombinedRuleUserList) hash ^= CombinedRuleUserList.GetHashCode();
       if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.DateSpecificRuleUserList) hash ^= DateSpecificRuleUserList.GetHashCode();
       if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.ExpressionRuleUserList) hash ^= ExpressionRuleUserList.GetHashCode();
@@ -2432,7 +2432,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (PrepopulationStatus != 0) {
+      if (PrepopulationStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) PrepopulationStatus);
       }
@@ -2456,7 +2456,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (PrepopulationStatus != 0) {
+      if (PrepopulationStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PrepopulationStatus);
       }
       if (ruleBasedUserListCase_ == RuleBasedUserListOneofCase.CombinedRuleUserList) {
@@ -2479,7 +2479,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.PrepopulationStatus != 0) {
+      if (other.PrepopulationStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListPrepopulationStatusEnum.Types.UserListPrepopulationStatus.Unspecified) {
         PrepopulationStatus = other.PrepopulationStatus;
       }
       switch (other.RuleBasedUserListCase) {
@@ -2723,7 +2723,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "operator" field.</summary>
     public const int OperatorFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator operator_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator operator_ = global::Google.Ads.GoogleAds.V3.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator.Unspecified;
     /// <summary>
     /// The logical operator of the rule.
     /// </summary>
@@ -2769,7 +2769,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator.Unspecified) hash ^= Operator.GetHashCode();
       hash ^= ruleOperands_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2784,7 +2784,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Operator);
       }
@@ -2797,7 +2797,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
       }
       size += ruleOperands_.CalculateSize(_repeated_ruleOperands_codec);
@@ -2812,7 +2812,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Operator != 0) {
+      if (other.Operator != global::Google.Ads.GoogleAds.V3.Enums.UserListLogicalRuleOperatorEnum.Types.UserListLogicalRuleOperator.Unspecified) {
         Operator = other.Operator;
       }
       ruleOperands_.Add(other.ruleOperands_);

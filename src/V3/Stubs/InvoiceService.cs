@@ -51,9 +51,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Resources.InvoiceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListInvoicesRequest), global::Google.Ads.GoogleAds.V3.Services.ListInvoicesRequest.Parser, new[]{ "CustomerId", "BillingSetup", "IssueYear", "IssueMonth" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListInvoicesResponse), global::Google.Ads.GoogleAds.V3.Services.ListInvoicesResponse.Parser, new[]{ "Invoices" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListInvoicesRequest), global::Google.Ads.GoogleAds.V3.Services.ListInvoicesRequest.Parser, new[]{ "CustomerId", "BillingSetup", "IssueYear", "IssueMonth" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListInvoicesResponse), global::Google.Ads.GoogleAds.V3.Services.ListInvoicesResponse.Parser, new[]{ "Invoices" }, null, null, null, null)
           }));
     }
     #endregion
@@ -148,7 +148,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "issue_month" field.</summary>
     public const int IssueMonthFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear issueMonth_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear issueMonth_ = global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified;
     /// <summary>
     /// Required. The issue month to retrieve invoices.
     /// </summary>
@@ -186,7 +186,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
       if (BillingSetup.Length != 0) hash ^= BillingSetup.GetHashCode();
       if (IssueYear.Length != 0) hash ^= IssueYear.GetHashCode();
-      if (IssueMonth != 0) hash ^= IssueMonth.GetHashCode();
+      if (IssueMonth != global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) hash ^= IssueMonth.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -212,7 +212,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
         output.WriteRawTag(26);
         output.WriteString(IssueYear);
       }
-      if (IssueMonth != 0) {
+      if (IssueMonth != global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) IssueMonth);
       }
@@ -233,7 +233,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (IssueYear.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IssueYear);
       }
-      if (IssueMonth != 0) {
+      if (IssueMonth != global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) IssueMonth);
       }
       if (_unknownFields != null) {
@@ -256,7 +256,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (other.IssueYear.Length != 0) {
         IssueYear = other.IssueYear;
       }
-      if (other.IssueMonth != 0) {
+      if (other.IssueMonth != global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) {
         IssueMonth = other.IssueMonth;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

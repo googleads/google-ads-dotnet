@@ -68,12 +68,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.BiddingStrategyReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetBiddingStrategyRequest), global::Google.Ads.GoogleAds.V3.Services.GetBiddingStrategyRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategiesRequest), global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategiesRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.BiddingStrategyOperation), global::Google.Ads.GoogleAds.V3.Services.BiddingStrategyOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategiesResponse), global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategiesResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategyResult), global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategyResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetBiddingStrategyRequest), global::Google.Ads.GoogleAds.V3.Services.GetBiddingStrategyRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategiesRequest), global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategiesRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.BiddingStrategyOperation), global::Google.Ads.GoogleAds.V3.Services.BiddingStrategyOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategiesResponse), global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategiesResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategyResult), global::Google.Ads.GoogleAds.V3.Services.MutateBiddingStrategyResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

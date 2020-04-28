@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -1145,16 +1145,16 @@ namespace Google.Ads.GoogleAds.V3.Services
                 grpcClient.CreateOperationsClient(), effectiveSettings.PromoteCampaignDraftOperationsSettings);
             _callGetCampaignDraft = clientHelper.BuildApiCall<GetCampaignDraftRequest, gagvr::CampaignDraft>(
                 GrpcClient.GetCampaignDraftAsync, GrpcClient.GetCampaignDraft, effectiveSettings.GetCampaignDraftSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateCampaignDrafts = clientHelper.BuildApiCall<MutateCampaignDraftsRequest, MutateCampaignDraftsResponse>(
                 GrpcClient.MutateCampaignDraftsAsync, GrpcClient.MutateCampaignDrafts, effectiveSettings.MutateCampaignDraftsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callPromoteCampaignDraft = clientHelper.BuildApiCall<PromoteCampaignDraftRequest, lro::Operation>(
                 GrpcClient.PromoteCampaignDraftAsync, GrpcClient.PromoteCampaignDraft, effectiveSettings.PromoteCampaignDraftSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"campaign_draft={request.CampaignDraft}"));
+                .WithGoogleRequestParam("campaign_draft", request => request.CampaignDraft);
             _callListCampaignDraftAsyncErrors = clientHelper.BuildApiCall<ListCampaignDraftAsyncErrorsRequest, ListCampaignDraftAsyncErrorsResponse>(
                 GrpcClient.ListCampaignDraftAsyncErrorsAsync, GrpcClient.ListCampaignDraftAsyncErrors, effectiveSettings.ListCampaignDraftAsyncErrorsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetCampaignDraft);
             Modify_GetCampaignDraftApiCall(ref _callGetCampaignDraft);
             Modify_ApiCall(ref _callMutateCampaignDrafts);

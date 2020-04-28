@@ -48,9 +48,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "ZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.PaymentsAccountReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPaymentsAccountsRequest), global::Google.Ads.GoogleAds.V3.Services.ListPaymentsAccountsRequest.Parser, new[]{ "CustomerId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPaymentsAccountsResponse), global::Google.Ads.GoogleAds.V3.Services.ListPaymentsAccountsResponse.Parser, new[]{ "PaymentsAccounts" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPaymentsAccountsRequest), global::Google.Ads.GoogleAds.V3.Services.ListPaymentsAccountsRequest.Parser, new[]{ "CustomerId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPaymentsAccountsResponse), global::Google.Ads.GoogleAds.V3.Services.ListPaymentsAccountsResponse.Parser, new[]{ "PaymentsAccounts" }, null, null, null, null)
           }));
     }
     #endregion

@@ -63,8 +63,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.BiddingReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.BiddingStrategy), global::Google.Ads.GoogleAds.V3.Resources.BiddingStrategy.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "CampaignCount", "NonRemovedCampaignCount", "EnhancedCpc", "TargetCpa", "TargetImpressionShare", "TargetRoas", "TargetSpend" }, new[]{ "Scheme" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.BiddingStrategy), global::Google.Ads.GoogleAds.V3.Resources.BiddingStrategy.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "CampaignCount", "NonRemovedCampaignCount", "EnhancedCpc", "TargetCpa", "TargetImpressionShare", "TargetRoas", "TargetSpend" }, new[]{ "Scheme" }, null, null, null)
           }));
     }
     #endregion
@@ -187,7 +187,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 15;
-    private global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyStatusEnum.Types.BiddingStrategyStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyStatusEnum.Types.BiddingStrategyStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Unspecified;
     /// <summary>
     /// Output only. The status of the bidding strategy.
     ///
@@ -203,7 +203,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType type_ = global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType.Unspecified;
     /// <summary>
     /// Output only. The type of the bidding strategy.
     /// Create a bidding strategy by setting the bidding scheme.
@@ -387,8 +387,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Unspecified) hash ^= Status.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType.Unspecified) hash ^= Type.GetHashCode();
       if (campaignCount_ != null) hash ^= CampaignCount.GetHashCode();
       if (nonRemovedCampaignCount_ != null) hash ^= NonRemovedCampaignCount.GetHashCode();
       if (schemeCase_ == SchemeOneofCase.EnhancedCpc) hash ^= EnhancedCpc.GetHashCode();
@@ -420,7 +420,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Type);
       }
@@ -446,7 +446,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (nonRemovedCampaignCount_ != null) {
         _single_nonRemovedCampaignCount_codec.WriteTagAndValue(output, NonRemovedCampaignCount);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Unspecified) {
         output.WriteRawTag(120);
         output.WriteEnum((int) Status);
       }
@@ -471,10 +471,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (campaignCount_ != null) {
@@ -522,10 +522,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Name = other.Name;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Unspecified) {
         Status = other.Status;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType.Unspecified) {
         Type = other.Type;
       }
       if (other.campaignCount_ != null) {

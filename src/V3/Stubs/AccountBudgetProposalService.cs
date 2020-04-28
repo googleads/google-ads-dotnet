@@ -67,12 +67,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "b2dsZUFkczo6VjM6OlNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.AccountBudgetProposalReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAccountBudgetProposalRequest), global::Google.Ads.GoogleAds.V3.Services.GetAccountBudgetProposalRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalRequest.Parser, new[]{ "CustomerId", "Operation", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AccountBudgetProposalOperation), global::Google.Ads.GoogleAds.V3.Services.AccountBudgetProposalOperation.Parser, new[]{ "UpdateMask", "Create", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalResult), global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAccountBudgetProposalRequest), global::Google.Ads.GoogleAds.V3.Services.GetAccountBudgetProposalRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalRequest.Parser, new[]{ "CustomerId", "Operation", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AccountBudgetProposalOperation), global::Google.Ads.GoogleAds.V3.Services.AccountBudgetProposalOperation.Parser, new[]{ "UpdateMask", "Create", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalResponse.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalResult), global::Google.Ads.GoogleAds.V3.Services.MutateAccountBudgetProposalResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

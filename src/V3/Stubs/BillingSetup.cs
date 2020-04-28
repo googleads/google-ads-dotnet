@@ -66,8 +66,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "OkFkczo6R29vZ2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.BillingSetupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.TimeTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.BillingSetup), global::Google.Ads.GoogleAds.V3.Resources.BillingSetup.Parser, new[]{ "ResourceName", "Id", "Status", "PaymentsAccount", "PaymentsAccountInfo", "StartDateTime", "StartTimeType", "EndDateTime", "EndTimeType" }, new[]{ "StartTime", "EndTime" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.BillingSetup.Types.PaymentsAccountInfo), global::Google.Ads.GoogleAds.V3.Resources.BillingSetup.Types.PaymentsAccountInfo.Parser, new[]{ "PaymentsAccountId", "PaymentsAccountName", "PaymentsProfileId", "PaymentsProfileName", "SecondaryPaymentsProfileId" }, null, null, null)})
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.BillingSetup), global::Google.Ads.GoogleAds.V3.Resources.BillingSetup.Parser, new[]{ "ResourceName", "Id", "Status", "PaymentsAccount", "PaymentsAccountInfo", "StartDateTime", "StartTimeType", "EndDateTime", "EndTimeType" }, new[]{ "StartTime", "EndTime" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.BillingSetup.Types.PaymentsAccountInfo), global::Google.Ads.GoogleAds.V3.Resources.BillingSetup.Types.PaymentsAccountInfo.Parser, new[]{ "PaymentsAccountId", "PaymentsAccountName", "PaymentsProfileId", "PaymentsProfileName", "SecondaryPaymentsProfileId" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -169,7 +169,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.BillingSetupStatusEnum.Types.BillingSetupStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BillingSetupStatusEnum.Types.BillingSetupStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.BillingSetupStatusEnum.Types.BillingSetupStatus.Unspecified;
     /// <summary>
     /// Output only. The status of the billing setup.
     /// </summary>
@@ -245,7 +245,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType StartTimeType {
-      get { return startTimeCase_ == StartTimeOneofCase.StartTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) startTime_ : 0; }
+      get { return startTimeCase_ == StartTimeOneofCase.StartTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) startTime_ : global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType.Unspecified; }
       set {
         startTime_ = value;
         startTimeCase_ = StartTimeOneofCase.StartTimeType;
@@ -274,7 +274,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType EndTimeType {
-      get { return endTimeCase_ == EndTimeOneofCase.EndTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) endTime_ : 0; }
+      get { return endTimeCase_ == EndTimeOneofCase.EndTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) endTime_ : global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType.Unspecified; }
       set {
         endTime_ = value;
         endTimeCase_ = EndTimeOneofCase.EndTimeType;
@@ -351,7 +351,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BillingSetupStatusEnum.Types.BillingSetupStatus.Unspecified) hash ^= Status.GetHashCode();
       if (paymentsAccount_ != null) hash ^= PaymentsAccount.GetHashCode();
       if (paymentsAccountInfo_ != null) hash ^= PaymentsAccountInfo.GetHashCode();
       if (startTimeCase_ == StartTimeOneofCase.StartDateTime) hash ^= StartDateTime.GetHashCode();
@@ -380,7 +380,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) {
         _single_id_codec.WriteTagAndValue(output, Id);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BillingSetupStatusEnum.Types.BillingSetupStatus.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Status);
       }
@@ -419,7 +419,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) {
         size += _single_id_codec.CalculateSizeWithTag(Id);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BillingSetupStatusEnum.Types.BillingSetupStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (paymentsAccount_ != null) {
@@ -459,7 +459,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Id = other.Id;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.BillingSetupStatusEnum.Types.BillingSetupStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.paymentsAccount_ != null) {

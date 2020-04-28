@@ -74,14 +74,14 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.MerchantCenterLinkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListMerchantCenterLinksRequest), global::Google.Ads.GoogleAds.V3.Services.ListMerchantCenterLinksRequest.Parser, new[]{ "CustomerId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListMerchantCenterLinksResponse), global::Google.Ads.GoogleAds.V3.Services.ListMerchantCenterLinksResponse.Parser, new[]{ "MerchantCenterLinks" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetMerchantCenterLinkRequest), global::Google.Ads.GoogleAds.V3.Services.GetMerchantCenterLinkRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkRequest), global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkRequest.Parser, new[]{ "CustomerId", "Operation" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MerchantCenterLinkOperation), global::Google.Ads.GoogleAds.V3.Services.MerchantCenterLinkOperation.Parser, new[]{ "UpdateMask", "Update", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkResponse), global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkResult), global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListMerchantCenterLinksRequest), global::Google.Ads.GoogleAds.V3.Services.ListMerchantCenterLinksRequest.Parser, new[]{ "CustomerId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListMerchantCenterLinksResponse), global::Google.Ads.GoogleAds.V3.Services.ListMerchantCenterLinksResponse.Parser, new[]{ "MerchantCenterLinks" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetMerchantCenterLinkRequest), global::Google.Ads.GoogleAds.V3.Services.GetMerchantCenterLinkRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkRequest), global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkRequest.Parser, new[]{ "CustomerId", "Operation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MerchantCenterLinkOperation), global::Google.Ads.GoogleAds.V3.Services.MerchantCenterLinkOperation.Parser, new[]{ "UpdateMask", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkResponse), global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkResponse.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkResult), global::Google.Ads.GoogleAds.V3.Services.MutateMerchantCenterLinkResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

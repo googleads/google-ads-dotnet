@@ -124,21 +124,21 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.ExtensionsReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Resources.AdReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Resources.RecommendationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetRecommendationRequest), global::Google.Ads.GoogleAds.V3.Services.GetRecommendationRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationRequest), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Parser, new[]{ "ResourceName", "CampaignBudget", "TextAd", "Keyword", "TargetCpaOptIn", "CalloutExtension", "CallExtension", "SitelinkExtension", "MoveUnusedBudget" }, new[]{ "ApplyParameters" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters.Parser, new[]{ "NewBudgetAmountMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.TextAdParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.TextAdParameters.Parser, new[]{ "Ad" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.KeywordParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.KeywordParameters.Parser, new[]{ "AdGroup", "MatchType", "CpcBidMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters.Parser, new[]{ "TargetCpaMicros", "NewCampaignBudgetAmountMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters.Parser, new[]{ "CalloutExtensions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CallExtensionParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CallExtensionParameters.Parser, new[]{ "CallExtensions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters.Parser, new[]{ "SitelinkExtensions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters.Parser, new[]{ "BudgetMicrosToMove" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationResponse), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationResult), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationRequest), global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation), global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation.Parser, new[]{ "ResourceName" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationResponse), global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationResponse.Types.DismissRecommendationResult), global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationResponse.Types.DismissRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null)})
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetRecommendationRequest), global::Google.Ads.GoogleAds.V3.Services.GetRecommendationRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationRequest), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Parser, new[]{ "ResourceName", "CampaignBudget", "TextAd", "Keyword", "TargetCpaOptIn", "CalloutExtension", "CallExtension", "SitelinkExtension", "MoveUnusedBudget" }, new[]{ "ApplyParameters" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CampaignBudgetParameters.Parser, new[]{ "NewBudgetAmountMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.TextAdParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.TextAdParameters.Parser, new[]{ "Ad" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.KeywordParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.KeywordParameters.Parser, new[]{ "AdGroup", "MatchType", "CpcBidMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.TargetCpaOptInParameters.Parser, new[]{ "TargetCpaMicros", "NewCampaignBudgetAmountMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CalloutExtensionParameters.Parser, new[]{ "CalloutExtensions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CallExtensionParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.CallExtensionParameters.Parser, new[]{ "CallExtensions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.SitelinkExtensionParameters.Parser, new[]{ "SitelinkExtensions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationOperation.Types.MoveUnusedBudgetParameters.Parser, new[]{ "BudgetMicrosToMove" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationResponse), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationResult), global::Google.Ads.GoogleAds.V3.Services.ApplyRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationRequest), global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation), global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationRequest.Types.DismissRecommendationOperation.Parser, new[]{ "ResourceName" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationResponse), global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationResponse.Parser, new[]{ "Results", "PartialFailureError" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationResponse.Types.DismissRecommendationResult), global::Google.Ads.GoogleAds.V3.Services.DismissRecommendationResponse.Types.DismissRecommendationResult.Parser, new[]{ "ResourceName" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -1316,7 +1316,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
         /// <summary>Field number for the "match_type" field.</summary>
         public const int MatchTypeFieldNumber = 2;
-        private global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType matchType_ = 0;
+        private global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType matchType_ = global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified;
         /// <summary>
         /// The match type of the keyword. This is a required field.
         /// </summary>
@@ -1368,7 +1368,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
         public override int GetHashCode() {
           int hash = 1;
           if (adGroup_ != null) hash ^= AdGroup.GetHashCode();
-          if (MatchType != 0) hash ^= MatchType.GetHashCode();
+          if (MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) hash ^= MatchType.GetHashCode();
           if (cpcBidMicros_ != null) hash ^= CpcBidMicros.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
@@ -1386,7 +1386,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
           if (adGroup_ != null) {
             _single_adGroup_codec.WriteTagAndValue(output, AdGroup);
           }
-          if (MatchType != 0) {
+          if (MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) {
             output.WriteRawTag(16);
             output.WriteEnum((int) MatchType);
           }
@@ -1404,7 +1404,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
           if (adGroup_ != null) {
             size += _single_adGroup_codec.CalculateSizeWithTag(AdGroup);
           }
-          if (MatchType != 0) {
+          if (MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MatchType);
           }
           if (cpcBidMicros_ != null) {
@@ -1426,7 +1426,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
               AdGroup = other.AdGroup;
             }
           }
-          if (other.MatchType != 0) {
+          if (other.MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) {
             MatchType = other.MatchType;
           }
           if (other.cpcBidMicros_ != null) {

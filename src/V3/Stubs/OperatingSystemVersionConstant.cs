@@ -53,8 +53,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "QWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.OperatingSystemVersionConstant), global::Google.Ads.GoogleAds.V3.Resources.OperatingSystemVersionConstant.Parser, new[]{ "ResourceName", "Id", "Name", "OsMajorVersion", "OsMinorVersion", "OperatorType" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.OperatingSystemVersionConstant), global::Google.Ads.GoogleAds.V3.Resources.OperatingSystemVersionConstant.Parser, new[]{ "ResourceName", "Id", "Name", "OsMajorVersion", "OsMinorVersion", "OperatorType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -188,7 +188,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "operator_type" field.</summary>
     public const int OperatorTypeFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType operatorType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType operatorType_ = global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.Unspecified;
     /// <summary>
     /// Output only. Determines whether this constant represents a single version or a range of
     /// versions.
@@ -231,7 +231,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) hash ^= Name.GetHashCode();
       if (osMajorVersion_ != null) hash ^= OsMajorVersion.GetHashCode();
       if (osMinorVersion_ != null) hash ^= OsMinorVersion.GetHashCode();
-      if (OperatorType != 0) hash ^= OperatorType.GetHashCode();
+      if (OperatorType != global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.Unspecified) hash ^= OperatorType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -261,7 +261,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (osMinorVersion_ != null) {
         _single_osMinorVersion_codec.WriteTagAndValue(output, OsMinorVersion);
       }
-      if (OperatorType != 0) {
+      if (OperatorType != global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) OperatorType);
       }
@@ -288,7 +288,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (osMinorVersion_ != null) {
         size += _single_osMinorVersion_codec.CalculateSizeWithTag(OsMinorVersion);
       }
-      if (OperatorType != 0) {
+      if (OperatorType != global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) OperatorType);
       }
       if (_unknownFields != null) {
@@ -325,7 +325,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           OsMinorVersion = other.OsMinorVersion;
         }
       }
-      if (other.OperatorType != 0) {
+      if (other.OperatorType != global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.Unspecified) {
         OperatorType = other.OperatorType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

@@ -57,12 +57,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "OlYzOjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.AssetReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAssetRequest), global::Google.Ads.GoogleAds.V3.Services.GetAssetRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAssetsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAssetsRequest.Parser, new[]{ "CustomerId", "Operations" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AssetOperation), global::Google.Ads.GoogleAds.V3.Services.AssetOperation.Parser, new[]{ "Create" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAssetsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAssetsResponse.Parser, new[]{ "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAssetResult), global::Google.Ads.GoogleAds.V3.Services.MutateAssetResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAssetRequest), global::Google.Ads.GoogleAds.V3.Services.GetAssetRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAssetsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAssetsRequest.Parser, new[]{ "CustomerId", "Operations" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AssetOperation), global::Google.Ads.GoogleAds.V3.Services.AssetOperation.Parser, new[]{ "Create" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAssetsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAssetsResponse.Parser, new[]{ "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAssetResult), global::Google.Ads.GoogleAds.V3.Services.MutateAssetResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

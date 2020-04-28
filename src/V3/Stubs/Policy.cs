@@ -107,18 +107,18 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEntryTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationMismatchUrlTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyViolationKey), global::Google.Ads.GoogleAds.V3.Common.PolicyViolationKey.Parser, new[]{ "PolicyName", "ViolatingText" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyValidationParameter), global::Google.Ads.GoogleAds.V3.Common.PolicyValidationParameter.Parser, new[]{ "IgnorablePolicyTopics", "ExemptPolicyViolationKeys" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEntry), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEntry.Parser, new[]{ "Topic", "Type", "Evidences", "Constraints" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Parser, new[]{ "WebsiteList", "TextList", "LanguageCode", "DestinationTextList", "DestinationMismatch", "DestinationNotWorking" }, new[]{ "Value" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.TextList), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.TextList.Parser, new[]{ "Texts" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.WebsiteList), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.WebsiteList.Parser, new[]{ "Websites" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationTextList), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationTextList.Parser, new[]{ "DestinationTexts" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationMismatch), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationMismatch.Parser, new[]{ "UrlTypes" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationNotWorking), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationNotWorking.Parser, new[]{ "ExpandedUrl", "Device", "LastCheckedDateTime", "DnsErrorType", "HttpErrorCode" }, new[]{ "Reason" }, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Parser, new[]{ "CountryConstraintList", "ResellerConstraint", "CertificateMissingInCountryList", "CertificateDomainMismatchInCountryList" }, new[]{ "Value" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.CountryConstraintList), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.CountryConstraintList.Parser, new[]{ "TotalTargetedCountries", "Countries" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.ResellerConstraint), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.ResellerConstraint.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.CountryConstraint), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.CountryConstraint.Parser, new[]{ "CountryCriterion" }, null, null, null)})
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyViolationKey), global::Google.Ads.GoogleAds.V3.Common.PolicyViolationKey.Parser, new[]{ "PolicyName", "ViolatingText" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyValidationParameter), global::Google.Ads.GoogleAds.V3.Common.PolicyValidationParameter.Parser, new[]{ "IgnorablePolicyTopics", "ExemptPolicyViolationKeys" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEntry), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEntry.Parser, new[]{ "Topic", "Type", "Evidences", "Constraints" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Parser, new[]{ "WebsiteList", "TextList", "LanguageCode", "DestinationTextList", "DestinationMismatch", "DestinationNotWorking" }, new[]{ "Value" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.TextList), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.TextList.Parser, new[]{ "Texts" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.WebsiteList), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.WebsiteList.Parser, new[]{ "Websites" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationTextList), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationTextList.Parser, new[]{ "DestinationTexts" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationMismatch), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationMismatch.Parser, new[]{ "UrlTypes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationNotWorking), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicEvidence.Types.DestinationNotWorking.Parser, new[]{ "ExpandedUrl", "Device", "LastCheckedDateTime", "DnsErrorType", "HttpErrorCode" }, new[]{ "Reason" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Parser, new[]{ "CountryConstraintList", "ResellerConstraint", "CertificateMissingInCountryList", "CertificateDomainMismatchInCountryList" }, new[]{ "Value" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.CountryConstraintList), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.CountryConstraintList.Parser, new[]{ "TotalTargetedCountries", "Countries" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.ResellerConstraint), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.ResellerConstraint.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.CountryConstraint), global::Google.Ads.GoogleAds.V3.Common.PolicyTopicConstraint.Types.CountryConstraint.Parser, new[]{ "CountryCriterion" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -543,7 +543,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType type_ = global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType.Unspecified;
     /// <summary>
     /// Describes the negative or positive effect this policy will have on serving.
     /// </summary>
@@ -607,7 +607,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (topic_ != null) hash ^= Topic.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType.Unspecified) hash ^= Type.GetHashCode();
       hash ^= evidences_.GetHashCode();
       hash ^= constraints_.GetHashCode();
       if (_unknownFields != null) {
@@ -626,7 +626,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (topic_ != null) {
         _single_topic_codec.WriteTagAndValue(output, Topic);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Type);
       }
@@ -643,7 +643,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (topic_ != null) {
         size += _single_topic_codec.CalculateSizeWithTag(Topic);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       size += evidences_.CalculateSize(_repeated_evidences_codec);
@@ -664,7 +664,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Topic = other.Topic;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEntryTypeEnum.Types.PolicyTopicEntryType.Unspecified) {
         Type = other.Type;
       }
       evidences_.Add(other.evidences_);
@@ -1663,7 +1663,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
         /// <summary>Field number for the "device" field.</summary>
         public const int DeviceFieldNumber = 4;
-        private global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice device_ = 0;
+        private global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice device_ = global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice.Unspecified;
         /// <summary>
         /// The type of device that failed to load the URL.
         /// </summary>
@@ -1700,7 +1700,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDnsErrorType DnsErrorType {
-          get { return reasonCase_ == ReasonOneofCase.DnsErrorType ? (global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDnsErrorType) reason_ : 0; }
+          get { return reasonCase_ == ReasonOneofCase.DnsErrorType ? (global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDnsErrorType) reason_ : global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDnsErrorType.Unspecified; }
           set {
             reason_ = value;
             reasonCase_ = ReasonOneofCase.DnsErrorType;
@@ -1767,7 +1767,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
         public override int GetHashCode() {
           int hash = 1;
           if (expandedUrl_ != null) hash ^= ExpandedUrl.GetHashCode();
-          if (Device != 0) hash ^= Device.GetHashCode();
+          if (Device != global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice.Unspecified) hash ^= Device.GetHashCode();
           if (lastCheckedDateTime_ != null) hash ^= LastCheckedDateTime.GetHashCode();
           if (reasonCase_ == ReasonOneofCase.DnsErrorType) hash ^= DnsErrorType.GetHashCode();
           if (reasonCase_ == ReasonOneofCase.HttpErrorCode) hash ^= HttpErrorCode.GetHashCode();
@@ -1795,7 +1795,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           if (expandedUrl_ != null) {
             _single_expandedUrl_codec.WriteTagAndValue(output, ExpandedUrl);
           }
-          if (Device != 0) {
+          if (Device != global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice.Unspecified) {
             output.WriteRawTag(32);
             output.WriteEnum((int) Device);
           }
@@ -1813,7 +1813,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           if (expandedUrl_ != null) {
             size += _single_expandedUrl_codec.CalculateSizeWithTag(ExpandedUrl);
           }
-          if (Device != 0) {
+          if (Device != global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice.Unspecified) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Device);
           }
           if (lastCheckedDateTime_ != null) {
@@ -1841,7 +1841,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
               ExpandedUrl = other.ExpandedUrl;
             }
           }
-          if (other.Device != 0) {
+          if (other.Device != global::Google.Ads.GoogleAds.V3.Enums.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum.Types.PolicyTopicEvidenceDestinationNotWorkingDevice.Unspecified) {
             Device = other.Device;
           }
           if (other.lastCheckedDateTime_ != null) {

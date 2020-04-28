@@ -53,8 +53,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.AssetTypesReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AssetTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Asset), global::Google.Ads.GoogleAds.V3.Resources.Asset.Parser, new[]{ "ResourceName", "Id", "Name", "Type", "YoutubeVideoAsset", "MediaBundleAsset", "ImageAsset", "TextAsset" }, new[]{ "AssetData" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Asset), global::Google.Ads.GoogleAds.V3.Resources.Asset.Parser, new[]{ "ResourceName", "Id", "Name", "Type", "YoutubeVideoAsset", "MediaBundleAsset", "ImageAsset", "TextAsset" }, new[]{ "AssetData" }, null, null, null)
           }));
     }
     #endregion
@@ -168,7 +168,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types.AssetType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types.AssetType type_ = global::Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types.AssetType.Unspecified;
     /// <summary>
     /// Output only. Type of the asset.
     /// </summary>
@@ -288,7 +288,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types.AssetType.Unspecified) hash ^= Type.GetHashCode();
       if (assetDataCase_ == AssetDataOneofCase.YoutubeVideoAsset) hash ^= YoutubeVideoAsset.GetHashCode();
       if (assetDataCase_ == AssetDataOneofCase.MediaBundleAsset) hash ^= MediaBundleAsset.GetHashCode();
       if (assetDataCase_ == AssetDataOneofCase.ImageAsset) hash ^= ImageAsset.GetHashCode();
@@ -317,7 +317,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types.AssetType.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Type);
       }
@@ -354,7 +354,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types.AssetType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (assetDataCase_ == AssetDataOneofCase.YoutubeVideoAsset) {
@@ -393,7 +393,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Name = other.Name;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types.AssetType.Unspecified) {
         Type = other.Type;
       }
       switch (other.AssetDataCase) {

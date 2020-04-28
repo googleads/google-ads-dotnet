@@ -80,8 +80,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.DatesReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.InvoiceTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Invoice), global::Google.Ads.GoogleAds.V3.Resources.Invoice.Parser, new[]{ "ResourceName", "Id", "Type", "BillingSetup", "PaymentsAccountId", "PaymentsProfileId", "IssueDate", "DueDate", "ServiceDateRange", "CurrencyCode", "InvoiceLevelAdjustmentsMicros", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "CorrectedInvoice", "ReplacedInvoices", "PdfUrl", "AccountBudgetSummaries" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Invoice.Types.AccountBudgetSummary), global::Google.Ads.GoogleAds.V3.Resources.Invoice.Types.AccountBudgetSummary.Parser, new[]{ "Customer", "CustomerDescriptiveName", "AccountBudget", "AccountBudgetName", "PurchaseOrderNumber", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "BillableActivityDateRange" }, null, null, null)})
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Invoice), global::Google.Ads.GoogleAds.V3.Resources.Invoice.Parser, new[]{ "ResourceName", "Id", "Type", "BillingSetup", "PaymentsAccountId", "PaymentsProfileId", "IssueDate", "DueDate", "ServiceDateRange", "CurrencyCode", "InvoiceLevelAdjustmentsMicros", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "CorrectedInvoice", "ReplacedInvoices", "PdfUrl", "AccountBudgetSummaries" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Invoice.Types.AccountBudgetSummary), global::Google.Ads.GoogleAds.V3.Resources.Invoice.Types.AccountBudgetSummary.Parser, new[]{ "Customer", "CustomerDescriptiveName", "AccountBudget", "AccountBudgetName", "PurchaseOrderNumber", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "BillableActivityDateRange" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -180,7 +180,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.InvoiceTypeEnum.Types.InvoiceType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.InvoiceTypeEnum.Types.InvoiceType type_ = global::Google.Ads.GoogleAds.V3.Enums.InvoiceTypeEnum.Types.InvoiceType.Unspecified;
     /// <summary>
     /// Output only. The type of invoice.
     /// </summary>
@@ -491,7 +491,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.InvoiceTypeEnum.Types.InvoiceType.Unspecified) hash ^= Type.GetHashCode();
       if (billingSetup_ != null) hash ^= BillingSetup.GetHashCode();
       if (paymentsAccountId_ != null) hash ^= PaymentsAccountId.GetHashCode();
       if (paymentsProfileId_ != null) hash ^= PaymentsProfileId.GetHashCode();
@@ -527,7 +527,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) {
         _single_id_codec.WriteTagAndValue(output, Id);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.InvoiceTypeEnum.Types.InvoiceType.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Type);
       }
@@ -587,7 +587,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) {
         size += _single_id_codec.CalculateSizeWithTag(Id);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.InvoiceTypeEnum.Types.InvoiceType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (billingSetup_ != null) {
@@ -650,7 +650,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Id = other.Id;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.InvoiceTypeEnum.Types.InvoiceType.Unspecified) {
         Type = other.Type;
       }
       if (other.billingSetup_ != null) {

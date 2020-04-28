@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -772,10 +772,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetAdGroupBidModifier = clientHelper.BuildApiCall<GetAdGroupBidModifierRequest, gagvr::AdGroupBidModifier>(
                 GrpcClient.GetAdGroupBidModifierAsync, GrpcClient.GetAdGroupBidModifier, effectiveSettings.GetAdGroupBidModifierSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateAdGroupBidModifiers = clientHelper.BuildApiCall<MutateAdGroupBidModifiersRequest, MutateAdGroupBidModifiersResponse>(
                 GrpcClient.MutateAdGroupBidModifiersAsync, GrpcClient.MutateAdGroupBidModifiers, effectiveSettings.MutateAdGroupBidModifiersSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetAdGroupBidModifier);
             Modify_GetAdGroupBidModifierApiCall(ref _callGetAdGroupBidModifier);
             Modify_ApiCall(ref _callMutateAdGroupBidModifiers);

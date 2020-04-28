@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -168,6 +168,7 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operation = new AccountBudgetProposalOperation(),
+                ValidateOnly = false,
             };
             MutateAccountBudgetProposalResponse expectedResponse = new MutateAccountBudgetProposalResponse();
             mockGrpcClient.Setup(x => x.MutateAccountBudgetProposal(expectedRequest, It.IsAny<CallOptions>()))
@@ -175,7 +176,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             AccountBudgetProposalOperation operation = new AccountBudgetProposalOperation();
-            MutateAccountBudgetProposalResponse response = client.MutateAccountBudgetProposal(customerId, operation);
+            bool validateOnly = false;
+            MutateAccountBudgetProposalResponse response = client.MutateAccountBudgetProposal(customerId, operation, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -188,6 +190,7 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operation = new AccountBudgetProposalOperation(),
+                ValidateOnly = false,
             };
             MutateAccountBudgetProposalResponse expectedResponse = new MutateAccountBudgetProposalResponse();
             mockGrpcClient.Setup(x => x.MutateAccountBudgetProposalAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -195,7 +198,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             AccountBudgetProposalOperation operation = new AccountBudgetProposalOperation();
-            MutateAccountBudgetProposalResponse response = await client.MutateAccountBudgetProposalAsync(customerId, operation);
+            bool validateOnly = false;
+            MutateAccountBudgetProposalResponse response = await client.MutateAccountBudgetProposalAsync(customerId, operation, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

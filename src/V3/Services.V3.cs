@@ -863,6 +863,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v3.services#google.ads.googleads.v3.services.UserDataService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<UserDataServiceClient, UserDataServiceSettings> UserDataService =
+                new ServiceTemplate<UserDataServiceClient, UserDataServiceSettings>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v3.services#google.ads.googleads.v3.services.UserInterestService
             /// for details.
             /// </summary>
@@ -1319,6 +1327,10 @@ namespace Google.Ads.GoogleAds
 
                     case "TopicViewServiceClient":
                         return TopicViewServiceClient.Create(callInvoker, (TopicViewServiceSettings) settings);
+
+
+                    case "UserDataServiceClient":
+                        return UserDataServiceClient.Create(callInvoker, (UserDataServiceSettings) settings);
 
 
                     case "UserInterestServiceClient":

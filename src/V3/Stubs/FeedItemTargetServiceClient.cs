@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -646,10 +646,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetFeedItemTarget = clientHelper.BuildApiCall<GetFeedItemTargetRequest, gagvr::FeedItemTarget>(
                 GrpcClient.GetFeedItemTargetAsync, GrpcClient.GetFeedItemTarget, effectiveSettings.GetFeedItemTargetSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateFeedItemTargets = clientHelper.BuildApiCall<MutateFeedItemTargetsRequest, MutateFeedItemTargetsResponse>(
                 GrpcClient.MutateFeedItemTargetsAsync, GrpcClient.MutateFeedItemTargets, effectiveSettings.MutateFeedItemTargetsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetFeedItemTarget);
             Modify_GetFeedItemTargetApiCall(ref _callGetFeedItemTarget);
             Modify_ApiCall(ref _callMutateFeedItemTargets);

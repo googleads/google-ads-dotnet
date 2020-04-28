@@ -167,305 +167,309 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             "bmdfbGVuZ3RoX2Vycm9yLnByb3RvGjRnb29nbGUvYWRzL2dvb2dsZWFkcy92",
             "My9lcnJvcnMvdGltZV96b25lX2Vycm9yLnByb3RvGjRnb29nbGUvYWRzL2dv",
             "b2dsZWFkcy92My9lcnJvcnMvdXJsX2ZpZWxkX2Vycm9yLnByb3RvGjRnb29n",
-            "bGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvdXNlcl9saXN0X2Vycm9yLnBy",
-            "b3RvGkVnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMveW91dHViZV92",
-            "aWRlb19yZWdpc3RyYXRpb25fZXJyb3IucHJvdG8aHmdvb2dsZS9wcm90b2J1",
-            "Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90",
-            "byJSChBHb29nbGVBZHNGYWlsdXJlEj4KBmVycm9ycxgBIAMoCzIuLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5Hb29nbGVBZHNFcnJvciKYAgoO",
-            "R29vZ2xlQWRzRXJyb3ISPQoKZXJyb3JfY29kZRgBIAEoCzIpLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5FcnJvckNvZGUSDwoHbWVzc2FnZRgC",
-            "IAEoCRI2Cgd0cmlnZ2VyGAMgASgLMiUuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djMuY29tbW9uLlZhbHVlEj8KCGxvY2F0aW9uGAQgASgLMi0uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjMuZXJyb3JzLkVycm9yTG9jYXRpb24SPQoHZGV0YWls",
-            "cxgFIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5FcnJv",
-            "ckRldGFpbHMi7lkKCUVycm9yQ29kZRJWCg1yZXF1ZXN0X2Vycm9yGAEgASgO",
-            "Mj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlJlcXVlc3RFcnJv",
-            "ckVudW0uUmVxdWVzdEVycm9ySAASbwoWYmlkZGluZ19zdHJhdGVneV9lcnJv",
-            "chgCIAEoDjJNLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5CaWRk",
-            "aW5nU3RyYXRlZ3lFcnJvckVudW0uQmlkZGluZ1N0cmF0ZWd5RXJyb3JIABJa",
-            "Cg91cmxfZmllbGRfZXJyb3IYAyABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52My5lcnJvcnMuVXJsRmllbGRFcnJvckVudW0uVXJsRmllbGRFcnJvckgA",
-            "EmkKFGxpc3Rfb3BlcmF0aW9uX2Vycm9yGAQgASgOMkkuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjMuZXJyb3JzLkxpc3RPcGVyYXRpb25FcnJvckVudW0uTGlz",
-            "dE9wZXJhdGlvbkVycm9ySAASUAoLcXVlcnlfZXJyb3IYBSABKA4yOS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuUXVlcnlFcnJvckVudW0uUXVl",
-            "cnlFcnJvckgAElMKDG11dGF0ZV9lcnJvchgHIAEoDjI7Lmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYzLmVycm9ycy5NdXRhdGVFcnJvckVudW0uTXV0YXRlRXJy",
-            "b3JIABJdChBmaWVsZF9tYXNrX2Vycm9yGAggASgOMkEuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjMuZXJyb3JzLkZpZWxkTWFza0Vycm9yRW51bS5GaWVsZE1h",
-            "c2tFcnJvckgAEmgKE2F1dGhvcml6YXRpb25fZXJyb3IYCSABKA4ySS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQXV0aG9yaXphdGlvbkVycm9y",
-            "RW51bS5BdXRob3JpemF0aW9uRXJyb3JIABJZCg5pbnRlcm5hbF9lcnJvchgK",
-            "IAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5JbnRlcm5h",
-            "bEVycm9yRW51bS5JbnRlcm5hbEVycm9ySAASUAoLcXVvdGFfZXJyb3IYCyAB",
-            "KA4yOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuUXVvdGFFcnJv",
-            "ckVudW0uUXVvdGFFcnJvckgAEkcKCGFkX2Vycm9yGAwgASgOMjMuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkFkRXJyb3JFbnVtLkFkRXJyb3JI",
-            "ABJXCg5hZF9ncm91cF9lcnJvchgNIAEoDjI9Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYzLmVycm9ycy5BZEdyb3VwRXJyb3JFbnVtLkFkR3JvdXBFcnJvckgA",
-            "EmwKFWNhbXBhaWduX2J1ZGdldF9lcnJvchgOIAEoDjJLLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYzLmVycm9ycy5DYW1wYWlnbkJ1ZGdldEVycm9yRW51bS5D",
-            "YW1wYWlnbkJ1ZGdldEVycm9ySAASWQoOY2FtcGFpZ25fZXJyb3IYDyABKA4y",
-            "Py5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQ2FtcGFpZ25FcnJv",
-            "ckVudW0uQ2FtcGFpZ25FcnJvckgAEmsKFGF1dGhlbnRpY2F0aW9uX2Vycm9y",
-            "GBEgASgOMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkF1dGhl",
-            "bnRpY2F0aW9uRXJyb3JFbnVtLkF1dGhlbnRpY2F0aW9uRXJyb3JIABJzChhh",
-            "ZF9ncm91cF9jcml0ZXJpb25fZXJyb3IYEiABKA4yTy5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52My5lcnJvcnMuQWRHcm91cENyaXRlcmlvbkVycm9yRW51bS5B",
-            "ZEdyb3VwQ3JpdGVyaW9uRXJyb3JIABJmChNhZF9jdXN0b21pemVyX2Vycm9y",
-            "GBMgASgOMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkFkQ3Vz",
-            "dG9taXplckVycm9yRW51bS5BZEN1c3RvbWl6ZXJFcnJvckgAEl4KEWFkX2dy",
-            "b3VwX2FkX2Vycm9yGBUgASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
-            "ZXJyb3JzLkFkR3JvdXBBZEVycm9yRW51bS5BZEdyb3VwQWRFcnJvckgAEl0K",
-            "EGFkX3NoYXJpbmdfZXJyb3IYGCABKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52My5lcnJvcnMuQWRTaGFyaW5nRXJyb3JFbnVtLkFkU2hhcmluZ0Vycm9y",
-            "SAASSgoJYWR4X2Vycm9yGBkgASgOMjUuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djMuZXJyb3JzLkFkeEVycm9yRW51bS5BZHhFcnJvckgAElAKC2Fzc2V0X2Vy",
-            "cm9yGGsgASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkFz",
-            "c2V0RXJyb3JFbnVtLkFzc2V0RXJyb3JIABJWCg1iaWRkaW5nX2Vycm9yGBog",
-            "ASgOMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkJpZGRpbmdF",
-            "cnJvckVudW0uQmlkZGluZ0Vycm9ySAASdQoYY2FtcGFpZ25fY3JpdGVyaW9u",
-            "X2Vycm9yGB0gASgOMlEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3Jz",
-            "LkNhbXBhaWduQ3JpdGVyaW9uRXJyb3JFbnVtLkNhbXBhaWduQ3JpdGVyaW9u",
-            "RXJyb3JIABJsChVjb2xsZWN0aW9uX3NpemVfZXJyb3IYHyABKA4ySy5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQ29sbGVjdGlvblNpemVFcnJv",
-            "ckVudW0uQ29sbGVjdGlvblNpemVFcnJvckgAEmMKEmNvdW50cnlfY29kZV9l",
-            "cnJvchhtIAEoDjJFLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5D",
-            "b3VudHJ5Q29kZUVycm9yRW51bS5Db3VudHJ5Q29kZUVycm9ySAASXAoPY3Jp",
-            "dGVyaW9uX2Vycm9yGCAgASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
-            "ZXJyb3JzLkNyaXRlcmlvbkVycm9yRW51bS5Dcml0ZXJpb25FcnJvckgAElkK",
-            "DmN1c3RvbWVyX2Vycm9yGFogASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djMuZXJyb3JzLkN1c3RvbWVyRXJyb3JFbnVtLkN1c3RvbWVyRXJyb3JIABJN",
-            "CgpkYXRlX2Vycm9yGCEgASgOMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
-            "ZXJyb3JzLkRhdGVFcnJvckVudW0uRGF0ZUVycm9ySAASXQoQZGF0ZV9yYW5n",
-            "ZV9lcnJvchgiIAEoDjJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9y",
-            "cy5EYXRlUmFuZ2VFcnJvckVudW0uRGF0ZVJhbmdlRXJyb3JIABJZCg5kaXN0",
-            "aW5jdF9lcnJvchgjIAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVy",
-            "cm9ycy5EaXN0aW5jdEVycm9yRW51bS5EaXN0aW5jdEVycm9ySAAShQEKHmZl",
-            "ZWRfYXR0cmlidXRlX3JlZmVyZW5jZV9lcnJvchgkIAEoDjJbLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5GZWVkQXR0cmlidXRlUmVmZXJlbmNl",
-            "RXJyb3JFbnVtLkZlZWRBdHRyaWJ1dGVSZWZlcmVuY2VFcnJvckgAElkKDmZ1",
-            "bmN0aW9uX2Vycm9yGCUgASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
-            "ZXJyb3JzLkZ1bmN0aW9uRXJyb3JFbnVtLkZ1bmN0aW9uRXJyb3JIABJvChZm",
-            "dW5jdGlvbl9wYXJzaW5nX2Vycm9yGCYgASgOMk0uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjMuZXJyb3JzLkZ1bmN0aW9uUGFyc2luZ0Vycm9yRW51bS5GdW5j",
-            "dGlvblBhcnNpbmdFcnJvckgAEkcKCGlkX2Vycm9yGCcgASgOMjMuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLklkRXJyb3JFbnVtLklkRXJyb3JI",
-            "ABJQCgtpbWFnZV9lcnJvchgoIAEoDjI5Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYzLmVycm9ycy5JbWFnZUVycm9yRW51bS5JbWFnZUVycm9ySAASZgoTbGFu",
-            "Z3VhZ2VfY29kZV9lcnJvchhuIAEoDjJHLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYzLmVycm9ycy5MYW5ndWFnZUNvZGVFcnJvckVudW0uTGFuZ3VhZ2VDb2Rl",
-            "RXJyb3JIABJjChJtZWRpYV9idW5kbGVfZXJyb3IYKiABKA4yRS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52My5lcnJvcnMuTWVkaWFCdW5kbGVFcnJvckVudW0u",
-            "TWVkaWFCdW5kbGVFcnJvckgAEmMKEm1lZGlhX3VwbG9hZF9lcnJvchh0IAEo",
-            "DjJFLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5NZWRpYVVwbG9h",
-            "ZEVycm9yRW51bS5NZWRpYVVwbG9hZEVycm9ySAASXQoQbWVkaWFfZmlsZV9l",
-            "cnJvchhWIAEoDjJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5N",
-            "ZWRpYUZpbGVFcnJvckVudW0uTWVkaWFGaWxlRXJyb3JIABJfChBtdWx0aXBs",
-            "aWVyX2Vycm9yGCwgASgOMkMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJy",
-            "b3JzLk11bHRpcGxpZXJFcnJvckVudW0uTXVsdGlwbGllckVycm9ySAASfAob",
-            "bmV3X3Jlc291cmNlX2NyZWF0aW9uX2Vycm9yGC0gASgOMlUuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjMuZXJyb3JzLk5ld1Jlc291cmNlQ3JlYXRpb25FcnJv",
-            "ckVudW0uTmV3UmVzb3VyY2VDcmVhdGlvbkVycm9ySAASWgoPbm90X2VtcHR5",
-            "X2Vycm9yGC4gASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3Jz",
-            "Lk5vdEVtcHR5RXJyb3JFbnVtLk5vdEVtcHR5RXJyb3JIABJNCgpudWxsX2Vy",
-            "cm9yGC8gASgOMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLk51",
-            "bGxFcnJvckVudW0uTnVsbEVycm9ySAASWQoOb3BlcmF0b3JfZXJyb3IYMCAB",
-            "KA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuT3BlcmF0b3JF",
-            "cnJvckVudW0uT3BlcmF0b3JFcnJvckgAElAKC3JhbmdlX2Vycm9yGDEgASgO",
-            "MjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlJhbmdlRXJyb3JF",
-            "bnVtLlJhbmdlRXJyb3JIABJrChRyZWNvbW1lbmRhdGlvbl9lcnJvchg6IAEo",
-            "DjJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5SZWNvbW1lbmRh",
-            "dGlvbkVycm9yRW51bS5SZWNvbW1lbmRhdGlvbkVycm9ySAASYAoRcmVnaW9u",
-            "X2NvZGVfZXJyb3IYMyABKA4yQy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5l",
-            "cnJvcnMuUmVnaW9uQ29kZUVycm9yRW51bS5SZWdpb25Db2RlRXJyb3JIABJW",
-            "Cg1zZXR0aW5nX2Vycm9yGDQgASgOMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djMuZXJyb3JzLlNldHRpbmdFcnJvckVudW0uU2V0dGluZ0Vycm9ySAASZgoT",
-            "c3RyaW5nX2Zvcm1hdF9lcnJvchg1IAEoDjJHLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYzLmVycm9ycy5TdHJpbmdGb3JtYXRFcnJvckVudW0uU3RyaW5nRm9y",
-            "bWF0RXJyb3JIABJmChNzdHJpbmdfbGVuZ3RoX2Vycm9yGDYgASgOMkcuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlN0cmluZ0xlbmd0aEVycm9y",
-            "RW51bS5TdHJpbmdMZW5ndGhFcnJvckgAEoIBCh1vcGVyYXRpb25fYWNjZXNz",
-            "X2RlbmllZF9lcnJvchg3IAEoDjJZLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
-            "LmVycm9ycy5PcGVyYXRpb25BY2Nlc3NEZW5pZWRFcnJvckVudW0uT3BlcmF0",
-            "aW9uQWNjZXNzRGVuaWVkRXJyb3JIABJ/ChxyZXNvdXJjZV9hY2Nlc3NfZGVu",
-            "aWVkX2Vycm9yGDggASgOMlcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJy",
-            "b3JzLlJlc291cmNlQWNjZXNzRGVuaWVkRXJyb3JFbnVtLlJlc291cmNlQWNj",
-            "ZXNzRGVuaWVkRXJyb3JIABKSAQojcmVzb3VyY2VfY291bnRfbGltaXRfZXhj",
-            "ZWVkZWRfZXJyb3IYOSABKA4yYy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5l",
-            "cnJvcnMuUmVzb3VyY2VDb3VudExpbWl0RXhjZWVkZWRFcnJvckVudW0uUmVz",
-            "b3VyY2VDb3VudExpbWl0RXhjZWVkZWRFcnJvckgAEosBCiB5b3V0dWJlX3Zp",
-            "ZGVvX3JlZ2lzdHJhdGlvbl9lcnJvchh1IAEoDjJfLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYzLmVycm9ycy5Zb3V0dWJlVmlkZW9SZWdpc3RyYXRpb25FcnJv",
-            "ckVudW0uWW91dHViZVZpZGVvUmVnaXN0cmF0aW9uRXJyb3JIABJ6ChthZF9n",
-            "cm91cF9iaWRfbW9kaWZpZXJfZXJyb3IYOyABKA4yUy5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52My5lcnJvcnMuQWRHcm91cEJpZE1vZGlmaWVyRXJyb3JFbnVt",
-            "LkFkR3JvdXBCaWRNb2RpZmllckVycm9ySAASVgoNY29udGV4dF9lcnJvchg8",
-            "IAEoDjI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5Db250ZXh0",
-            "RXJyb3JFbnVtLkNvbnRleHRFcnJvckgAElAKC2ZpZWxkX2Vycm9yGD0gASgO",
-            "MjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkZpZWxkRXJyb3JF",
-            "bnVtLkZpZWxkRXJyb3JIABJdChBzaGFyZWRfc2V0X2Vycm9yGD4gASgOMkEu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlNoYXJlZFNldEVycm9y",
-            "RW51bS5TaGFyZWRTZXRFcnJvckgAEm8KFnNoYXJlZF9jcml0ZXJpb25fZXJy",
-            "b3IYPyABKA4yTS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuU2hh",
-            "cmVkQ3JpdGVyaW9uRXJyb3JFbnVtLlNoYXJlZENyaXRlcmlvbkVycm9ySAAS",
-            "dgoZY2FtcGFpZ25fc2hhcmVkX3NldF9lcnJvchhAIAEoDjJRLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5DYW1wYWlnblNoYXJlZFNldEVycm9y",
-            "RW51bS5DYW1wYWlnblNoYXJlZFNldEVycm9ySAAScgoXY29udmVyc2lvbl9h",
-            "Y3Rpb25fZXJyb3IYQSABKA4yTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5l",
-            "cnJvcnMuQ29udmVyc2lvbkFjdGlvbkVycm9yRW51bS5Db252ZXJzaW9uQWN0",
-            "aW9uRXJyb3JIABKRAQoiY29udmVyc2lvbl9hZGp1c3RtZW50X3VwbG9hZF9l",
-            "cnJvchhzIAEoDjJjLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5D",
-            "b252ZXJzaW9uQWRqdXN0bWVudFVwbG9hZEVycm9yRW51bS5Db252ZXJzaW9u",
-            "QWRqdXN0bWVudFVwbG9hZEVycm9ySAAScgoXY29udmVyc2lvbl91cGxvYWRf",
-            "ZXJyb3IYbyABKA4yTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMu",
-            "Q29udmVyc2lvblVwbG9hZEVycm9yRW51bS5Db252ZXJzaW9uVXBsb2FkRXJy",
-            "b3JIABJTCgxoZWFkZXJfZXJyb3IYQiABKA4yOy5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52My5lcnJvcnMuSGVhZGVyRXJyb3JFbnVtLkhlYWRlckVycm9ySAAS",
-            "WQoOZGF0YWJhc2VfZXJyb3IYQyABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52My5lcnJvcnMuRGF0YWJhc2VFcnJvckVudW0uRGF0YWJhc2VFcnJvckgA",
-            "EmkKFHBvbGljeV9maW5kaW5nX2Vycm9yGEQgASgOMkkuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjMuZXJyb3JzLlBvbGljeUZpbmRpbmdFcnJvckVudW0uUG9s",
-            "aWN5RmluZGluZ0Vycm9ySAASTQoKZW51bV9lcnJvchhGIAEoDjI3Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5FbnVtRXJyb3JFbnVtLkVudW1F",
-            "cnJvckgAEmMKEmtleXdvcmRfcGxhbl9lcnJvchhHIAEoDjJFLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5LZXl3b3JkUGxhbkVycm9yRW51bS5L",
-            "ZXl3b3JkUGxhbkVycm9ySAASfAoba2V5d29yZF9wbGFuX2NhbXBhaWduX2Vy",
-            "cm9yGEggASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLktl",
-            "eXdvcmRQbGFuQ2FtcGFpZ25FcnJvckVudW0uS2V5d29yZFBsYW5DYW1wYWln",
-            "bkVycm9ySAASkgEKI2tleXdvcmRfcGxhbl9uZWdhdGl2ZV9rZXl3b3JkX2Vy",
-            "cm9yGEkgASgOMmMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLktl",
-            "eXdvcmRQbGFuTmVnYXRpdmVLZXl3b3JkRXJyb3JFbnVtLktleXdvcmRQbGFu",
-            "TmVnYXRpdmVLZXl3b3JkRXJyb3JIABJ6ChtrZXl3b3JkX3BsYW5fYWRfZ3Jv",
-            "dXBfZXJyb3IYSiABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJv",
-            "cnMuS2V5d29yZFBsYW5BZEdyb3VwRXJyb3JFbnVtLktleXdvcmRQbGFuQWRH",
-            "cm91cEVycm9ySAASeQoaa2V5d29yZF9wbGFuX2tleXdvcmRfZXJyb3IYSyAB",
-            "KA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuS2V5d29yZFBs",
-            "YW5LZXl3b3JkRXJyb3JFbnVtLktleXdvcmRQbGFuS2V5d29yZEVycm9ySAAS",
-            "cAoXa2V5d29yZF9wbGFuX2lkZWFfZXJyb3IYTCABKA4yTS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52My5lcnJvcnMuS2V5d29yZFBsYW5JZGVhRXJyb3JFbnVt",
-            "LktleXdvcmRQbGFuSWRlYUVycm9ySAASggEKHWFjY291bnRfYnVkZ2V0X3By",
-            "b3Bvc2FsX2Vycm9yGE0gASgOMlkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
-            "ZXJyb3JzLkFjY291bnRCdWRnZXRQcm9wb3NhbEVycm9yRW51bS5BY2NvdW50",
-            "QnVkZ2V0UHJvcG9zYWxFcnJvckgAEloKD3VzZXJfbGlzdF9lcnJvchhOIAEo",
-            "DjI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5Vc2VyTGlzdEVy",
-            "cm9yRW51bS5Vc2VyTGlzdEVycm9ySAASZgoTY2hhbmdlX3N0YXR1c19lcnJv",
-            "chhPIAEoDjJHLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5DaGFu",
-            "Z2VTdGF0dXNFcnJvckVudW0uQ2hhbmdlU3RhdHVzRXJyb3JIABJNCgpmZWVk",
-            "X2Vycm9yGFAgASgOMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3Jz",
-            "LkZlZWRFcnJvckVudW0uRmVlZEVycm9ySAASlQEKJGdlb190YXJnZXRfY29u",
-            "c3RhbnRfc3VnZ2VzdGlvbl9lcnJvchhRIAEoDjJlLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYzLmVycm9ycy5HZW9UYXJnZXRDb25zdGFudFN1Z2dlc3Rpb25F",
-            "cnJvckVudW0uR2VvVGFyZ2V0Q29uc3RhbnRTdWdnZXN0aW9uRXJyb3JIABJp",
-            "ChRjYW1wYWlnbl9kcmFmdF9lcnJvchhSIAEoDjJJLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYzLmVycm9ycy5DYW1wYWlnbkRyYWZ0RXJyb3JFbnVtLkNhbXBh",
-            "aWduRHJhZnRFcnJvckgAEloKD2ZlZWRfaXRlbV9lcnJvchhTIAEoDjI/Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5GZWVkSXRlbUVycm9yRW51",
-            "bS5GZWVkSXRlbUVycm9ySAASUAoLbGFiZWxfZXJyb3IYVCABKA4yOS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuTGFiZWxFcnJvckVudW0uTGFi",
-            "ZWxFcnJvckgAEmYKE2JpbGxpbmdfc2V0dXBfZXJyb3IYVyABKA4yRy5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQmlsbGluZ1NldHVwRXJyb3JF",
-            "bnVtLkJpbGxpbmdTZXR1cEVycm9ySAASeQoaY3VzdG9tZXJfY2xpZW50X2xp",
-            "bmtfZXJyb3IYWCABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJv",
-            "cnMuQ3VzdG9tZXJDbGllbnRMaW5rRXJyb3JFbnVtLkN1c3RvbWVyQ2xpZW50",
-            "TGlua0Vycm9ySAASfAobY3VzdG9tZXJfbWFuYWdlcl9saW5rX2Vycm9yGFsg",
-            "ASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkN1c3RvbWVy",
-            "TWFuYWdlckxpbmtFcnJvckVudW0uQ3VzdG9tZXJNYW5hZ2VyTGlua0Vycm9y",
-            "SAASYwoSZmVlZF9tYXBwaW5nX2Vycm9yGFwgASgOMkUuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjMuZXJyb3JzLkZlZWRNYXBwaW5nRXJyb3JFbnVtLkZlZWRN",
-            "YXBwaW5nRXJyb3JIABJmChNjdXN0b21lcl9mZWVkX2Vycm9yGF0gASgOMkcu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkN1c3RvbWVyRmVlZEVy",
-            "cm9yRW51bS5DdXN0b21lckZlZWRFcnJvckgAEmQKE2FkX2dyb3VwX2ZlZWRf",
-            "ZXJyb3IYXiABKA4yRS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMu",
-            "QWRHcm91cEZlZWRFcnJvckVudW0uQWRHcm91cEZlZWRFcnJvckgAEmYKE2Nh",
-            "bXBhaWduX2ZlZWRfZXJyb3IYYCABKA4yRy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52My5lcnJvcnMuQ2FtcGFpZ25GZWVkRXJyb3JFbnVtLkNhbXBhaWduRmVl",
-            "ZEVycm9ySAASbAoVY3VzdG9tX2ludGVyZXN0X2Vycm9yGGEgASgOMksuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkN1c3RvbUludGVyZXN0RXJy",
-            "b3JFbnVtLkN1c3RvbUludGVyZXN0RXJyb3JIABJ4ChljYW1wYWlnbl9leHBl",
-            "cmltZW50X2Vycm9yGGIgASgOMlMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
-            "ZXJyb3JzLkNhbXBhaWduRXhwZXJpbWVudEVycm9yRW51bS5DYW1wYWlnbkV4",
-            "cGVyaW1lbnRFcnJvckgAEnYKGWV4dGVuc2lvbl9mZWVkX2l0ZW1fZXJyb3IY",
-            "ZCABKA4yUS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuRXh0ZW5z",
-            "aW9uRmVlZEl0ZW1FcnJvckVudW0uRXh0ZW5zaW9uRmVlZEl0ZW1FcnJvckgA",
-            "EmMKEmFkX3BhcmFtZXRlcl9lcnJvchhlIAEoDjJFLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYzLmVycm9ycy5BZFBhcmFtZXRlckVycm9yRW51bS5BZFBhcmFt",
-            "ZXRlckVycm9ySAASeQoaZmVlZF9pdGVtX3ZhbGlkYXRpb25fZXJyb3IYZiAB",
-            "KA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuRmVlZEl0ZW1W",
-            "YWxpZGF0aW9uRXJyb3JFbnVtLkZlZWRJdGVtVmFsaWRhdGlvbkVycm9ySAAS",
-            "cgoXZXh0ZW5zaW9uX3NldHRpbmdfZXJyb3IYZyABKA4yTy5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52My5lcnJvcnMuRXh0ZW5zaW9uU2V0dGluZ0Vycm9yRW51",
-            "bS5FeHRlbnNpb25TZXR0aW5nRXJyb3JIABJtChZmZWVkX2l0ZW1fdGFyZ2V0",
-            "X2Vycm9yGGggASgOMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3Jz",
-            "LkZlZWRJdGVtVGFyZ2V0RXJyb3JFbnVtLkZlZWRJdGVtVGFyZ2V0RXJyb3JI",
-            "ABJvChZwb2xpY3lfdmlvbGF0aW9uX2Vycm9yGGkgASgOMk0uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjMuZXJyb3JzLlBvbGljeVZpb2xhdGlvbkVycm9yRW51",
-            "bS5Qb2xpY3lWaW9sYXRpb25FcnJvckgAEl0KEG11dGF0ZV9qb2JfZXJyb3IY",
-            "bCABKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuTXV0YXRl",
-            "Sm9iRXJyb3JFbnVtLk11dGF0ZUpvYkVycm9ySAASbAoVcGFydGlhbF9mYWls",
-            "dXJlX2Vycm9yGHAgASgOMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJy",
-            "b3JzLlBhcnRpYWxGYWlsdXJlRXJyb3JFbnVtLlBhcnRpYWxGYWlsdXJlRXJy",
-            "b3JIABKOAQohcG9saWN5X3ZhbGlkYXRpb25fcGFyYW1ldGVyX2Vycm9yGHIg",
-            "ASgOMmEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlBvbGljeVZh",
-            "bGlkYXRpb25QYXJhbWV0ZXJFcnJvckVudW0uUG9saWN5VmFsaWRhdGlvblBh",
-            "cmFtZXRlckVycm9ySAASXQoQc2l6ZV9saW1pdF9lcnJvchh2IAEoDjJBLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5TaXplTGltaXRFcnJvckVu",
-            "dW0uU2l6ZUxpbWl0RXJyb3JIABJ6ChtvZmZsaW5lX3VzZXJfZGF0YV9qb2Jf",
-            "ZXJyb3IYdyABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMu",
-            "T2ZmbGluZVVzZXJEYXRhSm9iRXJyb3JFbnVtLk9mZmxpbmVVc2VyRGF0YUpv",
-            "YkVycm9ySAASbAoVbm90X3doaXRlbGlzdGVkX2Vycm9yGHggASgOMksuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLk5vdFdoaXRlbGlzdGVkRXJy",
-            "b3JFbnVtLk5vdFdoaXRlbGlzdGVkRXJyb3JIABJjChJtYW5hZ2VyX2xpbmtf",
-            "ZXJyb3IYeSABKA4yRS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMu",
-            "TWFuYWdlckxpbmtFcnJvckVudW0uTWFuYWdlckxpbmtFcnJvckgAEmYKE2N1",
-            "cnJlbmN5X2NvZGVfZXJyb3IYeiABKA4yRy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52My5lcnJvcnMuQ3VycmVuY3lDb2RlRXJyb3JFbnVtLkN1cnJlbmN5Q29k",
-            "ZUVycm9ySAAScgoXYWNjZXNzX2ludml0YXRpb25fZXJyb3IYfCABKA4yTy5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQWNjZXNzSW52aXRhdGlv",
-            "bkVycm9yRW51bS5BY2Nlc3NJbnZpdGF0aW9uRXJyb3JIABJdChByZWFjaF9w",
-            "bGFuX2Vycm9yGH0gASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJy",
-            "b3JzLlJlYWNoUGxhbkVycm9yRW51bS5SZWFjaFBsYW5FcnJvckgAElYKDWlu",
-            "dm9pY2VfZXJyb3IYfiABKA4yPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5l",
-            "cnJvcnMuSW52b2ljZUVycm9yRW51bS5JbnZvaWNlRXJyb3JIABJvChZwYXlt",
-            "ZW50c19hY2NvdW50X2Vycm9yGH8gASgOMk0uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjMuZXJyb3JzLlBheW1lbnRzQWNjb3VudEVycm9yRW51bS5QYXltZW50",
-            "c0FjY291bnRFcnJvckgAElsKD3RpbWVfem9uZV9lcnJvchiAASABKA4yPy5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuVGltZVpvbmVFcnJvckVu",
-            "dW0uVGltZVpvbmVFcnJvckgAEl4KEGFzc2V0X2xpbmtfZXJyb3IYgQEgASgO",
-            "MkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkFzc2V0TGlua0Vy",
-            "cm9yRW51bS5Bc3NldExpbmtFcnJvckgAQgwKCmVycm9yX2NvZGUiwAEKDUVy",
-            "cm9yTG9jYXRpb24SWwoTZmllbGRfcGF0aF9lbGVtZW50cxgCIAMoCzI+Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5FcnJvckxvY2F0aW9uLkZp",
-            "ZWxkUGF0aEVsZW1lbnQaUgoQRmllbGRQYXRoRWxlbWVudBISCgpmaWVsZF9u",
-            "YW1lGAEgASgJEioKBWluZGV4GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDY0VmFsdWUi3gEKDEVycm9yRGV0YWlscxIeChZ1bnB1Ymxpc2hlZF9lcnJv",
-            "cl9jb2RlGAEgASgJElgKGHBvbGljeV92aW9sYXRpb25fZGV0YWlscxgCIAEo",
-            "CzI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5Qb2xpY3lWaW9s",
-            "YXRpb25EZXRhaWxzElQKFnBvbGljeV9maW5kaW5nX2RldGFpbHMYAyABKAsy",
-            "NC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuUG9saWN5RmluZGlu",
-            "Z0RldGFpbHMiswEKFlBvbGljeVZpb2xhdGlvbkRldGFpbHMSIwobZXh0ZXJu",
-            "YWxfcG9saWN5X2Rlc2NyaXB0aW9uGAIgASgJEj8KA2tleRgEIAEoCzIyLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmNvbW1vbi5Qb2xpY3lWaW9sYXRpb25L",
-            "ZXkSHAoUZXh0ZXJuYWxfcG9saWN5X25hbWUYBSABKAkSFQoNaXNfZXhlbXB0",
-            "aWJsZRgGIAEoCCJmChRQb2xpY3lGaW5kaW5nRGV0YWlscxJOChRwb2xpY3lf",
-            "dG9waWNfZW50cmllcxgBIAMoCzIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
-            "LmNvbW1vbi5Qb2xpY3lUb3BpY0VudHJ5QuYBCiJjb20uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjMuZXJyb3JzQgtFcnJvcnNQcm90b1ABWkRnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjMv",
-            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYz",
-            "LkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYzXEVycm9yc+oCIkdv",
-            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpFcnJvcnNiBnByb3RvMw=="));
+            "bGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvdXNlcl9kYXRhX2Vycm9yLnBy",
+            "b3RvGjRnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvdXNlcl9saXN0",
+            "X2Vycm9yLnByb3RvGkVnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMv",
+            "eW91dHViZV92aWRlb19yZWdpc3RyYXRpb25fZXJyb3IucHJvdG8aHmdvb2ds",
+            "ZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0",
+            "aW9ucy5wcm90byJSChBHb29nbGVBZHNGYWlsdXJlEj4KBmVycm9ycxgBIAMo",
+            "CzIuLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5Hb29nbGVBZHNF",
+            "cnJvciKYAgoOR29vZ2xlQWRzRXJyb3ISPQoKZXJyb3JfY29kZRgBIAEoCzIp",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5FcnJvckNvZGUSDwoH",
+            "bWVzc2FnZRgCIAEoCRI2Cgd0cmlnZ2VyGAMgASgLMiUuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjMuY29tbW9uLlZhbHVlEj8KCGxvY2F0aW9uGAQgASgLMi0u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkVycm9yTG9jYXRpb24S",
+            "PQoHZGV0YWlscxgFIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVy",
+            "cm9ycy5FcnJvckRldGFpbHMiy1oKCUVycm9yQ29kZRJWCg1yZXF1ZXN0X2Vy",
+            "cm9yGAEgASgOMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlJl",
+            "cXVlc3RFcnJvckVudW0uUmVxdWVzdEVycm9ySAASbwoWYmlkZGluZ19zdHJh",
+            "dGVneV9lcnJvchgCIAEoDjJNLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVy",
+            "cm9ycy5CaWRkaW5nU3RyYXRlZ3lFcnJvckVudW0uQmlkZGluZ1N0cmF0ZWd5",
+            "RXJyb3JIABJaCg91cmxfZmllbGRfZXJyb3IYAyABKA4yPy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52My5lcnJvcnMuVXJsRmllbGRFcnJvckVudW0uVXJsRmll",
+            "bGRFcnJvckgAEmkKFGxpc3Rfb3BlcmF0aW9uX2Vycm9yGAQgASgOMkkuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkxpc3RPcGVyYXRpb25FcnJv",
+            "ckVudW0uTGlzdE9wZXJhdGlvbkVycm9ySAASUAoLcXVlcnlfZXJyb3IYBSAB",
+            "KA4yOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuUXVlcnlFcnJv",
+            "ckVudW0uUXVlcnlFcnJvckgAElMKDG11dGF0ZV9lcnJvchgHIAEoDjI7Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5NdXRhdGVFcnJvckVudW0u",
+            "TXV0YXRlRXJyb3JIABJdChBmaWVsZF9tYXNrX2Vycm9yGAggASgOMkEuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkZpZWxkTWFza0Vycm9yRW51",
+            "bS5GaWVsZE1hc2tFcnJvckgAEmgKE2F1dGhvcml6YXRpb25fZXJyb3IYCSAB",
+            "KA4ySS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQXV0aG9yaXph",
+            "dGlvbkVycm9yRW51bS5BdXRob3JpemF0aW9uRXJyb3JIABJZCg5pbnRlcm5h",
+            "bF9lcnJvchgKIAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9y",
+            "cy5JbnRlcm5hbEVycm9yRW51bS5JbnRlcm5hbEVycm9ySAASUAoLcXVvdGFf",
+            "ZXJyb3IYCyABKA4yOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMu",
+            "UXVvdGFFcnJvckVudW0uUXVvdGFFcnJvckgAEkcKCGFkX2Vycm9yGAwgASgO",
+            "MjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkFkRXJyb3JFbnVt",
+            "LkFkRXJyb3JIABJXCg5hZF9ncm91cF9lcnJvchgNIAEoDjI9Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5BZEdyb3VwRXJyb3JFbnVtLkFkR3Jv",
+            "dXBFcnJvckgAEmwKFWNhbXBhaWduX2J1ZGdldF9lcnJvchgOIAEoDjJLLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5DYW1wYWlnbkJ1ZGdldEVy",
+            "cm9yRW51bS5DYW1wYWlnbkJ1ZGdldEVycm9ySAASWQoOY2FtcGFpZ25fZXJy",
+            "b3IYDyABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQ2Ft",
+            "cGFpZ25FcnJvckVudW0uQ2FtcGFpZ25FcnJvckgAEmsKFGF1dGhlbnRpY2F0",
+            "aW9uX2Vycm9yGBEgASgOMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJy",
+            "b3JzLkF1dGhlbnRpY2F0aW9uRXJyb3JFbnVtLkF1dGhlbnRpY2F0aW9uRXJy",
+            "b3JIABJzChhhZF9ncm91cF9jcml0ZXJpb25fZXJyb3IYEiABKA4yTy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQWRHcm91cENyaXRlcmlvbkVy",
+            "cm9yRW51bS5BZEdyb3VwQ3JpdGVyaW9uRXJyb3JIABJmChNhZF9jdXN0b21p",
+            "emVyX2Vycm9yGBMgASgOMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJy",
+            "b3JzLkFkQ3VzdG9taXplckVycm9yRW51bS5BZEN1c3RvbWl6ZXJFcnJvckgA",
+            "El4KEWFkX2dyb3VwX2FkX2Vycm9yGBUgASgOMkEuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjMuZXJyb3JzLkFkR3JvdXBBZEVycm9yRW51bS5BZEdyb3VwQWRF",
+            "cnJvckgAEl0KEGFkX3NoYXJpbmdfZXJyb3IYGCABKA4yQS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52My5lcnJvcnMuQWRTaGFyaW5nRXJyb3JFbnVtLkFkU2hh",
+            "cmluZ0Vycm9ySAASSgoJYWR4X2Vycm9yGBkgASgOMjUuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjMuZXJyb3JzLkFkeEVycm9yRW51bS5BZHhFcnJvckgAElAK",
+            "C2Fzc2V0X2Vycm9yGGsgASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
+            "ZXJyb3JzLkFzc2V0RXJyb3JFbnVtLkFzc2V0RXJyb3JIABJWCg1iaWRkaW5n",
+            "X2Vycm9yGBogASgOMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3Jz",
+            "LkJpZGRpbmdFcnJvckVudW0uQmlkZGluZ0Vycm9ySAASdQoYY2FtcGFpZ25f",
+            "Y3JpdGVyaW9uX2Vycm9yGB0gASgOMlEuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djMuZXJyb3JzLkNhbXBhaWduQ3JpdGVyaW9uRXJyb3JFbnVtLkNhbXBhaWdu",
+            "Q3JpdGVyaW9uRXJyb3JIABJsChVjb2xsZWN0aW9uX3NpemVfZXJyb3IYHyAB",
+            "KA4ySy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQ29sbGVjdGlv",
+            "blNpemVFcnJvckVudW0uQ29sbGVjdGlvblNpemVFcnJvckgAEmMKEmNvdW50",
+            "cnlfY29kZV9lcnJvchhtIAEoDjJFLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
+            "LmVycm9ycy5Db3VudHJ5Q29kZUVycm9yRW51bS5Db3VudHJ5Q29kZUVycm9y",
+            "SAASXAoPY3JpdGVyaW9uX2Vycm9yGCAgASgOMkEuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjMuZXJyb3JzLkNyaXRlcmlvbkVycm9yRW51bS5Dcml0ZXJpb25F",
+            "cnJvckgAElkKDmN1c3RvbWVyX2Vycm9yGFogASgOMj8uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjMuZXJyb3JzLkN1c3RvbWVyRXJyb3JFbnVtLkN1c3RvbWVy",
+            "RXJyb3JIABJNCgpkYXRlX2Vycm9yGCEgASgOMjcuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjMuZXJyb3JzLkRhdGVFcnJvckVudW0uRGF0ZUVycm9ySAASXQoQ",
+            "ZGF0ZV9yYW5nZV9lcnJvchgiIAEoDjJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYzLmVycm9ycy5EYXRlUmFuZ2VFcnJvckVudW0uRGF0ZVJhbmdlRXJyb3JI",
+            "ABJZCg5kaXN0aW5jdF9lcnJvchgjIAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYzLmVycm9ycy5EaXN0aW5jdEVycm9yRW51bS5EaXN0aW5jdEVycm9y",
+            "SAAShQEKHmZlZWRfYXR0cmlidXRlX3JlZmVyZW5jZV9lcnJvchgkIAEoDjJb",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5GZWVkQXR0cmlidXRl",
+            "UmVmZXJlbmNlRXJyb3JFbnVtLkZlZWRBdHRyaWJ1dGVSZWZlcmVuY2VFcnJv",
+            "ckgAElkKDmZ1bmN0aW9uX2Vycm9yGCUgASgOMj8uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjMuZXJyb3JzLkZ1bmN0aW9uRXJyb3JFbnVtLkZ1bmN0aW9uRXJy",
+            "b3JIABJvChZmdW5jdGlvbl9wYXJzaW5nX2Vycm9yGCYgASgOMk0uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkZ1bmN0aW9uUGFyc2luZ0Vycm9y",
+            "RW51bS5GdW5jdGlvblBhcnNpbmdFcnJvckgAEkcKCGlkX2Vycm9yGCcgASgO",
+            "MjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLklkRXJyb3JFbnVt",
+            "LklkRXJyb3JIABJQCgtpbWFnZV9lcnJvchgoIAEoDjI5Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYzLmVycm9ycy5JbWFnZUVycm9yRW51bS5JbWFnZUVycm9y",
+            "SAASZgoTbGFuZ3VhZ2VfY29kZV9lcnJvchhuIAEoDjJHLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYzLmVycm9ycy5MYW5ndWFnZUNvZGVFcnJvckVudW0uTGFu",
+            "Z3VhZ2VDb2RlRXJyb3JIABJjChJtZWRpYV9idW5kbGVfZXJyb3IYKiABKA4y",
+            "RS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuTWVkaWFCdW5kbGVF",
+            "cnJvckVudW0uTWVkaWFCdW5kbGVFcnJvckgAEmMKEm1lZGlhX3VwbG9hZF9l",
+            "cnJvchh0IAEoDjJFLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5N",
+            "ZWRpYVVwbG9hZEVycm9yRW51bS5NZWRpYVVwbG9hZEVycm9ySAASXQoQbWVk",
+            "aWFfZmlsZV9lcnJvchhWIAEoDjJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
+            "LmVycm9ycy5NZWRpYUZpbGVFcnJvckVudW0uTWVkaWFGaWxlRXJyb3JIABJf",
+            "ChBtdWx0aXBsaWVyX2Vycm9yGCwgASgOMkMuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjMuZXJyb3JzLk11bHRpcGxpZXJFcnJvckVudW0uTXVsdGlwbGllckVy",
+            "cm9ySAASfAobbmV3X3Jlc291cmNlX2NyZWF0aW9uX2Vycm9yGC0gASgOMlUu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLk5ld1Jlc291cmNlQ3Jl",
+            "YXRpb25FcnJvckVudW0uTmV3UmVzb3VyY2VDcmVhdGlvbkVycm9ySAASWgoP",
+            "bm90X2VtcHR5X2Vycm9yGC4gASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djMuZXJyb3JzLk5vdEVtcHR5RXJyb3JFbnVtLk5vdEVtcHR5RXJyb3JIABJN",
+            "CgpudWxsX2Vycm9yGC8gASgOMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
+            "ZXJyb3JzLk51bGxFcnJvckVudW0uTnVsbEVycm9ySAASWQoOb3BlcmF0b3Jf",
+            "ZXJyb3IYMCABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMu",
+            "T3BlcmF0b3JFcnJvckVudW0uT3BlcmF0b3JFcnJvckgAElAKC3JhbmdlX2Vy",
+            "cm9yGDEgASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlJh",
+            "bmdlRXJyb3JFbnVtLlJhbmdlRXJyb3JIABJrChRyZWNvbW1lbmRhdGlvbl9l",
+            "cnJvchg6IAEoDjJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5S",
+            "ZWNvbW1lbmRhdGlvbkVycm9yRW51bS5SZWNvbW1lbmRhdGlvbkVycm9ySAAS",
+            "YAoRcmVnaW9uX2NvZGVfZXJyb3IYMyABKA4yQy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52My5lcnJvcnMuUmVnaW9uQ29kZUVycm9yRW51bS5SZWdpb25Db2Rl",
+            "RXJyb3JIABJWCg1zZXR0aW5nX2Vycm9yGDQgASgOMj0uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjMuZXJyb3JzLlNldHRpbmdFcnJvckVudW0uU2V0dGluZ0Vy",
+            "cm9ySAASZgoTc3RyaW5nX2Zvcm1hdF9lcnJvchg1IAEoDjJHLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5TdHJpbmdGb3JtYXRFcnJvckVudW0u",
+            "U3RyaW5nRm9ybWF0RXJyb3JIABJmChNzdHJpbmdfbGVuZ3RoX2Vycm9yGDYg",
+            "ASgOMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlN0cmluZ0xl",
+            "bmd0aEVycm9yRW51bS5TdHJpbmdMZW5ndGhFcnJvckgAEoIBCh1vcGVyYXRp",
+            "b25fYWNjZXNzX2RlbmllZF9lcnJvchg3IAEoDjJZLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYzLmVycm9ycy5PcGVyYXRpb25BY2Nlc3NEZW5pZWRFcnJvckVu",
+            "dW0uT3BlcmF0aW9uQWNjZXNzRGVuaWVkRXJyb3JIABJ/ChxyZXNvdXJjZV9h",
+            "Y2Nlc3NfZGVuaWVkX2Vycm9yGDggASgOMlcuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjMuZXJyb3JzLlJlc291cmNlQWNjZXNzRGVuaWVkRXJyb3JFbnVtLlJl",
+            "c291cmNlQWNjZXNzRGVuaWVkRXJyb3JIABKSAQojcmVzb3VyY2VfY291bnRf",
+            "bGltaXRfZXhjZWVkZWRfZXJyb3IYOSABKA4yYy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52My5lcnJvcnMuUmVzb3VyY2VDb3VudExpbWl0RXhjZWVkZWRFcnJv",
+            "ckVudW0uUmVzb3VyY2VDb3VudExpbWl0RXhjZWVkZWRFcnJvckgAEosBCiB5",
+            "b3V0dWJlX3ZpZGVvX3JlZ2lzdHJhdGlvbl9lcnJvchh1IAEoDjJfLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5Zb3V0dWJlVmlkZW9SZWdpc3Ry",
+            "YXRpb25FcnJvckVudW0uWW91dHViZVZpZGVvUmVnaXN0cmF0aW9uRXJyb3JI",
+            "ABJ6ChthZF9ncm91cF9iaWRfbW9kaWZpZXJfZXJyb3IYOyABKA4yUy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQWRHcm91cEJpZE1vZGlmaWVy",
+            "RXJyb3JFbnVtLkFkR3JvdXBCaWRNb2RpZmllckVycm9ySAASVgoNY29udGV4",
+            "dF9lcnJvchg8IAEoDjI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9y",
+            "cy5Db250ZXh0RXJyb3JFbnVtLkNvbnRleHRFcnJvckgAElAKC2ZpZWxkX2Vy",
+            "cm9yGD0gASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkZp",
+            "ZWxkRXJyb3JFbnVtLkZpZWxkRXJyb3JIABJdChBzaGFyZWRfc2V0X2Vycm9y",
+            "GD4gASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlNoYXJl",
+            "ZFNldEVycm9yRW51bS5TaGFyZWRTZXRFcnJvckgAEm8KFnNoYXJlZF9jcml0",
+            "ZXJpb25fZXJyb3IYPyABKA4yTS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5l",
+            "cnJvcnMuU2hhcmVkQ3JpdGVyaW9uRXJyb3JFbnVtLlNoYXJlZENyaXRlcmlv",
+            "bkVycm9ySAASdgoZY2FtcGFpZ25fc2hhcmVkX3NldF9lcnJvchhAIAEoDjJR",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5DYW1wYWlnblNoYXJl",
+            "ZFNldEVycm9yRW51bS5DYW1wYWlnblNoYXJlZFNldEVycm9ySAAScgoXY29u",
+            "dmVyc2lvbl9hY3Rpb25fZXJyb3IYQSABKA4yTy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52My5lcnJvcnMuQ29udmVyc2lvbkFjdGlvbkVycm9yRW51bS5Db252",
+            "ZXJzaW9uQWN0aW9uRXJyb3JIABKRAQoiY29udmVyc2lvbl9hZGp1c3RtZW50",
+            "X3VwbG9hZF9lcnJvchhzIAEoDjJjLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
+            "LmVycm9ycy5Db252ZXJzaW9uQWRqdXN0bWVudFVwbG9hZEVycm9yRW51bS5D",
+            "b252ZXJzaW9uQWRqdXN0bWVudFVwbG9hZEVycm9ySAAScgoXY29udmVyc2lv",
+            "bl91cGxvYWRfZXJyb3IYbyABKA4yTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "My5lcnJvcnMuQ29udmVyc2lvblVwbG9hZEVycm9yRW51bS5Db252ZXJzaW9u",
+            "VXBsb2FkRXJyb3JIABJTCgxoZWFkZXJfZXJyb3IYQiABKA4yOy5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52My5lcnJvcnMuSGVhZGVyRXJyb3JFbnVtLkhlYWRl",
+            "ckVycm9ySAASWQoOZGF0YWJhc2VfZXJyb3IYQyABKA4yPy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52My5lcnJvcnMuRGF0YWJhc2VFcnJvckVudW0uRGF0YWJh",
+            "c2VFcnJvckgAEmkKFHBvbGljeV9maW5kaW5nX2Vycm9yGEQgASgOMkkuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlBvbGljeUZpbmRpbmdFcnJv",
+            "ckVudW0uUG9saWN5RmluZGluZ0Vycm9ySAASTQoKZW51bV9lcnJvchhGIAEo",
+            "DjI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5FbnVtRXJyb3JF",
+            "bnVtLkVudW1FcnJvckgAEmMKEmtleXdvcmRfcGxhbl9lcnJvchhHIAEoDjJF",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5LZXl3b3JkUGxhbkVy",
+            "cm9yRW51bS5LZXl3b3JkUGxhbkVycm9ySAASfAoba2V5d29yZF9wbGFuX2Nh",
+            "bXBhaWduX2Vycm9yGEggASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
+            "ZXJyb3JzLktleXdvcmRQbGFuQ2FtcGFpZ25FcnJvckVudW0uS2V5d29yZFBs",
+            "YW5DYW1wYWlnbkVycm9ySAASkgEKI2tleXdvcmRfcGxhbl9uZWdhdGl2ZV9r",
+            "ZXl3b3JkX2Vycm9yGEkgASgOMmMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
+            "ZXJyb3JzLktleXdvcmRQbGFuTmVnYXRpdmVLZXl3b3JkRXJyb3JFbnVtLktl",
+            "eXdvcmRQbGFuTmVnYXRpdmVLZXl3b3JkRXJyb3JIABJ6ChtrZXl3b3JkX3Bs",
+            "YW5fYWRfZ3JvdXBfZXJyb3IYSiABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52My5lcnJvcnMuS2V5d29yZFBsYW5BZEdyb3VwRXJyb3JFbnVtLktleXdv",
+            "cmRQbGFuQWRHcm91cEVycm9ySAASeQoaa2V5d29yZF9wbGFuX2tleXdvcmRf",
+            "ZXJyb3IYSyABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMu",
+            "S2V5d29yZFBsYW5LZXl3b3JkRXJyb3JFbnVtLktleXdvcmRQbGFuS2V5d29y",
+            "ZEVycm9ySAAScAoXa2V5d29yZF9wbGFuX2lkZWFfZXJyb3IYTCABKA4yTS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuS2V5d29yZFBsYW5JZGVh",
+            "RXJyb3JFbnVtLktleXdvcmRQbGFuSWRlYUVycm9ySAASggEKHWFjY291bnRf",
+            "YnVkZ2V0X3Byb3Bvc2FsX2Vycm9yGE0gASgOMlkuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjMuZXJyb3JzLkFjY291bnRCdWRnZXRQcm9wb3NhbEVycm9yRW51",
+            "bS5BY2NvdW50QnVkZ2V0UHJvcG9zYWxFcnJvckgAEloKD3VzZXJfbGlzdF9l",
+            "cnJvchhOIAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5V",
+            "c2VyTGlzdEVycm9yRW51bS5Vc2VyTGlzdEVycm9ySAASZgoTY2hhbmdlX3N0",
+            "YXR1c19lcnJvchhPIAEoDjJHLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVy",
+            "cm9ycy5DaGFuZ2VTdGF0dXNFcnJvckVudW0uQ2hhbmdlU3RhdHVzRXJyb3JI",
+            "ABJNCgpmZWVkX2Vycm9yGFAgASgOMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djMuZXJyb3JzLkZlZWRFcnJvckVudW0uRmVlZEVycm9ySAASlQEKJGdlb190",
+            "YXJnZXRfY29uc3RhbnRfc3VnZ2VzdGlvbl9lcnJvchhRIAEoDjJlLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5HZW9UYXJnZXRDb25zdGFudFN1",
+            "Z2dlc3Rpb25FcnJvckVudW0uR2VvVGFyZ2V0Q29uc3RhbnRTdWdnZXN0aW9u",
+            "RXJyb3JIABJpChRjYW1wYWlnbl9kcmFmdF9lcnJvchhSIAEoDjJJLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5DYW1wYWlnbkRyYWZ0RXJyb3JF",
+            "bnVtLkNhbXBhaWduRHJhZnRFcnJvckgAEloKD2ZlZWRfaXRlbV9lcnJvchhT",
+            "IAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5GZWVkSXRl",
+            "bUVycm9yRW51bS5GZWVkSXRlbUVycm9ySAASUAoLbGFiZWxfZXJyb3IYVCAB",
+            "KA4yOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuTGFiZWxFcnJv",
+            "ckVudW0uTGFiZWxFcnJvckgAEmYKE2JpbGxpbmdfc2V0dXBfZXJyb3IYVyAB",
+            "KA4yRy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQmlsbGluZ1Nl",
+            "dHVwRXJyb3JFbnVtLkJpbGxpbmdTZXR1cEVycm9ySAASeQoaY3VzdG9tZXJf",
+            "Y2xpZW50X2xpbmtfZXJyb3IYWCABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52My5lcnJvcnMuQ3VzdG9tZXJDbGllbnRMaW5rRXJyb3JFbnVtLkN1c3Rv",
+            "bWVyQ2xpZW50TGlua0Vycm9ySAASfAobY3VzdG9tZXJfbWFuYWdlcl9saW5r",
+            "X2Vycm9yGFsgASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3Jz",
+            "LkN1c3RvbWVyTWFuYWdlckxpbmtFcnJvckVudW0uQ3VzdG9tZXJNYW5hZ2Vy",
+            "TGlua0Vycm9ySAASYwoSZmVlZF9tYXBwaW5nX2Vycm9yGFwgASgOMkUuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkZlZWRNYXBwaW5nRXJyb3JF",
+            "bnVtLkZlZWRNYXBwaW5nRXJyb3JIABJmChNjdXN0b21lcl9mZWVkX2Vycm9y",
+            "GF0gASgOMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkN1c3Rv",
+            "bWVyRmVlZEVycm9yRW51bS5DdXN0b21lckZlZWRFcnJvckgAEmQKE2FkX2dy",
+            "b3VwX2ZlZWRfZXJyb3IYXiABKA4yRS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "My5lcnJvcnMuQWRHcm91cEZlZWRFcnJvckVudW0uQWRHcm91cEZlZWRFcnJv",
+            "ckgAEmYKE2NhbXBhaWduX2ZlZWRfZXJyb3IYYCABKA4yRy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52My5lcnJvcnMuQ2FtcGFpZ25GZWVkRXJyb3JFbnVtLkNh",
+            "bXBhaWduRmVlZEVycm9ySAASbAoVY3VzdG9tX2ludGVyZXN0X2Vycm9yGGEg",
+            "ASgOMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkN1c3RvbUlu",
+            "dGVyZXN0RXJyb3JFbnVtLkN1c3RvbUludGVyZXN0RXJyb3JIABJ4ChljYW1w",
+            "YWlnbl9leHBlcmltZW50X2Vycm9yGGIgASgOMlMuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjMuZXJyb3JzLkNhbXBhaWduRXhwZXJpbWVudEVycm9yRW51bS5D",
+            "YW1wYWlnbkV4cGVyaW1lbnRFcnJvckgAEnYKGWV4dGVuc2lvbl9mZWVkX2l0",
+            "ZW1fZXJyb3IYZCABKA4yUS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJv",
+            "cnMuRXh0ZW5zaW9uRmVlZEl0ZW1FcnJvckVudW0uRXh0ZW5zaW9uRmVlZEl0",
+            "ZW1FcnJvckgAEmMKEmFkX3BhcmFtZXRlcl9lcnJvchhlIAEoDjJFLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5BZFBhcmFtZXRlckVycm9yRW51",
+            "bS5BZFBhcmFtZXRlckVycm9ySAASeQoaZmVlZF9pdGVtX3ZhbGlkYXRpb25f",
+            "ZXJyb3IYZiABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMu",
+            "RmVlZEl0ZW1WYWxpZGF0aW9uRXJyb3JFbnVtLkZlZWRJdGVtVmFsaWRhdGlv",
+            "bkVycm9ySAAScgoXZXh0ZW5zaW9uX3NldHRpbmdfZXJyb3IYZyABKA4yTy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuRXh0ZW5zaW9uU2V0dGlu",
+            "Z0Vycm9yRW51bS5FeHRlbnNpb25TZXR0aW5nRXJyb3JIABJtChZmZWVkX2l0",
+            "ZW1fdGFyZ2V0X2Vycm9yGGggASgOMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djMuZXJyb3JzLkZlZWRJdGVtVGFyZ2V0RXJyb3JFbnVtLkZlZWRJdGVtVGFy",
+            "Z2V0RXJyb3JIABJvChZwb2xpY3lfdmlvbGF0aW9uX2Vycm9yGGkgASgOMk0u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLlBvbGljeVZpb2xhdGlv",
+            "bkVycm9yRW51bS5Qb2xpY3lWaW9sYXRpb25FcnJvckgAEl0KEG11dGF0ZV9q",
+            "b2JfZXJyb3IYbCABKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJv",
+            "cnMuTXV0YXRlSm9iRXJyb3JFbnVtLk11dGF0ZUpvYkVycm9ySAASbAoVcGFy",
+            "dGlhbF9mYWlsdXJlX2Vycm9yGHAgASgOMksuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjMuZXJyb3JzLlBhcnRpYWxGYWlsdXJlRXJyb3JFbnVtLlBhcnRpYWxG",
+            "YWlsdXJlRXJyb3JIABKOAQohcG9saWN5X3ZhbGlkYXRpb25fcGFyYW1ldGVy",
+            "X2Vycm9yGHIgASgOMmEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3Jz",
+            "LlBvbGljeVZhbGlkYXRpb25QYXJhbWV0ZXJFcnJvckVudW0uUG9saWN5VmFs",
+            "aWRhdGlvblBhcmFtZXRlckVycm9ySAASXQoQc2l6ZV9saW1pdF9lcnJvchh2",
+            "IAEoDjJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5TaXplTGlt",
+            "aXRFcnJvckVudW0uU2l6ZUxpbWl0RXJyb3JIABJ6ChtvZmZsaW5lX3VzZXJf",
+            "ZGF0YV9qb2JfZXJyb3IYdyABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "My5lcnJvcnMuT2ZmbGluZVVzZXJEYXRhSm9iRXJyb3JFbnVtLk9mZmxpbmVV",
+            "c2VyRGF0YUpvYkVycm9ySAASbAoVbm90X3doaXRlbGlzdGVkX2Vycm9yGHgg",
+            "ASgOMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLk5vdFdoaXRl",
+            "bGlzdGVkRXJyb3JFbnVtLk5vdFdoaXRlbGlzdGVkRXJyb3JIABJjChJtYW5h",
+            "Z2VyX2xpbmtfZXJyb3IYeSABKA4yRS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "My5lcnJvcnMuTWFuYWdlckxpbmtFcnJvckVudW0uTWFuYWdlckxpbmtFcnJv",
+            "ckgAEmYKE2N1cnJlbmN5X2NvZGVfZXJyb3IYeiABKA4yRy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52My5lcnJvcnMuQ3VycmVuY3lDb2RlRXJyb3JFbnVtLkN1",
+            "cnJlbmN5Q29kZUVycm9ySAAScgoXYWNjZXNzX2ludml0YXRpb25fZXJyb3IY",
+            "fCABKA4yTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuQWNjZXNz",
+            "SW52aXRhdGlvbkVycm9yRW51bS5BY2Nlc3NJbnZpdGF0aW9uRXJyb3JIABJd",
+            "ChByZWFjaF9wbGFuX2Vycm9yGH0gASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjMuZXJyb3JzLlJlYWNoUGxhbkVycm9yRW51bS5SZWFjaFBsYW5FcnJv",
+            "ckgAElYKDWludm9pY2VfZXJyb3IYfiABKA4yPS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52My5lcnJvcnMuSW52b2ljZUVycm9yRW51bS5JbnZvaWNlRXJyb3JI",
+            "ABJvChZwYXltZW50c19hY2NvdW50X2Vycm9yGH8gASgOMk0uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjMuZXJyb3JzLlBheW1lbnRzQWNjb3VudEVycm9yRW51",
+            "bS5QYXltZW50c0FjY291bnRFcnJvckgAElsKD3RpbWVfem9uZV9lcnJvchiA",
+            "ASABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMuVGltZVpv",
+            "bmVFcnJvckVudW0uVGltZVpvbmVFcnJvckgAEl4KEGFzc2V0X2xpbmtfZXJy",
+            "b3IYgQEgASgOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzLkFz",
+            "c2V0TGlua0Vycm9yRW51bS5Bc3NldExpbmtFcnJvckgAElsKD3VzZXJfZGF0",
+            "YV9lcnJvchiCASABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJv",
+            "cnMuVXNlckRhdGFFcnJvckVudW0uVXNlckRhdGFFcnJvckgAQgwKCmVycm9y",
+            "X2NvZGUiwAEKDUVycm9yTG9jYXRpb24SWwoTZmllbGRfcGF0aF9lbGVtZW50",
+            "cxgCIAMoCzI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9ycy5FcnJv",
+            "ckxvY2F0aW9uLkZpZWxkUGF0aEVsZW1lbnQaUgoQRmllbGRQYXRoRWxlbWVu",
+            "dBISCgpmaWVsZF9uYW1lGAEgASgJEioKBWluZGV4GAIgASgLMhsuZ29vZ2xl",
+            "LnByb3RvYnVmLkludDY0VmFsdWUi3gEKDEVycm9yRGV0YWlscxIeChZ1bnB1",
+            "Ymxpc2hlZF9lcnJvcl9jb2RlGAEgASgJElgKGHBvbGljeV92aW9sYXRpb25f",
+            "ZGV0YWlscxgCIAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVycm9y",
+            "cy5Qb2xpY3lWaW9sYXRpb25EZXRhaWxzElQKFnBvbGljeV9maW5kaW5nX2Rl",
+            "dGFpbHMYAyABKAsyNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMu",
+            "UG9saWN5RmluZGluZ0RldGFpbHMiswEKFlBvbGljeVZpb2xhdGlvbkRldGFp",
+            "bHMSIwobZXh0ZXJuYWxfcG9saWN5X2Rlc2NyaXB0aW9uGAIgASgJEj8KA2tl",
+            "eRgEIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmNvbW1vbi5Qb2xp",
+            "Y3lWaW9sYXRpb25LZXkSHAoUZXh0ZXJuYWxfcG9saWN5X25hbWUYBSABKAkS",
+            "FQoNaXNfZXhlbXB0aWJsZRgGIAEoCCJmChRQb2xpY3lGaW5kaW5nRGV0YWls",
+            "cxJOChRwb2xpY3lfdG9waWNfZW50cmllcxgBIAMoCzIwLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYzLmNvbW1vbi5Qb2xpY3lUb3BpY0VudHJ5QuYBCiJjb20u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzQgtFcnJvcnNQcm90b1AB",
+            "WkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
+            "b29nbGVhZHMvdjMvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlYzLkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYz",
+            "XEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpFcnJvcnNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.ValueReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AccessInvitationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AccountBudgetProposalErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdCustomizerErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupAdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupBidModifierErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupFeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdParameterErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdSharingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdxErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AssetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AssetLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AuthenticationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.BiddingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.BiddingStrategyErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.BillingSetupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignBudgetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignDraftErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignExperimentErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignFeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignSharedSetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ChangeStatusErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CollectionSizeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ContextErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ConversionActionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ConversionAdjustmentUploadErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ConversionUploadErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CountryCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CurrencyCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomInterestErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomerClientLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomerErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomerFeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomerManagerLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.DatabaseErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.DateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.DateRangeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.DistinctErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.EnumErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ExtensionFeedItemErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ExtensionSettingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedAttributeReferenceErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedItemErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedItemTargetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedMappingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FieldErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FieldMaskErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FunctionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FunctionParsingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.GeoTargetConstantSuggestionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.HeaderErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.IdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ImageErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.InternalErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.InvoiceErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanAdGroupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanCampaignErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanIdeaErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanKeywordErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanNegativeKeywordErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.LabelErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.LanguageCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ListOperationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ManagerLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MediaBundleErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MediaFileErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MediaUploadErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MultiplierErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MutateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MutateJobErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.NewResourceCreationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.NotEmptyErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.NotWhitelistedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.NullErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.OfflineUserDataJobErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.OperationAccessDeniedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.OperatorErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PartialFailureErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PaymentsAccountErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PolicyValidationParameterErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.QueryErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.QuotaErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.RangeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ReachPlanErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.RecommendationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.RegionCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.RequestErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ResourceAccessDeniedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ResourceCountLimitExceededErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.SettingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.SharedCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.SharedSetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.SizeLimitErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.StringFormatErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.StringLengthErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.TimeZoneErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.UrlFieldErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.UserListErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.YoutubeVideoRegistrationErrorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.GoogleAdsFailure), global::Google.Ads.GoogleAds.V3.Errors.GoogleAdsFailure.Parser, new[]{ "Errors" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.GoogleAdsError), global::Google.Ads.GoogleAds.V3.Errors.GoogleAdsError.Parser, new[]{ "ErrorCode", "Message", "Trigger", "Location", "Details" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ErrorCode), global::Google.Ads.GoogleAds.V3.Errors.ErrorCode.Parser, new[]{ "RequestError", "BiddingStrategyError", "UrlFieldError", "ListOperationError", "QueryError", "MutateError", "FieldMaskError", "AuthorizationError", "InternalError", "QuotaError", "AdError", "AdGroupError", "CampaignBudgetError", "CampaignError", "AuthenticationError", "AdGroupCriterionError", "AdCustomizerError", "AdGroupAdError", "AdSharingError", "AdxError", "AssetError", "BiddingError", "CampaignCriterionError", "CollectionSizeError", "CountryCodeError", "CriterionError", "CustomerError", "DateError", "DateRangeError", "DistinctError", "FeedAttributeReferenceError", "FunctionError", "FunctionParsingError", "IdError", "ImageError", "LanguageCodeError", "MediaBundleError", "MediaUploadError", "MediaFileError", "MultiplierError", "NewResourceCreationError", "NotEmptyError", "NullError", "OperatorError", "RangeError", "RecommendationError", "RegionCodeError", "SettingError", "StringFormatError", "StringLengthError", "OperationAccessDeniedError", "ResourceAccessDeniedError", "ResourceCountLimitExceededError", "YoutubeVideoRegistrationError", "AdGroupBidModifierError", "ContextError", "FieldError", "SharedSetError", "SharedCriterionError", "CampaignSharedSetError", "ConversionActionError", "ConversionAdjustmentUploadError", "ConversionUploadError", "HeaderError", "DatabaseError", "PolicyFindingError", "EnumError", "KeywordPlanError", "KeywordPlanCampaignError", "KeywordPlanNegativeKeywordError", "KeywordPlanAdGroupError", "KeywordPlanKeywordError", "KeywordPlanIdeaError", "AccountBudgetProposalError", "UserListError", "ChangeStatusError", "FeedError", "GeoTargetConstantSuggestionError", "CampaignDraftError", "FeedItemError", "LabelError", "BillingSetupError", "CustomerClientLinkError", "CustomerManagerLinkError", "FeedMappingError", "CustomerFeedError", "AdGroupFeedError", "CampaignFeedError", "CustomInterestError", "CampaignExperimentError", "ExtensionFeedItemError", "AdParameterError", "FeedItemValidationError", "ExtensionSettingError", "FeedItemTargetError", "PolicyViolationError", "MutateJobError", "PartialFailureError", "PolicyValidationParameterError", "SizeLimitError", "OfflineUserDataJobError", "NotWhitelistedError", "ManagerLinkError", "CurrencyCodeError", "AccessInvitationError", "ReachPlanError", "InvoiceError", "PaymentsAccountError", "TimeZoneError", "AssetLinkError" }, new[]{ "ErrorCode" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ErrorLocation), global::Google.Ads.GoogleAds.V3.Errors.ErrorLocation.Parser, new[]{ "FieldPathElements" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ErrorLocation.Types.FieldPathElement), global::Google.Ads.GoogleAds.V3.Errors.ErrorLocation.Types.FieldPathElement.Parser, new[]{ "FieldName", "Index" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ErrorDetails), global::Google.Ads.GoogleAds.V3.Errors.ErrorDetails.Parser, new[]{ "UnpublishedErrorCode", "PolicyViolationDetails", "PolicyFindingDetails" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationDetails), global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationDetails.Parser, new[]{ "ExternalPolicyDescription", "Key", "ExternalPolicyName", "IsExemptible" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingDetails), global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingDetails.Parser, new[]{ "PolicyTopicEntries" }, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.ValueReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AccessInvitationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AccountBudgetProposalErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdCustomizerErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupAdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupBidModifierErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdGroupFeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdParameterErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdSharingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AdxErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AssetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AssetLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AuthenticationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.BiddingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.BiddingStrategyErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.BillingSetupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignBudgetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignDraftErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignExperimentErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignFeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CampaignSharedSetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ChangeStatusErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CollectionSizeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ContextErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ConversionActionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ConversionAdjustmentUploadErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ConversionUploadErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CountryCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CurrencyCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomInterestErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomerClientLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomerErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomerFeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.CustomerManagerLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.DatabaseErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.DateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.DateRangeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.DistinctErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.EnumErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ExtensionFeedItemErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ExtensionSettingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedAttributeReferenceErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedItemErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedItemTargetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedMappingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FieldErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FieldMaskErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FunctionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FunctionParsingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.GeoTargetConstantSuggestionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.HeaderErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.IdErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ImageErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.InternalErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.InvoiceErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanAdGroupErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanCampaignErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanIdeaErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanKeywordErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanNegativeKeywordErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.LabelErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.LanguageCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ListOperationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ManagerLinkErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MediaBundleErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MediaFileErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MediaUploadErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MultiplierErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MutateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.MutateJobErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.NewResourceCreationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.NotEmptyErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.NotWhitelistedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.NullErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.OfflineUserDataJobErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.OperationAccessDeniedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.OperatorErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PartialFailureErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PaymentsAccountErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PolicyValidationParameterErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.QueryErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.QuotaErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.RangeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ReachPlanErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.RecommendationErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.RegionCodeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.RequestErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ResourceAccessDeniedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.ResourceCountLimitExceededErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.SettingErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.SharedCriterionErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.SharedSetErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.SizeLimitErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.StringFormatErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.StringLengthErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.TimeZoneErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.UrlFieldErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.UserDataErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.UserListErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.YoutubeVideoRegistrationErrorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.GoogleAdsFailure), global::Google.Ads.GoogleAds.V3.Errors.GoogleAdsFailure.Parser, new[]{ "Errors" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.GoogleAdsError), global::Google.Ads.GoogleAds.V3.Errors.GoogleAdsError.Parser, new[]{ "ErrorCode", "Message", "Trigger", "Location", "Details" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ErrorCode), global::Google.Ads.GoogleAds.V3.Errors.ErrorCode.Parser, new[]{ "RequestError", "BiddingStrategyError", "UrlFieldError", "ListOperationError", "QueryError", "MutateError", "FieldMaskError", "AuthorizationError", "InternalError", "QuotaError", "AdError", "AdGroupError", "CampaignBudgetError", "CampaignError", "AuthenticationError", "AdGroupCriterionError", "AdCustomizerError", "AdGroupAdError", "AdSharingError", "AdxError", "AssetError", "BiddingError", "CampaignCriterionError", "CollectionSizeError", "CountryCodeError", "CriterionError", "CustomerError", "DateError", "DateRangeError", "DistinctError", "FeedAttributeReferenceError", "FunctionError", "FunctionParsingError", "IdError", "ImageError", "LanguageCodeError", "MediaBundleError", "MediaUploadError", "MediaFileError", "MultiplierError", "NewResourceCreationError", "NotEmptyError", "NullError", "OperatorError", "RangeError", "RecommendationError", "RegionCodeError", "SettingError", "StringFormatError", "StringLengthError", "OperationAccessDeniedError", "ResourceAccessDeniedError", "ResourceCountLimitExceededError", "YoutubeVideoRegistrationError", "AdGroupBidModifierError", "ContextError", "FieldError", "SharedSetError", "SharedCriterionError", "CampaignSharedSetError", "ConversionActionError", "ConversionAdjustmentUploadError", "ConversionUploadError", "HeaderError", "DatabaseError", "PolicyFindingError", "EnumError", "KeywordPlanError", "KeywordPlanCampaignError", "KeywordPlanNegativeKeywordError", "KeywordPlanAdGroupError", "KeywordPlanKeywordError", "KeywordPlanIdeaError", "AccountBudgetProposalError", "UserListError", "ChangeStatusError", "FeedError", "GeoTargetConstantSuggestionError", "CampaignDraftError", "FeedItemError", "LabelError", "BillingSetupError", "CustomerClientLinkError", "CustomerManagerLinkError", "FeedMappingError", "CustomerFeedError", "AdGroupFeedError", "CampaignFeedError", "CustomInterestError", "CampaignExperimentError", "ExtensionFeedItemError", "AdParameterError", "FeedItemValidationError", "ExtensionSettingError", "FeedItemTargetError", "PolicyViolationError", "MutateJobError", "PartialFailureError", "PolicyValidationParameterError", "SizeLimitError", "OfflineUserDataJobError", "NotWhitelistedError", "ManagerLinkError", "CurrencyCodeError", "AccessInvitationError", "ReachPlanError", "InvoiceError", "PaymentsAccountError", "TimeZoneError", "AssetLinkError", "UserDataError" }, new[]{ "ErrorCode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ErrorLocation), global::Google.Ads.GoogleAds.V3.Errors.ErrorLocation.Parser, new[]{ "FieldPathElements" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ErrorLocation.Types.FieldPathElement), global::Google.Ads.GoogleAds.V3.Errors.ErrorLocation.Types.FieldPathElement.Parser, new[]{ "FieldName", "Index" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ErrorDetails), global::Google.Ads.GoogleAds.V3.Errors.ErrorDetails.Parser, new[]{ "UnpublishedErrorCode", "PolicyViolationDetails", "PolicyFindingDetails" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationDetails), global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationDetails.Parser, new[]{ "ExternalPolicyDescription", "Key", "ExternalPolicyName", "IsExemptible" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingDetails), global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingDetails.Parser, new[]{ "PolicyTopicEntries" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1243,6 +1247,9 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         case ErrorCodeOneofCase.AssetLinkError:
           AssetLinkError = other.AssetLinkError;
           break;
+        case ErrorCodeOneofCase.UserDataError:
+          UserDataError = other.UserDataError;
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1260,7 +1267,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.RequestErrorEnum.Types.RequestError RequestError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.RequestError ? (global::Google.Ads.GoogleAds.V3.Errors.RequestErrorEnum.Types.RequestError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.RequestError ? (global::Google.Ads.GoogleAds.V3.Errors.RequestErrorEnum.Types.RequestError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.RequestErrorEnum.Types.RequestError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.RequestError;
@@ -1274,7 +1281,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.BiddingStrategyErrorEnum.Types.BiddingStrategyError BiddingStrategyError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.BiddingStrategyError ? (global::Google.Ads.GoogleAds.V3.Errors.BiddingStrategyErrorEnum.Types.BiddingStrategyError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.BiddingStrategyError ? (global::Google.Ads.GoogleAds.V3.Errors.BiddingStrategyErrorEnum.Types.BiddingStrategyError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.BiddingStrategyErrorEnum.Types.BiddingStrategyError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.BiddingStrategyError;
@@ -1288,7 +1295,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.UrlFieldErrorEnum.Types.UrlFieldError UrlFieldError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.UrlFieldError ? (global::Google.Ads.GoogleAds.V3.Errors.UrlFieldErrorEnum.Types.UrlFieldError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.UrlFieldError ? (global::Google.Ads.GoogleAds.V3.Errors.UrlFieldErrorEnum.Types.UrlFieldError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.UrlFieldErrorEnum.Types.UrlFieldError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.UrlFieldError;
@@ -1302,7 +1309,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ListOperationErrorEnum.Types.ListOperationError ListOperationError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ListOperationError ? (global::Google.Ads.GoogleAds.V3.Errors.ListOperationErrorEnum.Types.ListOperationError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ListOperationError ? (global::Google.Ads.GoogleAds.V3.Errors.ListOperationErrorEnum.Types.ListOperationError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ListOperationErrorEnum.Types.ListOperationError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ListOperationError;
@@ -1316,7 +1323,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.QueryErrorEnum.Types.QueryError QueryError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.QueryError ? (global::Google.Ads.GoogleAds.V3.Errors.QueryErrorEnum.Types.QueryError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.QueryError ? (global::Google.Ads.GoogleAds.V3.Errors.QueryErrorEnum.Types.QueryError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.QueryErrorEnum.Types.QueryError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.QueryError;
@@ -1330,7 +1337,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum.Types.MutateError MutateError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.MutateError ? (global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum.Types.MutateError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.MutateError ? (global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum.Types.MutateError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum.Types.MutateError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.MutateError;
@@ -1344,7 +1351,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FieldMaskErrorEnum.Types.FieldMaskError FieldMaskError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FieldMaskError ? (global::Google.Ads.GoogleAds.V3.Errors.FieldMaskErrorEnum.Types.FieldMaskError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FieldMaskError ? (global::Google.Ads.GoogleAds.V3.Errors.FieldMaskErrorEnum.Types.FieldMaskError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FieldMaskErrorEnum.Types.FieldMaskError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FieldMaskError;
@@ -1358,7 +1365,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum.Types.AuthorizationError AuthorizationError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AuthorizationError ? (global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum.Types.AuthorizationError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AuthorizationError ? (global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum.Types.AuthorizationError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum.Types.AuthorizationError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AuthorizationError;
@@ -1372,7 +1379,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.InternalErrorEnum.Types.InternalError InternalError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.InternalError ? (global::Google.Ads.GoogleAds.V3.Errors.InternalErrorEnum.Types.InternalError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.InternalError ? (global::Google.Ads.GoogleAds.V3.Errors.InternalErrorEnum.Types.InternalError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.InternalErrorEnum.Types.InternalError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.InternalError;
@@ -1386,7 +1393,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.QuotaErrorEnum.Types.QuotaError QuotaError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.QuotaError ? (global::Google.Ads.GoogleAds.V3.Errors.QuotaErrorEnum.Types.QuotaError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.QuotaError ? (global::Google.Ads.GoogleAds.V3.Errors.QuotaErrorEnum.Types.QuotaError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.QuotaErrorEnum.Types.QuotaError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.QuotaError;
@@ -1400,7 +1407,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdErrorEnum.Types.AdError AdError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdError ? (global::Google.Ads.GoogleAds.V3.Errors.AdErrorEnum.Types.AdError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdError ? (global::Google.Ads.GoogleAds.V3.Errors.AdErrorEnum.Types.AdError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdErrorEnum.Types.AdError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdError;
@@ -1414,7 +1421,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdGroupErrorEnum.Types.AdGroupError AdGroupError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupErrorEnum.Types.AdGroupError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupErrorEnum.Types.AdGroupError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdGroupErrorEnum.Types.AdGroupError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdGroupError;
@@ -1428,7 +1435,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CampaignBudgetErrorEnum.Types.CampaignBudgetError CampaignBudgetError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignBudgetError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignBudgetErrorEnum.Types.CampaignBudgetError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignBudgetError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignBudgetErrorEnum.Types.CampaignBudgetError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CampaignBudgetErrorEnum.Types.CampaignBudgetError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CampaignBudgetError;
@@ -1442,7 +1449,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CampaignErrorEnum.Types.CampaignError CampaignError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignErrorEnum.Types.CampaignError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignErrorEnum.Types.CampaignError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CampaignErrorEnum.Types.CampaignError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CampaignError;
@@ -1456,7 +1463,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AuthenticationErrorEnum.Types.AuthenticationError AuthenticationError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AuthenticationError ? (global::Google.Ads.GoogleAds.V3.Errors.AuthenticationErrorEnum.Types.AuthenticationError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AuthenticationError ? (global::Google.Ads.GoogleAds.V3.Errors.AuthenticationErrorEnum.Types.AuthenticationError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AuthenticationErrorEnum.Types.AuthenticationError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AuthenticationError;
@@ -1470,7 +1477,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdGroupCriterionErrorEnum.Types.AdGroupCriterionError AdGroupCriterionError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupCriterionError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupCriterionErrorEnum.Types.AdGroupCriterionError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupCriterionError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupCriterionErrorEnum.Types.AdGroupCriterionError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdGroupCriterionErrorEnum.Types.AdGroupCriterionError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdGroupCriterionError;
@@ -1484,7 +1491,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdCustomizerErrorEnum.Types.AdCustomizerError AdCustomizerError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdCustomizerError ? (global::Google.Ads.GoogleAds.V3.Errors.AdCustomizerErrorEnum.Types.AdCustomizerError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdCustomizerError ? (global::Google.Ads.GoogleAds.V3.Errors.AdCustomizerErrorEnum.Types.AdCustomizerError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdCustomizerErrorEnum.Types.AdCustomizerError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdCustomizerError;
@@ -1498,7 +1505,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdGroupAdErrorEnum.Types.AdGroupAdError AdGroupAdError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupAdError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupAdErrorEnum.Types.AdGroupAdError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupAdError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupAdErrorEnum.Types.AdGroupAdError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdGroupAdErrorEnum.Types.AdGroupAdError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdGroupAdError;
@@ -1512,7 +1519,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdSharingErrorEnum.Types.AdSharingError AdSharingError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdSharingError ? (global::Google.Ads.GoogleAds.V3.Errors.AdSharingErrorEnum.Types.AdSharingError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdSharingError ? (global::Google.Ads.GoogleAds.V3.Errors.AdSharingErrorEnum.Types.AdSharingError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdSharingErrorEnum.Types.AdSharingError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdSharingError;
@@ -1526,7 +1533,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdxErrorEnum.Types.AdxError AdxError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdxError ? (global::Google.Ads.GoogleAds.V3.Errors.AdxErrorEnum.Types.AdxError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdxError ? (global::Google.Ads.GoogleAds.V3.Errors.AdxErrorEnum.Types.AdxError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdxErrorEnum.Types.AdxError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdxError;
@@ -1540,7 +1547,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AssetErrorEnum.Types.AssetError AssetError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AssetError ? (global::Google.Ads.GoogleAds.V3.Errors.AssetErrorEnum.Types.AssetError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AssetError ? (global::Google.Ads.GoogleAds.V3.Errors.AssetErrorEnum.Types.AssetError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AssetErrorEnum.Types.AssetError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AssetError;
@@ -1554,7 +1561,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.BiddingErrorEnum.Types.BiddingError BiddingError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.BiddingError ? (global::Google.Ads.GoogleAds.V3.Errors.BiddingErrorEnum.Types.BiddingError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.BiddingError ? (global::Google.Ads.GoogleAds.V3.Errors.BiddingErrorEnum.Types.BiddingError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.BiddingErrorEnum.Types.BiddingError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.BiddingError;
@@ -1568,7 +1575,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CampaignCriterionErrorEnum.Types.CampaignCriterionError CampaignCriterionError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignCriterionError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignCriterionErrorEnum.Types.CampaignCriterionError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignCriterionError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignCriterionErrorEnum.Types.CampaignCriterionError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CampaignCriterionErrorEnum.Types.CampaignCriterionError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CampaignCriterionError;
@@ -1582,7 +1589,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CollectionSizeErrorEnum.Types.CollectionSizeError CollectionSizeError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CollectionSizeError ? (global::Google.Ads.GoogleAds.V3.Errors.CollectionSizeErrorEnum.Types.CollectionSizeError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CollectionSizeError ? (global::Google.Ads.GoogleAds.V3.Errors.CollectionSizeErrorEnum.Types.CollectionSizeError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CollectionSizeErrorEnum.Types.CollectionSizeError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CollectionSizeError;
@@ -1596,7 +1603,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CountryCodeErrorEnum.Types.CountryCodeError CountryCodeError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CountryCodeError ? (global::Google.Ads.GoogleAds.V3.Errors.CountryCodeErrorEnum.Types.CountryCodeError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CountryCodeError ? (global::Google.Ads.GoogleAds.V3.Errors.CountryCodeErrorEnum.Types.CountryCodeError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CountryCodeErrorEnum.Types.CountryCodeError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CountryCodeError;
@@ -1610,7 +1617,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum.Types.CriterionError CriterionError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CriterionError ? (global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum.Types.CriterionError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CriterionError ? (global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum.Types.CriterionError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum.Types.CriterionError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CriterionError;
@@ -1624,7 +1631,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CustomerErrorEnum.Types.CustomerError CustomerError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomerError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomerErrorEnum.Types.CustomerError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomerError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomerErrorEnum.Types.CustomerError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CustomerErrorEnum.Types.CustomerError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CustomerError;
@@ -1638,7 +1645,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.DateErrorEnum.Types.DateError DateError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.DateError ? (global::Google.Ads.GoogleAds.V3.Errors.DateErrorEnum.Types.DateError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.DateError ? (global::Google.Ads.GoogleAds.V3.Errors.DateErrorEnum.Types.DateError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.DateErrorEnum.Types.DateError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.DateError;
@@ -1652,7 +1659,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.DateRangeErrorEnum.Types.DateRangeError DateRangeError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.DateRangeError ? (global::Google.Ads.GoogleAds.V3.Errors.DateRangeErrorEnum.Types.DateRangeError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.DateRangeError ? (global::Google.Ads.GoogleAds.V3.Errors.DateRangeErrorEnum.Types.DateRangeError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.DateRangeErrorEnum.Types.DateRangeError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.DateRangeError;
@@ -1666,7 +1673,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.DistinctErrorEnum.Types.DistinctError DistinctError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.DistinctError ? (global::Google.Ads.GoogleAds.V3.Errors.DistinctErrorEnum.Types.DistinctError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.DistinctError ? (global::Google.Ads.GoogleAds.V3.Errors.DistinctErrorEnum.Types.DistinctError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.DistinctErrorEnum.Types.DistinctError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.DistinctError;
@@ -1680,7 +1687,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FeedAttributeReferenceErrorEnum.Types.FeedAttributeReferenceError FeedAttributeReferenceError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedAttributeReferenceError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedAttributeReferenceErrorEnum.Types.FeedAttributeReferenceError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedAttributeReferenceError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedAttributeReferenceErrorEnum.Types.FeedAttributeReferenceError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FeedAttributeReferenceErrorEnum.Types.FeedAttributeReferenceError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FeedAttributeReferenceError;
@@ -1694,7 +1701,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FunctionErrorEnum.Types.FunctionError FunctionError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FunctionError ? (global::Google.Ads.GoogleAds.V3.Errors.FunctionErrorEnum.Types.FunctionError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FunctionError ? (global::Google.Ads.GoogleAds.V3.Errors.FunctionErrorEnum.Types.FunctionError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FunctionErrorEnum.Types.FunctionError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FunctionError;
@@ -1708,7 +1715,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FunctionParsingErrorEnum.Types.FunctionParsingError FunctionParsingError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FunctionParsingError ? (global::Google.Ads.GoogleAds.V3.Errors.FunctionParsingErrorEnum.Types.FunctionParsingError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FunctionParsingError ? (global::Google.Ads.GoogleAds.V3.Errors.FunctionParsingErrorEnum.Types.FunctionParsingError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FunctionParsingErrorEnum.Types.FunctionParsingError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FunctionParsingError;
@@ -1722,7 +1729,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.IdErrorEnum.Types.IdError IdError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.IdError ? (global::Google.Ads.GoogleAds.V3.Errors.IdErrorEnum.Types.IdError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.IdError ? (global::Google.Ads.GoogleAds.V3.Errors.IdErrorEnum.Types.IdError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.IdErrorEnum.Types.IdError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.IdError;
@@ -1736,7 +1743,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum.Types.ImageError ImageError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ImageError ? (global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum.Types.ImageError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ImageError ? (global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum.Types.ImageError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum.Types.ImageError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ImageError;
@@ -1750,7 +1757,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.LanguageCodeErrorEnum.Types.LanguageCodeError LanguageCodeError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.LanguageCodeError ? (global::Google.Ads.GoogleAds.V3.Errors.LanguageCodeErrorEnum.Types.LanguageCodeError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.LanguageCodeError ? (global::Google.Ads.GoogleAds.V3.Errors.LanguageCodeErrorEnum.Types.LanguageCodeError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.LanguageCodeErrorEnum.Types.LanguageCodeError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.LanguageCodeError;
@@ -1764,7 +1771,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.MediaBundleErrorEnum.Types.MediaBundleError MediaBundleError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.MediaBundleError ? (global::Google.Ads.GoogleAds.V3.Errors.MediaBundleErrorEnum.Types.MediaBundleError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.MediaBundleError ? (global::Google.Ads.GoogleAds.V3.Errors.MediaBundleErrorEnum.Types.MediaBundleError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.MediaBundleErrorEnum.Types.MediaBundleError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.MediaBundleError;
@@ -1778,7 +1785,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.MediaUploadErrorEnum.Types.MediaUploadError MediaUploadError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.MediaUploadError ? (global::Google.Ads.GoogleAds.V3.Errors.MediaUploadErrorEnum.Types.MediaUploadError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.MediaUploadError ? (global::Google.Ads.GoogleAds.V3.Errors.MediaUploadErrorEnum.Types.MediaUploadError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.MediaUploadErrorEnum.Types.MediaUploadError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.MediaUploadError;
@@ -1792,7 +1799,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.MediaFileErrorEnum.Types.MediaFileError MediaFileError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.MediaFileError ? (global::Google.Ads.GoogleAds.V3.Errors.MediaFileErrorEnum.Types.MediaFileError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.MediaFileError ? (global::Google.Ads.GoogleAds.V3.Errors.MediaFileErrorEnum.Types.MediaFileError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.MediaFileErrorEnum.Types.MediaFileError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.MediaFileError;
@@ -1806,7 +1813,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.MultiplierErrorEnum.Types.MultiplierError MultiplierError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.MultiplierError ? (global::Google.Ads.GoogleAds.V3.Errors.MultiplierErrorEnum.Types.MultiplierError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.MultiplierError ? (global::Google.Ads.GoogleAds.V3.Errors.MultiplierErrorEnum.Types.MultiplierError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.MultiplierErrorEnum.Types.MultiplierError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.MultiplierError;
@@ -1820,7 +1827,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.NewResourceCreationErrorEnum.Types.NewResourceCreationError NewResourceCreationError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.NewResourceCreationError ? (global::Google.Ads.GoogleAds.V3.Errors.NewResourceCreationErrorEnum.Types.NewResourceCreationError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.NewResourceCreationError ? (global::Google.Ads.GoogleAds.V3.Errors.NewResourceCreationErrorEnum.Types.NewResourceCreationError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.NewResourceCreationErrorEnum.Types.NewResourceCreationError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.NewResourceCreationError;
@@ -1834,7 +1841,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.NotEmptyErrorEnum.Types.NotEmptyError NotEmptyError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.NotEmptyError ? (global::Google.Ads.GoogleAds.V3.Errors.NotEmptyErrorEnum.Types.NotEmptyError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.NotEmptyError ? (global::Google.Ads.GoogleAds.V3.Errors.NotEmptyErrorEnum.Types.NotEmptyError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.NotEmptyErrorEnum.Types.NotEmptyError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.NotEmptyError;
@@ -1848,7 +1855,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.NullErrorEnum.Types.NullError NullError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.NullError ? (global::Google.Ads.GoogleAds.V3.Errors.NullErrorEnum.Types.NullError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.NullError ? (global::Google.Ads.GoogleAds.V3.Errors.NullErrorEnum.Types.NullError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.NullErrorEnum.Types.NullError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.NullError;
@@ -1862,7 +1869,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.OperatorErrorEnum.Types.OperatorError OperatorError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.OperatorError ? (global::Google.Ads.GoogleAds.V3.Errors.OperatorErrorEnum.Types.OperatorError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.OperatorError ? (global::Google.Ads.GoogleAds.V3.Errors.OperatorErrorEnum.Types.OperatorError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.OperatorErrorEnum.Types.OperatorError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.OperatorError;
@@ -1876,7 +1883,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.RangeErrorEnum.Types.RangeError RangeError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.RangeError ? (global::Google.Ads.GoogleAds.V3.Errors.RangeErrorEnum.Types.RangeError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.RangeError ? (global::Google.Ads.GoogleAds.V3.Errors.RangeErrorEnum.Types.RangeError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.RangeErrorEnum.Types.RangeError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.RangeError;
@@ -1890,7 +1897,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.RecommendationErrorEnum.Types.RecommendationError RecommendationError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.RecommendationError ? (global::Google.Ads.GoogleAds.V3.Errors.RecommendationErrorEnum.Types.RecommendationError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.RecommendationError ? (global::Google.Ads.GoogleAds.V3.Errors.RecommendationErrorEnum.Types.RecommendationError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.RecommendationErrorEnum.Types.RecommendationError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.RecommendationError;
@@ -1904,7 +1911,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.RegionCodeErrorEnum.Types.RegionCodeError RegionCodeError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.RegionCodeError ? (global::Google.Ads.GoogleAds.V3.Errors.RegionCodeErrorEnum.Types.RegionCodeError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.RegionCodeError ? (global::Google.Ads.GoogleAds.V3.Errors.RegionCodeErrorEnum.Types.RegionCodeError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.RegionCodeErrorEnum.Types.RegionCodeError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.RegionCodeError;
@@ -1918,7 +1925,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.SettingErrorEnum.Types.SettingError SettingError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.SettingError ? (global::Google.Ads.GoogleAds.V3.Errors.SettingErrorEnum.Types.SettingError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.SettingError ? (global::Google.Ads.GoogleAds.V3.Errors.SettingErrorEnum.Types.SettingError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.SettingErrorEnum.Types.SettingError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.SettingError;
@@ -1932,7 +1939,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.StringFormatErrorEnum.Types.StringFormatError StringFormatError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.StringFormatError ? (global::Google.Ads.GoogleAds.V3.Errors.StringFormatErrorEnum.Types.StringFormatError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.StringFormatError ? (global::Google.Ads.GoogleAds.V3.Errors.StringFormatErrorEnum.Types.StringFormatError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.StringFormatErrorEnum.Types.StringFormatError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.StringFormatError;
@@ -1946,7 +1953,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.StringLengthErrorEnum.Types.StringLengthError StringLengthError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.StringLengthError ? (global::Google.Ads.GoogleAds.V3.Errors.StringLengthErrorEnum.Types.StringLengthError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.StringLengthError ? (global::Google.Ads.GoogleAds.V3.Errors.StringLengthErrorEnum.Types.StringLengthError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.StringLengthErrorEnum.Types.StringLengthError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.StringLengthError;
@@ -1960,7 +1967,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.OperationAccessDeniedErrorEnum.Types.OperationAccessDeniedError OperationAccessDeniedError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.OperationAccessDeniedError ? (global::Google.Ads.GoogleAds.V3.Errors.OperationAccessDeniedErrorEnum.Types.OperationAccessDeniedError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.OperationAccessDeniedError ? (global::Google.Ads.GoogleAds.V3.Errors.OperationAccessDeniedErrorEnum.Types.OperationAccessDeniedError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.OperationAccessDeniedErrorEnum.Types.OperationAccessDeniedError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.OperationAccessDeniedError;
@@ -1974,7 +1981,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ResourceAccessDeniedErrorEnum.Types.ResourceAccessDeniedError ResourceAccessDeniedError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ResourceAccessDeniedError ? (global::Google.Ads.GoogleAds.V3.Errors.ResourceAccessDeniedErrorEnum.Types.ResourceAccessDeniedError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ResourceAccessDeniedError ? (global::Google.Ads.GoogleAds.V3.Errors.ResourceAccessDeniedErrorEnum.Types.ResourceAccessDeniedError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ResourceAccessDeniedErrorEnum.Types.ResourceAccessDeniedError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ResourceAccessDeniedError;
@@ -1988,7 +1995,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ResourceCountLimitExceededErrorEnum.Types.ResourceCountLimitExceededError ResourceCountLimitExceededError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ResourceCountLimitExceededError ? (global::Google.Ads.GoogleAds.V3.Errors.ResourceCountLimitExceededErrorEnum.Types.ResourceCountLimitExceededError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ResourceCountLimitExceededError ? (global::Google.Ads.GoogleAds.V3.Errors.ResourceCountLimitExceededErrorEnum.Types.ResourceCountLimitExceededError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ResourceCountLimitExceededErrorEnum.Types.ResourceCountLimitExceededError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ResourceCountLimitExceededError;
@@ -2002,7 +2009,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.YoutubeVideoRegistrationErrorEnum.Types.YoutubeVideoRegistrationError YoutubeVideoRegistrationError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.YoutubeVideoRegistrationError ? (global::Google.Ads.GoogleAds.V3.Errors.YoutubeVideoRegistrationErrorEnum.Types.YoutubeVideoRegistrationError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.YoutubeVideoRegistrationError ? (global::Google.Ads.GoogleAds.V3.Errors.YoutubeVideoRegistrationErrorEnum.Types.YoutubeVideoRegistrationError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.YoutubeVideoRegistrationErrorEnum.Types.YoutubeVideoRegistrationError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.YoutubeVideoRegistrationError;
@@ -2016,7 +2023,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdGroupBidModifierErrorEnum.Types.AdGroupBidModifierError AdGroupBidModifierError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupBidModifierError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupBidModifierErrorEnum.Types.AdGroupBidModifierError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupBidModifierError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupBidModifierErrorEnum.Types.AdGroupBidModifierError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdGroupBidModifierErrorEnum.Types.AdGroupBidModifierError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdGroupBidModifierError;
@@ -2030,7 +2037,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ContextErrorEnum.Types.ContextError ContextError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ContextError ? (global::Google.Ads.GoogleAds.V3.Errors.ContextErrorEnum.Types.ContextError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ContextError ? (global::Google.Ads.GoogleAds.V3.Errors.ContextErrorEnum.Types.ContextError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ContextErrorEnum.Types.ContextError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ContextError;
@@ -2044,7 +2051,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FieldErrorEnum.Types.FieldError FieldError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FieldError ? (global::Google.Ads.GoogleAds.V3.Errors.FieldErrorEnum.Types.FieldError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FieldError ? (global::Google.Ads.GoogleAds.V3.Errors.FieldErrorEnum.Types.FieldError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FieldErrorEnum.Types.FieldError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FieldError;
@@ -2058,7 +2065,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.SharedSetErrorEnum.Types.SharedSetError SharedSetError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.SharedSetError ? (global::Google.Ads.GoogleAds.V3.Errors.SharedSetErrorEnum.Types.SharedSetError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.SharedSetError ? (global::Google.Ads.GoogleAds.V3.Errors.SharedSetErrorEnum.Types.SharedSetError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.SharedSetErrorEnum.Types.SharedSetError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.SharedSetError;
@@ -2072,7 +2079,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.SharedCriterionErrorEnum.Types.SharedCriterionError SharedCriterionError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.SharedCriterionError ? (global::Google.Ads.GoogleAds.V3.Errors.SharedCriterionErrorEnum.Types.SharedCriterionError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.SharedCriterionError ? (global::Google.Ads.GoogleAds.V3.Errors.SharedCriterionErrorEnum.Types.SharedCriterionError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.SharedCriterionErrorEnum.Types.SharedCriterionError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.SharedCriterionError;
@@ -2086,7 +2093,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CampaignSharedSetErrorEnum.Types.CampaignSharedSetError CampaignSharedSetError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignSharedSetError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignSharedSetErrorEnum.Types.CampaignSharedSetError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignSharedSetError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignSharedSetErrorEnum.Types.CampaignSharedSetError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CampaignSharedSetErrorEnum.Types.CampaignSharedSetError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CampaignSharedSetError;
@@ -2100,7 +2107,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ConversionActionErrorEnum.Types.ConversionActionError ConversionActionError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ConversionActionError ? (global::Google.Ads.GoogleAds.V3.Errors.ConversionActionErrorEnum.Types.ConversionActionError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ConversionActionError ? (global::Google.Ads.GoogleAds.V3.Errors.ConversionActionErrorEnum.Types.ConversionActionError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ConversionActionErrorEnum.Types.ConversionActionError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ConversionActionError;
@@ -2114,7 +2121,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ConversionAdjustmentUploadErrorEnum.Types.ConversionAdjustmentUploadError ConversionAdjustmentUploadError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ConversionAdjustmentUploadError ? (global::Google.Ads.GoogleAds.V3.Errors.ConversionAdjustmentUploadErrorEnum.Types.ConversionAdjustmentUploadError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ConversionAdjustmentUploadError ? (global::Google.Ads.GoogleAds.V3.Errors.ConversionAdjustmentUploadErrorEnum.Types.ConversionAdjustmentUploadError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ConversionAdjustmentUploadErrorEnum.Types.ConversionAdjustmentUploadError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ConversionAdjustmentUploadError;
@@ -2128,7 +2135,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ConversionUploadErrorEnum.Types.ConversionUploadError ConversionUploadError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ConversionUploadError ? (global::Google.Ads.GoogleAds.V3.Errors.ConversionUploadErrorEnum.Types.ConversionUploadError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ConversionUploadError ? (global::Google.Ads.GoogleAds.V3.Errors.ConversionUploadErrorEnum.Types.ConversionUploadError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ConversionUploadErrorEnum.Types.ConversionUploadError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ConversionUploadError;
@@ -2142,7 +2149,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.HeaderErrorEnum.Types.HeaderError HeaderError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.HeaderError ? (global::Google.Ads.GoogleAds.V3.Errors.HeaderErrorEnum.Types.HeaderError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.HeaderError ? (global::Google.Ads.GoogleAds.V3.Errors.HeaderErrorEnum.Types.HeaderError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.HeaderErrorEnum.Types.HeaderError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.HeaderError;
@@ -2156,7 +2163,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.DatabaseErrorEnum.Types.DatabaseError DatabaseError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.DatabaseError ? (global::Google.Ads.GoogleAds.V3.Errors.DatabaseErrorEnum.Types.DatabaseError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.DatabaseError ? (global::Google.Ads.GoogleAds.V3.Errors.DatabaseErrorEnum.Types.DatabaseError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.DatabaseErrorEnum.Types.DatabaseError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.DatabaseError;
@@ -2170,7 +2177,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingErrorEnum.Types.PolicyFindingError PolicyFindingError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.PolicyFindingError ? (global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingErrorEnum.Types.PolicyFindingError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.PolicyFindingError ? (global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingErrorEnum.Types.PolicyFindingError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.PolicyFindingErrorEnum.Types.PolicyFindingError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.PolicyFindingError;
@@ -2184,7 +2191,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.EnumErrorEnum.Types.EnumError EnumError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.EnumError ? (global::Google.Ads.GoogleAds.V3.Errors.EnumErrorEnum.Types.EnumError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.EnumError ? (global::Google.Ads.GoogleAds.V3.Errors.EnumErrorEnum.Types.EnumError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.EnumErrorEnum.Types.EnumError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.EnumError;
@@ -2198,7 +2205,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanErrorEnum.Types.KeywordPlanError KeywordPlanError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanErrorEnum.Types.KeywordPlanError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanErrorEnum.Types.KeywordPlanError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanErrorEnum.Types.KeywordPlanError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanError;
@@ -2212,7 +2219,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanCampaignErrorEnum.Types.KeywordPlanCampaignError KeywordPlanCampaignError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanCampaignError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanCampaignErrorEnum.Types.KeywordPlanCampaignError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanCampaignError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanCampaignErrorEnum.Types.KeywordPlanCampaignError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanCampaignErrorEnum.Types.KeywordPlanCampaignError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanCampaignError;
@@ -2226,7 +2233,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanNegativeKeywordErrorEnum.Types.KeywordPlanNegativeKeywordError KeywordPlanNegativeKeywordError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanNegativeKeywordError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanNegativeKeywordErrorEnum.Types.KeywordPlanNegativeKeywordError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanNegativeKeywordError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanNegativeKeywordErrorEnum.Types.KeywordPlanNegativeKeywordError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanNegativeKeywordErrorEnum.Types.KeywordPlanNegativeKeywordError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanNegativeKeywordError;
@@ -2240,7 +2247,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanAdGroupErrorEnum.Types.KeywordPlanAdGroupError KeywordPlanAdGroupError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanAdGroupError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanAdGroupErrorEnum.Types.KeywordPlanAdGroupError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanAdGroupError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanAdGroupErrorEnum.Types.KeywordPlanAdGroupError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanAdGroupErrorEnum.Types.KeywordPlanAdGroupError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanAdGroupError;
@@ -2254,7 +2261,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanKeywordErrorEnum.Types.KeywordPlanKeywordError KeywordPlanKeywordError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanKeywordError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanKeywordErrorEnum.Types.KeywordPlanKeywordError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanKeywordError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanKeywordErrorEnum.Types.KeywordPlanKeywordError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanKeywordErrorEnum.Types.KeywordPlanKeywordError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanKeywordError;
@@ -2268,7 +2275,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanIdeaErrorEnum.Types.KeywordPlanIdeaError KeywordPlanIdeaError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanIdeaError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanIdeaErrorEnum.Types.KeywordPlanIdeaError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanIdeaError ? (global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanIdeaErrorEnum.Types.KeywordPlanIdeaError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.KeywordPlanIdeaErrorEnum.Types.KeywordPlanIdeaError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanIdeaError;
@@ -2282,7 +2289,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AccountBudgetProposalErrorEnum.Types.AccountBudgetProposalError AccountBudgetProposalError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AccountBudgetProposalError ? (global::Google.Ads.GoogleAds.V3.Errors.AccountBudgetProposalErrorEnum.Types.AccountBudgetProposalError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AccountBudgetProposalError ? (global::Google.Ads.GoogleAds.V3.Errors.AccountBudgetProposalErrorEnum.Types.AccountBudgetProposalError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AccountBudgetProposalErrorEnum.Types.AccountBudgetProposalError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AccountBudgetProposalError;
@@ -2296,7 +2303,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.UserListErrorEnum.Types.UserListError UserListError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.UserListError ? (global::Google.Ads.GoogleAds.V3.Errors.UserListErrorEnum.Types.UserListError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.UserListError ? (global::Google.Ads.GoogleAds.V3.Errors.UserListErrorEnum.Types.UserListError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.UserListErrorEnum.Types.UserListError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.UserListError;
@@ -2310,7 +2317,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ChangeStatusErrorEnum.Types.ChangeStatusError ChangeStatusError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ChangeStatusError ? (global::Google.Ads.GoogleAds.V3.Errors.ChangeStatusErrorEnum.Types.ChangeStatusError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ChangeStatusError ? (global::Google.Ads.GoogleAds.V3.Errors.ChangeStatusErrorEnum.Types.ChangeStatusError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ChangeStatusErrorEnum.Types.ChangeStatusError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ChangeStatusError;
@@ -2324,7 +2331,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FeedErrorEnum.Types.FeedError FeedError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedErrorEnum.Types.FeedError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedErrorEnum.Types.FeedError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FeedErrorEnum.Types.FeedError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FeedError;
@@ -2338,7 +2345,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.GeoTargetConstantSuggestionErrorEnum.Types.GeoTargetConstantSuggestionError GeoTargetConstantSuggestionError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.GeoTargetConstantSuggestionError ? (global::Google.Ads.GoogleAds.V3.Errors.GeoTargetConstantSuggestionErrorEnum.Types.GeoTargetConstantSuggestionError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.GeoTargetConstantSuggestionError ? (global::Google.Ads.GoogleAds.V3.Errors.GeoTargetConstantSuggestionErrorEnum.Types.GeoTargetConstantSuggestionError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.GeoTargetConstantSuggestionErrorEnum.Types.GeoTargetConstantSuggestionError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.GeoTargetConstantSuggestionError;
@@ -2352,7 +2359,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CampaignDraftErrorEnum.Types.CampaignDraftError CampaignDraftError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignDraftError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignDraftErrorEnum.Types.CampaignDraftError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignDraftError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignDraftErrorEnum.Types.CampaignDraftError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CampaignDraftErrorEnum.Types.CampaignDraftError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CampaignDraftError;
@@ -2366,7 +2373,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FeedItemErrorEnum.Types.FeedItemError FeedItemError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedItemError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedItemErrorEnum.Types.FeedItemError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedItemError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedItemErrorEnum.Types.FeedItemError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FeedItemErrorEnum.Types.FeedItemError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FeedItemError;
@@ -2380,7 +2387,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.LabelErrorEnum.Types.LabelError LabelError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.LabelError ? (global::Google.Ads.GoogleAds.V3.Errors.LabelErrorEnum.Types.LabelError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.LabelError ? (global::Google.Ads.GoogleAds.V3.Errors.LabelErrorEnum.Types.LabelError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.LabelErrorEnum.Types.LabelError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.LabelError;
@@ -2394,7 +2401,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.BillingSetupErrorEnum.Types.BillingSetupError BillingSetupError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.BillingSetupError ? (global::Google.Ads.GoogleAds.V3.Errors.BillingSetupErrorEnum.Types.BillingSetupError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.BillingSetupError ? (global::Google.Ads.GoogleAds.V3.Errors.BillingSetupErrorEnum.Types.BillingSetupError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.BillingSetupErrorEnum.Types.BillingSetupError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.BillingSetupError;
@@ -2408,7 +2415,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CustomerClientLinkErrorEnum.Types.CustomerClientLinkError CustomerClientLinkError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomerClientLinkError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomerClientLinkErrorEnum.Types.CustomerClientLinkError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomerClientLinkError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomerClientLinkErrorEnum.Types.CustomerClientLinkError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CustomerClientLinkErrorEnum.Types.CustomerClientLinkError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CustomerClientLinkError;
@@ -2422,7 +2429,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CustomerManagerLinkErrorEnum.Types.CustomerManagerLinkError CustomerManagerLinkError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomerManagerLinkError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomerManagerLinkErrorEnum.Types.CustomerManagerLinkError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomerManagerLinkError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomerManagerLinkErrorEnum.Types.CustomerManagerLinkError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CustomerManagerLinkErrorEnum.Types.CustomerManagerLinkError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CustomerManagerLinkError;
@@ -2436,7 +2443,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FeedMappingErrorEnum.Types.FeedMappingError FeedMappingError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedMappingError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedMappingErrorEnum.Types.FeedMappingError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedMappingError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedMappingErrorEnum.Types.FeedMappingError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FeedMappingErrorEnum.Types.FeedMappingError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FeedMappingError;
@@ -2450,7 +2457,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CustomerFeedErrorEnum.Types.CustomerFeedError CustomerFeedError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomerFeedError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomerFeedErrorEnum.Types.CustomerFeedError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomerFeedError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomerFeedErrorEnum.Types.CustomerFeedError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CustomerFeedErrorEnum.Types.CustomerFeedError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CustomerFeedError;
@@ -2464,7 +2471,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdGroupFeedErrorEnum.Types.AdGroupFeedError AdGroupFeedError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupFeedError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupFeedErrorEnum.Types.AdGroupFeedError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdGroupFeedError ? (global::Google.Ads.GoogleAds.V3.Errors.AdGroupFeedErrorEnum.Types.AdGroupFeedError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdGroupFeedErrorEnum.Types.AdGroupFeedError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdGroupFeedError;
@@ -2478,7 +2485,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CampaignFeedErrorEnum.Types.CampaignFeedError CampaignFeedError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignFeedError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignFeedErrorEnum.Types.CampaignFeedError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignFeedError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignFeedErrorEnum.Types.CampaignFeedError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CampaignFeedErrorEnum.Types.CampaignFeedError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CampaignFeedError;
@@ -2492,7 +2499,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CustomInterestErrorEnum.Types.CustomInterestError CustomInterestError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomInterestError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomInterestErrorEnum.Types.CustomInterestError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CustomInterestError ? (global::Google.Ads.GoogleAds.V3.Errors.CustomInterestErrorEnum.Types.CustomInterestError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CustomInterestErrorEnum.Types.CustomInterestError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CustomInterestError;
@@ -2506,7 +2513,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CampaignExperimentErrorEnum.Types.CampaignExperimentError CampaignExperimentError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignExperimentError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignExperimentErrorEnum.Types.CampaignExperimentError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CampaignExperimentError ? (global::Google.Ads.GoogleAds.V3.Errors.CampaignExperimentErrorEnum.Types.CampaignExperimentError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CampaignExperimentErrorEnum.Types.CampaignExperimentError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CampaignExperimentError;
@@ -2520,7 +2527,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ExtensionFeedItemErrorEnum.Types.ExtensionFeedItemError ExtensionFeedItemError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ExtensionFeedItemError ? (global::Google.Ads.GoogleAds.V3.Errors.ExtensionFeedItemErrorEnum.Types.ExtensionFeedItemError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ExtensionFeedItemError ? (global::Google.Ads.GoogleAds.V3.Errors.ExtensionFeedItemErrorEnum.Types.ExtensionFeedItemError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ExtensionFeedItemErrorEnum.Types.ExtensionFeedItemError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ExtensionFeedItemError;
@@ -2534,7 +2541,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AdParameterErrorEnum.Types.AdParameterError AdParameterError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AdParameterError ? (global::Google.Ads.GoogleAds.V3.Errors.AdParameterErrorEnum.Types.AdParameterError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AdParameterError ? (global::Google.Ads.GoogleAds.V3.Errors.AdParameterErrorEnum.Types.AdParameterError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AdParameterErrorEnum.Types.AdParameterError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AdParameterError;
@@ -2548,7 +2555,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError FeedItemValidationError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedItemValidationError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedItemValidationError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FeedItemValidationError;
@@ -2562,7 +2569,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ExtensionSettingErrorEnum.Types.ExtensionSettingError ExtensionSettingError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ExtensionSettingError ? (global::Google.Ads.GoogleAds.V3.Errors.ExtensionSettingErrorEnum.Types.ExtensionSettingError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ExtensionSettingError ? (global::Google.Ads.GoogleAds.V3.Errors.ExtensionSettingErrorEnum.Types.ExtensionSettingError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ExtensionSettingErrorEnum.Types.ExtensionSettingError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ExtensionSettingError;
@@ -2576,7 +2583,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.FeedItemTargetErrorEnum.Types.FeedItemTargetError FeedItemTargetError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedItemTargetError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedItemTargetErrorEnum.Types.FeedItemTargetError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.FeedItemTargetError ? (global::Google.Ads.GoogleAds.V3.Errors.FeedItemTargetErrorEnum.Types.FeedItemTargetError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.FeedItemTargetErrorEnum.Types.FeedItemTargetError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.FeedItemTargetError;
@@ -2590,7 +2597,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationErrorEnum.Types.PolicyViolationError PolicyViolationError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.PolicyViolationError ? (global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationErrorEnum.Types.PolicyViolationError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.PolicyViolationError ? (global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationErrorEnum.Types.PolicyViolationError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.PolicyViolationErrorEnum.Types.PolicyViolationError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.PolicyViolationError;
@@ -2604,7 +2611,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.MutateJobErrorEnum.Types.MutateJobError MutateJobError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.MutateJobError ? (global::Google.Ads.GoogleAds.V3.Errors.MutateJobErrorEnum.Types.MutateJobError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.MutateJobError ? (global::Google.Ads.GoogleAds.V3.Errors.MutateJobErrorEnum.Types.MutateJobError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.MutateJobErrorEnum.Types.MutateJobError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.MutateJobError;
@@ -2618,7 +2625,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.PartialFailureErrorEnum.Types.PartialFailureError PartialFailureError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.PartialFailureError ? (global::Google.Ads.GoogleAds.V3.Errors.PartialFailureErrorEnum.Types.PartialFailureError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.PartialFailureError ? (global::Google.Ads.GoogleAds.V3.Errors.PartialFailureErrorEnum.Types.PartialFailureError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.PartialFailureErrorEnum.Types.PartialFailureError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.PartialFailureError;
@@ -2632,7 +2639,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.PolicyValidationParameterErrorEnum.Types.PolicyValidationParameterError PolicyValidationParameterError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.PolicyValidationParameterError ? (global::Google.Ads.GoogleAds.V3.Errors.PolicyValidationParameterErrorEnum.Types.PolicyValidationParameterError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.PolicyValidationParameterError ? (global::Google.Ads.GoogleAds.V3.Errors.PolicyValidationParameterErrorEnum.Types.PolicyValidationParameterError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.PolicyValidationParameterErrorEnum.Types.PolicyValidationParameterError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.PolicyValidationParameterError;
@@ -2646,7 +2653,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.SizeLimitErrorEnum.Types.SizeLimitError SizeLimitError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.SizeLimitError ? (global::Google.Ads.GoogleAds.V3.Errors.SizeLimitErrorEnum.Types.SizeLimitError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.SizeLimitError ? (global::Google.Ads.GoogleAds.V3.Errors.SizeLimitErrorEnum.Types.SizeLimitError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.SizeLimitErrorEnum.Types.SizeLimitError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.SizeLimitError;
@@ -2660,7 +2667,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.OfflineUserDataJobErrorEnum.Types.OfflineUserDataJobError OfflineUserDataJobError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.OfflineUserDataJobError ? (global::Google.Ads.GoogleAds.V3.Errors.OfflineUserDataJobErrorEnum.Types.OfflineUserDataJobError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.OfflineUserDataJobError ? (global::Google.Ads.GoogleAds.V3.Errors.OfflineUserDataJobErrorEnum.Types.OfflineUserDataJobError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.OfflineUserDataJobErrorEnum.Types.OfflineUserDataJobError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.OfflineUserDataJobError;
@@ -2674,7 +2681,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.NotWhitelistedErrorEnum.Types.NotWhitelistedError NotWhitelistedError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.NotWhitelistedError ? (global::Google.Ads.GoogleAds.V3.Errors.NotWhitelistedErrorEnum.Types.NotWhitelistedError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.NotWhitelistedError ? (global::Google.Ads.GoogleAds.V3.Errors.NotWhitelistedErrorEnum.Types.NotWhitelistedError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.NotWhitelistedErrorEnum.Types.NotWhitelistedError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.NotWhitelistedError;
@@ -2688,7 +2695,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ManagerLinkErrorEnum.Types.ManagerLinkError ManagerLinkError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ManagerLinkError ? (global::Google.Ads.GoogleAds.V3.Errors.ManagerLinkErrorEnum.Types.ManagerLinkError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ManagerLinkError ? (global::Google.Ads.GoogleAds.V3.Errors.ManagerLinkErrorEnum.Types.ManagerLinkError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ManagerLinkErrorEnum.Types.ManagerLinkError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ManagerLinkError;
@@ -2702,7 +2709,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.CurrencyCodeErrorEnum.Types.CurrencyCodeError CurrencyCodeError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.CurrencyCodeError ? (global::Google.Ads.GoogleAds.V3.Errors.CurrencyCodeErrorEnum.Types.CurrencyCodeError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.CurrencyCodeError ? (global::Google.Ads.GoogleAds.V3.Errors.CurrencyCodeErrorEnum.Types.CurrencyCodeError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.CurrencyCodeErrorEnum.Types.CurrencyCodeError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.CurrencyCodeError;
@@ -2716,7 +2723,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AccessInvitationErrorEnum.Types.AccessInvitationError AccessInvitationError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AccessInvitationError ? (global::Google.Ads.GoogleAds.V3.Errors.AccessInvitationErrorEnum.Types.AccessInvitationError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AccessInvitationError ? (global::Google.Ads.GoogleAds.V3.Errors.AccessInvitationErrorEnum.Types.AccessInvitationError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AccessInvitationErrorEnum.Types.AccessInvitationError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AccessInvitationError;
@@ -2730,7 +2737,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.ReachPlanErrorEnum.Types.ReachPlanError ReachPlanError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.ReachPlanError ? (global::Google.Ads.GoogleAds.V3.Errors.ReachPlanErrorEnum.Types.ReachPlanError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.ReachPlanError ? (global::Google.Ads.GoogleAds.V3.Errors.ReachPlanErrorEnum.Types.ReachPlanError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.ReachPlanErrorEnum.Types.ReachPlanError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.ReachPlanError;
@@ -2744,7 +2751,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.InvoiceErrorEnum.Types.InvoiceError InvoiceError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.InvoiceError ? (global::Google.Ads.GoogleAds.V3.Errors.InvoiceErrorEnum.Types.InvoiceError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.InvoiceError ? (global::Google.Ads.GoogleAds.V3.Errors.InvoiceErrorEnum.Types.InvoiceError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.InvoiceErrorEnum.Types.InvoiceError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.InvoiceError;
@@ -2758,7 +2765,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.PaymentsAccountErrorEnum.Types.PaymentsAccountError PaymentsAccountError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.PaymentsAccountError ? (global::Google.Ads.GoogleAds.V3.Errors.PaymentsAccountErrorEnum.Types.PaymentsAccountError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.PaymentsAccountError ? (global::Google.Ads.GoogleAds.V3.Errors.PaymentsAccountErrorEnum.Types.PaymentsAccountError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.PaymentsAccountErrorEnum.Types.PaymentsAccountError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.PaymentsAccountError;
@@ -2772,7 +2779,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.TimeZoneErrorEnum.Types.TimeZoneError TimeZoneError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.TimeZoneError ? (global::Google.Ads.GoogleAds.V3.Errors.TimeZoneErrorEnum.Types.TimeZoneError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.TimeZoneError ? (global::Google.Ads.GoogleAds.V3.Errors.TimeZoneErrorEnum.Types.TimeZoneError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.TimeZoneErrorEnum.Types.TimeZoneError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.TimeZoneError;
@@ -2786,10 +2793,24 @@ namespace Google.Ads.GoogleAds.V3.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Errors.AssetLinkErrorEnum.Types.AssetLinkError AssetLinkError {
-      get { return errorCodeCase_ == ErrorCodeOneofCase.AssetLinkError ? (global::Google.Ads.GoogleAds.V3.Errors.AssetLinkErrorEnum.Types.AssetLinkError) errorCode_ : 0; }
+      get { return errorCodeCase_ == ErrorCodeOneofCase.AssetLinkError ? (global::Google.Ads.GoogleAds.V3.Errors.AssetLinkErrorEnum.Types.AssetLinkError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.AssetLinkErrorEnum.Types.AssetLinkError.Unspecified; }
       set {
         errorCode_ = value;
         errorCodeCase_ = ErrorCodeOneofCase.AssetLinkError;
+      }
+    }
+
+    /// <summary>Field number for the "user_data_error" field.</summary>
+    public const int UserDataErrorFieldNumber = 130;
+    /// <summary>
+    /// The reasons for the user data error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V3.Errors.UserDataErrorEnum.Types.UserDataError UserDataError {
+      get { return errorCodeCase_ == ErrorCodeOneofCase.UserDataError ? (global::Google.Ads.GoogleAds.V3.Errors.UserDataErrorEnum.Types.UserDataError) errorCode_ : global::Google.Ads.GoogleAds.V3.Errors.UserDataErrorEnum.Types.UserDataError.Unspecified; }
+      set {
+        errorCode_ = value;
+        errorCodeCase_ = ErrorCodeOneofCase.UserDataError;
       }
     }
 
@@ -2907,6 +2928,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
       PaymentsAccountError = 127,
       TimeZoneError = 128,
       AssetLinkError = 129,
+      UserDataError = 130,
     }
     private ErrorCodeOneofCase errorCodeCase_ = ErrorCodeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3043,6 +3065,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
       if (PaymentsAccountError != other.PaymentsAccountError) return false;
       if (TimeZoneError != other.TimeZoneError) return false;
       if (AssetLinkError != other.AssetLinkError) return false;
+      if (UserDataError != other.UserDataError) return false;
       if (ErrorCodeCase != other.ErrorCodeCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3160,6 +3183,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
       if (errorCodeCase_ == ErrorCodeOneofCase.PaymentsAccountError) hash ^= PaymentsAccountError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.TimeZoneError) hash ^= TimeZoneError.GetHashCode();
       if (errorCodeCase_ == ErrorCodeOneofCase.AssetLinkError) hash ^= AssetLinkError.GetHashCode();
+      if (errorCodeCase_ == ErrorCodeOneofCase.UserDataError) hash ^= UserDataError.GetHashCode();
       hash ^= (int) errorCodeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3614,6 +3638,10 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         output.WriteRawTag(136, 8);
         output.WriteEnum((int) AssetLinkError);
       }
+      if (errorCodeCase_ == ErrorCodeOneofCase.UserDataError) {
+        output.WriteRawTag(144, 8);
+        output.WriteEnum((int) UserDataError);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3951,6 +3979,9 @@ namespace Google.Ads.GoogleAds.V3.Errors {
       }
       if (errorCodeCase_ == ErrorCodeOneofCase.AssetLinkError) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) AssetLinkError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.UserDataError) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) UserDataError);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4293,6 +4324,9 @@ namespace Google.Ads.GoogleAds.V3.Errors {
           break;
         case ErrorCodeOneofCase.AssetLinkError:
           AssetLinkError = other.AssetLinkError;
+          break;
+        case ErrorCodeOneofCase.UserDataError:
+          UserDataError = other.UserDataError;
           break;
       }
 
@@ -4855,6 +4889,11 @@ namespace Google.Ads.GoogleAds.V3.Errors {
           case 1032: {
             errorCode_ = input.ReadEnum();
             errorCodeCase_ = ErrorCodeOneofCase.AssetLinkError;
+            break;
+          }
+          case 1040: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.UserDataError;
             break;
           }
         }

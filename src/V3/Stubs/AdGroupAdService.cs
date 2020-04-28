@@ -69,12 +69,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Resources.AdGroupAdReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAdGroupAdRequest), global::Google.Ads.GoogleAds.V3.Services.GetAdGroupAdRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AdGroupAdOperation), global::Google.Ads.GoogleAds.V3.Services.AdGroupAdOperation.Parser, new[]{ "UpdateMask", "PolicyValidationParameter", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdResult), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAdGroupAdRequest), global::Google.Ads.GoogleAds.V3.Services.GetAdGroupAdRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AdGroupAdOperation), global::Google.Ads.GoogleAds.V3.Services.AdGroupAdOperation.Parser, new[]{ "UpdateMask", "PolicyValidationParameter", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdResult), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupAdResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

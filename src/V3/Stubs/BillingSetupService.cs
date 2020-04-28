@@ -61,12 +61,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.BillingSetupReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetBillingSetupRequest), global::Google.Ads.GoogleAds.V3.Services.GetBillingSetupRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupRequest), global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupRequest.Parser, new[]{ "CustomerId", "Operation" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.BillingSetupOperation), global::Google.Ads.GoogleAds.V3.Services.BillingSetupOperation.Parser, new[]{ "Create", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupResponse), global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupResult), global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetBillingSetupRequest), global::Google.Ads.GoogleAds.V3.Services.GetBillingSetupRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupRequest), global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupRequest.Parser, new[]{ "CustomerId", "Operation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.BillingSetupOperation), global::Google.Ads.GoogleAds.V3.Services.BillingSetupOperation.Parser, new[]{ "Create", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupResponse), global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupResponse.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupResult), global::Google.Ads.GoogleAds.V3.Services.MutateBillingSetupResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

@@ -82,13 +82,13 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "OjpHb29nbGVBZHM6OlYzOjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsRequest), global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsRequest.Parser, new[]{ "CustomerId", "ConversionAdjustments", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsResponse), global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustment), global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustment.Parser, new[]{ "ConversionAction", "AdjustmentDateTime", "AdjustmentType", "RestatementValue", "GclidDateTimePair", "OrderId" }, new[]{ "ConversionIdentifier" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.RestatementValue), global::Google.Ads.GoogleAds.V3.Services.RestatementValue.Parser, new[]{ "AdjustedValue", "CurrencyCode" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GclidDateTimePair), global::Google.Ads.GoogleAds.V3.Services.GclidDateTimePair.Parser, new[]{ "Gclid", "ConversionDateTime" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustmentResult), global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustmentResult.Parser, new[]{ "ConversionAction", "AdjustmentDateTime", "AdjustmentType", "GclidDateTimePair", "OrderId" }, new[]{ "ConversionIdentifier" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsRequest), global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsRequest.Parser, new[]{ "CustomerId", "ConversionAdjustments", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsResponse), global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustment), global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustment.Parser, new[]{ "ConversionAction", "AdjustmentDateTime", "AdjustmentType", "RestatementValue", "GclidDateTimePair", "OrderId" }, new[]{ "ConversionIdentifier" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.RestatementValue), global::Google.Ads.GoogleAds.V3.Services.RestatementValue.Parser, new[]{ "AdjustedValue", "CurrencyCode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GclidDateTimePair), global::Google.Ads.GoogleAds.V3.Services.GclidDateTimePair.Parser, new[]{ "Gclid", "ConversionDateTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustmentResult), global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustmentResult.Parser, new[]{ "ConversionAction", "AdjustmentDateTime", "AdjustmentType", "GclidDateTimePair", "OrderId" }, new[]{ "ConversionIdentifier" }, null, null, null)
           }));
     }
     #endregion
@@ -578,7 +578,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "adjustment_type" field.</summary>
     public const int AdjustmentTypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType adjustmentType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType adjustmentType_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified;
     /// <summary>
     /// The adjustment type.
     /// </summary>
@@ -685,7 +685,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       int hash = 1;
       if (conversionAction_ != null) hash ^= ConversionAction.GetHashCode();
       if (adjustmentDateTime_ != null) hash ^= AdjustmentDateTime.GetHashCode();
-      if (AdjustmentType != 0) hash ^= AdjustmentType.GetHashCode();
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) hash ^= AdjustmentType.GetHashCode();
       if (restatementValue_ != null) hash ^= RestatementValue.GetHashCode();
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) hash ^= GclidDateTimePair.GetHashCode();
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.OrderId) hash ^= OrderId.GetHashCode();
@@ -716,7 +716,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (adjustmentDateTime_ != null) {
         _single_adjustmentDateTime_codec.WriteTagAndValue(output, AdjustmentDateTime);
       }
-      if (AdjustmentType != 0) {
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) AdjustmentType);
       }
@@ -738,7 +738,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (adjustmentDateTime_ != null) {
         size += _single_adjustmentDateTime_codec.CalculateSizeWithTag(AdjustmentDateTime);
       }
-      if (AdjustmentType != 0) {
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdjustmentType);
       }
       if (restatementValue_ != null) {
@@ -771,7 +771,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
           AdjustmentDateTime = other.AdjustmentDateTime;
         }
       }
-      if (other.AdjustmentType != 0) {
+      if (other.AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         AdjustmentType = other.AdjustmentType;
       }
       if (other.restatementValue_ != null) {
@@ -1296,7 +1296,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "adjustment_type" field.</summary>
     public const int AdjustmentTypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType adjustmentType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType adjustmentType_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified;
     /// <summary>
     /// The adjustment type.
     /// </summary>
@@ -1384,7 +1384,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       int hash = 1;
       if (conversionAction_ != null) hash ^= ConversionAction.GetHashCode();
       if (adjustmentDateTime_ != null) hash ^= AdjustmentDateTime.GetHashCode();
-      if (AdjustmentType != 0) hash ^= AdjustmentType.GetHashCode();
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) hash ^= AdjustmentType.GetHashCode();
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) hash ^= GclidDateTimePair.GetHashCode();
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.OrderId) hash ^= OrderId.GetHashCode();
       hash ^= (int) conversionIdentifierCase_;
@@ -1414,7 +1414,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (adjustmentDateTime_ != null) {
         _single_adjustmentDateTime_codec.WriteTagAndValue(output, AdjustmentDateTime);
       }
-      if (AdjustmentType != 0) {
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) AdjustmentType);
       }
@@ -1432,7 +1432,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (adjustmentDateTime_ != null) {
         size += _single_adjustmentDateTime_codec.CalculateSizeWithTag(AdjustmentDateTime);
       }
-      if (AdjustmentType != 0) {
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdjustmentType);
       }
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) {
@@ -1462,7 +1462,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
           AdjustmentDateTime = other.AdjustmentDateTime;
         }
       }
-      if (other.AdjustmentType != 0) {
+      if (other.AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         AdjustmentType = other.AdjustmentType;
       }
       switch (other.ConversionIdentifierCase) {

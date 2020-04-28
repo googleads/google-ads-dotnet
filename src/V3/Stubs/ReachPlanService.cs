@@ -150,27 +150,27 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "dmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAdLengthReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ReachPlanNetworkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPlannableLocationsRequest), global::Google.Ads.GoogleAds.V3.Services.ListPlannableLocationsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPlannableLocationsResponse), global::Google.Ads.GoogleAds.V3.Services.ListPlannableLocationsResponse.Parser, new[]{ "PlannableLocations" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.PlannableLocation), global::Google.Ads.GoogleAds.V3.Services.PlannableLocation.Parser, new[]{ "Id", "Name", "ParentCountryId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPlannableProductsRequest), global::Google.Ads.GoogleAds.V3.Services.ListPlannableProductsRequest.Parser, new[]{ "PlannableLocationId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPlannableProductsResponse), global::Google.Ads.GoogleAds.V3.Services.ListPlannableProductsResponse.Parser, new[]{ "ProductMetadata" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ProductMetadata), global::Google.Ads.GoogleAds.V3.Services.ProductMetadata.Parser, new[]{ "PlannableProductCode", "PlannableTargeting" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.PlannableTargeting), global::Google.Ads.GoogleAds.V3.Services.PlannableTargeting.Parser, new[]{ "AgeRanges", "Genders", "Devices", "Networks" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateProductMixIdeasRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateProductMixIdeasRequest.Parser, new[]{ "CustomerId", "PlannableLocationId", "CurrencyCode", "BudgetMicros", "Preferences" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.Preferences), global::Google.Ads.GoogleAds.V3.Services.Preferences.Parser, new[]{ "IsSkippable", "StartsWithSound", "AdLength", "TopContentOnly", "HasGuaranteedPrice" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateProductMixIdeasResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateProductMixIdeasResponse.Parser, new[]{ "ProductAllocation" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ProductAllocation), global::Google.Ads.GoogleAds.V3.Services.ProductAllocation.Parser, new[]{ "PlannableProductCode", "BudgetMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateReachForecastRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateReachForecastRequest.Parser, new[]{ "CustomerId", "CurrencyCode", "CampaignDuration", "CookieFrequencyCap", "MinEffectiveFrequency", "Targeting", "PlannedProducts" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.Targeting), global::Google.Ads.GoogleAds.V3.Services.Targeting.Parser, new[]{ "PlannableLocationId", "AgeRange", "Genders", "Devices", "Network" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CampaignDuration), global::Google.Ads.GoogleAds.V3.Services.CampaignDuration.Parser, new[]{ "DurationInDays" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.PlannedProduct), global::Google.Ads.GoogleAds.V3.Services.PlannedProduct.Parser, new[]{ "PlannableProductCode", "BudgetMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateReachForecastResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateReachForecastResponse.Parser, new[]{ "OnTargetAudienceMetrics", "ReachCurve" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ReachCurve), global::Google.Ads.GoogleAds.V3.Services.ReachCurve.Parser, new[]{ "ReachForecasts" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ReachForecast), global::Google.Ads.GoogleAds.V3.Services.ReachForecast.Parser, new[]{ "CostMicros", "Forecast", "ForecastedProductAllocations" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.Forecast), global::Google.Ads.GoogleAds.V3.Services.Forecast.Parser, new[]{ "OnTargetReach", "TotalReach", "OnTargetImpressions", "TotalImpressions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.OnTargetAudienceMetrics), global::Google.Ads.GoogleAds.V3.Services.OnTargetAudienceMetrics.Parser, new[]{ "YoutubeAudienceSize", "CensusAudienceSize" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPlannableLocationsRequest), global::Google.Ads.GoogleAds.V3.Services.ListPlannableLocationsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPlannableLocationsResponse), global::Google.Ads.GoogleAds.V3.Services.ListPlannableLocationsResponse.Parser, new[]{ "PlannableLocations" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.PlannableLocation), global::Google.Ads.GoogleAds.V3.Services.PlannableLocation.Parser, new[]{ "Id", "Name", "ParentCountryId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPlannableProductsRequest), global::Google.Ads.GoogleAds.V3.Services.ListPlannableProductsRequest.Parser, new[]{ "PlannableLocationId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListPlannableProductsResponse), global::Google.Ads.GoogleAds.V3.Services.ListPlannableProductsResponse.Parser, new[]{ "ProductMetadata" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ProductMetadata), global::Google.Ads.GoogleAds.V3.Services.ProductMetadata.Parser, new[]{ "PlannableProductCode", "PlannableTargeting" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.PlannableTargeting), global::Google.Ads.GoogleAds.V3.Services.PlannableTargeting.Parser, new[]{ "AgeRanges", "Genders", "Devices", "Networks" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateProductMixIdeasRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateProductMixIdeasRequest.Parser, new[]{ "CustomerId", "PlannableLocationId", "CurrencyCode", "BudgetMicros", "Preferences" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.Preferences), global::Google.Ads.GoogleAds.V3.Services.Preferences.Parser, new[]{ "IsSkippable", "StartsWithSound", "AdLength", "TopContentOnly", "HasGuaranteedPrice" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateProductMixIdeasResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateProductMixIdeasResponse.Parser, new[]{ "ProductAllocation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ProductAllocation), global::Google.Ads.GoogleAds.V3.Services.ProductAllocation.Parser, new[]{ "PlannableProductCode", "BudgetMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateReachForecastRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateReachForecastRequest.Parser, new[]{ "CustomerId", "CurrencyCode", "CampaignDuration", "CookieFrequencyCap", "MinEffectiveFrequency", "Targeting", "PlannedProducts" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.Targeting), global::Google.Ads.GoogleAds.V3.Services.Targeting.Parser, new[]{ "PlannableLocationId", "AgeRange", "Genders", "Devices", "Network" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CampaignDuration), global::Google.Ads.GoogleAds.V3.Services.CampaignDuration.Parser, new[]{ "DurationInDays" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.PlannedProduct), global::Google.Ads.GoogleAds.V3.Services.PlannedProduct.Parser, new[]{ "PlannableProductCode", "BudgetMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateReachForecastResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateReachForecastResponse.Parser, new[]{ "OnTargetAudienceMetrics", "ReachCurve" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ReachCurve), global::Google.Ads.GoogleAds.V3.Services.ReachCurve.Parser, new[]{ "ReachForecasts" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ReachForecast), global::Google.Ads.GoogleAds.V3.Services.ReachForecast.Parser, new[]{ "CostMicros", "Forecast", "ForecastedProductAllocations" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.Forecast), global::Google.Ads.GoogleAds.V3.Services.Forecast.Parser, new[]{ "OnTargetReach", "TotalReach", "OnTargetImpressions", "TotalImpressions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.OnTargetAudienceMetrics), global::Google.Ads.GoogleAds.V3.Services.OnTargetAudienceMetrics.Parser, new[]{ "YoutubeAudienceSize", "CensusAudienceSize" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1644,7 +1644,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "ad_length" field.</summary>
     public const int AdLengthFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAdLengthEnum.Types.ReachPlanAdLength adLength_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAdLengthEnum.Types.ReachPlanAdLength adLength_ = global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAdLengthEnum.Types.ReachPlanAdLength.Unspecified;
     /// <summary>
     /// The length of the ad.
     /// If not set, default is any value.
@@ -1718,7 +1718,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       int hash = 1;
       if (isSkippable_ != null) hash ^= IsSkippable.GetHashCode();
       if (startsWithSound_ != null) hash ^= StartsWithSound.GetHashCode();
-      if (AdLength != 0) hash ^= AdLength.GetHashCode();
+      if (AdLength != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAdLengthEnum.Types.ReachPlanAdLength.Unspecified) hash ^= AdLength.GetHashCode();
       if (topContentOnly_ != null) hash ^= TopContentOnly.GetHashCode();
       if (hasGuaranteedPrice_ != null) hash ^= HasGuaranteedPrice.GetHashCode();
       if (_unknownFields != null) {
@@ -1740,7 +1740,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (startsWithSound_ != null) {
         _single_startsWithSound_codec.WriteTagAndValue(output, StartsWithSound);
       }
-      if (AdLength != 0) {
+      if (AdLength != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAdLengthEnum.Types.ReachPlanAdLength.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) AdLength);
       }
@@ -1764,7 +1764,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (startsWithSound_ != null) {
         size += _single_startsWithSound_codec.CalculateSizeWithTag(StartsWithSound);
       }
-      if (AdLength != 0) {
+      if (AdLength != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAdLengthEnum.Types.ReachPlanAdLength.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdLength);
       }
       if (topContentOnly_ != null) {
@@ -1794,7 +1794,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
           StartsWithSound = other.StartsWithSound;
         }
       }
-      if (other.AdLength != 0) {
+      if (other.AdLength != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAdLengthEnum.Types.ReachPlanAdLength.Unspecified) {
         AdLength = other.AdLength;
       }
       if (other.topContentOnly_ != null) {
@@ -2261,7 +2261,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
     /// This is equivalent to the frequency cap exposed in Google Ads when creating
     /// a campaign, it represents the maximum number of times an ad can be shown to
     /// the same user.
-    /// If not specified no cap is applied.
+    /// If not specified, no cap is applied.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int? CookieFrequencyCap {
@@ -2300,9 +2300,6 @@ namespace Google.Ads.GoogleAds.V3.Services {
     /// This is planned targeting: execution details might vary based on the
     /// advertising product, please consult an implementation specialist.
     ///
-    /// If no targeting dimensions are specified, then campaigns will target
-    /// everywhere and everyone.
-    ///
     /// See specific metrics for details on how targeting affects them.
     ///
     /// In some cases, targeting may be overridden using the
@@ -2322,7 +2319,8 @@ namespace Google.Ads.GoogleAds.V3.Services {
         = pb::FieldCodec.ForMessage(58, global::Google.Ads.GoogleAds.V3.Services.PlannedProduct.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Services.PlannedProduct> plannedProducts_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Services.PlannedProduct>();
     /// <summary>
-    /// Required. The product to be planned.
+    /// Required. The products to be forecast.
+    /// The max number of allowed planned products is 15.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Services.PlannedProduct> PlannedProducts {
@@ -2586,10 +2584,10 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "age_range" field.</summary>
     public const int AgeRangeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeEnum.Types.ReachPlanAgeRange ageRange_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeEnum.Types.ReachPlanAgeRange ageRange_ = global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeEnum.Types.ReachPlanAgeRange.Unspecified;
     /// <summary>
-    /// Required
-    /// Selected age range to be planned on.
+    /// Targeted age range.
+    /// If not specified, targets all age ranges.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeEnum.Types.ReachPlanAgeRange AgeRange {
@@ -2605,7 +2603,8 @@ namespace Google.Ads.GoogleAds.V3.Services {
         = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V3.Common.GenderInfo.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Common.GenderInfo> genders_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Common.GenderInfo>();
     /// <summary>
-    /// Targetable genders for the ad product.
+    /// Targeted genders.
+    /// If not specified, targets all genders.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Common.GenderInfo> Genders {
@@ -2618,7 +2617,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
         = pb::FieldCodec.ForMessage(34, global::Google.Ads.GoogleAds.V3.Common.DeviceInfo.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Common.DeviceInfo> devices_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Common.DeviceInfo>();
     /// <summary>
-    /// Targetable devices for the ad product.
+    /// Targeted devices.
+    /// If not specified, targets all applicable devices. Applicable devices vary
+    /// by product and region and can be obtained from ListPlannableProducts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Common.DeviceInfo> Devices {
@@ -2627,9 +2628,11 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "network" field.</summary>
     public const int NetworkFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.ReachPlanNetworkEnum.Types.ReachPlanNetwork network_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ReachPlanNetworkEnum.Types.ReachPlanNetwork network_ = global::Google.Ads.GoogleAds.V3.Enums.ReachPlanNetworkEnum.Types.ReachPlanNetwork.Unspecified;
     /// <summary>
     /// Targetable network for the ad product.
+    /// If not specified, targets all applicable networks. Applicable networks vary
+    /// by product and region and can be obtained from ListPlannableProducts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.ReachPlanNetworkEnum.Types.ReachPlanNetwork Network {
@@ -2664,10 +2667,10 @@ namespace Google.Ads.GoogleAds.V3.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (plannableLocationId_ != null) hash ^= PlannableLocationId.GetHashCode();
-      if (AgeRange != 0) hash ^= AgeRange.GetHashCode();
+      if (AgeRange != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeEnum.Types.ReachPlanAgeRange.Unspecified) hash ^= AgeRange.GetHashCode();
       hash ^= genders_.GetHashCode();
       hash ^= devices_.GetHashCode();
-      if (Network != 0) hash ^= Network.GetHashCode();
+      if (Network != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanNetworkEnum.Types.ReachPlanNetwork.Unspecified) hash ^= Network.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2684,13 +2687,13 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (plannableLocationId_ != null) {
         _single_plannableLocationId_codec.WriteTagAndValue(output, PlannableLocationId);
       }
-      if (AgeRange != 0) {
+      if (AgeRange != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeEnum.Types.ReachPlanAgeRange.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) AgeRange);
       }
       genders_.WriteTo(output, _repeated_genders_codec);
       devices_.WriteTo(output, _repeated_devices_codec);
-      if (Network != 0) {
+      if (Network != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanNetworkEnum.Types.ReachPlanNetwork.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Network);
       }
@@ -2705,12 +2708,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (plannableLocationId_ != null) {
         size += _single_plannableLocationId_codec.CalculateSizeWithTag(PlannableLocationId);
       }
-      if (AgeRange != 0) {
+      if (AgeRange != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeEnum.Types.ReachPlanAgeRange.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AgeRange);
       }
       size += genders_.CalculateSize(_repeated_genders_codec);
       size += devices_.CalculateSize(_repeated_devices_codec);
-      if (Network != 0) {
+      if (Network != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanNetworkEnum.Types.ReachPlanNetwork.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Network);
       }
       if (_unknownFields != null) {
@@ -2729,12 +2732,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
           PlannableLocationId = other.PlannableLocationId;
         }
       }
-      if (other.AgeRange != 0) {
+      if (other.AgeRange != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanAgeRangeEnum.Types.ReachPlanAgeRange.Unspecified) {
         AgeRange = other.AgeRange;
       }
       genders_.Add(other.genders_);
       devices_.Add(other.devices_);
-      if (other.Network != 0) {
+      if (other.Network != global::Google.Ads.GoogleAds.V3.Enums.ReachPlanNetworkEnum.Types.ReachPlanNetwork.Unspecified) {
         Network = other.Network;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

@@ -48,8 +48,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.MerchantCenterLinkStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MerchantCenterLink), global::Google.Ads.GoogleAds.V3.Resources.MerchantCenterLink.Parser, new[]{ "ResourceName", "Id", "MerchantCenterAccountName", "Status" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MerchantCenterLink), global::Google.Ads.GoogleAds.V3.Resources.MerchantCenterLink.Parser, new[]{ "ResourceName", "Id", "MerchantCenterAccountName", "Status" }, null, null, null, null)
           }));
     }
     #endregion
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Unspecified;
     /// <summary>
     /// The status of the link.
     /// </summary>
@@ -188,7 +188,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (merchantCenterAccountName_ != null) hash ^= MerchantCenterAccountName.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Unspecified) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -212,7 +212,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (merchantCenterAccountName_ != null) {
         _single_merchantCenterAccountName_codec.WriteTagAndValue(output, MerchantCenterAccountName);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Status);
       }
@@ -233,7 +233,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (merchantCenterAccountName_ != null) {
         size += _single_merchantCenterAccountName_codec.CalculateSizeWithTag(MerchantCenterAccountName);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (_unknownFields != null) {
@@ -260,7 +260,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           MerchantCenterAccountName = other.MerchantCenterAccountName;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Unspecified) {
         Status = other.Status;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

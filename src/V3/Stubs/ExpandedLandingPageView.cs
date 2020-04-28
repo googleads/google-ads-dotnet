@@ -44,8 +44,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageView), global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageView.Parser, new[]{ "ResourceName", "ExpandedFinalUrl" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageView), global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageView.Parser, new[]{ "ResourceName", "ExpandedFinalUrl" }, null, null, null, null)
           }));
     }
     #endregion

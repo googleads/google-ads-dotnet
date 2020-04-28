@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetTopicConstant = clientHelper.BuildApiCall<GetTopicConstantRequest, gagvr::TopicConstant>(
                 GrpcClient.GetTopicConstantAsync, GrpcClient.GetTopicConstant, effectiveSettings.GetTopicConstantSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetTopicConstant);
             Modify_GetTopicConstantApiCall(ref _callGetTopicConstant);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

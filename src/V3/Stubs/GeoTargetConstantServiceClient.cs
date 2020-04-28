@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -652,7 +652,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetGeoTargetConstant = clientHelper.BuildApiCall<GetGeoTargetConstantRequest, gagvr::GeoTargetConstant>(
                 GrpcClient.GetGeoTargetConstantAsync, GrpcClient.GetGeoTargetConstant, effectiveSettings.GetGeoTargetConstantSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callSuggestGeoTargetConstants = clientHelper.BuildApiCall<SuggestGeoTargetConstantsRequest, SuggestGeoTargetConstantsResponse>(
                 GrpcClient.SuggestGeoTargetConstantsAsync, GrpcClient.SuggestGeoTargetConstants, effectiveSettings.SuggestGeoTargetConstantsSettings);
             Modify_ApiCall(ref _callGetGeoTargetConstant);

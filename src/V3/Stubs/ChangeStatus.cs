@@ -72,8 +72,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusOperationReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusResourceTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ChangeStatus), global::Google.Ads.GoogleAds.V3.Resources.ChangeStatus.Parser, new[]{ "ResourceName", "LastChangeDateTime", "ResourceType", "Campaign", "AdGroup", "ResourceStatus", "AdGroupAd", "AdGroupCriterion", "CampaignCriterion", "Feed", "FeedItem", "AdGroupFeed", "CampaignFeed", "AdGroupBidModifier" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ChangeStatus), global::Google.Ads.GoogleAds.V3.Resources.ChangeStatus.Parser, new[]{ "ResourceName", "LastChangeDateTime", "ResourceType", "Campaign", "AdGroup", "ResourceStatus", "AdGroupAd", "AdGroupCriterion", "CampaignCriterion", "Feed", "FeedItem", "AdGroupFeed", "CampaignFeed", "AdGroupBidModifier" }, null, null, null, null)
           }));
     }
     #endregion
@@ -165,7 +165,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "resource_type" field.</summary>
     public const int ResourceTypeFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType resourceType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType resourceType_ = global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Unspecified;
     /// <summary>
     /// Output only. Represents the type of the changed resource. This dictates what fields
     /// will be set. For example, for AD_GROUP, campaign and ad_group fields will
@@ -213,7 +213,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "resource_status" field.</summary>
     public const int ResourceStatusFieldNumber = 8;
-    private global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusOperationEnum.Types.ChangeStatusOperation resourceStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusOperationEnum.Types.ChangeStatusOperation resourceStatus_ = global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified;
     /// <summary>
     /// Output only. Represents the status of the changed resource.
     /// </summary>
@@ -388,10 +388,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (lastChangeDateTime_ != null) hash ^= LastChangeDateTime.GetHashCode();
-      if (ResourceType != 0) hash ^= ResourceType.GetHashCode();
+      if (ResourceType != global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Unspecified) hash ^= ResourceType.GetHashCode();
       if (campaign_ != null) hash ^= Campaign.GetHashCode();
       if (adGroup_ != null) hash ^= AdGroup.GetHashCode();
-      if (ResourceStatus != 0) hash ^= ResourceStatus.GetHashCode();
+      if (ResourceStatus != global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified) hash ^= ResourceStatus.GetHashCode();
       if (adGroupAd_ != null) hash ^= AdGroupAd.GetHashCode();
       if (adGroupCriterion_ != null) hash ^= AdGroupCriterion.GetHashCode();
       if (campaignCriterion_ != null) hash ^= CampaignCriterion.GetHashCode();
@@ -420,7 +420,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (lastChangeDateTime_ != null) {
         _single_lastChangeDateTime_codec.WriteTagAndValue(output, LastChangeDateTime);
       }
-      if (ResourceType != 0) {
+      if (ResourceType != global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) ResourceType);
       }
@@ -430,7 +430,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (adGroup_ != null) {
         _single_adGroup_codec.WriteTagAndValue(output, AdGroup);
       }
-      if (ResourceStatus != 0) {
+      if (ResourceStatus != global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified) {
         output.WriteRawTag(64);
         output.WriteEnum((int) ResourceStatus);
       }
@@ -472,7 +472,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (lastChangeDateTime_ != null) {
         size += _single_lastChangeDateTime_codec.CalculateSizeWithTag(LastChangeDateTime);
       }
-      if (ResourceType != 0) {
+      if (ResourceType != global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ResourceType);
       }
       if (campaign_ != null) {
@@ -481,7 +481,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (adGroup_ != null) {
         size += _single_adGroup_codec.CalculateSizeWithTag(AdGroup);
       }
-      if (ResourceStatus != 0) {
+      if (ResourceStatus != global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ResourceStatus);
       }
       if (adGroupAd_ != null) {
@@ -527,7 +527,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           LastChangeDateTime = other.LastChangeDateTime;
         }
       }
-      if (other.ResourceType != 0) {
+      if (other.ResourceType != global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Unspecified) {
         ResourceType = other.ResourceType;
       }
       if (other.campaign_ != null) {
@@ -540,7 +540,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           AdGroup = other.AdGroup;
         }
       }
-      if (other.ResourceStatus != 0) {
+      if (other.ResourceStatus != global::Google.Ads.GoogleAds.V3.Enums.ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified) {
         ResourceStatus = other.ResourceStatus;
       }
       if (other.adGroupAd_ != null) {

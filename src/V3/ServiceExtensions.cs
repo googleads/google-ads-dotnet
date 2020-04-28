@@ -122,6 +122,7 @@ namespace Google.Ads.GoogleAds.V3.Services
     public abstract partial class ShoppingPerformanceViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class TopicConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class TopicViewServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class UserDataServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class UserInterestServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class UserListServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class UserLocationViewServiceClient : GoogleAdsServiceClientBase {}

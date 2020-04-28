@@ -62,8 +62,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldDataTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.GoogleAdsField), global::Google.Ads.GoogleAds.V3.Resources.GoogleAdsField.Parser, new[]{ "ResourceName", "Name", "Category", "Selectable", "Filterable", "Sortable", "SelectableWith", "AttributeResources", "Metrics", "Segments", "EnumValues", "DataType", "TypeUrl", "IsRepeated" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.GoogleAdsField), global::Google.Ads.GoogleAds.V3.Resources.GoogleAdsField.Parser, new[]{ "ResourceName", "Name", "Category", "Selectable", "Filterable", "Sortable", "SelectableWith", "AttributeResources", "Metrics", "Segments", "EnumValues", "DataType", "TypeUrl", "IsRepeated" }, null, null, null, null)
           }));
     }
     #endregion
@@ -155,7 +155,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "category" field.</summary>
     public const int CategoryFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory category_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory category_ = global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Unspecified;
     /// <summary>
     /// Output only. The category of the artifact.
     /// </summary>
@@ -306,7 +306,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "data_type" field.</summary>
     public const int DataTypeFieldNumber = 12;
-    private global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType dataType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType dataType_ = global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Unspecified;
     /// <summary>
     /// Output only. This field determines the operators that can be used with the artifact
     /// in WHERE clauses.
@@ -386,7 +386,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
-      if (Category != 0) hash ^= Category.GetHashCode();
+      if (Category != global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Unspecified) hash ^= Category.GetHashCode();
       if (selectable_ != null) hash ^= Selectable.GetHashCode();
       if (filterable_ != null) hash ^= Filterable.GetHashCode();
       if (sortable_ != null) hash ^= Sortable.GetHashCode();
@@ -395,7 +395,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       hash ^= metrics_.GetHashCode();
       hash ^= segments_.GetHashCode();
       hash ^= enumValues_.GetHashCode();
-      if (DataType != 0) hash ^= DataType.GetHashCode();
+      if (DataType != global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Unspecified) hash ^= DataType.GetHashCode();
       if (typeUrl_ != null) hash ^= TypeUrl.GetHashCode();
       if (isRepeated_ != null) hash ^= IsRepeated.GetHashCode();
       if (_unknownFields != null) {
@@ -418,7 +418,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
-      if (Category != 0) {
+      if (Category != global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Category);
       }
@@ -436,7 +436,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       metrics_.WriteTo(output, _repeated_metrics_codec);
       segments_.WriteTo(output, _repeated_segments_codec);
       enumValues_.WriteTo(output, _repeated_enumValues_codec);
-      if (DataType != 0) {
+      if (DataType != global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Unspecified) {
         output.WriteRawTag(96);
         output.WriteEnum((int) DataType);
       }
@@ -460,7 +460,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
-      if (Category != 0) {
+      if (Category != global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Category);
       }
       if (selectable_ != null) {
@@ -477,7 +477,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       size += metrics_.CalculateSize(_repeated_metrics_codec);
       size += segments_.CalculateSize(_repeated_segments_codec);
       size += enumValues_.CalculateSize(_repeated_enumValues_codec);
-      if (DataType != 0) {
+      if (DataType != global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DataType);
       }
       if (typeUrl_ != null) {
@@ -505,7 +505,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Name = other.Name;
         }
       }
-      if (other.Category != 0) {
+      if (other.Category != global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Unspecified) {
         Category = other.Category;
       }
       if (other.selectable_ != null) {
@@ -528,7 +528,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       metrics_.Add(other.metrics_);
       segments_.Add(other.segments_);
       enumValues_.Add(other.enumValues_);
-      if (other.DataType != 0) {
+      if (other.DataType != global::Google.Ads.GoogleAds.V3.Enums.GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Unspecified) {
         DataType = other.DataType;
       }
       if (other.typeUrl_ != null) {

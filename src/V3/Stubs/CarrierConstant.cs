@@ -45,8 +45,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CarrierConstant), global::Google.Ads.GoogleAds.V3.Resources.CarrierConstant.Parser, new[]{ "ResourceName", "Id", "Name", "CountryCode" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CarrierConstant), global::Google.Ads.GoogleAds.V3.Resources.CarrierConstant.Parser, new[]{ "ResourceName", "Id", "Name", "CountryCode" }, null, null, null, null)
           }));
     }
     #endregion

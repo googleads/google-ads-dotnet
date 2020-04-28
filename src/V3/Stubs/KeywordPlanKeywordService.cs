@@ -70,12 +70,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "cnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanKeywordReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetKeywordPlanKeywordRequest), global::Google.Ads.GoogleAds.V3.Services.GetKeywordPlanKeywordRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordOperation), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordResult), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetKeywordPlanKeywordRequest), global::Google.Ads.GoogleAds.V3.Services.GetKeywordPlanKeywordRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordOperation), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordResult), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlanKeywordResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

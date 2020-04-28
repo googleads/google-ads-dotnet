@@ -64,12 +64,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.AdGroupLabelReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAdGroupLabelRequest), global::Google.Ads.GoogleAds.V3.Services.GetAdGroupLabelRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AdGroupLabelOperation), global::Google.Ads.GoogleAds.V3.Services.AdGroupLabelOperation.Parser, new[]{ "Create", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelResult), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAdGroupLabelRequest), global::Google.Ads.GoogleAds.V3.Services.GetAdGroupLabelRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AdGroupLabelOperation), global::Google.Ads.GoogleAds.V3.Services.AdGroupLabelOperation.Parser, new[]{ "Create", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelResult), global::Google.Ads.GoogleAds.V3.Services.MutateAdGroupLabelResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -168,6 +168,7 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                ValidateOnly = false,
             };
             MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse();
             mockGrpcClient.Setup(x => x.MutateCustomInterests(expectedRequest, It.IsAny<CallOptions>()))
@@ -175,7 +176,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CustomInterestOperation> operations = new List<CustomInterestOperation>();
-            MutateCustomInterestsResponse response = client.MutateCustomInterests(customerId, operations);
+            bool validateOnly = false;
+            MutateCustomInterestsResponse response = client.MutateCustomInterests(customerId, operations, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -188,6 +190,7 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                ValidateOnly = false,
             };
             MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse();
             mockGrpcClient.Setup(x => x.MutateCustomInterestsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -195,7 +198,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CustomInterestOperation> operations = new List<CustomInterestOperation>();
-            MutateCustomInterestsResponse response = await client.MutateCustomInterestsAsync(customerId, operations);
+            bool validateOnly = false;
+            MutateCustomInterestsResponse response = await client.MutateCustomInterestsAsync(customerId, operations, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

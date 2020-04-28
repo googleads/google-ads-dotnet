@@ -69,12 +69,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "czo6R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.CustomerNegativeCriterionReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomerNegativeCriterionRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomerNegativeCriterionRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomerNegativeCriterionOperation), global::Google.Ads.GoogleAds.V3.Services.CustomerNegativeCriterionOperation.Parser, new[]{ "Create", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomerNegativeCriterionRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomerNegativeCriterionRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomerNegativeCriterionOperation), global::Google.Ads.GoogleAds.V3.Services.CustomerNegativeCriterionOperation.Parser, new[]{ "Create", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerNegativeCriteriaResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

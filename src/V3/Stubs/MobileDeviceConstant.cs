@@ -50,8 +50,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.MobileDeviceTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MobileDeviceConstant), global::Google.Ads.GoogleAds.V3.Resources.MobileDeviceConstant.Parser, new[]{ "ResourceName", "Id", "Name", "ManufacturerName", "OperatingSystemName", "Type" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MobileDeviceConstant), global::Google.Ads.GoogleAds.V3.Resources.MobileDeviceConstant.Parser, new[]{ "ResourceName", "Id", "Name", "ManufacturerName", "OperatingSystemName", "Type" }, null, null, null, null)
           }));
     }
     #endregion
@@ -183,7 +183,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.MobileDeviceTypeEnum.Types.MobileDeviceType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MobileDeviceTypeEnum.Types.MobileDeviceType type_ = global::Google.Ads.GoogleAds.V3.Enums.MobileDeviceTypeEnum.Types.MobileDeviceType.Unspecified;
     /// <summary>
     /// Output only. The type of mobile device.
     /// </summary>
@@ -225,7 +225,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) hash ^= Name.GetHashCode();
       if (manufacturerName_ != null) hash ^= ManufacturerName.GetHashCode();
       if (operatingSystemName_ != null) hash ^= OperatingSystemName.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.MobileDeviceTypeEnum.Types.MobileDeviceType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -255,7 +255,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (operatingSystemName_ != null) {
         _single_operatingSystemName_codec.WriteTagAndValue(output, OperatingSystemName);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.MobileDeviceTypeEnum.Types.MobileDeviceType.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Type);
       }
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (operatingSystemName_ != null) {
         size += _single_operatingSystemName_codec.CalculateSizeWithTag(OperatingSystemName);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.MobileDeviceTypeEnum.Types.MobileDeviceType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -319,7 +319,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           OperatingSystemName = other.OperatingSystemName;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.MobileDeviceTypeEnum.Types.MobileDeviceType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

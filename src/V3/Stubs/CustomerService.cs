@@ -81,16 +81,16 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "cnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.AccessRoleReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Resources.CustomerReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomerRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomerRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerRequest.Parser, new[]{ "CustomerId", "Operation", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientRequest), global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientRequest.Parser, new[]{ "CustomerId", "CustomerClient", "EmailAddress", "AccessRole" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomerOperation), global::Google.Ads.GoogleAds.V3.Services.CustomerOperation.Parser, new[]{ "Update", "UpdateMask" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientResponse), global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientResponse.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResult.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersRequest), global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersResponse), global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersResponse.Parser, new[]{ "ResourceNames" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomerRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomerRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerRequest.Parser, new[]{ "CustomerId", "Operation", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientRequest), global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientRequest.Parser, new[]{ "CustomerId", "CustomerClient", "EmailAddress", "AccessRole" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomerOperation), global::Google.Ads.GoogleAds.V3.Services.CustomerOperation.Parser, new[]{ "Update", "UpdateMask" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientResponse), global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientResponse.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResponse.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResult.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersRequest), global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersResponse), global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersResponse.Parser, new[]{ "ResourceNames" }, null, null, null, null)
           }));
     }
     #endregion
@@ -524,7 +524,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "access_role" field.</summary>
     public const int AccessRoleFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole accessRole_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole accessRole_ = global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified;
     /// <summary>
     /// The proposed role of user on the created client customer.
     /// Accessible to whitelisted customers only.
@@ -563,7 +563,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
       if (customerClient_ != null) hash ^= CustomerClient.GetHashCode();
       if (emailAddress_ != null) hash ^= EmailAddress.GetHashCode();
-      if (AccessRole != 0) hash ^= AccessRole.GetHashCode();
+      if (AccessRole != global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified) hash ^= AccessRole.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -588,7 +588,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (emailAddress_ != null) {
         _single_emailAddress_codec.WriteTagAndValue(output, EmailAddress);
       }
-      if (AccessRole != 0) {
+      if (AccessRole != global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) AccessRole);
       }
@@ -609,7 +609,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (emailAddress_ != null) {
         size += _single_emailAddress_codec.CalculateSizeWithTag(EmailAddress);
       }
-      if (AccessRole != 0) {
+      if (AccessRole != global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AccessRole);
       }
       if (_unknownFields != null) {
@@ -637,7 +637,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
           EmailAddress = other.EmailAddress;
         }
       }
-      if (other.AccessRole != 0) {
+      if (other.AccessRole != global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified) {
         AccessRole = other.AccessRole;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

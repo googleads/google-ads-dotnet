@@ -47,8 +47,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.TextLabelReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.LabelStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Label), global::Google.Ads.GoogleAds.V3.Resources.Label.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "TextLabel" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Label), global::Google.Ads.GoogleAds.V3.Resources.Label.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "TextLabel" }, null, null, null, null)
           }));
     }
     #endregion
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.LabelStatusEnum.Types.LabelStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.LabelStatusEnum.Types.LabelStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.LabelStatusEnum.Types.LabelStatus.Unspecified;
     /// <summary>
     /// Output only. Status of the label. Read only.
     /// </summary>
@@ -203,7 +203,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.LabelStatusEnum.Types.LabelStatus.Unspecified) hash ^= Status.GetHashCode();
       if (textLabel_ != null) hash ^= TextLabel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -228,7 +228,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.LabelStatusEnum.Types.LabelStatus.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Status);
       }
@@ -253,7 +253,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.LabelStatusEnum.Types.LabelStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (textLabel_ != null) {
@@ -283,7 +283,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Name = other.Name;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.LabelStatusEnum.Types.LabelStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.textLabel_ != null) {

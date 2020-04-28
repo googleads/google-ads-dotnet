@@ -68,13 +68,13 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.KeywordPlanCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeasRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeasRequest.Parser, new[]{ "CustomerId", "Language", "GeoTargetConstants", "KeywordPlanNetwork", "KeywordAndUrlSeed", "KeywordSeed", "UrlSeed" }, new[]{ "Seed" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordAndUrlSeed), global::Google.Ads.GoogleAds.V3.Services.KeywordAndUrlSeed.Parser, new[]{ "Url", "Keywords" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordSeed), global::Google.Ads.GoogleAds.V3.Services.KeywordSeed.Parser, new[]{ "Keywords" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UrlSeed), global::Google.Ads.GoogleAds.V3.Services.UrlSeed.Parser, new[]{ "Url" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResponse.Parser, new[]{ "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResult), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResult.Parser, new[]{ "Text", "KeywordIdeaMetrics" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeasRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeasRequest.Parser, new[]{ "CustomerId", "Language", "GeoTargetConstants", "KeywordPlanNetwork", "KeywordAndUrlSeed", "KeywordSeed", "UrlSeed" }, new[]{ "Seed" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordAndUrlSeed), global::Google.Ads.GoogleAds.V3.Services.KeywordAndUrlSeed.Parser, new[]{ "Url", "Keywords" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordSeed), global::Google.Ads.GoogleAds.V3.Services.KeywordSeed.Parser, new[]{ "Keywords" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UrlSeed), global::Google.Ads.GoogleAds.V3.Services.UrlSeed.Parser, new[]{ "Url" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResponse.Parser, new[]{ "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResult), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResult.Parser, new[]{ "Text", "KeywordIdeaMetrics" }, null, null, null, null)
           }));
     }
     #endregion
@@ -180,7 +180,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "keyword_plan_network" field.</summary>
     public const int KeywordPlanNetworkFieldNumber = 9;
-    private global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork_ = global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified;
     /// <summary>
     /// Targeting network.
     /// </summary>
@@ -285,7 +285,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
       if (language_ != null) hash ^= Language.GetHashCode();
       hash ^= geoTargetConstants_.GetHashCode();
-      if (KeywordPlanNetwork != 0) hash ^= KeywordPlanNetwork.GetHashCode();
+      if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) hash ^= KeywordPlanNetwork.GetHashCode();
       if (seedCase_ == SeedOneofCase.KeywordAndUrlSeed) hash ^= KeywordAndUrlSeed.GetHashCode();
       if (seedCase_ == SeedOneofCase.KeywordSeed) hash ^= KeywordSeed.GetHashCode();
       if (seedCase_ == SeedOneofCase.UrlSeed) hash ^= UrlSeed.GetHashCode();
@@ -323,7 +323,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
         _single_language_codec.WriteTagAndValue(output, Language);
       }
       geoTargetConstants_.WriteTo(output, _repeated_geoTargetConstants_codec);
-      if (KeywordPlanNetwork != 0) {
+      if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         output.WriteRawTag(72);
         output.WriteEnum((int) KeywordPlanNetwork);
       }
@@ -342,7 +342,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
         size += _single_language_codec.CalculateSizeWithTag(Language);
       }
       size += geoTargetConstants_.CalculateSize(_repeated_geoTargetConstants_codec);
-      if (KeywordPlanNetwork != 0) {
+      if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanNetwork);
       }
       if (seedCase_ == SeedOneofCase.KeywordAndUrlSeed) {
@@ -374,7 +374,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
         }
       }
       geoTargetConstants_.Add(other.geoTargetConstants_);
-      if (other.KeywordPlanNetwork != 0) {
+      if (other.KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         KeywordPlanNetwork = other.KeywordPlanNetwork;
       }
       switch (other.SeedCase) {

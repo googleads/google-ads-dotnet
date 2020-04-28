@@ -114,21 +114,21 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.KeywordPlanCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetKeywordPlanRequest), global::Google.Ads.GoogleAds.V3.Services.GetKeywordPlanRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansRequest), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanOperation), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansResponse), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansResult), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansResult.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateForecastMetricsRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateForecastMetricsRequest.Parser, new[]{ "KeywordPlan" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateForecastMetricsResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateForecastMetricsResponse.Parser, new[]{ "CampaignForecasts", "AdGroupForecasts", "KeywordForecasts" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanCampaignForecast), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanCampaignForecast.Parser, new[]{ "KeywordPlanCampaign", "CampaignForecast" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanAdGroupForecast), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanAdGroupForecast.Parser, new[]{ "KeywordPlanAdGroup", "AdGroupForecast" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordForecast), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordForecast.Parser, new[]{ "KeywordPlanAdGroupKeyword", "KeywordForecast" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ForecastMetrics), global::Google.Ads.GoogleAds.V3.Services.ForecastMetrics.Parser, new[]{ "Impressions", "Ctr", "AverageCpc", "Clicks", "CostMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateHistoricalMetricsRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateHistoricalMetricsRequest.Parser, new[]{ "KeywordPlan" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateHistoricalMetricsResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateHistoricalMetricsResponse.Parser, new[]{ "Metrics" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordHistoricalMetrics), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordHistoricalMetrics.Parser, new[]{ "SearchQuery", "KeywordMetrics" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetKeywordPlanRequest), global::Google.Ads.GoogleAds.V3.Services.GetKeywordPlanRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansRequest), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanOperation), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansResponse), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansResult), global::Google.Ads.GoogleAds.V3.Services.MutateKeywordPlansResult.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateForecastMetricsRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateForecastMetricsRequest.Parser, new[]{ "KeywordPlan" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateForecastMetricsResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateForecastMetricsResponse.Parser, new[]{ "CampaignForecasts", "AdGroupForecasts", "KeywordForecasts" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanCampaignForecast), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanCampaignForecast.Parser, new[]{ "KeywordPlanCampaign", "CampaignForecast" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanAdGroupForecast), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanAdGroupForecast.Parser, new[]{ "KeywordPlanAdGroup", "AdGroupForecast" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordForecast), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordForecast.Parser, new[]{ "KeywordPlanAdGroupKeyword", "KeywordForecast" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ForecastMetrics), global::Google.Ads.GoogleAds.V3.Services.ForecastMetrics.Parser, new[]{ "Impressions", "Ctr", "AverageCpc", "Clicks", "CostMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateHistoricalMetricsRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateHistoricalMetricsRequest.Parser, new[]{ "KeywordPlan" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateHistoricalMetricsResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateHistoricalMetricsResponse.Parser, new[]{ "Metrics" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordHistoricalMetrics), global::Google.Ads.GoogleAds.V3.Services.KeywordPlanKeywordHistoricalMetrics.Parser, new[]{ "SearchQuery", "KeywordMetrics" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1439,7 +1439,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
     /// <summary>
     /// The resource name of the Keyword Plan campaign related to the forecast.
     ///
-    /// `customers/{customer_id}/keywordPlanCampaigns/{keyword+plan_campaign_id}`
+    /// `customers/{customer_id}/keywordPlanCampaigns/{keyword_plan_campaign_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string KeywordPlanCampaign {

@@ -57,12 +57,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.AdReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAdRequest), global::Google.Ads.GoogleAds.V3.Services.GetAdRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAdsRequest.Parser, new[]{ "CustomerId", "Operations" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AdOperation), global::Google.Ads.GoogleAds.V3.Services.AdOperation.Parser, new[]{ "UpdateMask", "Update" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAdsResponse.Parser, new[]{ "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdResult), global::Google.Ads.GoogleAds.V3.Services.MutateAdResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAdRequest), global::Google.Ads.GoogleAds.V3.Services.GetAdRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateAdsRequest.Parser, new[]{ "CustomerId", "Operations" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.AdOperation), global::Google.Ads.GoogleAds.V3.Services.AdOperation.Parser, new[]{ "UpdateMask", "Update" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateAdsResponse.Parser, new[]{ "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateAdResult), global::Google.Ads.GoogleAds.V3.Services.MutateAdResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

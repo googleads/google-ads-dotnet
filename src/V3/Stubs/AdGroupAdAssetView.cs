@@ -66,9 +66,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AssetPerformanceLabelReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupAdAssetView), global::Google.Ads.GoogleAds.V3.Resources.AdGroupAdAssetView.Parser, new[]{ "ResourceName", "AdGroupAd", "Asset", "FieldType", "PolicySummary", "PerformanceLabel" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupAdAssetPolicySummary), global::Google.Ads.GoogleAds.V3.Resources.AdGroupAdAssetPolicySummary.Parser, new[]{ "PolicyTopicEntries", "ReviewStatus", "ApprovalStatus" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupAdAssetView), global::Google.Ads.GoogleAds.V3.Resources.AdGroupAdAssetView.Parser, new[]{ "ResourceName", "AdGroupAd", "Asset", "FieldType", "PolicySummary", "PerformanceLabel" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupAdAssetPolicySummary), global::Google.Ads.GoogleAds.V3.Resources.AdGroupAdAssetPolicySummary.Parser, new[]{ "PolicyTopicEntries", "ReviewStatus", "ApprovalStatus" }, null, null, null, null)
           }));
     }
     #endregion
@@ -168,7 +168,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "field_type" field.</summary>
     public const int FieldTypeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.AssetFieldTypeEnum.Types.AssetFieldType fieldType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AssetFieldTypeEnum.Types.AssetFieldType fieldType_ = global::Google.Ads.GoogleAds.V3.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified;
     /// <summary>
     /// Output only. Role that the asset takes in the ad.
     /// </summary>
@@ -196,7 +196,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "performance_label" field.</summary>
     public const int PerformanceLabelFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel performanceLabel_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel performanceLabel_ = global::Google.Ads.GoogleAds.V3.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified;
     /// <summary>
     /// Output only. Performance of an asset linkage.
     /// </summary>
@@ -236,9 +236,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (adGroupAd_ != null) hash ^= AdGroupAd.GetHashCode();
       if (asset_ != null) hash ^= Asset.GetHashCode();
-      if (FieldType != 0) hash ^= FieldType.GetHashCode();
+      if (FieldType != global::Google.Ads.GoogleAds.V3.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) hash ^= FieldType.GetHashCode();
       if (policySummary_ != null) hash ^= PolicySummary.GetHashCode();
-      if (PerformanceLabel != 0) hash ^= PerformanceLabel.GetHashCode();
+      if (PerformanceLabel != global::Google.Ads.GoogleAds.V3.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified) hash ^= PerformanceLabel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -256,7 +256,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
-      if (FieldType != 0) {
+      if (FieldType != global::Google.Ads.GoogleAds.V3.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) FieldType);
       }
@@ -264,7 +264,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(26);
         output.WriteMessage(PolicySummary);
       }
-      if (PerformanceLabel != 0) {
+      if (PerformanceLabel != global::Google.Ads.GoogleAds.V3.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) PerformanceLabel);
       }
@@ -291,13 +291,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (asset_ != null) {
         size += _single_asset_codec.CalculateSizeWithTag(Asset);
       }
-      if (FieldType != 0) {
+      if (FieldType != global::Google.Ads.GoogleAds.V3.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) FieldType);
       }
       if (policySummary_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PolicySummary);
       }
-      if (PerformanceLabel != 0) {
+      if (PerformanceLabel != global::Google.Ads.GoogleAds.V3.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PerformanceLabel);
       }
       if (_unknownFields != null) {
@@ -324,7 +324,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Asset = other.Asset;
         }
       }
-      if (other.FieldType != 0) {
+      if (other.FieldType != global::Google.Ads.GoogleAds.V3.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
         FieldType = other.FieldType;
       }
       if (other.policySummary_ != null) {
@@ -333,7 +333,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         }
         PolicySummary.MergeFrom(other.PolicySummary);
       }
-      if (other.PerformanceLabel != 0) {
+      if (other.PerformanceLabel != global::Google.Ads.GoogleAds.V3.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified) {
         PerformanceLabel = other.PerformanceLabel;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -440,7 +440,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "review_status" field.</summary>
     public const int ReviewStatusFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus reviewStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus reviewStatus_ = global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified;
     /// <summary>
     /// Output only. Where in the review process this ad group ad asset is.
     /// </summary>
@@ -454,7 +454,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "approval_status" field.</summary>
     public const int ApprovalStatusFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus approvalStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus approvalStatus_ = global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified;
     /// <summary>
     /// Output only. The overall approval status of this ad group ad asset, calculated based on
     /// the status of its individual policy topic entries.
@@ -490,8 +490,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= policyTopicEntries_.GetHashCode();
-      if (ReviewStatus != 0) hash ^= ReviewStatus.GetHashCode();
-      if (ApprovalStatus != 0) hash ^= ApprovalStatus.GetHashCode();
+      if (ReviewStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) hash ^= ReviewStatus.GetHashCode();
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified) hash ^= ApprovalStatus.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -506,11 +506,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       policyTopicEntries_.WriteTo(output, _repeated_policyTopicEntries_codec);
-      if (ReviewStatus != 0) {
+      if (ReviewStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) ReviewStatus);
       }
-      if (ApprovalStatus != 0) {
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) ApprovalStatus);
       }
@@ -523,10 +523,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public int CalculateSize() {
       int size = 0;
       size += policyTopicEntries_.CalculateSize(_repeated_policyTopicEntries_codec);
-      if (ReviewStatus != 0) {
+      if (ReviewStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ReviewStatus);
       }
-      if (ApprovalStatus != 0) {
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ApprovalStatus);
       }
       if (_unknownFields != null) {
@@ -541,10 +541,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         return;
       }
       policyTopicEntries_.Add(other.policyTopicEntries_);
-      if (other.ReviewStatus != 0) {
+      if (other.ReviewStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) {
         ReviewStatus = other.ReviewStatus;
       }
-      if (other.ApprovalStatus != 0) {
+      if (other.ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified) {
         ApprovalStatus = other.ApprovalStatus;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

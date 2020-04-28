@@ -203,8 +203,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.InteractionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Metrics), global::Google.Ads.GoogleAds.V3.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelPriceDifferencePercentage", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerConversion", "ValuePerCurrentModelAttributedConversion", "VideoQuartile100Rate", "VideoQuartile25Rate", "VideoQuartile50Rate", "VideoQuartile75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Metrics), global::Google.Ads.GoogleAds.V3.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelPriceDifferencePercentage", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerConversion", "ValuePerCurrentModelAttributedConversion", "VideoQuartile100Rate", "VideoQuartile25Rate", "VideoQuartile50Rate", "VideoQuartile75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1390,7 +1390,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "historical_creative_quality_score" field.</summary>
     public const int HistoricalCreativeQualityScoreFieldNumber = 80;
-    private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalCreativeQualityScore_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalCreativeQualityScore_ = global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified;
     /// <summary>
     /// The creative historical quality score.
     /// </summary>
@@ -1404,7 +1404,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "historical_landing_page_quality_score" field.</summary>
     public const int HistoricalLandingPageQualityScoreFieldNumber = 81;
-    private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalLandingPageQualityScore_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalLandingPageQualityScore_ = global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified;
     /// <summary>
     /// The quality of historical landing page experience.
     /// </summary>
@@ -1434,7 +1434,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "historical_search_predicted_ctr" field.</summary>
     public const int HistoricalSearchPredictedCtrFieldNumber = 83;
-    private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalSearchPredictedCtr_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalSearchPredictedCtr_ = global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified;
     /// <summary>
     /// The historical search predicted click through rate (CTR).
     /// </summary>
@@ -2478,10 +2478,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (engagements_ != null) hash ^= Engagements.GetHashCode();
       if (hotelAverageLeadValueMicros_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(HotelAverageLeadValueMicros);
       if (hotelPriceDifferencePercentage_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(HotelPriceDifferencePercentage);
-      if (HistoricalCreativeQualityScore != 0) hash ^= HistoricalCreativeQualityScore.GetHashCode();
-      if (HistoricalLandingPageQualityScore != 0) hash ^= HistoricalLandingPageQualityScore.GetHashCode();
+      if (HistoricalCreativeQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) hash ^= HistoricalCreativeQualityScore.GetHashCode();
+      if (HistoricalLandingPageQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) hash ^= HistoricalLandingPageQualityScore.GetHashCode();
       if (historicalQualityScore_ != null) hash ^= HistoricalQualityScore.GetHashCode();
-      if (HistoricalSearchPredictedCtr != 0) hash ^= HistoricalSearchPredictedCtr.GetHashCode();
+      if (HistoricalSearchPredictedCtr != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) hash ^= HistoricalSearchPredictedCtr.GetHashCode();
       if (gmailForwards_ != null) hash ^= GmailForwards.GetHashCode();
       if (gmailSaves_ != null) hash ^= GmailSaves.GetHashCode();
       if (gmailSecondaryClicks_ != null) hash ^= GmailSecondaryClicks.GetHashCode();
@@ -2726,18 +2726,18 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (activeViewCtr_ != null) {
         _single_activeViewCtr_codec.WriteTagAndValue(output, ActiveViewCtr);
       }
-      if (HistoricalCreativeQualityScore != 0) {
+      if (HistoricalCreativeQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
         output.WriteRawTag(128, 5);
         output.WriteEnum((int) HistoricalCreativeQualityScore);
       }
-      if (HistoricalLandingPageQualityScore != 0) {
+      if (HistoricalLandingPageQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
         output.WriteRawTag(136, 5);
         output.WriteEnum((int) HistoricalLandingPageQualityScore);
       }
       if (historicalQualityScore_ != null) {
         _single_historicalQualityScore_codec.WriteTagAndValue(output, HistoricalQualityScore);
       }
-      if (HistoricalSearchPredictedCtr != 0) {
+      if (HistoricalSearchPredictedCtr != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
         output.WriteRawTag(152, 5);
         output.WriteEnum((int) HistoricalSearchPredictedCtr);
       }
@@ -3062,16 +3062,16 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (hotelPriceDifferencePercentage_ != null) {
         size += _single_hotelPriceDifferencePercentage_codec.CalculateSizeWithTag(HotelPriceDifferencePercentage);
       }
-      if (HistoricalCreativeQualityScore != 0) {
+      if (HistoricalCreativeQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) HistoricalCreativeQualityScore);
       }
-      if (HistoricalLandingPageQualityScore != 0) {
+      if (HistoricalLandingPageQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) HistoricalLandingPageQualityScore);
       }
       if (historicalQualityScore_ != null) {
         size += _single_historicalQualityScore_codec.CalculateSizeWithTag(HistoricalQualityScore);
       }
-      if (HistoricalSearchPredictedCtr != 0) {
+      if (HistoricalSearchPredictedCtr != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) HistoricalSearchPredictedCtr);
       }
       if (gmailForwards_ != null) {
@@ -3522,10 +3522,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
           HotelPriceDifferencePercentage = other.HotelPriceDifferencePercentage;
         }
       }
-      if (other.HistoricalCreativeQualityScore != 0) {
+      if (other.HistoricalCreativeQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
         HistoricalCreativeQualityScore = other.HistoricalCreativeQualityScore;
       }
-      if (other.HistoricalLandingPageQualityScore != 0) {
+      if (other.HistoricalLandingPageQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
         HistoricalLandingPageQualityScore = other.HistoricalLandingPageQualityScore;
       }
       if (other.historicalQualityScore_ != null) {
@@ -3533,7 +3533,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           HistoricalQualityScore = other.HistoricalQualityScore;
         }
       }
-      if (other.HistoricalSearchPredictedCtr != 0) {
+      if (other.HistoricalSearchPredictedCtr != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
         HistoricalSearchPredictedCtr = other.HistoricalSearchPredictedCtr;
       }
       if (other.gmailForwards_ != null) {

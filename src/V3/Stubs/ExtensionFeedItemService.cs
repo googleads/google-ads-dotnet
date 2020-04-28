@@ -69,12 +69,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "OkFkczo6R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.ExtensionFeedItemReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetExtensionFeedItemRequest), global::Google.Ads.GoogleAds.V3.Services.GetExtensionFeedItemRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ExtensionFeedItemOperation), global::Google.Ads.GoogleAds.V3.Services.ExtensionFeedItemOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemResult), global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetExtensionFeedItemRequest), global::Google.Ads.GoogleAds.V3.Services.GetExtensionFeedItemRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ExtensionFeedItemOperation), global::Google.Ads.GoogleAds.V3.Services.ExtensionFeedItemOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemResult), global::Google.Ads.GoogleAds.V3.Services.MutateExtensionFeedItemResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

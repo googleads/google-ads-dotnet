@@ -37,8 +37,8 @@ namespace Google.Ads.GoogleAds.V3.Enums {
             "Mzo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum), global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum), global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus) }, null, null)
           }));
     }
     #endregion

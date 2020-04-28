@@ -55,8 +55,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "c291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryAvailabilityReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserInterestTaxonomyTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.UserInterest), global::Google.Ads.GoogleAds.V3.Resources.UserInterest.Parser, new[]{ "ResourceName", "TaxonomyType", "UserInterestId", "Name", "UserInterestParent", "LaunchedToAll", "Availabilities" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.UserInterest), global::Google.Ads.GoogleAds.V3.Resources.UserInterest.Parser, new[]{ "ResourceName", "TaxonomyType", "UserInterestId", "Name", "UserInterestParent", "LaunchedToAll", "Availabilities" }, null, null, null, null)
           }));
     }
     #endregion
@@ -125,7 +125,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "taxonomy_type" field.</summary>
     public const int TaxonomyTypeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType taxonomyType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType taxonomyType_ = global::Google.Ads.GoogleAds.V3.Enums.UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unspecified;
     /// <summary>
     /// Output only. Taxonomy type of the user interest.
     /// </summary>
@@ -241,7 +241,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
-      if (TaxonomyType != 0) hash ^= TaxonomyType.GetHashCode();
+      if (TaxonomyType != global::Google.Ads.GoogleAds.V3.Enums.UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unspecified) hash ^= TaxonomyType.GetHashCode();
       if (userInterestId_ != null) hash ^= UserInterestId.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
       if (userInterestParent_ != null) hash ^= UserInterestParent.GetHashCode();
@@ -264,7 +264,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
-      if (TaxonomyType != 0) {
+      if (TaxonomyType != global::Google.Ads.GoogleAds.V3.Enums.UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) TaxonomyType);
       }
@@ -292,7 +292,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
       }
-      if (TaxonomyType != 0) {
+      if (TaxonomyType != global::Google.Ads.GoogleAds.V3.Enums.UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TaxonomyType);
       }
       if (userInterestId_ != null) {
@@ -322,7 +322,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (other.ResourceName.Length != 0) {
         ResourceName = other.ResourceName;
       }
-      if (other.TaxonomyType != 0) {
+      if (other.TaxonomyType != global::Google.Ads.GoogleAds.V3.Enums.UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unspecified) {
         TaxonomyType = other.TaxonomyType;
       }
       if (other.userInterestId_ != null) {

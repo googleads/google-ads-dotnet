@@ -62,8 +62,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.OfflineUserDataReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.OfflineUserDataJob), global::Google.Ads.GoogleAds.V3.Resources.OfflineUserDataJob.Parser, new[]{ "ResourceName", "Id", "ExternalId", "Type", "Status", "FailureReason", "CustomerMatchUserListMetadata", "StoreSalesMetadata" }, new[]{ "Metadata" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.OfflineUserDataJob), global::Google.Ads.GoogleAds.V3.Resources.OfflineUserDataJob.Parser, new[]{ "ResourceName", "Id", "ExternalId", "Type", "Status", "FailureReason", "CustomerMatchUserListMetadata", "StoreSalesMetadata" }, new[]{ "Metadata" }, null, null, null)
           }));
     }
     #endregion
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType type_ = global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified;
     /// <summary>
     /// Output only. Type of the job.
     /// </summary>
@@ -189,7 +189,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Unspecified;
     /// <summary>
     /// Output only. Status of the job.
     /// </summary>
@@ -203,7 +203,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "failure_reason" field.</summary>
     public const int FailureReasonFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason failureReason_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason failureReason_ = global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified;
     /// <summary>
     /// Output only. Reason for the processing failure, if status is FAILED.
     /// </summary>
@@ -293,9 +293,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (externalId_ != null) hash ^= ExternalId.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
-      if (FailureReason != 0) hash ^= FailureReason.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified) hash ^= Type.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Unspecified) hash ^= Status.GetHashCode();
+      if (FailureReason != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified) hash ^= FailureReason.GetHashCode();
       if (metadataCase_ == MetadataOneofCase.CustomerMatchUserListMetadata) hash ^= CustomerMatchUserListMetadata.GetHashCode();
       if (metadataCase_ == MetadataOneofCase.StoreSalesMetadata) hash ^= StoreSalesMetadata.GetHashCode();
       hash ^= (int) metadataCase_;
@@ -322,15 +322,15 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (externalId_ != null) {
         _single_externalId_codec.WriteTagAndValue(output, ExternalId);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Type);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Status);
       }
-      if (FailureReason != 0) {
+      if (FailureReason != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) FailureReason);
       }
@@ -359,13 +359,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (externalId_ != null) {
         size += _single_externalId_codec.CalculateSizeWithTag(ExternalId);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
-      if (FailureReason != 0) {
+      if (FailureReason != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) FailureReason);
       }
       if (metadataCase_ == MetadataOneofCase.CustomerMatchUserListMetadata) {
@@ -398,13 +398,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           ExternalId = other.ExternalId;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified) {
         Type = other.Type;
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Unspecified) {
         Status = other.Status;
       }
-      if (other.FailureReason != 0) {
+      if (other.FailureReason != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified) {
         FailureReason = other.FailureReason;
       }
       switch (other.MetadataCase) {

@@ -87,9 +87,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.TagSnippetReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AttributionModelReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCountingTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ConversionActionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ConversionActionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.DataDrivenModelStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ConversionAction), global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "Category", "OwnerCustomer", "IncludeInConversionsMetric", "ClickThroughLookbackWindowDays", "ViewThroughLookbackWindowDays", "ValueSettings", "CountingType", "AttributionModelSettings", "TagSnippets", "PhoneCallDurationSeconds", "AppId" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Types.AttributionModelSettings), global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Types.AttributionModelSettings.Parser, new[]{ "AttributionModel", "DataDrivenModelStatus" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Types.ValueSettings), global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Types.ValueSettings.Parser, new[]{ "DefaultValue", "DefaultCurrencyCode", "AlwaysUseDefaultValue" }, null, null, null)})
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ConversionAction), global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "Category", "OwnerCustomer", "IncludeInConversionsMetric", "ClickThroughLookbackWindowDays", "ViewThroughLookbackWindowDays", "ValueSettings", "CountingType", "AttributionModelSettings", "TagSnippets", "PhoneCallDurationSeconds", "AppId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Types.AttributionModelSettings), global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Types.AttributionModelSettings.Parser, new[]{ "AttributionModel", "DataDrivenModelStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Types.ValueSettings), global::Google.Ads.GoogleAds.V3.Resources.ConversionAction.Types.ValueSettings.Parser, new[]{ "DefaultValue", "DefaultCurrencyCode", "AlwaysUseDefaultValue" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -202,7 +202,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionStatusEnum.Types.ConversionActionStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionStatusEnum.Types.ConversionActionStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionActionStatusEnum.Types.ConversionActionStatus.Unspecified;
     /// <summary>
     /// The status of this conversion action for conversion event accrual.
     /// </summary>
@@ -216,7 +216,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionTypeEnum.Types.ConversionActionType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionTypeEnum.Types.ConversionActionType type_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionActionTypeEnum.Types.ConversionActionType.Unspecified;
     /// <summary>
     /// Immutable. The type of this conversion action.
     /// </summary>
@@ -230,7 +230,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "category" field.</summary>
     public const int CategoryFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory category_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory category_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified;
     /// <summary>
     /// The category of conversions reported for this conversion action.
     /// </summary>
@@ -327,7 +327,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "counting_type" field.</summary>
     public const int CountingTypeFieldNumber = 12;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCountingTypeEnum.Types.ConversionActionCountingType countingType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCountingTypeEnum.Types.ConversionActionCountingType countingType_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified;
     /// <summary>
     /// How to count conversion events for the conversion action.
     /// </summary>
@@ -439,15 +439,15 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (Category != 0) hash ^= Category.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionStatusEnum.Types.ConversionActionStatus.Unspecified) hash ^= Status.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionTypeEnum.Types.ConversionActionType.Unspecified) hash ^= Type.GetHashCode();
+      if (Category != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified) hash ^= Category.GetHashCode();
       if (ownerCustomer_ != null) hash ^= OwnerCustomer.GetHashCode();
       if (includeInConversionsMetric_ != null) hash ^= IncludeInConversionsMetric.GetHashCode();
       if (clickThroughLookbackWindowDays_ != null) hash ^= ClickThroughLookbackWindowDays.GetHashCode();
       if (viewThroughLookbackWindowDays_ != null) hash ^= ViewThroughLookbackWindowDays.GetHashCode();
       if (valueSettings_ != null) hash ^= ValueSettings.GetHashCode();
-      if (CountingType != 0) hash ^= CountingType.GetHashCode();
+      if (CountingType != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified) hash ^= CountingType.GetHashCode();
       if (attributionModelSettings_ != null) hash ^= AttributionModelSettings.GetHashCode();
       hash ^= tagSnippets_.GetHashCode();
       if (phoneCallDurationSeconds_ != null) hash ^= PhoneCallDurationSeconds.GetHashCode();
@@ -475,15 +475,15 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionStatusEnum.Types.ConversionActionStatus.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Status);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionTypeEnum.Types.ConversionActionType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Type);
       }
-      if (Category != 0) {
+      if (Category != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Category);
       }
@@ -503,7 +503,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(90);
         output.WriteMessage(ValueSettings);
       }
-      if (CountingType != 0) {
+      if (CountingType != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified) {
         output.WriteRawTag(96);
         output.WriteEnum((int) CountingType);
       }
@@ -535,13 +535,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionStatusEnum.Types.ConversionActionStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionTypeEnum.Types.ConversionActionType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (Category != 0) {
+      if (Category != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Category);
       }
       if (ownerCustomer_ != null) {
@@ -559,7 +559,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (valueSettings_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ValueSettings);
       }
-      if (CountingType != 0) {
+      if (CountingType != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CountingType);
       }
       if (attributionModelSettings_ != null) {
@@ -596,13 +596,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Name = other.Name;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionStatusEnum.Types.ConversionActionStatus.Unspecified) {
         Status = other.Status;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionTypeEnum.Types.ConversionActionType.Unspecified) {
         Type = other.Type;
       }
-      if (other.Category != 0) {
+      if (other.Category != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified) {
         Category = other.Category;
       }
       if (other.ownerCustomer_ != null) {
@@ -631,7 +631,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         }
         ValueSettings.MergeFrom(other.ValueSettings);
       }
-      if (other.CountingType != 0) {
+      if (other.CountingType != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified) {
         CountingType = other.CountingType;
       }
       if (other.attributionModelSettings_ != null) {
@@ -804,7 +804,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         /// <summary>Field number for the "attribution_model" field.</summary>
         public const int AttributionModelFieldNumber = 1;
-        private global::Google.Ads.GoogleAds.V3.Enums.AttributionModelEnum.Types.AttributionModel attributionModel_ = 0;
+        private global::Google.Ads.GoogleAds.V3.Enums.AttributionModelEnum.Types.AttributionModel attributionModel_ = global::Google.Ads.GoogleAds.V3.Enums.AttributionModelEnum.Types.AttributionModel.Unspecified;
         /// <summary>
         /// The attribution model type of this conversion action.
         /// </summary>
@@ -818,7 +818,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         /// <summary>Field number for the "data_driven_model_status" field.</summary>
         public const int DataDrivenModelStatusFieldNumber = 2;
-        private global::Google.Ads.GoogleAds.V3.Enums.DataDrivenModelStatusEnum.Types.DataDrivenModelStatus dataDrivenModelStatus_ = 0;
+        private global::Google.Ads.GoogleAds.V3.Enums.DataDrivenModelStatusEnum.Types.DataDrivenModelStatus dataDrivenModelStatus_ = global::Google.Ads.GoogleAds.V3.Enums.DataDrivenModelStatusEnum.Types.DataDrivenModelStatus.Unspecified;
         /// <summary>
         /// Output only. The status of the data-driven attribution model for the conversion
         /// action.
@@ -852,8 +852,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
-          if (AttributionModel != 0) hash ^= AttributionModel.GetHashCode();
-          if (DataDrivenModelStatus != 0) hash ^= DataDrivenModelStatus.GetHashCode();
+          if (AttributionModel != global::Google.Ads.GoogleAds.V3.Enums.AttributionModelEnum.Types.AttributionModel.Unspecified) hash ^= AttributionModel.GetHashCode();
+          if (DataDrivenModelStatus != global::Google.Ads.GoogleAds.V3.Enums.DataDrivenModelStatusEnum.Types.DataDrivenModelStatus.Unspecified) hash ^= DataDrivenModelStatus.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -867,11 +867,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
-          if (AttributionModel != 0) {
+          if (AttributionModel != global::Google.Ads.GoogleAds.V3.Enums.AttributionModelEnum.Types.AttributionModel.Unspecified) {
             output.WriteRawTag(8);
             output.WriteEnum((int) AttributionModel);
           }
-          if (DataDrivenModelStatus != 0) {
+          if (DataDrivenModelStatus != global::Google.Ads.GoogleAds.V3.Enums.DataDrivenModelStatusEnum.Types.DataDrivenModelStatus.Unspecified) {
             output.WriteRawTag(16);
             output.WriteEnum((int) DataDrivenModelStatus);
           }
@@ -883,10 +883,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
-          if (AttributionModel != 0) {
+          if (AttributionModel != global::Google.Ads.GoogleAds.V3.Enums.AttributionModelEnum.Types.AttributionModel.Unspecified) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AttributionModel);
           }
-          if (DataDrivenModelStatus != 0) {
+          if (DataDrivenModelStatus != global::Google.Ads.GoogleAds.V3.Enums.DataDrivenModelStatusEnum.Types.DataDrivenModelStatus.Unspecified) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DataDrivenModelStatus);
           }
           if (_unknownFields != null) {
@@ -900,10 +900,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           if (other == null) {
             return;
           }
-          if (other.AttributionModel != 0) {
+          if (other.AttributionModel != global::Google.Ads.GoogleAds.V3.Enums.AttributionModelEnum.Types.AttributionModel.Unspecified) {
             AttributionModel = other.AttributionModel;
           }
-          if (other.DataDrivenModelStatus != 0) {
+          if (other.DataDrivenModelStatus != global::Google.Ads.GoogleAds.V3.Enums.DataDrivenModelStatusEnum.Types.DataDrivenModelStatus.Unspecified) {
             DataDrivenModelStatus = other.DataDrivenModelStatus;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

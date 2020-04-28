@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -646,10 +646,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetBillingSetup = clientHelper.BuildApiCall<GetBillingSetupRequest, gagvr::BillingSetup>(
                 GrpcClient.GetBillingSetupAsync, GrpcClient.GetBillingSetup, effectiveSettings.GetBillingSetupSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateBillingSetup = clientHelper.BuildApiCall<MutateBillingSetupRequest, MutateBillingSetupResponse>(
                 GrpcClient.MutateBillingSetupAsync, GrpcClient.MutateBillingSetup, effectiveSettings.MutateBillingSetupSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetBillingSetup);
             Modify_GetBillingSetupApiCall(ref _callGetBillingSetup);
             Modify_ApiCall(ref _callMutateBillingSetup);

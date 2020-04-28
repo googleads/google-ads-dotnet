@@ -65,12 +65,12 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "b2dsZUFkczo6VjM6OlNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.CustomInterestReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomInterestRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomInterestRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestsRequest.Parser, new[]{ "CustomerId", "Operations", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomInterestOperation), global::Google.Ads.GoogleAds.V3.Services.CustomInterestOperation.Parser, new[]{ "UpdateMask", "Create", "Update" }, new[]{ "Operation" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestsResponse.Parser, new[]{ "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestResult.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomInterestRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomInterestRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestsRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestsRequest.Parser, new[]{ "CustomerId", "Operations", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomInterestOperation), global::Google.Ads.GoogleAds.V3.Services.CustomInterestOperation.Parser, new[]{ "UpdateMask", "Create", "Update" }, new[]{ "Operation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestsResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestsResponse.Parser, new[]{ "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomInterestResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

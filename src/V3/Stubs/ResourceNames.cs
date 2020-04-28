@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -67,6 +67,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AccountBudgetName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="accountBudgetId">The <c>accountBudget</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AccountBudgetName"/>.</returns>
+        public static string Format(string customerId, string accountBudgetId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(accountBudgetId, nameof(accountBudgetId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AccountBudgetName"/> resource name class
@@ -160,6 +167,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AccountBudgetProposalName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="accountBudgetProposalId">The <c>accountBudgetProposal</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AccountBudgetProposalName"/>.</returns>
+        public static string Format(string customerId, string accountBudgetProposalId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(accountBudgetProposalId, nameof(accountBudgetProposalId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AccountBudgetProposalName"/> resource name class
         /// from its component parts.
@@ -251,6 +265,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adId">The <c>ad</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdName"/>.</returns>
+        public static string Format(string customerId, string adId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adId, nameof(adId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AdName"/> resource name class
@@ -344,6 +365,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupId">The <c>adGroup</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupName"/>.</returns>
+        public static string Format(string customerId, string adGroupId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupId, nameof(adGroupId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupName"/> resource name class
         /// from its component parts.
@@ -435,6 +463,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupAdName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupAdId">The <c>adGroupAd</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupAdName"/>.</returns>
+        public static string Format(string customerId, string adGroupAdId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupAdId, nameof(adGroupAdId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupAdName"/> resource name class
@@ -528,6 +563,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupAdAssetViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupAdAssetViewId">The <c>adGroupAdAssetView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupAdAssetViewName"/>.</returns>
+        public static string Format(string customerId, string adGroupAdAssetViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupAdAssetViewId, nameof(adGroupAdAssetViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupAdAssetViewName"/> resource name class
         /// from its component parts.
@@ -619,6 +661,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupAdLabelName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupAdLabelId">The <c>adGroupAdLabel</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupAdLabelName"/>.</returns>
+        public static string Format(string customerId, string adGroupAdLabelId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupAdLabelId, nameof(adGroupAdLabelId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupAdLabelName"/> resource name class
@@ -712,6 +761,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupAudienceViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupAudienceViewId">The <c>adGroupAudienceView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupAudienceViewName"/>.</returns>
+        public static string Format(string customerId, string adGroupAudienceViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupAudienceViewId, nameof(adGroupAudienceViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupAudienceViewName"/> resource name class
         /// from its component parts.
@@ -803,6 +859,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupBidModifierName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupBidModifierId">The <c>adGroupBidModifier</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupBidModifierName"/>.</returns>
+        public static string Format(string customerId, string adGroupBidModifierId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupBidModifierId, nameof(adGroupBidModifierId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupBidModifierName"/> resource name class
@@ -896,6 +959,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupCriteriaName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupCriteriaId">The <c>adGroupCriteria</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupCriteriaName"/>.</returns>
+        public static string Format(string customerId, string adGroupCriteriaId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupCriteriaId, nameof(adGroupCriteriaId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupCriteriaName"/> resource name class
         /// from its component parts.
@@ -987,6 +1057,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupCriterionLabelName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupCriterionLabelId">The <c>adGroupCriterionLabel</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupCriterionLabelName"/>.</returns>
+        public static string Format(string customerId, string adGroupCriterionLabelId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupCriterionLabelId, nameof(adGroupCriterionLabelId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupCriterionLabelName"/> resource name class
@@ -1080,6 +1157,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupCriterionSimulationName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupCriterionSimulationId">The <c>adGroupCriterionSimulation</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupCriterionSimulationName"/>.</returns>
+        public static string Format(string customerId, string adGroupCriterionSimulationId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupCriterionSimulationId, nameof(adGroupCriterionSimulationId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupCriterionSimulationName"/> resource name class
         /// from its component parts.
@@ -1171,6 +1255,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupExtensionSettingName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupExtensionSettingId">The <c>adGroupExtensionSetting</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupExtensionSettingName"/>.</returns>
+        public static string Format(string customerId, string adGroupExtensionSettingId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupExtensionSettingId, nameof(adGroupExtensionSettingId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupExtensionSettingName"/> resource name class
@@ -1264,6 +1355,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupFeedName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupFeedId">The <c>adGroupFeed</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupFeedName"/>.</returns>
+        public static string Format(string customerId, string adGroupFeedId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupFeedId, nameof(adGroupFeedId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupFeedName"/> resource name class
         /// from its component parts.
@@ -1355,6 +1453,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupLabelName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupLabelId">The <c>adGroupLabel</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupLabelName"/>.</returns>
+        public static string Format(string customerId, string adGroupLabelId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupLabelId, nameof(adGroupLabelId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupLabelName"/> resource name class
@@ -1448,6 +1553,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdGroupSimulationName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adGroupSimulationId">The <c>adGroupSimulation</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdGroupSimulationName"/>.</returns>
+        public static string Format(string customerId, string adGroupSimulationId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adGroupSimulationId, nameof(adGroupSimulationId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AdGroupSimulationName"/> resource name class
         /// from its component parts.
@@ -1539,6 +1651,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdParameterName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adParameterId">The <c>adParameter</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdParameterName"/>.</returns>
+        public static string Format(string customerId, string adParameterId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adParameterId, nameof(adParameterId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AdParameterName"/> resource name class
@@ -1632,6 +1751,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AdScheduleViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="adScheduleViewId">The <c>adScheduleView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AdScheduleViewName"/>.</returns>
+        public static string Format(string customerId, string adScheduleViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(adScheduleViewId, nameof(adScheduleViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AdScheduleViewName"/> resource name class
         /// from its component parts.
@@ -1723,6 +1849,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="AgeRangeViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="ageRangeViewId">The <c>ageRangeView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AgeRangeViewName"/>.</returns>
+        public static string Format(string customerId, string ageRangeViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(ageRangeViewId, nameof(ageRangeViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="AgeRangeViewName"/> resource name class
@@ -1816,6 +1949,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="AssetName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="assetId">The <c>asset</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="AssetName"/>.</returns>
+        public static string Format(string customerId, string assetId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(assetId, nameof(assetId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="AssetName"/> resource name class
         /// from its component parts.
@@ -1907,6 +2047,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="BiddingStrategyName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="biddingStrategyId">The <c>biddingStrategy</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="BiddingStrategyName"/>.</returns>
+        public static string Format(string customerId, string biddingStrategyId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(biddingStrategyId, nameof(biddingStrategyId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="BiddingStrategyName"/> resource name class
@@ -2000,6 +2147,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="BillingSetupName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="billingSetupId">The <c>billingSetup</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="BillingSetupName"/>.</returns>
+        public static string Format(string customerId, string billingSetupId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(billingSetupId, nameof(billingSetupId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="BillingSetupName"/> resource name class
         /// from its component parts.
@@ -2091,6 +2245,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignId">The <c>campaign</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignName"/>.</returns>
+        public static string Format(string customerId, string campaignId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignId, nameof(campaignId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignName"/> resource name class
@@ -2184,6 +2345,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignAudienceViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignAudienceViewId">The <c>campaignAudienceView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignAudienceViewName"/>.</returns>
+        public static string Format(string customerId, string campaignAudienceViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignAudienceViewId, nameof(campaignAudienceViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignAudienceViewName"/> resource name class
         /// from its component parts.
@@ -2275,6 +2443,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignBidModifierName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignBidModifierId">The <c>campaignBidModifier</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignBidModifierName"/>.</returns>
+        public static string Format(string customerId, string campaignBidModifierId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignBidModifierId, nameof(campaignBidModifierId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignBidModifierName"/> resource name class
@@ -2368,6 +2543,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignBudgetName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignBudgetId">The <c>campaignBudget</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignBudgetName"/>.</returns>
+        public static string Format(string customerId, string campaignBudgetId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignBudgetId, nameof(campaignBudgetId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignBudgetName"/> resource name class
         /// from its component parts.
@@ -2459,6 +2641,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignCriteriaName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignCriteriaId">The <c>campaignCriteria</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignCriteriaName"/>.</returns>
+        public static string Format(string customerId, string campaignCriteriaId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignCriteriaId, nameof(campaignCriteriaId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignCriteriaName"/> resource name class
@@ -2552,6 +2741,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignCriterionSimulationName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignCriterionSimulationId">The <c>campaignCriterionSimulation</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignCriterionSimulationName"/>.</returns>
+        public static string Format(string customerId, string campaignCriterionSimulationId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignCriterionSimulationId, nameof(campaignCriterionSimulationId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignCriterionSimulationName"/> resource name class
         /// from its component parts.
@@ -2643,6 +2839,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignDraftName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignDraftId">The <c>campaignDraft</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignDraftName"/>.</returns>
+        public static string Format(string customerId, string campaignDraftId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignDraftId, nameof(campaignDraftId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignDraftName"/> resource name class
@@ -2736,6 +2939,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignExperimentName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignExperimentId">The <c>campaignExperiment</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignExperimentName"/>.</returns>
+        public static string Format(string customerId, string campaignExperimentId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignExperimentId, nameof(campaignExperimentId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignExperimentName"/> resource name class
         /// from its component parts.
@@ -2827,6 +3037,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignExtensionSettingName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignExtensionSettingId">The <c>campaignExtensionSetting</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignExtensionSettingName"/>.</returns>
+        public static string Format(string customerId, string campaignExtensionSettingId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignExtensionSettingId, nameof(campaignExtensionSettingId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignExtensionSettingName"/> resource name class
@@ -2920,6 +3137,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignFeedName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignFeedId">The <c>campaignFeed</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignFeedName"/>.</returns>
+        public static string Format(string customerId, string campaignFeedId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignFeedId, nameof(campaignFeedId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignFeedName"/> resource name class
         /// from its component parts.
@@ -3011,6 +3235,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignLabelName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignLabelId">The <c>campaignLabel</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignLabelName"/>.</returns>
+        public static string Format(string customerId, string campaignLabelId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignLabelId, nameof(campaignLabelId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignLabelName"/> resource name class
@@ -3104,6 +3335,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CampaignSharedSetName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="campaignSharedSetId">The <c>campaignSharedSet</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CampaignSharedSetName"/>.</returns>
+        public static string Format(string customerId, string campaignSharedSetId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(campaignSharedSetId, nameof(campaignSharedSetId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CampaignSharedSetName"/> resource name class
         /// from its component parts.
@@ -3196,6 +3434,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CarrierConstantName"/>.</summary>
+        /// <param name="carrierConstantId">The <c>carrierConstant</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CarrierConstantName"/>.</returns>
+        public static string Format(string carrierConstantId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(carrierConstantId, nameof(carrierConstantId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CarrierConstantName"/> resource name class
         /// from its component parts.
@@ -3280,6 +3524,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="ChangeStatusName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="changeStatusId">The <c>changeStatus</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ChangeStatusName"/>.</returns>
+        public static string Format(string customerId, string changeStatusId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(changeStatusId, nameof(changeStatusId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="ChangeStatusName"/> resource name class
@@ -3373,6 +3624,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="ClickViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="clickViewId">The <c>clickView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ClickViewName"/>.</returns>
+        public static string Format(string customerId, string clickViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(clickViewId, nameof(clickViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="ClickViewName"/> resource name class
         /// from its component parts.
@@ -3464,6 +3722,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="ConversionActionName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="conversionActionId">The <c>conversionAction</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ConversionActionName"/>.</returns>
+        public static string Format(string customerId, string conversionActionId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(conversionActionId, nameof(conversionActionId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="ConversionActionName"/> resource name class
@@ -3557,6 +3822,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CurrencyConstantName"/>.</summary>
+        /// <param name="currencyConstantId">The <c>currencyConstant</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CurrencyConstantName"/>.</returns>
+        public static string Format(string currencyConstantId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(currencyConstantId, nameof(currencyConstantId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CurrencyConstantName"/> resource name class
         /// from its component parts.
@@ -3641,6 +3912,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CustomInterestName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="customInterestId">The <c>customInterest</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CustomInterestName"/>.</returns>
+        public static string Format(string customerId, string customInterestId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(customInterestId, nameof(customInterestId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CustomInterestName"/> resource name class
@@ -3734,6 +4012,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CustomerName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CustomerName"/>.</returns>
+        public static string Format(string customerId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CustomerName"/> resource name class
         /// from its component parts.
@@ -3818,6 +4102,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CustomerClientName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="customerClientId">The <c>customerClient</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CustomerClientName"/>.</returns>
+        public static string Format(string customerId, string customerClientId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(customerClientId, nameof(customerClientId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CustomerClientName"/> resource name class
@@ -3911,6 +4202,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CustomerClientLinkName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="customerClientLinkId">The <c>customerClientLink</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CustomerClientLinkName"/>.</returns>
+        public static string Format(string customerId, string customerClientLinkId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(customerClientLinkId, nameof(customerClientLinkId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CustomerClientLinkName"/> resource name class
         /// from its component parts.
@@ -4002,6 +4300,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CustomerExtensionSettingName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="customerExtensionSettingId">The <c>customerExtensionSetting</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CustomerExtensionSettingName"/>.</returns>
+        public static string Format(string customerId, string customerExtensionSettingId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(customerExtensionSettingId, nameof(customerExtensionSettingId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CustomerExtensionSettingName"/> resource name class
@@ -4095,6 +4400,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CustomerFeedName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="customerFeedId">The <c>customerFeed</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CustomerFeedName"/>.</returns>
+        public static string Format(string customerId, string customerFeedId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(customerFeedId, nameof(customerFeedId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CustomerFeedName"/> resource name class
         /// from its component parts.
@@ -4186,6 +4498,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CustomerLabelName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="customerLabelId">The <c>customerLabel</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CustomerLabelName"/>.</returns>
+        public static string Format(string customerId, string customerLabelId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(customerLabelId, nameof(customerLabelId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CustomerLabelName"/> resource name class
@@ -4279,6 +4598,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="CustomerManagerLinkName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="customerManagerLinkId">The <c>customerManagerLink</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CustomerManagerLinkName"/>.</returns>
+        public static string Format(string customerId, string customerManagerLinkId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(customerManagerLinkId, nameof(customerManagerLinkId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="CustomerManagerLinkName"/> resource name class
         /// from its component parts.
@@ -4370,6 +4696,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="CustomerNegativeCriteriaName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="customerNegativeCriteriaId">The <c>customerNegativeCriteria</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="CustomerNegativeCriteriaName"/>.</returns>
+        public static string Format(string customerId, string customerNegativeCriteriaId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(customerNegativeCriteriaId, nameof(customerNegativeCriteriaId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="CustomerNegativeCriteriaName"/> resource name class
@@ -4463,6 +4796,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="DetailPlacementViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="detailPlacementViewId">The <c>detailPlacementView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="DetailPlacementViewName"/>.</returns>
+        public static string Format(string customerId, string detailPlacementViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(detailPlacementViewId, nameof(detailPlacementViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="DetailPlacementViewName"/> resource name class
         /// from its component parts.
@@ -4554,6 +4894,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="DisplayKeywordViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="displayKeywordViewId">The <c>displayKeywordView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="DisplayKeywordViewName"/>.</returns>
+        public static string Format(string customerId, string displayKeywordViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(displayKeywordViewId, nameof(displayKeywordViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="DisplayKeywordViewName"/> resource name class
@@ -4647,6 +4994,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="DistanceViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="distanceViewId">The <c>distanceView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="DistanceViewName"/>.</returns>
+        public static string Format(string customerId, string distanceViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(distanceViewId, nameof(distanceViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="DistanceViewName"/> resource name class
         /// from its component parts.
@@ -4738,6 +5092,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="DomainCategoryName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="domainCategoryId">The <c>domainCategory</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="DomainCategoryName"/>.</returns>
+        public static string Format(string customerId, string domainCategoryId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(domainCategoryId, nameof(domainCategoryId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="DomainCategoryName"/> resource name class
@@ -4831,6 +5192,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="DynamicSearchAdsSearchTermViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="dynamicSearchAdsSearchTermViewId">The <c>dynamicSearchAdsSearchTermView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="DynamicSearchAdsSearchTermViewName"/>.</returns>
+        public static string Format(string customerId, string dynamicSearchAdsSearchTermViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(dynamicSearchAdsSearchTermViewId, nameof(dynamicSearchAdsSearchTermViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="DynamicSearchAdsSearchTermViewName"/> resource name class
         /// from its component parts.
@@ -4922,6 +5290,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="ExpandedLandingPageViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="expandedLandingPageViewId">The <c>expandedLandingPageView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ExpandedLandingPageViewName"/>.</returns>
+        public static string Format(string customerId, string expandedLandingPageViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(expandedLandingPageViewId, nameof(expandedLandingPageViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="ExpandedLandingPageViewName"/> resource name class
@@ -5015,6 +5390,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="ExtensionFeedItemName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="extensionFeedItemId">The <c>extensionFeedItem</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ExtensionFeedItemName"/>.</returns>
+        public static string Format(string customerId, string extensionFeedItemId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(extensionFeedItemId, nameof(extensionFeedItemId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="ExtensionFeedItemName"/> resource name class
         /// from its component parts.
@@ -5106,6 +5488,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="FeedName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="feedId">The <c>feed</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="FeedName"/>.</returns>
+        public static string Format(string customerId, string feedId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(feedId, nameof(feedId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="FeedName"/> resource name class
@@ -5199,6 +5588,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="FeedItemName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="feedItemId">The <c>feedItem</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="FeedItemName"/>.</returns>
+        public static string Format(string customerId, string feedItemId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(feedItemId, nameof(feedItemId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="FeedItemName"/> resource name class
         /// from its component parts.
@@ -5290,6 +5686,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="FeedItemTargetName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="feedItemTargetId">The <c>feedItemTarget</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="FeedItemTargetName"/>.</returns>
+        public static string Format(string customerId, string feedItemTargetId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(feedItemTargetId, nameof(feedItemTargetId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="FeedItemTargetName"/> resource name class
@@ -5383,6 +5786,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="FeedMappingName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="feedMappingId">The <c>feedMapping</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="FeedMappingName"/>.</returns>
+        public static string Format(string customerId, string feedMappingId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(feedMappingId, nameof(feedMappingId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="FeedMappingName"/> resource name class
         /// from its component parts.
@@ -5474,6 +5884,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="FeedPlaceholderViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="feedPlaceholderViewId">The <c>feedPlaceholderView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="FeedPlaceholderViewName"/>.</returns>
+        public static string Format(string customerId, string feedPlaceholderViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(feedPlaceholderViewId, nameof(feedPlaceholderViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="FeedPlaceholderViewName"/> resource name class
@@ -5567,6 +5984,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="GenderViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="genderViewId">The <c>genderView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="GenderViewName"/>.</returns>
+        public static string Format(string customerId, string genderViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(genderViewId, nameof(genderViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="GenderViewName"/> resource name class
         /// from its component parts.
@@ -5659,6 +6083,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="GeoTargetConstantName"/>.</summary>
+        /// <param name="geoTargetConstantId">The <c>geoTargetConstant</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="GeoTargetConstantName"/>.</returns>
+        public static string Format(string geoTargetConstantId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(geoTargetConstantId, nameof(geoTargetConstantId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="GeoTargetConstantName"/> resource name class
         /// from its component parts.
@@ -5743,6 +6173,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="GeographicViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="geographicViewId">The <c>geographicView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="GeographicViewName"/>.</returns>
+        public static string Format(string customerId, string geographicViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(geographicViewId, nameof(geographicViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="GeographicViewName"/> resource name class
@@ -5836,6 +6273,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="GoogleAdsFieldName"/>.</summary>
+        /// <param name="googleAdsFieldId">The <c>googleAdsField</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="GoogleAdsFieldName"/>.</returns>
+        public static string Format(string googleAdsFieldId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(googleAdsFieldId, nameof(googleAdsFieldId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="GoogleAdsFieldName"/> resource name class
         /// from its component parts.
@@ -5920,6 +6363,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="GroupPlacementViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="groupPlacementViewId">The <c>groupPlacementView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="GroupPlacementViewName"/>.</returns>
+        public static string Format(string customerId, string groupPlacementViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(groupPlacementViewId, nameof(groupPlacementViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="GroupPlacementViewName"/> resource name class
@@ -6013,6 +6463,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="HotelGroupViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="hotelGroupViewId">The <c>hotelGroupView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="HotelGroupViewName"/>.</returns>
+        public static string Format(string customerId, string hotelGroupViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(hotelGroupViewId, nameof(hotelGroupViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="HotelGroupViewName"/> resource name class
         /// from its component parts.
@@ -6105,6 +6562,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="HotelPerformanceViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="HotelPerformanceViewName"/>.</returns>
+        public static string Format(string customerId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="HotelPerformanceViewName"/> resource name class
         /// from its component parts.
@@ -6189,6 +6652,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="KeywordPlanName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanId">The <c>keywordPlan</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="KeywordPlanName"/>.</returns>
+        public static string Format(string customerId, string keywordPlanId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(keywordPlanId, nameof(keywordPlanId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="KeywordPlanName"/> resource name class
@@ -6282,6 +6752,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="KeywordPlanAdGroupName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanAdGroupId">The <c>keywordPlanAdGroup</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="KeywordPlanAdGroupName"/>.</returns>
+        public static string Format(string customerId, string keywordPlanAdGroupId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(keywordPlanAdGroupId, nameof(keywordPlanAdGroupId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="KeywordPlanAdGroupName"/> resource name class
         /// from its component parts.
@@ -6373,6 +6850,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="KeywordPlanCampaignName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanCampaignId">The <c>keywordPlanCampaign</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="KeywordPlanCampaignName"/>.</returns>
+        public static string Format(string customerId, string keywordPlanCampaignId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(keywordPlanCampaignId, nameof(keywordPlanCampaignId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="KeywordPlanCampaignName"/> resource name class
@@ -6466,6 +6950,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="KeywordPlanKeywordName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanKeywordId">The <c>keywordPlanKeyword</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="KeywordPlanKeywordName"/>.</returns>
+        public static string Format(string customerId, string keywordPlanKeywordId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(keywordPlanKeywordId, nameof(keywordPlanKeywordId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="KeywordPlanKeywordName"/> resource name class
         /// from its component parts.
@@ -6557,6 +7048,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="KeywordPlanNegativeKeywordName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordPlanNegativeKeywordId">The <c>keywordPlanNegativeKeyword</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="KeywordPlanNegativeKeywordName"/>.</returns>
+        public static string Format(string customerId, string keywordPlanNegativeKeywordId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(keywordPlanNegativeKeywordId, nameof(keywordPlanNegativeKeywordId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="KeywordPlanNegativeKeywordName"/> resource name class
@@ -6650,6 +7148,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="KeywordViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="keywordViewId">The <c>keywordView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="KeywordViewName"/>.</returns>
+        public static string Format(string customerId, string keywordViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(keywordViewId, nameof(keywordViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="KeywordViewName"/> resource name class
         /// from its component parts.
@@ -6741,6 +7246,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="LabelName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="labelId">The <c>label</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="LabelName"/>.</returns>
+        public static string Format(string customerId, string labelId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(labelId, nameof(labelId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="LabelName"/> resource name class
@@ -6834,6 +7346,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="LandingPageViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="landingPageViewId">The <c>landingPageView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="LandingPageViewName"/>.</returns>
+        public static string Format(string customerId, string landingPageViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(landingPageViewId, nameof(landingPageViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="LandingPageViewName"/> resource name class
         /// from its component parts.
@@ -6926,6 +7445,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="LanguageConstantName"/>.</summary>
+        /// <param name="languageConstantId">The <c>languageConstant</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="LanguageConstantName"/>.</returns>
+        public static string Format(string languageConstantId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(languageConstantId, nameof(languageConstantId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="LanguageConstantName"/> resource name class
         /// from its component parts.
@@ -7010,6 +7535,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="LocationViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="locationViewId">The <c>locationView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="LocationViewName"/>.</returns>
+        public static string Format(string customerId, string locationViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(locationViewId, nameof(locationViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="LocationViewName"/> resource name class
@@ -7103,6 +7635,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="ManagedPlacementViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="managedPlacementViewId">The <c>managedPlacementView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ManagedPlacementViewName"/>.</returns>
+        public static string Format(string customerId, string managedPlacementViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(managedPlacementViewId, nameof(managedPlacementViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="ManagedPlacementViewName"/> resource name class
         /// from its component parts.
@@ -7194,6 +7733,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="MediaFileName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="mediaFileId">The <c>mediaFile</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="MediaFileName"/>.</returns>
+        public static string Format(string customerId, string mediaFileId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(mediaFileId, nameof(mediaFileId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="MediaFileName"/> resource name class
@@ -7287,6 +7833,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="MerchantCenterLinkName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="merchantCenterLinkId">The <c>merchantCenterLink</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="MerchantCenterLinkName"/>.</returns>
+        public static string Format(string customerId, string merchantCenterLinkId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(merchantCenterLinkId, nameof(merchantCenterLinkId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="MerchantCenterLinkName"/> resource name class
         /// from its component parts.
@@ -7379,6 +7932,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="MobileAppCategoryConstantName"/>.</summary>
+        /// <param name="mobileAppCategoryConstantId">The <c>mobileAppCategoryConstant</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="MobileAppCategoryConstantName"/>.</returns>
+        public static string Format(string mobileAppCategoryConstantId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(mobileAppCategoryConstantId, nameof(mobileAppCategoryConstantId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="MobileAppCategoryConstantName"/> resource name class
         /// from its component parts.
@@ -7464,6 +8023,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="MobileDeviceConstantName"/>.</summary>
+        /// <param name="mobileDeviceConstantId">The <c>mobileDeviceConstant</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="MobileDeviceConstantName"/>.</returns>
+        public static string Format(string mobileDeviceConstantId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(mobileDeviceConstantId, nameof(mobileDeviceConstantId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="MobileDeviceConstantName"/> resource name class
         /// from its component parts.
@@ -7548,6 +8113,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="MutateJobName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="mutateJobId">The <c>mutateJob</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="MutateJobName"/>.</returns>
+        public static string Format(string customerId, string mutateJobId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(mutateJobId, nameof(mutateJobId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="MutateJobName"/> resource name class
@@ -7641,6 +8213,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="OfflineUserDataJobName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="offlineUserDataJobId">The <c>offlineUserDataJob</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="OfflineUserDataJobName"/>.</returns>
+        public static string Format(string customerId, string offlineUserDataJobId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(offlineUserDataJobId, nameof(offlineUserDataJobId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="OfflineUserDataJobName"/> resource name class
         /// from its component parts.
@@ -7733,6 +8312,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="OperatingSystemVersionConstantName"/>.</summary>
+        /// <param name="operatingSystemVersionConstantId">The <c>operatingSystemVersionConstant</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="OperatingSystemVersionConstantName"/>.</returns>
+        public static string Format(string operatingSystemVersionConstantId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(operatingSystemVersionConstantId, nameof(operatingSystemVersionConstantId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="OperatingSystemVersionConstantName"/> resource name class
         /// from its component parts.
@@ -7817,6 +8402,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="PaidOrganicSearchTermViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="paidOrganicSearchTermViewId">The <c>paidOrganicSearchTermView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="PaidOrganicSearchTermViewName"/>.</returns>
+        public static string Format(string customerId, string paidOrganicSearchTermViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(paidOrganicSearchTermViewId, nameof(paidOrganicSearchTermViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="PaidOrganicSearchTermViewName"/> resource name class
@@ -7910,6 +8502,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="ParentalStatusViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="parentalStatusViewId">The <c>parentalStatusView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ParentalStatusViewName"/>.</returns>
+        public static string Format(string customerId, string parentalStatusViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(parentalStatusViewId, nameof(parentalStatusViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="ParentalStatusViewName"/> resource name class
         /// from its component parts.
@@ -8002,6 +8601,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="ProductBiddingCategoryConstantName"/>.</summary>
+        /// <param name="productBiddingCategoryConstantId">The <c>productBiddingCategoryConstant</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ProductBiddingCategoryConstantName"/>.</returns>
+        public static string Format(string productBiddingCategoryConstantId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(productBiddingCategoryConstantId, nameof(productBiddingCategoryConstantId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="ProductBiddingCategoryConstantName"/> resource name class
         /// from its component parts.
@@ -8086,6 +8691,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="ProductGroupViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="productGroupViewId">The <c>productGroupView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ProductGroupViewName"/>.</returns>
+        public static string Format(string customerId, string productGroupViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(productGroupViewId, nameof(productGroupViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="ProductGroupViewName"/> resource name class
@@ -8179,6 +8791,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="RecommendationName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="recommendationId">The <c>recommendation</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="RecommendationName"/>.</returns>
+        public static string Format(string customerId, string recommendationId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(recommendationId, nameof(recommendationId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="RecommendationName"/> resource name class
         /// from its component parts.
@@ -8270,6 +8889,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="RemarketingActionName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="remarketingActionId">The <c>remarketingAction</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="RemarketingActionName"/>.</returns>
+        public static string Format(string customerId, string remarketingActionId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(remarketingActionId, nameof(remarketingActionId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="RemarketingActionName"/> resource name class
@@ -8363,6 +8989,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="SearchTermViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="searchTermViewId">The <c>searchTermView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="SearchTermViewName"/>.</returns>
+        public static string Format(string customerId, string searchTermViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(searchTermViewId, nameof(searchTermViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="SearchTermViewName"/> resource name class
         /// from its component parts.
@@ -8454,6 +9087,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="SharedCriteriaName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="sharedCriteriaId">The <c>sharedCriteria</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="SharedCriteriaName"/>.</returns>
+        public static string Format(string customerId, string sharedCriteriaId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(sharedCriteriaId, nameof(sharedCriteriaId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="SharedCriteriaName"/> resource name class
@@ -8547,6 +9187,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="SharedSetName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="sharedSetId">The <c>sharedSet</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="SharedSetName"/>.</returns>
+        public static string Format(string customerId, string sharedSetId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(sharedSetId, nameof(sharedSetId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="SharedSetName"/> resource name class
         /// from its component parts.
@@ -8639,6 +9286,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="ShoppingPerformanceViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="ShoppingPerformanceViewName"/>.</returns>
+        public static string Format(string customerId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="ShoppingPerformanceViewName"/> resource name class
         /// from its component parts.
@@ -8724,6 +9377,12 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="TopicConstantName"/>.</summary>
+        /// <param name="topicConstantId">The <c>topicConstant</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="TopicConstantName"/>.</returns>
+        public static string Format(string topicConstantId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(topicConstantId, nameof(topicConstantId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="TopicConstantName"/> resource name class
         /// from its component parts.
@@ -8808,6 +9467,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="TopicViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="topicViewId">The <c>topicView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="TopicViewName"/>.</returns>
+        public static string Format(string customerId, string topicViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(topicViewId, nameof(topicViewId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="TopicViewName"/> resource name class
@@ -8901,6 +9567,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="UserInterestName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="userInterestId">The <c>userInterest</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="UserInterestName"/>.</returns>
+        public static string Format(string customerId, string userInterestId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(userInterestId, nameof(userInterestId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="UserInterestName"/> resource name class
         /// from its component parts.
@@ -8992,6 +9665,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="UserListName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="userListId">The <c>userList</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="UserListName"/>.</returns>
+        public static string Format(string customerId, string userListId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(userListId, nameof(userListId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="UserListName"/> resource name class
@@ -9085,6 +9765,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             }
         }
 
+        /// <summary>Formats the IDs into the string representation of the <see cref="UserLocationViewName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="userLocationViewId">The <c>userLocationView</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="UserLocationViewName"/>.</returns>
+        public static string Format(string customerId, string userLocationViewId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(userLocationViewId, nameof(userLocationViewId)));
+
         /// <summary>
         /// Constructs a new instance of the <see cref="UserLocationViewName"/> resource name class
         /// from its component parts.
@@ -9176,6 +9863,13 @@ namespace Google.Ads.GoogleAds.V3.Services
                 return false;
             }
         }
+
+        /// <summary>Formats the IDs into the string representation of the <see cref="VideoName"/>.</summary>
+        /// <param name="customerId">The <c>customer</c> ID. Must not be <c>null</c>.</param>
+        /// <param name="videoId">The <c>video</c> ID. Must not be <c>null</c>.</param>
+        /// <returns>The string representation of the <see cref="VideoName"/>.</returns>
+        public static string Format(string customerId, string videoId) =>
+            s_template.Expand(gax::GaxPreconditions.CheckNotNull(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNull(videoId, nameof(videoId)));
 
         /// <summary>
         /// Constructs a new instance of the <see cref="VideoName"/> resource name class

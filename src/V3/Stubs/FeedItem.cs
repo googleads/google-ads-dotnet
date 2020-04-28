@@ -114,11 +114,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.FeedCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityDisapprovalReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedItemStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedItemValidationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingRestrictionReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItem), global::Google.Ads.GoogleAds.V3.Resources.FeedItem.Parser, new[]{ "ResourceName", "Feed", "Id", "StartDateTime", "EndDateTime", "AttributeValues", "GeoTargetingRestriction", "UrlCustomParameters", "Status", "PolicyInfos" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItemAttributeValue), global::Google.Ads.GoogleAds.V3.Resources.FeedItemAttributeValue.Parser, new[]{ "FeedAttributeId", "IntegerValue", "BooleanValue", "StringValue", "DoubleValue", "PriceValue", "IntegerValues", "BooleanValues", "StringValues", "DoubleValues" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItemPlaceholderPolicyInfo), global::Google.Ads.GoogleAds.V3.Resources.FeedItemPlaceholderPolicyInfo.Parser, new[]{ "PlaceholderTypeEnum", "FeedMappingResourceName", "ReviewStatus", "ApprovalStatus", "PolicyTopicEntries", "ValidationStatus", "ValidationErrors", "QualityApprovalStatus", "QualityDisapprovalReasons" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItemValidationError), global::Google.Ads.GoogleAds.V3.Resources.FeedItemValidationError.Parser, new[]{ "ValidationError", "Description", "FeedAttributeIds", "ExtraInfo" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItem), global::Google.Ads.GoogleAds.V3.Resources.FeedItem.Parser, new[]{ "ResourceName", "Feed", "Id", "StartDateTime", "EndDateTime", "AttributeValues", "GeoTargetingRestriction", "UrlCustomParameters", "Status", "PolicyInfos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItemAttributeValue), global::Google.Ads.GoogleAds.V3.Resources.FeedItemAttributeValue.Parser, new[]{ "FeedAttributeId", "IntegerValue", "BooleanValue", "StringValue", "DoubleValue", "PriceValue", "IntegerValues", "BooleanValues", "StringValues", "DoubleValues" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItemPlaceholderPolicyInfo), global::Google.Ads.GoogleAds.V3.Resources.FeedItemPlaceholderPolicyInfo.Parser, new[]{ "PlaceholderTypeEnum", "FeedMappingResourceName", "ReviewStatus", "ApprovalStatus", "PolicyTopicEntries", "ValidationStatus", "ValidationErrors", "QualityApprovalStatus", "QualityDisapprovalReasons" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItemValidationError), global::Google.Ads.GoogleAds.V3.Resources.FeedItemValidationError.Parser, new[]{ "ValidationError", "Description", "FeedAttributeIds", "ExtraInfo" }, null, null, null, null)
           }));
     }
     #endregion
@@ -273,7 +273,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "geo_targeting_restriction" field.</summary>
     public const int GeoTargetingRestrictionFieldNumber = 7;
-    private global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction geoTargetingRestriction_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction geoTargetingRestriction_ = global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.Unspecified;
     /// <summary>
     /// Geo targeting restriction specifies the type of location that can be used
     /// for targeting.
@@ -302,7 +302,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 9;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemStatusEnum.Types.FeedItemStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemStatusEnum.Types.FeedItemStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.FeedItemStatusEnum.Types.FeedItemStatus.Unspecified;
     /// <summary>
     /// Output only. Status of the feed item.
     /// This field is read-only.
@@ -368,9 +368,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (startDateTime_ != null) hash ^= StartDateTime.GetHashCode();
       if (endDateTime_ != null) hash ^= EndDateTime.GetHashCode();
       hash ^= attributeValues_.GetHashCode();
-      if (GeoTargetingRestriction != 0) hash ^= GeoTargetingRestriction.GetHashCode();
+      if (GeoTargetingRestriction != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.Unspecified) hash ^= GeoTargetingRestriction.GetHashCode();
       hash ^= urlCustomParameters_.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedItemStatusEnum.Types.FeedItemStatus.Unspecified) hash ^= Status.GetHashCode();
       hash ^= policyInfos_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -402,12 +402,12 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         _single_endDateTime_codec.WriteTagAndValue(output, EndDateTime);
       }
       attributeValues_.WriteTo(output, _repeated_attributeValues_codec);
-      if (GeoTargetingRestriction != 0) {
+      if (GeoTargetingRestriction != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.Unspecified) {
         output.WriteRawTag(56);
         output.WriteEnum((int) GeoTargetingRestriction);
       }
       urlCustomParameters_.WriteTo(output, _repeated_urlCustomParameters_codec);
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedItemStatusEnum.Types.FeedItemStatus.Unspecified) {
         output.WriteRawTag(72);
         output.WriteEnum((int) Status);
       }
@@ -436,11 +436,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         size += _single_endDateTime_codec.CalculateSizeWithTag(EndDateTime);
       }
       size += attributeValues_.CalculateSize(_repeated_attributeValues_codec);
-      if (GeoTargetingRestriction != 0) {
+      if (GeoTargetingRestriction != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) GeoTargetingRestriction);
       }
       size += urlCustomParameters_.CalculateSize(_repeated_urlCustomParameters_codec);
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedItemStatusEnum.Types.FeedItemStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       size += policyInfos_.CalculateSize(_repeated_policyInfos_codec);
@@ -479,11 +479,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         }
       }
       attributeValues_.Add(other.attributeValues_);
-      if (other.GeoTargetingRestriction != 0) {
+      if (other.GeoTargetingRestriction != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.Unspecified) {
         GeoTargetingRestriction = other.GeoTargetingRestriction;
       }
       urlCustomParameters_.Add(other.urlCustomParameters_);
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.FeedItemStatusEnum.Types.FeedItemStatus.Unspecified) {
         Status = other.Status;
       }
       policyInfos_.Add(other.policyInfos_);
@@ -1041,7 +1041,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "placeholder_type_enum" field.</summary>
     public const int PlaceholderTypeEnumFieldNumber = 10;
-    private global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType placeholderTypeEnum_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType placeholderTypeEnum_ = global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified;
     /// <summary>
     /// Output only. The placeholder type.
     /// </summary>
@@ -1071,7 +1071,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "review_status" field.</summary>
     public const int ReviewStatusFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus reviewStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus reviewStatus_ = global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified;
     /// <summary>
     /// Output only. Where the placeholder type is in the review process.
     /// </summary>
@@ -1085,7 +1085,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "approval_status" field.</summary>
     public const int ApprovalStatusFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus approvalStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus approvalStatus_ = global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified;
     /// <summary>
     /// Output only. The overall approval status of the placeholder type, calculated based on
     /// the status of its individual policy topic entries.
@@ -1113,7 +1113,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "validation_status" field.</summary>
     public const int ValidationStatusFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemValidationStatusEnum.Types.FeedItemValidationStatus validationStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemValidationStatusEnum.Types.FeedItemValidationStatus validationStatus_ = global::Google.Ads.GoogleAds.V3.Enums.FeedItemValidationStatusEnum.Types.FeedItemValidationStatus.Unspecified;
     /// <summary>
     /// Output only. The validation status of the palceholder type.
     /// </summary>
@@ -1140,7 +1140,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "quality_approval_status" field.</summary>
     public const int QualityApprovalStatusFieldNumber = 8;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityApprovalStatusEnum.Types.FeedItemQualityApprovalStatus qualityApprovalStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityApprovalStatusEnum.Types.FeedItemQualityApprovalStatus qualityApprovalStatus_ = global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityApprovalStatusEnum.Types.FeedItemQualityApprovalStatus.Unspecified;
     /// <summary>
     /// Output only. Placeholder type quality evaluation approval status.
     /// </summary>
@@ -1193,14 +1193,14 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (PlaceholderTypeEnum != 0) hash ^= PlaceholderTypeEnum.GetHashCode();
+      if (PlaceholderTypeEnum != global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified) hash ^= PlaceholderTypeEnum.GetHashCode();
       if (feedMappingResourceName_ != null) hash ^= FeedMappingResourceName.GetHashCode();
-      if (ReviewStatus != 0) hash ^= ReviewStatus.GetHashCode();
-      if (ApprovalStatus != 0) hash ^= ApprovalStatus.GetHashCode();
+      if (ReviewStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) hash ^= ReviewStatus.GetHashCode();
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified) hash ^= ApprovalStatus.GetHashCode();
       hash ^= policyTopicEntries_.GetHashCode();
-      if (ValidationStatus != 0) hash ^= ValidationStatus.GetHashCode();
+      if (ValidationStatus != global::Google.Ads.GoogleAds.V3.Enums.FeedItemValidationStatusEnum.Types.FeedItemValidationStatus.Unspecified) hash ^= ValidationStatus.GetHashCode();
       hash ^= validationErrors_.GetHashCode();
-      if (QualityApprovalStatus != 0) hash ^= QualityApprovalStatus.GetHashCode();
+      if (QualityApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityApprovalStatusEnum.Types.FeedItemQualityApprovalStatus.Unspecified) hash ^= QualityApprovalStatus.GetHashCode();
       hash ^= qualityDisapprovalReasons_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1218,26 +1218,26 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (feedMappingResourceName_ != null) {
         _single_feedMappingResourceName_codec.WriteTagAndValue(output, FeedMappingResourceName);
       }
-      if (ReviewStatus != 0) {
+      if (ReviewStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) ReviewStatus);
       }
-      if (ApprovalStatus != 0) {
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) ApprovalStatus);
       }
       policyTopicEntries_.WriteTo(output, _repeated_policyTopicEntries_codec);
-      if (ValidationStatus != 0) {
+      if (ValidationStatus != global::Google.Ads.GoogleAds.V3.Enums.FeedItemValidationStatusEnum.Types.FeedItemValidationStatus.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) ValidationStatus);
       }
       validationErrors_.WriteTo(output, _repeated_validationErrors_codec);
-      if (QualityApprovalStatus != 0) {
+      if (QualityApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityApprovalStatusEnum.Types.FeedItemQualityApprovalStatus.Unspecified) {
         output.WriteRawTag(64);
         output.WriteEnum((int) QualityApprovalStatus);
       }
       qualityDisapprovalReasons_.WriteTo(output, _repeated_qualityDisapprovalReasons_codec);
-      if (PlaceholderTypeEnum != 0) {
+      if (PlaceholderTypeEnum != global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) PlaceholderTypeEnum);
       }
@@ -1249,24 +1249,24 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (PlaceholderTypeEnum != 0) {
+      if (PlaceholderTypeEnum != global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PlaceholderTypeEnum);
       }
       if (feedMappingResourceName_ != null) {
         size += _single_feedMappingResourceName_codec.CalculateSizeWithTag(FeedMappingResourceName);
       }
-      if (ReviewStatus != 0) {
+      if (ReviewStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ReviewStatus);
       }
-      if (ApprovalStatus != 0) {
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ApprovalStatus);
       }
       size += policyTopicEntries_.CalculateSize(_repeated_policyTopicEntries_codec);
-      if (ValidationStatus != 0) {
+      if (ValidationStatus != global::Google.Ads.GoogleAds.V3.Enums.FeedItemValidationStatusEnum.Types.FeedItemValidationStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ValidationStatus);
       }
       size += validationErrors_.CalculateSize(_repeated_validationErrors_codec);
-      if (QualityApprovalStatus != 0) {
+      if (QualityApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityApprovalStatusEnum.Types.FeedItemQualityApprovalStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) QualityApprovalStatus);
       }
       size += qualityDisapprovalReasons_.CalculateSize(_repeated_qualityDisapprovalReasons_codec);
@@ -1281,7 +1281,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (other == null) {
         return;
       }
-      if (other.PlaceholderTypeEnum != 0) {
+      if (other.PlaceholderTypeEnum != global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified) {
         PlaceholderTypeEnum = other.PlaceholderTypeEnum;
       }
       if (other.feedMappingResourceName_ != null) {
@@ -1289,18 +1289,18 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           FeedMappingResourceName = other.FeedMappingResourceName;
         }
       }
-      if (other.ReviewStatus != 0) {
+      if (other.ReviewStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) {
         ReviewStatus = other.ReviewStatus;
       }
-      if (other.ApprovalStatus != 0) {
+      if (other.ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified) {
         ApprovalStatus = other.ApprovalStatus;
       }
       policyTopicEntries_.Add(other.policyTopicEntries_);
-      if (other.ValidationStatus != 0) {
+      if (other.ValidationStatus != global::Google.Ads.GoogleAds.V3.Enums.FeedItemValidationStatusEnum.Types.FeedItemValidationStatus.Unspecified) {
         ValidationStatus = other.ValidationStatus;
       }
       validationErrors_.Add(other.validationErrors_);
-      if (other.QualityApprovalStatus != 0) {
+      if (other.QualityApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityApprovalStatusEnum.Types.FeedItemQualityApprovalStatus.Unspecified) {
         QualityApprovalStatus = other.QualityApprovalStatus;
       }
       qualityDisapprovalReasons_.Add(other.qualityDisapprovalReasons_);
@@ -1404,7 +1404,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "validation_error" field.</summary>
     public const int ValidationErrorFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError validationError_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError validationError_ = global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError.Unspecified;
     /// <summary>
     /// Output only. Error code indicating what validation error was triggered. The description
     /// of the error can be found in the 'description' field.
@@ -1489,7 +1489,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ValidationError != 0) hash ^= ValidationError.GetHashCode();
+      if (ValidationError != global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError.Unspecified) hash ^= ValidationError.GetHashCode();
       if (description_ != null) hash ^= Description.GetHashCode();
       hash ^= feedAttributeIds_.GetHashCode();
       if (extraInfo_ != null) hash ^= ExtraInfo.GetHashCode();
@@ -1506,7 +1506,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ValidationError != 0) {
+      if (ValidationError != global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) ValidationError);
       }
@@ -1525,7 +1525,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ValidationError != 0) {
+      if (ValidationError != global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ValidationError);
       }
       if (description_ != null) {
@@ -1546,7 +1546,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (other == null) {
         return;
       }
-      if (other.ValidationError != 0) {
+      if (other.ValidationError != global::Google.Ads.GoogleAds.V3.Errors.FeedItemValidationErrorEnum.Types.FeedItemValidationError.Unspecified) {
         ValidationError = other.ValidationError;
       }
       if (other.description_ != null) {

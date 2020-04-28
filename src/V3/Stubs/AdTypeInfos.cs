@@ -223,34 +223,34 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "OjpWMzo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.AdAssetReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.DisplayUploadProductTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.LegacyAppInstallAdAppStoreReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.MimeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TextAdInfo), global::Google.Ads.GoogleAds.V3.Common.TextAdInfo.Parser, new[]{ "Headline", "Description1", "Description2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ExpandedTextAdInfo), global::Google.Ads.GoogleAds.V3.Common.ExpandedTextAdInfo.Parser, new[]{ "HeadlinePart1", "HeadlinePart2", "HeadlinePart3", "Description", "Description2", "Path1", "Path2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CallOnlyAdInfo), global::Google.Ads.GoogleAds.V3.Common.CallOnlyAdInfo.Parser, new[]{ "CountryCode", "PhoneNumber", "BusinessName", "Headline1", "Headline2", "Description1", "Description2", "CallTracked", "DisableCallConversion", "PhoneNumberVerificationUrl", "ConversionAction", "ConversionReportingState" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ExpandedDynamicSearchAdInfo), global::Google.Ads.GoogleAds.V3.Common.ExpandedDynamicSearchAdInfo.Parser, new[]{ "Description", "Description2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelAdInfo), global::Google.Ads.GoogleAds.V3.Common.HotelAdInfo.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ShoppingSmartAdInfo), global::Google.Ads.GoogleAds.V3.Common.ShoppingSmartAdInfo.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ShoppingProductAdInfo), global::Google.Ads.GoogleAds.V3.Common.ShoppingProductAdInfo.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ShoppingComparisonListingAdInfo), global::Google.Ads.GoogleAds.V3.Common.ShoppingComparisonListingAdInfo.Parser, new[]{ "Headline" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.GmailAdInfo), global::Google.Ads.GoogleAds.V3.Common.GmailAdInfo.Parser, new[]{ "Teaser", "HeaderImage", "MarketingImage", "MarketingImageHeadline", "MarketingImageDescription", "MarketingImageDisplayCallToAction", "ProductImages", "ProductVideos" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.GmailTeaser), global::Google.Ads.GoogleAds.V3.Common.GmailTeaser.Parser, new[]{ "Headline", "Description", "BusinessName", "LogoImage" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DisplayCallToAction), global::Google.Ads.GoogleAds.V3.Common.DisplayCallToAction.Parser, new[]{ "Text", "TextColor", "UrlCollectionId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductImage), global::Google.Ads.GoogleAds.V3.Common.ProductImage.Parser, new[]{ "ProductImage_", "Description", "DisplayCallToAction" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductVideo), global::Google.Ads.GoogleAds.V3.Common.ProductVideo.Parser, new[]{ "ProductVideo_" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ImageAdInfo), global::Google.Ads.GoogleAds.V3.Common.ImageAdInfo.Parser, new[]{ "PixelWidth", "PixelHeight", "ImageUrl", "PreviewPixelWidth", "PreviewPixelHeight", "PreviewImageUrl", "MimeType", "Name", "MediaFile", "Data", "AdIdToCopyImageFrom" }, new[]{ "Image" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoBumperInStreamAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoBumperInStreamAdInfo.Parser, new[]{ "CompanionBanner" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoNonSkippableInStreamAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoNonSkippableInStreamAdInfo.Parser, new[]{ "CompanionBanner" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoTrueViewInStreamAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoTrueViewInStreamAdInfo.Parser, new[]{ "ActionButtonLabel", "ActionHeadline", "CompanionBanner" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoOutstreamAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoOutstreamAdInfo.Parser, new[]{ "Headline", "Description" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoTrueViewDiscoveryAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoTrueViewDiscoveryAdInfo.Parser, new[]{ "Headline", "Description1", "Description2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoAdInfo.Parser, new[]{ "MediaFile", "InStream", "Bumper", "OutStream", "NonSkippable", "Discovery" }, new[]{ "Format" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ResponsiveSearchAdInfo), global::Google.Ads.GoogleAds.V3.Common.ResponsiveSearchAdInfo.Parser, new[]{ "Headlines", "Descriptions", "Path1", "Path2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LegacyResponsiveDisplayAdInfo), global::Google.Ads.GoogleAds.V3.Common.LegacyResponsiveDisplayAdInfo.Parser, new[]{ "ShortHeadline", "LongHeadline", "Description", "BusinessName", "AllowFlexibleColor", "AccentColor", "MainColor", "CallToActionText", "LogoImage", "SquareLogoImage", "MarketingImage", "SquareMarketingImage", "FormatSetting", "PricePrefix", "PromoText" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AppAdInfo), global::Google.Ads.GoogleAds.V3.Common.AppAdInfo.Parser, new[]{ "MandatoryAdText", "Headlines", "Descriptions", "Images", "YoutubeVideos", "Html5MediaBundles" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AppEngagementAdInfo), global::Google.Ads.GoogleAds.V3.Common.AppEngagementAdInfo.Parser, new[]{ "Headlines", "Descriptions", "Images", "Videos" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LegacyAppInstallAdInfo), global::Google.Ads.GoogleAds.V3.Common.LegacyAppInstallAdInfo.Parser, new[]{ "AppId", "AppStore", "Headline", "Description1", "Description2" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ResponsiveDisplayAdInfo), global::Google.Ads.GoogleAds.V3.Common.ResponsiveDisplayAdInfo.Parser, new[]{ "MarketingImages", "SquareMarketingImages", "LogoImages", "SquareLogoImages", "Headlines", "LongHeadline", "Descriptions", "YoutubeVideos", "BusinessName", "MainColor", "AccentColor", "AllowFlexibleColor", "CallToActionText", "PricePrefix", "PromoText", "FormatSetting" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DisplayUploadAdInfo), global::Google.Ads.GoogleAds.V3.Common.DisplayUploadAdInfo.Parser, new[]{ "DisplayUploadProductType", "MediaBundle" }, new[]{ "MediaAsset" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TextAdInfo), global::Google.Ads.GoogleAds.V3.Common.TextAdInfo.Parser, new[]{ "Headline", "Description1", "Description2" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ExpandedTextAdInfo), global::Google.Ads.GoogleAds.V3.Common.ExpandedTextAdInfo.Parser, new[]{ "HeadlinePart1", "HeadlinePart2", "HeadlinePart3", "Description", "Description2", "Path1", "Path2" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CallOnlyAdInfo), global::Google.Ads.GoogleAds.V3.Common.CallOnlyAdInfo.Parser, new[]{ "CountryCode", "PhoneNumber", "BusinessName", "Headline1", "Headline2", "Description1", "Description2", "CallTracked", "DisableCallConversion", "PhoneNumberVerificationUrl", "ConversionAction", "ConversionReportingState" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ExpandedDynamicSearchAdInfo), global::Google.Ads.GoogleAds.V3.Common.ExpandedDynamicSearchAdInfo.Parser, new[]{ "Description", "Description2" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelAdInfo), global::Google.Ads.GoogleAds.V3.Common.HotelAdInfo.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ShoppingSmartAdInfo), global::Google.Ads.GoogleAds.V3.Common.ShoppingSmartAdInfo.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ShoppingProductAdInfo), global::Google.Ads.GoogleAds.V3.Common.ShoppingProductAdInfo.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ShoppingComparisonListingAdInfo), global::Google.Ads.GoogleAds.V3.Common.ShoppingComparisonListingAdInfo.Parser, new[]{ "Headline" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.GmailAdInfo), global::Google.Ads.GoogleAds.V3.Common.GmailAdInfo.Parser, new[]{ "Teaser", "HeaderImage", "MarketingImage", "MarketingImageHeadline", "MarketingImageDescription", "MarketingImageDisplayCallToAction", "ProductImages", "ProductVideos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.GmailTeaser), global::Google.Ads.GoogleAds.V3.Common.GmailTeaser.Parser, new[]{ "Headline", "Description", "BusinessName", "LogoImage" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DisplayCallToAction), global::Google.Ads.GoogleAds.V3.Common.DisplayCallToAction.Parser, new[]{ "Text", "TextColor", "UrlCollectionId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductImage), global::Google.Ads.GoogleAds.V3.Common.ProductImage.Parser, new[]{ "ProductImage_", "Description", "DisplayCallToAction" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductVideo), global::Google.Ads.GoogleAds.V3.Common.ProductVideo.Parser, new[]{ "ProductVideo_" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ImageAdInfo), global::Google.Ads.GoogleAds.V3.Common.ImageAdInfo.Parser, new[]{ "PixelWidth", "PixelHeight", "ImageUrl", "PreviewPixelWidth", "PreviewPixelHeight", "PreviewImageUrl", "MimeType", "Name", "MediaFile", "Data", "AdIdToCopyImageFrom" }, new[]{ "Image" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoBumperInStreamAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoBumperInStreamAdInfo.Parser, new[]{ "CompanionBanner" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoNonSkippableInStreamAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoNonSkippableInStreamAdInfo.Parser, new[]{ "CompanionBanner" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoTrueViewInStreamAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoTrueViewInStreamAdInfo.Parser, new[]{ "ActionButtonLabel", "ActionHeadline", "CompanionBanner" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoOutstreamAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoOutstreamAdInfo.Parser, new[]{ "Headline", "Description" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoTrueViewDiscoveryAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoTrueViewDiscoveryAdInfo.Parser, new[]{ "Headline", "Description1", "Description2" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.VideoAdInfo), global::Google.Ads.GoogleAds.V3.Common.VideoAdInfo.Parser, new[]{ "MediaFile", "InStream", "Bumper", "OutStream", "NonSkippable", "Discovery" }, new[]{ "Format" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ResponsiveSearchAdInfo), global::Google.Ads.GoogleAds.V3.Common.ResponsiveSearchAdInfo.Parser, new[]{ "Headlines", "Descriptions", "Path1", "Path2" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LegacyResponsiveDisplayAdInfo), global::Google.Ads.GoogleAds.V3.Common.LegacyResponsiveDisplayAdInfo.Parser, new[]{ "ShortHeadline", "LongHeadline", "Description", "BusinessName", "AllowFlexibleColor", "AccentColor", "MainColor", "CallToActionText", "LogoImage", "SquareLogoImage", "MarketingImage", "SquareMarketingImage", "FormatSetting", "PricePrefix", "PromoText" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AppAdInfo), global::Google.Ads.GoogleAds.V3.Common.AppAdInfo.Parser, new[]{ "MandatoryAdText", "Headlines", "Descriptions", "Images", "YoutubeVideos", "Html5MediaBundles" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AppEngagementAdInfo), global::Google.Ads.GoogleAds.V3.Common.AppEngagementAdInfo.Parser, new[]{ "Headlines", "Descriptions", "Images", "Videos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LegacyAppInstallAdInfo), global::Google.Ads.GoogleAds.V3.Common.LegacyAppInstallAdInfo.Parser, new[]{ "AppId", "AppStore", "Headline", "Description1", "Description2" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ResponsiveDisplayAdInfo), global::Google.Ads.GoogleAds.V3.Common.ResponsiveDisplayAdInfo.Parser, new[]{ "MarketingImages", "SquareMarketingImages", "LogoImages", "SquareLogoImages", "Headlines", "LongHeadline", "Descriptions", "YoutubeVideos", "BusinessName", "MainColor", "AccentColor", "AllowFlexibleColor", "CallToActionText", "PricePrefix", "PromoText", "FormatSetting" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DisplayUploadAdInfo), global::Google.Ads.GoogleAds.V3.Common.DisplayUploadAdInfo.Parser, new[]{ "DisplayUploadProductType", "MediaBundle" }, new[]{ "MediaAsset" }, null, null, null)
           }));
     }
     #endregion
@@ -1067,7 +1067,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "conversion_reporting_state" field.</summary>
     public const int ConversionReportingStateFieldNumber = 10;
-    private global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState conversionReportingState_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState conversionReportingState_ = global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified;
     /// <summary>
     /// The call conversion behavior of this call only ad. It can use its own call
     /// conversion setting, inherit the account level setting, or be disabled.
@@ -1122,7 +1122,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (disableCallConversion_ != null) hash ^= DisableCallConversion.GetHashCode();
       if (phoneNumberVerificationUrl_ != null) hash ^= PhoneNumberVerificationUrl.GetHashCode();
       if (conversionAction_ != null) hash ^= ConversionAction.GetHashCode();
-      if (ConversionReportingState != 0) hash ^= ConversionReportingState.GetHashCode();
+      if (ConversionReportingState != global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified) hash ^= ConversionReportingState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1163,7 +1163,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (conversionAction_ != null) {
         _single_conversionAction_codec.WriteTagAndValue(output, ConversionAction);
       }
-      if (ConversionReportingState != 0) {
+      if (ConversionReportingState != global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) ConversionReportingState);
       }
@@ -1214,7 +1214,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (conversionAction_ != null) {
         size += _single_conversionAction_codec.CalculateSizeWithTag(ConversionAction);
       }
-      if (ConversionReportingState != 0) {
+      if (ConversionReportingState != global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ConversionReportingState);
       }
       if (_unknownFields != null) {
@@ -1283,7 +1283,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           ConversionAction = other.ConversionAction;
         }
       }
-      if (other.ConversionReportingState != 0) {
+      if (other.ConversionReportingState != global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified) {
         ConversionReportingState = other.ConversionReportingState;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3380,7 +3380,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "mime_type" field.</summary>
     public const int MimeTypeFieldNumber = 10;
-    private global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType mimeType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType mimeType_ = global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified;
     /// <summary>
     /// The mime type of the image.
     /// </summary>
@@ -3511,7 +3511,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (previewPixelWidth_ != null) hash ^= PreviewPixelWidth.GetHashCode();
       if (previewPixelHeight_ != null) hash ^= PreviewPixelHeight.GetHashCode();
       if (previewImageUrl_ != null) hash ^= PreviewImageUrl.GetHashCode();
-      if (MimeType != 0) hash ^= MimeType.GetHashCode();
+      if (MimeType != global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified) hash ^= MimeType.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
       if (imageCase_ == ImageOneofCase.MediaFile) hash ^= MediaFile.GetHashCode();
       if (imageCase_ == ImageOneofCase.Data) hash ^= Data.GetHashCode();
@@ -3557,7 +3557,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (previewImageUrl_ != null) {
         _single_previewImageUrl_codec.WriteTagAndValue(output, PreviewImageUrl);
       }
-      if (MimeType != 0) {
+      if (MimeType != global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) MimeType);
       }
@@ -3590,7 +3590,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (previewImageUrl_ != null) {
         size += _single_previewImageUrl_codec.CalculateSizeWithTag(PreviewImageUrl);
       }
-      if (MimeType != 0) {
+      if (MimeType != global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MimeType);
       }
       if (name_ != null) {
@@ -3646,7 +3646,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           PreviewImageUrl = other.PreviewImageUrl;
         }
       }
-      if (other.MimeType != 0) {
+      if (other.MimeType != global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified) {
         MimeType = other.MimeType;
       }
       if (other.name_ != null) {
@@ -5513,7 +5513,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "format_setting" field.</summary>
     public const int FormatSettingFieldNumber = 13;
-    private global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting formatSetting_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting formatSetting_ = global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified;
     /// <summary>
     /// Specifies which format the ad will be served in. Default is ALL_FORMATS.
     /// </summary>
@@ -5604,7 +5604,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (squareLogoImage_ != null) hash ^= SquareLogoImage.GetHashCode();
       if (marketingImage_ != null) hash ^= MarketingImage.GetHashCode();
       if (squareMarketingImage_ != null) hash ^= SquareMarketingImage.GetHashCode();
-      if (FormatSetting != 0) hash ^= FormatSetting.GetHashCode();
+      if (FormatSetting != global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified) hash ^= FormatSetting.GetHashCode();
       if (pricePrefix_ != null) hash ^= PricePrefix.GetHashCode();
       if (promoText_ != null) hash ^= PromoText.GetHashCode();
       if (_unknownFields != null) {
@@ -5656,7 +5656,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (squareMarketingImage_ != null) {
         _single_squareMarketingImage_codec.WriteTagAndValue(output, SquareMarketingImage);
       }
-      if (FormatSetting != 0) {
+      if (FormatSetting != global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified) {
         output.WriteRawTag(104);
         output.WriteEnum((int) FormatSetting);
       }
@@ -5710,7 +5710,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (squareMarketingImage_ != null) {
         size += _single_squareMarketingImage_codec.CalculateSizeWithTag(SquareMarketingImage);
       }
-      if (FormatSetting != 0) {
+      if (FormatSetting != global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) FormatSetting);
       }
       if (pricePrefix_ != null) {
@@ -5790,7 +5790,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           SquareMarketingImage = other.SquareMarketingImage;
         }
       }
-      if (other.FormatSetting != 0) {
+      if (other.FormatSetting != global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified) {
         FormatSetting = other.FormatSetting;
       }
       if (other.pricePrefix_ != null) {
@@ -6441,7 +6441,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "app_store" field.</summary>
     public const int AppStoreFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore appStore_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore appStore_ = global::Google.Ads.GoogleAds.V3.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore.Unspecified;
     /// <summary>
     /// The app store the mobile app is available in.
     /// </summary>
@@ -6526,7 +6526,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (appId_ != null) hash ^= AppId.GetHashCode();
-      if (AppStore != 0) hash ^= AppStore.GetHashCode();
+      if (AppStore != global::Google.Ads.GoogleAds.V3.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore.Unspecified) hash ^= AppStore.GetHashCode();
       if (headline_ != null) hash ^= Headline.GetHashCode();
       if (description1_ != null) hash ^= Description1.GetHashCode();
       if (description2_ != null) hash ^= Description2.GetHashCode();
@@ -6546,7 +6546,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (appId_ != null) {
         _single_appId_codec.WriteTagAndValue(output, AppId);
       }
-      if (AppStore != 0) {
+      if (AppStore != global::Google.Ads.GoogleAds.V3.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) AppStore);
       }
@@ -6570,7 +6570,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (appId_ != null) {
         size += _single_appId_codec.CalculateSizeWithTag(AppId);
       }
-      if (AppStore != 0) {
+      if (AppStore != global::Google.Ads.GoogleAds.V3.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AppStore);
       }
       if (headline_ != null) {
@@ -6598,7 +6598,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           AppId = other.AppId;
         }
       }
-      if (other.AppStore != 0) {
+      if (other.AppStore != global::Google.Ads.GoogleAds.V3.Enums.LegacyAppInstallAdAppStoreEnum.Types.LegacyAppInstallAdAppStore.Unspecified) {
         AppStore = other.AppStore;
       }
       if (other.headline_ != null) {
@@ -6957,7 +6957,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "format_setting" field.</summary>
     public const int FormatSettingFieldNumber = 16;
-    private global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting formatSetting_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting formatSetting_ = global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified;
     /// <summary>
     /// Specifies which format the ad will be served in. Default is ALL_FORMATS.
     /// </summary>
@@ -7019,7 +7019,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (callToActionText_ != null) hash ^= CallToActionText.GetHashCode();
       if (pricePrefix_ != null) hash ^= PricePrefix.GetHashCode();
       if (promoText_ != null) hash ^= PromoText.GetHashCode();
-      if (FormatSetting != 0) hash ^= FormatSetting.GetHashCode();
+      if (FormatSetting != global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified) hash ^= FormatSetting.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -7065,7 +7065,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (promoText_ != null) {
         _single_promoText_codec.WriteTagAndValue(output, PromoText);
       }
-      if (FormatSetting != 0) {
+      if (FormatSetting != global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified) {
         output.WriteRawTag(128, 1);
         output.WriteEnum((int) FormatSetting);
       }
@@ -7108,7 +7108,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (promoText_ != null) {
         size += _single_promoText_codec.CalculateSizeWithTag(PromoText);
       }
-      if (FormatSetting != 0) {
+      if (FormatSetting != global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) FormatSetting);
       }
       if (_unknownFields != null) {
@@ -7170,7 +7170,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           PromoText = other.PromoText;
         }
       }
-      if (other.FormatSetting != 0) {
+      if (other.FormatSetting != global::Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types.DisplayAdFormatSetting.Unspecified) {
         FormatSetting = other.FormatSetting;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -7325,7 +7325,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "display_upload_product_type" field.</summary>
     public const int DisplayUploadProductTypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.DisplayUploadProductTypeEnum.Types.DisplayUploadProductType displayUploadProductType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DisplayUploadProductTypeEnum.Types.DisplayUploadProductType displayUploadProductType_ = global::Google.Ads.GoogleAds.V3.Enums.DisplayUploadProductTypeEnum.Types.DisplayUploadProductType.Unspecified;
     /// <summary>
     /// The product type of this ad. See comments on the enum for details.
     /// </summary>
@@ -7397,7 +7397,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (DisplayUploadProductType != 0) hash ^= DisplayUploadProductType.GetHashCode();
+      if (DisplayUploadProductType != global::Google.Ads.GoogleAds.V3.Enums.DisplayUploadProductTypeEnum.Types.DisplayUploadProductType.Unspecified) hash ^= DisplayUploadProductType.GetHashCode();
       if (mediaAssetCase_ == MediaAssetOneofCase.MediaBundle) hash ^= MediaBundle.GetHashCode();
       hash ^= (int) mediaAssetCase_;
       if (_unknownFields != null) {
@@ -7413,7 +7413,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (DisplayUploadProductType != 0) {
+      if (DisplayUploadProductType != global::Google.Ads.GoogleAds.V3.Enums.DisplayUploadProductTypeEnum.Types.DisplayUploadProductType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) DisplayUploadProductType);
       }
@@ -7429,7 +7429,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (DisplayUploadProductType != 0) {
+      if (DisplayUploadProductType != global::Google.Ads.GoogleAds.V3.Enums.DisplayUploadProductTypeEnum.Types.DisplayUploadProductType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DisplayUploadProductType);
       }
       if (mediaAssetCase_ == MediaAssetOneofCase.MediaBundle) {
@@ -7446,7 +7446,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.DisplayUploadProductType != 0) {
+      if (other.DisplayUploadProductType != global::Google.Ads.GoogleAds.V3.Enums.DisplayUploadProductTypeEnum.Types.DisplayUploadProductType.Unspecified) {
         DisplayUploadProductType = other.DisplayUploadProductType;
       }
       switch (other.MediaAssetCase) {
