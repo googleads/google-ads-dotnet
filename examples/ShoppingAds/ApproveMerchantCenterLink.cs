@@ -26,12 +26,12 @@ namespace Google.Ads.GoogleAds.Examples.V3
     /// <summary>
     /// This code example demonstrates how to approve a Merchant Center link request.
     /// 
-    ///  Prerequisite: You need to have access to a Merchant Center account. You can find
-    ///  instructions to create a Merchant Center account here:
-    ///  https://support.google.com/merchants/answer/188924.
+    /// Prerequisite: You need to have access to a Merchant Center account. You can find
+    /// instructions to create a Merchant Center account here:
+    /// https://support.google.com/merchants/answer/188924.
     /// 
-    ///  To run this code example, you must use the Merchant Center UI or the Content API for
-    ///  Shopping to send a link request between your Merchant Center and Google Ads accounts.
+    /// To run this code example, you must use the Merchant Center UI or the Content API for
+    /// Shopping to send a link request between your Merchant Center and Google Ads accounts.
     /// </summary>
     public class ApproveMerchantCenterLink : ExampleBase
     {
@@ -59,8 +59,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             get
             {
-                return "This code example accepts all pending invitations from Google Merchant " +
-                    "Center accounts to your Google Ads account.";
+                return "This code example demonstrates how to approve a Merchant Center link " +
+                    "request.\nPrerequisite: You need to have access to a Merchant Center " +
+                    "account. You can find instructions to create a Merchant Center account " +
+                    "here: https://support.google.com/merchants/answer/188924. To run this code " +
+                    "example, you must use the Merchant Center UI or the Content API for " +
+                    "Shopping to send a link request between your Merchant Center and Google " +
+                    "Ads accounts.";
             }
         }
 

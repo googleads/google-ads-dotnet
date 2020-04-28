@@ -40,7 +40,8 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V3
         {
             RunExample(delegate ()
             {
-                new ApproveMerchantCenterLink().Run(client, config.ClientCustomerId);
+                new ApproveMerchantCenterLink().Run(client, config.ClientCustomerId,
+                    long.Parse(config.MerchantCenterAccountId));
             });
         }
     }
