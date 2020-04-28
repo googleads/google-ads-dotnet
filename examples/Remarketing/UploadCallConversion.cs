@@ -38,13 +38,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // The caller ID.
+            // The caller ID in E.164 format with preceding '+' sign. e.g. "+16502531234".
             string callerId = "INSERT_CALLER_ID_HERE";
 
-            // The call start time ID.
+            // The call start time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
             string callStartTime = "INSERT_CALL_START_TIME_HERE";
 
-            // The conversion time.
+            // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
             string conversionTime = "INSERT_CONVERSION_TIME_HERE";
 
             // The conversion value.
@@ -74,13 +74,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="customerId">The Google Ads customer ID for the conversion action is
         /// added.</param>
         /// <param name="callerId">The caller ID.</param>
-        /// <param name="conversionTime">The call conversion time.</param>
         /// <param name="callStartTime">The call start time.</param>
+        /// <param name="conversionTime">The call conversion time.</param>
         /// <param name="conversionValue">The convsersion value.</param>
         public void Run(GoogleAdsClient client, long customerId, string callerId,
             string callStartTime, string conversionTime, double conversionValue)
         {
-            // Get the ConversionActionService.
+            // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
                 client.GetService(Services.V3.ConversionUploadService);
 
@@ -96,7 +96,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
 
             try
             {
-                // Issues a request to upload the call conversion.
+                // Issues a request to upload the call conversion. The partialFailure parameter
+                // is set to true, and validateOnly parameter to false as required by this method
+                // call.
                 UploadCallConversionsResponse response =
                     conversionUploadService.UploadCallConversions(
                     customerId.ToString(), new[] { callConversion }, true, false);

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,14 +14,10 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Common;
 using Google.Ads.GoogleAds.V3.Resources;
 using Google.Ads.GoogleAds.V3.Services;
 
 using System;
-
-using static Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V3
 {
@@ -45,15 +41,15 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // The keyword to search for.
-            string searchKeyword = "INSERT_SEARCH_KEYWORD_HERE";
+            // The language name to search for.
+            string languageName = "INSERT_LANGUAGE_NAME_HERE";
 
             // The country code for which the search is performed.
             // A list of country codes can be referenced here:
             // https://developers.google.com/adwords/api/docs/appendix/geotargeting.
             string carrierCountryCode = "US";
 
-            codeExample.Run(new GoogleAdsClient(), customerId, searchKeyword, carrierCountryCode);
+            codeExample.Run(new GoogleAdsClient(), customerId, languageName, carrierCountryCode);
         }
 
         /// <summary>
@@ -74,14 +70,14 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="searchKeyword">The keyword to search for language code.</param>
+        /// <param name="languageName">The language name to search for.</param>
         /// <param name="carrierCountryCode">The country code to search for carrier code.</param>
-        public void Run(GoogleAdsClient client, long customerId, string searchKeyword,
+        public void Run(GoogleAdsClient client, long customerId, string languageName,
             string carrierCountryCode)
         {
             try
             {
-                SearchTargetableLanguages(client, customerId, searchKeyword);
+                SearchTargetableLanguages(client, customerId, languageName);
                 SearchTargetableCarriers(client, customerId, carrierCountryCode);
             }
             catch (GoogleAdsException e)
@@ -107,8 +103,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             GoogleAdsServiceClient googleAdsService =
                 client.GetService(Services.V3.GoogleAdsService);
 
-            // Create a query that retrieves the language constants by the keyword included
-            // in the name.
+            // Create a query that retrieves the targetable carriers by country code.
             string query = $"SELECT carrier_constant.id, carrier_constant.name, " +
                 $"carrier_constant.country_code FROM carrier_constant " +
                 $"WHERE carrier_constant.country_code = '{countryCode}'";
@@ -125,17 +120,16 @@ namespace Google.Ads.GoogleAds.Examples.V3
                             $"and country code '{carrier.CountryCode}' was found.");
                     }
                 });
-
         }
 
         /// <summary>
-        /// Search for targetable languages by keyword.
+        /// Search for targetable languages by their name.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="searchKeyword">The keyword to search for.</param>
+        /// <param name="languageName">The language name to search for.</param>
         private void SearchTargetableLanguages(GoogleAdsClient client, long customerId,
-            string searchKeyword)
+            string languageName)
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
@@ -146,7 +140,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             string query = $"SELECT language_constant.id, language_constant.code, " +
                 $"language_constant.name, language_constant.targetable " +
                 $"FROM language_constant " +
-                $"WHERE language_constant.name LIKE '%{searchKeyword}%'";
+                $"WHERE language_constant.name LIKE '%{languageName}%'";
 
             // Issue a search request.
             googleAdsService.SearchStream(customerId.ToString(), query,
@@ -155,13 +149,12 @@ namespace Google.Ads.GoogleAds.Examples.V3
                     foreach (GoogleAdsRow criterionRow in resp.Results)
                     {
                         LanguageConstant language = criterionRow.LanguageConstant;
-                            // Display the results.
-                            Console.WriteLine($"Language with ID {language.Id}, code " +
+                        // Display the results.
+                        Console.WriteLine($"Language with ID {language.Id}, code " +
                             $"'{language.Code}', name '{language.Name}'and targetable:" +
                             $" '{language.Targetable}' was found.");
                     }
                 });
-
         }
     }
 }
