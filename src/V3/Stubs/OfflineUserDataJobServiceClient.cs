@@ -248,19 +248,19 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <remarks>
         /// Uses default <see cref="gax::PollSettings"/> of:
         /// <list type="bullet">
-        /// <item><description>Initial delay: 500 milliseconds</description></item>
-        /// <item><description>Delay multiplier: 1.5</description></item>
-        /// <item><description>Maximum delay: 5000 milliseconds</description></item>
-        /// <item><description>Total timeout: 300000 milliseconds</description></item>
+        /// <item><description>Initial delay: 300000 milliseconds</description></item>
+        /// <item><description>Delay multiplier: 1.25</description></item>
+        /// <item><description>Maximum delay: 3600000 milliseconds</description></item>
+        /// <item><description>Total timeout: 43200000 milliseconds</description></item>
         /// </list>
         /// </remarks>
         public lro::OperationsSettings RunOfflineUserDataJobOperationsSettings { get; set; } = new lro::OperationsSettings
         {
             DefaultPollSettings = new gax::PollSettings(
-                gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(300000L)),
-                sys::TimeSpan.FromMilliseconds(500L),
-                1.5,
-                sys::TimeSpan.FromMilliseconds(5000L))
+                gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(43200000L)),
+                sys::TimeSpan.FromMilliseconds(300000L),
+                1.25,
+                sys::TimeSpan.FromMilliseconds(3600000L))
         };
 
         /// <summary>
