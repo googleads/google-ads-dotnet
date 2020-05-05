@@ -763,10 +763,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetLabel = clientHelper.BuildApiCall<GetLabelRequest, gagvr::Label>(
                 GrpcClient.GetLabelAsync, GrpcClient.GetLabel, effectiveSettings.GetLabelSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateLabels = clientHelper.BuildApiCall<MutateLabelsRequest, MutateLabelsResponse>(
                 GrpcClient.MutateLabelsAsync, GrpcClient.MutateLabels, effectiveSettings.MutateLabelsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetLabel);
             Modify_GetLabelApiCall(ref _callGetLabel);
             Modify_ApiCall(ref _callMutateLabels);

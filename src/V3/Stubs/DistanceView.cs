@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZXQucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdv",
             "b2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFw",
             "cGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLMAgoM",
-            "RGlzdGFuY2VWaWV3EkQKDXJlc291cmNlX25hbWUYASABKAlCLeBBBfpBJwol",
+            "RGlzdGFuY2VWaWV3EkQKDXJlc291cmNlX25hbWUYASABKAlCLeBBA/pBJwol",
             "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Rpc3RhbmNlVmlldxJeCg9kaXN0",
             "YW5jZV9idWNrZXQYAiABKA4yQC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5l",
             "bnVtcy5EaXN0YW5jZUJ1Y2tldEVudW0uRGlzdGFuY2VCdWNrZXRCA+BBAxI2",
@@ -46,8 +46,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.DistanceBucketReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.DistanceView), global::Google.Ads.GoogleAds.V3.Resources.DistanceView.Parser, new[]{ "ResourceName", "DistanceBucket", "MetricSystem" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.DistanceView), global::Google.Ads.GoogleAds.V3.Resources.DistanceView.Parser, new[]{ "ResourceName", "DistanceBucket", "MetricSystem" }, null, null, null, null)
           }));
     }
     #endregion
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the distance view.
+    /// Output only. The resource name of the distance view.
     /// Distance view resource names have the form:
     ///
     /// `customers/{customer_id}/distanceViews/1~{distance_bucket}`
@@ -116,7 +116,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "distance_bucket" field.</summary>
     public const int DistanceBucketFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.DistanceBucketEnum.Types.DistanceBucket distanceBucket_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DistanceBucketEnum.Types.DistanceBucket distanceBucket_ = global::Google.Ads.GoogleAds.V3.Enums.DistanceBucketEnum.Types.DistanceBucket.Unspecified;
     /// <summary>
     /// Output only. Grouping of user distance from location extensions.
     /// </summary>
@@ -167,7 +167,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
-      if (DistanceBucket != 0) hash ^= DistanceBucket.GetHashCode();
+      if (DistanceBucket != global::Google.Ads.GoogleAds.V3.Enums.DistanceBucketEnum.Types.DistanceBucket.Unspecified) hash ^= DistanceBucket.GetHashCode();
       if (metricSystem_ != null) hash ^= MetricSystem.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -186,7 +186,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
-      if (DistanceBucket != 0) {
+      if (DistanceBucket != global::Google.Ads.GoogleAds.V3.Enums.DistanceBucketEnum.Types.DistanceBucket.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) DistanceBucket);
       }
@@ -204,7 +204,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
       }
-      if (DistanceBucket != 0) {
+      if (DistanceBucket != global::Google.Ads.GoogleAds.V3.Enums.DistanceBucketEnum.Types.DistanceBucket.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DistanceBucket);
       }
       if (metricSystem_ != null) {
@@ -224,7 +224,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (other.ResourceName.Length != 0) {
         ResourceName = other.ResourceName;
       }
-      if (other.DistanceBucket != 0) {
+      if (other.DistanceBucket != global::Google.Ads.GoogleAds.V3.Enums.DistanceBucketEnum.Types.DistanceBucket.Unspecified) {
         DistanceBucket = other.DistanceBucket;
       }
       if (other.metricSystem_ != null) {

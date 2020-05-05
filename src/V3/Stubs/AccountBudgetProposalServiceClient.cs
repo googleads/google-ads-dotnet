@@ -748,10 +748,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetAccountBudgetProposal = clientHelper.BuildApiCall<GetAccountBudgetProposalRequest, gagvr::AccountBudgetProposal>(
                 GrpcClient.GetAccountBudgetProposalAsync, GrpcClient.GetAccountBudgetProposal, effectiveSettings.GetAccountBudgetProposalSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateAccountBudgetProposal = clientHelper.BuildApiCall<MutateAccountBudgetProposalRequest, MutateAccountBudgetProposalResponse>(
                 GrpcClient.MutateAccountBudgetProposalAsync, GrpcClient.MutateAccountBudgetProposal, effectiveSettings.MutateAccountBudgetProposalSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetAccountBudgetProposal);
             Modify_GetAccountBudgetProposalApiCall(ref _callGetAccountBudgetProposal);
             Modify_ApiCall(ref _callMutateAccountBudgetProposal);

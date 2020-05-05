@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetDetailPlacementView = clientHelper.BuildApiCall<GetDetailPlacementViewRequest, gagvr::DetailPlacementView>(
                 GrpcClient.GetDetailPlacementViewAsync, GrpcClient.GetDetailPlacementView, effectiveSettings.GetDetailPlacementViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetDetailPlacementView);
             Modify_GetDetailPlacementViewApiCall(ref _callGetDetailPlacementView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

@@ -106,6 +106,7 @@ namespace Google.Ads.GoogleAds.V3.Services
     public abstract partial class MobileAppCategoryConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class MobileDeviceConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class MutateJobServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class OfflineUserDataJobServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class OperatingSystemVersionConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class PaidOrganicSearchTermViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ParentalStatusViewServiceClient : GoogleAdsServiceClientBase {}
@@ -121,6 +122,7 @@ namespace Google.Ads.GoogleAds.V3.Services
     public abstract partial class ShoppingPerformanceViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class TopicConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class TopicViewServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class UserDataServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class UserInterestServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class UserListServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class UserLocationViewServiceClient : GoogleAdsServiceClientBase {}

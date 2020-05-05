@@ -1030,13 +1030,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetRecommendation = clientHelper.BuildApiCall<GetRecommendationRequest, gagvr::Recommendation>(
                 GrpcClient.GetRecommendationAsync, GrpcClient.GetRecommendation, effectiveSettings.GetRecommendationSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callApplyRecommendation = clientHelper.BuildApiCall<ApplyRecommendationRequest, ApplyRecommendationResponse>(
                 GrpcClient.ApplyRecommendationAsync, GrpcClient.ApplyRecommendation, effectiveSettings.ApplyRecommendationSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callDismissRecommendation = clientHelper.BuildApiCall<DismissRecommendationRequest, DismissRecommendationResponse>(
                 GrpcClient.DismissRecommendationAsync, GrpcClient.DismissRecommendation, effectiveSettings.DismissRecommendationSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetRecommendation);
             Modify_GetRecommendationApiCall(ref _callGetRecommendation);
             Modify_ApiCall(ref _callApplyRecommendation);

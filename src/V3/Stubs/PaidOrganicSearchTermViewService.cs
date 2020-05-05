@@ -30,25 +30,27 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "djMvcmVzb3VyY2VzL3BhaWRfb3JnYW5pY19zZWFyY2hfdGVybV92aWV3LnBy",
             "b3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGhdnb29nbGUvYXBp",
             "L2NsaWVudC5wcm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90",
-            "byJBCiNHZXRQYWlkT3JnYW5pY1NlYXJjaFRlcm1WaWV3UmVxdWVzdBIaCg1y",
-            "ZXNvdXJjZV9uYW1lGAEgASgJQgPgQQIyuwIKIFBhaWRPcmdhbmljU2VhcmNo",
-            "VGVybVZpZXdTZXJ2aWNlEvkBChxHZXRQYWlkT3JnYW5pY1NlYXJjaFRlcm1W",
-            "aWV3EkUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuR2V0UGFp",
-            "ZE9yZ2FuaWNTZWFyY2hUZXJtVmlld1JlcXVlc3QaPC5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52My5yZXNvdXJjZXMuUGFpZE9yZ2FuaWNTZWFyY2hUZXJtVmll",
-            "dyJUgtPkkwI+EjwvdjMve3Jlc291cmNlX25hbWU9Y3VzdG9tZXJzLyovcGFp",
-            "ZE9yZ2FuaWNTZWFyY2hUZXJtVmlld3MvKn3aQQ1yZXNvdXJjZV9uYW1lGhvK",
-            "QRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb21CjAIKJGNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52My5zZXJ2aWNlc0IlUGFpZE9yZ2FuaWNTZWFyY2hUZXJt",
-            "Vmlld1NlcnZpY2VQcm90b1ABWkhnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
-            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjMvc2VydmljZXM7c2Vydmlj",
-            "ZXOiAgNHQUGqAiBHb29nbGUuQWRzLkdvb2dsZUFkcy5WMy5TZXJ2aWNlc8oC",
-            "IEdvb2dsZVxBZHNcR29vZ2xlQWRzXFYzXFNlcnZpY2Vz6gIkR29vZ2xlOjpB",
-            "ZHM6Okdvb2dsZUFkczo6VjM6OlNlcnZpY2VzYgZwcm90bzM="));
+            "bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90byJ4CiNHZXRQYWlkT3JnYW5p",
+            "Y1NlYXJjaFRlcm1WaWV3UmVxdWVzdBJRCg1yZXNvdXJjZV9uYW1lGAEgASgJ",
+            "QjrgQQL6QTQKMmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9QYWlkT3JnYW5p",
+            "Y1NlYXJjaFRlcm1WaWV3MrsCCiBQYWlkT3JnYW5pY1NlYXJjaFRlcm1WaWV3",
+            "U2VydmljZRL5AQocR2V0UGFpZE9yZ2FuaWNTZWFyY2hUZXJtVmlldxJFLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzLkdldFBhaWRPcmdhbmlj",
+            "U2VhcmNoVGVybVZpZXdSZXF1ZXN0GjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djMucmVzb3VyY2VzLlBhaWRPcmdhbmljU2VhcmNoVGVybVZpZXciVILT5JMC",
+            "PhI8L3YzL3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8qL3BhaWRPcmdhbmlj",
+            "U2VhcmNoVGVybVZpZXdzLyp92kENcmVzb3VyY2VfbmFtZRobykEYZ29vZ2xl",
+            "YWRzLmdvb2dsZWFwaXMuY29tQowCCiRjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjMuc2VydmljZXNCJVBhaWRPcmdhbmljU2VhcmNoVGVybVZpZXdTZXJ2",
+            "aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YzL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FB",
+            "qgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMuU2VydmljZXPKAiBHb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWM1xTZXJ2aWNlc+oCJEdvb2dsZTo6QWRzOjpHb29n",
+            "bGVBZHM6OlYzOjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.PaidOrganicSearchTermViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetPaidOrganicSearchTermViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetPaidOrganicSearchTermViewRequest.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.PaidOrganicSearchTermViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetPaidOrganicSearchTermViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetPaidOrganicSearchTermViewRequest.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

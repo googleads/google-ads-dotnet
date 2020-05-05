@@ -29,26 +29,28 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "b2dsZWFkcy52My5zZXJ2aWNlcxpCZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjMv",
             "cmVzb3VyY2VzL2V4cGFuZGVkX2xhbmRpbmdfcGFnZV92aWV3LnByb3RvGhxn",
             "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGhdnb29nbGUvYXBpL2NsaWVu",
-            "dC5wcm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90byI/CiFH",
-            "ZXRFeHBhbmRlZExhbmRpbmdQYWdlVmlld1JlcXVlc3QSGgoNcmVzb3VyY2Vf",
-            "bmFtZRgBIAEoCUID4EECMrECCh5FeHBhbmRlZExhbmRpbmdQYWdlVmlld1Nl",
-            "cnZpY2US8QEKGkdldEV4cGFuZGVkTGFuZGluZ1BhZ2VWaWV3EkMuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuR2V0RXhwYW5kZWRMYW5kaW5n",
-            "UGFnZVZpZXdSZXF1ZXN0GjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMucmVz",
-            "b3VyY2VzLkV4cGFuZGVkTGFuZGluZ1BhZ2VWaWV3IlKC0+STAjwSOi92My97",
-            "cmVzb3VyY2VfbmFtZT1jdXN0b21lcnMvKi9leHBhbmRlZExhbmRpbmdQYWdl",
-            "Vmlld3MvKn3aQQ1yZXNvdXJjZV9uYW1lGhvKQRhnb29nbGVhZHMuZ29vZ2xl",
-            "YXBpcy5jb21CigIKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2",
-            "aWNlc0IjRXhwYW5kZWRMYW5kaW5nUGFnZVZpZXdTZXJ2aWNlUHJvdG9QAVpI",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YzL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjMuU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFk",
-            "c1xWM1xTZXJ2aWNlc+oCJEdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpT",
-            "ZXJ2aWNlc2IGcHJvdG8z"));
+            "dC5wcm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29v",
+            "Z2xlL2FwaS9yZXNvdXJjZS5wcm90byJ0CiFHZXRFeHBhbmRlZExhbmRpbmdQ",
+            "YWdlVmlld1JlcXVlc3QSTwoNcmVzb3VyY2VfbmFtZRgBIAEoCUI44EEC+kEy",
+            "CjBnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vRXhwYW5kZWRMYW5kaW5nUGFn",
+            "ZVZpZXcysQIKHkV4cGFuZGVkTGFuZGluZ1BhZ2VWaWV3U2VydmljZRLxAQoa",
+            "R2V0RXhwYW5kZWRMYW5kaW5nUGFnZVZpZXcSQy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52My5zZXJ2aWNlcy5HZXRFeHBhbmRlZExhbmRpbmdQYWdlVmlld1Jl",
+            "cXVlc3QaOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5yZXNvdXJjZXMuRXhw",
+            "YW5kZWRMYW5kaW5nUGFnZVZpZXciUoLT5JMCPBI6L3YzL3tyZXNvdXJjZV9u",
+            "YW1lPWN1c3RvbWVycy8qL2V4cGFuZGVkTGFuZGluZ1BhZ2VWaWV3cy8qfdpB",
+            "DXJlc291cmNlX25hbWUaG8pBGGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbUKK",
+            "AgokY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzQiNFeHBh",
+            "bmRlZExhbmRpbmdQYWdlVmlld1NlcnZpY2VQcm90b1ABWkhnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjMv",
+            "c2VydmljZXM7c2VydmljZXOiAgNHQUGqAiBHb29nbGUuQWRzLkdvb2dsZUFk",
+            "cy5WMy5TZXJ2aWNlc8oCIEdvb2dsZVxBZHNcR29vZ2xlQWRzXFYzXFNlcnZp",
+            "Y2Vz6gIkR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OlNlcnZpY2VzYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetExpandedLandingPageViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetExpandedLandingPageViewRequest.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetExpandedLandingPageViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetExpandedLandingPageViewRequest.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

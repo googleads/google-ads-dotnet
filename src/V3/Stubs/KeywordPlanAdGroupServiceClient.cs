@@ -772,10 +772,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetKeywordPlanAdGroup = clientHelper.BuildApiCall<GetKeywordPlanAdGroupRequest, gagvr::KeywordPlanAdGroup>(
                 GrpcClient.GetKeywordPlanAdGroupAsync, GrpcClient.GetKeywordPlanAdGroup, effectiveSettings.GetKeywordPlanAdGroupSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateKeywordPlanAdGroups = clientHelper.BuildApiCall<MutateKeywordPlanAdGroupsRequest, MutateKeywordPlanAdGroupsResponse>(
                 GrpcClient.MutateKeywordPlanAdGroupsAsync, GrpcClient.MutateKeywordPlanAdGroups, effectiveSettings.MutateKeywordPlanAdGroupsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetKeywordPlanAdGroup);
             Modify_GetKeywordPlanAdGroupApiCall(ref _callGetKeywordPlanAdGroup);
             Modify_ApiCall(ref _callMutateKeywordPlanAdGroups);

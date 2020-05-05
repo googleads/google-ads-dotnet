@@ -68,12 +68,12 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "ZHM6OlYzOjpDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionContextTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionOperatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MatchingFunction), global::Google.Ads.GoogleAds.V3.Common.MatchingFunction.Parser, new[]{ "FunctionString", "Operator", "LeftOperands", "RightOperands" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand), global::Google.Ads.GoogleAds.V3.Common.Operand.Parser, new[]{ "ConstantOperand", "FeedAttributeOperand", "FunctionOperand", "RequestContextOperand" }, new[]{ "FunctionArgumentOperand" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand.Types.ConstantOperand), global::Google.Ads.GoogleAds.V3.Common.Operand.Types.ConstantOperand.Parser, new[]{ "StringValue", "LongValue", "BooleanValue", "DoubleValue" }, new[]{ "ConstantOperandValue" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand.Types.FeedAttributeOperand), global::Google.Ads.GoogleAds.V3.Common.Operand.Types.FeedAttributeOperand.Parser, new[]{ "FeedId", "FeedAttributeId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand.Types.FunctionOperand), global::Google.Ads.GoogleAds.V3.Common.Operand.Types.FunctionOperand.Parser, new[]{ "MatchingFunction" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand.Types.RequestContextOperand), global::Google.Ads.GoogleAds.V3.Common.Operand.Types.RequestContextOperand.Parser, new[]{ "ContextType" }, null, null, null)})
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MatchingFunction), global::Google.Ads.GoogleAds.V3.Common.MatchingFunction.Parser, new[]{ "FunctionString", "Operator", "LeftOperands", "RightOperands" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand), global::Google.Ads.GoogleAds.V3.Common.Operand.Parser, new[]{ "ConstantOperand", "FeedAttributeOperand", "FunctionOperand", "RequestContextOperand" }, new[]{ "FunctionArgumentOperand" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand.Types.ConstantOperand), global::Google.Ads.GoogleAds.V3.Common.Operand.Types.ConstantOperand.Parser, new[]{ "StringValue", "LongValue", "BooleanValue", "DoubleValue" }, new[]{ "ConstantOperandValue" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand.Types.FeedAttributeOperand), global::Google.Ads.GoogleAds.V3.Common.Operand.Types.FeedAttributeOperand.Parser, new[]{ "FeedId", "FeedAttributeId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand.Types.FunctionOperand), global::Google.Ads.GoogleAds.V3.Common.Operand.Types.FunctionOperand.Parser, new[]{ "MatchingFunction" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Operand.Types.RequestContextOperand), global::Google.Ads.GoogleAds.V3.Common.Operand.Types.RequestContextOperand.Parser, new[]{ "ContextType" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -156,7 +156,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "operator" field.</summary>
     public const int OperatorFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionOperatorEnum.Types.MatchingFunctionOperator operator_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionOperatorEnum.Types.MatchingFunctionOperator operator_ = global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionOperatorEnum.Types.MatchingFunctionOperator.Unspecified;
     /// <summary>
     /// Operator for a function.
     /// </summary>
@@ -219,7 +219,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (functionString_ != null) hash ^= FunctionString.GetHashCode();
-      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionOperatorEnum.Types.MatchingFunctionOperator.Unspecified) hash ^= Operator.GetHashCode();
       hash ^= leftOperands_.GetHashCode();
       hash ^= rightOperands_.GetHashCode();
       if (_unknownFields != null) {
@@ -240,7 +240,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       }
       leftOperands_.WriteTo(output, _repeated_leftOperands_codec);
       rightOperands_.WriteTo(output, _repeated_rightOperands_codec);
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionOperatorEnum.Types.MatchingFunctionOperator.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Operator);
       }
@@ -255,7 +255,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (functionString_ != null) {
         size += _single_functionString_codec.CalculateSizeWithTag(FunctionString);
       }
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionOperatorEnum.Types.MatchingFunctionOperator.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
       }
       size += leftOperands_.CalculateSize(_repeated_leftOperands_codec);
@@ -276,7 +276,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           FunctionString = other.FunctionString;
         }
       }
-      if (other.Operator != 0) {
+      if (other.Operator != global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionOperatorEnum.Types.MatchingFunctionOperator.Unspecified) {
         Operator = other.Operator;
       }
       leftOperands_.Add(other.leftOperands_);
@@ -1242,7 +1242,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
         /// <summary>Field number for the "context_type" field.</summary>
         public const int ContextTypeFieldNumber = 1;
-        private global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionContextTypeEnum.Types.MatchingFunctionContextType contextType_ = 0;
+        private global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionContextTypeEnum.Types.MatchingFunctionContextType contextType_ = global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionContextTypeEnum.Types.MatchingFunctionContextType.Unspecified;
         /// <summary>
         /// Type of value to be referred in the request context.
         /// </summary>
@@ -1274,7 +1274,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
-          if (ContextType != 0) hash ^= ContextType.GetHashCode();
+          if (ContextType != global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionContextTypeEnum.Types.MatchingFunctionContextType.Unspecified) hash ^= ContextType.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -1288,7 +1288,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
-          if (ContextType != 0) {
+          if (ContextType != global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionContextTypeEnum.Types.MatchingFunctionContextType.Unspecified) {
             output.WriteRawTag(8);
             output.WriteEnum((int) ContextType);
           }
@@ -1300,7 +1300,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
-          if (ContextType != 0) {
+          if (ContextType != global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionContextTypeEnum.Types.MatchingFunctionContextType.Unspecified) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ContextType);
           }
           if (_unknownFields != null) {
@@ -1314,7 +1314,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           if (other == null) {
             return;
           }
-          if (other.ContextType != 0) {
+          if (other.ContextType != global::Google.Ads.GoogleAds.V3.Enums.MatchingFunctionContextTypeEnum.Types.MatchingFunctionContextType.Unspecified) {
             ContextType = other.ContextType;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

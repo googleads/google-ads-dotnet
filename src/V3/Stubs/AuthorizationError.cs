@@ -45,8 +45,8 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum), global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum.Types.AuthorizationError) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum), global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Errors.AuthorizationErrorEnum.Types.AuthorizationError) }, null, null)
           }));
     }
     #endregion

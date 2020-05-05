@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dy5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMucmVzb3VyY2VzGh9n",
             "b29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jl",
             "c291cmNlLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIqUB",
-            "CglUb3BpY1ZpZXcSQQoNcmVzb3VyY2VfbmFtZRgBIAEoCUIq4EEF+kEkCiJn",
+            "CglUb3BpY1ZpZXcSQQoNcmVzb3VyY2VfbmFtZRgBIAEoCUIq4EED+kEkCiJn",
             "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vVG9waWNWaWV3OlXqQVIKImdvb2ds",
             "ZWFkcy5nb29nbGVhcGlzLmNvbS9Ub3BpY1ZpZXcSLGN1c3RvbWVycy97Y3Vz",
             "dG9tZXJ9L3RvcGljVmlld3Mve3RvcGljX3ZpZXd9QvsBCiVjb20uZ29vZ2xl",
@@ -40,8 +40,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.TopicView), global::Google.Ads.GoogleAds.V3.Resources.TopicView.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.TopicView), global::Google.Ads.GoogleAds.V3.Resources.TopicView.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the topic view.
+    /// Output only. The resource name of the topic view.
     /// Topic view resource names have the form:
     ///
     /// `customers/{customer_id}/topicViews/{ad_group_id}~{criterion_id}`

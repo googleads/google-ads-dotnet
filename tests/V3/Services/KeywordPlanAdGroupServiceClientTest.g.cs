@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateKeywordPlanAdGroupsResponse expectedResponse = new MutateKeywordPlanAdGroupsResponse();
             mockGrpcClient.Setup(x => x.MutateKeywordPlanAdGroups(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<KeywordPlanAdGroupOperation> operations = new List<KeywordPlanAdGroupOperation>();
-            MutateKeywordPlanAdGroupsResponse response = client.MutateKeywordPlanAdGroups(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateKeywordPlanAdGroupsResponse response = client.MutateKeywordPlanAdGroups(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateKeywordPlanAdGroupsResponse expectedResponse = new MutateKeywordPlanAdGroupsResponse();
             mockGrpcClient.Setup(x => x.MutateKeywordPlanAdGroupsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<KeywordPlanAdGroupOperation> operations = new List<KeywordPlanAdGroupOperation>();
-            MutateKeywordPlanAdGroupsResponse response = await client.MutateKeywordPlanAdGroupsAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateKeywordPlanAdGroupsResponse response = await client.MutateKeywordPlanAdGroupsAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

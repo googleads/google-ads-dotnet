@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cmNlcxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xl",
             "L2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJz",
             "LnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIoUCCg9MYW5k",
-            "aW5nUGFnZVZpZXcSRwoNcmVzb3VyY2VfbmFtZRgBIAEoCUIw4EEF+kEqCihn",
+            "aW5nUGFnZVZpZXcSRwoNcmVzb3VyY2VfbmFtZRgBIAEoCUIw4EED+kEqCihn",
             "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vTGFuZGluZ1BhZ2VWaWV3Ej8KFHVu",
             "ZXhwYW5kZWRfZmluYWxfdXJsGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
             "cmluZ1ZhbHVlQgPgQQM6aOpBZQooZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29t",
@@ -43,8 +43,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.LandingPageView), global::Google.Ads.GoogleAds.V3.Resources.LandingPageView.Parser, new[]{ "ResourceName", "UnexpandedFinalUrl" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.LandingPageView), global::Google.Ads.GoogleAds.V3.Resources.LandingPageView.Parser, new[]{ "ResourceName", "UnexpandedFinalUrl" }, null, null, null, null)
           }));
     }
     #endregion
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the landing page view.
+    /// Output only. The resource name of the landing page view.
     /// Landing page view resource names have the form:
     ///
     /// `customers/{customer_id}/landingPageViews/{unexpanded_final_url_fingerprint}`

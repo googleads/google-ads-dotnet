@@ -354,7 +354,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// The ID of the customer with the recommendation.
         /// </param>
         /// <param name="language">
-        /// The resource name of the language to target.
+        /// Required. The resource name of the language to target.
         /// Required
         /// </param>
         /// <param name="geoTargetConstants">
@@ -392,7 +392,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// The ID of the customer with the recommendation.
         /// </param>
         /// <param name="language">
-        /// The resource name of the language to target.
+        /// Required. The resource name of the language to target.
         /// Required
         /// </param>
         /// <param name="geoTargetConstants">
@@ -427,7 +427,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// The ID of the customer with the recommendation.
         /// </param>
         /// <param name="language">
-        /// The resource name of the language to target.
+        /// Required. The resource name of the language to target.
         /// Required
         /// </param>
         /// <param name="geoTargetConstants">
@@ -535,7 +535,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGenerateKeywordIdeas = clientHelper.BuildApiCall<GenerateKeywordIdeasRequest, GenerateKeywordIdeaResponse>(
                 GrpcClient.GenerateKeywordIdeasAsync, GrpcClient.GenerateKeywordIdeas, effectiveSettings.GenerateKeywordIdeasSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGenerateKeywordIdeas);
             Modify_GenerateKeywordIdeasApiCall(ref _callGenerateKeywordIdeas);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

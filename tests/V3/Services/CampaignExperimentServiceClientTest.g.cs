@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -187,6 +187,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateCampaignExperimentsResponse expectedResponse = new MutateCampaignExperimentsResponse();
             mockGrpcClient.Setup(x => x.MutateCampaignExperiments(expectedRequest, It.IsAny<CallOptions>()))
@@ -194,7 +196,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CampaignExperimentServiceClient client = new CampaignExperimentServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CampaignExperimentOperation> operations = new List<CampaignExperimentOperation>();
-            MutateCampaignExperimentsResponse response = client.MutateCampaignExperiments(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateCampaignExperimentsResponse response = client.MutateCampaignExperiments(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -209,6 +213,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateCampaignExperimentsResponse expectedResponse = new MutateCampaignExperimentsResponse();
             mockGrpcClient.Setup(x => x.MutateCampaignExperimentsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -216,7 +222,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CampaignExperimentServiceClient client = new CampaignExperimentServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CampaignExperimentOperation> operations = new List<CampaignExperimentOperation>();
-            MutateCampaignExperimentsResponse response = await client.MutateCampaignExperimentsAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateCampaignExperimentsResponse response = await client.MutateCampaignExperimentsAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

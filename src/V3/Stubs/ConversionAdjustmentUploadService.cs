@@ -31,64 +31,64 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQu",
             "cHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aHmdvb2ds",
             "ZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoXZ29vZ2xlL3JwYy9zdGF0dXMu",
-            "cHJvdG8iywEKIlVwbG9hZENvbnZlcnNpb25BZGp1c3RtZW50c1JlcXVlc3QS",
+            "cHJvdG8i0AEKIlVwbG9hZENvbnZlcnNpb25BZGp1c3RtZW50c1JlcXVlc3QS",
             "GAoLY3VzdG9tZXJfaWQYASABKAlCA+BBAhJbChZjb252ZXJzaW9uX2FkanVz",
             "dG1lbnRzGAIgAygLMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2Vydmlj",
-            "ZXMuQ29udmVyc2lvbkFkanVzdG1lbnRCA+BBAhIXCg9wYXJ0aWFsX2ZhaWx1",
-            "cmUYAyABKAgSFQoNdmFsaWRhdGVfb25seRgEIAEoCCKnAQojVXBsb2FkQ29u",
-            "dmVyc2lvbkFkanVzdG1lbnRzUmVzcG9uc2USMQoVcGFydGlhbF9mYWlsdXJl",
-            "X2Vycm9yGAEgASgLMhIuZ29vZ2xlLnJwYy5TdGF0dXMSTQoHcmVzdWx0cxgC",
-            "IAMoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzLkNvbnZl",
-            "cnNpb25BZGp1c3RtZW50UmVzdWx0IukDChRDb252ZXJzaW9uQWRqdXN0bWVu",
-            "dBI3ChFjb252ZXJzaW9uX2FjdGlvbhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1",
-            "Zi5TdHJpbmdWYWx1ZRI6ChRhZGp1c3RtZW50X2RhdGVfdGltZRgEIAEoCzIc",
-            "Lmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJtCg9hZGp1c3RtZW50X3R5",
-            "cGUYBSABKA4yVC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lbnVtcy5Db252",
-            "ZXJzaW9uQWRqdXN0bWVudFR5cGVFbnVtLkNvbnZlcnNpb25BZGp1c3RtZW50",
-            "VHlwZRJNChFyZXN0YXRlbWVudF92YWx1ZRgGIAEoCzIyLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYzLnNlcnZpY2VzLlJlc3RhdGVtZW50VmFsdWUSUwoUZ2Ns",
-            "aWRfZGF0ZV90aW1lX3BhaXIYASABKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52My5zZXJ2aWNlcy5HY2xpZERhdGVUaW1lUGFpckgAEjAKCG9yZGVyX2lk",
-            "GAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlSABCFwoVY29u",
-            "dmVyc2lvbl9pZGVudGlmaWVyIn0KEFJlc3RhdGVtZW50VmFsdWUSNAoOYWRq",
-            "dXN0ZWRfdmFsdWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFs",
-            "dWUSMwoNY3VycmVuY3lfY29kZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZSJ8ChFHY2xpZERhdGVUaW1lUGFpchIrCgVnY2xpZBgBIAEo",
-            "CzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRI6ChRjb252ZXJzaW9u",
-            "X2RhdGVfdGltZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZSKgAwoaQ29udmVyc2lvbkFkanVzdG1lbnRSZXN1bHQSNwoRY29udmVyc2lv",
-            "bl9hY3Rpb24YAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "OgoUYWRqdXN0bWVudF9kYXRlX3RpbWUYBCABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSbQoPYWRqdXN0bWVudF90eXBlGAUgASgOMlQuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjMuZW51bXMuQ29udmVyc2lvbkFkanVzdG1l",
-            "bnRUeXBlRW51bS5Db252ZXJzaW9uQWRqdXN0bWVudFR5cGUSUwoUZ2NsaWRf",
-            "ZGF0ZV90aW1lX3BhaXIYASABKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "My5zZXJ2aWNlcy5HY2xpZERhdGVUaW1lUGFpckgAEjAKCG9yZGVyX2lkGAIg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlSABCFwoVY29udmVy",
-            "c2lvbl9pZGVudGlmaWVyMtgCCiFDb252ZXJzaW9uQWRqdXN0bWVudFVwbG9h",
-            "ZFNlcnZpY2USlQIKG1VwbG9hZENvbnZlcnNpb25BZGp1c3RtZW50cxJELmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzLlVwbG9hZENvbnZlcnNp",
-            "b25BZGp1c3RtZW50c1JlcXVlc3QaRS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "My5zZXJ2aWNlcy5VcGxvYWRDb252ZXJzaW9uQWRqdXN0bWVudHNSZXNwb25z",
-            "ZSJpgtPkkwI+IjkvdjMvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfTp1cGxv",
-            "YWRDb252ZXJzaW9uQWRqdXN0bWVudHM6ASraQSJjdXN0b21lcl9pZCxjb252",
-            "ZXJzaW9uX2FkanVzdG1lbnRzGhvKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5j",
-            "b21CjQIKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlc0Im",
-            "Q29udmVyc2lvbkFkanVzdG1lbnRVcGxvYWRTZXJ2aWNlUHJvdG9QAVpIZ29v",
-            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
-            "YWRzL3YzL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjMuU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "M1xTZXJ2aWNlc+oCJEdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpTZXJ2",
-            "aWNlc2IGcHJvdG8z"));
+            "ZXMuQ29udmVyc2lvbkFkanVzdG1lbnRCA+BBAhIcCg9wYXJ0aWFsX2ZhaWx1",
+            "cmUYAyABKAhCA+BBAhIVCg12YWxpZGF0ZV9vbmx5GAQgASgIIqcBCiNVcGxv",
+            "YWRDb252ZXJzaW9uQWRqdXN0bWVudHNSZXNwb25zZRIxChVwYXJ0aWFsX2Zh",
+            "aWx1cmVfZXJyb3IYASABKAsyEi5nb29nbGUucnBjLlN0YXR1cxJNCgdyZXN1",
+            "bHRzGAIgAygLMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMu",
+            "Q29udmVyc2lvbkFkanVzdG1lbnRSZXN1bHQi6QMKFENvbnZlcnNpb25BZGp1",
+            "c3RtZW50EjcKEWNvbnZlcnNpb25fYWN0aW9uGAMgASgLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlEjoKFGFkanVzdG1lbnRfZGF0ZV90aW1lGAQg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEm0KD2FkanVzdG1l",
+            "bnRfdHlwZRgFIAEoDjJULmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLmVudW1z",
+            "LkNvbnZlcnNpb25BZGp1c3RtZW50VHlwZUVudW0uQ29udmVyc2lvbkFkanVz",
+            "dG1lbnRUeXBlEk0KEXJlc3RhdGVtZW50X3ZhbHVlGAYgASgLMjIuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuUmVzdGF0ZW1lbnRWYWx1ZRJT",
+            "ChRnY2xpZF9kYXRlX3RpbWVfcGFpchgBIAEoCzIzLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYzLnNlcnZpY2VzLkdjbGlkRGF0ZVRpbWVQYWlySAASMAoIb3Jk",
+            "ZXJfaWQYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVIAEIX",
+            "ChVjb252ZXJzaW9uX2lkZW50aWZpZXIifQoQUmVzdGF0ZW1lbnRWYWx1ZRI0",
+            "Cg5hZGp1c3RlZF92YWx1ZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3Vi",
+            "bGVWYWx1ZRIzCg1jdXJyZW5jeV9jb2RlGAIgASgLMhwuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cmluZ1ZhbHVlInwKEUdjbGlkRGF0ZVRpbWVQYWlyEisKBWdjbGlk",
+            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjoKFGNvbnZl",
+            "cnNpb25fZGF0ZV90aW1lGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
+            "Z1ZhbHVlIqADChpDb252ZXJzaW9uQWRqdXN0bWVudFJlc3VsdBI3ChFjb252",
+            "ZXJzaW9uX2FjdGlvbhgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZRI6ChRhZGp1c3RtZW50X2RhdGVfdGltZRgEIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZRJtCg9hZGp1c3RtZW50X3R5cGUYBSABKA4y",
+            "VC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lbnVtcy5Db252ZXJzaW9uQWRq",
+            "dXN0bWVudFR5cGVFbnVtLkNvbnZlcnNpb25BZGp1c3RtZW50VHlwZRJTChRn",
+            "Y2xpZF9kYXRlX3RpbWVfcGFpchgBIAEoCzIzLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYzLnNlcnZpY2VzLkdjbGlkRGF0ZVRpbWVQYWlySAASMAoIb3JkZXJf",
+            "aWQYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVIAEIXChVj",
+            "b252ZXJzaW9uX2lkZW50aWZpZXIy6AIKIUNvbnZlcnNpb25BZGp1c3RtZW50",
+            "VXBsb2FkU2VydmljZRKlAgobVXBsb2FkQ29udmVyc2lvbkFkanVzdG1lbnRz",
+            "EkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuVXBsb2FkQ29u",
+            "dmVyc2lvbkFkanVzdG1lbnRzUmVxdWVzdBpFLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYzLnNlcnZpY2VzLlVwbG9hZENvbnZlcnNpb25BZGp1c3RtZW50c1Jl",
+            "c3BvbnNlInmC0+STAj4iOS92My9jdXN0b21lcnMve2N1c3RvbWVyX2lkPSp9",
+            "OnVwbG9hZENvbnZlcnNpb25BZGp1c3RtZW50czoBKtpBMmN1c3RvbWVyX2lk",
+            "LGNvbnZlcnNpb25fYWRqdXN0bWVudHMscGFydGlhbF9mYWlsdXJlGhvKQRhn",
+            "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb21CjQIKJGNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52My5zZXJ2aWNlc0ImQ29udmVyc2lvbkFkanVzdG1lbnRVcGxv",
+            "YWRTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YzL3NlcnZpY2VzO3NlcnZpY2Vz",
+            "ogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMuU2VydmljZXPKAiBH",
+            "b29nbGVcQWRzXEdvb2dsZUFkc1xWM1xTZXJ2aWNlc+oCJEdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYzOjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsRequest), global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsRequest.Parser, new[]{ "CustomerId", "ConversionAdjustments", "PartialFailure", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsResponse), global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustment), global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustment.Parser, new[]{ "ConversionAction", "AdjustmentDateTime", "AdjustmentType", "RestatementValue", "GclidDateTimePair", "OrderId" }, new[]{ "ConversionIdentifier" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.RestatementValue), global::Google.Ads.GoogleAds.V3.Services.RestatementValue.Parser, new[]{ "AdjustedValue", "CurrencyCode" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GclidDateTimePair), global::Google.Ads.GoogleAds.V3.Services.GclidDateTimePair.Parser, new[]{ "Gclid", "ConversionDateTime" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustmentResult), global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustmentResult.Parser, new[]{ "ConversionAction", "AdjustmentDateTime", "AdjustmentType", "GclidDateTimePair", "OrderId" }, new[]{ "ConversionIdentifier" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsRequest), global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsRequest.Parser, new[]{ "CustomerId", "ConversionAdjustments", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsResponse), global::Google.Ads.GoogleAds.V3.Services.UploadConversionAdjustmentsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustment), global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustment.Parser, new[]{ "ConversionAction", "AdjustmentDateTime", "AdjustmentType", "RestatementValue", "GclidDateTimePair", "OrderId" }, new[]{ "ConversionIdentifier" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.RestatementValue), global::Google.Ads.GoogleAds.V3.Services.RestatementValue.Parser, new[]{ "AdjustedValue", "CurrencyCode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GclidDateTimePair), global::Google.Ads.GoogleAds.V3.Services.GclidDateTimePair.Parser, new[]{ "Gclid", "ConversionDateTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustmentResult), global::Google.Ads.GoogleAds.V3.Services.ConversionAdjustmentResult.Parser, new[]{ "ConversionAction", "AdjustmentDateTime", "AdjustmentType", "GclidDateTimePair", "OrderId" }, new[]{ "ConversionIdentifier" }, null, null, null)
           }));
     }
     #endregion
@@ -167,7 +167,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
     public const int PartialFailureFieldNumber = 3;
     private bool partialFailure_;
     /// <summary>
-    /// If true, successful operations will be carried out and invalid
+    /// Required. If true, successful operations will be carried out and invalid
     /// operations will return errors. If false, all operations will be carried out
     /// in one transaction if and only if they are all valid. This should always be
     /// set to true.
@@ -578,7 +578,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "adjustment_type" field.</summary>
     public const int AdjustmentTypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType adjustmentType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType adjustmentType_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified;
     /// <summary>
     /// The adjustment type.
     /// </summary>
@@ -685,7 +685,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       int hash = 1;
       if (conversionAction_ != null) hash ^= ConversionAction.GetHashCode();
       if (adjustmentDateTime_ != null) hash ^= AdjustmentDateTime.GetHashCode();
-      if (AdjustmentType != 0) hash ^= AdjustmentType.GetHashCode();
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) hash ^= AdjustmentType.GetHashCode();
       if (restatementValue_ != null) hash ^= RestatementValue.GetHashCode();
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) hash ^= GclidDateTimePair.GetHashCode();
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.OrderId) hash ^= OrderId.GetHashCode();
@@ -716,7 +716,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (adjustmentDateTime_ != null) {
         _single_adjustmentDateTime_codec.WriteTagAndValue(output, AdjustmentDateTime);
       }
-      if (AdjustmentType != 0) {
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) AdjustmentType);
       }
@@ -738,7 +738,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (adjustmentDateTime_ != null) {
         size += _single_adjustmentDateTime_codec.CalculateSizeWithTag(AdjustmentDateTime);
       }
-      if (AdjustmentType != 0) {
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdjustmentType);
       }
       if (restatementValue_ != null) {
@@ -771,7 +771,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
           AdjustmentDateTime = other.AdjustmentDateTime;
         }
       }
-      if (other.AdjustmentType != 0) {
+      if (other.AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         AdjustmentType = other.AdjustmentType;
       }
       if (other.restatementValue_ != null) {
@@ -1296,7 +1296,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "adjustment_type" field.</summary>
     public const int AdjustmentTypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType adjustmentType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType adjustmentType_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified;
     /// <summary>
     /// The adjustment type.
     /// </summary>
@@ -1384,7 +1384,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       int hash = 1;
       if (conversionAction_ != null) hash ^= ConversionAction.GetHashCode();
       if (adjustmentDateTime_ != null) hash ^= AdjustmentDateTime.GetHashCode();
-      if (AdjustmentType != 0) hash ^= AdjustmentType.GetHashCode();
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) hash ^= AdjustmentType.GetHashCode();
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) hash ^= GclidDateTimePair.GetHashCode();
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.OrderId) hash ^= OrderId.GetHashCode();
       hash ^= (int) conversionIdentifierCase_;
@@ -1414,7 +1414,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (adjustmentDateTime_ != null) {
         _single_adjustmentDateTime_codec.WriteTagAndValue(output, AdjustmentDateTime);
       }
-      if (AdjustmentType != 0) {
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) AdjustmentType);
       }
@@ -1432,7 +1432,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (adjustmentDateTime_ != null) {
         size += _single_adjustmentDateTime_codec.CalculateSizeWithTag(AdjustmentDateTime);
       }
-      if (AdjustmentType != 0) {
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdjustmentType);
       }
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) {
@@ -1462,7 +1462,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
           AdjustmentDateTime = other.AdjustmentDateTime;
         }
       }
-      if (other.AdjustmentType != 0) {
+      if (other.AdjustmentType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
         AdjustmentType = other.AdjustmentType;
       }
       switch (other.ConversionIdentifierCase) {

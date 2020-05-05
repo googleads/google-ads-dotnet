@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetPaidOrganicSearchTermView = clientHelper.BuildApiCall<GetPaidOrganicSearchTermViewRequest, gagvr::PaidOrganicSearchTermView>(
                 GrpcClient.GetPaidOrganicSearchTermViewAsync, GrpcClient.GetPaidOrganicSearchTermView, effectiveSettings.GetPaidOrganicSearchTermViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetPaidOrganicSearchTermView);
             Modify_GetPaidOrganicSearchTermViewApiCall(ref _callGetPaidOrganicSearchTermView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "aGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGh5nb29n",
             "bGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3Rh",
             "dGlvbnMucHJvdG8ivgMKDlNlYXJjaFRlcm1WaWV3EkYKDXJlc291cmNlX25h",
-            "bWUYASABKAlCL+BBBfpBKQonZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL1Nl",
+            "bWUYASABKAlCL+BBA/pBKQonZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL1Nl",
             "YXJjaFRlcm1WaWV3EjYKC3NlYXJjaF90ZXJtGAIgASgLMhwuZ29vZ2xlLnBy",
             "b3RvYnVmLlN0cmluZ1ZhbHVlQgPgQQMSWAoIYWRfZ3JvdXAYAyABKAsyHC5n",
             "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCKOBBA/pBIgogZ29vZ2xlYWRz",
@@ -49,8 +49,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.SearchTermTargetingStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.SearchTermView), global::Google.Ads.GoogleAds.V3.Resources.SearchTermView.Parser, new[]{ "ResourceName", "SearchTerm", "AdGroup", "Status" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.SearchTermView), global::Google.Ads.GoogleAds.V3.Resources.SearchTermView.Parser, new[]{ "ResourceName", "SearchTerm", "AdGroup", "Status" }, null, null, null, null)
           }));
     }
     #endregion
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the search term view.
+    /// Output only. The resource name of the search term view.
     /// Search term view resource names have the form:
     ///
     /// `customers/{customer_id}/searchTermViews/{campaign_id}~{ad_group_id}~{URL-base64_search_term}`
@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Unspecified;
     /// <summary>
     /// Output only. Indicates whether the search term is currently one of your
     /// targeted or excluded keywords.
@@ -188,7 +188,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (searchTerm_ != null) hash ^= SearchTerm.GetHashCode();
       if (adGroup_ != null) hash ^= AdGroup.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Unspecified) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -212,7 +212,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (adGroup_ != null) {
         _single_adGroup_codec.WriteTagAndValue(output, AdGroup);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Status);
       }
@@ -233,7 +233,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (adGroup_ != null) {
         size += _single_adGroup_codec.CalculateSizeWithTag(AdGroup);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (_unknownFields != null) {
@@ -260,7 +260,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           AdGroup = other.AdGroup;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Unspecified) {
         Status = other.Status;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

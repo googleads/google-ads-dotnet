@@ -29,25 +29,27 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "YWRzLnYzLnNlcnZpY2VzGj5nb29nbGUvYWRzL2dvb2dsZWFkcy92My9yZXNv",
             "dXJjZXMvYWRfZ3JvdXBfYXVkaWVuY2Vfdmlldy5wcm90bxocZ29vZ2xlL2Fw",
             "aS9hbm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQucHJvdG8a",
-            "H2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8iOwodR2V0QWRHcm91",
-            "cEF1ZGllbmNlVmlld1JlcXVlc3QSGgoNcmVzb3VyY2VfbmFtZRgBIAEoCUID",
-            "4EECMp0CChpBZEdyb3VwQXVkaWVuY2VWaWV3U2VydmljZRLhAQoWR2V0QWRH",
-            "cm91cEF1ZGllbmNlVmlldxI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNl",
-            "cnZpY2VzLkdldEFkR3JvdXBBdWRpZW5jZVZpZXdSZXF1ZXN0GjYuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjMucmVzb3VyY2VzLkFkR3JvdXBBdWRpZW5jZVZp",
-            "ZXciToLT5JMCOBI2L3YzL3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8qL2Fk",
-            "R3JvdXBBdWRpZW5jZVZpZXdzLyp92kENcmVzb3VyY2VfbmFtZRobykEYZ29v",
-            "Z2xlYWRzLmdvb2dsZWFwaXMuY29tQoYCCiRjb20uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjMuc2VydmljZXNCH0FkR3JvdXBBdWRpZW5jZVZpZXdTZXJ2aWNl",
-            "UHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
-            "cy9hZHMvZ29vZ2xlYWRzL3YzL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIg",
-            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMuU2VydmljZXPKAiBHb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWM1xTZXJ2aWNlc+oCJEdvb2dsZTo6QWRzOjpHb29nbGVB",
-            "ZHM6OlYzOjpTZXJ2aWNlc2IGcHJvdG8z"));
+            "H2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkv",
+            "cmVzb3VyY2UucHJvdG8ibAodR2V0QWRHcm91cEF1ZGllbmNlVmlld1JlcXVl",
+            "c3QSSwoNcmVzb3VyY2VfbmFtZRgBIAEoCUI04EEC+kEuCixnb29nbGVhZHMu",
+            "Z29vZ2xlYXBpcy5jb20vQWRHcm91cEF1ZGllbmNlVmlldzKdAgoaQWRHcm91",
+            "cEF1ZGllbmNlVmlld1NlcnZpY2US4QEKFkdldEFkR3JvdXBBdWRpZW5jZVZp",
+            "ZXcSPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlcy5HZXRBZEdy",
+            "b3VwQXVkaWVuY2VWaWV3UmVxdWVzdBo2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYzLnJlc291cmNlcy5BZEdyb3VwQXVkaWVuY2VWaWV3Ik6C0+STAjgSNi92",
+            "My97cmVzb3VyY2VfbmFtZT1jdXN0b21lcnMvKi9hZEdyb3VwQXVkaWVuY2VW",
+            "aWV3cy8qfdpBDXJlc291cmNlX25hbWUaG8pBGGdvb2dsZWFkcy5nb29nbGVh",
+            "cGlzLmNvbUKGAgokY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZp",
+            "Y2VzQh9BZEdyb3VwQXVkaWVuY2VWaWV3U2VydmljZVByb3RvUAFaSGdvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92My9zZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIEdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYzLlNlcnZpY2VzygIgR29vZ2xlXEFkc1xHb29nbGVBZHNcVjNc",
+            "U2VydmljZXPqAiRHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6U2Vydmlj",
+            "ZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.AdGroupAudienceViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAdGroupAudienceViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetAdGroupAudienceViewRequest.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.AdGroupAudienceViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetAdGroupAudienceViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetAdGroupAudienceViewRequest.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

@@ -763,10 +763,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetMediaFile = clientHelper.BuildApiCall<GetMediaFileRequest, gagvr::MediaFile>(
                 GrpcClient.GetMediaFileAsync, GrpcClient.GetMediaFile, effectiveSettings.GetMediaFileSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateMediaFiles = clientHelper.BuildApiCall<MutateMediaFilesRequest, MutateMediaFilesResponse>(
                 GrpcClient.MutateMediaFilesAsync, GrpcClient.MutateMediaFiles, effectiveSettings.MutateMediaFilesSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetMediaFile);
             Modify_GetMediaFileApiCall(ref _callGetMediaFile);
             Modify_ApiCall(ref _callMutateMediaFiles);

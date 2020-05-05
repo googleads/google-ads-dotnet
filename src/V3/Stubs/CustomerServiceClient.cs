@@ -1110,15 +1110,15 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCustomer = clientHelper.BuildApiCall<GetCustomerRequest, gagvr::Customer>(
                 GrpcClient.GetCustomerAsync, GrpcClient.GetCustomer, effectiveSettings.GetCustomerSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateCustomer = clientHelper.BuildApiCall<MutateCustomerRequest, MutateCustomerResponse>(
                 GrpcClient.MutateCustomerAsync, GrpcClient.MutateCustomer, effectiveSettings.MutateCustomerSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callListAccessibleCustomers = clientHelper.BuildApiCall<ListAccessibleCustomersRequest, ListAccessibleCustomersResponse>(
                 GrpcClient.ListAccessibleCustomersAsync, GrpcClient.ListAccessibleCustomers, effectiveSettings.ListAccessibleCustomersSettings);
             _callCreateCustomerClient = clientHelper.BuildApiCall<CreateCustomerClientRequest, CreateCustomerClientResponse>(
                 GrpcClient.CreateCustomerClientAsync, GrpcClient.CreateCustomerClient, effectiveSettings.CreateCustomerClientSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetCustomer);
             Modify_GetCustomerApiCall(ref _callGetCustomer);
             Modify_ApiCall(ref _callMutateCustomer);

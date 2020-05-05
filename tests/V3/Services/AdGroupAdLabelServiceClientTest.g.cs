@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse();
             mockGrpcClient.Setup(x => x.MutateAdGroupAdLabels(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<AdGroupAdLabelOperation> operations = new List<AdGroupAdLabelOperation>();
-            MutateAdGroupAdLabelsResponse response = client.MutateAdGroupAdLabels(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateAdGroupAdLabelsResponse response = client.MutateAdGroupAdLabels(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse();
             mockGrpcClient.Setup(x => x.MutateAdGroupAdLabelsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<AdGroupAdLabelOperation> operations = new List<AdGroupAdLabelOperation>();
-            MutateAdGroupAdLabelsResponse response = await client.MutateAdGroupAdLabelsAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateAdGroupAdLabelsResponse response = await client.MutateAdGroupAdLabelsAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

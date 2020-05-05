@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCarrierConstant = clientHelper.BuildApiCall<GetCarrierConstantRequest, gagvr::CarrierConstant>(
                 GrpcClient.GetCarrierConstantAsync, GrpcClient.GetCarrierConstant, effectiveSettings.GetCarrierConstantSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetCarrierConstant);
             Modify_GetCarrierConstantApiCall(ref _callGetCarrierConstant);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

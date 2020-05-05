@@ -58,8 +58,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MutateJob), global::Google.Ads.GoogleAds.V3.Resources.MutateJob.Parser, new[]{ "ResourceName", "Id", "NextAddSequenceToken", "Metadata", "Status", "LongRunningOperation" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MutateJob.Types.MutateJobMetadata), global::Google.Ads.GoogleAds.V3.Resources.MutateJob.Types.MutateJobMetadata.Parser, new[]{ "CreationDateTime", "CompletionDateTime", "EstimatedCompletionRatio", "OperationCount", "ExecutedOperationCount" }, null, null, null)})
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MutateJob), global::Google.Ads.GoogleAds.V3.Resources.MutateJob.Parser, new[]{ "ResourceName", "Id", "NextAddSequenceToken", "Metadata", "Status", "LongRunningOperation" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MutateJob.Types.MutateJobMetadata), global::Google.Ads.GoogleAds.V3.Resources.MutateJob.Types.MutateJobMetadata.Parser, new[]{ "CreationDateTime", "CompletionDateTime", "EstimatedCompletionRatio", "OperationCount", "ExecutedOperationCount" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -176,7 +176,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusEnum.Types.MutateJobStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusEnum.Types.MutateJobStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusEnum.Types.MutateJobStatus.Unspecified;
     /// <summary>
     /// Output only. Status of this mutate job.
     /// </summary>
@@ -234,7 +234,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) hash ^= Id.GetHashCode();
       if (nextAddSequenceToken_ != null) hash ^= NextAddSequenceToken.GetHashCode();
       if (metadata_ != null) hash ^= Metadata.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusEnum.Types.MutateJobStatus.Unspecified) hash ^= Status.GetHashCode();
       if (longRunningOperation_ != null) hash ^= LongRunningOperation.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -263,7 +263,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(34);
         output.WriteMessage(Metadata);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusEnum.Types.MutateJobStatus.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Status);
       }
@@ -290,7 +290,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (metadata_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Metadata);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusEnum.Types.MutateJobStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (longRunningOperation_ != null) {
@@ -326,7 +326,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         }
         Metadata.MergeFrom(other.Metadata);
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusEnum.Types.MutateJobStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.longRunningOperation_ != null) {

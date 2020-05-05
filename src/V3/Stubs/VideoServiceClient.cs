@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetVideo = clientHelper.BuildApiCall<GetVideoRequest, gagvr::Video>(
                 GrpcClient.GetVideoAsync, GrpcClient.GetVideo, effectiveSettings.GetVideoSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetVideo);
             Modify_GetVideoApiCall(ref _callGetVideo);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

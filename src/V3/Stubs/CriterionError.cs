@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V3.Errors {
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvY3JpdGVyaW9uX2Vy",
             "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMaHGdv",
-            "b2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i4R0KEkNyaXRlcmlvbkVycm9y",
-            "RW51bSLKHQoOQ3JpdGVyaW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdV",
+            "b2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i4h8KEkNyaXRlcmlvbkVycm9y",
+            "RW51bSLLHwoOQ3JpdGVyaW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdV",
             "TktOT1dOEAESGgoWQ09OQ1JFVEVfVFlQRV9SRVFVSVJFRBACEh0KGUlOVkFM",
             "SURfRVhDTFVERURfQ0FURUdPUlkQAxIYChRJTlZBTElEX0tFWVdPUkRfVEVY",
             "VBAEEhkKFUtFWVdPUkRfVEVYVF9UT09fTE9ORxAFEh4KGktFWVdPUkRfSEFT",
@@ -111,16 +111,22 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             "VUFMU19DQU5fSEFWRV9PTkxZX09ORV9DT05ESVRJT04QXhI3CjNXRUJQQUdF",
             "X0NSSVRFUklPTl9OT1RfU1VQUE9SVEVEX09OX05PTl9EU0FfQURfR1JPVVAQ",
             "XxI3CjNDQU5OT1RfVEFSR0VUX1VTRVJfTElTVF9GT1JfU01BUlRfRElTUExB",
-            "WV9DQU1QQUlHTlMQY0LuAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
-            "LmVycm9yc0ITQ3JpdGVyaW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjMvZXJy",
-            "b3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYzLkVy",
-            "cm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYzXEVycm9yc+oCIkdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpFcnJvcnNiBnByb3RvMw=="));
+            "WV9DQU1QQUlHTlMQYxIqCiZMSVNUSU5HX1NDT1BFX1RPT19NQU5ZX0RJTUVO",
+            "U0lPTl9UWVBFUxBkEicKI0xJU1RJTkdfU0NPUEVfVE9PX01BTllfSU5fT1BF",
+            "UkFUT1JTEGUSKwonTElTVElOR19TQ09QRV9JTl9PUEVSQVRPUl9OT1RfU1VQ",
+            "UE9SVEVEEGYSJAogRFVQTElDQVRFX0xJU1RJTkdfRElNRU5TSU9OX1RZUEUQ",
+            "ZxIlCiFEVVBMSUNBVEVfTElTVElOR19ESU1FTlNJT05fVkFMVUUQaBIwCixD",
+            "QU5OT1RfU0VUX0JJRFNfT05fTElTVElOR19HUk9VUF9TVUJESVZJU0lPThBp",
+            "Qu4BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzQhNDcml0",
+            "ZXJpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9lcnJvcnM7ZXJyb3JzogID",
+            "R0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMuRXJyb3JzygIeR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjNcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjM6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum), global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum.Types.CriterionError) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum), global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Errors.CriterionErrorEnum.Types.CriterionError) }, null, null)
           }));
     }
     #endregion
@@ -671,6 +677,30 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         /// Cannot add positive user list criteria in Smart Display campaigns.
         /// </summary>
         [pbr::OriginalName("CANNOT_TARGET_USER_LIST_FOR_SMART_DISPLAY_CAMPAIGNS")] CannotTargetUserListForSmartDisplayCampaigns = 99,
+        /// <summary>
+        /// Listing scope contains too many dimension types.
+        /// </summary>
+        [pbr::OriginalName("LISTING_SCOPE_TOO_MANY_DIMENSION_TYPES")] ListingScopeTooManyDimensionTypes = 100,
+        /// <summary>
+        /// Listing scope has too many IN operators.
+        /// </summary>
+        [pbr::OriginalName("LISTING_SCOPE_TOO_MANY_IN_OPERATORS")] ListingScopeTooManyInOperators = 101,
+        /// <summary>
+        /// Listing scope contains IN operator on an unsupported dimension type.
+        /// </summary>
+        [pbr::OriginalName("LISTING_SCOPE_IN_OPERATOR_NOT_SUPPORTED")] ListingScopeInOperatorNotSupported = 102,
+        /// <summary>
+        /// There are dimensions with duplicate dimension type.
+        /// </summary>
+        [pbr::OriginalName("DUPLICATE_LISTING_DIMENSION_TYPE")] DuplicateListingDimensionType = 103,
+        /// <summary>
+        /// There are dimensions with duplicate dimension value.
+        /// </summary>
+        [pbr::OriginalName("DUPLICATE_LISTING_DIMENSION_VALUE")] DuplicateListingDimensionValue = 104,
+        /// <summary>
+        /// Listing group SUBDIVISION nodes cannot have bids.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_SET_BIDS_ON_LISTING_GROUP_SUBDIVISION")] CannotSetBidsOnListingGroupSubdivision = 105,
       }
 
     }
