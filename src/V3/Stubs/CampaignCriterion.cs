@@ -102,8 +102,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CampaignCriterionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignCriterion), global::Google.Ads.GoogleAds.V3.Resources.CampaignCriterion.Parser, new[]{ "ResourceName", "Campaign", "CriterionId", "BidModifier", "Negative", "Type", "Status", "Keyword", "Placement", "MobileAppCategory", "MobileApplication", "Location", "Device", "AdSchedule", "AgeRange", "Gender", "IncomeRange", "ParentalStatus", "UserList", "YoutubeVideo", "YoutubeChannel", "Proximity", "Topic", "ListingScope", "Language", "IpBlock", "ContentLabel", "Carrier", "UserInterest", "Webpage", "OperatingSystemVersion", "MobileDevice", "LocationGroup", "CustomAffinity" }, new[]{ "Criterion" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignCriterion), global::Google.Ads.GoogleAds.V3.Resources.CampaignCriterion.Parser, new[]{ "ResourceName", "Campaign", "CriterionId", "BidModifier", "Negative", "Type", "Status", "Keyword", "Placement", "MobileAppCategory", "MobileApplication", "Location", "Device", "AdSchedule", "AgeRange", "Gender", "IncomeRange", "ParentalStatus", "UserList", "YoutubeVideo", "YoutubeChannel", "Proximity", "Topic", "ListingScope", "Language", "IpBlock", "ContentLabel", "Carrier", "UserInterest", "Webpage", "OperatingSystemVersion", "MobileDevice", "LocationGroup", "CustomAffinity" }, new[]{ "Criterion" }, null, null, null)
           }));
     }
     #endregion
@@ -324,7 +324,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType type_ = global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified;
     /// <summary>
     /// Output only. The type of the criterion.
     /// </summary>
@@ -338,7 +338,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 35;
-    private global::Google.Ads.GoogleAds.V3.Enums.CampaignCriterionStatusEnum.Types.CampaignCriterionStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CampaignCriterionStatusEnum.Types.CampaignCriterionStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.CampaignCriterionStatusEnum.Types.CampaignCriterionStatus.Unspecified;
     /// <summary>
     /// The status of the criterion.
     /// </summary>
@@ -831,8 +831,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (criterionId_ != null) hash ^= CriterionId.GetHashCode();
       if (bidModifier_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(BidModifier);
       if (negative_ != null) hash ^= Negative.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) hash ^= Type.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignCriterionStatusEnum.Types.CampaignCriterionStatus.Unspecified) hash ^= Status.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Keyword) hash ^= Keyword.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Placement) hash ^= Placement.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.MobileAppCategory) hash ^= MobileAppCategory.GetHashCode();
@@ -884,7 +884,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (criterionId_ != null) {
         _single_criterionId_codec.WriteTagAndValue(output, CriterionId);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Type);
       }
@@ -998,7 +998,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(146, 2);
         output.WriteMessage(LocationGroup);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignCriterionStatusEnum.Types.CampaignCriterionStatus.Unspecified) {
         output.WriteRawTag(152, 2);
         output.WriteEnum((int) Status);
       }
@@ -1029,10 +1029,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (negative_ != null) {
         size += _single_negative_codec.CalculateSizeWithTag(Negative);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignCriterionStatusEnum.Types.CampaignCriterionStatus.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (criterionCase_ == CriterionOneofCase.Keyword) {
@@ -1150,10 +1150,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Negative = other.Negative;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
         Type = other.Type;
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignCriterionStatusEnum.Types.CampaignCriterionStatus.Unspecified) {
         Status = other.Status;
       }
       switch (other.CriterionCase) {

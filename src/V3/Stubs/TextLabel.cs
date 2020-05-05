@@ -38,8 +38,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "bW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TextLabel), global::Google.Ads.GoogleAds.V3.Common.TextLabel.Parser, new[]{ "BackgroundColor", "Description" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TextLabel), global::Google.Ads.GoogleAds.V3.Common.TextLabel.Parser, new[]{ "BackgroundColor", "Description" }, null, null, null, null)
           }));
     }
     #endregion

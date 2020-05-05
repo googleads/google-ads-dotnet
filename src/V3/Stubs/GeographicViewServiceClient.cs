@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetGeographicView = clientHelper.BuildApiCall<GetGeographicViewRequest, gagvr::GeographicView>(
                 GrpcClient.GetGeographicViewAsync, GrpcClient.GetGeographicView, effectiveSettings.GetGeographicViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetGeographicView);
             Modify_GetGeographicViewApiCall(ref _callGetGeographicView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

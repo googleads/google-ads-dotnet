@@ -87,8 +87,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "QWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.UserListsReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AccessReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListAccessStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListClosingReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListMembershipStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.UserListTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.UserList), global::Google.Ads.GoogleAds.V3.Resources.UserList.Parser, new[]{ "ResourceName", "Id", "ReadOnly", "Name", "Description", "MembershipStatus", "IntegrationCode", "MembershipLifeSpan", "SizeForDisplay", "SizeRangeForDisplay", "SizeForSearch", "SizeRangeForSearch", "Type", "ClosingReason", "AccessReason", "AccountUserListStatus", "EligibleForSearch", "EligibleForDisplay", "CrmBasedUserList", "SimilarUserList", "RuleBasedUserList", "LogicalUserList", "BasicUserList" }, new[]{ "UserList" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.UserList), global::Google.Ads.GoogleAds.V3.Resources.UserList.Parser, new[]{ "ResourceName", "Id", "ReadOnly", "Name", "Description", "MembershipStatus", "IntegrationCode", "MembershipLifeSpan", "SizeForDisplay", "SizeRangeForDisplay", "SizeForSearch", "SizeRangeForSearch", "Type", "ClosingReason", "AccessReason", "AccountUserListStatus", "EligibleForSearch", "EligibleForDisplay", "CrmBasedUserList", "SimilarUserList", "RuleBasedUserList", "LogicalUserList", "BasicUserList" }, new[]{ "UserList" }, null, null, null)
           }));
     }
     #endregion
@@ -255,7 +255,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "membership_status" field.</summary>
     public const int MembershipStatusFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus membershipStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus membershipStatus_ = global::Google.Ads.GoogleAds.V3.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus.Unspecified;
     /// <summary>
     /// Membership status of this user list. Indicates whether a user list is open
     /// or active. Only open user lists can accumulate more users and can be
@@ -328,7 +328,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "size_range_for_display" field.</summary>
     public const int SizeRangeForDisplayFieldNumber = 10;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange sizeRangeForDisplay_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange sizeRangeForDisplay_ = global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified;
     /// <summary>
     /// Output only. Size range in terms of number of users of the UserList, on the Google
     /// Display Network.
@@ -365,7 +365,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "size_range_for_search" field.</summary>
     public const int SizeRangeForSearchFieldNumber = 12;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange sizeRangeForSearch_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange sizeRangeForSearch_ = global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified;
     /// <summary>
     /// Output only. Size range in terms of number of users of the UserList, for Search ads.
     ///
@@ -381,7 +381,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 13;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListTypeEnum.Types.UserListType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListTypeEnum.Types.UserListType type_ = global::Google.Ads.GoogleAds.V3.Enums.UserListTypeEnum.Types.UserListType.Unspecified;
     /// <summary>
     /// Output only. Type of this list.
     ///
@@ -397,7 +397,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "closing_reason" field.</summary>
     public const int ClosingReasonFieldNumber = 14;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListClosingReasonEnum.Types.UserListClosingReason closingReason_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListClosingReasonEnum.Types.UserListClosingReason closingReason_ = global::Google.Ads.GoogleAds.V3.Enums.UserListClosingReasonEnum.Types.UserListClosingReason.Unspecified;
     /// <summary>
     /// Indicating the reason why this user list membership status is closed. It is
     /// only populated on lists that were automatically closed due to inactivity,
@@ -413,7 +413,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "access_reason" field.</summary>
     public const int AccessReasonFieldNumber = 15;
-    private global::Google.Ads.GoogleAds.V3.Enums.AccessReasonEnum.Types.AccessReason accessReason_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AccessReasonEnum.Types.AccessReason accessReason_ = global::Google.Ads.GoogleAds.V3.Enums.AccessReasonEnum.Types.AccessReason.Unspecified;
     /// <summary>
     /// Output only. Indicates the reason this account has been granted access to the list.
     /// The reason can be SHARED, OWNED, LICENSED or SUBSCRIBED.
@@ -430,7 +430,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "account_user_list_status" field.</summary>
     public const int AccountUserListStatusFieldNumber = 16;
-    private global::Google.Ads.GoogleAds.V3.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus accountUserListStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus accountUserListStatus_ = global::Google.Ads.GoogleAds.V3.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus.Unspecified;
     /// <summary>
     /// Indicates if this share is still enabled. When a UserList is shared with
     /// the user this field is set to ENABLED. Later the userList owner can decide
@@ -620,17 +620,17 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (readOnly_ != null) hash ^= ReadOnly.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
       if (description_ != null) hash ^= Description.GetHashCode();
-      if (MembershipStatus != 0) hash ^= MembershipStatus.GetHashCode();
+      if (MembershipStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus.Unspecified) hash ^= MembershipStatus.GetHashCode();
       if (integrationCode_ != null) hash ^= IntegrationCode.GetHashCode();
       if (membershipLifeSpan_ != null) hash ^= MembershipLifeSpan.GetHashCode();
       if (sizeForDisplay_ != null) hash ^= SizeForDisplay.GetHashCode();
-      if (SizeRangeForDisplay != 0) hash ^= SizeRangeForDisplay.GetHashCode();
+      if (SizeRangeForDisplay != global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) hash ^= SizeRangeForDisplay.GetHashCode();
       if (sizeForSearch_ != null) hash ^= SizeForSearch.GetHashCode();
-      if (SizeRangeForSearch != 0) hash ^= SizeRangeForSearch.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (ClosingReason != 0) hash ^= ClosingReason.GetHashCode();
-      if (AccessReason != 0) hash ^= AccessReason.GetHashCode();
-      if (AccountUserListStatus != 0) hash ^= AccountUserListStatus.GetHashCode();
+      if (SizeRangeForSearch != global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) hash ^= SizeRangeForSearch.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.UserListTypeEnum.Types.UserListType.Unspecified) hash ^= Type.GetHashCode();
+      if (ClosingReason != global::Google.Ads.GoogleAds.V3.Enums.UserListClosingReasonEnum.Types.UserListClosingReason.Unspecified) hash ^= ClosingReason.GetHashCode();
+      if (AccessReason != global::Google.Ads.GoogleAds.V3.Enums.AccessReasonEnum.Types.AccessReason.Unspecified) hash ^= AccessReason.GetHashCode();
+      if (AccountUserListStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus.Unspecified) hash ^= AccountUserListStatus.GetHashCode();
       if (eligibleForSearch_ != null) hash ^= EligibleForSearch.GetHashCode();
       if (eligibleForDisplay_ != null) hash ^= EligibleForDisplay.GetHashCode();
       if (userListCase_ == UserListOneofCase.CrmBasedUserList) hash ^= CrmBasedUserList.GetHashCode();
@@ -668,7 +668,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (description_ != null) {
         _single_description_codec.WriteTagAndValue(output, Description);
       }
-      if (MembershipStatus != 0) {
+      if (MembershipStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) MembershipStatus);
       }
@@ -681,30 +681,30 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (sizeForDisplay_ != null) {
         _single_sizeForDisplay_codec.WriteTagAndValue(output, SizeForDisplay);
       }
-      if (SizeRangeForDisplay != 0) {
+      if (SizeRangeForDisplay != global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) SizeRangeForDisplay);
       }
       if (sizeForSearch_ != null) {
         _single_sizeForSearch_codec.WriteTagAndValue(output, SizeForSearch);
       }
-      if (SizeRangeForSearch != 0) {
+      if (SizeRangeForSearch != global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) {
         output.WriteRawTag(96);
         output.WriteEnum((int) SizeRangeForSearch);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.UserListTypeEnum.Types.UserListType.Unspecified) {
         output.WriteRawTag(104);
         output.WriteEnum((int) Type);
       }
-      if (ClosingReason != 0) {
+      if (ClosingReason != global::Google.Ads.GoogleAds.V3.Enums.UserListClosingReasonEnum.Types.UserListClosingReason.Unspecified) {
         output.WriteRawTag(112);
         output.WriteEnum((int) ClosingReason);
       }
-      if (AccessReason != 0) {
+      if (AccessReason != global::Google.Ads.GoogleAds.V3.Enums.AccessReasonEnum.Types.AccessReason.Unspecified) {
         output.WriteRawTag(120);
         output.WriteEnum((int) AccessReason);
       }
-      if (AccountUserListStatus != 0) {
+      if (AccountUserListStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus.Unspecified) {
         output.WriteRawTag(128, 1);
         output.WriteEnum((int) AccountUserListStatus);
       }
@@ -757,7 +757,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (description_ != null) {
         size += _single_description_codec.CalculateSizeWithTag(Description);
       }
-      if (MembershipStatus != 0) {
+      if (MembershipStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MembershipStatus);
       }
       if (integrationCode_ != null) {
@@ -769,25 +769,25 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (sizeForDisplay_ != null) {
         size += _single_sizeForDisplay_codec.CalculateSizeWithTag(SizeForDisplay);
       }
-      if (SizeRangeForDisplay != 0) {
+      if (SizeRangeForDisplay != global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SizeRangeForDisplay);
       }
       if (sizeForSearch_ != null) {
         size += _single_sizeForSearch_codec.CalculateSizeWithTag(SizeForSearch);
       }
-      if (SizeRangeForSearch != 0) {
+      if (SizeRangeForSearch != global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SizeRangeForSearch);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.UserListTypeEnum.Types.UserListType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (ClosingReason != 0) {
+      if (ClosingReason != global::Google.Ads.GoogleAds.V3.Enums.UserListClosingReasonEnum.Types.UserListClosingReason.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ClosingReason);
       }
-      if (AccessReason != 0) {
+      if (AccessReason != global::Google.Ads.GoogleAds.V3.Enums.AccessReasonEnum.Types.AccessReason.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AccessReason);
       }
-      if (AccountUserListStatus != 0) {
+      if (AccountUserListStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) AccountUserListStatus);
       }
       if (eligibleForSearch_ != null) {
@@ -845,7 +845,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Description = other.Description;
         }
       }
-      if (other.MembershipStatus != 0) {
+      if (other.MembershipStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus.Unspecified) {
         MembershipStatus = other.MembershipStatus;
       }
       if (other.integrationCode_ != null) {
@@ -863,7 +863,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           SizeForDisplay = other.SizeForDisplay;
         }
       }
-      if (other.SizeRangeForDisplay != 0) {
+      if (other.SizeRangeForDisplay != global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) {
         SizeRangeForDisplay = other.SizeRangeForDisplay;
       }
       if (other.sizeForSearch_ != null) {
@@ -871,19 +871,19 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           SizeForSearch = other.SizeForSearch;
         }
       }
-      if (other.SizeRangeForSearch != 0) {
+      if (other.SizeRangeForSearch != global::Google.Ads.GoogleAds.V3.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) {
         SizeRangeForSearch = other.SizeRangeForSearch;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.UserListTypeEnum.Types.UserListType.Unspecified) {
         Type = other.Type;
       }
-      if (other.ClosingReason != 0) {
+      if (other.ClosingReason != global::Google.Ads.GoogleAds.V3.Enums.UserListClosingReasonEnum.Types.UserListClosingReason.Unspecified) {
         ClosingReason = other.ClosingReason;
       }
-      if (other.AccessReason != 0) {
+      if (other.AccessReason != global::Google.Ads.GoogleAds.V3.Enums.AccessReasonEnum.Types.AccessReason.Unspecified) {
         AccessReason = other.AccessReason;
       }
-      if (other.AccountUserListStatus != 0) {
+      if (other.AccountUserListStatus != global::Google.Ads.GoogleAds.V3.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus.Unspecified) {
         AccountUserListStatus = other.AccountUserListStatus;
       }
       if (other.eligibleForSearch_ != null) {

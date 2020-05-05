@@ -185,9 +185,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "QWRzOjpWMzo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ClickTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.SlotReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Segments), global::Google.Ads.GoogleAds.V3.Common.Segments.Parser, new[]{ "AdNetworkType", "ClickType", "ConversionAction", "ConversionActionCategory", "ConversionActionName", "ConversionAdjustment", "ConversionAttributionEventType", "ConversionLagBucket", "ConversionOrAdjustmentLagBucket", "Date", "DayOfWeek", "Device", "ExternalConversionSource", "GeoTargetAirport", "GeoTargetCanton", "GeoTargetCity", "GeoTargetCountry", "GeoTargetCounty", "GeoTargetDistrict", "GeoTargetMetro", "GeoTargetMostSpecificLocation", "GeoTargetPostalCode", "GeoTargetProvince", "GeoTargetRegion", "GeoTargetState", "HotelBookingWindowDays", "HotelCenterId", "HotelCheckInDate", "HotelCheckInDayOfWeek", "HotelCity", "HotelClass", "HotelCountry", "HotelDateSelectionType", "HotelLengthOfStay", "HotelRateRuleId", "HotelRateType", "HotelPriceBucket", "HotelState", "Hour", "InteractionOnThisExtension", "Keyword", "Month", "MonthOfYear", "PartnerHotelId", "PlaceholderType", "ProductAggregatorId", "ProductBiddingCategoryLevel1", "ProductBiddingCategoryLevel2", "ProductBiddingCategoryLevel3", "ProductBiddingCategoryLevel4", "ProductBiddingCategoryLevel5", "ProductBrand", "ProductChannel", "ProductChannelExclusivity", "ProductCondition", "ProductCountry", "ProductCustomAttribute0", "ProductCustomAttribute1", "ProductCustomAttribute2", "ProductCustomAttribute3", "ProductCustomAttribute4", "ProductItemId", "ProductLanguage", "ProductMerchantId", "ProductStoreId", "ProductTitle", "ProductTypeL1", "ProductTypeL2", "ProductTypeL3", "ProductTypeL4", "ProductTypeL5", "Quarter", "SearchEngineResultsPageType", "SearchTermMatchType", "Slot", "Webpage", "Week", "Year" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Keyword), global::Google.Ads.GoogleAds.V3.Common.Keyword.Parser, new[]{ "AdGroupCriterion", "Info" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Segments), global::Google.Ads.GoogleAds.V3.Common.Segments.Parser, new[]{ "AdNetworkType", "ClickType", "ConversionAction", "ConversionActionCategory", "ConversionActionName", "ConversionAdjustment", "ConversionAttributionEventType", "ConversionLagBucket", "ConversionOrAdjustmentLagBucket", "Date", "DayOfWeek", "Device", "ExternalConversionSource", "GeoTargetAirport", "GeoTargetCanton", "GeoTargetCity", "GeoTargetCountry", "GeoTargetCounty", "GeoTargetDistrict", "GeoTargetMetro", "GeoTargetMostSpecificLocation", "GeoTargetPostalCode", "GeoTargetProvince", "GeoTargetRegion", "GeoTargetState", "HotelBookingWindowDays", "HotelCenterId", "HotelCheckInDate", "HotelCheckInDayOfWeek", "HotelCity", "HotelClass", "HotelCountry", "HotelDateSelectionType", "HotelLengthOfStay", "HotelRateRuleId", "HotelRateType", "HotelPriceBucket", "HotelState", "Hour", "InteractionOnThisExtension", "Keyword", "Month", "MonthOfYear", "PartnerHotelId", "PlaceholderType", "ProductAggregatorId", "ProductBiddingCategoryLevel1", "ProductBiddingCategoryLevel2", "ProductBiddingCategoryLevel3", "ProductBiddingCategoryLevel4", "ProductBiddingCategoryLevel5", "ProductBrand", "ProductChannel", "ProductChannelExclusivity", "ProductCondition", "ProductCountry", "ProductCustomAttribute0", "ProductCustomAttribute1", "ProductCustomAttribute2", "ProductCustomAttribute3", "ProductCustomAttribute4", "ProductItemId", "ProductLanguage", "ProductMerchantId", "ProductStoreId", "ProductTitle", "ProductTypeL1", "ProductTypeL2", "ProductTypeL3", "ProductTypeL4", "ProductTypeL5", "Quarter", "SearchEngineResultsPageType", "SearchTermMatchType", "Slot", "Webpage", "Week", "Year" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Keyword), global::Google.Ads.GoogleAds.V3.Common.Keyword.Parser, new[]{ "AdGroupCriterion", "Info" }, null, null, null, null)
           }));
     }
     #endregion
@@ -310,7 +310,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "ad_network_type" field.</summary>
     public const int AdNetworkTypeFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeEnum.Types.AdNetworkType adNetworkType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeEnum.Types.AdNetworkType adNetworkType_ = global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeEnum.Types.AdNetworkType.Unspecified;
     /// <summary>
     /// Ad network type.
     /// </summary>
@@ -324,7 +324,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "click_type" field.</summary>
     public const int ClickTypeFieldNumber = 26;
-    private global::Google.Ads.GoogleAds.V3.Enums.ClickTypeEnum.Types.ClickType clickType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ClickTypeEnum.Types.ClickType clickType_ = global::Google.Ads.GoogleAds.V3.Enums.ClickTypeEnum.Types.ClickType.Unspecified;
     /// <summary>
     /// Click type.
     /// </summary>
@@ -354,7 +354,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "conversion_action_category" field.</summary>
     public const int ConversionActionCategoryFieldNumber = 53;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory conversionActionCategory_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory conversionActionCategory_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified;
     /// <summary>
     /// Conversion action category.
     /// </summary>
@@ -404,7 +404,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "conversion_attribution_event_type" field.</summary>
     public const int ConversionAttributionEventTypeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType conversionAttributionEventType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType conversionAttributionEventType_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType.Unspecified;
     /// <summary>
     /// Conversion attribution event type.
     /// </summary>
@@ -418,7 +418,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "conversion_lag_bucket" field.</summary>
     public const int ConversionLagBucketFieldNumber = 50;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketEnum.Types.ConversionLagBucket conversionLagBucket_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketEnum.Types.ConversionLagBucket conversionLagBucket_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketEnum.Types.ConversionLagBucket.Unspecified;
     /// <summary>
     /// An enum value representing the number of days between the impression and
     /// the conversion.
@@ -433,7 +433,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "conversion_or_adjustment_lag_bucket" field.</summary>
     public const int ConversionOrAdjustmentLagBucketFieldNumber = 51;
-    private global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketEnum.Types.ConversionOrAdjustmentLagBucket conversionOrAdjustmentLagBucket_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketEnum.Types.ConversionOrAdjustmentLagBucket conversionOrAdjustmentLagBucket_ = global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketEnum.Types.ConversionOrAdjustmentLagBucket.Unspecified;
     /// <summary>
     /// An enum value representing the number of days between the impression and
     /// the conversion or between the impression and adjustments to the conversion.
@@ -465,7 +465,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "day_of_week" field.</summary>
     public const int DayOfWeekFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek dayOfWeek_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek dayOfWeek_ = global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified;
     /// <summary>
     /// Day of the week, e.g., MONDAY.
     /// </summary>
@@ -479,7 +479,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "device" field.</summary>
     public const int DeviceFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device device_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device device_ = global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified;
     /// <summary>
     /// Device to which metrics apply.
     /// </summary>
@@ -493,7 +493,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "external_conversion_source" field.</summary>
     public const int ExternalConversionSourceFieldNumber = 55;
-    private global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceEnum.Types.ExternalConversionSource externalConversionSource_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceEnum.Types.ExternalConversionSource externalConversionSource_ = global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceEnum.Types.ExternalConversionSource.Unspecified;
     /// <summary>
     /// External conversion source.
     /// </summary>
@@ -748,7 +748,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "hotel_check_in_day_of_week" field.</summary>
     public const int HotelCheckInDayOfWeekFieldNumber = 9;
-    private global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek hotelCheckInDayOfWeek_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek hotelCheckInDayOfWeek_ = global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified;
     /// <summary>
     /// Hotel check-in day of week.
     /// </summary>
@@ -810,7 +810,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "hotel_date_selection_type" field.</summary>
     public const int HotelDateSelectionTypeFieldNumber = 13;
-    private global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType hotelDateSelectionType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType hotelDateSelectionType_ = global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified;
     /// <summary>
     /// Hotel date selection type.
     /// </summary>
@@ -856,7 +856,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "hotel_rate_type" field.</summary>
     public const int HotelRateTypeFieldNumber = 74;
-    private global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeEnum.Types.HotelRateType hotelRateType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeEnum.Types.HotelRateType hotelRateType_ = global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeEnum.Types.HotelRateType.Unspecified;
     /// <summary>
     /// Hotel rate type.
     /// </summary>
@@ -870,7 +870,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "hotel_price_bucket" field.</summary>
     public const int HotelPriceBucketFieldNumber = 78;
-    private global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketEnum.Types.HotelPriceBucket hotelPriceBucket_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketEnum.Types.HotelPriceBucket hotelPriceBucket_ = global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketEnum.Types.HotelPriceBucket.Unspecified;
     /// <summary>
     /// Hotel price bucket.
     /// </summary>
@@ -965,7 +965,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "month_of_year" field.</summary>
     public const int MonthOfYearFieldNumber = 18;
-    private global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear monthOfYear_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear monthOfYear_ = global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified;
     /// <summary>
     /// Month of the year, e.g., January.
     /// </summary>
@@ -995,7 +995,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "placeholder_type" field.</summary>
     public const int PlaceholderTypeFieldNumber = 20;
-    private global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType placeholderType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType placeholderType_ = global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified;
     /// <summary>
     /// Placeholder type. This is only used with feed item metrics.
     /// </summary>
@@ -1121,7 +1121,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "product_channel" field.</summary>
     public const int ProductChannelFieldNumber = 30;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel productChannel_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel productChannel_ = global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified;
     /// <summary>
     /// Channel of the product.
     /// </summary>
@@ -1135,7 +1135,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "product_channel_exclusivity" field.</summary>
     public const int ProductChannelExclusivityFieldNumber = 31;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity productChannelExclusivity_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity productChannelExclusivity_ = global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified;
     /// <summary>
     /// Channel exclusivity of the product.
     /// </summary>
@@ -1149,7 +1149,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "product_condition" field.</summary>
     public const int ProductConditionFieldNumber = 32;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition productCondition_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition productCondition_ = global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified;
     /// <summary>
     /// Condition of the product.
     /// </summary>
@@ -1438,7 +1438,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "search_engine_results_page_type" field.</summary>
     public const int SearchEngineResultsPageTypeFieldNumber = 70;
-    private global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType searchEngineResultsPageType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType searchEngineResultsPageType_ = global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType.Unspecified;
     /// <summary>
     /// Type of the search engine results page.
     /// </summary>
@@ -1452,7 +1452,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "search_term_match_type" field.</summary>
     public const int SearchTermMatchTypeFieldNumber = 22;
-    private global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType searchTermMatchType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType searchTermMatchType_ = global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType.Unspecified;
     /// <summary>
     /// Match type of the keyword that triggered the ad, including variants.
     /// </summary>
@@ -1466,7 +1466,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "slot" field.</summary>
     public const int SlotFieldNumber = 23;
-    private global::Google.Ads.GoogleAds.V3.Enums.SlotEnum.Types.Slot slot_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.SlotEnum.Types.Slot slot_ = global::Google.Ads.GoogleAds.V3.Enums.SlotEnum.Types.Slot.Unspecified;
     /// <summary>
     /// Position of the ad.
     /// </summary>
@@ -1624,19 +1624,19 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (AdNetworkType != 0) hash ^= AdNetworkType.GetHashCode();
-      if (ClickType != 0) hash ^= ClickType.GetHashCode();
+      if (AdNetworkType != global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeEnum.Types.AdNetworkType.Unspecified) hash ^= AdNetworkType.GetHashCode();
+      if (ClickType != global::Google.Ads.GoogleAds.V3.Enums.ClickTypeEnum.Types.ClickType.Unspecified) hash ^= ClickType.GetHashCode();
       if (conversionAction_ != null) hash ^= ConversionAction.GetHashCode();
-      if (ConversionActionCategory != 0) hash ^= ConversionActionCategory.GetHashCode();
+      if (ConversionActionCategory != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified) hash ^= ConversionActionCategory.GetHashCode();
       if (conversionActionName_ != null) hash ^= ConversionActionName.GetHashCode();
       if (conversionAdjustment_ != null) hash ^= ConversionAdjustment.GetHashCode();
-      if (ConversionAttributionEventType != 0) hash ^= ConversionAttributionEventType.GetHashCode();
-      if (ConversionLagBucket != 0) hash ^= ConversionLagBucket.GetHashCode();
-      if (ConversionOrAdjustmentLagBucket != 0) hash ^= ConversionOrAdjustmentLagBucket.GetHashCode();
+      if (ConversionAttributionEventType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType.Unspecified) hash ^= ConversionAttributionEventType.GetHashCode();
+      if (ConversionLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketEnum.Types.ConversionLagBucket.Unspecified) hash ^= ConversionLagBucket.GetHashCode();
+      if (ConversionOrAdjustmentLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketEnum.Types.ConversionOrAdjustmentLagBucket.Unspecified) hash ^= ConversionOrAdjustmentLagBucket.GetHashCode();
       if (date_ != null) hash ^= Date.GetHashCode();
-      if (DayOfWeek != 0) hash ^= DayOfWeek.GetHashCode();
-      if (Device != 0) hash ^= Device.GetHashCode();
-      if (ExternalConversionSource != 0) hash ^= ExternalConversionSource.GetHashCode();
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) hash ^= DayOfWeek.GetHashCode();
+      if (Device != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) hash ^= Device.GetHashCode();
+      if (ExternalConversionSource != global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceEnum.Types.ExternalConversionSource.Unspecified) hash ^= ExternalConversionSource.GetHashCode();
       if (geoTargetAirport_ != null) hash ^= GeoTargetAirport.GetHashCode();
       if (geoTargetCanton_ != null) hash ^= GeoTargetCanton.GetHashCode();
       if (geoTargetCity_ != null) hash ^= GeoTargetCity.GetHashCode();
@@ -1652,23 +1652,23 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (hotelBookingWindowDays_ != null) hash ^= HotelBookingWindowDays.GetHashCode();
       if (hotelCenterId_ != null) hash ^= HotelCenterId.GetHashCode();
       if (hotelCheckInDate_ != null) hash ^= HotelCheckInDate.GetHashCode();
-      if (HotelCheckInDayOfWeek != 0) hash ^= HotelCheckInDayOfWeek.GetHashCode();
+      if (HotelCheckInDayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) hash ^= HotelCheckInDayOfWeek.GetHashCode();
       if (hotelCity_ != null) hash ^= HotelCity.GetHashCode();
       if (hotelClass_ != null) hash ^= HotelClass.GetHashCode();
       if (hotelCountry_ != null) hash ^= HotelCountry.GetHashCode();
-      if (HotelDateSelectionType != 0) hash ^= HotelDateSelectionType.GetHashCode();
+      if (HotelDateSelectionType != global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified) hash ^= HotelDateSelectionType.GetHashCode();
       if (hotelLengthOfStay_ != null) hash ^= HotelLengthOfStay.GetHashCode();
       if (hotelRateRuleId_ != null) hash ^= HotelRateRuleId.GetHashCode();
-      if (HotelRateType != 0) hash ^= HotelRateType.GetHashCode();
-      if (HotelPriceBucket != 0) hash ^= HotelPriceBucket.GetHashCode();
+      if (HotelRateType != global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeEnum.Types.HotelRateType.Unspecified) hash ^= HotelRateType.GetHashCode();
+      if (HotelPriceBucket != global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketEnum.Types.HotelPriceBucket.Unspecified) hash ^= HotelPriceBucket.GetHashCode();
       if (hotelState_ != null) hash ^= HotelState.GetHashCode();
       if (hour_ != null) hash ^= Hour.GetHashCode();
       if (interactionOnThisExtension_ != null) hash ^= InteractionOnThisExtension.GetHashCode();
       if (keyword_ != null) hash ^= Keyword.GetHashCode();
       if (month_ != null) hash ^= Month.GetHashCode();
-      if (MonthOfYear != 0) hash ^= MonthOfYear.GetHashCode();
+      if (MonthOfYear != global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) hash ^= MonthOfYear.GetHashCode();
       if (partnerHotelId_ != null) hash ^= PartnerHotelId.GetHashCode();
-      if (PlaceholderType != 0) hash ^= PlaceholderType.GetHashCode();
+      if (PlaceholderType != global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified) hash ^= PlaceholderType.GetHashCode();
       if (productAggregatorId_ != null) hash ^= ProductAggregatorId.GetHashCode();
       if (productBiddingCategoryLevel1_ != null) hash ^= ProductBiddingCategoryLevel1.GetHashCode();
       if (productBiddingCategoryLevel2_ != null) hash ^= ProductBiddingCategoryLevel2.GetHashCode();
@@ -1676,9 +1676,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (productBiddingCategoryLevel4_ != null) hash ^= ProductBiddingCategoryLevel4.GetHashCode();
       if (productBiddingCategoryLevel5_ != null) hash ^= ProductBiddingCategoryLevel5.GetHashCode();
       if (productBrand_ != null) hash ^= ProductBrand.GetHashCode();
-      if (ProductChannel != 0) hash ^= ProductChannel.GetHashCode();
-      if (ProductChannelExclusivity != 0) hash ^= ProductChannelExclusivity.GetHashCode();
-      if (ProductCondition != 0) hash ^= ProductCondition.GetHashCode();
+      if (ProductChannel != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified) hash ^= ProductChannel.GetHashCode();
+      if (ProductChannelExclusivity != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified) hash ^= ProductChannelExclusivity.GetHashCode();
+      if (ProductCondition != global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified) hash ^= ProductCondition.GetHashCode();
       if (productCountry_ != null) hash ^= ProductCountry.GetHashCode();
       if (productCustomAttribute0_ != null) hash ^= ProductCustomAttribute0.GetHashCode();
       if (productCustomAttribute1_ != null) hash ^= ProductCustomAttribute1.GetHashCode();
@@ -1696,9 +1696,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (productTypeL4_ != null) hash ^= ProductTypeL4.GetHashCode();
       if (productTypeL5_ != null) hash ^= ProductTypeL5.GetHashCode();
       if (quarter_ != null) hash ^= Quarter.GetHashCode();
-      if (SearchEngineResultsPageType != 0) hash ^= SearchEngineResultsPageType.GetHashCode();
-      if (SearchTermMatchType != 0) hash ^= SearchTermMatchType.GetHashCode();
-      if (Slot != 0) hash ^= Slot.GetHashCode();
+      if (SearchEngineResultsPageType != global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType.Unspecified) hash ^= SearchEngineResultsPageType.GetHashCode();
+      if (SearchTermMatchType != global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType.Unspecified) hash ^= SearchTermMatchType.GetHashCode();
+      if (Slot != global::Google.Ads.GoogleAds.V3.Enums.SlotEnum.Types.Slot.Unspecified) hash ^= Slot.GetHashCode();
       if (webpage_ != null) hash ^= Webpage.GetHashCode();
       if (week_ != null) hash ^= Week.GetHashCode();
       if (year_ != null) hash ^= Year.GetHashCode();
@@ -1715,22 +1715,22 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Device != 0) {
+      if (Device != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Device);
       }
-      if (ConversionAttributionEventType != 0) {
+      if (ConversionAttributionEventType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) ConversionAttributionEventType);
       }
-      if (AdNetworkType != 0) {
+      if (AdNetworkType != global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeEnum.Types.AdNetworkType.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) AdNetworkType);
       }
       if (date_ != null) {
         _single_date_codec.WriteTagAndValue(output, Date);
       }
-      if (DayOfWeek != 0) {
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) DayOfWeek);
       }
@@ -1743,7 +1743,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (hotelCheckInDate_ != null) {
         _single_hotelCheckInDate_codec.WriteTagAndValue(output, HotelCheckInDate);
       }
-      if (HotelCheckInDayOfWeek != 0) {
+      if (HotelCheckInDayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         output.WriteRawTag(72);
         output.WriteEnum((int) HotelCheckInDayOfWeek);
       }
@@ -1756,7 +1756,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (hotelCountry_ != null) {
         _single_hotelCountry_codec.WriteTagAndValue(output, HotelCountry);
       }
-      if (HotelDateSelectionType != 0) {
+      if (HotelDateSelectionType != global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified) {
         output.WriteRawTag(104);
         output.WriteEnum((int) HotelDateSelectionType);
       }
@@ -1772,25 +1772,25 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (month_ != null) {
         _single_month_codec.WriteTagAndValue(output, Month);
       }
-      if (MonthOfYear != 0) {
+      if (MonthOfYear != global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) {
         output.WriteRawTag(144, 1);
         output.WriteEnum((int) MonthOfYear);
       }
       if (partnerHotelId_ != null) {
         _single_partnerHotelId_codec.WriteTagAndValue(output, PartnerHotelId);
       }
-      if (PlaceholderType != 0) {
+      if (PlaceholderType != global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified) {
         output.WriteRawTag(160, 1);
         output.WriteEnum((int) PlaceholderType);
       }
       if (quarter_ != null) {
         _single_quarter_codec.WriteTagAndValue(output, Quarter);
       }
-      if (SearchTermMatchType != 0) {
+      if (SearchTermMatchType != global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType.Unspecified) {
         output.WriteRawTag(176, 1);
         output.WriteEnum((int) SearchTermMatchType);
       }
-      if (Slot != 0) {
+      if (Slot != global::Google.Ads.GoogleAds.V3.Enums.SlotEnum.Types.Slot.Unspecified) {
         output.WriteRawTag(184, 1);
         output.WriteEnum((int) Slot);
       }
@@ -1800,7 +1800,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (year_ != null) {
         _single_year_codec.WriteTagAndValue(output, Year);
       }
-      if (ClickType != 0) {
+      if (ClickType != global::Google.Ads.GoogleAds.V3.Enums.ClickTypeEnum.Types.ClickType.Unspecified) {
         output.WriteRawTag(208, 1);
         output.WriteEnum((int) ClickType);
       }
@@ -1813,15 +1813,15 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (productBrand_ != null) {
         _single_productBrand_codec.WriteTagAndValue(output, ProductBrand);
       }
-      if (ProductChannel != 0) {
+      if (ProductChannel != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified) {
         output.WriteRawTag(240, 1);
         output.WriteEnum((int) ProductChannel);
       }
-      if (ProductChannelExclusivity != 0) {
+      if (ProductChannelExclusivity != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified) {
         output.WriteRawTag(248, 1);
         output.WriteEnum((int) ProductChannelExclusivity);
       }
-      if (ProductCondition != 0) {
+      if (ProductCondition != global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified) {
         output.WriteRawTag(128, 2);
         output.WriteEnum((int) ProductCondition);
       }
@@ -1876,25 +1876,25 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (interactionOnThisExtension_ != null) {
         _single_interactionOnThisExtension_codec.WriteTagAndValue(output, InteractionOnThisExtension);
       }
-      if (ConversionLagBucket != 0) {
+      if (ConversionLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketEnum.Types.ConversionLagBucket.Unspecified) {
         output.WriteRawTag(144, 3);
         output.WriteEnum((int) ConversionLagBucket);
       }
-      if (ConversionOrAdjustmentLagBucket != 0) {
+      if (ConversionOrAdjustmentLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketEnum.Types.ConversionOrAdjustmentLagBucket.Unspecified) {
         output.WriteRawTag(152, 3);
         output.WriteEnum((int) ConversionOrAdjustmentLagBucket);
       }
       if (conversionAction_ != null) {
         _single_conversionAction_codec.WriteTagAndValue(output, ConversionAction);
       }
-      if (ConversionActionCategory != 0) {
+      if (ConversionActionCategory != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified) {
         output.WriteRawTag(168, 3);
         output.WriteEnum((int) ConversionActionCategory);
       }
       if (conversionActionName_ != null) {
         _single_conversionActionName_codec.WriteTagAndValue(output, ConversionActionName);
       }
-      if (ExternalConversionSource != 0) {
+      if (ExternalConversionSource != global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceEnum.Types.ExternalConversionSource.Unspecified) {
         output.WriteRawTag(184, 3);
         output.WriteEnum((int) ExternalConversionSource);
       }
@@ -1941,7 +1941,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (geoTargetDistrict_ != null) {
         _single_geoTargetDistrict_codec.WriteTagAndValue(output, GeoTargetDistrict);
       }
-      if (SearchEngineResultsPageType != 0) {
+      if (SearchEngineResultsPageType != global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType.Unspecified) {
         output.WriteRawTag(176, 4);
         output.WriteEnum((int) SearchEngineResultsPageType);
       }
@@ -1954,7 +1954,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (hotelRateRuleId_ != null) {
         _single_hotelRateRuleId_codec.WriteTagAndValue(output, HotelRateRuleId);
       }
-      if (HotelRateType != 0) {
+      if (HotelRateType != global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeEnum.Types.HotelRateType.Unspecified) {
         output.WriteRawTag(208, 4);
         output.WriteEnum((int) HotelRateType);
       }
@@ -1967,7 +1967,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (geoTargetCountry_ != null) {
         _single_geoTargetCountry_codec.WriteTagAndValue(output, GeoTargetCountry);
       }
-      if (HotelPriceBucket != 0) {
+      if (HotelPriceBucket != global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketEnum.Types.HotelPriceBucket.Unspecified) {
         output.WriteRawTag(240, 4);
         output.WriteEnum((int) HotelPriceBucket);
       }
@@ -1979,16 +1979,16 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (AdNetworkType != 0) {
+      if (AdNetworkType != global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeEnum.Types.AdNetworkType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdNetworkType);
       }
-      if (ClickType != 0) {
+      if (ClickType != global::Google.Ads.GoogleAds.V3.Enums.ClickTypeEnum.Types.ClickType.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ClickType);
       }
       if (conversionAction_ != null) {
         size += _single_conversionAction_codec.CalculateSizeWithTag(ConversionAction);
       }
-      if (ConversionActionCategory != 0) {
+      if (ConversionActionCategory != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ConversionActionCategory);
       }
       if (conversionActionName_ != null) {
@@ -1997,25 +1997,25 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (conversionAdjustment_ != null) {
         size += _single_conversionAdjustment_codec.CalculateSizeWithTag(ConversionAdjustment);
       }
-      if (ConversionAttributionEventType != 0) {
+      if (ConversionAttributionEventType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ConversionAttributionEventType);
       }
-      if (ConversionLagBucket != 0) {
+      if (ConversionLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketEnum.Types.ConversionLagBucket.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ConversionLagBucket);
       }
-      if (ConversionOrAdjustmentLagBucket != 0) {
+      if (ConversionOrAdjustmentLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketEnum.Types.ConversionOrAdjustmentLagBucket.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ConversionOrAdjustmentLagBucket);
       }
       if (date_ != null) {
         size += _single_date_codec.CalculateSizeWithTag(Date);
       }
-      if (DayOfWeek != 0) {
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DayOfWeek);
       }
-      if (Device != 0) {
+      if (Device != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Device);
       }
-      if (ExternalConversionSource != 0) {
+      if (ExternalConversionSource != global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceEnum.Types.ExternalConversionSource.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ExternalConversionSource);
       }
       if (geoTargetAirport_ != null) {
@@ -2063,7 +2063,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (hotelCheckInDate_ != null) {
         size += _single_hotelCheckInDate_codec.CalculateSizeWithTag(HotelCheckInDate);
       }
-      if (HotelCheckInDayOfWeek != 0) {
+      if (HotelCheckInDayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HotelCheckInDayOfWeek);
       }
       if (hotelCity_ != null) {
@@ -2075,7 +2075,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (hotelCountry_ != null) {
         size += _single_hotelCountry_codec.CalculateSizeWithTag(HotelCountry);
       }
-      if (HotelDateSelectionType != 0) {
+      if (HotelDateSelectionType != global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HotelDateSelectionType);
       }
       if (hotelLengthOfStay_ != null) {
@@ -2084,10 +2084,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (hotelRateRuleId_ != null) {
         size += _single_hotelRateRuleId_codec.CalculateSizeWithTag(HotelRateRuleId);
       }
-      if (HotelRateType != 0) {
+      if (HotelRateType != global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeEnum.Types.HotelRateType.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) HotelRateType);
       }
-      if (HotelPriceBucket != 0) {
+      if (HotelPriceBucket != global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketEnum.Types.HotelPriceBucket.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) HotelPriceBucket);
       }
       if (hotelState_ != null) {
@@ -2105,13 +2105,13 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (month_ != null) {
         size += _single_month_codec.CalculateSizeWithTag(Month);
       }
-      if (MonthOfYear != 0) {
+      if (MonthOfYear != global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) MonthOfYear);
       }
       if (partnerHotelId_ != null) {
         size += _single_partnerHotelId_codec.CalculateSizeWithTag(PartnerHotelId);
       }
-      if (PlaceholderType != 0) {
+      if (PlaceholderType != global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) PlaceholderType);
       }
       if (productAggregatorId_ != null) {
@@ -2135,13 +2135,13 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (productBrand_ != null) {
         size += _single_productBrand_codec.CalculateSizeWithTag(ProductBrand);
       }
-      if (ProductChannel != 0) {
+      if (ProductChannel != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ProductChannel);
       }
-      if (ProductChannelExclusivity != 0) {
+      if (ProductChannelExclusivity != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ProductChannelExclusivity);
       }
-      if (ProductCondition != 0) {
+      if (ProductCondition != global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ProductCondition);
       }
       if (productCountry_ != null) {
@@ -2195,13 +2195,13 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (quarter_ != null) {
         size += _single_quarter_codec.CalculateSizeWithTag(Quarter);
       }
-      if (SearchEngineResultsPageType != 0) {
+      if (SearchEngineResultsPageType != global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) SearchEngineResultsPageType);
       }
-      if (SearchTermMatchType != 0) {
+      if (SearchTermMatchType != global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) SearchTermMatchType);
       }
-      if (Slot != 0) {
+      if (Slot != global::Google.Ads.GoogleAds.V3.Enums.SlotEnum.Types.Slot.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Slot);
       }
       if (webpage_ != null) {
@@ -2224,10 +2224,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.AdNetworkType != 0) {
+      if (other.AdNetworkType != global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeEnum.Types.AdNetworkType.Unspecified) {
         AdNetworkType = other.AdNetworkType;
       }
-      if (other.ClickType != 0) {
+      if (other.ClickType != global::Google.Ads.GoogleAds.V3.Enums.ClickTypeEnum.Types.ClickType.Unspecified) {
         ClickType = other.ClickType;
       }
       if (other.conversionAction_ != null) {
@@ -2235,7 +2235,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           ConversionAction = other.ConversionAction;
         }
       }
-      if (other.ConversionActionCategory != 0) {
+      if (other.ConversionActionCategory != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified) {
         ConversionActionCategory = other.ConversionActionCategory;
       }
       if (other.conversionActionName_ != null) {
@@ -2248,13 +2248,13 @@ namespace Google.Ads.GoogleAds.V3.Common {
           ConversionAdjustment = other.ConversionAdjustment;
         }
       }
-      if (other.ConversionAttributionEventType != 0) {
+      if (other.ConversionAttributionEventType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType.Unspecified) {
         ConversionAttributionEventType = other.ConversionAttributionEventType;
       }
-      if (other.ConversionLagBucket != 0) {
+      if (other.ConversionLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketEnum.Types.ConversionLagBucket.Unspecified) {
         ConversionLagBucket = other.ConversionLagBucket;
       }
-      if (other.ConversionOrAdjustmentLagBucket != 0) {
+      if (other.ConversionOrAdjustmentLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketEnum.Types.ConversionOrAdjustmentLagBucket.Unspecified) {
         ConversionOrAdjustmentLagBucket = other.ConversionOrAdjustmentLagBucket;
       }
       if (other.date_ != null) {
@@ -2262,13 +2262,13 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Date = other.Date;
         }
       }
-      if (other.DayOfWeek != 0) {
+      if (other.DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         DayOfWeek = other.DayOfWeek;
       }
-      if (other.Device != 0) {
+      if (other.Device != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         Device = other.Device;
       }
-      if (other.ExternalConversionSource != 0) {
+      if (other.ExternalConversionSource != global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceEnum.Types.ExternalConversionSource.Unspecified) {
         ExternalConversionSource = other.ExternalConversionSource;
       }
       if (other.geoTargetAirport_ != null) {
@@ -2346,7 +2346,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           HotelCheckInDate = other.HotelCheckInDate;
         }
       }
-      if (other.HotelCheckInDayOfWeek != 0) {
+      if (other.HotelCheckInDayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         HotelCheckInDayOfWeek = other.HotelCheckInDayOfWeek;
       }
       if (other.hotelCity_ != null) {
@@ -2364,7 +2364,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           HotelCountry = other.HotelCountry;
         }
       }
-      if (other.HotelDateSelectionType != 0) {
+      if (other.HotelDateSelectionType != global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified) {
         HotelDateSelectionType = other.HotelDateSelectionType;
       }
       if (other.hotelLengthOfStay_ != null) {
@@ -2377,10 +2377,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
           HotelRateRuleId = other.HotelRateRuleId;
         }
       }
-      if (other.HotelRateType != 0) {
+      if (other.HotelRateType != global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeEnum.Types.HotelRateType.Unspecified) {
         HotelRateType = other.HotelRateType;
       }
-      if (other.HotelPriceBucket != 0) {
+      if (other.HotelPriceBucket != global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketEnum.Types.HotelPriceBucket.Unspecified) {
         HotelPriceBucket = other.HotelPriceBucket;
       }
       if (other.hotelState_ != null) {
@@ -2409,7 +2409,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Month = other.Month;
         }
       }
-      if (other.MonthOfYear != 0) {
+      if (other.MonthOfYear != global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) {
         MonthOfYear = other.MonthOfYear;
       }
       if (other.partnerHotelId_ != null) {
@@ -2417,7 +2417,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           PartnerHotelId = other.PartnerHotelId;
         }
       }
-      if (other.PlaceholderType != 0) {
+      if (other.PlaceholderType != global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified) {
         PlaceholderType = other.PlaceholderType;
       }
       if (other.productAggregatorId_ != null) {
@@ -2455,13 +2455,13 @@ namespace Google.Ads.GoogleAds.V3.Common {
           ProductBrand = other.ProductBrand;
         }
       }
-      if (other.ProductChannel != 0) {
+      if (other.ProductChannel != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified) {
         ProductChannel = other.ProductChannel;
       }
-      if (other.ProductChannelExclusivity != 0) {
+      if (other.ProductChannelExclusivity != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified) {
         ProductChannelExclusivity = other.ProductChannelExclusivity;
       }
-      if (other.ProductCondition != 0) {
+      if (other.ProductCondition != global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified) {
         ProductCondition = other.ProductCondition;
       }
       if (other.productCountry_ != null) {
@@ -2549,13 +2549,13 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Quarter = other.Quarter;
         }
       }
-      if (other.SearchEngineResultsPageType != 0) {
+      if (other.SearchEngineResultsPageType != global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType.Unspecified) {
         SearchEngineResultsPageType = other.SearchEngineResultsPageType;
       }
-      if (other.SearchTermMatchType != 0) {
+      if (other.SearchTermMatchType != global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType.Unspecified) {
         SearchTermMatchType = other.SearchTermMatchType;
       }
-      if (other.Slot != 0) {
+      if (other.Slot != global::Google.Ads.GoogleAds.V3.Enums.SlotEnum.Types.Slot.Unspecified) {
         Slot = other.Slot;
       }
       if (other.webpage_ != null) {

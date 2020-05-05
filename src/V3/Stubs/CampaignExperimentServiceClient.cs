@@ -1814,25 +1814,25 @@ namespace Google.Ads.GoogleAds.V3.Services
                 grpcClient.CreateOperationsClient(), effectiveSettings.PromoteCampaignExperimentOperationsSettings);
             _callGetCampaignExperiment = clientHelper.BuildApiCall<GetCampaignExperimentRequest, gagvr::CampaignExperiment>(
                 GrpcClient.GetCampaignExperimentAsync, GrpcClient.GetCampaignExperiment, effectiveSettings.GetCampaignExperimentSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callCreateCampaignExperiment = clientHelper.BuildApiCall<CreateCampaignExperimentRequest, lro::Operation>(
                 GrpcClient.CreateCampaignExperimentAsync, GrpcClient.CreateCampaignExperiment, effectiveSettings.CreateCampaignExperimentSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callMutateCampaignExperiments = clientHelper.BuildApiCall<MutateCampaignExperimentsRequest, MutateCampaignExperimentsResponse>(
                 GrpcClient.MutateCampaignExperimentsAsync, GrpcClient.MutateCampaignExperiments, effectiveSettings.MutateCampaignExperimentsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callGraduateCampaignExperiment = clientHelper.BuildApiCall<GraduateCampaignExperimentRequest, GraduateCampaignExperimentResponse>(
                 GrpcClient.GraduateCampaignExperimentAsync, GrpcClient.GraduateCampaignExperiment, effectiveSettings.GraduateCampaignExperimentSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"campaign_experiment={request.CampaignExperiment}"));
+                .WithGoogleRequestParam("campaign_experiment", request => request.CampaignExperiment);
             _callPromoteCampaignExperiment = clientHelper.BuildApiCall<PromoteCampaignExperimentRequest, lro::Operation>(
                 GrpcClient.PromoteCampaignExperimentAsync, GrpcClient.PromoteCampaignExperiment, effectiveSettings.PromoteCampaignExperimentSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"campaign_experiment={request.CampaignExperiment}"));
+                .WithGoogleRequestParam("campaign_experiment", request => request.CampaignExperiment);
             _callEndCampaignExperiment = clientHelper.BuildApiCall<EndCampaignExperimentRequest, pbwkt::Empty>(
                 GrpcClient.EndCampaignExperimentAsync, GrpcClient.EndCampaignExperiment, effectiveSettings.EndCampaignExperimentSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"campaign_experiment={request.CampaignExperiment}"));
+                .WithGoogleRequestParam("campaign_experiment", request => request.CampaignExperiment);
             _callListCampaignExperimentAsyncErrors = clientHelper.BuildApiCall<ListCampaignExperimentAsyncErrorsRequest, ListCampaignExperimentAsyncErrorsResponse>(
                 GrpcClient.ListCampaignExperimentAsyncErrorsAsync, GrpcClient.ListCampaignExperimentAsyncErrors, effectiveSettings.ListCampaignExperimentAsyncErrorsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetCampaignExperiment);
             Modify_GetCampaignExperimentApiCall(ref _callGetCampaignExperiment);
             Modify_ApiCall(ref _callCreateCampaignExperiment);

@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "c291cmNlcxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29v",
             "Z2xlL2FwaS9yZXNvdXJjZS5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9u",
             "cy5wcm90byLTAQoSRGlzcGxheUtleXdvcmRWaWV3EkoKDXJlc291cmNlX25h",
-            "bWUYASABKAlCM+BBBfpBLQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Rp",
+            "bWUYASABKAlCM+BBA/pBLQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Rp",
             "c3BsYXlLZXl3b3JkVmlldzpx6kFuCitnb29nbGVhZHMuZ29vZ2xlYXBpcy5j",
             "b20vRGlzcGxheUtleXdvcmRWaWV3Ej9jdXN0b21lcnMve2N1c3RvbWVyfS9k",
             "aXNwbGF5S2V5d29yZFZpZXdzL3tkaXNwbGF5X2tleXdvcmRfdmlld31ChAIK",
@@ -41,8 +41,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.DisplayKeywordView), global::Google.Ads.GoogleAds.V3.Resources.DisplayKeywordView.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.DisplayKeywordView), global::Google.Ads.GoogleAds.V3.Resources.DisplayKeywordView.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the display keyword view.
+    /// Output only. The resource name of the display keyword view.
     /// Display Keyword view resource names have the form:
     ///
     /// `customers/{customer_id}/displayKeywordViews/{ad_group_id}~{criterion_id}`

@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2Fw",
             "aS9yZXNvdXJjZS5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90",
             "byK1AQoMQWdlUmFuZ2VWaWV3EkQKDXJlc291cmNlX25hbWUYASABKAlCLeBB",
-            "BfpBJwolZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FnZVJhbmdlVmlldzpf",
+            "A/pBJwolZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FnZVJhbmdlVmlldzpf",
             "6kFcCiVnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQWdlUmFuZ2VWaWV3EjNj",
             "dXN0b21lcnMve2N1c3RvbWVyfS9hZ2VSYW5nZVZpZXdzL3thZ2VfcmFuZ2Vf",
             "dmlld31C/gEKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5yZXNvdXJj",
@@ -40,8 +40,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AgeRangeView), global::Google.Ads.GoogleAds.V3.Resources.AgeRangeView.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AgeRangeView), global::Google.Ads.GoogleAds.V3.Resources.AgeRangeView.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the age range view.
+    /// Output only. The resource name of the age range view.
     /// Age range view resource names have the form:
     ///
     /// `customers/{customer_id}/ageRangeViews/{ad_group_id}~{criterion_id}`

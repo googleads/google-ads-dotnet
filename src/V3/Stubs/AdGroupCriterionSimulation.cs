@@ -34,7 +34,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bGUvYXBpL3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBl",
             "cnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8imgYKGkFk",
             "R3JvdXBDcml0ZXJpb25TaW11bGF0aW9uElIKDXJlc291cmNlX25hbWUYASAB",
-            "KAlCO+BBBfpBNQozZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3JvdXBD",
+            "KAlCO+BBA/pBNQozZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3JvdXBD",
             "cml0ZXJpb25TaW11bGF0aW9uEjUKC2FkX2dyb3VwX2lkGAIgASgLMhsuZ29v",
             "Z2xlLnByb3RvYnVmLkludDY0VmFsdWVCA+BBAxI2Cgxjcml0ZXJpb25faWQY",
             "AyABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUID4EEDElMKBHR5",
@@ -59,8 +59,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "OjpHb29nbGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.SimulationReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.SimulationModificationMethodReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.SimulationTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterionSimulation), global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterionSimulation.Parser, new[]{ "ResourceName", "AdGroupId", "CriterionId", "Type", "ModificationMethod", "StartDate", "EndDate", "CpcBidPointList" }, new[]{ "PointList" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterionSimulation), global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterionSimulation.Parser, new[]{ "ResourceName", "AdGroupId", "CriterionId", "Type", "ModificationMethod", "StartDate", "EndDate", "CpcBidPointList" }, new[]{ "PointList" }, null, null, null)
           }));
     }
     #endregion
@@ -126,7 +126,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the ad group criterion simulation.
+    /// Output only. The resource name of the ad group criterion simulation.
     /// Ad group criterion simulation resource names have the form:
     ///
     /// `customers/{customer_id}/adGroupCriterionSimulations/{ad_group_id}~{criterion_id}~{type}~{modification_method}~{start_date}~{end_date}`
@@ -173,7 +173,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.SimulationTypeEnum.Types.SimulationType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.SimulationTypeEnum.Types.SimulationType type_ = global::Google.Ads.GoogleAds.V3.Enums.SimulationTypeEnum.Types.SimulationType.Unspecified;
     /// <summary>
     /// Output only. The field that the simulation modifies.
     /// </summary>
@@ -187,7 +187,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "modification_method" field.</summary>
     public const int ModificationMethodFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.SimulationModificationMethodEnum.Types.SimulationModificationMethod modificationMethod_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.SimulationModificationMethodEnum.Types.SimulationModificationMethod modificationMethod_ = global::Google.Ads.GoogleAds.V3.Enums.SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unspecified;
     /// <summary>
     /// Output only. How the simulation modifies the field.
     /// </summary>
@@ -294,8 +294,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (adGroupId_ != null) hash ^= AdGroupId.GetHashCode();
       if (criterionId_ != null) hash ^= CriterionId.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (ModificationMethod != 0) hash ^= ModificationMethod.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.SimulationTypeEnum.Types.SimulationType.Unspecified) hash ^= Type.GetHashCode();
+      if (ModificationMethod != global::Google.Ads.GoogleAds.V3.Enums.SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unspecified) hash ^= ModificationMethod.GetHashCode();
       if (startDate_ != null) hash ^= StartDate.GetHashCode();
       if (endDate_ != null) hash ^= EndDate.GetHashCode();
       if (pointListCase_ == PointListOneofCase.CpcBidPointList) hash ^= CpcBidPointList.GetHashCode();
@@ -323,11 +323,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (criterionId_ != null) {
         _single_criterionId_codec.WriteTagAndValue(output, CriterionId);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.SimulationTypeEnum.Types.SimulationType.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Type);
       }
-      if (ModificationMethod != 0) {
+      if (ModificationMethod != global::Google.Ads.GoogleAds.V3.Enums.SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) ModificationMethod);
       }
@@ -358,10 +358,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (criterionId_ != null) {
         size += _single_criterionId_codec.CalculateSizeWithTag(CriterionId);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.SimulationTypeEnum.Types.SimulationType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (ModificationMethod != 0) {
+      if (ModificationMethod != global::Google.Ads.GoogleAds.V3.Enums.SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ModificationMethod);
       }
       if (startDate_ != null) {
@@ -397,10 +397,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           CriterionId = other.CriterionId;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.SimulationTypeEnum.Types.SimulationType.Unspecified) {
         Type = other.Type;
       }
-      if (other.ModificationMethod != 0) {
+      if (other.ModificationMethod != global::Google.Ads.GoogleAds.V3.Enums.SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unspecified) {
         ModificationMethod = other.ModificationMethod;
       }
       if (other.startDate_ != null) {

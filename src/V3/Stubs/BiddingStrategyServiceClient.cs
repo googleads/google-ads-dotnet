@@ -772,10 +772,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetBiddingStrategy = clientHelper.BuildApiCall<GetBiddingStrategyRequest, gagvr::BiddingStrategy>(
                 GrpcClient.GetBiddingStrategyAsync, GrpcClient.GetBiddingStrategy, effectiveSettings.GetBiddingStrategySettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateBiddingStrategies = clientHelper.BuildApiCall<MutateBiddingStrategiesRequest, MutateBiddingStrategiesResponse>(
                 GrpcClient.MutateBiddingStrategiesAsync, GrpcClient.MutateBiddingStrategies, effectiveSettings.MutateBiddingStrategiesSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetBiddingStrategy);
             Modify_GetBiddingStrategyApiCall(ref _callGetBiddingStrategy);
             Modify_ApiCall(ref _callMutateBiddingStrategies);

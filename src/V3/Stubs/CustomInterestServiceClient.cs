@@ -739,10 +739,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCustomInterest = clientHelper.BuildApiCall<GetCustomInterestRequest, gagvr::CustomInterest>(
                 GrpcClient.GetCustomInterestAsync, GrpcClient.GetCustomInterest, effectiveSettings.GetCustomInterestSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateCustomInterests = clientHelper.BuildApiCall<MutateCustomInterestsRequest, MutateCustomInterestsResponse>(
                 GrpcClient.MutateCustomInterestsAsync, GrpcClient.MutateCustomInterests, effectiveSettings.MutateCustomInterestsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetCustomInterest);
             Modify_GetCustomInterestApiCall(ref _callGetCustomInterest);
             Modify_ApiCall(ref _callMutateCustomInterests);

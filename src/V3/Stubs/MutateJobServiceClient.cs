@@ -1195,19 +1195,19 @@ namespace Google.Ads.GoogleAds.V3.Services
                 grpcClient.CreateOperationsClient(), effectiveSettings.RunMutateJobOperationsSettings);
             _callCreateMutateJob = clientHelper.BuildApiCall<CreateMutateJobRequest, CreateMutateJobResponse>(
                 GrpcClient.CreateMutateJobAsync, GrpcClient.CreateMutateJob, effectiveSettings.CreateMutateJobSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callGetMutateJob = clientHelper.BuildApiCall<GetMutateJobRequest, gagvr::MutateJob>(
                 GrpcClient.GetMutateJobAsync, GrpcClient.GetMutateJob, effectiveSettings.GetMutateJobSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callListMutateJobResults = clientHelper.BuildApiCall<ListMutateJobResultsRequest, ListMutateJobResultsResponse>(
                 GrpcClient.ListMutateJobResultsAsync, GrpcClient.ListMutateJobResults, effectiveSettings.ListMutateJobResultsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callRunMutateJob = clientHelper.BuildApiCall<RunMutateJobRequest, lro::Operation>(
                 GrpcClient.RunMutateJobAsync, GrpcClient.RunMutateJob, effectiveSettings.RunMutateJobSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callAddMutateJobOperations = clientHelper.BuildApiCall<AddMutateJobOperationsRequest, AddMutateJobOperationsResponse>(
                 GrpcClient.AddMutateJobOperationsAsync, GrpcClient.AddMutateJobOperations, effectiveSettings.AddMutateJobOperationsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callCreateMutateJob);
             Modify_CreateMutateJobApiCall(ref _callCreateMutateJob);
             Modify_ApiCall(ref _callGetMutateJob);

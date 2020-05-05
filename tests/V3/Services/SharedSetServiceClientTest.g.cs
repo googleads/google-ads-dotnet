@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse();
             mockGrpcClient.Setup(x => x.MutateSharedSets(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<SharedSetOperation> operations = new List<SharedSetOperation>();
-            MutateSharedSetsResponse response = client.MutateSharedSets(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateSharedSetsResponse response = client.MutateSharedSets(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse();
             mockGrpcClient.Setup(x => x.MutateSharedSetsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<SharedSetOperation> operations = new List<SharedSetOperation>();
-            MutateSharedSetsResponse response = await client.MutateSharedSetsAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateSharedSetsResponse response = await client.MutateSharedSetsAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

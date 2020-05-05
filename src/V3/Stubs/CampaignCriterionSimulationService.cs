@@ -30,26 +30,27 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "djMvcmVzb3VyY2VzL2NhbXBhaWduX2NyaXRlcmlvbl9zaW11bGF0aW9uLnBy",
             "b3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGhdnb29nbGUvYXBp",
             "L2NsaWVudC5wcm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90",
-            "byJDCiVHZXRDYW1wYWlnbkNyaXRlcmlvblNpbXVsYXRpb25SZXF1ZXN0EhoK",
-            "DXJlc291cmNlX25hbWUYASABKAlCA+BBAjLFAgoiQ2FtcGFpZ25Dcml0ZXJp",
-            "b25TaW11bGF0aW9uU2VydmljZRKBAgoeR2V0Q2FtcGFpZ25Dcml0ZXJpb25T",
-            "aW11bGF0aW9uEkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMu",
-            "R2V0Q2FtcGFpZ25Dcml0ZXJpb25TaW11bGF0aW9uUmVxdWVzdBo+Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYzLnJlc291cmNlcy5DYW1wYWlnbkNyaXRlcmlv",
-            "blNpbXVsYXRpb24iVoLT5JMCQBI+L3YzL3tyZXNvdXJjZV9uYW1lPWN1c3Rv",
-            "bWVycy8qL2NhbXBhaWduQ3JpdGVyaW9uU2ltdWxhdGlvbnMvKn3aQQ1yZXNv",
-            "dXJjZV9uYW1lGhvKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb21CjgIKJGNv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlc0InQ2FtcGFpZ25D",
-            "cml0ZXJpb25TaW11bGF0aW9uU2VydmljZVByb3RvUAFaSGdvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9z",
-            "ZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIEdvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYzLlNlcnZpY2VzygIgR29vZ2xlXEFkc1xHb29nbGVBZHNcVjNcU2Vydmlj",
-            "ZXPqAiRHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnBy",
-            "b3RvMw=="));
+            "bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90byJ8CiVHZXRDYW1wYWlnbkNy",
+            "aXRlcmlvblNpbXVsYXRpb25SZXF1ZXN0ElMKDXJlc291cmNlX25hbWUYASAB",
+            "KAlCPOBBAvpBNgo0Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NhbXBhaWdu",
+            "Q3JpdGVyaW9uU2ltdWxhdGlvbjLFAgoiQ2FtcGFpZ25Dcml0ZXJpb25TaW11",
+            "bGF0aW9uU2VydmljZRKBAgoeR2V0Q2FtcGFpZ25Dcml0ZXJpb25TaW11bGF0",
+            "aW9uEkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuR2V0Q2Ft",
+            "cGFpZ25Dcml0ZXJpb25TaW11bGF0aW9uUmVxdWVzdBo+Lmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYzLnJlc291cmNlcy5DYW1wYWlnbkNyaXRlcmlvblNpbXVs",
+            "YXRpb24iVoLT5JMCQBI+L3YzL3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8q",
+            "L2NhbXBhaWduQ3JpdGVyaW9uU2ltdWxhdGlvbnMvKn3aQQ1yZXNvdXJjZV9u",
+            "YW1lGhvKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb21CjgIKJGNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlc0InQ2FtcGFpZ25Dcml0ZXJp",
+            "b25TaW11bGF0aW9uU2VydmljZVByb3RvUAFaSGdvb2dsZS5nb2xhbmcub3Jn",
+            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9zZXJ2aWNl",
+            "cztzZXJ2aWNlc6ICA0dBQaoCIEdvb2dsZS5BZHMuR29vZ2xlQWRzLlYzLlNl",
+            "cnZpY2VzygIgR29vZ2xlXEFkc1xHb29nbGVBZHNcVjNcU2VydmljZXPqAiRH",
+            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.CampaignCriterionSimulationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCampaignCriterionSimulationRequest), global::Google.Ads.GoogleAds.V3.Services.GetCampaignCriterionSimulationRequest.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.CampaignCriterionSimulationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCampaignCriterionSimulationRequest), global::Google.Ads.GoogleAds.V3.Services.GetCampaignCriterionSimulationRequest.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

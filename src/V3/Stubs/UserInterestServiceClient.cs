@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetUserInterest = clientHelper.BuildApiCall<GetUserInterestRequest, gagvr::UserInterest>(
                 GrpcClient.GetUserInterestAsync, GrpcClient.GetUserInterest, effectiveSettings.GetUserInterestSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetUserInterest);
             Modify_GetUserInterestApiCall(ref _callGetUserInterest);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

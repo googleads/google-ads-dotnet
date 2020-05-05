@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCurrencyConstant = clientHelper.BuildApiCall<GetCurrencyConstantRequest, gagvr::CurrencyConstant>(
                 GrpcClient.GetCurrencyConstantAsync, GrpcClient.GetCurrencyConstant, effectiveSettings.GetCurrencyConstantSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetCurrencyConstant);
             Modify_GetCurrencyConstantApiCall(ref _callGetCurrencyConstant);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

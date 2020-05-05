@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 Services.V3.GoogleAdsService);
 
             // Construct a GAQL query which will retrieve AccountBudgetProposals.
-            String searchQuery =
+            String query =
                 @"SELECT
                     account_budget.status,
                     account_budget.billing_setup,
@@ -76,6 +76,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
                     account_budget.approved_spending_limit_type,
                     account_budget.proposed_spending_limit_micros,
                     account_budget.proposed_spending_limit_type,
+                    account_budget.adjusted_spending_limit_micros,
+                    account_budget.adjusted_spending_limit_type,
                     account_budget.approved_start_date_time,
                     account_budget.proposed_start_date_time,
                     account_budget.approved_end_date_time,
@@ -85,54 +87,52 @@ namespace Google.Ads.GoogleAds.Examples.V3
                  FROM
                      account_budget";
 
-            // Creates a request that will retrieve all account budgets using pages of the
-            // specified page size.
-            SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
-            {
-                PageSize = PAGE_SIZE,
-                Query = searchQuery,
-                CustomerId = customerId.ToString()
-            };
-
             try
             {
                 // Issues the search request.
-                PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
-                    googleAdsService.Search(request);
+                googleAdsService.SearchStream(customerId.ToString(), query,
+                    delegate (SearchGoogleAdsStreamResponse resp)
+                    {
+                        // Displays the results
+                        foreach (GoogleAdsRow googleAdsRow in resp.Results)
+                        {
+                            AccountBudget budget = googleAdsRow.AccountBudget;
 
-                // Iterates over all rows in all pages and prints the requested field values for
-                // the account budget in each row.
-                foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
-                {
-                    AccountBudget budget = googleAdsRow.AccountBudget;
+                            Console.WriteLine(String.Format("Account budget '{0}' with status '{1}', " +
+                                "billing setup '{2}', amount served {3:0.00}, total adjustments " +
+                                "{4:0.00}, approved spending limit '{5}' (proposed '{6}', " +
+                                "adjusted '{7}'), approved start time '{8}' (proposed '{9}'), " +
+                                "approved end time '{10}' (proposed '{11}')",
+                                budget.ResourceName,
+                                budget.Status,
+                                budget.BillingSetup,
+                                budget.AmountServedMicros.Value / 1_000_000.0,
+                                budget.TotalAdjustmentsMicros.Value / 1_000_000.0,
+                                budget.ApprovedSpendingLimitMicros.HasValue
+                                    ? String.Format(
+                                        "%.2f", budget.ApprovedSpendingLimitMicros.Value / 1_000_000.0)
+                                    : budget.ApprovedSpendingLimitType.ToString(),
+                                budget.ProposedSpendingLimitMicros.HasValue
+                                    ? String.Format(
+                                        "%.2f", budget.ProposedSpendingLimitMicros.Value / 1_000_000.0)
+                                    : budget.ProposedSpendingLimitType.ToString(),
+                                budget.AdjustedSpendingLimitMicros.HasValue
+                                    ? String.Format(
+                                        "%.2f", budget.AdjustedSpendingLimitMicros.Value / 1_000_000.0)
+                                    : budget.AdjustedSpendingLimitType.ToString(),
+                                budget.ApprovedStartDateTime,
+                                budget.ProposedStartDateTime,
+                                String.IsNullOrEmpty(budget.ApprovedEndDateTime)
+                                    ? budget.ApprovedEndTimeType.ToString()
+                                    : budget.ApprovedEndDateTime,
+                                String.IsNullOrEmpty(budget.ProposedEndDateTime)
+                                    ? budget.ProposedEndTimeType.ToString()
+                                    : budget.ProposedEndDateTime));
 
-                    Console.WriteLine(String.Format("Account budget '{0}' with status '{1}', " +
-                        "billing setup '{2}', amount served {3:0.00}, total adjustments " +
-                        "{4:0.00}, approved spending limit '{5}' (proposed '{6}'), approved " +
-                        "start time '{7}' (proposed '{8}'), approved end time '{9}' " +
-                        "(proposed '{10}')",
-                        budget.ResourceName,
-                        budget.Status,
-                        budget.BillingSetup,
-                        budget.AmountServedMicros.Value / 1_000_000.0,
-                        budget.TotalAdjustmentsMicros.Value / 1_000_000.0,
-                        budget.ApprovedSpendingLimitMicros.HasValue
-                            ? String.Format(
-                                "%.2f", budget.ApprovedSpendingLimitMicros.Value / 1_000_000.0)
-                            : budget.ApprovedSpendingLimitType.ToString(),
-                        budget.ProposedSpendingLimitMicros.HasValue
-                            ? String.Format(
-                                "%.2f", budget.ProposedSpendingLimitMicros.Value / 1_000_000.0)
-                            : budget.ProposedSpendingLimitType.ToString(),
-                        budget.ApprovedStartDateTime,
-                        budget.ProposedStartDateTime,
-                        String.IsNullOrEmpty(budget.ApprovedEndDateTime)
-                            ? budget.ApprovedEndTimeType.ToString()
-                            : budget.ApprovedEndDateTime,
-                        String.IsNullOrEmpty(budget.ProposedEndDateTime)
-                            ? budget.ProposedEndTimeType.ToString()
-                            : budget.ProposedEndDateTime));
-                }
+                        }
+                    }
+                );
+
             }
             catch (GoogleAdsException e)
             {

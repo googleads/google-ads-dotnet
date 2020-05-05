@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetTopicView = clientHelper.BuildApiCall<GetTopicViewRequest, gagvr::TopicView>(
                 GrpcClient.GetTopicViewAsync, GrpcClient.GetTopicView, effectiveSettings.GetTopicViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetTopicView);
             Modify_GetTopicViewApiCall(ref _callGetTopicView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

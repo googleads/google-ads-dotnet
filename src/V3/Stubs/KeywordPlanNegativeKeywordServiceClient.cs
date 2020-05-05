@@ -778,10 +778,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetKeywordPlanNegativeKeyword = clientHelper.BuildApiCall<GetKeywordPlanNegativeKeywordRequest, gagvr::KeywordPlanNegativeKeyword>(
                 GrpcClient.GetKeywordPlanNegativeKeywordAsync, GrpcClient.GetKeywordPlanNegativeKeyword, effectiveSettings.GetKeywordPlanNegativeKeywordSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateKeywordPlanNegativeKeywords = clientHelper.BuildApiCall<MutateKeywordPlanNegativeKeywordsRequest, MutateKeywordPlanNegativeKeywordsResponse>(
                 GrpcClient.MutateKeywordPlanNegativeKeywordsAsync, GrpcClient.MutateKeywordPlanNegativeKeywords, effectiveSettings.MutateKeywordPlanNegativeKeywordsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetKeywordPlanNegativeKeyword);
             Modify_GetKeywordPlanNegativeKeywordApiCall(ref _callGetKeywordPlanNegativeKeyword);
             Modify_ApiCall(ref _callMutateKeywordPlanNegativeKeywords);

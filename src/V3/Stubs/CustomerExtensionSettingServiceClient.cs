@@ -784,10 +784,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCustomerExtensionSetting = clientHelper.BuildApiCall<GetCustomerExtensionSettingRequest, gagvr::CustomerExtensionSetting>(
                 GrpcClient.GetCustomerExtensionSettingAsync, GrpcClient.GetCustomerExtensionSetting, effectiveSettings.GetCustomerExtensionSettingSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateCustomerExtensionSettings = clientHelper.BuildApiCall<MutateCustomerExtensionSettingsRequest, MutateCustomerExtensionSettingsResponse>(
                 GrpcClient.MutateCustomerExtensionSettingsAsync, GrpcClient.MutateCustomerExtensionSettings, effectiveSettings.MutateCustomerExtensionSettingsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetCustomerExtensionSetting);
             Modify_GetCustomerExtensionSettingApiCall(ref _callGetCustomerExtensionSetting);
             Modify_ApiCall(ref _callMutateCustomerExtensionSettings);

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateKeywordPlansResponse expectedResponse = new MutateKeywordPlansResponse();
             mockGrpcClient.Setup(x => x.MutateKeywordPlans(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<KeywordPlanOperation> operations = new List<KeywordPlanOperation>();
-            MutateKeywordPlansResponse response = client.MutateKeywordPlans(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateKeywordPlansResponse response = client.MutateKeywordPlans(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateKeywordPlansResponse expectedResponse = new MutateKeywordPlansResponse();
             mockGrpcClient.Setup(x => x.MutateKeywordPlansAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<KeywordPlanOperation> operations = new List<KeywordPlanOperation>();
-            MutateKeywordPlansResponse response = await client.MutateKeywordPlansAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateKeywordPlansResponse response = await client.MutateKeywordPlansAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
