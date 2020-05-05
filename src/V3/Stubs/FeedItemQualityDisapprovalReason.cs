@@ -55,8 +55,8 @@ namespace Google.Ads.GoogleAds.V3.Enums {
             "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityDisapprovalReasonEnum), global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityDisapprovalReasonEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityDisapprovalReasonEnum.Types.FeedItemQualityDisapprovalReason) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityDisapprovalReasonEnum), global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityDisapprovalReasonEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.FeedItemQualityDisapprovalReasonEnum.Types.FeedItemQualityDisapprovalReason) }, null, null)
           }));
     }
     #endregion

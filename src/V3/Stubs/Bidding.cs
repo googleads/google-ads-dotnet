@@ -63,20 +63,20 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.TargetImpressionShareLocationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Commission), global::Google.Ads.GoogleAds.V3.Common.Commission.Parser, new[]{ "CommissionRateMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.EnhancedCpc), global::Google.Ads.GoogleAds.V3.Common.EnhancedCpc.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ManualCpc), global::Google.Ads.GoogleAds.V3.Common.ManualCpc.Parser, new[]{ "EnhancedCpcEnabled" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ManualCpm), global::Google.Ads.GoogleAds.V3.Common.ManualCpm.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ManualCpv), global::Google.Ads.GoogleAds.V3.Common.ManualCpv.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MaximizeConversions), global::Google.Ads.GoogleAds.V3.Common.MaximizeConversions.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MaximizeConversionValue), global::Google.Ads.GoogleAds.V3.Common.MaximizeConversionValue.Parser, new[]{ "TargetRoas" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetCpa), global::Google.Ads.GoogleAds.V3.Common.TargetCpa.Parser, new[]{ "TargetCpaMicros", "CpcBidCeilingMicros", "CpcBidFloorMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetCpm), global::Google.Ads.GoogleAds.V3.Common.TargetCpm.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetImpressionShare), global::Google.Ads.GoogleAds.V3.Common.TargetImpressionShare.Parser, new[]{ "Location", "LocationFractionMicros", "CpcBidCeilingMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetRoas), global::Google.Ads.GoogleAds.V3.Common.TargetRoas.Parser, new[]{ "TargetRoas_", "CpcBidCeilingMicros", "CpcBidFloorMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetSpend), global::Google.Ads.GoogleAds.V3.Common.TargetSpend.Parser, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PercentCpc), global::Google.Ads.GoogleAds.V3.Common.PercentCpc.Parser, new[]{ "CpcBidCeilingMicros", "EnhancedCpcEnabled" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.Commission), global::Google.Ads.GoogleAds.V3.Common.Commission.Parser, new[]{ "CommissionRateMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.EnhancedCpc), global::Google.Ads.GoogleAds.V3.Common.EnhancedCpc.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ManualCpc), global::Google.Ads.GoogleAds.V3.Common.ManualCpc.Parser, new[]{ "EnhancedCpcEnabled" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ManualCpm), global::Google.Ads.GoogleAds.V3.Common.ManualCpm.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ManualCpv), global::Google.Ads.GoogleAds.V3.Common.ManualCpv.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MaximizeConversions), global::Google.Ads.GoogleAds.V3.Common.MaximizeConversions.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MaximizeConversionValue), global::Google.Ads.GoogleAds.V3.Common.MaximizeConversionValue.Parser, new[]{ "TargetRoas" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetCpa), global::Google.Ads.GoogleAds.V3.Common.TargetCpa.Parser, new[]{ "TargetCpaMicros", "CpcBidCeilingMicros", "CpcBidFloorMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetCpm), global::Google.Ads.GoogleAds.V3.Common.TargetCpm.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetImpressionShare), global::Google.Ads.GoogleAds.V3.Common.TargetImpressionShare.Parser, new[]{ "Location", "LocationFractionMicros", "CpcBidCeilingMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetRoas), global::Google.Ads.GoogleAds.V3.Common.TargetRoas.Parser, new[]{ "TargetRoas_", "CpcBidCeilingMicros", "CpcBidFloorMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetSpend), global::Google.Ads.GoogleAds.V3.Common.TargetSpend.Parser, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PercentCpc), global::Google.Ads.GoogleAds.V3.Common.PercentCpc.Parser, new[]{ "CpcBidCeilingMicros", "EnhancedCpcEnabled" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1263,7 +1263,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
   /// An automated bidding strategy that sets bids so that a certain percentage of
   /// search ads are shown at the top of the first page (or other targeted
   /// location).
-  /// Next Id = 4
+  /// next tag = 4
   /// </summary>
   public sealed partial class TargetImpressionShare : pb::IMessage<TargetImpressionShare> {
     private static readonly pb::MessageParser<TargetImpressionShare> _parser = new pb::MessageParser<TargetImpressionShare>(() => new TargetImpressionShare());
@@ -1303,7 +1303,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "location" field.</summary>
     public const int LocationFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation location_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation location_ = global::Google.Ads.GoogleAds.V3.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified;
     /// <summary>
     /// The targeted location on the search results page.
     /// </summary>
@@ -1372,7 +1372,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Location != 0) hash ^= Location.GetHashCode();
+      if (Location != global::Google.Ads.GoogleAds.V3.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified) hash ^= Location.GetHashCode();
       if (locationFractionMicros_ != null) hash ^= LocationFractionMicros.GetHashCode();
       if (cpcBidCeilingMicros_ != null) hash ^= CpcBidCeilingMicros.GetHashCode();
       if (_unknownFields != null) {
@@ -1388,7 +1388,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Location != 0) {
+      if (Location != global::Google.Ads.GoogleAds.V3.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Location);
       }
@@ -1406,7 +1406,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Location != 0) {
+      if (Location != global::Google.Ads.GoogleAds.V3.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Location);
       }
       if (locationFractionMicros_ != null) {
@@ -1426,7 +1426,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Location != 0) {
+      if (other.Location != global::Google.Ads.GoogleAds.V3.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified) {
         Location = other.Location;
       }
       if (other.locationFractionMicros_ != null) {

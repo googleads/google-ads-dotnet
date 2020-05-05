@@ -620,7 +620,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetGoogleAdsField = clientHelper.BuildApiCall<GetGoogleAdsFieldRequest, gagvr::GoogleAdsField>(
                 GrpcClient.GetGoogleAdsFieldAsync, GrpcClient.GetGoogleAdsField, effectiveSettings.GetGoogleAdsFieldSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callSearchGoogleAdsFields = clientHelper.BuildApiCall<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse>(
                 GrpcClient.SearchGoogleAdsFieldsAsync, GrpcClient.SearchGoogleAdsFields, effectiveSettings.SearchGoogleAdsFieldsSettings);
             Modify_ApiCall(ref _callGetGoogleAdsField);

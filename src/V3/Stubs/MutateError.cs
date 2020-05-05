@@ -26,22 +26,23 @@ namespace Google.Ads.GoogleAds.V3.Errors {
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92My9lcnJvcnMvbXV0YXRlX2Vycm9y",
             "LnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lcnJvcnMaHGdvb2ds",
-            "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i7gEKD011dGF0ZUVycm9yRW51bSLa",
-            "AQoLTXV0YXRlRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAES",
+            "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iswIKD011dGF0ZUVycm9yRW51bSKf",
+            "AgoLTXV0YXRlRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAES",
             "FgoSUkVTT1VSQ0VfTk9UX0ZPVU5EEAMSIQodSURfRVhJU1RTX0lOX01VTFRJ",
             "UExFX01VVEFURVMQBxIdChlJTkNPTlNJU1RFTlRfRklFTERfVkFMVUVTEAgS",
             "FgoSTVVUQVRFX05PVF9BTExPV0VEEAkSHgoaUkVTT1VSQ0VfTk9UX0lOX0dP",
-            "T0dMRV9BRFMQChIbChdSRVNPVVJDRV9BTFJFQURZX0VYSVNUUxALQusBCiJj",
-            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuZXJyb3JzQhBNdXRhdGVFcnJv",
-            "clByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92My9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjMuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29n",
-            "bGVBZHNcVjNcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6",
-            "OkVycm9yc2IGcHJvdG8z"));
+            "T0dMRV9BRFMQChIbChdSRVNPVVJDRV9BTFJFQURZX0VYSVNUUxALEisKJ1JF",
+            "U09VUkNFX0RPRVNfTk9UX1NVUFBPUlRfVkFMSURBVEVfT05MWRAMEhYKElJF",
+            "U09VUkNFX1JFQURfT05MWRANQusBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjMuZXJyb3JzQhBNdXRhdGVFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9l",
+            "cnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMu",
+            "RXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjNcRXJyb3Jz6gIiR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum), global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum.Types.MutateError) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum), global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Errors.MutateErrorEnum.Types.MutateError) }, null, null)
           }));
     }
     #endregion
@@ -191,6 +192,14 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         /// The resource being created already exists.
         /// </summary>
         [pbr::OriginalName("RESOURCE_ALREADY_EXISTS")] ResourceAlreadyExists = 11,
+        /// <summary>
+        /// This resource cannot be used with "validate_only".
+        /// </summary>
+        [pbr::OriginalName("RESOURCE_DOES_NOT_SUPPORT_VALIDATE_ONLY")] ResourceDoesNotSupportValidateOnly = 12,
+        /// <summary>
+        /// Attempt to write to read-only fields.
+        /// </summary>
+        [pbr::OriginalName("RESOURCE_READ_ONLY")] ResourceReadOnly = 13,
       }
 
     }

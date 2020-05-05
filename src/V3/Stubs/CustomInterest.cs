@@ -58,9 +58,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.CustomInterestMemberTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CustomInterestStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CustomInterestTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CustomInterest), global::Google.Ads.GoogleAds.V3.Resources.CustomInterest.Parser, new[]{ "ResourceName", "Id", "Status", "Name", "Type", "Description", "Members" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CustomInterestMember), global::Google.Ads.GoogleAds.V3.Resources.CustomInterestMember.Parser, new[]{ "MemberType", "Parameter" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CustomInterest), global::Google.Ads.GoogleAds.V3.Resources.CustomInterest.Parser, new[]{ "ResourceName", "Id", "Status", "Name", "Type", "Description", "Members" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CustomInterestMember), global::Google.Ads.GoogleAds.V3.Resources.CustomInterestMember.Parser, new[]{ "MemberType", "Parameter" }, null, null, null, null)
           }));
     }
     #endregion
@@ -145,7 +145,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.CustomInterestStatusEnum.Types.CustomInterestStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CustomInterestStatusEnum.Types.CustomInterestStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.CustomInterestStatusEnum.Types.CustomInterestStatus.Unspecified;
     /// <summary>
     /// Status of this custom interest. Indicates whether the custom interest is
     /// enabled or removed.
@@ -178,7 +178,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.CustomInterestTypeEnum.Types.CustomInterestType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CustomInterestTypeEnum.Types.CustomInterestType type_ = global::Google.Ads.GoogleAds.V3.Enums.CustomInterestTypeEnum.Types.CustomInterestType.Unspecified;
     /// <summary>
     /// Type of the custom interest, CUSTOM_AFFINITY or CUSTOM_INTENT.
     /// By default the type is set to CUSTOM_AFFINITY.
@@ -250,9 +250,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestStatusEnum.Types.CustomInterestStatus.Unspecified) hash ^= Status.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestTypeEnum.Types.CustomInterestType.Unspecified) hash ^= Type.GetHashCode();
       if (description_ != null) hash ^= Description.GetHashCode();
       hash ^= members_.GetHashCode();
       if (_unknownFields != null) {
@@ -275,14 +275,14 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) {
         _single_id_codec.WriteTagAndValue(output, Id);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestStatusEnum.Types.CustomInterestStatus.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Status);
       }
       if (name_ != null) {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestTypeEnum.Types.CustomInterestType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Type);
       }
@@ -304,13 +304,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) {
         size += _single_id_codec.CalculateSizeWithTag(Id);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestStatusEnum.Types.CustomInterestStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (name_ != null) {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestTypeEnum.Types.CustomInterestType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (description_ != null) {
@@ -336,7 +336,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Id = other.Id;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestStatusEnum.Types.CustomInterestStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.name_ != null) {
@@ -344,7 +344,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Name = other.Name;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestTypeEnum.Types.CustomInterestType.Unspecified) {
         Type = other.Type;
       }
       if (other.description_ != null) {
@@ -448,7 +448,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "member_type" field.</summary>
     public const int MemberTypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.CustomInterestMemberTypeEnum.Types.CustomInterestMemberType memberType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CustomInterestMemberTypeEnum.Types.CustomInterestMemberType memberType_ = global::Google.Ads.GoogleAds.V3.Enums.CustomInterestMemberTypeEnum.Types.CustomInterestMemberType.Unspecified;
     /// <summary>
     /// The type of custom interest member, KEYWORD or URL.
     /// </summary>
@@ -498,7 +498,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (MemberType != 0) hash ^= MemberType.GetHashCode();
+      if (MemberType != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestMemberTypeEnum.Types.CustomInterestMemberType.Unspecified) hash ^= MemberType.GetHashCode();
       if (parameter_ != null) hash ^= Parameter.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -513,7 +513,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (MemberType != 0) {
+      if (MemberType != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestMemberTypeEnum.Types.CustomInterestMemberType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) MemberType);
       }
@@ -528,7 +528,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (MemberType != 0) {
+      if (MemberType != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestMemberTypeEnum.Types.CustomInterestMemberType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MemberType);
       }
       if (parameter_ != null) {
@@ -545,7 +545,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (other == null) {
         return;
       }
-      if (other.MemberType != 0) {
+      if (other.MemberType != global::Google.Ads.GoogleAds.V3.Enums.CustomInterestMemberTypeEnum.Types.CustomInterestMemberType.Unspecified) {
         MemberType = other.MemberType;
       }
       if (other.parameter_ != null) {

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse();
             mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiers(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<AdGroupBidModifierOperation> operations = new List<AdGroupBidModifierOperation>();
-            MutateAdGroupBidModifiersResponse response = client.MutateAdGroupBidModifiers(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateAdGroupBidModifiersResponse response = client.MutateAdGroupBidModifiers(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse();
             mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiersAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<AdGroupBidModifierOperation> operations = new List<AdGroupBidModifierOperation>();
-            MutateAdGroupBidModifiersResponse response = await client.MutateAdGroupBidModifiersAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateAdGroupBidModifiersResponse response = await client.MutateAdGroupBidModifiersAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

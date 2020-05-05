@@ -29,25 +29,27 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "YWRzLnYzLnNlcnZpY2VzGj5nb29nbGUvYWRzL2dvb2dsZWFkcy92My9yZXNv",
             "dXJjZXMvY2FtcGFpZ25fYXVkaWVuY2Vfdmlldy5wcm90bxocZ29vZ2xlL2Fw",
             "aS9hbm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQucHJvdG8a",
-            "H2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8iPAoeR2V0Q2FtcGFp",
-            "Z25BdWRpZW5jZVZpZXdSZXF1ZXN0EhoKDXJlc291cmNlX25hbWUYASABKAlC",
-            "A+BBAjKiAgobQ2FtcGFpZ25BdWRpZW5jZVZpZXdTZXJ2aWNlEuUBChdHZXRD",
-            "YW1wYWlnbkF1ZGllbmNlVmlldxJALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
-            "LnNlcnZpY2VzLkdldENhbXBhaWduQXVkaWVuY2VWaWV3UmVxdWVzdBo3Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnJlc291cmNlcy5DYW1wYWlnbkF1ZGll",
-            "bmNlVmlldyJPgtPkkwI5EjcvdjMve3Jlc291cmNlX25hbWU9Y3VzdG9tZXJz",
-            "LyovY2FtcGFpZ25BdWRpZW5jZVZpZXdzLyp92kENcmVzb3VyY2VfbmFtZRob",
-            "ykEYZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tQocCCiRjb20uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjMuc2VydmljZXNCIENhbXBhaWduQXVkaWVuY2VWaWV3",
-            "U2VydmljZVByb3RvUAFaSGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
-            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9zZXJ2aWNlcztzZXJ2aWNlc6IC",
-            "A0dBQaoCIEdvb2dsZS5BZHMuR29vZ2xlQWRzLlYzLlNlcnZpY2VzygIgR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjNcU2VydmljZXPqAiRHb29nbGU6OkFkczo6",
-            "R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
+            "H2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkv",
+            "cmVzb3VyY2UucHJvdG8ibgoeR2V0Q2FtcGFpZ25BdWRpZW5jZVZpZXdSZXF1",
+            "ZXN0EkwKDXJlc291cmNlX25hbWUYASABKAlCNeBBAvpBLwotZ29vZ2xlYWRz",
+            "Lmdvb2dsZWFwaXMuY29tL0NhbXBhaWduQXVkaWVuY2VWaWV3MqICChtDYW1w",
+            "YWlnbkF1ZGllbmNlVmlld1NlcnZpY2US5QEKF0dldENhbXBhaWduQXVkaWVu",
+            "Y2VWaWV3EkAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuR2V0",
+            "Q2FtcGFpZ25BdWRpZW5jZVZpZXdSZXF1ZXN0GjcuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjMucmVzb3VyY2VzLkNhbXBhaWduQXVkaWVuY2VWaWV3Ik+C0+ST",
+            "AjkSNy92My97cmVzb3VyY2VfbmFtZT1jdXN0b21lcnMvKi9jYW1wYWlnbkF1",
+            "ZGllbmNlVmlld3MvKn3aQQ1yZXNvdXJjZV9uYW1lGhvKQRhnb29nbGVhZHMu",
+            "Z29vZ2xlYXBpcy5jb21ChwIKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "My5zZXJ2aWNlc0IgQ2FtcGFpZ25BdWRpZW5jZVZpZXdTZXJ2aWNlUHJvdG9Q",
+            "AVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YzL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xl",
+            "LkFkcy5Hb29nbGVBZHMuVjMuU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWM1xTZXJ2aWNlc+oCJEdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYz",
+            "OjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.CampaignAudienceViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCampaignAudienceViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetCampaignAudienceViewRequest.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.CampaignAudienceViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCampaignAudienceViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetCampaignAudienceViewRequest.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

@@ -52,8 +52,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "QWRzOjpHb29nbGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.ExtensionSettingDeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ExtensionTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CustomerExtensionSetting), global::Google.Ads.GoogleAds.V3.Resources.CustomerExtensionSetting.Parser, new[]{ "ResourceName", "ExtensionType", "ExtensionFeedItems", "Device" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CustomerExtensionSetting), global::Google.Ads.GoogleAds.V3.Resources.CustomerExtensionSetting.Parser, new[]{ "ResourceName", "ExtensionType", "ExtensionFeedItems", "Device" }, null, null, null, null)
           }));
     }
     #endregion
@@ -119,7 +119,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "extension_type" field.</summary>
     public const int ExtensionTypeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.ExtensionTypeEnum.Types.ExtensionType extensionType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ExtensionTypeEnum.Types.ExtensionType extensionType_ = global::Google.Ads.GoogleAds.V3.Enums.ExtensionTypeEnum.Types.ExtensionType.Unspecified;
     /// <summary>
     /// Immutable. The extension type of the customer extension setting.
     /// </summary>
@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "device" field.</summary>
     public const int DeviceFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice device_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice device_ = global::Google.Ads.GoogleAds.V3.Enums.ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unspecified;
     /// <summary>
     /// The device for which the extensions will serve. Optional.
     /// </summary>
@@ -185,9 +185,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
-      if (ExtensionType != 0) hash ^= ExtensionType.GetHashCode();
+      if (ExtensionType != global::Google.Ads.GoogleAds.V3.Enums.ExtensionTypeEnum.Types.ExtensionType.Unspecified) hash ^= ExtensionType.GetHashCode();
       hash ^= extensionFeedItems_.GetHashCode();
-      if (Device != 0) hash ^= Device.GetHashCode();
+      if (Device != global::Google.Ads.GoogleAds.V3.Enums.ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unspecified) hash ^= Device.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -205,12 +205,12 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
-      if (ExtensionType != 0) {
+      if (ExtensionType != global::Google.Ads.GoogleAds.V3.Enums.ExtensionTypeEnum.Types.ExtensionType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) ExtensionType);
       }
       extensionFeedItems_.WriteTo(output, _repeated_extensionFeedItems_codec);
-      if (Device != 0) {
+      if (Device != global::Google.Ads.GoogleAds.V3.Enums.ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Device);
       }
@@ -225,11 +225,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
       }
-      if (ExtensionType != 0) {
+      if (ExtensionType != global::Google.Ads.GoogleAds.V3.Enums.ExtensionTypeEnum.Types.ExtensionType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ExtensionType);
       }
       size += extensionFeedItems_.CalculateSize(_repeated_extensionFeedItems_codec);
-      if (Device != 0) {
+      if (Device != global::Google.Ads.GoogleAds.V3.Enums.ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Device);
       }
       if (_unknownFields != null) {
@@ -246,11 +246,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (other.ResourceName.Length != 0) {
         ResourceName = other.ResourceName;
       }
-      if (other.ExtensionType != 0) {
+      if (other.ExtensionType != global::Google.Ads.GoogleAds.V3.Enums.ExtensionTypeEnum.Types.ExtensionType.Unspecified) {
         ExtensionType = other.ExtensionType;
       }
       extensionFeedItems_.Add(other.extensionFeedItems_);
-      if (other.Device != 0) {
+      if (other.Device != global::Google.Ads.GoogleAds.V3.Enums.ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unspecified) {
         Device = other.Device;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

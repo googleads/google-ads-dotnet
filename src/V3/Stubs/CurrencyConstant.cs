@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cmNlcxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xl",
             "L2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJz",
             "LnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIogDChBDdXJy",
-            "ZW5jeUNvbnN0YW50EkgKDXJlc291cmNlX25hbWUYASABKAlCMeBBBfpBKwop",
+            "ZW5jeUNvbnN0YW50EkgKDXJlc291cmNlX25hbWUYASABKAlCMeBBA/pBKwop",
             "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0N1cnJlbmN5Q29uc3RhbnQSLwoE",
             "Y29kZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUID4EED",
             "Ei8KBG5hbWUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVC",
@@ -46,8 +46,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CurrencyConstant), global::Google.Ads.GoogleAds.V3.Resources.CurrencyConstant.Parser, new[]{ "ResourceName", "Code", "Name", "Symbol", "BillableUnitMicros" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CurrencyConstant), global::Google.Ads.GoogleAds.V3.Resources.CurrencyConstant.Parser, new[]{ "ResourceName", "Code", "Name", "Symbol", "BillableUnitMicros" }, null, null, null, null)
           }));
     }
     #endregion
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the currency constant.
+    /// Output only. The resource name of the currency constant.
     /// Currency constant resource names have the form:
     ///
     /// `currencyConstants/{currency_code}`

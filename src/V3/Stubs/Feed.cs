@@ -88,11 +88,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationFeedRelationshipTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedOriginReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Feed), global::Google.Ads.GoogleAds.V3.Resources.Feed.Parser, new[]{ "ResourceName", "Id", "Name", "Attributes", "AttributeOperations", "Origin", "Status", "PlacesLocationFeedData", "AffiliateLocationFeedData" }, new[]{ "SystemFeedGenerationData" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.PlacesLocationFeedData), global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.PlacesLocationFeedData.Parser, new[]{ "OauthInfo", "EmailAddress", "BusinessAccountId", "BusinessNameFilter", "CategoryFilters", "LabelFilters" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo), global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo.Parser, new[]{ "HttpMethod", "HttpRequestUrl", "HttpAuthorizationHeader" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.AffiliateLocationFeedData), global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.AffiliateLocationFeedData.Parser, new[]{ "ChainIds", "RelationshipType" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedAttribute), global::Google.Ads.GoogleAds.V3.Resources.FeedAttribute.Parser, new[]{ "Id", "Name", "Type", "IsPartOfKey" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation), global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Parser, new[]{ "Operator", "Value" }, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Types.Operator) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Feed), global::Google.Ads.GoogleAds.V3.Resources.Feed.Parser, new[]{ "ResourceName", "Id", "Name", "Attributes", "AttributeOperations", "Origin", "Status", "PlacesLocationFeedData", "AffiliateLocationFeedData" }, new[]{ "SystemFeedGenerationData" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.PlacesLocationFeedData), global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.PlacesLocationFeedData.Parser, new[]{ "OauthInfo", "EmailAddress", "BusinessAccountId", "BusinessNameFilter", "CategoryFilters", "LabelFilters" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo), global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo.Parser, new[]{ "HttpMethod", "HttpRequestUrl", "HttpAuthorizationHeader" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.AffiliateLocationFeedData), global::Google.Ads.GoogleAds.V3.Resources.Feed.Types.AffiliateLocationFeedData.Parser, new[]{ "ChainIds", "RelationshipType" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedAttribute), global::Google.Ads.GoogleAds.V3.Resources.FeedAttribute.Parser, new[]{ "Id", "Name", "Type", "IsPartOfKey" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation), global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Parser, new[]{ "Operator", "Value" }, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Types.Operator) }, null, null)
           }));
     }
     #endregion
@@ -233,7 +233,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "origin" field.</summary>
     public const int OriginFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedOriginEnum.Types.FeedOrigin origin_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedOriginEnum.Types.FeedOrigin origin_ = global::Google.Ads.GoogleAds.V3.Enums.FeedOriginEnum.Types.FeedOrigin.Unspecified;
     /// <summary>
     /// Immutable. Specifies who manages the FeedAttributes for the Feed.
     /// </summary>
@@ -247,7 +247,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 8;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedStatusEnum.Types.FeedStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedStatusEnum.Types.FeedStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.FeedStatusEnum.Types.FeedStatus.Unspecified;
     /// <summary>
     /// Output only. Status of the feed.
     /// This field is read-only.
@@ -343,8 +343,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) hash ^= Name.GetHashCode();
       hash ^= attributes_.GetHashCode();
       hash ^= attributeOperations_.GetHashCode();
-      if (Origin != 0) hash ^= Origin.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Origin != global::Google.Ads.GoogleAds.V3.Enums.FeedOriginEnum.Types.FeedOrigin.Unspecified) hash ^= Origin.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedStatusEnum.Types.FeedStatus.Unspecified) hash ^= Status.GetHashCode();
       if (systemFeedGenerationDataCase_ == SystemFeedGenerationDataOneofCase.PlacesLocationFeedData) hash ^= PlacesLocationFeedData.GetHashCode();
       if (systemFeedGenerationDataCase_ == SystemFeedGenerationDataOneofCase.AffiliateLocationFeedData) hash ^= AffiliateLocationFeedData.GetHashCode();
       hash ^= (int) systemFeedGenerationDataCase_;
@@ -372,7 +372,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
       attributes_.WriteTo(output, _repeated_attributes_codec);
-      if (Origin != 0) {
+      if (Origin != global::Google.Ads.GoogleAds.V3.Enums.FeedOriginEnum.Types.FeedOrigin.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Origin);
       }
@@ -384,7 +384,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(58);
         output.WriteMessage(AffiliateLocationFeedData);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedStatusEnum.Types.FeedStatus.Unspecified) {
         output.WriteRawTag(64);
         output.WriteEnum((int) Status);
       }
@@ -408,10 +408,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       }
       size += attributes_.CalculateSize(_repeated_attributes_codec);
       size += attributeOperations_.CalculateSize(_repeated_attributeOperations_codec);
-      if (Origin != 0) {
+      if (Origin != global::Google.Ads.GoogleAds.V3.Enums.FeedOriginEnum.Types.FeedOrigin.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Origin);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedStatusEnum.Types.FeedStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (systemFeedGenerationDataCase_ == SystemFeedGenerationDataOneofCase.PlacesLocationFeedData) {
@@ -446,10 +446,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       }
       attributes_.Add(other.attributes_);
       attributeOperations_.Add(other.attributeOperations_);
-      if (other.Origin != 0) {
+      if (other.Origin != global::Google.Ads.GoogleAds.V3.Enums.FeedOriginEnum.Types.FeedOrigin.Unspecified) {
         Origin = other.Origin;
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.FeedStatusEnum.Types.FeedStatus.Unspecified) {
         Status = other.Status;
       }
       switch (other.SystemFeedGenerationDataCase) {
@@ -1128,7 +1128,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         /// <summary>Field number for the "relationship_type" field.</summary>
         public const int RelationshipTypeFieldNumber = 2;
-        private global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType relationshipType_ = 0;
+        private global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType relationshipType_ = global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType.Unspecified;
         /// <summary>
         /// The relationship the chains have with the advertiser.
         /// </summary>
@@ -1162,7 +1162,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         public override int GetHashCode() {
           int hash = 1;
           hash ^= chainIds_.GetHashCode();
-          if (RelationshipType != 0) hash ^= RelationshipType.GetHashCode();
+          if (RelationshipType != global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType.Unspecified) hash ^= RelationshipType.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -1177,7 +1177,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
           chainIds_.WriteTo(output, _repeated_chainIds_codec);
-          if (RelationshipType != 0) {
+          if (RelationshipType != global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType.Unspecified) {
             output.WriteRawTag(16);
             output.WriteEnum((int) RelationshipType);
           }
@@ -1190,7 +1190,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         public int CalculateSize() {
           int size = 0;
           size += chainIds_.CalculateSize(_repeated_chainIds_codec);
-          if (RelationshipType != 0) {
+          if (RelationshipType != global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType.Unspecified) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RelationshipType);
           }
           if (_unknownFields != null) {
@@ -1205,7 +1205,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             return;
           }
           chainIds_.Add(other.chainIds_);
-          if (other.RelationshipType != 0) {
+          if (other.RelationshipType != global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType.Unspecified) {
             RelationshipType = other.RelationshipType;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1315,7 +1315,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types.FeedAttributeType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types.FeedAttributeType type_ = global::Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types.FeedAttributeType.Unspecified;
     /// <summary>
     /// Data type for feed attribute. Required.
     /// </summary>
@@ -1371,7 +1371,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       int hash = 1;
       if (id_ != null) hash ^= Id.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types.FeedAttributeType.Unspecified) hash ^= Type.GetHashCode();
       if (isPartOfKey_ != null) hash ^= IsPartOfKey.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1392,7 +1392,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types.FeedAttributeType.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Type);
       }
@@ -1413,7 +1413,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types.FeedAttributeType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (isPartOfKey_ != null) {
@@ -1440,7 +1440,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Name = other.Name;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types.FeedAttributeType.Unspecified) {
         Type = other.Type;
       }
       if (other.isPartOfKey_ != null) {
@@ -1530,7 +1530,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "operator" field.</summary>
     public const int OperatorFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Types.Operator operator_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Types.Operator operator_ = global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Types.Operator.Unspecified;
     /// <summary>
     /// Output only. Type of list operation to perform.
     /// </summary>
@@ -1577,7 +1577,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (Operator != global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Types.Operator.Unspecified) hash ^= Operator.GetHashCode();
       if (value_ != null) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1592,7 +1592,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Types.Operator.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Operator);
       }
@@ -1608,7 +1608,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Types.Operator.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
       }
       if (value_ != null) {
@@ -1625,7 +1625,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (other == null) {
         return;
       }
-      if (other.Operator != 0) {
+      if (other.Operator != global::Google.Ads.GoogleAds.V3.Resources.FeedAttributeOperation.Types.Operator.Unspecified) {
         Operator = other.Operator;
       }
       if (other.value_ != null) {

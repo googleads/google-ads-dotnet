@@ -236,61 +236,61 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "Z2xlQWRzOjpWMzo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.AgeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AppPaymentModelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ContentLabelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.GenderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.IncomeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.InteractionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ListingGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.LocationGroupRadiusUnitsReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ParentalStatusTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PreferredContentTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductCustomAttributeIndexReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductTypeLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperandReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperatorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.KeywordInfo), global::Google.Ads.GoogleAds.V3.Common.KeywordInfo.Parser, new[]{ "Text", "MatchType" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PlacementInfo), global::Google.Ads.GoogleAds.V3.Common.PlacementInfo.Parser, new[]{ "Url" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MobileAppCategoryInfo), global::Google.Ads.GoogleAds.V3.Common.MobileAppCategoryInfo.Parser, new[]{ "MobileAppCategoryConstant" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MobileApplicationInfo), global::Google.Ads.GoogleAds.V3.Common.MobileApplicationInfo.Parser, new[]{ "AppId", "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LocationInfo), global::Google.Ads.GoogleAds.V3.Common.LocationInfo.Parser, new[]{ "GeoTargetConstant" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DeviceInfo), global::Google.Ads.GoogleAds.V3.Common.DeviceInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PreferredContentInfo), global::Google.Ads.GoogleAds.V3.Common.PreferredContentInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ListingGroupInfo), global::Google.Ads.GoogleAds.V3.Common.ListingGroupInfo.Parser, new[]{ "Type", "CaseValue", "ParentAdGroupCriterion" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ListingScopeInfo), global::Google.Ads.GoogleAds.V3.Common.ListingScopeInfo.Parser, new[]{ "Dimensions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ListingDimensionInfo), global::Google.Ads.GoogleAds.V3.Common.ListingDimensionInfo.Parser, new[]{ "HotelId", "HotelClass", "HotelCountryRegion", "HotelState", "HotelCity", "ProductBiddingCategory", "ProductBrand", "ProductChannel", "ProductChannelExclusivity", "ProductCondition", "ProductCustomAttribute", "ProductItemId", "ProductType", "UnknownListingDimension" }, new[]{ "Dimension" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelIdInfo), global::Google.Ads.GoogleAds.V3.Common.HotelIdInfo.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelClassInfo), global::Google.Ads.GoogleAds.V3.Common.HotelClassInfo.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelCountryRegionInfo), global::Google.Ads.GoogleAds.V3.Common.HotelCountryRegionInfo.Parser, new[]{ "CountryRegionCriterion" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelStateInfo), global::Google.Ads.GoogleAds.V3.Common.HotelStateInfo.Parser, new[]{ "StateCriterion" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelCityInfo), global::Google.Ads.GoogleAds.V3.Common.HotelCityInfo.Parser, new[]{ "CityCriterion" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductBiddingCategoryInfo), global::Google.Ads.GoogleAds.V3.Common.ProductBiddingCategoryInfo.Parser, new[]{ "Id", "CountryCode", "Level" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductBrandInfo), global::Google.Ads.GoogleAds.V3.Common.ProductBrandInfo.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductChannelInfo), global::Google.Ads.GoogleAds.V3.Common.ProductChannelInfo.Parser, new[]{ "Channel" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductChannelExclusivityInfo), global::Google.Ads.GoogleAds.V3.Common.ProductChannelExclusivityInfo.Parser, new[]{ "ChannelExclusivity" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductConditionInfo), global::Google.Ads.GoogleAds.V3.Common.ProductConditionInfo.Parser, new[]{ "Condition" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductCustomAttributeInfo), global::Google.Ads.GoogleAds.V3.Common.ProductCustomAttributeInfo.Parser, new[]{ "Value", "Index" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductItemIdInfo), global::Google.Ads.GoogleAds.V3.Common.ProductItemIdInfo.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductTypeInfo), global::Google.Ads.GoogleAds.V3.Common.ProductTypeInfo.Parser, new[]{ "Value", "Level" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UnknownListingDimensionInfo), global::Google.Ads.GoogleAds.V3.Common.UnknownListingDimensionInfo.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelDateSelectionTypeInfo), global::Google.Ads.GoogleAds.V3.Common.HotelDateSelectionTypeInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelAdvanceBookingWindowInfo), global::Google.Ads.GoogleAds.V3.Common.HotelAdvanceBookingWindowInfo.Parser, new[]{ "MinDays", "MaxDays" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelLengthOfStayInfo), global::Google.Ads.GoogleAds.V3.Common.HotelLengthOfStayInfo.Parser, new[]{ "MinNights", "MaxNights" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelCheckInDayInfo), global::Google.Ads.GoogleAds.V3.Common.HotelCheckInDayInfo.Parser, new[]{ "DayOfWeek" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.InteractionTypeInfo), global::Google.Ads.GoogleAds.V3.Common.InteractionTypeInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdScheduleInfo), global::Google.Ads.GoogleAds.V3.Common.AdScheduleInfo.Parser, new[]{ "StartMinute", "EndMinute", "StartHour", "EndHour", "DayOfWeek" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AgeRangeInfo), global::Google.Ads.GoogleAds.V3.Common.AgeRangeInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.GenderInfo), global::Google.Ads.GoogleAds.V3.Common.GenderInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.IncomeRangeInfo), global::Google.Ads.GoogleAds.V3.Common.IncomeRangeInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ParentalStatusInfo), global::Google.Ads.GoogleAds.V3.Common.ParentalStatusInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.YouTubeVideoInfo), global::Google.Ads.GoogleAds.V3.Common.YouTubeVideoInfo.Parser, new[]{ "VideoId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.YouTubeChannelInfo), global::Google.Ads.GoogleAds.V3.Common.YouTubeChannelInfo.Parser, new[]{ "ChannelId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListInfo), global::Google.Ads.GoogleAds.V3.Common.UserListInfo.Parser, new[]{ "UserList" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProximityInfo), global::Google.Ads.GoogleAds.V3.Common.ProximityInfo.Parser, new[]{ "GeoPoint", "Radius", "RadiusUnits", "Address" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.GeoPointInfo), global::Google.Ads.GoogleAds.V3.Common.GeoPointInfo.Parser, new[]{ "LongitudeInMicroDegrees", "LatitudeInMicroDegrees" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AddressInfo), global::Google.Ads.GoogleAds.V3.Common.AddressInfo.Parser, new[]{ "PostalCode", "ProvinceCode", "CountryCode", "ProvinceName", "StreetAddress", "StreetAddress2", "CityName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TopicInfo), global::Google.Ads.GoogleAds.V3.Common.TopicInfo.Parser, new[]{ "TopicConstant", "Path" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LanguageInfo), global::Google.Ads.GoogleAds.V3.Common.LanguageInfo.Parser, new[]{ "LanguageConstant" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.IpBlockInfo), global::Google.Ads.GoogleAds.V3.Common.IpBlockInfo.Parser, new[]{ "IpAddress" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ContentLabelInfo), global::Google.Ads.GoogleAds.V3.Common.ContentLabelInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CarrierInfo), global::Google.Ads.GoogleAds.V3.Common.CarrierInfo.Parser, new[]{ "CarrierConstant" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserInterestInfo), global::Google.Ads.GoogleAds.V3.Common.UserInterestInfo.Parser, new[]{ "UserInterestCategory" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.WebpageInfo), global::Google.Ads.GoogleAds.V3.Common.WebpageInfo.Parser, new[]{ "CriterionName", "Conditions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.WebpageConditionInfo), global::Google.Ads.GoogleAds.V3.Common.WebpageConditionInfo.Parser, new[]{ "Operand", "Operator", "Argument" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.OperatingSystemVersionInfo), global::Google.Ads.GoogleAds.V3.Common.OperatingSystemVersionInfo.Parser, new[]{ "OperatingSystemVersionConstant" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AppPaymentModelInfo), global::Google.Ads.GoogleAds.V3.Common.AppPaymentModelInfo.Parser, new[]{ "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MobileDeviceInfo), global::Google.Ads.GoogleAds.V3.Common.MobileDeviceInfo.Parser, new[]{ "MobileDeviceConstant" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CustomAffinityInfo), global::Google.Ads.GoogleAds.V3.Common.CustomAffinityInfo.Parser, new[]{ "CustomAffinity" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CustomIntentInfo), global::Google.Ads.GoogleAds.V3.Common.CustomIntentInfo.Parser, new[]{ "CustomIntent" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LocationGroupInfo), global::Google.Ads.GoogleAds.V3.Common.LocationGroupInfo.Parser, new[]{ "Feed", "GeoTargetConstants", "Radius", "RadiusUnits" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.KeywordInfo), global::Google.Ads.GoogleAds.V3.Common.KeywordInfo.Parser, new[]{ "Text", "MatchType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PlacementInfo), global::Google.Ads.GoogleAds.V3.Common.PlacementInfo.Parser, new[]{ "Url" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MobileAppCategoryInfo), global::Google.Ads.GoogleAds.V3.Common.MobileAppCategoryInfo.Parser, new[]{ "MobileAppCategoryConstant" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MobileApplicationInfo), global::Google.Ads.GoogleAds.V3.Common.MobileApplicationInfo.Parser, new[]{ "AppId", "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LocationInfo), global::Google.Ads.GoogleAds.V3.Common.LocationInfo.Parser, new[]{ "GeoTargetConstant" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DeviceInfo), global::Google.Ads.GoogleAds.V3.Common.DeviceInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PreferredContentInfo), global::Google.Ads.GoogleAds.V3.Common.PreferredContentInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ListingGroupInfo), global::Google.Ads.GoogleAds.V3.Common.ListingGroupInfo.Parser, new[]{ "Type", "CaseValue", "ParentAdGroupCriterion" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ListingScopeInfo), global::Google.Ads.GoogleAds.V3.Common.ListingScopeInfo.Parser, new[]{ "Dimensions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ListingDimensionInfo), global::Google.Ads.GoogleAds.V3.Common.ListingDimensionInfo.Parser, new[]{ "HotelId", "HotelClass", "HotelCountryRegion", "HotelState", "HotelCity", "ProductBiddingCategory", "ProductBrand", "ProductChannel", "ProductChannelExclusivity", "ProductCondition", "ProductCustomAttribute", "ProductItemId", "ProductType", "UnknownListingDimension" }, new[]{ "Dimension" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelIdInfo), global::Google.Ads.GoogleAds.V3.Common.HotelIdInfo.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelClassInfo), global::Google.Ads.GoogleAds.V3.Common.HotelClassInfo.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelCountryRegionInfo), global::Google.Ads.GoogleAds.V3.Common.HotelCountryRegionInfo.Parser, new[]{ "CountryRegionCriterion" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelStateInfo), global::Google.Ads.GoogleAds.V3.Common.HotelStateInfo.Parser, new[]{ "StateCriterion" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelCityInfo), global::Google.Ads.GoogleAds.V3.Common.HotelCityInfo.Parser, new[]{ "CityCriterion" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductBiddingCategoryInfo), global::Google.Ads.GoogleAds.V3.Common.ProductBiddingCategoryInfo.Parser, new[]{ "Id", "CountryCode", "Level" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductBrandInfo), global::Google.Ads.GoogleAds.V3.Common.ProductBrandInfo.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductChannelInfo), global::Google.Ads.GoogleAds.V3.Common.ProductChannelInfo.Parser, new[]{ "Channel" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductChannelExclusivityInfo), global::Google.Ads.GoogleAds.V3.Common.ProductChannelExclusivityInfo.Parser, new[]{ "ChannelExclusivity" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductConditionInfo), global::Google.Ads.GoogleAds.V3.Common.ProductConditionInfo.Parser, new[]{ "Condition" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductCustomAttributeInfo), global::Google.Ads.GoogleAds.V3.Common.ProductCustomAttributeInfo.Parser, new[]{ "Value", "Index" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductItemIdInfo), global::Google.Ads.GoogleAds.V3.Common.ProductItemIdInfo.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProductTypeInfo), global::Google.Ads.GoogleAds.V3.Common.ProductTypeInfo.Parser, new[]{ "Value", "Level" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UnknownListingDimensionInfo), global::Google.Ads.GoogleAds.V3.Common.UnknownListingDimensionInfo.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelDateSelectionTypeInfo), global::Google.Ads.GoogleAds.V3.Common.HotelDateSelectionTypeInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelAdvanceBookingWindowInfo), global::Google.Ads.GoogleAds.V3.Common.HotelAdvanceBookingWindowInfo.Parser, new[]{ "MinDays", "MaxDays" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelLengthOfStayInfo), global::Google.Ads.GoogleAds.V3.Common.HotelLengthOfStayInfo.Parser, new[]{ "MinNights", "MaxNights" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelCheckInDayInfo), global::Google.Ads.GoogleAds.V3.Common.HotelCheckInDayInfo.Parser, new[]{ "DayOfWeek" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.InteractionTypeInfo), global::Google.Ads.GoogleAds.V3.Common.InteractionTypeInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdScheduleInfo), global::Google.Ads.GoogleAds.V3.Common.AdScheduleInfo.Parser, new[]{ "StartMinute", "EndMinute", "StartHour", "EndHour", "DayOfWeek" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AgeRangeInfo), global::Google.Ads.GoogleAds.V3.Common.AgeRangeInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.GenderInfo), global::Google.Ads.GoogleAds.V3.Common.GenderInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.IncomeRangeInfo), global::Google.Ads.GoogleAds.V3.Common.IncomeRangeInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ParentalStatusInfo), global::Google.Ads.GoogleAds.V3.Common.ParentalStatusInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.YouTubeVideoInfo), global::Google.Ads.GoogleAds.V3.Common.YouTubeVideoInfo.Parser, new[]{ "VideoId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.YouTubeChannelInfo), global::Google.Ads.GoogleAds.V3.Common.YouTubeChannelInfo.Parser, new[]{ "ChannelId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserListInfo), global::Google.Ads.GoogleAds.V3.Common.UserListInfo.Parser, new[]{ "UserList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ProximityInfo), global::Google.Ads.GoogleAds.V3.Common.ProximityInfo.Parser, new[]{ "GeoPoint", "Radius", "RadiusUnits", "Address" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.GeoPointInfo), global::Google.Ads.GoogleAds.V3.Common.GeoPointInfo.Parser, new[]{ "LongitudeInMicroDegrees", "LatitudeInMicroDegrees" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AddressInfo), global::Google.Ads.GoogleAds.V3.Common.AddressInfo.Parser, new[]{ "PostalCode", "ProvinceCode", "CountryCode", "ProvinceName", "StreetAddress", "StreetAddress2", "CityName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TopicInfo), global::Google.Ads.GoogleAds.V3.Common.TopicInfo.Parser, new[]{ "TopicConstant", "Path" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LanguageInfo), global::Google.Ads.GoogleAds.V3.Common.LanguageInfo.Parser, new[]{ "LanguageConstant" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.IpBlockInfo), global::Google.Ads.GoogleAds.V3.Common.IpBlockInfo.Parser, new[]{ "IpAddress" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.ContentLabelInfo), global::Google.Ads.GoogleAds.V3.Common.ContentLabelInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CarrierInfo), global::Google.Ads.GoogleAds.V3.Common.CarrierInfo.Parser, new[]{ "CarrierConstant" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.UserInterestInfo), global::Google.Ads.GoogleAds.V3.Common.UserInterestInfo.Parser, new[]{ "UserInterestCategory" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.WebpageInfo), global::Google.Ads.GoogleAds.V3.Common.WebpageInfo.Parser, new[]{ "CriterionName", "Conditions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.WebpageConditionInfo), global::Google.Ads.GoogleAds.V3.Common.WebpageConditionInfo.Parser, new[]{ "Operand", "Operator", "Argument" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.OperatingSystemVersionInfo), global::Google.Ads.GoogleAds.V3.Common.OperatingSystemVersionInfo.Parser, new[]{ "OperatingSystemVersionConstant" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AppPaymentModelInfo), global::Google.Ads.GoogleAds.V3.Common.AppPaymentModelInfo.Parser, new[]{ "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.MobileDeviceInfo), global::Google.Ads.GoogleAds.V3.Common.MobileDeviceInfo.Parser, new[]{ "MobileDeviceConstant" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CustomAffinityInfo), global::Google.Ads.GoogleAds.V3.Common.CustomAffinityInfo.Parser, new[]{ "CustomAffinity" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CustomIntentInfo), global::Google.Ads.GoogleAds.V3.Common.CustomIntentInfo.Parser, new[]{ "CustomIntent" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LocationGroupInfo), global::Google.Ads.GoogleAds.V3.Common.LocationGroupInfo.Parser, new[]{ "Feed", "GeoTargetConstants", "Radius", "RadiusUnits" }, null, null, null, null)
           }));
     }
     #endregion
@@ -353,7 +353,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "match_type" field.</summary>
     public const int MatchTypeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType matchType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType matchType_ = global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified;
     /// <summary>
     /// The match type of the keyword.
     /// </summary>
@@ -387,7 +387,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (text_ != null) hash ^= Text.GetHashCode();
-      if (MatchType != 0) hash ^= MatchType.GetHashCode();
+      if (MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) hash ^= MatchType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -404,7 +404,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (text_ != null) {
         _single_text_codec.WriteTagAndValue(output, Text);
       }
-      if (MatchType != 0) {
+      if (MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) MatchType);
       }
@@ -419,7 +419,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (text_ != null) {
         size += _single_text_codec.CalculateSizeWithTag(Text);
       }
-      if (MatchType != 0) {
+      if (MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MatchType);
       }
       if (_unknownFields != null) {
@@ -438,7 +438,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Text = other.Text;
         }
       }
-      if (other.MatchType != 0) {
+      if (other.MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) {
         MatchType = other.MatchType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1125,7 +1125,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device type_ = global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified;
     /// <summary>
     /// Type of the device.
     /// </summary>
@@ -1157,7 +1157,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1171,7 +1171,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -1183,7 +1183,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -1197,7 +1197,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1260,7 +1260,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.PreferredContentTypeEnum.Types.PreferredContentType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PreferredContentTypeEnum.Types.PreferredContentType type_ = global::Google.Ads.GoogleAds.V3.Enums.PreferredContentTypeEnum.Types.PreferredContentType.Unspecified;
     /// <summary>
     /// Type of the preferred content.
     /// </summary>
@@ -1292,7 +1292,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.PreferredContentTypeEnum.Types.PreferredContentType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1306,7 +1306,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.PreferredContentTypeEnum.Types.PreferredContentType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Type);
       }
@@ -1318,7 +1318,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.PreferredContentTypeEnum.Types.PreferredContentType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -1332,7 +1332,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.PreferredContentTypeEnum.Types.PreferredContentType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1397,7 +1397,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.ListingGroupTypeEnum.Types.ListingGroupType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ListingGroupTypeEnum.Types.ListingGroupType type_ = global::Google.Ads.GoogleAds.V3.Enums.ListingGroupTypeEnum.Types.ListingGroupType.Unspecified;
     /// <summary>
     /// Type of the listing group.
     /// </summary>
@@ -1463,7 +1463,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ListingGroupTypeEnum.Types.ListingGroupType.Unspecified) hash ^= Type.GetHashCode();
       if (caseValue_ != null) hash ^= CaseValue.GetHashCode();
       if (parentAdGroupCriterion_ != null) hash ^= ParentAdGroupCriterion.GetHashCode();
       if (_unknownFields != null) {
@@ -1479,7 +1479,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ListingGroupTypeEnum.Types.ListingGroupType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -1498,7 +1498,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ListingGroupTypeEnum.Types.ListingGroupType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (caseValue_ != null) {
@@ -1518,7 +1518,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.ListingGroupTypeEnum.Types.ListingGroupType.Unspecified) {
         Type = other.Type;
       }
       if (other.caseValue_ != null) {
@@ -3193,7 +3193,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "level" field.</summary>
     public const int LevelFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel level_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel level_ = global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified;
     /// <summary>
     /// Level of the product bidding category.
     /// </summary>
@@ -3229,7 +3229,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       int hash = 1;
       if (id_ != null) hash ^= Id.GetHashCode();
       if (countryCode_ != null) hash ^= CountryCode.GetHashCode();
-      if (Level != 0) hash ^= Level.GetHashCode();
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified) hash ^= Level.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3249,7 +3249,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (countryCode_ != null) {
         _single_countryCode_codec.WriteTagAndValue(output, CountryCode);
       }
-      if (Level != 0) {
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Level);
       }
@@ -3267,7 +3267,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (countryCode_ != null) {
         size += _single_countryCode_codec.CalculateSizeWithTag(CountryCode);
       }
-      if (Level != 0) {
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Level);
       }
       if (_unknownFields != null) {
@@ -3291,7 +3291,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           CountryCode = other.CountryCode;
         }
       }
-      if (other.Level != 0) {
+      if (other.Level != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified) {
         Level = other.Level;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3509,7 +3509,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "channel" field.</summary>
     public const int ChannelFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel channel_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel channel_ = global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified;
     /// <summary>
     /// Value of the locality.
     /// </summary>
@@ -3541,7 +3541,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Channel != 0) hash ^= Channel.GetHashCode();
+      if (Channel != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified) hash ^= Channel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3555,7 +3555,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Channel != 0) {
+      if (Channel != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Channel);
       }
@@ -3567,7 +3567,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Channel != 0) {
+      if (Channel != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Channel);
       }
       if (_unknownFields != null) {
@@ -3581,7 +3581,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Channel != 0) {
+      if (other.Channel != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified) {
         Channel = other.Channel;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3644,7 +3644,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "channel_exclusivity" field.</summary>
     public const int ChannelExclusivityFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity channelExclusivity_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity channelExclusivity_ = global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified;
     /// <summary>
     /// Value of the availability.
     /// </summary>
@@ -3676,7 +3676,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ChannelExclusivity != 0) hash ^= ChannelExclusivity.GetHashCode();
+      if (ChannelExclusivity != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified) hash ^= ChannelExclusivity.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3690,7 +3690,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ChannelExclusivity != 0) {
+      if (ChannelExclusivity != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) ChannelExclusivity);
       }
@@ -3702,7 +3702,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ChannelExclusivity != 0) {
+      if (ChannelExclusivity != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ChannelExclusivity);
       }
       if (_unknownFields != null) {
@@ -3716,7 +3716,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.ChannelExclusivity != 0) {
+      if (other.ChannelExclusivity != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified) {
         ChannelExclusivity = other.ChannelExclusivity;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3779,7 +3779,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "condition" field.</summary>
     public const int ConditionFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition condition_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition condition_ = global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified;
     /// <summary>
     /// Value of the condition.
     /// </summary>
@@ -3811,7 +3811,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Condition != 0) hash ^= Condition.GetHashCode();
+      if (Condition != global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified) hash ^= Condition.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3825,7 +3825,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Condition != 0) {
+      if (Condition != global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Condition);
       }
@@ -3837,7 +3837,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Condition != 0) {
+      if (Condition != global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Condition);
       }
       if (_unknownFields != null) {
@@ -3851,7 +3851,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Condition != 0) {
+      if (other.Condition != global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified) {
         Condition = other.Condition;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3931,7 +3931,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "index" field.</summary>
     public const int IndexFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductCustomAttributeIndexEnum.Types.ProductCustomAttributeIndex index_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductCustomAttributeIndexEnum.Types.ProductCustomAttributeIndex index_ = global::Google.Ads.GoogleAds.V3.Enums.ProductCustomAttributeIndexEnum.Types.ProductCustomAttributeIndex.Unspecified;
     /// <summary>
     /// Indicates the index of the custom attribute.
     /// </summary>
@@ -3965,7 +3965,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (value_ != null) hash ^= Value.GetHashCode();
-      if (Index != 0) hash ^= Index.GetHashCode();
+      if (Index != global::Google.Ads.GoogleAds.V3.Enums.ProductCustomAttributeIndexEnum.Types.ProductCustomAttributeIndex.Unspecified) hash ^= Index.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3982,7 +3982,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (value_ != null) {
         _single_value_codec.WriteTagAndValue(output, Value);
       }
-      if (Index != 0) {
+      if (Index != global::Google.Ads.GoogleAds.V3.Enums.ProductCustomAttributeIndexEnum.Types.ProductCustomAttributeIndex.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Index);
       }
@@ -3997,7 +3997,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (value_ != null) {
         size += _single_value_codec.CalculateSizeWithTag(Value);
       }
-      if (Index != 0) {
+      if (Index != global::Google.Ads.GoogleAds.V3.Enums.ProductCustomAttributeIndexEnum.Types.ProductCustomAttributeIndex.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Index);
       }
       if (_unknownFields != null) {
@@ -4016,7 +4016,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Value = other.Value;
         }
       }
-      if (other.Index != 0) {
+      if (other.Index != global::Google.Ads.GoogleAds.V3.Enums.ProductCustomAttributeIndexEnum.Types.ProductCustomAttributeIndex.Unspecified) {
         Index = other.Index;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -4244,7 +4244,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "level" field.</summary>
     public const int LevelFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductTypeLevelEnum.Types.ProductTypeLevel level_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductTypeLevelEnum.Types.ProductTypeLevel level_ = global::Google.Ads.GoogleAds.V3.Enums.ProductTypeLevelEnum.Types.ProductTypeLevel.Unspecified;
     /// <summary>
     /// Level of the type.
     /// </summary>
@@ -4278,7 +4278,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (value_ != null) hash ^= Value.GetHashCode();
-      if (Level != 0) hash ^= Level.GetHashCode();
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductTypeLevelEnum.Types.ProductTypeLevel.Unspecified) hash ^= Level.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4295,7 +4295,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (value_ != null) {
         _single_value_codec.WriteTagAndValue(output, Value);
       }
-      if (Level != 0) {
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductTypeLevelEnum.Types.ProductTypeLevel.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Level);
       }
@@ -4310,7 +4310,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (value_ != null) {
         size += _single_value_codec.CalculateSizeWithTag(Value);
       }
-      if (Level != 0) {
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductTypeLevelEnum.Types.ProductTypeLevel.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Level);
       }
       if (_unknownFields != null) {
@@ -4329,7 +4329,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Value = other.Value;
         }
       }
-      if (other.Level != 0) {
+      if (other.Level != global::Google.Ads.GoogleAds.V3.Enums.ProductTypeLevelEnum.Types.ProductTypeLevel.Unspecified) {
         Level = other.Level;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -4503,7 +4503,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType type_ = global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified;
     /// <summary>
     /// Type of the hotel date selection
     /// </summary>
@@ -4535,7 +4535,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4549,7 +4549,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -4561,7 +4561,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -4575,7 +4575,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -4994,7 +4994,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "day_of_week" field.</summary>
     public const int DayOfWeekFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek dayOfWeek_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek dayOfWeek_ = global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified;
     /// <summary>
     /// The day of the week.
     /// </summary>
@@ -5026,7 +5026,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (DayOfWeek != 0) hash ^= DayOfWeek.GetHashCode();
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) hash ^= DayOfWeek.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5040,7 +5040,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (DayOfWeek != 0) {
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) DayOfWeek);
       }
@@ -5052,7 +5052,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (DayOfWeek != 0) {
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DayOfWeek);
       }
       if (_unknownFields != null) {
@@ -5066,7 +5066,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.DayOfWeek != 0) {
+      if (other.DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         DayOfWeek = other.DayOfWeek;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -5129,7 +5129,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.InteractionTypeEnum.Types.InteractionType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.InteractionTypeEnum.Types.InteractionType type_ = global::Google.Ads.GoogleAds.V3.Enums.InteractionTypeEnum.Types.InteractionType.Unspecified;
     /// <summary>
     /// The interaction type.
     /// </summary>
@@ -5161,7 +5161,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.InteractionTypeEnum.Types.InteractionType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5175,7 +5175,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.InteractionTypeEnum.Types.InteractionType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -5187,7 +5187,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.InteractionTypeEnum.Types.InteractionType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -5201,7 +5201,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.InteractionTypeEnum.Types.InteractionType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -5273,7 +5273,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "start_minute" field.</summary>
     public const int StartMinuteFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour startMinute_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour startMinute_ = global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified;
     /// <summary>
     /// Minutes after the start hour at which this schedule starts.
     ///
@@ -5290,7 +5290,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "end_minute" field.</summary>
     public const int EndMinuteFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour endMinute_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour endMinute_ = global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified;
     /// <summary>
     /// Minutes after the end hour at which this schedule ends. The schedule is
     /// exclusive of the end minute.
@@ -5348,7 +5348,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "day_of_week" field.</summary>
     public const int DayOfWeekFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek dayOfWeek_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek dayOfWeek_ = global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified;
     /// <summary>
     /// Day of the week the schedule applies to.
     ///
@@ -5387,11 +5387,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (StartMinute != 0) hash ^= StartMinute.GetHashCode();
-      if (EndMinute != 0) hash ^= EndMinute.GetHashCode();
+      if (StartMinute != global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified) hash ^= StartMinute.GetHashCode();
+      if (EndMinute != global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified) hash ^= EndMinute.GetHashCode();
       if (startHour_ != null) hash ^= StartHour.GetHashCode();
       if (endHour_ != null) hash ^= EndHour.GetHashCode();
-      if (DayOfWeek != 0) hash ^= DayOfWeek.GetHashCode();
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) hash ^= DayOfWeek.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5405,11 +5405,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (StartMinute != 0) {
+      if (StartMinute != global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) StartMinute);
       }
-      if (EndMinute != 0) {
+      if (EndMinute != global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) EndMinute);
       }
@@ -5419,7 +5419,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (endHour_ != null) {
         _single_endHour_codec.WriteTagAndValue(output, EndHour);
       }
-      if (DayOfWeek != 0) {
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) DayOfWeek);
       }
@@ -5431,10 +5431,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (StartMinute != 0) {
+      if (StartMinute != global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StartMinute);
       }
-      if (EndMinute != 0) {
+      if (EndMinute != global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EndMinute);
       }
       if (startHour_ != null) {
@@ -5443,7 +5443,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (endHour_ != null) {
         size += _single_endHour_codec.CalculateSizeWithTag(EndHour);
       }
-      if (DayOfWeek != 0) {
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DayOfWeek);
       }
       if (_unknownFields != null) {
@@ -5457,10 +5457,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.StartMinute != 0) {
+      if (other.StartMinute != global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified) {
         StartMinute = other.StartMinute;
       }
-      if (other.EndMinute != 0) {
+      if (other.EndMinute != global::Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types.MinuteOfHour.Unspecified) {
         EndMinute = other.EndMinute;
       }
       if (other.startHour_ != null) {
@@ -5473,7 +5473,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           EndHour = other.EndHour;
         }
       }
-      if (other.DayOfWeek != 0) {
+      if (other.DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
         DayOfWeek = other.DayOfWeek;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -5558,7 +5558,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.AgeRangeTypeEnum.Types.AgeRangeType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AgeRangeTypeEnum.Types.AgeRangeType type_ = global::Google.Ads.GoogleAds.V3.Enums.AgeRangeTypeEnum.Types.AgeRangeType.Unspecified;
     /// <summary>
     /// Type of the age range.
     /// </summary>
@@ -5590,7 +5590,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AgeRangeTypeEnum.Types.AgeRangeType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5604,7 +5604,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AgeRangeTypeEnum.Types.AgeRangeType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -5616,7 +5616,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AgeRangeTypeEnum.Types.AgeRangeType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -5630,7 +5630,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.AgeRangeTypeEnum.Types.AgeRangeType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -5693,7 +5693,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.GenderTypeEnum.Types.GenderType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.GenderTypeEnum.Types.GenderType type_ = global::Google.Ads.GoogleAds.V3.Enums.GenderTypeEnum.Types.GenderType.Unspecified;
     /// <summary>
     /// Type of the gender.
     /// </summary>
@@ -5725,7 +5725,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.GenderTypeEnum.Types.GenderType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5739,7 +5739,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.GenderTypeEnum.Types.GenderType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -5751,7 +5751,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.GenderTypeEnum.Types.GenderType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -5765,7 +5765,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.GenderTypeEnum.Types.GenderType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -5828,7 +5828,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType type_ = global::Google.Ads.GoogleAds.V3.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType.Unspecified;
     /// <summary>
     /// Type of the income range.
     /// </summary>
@@ -5860,7 +5860,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5874,7 +5874,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -5886,7 +5886,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -5900,7 +5900,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.IncomeRangeTypeEnum.Types.IncomeRangeType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -5963,7 +5963,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType type_ = global::Google.Ads.GoogleAds.V3.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType.Unspecified;
     /// <summary>
     /// Type of the parental status.
     /// </summary>
@@ -5995,7 +5995,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -6009,7 +6009,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -6021,7 +6021,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -6035,7 +6035,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.ParentalStatusTypeEnum.Types.ParentalStatusType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -6562,7 +6562,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "radius_units" field.</summary>
     public const int RadiusUnitsFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits radiusUnits_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits radiusUnits_ = global::Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits.Unspecified;
     /// <summary>
     /// The unit of measurement of the radius. Default is KILOMETERS.
     /// </summary>
@@ -6613,7 +6613,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       int hash = 1;
       if (geoPoint_ != null) hash ^= GeoPoint.GetHashCode();
       if (radius_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(Radius);
-      if (RadiusUnits != 0) hash ^= RadiusUnits.GetHashCode();
+      if (RadiusUnits != global::Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits.Unspecified) hash ^= RadiusUnits.GetHashCode();
       if (address_ != null) hash ^= Address.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -6635,7 +6635,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (radius_ != null) {
         _single_radius_codec.WriteTagAndValue(output, Radius);
       }
-      if (RadiusUnits != 0) {
+      if (RadiusUnits != global::Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) RadiusUnits);
       }
@@ -6657,7 +6657,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (radius_ != null) {
         size += _single_radius_codec.CalculateSizeWithTag(Radius);
       }
-      if (RadiusUnits != 0) {
+      if (RadiusUnits != global::Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RadiusUnits);
       }
       if (address_ != null) {
@@ -6685,7 +6685,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Radius = other.Radius;
         }
       }
-      if (other.RadiusUnits != 0) {
+      if (other.RadiusUnits != global::Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types.ProximityRadiusUnits.Unspecified) {
         RadiusUnits = other.RadiusUnits;
       }
       if (other.address_ != null) {
@@ -7773,7 +7773,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.ContentLabelTypeEnum.Types.ContentLabelType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ContentLabelTypeEnum.Types.ContentLabelType type_ = global::Google.Ads.GoogleAds.V3.Enums.ContentLabelTypeEnum.Types.ContentLabelType.Unspecified;
     /// <summary>
     /// Content label type, required for CREATE operations.
     /// </summary>
@@ -7805,7 +7805,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ContentLabelTypeEnum.Types.ContentLabelType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -7819,7 +7819,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ContentLabelTypeEnum.Types.ContentLabelType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -7831,7 +7831,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.ContentLabelTypeEnum.Types.ContentLabelType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -7845,7 +7845,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.ContentLabelTypeEnum.Types.ContentLabelType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -8366,7 +8366,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "operand" field.</summary>
     public const int OperandFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperandEnum.Types.WebpageConditionOperand operand_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperandEnum.Types.WebpageConditionOperand operand_ = global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperandEnum.Types.WebpageConditionOperand.Unspecified;
     /// <summary>
     /// Operand of webpage targeting condition.
     /// </summary>
@@ -8380,7 +8380,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "operator" field.</summary>
     public const int OperatorFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperatorEnum.Types.WebpageConditionOperator operator_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperatorEnum.Types.WebpageConditionOperator operator_ = global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperatorEnum.Types.WebpageConditionOperator.Unspecified;
     /// <summary>
     /// Operator of webpage targeting condition.
     /// </summary>
@@ -8430,8 +8430,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Operand != 0) hash ^= Operand.GetHashCode();
-      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (Operand != global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperandEnum.Types.WebpageConditionOperand.Unspecified) hash ^= Operand.GetHashCode();
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperatorEnum.Types.WebpageConditionOperator.Unspecified) hash ^= Operator.GetHashCode();
       if (argument_ != null) hash ^= Argument.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -8446,11 +8446,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Operand != 0) {
+      if (Operand != global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperandEnum.Types.WebpageConditionOperand.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Operand);
       }
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperatorEnum.Types.WebpageConditionOperator.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Operator);
       }
@@ -8465,10 +8465,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Operand != 0) {
+      if (Operand != global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperandEnum.Types.WebpageConditionOperand.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operand);
       }
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperatorEnum.Types.WebpageConditionOperator.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
       }
       if (argument_ != null) {
@@ -8485,10 +8485,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Operand != 0) {
+      if (other.Operand != global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperandEnum.Types.WebpageConditionOperand.Unspecified) {
         Operand = other.Operand;
       }
-      if (other.Operator != 0) {
+      if (other.Operator != global::Google.Ads.GoogleAds.V3.Enums.WebpageConditionOperatorEnum.Types.WebpageConditionOperator.Unspecified) {
         Operator = other.Operator;
       }
       if (other.argument_ != null) {
@@ -8708,7 +8708,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.AppPaymentModelTypeEnum.Types.AppPaymentModelType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AppPaymentModelTypeEnum.Types.AppPaymentModelType type_ = global::Google.Ads.GoogleAds.V3.Enums.AppPaymentModelTypeEnum.Types.AppPaymentModelType.Unspecified;
     /// <summary>
     /// Type of the app payment model.
     /// </summary>
@@ -8740,7 +8740,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AppPaymentModelTypeEnum.Types.AppPaymentModelType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8754,7 +8754,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AppPaymentModelTypeEnum.Types.AppPaymentModelType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -8766,7 +8766,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AppPaymentModelTypeEnum.Types.AppPaymentModelType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -8780,7 +8780,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.AppPaymentModelTypeEnum.Types.AppPaymentModelType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -9319,7 +9319,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "radius_units" field.</summary>
     public const int RadiusUnitsFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.LocationGroupRadiusUnitsEnum.Types.LocationGroupRadiusUnits radiusUnits_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.LocationGroupRadiusUnitsEnum.Types.LocationGroupRadiusUnits radiusUnits_ = global::Google.Ads.GoogleAds.V3.Enums.LocationGroupRadiusUnitsEnum.Types.LocationGroupRadiusUnits.Unspecified;
     /// <summary>
     /// Unit of the radius, miles and meters supported currently.
     /// This is required and must be set in CREATE operations.
@@ -9358,7 +9358,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (feed_ != null) hash ^= Feed.GetHashCode();
       hash ^= geoTargetConstants_.GetHashCode();
       if (radius_ != null) hash ^= Radius.GetHashCode();
-      if (RadiusUnits != 0) hash ^= RadiusUnits.GetHashCode();
+      if (RadiusUnits != global::Google.Ads.GoogleAds.V3.Enums.LocationGroupRadiusUnitsEnum.Types.LocationGroupRadiusUnits.Unspecified) hash ^= RadiusUnits.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9379,7 +9379,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (radius_ != null) {
         _single_radius_codec.WriteTagAndValue(output, Radius);
       }
-      if (RadiusUnits != 0) {
+      if (RadiusUnits != global::Google.Ads.GoogleAds.V3.Enums.LocationGroupRadiusUnitsEnum.Types.LocationGroupRadiusUnits.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) RadiusUnits);
       }
@@ -9398,7 +9398,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (radius_ != null) {
         size += _single_radius_codec.CalculateSizeWithTag(Radius);
       }
-      if (RadiusUnits != 0) {
+      if (RadiusUnits != global::Google.Ads.GoogleAds.V3.Enums.LocationGroupRadiusUnitsEnum.Types.LocationGroupRadiusUnits.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RadiusUnits);
       }
       if (_unknownFields != null) {
@@ -9423,7 +9423,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Radius = other.Radius;
         }
       }
-      if (other.RadiusUnits != 0) {
+      if (other.RadiusUnits != global::Google.Ads.GoogleAds.V3.Enums.LocationGroupRadiusUnitsEnum.Types.LocationGroupRadiusUnits.Unspecified) {
         RadiusUnits = other.RadiusUnits;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse();
             mockGrpcClient.Setup(x => x.MutateCampaignSharedSets(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CampaignSharedSetOperation> operations = new List<CampaignSharedSetOperation>();
-            MutateCampaignSharedSetsResponse response = client.MutateCampaignSharedSets(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateCampaignSharedSetsResponse response = client.MutateCampaignSharedSets(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse();
             mockGrpcClient.Setup(x => x.MutateCampaignSharedSetsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CampaignSharedSetOperation> operations = new List<CampaignSharedSetOperation>();
-            MutateCampaignSharedSetsResponse response = await client.MutateCampaignSharedSetsAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateCampaignSharedSetsResponse response = await client.MutateCampaignSharedSetsAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

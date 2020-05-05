@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "c291cmNlcxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29v",
             "Z2xlL2FwaS9yZXNvdXJjZS5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9u",
             "cy5wcm90byLTAQoSUGFyZW50YWxTdGF0dXNWaWV3EkoKDXJlc291cmNlX25h",
-            "bWUYASABKAlCM+BBBfpBLQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL1Bh",
+            "bWUYASABKAlCM+BBA/pBLQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL1Bh",
             "cmVudGFsU3RhdHVzVmlldzpx6kFuCitnb29nbGVhZHMuZ29vZ2xlYXBpcy5j",
             "b20vUGFyZW50YWxTdGF0dXNWaWV3Ej9jdXN0b21lcnMve2N1c3RvbWVyfS9w",
             "YXJlbnRhbFN0YXR1c1ZpZXdzL3twYXJlbnRhbF9zdGF0dXNfdmlld31ChAIK",
@@ -41,8 +41,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ParentalStatusView), global::Google.Ads.GoogleAds.V3.Resources.ParentalStatusView.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ParentalStatusView), global::Google.Ads.GoogleAds.V3.Resources.ParentalStatusView.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the parental status view.
+    /// Output only. The resource name of the parental status view.
     /// Parental Status view resource names have the form:
     ///
     /// `customers/{customer_id}/parentalStatusViews/{ad_group_id}~{criterion_id}`

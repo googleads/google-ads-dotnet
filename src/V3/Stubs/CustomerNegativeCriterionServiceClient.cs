@@ -763,10 +763,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCustomerNegativeCriterion = clientHelper.BuildApiCall<GetCustomerNegativeCriterionRequest, gagvr::CustomerNegativeCriterion>(
                 GrpcClient.GetCustomerNegativeCriterionAsync, GrpcClient.GetCustomerNegativeCriterion, effectiveSettings.GetCustomerNegativeCriterionSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateCustomerNegativeCriteria = clientHelper.BuildApiCall<MutateCustomerNegativeCriteriaRequest, MutateCustomerNegativeCriteriaResponse>(
                 GrpcClient.MutateCustomerNegativeCriteriaAsync, GrpcClient.MutateCustomerNegativeCriteria, effectiveSettings.MutateCustomerNegativeCriteriaSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetCustomerNegativeCriterion);
             Modify_GetCustomerNegativeCriterionApiCall(ref _callGetCustomerNegativeCriterion);
             Modify_ApiCall(ref _callMutateCustomerNegativeCriteria);

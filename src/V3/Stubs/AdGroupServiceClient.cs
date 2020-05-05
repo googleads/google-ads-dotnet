@@ -763,10 +763,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetAdGroup = clientHelper.BuildApiCall<GetAdGroupRequest, gagvr::AdGroup>(
                 GrpcClient.GetAdGroupAsync, GrpcClient.GetAdGroup, effectiveSettings.GetAdGroupSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateAdGroups = clientHelper.BuildApiCall<MutateAdGroupsRequest, MutateAdGroupsResponse>(
                 GrpcClient.MutateAdGroupsAsync, GrpcClient.MutateAdGroups, effectiveSettings.MutateAdGroupsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetAdGroup);
             Modify_GetAdGroupApiCall(ref _callGetAdGroup);
             Modify_ApiCall(ref _callMutateAdGroups);

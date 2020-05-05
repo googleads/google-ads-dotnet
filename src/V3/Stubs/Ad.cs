@@ -101,8 +101,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.AdTypeInfosReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.FinalAppUrlReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.UrlCollectionReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AdTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.SystemManagedEntitySourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Ad), global::Google.Ads.GoogleAds.V3.Resources.Ad.Parser, new[]{ "ResourceName", "Id", "FinalUrls", "FinalAppUrls", "FinalMobileUrls", "TrackingUrlTemplate", "FinalUrlSuffix", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "UrlCollections", "Name", "SystemManagedResourceSource", "TextAd", "ExpandedTextAd", "CallOnlyAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "GmailAd", "ImageAd", "VideoAd", "ResponsiveSearchAd", "LegacyResponsiveDisplayAd", "AppAd", "LegacyAppInstallAd", "ResponsiveDisplayAd", "DisplayUploadAd", "AppEngagementAd", "ShoppingComparisonListingAd" }, new[]{ "AdData" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Ad), global::Google.Ads.GoogleAds.V3.Resources.Ad.Parser, new[]{ "ResourceName", "Id", "FinalUrls", "FinalAppUrls", "FinalMobileUrls", "TrackingUrlTemplate", "FinalUrlSuffix", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "UrlCollections", "Name", "SystemManagedResourceSource", "TextAd", "ExpandedTextAd", "CallOnlyAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "GmailAd", "ImageAd", "VideoAd", "ResponsiveSearchAd", "LegacyResponsiveDisplayAd", "AppAd", "LegacyAppInstallAd", "ResponsiveDisplayAd", "DisplayUploadAd", "AppEngagementAd", "ShoppingComparisonListingAd" }, new[]{ "AdData" }, null, null, null)
           }));
     }
     #endregion
@@ -332,6 +332,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// <summary>
     /// The list of mappings that can be used to substitute custom parameter tags
     /// in a `tracking_url_template`, `final_urls`, or `mobile_final_urls`.
+    /// For mutates, please use url custom parameter operations.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V3.Common.CustomParameter> UrlCustomParameters {
@@ -356,7 +357,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.AdTypeEnum.Types.AdType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AdTypeEnum.Types.AdType type_ = global::Google.Ads.GoogleAds.V3.Enums.AdTypeEnum.Types.AdType.Unspecified;
     /// <summary>
     /// Output only. The type of ad.
     /// </summary>
@@ -389,7 +390,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "device_preference" field.</summary>
     public const int DevicePreferenceFieldNumber = 20;
-    private global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device devicePreference_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device devicePreference_ = global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified;
     /// <summary>
     /// The device preference for the ad. You can only specify a preference for
     /// mobile devices. When this preference is set the ad will be preferred over
@@ -439,7 +440,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "system_managed_resource_source" field.</summary>
     public const int SystemManagedResourceSourceFieldNumber = 27;
-    private global::Google.Ads.GoogleAds.V3.Enums.SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource systemManagedResourceSource_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource systemManagedResourceSource_ = global::Google.Ads.GoogleAds.V3.Enums.SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.Unspecified;
     /// <summary>
     /// Output only. If this ad is system managed, then this field will indicate the source.
     /// This field is read-only.
@@ -805,12 +806,12 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (finalUrlSuffix_ != null) hash ^= FinalUrlSuffix.GetHashCode();
       hash ^= urlCustomParameters_.GetHashCode();
       if (displayUrl_ != null) hash ^= DisplayUrl.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AdTypeEnum.Types.AdType.Unspecified) hash ^= Type.GetHashCode();
       if (addedByGoogleAds_ != null) hash ^= AddedByGoogleAds.GetHashCode();
-      if (DevicePreference != 0) hash ^= DevicePreference.GetHashCode();
+      if (DevicePreference != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) hash ^= DevicePreference.GetHashCode();
       hash ^= urlCollections_.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
-      if (SystemManagedResourceSource != 0) hash ^= SystemManagedResourceSource.GetHashCode();
+      if (SystemManagedResourceSource != global::Google.Ads.GoogleAds.V3.Enums.SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.Unspecified) hash ^= SystemManagedResourceSource.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.TextAd) hash ^= TextAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.ExpandedTextAd) hash ^= ExpandedTextAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.CallOnlyAd) hash ^= CallOnlyAd.GetHashCode();
@@ -850,7 +851,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (displayUrl_ != null) {
         _single_displayUrl_codec.WriteTagAndValue(output, DisplayUrl);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AdTypeEnum.Types.AdType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Type);
       }
@@ -890,7 +891,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (addedByGoogleAds_ != null) {
         _single_addedByGoogleAds_codec.WriteTagAndValue(output, AddedByGoogleAds);
       }
-      if (DevicePreference != 0) {
+      if (DevicePreference != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         output.WriteRawTag(160, 1);
         output.WriteEnum((int) DevicePreference);
       }
@@ -914,7 +915,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteMessage(ResponsiveSearchAd);
       }
       urlCollections_.WriteTo(output, _repeated_urlCollections_codec);
-      if (SystemManagedResourceSource != 0) {
+      if (SystemManagedResourceSource != global::Google.Ads.GoogleAds.V3.Enums.SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.Unspecified) {
         output.WriteRawTag(216, 1);
         output.WriteEnum((int) SystemManagedResourceSource);
       }
@@ -981,20 +982,20 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (displayUrl_ != null) {
         size += _single_displayUrl_codec.CalculateSizeWithTag(DisplayUrl);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AdTypeEnum.Types.AdType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (addedByGoogleAds_ != null) {
         size += _single_addedByGoogleAds_codec.CalculateSizeWithTag(AddedByGoogleAds);
       }
-      if (DevicePreference != 0) {
+      if (DevicePreference != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) DevicePreference);
       }
       size += urlCollections_.CalculateSize(_repeated_urlCollections_codec);
       if (name_ != null) {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
-      if (SystemManagedResourceSource != 0) {
+      if (SystemManagedResourceSource != global::Google.Ads.GoogleAds.V3.Enums.SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) SystemManagedResourceSource);
       }
       if (adDataCase_ == AdDataOneofCase.TextAd) {
@@ -1089,7 +1090,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           DisplayUrl = other.DisplayUrl;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.AdTypeEnum.Types.AdType.Unspecified) {
         Type = other.Type;
       }
       if (other.addedByGoogleAds_ != null) {
@@ -1097,7 +1098,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           AddedByGoogleAds = other.AddedByGoogleAds;
         }
       }
-      if (other.DevicePreference != 0) {
+      if (other.DevicePreference != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         DevicePreference = other.DevicePreference;
       }
       urlCollections_.Add(other.urlCollections_);
@@ -1106,7 +1107,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Name = other.Name;
         }
       }
-      if (other.SystemManagedResourceSource != 0) {
+      if (other.SystemManagedResourceSource != global::Google.Ads.GoogleAds.V3.Enums.SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.Unspecified) {
         SystemManagedResourceSource = other.SystemManagedResourceSource;
       }
       switch (other.AdDataCase) {

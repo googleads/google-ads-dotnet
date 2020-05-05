@@ -1071,16 +1071,16 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetKeywordPlan = clientHelper.BuildApiCall<GetKeywordPlanRequest, gagvr::KeywordPlan>(
                 GrpcClient.GetKeywordPlanAsync, GrpcClient.GetKeywordPlan, effectiveSettings.GetKeywordPlanSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateKeywordPlans = clientHelper.BuildApiCall<MutateKeywordPlansRequest, MutateKeywordPlansResponse>(
                 GrpcClient.MutateKeywordPlansAsync, GrpcClient.MutateKeywordPlans, effectiveSettings.MutateKeywordPlansSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callGenerateForecastMetrics = clientHelper.BuildApiCall<GenerateForecastMetricsRequest, GenerateForecastMetricsResponse>(
                 GrpcClient.GenerateForecastMetricsAsync, GrpcClient.GenerateForecastMetrics, effectiveSettings.GenerateForecastMetricsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"keyword_plan={request.KeywordPlan}"));
+                .WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
             _callGenerateHistoricalMetrics = clientHelper.BuildApiCall<GenerateHistoricalMetricsRequest, GenerateHistoricalMetricsResponse>(
                 GrpcClient.GenerateHistoricalMetricsAsync, GrpcClient.GenerateHistoricalMetrics, effectiveSettings.GenerateHistoricalMetricsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"keyword_plan={request.KeywordPlan}"));
+                .WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
             Modify_ApiCall(ref _callGetKeywordPlan);
             Modify_GetKeywordPlanApiCall(ref _callGetKeywordPlan);
             Modify_ApiCall(ref _callMutateKeywordPlans);

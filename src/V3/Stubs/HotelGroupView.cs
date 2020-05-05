@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Y2VzGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUv",
             "YXBpL3Jlc291cmNlLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnBy",
             "b3RvIr8BCg5Ib3RlbEdyb3VwVmlldxJGCg1yZXNvdXJjZV9uYW1lGAEgASgJ",
-            "Qi/gQQX6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Ib3RlbEdyb3Vw",
+            "Qi/gQQP6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Ib3RlbEdyb3Vw",
             "Vmlldzpl6kFiCidnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vSG90ZWxHcm91",
             "cFZpZXcSN2N1c3RvbWVycy97Y3VzdG9tZXJ9L2hvdGVsR3JvdXBWaWV3cy97",
             "aG90ZWxfZ3JvdXBfdmlld31CgAIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
@@ -41,8 +41,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.HotelGroupView), global::Google.Ads.GoogleAds.V3.Resources.HotelGroupView.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.HotelGroupView), global::Google.Ads.GoogleAds.V3.Resources.HotelGroupView.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the hotel group view.
+    /// Output only. The resource name of the hotel group view.
     /// Hotel Group view resource names have the form:
     ///
     /// `customers/{customer_id}/hotelGroupViews/{ad_group_id}~{criterion_id}`

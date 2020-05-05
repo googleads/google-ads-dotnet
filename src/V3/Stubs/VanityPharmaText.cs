@@ -46,8 +46,8 @@ namespace Google.Ads.GoogleAds.V3.Enums {
             "QWRzOjpHb29nbGVBZHM6OlYzOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.VanityPharmaTextEnum), global::Google.Ads.GoogleAds.V3.Enums.VanityPharmaTextEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.VanityPharmaTextEnum.Types.VanityPharmaText) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.VanityPharmaTextEnum), global::Google.Ads.GoogleAds.V3.Enums.VanityPharmaTextEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.VanityPharmaTextEnum.Types.VanityPharmaText) }, null, null)
           }));
     }
     #endregion

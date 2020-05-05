@@ -29,51 +29,52 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "My5zZXJ2aWNlcxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjMvY29tbW9uL2tl",
             "eXdvcmRfcGxhbl9jb21tb24ucHJvdG8aOGdvb2dsZS9hZHMvZ29vZ2xlYWRz",
             "L3YzL2VudW1zL2tleXdvcmRfcGxhbl9uZXR3b3JrLnByb3RvGhxnb29nbGUv",
-            "YXBpL2Fubm90YXRpb25zLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBl",
-            "cnMucHJvdG8aF2dvb2dsZS9hcGkvY2xpZW50LnByb3RvIukDChtHZW5lcmF0",
-            "ZUtleXdvcmRJZGVhc1JlcXVlc3QSEwoLY3VzdG9tZXJfaWQYASABKAkSLgoI",
-            "bGFuZ3VhZ2UYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "OgoUZ2VvX3RhcmdldF9jb25zdGFudHMYCCADKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSZgoUa2V5d29yZF9wbGFuX25ldHdvcmsYCSABKA4y",
-            "SC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lbnVtcy5LZXl3b3JkUGxhbk5l",
-            "dHdvcmtFbnVtLktleXdvcmRQbGFuTmV0d29yaxJTChRrZXl3b3JkX2FuZF91",
-            "cmxfc2VlZBgCIAEoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZp",
-            "Y2VzLktleXdvcmRBbmRVcmxTZWVkSAASRQoMa2V5d29yZF9zZWVkGAMgASgL",
-            "Mi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuS2V5d29yZFNl",
-            "ZWRIABI9Cgh1cmxfc2VlZBgFIAEoCzIpLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYzLnNlcnZpY2VzLlVybFNlZWRIAEIGCgRzZWVkIm4KEUtleXdvcmRBbmRV",
-            "cmxTZWVkEikKA3VybBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
-            "YWx1ZRIuCghrZXl3b3JkcxgCIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZSI9CgtLZXl3b3JkU2VlZBIuCghrZXl3b3JkcxgBIAMoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSI0CgdVcmxTZWVkEikKA3VybBgB",
-            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJrChtHZW5lcmF0",
-            "ZUtleXdvcmRJZGVhUmVzcG9uc2USTAoHcmVzdWx0cxgBIAMoCzI7Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzLkdlbmVyYXRlS2V5d29yZElk",
-            "ZWFSZXN1bHQiowEKGUdlbmVyYXRlS2V5d29yZElkZWFSZXN1bHQSKgoEdGV4",
-            "dBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJaChRrZXl3",
-            "b3JkX2lkZWFfbWV0cmljcxgDIAEoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYzLmNvbW1vbi5LZXl3b3JkUGxhbkhpc3RvcmljYWxNZXRyaWNzMosCChZL",
-            "ZXl3b3JkUGxhbklkZWFTZXJ2aWNlEtMBChRHZW5lcmF0ZUtleXdvcmRJZGVh",
-            "cxI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzLkdlbmVyYXRl",
-            "S2V5d29yZElkZWFzUmVxdWVzdBo9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
-            "LnNlcnZpY2VzLkdlbmVyYXRlS2V5d29yZElkZWFSZXNwb25zZSI9gtPkkwI3",
-            "IjIvdjMvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfTpnZW5lcmF0ZUtleXdv",
-            "cmRJZGVhczoBKhobykEYZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tQoICCiRj",
-            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXNCG0tleXdvcmRQ",
-            "bGFuSWRlYVNlcnZpY2VQcm90b1ABWkhnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
-            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjMvc2VydmljZXM7c2Vy",
-            "dmljZXOiAgNHQUGqAiBHb29nbGUuQWRzLkdvb2dsZUFkcy5WMy5TZXJ2aWNl",
-            "c8oCIEdvb2dsZVxBZHNcR29vZ2xlQWRzXFYzXFNlcnZpY2Vz6gIkR29vZ2xl",
-            "OjpBZHM6Okdvb2dsZUFkczo6VjM6OlNlcnZpY2VzYgZwcm90bzM="));
+            "YXBpL2Fubm90YXRpb25zLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2",
+            "aW9yLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aF2dv",
+            "b2dsZS9hcGkvY2xpZW50LnByb3RvIu4DChtHZW5lcmF0ZUtleXdvcmRJZGVh",
+            "c1JlcXVlc3QSEwoLY3VzdG9tZXJfaWQYASABKAkSMwoIbGFuZ3VhZ2UYByAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAhI6ChRnZW9f",
+            "dGFyZ2V0X2NvbnN0YW50cxgIIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
+            "bmdWYWx1ZRJmChRrZXl3b3JkX3BsYW5fbmV0d29yaxgJIAEoDjJILmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYzLmVudW1zLktleXdvcmRQbGFuTmV0d29ya0Vu",
+            "dW0uS2V5d29yZFBsYW5OZXR3b3JrElMKFGtleXdvcmRfYW5kX3VybF9zZWVk",
+            "GAIgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuS2V5",
+            "d29yZEFuZFVybFNlZWRIABJFCgxrZXl3b3JkX3NlZWQYAyABKAsyLS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlcy5LZXl3b3JkU2VlZEgAEj0K",
+            "CHVybF9zZWVkGAUgASgLMikuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2Vy",
+            "dmljZXMuVXJsU2VlZEgAQgYKBHNlZWQibgoRS2V5d29yZEFuZFVybFNlZWQS",
+            "KQoDdXJsGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEi4K",
+            "CGtleXdvcmRzGAIgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "Ij0KC0tleXdvcmRTZWVkEi4KCGtleXdvcmRzGAEgAygLMhwuZ29vZ2xlLnBy",
+            "b3RvYnVmLlN0cmluZ1ZhbHVlIjQKB1VybFNlZWQSKQoDdXJsGAEgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlImsKG0dlbmVyYXRlS2V5d29y",
+            "ZElkZWFSZXNwb25zZRJMCgdyZXN1bHRzGAEgAygLMjsuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjMuc2VydmljZXMuR2VuZXJhdGVLZXl3b3JkSWRlYVJlc3Vs",
+            "dCKjAQoZR2VuZXJhdGVLZXl3b3JkSWRlYVJlc3VsdBIqCgR0ZXh0GAIgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEloKFGtleXdvcmRfaWRl",
+            "YV9tZXRyaWNzGAMgASgLMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuY29t",
+            "bW9uLktleXdvcmRQbGFuSGlzdG9yaWNhbE1ldHJpY3MyiwIKFktleXdvcmRQ",
+            "bGFuSWRlYVNlcnZpY2US0wEKFEdlbmVyYXRlS2V5d29yZElkZWFzEj0uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuR2VuZXJhdGVLZXl3b3Jk",
+            "SWRlYXNSZXF1ZXN0Gj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2Vydmlj",
+            "ZXMuR2VuZXJhdGVLZXl3b3JkSWRlYVJlc3BvbnNlIj2C0+STAjciMi92My9j",
+            "dXN0b21lcnMve2N1c3RvbWVyX2lkPSp9OmdlbmVyYXRlS2V5d29yZElkZWFz",
+            "OgEqGhvKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb21CggIKJGNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlc0IbS2V5d29yZFBsYW5JZGVh",
+            "U2VydmljZVByb3RvUAFaSGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
+            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92My9zZXJ2aWNlcztzZXJ2aWNlc6IC",
+            "A0dBQaoCIEdvb2dsZS5BZHMuR29vZ2xlQWRzLlYzLlNlcnZpY2VzygIgR29v",
+            "Z2xlXEFkc1xHb29nbGVBZHNcVjNcU2VydmljZXPqAiRHb29nbGU6OkFkczo6",
+            "R29vZ2xlQWRzOjpWMzo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.KeywordPlanCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeasRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeasRequest.Parser, new[]{ "CustomerId", "Language", "GeoTargetConstants", "KeywordPlanNetwork", "KeywordAndUrlSeed", "KeywordSeed", "UrlSeed" }, new[]{ "Seed" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordAndUrlSeed), global::Google.Ads.GoogleAds.V3.Services.KeywordAndUrlSeed.Parser, new[]{ "Url", "Keywords" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordSeed), global::Google.Ads.GoogleAds.V3.Services.KeywordSeed.Parser, new[]{ "Keywords" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UrlSeed), global::Google.Ads.GoogleAds.V3.Services.UrlSeed.Parser, new[]{ "Url" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResponse.Parser, new[]{ "Results" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResult), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResult.Parser, new[]{ "Text", "KeywordIdeaMetrics" }, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.KeywordPlanCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeasRequest), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeasRequest.Parser, new[]{ "CustomerId", "Language", "GeoTargetConstants", "KeywordPlanNetwork", "KeywordAndUrlSeed", "KeywordSeed", "UrlSeed" }, new[]{ "Seed" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordAndUrlSeed), global::Google.Ads.GoogleAds.V3.Services.KeywordAndUrlSeed.Parser, new[]{ "Url", "Keywords" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.KeywordSeed), global::Google.Ads.GoogleAds.V3.Services.KeywordSeed.Parser, new[]{ "Keywords" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.UrlSeed), global::Google.Ads.GoogleAds.V3.Services.UrlSeed.Parser, new[]{ "Url" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResponse), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResponse.Parser, new[]{ "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResult), global::Google.Ads.GoogleAds.V3.Services.GenerateKeywordIdeaResult.Parser, new[]{ "Text", "KeywordIdeaMetrics" }, null, null, null, null)
           }));
     }
     #endregion
@@ -151,7 +152,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
     private static readonly pb::FieldCodec<string> _single_language_codec = pb::FieldCodec.ForClassWrapper<string>(58);
     private string language_;
     /// <summary>
-    /// The resource name of the language to target.
+    /// Required. The resource name of the language to target.
     /// Required
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -179,7 +180,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "keyword_plan_network" field.</summary>
     public const int KeywordPlanNetworkFieldNumber = 9;
-    private global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork_ = global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified;
     /// <summary>
     /// Targeting network.
     /// </summary>
@@ -284,7 +285,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
       if (language_ != null) hash ^= Language.GetHashCode();
       hash ^= geoTargetConstants_.GetHashCode();
-      if (KeywordPlanNetwork != 0) hash ^= KeywordPlanNetwork.GetHashCode();
+      if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) hash ^= KeywordPlanNetwork.GetHashCode();
       if (seedCase_ == SeedOneofCase.KeywordAndUrlSeed) hash ^= KeywordAndUrlSeed.GetHashCode();
       if (seedCase_ == SeedOneofCase.KeywordSeed) hash ^= KeywordSeed.GetHashCode();
       if (seedCase_ == SeedOneofCase.UrlSeed) hash ^= UrlSeed.GetHashCode();
@@ -322,7 +323,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
         _single_language_codec.WriteTagAndValue(output, Language);
       }
       geoTargetConstants_.WriteTo(output, _repeated_geoTargetConstants_codec);
-      if (KeywordPlanNetwork != 0) {
+      if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         output.WriteRawTag(72);
         output.WriteEnum((int) KeywordPlanNetwork);
       }
@@ -341,7 +342,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
         size += _single_language_codec.CalculateSizeWithTag(Language);
       }
       size += geoTargetConstants_.CalculateSize(_repeated_geoTargetConstants_codec);
-      if (KeywordPlanNetwork != 0) {
+      if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanNetwork);
       }
       if (seedCase_ == SeedOneofCase.KeywordAndUrlSeed) {
@@ -373,7 +374,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
         }
       }
       geoTargetConstants_.Add(other.geoTargetConstants_);
-      if (other.KeywordPlanNetwork != 0) {
+      if (other.KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         KeywordPlanNetwork = other.KeywordPlanNetwork;
       }
       switch (other.SeedCase) {

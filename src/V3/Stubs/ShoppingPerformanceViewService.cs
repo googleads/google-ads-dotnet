@@ -29,26 +29,27 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "Z2xlYWRzLnYzLnNlcnZpY2VzGkFnb29nbGUvYWRzL2dvb2dsZWFkcy92My9y",
             "ZXNvdXJjZXMvc2hvcHBpbmdfcGVyZm9ybWFuY2Vfdmlldy5wcm90bxocZ29v",
             "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQu",
-            "cHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8iPwohR2V0",
-            "U2hvcHBpbmdQZXJmb3JtYW5jZVZpZXdSZXF1ZXN0EhoKDXJlc291cmNlX25h",
-            "bWUYASABKAlCA+BBAjKuAgoeU2hvcHBpbmdQZXJmb3JtYW5jZVZpZXdTZXJ2",
-            "aWNlEu4BChpHZXRTaG9wcGluZ1BlcmZvcm1hbmNlVmlldxJDLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzLkdldFNob3BwaW5nUGVyZm9ybWFu",
-            "Y2VWaWV3UmVxdWVzdBo6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnJlc291",
-            "cmNlcy5TaG9wcGluZ1BlcmZvcm1hbmNlVmlldyJPgtPkkwI5EjcvdjMve3Jl",
-            "c291cmNlX25hbWU9Y3VzdG9tZXJzLyovc2hvcHBpbmdQZXJmb3JtYW5jZVZp",
-            "ZXd92kENcmVzb3VyY2VfbmFtZRobykEYZ29vZ2xlYWRzLmdvb2dsZWFwaXMu",
-            "Y29tQooCCiRjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXNC",
-            "I1Nob3BwaW5nUGVyZm9ybWFuY2VWaWV3U2VydmljZVByb3RvUAFaSGdvb2ds",
-            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
-            "cy92My9zZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIEdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYzLlNlcnZpY2VzygIgR29vZ2xlXEFkc1xHb29nbGVBZHNcVjNc",
-            "U2VydmljZXPqAiRHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6U2Vydmlj",
-            "ZXNiBnByb3RvMw=="));
+            "cHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2ds",
+            "ZS9hcGkvcmVzb3VyY2UucHJvdG8idAohR2V0U2hvcHBpbmdQZXJmb3JtYW5j",
+            "ZVZpZXdSZXF1ZXN0Ek8KDXJlc291cmNlX25hbWUYASABKAlCOOBBAvpBMgow",
+            "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL1Nob3BwaW5nUGVyZm9ybWFuY2VW",
+            "aWV3Mq4CCh5TaG9wcGluZ1BlcmZvcm1hbmNlVmlld1NlcnZpY2US7gEKGkdl",
+            "dFNob3BwaW5nUGVyZm9ybWFuY2VWaWV3EkMuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjMuc2VydmljZXMuR2V0U2hvcHBpbmdQZXJmb3JtYW5jZVZpZXdSZXF1",
+            "ZXN0GjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMucmVzb3VyY2VzLlNob3Bw",
+            "aW5nUGVyZm9ybWFuY2VWaWV3Ik+C0+STAjkSNy92My97cmVzb3VyY2VfbmFt",
+            "ZT1jdXN0b21lcnMvKi9zaG9wcGluZ1BlcmZvcm1hbmNlVmlld33aQQ1yZXNv",
+            "dXJjZV9uYW1lGhvKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb21CigIKJGNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlc0IjU2hvcHBpbmdQ",
+            "ZXJmb3JtYW5jZVZpZXdTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YzL3NlcnZp",
+            "Y2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMu",
+            "U2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWM1xTZXJ2aWNlc+oC",
+            "JEdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.ShoppingPerformanceViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetShoppingPerformanceViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetShoppingPerformanceViewRequest.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Resources.ShoppingPerformanceViewReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetShoppingPerformanceViewRequest), global::Google.Ads.GoogleAds.V3.Services.GetShoppingPerformanceViewRequest.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion

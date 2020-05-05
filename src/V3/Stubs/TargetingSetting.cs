@@ -50,10 +50,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetingSetting), global::Google.Ads.GoogleAds.V3.Common.TargetingSetting.Parser, new[]{ "TargetRestrictions", "TargetRestrictionOperations" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetRestriction), global::Google.Ads.GoogleAds.V3.Common.TargetRestriction.Parser, new[]{ "TargetingDimension", "BidOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation), global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Parser, new[]{ "Operator", "Value" }, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Types.Operator) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetingSetting), global::Google.Ads.GoogleAds.V3.Common.TargetingSetting.Parser, new[]{ "TargetRestrictions", "TargetRestrictionOperations" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetRestriction), global::Google.Ads.GoogleAds.V3.Common.TargetRestriction.Parser, new[]{ "TargetingDimension", "BidOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation), global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Parser, new[]{ "Operator", "Value" }, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Types.Operator) }, null, null)
           }));
     }
     #endregion
@@ -256,7 +256,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "targeting_dimension" field.</summary>
     public const int TargetingDimensionFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension targetingDimension_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension targetingDimension_ = global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified;
     /// <summary>
     /// The targeting dimension that these settings apply to.
     /// </summary>
@@ -311,7 +311,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (TargetingDimension != 0) hash ^= TargetingDimension.GetHashCode();
+      if (TargetingDimension != global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) hash ^= TargetingDimension.GetHashCode();
       if (bidOnly_ != null) hash ^= BidOnly.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -326,7 +326,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (TargetingDimension != 0) {
+      if (TargetingDimension != global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) TargetingDimension);
       }
@@ -341,7 +341,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (TargetingDimension != 0) {
+      if (TargetingDimension != global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TargetingDimension);
       }
       if (bidOnly_ != null) {
@@ -358,7 +358,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.TargetingDimension != 0) {
+      if (other.TargetingDimension != global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) {
         TargetingDimension = other.TargetingDimension;
       }
       if (other.bidOnly_ != null) {
@@ -434,7 +434,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "operator" field.</summary>
     public const int OperatorFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Types.Operator operator_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Types.Operator operator_ = global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Types.Operator.Unspecified;
     /// <summary>
     /// Type of list operation to perform.
     /// </summary>
@@ -481,7 +481,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Operator != 0) hash ^= Operator.GetHashCode();
+      if (Operator != global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Types.Operator.Unspecified) hash ^= Operator.GetHashCode();
       if (value_ != null) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -496,7 +496,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Types.Operator.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Operator);
       }
@@ -512,7 +512,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Operator != 0) {
+      if (Operator != global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Types.Operator.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operator);
       }
       if (value_ != null) {
@@ -529,7 +529,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Operator != 0) {
+      if (other.Operator != global::Google.Ads.GoogleAds.V3.Common.TargetRestrictionOperation.Types.Operator.Unspecified) {
         Operator = other.Operator;
       }
       if (other.value_ != null) {

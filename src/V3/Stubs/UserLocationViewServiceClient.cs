@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetUserLocationView = clientHelper.BuildApiCall<GetUserLocationViewRequest, gagvr::UserLocationView>(
                 GrpcClient.GetUserLocationViewAsync, GrpcClient.GetUserLocationView, effectiveSettings.GetUserLocationViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetUserLocationView);
             Modify_GetUserLocationViewApiCall(ref _callGetUserLocationView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

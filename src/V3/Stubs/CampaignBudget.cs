@@ -72,8 +72,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignBudget), global::Google.Ads.GoogleAds.V3.Resources.CampaignBudget.Parser, new[]{ "ResourceName", "Id", "Name", "AmountMicros", "TotalAmountMicros", "Status", "DeliveryMethod", "ExplicitlyShared", "ReferenceCount", "HasRecommendedBudget", "RecommendedBudgetAmountMicros", "Period", "RecommendedBudgetEstimatedChangeWeeklyClicks", "RecommendedBudgetEstimatedChangeWeeklyCostMicros", "RecommendedBudgetEstimatedChangeWeeklyInteractions", "RecommendedBudgetEstimatedChangeWeeklyViews", "Type" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignBudget), global::Google.Ads.GoogleAds.V3.Resources.CampaignBudget.Parser, new[]{ "ResourceName", "Id", "Name", "AmountMicros", "TotalAmountMicros", "Status", "DeliveryMethod", "ExplicitlyShared", "ReferenceCount", "HasRecommendedBudget", "RecommendedBudgetAmountMicros", "Period", "RecommendedBudgetEstimatedChangeWeeklyClicks", "RecommendedBudgetEstimatedChangeWeeklyCostMicros", "RecommendedBudgetEstimatedChangeWeeklyInteractions", "RecommendedBudgetEstimatedChangeWeeklyViews", "Type" }, null, null, null, null)
           }));
     }
     #endregion
@@ -233,7 +233,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusEnum.Types.BudgetStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusEnum.Types.BudgetStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusEnum.Types.BudgetStatus.Unspecified;
     /// <summary>
     /// Output only. The status of this campaign budget. This field is read-only.
     /// </summary>
@@ -247,7 +247,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "delivery_method" field.</summary>
     public const int DeliveryMethodFieldNumber = 7;
-    private global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod deliveryMethod_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod deliveryMethod_ = global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Unspecified;
     /// <summary>
     /// The delivery method that determines the rate at which the campaign budget
     /// is spent.
@@ -351,7 +351,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "period" field.</summary>
     public const int PeriodFieldNumber = 13;
-    private global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod period_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod period_ = global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod.Unspecified;
     /// <summary>
     /// Immutable. Period over which to spend the budget. Defaults to DAILY if not specified.
     /// </summary>
@@ -439,7 +439,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 18;
-    private global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeEnum.Types.BudgetType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeEnum.Types.BudgetType type_ = global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeEnum.Types.BudgetType.Unspecified;
     /// <summary>
     /// Immutable. The type of the campaign budget.
     /// </summary>
@@ -492,18 +492,18 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) hash ^= Name.GetHashCode();
       if (amountMicros_ != null) hash ^= AmountMicros.GetHashCode();
       if (totalAmountMicros_ != null) hash ^= TotalAmountMicros.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
-      if (DeliveryMethod != 0) hash ^= DeliveryMethod.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusEnum.Types.BudgetStatus.Unspecified) hash ^= Status.GetHashCode();
+      if (DeliveryMethod != global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Unspecified) hash ^= DeliveryMethod.GetHashCode();
       if (explicitlyShared_ != null) hash ^= ExplicitlyShared.GetHashCode();
       if (referenceCount_ != null) hash ^= ReferenceCount.GetHashCode();
       if (hasRecommendedBudget_ != null) hash ^= HasRecommendedBudget.GetHashCode();
       if (recommendedBudgetAmountMicros_ != null) hash ^= RecommendedBudgetAmountMicros.GetHashCode();
-      if (Period != 0) hash ^= Period.GetHashCode();
+      if (Period != global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod.Unspecified) hash ^= Period.GetHashCode();
       if (recommendedBudgetEstimatedChangeWeeklyClicks_ != null) hash ^= RecommendedBudgetEstimatedChangeWeeklyClicks.GetHashCode();
       if (recommendedBudgetEstimatedChangeWeeklyCostMicros_ != null) hash ^= RecommendedBudgetEstimatedChangeWeeklyCostMicros.GetHashCode();
       if (recommendedBudgetEstimatedChangeWeeklyInteractions_ != null) hash ^= RecommendedBudgetEstimatedChangeWeeklyInteractions.GetHashCode();
       if (recommendedBudgetEstimatedChangeWeeklyViews_ != null) hash ^= RecommendedBudgetEstimatedChangeWeeklyViews.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeEnum.Types.BudgetType.Unspecified) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -530,11 +530,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (amountMicros_ != null) {
         _single_amountMicros_codec.WriteTagAndValue(output, AmountMicros);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusEnum.Types.BudgetStatus.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Status);
       }
-      if (DeliveryMethod != 0) {
+      if (DeliveryMethod != global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Unspecified) {
         output.WriteRawTag(56);
         output.WriteEnum((int) DeliveryMethod);
       }
@@ -553,7 +553,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (recommendedBudgetAmountMicros_ != null) {
         _single_recommendedBudgetAmountMicros_codec.WriteTagAndValue(output, RecommendedBudgetAmountMicros);
       }
-      if (Period != 0) {
+      if (Period != global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod.Unspecified) {
         output.WriteRawTag(104);
         output.WriteEnum((int) Period);
       }
@@ -569,7 +569,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (recommendedBudgetEstimatedChangeWeeklyViews_ != null) {
         _single_recommendedBudgetEstimatedChangeWeeklyViews_codec.WriteTagAndValue(output, RecommendedBudgetEstimatedChangeWeeklyViews);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeEnum.Types.BudgetType.Unspecified) {
         output.WriteRawTag(144, 1);
         output.WriteEnum((int) Type);
       }
@@ -596,10 +596,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (totalAmountMicros_ != null) {
         size += _single_totalAmountMicros_codec.CalculateSizeWithTag(TotalAmountMicros);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusEnum.Types.BudgetStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
-      if (DeliveryMethod != 0) {
+      if (DeliveryMethod != global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DeliveryMethod);
       }
       if (explicitlyShared_ != null) {
@@ -614,7 +614,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (recommendedBudgetAmountMicros_ != null) {
         size += _single_recommendedBudgetAmountMicros_codec.CalculateSizeWithTag(RecommendedBudgetAmountMicros);
       }
-      if (Period != 0) {
+      if (Period != global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Period);
       }
       if (recommendedBudgetEstimatedChangeWeeklyClicks_ != null) {
@@ -629,7 +629,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (recommendedBudgetEstimatedChangeWeeklyViews_ != null) {
         size += _single_recommendedBudgetEstimatedChangeWeeklyViews_codec.CalculateSizeWithTag(RecommendedBudgetEstimatedChangeWeeklyViews);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeEnum.Types.BudgetType.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -666,10 +666,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           TotalAmountMicros = other.TotalAmountMicros;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusEnum.Types.BudgetStatus.Unspecified) {
         Status = other.Status;
       }
-      if (other.DeliveryMethod != 0) {
+      if (other.DeliveryMethod != global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Unspecified) {
         DeliveryMethod = other.DeliveryMethod;
       }
       if (other.explicitlyShared_ != null) {
@@ -692,7 +692,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           RecommendedBudgetAmountMicros = other.RecommendedBudgetAmountMicros;
         }
       }
-      if (other.Period != 0) {
+      if (other.Period != global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod.Unspecified) {
         Period = other.Period;
       }
       if (other.recommendedBudgetEstimatedChangeWeeklyClicks_ != null) {
@@ -715,7 +715,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           RecommendedBudgetEstimatedChangeWeeklyViews = other.RecommendedBudgetEstimatedChangeWeeklyViews;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeEnum.Types.BudgetType.Unspecified) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

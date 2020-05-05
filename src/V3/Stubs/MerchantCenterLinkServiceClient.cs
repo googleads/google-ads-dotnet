@@ -797,13 +797,13 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callListMerchantCenterLinks = clientHelper.BuildApiCall<ListMerchantCenterLinksRequest, ListMerchantCenterLinksResponse>(
                 GrpcClient.ListMerchantCenterLinksAsync, GrpcClient.ListMerchantCenterLinks, effectiveSettings.ListMerchantCenterLinksSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callGetMerchantCenterLink = clientHelper.BuildApiCall<GetMerchantCenterLinkRequest, gagvr::MerchantCenterLink>(
                 GrpcClient.GetMerchantCenterLinkAsync, GrpcClient.GetMerchantCenterLink, effectiveSettings.GetMerchantCenterLinkSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateMerchantCenterLink = clientHelper.BuildApiCall<MutateMerchantCenterLinkRequest, MutateMerchantCenterLinkResponse>(
                 GrpcClient.MutateMerchantCenterLinkAsync, GrpcClient.MutateMerchantCenterLink, effectiveSettings.MutateMerchantCenterLinkSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callListMerchantCenterLinks);
             Modify_ListMerchantCenterLinksApiCall(ref _callListMerchantCenterLinks);
             Modify_ApiCall(ref _callGetMerchantCenterLink);

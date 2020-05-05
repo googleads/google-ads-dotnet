@@ -66,8 +66,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.BidModifierSourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupBidModifier), global::Google.Ads.GoogleAds.V3.Resources.AdGroupBidModifier.Parser, new[]{ "ResourceName", "AdGroup", "CriterionId", "BidModifier", "BaseAdGroup", "BidModifierSource", "HotelDateSelectionType", "HotelAdvanceBookingWindow", "HotelLengthOfStay", "HotelCheckInDay", "Device", "PreferredContent" }, new[]{ "Criterion" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupBidModifier), global::Google.Ads.GoogleAds.V3.Resources.AdGroupBidModifier.Parser, new[]{ "ResourceName", "AdGroup", "CriterionId", "BidModifier", "BaseAdGroup", "BidModifierSource", "HotelDateSelectionType", "HotelAdvanceBookingWindow", "HotelLengthOfStay", "HotelCheckInDay", "Device", "PreferredContent" }, new[]{ "Criterion" }, null, null, null)
           }));
     }
     #endregion
@@ -228,7 +228,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "bid_modifier_source" field.</summary>
     public const int BidModifierSourceFieldNumber = 10;
-    private global::Google.Ads.GoogleAds.V3.Enums.BidModifierSourceEnum.Types.BidModifierSource bidModifierSource_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BidModifierSourceEnum.Types.BidModifierSource bidModifierSource_ = global::Google.Ads.GoogleAds.V3.Enums.BidModifierSourceEnum.Types.BidModifierSource.Unspecified;
     /// <summary>
     /// Output only. Bid modifier source.
     /// </summary>
@@ -384,7 +384,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (criterionId_ != null) hash ^= CriterionId.GetHashCode();
       if (bidModifier_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(BidModifier);
       if (baseAdGroup_ != null) hash ^= BaseAdGroup.GetHashCode();
-      if (BidModifierSource != 0) hash ^= BidModifierSource.GetHashCode();
+      if (BidModifierSource != global::Google.Ads.GoogleAds.V3.Enums.BidModifierSourceEnum.Types.BidModifierSource.Unspecified) hash ^= BidModifierSource.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.HotelDateSelectionType) hash ^= HotelDateSelectionType.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.HotelAdvanceBookingWindow) hash ^= HotelAdvanceBookingWindow.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.HotelLengthOfStay) hash ^= HotelLengthOfStay.GetHashCode();
@@ -437,7 +437,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (baseAdGroup_ != null) {
         _single_baseAdGroup_codec.WriteTagAndValue(output, BaseAdGroup);
       }
-      if (BidModifierSource != 0) {
+      if (BidModifierSource != global::Google.Ads.GoogleAds.V3.Enums.BidModifierSourceEnum.Types.BidModifierSource.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) BidModifierSource);
       }
@@ -472,7 +472,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (baseAdGroup_ != null) {
         size += _single_baseAdGroup_codec.CalculateSizeWithTag(BaseAdGroup);
       }
-      if (BidModifierSource != 0) {
+      if (BidModifierSource != global::Google.Ads.GoogleAds.V3.Enums.BidModifierSourceEnum.Types.BidModifierSource.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) BidModifierSource);
       }
       if (criterionCase_ == CriterionOneofCase.HotelDateSelectionType) {
@@ -527,7 +527,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           BaseAdGroup = other.BaseAdGroup;
         }
       }
-      if (other.BidModifierSource != 0) {
+      if (other.BidModifierSource != global::Google.Ads.GoogleAds.V3.Enums.BidModifierSourceEnum.Types.BidModifierSource.Unspecified) {
         BidModifierSource = other.BidModifierSource;
       }
       switch (other.CriterionCase) {

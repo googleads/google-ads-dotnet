@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -169,6 +169,7 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operation = new CustomerOperation(),
+                ValidateOnly = false,
             };
             MutateCustomerResponse expectedResponse = new MutateCustomerResponse();
             mockGrpcClient.Setup(x => x.MutateCustomer(expectedRequest, It.IsAny<CallOptions>()))
@@ -176,7 +177,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             CustomerOperation operation = new CustomerOperation();
-            MutateCustomerResponse response = client.MutateCustomer(customerId, operation);
+            bool validateOnly = false;
+            MutateCustomerResponse response = client.MutateCustomer(customerId, operation, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -189,6 +191,7 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operation = new CustomerOperation(),
+                ValidateOnly = false,
             };
             MutateCustomerResponse expectedResponse = new MutateCustomerResponse();
             mockGrpcClient.Setup(x => x.MutateCustomerAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -196,7 +199,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             CustomerOperation operation = new CustomerOperation();
-            MutateCustomerResponse response = await client.MutateCustomerAsync(customerId, operation);
+            bool validateOnly = false;
+            MutateCustomerResponse response = await client.MutateCustomerAsync(customerId, operation, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -327,6 +331,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 CustomerClient = new Customer(),
+                EmailAddress = null,
+                AccessRole = AccessRoleEnum.Types.AccessRole.Unspecified,
             };
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
@@ -337,7 +343,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             Customer customerClient = new Customer();
-            CreateCustomerClientResponse response = client.CreateCustomerClient(customerId, customerClient);
+            string emailAddress = null;
+            AccessRoleEnum.Types.AccessRole accessRole = AccessRoleEnum.Types.AccessRole.Unspecified;
+            CreateCustomerClientResponse response = client.CreateCustomerClient(customerId, customerClient, emailAddress, accessRole);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -350,6 +358,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 CustomerClient = new Customer(),
+                EmailAddress = null,
+                AccessRole = AccessRoleEnum.Types.AccessRole.Unspecified,
             };
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
@@ -360,7 +370,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             Customer customerClient = new Customer();
-            CreateCustomerClientResponse response = await client.CreateCustomerClientAsync(customerId, customerClient);
+            string emailAddress = null;
+            AccessRoleEnum.Types.AccessRole accessRole = AccessRoleEnum.Types.AccessRole.Unspecified;
+            CreateCustomerClientResponse response = await client.CreateCustomerClientAsync(customerId, customerClient, emailAddress, accessRole);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

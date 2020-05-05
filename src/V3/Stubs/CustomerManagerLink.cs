@@ -48,8 +48,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b29nbGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.ManagerLinkStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CustomerManagerLink), global::Google.Ads.GoogleAds.V3.Resources.CustomerManagerLink.Parser, new[]{ "ResourceName", "ManagerCustomer", "ManagerLinkId", "Status" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CustomerManagerLink), global::Google.Ads.GoogleAds.V3.Resources.CustomerManagerLink.Parser, new[]{ "ResourceName", "ManagerCustomer", "ManagerLinkId", "Status" }, null, null, null, null)
           }));
     }
     #endregion
@@ -146,7 +146,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.ManagerLinkStatusEnum.Types.ManagerLinkStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ManagerLinkStatusEnum.Types.ManagerLinkStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.ManagerLinkStatusEnum.Types.ManagerLinkStatus.Unspecified;
     /// <summary>
     /// Status of the link between the customer and the manager.
     /// </summary>
@@ -184,7 +184,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (managerCustomer_ != null) hash ^= ManagerCustomer.GetHashCode();
       if (managerLinkId_ != null) hash ^= ManagerLinkId.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ManagerLinkStatusEnum.Types.ManagerLinkStatus.Unspecified) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -208,7 +208,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (managerLinkId_ != null) {
         _single_managerLinkId_codec.WriteTagAndValue(output, ManagerLinkId);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ManagerLinkStatusEnum.Types.ManagerLinkStatus.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Status);
       }
@@ -229,7 +229,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (managerLinkId_ != null) {
         size += _single_managerLinkId_codec.CalculateSizeWithTag(ManagerLinkId);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ManagerLinkStatusEnum.Types.ManagerLinkStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (_unknownFields != null) {
@@ -256,7 +256,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           ManagerLinkId = other.ManagerLinkId;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.ManagerLinkStatusEnum.Types.ManagerLinkStatus.Unspecified) {
         Status = other.Status;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

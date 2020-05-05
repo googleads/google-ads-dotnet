@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "djMucmVzb3VyY2VzGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3Rv",
             "Ghlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGhxnb29nbGUvYXBpL2Fubm90",
             "YXRpb25zLnByb3RvIs8BChdTaG9wcGluZ1BlcmZvcm1hbmNlVmlldxJPCg1y",
-            "ZXNvdXJjZV9uYW1lGAEgASgJQjjgQQX6QTIKMGdvb2dsZWFkcy5nb29nbGVh",
+            "ZXNvdXJjZV9uYW1lGAEgASgJQjjgQQP6QTIKMGdvb2dsZWFkcy5nb29nbGVh",
             "cGlzLmNvbS9TaG9wcGluZ1BlcmZvcm1hbmNlVmlldzpj6kFgCjBnb29nbGVh",
             "ZHMuZ29vZ2xlYXBpcy5jb20vU2hvcHBpbmdQZXJmb3JtYW5jZVZpZXcSLGN1",
             "c3RvbWVycy97Y3VzdG9tZXJ9L3Nob3BwaW5nUGVyZm9ybWFuY2VWaWV3QokC",
@@ -42,8 +42,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ShoppingPerformanceView), global::Google.Ads.GoogleAds.V3.Resources.ShoppingPerformanceView.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ShoppingPerformanceView), global::Google.Ads.GoogleAds.V3.Resources.ShoppingPerformanceView.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the Shopping performance view.
+    /// Output only. The resource name of the Shopping performance view.
     /// Shopping performance view resource names have the form:
     /// `customers/{customer_id}/shoppingPerformanceView`
     /// </summary>
