@@ -50,9 +50,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "Mzo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.FrequencyCapEntry), global::Google.Ads.GoogleAds.V3.Common.FrequencyCapEntry.Parser, new[]{ "Key", "Cap" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.FrequencyCapKey), global::Google.Ads.GoogleAds.V3.Common.FrequencyCapKey.Parser, new[]{ "Level", "EventType", "TimeUnit", "TimeLength" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.FrequencyCapEntry), global::Google.Ads.GoogleAds.V3.Common.FrequencyCapEntry.Parser, new[]{ "Key", "Cap" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.FrequencyCapKey), global::Google.Ads.GoogleAds.V3.Common.FrequencyCapKey.Parser, new[]{ "Level", "EventType", "TimeUnit", "TimeLength" }, null, null, null, null)
           }));
     }
     #endregion
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "level" field.</summary>
     public const int LevelFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel level_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel level_ = global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified;
     /// <summary>
     /// The level on which the cap is to be applied (e.g. ad group ad, ad group).
     /// The cap is applied to all the entities of this level.
@@ -297,7 +297,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "event_type" field.</summary>
     public const int EventTypeFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType eventType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType eventType_ = global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType.Unspecified;
     /// <summary>
     /// The type of event that the cap applies to (e.g. impression).
     /// </summary>
@@ -311,7 +311,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "time_unit" field.</summary>
     public const int TimeUnitFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit timeUnit_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit timeUnit_ = global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit.Unspecified;
     /// <summary>
     /// Unit of time the cap is defined at (e.g. day, week).
     /// </summary>
@@ -362,9 +362,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Level != 0) hash ^= Level.GetHashCode();
-      if (EventType != 0) hash ^= EventType.GetHashCode();
-      if (TimeUnit != 0) hash ^= TimeUnit.GetHashCode();
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified) hash ^= Level.GetHashCode();
+      if (EventType != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType.Unspecified) hash ^= EventType.GetHashCode();
+      if (TimeUnit != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit.Unspecified) hash ^= TimeUnit.GetHashCode();
       if (timeLength_ != null) hash ^= TimeLength.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -379,15 +379,15 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Level != 0) {
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Level);
       }
-      if (TimeUnit != 0) {
+      if (TimeUnit != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) TimeUnit);
       }
-      if (EventType != 0) {
+      if (EventType != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) EventType);
       }
@@ -402,13 +402,13 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Level != 0) {
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Level);
       }
-      if (EventType != 0) {
+      if (EventType != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EventType);
       }
-      if (TimeUnit != 0) {
+      if (TimeUnit != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TimeUnit);
       }
       if (timeLength_ != null) {
@@ -425,13 +425,13 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Level != 0) {
+      if (other.Level != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified) {
         Level = other.Level;
       }
-      if (other.EventType != 0) {
+      if (other.EventType != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType.Unspecified) {
         EventType = other.EventType;
       }
-      if (other.TimeUnit != 0) {
+      if (other.TimeUnit != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit.Unspecified) {
         TimeUnit = other.TimeUnit;
       }
       if (other.timeLength_ != null) {

@@ -148,9 +148,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZHM6Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CriterionSystemServingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion), global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Parser, new[]{ "ResourceName", "CriterionId", "Status", "QualityInfo", "AdGroup", "Type", "Negative", "SystemServingStatus", "ApprovalStatus", "BidModifier", "CpcBidMicros", "CpmBidMicros", "CpvBidMicros", "PercentCpcBidMicros", "EffectiveCpcBidMicros", "EffectiveCpmBidMicros", "EffectiveCpvBidMicros", "EffectivePercentCpcBidMicros", "EffectiveCpcBidSource", "EffectiveCpmBidSource", "EffectiveCpvBidSource", "EffectivePercentCpcBidSource", "PositionEstimates", "FinalUrls", "FinalMobileUrls", "FinalUrlSuffix", "TrackingUrlTemplate", "UrlCustomParameters", "Keyword", "Placement", "MobileAppCategory", "MobileApplication", "ListingGroup", "AgeRange", "Gender", "IncomeRange", "ParentalStatus", "UserList", "YoutubeVideo", "YoutubeChannel", "Topic", "UserInterest", "Webpage", "AppPaymentModel", "CustomAffinity", "CustomIntent" }, new[]{ "Criterion" }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Types.QualityInfo), global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Types.QualityInfo.Parser, new[]{ "QualityScore", "CreativeQualityScore", "PostClickQualityScore", "SearchPredictedCtr" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Types.PositionEstimates), global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Types.PositionEstimates.Parser, new[]{ "FirstPageCpcMicros", "FirstPositionCpcMicros", "TopOfPageCpcMicros", "EstimatedAddClicksAtFirstPositionCpc", "EstimatedAddCostAtFirstPositionCpc" }, null, null, null)})
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion), global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Parser, new[]{ "ResourceName", "CriterionId", "Status", "QualityInfo", "AdGroup", "Type", "Negative", "SystemServingStatus", "ApprovalStatus", "BidModifier", "CpcBidMicros", "CpmBidMicros", "CpvBidMicros", "PercentCpcBidMicros", "EffectiveCpcBidMicros", "EffectiveCpmBidMicros", "EffectiveCpvBidMicros", "EffectivePercentCpcBidMicros", "EffectiveCpcBidSource", "EffectiveCpmBidSource", "EffectiveCpvBidSource", "EffectivePercentCpcBidSource", "PositionEstimates", "FinalUrls", "FinalMobileUrls", "FinalUrlSuffix", "TrackingUrlTemplate", "UrlCustomParameters", "Keyword", "Placement", "MobileAppCategory", "MobileApplication", "ListingGroup", "AgeRange", "Gender", "IncomeRange", "ParentalStatus", "UserList", "YoutubeVideo", "YoutubeChannel", "Topic", "UserInterest", "Webpage", "AppPaymentModel", "CustomAffinity", "CustomIntent" }, new[]{ "Criterion" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Types.QualityInfo), global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Types.QualityInfo.Parser, new[]{ "QualityScore", "CreativeQualityScore", "PostClickQualityScore", "SearchPredictedCtr" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Types.PositionEstimates), global::Google.Ads.GoogleAds.V3.Resources.AdGroupCriterion.Types.PositionEstimates.Parser, new[]{ "FirstPageCpcMicros", "FirstPositionCpcMicros", "TopOfPageCpcMicros", "EstimatedAddClicksAtFirstPositionCpc", "EstimatedAddCostAtFirstPositionCpc" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -315,7 +315,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types.AdGroupCriterionStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types.AdGroupCriterionStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types.AdGroupCriterionStatus.Unspecified;
     /// <summary>
     /// The status of the criterion.
     /// </summary>
@@ -359,7 +359,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 25;
-    private global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType type_ = global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified;
     /// <summary>
     /// Output only. The type of the criterion.
     /// </summary>
@@ -392,7 +392,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "system_serving_status" field.</summary>
     public const int SystemServingStatusFieldNumber = 52;
-    private global::Google.Ads.GoogleAds.V3.Enums.CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus systemServingStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus systemServingStatus_ = global::Google.Ads.GoogleAds.V3.Enums.CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unspecified;
     /// <summary>
     /// Output only. Serving status of the criterion.
     /// </summary>
@@ -406,7 +406,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "approval_status" field.</summary>
     public const int ApprovalStatusFieldNumber = 53;
-    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus approvalStatus_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus approvalStatus_ = global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Unspecified;
     /// <summary>
     /// Output only. Approval status of the criterion.
     /// </summary>
@@ -567,7 +567,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "effective_cpc_bid_source" field.</summary>
     public const int EffectiveCpcBidSourceFieldNumber = 21;
-    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveCpcBidSource_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveCpcBidSource_ = global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified;
     /// <summary>
     /// Output only. Source of the effective CPC bid.
     /// </summary>
@@ -581,7 +581,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "effective_cpm_bid_source" field.</summary>
     public const int EffectiveCpmBidSourceFieldNumber = 22;
-    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveCpmBidSource_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveCpmBidSource_ = global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified;
     /// <summary>
     /// Output only. Source of the effective CPM bid.
     /// </summary>
@@ -595,7 +595,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "effective_cpv_bid_source" field.</summary>
     public const int EffectiveCpvBidSourceFieldNumber = 23;
-    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveCpvBidSource_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveCpvBidSource_ = global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified;
     /// <summary>
     /// Output only. Source of the effective CPV bid.
     /// </summary>
@@ -609,7 +609,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "effective_percent_cpc_bid_source" field.</summary>
     public const int EffectivePercentCpcBidSourceFieldNumber = 35;
-    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectivePercentCpcBidSource_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectivePercentCpcBidSource_ = global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified;
     /// <summary>
     /// Output only. Source of the effective Percent CPC bid.
     /// </summary>
@@ -1063,13 +1063,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (criterionId_ != null) hash ^= CriterionId.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types.AdGroupCriterionStatus.Unspecified) hash ^= Status.GetHashCode();
       if (qualityInfo_ != null) hash ^= QualityInfo.GetHashCode();
       if (adGroup_ != null) hash ^= AdGroup.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) hash ^= Type.GetHashCode();
       if (negative_ != null) hash ^= Negative.GetHashCode();
-      if (SystemServingStatus != 0) hash ^= SystemServingStatus.GetHashCode();
-      if (ApprovalStatus != 0) hash ^= ApprovalStatus.GetHashCode();
+      if (SystemServingStatus != global::Google.Ads.GoogleAds.V3.Enums.CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unspecified) hash ^= SystemServingStatus.GetHashCode();
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Unspecified) hash ^= ApprovalStatus.GetHashCode();
       if (bidModifier_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(BidModifier);
       if (cpcBidMicros_ != null) hash ^= CpcBidMicros.GetHashCode();
       if (cpmBidMicros_ != null) hash ^= CpmBidMicros.GetHashCode();
@@ -1079,10 +1079,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (effectiveCpmBidMicros_ != null) hash ^= EffectiveCpmBidMicros.GetHashCode();
       if (effectiveCpvBidMicros_ != null) hash ^= EffectiveCpvBidMicros.GetHashCode();
       if (effectivePercentCpcBidMicros_ != null) hash ^= EffectivePercentCpcBidMicros.GetHashCode();
-      if (EffectiveCpcBidSource != 0) hash ^= EffectiveCpcBidSource.GetHashCode();
-      if (EffectiveCpmBidSource != 0) hash ^= EffectiveCpmBidSource.GetHashCode();
-      if (EffectiveCpvBidSource != 0) hash ^= EffectiveCpvBidSource.GetHashCode();
-      if (EffectivePercentCpcBidSource != 0) hash ^= EffectivePercentCpcBidSource.GetHashCode();
+      if (EffectiveCpcBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) hash ^= EffectiveCpcBidSource.GetHashCode();
+      if (EffectiveCpmBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) hash ^= EffectiveCpmBidSource.GetHashCode();
+      if (EffectiveCpvBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) hash ^= EffectiveCpvBidSource.GetHashCode();
+      if (EffectivePercentCpcBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) hash ^= EffectivePercentCpcBidSource.GetHashCode();
       if (positionEstimates_ != null) hash ^= PositionEstimates.GetHashCode();
       hash ^= finalUrls_.GetHashCode();
       hash ^= finalMobileUrls_.GetHashCode();
@@ -1125,7 +1125,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types.AdGroupCriterionStatus.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Status);
       }
@@ -1160,22 +1160,22 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (effectiveCpvBidMicros_ != null) {
         _single_effectiveCpvBidMicros_codec.WriteTagAndValue(output, EffectiveCpvBidMicros);
       }
-      if (EffectiveCpcBidSource != 0) {
+      if (EffectiveCpcBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         output.WriteRawTag(168, 1);
         output.WriteEnum((int) EffectiveCpcBidSource);
       }
-      if (EffectiveCpmBidSource != 0) {
+      if (EffectiveCpmBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         output.WriteRawTag(176, 1);
         output.WriteEnum((int) EffectiveCpmBidSource);
       }
-      if (EffectiveCpvBidSource != 0) {
+      if (EffectiveCpvBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         output.WriteRawTag(184, 1);
         output.WriteEnum((int) EffectiveCpvBidSource);
       }
       if (cpvBidMicros_ != null) {
         _single_cpvBidMicros_codec.WriteTagAndValue(output, CpvBidMicros);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
         output.WriteRawTag(200, 1);
         output.WriteEnum((int) Type);
       }
@@ -1211,7 +1211,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (effectivePercentCpcBidMicros_ != null) {
         _single_effectivePercentCpcBidMicros_codec.WriteTagAndValue(output, EffectivePercentCpcBidMicros);
       }
-      if (EffectivePercentCpcBidSource != 0) {
+      if (EffectivePercentCpcBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         output.WriteRawTag(152, 2);
         output.WriteEnum((int) EffectivePercentCpcBidSource);
       }
@@ -1274,11 +1274,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         _single_finalUrlSuffix_codec.WriteTagAndValue(output, FinalUrlSuffix);
       }
       finalMobileUrls_.WriteTo(output, _repeated_finalMobileUrls_codec);
-      if (SystemServingStatus != 0) {
+      if (SystemServingStatus != global::Google.Ads.GoogleAds.V3.Enums.CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unspecified) {
         output.WriteRawTag(160, 3);
         output.WriteEnum((int) SystemServingStatus);
       }
-      if (ApprovalStatus != 0) {
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Unspecified) {
         output.WriteRawTag(168, 3);
         output.WriteEnum((int) ApprovalStatus);
       }
@@ -1296,7 +1296,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (criterionId_ != null) {
         size += _single_criterionId_codec.CalculateSizeWithTag(CriterionId);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types.AdGroupCriterionStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (qualityInfo_ != null) {
@@ -1305,16 +1305,16 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (adGroup_ != null) {
         size += _single_adGroup_codec.CalculateSizeWithTag(AdGroup);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (negative_ != null) {
         size += _single_negative_codec.CalculateSizeWithTag(Negative);
       }
-      if (SystemServingStatus != 0) {
+      if (SystemServingStatus != global::Google.Ads.GoogleAds.V3.Enums.CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) SystemServingStatus);
       }
-      if (ApprovalStatus != 0) {
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) ApprovalStatus);
       }
       if (bidModifier_ != null) {
@@ -1344,16 +1344,16 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (effectivePercentCpcBidMicros_ != null) {
         size += _single_effectivePercentCpcBidMicros_codec.CalculateSizeWithTag(EffectivePercentCpcBidMicros);
       }
-      if (EffectiveCpcBidSource != 0) {
+      if (EffectiveCpcBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectiveCpcBidSource);
       }
-      if (EffectiveCpmBidSource != 0) {
+      if (EffectiveCpmBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectiveCpmBidSource);
       }
-      if (EffectiveCpvBidSource != 0) {
+      if (EffectiveCpvBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectiveCpvBidSource);
       }
-      if (EffectivePercentCpcBidSource != 0) {
+      if (EffectivePercentCpcBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectivePercentCpcBidSource);
       }
       if (positionEstimates_ != null) {
@@ -1441,7 +1441,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           CriterionId = other.CriterionId;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types.AdGroupCriterionStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.qualityInfo_ != null) {
@@ -1455,7 +1455,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           AdGroup = other.AdGroup;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
         Type = other.Type;
       }
       if (other.negative_ != null) {
@@ -1463,10 +1463,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Negative = other.Negative;
         }
       }
-      if (other.SystemServingStatus != 0) {
+      if (other.SystemServingStatus != global::Google.Ads.GoogleAds.V3.Enums.CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unspecified) {
         SystemServingStatus = other.SystemServingStatus;
       }
-      if (other.ApprovalStatus != 0) {
+      if (other.ApprovalStatus != global::Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Unspecified) {
         ApprovalStatus = other.ApprovalStatus;
       }
       if (other.bidModifier_ != null) {
@@ -1514,16 +1514,16 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           EffectivePercentCpcBidMicros = other.EffectivePercentCpcBidMicros;
         }
       }
-      if (other.EffectiveCpcBidSource != 0) {
+      if (other.EffectiveCpcBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         EffectiveCpcBidSource = other.EffectiveCpcBidSource;
       }
-      if (other.EffectiveCpmBidSource != 0) {
+      if (other.EffectiveCpmBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         EffectiveCpmBidSource = other.EffectiveCpmBidSource;
       }
-      if (other.EffectiveCpvBidSource != 0) {
+      if (other.EffectiveCpvBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         EffectiveCpvBidSource = other.EffectiveCpvBidSource;
       }
-      if (other.EffectivePercentCpcBidSource != 0) {
+      if (other.EffectivePercentCpcBidSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         EffectivePercentCpcBidSource = other.EffectivePercentCpcBidSource;
       }
       if (other.positionEstimates_ != null) {
@@ -2058,7 +2058,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         /// <summary>Field number for the "creative_quality_score" field.</summary>
         public const int CreativeQualityScoreFieldNumber = 2;
-        private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket creativeQualityScore_ = 0;
+        private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket creativeQualityScore_ = global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified;
         /// <summary>
         /// Output only. The performance of the ad compared to other advertisers.
         /// </summary>
@@ -2072,7 +2072,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         /// <summary>Field number for the "post_click_quality_score" field.</summary>
         public const int PostClickQualityScoreFieldNumber = 3;
-        private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket postClickQualityScore_ = 0;
+        private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket postClickQualityScore_ = global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified;
         /// <summary>
         /// Output only. The quality score of the landing page.
         /// </summary>
@@ -2086,7 +2086,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         /// <summary>Field number for the "search_predicted_ctr" field.</summary>
         public const int SearchPredictedCtrFieldNumber = 4;
-        private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket searchPredictedCtr_ = 0;
+        private global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket searchPredictedCtr_ = global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified;
         /// <summary>
         /// Output only. The click-through rate compared to that of other advertisers.
         /// </summary>
@@ -2122,9 +2122,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         public override int GetHashCode() {
           int hash = 1;
           if (qualityScore_ != null) hash ^= QualityScore.GetHashCode();
-          if (CreativeQualityScore != 0) hash ^= CreativeQualityScore.GetHashCode();
-          if (PostClickQualityScore != 0) hash ^= PostClickQualityScore.GetHashCode();
-          if (SearchPredictedCtr != 0) hash ^= SearchPredictedCtr.GetHashCode();
+          if (CreativeQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) hash ^= CreativeQualityScore.GetHashCode();
+          if (PostClickQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) hash ^= PostClickQualityScore.GetHashCode();
+          if (SearchPredictedCtr != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) hash ^= SearchPredictedCtr.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -2141,15 +2141,15 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           if (qualityScore_ != null) {
             _single_qualityScore_codec.WriteTagAndValue(output, QualityScore);
           }
-          if (CreativeQualityScore != 0) {
+          if (CreativeQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
             output.WriteRawTag(16);
             output.WriteEnum((int) CreativeQualityScore);
           }
-          if (PostClickQualityScore != 0) {
+          if (PostClickQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
             output.WriteRawTag(24);
             output.WriteEnum((int) PostClickQualityScore);
           }
-          if (SearchPredictedCtr != 0) {
+          if (SearchPredictedCtr != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
             output.WriteRawTag(32);
             output.WriteEnum((int) SearchPredictedCtr);
           }
@@ -2164,13 +2164,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           if (qualityScore_ != null) {
             size += _single_qualityScore_codec.CalculateSizeWithTag(QualityScore);
           }
-          if (CreativeQualityScore != 0) {
+          if (CreativeQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CreativeQualityScore);
           }
-          if (PostClickQualityScore != 0) {
+          if (PostClickQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PostClickQualityScore);
           }
-          if (SearchPredictedCtr != 0) {
+          if (SearchPredictedCtr != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SearchPredictedCtr);
           }
           if (_unknownFields != null) {
@@ -2189,13 +2189,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
               QualityScore = other.QualityScore;
             }
           }
-          if (other.CreativeQualityScore != 0) {
+          if (other.CreativeQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
             CreativeQualityScore = other.CreativeQualityScore;
           }
-          if (other.PostClickQualityScore != 0) {
+          if (other.PostClickQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
             PostClickQualityScore = other.PostClickQualityScore;
           }
-          if (other.SearchPredictedCtr != 0) {
+          if (other.SearchPredictedCtr != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
             SearchPredictedCtr = other.SearchPredictedCtr;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

@@ -538,7 +538,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callListInvoices = clientHelper.BuildApiCall<ListInvoicesRequest, ListInvoicesResponse>(
                 GrpcClient.ListInvoicesAsync, GrpcClient.ListInvoices, effectiveSettings.ListInvoicesSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callListInvoices);
             Modify_ListInvoicesApiCall(ref _callListInvoices);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

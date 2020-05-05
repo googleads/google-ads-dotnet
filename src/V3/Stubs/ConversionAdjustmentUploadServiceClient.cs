@@ -355,7 +355,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// Required. The conversion adjustments that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// If true, successful operations will be carried out and invalid
+        /// Required. If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, all operations will be carried out
         /// in one transaction if and only if they are all valid. This should always be
         /// set to true.
@@ -395,7 +395,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// Required. The conversion adjustments that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// If true, successful operations will be carried out and invalid
+        /// Required. If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, all operations will be carried out
         /// in one transaction if and only if they are all valid. This should always be
         /// set to true.
@@ -432,7 +432,7 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// Required. The conversion adjustments that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// If true, successful operations will be carried out and invalid
+        /// Required. If true, successful operations will be carried out and invalid
         /// operations will return errors. If false, all operations will be carried out
         /// in one transaction if and only if they are all valid. This should always be
         /// set to true.
@@ -614,7 +614,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callUploadConversionAdjustments = clientHelper.BuildApiCall<UploadConversionAdjustmentsRequest, UploadConversionAdjustmentsResponse>(
                 GrpcClient.UploadConversionAdjustmentsAsync, GrpcClient.UploadConversionAdjustments, effectiveSettings.UploadConversionAdjustmentsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callUploadConversionAdjustments);
             Modify_UploadConversionAdjustmentsApiCall(ref _callUploadConversionAdjustments);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

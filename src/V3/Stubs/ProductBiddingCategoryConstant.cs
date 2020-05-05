@@ -33,7 +33,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xl",
             "L3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRp",
             "b25zLnByb3RvIs0GCh5Qcm9kdWN0QmlkZGluZ0NhdGVnb3J5Q29uc3RhbnQS",
-            "VgoNcmVzb3VyY2VfbmFtZRgBIAEoCUI/4EEF+kE5Cjdnb29nbGVhZHMuZ29v",
+            "VgoNcmVzb3VyY2VfbmFtZRgBIAEoCUI/4EED+kE5Cjdnb29nbGVhZHMuZ29v",
             "Z2xlYXBpcy5jb20vUHJvZHVjdEJpZGRpbmdDYXRlZ29yeUNvbnN0YW50EiwK",
             "AmlkGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWVCA+BBAxI3",
             "Cgxjb3VudHJ5X2NvZGUYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
@@ -60,8 +60,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "c291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ProductBiddingCategoryConstant), global::Google.Ads.GoogleAds.V3.Resources.ProductBiddingCategoryConstant.Parser, new[]{ "ResourceName", "Id", "CountryCode", "ProductBiddingCategoryConstantParent", "Level", "Status", "LanguageCode", "LocalizedName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ProductBiddingCategoryConstant), global::Google.Ads.GoogleAds.V3.Resources.ProductBiddingCategoryConstant.Parser, new[]{ "ResourceName", "Id", "CountryCode", "ProductBiddingCategoryConstantParent", "Level", "Status", "LanguageCode", "LocalizedName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -116,7 +116,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the product bidding category.
+    /// Output only. The resource name of the product bidding category.
     /// Product bidding category resource names have the form:
     ///
     /// `productBiddingCategoryConstants/{country_code}~{level}~{id}`
@@ -182,7 +182,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "level" field.</summary>
     public const int LevelFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel level_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel level_ = global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified;
     /// <summary>
     /// Output only. Level of the product bidding category.
     /// </summary>
@@ -196,7 +196,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Unspecified;
     /// <summary>
     /// Output only. Status of the product bidding category.
     /// </summary>
@@ -272,8 +272,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) hash ^= Id.GetHashCode();
       if (countryCode_ != null) hash ^= CountryCode.GetHashCode();
       if (productBiddingCategoryConstantParent_ != null) hash ^= ProductBiddingCategoryConstantParent.GetHashCode();
-      if (Level != 0) hash ^= Level.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified) hash ^= Level.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Unspecified) hash ^= Status.GetHashCode();
       if (languageCode_ != null) hash ^= LanguageCode.GetHashCode();
       if (localizedName_ != null) hash ^= LocalizedName.GetHashCode();
       if (_unknownFields != null) {
@@ -302,11 +302,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (productBiddingCategoryConstantParent_ != null) {
         _single_productBiddingCategoryConstantParent_codec.WriteTagAndValue(output, ProductBiddingCategoryConstantParent);
       }
-      if (Level != 0) {
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Level);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Status);
       }
@@ -336,10 +336,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (productBiddingCategoryConstantParent_ != null) {
         size += _single_productBiddingCategoryConstantParent_codec.CalculateSizeWithTag(ProductBiddingCategoryConstantParent);
       }
-      if (Level != 0) {
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Level);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (languageCode_ != null) {
@@ -377,10 +377,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           ProductBiddingCategoryConstantParent = other.ProductBiddingCategoryConstantParent;
         }
       }
-      if (other.Level != 0) {
+      if (other.Level != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified) {
         Level = other.Level;
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.languageCode_ != null) {

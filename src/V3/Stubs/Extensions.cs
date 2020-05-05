@@ -156,19 +156,19 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.FeedCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AppStoreReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceQualifierReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceUnitReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionDiscountModifierReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionOccasionReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AppFeedItem), global::Google.Ads.GoogleAds.V3.Common.AppFeedItem.Parser, new[]{ "LinkText", "AppId", "AppStore", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CallFeedItem), global::Google.Ads.GoogleAds.V3.Common.CallFeedItem.Parser, new[]{ "PhoneNumber", "CountryCode", "CallTrackingEnabled", "CallConversionAction", "CallConversionTrackingDisabled", "CallConversionReportingState" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CalloutFeedItem), global::Google.Ads.GoogleAds.V3.Common.CalloutFeedItem.Parser, new[]{ "CalloutText" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LocationFeedItem), global::Google.Ads.GoogleAds.V3.Common.LocationFeedItem.Parser, new[]{ "BusinessName", "AddressLine1", "AddressLine2", "City", "Province", "PostalCode", "CountryCode", "PhoneNumber" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AffiliateLocationFeedItem), global::Google.Ads.GoogleAds.V3.Common.AffiliateLocationFeedItem.Parser, new[]{ "BusinessName", "AddressLine1", "AddressLine2", "City", "Province", "PostalCode", "CountryCode", "PhoneNumber", "ChainId", "ChainName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TextMessageFeedItem), global::Google.Ads.GoogleAds.V3.Common.TextMessageFeedItem.Parser, new[]{ "BusinessName", "CountryCode", "PhoneNumber", "Text", "ExtensionText" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PriceFeedItem), global::Google.Ads.GoogleAds.V3.Common.PriceFeedItem.Parser, new[]{ "Type", "PriceQualifier", "TrackingUrlTemplate", "LanguageCode", "PriceOfferings", "FinalUrlSuffix" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PriceOffer), global::Google.Ads.GoogleAds.V3.Common.PriceOffer.Parser, new[]{ "Header", "Description", "Price", "Unit", "FinalUrls", "FinalMobileUrls" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PromotionFeedItem), global::Google.Ads.GoogleAds.V3.Common.PromotionFeedItem.Parser, new[]{ "PromotionTarget", "DiscountModifier", "PromotionStartDate", "PromotionEndDate", "Occasion", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix", "LanguageCode", "PercentOff", "MoneyAmountOff", "PromotionCode", "OrdersOverAmount" }, new[]{ "DiscountType", "PromotionTrigger" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.StructuredSnippetFeedItem), global::Google.Ads.GoogleAds.V3.Common.StructuredSnippetFeedItem.Parser, new[]{ "Header", "Values" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.SitelinkFeedItem), global::Google.Ads.GoogleAds.V3.Common.SitelinkFeedItem.Parser, new[]{ "LinkText", "Line1", "Line2", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelCalloutFeedItem), global::Google.Ads.GoogleAds.V3.Common.HotelCalloutFeedItem.Parser, new[]{ "Text", "LanguageCode" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AppFeedItem), global::Google.Ads.GoogleAds.V3.Common.AppFeedItem.Parser, new[]{ "LinkText", "AppId", "AppStore", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CallFeedItem), global::Google.Ads.GoogleAds.V3.Common.CallFeedItem.Parser, new[]{ "PhoneNumber", "CountryCode", "CallTrackingEnabled", "CallConversionAction", "CallConversionTrackingDisabled", "CallConversionReportingState" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CalloutFeedItem), global::Google.Ads.GoogleAds.V3.Common.CalloutFeedItem.Parser, new[]{ "CalloutText" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.LocationFeedItem), global::Google.Ads.GoogleAds.V3.Common.LocationFeedItem.Parser, new[]{ "BusinessName", "AddressLine1", "AddressLine2", "City", "Province", "PostalCode", "CountryCode", "PhoneNumber" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AffiliateLocationFeedItem), global::Google.Ads.GoogleAds.V3.Common.AffiliateLocationFeedItem.Parser, new[]{ "BusinessName", "AddressLine1", "AddressLine2", "City", "Province", "PostalCode", "CountryCode", "PhoneNumber", "ChainId", "ChainName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TextMessageFeedItem), global::Google.Ads.GoogleAds.V3.Common.TextMessageFeedItem.Parser, new[]{ "BusinessName", "CountryCode", "PhoneNumber", "Text", "ExtensionText" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PriceFeedItem), global::Google.Ads.GoogleAds.V3.Common.PriceFeedItem.Parser, new[]{ "Type", "PriceQualifier", "TrackingUrlTemplate", "LanguageCode", "PriceOfferings", "FinalUrlSuffix" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PriceOffer), global::Google.Ads.GoogleAds.V3.Common.PriceOffer.Parser, new[]{ "Header", "Description", "Price", "Unit", "FinalUrls", "FinalMobileUrls" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.PromotionFeedItem), global::Google.Ads.GoogleAds.V3.Common.PromotionFeedItem.Parser, new[]{ "PromotionTarget", "DiscountModifier", "PromotionStartDate", "PromotionEndDate", "Occasion", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix", "LanguageCode", "PercentOff", "MoneyAmountOff", "PromotionCode", "OrdersOverAmount" }, new[]{ "DiscountType", "PromotionTrigger" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.StructuredSnippetFeedItem), global::Google.Ads.GoogleAds.V3.Common.StructuredSnippetFeedItem.Parser, new[]{ "Header", "Values" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.SitelinkFeedItem), global::Google.Ads.GoogleAds.V3.Common.SitelinkFeedItem.Parser, new[]{ "LinkText", "Line1", "Line2", "FinalUrls", "FinalMobileUrls", "TrackingUrlTemplate", "UrlCustomParameters", "FinalUrlSuffix" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.HotelCalloutFeedItem), global::Google.Ads.GoogleAds.V3.Common.HotelCalloutFeedItem.Parser, new[]{ "Text", "LanguageCode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -256,7 +256,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "app_store" field.</summary>
     public const int AppStoreFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.AppStoreEnum.Types.AppStore appStore_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AppStoreEnum.Types.AppStore appStore_ = global::Google.Ads.GoogleAds.V3.Enums.AppStoreEnum.Types.AppStore.Unspecified;
     /// <summary>
     /// The application store that the target application belongs to.
     /// This field is required.
@@ -372,7 +372,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       int hash = 1;
       if (linkText_ != null) hash ^= LinkText.GetHashCode();
       if (appId_ != null) hash ^= AppId.GetHashCode();
-      if (AppStore != 0) hash ^= AppStore.GetHashCode();
+      if (AppStore != global::Google.Ads.GoogleAds.V3.Enums.AppStoreEnum.Types.AppStore.Unspecified) hash ^= AppStore.GetHashCode();
       hash ^= finalUrls_.GetHashCode();
       hash ^= finalMobileUrls_.GetHashCode();
       if (trackingUrlTemplate_ != null) hash ^= TrackingUrlTemplate.GetHashCode();
@@ -397,7 +397,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (appId_ != null) {
         _single_appId_codec.WriteTagAndValue(output, AppId);
       }
-      if (AppStore != 0) {
+      if (AppStore != global::Google.Ads.GoogleAds.V3.Enums.AppStoreEnum.Types.AppStore.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) AppStore);
       }
@@ -424,7 +424,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (appId_ != null) {
         size += _single_appId_codec.CalculateSizeWithTag(AppId);
       }
-      if (AppStore != 0) {
+      if (AppStore != global::Google.Ads.GoogleAds.V3.Enums.AppStoreEnum.Types.AppStore.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AppStore);
       }
       size += finalUrls_.CalculateSize(_repeated_finalUrls_codec);
@@ -457,7 +457,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           AppId = other.AppId;
         }
       }
-      if (other.AppStore != 0) {
+      if (other.AppStore != global::Google.Ads.GoogleAds.V3.Enums.AppStoreEnum.Types.AppStore.Unspecified) {
         AppStore = other.AppStore;
       }
       finalUrls_.Add(other.finalUrls_);
@@ -664,7 +664,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "call_conversion_reporting_state" field.</summary>
     public const int CallConversionReportingStateFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState callConversionReportingState_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState callConversionReportingState_ = global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified;
     /// <summary>
     /// Enum value that indicates whether this call extension uses its own call
     /// conversion setting (or just have call conversion disabled), or following
@@ -708,7 +708,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (callTrackingEnabled_ != null) hash ^= CallTrackingEnabled.GetHashCode();
       if (callConversionAction_ != null) hash ^= CallConversionAction.GetHashCode();
       if (callConversionTrackingDisabled_ != null) hash ^= CallConversionTrackingDisabled.GetHashCode();
-      if (CallConversionReportingState != 0) hash ^= CallConversionReportingState.GetHashCode();
+      if (CallConversionReportingState != global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified) hash ^= CallConversionReportingState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -737,7 +737,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (callConversionTrackingDisabled_ != null) {
         _single_callConversionTrackingDisabled_codec.WriteTagAndValue(output, CallConversionTrackingDisabled);
       }
-      if (CallConversionReportingState != 0) {
+      if (CallConversionReportingState != global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) CallConversionReportingState);
       }
@@ -764,7 +764,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (callConversionTrackingDisabled_ != null) {
         size += _single_callConversionTrackingDisabled_codec.CalculateSizeWithTag(CallConversionTrackingDisabled);
       }
-      if (CallConversionReportingState != 0) {
+      if (CallConversionReportingState != global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CallConversionReportingState);
       }
       if (_unknownFields != null) {
@@ -803,7 +803,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           CallConversionTrackingDisabled = other.CallConversionTrackingDisabled;
         }
       }
-      if (other.CallConversionReportingState != 0) {
+      if (other.CallConversionReportingState != global::Google.Ads.GoogleAds.V3.Enums.CallConversionReportingStateEnum.Types.CallConversionReportingState.Unspecified) {
         CallConversionReportingState = other.CallConversionReportingState;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -2215,7 +2215,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionTypeEnum.Types.PriceExtensionType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionTypeEnum.Types.PriceExtensionType type_ = global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionTypeEnum.Types.PriceExtensionType.Unspecified;
     /// <summary>
     /// Price extension type of this extension.
     /// </summary>
@@ -2229,7 +2229,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "price_qualifier" field.</summary>
     public const int PriceQualifierFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceQualifierEnum.Types.PriceExtensionPriceQualifier priceQualifier_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceQualifierEnum.Types.PriceExtensionPriceQualifier priceQualifier_ = global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceQualifierEnum.Types.PriceExtensionPriceQualifier.Unspecified;
     /// <summary>
     /// Price qualifier for all offers of this price extension.
     /// </summary>
@@ -2328,8 +2328,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (PriceQualifier != 0) hash ^= PriceQualifier.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionTypeEnum.Types.PriceExtensionType.Unspecified) hash ^= Type.GetHashCode();
+      if (PriceQualifier != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceQualifierEnum.Types.PriceExtensionPriceQualifier.Unspecified) hash ^= PriceQualifier.GetHashCode();
       if (trackingUrlTemplate_ != null) hash ^= TrackingUrlTemplate.GetHashCode();
       if (languageCode_ != null) hash ^= LanguageCode.GetHashCode();
       hash ^= priceOfferings_.GetHashCode();
@@ -2347,11 +2347,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionTypeEnum.Types.PriceExtensionType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
-      if (PriceQualifier != 0) {
+      if (PriceQualifier != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceQualifierEnum.Types.PriceExtensionPriceQualifier.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) PriceQualifier);
       }
@@ -2373,10 +2373,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionTypeEnum.Types.PriceExtensionType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (PriceQualifier != 0) {
+      if (PriceQualifier != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceQualifierEnum.Types.PriceExtensionPriceQualifier.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PriceQualifier);
       }
       if (trackingUrlTemplate_ != null) {
@@ -2400,10 +2400,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionTypeEnum.Types.PriceExtensionType.Unspecified) {
         Type = other.Type;
       }
-      if (other.PriceQualifier != 0) {
+      if (other.PriceQualifier != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceQualifierEnum.Types.PriceExtensionPriceQualifier.Unspecified) {
         PriceQualifier = other.PriceQualifier;
       }
       if (other.trackingUrlTemplate_ != null) {
@@ -2562,7 +2562,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "unit" field.</summary>
     public const int UnitFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceUnitEnum.Types.PriceExtensionPriceUnit unit_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceUnitEnum.Types.PriceExtensionPriceUnit unit_ = global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceUnitEnum.Types.PriceExtensionPriceUnit.Unspecified;
     /// <summary>
     /// Price unit for this offer.
     /// </summary>
@@ -2628,7 +2628,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (header_ != null) hash ^= Header.GetHashCode();
       if (description_ != null) hash ^= Description.GetHashCode();
       if (price_ != null) hash ^= Price.GetHashCode();
-      if (Unit != 0) hash ^= Unit.GetHashCode();
+      if (Unit != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceUnitEnum.Types.PriceExtensionPriceUnit.Unspecified) hash ^= Unit.GetHashCode();
       hash ^= finalUrls_.GetHashCode();
       hash ^= finalMobileUrls_.GetHashCode();
       if (_unknownFields != null) {
@@ -2654,7 +2654,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
         output.WriteRawTag(26);
         output.WriteMessage(Price);
       }
-      if (Unit != 0) {
+      if (Unit != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceUnitEnum.Types.PriceExtensionPriceUnit.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Unit);
       }
@@ -2677,7 +2677,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (price_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Price);
       }
-      if (Unit != 0) {
+      if (Unit != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceUnitEnum.Types.PriceExtensionPriceUnit.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unit);
       }
       size += finalUrls_.CalculateSize(_repeated_finalUrls_codec);
@@ -2709,7 +2709,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
         }
         Price.MergeFrom(other.Price);
       }
-      if (other.Unit != 0) {
+      if (other.Unit != global::Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceUnitEnum.Types.PriceExtensionPriceUnit.Unspecified) {
         Unit = other.Unit;
       }
       finalUrls_.Add(other.finalUrls_);
@@ -2848,7 +2848,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "discount_modifier" field.</summary>
     public const int DiscountModifierFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionDiscountModifierEnum.Types.PromotionExtensionDiscountModifier discountModifier_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionDiscountModifierEnum.Types.PromotionExtensionDiscountModifier discountModifier_ = global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionDiscountModifierEnum.Types.PromotionExtensionDiscountModifier.Unspecified;
     /// <summary>
     /// Enum that modifies the qualification of the discount.
     /// </summary>
@@ -2894,7 +2894,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "occasion" field.</summary>
     public const int OccasionFieldNumber = 9;
-    private global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionOccasionEnum.Types.PromotionExtensionOccasion occasion_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionOccasionEnum.Types.PromotionExtensionOccasion occasion_ = global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionOccasionEnum.Types.PromotionExtensionOccasion.Unspecified;
     /// <summary>
     /// The occasion the promotion was intended for.
     /// If an occasion is set, the redemption window will need to fall within
@@ -3136,10 +3136,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (promotionTarget_ != null) hash ^= PromotionTarget.GetHashCode();
-      if (DiscountModifier != 0) hash ^= DiscountModifier.GetHashCode();
+      if (DiscountModifier != global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionDiscountModifierEnum.Types.PromotionExtensionDiscountModifier.Unspecified) hash ^= DiscountModifier.GetHashCode();
       if (promotionStartDate_ != null) hash ^= PromotionStartDate.GetHashCode();
       if (promotionEndDate_ != null) hash ^= PromotionEndDate.GetHashCode();
-      if (Occasion != 0) hash ^= Occasion.GetHashCode();
+      if (Occasion != global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionOccasionEnum.Types.PromotionExtensionOccasion.Unspecified) hash ^= Occasion.GetHashCode();
       hash ^= finalUrls_.GetHashCode();
       hash ^= finalMobileUrls_.GetHashCode();
       if (trackingUrlTemplate_ != null) hash ^= TrackingUrlTemplate.GetHashCode();
@@ -3168,7 +3168,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (promotionTarget_ != null) {
         _single_promotionTarget_codec.WriteTagAndValue(output, PromotionTarget);
       }
-      if (DiscountModifier != 0) {
+      if (DiscountModifier != global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionDiscountModifierEnum.Types.PromotionExtensionDiscountModifier.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) DiscountModifier);
       }
@@ -3192,7 +3192,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (promotionEndDate_ != null) {
         _single_promotionEndDate_codec.WriteTagAndValue(output, PromotionEndDate);
       }
-      if (Occasion != 0) {
+      if (Occasion != global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionOccasionEnum.Types.PromotionExtensionOccasion.Unspecified) {
         output.WriteRawTag(72);
         output.WriteEnum((int) Occasion);
       }
@@ -3219,7 +3219,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (promotionTarget_ != null) {
         size += _single_promotionTarget_codec.CalculateSizeWithTag(PromotionTarget);
       }
-      if (DiscountModifier != 0) {
+      if (DiscountModifier != global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionDiscountModifierEnum.Types.PromotionExtensionDiscountModifier.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DiscountModifier);
       }
       if (promotionStartDate_ != null) {
@@ -3228,7 +3228,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (promotionEndDate_ != null) {
         size += _single_promotionEndDate_codec.CalculateSizeWithTag(PromotionEndDate);
       }
-      if (Occasion != 0) {
+      if (Occasion != global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionOccasionEnum.Types.PromotionExtensionOccasion.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Occasion);
       }
       size += finalUrls_.CalculateSize(_repeated_finalUrls_codec);
@@ -3271,7 +3271,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           PromotionTarget = other.PromotionTarget;
         }
       }
-      if (other.DiscountModifier != 0) {
+      if (other.DiscountModifier != global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionDiscountModifierEnum.Types.PromotionExtensionDiscountModifier.Unspecified) {
         DiscountModifier = other.DiscountModifier;
       }
       if (other.promotionStartDate_ != null) {
@@ -3284,7 +3284,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           PromotionEndDate = other.PromotionEndDate;
         }
       }
-      if (other.Occasion != 0) {
+      if (other.Occasion != global::Google.Ads.GoogleAds.V3.Enums.PromotionExtensionOccasionEnum.Types.PromotionExtensionOccasion.Unspecified) {
         Occasion = other.Occasion;
       }
       finalUrls_.Add(other.finalUrls_);

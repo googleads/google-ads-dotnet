@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetShoppingPerformanceView = clientHelper.BuildApiCall<GetShoppingPerformanceViewRequest, gagvr::ShoppingPerformanceView>(
                 GrpcClient.GetShoppingPerformanceViewAsync, GrpcClient.GetShoppingPerformanceView, effectiveSettings.GetShoppingPerformanceViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetShoppingPerformanceView);
             Modify_GetShoppingPerformanceViewApiCall(ref _callGetShoppingPerformanceView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

@@ -54,8 +54,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZHM6Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.MatchingFunctionReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedLinkStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupFeed), global::Google.Ads.GoogleAds.V3.Resources.AdGroupFeed.Parser, new[]{ "ResourceName", "Feed", "AdGroup", "PlaceholderTypes", "MatchingFunction", "Status" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroupFeed), global::Google.Ads.GoogleAds.V3.Resources.AdGroupFeed.Parser, new[]{ "ResourceName", "Feed", "AdGroup", "PlaceholderTypes", "MatchingFunction", "Status" }, null, null, null, null)
           }));
     }
     #endregion
@@ -185,7 +185,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus.Unspecified;
     /// <summary>
     /// Output only. Status of the ad group feed.
     /// This field is read-only.
@@ -228,7 +228,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (adGroup_ != null) hash ^= AdGroup.GetHashCode();
       hash ^= placeholderTypes_.GetHashCode();
       if (matchingFunction_ != null) hash ^= MatchingFunction.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus.Unspecified) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -257,7 +257,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(42);
         output.WriteMessage(MatchingFunction);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Status);
       }
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (matchingFunction_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MatchingFunction);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (_unknownFields != null) {
@@ -316,7 +316,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         }
         MatchingFunction.MergeFrom(other.MatchingFunction);
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus.Unspecified) {
         Status = other.Status;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

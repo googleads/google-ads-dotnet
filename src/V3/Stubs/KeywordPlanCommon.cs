@@ -42,8 +42,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.KeywordPlanHistoricalMetrics), global::Google.Ads.GoogleAds.V3.Common.KeywordPlanHistoricalMetrics.Parser, new[]{ "AvgMonthlySearches", "Competition" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.KeywordPlanHistoricalMetrics), global::Google.Ads.GoogleAds.V3.Common.KeywordPlanHistoricalMetrics.Parser, new[]{ "AvgMonthlySearches", "Competition" }, null, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
   }
   #region Messages
   /// <summary>
-  /// Historical metrics.
+  /// Historical metrics specific to the targeting options selected.
+  /// Targeting options include geographies, network, etc.
+  /// Refer to https://support.google.com/google-ads/answer/3022575 for more
+  /// details.
   /// </summary>
   public sealed partial class KeywordPlanHistoricalMetrics : pb::IMessage<KeywordPlanHistoricalMetrics> {
     private static readonly pb::MessageParser<KeywordPlanHistoricalMetrics> _parser = new pb::MessageParser<KeywordPlanHistoricalMetrics>(() => new KeywordPlanHistoricalMetrics());
@@ -93,7 +96,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     private static readonly pb::FieldCodec<long?> _single_avgMonthlySearches_codec = pb::FieldCodec.ForStructWrapper<long>(10);
     private long? avgMonthlySearches_;
     /// <summary>
-    /// Average monthly searches for the past 12 months.
+    /// Approximate number of monthly searches on this query averaged
+    /// for the past 12 months.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long? AvgMonthlySearches {
@@ -106,7 +110,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "competition" field.</summary>
     public const int CompetitionFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel competition_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel competition_ = global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel.Unspecified;
     /// <summary>
     /// The competition level for the query.
     /// </summary>
@@ -140,7 +144,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (avgMonthlySearches_ != null) hash ^= AvgMonthlySearches.GetHashCode();
-      if (Competition != 0) hash ^= Competition.GetHashCode();
+      if (Competition != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel.Unspecified) hash ^= Competition.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -157,7 +161,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (avgMonthlySearches_ != null) {
         _single_avgMonthlySearches_codec.WriteTagAndValue(output, AvgMonthlySearches);
       }
-      if (Competition != 0) {
+      if (Competition != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Competition);
       }
@@ -172,7 +176,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (avgMonthlySearches_ != null) {
         size += _single_avgMonthlySearches_codec.CalculateSizeWithTag(AvgMonthlySearches);
       }
-      if (Competition != 0) {
+      if (Competition != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Competition);
       }
       if (_unknownFields != null) {
@@ -191,7 +195,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           AvgMonthlySearches = other.AvgMonthlySearches;
         }
       }
-      if (other.Competition != 0) {
+      if (other.Competition != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel.Unspecified) {
         Competition = other.Competition;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

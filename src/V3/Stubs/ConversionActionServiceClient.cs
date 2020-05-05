@@ -772,10 +772,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetConversionAction = clientHelper.BuildApiCall<GetConversionActionRequest, gagvr::ConversionAction>(
                 GrpcClient.GetConversionActionAsync, GrpcClient.GetConversionAction, effectiveSettings.GetConversionActionSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateConversionActions = clientHelper.BuildApiCall<MutateConversionActionsRequest, MutateConversionActionsResponse>(
                 GrpcClient.MutateConversionActionsAsync, GrpcClient.MutateConversionActions, effectiveSettings.MutateConversionActionsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetConversionAction);
             Modify_GetConversionActionApiCall(ref _callGetConversionAction);
             Modify_ApiCall(ref _callMutateConversionActions);

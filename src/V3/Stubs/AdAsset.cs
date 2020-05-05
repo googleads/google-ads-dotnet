@@ -44,11 +44,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "b29nbGVBZHM6OlYzOjpDb21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdTextAsset), global::Google.Ads.GoogleAds.V3.Common.AdTextAsset.Parser, new[]{ "Text", "PinnedField" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdImageAsset), global::Google.Ads.GoogleAds.V3.Common.AdImageAsset.Parser, new[]{ "Asset" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdVideoAsset), global::Google.Ads.GoogleAds.V3.Common.AdVideoAsset.Parser, new[]{ "Asset" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdMediaBundleAsset), global::Google.Ads.GoogleAds.V3.Common.AdMediaBundleAsset.Parser, new[]{ "Asset" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdTextAsset), global::Google.Ads.GoogleAds.V3.Common.AdTextAsset.Parser, new[]{ "Text", "PinnedField" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdImageAsset), global::Google.Ads.GoogleAds.V3.Common.AdImageAsset.Parser, new[]{ "Asset" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdVideoAsset), global::Google.Ads.GoogleAds.V3.Common.AdVideoAsset.Parser, new[]{ "Asset" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.AdMediaBundleAsset), global::Google.Ads.GoogleAds.V3.Common.AdMediaBundleAsset.Parser, new[]{ "Asset" }, null, null, null, null)
           }));
     }
     #endregion
@@ -111,7 +111,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "pinned_field" field.</summary>
     public const int PinnedFieldFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types.ServedAssetFieldType pinnedField_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types.ServedAssetFieldType pinnedField_ = global::Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types.ServedAssetFieldType.Unspecified;
     /// <summary>
     /// The pinned field of the asset. This restricts the asset to only serve
     /// within this field. Multiple assets can be pinned to the same field. An
@@ -148,7 +148,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (text_ != null) hash ^= Text.GetHashCode();
-      if (PinnedField != 0) hash ^= PinnedField.GetHashCode();
+      if (PinnedField != global::Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types.ServedAssetFieldType.Unspecified) hash ^= PinnedField.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -165,7 +165,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (text_ != null) {
         _single_text_codec.WriteTagAndValue(output, Text);
       }
-      if (PinnedField != 0) {
+      if (PinnedField != global::Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types.ServedAssetFieldType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) PinnedField);
       }
@@ -180,7 +180,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (text_ != null) {
         size += _single_text_codec.CalculateSizeWithTag(Text);
       }
-      if (PinnedField != 0) {
+      if (PinnedField != global::Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types.ServedAssetFieldType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PinnedField);
       }
       if (_unknownFields != null) {
@@ -199,7 +199,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
           Text = other.Text;
         }
       }
-      if (other.PinnedField != 0) {
+      if (other.PinnedField != global::Google.Ads.GoogleAds.V3.Enums.ServedAssetFieldTypeEnum.Types.ServedAssetFieldType.Unspecified) {
         PinnedField = other.PinnedField;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

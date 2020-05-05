@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetManagedPlacementView = clientHelper.BuildApiCall<GetManagedPlacementViewRequest, gagvr::ManagedPlacementView>(
                 GrpcClient.GetManagedPlacementViewAsync, GrpcClient.GetManagedPlacementView, effectiveSettings.GetManagedPlacementViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetManagedPlacementView);
             Modify_GetManagedPlacementViewApiCall(ref _callGetManagedPlacementView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

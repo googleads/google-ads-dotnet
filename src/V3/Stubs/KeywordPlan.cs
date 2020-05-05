@@ -52,9 +52,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.DatesReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanForecastIntervalReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlan), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlan.Parser, new[]{ "ResourceName", "Id", "Name", "ForecastPeriod" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanForecastPeriod), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanForecastPeriod.Parser, new[]{ "DateInterval", "DateRange" }, new[]{ "Interval" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlan), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlan.Parser, new[]{ "ResourceName", "Id", "Name", "ForecastPeriod" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanForecastPeriod), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanForecastPeriod.Parser, new[]{ "DateInterval", "DateRange" }, new[]{ "Interval" }, null, null, null)
           }));
     }
     #endregion
@@ -367,7 +367,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanForecastIntervalEnum.Types.KeywordPlanForecastInterval DateInterval {
-      get { return intervalCase_ == IntervalOneofCase.DateInterval ? (global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanForecastIntervalEnum.Types.KeywordPlanForecastInterval) interval_ : 0; }
+      get { return intervalCase_ == IntervalOneofCase.DateInterval ? (global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanForecastIntervalEnum.Types.KeywordPlanForecastInterval) interval_ : global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanForecastIntervalEnum.Types.KeywordPlanForecastInterval.Unspecified; }
       set {
         interval_ = value;
         intervalCase_ = IntervalOneofCase.DateInterval;

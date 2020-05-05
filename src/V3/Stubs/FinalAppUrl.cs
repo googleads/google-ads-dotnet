@@ -40,8 +40,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "bGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.AppUrlOperatingSystemTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.FinalAppUrl), global::Google.Ads.GoogleAds.V3.Common.FinalAppUrl.Parser, new[]{ "OsType", "Url" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.FinalAppUrl), global::Google.Ads.GoogleAds.V3.Common.FinalAppUrl.Parser, new[]{ "OsType", "Url" }, null, null, null, null)
           }));
     }
     #endregion
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "os_type" field.</summary>
     public const int OsTypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType osType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType osType_ = global::Google.Ads.GoogleAds.V3.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType.Unspecified;
     /// <summary>
     /// The operating system targeted by this URL. Required.
     /// </summary>
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (OsType != 0) hash ^= OsType.GetHashCode();
+      if (OsType != global::Google.Ads.GoogleAds.V3.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType.Unspecified) hash ^= OsType.GetHashCode();
       if (url_ != null) hash ^= Url.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -158,7 +158,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (OsType != 0) {
+      if (OsType != global::Google.Ads.GoogleAds.V3.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) OsType);
       }
@@ -173,7 +173,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (OsType != 0) {
+      if (OsType != global::Google.Ads.GoogleAds.V3.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) OsType);
       }
       if (url_ != null) {
@@ -190,7 +190,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.OsType != 0) {
+      if (other.OsType != global::Google.Ads.GoogleAds.V3.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType.Unspecified) {
         OsType = other.OsType;
       }
       if (other.url_ != null) {

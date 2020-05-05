@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateCampaignExtensionSettingsResponse expectedResponse = new MutateCampaignExtensionSettingsResponse();
             mockGrpcClient.Setup(x => x.MutateCampaignExtensionSettings(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CampaignExtensionSettingServiceClient client = new CampaignExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CampaignExtensionSettingOperation> operations = new List<CampaignExtensionSettingOperation>();
-            MutateCampaignExtensionSettingsResponse response = client.MutateCampaignExtensionSettings(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateCampaignExtensionSettingsResponse response = client.MutateCampaignExtensionSettings(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateCampaignExtensionSettingsResponse expectedResponse = new MutateCampaignExtensionSettingsResponse();
             mockGrpcClient.Setup(x => x.MutateCampaignExtensionSettingsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CampaignExtensionSettingServiceClient client = new CampaignExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CampaignExtensionSettingOperation> operations = new List<CampaignExtensionSettingOperation>();
-            MutateCampaignExtensionSettingsResponse response = await client.MutateCampaignExtensionSettingsAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateCampaignExtensionSettingsResponse response = await client.MutateCampaignExtensionSettingsAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

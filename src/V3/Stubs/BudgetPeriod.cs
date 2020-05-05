@@ -36,8 +36,8 @@ namespace Google.Ads.GoogleAds.V3.Enums {
             "Z2xlQWRzOjpWMzo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum), global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum), global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod) }, null, null)
           }));
     }
     #endregion

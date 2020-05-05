@@ -646,10 +646,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetAsset = clientHelper.BuildApiCall<GetAssetRequest, gagvr::Asset>(
                 GrpcClient.GetAssetAsync, GrpcClient.GetAsset, effectiveSettings.GetAssetSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateAssets = clientHelper.BuildApiCall<MutateAssetsRequest, MutateAssetsResponse>(
                 GrpcClient.MutateAssetsAsync, GrpcClient.MutateAssets, effectiveSettings.MutateAssetsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetAsset);
             Modify_GetAssetApiCall(ref _callGetAsset);
             Modify_ApiCall(ref _callMutateAssets);

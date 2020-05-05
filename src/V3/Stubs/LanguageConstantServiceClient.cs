@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetLanguageConstant = clientHelper.BuildApiCall<GetLanguageConstantRequest, gagvr::LanguageConstant>(
                 GrpcClient.GetLanguageConstantAsync, GrpcClient.GetLanguageConstant, effectiveSettings.GetLanguageConstantSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetLanguageConstant);
             Modify_GetLanguageConstantApiCall(ref _callGetLanguageConstant);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

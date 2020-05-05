@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9i",
             "dWYvd3JhcHBlcnMucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJv",
             "dG8iogQKE0RldGFpbFBsYWNlbWVudFZpZXcSSwoNcmVzb3VyY2VfbmFtZRgB",
-            "IAEoCUI04EEF+kEuCixnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vRGV0YWls",
+            "IAEoCUI04EED+kEuCixnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vRGV0YWls",
             "UGxhY2VtZW50VmlldxI0CglwbGFjZW1lbnQYAiABKAsyHC5nb29nbGUucHJv",
             "dG9idWYuU3RyaW5nVmFsdWVCA+BBAxI3CgxkaXNwbGF5X25hbWUYAyABKAsy",
             "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAxJFChpncm91cF9w",
@@ -51,8 +51,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.PlacementTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.DetailPlacementView), global::Google.Ads.GoogleAds.V3.Resources.DetailPlacementView.Parser, new[]{ "ResourceName", "Placement", "DisplayName", "GroupPlacementTargetUrl", "TargetUrl", "PlacementType" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.DetailPlacementView), global::Google.Ads.GoogleAds.V3.Resources.DetailPlacementView.Parser, new[]{ "ResourceName", "Placement", "DisplayName", "GroupPlacementTargetUrl", "TargetUrl", "PlacementType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -105,7 +105,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the detail placement view.
+    /// Output only. The resource name of the detail placement view.
     /// Detail placement view resource names have the form:
     ///
     /// `customers/{customer_id}/detailPlacementViews/{ad_group_id}~{base64_placement}`
@@ -188,7 +188,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "placement_type" field.</summary>
     public const int PlacementTypeFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.PlacementTypeEnum.Types.PlacementType placementType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.PlacementTypeEnum.Types.PlacementType placementType_ = global::Google.Ads.GoogleAds.V3.Enums.PlacementTypeEnum.Types.PlacementType.Unspecified;
     /// <summary>
     /// Output only. Type of the placement, e.g. Website, YouTube Video, and Mobile Application.
     /// </summary>
@@ -230,7 +230,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (displayName_ != null) hash ^= DisplayName.GetHashCode();
       if (groupPlacementTargetUrl_ != null) hash ^= GroupPlacementTargetUrl.GetHashCode();
       if (targetUrl_ != null) hash ^= TargetUrl.GetHashCode();
-      if (PlacementType != 0) hash ^= PlacementType.GetHashCode();
+      if (PlacementType != global::Google.Ads.GoogleAds.V3.Enums.PlacementTypeEnum.Types.PlacementType.Unspecified) hash ^= PlacementType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -260,7 +260,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (targetUrl_ != null) {
         _single_targetUrl_codec.WriteTagAndValue(output, TargetUrl);
       }
-      if (PlacementType != 0) {
+      if (PlacementType != global::Google.Ads.GoogleAds.V3.Enums.PlacementTypeEnum.Types.PlacementType.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) PlacementType);
       }
@@ -287,7 +287,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (targetUrl_ != null) {
         size += _single_targetUrl_codec.CalculateSizeWithTag(TargetUrl);
       }
-      if (PlacementType != 0) {
+      if (PlacementType != global::Google.Ads.GoogleAds.V3.Enums.PlacementTypeEnum.Types.PlacementType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PlacementType);
       }
       if (_unknownFields != null) {
@@ -324,7 +324,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           TargetUrl = other.TargetUrl;
         }
       }
-      if (other.PlacementType != 0) {
+      if (other.PlacementType != global::Google.Ads.GoogleAds.V3.Enums.PlacementTypeEnum.Types.PlacementType.Unspecified) {
         PlacementType = other.PlacementType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

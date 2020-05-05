@@ -145,9 +145,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.AdCustomizerPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AppPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CallPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CalloutPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CustomPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.DsaPageFeedCriterionFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.EducationPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedMappingCriterionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FlightPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.HotelPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.JobPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.LocalPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.LocationExtensionTargetingCriterionFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.LocationPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.MessagePlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PricePlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.PromotionPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.RealEstatePlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.StructuredSnippetPlaceholderFieldReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.TravelPlaceholderFieldReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedMapping), global::Google.Ads.GoogleAds.V3.Resources.FeedMapping.Parser, new[]{ "ResourceName", "Feed", "AttributeFieldMappings", "Status", "PlaceholderType", "CriterionType" }, new[]{ "Target" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AttributeFieldMapping), global::Google.Ads.GoogleAds.V3.Resources.AttributeFieldMapping.Parser, new[]{ "FeedAttributeId", "FieldId", "SitelinkField", "CallField", "AppField", "LocationField", "AffiliateLocationField", "CalloutField", "StructuredSnippetField", "MessageField", "PriceField", "PromotionField", "AdCustomizerField", "DsaPageFeedField", "LocationExtensionTargetingField", "EducationField", "FlightField", "CustomField", "HotelField", "RealEstateField", "TravelField", "LocalField", "JobField" }, new[]{ "Field" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedMapping), global::Google.Ads.GoogleAds.V3.Resources.FeedMapping.Parser, new[]{ "ResourceName", "Feed", "AttributeFieldMappings", "Status", "PlaceholderType", "CriterionType" }, new[]{ "Target" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AttributeFieldMapping), global::Google.Ads.GoogleAds.V3.Resources.AttributeFieldMapping.Parser, new[]{ "FeedAttributeId", "FieldId", "SitelinkField", "CallField", "AppField", "LocationField", "AffiliateLocationField", "CalloutField", "StructuredSnippetField", "MessageField", "PriceField", "PromotionField", "AdCustomizerField", "DsaPageFeedField", "LocationExtensionTargetingField", "EducationField", "FlightField", "CustomField", "HotelField", "RealEstateField", "TravelField", "LocalField", "JobField" }, new[]{ "Field" }, null, null, null)
           }));
     }
     #endregion
@@ -255,7 +255,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus.Unspecified;
     /// <summary>
     /// Output only. Status of the feed mapping.
     /// This field is read-only.
@@ -276,7 +276,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType PlaceholderType {
-      get { return targetCase_ == TargetOneofCase.PlaceholderType ? (global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType) target_ : 0; }
+      get { return targetCase_ == TargetOneofCase.PlaceholderType ? (global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType) target_ : global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified; }
       set {
         target_ = value;
         targetCase_ = TargetOneofCase.PlaceholderType;
@@ -291,7 +291,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType CriterionType {
-      get { return targetCase_ == TargetOneofCase.CriterionType ? (global::Google.Ads.GoogleAds.V3.Enums.FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType) target_ : 0; }
+      get { return targetCase_ == TargetOneofCase.CriterionType ? (global::Google.Ads.GoogleAds.V3.Enums.FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType) target_ : global::Google.Ads.GoogleAds.V3.Enums.FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType.Unspecified; }
       set {
         target_ = value;
         targetCase_ = TargetOneofCase.CriterionType;
@@ -346,7 +346,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (feed_ != null) hash ^= Feed.GetHashCode();
       hash ^= attributeFieldMappings_.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus.Unspecified) hash ^= Status.GetHashCode();
       if (targetCase_ == TargetOneofCase.PlaceholderType) hash ^= PlaceholderType.GetHashCode();
       if (targetCase_ == TargetOneofCase.CriterionType) hash ^= CriterionType.GetHashCode();
       hash ^= (int) targetCase_;
@@ -379,7 +379,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteEnum((int) CriterionType);
       }
       attributeFieldMappings_.WriteTo(output, _repeated_attributeFieldMappings_codec);
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Status);
       }
@@ -398,7 +398,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         size += _single_feed_codec.CalculateSizeWithTag(Feed);
       }
       size += attributeFieldMappings_.CalculateSize(_repeated_attributeFieldMappings_codec);
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (targetCase_ == TargetOneofCase.PlaceholderType) {
@@ -427,7 +427,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         }
       }
       attributeFieldMappings_.Add(other.attributeFieldMappings_);
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus.Unspecified) {
         Status = other.Status;
       }
       switch (other.TargetCase) {
@@ -631,7 +631,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField SitelinkField {
-      get { return fieldCase_ == FieldOneofCase.SitelinkField ? (global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.SitelinkField ? (global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.SitelinkField;
@@ -645,7 +645,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.CallPlaceholderFieldEnum.Types.CallPlaceholderField CallField {
-      get { return fieldCase_ == FieldOneofCase.CallField ? (global::Google.Ads.GoogleAds.V3.Enums.CallPlaceholderFieldEnum.Types.CallPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.CallField ? (global::Google.Ads.GoogleAds.V3.Enums.CallPlaceholderFieldEnum.Types.CallPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.CallPlaceholderFieldEnum.Types.CallPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.CallField;
@@ -659,7 +659,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.AppPlaceholderFieldEnum.Types.AppPlaceholderField AppField {
-      get { return fieldCase_ == FieldOneofCase.AppField ? (global::Google.Ads.GoogleAds.V3.Enums.AppPlaceholderFieldEnum.Types.AppPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.AppField ? (global::Google.Ads.GoogleAds.V3.Enums.AppPlaceholderFieldEnum.Types.AppPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.AppPlaceholderFieldEnum.Types.AppPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.AppField;
@@ -673,7 +673,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.LocationPlaceholderFieldEnum.Types.LocationPlaceholderField LocationField {
-      get { return fieldCase_ == FieldOneofCase.LocationField ? (global::Google.Ads.GoogleAds.V3.Enums.LocationPlaceholderFieldEnum.Types.LocationPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.LocationField ? (global::Google.Ads.GoogleAds.V3.Enums.LocationPlaceholderFieldEnum.Types.LocationPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.LocationPlaceholderFieldEnum.Types.LocationPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.LocationField;
@@ -687,7 +687,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationPlaceholderFieldEnum.Types.AffiliateLocationPlaceholderField AffiliateLocationField {
-      get { return fieldCase_ == FieldOneofCase.AffiliateLocationField ? (global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationPlaceholderFieldEnum.Types.AffiliateLocationPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.AffiliateLocationField ? (global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationPlaceholderFieldEnum.Types.AffiliateLocationPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.AffiliateLocationPlaceholderFieldEnum.Types.AffiliateLocationPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.AffiliateLocationField;
@@ -701,7 +701,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.CalloutPlaceholderFieldEnum.Types.CalloutPlaceholderField CalloutField {
-      get { return fieldCase_ == FieldOneofCase.CalloutField ? (global::Google.Ads.GoogleAds.V3.Enums.CalloutPlaceholderFieldEnum.Types.CalloutPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.CalloutField ? (global::Google.Ads.GoogleAds.V3.Enums.CalloutPlaceholderFieldEnum.Types.CalloutPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.CalloutPlaceholderFieldEnum.Types.CalloutPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.CalloutField;
@@ -715,7 +715,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.StructuredSnippetPlaceholderFieldEnum.Types.StructuredSnippetPlaceholderField StructuredSnippetField {
-      get { return fieldCase_ == FieldOneofCase.StructuredSnippetField ? (global::Google.Ads.GoogleAds.V3.Enums.StructuredSnippetPlaceholderFieldEnum.Types.StructuredSnippetPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.StructuredSnippetField ? (global::Google.Ads.GoogleAds.V3.Enums.StructuredSnippetPlaceholderFieldEnum.Types.StructuredSnippetPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.StructuredSnippetPlaceholderFieldEnum.Types.StructuredSnippetPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.StructuredSnippetField;
@@ -729,7 +729,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.MessagePlaceholderFieldEnum.Types.MessagePlaceholderField MessageField {
-      get { return fieldCase_ == FieldOneofCase.MessageField ? (global::Google.Ads.GoogleAds.V3.Enums.MessagePlaceholderFieldEnum.Types.MessagePlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.MessageField ? (global::Google.Ads.GoogleAds.V3.Enums.MessagePlaceholderFieldEnum.Types.MessagePlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.MessagePlaceholderFieldEnum.Types.MessagePlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.MessageField;
@@ -743,7 +743,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.PricePlaceholderFieldEnum.Types.PricePlaceholderField PriceField {
-      get { return fieldCase_ == FieldOneofCase.PriceField ? (global::Google.Ads.GoogleAds.V3.Enums.PricePlaceholderFieldEnum.Types.PricePlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.PriceField ? (global::Google.Ads.GoogleAds.V3.Enums.PricePlaceholderFieldEnum.Types.PricePlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.PricePlaceholderFieldEnum.Types.PricePlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.PriceField;
@@ -757,7 +757,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.PromotionPlaceholderFieldEnum.Types.PromotionPlaceholderField PromotionField {
-      get { return fieldCase_ == FieldOneofCase.PromotionField ? (global::Google.Ads.GoogleAds.V3.Enums.PromotionPlaceholderFieldEnum.Types.PromotionPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.PromotionField ? (global::Google.Ads.GoogleAds.V3.Enums.PromotionPlaceholderFieldEnum.Types.PromotionPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.PromotionPlaceholderFieldEnum.Types.PromotionPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.PromotionField;
@@ -771,7 +771,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.AdCustomizerPlaceholderFieldEnum.Types.AdCustomizerPlaceholderField AdCustomizerField {
-      get { return fieldCase_ == FieldOneofCase.AdCustomizerField ? (global::Google.Ads.GoogleAds.V3.Enums.AdCustomizerPlaceholderFieldEnum.Types.AdCustomizerPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.AdCustomizerField ? (global::Google.Ads.GoogleAds.V3.Enums.AdCustomizerPlaceholderFieldEnum.Types.AdCustomizerPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.AdCustomizerPlaceholderFieldEnum.Types.AdCustomizerPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.AdCustomizerField;
@@ -785,7 +785,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.DsaPageFeedCriterionFieldEnum.Types.DsaPageFeedCriterionField DsaPageFeedField {
-      get { return fieldCase_ == FieldOneofCase.DsaPageFeedField ? (global::Google.Ads.GoogleAds.V3.Enums.DsaPageFeedCriterionFieldEnum.Types.DsaPageFeedCriterionField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.DsaPageFeedField ? (global::Google.Ads.GoogleAds.V3.Enums.DsaPageFeedCriterionFieldEnum.Types.DsaPageFeedCriterionField) field_ : global::Google.Ads.GoogleAds.V3.Enums.DsaPageFeedCriterionFieldEnum.Types.DsaPageFeedCriterionField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.DsaPageFeedField;
@@ -799,7 +799,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.LocationExtensionTargetingCriterionFieldEnum.Types.LocationExtensionTargetingCriterionField LocationExtensionTargetingField {
-      get { return fieldCase_ == FieldOneofCase.LocationExtensionTargetingField ? (global::Google.Ads.GoogleAds.V3.Enums.LocationExtensionTargetingCriterionFieldEnum.Types.LocationExtensionTargetingCriterionField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.LocationExtensionTargetingField ? (global::Google.Ads.GoogleAds.V3.Enums.LocationExtensionTargetingCriterionFieldEnum.Types.LocationExtensionTargetingCriterionField) field_ : global::Google.Ads.GoogleAds.V3.Enums.LocationExtensionTargetingCriterionFieldEnum.Types.LocationExtensionTargetingCriterionField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.LocationExtensionTargetingField;
@@ -813,7 +813,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.EducationPlaceholderFieldEnum.Types.EducationPlaceholderField EducationField {
-      get { return fieldCase_ == FieldOneofCase.EducationField ? (global::Google.Ads.GoogleAds.V3.Enums.EducationPlaceholderFieldEnum.Types.EducationPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.EducationField ? (global::Google.Ads.GoogleAds.V3.Enums.EducationPlaceholderFieldEnum.Types.EducationPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.EducationPlaceholderFieldEnum.Types.EducationPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.EducationField;
@@ -827,7 +827,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.FlightPlaceholderFieldEnum.Types.FlightPlaceholderField FlightField {
-      get { return fieldCase_ == FieldOneofCase.FlightField ? (global::Google.Ads.GoogleAds.V3.Enums.FlightPlaceholderFieldEnum.Types.FlightPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.FlightField ? (global::Google.Ads.GoogleAds.V3.Enums.FlightPlaceholderFieldEnum.Types.FlightPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.FlightPlaceholderFieldEnum.Types.FlightPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.FlightField;
@@ -841,7 +841,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.CustomPlaceholderFieldEnum.Types.CustomPlaceholderField CustomField {
-      get { return fieldCase_ == FieldOneofCase.CustomField ? (global::Google.Ads.GoogleAds.V3.Enums.CustomPlaceholderFieldEnum.Types.CustomPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.CustomField ? (global::Google.Ads.GoogleAds.V3.Enums.CustomPlaceholderFieldEnum.Types.CustomPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.CustomPlaceholderFieldEnum.Types.CustomPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.CustomField;
@@ -855,7 +855,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.HotelPlaceholderFieldEnum.Types.HotelPlaceholderField HotelField {
-      get { return fieldCase_ == FieldOneofCase.HotelField ? (global::Google.Ads.GoogleAds.V3.Enums.HotelPlaceholderFieldEnum.Types.HotelPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.HotelField ? (global::Google.Ads.GoogleAds.V3.Enums.HotelPlaceholderFieldEnum.Types.HotelPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.HotelPlaceholderFieldEnum.Types.HotelPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.HotelField;
@@ -869,7 +869,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.RealEstatePlaceholderFieldEnum.Types.RealEstatePlaceholderField RealEstateField {
-      get { return fieldCase_ == FieldOneofCase.RealEstateField ? (global::Google.Ads.GoogleAds.V3.Enums.RealEstatePlaceholderFieldEnum.Types.RealEstatePlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.RealEstateField ? (global::Google.Ads.GoogleAds.V3.Enums.RealEstatePlaceholderFieldEnum.Types.RealEstatePlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.RealEstatePlaceholderFieldEnum.Types.RealEstatePlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.RealEstateField;
@@ -883,7 +883,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.TravelPlaceholderFieldEnum.Types.TravelPlaceholderField TravelField {
-      get { return fieldCase_ == FieldOneofCase.TravelField ? (global::Google.Ads.GoogleAds.V3.Enums.TravelPlaceholderFieldEnum.Types.TravelPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.TravelField ? (global::Google.Ads.GoogleAds.V3.Enums.TravelPlaceholderFieldEnum.Types.TravelPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.TravelPlaceholderFieldEnum.Types.TravelPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.TravelField;
@@ -897,7 +897,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.LocalPlaceholderFieldEnum.Types.LocalPlaceholderField LocalField {
-      get { return fieldCase_ == FieldOneofCase.LocalField ? (global::Google.Ads.GoogleAds.V3.Enums.LocalPlaceholderFieldEnum.Types.LocalPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.LocalField ? (global::Google.Ads.GoogleAds.V3.Enums.LocalPlaceholderFieldEnum.Types.LocalPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.LocalPlaceholderFieldEnum.Types.LocalPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.LocalField;
@@ -911,7 +911,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.JobPlaceholderFieldEnum.Types.JobPlaceholderField JobField {
-      get { return fieldCase_ == FieldOneofCase.JobField ? (global::Google.Ads.GoogleAds.V3.Enums.JobPlaceholderFieldEnum.Types.JobPlaceholderField) field_ : 0; }
+      get { return fieldCase_ == FieldOneofCase.JobField ? (global::Google.Ads.GoogleAds.V3.Enums.JobPlaceholderFieldEnum.Types.JobPlaceholderField) field_ : global::Google.Ads.GoogleAds.V3.Enums.JobPlaceholderFieldEnum.Types.JobPlaceholderField.Unspecified; }
       set {
         field_ = value;
         fieldCase_ = FieldOneofCase.JobField;

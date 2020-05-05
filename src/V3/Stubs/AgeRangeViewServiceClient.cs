@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetAgeRangeView = clientHelper.BuildApiCall<GetAgeRangeViewRequest, gagvr::AgeRangeView>(
                 GrpcClient.GetAgeRangeViewAsync, GrpcClient.GetAgeRangeView, effectiveSettings.GetAgeRangeViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetAgeRangeView);
             Modify_GetAgeRangeViewApiCall(ref _callGetAgeRangeView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

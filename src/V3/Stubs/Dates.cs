@@ -37,8 +37,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DateRange), global::Google.Ads.GoogleAds.V3.Common.DateRange.Parser, new[]{ "StartDate", "EndDate" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.DateRange), global::Google.Ads.GoogleAds.V3.Common.DateRange.Parser, new[]{ "StartDate", "EndDate" }, null, null, null, null)
           }));
     }
     #endregion

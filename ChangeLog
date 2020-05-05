@@ -1,3 +1,37 @@
+2.9.0
+=====
+- Changed the buildstatus image to be .svg format. Updated the path in the README.md file.
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/157
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/158
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/159
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/160
+- Added support for v3_1 of Google Ads API.
+- Added new code examples.
+  - BasicOperations/UpdateExpandedTextAd.cs
+  - CampaignManagement/AddCompleteCampaignsUsingMutateJob.cs
+  - BasicOperations/GetResponsiveSearchAds.cs
+  - Extensions/AddAffiliateLocationExtensions.cs
+  - AccountManagement/GetAccountHierarchy.cs
+  - AccountManagement/AcceptServiceLinks.cs
+  - CampaignManagement/GraduateCampaignExperiment.cs
+  - Remarketing/UploadCallConversion.cs
+  - Targeting/SearchForTargetableLanguagesAndCarriers.cs
+  - Remarketing/AddCustomerMatchUserList.cs
+  - ShoppingAds/ApproveMerchantCenterLink.cs
+- Renamed some code examples to make the names consistent with other library examples.
+  - ErrorHandling/HandlePartialFailures.cs  => ErrorHandling/HandlePartialFailure.cs
+  - Extensions/UpdateFeedItemAttributeValue.cs => Extensions/UpdateFlightsFeedItemStringAttributeValue.cs
+  - Targeting/GetGeoTargetConstantsByName.cs => Targeting/GetGeoTargetConstantsByNames.cs
+- Fixed broken code examples.
+  - BasicOperations/AddResponsiveSearchAd.cs
+  - BasicOperations/GetExpandedTextAds.cs
+- Updated Billing/GetAccountBudgets.cs example to retrieve adjusted spending limit, and to use
+  streaming instead of paged retrieval.
+- Fixed the logging handler to handle situations where customer ID is not part of the request body.
+- Add throw statement to all code examples. Add exception handling where missing.
+- Standardized the INSERT_ADGROUP_ID placeholder name for parameters in various code examples.
+- Renamed ResourceNames.CampaignExperiments method to ResourceNames.CampaignExperiment for consistency.
+
 2.8.0
 =====
 

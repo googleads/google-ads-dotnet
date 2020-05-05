@@ -51,8 +51,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "R29vZ2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanNegativeKeyword), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanNegativeKeyword.Parser, new[]{ "ResourceName", "KeywordPlanCampaign", "Id", "Text", "MatchType" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanNegativeKeyword), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanNegativeKeyword.Parser, new[]{ "ResourceName", "KeywordPlanCampaign", "Id", "Text", "MatchType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -168,7 +168,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "match_type" field.</summary>
     public const int MatchTypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType matchType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType matchType_ = global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified;
     /// <summary>
     /// The keyword match type.
     /// </summary>
@@ -208,7 +208,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (keywordPlanCampaign_ != null) hash ^= KeywordPlanCampaign.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (text_ != null) hash ^= Text.GetHashCode();
-      if (MatchType != 0) hash ^= MatchType.GetHashCode();
+      if (MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) hash ^= MatchType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -235,7 +235,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (text_ != null) {
         _single_text_codec.WriteTagAndValue(output, Text);
       }
-      if (MatchType != 0) {
+      if (MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) MatchType);
       }
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (text_ != null) {
         size += _single_text_codec.CalculateSizeWithTag(Text);
       }
-      if (MatchType != 0) {
+      if (MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MatchType);
       }
       if (_unknownFields != null) {
@@ -291,7 +291,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Text = other.Text;
         }
       }
-      if (other.MatchType != 0) {
+      if (other.MatchType != global::Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified) {
         MatchType = other.MatchType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

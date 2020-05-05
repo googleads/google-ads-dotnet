@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxoeZ29v",
             "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90",
             "YXRpb25zLnByb3RvIq0EChFHZW9UYXJnZXRDb25zdGFudBJJCg1yZXNvdXJj",
-            "ZV9uYW1lGAEgASgJQjLgQQX6QSwKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
+            "ZV9uYW1lGAEgASgJQjLgQQP6QSwKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
             "bS9HZW9UYXJnZXRDb25zdGFudBIsCgJpZBgDIAEoCzIbLmdvb2dsZS5wcm90",
             "b2J1Zi5JbnQ2NFZhbHVlQgPgQQMSLwoEbmFtZRgEIAEoCzIcLmdvb2dsZS5w",
             "cm90b2J1Zi5TdHJpbmdWYWx1ZUID4EEDEjcKDGNvdW50cnlfY29kZRgFIAEo",
@@ -51,8 +51,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "R29vZ2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.GeoTargetConstantStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.GeoTargetConstant), global::Google.Ads.GoogleAds.V3.Resources.GeoTargetConstant.Parser, new[]{ "ResourceName", "Id", "Name", "CountryCode", "TargetType", "Status", "CanonicalName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.GeoTargetConstant), global::Google.Ads.GoogleAds.V3.Resources.GeoTargetConstant.Parser, new[]{ "ResourceName", "Id", "Name", "CountryCode", "TargetType", "Status", "CanonicalName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the geo target constant.
+    /// Output only. The resource name of the geo target constant.
     /// Geo target constant resource names have the form:
     ///
     /// `geoTargetConstants/{geo_target_constant_id}`
@@ -185,7 +185,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 7;
-    private global::Google.Ads.GoogleAds.V3.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Unspecified;
     /// <summary>
     /// Output only. Geo target constant status.
     /// </summary>
@@ -245,7 +245,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) hash ^= Name.GetHashCode();
       if (countryCode_ != null) hash ^= CountryCode.GetHashCode();
       if (targetType_ != null) hash ^= TargetType.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Unspecified) hash ^= Status.GetHashCode();
       if (canonicalName_ != null) hash ^= CanonicalName.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -276,7 +276,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (targetType_ != null) {
         _single_targetType_codec.WriteTagAndValue(output, TargetType);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Unspecified) {
         output.WriteRawTag(56);
         output.WriteEnum((int) Status);
       }
@@ -306,7 +306,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (targetType_ != null) {
         size += _single_targetType_codec.CalculateSizeWithTag(TargetType);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (canonicalName_ != null) {
@@ -346,7 +346,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           TargetType = other.TargetType;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.canonicalName_ != null) {

@@ -45,8 +45,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TagSnippet), global::Google.Ads.GoogleAds.V3.Common.TagSnippet.Parser, new[]{ "Type", "PageFormat", "GlobalSiteTag", "EventSnippet" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.TagSnippet), global::Google.Ads.GoogleAds.V3.Common.TagSnippet.Parser, new[]{ "Type", "PageFormat", "GlobalSiteTag", "EventSnippet" }, null, null, null, null)
           }));
     }
     #endregion
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType type_ = global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType.Unspecified;
     /// <summary>
     /// The type of the generated tag snippets for tracking conversions.
     /// </summary>
@@ -109,7 +109,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "page_format" field.</summary>
     public const int PageFormatFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat pageFormat_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat pageFormat_ = global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat.Unspecified;
     /// <summary>
     /// The format of the web page where the tracking tag and snippet will be
     /// installed, e.g. HTML.
@@ -179,8 +179,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (PageFormat != 0) hash ^= PageFormat.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType.Unspecified) hash ^= Type.GetHashCode();
+      if (PageFormat != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat.Unspecified) hash ^= PageFormat.GetHashCode();
       if (globalSiteTag_ != null) hash ^= GlobalSiteTag.GetHashCode();
       if (eventSnippet_ != null) hash ^= EventSnippet.GetHashCode();
       if (_unknownFields != null) {
@@ -196,11 +196,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
-      if (PageFormat != 0) {
+      if (PageFormat != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) PageFormat);
       }
@@ -218,10 +218,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (PageFormat != 0) {
+      if (PageFormat != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PageFormat);
       }
       if (globalSiteTag_ != null) {
@@ -241,10 +241,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType.Unspecified) {
         Type = other.Type;
       }
-      if (other.PageFormat != 0) {
+      if (other.PageFormat != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat.Unspecified) {
         PageFormat = other.PageFormat;
       }
       if (other.globalSiteTag_ != null) {

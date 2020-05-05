@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cmVzb3VyY2VzGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhln",
             "b29nbGUvYXBpL3Jlc291cmNlLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRp",
             "b25zLnByb3RvIt0BChRNYW5hZ2VkUGxhY2VtZW50VmlldxJMCg1yZXNvdXJj",
-            "ZV9uYW1lGAEgASgJQjXgQQX6QS8KLWdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
+            "ZV9uYW1lGAEgASgJQjXgQQP6QS8KLWdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
             "bS9NYW5hZ2VkUGxhY2VtZW50Vmlldzp36kF0Ci1nb29nbGVhZHMuZ29vZ2xl",
             "YXBpcy5jb20vTWFuYWdlZFBsYWNlbWVudFZpZXcSQ2N1c3RvbWVycy97Y3Vz",
             "dG9tZXJ9L21hbmFnZWRQbGFjZW1lbnRWaWV3cy97bWFuYWdlZF9wbGFjZW1l",
@@ -42,8 +42,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Y2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ManagedPlacementView), global::Google.Ads.GoogleAds.V3.Resources.ManagedPlacementView.Parser, new[]{ "ResourceName" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ManagedPlacementView), global::Google.Ads.GoogleAds.V3.Resources.ManagedPlacementView.Parser, new[]{ "ResourceName" }, null, null, null, null)
           }));
     }
     #endregion
@@ -91,7 +91,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the Managed Placement view.
+    /// Output only. The resource name of the Managed Placement view.
     /// Managed placement view resource names have the form:
     ///
     /// `customers/{customer_id}/managedPlacementViews/{ad_group_id}~{criterion_id}`

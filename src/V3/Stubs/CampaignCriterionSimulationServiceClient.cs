@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCampaignCriterionSimulation = clientHelper.BuildApiCall<GetCampaignCriterionSimulationRequest, gagvr::CampaignCriterionSimulation>(
                 GrpcClient.GetCampaignCriterionSimulationAsync, GrpcClient.GetCampaignCriterionSimulation, effectiveSettings.GetCampaignCriterionSimulationSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetCampaignCriterionSimulation);
             Modify_GetCampaignCriterionSimulationApiCall(ref _callGetCampaignCriterionSimulation);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

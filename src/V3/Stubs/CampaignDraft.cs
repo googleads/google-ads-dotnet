@@ -54,8 +54,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Z2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.CampaignDraftStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignDraft), global::Google.Ads.GoogleAds.V3.Resources.CampaignDraft.Parser, new[]{ "ResourceName", "DraftId", "BaseCampaign", "Name", "DraftCampaign", "Status", "HasExperimentRunning", "LongRunningOperation" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignDraft), global::Google.Ads.GoogleAds.V3.Resources.CampaignDraft.Parser, new[]{ "ResourceName", "DraftId", "BaseCampaign", "Name", "DraftCampaign", "Status", "HasExperimentRunning", "LongRunningOperation" }, null, null, null, null)
           }));
     }
     #endregion
@@ -200,7 +200,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.CampaignDraftStatusEnum.Types.CampaignDraftStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CampaignDraftStatusEnum.Types.CampaignDraftStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.CampaignDraftStatusEnum.Types.CampaignDraftStatus.Unspecified;
     /// <summary>
     /// Output only. The status of the campaign draft. This field is read-only.
     ///
@@ -280,7 +280,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (baseCampaign_ != null) hash ^= BaseCampaign.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
       if (draftCampaign_ != null) hash ^= DraftCampaign.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignDraftStatusEnum.Types.CampaignDraftStatus.Unspecified) hash ^= Status.GetHashCode();
       if (hasExperimentRunning_ != null) hash ^= HasExperimentRunning.GetHashCode();
       if (longRunningOperation_ != null) hash ^= LongRunningOperation.GetHashCode();
       if (_unknownFields != null) {
@@ -312,7 +312,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (draftCampaign_ != null) {
         _single_draftCampaign_codec.WriteTagAndValue(output, DraftCampaign);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignDraftStatusEnum.Types.CampaignDraftStatus.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Status);
       }
@@ -345,7 +345,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (draftCampaign_ != null) {
         size += _single_draftCampaign_codec.CalculateSizeWithTag(DraftCampaign);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignDraftStatusEnum.Types.CampaignDraftStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (hasExperimentRunning_ != null) {
@@ -388,7 +388,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           DraftCampaign = other.DraftCampaign;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignDraftStatusEnum.Types.CampaignDraftStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.hasExperimentRunning_ != null) {

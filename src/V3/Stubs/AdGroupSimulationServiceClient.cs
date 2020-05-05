@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetAdGroupSimulation = clientHelper.BuildApiCall<GetAdGroupSimulationRequest, gagvr::AdGroupSimulation>(
                 GrpcClient.GetAdGroupSimulationAsync, GrpcClient.GetAdGroupSimulation, effectiveSettings.GetAdGroupSimulationSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetAdGroupSimulation);
             Modify_GetAdGroupSimulationApiCall(ref _callGetAdGroupSimulation);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
