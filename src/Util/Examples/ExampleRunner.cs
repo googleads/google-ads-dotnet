@@ -102,20 +102,7 @@ namespace Google.Ads.GoogleAds.Examples
 
             object[] paramValues = BuildExampleParameterList(session, flags);
             MethodInfo runMethod = GetRunMethod(codeExample);
-            try
-            {
-                runMethod.Invoke(codeExample, paramValues);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("An exception occurred while running this code example. {0}",
-                    ExampleUtilities.FormatException(e));
-            }
-            finally
-            {
-                Console.WriteLine("Press [Enter] to continue");
-                Console.ReadLine();
-            }
+            runMethod.Invoke(codeExample, paramValues);
         }
 
         /// <summary>
