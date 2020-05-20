@@ -13,7 +13,6 @@
 // limitations under the License.
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
@@ -23,6 +22,7 @@ using Google.Ads.GoogleAds.V3.Errors;
 using Google.Ads.GoogleAds.V3.Resources;
 using Google.Ads.GoogleAds.V3.Services;
 using static Google.Ads.GoogleAds.V3.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V3
 {
@@ -78,24 +78,23 @@ namespace Google.Ads.GoogleAds.Examples.V3
             try
             {
                 // Create a feed, which acts as a table to store data.  
-                // feed_data = create_feed(client, customer_id)
-                Hashtable feedData = CreateFeed(client, customerId);
+                Feed feed = CreateFeed(client, customerId);
 
                 // Create feed items, which fill out the feed table with data.
-                CreateFeedItems(client, customerId, feedData);
+                List<string> feedItems = CreateFeedItems(client, customerId, feed);
 
                 // Create a feed mapping, which tells Google Ads how to interpret this data to
                 // display additional sitelink information on ads.
-                CreateFeedMapping(client, customerId, feedData);
-                
+                CreateFeedMapping(client, customerId, feed);
+
                 // Create a campaign feed, which tells Google Ads which campaigns to use the
                 // provided data with.
-                
-                CreateCampaignFeed(client, customerId, campaignId, feedData);
+                CreateCampaignFeed(client, customerId, campaignId, feed);
+
                 // If an ad group is specified, limit targeting only to the given ad group.
                 if (adGroupId.HasValue)
                 {
-                    CreateAdGroupTargeting(client, customerId, feedData, adGroupId.Value);
+                    CreateAdGroupTargeting(client, customerId, adGroupId.Value, feedItems);
                 }
             }
             catch (GoogleAdsException e)
@@ -108,27 +107,34 @@ namespace Google.Ads.GoogleAds.Examples.V3
             }
         }
 
-        private Hashtable CreateFeed(GoogleAdsClient client, long customerId)
+        /// <summary>
+        /// Creates a feed, which acts as a table to store data.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
+        /// <returns>The newly created feed.</returns>
+        private Feed CreateFeed(GoogleAdsClient client, long customerId)
         {
+            FeedServiceClient feedServiceClient = client.GetService(Services.V3.FeedService);
+            GoogleAdsServiceClient googleAdsService = client.GetService(
+                Services.V3.GoogleAdsService);
+
             Feed feed = new Feed()
             {
-                Name = $"Sitelinks Feed {DateTime.Now:yyyy-MM-dd hh:mm:ss}",
-                Origin = FeedOriginEnum.Types.FeedOrigin.User
+                Name = $"Sitelinks Feed {ExampleUtilities.GetRandomString()}",
+                Origin = FeedOriginEnum.Types.FeedOrigin.User,
+                // Specify the column name and data type. This is just raw data at this point, and
+                // not yet linked to any particular purpose. The names are used to help us remember
+                // what they are intended for later.
+                Attributes =
+                {
+                    CreateFeedAttribute("Link Text", FeedAttributeType.String),
+                    CreateFeedAttribute("Link Final URL", FeedAttributeType.UrlList),
+                    CreateFeedAttribute("Line 1", FeedAttributeType.String),
+                    CreateFeedAttribute("Line 2", FeedAttributeType.String)
+                }
             };
 
-            // Specify the column name and data type. This is just raw data at this point,
-            // and not yet linked to any particular purpose. The names are used to help us
-            // remember what they are intended for later.
-            feed.Attributes.Add(CreateFeedAttribute("Link Text",
-                FeedAttributeType.String));
-            feed.Attributes.Add(CreateFeedAttribute("Link Final Url",
-                FeedAttributeType.UrlList));
-            feed.Attributes.Add(CreateFeedAttribute("Line 1",
-                FeedAttributeType.String));
-            feed.Attributes.Add(CreateFeedAttribute("Line 2",
-                FeedAttributeType.String));
-
-            FeedServiceClient feedServiceClient = client.GetService(Services.V3.FeedService);
             FeedOperation operation = new FeedOperation()
             {
                 Create = feed
@@ -141,26 +147,18 @@ namespace Google.Ads.GoogleAds.Examples.V3
 
             // After we create the feed, we need to fetch it so we can determine the
             // attribute IDs, which will be required when populating feed items.
-            GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V3.GoogleAdsService);
-            feed = googleAdsService.Search(
+            return googleAdsService.Search(
                 customerId.ToString(),
                 $"SELECT feed.attributes FROM feed WHERE feed.resource_name = '{feedResourceName}'"
             ).First().Feed;
-
-            Hashtable attributeIds = new Hashtable
-            {
-                {"feed", feedResourceName},
-                // The attribute IDs come back in the same order that they were added.
-                {"linkTextAttributeId", feed.Attributes[0].Id},
-                {"finalUrlAttributeId", feed.Attributes[1].Id},
-                {"line1AttributeId", feed.Attributes[2].Id},
-                {"line2AttributeId", feed.Attributes[3].Id}
-            };
-
-            return attributeIds;
         }
 
+        /// <summary>
+        /// Helper method to construct a single FeedAttribute.
+        /// </summary>
+        /// <param name="name">The name of the attribute to store.</param>
+        /// <param name="type">The type represented by this attributed.</param>
+        /// <returns>The newly created FeedAttribute instance.</returns>
         private FeedAttribute CreateFeedAttribute(string name, FeedAttributeType type)
         {
             return new FeedAttribute()
@@ -170,39 +168,51 @@ namespace Google.Ads.GoogleAds.Examples.V3
             };
         }
 
-        private FeedItemOperation NewFeedItemOperation(Hashtable data, string text, string finalUrl,
+        /// <summary>
+        /// Helper method to construct a single FeedAttribute.
+        /// </summary>
+        /// <param name="feed">The feed for which the operation will be created.</param>
+        /// <param name="text">The link text for the feed item.</param>
+        /// <param name="finalUrl">The final URL for the feed item.</param>
+        /// <param name="line1">Line 1 of the feed item.</param>
+        /// <param name="line2">Line 2 of the feed item.</param>
+        /// <returns>The newly created FeedAttribute instance.</returns>
+        private FeedItemOperation NewFeedItemOperation(Feed feed, string text, string finalUrl,
             string line1, string line2)
         {
-            FeedItem feedItem = new FeedItem()
-            {
-                Feed = data["feed"].ToString()
-            };
-
+            // The attribute IDs come back in the same order that they were added.
             FeedItemAttributeValue linkTextAttributeValue = new FeedItemAttributeValue()
             {
-                FeedAttributeId = (long) data["linkTextAttributeId"],
+                FeedAttributeId = feed.Attributes[0].Id,
                 StringValue = text
             };
             FeedItemAttributeValue finalUrlAttributeValue = new FeedItemAttributeValue()
             {
-                FeedAttributeId = (long) data["finalUrlAttributeId"]
+                FeedAttributeId = feed.Attributes[1].Id,
+                StringValues = {finalUrl}
             };
-            finalUrlAttributeValue.StringValues.Add(finalUrl);
             FeedItemAttributeValue line1AttributeValue = new FeedItemAttributeValue()
             {
-                FeedAttributeId = (long) data["line1AttributeId"],
+                FeedAttributeId = feed.Attributes[2].Id,
                 StringValue = line1
             };
             FeedItemAttributeValue line2AttributeValue = new FeedItemAttributeValue()
             {
-                FeedAttributeId = (long) data["line2AttributeId"],
+                FeedAttributeId = feed.Attributes[3].Id,
                 StringValue = line2
             };
 
-            feedItem.AttributeValues.Add(linkTextAttributeValue);
-            feedItem.AttributeValues.Add(finalUrlAttributeValue);
-            feedItem.AttributeValues.Add(line1AttributeValue);
-            feedItem.AttributeValues.Add(line2AttributeValue);
+            FeedItem feedItem = new FeedItem()
+            {
+                Feed = feed.ResourceName,
+                AttributeValues =
+                {
+                    linkTextAttributeValue,
+                    finalUrlAttributeValue,
+                    line1AttributeValue,
+                    line2AttributeValue
+                }
+            };
 
             FeedItemOperation feedItemOperation = new FeedItemOperation()
             {
@@ -212,107 +222,126 @@ namespace Google.Ads.GoogleAds.Examples.V3
             return feedItemOperation;
         }
 
-        private void CreateFeedItems(GoogleAdsClient client, long customerId, Hashtable feedData)
+        /// <summary>
+        /// Creates feed items, which fill out the feed table with data.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
+        /// <param name="feed">The feed for which the operation will be created.</param>
+        /// <returns>A list of string Feed Item Resource Names.</returns>
+        private List<string> CreateFeedItems(GoogleAdsClient client, long customerId, Feed feed)
         {
+            FeedItemServiceClient feedItemService = client.GetService(Services.V3.FeedItemService);
+
             List<FeedItemOperation> operations = new List<FeedItemOperation>
             {
-                NewFeedItemOperation(feedData, "Home", "http://www.example.com",
+                NewFeedItemOperation(feed, "Home", "http://www.example.com",
                     "Home line 1", "Home line 2"),
-                NewFeedItemOperation(feedData, "Stores",
+                NewFeedItemOperation(feed, "Stores",
                     "http://www.example.com/stores", "Stores line 1", "Stores line 2"),
-                NewFeedItemOperation(feedData, "On Sale",
+                NewFeedItemOperation(feed, "On Sale",
                     "http://www.example.com/sale", "On Sale line 1", "On Sale line 2"),
-                NewFeedItemOperation(feedData, "Support",
+                NewFeedItemOperation(feed, "Support",
                     "http://www.example.com/support", "Support line 1", "Support line 2"),
-                NewFeedItemOperation(feedData, "Products",
+                NewFeedItemOperation(feed, "Products",
                     "http://www.example.com/catalogue",
                     "Products line 1", "Products line 2"),
-                NewFeedItemOperation(feedData, "About Us", "http://www.example.com/about",
+                NewFeedItemOperation(feed, "About Us", "http://www.example.com/about",
                     "About Us line 1", "About Us line 2")
             };
 
-            FeedItemServiceClient feedItemService = client.GetService(Services.V3.FeedItemService);
             MutateFeedItemsResponse response =
                 feedItemService.MutateFeedItems(customerId.ToString(), operations);
-            
+
             // We will need the resource name of each feed item to use in targeting.
             List<string> feedItemResourceNames = new List<string>();
-            // We may also need the feed item ID if we are going to use it in a mapping function.
-            // For feed items, the ID is the last part of the resource name, after the '~'.
-            List<long> feedItemIds = new List<long>();
-            
+
             Console.WriteLine("Created the following feed items:");
             foreach (MutateFeedItemResult feedItemResult in response.Results)
             {
                 Console.WriteLine($"\t{feedItemResult.ResourceName}");
 
                 feedItemResourceNames.Add(feedItemResult.ResourceName);
-                feedItemIds.Add(long.Parse(feedItemResult.ResourceName.Split('~').Last()));
             }
-            
-            feedData.Add("feedItems", feedItemResourceNames);
-            feedData.Add("feedItemIds", feedItemIds);
+
+            return feedItemResourceNames;
         }
 
-        private void CreateFeedMapping(GoogleAdsClient client, long customerId, Hashtable feedData)
+        /// <summary>
+        /// Creates a feed mapping, which tells Google Ads how to interpret this data to display
+        /// additional sitelink information on ads.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
+        /// <param name="feed">The feed for which the operation will be created.</param>
+        private void CreateFeedMapping(GoogleAdsClient client, long customerId, Feed feed)
         {
+            FeedMappingServiceClient feedMappingServiceClient =
+                client.GetService(Services.V3.FeedMappingService);
+
             FeedMapping feedMapping = new FeedMapping
             {
                 PlaceholderType = PlaceholderTypeEnum.Types.PlaceholderType.Sitelink,
-                Feed = feedData["feed"].ToString()
+                Feed = feed.ResourceName,
             };
 
-            AttributeFieldMapping linkTextAttribute = new AttributeFieldMapping()
+            foreach (FeedAttribute feedAttribute in feed.Attributes)
             {
-                FeedAttributeId = (long) feedData["linkTextAttributeId"],
-                SitelinkField = SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField.Text
-            };
-            AttributeFieldMapping finalUrlAttribute = new AttributeFieldMapping()
-            {
-                FeedAttributeId = (long) feedData["finalUrlAttributeId"],
-                SitelinkField = 
-                    SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField.FinalUrls                
-            };
-            AttributeFieldMapping line1Attribute = new AttributeFieldMapping()
-            {
-                FeedAttributeId = (long) feedData["line1AttributeId"],
-                SitelinkField = SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField.Line1
-            };
-            AttributeFieldMapping line2Attribute = new AttributeFieldMapping()
-            {
-                FeedAttributeId = (long) feedData["line2AttributeId"],
-                SitelinkField = SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField.Line2
-            };
-            
-            feedMapping.AttributeFieldMappings.Add(linkTextAttribute);
-            feedMapping.AttributeFieldMappings.Add(finalUrlAttribute);
-            feedMapping.AttributeFieldMappings.Add(line1Attribute);
-            feedMapping.AttributeFieldMappings.Add(line2Attribute);
+                AttributeFieldMapping attributeFieldMapping = new AttributeFieldMapping()
+                {
+                    FeedAttributeId = feedAttribute.Id
+                };
+
+                switch (feedAttribute.Name)
+                {
+                    case "Link Text":
+                        attributeFieldMapping.SitelinkField = SitelinkPlaceholderField.Text;
+                        break;
+                    case "Link Final URL":
+                        attributeFieldMapping.SitelinkField = SitelinkPlaceholderField.FinalUrls;
+                        break;
+                    case "Line 1":
+                        attributeFieldMapping.SitelinkField = SitelinkPlaceholderField.Line1;
+                        break;
+                    case "Line 2":
+                        attributeFieldMapping.SitelinkField = SitelinkPlaceholderField.Line2;
+                        break;
+                }
+
+                feedMapping.AttributeFieldMappings.Add(attributeFieldMapping);
+            }
 
             FeedMappingOperation operation = new FeedMappingOperation()
             {
                 Create = feedMapping
             };
-            
-            FeedMappingServiceClient feedMappingServiceClient = 
-                client.GetService(Services.V3.FeedMappingService);
 
             MutateFeedMappingsResponse response = feedMappingServiceClient.MutateFeedMappings
                 (customerId.ToString(), new[] {operation});
-            
+
             Console.WriteLine($"Created feed mapping '{response.Results.First().ResourceName}'");
         }
 
+        /// <summary>
+        /// Creates a campaign feed, which tells Google Ads which campaigns to use the provided
+        /// data with.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
+        /// <param name="campaignId">The campaign to receive the feed.</param>
+        /// <param name="feed">The feed to connect to the campaign.</param>
         private void CreateCampaignFeed(GoogleAdsClient client, long customerId, long campaignId,
-            Hashtable feedData)
+            Feed feed)
         {
-            List<long> feedItemIds = (List<long>)feedData["feedItemIds"];
-            // Convert all the Feed Item IDs to strings and collapse them into a single
-            // comma-separated string.
+            CampaignFeedServiceClient campaignFeedServiceClient =
+                client.GetService(Services.V3.CampaignFeedService);
+
+            // Fetch the Feed Item IDs and collapse them into a single comma-separated string.
+            List<long> feedItemIds = feed.Attributes.Select(attr => attr.Id.Value).ToList();
             string aggregatedFeedItemIds = String.Join(',', feedItemIds);
             CampaignFeed campaignFeed = new CampaignFeed()
             {
-                Feed = feedData["feed"].ToString(),
+                Feed = feed.ResourceName,
                 Campaign = ResourceNames.Campaign(customerId, campaignId),
                 MatchingFunction = new MatchingFunction()
                 {
@@ -321,46 +350,52 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 }
             };
             campaignFeed.PlaceholderTypes.Add(PlaceholderTypeEnum.Types.PlaceholderType.Sitelink);
-            
+
             CampaignFeedOperation operation = new CampaignFeedOperation()
             {
                 Create = campaignFeed
             };
 
-            CampaignFeedServiceClient campaignFeedServiceClient = 
-                client.GetService(Services.V3.CampaignFeedService);
-
             MutateCampaignFeedsResponse response = campaignFeedServiceClient.MutateCampaignFeeds(
                 customerId.ToString(), new[] {operation});
-            
+
             Console.WriteLine($"Created campaign feed '{response.Results.First().ResourceName}'");
         }
 
-        private void CreateAdGroupTargeting(GoogleAdsClient client, long customerId,
-            Hashtable feedData, long adGroupId)
+        /// <summary>
+        /// Targets the feed items to the given ad group.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
+        /// <param name="adGroupId">The ID of the Ad Group being targeted.</param>
+        /// <param name="feedItems">The feed items that were added to the feed.</param>
+        private void CreateAdGroupTargeting(GoogleAdsClient client, long customerId, long adGroupId,
+            List<string> feedItems)
         {
-            List<string> feedItemResourceNames = (List<string>) feedData["feedItems"];
-            string feedItem = feedItemResourceNames.First();
-            
+            FeedItemTargetServiceClient feedItemTargetServiceClient =
+                client.GetService(Services.V3.FeedItemTargetService);
+
+            // You must set targeting on a per-feed-item basis. This will restrict the first feed
+            // item we added to only serve for the given ad group.
+            string feedItem = feedItems.First();
+
             FeedItemTarget feedItemTarget = new FeedItemTarget()
             {
                 FeedItem = feedItem,
                 AdGroup = ResourceNames.AdGroup(customerId, adGroupId)
             };
-            
+
             FeedItemTargetOperation operation = new FeedItemTargetOperation()
             {
                 Create = feedItemTarget
             };
 
-            FeedItemTargetServiceClient feedItemTargetServiceClient = 
-                client.GetService(Services.V3.FeedItemTargetService);
-
             MutateFeedItemTargetsResponse response = feedItemTargetServiceClient
                 .MutateFeedItemTargets(customerId.ToString(), new[] {operation});
-            
-            Console.WriteLine($"Created feed item target '{response.Results.First().ResourceName}' " +
-                              $"for feed item '{feedItem}'.");
+
+            Console.WriteLine(
+                $"Created feed item target '{response.Results.First().ResourceName}' " +
+                $"for feed item '{feedItem}'.");
         }
     }
 }
