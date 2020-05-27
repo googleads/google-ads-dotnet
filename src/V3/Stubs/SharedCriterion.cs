@@ -60,8 +60,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "QWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.SharedCriterion), global::Google.Ads.GoogleAds.V3.Resources.SharedCriterion.Parser, new[]{ "ResourceName", "SharedSet", "CriterionId", "Type", "Keyword", "YoutubeVideo", "YoutubeChannel", "Placement", "MobileAppCategory", "MobileApplication" }, new[]{ "Criterion" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.SharedCriterion), global::Google.Ads.GoogleAds.V3.Resources.SharedCriterion.Parser, new[]{ "ResourceName", "SharedSet", "CriterionId", "Type", "Keyword", "YoutubeVideo", "YoutubeChannel", "Placement", "MobileAppCategory", "MobileApplication" }, new[]{ "Criterion" }, null, null, null)
           }));
     }
     #endregion
@@ -182,7 +182,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType type_ = global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified;
     /// <summary>
     /// Output only. The type of the criterion.
     /// </summary>
@@ -334,7 +334,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (sharedSet_ != null) hash ^= SharedSet.GetHashCode();
       if (criterionId_ != null) hash ^= CriterionId.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) hash ^= Type.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.Keyword) hash ^= Keyword.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.YoutubeVideo) hash ^= YoutubeVideo.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.YoutubeChannel) hash ^= YoutubeChannel.GetHashCode();
@@ -366,7 +366,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(26);
         output.WriteMessage(Keyword);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) Type);
       }
@@ -410,7 +410,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (criterionId_ != null) {
         size += _single_criterionId_codec.CalculateSizeWithTag(CriterionId);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (criterionCase_ == CriterionOneofCase.Keyword) {
@@ -455,7 +455,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           CriterionId = other.CriterionId;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
         Type = other.Type;
       }
       switch (other.CriterionCase) {

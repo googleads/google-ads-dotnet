@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateLabelsResponse expectedResponse = new MutateLabelsResponse();
             mockGrpcClient.Setup(x => x.MutateLabels(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<LabelOperation> operations = new List<LabelOperation>();
-            MutateLabelsResponse response = client.MutateLabels(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateLabelsResponse response = client.MutateLabels(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateLabelsResponse expectedResponse = new MutateLabelsResponse();
             mockGrpcClient.Setup(x => x.MutateLabelsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<LabelOperation> operations = new List<LabelOperation>();
-            MutateLabelsResponse response = await client.MutateLabelsAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateLabelsResponse response = await client.MutateLabelsAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

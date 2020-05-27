@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetDistanceView = clientHelper.BuildApiCall<GetDistanceViewRequest, gagvr::DistanceView>(
                 GrpcClient.GetDistanceViewAsync, GrpcClient.GetDistanceView, effectiveSettings.GetDistanceViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetDistanceView);
             Modify_GetDistanceViewApiCall(ref _callGetDistanceView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

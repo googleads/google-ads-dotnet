@@ -58,9 +58,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "Okdvb2dsZUFkczo6VjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanCampaign), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanCampaign.Parser, new[]{ "ResourceName", "KeywordPlan", "Id", "Name", "LanguageConstants", "KeywordPlanNetwork", "CpcBidMicros", "GeoTargets" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanGeoTarget), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanGeoTarget.Parser, new[]{ "GeoTargetConstant" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanCampaign), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanCampaign.Parser, new[]{ "ResourceName", "KeywordPlan", "Id", "Name", "LanguageConstants", "KeywordPlanNetwork", "CpcBidMicros", "GeoTargets" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanGeoTarget), global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanGeoTarget.Parser, new[]{ "GeoTargetConstant" }, null, null, null, null)
           }));
     }
     #endregion
@@ -196,7 +196,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "keyword_plan_network" field.</summary>
     public const int KeywordPlanNetworkFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork_ = global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified;
     /// <summary>
     /// Targeting network.
     ///
@@ -277,7 +277,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) hash ^= Id.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
       hash ^= languageConstants_.GetHashCode();
-      if (KeywordPlanNetwork != 0) hash ^= KeywordPlanNetwork.GetHashCode();
+      if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) hash ^= KeywordPlanNetwork.GetHashCode();
       if (cpcBidMicros_ != null) hash ^= CpcBidMicros.GetHashCode();
       hash ^= geoTargets_.GetHashCode();
       if (_unknownFields != null) {
@@ -307,7 +307,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
       languageConstants_.WriteTo(output, _repeated_languageConstants_codec);
-      if (KeywordPlanNetwork != 0) {
+      if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) KeywordPlanNetwork);
       }
@@ -336,7 +336,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
       size += languageConstants_.CalculateSize(_repeated_languageConstants_codec);
-      if (KeywordPlanNetwork != 0) {
+      if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanNetwork);
       }
       if (cpcBidMicros_ != null) {
@@ -373,7 +373,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         }
       }
       languageConstants_.Add(other.languageConstants_);
-      if (other.KeywordPlanNetwork != 0) {
+      if (other.KeywordPlanNetwork != global::Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         KeywordPlanNetwork = other.KeywordPlanNetwork;
       }
       if (other.cpcBidMicros_ != null) {
@@ -445,7 +445,6 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
   /// <summary>
   /// A geo target.
-  /// Next ID: 3
   /// </summary>
   public sealed partial class KeywordPlanGeoTarget : pb::IMessage<KeywordPlanGeoTarget> {
     private static readonly pb::MessageParser<KeywordPlanGeoTarget> _parser = new pb::MessageParser<KeywordPlanGeoTarget>(() => new KeywordPlanGeoTarget());

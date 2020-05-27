@@ -50,8 +50,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.CampaignSharedSetStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignSharedSet), global::Google.Ads.GoogleAds.V3.Resources.CampaignSharedSet.Parser, new[]{ "ResourceName", "Campaign", "SharedSet", "Status" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignSharedSet), global::Google.Ads.GoogleAds.V3.Resources.CampaignSharedSet.Parser, new[]{ "ResourceName", "Campaign", "SharedSet", "Status" }, null, null, null, null)
           }));
     }
     #endregion
@@ -155,7 +155,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Unspecified;
     /// <summary>
     /// Output only. The status of this campaign shared set. Read only.
     /// </summary>
@@ -193,7 +193,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (campaign_ != null) hash ^= Campaign.GetHashCode();
       if (sharedSet_ != null) hash ^= SharedSet.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Unspecified) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -211,7 +211,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Status);
       }
@@ -238,7 +238,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (sharedSet_ != null) {
         size += _single_sharedSet_codec.CalculateSizeWithTag(SharedSet);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (_unknownFields != null) {
@@ -265,7 +265,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           SharedSet = other.SharedSet;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Unspecified) {
         Status = other.Status;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

@@ -65,10 +65,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelSubTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryChannelAvailabilityModeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryLocaleAvailabilityModeReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryAvailability), global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryAvailability.Parser, new[]{ "Channel", "Locale" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryChannelAvailability), global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryChannelAvailability.Parser, new[]{ "AvailabilityMode", "AdvertisingChannelType", "AdvertisingChannelSubType", "IncludeDefaultChannelSubType" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryLocaleAvailability), global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryLocaleAvailability.Parser, new[]{ "AvailabilityMode", "CountryCode", "LanguageCode" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryAvailability), global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryAvailability.Parser, new[]{ "Channel", "Locale" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryChannelAvailability), global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryChannelAvailability.Parser, new[]{ "AvailabilityMode", "AdvertisingChannelType", "AdvertisingChannelSubType", "IncludeDefaultChannelSubType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryLocaleAvailability), global::Google.Ads.GoogleAds.V3.Common.CriterionCategoryLocaleAvailability.Parser, new[]{ "AvailabilityMode", "CountryCode", "LanguageCode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "availability_mode" field.</summary>
     public const int AvailabilityModeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode availabilityMode_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode availabilityMode_ = global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode.Unspecified;
     /// <summary>
     /// Format of the channel availability. Can be ALL_CHANNELS (the rest of the
     /// fields will not be set), CHANNEL_TYPE (only advertising_channel_type type
@@ -301,7 +301,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "advertising_channel_type" field.</summary>
     public const int AdvertisingChannelTypeFieldNumber = 2;
-    private global::Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType advertisingChannelType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType advertisingChannelType_ = global::Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType.Unspecified;
     /// <summary>
     /// Channel type the category is available to.
     /// </summary>
@@ -368,8 +368,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (AvailabilityMode != 0) hash ^= AvailabilityMode.GetHashCode();
-      if (AdvertisingChannelType != 0) hash ^= AdvertisingChannelType.GetHashCode();
+      if (AvailabilityMode != global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode.Unspecified) hash ^= AvailabilityMode.GetHashCode();
+      if (AdvertisingChannelType != global::Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType.Unspecified) hash ^= AdvertisingChannelType.GetHashCode();
       hash ^= advertisingChannelSubType_.GetHashCode();
       if (includeDefaultChannelSubType_ != null) hash ^= IncludeDefaultChannelSubType.GetHashCode();
       if (_unknownFields != null) {
@@ -385,11 +385,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (AvailabilityMode != 0) {
+      if (AvailabilityMode != global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) AvailabilityMode);
       }
-      if (AdvertisingChannelType != 0) {
+      if (AdvertisingChannelType != global::Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType.Unspecified) {
         output.WriteRawTag(16);
         output.WriteEnum((int) AdvertisingChannelType);
       }
@@ -405,10 +405,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (AvailabilityMode != 0) {
+      if (AvailabilityMode != global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AvailabilityMode);
       }
-      if (AdvertisingChannelType != 0) {
+      if (AdvertisingChannelType != global::Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdvertisingChannelType);
       }
       size += advertisingChannelSubType_.CalculateSize(_repeated_advertisingChannelSubType_codec);
@@ -426,10 +426,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.AvailabilityMode != 0) {
+      if (other.AvailabilityMode != global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode.Unspecified) {
         AvailabilityMode = other.AvailabilityMode;
       }
-      if (other.AdvertisingChannelType != 0) {
+      if (other.AdvertisingChannelType != global::Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType.Unspecified) {
         AdvertisingChannelType = other.AdvertisingChannelType;
       }
       advertisingChannelSubType_.Add(other.advertisingChannelSubType_);
@@ -516,7 +516,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     /// <summary>Field number for the "availability_mode" field.</summary>
     public const int AvailabilityModeFieldNumber = 1;
-    private global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode availabilityMode_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode availabilityMode_ = global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode.Unspecified;
     /// <summary>
     /// Format of the locale availability. Can be LAUNCHED_TO_ALL (both country and
     /// language will be empty), COUNTRY (only country will be set), LANGUAGE (only
@@ -585,7 +585,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (AvailabilityMode != 0) hash ^= AvailabilityMode.GetHashCode();
+      if (AvailabilityMode != global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode.Unspecified) hash ^= AvailabilityMode.GetHashCode();
       if (countryCode_ != null) hash ^= CountryCode.GetHashCode();
       if (languageCode_ != null) hash ^= LanguageCode.GetHashCode();
       if (_unknownFields != null) {
@@ -601,7 +601,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (AvailabilityMode != 0) {
+      if (AvailabilityMode != global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) AvailabilityMode);
       }
@@ -619,7 +619,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (AvailabilityMode != 0) {
+      if (AvailabilityMode != global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AvailabilityMode);
       }
       if (countryCode_ != null) {
@@ -639,7 +639,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (other == null) {
         return;
       }
-      if (other.AvailabilityMode != 0) {
+      if (other.AvailabilityMode != global::Google.Ads.GoogleAds.V3.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode.Unspecified) {
         AvailabilityMode = other.AvailabilityMode;
       }
       if (other.countryCode_ != null) {

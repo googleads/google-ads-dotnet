@@ -89,8 +89,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "R29vZ2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.SpendingLimitTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.TimeTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AccountBudgetProposal), global::Google.Ads.GoogleAds.V3.Resources.AccountBudgetProposal.Parser, new[]{ "ResourceName", "Id", "BillingSetup", "AccountBudget", "ProposalType", "Status", "ProposedName", "ApprovedStartDateTime", "ProposedPurchaseOrderNumber", "ProposedNotes", "CreationDateTime", "ApprovalDateTime", "ProposedStartDateTime", "ProposedStartTimeType", "ProposedEndDateTime", "ProposedEndTimeType", "ApprovedEndDateTime", "ApprovedEndTimeType", "ProposedSpendingLimitMicros", "ProposedSpendingLimitType", "ApprovedSpendingLimitMicros", "ApprovedSpendingLimitType" }, new[]{ "ProposedStartTime", "ProposedEndTime", "ApprovedEndTime", "ProposedSpendingLimit", "ApprovedSpendingLimit" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AccountBudgetProposal), global::Google.Ads.GoogleAds.V3.Resources.AccountBudgetProposal.Parser, new[]{ "ResourceName", "Id", "BillingSetup", "AccountBudget", "ProposalType", "Status", "ProposedName", "ApprovedStartDateTime", "ProposedPurchaseOrderNumber", "ProposedNotes", "CreationDateTime", "ApprovalDateTime", "ProposedStartDateTime", "ProposedStartTimeType", "ProposedEndDateTime", "ProposedEndTimeType", "ApprovedEndDateTime", "ApprovedEndTimeType", "ProposedSpendingLimitMicros", "ProposedSpendingLimitType", "ApprovedSpendingLimitMicros", "ApprovedSpendingLimitType" }, new[]{ "ProposedStartTime", "ProposedEndTime", "ApprovedEndTime", "ProposedSpendingLimit", "ApprovedSpendingLimit" }, null, null, null)
           }));
     }
     #endregion
@@ -266,7 +266,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "proposal_type" field.</summary>
     public const int ProposalTypeFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType proposalType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType proposalType_ = global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType.Unspecified;
     /// <summary>
     /// Immutable. The type of this proposal, e.g. END to end the budget associated with this
     /// proposal.
@@ -281,7 +281,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 15;
-    private global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalStatusEnum.Types.AccountBudgetProposalStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalStatusEnum.Types.AccountBudgetProposalStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalStatusEnum.Types.AccountBudgetProposalStatus.Unspecified;
     /// <summary>
     /// Output only. The status of this proposal.
     /// When a new proposal is created, the status defaults to PENDING.
@@ -414,7 +414,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType ProposedStartTimeType {
-      get { return proposedStartTimeCase_ == ProposedStartTimeOneofCase.ProposedStartTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) proposedStartTime_ : 0; }
+      get { return proposedStartTimeCase_ == ProposedStartTimeOneofCase.ProposedStartTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) proposedStartTime_ : global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType.Unspecified; }
       set {
         proposedStartTime_ = value;
         proposedStartTimeCase_ = ProposedStartTimeOneofCase.ProposedStartTimeType;
@@ -443,7 +443,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType ProposedEndTimeType {
-      get { return proposedEndTimeCase_ == ProposedEndTimeOneofCase.ProposedEndTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) proposedEndTime_ : 0; }
+      get { return proposedEndTimeCase_ == ProposedEndTimeOneofCase.ProposedEndTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) proposedEndTime_ : global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType.Unspecified; }
       set {
         proposedEndTime_ = value;
         proposedEndTimeCase_ = ProposedEndTimeOneofCase.ProposedEndTimeType;
@@ -472,7 +472,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType ApprovedEndTimeType {
-      get { return approvedEndTimeCase_ == ApprovedEndTimeOneofCase.ApprovedEndTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) approvedEndTime_ : 0; }
+      get { return approvedEndTimeCase_ == ApprovedEndTimeOneofCase.ApprovedEndTimeType ? (global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType) approvedEndTime_ : global::Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types.TimeType.Unspecified; }
       set {
         approvedEndTime_ = value;
         approvedEndTimeCase_ = ApprovedEndTimeOneofCase.ApprovedEndTimeType;
@@ -502,7 +502,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType ProposedSpendingLimitType {
-      get { return proposedSpendingLimitCase_ == ProposedSpendingLimitOneofCase.ProposedSpendingLimitType ? (global::Google.Ads.GoogleAds.V3.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType) proposedSpendingLimit_ : 0; }
+      get { return proposedSpendingLimitCase_ == ProposedSpendingLimitOneofCase.ProposedSpendingLimitType ? (global::Google.Ads.GoogleAds.V3.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType) proposedSpendingLimit_ : global::Google.Ads.GoogleAds.V3.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified; }
       set {
         proposedSpendingLimit_ = value;
         proposedSpendingLimitCase_ = ProposedSpendingLimitOneofCase.ProposedSpendingLimitType;
@@ -532,7 +532,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType ApprovedSpendingLimitType {
-      get { return approvedSpendingLimitCase_ == ApprovedSpendingLimitOneofCase.ApprovedSpendingLimitType ? (global::Google.Ads.GoogleAds.V3.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType) approvedSpendingLimit_ : 0; }
+      get { return approvedSpendingLimitCase_ == ApprovedSpendingLimitOneofCase.ApprovedSpendingLimitType ? (global::Google.Ads.GoogleAds.V3.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType) approvedSpendingLimit_ : global::Google.Ads.GoogleAds.V3.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified; }
       set {
         approvedSpendingLimit_ = value;
         approvedSpendingLimitCase_ = ApprovedSpendingLimitOneofCase.ApprovedSpendingLimitType;
@@ -684,8 +684,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) hash ^= Id.GetHashCode();
       if (billingSetup_ != null) hash ^= BillingSetup.GetHashCode();
       if (accountBudget_ != null) hash ^= AccountBudget.GetHashCode();
-      if (ProposalType != 0) hash ^= ProposalType.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (ProposalType != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType.Unspecified) hash ^= ProposalType.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalStatusEnum.Types.AccountBudgetProposalStatus.Unspecified) hash ^= Status.GetHashCode();
       if (proposedName_ != null) hash ^= ProposedName.GetHashCode();
       if (approvedStartDateTime_ != null) hash ^= ApprovedStartDateTime.GetHashCode();
       if (proposedPurchaseOrderNumber_ != null) hash ^= ProposedPurchaseOrderNumber.GetHashCode();
@@ -730,7 +730,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (accountBudget_ != null) {
         _single_accountBudget_codec.WriteTagAndValue(output, AccountBudget);
       }
-      if (ProposalType != 0) {
+      if (ProposalType != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) ProposalType);
       }
@@ -761,7 +761,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) {
         _single_id_codec.WriteTagAndValue(output, Id);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalStatusEnum.Types.AccountBudgetProposalStatus.Unspecified) {
         output.WriteRawTag(120);
         output.WriteEnum((int) Status);
       }
@@ -814,10 +814,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (accountBudget_ != null) {
         size += _single_accountBudget_codec.CalculateSizeWithTag(AccountBudget);
       }
-      if (ProposalType != 0) {
+      if (ProposalType != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ProposalType);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalStatusEnum.Types.AccountBudgetProposalStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (proposedName_ != null) {
@@ -897,10 +897,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           AccountBudget = other.AccountBudget;
         }
       }
-      if (other.ProposalType != 0) {
+      if (other.ProposalType != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType.Unspecified) {
         ProposalType = other.ProposalType;
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalStatusEnum.Types.AccountBudgetProposalStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.proposedName_ != null) {

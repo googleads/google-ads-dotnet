@@ -772,10 +772,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCustomerFeed = clientHelper.BuildApiCall<GetCustomerFeedRequest, gagvr::CustomerFeed>(
                 GrpcClient.GetCustomerFeedAsync, GrpcClient.GetCustomerFeed, effectiveSettings.GetCustomerFeedSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateCustomerFeeds = clientHelper.BuildApiCall<MutateCustomerFeedsRequest, MutateCustomerFeedsResponse>(
                 GrpcClient.MutateCustomerFeedsAsync, GrpcClient.MutateCustomerFeeds, effectiveSettings.MutateCustomerFeedsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetCustomerFeed);
             Modify_GetCustomerFeedApiCall(ref _callGetCustomerFeed);
             Modify_ApiCall(ref _callMutateCustomerFeeds);

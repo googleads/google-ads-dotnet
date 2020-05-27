@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetHotelPerformanceView = clientHelper.BuildApiCall<GetHotelPerformanceViewRequest, gagvr::HotelPerformanceView>(
                 GrpcClient.GetHotelPerformanceViewAsync, GrpcClient.GetHotelPerformanceView, effectiveSettings.GetHotelPerformanceViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetHotelPerformanceView);
             Modify_GetHotelPerformanceViewApiCall(ref _callGetHotelPerformanceView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

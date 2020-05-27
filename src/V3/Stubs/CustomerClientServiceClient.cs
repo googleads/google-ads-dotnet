@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCustomerClient = clientHelper.BuildApiCall<GetCustomerClientRequest, gagvr::CustomerClient>(
                 GrpcClient.GetCustomerClientAsync, GrpcClient.GetCustomerClient, effectiveSettings.GetCustomerClientSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetCustomerClient);
             Modify_GetCustomerClientApiCall(ref _callGetCustomerClient);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

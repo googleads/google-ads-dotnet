@@ -67,12 +67,12 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.MediaTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.MimeTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaFile), global::Google.Ads.GoogleAds.V3.Resources.MediaFile.Parser, new[]{ "ResourceName", "Id", "Type", "MimeType", "SourceUrl", "Name", "FileSize", "Image", "MediaBundle", "Audio", "Video" }, new[]{ "Mediatype" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaImage), global::Google.Ads.GoogleAds.V3.Resources.MediaImage.Parser, new[]{ "Data" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaBundle), global::Google.Ads.GoogleAds.V3.Resources.MediaBundle.Parser, new[]{ "Data" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaAudio), global::Google.Ads.GoogleAds.V3.Resources.MediaAudio.Parser, new[]{ "AdDurationMillis" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaVideo), global::Google.Ads.GoogleAds.V3.Resources.MediaVideo.Parser, new[]{ "AdDurationMillis", "YoutubeVideoId", "AdvertisingIdCode", "IsciCode" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaFile), global::Google.Ads.GoogleAds.V3.Resources.MediaFile.Parser, new[]{ "ResourceName", "Id", "Type", "MimeType", "SourceUrl", "Name", "FileSize", "Image", "MediaBundle", "Audio", "Video" }, new[]{ "Mediatype" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaImage), global::Google.Ads.GoogleAds.V3.Resources.MediaImage.Parser, new[]{ "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaBundle), global::Google.Ads.GoogleAds.V3.Resources.MediaBundle.Parser, new[]{ "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaAudio), global::Google.Ads.GoogleAds.V3.Resources.MediaAudio.Parser, new[]{ "AdDurationMillis" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.MediaVideo), global::Google.Ads.GoogleAds.V3.Resources.MediaVideo.Parser, new[]{ "AdDurationMillis", "YoutubeVideoId", "AdvertisingIdCode", "IsciCode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -172,7 +172,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.MediaTypeEnum.Types.MediaType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MediaTypeEnum.Types.MediaType type_ = global::Google.Ads.GoogleAds.V3.Enums.MediaTypeEnum.Types.MediaType.Unspecified;
     /// <summary>
     /// Immutable. Type of the media file.
     /// </summary>
@@ -186,7 +186,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "mime_type" field.</summary>
     public const int MimeTypeFieldNumber = 6;
-    private global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType mimeType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType mimeType_ = global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified;
     /// <summary>
     /// Output only. The mime type of the media file.
     /// </summary>
@@ -358,8 +358,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (MimeType != 0) hash ^= MimeType.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.MediaTypeEnum.Types.MediaType.Unspecified) hash ^= Type.GetHashCode();
+      if (MimeType != global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified) hash ^= MimeType.GetHashCode();
       if (sourceUrl_ != null) hash ^= SourceUrl.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
       if (fileSize_ != null) hash ^= FileSize.GetHashCode();
@@ -396,11 +396,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(34);
         output.WriteMessage(MediaBundle);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.MediaTypeEnum.Types.MediaType.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Type);
       }
-      if (MimeType != 0) {
+      if (MimeType != global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified) {
         output.WriteRawTag(48);
         output.WriteEnum((int) MimeType);
       }
@@ -435,10 +435,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (id_ != null) {
         size += _single_id_codec.CalculateSizeWithTag(Id);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.MediaTypeEnum.Types.MediaType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (MimeType != 0) {
+      if (MimeType != global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MimeType);
       }
       if (sourceUrl_ != null) {
@@ -481,10 +481,10 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Id = other.Id;
         }
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.MediaTypeEnum.Types.MediaType.Unspecified) {
         Type = other.Type;
       }
-      if (other.MimeType != 0) {
+      if (other.MimeType != global::Google.Ads.GoogleAds.V3.Enums.MimeTypeEnum.Types.MimeType.Unspecified) {
         MimeType = other.MimeType;
       }
       if (other.sourceUrl_ != null) {

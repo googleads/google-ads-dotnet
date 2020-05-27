@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "dXJjZXMaH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2ds",
             "ZS9hcGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVy",
             "cy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLGAgoQVXNl",
-            "ckxvY2F0aW9uVmlldxJICg1yZXNvdXJjZV9uYW1lGAEgASgJQjHgQQX6QSsK",
+            "ckxvY2F0aW9uVmlldxJICg1yZXNvdXJjZV9uYW1lGAEgASgJQjHgQQP6QSsK",
             "KWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Vc2VyTG9jYXRpb25WaWV3Ej4K",
             "FGNvdW50cnlfY3JpdGVyaW9uX2lkGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVm",
             "LkludDY0VmFsdWVCA+BBAxI7ChJ0YXJnZXRpbmdfbG9jYXRpb24YAyABKAsy",
@@ -45,8 +45,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.UserLocationView), global::Google.Ads.GoogleAds.V3.Resources.UserLocationView.Parser, new[]{ "ResourceName", "CountryCriterionId", "TargetingLocation" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.UserLocationView), global::Google.Ads.GoogleAds.V3.Resources.UserLocationView.Parser, new[]{ "ResourceName", "CountryCriterionId", "TargetingLocation" }, null, null, null, null)
           }));
     }
     #endregion
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the user location view.
+    /// Output only. The resource name of the user location view.
     /// UserLocation view resource names have the form:
     ///
     /// `customers/{customer_id}/userLocationViews/{country_criterion_id}~{targeting_location}`

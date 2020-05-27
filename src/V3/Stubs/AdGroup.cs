@@ -92,8 +92,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.ExplorerAutoOptimizerSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Common.TargetingSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AdGroupAdRotationModeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.AdGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroup), global::Google.Ads.GoogleAds.V3.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "BaseAdGroup", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "ExplorerAutoOptimizerSetting", "DisplayCustomBidDimension", "FinalUrlSuffix", "TargetingSetting", "EffectiveTargetCpaMicros", "EffectiveTargetCpaSource", "EffectiveTargetRoas", "EffectiveTargetRoasSource", "Labels" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.AdGroup), global::Google.Ads.GoogleAds.V3.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "BaseAdGroup", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "ExplorerAutoOptimizerSetting", "DisplayCustomBidDimension", "FinalUrlSuffix", "TargetingSetting", "EffectiveTargetCpaMicros", "EffectiveTargetCpaSource", "EffectiveTargetRoas", "EffectiveTargetRoasSource", "Labels" }, null, null, null, null)
           }));
     }
     #endregion
@@ -221,7 +221,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 5;
-    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupStatusEnum.Types.AdGroupStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupStatusEnum.Types.AdGroupStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.AdGroupStatusEnum.Types.AdGroupStatus.Unspecified;
     /// <summary>
     /// The status of the ad group.
     /// </summary>
@@ -235,7 +235,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 12;
-    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupTypeEnum.Types.AdGroupType type_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupTypeEnum.Types.AdGroupType type_ = global::Google.Ads.GoogleAds.V3.Enums.AdGroupTypeEnum.Types.AdGroupType.Unspecified;
     /// <summary>
     /// Immutable. The type of the ad group.
     /// </summary>
@@ -249,7 +249,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "ad_rotation_mode" field.</summary>
     public const int AdRotationModeFieldNumber = 22;
-    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode adRotationMode_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode adRotationMode_ = global::Google.Ads.GoogleAds.V3.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified;
     /// <summary>
     /// The ad rotation mode of the ad group.
     /// </summary>
@@ -463,7 +463,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "display_custom_bid_dimension" field.</summary>
     public const int DisplayCustomBidDimensionFieldNumber = 23;
-    private global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension displayCustomBidDimension_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension displayCustomBidDimension_ = global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified;
     /// <summary>
     /// Allows advertisers to specify a targeting dimension on which to place
     /// absolute bids. This is only applicable for campaigns that target only the
@@ -526,7 +526,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "effective_target_cpa_source" field.</summary>
     public const int EffectiveTargetCpaSourceFieldNumber = 29;
-    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveTargetCpaSource_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveTargetCpaSource_ = global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified;
     /// <summary>
     /// Output only. Source of the effective target CPA.
     /// This field is read-only.
@@ -558,7 +558,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "effective_target_roas_source" field.</summary>
     public const int EffectiveTargetRoasSourceFieldNumber = 32;
-    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveTargetRoasSource_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource effectiveTargetRoasSource_ = global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified;
     /// <summary>
     /// Output only. Source of the effective target ROAS.
     /// This field is read-only.
@@ -632,9 +632,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (AdRotationMode != 0) hash ^= AdRotationMode.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AdGroupStatusEnum.Types.AdGroupStatus.Unspecified) hash ^= Status.GetHashCode();
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AdGroupTypeEnum.Types.AdGroupType.Unspecified) hash ^= Type.GetHashCode();
+      if (AdRotationMode != global::Google.Ads.GoogleAds.V3.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified) hash ^= AdRotationMode.GetHashCode();
       if (baseAdGroup_ != null) hash ^= BaseAdGroup.GetHashCode();
       if (trackingUrlTemplate_ != null) hash ^= TrackingUrlTemplate.GetHashCode();
       hash ^= urlCustomParameters_.GetHashCode();
@@ -647,13 +647,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (targetRoas_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(TargetRoas);
       if (percentCpcBidMicros_ != null) hash ^= PercentCpcBidMicros.GetHashCode();
       if (explorerAutoOptimizerSetting_ != null) hash ^= ExplorerAutoOptimizerSetting.GetHashCode();
-      if (DisplayCustomBidDimension != 0) hash ^= DisplayCustomBidDimension.GetHashCode();
+      if (DisplayCustomBidDimension != global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) hash ^= DisplayCustomBidDimension.GetHashCode();
       if (finalUrlSuffix_ != null) hash ^= FinalUrlSuffix.GetHashCode();
       if (targetingSetting_ != null) hash ^= TargetingSetting.GetHashCode();
       if (effectiveTargetCpaMicros_ != null) hash ^= EffectiveTargetCpaMicros.GetHashCode();
-      if (EffectiveTargetCpaSource != 0) hash ^= EffectiveTargetCpaSource.GetHashCode();
+      if (EffectiveTargetCpaSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) hash ^= EffectiveTargetCpaSource.GetHashCode();
       if (effectiveTargetRoas_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(EffectiveTargetRoas);
-      if (EffectiveTargetRoasSource != 0) hash ^= EffectiveTargetRoasSource.GetHashCode();
+      if (EffectiveTargetRoasSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) hash ^= EffectiveTargetRoasSource.GetHashCode();
       hash ^= labels_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -678,7 +678,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         _single_name_codec.WriteTagAndValue(output, Name);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AdGroupStatusEnum.Types.AdGroupStatus.Unspecified) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Status);
       }
@@ -686,7 +686,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (campaign_ != null) {
         _single_campaign_codec.WriteTagAndValue(output, Campaign);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AdGroupTypeEnum.Types.AdGroupType.Unspecified) {
         output.WriteRawTag(96);
         output.WriteEnum((int) Type);
       }
@@ -712,11 +712,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(170, 1);
         output.WriteMessage(ExplorerAutoOptimizerSetting);
       }
-      if (AdRotationMode != 0) {
+      if (AdRotationMode != global::Google.Ads.GoogleAds.V3.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified) {
         output.WriteRawTag(176, 1);
         output.WriteEnum((int) AdRotationMode);
       }
-      if (DisplayCustomBidDimension != 0) {
+      if (DisplayCustomBidDimension != global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) {
         output.WriteRawTag(184, 1);
         output.WriteEnum((int) DisplayCustomBidDimension);
       }
@@ -736,7 +736,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (effectiveTargetCpaMicros_ != null) {
         _single_effectiveTargetCpaMicros_codec.WriteTagAndValue(output, EffectiveTargetCpaMicros);
       }
-      if (EffectiveTargetCpaSource != 0) {
+      if (EffectiveTargetCpaSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         output.WriteRawTag(232, 1);
         output.WriteEnum((int) EffectiveTargetCpaSource);
       }
@@ -746,7 +746,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (effectiveTargetRoas_ != null) {
         _single_effectiveTargetRoas_codec.WriteTagAndValue(output, EffectiveTargetRoas);
       }
-      if (EffectiveTargetRoasSource != 0) {
+      if (EffectiveTargetRoasSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         output.WriteRawTag(128, 2);
         output.WriteEnum((int) EffectiveTargetRoasSource);
       }
@@ -768,13 +768,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) {
         size += _single_name_codec.CalculateSizeWithTag(Name);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AdGroupStatusEnum.Types.AdGroupStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
-      if (Type != 0) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.AdGroupTypeEnum.Types.AdGroupType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (AdRotationMode != 0) {
+      if (AdRotationMode != global::Google.Ads.GoogleAds.V3.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) AdRotationMode);
       }
       if (baseAdGroup_ != null) {
@@ -811,7 +811,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (explorerAutoOptimizerSetting_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(ExplorerAutoOptimizerSetting);
       }
-      if (DisplayCustomBidDimension != 0) {
+      if (DisplayCustomBidDimension != global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) DisplayCustomBidDimension);
       }
       if (finalUrlSuffix_ != null) {
@@ -823,13 +823,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (effectiveTargetCpaMicros_ != null) {
         size += _single_effectiveTargetCpaMicros_codec.CalculateSizeWithTag(EffectiveTargetCpaMicros);
       }
-      if (EffectiveTargetCpaSource != 0) {
+      if (EffectiveTargetCpaSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectiveTargetCpaSource);
       }
       if (effectiveTargetRoas_ != null) {
         size += _single_effectiveTargetRoas_codec.CalculateSizeWithTag(EffectiveTargetRoas);
       }
-      if (EffectiveTargetRoasSource != 0) {
+      if (EffectiveTargetRoasSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) EffectiveTargetRoasSource);
       }
       size += labels_.CalculateSize(_repeated_labels_codec);
@@ -857,13 +857,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           Name = other.Name;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.AdGroupStatusEnum.Types.AdGroupStatus.Unspecified) {
         Status = other.Status;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::Google.Ads.GoogleAds.V3.Enums.AdGroupTypeEnum.Types.AdGroupType.Unspecified) {
         Type = other.Type;
       }
-      if (other.AdRotationMode != 0) {
+      if (other.AdRotationMode != global::Google.Ads.GoogleAds.V3.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified) {
         AdRotationMode = other.AdRotationMode;
       }
       if (other.baseAdGroup_ != null) {
@@ -923,7 +923,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         }
         ExplorerAutoOptimizerSetting.MergeFrom(other.ExplorerAutoOptimizerSetting);
       }
-      if (other.DisplayCustomBidDimension != 0) {
+      if (other.DisplayCustomBidDimension != global::Google.Ads.GoogleAds.V3.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) {
         DisplayCustomBidDimension = other.DisplayCustomBidDimension;
       }
       if (other.finalUrlSuffix_ != null) {
@@ -942,7 +942,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           EffectiveTargetCpaMicros = other.EffectiveTargetCpaMicros;
         }
       }
-      if (other.EffectiveTargetCpaSource != 0) {
+      if (other.EffectiveTargetCpaSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         EffectiveTargetCpaSource = other.EffectiveTargetCpaSource;
       }
       if (other.effectiveTargetRoas_ != null) {
@@ -950,7 +950,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           EffectiveTargetRoas = other.EffectiveTargetRoas;
         }
       }
-      if (other.EffectiveTargetRoasSource != 0) {
+      if (other.EffectiveTargetRoasSource != global::Google.Ads.GoogleAds.V3.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
         EffectiveTargetRoasSource = other.EffectiveTargetRoasSource;
       }
       labels_.Add(other.labels_);

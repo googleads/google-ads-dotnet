@@ -762,10 +762,10 @@ namespace Google.Ads.GoogleAds.V3.Services
                 GrpcClient.ListPlannableProductsAsync, GrpcClient.ListPlannableProducts, effectiveSettings.ListPlannableProductsSettings);
             _callGenerateProductMixIdeas = clientHelper.BuildApiCall<GenerateProductMixIdeasRequest, GenerateProductMixIdeasResponse>(
                 GrpcClient.GenerateProductMixIdeasAsync, GrpcClient.GenerateProductMixIdeas, effectiveSettings.GenerateProductMixIdeasSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             _callGenerateReachForecast = clientHelper.BuildApiCall<GenerateReachForecastRequest, GenerateReachForecastResponse>(
                 GrpcClient.GenerateReachForecastAsync, GrpcClient.GenerateReachForecast, effectiveSettings.GenerateReachForecastSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callListPlannableLocations);
             Modify_ListPlannableLocationsApiCall(ref _callListPlannableLocations);
             Modify_ApiCall(ref _callListPlannableProducts);

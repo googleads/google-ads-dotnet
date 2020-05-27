@@ -39,8 +39,8 @@ namespace Google.Ads.GoogleAds.V3.Enums {
             "AiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum), global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum), global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField) }, null, null)
           }));
     }
     #endregion

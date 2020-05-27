@@ -30,65 +30,67 @@ namespace Google.Ads.GoogleAds.V3.Services {
             "cHJvdG8aMGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YzL3Jlc291cmNlcy9jdXN0",
             "b21lci5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxoXZ29v",
             "Z2xlL2FwaS9jbGllbnQucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZp",
-            "b3IucHJvdG8aIGdvb2dsZS9wcm90b2J1Zi9maWVsZF9tYXNrLnByb3RvGh5n",
-            "b29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8iMAoSR2V0Q3VzdG9tZXJS",
-            "ZXF1ZXN0EhoKDXJlc291cmNlX25hbWUYASABKAlCA+BBAiKVAQoVTXV0YXRl",
-            "Q3VzdG9tZXJSZXF1ZXN0EhgKC2N1c3RvbWVyX2lkGAEgASgJQgPgQQISSwoJ",
-            "b3BlcmF0aW9uGAQgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2Vy",
-            "dmljZXMuQ3VzdG9tZXJPcGVyYXRpb25CA+BBAhIVCg12YWxpZGF0ZV9vbmx5",
-            "GAUgASgIIoYCChtDcmVhdGVDdXN0b21lckNsaWVudFJlcXVlc3QSGAoLY3Vz",
-            "dG9tZXJfaWQYASABKAlCA+BBAhJJCg9jdXN0b21lcl9jbGllbnQYAiABKAsy",
-            "Ky5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5yZXNvdXJjZXMuQ3VzdG9tZXJC",
-            "A+BBAhIzCg1lbWFpbF9hZGRyZXNzGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LlN0cmluZ1ZhbHVlEk0KC2FjY2Vzc19yb2xlGAQgASgOMjguZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjMuZW51bXMuQWNjZXNzUm9sZUVudW0uQWNjZXNzUm9s",
-            "ZSKBAQoRQ3VzdG9tZXJPcGVyYXRpb24SOwoGdXBkYXRlGAEgASgLMisuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjMucmVzb3VyY2VzLkN1c3RvbWVyEi8KC3Vw",
-            "ZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzayI1",
-            "ChxDcmVhdGVDdXN0b21lckNsaWVudFJlc3BvbnNlEhUKDXJlc291cmNlX25h",
-            "bWUYAiABKAkiYAoWTXV0YXRlQ3VzdG9tZXJSZXNwb25zZRJGCgZyZXN1bHQY",
-            "AiABKAsyNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlcy5NdXRh",
-            "dGVDdXN0b21lclJlc3VsdCItChRNdXRhdGVDdXN0b21lclJlc3VsdBIVCg1y",
-            "ZXNvdXJjZV9uYW1lGAEgASgJIiAKHkxpc3RBY2Nlc3NpYmxlQ3VzdG9tZXJz",
-            "UmVxdWVzdCI5Ch9MaXN0QWNjZXNzaWJsZUN1c3RvbWVyc1Jlc3BvbnNlEhYK",
-            "DnJlc291cmNlX25hbWVzGAEgAygJMu4GCg9DdXN0b21lclNlcnZpY2USqQEK",
-            "C0dldEN1c3RvbWVyEjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMuc2Vydmlj",
-            "ZXMuR2V0Q3VzdG9tZXJSZXF1ZXN0GisuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djMucmVzb3VyY2VzLkN1c3RvbWVyIjeC0+STAiESHy92My97cmVzb3VyY2Vf",
-            "bmFtZT1jdXN0b21lcnMvKn3aQQ1yZXNvdXJjZV9uYW1lEswBCg5NdXRhdGVD",
-            "dXN0b21lchI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzLk11",
-            "dGF0ZUN1c3RvbWVyUmVxdWVzdBo4Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
-            "LnNlcnZpY2VzLk11dGF0ZUN1c3RvbWVyUmVzcG9uc2UiR4LT5JMCKSIkL3Yz",
-            "L2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn06bXV0YXRlOgEq2kEVY3VzdG9t",
-            "ZXJfaWQsb3BlcmF0aW9uEs0BChdMaXN0QWNjZXNzaWJsZUN1c3RvbWVycxJA",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzLkxpc3RBY2Nlc3Np",
-            "YmxlQ3VzdG9tZXJzUmVxdWVzdBpBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
-            "LnNlcnZpY2VzLkxpc3RBY2Nlc3NpYmxlQ3VzdG9tZXJzUmVzcG9uc2UiLYLT",
-            "5JMCJxIlL3YzL2N1c3RvbWVyczpsaXN0QWNjZXNzaWJsZUN1c3RvbWVycxLy",
-            "AQoUQ3JlYXRlQ3VzdG9tZXJDbGllbnQSPS5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52My5zZXJ2aWNlcy5DcmVhdGVDdXN0b21lckNsaWVudFJlcXVlc3QaPi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlcy5DcmVhdGVDdXN0b21l",
-            "ckNsaWVudFJlc3BvbnNlIluC0+STAjciMi92My9jdXN0b21lcnMve2N1c3Rv",
-            "bWVyX2lkPSp9OmNyZWF0ZUN1c3RvbWVyQ2xpZW50OgEq2kEbY3VzdG9tZXJf",
-            "aWQsY3VzdG9tZXJfY2xpZW50GhvKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5j",
-            "b21C+wEKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlc0IU",
-            "Q3VzdG9tZXJTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YzL3NlcnZpY2VzO3Nl",
-            "cnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjMuU2Vydmlj",
-            "ZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWM1xTZXJ2aWNlc+oCJEdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpTZXJ2aWNlc2IGcHJvdG8z"));
+            "b3IucHJvdG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aIGdvb2dsZS9w",
+            "cm90b2J1Zi9maWVsZF9tYXNrLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3Jh",
+            "cHBlcnMucHJvdG8iVgoSR2V0Q3VzdG9tZXJSZXF1ZXN0EkAKDXJlc291cmNl",
+            "X25hbWUYASABKAlCKeBBAvpBIwohZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29t",
+            "L0N1c3RvbWVyIpUBChVNdXRhdGVDdXN0b21lclJlcXVlc3QSGAoLY3VzdG9t",
+            "ZXJfaWQYASABKAlCA+BBAhJLCglvcGVyYXRpb24YBCABKAsyMy5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52My5zZXJ2aWNlcy5DdXN0b21lck9wZXJhdGlvbkID",
+            "4EECEhUKDXZhbGlkYXRlX29ubHkYBSABKAgihgIKG0NyZWF0ZUN1c3RvbWVy",
+            "Q2xpZW50UmVxdWVzdBIYCgtjdXN0b21lcl9pZBgBIAEoCUID4EECEkkKD2N1",
+            "c3RvbWVyX2NsaWVudBgCIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYz",
+            "LnJlc291cmNlcy5DdXN0b21lckID4EECEjMKDWVtYWlsX2FkZHJlc3MYAyAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSTQoLYWNjZXNzX3Jv",
+            "bGUYBCABKA4yOC5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5lbnVtcy5BY2Nl",
+            "c3NSb2xlRW51bS5BY2Nlc3NSb2xlIoEBChFDdXN0b21lck9wZXJhdGlvbhI7",
+            "CgZ1cGRhdGUYASABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52My5yZXNv",
+            "dXJjZXMuQ3VzdG9tZXISLwoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuRmllbGRNYXNrIjUKHENyZWF0ZUN1c3RvbWVyQ2xpZW50UmVz",
+            "cG9uc2USFQoNcmVzb3VyY2VfbmFtZRgCIAEoCSJgChZNdXRhdGVDdXN0b21l",
+            "clJlc3BvbnNlEkYKBnJlc3VsdBgCIAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYzLnNlcnZpY2VzLk11dGF0ZUN1c3RvbWVyUmVzdWx0Ii0KFE11dGF0",
+            "ZUN1c3RvbWVyUmVzdWx0EhUKDXJlc291cmNlX25hbWUYASABKAkiIAoeTGlz",
+            "dEFjY2Vzc2libGVDdXN0b21lcnNSZXF1ZXN0IjkKH0xpc3RBY2Nlc3NpYmxl",
+            "Q3VzdG9tZXJzUmVzcG9uc2USFgoOcmVzb3VyY2VfbmFtZXMYASADKAky7gYK",
+            "D0N1c3RvbWVyU2VydmljZRKpAQoLR2V0Q3VzdG9tZXISNC5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52My5zZXJ2aWNlcy5HZXRDdXN0b21lclJlcXVlc3QaKy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52My5yZXNvdXJjZXMuQ3VzdG9tZXIiN4LT",
+            "5JMCIRIfL3YzL3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8qfdpBDXJlc291",
+            "cmNlX25hbWUSzAEKDk11dGF0ZUN1c3RvbWVyEjcuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjMuc2VydmljZXMuTXV0YXRlQ3VzdG9tZXJSZXF1ZXN0GjguZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuTXV0YXRlQ3VzdG9tZXJS",
+            "ZXNwb25zZSJHgtPkkwIpIiQvdjMvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0q",
+            "fTptdXRhdGU6ASraQRVjdXN0b21lcl9pZCxvcGVyYXRpb24SzQEKF0xpc3RB",
+            "Y2Nlc3NpYmxlQ3VzdG9tZXJzEkAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjMu",
+            "c2VydmljZXMuTGlzdEFjY2Vzc2libGVDdXN0b21lcnNSZXF1ZXN0GkEuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjMuc2VydmljZXMuTGlzdEFjY2Vzc2libGVD",
+            "dXN0b21lcnNSZXNwb25zZSItgtPkkwInEiUvdjMvY3VzdG9tZXJzOmxpc3RB",
+            "Y2Nlc3NpYmxlQ3VzdG9tZXJzEvIBChRDcmVhdGVDdXN0b21lckNsaWVudBI9",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNlcnZpY2VzLkNyZWF0ZUN1c3Rv",
+            "bWVyQ2xpZW50UmVxdWVzdBo+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYzLnNl",
+            "cnZpY2VzLkNyZWF0ZUN1c3RvbWVyQ2xpZW50UmVzcG9uc2UiW4LT5JMCNyIy",
+            "L3YzL2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn06Y3JlYXRlQ3VzdG9tZXJD",
+            "bGllbnQ6ASraQRtjdXN0b21lcl9pZCxjdXN0b21lcl9jbGllbnQaG8pBGGdv",
+            "b2dsZWFkcy5nb29nbGVhcGlzLmNvbUL7AQokY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYzLnNlcnZpY2VzQhRDdXN0b21lclNlcnZpY2VQcm90b1ABWkhn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjMvc2VydmljZXM7c2VydmljZXOiAgNHQUGqAiBHb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMy5TZXJ2aWNlc8oCIEdvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYzXFNlcnZpY2Vz6gIkR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OlNl",
+            "cnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.AccessRoleReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Resources.CustomerReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomerRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomerRequest.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerRequest.Parser, new[]{ "CustomerId", "Operation", "ValidateOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientRequest), global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientRequest.Parser, new[]{ "CustomerId", "CustomerClient", "EmailAddress", "AccessRole" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomerOperation), global::Google.Ads.GoogleAds.V3.Services.CustomerOperation.Parser, new[]{ "Update", "UpdateMask" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientResponse), global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientResponse.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResponse.Parser, new[]{ "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResult.Parser, new[]{ "ResourceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersRequest), global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersResponse), global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersResponse.Parser, new[]{ "ResourceNames" }, null, null, null)
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.AccessRoleReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Resources.CustomerReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.GetCustomerRequest), global::Google.Ads.GoogleAds.V3.Services.GetCustomerRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerRequest), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerRequest.Parser, new[]{ "CustomerId", "Operation", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientRequest), global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientRequest.Parser, new[]{ "CustomerId", "CustomerClient", "EmailAddress", "AccessRole" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CustomerOperation), global::Google.Ads.GoogleAds.V3.Services.CustomerOperation.Parser, new[]{ "Update", "UpdateMask" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientResponse), global::Google.Ads.GoogleAds.V3.Services.CreateCustomerClientResponse.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResponse), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResponse.Parser, new[]{ "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResult), global::Google.Ads.GoogleAds.V3.Services.MutateCustomerResult.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersRequest), global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersResponse), global::Google.Ads.GoogleAds.V3.Services.ListAccessibleCustomersResponse.Parser, new[]{ "ResourceNames" }, null, null, null, null)
           }));
     }
     #endregion
@@ -522,7 +524,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     /// <summary>Field number for the "access_role" field.</summary>
     public const int AccessRoleFieldNumber = 4;
-    private global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole accessRole_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole accessRole_ = global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified;
     /// <summary>
     /// The proposed role of user on the created client customer.
     /// Accessible to whitelisted customers only.
@@ -561,7 +563,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
       if (customerClient_ != null) hash ^= CustomerClient.GetHashCode();
       if (emailAddress_ != null) hash ^= EmailAddress.GetHashCode();
-      if (AccessRole != 0) hash ^= AccessRole.GetHashCode();
+      if (AccessRole != global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified) hash ^= AccessRole.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -586,7 +588,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (emailAddress_ != null) {
         _single_emailAddress_codec.WriteTagAndValue(output, EmailAddress);
       }
-      if (AccessRole != 0) {
+      if (AccessRole != global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) AccessRole);
       }
@@ -607,7 +609,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (emailAddress_ != null) {
         size += _single_emailAddress_codec.CalculateSizeWithTag(EmailAddress);
       }
-      if (AccessRole != 0) {
+      if (AccessRole != global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AccessRole);
       }
       if (_unknownFields != null) {
@@ -635,7 +637,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
           EmailAddress = other.EmailAddress;
         }
       }
-      if (other.AccessRole != 0) {
+      if (other.AccessRole != global::Google.Ads.GoogleAds.V3.Enums.AccessRoleEnum.Types.AccessRole.Unspecified) {
         AccessRole = other.AccessRole;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

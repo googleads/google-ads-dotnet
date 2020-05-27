@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
             mockGrpcClient.Setup(x => x.MutateCampaignCriteria(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CampaignCriterionOperation> operations = new List<CampaignCriterionOperation>();
-            MutateCampaignCriteriaResponse response = client.MutateCampaignCriteria(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateCampaignCriteriaResponse response = client.MutateCampaignCriteria(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateCampaignCriteriaResponse expectedResponse = new MutateCampaignCriteriaResponse();
             mockGrpcClient.Setup(x => x.MutateCampaignCriteriaAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<CampaignCriterionOperation> operations = new List<CampaignCriterionOperation>();
-            MutateCampaignCriteriaResponse response = await client.MutateCampaignCriteriaAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateCampaignCriteriaResponse response = await client.MutateCampaignCriteriaAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }

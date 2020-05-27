@@ -58,8 +58,8 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             "OjpHb29nbGVBZHM6OlYzOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum), global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum.Types.ImageError) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum), global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Errors.ImageErrorEnum.Types.ImageError) }, null, null)
           }));
     }
     #endregion

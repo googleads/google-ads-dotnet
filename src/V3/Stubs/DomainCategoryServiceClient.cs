@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetDomainCategory = clientHelper.BuildApiCall<GetDomainCategoryRequest, gagvr::DomainCategory>(
                 GrpcClient.GetDomainCategoryAsync, GrpcClient.GetDomainCategory, effectiveSettings.GetDomainCategorySettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetDomainCategory);
             Modify_GetDomainCategoryApiCall(ref _callGetDomainCategory);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

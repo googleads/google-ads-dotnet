@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetAdGroupAudienceView = clientHelper.BuildApiCall<GetAdGroupAudienceViewRequest, gagvr::AdGroupAudienceView>(
                 GrpcClient.GetAdGroupAudienceViewAsync, GrpcClient.GetAdGroupAudienceView, effectiveSettings.GetAdGroupAudienceViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetAdGroupAudienceView);
             Modify_GetAdGroupAudienceViewApiCall(ref _callGetAdGroupAudienceView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

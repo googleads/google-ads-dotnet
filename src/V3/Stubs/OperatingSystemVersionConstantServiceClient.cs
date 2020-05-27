@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetOperatingSystemVersionConstant = clientHelper.BuildApiCall<GetOperatingSystemVersionConstantRequest, gagvr::OperatingSystemVersionConstant>(
                 GrpcClient.GetOperatingSystemVersionConstantAsync, GrpcClient.GetOperatingSystemVersionConstant, effectiveSettings.GetOperatingSystemVersionConstantSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetOperatingSystemVersionConstant);
             Modify_GetOperatingSystemVersionConstantApiCall(ref _callGetOperatingSystemVersionConstant);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

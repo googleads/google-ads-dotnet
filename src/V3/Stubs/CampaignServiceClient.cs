@@ -763,10 +763,10 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetCampaign = clientHelper.BuildApiCall<GetCampaignRequest, gagvr::Campaign>(
                 GrpcClient.GetCampaignAsync, GrpcClient.GetCampaign, effectiveSettings.GetCampaignSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             _callMutateCampaigns = clientHelper.BuildApiCall<MutateCampaignsRequest, MutateCampaignsResponse>(
                 GrpcClient.MutateCampaignsAsync, GrpcClient.MutateCampaigns, effectiveSettings.MutateCampaignsSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"customer_id={request.CustomerId}"));
+                .WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGetCampaign);
             Modify_GetCampaignApiCall(ref _callGetCampaign);
             Modify_ApiCall(ref _callMutateCampaigns);

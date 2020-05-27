@@ -735,6 +735,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v3.services#google.ads.googleads.v3.services.OfflineUserDataJobService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<OfflineUserDataJobServiceClient, OfflineUserDataJobServiceSettings> OfflineUserDataJobService =
+                new ServiceTemplate<OfflineUserDataJobServiceClient, OfflineUserDataJobServiceSettings>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v3.services#google.ads.googleads.v3.services.OperatingSystemVersionConstantService
             /// for details.
             /// </summary>
@@ -852,6 +860,14 @@ namespace Google.Ads.GoogleAds
             /// </summary>
             public static readonly ServiceTemplate<TopicViewServiceClient, TopicViewServiceSettings> TopicViewService =
                 new ServiceTemplate<TopicViewServiceClient, TopicViewServiceSettings>(Create);
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v3.services#google.ads.googleads.v3.services.UserDataService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<UserDataServiceClient, UserDataServiceSettings> UserDataService =
+                new ServiceTemplate<UserDataServiceClient, UserDataServiceSettings>(Create);
 
 
             /// <summary>
@@ -1249,6 +1265,10 @@ namespace Google.Ads.GoogleAds
                         return MutateJobServiceClient.Create(callInvoker, (MutateJobServiceSettings) settings);
 
 
+                    case "OfflineUserDataJobServiceClient":
+                        return OfflineUserDataJobServiceClient.Create(callInvoker, (OfflineUserDataJobServiceSettings) settings);
+
+
                     case "OperatingSystemVersionConstantServiceClient":
                         return OperatingSystemVersionConstantServiceClient.Create(callInvoker, (OperatingSystemVersionConstantServiceSettings) settings);
 
@@ -1307,6 +1327,10 @@ namespace Google.Ads.GoogleAds
 
                     case "TopicViewServiceClient":
                         return TopicViewServiceClient.Create(callInvoker, (TopicViewServiceSettings) settings);
+
+
+                    case "UserDataServiceClient":
+                        return UserDataServiceClient.Create(callInvoker, (UserDataServiceSettings) settings);
 
 
                     case "UserInterestServiceClient":

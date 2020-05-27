@@ -37,8 +37,8 @@ namespace Google.Ads.GoogleAds.V3.Enums {
             "QWRzOjpHb29nbGVBZHM6OlYzOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.PaymentModeEnum), global::Google.Ads.GoogleAds.V3.Enums.PaymentModeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.PaymentModeEnum.Types.PaymentMode) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Enums.PaymentModeEnum), global::Google.Ads.GoogleAds.V3.Enums.PaymentModeEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.V3.Enums.PaymentModeEnum.Types.PaymentMode) }, null, null)
           }));
     }
     #endregion
@@ -184,7 +184,7 @@ namespace Google.Ads.GoogleAds.V3.Enums {
         /// <summary>
         /// Pay per guest stay value. This mode is only supported by campaigns with
         /// AdvertisingChannelType.HOTEL, BiddingStrategyType.COMMISSION, and
-        /// BudgetType.HOTEL_ADS_COMMISSION.
+        /// BudgetType.STANDARD.
         /// </summary>
         [pbr::OriginalName("GUEST_STAY")] GuestStay = 7,
       }

@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "L2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJj",
             "ZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29n",
             "bGUvYXBpL2Fubm90YXRpb25zLnByb3RvIuMCCgVWaWRlbxI9Cg1yZXNvdXJj",
-            "ZV9uYW1lGAEgASgJQibgQQX6QSAKHmdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
+            "ZV9uYW1lGAEgASgJQibgQQP6QSAKHmdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
             "bS9WaWRlbxItCgJpZBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
             "YWx1ZUID4EEDEjUKCmNoYW5uZWxfaWQYAyABKAsyHC5nb29nbGUucHJvdG9i",
             "dWYuU3RyaW5nVmFsdWVCA+BBAxI5Cg9kdXJhdGlvbl9taWxsaXMYBCABKAsy",
@@ -45,8 +45,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Video), global::Google.Ads.GoogleAds.V3.Resources.Video.Parser, new[]{ "ResourceName", "Id", "ChannelId", "DurationMillis", "Title" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.Video), global::Google.Ads.GoogleAds.V3.Resources.Video.Parser, new[]{ "ResourceName", "Id", "ChannelId", "DurationMillis", "Title" }, null, null, null, null)
           }));
     }
     #endregion
@@ -98,7 +98,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the video.
+    /// Output only. The resource name of the video.
     /// Video resource names have the form:
     ///
     /// `customers/{customer_id}/videos/{video_id}`

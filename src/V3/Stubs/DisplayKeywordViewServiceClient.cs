@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetDisplayKeywordView = clientHelper.BuildApiCall<GetDisplayKeywordViewRequest, gagvr::DisplayKeywordView>(
                 GrpcClient.GetDisplayKeywordViewAsync, GrpcClient.GetDisplayKeywordView, effectiveSettings.GetDisplayKeywordViewSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetDisplayKeywordView);
             Modify_GetDisplayKeywordViewApiCall(ref _callGetDisplayKeywordView);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

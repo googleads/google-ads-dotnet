@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVm",
             "L3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3Rv",
             "IuACCg5HZW9ncmFwaGljVmlldxJGCg1yZXNvdXJjZV9uYW1lGAEgASgJQi/g",
-            "QQX6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9HZW9ncmFwaGljVmll",
+            "QQP6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9HZW9ncmFwaGljVmll",
             "dxJgCg1sb2NhdGlvbl90eXBlGAMgASgOMkQuZ29vZ2xlLmFkcy5nb29nbGVh",
             "ZHMudjMuZW51bXMuR2VvVGFyZ2V0aW5nVHlwZUVudW0uR2VvVGFyZ2V0aW5n",
             "VHlwZUID4EEDEj4KFGNvdW50cnlfY3JpdGVyaW9uX2lkGAQgASgLMhsuZ29v",
@@ -46,8 +46,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "QWRzOjpHb29nbGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.GeographicView), global::Google.Ads.GoogleAds.V3.Resources.GeographicView.Parser, new[]{ "ResourceName", "LocationType", "CountryCriterionId" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.GeographicView), global::Google.Ads.GoogleAds.V3.Resources.GeographicView.Parser, new[]{ "ResourceName", "LocationType", "CountryCriterionId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the geographic view.
+    /// Output only. The resource name of the geographic view.
     /// Geographic view resource names have the form:
     ///
     /// `customers/{customer_id}/geographicViews/{country_criterion_id}~{location_type}`
@@ -117,7 +117,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "location_type" field.</summary>
     public const int LocationTypeFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingTypeEnum.Types.GeoTargetingType locationType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingTypeEnum.Types.GeoTargetingType locationType_ = global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingTypeEnum.Types.GeoTargetingType.Unspecified;
     /// <summary>
     /// Output only. Type of the geo targeting of the campaign.
     /// </summary>
@@ -168,7 +168,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
-      if (LocationType != 0) hash ^= LocationType.GetHashCode();
+      if (LocationType != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingTypeEnum.Types.GeoTargetingType.Unspecified) hash ^= LocationType.GetHashCode();
       if (countryCriterionId_ != null) hash ^= CountryCriterionId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -187,7 +187,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
-      if (LocationType != 0) {
+      if (LocationType != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingTypeEnum.Types.GeoTargetingType.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) LocationType);
       }
@@ -205,7 +205,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (ResourceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
       }
-      if (LocationType != 0) {
+      if (LocationType != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingTypeEnum.Types.GeoTargetingType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) LocationType);
       }
       if (countryCriterionId_ != null) {
@@ -225,7 +225,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (other.ResourceName.Length != 0) {
         ResourceName = other.ResourceName;
       }
-      if (other.LocationType != 0) {
+      if (other.LocationType != global::Google.Ads.GoogleAds.V3.Enums.GeoTargetingTypeEnum.Types.GeoTargetingType.Unspecified) {
         LocationType = other.LocationType;
       }
       if (other.countryCriterionId_ != null) {

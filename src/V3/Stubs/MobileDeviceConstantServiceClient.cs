@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.V3.Services
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
             _callGetMobileDeviceConstant = clientHelper.BuildApiCall<GetMobileDeviceConstantRequest, gagvr::MobileDeviceConstant>(
                 GrpcClient.GetMobileDeviceConstantAsync, GrpcClient.GetMobileDeviceConstant, effectiveSettings.GetMobileDeviceConstantSettings)
-                .WithCallSettingsOverlay(request => gaxgrpc::CallSettings.FromHeader("x-goog-request-params", $"resource_name={request.ResourceName}"));
+                .WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetMobileDeviceConstant);
             Modify_GetMobileDeviceConstantApiCall(ref _callGetMobileDeviceConstant);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

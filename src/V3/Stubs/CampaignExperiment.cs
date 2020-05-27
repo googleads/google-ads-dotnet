@@ -63,8 +63,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMzo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentTrafficSplitTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignExperiment), global::Google.Ads.GoogleAds.V3.Resources.CampaignExperiment.Parser, new[]{ "ResourceName", "Id", "CampaignDraft", "Name", "Description", "TrafficSplitPercent", "TrafficSplitType", "ExperimentCampaign", "Status", "LongRunningOperation", "StartDate", "EndDate" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.CampaignExperiment), global::Google.Ads.GoogleAds.V3.Resources.CampaignExperiment.Parser, new[]{ "ResourceName", "Id", "CampaignDraft", "Name", "Description", "TrafficSplitPercent", "TrafficSplitType", "ExperimentCampaign", "Status", "LongRunningOperation", "StartDate", "EndDate" }, null, null, null, null)
           }));
     }
     #endregion
@@ -230,7 +230,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "traffic_split_type" field.</summary>
     public const int TrafficSplitTypeFieldNumber = 7;
-    private global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentTrafficSplitTypeEnum.Types.CampaignExperimentTrafficSplitType trafficSplitType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentTrafficSplitTypeEnum.Types.CampaignExperimentTrafficSplitType trafficSplitType_ = global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentTrafficSplitTypeEnum.Types.CampaignExperimentTrafficSplitType.Unspecified;
     /// <summary>
     /// Immutable. Determines the behavior of the traffic split.
     /// </summary>
@@ -260,7 +260,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 9;
-    private global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentStatusEnum.Types.CampaignExperimentStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentStatusEnum.Types.CampaignExperimentStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentStatusEnum.Types.CampaignExperimentStatus.Unspecified;
     /// <summary>
     /// Output only. The status of the campaign experiment. This field is read-only.
     /// </summary>
@@ -370,9 +370,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (name_ != null) hash ^= Name.GetHashCode();
       if (description_ != null) hash ^= Description.GetHashCode();
       if (trafficSplitPercent_ != null) hash ^= TrafficSplitPercent.GetHashCode();
-      if (TrafficSplitType != 0) hash ^= TrafficSplitType.GetHashCode();
+      if (TrafficSplitType != global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentTrafficSplitTypeEnum.Types.CampaignExperimentTrafficSplitType.Unspecified) hash ^= TrafficSplitType.GetHashCode();
       if (experimentCampaign_ != null) hash ^= ExperimentCampaign.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentStatusEnum.Types.CampaignExperimentStatus.Unspecified) hash ^= Status.GetHashCode();
       if (longRunningOperation_ != null) hash ^= LongRunningOperation.GetHashCode();
       if (startDate_ != null) hash ^= StartDate.GetHashCode();
       if (endDate_ != null) hash ^= EndDate.GetHashCode();
@@ -408,14 +408,14 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (trafficSplitPercent_ != null) {
         _single_trafficSplitPercent_codec.WriteTagAndValue(output, TrafficSplitPercent);
       }
-      if (TrafficSplitType != 0) {
+      if (TrafficSplitType != global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentTrafficSplitTypeEnum.Types.CampaignExperimentTrafficSplitType.Unspecified) {
         output.WriteRawTag(56);
         output.WriteEnum((int) TrafficSplitType);
       }
       if (experimentCampaign_ != null) {
         _single_experimentCampaign_codec.WriteTagAndValue(output, ExperimentCampaign);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentStatusEnum.Types.CampaignExperimentStatus.Unspecified) {
         output.WriteRawTag(72);
         output.WriteEnum((int) Status);
       }
@@ -454,13 +454,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (trafficSplitPercent_ != null) {
         size += _single_trafficSplitPercent_codec.CalculateSizeWithTag(TrafficSplitPercent);
       }
-      if (TrafficSplitType != 0) {
+      if (TrafficSplitType != global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentTrafficSplitTypeEnum.Types.CampaignExperimentTrafficSplitType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TrafficSplitType);
       }
       if (experimentCampaign_ != null) {
         size += _single_experimentCampaign_codec.CalculateSizeWithTag(ExperimentCampaign);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentStatusEnum.Types.CampaignExperimentStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (longRunningOperation_ != null) {
@@ -511,7 +511,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           TrafficSplitPercent = other.TrafficSplitPercent;
         }
       }
-      if (other.TrafficSplitType != 0) {
+      if (other.TrafficSplitType != global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentTrafficSplitTypeEnum.Types.CampaignExperimentTrafficSplitType.Unspecified) {
         TrafficSplitType = other.TrafficSplitType;
       }
       if (other.experimentCampaign_ != null) {
@@ -519,7 +519,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           ExperimentCampaign = other.ExperimentCampaign;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.CampaignExperimentStatusEnum.Types.CampaignExperimentStatus.Unspecified) {
         Status = other.Status;
       }
       if (other.longRunningOperation_ != null) {

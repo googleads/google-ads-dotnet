@@ -67,8 +67,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetDeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItemTarget), global::Google.Ads.GoogleAds.V3.Resources.FeedItemTarget.Parser, new[]{ "ResourceName", "FeedItem", "FeedItemTargetType", "FeedItemTargetId", "Status", "Campaign", "AdGroup", "Keyword", "GeoTargetConstant", "Device", "AdSchedule" }, new[]{ "Target" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.FeedItemTarget), global::Google.Ads.GoogleAds.V3.Resources.FeedItemTarget.Parser, new[]{ "ResourceName", "FeedItem", "FeedItemTargetType", "FeedItemTargetId", "Status", "Campaign", "AdGroup", "Keyword", "GeoTargetConstant", "Device", "AdSchedule" }, new[]{ "Target" }, null, null, null)
           }));
     }
     #endregion
@@ -171,7 +171,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "feed_item_target_type" field.</summary>
     public const int FeedItemTargetTypeFieldNumber = 3;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetTypeEnum.Types.FeedItemTargetType feedItemTargetType_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetTypeEnum.Types.FeedItemTargetType feedItemTargetType_ = global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetTypeEnum.Types.FeedItemTargetType.Unspecified;
     /// <summary>
     /// Output only. The target type of this feed item target. This field is read-only.
     /// </summary>
@@ -201,7 +201,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 11;
-    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetStatusEnum.Types.FeedItemTargetStatus status_ = 0;
+    private global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetStatusEnum.Types.FeedItemTargetStatus status_ = global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetStatusEnum.Types.FeedItemTargetStatus.Unspecified;
     /// <summary>
     /// Output only. Status of the feed item target.
     /// This field is read-only.
@@ -280,7 +280,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice Device {
-      get { return targetCase_ == TargetOneofCase.Device ? (global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice) target_ : 0; }
+      get { return targetCase_ == TargetOneofCase.Device ? (global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice) target_ : global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice.Unspecified; }
       set {
         target_ = value;
         targetCase_ = TargetOneofCase.Device;
@@ -357,9 +357,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
       if (feedItem_ != null) hash ^= FeedItem.GetHashCode();
-      if (FeedItemTargetType != 0) hash ^= FeedItemTargetType.GetHashCode();
+      if (FeedItemTargetType != global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetTypeEnum.Types.FeedItemTargetType.Unspecified) hash ^= FeedItemTargetType.GetHashCode();
       if (feedItemTargetId_ != null) hash ^= FeedItemTargetId.GetHashCode();
-      if (Status != 0) hash ^= Status.GetHashCode();
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetStatusEnum.Types.FeedItemTargetStatus.Unspecified) hash ^= Status.GetHashCode();
       if (targetCase_ == TargetOneofCase.Campaign) hash ^= Campaign.GetHashCode();
       if (targetCase_ == TargetOneofCase.AdGroup) hash ^= AdGroup.GetHashCode();
       if (targetCase_ == TargetOneofCase.Keyword) hash ^= Keyword.GetHashCode();
@@ -387,7 +387,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (feedItem_ != null) {
         _single_feedItem_codec.WriteTagAndValue(output, FeedItem);
       }
-      if (FeedItemTargetType != 0) {
+      if (FeedItemTargetType != global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetTypeEnum.Types.FeedItemTargetType.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) FeedItemTargetType);
       }
@@ -415,7 +415,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
         output.WriteRawTag(82);
         output.WriteMessage(AdSchedule);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetStatusEnum.Types.FeedItemTargetStatus.Unspecified) {
         output.WriteRawTag(88);
         output.WriteEnum((int) Status);
       }
@@ -433,13 +433,13 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (feedItem_ != null) {
         size += _single_feedItem_codec.CalculateSizeWithTag(FeedItem);
       }
-      if (FeedItemTargetType != 0) {
+      if (FeedItemTargetType != global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetTypeEnum.Types.FeedItemTargetType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) FeedItemTargetType);
       }
       if (feedItemTargetId_ != null) {
         size += _single_feedItemTargetId_codec.CalculateSizeWithTag(FeedItemTargetId);
       }
-      if (Status != 0) {
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetStatusEnum.Types.FeedItemTargetStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (targetCase_ == TargetOneofCase.Campaign) {
@@ -479,7 +479,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           FeedItem = other.FeedItem;
         }
       }
-      if (other.FeedItemTargetType != 0) {
+      if (other.FeedItemTargetType != global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetTypeEnum.Types.FeedItemTargetType.Unspecified) {
         FeedItemTargetType = other.FeedItemTargetType;
       }
       if (other.feedItemTargetId_ != null) {
@@ -487,7 +487,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           FeedItemTargetId = other.FeedItemTargetId;
         }
       }
-      if (other.Status != 0) {
+      if (other.Status != global::Google.Ads.GoogleAds.V3.Enums.FeedItemTargetStatusEnum.Types.FeedItemTargetStatus.Unspecified) {
         Status = other.Status;
       }
       switch (other.TargetCase) {

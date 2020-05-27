@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVm",
             "L3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3Rv",
             "Iq0CChdFeHBhbmRlZExhbmRpbmdQYWdlVmlldxJPCg1yZXNvdXJjZV9uYW1l",
-            "GAEgASgJQjjgQQX6QTIKMGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9FeHBh",
+            "GAEgASgJQjjgQQP6QTIKMGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9FeHBh",
             "bmRlZExhbmRpbmdQYWdlVmlldxI9ChJleHBhbmRlZF9maW5hbF91cmwYAiAB",
             "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAzqBAepBfgow",
             "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0V4cGFuZGVkTGFuZGluZ1BhZ2VW",
@@ -44,8 +44,8 @@ namespace Google.Ads.GoogleAds.V3.Resources {
             "ZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageView), global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageView.Parser, new[]{ "ResourceName", "ExpandedFinalUrl" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageView), global::Google.Ads.GoogleAds.V3.Resources.ExpandedLandingPageView.Parser, new[]{ "ResourceName", "ExpandedFinalUrl" }, null, null, null, null)
           }));
     }
     #endregion
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Immutable. The resource name of the expanded landing page view.
+    /// Output only. The resource name of the expanded landing page view.
     /// Expanded landing page view resource names have the form:
     ///
     /// `customers/{customer_id}/expandedLandingPageViews/{expanded_final_url_fingerprint}`

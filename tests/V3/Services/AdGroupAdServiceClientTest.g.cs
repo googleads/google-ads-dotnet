@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -172,6 +172,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateAdGroupAdsResponse expectedResponse = new MutateAdGroupAdsResponse();
             mockGrpcClient.Setup(x => x.MutateAdGroupAds(expectedRequest, It.IsAny<CallOptions>()))
@@ -179,7 +181,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<AdGroupAdOperation> operations = new List<AdGroupAdOperation>();
-            MutateAdGroupAdsResponse response = client.MutateAdGroupAds(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateAdGroupAdsResponse response = client.MutateAdGroupAds(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
@@ -192,6 +196,8 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             {
                 CustomerId = "customerId-1772061412",
                 Operations = { },
+                PartialFailure = true,
+                ValidateOnly = false,
             };
             MutateAdGroupAdsResponse expectedResponse = new MutateAdGroupAdsResponse();
             mockGrpcClient.Setup(x => x.MutateAdGroupAdsAsync(expectedRequest, It.IsAny<CallOptions>()))
@@ -199,7 +205,9 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
             AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null);
             string customerId = "customerId-1772061412";
             IEnumerable<AdGroupAdOperation> operations = new List<AdGroupAdOperation>();
-            MutateAdGroupAdsResponse response = await client.MutateAdGroupAdsAsync(customerId, operations);
+            bool partialFailure = true;
+            bool validateOnly = false;
+            MutateAdGroupAdsResponse response = await client.MutateAdGroupAdsAsync(customerId, operations, partialFailure, validateOnly);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
