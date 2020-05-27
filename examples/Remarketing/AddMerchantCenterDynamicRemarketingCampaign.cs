@@ -203,7 +203,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 customerId.ToString(), new[] {operation});
 
             string adGroupResourceName = response.Results.First().ResourceName;
-            Console.WriteLine($"Create ad group with resource name '{adGroupResourceName}'.");
+            Console.WriteLine($"Created ad group with resource name '{adGroupResourceName}'.");
             return adGroupResourceName;
         }
 
