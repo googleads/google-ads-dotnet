@@ -92,9 +92,11 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 CreateCampaignFeed(client, customerId, campaignId, feed);
 
                 // If an ad group is specified, limit targeting only to the given ad group.
+                // You must set targeting on a per-feed-item basis. This will restrict the first
+                // feed item we added to only serve for the given ad group.
                 if (adGroupId.HasValue)
                 {
-                    CreateAdGroupTargeting(client, customerId, adGroupId.Value, feedItems);
+                    CreateAdGroupTargeting(client, customerId, adGroupId.Value, feedItems.First());
                 }
             }
             catch (GoogleAdsException e)
@@ -368,16 +370,12 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="adGroupId">The ID of the Ad Group being targeted.</param>
-        /// <param name="feedItems">The feed items that were added to the feed.</param>
+        /// <param name="feedItem">The feed item that was added to the feed.</param>
         private void CreateAdGroupTargeting(GoogleAdsClient client, long customerId, long adGroupId,
-            List<string> feedItems)
+            string feedItem)
         {
             FeedItemTargetServiceClient feedItemTargetServiceClient =
                 client.GetService(Services.V3.FeedItemTargetService);
-
-            // You must set targeting on a per-feed-item basis. This will restrict the first feed
-            // item we added to only serve for the given ad group.
-            string feedItem = feedItems.First();
 
             FeedItemTarget feedItemTarget = new FeedItemTarget()
             {
