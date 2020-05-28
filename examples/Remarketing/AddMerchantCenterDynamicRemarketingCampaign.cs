@@ -30,8 +30,8 @@ using static Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
-    /// Creates a shopping campaign associated with an existing merchant center account, along
-    /// with a related ad group and dynamic display ad, and targets a user list for remarketing
+    /// Creates a shopping campaign associated with an existing Merchant Center account, along
+    /// with a related ad group and responsive display ad, and targets a user list for remarketing
     /// purposes.
     /// </summary>
     public class AddMerchantCenterDynamicRemarketingCampaign : ExampleBase
@@ -70,8 +70,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             get
             {
-                return "Creates a shopping campaign associated with an existing merchant center " +
-                       "account, along with a related ad group and dynamic display ad, and " +
+                return "Creates a shopping campaign associated with an existing Merchant Center " +
+                       "account, along with a related ad group and responsive display ad, and " +
                        "targets a user list for remarketing purposes.";
             }
         }
@@ -91,7 +91,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             try
             {
-                // Creates a shopping campaign associated with a given merchant center account.
+                // Creates a shopping campaign associated with a given Merchant Center account.
                 string campaignResourceName = CreateCampaign(client, customerId,
                     merchantCenterAccountId, campaignBudgetId);
 
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 string adGroupResourceName = CreateAdGroup(client, customerId,
                     campaignResourceName);
 
-                // Creates a dynamic display ad in the ad group.
+                // Creates a responsive display ad in the ad group.
                 CreateAd(client, customerId, adGroupResourceName);
 
                 // Targets a specific user list for remarketing.
@@ -142,7 +142,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 CampaignBudget = budgetResourceName,
                 ManualCpc = new ManualCpc(),
                 // The settings for the shopping campaign.
-                // This connects the campaign to the merchant center account.
+                // This connects the campaign to the Merchant Center account.
                 ShoppingSetting = new Campaign.Types.ShoppingSetting()
                 {
                     CampaignPriority = 0,
