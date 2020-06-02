@@ -166,7 +166,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             MutateCampaignsResponse response = campaignServiceClient.MutateCampaigns(customerId
                 .ToString(), new[] {operation});
             string campaignResourceName = response.Results.First().ResourceName;
-            Console.WriteLine($"Create campaign with resource name '{campaignResourceName}'.");
+            Console.WriteLine($"Created campaign with resource name '{campaignResourceName}'.");
             return campaignResourceName;
         }
 
