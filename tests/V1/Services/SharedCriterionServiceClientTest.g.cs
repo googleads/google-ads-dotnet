@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,220 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V1.Common;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedSharedCriterionServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedSharedCriterionServiceClientTest
     {
+        [Test]
+        public void GetSharedCriterionRequestObject()
+        {
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
+            GetSharedCriterionRequest request = new GetSharedCriterionRequest
+            {
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
+            };
+            gagvr::SharedCriterion expectedResponse = new gagvr::SharedCriterion
+            {
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Keyword = new gagvc::KeywordInfo(),
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                CriterionId = 8584655242409302840L,
+            };
+            mockGrpcClient.Setup(x => x.GetSharedCriterion(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SharedCriterion response = client.GetSharedCriterion(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetSharedCriterionRequestObjectAsync()
+        {
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
+            GetSharedCriterionRequest request = new GetSharedCriterionRequest
+            {
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
+            };
+            gagvr::SharedCriterion expectedResponse = new gagvr::SharedCriterion
+            {
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Keyword = new gagvc::KeywordInfo(),
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                CriterionId = 8584655242409302840L,
+            };
+            mockGrpcClient.Setup(x => x.GetSharedCriterionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::SharedCriterion>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SharedCriterion responseCallSettings = await client.GetSharedCriterionAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::SharedCriterion responseCancellationToken = await client.GetSharedCriterionAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetSharedCriterion()
         {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
-            GetSharedCriterionRequest expectedRequest = new GetSharedCriterionRequest
-            {
-                ResourceName = new SharedCriteriaName("[CUSTOMER]", "[SHARED_CRITERIA]").ToString(),
-            };
-            SharedCriterion expectedResponse = new SharedCriterion
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetSharedCriterion(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new SharedCriteriaName("[CUSTOMER]", "[SHARED_CRITERIA]").ToString();
-            SharedCriterion response = client.GetSharedCriterion(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetSharedCriterionAsync()
-        {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
-            GetSharedCriterionRequest expectedRequest = new GetSharedCriterionRequest
-            {
-                ResourceName = new SharedCriteriaName("[CUSTOMER]", "[SHARED_CRITERIA]").ToString(),
-            };
-            SharedCriterion expectedResponse = new SharedCriterion
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetSharedCriterionAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<SharedCriterion>(Task.FromResult(expectedResponse), null, null, null, null));
-            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new SharedCriteriaName("[CUSTOMER]", "[SHARED_CRITERIA]").ToString();
-            SharedCriterion response = await client.GetSharedCriterionAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetSharedCriterion2()
-        {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
             GetSharedCriterionRequest request = new GetSharedCriterionRequest
             {
-                ResourceName = new SharedCriteriaName("[CUSTOMER]", "[SHARED_CRITERIA]").ToString(),
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
             };
-            SharedCriterion expectedResponse = new SharedCriterion
+            gagvr::SharedCriterion expectedResponse = new gagvr::SharedCriterion
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Keyword = new gagvc::KeywordInfo(),
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                CriterionId = 8584655242409302840L,
             };
-            mockGrpcClient.Setup(x => x.GetSharedCriterion(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetSharedCriterion(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            SharedCriterion response = client.GetSharedCriterion(request);
+            gagvr::SharedCriterion response = client.GetSharedCriterion(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetSharedCriterionAsync2()
+        public async stt::Task GetSharedCriterionAsync()
         {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
             GetSharedCriterionRequest request = new GetSharedCriterionRequest
             {
-                ResourceName = new SharedCriteriaName("[CUSTOMER]", "[SHARED_CRITERIA]").ToString(),
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
             };
-            SharedCriterion expectedResponse = new SharedCriterion
+            gagvr::SharedCriterion expectedResponse = new gagvr::SharedCriterion
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Keyword = new gagvc::KeywordInfo(),
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                CriterionId = 8584655242409302840L,
             };
-            mockGrpcClient.Setup(x => x.GetSharedCriterionAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<SharedCriterion>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetSharedCriterionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::SharedCriterion>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            SharedCriterion response = await client.GetSharedCriterionAsync(request);
+            gagvr::SharedCriterion responseCallSettings = await client.GetSharedCriterionAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::SharedCriterion responseCancellationToken = await client.GetSharedCriterionAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetSharedCriterionResourceNames()
+        {
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
+            GetSharedCriterionRequest request = new GetSharedCriterionRequest
+            {
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
+            };
+            gagvr::SharedCriterion expectedResponse = new gagvr::SharedCriterion
+            {
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Keyword = new gagvc::KeywordInfo(),
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                CriterionId = 8584655242409302840L,
+            };
+            mockGrpcClient.Setup(x => x.GetSharedCriterion(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SharedCriterion response = client.GetSharedCriterion(request.ResourceNameAsSharedCriterionName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateSharedCriteria()
+        public async stt::Task GetSharedCriterionResourceNamesAsync()
         {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
-            MutateSharedCriteriaRequest expectedRequest = new MutateSharedCriteriaRequest
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
+            GetSharedCriterionRequest request = new GetSharedCriterionRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
             };
-            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedCriteria(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::SharedCriterion expectedResponse = new gagvr::SharedCriterion
+            {
+                ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedCriterion("[CUSTOMER]", "[SHARED_CRITERION]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Keyword = new gagvc::KeywordInfo(),
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                CriterionId = 8584655242409302840L,
+            };
+            mockGrpcClient.Setup(x => x.GetSharedCriterionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::SharedCriterion>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<SharedCriterionOperation> operations = new List<SharedCriterionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateSharedCriteriaResponse response = client.MutateSharedCriteria(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::SharedCriterion responseCallSettings = await client.GetSharedCriterionAsync(request.ResourceNameAsSharedCriterionName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::SharedCriterion responseCancellationToken = await client.GetSharedCriterionAsync(request.ResourceNameAsSharedCriterionName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateSharedCriteriaAsync()
+        public void MutateSharedCriteriaRequestObject()
         {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
-            MutateSharedCriteriaRequest expectedRequest = new MutateSharedCriteriaRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedCriteriaAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateSharedCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<SharedCriterionOperation> operations = new List<SharedCriterionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateSharedCriteriaResponse response = await client.MutateSharedCriteriaAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateSharedCriteria2()
-        {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
-            MutateSharedCriteriaRequest expectedRequest = new MutateSharedCriteriaRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedCriteria(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<SharedCriterionOperation> operations = new List<SharedCriterionOperation>();
-            MutateSharedCriteriaResponse response = client.MutateSharedCriteria(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateSharedCriteriaAsync2()
-        {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
-            MutateSharedCriteriaRequest expectedRequest = new MutateSharedCriteriaRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedCriteriaAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateSharedCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<SharedCriterionOperation> operations = new List<SharedCriterionOperation>();
-            MutateSharedCriteriaResponse response = await client.MutateSharedCriteriaAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateSharedCriteria3()
-        {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
             MutateSharedCriteriaRequest request = new MutateSharedCriteriaRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new SharedCriterionOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedCriteria(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse
+            {
+                Results =
+                {
+                    new MutateSharedCriterionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateSharedCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
             MutateSharedCriteriaResponse response = client.MutateSharedCriteria(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +235,90 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateSharedCriteriaAsync3()
+        public async stt::Task MutateSharedCriteriaRequestObjectAsync()
         {
-            Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new Mock<SharedCriterionService.SharedCriterionServiceClient>(MockBehavior.Strict);
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
             MutateSharedCriteriaRequest request = new MutateSharedCriteriaRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new SharedCriterionOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedCriteriaAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateSharedCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse
+            {
+                Results =
+                {
+                    new MutateSharedCriterionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateSharedCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSharedCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            MutateSharedCriteriaResponse response = await client.MutateSharedCriteriaAsync(request);
+            MutateSharedCriteriaResponse responseCallSettings = await client.MutateSharedCriteriaAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateSharedCriteriaResponse responseCancellationToken = await client.MutateSharedCriteriaAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateSharedCriteria()
+        {
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
+            MutateSharedCriteriaRequest request = new MutateSharedCriteriaRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new SharedCriterionOperation(),
+                },
+            };
+            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse
+            {
+                Results =
+                {
+                    new MutateSharedCriterionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateSharedCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateSharedCriteriaResponse response = client.MutateSharedCriteria(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateSharedCriteriaAsync()
+        {
+            moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
+            MutateSharedCriteriaRequest request = new MutateSharedCriteriaRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new SharedCriterionOperation(),
+                },
+            };
+            MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse
+            {
+                Results =
+                {
+                    new MutateSharedCriterionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateSharedCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSharedCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateSharedCriteriaResponse responseCallSettings = await client.MutateSharedCriteriaAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateSharedCriteriaResponse responseCancellationToken = await client.MutateSharedCriteriaAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -14,6 +14,7 @@
 
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Interceptors;
+using Google.Api.Gax;
 using Google.Api.Gax.Grpc;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
@@ -156,7 +157,7 @@ namespace Google.Ads.GoogleAds.Lib
                     config.LibraryIdentifierOverride);
             }
 
-            callSettings = callSettings.WithCallTiming(CallTiming.FromTimeout(
+            callSettings = callSettings.WithExpiration(Expiration.FromTimeout(
                 TimeSpan.FromMilliseconds(config.Timeout)));
 
             return callSettings;

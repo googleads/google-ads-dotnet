@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedGenderViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedGenderViewServiceClientTest
     {
+        [Test]
+        public void GetGenderViewRequestObject()
+        {
+            moq::Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new moq::Mock<GenderViewService.GenderViewServiceClient>(moq::MockBehavior.Strict);
+            GetGenderViewRequest request = new GetGenderViewRequest
+            {
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
+            };
+            gagvr::GenderView expectedResponse = new gagvr::GenderView
+            {
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetGenderView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GenderViewServiceClient client = new GenderViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GenderView response = client.GetGenderView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetGenderViewRequestObjectAsync()
+        {
+            moq::Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new moq::Mock<GenderViewService.GenderViewServiceClient>(moq::MockBehavior.Strict);
+            GetGenderViewRequest request = new GetGenderViewRequest
+            {
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
+            };
+            gagvr::GenderView expectedResponse = new gagvr::GenderView
+            {
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetGenderViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GenderView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            GenderViewServiceClient client = new GenderViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GenderView responseCallSettings = await client.GetGenderViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GenderView responseCancellationToken = await client.GetGenderViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetGenderView()
         {
-            Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new Mock<GenderViewService.GenderViewServiceClient>(MockBehavior.Strict);
-            GetGenderViewRequest expectedRequest = new GetGenderViewRequest
-            {
-                ResourceName = new GenderViewName("[CUSTOMER]", "[GENDER_VIEW]").ToString(),
-            };
-            GenderView expectedResponse = new GenderView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGenderView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            GenderViewServiceClient client = new GenderViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GenderViewName("[CUSTOMER]", "[GENDER_VIEW]").ToString();
-            GenderView response = client.GetGenderView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetGenderViewAsync()
-        {
-            Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new Mock<GenderViewService.GenderViewServiceClient>(MockBehavior.Strict);
-            GetGenderViewRequest expectedRequest = new GetGenderViewRequest
-            {
-                ResourceName = new GenderViewName("[CUSTOMER]", "[GENDER_VIEW]").ToString(),
-            };
-            GenderView expectedResponse = new GenderView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGenderViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GenderView>(Task.FromResult(expectedResponse), null, null, null, null));
-            GenderViewServiceClient client = new GenderViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GenderViewName("[CUSTOMER]", "[GENDER_VIEW]").ToString();
-            GenderView response = await client.GetGenderViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetGenderView2()
-        {
-            Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new Mock<GenderViewService.GenderViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new moq::Mock<GenderViewService.GenderViewServiceClient>(moq::MockBehavior.Strict);
             GetGenderViewRequest request = new GetGenderViewRequest
             {
-                ResourceName = new GenderViewName("[CUSTOMER]", "[GENDER_VIEW]").ToString(),
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
             };
-            GenderView expectedResponse = new GenderView
+            gagvr::GenderView expectedResponse = new gagvr::GenderView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetGenderView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetGenderView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             GenderViewServiceClient client = new GenderViewServiceClientImpl(mockGrpcClient.Object, null);
-            GenderView response = client.GetGenderView(request);
+            gagvr::GenderView response = client.GetGenderView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetGenderViewAsync2()
+        public async stt::Task GetGenderViewAsync()
         {
-            Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new Mock<GenderViewService.GenderViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new moq::Mock<GenderViewService.GenderViewServiceClient>(moq::MockBehavior.Strict);
             GetGenderViewRequest request = new GetGenderViewRequest
             {
-                ResourceName = new GenderViewName("[CUSTOMER]", "[GENDER_VIEW]").ToString(),
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
             };
-            GenderView expectedResponse = new GenderView
+            gagvr::GenderView expectedResponse = new gagvr::GenderView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetGenderViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GenderView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetGenderViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GenderView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             GenderViewServiceClient client = new GenderViewServiceClientImpl(mockGrpcClient.Object, null);
-            GenderView response = await client.GetGenderViewAsync(request);
+            gagvr::GenderView responseCallSettings = await client.GetGenderViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GenderView responseCancellationToken = await client.GetGenderViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetGenderViewResourceNames()
+        {
+            moq::Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new moq::Mock<GenderViewService.GenderViewServiceClient>(moq::MockBehavior.Strict);
+            GetGenderViewRequest request = new GetGenderViewRequest
+            {
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
+            };
+            gagvr::GenderView expectedResponse = new gagvr::GenderView
+            {
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetGenderView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GenderViewServiceClient client = new GenderViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GenderView response = client.GetGenderView(request.ResourceNameAsGenderViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetGenderViewResourceNamesAsync()
+        {
+            moq::Mock<GenderViewService.GenderViewServiceClient> mockGrpcClient = new moq::Mock<GenderViewService.GenderViewServiceClient>(moq::MockBehavior.Strict);
+            GetGenderViewRequest request = new GetGenderViewRequest
+            {
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
+            };
+            gagvr::GenderView expectedResponse = new gagvr::GenderView
+            {
+                ResourceNameAsGenderViewName = gagvr::GenderViewName.FromCustomerGenderView("[CUSTOMER]", "[GENDER_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetGenderViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GenderView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            GenderViewServiceClient client = new GenderViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GenderView responseCallSettings = await client.GetGenderViewAsync(request.ResourceNameAsGenderViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GenderView responseCancellationToken = await client.GetGenderViewAsync(request.ResourceNameAsGenderViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

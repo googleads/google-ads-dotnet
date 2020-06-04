@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdScheduleViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdScheduleViewServiceClientTest
     {
+        [Test]
+        public void GetAdScheduleViewRequestObject()
+        {
+            moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdScheduleViewRequest request = new GetAdScheduleViewRequest
+            {
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
+            };
+            gagvr::AdScheduleView expectedResponse = new gagvr::AdScheduleView
+            {
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdScheduleView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdScheduleViewServiceClient client = new AdScheduleViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdScheduleView response = client.GetAdScheduleView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdScheduleViewRequestObjectAsync()
+        {
+            moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdScheduleViewRequest request = new GetAdScheduleViewRequest
+            {
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
+            };
+            gagvr::AdScheduleView expectedResponse = new gagvr::AdScheduleView
+            {
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdScheduleViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdScheduleView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdScheduleViewServiceClient client = new AdScheduleViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdScheduleView responseCallSettings = await client.GetAdScheduleViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdScheduleView responseCancellationToken = await client.GetAdScheduleViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAdScheduleView()
         {
-            Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new Mock<AdScheduleViewService.AdScheduleViewServiceClient>(MockBehavior.Strict);
-            GetAdScheduleViewRequest expectedRequest = new GetAdScheduleViewRequest
-            {
-                ResourceName = new AdScheduleViewName("[CUSTOMER]", "[AD_SCHEDULE_VIEW]").ToString(),
-            };
-            AdScheduleView expectedResponse = new AdScheduleView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdScheduleView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdScheduleViewServiceClient client = new AdScheduleViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdScheduleViewName("[CUSTOMER]", "[AD_SCHEDULE_VIEW]").ToString();
-            AdScheduleView response = client.GetAdScheduleView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdScheduleViewAsync()
-        {
-            Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new Mock<AdScheduleViewService.AdScheduleViewServiceClient>(MockBehavior.Strict);
-            GetAdScheduleViewRequest expectedRequest = new GetAdScheduleViewRequest
-            {
-                ResourceName = new AdScheduleViewName("[CUSTOMER]", "[AD_SCHEDULE_VIEW]").ToString(),
-            };
-            AdScheduleView expectedResponse = new AdScheduleView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdScheduleViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdScheduleView>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdScheduleViewServiceClient client = new AdScheduleViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdScheduleViewName("[CUSTOMER]", "[AD_SCHEDULE_VIEW]").ToString();
-            AdScheduleView response = await client.GetAdScheduleViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAdScheduleView2()
-        {
-            Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new Mock<AdScheduleViewService.AdScheduleViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
             GetAdScheduleViewRequest request = new GetAdScheduleViewRequest
             {
-                ResourceName = new AdScheduleViewName("[CUSTOMER]", "[AD_SCHEDULE_VIEW]").ToString(),
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
             };
-            AdScheduleView expectedResponse = new AdScheduleView
+            gagvr::AdScheduleView expectedResponse = new gagvr::AdScheduleView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetAdScheduleView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAdScheduleView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdScheduleViewServiceClient client = new AdScheduleViewServiceClientImpl(mockGrpcClient.Object, null);
-            AdScheduleView response = client.GetAdScheduleView(request);
+            gagvr::AdScheduleView response = client.GetAdScheduleView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdScheduleViewAsync2()
+        public async stt::Task GetAdScheduleViewAsync()
         {
-            Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new Mock<AdScheduleViewService.AdScheduleViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
             GetAdScheduleViewRequest request = new GetAdScheduleViewRequest
             {
-                ResourceName = new AdScheduleViewName("[CUSTOMER]", "[AD_SCHEDULE_VIEW]").ToString(),
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
             };
-            AdScheduleView expectedResponse = new AdScheduleView
+            gagvr::AdScheduleView expectedResponse = new gagvr::AdScheduleView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetAdScheduleViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdScheduleView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdScheduleViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdScheduleView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdScheduleViewServiceClient client = new AdScheduleViewServiceClientImpl(mockGrpcClient.Object, null);
-            AdScheduleView response = await client.GetAdScheduleViewAsync(request);
+            gagvr::AdScheduleView responseCallSettings = await client.GetAdScheduleViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdScheduleView responseCancellationToken = await client.GetAdScheduleViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdScheduleViewResourceNames()
+        {
+            moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdScheduleViewRequest request = new GetAdScheduleViewRequest
+            {
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
+            };
+            gagvr::AdScheduleView expectedResponse = new gagvr::AdScheduleView
+            {
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdScheduleView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdScheduleViewServiceClient client = new AdScheduleViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdScheduleView response = client.GetAdScheduleView(request.ResourceNameAsAdScheduleViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetAdScheduleViewResourceNamesAsync()
+        {
+            moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdScheduleViewRequest request = new GetAdScheduleViewRequest
+            {
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
+            };
+            gagvr::AdScheduleView expectedResponse = new gagvr::AdScheduleView
+            {
+                ResourceNameAsAdScheduleViewName = gagvr::AdScheduleViewName.FromCustomerAdScheduleView("[CUSTOMER]", "[AD_SCHEDULE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdScheduleViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdScheduleView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdScheduleViewServiceClient client = new AdScheduleViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdScheduleView responseCallSettings = await client.GetAdScheduleViewAsync(request.ResourceNameAsAdScheduleViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdScheduleView responseCancellationToken = await client.GetAdScheduleViewAsync(request.ResourceNameAsAdScheduleViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,151 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedGeographicViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedGeographicViewServiceClientTest
     {
+        [Test]
+        public void GetGeographicViewRequestObject()
+        {
+            moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
+            GetGeographicViewRequest request = new GetGeographicViewRequest
+            {
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+            };
+            gagvr::GeographicView expectedResponse = new gagvr::GeographicView
+            {
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+                CountryGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                LocationType = gagve::GeoTargetingTypeEnum.Types.GeoTargetingType.LocationOfPresence,
+            };
+            mockGrpcClient.Setup(x => x.GetGeographicView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GeographicViewServiceClient client = new GeographicViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GeographicView response = client.GetGeographicView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetGeographicViewRequestObjectAsync()
+        {
+            moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
+            GetGeographicViewRequest request = new GetGeographicViewRequest
+            {
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+            };
+            gagvr::GeographicView expectedResponse = new gagvr::GeographicView
+            {
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+                CountryGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                LocationType = gagve::GeoTargetingTypeEnum.Types.GeoTargetingType.LocationOfPresence,
+            };
+            mockGrpcClient.Setup(x => x.GetGeographicViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GeographicView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            GeographicViewServiceClient client = new GeographicViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GeographicView responseCallSettings = await client.GetGeographicViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GeographicView responseCancellationToken = await client.GetGeographicViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetGeographicView()
         {
-            Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new Mock<GeographicViewService.GeographicViewServiceClient>(MockBehavior.Strict);
-            GetGeographicViewRequest expectedRequest = new GetGeographicViewRequest
-            {
-                ResourceName = new GeographicViewName("[CUSTOMER]", "[GEOGRAPHIC_VIEW]").ToString(),
-            };
-            GeographicView expectedResponse = new GeographicView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGeographicView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            GeographicViewServiceClient client = new GeographicViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GeographicViewName("[CUSTOMER]", "[GEOGRAPHIC_VIEW]").ToString();
-            GeographicView response = client.GetGeographicView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetGeographicViewAsync()
-        {
-            Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new Mock<GeographicViewService.GeographicViewServiceClient>(MockBehavior.Strict);
-            GetGeographicViewRequest expectedRequest = new GetGeographicViewRequest
-            {
-                ResourceName = new GeographicViewName("[CUSTOMER]", "[GEOGRAPHIC_VIEW]").ToString(),
-            };
-            GeographicView expectedResponse = new GeographicView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGeographicViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GeographicView>(Task.FromResult(expectedResponse), null, null, null, null));
-            GeographicViewServiceClient client = new GeographicViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GeographicViewName("[CUSTOMER]", "[GEOGRAPHIC_VIEW]").ToString();
-            GeographicView response = await client.GetGeographicViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetGeographicView2()
-        {
-            Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new Mock<GeographicViewService.GeographicViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
             GetGeographicViewRequest request = new GetGeographicViewRequest
             {
-                ResourceName = new GeographicViewName("[CUSTOMER]", "[GEOGRAPHIC_VIEW]").ToString(),
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
             };
-            GeographicView expectedResponse = new GeographicView
+            gagvr::GeographicView expectedResponse = new gagvr::GeographicView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+                CountryGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                LocationType = gagve::GeoTargetingTypeEnum.Types.GeoTargetingType.LocationOfPresence,
             };
-            mockGrpcClient.Setup(x => x.GetGeographicView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetGeographicView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             GeographicViewServiceClient client = new GeographicViewServiceClientImpl(mockGrpcClient.Object, null);
-            GeographicView response = client.GetGeographicView(request);
+            gagvr::GeographicView response = client.GetGeographicView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetGeographicViewAsync2()
+        public async stt::Task GetGeographicViewAsync()
         {
-            Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new Mock<GeographicViewService.GeographicViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
             GetGeographicViewRequest request = new GetGeographicViewRequest
             {
-                ResourceName = new GeographicViewName("[CUSTOMER]", "[GEOGRAPHIC_VIEW]").ToString(),
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
             };
-            GeographicView expectedResponse = new GeographicView
+            gagvr::GeographicView expectedResponse = new gagvr::GeographicView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+                CountryGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                LocationType = gagve::GeoTargetingTypeEnum.Types.GeoTargetingType.LocationOfPresence,
             };
-            mockGrpcClient.Setup(x => x.GetGeographicViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GeographicView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetGeographicViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GeographicView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             GeographicViewServiceClient client = new GeographicViewServiceClientImpl(mockGrpcClient.Object, null);
-            GeographicView response = await client.GetGeographicViewAsync(request);
+            gagvr::GeographicView responseCallSettings = await client.GetGeographicViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GeographicView responseCancellationToken = await client.GetGeographicViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetGeographicViewResourceNames()
+        {
+            moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
+            GetGeographicViewRequest request = new GetGeographicViewRequest
+            {
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+            };
+            gagvr::GeographicView expectedResponse = new gagvr::GeographicView
+            {
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+                CountryGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                LocationType = gagve::GeoTargetingTypeEnum.Types.GeoTargetingType.LocationOfPresence,
+            };
+            mockGrpcClient.Setup(x => x.GetGeographicView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GeographicViewServiceClient client = new GeographicViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GeographicView response = client.GetGeographicView(request.ResourceNameAsGeographicViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetGeographicViewResourceNamesAsync()
+        {
+            moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
+            GetGeographicViewRequest request = new GetGeographicViewRequest
+            {
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+            };
+            gagvr::GeographicView expectedResponse = new gagvr::GeographicView
+            {
+                ResourceNameAsGeographicViewName = gagvr::GeographicViewName.FromCustomerGeographicView("[CUSTOMER]", "[GEOGRAPHIC_VIEW]"),
+                CountryGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                LocationType = gagve::GeoTargetingTypeEnum.Types.GeoTargetingType.LocationOfPresence,
+            };
+            mockGrpcClient.Setup(x => x.GetGeographicViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GeographicView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            GeographicViewServiceClient client = new GeographicViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GeographicView responseCallSettings = await client.GetGeographicViewAsync(request.ResourceNameAsGeographicViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GeographicView responseCancellationToken = await client.GetGeographicViewAsync(request.ResourceNameAsGeographicViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

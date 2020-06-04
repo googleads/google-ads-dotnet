@@ -14,107 +14,162 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCurrencyConstantServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCurrencyConstantServiceClientTest
     {
+        [Test]
+        public void GetCurrencyConstantRequestObject()
+        {
+            moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
+            GetCurrencyConstantRequest request = new GetCurrencyConstantRequest
+            {
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+            };
+            gagvr::CurrencyConstant expectedResponse = new gagvr::CurrencyConstant
+            {
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Code = "code946733c1",
+                CurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Symbol = "symbol68f2bf97",
+                BillableUnitMicros = -4065431154313687083L,
+            };
+            mockGrpcClient.Setup(x => x.GetCurrencyConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CurrencyConstantServiceClient client = new CurrencyConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CurrencyConstant response = client.GetCurrencyConstant(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCurrencyConstantRequestObjectAsync()
+        {
+            moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
+            GetCurrencyConstantRequest request = new GetCurrencyConstantRequest
+            {
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+            };
+            gagvr::CurrencyConstant expectedResponse = new gagvr::CurrencyConstant
+            {
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Code = "code946733c1",
+                CurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Symbol = "symbol68f2bf97",
+                BillableUnitMicros = -4065431154313687083L,
+            };
+            mockGrpcClient.Setup(x => x.GetCurrencyConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CurrencyConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CurrencyConstantServiceClient client = new CurrencyConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CurrencyConstant responseCallSettings = await client.GetCurrencyConstantAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CurrencyConstant responseCancellationToken = await client.GetCurrencyConstantAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCurrencyConstant()
         {
-            Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new Mock<CurrencyConstantService.CurrencyConstantServiceClient>(MockBehavior.Strict);
-            GetCurrencyConstantRequest expectedRequest = new GetCurrencyConstantRequest
-            {
-                ResourceName = new CurrencyConstantName("[CURRENCY_CONSTANT]").ToString(),
-            };
-            CurrencyConstant expectedResponse = new CurrencyConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCurrencyConstant(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CurrencyConstantServiceClient client = new CurrencyConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CurrencyConstantName("[CURRENCY_CONSTANT]").ToString();
-            CurrencyConstant response = client.GetCurrencyConstant(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCurrencyConstantAsync()
-        {
-            Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new Mock<CurrencyConstantService.CurrencyConstantServiceClient>(MockBehavior.Strict);
-            GetCurrencyConstantRequest expectedRequest = new GetCurrencyConstantRequest
-            {
-                ResourceName = new CurrencyConstantName("[CURRENCY_CONSTANT]").ToString(),
-            };
-            CurrencyConstant expectedResponse = new CurrencyConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCurrencyConstantAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CurrencyConstant>(Task.FromResult(expectedResponse), null, null, null, null));
-            CurrencyConstantServiceClient client = new CurrencyConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CurrencyConstantName("[CURRENCY_CONSTANT]").ToString();
-            CurrencyConstant response = await client.GetCurrencyConstantAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCurrencyConstant2()
-        {
-            Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new Mock<CurrencyConstantService.CurrencyConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
             GetCurrencyConstantRequest request = new GetCurrencyConstantRequest
             {
-                ResourceName = new CurrencyConstantName("[CURRENCY_CONSTANT]").ToString(),
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
             };
-            CurrencyConstant expectedResponse = new CurrencyConstant
+            gagvr::CurrencyConstant expectedResponse = new gagvr::CurrencyConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Code = "code946733c1",
+                CurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Symbol = "symbol68f2bf97",
+                BillableUnitMicros = -4065431154313687083L,
             };
-            mockGrpcClient.Setup(x => x.GetCurrencyConstant(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCurrencyConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CurrencyConstantServiceClient client = new CurrencyConstantServiceClientImpl(mockGrpcClient.Object, null);
-            CurrencyConstant response = client.GetCurrencyConstant(request);
+            gagvr::CurrencyConstant response = client.GetCurrencyConstant(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCurrencyConstantAsync2()
+        public async stt::Task GetCurrencyConstantAsync()
         {
-            Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new Mock<CurrencyConstantService.CurrencyConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
             GetCurrencyConstantRequest request = new GetCurrencyConstantRequest
             {
-                ResourceName = new CurrencyConstantName("[CURRENCY_CONSTANT]").ToString(),
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
             };
-            CurrencyConstant expectedResponse = new CurrencyConstant
+            gagvr::CurrencyConstant expectedResponse = new gagvr::CurrencyConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Code = "code946733c1",
+                CurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Symbol = "symbol68f2bf97",
+                BillableUnitMicros = -4065431154313687083L,
             };
-            mockGrpcClient.Setup(x => x.GetCurrencyConstantAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CurrencyConstant>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCurrencyConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CurrencyConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CurrencyConstantServiceClient client = new CurrencyConstantServiceClientImpl(mockGrpcClient.Object, null);
-            CurrencyConstant response = await client.GetCurrencyConstantAsync(request);
+            gagvr::CurrencyConstant responseCallSettings = await client.GetCurrencyConstantAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CurrencyConstant responseCancellationToken = await client.GetCurrencyConstantAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCurrencyConstantResourceNames()
+        {
+            moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
+            GetCurrencyConstantRequest request = new GetCurrencyConstantRequest
+            {
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+            };
+            gagvr::CurrencyConstant expectedResponse = new gagvr::CurrencyConstant
+            {
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Code = "code946733c1",
+                CurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Symbol = "symbol68f2bf97",
+                BillableUnitMicros = -4065431154313687083L,
+            };
+            mockGrpcClient.Setup(x => x.GetCurrencyConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CurrencyConstantServiceClient client = new CurrencyConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CurrencyConstant response = client.GetCurrencyConstant(request.ResourceNameAsCurrencyConstantName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetCurrencyConstantResourceNamesAsync()
+        {
+            moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
+            GetCurrencyConstantRequest request = new GetCurrencyConstantRequest
+            {
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+            };
+            gagvr::CurrencyConstant expectedResponse = new gagvr::CurrencyConstant
+            {
+                ResourceNameAsCurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Code = "code946733c1",
+                CurrencyConstantName = gagvr::CurrencyConstantName.FromCurrencyConstant("[CURRENCY_CONSTANT]"),
+                Symbol = "symbol68f2bf97",
+                BillableUnitMicros = -4065431154313687083L,
+            };
+            mockGrpcClient.Setup(x => x.GetCurrencyConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CurrencyConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CurrencyConstantServiceClient client = new CurrencyConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CurrencyConstant responseCallSettings = await client.GetCurrencyConstantAsync(request.ResourceNameAsCurrencyConstantName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CurrencyConstant responseCancellationToken = await client.GetCurrencyConstantAsync(request.ResourceNameAsCurrencyConstantName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

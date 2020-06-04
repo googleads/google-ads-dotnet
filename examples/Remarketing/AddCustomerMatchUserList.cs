@@ -174,10 +174,16 @@ namespace Google.Ads.GoogleAds.Examples.V3
             Console.WriteLine($"Created an offline user data job with resource name: " +
                 $"'{offlineUserDataJobResourceName}'.");
 
+            AddOfflineUserDataJobOperationsRequest request =
+                new AddOfflineUserDataJobOperationsRequest()
+                {
+                    ResourceName = offlineUserDataJobResourceName,
+                    Operations = { BuildOfflineUserDataJobOperations() },
+                    EnablePartialFailure = true,
+                };
             // Issues a request to add the operations to the offline user data job.
             AddOfflineUserDataJobOperationsResponse response2 =
-                service.AddOfflineUserDataJobOperations(offlineUserDataJobResourceName,
-                    true, BuildOfflineUserDataJobOperations());
+                service.AddOfflineUserDataJobOperations(request);
 
             // Prints the status message if any partial failure error is returned.
             // Note: The details of each partial failure error are not printed here,

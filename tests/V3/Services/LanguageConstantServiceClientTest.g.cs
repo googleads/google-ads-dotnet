@@ -14,107 +14,162 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedLanguageConstantServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedLanguageConstantServiceClientTest
     {
+        [Test]
+        public void GetLanguageConstantRequestObject()
+        {
+            moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
+            GetLanguageConstantRequest request = new GetLanguageConstantRequest
+            {
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+            };
+            gagvr::LanguageConstant expectedResponse = new gagvr::LanguageConstant
+            {
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                Code = "code946733c1",
+                LanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Targetable = true,
+            };
+            mockGrpcClient.Setup(x => x.GetLanguageConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            LanguageConstantServiceClient client = new LanguageConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::LanguageConstant response = client.GetLanguageConstant(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetLanguageConstantRequestObjectAsync()
+        {
+            moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
+            GetLanguageConstantRequest request = new GetLanguageConstantRequest
+            {
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+            };
+            gagvr::LanguageConstant expectedResponse = new gagvr::LanguageConstant
+            {
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                Code = "code946733c1",
+                LanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Targetable = true,
+            };
+            mockGrpcClient.Setup(x => x.GetLanguageConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::LanguageConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            LanguageConstantServiceClient client = new LanguageConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::LanguageConstant responseCallSettings = await client.GetLanguageConstantAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::LanguageConstant responseCancellationToken = await client.GetLanguageConstantAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetLanguageConstant()
         {
-            Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new Mock<LanguageConstantService.LanguageConstantServiceClient>(MockBehavior.Strict);
-            GetLanguageConstantRequest expectedRequest = new GetLanguageConstantRequest
-            {
-                ResourceName = new LanguageConstantName("[LANGUAGE_CONSTANT]").ToString(),
-            };
-            LanguageConstant expectedResponse = new LanguageConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetLanguageConstant(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            LanguageConstantServiceClient client = new LanguageConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new LanguageConstantName("[LANGUAGE_CONSTANT]").ToString();
-            LanguageConstant response = client.GetLanguageConstant(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetLanguageConstantAsync()
-        {
-            Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new Mock<LanguageConstantService.LanguageConstantServiceClient>(MockBehavior.Strict);
-            GetLanguageConstantRequest expectedRequest = new GetLanguageConstantRequest
-            {
-                ResourceName = new LanguageConstantName("[LANGUAGE_CONSTANT]").ToString(),
-            };
-            LanguageConstant expectedResponse = new LanguageConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetLanguageConstantAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<LanguageConstant>(Task.FromResult(expectedResponse), null, null, null, null));
-            LanguageConstantServiceClient client = new LanguageConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new LanguageConstantName("[LANGUAGE_CONSTANT]").ToString();
-            LanguageConstant response = await client.GetLanguageConstantAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetLanguageConstant2()
-        {
-            Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new Mock<LanguageConstantService.LanguageConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
             GetLanguageConstantRequest request = new GetLanguageConstantRequest
             {
-                ResourceName = new LanguageConstantName("[LANGUAGE_CONSTANT]").ToString(),
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
             };
-            LanguageConstant expectedResponse = new LanguageConstant
+            gagvr::LanguageConstant expectedResponse = new gagvr::LanguageConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                Code = "code946733c1",
+                LanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Targetable = true,
             };
-            mockGrpcClient.Setup(x => x.GetLanguageConstant(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetLanguageConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             LanguageConstantServiceClient client = new LanguageConstantServiceClientImpl(mockGrpcClient.Object, null);
-            LanguageConstant response = client.GetLanguageConstant(request);
+            gagvr::LanguageConstant response = client.GetLanguageConstant(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetLanguageConstantAsync2()
+        public async stt::Task GetLanguageConstantAsync()
         {
-            Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new Mock<LanguageConstantService.LanguageConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
             GetLanguageConstantRequest request = new GetLanguageConstantRequest
             {
-                ResourceName = new LanguageConstantName("[LANGUAGE_CONSTANT]").ToString(),
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
             };
-            LanguageConstant expectedResponse = new LanguageConstant
+            gagvr::LanguageConstant expectedResponse = new gagvr::LanguageConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                Code = "code946733c1",
+                LanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Targetable = true,
             };
-            mockGrpcClient.Setup(x => x.GetLanguageConstantAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<LanguageConstant>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetLanguageConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::LanguageConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             LanguageConstantServiceClient client = new LanguageConstantServiceClientImpl(mockGrpcClient.Object, null);
-            LanguageConstant response = await client.GetLanguageConstantAsync(request);
+            gagvr::LanguageConstant responseCallSettings = await client.GetLanguageConstantAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::LanguageConstant responseCancellationToken = await client.GetLanguageConstantAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetLanguageConstantResourceNames()
+        {
+            moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
+            GetLanguageConstantRequest request = new GetLanguageConstantRequest
+            {
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+            };
+            gagvr::LanguageConstant expectedResponse = new gagvr::LanguageConstant
+            {
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                Code = "code946733c1",
+                LanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Targetable = true,
+            };
+            mockGrpcClient.Setup(x => x.GetLanguageConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            LanguageConstantServiceClient client = new LanguageConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::LanguageConstant response = client.GetLanguageConstant(request.ResourceNameAsLanguageConstantName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetLanguageConstantResourceNamesAsync()
+        {
+            moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
+            GetLanguageConstantRequest request = new GetLanguageConstantRequest
+            {
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+            };
+            gagvr::LanguageConstant expectedResponse = new gagvr::LanguageConstant
+            {
+                ResourceNameAsLanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                Code = "code946733c1",
+                LanguageConstantName = gagvr::LanguageConstantName.FromLanguageConstant("[LANGUAGE_CONSTANT]"),
+                Targetable = true,
+            };
+            mockGrpcClient.Setup(x => x.GetLanguageConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::LanguageConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            LanguageConstantServiceClient client = new LanguageConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::LanguageConstant responseCallSettings = await client.GetLanguageConstantAsync(request.ResourceNameAsLanguageConstantName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::LanguageConstant responseCancellationToken = await client.GetLanguageConstantAsync(request.ResourceNameAsLanguageConstantName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

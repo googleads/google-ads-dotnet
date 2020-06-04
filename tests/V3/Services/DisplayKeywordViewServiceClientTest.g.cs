@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedDisplayKeywordViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedDisplayKeywordViewServiceClientTest
     {
+        [Test]
+        public void GetDisplayKeywordViewRequestObject()
+        {
+            moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
+            GetDisplayKeywordViewRequest request = new GetDisplayKeywordViewRequest
+            {
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
+            };
+            gagvr::DisplayKeywordView expectedResponse = new gagvr::DisplayKeywordView
+            {
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetDisplayKeywordView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            DisplayKeywordViewServiceClient client = new DisplayKeywordViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DisplayKeywordView response = client.GetDisplayKeywordView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetDisplayKeywordViewRequestObjectAsync()
+        {
+            moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
+            GetDisplayKeywordViewRequest request = new GetDisplayKeywordViewRequest
+            {
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
+            };
+            gagvr::DisplayKeywordView expectedResponse = new gagvr::DisplayKeywordView
+            {
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetDisplayKeywordViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DisplayKeywordView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            DisplayKeywordViewServiceClient client = new DisplayKeywordViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DisplayKeywordView responseCallSettings = await client.GetDisplayKeywordViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DisplayKeywordView responseCancellationToken = await client.GetDisplayKeywordViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetDisplayKeywordView()
         {
-            Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(MockBehavior.Strict);
-            GetDisplayKeywordViewRequest expectedRequest = new GetDisplayKeywordViewRequest
-            {
-                ResourceName = new DisplayKeywordViewName("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]").ToString(),
-            };
-            DisplayKeywordView expectedResponse = new DisplayKeywordView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetDisplayKeywordView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            DisplayKeywordViewServiceClient client = new DisplayKeywordViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new DisplayKeywordViewName("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]").ToString();
-            DisplayKeywordView response = client.GetDisplayKeywordView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetDisplayKeywordViewAsync()
-        {
-            Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(MockBehavior.Strict);
-            GetDisplayKeywordViewRequest expectedRequest = new GetDisplayKeywordViewRequest
-            {
-                ResourceName = new DisplayKeywordViewName("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]").ToString(),
-            };
-            DisplayKeywordView expectedResponse = new DisplayKeywordView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetDisplayKeywordViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DisplayKeywordView>(Task.FromResult(expectedResponse), null, null, null, null));
-            DisplayKeywordViewServiceClient client = new DisplayKeywordViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new DisplayKeywordViewName("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]").ToString();
-            DisplayKeywordView response = await client.GetDisplayKeywordViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetDisplayKeywordView2()
-        {
-            Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
             GetDisplayKeywordViewRequest request = new GetDisplayKeywordViewRequest
             {
-                ResourceName = new DisplayKeywordViewName("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]").ToString(),
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
             };
-            DisplayKeywordView expectedResponse = new DisplayKeywordView
+            gagvr::DisplayKeywordView expectedResponse = new gagvr::DisplayKeywordView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetDisplayKeywordView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetDisplayKeywordView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             DisplayKeywordViewServiceClient client = new DisplayKeywordViewServiceClientImpl(mockGrpcClient.Object, null);
-            DisplayKeywordView response = client.GetDisplayKeywordView(request);
+            gagvr::DisplayKeywordView response = client.GetDisplayKeywordView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetDisplayKeywordViewAsync2()
+        public async stt::Task GetDisplayKeywordViewAsync()
         {
-            Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
             GetDisplayKeywordViewRequest request = new GetDisplayKeywordViewRequest
             {
-                ResourceName = new DisplayKeywordViewName("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]").ToString(),
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
             };
-            DisplayKeywordView expectedResponse = new DisplayKeywordView
+            gagvr::DisplayKeywordView expectedResponse = new gagvr::DisplayKeywordView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetDisplayKeywordViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DisplayKeywordView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetDisplayKeywordViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DisplayKeywordView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             DisplayKeywordViewServiceClient client = new DisplayKeywordViewServiceClientImpl(mockGrpcClient.Object, null);
-            DisplayKeywordView response = await client.GetDisplayKeywordViewAsync(request);
+            gagvr::DisplayKeywordView responseCallSettings = await client.GetDisplayKeywordViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DisplayKeywordView responseCancellationToken = await client.GetDisplayKeywordViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetDisplayKeywordViewResourceNames()
+        {
+            moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
+            GetDisplayKeywordViewRequest request = new GetDisplayKeywordViewRequest
+            {
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
+            };
+            gagvr::DisplayKeywordView expectedResponse = new gagvr::DisplayKeywordView
+            {
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetDisplayKeywordView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            DisplayKeywordViewServiceClient client = new DisplayKeywordViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DisplayKeywordView response = client.GetDisplayKeywordView(request.ResourceNameAsDisplayKeywordViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetDisplayKeywordViewResourceNamesAsync()
+        {
+            moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
+            GetDisplayKeywordViewRequest request = new GetDisplayKeywordViewRequest
+            {
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
+            };
+            gagvr::DisplayKeywordView expectedResponse = new gagvr::DisplayKeywordView
+            {
+                ResourceNameAsDisplayKeywordViewName = gagvr::DisplayKeywordViewName.FromCustomerDisplayKeywordView("[CUSTOMER]", "[DISPLAY_KEYWORD_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetDisplayKeywordViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DisplayKeywordView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            DisplayKeywordViewServiceClient client = new DisplayKeywordViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DisplayKeywordView responseCallSettings = await client.GetDisplayKeywordViewAsync(request.ResourceNameAsDisplayKeywordViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DisplayKeywordView responseCancellationToken = await client.GetDisplayKeywordViewAsync(request.ResourceNameAsDisplayKeywordViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

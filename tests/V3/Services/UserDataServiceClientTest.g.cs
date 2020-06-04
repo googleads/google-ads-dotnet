@@ -14,77 +14,39 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V3.Common;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedUserDataServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedUserDataServiceClientTest
     {
         [Test]
-        public void UploadUserData()
+        public void UploadUserDataRequestObject()
         {
-            Mock<UserDataService.UserDataServiceClient> mockGrpcClient = new Mock<UserDataService.UserDataServiceClient>(MockBehavior.Strict);
-            UploadUserDataRequest expectedRequest = new UploadUserDataRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            UploadUserDataResponse expectedResponse = new UploadUserDataResponse();
-            mockGrpcClient.Setup(x => x.UploadUserData(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            UserDataServiceClient client = new UserDataServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<UserDataOperation> operations = new List<UserDataOperation>();
-            UploadUserDataResponse response = client.UploadUserData(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task UploadUserDataAsync()
-        {
-            Mock<UserDataService.UserDataServiceClient> mockGrpcClient = new Mock<UserDataService.UserDataServiceClient>(MockBehavior.Strict);
-            UploadUserDataRequest expectedRequest = new UploadUserDataRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            UploadUserDataResponse expectedResponse = new UploadUserDataResponse();
-            mockGrpcClient.Setup(x => x.UploadUserDataAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadUserDataResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            UserDataServiceClient client = new UserDataServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<UserDataOperation> operations = new List<UserDataOperation>();
-            UploadUserDataResponse response = await client.UploadUserDataAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void UploadUserData2()
-        {
-            Mock<UserDataService.UserDataServiceClient> mockGrpcClient = new Mock<UserDataService.UserDataServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserDataService.UserDataServiceClient> mockGrpcClient = new moq::Mock<UserDataService.UserDataServiceClient>(moq::MockBehavior.Strict);
             UploadUserDataRequest request = new UploadUserDataRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                CustomerMatchUserListMetadata = new gagvc::CustomerMatchUserListMetadata(),
+                Operations =
+                {
+                    new UserDataOperation(),
+                },
             };
-            UploadUserDataResponse expectedResponse = new UploadUserDataResponse();
-            mockGrpcClient.Setup(x => x.UploadUserData(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            UploadUserDataResponse expectedResponse = new UploadUserDataResponse
+            {
+                UploadDateTime = "upload_date_time763e3ebd",
+                ReceivedOperationsCount = -816258212,
+            };
+            mockGrpcClient.Setup(x => x.UploadUserData(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             UserDataServiceClient client = new UserDataServiceClientImpl(mockGrpcClient.Object, null);
             UploadUserDataResponse response = client.UploadUserData(request);
             Assert.AreEqual(expectedResponse, response);
@@ -92,22 +54,30 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task UploadUserDataAsync2()
+        public async stt::Task UploadUserDataRequestObjectAsync()
         {
-            Mock<UserDataService.UserDataServiceClient> mockGrpcClient = new Mock<UserDataService.UserDataServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserDataService.UserDataServiceClient> mockGrpcClient = new moq::Mock<UserDataService.UserDataServiceClient>(moq::MockBehavior.Strict);
             UploadUserDataRequest request = new UploadUserDataRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                CustomerMatchUserListMetadata = new gagvc::CustomerMatchUserListMetadata(),
+                Operations =
+                {
+                    new UserDataOperation(),
+                },
             };
-            UploadUserDataResponse expectedResponse = new UploadUserDataResponse();
-            mockGrpcClient.Setup(x => x.UploadUserDataAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadUserDataResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            UploadUserDataResponse expectedResponse = new UploadUserDataResponse
+            {
+                UploadDateTime = "upload_date_time763e3ebd",
+                ReceivedOperationsCount = -816258212,
+            };
+            mockGrpcClient.Setup(x => x.UploadUserDataAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadUserDataResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             UserDataServiceClient client = new UserDataServiceClientImpl(mockGrpcClient.Object, null);
-            UploadUserDataResponse response = await client.UploadUserDataAsync(request);
-            Assert.AreEqual(expectedResponse, response);
+            UploadUserDataResponse responseCallSettings = await client.UploadUserDataAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            UploadUserDataResponse responseCancellationToken = await client.UploadUserDataAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
-
     }
 }

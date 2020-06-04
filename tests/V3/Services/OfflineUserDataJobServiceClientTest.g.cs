@@ -14,94 +14,39 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.LongRunning;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V3.Common;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using lro = Google.LongRunning;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedOfflineUserDataJobServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedOfflineUserDataJobServiceClientTest
     {
         [Test]
-        public void CreateOfflineUserDataJob()
+        public void CreateOfflineUserDataJobRequestObject()
         {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            CreateOfflineUserDataJobRequest expectedRequest = new CreateOfflineUserDataJobRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Job = new OfflineUserDataJob(),
-            };
-            CreateOfflineUserDataJobResponse expectedResponse = new CreateOfflineUserDataJobResponse
-            {
-                ResourceName = "resourceName979421212",
-            };
-            mockGrpcClient.Setup(x => x.CreateOfflineUserDataJob(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            OfflineUserDataJob job = new OfflineUserDataJob();
-            CreateOfflineUserDataJobResponse response = client.CreateOfflineUserDataJob(customerId, job);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task CreateOfflineUserDataJobAsync()
-        {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            CreateOfflineUserDataJobRequest expectedRequest = new CreateOfflineUserDataJobRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Job = new OfflineUserDataJob(),
-            };
-            CreateOfflineUserDataJobResponse expectedResponse = new CreateOfflineUserDataJobResponse
-            {
-                ResourceName = "resourceName979421212",
-            };
-            mockGrpcClient.Setup(x => x.CreateOfflineUserDataJobAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CreateOfflineUserDataJobResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            OfflineUserDataJob job = new OfflineUserDataJob();
-            CreateOfflineUserDataJobResponse response = await client.CreateOfflineUserDataJobAsync(customerId, job);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void CreateOfflineUserDataJob2()
-        {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             CreateOfflineUserDataJobRequest request = new CreateOfflineUserDataJobRequest
             {
-                CustomerId = "customerId-1772061412",
-                Job = new OfflineUserDataJob(),
+                CustomerId = "customer_id3b3724cb",
+                Job = new gagvr::OfflineUserDataJob(),
             };
             CreateOfflineUserDataJobResponse expectedResponse = new CreateOfflineUserDataJobResponse
             {
-                ResourceName = "resourceName979421212",
+                ResourceName = "resource_name8cc2e687",
             };
-            mockGrpcClient.Setup(x => x.CreateOfflineUserDataJob(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.CreateOfflineUserDataJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
             CreateOfflineUserDataJobResponse response = client.CreateOfflineUserDataJob(request);
             Assert.AreEqual(expectedResponse, response);
@@ -109,181 +54,259 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task CreateOfflineUserDataJobAsync2()
+        public async stt::Task CreateOfflineUserDataJobRequestObjectAsync()
         {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             CreateOfflineUserDataJobRequest request = new CreateOfflineUserDataJobRequest
             {
-                CustomerId = "customerId-1772061412",
-                Job = new OfflineUserDataJob(),
+                CustomerId = "customer_id3b3724cb",
+                Job = new gagvr::OfflineUserDataJob(),
             };
             CreateOfflineUserDataJobResponse expectedResponse = new CreateOfflineUserDataJobResponse
             {
-                ResourceName = "resourceName979421212",
+                ResourceName = "resource_name8cc2e687",
             };
-            mockGrpcClient.Setup(x => x.CreateOfflineUserDataJobAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CreateOfflineUserDataJobResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.CreateOfflineUserDataJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateOfflineUserDataJobResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            CreateOfflineUserDataJobResponse response = await client.CreateOfflineUserDataJobAsync(request);
+            CreateOfflineUserDataJobResponse responseCallSettings = await client.CreateOfflineUserDataJobAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            CreateOfflineUserDataJobResponse responseCancellationToken = await client.CreateOfflineUserDataJobAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void CreateOfflineUserDataJob()
+        {
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            CreateOfflineUserDataJobRequest request = new CreateOfflineUserDataJobRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Job = new gagvr::OfflineUserDataJob(),
+            };
+            CreateOfflineUserDataJobResponse expectedResponse = new CreateOfflineUserDataJobResponse
+            {
+                ResourceName = "resource_name8cc2e687",
+            };
+            mockGrpcClient.Setup(x => x.CreateOfflineUserDataJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            CreateOfflineUserDataJobResponse response = client.CreateOfflineUserDataJob(request.CustomerId, request.Job);
             Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task CreateOfflineUserDataJobAsync()
+        {
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            CreateOfflineUserDataJobRequest request = new CreateOfflineUserDataJobRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Job = new gagvr::OfflineUserDataJob(),
+            };
+            CreateOfflineUserDataJobResponse expectedResponse = new CreateOfflineUserDataJobResponse
+            {
+                ResourceName = "resource_name8cc2e687",
+            };
+            mockGrpcClient.Setup(x => x.CreateOfflineUserDataJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateOfflineUserDataJobResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            CreateOfflineUserDataJobResponse responseCallSettings = await client.CreateOfflineUserDataJobAsync(request.CustomerId, request.Job, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            CreateOfflineUserDataJobResponse responseCancellationToken = await client.CreateOfflineUserDataJobAsync(request.CustomerId, request.Job, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetOfflineUserDataJobRequestObject()
+        {
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetOfflineUserDataJobRequest request = new GetOfflineUserDataJobRequest
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+            };
+            gagvr::OfflineUserDataJob expectedResponse = new gagvr::OfflineUserDataJob
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Id = -6774108720365892680L,
+                ExternalId = -7826829054039660530L,
+                Type = gagve::OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified,
+                Status = gagve::OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Pending,
+                FailureReason = gagve::OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified,
+                CustomerMatchUserListMetadata = new gagvc::CustomerMatchUserListMetadata(),
+                StoreSalesMetadata = new gagvc::StoreSalesMetadata(),
+            };
+            mockGrpcClient.Setup(x => x.GetOfflineUserDataJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::OfflineUserDataJob response = client.GetOfflineUserDataJob(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetOfflineUserDataJobRequestObjectAsync()
+        {
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetOfflineUserDataJobRequest request = new GetOfflineUserDataJobRequest
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+            };
+            gagvr::OfflineUserDataJob expectedResponse = new gagvr::OfflineUserDataJob
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Id = -6774108720365892680L,
+                ExternalId = -7826829054039660530L,
+                Type = gagve::OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified,
+                Status = gagve::OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Pending,
+                FailureReason = gagve::OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified,
+                CustomerMatchUserListMetadata = new gagvc::CustomerMatchUserListMetadata(),
+                StoreSalesMetadata = new gagvc::StoreSalesMetadata(),
+            };
+            mockGrpcClient.Setup(x => x.GetOfflineUserDataJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::OfflineUserDataJob>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::OfflineUserDataJob responseCallSettings = await client.GetOfflineUserDataJobAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::OfflineUserDataJob responseCancellationToken = await client.GetOfflineUserDataJobAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
         public void GetOfflineUserDataJob()
         {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            GetOfflineUserDataJobRequest expectedRequest = new GetOfflineUserDataJobRequest
-            {
-                ResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString(),
-            };
-            OfflineUserDataJob expectedResponse = new OfflineUserDataJob
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetOfflineUserDataJob(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString();
-            OfflineUserDataJob response = client.GetOfflineUserDataJob(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetOfflineUserDataJobAsync()
-        {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            GetOfflineUserDataJobRequest expectedRequest = new GetOfflineUserDataJobRequest
-            {
-                ResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString(),
-            };
-            OfflineUserDataJob expectedResponse = new OfflineUserDataJob
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetOfflineUserDataJobAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<OfflineUserDataJob>(Task.FromResult(expectedResponse), null, null, null, null));
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString();
-            OfflineUserDataJob response = await client.GetOfflineUserDataJobAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetOfflineUserDataJob2()
-        {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             GetOfflineUserDataJobRequest request = new GetOfflineUserDataJobRequest
             {
-                ResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString(),
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
             };
-            OfflineUserDataJob expectedResponse = new OfflineUserDataJob
+            gagvr::OfflineUserDataJob expectedResponse = new gagvr::OfflineUserDataJob
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Id = -6774108720365892680L,
+                ExternalId = -7826829054039660530L,
+                Type = gagve::OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified,
+                Status = gagve::OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Pending,
+                FailureReason = gagve::OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified,
+                CustomerMatchUserListMetadata = new gagvc::CustomerMatchUserListMetadata(),
+                StoreSalesMetadata = new gagvc::StoreSalesMetadata(),
             };
-            mockGrpcClient.Setup(x => x.GetOfflineUserDataJob(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetOfflineUserDataJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            OfflineUserDataJob response = client.GetOfflineUserDataJob(request);
+            gagvr::OfflineUserDataJob response = client.GetOfflineUserDataJob(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetOfflineUserDataJobAsync2()
+        public async stt::Task GetOfflineUserDataJobAsync()
         {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             GetOfflineUserDataJobRequest request = new GetOfflineUserDataJobRequest
             {
-                ResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString(),
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
             };
-            OfflineUserDataJob expectedResponse = new OfflineUserDataJob
+            gagvr::OfflineUserDataJob expectedResponse = new gagvr::OfflineUserDataJob
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Id = -6774108720365892680L,
+                ExternalId = -7826829054039660530L,
+                Type = gagve::OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified,
+                Status = gagve::OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Pending,
+                FailureReason = gagve::OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified,
+                CustomerMatchUserListMetadata = new gagvc::CustomerMatchUserListMetadata(),
+                StoreSalesMetadata = new gagvc::StoreSalesMetadata(),
             };
-            mockGrpcClient.Setup(x => x.GetOfflineUserDataJobAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<OfflineUserDataJob>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetOfflineUserDataJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::OfflineUserDataJob>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            OfflineUserDataJob response = await client.GetOfflineUserDataJobAsync(request);
+            gagvr::OfflineUserDataJob responseCallSettings = await client.GetOfflineUserDataJobAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::OfflineUserDataJob responseCancellationToken = await client.GetOfflineUserDataJobAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetOfflineUserDataJobResourceNames()
+        {
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetOfflineUserDataJobRequest request = new GetOfflineUserDataJobRequest
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+            };
+            gagvr::OfflineUserDataJob expectedResponse = new gagvr::OfflineUserDataJob
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Id = -6774108720365892680L,
+                ExternalId = -7826829054039660530L,
+                Type = gagve::OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified,
+                Status = gagve::OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Pending,
+                FailureReason = gagve::OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified,
+                CustomerMatchUserListMetadata = new gagvc::CustomerMatchUserListMetadata(),
+                StoreSalesMetadata = new gagvc::StoreSalesMetadata(),
+            };
+            mockGrpcClient.Setup(x => x.GetOfflineUserDataJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::OfflineUserDataJob response = client.GetOfflineUserDataJob(request.ResourceNameAsOfflineUserDataJobName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void AddOfflineUserDataJobOperations()
+        public async stt::Task GetOfflineUserDataJobResourceNamesAsync()
         {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            AddOfflineUserDataJobOperationsRequest expectedRequest = new AddOfflineUserDataJobOperationsRequest
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetOfflineUserDataJobRequest request = new GetOfflineUserDataJobRequest
             {
-                ResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString(),
-                EnablePartialFailure = null,
-                Operations = { },
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
             };
-            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse();
-            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperations(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::OfflineUserDataJob expectedResponse = new gagvr::OfflineUserDataJob
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Id = -6774108720365892680L,
+                ExternalId = -7826829054039660530L,
+                Type = gagve::OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified,
+                Status = gagve::OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Pending,
+                FailureReason = gagve::OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified,
+                CustomerMatchUserListMetadata = new gagvc::CustomerMatchUserListMetadata(),
+                StoreSalesMetadata = new gagvc::StoreSalesMetadata(),
+            };
+            mockGrpcClient.Setup(x => x.GetOfflineUserDataJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::OfflineUserDataJob>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString();
-            bool? enablePartialFailure = null;
-            IEnumerable<OfflineUserDataJobOperation> operations = new List<OfflineUserDataJobOperation>();
-            AddOfflineUserDataJobOperationsResponse response = client.AddOfflineUserDataJobOperations(formattedResourceName, enablePartialFailure, operations);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::OfflineUserDataJob responseCallSettings = await client.GetOfflineUserDataJobAsync(request.ResourceNameAsOfflineUserDataJobName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::OfflineUserDataJob responseCancellationToken = await client.GetOfflineUserDataJobAsync(request.ResourceNameAsOfflineUserDataJobName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task AddOfflineUserDataJobOperationsAsync()
+        public void AddOfflineUserDataJobOperationsRequestObject()
         {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            AddOfflineUserDataJobOperationsRequest expectedRequest = new AddOfflineUserDataJobOperationsRequest
-            {
-                ResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString(),
-                EnablePartialFailure = null,
-                Operations = { },
-            };
-            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse();
-            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperationsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AddOfflineUserDataJobOperationsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString();
-            bool? enablePartialFailure = null;
-            IEnumerable<OfflineUserDataJobOperation> operations = new List<OfflineUserDataJobOperation>();
-            AddOfflineUserDataJobOperationsResponse response = await client.AddOfflineUserDataJobOperationsAsync(formattedResourceName, enablePartialFailure, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void AddOfflineUserDataJobOperations2()
-        {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             AddOfflineUserDataJobOperationsRequest request = new AddOfflineUserDataJobOperationsRequest
             {
-                ResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString(),
-                EnablePartialFailure = null,
-                Operations = { },
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                EnablePartialFailure = true,
+                Operations =
+                {
+                    new OfflineUserDataJobOperation(),
+                },
             };
-            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse();
-            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperations(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse
+            {
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
             AddOfflineUserDataJobOperationsResponse response = client.AddOfflineUserDataJobOperations(request);
             Assert.AreEqual(expectedResponse, response);
@@ -291,25 +314,130 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task AddOfflineUserDataJobOperationsAsync2()
+        public async stt::Task AddOfflineUserDataJobOperationsRequestObjectAsync()
         {
-            Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             AddOfflineUserDataJobOperationsRequest request = new AddOfflineUserDataJobOperationsRequest
             {
-                ResourceName = new OfflineUserDataJobName("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]").ToString(),
-                EnablePartialFailure = null,
-                Operations = { },
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                EnablePartialFailure = true,
+                Operations =
+                {
+                    new OfflineUserDataJobOperation(),
+                },
             };
-            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse();
-            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperationsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AddOfflineUserDataJobOperationsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse
+            {
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddOfflineUserDataJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
-            AddOfflineUserDataJobOperationsResponse response = await client.AddOfflineUserDataJobOperationsAsync(request);
+            AddOfflineUserDataJobOperationsResponse responseCallSettings = await client.AddOfflineUserDataJobOperationsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            AddOfflineUserDataJobOperationsResponse responseCancellationToken = await client.AddOfflineUserDataJobOperationsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void AddOfflineUserDataJobOperations()
+        {
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddOfflineUserDataJobOperationsRequest request = new AddOfflineUserDataJobOperationsRequest
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Operations =
+                {
+                    new OfflineUserDataJobOperation(),
+                },
+            };
+            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse
+            {
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddOfflineUserDataJobOperationsResponse response = client.AddOfflineUserDataJobOperations(request.ResourceName, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task AddOfflineUserDataJobOperationsAsync()
+        {
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddOfflineUserDataJobOperationsRequest request = new AddOfflineUserDataJobOperationsRequest
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Operations =
+                {
+                    new OfflineUserDataJobOperation(),
+                },
+            };
+            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse
+            {
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddOfflineUserDataJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddOfflineUserDataJobOperationsResponse responseCallSettings = await client.AddOfflineUserDataJobOperationsAsync(request.ResourceName, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            AddOfflineUserDataJobOperationsResponse responseCancellationToken = await client.AddOfflineUserDataJobOperationsAsync(request.ResourceName, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void AddOfflineUserDataJobOperationsResourceNames()
+        {
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddOfflineUserDataJobOperationsRequest request = new AddOfflineUserDataJobOperationsRequest
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Operations =
+                {
+                    new OfflineUserDataJobOperation(),
+                },
+            };
+            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse
+            {
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddOfflineUserDataJobOperationsResponse response = client.AddOfflineUserDataJobOperations(request.ResourceNameAsOfflineUserDataJobName, request.Operations);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task AddOfflineUserDataJobOperationsResourceNamesAsync()
+        {
+            moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddOfflineUserDataJobOperationsRequest request = new AddOfflineUserDataJobOperationsRequest
+            {
+                ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataJob("[CUSTOMER]", "[OFFLINE_USER_DATA_JOB]"),
+                Operations =
+                {
+                    new OfflineUserDataJobOperation(),
+                },
+            };
+            AddOfflineUserDataJobOperationsResponse expectedResponse = new AddOfflineUserDataJobOperationsResponse
+            {
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddOfflineUserDataJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddOfflineUserDataJobOperationsResponse responseCallSettings = await client.AddOfflineUserDataJobOperationsAsync(request.ResourceNameAsOfflineUserDataJobName, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            AddOfflineUserDataJobOperationsResponse responseCancellationToken = await client.AddOfflineUserDataJobOperationsAsync(request.ResourceNameAsOfflineUserDataJobName, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

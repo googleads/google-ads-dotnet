@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,274 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V2.Common;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedConversionActionServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedConversionActionServiceClientTest
     {
+        [Test]
+        public void GetConversionActionRequestObject()
+        {
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
+            GetConversionActionRequest request = new GetConversionActionRequest
+            {
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+            };
+            gagvr::ConversionAction expectedResponse = new gagvr::ConversionAction
+            {
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Id = -6774108720365892680L,
+                ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Status = gagve::ConversionActionStatusEnum.Types.ConversionActionStatus.Hidden,
+                Type = gagve::ConversionActionTypeEnum.Types.ConversionActionType.GooglePlayInAppPurchase,
+                Category = gagve::ConversionActionCategoryEnum.Types.ConversionActionCategory.Purchase,
+                OwnerCustomer = "owner_customer43abc24a",
+                IncludeInConversionsMetric = false,
+                ClickThroughLookbackWindowDays = -4831593457096707011L,
+                ViewThroughLookbackWindowDays = -8283075401830951626L,
+                ValueSettings = new gagvr::ConversionAction.Types.ValueSettings(),
+                CountingType = gagve::ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified,
+                AttributionModelSettings = new gagvr::ConversionAction.Types.AttributionModelSettings(),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+                PhoneCallDurationSeconds = -8070508326407639729L,
+                AppId = "app_idfead82f3",
+            };
+            mockGrpcClient.Setup(x => x.GetConversionAction(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ConversionAction response = client.GetConversionAction(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetConversionActionRequestObjectAsync()
+        {
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
+            GetConversionActionRequest request = new GetConversionActionRequest
+            {
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+            };
+            gagvr::ConversionAction expectedResponse = new gagvr::ConversionAction
+            {
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Id = -6774108720365892680L,
+                ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Status = gagve::ConversionActionStatusEnum.Types.ConversionActionStatus.Hidden,
+                Type = gagve::ConversionActionTypeEnum.Types.ConversionActionType.GooglePlayInAppPurchase,
+                Category = gagve::ConversionActionCategoryEnum.Types.ConversionActionCategory.Purchase,
+                OwnerCustomer = "owner_customer43abc24a",
+                IncludeInConversionsMetric = false,
+                ClickThroughLookbackWindowDays = -4831593457096707011L,
+                ViewThroughLookbackWindowDays = -8283075401830951626L,
+                ValueSettings = new gagvr::ConversionAction.Types.ValueSettings(),
+                CountingType = gagve::ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified,
+                AttributionModelSettings = new gagvr::ConversionAction.Types.AttributionModelSettings(),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+                PhoneCallDurationSeconds = -8070508326407639729L,
+                AppId = "app_idfead82f3",
+            };
+            mockGrpcClient.Setup(x => x.GetConversionActionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ConversionAction>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ConversionAction responseCallSettings = await client.GetConversionActionAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ConversionAction responseCancellationToken = await client.GetConversionActionAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetConversionAction()
         {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
-            GetConversionActionRequest expectedRequest = new GetConversionActionRequest
-            {
-                ResourceName = new ConversionActionName("[CUSTOMER]", "[CONVERSION_ACTION]").ToString(),
-            };
-            ConversionAction expectedResponse = new ConversionAction
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetConversionAction(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ConversionActionName("[CUSTOMER]", "[CONVERSION_ACTION]").ToString();
-            ConversionAction response = client.GetConversionAction(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetConversionActionAsync()
-        {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
-            GetConversionActionRequest expectedRequest = new GetConversionActionRequest
-            {
-                ResourceName = new ConversionActionName("[CUSTOMER]", "[CONVERSION_ACTION]").ToString(),
-            };
-            ConversionAction expectedResponse = new ConversionAction
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetConversionActionAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ConversionAction>(Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ConversionActionName("[CUSTOMER]", "[CONVERSION_ACTION]").ToString();
-            ConversionAction response = await client.GetConversionActionAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetConversionAction2()
-        {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
             GetConversionActionRequest request = new GetConversionActionRequest
             {
-                ResourceName = new ConversionActionName("[CUSTOMER]", "[CONVERSION_ACTION]").ToString(),
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
             };
-            ConversionAction expectedResponse = new ConversionAction
+            gagvr::ConversionAction expectedResponse = new gagvr::ConversionAction
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Id = -6774108720365892680L,
+                ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Status = gagve::ConversionActionStatusEnum.Types.ConversionActionStatus.Hidden,
+                Type = gagve::ConversionActionTypeEnum.Types.ConversionActionType.GooglePlayInAppPurchase,
+                Category = gagve::ConversionActionCategoryEnum.Types.ConversionActionCategory.Purchase,
+                OwnerCustomer = "owner_customer43abc24a",
+                IncludeInConversionsMetric = false,
+                ClickThroughLookbackWindowDays = -4831593457096707011L,
+                ViewThroughLookbackWindowDays = -8283075401830951626L,
+                ValueSettings = new gagvr::ConversionAction.Types.ValueSettings(),
+                CountingType = gagve::ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified,
+                AttributionModelSettings = new gagvr::ConversionAction.Types.AttributionModelSettings(),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+                PhoneCallDurationSeconds = -8070508326407639729L,
+                AppId = "app_idfead82f3",
             };
-            mockGrpcClient.Setup(x => x.GetConversionAction(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetConversionAction(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
-            ConversionAction response = client.GetConversionAction(request);
+            gagvr::ConversionAction response = client.GetConversionAction(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetConversionActionAsync2()
+        public async stt::Task GetConversionActionAsync()
         {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
             GetConversionActionRequest request = new GetConversionActionRequest
             {
-                ResourceName = new ConversionActionName("[CUSTOMER]", "[CONVERSION_ACTION]").ToString(),
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
             };
-            ConversionAction expectedResponse = new ConversionAction
+            gagvr::ConversionAction expectedResponse = new gagvr::ConversionAction
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Id = -6774108720365892680L,
+                ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Status = gagve::ConversionActionStatusEnum.Types.ConversionActionStatus.Hidden,
+                Type = gagve::ConversionActionTypeEnum.Types.ConversionActionType.GooglePlayInAppPurchase,
+                Category = gagve::ConversionActionCategoryEnum.Types.ConversionActionCategory.Purchase,
+                OwnerCustomer = "owner_customer43abc24a",
+                IncludeInConversionsMetric = false,
+                ClickThroughLookbackWindowDays = -4831593457096707011L,
+                ViewThroughLookbackWindowDays = -8283075401830951626L,
+                ValueSettings = new gagvr::ConversionAction.Types.ValueSettings(),
+                CountingType = gagve::ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified,
+                AttributionModelSettings = new gagvr::ConversionAction.Types.AttributionModelSettings(),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+                PhoneCallDurationSeconds = -8070508326407639729L,
+                AppId = "app_idfead82f3",
             };
-            mockGrpcClient.Setup(x => x.GetConversionActionAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ConversionAction>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetConversionActionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ConversionAction>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
-            ConversionAction response = await client.GetConversionActionAsync(request);
+            gagvr::ConversionAction responseCallSettings = await client.GetConversionActionAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ConversionAction responseCancellationToken = await client.GetConversionActionAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetConversionActionResourceNames()
+        {
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
+            GetConversionActionRequest request = new GetConversionActionRequest
+            {
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+            };
+            gagvr::ConversionAction expectedResponse = new gagvr::ConversionAction
+            {
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Id = -6774108720365892680L,
+                ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Status = gagve::ConversionActionStatusEnum.Types.ConversionActionStatus.Hidden,
+                Type = gagve::ConversionActionTypeEnum.Types.ConversionActionType.GooglePlayInAppPurchase,
+                Category = gagve::ConversionActionCategoryEnum.Types.ConversionActionCategory.Purchase,
+                OwnerCustomer = "owner_customer43abc24a",
+                IncludeInConversionsMetric = false,
+                ClickThroughLookbackWindowDays = -4831593457096707011L,
+                ViewThroughLookbackWindowDays = -8283075401830951626L,
+                ValueSettings = new gagvr::ConversionAction.Types.ValueSettings(),
+                CountingType = gagve::ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified,
+                AttributionModelSettings = new gagvr::ConversionAction.Types.AttributionModelSettings(),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+                PhoneCallDurationSeconds = -8070508326407639729L,
+                AppId = "app_idfead82f3",
+            };
+            mockGrpcClient.Setup(x => x.GetConversionAction(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ConversionAction response = client.GetConversionAction(request.ResourceNameAsConversionActionName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateConversionActions()
+        public async stt::Task GetConversionActionResourceNamesAsync()
         {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
-            MutateConversionActionsRequest expectedRequest = new MutateConversionActionsRequest
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
+            GetConversionActionRequest request = new GetConversionActionRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
             };
-            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateConversionActions(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::ConversionAction expectedResponse = new gagvr::ConversionAction
+            {
+                ResourceNameAsConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Id = -6774108720365892680L,
+                ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER]", "[CONVERSION_ACTION]"),
+                Status = gagve::ConversionActionStatusEnum.Types.ConversionActionStatus.Hidden,
+                Type = gagve::ConversionActionTypeEnum.Types.ConversionActionType.GooglePlayInAppPurchase,
+                Category = gagve::ConversionActionCategoryEnum.Types.ConversionActionCategory.Purchase,
+                OwnerCustomer = "owner_customer43abc24a",
+                IncludeInConversionsMetric = false,
+                ClickThroughLookbackWindowDays = -4831593457096707011L,
+                ViewThroughLookbackWindowDays = -8283075401830951626L,
+                ValueSettings = new gagvr::ConversionAction.Types.ValueSettings(),
+                CountingType = gagve::ConversionActionCountingTypeEnum.Types.ConversionActionCountingType.Unspecified,
+                AttributionModelSettings = new gagvr::ConversionAction.Types.AttributionModelSettings(),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+                PhoneCallDurationSeconds = -8070508326407639729L,
+                AppId = "app_idfead82f3",
+            };
+            mockGrpcClient.Setup(x => x.GetConversionActionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ConversionAction>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ConversionActionOperation> operations = new List<ConversionActionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateConversionActionsResponse response = client.MutateConversionActions(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::ConversionAction responseCallSettings = await client.GetConversionActionAsync(request.ResourceNameAsConversionActionName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ConversionAction responseCancellationToken = await client.GetConversionActionAsync(request.ResourceNameAsConversionActionName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateConversionActionsAsync()
+        public void MutateConversionActionsRequestObject()
         {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
-            MutateConversionActionsRequest expectedRequest = new MutateConversionActionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateConversionActionsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateConversionActionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ConversionActionOperation> operations = new List<ConversionActionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateConversionActionsResponse response = await client.MutateConversionActionsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateConversionActions2()
-        {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
-            MutateConversionActionsRequest expectedRequest = new MutateConversionActionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateConversionActions(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ConversionActionOperation> operations = new List<ConversionActionOperation>();
-            MutateConversionActionsResponse response = client.MutateConversionActions(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateConversionActionsAsync2()
-        {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
-            MutateConversionActionsRequest expectedRequest = new MutateConversionActionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateConversionActionsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateConversionActionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ConversionActionOperation> operations = new List<ConversionActionOperation>();
-            MutateConversionActionsResponse response = await client.MutateConversionActionsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateConversionActions3()
-        {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
             MutateConversionActionsRequest request = new MutateConversionActionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ConversionActionOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateConversionActions(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse
+            {
+                Results =
+                {
+                    new MutateConversionActionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateConversionActions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
             MutateConversionActionsResponse response = client.MutateConversionActions(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +289,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateConversionActionsAsync3()
+        public async stt::Task MutateConversionActionsRequestObjectAsync()
         {
-            Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new Mock<ConversionActionService.ConversionActionServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
             MutateConversionActionsRequest request = new MutateConversionActionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ConversionActionOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateConversionActionsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateConversionActionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse
+            {
+                Results =
+                {
+                    new MutateConversionActionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateConversionActionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateConversionActionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
-            MutateConversionActionsResponse response = await client.MutateConversionActionsAsync(request);
+            MutateConversionActionsResponse responseCallSettings = await client.MutateConversionActionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateConversionActionsResponse responseCancellationToken = await client.MutateConversionActionsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateConversionActions()
+        {
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
+            MutateConversionActionsRequest request = new MutateConversionActionsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ConversionActionOperation(),
+                },
+            };
+            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse
+            {
+                Results =
+                {
+                    new MutateConversionActionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateConversionActions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateConversionActionsResponse response = client.MutateConversionActions(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateConversionActionsAsync()
+        {
+            moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
+            MutateConversionActionsRequest request = new MutateConversionActionsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ConversionActionOperation(),
+                },
+            };
+            MutateConversionActionsResponse expectedResponse = new MutateConversionActionsResponse
+            {
+                Results =
+                {
+                    new MutateConversionActionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateConversionActionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateConversionActionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ConversionActionServiceClient client = new ConversionActionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateConversionActionsResponse responseCallSettings = await client.MutateConversionActionsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateConversionActionsResponse responseCancellationToken = await client.MutateConversionActionsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,157 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedSearchTermViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedSearchTermViewServiceClientTest
     {
+        [Test]
+        public void GetSearchTermViewRequestObject()
+        {
+            moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetSearchTermViewRequest request = new GetSearchTermViewRequest
+            {
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+            };
+            gagvr::SearchTermView expectedResponse = new gagvr::SearchTermView
+            {
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Added,
+            };
+            mockGrpcClient.Setup(x => x.GetSearchTermView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            SearchTermViewServiceClient client = new SearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SearchTermView response = client.GetSearchTermView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetSearchTermViewRequestObjectAsync()
+        {
+            moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetSearchTermViewRequest request = new GetSearchTermViewRequest
+            {
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+            };
+            gagvr::SearchTermView expectedResponse = new gagvr::SearchTermView
+            {
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Added,
+            };
+            mockGrpcClient.Setup(x => x.GetSearchTermViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::SearchTermView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            SearchTermViewServiceClient client = new SearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SearchTermView responseCallSettings = await client.GetSearchTermViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::SearchTermView responseCancellationToken = await client.GetSearchTermViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetSearchTermView()
         {
-            Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new Mock<SearchTermViewService.SearchTermViewServiceClient>(MockBehavior.Strict);
-            GetSearchTermViewRequest expectedRequest = new GetSearchTermViewRequest
-            {
-                ResourceName = new SearchTermViewName("[CUSTOMER]", "[SEARCH_TERM_VIEW]").ToString(),
-            };
-            SearchTermView expectedResponse = new SearchTermView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetSearchTermView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            SearchTermViewServiceClient client = new SearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new SearchTermViewName("[CUSTOMER]", "[SEARCH_TERM_VIEW]").ToString();
-            SearchTermView response = client.GetSearchTermView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetSearchTermViewAsync()
-        {
-            Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new Mock<SearchTermViewService.SearchTermViewServiceClient>(MockBehavior.Strict);
-            GetSearchTermViewRequest expectedRequest = new GetSearchTermViewRequest
-            {
-                ResourceName = new SearchTermViewName("[CUSTOMER]", "[SEARCH_TERM_VIEW]").ToString(),
-            };
-            SearchTermView expectedResponse = new SearchTermView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetSearchTermViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<SearchTermView>(Task.FromResult(expectedResponse), null, null, null, null));
-            SearchTermViewServiceClient client = new SearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new SearchTermViewName("[CUSTOMER]", "[SEARCH_TERM_VIEW]").ToString();
-            SearchTermView response = await client.GetSearchTermViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetSearchTermView2()
-        {
-            Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new Mock<SearchTermViewService.SearchTermViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
             GetSearchTermViewRequest request = new GetSearchTermViewRequest
             {
-                ResourceName = new SearchTermViewName("[CUSTOMER]", "[SEARCH_TERM_VIEW]").ToString(),
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
             };
-            SearchTermView expectedResponse = new SearchTermView
+            gagvr::SearchTermView expectedResponse = new gagvr::SearchTermView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Added,
             };
-            mockGrpcClient.Setup(x => x.GetSearchTermView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetSearchTermView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             SearchTermViewServiceClient client = new SearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            SearchTermView response = client.GetSearchTermView(request);
+            gagvr::SearchTermView response = client.GetSearchTermView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetSearchTermViewAsync2()
+        public async stt::Task GetSearchTermViewAsync()
         {
-            Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new Mock<SearchTermViewService.SearchTermViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
             GetSearchTermViewRequest request = new GetSearchTermViewRequest
             {
-                ResourceName = new SearchTermViewName("[CUSTOMER]", "[SEARCH_TERM_VIEW]").ToString(),
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
             };
-            SearchTermView expectedResponse = new SearchTermView
+            gagvr::SearchTermView expectedResponse = new gagvr::SearchTermView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Added,
             };
-            mockGrpcClient.Setup(x => x.GetSearchTermViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<SearchTermView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetSearchTermViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::SearchTermView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             SearchTermViewServiceClient client = new SearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            SearchTermView response = await client.GetSearchTermViewAsync(request);
+            gagvr::SearchTermView responseCallSettings = await client.GetSearchTermViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::SearchTermView responseCancellationToken = await client.GetSearchTermViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetSearchTermViewResourceNames()
+        {
+            moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetSearchTermViewRequest request = new GetSearchTermViewRequest
+            {
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+            };
+            gagvr::SearchTermView expectedResponse = new gagvr::SearchTermView
+            {
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Added,
+            };
+            mockGrpcClient.Setup(x => x.GetSearchTermView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            SearchTermViewServiceClient client = new SearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SearchTermView response = client.GetSearchTermView(request.ResourceNameAsSearchTermViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetSearchTermViewResourceNamesAsync()
+        {
+            moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetSearchTermViewRequest request = new GetSearchTermViewRequest
+            {
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+            };
+            gagvr::SearchTermView expectedResponse = new gagvr::SearchTermView
+            {
+                ResourceNameAsSearchTermViewName = gagvr::SearchTermViewName.FromCustomerSearchTermView("[CUSTOMER]", "[SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::SearchTermTargetingStatusEnum.Types.SearchTermTargetingStatus.Added,
+            };
+            mockGrpcClient.Setup(x => x.GetSearchTermViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::SearchTermView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            SearchTermViewServiceClient client = new SearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SearchTermView responseCallSettings = await client.GetSearchTermViewAsync(request.ResourceNameAsSearchTermViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::SearchTermView responseCancellationToken = await client.GetSearchTermViewAsync(request.ResourceNameAsSearchTermViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

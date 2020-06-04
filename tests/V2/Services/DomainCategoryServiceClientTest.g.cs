@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,186 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedDomainCategoryServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedDomainCategoryServiceClientTest
     {
+        [Test]
+        public void GetDomainCategoryRequestObject()
+        {
+            moq::Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new moq::Mock<DomainCategoryService.DomainCategoryServiceClient>(moq::MockBehavior.Strict);
+            GetDomainCategoryRequest request = new GetDomainCategoryRequest
+            {
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+            };
+            gagvr::DomainCategory expectedResponse = new gagvr::DomainCategory
+            {
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Category = "category2f35efc4",
+                LanguageCode = "language_code2f6c7160",
+                Domain = "domaine8825fad",
+                CoverageFraction = -7.485837735521371E+17,
+                CategoryRank = 1518138877595598869L,
+                HasChildren = true,
+                RecommendedCpcBidMicros = -6300343548803856813L,
+            };
+            mockGrpcClient.Setup(x => x.GetDomainCategory(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            DomainCategoryServiceClient client = new DomainCategoryServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DomainCategory response = client.GetDomainCategory(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetDomainCategoryRequestObjectAsync()
+        {
+            moq::Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new moq::Mock<DomainCategoryService.DomainCategoryServiceClient>(moq::MockBehavior.Strict);
+            GetDomainCategoryRequest request = new GetDomainCategoryRequest
+            {
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+            };
+            gagvr::DomainCategory expectedResponse = new gagvr::DomainCategory
+            {
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Category = "category2f35efc4",
+                LanguageCode = "language_code2f6c7160",
+                Domain = "domaine8825fad",
+                CoverageFraction = -7.485837735521371E+17,
+                CategoryRank = 1518138877595598869L,
+                HasChildren = true,
+                RecommendedCpcBidMicros = -6300343548803856813L,
+            };
+            mockGrpcClient.Setup(x => x.GetDomainCategoryAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DomainCategory>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            DomainCategoryServiceClient client = new DomainCategoryServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DomainCategory responseCallSettings = await client.GetDomainCategoryAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DomainCategory responseCancellationToken = await client.GetDomainCategoryAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetDomainCategory()
         {
-            Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new Mock<DomainCategoryService.DomainCategoryServiceClient>(MockBehavior.Strict);
-            GetDomainCategoryRequest expectedRequest = new GetDomainCategoryRequest
-            {
-                ResourceName = new DomainCategoryName("[CUSTOMER]", "[DOMAIN_CATEGORY]").ToString(),
-            };
-            DomainCategory expectedResponse = new DomainCategory
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetDomainCategory(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            DomainCategoryServiceClient client = new DomainCategoryServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new DomainCategoryName("[CUSTOMER]", "[DOMAIN_CATEGORY]").ToString();
-            DomainCategory response = client.GetDomainCategory(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetDomainCategoryAsync()
-        {
-            Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new Mock<DomainCategoryService.DomainCategoryServiceClient>(MockBehavior.Strict);
-            GetDomainCategoryRequest expectedRequest = new GetDomainCategoryRequest
-            {
-                ResourceName = new DomainCategoryName("[CUSTOMER]", "[DOMAIN_CATEGORY]").ToString(),
-            };
-            DomainCategory expectedResponse = new DomainCategory
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetDomainCategoryAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DomainCategory>(Task.FromResult(expectedResponse), null, null, null, null));
-            DomainCategoryServiceClient client = new DomainCategoryServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new DomainCategoryName("[CUSTOMER]", "[DOMAIN_CATEGORY]").ToString();
-            DomainCategory response = await client.GetDomainCategoryAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetDomainCategory2()
-        {
-            Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new Mock<DomainCategoryService.DomainCategoryServiceClient>(MockBehavior.Strict);
+            moq::Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new moq::Mock<DomainCategoryService.DomainCategoryServiceClient>(moq::MockBehavior.Strict);
             GetDomainCategoryRequest request = new GetDomainCategoryRequest
             {
-                ResourceName = new DomainCategoryName("[CUSTOMER]", "[DOMAIN_CATEGORY]").ToString(),
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
             };
-            DomainCategory expectedResponse = new DomainCategory
+            gagvr::DomainCategory expectedResponse = new gagvr::DomainCategory
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Category = "category2f35efc4",
+                LanguageCode = "language_code2f6c7160",
+                Domain = "domaine8825fad",
+                CoverageFraction = -7.485837735521371E+17,
+                CategoryRank = 1518138877595598869L,
+                HasChildren = true,
+                RecommendedCpcBidMicros = -6300343548803856813L,
             };
-            mockGrpcClient.Setup(x => x.GetDomainCategory(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetDomainCategory(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             DomainCategoryServiceClient client = new DomainCategoryServiceClientImpl(mockGrpcClient.Object, null);
-            DomainCategory response = client.GetDomainCategory(request);
+            gagvr::DomainCategory response = client.GetDomainCategory(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetDomainCategoryAsync2()
+        public async stt::Task GetDomainCategoryAsync()
         {
-            Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new Mock<DomainCategoryService.DomainCategoryServiceClient>(MockBehavior.Strict);
+            moq::Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new moq::Mock<DomainCategoryService.DomainCategoryServiceClient>(moq::MockBehavior.Strict);
             GetDomainCategoryRequest request = new GetDomainCategoryRequest
             {
-                ResourceName = new DomainCategoryName("[CUSTOMER]", "[DOMAIN_CATEGORY]").ToString(),
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
             };
-            DomainCategory expectedResponse = new DomainCategory
+            gagvr::DomainCategory expectedResponse = new gagvr::DomainCategory
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Category = "category2f35efc4",
+                LanguageCode = "language_code2f6c7160",
+                Domain = "domaine8825fad",
+                CoverageFraction = -7.485837735521371E+17,
+                CategoryRank = 1518138877595598869L,
+                HasChildren = true,
+                RecommendedCpcBidMicros = -6300343548803856813L,
             };
-            mockGrpcClient.Setup(x => x.GetDomainCategoryAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DomainCategory>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetDomainCategoryAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DomainCategory>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             DomainCategoryServiceClient client = new DomainCategoryServiceClientImpl(mockGrpcClient.Object, null);
-            DomainCategory response = await client.GetDomainCategoryAsync(request);
+            gagvr::DomainCategory responseCallSettings = await client.GetDomainCategoryAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DomainCategory responseCancellationToken = await client.GetDomainCategoryAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetDomainCategoryResourceNames()
+        {
+            moq::Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new moq::Mock<DomainCategoryService.DomainCategoryServiceClient>(moq::MockBehavior.Strict);
+            GetDomainCategoryRequest request = new GetDomainCategoryRequest
+            {
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+            };
+            gagvr::DomainCategory expectedResponse = new gagvr::DomainCategory
+            {
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Category = "category2f35efc4",
+                LanguageCode = "language_code2f6c7160",
+                Domain = "domaine8825fad",
+                CoverageFraction = -7.485837735521371E+17,
+                CategoryRank = 1518138877595598869L,
+                HasChildren = true,
+                RecommendedCpcBidMicros = -6300343548803856813L,
+            };
+            mockGrpcClient.Setup(x => x.GetDomainCategory(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            DomainCategoryServiceClient client = new DomainCategoryServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DomainCategory response = client.GetDomainCategory(request.ResourceNameAsDomainCategoryName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetDomainCategoryResourceNamesAsync()
+        {
+            moq::Mock<DomainCategoryService.DomainCategoryServiceClient> mockGrpcClient = new moq::Mock<DomainCategoryService.DomainCategoryServiceClient>(moq::MockBehavior.Strict);
+            GetDomainCategoryRequest request = new GetDomainCategoryRequest
+            {
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+            };
+            gagvr::DomainCategory expectedResponse = new gagvr::DomainCategory
+            {
+                ResourceNameAsDomainCategoryName = gagvr::DomainCategoryName.FromCustomerDomainCategory("[CUSTOMER]", "[DOMAIN_CATEGORY]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Category = "category2f35efc4",
+                LanguageCode = "language_code2f6c7160",
+                Domain = "domaine8825fad",
+                CoverageFraction = -7.485837735521371E+17,
+                CategoryRank = 1518138877595598869L,
+                HasChildren = true,
+                RecommendedCpcBidMicros = -6300343548803856813L,
+            };
+            mockGrpcClient.Setup(x => x.GetDomainCategoryAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DomainCategory>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            DomainCategoryServiceClient client = new DomainCategoryServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DomainCategory responseCallSettings = await client.GetDomainCategoryAsync(request.ResourceNameAsDomainCategoryName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DomainCategory responseCancellationToken = await client.GetDomainCategoryAsync(request.ResourceNameAsDomainCategoryName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }
