@@ -14,107 +14,169 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V3.Common;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedClickViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedClickViewServiceClientTest
     {
+        [Test]
+        public void GetClickViewRequestObject()
+        {
+            moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
+            GetClickViewRequest request = new GetClickViewRequest
+            {
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+            };
+            gagvr::ClickView expectedResponse = new gagvr::ClickView
+            {
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+                Gclid = "gclid3179810b",
+                AreaOfInterest = new gagvc::ClickLocation(),
+                LocationOfPresence = new gagvc::ClickLocation(),
+                PageNumber = -4823514921865917552L,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+            };
+            mockGrpcClient.Setup(x => x.GetClickView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ClickViewServiceClient client = new ClickViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ClickView response = client.GetClickView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetClickViewRequestObjectAsync()
+        {
+            moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
+            GetClickViewRequest request = new GetClickViewRequest
+            {
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+            };
+            gagvr::ClickView expectedResponse = new gagvr::ClickView
+            {
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+                Gclid = "gclid3179810b",
+                AreaOfInterest = new gagvc::ClickLocation(),
+                LocationOfPresence = new gagvc::ClickLocation(),
+                PageNumber = -4823514921865917552L,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+            };
+            mockGrpcClient.Setup(x => x.GetClickViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ClickView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ClickViewServiceClient client = new ClickViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ClickView responseCallSettings = await client.GetClickViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ClickView responseCancellationToken = await client.GetClickViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetClickView()
         {
-            Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new Mock<ClickViewService.ClickViewServiceClient>(MockBehavior.Strict);
-            GetClickViewRequest expectedRequest = new GetClickViewRequest
-            {
-                ResourceName = new ClickViewName("[CUSTOMER]", "[CLICK_VIEW]").ToString(),
-            };
-            ClickView expectedResponse = new ClickView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetClickView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ClickViewServiceClient client = new ClickViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ClickViewName("[CUSTOMER]", "[CLICK_VIEW]").ToString();
-            ClickView response = client.GetClickView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetClickViewAsync()
-        {
-            Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new Mock<ClickViewService.ClickViewServiceClient>(MockBehavior.Strict);
-            GetClickViewRequest expectedRequest = new GetClickViewRequest
-            {
-                ResourceName = new ClickViewName("[CUSTOMER]", "[CLICK_VIEW]").ToString(),
-            };
-            ClickView expectedResponse = new ClickView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetClickViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ClickView>(Task.FromResult(expectedResponse), null, null, null, null));
-            ClickViewServiceClient client = new ClickViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ClickViewName("[CUSTOMER]", "[CLICK_VIEW]").ToString();
-            ClickView response = await client.GetClickViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetClickView2()
-        {
-            Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new Mock<ClickViewService.ClickViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
             GetClickViewRequest request = new GetClickViewRequest
             {
-                ResourceName = new ClickViewName("[CUSTOMER]", "[CLICK_VIEW]").ToString(),
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
             };
-            ClickView expectedResponse = new ClickView
+            gagvr::ClickView expectedResponse = new gagvr::ClickView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+                Gclid = "gclid3179810b",
+                AreaOfInterest = new gagvc::ClickLocation(),
+                LocationOfPresence = new gagvc::ClickLocation(),
+                PageNumber = -4823514921865917552L,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
             };
-            mockGrpcClient.Setup(x => x.GetClickView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetClickView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ClickViewServiceClient client = new ClickViewServiceClientImpl(mockGrpcClient.Object, null);
-            ClickView response = client.GetClickView(request);
+            gagvr::ClickView response = client.GetClickView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetClickViewAsync2()
+        public async stt::Task GetClickViewAsync()
         {
-            Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new Mock<ClickViewService.ClickViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
             GetClickViewRequest request = new GetClickViewRequest
             {
-                ResourceName = new ClickViewName("[CUSTOMER]", "[CLICK_VIEW]").ToString(),
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
             };
-            ClickView expectedResponse = new ClickView
+            gagvr::ClickView expectedResponse = new gagvr::ClickView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+                Gclid = "gclid3179810b",
+                AreaOfInterest = new gagvc::ClickLocation(),
+                LocationOfPresence = new gagvc::ClickLocation(),
+                PageNumber = -4823514921865917552L,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
             };
-            mockGrpcClient.Setup(x => x.GetClickViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ClickView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetClickViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ClickView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ClickViewServiceClient client = new ClickViewServiceClientImpl(mockGrpcClient.Object, null);
-            ClickView response = await client.GetClickViewAsync(request);
+            gagvr::ClickView responseCallSettings = await client.GetClickViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ClickView responseCancellationToken = await client.GetClickViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetClickViewResourceNames()
+        {
+            moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
+            GetClickViewRequest request = new GetClickViewRequest
+            {
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+            };
+            gagvr::ClickView expectedResponse = new gagvr::ClickView
+            {
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+                Gclid = "gclid3179810b",
+                AreaOfInterest = new gagvc::ClickLocation(),
+                LocationOfPresence = new gagvc::ClickLocation(),
+                PageNumber = -4823514921865917552L,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+            };
+            mockGrpcClient.Setup(x => x.GetClickView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ClickViewServiceClient client = new ClickViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ClickView response = client.GetClickView(request.ResourceNameAsClickViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetClickViewResourceNamesAsync()
+        {
+            moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
+            GetClickViewRequest request = new GetClickViewRequest
+            {
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+            };
+            gagvr::ClickView expectedResponse = new gagvr::ClickView
+            {
+                ResourceNameAsClickViewName = gagvr::ClickViewName.FromCustomerClickView("[CUSTOMER]", "[CLICK_VIEW]"),
+                Gclid = "gclid3179810b",
+                AreaOfInterest = new gagvc::ClickLocation(),
+                LocationOfPresence = new gagvc::ClickLocation(),
+                PageNumber = -4823514921865917552L,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+            };
+            mockGrpcClient.Setup(x => x.GetClickViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ClickView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ClickViewServiceClient client = new ClickViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ClickView responseCallSettings = await client.GetClickViewAsync(request.ResourceNameAsClickViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ClickView responseCancellationToken = await client.GetClickViewAsync(request.ResourceNameAsClickViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

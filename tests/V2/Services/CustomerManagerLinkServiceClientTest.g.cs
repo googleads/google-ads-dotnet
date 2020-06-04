@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,160 +14,179 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCustomerManagerLinkServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCustomerManagerLinkServiceClientTest
     {
+        [Test]
+        public void GetCustomerManagerLinkRequestObject()
+        {
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerManagerLinkRequest request = new GetCustomerManagerLinkRequest
+            {
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
+            };
+            gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
+            {
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
+                ManagerCustomer = "manager_customer3075601e",
+                ManagerLinkId = 1955158851327798968L,
+                Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomerManagerLink response = client.GetCustomerManagerLink(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCustomerManagerLinkRequestObjectAsync()
+        {
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerManagerLinkRequest request = new GetCustomerManagerLinkRequest
+            {
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
+            };
+            gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
+            {
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
+                ManagerCustomer = "manager_customer3075601e",
+                ManagerLinkId = 1955158851327798968L,
+                Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerManagerLink>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomerManagerLink responseCallSettings = await client.GetCustomerManagerLinkAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomerManagerLink responseCancellationToken = await client.GetCustomerManagerLinkAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCustomerManagerLink()
         {
-            Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(MockBehavior.Strict);
-            GetCustomerManagerLinkRequest expectedRequest = new GetCustomerManagerLinkRequest
-            {
-                ResourceName = new CustomerManagerLinkName("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]").ToString(),
-            };
-            CustomerManagerLink expectedResponse = new CustomerManagerLink
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomerManagerLink(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerManagerLinkName("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]").ToString();
-            CustomerManagerLink response = client.GetCustomerManagerLink(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCustomerManagerLinkAsync()
-        {
-            Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(MockBehavior.Strict);
-            GetCustomerManagerLinkRequest expectedRequest = new GetCustomerManagerLinkRequest
-            {
-                ResourceName = new CustomerManagerLinkName("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]").ToString(),
-            };
-            CustomerManagerLink expectedResponse = new CustomerManagerLink
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomerManagerLinkAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CustomerManagerLink>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerManagerLinkName("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]").ToString();
-            CustomerManagerLink response = await client.GetCustomerManagerLinkAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCustomerManagerLink2()
-        {
-            Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
             GetCustomerManagerLinkRequest request = new GetCustomerManagerLinkRequest
             {
-                ResourceName = new CustomerManagerLinkName("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]").ToString(),
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
             };
-            CustomerManagerLink expectedResponse = new CustomerManagerLink
+            gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
+                ManagerCustomer = "manager_customer3075601e",
+                ManagerLinkId = 1955158851327798968L,
+                Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
             };
-            mockGrpcClient.Setup(x => x.GetCustomerManagerLink(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
-            CustomerManagerLink response = client.GetCustomerManagerLink(request);
+            gagvr::CustomerManagerLink response = client.GetCustomerManagerLink(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCustomerManagerLinkAsync2()
+        public async stt::Task GetCustomerManagerLinkAsync()
         {
-            Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
             GetCustomerManagerLinkRequest request = new GetCustomerManagerLinkRequest
             {
-                ResourceName = new CustomerManagerLinkName("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]").ToString(),
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
             };
-            CustomerManagerLink expectedResponse = new CustomerManagerLink
+            gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
+                ManagerCustomer = "manager_customer3075601e",
+                ManagerLinkId = 1955158851327798968L,
+                Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
             };
-            mockGrpcClient.Setup(x => x.GetCustomerManagerLinkAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CustomerManagerLink>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerManagerLink>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
-            CustomerManagerLink response = await client.GetCustomerManagerLinkAsync(request);
+            gagvr::CustomerManagerLink responseCallSettings = await client.GetCustomerManagerLinkAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomerManagerLink responseCancellationToken = await client.GetCustomerManagerLinkAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCustomerManagerLinkResourceNames()
+        {
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerManagerLinkRequest request = new GetCustomerManagerLinkRequest
+            {
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
+            };
+            gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
+            {
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
+                ManagerCustomer = "manager_customer3075601e",
+                ManagerLinkId = 1955158851327798968L,
+                Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomerManagerLink response = client.GetCustomerManagerLink(request.ResourceNameAsCustomerManagerLinkName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCustomerManagerLink()
+        public async stt::Task GetCustomerManagerLinkResourceNamesAsync()
         {
-            Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(MockBehavior.Strict);
-            MutateCustomerManagerLinkRequest expectedRequest = new MutateCustomerManagerLinkRequest
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerManagerLinkRequest request = new GetCustomerManagerLinkRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
             };
-            MutateCustomerManagerLinkResponse expectedResponse = new MutateCustomerManagerLinkResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerManagerLink(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
+            {
+                ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
+                ManagerCustomer = "manager_customer3075601e",
+                ManagerLinkId = 1955158851327798968L,
+                Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerManagerLink>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerManagerLinkOperation> operations = new List<CustomerManagerLinkOperation>();
-            MutateCustomerManagerLinkResponse response = client.MutateCustomerManagerLink(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CustomerManagerLink responseCallSettings = await client.GetCustomerManagerLinkAsync(request.ResourceNameAsCustomerManagerLinkName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomerManagerLink responseCancellationToken = await client.GetCustomerManagerLinkAsync(request.ResourceNameAsCustomerManagerLinkName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCustomerManagerLinkAsync()
+        public void MutateCustomerManagerLinkRequestObject()
         {
-            Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(MockBehavior.Strict);
-            MutateCustomerManagerLinkRequest expectedRequest = new MutateCustomerManagerLinkRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCustomerManagerLinkResponse expectedResponse = new MutateCustomerManagerLinkResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerManagerLinkAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerManagerLinkResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerManagerLinkOperation> operations = new List<CustomerManagerLinkOperation>();
-            MutateCustomerManagerLinkResponse response = await client.MutateCustomerManagerLinkAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCustomerManagerLink2()
-        {
-            Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
             MutateCustomerManagerLinkRequest request = new MutateCustomerManagerLinkRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerManagerLinkOperation(),
+                },
             };
-            MutateCustomerManagerLinkResponse expectedResponse = new MutateCustomerManagerLinkResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerManagerLink(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCustomerManagerLinkResponse expectedResponse = new MutateCustomerManagerLinkResponse
+            {
+                Results =
+                {
+                    new MutateCustomerManagerLinkResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
             MutateCustomerManagerLinkResponse response = client.MutateCustomerManagerLink(request);
             Assert.AreEqual(expectedResponse, response);
@@ -175,22 +194,85 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateCustomerManagerLinkAsync2()
+        public async stt::Task MutateCustomerManagerLinkRequestObjectAsync()
         {
-            Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
             MutateCustomerManagerLinkRequest request = new MutateCustomerManagerLinkRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerManagerLinkOperation(),
+                },
             };
-            MutateCustomerManagerLinkResponse expectedResponse = new MutateCustomerManagerLinkResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerManagerLinkAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerManagerLinkResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCustomerManagerLinkResponse expectedResponse = new MutateCustomerManagerLinkResponse
+            {
+                Results =
+                {
+                    new MutateCustomerManagerLinkResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerManagerLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCustomerManagerLinkResponse response = await client.MutateCustomerManagerLinkAsync(request);
+            MutateCustomerManagerLinkResponse responseCallSettings = await client.MutateCustomerManagerLinkAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomerManagerLinkResponse responseCancellationToken = await client.MutateCustomerManagerLinkAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCustomerManagerLink()
+        {
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomerManagerLinkRequest request = new MutateCustomerManagerLinkRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerManagerLinkOperation(),
+                },
+            };
+            MutateCustomerManagerLinkResponse expectedResponse = new MutateCustomerManagerLinkResponse
+            {
+                Results =
+                {
+                    new MutateCustomerManagerLinkResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomerManagerLinkResponse response = client.MutateCustomerManagerLink(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCustomerManagerLinkAsync()
+        {
+            moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerManagerLinkService.CustomerManagerLinkServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomerManagerLinkRequest request = new MutateCustomerManagerLinkRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerManagerLinkOperation(),
+                },
+            };
+            MutateCustomerManagerLinkResponse expectedResponse = new MutateCustomerManagerLinkResponse
+            {
+                Results =
+                {
+                    new MutateCustomerManagerLinkResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerManagerLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomerManagerLinkResponse responseCallSettings = await client.MutateCustomerManagerLinkAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomerManagerLinkResponse responseCancellationToken = await client.MutateCustomerManagerLinkAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

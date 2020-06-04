@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,227 +14,215 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.LongRunning;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using lro = Google.LongRunning;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCampaignDraftServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCampaignDraftServiceClientTest
     {
+        [Test]
+        public void GetCampaignDraftRequestObject()
+        {
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetCampaignDraftRequest request = new GetCampaignDraftRequest
+            {
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+            };
+            gagvr::CampaignDraft expectedResponse = new gagvr::CampaignDraft
+            {
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftId = -3652444185194679204L,
+                BaseCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Status = gagve::CampaignDraftStatusEnum.Types.CampaignDraftStatus.Removed,
+                HasExperimentRunning = true,
+                LongRunningOperation = "long_running_operation0897bd41",
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignDraft(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignDraft response = client.GetCampaignDraft(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCampaignDraftRequestObjectAsync()
+        {
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetCampaignDraftRequest request = new GetCampaignDraftRequest
+            {
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+            };
+            gagvr::CampaignDraft expectedResponse = new gagvr::CampaignDraft
+            {
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftId = -3652444185194679204L,
+                BaseCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Status = gagve::CampaignDraftStatusEnum.Types.CampaignDraftStatus.Removed,
+                HasExperimentRunning = true,
+                LongRunningOperation = "long_running_operation0897bd41",
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignDraftAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignDraft>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignDraft responseCallSettings = await client.GetCampaignDraftAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignDraft responseCancellationToken = await client.GetCampaignDraftAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCampaignDraft()
         {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            GetCampaignDraftRequest expectedRequest = new GetCampaignDraftRequest
-            {
-                ResourceName = new CampaignDraftName("[CUSTOMER]", "[CAMPAIGN_DRAFT]").ToString(),
-            };
-            CampaignDraft expectedResponse = new CampaignDraft
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignDraft(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignDraftName("[CUSTOMER]", "[CAMPAIGN_DRAFT]").ToString();
-            CampaignDraft response = client.GetCampaignDraft(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCampaignDraftAsync()
-        {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            GetCampaignDraftRequest expectedRequest = new GetCampaignDraftRequest
-            {
-                ResourceName = new CampaignDraftName("[CUSTOMER]", "[CAMPAIGN_DRAFT]").ToString(),
-            };
-            CampaignDraft expectedResponse = new CampaignDraft
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignDraftAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignDraft>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignDraftName("[CUSTOMER]", "[CAMPAIGN_DRAFT]").ToString();
-            CampaignDraft response = await client.GetCampaignDraftAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCampaignDraft2()
-        {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             GetCampaignDraftRequest request = new GetCampaignDraftRequest
             {
-                ResourceName = new CampaignDraftName("[CUSTOMER]", "[CAMPAIGN_DRAFT]").ToString(),
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
             };
-            CampaignDraft expectedResponse = new CampaignDraft
+            gagvr::CampaignDraft expectedResponse = new gagvr::CampaignDraft
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftId = -3652444185194679204L,
+                BaseCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Status = gagve::CampaignDraftStatusEnum.Types.CampaignDraftStatus.Removed,
+                HasExperimentRunning = true,
+                LongRunningOperation = "long_running_operation0897bd41",
             };
-            mockGrpcClient.Setup(x => x.GetCampaignDraft(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCampaignDraft(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignDraft response = client.GetCampaignDraft(request);
+            gagvr::CampaignDraft response = client.GetCampaignDraft(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCampaignDraftAsync2()
+        public async stt::Task GetCampaignDraftAsync()
         {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             GetCampaignDraftRequest request = new GetCampaignDraftRequest
             {
-                ResourceName = new CampaignDraftName("[CUSTOMER]", "[CAMPAIGN_DRAFT]").ToString(),
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
             };
-            CampaignDraft expectedResponse = new CampaignDraft
+            gagvr::CampaignDraft expectedResponse = new gagvr::CampaignDraft
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftId = -3652444185194679204L,
+                BaseCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Status = gagve::CampaignDraftStatusEnum.Types.CampaignDraftStatus.Removed,
+                HasExperimentRunning = true,
+                LongRunningOperation = "long_running_operation0897bd41",
             };
-            mockGrpcClient.Setup(x => x.GetCampaignDraftAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignDraft>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCampaignDraftAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignDraft>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignDraft response = await client.GetCampaignDraftAsync(request);
+            gagvr::CampaignDraft responseCallSettings = await client.GetCampaignDraftAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignDraft responseCancellationToken = await client.GetCampaignDraftAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCampaignDraftResourceNames()
+        {
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetCampaignDraftRequest request = new GetCampaignDraftRequest
+            {
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+            };
+            gagvr::CampaignDraft expectedResponse = new gagvr::CampaignDraft
+            {
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftId = -3652444185194679204L,
+                BaseCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Status = gagve::CampaignDraftStatusEnum.Types.CampaignDraftStatus.Removed,
+                HasExperimentRunning = true,
+                LongRunningOperation = "long_running_operation0897bd41",
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignDraft(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignDraft response = client.GetCampaignDraft(request.ResourceNameAsCampaignDraftName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCampaignDrafts()
+        public async stt::Task GetCampaignDraftResourceNamesAsync()
         {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            MutateCampaignDraftsRequest expectedRequest = new MutateCampaignDraftsRequest
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetCampaignDraftRequest request = new GetCampaignDraftRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
             };
-            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignDrafts(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CampaignDraft expectedResponse = new gagvr::CampaignDraft
+            {
+                ResourceNameAsCampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftId = -3652444185194679204L,
+                BaseCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CampaignDraftName = gagvr::CampaignDraftName.FromCustomerCampaignDraft("[CUSTOMER]", "[CAMPAIGN_DRAFT]"),
+                DraftCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Status = gagve::CampaignDraftStatusEnum.Types.CampaignDraftStatus.Removed,
+                HasExperimentRunning = true,
+                LongRunningOperation = "long_running_operation0897bd41",
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignDraftAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignDraft>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignDraftOperation> operations = new List<CampaignDraftOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignDraftsResponse response = client.MutateCampaignDrafts(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CampaignDraft responseCallSettings = await client.GetCampaignDraftAsync(request.ResourceNameAsCampaignDraftName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignDraft responseCancellationToken = await client.GetCampaignDraftAsync(request.ResourceNameAsCampaignDraftName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCampaignDraftsAsync()
+        public void MutateCampaignDraftsRequestObject()
         {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            MutateCampaignDraftsRequest expectedRequest = new MutateCampaignDraftsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignDraftsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignDraftsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignDraftOperation> operations = new List<CampaignDraftOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignDraftsResponse response = await client.MutateCampaignDraftsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignDrafts2()
-        {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            MutateCampaignDraftsRequest expectedRequest = new MutateCampaignDraftsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignDrafts(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignDraftOperation> operations = new List<CampaignDraftOperation>();
-            MutateCampaignDraftsResponse response = client.MutateCampaignDrafts(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCampaignDraftsAsync2()
-        {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            MutateCampaignDraftsRequest expectedRequest = new MutateCampaignDraftsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignDraftsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignDraftsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignDraftOperation> operations = new List<CampaignDraftOperation>();
-            MutateCampaignDraftsResponse response = await client.MutateCampaignDraftsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignDrafts3()
-        {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             MutateCampaignDraftsRequest request = new MutateCampaignDraftsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignDraftOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignDrafts(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignDraftResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignDrafts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
             MutateCampaignDraftsResponse response = client.MutateCampaignDrafts(request);
             Assert.AreEqual(expectedResponse, response);
@@ -242,24 +230,93 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateCampaignDraftsAsync3()
+        public async stt::Task MutateCampaignDraftsRequestObjectAsync()
         {
-            Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new Mock<CampaignDraftService.CampaignDraftServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             MutateCampaignDraftsRequest request = new MutateCampaignDraftsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignDraftOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignDraftsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignDraftsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignDraftResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignDraftsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignDraftsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCampaignDraftsResponse response = await client.MutateCampaignDraftsAsync(request);
+            MutateCampaignDraftsResponse responseCallSettings = await client.MutateCampaignDraftsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignDraftsResponse responseCancellationToken = await client.MutateCampaignDraftsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCampaignDrafts()
+        {
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            MutateCampaignDraftsRequest request = new MutateCampaignDraftsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignDraftOperation(),
+                },
+            };
+            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignDraftResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignDrafts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignDraftsResponse response = client.MutateCampaignDrafts(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCampaignDraftsAsync()
+        {
+            moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            MutateCampaignDraftsRequest request = new MutateCampaignDraftsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignDraftOperation(),
+                },
+            };
+            MutateCampaignDraftsResponse expectedResponse = new MutateCampaignDraftsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignDraftResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignDraftsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignDraftsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignDraftServiceClient client = new CampaignDraftServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignDraftsResponse responseCallSettings = await client.MutateCampaignDraftsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignDraftsResponse responseCancellationToken = await client.MutateCampaignDraftsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

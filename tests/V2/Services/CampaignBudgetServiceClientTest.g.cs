@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,261 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCampaignBudgetServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCampaignBudgetServiceClientTest
     {
+        [Test]
+        public void GetCampaignBudgetRequestObject()
+        {
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignBudgetRequest request = new GetCampaignBudgetRequest
+            {
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+            };
+            gagvr::CampaignBudget expectedResponse = new gagvr::CampaignBudget
+            {
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                Id = -6774108720365892680L,
+                CampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                AmountMicros = -5708430407335026218L,
+                Status = gagve::BudgetStatusEnum.Types.BudgetStatus.Enabled,
+                DeliveryMethod = gagve::BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Standard,
+                ExplicitlyShared = true,
+                ReferenceCount = -8440758895662409664L,
+                TotalAmountMicros = -8735537612243809071L,
+                HasRecommendedBudget = false,
+                RecommendedBudgetAmountMicros = -5174015606152417050L,
+                Period = gagve::BudgetPeriodEnum.Types.BudgetPeriod.Daily,
+                RecommendedBudgetEstimatedChangeWeeklyClicks = 5003538975719544582L,
+                RecommendedBudgetEstimatedChangeWeeklyCostMicros = 6886876539534848907L,
+                RecommendedBudgetEstimatedChangeWeeklyInteractions = -4068174795511900246L,
+                RecommendedBudgetEstimatedChangeWeeklyViews = -4598204636615893095L,
+                Type = gagve::BudgetTypeEnum.Types.BudgetType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignBudget(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignBudget response = client.GetCampaignBudget(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCampaignBudgetRequestObjectAsync()
+        {
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignBudgetRequest request = new GetCampaignBudgetRequest
+            {
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+            };
+            gagvr::CampaignBudget expectedResponse = new gagvr::CampaignBudget
+            {
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                Id = -6774108720365892680L,
+                CampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                AmountMicros = -5708430407335026218L,
+                Status = gagve::BudgetStatusEnum.Types.BudgetStatus.Enabled,
+                DeliveryMethod = gagve::BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Standard,
+                ExplicitlyShared = true,
+                ReferenceCount = -8440758895662409664L,
+                TotalAmountMicros = -8735537612243809071L,
+                HasRecommendedBudget = false,
+                RecommendedBudgetAmountMicros = -5174015606152417050L,
+                Period = gagve::BudgetPeriodEnum.Types.BudgetPeriod.Daily,
+                RecommendedBudgetEstimatedChangeWeeklyClicks = 5003538975719544582L,
+                RecommendedBudgetEstimatedChangeWeeklyCostMicros = 6886876539534848907L,
+                RecommendedBudgetEstimatedChangeWeeklyInteractions = -4068174795511900246L,
+                RecommendedBudgetEstimatedChangeWeeklyViews = -4598204636615893095L,
+                Type = gagve::BudgetTypeEnum.Types.BudgetType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignBudgetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignBudget>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignBudget responseCallSettings = await client.GetCampaignBudgetAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignBudget responseCancellationToken = await client.GetCampaignBudgetAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCampaignBudget()
         {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
-            GetCampaignBudgetRequest expectedRequest = new GetCampaignBudgetRequest
-            {
-                ResourceName = new CampaignBudgetName("[CUSTOMER]", "[CAMPAIGN_BUDGET]").ToString(),
-            };
-            CampaignBudget expectedResponse = new CampaignBudget
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignBudget(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignBudgetName("[CUSTOMER]", "[CAMPAIGN_BUDGET]").ToString();
-            CampaignBudget response = client.GetCampaignBudget(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCampaignBudgetAsync()
-        {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
-            GetCampaignBudgetRequest expectedRequest = new GetCampaignBudgetRequest
-            {
-                ResourceName = new CampaignBudgetName("[CUSTOMER]", "[CAMPAIGN_BUDGET]").ToString(),
-            };
-            CampaignBudget expectedResponse = new CampaignBudget
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignBudgetAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignBudget>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignBudgetName("[CUSTOMER]", "[CAMPAIGN_BUDGET]").ToString();
-            CampaignBudget response = await client.GetCampaignBudgetAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCampaignBudget2()
-        {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
             GetCampaignBudgetRequest request = new GetCampaignBudgetRequest
             {
-                ResourceName = new CampaignBudgetName("[CUSTOMER]", "[CAMPAIGN_BUDGET]").ToString(),
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
             };
-            CampaignBudget expectedResponse = new CampaignBudget
+            gagvr::CampaignBudget expectedResponse = new gagvr::CampaignBudget
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                Id = -6774108720365892680L,
+                CampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                AmountMicros = -5708430407335026218L,
+                Status = gagve::BudgetStatusEnum.Types.BudgetStatus.Enabled,
+                DeliveryMethod = gagve::BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Standard,
+                ExplicitlyShared = true,
+                ReferenceCount = -8440758895662409664L,
+                TotalAmountMicros = -8735537612243809071L,
+                HasRecommendedBudget = false,
+                RecommendedBudgetAmountMicros = -5174015606152417050L,
+                Period = gagve::BudgetPeriodEnum.Types.BudgetPeriod.Daily,
+                RecommendedBudgetEstimatedChangeWeeklyClicks = 5003538975719544582L,
+                RecommendedBudgetEstimatedChangeWeeklyCostMicros = 6886876539534848907L,
+                RecommendedBudgetEstimatedChangeWeeklyInteractions = -4068174795511900246L,
+                RecommendedBudgetEstimatedChangeWeeklyViews = -4598204636615893095L,
+                Type = gagve::BudgetTypeEnum.Types.BudgetType.Unspecified,
             };
-            mockGrpcClient.Setup(x => x.GetCampaignBudget(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCampaignBudget(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignBudget response = client.GetCampaignBudget(request);
+            gagvr::CampaignBudget response = client.GetCampaignBudget(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCampaignBudgetAsync2()
+        public async stt::Task GetCampaignBudgetAsync()
         {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
             GetCampaignBudgetRequest request = new GetCampaignBudgetRequest
             {
-                ResourceName = new CampaignBudgetName("[CUSTOMER]", "[CAMPAIGN_BUDGET]").ToString(),
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
             };
-            CampaignBudget expectedResponse = new CampaignBudget
+            gagvr::CampaignBudget expectedResponse = new gagvr::CampaignBudget
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                Id = -6774108720365892680L,
+                CampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                AmountMicros = -5708430407335026218L,
+                Status = gagve::BudgetStatusEnum.Types.BudgetStatus.Enabled,
+                DeliveryMethod = gagve::BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Standard,
+                ExplicitlyShared = true,
+                ReferenceCount = -8440758895662409664L,
+                TotalAmountMicros = -8735537612243809071L,
+                HasRecommendedBudget = false,
+                RecommendedBudgetAmountMicros = -5174015606152417050L,
+                Period = gagve::BudgetPeriodEnum.Types.BudgetPeriod.Daily,
+                RecommendedBudgetEstimatedChangeWeeklyClicks = 5003538975719544582L,
+                RecommendedBudgetEstimatedChangeWeeklyCostMicros = 6886876539534848907L,
+                RecommendedBudgetEstimatedChangeWeeklyInteractions = -4068174795511900246L,
+                RecommendedBudgetEstimatedChangeWeeklyViews = -4598204636615893095L,
+                Type = gagve::BudgetTypeEnum.Types.BudgetType.Unspecified,
             };
-            mockGrpcClient.Setup(x => x.GetCampaignBudgetAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignBudget>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCampaignBudgetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignBudget>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignBudget response = await client.GetCampaignBudgetAsync(request);
+            gagvr::CampaignBudget responseCallSettings = await client.GetCampaignBudgetAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignBudget responseCancellationToken = await client.GetCampaignBudgetAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCampaignBudgetResourceNames()
+        {
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignBudgetRequest request = new GetCampaignBudgetRequest
+            {
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+            };
+            gagvr::CampaignBudget expectedResponse = new gagvr::CampaignBudget
+            {
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                Id = -6774108720365892680L,
+                CampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                AmountMicros = -5708430407335026218L,
+                Status = gagve::BudgetStatusEnum.Types.BudgetStatus.Enabled,
+                DeliveryMethod = gagve::BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Standard,
+                ExplicitlyShared = true,
+                ReferenceCount = -8440758895662409664L,
+                TotalAmountMicros = -8735537612243809071L,
+                HasRecommendedBudget = false,
+                RecommendedBudgetAmountMicros = -5174015606152417050L,
+                Period = gagve::BudgetPeriodEnum.Types.BudgetPeriod.Daily,
+                RecommendedBudgetEstimatedChangeWeeklyClicks = 5003538975719544582L,
+                RecommendedBudgetEstimatedChangeWeeklyCostMicros = 6886876539534848907L,
+                RecommendedBudgetEstimatedChangeWeeklyInteractions = -4068174795511900246L,
+                RecommendedBudgetEstimatedChangeWeeklyViews = -4598204636615893095L,
+                Type = gagve::BudgetTypeEnum.Types.BudgetType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignBudget(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignBudget response = client.GetCampaignBudget(request.ResourceNameAsCampaignBudgetName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCampaignBudgets()
+        public async stt::Task GetCampaignBudgetResourceNamesAsync()
         {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
-            MutateCampaignBudgetsRequest expectedRequest = new MutateCampaignBudgetsRequest
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignBudgetRequest request = new GetCampaignBudgetRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
             };
-            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBudgets(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CampaignBudget expectedResponse = new gagvr::CampaignBudget
+            {
+                ResourceNameAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                Id = -6774108720365892680L,
+                CampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                AmountMicros = -5708430407335026218L,
+                Status = gagve::BudgetStatusEnum.Types.BudgetStatus.Enabled,
+                DeliveryMethod = gagve::BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Standard,
+                ExplicitlyShared = true,
+                ReferenceCount = -8440758895662409664L,
+                TotalAmountMicros = -8735537612243809071L,
+                HasRecommendedBudget = false,
+                RecommendedBudgetAmountMicros = -5174015606152417050L,
+                Period = gagve::BudgetPeriodEnum.Types.BudgetPeriod.Daily,
+                RecommendedBudgetEstimatedChangeWeeklyClicks = 5003538975719544582L,
+                RecommendedBudgetEstimatedChangeWeeklyCostMicros = 6886876539534848907L,
+                RecommendedBudgetEstimatedChangeWeeklyInteractions = -4068174795511900246L,
+                RecommendedBudgetEstimatedChangeWeeklyViews = -4598204636615893095L,
+                Type = gagve::BudgetTypeEnum.Types.BudgetType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignBudgetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignBudget>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignBudgetOperation> operations = new List<CampaignBudgetOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignBudgetsResponse response = client.MutateCampaignBudgets(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CampaignBudget responseCallSettings = await client.GetCampaignBudgetAsync(request.ResourceNameAsCampaignBudgetName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignBudget responseCancellationToken = await client.GetCampaignBudgetAsync(request.ResourceNameAsCampaignBudgetName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCampaignBudgetsAsync()
+        public void MutateCampaignBudgetsRequestObject()
         {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
-            MutateCampaignBudgetsRequest expectedRequest = new MutateCampaignBudgetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBudgetsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignBudgetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignBudgetOperation> operations = new List<CampaignBudgetOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignBudgetsResponse response = await client.MutateCampaignBudgetsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignBudgets2()
-        {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
-            MutateCampaignBudgetsRequest expectedRequest = new MutateCampaignBudgetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBudgets(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignBudgetOperation> operations = new List<CampaignBudgetOperation>();
-            MutateCampaignBudgetsResponse response = client.MutateCampaignBudgets(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCampaignBudgetsAsync2()
-        {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
-            MutateCampaignBudgetsRequest expectedRequest = new MutateCampaignBudgetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBudgetsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignBudgetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignBudgetOperation> operations = new List<CampaignBudgetOperation>();
-            MutateCampaignBudgetsResponse response = await client.MutateCampaignBudgetsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignBudgets3()
-        {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignBudgetsRequest request = new MutateCampaignBudgetsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignBudgetOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBudgets(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignBudgetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignBudgets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
             MutateCampaignBudgetsResponse response = client.MutateCampaignBudgets(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +276,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateCampaignBudgetsAsync3()
+        public async stt::Task MutateCampaignBudgetsRequestObjectAsync()
         {
-            Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new Mock<CampaignBudgetService.CampaignBudgetServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignBudgetsRequest request = new MutateCampaignBudgetsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignBudgetOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBudgetsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignBudgetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignBudgetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignBudgetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignBudgetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCampaignBudgetsResponse response = await client.MutateCampaignBudgetsAsync(request);
+            MutateCampaignBudgetsResponse responseCallSettings = await client.MutateCampaignBudgetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignBudgetsResponse responseCancellationToken = await client.MutateCampaignBudgetsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCampaignBudgets()
+        {
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignBudgetsRequest request = new MutateCampaignBudgetsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignBudgetOperation(),
+                },
+            };
+            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignBudgetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignBudgets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignBudgetsResponse response = client.MutateCampaignBudgets(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCampaignBudgetsAsync()
+        {
+            moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignBudgetsRequest request = new MutateCampaignBudgetsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignBudgetOperation(),
+                },
+            };
+            MutateCampaignBudgetsResponse expectedResponse = new MutateCampaignBudgetsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignBudgetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignBudgetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignBudgetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignBudgetServiceClient client = new CampaignBudgetServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignBudgetsResponse responseCallSettings = await client.MutateCampaignBudgetsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignBudgetsResponse responseCancellationToken = await client.MutateCampaignBudgetsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -14,216 +14,190 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V3.Common;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedLabelServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedLabelServiceClientTest
     {
+        [Test]
+        public void GetLabelRequestObject()
+        {
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
+            GetLabelRequest request = new GetLabelRequest
+            {
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            gagvr::Label expectedResponse = new gagvr::Label
+            {
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Id = -6774108720365892680L,
+                LabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Status = gagve::LabelStatusEnum.Types.LabelStatus.Enabled,
+                TextLabel = new gagvc::TextLabel(),
+            };
+            mockGrpcClient.Setup(x => x.GetLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Label response = client.GetLabel(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetLabelRequestObjectAsync()
+        {
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
+            GetLabelRequest request = new GetLabelRequest
+            {
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            gagvr::Label expectedResponse = new gagvr::Label
+            {
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Id = -6774108720365892680L,
+                LabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Status = gagve::LabelStatusEnum.Types.LabelStatus.Enabled,
+                TextLabel = new gagvc::TextLabel(),
+            };
+            mockGrpcClient.Setup(x => x.GetLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Label>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Label responseCallSettings = await client.GetLabelAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Label responseCancellationToken = await client.GetLabelAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetLabel()
         {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
-            GetLabelRequest expectedRequest = new GetLabelRequest
-            {
-                ResourceName = new LabelName("[CUSTOMER]", "[LABEL]").ToString(),
-            };
-            Label expectedResponse = new Label
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetLabel(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new LabelName("[CUSTOMER]", "[LABEL]").ToString();
-            Label response = client.GetLabel(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetLabelAsync()
-        {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
-            GetLabelRequest expectedRequest = new GetLabelRequest
-            {
-                ResourceName = new LabelName("[CUSTOMER]", "[LABEL]").ToString(),
-            };
-            Label expectedResponse = new Label
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetLabelAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Label>(Task.FromResult(expectedResponse), null, null, null, null));
-            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new LabelName("[CUSTOMER]", "[LABEL]").ToString();
-            Label response = await client.GetLabelAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetLabel2()
-        {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
             GetLabelRequest request = new GetLabelRequest
             {
-                ResourceName = new LabelName("[CUSTOMER]", "[LABEL]").ToString(),
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
-            Label expectedResponse = new Label
+            gagvr::Label expectedResponse = new gagvr::Label
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Id = -6774108720365892680L,
+                LabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Status = gagve::LabelStatusEnum.Types.LabelStatus.Enabled,
+                TextLabel = new gagvc::TextLabel(),
             };
-            mockGrpcClient.Setup(x => x.GetLabel(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
-            Label response = client.GetLabel(request);
+            gagvr::Label response = client.GetLabel(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetLabelAsync2()
+        public async stt::Task GetLabelAsync()
         {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
             GetLabelRequest request = new GetLabelRequest
             {
-                ResourceName = new LabelName("[CUSTOMER]", "[LABEL]").ToString(),
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
-            Label expectedResponse = new Label
+            gagvr::Label expectedResponse = new gagvr::Label
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Id = -6774108720365892680L,
+                LabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Status = gagve::LabelStatusEnum.Types.LabelStatus.Enabled,
+                TextLabel = new gagvc::TextLabel(),
             };
-            mockGrpcClient.Setup(x => x.GetLabelAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Label>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Label>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
-            Label response = await client.GetLabelAsync(request);
+            gagvr::Label responseCallSettings = await client.GetLabelAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Label responseCancellationToken = await client.GetLabelAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetLabelResourceNames()
+        {
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
+            GetLabelRequest request = new GetLabelRequest
+            {
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            gagvr::Label expectedResponse = new gagvr::Label
+            {
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Id = -6774108720365892680L,
+                LabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Status = gagve::LabelStatusEnum.Types.LabelStatus.Enabled,
+                TextLabel = new gagvc::TextLabel(),
+            };
+            mockGrpcClient.Setup(x => x.GetLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Label response = client.GetLabel(request.ResourceNameAsLabelName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateLabels()
+        public async stt::Task GetLabelResourceNamesAsync()
         {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
-            MutateLabelsRequest expectedRequest = new MutateLabelsRequest
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
+            GetLabelRequest request = new GetLabelRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
-            MutateLabelsResponse expectedResponse = new MutateLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateLabels(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::Label expectedResponse = new gagvr::Label
+            {
+                ResourceNameAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Id = -6774108720365892680L,
+                LabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+                Status = gagve::LabelStatusEnum.Types.LabelStatus.Enabled,
+                TextLabel = new gagvc::TextLabel(),
+            };
+            mockGrpcClient.Setup(x => x.GetLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Label>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<LabelOperation> operations = new List<LabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateLabelsResponse response = client.MutateLabels(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::Label responseCallSettings = await client.GetLabelAsync(request.ResourceNameAsLabelName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Label responseCancellationToken = await client.GetLabelAsync(request.ResourceNameAsLabelName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateLabelsAsync()
+        public void MutateLabelsRequestObject()
         {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
-            MutateLabelsRequest expectedRequest = new MutateLabelsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateLabelsResponse expectedResponse = new MutateLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateLabelsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateLabelsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<LabelOperation> operations = new List<LabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateLabelsResponse response = await client.MutateLabelsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateLabels2()
-        {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
-            MutateLabelsRequest expectedRequest = new MutateLabelsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateLabelsResponse expectedResponse = new MutateLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateLabels(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<LabelOperation> operations = new List<LabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateLabelsResponse response = client.MutateLabels(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateLabelsAsync2()
-        {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
-            MutateLabelsRequest expectedRequest = new MutateLabelsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateLabelsResponse expectedResponse = new MutateLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateLabelsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateLabelsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<LabelOperation> operations = new List<LabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateLabelsResponse response = await client.MutateLabelsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateLabels3()
-        {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
             MutateLabelsRequest request = new MutateLabelsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new LabelOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateLabelsResponse expectedResponse = new MutateLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateLabels(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateLabelsResponse expectedResponse = new MutateLabelsResponse
+            {
+                Results =
+                {
+                    new MutateLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateLabels(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
             MutateLabelsResponse response = client.MutateLabels(request);
             Assert.AreEqual(expectedResponse, response);
@@ -231,22 +205,90 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task MutateLabelsAsync3()
+        public async stt::Task MutateLabelsRequestObjectAsync()
         {
-            Mock<LabelService.LabelServiceClient> mockGrpcClient = new Mock<LabelService.LabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
             MutateLabelsRequest request = new MutateLabelsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new LabelOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateLabelsResponse expectedResponse = new MutateLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateLabelsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateLabelsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateLabelsResponse expectedResponse = new MutateLabelsResponse
+            {
+                Results =
+                {
+                    new MutateLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateLabelsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateLabelsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
-            MutateLabelsResponse response = await client.MutateLabelsAsync(request);
+            MutateLabelsResponse responseCallSettings = await client.MutateLabelsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateLabelsResponse responseCancellationToken = await client.MutateLabelsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateLabels()
+        {
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
+            MutateLabelsRequest request = new MutateLabelsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new LabelOperation(),
+                },
+            };
+            MutateLabelsResponse expectedResponse = new MutateLabelsResponse
+            {
+                Results =
+                {
+                    new MutateLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateLabels(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
+            MutateLabelsResponse response = client.MutateLabels(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateLabelsAsync()
+        {
+            moq::Mock<LabelService.LabelServiceClient> mockGrpcClient = new moq::Mock<LabelService.LabelServiceClient>(moq::MockBehavior.Strict);
+            MutateLabelsRequest request = new MutateLabelsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new LabelOperation(),
+                },
+            };
+            MutateLabelsResponse expectedResponse = new MutateLabelsResponse
+            {
+                Results =
+                {
+                    new MutateLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateLabelsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateLabelsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            LabelServiceClient client = new LabelServiceClientImpl(mockGrpcClient.Object, null);
+            MutateLabelsResponse responseCallSettings = await client.MutateLabelsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateLabelsResponse responseCancellationToken = await client.MutateLabelsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

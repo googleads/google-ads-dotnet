@@ -104,7 +104,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
             {
                 // Create the ads, while setting validateOnly = true.
                 MutateAdGroupAdsResponse response = adGroupAdService.MutateAdGroupAds(
-                    customerId.ToString(), new[] { operation }, false, true);
+                    new MutateAdGroupAdsRequest()
+                    {
+                        CustomerId = customerId.ToString(),
+                        Operations = { operation },
+                        PartialFailure = false,
+                        ValidateOnly = true
+                    });
 
                 // Since validation is ON, result will be null.
                 Console.WriteLine("Expanded text ad validated successfully.");

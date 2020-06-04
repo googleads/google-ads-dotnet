@@ -116,16 +116,16 @@ namespace Google.Ads.GoogleAds.Examples.V3
 
             // Creates a query that retrieves all child accounts of the manager specified in
             // search calls below.
-            const string query = @"SELECT 
-                                    customer_client.client_customer, 
+            const string query = @"SELECT
+                                    customer_client.client_customer,
                                     customer_client.level,
-                                    customer_client.manager, 
+                                    customer_client.manager,
                                     customer_client.descriptive_name,
-                                    customer_client.currency_code, 
+                                    customer_client.currency_code,
                                     customer_client.time_zone,
-                                    customer_client.id 
-                                FROM customer_client 
-                                WHERE 
+                                    customer_client.id
+                                FROM customer_client
+                                WHERE
                                     customer_client.level <= 1";
 
             foreach (long seedCustomerId in seedCustomerIds)
@@ -224,7 +224,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // Recursively call this function for all child accounts of $customerClient.
             if (customerIdsToChildAccounts.ContainsKey(customerId))
                 foreach (CustomerClient childAccount in customerIdsToChildAccounts[customerId])
-                    PrintAccountHierarchy(childAccount, customerIdsToChildAccounts, 
+                    PrintAccountHierarchy(childAccount, customerIdsToChildAccounts,
                         depth + 1);
         }
     }

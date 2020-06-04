@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,352 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V2.Common;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdGroupServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdGroupServiceClientTest
     {
+        [Test]
+        public void GetAdGroupRequestObject()
+        {
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupRequest request = new GetAdGroupRequest
+            {
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+            };
+            gagvr::AdGroup expectedResponse = new gagvr::AdGroup
+            {
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Id = -6774108720365892680L,
+                AdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::AdGroupStatusEnum.Types.AdGroupStatus.Removed,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Type = gagve::AdGroupTypeEnum.Types.AdGroupType.VideoOutstream,
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CpcBidMicros = 7321761304249472746L,
+                CpmBidMicros = -6938481569984464040L,
+                CpvBidMicros = 3393527949878021854L,
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PercentCpcBidMicros = 3342096754779167220L,
+                ExplorerAutoOptimizerSetting = new gagvc::ExplorerAutoOptimizerSetting(),
+                AdRotationMode = gagve::AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified,
+                DisplayCustomBidDimension = gagve::TargetingDimensionEnum.Types.TargetingDimension.AgeRange,
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                TargetingSetting = new gagvc::TargetingSetting(),
+                TargetCpmMicros = 2683842186664132327L,
+                TargetCpaMicros = 5263516020894046876L,
+                EffectiveTargetCpaMicros = 9173558632194584770L,
+                EffectiveTargetCpaSource = gagve::BiddingSourceEnum.Types.BiddingSource.Unknown,
+                TargetRoas = 1.0830159587289216E+18,
+                EffectiveTargetRoas = -5.789428044530098E+17,
+                EffectiveTargetRoasSource = gagve::BiddingSourceEnum.Types.BiddingSource.AdGroupCriterion,
+                LabelsAsAdGroupLabelNames =
+                {
+                    gagvr::AdGroupLabelName.FromCustomerAdGroupLabel("[CUSTOMER]", "[AD_GROUP_LABEL]"),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroup response = client.GetAdGroup(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdGroupRequestObjectAsync()
+        {
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupRequest request = new GetAdGroupRequest
+            {
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+            };
+            gagvr::AdGroup expectedResponse = new gagvr::AdGroup
+            {
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Id = -6774108720365892680L,
+                AdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::AdGroupStatusEnum.Types.AdGroupStatus.Removed,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Type = gagve::AdGroupTypeEnum.Types.AdGroupType.VideoOutstream,
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CpcBidMicros = 7321761304249472746L,
+                CpmBidMicros = -6938481569984464040L,
+                CpvBidMicros = 3393527949878021854L,
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PercentCpcBidMicros = 3342096754779167220L,
+                ExplorerAutoOptimizerSetting = new gagvc::ExplorerAutoOptimizerSetting(),
+                AdRotationMode = gagve::AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified,
+                DisplayCustomBidDimension = gagve::TargetingDimensionEnum.Types.TargetingDimension.AgeRange,
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                TargetingSetting = new gagvc::TargetingSetting(),
+                TargetCpmMicros = 2683842186664132327L,
+                TargetCpaMicros = 5263516020894046876L,
+                EffectiveTargetCpaMicros = 9173558632194584770L,
+                EffectiveTargetCpaSource = gagve::BiddingSourceEnum.Types.BiddingSource.Unknown,
+                TargetRoas = 1.0830159587289216E+18,
+                EffectiveTargetRoas = -5.789428044530098E+17,
+                EffectiveTargetRoasSource = gagve::BiddingSourceEnum.Types.BiddingSource.AdGroupCriterion,
+                LabelsAsAdGroupLabelNames =
+                {
+                    gagvr::AdGroupLabelName.FromCustomerAdGroupLabel("[CUSTOMER]", "[AD_GROUP_LABEL]"),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroup>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroup responseCallSettings = await client.GetAdGroupAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroup responseCancellationToken = await client.GetAdGroupAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAdGroup()
         {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
-            GetAdGroupRequest expectedRequest = new GetAdGroupRequest
-            {
-                ResourceName = new AdGroupName("[CUSTOMER]", "[AD_GROUP]").ToString(),
-            };
-            AdGroup expectedResponse = new AdGroup
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroup(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupName("[CUSTOMER]", "[AD_GROUP]").ToString();
-            AdGroup response = client.GetAdGroup(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdGroupAsync()
-        {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
-            GetAdGroupRequest expectedRequest = new GetAdGroupRequest
-            {
-                ResourceName = new AdGroupName("[CUSTOMER]", "[AD_GROUP]").ToString(),
-            };
-            AdGroup expectedResponse = new AdGroup
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroup>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupName("[CUSTOMER]", "[AD_GROUP]").ToString();
-            AdGroup response = await client.GetAdGroupAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAdGroup2()
-        {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupRequest request = new GetAdGroupRequest
             {
-                ResourceName = new AdGroupName("[CUSTOMER]", "[AD_GROUP]").ToString(),
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
             };
-            AdGroup expectedResponse = new AdGroup
+            gagvr::AdGroup expectedResponse = new gagvr::AdGroup
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Id = -6774108720365892680L,
+                AdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::AdGroupStatusEnum.Types.AdGroupStatus.Removed,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Type = gagve::AdGroupTypeEnum.Types.AdGroupType.VideoOutstream,
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CpcBidMicros = 7321761304249472746L,
+                CpmBidMicros = -6938481569984464040L,
+                CpvBidMicros = 3393527949878021854L,
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PercentCpcBidMicros = 3342096754779167220L,
+                ExplorerAutoOptimizerSetting = new gagvc::ExplorerAutoOptimizerSetting(),
+                AdRotationMode = gagve::AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified,
+                DisplayCustomBidDimension = gagve::TargetingDimensionEnum.Types.TargetingDimension.AgeRange,
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                TargetingSetting = new gagvc::TargetingSetting(),
+                TargetCpmMicros = 2683842186664132327L,
+                TargetCpaMicros = 5263516020894046876L,
+                EffectiveTargetCpaMicros = 9173558632194584770L,
+                EffectiveTargetCpaSource = gagve::BiddingSourceEnum.Types.BiddingSource.Unknown,
+                TargetRoas = 1.0830159587289216E+18,
+                EffectiveTargetRoas = -5.789428044530098E+17,
+                EffectiveTargetRoasSource = gagve::BiddingSourceEnum.Types.BiddingSource.AdGroupCriterion,
+                LabelsAsAdGroupLabelNames =
+                {
+                    gagvr::AdGroupLabelName.FromCustomerAdGroupLabel("[CUSTOMER]", "[AD_GROUP_LABEL]"),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetAdGroup(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAdGroup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroup response = client.GetAdGroup(request);
+            gagvr::AdGroup response = client.GetAdGroup(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdGroupAsync2()
+        public async stt::Task GetAdGroupAsync()
         {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupRequest request = new GetAdGroupRequest
             {
-                ResourceName = new AdGroupName("[CUSTOMER]", "[AD_GROUP]").ToString(),
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
             };
-            AdGroup expectedResponse = new AdGroup
+            gagvr::AdGroup expectedResponse = new gagvr::AdGroup
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Id = -6774108720365892680L,
+                AdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::AdGroupStatusEnum.Types.AdGroupStatus.Removed,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Type = gagve::AdGroupTypeEnum.Types.AdGroupType.VideoOutstream,
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CpcBidMicros = 7321761304249472746L,
+                CpmBidMicros = -6938481569984464040L,
+                CpvBidMicros = 3393527949878021854L,
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PercentCpcBidMicros = 3342096754779167220L,
+                ExplorerAutoOptimizerSetting = new gagvc::ExplorerAutoOptimizerSetting(),
+                AdRotationMode = gagve::AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified,
+                DisplayCustomBidDimension = gagve::TargetingDimensionEnum.Types.TargetingDimension.AgeRange,
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                TargetingSetting = new gagvc::TargetingSetting(),
+                TargetCpmMicros = 2683842186664132327L,
+                TargetCpaMicros = 5263516020894046876L,
+                EffectiveTargetCpaMicros = 9173558632194584770L,
+                EffectiveTargetCpaSource = gagve::BiddingSourceEnum.Types.BiddingSource.Unknown,
+                TargetRoas = 1.0830159587289216E+18,
+                EffectiveTargetRoas = -5.789428044530098E+17,
+                EffectiveTargetRoasSource = gagve::BiddingSourceEnum.Types.BiddingSource.AdGroupCriterion,
+                LabelsAsAdGroupLabelNames =
+                {
+                    gagvr::AdGroupLabelName.FromCustomerAdGroupLabel("[CUSTOMER]", "[AD_GROUP_LABEL]"),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroup>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdGroupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroup>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroup response = await client.GetAdGroupAsync(request);
+            gagvr::AdGroup responseCallSettings = await client.GetAdGroupAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroup responseCancellationToken = await client.GetAdGroupAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdGroupResourceNames()
+        {
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupRequest request = new GetAdGroupRequest
+            {
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+            };
+            gagvr::AdGroup expectedResponse = new gagvr::AdGroup
+            {
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Id = -6774108720365892680L,
+                AdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::AdGroupStatusEnum.Types.AdGroupStatus.Removed,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Type = gagve::AdGroupTypeEnum.Types.AdGroupType.VideoOutstream,
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CpcBidMicros = 7321761304249472746L,
+                CpmBidMicros = -6938481569984464040L,
+                CpvBidMicros = 3393527949878021854L,
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PercentCpcBidMicros = 3342096754779167220L,
+                ExplorerAutoOptimizerSetting = new gagvc::ExplorerAutoOptimizerSetting(),
+                AdRotationMode = gagve::AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified,
+                DisplayCustomBidDimension = gagve::TargetingDimensionEnum.Types.TargetingDimension.AgeRange,
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                TargetingSetting = new gagvc::TargetingSetting(),
+                TargetCpmMicros = 2683842186664132327L,
+                TargetCpaMicros = 5263516020894046876L,
+                EffectiveTargetCpaMicros = 9173558632194584770L,
+                EffectiveTargetCpaSource = gagve::BiddingSourceEnum.Types.BiddingSource.Unknown,
+                TargetRoas = 1.0830159587289216E+18,
+                EffectiveTargetRoas = -5.789428044530098E+17,
+                EffectiveTargetRoasSource = gagve::BiddingSourceEnum.Types.BiddingSource.AdGroupCriterion,
+                LabelsAsAdGroupLabelNames =
+                {
+                    gagvr::AdGroupLabelName.FromCustomerAdGroupLabel("[CUSTOMER]", "[AD_GROUP_LABEL]"),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroup response = client.GetAdGroup(request.ResourceNameAsAdGroupName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateAdGroups()
+        public async stt::Task GetAdGroupResourceNamesAsync()
         {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
-            MutateAdGroupsRequest expectedRequest = new MutateAdGroupsRequest
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupRequest request = new GetAdGroupRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
             };
-            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroups(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::AdGroup expectedResponse = new gagvr::AdGroup
+            {
+                ResourceNameAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Id = -6774108720365892680L,
+                AdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                Status = gagve::AdGroupStatusEnum.Types.AdGroupStatus.Removed,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                Type = gagve::AdGroupTypeEnum.Types.AdGroupType.VideoOutstream,
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CpcBidMicros = 7321761304249472746L,
+                CpmBidMicros = -6938481569984464040L,
+                CpvBidMicros = 3393527949878021854L,
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PercentCpcBidMicros = 3342096754779167220L,
+                ExplorerAutoOptimizerSetting = new gagvc::ExplorerAutoOptimizerSetting(),
+                AdRotationMode = gagve::AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified,
+                DisplayCustomBidDimension = gagve::TargetingDimensionEnum.Types.TargetingDimension.AgeRange,
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                TargetingSetting = new gagvc::TargetingSetting(),
+                TargetCpmMicros = 2683842186664132327L,
+                TargetCpaMicros = 5263516020894046876L,
+                EffectiveTargetCpaMicros = 9173558632194584770L,
+                EffectiveTargetCpaSource = gagve::BiddingSourceEnum.Types.BiddingSource.Unknown,
+                TargetRoas = 1.0830159587289216E+18,
+                EffectiveTargetRoas = -5.789428044530098E+17,
+                EffectiveTargetRoasSource = gagve::BiddingSourceEnum.Types.BiddingSource.AdGroupCriterion,
+                LabelsAsAdGroupLabelNames =
+                {
+                    gagvr::AdGroupLabelName.FromCustomerAdGroupLabel("[CUSTOMER]", "[AD_GROUP_LABEL]"),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroup>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupOperation> operations = new List<AdGroupOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdGroupsResponse response = client.MutateAdGroups(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::AdGroup responseCallSettings = await client.GetAdGroupAsync(request.ResourceNameAsAdGroupName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroup responseCancellationToken = await client.GetAdGroupAsync(request.ResourceNameAsAdGroupName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateAdGroupsAsync()
+        public void MutateAdGroupsRequestObject()
         {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
-            MutateAdGroupsRequest expectedRequest = new MutateAdGroupsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupOperation> operations = new List<AdGroupOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdGroupsResponse response = await client.MutateAdGroupsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdGroups2()
-        {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
-            MutateAdGroupsRequest expectedRequest = new MutateAdGroupsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroups(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupOperation> operations = new List<AdGroupOperation>();
-            MutateAdGroupsResponse response = client.MutateAdGroups(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateAdGroupsAsync2()
-        {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
-            MutateAdGroupsRequest expectedRequest = new MutateAdGroupsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupOperation> operations = new List<AdGroupOperation>();
-            MutateAdGroupsResponse response = await client.MutateAdGroupsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdGroups3()
-        {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
             MutateAdGroupsRequest request = new MutateAdGroupsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroups(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroups(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
             MutateAdGroupsResponse response = client.MutateAdGroups(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +367,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateAdGroupsAsync3()
+        public async stt::Task MutateAdGroupsRequestObjectAsync()
         {
-            Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new Mock<AdGroupService.AdGroupServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
             MutateAdGroupsRequest request = new MutateAdGroupsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
-            MutateAdGroupsResponse response = await client.MutateAdGroupsAsync(request);
+            MutateAdGroupsResponse responseCallSettings = await client.MutateAdGroupsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdGroupsResponse responseCancellationToken = await client.MutateAdGroupsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateAdGroups()
+        {
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
+            MutateAdGroupsRequest request = new MutateAdGroupsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupOperation(),
+                },
+            };
+            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroups(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdGroupsResponse response = client.MutateAdGroups(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateAdGroupsAsync()
+        {
+            moq::Mock<AdGroupService.AdGroupServiceClient> mockGrpcClient = new moq::Mock<AdGroupService.AdGroupServiceClient>(moq::MockBehavior.Strict);
+            MutateAdGroupsRequest request = new MutateAdGroupsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupOperation(),
+                },
+            };
+            MutateAdGroupsResponse expectedResponse = new MutateAdGroupsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupServiceClient client = new AdGroupServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdGroupsResponse responseCallSettings = await client.MutateAdGroupsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdGroupsResponse responseCancellationToken = await client.MutateAdGroupsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

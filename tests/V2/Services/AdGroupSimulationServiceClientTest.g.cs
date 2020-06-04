@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,188 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V2.Common;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdGroupSimulationServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdGroupSimulationServiceClientTest
     {
+        [Test]
+        public void GetAdGroupSimulationRequestObject()
+        {
+            moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupSimulationRequest request = new GetAdGroupSimulationRequest
+            {
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+            };
+            gagvr::AdGroupSimulation expectedResponse = new gagvr::AdGroupSimulation
+            {
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+                AdGroupId = -2072405675042603230L,
+                Type = gagve::SimulationTypeEnum.Types.SimulationType.CpvBid,
+                ModificationMethod = gagve::SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unknown,
+                StartDate = "start_date11b9dbea",
+                EndDate = "end_date89dae890",
+                CpcBidPointList = new gagvc::CpcBidSimulationPointList(),
+                TargetCpaPointList = new gagvc::TargetCpaSimulationPointList(),
+                CpvBidPointList = new gagvc::CpvBidSimulationPointList(),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupSimulation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupSimulationServiceClient client = new AdGroupSimulationServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupSimulation response = client.GetAdGroupSimulation(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdGroupSimulationRequestObjectAsync()
+        {
+            moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupSimulationRequest request = new GetAdGroupSimulationRequest
+            {
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+            };
+            gagvr::AdGroupSimulation expectedResponse = new gagvr::AdGroupSimulation
+            {
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+                AdGroupId = -2072405675042603230L,
+                Type = gagve::SimulationTypeEnum.Types.SimulationType.CpvBid,
+                ModificationMethod = gagve::SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unknown,
+                StartDate = "start_date11b9dbea",
+                EndDate = "end_date89dae890",
+                CpcBidPointList = new gagvc::CpcBidSimulationPointList(),
+                TargetCpaPointList = new gagvc::TargetCpaSimulationPointList(),
+                CpvBidPointList = new gagvc::CpvBidSimulationPointList(),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupSimulationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupSimulation>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupSimulationServiceClient client = new AdGroupSimulationServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupSimulation responseCallSettings = await client.GetAdGroupSimulationAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupSimulation responseCancellationToken = await client.GetAdGroupSimulationAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAdGroupSimulation()
         {
-            Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(MockBehavior.Strict);
-            GetAdGroupSimulationRequest expectedRequest = new GetAdGroupSimulationRequest
-            {
-                ResourceName = new AdGroupSimulationName("[CUSTOMER]", "[AD_GROUP_SIMULATION]").ToString(),
-            };
-            AdGroupSimulation expectedResponse = new AdGroupSimulation
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupSimulation(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupSimulationServiceClient client = new AdGroupSimulationServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupSimulationName("[CUSTOMER]", "[AD_GROUP_SIMULATION]").ToString();
-            AdGroupSimulation response = client.GetAdGroupSimulation(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdGroupSimulationAsync()
-        {
-            Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(MockBehavior.Strict);
-            GetAdGroupSimulationRequest expectedRequest = new GetAdGroupSimulationRequest
-            {
-                ResourceName = new AdGroupSimulationName("[CUSTOMER]", "[AD_GROUP_SIMULATION]").ToString(),
-            };
-            AdGroupSimulation expectedResponse = new AdGroupSimulation
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupSimulationAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupSimulation>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupSimulationServiceClient client = new AdGroupSimulationServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupSimulationName("[CUSTOMER]", "[AD_GROUP_SIMULATION]").ToString();
-            AdGroupSimulation response = await client.GetAdGroupSimulationAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAdGroupSimulation2()
-        {
-            Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupSimulationRequest request = new GetAdGroupSimulationRequest
             {
-                ResourceName = new AdGroupSimulationName("[CUSTOMER]", "[AD_GROUP_SIMULATION]").ToString(),
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
             };
-            AdGroupSimulation expectedResponse = new AdGroupSimulation
+            gagvr::AdGroupSimulation expectedResponse = new gagvr::AdGroupSimulation
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+                AdGroupId = -2072405675042603230L,
+                Type = gagve::SimulationTypeEnum.Types.SimulationType.CpvBid,
+                ModificationMethod = gagve::SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unknown,
+                StartDate = "start_date11b9dbea",
+                EndDate = "end_date89dae890",
+                CpcBidPointList = new gagvc::CpcBidSimulationPointList(),
+                TargetCpaPointList = new gagvc::TargetCpaSimulationPointList(),
+                CpvBidPointList = new gagvc::CpvBidSimulationPointList(),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupSimulation(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAdGroupSimulation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupSimulationServiceClient client = new AdGroupSimulationServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupSimulation response = client.GetAdGroupSimulation(request);
+            gagvr::AdGroupSimulation response = client.GetAdGroupSimulation(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdGroupSimulationAsync2()
+        public async stt::Task GetAdGroupSimulationAsync()
         {
-            Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupSimulationRequest request = new GetAdGroupSimulationRequest
             {
-                ResourceName = new AdGroupSimulationName("[CUSTOMER]", "[AD_GROUP_SIMULATION]").ToString(),
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
             };
-            AdGroupSimulation expectedResponse = new AdGroupSimulation
+            gagvr::AdGroupSimulation expectedResponse = new gagvr::AdGroupSimulation
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+                AdGroupId = -2072405675042603230L,
+                Type = gagve::SimulationTypeEnum.Types.SimulationType.CpvBid,
+                ModificationMethod = gagve::SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unknown,
+                StartDate = "start_date11b9dbea",
+                EndDate = "end_date89dae890",
+                CpcBidPointList = new gagvc::CpcBidSimulationPointList(),
+                TargetCpaPointList = new gagvc::TargetCpaSimulationPointList(),
+                CpvBidPointList = new gagvc::CpvBidSimulationPointList(),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupSimulationAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupSimulation>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdGroupSimulationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupSimulation>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupSimulationServiceClient client = new AdGroupSimulationServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupSimulation response = await client.GetAdGroupSimulationAsync(request);
+            gagvr::AdGroupSimulation responseCallSettings = await client.GetAdGroupSimulationAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupSimulation responseCancellationToken = await client.GetAdGroupSimulationAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdGroupSimulationResourceNames()
+        {
+            moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupSimulationRequest request = new GetAdGroupSimulationRequest
+            {
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+            };
+            gagvr::AdGroupSimulation expectedResponse = new gagvr::AdGroupSimulation
+            {
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+                AdGroupId = -2072405675042603230L,
+                Type = gagve::SimulationTypeEnum.Types.SimulationType.CpvBid,
+                ModificationMethod = gagve::SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unknown,
+                StartDate = "start_date11b9dbea",
+                EndDate = "end_date89dae890",
+                CpcBidPointList = new gagvc::CpcBidSimulationPointList(),
+                TargetCpaPointList = new gagvc::TargetCpaSimulationPointList(),
+                CpvBidPointList = new gagvc::CpvBidSimulationPointList(),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupSimulation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupSimulationServiceClient client = new AdGroupSimulationServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupSimulation response = client.GetAdGroupSimulation(request.ResourceNameAsAdGroupSimulationName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetAdGroupSimulationResourceNamesAsync()
+        {
+            moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient> mockGrpcClient = new moq::Mock<AdGroupSimulationService.AdGroupSimulationServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupSimulationRequest request = new GetAdGroupSimulationRequest
+            {
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+            };
+            gagvr::AdGroupSimulation expectedResponse = new gagvr::AdGroupSimulation
+            {
+                ResourceNameAsAdGroupSimulationName = gagvr::AdGroupSimulationName.FromCustomerAdGroupSimulation("[CUSTOMER]", "[AD_GROUP_SIMULATION]"),
+                AdGroupId = -2072405675042603230L,
+                Type = gagve::SimulationTypeEnum.Types.SimulationType.CpvBid,
+                ModificationMethod = gagve::SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unknown,
+                StartDate = "start_date11b9dbea",
+                EndDate = "end_date89dae890",
+                CpcBidPointList = new gagvc::CpcBidSimulationPointList(),
+                TargetCpaPointList = new gagvc::TargetCpaSimulationPointList(),
+                CpvBidPointList = new gagvc::CpvBidSimulationPointList(),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupSimulationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupSimulation>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupSimulationServiceClient client = new AdGroupSimulationServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupSimulation responseCallSettings = await client.GetAdGroupSimulationAsync(request.ResourceNameAsAdGroupSimulationName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupSimulation responseCancellationToken = await client.GetAdGroupSimulationAsync(request.ResourceNameAsAdGroupSimulationName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

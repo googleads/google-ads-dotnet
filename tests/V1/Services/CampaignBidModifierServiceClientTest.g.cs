@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,189 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V1.Common;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCampaignBidModifierServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCampaignBidModifierServiceClientTest
     {
+        [Test]
+        public void GetCampaignBidModifierRequestObject()
+        {
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignBidModifierRequest request = new GetCampaignBidModifierRequest
+            {
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
+            };
+            gagvr::CampaignBidModifier expectedResponse = new gagvr::CampaignBidModifier
+            {
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                InteractionType = new gagvc::InteractionTypeInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignBidModifier(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignBidModifier response = client.GetCampaignBidModifier(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCampaignBidModifierRequestObjectAsync()
+        {
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignBidModifierRequest request = new GetCampaignBidModifierRequest
+            {
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
+            };
+            gagvr::CampaignBidModifier expectedResponse = new gagvr::CampaignBidModifier
+            {
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                InteractionType = new gagvc::InteractionTypeInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignBidModifierAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignBidModifier>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignBidModifier responseCallSettings = await client.GetCampaignBidModifierAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignBidModifier responseCancellationToken = await client.GetCampaignBidModifierAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCampaignBidModifier()
         {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
-            GetCampaignBidModifierRequest expectedRequest = new GetCampaignBidModifierRequest
-            {
-                ResourceName = new CampaignBidModifierName("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]").ToString(),
-            };
-            CampaignBidModifier expectedResponse = new CampaignBidModifier
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignBidModifier(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignBidModifierName("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]").ToString();
-            CampaignBidModifier response = client.GetCampaignBidModifier(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCampaignBidModifierAsync()
-        {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
-            GetCampaignBidModifierRequest expectedRequest = new GetCampaignBidModifierRequest
-            {
-                ResourceName = new CampaignBidModifierName("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]").ToString(),
-            };
-            CampaignBidModifier expectedResponse = new CampaignBidModifier
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignBidModifierAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignBidModifier>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignBidModifierName("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]").ToString();
-            CampaignBidModifier response = await client.GetCampaignBidModifierAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCampaignBidModifier2()
-        {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
             GetCampaignBidModifierRequest request = new GetCampaignBidModifierRequest
             {
-                ResourceName = new CampaignBidModifierName("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]").ToString(),
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
             };
-            CampaignBidModifier expectedResponse = new CampaignBidModifier
+            gagvr::CampaignBidModifier expectedResponse = new gagvr::CampaignBidModifier
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                InteractionType = new gagvc::InteractionTypeInfo(),
             };
-            mockGrpcClient.Setup(x => x.GetCampaignBidModifier(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCampaignBidModifier(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignBidModifier response = client.GetCampaignBidModifier(request);
+            gagvr::CampaignBidModifier response = client.GetCampaignBidModifier(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCampaignBidModifierAsync2()
+        public async stt::Task GetCampaignBidModifierAsync()
         {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
             GetCampaignBidModifierRequest request = new GetCampaignBidModifierRequest
             {
-                ResourceName = new CampaignBidModifierName("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]").ToString(),
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
             };
-            CampaignBidModifier expectedResponse = new CampaignBidModifier
+            gagvr::CampaignBidModifier expectedResponse = new gagvr::CampaignBidModifier
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                InteractionType = new gagvc::InteractionTypeInfo(),
             };
-            mockGrpcClient.Setup(x => x.GetCampaignBidModifierAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignBidModifier>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCampaignBidModifierAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignBidModifier>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignBidModifier response = await client.GetCampaignBidModifierAsync(request);
+            gagvr::CampaignBidModifier responseCallSettings = await client.GetCampaignBidModifierAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignBidModifier responseCancellationToken = await client.GetCampaignBidModifierAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCampaignBidModifierResourceNames()
+        {
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignBidModifierRequest request = new GetCampaignBidModifierRequest
+            {
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
+            };
+            gagvr::CampaignBidModifier expectedResponse = new gagvr::CampaignBidModifier
+            {
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                InteractionType = new gagvc::InteractionTypeInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignBidModifier(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignBidModifier response = client.GetCampaignBidModifier(request.ResourceNameAsCampaignBidModifierName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCampaignBidModifiers()
+        public async stt::Task GetCampaignBidModifierResourceNamesAsync()
         {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
-            MutateCampaignBidModifiersRequest expectedRequest = new MutateCampaignBidModifiersRequest
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignBidModifierRequest request = new GetCampaignBidModifierRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
             };
-            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiers(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CampaignBidModifier expectedResponse = new gagvr::CampaignBidModifier
+            {
+                ResourceNameAsCampaignBidModifierName = gagvr::CampaignBidModifierName.FromCustomerCampaignBidModifier("[CUSTOMER]", "[CAMPAIGN_BID_MODIFIER]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                InteractionType = new gagvc::InteractionTypeInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignBidModifierAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignBidModifier>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignBidModifierOperation> operations = new List<CampaignBidModifierOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignBidModifiersResponse response = client.MutateCampaignBidModifiers(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CampaignBidModifier responseCallSettings = await client.GetCampaignBidModifierAsync(request.ResourceNameAsCampaignBidModifierName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignBidModifier responseCancellationToken = await client.GetCampaignBidModifierAsync(request.ResourceNameAsCampaignBidModifierName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCampaignBidModifiersAsync()
+        public void MutateCampaignBidModifiersRequestObject()
         {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
-            MutateCampaignBidModifiersRequest expectedRequest = new MutateCampaignBidModifiersRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiersAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignBidModifiersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignBidModifierOperation> operations = new List<CampaignBidModifierOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignBidModifiersResponse response = await client.MutateCampaignBidModifiersAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignBidModifiers2()
-        {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
-            MutateCampaignBidModifiersRequest expectedRequest = new MutateCampaignBidModifiersRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiers(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignBidModifierOperation> operations = new List<CampaignBidModifierOperation>();
-            MutateCampaignBidModifiersResponse response = client.MutateCampaignBidModifiers(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCampaignBidModifiersAsync2()
-        {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
-            MutateCampaignBidModifiersRequest expectedRequest = new MutateCampaignBidModifiersRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiersAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignBidModifiersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignBidModifierOperation> operations = new List<CampaignBidModifierOperation>();
-            MutateCampaignBidModifiersResponse response = await client.MutateCampaignBidModifiersAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignBidModifiers3()
-        {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignBidModifiersRequest request = new MutateCampaignBidModifiersRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignBidModifierOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiers(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse
+            {
+                Results =
+                {
+                    new MutateCampaignBidModifierResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiers(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
             MutateCampaignBidModifiersResponse response = client.MutateCampaignBidModifiers(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +204,90 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateCampaignBidModifiersAsync3()
+        public async stt::Task MutateCampaignBidModifiersRequestObjectAsync()
         {
-            Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignBidModifiersRequest request = new MutateCampaignBidModifiersRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignBidModifierOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiersAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignBidModifiersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse
+            {
+                Results =
+                {
+                    new MutateCampaignBidModifierResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignBidModifiersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCampaignBidModifiersResponse response = await client.MutateCampaignBidModifiersAsync(request);
+            MutateCampaignBidModifiersResponse responseCallSettings = await client.MutateCampaignBidModifiersAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignBidModifiersResponse responseCancellationToken = await client.MutateCampaignBidModifiersAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCampaignBidModifiers()
+        {
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignBidModifiersRequest request = new MutateCampaignBidModifiersRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignBidModifierOperation(),
+                },
+            };
+            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse
+            {
+                Results =
+                {
+                    new MutateCampaignBidModifierResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiers(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignBidModifiersResponse response = client.MutateCampaignBidModifiers(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCampaignBidModifiersAsync()
+        {
+            moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient> mockGrpcClient = new moq::Mock<CampaignBidModifierService.CampaignBidModifierServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignBidModifiersRequest request = new MutateCampaignBidModifiersRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignBidModifierOperation(),
+                },
+            };
+            MutateCampaignBidModifiersResponse expectedResponse = new MutateCampaignBidModifiersResponse
+            {
+                Results =
+                {
+                    new MutateCampaignBidModifierResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignBidModifiersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignBidModifiersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignBidModifierServiceClient client = new CampaignBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignBidModifiersResponse responseCallSettings = await client.MutateCampaignBidModifiersAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignBidModifiersResponse responseCancellationToken = await client.MutateCampaignBidModifiersAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }
