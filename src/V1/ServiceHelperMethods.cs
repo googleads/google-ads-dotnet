@@ -31,42 +31,6 @@ namespace Google.Ads.GoogleAds.V1.Services
                 .ResourceNames.ToArray();
         }
     }
-
-    public abstract partial class GeoTargetConstantServiceClient
-    {
-        public virtual SuggestGeoTargetConstantsResponse SuggestGeoTargetConstants(
-            StringValue locale,
-            StringValue countryCode,
-            gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstants(
-                locale.Value, countryCode.Value, callSettings);
-
-        public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
-            StringValue locale,
-            StringValue countryCode,
-            gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstantsAsync(
-                locale.Value, countryCode.Value, callSettings);
-    }
-
-    public abstract partial class KeywordPlanIdeaServiceClient
-    {
-        public virtual GenerateKeywordIdeaResponse GenerateKeywordIdeas(
-            string customerId,
-            StringValue language,
-            scg::IEnumerable<string> geoTargetConstants,
-            gagve::KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork,
-            gaxgrpc::CallSettings callSettings = null) => GenerateKeywordIdeas(
-                customerId, language.Value, geoTargetConstants, keywordPlanNetwork,
-                callSettings);
-
-        public virtual stt::Task<GenerateKeywordIdeaResponse> GenerateKeywordIdeasAsync(
-            string customerId,
-            StringValue language,
-            scg::IEnumerable<string> geoTargetConstants,
-            gagve::KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork,
-            gaxgrpc::CallSettings callSettings = null) => GenerateKeywordIdeasAsync(
-                customerId, language.Value, geoTargetConstants, keywordPlanNetwork,
-                callSettings);
-    }
 }
 
 #pragma warning restore CS1591

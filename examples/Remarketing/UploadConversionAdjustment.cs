@@ -125,7 +125,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 // Issue a request to upload the conversion adjustment.
                 UploadConversionAdjustmentsResponse response =
                     conversionAdjustmentUploadService.UploadConversionAdjustments(
-                        customerId.ToString(), new[] { conversionAdjustment }, true, false);
+                        new UploadConversionAdjustmentsRequest()
+                        {
+                            CustomerId = customerId.ToString(),
+                            ConversionAdjustments = { conversionAdjustment },
+                            PartialFailure = true,
+                            ValidateOnly = false
+                        });
 
                 ConversionAdjustmentResult result = response.Results[0];
                 // Print the result.

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,169 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedOperatingSystemVersionConstantServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedOperatingSystemVersionConstantServiceClientTest
     {
+        [Test]
+        public void GetOperatingSystemVersionConstantRequestObject()
+        {
+            moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(moq::MockBehavior.Strict);
+            GetOperatingSystemVersionConstantRequest request = new GetOperatingSystemVersionConstantRequest
+            {
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+            };
+            gagvr::OperatingSystemVersionConstant expectedResponse = new gagvr::OperatingSystemVersionConstant
+            {
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                Id = -6774108720365892680L,
+                OperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                OsMajorVersion = -1997824152,
+                OsMinorVersion = -1302821028,
+                OperatorType = gagve::OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.EqualsTo,
+            };
+            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            OperatingSystemVersionConstantServiceClient client = new OperatingSystemVersionConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::OperatingSystemVersionConstant response = client.GetOperatingSystemVersionConstant(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetOperatingSystemVersionConstantRequestObjectAsync()
+        {
+            moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(moq::MockBehavior.Strict);
+            GetOperatingSystemVersionConstantRequest request = new GetOperatingSystemVersionConstantRequest
+            {
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+            };
+            gagvr::OperatingSystemVersionConstant expectedResponse = new gagvr::OperatingSystemVersionConstant
+            {
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                Id = -6774108720365892680L,
+                OperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                OsMajorVersion = -1997824152,
+                OsMinorVersion = -1302821028,
+                OperatorType = gagve::OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.EqualsTo,
+            };
+            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::OperatingSystemVersionConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            OperatingSystemVersionConstantServiceClient client = new OperatingSystemVersionConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::OperatingSystemVersionConstant responseCallSettings = await client.GetOperatingSystemVersionConstantAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::OperatingSystemVersionConstant responseCancellationToken = await client.GetOperatingSystemVersionConstantAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetOperatingSystemVersionConstant()
         {
-            Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(MockBehavior.Strict);
-            GetOperatingSystemVersionConstantRequest expectedRequest = new GetOperatingSystemVersionConstantRequest
-            {
-                ResourceName = new OperatingSystemVersionConstantName("[OPERATING_SYSTEM_VERSION_CONSTANT]").ToString(),
-            };
-            OperatingSystemVersionConstant expectedResponse = new OperatingSystemVersionConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstant(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            OperatingSystemVersionConstantServiceClient client = new OperatingSystemVersionConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new OperatingSystemVersionConstantName("[OPERATING_SYSTEM_VERSION_CONSTANT]").ToString();
-            OperatingSystemVersionConstant response = client.GetOperatingSystemVersionConstant(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetOperatingSystemVersionConstantAsync()
-        {
-            Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(MockBehavior.Strict);
-            GetOperatingSystemVersionConstantRequest expectedRequest = new GetOperatingSystemVersionConstantRequest
-            {
-                ResourceName = new OperatingSystemVersionConstantName("[OPERATING_SYSTEM_VERSION_CONSTANT]").ToString(),
-            };
-            OperatingSystemVersionConstant expectedResponse = new OperatingSystemVersionConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstantAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<OperatingSystemVersionConstant>(Task.FromResult(expectedResponse), null, null, null, null));
-            OperatingSystemVersionConstantServiceClient client = new OperatingSystemVersionConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new OperatingSystemVersionConstantName("[OPERATING_SYSTEM_VERSION_CONSTANT]").ToString();
-            OperatingSystemVersionConstant response = await client.GetOperatingSystemVersionConstantAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetOperatingSystemVersionConstant2()
-        {
-            Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(moq::MockBehavior.Strict);
             GetOperatingSystemVersionConstantRequest request = new GetOperatingSystemVersionConstantRequest
             {
-                ResourceName = new OperatingSystemVersionConstantName("[OPERATING_SYSTEM_VERSION_CONSTANT]").ToString(),
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
             };
-            OperatingSystemVersionConstant expectedResponse = new OperatingSystemVersionConstant
+            gagvr::OperatingSystemVersionConstant expectedResponse = new gagvr::OperatingSystemVersionConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                Id = -6774108720365892680L,
+                OperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                OsMajorVersion = -1997824152,
+                OsMinorVersion = -1302821028,
+                OperatorType = gagve::OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.EqualsTo,
             };
-            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstant(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             OperatingSystemVersionConstantServiceClient client = new OperatingSystemVersionConstantServiceClientImpl(mockGrpcClient.Object, null);
-            OperatingSystemVersionConstant response = client.GetOperatingSystemVersionConstant(request);
+            gagvr::OperatingSystemVersionConstant response = client.GetOperatingSystemVersionConstant(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetOperatingSystemVersionConstantAsync2()
+        public async stt::Task GetOperatingSystemVersionConstantAsync()
         {
-            Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(moq::MockBehavior.Strict);
             GetOperatingSystemVersionConstantRequest request = new GetOperatingSystemVersionConstantRequest
             {
-                ResourceName = new OperatingSystemVersionConstantName("[OPERATING_SYSTEM_VERSION_CONSTANT]").ToString(),
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
             };
-            OperatingSystemVersionConstant expectedResponse = new OperatingSystemVersionConstant
+            gagvr::OperatingSystemVersionConstant expectedResponse = new gagvr::OperatingSystemVersionConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                Id = -6774108720365892680L,
+                OperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                OsMajorVersion = -1997824152,
+                OsMinorVersion = -1302821028,
+                OperatorType = gagve::OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.EqualsTo,
             };
-            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstantAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<OperatingSystemVersionConstant>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::OperatingSystemVersionConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             OperatingSystemVersionConstantServiceClient client = new OperatingSystemVersionConstantServiceClientImpl(mockGrpcClient.Object, null);
-            OperatingSystemVersionConstant response = await client.GetOperatingSystemVersionConstantAsync(request);
+            gagvr::OperatingSystemVersionConstant responseCallSettings = await client.GetOperatingSystemVersionConstantAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::OperatingSystemVersionConstant responseCancellationToken = await client.GetOperatingSystemVersionConstantAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetOperatingSystemVersionConstantResourceNames()
+        {
+            moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(moq::MockBehavior.Strict);
+            GetOperatingSystemVersionConstantRequest request = new GetOperatingSystemVersionConstantRequest
+            {
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+            };
+            gagvr::OperatingSystemVersionConstant expectedResponse = new gagvr::OperatingSystemVersionConstant
+            {
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                Id = -6774108720365892680L,
+                OperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                OsMajorVersion = -1997824152,
+                OsMinorVersion = -1302821028,
+                OperatorType = gagve::OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.EqualsTo,
+            };
+            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            OperatingSystemVersionConstantServiceClient client = new OperatingSystemVersionConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::OperatingSystemVersionConstant response = client.GetOperatingSystemVersionConstant(request.ResourceNameAsOperatingSystemVersionConstantName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetOperatingSystemVersionConstantResourceNamesAsync()
+        {
+            moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient> mockGrpcClient = new moq::Mock<OperatingSystemVersionConstantService.OperatingSystemVersionConstantServiceClient>(moq::MockBehavior.Strict);
+            GetOperatingSystemVersionConstantRequest request = new GetOperatingSystemVersionConstantRequest
+            {
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+            };
+            gagvr::OperatingSystemVersionConstant expectedResponse = new gagvr::OperatingSystemVersionConstant
+            {
+                ResourceNameAsOperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                Id = -6774108720365892680L,
+                OperatingSystemVersionConstantName = gagvr::OperatingSystemVersionConstantName.FromOperatingSystemVersionConstant("[OPERATING_SYSTEM_VERSION_CONSTANT]"),
+                OsMajorVersion = -1997824152,
+                OsMinorVersion = -1302821028,
+                OperatorType = gagve::OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.EqualsTo,
+            };
+            mockGrpcClient.Setup(x => x.GetOperatingSystemVersionConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::OperatingSystemVersionConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            OperatingSystemVersionConstantServiceClient client = new OperatingSystemVersionConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::OperatingSystemVersionConstant responseCallSettings = await client.GetOperatingSystemVersionConstantAsync(request.ResourceNameAsOperatingSystemVersionConstantName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::OperatingSystemVersionConstant responseCancellationToken = await client.GetOperatingSystemVersionConstantAsync(request.ResourceNameAsOperatingSystemVersionConstantName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

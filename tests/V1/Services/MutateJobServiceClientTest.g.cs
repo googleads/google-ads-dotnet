@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,89 +14,36 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.LongRunning;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using lro = Google.LongRunning;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedMutateJobServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedMutateJobServiceClientTest
     {
         [Test]
-        public void CreateMutateJob()
+        public void CreateMutateJobRequestObject()
         {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            CreateMutateJobRequest expectedRequest = new CreateMutateJobRequest
-            {
-                CustomerId = "customerId-1772061412",
-            };
-            CreateMutateJobResponse expectedResponse = new CreateMutateJobResponse
-            {
-                ResourceName = "resourceName979421212",
-            };
-            mockGrpcClient.Setup(x => x.CreateMutateJob(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            CreateMutateJobResponse response = client.CreateMutateJob(customerId);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task CreateMutateJobAsync()
-        {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            CreateMutateJobRequest expectedRequest = new CreateMutateJobRequest
-            {
-                CustomerId = "customerId-1772061412",
-            };
-            CreateMutateJobResponse expectedResponse = new CreateMutateJobResponse
-            {
-                ResourceName = "resourceName979421212",
-            };
-            mockGrpcClient.Setup(x => x.CreateMutateJobAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CreateMutateJobResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            CreateMutateJobResponse response = await client.CreateMutateJobAsync(customerId);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void CreateMutateJob2()
-        {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             CreateMutateJobRequest request = new CreateMutateJobRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
             };
             CreateMutateJobResponse expectedResponse = new CreateMutateJobResponse
             {
-                ResourceName = "resourceName979421212",
+                ResourceName = "resource_name8cc2e687",
             };
-            mockGrpcClient.Setup(x => x.CreateMutateJob(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.CreateMutateJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
             CreateMutateJobResponse response = client.CreateMutateJob(request);
             Assert.AreEqual(expectedResponse, response);
@@ -104,192 +51,245 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task CreateMutateJobAsync2()
+        public async stt::Task CreateMutateJobRequestObjectAsync()
         {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             CreateMutateJobRequest request = new CreateMutateJobRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
             };
             CreateMutateJobResponse expectedResponse = new CreateMutateJobResponse
             {
-                ResourceName = "resourceName979421212",
+                ResourceName = "resource_name8cc2e687",
             };
-            mockGrpcClient.Setup(x => x.CreateMutateJobAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CreateMutateJobResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.CreateMutateJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateMutateJobResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            CreateMutateJobResponse response = await client.CreateMutateJobAsync(request);
+            CreateMutateJobResponse responseCallSettings = await client.CreateMutateJobAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            CreateMutateJobResponse responseCancellationToken = await client.CreateMutateJobAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void CreateMutateJob()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            CreateMutateJobRequest request = new CreateMutateJobRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+            };
+            CreateMutateJobResponse expectedResponse = new CreateMutateJobResponse
+            {
+                ResourceName = "resource_name8cc2e687",
+            };
+            mockGrpcClient.Setup(x => x.CreateMutateJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            CreateMutateJobResponse response = client.CreateMutateJob(request.CustomerId);
             Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task CreateMutateJobAsync()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            CreateMutateJobRequest request = new CreateMutateJobRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+            };
+            CreateMutateJobResponse expectedResponse = new CreateMutateJobResponse
+            {
+                ResourceName = "resource_name8cc2e687",
+            };
+            mockGrpcClient.Setup(x => x.CreateMutateJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateMutateJobResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            CreateMutateJobResponse responseCallSettings = await client.CreateMutateJobAsync(request.CustomerId, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            CreateMutateJobResponse responseCancellationToken = await client.CreateMutateJobAsync(request.CustomerId, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetMutateJobRequestObject()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetMutateJobRequest request = new GetMutateJobRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+            };
+            gagvr::MutateJob expectedResponse = new gagvr::MutateJob
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                Id = -6774108720365892680L,
+                NextAddSequenceToken = "next_add_sequence_token93fee49d",
+                Metadata = new gagvr::MutateJob.Types.MutateJobMetadata(),
+                Status = gagve::MutateJobStatusEnum.Types.MutateJobStatus.Done,
+                LongRunningOperation = "long_running_operation0897bd41",
+            };
+            mockGrpcClient.Setup(x => x.GetMutateJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MutateJob response = client.GetMutateJob(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetMutateJobRequestObjectAsync()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetMutateJobRequest request = new GetMutateJobRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+            };
+            gagvr::MutateJob expectedResponse = new gagvr::MutateJob
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                Id = -6774108720365892680L,
+                NextAddSequenceToken = "next_add_sequence_token93fee49d",
+                Metadata = new gagvr::MutateJob.Types.MutateJobMetadata(),
+                Status = gagve::MutateJobStatusEnum.Types.MutateJobStatus.Done,
+                LongRunningOperation = "long_running_operation0897bd41",
+            };
+            mockGrpcClient.Setup(x => x.GetMutateJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MutateJob>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MutateJob responseCallSettings = await client.GetMutateJobAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MutateJob responseCancellationToken = await client.GetMutateJobAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
         public void GetMutateJob()
         {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            GetMutateJobRequest expectedRequest = new GetMutateJobRequest
-            {
-                ResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString(),
-            };
-            MutateJob expectedResponse = new MutateJob
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMutateJob(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString();
-            MutateJob response = client.GetMutateJob(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetMutateJobAsync()
-        {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            GetMutateJobRequest expectedRequest = new GetMutateJobRequest
-            {
-                ResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString(),
-            };
-            MutateJob expectedResponse = new MutateJob
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMutateJobAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateJob>(Task.FromResult(expectedResponse), null, null, null, null));
-            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString();
-            MutateJob response = await client.GetMutateJobAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetMutateJob2()
-        {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             GetMutateJobRequest request = new GetMutateJobRequest
             {
-                ResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString(),
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
             };
-            MutateJob expectedResponse = new MutateJob
+            gagvr::MutateJob expectedResponse = new gagvr::MutateJob
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                Id = -6774108720365892680L,
+                NextAddSequenceToken = "next_add_sequence_token93fee49d",
+                Metadata = new gagvr::MutateJob.Types.MutateJobMetadata(),
+                Status = gagve::MutateJobStatusEnum.Types.MutateJobStatus.Done,
+                LongRunningOperation = "long_running_operation0897bd41",
             };
-            mockGrpcClient.Setup(x => x.GetMutateJob(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetMutateJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            MutateJob response = client.GetMutateJob(request);
+            gagvr::MutateJob response = client.GetMutateJob(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetMutateJobAsync2()
+        public async stt::Task GetMutateJobAsync()
         {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             GetMutateJobRequest request = new GetMutateJobRequest
             {
-                ResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString(),
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
             };
-            MutateJob expectedResponse = new MutateJob
+            gagvr::MutateJob expectedResponse = new gagvr::MutateJob
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                Id = -6774108720365892680L,
+                NextAddSequenceToken = "next_add_sequence_token93fee49d",
+                Metadata = new gagvr::MutateJob.Types.MutateJobMetadata(),
+                Status = gagve::MutateJobStatusEnum.Types.MutateJobStatus.Done,
+                LongRunningOperation = "long_running_operation0897bd41",
             };
-            mockGrpcClient.Setup(x => x.GetMutateJobAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateJob>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetMutateJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MutateJob>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            MutateJob response = await client.GetMutateJobAsync(request);
+            gagvr::MutateJob responseCallSettings = await client.GetMutateJobAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MutateJob responseCancellationToken = await client.GetMutateJobAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetMutateJobResourceNames()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetMutateJobRequest request = new GetMutateJobRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+            };
+            gagvr::MutateJob expectedResponse = new gagvr::MutateJob
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                Id = -6774108720365892680L,
+                NextAddSequenceToken = "next_add_sequence_token93fee49d",
+                Metadata = new gagvr::MutateJob.Types.MutateJobMetadata(),
+                Status = gagve::MutateJobStatusEnum.Types.MutateJobStatus.Done,
+                LongRunningOperation = "long_running_operation0897bd41",
+            };
+            mockGrpcClient.Setup(x => x.GetMutateJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MutateJob response = client.GetMutateJob(request.ResourceNameAsMutateJobName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void AddMutateJobOperations()
+        public async stt::Task GetMutateJobResourceNamesAsync()
         {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            AddMutateJobOperationsRequest expectedRequest = new AddMutateJobOperationsRequest
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            GetMutateJobRequest request = new GetMutateJobRequest
             {
-                ResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString(),
-                SequenceToken = "sequenceToken-868155397",
-                MutateOperations = { },
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
             };
-            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
+            gagvr::MutateJob expectedResponse = new gagvr::MutateJob
             {
-                TotalOperations = 1685086151L,
-                NextSequenceToken = "nextSequenceToken388644551",
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                Id = -6774108720365892680L,
+                NextAddSequenceToken = "next_add_sequence_token93fee49d",
+                Metadata = new gagvr::MutateJob.Types.MutateJobMetadata(),
+                Status = gagve::MutateJobStatusEnum.Types.MutateJobStatus.Done,
+                LongRunningOperation = "long_running_operation0897bd41",
             };
-            mockGrpcClient.Setup(x => x.AddMutateJobOperations(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetMutateJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MutateJob>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString();
-            string sequenceToken = "sequenceToken-868155397";
-            IEnumerable<MutateOperation> mutateOperations = new List<MutateOperation>();
-            AddMutateJobOperationsResponse response = client.AddMutateJobOperations(formattedResourceName, sequenceToken, mutateOperations);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::MutateJob responseCallSettings = await client.GetMutateJobAsync(request.ResourceNameAsMutateJobName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MutateJob responseCancellationToken = await client.GetMutateJobAsync(request.ResourceNameAsMutateJobName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task AddMutateJobOperationsAsync()
+        public void AddMutateJobOperationsRequestObject()
         {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
-            AddMutateJobOperationsRequest expectedRequest = new AddMutateJobOperationsRequest
-            {
-                ResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString(),
-                SequenceToken = "sequenceToken-868155397",
-                MutateOperations = { },
-            };
-            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
-            {
-                TotalOperations = 1685086151L,
-                NextSequenceToken = "nextSequenceToken388644551",
-            };
-            mockGrpcClient.Setup(x => x.AddMutateJobOperationsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AddMutateJobOperationsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString();
-            string sequenceToken = "sequenceToken-868155397";
-            IEnumerable<MutateOperation> mutateOperations = new List<MutateOperation>();
-            AddMutateJobOperationsResponse response = await client.AddMutateJobOperationsAsync(formattedResourceName, sequenceToken, mutateOperations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void AddMutateJobOperations2()
-        {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
             {
-                ResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString(),
-                SequenceToken = "sequenceToken-868155397",
-                MutateOperations = { },
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                SequenceToken = "sequence_tokene6b46f6e",
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
             };
             AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
             {
-                TotalOperations = 1685086151L,
-                NextSequenceToken = "nextSequenceToken388644551",
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
             };
-            mockGrpcClient.Setup(x => x.AddMutateJobOperations(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.AddMutateJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
             AddMutateJobOperationsResponse response = client.AddMutateJobOperations(request);
             Assert.AreEqual(expectedResponse, response);
@@ -297,29 +297,243 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task AddMutateJobOperationsAsync2()
+        public async stt::Task AddMutateJobOperationsRequestObjectAsync()
         {
-            Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new Mock<MutateJobService.MutateJobServiceClient>(MockBehavior.Strict);
-            mockGrpcClient.Setup(x => x.CreateOperationsClient())
-                .Returns(new Mock<Operations.OperationsClient>().Object);
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
             AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
             {
-                ResourceName = new MutateJobName("[CUSTOMER]", "[MUTATE_JOB]").ToString(),
-                SequenceToken = "sequenceToken-868155397",
-                MutateOperations = { },
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                SequenceToken = "sequence_tokene6b46f6e",
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
             };
             AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
             {
-                TotalOperations = 1685086151L,
-                NextSequenceToken = "nextSequenceToken388644551",
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
             };
-            mockGrpcClient.Setup(x => x.AddMutateJobOperationsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AddMutateJobOperationsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.AddMutateJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddMutateJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
-            AddMutateJobOperationsResponse response = await client.AddMutateJobOperationsAsync(request);
+            AddMutateJobOperationsResponse responseCallSettings = await client.AddMutateJobOperationsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            AddMutateJobOperationsResponse responseCancellationToken = await client.AddMutateJobOperationsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void AddMutateJobOperations1()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                SequenceToken = "sequence_tokene6b46f6e",
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
+            };
+            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
+            {
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
+            };
+            mockGrpcClient.Setup(x => x.AddMutateJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddMutateJobOperationsResponse response = client.AddMutateJobOperations(request.ResourceName, request.SequenceToken, request.MutateOperations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task AddMutateJobOperations1Async()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                SequenceToken = "sequence_tokene6b46f6e",
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
+            };
+            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
+            {
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
+            };
+            mockGrpcClient.Setup(x => x.AddMutateJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddMutateJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddMutateJobOperationsResponse responseCallSettings = await client.AddMutateJobOperationsAsync(request.ResourceName, request.SequenceToken, request.MutateOperations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            AddMutateJobOperationsResponse responseCancellationToken = await client.AddMutateJobOperationsAsync(request.ResourceName, request.SequenceToken, request.MutateOperations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void AddMutateJobOperations1ResourceNames()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                SequenceToken = "sequence_tokene6b46f6e",
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
+            };
+            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
+            {
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
+            };
+            mockGrpcClient.Setup(x => x.AddMutateJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddMutateJobOperationsResponse response = client.AddMutateJobOperations(request.ResourceNameAsMutateJobName, request.SequenceToken, request.MutateOperations);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task AddMutateJobOperations1ResourceNamesAsync()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                SequenceToken = "sequence_tokene6b46f6e",
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
+            };
+            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
+            {
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
+            };
+            mockGrpcClient.Setup(x => x.AddMutateJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddMutateJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddMutateJobOperationsResponse responseCallSettings = await client.AddMutateJobOperationsAsync(request.ResourceNameAsMutateJobName, request.SequenceToken, request.MutateOperations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            AddMutateJobOperationsResponse responseCancellationToken = await client.AddMutateJobOperationsAsync(request.ResourceNameAsMutateJobName, request.SequenceToken, request.MutateOperations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void AddMutateJobOperations2()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
+            };
+            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
+            {
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
+            };
+            mockGrpcClient.Setup(x => x.AddMutateJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddMutateJobOperationsResponse response = client.AddMutateJobOperations(request.ResourceName, request.MutateOperations);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task AddMutateJobOperations2Async()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
+            };
+            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
+            {
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
+            };
+            mockGrpcClient.Setup(x => x.AddMutateJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddMutateJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddMutateJobOperationsResponse responseCallSettings = await client.AddMutateJobOperationsAsync(request.ResourceName, request.MutateOperations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            AddMutateJobOperationsResponse responseCancellationToken = await client.AddMutateJobOperationsAsync(request.ResourceName, request.MutateOperations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void AddMutateJobOperations2ResourceNames()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
+            };
+            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
+            {
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
+            };
+            mockGrpcClient.Setup(x => x.AddMutateJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddMutateJobOperationsResponse response = client.AddMutateJobOperations(request.ResourceNameAsMutateJobName, request.MutateOperations);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task AddMutateJobOperations2ResourceNamesAsync()
+        {
+            moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
+            mockGrpcClient.Setup(x => x.CreateOperationsClient()).Returns(new moq::Mock<lro::Operations.OperationsClient>().Object);
+            AddMutateJobOperationsRequest request = new AddMutateJobOperationsRequest
+            {
+                ResourceNameAsMutateJobName = gagvr::MutateJobName.FromCustomerMutateJob("[CUSTOMER]", "[MUTATE_JOB]"),
+                MutateOperations =
+                {
+                    new MutateOperation(),
+                },
+            };
+            AddMutateJobOperationsResponse expectedResponse = new AddMutateJobOperationsResponse
+            {
+                TotalOperations = -8188520186954789005L,
+                NextSequenceToken = "next_sequence_token160dabc7",
+            };
+            mockGrpcClient.Setup(x => x.AddMutateJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddMutateJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MutateJobServiceClient client = new MutateJobServiceClientImpl(mockGrpcClient.Object, null);
+            AddMutateJobOperationsResponse responseCallSettings = await client.AddMutateJobOperationsAsync(request.ResourceNameAsMutateJobName, request.MutateOperations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            AddMutateJobOperationsResponse responseCancellationToken = await client.AddMutateJobOperationsAsync(request.ResourceNameAsMutateJobName, request.MutateOperations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

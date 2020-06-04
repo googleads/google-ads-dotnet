@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,201 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedSharedSetServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedSharedSetServiceClientTest
     {
+        [Test]
+        public void GetSharedSetRequestObject()
+        {
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
+            GetSharedSetRequest request = new GetSharedSetRequest
+            {
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+            };
+            gagvr::SharedSet expectedResponse = new gagvr::SharedSet
+            {
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Id = -6774108720365892680L,
+                Type = gagve::SharedSetTypeEnum.Types.SharedSetType.NegativePlacements,
+                SharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Status = gagve::SharedSetStatusEnum.Types.SharedSetStatus.Enabled,
+                MemberCount = -5151590354343439845L,
+                ReferenceCount = -8440758895662409664L,
+            };
+            mockGrpcClient.Setup(x => x.GetSharedSet(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SharedSet response = client.GetSharedSet(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetSharedSetRequestObjectAsync()
+        {
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
+            GetSharedSetRequest request = new GetSharedSetRequest
+            {
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+            };
+            gagvr::SharedSet expectedResponse = new gagvr::SharedSet
+            {
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Id = -6774108720365892680L,
+                Type = gagve::SharedSetTypeEnum.Types.SharedSetType.NegativePlacements,
+                SharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Status = gagve::SharedSetStatusEnum.Types.SharedSetStatus.Enabled,
+                MemberCount = -5151590354343439845L,
+                ReferenceCount = -8440758895662409664L,
+            };
+            mockGrpcClient.Setup(x => x.GetSharedSetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::SharedSet>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SharedSet responseCallSettings = await client.GetSharedSetAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::SharedSet responseCancellationToken = await client.GetSharedSetAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetSharedSet()
         {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
-            GetSharedSetRequest expectedRequest = new GetSharedSetRequest
-            {
-                ResourceName = new SharedSetName("[CUSTOMER]", "[SHARED_SET]").ToString(),
-            };
-            SharedSet expectedResponse = new SharedSet
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetSharedSet(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new SharedSetName("[CUSTOMER]", "[SHARED_SET]").ToString();
-            SharedSet response = client.GetSharedSet(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetSharedSetAsync()
-        {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
-            GetSharedSetRequest expectedRequest = new GetSharedSetRequest
-            {
-                ResourceName = new SharedSetName("[CUSTOMER]", "[SHARED_SET]").ToString(),
-            };
-            SharedSet expectedResponse = new SharedSet
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetSharedSetAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<SharedSet>(Task.FromResult(expectedResponse), null, null, null, null));
-            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new SharedSetName("[CUSTOMER]", "[SHARED_SET]").ToString();
-            SharedSet response = await client.GetSharedSetAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetSharedSet2()
-        {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
             GetSharedSetRequest request = new GetSharedSetRequest
             {
-                ResourceName = new SharedSetName("[CUSTOMER]", "[SHARED_SET]").ToString(),
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
             };
-            SharedSet expectedResponse = new SharedSet
+            gagvr::SharedSet expectedResponse = new gagvr::SharedSet
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Id = -6774108720365892680L,
+                Type = gagve::SharedSetTypeEnum.Types.SharedSetType.NegativePlacements,
+                SharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Status = gagve::SharedSetStatusEnum.Types.SharedSetStatus.Enabled,
+                MemberCount = -5151590354343439845L,
+                ReferenceCount = -8440758895662409664L,
             };
-            mockGrpcClient.Setup(x => x.GetSharedSet(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetSharedSet(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            SharedSet response = client.GetSharedSet(request);
+            gagvr::SharedSet response = client.GetSharedSet(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetSharedSetAsync2()
+        public async stt::Task GetSharedSetAsync()
         {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
             GetSharedSetRequest request = new GetSharedSetRequest
             {
-                ResourceName = new SharedSetName("[CUSTOMER]", "[SHARED_SET]").ToString(),
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
             };
-            SharedSet expectedResponse = new SharedSet
+            gagvr::SharedSet expectedResponse = new gagvr::SharedSet
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Id = -6774108720365892680L,
+                Type = gagve::SharedSetTypeEnum.Types.SharedSetType.NegativePlacements,
+                SharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Status = gagve::SharedSetStatusEnum.Types.SharedSetStatus.Enabled,
+                MemberCount = -5151590354343439845L,
+                ReferenceCount = -8440758895662409664L,
             };
-            mockGrpcClient.Setup(x => x.GetSharedSetAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<SharedSet>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetSharedSetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::SharedSet>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            SharedSet response = await client.GetSharedSetAsync(request);
+            gagvr::SharedSet responseCallSettings = await client.GetSharedSetAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::SharedSet responseCancellationToken = await client.GetSharedSetAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetSharedSetResourceNames()
+        {
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
+            GetSharedSetRequest request = new GetSharedSetRequest
+            {
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+            };
+            gagvr::SharedSet expectedResponse = new gagvr::SharedSet
+            {
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Id = -6774108720365892680L,
+                Type = gagve::SharedSetTypeEnum.Types.SharedSetType.NegativePlacements,
+                SharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Status = gagve::SharedSetStatusEnum.Types.SharedSetStatus.Enabled,
+                MemberCount = -5151590354343439845L,
+                ReferenceCount = -8440758895662409664L,
+            };
+            mockGrpcClient.Setup(x => x.GetSharedSet(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::SharedSet response = client.GetSharedSet(request.ResourceNameAsSharedSetName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateSharedSets()
+        public async stt::Task GetSharedSetResourceNamesAsync()
         {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
-            MutateSharedSetsRequest expectedRequest = new MutateSharedSetsRequest
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
+            GetSharedSetRequest request = new GetSharedSetRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
             };
-            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedSets(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::SharedSet expectedResponse = new gagvr::SharedSet
+            {
+                ResourceNameAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Id = -6774108720365892680L,
+                Type = gagve::SharedSetTypeEnum.Types.SharedSetType.NegativePlacements,
+                SharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+                Status = gagve::SharedSetStatusEnum.Types.SharedSetStatus.Enabled,
+                MemberCount = -5151590354343439845L,
+                ReferenceCount = -8440758895662409664L,
+            };
+            mockGrpcClient.Setup(x => x.GetSharedSetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::SharedSet>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<SharedSetOperation> operations = new List<SharedSetOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateSharedSetsResponse response = client.MutateSharedSets(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::SharedSet responseCallSettings = await client.GetSharedSetAsync(request.ResourceNameAsSharedSetName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::SharedSet responseCancellationToken = await client.GetSharedSetAsync(request.ResourceNameAsSharedSetName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateSharedSetsAsync()
+        public void MutateSharedSetsRequestObject()
         {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
-            MutateSharedSetsRequest expectedRequest = new MutateSharedSetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedSetsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateSharedSetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<SharedSetOperation> operations = new List<SharedSetOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateSharedSetsResponse response = await client.MutateSharedSetsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateSharedSets2()
-        {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
-            MutateSharedSetsRequest expectedRequest = new MutateSharedSetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedSets(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<SharedSetOperation> operations = new List<SharedSetOperation>();
-            MutateSharedSetsResponse response = client.MutateSharedSets(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateSharedSetsAsync2()
-        {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
-            MutateSharedSetsRequest expectedRequest = new MutateSharedSetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedSetsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateSharedSetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<SharedSetOperation> operations = new List<SharedSetOperation>();
-            MutateSharedSetsResponse response = await client.MutateSharedSetsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateSharedSets3()
-        {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
             MutateSharedSetsRequest request = new MutateSharedSetsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new SharedSetOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedSets(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse
+            {
+                Results =
+                {
+                    new MutateSharedSetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateSharedSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
             MutateSharedSetsResponse response = client.MutateSharedSets(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +216,90 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateSharedSetsAsync3()
+        public async stt::Task MutateSharedSetsRequestObjectAsync()
         {
-            Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new Mock<SharedSetService.SharedSetServiceClient>(MockBehavior.Strict);
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
             MutateSharedSetsRequest request = new MutateSharedSetsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new SharedSetOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateSharedSetsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateSharedSetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse
+            {
+                Results =
+                {
+                    new MutateSharedSetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateSharedSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSharedSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            MutateSharedSetsResponse response = await client.MutateSharedSetsAsync(request);
+            MutateSharedSetsResponse responseCallSettings = await client.MutateSharedSetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateSharedSetsResponse responseCancellationToken = await client.MutateSharedSetsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateSharedSets()
+        {
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
+            MutateSharedSetsRequest request = new MutateSharedSetsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new SharedSetOperation(),
+                },
+            };
+            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse
+            {
+                Results =
+                {
+                    new MutateSharedSetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateSharedSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            MutateSharedSetsResponse response = client.MutateSharedSets(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateSharedSetsAsync()
+        {
+            moq::Mock<SharedSetService.SharedSetServiceClient> mockGrpcClient = new moq::Mock<SharedSetService.SharedSetServiceClient>(moq::MockBehavior.Strict);
+            MutateSharedSetsRequest request = new MutateSharedSetsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new SharedSetOperation(),
+                },
+            };
+            MutateSharedSetsResponse expectedResponse = new MutateSharedSetsResponse
+            {
+                Results =
+                {
+                    new MutateSharedSetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateSharedSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSharedSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            MutateSharedSetsResponse responseCallSettings = await client.MutateSharedSetsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateSharedSetsResponse responseCancellationToken = await client.MutateSharedSetsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,182 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdParameterServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdParameterServiceClientTest
     {
+        [Test]
+        public void GetAdParameterRequestObject()
+        {
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
+            GetAdParameterRequest request = new GetAdParameterRequest
+            {
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
+            };
+            gagvr::AdParameter expectedResponse = new gagvr::AdParameter
+            {
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                ParameterIndex = 2776974389611536835L,
+                InsertionText = "insertion_text562a41ad",
+            };
+            mockGrpcClient.Setup(x => x.GetAdParameter(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdParameter response = client.GetAdParameter(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdParameterRequestObjectAsync()
+        {
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
+            GetAdParameterRequest request = new GetAdParameterRequest
+            {
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
+            };
+            gagvr::AdParameter expectedResponse = new gagvr::AdParameter
+            {
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                ParameterIndex = 2776974389611536835L,
+                InsertionText = "insertion_text562a41ad",
+            };
+            mockGrpcClient.Setup(x => x.GetAdParameterAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdParameter>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdParameter responseCallSettings = await client.GetAdParameterAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdParameter responseCancellationToken = await client.GetAdParameterAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAdParameter()
         {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
-            GetAdParameterRequest expectedRequest = new GetAdParameterRequest
-            {
-                ResourceName = new AdParameterName("[CUSTOMER]", "[AD_PARAMETER]").ToString(),
-            };
-            AdParameter expectedResponse = new AdParameter
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdParameter(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdParameterName("[CUSTOMER]", "[AD_PARAMETER]").ToString();
-            AdParameter response = client.GetAdParameter(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdParameterAsync()
-        {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
-            GetAdParameterRequest expectedRequest = new GetAdParameterRequest
-            {
-                ResourceName = new AdParameterName("[CUSTOMER]", "[AD_PARAMETER]").ToString(),
-            };
-            AdParameter expectedResponse = new AdParameter
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdParameterAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdParameter>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdParameterName("[CUSTOMER]", "[AD_PARAMETER]").ToString();
-            AdParameter response = await client.GetAdParameterAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAdParameter2()
-        {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
             GetAdParameterRequest request = new GetAdParameterRequest
             {
-                ResourceName = new AdParameterName("[CUSTOMER]", "[AD_PARAMETER]").ToString(),
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
             };
-            AdParameter expectedResponse = new AdParameter
+            gagvr::AdParameter expectedResponse = new gagvr::AdParameter
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                ParameterIndex = 2776974389611536835L,
+                InsertionText = "insertion_text562a41ad",
             };
-            mockGrpcClient.Setup(x => x.GetAdParameter(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAdParameter(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
-            AdParameter response = client.GetAdParameter(request);
+            gagvr::AdParameter response = client.GetAdParameter(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdParameterAsync2()
+        public async stt::Task GetAdParameterAsync()
         {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
             GetAdParameterRequest request = new GetAdParameterRequest
             {
-                ResourceName = new AdParameterName("[CUSTOMER]", "[AD_PARAMETER]").ToString(),
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
             };
-            AdParameter expectedResponse = new AdParameter
+            gagvr::AdParameter expectedResponse = new gagvr::AdParameter
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                ParameterIndex = 2776974389611536835L,
+                InsertionText = "insertion_text562a41ad",
             };
-            mockGrpcClient.Setup(x => x.GetAdParameterAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdParameter>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdParameterAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdParameter>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
-            AdParameter response = await client.GetAdParameterAsync(request);
+            gagvr::AdParameter responseCallSettings = await client.GetAdParameterAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdParameter responseCancellationToken = await client.GetAdParameterAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdParameterResourceNames()
+        {
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
+            GetAdParameterRequest request = new GetAdParameterRequest
+            {
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
+            };
+            gagvr::AdParameter expectedResponse = new gagvr::AdParameter
+            {
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                ParameterIndex = 2776974389611536835L,
+                InsertionText = "insertion_text562a41ad",
+            };
+            mockGrpcClient.Setup(x => x.GetAdParameter(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdParameter response = client.GetAdParameter(request.ResourceNameAsAdParameterName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateAdParameters()
+        public async stt::Task GetAdParameterResourceNamesAsync()
         {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
-            MutateAdParametersRequest expectedRequest = new MutateAdParametersRequest
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
+            GetAdParameterRequest request = new GetAdParameterRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
             };
-            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdParameters(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::AdParameter expectedResponse = new gagvr::AdParameter
+            {
+                ResourceNameAsAdParameterName = gagvr::AdParameterName.FromCustomerAdParameter("[CUSTOMER]", "[AD_PARAMETER]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                ParameterIndex = 2776974389611536835L,
+                InsertionText = "insertion_text562a41ad",
+            };
+            mockGrpcClient.Setup(x => x.GetAdParameterAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdParameter>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdParameterOperation> operations = new List<AdParameterOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdParametersResponse response = client.MutateAdParameters(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::AdParameter responseCallSettings = await client.GetAdParameterAsync(request.ResourceNameAsAdParameterName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdParameter responseCancellationToken = await client.GetAdParameterAsync(request.ResourceNameAsAdParameterName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateAdParametersAsync()
+        public void MutateAdParametersRequestObject()
         {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
-            MutateAdParametersRequest expectedRequest = new MutateAdParametersRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdParametersAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdParametersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdParameterOperation> operations = new List<AdParameterOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdParametersResponse response = await client.MutateAdParametersAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdParameters2()
-        {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
-            MutateAdParametersRequest expectedRequest = new MutateAdParametersRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdParameters(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdParameterOperation> operations = new List<AdParameterOperation>();
-            MutateAdParametersResponse response = client.MutateAdParameters(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateAdParametersAsync2()
-        {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
-            MutateAdParametersRequest expectedRequest = new MutateAdParametersRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdParametersAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdParametersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdParameterOperation> operations = new List<AdParameterOperation>();
-            MutateAdParametersResponse response = await client.MutateAdParametersAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdParameters3()
-        {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
             MutateAdParametersRequest request = new MutateAdParametersRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdParameterOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdParameters(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse
+            {
+                Results =
+                {
+                    new MutateAdParameterResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdParameters(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
             MutateAdParametersResponse response = client.MutateAdParameters(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +197,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateAdParametersAsync3()
+        public async stt::Task MutateAdParametersRequestObjectAsync()
         {
-            Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new Mock<AdParameterService.AdParameterServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
             MutateAdParametersRequest request = new MutateAdParametersRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdParameterOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdParametersAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdParametersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse
+            {
+                Results =
+                {
+                    new MutateAdParameterResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdParametersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdParametersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
-            MutateAdParametersResponse response = await client.MutateAdParametersAsync(request);
+            MutateAdParametersResponse responseCallSettings = await client.MutateAdParametersAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdParametersResponse responseCancellationToken = await client.MutateAdParametersAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateAdParameters()
+        {
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
+            MutateAdParametersRequest request = new MutateAdParametersRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdParameterOperation(),
+                },
+            };
+            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse
+            {
+                Results =
+                {
+                    new MutateAdParameterResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdParameters(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdParametersResponse response = client.MutateAdParameters(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateAdParametersAsync()
+        {
+            moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
+            MutateAdParametersRequest request = new MutateAdParametersRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdParameterOperation(),
+                },
+            };
+            MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse
+            {
+                Results =
+                {
+                    new MutateAdParameterResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdParametersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdParametersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdParameterServiceClient client = new AdParameterServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdParametersResponse responseCallSettings = await client.MutateAdParametersAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdParametersResponse responseCancellationToken = await client.MutateAdParametersAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

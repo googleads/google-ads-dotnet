@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,189 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedKeywordPlanNegativeKeywordServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedKeywordPlanNegativeKeywordServiceClientTest
     {
+        [Test]
+        public void GetKeywordPlanNegativeKeywordRequestObject()
+        {
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
+            GetKeywordPlanNegativeKeywordRequest request = new GetKeywordPlanNegativeKeywordRequest
+            {
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
+            };
+            gagvr::KeywordPlanNegativeKeyword expectedResponse = new gagvr::KeywordPlanNegativeKeyword
+            {
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
+                KeywordPlanCampaignAsKeywordPlanCampaignName = gagvr::KeywordPlanCampaignName.FromCustomerKeywordPlanCampaign("[CUSTOMER]", "[KEYWORD_PLAN_CAMPAIGN]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeyword(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::KeywordPlanNegativeKeyword response = client.GetKeywordPlanNegativeKeyword(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetKeywordPlanNegativeKeywordRequestObjectAsync()
+        {
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
+            GetKeywordPlanNegativeKeywordRequest request = new GetKeywordPlanNegativeKeywordRequest
+            {
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
+            };
+            gagvr::KeywordPlanNegativeKeyword expectedResponse = new gagvr::KeywordPlanNegativeKeyword
+            {
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
+                KeywordPlanCampaignAsKeywordPlanCampaignName = gagvr::KeywordPlanCampaignName.FromCustomerKeywordPlanCampaign("[CUSTOMER]", "[KEYWORD_PLAN_CAMPAIGN]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeywordAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::KeywordPlanNegativeKeyword>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::KeywordPlanNegativeKeyword responseCallSettings = await client.GetKeywordPlanNegativeKeywordAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::KeywordPlanNegativeKeyword responseCancellationToken = await client.GetKeywordPlanNegativeKeywordAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetKeywordPlanNegativeKeyword()
         {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
-            GetKeywordPlanNegativeKeywordRequest expectedRequest = new GetKeywordPlanNegativeKeywordRequest
-            {
-                ResourceName = new KeywordPlanNegativeKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]").ToString(),
-            };
-            KeywordPlanNegativeKeyword expectedResponse = new KeywordPlanNegativeKeyword
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeyword(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new KeywordPlanNegativeKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]").ToString();
-            KeywordPlanNegativeKeyword response = client.GetKeywordPlanNegativeKeyword(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetKeywordPlanNegativeKeywordAsync()
-        {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
-            GetKeywordPlanNegativeKeywordRequest expectedRequest = new GetKeywordPlanNegativeKeywordRequest
-            {
-                ResourceName = new KeywordPlanNegativeKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]").ToString(),
-            };
-            KeywordPlanNegativeKeyword expectedResponse = new KeywordPlanNegativeKeyword
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeywordAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<KeywordPlanNegativeKeyword>(Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new KeywordPlanNegativeKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]").ToString();
-            KeywordPlanNegativeKeyword response = await client.GetKeywordPlanNegativeKeywordAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetKeywordPlanNegativeKeyword2()
-        {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
             GetKeywordPlanNegativeKeywordRequest request = new GetKeywordPlanNegativeKeywordRequest
             {
-                ResourceName = new KeywordPlanNegativeKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]").ToString(),
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
             };
-            KeywordPlanNegativeKeyword expectedResponse = new KeywordPlanNegativeKeyword
+            gagvr::KeywordPlanNegativeKeyword expectedResponse = new gagvr::KeywordPlanNegativeKeyword
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
+                KeywordPlanCampaignAsKeywordPlanCampaignName = gagvr::KeywordPlanCampaignName.FromCustomerKeywordPlanCampaign("[CUSTOMER]", "[KEYWORD_PLAN_CAMPAIGN]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
             };
-            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeyword(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeyword(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            KeywordPlanNegativeKeyword response = client.GetKeywordPlanNegativeKeyword(request);
+            gagvr::KeywordPlanNegativeKeyword response = client.GetKeywordPlanNegativeKeyword(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetKeywordPlanNegativeKeywordAsync2()
+        public async stt::Task GetKeywordPlanNegativeKeywordAsync()
         {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
             GetKeywordPlanNegativeKeywordRequest request = new GetKeywordPlanNegativeKeywordRequest
             {
-                ResourceName = new KeywordPlanNegativeKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]").ToString(),
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
             };
-            KeywordPlanNegativeKeyword expectedResponse = new KeywordPlanNegativeKeyword
+            gagvr::KeywordPlanNegativeKeyword expectedResponse = new gagvr::KeywordPlanNegativeKeyword
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
+                KeywordPlanCampaignAsKeywordPlanCampaignName = gagvr::KeywordPlanCampaignName.FromCustomerKeywordPlanCampaign("[CUSTOMER]", "[KEYWORD_PLAN_CAMPAIGN]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
             };
-            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeywordAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<KeywordPlanNegativeKeyword>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeywordAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::KeywordPlanNegativeKeyword>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            KeywordPlanNegativeKeyword response = await client.GetKeywordPlanNegativeKeywordAsync(request);
+            gagvr::KeywordPlanNegativeKeyword responseCallSettings = await client.GetKeywordPlanNegativeKeywordAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::KeywordPlanNegativeKeyword responseCancellationToken = await client.GetKeywordPlanNegativeKeywordAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetKeywordPlanNegativeKeywordResourceNames()
+        {
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
+            GetKeywordPlanNegativeKeywordRequest request = new GetKeywordPlanNegativeKeywordRequest
+            {
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
+            };
+            gagvr::KeywordPlanNegativeKeyword expectedResponse = new gagvr::KeywordPlanNegativeKeyword
+            {
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
+                KeywordPlanCampaignAsKeywordPlanCampaignName = gagvr::KeywordPlanCampaignName.FromCustomerKeywordPlanCampaign("[CUSTOMER]", "[KEYWORD_PLAN_CAMPAIGN]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeyword(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::KeywordPlanNegativeKeyword response = client.GetKeywordPlanNegativeKeyword(request.ResourceNameAsKeywordPlanNegativeKeywordName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateKeywordPlanNegativeKeywords()
+        public async stt::Task GetKeywordPlanNegativeKeywordResourceNamesAsync()
         {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
-            MutateKeywordPlanNegativeKeywordsRequest expectedRequest = new MutateKeywordPlanNegativeKeywordsRequest
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
+            GetKeywordPlanNegativeKeywordRequest request = new GetKeywordPlanNegativeKeywordRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
             };
-            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywords(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::KeywordPlanNegativeKeyword expectedResponse = new gagvr::KeywordPlanNegativeKeyword
+            {
+                ResourceNameAsKeywordPlanNegativeKeywordName = gagvr::KeywordPlanNegativeKeywordName.FromCustomerKeywordPlanNegativeKeyword("[CUSTOMER]", "[KEYWORD_PLAN_NEGATIVE_KEYWORD]"),
+                KeywordPlanCampaignAsKeywordPlanCampaignName = gagvr::KeywordPlanCampaignName.FromCustomerKeywordPlanCampaign("[CUSTOMER]", "[KEYWORD_PLAN_CAMPAIGN]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordPlanNegativeKeywordAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::KeywordPlanNegativeKeyword>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<KeywordPlanNegativeKeywordOperation> operations = new List<KeywordPlanNegativeKeywordOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateKeywordPlanNegativeKeywordsResponse response = client.MutateKeywordPlanNegativeKeywords(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::KeywordPlanNegativeKeyword responseCallSettings = await client.GetKeywordPlanNegativeKeywordAsync(request.ResourceNameAsKeywordPlanNegativeKeywordName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::KeywordPlanNegativeKeyword responseCancellationToken = await client.GetKeywordPlanNegativeKeywordAsync(request.ResourceNameAsKeywordPlanNegativeKeywordName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateKeywordPlanNegativeKeywordsAsync()
+        public void MutateKeywordPlanNegativeKeywordsRequestObject()
         {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
-            MutateKeywordPlanNegativeKeywordsRequest expectedRequest = new MutateKeywordPlanNegativeKeywordsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywordsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateKeywordPlanNegativeKeywordsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<KeywordPlanNegativeKeywordOperation> operations = new List<KeywordPlanNegativeKeywordOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateKeywordPlanNegativeKeywordsResponse response = await client.MutateKeywordPlanNegativeKeywordsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateKeywordPlanNegativeKeywords2()
-        {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
-            MutateKeywordPlanNegativeKeywordsRequest expectedRequest = new MutateKeywordPlanNegativeKeywordsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywords(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<KeywordPlanNegativeKeywordOperation> operations = new List<KeywordPlanNegativeKeywordOperation>();
-            MutateKeywordPlanNegativeKeywordsResponse response = client.MutateKeywordPlanNegativeKeywords(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateKeywordPlanNegativeKeywordsAsync2()
-        {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
-            MutateKeywordPlanNegativeKeywordsRequest expectedRequest = new MutateKeywordPlanNegativeKeywordsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywordsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateKeywordPlanNegativeKeywordsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<KeywordPlanNegativeKeywordOperation> operations = new List<KeywordPlanNegativeKeywordOperation>();
-            MutateKeywordPlanNegativeKeywordsResponse response = await client.MutateKeywordPlanNegativeKeywordsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateKeywordPlanNegativeKeywords3()
-        {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
             MutateKeywordPlanNegativeKeywordsRequest request = new MutateKeywordPlanNegativeKeywordsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new KeywordPlanNegativeKeywordOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywords(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse
+            {
+                Results =
+                {
+                    new MutateKeywordPlanNegativeKeywordResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywords(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
             MutateKeywordPlanNegativeKeywordsResponse response = client.MutateKeywordPlanNegativeKeywords(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +204,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateKeywordPlanNegativeKeywordsAsync3()
+        public async stt::Task MutateKeywordPlanNegativeKeywordsRequestObjectAsync()
         {
-            Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
             MutateKeywordPlanNegativeKeywordsRequest request = new MutateKeywordPlanNegativeKeywordsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new KeywordPlanNegativeKeywordOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywordsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateKeywordPlanNegativeKeywordsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse
+            {
+                Results =
+                {
+                    new MutateKeywordPlanNegativeKeywordResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywordsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateKeywordPlanNegativeKeywordsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            MutateKeywordPlanNegativeKeywordsResponse response = await client.MutateKeywordPlanNegativeKeywordsAsync(request);
+            MutateKeywordPlanNegativeKeywordsResponse responseCallSettings = await client.MutateKeywordPlanNegativeKeywordsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateKeywordPlanNegativeKeywordsResponse responseCancellationToken = await client.MutateKeywordPlanNegativeKeywordsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateKeywordPlanNegativeKeywords()
+        {
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
+            MutateKeywordPlanNegativeKeywordsRequest request = new MutateKeywordPlanNegativeKeywordsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new KeywordPlanNegativeKeywordOperation(),
+                },
+            };
+            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse
+            {
+                Results =
+                {
+                    new MutateKeywordPlanNegativeKeywordResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywords(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            MutateKeywordPlanNegativeKeywordsResponse response = client.MutateKeywordPlanNegativeKeywords(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateKeywordPlanNegativeKeywordsAsync()
+        {
+            moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
+            MutateKeywordPlanNegativeKeywordsRequest request = new MutateKeywordPlanNegativeKeywordsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new KeywordPlanNegativeKeywordOperation(),
+                },
+            };
+            MutateKeywordPlanNegativeKeywordsResponse expectedResponse = new MutateKeywordPlanNegativeKeywordsResponse
+            {
+                Results =
+                {
+                    new MutateKeywordPlanNegativeKeywordResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateKeywordPlanNegativeKeywordsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateKeywordPlanNegativeKeywordsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordPlanNegativeKeywordServiceClient client = new KeywordPlanNegativeKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            MutateKeywordPlanNegativeKeywordsResponse responseCallSettings = await client.MutateKeywordPlanNegativeKeywordsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateKeywordPlanNegativeKeywordsResponse responseCancellationToken = await client.MutateKeywordPlanNegativeKeywordsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,225 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedMediaFileServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedMediaFileServiceClientTest
     {
+        [Test]
+        public void GetMediaFileRequestObject()
+        {
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
+            GetMediaFileRequest request = new GetMediaFileRequest
+            {
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+            };
+            gagvr::MediaFile expectedResponse = new gagvr::MediaFile
+            {
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                Id = -6774108720365892680L,
+                Image = new gagvr::MediaImage(),
+                MediaBundle = new gagvr::MediaBundle(),
+                Type = gagve::MediaTypeEnum.Types.MediaType.DynamicImage,
+                MimeType = gagve::MimeTypeEnum.Types.MimeType.ImagePng,
+                SourceUrl = "source_url5da5c845",
+                MediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                FileSize = 2493931593823374883L,
+                Audio = new gagvr::MediaAudio(),
+                Video = new gagvr::MediaVideo(),
+            };
+            mockGrpcClient.Setup(x => x.GetMediaFile(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MediaFile response = client.GetMediaFile(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetMediaFileRequestObjectAsync()
+        {
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
+            GetMediaFileRequest request = new GetMediaFileRequest
+            {
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+            };
+            gagvr::MediaFile expectedResponse = new gagvr::MediaFile
+            {
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                Id = -6774108720365892680L,
+                Image = new gagvr::MediaImage(),
+                MediaBundle = new gagvr::MediaBundle(),
+                Type = gagve::MediaTypeEnum.Types.MediaType.DynamicImage,
+                MimeType = gagve::MimeTypeEnum.Types.MimeType.ImagePng,
+                SourceUrl = "source_url5da5c845",
+                MediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                FileSize = 2493931593823374883L,
+                Audio = new gagvr::MediaAudio(),
+                Video = new gagvr::MediaVideo(),
+            };
+            mockGrpcClient.Setup(x => x.GetMediaFileAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MediaFile>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MediaFile responseCallSettings = await client.GetMediaFileAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MediaFile responseCancellationToken = await client.GetMediaFileAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetMediaFile()
         {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
-            GetMediaFileRequest expectedRequest = new GetMediaFileRequest
-            {
-                ResourceName = new MediaFileName("[CUSTOMER]", "[MEDIA_FILE]").ToString(),
-            };
-            MediaFile expectedResponse = new MediaFile
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMediaFile(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MediaFileName("[CUSTOMER]", "[MEDIA_FILE]").ToString();
-            MediaFile response = client.GetMediaFile(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetMediaFileAsync()
-        {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
-            GetMediaFileRequest expectedRequest = new GetMediaFileRequest
-            {
-                ResourceName = new MediaFileName("[CUSTOMER]", "[MEDIA_FILE]").ToString(),
-            };
-            MediaFile expectedResponse = new MediaFile
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMediaFileAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MediaFile>(Task.FromResult(expectedResponse), null, null, null, null));
-            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MediaFileName("[CUSTOMER]", "[MEDIA_FILE]").ToString();
-            MediaFile response = await client.GetMediaFileAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetMediaFile2()
-        {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
             GetMediaFileRequest request = new GetMediaFileRequest
             {
-                ResourceName = new MediaFileName("[CUSTOMER]", "[MEDIA_FILE]").ToString(),
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
             };
-            MediaFile expectedResponse = new MediaFile
+            gagvr::MediaFile expectedResponse = new gagvr::MediaFile
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                Id = -6774108720365892680L,
+                Image = new gagvr::MediaImage(),
+                MediaBundle = new gagvr::MediaBundle(),
+                Type = gagve::MediaTypeEnum.Types.MediaType.DynamicImage,
+                MimeType = gagve::MimeTypeEnum.Types.MimeType.ImagePng,
+                SourceUrl = "source_url5da5c845",
+                MediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                FileSize = 2493931593823374883L,
+                Audio = new gagvr::MediaAudio(),
+                Video = new gagvr::MediaVideo(),
             };
-            mockGrpcClient.Setup(x => x.GetMediaFile(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetMediaFile(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
-            MediaFile response = client.GetMediaFile(request);
+            gagvr::MediaFile response = client.GetMediaFile(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetMediaFileAsync2()
+        public async stt::Task GetMediaFileAsync()
         {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
             GetMediaFileRequest request = new GetMediaFileRequest
             {
-                ResourceName = new MediaFileName("[CUSTOMER]", "[MEDIA_FILE]").ToString(),
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
             };
-            MediaFile expectedResponse = new MediaFile
+            gagvr::MediaFile expectedResponse = new gagvr::MediaFile
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                Id = -6774108720365892680L,
+                Image = new gagvr::MediaImage(),
+                MediaBundle = new gagvr::MediaBundle(),
+                Type = gagve::MediaTypeEnum.Types.MediaType.DynamicImage,
+                MimeType = gagve::MimeTypeEnum.Types.MimeType.ImagePng,
+                SourceUrl = "source_url5da5c845",
+                MediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                FileSize = 2493931593823374883L,
+                Audio = new gagvr::MediaAudio(),
+                Video = new gagvr::MediaVideo(),
             };
-            mockGrpcClient.Setup(x => x.GetMediaFileAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MediaFile>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetMediaFileAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MediaFile>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
-            MediaFile response = await client.GetMediaFileAsync(request);
+            gagvr::MediaFile responseCallSettings = await client.GetMediaFileAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MediaFile responseCancellationToken = await client.GetMediaFileAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetMediaFileResourceNames()
+        {
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
+            GetMediaFileRequest request = new GetMediaFileRequest
+            {
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+            };
+            gagvr::MediaFile expectedResponse = new gagvr::MediaFile
+            {
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                Id = -6774108720365892680L,
+                Image = new gagvr::MediaImage(),
+                MediaBundle = new gagvr::MediaBundle(),
+                Type = gagve::MediaTypeEnum.Types.MediaType.DynamicImage,
+                MimeType = gagve::MimeTypeEnum.Types.MimeType.ImagePng,
+                SourceUrl = "source_url5da5c845",
+                MediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                FileSize = 2493931593823374883L,
+                Audio = new gagvr::MediaAudio(),
+                Video = new gagvr::MediaVideo(),
+            };
+            mockGrpcClient.Setup(x => x.GetMediaFile(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MediaFile response = client.GetMediaFile(request.ResourceNameAsMediaFileName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateMediaFiles()
+        public async stt::Task GetMediaFileResourceNamesAsync()
         {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
-            MutateMediaFilesRequest expectedRequest = new MutateMediaFilesRequest
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
+            GetMediaFileRequest request = new GetMediaFileRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
             };
-            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse();
-            mockGrpcClient.Setup(x => x.MutateMediaFiles(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::MediaFile expectedResponse = new gagvr::MediaFile
+            {
+                ResourceNameAsMediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                Id = -6774108720365892680L,
+                Image = new gagvr::MediaImage(),
+                MediaBundle = new gagvr::MediaBundle(),
+                Type = gagve::MediaTypeEnum.Types.MediaType.DynamicImage,
+                MimeType = gagve::MimeTypeEnum.Types.MimeType.ImagePng,
+                SourceUrl = "source_url5da5c845",
+                MediaFileName = gagvr::MediaFileName.FromCustomerMediaFile("[CUSTOMER]", "[MEDIA_FILE]"),
+                FileSize = 2493931593823374883L,
+                Audio = new gagvr::MediaAudio(),
+                Video = new gagvr::MediaVideo(),
+            };
+            mockGrpcClient.Setup(x => x.GetMediaFileAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MediaFile>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<MediaFileOperation> operations = new List<MediaFileOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateMediaFilesResponse response = client.MutateMediaFiles(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::MediaFile responseCallSettings = await client.GetMediaFileAsync(request.ResourceNameAsMediaFileName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MediaFile responseCancellationToken = await client.GetMediaFileAsync(request.ResourceNameAsMediaFileName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateMediaFilesAsync()
+        public void MutateMediaFilesRequestObject()
         {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
-            MutateMediaFilesRequest expectedRequest = new MutateMediaFilesRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse();
-            mockGrpcClient.Setup(x => x.MutateMediaFilesAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateMediaFilesResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<MediaFileOperation> operations = new List<MediaFileOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateMediaFilesResponse response = await client.MutateMediaFilesAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateMediaFiles2()
-        {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
-            MutateMediaFilesRequest expectedRequest = new MutateMediaFilesRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse();
-            mockGrpcClient.Setup(x => x.MutateMediaFiles(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<MediaFileOperation> operations = new List<MediaFileOperation>();
-            MutateMediaFilesResponse response = client.MutateMediaFiles(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateMediaFilesAsync2()
-        {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
-            MutateMediaFilesRequest expectedRequest = new MutateMediaFilesRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse();
-            mockGrpcClient.Setup(x => x.MutateMediaFilesAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateMediaFilesResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<MediaFileOperation> operations = new List<MediaFileOperation>();
-            MutateMediaFilesResponse response = await client.MutateMediaFilesAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateMediaFiles3()
-        {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
             MutateMediaFilesRequest request = new MutateMediaFilesRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new MediaFileOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse();
-            mockGrpcClient.Setup(x => x.MutateMediaFiles(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse
+            {
+                Results =
+                {
+                    new MutateMediaFileResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateMediaFiles(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
             MutateMediaFilesResponse response = client.MutateMediaFiles(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +240,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateMediaFilesAsync3()
+        public async stt::Task MutateMediaFilesRequestObjectAsync()
         {
-            Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new Mock<MediaFileService.MediaFileServiceClient>(MockBehavior.Strict);
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
             MutateMediaFilesRequest request = new MutateMediaFilesRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new MediaFileOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse();
-            mockGrpcClient.Setup(x => x.MutateMediaFilesAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateMediaFilesResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse
+            {
+                Results =
+                {
+                    new MutateMediaFileResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateMediaFilesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateMediaFilesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
-            MutateMediaFilesResponse response = await client.MutateMediaFilesAsync(request);
+            MutateMediaFilesResponse responseCallSettings = await client.MutateMediaFilesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateMediaFilesResponse responseCancellationToken = await client.MutateMediaFilesAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateMediaFiles()
+        {
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
+            MutateMediaFilesRequest request = new MutateMediaFilesRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new MediaFileOperation(),
+                },
+            };
+            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse
+            {
+                Results =
+                {
+                    new MutateMediaFileResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateMediaFiles(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
+            MutateMediaFilesResponse response = client.MutateMediaFiles(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateMediaFilesAsync()
+        {
+            moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
+            MutateMediaFilesRequest request = new MutateMediaFilesRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new MediaFileOperation(),
+                },
+            };
+            MutateMediaFilesResponse expectedResponse = new MutateMediaFilesResponse
+            {
+                Results =
+                {
+                    new MutateMediaFileResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateMediaFilesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateMediaFilesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
+            MutateMediaFilesResponse responseCallSettings = await client.MutateMediaFilesAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateMediaFilesResponse responseCancellationToken = await client.MutateMediaFilesAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

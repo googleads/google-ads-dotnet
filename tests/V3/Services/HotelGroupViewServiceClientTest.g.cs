@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedHotelGroupViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedHotelGroupViewServiceClientTest
     {
+        [Test]
+        public void GetHotelGroupViewRequestObject()
+        {
+            moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient>(moq::MockBehavior.Strict);
+            GetHotelGroupViewRequest request = new GetHotelGroupViewRequest
+            {
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
+            };
+            gagvr::HotelGroupView expectedResponse = new gagvr::HotelGroupView
+            {
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetHotelGroupView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            HotelGroupViewServiceClient client = new HotelGroupViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::HotelGroupView response = client.GetHotelGroupView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetHotelGroupViewRequestObjectAsync()
+        {
+            moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient>(moq::MockBehavior.Strict);
+            GetHotelGroupViewRequest request = new GetHotelGroupViewRequest
+            {
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
+            };
+            gagvr::HotelGroupView expectedResponse = new gagvr::HotelGroupView
+            {
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetHotelGroupViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::HotelGroupView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            HotelGroupViewServiceClient client = new HotelGroupViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::HotelGroupView responseCallSettings = await client.GetHotelGroupViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::HotelGroupView responseCancellationToken = await client.GetHotelGroupViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetHotelGroupView()
         {
-            Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new Mock<HotelGroupViewService.HotelGroupViewServiceClient>(MockBehavior.Strict);
-            GetHotelGroupViewRequest expectedRequest = new GetHotelGroupViewRequest
-            {
-                ResourceName = new HotelGroupViewName("[CUSTOMER]", "[HOTEL_GROUP_VIEW]").ToString(),
-            };
-            HotelGroupView expectedResponse = new HotelGroupView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetHotelGroupView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            HotelGroupViewServiceClient client = new HotelGroupViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new HotelGroupViewName("[CUSTOMER]", "[HOTEL_GROUP_VIEW]").ToString();
-            HotelGroupView response = client.GetHotelGroupView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetHotelGroupViewAsync()
-        {
-            Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new Mock<HotelGroupViewService.HotelGroupViewServiceClient>(MockBehavior.Strict);
-            GetHotelGroupViewRequest expectedRequest = new GetHotelGroupViewRequest
-            {
-                ResourceName = new HotelGroupViewName("[CUSTOMER]", "[HOTEL_GROUP_VIEW]").ToString(),
-            };
-            HotelGroupView expectedResponse = new HotelGroupView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetHotelGroupViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<HotelGroupView>(Task.FromResult(expectedResponse), null, null, null, null));
-            HotelGroupViewServiceClient client = new HotelGroupViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new HotelGroupViewName("[CUSTOMER]", "[HOTEL_GROUP_VIEW]").ToString();
-            HotelGroupView response = await client.GetHotelGroupViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetHotelGroupView2()
-        {
-            Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new Mock<HotelGroupViewService.HotelGroupViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient>(moq::MockBehavior.Strict);
             GetHotelGroupViewRequest request = new GetHotelGroupViewRequest
             {
-                ResourceName = new HotelGroupViewName("[CUSTOMER]", "[HOTEL_GROUP_VIEW]").ToString(),
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
             };
-            HotelGroupView expectedResponse = new HotelGroupView
+            gagvr::HotelGroupView expectedResponse = new gagvr::HotelGroupView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetHotelGroupView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetHotelGroupView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             HotelGroupViewServiceClient client = new HotelGroupViewServiceClientImpl(mockGrpcClient.Object, null);
-            HotelGroupView response = client.GetHotelGroupView(request);
+            gagvr::HotelGroupView response = client.GetHotelGroupView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetHotelGroupViewAsync2()
+        public async stt::Task GetHotelGroupViewAsync()
         {
-            Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new Mock<HotelGroupViewService.HotelGroupViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient>(moq::MockBehavior.Strict);
             GetHotelGroupViewRequest request = new GetHotelGroupViewRequest
             {
-                ResourceName = new HotelGroupViewName("[CUSTOMER]", "[HOTEL_GROUP_VIEW]").ToString(),
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
             };
-            HotelGroupView expectedResponse = new HotelGroupView
+            gagvr::HotelGroupView expectedResponse = new gagvr::HotelGroupView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetHotelGroupViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<HotelGroupView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetHotelGroupViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::HotelGroupView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             HotelGroupViewServiceClient client = new HotelGroupViewServiceClientImpl(mockGrpcClient.Object, null);
-            HotelGroupView response = await client.GetHotelGroupViewAsync(request);
+            gagvr::HotelGroupView responseCallSettings = await client.GetHotelGroupViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::HotelGroupView responseCancellationToken = await client.GetHotelGroupViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetHotelGroupViewResourceNames()
+        {
+            moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient>(moq::MockBehavior.Strict);
+            GetHotelGroupViewRequest request = new GetHotelGroupViewRequest
+            {
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
+            };
+            gagvr::HotelGroupView expectedResponse = new gagvr::HotelGroupView
+            {
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetHotelGroupView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            HotelGroupViewServiceClient client = new HotelGroupViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::HotelGroupView response = client.GetHotelGroupView(request.ResourceNameAsHotelGroupViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetHotelGroupViewResourceNamesAsync()
+        {
+            moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient> mockGrpcClient = new moq::Mock<HotelGroupViewService.HotelGroupViewServiceClient>(moq::MockBehavior.Strict);
+            GetHotelGroupViewRequest request = new GetHotelGroupViewRequest
+            {
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
+            };
+            gagvr::HotelGroupView expectedResponse = new gagvr::HotelGroupView
+            {
+                ResourceNameAsHotelGroupViewName = gagvr::HotelGroupViewName.FromCustomerHotelGroupView("[CUSTOMER]", "[HOTEL_GROUP_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetHotelGroupViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::HotelGroupView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            HotelGroupViewServiceClient client = new HotelGroupViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::HotelGroupView responseCallSettings = await client.GetHotelGroupViewAsync(request.ResourceNameAsHotelGroupViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::HotelGroupView responseCancellationToken = await client.GetHotelGroupViewAsync(request.ResourceNameAsHotelGroupViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

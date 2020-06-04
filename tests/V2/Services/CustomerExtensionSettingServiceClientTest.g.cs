@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,201 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCustomerExtensionSettingServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCustomerExtensionSettingServiceClientTest
     {
+        [Test]
+        public void GetCustomerExtensionSettingRequestObject()
+        {
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerExtensionSettingRequest request = new GetCustomerExtensionSettingRequest
+            {
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
+            };
+            gagvr::CustomerExtensionSetting expectedResponse = new gagvr::CustomerExtensionSetting
+            {
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                ExtensionFeedItemsAsExtensionFeedItemNames =
+                {
+                    gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                },
+                Device = gagve::ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unknown,
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerExtensionSetting(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomerExtensionSetting response = client.GetCustomerExtensionSetting(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCustomerExtensionSettingRequestObjectAsync()
+        {
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerExtensionSettingRequest request = new GetCustomerExtensionSettingRequest
+            {
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
+            };
+            gagvr::CustomerExtensionSetting expectedResponse = new gagvr::CustomerExtensionSetting
+            {
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                ExtensionFeedItemsAsExtensionFeedItemNames =
+                {
+                    gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                },
+                Device = gagve::ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unknown,
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerExtensionSettingAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerExtensionSetting>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomerExtensionSetting responseCallSettings = await client.GetCustomerExtensionSettingAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomerExtensionSetting responseCancellationToken = await client.GetCustomerExtensionSettingAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCustomerExtensionSetting()
         {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
-            GetCustomerExtensionSettingRequest expectedRequest = new GetCustomerExtensionSettingRequest
-            {
-                ResourceName = new CustomerExtensionSettingName("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]").ToString(),
-            };
-            CustomerExtensionSetting expectedResponse = new CustomerExtensionSetting
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomerExtensionSetting(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerExtensionSettingName("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]").ToString();
-            CustomerExtensionSetting response = client.GetCustomerExtensionSetting(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCustomerExtensionSettingAsync()
-        {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
-            GetCustomerExtensionSettingRequest expectedRequest = new GetCustomerExtensionSettingRequest
-            {
-                ResourceName = new CustomerExtensionSettingName("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]").ToString(),
-            };
-            CustomerExtensionSetting expectedResponse = new CustomerExtensionSetting
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomerExtensionSettingAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CustomerExtensionSetting>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerExtensionSettingName("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]").ToString();
-            CustomerExtensionSetting response = await client.GetCustomerExtensionSettingAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCustomerExtensionSetting2()
-        {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
             GetCustomerExtensionSettingRequest request = new GetCustomerExtensionSettingRequest
             {
-                ResourceName = new CustomerExtensionSettingName("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]").ToString(),
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
             };
-            CustomerExtensionSetting expectedResponse = new CustomerExtensionSetting
+            gagvr::CustomerExtensionSetting expectedResponse = new gagvr::CustomerExtensionSetting
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                ExtensionFeedItemsAsExtensionFeedItemNames =
+                {
+                    gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                },
+                Device = gagve::ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unknown,
             };
-            mockGrpcClient.Setup(x => x.GetCustomerExtensionSetting(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCustomerExtensionSetting(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
-            CustomerExtensionSetting response = client.GetCustomerExtensionSetting(request);
+            gagvr::CustomerExtensionSetting response = client.GetCustomerExtensionSetting(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCustomerExtensionSettingAsync2()
+        public async stt::Task GetCustomerExtensionSettingAsync()
         {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
             GetCustomerExtensionSettingRequest request = new GetCustomerExtensionSettingRequest
             {
-                ResourceName = new CustomerExtensionSettingName("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]").ToString(),
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
             };
-            CustomerExtensionSetting expectedResponse = new CustomerExtensionSetting
+            gagvr::CustomerExtensionSetting expectedResponse = new gagvr::CustomerExtensionSetting
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                ExtensionFeedItemsAsExtensionFeedItemNames =
+                {
+                    gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                },
+                Device = gagve::ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unknown,
             };
-            mockGrpcClient.Setup(x => x.GetCustomerExtensionSettingAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CustomerExtensionSetting>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCustomerExtensionSettingAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerExtensionSetting>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
-            CustomerExtensionSetting response = await client.GetCustomerExtensionSettingAsync(request);
+            gagvr::CustomerExtensionSetting responseCallSettings = await client.GetCustomerExtensionSettingAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomerExtensionSetting responseCancellationToken = await client.GetCustomerExtensionSettingAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCustomerExtensionSettingResourceNames()
+        {
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerExtensionSettingRequest request = new GetCustomerExtensionSettingRequest
+            {
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
+            };
+            gagvr::CustomerExtensionSetting expectedResponse = new gagvr::CustomerExtensionSetting
+            {
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                ExtensionFeedItemsAsExtensionFeedItemNames =
+                {
+                    gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                },
+                Device = gagve::ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unknown,
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerExtensionSetting(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomerExtensionSetting response = client.GetCustomerExtensionSetting(request.ResourceNameAsCustomerExtensionSettingName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCustomerExtensionSettings()
+        public async stt::Task GetCustomerExtensionSettingResourceNamesAsync()
         {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
-            MutateCustomerExtensionSettingsRequest expectedRequest = new MutateCustomerExtensionSettingsRequest
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerExtensionSettingRequest request = new GetCustomerExtensionSettingRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
             };
-            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettings(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CustomerExtensionSetting expectedResponse = new gagvr::CustomerExtensionSetting
+            {
+                ResourceNameAsCustomerExtensionSettingName = gagvr::CustomerExtensionSettingName.FromCustomerCustomerExtensionSetting("[CUSTOMER]", "[CUSTOMER_EXTENSION_SETTING]"),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                ExtensionFeedItemsAsExtensionFeedItemNames =
+                {
+                    gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                },
+                Device = gagve::ExtensionSettingDeviceEnum.Types.ExtensionSettingDevice.Unknown,
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerExtensionSettingAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerExtensionSetting>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerExtensionSettingOperation> operations = new List<CustomerExtensionSettingOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCustomerExtensionSettingsResponse response = client.MutateCustomerExtensionSettings(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CustomerExtensionSetting responseCallSettings = await client.GetCustomerExtensionSettingAsync(request.ResourceNameAsCustomerExtensionSettingName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomerExtensionSetting responseCancellationToken = await client.GetCustomerExtensionSettingAsync(request.ResourceNameAsCustomerExtensionSettingName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCustomerExtensionSettingsAsync()
+        public void MutateCustomerExtensionSettingsRequestObject()
         {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
-            MutateCustomerExtensionSettingsRequest expectedRequest = new MutateCustomerExtensionSettingsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettingsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerExtensionSettingsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerExtensionSettingOperation> operations = new List<CustomerExtensionSettingOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCustomerExtensionSettingsResponse response = await client.MutateCustomerExtensionSettingsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCustomerExtensionSettings2()
-        {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
-            MutateCustomerExtensionSettingsRequest expectedRequest = new MutateCustomerExtensionSettingsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettings(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerExtensionSettingOperation> operations = new List<CustomerExtensionSettingOperation>();
-            MutateCustomerExtensionSettingsResponse response = client.MutateCustomerExtensionSettings(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCustomerExtensionSettingsAsync2()
-        {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
-            MutateCustomerExtensionSettingsRequest expectedRequest = new MutateCustomerExtensionSettingsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettingsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerExtensionSettingsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerExtensionSettingOperation> operations = new List<CustomerExtensionSettingOperation>();
-            MutateCustomerExtensionSettingsResponse response = await client.MutateCustomerExtensionSettingsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCustomerExtensionSettings3()
-        {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
             MutateCustomerExtensionSettingsRequest request = new MutateCustomerExtensionSettingsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerExtensionSettingOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettings(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse
+            {
+                Results =
+                {
+                    new MutateCustomerExtensionSettingResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettings(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
             MutateCustomerExtensionSettingsResponse response = client.MutateCustomerExtensionSettings(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +216,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateCustomerExtensionSettingsAsync3()
+        public async stt::Task MutateCustomerExtensionSettingsRequestObjectAsync()
         {
-            Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
             MutateCustomerExtensionSettingsRequest request = new MutateCustomerExtensionSettingsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerExtensionSettingOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettingsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerExtensionSettingsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse
+            {
+                Results =
+                {
+                    new MutateCustomerExtensionSettingResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettingsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerExtensionSettingsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCustomerExtensionSettingsResponse response = await client.MutateCustomerExtensionSettingsAsync(request);
+            MutateCustomerExtensionSettingsResponse responseCallSettings = await client.MutateCustomerExtensionSettingsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomerExtensionSettingsResponse responseCancellationToken = await client.MutateCustomerExtensionSettingsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCustomerExtensionSettings()
+        {
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomerExtensionSettingsRequest request = new MutateCustomerExtensionSettingsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerExtensionSettingOperation(),
+                },
+            };
+            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse
+            {
+                Results =
+                {
+                    new MutateCustomerExtensionSettingResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettings(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomerExtensionSettingsResponse response = client.MutateCustomerExtensionSettings(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCustomerExtensionSettingsAsync()
+        {
+            moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CustomerExtensionSettingService.CustomerExtensionSettingServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomerExtensionSettingsRequest request = new MutateCustomerExtensionSettingsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerExtensionSettingOperation(),
+                },
+            };
+            MutateCustomerExtensionSettingsResponse expectedResponse = new MutateCustomerExtensionSettingsResponse
+            {
+                Results =
+                {
+                    new MutateCustomerExtensionSettingResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerExtensionSettingsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerExtensionSettingsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerExtensionSettingServiceClient client = new CustomerExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomerExtensionSettingsResponse responseCallSettings = await client.MutateCustomerExtensionSettingsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomerExtensionSettingsResponse responseCancellationToken = await client.MutateCustomerExtensionSettingsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

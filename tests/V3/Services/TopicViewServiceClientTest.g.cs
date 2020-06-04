@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedTopicViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedTopicViewServiceClientTest
     {
+        [Test]
+        public void GetTopicViewRequestObject()
+        {
+            moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
+            GetTopicViewRequest request = new GetTopicViewRequest
+            {
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
+            };
+            gagvr::TopicView expectedResponse = new gagvr::TopicView
+            {
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetTopicView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            TopicViewServiceClient client = new TopicViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::TopicView response = client.GetTopicView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetTopicViewRequestObjectAsync()
+        {
+            moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
+            GetTopicViewRequest request = new GetTopicViewRequest
+            {
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
+            };
+            gagvr::TopicView expectedResponse = new gagvr::TopicView
+            {
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetTopicViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::TopicView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            TopicViewServiceClient client = new TopicViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::TopicView responseCallSettings = await client.GetTopicViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::TopicView responseCancellationToken = await client.GetTopicViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetTopicView()
         {
-            Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new Mock<TopicViewService.TopicViewServiceClient>(MockBehavior.Strict);
-            GetTopicViewRequest expectedRequest = new GetTopicViewRequest
-            {
-                ResourceName = new TopicViewName("[CUSTOMER]", "[TOPIC_VIEW]").ToString(),
-            };
-            TopicView expectedResponse = new TopicView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetTopicView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            TopicViewServiceClient client = new TopicViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new TopicViewName("[CUSTOMER]", "[TOPIC_VIEW]").ToString();
-            TopicView response = client.GetTopicView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetTopicViewAsync()
-        {
-            Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new Mock<TopicViewService.TopicViewServiceClient>(MockBehavior.Strict);
-            GetTopicViewRequest expectedRequest = new GetTopicViewRequest
-            {
-                ResourceName = new TopicViewName("[CUSTOMER]", "[TOPIC_VIEW]").ToString(),
-            };
-            TopicView expectedResponse = new TopicView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetTopicViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<TopicView>(Task.FromResult(expectedResponse), null, null, null, null));
-            TopicViewServiceClient client = new TopicViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new TopicViewName("[CUSTOMER]", "[TOPIC_VIEW]").ToString();
-            TopicView response = await client.GetTopicViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetTopicView2()
-        {
-            Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new Mock<TopicViewService.TopicViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
             GetTopicViewRequest request = new GetTopicViewRequest
             {
-                ResourceName = new TopicViewName("[CUSTOMER]", "[TOPIC_VIEW]").ToString(),
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
             };
-            TopicView expectedResponse = new TopicView
+            gagvr::TopicView expectedResponse = new gagvr::TopicView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetTopicView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetTopicView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             TopicViewServiceClient client = new TopicViewServiceClientImpl(mockGrpcClient.Object, null);
-            TopicView response = client.GetTopicView(request);
+            gagvr::TopicView response = client.GetTopicView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetTopicViewAsync2()
+        public async stt::Task GetTopicViewAsync()
         {
-            Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new Mock<TopicViewService.TopicViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
             GetTopicViewRequest request = new GetTopicViewRequest
             {
-                ResourceName = new TopicViewName("[CUSTOMER]", "[TOPIC_VIEW]").ToString(),
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
             };
-            TopicView expectedResponse = new TopicView
+            gagvr::TopicView expectedResponse = new gagvr::TopicView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetTopicViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<TopicView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetTopicViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::TopicView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             TopicViewServiceClient client = new TopicViewServiceClientImpl(mockGrpcClient.Object, null);
-            TopicView response = await client.GetTopicViewAsync(request);
+            gagvr::TopicView responseCallSettings = await client.GetTopicViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::TopicView responseCancellationToken = await client.GetTopicViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetTopicViewResourceNames()
+        {
+            moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
+            GetTopicViewRequest request = new GetTopicViewRequest
+            {
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
+            };
+            gagvr::TopicView expectedResponse = new gagvr::TopicView
+            {
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetTopicView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            TopicViewServiceClient client = new TopicViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::TopicView response = client.GetTopicView(request.ResourceNameAsTopicViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetTopicViewResourceNamesAsync()
+        {
+            moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
+            GetTopicViewRequest request = new GetTopicViewRequest
+            {
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
+            };
+            gagvr::TopicView expectedResponse = new gagvr::TopicView
+            {
+                ResourceNameAsTopicViewName = gagvr::TopicViewName.FromCustomerTopicView("[CUSTOMER]", "[TOPIC_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetTopicViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::TopicView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            TopicViewServiceClient client = new TopicViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::TopicView responseCallSettings = await client.GetTopicViewAsync(request.ResourceNameAsTopicViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::TopicView responseCancellationToken = await client.GetTopicViewAsync(request.ResourceNameAsTopicViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -14,216 +14,201 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V3.Common;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedRemarketingActionServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedRemarketingActionServiceClientTest
     {
+        [Test]
+        public void GetRemarketingActionRequestObject()
+        {
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
+            GetRemarketingActionRequest request = new GetRemarketingActionRequest
+            {
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+            };
+            gagvr::RemarketingAction expectedResponse = new gagvr::RemarketingAction
+            {
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                Id = -6774108720365892680L,
+                RemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetRemarketingAction(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::RemarketingAction response = client.GetRemarketingAction(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetRemarketingActionRequestObjectAsync()
+        {
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
+            GetRemarketingActionRequest request = new GetRemarketingActionRequest
+            {
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+            };
+            gagvr::RemarketingAction expectedResponse = new gagvr::RemarketingAction
+            {
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                Id = -6774108720365892680L,
+                RemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetRemarketingActionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::RemarketingAction>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::RemarketingAction responseCallSettings = await client.GetRemarketingActionAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::RemarketingAction responseCancellationToken = await client.GetRemarketingActionAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetRemarketingAction()
         {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
-            GetRemarketingActionRequest expectedRequest = new GetRemarketingActionRequest
-            {
-                ResourceName = new RemarketingActionName("[CUSTOMER]", "[REMARKETING_ACTION]").ToString(),
-            };
-            RemarketingAction expectedResponse = new RemarketingAction
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetRemarketingAction(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new RemarketingActionName("[CUSTOMER]", "[REMARKETING_ACTION]").ToString();
-            RemarketingAction response = client.GetRemarketingAction(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetRemarketingActionAsync()
-        {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
-            GetRemarketingActionRequest expectedRequest = new GetRemarketingActionRequest
-            {
-                ResourceName = new RemarketingActionName("[CUSTOMER]", "[REMARKETING_ACTION]").ToString(),
-            };
-            RemarketingAction expectedResponse = new RemarketingAction
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetRemarketingActionAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<RemarketingAction>(Task.FromResult(expectedResponse), null, null, null, null));
-            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new RemarketingActionName("[CUSTOMER]", "[REMARKETING_ACTION]").ToString();
-            RemarketingAction response = await client.GetRemarketingActionAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetRemarketingAction2()
-        {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
             GetRemarketingActionRequest request = new GetRemarketingActionRequest
             {
-                ResourceName = new RemarketingActionName("[CUSTOMER]", "[REMARKETING_ACTION]").ToString(),
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
             };
-            RemarketingAction expectedResponse = new RemarketingAction
+            gagvr::RemarketingAction expectedResponse = new gagvr::RemarketingAction
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                Id = -6774108720365892680L,
+                RemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetRemarketingAction(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetRemarketingAction(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
-            RemarketingAction response = client.GetRemarketingAction(request);
+            gagvr::RemarketingAction response = client.GetRemarketingAction(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetRemarketingActionAsync2()
+        public async stt::Task GetRemarketingActionAsync()
         {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
             GetRemarketingActionRequest request = new GetRemarketingActionRequest
             {
-                ResourceName = new RemarketingActionName("[CUSTOMER]", "[REMARKETING_ACTION]").ToString(),
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
             };
-            RemarketingAction expectedResponse = new RemarketingAction
+            gagvr::RemarketingAction expectedResponse = new gagvr::RemarketingAction
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                Id = -6774108720365892680L,
+                RemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetRemarketingActionAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<RemarketingAction>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetRemarketingActionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::RemarketingAction>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
-            RemarketingAction response = await client.GetRemarketingActionAsync(request);
+            gagvr::RemarketingAction responseCallSettings = await client.GetRemarketingActionAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::RemarketingAction responseCancellationToken = await client.GetRemarketingActionAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetRemarketingActionResourceNames()
+        {
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
+            GetRemarketingActionRequest request = new GetRemarketingActionRequest
+            {
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+            };
+            gagvr::RemarketingAction expectedResponse = new gagvr::RemarketingAction
+            {
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                Id = -6774108720365892680L,
+                RemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetRemarketingAction(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::RemarketingAction response = client.GetRemarketingAction(request.ResourceNameAsRemarketingActionName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateRemarketingActions()
+        public async stt::Task GetRemarketingActionResourceNamesAsync()
         {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
-            MutateRemarketingActionsRequest expectedRequest = new MutateRemarketingActionsRequest
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
+            GetRemarketingActionRequest request = new GetRemarketingActionRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
             };
-            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateRemarketingActions(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::RemarketingAction expectedResponse = new gagvr::RemarketingAction
+            {
+                ResourceNameAsRemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                Id = -6774108720365892680L,
+                RemarketingActionName = gagvr::RemarketingActionName.FromCustomerRemarketingAction("[CUSTOMER]", "[REMARKETING_ACTION]"),
+                TagSnippets =
+                {
+                    new gagvc::TagSnippet(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetRemarketingActionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::RemarketingAction>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<RemarketingActionOperation> operations = new List<RemarketingActionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateRemarketingActionsResponse response = client.MutateRemarketingActions(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::RemarketingAction responseCallSettings = await client.GetRemarketingActionAsync(request.ResourceNameAsRemarketingActionName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::RemarketingAction responseCancellationToken = await client.GetRemarketingActionAsync(request.ResourceNameAsRemarketingActionName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateRemarketingActionsAsync()
+        public void MutateRemarketingActionsRequestObject()
         {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
-            MutateRemarketingActionsRequest expectedRequest = new MutateRemarketingActionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateRemarketingActionsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateRemarketingActionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<RemarketingActionOperation> operations = new List<RemarketingActionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateRemarketingActionsResponse response = await client.MutateRemarketingActionsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateRemarketingActions2()
-        {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
-            MutateRemarketingActionsRequest expectedRequest = new MutateRemarketingActionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateRemarketingActions(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<RemarketingActionOperation> operations = new List<RemarketingActionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateRemarketingActionsResponse response = client.MutateRemarketingActions(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateRemarketingActionsAsync2()
-        {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
-            MutateRemarketingActionsRequest expectedRequest = new MutateRemarketingActionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateRemarketingActionsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateRemarketingActionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<RemarketingActionOperation> operations = new List<RemarketingActionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateRemarketingActionsResponse response = await client.MutateRemarketingActionsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateRemarketingActions3()
-        {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
             MutateRemarketingActionsRequest request = new MutateRemarketingActionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new RemarketingActionOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateRemarketingActions(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse
+            {
+                Results =
+                {
+                    new MutateRemarketingActionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateRemarketingActions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
             MutateRemarketingActionsResponse response = client.MutateRemarketingActions(request);
             Assert.AreEqual(expectedResponse, response);
@@ -231,22 +216,90 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task MutateRemarketingActionsAsync3()
+        public async stt::Task MutateRemarketingActionsRequestObjectAsync()
         {
-            Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new Mock<RemarketingActionService.RemarketingActionServiceClient>(MockBehavior.Strict);
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
             MutateRemarketingActionsRequest request = new MutateRemarketingActionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new RemarketingActionOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse();
-            mockGrpcClient.Setup(x => x.MutateRemarketingActionsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateRemarketingActionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse
+            {
+                Results =
+                {
+                    new MutateRemarketingActionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateRemarketingActionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateRemarketingActionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
-            MutateRemarketingActionsResponse response = await client.MutateRemarketingActionsAsync(request);
+            MutateRemarketingActionsResponse responseCallSettings = await client.MutateRemarketingActionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateRemarketingActionsResponse responseCancellationToken = await client.MutateRemarketingActionsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateRemarketingActions()
+        {
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
+            MutateRemarketingActionsRequest request = new MutateRemarketingActionsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new RemarketingActionOperation(),
+                },
+            };
+            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse
+            {
+                Results =
+                {
+                    new MutateRemarketingActionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateRemarketingActions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateRemarketingActionsResponse response = client.MutateRemarketingActions(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateRemarketingActionsAsync()
+        {
+            moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
+            MutateRemarketingActionsRequest request = new MutateRemarketingActionsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new RemarketingActionOperation(),
+                },
+            };
+            MutateRemarketingActionsResponse expectedResponse = new MutateRemarketingActionsResponse
+            {
+                Results =
+                {
+                    new MutateRemarketingActionResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateRemarketingActionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateRemarketingActionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateRemarketingActionsResponse responseCallSettings = await client.MutateRemarketingActionsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateRemarketingActionsResponse responseCancellationToken = await client.MutateRemarketingActionsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

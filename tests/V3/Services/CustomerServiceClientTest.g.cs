@@ -14,209 +14,258 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Enums;
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCustomerServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCustomerServiceClientTest
     {
+        [Test]
+        public void GetCustomerRequestObject()
+        {
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerRequest request = new GetCustomerRequest
+            {
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+            };
+            gagvr::Customer expectedResponse = new gagvr::Customer
+            {
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                Id = -6774108720365892680L,
+                DescriptiveName = "descriptive_nameee37a0bc",
+                CurrencyCode = "currency_code7f81e352",
+                TimeZone = "time_zone73f23b20",
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                AutoTaggingEnabled = true,
+                HasPartnersBadge = true,
+                CallReportingSetting = new gagvr::CallReportingSetting(),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                Manager = false,
+                TestAccount = true,
+                ConversionTrackingSetting = new gagvr::ConversionTrackingSetting(),
+                RemarketingSetting = new gagvr::RemarketingSetting(),
+                PayPerConversionEligibilityFailureReasons =
+                {
+                    gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetCustomer(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Customer response = client.GetCustomer(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCustomerRequestObjectAsync()
+        {
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerRequest request = new GetCustomerRequest
+            {
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+            };
+            gagvr::Customer expectedResponse = new gagvr::Customer
+            {
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                Id = -6774108720365892680L,
+                DescriptiveName = "descriptive_nameee37a0bc",
+                CurrencyCode = "currency_code7f81e352",
+                TimeZone = "time_zone73f23b20",
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                AutoTaggingEnabled = true,
+                HasPartnersBadge = true,
+                CallReportingSetting = new gagvr::CallReportingSetting(),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                Manager = false,
+                TestAccount = true,
+                ConversionTrackingSetting = new gagvr::ConversionTrackingSetting(),
+                RemarketingSetting = new gagvr::RemarketingSetting(),
+                PayPerConversionEligibilityFailureReasons =
+                {
+                    gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Customer>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Customer responseCallSettings = await client.GetCustomerAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Customer responseCancellationToken = await client.GetCustomerAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCustomer()
         {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            GetCustomerRequest expectedRequest = new GetCustomerRequest
-            {
-                ResourceName = new CustomerName("[CUSTOMER]").ToString(),
-            };
-            Customer expectedResponse = new Customer
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomer(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerName("[CUSTOMER]").ToString();
-            Customer response = client.GetCustomer(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCustomerAsync()
-        {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            GetCustomerRequest expectedRequest = new GetCustomerRequest
-            {
-                ResourceName = new CustomerName("[CUSTOMER]").ToString(),
-            };
-            Customer expectedResponse = new Customer
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomerAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Customer>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerName("[CUSTOMER]").ToString();
-            Customer response = await client.GetCustomerAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCustomer2()
-        {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
             GetCustomerRequest request = new GetCustomerRequest
             {
-                ResourceName = new CustomerName("[CUSTOMER]").ToString(),
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
             };
-            Customer expectedResponse = new Customer
+            gagvr::Customer expectedResponse = new gagvr::Customer
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                Id = -6774108720365892680L,
+                DescriptiveName = "descriptive_nameee37a0bc",
+                CurrencyCode = "currency_code7f81e352",
+                TimeZone = "time_zone73f23b20",
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                AutoTaggingEnabled = true,
+                HasPartnersBadge = true,
+                CallReportingSetting = new gagvr::CallReportingSetting(),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                Manager = false,
+                TestAccount = true,
+                ConversionTrackingSetting = new gagvr::ConversionTrackingSetting(),
+                RemarketingSetting = new gagvr::RemarketingSetting(),
+                PayPerConversionEligibilityFailureReasons =
+                {
+                    gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
+                },
             };
-            mockGrpcClient.Setup(x => x.GetCustomer(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCustomer(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            Customer response = client.GetCustomer(request);
+            gagvr::Customer response = client.GetCustomer(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCustomerAsync2()
+        public async stt::Task GetCustomerAsync()
         {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
             GetCustomerRequest request = new GetCustomerRequest
             {
-                ResourceName = new CustomerName("[CUSTOMER]").ToString(),
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
             };
-            Customer expectedResponse = new Customer
+            gagvr::Customer expectedResponse = new gagvr::Customer
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                Id = -6774108720365892680L,
+                DescriptiveName = "descriptive_nameee37a0bc",
+                CurrencyCode = "currency_code7f81e352",
+                TimeZone = "time_zone73f23b20",
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                AutoTaggingEnabled = true,
+                HasPartnersBadge = true,
+                CallReportingSetting = new gagvr::CallReportingSetting(),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                Manager = false,
+                TestAccount = true,
+                ConversionTrackingSetting = new gagvr::ConversionTrackingSetting(),
+                RemarketingSetting = new gagvr::RemarketingSetting(),
+                PayPerConversionEligibilityFailureReasons =
+                {
+                    gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
+                },
             };
-            mockGrpcClient.Setup(x => x.GetCustomerAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Customer>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCustomerAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Customer>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            Customer response = await client.GetCustomerAsync(request);
+            gagvr::Customer responseCallSettings = await client.GetCustomerAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Customer responseCancellationToken = await client.GetCustomerAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCustomerResourceNames()
+        {
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerRequest request = new GetCustomerRequest
+            {
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+            };
+            gagvr::Customer expectedResponse = new gagvr::Customer
+            {
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                Id = -6774108720365892680L,
+                DescriptiveName = "descriptive_nameee37a0bc",
+                CurrencyCode = "currency_code7f81e352",
+                TimeZone = "time_zone73f23b20",
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                AutoTaggingEnabled = true,
+                HasPartnersBadge = true,
+                CallReportingSetting = new gagvr::CallReportingSetting(),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                Manager = false,
+                TestAccount = true,
+                ConversionTrackingSetting = new gagvr::ConversionTrackingSetting(),
+                RemarketingSetting = new gagvr::RemarketingSetting(),
+                PayPerConversionEligibilityFailureReasons =
+                {
+                    gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetCustomer(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Customer response = client.GetCustomer(request.ResourceNameAsCustomerName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCustomer()
+        public async stt::Task GetCustomerResourceNamesAsync()
         {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            MutateCustomerRequest expectedRequest = new MutateCustomerRequest
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerRequest request = new GetCustomerRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operation = new CustomerOperation(),
-                ValidateOnly = false,
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
             };
-            MutateCustomerResponse expectedResponse = new MutateCustomerResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomer(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::Customer expectedResponse = new gagvr::Customer
+            {
+                ResourceNameAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                Id = -6774108720365892680L,
+                DescriptiveName = "descriptive_nameee37a0bc",
+                CurrencyCode = "currency_code7f81e352",
+                TimeZone = "time_zone73f23b20",
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                AutoTaggingEnabled = true,
+                HasPartnersBadge = true,
+                CallReportingSetting = new gagvr::CallReportingSetting(),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+                Manager = false,
+                TestAccount = true,
+                ConversionTrackingSetting = new gagvr::ConversionTrackingSetting(),
+                RemarketingSetting = new gagvr::RemarketingSetting(),
+                PayPerConversionEligibilityFailureReasons =
+                {
+                    gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Customer>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            CustomerOperation operation = new CustomerOperation();
-            bool validateOnly = false;
-            MutateCustomerResponse response = client.MutateCustomer(customerId, operation, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::Customer responseCallSettings = await client.GetCustomerAsync(request.ResourceNameAsCustomerName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Customer responseCancellationToken = await client.GetCustomerAsync(request.ResourceNameAsCustomerName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCustomerAsync()
+        public void MutateCustomerRequestObject()
         {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            MutateCustomerRequest expectedRequest = new MutateCustomerRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operation = new CustomerOperation(),
-                ValidateOnly = false,
-            };
-            MutateCustomerResponse expectedResponse = new MutateCustomerResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            CustomerOperation operation = new CustomerOperation();
-            bool validateOnly = false;
-            MutateCustomerResponse response = await client.MutateCustomerAsync(customerId, operation, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCustomer2()
-        {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            MutateCustomerRequest expectedRequest = new MutateCustomerRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operation = new CustomerOperation(),
-                ValidateOnly = false,
-            };
-            MutateCustomerResponse expectedResponse = new MutateCustomerResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomer(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            CustomerOperation operation = new CustomerOperation();
-            bool validateOnly = false;
-            MutateCustomerResponse response = client.MutateCustomer(customerId, operation, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCustomerAsync2()
-        {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            MutateCustomerRequest expectedRequest = new MutateCustomerRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operation = new CustomerOperation(),
-                ValidateOnly = false,
-            };
-            MutateCustomerResponse expectedResponse = new MutateCustomerResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            CustomerOperation operation = new CustomerOperation();
-            bool validateOnly = false;
-            MutateCustomerResponse response = await client.MutateCustomerAsync(customerId, operation, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCustomer3()
-        {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
             MutateCustomerRequest request = new MutateCustomerRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
                 Operation = new CustomerOperation(),
+                ValidateOnly = true,
             };
-            MutateCustomerResponse expectedResponse = new MutateCustomerResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomer(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCustomerResponse expectedResponse = new MutateCustomerResponse
+            {
+                Result = new MutateCustomerResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomer(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
             MutateCustomerResponse response = client.MutateCustomer(request);
             Assert.AreEqual(expectedResponse, response);
@@ -224,31 +273,83 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task MutateCustomerAsync3()
+        public async stt::Task MutateCustomerRequestObjectAsync()
         {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
             MutateCustomerRequest request = new MutateCustomerRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
+                Operation = new CustomerOperation(),
+                ValidateOnly = true,
+            };
+            MutateCustomerResponse expectedResponse = new MutateCustomerResponse
+            {
+                Result = new MutateCustomerResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomerResponse responseCallSettings = await client.MutateCustomerAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomerResponse responseCancellationToken = await client.MutateCustomerAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCustomer()
+        {
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomerRequest request = new MutateCustomerRequest
+            {
+                CustomerId = "customer_id3b3724cb",
                 Operation = new CustomerOperation(),
             };
-            MutateCustomerResponse expectedResponse = new MutateCustomerResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCustomerResponse expectedResponse = new MutateCustomerResponse
+            {
+                Result = new MutateCustomerResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomer(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCustomerResponse response = await client.MutateCustomerAsync(request);
+            MutateCustomerResponse response = client.MutateCustomer(request.CustomerId, request.Operation);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void ListAccessibleCustomers()
+        public async stt::Task MutateCustomerAsync()
         {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            ListAccessibleCustomersRequest request = new ListAccessibleCustomersRequest();
-            ListAccessibleCustomersResponse expectedResponse = new ListAccessibleCustomersResponse();
-            mockGrpcClient.Setup(x => x.ListAccessibleCustomers(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomerRequest request = new MutateCustomerRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operation = new CustomerOperation(),
+            };
+            MutateCustomerResponse expectedResponse = new MutateCustomerResponse
+            {
+                Result = new MutateCustomerResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomerResponse responseCallSettings = await client.MutateCustomerAsync(request.CustomerId, request.Operation, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomerResponse responseCancellationToken = await client.MutateCustomerAsync(request.CustomerId, request.Operation, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void ListAccessibleCustomersRequestObject()
+        {
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            ListAccessibleCustomersRequest request = new ListAccessibleCustomersRequest { };
+            ListAccessibleCustomersResponse expectedResponse = new ListAccessibleCustomersResponse
+            {
+                ResourceNames =
+                {
+                    "resource_namese9b75273",
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListAccessibleCustomers(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
             ListAccessibleCustomersResponse response = client.ListAccessibleCustomers(request);
             Assert.AreEqual(expectedResponse, response);
@@ -256,142 +357,42 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task ListAccessibleCustomersAsync()
+        public async stt::Task ListAccessibleCustomersRequestObjectAsync()
         {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            ListAccessibleCustomersRequest request = new ListAccessibleCustomersRequest();
-            ListAccessibleCustomersResponse expectedResponse = new ListAccessibleCustomersResponse();
-            mockGrpcClient.Setup(x => x.ListAccessibleCustomersAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListAccessibleCustomersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            ListAccessibleCustomersRequest request = new ListAccessibleCustomersRequest { };
+            ListAccessibleCustomersResponse expectedResponse = new ListAccessibleCustomersResponse
+            {
+                ResourceNames =
+                {
+                    "resource_namese9b75273",
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListAccessibleCustomersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListAccessibleCustomersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            ListAccessibleCustomersResponse response = await client.ListAccessibleCustomersAsync(request);
-            Assert.AreEqual(expectedResponse, response);
+            ListAccessibleCustomersResponse responseCallSettings = await client.ListAccessibleCustomersAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListAccessibleCustomersResponse responseCancellationToken = await client.ListAccessibleCustomersAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void CreateCustomerClient()
+        public void CreateCustomerClientRequestObject()
         {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            CreateCustomerClientRequest expectedRequest = new CreateCustomerClientRequest
-            {
-                CustomerId = "customerId-1772061412",
-                CustomerClient = new Customer(),
-                EmailAddress = null,
-                AccessRole = AccessRoleEnum.Types.AccessRole.Unspecified,
-            };
-            CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
-            {
-                ResourceName = "resourceName979421212",
-            };
-            mockGrpcClient.Setup(x => x.CreateCustomerClient(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            Customer customerClient = new Customer();
-            string emailAddress = null;
-            AccessRoleEnum.Types.AccessRole accessRole = AccessRoleEnum.Types.AccessRole.Unspecified;
-            CreateCustomerClientResponse response = client.CreateCustomerClient(customerId, customerClient, emailAddress, accessRole);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task CreateCustomerClientAsync()
-        {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            CreateCustomerClientRequest expectedRequest = new CreateCustomerClientRequest
-            {
-                CustomerId = "customerId-1772061412",
-                CustomerClient = new Customer(),
-                EmailAddress = null,
-                AccessRole = AccessRoleEnum.Types.AccessRole.Unspecified,
-            };
-            CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
-            {
-                ResourceName = "resourceName979421212",
-            };
-            mockGrpcClient.Setup(x => x.CreateCustomerClientAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CreateCustomerClientResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            Customer customerClient = new Customer();
-            string emailAddress = null;
-            AccessRoleEnum.Types.AccessRole accessRole = AccessRoleEnum.Types.AccessRole.Unspecified;
-            CreateCustomerClientResponse response = await client.CreateCustomerClientAsync(customerId, customerClient, emailAddress, accessRole);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void CreateCustomerClient2()
-        {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            CreateCustomerClientRequest expectedRequest = new CreateCustomerClientRequest
-            {
-                CustomerId = "customerId-1772061412",
-                CustomerClient = new Customer(),
-                EmailAddress = null,
-                AccessRole = AccessRoleEnum.Types.AccessRole.Unspecified,
-            };
-            CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
-            {
-                ResourceName = "resourceName979421212",
-            };
-            mockGrpcClient.Setup(x => x.CreateCustomerClient(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            Customer customerClient = new Customer();
-            string emailAddress = null;
-            AccessRoleEnum.Types.AccessRole accessRole = AccessRoleEnum.Types.AccessRole.Unspecified;
-            CreateCustomerClientResponse response = client.CreateCustomerClient(customerId, customerClient, emailAddress, accessRole);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task CreateCustomerClientAsync2()
-        {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
-            CreateCustomerClientRequest expectedRequest = new CreateCustomerClientRequest
-            {
-                CustomerId = "customerId-1772061412",
-                CustomerClient = new Customer(),
-                EmailAddress = null,
-                AccessRole = AccessRoleEnum.Types.AccessRole.Unspecified,
-            };
-            CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
-            {
-                ResourceName = "resourceName979421212",
-            };
-            mockGrpcClient.Setup(x => x.CreateCustomerClientAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CreateCustomerClientResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            Customer customerClient = new Customer();
-            string emailAddress = null;
-            AccessRoleEnum.Types.AccessRole accessRole = AccessRoleEnum.Types.AccessRole.Unspecified;
-            CreateCustomerClientResponse response = await client.CreateCustomerClientAsync(customerId, customerClient, emailAddress, accessRole);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void CreateCustomerClient3()
-        {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
             CreateCustomerClientRequest request = new CreateCustomerClientRequest
             {
-                CustomerId = "customerId-1772061412",
-                CustomerClient = new Customer(),
+                CustomerId = "customer_id3b3724cb",
+                CustomerClient = new gagvr::Customer(),
+                EmailAddress = "email_addressf3aae0b5",
+                AccessRole = gagve::AccessRoleEnum.Types.AccessRole.Unspecified,
             };
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
-                ResourceName = "resourceName979421212",
+                ResourceName = "resource_name8cc2e687",
             };
-            mockGrpcClient.Setup(x => x.CreateCustomerClient(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.CreateCustomerClient(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
             CreateCustomerClientResponse response = client.CreateCustomerClient(request);
             Assert.AreEqual(expectedResponse, response);
@@ -399,25 +400,69 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task CreateCustomerClientAsync3()
+        public async stt::Task CreateCustomerClientRequestObjectAsync()
         {
-            Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new Mock<CustomerService.CustomerServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
             CreateCustomerClientRequest request = new CreateCustomerClientRequest
             {
-                CustomerId = "customerId-1772061412",
-                CustomerClient = new Customer(),
+                CustomerId = "customer_id3b3724cb",
+                CustomerClient = new gagvr::Customer(),
+                EmailAddress = "email_addressf3aae0b5",
+                AccessRole = gagve::AccessRoleEnum.Types.AccessRole.Unspecified,
             };
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
-                ResourceName = "resourceName979421212",
+                ResourceName = "resource_name8cc2e687",
             };
-            mockGrpcClient.Setup(x => x.CreateCustomerClientAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CreateCustomerClientResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.CreateCustomerClientAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateCustomerClientResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
-            CreateCustomerClientResponse response = await client.CreateCustomerClientAsync(request);
+            CreateCustomerClientResponse responseCallSettings = await client.CreateCustomerClientAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            CreateCustomerClientResponse responseCancellationToken = await client.CreateCustomerClientAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void CreateCustomerClient()
+        {
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            CreateCustomerClientRequest request = new CreateCustomerClientRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                CustomerClient = new gagvr::Customer(),
+            };
+            CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
+            {
+                ResourceName = "resource_name8cc2e687",
+            };
+            mockGrpcClient.Setup(x => x.CreateCustomerClient(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            CreateCustomerClientResponse response = client.CreateCustomerClient(request.CustomerId, request.CustomerClient);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task CreateCustomerClientAsync()
+        {
+            moq::Mock<CustomerService.CustomerServiceClient> mockGrpcClient = new moq::Mock<CustomerService.CustomerServiceClient>(moq::MockBehavior.Strict);
+            CreateCustomerClientRequest request = new CreateCustomerClientRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                CustomerClient = new gagvr::Customer(),
+            };
+            CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
+            {
+                ResourceName = "resource_name8cc2e687",
+            };
+            mockGrpcClient.Setup(x => x.CreateCustomerClientAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateCustomerClientResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
+            CreateCustomerClientResponse responseCallSettings = await client.CreateCustomerClientAsync(request.CustomerId, request.CustomerClient, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            CreateCustomerClientResponse responseCancellationToken = await client.CreateCustomerClientAsync(request.CustomerId, request.CustomerClient, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

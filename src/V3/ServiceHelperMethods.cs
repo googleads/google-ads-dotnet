@@ -12,19 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Protobuf.WellKnownTypes;
-using System.Linq;
-using gaxgrpc = Google.Api.Gax.Grpc;
-using gagve = Google.Ads.GoogleAds.V3.Enums;
-using scg = System.Collections.Generic;
-using stt = System.Threading.Tasks;
-using Google.Api.Gax;
-using Google.Api.Gax.Grpc;
-using static Google.Ads.GoogleAds.V3.Enums.SummaryRowSettingEnum.Types;
-using System;
 using Google.Ads.GoogleAds.V3.Errors;
-using System.Threading.Tasks;
+using Google.Api.Gax.Grpc;
+using System;
+using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
+using static Google.Ads.GoogleAds.V3.Enums.SummaryRowSettingEnum.Types;
 
 #pragma warning disable CS1591
 
@@ -39,39 +33,9 @@ namespace Google.Ads.GoogleAds.V3.Services
         }
     }
 
-    public abstract partial class GeoTargetConstantServiceClient
-    {
-        public virtual SuggestGeoTargetConstantsResponse SuggestGeoTargetConstants(
-            StringValue locale,
-            StringValue countryCode,
-            gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstants(
-                locale.Value, countryCode.Value, callSettings);
-
-        public virtual stt::Task<SuggestGeoTargetConstantsResponse> SuggestGeoTargetConstantsAsync(
-            StringValue locale,
-            StringValue countryCode,
-            gaxgrpc::CallSettings callSettings = null) => SuggestGeoTargetConstantsAsync(
-                locale.Value, countryCode.Value, callSettings);
-    }
-
     public abstract partial class GoogleAdsServiceClient
     {
-        public virtual PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> Search(
-            string customerId,
-            string query,
-            string pageToken = null,
-            int? pageSize = null,
-            CallSettings callSettings = null) => Search(
-                new SearchGoogleAdsRequest
-                {
-                    CustomerId = GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
-                    Query = GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
-                    PageToken = pageToken ?? "",
-                    PageSize = pageSize ?? 0,
-                },
-                callSettings);
-
-        public virtual Task SearchStreamAsync(
+        public virtual Task<SearchStreamStream> SearchStreamAsync(
             string customerId,
             string query,
             Action<SearchGoogleAdsStreamResponse> responseCallback,
@@ -87,19 +51,21 @@ namespace Google.Ads.GoogleAds.V3.Services
                 });
 
             // Issue a search request.
-            Task t = Task.Run(async () =>
+            Task<SearchStreamStream> t = Task.Run(async () =>
             {
-                while (await searchStream.ResponseStream.MoveNext(CancellationToken.None))
+                var responseStream = searchStream.GetResponseStream();
+                while (await responseStream.MoveNextAsync(CancellationToken.None))
                 {
-                    SearchGoogleAdsStreamResponse resp = searchStream.ResponseStream.Current;
+                    SearchGoogleAdsStreamResponse resp = responseStream.Current;
                     responseCallback(resp);
                 }
+                return searchStream;
             });
 
             return t;
         }
 
-        public virtual void SearchStream(
+        public virtual SearchStreamStream SearchStream(
             string customerId,
             string query,
             Action<SearchGoogleAdsStreamResponse> responseCallback,
@@ -108,9 +74,10 @@ namespace Google.Ads.GoogleAds.V3.Services
         {
             try
             {
-                Task t = SearchStreamAsync(customerId, query, responseCallback, summaryRowSetting,
-                    callSettings);
+                Task<SearchStreamStream> t = SearchStreamAsync(customerId, query, responseCallback,
+                    summaryRowSetting, callSettings);
                 t.Wait();
+                return t.Result;
             }
             catch (AggregateException ae)
             {
@@ -123,27 +90,6 @@ namespace Google.Ads.GoogleAds.V3.Services
                 throw;
             }
         }
-    }
-
-    public abstract partial class KeywordPlanIdeaServiceClient
-    {
-        public virtual GenerateKeywordIdeaResponse GenerateKeywordIdeas(
-            string customerId,
-            StringValue language,
-            scg::IEnumerable<string> geoTargetConstants,
-            gagve::KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork,
-            gaxgrpc::CallSettings callSettings = null) => GenerateKeywordIdeas(
-                customerId, language.Value, geoTargetConstants, keywordPlanNetwork,
-                callSettings);
-
-        public virtual stt::Task<GenerateKeywordIdeaResponse> GenerateKeywordIdeasAsync(
-            string customerId,
-            StringValue language,
-            scg::IEnumerable<string> geoTargetConstants,
-            gagve::KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork,
-            gaxgrpc::CallSettings callSettings = null) => GenerateKeywordIdeasAsync(
-                customerId, language.Value, geoTargetConstants, keywordPlanNetwork,
-                callSettings);
     }
 }
 

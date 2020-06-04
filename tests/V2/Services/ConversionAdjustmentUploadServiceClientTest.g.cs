@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,125 +14,43 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedConversionAdjustmentUploadServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedConversionAdjustmentUploadServiceClientTest
     {
         [Test]
-        public void UploadConversionAdjustments()
+        public void UploadConversionAdjustmentsRequestObject()
         {
-            Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(MockBehavior.Strict);
-            UploadConversionAdjustmentsRequest expectedRequest = new UploadConversionAdjustmentsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                ConversionAdjustments = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse();
-            mockGrpcClient.Setup(x => x.UploadConversionAdjustments(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ConversionAdjustmentUploadServiceClient client = new ConversionAdjustmentUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ConversionAdjustment> conversionAdjustments = new List<ConversionAdjustment>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            UploadConversionAdjustmentsResponse response = client.UploadConversionAdjustments(customerId, conversionAdjustments, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task UploadConversionAdjustmentsAsync()
-        {
-            Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(MockBehavior.Strict);
-            UploadConversionAdjustmentsRequest expectedRequest = new UploadConversionAdjustmentsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                ConversionAdjustments = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse();
-            mockGrpcClient.Setup(x => x.UploadConversionAdjustmentsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadConversionAdjustmentsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionAdjustmentUploadServiceClient client = new ConversionAdjustmentUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ConversionAdjustment> conversionAdjustments = new List<ConversionAdjustment>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            UploadConversionAdjustmentsResponse response = await client.UploadConversionAdjustmentsAsync(customerId, conversionAdjustments, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void UploadConversionAdjustments2()
-        {
-            Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(MockBehavior.Strict);
-            UploadConversionAdjustmentsRequest expectedRequest = new UploadConversionAdjustmentsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                ConversionAdjustments = { },
-            };
-            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse();
-            mockGrpcClient.Setup(x => x.UploadConversionAdjustments(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ConversionAdjustmentUploadServiceClient client = new ConversionAdjustmentUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ConversionAdjustment> conversionAdjustments = new List<ConversionAdjustment>();
-            UploadConversionAdjustmentsResponse response = client.UploadConversionAdjustments(customerId, conversionAdjustments);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task UploadConversionAdjustmentsAsync2()
-        {
-            Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(MockBehavior.Strict);
-            UploadConversionAdjustmentsRequest expectedRequest = new UploadConversionAdjustmentsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                ConversionAdjustments = { },
-            };
-            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse();
-            mockGrpcClient.Setup(x => x.UploadConversionAdjustmentsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadConversionAdjustmentsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionAdjustmentUploadServiceClient client = new ConversionAdjustmentUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ConversionAdjustment> conversionAdjustments = new List<ConversionAdjustment>();
-            UploadConversionAdjustmentsResponse response = await client.UploadConversionAdjustmentsAsync(customerId, conversionAdjustments);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void UploadConversionAdjustments3()
-        {
-            Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(moq::MockBehavior.Strict);
             UploadConversionAdjustmentsRequest request = new UploadConversionAdjustmentsRequest
             {
-                CustomerId = "customerId-1772061412",
-                ConversionAdjustments = { },
+                CustomerId = "customer_id3b3724cb",
+                ConversionAdjustments =
+                {
+                    new ConversionAdjustment(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse();
-            mockGrpcClient.Setup(x => x.UploadConversionAdjustments(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new ConversionAdjustmentResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadConversionAdjustments(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ConversionAdjustmentUploadServiceClient client = new ConversionAdjustmentUploadServiceClientImpl(mockGrpcClient.Object, null);
             UploadConversionAdjustmentsResponse response = client.UploadConversionAdjustments(request);
             Assert.AreEqual(expectedResponse, response);
@@ -140,22 +58,92 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task UploadConversionAdjustmentsAsync3()
+        public async stt::Task UploadConversionAdjustmentsRequestObjectAsync()
         {
-            Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(moq::MockBehavior.Strict);
             UploadConversionAdjustmentsRequest request = new UploadConversionAdjustmentsRequest
             {
-                CustomerId = "customerId-1772061412",
-                ConversionAdjustments = { },
+                CustomerId = "customer_id3b3724cb",
+                ConversionAdjustments =
+                {
+                    new ConversionAdjustment(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse();
-            mockGrpcClient.Setup(x => x.UploadConversionAdjustmentsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadConversionAdjustmentsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new ConversionAdjustmentResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadConversionAdjustmentsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadConversionAdjustmentsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ConversionAdjustmentUploadServiceClient client = new ConversionAdjustmentUploadServiceClientImpl(mockGrpcClient.Object, null);
-            UploadConversionAdjustmentsResponse response = await client.UploadConversionAdjustmentsAsync(request);
+            UploadConversionAdjustmentsResponse responseCallSettings = await client.UploadConversionAdjustmentsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            UploadConversionAdjustmentsResponse responseCancellationToken = await client.UploadConversionAdjustmentsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void UploadConversionAdjustments()
+        {
+            moq::Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(moq::MockBehavior.Strict);
+            UploadConversionAdjustmentsRequest request = new UploadConversionAdjustmentsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                ConversionAdjustments =
+                {
+                    new ConversionAdjustment(),
+                },
+                PartialFailure = false,
+            };
+            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new ConversionAdjustmentResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadConversionAdjustments(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ConversionAdjustmentUploadServiceClient client = new ConversionAdjustmentUploadServiceClientImpl(mockGrpcClient.Object, null);
+            UploadConversionAdjustmentsResponse response = client.UploadConversionAdjustments(request.CustomerId, request.ConversionAdjustments, request.PartialFailure);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task UploadConversionAdjustmentsAsync()
+        {
+            moq::Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionAdjustmentUploadService.ConversionAdjustmentUploadServiceClient>(moq::MockBehavior.Strict);
+            UploadConversionAdjustmentsRequest request = new UploadConversionAdjustmentsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                ConversionAdjustments =
+                {
+                    new ConversionAdjustment(),
+                },
+                PartialFailure = false,
+            };
+            UploadConversionAdjustmentsResponse expectedResponse = new UploadConversionAdjustmentsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new ConversionAdjustmentResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadConversionAdjustmentsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadConversionAdjustmentsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ConversionAdjustmentUploadServiceClient client = new ConversionAdjustmentUploadServiceClientImpl(mockGrpcClient.Object, null);
+            UploadConversionAdjustmentsResponse responseCallSettings = await client.UploadConversionAdjustmentsAsync(request.CustomerId, request.ConversionAdjustments, request.PartialFailure, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            UploadConversionAdjustmentsResponse responseCancellationToken = await client.UploadConversionAdjustmentsAsync(request.CustomerId, request.ConversionAdjustments, request.PartialFailure, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

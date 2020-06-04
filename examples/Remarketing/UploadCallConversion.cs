@@ -94,14 +94,20 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 CurrencyCode = "USD"
             };
 
+            UploadCallConversionsRequest request = new UploadCallConversionsRequest()
+            {
+                CustomerId = customerId.ToString(),
+                Conversions = { callConversion },
+                PartialFailure = true
+            };
+
             try
             {
                 // Issues a request to upload the call conversion. The partialFailure parameter
                 // is set to true, and validateOnly parameter to false as required by this method
                 // call.
                 UploadCallConversionsResponse response =
-                    conversionUploadService.UploadCallConversions(
-                    customerId.ToString(), new[] { callConversion }, true, false);
+                    conversionUploadService.UploadCallConversions(request);
 
                 // Prints the result.
                 CallConversionResult uploadedCallConversion = response.Results[0];
