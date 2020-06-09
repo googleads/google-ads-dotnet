@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Common;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Common;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.KeywordPlanNetworkEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example generates keyword ideas from a list of seed keywords or a seed page URL.
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long languageId, string[] keywordTexts, string pageUrl)
         {
             KeywordPlanIdeaServiceClient keywordPlanIdeaService =
-                client.GetService(Services.V3.KeywordPlanIdeaService);
+                client.GetService(Services.V4.KeywordPlanIdeaService);
 
             // Make sure that keywords and/or page URL were specified. The request must have
             // exactly one of urlSeed, keywordSeed, or keywordAndUrlSeed set.

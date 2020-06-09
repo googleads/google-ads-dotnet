@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example removes a keyword. To get keywords, run GetKeywords.cs.
@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V3.AdGroupCriterionService);
+                Services.V4.AdGroupCriterionService);
 
             // Create the operation.
             AdGroupCriterionOperation operation = new AdGroupCriterionOperation();

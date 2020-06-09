@@ -13,16 +13,16 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 using Google.Api.Gax;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example gets the metadata, such as whether the artifact is selectable, filterable
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the GoogleAdsFieldService.
             GoogleAdsFieldServiceClient googleAdsFieldService = client.GetService(
-                Services.V3.GoogleAdsFieldService);
+                Services.V4.GoogleAdsFieldService);
 
             // Create the query.
             string searchQuery = $"SELECT name, category, selectable, filterable, sortable, " +
