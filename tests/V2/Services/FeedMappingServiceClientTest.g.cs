@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,213 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedFeedMappingServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedFeedMappingServiceClientTest
     {
+        [Test]
+        public void GetFeedMappingRequestObject()
+        {
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
+            GetFeedMappingRequest request = new GetFeedMappingRequest
+            {
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
+            };
+            gagvr::FeedMapping expectedResponse = new gagvr::FeedMapping
+            {
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+                CriterionType = gagve::FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType.Unknown,
+                AttributeFieldMappings =
+                {
+                    new gagvr::AttributeFieldMapping(),
+                },
+                Status = gagve::FeedMappingStatusEnum.Types.FeedMappingStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetFeedMapping(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedMapping response = client.GetFeedMapping(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetFeedMappingRequestObjectAsync()
+        {
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
+            GetFeedMappingRequest request = new GetFeedMappingRequest
+            {
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
+            };
+            gagvr::FeedMapping expectedResponse = new gagvr::FeedMapping
+            {
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+                CriterionType = gagve::FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType.Unknown,
+                AttributeFieldMappings =
+                {
+                    new gagvr::AttributeFieldMapping(),
+                },
+                Status = gagve::FeedMappingStatusEnum.Types.FeedMappingStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetFeedMappingAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::FeedMapping>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedMapping responseCallSettings = await client.GetFeedMappingAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::FeedMapping responseCancellationToken = await client.GetFeedMappingAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetFeedMapping()
         {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
-            GetFeedMappingRequest expectedRequest = new GetFeedMappingRequest
-            {
-                ResourceName = new FeedMappingName("[CUSTOMER]", "[FEED_MAPPING]").ToString(),
-            };
-            FeedMapping expectedResponse = new FeedMapping
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetFeedMapping(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new FeedMappingName("[CUSTOMER]", "[FEED_MAPPING]").ToString();
-            FeedMapping response = client.GetFeedMapping(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetFeedMappingAsync()
-        {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
-            GetFeedMappingRequest expectedRequest = new GetFeedMappingRequest
-            {
-                ResourceName = new FeedMappingName("[CUSTOMER]", "[FEED_MAPPING]").ToString(),
-            };
-            FeedMapping expectedResponse = new FeedMapping
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetFeedMappingAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<FeedMapping>(Task.FromResult(expectedResponse), null, null, null, null));
-            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new FeedMappingName("[CUSTOMER]", "[FEED_MAPPING]").ToString();
-            FeedMapping response = await client.GetFeedMappingAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetFeedMapping2()
-        {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
             GetFeedMappingRequest request = new GetFeedMappingRequest
             {
-                ResourceName = new FeedMappingName("[CUSTOMER]", "[FEED_MAPPING]").ToString(),
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
             };
-            FeedMapping expectedResponse = new FeedMapping
+            gagvr::FeedMapping expectedResponse = new gagvr::FeedMapping
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+                CriterionType = gagve::FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType.Unknown,
+                AttributeFieldMappings =
+                {
+                    new gagvr::AttributeFieldMapping(),
+                },
+                Status = gagve::FeedMappingStatusEnum.Types.FeedMappingStatus.Enabled,
             };
-            mockGrpcClient.Setup(x => x.GetFeedMapping(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetFeedMapping(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
-            FeedMapping response = client.GetFeedMapping(request);
+            gagvr::FeedMapping response = client.GetFeedMapping(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetFeedMappingAsync2()
+        public async stt::Task GetFeedMappingAsync()
         {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
             GetFeedMappingRequest request = new GetFeedMappingRequest
             {
-                ResourceName = new FeedMappingName("[CUSTOMER]", "[FEED_MAPPING]").ToString(),
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
             };
-            FeedMapping expectedResponse = new FeedMapping
+            gagvr::FeedMapping expectedResponse = new gagvr::FeedMapping
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+                CriterionType = gagve::FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType.Unknown,
+                AttributeFieldMappings =
+                {
+                    new gagvr::AttributeFieldMapping(),
+                },
+                Status = gagve::FeedMappingStatusEnum.Types.FeedMappingStatus.Enabled,
             };
-            mockGrpcClient.Setup(x => x.GetFeedMappingAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<FeedMapping>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetFeedMappingAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::FeedMapping>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
-            FeedMapping response = await client.GetFeedMappingAsync(request);
+            gagvr::FeedMapping responseCallSettings = await client.GetFeedMappingAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::FeedMapping responseCancellationToken = await client.GetFeedMappingAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetFeedMappingResourceNames()
+        {
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
+            GetFeedMappingRequest request = new GetFeedMappingRequest
+            {
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
+            };
+            gagvr::FeedMapping expectedResponse = new gagvr::FeedMapping
+            {
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+                CriterionType = gagve::FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType.Unknown,
+                AttributeFieldMappings =
+                {
+                    new gagvr::AttributeFieldMapping(),
+                },
+                Status = gagve::FeedMappingStatusEnum.Types.FeedMappingStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetFeedMapping(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedMapping response = client.GetFeedMapping(request.ResourceNameAsFeedMappingName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateFeedMappings()
+        public async stt::Task GetFeedMappingResourceNamesAsync()
         {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
-            MutateFeedMappingsRequest expectedRequest = new MutateFeedMappingsRequest
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
+            GetFeedMappingRequest request = new GetFeedMappingRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
             };
-            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedMappings(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::FeedMapping expectedResponse = new gagvr::FeedMapping
+            {
+                ResourceNameAsFeedMappingName = gagvr::FeedMappingName.FromCustomerFeedMapping("[CUSTOMER]", "[FEED_MAPPING]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+                CriterionType = gagve::FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType.Unknown,
+                AttributeFieldMappings =
+                {
+                    new gagvr::AttributeFieldMapping(),
+                },
+                Status = gagve::FeedMappingStatusEnum.Types.FeedMappingStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetFeedMappingAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::FeedMapping>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<FeedMappingOperation> operations = new List<FeedMappingOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateFeedMappingsResponse response = client.MutateFeedMappings(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::FeedMapping responseCallSettings = await client.GetFeedMappingAsync(request.ResourceNameAsFeedMappingName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::FeedMapping responseCancellationToken = await client.GetFeedMappingAsync(request.ResourceNameAsFeedMappingName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateFeedMappingsAsync()
+        public void MutateFeedMappingsRequestObject()
         {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
-            MutateFeedMappingsRequest expectedRequest = new MutateFeedMappingsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedMappingsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateFeedMappingsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<FeedMappingOperation> operations = new List<FeedMappingOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateFeedMappingsResponse response = await client.MutateFeedMappingsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateFeedMappings2()
-        {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
-            MutateFeedMappingsRequest expectedRequest = new MutateFeedMappingsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedMappings(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<FeedMappingOperation> operations = new List<FeedMappingOperation>();
-            MutateFeedMappingsResponse response = client.MutateFeedMappings(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateFeedMappingsAsync2()
-        {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
-            MutateFeedMappingsRequest expectedRequest = new MutateFeedMappingsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedMappingsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateFeedMappingsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<FeedMappingOperation> operations = new List<FeedMappingOperation>();
-            MutateFeedMappingsResponse response = await client.MutateFeedMappingsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateFeedMappings3()
-        {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
             MutateFeedMappingsRequest request = new MutateFeedMappingsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new FeedMappingOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedMappings(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse
+            {
+                Results =
+                {
+                    new MutateFeedMappingResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateFeedMappings(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
             MutateFeedMappingsResponse response = client.MutateFeedMappings(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +228,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateFeedMappingsAsync3()
+        public async stt::Task MutateFeedMappingsRequestObjectAsync()
         {
-            Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new Mock<FeedMappingService.FeedMappingServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
             MutateFeedMappingsRequest request = new MutateFeedMappingsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new FeedMappingOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedMappingsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateFeedMappingsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse
+            {
+                Results =
+                {
+                    new MutateFeedMappingResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateFeedMappingsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateFeedMappingsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
-            MutateFeedMappingsResponse response = await client.MutateFeedMappingsAsync(request);
+            MutateFeedMappingsResponse responseCallSettings = await client.MutateFeedMappingsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateFeedMappingsResponse responseCancellationToken = await client.MutateFeedMappingsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateFeedMappings()
+        {
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
+            MutateFeedMappingsRequest request = new MutateFeedMappingsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new FeedMappingOperation(),
+                },
+            };
+            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse
+            {
+                Results =
+                {
+                    new MutateFeedMappingResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateFeedMappings(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
+            MutateFeedMappingsResponse response = client.MutateFeedMappings(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateFeedMappingsAsync()
+        {
+            moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
+            MutateFeedMappingsRequest request = new MutateFeedMappingsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new FeedMappingOperation(),
+                },
+            };
+            MutateFeedMappingsResponse expectedResponse = new MutateFeedMappingsResponse
+            {
+                Results =
+                {
+                    new MutateFeedMappingResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateFeedMappingsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateFeedMappingsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            FeedMappingServiceClient client = new FeedMappingServiceClientImpl(mockGrpcClient.Object, null);
+            MutateFeedMappingsResponse responseCallSettings = await client.MutateFeedMappingsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateFeedMappingsResponse responseCancellationToken = await client.MutateFeedMappingsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

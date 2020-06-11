@@ -901,6 +901,7 @@ namespace Google.Ads.GoogleAds
             public static readonly ServiceTemplate<VideoServiceClient, VideoServiceSettings> VideoService =
                 new ServiceTemplate<VideoServiceClient, VideoServiceSettings>(Create);
 
+
             /// <summary>
             /// Creates the specified service.
             /// </summary>
@@ -1353,6 +1354,8 @@ namespace Google.Ads.GoogleAds
                         return null;
                 }
             }
+
+
         }
     }
 }

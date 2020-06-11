@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,217 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedChangeStatusServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedChangeStatusServiceClientTest
     {
+        [Test]
+        public void GetChangeStatusRequestObject()
+        {
+            moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
+            GetChangeStatusRequest request = new GetChangeStatusRequest
+            {
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+            };
+            gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
+            {
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+                LastChangeDateTime = "last_change_date_time05524d04",
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                CampaignCriterionAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER]", "[CAMPAIGN_CRITERION]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                FeedItemAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+            };
+            mockGrpcClient.Setup(x => x.GetChangeStatus(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ChangeStatus response = client.GetChangeStatus(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetChangeStatusRequestObjectAsync()
+        {
+            moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
+            GetChangeStatusRequest request = new GetChangeStatusRequest
+            {
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+            };
+            gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
+            {
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+                LastChangeDateTime = "last_change_date_time05524d04",
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                CampaignCriterionAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER]", "[CAMPAIGN_CRITERION]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                FeedItemAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+            };
+            mockGrpcClient.Setup(x => x.GetChangeStatusAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ChangeStatus>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ChangeStatus responseCallSettings = await client.GetChangeStatusAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ChangeStatus responseCancellationToken = await client.GetChangeStatusAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetChangeStatus()
         {
-            Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new Mock<ChangeStatusService.ChangeStatusServiceClient>(MockBehavior.Strict);
-            GetChangeStatusRequest expectedRequest = new GetChangeStatusRequest
-            {
-                ResourceName = new ChangeStatusName("[CUSTOMER]", "[CHANGE_STATUS]").ToString(),
-            };
-            ChangeStatus expectedResponse = new ChangeStatus
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetChangeStatus(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ChangeStatusName("[CUSTOMER]", "[CHANGE_STATUS]").ToString();
-            ChangeStatus response = client.GetChangeStatus(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetChangeStatusAsync()
-        {
-            Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new Mock<ChangeStatusService.ChangeStatusServiceClient>(MockBehavior.Strict);
-            GetChangeStatusRequest expectedRequest = new GetChangeStatusRequest
-            {
-                ResourceName = new ChangeStatusName("[CUSTOMER]", "[CHANGE_STATUS]").ToString(),
-            };
-            ChangeStatus expectedResponse = new ChangeStatus
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetChangeStatusAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ChangeStatus>(Task.FromResult(expectedResponse), null, null, null, null));
-            ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ChangeStatusName("[CUSTOMER]", "[CHANGE_STATUS]").ToString();
-            ChangeStatus response = await client.GetChangeStatusAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetChangeStatus2()
-        {
-            Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new Mock<ChangeStatusService.ChangeStatusServiceClient>(MockBehavior.Strict);
+            moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
             GetChangeStatusRequest request = new GetChangeStatusRequest
             {
-                ResourceName = new ChangeStatusName("[CUSTOMER]", "[CHANGE_STATUS]").ToString(),
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
             };
-            ChangeStatus expectedResponse = new ChangeStatus
+            gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+                LastChangeDateTime = "last_change_date_time05524d04",
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                CampaignCriterionAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER]", "[CAMPAIGN_CRITERION]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                FeedItemAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
             };
-            mockGrpcClient.Setup(x => x.GetChangeStatus(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetChangeStatus(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
-            ChangeStatus response = client.GetChangeStatus(request);
+            gagvr::ChangeStatus response = client.GetChangeStatus(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetChangeStatusAsync2()
+        public async stt::Task GetChangeStatusAsync()
         {
-            Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new Mock<ChangeStatusService.ChangeStatusServiceClient>(MockBehavior.Strict);
+            moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
             GetChangeStatusRequest request = new GetChangeStatusRequest
             {
-                ResourceName = new ChangeStatusName("[CUSTOMER]", "[CHANGE_STATUS]").ToString(),
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
             };
-            ChangeStatus expectedResponse = new ChangeStatus
+            gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+                LastChangeDateTime = "last_change_date_time05524d04",
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                CampaignCriterionAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER]", "[CAMPAIGN_CRITERION]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                FeedItemAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
             };
-            mockGrpcClient.Setup(x => x.GetChangeStatusAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ChangeStatus>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetChangeStatusAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ChangeStatus>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
-            ChangeStatus response = await client.GetChangeStatusAsync(request);
+            gagvr::ChangeStatus responseCallSettings = await client.GetChangeStatusAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ChangeStatus responseCancellationToken = await client.GetChangeStatusAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetChangeStatusResourceNames()
+        {
+            moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
+            GetChangeStatusRequest request = new GetChangeStatusRequest
+            {
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+            };
+            gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
+            {
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+                LastChangeDateTime = "last_change_date_time05524d04",
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                CampaignCriterionAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER]", "[CAMPAIGN_CRITERION]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                FeedItemAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+            };
+            mockGrpcClient.Setup(x => x.GetChangeStatus(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ChangeStatus response = client.GetChangeStatus(request.ResourceNameAsChangeStatusName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetChangeStatusResourceNamesAsync()
+        {
+            moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
+            GetChangeStatusRequest request = new GetChangeStatusRequest
+            {
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+            };
+            gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
+            {
+                ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER]", "[CHANGE_STATUS]"),
+                LastChangeDateTime = "last_change_date_time05524d04",
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AdGroupCriterionAsAdGroupCriterionName = gagvr::AdGroupCriterionName.FromCustomerAdGroupCriterion("[CUSTOMER]", "[AD_GROUP_CRITERION]"),
+                CampaignCriterionAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER]", "[CAMPAIGN_CRITERION]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                FeedItemAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+            };
+            mockGrpcClient.Setup(x => x.GetChangeStatusAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ChangeStatus>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ChangeStatus responseCallSettings = await client.GetChangeStatusAsync(request.ResourceNameAsChangeStatusName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ChangeStatus responseCancellationToken = await client.GetChangeStatusAsync(request.ResourceNameAsChangeStatusName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

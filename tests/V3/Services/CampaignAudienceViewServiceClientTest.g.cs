@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCampaignAudienceViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCampaignAudienceViewServiceClientTest
     {
+        [Test]
+        public void GetCampaignAudienceViewRequestObject()
+        {
+            moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignAudienceViewRequest request = new GetCampaignAudienceViewRequest
+            {
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
+            };
+            gagvr::CampaignAudienceView expectedResponse = new gagvr::CampaignAudienceView
+            {
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignAudienceView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignAudienceViewServiceClient client = new CampaignAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignAudienceView response = client.GetCampaignAudienceView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCampaignAudienceViewRequestObjectAsync()
+        {
+            moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignAudienceViewRequest request = new GetCampaignAudienceViewRequest
+            {
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
+            };
+            gagvr::CampaignAudienceView expectedResponse = new gagvr::CampaignAudienceView
+            {
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignAudienceViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignAudienceView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignAudienceViewServiceClient client = new CampaignAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignAudienceView responseCallSettings = await client.GetCampaignAudienceViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignAudienceView responseCancellationToken = await client.GetCampaignAudienceViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCampaignAudienceView()
         {
-            Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(MockBehavior.Strict);
-            GetCampaignAudienceViewRequest expectedRequest = new GetCampaignAudienceViewRequest
-            {
-                ResourceName = new CampaignAudienceViewName("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]").ToString(),
-            };
-            CampaignAudienceView expectedResponse = new CampaignAudienceView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignAudienceView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignAudienceViewServiceClient client = new CampaignAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignAudienceViewName("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]").ToString();
-            CampaignAudienceView response = client.GetCampaignAudienceView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCampaignAudienceViewAsync()
-        {
-            Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(MockBehavior.Strict);
-            GetCampaignAudienceViewRequest expectedRequest = new GetCampaignAudienceViewRequest
-            {
-                ResourceName = new CampaignAudienceViewName("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]").ToString(),
-            };
-            CampaignAudienceView expectedResponse = new CampaignAudienceView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignAudienceViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignAudienceView>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignAudienceViewServiceClient client = new CampaignAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignAudienceViewName("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]").ToString();
-            CampaignAudienceView response = await client.GetCampaignAudienceViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCampaignAudienceView2()
-        {
-            Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(moq::MockBehavior.Strict);
             GetCampaignAudienceViewRequest request = new GetCampaignAudienceViewRequest
             {
-                ResourceName = new CampaignAudienceViewName("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]").ToString(),
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
             };
-            CampaignAudienceView expectedResponse = new CampaignAudienceView
+            gagvr::CampaignAudienceView expectedResponse = new gagvr::CampaignAudienceView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetCampaignAudienceView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCampaignAudienceView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignAudienceViewServiceClient client = new CampaignAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignAudienceView response = client.GetCampaignAudienceView(request);
+            gagvr::CampaignAudienceView response = client.GetCampaignAudienceView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCampaignAudienceViewAsync2()
+        public async stt::Task GetCampaignAudienceViewAsync()
         {
-            Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(moq::MockBehavior.Strict);
             GetCampaignAudienceViewRequest request = new GetCampaignAudienceViewRequest
             {
-                ResourceName = new CampaignAudienceViewName("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]").ToString(),
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
             };
-            CampaignAudienceView expectedResponse = new CampaignAudienceView
+            gagvr::CampaignAudienceView expectedResponse = new gagvr::CampaignAudienceView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetCampaignAudienceViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignAudienceView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCampaignAudienceViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignAudienceView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignAudienceViewServiceClient client = new CampaignAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignAudienceView response = await client.GetCampaignAudienceViewAsync(request);
+            gagvr::CampaignAudienceView responseCallSettings = await client.GetCampaignAudienceViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignAudienceView responseCancellationToken = await client.GetCampaignAudienceViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCampaignAudienceViewResourceNames()
+        {
+            moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignAudienceViewRequest request = new GetCampaignAudienceViewRequest
+            {
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
+            };
+            gagvr::CampaignAudienceView expectedResponse = new gagvr::CampaignAudienceView
+            {
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignAudienceView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignAudienceViewServiceClient client = new CampaignAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignAudienceView response = client.GetCampaignAudienceView(request.ResourceNameAsCampaignAudienceViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetCampaignAudienceViewResourceNamesAsync()
+        {
+            moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient> mockGrpcClient = new moq::Mock<CampaignAudienceViewService.CampaignAudienceViewServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignAudienceViewRequest request = new GetCampaignAudienceViewRequest
+            {
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
+            };
+            gagvr::CampaignAudienceView expectedResponse = new gagvr::CampaignAudienceView
+            {
+                ResourceNameAsCampaignAudienceViewName = gagvr::CampaignAudienceViewName.FromCustomerCampaignAudienceView("[CUSTOMER]", "[CAMPAIGN_AUDIENCE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignAudienceViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignAudienceView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignAudienceViewServiceClient client = new CampaignAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignAudienceView responseCallSettings = await client.GetCampaignAudienceViewAsync(request.ResourceNameAsCampaignAudienceViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignAudienceView responseCancellationToken = await client.GetCampaignAudienceViewAsync(request.ResourceNameAsCampaignAudienceViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

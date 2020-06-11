@@ -14,107 +14,144 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedLandingPageViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedLandingPageViewServiceClientTest
     {
+        [Test]
+        public void GetLandingPageViewRequestObject()
+        {
+            moq::Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new moq::Mock<LandingPageViewService.LandingPageViewServiceClient>(moq::MockBehavior.Strict);
+            GetLandingPageViewRequest request = new GetLandingPageViewRequest
+            {
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+            };
+            gagvr::LandingPageView expectedResponse = new gagvr::LandingPageView
+            {
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+                UnexpandedFinalUrl = "unexpanded_final_url7d6e0a3e",
+            };
+            mockGrpcClient.Setup(x => x.GetLandingPageView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            LandingPageViewServiceClient client = new LandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::LandingPageView response = client.GetLandingPageView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetLandingPageViewRequestObjectAsync()
+        {
+            moq::Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new moq::Mock<LandingPageViewService.LandingPageViewServiceClient>(moq::MockBehavior.Strict);
+            GetLandingPageViewRequest request = new GetLandingPageViewRequest
+            {
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+            };
+            gagvr::LandingPageView expectedResponse = new gagvr::LandingPageView
+            {
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+                UnexpandedFinalUrl = "unexpanded_final_url7d6e0a3e",
+            };
+            mockGrpcClient.Setup(x => x.GetLandingPageViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::LandingPageView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            LandingPageViewServiceClient client = new LandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::LandingPageView responseCallSettings = await client.GetLandingPageViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::LandingPageView responseCancellationToken = await client.GetLandingPageViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetLandingPageView()
         {
-            Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new Mock<LandingPageViewService.LandingPageViewServiceClient>(MockBehavior.Strict);
-            GetLandingPageViewRequest expectedRequest = new GetLandingPageViewRequest
-            {
-                ResourceName = new LandingPageViewName("[CUSTOMER]", "[LANDING_PAGE_VIEW]").ToString(),
-            };
-            LandingPageView expectedResponse = new LandingPageView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetLandingPageView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            LandingPageViewServiceClient client = new LandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new LandingPageViewName("[CUSTOMER]", "[LANDING_PAGE_VIEW]").ToString();
-            LandingPageView response = client.GetLandingPageView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetLandingPageViewAsync()
-        {
-            Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new Mock<LandingPageViewService.LandingPageViewServiceClient>(MockBehavior.Strict);
-            GetLandingPageViewRequest expectedRequest = new GetLandingPageViewRequest
-            {
-                ResourceName = new LandingPageViewName("[CUSTOMER]", "[LANDING_PAGE_VIEW]").ToString(),
-            };
-            LandingPageView expectedResponse = new LandingPageView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetLandingPageViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<LandingPageView>(Task.FromResult(expectedResponse), null, null, null, null));
-            LandingPageViewServiceClient client = new LandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new LandingPageViewName("[CUSTOMER]", "[LANDING_PAGE_VIEW]").ToString();
-            LandingPageView response = await client.GetLandingPageViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetLandingPageView2()
-        {
-            Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new Mock<LandingPageViewService.LandingPageViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new moq::Mock<LandingPageViewService.LandingPageViewServiceClient>(moq::MockBehavior.Strict);
             GetLandingPageViewRequest request = new GetLandingPageViewRequest
             {
-                ResourceName = new LandingPageViewName("[CUSTOMER]", "[LANDING_PAGE_VIEW]").ToString(),
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
             };
-            LandingPageView expectedResponse = new LandingPageView
+            gagvr::LandingPageView expectedResponse = new gagvr::LandingPageView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+                UnexpandedFinalUrl = "unexpanded_final_url7d6e0a3e",
             };
-            mockGrpcClient.Setup(x => x.GetLandingPageView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetLandingPageView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             LandingPageViewServiceClient client = new LandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
-            LandingPageView response = client.GetLandingPageView(request);
+            gagvr::LandingPageView response = client.GetLandingPageView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetLandingPageViewAsync2()
+        public async stt::Task GetLandingPageViewAsync()
         {
-            Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new Mock<LandingPageViewService.LandingPageViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new moq::Mock<LandingPageViewService.LandingPageViewServiceClient>(moq::MockBehavior.Strict);
             GetLandingPageViewRequest request = new GetLandingPageViewRequest
             {
-                ResourceName = new LandingPageViewName("[CUSTOMER]", "[LANDING_PAGE_VIEW]").ToString(),
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
             };
-            LandingPageView expectedResponse = new LandingPageView
+            gagvr::LandingPageView expectedResponse = new gagvr::LandingPageView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+                UnexpandedFinalUrl = "unexpanded_final_url7d6e0a3e",
             };
-            mockGrpcClient.Setup(x => x.GetLandingPageViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<LandingPageView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetLandingPageViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::LandingPageView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             LandingPageViewServiceClient client = new LandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
-            LandingPageView response = await client.GetLandingPageViewAsync(request);
+            gagvr::LandingPageView responseCallSettings = await client.GetLandingPageViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::LandingPageView responseCancellationToken = await client.GetLandingPageViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetLandingPageViewResourceNames()
+        {
+            moq::Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new moq::Mock<LandingPageViewService.LandingPageViewServiceClient>(moq::MockBehavior.Strict);
+            GetLandingPageViewRequest request = new GetLandingPageViewRequest
+            {
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+            };
+            gagvr::LandingPageView expectedResponse = new gagvr::LandingPageView
+            {
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+                UnexpandedFinalUrl = "unexpanded_final_url7d6e0a3e",
+            };
+            mockGrpcClient.Setup(x => x.GetLandingPageView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            LandingPageViewServiceClient client = new LandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::LandingPageView response = client.GetLandingPageView(request.ResourceNameAsLandingPageViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetLandingPageViewResourceNamesAsync()
+        {
+            moq::Mock<LandingPageViewService.LandingPageViewServiceClient> mockGrpcClient = new moq::Mock<LandingPageViewService.LandingPageViewServiceClient>(moq::MockBehavior.Strict);
+            GetLandingPageViewRequest request = new GetLandingPageViewRequest
+            {
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+            };
+            gagvr::LandingPageView expectedResponse = new gagvr::LandingPageView
+            {
+                ResourceNameAsLandingPageViewName = gagvr::LandingPageViewName.FromCustomerLandingPageView("[CUSTOMER]", "[LANDING_PAGE_VIEW]"),
+                UnexpandedFinalUrl = "unexpanded_final_url7d6e0a3e",
+            };
+            mockGrpcClient.Setup(x => x.GetLandingPageViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::LandingPageView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            LandingPageViewServiceClient client = new LandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::LandingPageView responseCallSettings = await client.GetLandingPageViewAsync(request.ResourceNameAsLandingPageViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::LandingPageView responseCancellationToken = await client.GetLandingPageViewAsync(request.ResourceNameAsLandingPageViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdGroupAudienceViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdGroupAudienceViewServiceClientTest
     {
+        [Test]
+        public void GetAdGroupAudienceViewRequestObject()
+        {
+            moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAudienceViewRequest request = new GetAdGroupAudienceViewRequest
+            {
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
+            };
+            gagvr::AdGroupAudienceView expectedResponse = new gagvr::AdGroupAudienceView
+            {
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAudienceView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupAudienceViewServiceClient client = new AdGroupAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAudienceView response = client.GetAdGroupAudienceView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdGroupAudienceViewRequestObjectAsync()
+        {
+            moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAudienceViewRequest request = new GetAdGroupAudienceViewRequest
+            {
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
+            };
+            gagvr::AdGroupAudienceView expectedResponse = new gagvr::AdGroupAudienceView
+            {
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAudienceViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAudienceView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupAudienceViewServiceClient client = new AdGroupAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAudienceView responseCallSettings = await client.GetAdGroupAudienceViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupAudienceView responseCancellationToken = await client.GetAdGroupAudienceViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAdGroupAudienceView()
         {
-            Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(MockBehavior.Strict);
-            GetAdGroupAudienceViewRequest expectedRequest = new GetAdGroupAudienceViewRequest
-            {
-                ResourceName = new AdGroupAudienceViewName("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]").ToString(),
-            };
-            AdGroupAudienceView expectedResponse = new AdGroupAudienceView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupAudienceView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupAudienceViewServiceClient client = new AdGroupAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupAudienceViewName("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]").ToString();
-            AdGroupAudienceView response = client.GetAdGroupAudienceView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdGroupAudienceViewAsync()
-        {
-            Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(MockBehavior.Strict);
-            GetAdGroupAudienceViewRequest expectedRequest = new GetAdGroupAudienceViewRequest
-            {
-                ResourceName = new AdGroupAudienceViewName("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]").ToString(),
-            };
-            AdGroupAudienceView expectedResponse = new AdGroupAudienceView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupAudienceViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupAudienceView>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupAudienceViewServiceClient client = new AdGroupAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupAudienceViewName("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]").ToString();
-            AdGroupAudienceView response = await client.GetAdGroupAudienceViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAdGroupAudienceView2()
-        {
-            Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupAudienceViewRequest request = new GetAdGroupAudienceViewRequest
             {
-                ResourceName = new AdGroupAudienceViewName("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]").ToString(),
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
             };
-            AdGroupAudienceView expectedResponse = new AdGroupAudienceView
+            gagvr::AdGroupAudienceView expectedResponse = new gagvr::AdGroupAudienceView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupAudienceView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAdGroupAudienceView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupAudienceViewServiceClient client = new AdGroupAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupAudienceView response = client.GetAdGroupAudienceView(request);
+            gagvr::AdGroupAudienceView response = client.GetAdGroupAudienceView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdGroupAudienceViewAsync2()
+        public async stt::Task GetAdGroupAudienceViewAsync()
         {
-            Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupAudienceViewRequest request = new GetAdGroupAudienceViewRequest
             {
-                ResourceName = new AdGroupAudienceViewName("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]").ToString(),
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
             };
-            AdGroupAudienceView expectedResponse = new AdGroupAudienceView
+            gagvr::AdGroupAudienceView expectedResponse = new gagvr::AdGroupAudienceView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupAudienceViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupAudienceView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdGroupAudienceViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAudienceView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupAudienceViewServiceClient client = new AdGroupAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupAudienceView response = await client.GetAdGroupAudienceViewAsync(request);
+            gagvr::AdGroupAudienceView responseCallSettings = await client.GetAdGroupAudienceViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupAudienceView responseCancellationToken = await client.GetAdGroupAudienceViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdGroupAudienceViewResourceNames()
+        {
+            moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAudienceViewRequest request = new GetAdGroupAudienceViewRequest
+            {
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
+            };
+            gagvr::AdGroupAudienceView expectedResponse = new gagvr::AdGroupAudienceView
+            {
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAudienceView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupAudienceViewServiceClient client = new AdGroupAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAudienceView response = client.GetAdGroupAudienceView(request.ResourceNameAsAdGroupAudienceViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetAdGroupAudienceViewResourceNamesAsync()
+        {
+            moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAudienceViewService.AdGroupAudienceViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAudienceViewRequest request = new GetAdGroupAudienceViewRequest
+            {
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
+            };
+            gagvr::AdGroupAudienceView expectedResponse = new gagvr::AdGroupAudienceView
+            {
+                ResourceNameAsAdGroupAudienceViewName = gagvr::AdGroupAudienceViewName.FromCustomerAdGroupAudienceView("[CUSTOMER]", "[AD_GROUP_AUDIENCE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAudienceViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAudienceView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupAudienceViewServiceClient client = new AdGroupAudienceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAudienceView responseCallSettings = await client.GetAdGroupAudienceViewAsync(request.ResourceNameAsAdGroupAudienceViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupAudienceView responseCancellationToken = await client.GetAdGroupAudienceViewAsync(request.ResourceNameAsAdGroupAudienceViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

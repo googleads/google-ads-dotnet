@@ -17,7 +17,6 @@ using Google.Ads.GoogleAds.V2.Services;
 using Google.Api.Gax.Grpc;
 using Grpc.Core;
 
-
 namespace Google.Ads.GoogleAds
 {
     /// <summary>
@@ -879,445 +878,448 @@ namespace Google.Ads.GoogleAds
                 new ServiceTemplate<VideoServiceClient, VideoServiceSettings>(Create);
 
 
-           /// <summary>
-           /// Creates the specified service.
-           /// </summary>
-           /// <param name="serviceName">Name of the service.</param>
-           /// <param name="callInvoker">The call invoker.</param>
-           /// <param name="settings">The service settings.</param>
-           /// <returns>An instance of the service.</returns>
-           public static GoogleAdsServiceClientBase Create(string serviceName, CallInvoker callInvoker, ServiceSettingsBase settings)
-           {
-               switch (serviceName)
-               {
+            /// <summary>
+            /// Creates the specified service.
+            /// </summary>
+            /// <param name="serviceName">Name of the service.</param>
+            /// <param name="callInvoker">The call invoker.</param>
+            /// <param name="settings">The service settings.</param>
+            /// <returns>An instance of the service.</returns>
+            public static GoogleAdsServiceClientBase Create(string serviceName, CallInvoker callInvoker, ServiceSettingsBase settings)
+            {
+                switch (serviceName)
+                {
 
-                  case "AccountBudgetProposalServiceClient":
-                      return AccountBudgetProposalServiceClient.Create(callInvoker, (AccountBudgetProposalServiceSettings) settings);
+                    case "AccountBudgetProposalServiceClient":
+                        return AccountBudgetProposalServiceClient.Create(callInvoker, (AccountBudgetProposalServiceSettings) settings);
 
 
-                  case "AccountBudgetServiceClient":
-                      return AccountBudgetServiceClient.Create(callInvoker, (AccountBudgetServiceSettings) settings);
+                    case "AccountBudgetServiceClient":
+                        return AccountBudgetServiceClient.Create(callInvoker, (AccountBudgetServiceSettings) settings);
 
 
-                  case "AdGroupAdAssetViewServiceClient":
-                      return AdGroupAdAssetViewServiceClient.Create(callInvoker, (AdGroupAdAssetViewServiceSettings) settings);
+                    case "AdGroupAdAssetViewServiceClient":
+                        return AdGroupAdAssetViewServiceClient.Create(callInvoker, (AdGroupAdAssetViewServiceSettings) settings);
 
 
-                  case "AdGroupAdLabelServiceClient":
-                      return AdGroupAdLabelServiceClient.Create(callInvoker, (AdGroupAdLabelServiceSettings) settings);
+                    case "AdGroupAdLabelServiceClient":
+                        return AdGroupAdLabelServiceClient.Create(callInvoker, (AdGroupAdLabelServiceSettings) settings);
 
 
-                  case "AdGroupAdServiceClient":
-                      return AdGroupAdServiceClient.Create(callInvoker, (AdGroupAdServiceSettings) settings);
+                    case "AdGroupAdServiceClient":
+                        return AdGroupAdServiceClient.Create(callInvoker, (AdGroupAdServiceSettings) settings);
 
 
-                  case "AdGroupAudienceViewServiceClient":
-                      return AdGroupAudienceViewServiceClient.Create(callInvoker, (AdGroupAudienceViewServiceSettings) settings);
+                    case "AdGroupAudienceViewServiceClient":
+                        return AdGroupAudienceViewServiceClient.Create(callInvoker, (AdGroupAudienceViewServiceSettings) settings);
 
 
-                  case "AdGroupBidModifierServiceClient":
-                      return AdGroupBidModifierServiceClient.Create(callInvoker, (AdGroupBidModifierServiceSettings) settings);
+                    case "AdGroupBidModifierServiceClient":
+                        return AdGroupBidModifierServiceClient.Create(callInvoker, (AdGroupBidModifierServiceSettings) settings);
 
 
-                  case "AdGroupCriterionLabelServiceClient":
-                      return AdGroupCriterionLabelServiceClient.Create(callInvoker, (AdGroupCriterionLabelServiceSettings) settings);
+                    case "AdGroupCriterionLabelServiceClient":
+                        return AdGroupCriterionLabelServiceClient.Create(callInvoker, (AdGroupCriterionLabelServiceSettings) settings);
 
 
-                  case "AdGroupCriterionServiceClient":
-                      return AdGroupCriterionServiceClient.Create(callInvoker, (AdGroupCriterionServiceSettings) settings);
+                    case "AdGroupCriterionServiceClient":
+                        return AdGroupCriterionServiceClient.Create(callInvoker, (AdGroupCriterionServiceSettings) settings);
 
 
-                  case "AdGroupCriterionSimulationServiceClient":
-                      return AdGroupCriterionSimulationServiceClient.Create(callInvoker, (AdGroupCriterionSimulationServiceSettings) settings);
+                    case "AdGroupCriterionSimulationServiceClient":
+                        return AdGroupCriterionSimulationServiceClient.Create(callInvoker, (AdGroupCriterionSimulationServiceSettings) settings);
 
 
-                  case "AdGroupExtensionSettingServiceClient":
-                      return AdGroupExtensionSettingServiceClient.Create(callInvoker, (AdGroupExtensionSettingServiceSettings) settings);
+                    case "AdGroupExtensionSettingServiceClient":
+                        return AdGroupExtensionSettingServiceClient.Create(callInvoker, (AdGroupExtensionSettingServiceSettings) settings);
 
 
-                  case "AdGroupFeedServiceClient":
-                      return AdGroupFeedServiceClient.Create(callInvoker, (AdGroupFeedServiceSettings) settings);
+                    case "AdGroupFeedServiceClient":
+                        return AdGroupFeedServiceClient.Create(callInvoker, (AdGroupFeedServiceSettings) settings);
 
 
-                  case "AdGroupLabelServiceClient":
-                      return AdGroupLabelServiceClient.Create(callInvoker, (AdGroupLabelServiceSettings) settings);
+                    case "AdGroupLabelServiceClient":
+                        return AdGroupLabelServiceClient.Create(callInvoker, (AdGroupLabelServiceSettings) settings);
 
 
-                  case "AdGroupServiceClient":
-                      return AdGroupServiceClient.Create(callInvoker, (AdGroupServiceSettings) settings);
+                    case "AdGroupServiceClient":
+                        return AdGroupServiceClient.Create(callInvoker, (AdGroupServiceSettings) settings);
 
 
-                  case "AdGroupSimulationServiceClient":
-                      return AdGroupSimulationServiceClient.Create(callInvoker, (AdGroupSimulationServiceSettings) settings);
+                    case "AdGroupSimulationServiceClient":
+                        return AdGroupSimulationServiceClient.Create(callInvoker, (AdGroupSimulationServiceSettings) settings);
 
 
-                  case "AdParameterServiceClient":
-                      return AdParameterServiceClient.Create(callInvoker, (AdParameterServiceSettings) settings);
+                    case "AdParameterServiceClient":
+                        return AdParameterServiceClient.Create(callInvoker, (AdParameterServiceSettings) settings);
 
 
-                  case "AdScheduleViewServiceClient":
-                      return AdScheduleViewServiceClient.Create(callInvoker, (AdScheduleViewServiceSettings) settings);
+                    case "AdScheduleViewServiceClient":
+                        return AdScheduleViewServiceClient.Create(callInvoker, (AdScheduleViewServiceSettings) settings);
 
 
-                  case "AdServiceClient":
-                      return AdServiceClient.Create(callInvoker, (AdServiceSettings) settings);
+                    case "AdServiceClient":
+                        return AdServiceClient.Create(callInvoker, (AdServiceSettings) settings);
 
 
-                  case "AgeRangeViewServiceClient":
-                      return AgeRangeViewServiceClient.Create(callInvoker, (AgeRangeViewServiceSettings) settings);
+                    case "AgeRangeViewServiceClient":
+                        return AgeRangeViewServiceClient.Create(callInvoker, (AgeRangeViewServiceSettings) settings);
 
 
-                  case "AssetServiceClient":
-                      return AssetServiceClient.Create(callInvoker, (AssetServiceSettings) settings);
+                    case "AssetServiceClient":
+                        return AssetServiceClient.Create(callInvoker, (AssetServiceSettings) settings);
 
 
-                  case "BiddingStrategyServiceClient":
-                      return BiddingStrategyServiceClient.Create(callInvoker, (BiddingStrategyServiceSettings) settings);
+                    case "BiddingStrategyServiceClient":
+                        return BiddingStrategyServiceClient.Create(callInvoker, (BiddingStrategyServiceSettings) settings);
 
 
-                  case "BillingSetupServiceClient":
-                      return BillingSetupServiceClient.Create(callInvoker, (BillingSetupServiceSettings) settings);
+                    case "BillingSetupServiceClient":
+                        return BillingSetupServiceClient.Create(callInvoker, (BillingSetupServiceSettings) settings);
 
 
-                  case "CampaignAudienceViewServiceClient":
-                      return CampaignAudienceViewServiceClient.Create(callInvoker, (CampaignAudienceViewServiceSettings) settings);
+                    case "CampaignAudienceViewServiceClient":
+                        return CampaignAudienceViewServiceClient.Create(callInvoker, (CampaignAudienceViewServiceSettings) settings);
 
 
-                  case "CampaignBidModifierServiceClient":
-                      return CampaignBidModifierServiceClient.Create(callInvoker, (CampaignBidModifierServiceSettings) settings);
+                    case "CampaignBidModifierServiceClient":
+                        return CampaignBidModifierServiceClient.Create(callInvoker, (CampaignBidModifierServiceSettings) settings);
 
 
-                  case "CampaignBudgetServiceClient":
-                      return CampaignBudgetServiceClient.Create(callInvoker, (CampaignBudgetServiceSettings) settings);
+                    case "CampaignBudgetServiceClient":
+                        return CampaignBudgetServiceClient.Create(callInvoker, (CampaignBudgetServiceSettings) settings);
 
 
-                  case "CampaignCriterionServiceClient":
-                      return CampaignCriterionServiceClient.Create(callInvoker, (CampaignCriterionServiceSettings) settings);
+                    case "CampaignCriterionServiceClient":
+                        return CampaignCriterionServiceClient.Create(callInvoker, (CampaignCriterionServiceSettings) settings);
 
 
-                  case "CampaignCriterionSimulationServiceClient":
-                      return CampaignCriterionSimulationServiceClient.Create(callInvoker, (CampaignCriterionSimulationServiceSettings) settings);
+                    case "CampaignCriterionSimulationServiceClient":
+                        return CampaignCriterionSimulationServiceClient.Create(callInvoker, (CampaignCriterionSimulationServiceSettings) settings);
 
 
-                  case "CampaignDraftServiceClient":
-                      return CampaignDraftServiceClient.Create(callInvoker, (CampaignDraftServiceSettings) settings);
+                    case "CampaignDraftServiceClient":
+                        return CampaignDraftServiceClient.Create(callInvoker, (CampaignDraftServiceSettings) settings);
 
 
-                  case "CampaignExperimentServiceClient":
-                      return CampaignExperimentServiceClient.Create(callInvoker, (CampaignExperimentServiceSettings) settings);
+                    case "CampaignExperimentServiceClient":
+                        return CampaignExperimentServiceClient.Create(callInvoker, (CampaignExperimentServiceSettings) settings);
 
 
-                  case "CampaignExtensionSettingServiceClient":
-                      return CampaignExtensionSettingServiceClient.Create(callInvoker, (CampaignExtensionSettingServiceSettings) settings);
+                    case "CampaignExtensionSettingServiceClient":
+                        return CampaignExtensionSettingServiceClient.Create(callInvoker, (CampaignExtensionSettingServiceSettings) settings);
 
 
-                  case "CampaignFeedServiceClient":
-                      return CampaignFeedServiceClient.Create(callInvoker, (CampaignFeedServiceSettings) settings);
+                    case "CampaignFeedServiceClient":
+                        return CampaignFeedServiceClient.Create(callInvoker, (CampaignFeedServiceSettings) settings);
 
 
-                  case "CampaignLabelServiceClient":
-                      return CampaignLabelServiceClient.Create(callInvoker, (CampaignLabelServiceSettings) settings);
+                    case "CampaignLabelServiceClient":
+                        return CampaignLabelServiceClient.Create(callInvoker, (CampaignLabelServiceSettings) settings);
 
 
-                  case "CampaignServiceClient":
-                      return CampaignServiceClient.Create(callInvoker, (CampaignServiceSettings) settings);
+                    case "CampaignServiceClient":
+                        return CampaignServiceClient.Create(callInvoker, (CampaignServiceSettings) settings);
 
 
-                  case "CampaignSharedSetServiceClient":
-                      return CampaignSharedSetServiceClient.Create(callInvoker, (CampaignSharedSetServiceSettings) settings);
+                    case "CampaignSharedSetServiceClient":
+                        return CampaignSharedSetServiceClient.Create(callInvoker, (CampaignSharedSetServiceSettings) settings);
 
 
-                  case "CarrierConstantServiceClient":
-                      return CarrierConstantServiceClient.Create(callInvoker, (CarrierConstantServiceSettings) settings);
+                    case "CarrierConstantServiceClient":
+                        return CarrierConstantServiceClient.Create(callInvoker, (CarrierConstantServiceSettings) settings);
 
 
-                  case "ChangeStatusServiceClient":
-                      return ChangeStatusServiceClient.Create(callInvoker, (ChangeStatusServiceSettings) settings);
+                    case "ChangeStatusServiceClient":
+                        return ChangeStatusServiceClient.Create(callInvoker, (ChangeStatusServiceSettings) settings);
 
 
-                  case "ClickViewServiceClient":
-                      return ClickViewServiceClient.Create(callInvoker, (ClickViewServiceSettings) settings);
+                    case "ClickViewServiceClient":
+                        return ClickViewServiceClient.Create(callInvoker, (ClickViewServiceSettings) settings);
 
 
-                  case "ConversionActionServiceClient":
-                      return ConversionActionServiceClient.Create(callInvoker, (ConversionActionServiceSettings) settings);
+                    case "ConversionActionServiceClient":
+                        return ConversionActionServiceClient.Create(callInvoker, (ConversionActionServiceSettings) settings);
 
 
-                  case "ConversionAdjustmentUploadServiceClient":
-                      return ConversionAdjustmentUploadServiceClient.Create(callInvoker, (ConversionAdjustmentUploadServiceSettings) settings);
+                    case "ConversionAdjustmentUploadServiceClient":
+                        return ConversionAdjustmentUploadServiceClient.Create(callInvoker, (ConversionAdjustmentUploadServiceSettings) settings);
 
 
-                  case "ConversionUploadServiceClient":
-                      return ConversionUploadServiceClient.Create(callInvoker, (ConversionUploadServiceSettings) settings);
+                    case "ConversionUploadServiceClient":
+                        return ConversionUploadServiceClient.Create(callInvoker, (ConversionUploadServiceSettings) settings);
 
 
-                  case "CustomerClientLinkServiceClient":
-                      return CustomerClientLinkServiceClient.Create(callInvoker, (CustomerClientLinkServiceSettings) settings);
+                    case "CustomerClientLinkServiceClient":
+                        return CustomerClientLinkServiceClient.Create(callInvoker, (CustomerClientLinkServiceSettings) settings);
 
 
-                  case "CustomerClientServiceClient":
-                      return CustomerClientServiceClient.Create(callInvoker, (CustomerClientServiceSettings) settings);
+                    case "CustomerClientServiceClient":
+                        return CustomerClientServiceClient.Create(callInvoker, (CustomerClientServiceSettings) settings);
 
 
-                  case "CustomerExtensionSettingServiceClient":
-                      return CustomerExtensionSettingServiceClient.Create(callInvoker, (CustomerExtensionSettingServiceSettings) settings);
+                    case "CustomerExtensionSettingServiceClient":
+                        return CustomerExtensionSettingServiceClient.Create(callInvoker, (CustomerExtensionSettingServiceSettings) settings);
 
 
-                  case "CustomerFeedServiceClient":
-                      return CustomerFeedServiceClient.Create(callInvoker, (CustomerFeedServiceSettings) settings);
+                    case "CustomerFeedServiceClient":
+                        return CustomerFeedServiceClient.Create(callInvoker, (CustomerFeedServiceSettings) settings);
 
 
-                  case "CustomerLabelServiceClient":
-                      return CustomerLabelServiceClient.Create(callInvoker, (CustomerLabelServiceSettings) settings);
+                    case "CustomerLabelServiceClient":
+                        return CustomerLabelServiceClient.Create(callInvoker, (CustomerLabelServiceSettings) settings);
 
 
-                  case "CustomerManagerLinkServiceClient":
-                      return CustomerManagerLinkServiceClient.Create(callInvoker, (CustomerManagerLinkServiceSettings) settings);
+                    case "CustomerManagerLinkServiceClient":
+                        return CustomerManagerLinkServiceClient.Create(callInvoker, (CustomerManagerLinkServiceSettings) settings);
 
 
-                  case "CustomerNegativeCriterionServiceClient":
-                      return CustomerNegativeCriterionServiceClient.Create(callInvoker, (CustomerNegativeCriterionServiceSettings) settings);
+                    case "CustomerNegativeCriterionServiceClient":
+                        return CustomerNegativeCriterionServiceClient.Create(callInvoker, (CustomerNegativeCriterionServiceSettings) settings);
 
 
-                  case "CustomerServiceClient":
-                      return CustomerServiceClient.Create(callInvoker, (CustomerServiceSettings) settings);
+                    case "CustomerServiceClient":
+                        return CustomerServiceClient.Create(callInvoker, (CustomerServiceSettings) settings);
 
 
-                  case "CustomInterestServiceClient":
-                      return CustomInterestServiceClient.Create(callInvoker, (CustomInterestServiceSettings) settings);
+                    case "CustomInterestServiceClient":
+                        return CustomInterestServiceClient.Create(callInvoker, (CustomInterestServiceSettings) settings);
 
 
-                  case "DetailPlacementViewServiceClient":
-                      return DetailPlacementViewServiceClient.Create(callInvoker, (DetailPlacementViewServiceSettings) settings);
+                    case "DetailPlacementViewServiceClient":
+                        return DetailPlacementViewServiceClient.Create(callInvoker, (DetailPlacementViewServiceSettings) settings);
 
 
-                  case "DisplayKeywordViewServiceClient":
-                      return DisplayKeywordViewServiceClient.Create(callInvoker, (DisplayKeywordViewServiceSettings) settings);
+                    case "DisplayKeywordViewServiceClient":
+                        return DisplayKeywordViewServiceClient.Create(callInvoker, (DisplayKeywordViewServiceSettings) settings);
 
 
-                  case "DistanceViewServiceClient":
-                      return DistanceViewServiceClient.Create(callInvoker, (DistanceViewServiceSettings) settings);
+                    case "DistanceViewServiceClient":
+                        return DistanceViewServiceClient.Create(callInvoker, (DistanceViewServiceSettings) settings);
 
 
-                  case "DomainCategoryServiceClient":
-                      return DomainCategoryServiceClient.Create(callInvoker, (DomainCategoryServiceSettings) settings);
+                    case "DomainCategoryServiceClient":
+                        return DomainCategoryServiceClient.Create(callInvoker, (DomainCategoryServiceSettings) settings);
 
 
-                  case "DynamicSearchAdsSearchTermViewServiceClient":
-                      return DynamicSearchAdsSearchTermViewServiceClient.Create(callInvoker, (DynamicSearchAdsSearchTermViewServiceSettings) settings);
+                    case "DynamicSearchAdsSearchTermViewServiceClient":
+                        return DynamicSearchAdsSearchTermViewServiceClient.Create(callInvoker, (DynamicSearchAdsSearchTermViewServiceSettings) settings);
 
 
-                  case "ExpandedLandingPageViewServiceClient":
-                      return ExpandedLandingPageViewServiceClient.Create(callInvoker, (ExpandedLandingPageViewServiceSettings) settings);
+                    case "ExpandedLandingPageViewServiceClient":
+                        return ExpandedLandingPageViewServiceClient.Create(callInvoker, (ExpandedLandingPageViewServiceSettings) settings);
 
 
-                  case "ExtensionFeedItemServiceClient":
-                      return ExtensionFeedItemServiceClient.Create(callInvoker, (ExtensionFeedItemServiceSettings) settings);
+                    case "ExtensionFeedItemServiceClient":
+                        return ExtensionFeedItemServiceClient.Create(callInvoker, (ExtensionFeedItemServiceSettings) settings);
 
 
-                  case "FeedItemServiceClient":
-                      return FeedItemServiceClient.Create(callInvoker, (FeedItemServiceSettings) settings);
+                    case "FeedItemServiceClient":
+                        return FeedItemServiceClient.Create(callInvoker, (FeedItemServiceSettings) settings);
 
 
-                  case "FeedItemTargetServiceClient":
-                      return FeedItemTargetServiceClient.Create(callInvoker, (FeedItemTargetServiceSettings) settings);
+                    case "FeedItemTargetServiceClient":
+                        return FeedItemTargetServiceClient.Create(callInvoker, (FeedItemTargetServiceSettings) settings);
 
 
-                  case "FeedMappingServiceClient":
-                      return FeedMappingServiceClient.Create(callInvoker, (FeedMappingServiceSettings) settings);
+                    case "FeedMappingServiceClient":
+                        return FeedMappingServiceClient.Create(callInvoker, (FeedMappingServiceSettings) settings);
 
 
-                  case "FeedPlaceholderViewServiceClient":
-                      return FeedPlaceholderViewServiceClient.Create(callInvoker, (FeedPlaceholderViewServiceSettings) settings);
+                    case "FeedPlaceholderViewServiceClient":
+                        return FeedPlaceholderViewServiceClient.Create(callInvoker, (FeedPlaceholderViewServiceSettings) settings);
 
 
-                  case "FeedServiceClient":
-                      return FeedServiceClient.Create(callInvoker, (FeedServiceSettings) settings);
+                    case "FeedServiceClient":
+                        return FeedServiceClient.Create(callInvoker, (FeedServiceSettings) settings);
 
 
-                  case "GenderViewServiceClient":
-                      return GenderViewServiceClient.Create(callInvoker, (GenderViewServiceSettings) settings);
+                    case "GenderViewServiceClient":
+                        return GenderViewServiceClient.Create(callInvoker, (GenderViewServiceSettings) settings);
 
 
-                  case "GeographicViewServiceClient":
-                      return GeographicViewServiceClient.Create(callInvoker, (GeographicViewServiceSettings) settings);
+                    case "GeographicViewServiceClient":
+                        return GeographicViewServiceClient.Create(callInvoker, (GeographicViewServiceSettings) settings);
 
 
-                  case "GeoTargetConstantServiceClient":
-                      return GeoTargetConstantServiceClient.Create(callInvoker, (GeoTargetConstantServiceSettings) settings);
+                    case "GeoTargetConstantServiceClient":
+                        return GeoTargetConstantServiceClient.Create(callInvoker, (GeoTargetConstantServiceSettings) settings);
 
 
-                  case "GoogleAdsFieldServiceClient":
-                      return GoogleAdsFieldServiceClient.Create(callInvoker, (GoogleAdsFieldServiceSettings) settings);
+                    case "GoogleAdsFieldServiceClient":
+                        return GoogleAdsFieldServiceClient.Create(callInvoker, (GoogleAdsFieldServiceSettings) settings);
 
 
-                  case "GoogleAdsServiceClient":
-                      return GoogleAdsServiceClient.Create(callInvoker, (GoogleAdsServiceSettings) settings);
+                    case "GoogleAdsServiceClient":
+                        return GoogleAdsServiceClient.Create(callInvoker, (GoogleAdsServiceSettings) settings);
 
 
-                  case "GroupPlacementViewServiceClient":
-                      return GroupPlacementViewServiceClient.Create(callInvoker, (GroupPlacementViewServiceSettings) settings);
+                    case "GroupPlacementViewServiceClient":
+                        return GroupPlacementViewServiceClient.Create(callInvoker, (GroupPlacementViewServiceSettings) settings);
 
 
-                  case "HotelGroupViewServiceClient":
-                      return HotelGroupViewServiceClient.Create(callInvoker, (HotelGroupViewServiceSettings) settings);
+                    case "HotelGroupViewServiceClient":
+                        return HotelGroupViewServiceClient.Create(callInvoker, (HotelGroupViewServiceSettings) settings);
 
 
-                  case "HotelPerformanceViewServiceClient":
-                      return HotelPerformanceViewServiceClient.Create(callInvoker, (HotelPerformanceViewServiceSettings) settings);
+                    case "HotelPerformanceViewServiceClient":
+                        return HotelPerformanceViewServiceClient.Create(callInvoker, (HotelPerformanceViewServiceSettings) settings);
 
 
-                  case "InvoiceServiceClient":
-                      return InvoiceServiceClient.Create(callInvoker, (InvoiceServiceSettings) settings);
+                    case "InvoiceServiceClient":
+                        return InvoiceServiceClient.Create(callInvoker, (InvoiceServiceSettings) settings);
 
 
-                  case "KeywordPlanAdGroupServiceClient":
-                      return KeywordPlanAdGroupServiceClient.Create(callInvoker, (KeywordPlanAdGroupServiceSettings) settings);
+                    case "KeywordPlanAdGroupServiceClient":
+                        return KeywordPlanAdGroupServiceClient.Create(callInvoker, (KeywordPlanAdGroupServiceSettings) settings);
 
 
-                  case "KeywordPlanCampaignServiceClient":
-                      return KeywordPlanCampaignServiceClient.Create(callInvoker, (KeywordPlanCampaignServiceSettings) settings);
+                    case "KeywordPlanCampaignServiceClient":
+                        return KeywordPlanCampaignServiceClient.Create(callInvoker, (KeywordPlanCampaignServiceSettings) settings);
 
 
-                  case "KeywordPlanIdeaServiceClient":
-                      return KeywordPlanIdeaServiceClient.Create(callInvoker, (KeywordPlanIdeaServiceSettings) settings);
+                    case "KeywordPlanIdeaServiceClient":
+                        return KeywordPlanIdeaServiceClient.Create(callInvoker, (KeywordPlanIdeaServiceSettings) settings);
 
 
-                  case "KeywordPlanKeywordServiceClient":
-                      return KeywordPlanKeywordServiceClient.Create(callInvoker, (KeywordPlanKeywordServiceSettings) settings);
+                    case "KeywordPlanKeywordServiceClient":
+                        return KeywordPlanKeywordServiceClient.Create(callInvoker, (KeywordPlanKeywordServiceSettings) settings);
 
 
-                  case "KeywordPlanNegativeKeywordServiceClient":
-                      return KeywordPlanNegativeKeywordServiceClient.Create(callInvoker, (KeywordPlanNegativeKeywordServiceSettings) settings);
+                    case "KeywordPlanNegativeKeywordServiceClient":
+                        return KeywordPlanNegativeKeywordServiceClient.Create(callInvoker, (KeywordPlanNegativeKeywordServiceSettings) settings);
 
 
-                  case "KeywordPlanServiceClient":
-                      return KeywordPlanServiceClient.Create(callInvoker, (KeywordPlanServiceSettings) settings);
+                    case "KeywordPlanServiceClient":
+                        return KeywordPlanServiceClient.Create(callInvoker, (KeywordPlanServiceSettings) settings);
 
 
-                  case "KeywordViewServiceClient":
-                      return KeywordViewServiceClient.Create(callInvoker, (KeywordViewServiceSettings) settings);
+                    case "KeywordViewServiceClient":
+                        return KeywordViewServiceClient.Create(callInvoker, (KeywordViewServiceSettings) settings);
 
 
-                  case "LabelServiceClient":
-                      return LabelServiceClient.Create(callInvoker, (LabelServiceSettings) settings);
+                    case "LabelServiceClient":
+                        return LabelServiceClient.Create(callInvoker, (LabelServiceSettings) settings);
 
 
-                  case "LandingPageViewServiceClient":
-                      return LandingPageViewServiceClient.Create(callInvoker, (LandingPageViewServiceSettings) settings);
+                    case "LandingPageViewServiceClient":
+                        return LandingPageViewServiceClient.Create(callInvoker, (LandingPageViewServiceSettings) settings);
 
 
-                  case "LanguageConstantServiceClient":
-                      return LanguageConstantServiceClient.Create(callInvoker, (LanguageConstantServiceSettings) settings);
+                    case "LanguageConstantServiceClient":
+                        return LanguageConstantServiceClient.Create(callInvoker, (LanguageConstantServiceSettings) settings);
 
 
-                  case "LocationViewServiceClient":
-                      return LocationViewServiceClient.Create(callInvoker, (LocationViewServiceSettings) settings);
+                    case "LocationViewServiceClient":
+                        return LocationViewServiceClient.Create(callInvoker, (LocationViewServiceSettings) settings);
 
 
-                  case "ManagedPlacementViewServiceClient":
-                      return ManagedPlacementViewServiceClient.Create(callInvoker, (ManagedPlacementViewServiceSettings) settings);
+                    case "ManagedPlacementViewServiceClient":
+                        return ManagedPlacementViewServiceClient.Create(callInvoker, (ManagedPlacementViewServiceSettings) settings);
 
 
-                  case "MediaFileServiceClient":
-                      return MediaFileServiceClient.Create(callInvoker, (MediaFileServiceSettings) settings);
+                    case "MediaFileServiceClient":
+                        return MediaFileServiceClient.Create(callInvoker, (MediaFileServiceSettings) settings);
 
 
-                  case "MerchantCenterLinkServiceClient":
-                      return MerchantCenterLinkServiceClient.Create(callInvoker, (MerchantCenterLinkServiceSettings) settings);
+                    case "MerchantCenterLinkServiceClient":
+                        return MerchantCenterLinkServiceClient.Create(callInvoker, (MerchantCenterLinkServiceSettings) settings);
 
 
-                  case "MobileAppCategoryConstantServiceClient":
-                      return MobileAppCategoryConstantServiceClient.Create(callInvoker, (MobileAppCategoryConstantServiceSettings) settings);
+                    case "MobileAppCategoryConstantServiceClient":
+                        return MobileAppCategoryConstantServiceClient.Create(callInvoker, (MobileAppCategoryConstantServiceSettings) settings);
 
 
-                  case "MobileDeviceConstantServiceClient":
-                      return MobileDeviceConstantServiceClient.Create(callInvoker, (MobileDeviceConstantServiceSettings) settings);
+                    case "MobileDeviceConstantServiceClient":
+                        return MobileDeviceConstantServiceClient.Create(callInvoker, (MobileDeviceConstantServiceSettings) settings);
 
 
-                  case "MutateJobServiceClient":
-                      return MutateJobServiceClient.Create(callInvoker, (MutateJobServiceSettings) settings);
+                    case "MutateJobServiceClient":
+                        return MutateJobServiceClient.Create(callInvoker, (MutateJobServiceSettings) settings);
 
 
-                  case "OperatingSystemVersionConstantServiceClient":
-                      return OperatingSystemVersionConstantServiceClient.Create(callInvoker, (OperatingSystemVersionConstantServiceSettings) settings);
+                    case "OperatingSystemVersionConstantServiceClient":
+                        return OperatingSystemVersionConstantServiceClient.Create(callInvoker, (OperatingSystemVersionConstantServiceSettings) settings);
 
 
-                  case "PaidOrganicSearchTermViewServiceClient":
-                      return PaidOrganicSearchTermViewServiceClient.Create(callInvoker, (PaidOrganicSearchTermViewServiceSettings) settings);
+                    case "PaidOrganicSearchTermViewServiceClient":
+                        return PaidOrganicSearchTermViewServiceClient.Create(callInvoker, (PaidOrganicSearchTermViewServiceSettings) settings);
 
 
-                  case "ParentalStatusViewServiceClient":
-                      return ParentalStatusViewServiceClient.Create(callInvoker, (ParentalStatusViewServiceSettings) settings);
+                    case "ParentalStatusViewServiceClient":
+                        return ParentalStatusViewServiceClient.Create(callInvoker, (ParentalStatusViewServiceSettings) settings);
 
 
-                  case "PaymentsAccountServiceClient":
-                      return PaymentsAccountServiceClient.Create(callInvoker, (PaymentsAccountServiceSettings) settings);
+                    case "PaymentsAccountServiceClient":
+                        return PaymentsAccountServiceClient.Create(callInvoker, (PaymentsAccountServiceSettings) settings);
 
 
-                  case "ProductBiddingCategoryConstantServiceClient":
-                      return ProductBiddingCategoryConstantServiceClient.Create(callInvoker, (ProductBiddingCategoryConstantServiceSettings) settings);
+                    case "ProductBiddingCategoryConstantServiceClient":
+                        return ProductBiddingCategoryConstantServiceClient.Create(callInvoker, (ProductBiddingCategoryConstantServiceSettings) settings);
 
 
-                  case "ProductGroupViewServiceClient":
-                      return ProductGroupViewServiceClient.Create(callInvoker, (ProductGroupViewServiceSettings) settings);
+                    case "ProductGroupViewServiceClient":
+                        return ProductGroupViewServiceClient.Create(callInvoker, (ProductGroupViewServiceSettings) settings);
 
 
-                  case "ReachPlanServiceClient":
-                      return ReachPlanServiceClient.Create(callInvoker, (ReachPlanServiceSettings) settings);
+                    case "ReachPlanServiceClient":
+                        return ReachPlanServiceClient.Create(callInvoker, (ReachPlanServiceSettings) settings);
 
 
-                  case "RecommendationServiceClient":
-                      return RecommendationServiceClient.Create(callInvoker, (RecommendationServiceSettings) settings);
+                    case "RecommendationServiceClient":
+                        return RecommendationServiceClient.Create(callInvoker, (RecommendationServiceSettings) settings);
 
 
-                  case "RemarketingActionServiceClient":
-                      return RemarketingActionServiceClient.Create(callInvoker, (RemarketingActionServiceSettings) settings);
+                    case "RemarketingActionServiceClient":
+                        return RemarketingActionServiceClient.Create(callInvoker, (RemarketingActionServiceSettings) settings);
 
 
-                  case "SearchTermViewServiceClient":
-                      return SearchTermViewServiceClient.Create(callInvoker, (SearchTermViewServiceSettings) settings);
+                    case "SearchTermViewServiceClient":
+                        return SearchTermViewServiceClient.Create(callInvoker, (SearchTermViewServiceSettings) settings);
 
 
-                  case "SharedCriterionServiceClient":
-                      return SharedCriterionServiceClient.Create(callInvoker, (SharedCriterionServiceSettings) settings);
+                    case "SharedCriterionServiceClient":
+                        return SharedCriterionServiceClient.Create(callInvoker, (SharedCriterionServiceSettings) settings);
 
 
-                  case "SharedSetServiceClient":
-                      return SharedSetServiceClient.Create(callInvoker, (SharedSetServiceSettings) settings);
+                    case "SharedSetServiceClient":
+                        return SharedSetServiceClient.Create(callInvoker, (SharedSetServiceSettings) settings);
 
 
-                  case "ShoppingPerformanceViewServiceClient":
-                      return ShoppingPerformanceViewServiceClient.Create(callInvoker, (ShoppingPerformanceViewServiceSettings) settings);
+                    case "ShoppingPerformanceViewServiceClient":
+                        return ShoppingPerformanceViewServiceClient.Create(callInvoker, (ShoppingPerformanceViewServiceSettings) settings);
 
 
-                  case "TopicConstantServiceClient":
-                      return TopicConstantServiceClient.Create(callInvoker, (TopicConstantServiceSettings) settings);
+                    case "TopicConstantServiceClient":
+                        return TopicConstantServiceClient.Create(callInvoker, (TopicConstantServiceSettings) settings);
 
 
-                  case "TopicViewServiceClient":
-                      return TopicViewServiceClient.Create(callInvoker, (TopicViewServiceSettings) settings);
+                    case "TopicViewServiceClient":
+                        return TopicViewServiceClient.Create(callInvoker, (TopicViewServiceSettings) settings);
 
 
-                  case "UserInterestServiceClient":
-                      return UserInterestServiceClient.Create(callInvoker, (UserInterestServiceSettings) settings);
+                    case "UserInterestServiceClient":
+                        return UserInterestServiceClient.Create(callInvoker, (UserInterestServiceSettings) settings);
 
 
-                  case "UserListServiceClient":
-                      return UserListServiceClient.Create(callInvoker, (UserListServiceSettings) settings);
+                    case "UserListServiceClient":
+                        return UserListServiceClient.Create(callInvoker, (UserListServiceSettings) settings);
 
 
-                  case "UserLocationViewServiceClient":
-                      return UserLocationViewServiceClient.Create(callInvoker, (UserLocationViewServiceSettings) settings);
+                    case "UserLocationViewServiceClient":
+                        return UserLocationViewServiceClient.Create(callInvoker, (UserLocationViewServiceSettings) settings);
 
 
-                  case "VideoServiceClient":
-                      return VideoServiceClient.Create(callInvoker, (VideoServiceSettings) settings);
+                    case "VideoServiceClient":
+                        return VideoServiceClient.Create(callInvoker, (VideoServiceSettings) settings);
 
-                  default:
-                      return null;
+
+                    default:
+                        return null;
                 }
             }
+
+
         }
     }
 }

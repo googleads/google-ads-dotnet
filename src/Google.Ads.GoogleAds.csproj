@@ -3,13 +3,13 @@
   <PropertyGroup>
     <Title>Google Ads API Dotnet Client Library</Title>
     <PackageId>Google.Ads.GoogleAds</PackageId>
-    <Version>2.9.0</Version>
-    <Description>This library provides you with functionality to access the Google Ads API.</Description>
+    <Version>3.0.0</Version>
+    <Description>This library provides you with functionality to access the Google Ads API. The Google Ads API is the modern programmatic interface to Google Ads and the next generation of the AdWords API. See https://developers.google.com/google-ads/api to learn more about Google Ads API.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
     <PackageTags>GoogleAds Google</PackageTags>
     <Copyright>Copyright 2018, Google LLC</Copyright>
     <Authors>https://github.com/AnashOommen</Authors>
-    <PackageIconUrl>https://www.gstatic.com/images/icons/material/product/1x/adwords_64dp.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/googleads/google-ads-dotnet/master/logo.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/googleads/google-ads-dotnet</PackageProjectUrl>
     <Company>Google</Company>
     <RepositoryType>git</RepositoryType>
@@ -19,8 +19,7 @@
   </PropertyGroup>
     <!-- build properties -->
   <PropertyGroup>
-    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netstandard2.0;net452</TargetFrameworks>
-    <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netstandard2.0;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net472</TargetFrameworks>
     <AssemblyName>Google.Ads.GoogleAds</AssemblyName>
     <RootNamespace>Google.Ads.GoogleAds</RootNamespace>
     <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
@@ -31,8 +30,8 @@
     <IncludeSource>true</IncludeSource>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyVersion>2.9.0.0</AssemblyVersion>
-    <FileVersion>2.9.0.0</FileVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <FileVersion>3.0.0.0</FileVersion>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -40,16 +39,24 @@
     <Content Include="web.config.transform" PackagePath="content" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Google.LongRunning" Version="1.1.0" />
-    <PackageReference Include="Google.Protobuf" Version="3.11.1" />
-    <PackageReference Include="Grpc.Core" Version="1.22.1" />
-    <PackageReference Include="Google.Api.Gax.Grpc" Version="2.10.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.2" />
+    <None Include="logo.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Api.Gax.Grpc.GrpcCore" Version="3.0.0" />
+    <PackageReference Include="Google.LongRunning" Version="2.0.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.12.2" />
+    <PackageReference Include="Grpc.Core" Version="2.29.0" />
+    <PackageReference Include="Google.Api.Gax.Grpc" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.4" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)'=='net452'">
+  <ItemGroup Condition="'$(TargetFramework)'=='net472'">
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web" />
   </ItemGroup>
@@ -70,7 +77,4 @@
     <Copy SourceFiles="App.config" DestinationFiles="app.config.transform" />
     <Copy SourceFiles="App.config" DestinationFiles="web.config.transform" />
   </Target>
-  <PropertyGroup Condition="'$(TargetFramework)'=='net452'">
-    <DefineConstants>NET452</DefineConstants>
-  </PropertyGroup>
 </Project>

@@ -150,7 +150,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
                         // Makes the validateOnly mutate request.
                         MutateAdGroupCriteriaResponse response =
                             adGroupCriterionService.MutateAdGroupCriteria(
-                                customerId.ToString(), operations, false, true);
+                                new MutateAdGroupCriteriaRequest()
+                                {
+                                    CustomerId = customerId.ToString(),
+                                    Operations = { operations },
+                                    PartialFailure = false,
+                                    ValidateOnly = true
+                                });
                         Console.WriteLine($"[{threadIndex}] Validated {operations.Count} " +
                             $"ad group criteria:");
                         break;

@@ -14,107 +14,144 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedExpandedLandingPageViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedExpandedLandingPageViewServiceClientTest
     {
+        [Test]
+        public void GetExpandedLandingPageViewRequestObject()
+        {
+            moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
+            GetExpandedLandingPageViewRequest request = new GetExpandedLandingPageViewRequest
+            {
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+            };
+            gagvr::ExpandedLandingPageView expectedResponse = new gagvr::ExpandedLandingPageView
+            {
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+                ExpandedFinalUrl = "expanded_final_url4339aa97",
+            };
+            mockGrpcClient.Setup(x => x.GetExpandedLandingPageView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ExpandedLandingPageViewServiceClient client = new ExpandedLandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ExpandedLandingPageView response = client.GetExpandedLandingPageView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetExpandedLandingPageViewRequestObjectAsync()
+        {
+            moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
+            GetExpandedLandingPageViewRequest request = new GetExpandedLandingPageViewRequest
+            {
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+            };
+            gagvr::ExpandedLandingPageView expectedResponse = new gagvr::ExpandedLandingPageView
+            {
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+                ExpandedFinalUrl = "expanded_final_url4339aa97",
+            };
+            mockGrpcClient.Setup(x => x.GetExpandedLandingPageViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ExpandedLandingPageView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ExpandedLandingPageViewServiceClient client = new ExpandedLandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ExpandedLandingPageView responseCallSettings = await client.GetExpandedLandingPageViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ExpandedLandingPageView responseCancellationToken = await client.GetExpandedLandingPageViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetExpandedLandingPageView()
         {
-            Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(MockBehavior.Strict);
-            GetExpandedLandingPageViewRequest expectedRequest = new GetExpandedLandingPageViewRequest
-            {
-                ResourceName = new ExpandedLandingPageViewName("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]").ToString(),
-            };
-            ExpandedLandingPageView expectedResponse = new ExpandedLandingPageView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetExpandedLandingPageView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ExpandedLandingPageViewServiceClient client = new ExpandedLandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ExpandedLandingPageViewName("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]").ToString();
-            ExpandedLandingPageView response = client.GetExpandedLandingPageView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetExpandedLandingPageViewAsync()
-        {
-            Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(MockBehavior.Strict);
-            GetExpandedLandingPageViewRequest expectedRequest = new GetExpandedLandingPageViewRequest
-            {
-                ResourceName = new ExpandedLandingPageViewName("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]").ToString(),
-            };
-            ExpandedLandingPageView expectedResponse = new ExpandedLandingPageView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetExpandedLandingPageViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ExpandedLandingPageView>(Task.FromResult(expectedResponse), null, null, null, null));
-            ExpandedLandingPageViewServiceClient client = new ExpandedLandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ExpandedLandingPageViewName("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]").ToString();
-            ExpandedLandingPageView response = await client.GetExpandedLandingPageViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetExpandedLandingPageView2()
-        {
-            Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
             GetExpandedLandingPageViewRequest request = new GetExpandedLandingPageViewRequest
             {
-                ResourceName = new ExpandedLandingPageViewName("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]").ToString(),
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
             };
-            ExpandedLandingPageView expectedResponse = new ExpandedLandingPageView
+            gagvr::ExpandedLandingPageView expectedResponse = new gagvr::ExpandedLandingPageView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+                ExpandedFinalUrl = "expanded_final_url4339aa97",
             };
-            mockGrpcClient.Setup(x => x.GetExpandedLandingPageView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetExpandedLandingPageView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ExpandedLandingPageViewServiceClient client = new ExpandedLandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
-            ExpandedLandingPageView response = client.GetExpandedLandingPageView(request);
+            gagvr::ExpandedLandingPageView response = client.GetExpandedLandingPageView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetExpandedLandingPageViewAsync2()
+        public async stt::Task GetExpandedLandingPageViewAsync()
         {
-            Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
             GetExpandedLandingPageViewRequest request = new GetExpandedLandingPageViewRequest
             {
-                ResourceName = new ExpandedLandingPageViewName("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]").ToString(),
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
             };
-            ExpandedLandingPageView expectedResponse = new ExpandedLandingPageView
+            gagvr::ExpandedLandingPageView expectedResponse = new gagvr::ExpandedLandingPageView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+                ExpandedFinalUrl = "expanded_final_url4339aa97",
             };
-            mockGrpcClient.Setup(x => x.GetExpandedLandingPageViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ExpandedLandingPageView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetExpandedLandingPageViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ExpandedLandingPageView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ExpandedLandingPageViewServiceClient client = new ExpandedLandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
-            ExpandedLandingPageView response = await client.GetExpandedLandingPageViewAsync(request);
+            gagvr::ExpandedLandingPageView responseCallSettings = await client.GetExpandedLandingPageViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ExpandedLandingPageView responseCancellationToken = await client.GetExpandedLandingPageViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetExpandedLandingPageViewResourceNames()
+        {
+            moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
+            GetExpandedLandingPageViewRequest request = new GetExpandedLandingPageViewRequest
+            {
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+            };
+            gagvr::ExpandedLandingPageView expectedResponse = new gagvr::ExpandedLandingPageView
+            {
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+                ExpandedFinalUrl = "expanded_final_url4339aa97",
+            };
+            mockGrpcClient.Setup(x => x.GetExpandedLandingPageView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ExpandedLandingPageViewServiceClient client = new ExpandedLandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ExpandedLandingPageView response = client.GetExpandedLandingPageView(request.ResourceNameAsExpandedLandingPageViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetExpandedLandingPageViewResourceNamesAsync()
+        {
+            moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
+            GetExpandedLandingPageViewRequest request = new GetExpandedLandingPageViewRequest
+            {
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+            };
+            gagvr::ExpandedLandingPageView expectedResponse = new gagvr::ExpandedLandingPageView
+            {
+                ResourceNameAsExpandedLandingPageViewName = gagvr::ExpandedLandingPageViewName.FromCustomerExpandedLandingPageView("[CUSTOMER]", "[EXPANDED_LANDING_PAGE_VIEW]"),
+                ExpandedFinalUrl = "expanded_final_url4339aa97",
+            };
+            mockGrpcClient.Setup(x => x.GetExpandedLandingPageViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ExpandedLandingPageView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ExpandedLandingPageViewServiceClient client = new ExpandedLandingPageViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ExpandedLandingPageView responseCallSettings = await client.GetExpandedLandingPageViewAsync(request.ResourceNameAsExpandedLandingPageViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ExpandedLandingPageView responseCancellationToken = await client.GetExpandedLandingPageViewAsync(request.ResourceNameAsExpandedLandingPageViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

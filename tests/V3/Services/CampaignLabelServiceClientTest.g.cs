@@ -14,216 +14,176 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCampaignLabelServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCampaignLabelServiceClientTest
     {
+        [Test]
+        public void GetCampaignLabelRequestObject()
+        {
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignLabelRequest request = new GetCampaignLabelRequest
+            {
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
+            };
+            gagvr::CampaignLabel expectedResponse = new gagvr::CampaignLabel
+            {
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignLabel response = client.GetCampaignLabel(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCampaignLabelRequestObjectAsync()
+        {
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignLabelRequest request = new GetCampaignLabelRequest
+            {
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
+            };
+            gagvr::CampaignLabel expectedResponse = new gagvr::CampaignLabel
+            {
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignLabel>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignLabel responseCallSettings = await client.GetCampaignLabelAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignLabel responseCancellationToken = await client.GetCampaignLabelAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCampaignLabel()
         {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
-            GetCampaignLabelRequest expectedRequest = new GetCampaignLabelRequest
-            {
-                ResourceName = new CampaignLabelName("[CUSTOMER]", "[CAMPAIGN_LABEL]").ToString(),
-            };
-            CampaignLabel expectedResponse = new CampaignLabel
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignLabel(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignLabelName("[CUSTOMER]", "[CAMPAIGN_LABEL]").ToString();
-            CampaignLabel response = client.GetCampaignLabel(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCampaignLabelAsync()
-        {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
-            GetCampaignLabelRequest expectedRequest = new GetCampaignLabelRequest
-            {
-                ResourceName = new CampaignLabelName("[CUSTOMER]", "[CAMPAIGN_LABEL]").ToString(),
-            };
-            CampaignLabel expectedResponse = new CampaignLabel
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignLabelAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignLabel>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignLabelName("[CUSTOMER]", "[CAMPAIGN_LABEL]").ToString();
-            CampaignLabel response = await client.GetCampaignLabelAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCampaignLabel2()
-        {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
             GetCampaignLabelRequest request = new GetCampaignLabelRequest
             {
-                ResourceName = new CampaignLabelName("[CUSTOMER]", "[CAMPAIGN_LABEL]").ToString(),
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
             };
-            CampaignLabel expectedResponse = new CampaignLabel
+            gagvr::CampaignLabel expectedResponse = new gagvr::CampaignLabel
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
-            mockGrpcClient.Setup(x => x.GetCampaignLabel(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCampaignLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignLabel response = client.GetCampaignLabel(request);
+            gagvr::CampaignLabel response = client.GetCampaignLabel(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCampaignLabelAsync2()
+        public async stt::Task GetCampaignLabelAsync()
         {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
             GetCampaignLabelRequest request = new GetCampaignLabelRequest
             {
-                ResourceName = new CampaignLabelName("[CUSTOMER]", "[CAMPAIGN_LABEL]").ToString(),
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
             };
-            CampaignLabel expectedResponse = new CampaignLabel
+            gagvr::CampaignLabel expectedResponse = new gagvr::CampaignLabel
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
-            mockGrpcClient.Setup(x => x.GetCampaignLabelAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignLabel>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCampaignLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignLabel>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignLabel response = await client.GetCampaignLabelAsync(request);
+            gagvr::CampaignLabel responseCallSettings = await client.GetCampaignLabelAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignLabel responseCancellationToken = await client.GetCampaignLabelAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCampaignLabelResourceNames()
+        {
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignLabelRequest request = new GetCampaignLabelRequest
+            {
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
+            };
+            gagvr::CampaignLabel expectedResponse = new gagvr::CampaignLabel
+            {
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignLabel response = client.GetCampaignLabel(request.ResourceNameAsCampaignLabelName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCampaignLabels()
+        public async stt::Task GetCampaignLabelResourceNamesAsync()
         {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
-            MutateCampaignLabelsRequest expectedRequest = new MutateCampaignLabelsRequest
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignLabelRequest request = new GetCampaignLabelRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
             };
-            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignLabels(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CampaignLabel expectedResponse = new gagvr::CampaignLabel
+            {
+                ResourceNameAsCampaignLabelName = gagvr::CampaignLabelName.FromCustomerCampaignLabel("[CUSTOMER]", "[CAMPAIGN_LABEL]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignLabel>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignLabelOperation> operations = new List<CampaignLabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignLabelsResponse response = client.MutateCampaignLabels(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CampaignLabel responseCallSettings = await client.GetCampaignLabelAsync(request.ResourceNameAsCampaignLabelName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignLabel responseCancellationToken = await client.GetCampaignLabelAsync(request.ResourceNameAsCampaignLabelName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCampaignLabelsAsync()
+        public void MutateCampaignLabelsRequestObject()
         {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
-            MutateCampaignLabelsRequest expectedRequest = new MutateCampaignLabelsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignLabelsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignLabelsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignLabelOperation> operations = new List<CampaignLabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignLabelsResponse response = await client.MutateCampaignLabelsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignLabels2()
-        {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
-            MutateCampaignLabelsRequest expectedRequest = new MutateCampaignLabelsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignLabels(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignLabelOperation> operations = new List<CampaignLabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignLabelsResponse response = client.MutateCampaignLabels(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCampaignLabelsAsync2()
-        {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
-            MutateCampaignLabelsRequest expectedRequest = new MutateCampaignLabelsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignLabelsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignLabelsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignLabelOperation> operations = new List<CampaignLabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignLabelsResponse response = await client.MutateCampaignLabelsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignLabels3()
-        {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignLabelsRequest request = new MutateCampaignLabelsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignLabelOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignLabels(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignLabels(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
             MutateCampaignLabelsResponse response = client.MutateCampaignLabels(request);
             Assert.AreEqual(expectedResponse, response);
@@ -231,22 +191,90 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task MutateCampaignLabelsAsync3()
+        public async stt::Task MutateCampaignLabelsRequestObjectAsync()
         {
-            Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new Mock<CampaignLabelService.CampaignLabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignLabelsRequest request = new MutateCampaignLabelsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignLabelOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignLabelsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignLabelsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignLabelsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignLabelsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCampaignLabelsResponse response = await client.MutateCampaignLabelsAsync(request);
+            MutateCampaignLabelsResponse responseCallSettings = await client.MutateCampaignLabelsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignLabelsResponse responseCancellationToken = await client.MutateCampaignLabelsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCampaignLabels()
+        {
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignLabelsRequest request = new MutateCampaignLabelsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignLabelOperation(),
+                },
+            };
+            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignLabels(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignLabelsResponse response = client.MutateCampaignLabels(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCampaignLabelsAsync()
+        {
+            moq::Mock<CampaignLabelService.CampaignLabelServiceClient> mockGrpcClient = new moq::Mock<CampaignLabelService.CampaignLabelServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignLabelsRequest request = new MutateCampaignLabelsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignLabelOperation(),
+                },
+            };
+            MutateCampaignLabelsResponse expectedResponse = new MutateCampaignLabelsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignLabelsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignLabelsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignLabelServiceClient client = new CampaignLabelServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignLabelsResponse responseCallSettings = await client.MutateCampaignLabelsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignLabelsResponse responseCancellationToken = await client.MutateCampaignLabelsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

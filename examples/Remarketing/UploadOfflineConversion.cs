@@ -103,7 +103,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 // Issues a request to upload the click conversion.
                 UploadClickConversionsResponse response =
                     conversionUploadService.UploadClickConversions(
-                    customerId.ToString(), new[] { clickConversion }, true, false);
+                        new UploadClickConversionsRequest()
+                        {
+                            CustomerId = customerId.ToString(),
+                            Conversions = { clickConversion },
+                            PartialFailure = true,
+                            ValidateOnly = false
+                        });
 
                 // Prints the result.
                 ClickConversionResult uploadedClickConversion = response.Results[0];

@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedProductGroupViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedProductGroupViewServiceClientTest
     {
+        [Test]
+        public void GetProductGroupViewRequestObject()
+        {
+            moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
+            GetProductGroupViewRequest request = new GetProductGroupViewRequest
+            {
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
+            };
+            gagvr::ProductGroupView expectedResponse = new gagvr::ProductGroupView
+            {
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetProductGroupView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ProductGroupViewServiceClient client = new ProductGroupViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ProductGroupView response = client.GetProductGroupView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetProductGroupViewRequestObjectAsync()
+        {
+            moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
+            GetProductGroupViewRequest request = new GetProductGroupViewRequest
+            {
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
+            };
+            gagvr::ProductGroupView expectedResponse = new gagvr::ProductGroupView
+            {
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetProductGroupViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ProductGroupView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ProductGroupViewServiceClient client = new ProductGroupViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ProductGroupView responseCallSettings = await client.GetProductGroupViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ProductGroupView responseCancellationToken = await client.GetProductGroupViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetProductGroupView()
         {
-            Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new Mock<ProductGroupViewService.ProductGroupViewServiceClient>(MockBehavior.Strict);
-            GetProductGroupViewRequest expectedRequest = new GetProductGroupViewRequest
-            {
-                ResourceName = new ProductGroupViewName("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]").ToString(),
-            };
-            ProductGroupView expectedResponse = new ProductGroupView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetProductGroupView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ProductGroupViewServiceClient client = new ProductGroupViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ProductGroupViewName("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]").ToString();
-            ProductGroupView response = client.GetProductGroupView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetProductGroupViewAsync()
-        {
-            Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new Mock<ProductGroupViewService.ProductGroupViewServiceClient>(MockBehavior.Strict);
-            GetProductGroupViewRequest expectedRequest = new GetProductGroupViewRequest
-            {
-                ResourceName = new ProductGroupViewName("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]").ToString(),
-            };
-            ProductGroupView expectedResponse = new ProductGroupView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetProductGroupViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ProductGroupView>(Task.FromResult(expectedResponse), null, null, null, null));
-            ProductGroupViewServiceClient client = new ProductGroupViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ProductGroupViewName("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]").ToString();
-            ProductGroupView response = await client.GetProductGroupViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetProductGroupView2()
-        {
-            Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new Mock<ProductGroupViewService.ProductGroupViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
             GetProductGroupViewRequest request = new GetProductGroupViewRequest
             {
-                ResourceName = new ProductGroupViewName("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]").ToString(),
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
             };
-            ProductGroupView expectedResponse = new ProductGroupView
+            gagvr::ProductGroupView expectedResponse = new gagvr::ProductGroupView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetProductGroupView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetProductGroupView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ProductGroupViewServiceClient client = new ProductGroupViewServiceClientImpl(mockGrpcClient.Object, null);
-            ProductGroupView response = client.GetProductGroupView(request);
+            gagvr::ProductGroupView response = client.GetProductGroupView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetProductGroupViewAsync2()
+        public async stt::Task GetProductGroupViewAsync()
         {
-            Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new Mock<ProductGroupViewService.ProductGroupViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
             GetProductGroupViewRequest request = new GetProductGroupViewRequest
             {
-                ResourceName = new ProductGroupViewName("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]").ToString(),
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
             };
-            ProductGroupView expectedResponse = new ProductGroupView
+            gagvr::ProductGroupView expectedResponse = new gagvr::ProductGroupView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetProductGroupViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ProductGroupView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetProductGroupViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ProductGroupView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ProductGroupViewServiceClient client = new ProductGroupViewServiceClientImpl(mockGrpcClient.Object, null);
-            ProductGroupView response = await client.GetProductGroupViewAsync(request);
+            gagvr::ProductGroupView responseCallSettings = await client.GetProductGroupViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ProductGroupView responseCancellationToken = await client.GetProductGroupViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetProductGroupViewResourceNames()
+        {
+            moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
+            GetProductGroupViewRequest request = new GetProductGroupViewRequest
+            {
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
+            };
+            gagvr::ProductGroupView expectedResponse = new gagvr::ProductGroupView
+            {
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetProductGroupView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ProductGroupViewServiceClient client = new ProductGroupViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ProductGroupView response = client.GetProductGroupView(request.ResourceNameAsProductGroupViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetProductGroupViewResourceNamesAsync()
+        {
+            moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
+            GetProductGroupViewRequest request = new GetProductGroupViewRequest
+            {
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
+            };
+            gagvr::ProductGroupView expectedResponse = new gagvr::ProductGroupView
+            {
+                ResourceNameAsProductGroupViewName = gagvr::ProductGroupViewName.FromCustomerProductGroupView("[CUSTOMER]", "[PRODUCT_GROUP_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetProductGroupViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ProductGroupView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ProductGroupViewServiceClient client = new ProductGroupViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ProductGroupView responseCallSettings = await client.GetProductGroupViewAsync(request.ResourceNameAsProductGroupViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ProductGroupView responseCancellationToken = await client.GetProductGroupViewAsync(request.ResourceNameAsProductGroupViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

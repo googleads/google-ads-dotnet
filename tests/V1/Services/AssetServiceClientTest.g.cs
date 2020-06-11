@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,160 +14,204 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V1.Common;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAssetServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAssetServiceClientTest
     {
+        [Test]
+        public void GetAssetRequestObject()
+        {
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
+            GetAssetRequest request = new GetAssetRequest
+            {
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+            };
+            gagvr::Asset expectedResponse = new gagvr::Asset
+            {
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Id = -6774108720365892680L,
+                AssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Type = gagve::AssetTypeEnum.Types.AssetType.MediaBundle,
+                YoutubeVideoAsset = new gagvc::YoutubeVideoAsset(),
+                MediaBundleAsset = new gagvc::MediaBundleAsset(),
+                ImageAsset = new gagvc::ImageAsset(),
+                TextAsset = new gagvc::TextAsset(),
+            };
+            mockGrpcClient.Setup(x => x.GetAsset(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Asset response = client.GetAsset(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAssetRequestObjectAsync()
+        {
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
+            GetAssetRequest request = new GetAssetRequest
+            {
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+            };
+            gagvr::Asset expectedResponse = new gagvr::Asset
+            {
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Id = -6774108720365892680L,
+                AssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Type = gagve::AssetTypeEnum.Types.AssetType.MediaBundle,
+                YoutubeVideoAsset = new gagvc::YoutubeVideoAsset(),
+                MediaBundleAsset = new gagvc::MediaBundleAsset(),
+                ImageAsset = new gagvc::ImageAsset(),
+                TextAsset = new gagvc::TextAsset(),
+            };
+            mockGrpcClient.Setup(x => x.GetAssetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Asset>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Asset responseCallSettings = await client.GetAssetAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Asset responseCancellationToken = await client.GetAssetAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAsset()
         {
-            Mock<AssetService.AssetServiceClient> mockGrpcClient = new Mock<AssetService.AssetServiceClient>(MockBehavior.Strict);
-            GetAssetRequest expectedRequest = new GetAssetRequest
-            {
-                ResourceName = new AssetName("[CUSTOMER]", "[ASSET]").ToString(),
-            };
-            Asset expectedResponse = new Asset
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAsset(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AssetName("[CUSTOMER]", "[ASSET]").ToString();
-            Asset response = client.GetAsset(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAssetAsync()
-        {
-            Mock<AssetService.AssetServiceClient> mockGrpcClient = new Mock<AssetService.AssetServiceClient>(MockBehavior.Strict);
-            GetAssetRequest expectedRequest = new GetAssetRequest
-            {
-                ResourceName = new AssetName("[CUSTOMER]", "[ASSET]").ToString(),
-            };
-            Asset expectedResponse = new Asset
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAssetAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Asset>(Task.FromResult(expectedResponse), null, null, null, null));
-            AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AssetName("[CUSTOMER]", "[ASSET]").ToString();
-            Asset response = await client.GetAssetAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAsset2()
-        {
-            Mock<AssetService.AssetServiceClient> mockGrpcClient = new Mock<AssetService.AssetServiceClient>(MockBehavior.Strict);
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
             GetAssetRequest request = new GetAssetRequest
             {
-                ResourceName = new AssetName("[CUSTOMER]", "[ASSET]").ToString(),
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
             };
-            Asset expectedResponse = new Asset
+            gagvr::Asset expectedResponse = new gagvr::Asset
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Id = -6774108720365892680L,
+                AssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Type = gagve::AssetTypeEnum.Types.AssetType.MediaBundle,
+                YoutubeVideoAsset = new gagvc::YoutubeVideoAsset(),
+                MediaBundleAsset = new gagvc::MediaBundleAsset(),
+                ImageAsset = new gagvc::ImageAsset(),
+                TextAsset = new gagvc::TextAsset(),
             };
-            mockGrpcClient.Setup(x => x.GetAsset(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAsset(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
-            Asset response = client.GetAsset(request);
+            gagvr::Asset response = client.GetAsset(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAssetAsync2()
+        public async stt::Task GetAssetAsync()
         {
-            Mock<AssetService.AssetServiceClient> mockGrpcClient = new Mock<AssetService.AssetServiceClient>(MockBehavior.Strict);
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
             GetAssetRequest request = new GetAssetRequest
             {
-                ResourceName = new AssetName("[CUSTOMER]", "[ASSET]").ToString(),
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
             };
-            Asset expectedResponse = new Asset
+            gagvr::Asset expectedResponse = new gagvr::Asset
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Id = -6774108720365892680L,
+                AssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Type = gagve::AssetTypeEnum.Types.AssetType.MediaBundle,
+                YoutubeVideoAsset = new gagvc::YoutubeVideoAsset(),
+                MediaBundleAsset = new gagvc::MediaBundleAsset(),
+                ImageAsset = new gagvc::ImageAsset(),
+                TextAsset = new gagvc::TextAsset(),
             };
-            mockGrpcClient.Setup(x => x.GetAssetAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Asset>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAssetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Asset>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
-            Asset response = await client.GetAssetAsync(request);
+            gagvr::Asset responseCallSettings = await client.GetAssetAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Asset responseCancellationToken = await client.GetAssetAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAssetResourceNames()
+        {
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
+            GetAssetRequest request = new GetAssetRequest
+            {
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+            };
+            gagvr::Asset expectedResponse = new gagvr::Asset
+            {
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Id = -6774108720365892680L,
+                AssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Type = gagve::AssetTypeEnum.Types.AssetType.MediaBundle,
+                YoutubeVideoAsset = new gagvc::YoutubeVideoAsset(),
+                MediaBundleAsset = new gagvc::MediaBundleAsset(),
+                ImageAsset = new gagvc::ImageAsset(),
+                TextAsset = new gagvc::TextAsset(),
+            };
+            mockGrpcClient.Setup(x => x.GetAsset(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Asset response = client.GetAsset(request.ResourceNameAsAssetName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateAssets()
+        public async stt::Task GetAssetResourceNamesAsync()
         {
-            Mock<AssetService.AssetServiceClient> mockGrpcClient = new Mock<AssetService.AssetServiceClient>(MockBehavior.Strict);
-            MutateAssetsRequest expectedRequest = new MutateAssetsRequest
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
+            GetAssetRequest request = new GetAssetRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
             };
-            MutateAssetsResponse expectedResponse = new MutateAssetsResponse();
-            mockGrpcClient.Setup(x => x.MutateAssets(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::Asset expectedResponse = new gagvr::Asset
+            {
+                ResourceNameAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Id = -6774108720365892680L,
+                AssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+                Type = gagve::AssetTypeEnum.Types.AssetType.MediaBundle,
+                YoutubeVideoAsset = new gagvc::YoutubeVideoAsset(),
+                MediaBundleAsset = new gagvc::MediaBundleAsset(),
+                ImageAsset = new gagvc::ImageAsset(),
+                TextAsset = new gagvc::TextAsset(),
+            };
+            mockGrpcClient.Setup(x => x.GetAssetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Asset>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AssetOperation> operations = new List<AssetOperation>();
-            MutateAssetsResponse response = client.MutateAssets(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::Asset responseCallSettings = await client.GetAssetAsync(request.ResourceNameAsAssetName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Asset responseCancellationToken = await client.GetAssetAsync(request.ResourceNameAsAssetName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateAssetsAsync()
+        public void MutateAssetsRequestObject()
         {
-            Mock<AssetService.AssetServiceClient> mockGrpcClient = new Mock<AssetService.AssetServiceClient>(MockBehavior.Strict);
-            MutateAssetsRequest expectedRequest = new MutateAssetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAssetsResponse expectedResponse = new MutateAssetsResponse();
-            mockGrpcClient.Setup(x => x.MutateAssetsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAssetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AssetOperation> operations = new List<AssetOperation>();
-            MutateAssetsResponse response = await client.MutateAssetsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAssets2()
-        {
-            Mock<AssetService.AssetServiceClient> mockGrpcClient = new Mock<AssetService.AssetServiceClient>(MockBehavior.Strict);
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
             MutateAssetsRequest request = new MutateAssetsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AssetOperation(),
+                },
             };
-            MutateAssetsResponse expectedResponse = new MutateAssetsResponse();
-            mockGrpcClient.Setup(x => x.MutateAssets(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateAssetsResponse expectedResponse = new MutateAssetsResponse
+            {
+                Results =
+                {
+                    new MutateAssetResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateAssets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
             MutateAssetsResponse response = client.MutateAssets(request);
             Assert.AreEqual(expectedResponse, response);
@@ -175,22 +219,85 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateAssetsAsync2()
+        public async stt::Task MutateAssetsRequestObjectAsync()
         {
-            Mock<AssetService.AssetServiceClient> mockGrpcClient = new Mock<AssetService.AssetServiceClient>(MockBehavior.Strict);
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
             MutateAssetsRequest request = new MutateAssetsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AssetOperation(),
+                },
             };
-            MutateAssetsResponse expectedResponse = new MutateAssetsResponse();
-            mockGrpcClient.Setup(x => x.MutateAssetsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAssetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateAssetsResponse expectedResponse = new MutateAssetsResponse
+            {
+                Results =
+                {
+                    new MutateAssetResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateAssetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAssetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
-            MutateAssetsResponse response = await client.MutateAssetsAsync(request);
+            MutateAssetsResponse responseCallSettings = await client.MutateAssetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAssetsResponse responseCancellationToken = await client.MutateAssetsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateAssets()
+        {
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
+            MutateAssetsRequest request = new MutateAssetsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AssetOperation(),
+                },
+            };
+            MutateAssetsResponse expectedResponse = new MutateAssetsResponse
+            {
+                Results =
+                {
+                    new MutateAssetResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateAssets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAssetsResponse response = client.MutateAssets(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateAssetsAsync()
+        {
+            moq::Mock<AssetService.AssetServiceClient> mockGrpcClient = new moq::Mock<AssetService.AssetServiceClient>(moq::MockBehavior.Strict);
+            MutateAssetsRequest request = new MutateAssetsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AssetOperation(),
+                },
+            };
+            MutateAssetsResponse expectedResponse = new MutateAssetsResponse
+            {
+                Results =
+                {
+                    new MutateAssetResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateAssetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAssetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AssetServiceClient client = new AssetServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAssetsResponse responseCallSettings = await client.MutateAssetsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAssetsResponse responseCancellationToken = await client.MutateAssetsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }
