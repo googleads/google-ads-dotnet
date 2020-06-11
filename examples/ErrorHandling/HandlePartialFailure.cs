@@ -206,7 +206,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
 
             // Add the ad groups.
             MutateAdGroupsResponse response =
-                adGroupService.MutateAdGroups(customerId.ToString(), operations, true, false);
+                adGroupService.MutateAdGroups(new MutateAdGroupsRequest()
+                {
+                    CustomerId = customerId.ToString(),
+                    Operations = { operations },
+                    PartialFailure = true,
+                    ValidateOnly = false
+                });
             return response;
         }
     }

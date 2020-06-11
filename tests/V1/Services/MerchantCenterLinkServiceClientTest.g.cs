@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,73 +14,37 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedMerchantCenterLinkServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedMerchantCenterLinkServiceClientTest
     {
         [Test]
-        public void ListMerchantCenterLinks()
+        public void ListMerchantCenterLinksRequestObject()
         {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
-            ListMerchantCenterLinksRequest expectedRequest = new ListMerchantCenterLinksRequest
-            {
-                CustomerId = "customerId-1772061412",
-            };
-            ListMerchantCenterLinksResponse expectedResponse = new ListMerchantCenterLinksResponse();
-            mockGrpcClient.Setup(x => x.ListMerchantCenterLinks(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            ListMerchantCenterLinksResponse response = client.ListMerchantCenterLinks(customerId);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task ListMerchantCenterLinksAsync()
-        {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
-            ListMerchantCenterLinksRequest expectedRequest = new ListMerchantCenterLinksRequest
-            {
-                CustomerId = "customerId-1772061412",
-            };
-            ListMerchantCenterLinksResponse expectedResponse = new ListMerchantCenterLinksResponse();
-            mockGrpcClient.Setup(x => x.ListMerchantCenterLinksAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListMerchantCenterLinksResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            ListMerchantCenterLinksResponse response = await client.ListMerchantCenterLinksAsync(customerId);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void ListMerchantCenterLinks2()
-        {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
             ListMerchantCenterLinksRequest request = new ListMerchantCenterLinksRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
             };
-            ListMerchantCenterLinksResponse expectedResponse = new ListMerchantCenterLinksResponse();
-            mockGrpcClient.Setup(x => x.ListMerchantCenterLinks(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            ListMerchantCenterLinksResponse expectedResponse = new ListMerchantCenterLinksResponse
+            {
+                MerchantCenterLinks =
+                {
+                    new gagvr::MerchantCenterLink(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListMerchantCenterLinks(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
             ListMerchantCenterLinksResponse response = client.ListMerchantCenterLinks(request);
             Assert.AreEqual(expectedResponse, response);
@@ -88,156 +52,227 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task ListMerchantCenterLinksAsync2()
+        public async stt::Task ListMerchantCenterLinksRequestObjectAsync()
         {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
             ListMerchantCenterLinksRequest request = new ListMerchantCenterLinksRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
             };
-            ListMerchantCenterLinksResponse expectedResponse = new ListMerchantCenterLinksResponse();
-            mockGrpcClient.Setup(x => x.ListMerchantCenterLinksAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListMerchantCenterLinksResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            ListMerchantCenterLinksResponse expectedResponse = new ListMerchantCenterLinksResponse
+            {
+                MerchantCenterLinks =
+                {
+                    new gagvr::MerchantCenterLink(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListMerchantCenterLinksAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListMerchantCenterLinksResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            ListMerchantCenterLinksResponse response = await client.ListMerchantCenterLinksAsync(request);
+            ListMerchantCenterLinksResponse responseCallSettings = await client.ListMerchantCenterLinksAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListMerchantCenterLinksResponse responseCancellationToken = await client.ListMerchantCenterLinksAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void ListMerchantCenterLinks()
+        {
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
+            ListMerchantCenterLinksRequest request = new ListMerchantCenterLinksRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+            };
+            ListMerchantCenterLinksResponse expectedResponse = new ListMerchantCenterLinksResponse
+            {
+                MerchantCenterLinks =
+                {
+                    new gagvr::MerchantCenterLink(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListMerchantCenterLinks(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
+            ListMerchantCenterLinksResponse response = client.ListMerchantCenterLinks(request.CustomerId);
             Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task ListMerchantCenterLinksAsync()
+        {
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
+            ListMerchantCenterLinksRequest request = new ListMerchantCenterLinksRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+            };
+            ListMerchantCenterLinksResponse expectedResponse = new ListMerchantCenterLinksResponse
+            {
+                MerchantCenterLinks =
+                {
+                    new gagvr::MerchantCenterLink(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListMerchantCenterLinksAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListMerchantCenterLinksResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
+            ListMerchantCenterLinksResponse responseCallSettings = await client.ListMerchantCenterLinksAsync(request.CustomerId, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListMerchantCenterLinksResponse responseCancellationToken = await client.ListMerchantCenterLinksAsync(request.CustomerId, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetMerchantCenterLinkRequestObject()
+        {
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
+            GetMerchantCenterLinkRequest request = new GetMerchantCenterLinkRequest
+            {
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
+            };
+            gagvr::MerchantCenterLink expectedResponse = new gagvr::MerchantCenterLink
+            {
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
+                Id = -6774108720365892680L,
+                MerchantCenterAccountName = "merchant_center_account_name94680907",
+                Status = gagve::MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetMerchantCenterLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MerchantCenterLink response = client.GetMerchantCenterLink(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetMerchantCenterLinkRequestObjectAsync()
+        {
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
+            GetMerchantCenterLinkRequest request = new GetMerchantCenterLinkRequest
+            {
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
+            };
+            gagvr::MerchantCenterLink expectedResponse = new gagvr::MerchantCenterLink
+            {
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
+                Id = -6774108720365892680L,
+                MerchantCenterAccountName = "merchant_center_account_name94680907",
+                Status = gagve::MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetMerchantCenterLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MerchantCenterLink>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MerchantCenterLink responseCallSettings = await client.GetMerchantCenterLinkAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MerchantCenterLink responseCancellationToken = await client.GetMerchantCenterLinkAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
         public void GetMerchantCenterLink()
         {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
-            GetMerchantCenterLinkRequest expectedRequest = new GetMerchantCenterLinkRequest
-            {
-                ResourceName = new MerchantCenterLinkName("[CUSTOMER]", "[MERCHANT_CENTER_LINK]").ToString(),
-            };
-            MerchantCenterLink expectedResponse = new MerchantCenterLink
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMerchantCenterLink(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MerchantCenterLinkName("[CUSTOMER]", "[MERCHANT_CENTER_LINK]").ToString();
-            MerchantCenterLink response = client.GetMerchantCenterLink(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetMerchantCenterLinkAsync()
-        {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
-            GetMerchantCenterLinkRequest expectedRequest = new GetMerchantCenterLinkRequest
-            {
-                ResourceName = new MerchantCenterLinkName("[CUSTOMER]", "[MERCHANT_CENTER_LINK]").ToString(),
-            };
-            MerchantCenterLink expectedResponse = new MerchantCenterLink
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMerchantCenterLinkAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MerchantCenterLink>(Task.FromResult(expectedResponse), null, null, null, null));
-            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MerchantCenterLinkName("[CUSTOMER]", "[MERCHANT_CENTER_LINK]").ToString();
-            MerchantCenterLink response = await client.GetMerchantCenterLinkAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetMerchantCenterLink2()
-        {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
             GetMerchantCenterLinkRequest request = new GetMerchantCenterLinkRequest
             {
-                ResourceName = new MerchantCenterLinkName("[CUSTOMER]", "[MERCHANT_CENTER_LINK]").ToString(),
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
             };
-            MerchantCenterLink expectedResponse = new MerchantCenterLink
+            gagvr::MerchantCenterLink expectedResponse = new gagvr::MerchantCenterLink
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
+                Id = -6774108720365892680L,
+                MerchantCenterAccountName = "merchant_center_account_name94680907",
+                Status = gagve::MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Enabled,
             };
-            mockGrpcClient.Setup(x => x.GetMerchantCenterLink(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetMerchantCenterLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            MerchantCenterLink response = client.GetMerchantCenterLink(request);
+            gagvr::MerchantCenterLink response = client.GetMerchantCenterLink(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetMerchantCenterLinkAsync2()
+        public async stt::Task GetMerchantCenterLinkAsync()
         {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
             GetMerchantCenterLinkRequest request = new GetMerchantCenterLinkRequest
             {
-                ResourceName = new MerchantCenterLinkName("[CUSTOMER]", "[MERCHANT_CENTER_LINK]").ToString(),
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
             };
-            MerchantCenterLink expectedResponse = new MerchantCenterLink
+            gagvr::MerchantCenterLink expectedResponse = new gagvr::MerchantCenterLink
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
+                Id = -6774108720365892680L,
+                MerchantCenterAccountName = "merchant_center_account_name94680907",
+                Status = gagve::MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Enabled,
             };
-            mockGrpcClient.Setup(x => x.GetMerchantCenterLinkAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MerchantCenterLink>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetMerchantCenterLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MerchantCenterLink>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            MerchantCenterLink response = await client.GetMerchantCenterLinkAsync(request);
+            gagvr::MerchantCenterLink responseCallSettings = await client.GetMerchantCenterLinkAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MerchantCenterLink responseCancellationToken = await client.GetMerchantCenterLinkAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetMerchantCenterLinkResourceNames()
+        {
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
+            GetMerchantCenterLinkRequest request = new GetMerchantCenterLinkRequest
+            {
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
+            };
+            gagvr::MerchantCenterLink expectedResponse = new gagvr::MerchantCenterLink
+            {
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
+                Id = -6774108720365892680L,
+                MerchantCenterAccountName = "merchant_center_account_name94680907",
+                Status = gagve::MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetMerchantCenterLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MerchantCenterLink response = client.GetMerchantCenterLink(request.ResourceNameAsMerchantCenterLinkName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateMerchantCenterLink()
+        public async stt::Task GetMerchantCenterLinkResourceNamesAsync()
         {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
-            MutateMerchantCenterLinkRequest expectedRequest = new MutateMerchantCenterLinkRequest
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
+            GetMerchantCenterLinkRequest request = new GetMerchantCenterLinkRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operation = new MerchantCenterLinkOperation(),
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
             };
-            MutateMerchantCenterLinkResponse expectedResponse = new MutateMerchantCenterLinkResponse();
-            mockGrpcClient.Setup(x => x.MutateMerchantCenterLink(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::MerchantCenterLink expectedResponse = new gagvr::MerchantCenterLink
+            {
+                ResourceNameAsMerchantCenterLinkName = gagvr::MerchantCenterLinkName.FromCustomerMerchantCenterLink("[CUSTOMER]", "[MERCHANT_CENTER_LINK]"),
+                Id = -6774108720365892680L,
+                MerchantCenterAccountName = "merchant_center_account_name94680907",
+                Status = gagve::MerchantCenterLinkStatusEnum.Types.MerchantCenterLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetMerchantCenterLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MerchantCenterLink>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            MerchantCenterLinkOperation operation = new MerchantCenterLinkOperation();
-            MutateMerchantCenterLinkResponse response = client.MutateMerchantCenterLink(customerId, operation);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::MerchantCenterLink responseCallSettings = await client.GetMerchantCenterLinkAsync(request.ResourceNameAsMerchantCenterLinkName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MerchantCenterLink responseCancellationToken = await client.GetMerchantCenterLinkAsync(request.ResourceNameAsMerchantCenterLinkName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateMerchantCenterLinkAsync()
+        public void MutateMerchantCenterLinkRequestObject()
         {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
-            MutateMerchantCenterLinkRequest expectedRequest = new MutateMerchantCenterLinkRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operation = new MerchantCenterLinkOperation(),
-            };
-            MutateMerchantCenterLinkResponse expectedResponse = new MutateMerchantCenterLinkResponse();
-            mockGrpcClient.Setup(x => x.MutateMerchantCenterLinkAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateMerchantCenterLinkResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            MerchantCenterLinkOperation operation = new MerchantCenterLinkOperation();
-            MutateMerchantCenterLinkResponse response = await client.MutateMerchantCenterLinkAsync(customerId, operation);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateMerchantCenterLink2()
-        {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
             MutateMerchantCenterLinkRequest request = new MutateMerchantCenterLinkRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
                 Operation = new MerchantCenterLinkOperation(),
             };
-            MutateMerchantCenterLinkResponse expectedResponse = new MutateMerchantCenterLinkResponse();
-            mockGrpcClient.Setup(x => x.MutateMerchantCenterLink(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateMerchantCenterLinkResponse expectedResponse = new MutateMerchantCenterLinkResponse
+            {
+                Result = new MutateMerchantCenterLinkResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateMerchantCenterLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
             MutateMerchantCenterLinkResponse response = client.MutateMerchantCenterLink(request);
             Assert.AreEqual(expectedResponse, response);
@@ -245,22 +280,67 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateMerchantCenterLinkAsync2()
+        public async stt::Task MutateMerchantCenterLinkRequestObjectAsync()
         {
-            Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(MockBehavior.Strict);
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
             MutateMerchantCenterLinkRequest request = new MutateMerchantCenterLinkRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
                 Operation = new MerchantCenterLinkOperation(),
             };
-            MutateMerchantCenterLinkResponse expectedResponse = new MutateMerchantCenterLinkResponse();
-            mockGrpcClient.Setup(x => x.MutateMerchantCenterLinkAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateMerchantCenterLinkResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateMerchantCenterLinkResponse expectedResponse = new MutateMerchantCenterLinkResponse
+            {
+                Result = new MutateMerchantCenterLinkResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateMerchantCenterLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateMerchantCenterLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
-            MutateMerchantCenterLinkResponse response = await client.MutateMerchantCenterLinkAsync(request);
+            MutateMerchantCenterLinkResponse responseCallSettings = await client.MutateMerchantCenterLinkAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateMerchantCenterLinkResponse responseCancellationToken = await client.MutateMerchantCenterLinkAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateMerchantCenterLink()
+        {
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
+            MutateMerchantCenterLinkRequest request = new MutateMerchantCenterLinkRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operation = new MerchantCenterLinkOperation(),
+            };
+            MutateMerchantCenterLinkResponse expectedResponse = new MutateMerchantCenterLinkResponse
+            {
+                Result = new MutateMerchantCenterLinkResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateMerchantCenterLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
+            MutateMerchantCenterLinkResponse response = client.MutateMerchantCenterLink(request.CustomerId, request.Operation);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateMerchantCenterLinkAsync()
+        {
+            moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
+            MutateMerchantCenterLinkRequest request = new MutateMerchantCenterLinkRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operation = new MerchantCenterLinkOperation(),
+            };
+            MutateMerchantCenterLinkResponse expectedResponse = new MutateMerchantCenterLinkResponse
+            {
+                Result = new MutateMerchantCenterLinkResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateMerchantCenterLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateMerchantCenterLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MerchantCenterLinkServiceClient client = new MerchantCenterLinkServiceClientImpl(mockGrpcClient.Object, null);
+            MutateMerchantCenterLinkResponse responseCallSettings = await client.MutateMerchantCenterLinkAsync(request.CustomerId, request.Operation, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateMerchantCenterLinkResponse responseCancellationToken = await client.MutateMerchantCenterLinkAsync(request.CustomerId, request.Operation, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

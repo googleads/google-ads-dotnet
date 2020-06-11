@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,204 +14,216 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCustomInterestServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCustomInterestServiceClientTest
     {
+        [Test]
+        public void GetCustomInterestRequestObject()
+        {
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
+            GetCustomInterestRequest request = new GetCustomInterestRequest
+            {
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+            };
+            gagvr::CustomInterest expectedResponse = new gagvr::CustomInterest
+            {
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Id = -6774108720365892680L,
+                Status = gagve::CustomInterestStatusEnum.Types.CustomInterestStatus.Enabled,
+                CustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Type = gagve::CustomInterestTypeEnum.Types.CustomInterestType.CustomIntent,
+                Description = "description2cf9da67",
+                Members =
+                {
+                    new gagvr::CustomInterestMember(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetCustomInterest(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomInterest response = client.GetCustomInterest(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCustomInterestRequestObjectAsync()
+        {
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
+            GetCustomInterestRequest request = new GetCustomInterestRequest
+            {
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+            };
+            gagvr::CustomInterest expectedResponse = new gagvr::CustomInterest
+            {
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Id = -6774108720365892680L,
+                Status = gagve::CustomInterestStatusEnum.Types.CustomInterestStatus.Enabled,
+                CustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Type = gagve::CustomInterestTypeEnum.Types.CustomInterestType.CustomIntent,
+                Description = "description2cf9da67",
+                Members =
+                {
+                    new gagvr::CustomInterestMember(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetCustomInterestAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomInterest>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomInterest responseCallSettings = await client.GetCustomInterestAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomInterest responseCancellationToken = await client.GetCustomInterestAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCustomInterest()
         {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
-            GetCustomInterestRequest expectedRequest = new GetCustomInterestRequest
-            {
-                ResourceName = new CustomInterestName("[CUSTOMER]", "[CUSTOM_INTEREST]").ToString(),
-            };
-            CustomInterest expectedResponse = new CustomInterest
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomInterest(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomInterestName("[CUSTOMER]", "[CUSTOM_INTEREST]").ToString();
-            CustomInterest response = client.GetCustomInterest(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCustomInterestAsync()
-        {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
-            GetCustomInterestRequest expectedRequest = new GetCustomInterestRequest
-            {
-                ResourceName = new CustomInterestName("[CUSTOMER]", "[CUSTOM_INTEREST]").ToString(),
-            };
-            CustomInterest expectedResponse = new CustomInterest
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomInterestAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CustomInterest>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomInterestName("[CUSTOMER]", "[CUSTOM_INTEREST]").ToString();
-            CustomInterest response = await client.GetCustomInterestAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCustomInterest2()
-        {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
             GetCustomInterestRequest request = new GetCustomInterestRequest
             {
-                ResourceName = new CustomInterestName("[CUSTOMER]", "[CUSTOM_INTEREST]").ToString(),
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
             };
-            CustomInterest expectedResponse = new CustomInterest
+            gagvr::CustomInterest expectedResponse = new gagvr::CustomInterest
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Id = -6774108720365892680L,
+                Status = gagve::CustomInterestStatusEnum.Types.CustomInterestStatus.Enabled,
+                CustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Type = gagve::CustomInterestTypeEnum.Types.CustomInterestType.CustomIntent,
+                Description = "description2cf9da67",
+                Members =
+                {
+                    new gagvr::CustomInterestMember(),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetCustomInterest(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCustomInterest(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
-            CustomInterest response = client.GetCustomInterest(request);
+            gagvr::CustomInterest response = client.GetCustomInterest(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCustomInterestAsync2()
+        public async stt::Task GetCustomInterestAsync()
         {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
             GetCustomInterestRequest request = new GetCustomInterestRequest
             {
-                ResourceName = new CustomInterestName("[CUSTOMER]", "[CUSTOM_INTEREST]").ToString(),
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
             };
-            CustomInterest expectedResponse = new CustomInterest
+            gagvr::CustomInterest expectedResponse = new gagvr::CustomInterest
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Id = -6774108720365892680L,
+                Status = gagve::CustomInterestStatusEnum.Types.CustomInterestStatus.Enabled,
+                CustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Type = gagve::CustomInterestTypeEnum.Types.CustomInterestType.CustomIntent,
+                Description = "description2cf9da67",
+                Members =
+                {
+                    new gagvr::CustomInterestMember(),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetCustomInterestAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CustomInterest>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCustomInterestAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomInterest>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
-            CustomInterest response = await client.GetCustomInterestAsync(request);
+            gagvr::CustomInterest responseCallSettings = await client.GetCustomInterestAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomInterest responseCancellationToken = await client.GetCustomInterestAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCustomInterestResourceNames()
+        {
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
+            GetCustomInterestRequest request = new GetCustomInterestRequest
+            {
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+            };
+            gagvr::CustomInterest expectedResponse = new gagvr::CustomInterest
+            {
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Id = -6774108720365892680L,
+                Status = gagve::CustomInterestStatusEnum.Types.CustomInterestStatus.Enabled,
+                CustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Type = gagve::CustomInterestTypeEnum.Types.CustomInterestType.CustomIntent,
+                Description = "description2cf9da67",
+                Members =
+                {
+                    new gagvr::CustomInterestMember(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetCustomInterest(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomInterest response = client.GetCustomInterest(request.ResourceNameAsCustomInterestName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCustomInterests()
+        public async stt::Task GetCustomInterestResourceNamesAsync()
         {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
-            MutateCustomInterestsRequest expectedRequest = new MutateCustomInterestsRequest
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
+            GetCustomInterestRequest request = new GetCustomInterestRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                ValidateOnly = false,
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
             };
-            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomInterests(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CustomInterest expectedResponse = new gagvr::CustomInterest
+            {
+                ResourceNameAsCustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Id = -6774108720365892680L,
+                Status = gagve::CustomInterestStatusEnum.Types.CustomInterestStatus.Enabled,
+                CustomInterestName = gagvr::CustomInterestName.FromCustomerCustomInterest("[CUSTOMER]", "[CUSTOM_INTEREST]"),
+                Type = gagve::CustomInterestTypeEnum.Types.CustomInterestType.CustomIntent,
+                Description = "description2cf9da67",
+                Members =
+                {
+                    new gagvr::CustomInterestMember(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetCustomInterestAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomInterest>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomInterestOperation> operations = new List<CustomInterestOperation>();
-            bool validateOnly = false;
-            MutateCustomInterestsResponse response = client.MutateCustomInterests(customerId, operations, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CustomInterest responseCallSettings = await client.GetCustomInterestAsync(request.ResourceNameAsCustomInterestName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomInterest responseCancellationToken = await client.GetCustomInterestAsync(request.ResourceNameAsCustomInterestName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCustomInterestsAsync()
+        public void MutateCustomInterestsRequestObject()
         {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
-            MutateCustomInterestsRequest expectedRequest = new MutateCustomInterestsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                ValidateOnly = false,
-            };
-            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomInterestsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomInterestsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomInterestOperation> operations = new List<CustomInterestOperation>();
-            bool validateOnly = false;
-            MutateCustomInterestsResponse response = await client.MutateCustomInterestsAsync(customerId, operations, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCustomInterests2()
-        {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
-            MutateCustomInterestsRequest expectedRequest = new MutateCustomInterestsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomInterests(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomInterestOperation> operations = new List<CustomInterestOperation>();
-            MutateCustomInterestsResponse response = client.MutateCustomInterests(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCustomInterestsAsync2()
-        {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
-            MutateCustomInterestsRequest expectedRequest = new MutateCustomInterestsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomInterestsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomInterestsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomInterestOperation> operations = new List<CustomInterestOperation>();
-            MutateCustomInterestsResponse response = await client.MutateCustomInterestsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCustomInterests3()
-        {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
             MutateCustomInterestsRequest request = new MutateCustomInterestsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomInterestOperation(),
+                },
+                ValidateOnly = true,
             };
-            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomInterests(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse
+            {
+                Results =
+                {
+                    new MutateCustomInterestResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomInterests(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
             MutateCustomInterestsResponse response = client.MutateCustomInterests(request);
             Assert.AreEqual(expectedResponse, response);
@@ -219,22 +231,86 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateCustomInterestsAsync3()
+        public async stt::Task MutateCustomInterestsRequestObjectAsync()
         {
-            Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new Mock<CustomInterestService.CustomInterestServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
             MutateCustomInterestsRequest request = new MutateCustomInterestsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomInterestOperation(),
+                },
+                ValidateOnly = true,
             };
-            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomInterestsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomInterestsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse
+            {
+                Results =
+                {
+                    new MutateCustomInterestResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomInterestsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomInterestsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCustomInterestsResponse response = await client.MutateCustomInterestsAsync(request);
+            MutateCustomInterestsResponse responseCallSettings = await client.MutateCustomInterestsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomInterestsResponse responseCancellationToken = await client.MutateCustomInterestsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCustomInterests()
+        {
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomInterestsRequest request = new MutateCustomInterestsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomInterestOperation(),
+                },
+            };
+            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse
+            {
+                Results =
+                {
+                    new MutateCustomInterestResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomInterests(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomInterestsResponse response = client.MutateCustomInterests(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCustomInterestsAsync()
+        {
+            moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomInterestsRequest request = new MutateCustomInterestsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomInterestOperation(),
+                },
+            };
+            MutateCustomInterestsResponse expectedResponse = new MutateCustomInterestsResponse
+            {
+                Results =
+                {
+                    new MutateCustomInterestResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomInterestsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomInterestsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomInterestsResponse responseCallSettings = await client.MutateCustomInterestsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomInterestsResponse responseCancellationToken = await client.MutateCustomInterestsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

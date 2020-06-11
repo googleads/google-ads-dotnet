@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,144 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedPaidOrganicSearchTermViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedPaidOrganicSearchTermViewServiceClientTest
     {
+        [Test]
+        public void GetPaidOrganicSearchTermViewRequestObject()
+        {
+            moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetPaidOrganicSearchTermViewRequest request = new GetPaidOrganicSearchTermViewRequest
+            {
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+            };
+            gagvr::PaidOrganicSearchTermView expectedResponse = new gagvr::PaidOrganicSearchTermView
+            {
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+            };
+            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            PaidOrganicSearchTermViewServiceClient client = new PaidOrganicSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::PaidOrganicSearchTermView response = client.GetPaidOrganicSearchTermView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetPaidOrganicSearchTermViewRequestObjectAsync()
+        {
+            moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetPaidOrganicSearchTermViewRequest request = new GetPaidOrganicSearchTermViewRequest
+            {
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+            };
+            gagvr::PaidOrganicSearchTermView expectedResponse = new gagvr::PaidOrganicSearchTermView
+            {
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+            };
+            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::PaidOrganicSearchTermView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            PaidOrganicSearchTermViewServiceClient client = new PaidOrganicSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::PaidOrganicSearchTermView responseCallSettings = await client.GetPaidOrganicSearchTermViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::PaidOrganicSearchTermView responseCancellationToken = await client.GetPaidOrganicSearchTermViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetPaidOrganicSearchTermView()
         {
-            Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(MockBehavior.Strict);
-            GetPaidOrganicSearchTermViewRequest expectedRequest = new GetPaidOrganicSearchTermViewRequest
-            {
-                ResourceName = new PaidOrganicSearchTermViewName("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]").ToString(),
-            };
-            PaidOrganicSearchTermView expectedResponse = new PaidOrganicSearchTermView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            PaidOrganicSearchTermViewServiceClient client = new PaidOrganicSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new PaidOrganicSearchTermViewName("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]").ToString();
-            PaidOrganicSearchTermView response = client.GetPaidOrganicSearchTermView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetPaidOrganicSearchTermViewAsync()
-        {
-            Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(MockBehavior.Strict);
-            GetPaidOrganicSearchTermViewRequest expectedRequest = new GetPaidOrganicSearchTermViewRequest
-            {
-                ResourceName = new PaidOrganicSearchTermViewName("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]").ToString(),
-            };
-            PaidOrganicSearchTermView expectedResponse = new PaidOrganicSearchTermView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<PaidOrganicSearchTermView>(Task.FromResult(expectedResponse), null, null, null, null));
-            PaidOrganicSearchTermViewServiceClient client = new PaidOrganicSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new PaidOrganicSearchTermViewName("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]").ToString();
-            PaidOrganicSearchTermView response = await client.GetPaidOrganicSearchTermViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetPaidOrganicSearchTermView2()
-        {
-            Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
             GetPaidOrganicSearchTermViewRequest request = new GetPaidOrganicSearchTermViewRequest
             {
-                ResourceName = new PaidOrganicSearchTermViewName("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]").ToString(),
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
             };
-            PaidOrganicSearchTermView expectedResponse = new PaidOrganicSearchTermView
+            gagvr::PaidOrganicSearchTermView expectedResponse = new gagvr::PaidOrganicSearchTermView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
             };
-            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PaidOrganicSearchTermViewServiceClient client = new PaidOrganicSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            PaidOrganicSearchTermView response = client.GetPaidOrganicSearchTermView(request);
+            gagvr::PaidOrganicSearchTermView response = client.GetPaidOrganicSearchTermView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetPaidOrganicSearchTermViewAsync2()
+        public async stt::Task GetPaidOrganicSearchTermViewAsync()
         {
-            Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
             GetPaidOrganicSearchTermViewRequest request = new GetPaidOrganicSearchTermViewRequest
             {
-                ResourceName = new PaidOrganicSearchTermViewName("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]").ToString(),
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
             };
-            PaidOrganicSearchTermView expectedResponse = new PaidOrganicSearchTermView
+            gagvr::PaidOrganicSearchTermView expectedResponse = new gagvr::PaidOrganicSearchTermView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
             };
-            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<PaidOrganicSearchTermView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::PaidOrganicSearchTermView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PaidOrganicSearchTermViewServiceClient client = new PaidOrganicSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            PaidOrganicSearchTermView response = await client.GetPaidOrganicSearchTermViewAsync(request);
+            gagvr::PaidOrganicSearchTermView responseCallSettings = await client.GetPaidOrganicSearchTermViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::PaidOrganicSearchTermView responseCancellationToken = await client.GetPaidOrganicSearchTermViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetPaidOrganicSearchTermViewResourceNames()
+        {
+            moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetPaidOrganicSearchTermViewRequest request = new GetPaidOrganicSearchTermViewRequest
+            {
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+            };
+            gagvr::PaidOrganicSearchTermView expectedResponse = new gagvr::PaidOrganicSearchTermView
+            {
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+            };
+            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            PaidOrganicSearchTermViewServiceClient client = new PaidOrganicSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::PaidOrganicSearchTermView response = client.GetPaidOrganicSearchTermView(request.ResourceNameAsPaidOrganicSearchTermViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetPaidOrganicSearchTermViewResourceNamesAsync()
+        {
+            moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetPaidOrganicSearchTermViewRequest request = new GetPaidOrganicSearchTermViewRequest
+            {
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+            };
+            gagvr::PaidOrganicSearchTermView expectedResponse = new gagvr::PaidOrganicSearchTermView
+            {
+                ResourceNameAsPaidOrganicSearchTermViewName = gagvr::PaidOrganicSearchTermViewName.FromCustomerPaidOrganicSearchTermView("[CUSTOMER]", "[PAID_ORGANIC_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+            };
+            mockGrpcClient.Setup(x => x.GetPaidOrganicSearchTermViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::PaidOrganicSearchTermView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            PaidOrganicSearchTermViewServiceClient client = new PaidOrganicSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::PaidOrganicSearchTermView responseCallSettings = await client.GetPaidOrganicSearchTermViewAsync(request.ResourceNameAsPaidOrganicSearchTermViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::PaidOrganicSearchTermView responseCancellationToken = await client.GetPaidOrganicSearchTermViewAsync(request.ResourceNameAsPaidOrganicSearchTermViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

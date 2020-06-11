@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,125 +14,43 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedConversionUploadServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedConversionUploadServiceClientTest
     {
         [Test]
-        public void UploadClickConversions()
+        public void UploadClickConversionsRequestObject()
         {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
-            UploadClickConversionsRequest expectedRequest = new UploadClickConversionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadClickConversions(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ClickConversion> conversions = new List<ClickConversion>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            UploadClickConversionsResponse response = client.UploadClickConversions(customerId, conversions, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task UploadClickConversionsAsync()
-        {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
-            UploadClickConversionsRequest expectedRequest = new UploadClickConversionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadClickConversionsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadClickConversionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ClickConversion> conversions = new List<ClickConversion>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            UploadClickConversionsResponse response = await client.UploadClickConversionsAsync(customerId, conversions, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void UploadClickConversions2()
-        {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
-            UploadClickConversionsRequest expectedRequest = new UploadClickConversionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
-            };
-            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadClickConversions(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ClickConversion> conversions = new List<ClickConversion>();
-            UploadClickConversionsResponse response = client.UploadClickConversions(customerId, conversions);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task UploadClickConversionsAsync2()
-        {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
-            UploadClickConversionsRequest expectedRequest = new UploadClickConversionsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
-            };
-            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadClickConversionsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadClickConversionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ClickConversion> conversions = new List<ClickConversion>();
-            UploadClickConversionsResponse response = await client.UploadClickConversionsAsync(customerId, conversions);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void UploadClickConversions3()
-        {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
             UploadClickConversionsRequest request = new UploadClickConversionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
+                CustomerId = "customer_id3b3724cb",
+                Conversions =
+                {
+                    new ClickConversion(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadClickConversions(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new ClickConversionResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadClickConversions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
             UploadClickConversionsResponse response = client.UploadClickConversions(request);
             Assert.AreEqual(expectedResponse, response);
@@ -140,123 +58,117 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task UploadClickConversionsAsync3()
+        public async stt::Task UploadClickConversionsRequestObjectAsync()
         {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
             UploadClickConversionsRequest request = new UploadClickConversionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
+                CustomerId = "customer_id3b3724cb",
+                Conversions =
+                {
+                    new ClickConversion(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadClickConversionsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadClickConversionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            UploadClickConversionsResponse response = await client.UploadClickConversionsAsync(request);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void UploadCallConversions()
-        {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
-            UploadCallConversionsRequest expectedRequest = new UploadCallConversionsRequest
+            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse
             {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new ClickConversionResult(),
+                },
             };
-            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadCallConversions(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.UploadClickConversionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadClickConversionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CallConversion> conversions = new List<CallConversion>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            UploadCallConversionsResponse response = client.UploadCallConversions(customerId, conversions, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            UploadClickConversionsResponse responseCallSettings = await client.UploadClickConversionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            UploadClickConversionsResponse responseCancellationToken = await client.UploadClickConversionsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task UploadCallConversionsAsync()
+        public void UploadClickConversions()
         {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
-            UploadCallConversionsRequest expectedRequest = new UploadCallConversionsRequest
+            moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
+            UploadClickConversionsRequest request = new UploadClickConversionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                CustomerId = "customer_id3b3724cb",
+                Conversions =
+                {
+                    new ClickConversion(),
+                },
+                PartialFailure = false,
             };
-            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadCallConversionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CallConversion> conversions = new List<CallConversion>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            UploadCallConversionsResponse response = await client.UploadCallConversionsAsync(customerId, conversions, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void UploadCallConversions2()
-        {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
-            UploadCallConversionsRequest expectedRequest = new UploadCallConversionsRequest
+            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse
             {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new ClickConversionResult(),
+                },
             };
-            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadCallConversions(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.UploadClickConversions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CallConversion> conversions = new List<CallConversion>();
-            UploadCallConversionsResponse response = client.UploadCallConversions(customerId, conversions);
+            UploadClickConversionsResponse response = client.UploadClickConversions(request.CustomerId, request.Conversions, request.PartialFailure);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task UploadCallConversionsAsync2()
+        public async stt::Task UploadClickConversionsAsync()
         {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
-            UploadCallConversionsRequest expectedRequest = new UploadCallConversionsRequest
+            moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
+            UploadClickConversionsRequest request = new UploadClickConversionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
+                CustomerId = "customer_id3b3724cb",
+                Conversions =
+                {
+                    new ClickConversion(),
+                },
+                PartialFailure = false,
             };
-            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadCallConversionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            UploadClickConversionsResponse expectedResponse = new UploadClickConversionsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new ClickConversionResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadClickConversionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadClickConversionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CallConversion> conversions = new List<CallConversion>();
-            UploadCallConversionsResponse response = await client.UploadCallConversionsAsync(customerId, conversions);
-            Assert.AreEqual(expectedResponse, response);
+            UploadClickConversionsResponse responseCallSettings = await client.UploadClickConversionsAsync(request.CustomerId, request.Conversions, request.PartialFailure, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            UploadClickConversionsResponse responseCancellationToken = await client.UploadClickConversionsAsync(request.CustomerId, request.Conversions, request.PartialFailure, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void UploadCallConversions3()
+        public void UploadCallConversionsRequestObject()
         {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
             UploadCallConversionsRequest request = new UploadCallConversionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
+                CustomerId = "customer_id3b3724cb",
+                Conversions =
+                {
+                    new CallConversion(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadCallConversions(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new CallConversionResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadCallConversions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
             UploadCallConversionsResponse response = client.UploadCallConversions(request);
             Assert.AreEqual(expectedResponse, response);
@@ -264,22 +176,92 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task UploadCallConversionsAsync3()
+        public async stt::Task UploadCallConversionsRequestObjectAsync()
         {
-            Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new Mock<ConversionUploadService.ConversionUploadServiceClient>(MockBehavior.Strict);
+            moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
             UploadCallConversionsRequest request = new UploadCallConversionsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Conversions = { },
+                CustomerId = "customer_id3b3724cb",
+                Conversions =
+                {
+                    new CallConversion(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse();
-            mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UploadCallConversionsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new CallConversionResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadCallConversionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
-            UploadCallConversionsResponse response = await client.UploadCallConversionsAsync(request);
+            UploadCallConversionsResponse responseCallSettings = await client.UploadCallConversionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            UploadCallConversionsResponse responseCancellationToken = await client.UploadCallConversionsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void UploadCallConversions()
+        {
+            moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
+            UploadCallConversionsRequest request = new UploadCallConversionsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Conversions =
+                {
+                    new CallConversion(),
+                },
+                PartialFailure = false,
+            };
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new CallConversionResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadCallConversions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            UploadCallConversionsResponse response = client.UploadCallConversions(request.CustomerId, request.Conversions, request.PartialFailure);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task UploadCallConversionsAsync()
+        {
+            moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
+            UploadCallConversionsRequest request = new UploadCallConversionsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Conversions =
+                {
+                    new CallConversion(),
+                },
+                PartialFailure = false,
+            };
+            UploadCallConversionsResponse expectedResponse = new UploadCallConversionsResponse
+            {
+                PartialFailureError = new gr::Status(),
+                Results =
+                {
+                    new CallConversionResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadCallConversionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            UploadCallConversionsResponse responseCallSettings = await client.UploadCallConversionsAsync(request.CustomerId, request.Conversions, request.PartialFailure, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            UploadCallConversionsResponse responseCancellationToken = await client.UploadCallConversionsAsync(request.CustomerId, request.Conversions, request.PartialFailure, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

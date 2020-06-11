@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,160 +14,203 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedBillingSetupServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedBillingSetupServiceClientTest
     {
+        [Test]
+        public void GetBillingSetupRequestObject()
+        {
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
+            GetBillingSetupRequest request = new GetBillingSetupRequest
+            {
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+            };
+            gagvr::BillingSetup expectedResponse = new gagvr::BillingSetup
+            {
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Id = -6774108720365892680L,
+                Status = gagve::BillingSetupStatusEnum.Types.BillingSetupStatus.Pending,
+                StartDateTime = "start_date_timeea924cb1",
+                StartTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                PaymentsAccountAsPaymentsAccountName = gagvr::PaymentsAccountName.FromCustomerPaymentsAccount("[CUSTOMER]", "[PAYMENTS_ACCOUNT]"),
+                PaymentsAccountInfo = new gagvr::BillingSetup.Types.PaymentsAccountInfo(),
+                EndDateTime = "end_date_timea95363f3",
+                EndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetBillingSetup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::BillingSetup response = client.GetBillingSetup(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetBillingSetupRequestObjectAsync()
+        {
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
+            GetBillingSetupRequest request = new GetBillingSetupRequest
+            {
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+            };
+            gagvr::BillingSetup expectedResponse = new gagvr::BillingSetup
+            {
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Id = -6774108720365892680L,
+                Status = gagve::BillingSetupStatusEnum.Types.BillingSetupStatus.Pending,
+                StartDateTime = "start_date_timeea924cb1",
+                StartTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                PaymentsAccountAsPaymentsAccountName = gagvr::PaymentsAccountName.FromCustomerPaymentsAccount("[CUSTOMER]", "[PAYMENTS_ACCOUNT]"),
+                PaymentsAccountInfo = new gagvr::BillingSetup.Types.PaymentsAccountInfo(),
+                EndDateTime = "end_date_timea95363f3",
+                EndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetBillingSetupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::BillingSetup>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::BillingSetup responseCallSettings = await client.GetBillingSetupAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::BillingSetup responseCancellationToken = await client.GetBillingSetupAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetBillingSetup()
         {
-            Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new Mock<BillingSetupService.BillingSetupServiceClient>(MockBehavior.Strict);
-            GetBillingSetupRequest expectedRequest = new GetBillingSetupRequest
-            {
-                ResourceName = new BillingSetupName("[CUSTOMER]", "[BILLING_SETUP]").ToString(),
-            };
-            BillingSetup expectedResponse = new BillingSetup
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetBillingSetup(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new BillingSetupName("[CUSTOMER]", "[BILLING_SETUP]").ToString();
-            BillingSetup response = client.GetBillingSetup(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetBillingSetupAsync()
-        {
-            Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new Mock<BillingSetupService.BillingSetupServiceClient>(MockBehavior.Strict);
-            GetBillingSetupRequest expectedRequest = new GetBillingSetupRequest
-            {
-                ResourceName = new BillingSetupName("[CUSTOMER]", "[BILLING_SETUP]").ToString(),
-            };
-            BillingSetup expectedResponse = new BillingSetup
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetBillingSetupAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<BillingSetup>(Task.FromResult(expectedResponse), null, null, null, null));
-            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new BillingSetupName("[CUSTOMER]", "[BILLING_SETUP]").ToString();
-            BillingSetup response = await client.GetBillingSetupAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetBillingSetup2()
-        {
-            Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new Mock<BillingSetupService.BillingSetupServiceClient>(MockBehavior.Strict);
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
             GetBillingSetupRequest request = new GetBillingSetupRequest
             {
-                ResourceName = new BillingSetupName("[CUSTOMER]", "[BILLING_SETUP]").ToString(),
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
             };
-            BillingSetup expectedResponse = new BillingSetup
+            gagvr::BillingSetup expectedResponse = new gagvr::BillingSetup
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Id = -6774108720365892680L,
+                Status = gagve::BillingSetupStatusEnum.Types.BillingSetupStatus.Pending,
+                StartDateTime = "start_date_timeea924cb1",
+                StartTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                PaymentsAccountAsPaymentsAccountName = gagvr::PaymentsAccountName.FromCustomerPaymentsAccount("[CUSTOMER]", "[PAYMENTS_ACCOUNT]"),
+                PaymentsAccountInfo = new gagvr::BillingSetup.Types.PaymentsAccountInfo(),
+                EndDateTime = "end_date_timea95363f3",
+                EndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unspecified,
             };
-            mockGrpcClient.Setup(x => x.GetBillingSetup(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetBillingSetup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
-            BillingSetup response = client.GetBillingSetup(request);
+            gagvr::BillingSetup response = client.GetBillingSetup(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetBillingSetupAsync2()
+        public async stt::Task GetBillingSetupAsync()
         {
-            Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new Mock<BillingSetupService.BillingSetupServiceClient>(MockBehavior.Strict);
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
             GetBillingSetupRequest request = new GetBillingSetupRequest
             {
-                ResourceName = new BillingSetupName("[CUSTOMER]", "[BILLING_SETUP]").ToString(),
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
             };
-            BillingSetup expectedResponse = new BillingSetup
+            gagvr::BillingSetup expectedResponse = new gagvr::BillingSetup
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Id = -6774108720365892680L,
+                Status = gagve::BillingSetupStatusEnum.Types.BillingSetupStatus.Pending,
+                StartDateTime = "start_date_timeea924cb1",
+                StartTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                PaymentsAccountAsPaymentsAccountName = gagvr::PaymentsAccountName.FromCustomerPaymentsAccount("[CUSTOMER]", "[PAYMENTS_ACCOUNT]"),
+                PaymentsAccountInfo = new gagvr::BillingSetup.Types.PaymentsAccountInfo(),
+                EndDateTime = "end_date_timea95363f3",
+                EndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unspecified,
             };
-            mockGrpcClient.Setup(x => x.GetBillingSetupAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<BillingSetup>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetBillingSetupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::BillingSetup>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
-            BillingSetup response = await client.GetBillingSetupAsync(request);
+            gagvr::BillingSetup responseCallSettings = await client.GetBillingSetupAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::BillingSetup responseCancellationToken = await client.GetBillingSetupAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetBillingSetupResourceNames()
+        {
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
+            GetBillingSetupRequest request = new GetBillingSetupRequest
+            {
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+            };
+            gagvr::BillingSetup expectedResponse = new gagvr::BillingSetup
+            {
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Id = -6774108720365892680L,
+                Status = gagve::BillingSetupStatusEnum.Types.BillingSetupStatus.Pending,
+                StartDateTime = "start_date_timeea924cb1",
+                StartTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                PaymentsAccountAsPaymentsAccountName = gagvr::PaymentsAccountName.FromCustomerPaymentsAccount("[CUSTOMER]", "[PAYMENTS_ACCOUNT]"),
+                PaymentsAccountInfo = new gagvr::BillingSetup.Types.PaymentsAccountInfo(),
+                EndDateTime = "end_date_timea95363f3",
+                EndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetBillingSetup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::BillingSetup response = client.GetBillingSetup(request.ResourceNameAsBillingSetupName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateBillingSetup()
+        public async stt::Task GetBillingSetupResourceNamesAsync()
         {
-            Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new Mock<BillingSetupService.BillingSetupServiceClient>(MockBehavior.Strict);
-            MutateBillingSetupRequest expectedRequest = new MutateBillingSetupRequest
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
+            GetBillingSetupRequest request = new GetBillingSetupRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operation = new BillingSetupOperation(),
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
             };
-            MutateBillingSetupResponse expectedResponse = new MutateBillingSetupResponse();
-            mockGrpcClient.Setup(x => x.MutateBillingSetup(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::BillingSetup expectedResponse = new gagvr::BillingSetup
+            {
+                ResourceNameAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Id = -6774108720365892680L,
+                Status = gagve::BillingSetupStatusEnum.Types.BillingSetupStatus.Pending,
+                StartDateTime = "start_date_timeea924cb1",
+                StartTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                PaymentsAccountAsPaymentsAccountName = gagvr::PaymentsAccountName.FromCustomerPaymentsAccount("[CUSTOMER]", "[PAYMENTS_ACCOUNT]"),
+                PaymentsAccountInfo = new gagvr::BillingSetup.Types.PaymentsAccountInfo(),
+                EndDateTime = "end_date_timea95363f3",
+                EndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unspecified,
+            };
+            mockGrpcClient.Setup(x => x.GetBillingSetupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::BillingSetup>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            BillingSetupOperation operation = new BillingSetupOperation();
-            MutateBillingSetupResponse response = client.MutateBillingSetup(customerId, operation);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::BillingSetup responseCallSettings = await client.GetBillingSetupAsync(request.ResourceNameAsBillingSetupName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::BillingSetup responseCancellationToken = await client.GetBillingSetupAsync(request.ResourceNameAsBillingSetupName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateBillingSetupAsync()
+        public void MutateBillingSetupRequestObject()
         {
-            Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new Mock<BillingSetupService.BillingSetupServiceClient>(MockBehavior.Strict);
-            MutateBillingSetupRequest expectedRequest = new MutateBillingSetupRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operation = new BillingSetupOperation(),
-            };
-            MutateBillingSetupResponse expectedResponse = new MutateBillingSetupResponse();
-            mockGrpcClient.Setup(x => x.MutateBillingSetupAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateBillingSetupResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            BillingSetupOperation operation = new BillingSetupOperation();
-            MutateBillingSetupResponse response = await client.MutateBillingSetupAsync(customerId, operation);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateBillingSetup2()
-        {
-            Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new Mock<BillingSetupService.BillingSetupServiceClient>(MockBehavior.Strict);
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
             MutateBillingSetupRequest request = new MutateBillingSetupRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
                 Operation = new BillingSetupOperation(),
             };
-            MutateBillingSetupResponse expectedResponse = new MutateBillingSetupResponse();
-            mockGrpcClient.Setup(x => x.MutateBillingSetup(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateBillingSetupResponse expectedResponse = new MutateBillingSetupResponse
+            {
+                Result = new MutateBillingSetupResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateBillingSetup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
             MutateBillingSetupResponse response = client.MutateBillingSetup(request);
             Assert.AreEqual(expectedResponse, response);
@@ -175,22 +218,67 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateBillingSetupAsync2()
+        public async stt::Task MutateBillingSetupRequestObjectAsync()
         {
-            Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new Mock<BillingSetupService.BillingSetupServiceClient>(MockBehavior.Strict);
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
             MutateBillingSetupRequest request = new MutateBillingSetupRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
                 Operation = new BillingSetupOperation(),
             };
-            MutateBillingSetupResponse expectedResponse = new MutateBillingSetupResponse();
-            mockGrpcClient.Setup(x => x.MutateBillingSetupAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateBillingSetupResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateBillingSetupResponse expectedResponse = new MutateBillingSetupResponse
+            {
+                Result = new MutateBillingSetupResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateBillingSetupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBillingSetupResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
-            MutateBillingSetupResponse response = await client.MutateBillingSetupAsync(request);
+            MutateBillingSetupResponse responseCallSettings = await client.MutateBillingSetupAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateBillingSetupResponse responseCancellationToken = await client.MutateBillingSetupAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateBillingSetup()
+        {
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
+            MutateBillingSetupRequest request = new MutateBillingSetupRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operation = new BillingSetupOperation(),
+            };
+            MutateBillingSetupResponse expectedResponse = new MutateBillingSetupResponse
+            {
+                Result = new MutateBillingSetupResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateBillingSetup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
+            MutateBillingSetupResponse response = client.MutateBillingSetup(request.CustomerId, request.Operation);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateBillingSetupAsync()
+        {
+            moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
+            MutateBillingSetupRequest request = new MutateBillingSetupRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operation = new BillingSetupOperation(),
+            };
+            MutateBillingSetupResponse expectedResponse = new MutateBillingSetupResponse
+            {
+                Result = new MutateBillingSetupResult(),
+            };
+            mockGrpcClient.Setup(x => x.MutateBillingSetupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBillingSetupResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
+            MutateBillingSetupResponse responseCallSettings = await client.MutateBillingSetupAsync(request.CustomerId, request.Operation, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateBillingSetupResponse responseCancellationToken = await client.MutateBillingSetupAsync(request.CustomerId, request.Operation, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

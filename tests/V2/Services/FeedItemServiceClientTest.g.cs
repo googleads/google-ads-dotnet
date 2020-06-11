@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,274 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V2.Common;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedFeedItemServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedFeedItemServiceClientTest
     {
+        [Test]
+        public void GetFeedItemRequestObject()
+        {
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
+            GetFeedItemRequest request = new GetFeedItemRequest
+            {
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+            };
+            gagvr::FeedItem expectedResponse = new gagvr::FeedItem
+            {
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                Id = -6774108720365892680L,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AttributeValues =
+                {
+                    new gagvr::FeedItemAttributeValue(),
+                },
+                GeoTargetingRestriction = gagve::GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.LocationOfPresence,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                PolicyInfos =
+                {
+                    new gagvr::FeedItemPlaceholderPolicyInfo(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetFeedItem(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedItem response = client.GetFeedItem(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetFeedItemRequestObjectAsync()
+        {
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
+            GetFeedItemRequest request = new GetFeedItemRequest
+            {
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+            };
+            gagvr::FeedItem expectedResponse = new gagvr::FeedItem
+            {
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                Id = -6774108720365892680L,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AttributeValues =
+                {
+                    new gagvr::FeedItemAttributeValue(),
+                },
+                GeoTargetingRestriction = gagve::GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.LocationOfPresence,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                PolicyInfos =
+                {
+                    new gagvr::FeedItemPlaceholderPolicyInfo(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetFeedItemAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::FeedItem>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedItem responseCallSettings = await client.GetFeedItemAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::FeedItem responseCancellationToken = await client.GetFeedItemAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetFeedItem()
         {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
-            GetFeedItemRequest expectedRequest = new GetFeedItemRequest
-            {
-                ResourceName = new FeedItemName("[CUSTOMER]", "[FEED_ITEM]").ToString(),
-            };
-            FeedItem expectedResponse = new FeedItem
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetFeedItem(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new FeedItemName("[CUSTOMER]", "[FEED_ITEM]").ToString();
-            FeedItem response = client.GetFeedItem(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetFeedItemAsync()
-        {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
-            GetFeedItemRequest expectedRequest = new GetFeedItemRequest
-            {
-                ResourceName = new FeedItemName("[CUSTOMER]", "[FEED_ITEM]").ToString(),
-            };
-            FeedItem expectedResponse = new FeedItem
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetFeedItemAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<FeedItem>(Task.FromResult(expectedResponse), null, null, null, null));
-            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new FeedItemName("[CUSTOMER]", "[FEED_ITEM]").ToString();
-            FeedItem response = await client.GetFeedItemAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetFeedItem2()
-        {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
             GetFeedItemRequest request = new GetFeedItemRequest
             {
-                ResourceName = new FeedItemName("[CUSTOMER]", "[FEED_ITEM]").ToString(),
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
             };
-            FeedItem expectedResponse = new FeedItem
+            gagvr::FeedItem expectedResponse = new gagvr::FeedItem
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                Id = -6774108720365892680L,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AttributeValues =
+                {
+                    new gagvr::FeedItemAttributeValue(),
+                },
+                GeoTargetingRestriction = gagve::GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.LocationOfPresence,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                PolicyInfos =
+                {
+                    new gagvr::FeedItemPlaceholderPolicyInfo(),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetFeedItem(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetFeedItem(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            FeedItem response = client.GetFeedItem(request);
+            gagvr::FeedItem response = client.GetFeedItem(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetFeedItemAsync2()
+        public async stt::Task GetFeedItemAsync()
         {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
             GetFeedItemRequest request = new GetFeedItemRequest
             {
-                ResourceName = new FeedItemName("[CUSTOMER]", "[FEED_ITEM]").ToString(),
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
             };
-            FeedItem expectedResponse = new FeedItem
+            gagvr::FeedItem expectedResponse = new gagvr::FeedItem
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                Id = -6774108720365892680L,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AttributeValues =
+                {
+                    new gagvr::FeedItemAttributeValue(),
+                },
+                GeoTargetingRestriction = gagve::GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.LocationOfPresence,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                PolicyInfos =
+                {
+                    new gagvr::FeedItemPlaceholderPolicyInfo(),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetFeedItemAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<FeedItem>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetFeedItemAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::FeedItem>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            FeedItem response = await client.GetFeedItemAsync(request);
+            gagvr::FeedItem responseCallSettings = await client.GetFeedItemAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::FeedItem responseCancellationToken = await client.GetFeedItemAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetFeedItemResourceNames()
+        {
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
+            GetFeedItemRequest request = new GetFeedItemRequest
+            {
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+            };
+            gagvr::FeedItem expectedResponse = new gagvr::FeedItem
+            {
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                Id = -6774108720365892680L,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AttributeValues =
+                {
+                    new gagvr::FeedItemAttributeValue(),
+                },
+                GeoTargetingRestriction = gagve::GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.LocationOfPresence,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                PolicyInfos =
+                {
+                    new gagvr::FeedItemPlaceholderPolicyInfo(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetFeedItem(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedItem response = client.GetFeedItem(request.ResourceNameAsFeedItemName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateFeedItems()
+        public async stt::Task GetFeedItemResourceNamesAsync()
         {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
-            MutateFeedItemsRequest expectedRequest = new MutateFeedItemsRequest
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
+            GetFeedItemRequest request = new GetFeedItemRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
             };
-            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedItems(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::FeedItem expectedResponse = new gagvr::FeedItem
+            {
+                ResourceNameAsFeedItemName = gagvr::FeedItemName.FromCustomerFeedItem("[CUSTOMER]", "[FEED_ITEM]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                Id = -6774108720365892680L,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AttributeValues =
+                {
+                    new gagvr::FeedItemAttributeValue(),
+                },
+                GeoTargetingRestriction = gagve::GeoTargetingRestrictionEnum.Types.GeoTargetingRestriction.LocationOfPresence,
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                PolicyInfos =
+                {
+                    new gagvr::FeedItemPlaceholderPolicyInfo(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetFeedItemAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::FeedItem>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<FeedItemOperation> operations = new List<FeedItemOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateFeedItemsResponse response = client.MutateFeedItems(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::FeedItem responseCallSettings = await client.GetFeedItemAsync(request.ResourceNameAsFeedItemName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::FeedItem responseCancellationToken = await client.GetFeedItemAsync(request.ResourceNameAsFeedItemName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateFeedItemsAsync()
+        public void MutateFeedItemsRequestObject()
         {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
-            MutateFeedItemsRequest expectedRequest = new MutateFeedItemsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedItemsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateFeedItemsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<FeedItemOperation> operations = new List<FeedItemOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateFeedItemsResponse response = await client.MutateFeedItemsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateFeedItems2()
-        {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
-            MutateFeedItemsRequest expectedRequest = new MutateFeedItemsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedItems(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<FeedItemOperation> operations = new List<FeedItemOperation>();
-            MutateFeedItemsResponse response = client.MutateFeedItems(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateFeedItemsAsync2()
-        {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
-            MutateFeedItemsRequest expectedRequest = new MutateFeedItemsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedItemsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateFeedItemsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<FeedItemOperation> operations = new List<FeedItemOperation>();
-            MutateFeedItemsResponse response = await client.MutateFeedItemsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateFeedItems3()
-        {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
             MutateFeedItemsRequest request = new MutateFeedItemsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new FeedItemOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedItems(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse
+            {
+                Results =
+                {
+                    new MutateFeedItemResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateFeedItems(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
             MutateFeedItemsResponse response = client.MutateFeedItems(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +289,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateFeedItemsAsync3()
+        public async stt::Task MutateFeedItemsRequestObjectAsync()
         {
-            Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new Mock<FeedItemService.FeedItemServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
             MutateFeedItemsRequest request = new MutateFeedItemsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new FeedItemOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateFeedItemsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateFeedItemsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse
+            {
+                Results =
+                {
+                    new MutateFeedItemResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateFeedItemsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateFeedItemsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            MutateFeedItemsResponse response = await client.MutateFeedItemsAsync(request);
+            MutateFeedItemsResponse responseCallSettings = await client.MutateFeedItemsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateFeedItemsResponse responseCancellationToken = await client.MutateFeedItemsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateFeedItems()
+        {
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
+            MutateFeedItemsRequest request = new MutateFeedItemsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new FeedItemOperation(),
+                },
+            };
+            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse
+            {
+                Results =
+                {
+                    new MutateFeedItemResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateFeedItems(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            MutateFeedItemsResponse response = client.MutateFeedItems(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateFeedItemsAsync()
+        {
+            moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
+            MutateFeedItemsRequest request = new MutateFeedItemsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new FeedItemOperation(),
+                },
+            };
+            MutateFeedItemsResponse expectedResponse = new MutateFeedItemsResponse
+            {
+                Results =
+                {
+                    new MutateFeedItemResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateFeedItemsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateFeedItemsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            FeedItemServiceClient client = new FeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            MutateFeedItemsResponse responseCallSettings = await client.MutateFeedItemsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateFeedItemsResponse responseCancellationToken = await client.MutateFeedItemsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

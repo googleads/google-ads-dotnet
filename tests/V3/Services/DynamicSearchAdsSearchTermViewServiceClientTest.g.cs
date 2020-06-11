@@ -14,107 +14,180 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedDynamicSearchAdsSearchTermViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedDynamicSearchAdsSearchTermViewServiceClientTest
     {
+        [Test]
+        public void GetDynamicSearchAdsSearchTermViewRequestObject()
+        {
+            moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetDynamicSearchAdsSearchTermViewRequest request = new GetDynamicSearchAdsSearchTermViewRequest
+            {
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+            };
+            gagvr::DynamicSearchAdsSearchTermView expectedResponse = new gagvr::DynamicSearchAdsSearchTermView
+            {
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                Headline = "headline583098ef",
+                LandingPage = "landing_page89bf8d81",
+                PageUrl = "page_url886e2c07",
+                HasNegativeKeyword = false,
+                HasMatchingKeyword = true,
+                HasNegativeUrl = true,
+            };
+            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            DynamicSearchAdsSearchTermViewServiceClient client = new DynamicSearchAdsSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DynamicSearchAdsSearchTermView response = client.GetDynamicSearchAdsSearchTermView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetDynamicSearchAdsSearchTermViewRequestObjectAsync()
+        {
+            moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetDynamicSearchAdsSearchTermViewRequest request = new GetDynamicSearchAdsSearchTermViewRequest
+            {
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+            };
+            gagvr::DynamicSearchAdsSearchTermView expectedResponse = new gagvr::DynamicSearchAdsSearchTermView
+            {
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                Headline = "headline583098ef",
+                LandingPage = "landing_page89bf8d81",
+                PageUrl = "page_url886e2c07",
+                HasNegativeKeyword = false,
+                HasMatchingKeyword = true,
+                HasNegativeUrl = true,
+            };
+            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DynamicSearchAdsSearchTermView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            DynamicSearchAdsSearchTermViewServiceClient client = new DynamicSearchAdsSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DynamicSearchAdsSearchTermView responseCallSettings = await client.GetDynamicSearchAdsSearchTermViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DynamicSearchAdsSearchTermView responseCancellationToken = await client.GetDynamicSearchAdsSearchTermViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetDynamicSearchAdsSearchTermView()
         {
-            Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(MockBehavior.Strict);
-            GetDynamicSearchAdsSearchTermViewRequest expectedRequest = new GetDynamicSearchAdsSearchTermViewRequest
-            {
-                ResourceName = new DynamicSearchAdsSearchTermViewName("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]").ToString(),
-            };
-            DynamicSearchAdsSearchTermView expectedResponse = new DynamicSearchAdsSearchTermView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            DynamicSearchAdsSearchTermViewServiceClient client = new DynamicSearchAdsSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new DynamicSearchAdsSearchTermViewName("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]").ToString();
-            DynamicSearchAdsSearchTermView response = client.GetDynamicSearchAdsSearchTermView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetDynamicSearchAdsSearchTermViewAsync()
-        {
-            Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(MockBehavior.Strict);
-            GetDynamicSearchAdsSearchTermViewRequest expectedRequest = new GetDynamicSearchAdsSearchTermViewRequest
-            {
-                ResourceName = new DynamicSearchAdsSearchTermViewName("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]").ToString(),
-            };
-            DynamicSearchAdsSearchTermView expectedResponse = new DynamicSearchAdsSearchTermView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DynamicSearchAdsSearchTermView>(Task.FromResult(expectedResponse), null, null, null, null));
-            DynamicSearchAdsSearchTermViewServiceClient client = new DynamicSearchAdsSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new DynamicSearchAdsSearchTermViewName("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]").ToString();
-            DynamicSearchAdsSearchTermView response = await client.GetDynamicSearchAdsSearchTermViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetDynamicSearchAdsSearchTermView2()
-        {
-            Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
             GetDynamicSearchAdsSearchTermViewRequest request = new GetDynamicSearchAdsSearchTermViewRequest
             {
-                ResourceName = new DynamicSearchAdsSearchTermViewName("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]").ToString(),
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
             };
-            DynamicSearchAdsSearchTermView expectedResponse = new DynamicSearchAdsSearchTermView
+            gagvr::DynamicSearchAdsSearchTermView expectedResponse = new gagvr::DynamicSearchAdsSearchTermView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                Headline = "headline583098ef",
+                LandingPage = "landing_page89bf8d81",
+                PageUrl = "page_url886e2c07",
+                HasNegativeKeyword = false,
+                HasMatchingKeyword = true,
+                HasNegativeUrl = true,
             };
-            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             DynamicSearchAdsSearchTermViewServiceClient client = new DynamicSearchAdsSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            DynamicSearchAdsSearchTermView response = client.GetDynamicSearchAdsSearchTermView(request);
+            gagvr::DynamicSearchAdsSearchTermView response = client.GetDynamicSearchAdsSearchTermView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetDynamicSearchAdsSearchTermViewAsync2()
+        public async stt::Task GetDynamicSearchAdsSearchTermViewAsync()
         {
-            Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
             GetDynamicSearchAdsSearchTermViewRequest request = new GetDynamicSearchAdsSearchTermViewRequest
             {
-                ResourceName = new DynamicSearchAdsSearchTermViewName("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]").ToString(),
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
             };
-            DynamicSearchAdsSearchTermView expectedResponse = new DynamicSearchAdsSearchTermView
+            gagvr::DynamicSearchAdsSearchTermView expectedResponse = new gagvr::DynamicSearchAdsSearchTermView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                Headline = "headline583098ef",
+                LandingPage = "landing_page89bf8d81",
+                PageUrl = "page_url886e2c07",
+                HasNegativeKeyword = false,
+                HasMatchingKeyword = true,
+                HasNegativeUrl = true,
             };
-            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DynamicSearchAdsSearchTermView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DynamicSearchAdsSearchTermView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             DynamicSearchAdsSearchTermViewServiceClient client = new DynamicSearchAdsSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
-            DynamicSearchAdsSearchTermView response = await client.GetDynamicSearchAdsSearchTermViewAsync(request);
+            gagvr::DynamicSearchAdsSearchTermView responseCallSettings = await client.GetDynamicSearchAdsSearchTermViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DynamicSearchAdsSearchTermView responseCancellationToken = await client.GetDynamicSearchAdsSearchTermViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetDynamicSearchAdsSearchTermViewResourceNames()
+        {
+            moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetDynamicSearchAdsSearchTermViewRequest request = new GetDynamicSearchAdsSearchTermViewRequest
+            {
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+            };
+            gagvr::DynamicSearchAdsSearchTermView expectedResponse = new gagvr::DynamicSearchAdsSearchTermView
+            {
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                Headline = "headline583098ef",
+                LandingPage = "landing_page89bf8d81",
+                PageUrl = "page_url886e2c07",
+                HasNegativeKeyword = false,
+                HasMatchingKeyword = true,
+                HasNegativeUrl = true,
+            };
+            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            DynamicSearchAdsSearchTermViewServiceClient client = new DynamicSearchAdsSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DynamicSearchAdsSearchTermView response = client.GetDynamicSearchAdsSearchTermView(request.ResourceNameAsDynamicSearchAdsSearchTermViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetDynamicSearchAdsSearchTermViewResourceNamesAsync()
+        {
+            moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
+            GetDynamicSearchAdsSearchTermViewRequest request = new GetDynamicSearchAdsSearchTermViewRequest
+            {
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+            };
+            gagvr::DynamicSearchAdsSearchTermView expectedResponse = new gagvr::DynamicSearchAdsSearchTermView
+            {
+                ResourceNameAsDynamicSearchAdsSearchTermViewName = gagvr::DynamicSearchAdsSearchTermViewName.FromCustomerDynamicSearchAdsSearchTermView("[CUSTOMER]", "[DYNAMIC_SEARCH_ADS_SEARCH_TERM_VIEW]"),
+                SearchTerm = "search_term6c01a1df",
+                Headline = "headline583098ef",
+                LandingPage = "landing_page89bf8d81",
+                PageUrl = "page_url886e2c07",
+                HasNegativeKeyword = false,
+                HasMatchingKeyword = true,
+                HasNegativeUrl = true,
+            };
+            mockGrpcClient.Setup(x => x.GetDynamicSearchAdsSearchTermViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DynamicSearchAdsSearchTermView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            DynamicSearchAdsSearchTermViewServiceClient client = new DynamicSearchAdsSearchTermViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DynamicSearchAdsSearchTermView responseCallSettings = await client.GetDynamicSearchAdsSearchTermViewAsync(request.ResourceNameAsDynamicSearchAdsSearchTermViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DynamicSearchAdsSearchTermView responseCancellationToken = await client.GetDynamicSearchAdsSearchTermViewAsync(request.ResourceNameAsDynamicSearchAdsSearchTermViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

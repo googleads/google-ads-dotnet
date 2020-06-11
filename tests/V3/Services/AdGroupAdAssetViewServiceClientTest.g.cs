@@ -14,107 +14,169 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdGroupAdAssetViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdGroupAdAssetViewServiceClientTest
     {
+        [Test]
+        public void GetAdGroupAdAssetViewRequestObject()
+        {
+            moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAdAssetViewRequest request = new GetAdGroupAdAssetViewRequest
+            {
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+            };
+            gagvr::AdGroupAdAssetView expectedResponse = new gagvr::AdGroupAdAssetView
+            {
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+                FieldType = gagve::AssetFieldTypeEnum.Types.AssetFieldType.YoutubeVideo,
+                PolicySummary = new gagvr::AdGroupAdAssetPolicySummary(),
+                PerformanceLabel = gagve::AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Pending,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupAdAssetViewServiceClient client = new AdGroupAdAssetViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAdAssetView response = client.GetAdGroupAdAssetView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdGroupAdAssetViewRequestObjectAsync()
+        {
+            moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAdAssetViewRequest request = new GetAdGroupAdAssetViewRequest
+            {
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+            };
+            gagvr::AdGroupAdAssetView expectedResponse = new gagvr::AdGroupAdAssetView
+            {
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+                FieldType = gagve::AssetFieldTypeEnum.Types.AssetFieldType.YoutubeVideo,
+                PolicySummary = new gagvr::AdGroupAdAssetPolicySummary(),
+                PerformanceLabel = gagve::AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Pending,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAdAssetView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupAdAssetViewServiceClient client = new AdGroupAdAssetViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAdAssetView responseCallSettings = await client.GetAdGroupAdAssetViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupAdAssetView responseCancellationToken = await client.GetAdGroupAdAssetViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAdGroupAdAssetView()
         {
-            Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(MockBehavior.Strict);
-            GetAdGroupAdAssetViewRequest expectedRequest = new GetAdGroupAdAssetViewRequest
-            {
-                ResourceName = new AdGroupAdAssetViewName("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]").ToString(),
-            };
-            AdGroupAdAssetView expectedResponse = new AdGroupAdAssetView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupAdAssetViewServiceClient client = new AdGroupAdAssetViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupAdAssetViewName("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]").ToString();
-            AdGroupAdAssetView response = client.GetAdGroupAdAssetView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdGroupAdAssetViewAsync()
-        {
-            Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(MockBehavior.Strict);
-            GetAdGroupAdAssetViewRequest expectedRequest = new GetAdGroupAdAssetViewRequest
-            {
-                ResourceName = new AdGroupAdAssetViewName("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]").ToString(),
-            };
-            AdGroupAdAssetView expectedResponse = new AdGroupAdAssetView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupAdAssetView>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupAdAssetViewServiceClient client = new AdGroupAdAssetViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupAdAssetViewName("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]").ToString();
-            AdGroupAdAssetView response = await client.GetAdGroupAdAssetViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAdGroupAdAssetView2()
-        {
-            Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupAdAssetViewRequest request = new GetAdGroupAdAssetViewRequest
             {
-                ResourceName = new AdGroupAdAssetViewName("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]").ToString(),
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
             };
-            AdGroupAdAssetView expectedResponse = new AdGroupAdAssetView
+            gagvr::AdGroupAdAssetView expectedResponse = new gagvr::AdGroupAdAssetView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+                FieldType = gagve::AssetFieldTypeEnum.Types.AssetFieldType.YoutubeVideo,
+                PolicySummary = new gagvr::AdGroupAdAssetPolicySummary(),
+                PerformanceLabel = gagve::AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Pending,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupAdAssetViewServiceClient client = new AdGroupAdAssetViewServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupAdAssetView response = client.GetAdGroupAdAssetView(request);
+            gagvr::AdGroupAdAssetView response = client.GetAdGroupAdAssetView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdGroupAdAssetViewAsync2()
+        public async stt::Task GetAdGroupAdAssetViewAsync()
         {
-            Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupAdAssetViewRequest request = new GetAdGroupAdAssetViewRequest
             {
-                ResourceName = new AdGroupAdAssetViewName("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]").ToString(),
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
             };
-            AdGroupAdAssetView expectedResponse = new AdGroupAdAssetView
+            gagvr::AdGroupAdAssetView expectedResponse = new gagvr::AdGroupAdAssetView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+                FieldType = gagve::AssetFieldTypeEnum.Types.AssetFieldType.YoutubeVideo,
+                PolicySummary = new gagvr::AdGroupAdAssetPolicySummary(),
+                PerformanceLabel = gagve::AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Pending,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupAdAssetView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAdAssetView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupAdAssetViewServiceClient client = new AdGroupAdAssetViewServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupAdAssetView response = await client.GetAdGroupAdAssetViewAsync(request);
+            gagvr::AdGroupAdAssetView responseCallSettings = await client.GetAdGroupAdAssetViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupAdAssetView responseCancellationToken = await client.GetAdGroupAdAssetViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdGroupAdAssetViewResourceNames()
+        {
+            moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAdAssetViewRequest request = new GetAdGroupAdAssetViewRequest
+            {
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+            };
+            gagvr::AdGroupAdAssetView expectedResponse = new gagvr::AdGroupAdAssetView
+            {
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+                FieldType = gagve::AssetFieldTypeEnum.Types.AssetFieldType.YoutubeVideo,
+                PolicySummary = new gagvr::AdGroupAdAssetPolicySummary(),
+                PerformanceLabel = gagve::AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Pending,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupAdAssetViewServiceClient client = new AdGroupAdAssetViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAdAssetView response = client.GetAdGroupAdAssetView(request.ResourceNameAsAdGroupAdAssetViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetAdGroupAdAssetViewResourceNamesAsync()
+        {
+            moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAdAssetViewRequest request = new GetAdGroupAdAssetViewRequest
+            {
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+            };
+            gagvr::AdGroupAdAssetView expectedResponse = new gagvr::AdGroupAdAssetView
+            {
+                ResourceNameAsAdGroupAdAssetViewName = gagvr::AdGroupAdAssetViewName.FromCustomerAdGroupAdAssetView("[CUSTOMER]", "[AD_GROUP_AD_ASSET_VIEW]"),
+                FieldType = gagve::AssetFieldTypeEnum.Types.AssetFieldType.YoutubeVideo,
+                PolicySummary = new gagvr::AdGroupAdAssetPolicySummary(),
+                PerformanceLabel = gagve::AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Pending,
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER]", "[ASSET]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAdAssetViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAdAssetView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupAdAssetViewServiceClient client = new AdGroupAdAssetViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAdAssetView responseCallSettings = await client.GetAdGroupAdAssetViewAsync(request.ResourceNameAsAdGroupAdAssetViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupAdAssetView responseCancellationToken = await client.GetAdGroupAdAssetViewAsync(request.ResourceNameAsAdGroupAdAssetViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

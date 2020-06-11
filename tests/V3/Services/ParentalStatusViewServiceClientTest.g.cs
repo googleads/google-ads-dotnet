@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedParentalStatusViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedParentalStatusViewServiceClientTest
     {
+        [Test]
+        public void GetParentalStatusViewRequestObject()
+        {
+            moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
+            GetParentalStatusViewRequest request = new GetParentalStatusViewRequest
+            {
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
+            };
+            gagvr::ParentalStatusView expectedResponse = new gagvr::ParentalStatusView
+            {
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetParentalStatusView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ParentalStatusViewServiceClient client = new ParentalStatusViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ParentalStatusView response = client.GetParentalStatusView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetParentalStatusViewRequestObjectAsync()
+        {
+            moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
+            GetParentalStatusViewRequest request = new GetParentalStatusViewRequest
+            {
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
+            };
+            gagvr::ParentalStatusView expectedResponse = new gagvr::ParentalStatusView
+            {
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetParentalStatusViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ParentalStatusView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ParentalStatusViewServiceClient client = new ParentalStatusViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ParentalStatusView responseCallSettings = await client.GetParentalStatusViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ParentalStatusView responseCancellationToken = await client.GetParentalStatusViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetParentalStatusView()
         {
-            Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(MockBehavior.Strict);
-            GetParentalStatusViewRequest expectedRequest = new GetParentalStatusViewRequest
-            {
-                ResourceName = new ParentalStatusViewName("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]").ToString(),
-            };
-            ParentalStatusView expectedResponse = new ParentalStatusView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetParentalStatusView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ParentalStatusViewServiceClient client = new ParentalStatusViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ParentalStatusViewName("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]").ToString();
-            ParentalStatusView response = client.GetParentalStatusView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetParentalStatusViewAsync()
-        {
-            Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(MockBehavior.Strict);
-            GetParentalStatusViewRequest expectedRequest = new GetParentalStatusViewRequest
-            {
-                ResourceName = new ParentalStatusViewName("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]").ToString(),
-            };
-            ParentalStatusView expectedResponse = new ParentalStatusView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetParentalStatusViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ParentalStatusView>(Task.FromResult(expectedResponse), null, null, null, null));
-            ParentalStatusViewServiceClient client = new ParentalStatusViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ParentalStatusViewName("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]").ToString();
-            ParentalStatusView response = await client.GetParentalStatusViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetParentalStatusView2()
-        {
-            Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
             GetParentalStatusViewRequest request = new GetParentalStatusViewRequest
             {
-                ResourceName = new ParentalStatusViewName("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]").ToString(),
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
             };
-            ParentalStatusView expectedResponse = new ParentalStatusView
+            gagvr::ParentalStatusView expectedResponse = new gagvr::ParentalStatusView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetParentalStatusView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetParentalStatusView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ParentalStatusViewServiceClient client = new ParentalStatusViewServiceClientImpl(mockGrpcClient.Object, null);
-            ParentalStatusView response = client.GetParentalStatusView(request);
+            gagvr::ParentalStatusView response = client.GetParentalStatusView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetParentalStatusViewAsync2()
+        public async stt::Task GetParentalStatusViewAsync()
         {
-            Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
             GetParentalStatusViewRequest request = new GetParentalStatusViewRequest
             {
-                ResourceName = new ParentalStatusViewName("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]").ToString(),
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
             };
-            ParentalStatusView expectedResponse = new ParentalStatusView
+            gagvr::ParentalStatusView expectedResponse = new gagvr::ParentalStatusView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetParentalStatusViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ParentalStatusView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetParentalStatusViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ParentalStatusView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ParentalStatusViewServiceClient client = new ParentalStatusViewServiceClientImpl(mockGrpcClient.Object, null);
-            ParentalStatusView response = await client.GetParentalStatusViewAsync(request);
+            gagvr::ParentalStatusView responseCallSettings = await client.GetParentalStatusViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ParentalStatusView responseCancellationToken = await client.GetParentalStatusViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetParentalStatusViewResourceNames()
+        {
+            moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
+            GetParentalStatusViewRequest request = new GetParentalStatusViewRequest
+            {
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
+            };
+            gagvr::ParentalStatusView expectedResponse = new gagvr::ParentalStatusView
+            {
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetParentalStatusView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ParentalStatusViewServiceClient client = new ParentalStatusViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ParentalStatusView response = client.GetParentalStatusView(request.ResourceNameAsParentalStatusViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetParentalStatusViewResourceNamesAsync()
+        {
+            moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
+            GetParentalStatusViewRequest request = new GetParentalStatusViewRequest
+            {
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
+            };
+            gagvr::ParentalStatusView expectedResponse = new gagvr::ParentalStatusView
+            {
+                ResourceNameAsParentalStatusViewName = gagvr::ParentalStatusViewName.FromCustomerParentalStatusView("[CUSTOMER]", "[PARENTAL_STATUS_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetParentalStatusViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ParentalStatusView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ParentalStatusViewServiceClient client = new ParentalStatusViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ParentalStatusView responseCallSettings = await client.GetParentalStatusViewAsync(request.ResourceNameAsParentalStatusViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ParentalStatusView responseCancellationToken = await client.GetParentalStatusViewAsync(request.ResourceNameAsParentalStatusViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }
