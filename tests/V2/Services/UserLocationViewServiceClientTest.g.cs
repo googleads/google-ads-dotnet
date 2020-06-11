@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,150 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedUserLocationViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedUserLocationViewServiceClientTest
     {
+        [Test]
+        public void GetUserLocationViewRequestObject()
+        {
+            moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
+            GetUserLocationViewRequest request = new GetUserLocationViewRequest
+            {
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+            };
+            gagvr::UserLocationView expectedResponse = new gagvr::UserLocationView
+            {
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+                CountryCriterionId = 7801114990940938649L,
+                TargetingLocation = false,
+            };
+            mockGrpcClient.Setup(x => x.GetUserLocationView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UserLocationViewServiceClient client = new UserLocationViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserLocationView response = client.GetUserLocationView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetUserLocationViewRequestObjectAsync()
+        {
+            moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
+            GetUserLocationViewRequest request = new GetUserLocationViewRequest
+            {
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+            };
+            gagvr::UserLocationView expectedResponse = new gagvr::UserLocationView
+            {
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+                CountryCriterionId = 7801114990940938649L,
+                TargetingLocation = false,
+            };
+            mockGrpcClient.Setup(x => x.GetUserLocationViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::UserLocationView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UserLocationViewServiceClient client = new UserLocationViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserLocationView responseCallSettings = await client.GetUserLocationViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::UserLocationView responseCancellationToken = await client.GetUserLocationViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetUserLocationView()
         {
-            Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new Mock<UserLocationViewService.UserLocationViewServiceClient>(MockBehavior.Strict);
-            GetUserLocationViewRequest expectedRequest = new GetUserLocationViewRequest
-            {
-                ResourceName = new UserLocationViewName("[CUSTOMER]", "[USER_LOCATION_VIEW]").ToString(),
-            };
-            UserLocationView expectedResponse = new UserLocationView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetUserLocationView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            UserLocationViewServiceClient client = new UserLocationViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new UserLocationViewName("[CUSTOMER]", "[USER_LOCATION_VIEW]").ToString();
-            UserLocationView response = client.GetUserLocationView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetUserLocationViewAsync()
-        {
-            Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new Mock<UserLocationViewService.UserLocationViewServiceClient>(MockBehavior.Strict);
-            GetUserLocationViewRequest expectedRequest = new GetUserLocationViewRequest
-            {
-                ResourceName = new UserLocationViewName("[CUSTOMER]", "[USER_LOCATION_VIEW]").ToString(),
-            };
-            UserLocationView expectedResponse = new UserLocationView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetUserLocationViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UserLocationView>(Task.FromResult(expectedResponse), null, null, null, null));
-            UserLocationViewServiceClient client = new UserLocationViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new UserLocationViewName("[CUSTOMER]", "[USER_LOCATION_VIEW]").ToString();
-            UserLocationView response = await client.GetUserLocationViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetUserLocationView2()
-        {
-            Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new Mock<UserLocationViewService.UserLocationViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
             GetUserLocationViewRequest request = new GetUserLocationViewRequest
             {
-                ResourceName = new UserLocationViewName("[CUSTOMER]", "[USER_LOCATION_VIEW]").ToString(),
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
             };
-            UserLocationView expectedResponse = new UserLocationView
+            gagvr::UserLocationView expectedResponse = new gagvr::UserLocationView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+                CountryCriterionId = 7801114990940938649L,
+                TargetingLocation = false,
             };
-            mockGrpcClient.Setup(x => x.GetUserLocationView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetUserLocationView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             UserLocationViewServiceClient client = new UserLocationViewServiceClientImpl(mockGrpcClient.Object, null);
-            UserLocationView response = client.GetUserLocationView(request);
+            gagvr::UserLocationView response = client.GetUserLocationView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetUserLocationViewAsync2()
+        public async stt::Task GetUserLocationViewAsync()
         {
-            Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new Mock<UserLocationViewService.UserLocationViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
             GetUserLocationViewRequest request = new GetUserLocationViewRequest
             {
-                ResourceName = new UserLocationViewName("[CUSTOMER]", "[USER_LOCATION_VIEW]").ToString(),
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
             };
-            UserLocationView expectedResponse = new UserLocationView
+            gagvr::UserLocationView expectedResponse = new gagvr::UserLocationView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+                CountryCriterionId = 7801114990940938649L,
+                TargetingLocation = false,
             };
-            mockGrpcClient.Setup(x => x.GetUserLocationViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UserLocationView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetUserLocationViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::UserLocationView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             UserLocationViewServiceClient client = new UserLocationViewServiceClientImpl(mockGrpcClient.Object, null);
-            UserLocationView response = await client.GetUserLocationViewAsync(request);
+            gagvr::UserLocationView responseCallSettings = await client.GetUserLocationViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::UserLocationView responseCancellationToken = await client.GetUserLocationViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetUserLocationViewResourceNames()
+        {
+            moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
+            GetUserLocationViewRequest request = new GetUserLocationViewRequest
+            {
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+            };
+            gagvr::UserLocationView expectedResponse = new gagvr::UserLocationView
+            {
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+                CountryCriterionId = 7801114990940938649L,
+                TargetingLocation = false,
+            };
+            mockGrpcClient.Setup(x => x.GetUserLocationView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UserLocationViewServiceClient client = new UserLocationViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserLocationView response = client.GetUserLocationView(request.ResourceNameAsUserLocationViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetUserLocationViewResourceNamesAsync()
+        {
+            moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
+            GetUserLocationViewRequest request = new GetUserLocationViewRequest
+            {
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+            };
+            gagvr::UserLocationView expectedResponse = new gagvr::UserLocationView
+            {
+                ResourceNameAsUserLocationViewName = gagvr::UserLocationViewName.FromCustomerUserLocationView("[CUSTOMER]", "[USER_LOCATION_VIEW]"),
+                CountryCriterionId = 7801114990940938649L,
+                TargetingLocation = false,
+            };
+            mockGrpcClient.Setup(x => x.GetUserLocationViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::UserLocationView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UserLocationViewServiceClient client = new UserLocationViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserLocationView responseCallSettings = await client.GetUserLocationViewAsync(request.ResourceNameAsUserLocationViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::UserLocationView responseCancellationToken = await client.GetUserLocationViewAsync(request.ResourceNameAsUserLocationViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

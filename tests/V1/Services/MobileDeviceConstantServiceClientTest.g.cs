@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,169 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedMobileDeviceConstantServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedMobileDeviceConstantServiceClientTest
     {
+        [Test]
+        public void GetMobileDeviceConstantRequestObject()
+        {
+            moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
+            GetMobileDeviceConstantRequest request = new GetMobileDeviceConstantRequest
+            {
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+            };
+            gagvr::MobileDeviceConstant expectedResponse = new gagvr::MobileDeviceConstant
+            {
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                MobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                ManufacturerName = "manufacturer_name23641b86",
+                OperatingSystemName = "operating_system_namea90f0a1e",
+                Type = gagve::MobileDeviceTypeEnum.Types.MobileDeviceType.Tablet,
+            };
+            mockGrpcClient.Setup(x => x.GetMobileDeviceConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MobileDeviceConstantServiceClient client = new MobileDeviceConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MobileDeviceConstant response = client.GetMobileDeviceConstant(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetMobileDeviceConstantRequestObjectAsync()
+        {
+            moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
+            GetMobileDeviceConstantRequest request = new GetMobileDeviceConstantRequest
+            {
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+            };
+            gagvr::MobileDeviceConstant expectedResponse = new gagvr::MobileDeviceConstant
+            {
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                MobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                ManufacturerName = "manufacturer_name23641b86",
+                OperatingSystemName = "operating_system_namea90f0a1e",
+                Type = gagve::MobileDeviceTypeEnum.Types.MobileDeviceType.Tablet,
+            };
+            mockGrpcClient.Setup(x => x.GetMobileDeviceConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MobileDeviceConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MobileDeviceConstantServiceClient client = new MobileDeviceConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MobileDeviceConstant responseCallSettings = await client.GetMobileDeviceConstantAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MobileDeviceConstant responseCancellationToken = await client.GetMobileDeviceConstantAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetMobileDeviceConstant()
         {
-            Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(MockBehavior.Strict);
-            GetMobileDeviceConstantRequest expectedRequest = new GetMobileDeviceConstantRequest
-            {
-                ResourceName = new MobileDeviceConstantName("[MOBILE_DEVICE_CONSTANT]").ToString(),
-            };
-            MobileDeviceConstant expectedResponse = new MobileDeviceConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMobileDeviceConstant(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            MobileDeviceConstantServiceClient client = new MobileDeviceConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MobileDeviceConstantName("[MOBILE_DEVICE_CONSTANT]").ToString();
-            MobileDeviceConstant response = client.GetMobileDeviceConstant(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetMobileDeviceConstantAsync()
-        {
-            Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(MockBehavior.Strict);
-            GetMobileDeviceConstantRequest expectedRequest = new GetMobileDeviceConstantRequest
-            {
-                ResourceName = new MobileDeviceConstantName("[MOBILE_DEVICE_CONSTANT]").ToString(),
-            };
-            MobileDeviceConstant expectedResponse = new MobileDeviceConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMobileDeviceConstantAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MobileDeviceConstant>(Task.FromResult(expectedResponse), null, null, null, null));
-            MobileDeviceConstantServiceClient client = new MobileDeviceConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MobileDeviceConstantName("[MOBILE_DEVICE_CONSTANT]").ToString();
-            MobileDeviceConstant response = await client.GetMobileDeviceConstantAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetMobileDeviceConstant2()
-        {
-            Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
             GetMobileDeviceConstantRequest request = new GetMobileDeviceConstantRequest
             {
-                ResourceName = new MobileDeviceConstantName("[MOBILE_DEVICE_CONSTANT]").ToString(),
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
             };
-            MobileDeviceConstant expectedResponse = new MobileDeviceConstant
+            gagvr::MobileDeviceConstant expectedResponse = new gagvr::MobileDeviceConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                MobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                ManufacturerName = "manufacturer_name23641b86",
+                OperatingSystemName = "operating_system_namea90f0a1e",
+                Type = gagve::MobileDeviceTypeEnum.Types.MobileDeviceType.Tablet,
             };
-            mockGrpcClient.Setup(x => x.GetMobileDeviceConstant(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetMobileDeviceConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MobileDeviceConstantServiceClient client = new MobileDeviceConstantServiceClientImpl(mockGrpcClient.Object, null);
-            MobileDeviceConstant response = client.GetMobileDeviceConstant(request);
+            gagvr::MobileDeviceConstant response = client.GetMobileDeviceConstant(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetMobileDeviceConstantAsync2()
+        public async stt::Task GetMobileDeviceConstantAsync()
         {
-            Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
             GetMobileDeviceConstantRequest request = new GetMobileDeviceConstantRequest
             {
-                ResourceName = new MobileDeviceConstantName("[MOBILE_DEVICE_CONSTANT]").ToString(),
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
             };
-            MobileDeviceConstant expectedResponse = new MobileDeviceConstant
+            gagvr::MobileDeviceConstant expectedResponse = new gagvr::MobileDeviceConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                MobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                ManufacturerName = "manufacturer_name23641b86",
+                OperatingSystemName = "operating_system_namea90f0a1e",
+                Type = gagve::MobileDeviceTypeEnum.Types.MobileDeviceType.Tablet,
             };
-            mockGrpcClient.Setup(x => x.GetMobileDeviceConstantAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MobileDeviceConstant>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetMobileDeviceConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MobileDeviceConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MobileDeviceConstantServiceClient client = new MobileDeviceConstantServiceClientImpl(mockGrpcClient.Object, null);
-            MobileDeviceConstant response = await client.GetMobileDeviceConstantAsync(request);
+            gagvr::MobileDeviceConstant responseCallSettings = await client.GetMobileDeviceConstantAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MobileDeviceConstant responseCancellationToken = await client.GetMobileDeviceConstantAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetMobileDeviceConstantResourceNames()
+        {
+            moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
+            GetMobileDeviceConstantRequest request = new GetMobileDeviceConstantRequest
+            {
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+            };
+            gagvr::MobileDeviceConstant expectedResponse = new gagvr::MobileDeviceConstant
+            {
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                MobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                ManufacturerName = "manufacturer_name23641b86",
+                OperatingSystemName = "operating_system_namea90f0a1e",
+                Type = gagve::MobileDeviceTypeEnum.Types.MobileDeviceType.Tablet,
+            };
+            mockGrpcClient.Setup(x => x.GetMobileDeviceConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MobileDeviceConstantServiceClient client = new MobileDeviceConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MobileDeviceConstant response = client.GetMobileDeviceConstant(request.ResourceNameAsMobileDeviceConstantName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetMobileDeviceConstantResourceNamesAsync()
+        {
+            moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
+            GetMobileDeviceConstantRequest request = new GetMobileDeviceConstantRequest
+            {
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+            };
+            gagvr::MobileDeviceConstant expectedResponse = new gagvr::MobileDeviceConstant
+            {
+                ResourceNameAsMobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                Id = -6774108720365892680L,
+                MobileDeviceConstantName = gagvr::MobileDeviceConstantName.FromMobileDeviceConstant("[MOBILE_DEVICE_CONSTANT]"),
+                ManufacturerName = "manufacturer_name23641b86",
+                OperatingSystemName = "operating_system_namea90f0a1e",
+                Type = gagve::MobileDeviceTypeEnum.Types.MobileDeviceType.Tablet,
+            };
+            mockGrpcClient.Setup(x => x.GetMobileDeviceConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MobileDeviceConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MobileDeviceConstantServiceClient client = new MobileDeviceConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MobileDeviceConstant responseCallSettings = await client.GetMobileDeviceConstantAsync(request.ResourceNameAsMobileDeviceConstantName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MobileDeviceConstant responseCancellationToken = await client.GetMobileDeviceConstantAsync(request.ResourceNameAsMobileDeviceConstantName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

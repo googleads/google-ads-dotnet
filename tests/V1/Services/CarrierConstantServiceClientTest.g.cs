@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,156 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCarrierConstantServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCarrierConstantServiceClientTest
     {
+        [Test]
+        public void GetCarrierConstantRequestObject()
+        {
+            moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
+            GetCarrierConstantRequest request = new GetCarrierConstantRequest
+            {
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+            };
+            gagvr::CarrierConstant expectedResponse = new gagvr::CarrierConstant
+            {
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+            };
+            mockGrpcClient.Setup(x => x.GetCarrierConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CarrierConstantServiceClient client = new CarrierConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CarrierConstant response = client.GetCarrierConstant(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCarrierConstantRequestObjectAsync()
+        {
+            moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
+            GetCarrierConstantRequest request = new GetCarrierConstantRequest
+            {
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+            };
+            gagvr::CarrierConstant expectedResponse = new gagvr::CarrierConstant
+            {
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+            };
+            mockGrpcClient.Setup(x => x.GetCarrierConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CarrierConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CarrierConstantServiceClient client = new CarrierConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CarrierConstant responseCallSettings = await client.GetCarrierConstantAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CarrierConstant responseCancellationToken = await client.GetCarrierConstantAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCarrierConstant()
         {
-            Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new Mock<CarrierConstantService.CarrierConstantServiceClient>(MockBehavior.Strict);
-            GetCarrierConstantRequest expectedRequest = new GetCarrierConstantRequest
-            {
-                ResourceName = new CarrierConstantName("[CARRIER_CONSTANT]").ToString(),
-            };
-            CarrierConstant expectedResponse = new CarrierConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCarrierConstant(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CarrierConstantServiceClient client = new CarrierConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CarrierConstantName("[CARRIER_CONSTANT]").ToString();
-            CarrierConstant response = client.GetCarrierConstant(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCarrierConstantAsync()
-        {
-            Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new Mock<CarrierConstantService.CarrierConstantServiceClient>(MockBehavior.Strict);
-            GetCarrierConstantRequest expectedRequest = new GetCarrierConstantRequest
-            {
-                ResourceName = new CarrierConstantName("[CARRIER_CONSTANT]").ToString(),
-            };
-            CarrierConstant expectedResponse = new CarrierConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCarrierConstantAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CarrierConstant>(Task.FromResult(expectedResponse), null, null, null, null));
-            CarrierConstantServiceClient client = new CarrierConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CarrierConstantName("[CARRIER_CONSTANT]").ToString();
-            CarrierConstant response = await client.GetCarrierConstantAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCarrierConstant2()
-        {
-            Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new Mock<CarrierConstantService.CarrierConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
             GetCarrierConstantRequest request = new GetCarrierConstantRequest
             {
-                ResourceName = new CarrierConstantName("[CARRIER_CONSTANT]").ToString(),
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
             };
-            CarrierConstant expectedResponse = new CarrierConstant
+            gagvr::CarrierConstant expectedResponse = new gagvr::CarrierConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                CountryCode = "country_code8debec55",
             };
-            mockGrpcClient.Setup(x => x.GetCarrierConstant(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCarrierConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CarrierConstantServiceClient client = new CarrierConstantServiceClientImpl(mockGrpcClient.Object, null);
-            CarrierConstant response = client.GetCarrierConstant(request);
+            gagvr::CarrierConstant response = client.GetCarrierConstant(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCarrierConstantAsync2()
+        public async stt::Task GetCarrierConstantAsync()
         {
-            Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new Mock<CarrierConstantService.CarrierConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
             GetCarrierConstantRequest request = new GetCarrierConstantRequest
             {
-                ResourceName = new CarrierConstantName("[CARRIER_CONSTANT]").ToString(),
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
             };
-            CarrierConstant expectedResponse = new CarrierConstant
+            gagvr::CarrierConstant expectedResponse = new gagvr::CarrierConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                CountryCode = "country_code8debec55",
             };
-            mockGrpcClient.Setup(x => x.GetCarrierConstantAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CarrierConstant>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCarrierConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CarrierConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CarrierConstantServiceClient client = new CarrierConstantServiceClientImpl(mockGrpcClient.Object, null);
-            CarrierConstant response = await client.GetCarrierConstantAsync(request);
+            gagvr::CarrierConstant responseCallSettings = await client.GetCarrierConstantAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CarrierConstant responseCancellationToken = await client.GetCarrierConstantAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCarrierConstantResourceNames()
+        {
+            moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
+            GetCarrierConstantRequest request = new GetCarrierConstantRequest
+            {
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+            };
+            gagvr::CarrierConstant expectedResponse = new gagvr::CarrierConstant
+            {
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+            };
+            mockGrpcClient.Setup(x => x.GetCarrierConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CarrierConstantServiceClient client = new CarrierConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CarrierConstant response = client.GetCarrierConstant(request.ResourceNameAsCarrierConstantName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetCarrierConstantResourceNamesAsync()
+        {
+            moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
+            GetCarrierConstantRequest request = new GetCarrierConstantRequest
+            {
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+            };
+            gagvr::CarrierConstant expectedResponse = new gagvr::CarrierConstant
+            {
+                ResourceNameAsCarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CarrierConstantName = gagvr::CarrierConstantName.FromCarrierConstant("[CARRIER_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+            };
+            mockGrpcClient.Setup(x => x.GetCarrierConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CarrierConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CarrierConstantServiceClient client = new CarrierConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CarrierConstant responseCallSettings = await client.GetCarrierConstantAsync(request.ResourceNameAsCarrierConstantName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CarrierConstant responseCancellationToken = await client.GetCarrierConstantAsync(request.ResourceNameAsCarrierConstantName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

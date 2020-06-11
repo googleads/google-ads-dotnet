@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,298 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V1.Common;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedUserListServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedUserListServiceClientTest
     {
+        [Test]
+        public void GetUserListRequestObject()
+        {
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
+            GetUserListRequest request = new GetUserListRequest
+            {
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+            };
+            gagvr::UserList expectedResponse = new gagvr::UserList
+            {
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Id = -6774108720365892680L,
+                ReadOnly = false,
+                UserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Description = "description2cf9da67",
+                MembershipStatus = gagve::UserListMembershipStatusEnum.Types.UserListMembershipStatus.Open,
+                IntegrationCode = "integration_codeb56c28f6",
+                MembershipLifeSpan = 8593891943371112615L,
+                SizeForDisplay = -3774093290138442712L,
+                SizeRangeForDisplay = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.Unknown,
+                SizeForSearch = 7931927642168968409L,
+                SizeRangeForSearch = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.OneHundredThousandToThreeHundredThousand,
+                Type = gagve::UserListTypeEnum.Types.UserListType.CrmBased,
+                ClosingReason = gagve::UserListClosingReasonEnum.Types.UserListClosingReason.Unused,
+                AccessReason = gagve::AccessReasonEnum.Types.AccessReason.Affiliated,
+                AccountUserListStatus = gagve::UserListAccessStatusEnum.Types.UserListAccessStatus.Disabled,
+                EligibleForSearch = false,
+                EligibleForDisplay = true,
+                CrmBasedUserList = new gagvc::CrmBasedUserListInfo(),
+                SimilarUserList = new gagvc::SimilarUserListInfo(),
+                RuleBasedUserList = new gagvc::RuleBasedUserListInfo(),
+                LogicalUserList = new gagvc::LogicalUserListInfo(),
+                BasicUserList = new gagvc::BasicUserListInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetUserList(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserList response = client.GetUserList(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetUserListRequestObjectAsync()
+        {
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
+            GetUserListRequest request = new GetUserListRequest
+            {
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+            };
+            gagvr::UserList expectedResponse = new gagvr::UserList
+            {
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Id = -6774108720365892680L,
+                ReadOnly = false,
+                UserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Description = "description2cf9da67",
+                MembershipStatus = gagve::UserListMembershipStatusEnum.Types.UserListMembershipStatus.Open,
+                IntegrationCode = "integration_codeb56c28f6",
+                MembershipLifeSpan = 8593891943371112615L,
+                SizeForDisplay = -3774093290138442712L,
+                SizeRangeForDisplay = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.Unknown,
+                SizeForSearch = 7931927642168968409L,
+                SizeRangeForSearch = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.OneHundredThousandToThreeHundredThousand,
+                Type = gagve::UserListTypeEnum.Types.UserListType.CrmBased,
+                ClosingReason = gagve::UserListClosingReasonEnum.Types.UserListClosingReason.Unused,
+                AccessReason = gagve::AccessReasonEnum.Types.AccessReason.Affiliated,
+                AccountUserListStatus = gagve::UserListAccessStatusEnum.Types.UserListAccessStatus.Disabled,
+                EligibleForSearch = false,
+                EligibleForDisplay = true,
+                CrmBasedUserList = new gagvc::CrmBasedUserListInfo(),
+                SimilarUserList = new gagvc::SimilarUserListInfo(),
+                RuleBasedUserList = new gagvc::RuleBasedUserListInfo(),
+                LogicalUserList = new gagvc::LogicalUserListInfo(),
+                BasicUserList = new gagvc::BasicUserListInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetUserListAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::UserList>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserList responseCallSettings = await client.GetUserListAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::UserList responseCancellationToken = await client.GetUserListAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetUserList()
         {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
-            GetUserListRequest expectedRequest = new GetUserListRequest
-            {
-                ResourceName = new UserListName("[CUSTOMER]", "[USER_LIST]").ToString(),
-            };
-            UserList expectedResponse = new UserList
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetUserList(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new UserListName("[CUSTOMER]", "[USER_LIST]").ToString();
-            UserList response = client.GetUserList(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetUserListAsync()
-        {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
-            GetUserListRequest expectedRequest = new GetUserListRequest
-            {
-                ResourceName = new UserListName("[CUSTOMER]", "[USER_LIST]").ToString(),
-            };
-            UserList expectedResponse = new UserList
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetUserListAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UserList>(Task.FromResult(expectedResponse), null, null, null, null));
-            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new UserListName("[CUSTOMER]", "[USER_LIST]").ToString();
-            UserList response = await client.GetUserListAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetUserList2()
-        {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
             GetUserListRequest request = new GetUserListRequest
             {
-                ResourceName = new UserListName("[CUSTOMER]", "[USER_LIST]").ToString(),
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
             };
-            UserList expectedResponse = new UserList
+            gagvr::UserList expectedResponse = new gagvr::UserList
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Id = -6774108720365892680L,
+                ReadOnly = false,
+                UserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Description = "description2cf9da67",
+                MembershipStatus = gagve::UserListMembershipStatusEnum.Types.UserListMembershipStatus.Open,
+                IntegrationCode = "integration_codeb56c28f6",
+                MembershipLifeSpan = 8593891943371112615L,
+                SizeForDisplay = -3774093290138442712L,
+                SizeRangeForDisplay = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.Unknown,
+                SizeForSearch = 7931927642168968409L,
+                SizeRangeForSearch = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.OneHundredThousandToThreeHundredThousand,
+                Type = gagve::UserListTypeEnum.Types.UserListType.CrmBased,
+                ClosingReason = gagve::UserListClosingReasonEnum.Types.UserListClosingReason.Unused,
+                AccessReason = gagve::AccessReasonEnum.Types.AccessReason.Affiliated,
+                AccountUserListStatus = gagve::UserListAccessStatusEnum.Types.UserListAccessStatus.Disabled,
+                EligibleForSearch = false,
+                EligibleForDisplay = true,
+                CrmBasedUserList = new gagvc::CrmBasedUserListInfo(),
+                SimilarUserList = new gagvc::SimilarUserListInfo(),
+                RuleBasedUserList = new gagvc::RuleBasedUserListInfo(),
+                LogicalUserList = new gagvc::LogicalUserListInfo(),
+                BasicUserList = new gagvc::BasicUserListInfo(),
             };
-            mockGrpcClient.Setup(x => x.GetUserList(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetUserList(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
-            UserList response = client.GetUserList(request);
+            gagvr::UserList response = client.GetUserList(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetUserListAsync2()
+        public async stt::Task GetUserListAsync()
         {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
             GetUserListRequest request = new GetUserListRequest
             {
-                ResourceName = new UserListName("[CUSTOMER]", "[USER_LIST]").ToString(),
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
             };
-            UserList expectedResponse = new UserList
+            gagvr::UserList expectedResponse = new gagvr::UserList
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Id = -6774108720365892680L,
+                ReadOnly = false,
+                UserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Description = "description2cf9da67",
+                MembershipStatus = gagve::UserListMembershipStatusEnum.Types.UserListMembershipStatus.Open,
+                IntegrationCode = "integration_codeb56c28f6",
+                MembershipLifeSpan = 8593891943371112615L,
+                SizeForDisplay = -3774093290138442712L,
+                SizeRangeForDisplay = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.Unknown,
+                SizeForSearch = 7931927642168968409L,
+                SizeRangeForSearch = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.OneHundredThousandToThreeHundredThousand,
+                Type = gagve::UserListTypeEnum.Types.UserListType.CrmBased,
+                ClosingReason = gagve::UserListClosingReasonEnum.Types.UserListClosingReason.Unused,
+                AccessReason = gagve::AccessReasonEnum.Types.AccessReason.Affiliated,
+                AccountUserListStatus = gagve::UserListAccessStatusEnum.Types.UserListAccessStatus.Disabled,
+                EligibleForSearch = false,
+                EligibleForDisplay = true,
+                CrmBasedUserList = new gagvc::CrmBasedUserListInfo(),
+                SimilarUserList = new gagvc::SimilarUserListInfo(),
+                RuleBasedUserList = new gagvc::RuleBasedUserListInfo(),
+                LogicalUserList = new gagvc::LogicalUserListInfo(),
+                BasicUserList = new gagvc::BasicUserListInfo(),
             };
-            mockGrpcClient.Setup(x => x.GetUserListAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UserList>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetUserListAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::UserList>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
-            UserList response = await client.GetUserListAsync(request);
+            gagvr::UserList responseCallSettings = await client.GetUserListAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::UserList responseCancellationToken = await client.GetUserListAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetUserListResourceNames()
+        {
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
+            GetUserListRequest request = new GetUserListRequest
+            {
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+            };
+            gagvr::UserList expectedResponse = new gagvr::UserList
+            {
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Id = -6774108720365892680L,
+                ReadOnly = false,
+                UserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Description = "description2cf9da67",
+                MembershipStatus = gagve::UserListMembershipStatusEnum.Types.UserListMembershipStatus.Open,
+                IntegrationCode = "integration_codeb56c28f6",
+                MembershipLifeSpan = 8593891943371112615L,
+                SizeForDisplay = -3774093290138442712L,
+                SizeRangeForDisplay = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.Unknown,
+                SizeForSearch = 7931927642168968409L,
+                SizeRangeForSearch = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.OneHundredThousandToThreeHundredThousand,
+                Type = gagve::UserListTypeEnum.Types.UserListType.CrmBased,
+                ClosingReason = gagve::UserListClosingReasonEnum.Types.UserListClosingReason.Unused,
+                AccessReason = gagve::AccessReasonEnum.Types.AccessReason.Affiliated,
+                AccountUserListStatus = gagve::UserListAccessStatusEnum.Types.UserListAccessStatus.Disabled,
+                EligibleForSearch = false,
+                EligibleForDisplay = true,
+                CrmBasedUserList = new gagvc::CrmBasedUserListInfo(),
+                SimilarUserList = new gagvc::SimilarUserListInfo(),
+                RuleBasedUserList = new gagvc::RuleBasedUserListInfo(),
+                LogicalUserList = new gagvc::LogicalUserListInfo(),
+                BasicUserList = new gagvc::BasicUserListInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetUserList(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserList response = client.GetUserList(request.ResourceNameAsUserListName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateUserLists()
+        public async stt::Task GetUserListResourceNamesAsync()
         {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
-            MutateUserListsRequest expectedRequest = new MutateUserListsRequest
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
+            GetUserListRequest request = new GetUserListRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
             };
-            MutateUserListsResponse expectedResponse = new MutateUserListsResponse();
-            mockGrpcClient.Setup(x => x.MutateUserLists(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::UserList expectedResponse = new gagvr::UserList
+            {
+                ResourceNameAsUserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Id = -6774108720365892680L,
+                ReadOnly = false,
+                UserListName = gagvr::UserListName.FromCustomerUserList("[CUSTOMER]", "[USER_LIST]"),
+                Description = "description2cf9da67",
+                MembershipStatus = gagve::UserListMembershipStatusEnum.Types.UserListMembershipStatus.Open,
+                IntegrationCode = "integration_codeb56c28f6",
+                MembershipLifeSpan = 8593891943371112615L,
+                SizeForDisplay = -3774093290138442712L,
+                SizeRangeForDisplay = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.Unknown,
+                SizeForSearch = 7931927642168968409L,
+                SizeRangeForSearch = gagve::UserListSizeRangeEnum.Types.UserListSizeRange.OneHundredThousandToThreeHundredThousand,
+                Type = gagve::UserListTypeEnum.Types.UserListType.CrmBased,
+                ClosingReason = gagve::UserListClosingReasonEnum.Types.UserListClosingReason.Unused,
+                AccessReason = gagve::AccessReasonEnum.Types.AccessReason.Affiliated,
+                AccountUserListStatus = gagve::UserListAccessStatusEnum.Types.UserListAccessStatus.Disabled,
+                EligibleForSearch = false,
+                EligibleForDisplay = true,
+                CrmBasedUserList = new gagvc::CrmBasedUserListInfo(),
+                SimilarUserList = new gagvc::SimilarUserListInfo(),
+                RuleBasedUserList = new gagvc::RuleBasedUserListInfo(),
+                LogicalUserList = new gagvc::LogicalUserListInfo(),
+                BasicUserList = new gagvc::BasicUserListInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetUserListAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::UserList>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<UserListOperation> operations = new List<UserListOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateUserListsResponse response = client.MutateUserLists(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::UserList responseCallSettings = await client.GetUserListAsync(request.ResourceNameAsUserListName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::UserList responseCancellationToken = await client.GetUserListAsync(request.ResourceNameAsUserListName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateUserListsAsync()
+        public void MutateUserListsRequestObject()
         {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
-            MutateUserListsRequest expectedRequest = new MutateUserListsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateUserListsResponse expectedResponse = new MutateUserListsResponse();
-            mockGrpcClient.Setup(x => x.MutateUserListsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateUserListsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<UserListOperation> operations = new List<UserListOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateUserListsResponse response = await client.MutateUserListsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateUserLists2()
-        {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
-            MutateUserListsRequest expectedRequest = new MutateUserListsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateUserListsResponse expectedResponse = new MutateUserListsResponse();
-            mockGrpcClient.Setup(x => x.MutateUserLists(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<UserListOperation> operations = new List<UserListOperation>();
-            MutateUserListsResponse response = client.MutateUserLists(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateUserListsAsync2()
-        {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
-            MutateUserListsRequest expectedRequest = new MutateUserListsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateUserListsResponse expectedResponse = new MutateUserListsResponse();
-            mockGrpcClient.Setup(x => x.MutateUserListsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateUserListsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<UserListOperation> operations = new List<UserListOperation>();
-            MutateUserListsResponse response = await client.MutateUserListsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateUserLists3()
-        {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
             MutateUserListsRequest request = new MutateUserListsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new UserListOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateUserListsResponse expectedResponse = new MutateUserListsResponse();
-            mockGrpcClient.Setup(x => x.MutateUserLists(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateUserListsResponse expectedResponse = new MutateUserListsResponse
+            {
+                Results =
+                {
+                    new MutateUserListResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateUserLists(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
             MutateUserListsResponse response = client.MutateUserLists(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +313,90 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateUserListsAsync3()
+        public async stt::Task MutateUserListsRequestObjectAsync()
         {
-            Mock<UserListService.UserListServiceClient> mockGrpcClient = new Mock<UserListService.UserListServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
             MutateUserListsRequest request = new MutateUserListsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new UserListOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateUserListsResponse expectedResponse = new MutateUserListsResponse();
-            mockGrpcClient.Setup(x => x.MutateUserListsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateUserListsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateUserListsResponse expectedResponse = new MutateUserListsResponse
+            {
+                Results =
+                {
+                    new MutateUserListResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateUserListsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateUserListsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
-            MutateUserListsResponse response = await client.MutateUserListsAsync(request);
+            MutateUserListsResponse responseCallSettings = await client.MutateUserListsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateUserListsResponse responseCancellationToken = await client.MutateUserListsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateUserLists()
+        {
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
+            MutateUserListsRequest request = new MutateUserListsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new UserListOperation(),
+                },
+            };
+            MutateUserListsResponse expectedResponse = new MutateUserListsResponse
+            {
+                Results =
+                {
+                    new MutateUserListResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateUserLists(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
+            MutateUserListsResponse response = client.MutateUserLists(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateUserListsAsync()
+        {
+            moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
+            MutateUserListsRequest request = new MutateUserListsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new UserListOperation(),
+                },
+            };
+            MutateUserListsResponse expectedResponse = new MutateUserListsResponse
+            {
+                Results =
+                {
+                    new MutateUserListResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateUserListsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateUserListsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UserListServiceClient client = new UserListServiceClientImpl(mockGrpcClient.Object, null);
+            MutateUserListsResponse responseCallSettings = await client.MutateUserListsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateUserListsResponse responseCancellationToken = await client.MutateUserListsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

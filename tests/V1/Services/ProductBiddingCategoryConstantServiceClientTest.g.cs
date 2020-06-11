@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,181 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedProductBiddingCategoryConstantServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedProductBiddingCategoryConstantServiceClientTest
     {
+        [Test]
+        public void GetProductBiddingCategoryConstantRequestObject()
+        {
+            moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
+            GetProductBiddingCategoryConstantRequest request = new GetProductBiddingCategoryConstantRequest
+            {
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+            };
+            gagvr::ProductBiddingCategoryConstant expectedResponse = new gagvr::ProductBiddingCategoryConstant
+            {
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CountryCode = "country_code8debec55",
+                ProductBiddingCategoryConstantParentAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Level = gagve::ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unknown,
+                Status = gagve::ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Active,
+                LanguageCode = "language_code2f6c7160",
+                LocalizedName = "localized_namefc402dfa",
+            };
+            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ProductBiddingCategoryConstantServiceClient client = new ProductBiddingCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ProductBiddingCategoryConstant response = client.GetProductBiddingCategoryConstant(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetProductBiddingCategoryConstantRequestObjectAsync()
+        {
+            moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
+            GetProductBiddingCategoryConstantRequest request = new GetProductBiddingCategoryConstantRequest
+            {
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+            };
+            gagvr::ProductBiddingCategoryConstant expectedResponse = new gagvr::ProductBiddingCategoryConstant
+            {
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CountryCode = "country_code8debec55",
+                ProductBiddingCategoryConstantParentAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Level = gagve::ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unknown,
+                Status = gagve::ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Active,
+                LanguageCode = "language_code2f6c7160",
+                LocalizedName = "localized_namefc402dfa",
+            };
+            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ProductBiddingCategoryConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ProductBiddingCategoryConstantServiceClient client = new ProductBiddingCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ProductBiddingCategoryConstant responseCallSettings = await client.GetProductBiddingCategoryConstantAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ProductBiddingCategoryConstant responseCancellationToken = await client.GetProductBiddingCategoryConstantAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetProductBiddingCategoryConstant()
         {
-            Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(MockBehavior.Strict);
-            GetProductBiddingCategoryConstantRequest expectedRequest = new GetProductBiddingCategoryConstantRequest
-            {
-                ResourceName = new ProductBiddingCategoryConstantName("[PRODUCT_BIDDING_CATEGORY_CONSTANT]").ToString(),
-            };
-            ProductBiddingCategoryConstant expectedResponse = new ProductBiddingCategoryConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstant(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ProductBiddingCategoryConstantServiceClient client = new ProductBiddingCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ProductBiddingCategoryConstantName("[PRODUCT_BIDDING_CATEGORY_CONSTANT]").ToString();
-            ProductBiddingCategoryConstant response = client.GetProductBiddingCategoryConstant(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetProductBiddingCategoryConstantAsync()
-        {
-            Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(MockBehavior.Strict);
-            GetProductBiddingCategoryConstantRequest expectedRequest = new GetProductBiddingCategoryConstantRequest
-            {
-                ResourceName = new ProductBiddingCategoryConstantName("[PRODUCT_BIDDING_CATEGORY_CONSTANT]").ToString(),
-            };
-            ProductBiddingCategoryConstant expectedResponse = new ProductBiddingCategoryConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstantAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ProductBiddingCategoryConstant>(Task.FromResult(expectedResponse), null, null, null, null));
-            ProductBiddingCategoryConstantServiceClient client = new ProductBiddingCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ProductBiddingCategoryConstantName("[PRODUCT_BIDDING_CATEGORY_CONSTANT]").ToString();
-            ProductBiddingCategoryConstant response = await client.GetProductBiddingCategoryConstantAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetProductBiddingCategoryConstant2()
-        {
-            Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
             GetProductBiddingCategoryConstantRequest request = new GetProductBiddingCategoryConstantRequest
             {
-                ResourceName = new ProductBiddingCategoryConstantName("[PRODUCT_BIDDING_CATEGORY_CONSTANT]").ToString(),
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
             };
-            ProductBiddingCategoryConstant expectedResponse = new ProductBiddingCategoryConstant
+            gagvr::ProductBiddingCategoryConstant expectedResponse = new gagvr::ProductBiddingCategoryConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CountryCode = "country_code8debec55",
+                ProductBiddingCategoryConstantParentAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Level = gagve::ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unknown,
+                Status = gagve::ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Active,
+                LanguageCode = "language_code2f6c7160",
+                LocalizedName = "localized_namefc402dfa",
             };
-            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstant(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ProductBiddingCategoryConstantServiceClient client = new ProductBiddingCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
-            ProductBiddingCategoryConstant response = client.GetProductBiddingCategoryConstant(request);
+            gagvr::ProductBiddingCategoryConstant response = client.GetProductBiddingCategoryConstant(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetProductBiddingCategoryConstantAsync2()
+        public async stt::Task GetProductBiddingCategoryConstantAsync()
         {
-            Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
             GetProductBiddingCategoryConstantRequest request = new GetProductBiddingCategoryConstantRequest
             {
-                ResourceName = new ProductBiddingCategoryConstantName("[PRODUCT_BIDDING_CATEGORY_CONSTANT]").ToString(),
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
             };
-            ProductBiddingCategoryConstant expectedResponse = new ProductBiddingCategoryConstant
+            gagvr::ProductBiddingCategoryConstant expectedResponse = new gagvr::ProductBiddingCategoryConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CountryCode = "country_code8debec55",
+                ProductBiddingCategoryConstantParentAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Level = gagve::ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unknown,
+                Status = gagve::ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Active,
+                LanguageCode = "language_code2f6c7160",
+                LocalizedName = "localized_namefc402dfa",
             };
-            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstantAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ProductBiddingCategoryConstant>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ProductBiddingCategoryConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ProductBiddingCategoryConstantServiceClient client = new ProductBiddingCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
-            ProductBiddingCategoryConstant response = await client.GetProductBiddingCategoryConstantAsync(request);
+            gagvr::ProductBiddingCategoryConstant responseCallSettings = await client.GetProductBiddingCategoryConstantAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ProductBiddingCategoryConstant responseCancellationToken = await client.GetProductBiddingCategoryConstantAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetProductBiddingCategoryConstantResourceNames()
+        {
+            moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
+            GetProductBiddingCategoryConstantRequest request = new GetProductBiddingCategoryConstantRequest
+            {
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+            };
+            gagvr::ProductBiddingCategoryConstant expectedResponse = new gagvr::ProductBiddingCategoryConstant
+            {
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CountryCode = "country_code8debec55",
+                ProductBiddingCategoryConstantParentAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Level = gagve::ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unknown,
+                Status = gagve::ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Active,
+                LanguageCode = "language_code2f6c7160",
+                LocalizedName = "localized_namefc402dfa",
+            };
+            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ProductBiddingCategoryConstantServiceClient client = new ProductBiddingCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ProductBiddingCategoryConstant response = client.GetProductBiddingCategoryConstant(request.ResourceNameAsProductBiddingCategoryConstantName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetProductBiddingCategoryConstantResourceNamesAsync()
+        {
+            moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
+            GetProductBiddingCategoryConstantRequest request = new GetProductBiddingCategoryConstantRequest
+            {
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+            };
+            gagvr::ProductBiddingCategoryConstant expectedResponse = new gagvr::ProductBiddingCategoryConstant
+            {
+                ResourceNameAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Id = -6774108720365892680L,
+                CountryCode = "country_code8debec55",
+                ProductBiddingCategoryConstantParentAsProductBiddingCategoryConstantName = gagvr::ProductBiddingCategoryConstantName.FromProductBiddingCategoryConstant("[PRODUCT_BIDDING_CATEGORY_CONSTANT]"),
+                Level = gagve::ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unknown,
+                Status = gagve::ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Active,
+                LanguageCode = "language_code2f6c7160",
+                LocalizedName = "localized_namefc402dfa",
+            };
+            mockGrpcClient.Setup(x => x.GetProductBiddingCategoryConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ProductBiddingCategoryConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ProductBiddingCategoryConstantServiceClient client = new ProductBiddingCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ProductBiddingCategoryConstant responseCallSettings = await client.GetProductBiddingCategoryConstantAsync(request.ResourceNameAsProductBiddingCategoryConstantName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ProductBiddingCategoryConstant responseCancellationToken = await client.GetProductBiddingCategoryConstantAsync(request.ResourceNameAsProductBiddingCategoryConstantName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

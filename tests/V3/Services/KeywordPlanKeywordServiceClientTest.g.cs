@@ -14,216 +14,195 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedKeywordPlanKeywordServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedKeywordPlanKeywordServiceClientTest
     {
+        [Test]
+        public void GetKeywordPlanKeywordRequestObject()
+        {
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
+            GetKeywordPlanKeywordRequest request = new GetKeywordPlanKeywordRequest
+            {
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
+            };
+            gagvr::KeywordPlanKeyword expectedResponse = new gagvr::KeywordPlanKeyword
+            {
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
+                KeywordPlanAdGroupAsKeywordPlanAdGroupName = gagvr::KeywordPlanAdGroupName.FromCustomerKeywordPlanAdGroup("[CUSTOMER]", "[KEYWORD_PLAN_AD_GROUP]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+                CpcBidMicros = 7321761304249472746L,
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordPlanKeyword(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::KeywordPlanKeyword response = client.GetKeywordPlanKeyword(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetKeywordPlanKeywordRequestObjectAsync()
+        {
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
+            GetKeywordPlanKeywordRequest request = new GetKeywordPlanKeywordRequest
+            {
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
+            };
+            gagvr::KeywordPlanKeyword expectedResponse = new gagvr::KeywordPlanKeyword
+            {
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
+                KeywordPlanAdGroupAsKeywordPlanAdGroupName = gagvr::KeywordPlanAdGroupName.FromCustomerKeywordPlanAdGroup("[CUSTOMER]", "[KEYWORD_PLAN_AD_GROUP]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+                CpcBidMicros = 7321761304249472746L,
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordPlanKeywordAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::KeywordPlanKeyword>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::KeywordPlanKeyword responseCallSettings = await client.GetKeywordPlanKeywordAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::KeywordPlanKeyword responseCancellationToken = await client.GetKeywordPlanKeywordAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetKeywordPlanKeyword()
         {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
-            GetKeywordPlanKeywordRequest expectedRequest = new GetKeywordPlanKeywordRequest
-            {
-                ResourceName = new KeywordPlanKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]").ToString(),
-            };
-            KeywordPlanKeyword expectedResponse = new KeywordPlanKeyword
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetKeywordPlanKeyword(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new KeywordPlanKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]").ToString();
-            KeywordPlanKeyword response = client.GetKeywordPlanKeyword(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetKeywordPlanKeywordAsync()
-        {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
-            GetKeywordPlanKeywordRequest expectedRequest = new GetKeywordPlanKeywordRequest
-            {
-                ResourceName = new KeywordPlanKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]").ToString(),
-            };
-            KeywordPlanKeyword expectedResponse = new KeywordPlanKeyword
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetKeywordPlanKeywordAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<KeywordPlanKeyword>(Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new KeywordPlanKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]").ToString();
-            KeywordPlanKeyword response = await client.GetKeywordPlanKeywordAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetKeywordPlanKeyword2()
-        {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
             GetKeywordPlanKeywordRequest request = new GetKeywordPlanKeywordRequest
             {
-                ResourceName = new KeywordPlanKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]").ToString(),
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
             };
-            KeywordPlanKeyword expectedResponse = new KeywordPlanKeyword
+            gagvr::KeywordPlanKeyword expectedResponse = new gagvr::KeywordPlanKeyword
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
+                KeywordPlanAdGroupAsKeywordPlanAdGroupName = gagvr::KeywordPlanAdGroupName.FromCustomerKeywordPlanAdGroup("[CUSTOMER]", "[KEYWORD_PLAN_AD_GROUP]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+                CpcBidMicros = 7321761304249472746L,
             };
-            mockGrpcClient.Setup(x => x.GetKeywordPlanKeyword(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetKeywordPlanKeyword(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            KeywordPlanKeyword response = client.GetKeywordPlanKeyword(request);
+            gagvr::KeywordPlanKeyword response = client.GetKeywordPlanKeyword(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetKeywordPlanKeywordAsync2()
+        public async stt::Task GetKeywordPlanKeywordAsync()
         {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
             GetKeywordPlanKeywordRequest request = new GetKeywordPlanKeywordRequest
             {
-                ResourceName = new KeywordPlanKeywordName("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]").ToString(),
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
             };
-            KeywordPlanKeyword expectedResponse = new KeywordPlanKeyword
+            gagvr::KeywordPlanKeyword expectedResponse = new gagvr::KeywordPlanKeyword
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
+                KeywordPlanAdGroupAsKeywordPlanAdGroupName = gagvr::KeywordPlanAdGroupName.FromCustomerKeywordPlanAdGroup("[CUSTOMER]", "[KEYWORD_PLAN_AD_GROUP]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+                CpcBidMicros = 7321761304249472746L,
             };
-            mockGrpcClient.Setup(x => x.GetKeywordPlanKeywordAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<KeywordPlanKeyword>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetKeywordPlanKeywordAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::KeywordPlanKeyword>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            KeywordPlanKeyword response = await client.GetKeywordPlanKeywordAsync(request);
+            gagvr::KeywordPlanKeyword responseCallSettings = await client.GetKeywordPlanKeywordAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::KeywordPlanKeyword responseCancellationToken = await client.GetKeywordPlanKeywordAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetKeywordPlanKeywordResourceNames()
+        {
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
+            GetKeywordPlanKeywordRequest request = new GetKeywordPlanKeywordRequest
+            {
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
+            };
+            gagvr::KeywordPlanKeyword expectedResponse = new gagvr::KeywordPlanKeyword
+            {
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
+                KeywordPlanAdGroupAsKeywordPlanAdGroupName = gagvr::KeywordPlanAdGroupName.FromCustomerKeywordPlanAdGroup("[CUSTOMER]", "[KEYWORD_PLAN_AD_GROUP]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+                CpcBidMicros = 7321761304249472746L,
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordPlanKeyword(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::KeywordPlanKeyword response = client.GetKeywordPlanKeyword(request.ResourceNameAsKeywordPlanKeywordName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateKeywordPlanKeywords()
+        public async stt::Task GetKeywordPlanKeywordResourceNamesAsync()
         {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
-            MutateKeywordPlanKeywordsRequest expectedRequest = new MutateKeywordPlanKeywordsRequest
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
+            GetKeywordPlanKeywordRequest request = new GetKeywordPlanKeywordRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
             };
-            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywords(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::KeywordPlanKeyword expectedResponse = new gagvr::KeywordPlanKeyword
+            {
+                ResourceNameAsKeywordPlanKeywordName = gagvr::KeywordPlanKeywordName.FromCustomerKeywordPlanKeyword("[CUSTOMER]", "[KEYWORD_PLAN_KEYWORD]"),
+                KeywordPlanAdGroupAsKeywordPlanAdGroupName = gagvr::KeywordPlanAdGroupName.FromCustomerKeywordPlanAdGroup("[CUSTOMER]", "[KEYWORD_PLAN_AD_GROUP]"),
+                Id = -6774108720365892680L,
+                Text = "textec51b21c",
+                MatchType = gagve::KeywordMatchTypeEnum.Types.KeywordMatchType.Unspecified,
+                CpcBidMicros = 7321761304249472746L,
+            };
+            mockGrpcClient.Setup(x => x.GetKeywordPlanKeywordAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::KeywordPlanKeyword>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<KeywordPlanKeywordOperation> operations = new List<KeywordPlanKeywordOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateKeywordPlanKeywordsResponse response = client.MutateKeywordPlanKeywords(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::KeywordPlanKeyword responseCallSettings = await client.GetKeywordPlanKeywordAsync(request.ResourceNameAsKeywordPlanKeywordName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::KeywordPlanKeyword responseCancellationToken = await client.GetKeywordPlanKeywordAsync(request.ResourceNameAsKeywordPlanKeywordName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateKeywordPlanKeywordsAsync()
+        public void MutateKeywordPlanKeywordsRequestObject()
         {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
-            MutateKeywordPlanKeywordsRequest expectedRequest = new MutateKeywordPlanKeywordsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywordsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateKeywordPlanKeywordsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<KeywordPlanKeywordOperation> operations = new List<KeywordPlanKeywordOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateKeywordPlanKeywordsResponse response = await client.MutateKeywordPlanKeywordsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateKeywordPlanKeywords2()
-        {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
-            MutateKeywordPlanKeywordsRequest expectedRequest = new MutateKeywordPlanKeywordsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywords(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<KeywordPlanKeywordOperation> operations = new List<KeywordPlanKeywordOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateKeywordPlanKeywordsResponse response = client.MutateKeywordPlanKeywords(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateKeywordPlanKeywordsAsync2()
-        {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
-            MutateKeywordPlanKeywordsRequest expectedRequest = new MutateKeywordPlanKeywordsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywordsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateKeywordPlanKeywordsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<KeywordPlanKeywordOperation> operations = new List<KeywordPlanKeywordOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateKeywordPlanKeywordsResponse response = await client.MutateKeywordPlanKeywordsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateKeywordPlanKeywords3()
-        {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
             MutateKeywordPlanKeywordsRequest request = new MutateKeywordPlanKeywordsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new KeywordPlanKeywordOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywords(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse
+            {
+                Results =
+                {
+                    new MutateKeywordPlanKeywordResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywords(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
             MutateKeywordPlanKeywordsResponse response = client.MutateKeywordPlanKeywords(request);
             Assert.AreEqual(expectedResponse, response);
@@ -231,22 +210,90 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task MutateKeywordPlanKeywordsAsync3()
+        public async stt::Task MutateKeywordPlanKeywordsRequestObjectAsync()
         {
-            Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
             MutateKeywordPlanKeywordsRequest request = new MutateKeywordPlanKeywordsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new KeywordPlanKeywordOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse();
-            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywordsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateKeywordPlanKeywordsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse
+            {
+                Results =
+                {
+                    new MutateKeywordPlanKeywordResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywordsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateKeywordPlanKeywordsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
-            MutateKeywordPlanKeywordsResponse response = await client.MutateKeywordPlanKeywordsAsync(request);
+            MutateKeywordPlanKeywordsResponse responseCallSettings = await client.MutateKeywordPlanKeywordsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateKeywordPlanKeywordsResponse responseCancellationToken = await client.MutateKeywordPlanKeywordsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateKeywordPlanKeywords()
+        {
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
+            MutateKeywordPlanKeywordsRequest request = new MutateKeywordPlanKeywordsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new KeywordPlanKeywordOperation(),
+                },
+            };
+            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse
+            {
+                Results =
+                {
+                    new MutateKeywordPlanKeywordResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywords(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            MutateKeywordPlanKeywordsResponse response = client.MutateKeywordPlanKeywords(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateKeywordPlanKeywordsAsync()
+        {
+            moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanKeywordService.KeywordPlanKeywordServiceClient>(moq::MockBehavior.Strict);
+            MutateKeywordPlanKeywordsRequest request = new MutateKeywordPlanKeywordsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new KeywordPlanKeywordOperation(),
+                },
+            };
+            MutateKeywordPlanKeywordsResponse expectedResponse = new MutateKeywordPlanKeywordsResponse
+            {
+                Results =
+                {
+                    new MutateKeywordPlanKeywordResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateKeywordPlanKeywordsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateKeywordPlanKeywordsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordPlanKeywordServiceClient client = new KeywordPlanKeywordServiceClientImpl(mockGrpcClient.Object, null);
+            MutateKeywordPlanKeywordsResponse responseCallSettings = await client.MutateKeywordPlanKeywordsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateKeywordPlanKeywordsResponse responseCancellationToken = await client.MutateKeywordPlanKeywordsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

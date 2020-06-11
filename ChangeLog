@@ -1,3 +1,33 @@
+3.0.0
+=====
+- Bumped gRPC dependency to 2.29.0. Since this is a breaking change as per the gRPC team, we
+  have made a corresponding bump in the major version of this library. See
+  https://github.com/grpc/proposal/blob/master/L57-csharp-new-major-version.md to learn more about
+  the gRPC changes.
+- The library dependencies were bumped as listed below:
+  - Google.Protobuf: 3.12.2.
+  - Grpc.Core and related assemblies: 2.29.0
+  - Google.Api.Gax.Grpc and related assemblies: 3.0.0
+  - Google.LongRunning: 2.0.0
+  - .NET: netstandard2.0;net472 for libraries, and netcoreapp3.0;net472 for executables.
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/192
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/163
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/120
+- Removed several method flattenings that involved validateOnly and partialFailure parameters. The
+  library provides method flattenings as convenience methods for the most common API use cases. Since
+  validateOnly and partialFailure parameters are optional for most of the API use cases (and default
+  to false), these overloaded methods provide limited value to developers and tend to confuse them.
+  We recommend using the method that uses the Request object as parameter as a replacement. You can
+  compare Remarketing\UploadOfflineConversion.cs as an example on how this affects the method usage.
+  The other updated code examples are:
+  - ErrorHandling\HandleRateExceededError.cs
+  - ErrorHandling\HandlePartialFailure.cs
+  - Remarketing\UploadOfflineConversion.cs
+  - Remarketing\UploadConversionAdjustment.cs
+  - Remarketing\UploadCallConversion.cs
+  - Remarketing\AddCustomerMatchUserList.cs
+  - CampaignManagement\ValidateTextAd.cs
+
 2.9.0
 =====
 - Changed the buildstatus image to be .svg format. Updated the path in the README.md file.

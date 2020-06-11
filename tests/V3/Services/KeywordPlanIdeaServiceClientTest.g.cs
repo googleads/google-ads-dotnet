@@ -14,88 +14,45 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Enums;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedKeywordPlanIdeaServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedKeywordPlanIdeaServiceClientTest
     {
         [Test]
-        public void GenerateKeywordIdeas()
+        public void GenerateKeywordIdeasRequestObject()
         {
-            Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient> mockGrpcClient = new Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient>(MockBehavior.Strict);
-            GenerateKeywordIdeasRequest expectedRequest = new GenerateKeywordIdeasRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Language = null,
-                GeoTargetConstants = { },
-                KeywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified,
-            };
-            GenerateKeywordIdeaResponse expectedResponse = new GenerateKeywordIdeaResponse();
-            mockGrpcClient.Setup(x => x.GenerateKeywordIdeas(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            string language = null;
-            IEnumerable<string> geoTargetConstants = new List<string>();
-            KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified;
-            GenerateKeywordIdeaResponse response = client.GenerateKeywordIdeas(customerId, language, geoTargetConstants, keywordPlanNetwork);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GenerateKeywordIdeasAsync()
-        {
-            Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient> mockGrpcClient = new Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient>(MockBehavior.Strict);
-            GenerateKeywordIdeasRequest expectedRequest = new GenerateKeywordIdeasRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Language = null,
-                GeoTargetConstants = { },
-                KeywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified,
-            };
-            GenerateKeywordIdeaResponse expectedResponse = new GenerateKeywordIdeaResponse();
-            mockGrpcClient.Setup(x => x.GenerateKeywordIdeasAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GenerateKeywordIdeaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            string language = null;
-            IEnumerable<string> geoTargetConstants = new List<string>();
-            KeywordPlanNetworkEnum.Types.KeywordPlanNetwork keywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified;
-            GenerateKeywordIdeaResponse response = await client.GenerateKeywordIdeasAsync(customerId, language, geoTargetConstants, keywordPlanNetwork);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GenerateKeywordIdeas2()
-        {
-            Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient> mockGrpcClient = new Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient>(moq::MockBehavior.Strict);
             GenerateKeywordIdeasRequest request = new GenerateKeywordIdeasRequest
             {
-                CustomerId = "customerId-1772061412",
-                Language = null,
-                GeoTargetConstants = { },
-                KeywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified,
+                CustomerId = "customer_id3b3724cb",
+                KeywordAndUrlSeed = new KeywordAndUrlSeed(),
+                KeywordSeed = new KeywordSeed(),
+                UrlSeed = new UrlSeed(),
+                Language = "language7dae1285",
+                GeoTargetConstants =
+                {
+                    "geo_target_constants2f692206",
+                },
+                KeywordPlanNetwork = gagve::KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified,
             };
-            GenerateKeywordIdeaResponse expectedResponse = new GenerateKeywordIdeaResponse();
-            mockGrpcClient.Setup(x => x.GenerateKeywordIdeas(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            GenerateKeywordIdeaResponse expectedResponse = new GenerateKeywordIdeaResponse
+            {
+                Results =
+                {
+                    new GenerateKeywordIdeaResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateKeywordIdeas(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
             GenerateKeywordIdeaResponse response = client.GenerateKeywordIdeas(request);
             Assert.AreEqual(expectedResponse, response);
@@ -103,24 +60,36 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task GenerateKeywordIdeasAsync2()
+        public async stt::Task GenerateKeywordIdeasRequestObjectAsync()
         {
-            Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient> mockGrpcClient = new Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient>(MockBehavior.Strict);
+            moq::Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanIdeaService.KeywordPlanIdeaServiceClient>(moq::MockBehavior.Strict);
             GenerateKeywordIdeasRequest request = new GenerateKeywordIdeasRequest
             {
-                CustomerId = "customerId-1772061412",
-                Language = null,
-                GeoTargetConstants = { },
-                KeywordPlanNetwork = KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified,
+                CustomerId = "customer_id3b3724cb",
+                KeywordAndUrlSeed = new KeywordAndUrlSeed(),
+                KeywordSeed = new KeywordSeed(),
+                UrlSeed = new UrlSeed(),
+                Language = "language7dae1285",
+                GeoTargetConstants =
+                {
+                    "geo_target_constants2f692206",
+                },
+                KeywordPlanNetwork = gagve::KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified,
             };
-            GenerateKeywordIdeaResponse expectedResponse = new GenerateKeywordIdeaResponse();
-            mockGrpcClient.Setup(x => x.GenerateKeywordIdeasAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GenerateKeywordIdeaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            GenerateKeywordIdeaResponse expectedResponse = new GenerateKeywordIdeaResponse
+            {
+                Results =
+                {
+                    new GenerateKeywordIdeaResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateKeywordIdeasAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateKeywordIdeaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
-            GenerateKeywordIdeaResponse response = await client.GenerateKeywordIdeasAsync(request);
-            Assert.AreEqual(expectedResponse, response);
+            GenerateKeywordIdeaResponse responseCallSettings = await client.GenerateKeywordIdeasAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateKeywordIdeaResponse responseCancellationToken = await client.GenerateKeywordIdeasAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
-
     }
 }

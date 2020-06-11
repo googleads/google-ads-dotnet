@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,214 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V2.Common;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCustomerNegativeCriterionServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCustomerNegativeCriterionServiceClientTest
     {
+        [Test]
+        public void GetCustomerNegativeCriterionRequestObject()
+        {
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerNegativeCriterionRequest request = new GetCustomerNegativeCriterionRequest
+            {
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
+            };
+            gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
+            {
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
+                Id = -6774108720365892680L,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                ContentLabel = new gagvc::ContentLabelInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterion(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomerNegativeCriterion response = client.GetCustomerNegativeCriterion(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCustomerNegativeCriterionRequestObjectAsync()
+        {
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerNegativeCriterionRequest request = new GetCustomerNegativeCriterionRequest
+            {
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
+            };
+            gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
+            {
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
+                Id = -6774108720365892680L,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                ContentLabel = new gagvc::ContentLabelInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerNegativeCriterion>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomerNegativeCriterion responseCallSettings = await client.GetCustomerNegativeCriterionAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomerNegativeCriterion responseCancellationToken = await client.GetCustomerNegativeCriterionAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCustomerNegativeCriterion()
         {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
-            GetCustomerNegativeCriterionRequest expectedRequest = new GetCustomerNegativeCriterionRequest
-            {
-                ResourceName = new CustomerNegativeCriteriaName("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERIA]").ToString(),
-            };
-            CustomerNegativeCriterion expectedResponse = new CustomerNegativeCriterion
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterion(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerNegativeCriteriaName("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERIA]").ToString();
-            CustomerNegativeCriterion response = client.GetCustomerNegativeCriterion(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCustomerNegativeCriterionAsync()
-        {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
-            GetCustomerNegativeCriterionRequest expectedRequest = new GetCustomerNegativeCriterionRequest
-            {
-                ResourceName = new CustomerNegativeCriteriaName("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERIA]").ToString(),
-            };
-            CustomerNegativeCriterion expectedResponse = new CustomerNegativeCriterion
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterionAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CustomerNegativeCriterion>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CustomerNegativeCriteriaName("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERIA]").ToString();
-            CustomerNegativeCriterion response = await client.GetCustomerNegativeCriterionAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCustomerNegativeCriterion2()
-        {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
             GetCustomerNegativeCriterionRequest request = new GetCustomerNegativeCriterionRequest
             {
-                ResourceName = new CustomerNegativeCriteriaName("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERIA]").ToString(),
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
             };
-            CustomerNegativeCriterion expectedResponse = new CustomerNegativeCriterion
+            gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
+                Id = -6774108720365892680L,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                ContentLabel = new gagvc::ContentLabelInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
             };
-            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterion(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterion(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            CustomerNegativeCriterion response = client.GetCustomerNegativeCriterion(request);
+            gagvr::CustomerNegativeCriterion response = client.GetCustomerNegativeCriterion(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCustomerNegativeCriterionAsync2()
+        public async stt::Task GetCustomerNegativeCriterionAsync()
         {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
             GetCustomerNegativeCriterionRequest request = new GetCustomerNegativeCriterionRequest
             {
-                ResourceName = new CustomerNegativeCriteriaName("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERIA]").ToString(),
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
             };
-            CustomerNegativeCriterion expectedResponse = new CustomerNegativeCriterion
+            gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
+                Id = -6774108720365892680L,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                ContentLabel = new gagvc::ContentLabelInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
             };
-            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterionAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CustomerNegativeCriterion>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerNegativeCriterion>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            CustomerNegativeCriterion response = await client.GetCustomerNegativeCriterionAsync(request);
+            gagvr::CustomerNegativeCriterion responseCallSettings = await client.GetCustomerNegativeCriterionAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomerNegativeCriterion responseCancellationToken = await client.GetCustomerNegativeCriterionAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCustomerNegativeCriterionResourceNames()
+        {
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerNegativeCriterionRequest request = new GetCustomerNegativeCriterionRequest
+            {
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
+            };
+            gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
+            {
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
+                Id = -6774108720365892680L,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                ContentLabel = new gagvc::ContentLabelInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterion(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CustomerNegativeCriterion response = client.GetCustomerNegativeCriterion(request.ResourceNameAsCustomerNegativeCriterionName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCustomerNegativeCriteria()
+        public async stt::Task GetCustomerNegativeCriterionResourceNamesAsync()
         {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
-            MutateCustomerNegativeCriteriaRequest expectedRequest = new MutateCustomerNegativeCriteriaRequest
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
+            GetCustomerNegativeCriterionRequest request = new GetCustomerNegativeCriterionRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
             };
-            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteria(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
+            {
+                ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCustomerNegativeCriterion("[CUSTOMER]", "[CUSTOMER_NEGATIVE_CRITERION]"),
+                Id = -6774108720365892680L,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.Location,
+                ContentLabel = new gagvc::ContentLabelInfo(),
+                MobileApplication = new gagvc::MobileApplicationInfo(),
+                MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
+                Placement = new gagvc::PlacementInfo(),
+                YoutubeVideo = new gagvc::YouTubeVideoInfo(),
+                YoutubeChannel = new gagvc::YouTubeChannelInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetCustomerNegativeCriterionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerNegativeCriterion>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerNegativeCriterionOperation> operations = new List<CustomerNegativeCriterionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCustomerNegativeCriteriaResponse response = client.MutateCustomerNegativeCriteria(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CustomerNegativeCriterion responseCallSettings = await client.GetCustomerNegativeCriterionAsync(request.ResourceNameAsCustomerNegativeCriterionName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CustomerNegativeCriterion responseCancellationToken = await client.GetCustomerNegativeCriterionAsync(request.ResourceNameAsCustomerNegativeCriterionName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCustomerNegativeCriteriaAsync()
+        public void MutateCustomerNegativeCriteriaRequestObject()
         {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
-            MutateCustomerNegativeCriteriaRequest expectedRequest = new MutateCustomerNegativeCriteriaRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteriaAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerNegativeCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerNegativeCriterionOperation> operations = new List<CustomerNegativeCriterionOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCustomerNegativeCriteriaResponse response = await client.MutateCustomerNegativeCriteriaAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCustomerNegativeCriteria2()
-        {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
-            MutateCustomerNegativeCriteriaRequest expectedRequest = new MutateCustomerNegativeCriteriaRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteria(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerNegativeCriterionOperation> operations = new List<CustomerNegativeCriterionOperation>();
-            MutateCustomerNegativeCriteriaResponse response = client.MutateCustomerNegativeCriteria(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCustomerNegativeCriteriaAsync2()
-        {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
-            MutateCustomerNegativeCriteriaRequest expectedRequest = new MutateCustomerNegativeCriteriaRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteriaAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerNegativeCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CustomerNegativeCriterionOperation> operations = new List<CustomerNegativeCriterionOperation>();
-            MutateCustomerNegativeCriteriaResponse response = await client.MutateCustomerNegativeCriteriaAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCustomerNegativeCriteria3()
-        {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
             MutateCustomerNegativeCriteriaRequest request = new MutateCustomerNegativeCriteriaRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerNegativeCriterionOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteria(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse
+            {
+                Results =
+                {
+                    new MutateCustomerNegativeCriteriaResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
             MutateCustomerNegativeCriteriaResponse response = client.MutateCustomerNegativeCriteria(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +229,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateCustomerNegativeCriteriaAsync3()
+        public async stt::Task MutateCustomerNegativeCriteriaRequestObjectAsync()
         {
-            Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(MockBehavior.Strict);
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
             MutateCustomerNegativeCriteriaRequest request = new MutateCustomerNegativeCriteriaRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerNegativeCriterionOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse();
-            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteriaAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCustomerNegativeCriteriaResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse
+            {
+                Results =
+                {
+                    new MutateCustomerNegativeCriteriaResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerNegativeCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCustomerNegativeCriteriaResponse response = await client.MutateCustomerNegativeCriteriaAsync(request);
+            MutateCustomerNegativeCriteriaResponse responseCallSettings = await client.MutateCustomerNegativeCriteriaAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomerNegativeCriteriaResponse responseCancellationToken = await client.MutateCustomerNegativeCriteriaAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCustomerNegativeCriteria()
+        {
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomerNegativeCriteriaRequest request = new MutateCustomerNegativeCriteriaRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerNegativeCriterionOperation(),
+                },
+            };
+            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse
+            {
+                Results =
+                {
+                    new MutateCustomerNegativeCriteriaResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomerNegativeCriteriaResponse response = client.MutateCustomerNegativeCriteria(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCustomerNegativeCriteriaAsync()
+        {
+            moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
+            MutateCustomerNegativeCriteriaRequest request = new MutateCustomerNegativeCriteriaRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CustomerNegativeCriterionOperation(),
+                },
+            };
+            MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse
+            {
+                Results =
+                {
+                    new MutateCustomerNegativeCriteriaResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerNegativeCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCustomerNegativeCriteriaResponse responseCallSettings = await client.MutateCustomerNegativeCriteriaAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCustomerNegativeCriteriaResponse responseCancellationToken = await client.MutateCustomerNegativeCriteriaAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

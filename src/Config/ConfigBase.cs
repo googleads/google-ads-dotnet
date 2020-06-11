@@ -22,11 +22,6 @@ using System.Configuration;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
-#if NET452
-using System.Web.Configuration;
-using System.Web.Hosting;
-#endif
-
 namespace Google.Ads.GoogleAds.Config
 {
     /// <summary>

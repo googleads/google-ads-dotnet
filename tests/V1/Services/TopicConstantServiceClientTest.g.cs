@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,156 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedTopicConstantServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedTopicConstantServiceClientTest
     {
+        [Test]
+        public void GetTopicConstantRequestObject()
+        {
+            moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
+            GetTopicConstantRequest request = new GetTopicConstantRequest
+            {
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+            };
+            gagvr::TopicConstant expectedResponse = new gagvr::TopicConstant
+            {
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Id = -6774108720365892680L,
+                TopicConstantParentAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Path = { "path0b1dfed6", },
+            };
+            mockGrpcClient.Setup(x => x.GetTopicConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            TopicConstantServiceClient client = new TopicConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::TopicConstant response = client.GetTopicConstant(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetTopicConstantRequestObjectAsync()
+        {
+            moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
+            GetTopicConstantRequest request = new GetTopicConstantRequest
+            {
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+            };
+            gagvr::TopicConstant expectedResponse = new gagvr::TopicConstant
+            {
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Id = -6774108720365892680L,
+                TopicConstantParentAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Path = { "path0b1dfed6", },
+            };
+            mockGrpcClient.Setup(x => x.GetTopicConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::TopicConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            TopicConstantServiceClient client = new TopicConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::TopicConstant responseCallSettings = await client.GetTopicConstantAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::TopicConstant responseCancellationToken = await client.GetTopicConstantAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetTopicConstant()
         {
-            Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new Mock<TopicConstantService.TopicConstantServiceClient>(MockBehavior.Strict);
-            GetTopicConstantRequest expectedRequest = new GetTopicConstantRequest
-            {
-                ResourceName = new TopicConstantName("[TOPIC_CONSTANT]").ToString(),
-            };
-            TopicConstant expectedResponse = new TopicConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetTopicConstant(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            TopicConstantServiceClient client = new TopicConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new TopicConstantName("[TOPIC_CONSTANT]").ToString();
-            TopicConstant response = client.GetTopicConstant(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetTopicConstantAsync()
-        {
-            Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new Mock<TopicConstantService.TopicConstantServiceClient>(MockBehavior.Strict);
-            GetTopicConstantRequest expectedRequest = new GetTopicConstantRequest
-            {
-                ResourceName = new TopicConstantName("[TOPIC_CONSTANT]").ToString(),
-            };
-            TopicConstant expectedResponse = new TopicConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetTopicConstantAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<TopicConstant>(Task.FromResult(expectedResponse), null, null, null, null));
-            TopicConstantServiceClient client = new TopicConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new TopicConstantName("[TOPIC_CONSTANT]").ToString();
-            TopicConstant response = await client.GetTopicConstantAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetTopicConstant2()
-        {
-            Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new Mock<TopicConstantService.TopicConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
             GetTopicConstantRequest request = new GetTopicConstantRequest
             {
-                ResourceName = new TopicConstantName("[TOPIC_CONSTANT]").ToString(),
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
             };
-            TopicConstant expectedResponse = new TopicConstant
+            gagvr::TopicConstant expectedResponse = new gagvr::TopicConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Id = -6774108720365892680L,
+                TopicConstantParentAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Path = { "path0b1dfed6", },
             };
-            mockGrpcClient.Setup(x => x.GetTopicConstant(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetTopicConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             TopicConstantServiceClient client = new TopicConstantServiceClientImpl(mockGrpcClient.Object, null);
-            TopicConstant response = client.GetTopicConstant(request);
+            gagvr::TopicConstant response = client.GetTopicConstant(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetTopicConstantAsync2()
+        public async stt::Task GetTopicConstantAsync()
         {
-            Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new Mock<TopicConstantService.TopicConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
             GetTopicConstantRequest request = new GetTopicConstantRequest
             {
-                ResourceName = new TopicConstantName("[TOPIC_CONSTANT]").ToString(),
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
             };
-            TopicConstant expectedResponse = new TopicConstant
+            gagvr::TopicConstant expectedResponse = new gagvr::TopicConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Id = -6774108720365892680L,
+                TopicConstantParentAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Path = { "path0b1dfed6", },
             };
-            mockGrpcClient.Setup(x => x.GetTopicConstantAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<TopicConstant>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetTopicConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::TopicConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             TopicConstantServiceClient client = new TopicConstantServiceClientImpl(mockGrpcClient.Object, null);
-            TopicConstant response = await client.GetTopicConstantAsync(request);
+            gagvr::TopicConstant responseCallSettings = await client.GetTopicConstantAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::TopicConstant responseCancellationToken = await client.GetTopicConstantAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetTopicConstantResourceNames()
+        {
+            moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
+            GetTopicConstantRequest request = new GetTopicConstantRequest
+            {
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+            };
+            gagvr::TopicConstant expectedResponse = new gagvr::TopicConstant
+            {
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Id = -6774108720365892680L,
+                TopicConstantParentAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Path = { "path0b1dfed6", },
+            };
+            mockGrpcClient.Setup(x => x.GetTopicConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            TopicConstantServiceClient client = new TopicConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::TopicConstant response = client.GetTopicConstant(request.ResourceNameAsTopicConstantName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetTopicConstantResourceNamesAsync()
+        {
+            moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
+            GetTopicConstantRequest request = new GetTopicConstantRequest
+            {
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+            };
+            gagvr::TopicConstant expectedResponse = new gagvr::TopicConstant
+            {
+                ResourceNameAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Id = -6774108720365892680L,
+                TopicConstantParentAsTopicConstantName = gagvr::TopicConstantName.FromTopicConstant("[TOPIC_CONSTANT]"),
+                Path = { "path0b1dfed6", },
+            };
+            mockGrpcClient.Setup(x => x.GetTopicConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::TopicConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            TopicConstantServiceClient client = new TopicConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::TopicConstant responseCallSettings = await client.GetTopicConstantAsync(request.ResourceNameAsTopicConstantName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::TopicConstant responseCancellationToken = await client.GetTopicConstantAsync(request.ResourceNameAsTopicConstantName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }
