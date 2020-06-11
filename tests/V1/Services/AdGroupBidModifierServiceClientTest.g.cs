@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,232 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V1.Common;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdGroupBidModifierServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdGroupBidModifierServiceClientTest
     {
+        [Test]
+        public void GetAdGroupBidModifierRequestObject()
+        {
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupBidModifierRequest request = new GetAdGroupBidModifierRequest
+            {
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+            };
+            gagvr::AdGroupBidModifier expectedResponse = new gagvr::AdGroupBidModifier
+            {
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                HotelDateSelectionType = new gagvc::HotelDateSelectionTypeInfo(),
+                HotelAdvanceBookingWindow = new gagvc::HotelAdvanceBookingWindowInfo(),
+                HotelLengthOfStay = new gagvc::HotelLengthOfStayInfo(),
+                HotelCheckInDay = new gagvc::HotelCheckInDayInfo(),
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                BidModifierSource = gagve::BidModifierSourceEnum.Types.BidModifierSource.AdGroup,
+                Device = new gagvc::DeviceInfo(),
+                PreferredContent = new gagvc::PreferredContentInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupBidModifier(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupBidModifier response = client.GetAdGroupBidModifier(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdGroupBidModifierRequestObjectAsync()
+        {
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupBidModifierRequest request = new GetAdGroupBidModifierRequest
+            {
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+            };
+            gagvr::AdGroupBidModifier expectedResponse = new gagvr::AdGroupBidModifier
+            {
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                HotelDateSelectionType = new gagvc::HotelDateSelectionTypeInfo(),
+                HotelAdvanceBookingWindow = new gagvc::HotelAdvanceBookingWindowInfo(),
+                HotelLengthOfStay = new gagvc::HotelLengthOfStayInfo(),
+                HotelCheckInDay = new gagvc::HotelCheckInDayInfo(),
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                BidModifierSource = gagve::BidModifierSourceEnum.Types.BidModifierSource.AdGroup,
+                Device = new gagvc::DeviceInfo(),
+                PreferredContent = new gagvc::PreferredContentInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupBidModifierAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupBidModifier>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupBidModifier responseCallSettings = await client.GetAdGroupBidModifierAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupBidModifier responseCancellationToken = await client.GetAdGroupBidModifierAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAdGroupBidModifier()
         {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
-            GetAdGroupBidModifierRequest expectedRequest = new GetAdGroupBidModifierRequest
-            {
-                ResourceName = new AdGroupBidModifierName("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]").ToString(),
-            };
-            AdGroupBidModifier expectedResponse = new AdGroupBidModifier
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupBidModifier(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupBidModifierName("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]").ToString();
-            AdGroupBidModifier response = client.GetAdGroupBidModifier(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdGroupBidModifierAsync()
-        {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
-            GetAdGroupBidModifierRequest expectedRequest = new GetAdGroupBidModifierRequest
-            {
-                ResourceName = new AdGroupBidModifierName("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]").ToString(),
-            };
-            AdGroupBidModifier expectedResponse = new AdGroupBidModifier
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupBidModifierAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupBidModifier>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupBidModifierName("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]").ToString();
-            AdGroupBidModifier response = await client.GetAdGroupBidModifierAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAdGroupBidModifier2()
-        {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupBidModifierRequest request = new GetAdGroupBidModifierRequest
             {
-                ResourceName = new AdGroupBidModifierName("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]").ToString(),
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
             };
-            AdGroupBidModifier expectedResponse = new AdGroupBidModifier
+            gagvr::AdGroupBidModifier expectedResponse = new gagvr::AdGroupBidModifier
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                HotelDateSelectionType = new gagvc::HotelDateSelectionTypeInfo(),
+                HotelAdvanceBookingWindow = new gagvc::HotelAdvanceBookingWindowInfo(),
+                HotelLengthOfStay = new gagvc::HotelLengthOfStayInfo(),
+                HotelCheckInDay = new gagvc::HotelCheckInDayInfo(),
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                BidModifierSource = gagve::BidModifierSourceEnum.Types.BidModifierSource.AdGroup,
+                Device = new gagvc::DeviceInfo(),
+                PreferredContent = new gagvc::PreferredContentInfo(),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupBidModifier(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAdGroupBidModifier(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupBidModifier response = client.GetAdGroupBidModifier(request);
+            gagvr::AdGroupBidModifier response = client.GetAdGroupBidModifier(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdGroupBidModifierAsync2()
+        public async stt::Task GetAdGroupBidModifierAsync()
         {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupBidModifierRequest request = new GetAdGroupBidModifierRequest
             {
-                ResourceName = new AdGroupBidModifierName("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]").ToString(),
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
             };
-            AdGroupBidModifier expectedResponse = new AdGroupBidModifier
+            gagvr::AdGroupBidModifier expectedResponse = new gagvr::AdGroupBidModifier
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                HotelDateSelectionType = new gagvc::HotelDateSelectionTypeInfo(),
+                HotelAdvanceBookingWindow = new gagvc::HotelAdvanceBookingWindowInfo(),
+                HotelLengthOfStay = new gagvc::HotelLengthOfStayInfo(),
+                HotelCheckInDay = new gagvc::HotelCheckInDayInfo(),
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                BidModifierSource = gagve::BidModifierSourceEnum.Types.BidModifierSource.AdGroup,
+                Device = new gagvc::DeviceInfo(),
+                PreferredContent = new gagvc::PreferredContentInfo(),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupBidModifierAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupBidModifier>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdGroupBidModifierAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupBidModifier>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupBidModifier response = await client.GetAdGroupBidModifierAsync(request);
+            gagvr::AdGroupBidModifier responseCallSettings = await client.GetAdGroupBidModifierAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupBidModifier responseCancellationToken = await client.GetAdGroupBidModifierAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdGroupBidModifierResourceNames()
+        {
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupBidModifierRequest request = new GetAdGroupBidModifierRequest
+            {
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+            };
+            gagvr::AdGroupBidModifier expectedResponse = new gagvr::AdGroupBidModifier
+            {
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                HotelDateSelectionType = new gagvc::HotelDateSelectionTypeInfo(),
+                HotelAdvanceBookingWindow = new gagvc::HotelAdvanceBookingWindowInfo(),
+                HotelLengthOfStay = new gagvc::HotelLengthOfStayInfo(),
+                HotelCheckInDay = new gagvc::HotelCheckInDayInfo(),
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                BidModifierSource = gagve::BidModifierSourceEnum.Types.BidModifierSource.AdGroup,
+                Device = new gagvc::DeviceInfo(),
+                PreferredContent = new gagvc::PreferredContentInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupBidModifier(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupBidModifier response = client.GetAdGroupBidModifier(request.ResourceNameAsAdGroupBidModifierName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateAdGroupBidModifiers()
+        public async stt::Task GetAdGroupBidModifierResourceNamesAsync()
         {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
-            MutateAdGroupBidModifiersRequest expectedRequest = new MutateAdGroupBidModifiersRequest
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupBidModifierRequest request = new GetAdGroupBidModifierRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
             };
-            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiers(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::AdGroupBidModifier expectedResponse = new gagvr::AdGroupBidModifier
+            {
+                ResourceNameAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupBidModifier("[CUSTOMER]", "[AD_GROUP_BID_MODIFIER]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                CriterionId = 8584655242409302840L,
+                BidModifier = 1.6595195068951933E+17,
+                HotelDateSelectionType = new gagvc::HotelDateSelectionTypeInfo(),
+                HotelAdvanceBookingWindow = new gagvc::HotelAdvanceBookingWindowInfo(),
+                HotelLengthOfStay = new gagvc::HotelLengthOfStayInfo(),
+                HotelCheckInDay = new gagvc::HotelCheckInDayInfo(),
+                BaseAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                BidModifierSource = gagve::BidModifierSourceEnum.Types.BidModifierSource.AdGroup,
+                Device = new gagvc::DeviceInfo(),
+                PreferredContent = new gagvc::PreferredContentInfo(),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupBidModifierAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupBidModifier>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupBidModifierOperation> operations = new List<AdGroupBidModifierOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdGroupBidModifiersResponse response = client.MutateAdGroupBidModifiers(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::AdGroupBidModifier responseCallSettings = await client.GetAdGroupBidModifierAsync(request.ResourceNameAsAdGroupBidModifierName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupBidModifier responseCancellationToken = await client.GetAdGroupBidModifierAsync(request.ResourceNameAsAdGroupBidModifierName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateAdGroupBidModifiersAsync()
+        public void MutateAdGroupBidModifiersRequestObject()
         {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
-            MutateAdGroupBidModifiersRequest expectedRequest = new MutateAdGroupBidModifiersRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiersAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupBidModifiersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupBidModifierOperation> operations = new List<AdGroupBidModifierOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdGroupBidModifiersResponse response = await client.MutateAdGroupBidModifiersAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdGroupBidModifiers2()
-        {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
-            MutateAdGroupBidModifiersRequest expectedRequest = new MutateAdGroupBidModifiersRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiers(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupBidModifierOperation> operations = new List<AdGroupBidModifierOperation>();
-            MutateAdGroupBidModifiersResponse response = client.MutateAdGroupBidModifiers(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateAdGroupBidModifiersAsync2()
-        {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
-            MutateAdGroupBidModifiersRequest expectedRequest = new MutateAdGroupBidModifiersRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiersAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupBidModifiersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupBidModifierOperation> operations = new List<AdGroupBidModifierOperation>();
-            MutateAdGroupBidModifiersResponse response = await client.MutateAdGroupBidModifiersAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdGroupBidModifiers3()
-        {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
             MutateAdGroupBidModifiersRequest request = new MutateAdGroupBidModifiersRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupBidModifierOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiers(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupBidModifierResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiers(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
             MutateAdGroupBidModifiersResponse response = client.MutateAdGroupBidModifiers(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +247,90 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateAdGroupBidModifiersAsync3()
+        public async stt::Task MutateAdGroupBidModifiersRequestObjectAsync()
         {
-            Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
             MutateAdGroupBidModifiersRequest request = new MutateAdGroupBidModifiersRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupBidModifierOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiersAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupBidModifiersResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupBidModifierResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupBidModifiersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
-            MutateAdGroupBidModifiersResponse response = await client.MutateAdGroupBidModifiersAsync(request);
+            MutateAdGroupBidModifiersResponse responseCallSettings = await client.MutateAdGroupBidModifiersAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdGroupBidModifiersResponse responseCancellationToken = await client.MutateAdGroupBidModifiersAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateAdGroupBidModifiers()
+        {
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
+            MutateAdGroupBidModifiersRequest request = new MutateAdGroupBidModifiersRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupBidModifierOperation(),
+                },
+            };
+            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupBidModifierResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiers(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdGroupBidModifiersResponse response = client.MutateAdGroupBidModifiers(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateAdGroupBidModifiersAsync()
+        {
+            moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
+            MutateAdGroupBidModifiersRequest request = new MutateAdGroupBidModifiersRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupBidModifierOperation(),
+                },
+            };
+            MutateAdGroupBidModifiersResponse expectedResponse = new MutateAdGroupBidModifiersResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupBidModifierResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupBidModifiersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupBidModifiersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupBidModifierServiceClient client = new AdGroupBidModifierServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdGroupBidModifiersResponse responseCallSettings = await client.MutateAdGroupBidModifiersAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdGroupBidModifiersResponse responseCancellationToken = await client.MutateAdGroupBidModifiersAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

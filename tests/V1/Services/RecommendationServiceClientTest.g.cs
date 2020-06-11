@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,204 +14,284 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedRecommendationServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedRecommendationServiceClientTest
     {
+        [Test]
+        public void GetRecommendationRequestObject()
+        {
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
+            GetRecommendationRequest request = new GetRecommendationRequest
+            {
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
+            };
+            gagvr::Recommendation expectedResponse = new gagvr::Recommendation
+            {
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.EnhancedCpcOptIn,
+                Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
+                CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
+                CampaignBudgetAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
+                TextAdRecommendation = new gagvr::Recommendation.Types.TextAdRecommendation(),
+                TargetCpaOptInRecommendation = new gagvr::Recommendation.Types.TargetCpaOptInRecommendation(),
+                MaximizeConversionsOptInRecommendation = new gagvr::Recommendation.Types.MaximizeConversionsOptInRecommendation(),
+                EnhancedCpcOptInRecommendation = new gagvr::Recommendation.Types.EnhancedCpcOptInRecommendation(),
+                Dismissed = true,
+                SearchPartnersOptInRecommendation = new gagvr::Recommendation.Types.SearchPartnersOptInRecommendation(),
+                MaximizeClicksOptInRecommendation = new gagvr::Recommendation.Types.MaximizeClicksOptInRecommendation(),
+                OptimizeAdRotationRecommendation = new gagvr::Recommendation.Types.OptimizeAdRotationRecommendation(),
+                CalloutExtensionRecommendation = new gagvr::Recommendation.Types.CalloutExtensionRecommendation(),
+                SitelinkExtensionRecommendation = new gagvr::Recommendation.Types.SitelinkExtensionRecommendation(),
+                CallExtensionRecommendation = new gagvr::Recommendation.Types.CallExtensionRecommendation(),
+                KeywordMatchTypeRecommendation = new gagvr::Recommendation.Types.KeywordMatchTypeRecommendation(),
+                MoveUnusedBudgetRecommendation = new gagvr::Recommendation.Types.MoveUnusedBudgetRecommendation(),
+            };
+            mockGrpcClient.Setup(x => x.GetRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Recommendation response = client.GetRecommendation(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetRecommendationRequestObjectAsync()
+        {
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
+            GetRecommendationRequest request = new GetRecommendationRequest
+            {
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
+            };
+            gagvr::Recommendation expectedResponse = new gagvr::Recommendation
+            {
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.EnhancedCpcOptIn,
+                Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
+                CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
+                CampaignBudgetAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
+                TextAdRecommendation = new gagvr::Recommendation.Types.TextAdRecommendation(),
+                TargetCpaOptInRecommendation = new gagvr::Recommendation.Types.TargetCpaOptInRecommendation(),
+                MaximizeConversionsOptInRecommendation = new gagvr::Recommendation.Types.MaximizeConversionsOptInRecommendation(),
+                EnhancedCpcOptInRecommendation = new gagvr::Recommendation.Types.EnhancedCpcOptInRecommendation(),
+                Dismissed = true,
+                SearchPartnersOptInRecommendation = new gagvr::Recommendation.Types.SearchPartnersOptInRecommendation(),
+                MaximizeClicksOptInRecommendation = new gagvr::Recommendation.Types.MaximizeClicksOptInRecommendation(),
+                OptimizeAdRotationRecommendation = new gagvr::Recommendation.Types.OptimizeAdRotationRecommendation(),
+                CalloutExtensionRecommendation = new gagvr::Recommendation.Types.CalloutExtensionRecommendation(),
+                SitelinkExtensionRecommendation = new gagvr::Recommendation.Types.SitelinkExtensionRecommendation(),
+                CallExtensionRecommendation = new gagvr::Recommendation.Types.CallExtensionRecommendation(),
+                KeywordMatchTypeRecommendation = new gagvr::Recommendation.Types.KeywordMatchTypeRecommendation(),
+                MoveUnusedBudgetRecommendation = new gagvr::Recommendation.Types.MoveUnusedBudgetRecommendation(),
+            };
+            mockGrpcClient.Setup(x => x.GetRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Recommendation>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Recommendation responseCallSettings = await client.GetRecommendationAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Recommendation responseCancellationToken = await client.GetRecommendationAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetRecommendation()
         {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            GetRecommendationRequest expectedRequest = new GetRecommendationRequest
-            {
-                ResourceName = new RecommendationName("[CUSTOMER]", "[RECOMMENDATION]").ToString(),
-            };
-            Recommendation expectedResponse = new Recommendation
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetRecommendation(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new RecommendationName("[CUSTOMER]", "[RECOMMENDATION]").ToString();
-            Recommendation response = client.GetRecommendation(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetRecommendationAsync()
-        {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            GetRecommendationRequest expectedRequest = new GetRecommendationRequest
-            {
-                ResourceName = new RecommendationName("[CUSTOMER]", "[RECOMMENDATION]").ToString(),
-            };
-            Recommendation expectedResponse = new Recommendation
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetRecommendationAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Recommendation>(Task.FromResult(expectedResponse), null, null, null, null));
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new RecommendationName("[CUSTOMER]", "[RECOMMENDATION]").ToString();
-            Recommendation response = await client.GetRecommendationAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetRecommendation2()
-        {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
             GetRecommendationRequest request = new GetRecommendationRequest
             {
-                ResourceName = new RecommendationName("[CUSTOMER]", "[RECOMMENDATION]").ToString(),
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
             };
-            Recommendation expectedResponse = new Recommendation
+            gagvr::Recommendation expectedResponse = new gagvr::Recommendation
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.EnhancedCpcOptIn,
+                Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
+                CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
+                CampaignBudgetAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
+                TextAdRecommendation = new gagvr::Recommendation.Types.TextAdRecommendation(),
+                TargetCpaOptInRecommendation = new gagvr::Recommendation.Types.TargetCpaOptInRecommendation(),
+                MaximizeConversionsOptInRecommendation = new gagvr::Recommendation.Types.MaximizeConversionsOptInRecommendation(),
+                EnhancedCpcOptInRecommendation = new gagvr::Recommendation.Types.EnhancedCpcOptInRecommendation(),
+                Dismissed = true,
+                SearchPartnersOptInRecommendation = new gagvr::Recommendation.Types.SearchPartnersOptInRecommendation(),
+                MaximizeClicksOptInRecommendation = new gagvr::Recommendation.Types.MaximizeClicksOptInRecommendation(),
+                OptimizeAdRotationRecommendation = new gagvr::Recommendation.Types.OptimizeAdRotationRecommendation(),
+                CalloutExtensionRecommendation = new gagvr::Recommendation.Types.CalloutExtensionRecommendation(),
+                SitelinkExtensionRecommendation = new gagvr::Recommendation.Types.SitelinkExtensionRecommendation(),
+                CallExtensionRecommendation = new gagvr::Recommendation.Types.CallExtensionRecommendation(),
+                KeywordMatchTypeRecommendation = new gagvr::Recommendation.Types.KeywordMatchTypeRecommendation(),
+                MoveUnusedBudgetRecommendation = new gagvr::Recommendation.Types.MoveUnusedBudgetRecommendation(),
             };
-            mockGrpcClient.Setup(x => x.GetRecommendation(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            Recommendation response = client.GetRecommendation(request);
+            gagvr::Recommendation response = client.GetRecommendation(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetRecommendationAsync2()
+        public async stt::Task GetRecommendationAsync()
         {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
             GetRecommendationRequest request = new GetRecommendationRequest
             {
-                ResourceName = new RecommendationName("[CUSTOMER]", "[RECOMMENDATION]").ToString(),
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
             };
-            Recommendation expectedResponse = new Recommendation
+            gagvr::Recommendation expectedResponse = new gagvr::Recommendation
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.EnhancedCpcOptIn,
+                Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
+                CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
+                CampaignBudgetAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
+                TextAdRecommendation = new gagvr::Recommendation.Types.TextAdRecommendation(),
+                TargetCpaOptInRecommendation = new gagvr::Recommendation.Types.TargetCpaOptInRecommendation(),
+                MaximizeConversionsOptInRecommendation = new gagvr::Recommendation.Types.MaximizeConversionsOptInRecommendation(),
+                EnhancedCpcOptInRecommendation = new gagvr::Recommendation.Types.EnhancedCpcOptInRecommendation(),
+                Dismissed = true,
+                SearchPartnersOptInRecommendation = new gagvr::Recommendation.Types.SearchPartnersOptInRecommendation(),
+                MaximizeClicksOptInRecommendation = new gagvr::Recommendation.Types.MaximizeClicksOptInRecommendation(),
+                OptimizeAdRotationRecommendation = new gagvr::Recommendation.Types.OptimizeAdRotationRecommendation(),
+                CalloutExtensionRecommendation = new gagvr::Recommendation.Types.CalloutExtensionRecommendation(),
+                SitelinkExtensionRecommendation = new gagvr::Recommendation.Types.SitelinkExtensionRecommendation(),
+                CallExtensionRecommendation = new gagvr::Recommendation.Types.CallExtensionRecommendation(),
+                KeywordMatchTypeRecommendation = new gagvr::Recommendation.Types.KeywordMatchTypeRecommendation(),
+                MoveUnusedBudgetRecommendation = new gagvr::Recommendation.Types.MoveUnusedBudgetRecommendation(),
             };
-            mockGrpcClient.Setup(x => x.GetRecommendationAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Recommendation>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Recommendation>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            Recommendation response = await client.GetRecommendationAsync(request);
+            gagvr::Recommendation responseCallSettings = await client.GetRecommendationAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Recommendation responseCancellationToken = await client.GetRecommendationAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetRecommendationResourceNames()
+        {
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
+            GetRecommendationRequest request = new GetRecommendationRequest
+            {
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
+            };
+            gagvr::Recommendation expectedResponse = new gagvr::Recommendation
+            {
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.EnhancedCpcOptIn,
+                Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
+                CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
+                CampaignBudgetAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
+                TextAdRecommendation = new gagvr::Recommendation.Types.TextAdRecommendation(),
+                TargetCpaOptInRecommendation = new gagvr::Recommendation.Types.TargetCpaOptInRecommendation(),
+                MaximizeConversionsOptInRecommendation = new gagvr::Recommendation.Types.MaximizeConversionsOptInRecommendation(),
+                EnhancedCpcOptInRecommendation = new gagvr::Recommendation.Types.EnhancedCpcOptInRecommendation(),
+                Dismissed = true,
+                SearchPartnersOptInRecommendation = new gagvr::Recommendation.Types.SearchPartnersOptInRecommendation(),
+                MaximizeClicksOptInRecommendation = new gagvr::Recommendation.Types.MaximizeClicksOptInRecommendation(),
+                OptimizeAdRotationRecommendation = new gagvr::Recommendation.Types.OptimizeAdRotationRecommendation(),
+                CalloutExtensionRecommendation = new gagvr::Recommendation.Types.CalloutExtensionRecommendation(),
+                SitelinkExtensionRecommendation = new gagvr::Recommendation.Types.SitelinkExtensionRecommendation(),
+                CallExtensionRecommendation = new gagvr::Recommendation.Types.CallExtensionRecommendation(),
+                KeywordMatchTypeRecommendation = new gagvr::Recommendation.Types.KeywordMatchTypeRecommendation(),
+                MoveUnusedBudgetRecommendation = new gagvr::Recommendation.Types.MoveUnusedBudgetRecommendation(),
+            };
+            mockGrpcClient.Setup(x => x.GetRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Recommendation response = client.GetRecommendation(request.ResourceNameAsRecommendationName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void ApplyRecommendation()
+        public async stt::Task GetRecommendationResourceNamesAsync()
         {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            ApplyRecommendationRequest expectedRequest = new ApplyRecommendationRequest
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
+            GetRecommendationRequest request = new GetRecommendationRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
             };
-            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
-            mockGrpcClient.Setup(x => x.ApplyRecommendation(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::Recommendation expectedResponse = new gagvr::Recommendation
+            {
+                ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER]", "[RECOMMENDATION]"),
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.EnhancedCpcOptIn,
+                Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
+                CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
+                CampaignBudgetAsCampaignBudgetName = gagvr::CampaignBudgetName.FromCustomerCampaignBudget("[CUSTOMER]", "[CAMPAIGN_BUDGET]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
+                TextAdRecommendation = new gagvr::Recommendation.Types.TextAdRecommendation(),
+                TargetCpaOptInRecommendation = new gagvr::Recommendation.Types.TargetCpaOptInRecommendation(),
+                MaximizeConversionsOptInRecommendation = new gagvr::Recommendation.Types.MaximizeConversionsOptInRecommendation(),
+                EnhancedCpcOptInRecommendation = new gagvr::Recommendation.Types.EnhancedCpcOptInRecommendation(),
+                Dismissed = true,
+                SearchPartnersOptInRecommendation = new gagvr::Recommendation.Types.SearchPartnersOptInRecommendation(),
+                MaximizeClicksOptInRecommendation = new gagvr::Recommendation.Types.MaximizeClicksOptInRecommendation(),
+                OptimizeAdRotationRecommendation = new gagvr::Recommendation.Types.OptimizeAdRotationRecommendation(),
+                CalloutExtensionRecommendation = new gagvr::Recommendation.Types.CalloutExtensionRecommendation(),
+                SitelinkExtensionRecommendation = new gagvr::Recommendation.Types.SitelinkExtensionRecommendation(),
+                CallExtensionRecommendation = new gagvr::Recommendation.Types.CallExtensionRecommendation(),
+                KeywordMatchTypeRecommendation = new gagvr::Recommendation.Types.KeywordMatchTypeRecommendation(),
+                MoveUnusedBudgetRecommendation = new gagvr::Recommendation.Types.MoveUnusedBudgetRecommendation(),
+            };
+            mockGrpcClient.Setup(x => x.GetRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Recommendation>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ApplyRecommendationOperation> operations = new List<ApplyRecommendationOperation>();
-            bool partialFailure = true;
-            ApplyRecommendationResponse response = client.ApplyRecommendation(customerId, operations, partialFailure);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::Recommendation responseCallSettings = await client.GetRecommendationAsync(request.ResourceNameAsRecommendationName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Recommendation responseCancellationToken = await client.GetRecommendationAsync(request.ResourceNameAsRecommendationName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task ApplyRecommendationAsync()
+        public void ApplyRecommendationRequestObject()
         {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            ApplyRecommendationRequest expectedRequest = new ApplyRecommendationRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-            };
-            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
-            mockGrpcClient.Setup(x => x.ApplyRecommendationAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ApplyRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ApplyRecommendationOperation> operations = new List<ApplyRecommendationOperation>();
-            bool partialFailure = true;
-            ApplyRecommendationResponse response = await client.ApplyRecommendationAsync(customerId, operations, partialFailure);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void ApplyRecommendation2()
-        {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            ApplyRecommendationRequest expectedRequest = new ApplyRecommendationRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
-            mockGrpcClient.Setup(x => x.ApplyRecommendation(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ApplyRecommendationOperation> operations = new List<ApplyRecommendationOperation>();
-            ApplyRecommendationResponse response = client.ApplyRecommendation(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task ApplyRecommendationAsync2()
-        {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            ApplyRecommendationRequest expectedRequest = new ApplyRecommendationRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
-            mockGrpcClient.Setup(x => x.ApplyRecommendationAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ApplyRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ApplyRecommendationOperation> operations = new List<ApplyRecommendationOperation>();
-            ApplyRecommendationResponse response = await client.ApplyRecommendationAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void ApplyRecommendation3()
-        {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
             ApplyRecommendationRequest request = new ApplyRecommendationRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ApplyRecommendationOperation(),
+                },
+                PartialFailure = false,
             };
-            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
-            mockGrpcClient.Setup(x => x.ApplyRecommendation(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse
+            {
+                Results =
+                {
+                    new ApplyRecommendationResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.ApplyRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
             ApplyRecommendationResponse response = client.ApplyRecommendation(request);
             Assert.AreEqual(expectedResponse, response);
@@ -219,119 +299,113 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task ApplyRecommendationAsync3()
+        public async stt::Task ApplyRecommendationRequestObjectAsync()
         {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
             ApplyRecommendationRequest request = new ApplyRecommendationRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ApplyRecommendationOperation(),
+                },
+                PartialFailure = false,
             };
-            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse();
-            mockGrpcClient.Setup(x => x.ApplyRecommendationAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ApplyRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            ApplyRecommendationResponse response = await client.ApplyRecommendationAsync(request);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void DismissRecommendation()
-        {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            DismissRecommendationRequest expectedRequest = new DismissRecommendationRequest
+            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
+                Results =
+                {
+                    new ApplyRecommendationResult(),
+                },
+                PartialFailureError = new gr::Status(),
             };
-            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
-            mockGrpcClient.Setup(x => x.DismissRecommendation(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.ApplyRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ApplyRecommendationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<DismissRecommendationRequest.Types.DismissRecommendationOperation> operations = new List<DismissRecommendationRequest.Types.DismissRecommendationOperation>();
-            bool partialFailure = true;
-            DismissRecommendationResponse response = client.DismissRecommendation(customerId, operations, partialFailure);
-            Assert.AreEqual(expectedResponse, response);
+            ApplyRecommendationResponse responseCallSettings = await client.ApplyRecommendationAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ApplyRecommendationResponse responseCancellationToken = await client.ApplyRecommendationAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task DismissRecommendationAsync()
+        public void ApplyRecommendation()
         {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            DismissRecommendationRequest expectedRequest = new DismissRecommendationRequest
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
+            ApplyRecommendationRequest request = new ApplyRecommendationRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ApplyRecommendationOperation(),
+                },
             };
-            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
-            mockGrpcClient.Setup(x => x.DismissRecommendationAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DismissRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<DismissRecommendationRequest.Types.DismissRecommendationOperation> operations = new List<DismissRecommendationRequest.Types.DismissRecommendationOperation>();
-            bool partialFailure = true;
-            DismissRecommendationResponse response = await client.DismissRecommendationAsync(customerId, operations, partialFailure);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void DismissRecommendation2()
-        {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            DismissRecommendationRequest expectedRequest = new DismissRecommendationRequest
+            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                Results =
+                {
+                    new ApplyRecommendationResult(),
+                },
+                PartialFailureError = new gr::Status(),
             };
-            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
-            mockGrpcClient.Setup(x => x.DismissRecommendation(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.ApplyRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<DismissRecommendationRequest.Types.DismissRecommendationOperation> operations = new List<DismissRecommendationRequest.Types.DismissRecommendationOperation>();
-            DismissRecommendationResponse response = client.DismissRecommendation(customerId, operations);
+            ApplyRecommendationResponse response = client.ApplyRecommendation(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task DismissRecommendationAsync2()
+        public async stt::Task ApplyRecommendationAsync()
         {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
-            DismissRecommendationRequest expectedRequest = new DismissRecommendationRequest
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
+            ApplyRecommendationRequest request = new ApplyRecommendationRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ApplyRecommendationOperation(),
+                },
             };
-            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
-            mockGrpcClient.Setup(x => x.DismissRecommendationAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DismissRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            ApplyRecommendationResponse expectedResponse = new ApplyRecommendationResponse
+            {
+                Results =
+                {
+                    new ApplyRecommendationResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.ApplyRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ApplyRecommendationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<DismissRecommendationRequest.Types.DismissRecommendationOperation> operations = new List<DismissRecommendationRequest.Types.DismissRecommendationOperation>();
-            DismissRecommendationResponse response = await client.DismissRecommendationAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
+            ApplyRecommendationResponse responseCallSettings = await client.ApplyRecommendationAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ApplyRecommendationResponse responseCancellationToken = await client.ApplyRecommendationAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void DismissRecommendation3()
+        public void DismissRecommendationRequestObject()
         {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
             DismissRecommendationRequest request = new DismissRecommendationRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                PartialFailure = false,
+                Operations =
+                {
+                    new DismissRecommendationRequest.Types.DismissRecommendationOperation(),
+                },
             };
-            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
-            mockGrpcClient.Setup(x => x.DismissRecommendation(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse
+            {
+                Results =
+                {
+                    new DismissRecommendationResponse.Types.DismissRecommendationResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.DismissRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
             DismissRecommendationResponse response = client.DismissRecommendation(request);
             Assert.AreEqual(expectedResponse, response);
@@ -339,22 +413,89 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task DismissRecommendationAsync3()
+        public async stt::Task DismissRecommendationRequestObjectAsync()
         {
-            Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new Mock<RecommendationService.RecommendationServiceClient>(MockBehavior.Strict);
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
             DismissRecommendationRequest request = new DismissRecommendationRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                PartialFailure = false,
+                Operations =
+                {
+                    new DismissRecommendationRequest.Types.DismissRecommendationOperation(),
+                },
             };
-            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse();
-            mockGrpcClient.Setup(x => x.DismissRecommendationAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DismissRecommendationResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse
+            {
+                Results =
+                {
+                    new DismissRecommendationResponse.Types.DismissRecommendationResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.DismissRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<DismissRecommendationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
-            DismissRecommendationResponse response = await client.DismissRecommendationAsync(request);
+            DismissRecommendationResponse responseCallSettings = await client.DismissRecommendationAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            DismissRecommendationResponse responseCancellationToken = await client.DismissRecommendationAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void DismissRecommendation()
+        {
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
+            DismissRecommendationRequest request = new DismissRecommendationRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new DismissRecommendationRequest.Types.DismissRecommendationOperation(),
+                },
+            };
+            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse
+            {
+                Results =
+                {
+                    new DismissRecommendationResponse.Types.DismissRecommendationResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.DismissRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            DismissRecommendationResponse response = client.DismissRecommendation(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task DismissRecommendationAsync()
+        {
+            moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
+            DismissRecommendationRequest request = new DismissRecommendationRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new DismissRecommendationRequest.Types.DismissRecommendationOperation(),
+                },
+            };
+            DismissRecommendationResponse expectedResponse = new DismissRecommendationResponse
+            {
+                Results =
+                {
+                    new DismissRecommendationResponse.Types.DismissRecommendationResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.DismissRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<DismissRecommendationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            DismissRecommendationResponse responseCallSettings = await client.DismissRecommendationAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            DismissRecommendationResponse responseCancellationToken = await client.DismissRecommendationAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

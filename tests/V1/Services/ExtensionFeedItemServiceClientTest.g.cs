@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,204 +14,295 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V1.Common;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedExtensionFeedItemServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedExtensionFeedItemServiceClientTest
     {
+        [Test]
+        public void GetExtensionFeedItemRequestObject()
+        {
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
+            GetExtensionFeedItemRequest request = new GetExtensionFeedItemRequest
+            {
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+            };
+            gagvr::ExtensionFeedItem expectedResponse = new gagvr::ExtensionFeedItem
+            {
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                SitelinkFeedItem = new gagvc::SitelinkFeedItem(),
+                StructuredSnippetFeedItem = new gagvc::StructuredSnippetFeedItem(),
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AppFeedItem = new gagvc::AppFeedItem(),
+                CallFeedItem = new gagvc::CallFeedItem(),
+                CalloutFeedItem = new gagvc::CalloutFeedItem(),
+                TextMessageFeedItem = new gagvc::TextMessageFeedItem(),
+                PriceFeedItem = new gagvc::PriceFeedItem(),
+                PromotionFeedItem = new gagvc::PromotionFeedItem(),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                LocationFeedItem = new gagvc::LocationFeedItem(),
+                AffiliateLocationFeedItem = new gagvc::AffiliateLocationFeedItem(),
+                AdSchedules =
+                {
+                    new gagvc::AdScheduleInfo(),
+                },
+                Device = gagve::FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice.Mobile,
+                TargetedCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                TargetedAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                TargetedGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+            };
+            mockGrpcClient.Setup(x => x.GetExtensionFeedItem(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ExtensionFeedItem response = client.GetExtensionFeedItem(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetExtensionFeedItemRequestObjectAsync()
+        {
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
+            GetExtensionFeedItemRequest request = new GetExtensionFeedItemRequest
+            {
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+            };
+            gagvr::ExtensionFeedItem expectedResponse = new gagvr::ExtensionFeedItem
+            {
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                SitelinkFeedItem = new gagvc::SitelinkFeedItem(),
+                StructuredSnippetFeedItem = new gagvc::StructuredSnippetFeedItem(),
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AppFeedItem = new gagvc::AppFeedItem(),
+                CallFeedItem = new gagvc::CallFeedItem(),
+                CalloutFeedItem = new gagvc::CalloutFeedItem(),
+                TextMessageFeedItem = new gagvc::TextMessageFeedItem(),
+                PriceFeedItem = new gagvc::PriceFeedItem(),
+                PromotionFeedItem = new gagvc::PromotionFeedItem(),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                LocationFeedItem = new gagvc::LocationFeedItem(),
+                AffiliateLocationFeedItem = new gagvc::AffiliateLocationFeedItem(),
+                AdSchedules =
+                {
+                    new gagvc::AdScheduleInfo(),
+                },
+                Device = gagve::FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice.Mobile,
+                TargetedCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                TargetedAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                TargetedGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+            };
+            mockGrpcClient.Setup(x => x.GetExtensionFeedItemAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ExtensionFeedItem>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ExtensionFeedItem responseCallSettings = await client.GetExtensionFeedItemAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ExtensionFeedItem responseCancellationToken = await client.GetExtensionFeedItemAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetExtensionFeedItem()
         {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
-            GetExtensionFeedItemRequest expectedRequest = new GetExtensionFeedItemRequest
-            {
-                ResourceName = new ExtensionFeedItemName("[CUSTOMER]", "[EXTENSION_FEED_ITEM]").ToString(),
-            };
-            ExtensionFeedItem expectedResponse = new ExtensionFeedItem
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetExtensionFeedItem(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ExtensionFeedItemName("[CUSTOMER]", "[EXTENSION_FEED_ITEM]").ToString();
-            ExtensionFeedItem response = client.GetExtensionFeedItem(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetExtensionFeedItemAsync()
-        {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
-            GetExtensionFeedItemRequest expectedRequest = new GetExtensionFeedItemRequest
-            {
-                ResourceName = new ExtensionFeedItemName("[CUSTOMER]", "[EXTENSION_FEED_ITEM]").ToString(),
-            };
-            ExtensionFeedItem expectedResponse = new ExtensionFeedItem
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetExtensionFeedItemAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ExtensionFeedItem>(Task.FromResult(expectedResponse), null, null, null, null));
-            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ExtensionFeedItemName("[CUSTOMER]", "[EXTENSION_FEED_ITEM]").ToString();
-            ExtensionFeedItem response = await client.GetExtensionFeedItemAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetExtensionFeedItem2()
-        {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
             GetExtensionFeedItemRequest request = new GetExtensionFeedItemRequest
             {
-                ResourceName = new ExtensionFeedItemName("[CUSTOMER]", "[EXTENSION_FEED_ITEM]").ToString(),
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
             };
-            ExtensionFeedItem expectedResponse = new ExtensionFeedItem
+            gagvr::ExtensionFeedItem expectedResponse = new gagvr::ExtensionFeedItem
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                SitelinkFeedItem = new gagvc::SitelinkFeedItem(),
+                StructuredSnippetFeedItem = new gagvc::StructuredSnippetFeedItem(),
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AppFeedItem = new gagvc::AppFeedItem(),
+                CallFeedItem = new gagvc::CallFeedItem(),
+                CalloutFeedItem = new gagvc::CalloutFeedItem(),
+                TextMessageFeedItem = new gagvc::TextMessageFeedItem(),
+                PriceFeedItem = new gagvc::PriceFeedItem(),
+                PromotionFeedItem = new gagvc::PromotionFeedItem(),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                LocationFeedItem = new gagvc::LocationFeedItem(),
+                AffiliateLocationFeedItem = new gagvc::AffiliateLocationFeedItem(),
+                AdSchedules =
+                {
+                    new gagvc::AdScheduleInfo(),
+                },
+                Device = gagve::FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice.Mobile,
+                TargetedCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                TargetedAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                TargetedGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
             };
-            mockGrpcClient.Setup(x => x.GetExtensionFeedItem(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetExtensionFeedItem(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            ExtensionFeedItem response = client.GetExtensionFeedItem(request);
+            gagvr::ExtensionFeedItem response = client.GetExtensionFeedItem(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetExtensionFeedItemAsync2()
+        public async stt::Task GetExtensionFeedItemAsync()
         {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
             GetExtensionFeedItemRequest request = new GetExtensionFeedItemRequest
             {
-                ResourceName = new ExtensionFeedItemName("[CUSTOMER]", "[EXTENSION_FEED_ITEM]").ToString(),
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
             };
-            ExtensionFeedItem expectedResponse = new ExtensionFeedItem
+            gagvr::ExtensionFeedItem expectedResponse = new gagvr::ExtensionFeedItem
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                SitelinkFeedItem = new gagvc::SitelinkFeedItem(),
+                StructuredSnippetFeedItem = new gagvc::StructuredSnippetFeedItem(),
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AppFeedItem = new gagvc::AppFeedItem(),
+                CallFeedItem = new gagvc::CallFeedItem(),
+                CalloutFeedItem = new gagvc::CalloutFeedItem(),
+                TextMessageFeedItem = new gagvc::TextMessageFeedItem(),
+                PriceFeedItem = new gagvc::PriceFeedItem(),
+                PromotionFeedItem = new gagvc::PromotionFeedItem(),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                LocationFeedItem = new gagvc::LocationFeedItem(),
+                AffiliateLocationFeedItem = new gagvc::AffiliateLocationFeedItem(),
+                AdSchedules =
+                {
+                    new gagvc::AdScheduleInfo(),
+                },
+                Device = gagve::FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice.Mobile,
+                TargetedCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                TargetedAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                TargetedGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
             };
-            mockGrpcClient.Setup(x => x.GetExtensionFeedItemAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ExtensionFeedItem>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetExtensionFeedItemAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ExtensionFeedItem>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            ExtensionFeedItem response = await client.GetExtensionFeedItemAsync(request);
+            gagvr::ExtensionFeedItem responseCallSettings = await client.GetExtensionFeedItemAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ExtensionFeedItem responseCancellationToken = await client.GetExtensionFeedItemAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetExtensionFeedItemResourceNames()
+        {
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
+            GetExtensionFeedItemRequest request = new GetExtensionFeedItemRequest
+            {
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+            };
+            gagvr::ExtensionFeedItem expectedResponse = new gagvr::ExtensionFeedItem
+            {
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                SitelinkFeedItem = new gagvc::SitelinkFeedItem(),
+                StructuredSnippetFeedItem = new gagvc::StructuredSnippetFeedItem(),
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AppFeedItem = new gagvc::AppFeedItem(),
+                CallFeedItem = new gagvc::CallFeedItem(),
+                CalloutFeedItem = new gagvc::CalloutFeedItem(),
+                TextMessageFeedItem = new gagvc::TextMessageFeedItem(),
+                PriceFeedItem = new gagvc::PriceFeedItem(),
+                PromotionFeedItem = new gagvc::PromotionFeedItem(),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                LocationFeedItem = new gagvc::LocationFeedItem(),
+                AffiliateLocationFeedItem = new gagvc::AffiliateLocationFeedItem(),
+                AdSchedules =
+                {
+                    new gagvc::AdScheduleInfo(),
+                },
+                Device = gagve::FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice.Mobile,
+                TargetedCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                TargetedAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                TargetedGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+            };
+            mockGrpcClient.Setup(x => x.GetExtensionFeedItem(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ExtensionFeedItem response = client.GetExtensionFeedItem(request.ResourceNameAsExtensionFeedItemName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateExtensionFeedItems()
+        public async stt::Task GetExtensionFeedItemResourceNamesAsync()
         {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
-            MutateExtensionFeedItemsRequest expectedRequest = new MutateExtensionFeedItemsRequest
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
+            GetExtensionFeedItemRequest request = new GetExtensionFeedItemRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                ValidateOnly = false,
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
             };
-            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateExtensionFeedItems(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::ExtensionFeedItem expectedResponse = new gagvr::ExtensionFeedItem
+            {
+                ResourceNameAsExtensionFeedItemName = gagvr::ExtensionFeedItemName.FromCustomerExtensionFeedItem("[CUSTOMER]", "[EXTENSION_FEED_ITEM]"),
+                SitelinkFeedItem = new gagvc::SitelinkFeedItem(),
+                StructuredSnippetFeedItem = new gagvc::StructuredSnippetFeedItem(),
+                Status = gagve::FeedItemStatusEnum.Types.FeedItemStatus.Enabled,
+                StartDateTime = "start_date_timeea924cb1",
+                EndDateTime = "end_date_timea95363f3",
+                AppFeedItem = new gagvc::AppFeedItem(),
+                CallFeedItem = new gagvc::CallFeedItem(),
+                CalloutFeedItem = new gagvc::CalloutFeedItem(),
+                TextMessageFeedItem = new gagvc::TextMessageFeedItem(),
+                PriceFeedItem = new gagvc::PriceFeedItem(),
+                PromotionFeedItem = new gagvc::PromotionFeedItem(),
+                ExtensionType = gagve::ExtensionTypeEnum.Types.ExtensionType.Promotion,
+                LocationFeedItem = new gagvc::LocationFeedItem(),
+                AffiliateLocationFeedItem = new gagvc::AffiliateLocationFeedItem(),
+                AdSchedules =
+                {
+                    new gagvc::AdScheduleInfo(),
+                },
+                Device = gagve::FeedItemTargetDeviceEnum.Types.FeedItemTargetDevice.Mobile,
+                TargetedCampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                TargetedAdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                TargetedGeoTargetConstantAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+            };
+            mockGrpcClient.Setup(x => x.GetExtensionFeedItemAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ExtensionFeedItem>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ExtensionFeedItemOperation> operations = new List<ExtensionFeedItemOperation>();
-            bool validateOnly = false;
-            MutateExtensionFeedItemsResponse response = client.MutateExtensionFeedItems(customerId, operations, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::ExtensionFeedItem responseCallSettings = await client.GetExtensionFeedItemAsync(request.ResourceNameAsExtensionFeedItemName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ExtensionFeedItem responseCancellationToken = await client.GetExtensionFeedItemAsync(request.ResourceNameAsExtensionFeedItemName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateExtensionFeedItemsAsync()
+        public void MutateExtensionFeedItemsRequestObject()
         {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
-            MutateExtensionFeedItemsRequest expectedRequest = new MutateExtensionFeedItemsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                ValidateOnly = false,
-            };
-            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateExtensionFeedItemsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateExtensionFeedItemsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ExtensionFeedItemOperation> operations = new List<ExtensionFeedItemOperation>();
-            bool validateOnly = false;
-            MutateExtensionFeedItemsResponse response = await client.MutateExtensionFeedItemsAsync(customerId, operations, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateExtensionFeedItems2()
-        {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
-            MutateExtensionFeedItemsRequest expectedRequest = new MutateExtensionFeedItemsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateExtensionFeedItems(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ExtensionFeedItemOperation> operations = new List<ExtensionFeedItemOperation>();
-            MutateExtensionFeedItemsResponse response = client.MutateExtensionFeedItems(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateExtensionFeedItemsAsync2()
-        {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
-            MutateExtensionFeedItemsRequest expectedRequest = new MutateExtensionFeedItemsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateExtensionFeedItemsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateExtensionFeedItemsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<ExtensionFeedItemOperation> operations = new List<ExtensionFeedItemOperation>();
-            MutateExtensionFeedItemsResponse response = await client.MutateExtensionFeedItemsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateExtensionFeedItems3()
-        {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
             MutateExtensionFeedItemsRequest request = new MutateExtensionFeedItemsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ExtensionFeedItemOperation(),
+                },
+                ValidateOnly = true,
             };
-            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateExtensionFeedItems(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse
+            {
+                Results =
+                {
+                    new MutateExtensionFeedItemResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateExtensionFeedItems(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
             MutateExtensionFeedItemsResponse response = client.MutateExtensionFeedItems(request);
             Assert.AreEqual(expectedResponse, response);
@@ -219,22 +310,86 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateExtensionFeedItemsAsync3()
+        public async stt::Task MutateExtensionFeedItemsRequestObjectAsync()
         {
-            Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(MockBehavior.Strict);
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
             MutateExtensionFeedItemsRequest request = new MutateExtensionFeedItemsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ExtensionFeedItemOperation(),
+                },
+                ValidateOnly = true,
             };
-            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse();
-            mockGrpcClient.Setup(x => x.MutateExtensionFeedItemsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateExtensionFeedItemsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse
+            {
+                Results =
+                {
+                    new MutateExtensionFeedItemResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateExtensionFeedItemsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateExtensionFeedItemsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
-            MutateExtensionFeedItemsResponse response = await client.MutateExtensionFeedItemsAsync(request);
+            MutateExtensionFeedItemsResponse responseCallSettings = await client.MutateExtensionFeedItemsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateExtensionFeedItemsResponse responseCancellationToken = await client.MutateExtensionFeedItemsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateExtensionFeedItems()
+        {
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
+            MutateExtensionFeedItemsRequest request = new MutateExtensionFeedItemsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ExtensionFeedItemOperation(),
+                },
+            };
+            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse
+            {
+                Results =
+                {
+                    new MutateExtensionFeedItemResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateExtensionFeedItems(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            MutateExtensionFeedItemsResponse response = client.MutateExtensionFeedItems(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateExtensionFeedItemsAsync()
+        {
+            moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
+            MutateExtensionFeedItemsRequest request = new MutateExtensionFeedItemsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new ExtensionFeedItemOperation(),
+                },
+            };
+            MutateExtensionFeedItemsResponse expectedResponse = new MutateExtensionFeedItemsResponse
+            {
+                Results =
+                {
+                    new MutateExtensionFeedItemResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateExtensionFeedItemsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateExtensionFeedItemsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ExtensionFeedItemServiceClient client = new ExtensionFeedItemServiceClientImpl(mockGrpcClient.Object, null);
+            MutateExtensionFeedItemsResponse responseCallSettings = await client.MutateExtensionFeedItemsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateExtensionFeedItemsResponse responseCancellationToken = await client.MutateExtensionFeedItemsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

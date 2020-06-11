@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,150 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedMobileAppCategoryConstantServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedMobileAppCategoryConstantServiceClientTest
     {
+        [Test]
+        public void GetMobileAppCategoryConstantRequestObject()
+        {
+            moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
+            GetMobileAppCategoryConstantRequest request = new GetMobileAppCategoryConstantRequest
+            {
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+            };
+            gagvr::MobileAppCategoryConstant expectedResponse = new gagvr::MobileAppCategoryConstant
+            {
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+                Id = 1958153144,
+                MobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+            };
+            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MobileAppCategoryConstantServiceClient client = new MobileAppCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MobileAppCategoryConstant response = client.GetMobileAppCategoryConstant(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetMobileAppCategoryConstantRequestObjectAsync()
+        {
+            moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
+            GetMobileAppCategoryConstantRequest request = new GetMobileAppCategoryConstantRequest
+            {
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+            };
+            gagvr::MobileAppCategoryConstant expectedResponse = new gagvr::MobileAppCategoryConstant
+            {
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+                Id = 1958153144,
+                MobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+            };
+            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MobileAppCategoryConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MobileAppCategoryConstantServiceClient client = new MobileAppCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MobileAppCategoryConstant responseCallSettings = await client.GetMobileAppCategoryConstantAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MobileAppCategoryConstant responseCancellationToken = await client.GetMobileAppCategoryConstantAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetMobileAppCategoryConstant()
         {
-            Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(MockBehavior.Strict);
-            GetMobileAppCategoryConstantRequest expectedRequest = new GetMobileAppCategoryConstantRequest
-            {
-                ResourceName = new MobileAppCategoryConstantName("[MOBILE_APP_CATEGORY_CONSTANT]").ToString(),
-            };
-            MobileAppCategoryConstant expectedResponse = new MobileAppCategoryConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstant(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            MobileAppCategoryConstantServiceClient client = new MobileAppCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MobileAppCategoryConstantName("[MOBILE_APP_CATEGORY_CONSTANT]").ToString();
-            MobileAppCategoryConstant response = client.GetMobileAppCategoryConstant(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetMobileAppCategoryConstantAsync()
-        {
-            Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(MockBehavior.Strict);
-            GetMobileAppCategoryConstantRequest expectedRequest = new GetMobileAppCategoryConstantRequest
-            {
-                ResourceName = new MobileAppCategoryConstantName("[MOBILE_APP_CATEGORY_CONSTANT]").ToString(),
-            };
-            MobileAppCategoryConstant expectedResponse = new MobileAppCategoryConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstantAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MobileAppCategoryConstant>(Task.FromResult(expectedResponse), null, null, null, null));
-            MobileAppCategoryConstantServiceClient client = new MobileAppCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new MobileAppCategoryConstantName("[MOBILE_APP_CATEGORY_CONSTANT]").ToString();
-            MobileAppCategoryConstant response = await client.GetMobileAppCategoryConstantAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetMobileAppCategoryConstant2()
-        {
-            Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
             GetMobileAppCategoryConstantRequest request = new GetMobileAppCategoryConstantRequest
             {
-                ResourceName = new MobileAppCategoryConstantName("[MOBILE_APP_CATEGORY_CONSTANT]").ToString(),
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
             };
-            MobileAppCategoryConstant expectedResponse = new MobileAppCategoryConstant
+            gagvr::MobileAppCategoryConstant expectedResponse = new gagvr::MobileAppCategoryConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+                Id = 1958153144,
+                MobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
             };
-            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstant(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             MobileAppCategoryConstantServiceClient client = new MobileAppCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
-            MobileAppCategoryConstant response = client.GetMobileAppCategoryConstant(request);
+            gagvr::MobileAppCategoryConstant response = client.GetMobileAppCategoryConstant(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetMobileAppCategoryConstantAsync2()
+        public async stt::Task GetMobileAppCategoryConstantAsync()
         {
-            Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
             GetMobileAppCategoryConstantRequest request = new GetMobileAppCategoryConstantRequest
             {
-                ResourceName = new MobileAppCategoryConstantName("[MOBILE_APP_CATEGORY_CONSTANT]").ToString(),
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
             };
-            MobileAppCategoryConstant expectedResponse = new MobileAppCategoryConstant
+            gagvr::MobileAppCategoryConstant expectedResponse = new gagvr::MobileAppCategoryConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+                Id = 1958153144,
+                MobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
             };
-            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstantAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MobileAppCategoryConstant>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MobileAppCategoryConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             MobileAppCategoryConstantServiceClient client = new MobileAppCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
-            MobileAppCategoryConstant response = await client.GetMobileAppCategoryConstantAsync(request);
+            gagvr::MobileAppCategoryConstant responseCallSettings = await client.GetMobileAppCategoryConstantAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MobileAppCategoryConstant responseCancellationToken = await client.GetMobileAppCategoryConstantAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetMobileAppCategoryConstantResourceNames()
+        {
+            moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
+            GetMobileAppCategoryConstantRequest request = new GetMobileAppCategoryConstantRequest
+            {
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+            };
+            gagvr::MobileAppCategoryConstant expectedResponse = new gagvr::MobileAppCategoryConstant
+            {
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+                Id = 1958153144,
+                MobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+            };
+            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MobileAppCategoryConstantServiceClient client = new MobileAppCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MobileAppCategoryConstant response = client.GetMobileAppCategoryConstant(request.ResourceNameAsMobileAppCategoryConstantName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetMobileAppCategoryConstantResourceNamesAsync()
+        {
+            moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
+            GetMobileAppCategoryConstantRequest request = new GetMobileAppCategoryConstantRequest
+            {
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+            };
+            gagvr::MobileAppCategoryConstant expectedResponse = new gagvr::MobileAppCategoryConstant
+            {
+                ResourceNameAsMobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+                Id = 1958153144,
+                MobileAppCategoryConstantName = gagvr::MobileAppCategoryConstantName.FromMobileAppCategoryConstant("[MOBILE_APP_CATEGORY_CONSTANT]"),
+            };
+            mockGrpcClient.Setup(x => x.GetMobileAppCategoryConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::MobileAppCategoryConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MobileAppCategoryConstantServiceClient client = new MobileAppCategoryConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::MobileAppCategoryConstant responseCallSettings = await client.GetMobileAppCategoryConstantAsync(request.ResourceNameAsMobileAppCategoryConstantName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::MobileAppCategoryConstant responseCancellationToken = await client.GetMobileAppCategoryConstantAsync(request.ResourceNameAsMobileAppCategoryConstantName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

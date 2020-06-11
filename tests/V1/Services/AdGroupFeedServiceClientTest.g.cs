@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,214 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V1.Common;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdGroupFeedServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdGroupFeedServiceClientTest
     {
+        [Test]
+        public void GetAdGroupFeedRequestObject()
+        {
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupFeedRequest request = new GetAdGroupFeedRequest
+            {
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+            };
+            gagvr::AdGroupFeed expectedResponse = new gagvr::AdGroupFeed
+            {
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupFeed(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupFeed response = client.GetAdGroupFeed(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdGroupFeedRequestObjectAsync()
+        {
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupFeedRequest request = new GetAdGroupFeedRequest
+            {
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+            };
+            gagvr::AdGroupFeed expectedResponse = new gagvr::AdGroupFeed
+            {
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupFeedAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupFeed>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupFeed responseCallSettings = await client.GetAdGroupFeedAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupFeed responseCancellationToken = await client.GetAdGroupFeedAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAdGroupFeed()
         {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
-            GetAdGroupFeedRequest expectedRequest = new GetAdGroupFeedRequest
-            {
-                ResourceName = new AdGroupFeedName("[CUSTOMER]", "[AD_GROUP_FEED]").ToString(),
-            };
-            AdGroupFeed expectedResponse = new AdGroupFeed
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupFeed(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupFeedName("[CUSTOMER]", "[AD_GROUP_FEED]").ToString();
-            AdGroupFeed response = client.GetAdGroupFeed(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdGroupFeedAsync()
-        {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
-            GetAdGroupFeedRequest expectedRequest = new GetAdGroupFeedRequest
-            {
-                ResourceName = new AdGroupFeedName("[CUSTOMER]", "[AD_GROUP_FEED]").ToString(),
-            };
-            AdGroupFeed expectedResponse = new AdGroupFeed
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupFeedAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupFeed>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupFeedName("[CUSTOMER]", "[AD_GROUP_FEED]").ToString();
-            AdGroupFeed response = await client.GetAdGroupFeedAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAdGroupFeed2()
-        {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupFeedRequest request = new GetAdGroupFeedRequest
             {
-                ResourceName = new AdGroupFeedName("[CUSTOMER]", "[AD_GROUP_FEED]").ToString(),
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
             };
-            AdGroupFeed expectedResponse = new AdGroupFeed
+            gagvr::AdGroupFeed expectedResponse = new gagvr::AdGroupFeed
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupFeed(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAdGroupFeed(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupFeed response = client.GetAdGroupFeed(request);
+            gagvr::AdGroupFeed response = client.GetAdGroupFeed(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdGroupFeedAsync2()
+        public async stt::Task GetAdGroupFeedAsync()
         {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupFeedRequest request = new GetAdGroupFeedRequest
             {
-                ResourceName = new AdGroupFeedName("[CUSTOMER]", "[AD_GROUP_FEED]").ToString(),
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
             };
-            AdGroupFeed expectedResponse = new AdGroupFeed
+            gagvr::AdGroupFeed expectedResponse = new gagvr::AdGroupFeed
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupFeedAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupFeed>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdGroupFeedAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupFeed>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupFeed response = await client.GetAdGroupFeedAsync(request);
+            gagvr::AdGroupFeed responseCallSettings = await client.GetAdGroupFeedAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupFeed responseCancellationToken = await client.GetAdGroupFeedAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdGroupFeedResourceNames()
+        {
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupFeedRequest request = new GetAdGroupFeedRequest
+            {
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+            };
+            gagvr::AdGroupFeed expectedResponse = new gagvr::AdGroupFeed
+            {
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupFeed(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupFeed response = client.GetAdGroupFeed(request.ResourceNameAsAdGroupFeedName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateAdGroupFeeds()
+        public async stt::Task GetAdGroupFeedResourceNamesAsync()
         {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
-            MutateAdGroupFeedsRequest expectedRequest = new MutateAdGroupFeedsRequest
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupFeedRequest request = new GetAdGroupFeedRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
             };
-            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupFeeds(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::AdGroupFeed expectedResponse = new gagvr::AdGroupFeed
+            {
+                ResourceNameAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER]", "[AD_GROUP_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER]", "[AD_GROUP]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupFeedAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupFeed>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupFeedOperation> operations = new List<AdGroupFeedOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdGroupFeedsResponse response = client.MutateAdGroupFeeds(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::AdGroupFeed responseCallSettings = await client.GetAdGroupFeedAsync(request.ResourceNameAsAdGroupFeedName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupFeed responseCancellationToken = await client.GetAdGroupFeedAsync(request.ResourceNameAsAdGroupFeedName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateAdGroupFeedsAsync()
+        public void MutateAdGroupFeedsRequestObject()
         {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
-            MutateAdGroupFeedsRequest expectedRequest = new MutateAdGroupFeedsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupFeedsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupFeedsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupFeedOperation> operations = new List<AdGroupFeedOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdGroupFeedsResponse response = await client.MutateAdGroupFeedsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdGroupFeeds2()
-        {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
-            MutateAdGroupFeedsRequest expectedRequest = new MutateAdGroupFeedsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupFeeds(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupFeedOperation> operations = new List<AdGroupFeedOperation>();
-            MutateAdGroupFeedsResponse response = client.MutateAdGroupFeeds(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateAdGroupFeedsAsync2()
-        {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
-            MutateAdGroupFeedsRequest expectedRequest = new MutateAdGroupFeedsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupFeedsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupFeedsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupFeedOperation> operations = new List<AdGroupFeedOperation>();
-            MutateAdGroupFeedsResponse response = await client.MutateAdGroupFeedsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdGroupFeeds3()
-        {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
             MutateAdGroupFeedsRequest request = new MutateAdGroupFeedsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupFeedOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupFeeds(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupFeedResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupFeeds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
             MutateAdGroupFeedsResponse response = client.MutateAdGroupFeeds(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +229,90 @@ namespace Google.Ads.GoogleAds.V1.Services.Tests
         }
 
         [Test]
-        public async Task MutateAdGroupFeedsAsync3()
+        public async stt::Task MutateAdGroupFeedsRequestObjectAsync()
         {
-            Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new Mock<AdGroupFeedService.AdGroupFeedServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
             MutateAdGroupFeedsRequest request = new MutateAdGroupFeedsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupFeedOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupFeedsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupFeedsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupFeedResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupFeedsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupFeedsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
-            MutateAdGroupFeedsResponse response = await client.MutateAdGroupFeedsAsync(request);
+            MutateAdGroupFeedsResponse responseCallSettings = await client.MutateAdGroupFeedsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdGroupFeedsResponse responseCancellationToken = await client.MutateAdGroupFeedsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateAdGroupFeeds()
+        {
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
+            MutateAdGroupFeedsRequest request = new MutateAdGroupFeedsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupFeedOperation(),
+                },
+            };
+            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupFeedResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupFeeds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdGroupFeedsResponse response = client.MutateAdGroupFeeds(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateAdGroupFeedsAsync()
+        {
+            moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient> mockGrpcClient = new moq::Mock<AdGroupFeedService.AdGroupFeedServiceClient>(moq::MockBehavior.Strict);
+            MutateAdGroupFeedsRequest request = new MutateAdGroupFeedsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupFeedOperation(),
+                },
+            };
+            MutateAdGroupFeedsResponse expectedResponse = new MutateAdGroupFeedsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupFeedResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupFeedsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupFeedsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupFeedServiceClient client = new AdGroupFeedServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdGroupFeedsResponse responseCallSettings = await client.MutateAdGroupFeedsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdGroupFeedsResponse responseCancellationToken = await client.MutateAdGroupFeedsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

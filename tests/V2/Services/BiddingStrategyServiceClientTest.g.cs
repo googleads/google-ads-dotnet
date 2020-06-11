@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,244 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V2.Common;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedBiddingStrategyServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedBiddingStrategyServiceClientTest
     {
+        [Test]
+        public void GetBiddingStrategyRequestObject()
+        {
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
+            GetBiddingStrategyRequest request = new GetBiddingStrategyRequest
+            {
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+            };
+            gagvr::BiddingStrategy expectedResponse = new gagvr::BiddingStrategy
+            {
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Id = -6774108720365892680L,
+                BiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Type = gagve::BiddingStrategyTypeEnum.Types.BiddingStrategyType.ManualCpm,
+                EnhancedCpc = new gagvc::EnhancedCpc(),
+                PageOnePromoted = new gagvc::PageOnePromoted(),
+                TargetCpa = new gagvc::TargetCpa(),
+                TargetOutrankShare = new gagvc::TargetOutrankShare(),
+                TargetRoas = new gagvc::TargetRoas(),
+                TargetSpend = new gagvc::TargetSpend(),
+                CampaignCount = 7086295369533367171L,
+                NonRemovedCampaignCount = 8279371121198864414L,
+                Status = gagve::BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Enabled,
+                TargetImpressionShare = new gagvc::TargetImpressionShare(),
+            };
+            mockGrpcClient.Setup(x => x.GetBiddingStrategy(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::BiddingStrategy response = client.GetBiddingStrategy(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetBiddingStrategyRequestObjectAsync()
+        {
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
+            GetBiddingStrategyRequest request = new GetBiddingStrategyRequest
+            {
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+            };
+            gagvr::BiddingStrategy expectedResponse = new gagvr::BiddingStrategy
+            {
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Id = -6774108720365892680L,
+                BiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Type = gagve::BiddingStrategyTypeEnum.Types.BiddingStrategyType.ManualCpm,
+                EnhancedCpc = new gagvc::EnhancedCpc(),
+                PageOnePromoted = new gagvc::PageOnePromoted(),
+                TargetCpa = new gagvc::TargetCpa(),
+                TargetOutrankShare = new gagvc::TargetOutrankShare(),
+                TargetRoas = new gagvc::TargetRoas(),
+                TargetSpend = new gagvc::TargetSpend(),
+                CampaignCount = 7086295369533367171L,
+                NonRemovedCampaignCount = 8279371121198864414L,
+                Status = gagve::BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Enabled,
+                TargetImpressionShare = new gagvc::TargetImpressionShare(),
+            };
+            mockGrpcClient.Setup(x => x.GetBiddingStrategyAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::BiddingStrategy>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::BiddingStrategy responseCallSettings = await client.GetBiddingStrategyAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::BiddingStrategy responseCancellationToken = await client.GetBiddingStrategyAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetBiddingStrategy()
         {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
-            GetBiddingStrategyRequest expectedRequest = new GetBiddingStrategyRequest
-            {
-                ResourceName = new BiddingStrategyName("[CUSTOMER]", "[BIDDING_STRATEGY]").ToString(),
-            };
-            BiddingStrategy expectedResponse = new BiddingStrategy
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetBiddingStrategy(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new BiddingStrategyName("[CUSTOMER]", "[BIDDING_STRATEGY]").ToString();
-            BiddingStrategy response = client.GetBiddingStrategy(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetBiddingStrategyAsync()
-        {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
-            GetBiddingStrategyRequest expectedRequest = new GetBiddingStrategyRequest
-            {
-                ResourceName = new BiddingStrategyName("[CUSTOMER]", "[BIDDING_STRATEGY]").ToString(),
-            };
-            BiddingStrategy expectedResponse = new BiddingStrategy
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetBiddingStrategyAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<BiddingStrategy>(Task.FromResult(expectedResponse), null, null, null, null));
-            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new BiddingStrategyName("[CUSTOMER]", "[BIDDING_STRATEGY]").ToString();
-            BiddingStrategy response = await client.GetBiddingStrategyAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetBiddingStrategy2()
-        {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
             GetBiddingStrategyRequest request = new GetBiddingStrategyRequest
             {
-                ResourceName = new BiddingStrategyName("[CUSTOMER]", "[BIDDING_STRATEGY]").ToString(),
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
             };
-            BiddingStrategy expectedResponse = new BiddingStrategy
+            gagvr::BiddingStrategy expectedResponse = new gagvr::BiddingStrategy
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Id = -6774108720365892680L,
+                BiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Type = gagve::BiddingStrategyTypeEnum.Types.BiddingStrategyType.ManualCpm,
+                EnhancedCpc = new gagvc::EnhancedCpc(),
+                PageOnePromoted = new gagvc::PageOnePromoted(),
+                TargetCpa = new gagvc::TargetCpa(),
+                TargetOutrankShare = new gagvc::TargetOutrankShare(),
+                TargetRoas = new gagvc::TargetRoas(),
+                TargetSpend = new gagvc::TargetSpend(),
+                CampaignCount = 7086295369533367171L,
+                NonRemovedCampaignCount = 8279371121198864414L,
+                Status = gagve::BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Enabled,
+                TargetImpressionShare = new gagvc::TargetImpressionShare(),
             };
-            mockGrpcClient.Setup(x => x.GetBiddingStrategy(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetBiddingStrategy(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
-            BiddingStrategy response = client.GetBiddingStrategy(request);
+            gagvr::BiddingStrategy response = client.GetBiddingStrategy(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetBiddingStrategyAsync2()
+        public async stt::Task GetBiddingStrategyAsync()
         {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
             GetBiddingStrategyRequest request = new GetBiddingStrategyRequest
             {
-                ResourceName = new BiddingStrategyName("[CUSTOMER]", "[BIDDING_STRATEGY]").ToString(),
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
             };
-            BiddingStrategy expectedResponse = new BiddingStrategy
+            gagvr::BiddingStrategy expectedResponse = new gagvr::BiddingStrategy
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Id = -6774108720365892680L,
+                BiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Type = gagve::BiddingStrategyTypeEnum.Types.BiddingStrategyType.ManualCpm,
+                EnhancedCpc = new gagvc::EnhancedCpc(),
+                PageOnePromoted = new gagvc::PageOnePromoted(),
+                TargetCpa = new gagvc::TargetCpa(),
+                TargetOutrankShare = new gagvc::TargetOutrankShare(),
+                TargetRoas = new gagvc::TargetRoas(),
+                TargetSpend = new gagvc::TargetSpend(),
+                CampaignCount = 7086295369533367171L,
+                NonRemovedCampaignCount = 8279371121198864414L,
+                Status = gagve::BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Enabled,
+                TargetImpressionShare = new gagvc::TargetImpressionShare(),
             };
-            mockGrpcClient.Setup(x => x.GetBiddingStrategyAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<BiddingStrategy>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetBiddingStrategyAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::BiddingStrategy>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
-            BiddingStrategy response = await client.GetBiddingStrategyAsync(request);
+            gagvr::BiddingStrategy responseCallSettings = await client.GetBiddingStrategyAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::BiddingStrategy responseCancellationToken = await client.GetBiddingStrategyAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetBiddingStrategyResourceNames()
+        {
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
+            GetBiddingStrategyRequest request = new GetBiddingStrategyRequest
+            {
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+            };
+            gagvr::BiddingStrategy expectedResponse = new gagvr::BiddingStrategy
+            {
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Id = -6774108720365892680L,
+                BiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Type = gagve::BiddingStrategyTypeEnum.Types.BiddingStrategyType.ManualCpm,
+                EnhancedCpc = new gagvc::EnhancedCpc(),
+                PageOnePromoted = new gagvc::PageOnePromoted(),
+                TargetCpa = new gagvc::TargetCpa(),
+                TargetOutrankShare = new gagvc::TargetOutrankShare(),
+                TargetRoas = new gagvc::TargetRoas(),
+                TargetSpend = new gagvc::TargetSpend(),
+                CampaignCount = 7086295369533367171L,
+                NonRemovedCampaignCount = 8279371121198864414L,
+                Status = gagve::BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Enabled,
+                TargetImpressionShare = new gagvc::TargetImpressionShare(),
+            };
+            mockGrpcClient.Setup(x => x.GetBiddingStrategy(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::BiddingStrategy response = client.GetBiddingStrategy(request.ResourceNameAsBiddingStrategyName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateBiddingStrategies()
+        public async stt::Task GetBiddingStrategyResourceNamesAsync()
         {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
-            MutateBiddingStrategiesRequest expectedRequest = new MutateBiddingStrategiesRequest
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
+            GetBiddingStrategyRequest request = new GetBiddingStrategyRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
             };
-            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse();
-            mockGrpcClient.Setup(x => x.MutateBiddingStrategies(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::BiddingStrategy expectedResponse = new gagvr::BiddingStrategy
+            {
+                ResourceNameAsBiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Id = -6774108720365892680L,
+                BiddingStrategyName = gagvr::BiddingStrategyName.FromCustomerBiddingStrategy("[CUSTOMER]", "[BIDDING_STRATEGY]"),
+                Type = gagve::BiddingStrategyTypeEnum.Types.BiddingStrategyType.ManualCpm,
+                EnhancedCpc = new gagvc::EnhancedCpc(),
+                PageOnePromoted = new gagvc::PageOnePromoted(),
+                TargetCpa = new gagvc::TargetCpa(),
+                TargetOutrankShare = new gagvc::TargetOutrankShare(),
+                TargetRoas = new gagvc::TargetRoas(),
+                TargetSpend = new gagvc::TargetSpend(),
+                CampaignCount = 7086295369533367171L,
+                NonRemovedCampaignCount = 8279371121198864414L,
+                Status = gagve::BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Enabled,
+                TargetImpressionShare = new gagvc::TargetImpressionShare(),
+            };
+            mockGrpcClient.Setup(x => x.GetBiddingStrategyAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::BiddingStrategy>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<BiddingStrategyOperation> operations = new List<BiddingStrategyOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateBiddingStrategiesResponse response = client.MutateBiddingStrategies(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::BiddingStrategy responseCallSettings = await client.GetBiddingStrategyAsync(request.ResourceNameAsBiddingStrategyName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::BiddingStrategy responseCancellationToken = await client.GetBiddingStrategyAsync(request.ResourceNameAsBiddingStrategyName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateBiddingStrategiesAsync()
+        public void MutateBiddingStrategiesRequestObject()
         {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
-            MutateBiddingStrategiesRequest expectedRequest = new MutateBiddingStrategiesRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse();
-            mockGrpcClient.Setup(x => x.MutateBiddingStrategiesAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateBiddingStrategiesResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<BiddingStrategyOperation> operations = new List<BiddingStrategyOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateBiddingStrategiesResponse response = await client.MutateBiddingStrategiesAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateBiddingStrategies2()
-        {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
-            MutateBiddingStrategiesRequest expectedRequest = new MutateBiddingStrategiesRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse();
-            mockGrpcClient.Setup(x => x.MutateBiddingStrategies(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<BiddingStrategyOperation> operations = new List<BiddingStrategyOperation>();
-            MutateBiddingStrategiesResponse response = client.MutateBiddingStrategies(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateBiddingStrategiesAsync2()
-        {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
-            MutateBiddingStrategiesRequest expectedRequest = new MutateBiddingStrategiesRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse();
-            mockGrpcClient.Setup(x => x.MutateBiddingStrategiesAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateBiddingStrategiesResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<BiddingStrategyOperation> operations = new List<BiddingStrategyOperation>();
-            MutateBiddingStrategiesResponse response = await client.MutateBiddingStrategiesAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateBiddingStrategies3()
-        {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
             MutateBiddingStrategiesRequest request = new MutateBiddingStrategiesRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new BiddingStrategyOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse();
-            mockGrpcClient.Setup(x => x.MutateBiddingStrategies(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse
+            {
+                Results =
+                {
+                    new MutateBiddingStrategyResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateBiddingStrategies(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
             MutateBiddingStrategiesResponse response = client.MutateBiddingStrategies(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +259,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateBiddingStrategiesAsync3()
+        public async stt::Task MutateBiddingStrategiesRequestObjectAsync()
         {
-            Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new Mock<BiddingStrategyService.BiddingStrategyServiceClient>(MockBehavior.Strict);
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
             MutateBiddingStrategiesRequest request = new MutateBiddingStrategiesRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new BiddingStrategyOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse();
-            mockGrpcClient.Setup(x => x.MutateBiddingStrategiesAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateBiddingStrategiesResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse
+            {
+                Results =
+                {
+                    new MutateBiddingStrategyResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateBiddingStrategiesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBiddingStrategiesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
-            MutateBiddingStrategiesResponse response = await client.MutateBiddingStrategiesAsync(request);
+            MutateBiddingStrategiesResponse responseCallSettings = await client.MutateBiddingStrategiesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateBiddingStrategiesResponse responseCancellationToken = await client.MutateBiddingStrategiesAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateBiddingStrategies()
+        {
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
+            MutateBiddingStrategiesRequest request = new MutateBiddingStrategiesRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new BiddingStrategyOperation(),
+                },
+            };
+            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse
+            {
+                Results =
+                {
+                    new MutateBiddingStrategyResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateBiddingStrategies(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
+            MutateBiddingStrategiesResponse response = client.MutateBiddingStrategies(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateBiddingStrategiesAsync()
+        {
+            moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
+            MutateBiddingStrategiesRequest request = new MutateBiddingStrategiesRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new BiddingStrategyOperation(),
+                },
+            };
+            MutateBiddingStrategiesResponse expectedResponse = new MutateBiddingStrategiesResponse
+            {
+                Results =
+                {
+                    new MutateBiddingStrategyResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateBiddingStrategiesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBiddingStrategiesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
+            MutateBiddingStrategiesResponse responseCallSettings = await client.MutateBiddingStrategiesAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateBiddingStrategiesResponse responseCancellationToken = await client.MutateBiddingStrategiesAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

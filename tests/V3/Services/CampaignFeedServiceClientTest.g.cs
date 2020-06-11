@@ -14,216 +14,214 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V3.Common;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCampaignFeedServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCampaignFeedServiceClientTest
     {
+        [Test]
+        public void GetCampaignFeedRequestObject()
+        {
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignFeedRequest request = new GetCampaignFeedRequest
+            {
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+            };
+            gagvr::CampaignFeed expectedResponse = new gagvr::CampaignFeed
+            {
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignFeed(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignFeed response = client.GetCampaignFeed(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCampaignFeedRequestObjectAsync()
+        {
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignFeedRequest request = new GetCampaignFeedRequest
+            {
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+            };
+            gagvr::CampaignFeed expectedResponse = new gagvr::CampaignFeed
+            {
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignFeedAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignFeed>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignFeed responseCallSettings = await client.GetCampaignFeedAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignFeed responseCancellationToken = await client.GetCampaignFeedAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCampaignFeed()
         {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
-            GetCampaignFeedRequest expectedRequest = new GetCampaignFeedRequest
-            {
-                ResourceName = new CampaignFeedName("[CUSTOMER]", "[CAMPAIGN_FEED]").ToString(),
-            };
-            CampaignFeed expectedResponse = new CampaignFeed
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignFeed(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignFeedName("[CUSTOMER]", "[CAMPAIGN_FEED]").ToString();
-            CampaignFeed response = client.GetCampaignFeed(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCampaignFeedAsync()
-        {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
-            GetCampaignFeedRequest expectedRequest = new GetCampaignFeedRequest
-            {
-                ResourceName = new CampaignFeedName("[CUSTOMER]", "[CAMPAIGN_FEED]").ToString(),
-            };
-            CampaignFeed expectedResponse = new CampaignFeed
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignFeedAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignFeed>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignFeedName("[CUSTOMER]", "[CAMPAIGN_FEED]").ToString();
-            CampaignFeed response = await client.GetCampaignFeedAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCampaignFeed2()
-        {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
             GetCampaignFeedRequest request = new GetCampaignFeedRequest
             {
-                ResourceName = new CampaignFeedName("[CUSTOMER]", "[CAMPAIGN_FEED]").ToString(),
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
             };
-            CampaignFeed expectedResponse = new CampaignFeed
+            gagvr::CampaignFeed expectedResponse = new gagvr::CampaignFeed
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
             };
-            mockGrpcClient.Setup(x => x.GetCampaignFeed(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCampaignFeed(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignFeed response = client.GetCampaignFeed(request);
+            gagvr::CampaignFeed response = client.GetCampaignFeed(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCampaignFeedAsync2()
+        public async stt::Task GetCampaignFeedAsync()
         {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
             GetCampaignFeedRequest request = new GetCampaignFeedRequest
             {
-                ResourceName = new CampaignFeedName("[CUSTOMER]", "[CAMPAIGN_FEED]").ToString(),
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
             };
-            CampaignFeed expectedResponse = new CampaignFeed
+            gagvr::CampaignFeed expectedResponse = new gagvr::CampaignFeed
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
             };
-            mockGrpcClient.Setup(x => x.GetCampaignFeedAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignFeed>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCampaignFeedAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignFeed>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignFeed response = await client.GetCampaignFeedAsync(request);
+            gagvr::CampaignFeed responseCallSettings = await client.GetCampaignFeedAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignFeed responseCancellationToken = await client.GetCampaignFeedAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCampaignFeedResourceNames()
+        {
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignFeedRequest request = new GetCampaignFeedRequest
+            {
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+            };
+            gagvr::CampaignFeed expectedResponse = new gagvr::CampaignFeed
+            {
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignFeed(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignFeed response = client.GetCampaignFeed(request.ResourceNameAsCampaignFeedName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCampaignFeeds()
+        public async stt::Task GetCampaignFeedResourceNamesAsync()
         {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
-            MutateCampaignFeedsRequest expectedRequest = new MutateCampaignFeedsRequest
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignFeedRequest request = new GetCampaignFeedRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
             };
-            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignFeeds(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CampaignFeed expectedResponse = new gagvr::CampaignFeed
+            {
+                ResourceNameAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER]", "[CAMPAIGN_FEED]"),
+                FeedAsFeedName = gagvr::FeedName.FromCustomerFeed("[CUSTOMER]", "[FEED]"),
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                PlaceholderTypes =
+                {
+                    gagve::PlaceholderTypeEnum.Types.PlaceholderType.Location,
+                },
+                MatchingFunction = new gagvc::MatchingFunction(),
+                Status = gagve::FeedLinkStatusEnum.Types.FeedLinkStatus.Enabled,
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignFeedAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignFeed>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignFeedOperation> operations = new List<CampaignFeedOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignFeedsResponse response = client.MutateCampaignFeeds(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CampaignFeed responseCallSettings = await client.GetCampaignFeedAsync(request.ResourceNameAsCampaignFeedName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignFeed responseCancellationToken = await client.GetCampaignFeedAsync(request.ResourceNameAsCampaignFeedName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCampaignFeedsAsync()
+        public void MutateCampaignFeedsRequestObject()
         {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
-            MutateCampaignFeedsRequest expectedRequest = new MutateCampaignFeedsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignFeedsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignFeedsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignFeedOperation> operations = new List<CampaignFeedOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignFeedsResponse response = await client.MutateCampaignFeedsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignFeeds2()
-        {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
-            MutateCampaignFeedsRequest expectedRequest = new MutateCampaignFeedsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignFeeds(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignFeedOperation> operations = new List<CampaignFeedOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignFeedsResponse response = client.MutateCampaignFeeds(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCampaignFeedsAsync2()
-        {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
-            MutateCampaignFeedsRequest expectedRequest = new MutateCampaignFeedsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignFeedsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignFeedsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignFeedOperation> operations = new List<CampaignFeedOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignFeedsResponse response = await client.MutateCampaignFeedsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignFeeds3()
-        {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignFeedsRequest request = new MutateCampaignFeedsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignFeedOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignFeeds(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignFeedResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignFeeds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
             MutateCampaignFeedsResponse response = client.MutateCampaignFeeds(request);
             Assert.AreEqual(expectedResponse, response);
@@ -231,22 +229,90 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task MutateCampaignFeedsAsync3()
+        public async stt::Task MutateCampaignFeedsRequestObjectAsync()
         {
-            Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new Mock<CampaignFeedService.CampaignFeedServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignFeedsRequest request = new MutateCampaignFeedsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignFeedOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignFeedsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignFeedsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignFeedResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignFeedsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignFeedsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCampaignFeedsResponse response = await client.MutateCampaignFeedsAsync(request);
+            MutateCampaignFeedsResponse responseCallSettings = await client.MutateCampaignFeedsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignFeedsResponse responseCancellationToken = await client.MutateCampaignFeedsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCampaignFeeds()
+        {
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignFeedsRequest request = new MutateCampaignFeedsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignFeedOperation(),
+                },
+            };
+            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignFeedResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignFeeds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignFeedsResponse response = client.MutateCampaignFeeds(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCampaignFeedsAsync()
+        {
+            moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignFeedsRequest request = new MutateCampaignFeedsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignFeedOperation(),
+                },
+            };
+            MutateCampaignFeedsResponse expectedResponse = new MutateCampaignFeedsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignFeedResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignFeedsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignFeedsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignFeedServiceClient client = new CampaignFeedServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignFeedsResponse responseCallSettings = await client.MutateCampaignFeedsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignFeedsResponse responseCancellationToken = await client.MutateCampaignFeedsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

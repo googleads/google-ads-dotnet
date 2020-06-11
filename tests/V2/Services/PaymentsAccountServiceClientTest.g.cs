@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,72 +14,36 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedPaymentsAccountServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedPaymentsAccountServiceClientTest
     {
         [Test]
-        public void ListPaymentsAccounts()
+        public void ListPaymentsAccountsRequestObject()
         {
-            Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new Mock<PaymentsAccountService.PaymentsAccountServiceClient>(MockBehavior.Strict);
-            ListPaymentsAccountsRequest expectedRequest = new ListPaymentsAccountsRequest
-            {
-                CustomerId = "customerId-1772061412",
-            };
-            ListPaymentsAccountsResponse expectedResponse = new ListPaymentsAccountsResponse();
-            mockGrpcClient.Setup(x => x.ListPaymentsAccounts(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            ListPaymentsAccountsResponse response = client.ListPaymentsAccounts(customerId);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task ListPaymentsAccountsAsync()
-        {
-            Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new Mock<PaymentsAccountService.PaymentsAccountServiceClient>(MockBehavior.Strict);
-            ListPaymentsAccountsRequest expectedRequest = new ListPaymentsAccountsRequest
-            {
-                CustomerId = "customerId-1772061412",
-            };
-            ListPaymentsAccountsResponse expectedResponse = new ListPaymentsAccountsResponse();
-            mockGrpcClient.Setup(x => x.ListPaymentsAccountsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListPaymentsAccountsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            ListPaymentsAccountsResponse response = await client.ListPaymentsAccountsAsync(customerId);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void ListPaymentsAccounts2()
-        {
-            Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new Mock<PaymentsAccountService.PaymentsAccountServiceClient>(MockBehavior.Strict);
+            moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient>(moq::MockBehavior.Strict);
             ListPaymentsAccountsRequest request = new ListPaymentsAccountsRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
             };
-            ListPaymentsAccountsResponse expectedResponse = new ListPaymentsAccountsResponse();
-            mockGrpcClient.Setup(x => x.ListPaymentsAccounts(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            ListPaymentsAccountsResponse expectedResponse = new ListPaymentsAccountsResponse
+            {
+                PaymentsAccounts =
+                {
+                    new gagvr::PaymentsAccount(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListPaymentsAccounts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
             ListPaymentsAccountsResponse response = client.ListPaymentsAccounts(request);
             Assert.AreEqual(expectedResponse, response);
@@ -87,21 +51,73 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task ListPaymentsAccountsAsync2()
+        public async stt::Task ListPaymentsAccountsRequestObjectAsync()
         {
-            Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new Mock<PaymentsAccountService.PaymentsAccountServiceClient>(MockBehavior.Strict);
+            moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient>(moq::MockBehavior.Strict);
             ListPaymentsAccountsRequest request = new ListPaymentsAccountsRequest
             {
-                CustomerId = "customerId-1772061412",
+                CustomerId = "customer_id3b3724cb",
             };
-            ListPaymentsAccountsResponse expectedResponse = new ListPaymentsAccountsResponse();
-            mockGrpcClient.Setup(x => x.ListPaymentsAccountsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListPaymentsAccountsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            ListPaymentsAccountsResponse expectedResponse = new ListPaymentsAccountsResponse
+            {
+                PaymentsAccounts =
+                {
+                    new gagvr::PaymentsAccount(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListPaymentsAccountsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPaymentsAccountsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
-            ListPaymentsAccountsResponse response = await client.ListPaymentsAccountsAsync(request);
+            ListPaymentsAccountsResponse responseCallSettings = await client.ListPaymentsAccountsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListPaymentsAccountsResponse responseCancellationToken = await client.ListPaymentsAccountsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void ListPaymentsAccounts()
+        {
+            moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient>(moq::MockBehavior.Strict);
+            ListPaymentsAccountsRequest request = new ListPaymentsAccountsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+            };
+            ListPaymentsAccountsResponse expectedResponse = new ListPaymentsAccountsResponse
+            {
+                PaymentsAccounts =
+                {
+                    new gagvr::PaymentsAccount(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListPaymentsAccounts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
+            ListPaymentsAccountsResponse response = client.ListPaymentsAccounts(request.CustomerId);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task ListPaymentsAccountsAsync()
+        {
+            moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient>(moq::MockBehavior.Strict);
+            ListPaymentsAccountsRequest request = new ListPaymentsAccountsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+            };
+            ListPaymentsAccountsResponse expectedResponse = new ListPaymentsAccountsResponse
+            {
+                PaymentsAccounts =
+                {
+                    new gagvr::PaymentsAccount(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListPaymentsAccountsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPaymentsAccountsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
+            ListPaymentsAccountsResponse responseCallSettings = await client.ListPaymentsAccountsAsync(request.CustomerId, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListPaymentsAccountsResponse responseCancellationToken = await client.ListPaymentsAccountsAsync(request.CustomerId, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

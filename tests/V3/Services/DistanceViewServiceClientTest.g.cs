@@ -14,107 +14,151 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedDistanceViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedDistanceViewServiceClientTest
     {
+        [Test]
+        public void GetDistanceViewRequestObject()
+        {
+            moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
+            GetDistanceViewRequest request = new GetDistanceViewRequest
+            {
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+            };
+            gagvr::DistanceView expectedResponse = new gagvr::DistanceView
+            {
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+                DistanceBucket = gagve::DistanceBucketEnum.Types.DistanceBucket.Within25Miles,
+                MetricSystem = true,
+            };
+            mockGrpcClient.Setup(x => x.GetDistanceView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            DistanceViewServiceClient client = new DistanceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DistanceView response = client.GetDistanceView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetDistanceViewRequestObjectAsync()
+        {
+            moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
+            GetDistanceViewRequest request = new GetDistanceViewRequest
+            {
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+            };
+            gagvr::DistanceView expectedResponse = new gagvr::DistanceView
+            {
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+                DistanceBucket = gagve::DistanceBucketEnum.Types.DistanceBucket.Within25Miles,
+                MetricSystem = true,
+            };
+            mockGrpcClient.Setup(x => x.GetDistanceViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DistanceView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            DistanceViewServiceClient client = new DistanceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DistanceView responseCallSettings = await client.GetDistanceViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DistanceView responseCancellationToken = await client.GetDistanceViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetDistanceView()
         {
-            Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new Mock<DistanceViewService.DistanceViewServiceClient>(MockBehavior.Strict);
-            GetDistanceViewRequest expectedRequest = new GetDistanceViewRequest
-            {
-                ResourceName = new DistanceViewName("[CUSTOMER]", "[DISTANCE_VIEW]").ToString(),
-            };
-            DistanceView expectedResponse = new DistanceView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetDistanceView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            DistanceViewServiceClient client = new DistanceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new DistanceViewName("[CUSTOMER]", "[DISTANCE_VIEW]").ToString();
-            DistanceView response = client.GetDistanceView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetDistanceViewAsync()
-        {
-            Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new Mock<DistanceViewService.DistanceViewServiceClient>(MockBehavior.Strict);
-            GetDistanceViewRequest expectedRequest = new GetDistanceViewRequest
-            {
-                ResourceName = new DistanceViewName("[CUSTOMER]", "[DISTANCE_VIEW]").ToString(),
-            };
-            DistanceView expectedResponse = new DistanceView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetDistanceViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DistanceView>(Task.FromResult(expectedResponse), null, null, null, null));
-            DistanceViewServiceClient client = new DistanceViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new DistanceViewName("[CUSTOMER]", "[DISTANCE_VIEW]").ToString();
-            DistanceView response = await client.GetDistanceViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetDistanceView2()
-        {
-            Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new Mock<DistanceViewService.DistanceViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
             GetDistanceViewRequest request = new GetDistanceViewRequest
             {
-                ResourceName = new DistanceViewName("[CUSTOMER]", "[DISTANCE_VIEW]").ToString(),
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
             };
-            DistanceView expectedResponse = new DistanceView
+            gagvr::DistanceView expectedResponse = new gagvr::DistanceView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+                DistanceBucket = gagve::DistanceBucketEnum.Types.DistanceBucket.Within25Miles,
+                MetricSystem = true,
             };
-            mockGrpcClient.Setup(x => x.GetDistanceView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetDistanceView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             DistanceViewServiceClient client = new DistanceViewServiceClientImpl(mockGrpcClient.Object, null);
-            DistanceView response = client.GetDistanceView(request);
+            gagvr::DistanceView response = client.GetDistanceView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetDistanceViewAsync2()
+        public async stt::Task GetDistanceViewAsync()
         {
-            Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new Mock<DistanceViewService.DistanceViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
             GetDistanceViewRequest request = new GetDistanceViewRequest
             {
-                ResourceName = new DistanceViewName("[CUSTOMER]", "[DISTANCE_VIEW]").ToString(),
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
             };
-            DistanceView expectedResponse = new DistanceView
+            gagvr::DistanceView expectedResponse = new gagvr::DistanceView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+                DistanceBucket = gagve::DistanceBucketEnum.Types.DistanceBucket.Within25Miles,
+                MetricSystem = true,
             };
-            mockGrpcClient.Setup(x => x.GetDistanceViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<DistanceView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetDistanceViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DistanceView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             DistanceViewServiceClient client = new DistanceViewServiceClientImpl(mockGrpcClient.Object, null);
-            DistanceView response = await client.GetDistanceViewAsync(request);
+            gagvr::DistanceView responseCallSettings = await client.GetDistanceViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DistanceView responseCancellationToken = await client.GetDistanceViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetDistanceViewResourceNames()
+        {
+            moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
+            GetDistanceViewRequest request = new GetDistanceViewRequest
+            {
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+            };
+            gagvr::DistanceView expectedResponse = new gagvr::DistanceView
+            {
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+                DistanceBucket = gagve::DistanceBucketEnum.Types.DistanceBucket.Within25Miles,
+                MetricSystem = true,
+            };
+            mockGrpcClient.Setup(x => x.GetDistanceView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            DistanceViewServiceClient client = new DistanceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DistanceView response = client.GetDistanceView(request.ResourceNameAsDistanceViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetDistanceViewResourceNamesAsync()
+        {
+            moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
+            GetDistanceViewRequest request = new GetDistanceViewRequest
+            {
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+            };
+            gagvr::DistanceView expectedResponse = new gagvr::DistanceView
+            {
+                ResourceNameAsDistanceViewName = gagvr::DistanceViewName.FromCustomerDistanceView("[CUSTOMER]", "[DISTANCE_VIEW]"),
+                DistanceBucket = gagve::DistanceBucketEnum.Types.DistanceBucket.Within25Miles,
+                MetricSystem = true,
+            };
+            mockGrpcClient.Setup(x => x.GetDistanceViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::DistanceView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            DistanceViewServiceClient client = new DistanceViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::DistanceView responseCallSettings = await client.GetDistanceViewAsync(request.ResourceNameAsDistanceViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::DistanceView responseCancellationToken = await client.GetDistanceViewAsync(request.ResourceNameAsDistanceViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netcoreapp2.0;net452</TargetFrameworks>
-    <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.0;net472</TargetFrameworks>
     <RootNamespace>Google.Ads.GoogleAds.Examples</RootNamespace>
     <AssemblyName>Google.Ads.GoogleAds.Examples</AssemblyName>
     <OutputType>Exe</OutputType>
@@ -23,7 +22,11 @@
     <None Remove="Migration\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Ads.GoogleAds" Version="2.9.0" />
+    <PackageReference Include="Google.Ads.GoogleAds" Version="3.0.0" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web" />
