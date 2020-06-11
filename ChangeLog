@@ -35,6 +35,7 @@
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/158
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/159
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/160
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/168
 - Added support for v3_1 of Google Ads API.
 - Added new code examples.
   - BasicOperations/UpdateExpandedTextAd.cs
