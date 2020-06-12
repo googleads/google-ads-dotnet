@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,183 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedCampaignSharedSetServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedCampaignSharedSetServiceClientTest
     {
+        [Test]
+        public void GetCampaignSharedSetRequestObject()
+        {
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignSharedSetRequest request = new GetCampaignSharedSetRequest
+            {
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
+            };
+            gagvr::CampaignSharedSet expectedResponse = new gagvr::CampaignSharedSet
+            {
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
+                Status = gagve::CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Enabled,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignSharedSet(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignSharedSet response = client.GetCampaignSharedSet(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetCampaignSharedSetRequestObjectAsync()
+        {
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignSharedSetRequest request = new GetCampaignSharedSetRequest
+            {
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
+            };
+            gagvr::CampaignSharedSet expectedResponse = new gagvr::CampaignSharedSet
+            {
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
+                Status = gagve::CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Enabled,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignSharedSetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignSharedSet>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignSharedSet responseCallSettings = await client.GetCampaignSharedSetAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignSharedSet responseCancellationToken = await client.GetCampaignSharedSetAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetCampaignSharedSet()
         {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
-            GetCampaignSharedSetRequest expectedRequest = new GetCampaignSharedSetRequest
-            {
-                ResourceName = new CampaignSharedSetName("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]").ToString(),
-            };
-            CampaignSharedSet expectedResponse = new CampaignSharedSet
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignSharedSet(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignSharedSetName("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]").ToString();
-            CampaignSharedSet response = client.GetCampaignSharedSet(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetCampaignSharedSetAsync()
-        {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
-            GetCampaignSharedSetRequest expectedRequest = new GetCampaignSharedSetRequest
-            {
-                ResourceName = new CampaignSharedSetName("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]").ToString(),
-            };
-            CampaignSharedSet expectedResponse = new CampaignSharedSet
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetCampaignSharedSetAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignSharedSet>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new CampaignSharedSetName("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]").ToString();
-            CampaignSharedSet response = await client.GetCampaignSharedSetAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetCampaignSharedSet2()
-        {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
             GetCampaignSharedSetRequest request = new GetCampaignSharedSetRequest
             {
-                ResourceName = new CampaignSharedSetName("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]").ToString(),
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
             };
-            CampaignSharedSet expectedResponse = new CampaignSharedSet
+            gagvr::CampaignSharedSet expectedResponse = new gagvr::CampaignSharedSet
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
+                Status = gagve::CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Enabled,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
             };
-            mockGrpcClient.Setup(x => x.GetCampaignSharedSet(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetCampaignSharedSet(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignSharedSet response = client.GetCampaignSharedSet(request);
+            gagvr::CampaignSharedSet response = client.GetCampaignSharedSet(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetCampaignSharedSetAsync2()
+        public async stt::Task GetCampaignSharedSetAsync()
         {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
             GetCampaignSharedSetRequest request = new GetCampaignSharedSetRequest
             {
-                ResourceName = new CampaignSharedSetName("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]").ToString(),
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
             };
-            CampaignSharedSet expectedResponse = new CampaignSharedSet
+            gagvr::CampaignSharedSet expectedResponse = new gagvr::CampaignSharedSet
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
+                Status = gagve::CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Enabled,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
             };
-            mockGrpcClient.Setup(x => x.GetCampaignSharedSetAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<CampaignSharedSet>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetCampaignSharedSetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignSharedSet>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            CampaignSharedSet response = await client.GetCampaignSharedSetAsync(request);
+            gagvr::CampaignSharedSet responseCallSettings = await client.GetCampaignSharedSetAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignSharedSet responseCancellationToken = await client.GetCampaignSharedSetAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetCampaignSharedSetResourceNames()
+        {
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignSharedSetRequest request = new GetCampaignSharedSetRequest
+            {
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
+            };
+            gagvr::CampaignSharedSet expectedResponse = new gagvr::CampaignSharedSet
+            {
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
+                Status = gagve::CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Enabled,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignSharedSet(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::CampaignSharedSet response = client.GetCampaignSharedSet(request.ResourceNameAsCampaignSharedSetName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateCampaignSharedSets()
+        public async stt::Task GetCampaignSharedSetResourceNamesAsync()
         {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
-            MutateCampaignSharedSetsRequest expectedRequest = new MutateCampaignSharedSetsRequest
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
+            GetCampaignSharedSetRequest request = new GetCampaignSharedSetRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
             };
-            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignSharedSets(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::CampaignSharedSet expectedResponse = new gagvr::CampaignSharedSet
+            {
+                ResourceNameAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER]", "[CAMPAIGN_SHARED_SET]"),
+                Status = gagve::CampaignSharedSetStatusEnum.Types.CampaignSharedSetStatus.Enabled,
+                CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER]", "[CAMPAIGN]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER]", "[SHARED_SET]"),
+            };
+            mockGrpcClient.Setup(x => x.GetCampaignSharedSetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CampaignSharedSet>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignSharedSetOperation> operations = new List<CampaignSharedSetOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignSharedSetsResponse response = client.MutateCampaignSharedSets(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::CampaignSharedSet responseCallSettings = await client.GetCampaignSharedSetAsync(request.ResourceNameAsCampaignSharedSetName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::CampaignSharedSet responseCancellationToken = await client.GetCampaignSharedSetAsync(request.ResourceNameAsCampaignSharedSetName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateCampaignSharedSetsAsync()
+        public void MutateCampaignSharedSetsRequestObject()
         {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
-            MutateCampaignSharedSetsRequest expectedRequest = new MutateCampaignSharedSetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignSharedSetsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignSharedSetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignSharedSetOperation> operations = new List<CampaignSharedSetOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateCampaignSharedSetsResponse response = await client.MutateCampaignSharedSetsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignSharedSets2()
-        {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
-            MutateCampaignSharedSetsRequest expectedRequest = new MutateCampaignSharedSetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignSharedSets(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignSharedSetOperation> operations = new List<CampaignSharedSetOperation>();
-            MutateCampaignSharedSetsResponse response = client.MutateCampaignSharedSets(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateCampaignSharedSetsAsync2()
-        {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
-            MutateCampaignSharedSetsRequest expectedRequest = new MutateCampaignSharedSetsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignSharedSetsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignSharedSetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<CampaignSharedSetOperation> operations = new List<CampaignSharedSetOperation>();
-            MutateCampaignSharedSetsResponse response = await client.MutateCampaignSharedSetsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateCampaignSharedSets3()
-        {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignSharedSetsRequest request = new MutateCampaignSharedSetsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignSharedSetOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignSharedSets(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignSharedSetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignSharedSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
             MutateCampaignSharedSetsResponse response = client.MutateCampaignSharedSets(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +198,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateCampaignSharedSetsAsync3()
+        public async stt::Task MutateCampaignSharedSetsRequestObjectAsync()
         {
-            Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(MockBehavior.Strict);
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
             MutateCampaignSharedSetsRequest request = new MutateCampaignSharedSetsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignSharedSetOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse();
-            mockGrpcClient.Setup(x => x.MutateCampaignSharedSetsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateCampaignSharedSetsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignSharedSetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignSharedSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignSharedSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
-            MutateCampaignSharedSetsResponse response = await client.MutateCampaignSharedSetsAsync(request);
+            MutateCampaignSharedSetsResponse responseCallSettings = await client.MutateCampaignSharedSetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignSharedSetsResponse responseCancellationToken = await client.MutateCampaignSharedSetsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateCampaignSharedSets()
+        {
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignSharedSetsRequest request = new MutateCampaignSharedSetsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignSharedSetOperation(),
+                },
+            };
+            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignSharedSetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignSharedSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignSharedSetsResponse response = client.MutateCampaignSharedSets(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateCampaignSharedSetsAsync()
+        {
+            moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
+            MutateCampaignSharedSetsRequest request = new MutateCampaignSharedSetsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new CampaignSharedSetOperation(),
+                },
+            };
+            MutateCampaignSharedSetsResponse expectedResponse = new MutateCampaignSharedSetsResponse
+            {
+                Results =
+                {
+                    new MutateCampaignSharedSetResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateCampaignSharedSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignSharedSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CampaignSharedSetServiceClient client = new CampaignSharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            MutateCampaignSharedSetsResponse responseCallSettings = await client.MutateCampaignSharedSetsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateCampaignSharedSetsResponse responseCancellationToken = await client.MutateCampaignSharedSetsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

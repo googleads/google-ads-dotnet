@@ -64,9 +64,9 @@ function dotnet_library::build_library() {
 
   echo "Run the tests."
   echo "=============="
-  # dotnet build --configuration Release  \
-  #    --source "https://api.nuget.org/v3/index.json;${DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH}" \
-  #    "${DOTNET_CLIENT_LIBRARY_PATH}/tests/Google.Ads.GoogleAds.Tests.csproj"
+  dotnet build --configuration Release  \
+      --source "https://api.nuget.org/v3/index.json;${DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH}" \
+      "${DOTNET_CLIENT_LIBRARY_PATH}/tests/Google.Ads.GoogleAds.Tests.csproj"
 }
 
 dotnet_library::main

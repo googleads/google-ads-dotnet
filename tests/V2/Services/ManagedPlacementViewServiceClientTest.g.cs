@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedManagedPlacementViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedManagedPlacementViewServiceClientTest
     {
+        [Test]
+        public void GetManagedPlacementViewRequestObject()
+        {
+            moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(moq::MockBehavior.Strict);
+            GetManagedPlacementViewRequest request = new GetManagedPlacementViewRequest
+            {
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
+            };
+            gagvr::ManagedPlacementView expectedResponse = new gagvr::ManagedPlacementView
+            {
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetManagedPlacementView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ManagedPlacementViewServiceClient client = new ManagedPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ManagedPlacementView response = client.GetManagedPlacementView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetManagedPlacementViewRequestObjectAsync()
+        {
+            moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(moq::MockBehavior.Strict);
+            GetManagedPlacementViewRequest request = new GetManagedPlacementViewRequest
+            {
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
+            };
+            gagvr::ManagedPlacementView expectedResponse = new gagvr::ManagedPlacementView
+            {
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetManagedPlacementViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ManagedPlacementView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ManagedPlacementViewServiceClient client = new ManagedPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ManagedPlacementView responseCallSettings = await client.GetManagedPlacementViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ManagedPlacementView responseCancellationToken = await client.GetManagedPlacementViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetManagedPlacementView()
         {
-            Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(MockBehavior.Strict);
-            GetManagedPlacementViewRequest expectedRequest = new GetManagedPlacementViewRequest
-            {
-                ResourceName = new ManagedPlacementViewName("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]").ToString(),
-            };
-            ManagedPlacementView expectedResponse = new ManagedPlacementView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetManagedPlacementView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            ManagedPlacementViewServiceClient client = new ManagedPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ManagedPlacementViewName("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]").ToString();
-            ManagedPlacementView response = client.GetManagedPlacementView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetManagedPlacementViewAsync()
-        {
-            Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(MockBehavior.Strict);
-            GetManagedPlacementViewRequest expectedRequest = new GetManagedPlacementViewRequest
-            {
-                ResourceName = new ManagedPlacementViewName("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]").ToString(),
-            };
-            ManagedPlacementView expectedResponse = new ManagedPlacementView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetManagedPlacementViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ManagedPlacementView>(Task.FromResult(expectedResponse), null, null, null, null));
-            ManagedPlacementViewServiceClient client = new ManagedPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new ManagedPlacementViewName("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]").ToString();
-            ManagedPlacementView response = await client.GetManagedPlacementViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetManagedPlacementView2()
-        {
-            Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(moq::MockBehavior.Strict);
             GetManagedPlacementViewRequest request = new GetManagedPlacementViewRequest
             {
-                ResourceName = new ManagedPlacementViewName("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]").ToString(),
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
             };
-            ManagedPlacementView expectedResponse = new ManagedPlacementView
+            gagvr::ManagedPlacementView expectedResponse = new gagvr::ManagedPlacementView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetManagedPlacementView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetManagedPlacementView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ManagedPlacementViewServiceClient client = new ManagedPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
-            ManagedPlacementView response = client.GetManagedPlacementView(request);
+            gagvr::ManagedPlacementView response = client.GetManagedPlacementView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetManagedPlacementViewAsync2()
+        public async stt::Task GetManagedPlacementViewAsync()
         {
-            Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(moq::MockBehavior.Strict);
             GetManagedPlacementViewRequest request = new GetManagedPlacementViewRequest
             {
-                ResourceName = new ManagedPlacementViewName("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]").ToString(),
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
             };
-            ManagedPlacementView expectedResponse = new ManagedPlacementView
+            gagvr::ManagedPlacementView expectedResponse = new gagvr::ManagedPlacementView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetManagedPlacementViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ManagedPlacementView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetManagedPlacementViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ManagedPlacementView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ManagedPlacementViewServiceClient client = new ManagedPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
-            ManagedPlacementView response = await client.GetManagedPlacementViewAsync(request);
+            gagvr::ManagedPlacementView responseCallSettings = await client.GetManagedPlacementViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ManagedPlacementView responseCancellationToken = await client.GetManagedPlacementViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetManagedPlacementViewResourceNames()
+        {
+            moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(moq::MockBehavior.Strict);
+            GetManagedPlacementViewRequest request = new GetManagedPlacementViewRequest
+            {
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
+            };
+            gagvr::ManagedPlacementView expectedResponse = new gagvr::ManagedPlacementView
+            {
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetManagedPlacementView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ManagedPlacementViewServiceClient client = new ManagedPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ManagedPlacementView response = client.GetManagedPlacementView(request.ResourceNameAsManagedPlacementViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetManagedPlacementViewResourceNamesAsync()
+        {
+            moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient> mockGrpcClient = new moq::Mock<ManagedPlacementViewService.ManagedPlacementViewServiceClient>(moq::MockBehavior.Strict);
+            GetManagedPlacementViewRequest request = new GetManagedPlacementViewRequest
+            {
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
+            };
+            gagvr::ManagedPlacementView expectedResponse = new gagvr::ManagedPlacementView
+            {
+                ResourceNameAsManagedPlacementViewName = gagvr::ManagedPlacementViewName.FromCustomerManagedPlacementView("[CUSTOMER]", "[MANAGED_PLACEMENT_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetManagedPlacementViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ManagedPlacementView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ManagedPlacementViewServiceClient client = new ManagedPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::ManagedPlacementView responseCallSettings = await client.GetManagedPlacementViewAsync(request.ResourceNameAsManagedPlacementViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::ManagedPlacementView responseCancellationToken = await client.GetManagedPlacementViewAsync(request.ResourceNameAsManagedPlacementViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -14,33 +14,32 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedReachPlanServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedReachPlanServiceClientTest
     {
         [Test]
-        public void ListPlannableLocations()
+        public void ListPlannableLocationsRequestObject()
         {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
-            ListPlannableLocationsRequest request = new ListPlannableLocationsRequest();
-            ListPlannableLocationsResponse expectedResponse = new ListPlannableLocationsResponse();
-            mockGrpcClient.Setup(x => x.ListPlannableLocations(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
+            ListPlannableLocationsRequest request = new ListPlannableLocationsRequest { };
+            ListPlannableLocationsResponse expectedResponse = new ListPlannableLocationsResponse
+            {
+                PlannableLocations =
+                {
+                    new PlannableLocation(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListPlannableLocations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
             ListPlannableLocationsResponse response = client.ListPlannableLocations(request);
             Assert.AreEqual(expectedResponse, response);
@@ -48,66 +47,42 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task ListPlannableLocationsAsync()
+        public async stt::Task ListPlannableLocationsRequestObjectAsync()
         {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
-            ListPlannableLocationsRequest request = new ListPlannableLocationsRequest();
-            ListPlannableLocationsResponse expectedResponse = new ListPlannableLocationsResponse();
-            mockGrpcClient.Setup(x => x.ListPlannableLocationsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListPlannableLocationsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
-            ListPlannableLocationsResponse response = await client.ListPlannableLocationsAsync(request);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void ListPlannableProducts()
-        {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
-            ListPlannableProductsRequest expectedRequest = new ListPlannableProductsRequest
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
+            ListPlannableLocationsRequest request = new ListPlannableLocationsRequest { };
+            ListPlannableLocationsResponse expectedResponse = new ListPlannableLocationsResponse
             {
-                PlannableLocationId = null,
+                PlannableLocations =
+                {
+                    new PlannableLocation(),
+                },
             };
-            ListPlannableProductsResponse expectedResponse = new ListPlannableProductsResponse();
-            mockGrpcClient.Setup(x => x.ListPlannableProducts(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.ListPlannableLocationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPlannableLocationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
-            string plannableLocationId = null;
-            ListPlannableProductsResponse response = client.ListPlannableProducts(plannableLocationId);
-            Assert.AreEqual(expectedResponse, response);
+            ListPlannableLocationsResponse responseCallSettings = await client.ListPlannableLocationsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListPlannableLocationsResponse responseCancellationToken = await client.ListPlannableLocationsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task ListPlannableProductsAsync()
+        public void ListPlannableProductsRequestObject()
         {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
-            ListPlannableProductsRequest expectedRequest = new ListPlannableProductsRequest
-            {
-                PlannableLocationId = null,
-            };
-            ListPlannableProductsResponse expectedResponse = new ListPlannableProductsResponse();
-            mockGrpcClient.Setup(x => x.ListPlannableProductsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListPlannableProductsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
-            string plannableLocationId = null;
-            ListPlannableProductsResponse response = await client.ListPlannableProductsAsync(plannableLocationId);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void ListPlannableProducts2()
-        {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
             ListPlannableProductsRequest request = new ListPlannableProductsRequest
             {
-                PlannableLocationId = null,
+                PlannableLocationId = "plannable_location_idbae428fa",
             };
-            ListPlannableProductsResponse expectedResponse = new ListPlannableProductsResponse();
-            mockGrpcClient.Setup(x => x.ListPlannableProducts(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            ListPlannableProductsResponse expectedResponse = new ListPlannableProductsResponse
+            {
+                ProductMetadata =
+                {
+                    new ProductMetadata(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListPlannableProducts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
             ListPlannableProductsResponse response = client.ListPlannableProducts(request);
             Assert.AreEqual(expectedResponse, response);
@@ -115,37 +90,95 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task ListPlannableProductsAsync2()
+        public async stt::Task ListPlannableProductsRequestObjectAsync()
         {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
             ListPlannableProductsRequest request = new ListPlannableProductsRequest
             {
-                PlannableLocationId = null,
+                PlannableLocationId = "plannable_location_idbae428fa",
             };
-            ListPlannableProductsResponse expectedResponse = new ListPlannableProductsResponse();
-            mockGrpcClient.Setup(x => x.ListPlannableProductsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListPlannableProductsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            ListPlannableProductsResponse expectedResponse = new ListPlannableProductsResponse
+            {
+                ProductMetadata =
+                {
+                    new ProductMetadata(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListPlannableProductsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPlannableProductsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
-            ListPlannableProductsResponse response = await client.ListPlannableProductsAsync(request);
+            ListPlannableProductsResponse responseCallSettings = await client.ListPlannableProductsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListPlannableProductsResponse responseCancellationToken = await client.ListPlannableProductsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void ListPlannableProducts()
+        {
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
+            ListPlannableProductsRequest request = new ListPlannableProductsRequest
+            {
+                PlannableLocationId = "plannable_location_idbae428fa",
+            };
+            ListPlannableProductsResponse expectedResponse = new ListPlannableProductsResponse
+            {
+                ProductMetadata =
+                {
+                    new ProductMetadata(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListPlannableProducts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ListPlannableProductsResponse response = client.ListPlannableProducts(request.PlannableLocationId);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void GenerateProductMixIdeas()
+        public async stt::Task ListPlannableProductsAsync()
         {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
+            ListPlannableProductsRequest request = new ListPlannableProductsRequest
+            {
+                PlannableLocationId = "plannable_location_idbae428fa",
+            };
+            ListPlannableProductsResponse expectedResponse = new ListPlannableProductsResponse
+            {
+                ProductMetadata =
+                {
+                    new ProductMetadata(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListPlannableProductsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPlannableProductsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ListPlannableProductsResponse responseCallSettings = await client.ListPlannableProductsAsync(request.PlannableLocationId, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListPlannableProductsResponse responseCancellationToken = await client.ListPlannableProductsAsync(request.PlannableLocationId, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GenerateProductMixIdeasRequestObject()
+        {
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateProductMixIdeasRequest request = new GenerateProductMixIdeasRequest
             {
-                CustomerId = "customerId-1772061412",
-                PlannableLocationId = null,
-                CurrencyCode = null,
-                BudgetMicros = null,
+                CustomerId = "customer_id3b3724cb",
+                PlannableLocationId = "plannable_location_idbae428fa",
+                CurrencyCode = "currency_code7f81e352",
+                BudgetMicros = 6302061979031921068L,
                 Preferences = new Preferences(),
             };
-            GenerateProductMixIdeasResponse expectedResponse = new GenerateProductMixIdeasResponse();
-            mockGrpcClient.Setup(x => x.GenerateProductMixIdeas(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            GenerateProductMixIdeasResponse expectedResponse = new GenerateProductMixIdeasResponse
+            {
+                ProductAllocation =
+                {
+                    new ProductAllocation(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateProductMixIdeas(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
             GenerateProductMixIdeasResponse response = client.GenerateProductMixIdeas(request);
             Assert.AreEqual(expectedResponse, response);
@@ -153,43 +186,108 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task GenerateProductMixIdeasAsync()
+        public async stt::Task GenerateProductMixIdeasRequestObjectAsync()
         {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateProductMixIdeasRequest request = new GenerateProductMixIdeasRequest
             {
-                CustomerId = "customerId-1772061412",
-                PlannableLocationId = null,
-                CurrencyCode = null,
-                BudgetMicros = null,
+                CustomerId = "customer_id3b3724cb",
+                PlannableLocationId = "plannable_location_idbae428fa",
+                CurrencyCode = "currency_code7f81e352",
+                BudgetMicros = 6302061979031921068L,
                 Preferences = new Preferences(),
             };
-            GenerateProductMixIdeasResponse expectedResponse = new GenerateProductMixIdeasResponse();
-            mockGrpcClient.Setup(x => x.GenerateProductMixIdeasAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GenerateProductMixIdeasResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            GenerateProductMixIdeasResponse expectedResponse = new GenerateProductMixIdeasResponse
+            {
+                ProductAllocation =
+                {
+                    new ProductAllocation(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateProductMixIdeasAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateProductMixIdeasResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
-            GenerateProductMixIdeasResponse response = await client.GenerateProductMixIdeasAsync(request);
+            GenerateProductMixIdeasResponse responseCallSettings = await client.GenerateProductMixIdeasAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateProductMixIdeasResponse responseCancellationToken = await client.GenerateProductMixIdeasAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GenerateProductMixIdeas()
+        {
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateProductMixIdeasRequest request = new GenerateProductMixIdeasRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                PlannableLocationId = "plannable_location_idbae428fa",
+                CurrencyCode = "currency_code7f81e352",
+                BudgetMicros = 6302061979031921068L,
+            };
+            GenerateProductMixIdeasResponse expectedResponse = new GenerateProductMixIdeasResponse
+            {
+                ProductAllocation =
+                {
+                    new ProductAllocation(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateProductMixIdeas(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateProductMixIdeasResponse response = client.GenerateProductMixIdeas(request.CustomerId, request.PlannableLocationId, request.CurrencyCode, request.BudgetMicros);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void GenerateReachForecast()
+        public async stt::Task GenerateProductMixIdeasAsync()
         {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateProductMixIdeasRequest request = new GenerateProductMixIdeasRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                PlannableLocationId = "plannable_location_idbae428fa",
+                CurrencyCode = "currency_code7f81e352",
+                BudgetMicros = 6302061979031921068L,
+            };
+            GenerateProductMixIdeasResponse expectedResponse = new GenerateProductMixIdeasResponse
+            {
+                ProductAllocation =
+                {
+                    new ProductAllocation(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateProductMixIdeasAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateProductMixIdeasResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateProductMixIdeasResponse responseCallSettings = await client.GenerateProductMixIdeasAsync(request.CustomerId, request.PlannableLocationId, request.CurrencyCode, request.BudgetMicros, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateProductMixIdeasResponse responseCancellationToken = await client.GenerateProductMixIdeasAsync(request.CustomerId, request.PlannableLocationId, request.CurrencyCode, request.BudgetMicros, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GenerateReachForecastRequestObject()
+        {
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateReachForecastRequest request = new GenerateReachForecastRequest
             {
-                CustomerId = "customerId-1772061412",
-                CurrencyCode = null,
+                CustomerId = "customer_id3b3724cb",
+                CurrencyCode = "currency_code7f81e352",
                 CampaignDuration = new CampaignDuration(),
-                CookieFrequencyCap = null,
-                MinEffectiveFrequency = null,
+                CookieFrequencyCap = 1624044206,
+                MinEffectiveFrequency = -519821093,
                 Targeting = new Targeting(),
-                PlannedProducts = { },
+                PlannedProducts =
+                {
+                    new PlannedProduct(),
+                },
             };
-            GenerateReachForecastResponse expectedResponse = new GenerateReachForecastResponse();
-            mockGrpcClient.Setup(x => x.GenerateReachForecast(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            GenerateReachForecastResponse expectedResponse = new GenerateReachForecastResponse
+            {
+                OnTargetAudienceMetrics = new OnTargetAudienceMetrics(),
+                ReachCurve = new ReachCurve(),
+            };
+            mockGrpcClient.Setup(x => x.GenerateReachForecast(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
             GenerateReachForecastResponse response = client.GenerateReachForecast(request);
             Assert.AreEqual(expectedResponse, response);
@@ -197,27 +295,86 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task GenerateReachForecastAsync()
+        public async stt::Task GenerateReachForecastRequestObjectAsync()
         {
-            Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new Mock<ReachPlanService.ReachPlanServiceClient>(MockBehavior.Strict);
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateReachForecastRequest request = new GenerateReachForecastRequest
             {
-                CustomerId = "customerId-1772061412",
-                CurrencyCode = null,
+                CustomerId = "customer_id3b3724cb",
+                CurrencyCode = "currency_code7f81e352",
                 CampaignDuration = new CampaignDuration(),
-                CookieFrequencyCap = null,
-                MinEffectiveFrequency = null,
+                CookieFrequencyCap = 1624044206,
+                MinEffectiveFrequency = -519821093,
                 Targeting = new Targeting(),
-                PlannedProducts = { },
+                PlannedProducts =
+                {
+                    new PlannedProduct(),
+                },
             };
-            GenerateReachForecastResponse expectedResponse = new GenerateReachForecastResponse();
-            mockGrpcClient.Setup(x => x.GenerateReachForecastAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GenerateReachForecastResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            GenerateReachForecastResponse expectedResponse = new GenerateReachForecastResponse
+            {
+                OnTargetAudienceMetrics = new OnTargetAudienceMetrics(),
+                ReachCurve = new ReachCurve(),
+            };
+            mockGrpcClient.Setup(x => x.GenerateReachForecastAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateReachForecastResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
-            GenerateReachForecastResponse response = await client.GenerateReachForecastAsync(request);
+            GenerateReachForecastResponse responseCallSettings = await client.GenerateReachForecastAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateReachForecastResponse responseCancellationToken = await client.GenerateReachForecastAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GenerateReachForecast()
+        {
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateReachForecastRequest request = new GenerateReachForecastRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                CampaignDuration = new CampaignDuration(),
+                PlannedProducts =
+                {
+                    new PlannedProduct(),
+                },
+            };
+            GenerateReachForecastResponse expectedResponse = new GenerateReachForecastResponse
+            {
+                OnTargetAudienceMetrics = new OnTargetAudienceMetrics(),
+                ReachCurve = new ReachCurve(),
+            };
+            mockGrpcClient.Setup(x => x.GenerateReachForecast(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateReachForecastResponse response = client.GenerateReachForecast(request.CustomerId, request.CampaignDuration, request.PlannedProducts);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GenerateReachForecastAsync()
+        {
+            moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateReachForecastRequest request = new GenerateReachForecastRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                CampaignDuration = new CampaignDuration(),
+                PlannedProducts =
+                {
+                    new PlannedProduct(),
+                },
+            };
+            GenerateReachForecastResponse expectedResponse = new GenerateReachForecastResponse
+            {
+                OnTargetAudienceMetrics = new OnTargetAudienceMetrics(),
+                ReachCurve = new ReachCurve(),
+            };
+            mockGrpcClient.Setup(x => x.GenerateReachForecastAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateReachForecastResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateReachForecastResponse responseCallSettings = await client.GenerateReachForecastAsync(request.CustomerId, request.CampaignDuration, request.PlannedProducts, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateReachForecastResponse responseCancellationToken = await client.GenerateReachForecastAsync(request.CustomerId, request.CampaignDuration, request.PlannedProducts, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

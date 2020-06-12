@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,138 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAgeRangeViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAgeRangeViewServiceClientTest
     {
+        [Test]
+        public void GetAgeRangeViewRequestObject()
+        {
+            moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
+            GetAgeRangeViewRequest request = new GetAgeRangeViewRequest
+            {
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
+            };
+            gagvr::AgeRangeView expectedResponse = new gagvr::AgeRangeView
+            {
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAgeRangeView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AgeRangeViewServiceClient client = new AgeRangeViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AgeRangeView response = client.GetAgeRangeView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAgeRangeViewRequestObjectAsync()
+        {
+            moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
+            GetAgeRangeViewRequest request = new GetAgeRangeViewRequest
+            {
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
+            };
+            gagvr::AgeRangeView expectedResponse = new gagvr::AgeRangeView
+            {
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAgeRangeViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AgeRangeView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AgeRangeViewServiceClient client = new AgeRangeViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AgeRangeView responseCallSettings = await client.GetAgeRangeViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AgeRangeView responseCancellationToken = await client.GetAgeRangeViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAgeRangeView()
         {
-            Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new Mock<AgeRangeViewService.AgeRangeViewServiceClient>(MockBehavior.Strict);
-            GetAgeRangeViewRequest expectedRequest = new GetAgeRangeViewRequest
-            {
-                ResourceName = new AgeRangeViewName("[CUSTOMER]", "[AGE_RANGE_VIEW]").ToString(),
-            };
-            AgeRangeView expectedResponse = new AgeRangeView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAgeRangeView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AgeRangeViewServiceClient client = new AgeRangeViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AgeRangeViewName("[CUSTOMER]", "[AGE_RANGE_VIEW]").ToString();
-            AgeRangeView response = client.GetAgeRangeView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAgeRangeViewAsync()
-        {
-            Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new Mock<AgeRangeViewService.AgeRangeViewServiceClient>(MockBehavior.Strict);
-            GetAgeRangeViewRequest expectedRequest = new GetAgeRangeViewRequest
-            {
-                ResourceName = new AgeRangeViewName("[CUSTOMER]", "[AGE_RANGE_VIEW]").ToString(),
-            };
-            AgeRangeView expectedResponse = new AgeRangeView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAgeRangeViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AgeRangeView>(Task.FromResult(expectedResponse), null, null, null, null));
-            AgeRangeViewServiceClient client = new AgeRangeViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AgeRangeViewName("[CUSTOMER]", "[AGE_RANGE_VIEW]").ToString();
-            AgeRangeView response = await client.GetAgeRangeViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAgeRangeView2()
-        {
-            Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new Mock<AgeRangeViewService.AgeRangeViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
             GetAgeRangeViewRequest request = new GetAgeRangeViewRequest
             {
-                ResourceName = new AgeRangeViewName("[CUSTOMER]", "[AGE_RANGE_VIEW]").ToString(),
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
             };
-            AgeRangeView expectedResponse = new AgeRangeView
+            gagvr::AgeRangeView expectedResponse = new gagvr::AgeRangeView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetAgeRangeView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAgeRangeView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AgeRangeViewServiceClient client = new AgeRangeViewServiceClientImpl(mockGrpcClient.Object, null);
-            AgeRangeView response = client.GetAgeRangeView(request);
+            gagvr::AgeRangeView response = client.GetAgeRangeView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAgeRangeViewAsync2()
+        public async stt::Task GetAgeRangeViewAsync()
         {
-            Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new Mock<AgeRangeViewService.AgeRangeViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
             GetAgeRangeViewRequest request = new GetAgeRangeViewRequest
             {
-                ResourceName = new AgeRangeViewName("[CUSTOMER]", "[AGE_RANGE_VIEW]").ToString(),
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
             };
-            AgeRangeView expectedResponse = new AgeRangeView
+            gagvr::AgeRangeView expectedResponse = new gagvr::AgeRangeView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
             };
-            mockGrpcClient.Setup(x => x.GetAgeRangeViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AgeRangeView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAgeRangeViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AgeRangeView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AgeRangeViewServiceClient client = new AgeRangeViewServiceClientImpl(mockGrpcClient.Object, null);
-            AgeRangeView response = await client.GetAgeRangeViewAsync(request);
+            gagvr::AgeRangeView responseCallSettings = await client.GetAgeRangeViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AgeRangeView responseCancellationToken = await client.GetAgeRangeViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAgeRangeViewResourceNames()
+        {
+            moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
+            GetAgeRangeViewRequest request = new GetAgeRangeViewRequest
+            {
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
+            };
+            gagvr::AgeRangeView expectedResponse = new gagvr::AgeRangeView
+            {
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAgeRangeView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AgeRangeViewServiceClient client = new AgeRangeViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AgeRangeView response = client.GetAgeRangeView(request.ResourceNameAsAgeRangeViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetAgeRangeViewResourceNamesAsync()
+        {
+            moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
+            GetAgeRangeViewRequest request = new GetAgeRangeViewRequest
+            {
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
+            };
+            gagvr::AgeRangeView expectedResponse = new gagvr::AgeRangeView
+            {
+                ResourceNameAsAgeRangeViewName = gagvr::AgeRangeViewName.FromCustomerAgeRangeView("[CUSTOMER]", "[AGE_RANGE_VIEW]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAgeRangeViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AgeRangeView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AgeRangeViewServiceClient client = new AgeRangeViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AgeRangeView responseCallSettings = await client.GetAgeRangeViewAsync(request.ResourceNameAsAgeRangeViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AgeRangeView responseCancellationToken = await client.GetAgeRangeViewAsync(request.ResourceNameAsAgeRangeViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,289 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedGoogleAdsFieldServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedGoogleAdsFieldServiceClientTest
     {
+        [Test]
+        public void GetGoogleAdsFieldRequestObject()
+        {
+            moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
+            GetGoogleAdsFieldRequest request = new GetGoogleAdsFieldRequest
+            {
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+            };
+            gagvr::GoogleAdsField expectedResponse = new gagvr::GoogleAdsField
+            {
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                GoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                Category = gagve::GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Segment,
+                Selectable = true,
+                Filterable = true,
+                Sortable = true,
+                SelectableWith =
+                {
+                    "selectable_with6b2ad4c4",
+                },
+                AttributeResources =
+                {
+                    "attribute_resources3f8a5e5c",
+                },
+                Metrics = { "metrics7cd659aa", },
+                Segments =
+                {
+                    "segments982d981f",
+                },
+                EnumValues =
+                {
+                    "enum_values30797dbe",
+                },
+                DataType = gagve::GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Message,
+                TypeUrl = "type_urlfde5623b",
+                IsRepeated = false,
+            };
+            mockGrpcClient.Setup(x => x.GetGoogleAdsField(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GoogleAdsField response = client.GetGoogleAdsField(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetGoogleAdsFieldRequestObjectAsync()
+        {
+            moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
+            GetGoogleAdsFieldRequest request = new GetGoogleAdsFieldRequest
+            {
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+            };
+            gagvr::GoogleAdsField expectedResponse = new gagvr::GoogleAdsField
+            {
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                GoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                Category = gagve::GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Segment,
+                Selectable = true,
+                Filterable = true,
+                Sortable = true,
+                SelectableWith =
+                {
+                    "selectable_with6b2ad4c4",
+                },
+                AttributeResources =
+                {
+                    "attribute_resources3f8a5e5c",
+                },
+                Metrics = { "metrics7cd659aa", },
+                Segments =
+                {
+                    "segments982d981f",
+                },
+                EnumValues =
+                {
+                    "enum_values30797dbe",
+                },
+                DataType = gagve::GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Message,
+                TypeUrl = "type_urlfde5623b",
+                IsRepeated = false,
+            };
+            mockGrpcClient.Setup(x => x.GetGoogleAdsFieldAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GoogleAdsField>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GoogleAdsField responseCallSettings = await client.GetGoogleAdsFieldAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GoogleAdsField responseCancellationToken = await client.GetGoogleAdsFieldAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetGoogleAdsField()
         {
-            Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(MockBehavior.Strict);
-            GetGoogleAdsFieldRequest expectedRequest = new GetGoogleAdsFieldRequest
-            {
-                ResourceName = new GoogleAdsFieldName("[GOOGLE_ADS_FIELD]").ToString(),
-            };
-            GoogleAdsField expectedResponse = new GoogleAdsField
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGoogleAdsField(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GoogleAdsFieldName("[GOOGLE_ADS_FIELD]").ToString();
-            GoogleAdsField response = client.GetGoogleAdsField(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetGoogleAdsFieldAsync()
-        {
-            Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(MockBehavior.Strict);
-            GetGoogleAdsFieldRequest expectedRequest = new GetGoogleAdsFieldRequest
-            {
-                ResourceName = new GoogleAdsFieldName("[GOOGLE_ADS_FIELD]").ToString(),
-            };
-            GoogleAdsField expectedResponse = new GoogleAdsField
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGoogleAdsFieldAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GoogleAdsField>(Task.FromResult(expectedResponse), null, null, null, null));
-            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GoogleAdsFieldName("[GOOGLE_ADS_FIELD]").ToString();
-            GoogleAdsField response = await client.GetGoogleAdsFieldAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetGoogleAdsField2()
-        {
-            Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(MockBehavior.Strict);
+            moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
             GetGoogleAdsFieldRequest request = new GetGoogleAdsFieldRequest
             {
-                ResourceName = new GoogleAdsFieldName("[GOOGLE_ADS_FIELD]").ToString(),
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
             };
-            GoogleAdsField expectedResponse = new GoogleAdsField
+            gagvr::GoogleAdsField expectedResponse = new gagvr::GoogleAdsField
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                GoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                Category = gagve::GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Segment,
+                Selectable = true,
+                Filterable = true,
+                Sortable = true,
+                SelectableWith =
+                {
+                    "selectable_with6b2ad4c4",
+                },
+                AttributeResources =
+                {
+                    "attribute_resources3f8a5e5c",
+                },
+                Metrics = { "metrics7cd659aa", },
+                Segments =
+                {
+                    "segments982d981f",
+                },
+                EnumValues =
+                {
+                    "enum_values30797dbe",
+                },
+                DataType = gagve::GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Message,
+                TypeUrl = "type_urlfde5623b",
+                IsRepeated = false,
             };
-            mockGrpcClient.Setup(x => x.GetGoogleAdsField(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetGoogleAdsField(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
-            GoogleAdsField response = client.GetGoogleAdsField(request);
+            gagvr::GoogleAdsField response = client.GetGoogleAdsField(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetGoogleAdsFieldAsync2()
+        public async stt::Task GetGoogleAdsFieldAsync()
         {
-            Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(MockBehavior.Strict);
+            moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
             GetGoogleAdsFieldRequest request = new GetGoogleAdsFieldRequest
             {
-                ResourceName = new GoogleAdsFieldName("[GOOGLE_ADS_FIELD]").ToString(),
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
             };
-            GoogleAdsField expectedResponse = new GoogleAdsField
+            gagvr::GoogleAdsField expectedResponse = new gagvr::GoogleAdsField
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                GoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                Category = gagve::GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Segment,
+                Selectable = true,
+                Filterable = true,
+                Sortable = true,
+                SelectableWith =
+                {
+                    "selectable_with6b2ad4c4",
+                },
+                AttributeResources =
+                {
+                    "attribute_resources3f8a5e5c",
+                },
+                Metrics = { "metrics7cd659aa", },
+                Segments =
+                {
+                    "segments982d981f",
+                },
+                EnumValues =
+                {
+                    "enum_values30797dbe",
+                },
+                DataType = gagve::GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Message,
+                TypeUrl = "type_urlfde5623b",
+                IsRepeated = false,
             };
-            mockGrpcClient.Setup(x => x.GetGoogleAdsFieldAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GoogleAdsField>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetGoogleAdsFieldAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GoogleAdsField>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
-            GoogleAdsField response = await client.GetGoogleAdsFieldAsync(request);
+            gagvr::GoogleAdsField responseCallSettings = await client.GetGoogleAdsFieldAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GoogleAdsField responseCancellationToken = await client.GetGoogleAdsFieldAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetGoogleAdsFieldResourceNames()
+        {
+            moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
+            GetGoogleAdsFieldRequest request = new GetGoogleAdsFieldRequest
+            {
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+            };
+            gagvr::GoogleAdsField expectedResponse = new gagvr::GoogleAdsField
+            {
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                GoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                Category = gagve::GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Segment,
+                Selectable = true,
+                Filterable = true,
+                Sortable = true,
+                SelectableWith =
+                {
+                    "selectable_with6b2ad4c4",
+                },
+                AttributeResources =
+                {
+                    "attribute_resources3f8a5e5c",
+                },
+                Metrics = { "metrics7cd659aa", },
+                Segments =
+                {
+                    "segments982d981f",
+                },
+                EnumValues =
+                {
+                    "enum_values30797dbe",
+                },
+                DataType = gagve::GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Message,
+                TypeUrl = "type_urlfde5623b",
+                IsRepeated = false,
+            };
+            mockGrpcClient.Setup(x => x.GetGoogleAdsField(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GoogleAdsField response = client.GetGoogleAdsField(request.ResourceNameAsGoogleAdsFieldName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetGoogleAdsFieldResourceNamesAsync()
+        {
+            moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
+            GetGoogleAdsFieldRequest request = new GetGoogleAdsFieldRequest
+            {
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+            };
+            gagvr::GoogleAdsField expectedResponse = new gagvr::GoogleAdsField
+            {
+                ResourceNameAsGoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                GoogleAdsFieldName = gagvr::GoogleAdsFieldName.FromGoogleAdsField("[GOOGLE_ADS_FIELD]"),
+                Category = gagve::GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Segment,
+                Selectable = true,
+                Filterable = true,
+                Sortable = true,
+                SelectableWith =
+                {
+                    "selectable_with6b2ad4c4",
+                },
+                AttributeResources =
+                {
+                    "attribute_resources3f8a5e5c",
+                },
+                Metrics = { "metrics7cd659aa", },
+                Segments =
+                {
+                    "segments982d981f",
+                },
+                EnumValues =
+                {
+                    "enum_values30797dbe",
+                },
+                DataType = gagve::GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Message,
+                TypeUrl = "type_urlfde5623b",
+                IsRepeated = false,
+            };
+            mockGrpcClient.Setup(x => x.GetGoogleAdsFieldAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GoogleAdsField>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GoogleAdsField responseCallSettings = await client.GetGoogleAdsFieldAsync(request.ResourceNameAsGoogleAdsFieldName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GoogleAdsField responseCancellationToken = await client.GetGoogleAdsFieldAsync(request.ResourceNameAsGoogleAdsFieldName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

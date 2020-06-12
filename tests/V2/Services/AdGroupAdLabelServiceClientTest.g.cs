@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,208 +14,176 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using gr = Google.Rpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdGroupAdLabelServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdGroupAdLabelServiceClientTest
     {
+        [Test]
+        public void GetAdGroupAdLabelRequestObject()
+        {
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAdLabelRequest request = new GetAdGroupAdLabelRequest
+            {
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
+            };
+            gagvr::AdGroupAdLabel expectedResponse = new gagvr::AdGroupAdLabel
+            {
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAdLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAdLabel response = client.GetAdGroupAdLabel(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdGroupAdLabelRequestObjectAsync()
+        {
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAdLabelRequest request = new GetAdGroupAdLabelRequest
+            {
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
+            };
+            gagvr::AdGroupAdLabel expectedResponse = new gagvr::AdGroupAdLabel
+            {
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAdLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAdLabel>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAdLabel responseCallSettings = await client.GetAdGroupAdLabelAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupAdLabel responseCancellationToken = await client.GetAdGroupAdLabelAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAdGroupAdLabel()
         {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
-            GetAdGroupAdLabelRequest expectedRequest = new GetAdGroupAdLabelRequest
-            {
-                ResourceName = new AdGroupAdLabelName("[CUSTOMER]", "[AD_GROUP_AD_LABEL]").ToString(),
-            };
-            AdGroupAdLabel expectedResponse = new AdGroupAdLabel
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupAdLabel(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupAdLabelName("[CUSTOMER]", "[AD_GROUP_AD_LABEL]").ToString();
-            AdGroupAdLabel response = client.GetAdGroupAdLabel(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdGroupAdLabelAsync()
-        {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
-            GetAdGroupAdLabelRequest expectedRequest = new GetAdGroupAdLabelRequest
-            {
-                ResourceName = new AdGroupAdLabelName("[CUSTOMER]", "[AD_GROUP_AD_LABEL]").ToString(),
-            };
-            AdGroupAdLabel expectedResponse = new AdGroupAdLabel
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdGroupAdLabelAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupAdLabel>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdGroupAdLabelName("[CUSTOMER]", "[AD_GROUP_AD_LABEL]").ToString();
-            AdGroupAdLabel response = await client.GetAdGroupAdLabelAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAdGroupAdLabel2()
-        {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupAdLabelRequest request = new GetAdGroupAdLabelRequest
             {
-                ResourceName = new AdGroupAdLabelName("[CUSTOMER]", "[AD_GROUP_AD_LABEL]").ToString(),
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
             };
-            AdGroupAdLabel expectedResponse = new AdGroupAdLabel
+            gagvr::AdGroupAdLabel expectedResponse = new gagvr::AdGroupAdLabel
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupAdLabel(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAdGroupAdLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupAdLabel response = client.GetAdGroupAdLabel(request);
+            gagvr::AdGroupAdLabel response = client.GetAdGroupAdLabel(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdGroupAdLabelAsync2()
+        public async stt::Task GetAdGroupAdLabelAsync()
         {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
             GetAdGroupAdLabelRequest request = new GetAdGroupAdLabelRequest
             {
-                ResourceName = new AdGroupAdLabelName("[CUSTOMER]", "[AD_GROUP_AD_LABEL]").ToString(),
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
             };
-            AdGroupAdLabel expectedResponse = new AdGroupAdLabel
+            gagvr::AdGroupAdLabel expectedResponse = new gagvr::AdGroupAdLabel
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
-            mockGrpcClient.Setup(x => x.GetAdGroupAdLabelAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AdGroupAdLabel>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdGroupAdLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAdLabel>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
-            AdGroupAdLabel response = await client.GetAdGroupAdLabelAsync(request);
+            gagvr::AdGroupAdLabel responseCallSettings = await client.GetAdGroupAdLabelAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupAdLabel responseCancellationToken = await client.GetAdGroupAdLabelAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdGroupAdLabelResourceNames()
+        {
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAdLabelRequest request = new GetAdGroupAdLabelRequest
+            {
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
+            };
+            gagvr::AdGroupAdLabel expectedResponse = new gagvr::AdGroupAdLabel
+            {
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAdLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AdGroupAdLabel response = client.GetAdGroupAdLabel(request.ResourceNameAsAdGroupAdLabelName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateAdGroupAdLabels()
+        public async stt::Task GetAdGroupAdLabelResourceNamesAsync()
         {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
-            MutateAdGroupAdLabelsRequest expectedRequest = new MutateAdGroupAdLabelsRequest
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
+            GetAdGroupAdLabelRequest request = new GetAdGroupAdLabelRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
             };
-            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabels(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::AdGroupAdLabel expectedResponse = new gagvr::AdGroupAdLabel
+            {
+                ResourceNameAsAdGroupAdLabelName = gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER]", "[AD_GROUP_AD_LABEL]"),
+                AdGroupAdAsAdGroupAdName = gagvr::AdGroupAdName.FromCustomerAdGroupAd("[CUSTOMER]", "[AD_GROUP_AD]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
+            };
+            mockGrpcClient.Setup(x => x.GetAdGroupAdLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAdLabel>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupAdLabelOperation> operations = new List<AdGroupAdLabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdGroupAdLabelsResponse response = client.MutateAdGroupAdLabels(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::AdGroupAdLabel responseCallSettings = await client.GetAdGroupAdLabelAsync(request.ResourceNameAsAdGroupAdLabelName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AdGroupAdLabel responseCancellationToken = await client.GetAdGroupAdLabelAsync(request.ResourceNameAsAdGroupAdLabelName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateAdGroupAdLabelsAsync()
+        public void MutateAdGroupAdLabelsRequestObject()
         {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
-            MutateAdGroupAdLabelsRequest expectedRequest = new MutateAdGroupAdLabelsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-                PartialFailure = true,
-                ValidateOnly = false,
-            };
-            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabelsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupAdLabelsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupAdLabelOperation> operations = new List<AdGroupAdLabelOperation>();
-            bool partialFailure = true;
-            bool validateOnly = false;
-            MutateAdGroupAdLabelsResponse response = await client.MutateAdGroupAdLabelsAsync(customerId, operations, partialFailure, validateOnly);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdGroupAdLabels2()
-        {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
-            MutateAdGroupAdLabelsRequest expectedRequest = new MutateAdGroupAdLabelsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabels(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupAdLabelOperation> operations = new List<AdGroupAdLabelOperation>();
-            MutateAdGroupAdLabelsResponse response = client.MutateAdGroupAdLabels(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task MutateAdGroupAdLabelsAsync2()
-        {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
-            MutateAdGroupAdLabelsRequest expectedRequest = new MutateAdGroupAdLabelsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabelsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupAdLabelsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdGroupAdLabelOperation> operations = new List<AdGroupAdLabelOperation>();
-            MutateAdGroupAdLabelsResponse response = await client.MutateAdGroupAdLabelsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAdGroupAdLabels3()
-        {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
             MutateAdGroupAdLabelsRequest request = new MutateAdGroupAdLabelsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupAdLabelOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabels(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupAdLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabels(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
             MutateAdGroupAdLabelsResponse response = client.MutateAdGroupAdLabels(request);
             Assert.AreEqual(expectedResponse, response);
@@ -223,22 +191,90 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateAdGroupAdLabelsAsync3()
+        public async stt::Task MutateAdGroupAdLabelsRequestObjectAsync()
         {
-            Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
             MutateAdGroupAdLabelsRequest request = new MutateAdGroupAdLabelsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupAdLabelOperation(),
+                },
+                PartialFailure = false,
+                ValidateOnly = true,
             };
-            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabelsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdGroupAdLabelsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupAdLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabelsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupAdLabelsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
-            MutateAdGroupAdLabelsResponse response = await client.MutateAdGroupAdLabelsAsync(request);
+            MutateAdGroupAdLabelsResponse responseCallSettings = await client.MutateAdGroupAdLabelsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdGroupAdLabelsResponse responseCancellationToken = await client.MutateAdGroupAdLabelsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateAdGroupAdLabels()
+        {
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
+            MutateAdGroupAdLabelsRequest request = new MutateAdGroupAdLabelsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupAdLabelOperation(),
+                },
+            };
+            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupAdLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabels(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdGroupAdLabelsResponse response = client.MutateAdGroupAdLabels(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateAdGroupAdLabelsAsync()
+        {
+            moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdLabelService.AdGroupAdLabelServiceClient>(moq::MockBehavior.Strict);
+            MutateAdGroupAdLabelsRequest request = new MutateAdGroupAdLabelsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations =
+                {
+                    new AdGroupAdLabelOperation(),
+                },
+            };
+            MutateAdGroupAdLabelsResponse expectedResponse = new MutateAdGroupAdLabelsResponse
+            {
+                Results =
+                {
+                    new MutateAdGroupAdLabelResult(),
+                },
+                PartialFailureError = new gr::Status(),
+            };
+            mockGrpcClient.Setup(x => x.MutateAdGroupAdLabelsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupAdLabelsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdGroupAdLabelServiceClient client = new AdGroupAdLabelServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdGroupAdLabelsResponse responseCallSettings = await client.MutateAdGroupAdLabelsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdGroupAdLabelsResponse responseCancellationToken = await client.MutateAdGroupAdLabelsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

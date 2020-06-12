@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,160 +14,441 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V2.Common;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAdServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAdServiceClientTest
     {
+        [Test]
+        public void GetAdRequestObject()
+        {
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
+            GetAdRequest request = new GetAdRequest
+            {
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+            };
+            gagvr::Ad expectedResponse = new gagvr::Ad
+            {
+                Id = -6774108720365892680L,
+                FinalUrls =
+                {
+                    "final_urls3ed0b71b",
+                },
+                DisplayUrl = "display_url12de0d0c",
+                Type = gagve::AdTypeEnum.Types.AdType.DynamicHtml5Ad,
+                TextAd = new gagvc::TextAdInfo(),
+                ExpandedTextAd = new gagvc::ExpandedTextAdInfo(),
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CallOnlyAd = new gagvc::CallOnlyAdInfo(),
+                ExpandedDynamicSearchAd = new gagvc::ExpandedDynamicSearchAdInfo(),
+                HotelAd = new gagvc::HotelAdInfo(),
+                FinalMobileUrls =
+                {
+                    "final_mobile_urlsf4131aa0",
+                },
+                ShoppingSmartAd = new gagvc::ShoppingSmartAdInfo(),
+                ShoppingProductAd = new gagvc::ShoppingProductAdInfo(),
+                AddedByGoogleAds = true,
+                DevicePreference = gagve::DeviceEnum.Types.Device.Desktop,
+                GmailAd = new gagvc::GmailAdInfo(),
+                ImageAd = new gagvc::ImageAdInfo(),
+                AdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                VideoAd = new gagvc::VideoAdInfo(),
+                ResponsiveSearchAd = new gagvc::ResponsiveSearchAdInfo(),
+                UrlCollections =
+                {
+                    new gagvc::UrlCollection(),
+                },
+                SystemManagedResourceSource = gagve::SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.AdVariations,
+                LegacyResponsiveDisplayAd = new gagvc::LegacyResponsiveDisplayAdInfo(),
+                AppAd = new gagvc::AppAdInfo(),
+                LegacyAppInstallAd = new gagvc::LegacyAppInstallAdInfo(),
+                ResponsiveDisplayAd = new gagvc::ResponsiveDisplayAdInfo(),
+                DisplayUploadAd = new gagvc::DisplayUploadAdInfo(),
+                AppEngagementAd = new gagvc::AppEngagementAdInfo(),
+                FinalAppUrls =
+                {
+                    new gagvc::FinalAppUrl(),
+                },
+                ShoppingComparisonListingAd = new gagvc::ShoppingComparisonListingAdInfo(),
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+            };
+            mockGrpcClient.Setup(x => x.GetAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Ad response = client.GetAd(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAdRequestObjectAsync()
+        {
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
+            GetAdRequest request = new GetAdRequest
+            {
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+            };
+            gagvr::Ad expectedResponse = new gagvr::Ad
+            {
+                Id = -6774108720365892680L,
+                FinalUrls =
+                {
+                    "final_urls3ed0b71b",
+                },
+                DisplayUrl = "display_url12de0d0c",
+                Type = gagve::AdTypeEnum.Types.AdType.DynamicHtml5Ad,
+                TextAd = new gagvc::TextAdInfo(),
+                ExpandedTextAd = new gagvc::ExpandedTextAdInfo(),
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CallOnlyAd = new gagvc::CallOnlyAdInfo(),
+                ExpandedDynamicSearchAd = new gagvc::ExpandedDynamicSearchAdInfo(),
+                HotelAd = new gagvc::HotelAdInfo(),
+                FinalMobileUrls =
+                {
+                    "final_mobile_urlsf4131aa0",
+                },
+                ShoppingSmartAd = new gagvc::ShoppingSmartAdInfo(),
+                ShoppingProductAd = new gagvc::ShoppingProductAdInfo(),
+                AddedByGoogleAds = true,
+                DevicePreference = gagve::DeviceEnum.Types.Device.Desktop,
+                GmailAd = new gagvc::GmailAdInfo(),
+                ImageAd = new gagvc::ImageAdInfo(),
+                AdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                VideoAd = new gagvc::VideoAdInfo(),
+                ResponsiveSearchAd = new gagvc::ResponsiveSearchAdInfo(),
+                UrlCollections =
+                {
+                    new gagvc::UrlCollection(),
+                },
+                SystemManagedResourceSource = gagve::SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.AdVariations,
+                LegacyResponsiveDisplayAd = new gagvc::LegacyResponsiveDisplayAdInfo(),
+                AppAd = new gagvc::AppAdInfo(),
+                LegacyAppInstallAd = new gagvc::LegacyAppInstallAdInfo(),
+                ResponsiveDisplayAd = new gagvc::ResponsiveDisplayAdInfo(),
+                DisplayUploadAd = new gagvc::DisplayUploadAdInfo(),
+                AppEngagementAd = new gagvc::AppEngagementAdInfo(),
+                FinalAppUrls =
+                {
+                    new gagvc::FinalAppUrl(),
+                },
+                ShoppingComparisonListingAd = new gagvc::ShoppingComparisonListingAdInfo(),
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+            };
+            mockGrpcClient.Setup(x => x.GetAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Ad>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Ad responseCallSettings = await client.GetAdAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Ad responseCancellationToken = await client.GetAdAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAd()
         {
-            Mock<AdService.AdServiceClient> mockGrpcClient = new Mock<AdService.AdServiceClient>(MockBehavior.Strict);
-            GetAdRequest expectedRequest = new GetAdRequest
-            {
-                ResourceName = new AdName("[CUSTOMER]", "[AD]").ToString(),
-            };
-            Ad expectedResponse = new Ad
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAd(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdName("[CUSTOMER]", "[AD]").ToString();
-            Ad response = client.GetAd(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAdAsync()
-        {
-            Mock<AdService.AdServiceClient> mockGrpcClient = new Mock<AdService.AdServiceClient>(MockBehavior.Strict);
-            GetAdRequest expectedRequest = new GetAdRequest
-            {
-                ResourceName = new AdName("[CUSTOMER]", "[AD]").ToString(),
-            };
-            Ad expectedResponse = new Ad
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAdAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Ad>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AdName("[CUSTOMER]", "[AD]").ToString();
-            Ad response = await client.GetAdAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAd2()
-        {
-            Mock<AdService.AdServiceClient> mockGrpcClient = new Mock<AdService.AdServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
             GetAdRequest request = new GetAdRequest
             {
-                ResourceName = new AdName("[CUSTOMER]", "[AD]").ToString(),
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
             };
-            Ad expectedResponse = new Ad
+            gagvr::Ad expectedResponse = new gagvr::Ad
             {
-                ResourceName = "resourceName2625949903",
+                Id = -6774108720365892680L,
+                FinalUrls =
+                {
+                    "final_urls3ed0b71b",
+                },
+                DisplayUrl = "display_url12de0d0c",
+                Type = gagve::AdTypeEnum.Types.AdType.DynamicHtml5Ad,
+                TextAd = new gagvc::TextAdInfo(),
+                ExpandedTextAd = new gagvc::ExpandedTextAdInfo(),
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CallOnlyAd = new gagvc::CallOnlyAdInfo(),
+                ExpandedDynamicSearchAd = new gagvc::ExpandedDynamicSearchAdInfo(),
+                HotelAd = new gagvc::HotelAdInfo(),
+                FinalMobileUrls =
+                {
+                    "final_mobile_urlsf4131aa0",
+                },
+                ShoppingSmartAd = new gagvc::ShoppingSmartAdInfo(),
+                ShoppingProductAd = new gagvc::ShoppingProductAdInfo(),
+                AddedByGoogleAds = true,
+                DevicePreference = gagve::DeviceEnum.Types.Device.Desktop,
+                GmailAd = new gagvc::GmailAdInfo(),
+                ImageAd = new gagvc::ImageAdInfo(),
+                AdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                VideoAd = new gagvc::VideoAdInfo(),
+                ResponsiveSearchAd = new gagvc::ResponsiveSearchAdInfo(),
+                UrlCollections =
+                {
+                    new gagvc::UrlCollection(),
+                },
+                SystemManagedResourceSource = gagve::SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.AdVariations,
+                LegacyResponsiveDisplayAd = new gagvc::LegacyResponsiveDisplayAdInfo(),
+                AppAd = new gagvc::AppAdInfo(),
+                LegacyAppInstallAd = new gagvc::LegacyAppInstallAdInfo(),
+                ResponsiveDisplayAd = new gagvc::ResponsiveDisplayAdInfo(),
+                DisplayUploadAd = new gagvc::DisplayUploadAdInfo(),
+                AppEngagementAd = new gagvc::AppEngagementAdInfo(),
+                FinalAppUrls =
+                {
+                    new gagvc::FinalAppUrl(),
+                },
+                ShoppingComparisonListingAd = new gagvc::ShoppingComparisonListingAdInfo(),
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
             };
-            mockGrpcClient.Setup(x => x.GetAd(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
-            Ad response = client.GetAd(request);
+            gagvr::Ad response = client.GetAd(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAdAsync2()
+        public async stt::Task GetAdAsync()
         {
-            Mock<AdService.AdServiceClient> mockGrpcClient = new Mock<AdService.AdServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
             GetAdRequest request = new GetAdRequest
             {
-                ResourceName = new AdName("[CUSTOMER]", "[AD]").ToString(),
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
             };
-            Ad expectedResponse = new Ad
+            gagvr::Ad expectedResponse = new gagvr::Ad
             {
-                ResourceName = "resourceName2625949903",
+                Id = -6774108720365892680L,
+                FinalUrls =
+                {
+                    "final_urls3ed0b71b",
+                },
+                DisplayUrl = "display_url12de0d0c",
+                Type = gagve::AdTypeEnum.Types.AdType.DynamicHtml5Ad,
+                TextAd = new gagvc::TextAdInfo(),
+                ExpandedTextAd = new gagvc::ExpandedTextAdInfo(),
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CallOnlyAd = new gagvc::CallOnlyAdInfo(),
+                ExpandedDynamicSearchAd = new gagvc::ExpandedDynamicSearchAdInfo(),
+                HotelAd = new gagvc::HotelAdInfo(),
+                FinalMobileUrls =
+                {
+                    "final_mobile_urlsf4131aa0",
+                },
+                ShoppingSmartAd = new gagvc::ShoppingSmartAdInfo(),
+                ShoppingProductAd = new gagvc::ShoppingProductAdInfo(),
+                AddedByGoogleAds = true,
+                DevicePreference = gagve::DeviceEnum.Types.Device.Desktop,
+                GmailAd = new gagvc::GmailAdInfo(),
+                ImageAd = new gagvc::ImageAdInfo(),
+                AdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                VideoAd = new gagvc::VideoAdInfo(),
+                ResponsiveSearchAd = new gagvc::ResponsiveSearchAdInfo(),
+                UrlCollections =
+                {
+                    new gagvc::UrlCollection(),
+                },
+                SystemManagedResourceSource = gagve::SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.AdVariations,
+                LegacyResponsiveDisplayAd = new gagvc::LegacyResponsiveDisplayAdInfo(),
+                AppAd = new gagvc::AppAdInfo(),
+                LegacyAppInstallAd = new gagvc::LegacyAppInstallAdInfo(),
+                ResponsiveDisplayAd = new gagvc::ResponsiveDisplayAdInfo(),
+                DisplayUploadAd = new gagvc::DisplayUploadAdInfo(),
+                AppEngagementAd = new gagvc::AppEngagementAdInfo(),
+                FinalAppUrls =
+                {
+                    new gagvc::FinalAppUrl(),
+                },
+                ShoppingComparisonListingAd = new gagvc::ShoppingComparisonListingAdInfo(),
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
             };
-            mockGrpcClient.Setup(x => x.GetAdAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<Ad>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Ad>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
-            Ad response = await client.GetAdAsync(request);
+            gagvr::Ad responseCallSettings = await client.GetAdAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Ad responseCancellationToken = await client.GetAdAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAdResourceNames()
+        {
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
+            GetAdRequest request = new GetAdRequest
+            {
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+            };
+            gagvr::Ad expectedResponse = new gagvr::Ad
+            {
+                Id = -6774108720365892680L,
+                FinalUrls =
+                {
+                    "final_urls3ed0b71b",
+                },
+                DisplayUrl = "display_url12de0d0c",
+                Type = gagve::AdTypeEnum.Types.AdType.DynamicHtml5Ad,
+                TextAd = new gagvc::TextAdInfo(),
+                ExpandedTextAd = new gagvc::ExpandedTextAdInfo(),
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CallOnlyAd = new gagvc::CallOnlyAdInfo(),
+                ExpandedDynamicSearchAd = new gagvc::ExpandedDynamicSearchAdInfo(),
+                HotelAd = new gagvc::HotelAdInfo(),
+                FinalMobileUrls =
+                {
+                    "final_mobile_urlsf4131aa0",
+                },
+                ShoppingSmartAd = new gagvc::ShoppingSmartAdInfo(),
+                ShoppingProductAd = new gagvc::ShoppingProductAdInfo(),
+                AddedByGoogleAds = true,
+                DevicePreference = gagve::DeviceEnum.Types.Device.Desktop,
+                GmailAd = new gagvc::GmailAdInfo(),
+                ImageAd = new gagvc::ImageAdInfo(),
+                AdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                VideoAd = new gagvc::VideoAdInfo(),
+                ResponsiveSearchAd = new gagvc::ResponsiveSearchAdInfo(),
+                UrlCollections =
+                {
+                    new gagvc::UrlCollection(),
+                },
+                SystemManagedResourceSource = gagve::SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.AdVariations,
+                LegacyResponsiveDisplayAd = new gagvc::LegacyResponsiveDisplayAdInfo(),
+                AppAd = new gagvc::AppAdInfo(),
+                LegacyAppInstallAd = new gagvc::LegacyAppInstallAdInfo(),
+                ResponsiveDisplayAd = new gagvc::ResponsiveDisplayAdInfo(),
+                DisplayUploadAd = new gagvc::DisplayUploadAdInfo(),
+                AppEngagementAd = new gagvc::AppEngagementAdInfo(),
+                FinalAppUrls =
+                {
+                    new gagvc::FinalAppUrl(),
+                },
+                ShoppingComparisonListingAd = new gagvc::ShoppingComparisonListingAdInfo(),
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+            };
+            mockGrpcClient.Setup(x => x.GetAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::Ad response = client.GetAd(request.ResourceNameAsAdName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void MutateAds()
+        public async stt::Task GetAdResourceNamesAsync()
         {
-            Mock<AdService.AdServiceClient> mockGrpcClient = new Mock<AdService.AdServiceClient>(MockBehavior.Strict);
-            MutateAdsRequest expectedRequest = new MutateAdsRequest
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
+            GetAdRequest request = new GetAdRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
             };
-            MutateAdsResponse expectedResponse = new MutateAdsResponse();
-            mockGrpcClient.Setup(x => x.MutateAds(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::Ad expectedResponse = new gagvr::Ad
+            {
+                Id = -6774108720365892680L,
+                FinalUrls =
+                {
+                    "final_urls3ed0b71b",
+                },
+                DisplayUrl = "display_url12de0d0c",
+                Type = gagve::AdTypeEnum.Types.AdType.DynamicHtml5Ad,
+                TextAd = new gagvc::TextAdInfo(),
+                ExpandedTextAd = new gagvc::ExpandedTextAdInfo(),
+                UrlCustomParameters =
+                {
+                    new gagvc::CustomParameter(),
+                },
+                TrackingUrlTemplate = "tracking_url_template157f152a",
+                CallOnlyAd = new gagvc::CallOnlyAdInfo(),
+                ExpandedDynamicSearchAd = new gagvc::ExpandedDynamicSearchAdInfo(),
+                HotelAd = new gagvc::HotelAdInfo(),
+                FinalMobileUrls =
+                {
+                    "final_mobile_urlsf4131aa0",
+                },
+                ShoppingSmartAd = new gagvc::ShoppingSmartAdInfo(),
+                ShoppingProductAd = new gagvc::ShoppingProductAdInfo(),
+                AddedByGoogleAds = true,
+                DevicePreference = gagve::DeviceEnum.Types.Device.Desktop,
+                GmailAd = new gagvc::GmailAdInfo(),
+                ImageAd = new gagvc::ImageAdInfo(),
+                AdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                VideoAd = new gagvc::VideoAdInfo(),
+                ResponsiveSearchAd = new gagvc::ResponsiveSearchAdInfo(),
+                UrlCollections =
+                {
+                    new gagvc::UrlCollection(),
+                },
+                SystemManagedResourceSource = gagve::SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.AdVariations,
+                LegacyResponsiveDisplayAd = new gagvc::LegacyResponsiveDisplayAdInfo(),
+                AppAd = new gagvc::AppAdInfo(),
+                LegacyAppInstallAd = new gagvc::LegacyAppInstallAdInfo(),
+                ResponsiveDisplayAd = new gagvc::ResponsiveDisplayAdInfo(),
+                DisplayUploadAd = new gagvc::DisplayUploadAdInfo(),
+                AppEngagementAd = new gagvc::AppEngagementAdInfo(),
+                FinalAppUrls =
+                {
+                    new gagvc::FinalAppUrl(),
+                },
+                ShoppingComparisonListingAd = new gagvc::ShoppingComparisonListingAdInfo(),
+                ResourceNameAsAdName = gagvr::AdName.FromCustomerAd("[CUSTOMER]", "[AD]"),
+                FinalUrlSuffix = "final_url_suffix046ed37a",
+            };
+            mockGrpcClient.Setup(x => x.GetAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Ad>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdOperation> operations = new List<AdOperation>();
-            MutateAdsResponse response = client.MutateAds(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::Ad responseCallSettings = await client.GetAdAsync(request.ResourceNameAsAdName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::Ad responseCancellationToken = await client.GetAdAsync(request.ResourceNameAsAdName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task MutateAdsAsync()
+        public void MutateAdsRequestObject()
         {
-            Mock<AdService.AdServiceClient> mockGrpcClient = new Mock<AdService.AdServiceClient>(MockBehavior.Strict);
-            MutateAdsRequest expectedRequest = new MutateAdsRequest
-            {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
-            };
-            MutateAdsResponse expectedResponse = new MutateAdsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            IEnumerable<AdOperation> operations = new List<AdOperation>();
-            MutateAdsResponse response = await client.MutateAdsAsync(customerId, operations);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void MutateAds2()
-        {
-            Mock<AdService.AdServiceClient> mockGrpcClient = new Mock<AdService.AdServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
             MutateAdsRequest request = new MutateAdsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations = { new AdOperation(), },
             };
-            MutateAdsResponse expectedResponse = new MutateAdsResponse();
-            mockGrpcClient.Setup(x => x.MutateAds(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            MutateAdsResponse expectedResponse = new MutateAdsResponse
+            {
+                Results =
+                {
+                    new MutateAdResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateAds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
             MutateAdsResponse response = client.MutateAds(request);
             Assert.AreEqual(expectedResponse, response);
@@ -175,22 +456,76 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task MutateAdsAsync2()
+        public async stt::Task MutateAdsRequestObjectAsync()
         {
-            Mock<AdService.AdServiceClient> mockGrpcClient = new Mock<AdService.AdServiceClient>(MockBehavior.Strict);
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
             MutateAdsRequest request = new MutateAdsRequest
             {
-                CustomerId = "customerId-1772061412",
-                Operations = { },
+                CustomerId = "customer_id3b3724cb",
+                Operations = { new AdOperation(), },
             };
-            MutateAdsResponse expectedResponse = new MutateAdsResponse();
-            mockGrpcClient.Setup(x => x.MutateAdsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<MutateAdsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            MutateAdsResponse expectedResponse = new MutateAdsResponse
+            {
+                Results =
+                {
+                    new MutateAdResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateAdsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
-            MutateAdsResponse response = await client.MutateAdsAsync(request);
+            MutateAdsResponse responseCallSettings = await client.MutateAdsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdsResponse responseCancellationToken = await client.MutateAdsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void MutateAds()
+        {
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
+            MutateAdsRequest request = new MutateAdsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations = { new AdOperation(), },
+            };
+            MutateAdsResponse expectedResponse = new MutateAdsResponse
+            {
+                Results =
+                {
+                    new MutateAdResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateAds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdsResponse response = client.MutateAds(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task MutateAdsAsync()
+        {
+            moq::Mock<AdService.AdServiceClient> mockGrpcClient = new moq::Mock<AdService.AdServiceClient>(moq::MockBehavior.Strict);
+            MutateAdsRequest request = new MutateAdsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Operations = { new AdOperation(), },
+            };
+            MutateAdsResponse expectedResponse = new MutateAdsResponse
+            {
+                Results =
+                {
+                    new MutateAdResult(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.MutateAdsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            MutateAdsResponse responseCallSettings = await client.MutateAdsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            MutateAdsResponse responseCancellationToken = await client.MutateAdsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

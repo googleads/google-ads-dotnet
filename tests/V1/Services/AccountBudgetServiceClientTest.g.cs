@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,265 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V1.Services.Tests
-{
-    using Google.Ads.GoogleAds.V1.Resources;
-    using apis = Google.Ads.GoogleAds.V1.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V1.Enums;
+using gagvr = Google.Ads.GoogleAds.V1.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V1.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedAccountBudgetServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V1.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedAccountBudgetServiceClientTest
     {
+        [Test]
+        public void GetAccountBudgetRequestObject()
+        {
+            moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
+            GetAccountBudgetRequest request = new GetAccountBudgetRequest
+            {
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+            };
+            gagvr::AccountBudget expectedResponse = new gagvr::AccountBudget
+            {
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                Id = -6774108720365892680L,
+                BillingSetupAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Status = gagve::AccountBudgetStatusEnum.Types.AccountBudgetStatus.Cancelled,
+                AccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                ProposedStartDateTime = "proposed_start_date_time4e2f84a3",
+                ApprovedStartDateTime = "approved_start_date_time20090a2c",
+                ProposedEndDateTime = "proposed_end_date_time39aa28a5",
+                ProposedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                ApprovedEndDateTime = "approved_end_date_time99d3ab5d",
+                ApprovedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Forever,
+                ProposedSpendingLimitMicros = 6806956772888455592L,
+                ProposedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                ApprovedSpendingLimitMicros = 1674109600829643495L,
+                ApprovedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                AdjustedSpendingLimitMicros = 5260592673487875057L,
+                AdjustedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified,
+                TotalAdjustmentsMicros = -1818058180873398375L,
+                AmountServedMicros = -8683779131450697164L,
+                PurchaseOrderNumber = "purchase_order_number7be7181f",
+                Notes = "notes00b55843",
+                PendingProposal = new gagvr::AccountBudget.Types.PendingAccountBudgetProposal(),
+            };
+            mockGrpcClient.Setup(x => x.GetAccountBudget(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AccountBudgetServiceClient client = new AccountBudgetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AccountBudget response = client.GetAccountBudget(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetAccountBudgetRequestObjectAsync()
+        {
+            moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
+            GetAccountBudgetRequest request = new GetAccountBudgetRequest
+            {
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+            };
+            gagvr::AccountBudget expectedResponse = new gagvr::AccountBudget
+            {
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                Id = -6774108720365892680L,
+                BillingSetupAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Status = gagve::AccountBudgetStatusEnum.Types.AccountBudgetStatus.Cancelled,
+                AccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                ProposedStartDateTime = "proposed_start_date_time4e2f84a3",
+                ApprovedStartDateTime = "approved_start_date_time20090a2c",
+                ProposedEndDateTime = "proposed_end_date_time39aa28a5",
+                ProposedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                ApprovedEndDateTime = "approved_end_date_time99d3ab5d",
+                ApprovedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Forever,
+                ProposedSpendingLimitMicros = 6806956772888455592L,
+                ProposedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                ApprovedSpendingLimitMicros = 1674109600829643495L,
+                ApprovedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                AdjustedSpendingLimitMicros = 5260592673487875057L,
+                AdjustedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified,
+                TotalAdjustmentsMicros = -1818058180873398375L,
+                AmountServedMicros = -8683779131450697164L,
+                PurchaseOrderNumber = "purchase_order_number7be7181f",
+                Notes = "notes00b55843",
+                PendingProposal = new gagvr::AccountBudget.Types.PendingAccountBudgetProposal(),
+            };
+            mockGrpcClient.Setup(x => x.GetAccountBudgetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AccountBudget>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AccountBudgetServiceClient client = new AccountBudgetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AccountBudget responseCallSettings = await client.GetAccountBudgetAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AccountBudget responseCancellationToken = await client.GetAccountBudgetAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetAccountBudget()
         {
-            Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new Mock<AccountBudgetService.AccountBudgetServiceClient>(MockBehavior.Strict);
-            GetAccountBudgetRequest expectedRequest = new GetAccountBudgetRequest
-            {
-                ResourceName = new AccountBudgetName("[CUSTOMER]", "[ACCOUNT_BUDGET]").ToString(),
-            };
-            AccountBudget expectedResponse = new AccountBudget
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAccountBudget(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            AccountBudgetServiceClient client = new AccountBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AccountBudgetName("[CUSTOMER]", "[ACCOUNT_BUDGET]").ToString();
-            AccountBudget response = client.GetAccountBudget(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetAccountBudgetAsync()
-        {
-            Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new Mock<AccountBudgetService.AccountBudgetServiceClient>(MockBehavior.Strict);
-            GetAccountBudgetRequest expectedRequest = new GetAccountBudgetRequest
-            {
-                ResourceName = new AccountBudgetName("[CUSTOMER]", "[ACCOUNT_BUDGET]").ToString(),
-            };
-            AccountBudget expectedResponse = new AccountBudget
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetAccountBudgetAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AccountBudget>(Task.FromResult(expectedResponse), null, null, null, null));
-            AccountBudgetServiceClient client = new AccountBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new AccountBudgetName("[CUSTOMER]", "[ACCOUNT_BUDGET]").ToString();
-            AccountBudget response = await client.GetAccountBudgetAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetAccountBudget2()
-        {
-            Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new Mock<AccountBudgetService.AccountBudgetServiceClient>(MockBehavior.Strict);
+            moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
             GetAccountBudgetRequest request = new GetAccountBudgetRequest
             {
-                ResourceName = new AccountBudgetName("[CUSTOMER]", "[ACCOUNT_BUDGET]").ToString(),
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
             };
-            AccountBudget expectedResponse = new AccountBudget
+            gagvr::AccountBudget expectedResponse = new gagvr::AccountBudget
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                Id = -6774108720365892680L,
+                BillingSetupAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Status = gagve::AccountBudgetStatusEnum.Types.AccountBudgetStatus.Cancelled,
+                AccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                ProposedStartDateTime = "proposed_start_date_time4e2f84a3",
+                ApprovedStartDateTime = "approved_start_date_time20090a2c",
+                ProposedEndDateTime = "proposed_end_date_time39aa28a5",
+                ProposedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                ApprovedEndDateTime = "approved_end_date_time99d3ab5d",
+                ApprovedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Forever,
+                ProposedSpendingLimitMicros = 6806956772888455592L,
+                ProposedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                ApprovedSpendingLimitMicros = 1674109600829643495L,
+                ApprovedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                AdjustedSpendingLimitMicros = 5260592673487875057L,
+                AdjustedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified,
+                TotalAdjustmentsMicros = -1818058180873398375L,
+                AmountServedMicros = -8683779131450697164L,
+                PurchaseOrderNumber = "purchase_order_number7be7181f",
+                Notes = "notes00b55843",
+                PendingProposal = new gagvr::AccountBudget.Types.PendingAccountBudgetProposal(),
             };
-            mockGrpcClient.Setup(x => x.GetAccountBudget(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetAccountBudget(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AccountBudgetServiceClient client = new AccountBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            AccountBudget response = client.GetAccountBudget(request);
+            gagvr::AccountBudget response = client.GetAccountBudget(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetAccountBudgetAsync2()
+        public async stt::Task GetAccountBudgetAsync()
         {
-            Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new Mock<AccountBudgetService.AccountBudgetServiceClient>(MockBehavior.Strict);
+            moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
             GetAccountBudgetRequest request = new GetAccountBudgetRequest
             {
-                ResourceName = new AccountBudgetName("[CUSTOMER]", "[ACCOUNT_BUDGET]").ToString(),
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
             };
-            AccountBudget expectedResponse = new AccountBudget
+            gagvr::AccountBudget expectedResponse = new gagvr::AccountBudget
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                Id = -6774108720365892680L,
+                BillingSetupAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Status = gagve::AccountBudgetStatusEnum.Types.AccountBudgetStatus.Cancelled,
+                AccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                ProposedStartDateTime = "proposed_start_date_time4e2f84a3",
+                ApprovedStartDateTime = "approved_start_date_time20090a2c",
+                ProposedEndDateTime = "proposed_end_date_time39aa28a5",
+                ProposedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                ApprovedEndDateTime = "approved_end_date_time99d3ab5d",
+                ApprovedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Forever,
+                ProposedSpendingLimitMicros = 6806956772888455592L,
+                ProposedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                ApprovedSpendingLimitMicros = 1674109600829643495L,
+                ApprovedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                AdjustedSpendingLimitMicros = 5260592673487875057L,
+                AdjustedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified,
+                TotalAdjustmentsMicros = -1818058180873398375L,
+                AmountServedMicros = -8683779131450697164L,
+                PurchaseOrderNumber = "purchase_order_number7be7181f",
+                Notes = "notes00b55843",
+                PendingProposal = new gagvr::AccountBudget.Types.PendingAccountBudgetProposal(),
             };
-            mockGrpcClient.Setup(x => x.GetAccountBudgetAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<AccountBudget>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetAccountBudgetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AccountBudget>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AccountBudgetServiceClient client = new AccountBudgetServiceClientImpl(mockGrpcClient.Object, null);
-            AccountBudget response = await client.GetAccountBudgetAsync(request);
+            gagvr::AccountBudget responseCallSettings = await client.GetAccountBudgetAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AccountBudget responseCancellationToken = await client.GetAccountBudgetAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetAccountBudgetResourceNames()
+        {
+            moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
+            GetAccountBudgetRequest request = new GetAccountBudgetRequest
+            {
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+            };
+            gagvr::AccountBudget expectedResponse = new gagvr::AccountBudget
+            {
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                Id = -6774108720365892680L,
+                BillingSetupAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Status = gagve::AccountBudgetStatusEnum.Types.AccountBudgetStatus.Cancelled,
+                AccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                ProposedStartDateTime = "proposed_start_date_time4e2f84a3",
+                ApprovedStartDateTime = "approved_start_date_time20090a2c",
+                ProposedEndDateTime = "proposed_end_date_time39aa28a5",
+                ProposedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                ApprovedEndDateTime = "approved_end_date_time99d3ab5d",
+                ApprovedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Forever,
+                ProposedSpendingLimitMicros = 6806956772888455592L,
+                ProposedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                ApprovedSpendingLimitMicros = 1674109600829643495L,
+                ApprovedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                AdjustedSpendingLimitMicros = 5260592673487875057L,
+                AdjustedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified,
+                TotalAdjustmentsMicros = -1818058180873398375L,
+                AmountServedMicros = -8683779131450697164L,
+                PurchaseOrderNumber = "purchase_order_number7be7181f",
+                Notes = "notes00b55843",
+                PendingProposal = new gagvr::AccountBudget.Types.PendingAccountBudgetProposal(),
+            };
+            mockGrpcClient.Setup(x => x.GetAccountBudget(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AccountBudgetServiceClient client = new AccountBudgetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AccountBudget response = client.GetAccountBudget(request.ResourceNameAsAccountBudgetName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetAccountBudgetResourceNamesAsync()
+        {
+            moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
+            GetAccountBudgetRequest request = new GetAccountBudgetRequest
+            {
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+            };
+            gagvr::AccountBudget expectedResponse = new gagvr::AccountBudget
+            {
+                ResourceNameAsAccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                Id = -6774108720365892680L,
+                BillingSetupAsBillingSetupName = gagvr::BillingSetupName.FromCustomerBillingSetup("[CUSTOMER]", "[BILLING_SETUP]"),
+                Status = gagve::AccountBudgetStatusEnum.Types.AccountBudgetStatus.Cancelled,
+                AccountBudgetName = gagvr::AccountBudgetName.FromCustomerAccountBudget("[CUSTOMER]", "[ACCOUNT_BUDGET]"),
+                ProposedStartDateTime = "proposed_start_date_time4e2f84a3",
+                ApprovedStartDateTime = "approved_start_date_time20090a2c",
+                ProposedEndDateTime = "proposed_end_date_time39aa28a5",
+                ProposedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Unknown,
+                ApprovedEndDateTime = "approved_end_date_time99d3ab5d",
+                ApprovedEndTimeType = gagve::TimeTypeEnum.Types.TimeType.Forever,
+                ProposedSpendingLimitMicros = 6806956772888455592L,
+                ProposedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                ApprovedSpendingLimitMicros = 1674109600829643495L,
+                ApprovedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unknown,
+                AdjustedSpendingLimitMicros = 5260592673487875057L,
+                AdjustedSpendingLimitType = gagve::SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified,
+                TotalAdjustmentsMicros = -1818058180873398375L,
+                AmountServedMicros = -8683779131450697164L,
+                PurchaseOrderNumber = "purchase_order_number7be7181f",
+                Notes = "notes00b55843",
+                PendingProposal = new gagvr::AccountBudget.Types.PendingAccountBudgetProposal(),
+            };
+            mockGrpcClient.Setup(x => x.GetAccountBudgetAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AccountBudget>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AccountBudgetServiceClient client = new AccountBudgetServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::AccountBudget responseCallSettings = await client.GetAccountBudgetAsync(request.ResourceNameAsAccountBudgetName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::AccountBudget responseCancellationToken = await client.GetAccountBudgetAsync(request.ResourceNameAsAccountBudgetName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

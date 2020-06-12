@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,107 +14,194 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Resources;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagvc = Google.Ads.GoogleAds.V2.Common;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedUserInterestServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedUserInterestServiceClientTest
     {
+        [Test]
+        public void GetUserInterestRequestObject()
+        {
+            moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
+            GetUserInterestRequest request = new GetUserInterestRequest
+            {
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+            };
+            gagvr::UserInterest expectedResponse = new gagvr::UserInterest
+            {
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                TaxonomyType = gagve::UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unknown,
+                UserInterestId = 3507346946980618534L,
+                UserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                UserInterestParentAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                LaunchedToAll = true,
+                Availabilities =
+                {
+                    new gagvc::CriterionCategoryAvailability(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetUserInterest(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UserInterestServiceClient client = new UserInterestServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserInterest response = client.GetUserInterest(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetUserInterestRequestObjectAsync()
+        {
+            moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
+            GetUserInterestRequest request = new GetUserInterestRequest
+            {
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+            };
+            gagvr::UserInterest expectedResponse = new gagvr::UserInterest
+            {
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                TaxonomyType = gagve::UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unknown,
+                UserInterestId = 3507346946980618534L,
+                UserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                UserInterestParentAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                LaunchedToAll = true,
+                Availabilities =
+                {
+                    new gagvc::CriterionCategoryAvailability(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetUserInterestAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::UserInterest>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UserInterestServiceClient client = new UserInterestServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserInterest responseCallSettings = await client.GetUserInterestAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::UserInterest responseCancellationToken = await client.GetUserInterestAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetUserInterest()
         {
-            Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new Mock<UserInterestService.UserInterestServiceClient>(MockBehavior.Strict);
-            GetUserInterestRequest expectedRequest = new GetUserInterestRequest
-            {
-                ResourceName = new UserInterestName("[CUSTOMER]", "[USER_INTEREST]").ToString(),
-            };
-            UserInterest expectedResponse = new UserInterest
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetUserInterest(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            UserInterestServiceClient client = new UserInterestServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new UserInterestName("[CUSTOMER]", "[USER_INTEREST]").ToString();
-            UserInterest response = client.GetUserInterest(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetUserInterestAsync()
-        {
-            Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new Mock<UserInterestService.UserInterestServiceClient>(MockBehavior.Strict);
-            GetUserInterestRequest expectedRequest = new GetUserInterestRequest
-            {
-                ResourceName = new UserInterestName("[CUSTOMER]", "[USER_INTEREST]").ToString(),
-            };
-            UserInterest expectedResponse = new UserInterest
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetUserInterestAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UserInterest>(Task.FromResult(expectedResponse), null, null, null, null));
-            UserInterestServiceClient client = new UserInterestServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new UserInterestName("[CUSTOMER]", "[USER_INTEREST]").ToString();
-            UserInterest response = await client.GetUserInterestAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetUserInterest2()
-        {
-            Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new Mock<UserInterestService.UserInterestServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
             GetUserInterestRequest request = new GetUserInterestRequest
             {
-                ResourceName = new UserInterestName("[CUSTOMER]", "[USER_INTEREST]").ToString(),
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
             };
-            UserInterest expectedResponse = new UserInterest
+            gagvr::UserInterest expectedResponse = new gagvr::UserInterest
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                TaxonomyType = gagve::UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unknown,
+                UserInterestId = 3507346946980618534L,
+                UserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                UserInterestParentAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                LaunchedToAll = true,
+                Availabilities =
+                {
+                    new gagvc::CriterionCategoryAvailability(),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetUserInterest(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetUserInterest(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             UserInterestServiceClient client = new UserInterestServiceClientImpl(mockGrpcClient.Object, null);
-            UserInterest response = client.GetUserInterest(request);
+            gagvr::UserInterest response = client.GetUserInterest(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetUserInterestAsync2()
+        public async stt::Task GetUserInterestAsync()
         {
-            Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new Mock<UserInterestService.UserInterestServiceClient>(MockBehavior.Strict);
+            moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
             GetUserInterestRequest request = new GetUserInterestRequest
             {
-                ResourceName = new UserInterestName("[CUSTOMER]", "[USER_INTEREST]").ToString(),
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
             };
-            UserInterest expectedResponse = new UserInterest
+            gagvr::UserInterest expectedResponse = new gagvr::UserInterest
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                TaxonomyType = gagve::UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unknown,
+                UserInterestId = 3507346946980618534L,
+                UserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                UserInterestParentAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                LaunchedToAll = true,
+                Availabilities =
+                {
+                    new gagvc::CriterionCategoryAvailability(),
+                },
             };
-            mockGrpcClient.Setup(x => x.GetUserInterestAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<UserInterest>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetUserInterestAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::UserInterest>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             UserInterestServiceClient client = new UserInterestServiceClientImpl(mockGrpcClient.Object, null);
-            UserInterest response = await client.GetUserInterestAsync(request);
+            gagvr::UserInterest responseCallSettings = await client.GetUserInterestAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::UserInterest responseCancellationToken = await client.GetUserInterestAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetUserInterestResourceNames()
+        {
+            moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
+            GetUserInterestRequest request = new GetUserInterestRequest
+            {
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+            };
+            gagvr::UserInterest expectedResponse = new gagvr::UserInterest
+            {
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                TaxonomyType = gagve::UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unknown,
+                UserInterestId = 3507346946980618534L,
+                UserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                UserInterestParentAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                LaunchedToAll = true,
+                Availabilities =
+                {
+                    new gagvc::CriterionCategoryAvailability(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetUserInterest(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UserInterestServiceClient client = new UserInterestServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserInterest response = client.GetUserInterest(request.ResourceNameAsUserInterestName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetUserInterestResourceNamesAsync()
+        {
+            moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
+            GetUserInterestRequest request = new GetUserInterestRequest
+            {
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+            };
+            gagvr::UserInterest expectedResponse = new gagvr::UserInterest
+            {
+                ResourceNameAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                TaxonomyType = gagve::UserInterestTaxonomyTypeEnum.Types.UserInterestTaxonomyType.Unknown,
+                UserInterestId = 3507346946980618534L,
+                UserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                UserInterestParentAsUserInterestName = gagvr::UserInterestName.FromCustomerUserInterest("[CUSTOMER]", "[USER_INTEREST]"),
+                LaunchedToAll = true,
+                Availabilities =
+                {
+                    new gagvc::CriterionCategoryAvailability(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GetUserInterestAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::UserInterest>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UserInterestServiceClient client = new UserInterestServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::UserInterest responseCallSettings = await client.GetUserInterestAsync(request.ResourceNameAsUserInterestName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::UserInterest responseCancellationToken = await client.GetUserInterestAsync(request.ResourceNameAsUserInterestName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,88 +14,40 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V2.Services.Tests
-{
-    using Google.Ads.GoogleAds.V2.Enums;
-    using apis = Google.Ads.GoogleAds.V2.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V2.Enums;
+using gagvr = Google.Ads.GoogleAds.V2.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V2.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedInvoiceServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V2.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedInvoiceServiceClientTest
     {
         [Test]
-        public void ListInvoices()
+        public void ListInvoicesRequestObject()
         {
-            Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new Mock<InvoiceService.InvoiceServiceClient>(MockBehavior.Strict);
-            ListInvoicesRequest expectedRequest = new ListInvoicesRequest
-            {
-                CustomerId = "customerId-1772061412",
-                BillingSetup = "billingSetup-1181632583",
-                IssueYear = "issueYear1443510243",
-                IssueMonth = MonthOfYearEnum.Types.MonthOfYear.Unspecified,
-            };
-            ListInvoicesResponse expectedResponse = new ListInvoicesResponse();
-            mockGrpcClient.Setup(x => x.ListInvoices(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            string billingSetup = "billingSetup-1181632583";
-            string issueYear = "issueYear1443510243";
-            MonthOfYearEnum.Types.MonthOfYear issueMonth = MonthOfYearEnum.Types.MonthOfYear.Unspecified;
-            ListInvoicesResponse response = client.ListInvoices(customerId, billingSetup, issueYear, issueMonth);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task ListInvoicesAsync()
-        {
-            Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new Mock<InvoiceService.InvoiceServiceClient>(MockBehavior.Strict);
-            ListInvoicesRequest expectedRequest = new ListInvoicesRequest
-            {
-                CustomerId = "customerId-1772061412",
-                BillingSetup = "billingSetup-1181632583",
-                IssueYear = "issueYear1443510243",
-                IssueMonth = MonthOfYearEnum.Types.MonthOfYear.Unspecified,
-            };
-            ListInvoicesResponse expectedResponse = new ListInvoicesResponse();
-            mockGrpcClient.Setup(x => x.ListInvoicesAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListInvoicesResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
-            string customerId = "customerId-1772061412";
-            string billingSetup = "billingSetup-1181632583";
-            string issueYear = "issueYear1443510243";
-            MonthOfYearEnum.Types.MonthOfYear issueMonth = MonthOfYearEnum.Types.MonthOfYear.Unspecified;
-            ListInvoicesResponse response = await client.ListInvoicesAsync(customerId, billingSetup, issueYear, issueMonth);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void ListInvoices2()
-        {
-            Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new Mock<InvoiceService.InvoiceServiceClient>(MockBehavior.Strict);
+            moq::Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new moq::Mock<InvoiceService.InvoiceServiceClient>(moq::MockBehavior.Strict);
             ListInvoicesRequest request = new ListInvoicesRequest
             {
-                CustomerId = "customerId-1772061412",
-                BillingSetup = "billingSetup-1181632583",
-                IssueYear = "issueYear1443510243",
-                IssueMonth = MonthOfYearEnum.Types.MonthOfYear.Unspecified,
+                CustomerId = "customer_id3b3724cb",
+                BillingSetup = "billing_setupa2c2701f",
+                IssueYear = "issue_yeara1ebdef1",
+                IssueMonth = gagve::MonthOfYearEnum.Types.MonthOfYear.January,
             };
-            ListInvoicesResponse expectedResponse = new ListInvoicesResponse();
-            mockGrpcClient.Setup(x => x.ListInvoices(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            ListInvoicesResponse expectedResponse = new ListInvoicesResponse
+            {
+                Invoices =
+                {
+                    new gagvr::Invoice(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListInvoices(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
             ListInvoicesResponse response = client.ListInvoices(request);
             Assert.AreEqual(expectedResponse, response);
@@ -103,24 +55,82 @@ namespace Google.Ads.GoogleAds.V2.Services.Tests
         }
 
         [Test]
-        public async Task ListInvoicesAsync2()
+        public async stt::Task ListInvoicesRequestObjectAsync()
         {
-            Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new Mock<InvoiceService.InvoiceServiceClient>(MockBehavior.Strict);
+            moq::Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new moq::Mock<InvoiceService.InvoiceServiceClient>(moq::MockBehavior.Strict);
             ListInvoicesRequest request = new ListInvoicesRequest
             {
-                CustomerId = "customerId-1772061412",
-                BillingSetup = "billingSetup-1181632583",
-                IssueYear = "issueYear1443510243",
-                IssueMonth = MonthOfYearEnum.Types.MonthOfYear.Unspecified,
+                CustomerId = "customer_id3b3724cb",
+                BillingSetup = "billing_setupa2c2701f",
+                IssueYear = "issue_yeara1ebdef1",
+                IssueMonth = gagve::MonthOfYearEnum.Types.MonthOfYear.January,
             };
-            ListInvoicesResponse expectedResponse = new ListInvoicesResponse();
-            mockGrpcClient.Setup(x => x.ListInvoicesAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<ListInvoicesResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            ListInvoicesResponse expectedResponse = new ListInvoicesResponse
+            {
+                Invoices =
+                {
+                    new gagvr::Invoice(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListInvoicesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListInvoicesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
-            ListInvoicesResponse response = await client.ListInvoicesAsync(request);
+            ListInvoicesResponse responseCallSettings = await client.ListInvoicesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListInvoicesResponse responseCancellationToken = await client.ListInvoicesAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void ListInvoices()
+        {
+            moq::Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new moq::Mock<InvoiceService.InvoiceServiceClient>(moq::MockBehavior.Strict);
+            ListInvoicesRequest request = new ListInvoicesRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                BillingSetup = "billing_setupa2c2701f",
+                IssueYear = "issue_yeara1ebdef1",
+                IssueMonth = gagve::MonthOfYearEnum.Types.MonthOfYear.January,
+            };
+            ListInvoicesResponse expectedResponse = new ListInvoicesResponse
+            {
+                Invoices =
+                {
+                    new gagvr::Invoice(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListInvoices(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
+            ListInvoicesResponse response = client.ListInvoices(request.CustomerId, request.BillingSetup, request.IssueYear, request.IssueMonth);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task ListInvoicesAsync()
+        {
+            moq::Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new moq::Mock<InvoiceService.InvoiceServiceClient>(moq::MockBehavior.Strict);
+            ListInvoicesRequest request = new ListInvoicesRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                BillingSetup = "billing_setupa2c2701f",
+                IssueYear = "issue_yeara1ebdef1",
+                IssueMonth = gagve::MonthOfYearEnum.Types.MonthOfYear.January,
+            };
+            ListInvoicesResponse expectedResponse = new ListInvoicesResponse
+            {
+                Invoices =
+                {
+                    new gagvr::Invoice(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.ListInvoicesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListInvoicesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
+            ListInvoicesResponse responseCallSettings = await client.ListInvoicesAsync(request.CustomerId, request.BillingSetup, request.IssueYear, request.IssueMonth, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            ListInvoicesResponse responseCancellationToken = await client.ListInvoicesAsync(request.CustomerId, request.BillingSetup, request.IssueYear, request.IssueMonth, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

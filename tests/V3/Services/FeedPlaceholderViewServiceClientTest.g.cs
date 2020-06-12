@@ -14,107 +14,145 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedFeedPlaceholderViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedFeedPlaceholderViewServiceClientTest
     {
+        [Test]
+        public void GetFeedPlaceholderViewRequestObject()
+        {
+            moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(moq::MockBehavior.Strict);
+            GetFeedPlaceholderViewRequest request = new GetFeedPlaceholderViewRequest
+            {
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+            };
+            gagvr::FeedPlaceholderView expectedResponse = new gagvr::FeedPlaceholderView
+            {
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+            };
+            mockGrpcClient.Setup(x => x.GetFeedPlaceholderView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            FeedPlaceholderViewServiceClient client = new FeedPlaceholderViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedPlaceholderView response = client.GetFeedPlaceholderView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetFeedPlaceholderViewRequestObjectAsync()
+        {
+            moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(moq::MockBehavior.Strict);
+            GetFeedPlaceholderViewRequest request = new GetFeedPlaceholderViewRequest
+            {
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+            };
+            gagvr::FeedPlaceholderView expectedResponse = new gagvr::FeedPlaceholderView
+            {
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+            };
+            mockGrpcClient.Setup(x => x.GetFeedPlaceholderViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::FeedPlaceholderView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            FeedPlaceholderViewServiceClient client = new FeedPlaceholderViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedPlaceholderView responseCallSettings = await client.GetFeedPlaceholderViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::FeedPlaceholderView responseCancellationToken = await client.GetFeedPlaceholderViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetFeedPlaceholderView()
         {
-            Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(MockBehavior.Strict);
-            GetFeedPlaceholderViewRequest expectedRequest = new GetFeedPlaceholderViewRequest
-            {
-                ResourceName = new FeedPlaceholderViewName("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]").ToString(),
-            };
-            FeedPlaceholderView expectedResponse = new FeedPlaceholderView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetFeedPlaceholderView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            FeedPlaceholderViewServiceClient client = new FeedPlaceholderViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new FeedPlaceholderViewName("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]").ToString();
-            FeedPlaceholderView response = client.GetFeedPlaceholderView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetFeedPlaceholderViewAsync()
-        {
-            Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(MockBehavior.Strict);
-            GetFeedPlaceholderViewRequest expectedRequest = new GetFeedPlaceholderViewRequest
-            {
-                ResourceName = new FeedPlaceholderViewName("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]").ToString(),
-            };
-            FeedPlaceholderView expectedResponse = new FeedPlaceholderView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetFeedPlaceholderViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<FeedPlaceholderView>(Task.FromResult(expectedResponse), null, null, null, null));
-            FeedPlaceholderViewServiceClient client = new FeedPlaceholderViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new FeedPlaceholderViewName("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]").ToString();
-            FeedPlaceholderView response = await client.GetFeedPlaceholderViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetFeedPlaceholderView2()
-        {
-            Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(moq::MockBehavior.Strict);
             GetFeedPlaceholderViewRequest request = new GetFeedPlaceholderViewRequest
             {
-                ResourceName = new FeedPlaceholderViewName("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]").ToString(),
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
             };
-            FeedPlaceholderView expectedResponse = new FeedPlaceholderView
+            gagvr::FeedPlaceholderView expectedResponse = new gagvr::FeedPlaceholderView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
             };
-            mockGrpcClient.Setup(x => x.GetFeedPlaceholderView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetFeedPlaceholderView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             FeedPlaceholderViewServiceClient client = new FeedPlaceholderViewServiceClientImpl(mockGrpcClient.Object, null);
-            FeedPlaceholderView response = client.GetFeedPlaceholderView(request);
+            gagvr::FeedPlaceholderView response = client.GetFeedPlaceholderView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetFeedPlaceholderViewAsync2()
+        public async stt::Task GetFeedPlaceholderViewAsync()
         {
-            Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(moq::MockBehavior.Strict);
             GetFeedPlaceholderViewRequest request = new GetFeedPlaceholderViewRequest
             {
-                ResourceName = new FeedPlaceholderViewName("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]").ToString(),
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
             };
-            FeedPlaceholderView expectedResponse = new FeedPlaceholderView
+            gagvr::FeedPlaceholderView expectedResponse = new gagvr::FeedPlaceholderView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
             };
-            mockGrpcClient.Setup(x => x.GetFeedPlaceholderViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<FeedPlaceholderView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetFeedPlaceholderViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::FeedPlaceholderView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             FeedPlaceholderViewServiceClient client = new FeedPlaceholderViewServiceClientImpl(mockGrpcClient.Object, null);
-            FeedPlaceholderView response = await client.GetFeedPlaceholderViewAsync(request);
+            gagvr::FeedPlaceholderView responseCallSettings = await client.GetFeedPlaceholderViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::FeedPlaceholderView responseCancellationToken = await client.GetFeedPlaceholderViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetFeedPlaceholderViewResourceNames()
+        {
+            moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(moq::MockBehavior.Strict);
+            GetFeedPlaceholderViewRequest request = new GetFeedPlaceholderViewRequest
+            {
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+            };
+            gagvr::FeedPlaceholderView expectedResponse = new gagvr::FeedPlaceholderView
+            {
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+            };
+            mockGrpcClient.Setup(x => x.GetFeedPlaceholderView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            FeedPlaceholderViewServiceClient client = new FeedPlaceholderViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedPlaceholderView response = client.GetFeedPlaceholderView(request.ResourceNameAsFeedPlaceholderViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetFeedPlaceholderViewResourceNamesAsync()
+        {
+            moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient> mockGrpcClient = new moq::Mock<FeedPlaceholderViewService.FeedPlaceholderViewServiceClient>(moq::MockBehavior.Strict);
+            GetFeedPlaceholderViewRequest request = new GetFeedPlaceholderViewRequest
+            {
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+            };
+            gagvr::FeedPlaceholderView expectedResponse = new gagvr::FeedPlaceholderView
+            {
+                ResourceNameAsFeedPlaceholderViewName = gagvr::FeedPlaceholderViewName.FromCustomerFeedPlaceholderView("[CUSTOMER]", "[FEED_PLACEHOLDER_VIEW]"),
+                PlaceholderType = gagve::PlaceholderTypeEnum.Types.PlaceholderType.Message,
+            };
+            mockGrpcClient.Setup(x => x.GetFeedPlaceholderViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::FeedPlaceholderView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            FeedPlaceholderViewServiceClient client = new FeedPlaceholderViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::FeedPlaceholderView responseCallSettings = await client.GetFeedPlaceholderViewAsync(request.ResourceNameAsFeedPlaceholderViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::FeedPlaceholderView responseCancellationToken = await client.GetFeedPlaceholderViewAsync(request.ResourceNameAsFeedPlaceholderViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

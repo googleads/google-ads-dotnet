@@ -14,107 +14,163 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedGroupPlacementViewServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedGroupPlacementViewServiceClientTest
     {
+        [Test]
+        public void GetGroupPlacementViewRequestObject()
+        {
+            moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(moq::MockBehavior.Strict);
+            GetGroupPlacementViewRequest request = new GetGroupPlacementViewRequest
+            {
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+            };
+            gagvr::GroupPlacementView expectedResponse = new gagvr::GroupPlacementView
+            {
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+                Placement = "placementb440552a",
+                DisplayName = "display_name137f65c2",
+                TargetUrl = "target_url95bdaf9b",
+                PlacementType = gagve::PlacementTypeEnum.Types.PlacementType.Website,
+            };
+            mockGrpcClient.Setup(x => x.GetGroupPlacementView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GroupPlacementViewServiceClient client = new GroupPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GroupPlacementView response = client.GetGroupPlacementView(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetGroupPlacementViewRequestObjectAsync()
+        {
+            moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(moq::MockBehavior.Strict);
+            GetGroupPlacementViewRequest request = new GetGroupPlacementViewRequest
+            {
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+            };
+            gagvr::GroupPlacementView expectedResponse = new gagvr::GroupPlacementView
+            {
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+                Placement = "placementb440552a",
+                DisplayName = "display_name137f65c2",
+                TargetUrl = "target_url95bdaf9b",
+                PlacementType = gagve::PlacementTypeEnum.Types.PlacementType.Website,
+            };
+            mockGrpcClient.Setup(x => x.GetGroupPlacementViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GroupPlacementView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            GroupPlacementViewServiceClient client = new GroupPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GroupPlacementView responseCallSettings = await client.GetGroupPlacementViewAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GroupPlacementView responseCancellationToken = await client.GetGroupPlacementViewAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetGroupPlacementView()
         {
-            Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(MockBehavior.Strict);
-            GetGroupPlacementViewRequest expectedRequest = new GetGroupPlacementViewRequest
-            {
-                ResourceName = new GroupPlacementViewName("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]").ToString(),
-            };
-            GroupPlacementView expectedResponse = new GroupPlacementView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGroupPlacementView(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            GroupPlacementViewServiceClient client = new GroupPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GroupPlacementViewName("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]").ToString();
-            GroupPlacementView response = client.GetGroupPlacementView(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetGroupPlacementViewAsync()
-        {
-            Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(MockBehavior.Strict);
-            GetGroupPlacementViewRequest expectedRequest = new GetGroupPlacementViewRequest
-            {
-                ResourceName = new GroupPlacementViewName("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]").ToString(),
-            };
-            GroupPlacementView expectedResponse = new GroupPlacementView
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGroupPlacementViewAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GroupPlacementView>(Task.FromResult(expectedResponse), null, null, null, null));
-            GroupPlacementViewServiceClient client = new GroupPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GroupPlacementViewName("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]").ToString();
-            GroupPlacementView response = await client.GetGroupPlacementViewAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetGroupPlacementView2()
-        {
-            Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(moq::MockBehavior.Strict);
             GetGroupPlacementViewRequest request = new GetGroupPlacementViewRequest
             {
-                ResourceName = new GroupPlacementViewName("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]").ToString(),
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
             };
-            GroupPlacementView expectedResponse = new GroupPlacementView
+            gagvr::GroupPlacementView expectedResponse = new gagvr::GroupPlacementView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+                Placement = "placementb440552a",
+                DisplayName = "display_name137f65c2",
+                TargetUrl = "target_url95bdaf9b",
+                PlacementType = gagve::PlacementTypeEnum.Types.PlacementType.Website,
             };
-            mockGrpcClient.Setup(x => x.GetGroupPlacementView(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetGroupPlacementView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             GroupPlacementViewServiceClient client = new GroupPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
-            GroupPlacementView response = client.GetGroupPlacementView(request);
+            gagvr::GroupPlacementView response = client.GetGroupPlacementView(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetGroupPlacementViewAsync2()
+        public async stt::Task GetGroupPlacementViewAsync()
         {
-            Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(MockBehavior.Strict);
+            moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(moq::MockBehavior.Strict);
             GetGroupPlacementViewRequest request = new GetGroupPlacementViewRequest
             {
-                ResourceName = new GroupPlacementViewName("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]").ToString(),
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
             };
-            GroupPlacementView expectedResponse = new GroupPlacementView
+            gagvr::GroupPlacementView expectedResponse = new gagvr::GroupPlacementView
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+                Placement = "placementb440552a",
+                DisplayName = "display_name137f65c2",
+                TargetUrl = "target_url95bdaf9b",
+                PlacementType = gagve::PlacementTypeEnum.Types.PlacementType.Website,
             };
-            mockGrpcClient.Setup(x => x.GetGroupPlacementViewAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GroupPlacementView>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetGroupPlacementViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GroupPlacementView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             GroupPlacementViewServiceClient client = new GroupPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
-            GroupPlacementView response = await client.GetGroupPlacementViewAsync(request);
+            gagvr::GroupPlacementView responseCallSettings = await client.GetGroupPlacementViewAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GroupPlacementView responseCancellationToken = await client.GetGroupPlacementViewAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetGroupPlacementViewResourceNames()
+        {
+            moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(moq::MockBehavior.Strict);
+            GetGroupPlacementViewRequest request = new GetGroupPlacementViewRequest
+            {
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+            };
+            gagvr::GroupPlacementView expectedResponse = new gagvr::GroupPlacementView
+            {
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+                Placement = "placementb440552a",
+                DisplayName = "display_name137f65c2",
+                TargetUrl = "target_url95bdaf9b",
+                PlacementType = gagve::PlacementTypeEnum.Types.PlacementType.Website,
+            };
+            mockGrpcClient.Setup(x => x.GetGroupPlacementView(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GroupPlacementViewServiceClient client = new GroupPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GroupPlacementView response = client.GetGroupPlacementView(request.ResourceNameAsGroupPlacementViewName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
+        [Test]
+        public async stt::Task GetGroupPlacementViewResourceNamesAsync()
+        {
+            moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient> mockGrpcClient = new moq::Mock<GroupPlacementViewService.GroupPlacementViewServiceClient>(moq::MockBehavior.Strict);
+            GetGroupPlacementViewRequest request = new GetGroupPlacementViewRequest
+            {
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+            };
+            gagvr::GroupPlacementView expectedResponse = new gagvr::GroupPlacementView
+            {
+                ResourceNameAsGroupPlacementViewName = gagvr::GroupPlacementViewName.FromCustomerGroupPlacementView("[CUSTOMER]", "[GROUP_PLACEMENT_VIEW]"),
+                Placement = "placementb440552a",
+                DisplayName = "display_name137f65c2",
+                TargetUrl = "target_url95bdaf9b",
+                PlacementType = gagve::PlacementTypeEnum.Types.PlacementType.Website,
+            };
+            mockGrpcClient.Setup(x => x.GetGroupPlacementViewAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GroupPlacementView>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            GroupPlacementViewServiceClient client = new GroupPlacementViewServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GroupPlacementView responseCallSettings = await client.GetGroupPlacementViewAsync(request.ResourceNameAsGroupPlacementViewName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GroupPlacementView responseCancellationToken = await client.GetGroupPlacementViewAsync(request.ResourceNameAsGroupPlacementViewName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
     }
 }

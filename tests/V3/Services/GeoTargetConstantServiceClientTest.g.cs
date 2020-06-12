@@ -14,160 +14,196 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.V3.Services.Tests
-{
-    using Google.Ads.GoogleAds.V3.Resources;
-    using apis = Google.Ads.GoogleAds.V3.Services;
-    using Google.Api.Gax;
-    using Google.Api.Gax.Grpc;
-    using Google.Protobuf.WellKnownTypes;
-    using Grpc.Core;
-    using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using NUnit.Framework;
+using gagve = Google.Ads.GoogleAds.V3.Enums;
+using gagvr = Google.Ads.GoogleAds.V3.Resources;
+using gaxgrpc = Google.Api.Gax.Grpc;
+using grpccore = Grpc.Core;
+using moq = Moq;
+using st = System.Threading;
+using stt = System.Threading.Tasks;
+using NUnit.Framework;
+using Google.Ads.GoogleAds.V3.Services;
 
-    /// <summary>Generated unit tests</summary>
-    public class GeneratedGeoTargetConstantServiceClientTest
+namespace Google.Ads.GoogleAds.Tests.V3.Services
+{
+    /// <summary>Generated unit tests.</summary>
+    public sealed class GeneratedGeoTargetConstantServiceClientTest
     {
+        [Test]
+        public void GetGeoTargetConstantRequestObject()
+        {
+            moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
+            GetGeoTargetConstantRequest request = new GetGeoTargetConstantRequest
+            {
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+            };
+            gagvr::GeoTargetConstant expectedResponse = new gagvr::GeoTargetConstant
+            {
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                Id = -6774108720365892680L,
+                GeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+                TargetType = "target_type1235462e",
+                Status = gagve::GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Enabled,
+                CanonicalName = "canonical_name5e3d81e6",
+            };
+            mockGrpcClient.Setup(x => x.GetGeoTargetConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GeoTargetConstant response = client.GetGeoTargetConstant(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GetGeoTargetConstantRequestObjectAsync()
+        {
+            moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
+            GetGeoTargetConstantRequest request = new GetGeoTargetConstantRequest
+            {
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+            };
+            gagvr::GeoTargetConstant expectedResponse = new gagvr::GeoTargetConstant
+            {
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                Id = -6774108720365892680L,
+                GeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+                TargetType = "target_type1235462e",
+                Status = gagve::GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Enabled,
+                CanonicalName = "canonical_name5e3d81e6",
+            };
+            mockGrpcClient.Setup(x => x.GetGeoTargetConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GeoTargetConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GeoTargetConstant responseCallSettings = await client.GetGeoTargetConstantAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GeoTargetConstant responseCancellationToken = await client.GetGeoTargetConstantAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
         [Test]
         public void GetGeoTargetConstant()
         {
-            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
-            GetGeoTargetConstantRequest expectedRequest = new GetGeoTargetConstantRequest
-            {
-                ResourceName = new GeoTargetConstantName("[GEO_TARGET_CONSTANT]").ToString(),
-            };
-            GeoTargetConstant expectedResponse = new GeoTargetConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGeoTargetConstant(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
-            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GeoTargetConstantName("[GEO_TARGET_CONSTANT]").ToString();
-            GeoTargetConstant response = client.GetGeoTargetConstant(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public async Task GetGeoTargetConstantAsync()
-        {
-            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
-            GetGeoTargetConstantRequest expectedRequest = new GetGeoTargetConstantRequest
-            {
-                ResourceName = new GeoTargetConstantName("[GEO_TARGET_CONSTANT]").ToString(),
-            };
-            GeoTargetConstant expectedResponse = new GeoTargetConstant
-            {
-                ResourceName = "resourceName2625949903",
-            };
-            mockGrpcClient.Setup(x => x.GetGeoTargetConstantAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GeoTargetConstant>(Task.FromResult(expectedResponse), null, null, null, null));
-            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string formattedResourceName = new GeoTargetConstantName("[GEO_TARGET_CONSTANT]").ToString();
-            GeoTargetConstant response = await client.GetGeoTargetConstantAsync(formattedResourceName);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void GetGeoTargetConstant2()
-        {
-            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
             GetGeoTargetConstantRequest request = new GetGeoTargetConstantRequest
             {
-                ResourceName = new GeoTargetConstantName("[GEO_TARGET_CONSTANT]").ToString(),
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
             };
-            GeoTargetConstant expectedResponse = new GeoTargetConstant
+            gagvr::GeoTargetConstant expectedResponse = new gagvr::GeoTargetConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                Id = -6774108720365892680L,
+                GeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+                TargetType = "target_type1235462e",
+                Status = gagve::GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Enabled,
+                CanonicalName = "canonical_name5e3d81e6",
             };
-            mockGrpcClient.Setup(x => x.GetGeoTargetConstant(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            mockGrpcClient.Setup(x => x.GetGeoTargetConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
-            GeoTargetConstant response = client.GetGeoTargetConstant(request);
+            gagvr::GeoTargetConstant response = client.GetGeoTargetConstant(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task GetGeoTargetConstantAsync2()
+        public async stt::Task GetGeoTargetConstantAsync()
         {
-            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
             GetGeoTargetConstantRequest request = new GetGeoTargetConstantRequest
             {
-                ResourceName = new GeoTargetConstantName("[GEO_TARGET_CONSTANT]").ToString(),
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
             };
-            GeoTargetConstant expectedResponse = new GeoTargetConstant
+            gagvr::GeoTargetConstant expectedResponse = new gagvr::GeoTargetConstant
             {
-                ResourceName = "resourceName2625949903",
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                Id = -6774108720365892680L,
+                GeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+                TargetType = "target_type1235462e",
+                Status = gagve::GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Enabled,
+                CanonicalName = "canonical_name5e3d81e6",
             };
-            mockGrpcClient.Setup(x => x.GetGeoTargetConstantAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<GeoTargetConstant>(Task.FromResult(expectedResponse), null, null, null, null));
+            mockGrpcClient.Setup(x => x.GetGeoTargetConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GeoTargetConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
-            GeoTargetConstant response = await client.GetGeoTargetConstantAsync(request);
+            gagvr::GeoTargetConstant responseCallSettings = await client.GetGeoTargetConstantAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GeoTargetConstant responseCancellationToken = await client.GetGeoTargetConstantAsync(request.ResourceName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GetGeoTargetConstantResourceNames()
+        {
+            moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
+            GetGeoTargetConstantRequest request = new GetGeoTargetConstantRequest
+            {
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+            };
+            gagvr::GeoTargetConstant expectedResponse = new gagvr::GeoTargetConstant
+            {
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                Id = -6774108720365892680L,
+                GeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+                TargetType = "target_type1235462e",
+                Status = gagve::GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Enabled,
+                CanonicalName = "canonical_name5e3d81e6",
+            };
+            mockGrpcClient.Setup(x => x.GetGeoTargetConstant(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
+            gagvr::GeoTargetConstant response = client.GetGeoTargetConstant(request.ResourceNameAsGeoTargetConstantName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public void SuggestGeoTargetConstants()
+        public async stt::Task GetGeoTargetConstantResourceNamesAsync()
         {
-            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
-            SuggestGeoTargetConstantsRequest expectedRequest = new SuggestGeoTargetConstantsRequest
+            moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
+            GetGeoTargetConstantRequest request = new GetGeoTargetConstantRequest
             {
-                Locale = null,
-                CountryCode = null,
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
             };
-            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
-            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstants(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            gagvr::GeoTargetConstant expectedResponse = new gagvr::GeoTargetConstant
+            {
+                ResourceNameAsGeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                Id = -6774108720365892680L,
+                GeoTargetConstantName = gagvr::GeoTargetConstantName.FromGeoTargetConstant("[GEO_TARGET_CONSTANT]"),
+                CountryCode = "country_code8debec55",
+                TargetType = "target_type1235462e",
+                Status = gagve::GeoTargetConstantStatusEnum.Types.GeoTargetConstantStatus.Enabled,
+                CanonicalName = "canonical_name5e3d81e6",
+            };
+            mockGrpcClient.Setup(x => x.GetGeoTargetConstantAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GeoTargetConstant>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string locale = null;
-            string countryCode = null;
-            SuggestGeoTargetConstantsResponse response = client.SuggestGeoTargetConstants(locale, countryCode);
-            Assert.AreEqual(expectedResponse, response);
+            gagvr::GeoTargetConstant responseCallSettings = await client.GetGeoTargetConstantAsync(request.ResourceNameAsGeoTargetConstantName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            gagvr::GeoTargetConstant responseCancellationToken = await client.GetGeoTargetConstantAsync(request.ResourceNameAsGeoTargetConstantName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
 
         [Test]
-        public async Task SuggestGeoTargetConstantsAsync()
+        public void SuggestGeoTargetConstantsRequestObject()
         {
-            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
-            SuggestGeoTargetConstantsRequest expectedRequest = new SuggestGeoTargetConstantsRequest
-            {
-                Locale = null,
-                CountryCode = null,
-            };
-            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
-            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstantsAsync(expectedRequest, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<SuggestGeoTargetConstantsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
-            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
-            string locale = null;
-            string countryCode = null;
-            SuggestGeoTargetConstantsResponse response = await client.SuggestGeoTargetConstantsAsync(locale, countryCode);
-            Assert.AreEqual(expectedResponse, response);
-            mockGrpcClient.VerifyAll();
-        }
-
-        [Test]
-        public void SuggestGeoTargetConstants2()
-        {
-            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
             SuggestGeoTargetConstantsRequest request = new SuggestGeoTargetConstantsRequest
             {
-                Locale = null,
-                CountryCode = null,
+                LocationNames = new SuggestGeoTargetConstantsRequest.Types.LocationNames(),
+                GeoTargets = new SuggestGeoTargetConstantsRequest.Types.GeoTargets(),
+                Locale = "locale9e6d21fb",
+                CountryCode = "country_code8debec55",
             };
-            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
-            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstants(request, It.IsAny<CallOptions>()))
-                .Returns(expectedResponse);
+            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse
+            {
+                GeoTargetConstantSuggestions =
+                {
+                    new GeoTargetConstantSuggestion(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstants(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
             SuggestGeoTargetConstantsResponse response = client.SuggestGeoTargetConstants(request);
             Assert.AreEqual(expectedResponse, response);
@@ -175,22 +211,30 @@ namespace Google.Ads.GoogleAds.V3.Services.Tests
         }
 
         [Test]
-        public async Task SuggestGeoTargetConstantsAsync2()
+        public async stt::Task SuggestGeoTargetConstantsRequestObjectAsync()
         {
-            Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(MockBehavior.Strict);
+            moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
             SuggestGeoTargetConstantsRequest request = new SuggestGeoTargetConstantsRequest
             {
-                Locale = null,
-                CountryCode = null,
+                LocationNames = new SuggestGeoTargetConstantsRequest.Types.LocationNames(),
+                GeoTargets = new SuggestGeoTargetConstantsRequest.Types.GeoTargets(),
+                Locale = "locale9e6d21fb",
+                CountryCode = "country_code8debec55",
             };
-            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse();
-            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstantsAsync(request, It.IsAny<CallOptions>()))
-                .Returns(new Grpc.Core.AsyncUnaryCall<SuggestGeoTargetConstantsResponse>(Task.FromResult(expectedResponse), null, null, null, null));
+            SuggestGeoTargetConstantsResponse expectedResponse = new SuggestGeoTargetConstantsResponse
+            {
+                GeoTargetConstantSuggestions =
+                {
+                    new GeoTargetConstantSuggestion(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.SuggestGeoTargetConstantsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<SuggestGeoTargetConstantsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
-            SuggestGeoTargetConstantsResponse response = await client.SuggestGeoTargetConstantsAsync(request);
-            Assert.AreEqual(expectedResponse, response);
+            SuggestGeoTargetConstantsResponse responseCallSettings = await client.SuggestGeoTargetConstantsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            SuggestGeoTargetConstantsResponse responseCancellationToken = await client.SuggestGeoTargetConstantsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
-
     }
 }

@@ -420,7 +420,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="customerId">The customer identifier.</param>
         /// <param name="gmbFeedResourceName">Name of the GMB feed resource.</param>
         private static void CreateCustomerFeed(GoogleAdsClient client, long customerId,
-                    string gmbFeedResourceName)
+            string gmbFeedResourceName)
         {
             // Get the CustomerFeedService.
             CustomerFeedServiceClient customerFeedService = client.GetService(
