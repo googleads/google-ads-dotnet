@@ -191,8 +191,7 @@ namespace Google.Ads.GoogleAds.Config
         /// The library identifier override.
         /// </summary>
         private readonly StringConfigSetting libraryIdentifierOverride =
-            new StringConfigSetting(
-            "LibraryIdentifierOverride", "");
+            new StringConfigSetting("LibraryIdentifierOverride", "");
 
         /// <summary>
         /// Gets or sets the timeout for individual API calls.
@@ -492,6 +491,7 @@ namespace Google.Ads.GoogleAds.Config
             ReadSetting(settings, gmbLoginEmail);
             ReadSetting(settings, merchantCenterAccountId);
 
+            ReadSetting(settings, oAuth2Mode);
             ReadSetting(settings, oAuth2ClientId);
             ReadSetting(settings, oAuth2ClientSecret);
             ReadSetting(settings, oAuth2RefreshToken);
