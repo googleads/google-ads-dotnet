@@ -18,15 +18,15 @@ using gagvr = Google.Ads.GoogleAds.V4.Resources;
 
 namespace Google.Ads.GoogleAds.V4.Services
 {
-    public partial class GetKeywordPlanKeywordRequest
+    public partial class GetKeywordPlanAdGroupKeywordRequest
     {
         /// <summary>
-        /// <see cref="gagvr::KeywordPlanKeywordName"/>-typed view over the <see cref="ResourceName"/> resource name
-        /// property.
+        /// <see cref="gagvr::KeywordPlanAdGroupKeywordName"/>-typed view over the <see cref="ResourceName"/> resource
+        /// name property.
         /// </summary>
-        public gagvr::KeywordPlanKeywordName ResourceNameAsKeywordPlanKeywordName
+        public gagvr::KeywordPlanAdGroupKeywordName ResourceNameAsKeywordPlanAdGroupKeywordName
         {
-            get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::KeywordPlanKeywordName.Parse(ResourceName, allowUnparsed: true);
+            get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::KeywordPlanAdGroupKeywordName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
         }
     }

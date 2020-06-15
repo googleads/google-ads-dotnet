@@ -284,6 +284,98 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
         }
 
         [Test]
+        public void GenerateForecastCurveRequestObject()
+        {
+            moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateForecastCurveRequest request = new GenerateForecastCurveRequest
+            {
+                KeywordPlan = "keyword_plan348c505a",
+            };
+            GenerateForecastCurveResponse expectedResponse = new GenerateForecastCurveResponse
+            {
+                CampaignForecastCurves =
+                {
+                    new KeywordPlanCampaignForecastCurve(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateForecastCurve(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateForecastCurveResponse response = client.GenerateForecastCurve(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GenerateForecastCurveRequestObjectAsync()
+        {
+            moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateForecastCurveRequest request = new GenerateForecastCurveRequest
+            {
+                KeywordPlan = "keyword_plan348c505a",
+            };
+            GenerateForecastCurveResponse expectedResponse = new GenerateForecastCurveResponse
+            {
+                CampaignForecastCurves =
+                {
+                    new KeywordPlanCampaignForecastCurve(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateForecastCurveAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastCurveResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateForecastCurveResponse responseCallSettings = await client.GenerateForecastCurveAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateForecastCurveResponse responseCancellationToken = await client.GenerateForecastCurveAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public void GenerateForecastCurve()
+        {
+            moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateForecastCurveRequest request = new GenerateForecastCurveRequest
+            {
+                KeywordPlan = "keyword_plan348c505a",
+            };
+            GenerateForecastCurveResponse expectedResponse = new GenerateForecastCurveResponse
+            {
+                CampaignForecastCurves =
+                {
+                    new KeywordPlanCampaignForecastCurve(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateForecastCurve(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateForecastCurveResponse response = client.GenerateForecastCurve(request.KeywordPlan);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
+        public async stt::Task GenerateForecastCurveAsync()
+        {
+            moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateForecastCurveRequest request = new GenerateForecastCurveRequest
+            {
+                KeywordPlan = "keyword_plan348c505a",
+            };
+            GenerateForecastCurveResponse expectedResponse = new GenerateForecastCurveResponse
+            {
+                CampaignForecastCurves =
+                {
+                    new KeywordPlanCampaignForecastCurve(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateForecastCurveAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastCurveResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateForecastCurveResponse responseCallSettings = await client.GenerateForecastCurveAsync(request.KeywordPlan, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateForecastCurveResponse responseCancellationToken = await client.GenerateForecastCurveAsync(request.KeywordPlan, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Test]
         public void GenerateForecastMetricsRequestObject()
         {
             moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);

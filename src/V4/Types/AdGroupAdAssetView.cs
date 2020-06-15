@@ -35,7 +35,7 @@ namespace Google.Ads.GoogleAds.V4.Resources {
             "dmlld19zdGF0dXMucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3Iu",
             "cHJvdG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aHmdvb2dsZS9wcm90",
             "b2J1Zi93cmFwcGVycy5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5w",
-            "cm90byKtBQoSQWRHcm91cEFkQXNzZXRWaWV3EkoKDXJlc291cmNlX25hbWUY",
+            "cm90byKxBQoSQWRHcm91cEFkQXNzZXRWaWV3EkoKDXJlc291cmNlX25hbWUY",
             "ASABKAlCM+BBA/pBLQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3Jv",
             "dXBBZEFzc2V0VmlldxJdCgthZF9ncm91cF9hZBgFIAEoCzIcLmdvb2dsZS5w",
             "cm90b2J1Zi5TdHJpbmdWYWx1ZUIq4EED+kEkCiJnb29nbGVhZHMuZ29vZ2xl",
@@ -47,23 +47,23 @@ namespace Google.Ads.GoogleAds.V4.Resources {
             "bGUuYWRzLmdvb2dsZWFkcy52NC5yZXNvdXJjZXMuQWRHcm91cEFkQXNzZXRQ",
             "b2xpY3lTdW1tYXJ5QgPgQQMSbgoRcGVyZm9ybWFuY2VfbGFiZWwYBCABKA4y",
             "Ti5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5lbnVtcy5Bc3NldFBlcmZvcm1h",
-            "bmNlTGFiZWxFbnVtLkFzc2V0UGVyZm9ybWFuY2VMYWJlbEID4EEDOm/qQWwK",
+            "bmNlTGFiZWxFbnVtLkFzc2V0UGVyZm9ybWFuY2VMYWJlbEID4EEDOnPqQXAK",
             "K2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BZEdyb3VwQWRBc3NldFZpZXcS",
-            "PWN1c3RvbWVycy97Y3VzdG9tZXJ9L2FkR3JvdXBBZEFzc2V0cy97YWRfZ3Jv",
-            "dXBfYWRfYXNzZXRfdmlld30ixAIKG0FkR3JvdXBBZEFzc2V0UG9saWN5U3Vt",
-            "bWFyeRJTChRwb2xpY3lfdG9waWNfZW50cmllcxgBIAMoCzIwLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnY0LmNvbW1vbi5Qb2xpY3lUb3BpY0VudHJ5QgPgQQMS",
-            "ZAoNcmV2aWV3X3N0YXR1cxgCIAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnY0LmVudW1zLlBvbGljeVJldmlld1N0YXR1c0VudW0uUG9saWN5UmV2aWV3",
-            "U3RhdHVzQgPgQQMSagoPYXBwcm92YWxfc3RhdHVzGAMgASgOMkwuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjQuZW51bXMuUG9saWN5QXBwcm92YWxTdGF0dXNF",
-            "bnVtLlBvbGljeUFwcHJvdmFsU3RhdHVzQgPgQQNChAIKJWNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52NC5yZXNvdXJjZXNCF0FkR3JvdXBBZEFzc2V0Vmll",
-            "d1Byb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92NC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FB",
-            "qgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjQuUmVzb3VyY2VzygIhR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjRcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6Okdv",
-            "b2dsZUFkczo6VjQ6OlJlc291cmNlc2IGcHJvdG8z"));
+            "QWN1c3RvbWVycy97Y3VzdG9tZXJ9L2FkR3JvdXBBZEFzc2V0Vmlld3Mve2Fk",
+            "X2dyb3VwX2FkX2Fzc2V0X3ZpZXd9IsQCChtBZEdyb3VwQWRBc3NldFBvbGlj",
+            "eVN1bW1hcnkSUwoUcG9saWN5X3RvcGljX2VudHJpZXMYASADKAsyMC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52NC5jb21tb24uUG9saWN5VG9waWNFbnRyeUID",
+            "4EEDEmQKDXJldmlld19zdGF0dXMYAiABKA4ySC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52NC5lbnVtcy5Qb2xpY3lSZXZpZXdTdGF0dXNFbnVtLlBvbGljeVJl",
+            "dmlld1N0YXR1c0ID4EEDEmoKD2FwcHJvdmFsX3N0YXR1cxgDIAEoDjJMLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY0LmVudW1zLlBvbGljeUFwcHJvdmFsU3Rh",
+            "dHVzRW51bS5Qb2xpY3lBcHByb3ZhbFN0YXR1c0ID4EEDQoQCCiVjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjQucmVzb3VyY2VzQhdBZEdyb3VwQWRBc3Nl",
+            "dFZpZXdQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjQvcmVzb3VyY2VzO3Jlc291cmNlc6IC",
+            "A0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlY0LlJlc291cmNlc8oCIUdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFY0XFJlc291cmNlc+oCJUdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlY0OjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V4.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.AssetPerformanceLabelReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.PolicyApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.PolicyReviewStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -122,9 +122,13 @@ namespace Google.Ads.GoogleAds.V4.Resources {
     private string resourceName_ = "";
     /// <summary>
     /// Output only. The resource name of the ad group ad asset view.
-    /// Ad group ad asset view resource names have the form:
+    /// Ad group ad asset view resource names have the form (Before V4):
     ///
-    /// `customers/{customer_id}/adGroupAdAssets/{AdGroupAdAsset.ad_group_id}~{AdGroupAdAsset.ad.ad_id}~{AdGroupAdAsset.asset_id}~{AdGroupAdAsset.asset_field_type}`
+    /// `customers/{customer_id}/adGroupAdAssets/{AdGroupAdAsset.ad_group_id}~{AdGroupAdAsset.ad.ad_id}~{AdGroupAdAsset.asset_id}~{AdGroupAdAsset.field_type}`
+    ///
+    /// Ad group ad asset view resource names have the form (Beginning from V4):
+    ///
+    /// `customers/{customer_id}/adGroupAdAssetViews/{AdGroupAdAsset.ad_group_id}~{AdGroupAdAsset.ad_id}~{AdGroupAdAsset.asset_id}~{AdGroupAdAsset.field_type}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

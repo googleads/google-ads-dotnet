@@ -517,7 +517,7 @@ namespace Google.Ads.GoogleAds.V4.Common {
     private static readonly pb::FieldCodec<double?> _single_allConversionsValue_codec = pb::FieldCodec.ForStructWrapper<double>(530);
     private double? allConversionsValue_;
     /// <summary>
-    /// The total value of all conversions.
+    /// The value of all conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? AllConversionsValue {
@@ -533,8 +533,8 @@ namespace Google.Ads.GoogleAds.V4.Common {
     private static readonly pb::FieldCodec<double?> _single_allConversions_codec = pb::FieldCodec.ForStructWrapper<double>(58);
     private double? allConversions_;
     /// <summary>
-    /// The total number of conversions. This only includes conversion actions
-    /// which include_in_conversions_metric attribute is set to true.
+    /// The total number of conversions. This includes all conversions regardless
+    /// of the value of include_in_conversions_metric.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? AllConversions {
@@ -1046,7 +1046,8 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// Conversions from interactions divided by the number of ad interactions
     /// (such as clicks for text ads or views for video ads). This only includes
     /// conversion actions which include_in_conversions_metric attribute is set to
-    /// true.
+    /// true. If you use conversion-based bidding, your bid strategies will
+    /// optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsFromInteractionsRate {
@@ -1062,8 +1063,10 @@ namespace Google.Ads.GoogleAds.V4.Common {
     private static readonly pb::FieldCodec<double?> _single_conversionsValue_codec = pb::FieldCodec.ForStructWrapper<double>(562);
     private double? conversionsValue_;
     /// <summary>
-    /// The total value of conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// The value of conversions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsValue {
@@ -1081,7 +1084,8 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// The value of conversions divided by the cost of ad interactions. This only
     /// includes conversion actions which include_in_conversions_metric attribute
-    /// is set to true.
+    /// is set to true. If you use conversion-based bidding, your bid strategies
+    /// will optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsValuePerCost {
@@ -1099,7 +1103,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// The value of conversions from interactions divided by the number of ad
     /// interactions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsFromInteractionsValuePerInteraction {
@@ -1116,7 +1122,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
     private double? conversions_;
     /// <summary>
     /// The number of conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? Conversions {
@@ -1167,7 +1175,8 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// The cost of ad interactions divided by conversions. This only includes
     /// conversion actions which include_in_conversions_metric attribute is set to
-    /// true.
+    /// true. If you use conversion-based bidding, your bid strategies will
+    /// optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CostPerConversion {
@@ -1185,7 +1194,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// The cost of ad interactions divided by current model attributed
     /// conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CostPerCurrentModelAttributedConversion {
@@ -1238,7 +1249,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// Shows how your historic conversions data would look under the attribution
     /// model you've currently selected. This only includes conversion actions
-    /// which include_in_conversions_metric attribute is set to true.
+    /// which include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversions {
@@ -1257,7 +1270,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// Current model attributed conversions from interactions divided by the
     /// number of ad interactions (such as clicks for text ads or views for video
     /// ads). This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversionsFromInteractionsRate {
@@ -1275,7 +1290,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// The value of current model attributed conversions from interactions divided
     /// by the number of ad interactions. This only includes conversion actions
-    /// which include_in_conversions_metric attribute is set to true.
+    /// which include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversionsFromInteractionsValuePerInteraction {
@@ -1291,9 +1308,10 @@ namespace Google.Ads.GoogleAds.V4.Common {
     private static readonly pb::FieldCodec<double?> _single_currentModelAttributedConversionsValue_codec = pb::FieldCodec.ForStructWrapper<double>(834);
     private double? currentModelAttributedConversionsValue_;
     /// <summary>
-    /// The total value of current model attributed conversions. This only includes
+    /// The value of current model attributed conversions. This only includes
     /// conversion actions which include_in_conversions_metric attribute is set to
-    /// true.
+    /// true. If you use conversion-based bidding, your bid strategies will
+    /// optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversionsValue {
@@ -1311,7 +1329,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// The value of current model attributed conversions divided by the cost of ad
     /// interactions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversionsValuePerCost {
@@ -2162,7 +2182,8 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// The value of conversions divided by the number of conversions. This only
     /// includes conversion actions which include_in_conversions_metric attribute
-    /// is set to true.
+    /// is set to true. If you use conversion-based bidding, your bid strategies
+    /// will optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ValuePerConversion {
@@ -2180,7 +2201,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// The value of current model attributed conversions divided by the number of
     /// the conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ValuePerCurrentModelAttributedConversion {

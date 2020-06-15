@@ -20,6 +20,7 @@ namespace Google.Ads.GoogleAds.V4.Services
 {
     public abstract partial class AccountBudgetProposalServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AccountBudgetServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class AccountLinkServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupAdAssetViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupAdLabelServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class AdGroupAdServiceClient : GoogleAdsServiceClientBase {}
@@ -89,12 +90,13 @@ namespace Google.Ads.GoogleAds.V4.Services
     public abstract partial class GroupPlacementViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class HotelGroupViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class HotelPerformanceViewServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class IncomeRangeViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class InvoiceServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class KeywordPlanAdGroupKeywordServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class KeywordPlanAdGroupServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class KeywordPlanCampaignKeywordServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class KeywordPlanCampaignServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class KeywordPlanIdeaServiceClient : GoogleAdsServiceClientBase {}
-    public abstract partial class KeywordPlanKeywordServiceClient : GoogleAdsServiceClientBase {}
-    public abstract partial class KeywordPlanNegativeKeywordServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class KeywordPlanServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class KeywordViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class LabelServiceClient : GoogleAdsServiceClientBase {}
@@ -120,6 +122,7 @@ namespace Google.Ads.GoogleAds.V4.Services
     public abstract partial class SharedCriterionServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class SharedSetServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ShoppingPerformanceViewServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class ThirdPartyAppAnalyticsLinkServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class TopicConstantServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class TopicViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class UserDataServiceClient : GoogleAdsServiceClientBase {}

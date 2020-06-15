@@ -19,7 +19,7 @@ using Google.Protobuf.WellKnownTypes;
 
 namespace Google.Ads.GoogleAds.V4.Services
 {
-    public sealed partial class MutateKeywordPlanNegativeKeywordsResponse 
+    public sealed partial class MutateKeywordPlanCampaignKeywordsResponse 
     {
         /// <summary>
         /// Gets a GoogleAdsFailure instance that combines all the errors

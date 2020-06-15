@@ -57,6 +57,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 {
                     gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
                 },
+                OptimizationScore = -4.7741588361660064E+17,
             };
             mockGrpcClient.Setup(x => x.GetCustomer(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
@@ -93,6 +94,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 {
                     gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
                 },
+                OptimizationScore = -4.7741588361660064E+17,
             };
             mockGrpcClient.Setup(x => x.GetCustomerAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Customer>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
@@ -131,6 +133,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 {
                     gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
                 },
+                OptimizationScore = -4.7741588361660064E+17,
             };
             mockGrpcClient.Setup(x => x.GetCustomer(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
@@ -167,6 +170,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 {
                     gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
                 },
+                OptimizationScore = -4.7741588361660064E+17,
             };
             mockGrpcClient.Setup(x => x.GetCustomerAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Customer>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
@@ -205,6 +209,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 {
                     gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
                 },
+                OptimizationScore = -4.7741588361660064E+17,
             };
             mockGrpcClient.Setup(x => x.GetCustomer(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
@@ -241,6 +246,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 {
                     gagve::CustomerPayPerConversionEligibilityFailureReasonEnum.Types.CustomerPayPerConversionEligibilityFailureReason.HasCampaignWithSharedBudget,
                 },
+                OptimizationScore = -4.7741588361660064E+17,
             };
             mockGrpcClient.Setup(x => x.GetCustomerAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Customer>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);

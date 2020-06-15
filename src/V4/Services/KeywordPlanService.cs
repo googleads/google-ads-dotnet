@@ -49,69 +49,90 @@ namespace Google.Ads.GoogleAds.V4.Services {
             "CzISLmdvb2dsZS5ycGMuU3RhdHVzEksKB3Jlc3VsdHMYAiADKAsyOi5nb29n",
             "bGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5NdXRhdGVLZXl3b3JkUGxh",
             "bnNSZXN1bHQiMQoYTXV0YXRlS2V5d29yZFBsYW5zUmVzdWx0EhUKDXJlc291",
-            "cmNlX25hbWUYASABKAkiOwoeR2VuZXJhdGVGb3JlY2FzdE1ldHJpY3NSZXF1",
-            "ZXN0EhkKDGtleXdvcmRfcGxhbhgBIAEoCUID4EECIq8CCh9HZW5lcmF0ZUZv",
-            "cmVjYXN0TWV0cmljc1Jlc3BvbnNlElkKEmNhbXBhaWduX2ZvcmVjYXN0cxgB",
-            "IAMoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNlcnZpY2VzLktleXdv",
-            "cmRQbGFuQ2FtcGFpZ25Gb3JlY2FzdBJYChJhZF9ncm91cF9mb3JlY2FzdHMY",
-            "AiADKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5LZXl3",
-            "b3JkUGxhbkFkR3JvdXBGb3JlY2FzdBJXChFrZXl3b3JkX2ZvcmVjYXN0cxgD",
-            "IAMoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNlcnZpY2VzLktleXdv",
-            "cmRQbGFuS2V5d29yZEZvcmVjYXN0IqgBChtLZXl3b3JkUGxhbkNhbXBhaWdu",
-            "Rm9yZWNhc3QSOwoVa2V5d29yZF9wbGFuX2NhbXBhaWduGAEgASgLMhwuZ29v",
-            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEkwKEWNhbXBhaWduX2ZvcmVjYXN0",
-            "GAIgASgLMjEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuc2VydmljZXMuRm9y",
-            "ZWNhc3RNZXRyaWNzIqcBChpLZXl3b3JkUGxhbkFkR3JvdXBGb3JlY2FzdBI7",
-            "ChVrZXl3b3JkX3BsYW5fYWRfZ3JvdXAYASABKAsyHC5nb29nbGUucHJvdG9i",
-            "dWYuU3RyaW5nVmFsdWUSTAoRYWRfZ3JvdXBfZm9yZWNhc3QYAiABKAsyMS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5Gb3JlY2FzdE1ldHJp",
-            "Y3MirgEKGktleXdvcmRQbGFuS2V5d29yZEZvcmVjYXN0EkMKHWtleXdvcmRf",
-            "cGxhbl9hZF9ncm91cF9rZXl3b3JkGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LlN0cmluZ1ZhbHVlEksKEGtleXdvcmRfZm9yZWNhc3QYAiABKAsyMS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5Gb3JlY2FzdE1ldHJpY3Mi",
-            "gQIKD0ZvcmVjYXN0TWV0cmljcxIxCgtpbXByZXNzaW9ucxgBIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRIpCgNjdHIYAiABKAsyHC5nb29n",
-            "bGUucHJvdG9idWYuRG91YmxlVmFsdWUSMAoLYXZlcmFnZV9jcGMYAyABKAsy",
-            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIsCgZjbGlja3MYBSABKAsy",
-            "HC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSMAoLY29zdF9taWNyb3MY",
-            "BiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZSI9CiBHZW5lcmF0",
-            "ZUhpc3RvcmljYWxNZXRyaWNzUmVxdWVzdBIZCgxrZXl3b3JkX3BsYW4YASAB",
-            "KAlCA+BBAiJ7CiFHZW5lcmF0ZUhpc3RvcmljYWxNZXRyaWNzUmVzcG9uc2US",
-            "VgoHbWV0cmljcxgBIAMoCzJFLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNl",
-            "cnZpY2VzLktleXdvcmRQbGFuS2V5d29yZEhpc3RvcmljYWxNZXRyaWNzIrAB",
-            "CiNLZXl3b3JkUGxhbktleXdvcmRIaXN0b3JpY2FsTWV0cmljcxIyCgxzZWFy",
-            "Y2hfcXVlcnkYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUS",
-            "VQoPa2V5d29yZF9tZXRyaWNzGAIgASgLMjwuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjQuY29tbW9uLktleXdvcmRQbGFuSGlzdG9yaWNhbE1ldHJpY3My6gcK",
-            "EktleXdvcmRQbGFuU2VydmljZRLBAQoOR2V0S2V5d29yZFBsYW4SNy5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5HZXRLZXl3b3JkUGxhblJl",
-            "cXVlc3QaLi5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5yZXNvdXJjZXMuS2V5",
-            "d29yZFBsYW4iRoLT5JMCMBIuL3Y0L3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVy",
-            "cy8qL2tleXdvcmRQbGFucy8qfdpBDXJlc291cmNlX25hbWUS5gEKEk11dGF0",
-            "ZUtleXdvcmRQbGFucxI7Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNlcnZp",
-            "Y2VzLk11dGF0ZUtleXdvcmRQbGFuc1JlcXVlc3QaPC5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52NC5zZXJ2aWNlcy5NdXRhdGVLZXl3b3JkUGxhbnNSZXNwb25z",
-            "ZSJVgtPkkwI2IjEvdjQvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfS9rZXl3",
-            "b3JkUGxhbnM6bXV0YXRlOgEq2kEWY3VzdG9tZXJfaWQsb3BlcmF0aW9ucxL/",
-            "AQoXR2VuZXJhdGVGb3JlY2FzdE1ldHJpY3MSQC5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52NC5zZXJ2aWNlcy5HZW5lcmF0ZUZvcmVjYXN0TWV0cmljc1JlcXVl",
-            "c3QaQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5HZW5lcmF0",
-            "ZUZvcmVjYXN0TWV0cmljc1Jlc3BvbnNlIl+C0+STAkoiRS92NC97a2V5d29y",
-            "ZF9wbGFuPWN1c3RvbWVycy8qL2tleXdvcmRQbGFucy8qfTpnZW5lcmF0ZUZv",
-            "cmVjYXN0TWV0cmljczoBKtpBDGtleXdvcmRfcGxhbhKHAgoZR2VuZXJhdGVI",
-            "aXN0b3JpY2FsTWV0cmljcxJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNl",
-            "cnZpY2VzLkdlbmVyYXRlSGlzdG9yaWNhbE1ldHJpY3NSZXF1ZXN0GkMuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjQuc2VydmljZXMuR2VuZXJhdGVIaXN0b3Jp",
-            "Y2FsTWV0cmljc1Jlc3BvbnNlImGC0+STAkwiRy92NC97a2V5d29yZF9wbGFu",
-            "PWN1c3RvbWVycy8qL2tleXdvcmRQbGFucy8qfTpnZW5lcmF0ZUhpc3Rvcmlj",
-            "YWxNZXRyaWNzOgEq2kEMa2V5d29yZF9wbGFuGhvKQRhnb29nbGVhZHMuZ29v",
-            "Z2xlYXBpcy5jb21C/gEKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5z",
-            "ZXJ2aWNlc0IXS2V5d29yZFBsYW5TZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y0",
-            "L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjQuU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWNFxTZXJ2",
-            "aWNlc+oCJEdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlY0OjpTZXJ2aWNlc2IG",
-            "cHJvdG8z"));
+            "cmNlX25hbWUYASABKAkiOQocR2VuZXJhdGVGb3JlY2FzdEN1cnZlUmVxdWVz",
+            "dBIZCgxrZXl3b3JkX3BsYW4YASABKAlCA+BBAiKFAQodR2VuZXJhdGVGb3Jl",
+            "Y2FzdEN1cnZlUmVzcG9uc2USZAoYY2FtcGFpZ25fZm9yZWNhc3RfY3VydmVz",
+            "GAEgAygLMkIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuc2VydmljZXMuS2V5",
+            "d29yZFBsYW5DYW1wYWlnbkZvcmVjYXN0Q3VydmUiOwoeR2VuZXJhdGVGb3Jl",
+            "Y2FzdE1ldHJpY3NSZXF1ZXN0EhkKDGtleXdvcmRfcGxhbhgBIAEoCUID4EEC",
+            "Iq8CCh9HZW5lcmF0ZUZvcmVjYXN0TWV0cmljc1Jlc3BvbnNlElkKEmNhbXBh",
+            "aWduX2ZvcmVjYXN0cxgBIAMoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0",
+            "LnNlcnZpY2VzLktleXdvcmRQbGFuQ2FtcGFpZ25Gb3JlY2FzdBJYChJhZF9n",
+            "cm91cF9mb3JlY2FzdHMYAiADKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "NC5zZXJ2aWNlcy5LZXl3b3JkUGxhbkFkR3JvdXBGb3JlY2FzdBJXChFrZXl3",
+            "b3JkX2ZvcmVjYXN0cxgDIAMoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0",
+            "LnNlcnZpY2VzLktleXdvcmRQbGFuS2V5d29yZEZvcmVjYXN0IqgBChtLZXl3",
+            "b3JkUGxhbkNhbXBhaWduRm9yZWNhc3QSOwoVa2V5d29yZF9wbGFuX2NhbXBh",
+            "aWduGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEkwKEWNh",
+            "bXBhaWduX2ZvcmVjYXN0GAIgASgLMjEuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djQuc2VydmljZXMuRm9yZWNhc3RNZXRyaWNzIqcBChpLZXl3b3JkUGxhbkFk",
+            "R3JvdXBGb3JlY2FzdBI7ChVrZXl3b3JkX3BsYW5fYWRfZ3JvdXAYASABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSTAoRYWRfZ3JvdXBfZm9y",
+            "ZWNhc3QYAiABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNl",
+            "cy5Gb3JlY2FzdE1ldHJpY3MirgEKGktleXdvcmRQbGFuS2V5d29yZEZvcmVj",
+            "YXN0EkMKHWtleXdvcmRfcGxhbl9hZF9ncm91cF9rZXl3b3JkGAEgASgLMhwu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEksKEGtleXdvcmRfZm9yZWNh",
+            "c3QYAiABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5G",
+            "b3JlY2FzdE1ldHJpY3MiyAEKIEtleXdvcmRQbGFuQ2FtcGFpZ25Gb3JlY2Fz",
+            "dEN1cnZlEjsKFWtleXdvcmRfcGxhbl9jYW1wYWlnbhgBIAEoCzIcLmdvb2ds",
+            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJnChptYXhfY3BjX2JpZF9mb3JlY2Fz",
+            "dF9jdXJ2ZRgCIAEoCzJDLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNlcnZp",
+            "Y2VzLktleXdvcmRQbGFuTWF4Q3BjQmlkRm9yZWNhc3RDdXJ2ZSKCAQohS2V5",
+            "d29yZFBsYW5NYXhDcGNCaWRGb3JlY2FzdEN1cnZlEl0KFW1heF9jcGNfYmlk",
+            "X2ZvcmVjYXN0cxgBIAMoCzI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNl",
+            "cnZpY2VzLktleXdvcmRQbGFuTWF4Q3BjQmlkRm9yZWNhc3QiqAEKHEtleXdv",
+            "cmRQbGFuTWF4Q3BjQmlkRm9yZWNhc3QSNwoSbWF4X2NwY19iaWRfbWljcm9z",
+            "GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSTwoUbWF4X2Nw",
+            "Y19iaWRfZm9yZWNhc3QYAiABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "NC5zZXJ2aWNlcy5Gb3JlY2FzdE1ldHJpY3MigQIKD0ZvcmVjYXN0TWV0cmlj",
+            "cxIxCgtpbXByZXNzaW9ucxgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3Vi",
+            "bGVWYWx1ZRIpCgNjdHIYAiABKAsyHC5nb29nbGUucHJvdG9idWYuRG91Ymxl",
+            "VmFsdWUSMAoLYXZlcmFnZV9jcGMYAyABKAsyGy5nb29nbGUucHJvdG9idWYu",
+            "SW50NjRWYWx1ZRIsCgZjbGlja3MYBSABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "RG91YmxlVmFsdWUSMAoLY29zdF9taWNyb3MYBiABKAsyGy5nb29nbGUucHJv",
+            "dG9idWYuSW50NjRWYWx1ZSI9CiBHZW5lcmF0ZUhpc3RvcmljYWxNZXRyaWNz",
+            "UmVxdWVzdBIZCgxrZXl3b3JkX3BsYW4YASABKAlCA+BBAiJ7CiFHZW5lcmF0",
+            "ZUhpc3RvcmljYWxNZXRyaWNzUmVzcG9uc2USVgoHbWV0cmljcxgBIAMoCzJF",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNlcnZpY2VzLktleXdvcmRQbGFu",
+            "S2V5d29yZEhpc3RvcmljYWxNZXRyaWNzIrABCiNLZXl3b3JkUGxhbktleXdv",
+            "cmRIaXN0b3JpY2FsTWV0cmljcxIyCgxzZWFyY2hfcXVlcnkYASABKAsyHC5n",
+            "b29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSVQoPa2V5d29yZF9tZXRyaWNz",
+            "GAIgASgLMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuY29tbW9uLktleXdv",
+            "cmRQbGFuSGlzdG9yaWNhbE1ldHJpY3My5AkKEktleXdvcmRQbGFuU2Vydmlj",
+            "ZRLBAQoOR2V0S2V5d29yZFBsYW4SNy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "NC5zZXJ2aWNlcy5HZXRLZXl3b3JkUGxhblJlcXVlc3QaLi5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52NC5yZXNvdXJjZXMuS2V5d29yZFBsYW4iRoLT5JMCMBIu",
+            "L3Y0L3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8qL2tleXdvcmRQbGFucy8q",
+            "fdpBDXJlc291cmNlX25hbWUS5gEKEk11dGF0ZUtleXdvcmRQbGFucxI7Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNlcnZpY2VzLk11dGF0ZUtleXdvcmRQ",
+            "bGFuc1JlcXVlc3QaPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNl",
+            "cy5NdXRhdGVLZXl3b3JkUGxhbnNSZXNwb25zZSJVgtPkkwI2IjEvdjQvY3Vz",
+            "dG9tZXJzL3tjdXN0b21lcl9pZD0qfS9rZXl3b3JkUGxhbnM6bXV0YXRlOgEq",
+            "2kEWY3VzdG9tZXJfaWQsb3BlcmF0aW9ucxL3AQoVR2VuZXJhdGVGb3JlY2Fz",
+            "dEN1cnZlEj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuc2VydmljZXMuR2Vu",
+            "ZXJhdGVGb3JlY2FzdEN1cnZlUmVxdWVzdBo/Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnY0LnNlcnZpY2VzLkdlbmVyYXRlRm9yZWNhc3RDdXJ2ZVJlc3BvbnNl",
+            "Il2C0+STAkgiQy92NC97a2V5d29yZF9wbGFuPWN1c3RvbWVycy8qL2tleXdv",
+            "cmRQbGFucy8qfTpnZW5lcmF0ZUZvcmVjYXN0Q3VydmU6ASraQQxrZXl3b3Jk",
+            "X3BsYW4S/wEKF0dlbmVyYXRlRm9yZWNhc3RNZXRyaWNzEkAuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjQuc2VydmljZXMuR2VuZXJhdGVGb3JlY2FzdE1ldHJp",
+            "Y3NSZXF1ZXN0GkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuc2VydmljZXMu",
+            "R2VuZXJhdGVGb3JlY2FzdE1ldHJpY3NSZXNwb25zZSJfgtPkkwJKIkUvdjQv",
+            "e2tleXdvcmRfcGxhbj1jdXN0b21lcnMvKi9rZXl3b3JkUGxhbnMvKn06Z2Vu",
+            "ZXJhdGVGb3JlY2FzdE1ldHJpY3M6ASraQQxrZXl3b3JkX3BsYW4ShwIKGUdl",
+            "bmVyYXRlSGlzdG9yaWNhbE1ldHJpY3MSQi5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52NC5zZXJ2aWNlcy5HZW5lcmF0ZUhpc3RvcmljYWxNZXRyaWNzUmVxdWVz",
+            "dBpDLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNlcnZpY2VzLkdlbmVyYXRl",
+            "SGlzdG9yaWNhbE1ldHJpY3NSZXNwb25zZSJhgtPkkwJMIkcvdjQve2tleXdv",
+            "cmRfcGxhbj1jdXN0b21lcnMvKi9rZXl3b3JkUGxhbnMvKn06Z2VuZXJhdGVI",
+            "aXN0b3JpY2FsTWV0cmljczoBKtpBDGtleXdvcmRfcGxhbhobykEYZ29vZ2xl",
+            "YWRzLmdvb2dsZWFwaXMuY29tQv4BCiRjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjQuc2VydmljZXNCF0tleXdvcmRQbGFuU2VydmljZVByb3RvUAFaSGdv",
+            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
+            "ZWFkcy92NC9zZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIEdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlY0LlNlcnZpY2VzygIgR29vZ2xlXEFkc1xHb29nbGVBZHNc",
+            "VjRcU2VydmljZXPqAiRHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWNDo6U2Vy",
+            "dmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V4.Common.KeywordPlanCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Resources.KeywordPlanReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -120,11 +141,16 @@ namespace Google.Ads.GoogleAds.V4.Services {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.KeywordPlanOperation), global::Google.Ads.GoogleAds.V4.Services.KeywordPlanOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansResponse), global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansResult), global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansResult.Parser, new[]{ "ResourceName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest), global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest.Parser, new[]{ "KeywordPlan" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse), global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse.Parser, new[]{ "CampaignForecastCurves" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsRequest), global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsRequest.Parser, new[]{ "KeywordPlan" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsResponse), global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsResponse.Parser, new[]{ "CampaignForecasts", "AdGroupForecasts", "KeywordForecasts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.KeywordPlanCampaignForecast), global::Google.Ads.GoogleAds.V4.Services.KeywordPlanCampaignForecast.Parser, new[]{ "KeywordPlanCampaign", "CampaignForecast" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.KeywordPlanAdGroupForecast), global::Google.Ads.GoogleAds.V4.Services.KeywordPlanAdGroupForecast.Parser, new[]{ "KeywordPlanAdGroup", "AdGroupForecast" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.KeywordPlanKeywordForecast), global::Google.Ads.GoogleAds.V4.Services.KeywordPlanKeywordForecast.Parser, new[]{ "KeywordPlanAdGroupKeyword", "KeywordForecast" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.KeywordPlanCampaignForecastCurve), global::Google.Ads.GoogleAds.V4.Services.KeywordPlanCampaignForecastCurve.Parser, new[]{ "KeywordPlanCampaign", "MaxCpcBidForecastCurve" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecastCurve), global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecastCurve.Parser, new[]{ "MaxCpcBidForecasts" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecast), global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecast.Parser, new[]{ "MaxCpcBidMicros", "MaxCpcBidForecast" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.ForecastMetrics), global::Google.Ads.GoogleAds.V4.Services.ForecastMetrics.Parser, new[]{ "Impressions", "Ctr", "AverageCpc", "Clicks", "CostMicros" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateHistoricalMetricsRequest), global::Google.Ads.GoogleAds.V4.Services.GenerateHistoricalMetricsRequest.Parser, new[]{ "KeywordPlan" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateHistoricalMetricsResponse), global::Google.Ads.GoogleAds.V4.Services.GenerateHistoricalMetricsResponse.Parser, new[]{ "Metrics" }, null, null, null, null),
@@ -1086,6 +1112,269 @@ namespace Google.Ads.GoogleAds.V4.Services {
   }
 
   /// <summary>
+  /// Request message for [KeywordPlanService.GenerateForecastCurve][google.ads.googleads.v4.services.KeywordPlanService.GenerateForecastCurve].
+  /// </summary>
+  public sealed partial class GenerateForecastCurveRequest : pb::IMessage<GenerateForecastCurveRequest> {
+    private static readonly pb::MessageParser<GenerateForecastCurveRequest> _parser = new pb::MessageParser<GenerateForecastCurveRequest>(() => new GenerateForecastCurveRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GenerateForecastCurveRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GenerateForecastCurveRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GenerateForecastCurveRequest(GenerateForecastCurveRequest other) : this() {
+      keywordPlan_ = other.keywordPlan_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GenerateForecastCurveRequest Clone() {
+      return new GenerateForecastCurveRequest(this);
+    }
+
+    /// <summary>Field number for the "keyword_plan" field.</summary>
+    public const int KeywordPlanFieldNumber = 1;
+    private string keywordPlan_ = "";
+    /// <summary>
+    /// Required. The resource name of the keyword plan to be forecasted.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string KeywordPlan {
+      get { return keywordPlan_; }
+      set {
+        keywordPlan_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GenerateForecastCurveRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GenerateForecastCurveRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (KeywordPlan != other.KeywordPlan) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (KeywordPlan.Length != 0) hash ^= KeywordPlan.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (KeywordPlan.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(KeywordPlan);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (KeywordPlan.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(KeywordPlan);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GenerateForecastCurveRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.KeywordPlan.Length != 0) {
+        KeywordPlan = other.KeywordPlan;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            KeywordPlan = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// Response message for [KeywordPlanService.GenerateForecastCurve][google.ads.googleads.v4.services.KeywordPlanService.GenerateForecastCurve].
+  /// </summary>
+  public sealed partial class GenerateForecastCurveResponse : pb::IMessage<GenerateForecastCurveResponse> {
+    private static readonly pb::MessageParser<GenerateForecastCurveResponse> _parser = new pb::MessageParser<GenerateForecastCurveResponse>(() => new GenerateForecastCurveResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GenerateForecastCurveResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GenerateForecastCurveResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GenerateForecastCurveResponse(GenerateForecastCurveResponse other) : this() {
+      campaignForecastCurves_ = other.campaignForecastCurves_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GenerateForecastCurveResponse Clone() {
+      return new GenerateForecastCurveResponse(this);
+    }
+
+    /// <summary>Field number for the "campaign_forecast_curves" field.</summary>
+    public const int CampaignForecastCurvesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V4.Services.KeywordPlanCampaignForecastCurve> _repeated_campaignForecastCurves_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V4.Services.KeywordPlanCampaignForecastCurve.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V4.Services.KeywordPlanCampaignForecastCurve> campaignForecastCurves_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V4.Services.KeywordPlanCampaignForecastCurve>();
+    /// <summary>
+    /// List of forecast curves for the keyword plan campaign.
+    /// One maximum.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V4.Services.KeywordPlanCampaignForecastCurve> CampaignForecastCurves {
+      get { return campaignForecastCurves_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GenerateForecastCurveResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GenerateForecastCurveResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!campaignForecastCurves_.Equals(other.campaignForecastCurves_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= campaignForecastCurves_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      campaignForecastCurves_.WriteTo(output, _repeated_campaignForecastCurves_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += campaignForecastCurves_.CalculateSize(_repeated_campaignForecastCurves_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GenerateForecastCurveResponse other) {
+      if (other == null) {
+        return;
+      }
+      campaignForecastCurves_.Add(other.campaignForecastCurves_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            campaignForecastCurves_.AddEntriesFrom(input, _repeated_campaignForecastCurves_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// Request message for [KeywordPlanService.GenerateForecastMetrics][google.ads.googleads.v4.services.KeywordPlanService.GenerateForecastMetrics].
   /// </summary>
   public sealed partial class GenerateForecastMetricsRequest : pb::IMessage<GenerateForecastMetricsRequest> {
@@ -1096,7 +1385,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1231,7 +1520,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1405,7 +1694,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1585,7 +1874,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1765,7 +2054,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1935,6 +2224,491 @@ namespace Google.Ads.GoogleAds.V4.Services {
   }
 
   /// <summary>
+  /// The forecast curve for the campaign.
+  /// </summary>
+  public sealed partial class KeywordPlanCampaignForecastCurve : pb::IMessage<KeywordPlanCampaignForecastCurve> {
+    private static readonly pb::MessageParser<KeywordPlanCampaignForecastCurve> _parser = new pb::MessageParser<KeywordPlanCampaignForecastCurve>(() => new KeywordPlanCampaignForecastCurve());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<KeywordPlanCampaignForecastCurve> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public KeywordPlanCampaignForecastCurve() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public KeywordPlanCampaignForecastCurve(KeywordPlanCampaignForecastCurve other) : this() {
+      KeywordPlanCampaign = other.KeywordPlanCampaign;
+      maxCpcBidForecastCurve_ = other.maxCpcBidForecastCurve_ != null ? other.maxCpcBidForecastCurve_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public KeywordPlanCampaignForecastCurve Clone() {
+      return new KeywordPlanCampaignForecastCurve(this);
+    }
+
+    /// <summary>Field number for the "keyword_plan_campaign" field.</summary>
+    public const int KeywordPlanCampaignFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_keywordPlanCampaign_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string keywordPlanCampaign_;
+    /// <summary>
+    /// The resource name of the Keyword Plan campaign related to the forecast.
+    ///
+    /// `customers/{customer_id}/keywordPlanCampaigns/{keyword_plan_campaign_id}`
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string KeywordPlanCampaign {
+      get { return keywordPlanCampaign_; }
+      set {
+        keywordPlanCampaign_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "max_cpc_bid_forecast_curve" field.</summary>
+    public const int MaxCpcBidForecastCurveFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecastCurve maxCpcBidForecastCurve_;
+    /// <summary>
+    /// The max cpc bid forecast curve for the campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecastCurve MaxCpcBidForecastCurve {
+      get { return maxCpcBidForecastCurve_; }
+      set {
+        maxCpcBidForecastCurve_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as KeywordPlanCampaignForecastCurve);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(KeywordPlanCampaignForecastCurve other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (KeywordPlanCampaign != other.KeywordPlanCampaign) return false;
+      if (!object.Equals(MaxCpcBidForecastCurve, other.MaxCpcBidForecastCurve)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (keywordPlanCampaign_ != null) hash ^= KeywordPlanCampaign.GetHashCode();
+      if (maxCpcBidForecastCurve_ != null) hash ^= MaxCpcBidForecastCurve.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (keywordPlanCampaign_ != null) {
+        _single_keywordPlanCampaign_codec.WriteTagAndValue(output, KeywordPlanCampaign);
+      }
+      if (maxCpcBidForecastCurve_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MaxCpcBidForecastCurve);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (keywordPlanCampaign_ != null) {
+        size += _single_keywordPlanCampaign_codec.CalculateSizeWithTag(KeywordPlanCampaign);
+      }
+      if (maxCpcBidForecastCurve_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MaxCpcBidForecastCurve);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(KeywordPlanCampaignForecastCurve other) {
+      if (other == null) {
+        return;
+      }
+      if (other.keywordPlanCampaign_ != null) {
+        if (keywordPlanCampaign_ == null || other.KeywordPlanCampaign != "") {
+          KeywordPlanCampaign = other.KeywordPlanCampaign;
+        }
+      }
+      if (other.maxCpcBidForecastCurve_ != null) {
+        if (maxCpcBidForecastCurve_ == null) {
+          MaxCpcBidForecastCurve = new global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecastCurve();
+        }
+        MaxCpcBidForecastCurve.MergeFrom(other.MaxCpcBidForecastCurve);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_keywordPlanCampaign_codec.Read(input);
+            if (keywordPlanCampaign_ == null || value != "") {
+              KeywordPlanCampaign = value;
+            }
+            break;
+          }
+          case 18: {
+            if (maxCpcBidForecastCurve_ == null) {
+              MaxCpcBidForecastCurve = new global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecastCurve();
+            }
+            input.ReadMessage(MaxCpcBidForecastCurve);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// The max cpc bid forecast curve.
+  /// </summary>
+  public sealed partial class KeywordPlanMaxCpcBidForecastCurve : pb::IMessage<KeywordPlanMaxCpcBidForecastCurve> {
+    private static readonly pb::MessageParser<KeywordPlanMaxCpcBidForecastCurve> _parser = new pb::MessageParser<KeywordPlanMaxCpcBidForecastCurve>(() => new KeywordPlanMaxCpcBidForecastCurve());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<KeywordPlanMaxCpcBidForecastCurve> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public KeywordPlanMaxCpcBidForecastCurve() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public KeywordPlanMaxCpcBidForecastCurve(KeywordPlanMaxCpcBidForecastCurve other) : this() {
+      maxCpcBidForecasts_ = other.maxCpcBidForecasts_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public KeywordPlanMaxCpcBidForecastCurve Clone() {
+      return new KeywordPlanMaxCpcBidForecastCurve(this);
+    }
+
+    /// <summary>Field number for the "max_cpc_bid_forecasts" field.</summary>
+    public const int MaxCpcBidForecastsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecast> _repeated_maxCpcBidForecasts_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecast.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecast> maxCpcBidForecasts_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecast>();
+    /// <summary>
+    /// The forecasts for the Keyword Plan campaign at different max CPC bids.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V4.Services.KeywordPlanMaxCpcBidForecast> MaxCpcBidForecasts {
+      get { return maxCpcBidForecasts_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as KeywordPlanMaxCpcBidForecastCurve);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(KeywordPlanMaxCpcBidForecastCurve other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!maxCpcBidForecasts_.Equals(other.maxCpcBidForecasts_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= maxCpcBidForecasts_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      maxCpcBidForecasts_.WriteTo(output, _repeated_maxCpcBidForecasts_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += maxCpcBidForecasts_.CalculateSize(_repeated_maxCpcBidForecasts_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(KeywordPlanMaxCpcBidForecastCurve other) {
+      if (other == null) {
+        return;
+      }
+      maxCpcBidForecasts_.Add(other.maxCpcBidForecasts_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            maxCpcBidForecasts_.AddEntriesFrom(input, _repeated_maxCpcBidForecasts_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// The forecast of the campaign at a specific bid.
+  /// </summary>
+  public sealed partial class KeywordPlanMaxCpcBidForecast : pb::IMessage<KeywordPlanMaxCpcBidForecast> {
+    private static readonly pb::MessageParser<KeywordPlanMaxCpcBidForecast> _parser = new pb::MessageParser<KeywordPlanMaxCpcBidForecast>(() => new KeywordPlanMaxCpcBidForecast());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<KeywordPlanMaxCpcBidForecast> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public KeywordPlanMaxCpcBidForecast() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public KeywordPlanMaxCpcBidForecast(KeywordPlanMaxCpcBidForecast other) : this() {
+      MaxCpcBidMicros = other.MaxCpcBidMicros;
+      maxCpcBidForecast_ = other.maxCpcBidForecast_ != null ? other.maxCpcBidForecast_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public KeywordPlanMaxCpcBidForecast Clone() {
+      return new KeywordPlanMaxCpcBidForecast(this);
+    }
+
+    /// <summary>Field number for the "max_cpc_bid_micros" field.</summary>
+    public const int MaxCpcBidMicrosFieldNumber = 1;
+    private static readonly pb::FieldCodec<long?> _single_maxCpcBidMicros_codec = pb::FieldCodec.ForStructWrapper<long>(10);
+    private long? maxCpcBidMicros_;
+    /// <summary>
+    /// The max cpc bid in micros.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long? MaxCpcBidMicros {
+      get { return maxCpcBidMicros_; }
+      set {
+        maxCpcBidMicros_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "max_cpc_bid_forecast" field.</summary>
+    public const int MaxCpcBidForecastFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V4.Services.ForecastMetrics maxCpcBidForecast_;
+    /// <summary>
+    /// The forecast for the Keyword Plan campaign at the specific bid.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V4.Services.ForecastMetrics MaxCpcBidForecast {
+      get { return maxCpcBidForecast_; }
+      set {
+        maxCpcBidForecast_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as KeywordPlanMaxCpcBidForecast);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(KeywordPlanMaxCpcBidForecast other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MaxCpcBidMicros != other.MaxCpcBidMicros) return false;
+      if (!object.Equals(MaxCpcBidForecast, other.MaxCpcBidForecast)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (maxCpcBidMicros_ != null) hash ^= MaxCpcBidMicros.GetHashCode();
+      if (maxCpcBidForecast_ != null) hash ^= MaxCpcBidForecast.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (maxCpcBidMicros_ != null) {
+        _single_maxCpcBidMicros_codec.WriteTagAndValue(output, MaxCpcBidMicros);
+      }
+      if (maxCpcBidForecast_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MaxCpcBidForecast);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (maxCpcBidMicros_ != null) {
+        size += _single_maxCpcBidMicros_codec.CalculateSizeWithTag(MaxCpcBidMicros);
+      }
+      if (maxCpcBidForecast_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MaxCpcBidForecast);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(KeywordPlanMaxCpcBidForecast other) {
+      if (other == null) {
+        return;
+      }
+      if (other.maxCpcBidMicros_ != null) {
+        if (maxCpcBidMicros_ == null || other.MaxCpcBidMicros != 0L) {
+          MaxCpcBidMicros = other.MaxCpcBidMicros;
+        }
+      }
+      if (other.maxCpcBidForecast_ != null) {
+        if (maxCpcBidForecast_ == null) {
+          MaxCpcBidForecast = new global::Google.Ads.GoogleAds.V4.Services.ForecastMetrics();
+        }
+        MaxCpcBidForecast.MergeFrom(other.MaxCpcBidForecast);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            long? value = _single_maxCpcBidMicros_codec.Read(input);
+            if (maxCpcBidMicros_ == null || value != 0L) {
+              MaxCpcBidMicros = value;
+            }
+            break;
+          }
+          case 18: {
+            if (maxCpcBidForecast_ == null) {
+              MaxCpcBidForecast = new global::Google.Ads.GoogleAds.V4.Services.ForecastMetrics();
+            }
+            input.ReadMessage(MaxCpcBidForecast);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// Forecast metrics.
   /// </summary>
   public sealed partial class ForecastMetrics : pb::IMessage<ForecastMetrics> {
@@ -1945,7 +2719,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2234,7 +3008,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2370,7 +3144,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2497,7 +3271,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanServiceReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

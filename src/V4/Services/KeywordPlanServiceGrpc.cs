@@ -34,6 +34,8 @@ namespace Google.Ads.GoogleAds.V4.Services {
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.KeywordPlan> __Marshaller_google_ads_googleads_v4_resources_KeywordPlan = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Resources.KeywordPlan.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansRequest> __Marshaller_google_ads_googleads_v4_services_MutateKeywordPlansRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansResponse> __Marshaller_google_ads_googleads_v4_services_MutateKeywordPlansResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest> __Marshaller_google_ads_googleads_v4_services_GenerateForecastCurveRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse> __Marshaller_google_ads_googleads_v4_services_GenerateForecastCurveResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsRequest> __Marshaller_google_ads_googleads_v4_services_GenerateForecastMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsResponse> __Marshaller_google_ads_googleads_v4_services_GenerateForecastMetricsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateHistoricalMetricsRequest> __Marshaller_google_ads_googleads_v4_services_GenerateHistoricalMetricsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GenerateHistoricalMetricsRequest.Parser.ParseFrom);
@@ -52,6 +54,13 @@ namespace Google.Ads.GoogleAds.V4.Services {
         "MutateKeywordPlans",
         __Marshaller_google_ads_googleads_v4_services_MutateKeywordPlansRequest,
         __Marshaller_google_ads_googleads_v4_services_MutateKeywordPlansResponse);
+
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest, global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse> __Method_GenerateForecastCurve = new grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest, global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GenerateForecastCurve",
+        __Marshaller_google_ads_googleads_v4_services_GenerateForecastCurveRequest,
+        __Marshaller_google_ads_googleads_v4_services_GenerateForecastCurveResponse);
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsRequest, global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsResponse> __Method_GenerateForecastMetrics = new grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsRequest, global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsResponse>(
         grpc::MethodType.Unary,
@@ -96,6 +105,23 @@ namespace Google.Ads.GoogleAds.V4.Services {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansResponse> MutateKeywordPlans(global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Returns the requested Keyword Plan forecast curve.
+      /// Only the bidding strategy is considered for generating forecast curve.
+      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+      /// strategy) specified in the plan is ignored.
+      ///
+      /// To generate a forecast at a value specified in the plan, use
+      /// KeywordPlanService.GenerateForecastMetrics.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse> GenerateForecastCurve(global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -240,6 +266,74 @@ namespace Google.Ads.GoogleAds.V4.Services {
         return CallInvoker.AsyncUnaryCall(__Method_MutateKeywordPlans, null, options, request);
       }
       /// <summary>
+      /// Returns the requested Keyword Plan forecast curve.
+      /// Only the bidding strategy is considered for generating forecast curve.
+      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+      /// strategy) specified in the plan is ignored.
+      ///
+      /// To generate a forecast at a value specified in the plan, use
+      /// KeywordPlanService.GenerateForecastMetrics.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse GenerateForecastCurve(global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateForecastCurve(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns the requested Keyword Plan forecast curve.
+      /// Only the bidding strategy is considered for generating forecast curve.
+      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+      /// strategy) specified in the plan is ignored.
+      ///
+      /// To generate a forecast at a value specified in the plan, use
+      /// KeywordPlanService.GenerateForecastMetrics.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse GenerateForecastCurve(global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GenerateForecastCurve, null, options, request);
+      }
+      /// <summary>
+      /// Returns the requested Keyword Plan forecast curve.
+      /// Only the bidding strategy is considered for generating forecast curve.
+      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+      /// strategy) specified in the plan is ignored.
+      ///
+      /// To generate a forecast at a value specified in the plan, use
+      /// KeywordPlanService.GenerateForecastMetrics.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse> GenerateForecastCurveAsync(global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateForecastCurveAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns the requested Keyword Plan forecast curve.
+      /// Only the bidding strategy is considered for generating forecast curve.
+      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+      /// strategy) specified in the plan is ignored.
+      ///
+      /// To generate a forecast at a value specified in the plan, use
+      /// KeywordPlanService.GenerateForecastMetrics.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse> GenerateForecastCurveAsync(global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GenerateForecastCurve, null, options, request);
+      }
+      /// <summary>
       /// Returns the requested Keyword Plan forecasts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -341,6 +435,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetKeywordPlan, serviceImpl.GetKeywordPlan)
           .AddMethod(__Method_MutateKeywordPlans, serviceImpl.MutateKeywordPlans)
+          .AddMethod(__Method_GenerateForecastCurve, serviceImpl.GenerateForecastCurve)
           .AddMethod(__Method_GenerateForecastMetrics, serviceImpl.GenerateForecastMetrics)
           .AddMethod(__Method_GenerateHistoricalMetrics, serviceImpl.GenerateHistoricalMetrics).Build();
     }
@@ -353,6 +448,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
     {
       serviceBinder.AddMethod(__Method_GetKeywordPlan, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V4.Services.GetKeywordPlanRequest, global::Google.Ads.GoogleAds.V4.Resources.KeywordPlan>(serviceImpl.GetKeywordPlan));
       serviceBinder.AddMethod(__Method_MutateKeywordPlans, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansRequest, global::Google.Ads.GoogleAds.V4.Services.MutateKeywordPlansResponse>(serviceImpl.MutateKeywordPlans));
+      serviceBinder.AddMethod(__Method_GenerateForecastCurve, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveRequest, global::Google.Ads.GoogleAds.V4.Services.GenerateForecastCurveResponse>(serviceImpl.GenerateForecastCurve));
       serviceBinder.AddMethod(__Method_GenerateForecastMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsRequest, global::Google.Ads.GoogleAds.V4.Services.GenerateForecastMetricsResponse>(serviceImpl.GenerateForecastMetrics));
       serviceBinder.AddMethod(__Method_GenerateHistoricalMetrics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V4.Services.GenerateHistoricalMetricsRequest, global::Google.Ads.GoogleAds.V4.Services.GenerateHistoricalMetricsResponse>(serviceImpl.GenerateHistoricalMetrics));
     }

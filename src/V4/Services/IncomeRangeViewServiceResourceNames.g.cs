@@ -14,10 +14,20 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Google.Ads.GoogleAds.Tests.V4.Services
+using gagvr = Google.Ads.GoogleAds.V4.Resources;
+
+namespace Google.Ads.GoogleAds.V4.Services
 {
-    /// <summary>Generated unit tests.</summary>
-    public sealed class GeneratedKeywordPlanIdeaServiceClientTest
+    public partial class GetIncomeRangeViewRequest
     {
+        /// <summary>
+        /// <see cref="gagvr::IncomeRangeViewName"/>-typed view over the <see cref="ResourceName"/> resource name
+        /// property.
+        /// </summary>
+        public gagvr::IncomeRangeViewName ResourceNameAsIncomeRangeViewName
+        {
+            get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::IncomeRangeViewName.Parse(ResourceName, allowUnparsed: true);
+            set => ResourceName = value?.ToString() ?? "";
+        }
     }
 }

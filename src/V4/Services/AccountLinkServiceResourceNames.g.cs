@@ -18,15 +18,14 @@ using gagvr = Google.Ads.GoogleAds.V4.Resources;
 
 namespace Google.Ads.GoogleAds.V4.Services
 {
-    public partial class GetKeywordPlanNegativeKeywordRequest
+    public partial class GetAccountLinkRequest
     {
         /// <summary>
-        /// <see cref="gagvr::KeywordPlanNegativeKeywordName"/>-typed view over the <see cref="ResourceName"/> resource
-        /// name property.
+        /// <see cref="gagvr::AccountLinkName"/>-typed view over the <see cref="ResourceName"/> resource name property.
         /// </summary>
-        public gagvr::KeywordPlanNegativeKeywordName ResourceNameAsKeywordPlanNegativeKeywordName
+        public gagvr::AccountLinkName ResourceNameAsAccountLinkName
         {
-            get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::KeywordPlanNegativeKeywordName.Parse(ResourceName, allowUnparsed: true);
+            get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::AccountLinkName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
         }
     }

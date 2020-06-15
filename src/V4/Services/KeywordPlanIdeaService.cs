@@ -31,49 +31,55 @@ namespace Google.Ads.GoogleAds.V4.Services {
             "L3Y0L2VudW1zL2tleXdvcmRfcGxhbl9uZXR3b3JrLnByb3RvGhxnb29nbGUv",
             "YXBpL2Fubm90YXRpb25zLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2",
             "aW9yLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8aF2dv",
-            "b2dsZS9hcGkvY2xpZW50LnByb3RvIu4DChtHZW5lcmF0ZUtleXdvcmRJZGVh",
+            "b2dsZS9hcGkvY2xpZW50LnByb3RvIvYEChtHZW5lcmF0ZUtleXdvcmRJZGVh",
             "c1JlcXVlc3QSEwoLY3VzdG9tZXJfaWQYASABKAkSMwoIbGFuZ3VhZ2UYByAB",
             "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBAhI6ChRnZW9f",
             "dGFyZ2V0X2NvbnN0YW50cxgIIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJp",
-            "bmdWYWx1ZRJmChRrZXl3b3JkX3BsYW5fbmV0d29yaxgJIAEoDjJILmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnY0LmVudW1zLktleXdvcmRQbGFuTmV0d29ya0Vu",
-            "dW0uS2V5d29yZFBsYW5OZXR3b3JrElMKFGtleXdvcmRfYW5kX3VybF9zZWVk",
-            "GAIgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuc2VydmljZXMuS2V5",
-            "d29yZEFuZFVybFNlZWRIABJFCgxrZXl3b3JkX3NlZWQYAyABKAsyLS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5LZXl3b3JkU2VlZEgAEj0K",
-            "CHVybF9zZWVkGAUgASgLMikuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuc2Vy",
-            "dmljZXMuVXJsU2VlZEgAQgYKBHNlZWQibgoRS2V5d29yZEFuZFVybFNlZWQS",
-            "KQoDdXJsGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEi4K",
-            "CGtleXdvcmRzGAIgAygLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
-            "Ij0KC0tleXdvcmRTZWVkEi4KCGtleXdvcmRzGAEgAygLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLlN0cmluZ1ZhbHVlIjQKB1VybFNlZWQSKQoDdXJsGAEgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlImsKG0dlbmVyYXRlS2V5d29y",
-            "ZElkZWFSZXNwb25zZRJMCgdyZXN1bHRzGAEgAygLMjsuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjQuc2VydmljZXMuR2VuZXJhdGVLZXl3b3JkSWRlYVJlc3Vs",
-            "dCKjAQoZR2VuZXJhdGVLZXl3b3JkSWRlYVJlc3VsdBIqCgR0ZXh0GAIgASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEloKFGtleXdvcmRfaWRl",
-            "YV9tZXRyaWNzGAMgASgLMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuY29t",
-            "bW9uLktleXdvcmRQbGFuSGlzdG9yaWNhbE1ldHJpY3MyiwIKFktleXdvcmRQ",
-            "bGFuSWRlYVNlcnZpY2US0wEKFEdlbmVyYXRlS2V5d29yZElkZWFzEj0uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjQuc2VydmljZXMuR2VuZXJhdGVLZXl3b3Jk",
-            "SWRlYXNSZXF1ZXN0Gj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuc2Vydmlj",
-            "ZXMuR2VuZXJhdGVLZXl3b3JkSWRlYVJlc3BvbnNlIj2C0+STAjciMi92NC9j",
-            "dXN0b21lcnMve2N1c3RvbWVyX2lkPSp9OmdlbmVyYXRlS2V5d29yZElkZWFz",
-            "OgEqGhvKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb21CggIKJGNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlc0IbS2V5d29yZFBsYW5JZGVh",
-            "U2VydmljZVByb3RvUAFaSGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
-            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92NC9zZXJ2aWNlcztzZXJ2aWNlc6IC",
-            "A0dBQaoCIEdvb2dsZS5BZHMuR29vZ2xlQWRzLlY0LlNlcnZpY2VzygIgR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjRcU2VydmljZXPqAiRHb29nbGU6OkFkczo6",
-            "R29vZ2xlQWRzOjpWNDo6U2VydmljZXNiBnByb3RvMw=="));
+            "bmdWYWx1ZRIeChZpbmNsdWRlX2FkdWx0X2tleXdvcmRzGAogASgIEhIKCnBh",
+            "Z2VfdG9rZW4YDCABKAkSEQoJcGFnZV9zaXplGA0gASgFEmYKFGtleXdvcmRf",
+            "cGxhbl9uZXR3b3JrGAkgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQu",
+            "ZW51bXMuS2V5d29yZFBsYW5OZXR3b3JrRW51bS5LZXl3b3JkUGxhbk5ldHdv",
+            "cmsSUwoUa2V5d29yZF9hbmRfdXJsX3NlZWQYAiABKAsyMy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5LZXl3b3JkQW5kVXJsU2VlZEgAEkUK",
+            "DGtleXdvcmRfc2VlZBgDIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0",
+            "LnNlcnZpY2VzLktleXdvcmRTZWVkSAASPQoIdXJsX3NlZWQYBSABKAsyKS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52NC5zZXJ2aWNlcy5VcmxTZWVkSAASPwoJ",
+            "c2l0ZV9zZWVkGAsgASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuc2Vy",
+            "dmljZXMuU2l0ZVNlZWRIAEIGCgRzZWVkIm4KEUtleXdvcmRBbmRVcmxTZWVk",
+            "EikKA3VybBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIu",
+            "CghrZXl3b3JkcxgCIAMoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZSI9CgtLZXl3b3JkU2VlZBIuCghrZXl3b3JkcxgBIAMoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZSI2CghTaXRlU2VlZBIqCgRzaXRlGAEgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIjQKB1VybFNlZWQSKQoD",
+            "dXJsGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIpgBChtH",
+            "ZW5lcmF0ZUtleXdvcmRJZGVhUmVzcG9uc2USTAoHcmVzdWx0cxgBIAMoCzI7",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNlcnZpY2VzLkdlbmVyYXRlS2V5",
+            "d29yZElkZWFSZXN1bHQSFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJEhIKCnRv",
+            "dGFsX3NpemUYAyABKAMiowEKGUdlbmVyYXRlS2V5d29yZElkZWFSZXN1bHQS",
+            "KgoEdGV4dBgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRJa",
+            "ChRrZXl3b3JkX2lkZWFfbWV0cmljcxgDIAEoCzI8Lmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnY0LmNvbW1vbi5LZXl3b3JkUGxhbkhpc3RvcmljYWxNZXRyaWNz",
+            "MosCChZLZXl3b3JkUGxhbklkZWFTZXJ2aWNlEtMBChRHZW5lcmF0ZUtleXdv",
+            "cmRJZGVhcxI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnNlcnZpY2VzLkdl",
+            "bmVyYXRlS2V5d29yZElkZWFzUmVxdWVzdBo9Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnY0LnNlcnZpY2VzLkdlbmVyYXRlS2V5d29yZElkZWFSZXNwb25zZSI9",
+            "gtPkkwI3IjIvdjQvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfTpnZW5lcmF0",
+            "ZUtleXdvcmRJZGVhczoBKhobykEYZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29t",
+            "QoICCiRjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuc2VydmljZXNCG0tl",
+            "eXdvcmRQbGFuSWRlYVNlcnZpY2VQcm90b1ABWkhnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjQvc2Vydmlj",
+            "ZXM7c2VydmljZXOiAgNHQUGqAiBHb29nbGUuQWRzLkdvb2dsZUFkcy5WNC5T",
+            "ZXJ2aWNlc8oCIEdvb2dsZVxBZHNcR29vZ2xlQWRzXFY0XFNlcnZpY2Vz6gIk",
+            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjQ6OlNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V4.Common.KeywordPlanCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.KeywordPlanNetworkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeasRequest), global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeasRequest.Parser, new[]{ "CustomerId", "Language", "GeoTargetConstants", "KeywordPlanNetwork", "KeywordAndUrlSeed", "KeywordSeed", "UrlSeed" }, new[]{ "Seed" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeasRequest), global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeasRequest.Parser, new[]{ "CustomerId", "Language", "GeoTargetConstants", "IncludeAdultKeywords", "PageToken", "PageSize", "KeywordPlanNetwork", "KeywordAndUrlSeed", "KeywordSeed", "UrlSeed", "SiteSeed" }, new[]{ "Seed" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.KeywordAndUrlSeed), global::Google.Ads.GoogleAds.V4.Services.KeywordAndUrlSeed.Parser, new[]{ "Url", "Keywords" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.KeywordSeed), global::Google.Ads.GoogleAds.V4.Services.KeywordSeed.Parser, new[]{ "Keywords" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.SiteSeed), global::Google.Ads.GoogleAds.V4.Services.SiteSeed.Parser, new[]{ "Site" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.UrlSeed), global::Google.Ads.GoogleAds.V4.Services.UrlSeed.Parser, new[]{ "Url" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeaResponse), global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeaResponse.Parser, new[]{ "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeaResponse), global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeaResponse.Parser, new[]{ "Results", "NextPageToken", "TotalSize" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeaResult), global::Google.Ads.GoogleAds.V4.Services.GenerateKeywordIdeaResult.Parser, new[]{ "Text", "KeywordIdeaMetrics" }, null, null, null, null)
           }));
     }
@@ -112,6 +118,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
       customerId_ = other.customerId_;
       Language = other.Language;
       geoTargetConstants_ = other.geoTargetConstants_.Clone();
+      includeAdultKeywords_ = other.includeAdultKeywords_;
+      pageToken_ = other.pageToken_;
+      pageSize_ = other.pageSize_;
       keywordPlanNetwork_ = other.keywordPlanNetwork_;
       switch (other.SeedCase) {
         case SeedOneofCase.KeywordAndUrlSeed:
@@ -122,6 +131,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
           break;
         case SeedOneofCase.UrlSeed:
           UrlSeed = other.UrlSeed.Clone();
+          break;
+        case SeedOneofCase.SiteSeed:
+          SiteSeed = other.SiteSeed.Clone();
           break;
       }
 
@@ -176,6 +188,58 @@ namespace Google.Ads.GoogleAds.V4.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> GeoTargetConstants {
       get { return geoTargetConstants_; }
+    }
+
+    /// <summary>Field number for the "include_adult_keywords" field.</summary>
+    public const int IncludeAdultKeywordsFieldNumber = 10;
+    private bool includeAdultKeywords_;
+    /// <summary>
+    /// If true, adult keywords will be included in response.
+    /// The default value is false.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IncludeAdultKeywords {
+      get { return includeAdultKeywords_; }
+      set {
+        includeAdultKeywords_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "page_token" field.</summary>
+    public const int PageTokenFieldNumber = 12;
+    private string pageToken_ = "";
+    /// <summary>
+    /// Token of the page to retrieve. If not specified, the first
+    /// page of results will be returned. To request next page of results use the
+    /// value obtained from `next_page_token` in the previous response.
+    /// The request fields must match across pages.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PageToken {
+      get { return pageToken_; }
+      set {
+        pageToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "page_size" field.</summary>
+    public const int PageSizeFieldNumber = 13;
+    private int pageSize_;
+    /// <summary>
+    /// Number of results to retrieve in a single page.
+    /// A maximum of 10,000 results may be returned, if the page_size
+    /// exceeds this, it is ignored.
+    /// If unspecified, at most 10,000 results will be returned.
+    /// The server may decide to further limit the number of returned resources.
+    /// If the response contains fewer than 10,000 results it may not be assumed
+    /// as last page of results.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int PageSize {
+      get { return pageSize_; }
+      set {
+        pageSize_ = value;
+      }
     }
 
     /// <summary>Field number for the "keyword_plan_network" field.</summary>
@@ -235,6 +299,20 @@ namespace Google.Ads.GoogleAds.V4.Services {
       }
     }
 
+    /// <summary>Field number for the "site_seed" field.</summary>
+    public const int SiteSeedFieldNumber = 11;
+    /// <summary>
+    /// The site to generate ideas from, e.g. www.example.com.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V4.Services.SiteSeed SiteSeed {
+      get { return seedCase_ == SeedOneofCase.SiteSeed ? (global::Google.Ads.GoogleAds.V4.Services.SiteSeed) seed_ : null; }
+      set {
+        seed_ = value;
+        seedCase_ = value == null ? SeedOneofCase.None : SeedOneofCase.SiteSeed;
+      }
+    }
+
     private object seed_;
     /// <summary>Enum of possible cases for the "seed" oneof.</summary>
     public enum SeedOneofCase {
@@ -242,6 +320,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
       KeywordAndUrlSeed = 2,
       KeywordSeed = 3,
       UrlSeed = 5,
+      SiteSeed = 11,
     }
     private SeedOneofCase seedCase_ = SeedOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -271,10 +350,14 @@ namespace Google.Ads.GoogleAds.V4.Services {
       if (CustomerId != other.CustomerId) return false;
       if (Language != other.Language) return false;
       if(!geoTargetConstants_.Equals(other.geoTargetConstants_)) return false;
+      if (IncludeAdultKeywords != other.IncludeAdultKeywords) return false;
+      if (PageToken != other.PageToken) return false;
+      if (PageSize != other.PageSize) return false;
       if (KeywordPlanNetwork != other.KeywordPlanNetwork) return false;
       if (!object.Equals(KeywordAndUrlSeed, other.KeywordAndUrlSeed)) return false;
       if (!object.Equals(KeywordSeed, other.KeywordSeed)) return false;
       if (!object.Equals(UrlSeed, other.UrlSeed)) return false;
+      if (!object.Equals(SiteSeed, other.SiteSeed)) return false;
       if (SeedCase != other.SeedCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -285,10 +368,14 @@ namespace Google.Ads.GoogleAds.V4.Services {
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
       if (language_ != null) hash ^= Language.GetHashCode();
       hash ^= geoTargetConstants_.GetHashCode();
+      if (IncludeAdultKeywords != false) hash ^= IncludeAdultKeywords.GetHashCode();
+      if (PageToken.Length != 0) hash ^= PageToken.GetHashCode();
+      if (PageSize != 0) hash ^= PageSize.GetHashCode();
       if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V4.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) hash ^= KeywordPlanNetwork.GetHashCode();
       if (seedCase_ == SeedOneofCase.KeywordAndUrlSeed) hash ^= KeywordAndUrlSeed.GetHashCode();
       if (seedCase_ == SeedOneofCase.KeywordSeed) hash ^= KeywordSeed.GetHashCode();
       if (seedCase_ == SeedOneofCase.UrlSeed) hash ^= UrlSeed.GetHashCode();
+      if (seedCase_ == SeedOneofCase.SiteSeed) hash ^= SiteSeed.GetHashCode();
       hash ^= (int) seedCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -327,6 +414,22 @@ namespace Google.Ads.GoogleAds.V4.Services {
         output.WriteRawTag(72);
         output.WriteEnum((int) KeywordPlanNetwork);
       }
+      if (IncludeAdultKeywords != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(IncludeAdultKeywords);
+      }
+      if (seedCase_ == SeedOneofCase.SiteSeed) {
+        output.WriteRawTag(90);
+        output.WriteMessage(SiteSeed);
+      }
+      if (PageToken.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(PageToken);
+      }
+      if (PageSize != 0) {
+        output.WriteRawTag(104);
+        output.WriteInt32(PageSize);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -342,6 +445,15 @@ namespace Google.Ads.GoogleAds.V4.Services {
         size += _single_language_codec.CalculateSizeWithTag(Language);
       }
       size += geoTargetConstants_.CalculateSize(_repeated_geoTargetConstants_codec);
+      if (IncludeAdultKeywords != false) {
+        size += 1 + 1;
+      }
+      if (PageToken.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PageToken);
+      }
+      if (PageSize != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageSize);
+      }
       if (KeywordPlanNetwork != global::Google.Ads.GoogleAds.V4.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) KeywordPlanNetwork);
       }
@@ -353,6 +465,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
       }
       if (seedCase_ == SeedOneofCase.UrlSeed) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UrlSeed);
+      }
+      if (seedCase_ == SeedOneofCase.SiteSeed) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SiteSeed);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -374,6 +489,15 @@ namespace Google.Ads.GoogleAds.V4.Services {
         }
       }
       geoTargetConstants_.Add(other.geoTargetConstants_);
+      if (other.IncludeAdultKeywords != false) {
+        IncludeAdultKeywords = other.IncludeAdultKeywords;
+      }
+      if (other.PageToken.Length != 0) {
+        PageToken = other.PageToken;
+      }
+      if (other.PageSize != 0) {
+        PageSize = other.PageSize;
+      }
       if (other.KeywordPlanNetwork != global::Google.Ads.GoogleAds.V4.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork.Unspecified) {
         KeywordPlanNetwork = other.KeywordPlanNetwork;
       }
@@ -395,6 +519,12 @@ namespace Google.Ads.GoogleAds.V4.Services {
             UrlSeed = new global::Google.Ads.GoogleAds.V4.Services.UrlSeed();
           }
           UrlSeed.MergeFrom(other.UrlSeed);
+          break;
+        case SeedOneofCase.SiteSeed:
+          if (SiteSeed == null) {
+            SiteSeed = new global::Google.Ads.GoogleAds.V4.Services.SiteSeed();
+          }
+          SiteSeed.MergeFrom(other.SiteSeed);
           break;
       }
 
@@ -453,6 +583,27 @@ namespace Google.Ads.GoogleAds.V4.Services {
           }
           case 72: {
             KeywordPlanNetwork = (global::Google.Ads.GoogleAds.V4.Enums.KeywordPlanNetworkEnum.Types.KeywordPlanNetwork) input.ReadEnum();
+            break;
+          }
+          case 80: {
+            IncludeAdultKeywords = input.ReadBool();
+            break;
+          }
+          case 90: {
+            global::Google.Ads.GoogleAds.V4.Services.SiteSeed subBuilder = new global::Google.Ads.GoogleAds.V4.Services.SiteSeed();
+            if (seedCase_ == SeedOneofCase.SiteSeed) {
+              subBuilder.MergeFrom(SiteSeed);
+            }
+            input.ReadMessage(subBuilder);
+            SiteSeed = subBuilder;
+            break;
+          }
+          case 98: {
+            PageToken = input.ReadString();
+            break;
+          }
+          case 104: {
+            PageSize = input.ReadInt32();
             break;
           }
         }
@@ -753,6 +904,148 @@ namespace Google.Ads.GoogleAds.V4.Services {
   }
 
   /// <summary>
+  /// Site Seed
+  /// </summary>
+  public sealed partial class SiteSeed : pb::IMessage<SiteSeed> {
+    private static readonly pb::MessageParser<SiteSeed> _parser = new pb::MessageParser<SiteSeed>(() => new SiteSeed());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SiteSeed> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanIdeaServiceReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SiteSeed() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SiteSeed(SiteSeed other) : this() {
+      Site = other.Site;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SiteSeed Clone() {
+      return new SiteSeed(this);
+    }
+
+    /// <summary>Field number for the "site" field.</summary>
+    public const int SiteFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_site_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string site_;
+    /// <summary>
+    /// The domain name of the site. If the customer requesting the ideas doesn't
+    /// own the site provided only public information is returned.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Site {
+      get { return site_; }
+      set {
+        site_ = value;
+      }
+    }
+
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SiteSeed);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SiteSeed other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Site != other.Site) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (site_ != null) hash ^= Site.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (site_ != null) {
+        _single_site_codec.WriteTagAndValue(output, Site);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (site_ != null) {
+        size += _single_site_codec.CalculateSizeWithTag(Site);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SiteSeed other) {
+      if (other == null) {
+        return;
+      }
+      if (other.site_ != null) {
+        if (site_ == null || other.Site != "") {
+          Site = other.Site;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_site_codec.Read(input);
+            if (site_ == null || value != "") {
+              Site = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
   /// Url Seed
   /// </summary>
   public sealed partial class UrlSeed : pb::IMessage<UrlSeed> {
@@ -763,7 +1056,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanIdeaServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanIdeaServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -904,7 +1197,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanIdeaServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanIdeaServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -922,6 +1215,8 @@ namespace Google.Ads.GoogleAds.V4.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GenerateKeywordIdeaResponse(GenerateKeywordIdeaResponse other) : this() {
       results_ = other.results_.Clone();
+      nextPageToken_ = other.nextPageToken_;
+      totalSize_ = other.totalSize_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -943,6 +1238,37 @@ namespace Google.Ads.GoogleAds.V4.Services {
       get { return results_; }
     }
 
+    /// <summary>Field number for the "next_page_token" field.</summary>
+    public const int NextPageTokenFieldNumber = 2;
+    private string nextPageToken_ = "";
+    /// <summary>
+    /// Pagination token used to retrieve the next page of results.
+    /// Pass the content of this string as the `page_token` attribute of
+    /// the next request.
+    /// `next_page_token` is not returned for the last page.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string NextPageToken {
+      get { return nextPageToken_; }
+      set {
+        nextPageToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "total_size" field.</summary>
+    public const int TotalSizeFieldNumber = 3;
+    private long totalSize_;
+    /// <summary>
+    /// Total number of results available.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long TotalSize {
+      get { return totalSize_; }
+      set {
+        totalSize_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GenerateKeywordIdeaResponse);
@@ -957,6 +1283,8 @@ namespace Google.Ads.GoogleAds.V4.Services {
         return true;
       }
       if(!results_.Equals(other.results_)) return false;
+      if (NextPageToken != other.NextPageToken) return false;
+      if (TotalSize != other.TotalSize) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -964,6 +1292,8 @@ namespace Google.Ads.GoogleAds.V4.Services {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= results_.GetHashCode();
+      if (NextPageToken.Length != 0) hash ^= NextPageToken.GetHashCode();
+      if (TotalSize != 0L) hash ^= TotalSize.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -978,6 +1308,14 @@ namespace Google.Ads.GoogleAds.V4.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
       results_.WriteTo(output, _repeated_results_codec);
+      if (NextPageToken.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(NextPageToken);
+      }
+      if (TotalSize != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(TotalSize);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -987,6 +1325,12 @@ namespace Google.Ads.GoogleAds.V4.Services {
     public int CalculateSize() {
       int size = 0;
       size += results_.CalculateSize(_repeated_results_codec);
+      if (NextPageToken.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NextPageToken);
+      }
+      if (TotalSize != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalSize);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -999,6 +1343,12 @@ namespace Google.Ads.GoogleAds.V4.Services {
         return;
       }
       results_.Add(other.results_);
+      if (other.NextPageToken.Length != 0) {
+        NextPageToken = other.NextPageToken;
+      }
+      if (other.TotalSize != 0L) {
+        TotalSize = other.TotalSize;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1012,6 +1362,14 @@ namespace Google.Ads.GoogleAds.V4.Services {
             break;
           case 10: {
             results_.AddEntriesFrom(input, _repeated_results_codec);
+            break;
+          }
+          case 18: {
+            NextPageToken = input.ReadString();
+            break;
+          }
+          case 24: {
+            TotalSize = input.ReadInt64();
             break;
           }
         }
@@ -1031,7 +1389,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanIdeaServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Google.Ads.GoogleAds.V4.Services.KeywordPlanIdeaServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

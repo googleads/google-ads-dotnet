@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V4.Resources {
             "b252ZXJzaW9uX2VsaWdpYmlsaXR5X2ZhaWx1cmVfcmVhc29uLnByb3RvGh9n",
             "b29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jl",
             "c291cmNlLnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMucHJvdG8a",
-            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ilAkKCEN1c3RvbWVyEkAK",
+            "HGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i0wkKCEN1c3RvbWVyEkAK",
             "DXJlc291cmNlX25hbWUYASABKAlCKeBBBfpBIwohZ29vZ2xlYWRzLmdvb2ds",
             "ZWFwaXMuY29tL0N1c3RvbWVyEiwKAmlkGAMgASgLMhsuZ29vZ2xlLnByb3Rv",
             "YnVmLkludDY0VmFsdWVCA+BBAxI2ChBkZXNjcmlwdGl2ZV9uYW1lGAQgASgL",
@@ -55,30 +55,31 @@ namespace Google.Ads.GoogleAds.V4.Resources {
             "ZWFzb25zGBAgAygOMoQBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LmVudW1z",
             "LkN1c3RvbWVyUGF5UGVyQ29udmVyc2lvbkVsaWdpYmlsaXR5RmFpbHVyZVJl",
             "YXNvbkVudW0uQ3VzdG9tZXJQYXlQZXJDb252ZXJzaW9uRWxpZ2liaWxpdHlG",
-            "YWlsdXJlUmVhc29uQgPgQQM6POpBOQohZ29vZ2xlYWRzLmdvb2dsZWFwaXMu",
-            "Y29tL0N1c3RvbWVyEhRjdXN0b21lcnMve2N1c3RvbWVyfSKHAgoUQ2FsbFJl",
-            "cG9ydGluZ1NldHRpbmcSOgoWY2FsbF9yZXBvcnRpbmdfZW5hYmxlZBgBIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSRQohY2FsbF9jb252ZXJz",
-            "aW9uX3JlcG9ydGluZ19lbmFibGVkGAIgASgLMhouZ29vZ2xlLnByb3RvYnVm",
-            "LkJvb2xWYWx1ZRJsChZjYWxsX2NvbnZlcnNpb25fYWN0aW9uGAkgASgLMhwu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlQi76QSsKKWdvb2dsZWFkcy5n",
-            "b29nbGVhcGlzLmNvbS9Db252ZXJzaW9uQWN0aW9uIq0BChlDb252ZXJzaW9u",
-            "VHJhY2tpbmdTZXR0aW5nEkAKFmNvbnZlcnNpb25fdHJhY2tpbmdfaWQYASAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZUID4EEDEk4KJGNyb3Nz",
-            "X2FjY291bnRfY29udmVyc2lvbl90cmFja2luZ19pZBgCIAEoCzIbLmdvb2ds",
-            "ZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQgPgQQMiVwoSUmVtYXJrZXRpbmdTZXR0",
-            "aW5nEkEKFmdvb2dsZV9nbG9iYWxfc2l0ZV90YWcYASABKAsyHC5nb29nbGUu",
-            "cHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBA0L6AQolY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnY0LnJlc291cmNlc0INQ3VzdG9tZXJQcm90b1ABWkpnb29n",
-            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
-            "ZHMvdjQvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlY0LlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRz",
-            "XFY0XFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlY0OjpS",
-            "ZXNvdXJjZXNiBnByb3RvMw=="));
+            "YWlsdXJlUmVhc29uQgPgQQMSPQoSb3B0aW1pemF0aW9uX3Njb3JlGBEgASgL",
+            "MhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlQgPgQQM6POpBOQohZ29v",
+            "Z2xlYWRzLmdvb2dsZWFwaXMuY29tL0N1c3RvbWVyEhRjdXN0b21lcnMve2N1",
+            "c3RvbWVyfSKHAgoUQ2FsbFJlcG9ydGluZ1NldHRpbmcSOgoWY2FsbF9yZXBv",
+            "cnRpbmdfZW5hYmxlZBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFs",
+            "dWUSRQohY2FsbF9jb252ZXJzaW9uX3JlcG9ydGluZ19lbmFibGVkGAIgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJsChZjYWxsX2NvbnZlcnNp",
+            "b25fYWN0aW9uGAkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "Qi76QSsKKWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Db252ZXJzaW9uQWN0",
+            "aW9uIq0BChlDb252ZXJzaW9uVHJhY2tpbmdTZXR0aW5nEkAKFmNvbnZlcnNp",
+            "b25fdHJhY2tpbmdfaWQYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRW",
+            "YWx1ZUID4EEDEk4KJGNyb3NzX2FjY291bnRfY29udmVyc2lvbl90cmFja2lu",
+            "Z19pZBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlQgPgQQMi",
+            "VwoSUmVtYXJrZXRpbmdTZXR0aW5nEkEKFmdvb2dsZV9nbG9iYWxfc2l0ZV90",
+            "YWcYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWVCA+BBA0L6",
+            "AQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnJlc291cmNlc0INQ3Vz",
+            "dG9tZXJQcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjQvcmVzb3VyY2VzO3Jlc291cmNlc6IC",
+            "A0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlY0LlJlc291cmNlc8oCIUdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFY0XFJlc291cmNlc+oCJUdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlY0OjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V4.Enums.CustomerPayPerConversionEligibilityFailureReasonReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.Customer), global::Google.Ads.GoogleAds.V4.Resources.Customer.Parser, new[]{ "ResourceName", "Id", "DescriptiveName", "CurrencyCode", "TimeZone", "TrackingUrlTemplate", "FinalUrlSuffix", "AutoTaggingEnabled", "HasPartnersBadge", "Manager", "TestAccount", "CallReportingSetting", "ConversionTrackingSetting", "RemarketingSetting", "PayPerConversionEligibilityFailureReasons" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.Customer), global::Google.Ads.GoogleAds.V4.Resources.Customer.Parser, new[]{ "ResourceName", "Id", "DescriptiveName", "CurrencyCode", "TimeZone", "TrackingUrlTemplate", "FinalUrlSuffix", "AutoTaggingEnabled", "HasPartnersBadge", "Manager", "TestAccount", "CallReportingSetting", "ConversionTrackingSetting", "RemarketingSetting", "PayPerConversionEligibilityFailureReasons", "OptimizationScore" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.CallReportingSetting), global::Google.Ads.GoogleAds.V4.Resources.CallReportingSetting.Parser, new[]{ "CallReportingEnabled", "CallConversionReportingEnabled", "CallConversionAction" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.ConversionTrackingSetting), global::Google.Ads.GoogleAds.V4.Resources.ConversionTrackingSetting.Parser, new[]{ "ConversionTrackingId", "CrossAccountConversionTrackingId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.RemarketingSetting), global::Google.Ads.GoogleAds.V4.Resources.RemarketingSetting.Parser, new[]{ "GoogleGlobalSiteTag" }, null, null, null, null)
@@ -131,6 +132,7 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       conversionTrackingSetting_ = other.conversionTrackingSetting_ != null ? other.conversionTrackingSetting_.Clone() : null;
       remarketingSetting_ = other.remarketingSetting_ != null ? other.remarketingSetting_.Clone() : null;
       payPerConversionEligibilityFailureReasons_ = other.payPerConversionEligibilityFailureReasons_.Clone();
+      OptimizationScore = other.OptimizationScore;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -376,6 +378,30 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       get { return payPerConversionEligibilityFailureReasons_; }
     }
 
+    /// <summary>Field number for the "optimization_score" field.</summary>
+    public const int OptimizationScoreFieldNumber = 17;
+    private static readonly pb::FieldCodec<double?> _single_optimizationScore_codec = pb::FieldCodec.ForStructWrapper<double>(138);
+    private double? optimizationScore_;
+    /// <summary>
+    /// Output only. Optimization score of the customer.
+    ///
+    /// Optimization score is an estimate of how well a customer's campaigns are
+    /// set to perform. It ranges from 0% (0.0) to 100% (1.0).
+    ///
+    /// See "About optimization score" at
+    /// https://support.google.com/google-ads/answer/9061546.
+    ///
+    /// This field is read-only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double? OptimizationScore {
+      get { return optimizationScore_; }
+      set {
+        optimizationScore_ = value;
+      }
+    }
+
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Customer);
@@ -404,6 +430,7 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (!object.Equals(ConversionTrackingSetting, other.ConversionTrackingSetting)) return false;
       if (!object.Equals(RemarketingSetting, other.RemarketingSetting)) return false;
       if(!payPerConversionEligibilityFailureReasons_.Equals(other.payPerConversionEligibilityFailureReasons_)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(OptimizationScore, other.OptimizationScore)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -425,6 +452,7 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (conversionTrackingSetting_ != null) hash ^= ConversionTrackingSetting.GetHashCode();
       if (remarketingSetting_ != null) hash ^= RemarketingSetting.GetHashCode();
       hash ^= payPerConversionEligibilityFailureReasons_.GetHashCode();
+      if (optimizationScore_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(OptimizationScore);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -485,6 +513,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
         output.WriteMessage(RemarketingSetting);
       }
       payPerConversionEligibilityFailureReasons_.WriteTo(output, _repeated_payPerConversionEligibilityFailureReasons_codec);
+      if (optimizationScore_ != null) {
+        _single_optimizationScore_codec.WriteTagAndValue(output, OptimizationScore);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -536,6 +567,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RemarketingSetting);
       }
       size += payPerConversionEligibilityFailureReasons_.CalculateSize(_repeated_payPerConversionEligibilityFailureReasons_codec);
+      if (optimizationScore_ != null) {
+        size += _single_optimizationScore_codec.CalculateSizeWithTag(OptimizationScore);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -619,6 +653,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
         RemarketingSetting.MergeFrom(other.RemarketingSetting);
       }
       payPerConversionEligibilityFailureReasons_.Add(other.payPerConversionEligibilityFailureReasons_);
+      if (other.optimizationScore_ != null) {
+        if (optimizationScore_ == null || other.OptimizationScore != 0D) {
+          OptimizationScore = other.OptimizationScore;
+        }
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -728,6 +767,13 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           case 130:
           case 128: {
             payPerConversionEligibilityFailureReasons_.AddEntriesFrom(input, _repeated_payPerConversionEligibilityFailureReasons_codec);
+            break;
+          }
+          case 138: {
+            double? value = _single_optimizationScore_codec.Read(input);
+            if (optimizationScore_ == null || value != 0D) {
+              OptimizationScore = value;
+            }
             break;
           }
         }

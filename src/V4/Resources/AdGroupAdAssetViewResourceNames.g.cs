@@ -29,12 +29,12 @@ namespace Google.Ads.GoogleAds.V4.Resources
             Unparsed = 0,
 
             /// <summary>
-            /// A resource name with pattern <c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c>.
+            /// A resource name with pattern <c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c>.
             /// </summary>
             CustomerAdGroupAdAssetView = 1
         }
 
-        private static gax::PathTemplate s_customerAdGroupAdAssetView = new gax::PathTemplate("customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}");
+        private static gax::PathTemplate s_customerAdGroupAdAssetView = new gax::PathTemplate("customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}");
 
         /// <summary>Creates a <see cref="AdGroupAdAssetViewName"/> containing an unparsed resource name.</summary>
         /// <param name="unparsedResourceName">The unparsed resource name. Must not be <c>null</c>.</param>
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
 
         /// <summary>
         /// Creates a <see cref="AdGroupAdAssetViewName"/> with the pattern
-        /// <c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c>.
+        /// <c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c>.
         /// </summary>
         /// <param name="customerId">The <c>Customer</c> ID. Must not be <c>null</c> or empty.</param>
         /// <param name="adGroupAdAssetViewId">
@@ -59,7 +59,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
 
         /// <summary>
         /// Formats the IDs into the string representation of this <see cref="AdGroupAdAssetViewName"/> with pattern
-        /// <c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c>.
+        /// <c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c>.
         /// </summary>
         /// <param name="customerId">The <c>Customer</c> ID. Must not be <c>null</c> or empty.</param>
         /// <param name="adGroupAdAssetViewId">
@@ -67,14 +67,14 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// </param>
         /// <returns>
         /// The string representation of this <see cref="AdGroupAdAssetViewName"/> with pattern
-        /// <c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c>.
+        /// <c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c>.
         /// </returns>
         public static string Format(string customerId, string adGroupAdAssetViewId) =>
             FormatCustomerAdGroupAdAssetView(customerId, adGroupAdAssetViewId);
 
         /// <summary>
         /// Formats the IDs into the string representation of this <see cref="AdGroupAdAssetViewName"/> with pattern
-        /// <c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c>.
+        /// <c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c>.
         /// </summary>
         /// <param name="customerId">The <c>Customer</c> ID. Must not be <c>null</c> or empty.</param>
         /// <param name="adGroupAdAssetViewId">
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// </param>
         /// <returns>
         /// The string representation of this <see cref="AdGroupAdAssetViewName"/> with pattern
-        /// <c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c>.
+        /// <c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c>.
         /// </returns>
         public static string FormatCustomerAdGroupAdAssetView(string customerId, string adGroupAdAssetViewId) =>
             s_customerAdGroupAdAssetView.Expand(gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)), gax::GaxPreconditions.CheckNotNullOrEmpty(adGroupAdAssetViewId, nameof(adGroupAdAssetViewId)));
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// To parse successfully, the resource name must be formatted as one of the following:
         /// <list type="bullet">
         /// <item>
-        /// <description><c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c></description>
+        /// <description><c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c></description>
         /// </item>
         /// </list>
         /// </remarks>
@@ -110,7 +110,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// To parse successfully, the resource name must be formatted as one of the following:
         /// <list type="bullet">
         /// <item>
-        /// <description><c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c></description>
+        /// <description><c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c></description>
         /// </item>
         /// </list>
         /// Or may be in any format if <paramref name="allowUnparsed"/> is <c>true</c>.
@@ -132,7 +132,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// To parse successfully, the resource name must be formatted as one of the following:
         /// <list type="bullet">
         /// <item>
-        /// <description><c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c></description>
+        /// <description><c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c></description>
         /// </item>
         /// </list>
         /// </remarks>
@@ -152,7 +152,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// To parse successfully, the resource name must be formatted as one of the following:
         /// <list type="bullet">
         /// <item>
-        /// <description><c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c></description>
+        /// <description><c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c></description>
         /// </item>
         /// </list>
         /// Or may be in any format if <paramref name="allowUnparsed"/> is <c>true</c>.
@@ -198,7 +198,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
 
         /// <summary>
         /// Constructs a new instance of a <see cref="AdGroupAdAssetViewName"/> class from the component parts of
-        /// pattern <c>customers/{customer}/adGroupAdAssets/{ad_group_ad_asset_view}</c>
+        /// pattern <c>customers/{customer}/adGroupAdAssetViews/{ad_group_ad_asset_view}</c>
         /// </summary>
         /// <param name="customerId">The <c>Customer</c> ID. Must not be <c>null</c> or empty.</param>
         /// <param name="adGroupAdAssetViewId">

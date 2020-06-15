@@ -96,6 +96,10 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 },
                 SystemServingStatus = gagve::CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unknown,
                 ApprovalStatus = gagve::AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Approved,
+                DisapprovalReasons =
+                {
+                    "disapproval_reasons9e26b1a0",
+                },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupCriterion(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupCriterionServiceClient client = new AdGroupCriterionServiceClientImpl(mockGrpcClient.Object, null);
@@ -169,6 +173,10 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 },
                 SystemServingStatus = gagve::CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unknown,
                 ApprovalStatus = gagve::AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Approved,
+                DisapprovalReasons =
+                {
+                    "disapproval_reasons9e26b1a0",
+                },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupCriterionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupCriterion>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupCriterionServiceClient client = new AdGroupCriterionServiceClientImpl(mockGrpcClient.Object, null);
@@ -244,6 +252,10 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 },
                 SystemServingStatus = gagve::CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unknown,
                 ApprovalStatus = gagve::AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Approved,
+                DisapprovalReasons =
+                {
+                    "disapproval_reasons9e26b1a0",
+                },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupCriterion(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupCriterionServiceClient client = new AdGroupCriterionServiceClientImpl(mockGrpcClient.Object, null);
@@ -317,6 +329,10 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 },
                 SystemServingStatus = gagve::CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unknown,
                 ApprovalStatus = gagve::AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Approved,
+                DisapprovalReasons =
+                {
+                    "disapproval_reasons9e26b1a0",
+                },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupCriterionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupCriterion>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupCriterionServiceClient client = new AdGroupCriterionServiceClientImpl(mockGrpcClient.Object, null);
@@ -392,6 +408,10 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 },
                 SystemServingStatus = gagve::CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unknown,
                 ApprovalStatus = gagve::AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Approved,
+                DisapprovalReasons =
+                {
+                    "disapproval_reasons9e26b1a0",
+                },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupCriterion(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupCriterionServiceClient client = new AdGroupCriterionServiceClientImpl(mockGrpcClient.Object, null);
@@ -465,6 +485,10 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
                 },
                 SystemServingStatus = gagve::CriterionSystemServingStatusEnum.Types.CriterionSystemServingStatus.Unknown,
                 ApprovalStatus = gagve::AdGroupCriterionApprovalStatusEnum.Types.AdGroupCriterionApprovalStatus.Approved,
+                DisapprovalReasons =
+                {
+                    "disapproval_reasons9e26b1a0",
+                },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupCriterionAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupCriterion>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             AdGroupCriterionServiceClient client = new AdGroupCriterionServiceClientImpl(mockGrpcClient.Object, null);

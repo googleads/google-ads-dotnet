@@ -47,6 +47,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AccountLinkService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<AccountLinkServiceClient, AccountLinkServiceSettings> AccountLinkService =
+                new ServiceTemplate<AccountLinkServiceClient, AccountLinkServiceSettings>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupAdAssetViewService
             /// for details.
             /// </summary>
@@ -599,6 +607,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.IncomeRangeViewService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<IncomeRangeViewServiceClient, IncomeRangeViewServiceSettings> IncomeRangeViewService =
+                new ServiceTemplate<IncomeRangeViewServiceClient, IncomeRangeViewServiceSettings>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.InvoiceService
             /// for details.
             /// </summary>
@@ -607,11 +623,27 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanAdGroupKeywordService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<KeywordPlanAdGroupKeywordServiceClient, KeywordPlanAdGroupKeywordServiceSettings> KeywordPlanAdGroupKeywordService =
+                new ServiceTemplate<KeywordPlanAdGroupKeywordServiceClient, KeywordPlanAdGroupKeywordServiceSettings>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanAdGroupService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<KeywordPlanAdGroupServiceClient, KeywordPlanAdGroupServiceSettings> KeywordPlanAdGroupService =
                 new ServiceTemplate<KeywordPlanAdGroupServiceClient, KeywordPlanAdGroupServiceSettings>(Create);
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanCampaignKeywordService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<KeywordPlanCampaignKeywordServiceClient, KeywordPlanCampaignKeywordServiceSettings> KeywordPlanCampaignKeywordService =
+                new ServiceTemplate<KeywordPlanCampaignKeywordServiceClient, KeywordPlanCampaignKeywordServiceSettings>(Create);
 
 
             /// <summary>
@@ -628,22 +660,6 @@ namespace Google.Ads.GoogleAds
             /// </summary>
             public static readonly ServiceTemplate<KeywordPlanIdeaServiceClient, KeywordPlanIdeaServiceSettings> KeywordPlanIdeaService =
                 new ServiceTemplate<KeywordPlanIdeaServiceClient, KeywordPlanIdeaServiceSettings>(Create);
-
-
-            /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanKeywordService
-            /// for details.
-            /// </summary>
-            public static readonly ServiceTemplate<KeywordPlanKeywordServiceClient, KeywordPlanKeywordServiceSettings> KeywordPlanKeywordService =
-                new ServiceTemplate<KeywordPlanKeywordServiceClient, KeywordPlanKeywordServiceSettings>(Create);
-
-
-            /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanNegativeKeywordService
-            /// for details.
-            /// </summary>
-            public static readonly ServiceTemplate<KeywordPlanNegativeKeywordServiceClient, KeywordPlanNegativeKeywordServiceSettings> KeywordPlanNegativeKeywordService =
-                new ServiceTemplate<KeywordPlanNegativeKeywordServiceClient, KeywordPlanNegativeKeywordServiceSettings>(Create);
 
 
             /// <summary>
@@ -847,6 +863,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ThirdPartyAppAnalyticsLinkService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<ThirdPartyAppAnalyticsLinkServiceClient, ThirdPartyAppAnalyticsLinkServiceSettings> ThirdPartyAppAnalyticsLinkService =
+                new ServiceTemplate<ThirdPartyAppAnalyticsLinkServiceClient, ThirdPartyAppAnalyticsLinkServiceSettings>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.TopicConstantService
             /// for details.
             /// </summary>
@@ -920,6 +944,10 @@ namespace Google.Ads.GoogleAds
 
                     case "AccountBudgetServiceClient":
                         return AccountBudgetServiceClient.Create(callInvoker, (AccountBudgetServiceSettings) settings);
+
+
+                    case "AccountLinkServiceClient":
+                        return AccountLinkServiceClient.Create(callInvoker, (AccountLinkServiceSettings) settings);
 
 
                     case "AdGroupAdAssetViewServiceClient":
@@ -1198,12 +1226,24 @@ namespace Google.Ads.GoogleAds
                         return HotelPerformanceViewServiceClient.Create(callInvoker, (HotelPerformanceViewServiceSettings) settings);
 
 
+                    case "IncomeRangeViewServiceClient":
+                        return IncomeRangeViewServiceClient.Create(callInvoker, (IncomeRangeViewServiceSettings) settings);
+
+
                     case "InvoiceServiceClient":
                         return InvoiceServiceClient.Create(callInvoker, (InvoiceServiceSettings) settings);
 
 
+                    case "KeywordPlanAdGroupKeywordServiceClient":
+                        return KeywordPlanAdGroupKeywordServiceClient.Create(callInvoker, (KeywordPlanAdGroupKeywordServiceSettings) settings);
+
+
                     case "KeywordPlanAdGroupServiceClient":
                         return KeywordPlanAdGroupServiceClient.Create(callInvoker, (KeywordPlanAdGroupServiceSettings) settings);
+
+
+                    case "KeywordPlanCampaignKeywordServiceClient":
+                        return KeywordPlanCampaignKeywordServiceClient.Create(callInvoker, (KeywordPlanCampaignKeywordServiceSettings) settings);
 
 
                     case "KeywordPlanCampaignServiceClient":
@@ -1212,14 +1252,6 @@ namespace Google.Ads.GoogleAds
 
                     case "KeywordPlanIdeaServiceClient":
                         return KeywordPlanIdeaServiceClient.Create(callInvoker, (KeywordPlanIdeaServiceSettings) settings);
-
-
-                    case "KeywordPlanKeywordServiceClient":
-                        return KeywordPlanKeywordServiceClient.Create(callInvoker, (KeywordPlanKeywordServiceSettings) settings);
-
-
-                    case "KeywordPlanNegativeKeywordServiceClient":
-                        return KeywordPlanNegativeKeywordServiceClient.Create(callInvoker, (KeywordPlanNegativeKeywordServiceSettings) settings);
 
 
                     case "KeywordPlanServiceClient":
@@ -1320,6 +1352,10 @@ namespace Google.Ads.GoogleAds
 
                     case "ShoppingPerformanceViewServiceClient":
                         return ShoppingPerformanceViewServiceClient.Create(callInvoker, (ShoppingPerformanceViewServiceSettings) settings);
+
+
+                    case "ThirdPartyAppAnalyticsLinkServiceClient":
+                        return ThirdPartyAppAnalyticsLinkServiceClient.Create(callInvoker, (ThirdPartyAppAnalyticsLinkServiceSettings) settings);
 
 
                     case "TopicConstantServiceClient":

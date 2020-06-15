@@ -46,6 +46,7 @@ namespace Google.Ads.GoogleAds.V4.Services
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             GetKeywordPlanSettings = existing.GetKeywordPlanSettings;
             MutateKeywordPlansSettings = existing.MutateKeywordPlansSettings;
+            GenerateForecastCurveSettings = existing.GenerateForecastCurveSettings;
             GenerateForecastMetricsSettings = existing.GenerateForecastMetricsSettings;
             GenerateHistoricalMetricsSettings = existing.GenerateHistoricalMetricsSettings;
             OnCopy(existing);
@@ -77,6 +78,19 @@ namespace Google.Ads.GoogleAds.V4.Services
         /// </list>
         /// </remarks>
         public gaxgrpc::CallSettings MutateKeywordPlansSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>KeywordPlanServiceClient.GenerateForecastCurve</c> and
+        /// <c>KeywordPlanServiceClient.GenerateForecastCurveAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>This call will not be retried.</description></item>
+        /// <item><description>No timeout is applied.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings GenerateForecastCurveSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
@@ -434,6 +448,108 @@ namespace Google.Ads.GoogleAds.V4.Services
             MutateKeywordPlansAsync(customerId, operations, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
+        /// Returns the requested Keyword Plan forecast curve.
+        /// Only the bidding strategy is considered for generating forecast curve.
+        /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+        /// strategy) specified in the plan is ignored.
+        /// 
+        /// To generate a forecast at a value specified in the plan, use
+        /// KeywordPlanService.GenerateForecastMetrics.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateForecastCurveResponse GenerateForecastCurve(GenerateForecastCurveRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Returns the requested Keyword Plan forecast curve.
+        /// Only the bidding strategy is considered for generating forecast curve.
+        /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+        /// strategy) specified in the plan is ignored.
+        /// 
+        /// To generate a forecast at a value specified in the plan, use
+        /// KeywordPlanService.GenerateForecastMetrics.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateForecastCurveResponse> GenerateForecastCurveAsync(GenerateForecastCurveRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Returns the requested Keyword Plan forecast curve.
+        /// Only the bidding strategy is considered for generating forecast curve.
+        /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+        /// strategy) specified in the plan is ignored.
+        /// 
+        /// To generate a forecast at a value specified in the plan, use
+        /// KeywordPlanService.GenerateForecastMetrics.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateForecastCurveResponse> GenerateForecastCurveAsync(GenerateForecastCurveRequest request, st::CancellationToken cancellationToken) =>
+            GenerateForecastCurveAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns the requested Keyword Plan forecast curve.
+        /// Only the bidding strategy is considered for generating forecast curve.
+        /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+        /// strategy) specified in the plan is ignored.
+        /// 
+        /// To generate a forecast at a value specified in the plan, use
+        /// KeywordPlanService.GenerateForecastMetrics.
+        /// </summary>
+        /// <param name="keywordPlan">
+        /// Required. The resource name of the keyword plan to be forecasted.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateForecastCurveResponse GenerateForecastCurve(string keywordPlan, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateForecastCurve(new GenerateForecastCurveRequest
+            {
+                KeywordPlan = gax::GaxPreconditions.CheckNotNullOrEmpty(keywordPlan, nameof(keywordPlan)),
+            }, callSettings);
+
+        /// <summary>
+        /// Returns the requested Keyword Plan forecast curve.
+        /// Only the bidding strategy is considered for generating forecast curve.
+        /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+        /// strategy) specified in the plan is ignored.
+        /// 
+        /// To generate a forecast at a value specified in the plan, use
+        /// KeywordPlanService.GenerateForecastMetrics.
+        /// </summary>
+        /// <param name="keywordPlan">
+        /// Required. The resource name of the keyword plan to be forecasted.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateForecastCurveResponse> GenerateForecastCurveAsync(string keywordPlan, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateForecastCurveAsync(new GenerateForecastCurveRequest
+            {
+                KeywordPlan = gax::GaxPreconditions.CheckNotNullOrEmpty(keywordPlan, nameof(keywordPlan)),
+            }, callSettings);
+
+        /// <summary>
+        /// Returns the requested Keyword Plan forecast curve.
+        /// Only the bidding strategy is considered for generating forecast curve.
+        /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+        /// strategy) specified in the plan is ignored.
+        /// 
+        /// To generate a forecast at a value specified in the plan, use
+        /// KeywordPlanService.GenerateForecastMetrics.
+        /// </summary>
+        /// <param name="keywordPlan">
+        /// Required. The resource name of the keyword plan to be forecasted.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateForecastCurveResponse> GenerateForecastCurveAsync(string keywordPlan, st::CancellationToken cancellationToken) =>
+            GenerateForecastCurveAsync(keywordPlan, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
         /// Returns the requested Keyword Plan forecasts.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
@@ -576,6 +692,8 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         private readonly gaxgrpc::ApiCall<MutateKeywordPlansRequest, MutateKeywordPlansResponse> _callMutateKeywordPlans;
 
+        private readonly gaxgrpc::ApiCall<GenerateForecastCurveRequest, GenerateForecastCurveResponse> _callGenerateForecastCurve;
+
         private readonly gaxgrpc::ApiCall<GenerateForecastMetricsRequest, GenerateForecastMetricsResponse> _callGenerateForecastMetrics;
 
         private readonly gaxgrpc::ApiCall<GenerateHistoricalMetricsRequest, GenerateHistoricalMetricsResponse> _callGenerateHistoricalMetrics;
@@ -596,6 +714,9 @@ namespace Google.Ads.GoogleAds.V4.Services
             _callMutateKeywordPlans = clientHelper.BuildApiCall<MutateKeywordPlansRequest, MutateKeywordPlansResponse>(grpcClient.MutateKeywordPlansAsync, grpcClient.MutateKeywordPlans, effectiveSettings.MutateKeywordPlansSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateKeywordPlans);
             Modify_MutateKeywordPlansApiCall(ref _callMutateKeywordPlans);
+            _callGenerateForecastCurve = clientHelper.BuildApiCall<GenerateForecastCurveRequest, GenerateForecastCurveResponse>(grpcClient.GenerateForecastCurveAsync, grpcClient.GenerateForecastCurve, effectiveSettings.GenerateForecastCurveSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
+            Modify_ApiCall(ref _callGenerateForecastCurve);
+            Modify_GenerateForecastCurveApiCall(ref _callGenerateForecastCurve);
             _callGenerateForecastMetrics = clientHelper.BuildApiCall<GenerateForecastMetricsRequest, GenerateForecastMetricsResponse>(grpcClient.GenerateForecastMetricsAsync, grpcClient.GenerateForecastMetrics, effectiveSettings.GenerateForecastMetricsSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
             Modify_ApiCall(ref _callGenerateForecastMetrics);
             Modify_GenerateForecastMetricsApiCall(ref _callGenerateForecastMetrics);
@@ -611,6 +732,8 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         partial void Modify_MutateKeywordPlansApiCall(ref gaxgrpc::ApiCall<MutateKeywordPlansRequest, MutateKeywordPlansResponse> call);
 
+        partial void Modify_GenerateForecastCurveApiCall(ref gaxgrpc::ApiCall<GenerateForecastCurveRequest, GenerateForecastCurveResponse> call);
+
         partial void Modify_GenerateForecastMetricsApiCall(ref gaxgrpc::ApiCall<GenerateForecastMetricsRequest, GenerateForecastMetricsResponse> call);
 
         partial void Modify_GenerateHistoricalMetricsApiCall(ref gaxgrpc::ApiCall<GenerateHistoricalMetricsRequest, GenerateHistoricalMetricsResponse> call);
@@ -623,6 +746,8 @@ namespace Google.Ads.GoogleAds.V4.Services
         partial void Modify_GetKeywordPlanRequest(ref GetKeywordPlanRequest request, ref gaxgrpc::CallSettings settings);
 
         partial void Modify_MutateKeywordPlansRequest(ref MutateKeywordPlansRequest request, ref gaxgrpc::CallSettings settings);
+
+        partial void Modify_GenerateForecastCurveRequest(ref GenerateForecastCurveRequest request, ref gaxgrpc::CallSettings settings);
 
         partial void Modify_GenerateForecastMetricsRequest(ref GenerateForecastMetricsRequest request, ref gaxgrpc::CallSettings settings);
 
@@ -676,6 +801,42 @@ namespace Google.Ads.GoogleAds.V4.Services
         {
             Modify_MutateKeywordPlansRequest(ref request, ref callSettings);
             return _callMutateKeywordPlans.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns the requested Keyword Plan forecast curve.
+        /// Only the bidding strategy is considered for generating forecast curve.
+        /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+        /// strategy) specified in the plan is ignored.
+        /// 
+        /// To generate a forecast at a value specified in the plan, use
+        /// KeywordPlanService.GenerateForecastMetrics.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override GenerateForecastCurveResponse GenerateForecastCurve(GenerateForecastCurveRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GenerateForecastCurveRequest(ref request, ref callSettings);
+            return _callGenerateForecastCurve.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns the requested Keyword Plan forecast curve.
+        /// Only the bidding strategy is considered for generating forecast curve.
+        /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
+        /// strategy) specified in the plan is ignored.
+        /// 
+        /// To generate a forecast at a value specified in the plan, use
+        /// KeywordPlanService.GenerateForecastMetrics.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task<GenerateForecastCurveResponse> GenerateForecastCurveAsync(GenerateForecastCurveRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GenerateForecastCurveRequest(ref request, ref callSettings);
+            return _callGenerateForecastCurve.Async(request, callSettings);
         }
 
         /// <summary>

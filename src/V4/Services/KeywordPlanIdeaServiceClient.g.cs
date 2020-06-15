@@ -21,6 +21,7 @@ using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
 using sys = System;
+using sc = System.Collections;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
 using st = System.Threading;
@@ -204,8 +205,8 @@ namespace Google.Ads.GoogleAds.V4.Services
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public virtual GenerateKeywordIdeaResponse GenerateKeywordIdeas(GenerateKeywordIdeasRequest request, gaxgrpc::CallSettings callSettings = null) =>
+        /// <returns>A pageable sequence of <see cref="GenerateKeywordIdeaResult"/> resources.</returns>
+        public virtual gax::PagedEnumerable<GenerateKeywordIdeaResponse, GenerateKeywordIdeaResult> GenerateKeywordIdeas(GenerateKeywordIdeasRequest request, gaxgrpc::CallSettings callSettings = null) =>
             throw new sys::NotImplementedException();
 
         /// <summary>
@@ -213,18 +214,9 @@ namespace Google.Ads.GoogleAds.V4.Services
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<GenerateKeywordIdeaResponse> GenerateKeywordIdeasAsync(GenerateKeywordIdeasRequest request, gaxgrpc::CallSettings callSettings = null) =>
+        /// <returns>A pageable asynchronous sequence of <see cref="GenerateKeywordIdeaResult"/> resources.</returns>
+        public virtual gax::PagedAsyncEnumerable<GenerateKeywordIdeaResponse, GenerateKeywordIdeaResult> GenerateKeywordIdeasAsync(GenerateKeywordIdeasRequest request, gaxgrpc::CallSettings callSettings = null) =>
             throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Returns a list of keyword ideas.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<GenerateKeywordIdeaResponse> GenerateKeywordIdeasAsync(GenerateKeywordIdeasRequest request, st::CancellationToken cancellationToken) =>
-            GenerateKeywordIdeasAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 
     /// <summary>KeywordPlanIdeaService client wrapper implementation, for convenient use.</summary>
@@ -267,11 +259,11 @@ namespace Google.Ads.GoogleAds.V4.Services
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public override GenerateKeywordIdeaResponse GenerateKeywordIdeas(GenerateKeywordIdeasRequest request, gaxgrpc::CallSettings callSettings = null)
+        /// <returns>A pageable sequence of <see cref="GenerateKeywordIdeaResult"/> resources.</returns>
+        public override gax::PagedEnumerable<GenerateKeywordIdeaResponse, GenerateKeywordIdeaResult> GenerateKeywordIdeas(GenerateKeywordIdeasRequest request, gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GenerateKeywordIdeasRequest(ref request, ref callSettings);
-            return _callGenerateKeywordIdeas.Sync(request, callSettings);
+            return new gaxgrpc::GrpcPagedEnumerable<GenerateKeywordIdeasRequest, GenerateKeywordIdeaResponse, GenerateKeywordIdeaResult>(_callGenerateKeywordIdeas, request, callSettings);
         }
 
         /// <summary>
@@ -279,11 +271,23 @@ namespace Google.Ads.GoogleAds.V4.Services
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public override stt::Task<GenerateKeywordIdeaResponse> GenerateKeywordIdeasAsync(GenerateKeywordIdeasRequest request, gaxgrpc::CallSettings callSettings = null)
+        /// <returns>A pageable asynchronous sequence of <see cref="GenerateKeywordIdeaResult"/> resources.</returns>
+        public override gax::PagedAsyncEnumerable<GenerateKeywordIdeaResponse, GenerateKeywordIdeaResult> GenerateKeywordIdeasAsync(GenerateKeywordIdeasRequest request, gaxgrpc::CallSettings callSettings = null)
         {
             Modify_GenerateKeywordIdeasRequest(ref request, ref callSettings);
-            return _callGenerateKeywordIdeas.Async(request, callSettings);
+            return new gaxgrpc::GrpcPagedAsyncEnumerable<GenerateKeywordIdeasRequest, GenerateKeywordIdeaResponse, GenerateKeywordIdeaResult>(_callGenerateKeywordIdeas, request, callSettings);
         }
+    }
+
+    public partial class GenerateKeywordIdeasRequest : gaxgrpc::IPageRequest
+    {
+    }
+
+    public partial class GenerateKeywordIdeaResponse : gaxgrpc::IPageResponse<GenerateKeywordIdeaResult>
+    {
+        /// <summary>Returns an enumerator that iterates through the resources in this response.</summary>
+        public scg::IEnumerator<GenerateKeywordIdeaResult> GetEnumerator() => Results.GetEnumerator();
+
+        sc::IEnumerator sc::IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }
