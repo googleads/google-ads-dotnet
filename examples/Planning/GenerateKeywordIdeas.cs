@@ -141,11 +141,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
             try
             {
                 // Generate keyword ideas based on the specified parameters.
-                GenerateKeywordIdeaResponse response =
+                var response =
                     keywordPlanIdeaService.GenerateKeywordIdeas(request);
 
                 // Iterate over the results and print its detail.
-                foreach (GenerateKeywordIdeaResult result in response.Results)
+                foreach (GenerateKeywordIdeaResult result in response)
                 {
                     KeywordPlanHistoricalMetrics metrics = result.KeywordIdeaMetrics;
                     Console.WriteLine($"Keyword idea text '{result.Text}' has " +
