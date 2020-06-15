@@ -76,6 +76,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
             {
                 // There are several types of display upload ads. For this example, we will create
                 // an HTML5 upload ad, which requires a media bundle.
+                // This feature is only available to allowlisted accounts.
+                // See https://support.google.com/google-ads/answer/1722096 for more details.
                 // The DisplayUploadProductType field lists the available display upload types:
                 // https://developers.google.com/google-ads/api/reference/rpc/v3/DisplayUploadAdInfo
                 // Creates a new media bundle asset and returns the resource name.
