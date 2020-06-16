@@ -25,8 +25,7 @@ using static Google.Ads.GoogleAds.V4.Enums.CampaignExperimentTrafficSplitTypeEnu
 namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
-    /// This code example adds a campaign draft for a campaign. Make sure you specify a
-    /// campaign that has a budget with explicitly_shared set to false.
+    /// This code example adds a campaign experiment for a draft campaign.
     /// </summary>
     public class CreateCampaignExperiment : ExampleBase
     {
@@ -43,9 +42,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // ID of the base campaign.
-            string campaignDraftResourceName = "INSERT_CAMPAIGN_DRAFT_RESOURCE_ID_HERE";
+            long baseCampaignId = long.Parse("INSERT_BASE_CAMPAIGN_ID_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignDraftResourceName);
+            // ID of the draft campaign.
+            long draftId = long.Parse("INSERT_CAMPAIGN_DRAFT_ID_HERE");
+
+            codeExample.Run(new GoogleAdsClient(), customerId, baseCampaignId, draftId);
         }
 
         /// <summary>
@@ -55,8 +57,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             get
             {
-                return "This code example adds a campaign draft for a campaign. Make sure you " +
-                    "specify a campaign that has a budget with explicitly_shared set to false.";
+                return "This code example adds a campaign experiment for a draft campaign.";
             }
         }
 
@@ -65,11 +66,14 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="campaignDraftResourceName">ID of the base campaign</param>
-        public void Run(GoogleAdsClient client, long customerId, string campaignDraftResourceName)
+        /// <param name="baseCampaignId">ID of the base campaign.</param>
+        /// <param name="draftId">ID of the draft campaign.</param>
+        public void Run(GoogleAdsClient client, long customerId, long baseCampaignId, long draftId)
         {
             try
             {
+                string campaignDraftResourceName = ResourceNames.CampaignDraft(
+                    customerId, baseCampaignId, draftId);
                 Operation<Empty, CreateCampaignExperimentMetadata> operation =
                     CreateExperiment(client, customerId, campaignDraftResourceName);
 

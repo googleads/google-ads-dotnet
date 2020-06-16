@@ -45,14 +45,14 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // ID of the ad group to which ads are added.
-            long adGroupId1 = long.Parse("INSERT_AD_GROUP_ID_HERE");
+            // ID of the ad groups to which ads are added.
+            long[] adGroupIds = new[]
+            {
+                long.Parse("INSERT_AD_GROUP_ID_HERE"),
+                long.Parse("INSERT_AD_GROUP_ID_HERE"),
+            };
 
-            // ID of the ad group to which ads are added.
-            long adGroupId2 = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId1, adGroupId2);
+            codeExample.Run(new GoogleAdsClient(), customerId, adGroupIds);
         }
 
         /// <summary>
@@ -72,11 +72,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="adGroupId1">ID of the first ad group to which ad customizers are added.
-        /// </param>
-        /// <param name="adGroupId2">ID of the second ad group to which ad customizers are added.
-        /// </param>
-        public void Run(GoogleAdsClient client, long customerId, long adGroupId1, long adGroupId2)
+        /// <param name="adGroupIds">ID of the ad groups to which ad customizers are added.</param>
+        public void Run(GoogleAdsClient client, long customerId, long[] adGroupIds)
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient adGroupBidModifierService =
@@ -94,22 +91,22 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 Dictionary<string, FeedAttribute> adCustomizerFeedAttributes =
                     GetFeedAttributes(client, customerId, adCustomizerFeedResourceName);
 
-                // Map the feed to the ad customizer placeholder type to mark it as an ad customizer.
+                // Map the feed to the ad customizer placeholder type to mark it as an
+                // ad customizer.
                 CreateAdCustomizerMapping(client, customerId, adCustomizerFeedResourceName,
                     adCustomizerFeedAttributes);
 
-                // Create the feed items that will fill the placeholders in the ads customized by the feed.
+                // Create the feed items that will fill the placeholders in the ads customized by
+                // the feed.
                 List<string> feedItemResourceNames = CreateFeedItems(client, customerId,
                     adCustomizerFeedResourceName, adCustomizerFeedAttributes);
 
-                // Create a feed item targeting to associate the feed items with specific ad groups to
-                // prevent them from being used in other ways.
-                CreateFeedItemTargets(client, customerId, new[] { adGroupId1, adGroupId2 },
-                    feedItemResourceNames);
+                // Create a feed item targeting to associate the feed items with specific
+                // ad groups to prevent them from being used in other ways.
+                CreateFeedItemTargets(client, customerId, adGroupIds, feedItemResourceNames);
 
                 // Create ads with the customizations provided by the feed items.
-                CreateAdsWithCustomizations(client, customerId, new[] { adGroupId1, adGroupId2 },
-                    feedName);
+                CreateAdsWithCustomizations(client, customerId, adGroupIds, feedName);
             }
             catch (GoogleAdsException e)
             {

@@ -45,9 +45,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
 
             // The value of the bid modifier to add.
-            double bidModifier = double.Parse("INSERT_BID_MODIFIER_HERE");
+            double bidModifierValue = double.Parse("INSERT_BID_MODIFIER_VALUE_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId, bidModifier);
+            codeExample.Run(new GoogleAdsClient(), customerId, campaignId, bidModifierValue);
         }
 
         /// <summary>
@@ -69,9 +69,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignId">ID of the campaign where the bid modifier will be added.
         /// </param>
-        /// <param name="bidModifier">The value of the bid modifier to add.</param>
+        /// <param name="bidModifierValue">The value of the bid modifier to add.</param>
         public void Run(GoogleAdsClient client, long customerId, long campaignId,
-            double bidModifier)
+            double bidModifierValue)
         {
             // Get the CampaignBidModifierService.
             CampaignBidModifierServiceClient campaignBidModifierService =
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 {
                     Type = InteractionType.Calls
                 },
-                BidModifier = bidModifier
+                BidModifier = bidModifierValue
             };
 
             // Construct an operation to create the campaign bid modifier.

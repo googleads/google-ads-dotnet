@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Examples.V4;
+using Google.Ads.GoogleAds.V4.Resources;
 using NUnit.Framework;
 
 namespace Google.Ads.GoogleAds.Tests.Examples.V4
@@ -25,9 +26,14 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V4
     internal class CreateCampaignExperimentTest : ExampleTestsBase
     {
         /// <summary>
-        /// The campaign draft resource for test purposes.
+        /// The base campaign ID for test purposes.
         /// </summary>
-        private string campaignDraftResourceName;
+        private long campaignId;
+
+        /// <summary>
+        /// The campaign draft ID for test purposes.
+        /// </summary>
+        private long draftId;
 
         /// <summary>
         /// Inits this instance.
@@ -38,9 +44,11 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V4
             string budgetResourceName = ExampleTestsUtils.CreateBudget(client, false);
             string campaignResourceName = ExampleTestsUtils.CreateCampaign(client,
                 budgetResourceName);
-            long campaignId = ExampleTestsUtils.GetCampaign(client, campaignResourceName);
-            campaignDraftResourceName = ExampleTestsUtils.CreateCampaignDraft(client,
+            campaignId = ExampleTestsUtils.GetCampaign(client, campaignResourceName);
+            string campaignDraftResourceName = ExampleTestsUtils.CreateCampaignDraft(client,
                 config.ClientCustomerId, campaignId);
+            draftId = long.Parse(CampaignDraftName.Parse(campaignDraftResourceName)
+                .CampaignDraftId);
         }
 
         /// <summary>
@@ -52,7 +60,7 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V4
             RunExample(delegate ()
             {
                 new CreateCampaignExperiment().Run(client, config.ClientCustomerId,
-                    campaignDraftResourceName);
+                    campaignId, draftId);
             });
         }
     }

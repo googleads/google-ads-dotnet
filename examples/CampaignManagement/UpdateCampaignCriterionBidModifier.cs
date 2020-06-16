@@ -14,12 +14,10 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V4.Common;
 using Google.Ads.GoogleAds.V4.Errors;
 using Google.Ads.GoogleAds.V4.Resources;
 using Google.Ads.GoogleAds.V4.Services;
 using System;
-using static Google.Ads.GoogleAds.V4.Enums.DeviceEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V4
 {
@@ -34,7 +32,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            UpdateCampaignCriterionBidModifier codeExample = new UpdateCampaignCriterionBidModifier();
+            UpdateCampaignCriterionBidModifier codeExample =
+                new UpdateCampaignCriterionBidModifier();
             Console.WriteLine(codeExample.Description);
 
             // The Google Ads customer ID for which the call is made.
@@ -47,9 +46,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
             long criterionId = long.Parse("INSERT_CRITERION_ID_HERE");
 
             // The new value of the bid modifier to update.
-            float bidModifier = float.Parse("INSERT_BID_MODIFIER_HERE");
+            float bidModifierValue = float.Parse("INSERT_BID_MODIFIER_VALUE_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId, criterionId, bidModifier);
+            codeExample.Run(new GoogleAdsClient(), customerId, campaignId, criterionId,
+                bidModifierValue);
         }
 
         /// <summary>
@@ -70,9 +70,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignId">ID of the campaign that contains the criterion.</param>
         /// <param name="criterionId">ID of the criterion for which bid modifier is updated.</param>
-        /// <param name="bidModifier">The new value of the bid modifier to update.</param>
+        /// <param name="bidModifierValue">The new value of the bid modifier to update.</param>
         public void Run(GoogleAdsClient client, long customerId, long campaignId, long criterionId,
-            float? bidModifier)
+            float? bidModifierValue)
         {
             // Get the CampaignCriterionServiceClient .
             CampaignCriterionServiceClient campaignCriterionService =
@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             CampaignCriterion campaignCriterion = new CampaignCriterion()
             {
                 ResourceName = criterionResourceName,
-                BidModifier = (bidModifier != null)? bidModifier.Value : 1.5f,
+                BidModifier = (bidModifierValue != null) ? bidModifierValue.Value : 1.5f,
             };
 
             // Construct an operation to create the campaign criterion.
