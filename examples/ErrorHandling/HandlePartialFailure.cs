@@ -18,7 +18,6 @@ using Google.Ads.GoogleAds.V4.Resources;
 using Google.Ads.GoogleAds.V4.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V4
 {
@@ -37,10 +36,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
             Console.WriteLine(codeExample.Description);
             try
             {
-                long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
                 // The Google Ads customer ID for which the call is made.
                 long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                // ID of the campaign to which ad groups are added.
+                long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
 
                 codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
             }

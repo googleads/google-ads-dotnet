@@ -45,7 +45,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // The artifact for which metadata is retrieved.
+            // The artifact for which metadata is retrieved. The artifact can be either a
+            // resource (such as customer, campaign) or a field (such as metrics.impressions,
+            // campaign.id).
             string artifactName = "INSERT_ARTIFACT_NAME_HERE";
 
             codeExample.Run(new GoogleAdsClient(), customerId, artifactName);

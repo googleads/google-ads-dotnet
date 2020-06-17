@@ -81,8 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // for details.
             string businessAccountId = null;
 
-            codeExample.Run(new GoogleAdsClient(), customerId, gmbEmailAddress,
-                businessAccountId, gmbAccessToken);
+            codeExample.Run(client, customerId, gmbEmailAddress, businessAccountId, gmbAccessToken);
         }
 
         /// <summary>

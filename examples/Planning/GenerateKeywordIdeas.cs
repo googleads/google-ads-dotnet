@@ -42,23 +42,27 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // Location criteria IDs. For example, specify 21167 for New York. For more information
             // on determining this value, see
             // https://developers.google.com/adwords/api/docs/appendix/geotargeting.
-            long locationId1 = long.Parse("INSERT_LOCATION_ID_1_HERE");
-            long locationId2 = long.Parse("INSERT_LOCATION_ID_2_HERE");
+            long[] locationIds = new long[] {
+                long.Parse("INSERT_LOCATION_ID_1_HERE"),
+                long.Parse("INSERT_LOCATION_ID_2_HERE")
+            };
 
             // A language criterion ID. For example, specify 1000 for English. For more information
             // on determining this value, see
             // https://developers.google.com/adwords/api/docs/appendix/codes-formats#languages.
             long languageId = long.Parse("INSERT_LANGUAGE_ID_HERE");
 
-            string keywordText1 = "INSERT_KEYWORD_TEXT_1_HERE";
-            string keywordText2 = "INSERT_KEYWORD_TEXT_2_HERE";
+            // List of seed keywords.
+            string[] keywordTexts = new string[] {
+                "INSERT_KEYWORD_TEXT_1_HERE",
+                "INSERT_KEYWORD_TEXT_2_HERE"
+            };
             
             // Optional: Specify a URL string related to your business to generate ideas.
             string pageUrl = null;
 
-            codeExample.Run(new GoogleAdsClient(), customerId,
-                new long[] { locationId1, locationId2}, languageId,
-                new string[] { keywordText1, keywordText2}, pageUrl);
+            codeExample.Run(new GoogleAdsClient(), customerId, locationIds, languageId,
+                keywordTexts, pageUrl);
         }
 
         /// <summary>

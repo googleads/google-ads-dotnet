@@ -30,9 +30,9 @@ using static Google.Ads.GoogleAds.V4.Enums.AssetTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
-    /// Creates a shopping campaign associated with an existing Merchant Center account, along
-    /// with a related ad group and responsive display ad, and targets a user list for remarketing
-    /// purposes.
+    /// This code example creates a shopping campaign associated with an existing Merchant Center
+    /// account, along with a related ad group and responsive display ad, and targets a user list
+    /// for remarketing purposes.
     /// </summary>
     public class AddMerchantCenterDynamicRemarketingCampaign : ExampleBase
     {
@@ -50,13 +50,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // The Merchant Center account to be associated with the new campaign.
+            // ID of the Merchant Center account to be associated with the new campaign.
             long merchantCenterAccountId = long.Parse("INSERT_MERCHANT_CENTER_ID_HERE");
 
-            // The Campaign Budget to be associated with the new campaign.
+            // ID of the campaign budget to be associated with the new campaign.
             long campaignBudgetId = long.Parse("INSERT_CAMPAIGN_BUDGET_ID_HERE");
 
-            // The specific user list for remarketing.
+            // ID of the user list to be used for remarketing.
             long userListId = long.Parse("INSERT_USER_LIST_ID");
 
             codeExample.Run(new GoogleAdsClient(), customerId, merchantCenterAccountId,
@@ -70,9 +70,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             get
             {
-                return "Creates a shopping campaign associated with an existing Merchant Center " +
-                       "account, along with a related ad group and responsive display ad, and " +
-                       "targets a user list for remarketing purposes.";
+                return "This code example creates a shopping campaign associated with an existing " +
+                    "Merchant Center account, along with a related ad group and responsive " +
+                    "display ad, and targets a user list for remarketing purposes.";
             }
         }
 
@@ -81,11 +81,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="merchantCenterAccountId">The Merchant Center account to be associated
-        ///     with the new campaign.</param>
-        /// <param name="campaignBudgetId">The Campaign Budget to be associated with the new
-        ///     campaign.</param>
-        /// <param name="userListId">The specific user list for remarketing.</param>
+        /// <param name="merchantCenterAccountId">ID of the Merchant Center account to be
+        /// associated with the new campaign.</param>
+        /// <param name="campaignBudgetId">ID of the campaign budget to be associated with the new
+        /// campaign.</param>
+        /// <param name="userListId">ID of the user list to be used for remarketing.</param>
         public void Run(GoogleAdsClient client, long customerId, long merchantCenterAccountId,
             long campaignBudgetId, long userListId)
         {

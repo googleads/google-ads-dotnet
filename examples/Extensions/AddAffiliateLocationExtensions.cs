@@ -47,11 +47,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            AddAffiliateLocationExtensions codeExample =
-                new AddAffiliateLocationExtensions();
+            AddAffiliateLocationExtensions codeExample = new AddAffiliateLocationExtensions();
             Console.WriteLine(codeExample.Description);
-
-            GoogleAdsClient client = new GoogleAdsClient();
 
             // The customer ID for which the call is made.
             int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");

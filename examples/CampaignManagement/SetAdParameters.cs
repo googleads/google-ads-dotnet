@@ -42,7 +42,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // ID of the ad group that contains the keyword.
             long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
-            // ID of the keyword to which ad parametes are attached.
+            // ID of the keyword to which ad parameters are attached.
             long keywordId = long.Parse("INSERT_KEYWORD_ID_HERE");
 
             codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keywordId);

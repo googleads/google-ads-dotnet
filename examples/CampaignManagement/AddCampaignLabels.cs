@@ -40,14 +40,15 @@ namespace Google.Ads.GoogleAds.Examples.V4
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // IDs of the campaigns where the campaign labels will be added.
-            long campaignId1 = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-            long campaignId2 = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+            long[] campaignIds = new long[] {
+                long.Parse("INSERT_CAMPAIGN_ID_HERE"),
+                long.Parse("INSERT_CAMPAIGN_ID_HERE")
+            };
 
             // IDs of the label that is applied to campaign labels.
             long labelId = long.Parse("INSERT_LABEL_ID_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId,
-                new long[] { campaignId1, campaignId2 }, labelId);
+            codeExample.Run(new GoogleAdsClient(), customerId, campaignIds, labelId);
         }
 
         /// <summary>

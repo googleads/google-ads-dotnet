@@ -45,7 +45,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // ID of the campaign to which targeting criteria are added.
             long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
 
-            // ID of the campaign to which targeting criteria are added.
+            // The keyword text to be added as a negative criterion to the keyword.
             string keywordText = "INSERT_KEYWORD_TEXT_HERE";
 
             // ID of the campaign to which targeting criteria are added.
