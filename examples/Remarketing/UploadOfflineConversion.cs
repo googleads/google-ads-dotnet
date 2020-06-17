@@ -43,10 +43,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // The conversion action ID.
             long conversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
 
-            // The Click ID.
+            // The Google Click ID for which conversions are uploaded.
             string gclid = "INSERT_GCLID_HERE";
 
-            // The conversion time.
+            // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
             string conversionTime = "INSERT_CONVERSION_TIME_HERE";
 
             // The conversion value.

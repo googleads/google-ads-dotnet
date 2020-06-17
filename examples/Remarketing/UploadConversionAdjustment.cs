@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // The Google Click ID for which adjustments are uploaded.
             string gclid = "INSERT_GCLID_HERE";
 
-            // The adjustment date and time.
+            // The adjustment time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
             string adjustmentDateTime = "INSERT_ADJUSTMENT_DATE_TIME_HERE";
 
             // The restatement value.
