@@ -124,13 +124,10 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // List of all requests to ensure that we wait for the reports to complete on all
             // customer IDs before proceeding.
-            List<Task<SearchStreamStream>> tasks = new List<Task<SearchStreamStream>>();
+            ConcurrentBag<Task<SearchStreamStream>> tasks = new ConcurrentBag<Task<SearchStreamStream>>();
 
             // Collection of downloaded responses.
             ConcurrentBag<ReportDownload> responses = new ConcurrentBag<ReportDownload>();
-
-            // Helpful identifier for active tasks.
-            //int reportId = 1;
 
             // IMPORTANT: You should avoid hitting the same customer ID in parallel. There are rate
             // limits at the customer ID level which are much stricter than limits at the developer
