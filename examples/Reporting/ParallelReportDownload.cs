@@ -15,8 +15,6 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V3.Errors;
@@ -33,15 +31,22 @@ namespace Google.Ads.GoogleAds.Examples.V3
     public class ParallelReportDownload : ExampleBase
     {
         // Defines the Google Ads Query Language (GAQL) query strings to run for each customer ID.
-        private readonly string[] GAQL_QUERY_STRINGS =
-        {
-            @"SELECT campaign.id, metrics.impressions, metrics.clicks
-                FROM campaign
-                WHERE segments.date DURING LAST_30_DAYS",
-            @"SELECT campaign.id, ad_group.id, metrics.impressions, metrics.clicks
-                FROM ad_group
-                WHERE segments.date DURING LAST_30_DAYS"
-        };
+        private readonly Dictionary<string, string> GAQL_QUERY_STRINGS =
+            new Dictionary<string, string>()
+            {
+                {
+                    "Campaign Query",
+                    @"SELECT campaign.id, metrics.impressions, metrics.clicks
+                    FROM campaign
+                    WHERE segments.date DURING LAST_30_DAYS"
+                },
+                {
+                    "Ad Group Query",
+                    @"SELECT campaign.id, ad_group.id, metrics.impressions, metrics.clicks
+                    FROM ad_group
+                    WHERE segments.date DURING LAST_30_DAYS"
+                }
+            };
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -53,7 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             Console.WriteLine(codeExample.Description);
 
             // The Google Ads customer IDs for which the call is made.
-            long[] customerIds = new long[]
+            long[] customerIds =
             {
                 long.Parse("INSERT_CUSTOMER_ID_1_HERE"),
                 long.Parse("INSERT_CUSTOMER_ID_2_HERE")
@@ -124,7 +129,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // List of all requests to ensure that we wait for the reports to complete on all
             // customer IDs before proceeding.
-            ConcurrentBag<Task<SearchStreamStream>> tasks = new ConcurrentBag<Task<SearchStreamStream>>();
+            ConcurrentBag<Task<SearchStreamStream>> tasks =
+                new ConcurrentBag<Task<SearchStreamStream>>();
 
             // Collection of downloaded responses.
             ConcurrentBag<ReportDownload> responses = new ConcurrentBag<ReportDownload>();
@@ -134,23 +140,16 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // token level. Hitting these limits frequently enough will significantly reduce
             // throughput as the client library will automatically retry with exponential back-off
             // before failing the request.
-            Parallel.ForEach(GAQL_QUERY_STRINGS, (query, outerState, outerIndex) =>
-
-                    // foreach (string query in GAQL_QUERY_STRINGS)
+            Parallel.ForEach(GAQL_QUERY_STRINGS, query =>
                 {
-                    Console.WriteLine($"Query: {query}");
-
-                    Parallel.ForEach(customerIds, (customerId, innerState, innerIndex) =>
-                        // foreach (long customerId in customerIds)
+                    Parallel.ForEach(customerIds, customerId =>
                     {
-                        int reportId = (int) (outerIndex * GAQL_QUERY_STRINGS.Length + innerIndex);
-                        Console.WriteLine($"\tReport {reportId} requested " +
-                            $"for CID {customerId}.");
+                        Console.WriteLine($"Requesting {query.Key} for CID {customerId}.");
 
                         // Issue an asynchronous search request and add it to the list of requests
                         // in progress.
-                        tasks.Add(DownloadReportAsync(googleAdsService, customerId, query,
-                            reportId, responses));
+                        tasks.Add(DownloadReportAsync(googleAdsService, customerId, query.Key,
+                            query.Value, responses));
                     });
                 }
             );
@@ -160,9 +159,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // Proceed only when all requests have completed.
             await Task.WhenAll(tasks);
 
+            // Give a summary report for each successful download.
             foreach (ReportDownload reportDownload in responses)
             {
-                // Give a summary report for each successful download.
                 Console.WriteLine(reportDownload);
             }
         }
@@ -172,28 +171,28 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// </summary>
         /// <param name="googleAdsService">The Google Ads service client.</param>
         /// <param name="customerId">The customer ID from which data is requested.</param>
-        /// <param name="query">The query for the download request.</param>
-        /// <param name="reportId">Integer identifier for this request.</param>
+        /// <param name="queryKey">The name of the query to be downloaded.</param>
+        /// <param name="queryValue">The query for the download request.</param>
         /// <param name="responses">Collection of all successful report downloads.</param>
         /// <returns>The asynchronous operation.</returns>
         /// <exception cref="GoogleAdsException">Thrown if errors encountered in the execution of
         ///     the request.</exception>
         private async Task<SearchStreamStream> DownloadReportAsync(
-            GoogleAdsServiceClient googleAdsService, long customerId, string query, int reportId,
-            ConcurrentBag<ReportDownload> responses)
+            GoogleAdsServiceClient googleAdsService, long customerId, string queryKey,
+            string queryValue, ConcurrentBag<ReportDownload> responses)
         {
             try
             {
                 // Issue an asynchronous download request.
                 return await googleAdsService.SearchStreamAsync(
-                    customerId.ToString(), query,
+                    customerId.ToString(), queryValue,
                     delegate(SearchGoogleAdsStreamResponse resp)
                     {
                         // Store the results.
                         responses.Add(new ReportDownload()
                         {
                             CustomerId = customerId,
-                            ReportId = reportId,
+                            QueryKey = queryKey,
                             Response = resp
                         });
                     }
@@ -201,7 +200,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             }
             catch (AggregateException ae)
             {
-                Console.WriteLine($"Download failed for report {reportId}!");
+                Console.WriteLine($"Download failed for {queryKey} and CID {customerId}!");
 
                 GoogleAdsException gae = GoogleAdsException.FromTaskException(ae);
 
@@ -225,12 +224,12 @@ namespace Google.Ads.GoogleAds.Examples.V3
         private class ReportDownload
         {
             internal long CustomerId { get; set; }
-            internal long ReportId { get; set; }
+            internal string QueryKey { get; set; }
             internal SearchGoogleAdsStreamResponse Response { get; set; }
 
             public override string ToString()
             {
-                return $"Results for report {ReportId} (CID {CustomerId}): " +
+                return $"{QueryKey} downloaded for CID {CustomerId}: " +
                        $"{Response.Results.Count} rows returned.";
             }
         }
