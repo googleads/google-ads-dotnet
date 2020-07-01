@@ -74,9 +74,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             // Creates a query that retrieves the criterion bid modifier simulations.
             string query = $@"
-                SELECT 
+                SELECT
                     campaign_criterion_simulation.criterion_id,
-                    campaign_criterion_simulation.start_date, 
+                    campaign_criterion_simulation.start_date,
                     campaign_criterion_simulation.end_date,
                     campaign_criterion_simulation.bid_modifier_point_list.points
                 FROM campaign_criterion_simulation
@@ -95,8 +95,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
                         {
                             CampaignCriterionSimulation simulation =
                                 googleAdsRow.CampaignCriterionSimulation;
-                            Console.WriteLine($@"Found campaign-level criterion bid modifier 
-                                simulation for criterion with ID 
+                            Console.WriteLine($@"Found campaign-level criterion bid modifier
+                                simulation for criterion with ID
                                 {simulation.CriterionId}, start date
                                 {simulation.StartDate}, end date
                                 {simulation.EndDate}, and points:");

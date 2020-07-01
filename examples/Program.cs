@@ -32,7 +32,8 @@ namespace Google.Ads.GoogleAds.Examples
         /// The main method.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
-        public static void Main(string[] args)
+        /// <returns>The application's exit code.</returns>
+        public static int Main(string[] args)
         {
             // Turn on detailed logging. This is useful for debugging your requests.
             // You should also replace INSERT_PATH_TO_DETAILED_LOGS_HERE to a file path that will
@@ -88,22 +89,32 @@ namespace Google.Ads.GoogleAds.Examples
             // So, this example can be run with the command line arguments
             //
             //     V2.GetCampaigns --customerId=1234567890
-            RunExamplesFromCommandLineArguments(args);
+            return RunExamplesFromCommandLineArguments(args);
         }
 
         /// <summary>
         /// Runs the examples from command line arguments.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
-        private static void RunExamplesFromCommandLineArguments(string[] args)
+        /// <returns>The application's exit code. The valid return codes are:
+        /// /// <list type="bullet">
+        /// <item><description>0. The code example ran successfully.</description></item>
+        /// <item><description>1. The code example threw an exception and did not complete
+        /// successfully.</description></item>
+        /// <item><description>2. The application was invoked with an incorrect command line
+        /// argument.</description></item>
+        /// </list>
+        /// </returns>
+        private static int RunExamplesFromCommandLineArguments(string[] args)
         {
             ExampleRunner runner = new ExampleRunner();
             runner.LoadCodeExamples(Assembly.GetExecutingAssembly());
 
             if (args.Length == 0)
             {
+                // Bad command line parameter.
                 ShowUsage(runner);
-                return;
+                return 2;
             }
 
             GoogleAdsClient session = new GoogleAdsClient();
@@ -111,11 +122,23 @@ namespace Google.Ads.GoogleAds.Examples
             try
             {
                 runner.Run(exampleName, session, args.Skip(1));
+                return 0;
             }
-            catch (KeyNotFoundException)
+            catch (TargetInvocationException)
             {
-                ShowUsage(runner);
+                // Indicates a failure due to an unhandled exception.
+                return 1;
             }
+            catch (Exception e) when (e is KeyNotFoundException || e is ArgumentException ||
+               e is TargetParameterCountException)
+            {
+                // Bad command line parameter.
+                // Note: There are a couple more exceptions that the runner may throw, but all
+                // those indicate a failure with the runner implementation than a code example
+                // failure.
+                ShowUsage(runner);
+                return 2;
+            } 
         }
 
         /// <summary>
