@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long? externalId = null, string advertiserUploadDateTime = null,
             string bridgeMapVersionId = null, long? partnerId = null)
         {
-            // Get the CampaignService.
+            // Get the OfflineUserDataJobServiceClient.
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient =
                 client.GetService(Services.V3.OfflineUserDataJobService);
 
@@ -356,8 +356,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
                     TransactionAmountMicros = 200L * 1_000_000L,
                     // Specifies the date and time of the transaction. This date and time will be
                     // interpreted by the API using the Google Ads customer's time zone.
-                    // The date/time must be in the format "yyyy-MM-dd hh:mm:ss".
-                    TransactionDateTime = "2020-05-01 23:52:12"
+                    // The date/time must be in the format "yyyy-MM-dd HH:mm:ss",
+                    // e.g. "2020-05-14 19:07:02".
+                    TransactionDateTime = DateTime.Today.AddDays(-2).ToString("yyyy-MM-dd HH:mm:ss")
                 }
             };
 
@@ -388,7 +389,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
                     // Specifies the date and time of the transaction. This date and time will be
                     // interpreted by the API using the Google Ads customer's time zone.
                     // The date/time must be in the format "yyyy-MM-dd hh:mm:ss".
-                    TransactionDateTime = "2020-05-14 19:07:02"
+                    // e.g. "2020-05-14 19:07:02".
+                    TransactionDateTime = DateTime.Today.AddDays(-1).ToString("yyyy-MM-dd HH:mm:ss")
                 }
             };
 
