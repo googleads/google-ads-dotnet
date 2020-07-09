@@ -288,7 +288,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         private void PrintCustomerMatchUserListInfo(GoogleAdsClient client, long customerId,
             string userListResourceName)
         {
-            // Get the tGoogleAdsService.
+            // Get the GoogleAdsService.
             GoogleAdsServiceClient service =
                 client.GetService(Services.V3.GoogleAdsService);
 
