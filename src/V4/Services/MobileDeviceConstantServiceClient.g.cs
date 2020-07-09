@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>MobileDeviceConstantService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch mobile device constants.
+    /// </remarks>
     public abstract partial class MobileDeviceConstantServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>MobileDeviceConstantService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch mobile device constants.
+    /// </remarks>
     public sealed partial class MobileDeviceConstantServiceClientImpl : MobileDeviceConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetMobileDeviceConstantRequest, gagvr::MobileDeviceConstant> _callGetMobileDeviceConstant;

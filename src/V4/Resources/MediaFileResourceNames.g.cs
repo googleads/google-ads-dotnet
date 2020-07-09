@@ -241,7 +241,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::MediaFileName"/>-typed view over the <see cref="ResourceName"/> resource name property.
         /// </summary>
-        public gagvr::MediaFileName ResourceNameAsMediaFileName
+        internal MediaFileName ResourceNameAsMediaFileName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::MediaFileName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::MediaFileName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::MediaFileName MediaFileName
+        internal MediaFileName MediaFileName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::MediaFileName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

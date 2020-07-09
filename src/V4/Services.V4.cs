@@ -375,6 +375,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomInterestService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<CustomInterestServiceClient, CustomInterestServiceSettings> CustomInterestService =
+                new ServiceTemplate<CustomInterestServiceClient, CustomInterestServiceSettings>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomerClientLinkService
             /// for details.
             /// </summary>
@@ -436,14 +444,6 @@ namespace Google.Ads.GoogleAds
             /// </summary>
             public static readonly ServiceTemplate<CustomerServiceClient, CustomerServiceSettings> CustomerService =
                 new ServiceTemplate<CustomerServiceClient, CustomerServiceSettings>(Create);
-
-
-            /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomInterestService
-            /// for details.
-            /// </summary>
-            public static readonly ServiceTemplate<CustomInterestServiceClient, CustomInterestServiceSettings> CustomInterestService =
-                new ServiceTemplate<CustomInterestServiceClient, CustomInterestServiceSettings>(Create);
 
 
             /// <summary>
@@ -551,19 +551,19 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.GeographicViewService
-            /// for details.
-            /// </summary>
-            public static readonly ServiceTemplate<GeographicViewServiceClient, GeographicViewServiceSettings> GeographicViewService =
-                new ServiceTemplate<GeographicViewServiceClient, GeographicViewServiceSettings>(Create);
-
-
-            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.GeoTargetConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<GeoTargetConstantServiceClient, GeoTargetConstantServiceSettings> GeoTargetConstantService =
                 new ServiceTemplate<GeoTargetConstantServiceClient, GeoTargetConstantServiceSettings>(Create);
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.GeographicViewService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<GeographicViewServiceClient, GeographicViewServiceSettings> GeographicViewService =
+                new ServiceTemplate<GeographicViewServiceClient, GeographicViewServiceSettings>(Create);
 
 
             /// <summary>
@@ -1110,6 +1110,10 @@ namespace Google.Ads.GoogleAds
                         return CurrencyConstantServiceClient.Create(callInvoker, (CurrencyConstantServiceSettings) settings);
 
 
+                    case "CustomInterestServiceClient":
+                        return CustomInterestServiceClient.Create(callInvoker, (CustomInterestServiceSettings) settings);
+
+
                     case "CustomerClientLinkServiceClient":
                         return CustomerClientLinkServiceClient.Create(callInvoker, (CustomerClientLinkServiceSettings) settings);
 
@@ -1140,10 +1144,6 @@ namespace Google.Ads.GoogleAds
 
                     case "CustomerServiceClient":
                         return CustomerServiceClient.Create(callInvoker, (CustomerServiceSettings) settings);
-
-
-                    case "CustomInterestServiceClient":
-                        return CustomInterestServiceClient.Create(callInvoker, (CustomInterestServiceSettings) settings);
 
 
                     case "DetailPlacementViewServiceClient":
@@ -1198,12 +1198,12 @@ namespace Google.Ads.GoogleAds
                         return GenderViewServiceClient.Create(callInvoker, (GenderViewServiceSettings) settings);
 
 
-                    case "GeographicViewServiceClient":
-                        return GeographicViewServiceClient.Create(callInvoker, (GeographicViewServiceSettings) settings);
-
-
                     case "GeoTargetConstantServiceClient":
                         return GeoTargetConstantServiceClient.Create(callInvoker, (GeoTargetConstantServiceSettings) settings);
+
+
+                    case "GeographicViewServiceClient":
+                        return GeographicViewServiceClient.Create(callInvoker, (GeographicViewServiceSettings) settings);
 
 
                     case "GoogleAdsFieldServiceClient":

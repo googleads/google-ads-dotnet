@@ -140,6 +140,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>FeedMappingService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage feed mappings.
+    /// </remarks>
     public abstract partial class FeedMappingServiceClient
     {
         /// <summary>
@@ -407,6 +410,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>FeedMappingService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage feed mappings.
+    /// </remarks>
     public sealed partial class FeedMappingServiceClientImpl : FeedMappingServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetFeedMappingRequest, gagvr::FeedMapping> _callGetFeedMapping;

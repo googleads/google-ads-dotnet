@@ -247,7 +247,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::UserInterestName"/>-typed view over the <see cref="ResourceName"/> resource name property.
         /// </summary>
-        public gagvr::UserInterestName ResourceNameAsUserInterestName
+        internal UserInterestName ResourceNameAsUserInterestName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::UserInterestName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -256,7 +256,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::UserInterestName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::UserInterestName UserInterestName
+        internal UserInterestName UserInterestName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::UserInterestName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";
@@ -266,7 +266,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <see cref="gagvr::UserInterestName"/>-typed view over the <see cref="UserInterestParent"/> resource name
         /// property.
         /// </summary>
-        public gagvr::UserInterestName UserInterestParentAsUserInterestName
+        internal UserInterestName UserInterestParentAsUserInterestName
         {
             get => string.IsNullOrEmpty(UserInterestParent) ? null : gagvr::UserInterestName.Parse(UserInterestParent, allowUnparsed: true);
             set => UserInterestParent = value?.ToString() ?? "";

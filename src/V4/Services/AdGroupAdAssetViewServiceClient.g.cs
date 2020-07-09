@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AdGroupAdAssetViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch ad group ad asset views.
+    /// </remarks>
     public abstract partial class AdGroupAdAssetViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AdGroupAdAssetViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch ad group ad asset views.
+    /// </remarks>
     public sealed partial class AdGroupAdAssetViewServiceClientImpl : AdGroupAdAssetViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupAdAssetViewRequest, gagvr::AdGroupAdAssetView> _callGetAdGroupAdAssetView;

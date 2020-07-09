@@ -139,6 +139,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AdGroupService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad groups.
+    /// </remarks>
     public abstract partial class AdGroupServiceClient
     {
         /// <summary>
@@ -397,6 +400,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AdGroupService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad groups.
+    /// </remarks>
     public sealed partial class AdGroupServiceClientImpl : AdGroupServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupRequest, gagvr::AdGroup> _callGetAdGroup;

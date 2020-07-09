@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <see cref="gagvr::ConversionActionName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::ConversionActionName ResourceNameAsConversionActionName
+        internal ConversionActionName ResourceNameAsConversionActionName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::ConversionActionName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::ConversionActionName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::ConversionActionName ConversionActionName
+        internal ConversionActionName ConversionActionName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::ConversionActionName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

@@ -142,6 +142,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>ConversionUploadService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to upload conversions.
+    /// </remarks>
     public abstract partial class ConversionUploadServiceClient
     {
         /// <summary>
@@ -439,6 +442,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>ConversionUploadService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to upload conversions.
+    /// </remarks>
     public sealed partial class ConversionUploadServiceClientImpl : ConversionUploadServiceClient
     {
         private readonly gaxgrpc::ApiCall<UploadClickConversionsRequest, UploadClickConversionsResponse> _callUploadClickConversions;

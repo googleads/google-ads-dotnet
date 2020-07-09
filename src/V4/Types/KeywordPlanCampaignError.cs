@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V4.Errors {
           string.Concat(
             "CkBnb29nbGUvYWRzL2dvb2dsZWFkcy92NC9lcnJvcnMva2V5d29yZF9wbGFu",
             "X2NhbXBhaWduX2Vycm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "NC5lcnJvcnMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ivwEKHEtl",
-            "eXdvcmRQbGFuQ2FtcGFpZ25FcnJvckVudW0ingEKGEtleXdvcmRQbGFuQ2Ft",
+            "NC5lcnJvcnMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8i2wEKHEtl",
+            "eXdvcmRQbGFuQ2FtcGFpZ25FcnJvckVudW0iugEKGEtleXdvcmRQbGFuQ2Ft",
             "cGFpZ25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIQCgxJ",
             "TlZBTElEX05BTUUQAhIVChFJTlZBTElEX0xBTkdVQUdFUxADEhAKDElOVkFM",
             "SURfR0VPUxAEEhIKDkRVUExJQ0FURV9OQU1FEAUSFQoRTUFYX0dFT1NfRVhD",
-            "RUVERUQQBkL4AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LmVycm9y",
-            "c0IdS2V5d29yZFBsYW5DYW1wYWlnbkVycm9yUHJvdG9QAVpEZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y0",
-            "L2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "NC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWNFxFcnJvcnPqAiJH",
-            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWNDo6RXJyb3JzYgZwcm90bzM="));
+            "RUVERUQQBhIaChZNQVhfTEFOR1VBR0VTX0VYQ0VFREVEEAdC+AEKImNvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52NC5lcnJvcnNCHUtleXdvcmRQbGFuQ2Ft",
+            "cGFpZ25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92NC9lcnJvcnM7ZXJyb3JzogID",
+            "R0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjQuRXJyb3JzygIeR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjRcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjQ6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -188,6 +189,10 @@ namespace Google.Ads.GoogleAds.V4.Errors {
         /// The number of geo targets in the keyword plan campaign exceeds limits.
         /// </summary>
         [pbr::OriginalName("MAX_GEOS_EXCEEDED")] MaxGeosExceeded = 6,
+        /// <summary>
+        /// The number of languages in the keyword plan campaign exceeds limits.
+        /// </summary>
+        [pbr::OriginalName("MAX_LANGUAGES_EXCEEDED")] MaxLanguagesExceeded = 7,
       }
 
     }

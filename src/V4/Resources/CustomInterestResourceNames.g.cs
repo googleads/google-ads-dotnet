@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <see cref="gagvr::CustomInterestName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::CustomInterestName ResourceNameAsCustomInterestName
+        internal CustomInterestName ResourceNameAsCustomInterestName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::CustomInterestName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::CustomInterestName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::CustomInterestName CustomInterestName
+        internal CustomInterestName CustomInterestName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::CustomInterestName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

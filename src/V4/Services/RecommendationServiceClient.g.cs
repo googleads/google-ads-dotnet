@@ -157,6 +157,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>RecommendationService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage recommendations.
+    /// </remarks>
     public abstract partial class RecommendationServiceClient
     {
         /// <summary>
@@ -513,6 +516,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>RecommendationService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage recommendations.
+    /// </remarks>
     public sealed partial class RecommendationServiceClientImpl : RecommendationServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetRecommendationRequest, gagvr::Recommendation> _callGetRecommendation;

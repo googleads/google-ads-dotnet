@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>GeoTargetConstantService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch geo target constants.
+    /// </remarks>
     public abstract partial class GeoTargetConstantServiceClient
     {
         /// <summary>
@@ -348,6 +351,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>GeoTargetConstantService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch geo target constants.
+    /// </remarks>
     public sealed partial class GeoTargetConstantServiceClientImpl : GeoTargetConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetGeoTargetConstantRequest, gagvr::GeoTargetConstant> _callGetGeoTargetConstant;

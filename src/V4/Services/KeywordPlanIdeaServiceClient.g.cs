@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>KeywordPlanIdeaService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to generate keyword ideas.
+    /// </remarks>
     public abstract partial class KeywordPlanIdeaServiceClient
     {
         /// <summary>
@@ -220,6 +223,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>KeywordPlanIdeaService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to generate keyword ideas.
+    /// </remarks>
     public sealed partial class KeywordPlanIdeaServiceClientImpl : KeywordPlanIdeaServiceClient
     {
         private readonly gaxgrpc::ApiCall<GenerateKeywordIdeasRequest, GenerateKeywordIdeaResponse> _callGenerateKeywordIdeas;

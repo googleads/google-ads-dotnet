@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>ProductGroupViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage product group views.
+    /// </remarks>
     public abstract partial class ProductGroupViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>ProductGroupViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage product group views.
+    /// </remarks>
     public sealed partial class ProductGroupViewServiceClientImpl : ProductGroupViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetProductGroupViewRequest, gagvr::ProductGroupView> _callGetProductGroupView;

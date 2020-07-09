@@ -140,6 +140,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CampaignFeedService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign feeds.
+    /// </remarks>
     public abstract partial class CampaignFeedServiceClient
     {
         /// <summary>
@@ -407,6 +410,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CampaignFeedService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign feeds.
+    /// </remarks>
     public sealed partial class CampaignFeedServiceClientImpl : CampaignFeedServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignFeedRequest, gagvr::CampaignFeed> _callGetCampaignFeed;

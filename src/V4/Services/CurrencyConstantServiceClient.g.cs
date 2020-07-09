@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CurrencyConstantService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch currency constants.
+    /// </remarks>
     public abstract partial class CurrencyConstantServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CurrencyConstantService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch currency constants.
+    /// </remarks>
     public sealed partial class CurrencyConstantServiceClientImpl : CurrencyConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCurrencyConstantRequest, gagvr::CurrencyConstant> _callGetCurrencyConstant;

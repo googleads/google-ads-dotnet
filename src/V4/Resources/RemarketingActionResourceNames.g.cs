@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <see cref="gagvr::RemarketingActionName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::RemarketingActionName ResourceNameAsRemarketingActionName
+        internal RemarketingActionName ResourceNameAsRemarketingActionName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::RemarketingActionName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::RemarketingActionName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::RemarketingActionName RemarketingActionName
+        internal RemarketingActionName RemarketingActionName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::RemarketingActionName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

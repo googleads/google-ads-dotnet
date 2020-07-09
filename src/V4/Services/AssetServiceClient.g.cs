@@ -138,6 +138,11 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AssetService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage assets. Asset types can be created with AssetService are
+    /// YoutubeVideoAsset, MediaBundleAsset and ImageAsset. TextAsset should be
+    /// created with Ad inline.
+    /// </remarks>
     public abstract partial class AssetServiceClient
     {
         /// <summary>
@@ -396,6 +401,11 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AssetService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage assets. Asset types can be created with AssetService are
+    /// YoutubeVideoAsset, MediaBundleAsset and ImageAsset. TextAsset should be
+    /// created with Ad inline.
+    /// </remarks>
     public sealed partial class AssetServiceClientImpl : AssetServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAssetRequest, gagvr::Asset> _callGetAsset;

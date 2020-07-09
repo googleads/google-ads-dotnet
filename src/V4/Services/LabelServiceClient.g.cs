@@ -138,6 +138,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>LabelService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage labels.
+    /// </remarks>
     public abstract partial class LabelServiceClient
     {
         /// <summary>
@@ -396,6 +399,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>LabelService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage labels.
+    /// </remarks>
     public sealed partial class LabelServiceClientImpl : LabelServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetLabelRequest, gagvr::Label> _callGetLabel;

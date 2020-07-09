@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>SharedCriterionService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage shared criteria.
+    /// </remarks>
     public abstract partial class SharedCriterionServiceClient
     {
         /// <summary>
@@ -404,6 +407,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>SharedCriterionService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage shared criteria.
+    /// </remarks>
     public sealed partial class SharedCriterionServiceClientImpl : SharedCriterionServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetSharedCriterionRequest, gagvr::SharedCriterion> _callGetSharedCriterion;

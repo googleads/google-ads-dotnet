@@ -152,7 +152,7 @@ namespace Google.Ads.GoogleAds.V4.Enums {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       /// <summary>
-      /// Possbile device types for an extension setting.
+      /// Possible device types for an extension setting.
       /// </summary>
       public enum ExtensionSettingDevice {
         /// <summary>

@@ -236,7 +236,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <see cref="gagvr::GoogleAdsFieldName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::GoogleAdsFieldName ResourceNameAsGoogleAdsFieldName
+        internal GoogleAdsFieldName ResourceNameAsGoogleAdsFieldName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::GoogleAdsFieldName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -245,7 +245,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::GoogleAdsFieldName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::GoogleAdsFieldName GoogleAdsFieldName
+        internal GoogleAdsFieldName GoogleAdsFieldName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::GoogleAdsFieldName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

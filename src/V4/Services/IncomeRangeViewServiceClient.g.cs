@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>IncomeRangeViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage income range views.
+    /// </remarks>
     public abstract partial class IncomeRangeViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>IncomeRangeViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage income range views.
+    /// </remarks>
     public sealed partial class IncomeRangeViewServiceClientImpl : IncomeRangeViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetIncomeRangeViewRequest, gagvr::IncomeRangeView> _callGetIncomeRangeView;

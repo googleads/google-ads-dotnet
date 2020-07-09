@@ -266,7 +266,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <see cref="gagvr::CampaignExperimentName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::CampaignExperimentName ResourceNameAsCampaignExperimentName
+        internal CampaignExperimentName ResourceNameAsCampaignExperimentName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::CampaignExperimentName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -284,7 +284,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::CampaignExperimentName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::CampaignExperimentName CampaignExperimentName
+        internal CampaignExperimentName CampaignExperimentName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::CampaignExperimentName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

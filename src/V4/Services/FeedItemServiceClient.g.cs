@@ -139,6 +139,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>FeedItemService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage feed items.
+    /// </remarks>
     public abstract partial class FeedItemServiceClient
     {
         /// <summary>
@@ -403,6 +406,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>FeedItemService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage feed items.
+    /// </remarks>
     public sealed partial class FeedItemServiceClientImpl : FeedItemServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetFeedItemRequest, gagvr::FeedItem> _callGetFeedItem;

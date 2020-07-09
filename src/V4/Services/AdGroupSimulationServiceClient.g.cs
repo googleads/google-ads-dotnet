@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AdGroupSimulationService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch ad group simulations.
+    /// </remarks>
     public abstract partial class AdGroupSimulationServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AdGroupSimulationService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch ad group simulations.
+    /// </remarks>
     public sealed partial class AdGroupSimulationServiceClientImpl : AdGroupSimulationServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupSimulationRequest, gagvr::AdGroupSimulation> _callGetAdGroupSimulation;

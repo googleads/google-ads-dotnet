@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>KeywordPlanCampaignService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Keyword Plan campaigns.
+    /// </remarks>
     public abstract partial class KeywordPlanCampaignServiceClient
     {
         /// <summary>
@@ -410,6 +413,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>KeywordPlanCampaignService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Keyword Plan campaigns.
+    /// </remarks>
     public sealed partial class KeywordPlanCampaignServiceClientImpl : KeywordPlanCampaignServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetKeywordPlanCampaignRequest, gagvr::KeywordPlanCampaign> _callGetKeywordPlanCampaign;

@@ -140,6 +140,10 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AccountLinkService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// This service allows management of links between Google Ads accounts and other
+    /// accounts.
+    /// </remarks>
     public abstract partial class AccountLinkServiceClient
     {
         /// <summary>
@@ -395,6 +399,10 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AccountLinkService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// This service allows management of links between Google Ads accounts and other
+    /// accounts.
+    /// </remarks>
     public sealed partial class AccountLinkServiceClientImpl : AccountLinkServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAccountLinkRequest, gagvr::AccountLink> _callGetAccountLink;

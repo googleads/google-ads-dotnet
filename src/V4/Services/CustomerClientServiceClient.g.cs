@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CustomerClientService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to get clients in a customer's hierarchy.
+    /// </remarks>
     public abstract partial class CustomerClientServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CustomerClientService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to get clients in a customer's hierarchy.
+    /// </remarks>
     public sealed partial class CustomerClientServiceClientImpl : CustomerClientServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCustomerClientRequest, gagvr::CustomerClient> _callGetCustomerClient;

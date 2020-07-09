@@ -192,6 +192,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CampaignDraftService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign drafts.
+    /// </remarks>
     public abstract partial class CampaignDraftServiceClient
     {
         /// <summary>
@@ -726,6 +729,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CampaignDraftService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign drafts.
+    /// </remarks>
     public sealed partial class CampaignDraftServiceClientImpl : CampaignDraftServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignDraftRequest, gagvr::CampaignDraft> _callGetCampaignDraft;

@@ -144,6 +144,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CustomerNegativeCriterionService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage customer negative criteria.
+    /// </remarks>
     public abstract partial class CustomerNegativeCriterionServiceClient
     {
         /// <summary>
@@ -406,6 +409,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CustomerNegativeCriterionService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage customer negative criteria.
+    /// </remarks>
     public sealed partial class CustomerNegativeCriterionServiceClientImpl : CustomerNegativeCriterionServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCustomerNegativeCriterionRequest, gagvr::CustomerNegativeCriterion> _callGetCustomerNegativeCriterion;

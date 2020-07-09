@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>RemarketingActionService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage remarketing actions.
+    /// </remarks>
     public abstract partial class RemarketingActionServiceClient
     {
         /// <summary>
@@ -404,6 +407,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>RemarketingActionService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage remarketing actions.
+    /// </remarks>
     public sealed partial class RemarketingActionServiceClientImpl : RemarketingActionServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetRemarketingActionRequest, gagvr::RemarketingAction> _callGetRemarketingAction;

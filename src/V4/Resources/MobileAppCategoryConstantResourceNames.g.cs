@@ -264,7 +264,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <see cref="gagvr::MobileAppCategoryConstantName"/>-typed view over the <see cref="ResourceName"/> resource
         /// name property.
         /// </summary>
-        public gagvr::MobileAppCategoryConstantName ResourceNameAsMobileAppCategoryConstantName
+        internal MobileAppCategoryConstantName ResourceNameAsMobileAppCategoryConstantName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::MobileAppCategoryConstantName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -274,7 +274,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <see cref="gagvr::MobileAppCategoryConstantName"/>-typed view over the <see cref="Name"/> resource name
         /// property.
         /// </summary>
-        public gagvr::MobileAppCategoryConstantName MobileAppCategoryConstantName
+        internal MobileAppCategoryConstantName MobileAppCategoryConstantName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::MobileAppCategoryConstantName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

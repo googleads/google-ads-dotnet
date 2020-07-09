@@ -138,6 +138,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>FeedService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage feeds.
+    /// </remarks>
     public abstract partial class FeedServiceClient
     {
         /// <summary>
@@ -402,6 +405,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>FeedService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage feeds.
+    /// </remarks>
     public sealed partial class FeedServiceClientImpl : FeedServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetFeedRequest, gagvr::Feed> _callGetFeed;

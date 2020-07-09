@@ -125,6 +125,10 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>UserDataService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage user data uploads.
+    /// Accessible to whitelisted customers only.
+    /// </remarks>
     public abstract partial class UserDataServiceClient
     {
         /// <summary>
@@ -222,6 +226,10 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>UserDataService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage user data uploads.
+    /// Accessible to whitelisted customers only.
+    /// </remarks>
     public sealed partial class UserDataServiceClientImpl : UserDataServiceClient
     {
         private readonly gaxgrpc::ApiCall<UploadUserDataRequest, UploadUserDataResponse> _callUploadUserData;

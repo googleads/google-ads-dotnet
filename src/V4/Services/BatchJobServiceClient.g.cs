@@ -201,6 +201,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>BatchJobService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage batch jobs.
+    /// </remarks>
     public abstract partial class BatchJobServiceClient
     {
         /// <summary>
@@ -1139,6 +1142,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>BatchJobService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage batch jobs.
+    /// </remarks>
     public sealed partial class BatchJobServiceClientImpl : BatchJobServiceClient
     {
         private readonly gaxgrpc::ApiCall<MutateBatchJobRequest, MutateBatchJobResponse> _callMutateBatchJob;

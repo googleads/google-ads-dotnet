@@ -171,7 +171,10 @@ namespace Google.Ads.GoogleAds.V4.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Budget recommendation for budget constrained campaigns.
+        /// Budget recommendation for campaigns that are currently budget-constrained
+        /// (as opposed to the FORECASTING_CAMPAIGN_BUDGET recommendation, which
+        /// applies to campaigns that are expected to become budget-constrained in
+        /// the future).
         /// </summary>
         [pbr::OriginalName("CAMPAIGN_BUDGET")] CampaignBudget = 2,
         /// <summary>

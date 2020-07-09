@@ -1639,7 +1639,7 @@ namespace Google.Ads.GoogleAds.V4.Common {
     /// <summary>
     /// Name of the store sales custom variable key. A predefined key that
     /// can be applied to the transaction and then later used for custom
-    /// segementation in reporting.
+    /// segmentation in reporting.
     /// Accessible to whitelisted customers only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

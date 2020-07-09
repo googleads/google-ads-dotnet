@@ -130,6 +130,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>ExpandedLandingPageViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch expanded landing page views.
+    /// </remarks>
     public abstract partial class ExpandedLandingPageViewServiceClient
     {
         /// <summary>
@@ -309,6 +312,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>ExpandedLandingPageViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch expanded landing page views.
+    /// </remarks>
     public sealed partial class ExpandedLandingPageViewServiceClientImpl : ExpandedLandingPageViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetExpandedLandingPageViewRequest, gagvr::ExpandedLandingPageView> _callGetExpandedLandingPageView;

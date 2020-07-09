@@ -147,6 +147,12 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>KeywordPlanCampaignKeywordService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Keyword Plan campaign keywords. KeywordPlanCampaign is
+    /// required to add the campaign keywords. Only negative keywords are supported.
+    /// A maximum of 1000 negative keywords are allowed per plan. This includes both
+    /// campaign negative keywords and ad group negative keywords.
+    /// </remarks>
     public abstract partial class KeywordPlanCampaignKeywordServiceClient
     {
         /// <summary>
@@ -418,6 +424,12 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>KeywordPlanCampaignKeywordService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Keyword Plan campaign keywords. KeywordPlanCampaign is
+    /// required to add the campaign keywords. Only negative keywords are supported.
+    /// A maximum of 1000 negative keywords are allowed per plan. This includes both
+    /// campaign negative keywords and ad group negative keywords.
+    /// </remarks>
     public sealed partial class KeywordPlanCampaignKeywordServiceClientImpl : KeywordPlanCampaignKeywordServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetKeywordPlanCampaignKeywordRequest, gagvr::KeywordPlanCampaignKeyword> _callGetKeywordPlanCampaignKeyword;

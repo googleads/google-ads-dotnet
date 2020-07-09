@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CampaignAudienceViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign audience views.
+    /// </remarks>
     public abstract partial class CampaignAudienceViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CampaignAudienceViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign audience views.
+    /// </remarks>
     public sealed partial class CampaignAudienceViewServiceClientImpl : CampaignAudienceViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignAudienceViewRequest, gagvr::CampaignAudienceView> _callGetCampaignAudienceView;

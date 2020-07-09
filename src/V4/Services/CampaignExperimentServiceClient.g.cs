@@ -255,6 +255,18 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CampaignExperimentService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// CampaignExperimentService manages the life cycle of campaign experiments.
+    /// It is used to create new experiments from drafts, modify experiment
+    /// properties, promote changes in an experiment back to its base campaign,
+    /// graduate experiments into new stand-alone campaigns, and to remove an
+    /// experiment.
+    /// 
+    /// An experiment consists of two variants or arms - the base campaign and the
+    /// experiment campaign, directing a fixed share of traffic to each arm.
+    /// A campaign experiment is created from a draft of changes to the base campaign
+    /// and will be a snapshot of changes in the draft at the time of creation.
+    /// </remarks>
     public abstract partial class CampaignExperimentServiceClient
     {
         /// <summary>
@@ -1091,6 +1103,18 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CampaignExperimentService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// CampaignExperimentService manages the life cycle of campaign experiments.
+    /// It is used to create new experiments from drafts, modify experiment
+    /// properties, promote changes in an experiment back to its base campaign,
+    /// graduate experiments into new stand-alone campaigns, and to remove an
+    /// experiment.
+    /// 
+    /// An experiment consists of two variants or arms - the base campaign and the
+    /// experiment campaign, directing a fixed share of traffic to each arm.
+    /// A campaign experiment is created from a draft of changes to the base campaign
+    /// and will be a snapshot of changes in the draft at the time of creation.
+    /// </remarks>
     public sealed partial class CampaignExperimentServiceClientImpl : CampaignExperimentServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignExperimentRequest, gagvr::CampaignExperiment> _callGetCampaignExperiment;

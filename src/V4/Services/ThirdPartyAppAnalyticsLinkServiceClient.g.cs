@@ -133,6 +133,10 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>ThirdPartyAppAnalyticsLinkService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// This service allows management of links between Google Ads and third party
+    /// app analytics.
+    /// </remarks>
     public abstract partial class ThirdPartyAppAnalyticsLinkServiceClient
     {
         /// <summary>
@@ -234,6 +238,10 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>ThirdPartyAppAnalyticsLinkService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// This service allows management of links between Google Ads and third party
+    /// app analytics.
+    /// </remarks>
     public sealed partial class ThirdPartyAppAnalyticsLinkServiceClientImpl : ThirdPartyAppAnalyticsLinkServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetThirdPartyAppAnalyticsLinkRequest, gagvr::ThirdPartyAppAnalyticsLink> _callGetThirdPartyAppAnalyticsLink;

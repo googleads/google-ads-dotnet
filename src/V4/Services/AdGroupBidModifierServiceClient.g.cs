@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AdGroupBidModifierService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group bid modifiers.
+    /// </remarks>
     public abstract partial class AdGroupBidModifierServiceClient
     {
         /// <summary>
@@ -410,6 +413,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>AdGroupBidModifierService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group bid modifiers.
+    /// </remarks>
     public sealed partial class AdGroupBidModifierServiceClientImpl : AdGroupBidModifierServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupBidModifierRequest, gagvr::AdGroupBidModifier> _callGetAdGroupBidModifier;

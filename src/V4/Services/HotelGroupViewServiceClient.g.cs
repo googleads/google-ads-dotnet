@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>HotelGroupViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Hotel Group Views.
+    /// </remarks>
     public abstract partial class HotelGroupViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>HotelGroupViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Hotel Group Views.
+    /// </remarks>
     public sealed partial class HotelGroupViewServiceClientImpl : HotelGroupViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetHotelGroupViewRequest, gagvr::HotelGroupView> _callGetHotelGroupView;

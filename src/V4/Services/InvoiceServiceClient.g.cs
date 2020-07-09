@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>InvoiceService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// A service to fetch invoices issued for a billing setup during a given month.
+    /// </remarks>
     public abstract partial class InvoiceServiceClient
     {
         /// <summary>
@@ -304,6 +307,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>InvoiceService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// A service to fetch invoices issued for a billing setup during a given month.
+    /// </remarks>
     public sealed partial class InvoiceServiceClientImpl : InvoiceServiceClient
     {
         private readonly gaxgrpc::ApiCall<ListInvoicesRequest, ListInvoicesResponse> _callListInvoices;

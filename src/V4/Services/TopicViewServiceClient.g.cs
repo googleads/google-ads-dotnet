@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>TopicViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage topic views.
+    /// </remarks>
     public abstract partial class TopicViewServiceClient
     {
         /// <summary>
@@ -301,6 +304,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>TopicViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage topic views.
+    /// </remarks>
     public sealed partial class TopicViewServiceClientImpl : TopicViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetTopicViewRequest, gagvr::TopicView> _callGetTopicView;

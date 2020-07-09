@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CarrierConstantService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch carrier constants.
+    /// </remarks>
     public abstract partial class CarrierConstantServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V4.Services
     }
 
     /// <summary>CarrierConstantService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch carrier constants.
+    /// </remarks>
     public sealed partial class CarrierConstantServiceClientImpl : CarrierConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCarrierConstantRequest, gagvr::CarrierConstant> _callGetCarrierConstant;

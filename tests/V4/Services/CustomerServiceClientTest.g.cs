@@ -397,6 +397,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
                 ResourceName = "resource_name8cc2e687",
+                InvitationLink = "invitation_linkd5742ce9",
             };
             mockGrpcClient.Setup(x => x.CreateCustomerClient(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
@@ -419,6 +420,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
                 ResourceName = "resource_name8cc2e687",
+                InvitationLink = "invitation_linkd5742ce9",
             };
             mockGrpcClient.Setup(x => x.CreateCustomerClientAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateCustomerClientResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
@@ -441,6 +443,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
                 ResourceName = "resource_name8cc2e687",
+                InvitationLink = "invitation_linkd5742ce9",
             };
             mockGrpcClient.Setup(x => x.CreateCustomerClient(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);
@@ -461,6 +464,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             CreateCustomerClientResponse expectedResponse = new CreateCustomerClientResponse
             {
                 ResourceName = "resource_name8cc2e687",
+                InvitationLink = "invitation_linkd5742ce9",
             };
             mockGrpcClient.Setup(x => x.CreateCustomerClientAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateCustomerClientResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerServiceClient client = new CustomerServiceClientImpl(mockGrpcClient.Object, null);

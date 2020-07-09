@@ -241,7 +241,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::SharedSetName"/>-typed view over the <see cref="ResourceName"/> resource name property.
         /// </summary>
-        public gagvr::SharedSetName ResourceNameAsSharedSetName
+        internal SharedSetName ResourceNameAsSharedSetName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::SharedSetName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="gagvr::SharedSetName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::SharedSetName SharedSetName
+        internal SharedSetName SharedSetName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::SharedSetName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";
