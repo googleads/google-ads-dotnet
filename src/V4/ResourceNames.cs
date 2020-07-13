@@ -34,6 +34,11 @@ namespace Google.Ads.GoogleAds.V4.Errors
             return $"customers/{customerId}/accountBudgetProposals/{accountBudgetProposalId}";
         }
 
+        public static string AccountLink(long customerId, long accountLinkId)
+        {
+            return $"customers/{customerId}/accountLinks/{accountLinkId}";
+        }
+
         public static string AdGroup(long customerId, long adGroupId)
         {
             return $"customers/{customerId}/adGroups/{adGroupId}";
@@ -107,6 +112,11 @@ namespace Google.Ads.GoogleAds.V4.Errors
         public static string Asset(long customerId, long assetId)
         {
             return $"customers/{customerId}/assets/{assetId}";
+        }
+
+        public static string BatchJob(long customerId, long batchJobId)
+        {
+            return $"customers/{customerId}/batchJobs/{batchJobId}";
         }
 
         public static string BiddingStrategy(long customerId, long biddingStrategyId)
@@ -334,6 +344,11 @@ namespace Google.Ads.GoogleAds.V4.Errors
             return $"customers/{customerId}/hotelPerformanceView";
         }
 
+        public static string IncomeRangeView(long customerId, long adGroupId, long criterionId)
+        {
+            return $"customers/{customerId}/incomeRangeViews/{adGroupId}~{criterionId}";
+        }
+
         public static string KeywordPlan(long customerId, long kpPlanId)
         {
             return $"customers/{customerId}/keywordPlans/{kpPlanId}";
@@ -357,6 +372,16 @@ namespace Google.Ads.GoogleAds.V4.Errors
         public static string KeywordPlanNegativeKeyword(long customerId, long kpNegativeKeywordId)
         {
             return $"customers/{customerId}/keywordPlanNegativeKeywords/{kpNegativeKeywordId}";
+        }
+
+        public static string KeywordPlanAdGroupKeyword(long customerId, string kpAdGroupKeyword)
+        {
+            return $"customers/{customerId}/keywordPlanAdGroupKeywords/{kpAdGroupKeyword}";
+        }
+
+        public static string KeywordPlanCampaignKeywords(long customerId, string kpCampaignKeyword)
+        {
+            return $"customers/{customerId}/keywordPlanCampaignKeywords/{kpCampaignKeyword}";
         }
 
         public static string KeywordView(long customerId, long adGroupId, long criterionId)
@@ -404,7 +429,7 @@ namespace Google.Ads.GoogleAds.V4.Errors
             return $"mobileDeviceConstants/{criterionId}";
         }
 
-        public static string MobileDeviceConstant(long customerId, long mutateJobId)
+        public static string MutateJob(long customerId, long mutateJobId)
         {
             return $"customers/{customerId}/mutateJobs/{mutateJobId}";
         }
@@ -462,6 +487,11 @@ namespace Google.Ads.GoogleAds.V4.Errors
         public static string ShoppingPerformanceView(long customerId)
         {
             return $"customers/{customerId}/shoppingPerformanceView";
+        }
+
+        public static string ThirdPartyAppAnalyticsLinks(long customerId, long shareableLinkId)
+        {
+            return $"customers/{customerId}/thirdPartyAppAnalyticsLinks/{shareableLinkId}";
         }
 
         public static string TopicConstant(long topicId)

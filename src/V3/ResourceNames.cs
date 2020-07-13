@@ -404,7 +404,7 @@ namespace Google.Ads.GoogleAds.V3.Errors
             return $"mobileDeviceConstants/{criterionId}";
         }
 
-        public static string MobileDeviceConstant(long customerId, long mutateJobId)
+        public static string MutateJob(long customerId, long mutateJobId)
         {
             return $"customers/{customerId}/mutateJobs/{mutateJobId}";
         }
