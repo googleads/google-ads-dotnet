@@ -139,7 +139,7 @@ namespace Google.Ads.GoogleAds.V2.Errors
             return $"customers/{customerId}/campaignDrafts/{baseCampaignId}~{draftId}";
         }
 
-        public static string CampaignExperiments(long customerId, long campaignExperimentId)
+        public static string CampaignExperiment(long customerId, long campaignExperimentId)
         {
             return $"customers/{customerId}/campaignExperiments/{campaignExperimentId}";
         }

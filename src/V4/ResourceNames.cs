@@ -379,7 +379,7 @@ namespace Google.Ads.GoogleAds.V4.Errors
             return $"customers/{customerId}/keywordPlanAdGroupKeywords/{kpAdGroupKeyword}";
         }
 
-        public static string KeywordPlanCampaignKeywords(long customerId, string kpCampaignKeyword)
+        public static string KeywordPlanCampaignKeyword(long customerId, string kpCampaignKeyword)
         {
             return $"customers/{customerId}/keywordPlanCampaignKeywords/{kpCampaignKeyword}";
         }
