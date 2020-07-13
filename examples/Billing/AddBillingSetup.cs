@@ -25,8 +25,10 @@ namespace Google.Ads.GoogleAds.Examples.V3
 {
     /// <summary>
     /// This example creates a billing setup for a customer. A billing setup is a link between
-    /// payment account and customer. In the case of consolidated billing, a payments account is
-    /// linked to the manager account and is linked to a customer account via a billing setup.
+    /// payment account and customer. The new billing setup can either reuse an existing payments
+    /// account, or create a new payments account with a given payments profile.
+    /// In the case of consolidated billing, a payments account is linked to the manager account and
+    /// is linked to a customer account via a billing setup.
     /// </summary>
     public class AddBillingSetup : ExampleBase
     {
@@ -43,9 +45,12 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // Payments setup identifiers. Provide an existing payments account ID to link to the
-            // new billing setup. Must be formatted as "1234-5678-9012-3456".
-            string paymentsAccountId = "INSERT_PAYMENTS_ACCOUNT_HERE";
+            // Either a payment accounts ID or a payment profile ID must be provided for the example
+            // to run successfully. If both are provided, only the payments account ID will be used.
+            // See: https://developers.google.com/google-ads/api/docs/billing/billing-setups#creating_new_billing_setups
+            // Provide an existing payments account ID to link to the new billing setup. Must be
+            // formatted as "1234-5678-9012-3456".
+            string paymentsAccountId = "INSERT_PAYMENTS_ACCOUNT_ID_HERE";
             // Alternatively, provide a payments profile ID, which will be linked to a new payments
             // account and the new billing setup. Must be formatted as "1234-5678-9012".
             string paymentsProfileId = "INSERT_PAYMENTS_PROFILE_ID_HERE";
@@ -61,14 +66,18 @@ namespace Google.Ads.GoogleAds.Examples.V3
             get
             {
                 return "This example creates a billing setup for a customer. A billing setup is " +
-                       "a link between payment account and customer. In the case of " +
-                       "consolidated billing, a payments account is linked to the manager " +
-                       "account and is linked to a customer account via a billing setup.";
+                       "a link between payment account and customer. The new billing setup can " +
+                       "either reuse an existing payments/// account, or create a new payments " +
+                       "account with a given payments profile.\n" +
+                       "In the case of consolidated billing, a payments account is linked to the " +
+                       "manager account and is linked to a customer account via a billing setup.";
             }
         }
 
         /// <summary>
-        /// Runs the code example.
+        /// Runs the code example. Either a payment accounts ID or a payment profile ID
+        /// must be provided for the example to run successfully. If both are provided, only the
+        /// payments account ID will be used.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
@@ -115,6 +124,11 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+            }
         }
 
         /// <summary>
@@ -143,22 +157,20 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 billingSetup.PaymentsAccount =
                     ResourceNames.PaymentsAccount(customerId, paymentsAccountId);
             }
-            else
+            else if (paymentsProfileId != null)
             {
                 // Otherwise, create a new payments account by setting the PaymentsAccountInfo
                 // field. See https://support.google.com/google-ads/answer/7268503 for information
                 // about payments profiles.
-                if (paymentsProfileId == null)
-                {
-                    throw new Exception(
-                        "No paymentsAccountId or paymentsProfileId provided.");
-                }
-
                 billingSetup.PaymentsAccountInfo = new BillingSetup.Types.PaymentsAccountInfo()
                 {
                     PaymentsAccountName = "Payments Account #" + ExampleUtilities.GetRandomString(),
                     PaymentsProfileId = paymentsProfileId
                 };
+            }
+            else
+            {
+                throw new Exception("No paymentsAccountId or paymentsProfileId provided.");
             }
 
             return billingSetup;
@@ -181,18 +193,25 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // GetBillingSetup.cs for a more detailed example of requesting billing setup
             // information.
             string query = @"
-                    SELECT billing_setup.id, billing_setup.status
-                    FROM billing_setup
-                    WHERE billing_setup.status = 'APPROVED' LIMIT 1";
+                SELECT billing_setup.end_date_time
+                FROM billing_setup
+                WHERE billing_setup.status = 'APPROVED'
+                ORDER BY billing_setup.end_date_time DESC";
 
             PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchResponse =
                 googleAdsService.Search(customerId.ToString(), query);
 
             if (searchResponse.Any())
             {
-                // If there is an existing approved billing setup, then you can specify any future
-                // start date for the billing setup.
-                billingSetup.StartDateTime = DateTime.Today.AddDays(1).ToString("yyyyMMdd");
+                // If there are any existing approved billing setups, the new billing setup can
+                // start immediately after the last.
+                string lastEndingDateTimeString = searchResponse.First().BillingSetup.EndDateTime;
+
+                // Check if the existing billing setup has no end date (i.e., is set to run
+                // indefinitely).
+                DateTime lastEndingDateTime = lastEndingDateTimeString == null ? DateTime.Today :
+                    DateTime.Parse(lastEndingDateTimeString);
+                billingSetup.StartDateTime = lastEndingDateTime.AddDays(1).ToString("yyyy-MM-dd");
             }
             else
             {
