@@ -409,7 +409,7 @@ namespace Google.Ads.GoogleAds.V1.Errors
             return $"customers/{customerId}/parentalStatusViews/{adGroupId}~{criterionId}";
         }
 
-        public static string PaymentsAccount(long customerId, long paymentsAccountId)
+        public static string PaymentsAccount(long customerId, string paymentsAccountId)
         {
             return $"customers/{customerId}/paymentsAccounts/{paymentsAccountId}";
         }
