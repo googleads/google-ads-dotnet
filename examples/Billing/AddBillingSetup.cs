@@ -45,7 +45,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // Either a payment accounts ID or a payment profile ID must be provided for the example
+            // Either a payments account ID or a payments profile ID must be provided for the example
             // to run successfully. If both are provided, only the payments account ID will be used.
             // See: https://developers.google.com/google-ads/api/docs/billing/billing-setups#creating_new_billing_setups
             // Provide an existing payments account ID to link to the new billing setup. Must be
@@ -67,7 +67,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             {
                 return "This example creates a billing setup for a customer. A billing setup is " +
                        "a link between payment account and customer. The new billing setup can " +
-                       "either reuse an existing payments/// account, or create a new payments " +
+                       "either reuse an existing payments account, or create a new payments " +
                        "account with a given payments profile.\n" +
                        "In the case of consolidated billing, a payments account is linked to the " +
                        "manager account and is linked to a customer account via a billing setup.";
@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         }
 
         /// <summary>
-        /// Runs the code example. Either a payment accounts ID or a payment profile ID
+        /// Runs the code example. Either a payments account ID or a payments profile ID
         /// must be provided for the example to run successfully. If both are provided, only the
         /// payments account ID will be used.
         /// </summary>
@@ -152,7 +152,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             if (paymentsAccountId != null)
             {
                 // If a payments account id has been provided, set PaymentsAccount to its resource
-                // name. You can list available payment accounts via the PaymentAccountService's
+                // name. You can list available payments accounts via the PaymentsAccountService's
                 // ListPaymentsAccounts method.
                 billingSetup.PaymentsAccount =
                     ResourceNames.PaymentsAccount(customerId, paymentsAccountId);
@@ -211,7 +211,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 // indefinitely).
                 DateTime lastEndingDateTime = lastEndingDateTimeString == null ? DateTime.Today :
                     DateTime.Parse(lastEndingDateTimeString);
+
                 billingSetup.StartDateTime = lastEndingDateTime.AddDays(1).ToString("yyyy-MM-dd");
+                billingSetup.EndDateTime = lastEndingDateTime.AddDays(2).ToString("yyyy-MM-dd");
             }
             else
             {
