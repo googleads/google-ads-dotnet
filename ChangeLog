@@ -1,3 +1,26 @@
+4.0.0
+=====
+- Added support for v4 of Google Ads API. See https://developers.google.com/google-ads/api/docs/release-notes#400_beta_2020-07-08
+  for release notes.
+- Removed support for v1 of Google Ads API. See sunset reminder for v1 at
+  https://ads-developers.googleblog.com/2020/06/google-ads-api-beta-v1-sunset-reminder.html. We are
+  doing a major version bump for the library, since removing support for an API version is backward
+  incompatible change.
+- Added new code examples
+  - Reporting/ParallelReportDownload.cs
+  - Reporting/UploadStoreSalesTransactions.cs
+  - Planning/GetAdGroupCriterionCpcBidSimulations.cs
+  - Extensions/AddSitelinksUsingFeeds.cs
+  - ErrorHandling/HandleKeywordPolicyViolations.cs
+  - ErrorHandling/HandleExpandedTextAdPolicyViolations.cs
+  - AdvancedOperations/AddDisplayUploadAd.cs
+- Renamed code examples.
+  - AddCompleteCampaignsUsingMutateJob.cs => AddCompleteCampaignsUsingBatchJob.cs
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/185
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/197
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/201
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/192
+
 3.0.0
 =====
 - Bumped gRPC dependency to 2.29.0. Since this is a breaking change as per the gRPC team, we
@@ -10,7 +33,6 @@
   - Google.Api.Gax.Grpc and related assemblies: 3.0.0
   - Google.LongRunning: 2.0.0
   - .NET: netstandard2.0;net472 for libraries, and netcoreapp3.0;net472 for executables.
-- Fixed https://github.com/googleads/google-ads-dotnet/issues/192
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/163
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/120
 - Removed several method flattenings that involved validateOnly and partialFailure parameters. The
