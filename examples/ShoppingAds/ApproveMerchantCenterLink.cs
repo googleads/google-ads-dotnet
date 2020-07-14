@@ -14,14 +14,14 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V3.Enums.MerchantCenterLinkStatusEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.MerchantCenterLinkStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example demonstrates how to approve a Merchant Center link request.
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // The Merchant center whose link request is to be approved.
+            // ID of the Merchant center whose link request is to be approved.
             long merchantCenterAccountId = long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
             codeExample.Run(new GoogleAdsClient(), customerId, merchantCenterAccountId);
         }
@@ -74,13 +74,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="merchantCenterAccountId">The Merchant center whose link request is to be
+        /// <param name="merchantCenterAccountId">ID of the Merchant center whose link request is to be
         /// approved</param>
         public void Run(GoogleAdsClient client, long customerId, long merchantCenterAccountId)
         {
             // Get the MerchantCenterLink.
             MerchantCenterLinkServiceClient merchantCenterLinkService = client.GetService(
-                Services.V3.MerchantCenterLinkService);
+                Services.V4.MerchantCenterLinkService);
 
             try
             {

@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example fetches the set of valid ProductBiddingCategories.
@@ -117,7 +117,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the GoogleAdsServiceClient .
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V3.GoogleAdsService);
+                client.GetService(Services.V4.GoogleAdsService);
 
             // Creates the query.
             string query = "SELECT product_bidding_category_constant.localized_name, " +

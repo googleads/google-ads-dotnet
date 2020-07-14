@@ -16,23 +16,23 @@ using System;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V3.Common;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Common;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 using Google.Protobuf;
-using static Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.DisplayAdFormatSettingEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.DisplayAdFormatSettingEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.AssetTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
-    /// Creates a shopping campaign associated with an existing Merchant Center account, along
-    /// with a related ad group and responsive display ad, and targets a user list for remarketing
-    /// purposes.
+    /// This code example creates a shopping campaign associated with an existing Merchant Center
+    /// account, along with a related ad group and responsive display ad, and targets a user list
+    /// for remarketing purposes.
     /// </summary>
     public class AddMerchantCenterDynamicRemarketingCampaign : ExampleBase
     {
@@ -50,13 +50,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // The Merchant Center account to be associated with the new campaign.
+            // ID of the Merchant Center account to be associated with the new campaign.
             long merchantCenterAccountId = long.Parse("INSERT_MERCHANT_CENTER_ID_HERE");
 
-            // The Campaign Budget to be associated with the new campaign.
+            // ID of the campaign budget to be associated with the new campaign.
             long campaignBudgetId = long.Parse("INSERT_CAMPAIGN_BUDGET_ID_HERE");
 
-            // The specific user list for remarketing.
+            // ID of the user list to be used for remarketing.
             long userListId = long.Parse("INSERT_USER_LIST_ID");
 
             codeExample.Run(new GoogleAdsClient(), customerId, merchantCenterAccountId,
@@ -70,9 +70,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             get
             {
-                return "Creates a shopping campaign associated with an existing Merchant Center " +
-                       "account, along with a related ad group and responsive display ad, and " +
-                       "targets a user list for remarketing purposes.";
+                return "This code example creates a shopping campaign associated with an existing " +
+                    "Merchant Center account, along with a related ad group and responsive " +
+                    "display ad, and targets a user list for remarketing purposes.";
             }
         }
 
@@ -81,11 +81,11 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="merchantCenterAccountId">The Merchant Center account to be associated
-        ///     with the new campaign.</param>
-        /// <param name="campaignBudgetId">The Campaign Budget to be associated with the new
-        ///     campaign.</param>
-        /// <param name="userListId">The specific user list for remarketing.</param>
+        /// <param name="merchantCenterAccountId">ID of the Merchant Center account to be
+        /// associated with the new campaign.</param>
+        /// <param name="campaignBudgetId">ID of the campaign budget to be associated with the new
+        /// campaign.</param>
+        /// <param name="userListId">ID of the user list to be used for remarketing.</param>
         public void Run(GoogleAdsClient client, long customerId, long merchantCenterAccountId,
             long campaignBudgetId, long userListId)
         {
@@ -128,7 +128,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Creates the Campaign Service client.
             CampaignServiceClient campaignServiceClient =
-                client.GetService(Services.V3.CampaignService);
+                client.GetService(Services.V4.CampaignService);
 
             string budgetResourceName = ResourceNames.CampaignBudget(customerId, campaignBudgetId);
 
@@ -182,7 +182,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Creates the ad group service client.
             AdGroupServiceClient adGroupServiceClient =
-                client.GetService(Services.V3.AdGroupService);
+                client.GetService(Services.V4.AdGroupService);
 
             // Creates the ad group.
             AdGroup adGroup = new AdGroup()
@@ -217,7 +217,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Creates the ad group ad service client.
             AdGroupAdServiceClient adGroupAdServiceClient =
-                client.GetService(Services.V3.AdGroupAdService);
+                client.GetService(Services.V4.AdGroupAdService);
 
             string marketingImageUrl = "https://goo.gl/3b9Wfh";
             string marketingImageName = "Marketing Image";
@@ -329,7 +329,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             string imageUrl, string assetName)
         {
             // Creates the asset service client.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V3.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V4.AssetService);
 
             byte[] imageData = MediaUtilities.GetAssetDataFromUrl(imageUrl, client.Config);
 
@@ -370,7 +370,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Creates the ad group criterion service client.
             AdGroupCriterionServiceClient adGroupCriterionServiceClient = client.GetService
-                (Services.V3.AdGroupCriterionService);
+                (Services.V4.AdGroupCriterionService);
 
             string userListResourceName = ResourceNames.UserList(customerId, userListId);
 

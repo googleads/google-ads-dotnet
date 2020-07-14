@@ -13,20 +13,20 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Common;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Common;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using static Google.Ads.GoogleAds.V3.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V3.Errors.QuotaErrorEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Errors.QuotaErrorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example demonstrates how to handle RateExceededError in an application.
@@ -58,9 +58,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
                 // The ad group ID to which keywords are added.
-                long campaignId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+                long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
-                codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
+                codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
             }
             catch (Exception e)
             {
@@ -118,7 +118,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             {
                 // Get the AdGroupCriterionServiceClient.
                 AdGroupCriterionServiceClient adGroupCriterionService =
-                    client.GetService(Services.V3.AdGroupCriterionService);
+                    client.GetService(Services.V4.AdGroupCriterionService);
 
                 List<AdGroupCriterionOperation> operations = new List<AdGroupCriterionOperation>();
 

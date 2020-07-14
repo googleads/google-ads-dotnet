@@ -48,6 +48,11 @@ namespace Google.Ads.GoogleAds.Util
         public const string SUMMARY_REQUEST_LOGS_SOURCE = "GoogleAds.SummaryRequestLogs";
 
         /// <summary>
+        /// The lock object for synchronized blocks.
+        /// </summary>
+        private static readonly object syncLock = new object();
+
+        /// <summary>
         /// The list of known Trace sources.
         /// </summary>
         private static readonly Dictionary<string, TraceSource> KNOWN_TRACE_SOURCES =
@@ -82,14 +87,17 @@ namespace Google.Ads.GoogleAds.Util
         public static void Configure(string source, TraceListener traceListener,
             SourceLevels levels)
         {
-            TraceSource traceSource = GetSource(source);
-            traceSource.Switch = new SourceSwitch(source)
+            lock (syncLock)
             {
-                Level = levels
-            };
+                TraceSource traceSource = GetSource(source);
+                traceSource.Switch = new SourceSwitch(source)
+                {
+                    Level = levels
+                };
 
-            traceSource.Listeners.Remove("Default");
-            traceSource.Listeners.Add(traceListener);
+                traceSource.Listeners.Remove("Default");
+                traceSource.Listeners.Add(traceListener);
+            }
         }
 
         /// <summary>
