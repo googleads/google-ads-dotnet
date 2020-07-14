@@ -14,12 +14,14 @@
   - ErrorHandling/HandleKeywordPolicyViolations.cs
   - ErrorHandling/HandleExpandedTextAdPolicyViolations.cs
   - AdvancedOperations/AddDisplayUploadAd.cs
+  - Billing/AddBillingSetup.cs
 - Renamed code examples.
   - AddCompleteCampaignsUsingMutateJob.cs => AddCompleteCampaignsUsingBatchJob.cs
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/185
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/197
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/201
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/192
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/203
 
 3.0.0
 =====
