@@ -124,11 +124,6 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
-            }
         }
 
         /// <summary>
