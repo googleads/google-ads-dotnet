@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example sets ad parameters for a keyword. To get ad group criteria,
@@ -42,7 +42,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // ID of the ad group that contains the keyword.
             long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
-            // ID of the keyword to which ad parametes are attached.
+            // ID of the keyword to which ad parameters are attached.
             long keywordId = long.Parse("INSERT_KEYWORD_ID_HERE");
 
             codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keywordId);
@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the AdParameterServiceClient.
             AdParameterServiceClient adParameterService =
-                client.GetService(Services.V3.AdParameterService);
+                client.GetService(Services.V4.AdParameterService);
 
             // Creates ad parameters.
             // There can be a maximum of two AdParameters per ad group criterion.

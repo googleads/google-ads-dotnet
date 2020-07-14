@@ -188,11 +188,16 @@ namespace Google.Ads.GoogleAds.Config
             "LoginCustomerId", "");
 
         /// <summary>
+        /// The linked Customer ID.
+        /// </summary>
+        private readonly StringConfigSetting linkedCustomerId = new StringConfigSetting(
+            "LinkedCustomerId", "");
+
+        /// <summary>
         /// The library identifier override.
         /// </summary>
         private readonly StringConfigSetting libraryIdentifierOverride =
-            new StringConfigSetting(
-            "LibraryIdentifierOverride", "");
+            new StringConfigSetting("LibraryIdentifierOverride", "");
 
         /// <summary>
         /// Gets or sets the timeout for individual API calls.
@@ -257,6 +262,23 @@ namespace Google.Ads.GoogleAds.Config
         {
             get => loginCustomerId.Value;
             set => SetPropertyAndNotify(loginCustomerId, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the linked customer ID.
+        /// </summary>
+        /// <remarks>
+        /// This header is only required for methods that update the resources of an entity when
+        /// permissioned via Linked Accounts in the Google Ads UI(AccountLink resource in the
+        /// Google Ads API). Set this value to the customer ID of the data provider that updates the
+        /// resources of the specified customer ID. It should be set without dashes, for example:
+        /// 1234567890 instead of 123-456-7890. Read https://support.google.com/google-ads/answer/7365001
+        /// to learn more about Linked Accounts.
+        /// </remarks>
+        public string LinkedCustomerId
+        {
+            get => linkedCustomerId.Value;
+            set => SetPropertyAndNotify(linkedCustomerId, value);
         }
 
         /// <summary>
@@ -488,10 +510,12 @@ namespace Google.Ads.GoogleAds.Config
             ReadSetting(settings, serverUrl);
             ReadSetting(settings, developerToken);
             ReadSetting(settings, loginCustomerId);
+            ReadSetting(settings, linkedCustomerId);
             ReadSetting(settings, clientCustomerId);
             ReadSetting(settings, gmbLoginEmail);
             ReadSetting(settings, merchantCenterAccountId);
 
+            ReadSetting(settings, oAuth2Mode);
             ReadSetting(settings, oAuth2ClientId);
             ReadSetting(settings, oAuth2ClientSecret);
             ReadSetting(settings, oAuth2RefreshToken);
