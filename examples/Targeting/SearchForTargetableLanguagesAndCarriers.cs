@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example illustrates how to search for language constants by name that
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V3.GoogleAdsService);
+                client.GetService(Services.V4.GoogleAdsService);
 
             // Create a query that retrieves the targetable carriers by country code.
             string query = $"SELECT carrier_constant.id, carrier_constant.name, " +
@@ -133,7 +133,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V3.GoogleAdsService);
+                client.GetService(Services.V4.GoogleAdsService);
 
             // Create a query that retrieves the language constants by the keyword included
             // in the name.

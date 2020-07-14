@@ -30,6 +30,11 @@ namespace Google.Ads.GoogleAds.Lib
         internal const string LoginCustomerId = "login-customer-id";
 
         /// <summary>
+        /// The linked customer ID keyname in request metadata.
+        /// </summary>
+        internal const string LinkedCustomerId = "linked-customer-id";
+
+        /// <summary>
         /// The library identifier keyname in request metadata.
         /// </summary>
         internal const string LibraryIdentifier = "x-goog-api-client";

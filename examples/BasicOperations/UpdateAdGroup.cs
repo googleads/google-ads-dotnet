@@ -14,13 +14,13 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Enums;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Enums;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example illustrates how to update an ad group, setting its status to 'PAUSED',
@@ -44,15 +44,15 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             // Optional: Provide a cpc bid for the ad group, in micro amounts.
-            long? bidMicroAmount = null;
+            long? cpcBidMicroAmount = null;
 
             long tempVal = 0;
             if (long.TryParse("INSERT_CPC_BID_IN_MICROS_HERE", out tempVal))
             {
-                bidMicroAmount = tempVal;
+                cpcBidMicroAmount = tempVal;
             }
 
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, bidMicroAmount);
+            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, cpcBidMicroAmount);
         }
 
         /// <summary>
@@ -74,11 +74,11 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">Id of the ad group to be updated.</param>
-        /// <param name="bidMicroAmount">The CPC bid amount for the ad group in micros.</param>
+        /// <param name="cpcBidMicroAmount">The CPC bid amount for the ad group in micros.</param>
         public void Run(GoogleAdsClient client, long customerId, long adGroupId,
-            long? bidMicroAmount)
+            long? cpcBidMicroAmount)
         {
-            AdGroupServiceClient adGroupService = client.GetService(Services.V3.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V4.AdGroupService);
 
             // Create an ad group with the specified ID.
             AdGroup adGroup = new AdGroup();
@@ -88,9 +88,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
             adGroup.Status = AdGroupStatusEnum.Types.AdGroupStatus.Paused;
 
             // Update the CPC bid if specified.
-            if (bidMicroAmount != null)
+            if (cpcBidMicroAmount != null)
             {
-                adGroup.CpcBidMicros = bidMicroAmount;
+                adGroup.CpcBidMicros = cpcBidMicroAmount;
             }
 
             // Create the operation.

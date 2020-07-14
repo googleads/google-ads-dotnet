@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example adds a campaign label to a list of campaigns.
@@ -40,14 +40,15 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // IDs of the campaigns where the campaign labels will be added.
-            long campaignId1 = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-            long campaignId2 = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+            long[] campaignIds = new long[] {
+                long.Parse("INSERT_CAMPAIGN_ID_HERE"),
+                long.Parse("INSERT_CAMPAIGN_ID_HERE")
+            };
 
             // IDs of the label that is applied to campaign labels.
             long labelId = long.Parse("INSERT_LABEL_ID_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId,
-                new long[] { campaignId1, campaignId2 }, labelId);
+            codeExample.Run(new GoogleAdsClient(), customerId, campaignIds, labelId);
         }
 
         /// <summary>
@@ -73,7 +74,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the CampaignLabelServiceClient.
             CampaignLabelServiceClient campaignLabelService =
-                client.GetService(Services.V3.CampaignLabelService);
+                client.GetService(Services.V4.CampaignLabelService);
 
             // Gets the resource name of the label to be added across all given campaigns.
             string labelResourceName = ResourceNames.Label(customerId, labelId);

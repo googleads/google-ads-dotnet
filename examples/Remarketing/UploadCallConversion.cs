@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example imports offline call conversion values for calls related to the
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V3.ConversionUploadService);
+                client.GetService(Services.V4.ConversionUploadService);
 
             // Create a call conversion by specifying currency as USD.
             CallConversion callConversion = new CallConversion()

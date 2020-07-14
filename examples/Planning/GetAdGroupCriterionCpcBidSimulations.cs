@@ -14,12 +14,12 @@
 
 using System;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Common;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Common;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This example gets all available ad group criterion CPC bid simulations for a given ad group.
@@ -69,22 +69,22 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V3.GoogleAdsService);
+                client.GetService(Services.V4.GoogleAdsService);
 
             try
             {
                 // Creates a query that retrieves the ad group criterion CPC bid simulations.
                 string query = $@"
-                    SELECT 
+                    SELECT
                         ad_group_criterion_simulation.ad_group_id,
                         ad_group_criterion_simulation.criterion_id,
                         ad_group_criterion_simulation.start_date,
                         ad_group_criterion_simulation.end_date,
                         ad_group_criterion_simulation.cpc_bid_point_list.points
-                    FROM 
+                    FROM
                         ad_group_criterion_simulation
-                    WHERE 
-                        ad_group_criterion_simulation.type = CPC_BID AND 
+                    WHERE
+                        ad_group_criterion_simulation.type = CPC_BID AND
                         ad_group_criterion_simulation.ad_group_id = {adGroupId}";
 
                 // Issue a search stream request.

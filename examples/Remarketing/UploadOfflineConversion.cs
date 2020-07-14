@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example imports offline conversion values for specific clicks to your account.
@@ -43,10 +43,10 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // The conversion action ID.
             long conversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
 
-            // The Click ID.
+            // The Google Click ID for which conversions are uploaded.
             string gclid = "INSERT_GCLID_HERE";
 
-            // The conversion time.
+            // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
             string conversionTime = "INSERT_CONVERSION_TIME_HERE";
 
             // The conversion value.
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the ConversionActionService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V3.ConversionUploadService);
+                client.GetService(Services.V4.ConversionUploadService);
 
             // Creates a click conversion by specifying currency as USD.
             ClickConversion clickConversion = new ClickConversion()

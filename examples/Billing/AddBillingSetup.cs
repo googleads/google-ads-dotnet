@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 using Google.Api.Gax;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V3.Enums.TimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.TimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This example creates a billing setup for a customer. A billing setup is a link between
@@ -90,11 +90,11 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V3.GoogleAdsService);
+                Services.V4.GoogleAdsService);
 
             // Get the BillingSetupServiceClient.
             BillingSetupServiceClient billingSetupServiceClient =
-                client.GetService(Services.V3.BillingSetupService);
+                client.GetService(Services.V4.BillingSetupService);
 
             try
             {

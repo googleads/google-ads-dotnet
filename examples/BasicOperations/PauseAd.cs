@@ -14,15 +14,15 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V3.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.AdGroupAdStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example pauses a given ad. To list all ads, run GetExpandedTextAds.cs.
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V3.AdGroupAdService);
+                Services.V4.AdGroupAdService);
 
             // Create the ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd

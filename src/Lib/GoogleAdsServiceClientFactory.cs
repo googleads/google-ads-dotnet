@@ -151,6 +151,12 @@ namespace Google.Ads.GoogleAds.Lib
                     config.LoginCustomerId);
             }
 
+            if (!string.IsNullOrEmpty(config.LinkedCustomerId))
+            {
+                callSettings = callSettings.WithHeader(MetadataKeyNames.LinkedCustomerId,
+                    config.LinkedCustomerId);
+            }
+
             if (!string.IsNullOrEmpty(config.LibraryIdentifierOverride))
             {
                 callSettings = callSettings.WithHeader(MetadataKeyNames.LibraryIdentifier,

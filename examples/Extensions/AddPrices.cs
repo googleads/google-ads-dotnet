@@ -13,21 +13,21 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Common;
-using Google.Ads.GoogleAds.V3.Enums;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Common;
+using Google.Ads.GoogleAds.V4.Enums;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V3.Enums.ExtensionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.MinuteOfHourEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceQualifierEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.PriceExtensionPriceUnitEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.PriceExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.MinuteOfHourEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.PriceExtensionPriceQualifierEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.PriceExtensionPriceUnitEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.PriceExtensionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example adds a price extension and associates it with an account. Campaign
@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the CustomerExtensionSettingServiceClient.
             CustomerExtensionSettingServiceClient customerExtensionSettingService =
-                client.GetService(Services.V3.CustomerExtensionSettingService);
+                client.GetService(Services.V4.CustomerExtensionSettingService);
 
             try
             {
@@ -135,7 +135,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the ExtensionFeedItemServiceClient.
             ExtensionFeedItemServiceClient extensionFeedItemService =
-                client.GetService(Services.V3.ExtensionFeedItemService);
+                client.GetService(Services.V4.ExtensionFeedItemService);
 
             // Creates the price extension feed item.
             PriceFeedItem priceFeedItem = new PriceFeedItem()
