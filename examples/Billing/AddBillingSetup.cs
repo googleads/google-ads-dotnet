@@ -204,9 +204,14 @@ namespace Google.Ads.GoogleAds.Examples.V3
 
                 // Check if the existing billing setup has no end date (i.e., is set to run
                 // indefinitely).
-                DateTime lastEndingDateTime = lastEndingDateTimeString == null ? DateTime.Today :
-                    DateTime.Parse(lastEndingDateTimeString);
+                if (lastEndingDateTimeString == null)
+                {
+                    throw new Exception("Cannot set ending date time for the new " +
+                                        "billing setup; the latest existing billing setup is set " +
+                                        "to run indefinitely.");
+                }
 
+                DateTime lastEndingDateTime = DateTime.Parse(lastEndingDateTimeString);
                 billingSetup.StartDateTime = lastEndingDateTime.AddDays(1).ToString("yyyy-MM-dd");
                 billingSetup.EndDateTime = lastEndingDateTime.AddDays(2).ToString("yyyy-MM-dd");
             }
