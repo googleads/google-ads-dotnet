@@ -14,12 +14,12 @@
 
 using System;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Common;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Common;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This example gets all available criterion bid modifier simulations for a given campaign.
@@ -70,13 +70,13 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V3.GoogleAdsService);
+                Services.V4.GoogleAdsService);
 
             // Creates a query that retrieves the criterion bid modifier simulations.
             string query = $@"
-                SELECT 
+                SELECT
                     campaign_criterion_simulation.criterion_id,
-                    campaign_criterion_simulation.start_date, 
+                    campaign_criterion_simulation.start_date,
                     campaign_criterion_simulation.end_date,
                     campaign_criterion_simulation.bid_modifier_point_list.points
                 FROM campaign_criterion_simulation
@@ -95,8 +95,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
                         {
                             CampaignCriterionSimulation simulation =
                                 googleAdsRow.CampaignCriterionSimulation;
-                            Console.WriteLine($@"Found campaign-level criterion bid modifier 
-                                simulation for criterion with ID 
+                            Console.WriteLine($@"Found campaign-level criterion bid modifier
+                                simulation for criterion with ID
                                 {simulation.CriterionId}, start date
                                 {simulation.StartDate}, end date
                                 {simulation.EndDate}, and points:");

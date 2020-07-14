@@ -14,16 +14,16 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V3.Enums.FlightPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.FlightPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example updates a FeedItemAttributeValue in a flights feed. To create a flights
@@ -122,7 +122,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService =
-                client.GetService(Services.V3.FeedItemService);
+                client.GetService(Services.V4.FeedItemService);
 
             // Gets the feed resource name.
             string feedResourceName = ResourceNames.Feed(customerId, feedId);
@@ -192,7 +192,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V3.GoogleAdsService);
+                Services.V4.GoogleAdsService);
 
             // Constructs the query.
             string query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -240,7 +240,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                         feedAttributes[FlightPlaceholderField.FinalUrls] = feedAttribute;
                         break;
                     // The full list of FlightPlaceholderFields can be found here
-                    // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V3.enums#flightplaceholderfieldenum.
+                    // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V4.enums#flightplaceholderfieldenum.
                     default:
                         throw new Exception("Invalid attribute name.");
                 }
@@ -261,7 +261,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V3.GoogleAdsService);
+                Services.V4.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed_item.attribute_values FROM feed_item WHERE " +

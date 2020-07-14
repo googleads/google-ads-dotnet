@@ -13,21 +13,21 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Common;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Common;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V3.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V3.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V4.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V4.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example creates a hotel campaign, a hotel ad group and hotel ad group ad.
@@ -135,7 +135,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient service = client.GetService(
-                Services.V3.CampaignBudgetService);
+                Services.V4.CampaignBudgetService);
 
             // Create a campaign budget.
             CampaignBudget budget = new CampaignBudget()
@@ -174,7 +174,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             string budgetResourceName, long hotelCenterAccountId, long cpcBidCeilingMicroAmount)
         {
             // Get the CampaignService.
-            CampaignServiceClient service = client.GetService(Services.V3.CampaignService);
+            CampaignServiceClient service = client.GetService(Services.V4.CampaignService);
 
             // Create a campaign.
             Campaign campaign = new Campaign()
@@ -237,7 +237,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient service = client.GetService(Services.V3.AdGroupService);
+            AdGroupServiceClient service = client.GetService(Services.V4.AdGroupService);
 
             // Create an ad group.
             AdGroup adGroup = new AdGroup()
@@ -278,7 +278,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             string adGroupResourceName)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient service = client.GetService(Services.V3.AdGroupAdService);
+            AdGroupAdServiceClient service = client.GetService(Services.V4.AdGroupAdService);
 
             // Create a new ad group ad and sets the hotel ad to it.
             AdGroupAd adGroupAd = new AdGroupAd()

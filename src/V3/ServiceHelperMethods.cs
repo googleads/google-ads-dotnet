@@ -54,10 +54,18 @@ namespace Google.Ads.GoogleAds.V3.Services
             Task<SearchStreamStream> t = Task.Run(async () =>
             {
                 var responseStream = searchStream.GetResponseStream();
+                bool emptyResult = true;
                 while (await responseStream.MoveNextAsync(CancellationToken.None))
                 {
+                    emptyResult = false;
                     SearchGoogleAdsStreamResponse resp = responseStream.Current;
                     responseCallback(resp);
+                }
+                // Invoke the callback at least once to avoid confusion when there are no results
+                // and no errors.
+                if (emptyResult)
+                {
+                    responseCallback(new SearchGoogleAdsStreamResponse());
                 }
                 return searchStream;
             });

@@ -48,6 +48,11 @@ namespace Google.Ads.GoogleAds.Tests.Config
         private const string LOGIN_CUSTOMER_ID_VALUE = "1234567890";
 
         /// <summary>
+        /// Test value for <see cref="GoogleAdsConfig.LinkedCustomerId"/> property.
+        /// </summary>
+        private const string LINKED_CUSTOMER_ID_VALUE = "4567891234";
+
+        /// <summary>
         /// Test value for <see cref="GoogleAdsConfig.ClientCustomerId"/> property.
         /// </summary>
         private const string CLIENT_CUSTOMER_ID_VALUE = "987654543";
@@ -101,6 +106,7 @@ namespace Google.Ads.GoogleAds.Tests.Config
                 { "GoogleAds.Server", SERVER_URL_VALUE },
                 { "DeveloperToken", DEVELOPER_TOKEN_VALUE },
                 { "LoginCustomerId", LOGIN_CUSTOMER_ID_VALUE },
+                { "LinkedCustomerId", LINKED_CUSTOMER_ID_VALUE },
                 { "ClientCustomerId", CLIENT_CUSTOMER_ID_VALUE },
                 { "OAuth2ClientId", OAUTH2_CLIENT_ID_VALUE },
                 { "OAuth2ClientSecret", OAUTH2_CLIENT_SECRET_VALUE },
@@ -123,6 +129,7 @@ namespace Google.Ads.GoogleAds.Tests.Config
             Assert.AreEqual(TIMEOUT_VALUE, this.Timeout);
             Assert.AreEqual(DEVELOPER_TOKEN_VALUE, this.DeveloperToken);
             Assert.AreEqual(LOGIN_CUSTOMER_ID_VALUE, this.LoginCustomerId);
+            Assert.AreEqual(LINKED_CUSTOMER_ID_VALUE, this.LinkedCustomerId);
             Assert.AreEqual(CLIENT_CUSTOMER_ID_VALUE, this.ClientCustomerId.ToString());
             Assert.AreEqual(OAUTH2_CLIENT_ID_VALUE, this.OAuth2ClientId);
             Assert.AreEqual(OAUTH2_CLIENT_SECRET_VALUE, this.OAuth2ClientSecret);

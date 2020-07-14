@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example removes a keyword. To get keywords, run GetKeywords.cs.
@@ -41,9 +41,9 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             // Id of the keyword to be removed.
-            long keywordId = long.Parse("INSERT_KEYWORD_ID_HERE");
+            long criterionId = long.Parse("INSERT_CRITERION_ID_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keywordId);
+            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, criterionId);
         }
 
         /// <summary>
@@ -64,16 +64,16 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer account ID.</param>
         /// <param name="adGroupId">Id of the ad group that contains the keyword.</param>
-        /// <param name="keywordId">Id of the keyword to be removed.</param>
-        public void Run(GoogleAdsClient client, long customerId, long adGroupId, long keywordId)
+        /// <param name="criterionId">Id of the keyword to be removed.</param>
+        public void Run(GoogleAdsClient client, long customerId, long adGroupId, long criterionId)
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V3.AdGroupCriterionService);
+                Services.V4.AdGroupCriterionService);
 
             // Create the operation.
             AdGroupCriterionOperation operation = new AdGroupCriterionOperation();
-            operation.Remove = ResourceNames.AdGroupCriterion(customerId, adGroupId, keywordId);
+            operation.Remove = ResourceNames.AdGroupCriterion(customerId, adGroupId, criterionId);
 
             try
             {

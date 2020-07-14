@@ -13,17 +13,17 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Common;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Common;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.ProximityRadiusUnitsEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.ProximityRadiusUnitsEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example illustrates adding campaign targeting criteria.
@@ -45,7 +45,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             // ID of the campaign to which targeting criteria are added.
             long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
 
-            // ID of the campaign to which targeting criteria are added.
+            // The keyword text to be added as a negative criterion to the keyword.
             string keywordText = "INSERT_KEYWORD_TEXT_HERE";
 
             // ID of the campaign to which targeting criteria are added.
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService =
-                client.GetService(Services.V3.CampaignCriterionService);
+                client.GetService(Services.V4.CampaignCriterionService);
 
             // Set the Campaign Resource Name
             string campaignResourceName = ResourceNames.Campaign(customerId, campaignId);

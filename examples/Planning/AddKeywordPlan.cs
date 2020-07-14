@@ -13,17 +13,17 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V3.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.KeywordPlanForecastIntervalEnum.Types;
-using static Google.Ads.GoogleAds.V3.Enums.KeywordPlanNetworkEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.KeywordPlanForecastIntervalEnum.Types;
+using static Google.Ads.GoogleAds.V4.Enums.KeywordPlanNetworkEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example creates a keyword plan, which can be reused for retrieving forecast
@@ -72,8 +72,8 @@ namespace Google.Ads.GoogleAds.Examples.V3
                     keywordPlanResource);
                 string planAdGroupResource = CreateKeywordPlanAdGroup(client, customerId,
                     planCampaignResource);
-                CreateKeywordPlanKeywords(client, customerId, planAdGroupResource);
-                CreateKeywordPlanNegativeKeywords(client, customerId, planCampaignResource);
+                CreateKeywordPlanAdGroupKeywords(client, customerId, planAdGroupResource);
+                CreateKeywordPlanCampaignNegativeKeywords(client, customerId, planCampaignResource);
             }
             catch (GoogleAdsException e)
             {
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the KeywordPlanService.
             KeywordPlanServiceClient serviceClient = client.GetService(
-                Services.V3.KeywordPlanService);
+                Services.V4.KeywordPlanService);
 
             // Create a keyword plan for next quarter forecast.
             KeywordPlan keywordPlan = new KeywordPlan()
@@ -134,7 +134,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the KeywordPlanCampaignService.
             KeywordPlanCampaignServiceClient serviceClient = client.GetService(
-                Services.V3.KeywordPlanCampaignService);
+                Services.V4.KeywordPlanCampaignService);
 
             // Create a keyword plan campaign.
             KeywordPlanCampaign campaign = new KeywordPlanCampaign()
@@ -185,7 +185,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
         {
             // Get the KeywordPlanAdGroupService.
             KeywordPlanAdGroupServiceClient serviceClient = client.GetService(
-                Services.V3.KeywordPlanAdGroupService);
+                Services.V4.KeywordPlanAdGroupService);
 
             // Create the keyword plan ad group.
             KeywordPlanAdGroup adGroup = new KeywordPlanAdGroup()
@@ -218,15 +218,15 @@ namespace Google.Ads.GoogleAds.Examples.V3
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="planAdGroupResource">The resource name of the ad group under which the
         /// keyword is created.</param>
-        private static void CreateKeywordPlanKeywords(GoogleAdsClient client, long customerId,
-            string planAdGroupResource)
+        private static void CreateKeywordPlanAdGroupKeywords(GoogleAdsClient client,
+            long customerId, string planAdGroupResource)
         {
-            // Get the KeywordPlanKeywordService.
-            KeywordPlanKeywordServiceClient serviceClient = client.GetService(
-                Services.V3.KeywordPlanKeywordService);
+            // Get the KeywordPlanAdGroupKeywordService.
+            KeywordPlanAdGroupKeywordServiceClient serviceClient = client.GetService(
+                Services.V4.KeywordPlanAdGroupKeywordService);
 
-            // Create the keywords for keyword plan.
-            KeywordPlanKeyword keywordPlanKeyword1 = new KeywordPlanKeyword()
+            // Create the adgroup level keywords for keyword plan.
+            KeywordPlanAdGroupKeyword kpAdGroupKeyword1 = new KeywordPlanAdGroupKeyword()
             {
                 KeywordPlanAdGroup = planAdGroupResource,
                 CpcBidMicros = 2_000_000L,
@@ -234,7 +234,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 Text = "mars cruise"
             };
 
-            KeywordPlanKeyword keywordPlanKeyword2 = new KeywordPlanKeyword()
+            KeywordPlanAdGroupKeyword kpAdGroupKeyword2 = new KeywordPlanAdGroupKeyword()
             {
                 KeywordPlanAdGroup = planAdGroupResource,
                 CpcBidMicros = 1_500_000L,
@@ -242,7 +242,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 Text = "cheap cruise"
             };
 
-            KeywordPlanKeyword keywordPlanKeyword3 = new KeywordPlanKeyword()
+            KeywordPlanAdGroupKeyword kpAdGroupKeyword3 = new KeywordPlanAdGroupKeyword()
             {
                 KeywordPlanAdGroup = planAdGroupResource,
                 CpcBidMicros = 1_990_000L,
@@ -250,74 +250,75 @@ namespace Google.Ads.GoogleAds.Examples.V3
                 Text = "jupiter cruise"
             };
 
-            KeywordPlanKeyword[] keywordPlanKeywords = new KeywordPlanKeyword[]
+            KeywordPlanAdGroupKeyword[] kpAdGroupKeywords = new KeywordPlanAdGroupKeyword[]
             {
-                keywordPlanKeyword1,
-                keywordPlanKeyword2,
-                keywordPlanKeyword3
+                kpAdGroupKeyword1,
+                kpAdGroupKeyword2,
+                kpAdGroupKeyword3
             };
 
             // Create an operation for each plan keyword.
-            List<KeywordPlanKeywordOperation> operations =
-                new List<KeywordPlanKeywordOperation>();
+            List<KeywordPlanAdGroupKeywordOperation> operations =
+                new List<KeywordPlanAdGroupKeywordOperation>();
 
-            foreach (KeywordPlanKeyword keywordPlanKeyword in keywordPlanKeywords)
+            foreach (KeywordPlanAdGroupKeyword kpAdGroupKeyword in kpAdGroupKeywords)
             {
-                operations.Add(new KeywordPlanKeywordOperation
+                operations.Add(new KeywordPlanAdGroupKeywordOperation
                 {
-                    Create = keywordPlanKeyword
+                    Create = kpAdGroupKeyword
                 });
             }
 
             // Add the keywords.
-            MutateKeywordPlanKeywordsResponse response =
-                serviceClient.MutateKeywordPlanKeywords(customerId.ToString(), operations);
+            MutateKeywordPlanAdGroupKeywordsResponse response =
+                serviceClient.MutateKeywordPlanAdGroupKeywords(customerId.ToString(), operations);
 
             // Display the results.
-            foreach (MutateKeywordPlanKeywordResult plankeywordResult in response.Results)
+            foreach (MutateKeywordPlanAdGroupKeywordResult result in response.Results)
             {
                 Console.WriteLine(
-                    $"Created keyword for keyword plan: {plankeywordResult.ResourceName}.");
+                    $"Created ad group keyword for keyword plan: {result.ResourceName}.");
             }
             return;
         }
 
         /// <summary>
-        /// Creates negative keywords for the keyword plan.
+        /// Creates campaign negative keywords for the keyword plan.
         /// </summary>
         /// <param name="client">he Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="planCampaignResource">The resource name of the campaign under which the
-        /// keyword is created.</param>
-        private static void CreateKeywordPlanNegativeKeywords(GoogleAdsClient client,
+        /// negative keyword is created.</param>
+        private static void CreateKeywordPlanCampaignNegativeKeywords(GoogleAdsClient client,
             long customerId, string planCampaignResource)
         {
-            // Get the KeywordPlanNegativeKeywordService.
-            KeywordPlanNegativeKeywordServiceClient serviceClient = client.GetService(
-                Services.V3.KeywordPlanNegativeKeywordService);
+            // Get the KeywordPlanCampaignKeywordService.
+            KeywordPlanCampaignKeywordServiceClient service = client.GetService(
+                Services.V4.KeywordPlanCampaignKeywordService);
 
-            // Create the negative keyword for the keyword plan.
-            KeywordPlanNegativeKeyword keywordPlanNegativeKeyword = new KeywordPlanNegativeKeyword()
+            // Create the campaign negative keyword for the keyword plan.
+            KeywordPlanCampaignKeyword kpCampaignNegativeKeyword = new KeywordPlanCampaignKeyword()
             {
                 KeywordPlanCampaign = planCampaignResource,
                 MatchType = KeywordMatchType.Broad,
-                Text = "moon walk"
+                Text = "moon walk",
+                Negative = true
             };
 
-            KeywordPlanNegativeKeywordOperation operation = new KeywordPlanNegativeKeywordOperation
+            KeywordPlanCampaignKeywordOperation operation = new KeywordPlanCampaignKeywordOperation
             {
-                Create = keywordPlanNegativeKeyword
+                Create = kpCampaignNegativeKeyword
             };
 
-            // Add the negative keyword.
-            MutateKeywordPlanNegativeKeywordsResponse response =
-                serviceClient.MutateKeywordPlanNegativeKeywords(customerId.ToString(), 
-                    new KeywordPlanNegativeKeywordOperation[] { operation });
+            // Add the campaign negative keyword.
+            MutateKeywordPlanCampaignKeywordsResponse response =
+                service.MutateKeywordPlanCampaignKeywords(customerId.ToString(), 
+                    new KeywordPlanCampaignKeywordOperation[] { operation });
 
             // Display the result.
-            MutateKeywordPlanNegativeKeywordResult planNegativeKeywordResult = response.Results[0];
-            Console.WriteLine("Created negative keyword for keyword plan: " +
-                $"{planNegativeKeywordResult.ResourceName}.");
+            MutateKeywordPlanCampaignKeywordResult result = response.Results[0];
+            Console.WriteLine("Created campaign negative keyword for keyword plan: " +
+                $"{result.ResourceName}.");
             return;
         }
     }

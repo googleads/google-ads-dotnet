@@ -139,7 +139,7 @@ namespace Google.Ads.GoogleAds.V2.Errors
             return $"customers/{customerId}/campaignDrafts/{baseCampaignId}~{draftId}";
         }
 
-        public static string CampaignExperiments(long customerId, long campaignExperimentId)
+        public static string CampaignExperiment(long customerId, long campaignExperimentId)
         {
             return $"customers/{customerId}/campaignExperiments/{campaignExperimentId}";
         }
@@ -394,7 +394,7 @@ namespace Google.Ads.GoogleAds.V2.Errors
             return $"mobileDeviceConstants/{criterionId}";
         }
 
-        public static string MobileDeviceConstant(long customerId, long mutateJobId)
+        public static string MutateJob(long customerId, long mutateJobId)
         {
             return $"customers/{customerId}/mutateJobs/{mutateJobId}";
         }

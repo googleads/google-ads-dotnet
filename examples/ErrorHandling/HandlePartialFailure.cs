@@ -13,14 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V3.Errors;
-using Google.Ads.GoogleAds.V3.Resources;
-using Google.Ads.GoogleAds.V3.Services;
+using Google.Ads.GoogleAds.V4.Errors;
+using Google.Ads.GoogleAds.V4.Resources;
+using Google.Ads.GoogleAds.V4.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V3
+namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example demonstrates how to handle partial failures.
@@ -37,10 +36,11 @@ namespace Google.Ads.GoogleAds.Examples.V3
             Console.WriteLine(codeExample.Description);
             try
             {
-                long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
                 // The Google Ads customer ID for which the call is made.
                 long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                // ID of the campaign to which ad groups are added.
+                long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
 
                 codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
             }
@@ -166,7 +166,7 @@ namespace Google.Ads.GoogleAds.Examples.V3
             long customerId, long campaignId)
         {
             // Get the AdGroupServiceClient.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V3.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V4.AdGroupService);
 
             string validAdGroupName = "Valid AdGroup: " + ExampleUtilities.GetRandomString();
 
