@@ -31,6 +31,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
     public class AddKeywords : ExampleBase
     {
         /// <summary>
+        /// The default keyword text.
+        /// </summary>
+        private const string KEYWORD_TEXT = "mars cruise";
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
@@ -47,9 +52,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             // The new keyword text.
-            string keyword = "INSERT_KEYWORD_TEXT_HERE";
+            string keywordText = "INSERT_KEYWORD_TEXT_HERE";
 
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keyword);
+            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keywordText);
         }
 
         /// <summary>
@@ -69,9 +74,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">The ad group to which new keyword ia added.</param>
-        /// <param name="keyword">The new keyword text.</param>
-        public void Run(GoogleAdsClient client, long customerId, long adGroupId, string keyword)
+        /// <param name="keywordText">The new keyword text.</param>
+        public void Run(GoogleAdsClient client, long customerId, long adGroupId, string keywordText)
         {
+            if (string.IsNullOrEmpty(keywordText))
+            {
+                keywordText = KEYWORD_TEXT;
+            }
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
                 client.GetService(Services.V4.AdGroupCriterionService);
@@ -83,7 +92,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 Status = AdGroupCriterionStatus.Enabled,
                 Keyword = new KeywordInfo()
                 {
-                    Text = keyword,
+                    Text = keywordText,
                     MatchType = KeywordMatchType.Exact
                 }
             };
