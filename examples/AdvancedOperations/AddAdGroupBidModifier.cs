@@ -45,9 +45,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             // The value of the bid modifier to add.
-            double bidModifier = double.Parse("INSERT_BID_MODIFIER_HERE");
+            double bidModifierValue = double.Parse("INSERT_BID_MODIFIER_VALUE_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, bidModifier);
+            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, bidModifierValue);
         }
 
         /// <summary>
@@ -70,9 +70,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">ID of the ad group where the bid modifier will be added.
         /// </param>
-        /// <param name="bidModifier">The value of the bid modifier to add.</param>
+        /// <param name="bidModifierValue">The value of the bid modifier to add.</param>
         public void Run(GoogleAdsClient client, long customerId, long adGroupId,
-            double bidModifier)
+            double bidModifierValue)
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient adGroupBidModifierService =
@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             AdGroupBidModifier adGroupBidModifier = new AdGroupBidModifier()
             {
                 AdGroup = ResourceNames.AdGroup(customerId, adGroupId),
-                BidModifier = bidModifier,
+                BidModifier = bidModifierValue,
                 Device = new DeviceInfo()
                 {
                     Type = Device.Mobile

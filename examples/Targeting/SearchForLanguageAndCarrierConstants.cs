@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
     /// includes the specified keyword. Then it searches for all the available mobile carrier
     /// constants with a given country code.
     /// </summary>
-    public class SearchForTargetableLanguagesAndCarriers : ExampleBase
+    public class SearchForLanguageAndCarrierConstants : ExampleBase
     {
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -34,8 +34,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            SearchForTargetableLanguagesAndCarriers codeExample =
-                new SearchForTargetableLanguagesAndCarriers();
+            SearchForLanguageAndCarrierConstants codeExample =
+                new SearchForLanguageAndCarrierConstants();
             Console.WriteLine(codeExample.Description);
 
             // The Google Ads customer ID for which the call is made.

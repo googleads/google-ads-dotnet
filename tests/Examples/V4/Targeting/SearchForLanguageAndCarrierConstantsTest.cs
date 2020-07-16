@@ -18,11 +18,11 @@ using NUnit.Framework;
 namespace Google.Ads.GoogleAds.Tests.Examples.V4
 {
     /// <summary>
-    /// Tests the SearchForTargetableLanguagesAndCarriers code example.
+    /// Tests the SearchForLanguageAndCarrierConstants code example.
     /// </summary>
     [TestFixture]
     [Category("CodeExamples")]
-    internal class SearchForTargetableLanguagesAndCarriersTest : ExampleTestsBase
+    internal class SearchForLanguageAndCarrierConstantsTest : ExampleTestsBase
     {
         /// <summary>
         /// Inits this instance.
@@ -40,7 +40,7 @@ namespace Google.Ads.GoogleAds.Tests.Examples.V4
         {
             RunExample(delegate ()
             {
-                new SearchForTargetableLanguagesAndCarriers().Run(client, config.ClientCustomerId,
+                new SearchForLanguageAndCarrierConstants().Run(client, config.ClientCustomerId,
                     "eng", "US");
             });
         }

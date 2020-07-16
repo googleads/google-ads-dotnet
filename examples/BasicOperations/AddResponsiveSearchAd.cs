@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                         // optional; if no pinning is set, then headlines and descriptions will be
                         // rotated and the ones that perform best will be used more often.
                         new AdTextAsset() {
-                            Text = "Cruise to Mars #" + ExampleUtilities.GetRandomString(),
+                            Text = "Cruise to Mars #" + ExampleUtilities.GetShortRandomString(),
                             PinnedField = ServedAssetFieldType.Headline1
                         },
                         new AdTextAsset() { Text = "Best Space Cruise Line" },
