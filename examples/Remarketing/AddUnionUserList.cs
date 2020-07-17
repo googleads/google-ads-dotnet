@@ -43,7 +43,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // The IDs of the lists to be used for the new combination user list.
-            List<long> userListIds = new List<long>()
+            long[] userListIds =
             {
                 long.Parse("INSERT_USER_LIST_ID_HERE"),
                 long.Parse("INSERT_USER_LIST_ID_HERE")
@@ -66,7 +66,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="userListIds">The IDs of the lists to be used for the new combination user
         ///     list.</param>
-        public void Run(GoogleAdsClient client, long customerId, List<long> userListIds)
+        public void Run(GoogleAdsClient client, long customerId, long[] userListIds)
         {
             // Gets the UserListService client.
             UserListServiceClient userListServiceClient =
