@@ -53,11 +53,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             Console.WriteLine(codeExample.Description);
 
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+            long managerId = long.Parse("INSERT_MANAGER_ID_HERE");
+            long loginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
 
             try
             {
-                codeExample.Run(new GoogleAdsClient(), customerId);
+                codeExample.Run(new GoogleAdsClient(), managerId, loginCustomerId);
             }
             catch (GoogleAdsException adsException)
             {
@@ -73,13 +74,19 @@ namespace Google.Ads.GoogleAds.Examples.V4
         ///     Runs the code example.
         /// </summary>
         /// <param name="googleAdsClient">The Google Ads client instance.</param>
-        /// <param name="customerId">
-        ///     Optional manager account ID. If none provided, this method will
-        ///     instead list the accounts accessible from the authenticated Google Ads
-        ///     account.
+        /// <param name="managerId">Optional manager account ID. If none provided, this method
+        /// will instead list the accounts accessible from the authenticated Google Ads account.
         /// </param>
-        public void Run(GoogleAdsClient googleAdsClient, long? customerId = null)
+        /// <param name="loginCustomerId">The login customer ID used to create the GoogleAdsClient.
+        /// </param>
+        public void Run(GoogleAdsClient googleAdsClient, long? managerId = null,
+            long? loginCustomerId = null)
         {
+            if (loginCustomerId.HasValue)
+            {
+                googleAdsClient.Config.LoginCustomerId = loginCustomerId.Value.ToString();
+            }
+
             GoogleAdsServiceClient googleAdsServiceClient =
                 googleAdsClient.GetService(Services.V4.GoogleAdsService);
 
@@ -92,9 +99,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // If a Manager ID was provided in the customerId parameter, it will be the only ID
             // in the list. Otherwise, we will issue a request for all customers accessible by
             // this authenticated Google account.
-            if (customerId.HasValue)
+            if (managerId.HasValue)
             {
-                seedCustomerIds.Add(customerId.Value);
+                seedCustomerIds.Add(managerId.Value);
             }
             else
             {
@@ -140,10 +147,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
                 while (unprocessedCustomerIds.Count > 0)
                 {
-                    customerId = unprocessedCustomerIds.Dequeue();
+                    managerId = unprocessedCustomerIds.Dequeue();
                     PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> response =
                         googleAdsServiceClient.Search(
-                            customerId.ToString(),
+                            managerId.ToString(),
                             query,
                             pageSize: PAGE_SIZE
                         );
@@ -166,11 +173,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
                         // the above query will be run against them to create a Dictionary of
                         // managers mapped to their child accounts for printing the hierarchy
                         // afterwards.
-                        if (!customerIdsToChildAccounts.ContainsKey(customerId.Value))
-                            customerIdsToChildAccounts.Add(customerId.Value,
+                        if (!customerIdsToChildAccounts.ContainsKey(managerId.Value))
+                            customerIdsToChildAccounts.Add(managerId.Value,
                                 new List<CustomerClient>());
 
-                        customerIdsToChildAccounts[customerId.Value].Add(customerClient);
+                        customerIdsToChildAccounts[managerId.Value].Add(customerClient);
 
                         if (customerClient.Manager.HasValue && customerClient.Manager.Value)
                             // A customer can be managed by multiple managers, so to prevent
@@ -193,7 +200,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 {
                     Console.WriteLine(
                         "Customer ID {0} is likely a test account, so its customer client " +
-                        " information cannot be retrieved.", customerId);
+                        " information cannot be retrieved.", managerId);
                 }
             }
         }

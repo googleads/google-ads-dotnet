@@ -110,7 +110,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // Create the budget.
             CampaignBudget campaignBudget = new CampaignBudget()
             {
-                Name = "",
+                Name = "Interplanetary Cruise Budget #" + ExampleUtilities.GetRandomString(),
                 AmountMicros = 3_000_000,
                 DeliveryMethod = BudgetDeliveryMethod.Standard
             };
