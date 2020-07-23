@@ -58,8 +58,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for the conversion action is
-        /// added.</param>
+        /// <param name="customerId">The Google Ads customer ID to which the new user list will be
+        ///     added.</param>
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Gets the UserListService.
@@ -70,7 +70,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             UserListRuleItemInfo rule1 = BuildVisitedSiteRuleInfo("example.com/section1");
             UserListRuleItemInfo rule2 = BuildVisitedSiteRuleInfo("example.com/section2");
 
-            // Creates the containers for the two new rules.
+            // Combine the two rule items into a UserListRuleItemGroupInfo object so Google Ads will
+            // AND their rules together. To instead OR the rules together, each rule should be
+            // placed in its own rule item group.
             UserListRuleItemGroupInfo userListRuleItemGroupInfo = new UserListRuleItemGroupInfo();
             userListRuleItemGroupInfo.RuleItems.Add(rule1);
             userListRuleItemGroupInfo.RuleItems.Add(rule2);
@@ -136,7 +138,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Creates and returns a UserListRuleItemInfo object targeting a visit to a specified URL.
         /// </summary>
-        /// <param name="url">The URL at which the rule will be targeted.</param>
+        /// <param name="url">The URL at which the rule will target users.</param>
         /// <returns>A populated UserListRuleItemInfo object.</returns>
         private UserListRuleItemInfo BuildVisitedSiteRuleInfo(string url)
         {
