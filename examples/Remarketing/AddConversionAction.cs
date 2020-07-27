@@ -59,7 +59,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for the conversion action is
+        /// <param name="customerId">The Google Ads customer ID for which the conversion action is
         /// added.</param>
         public void Run(GoogleAdsClient client, long customerId)
         {
