@@ -23,7 +23,7 @@ using Google.Ads.GoogleAds.V4.Services;
 namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
-    /// Adds a geo target to a extension feed item for targeting.
+    /// Adds a geo target to an extension feed item for targeting.
     /// </summary>
     public class AddGeoTarget : ExampleBase
     {
@@ -56,7 +56,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// </summary>
         public override string Description
         {
-            get { return "Adds a geo target to a extension feed item for targeting."; }
+            get { return "Adds a geo target to an extension feed item for targeting."; }
         }
 
         /// <summary>
