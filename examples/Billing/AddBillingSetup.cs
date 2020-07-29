@@ -24,9 +24,11 @@ using static Google.Ads.GoogleAds.V4.Enums.TimeTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
-    /// This example creates a billing setup for a customer. A billing setup is a link between
-    /// payment account and customer. The new billing setup can either reuse an existing payments
+    /// This example creates a billing setup for a customer. A billing setup is a link between a
+    /// payments account and a customer. The new billing setup can either reuse an existing payments
     /// account, or create a new payments account with a given payments profile.
+    /// Billing setups are applicable for clients on monthly invoicing only. See here for details
+    /// about applying for monthly invoicing: https://support.google.com/google-ads/answer/2375377
     /// In the case of consolidated billing, a payments account is linked to the manager account and
     /// is linked to a customer account via a billing setup.
     /// </summary>
@@ -61,18 +63,16 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This example creates a billing setup for a customer. A billing setup is " +
-                       "a link between payment account and customer. The new billing setup can " +
-                       "either reuse an existing payments account, or create a new payments " +
-                       "account with a given payments profile.\n" +
-                       "In the case of consolidated billing, a payments account is linked to the " +
-                       "manager account and is linked to a customer account via a billing setup.";
-            }
-        }
+        public override string Description =>
+            "This example creates a billing setup for a customer. A billing setup is a link " +
+            "between a payments account and a customer. The new billing setup can either reuse " +
+            "an existing payments account, or create a new payments account with a given " +
+            "payments profile.\n" +
+            "Billing setups are applicable for clients on monthly invoicing only. See here for " +
+            "details about applying for monthly invoicing: " +
+            "https://support.google.com/google-ads/answer/2375377\n" +
+            "In the case of consolidated billing, a payments account is linked to the " +
+            "manager account and is linked to a customer account via a billing setup.";
 
         /// <summary>
         /// Runs the code example. Either a payments account ID or a payments profile ID
@@ -88,28 +88,29 @@ namespace Google.Ads.GoogleAds.Examples.V4
         public void Run(GoogleAdsClient client, long customerId, string paymentsAccountId,
             string paymentsProfileId)
         {
-            // Get the GoogleAdsServiceClient.
+            // Gets the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V4.GoogleAdsService);
 
-            // Get the BillingSetupServiceClient.
+            // Gets the BillingSetupServiceClient.
             BillingSetupServiceClient billingSetupServiceClient =
                 client.GetService(Services.V4.BillingSetupService);
 
             try
             {
-                // Create a new billing setup.
+                // Constructs a new billing setup.
                 BillingSetup billingSetup =
                     CreateBillingSetup(customerId, paymentsAccountId, paymentsProfileId);
 
-                SetBillingSetupStartDateTime(customerId, googleAdsService, billingSetup);
+                SetBillingSetupStartDateTime(googleAdsService, customerId, billingSetup);
 
-                // Create the billing setup operation and send it to the BillingSetupService.
+                // Creates the billing setup operation.
                 BillingSetupOperation operation = new BillingSetupOperation()
                 {
                     Create = billingSetup
                 };
 
+                // Issues a mutate request to add the billing setup.
                 MutateBillingSetupResponse billingResponse =
                     billingSetupServiceClient.MutateBillingSetup(customerId.ToString(), operation);
 
@@ -123,6 +124,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 Console.WriteLine($"Failure: {e.Failure}");
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Trace: {e.StackTrace}");
             }
         }
 
@@ -143,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             BillingSetup billingSetup = new BillingSetup();
 
-            // Set the appropriate payments account field.
+            // Sets the appropriate payments account field.
             if (paymentsAccountId != null)
             {
                 // If a payments account id has been provided, set PaymentsAccount to its resource
@@ -172,20 +179,22 @@ namespace Google.Ads.GoogleAds.Examples.V4
         }
 
         /// <summary>
-        /// Sets the starting date time for the new billing setup. Queries the customer's account
-        /// to see if there are any approved billing setups. If there are any, the new billing setup
-        /// may have a starting date time of any day in the future. If not, the billing setup must
-        /// be set to start immediately.
+        /// Sets the starting and ending date times for the new billing setup. Queries the
+        /// customer's account to see if there are any approved billing setups. If there are any,
+        /// the new billing setup starting date time is set to one day after the last. If not, the
+        /// billing setup is set to start immediately. The ending date is set to one day after the
+        /// starting date time.
         /// </summary>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="googleAdsService">The Google Ads service client.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="billingSetup">The instance of BillingSetup whose starting date time will
         ///     be set.</param>
-        private void SetBillingSetupStartDateTime(long customerId, GoogleAdsServiceClient
-            googleAdsService, BillingSetup billingSetup)
+        private void SetBillingSetupStartDateTime(GoogleAdsServiceClient googleAdsService,
+            long customerId, BillingSetup billingSetup)
         {
-            // Query to see if there are any existing approved billing setups. See
-            // GetBillingSetup.cs for a more detailed example of requesting billing setup
+            // The query to search existing approved billing setups in the end date time descending
+            // order.
+            // See GetBillingSetup.cs for a more detailed example of requesting billing setup
             // information.
             string query = @"
                 SELECT billing_setup.end_date_time
@@ -193,33 +202,39 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 WHERE billing_setup.status = 'APPROVED'
                 ORDER BY billing_setup.end_date_time DESC";
 
+            // Issues a search request.
             PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchResponse =
                 googleAdsService.Search(customerId.ToString(), query);
 
             if (searchResponse.Any())
             {
-                // If there are any existing approved billing setups, the new billing setup can
-                // start immediately after the last.
+                // Retrieves the ending date time of the last billing setup.
                 string lastEndingDateTimeString = searchResponse.First().BillingSetup.EndDateTime;
 
-                // Check if the existing billing setup has no end date (i.e., is set to run
-                // indefinitely).
+                // A null ending date time indicates that the current billing setup is set to run
+                // indefinitely. Billing setups cannot overlap, so throw an exception in this case.
                 if (lastEndingDateTimeString == null)
                 {
-                    throw new Exception("Cannot set ending date time for the new " +
-                                        "billing setup; the latest existing billing setup is set " +
-                                        "to run indefinitely.");
+                    throw new Exception("Cannot set starting and ending date times for " +
+                                        "the new billing setup; the latest existing billing " +
+                                        "setup is set to run indefinitely.");
                 }
 
                 DateTime lastEndingDateTime = DateTime.Parse(lastEndingDateTimeString);
+
+                // Sets the new billing setup to start one day after the ending date time.
                 billingSetup.StartDateTime = lastEndingDateTime.AddDays(1).ToString("yyyy-MM-dd");
+
+                // Sets the new billing setup to end one day after the starting date time.
                 billingSetup.EndDateTime = lastEndingDateTime.AddDays(2).ToString("yyyy-MM-dd");
             }
             else
             {
-                // If there are no existing approved billing setups, the only acceptable start time
-                // is TimeType.Now.
+                // Otherwise, the only acceptable start time is TimeType.Now.
                 billingSetup.StartTimeType = TimeType.Now;
+
+                // Sets the new billing setup to end tomorrow.
+                billingSetup.EndDateTime = DateTime.Today.AddDays(1).ToString("yyyy-MM-dd");
             }
         }
     }
