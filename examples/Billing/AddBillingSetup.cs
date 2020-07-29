@@ -24,8 +24,8 @@ using static Google.Ads.GoogleAds.V4.Enums.TimeTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
-    /// This example creates a billing setup for a customer. A billing setup is a link between
-    /// payment account and customer. The new billing setup can either reuse an existing payments
+    /// This example creates a billing setup for a customer. A billing setup is a link between a
+    /// payments account and a customer. The new billing setup can either reuse an existing payments
     /// account, or create a new payments account with a given payments profile.
     /// Billing setups are applicable for clients on monthly invoicing only. See here for details
     /// about applying for monthly invoicing: https://support.google.com/google-ads/answer/2375377
@@ -64,12 +64,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This example creates a billing setup for a customer. A billing setup is " +
-            "a link between payment account and customer. The new billing setup can " +
-            "either reuse an existing payments account, or create a new payments " +
-            "account with a given payments profile.\n" +
+            "This example creates a billing setup for a customer. A billing setup is a link " +
+            "between a payments account and a customer. The new billing setup can either reuse " +
+            "an existing payments account, or create a new payments account with a given " +
+            "payments profile.\n" +
             "Billing setups are applicable for clients on monthly invoicing only. See here for " +
-            "details about applying for monthly invoicing: https://support.google.com/google-ads/answer/2375377\n" +
+            "details about applying for monthly invoicing: " +
+            "https://support.google.com/google-ads/answer/2375377\n" +
             "In the case of consolidated billing, a payments account is linked to the " +
             "manager account and is linked to a customer account via a billing setup.";
 
@@ -210,13 +211,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 // Retrieves the ending date time of the last billing setup.
                 string lastEndingDateTimeString = searchResponse.First().BillingSetup.EndDateTime;
 
-                // If the ending date is null then it is set to run indefinitely. Creating a new
-                // billing setup can impact it.
+                // A null ending date time indicates that the current billing setup is set to run
+                // indefinitely. Billing setups cannot overlap, so throw an exception in this case.
                 if (lastEndingDateTimeString == null)
                 {
-                    throw new Exception("Cannot set ending date time for the new " +
-                                        "billing setup; the latest existing billing setup is set " +
-                                        "to run indefinitely.");
+                    throw new Exception("Cannot set starting and ending date times for " +
+                                        "the new billing setup; the latest existing billing " +
+                                        "setup is set to run indefinitely.");
                 }
 
                 DateTime lastEndingDateTime = DateTime.Parse(lastEndingDateTimeString);
@@ -231,6 +232,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             {
                 // Otherwise, the only acceptable start time is TimeType.Now.
                 billingSetup.StartTimeType = TimeType.Now;
+
+                // Sets the new billing setup to end tomorrow.
+                billingSetup.EndDateTime = DateTime.Today.AddDays(1).ToString("yyyy-MM-dd");
             }
         }
     }
