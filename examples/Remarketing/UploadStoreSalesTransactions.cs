@@ -69,12 +69,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
             string bridgeMapVersionId = "INSERT_BRIDGE_MAP_VERSION_ID_HERE";
             long? partnerId = long.Parse("INSERT_PARTNER_ID_HERE");
 
-            // OPTIONAL: Only configure these paramters if you are uploading using custom key and custom value.
-            string customKey = "INSERT_CUSTOM_KEY_HERE";
-            string customValue = "INSERT_CUSTOM_VALUE_HERE";
+            // OPTIONAL: If uploading data with custom key and values, also specify the following value if not passed as an arg:
+            string customKey = "INSERT_CUSTOM_KEY_HERE";     
 
             codeExample.Run(new GoogleAdsClient(), customerId, conversionActionId,
-                customKey, customValue,
+                customKey,
                 offlineUserDataJobType: offlineUserDataJobType,
                 externalId: externalId,
                 advertiserUploadDateTime: advertiserUploadDateTime,
@@ -101,8 +100,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
-        /// <param name="customKey">Optional. The custom key associated with the custom key/custom value.</param>
-        /// <param name="customValue">Optinal. The custom value associated with the custom key/custom value.</param>
+        /// <param name="customKey">Optional: If uploading data with custom key and values, also specify this value.</param>
         /// <param name="offlineUserDataJobType">The type of user data in the job (first or third
         ///     party). If you have an official store sales partnership with Google, use
         ///     StoreSalesUploadThirdParty. Otherwise, use StoreSalesUploadFirstParty or
@@ -116,7 +114,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="partnerId">ID of the third party partner. Only required if uploading third
         ///     party data.</param>
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
-            string customKey = null, string customValue = null,
+            string customKey = null,
             OfflineUserDataJobType offlineUserDataJobType =
                 OfflineUserDataJobType.StoreSalesUploadFirstParty,
             long? externalId = null, string advertiserUploadDateTime = null,
@@ -144,7 +142,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
                 // Adds transactions to the job.                
                 AddTransactionsToOfflineUserDataJob(offlineUserDataJobServiceClient, customerId,
-                    offlineUserDataJobResourceName, conversionActionId, customValue);
+                    offlineUserDataJobResourceName, conversionActionId);
 
                 // Issues an asynchronous request to run the offline user data job.
                 offlineUserDataJobServiceClient.RunOfflineUserDataJobAsync(
@@ -186,7 +184,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         ///     required if uploading third party data.</param>
         /// <param name="partnerId">ID of the third party partner. Only required if uploading third
         ///     party data.</param>
-        /// <param name="customKey">Optional. Use for uploading custom key/custom value only.</param>
+        /// <param name="customKey">Optional: If uploading data with custom key and values, also specify this value.</param>
         /// <returns>The resource name of the created job.</returns>
         private string CreateOfflineUserDataJob(
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient, long customerId,
@@ -216,6 +214,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 // that you are uploading all 70 of the transactions that can be identified by an
                 // email address or phone number.
                 TransactionUploadFraction = 1.0,
+                // OPTIONAL: If uploading data with custom key and values, also specify the following value:
                 CustomKey = customKey
             };
 
@@ -293,16 +292,14 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="offlineUserDataJobResourceName">The resource name of the job to which to
         ///     add transactions.</param>
-        /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
-        /// <param name="customValue">Optional. The custom value associated with the custom key/custom value.</param>
+        /// <param name="conversionActionId">The ID of a store sales conversion action.</param> 
         private void AddTransactionsToOfflineUserDataJob(
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient, long customerId,
-            string offlineUserDataJobResourceName, long conversionActionId,
-            string customValue = null)
+            string offlineUserDataJobResourceName, long conversionActionId)
         {
             // Constructions an operation for each transaction.
             List<OfflineUserDataJobOperation> userDataJobOperations =
-                BuildOfflineUserDataJobOperations(customerId, conversionActionId, customValue);
+                BuildOfflineUserDataJobOperations(customerId, conversionActionId);
 
             // Issues a request with partial failure enabled to add the operations to the offline
             // user data job.
@@ -336,11 +333,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Creates a list of offline user data job operations for sample transactions.
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
-        /// <param name="customValue">Optional. The custom value associated with the custom key/custom value.</param>
+        /// <param name="conversionActionId">The ID of a store sales conversion action.</param>  
         /// <returns>A list of operations.</returns>
         private List<OfflineUserDataJobOperation> BuildOfflineUserDataJobOperations(long customerId,
-            long conversionActionId, string customValue = null)
+            long conversionActionId)
         {
             // Create the first transaction for upload based on an email address and state.
             UserData userDataWithEmailAddress = new UserData()
@@ -362,7 +358,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 },
                 TransactionAttribute = new TransactionAttribute()
                 {
-                    CustomValue = customValue,
+                    // OPTIONAL: If uploading data with custom key and values, also specify the following value:
+                    // CustomValue = "Painting",              
                     ConversionAction =
                         ResourceNames.ConversionAction(customerId, conversionActionId),
                     CurrencyCode = "USD",

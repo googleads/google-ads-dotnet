@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <!-- nupkg properties -->
   <PropertyGroup>
     <Title>Google Ads API Dotnet Client Library</Title>
@@ -72,6 +72,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Target Name="CopyAppConfig" BeforeTargets="pack;Build">
     <Copy SourceFiles="App.config" DestinationFiles="app.config.transform" />

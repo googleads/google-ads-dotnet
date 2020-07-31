@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Google.Ads.GoogleAds.Examples": {
+      "commandName": "Project",
+      "commandLineArgs": "V4.UploadStoreSalesTransactions --customerId=2056797946 --conversionActionId=452161359 --offlineUserDataJobType=2 --externalId=50000000033"
+    }
+  }
+}

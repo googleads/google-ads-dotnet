@@ -40,8 +40,8 @@
     <!-- Provide the OAuth2 client ID and secret. See
          https://developers.google.com/google-ads/api/docs/oauth/cloud-project for instructions.
       -->
-    <add key="OAuth2ClientId" value="562116674373-alp64md62l64gh9eoi82sbtl8r1fivol.apps.googleusercontent.com"/>
-    <add key="OAuth2ClientSecret" value="z1bYbwT9uY6c3uQGXWXlDSoT"/>
+    <add key="OAuth2ClientId" value="703808809606-71omei2suoucqa1935a0n8ud3vsemca0.apps.googleusercontent.com"/>
+    <add key="OAuth2ClientSecret" value="L6X0Ofr0C56syOkMikcS69br"/>
 
     <!-- The following OAuth2 settings are optional. -->
 
@@ -61,8 +61,8 @@
            (2) Installed application: https://github.com/googleads/google-ads-dotnet/wiki/API-access-using-own-credentials-(installed-application-flow)
       -->
 
-    <add key="OAuth2RefreshToken" value="1//06uunyC2XeMUVCgYIARAAGAYSNwF-L9IrdSXWgEI_38YJCNwliwXlhCDqxuVFF4wJDgAtma8TXCNQNKvVRL2pXY7lryumVY6o0AY"/>
-    <add key="LoginCustomerId" value="2056797946"/>
+    <add key="OAuth2RefreshToken" value="1//06Klsc_xInBgzCgYIARAAGAYSNwF-L9IrZrPp1zU1frolexkF3G57rvb5YCB-8gKfwCvRsiDrlYOch15L2030C5vdWfjOFDvS5OE"/>
+    <add key="LoginCustomerId" value="6345692544"/>
     <!-- Optional: Specify an OAuth2 redirect url if you are building a
            web application and implementing OAuth2 web flow in your application.
       -->
