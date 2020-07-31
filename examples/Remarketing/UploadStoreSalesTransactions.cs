@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             string bridgeMapVersionId = "INSERT_BRIDGE_MAP_VERSION_ID_HERE";
             long? partnerId = long.Parse("INSERT_PARTNER_ID_HERE");
 
-            // OPTIONAL: Only configure these paramters if you are uploading using KVP.
+            // OPTIONAL: Only configure these paramters if you are uploading using custom key and custom value.
             string customKey = "INSERT_CUSTOM_KEY_HERE";
             string customValue = "INSERT_CUSTOM_VALUE_HERE";
 
@@ -101,8 +101,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
-        /// <param name="customKey">The custom key associated with the KVP. Only required if using KVP.</param>
-        /// <param name="customValue">The custom value associated with the KVP. Only required if using KVP.</param>
+        /// <param name="customKey">Optional. The custom key associated with the custom key/custom value.</param>
+        /// <param name="customValue">Optinal. The custom value associated with the custom key/custom value.</param>
         /// <param name="offlineUserDataJobType">The type of user data in the job (first or third
         ///     party). If you have an official store sales partnership with Google, use
         ///     StoreSalesUploadThirdParty. Otherwise, use StoreSalesUploadFirstParty or
@@ -186,7 +186,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         ///     required if uploading third party data.</param>
         /// <param name="partnerId">ID of the third party partner. Only required if uploading third
         ///     party data.</param>
-        /// <param name="customKey">Optional. Use for KVP only.</param>
+        /// <param name="customKey">Optional. Use for uploading custom key/custom value only.</param>
         /// <returns>The resource name of the created job.</returns>
         private string CreateOfflineUserDataJob(
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient, long customerId,
@@ -215,7 +215,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 // Continuing the example above for loyalty fraction, a value of 1.0 here indicates
                 // that you are uploading all 70 of the transactions that can be identified by an
                 // email address or phone number.
-                TransactionUploadFraction = 1.0,          
+                TransactionUploadFraction = 1.0,
                 CustomKey = customKey
             };
 
@@ -294,7 +294,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="offlineUserDataJobResourceName">The resource name of the job to which to
         ///     add transactions.</param>
         /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
-        /// <param name="customValue">The custom value associated with the KVP. Optional for KVP only.</param>
+        /// <param name="customValue">Optional. The custom value associated with the custom key/custom value.</param>
         private void AddTransactionsToOfflineUserDataJob(
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient, long customerId,
             string offlineUserDataJobResourceName, long conversionActionId,
@@ -311,7 +311,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 {
                     EnablePartialFailure = true,
                     ResourceName = offlineUserDataJobResourceName,
-                    Operations = {userDataJobOperations}
+                    Operations = { userDataJobOperations }
                 });
 
             // Prints the status message if any partial failure error is returned.
@@ -337,7 +337,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
-        /// <param name="customValue">The custom value associated with the KVP. Option for KVP only.</param>
+        /// <param name="customValue">Optional. The custom value associated with the custom key/custom value.</param>
         /// <returns>A list of operations.</returns>
         private List<OfflineUserDataJobOperation> BuildOfflineUserDataJobOperations(long customerId,
             long conversionActionId, string customValue = null)
