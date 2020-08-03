@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
     /// This code example creates a combination user list containing users that are present on any
     /// one of the provided user lists.
     /// </summary>
-    public class AddUnionUserList : ExampleBase
+    public class AddLogicalUserList : ExampleBase
     {
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -36,7 +36,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            AddUnionUserList codeExample = new AddUnionUserList();
+            AddLogicalUserList codeExample = new AddLogicalUserList();
             Console.WriteLine(codeExample.Description);
 
             // The Google Ads customer ID for which the call is made.
