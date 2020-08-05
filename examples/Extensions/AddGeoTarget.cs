@@ -46,7 +46,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // Geo target constant ID to add to the extension feed item.
             // A list of country codes can be referenced here:
             // https://developers.google.com/adwords/api/docs/appendix/geotargeting
-            long geoTargetConstantId = 2840; // US
+            long? geoTargetConstantId = 2840; // USA
 
             codeExample.Run(new GoogleAdsClient(), customerId, feedItemId, geoTargetConstantId);
         }
@@ -54,10 +54,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get { return "Adds a geo target to an extension feed item for targeting."; }
-        }
+        public override string Description => "Adds a geo target to an extension feed item for " +
+                                              "targeting.";
 
         /// <summary>
         /// Runs the code example.
@@ -66,20 +64,26 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="feedItemId">The feed item ID.</param>
         /// <param name="geoTargetConstantId">Geo target constant ID to add to the extension
-        ///     feed item.</param>
+        ///     feed item. Reverts to the United States (2840) if no value passed.</param>
         public void Run(GoogleAdsClient client, long customerId, long feedItemId,
-            long geoTargetConstantId)
+            long? geoTargetConstantId)
         {
             // Get the ExtensionFeedItemServiceClient.
             ExtensionFeedItemServiceClient extensionFeedItemServiceClient =
                 client.GetService(Services.V4.ExtensionFeedItemService);
+
+            // Apply the default geo target constant ID (USA) if none was passed to the function.
+            if (!geoTargetConstantId.HasValue)
+            {
+                geoTargetConstantId = 2840L;
+            }
 
             // Creates an extension feed item using the specified feed item ID and geo target
             // constant ID for targeting.
             ExtensionFeedItem extensionFeedItem = new ExtensionFeedItem()
             {
                 ResourceName = ResourceNames.ExtensionFeedItem(customerId, feedItemId),
-                TargetedGeoTargetConstant = ResourceNames.GeoTargetConstant(geoTargetConstantId)
+                TargetedGeoTargetConstant = ResourceNames.GeoTargetConstant(geoTargetConstantId.Value)
             };
 
             // Constructs an operation that will update the extension feed item, using the
