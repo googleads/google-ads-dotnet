@@ -30,15 +30,33 @@ namespace Google.Ads.GoogleAds.Examples
         }
 
         /// <summary>
-        /// Gets the name of the code example.
+        /// Gets the name of the code example, including the version name. E.g. V5.GetCampaigns.
         /// </summary>
-        public virtual string Name
+        public virtual string VersionedName
         {
             get
             {
                 Regex myRegex = new Regex(@"V\d+\..*", RegexOptions.IgnoreCase);
                 Match m = myRegex.Match(this.GetType().FullName);
                 return m.Success ? m.Value : "";
+            }
+        }
+
+        /// <summary>
+        /// Gets the name of the code example, without the version name. E.g. GetCampaigns.
+        /// </summary>
+        public virtual string Name
+        {
+            get
+            {
+                Regex myRegex = new Regex(@"(.*)\.(V\d+)\.(.*)", RegexOptions.IgnoreCase);
+                Match m = myRegex.Match(this.GetType().FullName);
+                // m.Groups always has 1 element. If the match was a success, the zeroth element
+                // has the whole matched string, and its success is set to true. If the match was
+                // a failure, then the zeroth element has an empty string, and its success is set
+                // to false. See
+                // https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match.groups
+                return m.Groups[0].Success? m.Groups[3].Value : "";
             }
         }
     }
