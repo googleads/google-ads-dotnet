@@ -51,6 +51,17 @@ namespace Google.Ads.GoogleAds.Examples
                     if (type.IsSubclassOf(typeof(ExampleBase)) && !typesToExclude.Contains(type))
                     {
                         ExampleBase example = (ExampleBase) Activator.CreateInstance(type);
+                        // Support both versioned and unversioned names.
+                        // E.g. You can run GetCampaigns example by either using V4.GetCampaigns
+                        // or GetCampaigns.
+                        codeExampleMap.Add(example.VersionedName, example);
+                        if (codeExampleMap.ContainsKey(example.Name))
+                        {
+                            Console.WriteLine($"Multiple versions of the code example" +
+                                $" '{example.Name} was found. Using {example.Name} in command " +
+                                $"line will now run {example.VersionedName}. To run a specific" +
+                                $"version, use the example name with a version prefix.");
+                        }
                         codeExampleMap.Add(example.Name, example);
                     }
                 }
