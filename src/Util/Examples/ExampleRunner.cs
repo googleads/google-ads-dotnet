@@ -99,9 +99,30 @@ namespace Google.Ads.GoogleAds.Examples
         {
             ExampleBase codeExample = null;
 
-            if (!codeExampleMap.TryGetValue(exampleName, out codeExample))
+            string[] splits = exampleName.Split('.');
+            string exampleNameWithoutVersion = null;
+            if (splits.Length == 2)
             {
-                throw new KeyNotFoundException($"Example not found: {codeExample}");
+                exampleNameWithoutVersion = splits[1];
+            }
+
+            if (codeExampleMap.ContainsKey(exampleName))
+            {
+                codeExample = codeExampleMap[exampleName];
+            }
+            else if (!string.IsNullOrEmpty(exampleNameWithoutVersion) &&
+                codeExampleMap.ContainsKey(exampleNameWithoutVersion))
+            {
+                codeExample = codeExampleMap[exampleNameWithoutVersion];
+            }
+
+            if (codeExample != null)
+            {
+                Console.WriteLine($"Requested: '{exampleName}', Loaded: '{codeExample.VersionedName}'.");
+            }
+            else
+            {
+                throw new Exception($"Code example not found: '{exampleName}'.");
             }
 
             Console.WriteLine(codeExample.Description);
