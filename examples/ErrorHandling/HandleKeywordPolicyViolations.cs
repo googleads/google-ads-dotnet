@@ -37,6 +37,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
     public class HandleKeywordPolicyViolations : ExampleBase
     {
         /// <summary>
+        /// The default keyword to be used if keyword is not provided.
+        /// </summary>
+        private const string DEFAULT_KEYWORD = "medication";
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
@@ -99,6 +104,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
             AdGroupCriterionServiceClient service = client.GetService(
                 Services.V4.AdGroupCriterionService);
 
+            if (string.IsNullOrEmpty(keywordText))
+            {
+                keywordText = DEFAULT_KEYWORD;
+            }
             // Configures the keyword text and match type settings.
             KeywordInfo keywordInfo = new KeywordInfo()
             {

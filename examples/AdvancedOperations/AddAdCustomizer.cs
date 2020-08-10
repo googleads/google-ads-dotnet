@@ -79,7 +79,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             AdGroupBidModifierServiceClient adGroupBidModifierService =
                 client.GetService(Services.V4.AdGroupBidModifierService);
 
-            string feedName = "Ad Customizer example feed " + ExampleUtilities.GetRandomString();
+            string feedName = "Ad_Customizer_example_feed_" + ExampleUtilities.GetShortRandomString();
 
             try
             {
