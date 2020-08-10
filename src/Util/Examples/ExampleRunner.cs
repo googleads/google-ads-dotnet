@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.Examples
                     {
                         ExampleBase example = (ExampleBase) Activator.CreateInstance(type);
                         // Support both versioned and unversioned names.
-                        // E.g. You can run GetCampaigns example by either using V5.GetCampaigns
+                        // E.g. You can run GetCampaigns example by either using V4.GetCampaigns
                         // or GetCampaigns.
                         codeExampleMap.Add(example.VersionedName, example);
                         if (codeExampleMap.ContainsKey(example.Name))
