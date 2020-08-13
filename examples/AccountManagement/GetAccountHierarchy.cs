@@ -74,12 +74,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
         ///     Runs the code example.
         /// </summary>
         /// <param name="googleAdsClient">The Google Ads client instance.</param>
-        /// <param name="managerId">Optional manager account ID. If none provided, this method
+        /// <param name="managerCustomerId">Optional manager account ID. If none provided, this method
         /// will instead list the accounts accessible from the authenticated Google Ads account.
         /// </param>
         /// <param name="loginCustomerId">The login customer ID used to create the GoogleAdsClient.
         /// </param>
-        public void Run(GoogleAdsClient googleAdsClient, long? managerId = null,
+        public void Run(GoogleAdsClient googleAdsClient, long? managerCustomerId = null,
             long? loginCustomerId = null)
         {
             if (loginCustomerId.HasValue)
@@ -99,9 +99,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // If a Manager ID was provided in the customerId parameter, it will be the only ID
             // in the list. Otherwise, we will issue a request for all customers accessible by
             // this authenticated Google account.
-            if (managerId.HasValue)
+            if (managerCustomerId.HasValue)
             {
-                seedCustomerIds.Add(managerId.Value);
+                seedCustomerIds.Add(managerCustomerId.Value);
             }
             else
             {
@@ -147,10 +147,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
                 while (unprocessedCustomerIds.Count > 0)
                 {
-                    managerId = unprocessedCustomerIds.Dequeue();
+                    managerCustomerId = unprocessedCustomerIds.Dequeue();
                     PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> response =
                         googleAdsServiceClient.Search(
-                            managerId.ToString(),
+                            managerCustomerId.ToString(),
                             query,
                             pageSize: PAGE_SIZE
                         );
@@ -173,11 +173,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
                         // the above query will be run against them to create a Dictionary of
                         // managers mapped to their child accounts for printing the hierarchy
                         // afterwards.
-                        if (!customerIdsToChildAccounts.ContainsKey(managerId.Value))
-                            customerIdsToChildAccounts.Add(managerId.Value,
+                        if (!customerIdsToChildAccounts.ContainsKey(managerCustomerId.Value))
+                            customerIdsToChildAccounts.Add(managerCustomerId.Value,
                                 new List<CustomerClient>());
 
-                        customerIdsToChildAccounts[managerId.Value].Add(customerClient);
+                        customerIdsToChildAccounts[managerCustomerId.Value].Add(customerClient);
 
                         if (customerClient.Manager.HasValue && customerClient.Manager.Value)
                             // A customer can be managed by multiple managers, so to prevent
@@ -200,7 +200,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 {
                     Console.WriteLine(
                         "Customer ID {0} is likely a test account, so its customer client " +
-                        " information cannot be retrieved.", managerId);
+                        " information cannot be retrieved.", managerCustomerId);
                 }
             }
         }
