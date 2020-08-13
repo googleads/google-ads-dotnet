@@ -12,15 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V4.Errors;
 using Google.Ads.GoogleAds.V4.Resources;
 using Google.Ads.GoogleAds.V4.Services;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using static Google.Ads.GoogleAds.V4.Enums.FlightPlaceholderFieldEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V4
@@ -44,7 +43,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             Console.WriteLine(codeExample.Description);
 
             // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
+            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // ID of the feed containing the feed item to be updated.
             long feedId = long.Parse("INSERT_FEED_ID_HERE");
@@ -54,7 +53,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             // The placeholder type name for the attribute to be removed.
             string flightPlaceholderFieldName = "INSERT_FLIGHT_PLACEHOLDER_FIELD_NAME_HERE";
-            
+
             // Value with which to update the FeedAttributeValue.
             string attributeValue = "INSERT_ATTRIBUTE_VALUE_HERE";
 
@@ -65,17 +64,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example updates a FeedItemAttributeValue in a flights feed. " +
-                    "To create a flights feed, run the AddFlightsFeed.cs. This code example is " +
-                    "specific to feeds of type DYNAMIC_FLIGHT. The attribute you are updating " +
-                    "must be present on the feed. This code example is specifically for updating " +
-                    "the StringValue of an attribute.";
-            }
-        }
+        public override string Description =>
+            "This code example updates a FeedItemAttributeValue in a flights feed. " +
+            "To create a flights feed, run the AddFlightsFeed.cs. This code example is " +
+            "specific to feeds of type DYNAMIC_FLIGHT. The attribute you are updating " +
+            "must be present on the feed. This code example is specifically for updating " +
+            "the StringValue of an attribute.";
 
         /// <summary>
         /// Runs the code example.
@@ -118,7 +112,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="attributeValue">String value with which to update the
         /// FeedAttributeValue.</param>
         private void UpdateFeedItem(GoogleAdsClient client, long customerId, long feedId,
-                    long feedItemId, string flightPlaceholderFieldName, string attributeValue)
+            long feedItemId, string flightPlaceholderFieldName, string attributeValue)
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService =
@@ -148,10 +142,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 StringValue = attributeValue
             };
 
-            // Creates a new FeedItem from the existing FeedItem. Any FeedItemAttributeValues that are
-            // not included in the updated FeedItem will be removed from the FeedItem, which is why you
-            // must create the FeedItem from the existing FeedItem and set the field(s) that will be
-            // updated.
+            // Creates a new FeedItem from the existing FeedItem. Any FeedItemAttributeValues that
+            // are not included in the updated FeedItem will be removed from the FeedItem, which is
+            // why you must create the FeedItem from the existing FeedItem and set the field(s)
+            // that will be updated.
             feedItem.AttributeValues[GetAttributeIndex(feedItem, feedItemAttributeValue)] =
                 feedItemAttributeValue;
 
@@ -164,7 +158,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             // Updates the feed item.
             MutateFeedItemsResponse response =
-                feedItemService.MutateFeedItems(customerId.ToString(), new[] { operation });
+                feedItemService.MutateFeedItems(customerId.ToString(), new[] {operation});
 
             foreach (MutateFeedItemResult result in response.Results)
             {
@@ -196,7 +190,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             // Constructs the query.
             string query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
-                $"'{feedResourceName}'";
+                           $"'{feedResourceName}'";
 
             // Constructs the request.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
@@ -209,9 +203,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // single feed item we created previously..
             GoogleAdsRow googleAdsRow = googleAdsService.Search(request).First();
 
-            // Gets the attributes list from the feed and creates a map with keys of each attribute and
-            // values of each corresponding ID.
-
+            // Gets the attributes list from the feed and creates a map with keys of each attribute
+            // and values of each corresponding ID.
             Dictionary<FlightPlaceholderField, FeedAttribute> feedAttributes =
                 new Dictionary<FlightPlaceholderField, FeedAttribute>();
 
@@ -240,11 +233,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
                         feedAttributes[FlightPlaceholderField.FinalUrls] = feedAttribute;
                         break;
                     // The full list of FlightPlaceholderFields can be found here
-                    // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V4.enums#flightplaceholderfieldenum.
+                    // https://developers.google.com/google-ads/api/reference/rpc/latest/FlightPlaceholderFieldEnum.FlightPlaceholderField
                     default:
                         throw new Exception("Invalid attribute name.");
                 }
             }
+
             return feedAttributes;
         }
 
@@ -265,7 +259,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             // Constructs the query.
             string query = "SELECT feed_item.attribute_values FROM feed_item WHERE " +
-                $"feed_item.resource_name = '{feedItemResourceName}'";
+                           $"feed_item.resource_name = '{feedItemResourceName}'";
 
             // Constructs the request.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
@@ -294,9 +288,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             foreach (FeedItemAttributeValue feedItemAttributeValue in feedItem.AttributeValues)
             {
                 attributeIndex = (attributeIndex == -1) ? attributeIndex + 1 : 0;
-                // Checks if the current feedItemAttributeValue is the one we are updating
+                // Checks if the current feedItemAttributeValue is the one we are updating.
                 if (feedItemAttributeValue.FeedAttributeId
-                  == newFeedItemAttributeValue.FeedAttributeId)
+                    == newFeedItemAttributeValue.FeedAttributeId)
                 {
                     break;
                 }
@@ -306,7 +300,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             if (attributeIndex == -1)
             {
                 new ArgumentException($"No matching feed attribute for feed item attribute " +
-                    $"value: {newFeedItemAttributeValue}");
+                                      $"value: {newFeedItemAttributeValue}");
             }
 
             return attributeIndex;
