@@ -240,7 +240,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                         feedAttributes[RealEstatePlaceholderField.ContextualKeywords] = feedAttribute;
                         break;
                     // The full list of RealEstatePlaceholderField can be found here
-                    // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V4.enums#RealEstatePlaceholderFieldenum.
+                    // https://developers.google.com/google-ads/api/reference/rpc/latest/RealEstatePlaceholderFieldEnum.RealEstatePlaceholderField
                     default:
                         throw new Exception("Invalid attribute name.");
                 }
