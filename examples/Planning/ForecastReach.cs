@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             string locationId = "2840";  // US
             string currencyCode = "USD";
-            long budgetMicros = 500_000_000_000L;
+            long budgetMicros = 5_000_000L;
             ReachPlanServiceClient reachPlanService =
                 client.GetService(Services.V4.ReachPlanService);
 
@@ -195,7 +195,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             targeting.Devices.AddRange(devices);
 
             // See the docs for defaults and valid ranges:
-            // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V4.services#Google.Ads.GoogleAds.V4.services.GenerateReachForecastRequest
+            // https://developers.google.com/google-ads/api/reference/rpc/latest/GenerateReachForecastRequest
             GenerateReachForecastRequest request = new GenerateReachForecastRequest()
             {
                 CustomerId = customerId,
@@ -215,23 +215,23 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// </summary>
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         /// <param name="request">An already-populated reach curve request.</param>
-        public void PullReachCurve(
+        public void GetReachCurve(
             ReachPlanServiceClient reachPlanService, GenerateReachForecastRequest request)
         {
             GenerateReachForecastResponse response = reachPlanService.GenerateReachForecast(
                 request);
             Console.WriteLine("Reach curve output:");
             Console.WriteLine(
-                "Currency,\tCost Micros,\tOn-Target Reach,\tOn-Target Imprs,\tTotal Reach," +
-                    "\tTotal Imprs,\tProducts");
+                "Currency, Cost Micros, On-Target Reach, On-Target Imprs, Total Reach," +
+                    " Total Imprs, Products");
             foreach (ReachForecast point in response.ReachCurve.ReachForecasts)
             {
-                Console.Write($"{request.CurrencyCode},\t");
-                Console.Write($"{point.CostMicros},\t");
-                Console.Write($"{point.Forecast.OnTargetReach},\t");
-                Console.Write($"{point.Forecast.OnTargetImpressions},\t");
-                Console.Write($"{point.Forecast.TotalReach},\t");
-                Console.Write($"{point.Forecast.TotalImpressions},\t");
+                Console.Write($"{request.CurrencyCode}, ");
+                Console.Write($"{point.CostMicros}, ");
+                Console.Write($"{point.Forecast.OnTargetReach}, ");
+                Console.Write($"{point.Forecast.OnTargetImpressions}, ");
+                Console.Write($"{point.Forecast.TotalReach}, ");
+                Console.Write($"{point.Forecast.TotalImpressions}, ");
                 Console.Write($"\"[");
                 foreach (ProductAllocation product in point.ForecastedProductAllocations)
                 {
@@ -267,28 +267,28 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             // See listPlannableProducts on ReachPlanService to retrieve a list
             // of valid PlannableProductCode's for a given location:
-            // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V4.services#reachplanservice
+            // https://developers.google.com/google-ads/api/reference/rpc/latest/ReachPlanService
             productMix.Add(new PlannedProduct()
             {
                 PlannableProductCode = "TRUEVIEW_IN_STREAM",
-                BudgetMicros = Convert.ToInt64((double)budgetMicros * trueviewAllocation)
+                BudgetMicros = Convert.ToInt64(budgetMicros * trueviewAllocation)
             });
             productMix.Add(new PlannedProduct()
             {
                 PlannableProductCode = "BUMPER",
-                BudgetMicros = Convert.ToInt64((double)budgetMicros * bumperAllocation)
+                BudgetMicros = Convert.ToInt64(budgetMicros * bumperAllocation)
             });
 
             GenerateReachForecastRequest request =
                 BuildReachRequest(customerId, productMix, locationId, currencyCode);
 
-            PullReachCurve(reachPlanService, request);
+            GetReachCurve(reachPlanService, request);
         }
 
         /// <summary>
         /// Pulls a forecast for a product mix suggested based on preferences for whether the ad
         /// would have a guaranteed price, play with sound, would be skippable, would include top
-        /// content, and a desired ad length.
+        /// content, and have a desired ad length.
         /// </summary>
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         /// <param name="customerId">The customer ID for the reach forecast.</param>
@@ -341,7 +341,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             GenerateReachForecastRequest curveRequest =
                 BuildReachRequest(customerId, productMix, locationId, currencyCode);
 
-            PullReachCurve(reachPlanService, curveRequest);
+            GetReachCurve(reachPlanService, curveRequest);
         }
     }
 }
