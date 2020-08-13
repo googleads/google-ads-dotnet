@@ -226,7 +226,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             // Map the feed attributes to ad customizer placeholder fields.
             // For a full list of ad customizer placeholder fields, see
-            // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V4.enums#Google.Ads.GoogleAds.V4.enums.AdCustomizerPlaceholderFieldEnum.AdCustomizerPlaceholderField
+            // https://developers.google.com/google-ads/api/reference/rpc/latest/AdCustomizerPlaceholderFieldEnum.AdCustomizerPlaceholderField
             AttributeFieldMapping nameFieldMapping = new AttributeFieldMapping()
             {
                 FeedAttributeId = feedAttributes["Name"].Id,
