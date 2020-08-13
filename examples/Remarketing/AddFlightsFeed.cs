@@ -239,7 +239,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                         feedAttributes[FlightPlaceholderField.FinalUrls] = feedAttribute;
                         break;
                     // The full list of FlightPlaceholderFields can be found here
-                    // https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V4.enums#flightplaceholderfieldenum.
+                    // https://developers.google.com/google-ads/api/reference/rpc/latest/FlightPlaceholderFieldEnum.FlightPlaceholderField
                     default:
                         throw new Exception("Invalid attribute name.");
                 }
