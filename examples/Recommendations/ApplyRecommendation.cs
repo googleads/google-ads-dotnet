@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 // Each recommendation types has optional parameters to override the recommended
                 // values. For example, you can override a recommended ad when a
                 // TextAdRecommendation is applied, as shown below.
-                // Please read https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v0.services#google.ads.googleads.v0.services.ApplyRecommendationOperation
+                // Please read https://developers.google.com/google-ads/api/reference/rpc/latest/ApplyRecommendationOperation
                 // for details.
                 // TextAd = new TextAdParameters() {
                 //   Ad = new Ad() {
