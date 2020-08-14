@@ -15,7 +15,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V4.Errors;
@@ -88,11 +87,6 @@ namespace Google.Ads.GoogleAds.Examples.V4
             FeedItemServiceClient feedItemServiceClient = client.GetService(
                 Services.V4.FeedItemService);
 
-            // Strip any special characters and whitespace from the flight placeholder field name.
-            Regex specialCharsAndWhitespaceRegex = new Regex("[*'\",_&#^@\\s]");
-            flightPlaceholderFieldName = specialCharsAndWhitespaceRegex.Replace
-                (flightPlaceholderFieldName, string.Empty);
-
             try
             {
                 // Gets a map of the placeholder values to feed attributes.
@@ -100,11 +94,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
                     GetFeed(client, customerId, ResourceNames.Feed(customerId, feedId));
 
                 // Removes the attribute from the feed item.
+                FlightPlaceholderField flightPlaceholderField =
+                    (FlightPlaceholderField) Enum.Parse(typeof(FlightPlaceholderField),
+                        flightPlaceholderFieldName, true);
                 FeedItem feedItem = RemoveAttributeValueFromFeedItem(client, customerId,
                     placeholdersToFeedAttributesMap,
-                    ResourceNames.FeedItem(customerId, feedId, feedItemId),
-                    (FlightPlaceholderField) Enum.Parse(typeof(FlightPlaceholderField),
-                        flightPlaceholderFieldName, true));
+                    ResourceNames.FeedItem(customerId, feedId, feedItemId), flightPlaceholderField);
 
                 // Creates the operation.
                 FeedItemOperation operation = new FeedItemOperation
@@ -119,7 +114,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 foreach (MutateFeedItemResult result in response.Results)
                 {
                     Console.WriteLine("Updated feed item with resource name " +
-                                      $"'{result.ResourceName}'.");
+                        $"'{result.ResourceName}'.");
                 }
             }
             catch (GoogleAdsException e)
@@ -158,8 +153,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 Services.V4.GoogleAdsService);
 
             // Constructs the query.
-            string query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
-                           $"'{feedResourceName}'";
+            string query = "SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
+                $"'{feedResourceName}'";
 
             // Constructs the request.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
@@ -229,12 +224,19 @@ namespace Google.Ads.GoogleAds.Examples.V4
             };
 
             // Gets the index of the attribute value that will be removed.
-            int attributeIndex = GetAttributeIndex(feedItem, feedItemAttributeValue);
+            // int attributeIndex = GetAttributeIndex(feedItem, feedItemAttributeValue);
+            int attributeIndex = feedItem.AttributeValues
+                .Select((item, index) => new {item, index})
+                .Where(itemIndexPair =>
+                    itemIndexPair.item.FeedAttributeId.Value ==
+                    feedItemAttributeValue.FeedAttributeId.Value)
+                .Select(itemIndexPair => itemIndexPair.index + 1)
+                .FirstOrDefault() - 1;
 
             if (attributeIndex == -1)
             {
                 throw new ArgumentException("No matching feed attribute found for " +
-                                            $"value '{feedItemAttributeValue}'.");
+                    $"value '{feedItemAttributeValue}'.");
             }
 
             // Returns the feed item with the removed FeedItemAttributeValue. Any
@@ -260,10 +262,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 Services.V4.GoogleAdsService);
 
             // Constructs the query.
-            string query = $@"SELECT feed_item.attribute_values
-                            FROM feed_item
-                            WHERE feed_item.resource_name = '{feedItemResourceName}'";
-
+            string query = $@"
+                SELECT feed_item.attribute_values
+                FROM feed_item
+                WHERE feed_item.resource_name = '{feedItemResourceName}'";
 
             // Issues the search request.
             PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchResponse =
@@ -271,37 +273,6 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             // Returns the feed item attribute values.
             return searchResponse.First().FeedItem;
-        }
-
-
-        /// <summary>
-        /// Gets the index of the attribute. This is needed to specify which FeedItemAttributeValue
-        /// will be removed in the given FeedItem.
-        /// </summary>
-        /// <param name="feedItem">The FeedItem that will be updated.</param>
-        /// <param name="removeFeedItemAttributeValue">The new FeedItemAttributeValue that will be
-        ///     removed.</param>
-        /// <returns>The integer index of the attribute.</returns>
-        private int GetAttributeIndex(FeedItem feedItem,
-            FeedItemAttributeValue removeFeedItemAttributeValue)
-        {
-            int attributeIndex = -1;
-
-            // Loops through attribute values to find the index of the FeedItemAttributeValue to
-            // update.
-            foreach (FeedItemAttributeValue feedItemAttributeValue in feedItem.AttributeValues)
-            {
-                attributeIndex++;
-
-                // Checks if the current feedItemAttributeValue is the one we are updating.
-                if (feedItemAttributeValue.FeedAttributeId.Value == removeFeedItemAttributeValue
-                    .FeedAttributeId.Value)
-                {
-                    break;
-                }
-            }
-
-            return attributeIndex;
         }
     }
 }

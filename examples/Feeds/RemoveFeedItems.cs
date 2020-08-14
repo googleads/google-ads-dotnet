@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 foreach (MutateFeedItemResult removedFeedItem in response.Results)
                 {
                     Console.WriteLine("Removed feed item with resource name " +
-                                      $"'{removedFeedItem.ResourceName}'");
+                        $"'{removedFeedItem.ResourceName}'");
                 }
             }
             catch (GoogleAdsException e)
