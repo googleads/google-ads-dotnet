@@ -69,8 +69,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
             string bridgeMapVersionId = "INSERT_BRIDGE_MAP_VERSION_ID_HERE";
             long? partnerId = long.Parse("INSERT_PARTNER_ID_HERE");
 
+            // OPTIONAL: customKey is only required if uploading data with custom key
+            // and values. Specify the value if not passed as an arg:
+            string customKey = "INSERT_CUSTOM_KEY_HERE";     
 
             codeExample.Run(new GoogleAdsClient(), customerId, conversionActionId,
+                customKey: customKey,
                 offlineUserDataJobType: offlineUserDataJobType,
                 externalId: externalId,
                 advertiserUploadDateTime: advertiserUploadDateTime,
@@ -97,6 +101,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
+        /// <param name="customKey">Optional: "Custom key name. Only required if uploading data 
+        ///     with custom key and values.</param>     
         /// <param name="offlineUserDataJobType">The type of user data in the job (first or third
         ///     party). If you have an official store sales partnership with Google, use
         ///     StoreSalesUploadThirdParty. Otherwise, use StoreSalesUploadFirstParty or
@@ -110,6 +116,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="partnerId">ID of the third party partner. Only required if uploading third
         ///     party data.</param>
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
+            string customKey,
             OfflineUserDataJobType offlineUserDataJobType =
                 OfflineUserDataJobType.StoreSalesUploadFirstParty,
             long? externalId = null, string advertiserUploadDateTime = null,
@@ -129,13 +136,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             try
             {
-                // Creates an offline user data job for uploading transactions.
+                // Creates an offline user data job for uploading transactions.   
                 string offlineUserDataJobResourceName =
                     CreateOfflineUserDataJob(offlineUserDataJobServiceClient, customerId,
                         offlineUserDataJobType, externalId, advertiserUploadDateTime,
-                        bridgeMapVersionId, partnerId);
+                        bridgeMapVersionId, partnerId, customKey);
 
-                // Adds transactions to the job.
+                // Adds transactions to the job.                
                 AddTransactionsToOfflineUserDataJob(offlineUserDataJobServiceClient, customerId,
                     offlineUserDataJobResourceName, conversionActionId);
 
@@ -179,11 +186,14 @@ namespace Google.Ads.GoogleAds.Examples.V4
         ///     required if uploading third party data.</param>
         /// <param name="partnerId">ID of the third party partner. Only required if uploading third
         ///     party data.</param>
+        /// <param name="customKey">Optional: Custom key name. Only required if uploading data with
+        /// custom key and values.</param>
         /// <returns>The resource name of the created job.</returns>
         private string CreateOfflineUserDataJob(
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient, long customerId,
             OfflineUserDataJobType offlineUserDataJobType, long? externalId,
-            string advertiserUploadDateTime, string bridgeMapVersionId, long? partnerId)
+            string advertiserUploadDateTime, string bridgeMapVersionId, long? partnerId,
+            string customKey)
         {
             // TIP: If you are migrating from the AdWords API, please note that Google Ads API uses
             // the term "fraction" instead of "rate". For example, loyaltyRate in the AdWords API is
@@ -209,6 +219,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 TransactionUploadFraction = 1.0
             };
 
+            if(String.IsNullOrEmpty(customKey) == false)
+            {
+                storeSalesMetadata.CustomKey = customKey;
+            }
             // Creates additional metadata required for uploading third party data.
             if (offlineUserDataJobType == OfflineUserDataJobType.StoreSalesUploadThirdParty)
             {
@@ -283,7 +297,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="offlineUserDataJobResourceName">The resource name of the job to which to
         ///     add transactions.</param>
-        /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
+        /// <param name="conversionActionId">The ID of a store sales conversion action.</param> 
         private void AddTransactionsToOfflineUserDataJob(
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient, long customerId,
             string offlineUserDataJobResourceName, long conversionActionId)
@@ -299,7 +313,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 {
                     EnablePartialFailure = true,
                     ResourceName = offlineUserDataJobResourceName,
-                    Operations = {userDataJobOperations}
+                    Operations = { userDataJobOperations }
                 });
 
             // Prints the status message if any partial failure error is returned.
@@ -324,7 +338,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Creates a list of offline user data job operations for sample transactions.
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
+        /// <param name="conversionActionId">The ID of a store sales conversion action.</param>  
         /// <returns>A list of operations.</returns>
         private List<OfflineUserDataJobOperation> BuildOfflineUserDataJobOperations(long customerId,
             long conversionActionId)
@@ -359,6 +373,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
                     // The date/time must be in the format "yyyy-MM-dd HH:mm:ss",
                     // e.g. "2020-05-14 19:07:02".
                     TransactionDateTime = DateTime.Today.AddDays(-2).ToString("yyyy-MM-dd HH:mm:ss")
+                    // OPTIONAL: CustomValue is only required if uploading data with custom key
+                    // and values.
+                    // CustomValue = "Painting", 
                 }
             };
 
