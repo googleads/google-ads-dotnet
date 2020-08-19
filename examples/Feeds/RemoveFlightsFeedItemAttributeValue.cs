@@ -90,15 +90,14 @@ namespace Google.Ads.GoogleAds.Examples.V4
             {
                 // Gets a map of the placeholder values to feed attributes.
                 Dictionary<FlightPlaceholderField, FeedAttribute> placeholdersToFeedAttributesMap =
-                    GetFeed(client, customerId, ResourceNames.Feed(customerId, feedId));
+                    GetFeed(client, customerId, feedId);
 
                 // Removes the attribute from the feed item.
                 FlightPlaceholderField flightPlaceholderField =
                     (FlightPlaceholderField) Enum.Parse(typeof(FlightPlaceholderField),
                         flightPlaceholderFieldName, true);
-                FeedItem feedItem = RemoveAttributeValueFromFeedItem(client, customerId,
-                    placeholdersToFeedAttributesMap,
-                    ResourceNames.FeedItem(customerId, feedId, feedItemId), flightPlaceholderField);
+                FeedItem feedItem = RemoveAttributeValueFromFeedItem(client, customerId, feedId,
+                    feedItemId, placeholdersToFeedAttributesMap, flightPlaceholderField);
 
                 // Creates the operation.
                 FeedItemOperation operation = new FeedItemOperation
@@ -142,14 +141,16 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID that has the flights feed.</param>
-        /// <param name="feedResourceName">The resource name of the feed.</param>
-        /// <returns>A Map containing the FlightPlaceholderField and FeedAttribute.</returns>
+        /// <param name="feedId">The feed ID for which to get details.</param>
+        /// <returns>A mapping of FlightPlaceholderFields to FeedAttributes.</returns>
         public Dictionary<FlightPlaceholderField, FeedAttribute> GetFeed(
-            GoogleAdsClient client, long customerId, string feedResourceName)
+            GoogleAdsClient client, long customerId, long feedId)
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V4.GoogleAdsService);
+
+            string feedResourceName = ResourceNames.Feed(customerId, feedId);
 
             // Constructs the query.
             string query = "SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -205,16 +206,29 @@ namespace Google.Ads.GoogleAds.Examples.V4
             return feedAttributes;
         }
 
-        private FeedItem RemoveAttributeValueFromFeedItem(GoogleAdsClient client, in long
-                customerId,
+        /// <summary>
+        /// Removes an attribute value from the specified feed item.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The Google Ads customer ID that has the flights feed.</param>
+        /// <param name="feedId">The feed ID that contains the target feed item.</param>
+        /// <param name="feedItemId">The feed item ID that will be updated.</param>
+        /// <param name="placeholdersToFeedAttributesMap">A mapping of FlightPlaceholderFields to
+        ///     FeedAttributes.</param>
+        /// <param name="flightPlaceholderFieldName">The attributed field name to remove.</param>
+        /// <returns>The modified feed item.</returns>
+        /// <exception cref="ArgumentException">If the specified attribute was not found in the
+        ///     feed item.</exception>
+        private FeedItem RemoveAttributeValueFromFeedItem(GoogleAdsClient client, long customerId,
+            long feedId, long feedItemId,
             Dictionary<FlightPlaceholderField, FeedAttribute> placeholdersToFeedAttributesMap,
-            string feedItemResourceName, FlightPlaceholderField flightPlaceholderFieldName)
+            FlightPlaceholderField flightPlaceholderFieldName)
         {
             // Gets the ID of the FeedAttribute for the placeholder field.
             long attributeId = placeholdersToFeedAttributesMap[flightPlaceholderFieldName].Id.Value;
 
             // Retrieves the feed item and its associated attributes based on its resource name.
-            FeedItem feedItem = GetFeedItem(client, customerId, feedItemResourceName);
+            FeedItem feedItem = GetFeedItem(client, customerId, feedId, feedItemId);
 
             //Creates the FeedItemAttributeValue that will be updated.
             FeedItemAttributeValue feedItemAttributeValue = new FeedItemAttributeValue
@@ -251,14 +265,18 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The client customer ID.</param>
-        /// <param name="feedItemResourceName">The feed item resource name.</param>
+        /// <param name="feedId">The feed ID that contains the target feed item.</param>
+        /// <param name="feedItemId">The feed item ID that will be updated.</param>
         /// <returns>FeedItem with the given resource name.</returns>
-        private FeedItem GetFeedItem(GoogleAdsClient client, in long customerId,
-            string feedItemResourceName)
+        private FeedItem GetFeedItem(GoogleAdsClient client, long customerId,
+            long feedId, long feedItemId)
         {
             // Gets the Google Ads service.
             GoogleAdsServiceClient googleAdsServiceClient = client.GetService(
                 Services.V4.GoogleAdsService);
+
+            // Constructs the resource name for the feed item.
+            string feedItemResourceName = ResourceNames.FeedItem(customerId, feedId, feedItemId);
 
             // Constructs the query.
             string query = $@"

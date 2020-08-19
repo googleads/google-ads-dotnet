@@ -300,7 +300,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             if (attributeIndex == -1)
             {
                 new ArgumentException($"No matching feed attribute for feed item attribute " +
-                                      $"value: {newFeedItemAttributeValue}");
+                    $"value: {newFeedItemAttributeValue}");
             }
 
             return attributeIndex;
