@@ -68,7 +68,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description => "Removes feed items from a feed.";
+        public override string Description => "Removes a feed item attribute value of a feed item " +
+            "in a flights feed. To create a flights feed, run the AddFlightsFeed example. This " +
+            "example is specific to feeds of type DYNAMIC_FLIGHT. The attribute you are removing " +
+            "must be present on the feed.";
 
         /// <summary>
         /// Runs the code example.

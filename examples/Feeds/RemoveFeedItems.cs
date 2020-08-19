@@ -44,7 +44,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             long[] feedItemIds =
             {
                 long.Parse("INSERT_FEED_ITEM_ID_1_HERE"),
-                long.Parse("INSERT_FEED_ITEM_ID_1_HERE")
+                long.Parse("INSERT_FEED_ITEM_ID_2_HERE")
             };
 
             codeExample.Run(new GoogleAdsClient(), customerId, feedId, feedItemIds);
@@ -54,7 +54,6 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Returns a description about the code example.
         /// </summary>
         public override string Description => "Removes feed items from a feed.";
-
 
         /// <summary>
         /// Runs the code example.
