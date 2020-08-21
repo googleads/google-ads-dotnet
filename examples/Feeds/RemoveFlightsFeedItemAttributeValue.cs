@@ -52,10 +52,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // The Feed ID to which the feed items belong.
+            // The Feed ID to which the feed item belongs.
             long feedId = long.Parse("INSERT_FEED_ID_HERE");
 
-            // The ID of the feed items to be updated.
+            // The ID of the feed item to be updated.
             long feedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
 
             // The flight placeholder field name for the attribute to be removed.
@@ -78,8 +78,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="feedId">The Feed ID to which the feed items belong.</param>
-        /// <param name="feedItemId">The ID of the feed items to be updated.</param>
+        /// <param name="feedId">The Feed ID to which the feed item belongs.</param>
+        /// <param name="feedItemId">The ID of the feed item to be updated.</param>
         /// <param name="flightPlaceholderFieldName">The flight placeholder field name for the
         ///     attribute to be removed.</param>
         public void Run(GoogleAdsClient client, long customerId, long feedId, long feedItemId,
@@ -109,7 +109,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                     UpdateMask = FieldMasks.AllSetFieldsOf(feedItem)
                 };
 
-                // Updates the feed item and print the results.
+                // Updates the feed item and prints the results.
                 MutateFeedItemsResponse response = feedItemServiceClient.MutateFeedItems
                     (customerId.ToString(), new[] {operation});
                 foreach (MutateFeedItemResult result in response.Results)
