@@ -59,17 +59,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example imports offline conversion values for specific " +
-                    "clicks to your account. To get Google Click ID for a click, use the " +
-                    "'click_view' resource: " +
-                    "https://developers.google.com/google-ads/api/fields/latest/click_view. " +
-                    "To set up a conversion action, run the AddConversionAction.cs example.";
-            }
-        }
+        public override string Description =>
+            "This code example imports offline conversion values for specific clicks to your " +
+            "account. To get Google Click ID for a click, use the 'click_view' resource: " +
+            "https://developers.google.com/google-ads/api/fields/latest/click_view. To set up a " +
+            "conversion action, run the AddConversionAction.cs example.";
 
         /// <summary>
         /// Runs the code example.

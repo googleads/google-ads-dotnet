@@ -54,8 +54,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description => "Adds a geo target to an extension feed item for " +
-                                              "targeting.";
+        public override string Description =>
+            "Adds a geo target to an extension feed item for targeting.";
 
         /// <summary>
         /// Runs the code example.

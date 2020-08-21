@@ -55,15 +55,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example illustrates how to search for language constants by " +
-                    "name that includes the specified keyword. Then it searches for all the " +
-                    "available mobile carrier constants with a given country code.";
-            }
-        }
+        public override string Description =>
+            "This code example illustrates how to search for language constants by name that " +
+            "includes the specified keyword. Then it searches for all the available mobile " +
+            "carrier constants with a given country code.";
 
         /// <summary>
         /// Runs the code example.

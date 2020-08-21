@@ -61,22 +61,17 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds a shopping listing scope to a shopping campaign. " +
-                    "The example will construct and add a new listing scope which will act as " +
-                    "the inventory filter for the campaign. The campaign will only advertise " +
-                    "products that match the following requirements: \n" +
-                    " - Brand is 'google \n" +
-                    " - Custom label 0 is 'top_selling_products'\n" +
-                    " - Product type (level 1) is 'electronics'\n" +
-                    " - Product type(level 2) is 'smartphones'\n" +
-                    "Only one listing scope is allowed per campaign. Remove any existing " +
-                    "listing scopes before running this code example.";
-            }
-        }
+        public override string Description =>
+            "This code example adds a shopping listing scope to a shopping campaign. The example " +
+            "will construct and add a new listing scope which will act as the inventory filter " +
+            "for the campaign. The campaign will only advertise products that match the " +
+            "following requirements: \n" +
+            " - Brand is 'google'\n" +
+            " - Custom label 0 is 'top_selling_products'\n" +
+            " - Product type (level 1) is 'electronics'\n" +
+            " - Product type (level 2) is 'smartphones'\n" +
+            "Only one listing scope is allowed per campaign. Remove any existing listing scopes " +
+            "before running this code example.";
 
         /// <summary>
         /// Runs the code example.

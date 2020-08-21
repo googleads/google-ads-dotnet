@@ -50,9 +50,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example creates a rule-based user list defined by an " +
-            "expression rule for users who have visited two different sections of a " +
-            "website.";
+            "This code example creates a rule-based user list defined by an expression rule for " +
+            "users who have visited two different sections of a website.";
 
         /// <summary>
         /// Runs the code example.

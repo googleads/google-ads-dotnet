@@ -49,13 +49,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This example gets ad groups.";
-            }
-        }
+        public override string Description => "This example gets ad groups.";
 
         /// <summary>
         /// Runs the code example.

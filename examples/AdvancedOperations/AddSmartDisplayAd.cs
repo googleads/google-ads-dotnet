@@ -65,15 +65,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds a Smart Display campaign, an ad group and a " +
-                    "responsive display ad. More information about Smart Display campaigns can " +
-                    "be found at https://support.google.com/google-ads/answer/7020281.";
-            }
-        }
+        public override string Description =>
+            "This code example adds a Smart Display campaign, an ad group and a responsive " +
+            "display ad. More information about Smart Display campaigns can be found at " +
+            "https://support.google.com/google-ads/answer/7020281.";
 
         /// <summary>
         /// Runs the code example.

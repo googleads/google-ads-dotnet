@@ -51,14 +51,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example sets ad parameters for a keyword. To get ad group " +
-                    "criteria, run GetKeywords.cs.";
-            }
-        }
+        public override string Description =>
+            "This code example sets ad parameters for a keyword. To get ad group criteria, run " +
+            "GetKeywords.cs.";
 
         /// <summary>
         /// Runs the code example.

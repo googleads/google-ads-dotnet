@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 "INSERT_KEYWORD_TEXT_1_HERE",
                 "INSERT_KEYWORD_TEXT_2_HERE"
             };
-            
+
             // Optional: Specify a URL string related to your business to generate ideas.
             string pageUrl = null;
 
@@ -68,14 +68,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example generates keyword ideas from a list of seed keywords " +
-                    "or a seed page URL";
-            }
-        }
+        public override string Description =>
+            "This code example generates keyword ideas from a list of seed keywords or a seed " +
+            "page URL";
 
         /// <summary>
         /// Runs the code example.

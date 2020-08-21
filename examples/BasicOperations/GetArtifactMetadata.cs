@@ -56,17 +56,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example gets the metadata, such as whether the artifact is " +
-                    "selectable, filterable and sortable, of an artifact. The artifact can be " +
-                    "either a resource (such as customer, campaign) or a field (such as " +
-                    "metrics.impressions, campaign.id). It'll also show the data type and " +
-                    "artifacts that are selectable with the artifact.";
-            }
-        }
+        public override string Description =>
+            "This code example gets the metadata, such as whether the artifact is selectable, " +
+            "filterable and sortable, of an artifact. The artifact can be either a resource " +
+            "(such as customer, campaign) or a field (such as metrics.impressions, campaign.id). " +
+            "It'll also show the data type and artifacts that are selectable with the artifact.";
 
         /// <summary>
         /// Runs the code example.

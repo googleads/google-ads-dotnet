@@ -49,14 +49,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example creates a keyword plan, which can be reused for " +
-                    "retrieving forecast metrics and historic metrics.";
-            }
-        }
+        public override string Description =>
+            "This code example creates a keyword plan, which can be reused for retrieving " +
+            "forecast metrics and historic metrics.";
 
         /// <summary>
         /// Runs the code example.
@@ -312,7 +307,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
             // Add the campaign negative keyword.
             MutateKeywordPlanCampaignKeywordsResponse response =
-                service.MutateKeywordPlanCampaignKeywords(customerId.ToString(), 
+                service.MutateKeywordPlanCampaignKeywords(customerId.ToString(),
                     new KeywordPlanCampaignKeywordOperation[] { operation });
 
             // Display the result.

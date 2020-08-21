@@ -38,10 +38,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         ///     Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example gets the account hierarchy of a specified manager " +
-            "account. If you don't specify a manager customer ID, the example will " +
-            "instead print " + "the hierarchies of all accessible customer accounts " +
-            "for your authenticated Google account.";
+            "This code example gets the account hierarchy of a specified manager account. If you " +
+            "don't specify a manager customer ID, the example will instead print the hierarchies " +
+            "of all accessible customer accounts for your authenticated Google account.";
 
         /// <summary>
         ///     Main method, to run this code example as a standalone application.

@@ -51,14 +51,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example removes a billing setup, specified by ID. To get " +
-                    "available billing setup, run GetBillingSetups.cs";
-            }
-        }
+        public override string Description =>
+            "This code example removes a billing setup, specified by ID. To get available " +
+            "billing setup, run GetBillingSetups.cs";
 
         /// <summary>
         /// Runs the code example.

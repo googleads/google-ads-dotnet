@@ -49,14 +49,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example shows how to add ad group bid modifiers to a hotel " +
-                    "ad group based on hotel check-in day and hotel length of stay.";
-            }
-        }
+        public override string Description =>
+            "This code example shows how to add ad group bid modifiers to a hotel ad group based " +
+            "on hotel check-in day and hotel length of stay.";
 
         /// <summary>
         /// Runs the code example.

@@ -66,15 +66,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds a feed that syncs retail addresses for a given " +
-                    "retail chain ID and associates the feed with a campaign for serving " +
-                    "affiliate location extensions.";
-            }
-        }
+        public override string Description =>
+            "This code example adds a feed that syncs retail addresses for a given retail chain " +
+            "ID and associates the feed with a campaign for serving affiliate location extensions.";
 
         /// <summary>
         /// Runs the code example.

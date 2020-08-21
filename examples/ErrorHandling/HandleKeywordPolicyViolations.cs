@@ -73,22 +73,15 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example demonstrates how to request an exemption for policy " +
-                    "violations of a keyword. Note that the example uses an exemptible " +
-                    "policy-violating keyword by default. If you use a keyword that contains " +
-                    "non-exemptible policy violations, they will not be sent for exemption " +
-                    "request and you will still fail to create a keyword. If you specify a " +
-                    "keyword that doesn't violate any policies, this example will just add the " +
-                    "keyword as usual, similar to what the AddKeywords example does. Note that " +
-                    "once you've requested policy exemption for a keyword, when you send a " +
-                    "request for  adding it again, the request will pass like when you add a " +
-                    "non-violating keyword.";
-            }
-        }
+        public override string Description =>
+            "This code example demonstrates how to request an exemption for policy violations of " +
+            "a keyword. Note that the example uses an exemptible policy-violating keyword by " +
+            "default. If you use a keyword that contains non-exemptible policy violations, they " +
+            "will not be sent for exemption request and you will still fail to create a keyword. " +
+            "If you specify a keyword that doesn't violate any policies, this example will just " +
+            "add the keyword as usual, similar to what the AddKeywords example does. Note that " +
+            "once you've requested policy exemption for a keyword, when you send a request for " +
+            "adding it again, the request will pass like when you add a non-violating keyword.";
 
         /// <summary>
         /// Runs the code example.

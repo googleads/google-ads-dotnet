@@ -88,14 +88,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds complete campaigns including campaign budgets, " +
-                    "campaigns, ad groups and keywords using BatchJobService.";
-            }
-        }
+        public override string Description =>
+            "This code example adds complete campaigns including campaign budgets, campaigns, ad " +
+            "groups and keywords using BatchJobService.";
 
         /// <summary>
         /// Runs the code example.
@@ -140,7 +135,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             {
                 Create = new BatchJob()
                 {
-                    
+
                 }
             };
             string batchJobResourceName =

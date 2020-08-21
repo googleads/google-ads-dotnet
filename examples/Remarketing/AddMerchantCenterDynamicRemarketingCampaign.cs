@@ -66,15 +66,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example creates a shopping campaign associated with an existing " +
-                    "Merchant Center account, along with a related ad group and responsive " +
-                    "display ad, and targets a user list for remarketing purposes.";
-            }
-        }
+        public override string Description =>
+            "This code example creates a shopping campaign associated with an existing Merchant " +
+            "Center account, along with a related ad group and responsive display ad, and " +
+            "targets a user list for remarketing purposes.";
 
         /// <summary>
         /// Runs the code example.

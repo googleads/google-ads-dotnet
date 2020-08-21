@@ -60,14 +60,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds a page feed to specify precisely which URLs to " +
-                    "use with your Dynamic Search Ads.";
-            }
-        }
+        public override string Description =>
+            "This code example adds a page feed to specify precisely which URLs to use with your " +
+            "Dynamic Search Ads.";
 
         /// <summary>
         /// Runs the code example.

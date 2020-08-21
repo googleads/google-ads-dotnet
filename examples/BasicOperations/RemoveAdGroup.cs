@@ -46,14 +46,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example deletes an ad group. To get ad groups, run " +
-                    "GetAdGroups.cs.";
-            }
-        }
+        public override string Description =>
+            "This code example deletes an ad group. To get ad groups, run GetAdGroups.cs.";
 
         /// <summary>
         /// Runs the code example.
