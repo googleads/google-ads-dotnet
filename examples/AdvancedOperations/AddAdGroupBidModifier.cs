@@ -53,15 +53,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example demonstrates how to add an ad group bid modifier for " +
-                    "mobile devices. To get ad group bid modifiers, see " +
-                    "GetAdGroupBidModifiers.cs.";
-            }
-        }
+        public override string Description =>
+            "This code example demonstrates how to add an ad group bid modifier for mobile " +
+            "devices. To get ad group bid modifiers, see GetAdGroupBidModifiers.cs.";
 
         /// <summary>
         /// Runs the code example.

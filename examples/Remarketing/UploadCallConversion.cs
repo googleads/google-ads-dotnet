@@ -57,15 +57,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example imports offline call conversion values for calls " +
-                    "related to the ads in your account. To set up a conversion action, run the " +
-                    "AddConversionAction.cs example.";
-            }
-        }
+        public override string Description =>
+            "This code example imports offline call conversion values for calls related to the " +
+            "ads in your account. To set up a conversion action, run the AddConversionAction.cs " +
+            "example.";
 
         /// <summary>
         /// Runs the code example.

@@ -46,15 +46,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds various types of negative criteria as exclusions " +
-                    "at the customer level. These criteria will be applied to all campaigns " +
-                    "for the customer.";
-            }
-        }
+        public override string Description =>
+            "This code example adds various types of negative criteria as exclusions at the " +
+            "customer level. These criteria will be applied to all campaigns for the customer.";
 
         /// <summary>
         /// Runs the code example.

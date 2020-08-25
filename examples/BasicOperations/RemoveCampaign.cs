@@ -46,14 +46,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example removes a campaign. To get campaigns, run " +
-                    "GetCampaign.cs.";
-            }
-        }
+        public override string Description =>
+            "This code example removes a campaign. To get campaigns, run GetCampaign.cs.";
 
         /// <summary>
         /// Runs the code example.

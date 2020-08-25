@@ -54,15 +54,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example shows how to use the validateOnly header to validate " +
-                    "an expanded text ad. No objects will be created, but exceptions will still " +
-                    "be thrown.";
-            }
-        }
+        public override string Description =>
+            "This code example shows how to use the validateOnly header to validate an expanded " +
+            "text ad. No objects will be created, but exceptions will still be thrown.";
 
         /// <summary>
         /// Runs the code example.

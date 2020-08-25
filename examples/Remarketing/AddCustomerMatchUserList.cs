@@ -63,18 +63,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example uses Customer Match to create a new user list (a.k.a. " +
-                    "audience) and adds users to it. \nNote: It may take up to several hours " +
-                    "for the list to be populated with users. Email addresses must be associated" +
-                    " with a Google account. For privacy purposes, the user list size will show " +
-                    "as zero until the list has at least 1,000 users. After that, the size " +
-                    "will be rounded to the two most significant digits.";
-            }
-        }
+        public override string Description =>
+            "This code example uses Customer Match to create a new user list (a.k.a. audience) " +
+            "and adds users to it. \nNote: It may take up to several hours for the list to be " +
+            "populated with users. Email addresses must be associated with a Google account. For " +
+            "privacy purposes, the user list size will show as zero until the list has at least " +
+            "1,000 users. After that, the size will be rounded to the two most significant digits.";
 
         /// <summary>
         /// Runs the code example.

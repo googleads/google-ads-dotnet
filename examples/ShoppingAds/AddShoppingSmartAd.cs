@@ -33,12 +33,12 @@ using static Google.Ads.GoogleAds.V4.Enums.AdvertisingChannelSubTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
-    /// This code example creates a Smart Shopping campaign, a Smart Shopping ad group, a Smart 
+    /// This code example creates a Smart Shopping campaign, a Smart Shopping ad group, a Smart
     /// Shopping ad group ad and a listing group for "All products".
-    /// 
+    ///
     /// Prerequisite: You need to have access to a Merchant Center account. You can find
-    /// instructions to create a Merchant Center account here: 
-    /// https://support.google.com/merchants/answer/188924. This account must be 
+    /// instructions to create a Merchant Center account here:
+    /// https://support.google.com/merchants/answer/188924. This account must be
     /// linked to your Google Ads account.The integration instructions can be found at:
     /// https://developers.google.com/adwords/shopping/full-automation/articles/t15.
     /// </summary>
@@ -72,21 +72,14 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example creates a Smart Shopping campaign, a Smart Shopping ad " +
-                    "group, a Smart Shopping ad group ad and a listing group for " +
-                    "\"All products\".\n Prerequisite: You need to have access to a Merchant " +
-                    "Center account. You can find instructions to " +
-                    "create a Merchant Center account here: " +
-                    "https://support.google.com/merchants/answer/188924.\nThis account must be " +
-                    "linked to your Google Ads account.The integration instructions can be found " +
-                    "at: " +
-                    "https://developers.google.com/adwords/shopping/full-automation/articles/t15.";
-            }
-        }
+        public override string Description =>
+            "This code example creates a Smart Shopping campaign, a Smart Shopping ad group, a " +
+            "Smart Shopping ad group ad and a listing group for \"All products\"." +
+            "\nPrerequisite: You need to have access to a Merchant Center account. You can find " +
+            "instructions to create a Merchant Center account here: " +
+            "https://support.google.com/merchants/answer/188924.\nThis account must be linked to " +
+            "your Google Ads account.The integration instructions can be found at: " +
+            "https://developers.google.com/adwords/shopping/full-automation/articles/t15.";
 
         /// <summary>
         /// Runs the code example.

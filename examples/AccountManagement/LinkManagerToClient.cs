@@ -52,14 +52,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example demonstrates how to link an existing Google Ads " +
-                    "manager customer account to an existing Google Ads client customer account.";
-            }
-        }
+        public override string Description =>
+            "This code example demonstrates how to link an existing Google Ads manager customer " +
+            "account to an existing Google Ads client customer account.";
 
         /// <summary>
         /// Runs the code example.

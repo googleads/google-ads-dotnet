@@ -81,15 +81,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example uploads offline data for store sales transactions. " +
-                       "This feature is only available to allowlisted accounts. " +
-                       "See https://support.google.com/google-ads/answer/7620302 for more details.";
-            }
-        }
+        public override string Description =>
+            "This code example uploads offline data for store sales transactions. This feature " +
+            "is only available to allowlisted accounts. See " +
+            "https://support.google.com/google-ads/answer/7620302 for more details.";
 
         /// <summary>
         /// Runs the code example.

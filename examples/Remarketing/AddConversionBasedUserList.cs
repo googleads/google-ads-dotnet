@@ -56,8 +56,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example creates a basic user list consisting of people who" +
-            "triggered one or more conversion actions.";
+            "This code example creates a basic user list consisting of people who triggered one " +
+            "or more conversion actions.";
 
         /// <summary>
         /// Runs the code example.

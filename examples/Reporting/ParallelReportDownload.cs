@@ -73,15 +73,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "Shows how to download a set of reports from a list of accounts in " +
-                       "parallel. If you need to obtain a list of accounts, please see the " +
-                       "GetAccountHierarchy or ListAccessibleCustomers examples.";
-            }
-        }
+        public override string Description =>
+            "Shows how to download a set of reports from a list of accounts in parallel. If you " +
+            "need to obtain a list of accounts, please see the GetAccountHierarchy or " +
+            "ListAccessibleCustomers examples.";
 
         /// <summary>
         /// Runs the code example.

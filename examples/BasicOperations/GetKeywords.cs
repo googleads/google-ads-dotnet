@@ -44,13 +44,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example illustrates getting keywords.";
-            }
-        }
+        public override string Description => "This code example illustrates getting keywords.";
 
         /// <summary>
         /// Runs the code example.

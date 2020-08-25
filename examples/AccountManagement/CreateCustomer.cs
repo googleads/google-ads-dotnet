@@ -45,16 +45,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example illustrates how to create a new customer under a " +
-                    "given manager account.\n Note: this example must be run using the " +
-                    "credentials of a Google Ads manager account. By default, the new account " +
-                    "will only be accessible via the manager account.";
-            }
-        }
+        public override string Description =>
+            "This code example illustrates how to create a new customer under a given manager " +
+            "account.\nNote: this example must be run using the credentials of a Google Ads " +
+            "manager account. By default, the new account will only be accessible via the " +
+            "manager account.";
 
         /// <summary>
         /// Runs the code example.

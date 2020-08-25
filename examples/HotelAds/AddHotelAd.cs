@@ -77,17 +77,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return " This code example creates a hotel campaign, a hotel ad group and " +
-                    "hotel ad group ad. \n\n Prerequisite: You need to have access to the Hotel " +
-                    "Ads Center, which can be granted during integration with Google Hotels. " +
-                    "The integration instructions can be found at: " +
-                    "https://support.google.com/hotelprices/answer/6101897.";
-            }
-        }
+        public override string Description =>
+            "This code example creates a hotel campaign, a hotel ad group and hotel ad group ad." +
+            "\n\n Prerequisite: You need to have access to the Hotel Ads Center, which can be " +
+            "granted during integration with Google Hotels. The integration instructions can be " +
+            "found at: https://support.google.com/hotelprices/answer/6101897.";
 
         /// <summary>
         /// Runs the code example.
@@ -292,7 +286,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 AdGroup = adGroupResourceName,
                 // Set the ad group ad to enabled.  Setting this to paused will cause an error
                 // for hotel campaigns.  For hotels pausing should happen at either the ad group or
-                // campaign level.  
+                // campaign level.
                 Status = AdGroupAdStatus.Enabled
             };
 
