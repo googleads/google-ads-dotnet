@@ -56,14 +56,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds sitelinks to a campaign. To create a campaign, " +
-                    "run AddCampaigns.cs.";
-            }
-        }
+        public override string Description =>
+            "This code example adds sitelinks to a campaign. To create a campaign, run " +
+            "AddCampaigns.cs.";
 
         /// <summary>
         /// Runs the code example.

@@ -55,15 +55,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example creates an account budget proposal using the 'CREATE' " +
-                    "operation. To get account budget proposals, " +
-                    "run GetAccountBudgetProposals.cs.";
-            }
-        }
+        public override string Description =>
+            "This code example creates an account budget proposal using the 'CREATE' operation. " +
+            "To get account budget proposals, run GetAccountBudgetProposals.cs.";
 
         /// <summary>
         /// Runs the code example.

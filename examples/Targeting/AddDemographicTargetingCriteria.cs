@@ -53,14 +53,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds demographic criteria to an ad group. To get " +
-                    "ad groups, run GetAdGroups.cs.";
-            }
-        }
+        public override string Description =>
+            "This code example adds demographic criteria to an ad group. To get ad groups, run " +
+            "GetAdGroups.cs.";
 
         /// <summary>
         /// Runs the code example.
@@ -100,7 +95,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                     Type = AgeRangeType.AgeRange1824
                 }
             };
-            
+
             // Creates ad group criterion operations for both ad group criteria.
             AdGroupCriterionOperation[] operations = new AdGroupCriterionOperation[]
             {

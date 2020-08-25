@@ -60,16 +60,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example demonstrates how to request an exemption for policy " +
-                    "violations of an expanded text ad. If the request somehow fails with " +
-                    "exceptions that are not policy finding  errors, the code example will stop " +
-                    "instead of trying to send an exemption request.";
-            }
-        }
+        public override string Description =>
+            "This code example demonstrates how to request an exemption for policy violations of " +
+            "an expanded text ad. If the request somehow fails with exceptions that are not " +
+            "policy finding  errors, the code example will stop instead of trying to send an " +
+            "exemption request.";
 
         /// <summary>
         /// Runs the code example.
@@ -175,7 +170,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                     }
                 }
             }
-            return ignorablePolicyTopics.ToArray();       
+            return ignorablePolicyTopics.ToArray();
         }
 
         /// <summary>

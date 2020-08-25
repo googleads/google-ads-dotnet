@@ -58,14 +58,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds an ad customizer feed and associates it with the " +
-                    "customer. Then it adds an ad that uses the feed to populate dynamic data.";
-            }
-        }
+        public override string Description =>
+            "This code example adds an ad customizer feed and associates it with the customer. " +
+            "Then it adds an ad that uses the feed to populate dynamic data.";
 
         /// <summary>
         /// Runs the code example.

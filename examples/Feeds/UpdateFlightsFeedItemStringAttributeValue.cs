@@ -65,11 +65,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example updates a FeedItemAttributeValue in a flights feed. " +
-            "To create a flights feed, run the AddFlightsFeed.cs. This code example is " +
-            "specific to feeds of type DYNAMIC_FLIGHT. The attribute you are updating " +
-            "must be present on the feed. This code example is specifically for updating " +
-            "the StringValue of an attribute.";
+            "This code example updates a FeedItemAttributeValue in a flights feed. To create a " +
+            "flights feed, run the AddFlightsFeed.cs. This code example is specific to feeds of " +
+            "type DYNAMIC_FLIGHT. The attribute you are updating must be present on the feed. " +
+            "This code example is specifically for updating the StringValue of an attribute.";
 
         /// <summary>
         /// Runs the code example.

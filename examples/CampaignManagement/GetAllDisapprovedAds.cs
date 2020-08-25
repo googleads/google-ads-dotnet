@@ -60,13 +60,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example retrieves all the disapproved ads in a given campaign.";
-            }
-        }
+        public override string Description =>
+            "This code example retrieves all the disapproved ads in a given campaign.";
 
         /// <summary>
         /// Runs the code example.

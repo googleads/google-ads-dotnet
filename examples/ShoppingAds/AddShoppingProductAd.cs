@@ -71,20 +71,15 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example creates a standard shopping campaign, a shopping " +
-                    "product ad group and a shopping product ad.\n Prerequisite: You need to " +
-                    "have access to a Merchant Center account. You can find instructions to " +
-                    "create a Merchant Center account here: " +
-                    "https://support.google.com/merchants/answer/188924.\nThis account must be " +
-                    "linked to your AdWords account.The integration instructions can be found " +
-                    "at: " +
-                    "https://developers.google.com/adwords/shopping/full-automation/articles/t15.";
-            }
-        }
+        public override string Description =>
+            "This code example creates a standard shopping campaign, a shopping product ad group " +
+            "and a shopping product ad." +
+            "\nPrerequisite: You need to have access to a Merchant Center account. You can find " +
+            "instructions to create a Merchant Center account here: " +
+            "https://support.google.com/merchants/answer/188924." +
+            "\nThis account must be linked to your AdWords account.The integration instructions " +
+            "can be found at: " +
+            "https://developers.google.com/adwords/shopping/full-automation/articles/t15.";
 
         /// <summary>
         /// Runs the code example.

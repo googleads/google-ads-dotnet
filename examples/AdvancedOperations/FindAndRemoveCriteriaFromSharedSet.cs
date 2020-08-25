@@ -51,14 +51,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example demonstrates how to find shared sets, shared set " +
-                    "criteria, and how to remove them.";
-            }
-        }
+        public override string Description =>
+            "This code example demonstrates how to find shared sets, shared set criteria, and " +
+            "how to remove them.";
 
         /// <summary>
         /// Runs the code example.

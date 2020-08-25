@@ -56,15 +56,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds a Gmail ad to a given ad group. The ad group's " +
-                    "campaign needs to have an AdvertisingChannelType of DISPLAY and " +
-                    "AdvertisingChannelSubType of DISPLAY_GMAIL_AD.";
-            }
-        }
+        public override string Description =>
+            "This code example adds a Gmail ad to a given ad group. The ad group's campaign " +
+            "needs to have an AdvertisingChannelType of DISPLAY and AdvertisingChannelSubType of " +
+            "DISPLAY_GMAIL_AD.";
 
         /// <summary>
         /// Runs the code example.

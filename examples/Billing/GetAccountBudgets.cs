@@ -48,13 +48,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This example retrieves all account budgets for a Google Ads customer.";
-            }
-        }
+        public override string Description =>
+            "This example retrieves all account budgets for a Google Ads customer.";
 
         /// <summary>
         /// Runs the code example.

@@ -44,18 +44,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example lists the resource names for the customers that the " +
-                    "authenticating user has access to. This example may be used to display a " +
-                    "list of customer IDs that can be selected by the user for setting the " +
-                    "login-customer-id in a subsequent call. See "+
-                    "https://developers.google.com/google-ads/api/docs/concepts/call-structure#login-customer-id "+
-                    "to learn more about the login-customer-id header.";
-            }
-        }
+        public override string Description =>
+            "This code example lists the resource names for the customers that the " +
+            "authenticating user has access to. This example may be used to display a list of " +
+            "customer IDs that can be selected by the user for setting the login-customer-id in " +
+            "a subsequent call. See "+
+            "https://developers.google.com/google-ads/api/docs/concepts/call-structure#login-customer-id "+
+            "to learn more about the login-customer-id header.";
 
         /// <summary>
         /// Runs the code example.

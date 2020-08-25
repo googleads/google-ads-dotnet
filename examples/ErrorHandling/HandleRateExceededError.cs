@@ -72,19 +72,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example demonstrates how to handle RateExceededError in an " +
-                    "application. This code example runs 5 threads in parallel, each thread " +
-                    "attempting to validate 100 keywords in a single request. While spanning 5" +
-                    " parallel threads is unlikely to trigger a rate exceeded error, " +
-                    "substantially increasing the  number of threads may have that effect. Note " +
-                    "that this example is for illustrative purposes only, and you shouldn't " +
-                    "intentionally try to trigger a rate exceed error in your application.";
-            }
-        }
+        public override string Description =>
+            "This code example demonstrates how to handle RateExceededError in an application. " +
+            "This code example runs 5 threads in parallel, each thread attempting to validate " +
+            "100 keywords in a single request. While spanning 5 parallel threads is unlikely to " +
+            "trigger a rate exceeded error, substantially increasing the  number of threads may " +
+            "have that effect. Note that this example is for illustrative purposes only, and you " +
+            "shouldn't intentionally try to trigger a rate exceed error in your application.";
 
         /// <summary>
         /// Runs the code example.
@@ -114,7 +108,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         private async Task CreateKeyword(GoogleAdsClient client, int threadIndex, long customerId,
             long adGroupId)
         {
-            await Task.Run(() => 
+            await Task.Run(() =>
             {
                 // Get the AdGroupCriterionServiceClient.
                 AdGroupCriterionServiceClient adGroupCriterionService =

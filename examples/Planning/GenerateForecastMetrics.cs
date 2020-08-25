@@ -47,14 +47,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example generates forecast metrics for a keyword plan. To " +
-                    "create a keyword plan, run AddKeywordPlan.cs.";
-            }
-        }
+        public override string Description =>
+            "This code example generates forecast metrics for a keyword plan. To create a " +
+            "keyword plan, run AddKeywordPlan.cs.";
 
         /// <summary>
         /// Runs the code example.

@@ -58,15 +58,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return " This code example illustrates how to update an ad group, setting its " +
-                    "status to 'PAUSED', and its CPC bid to a new value if specified. To create " +
-                    "an ad group, run AddAdGroup.cs.";
-            }
-        }
+        public override string Description =>
+            " This code example illustrates how to update an ad group, setting its status to " +
+            "'PAUSED', and its CPC bid to a new value if specified. To create an ad group, run " +
+            "AddAdGroup.cs.";
 
         /// <summary>
         /// Runs the code example.

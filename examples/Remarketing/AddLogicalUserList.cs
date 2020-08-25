@@ -56,8 +56,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example creates a combination user list containing users that " +
-            "are present on any one of the provided user lists.";
+            "This code example creates a combination user list containing users that are present " +
+            "on any one of the provided user lists.";
 
         /// <summary>
         /// Runs the code example.

@@ -44,14 +44,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example gets Hotel-ads performance statistics for the 50 " +
-                    "Hotel ad groups with the most impressions over the last 7 days.";
-            }
-        }
+        public override string Description =>
+            "This code example gets Hotel-ads performance statistics for the 50 Hotel ad groups " +
+            "with the most impressions over the last 7 days.";
 
         /// <summary>
         /// Runs the code example.
