@@ -50,9 +50,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This example demonstrates how to interact with the ReachPlanService to " +
-            "find plannable locations and product codes, build a media plan, and " +
-            "generate a video ads reach forecast.";
+            "This example demonstrates how to interact with the ReachPlanService to find " +
+            "plannable locations and product codes, build a media plan, and generate a video ads " +
+            "reach forecast.";
 
         /// <summary>
         /// Runs the code example, showing a typical series of calls to the

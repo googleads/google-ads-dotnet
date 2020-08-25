@@ -57,15 +57,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example adds a price extension and associates it with an " +
-                    "account. Campaign targeting is also set using the specified campaign ID. " +
-                    "To get campaigns, run GetCampaigns.cs.";
-            }
-        }
+        public override string Description =>
+            "This code example adds a price extension and associates it with an account. " +
+            "Campaign targeting is also set using the specified campaign ID. To get campaigns, " +
+            "run GetCampaigns.cs.";
 
         /// <summary>
         /// Runs the code example.

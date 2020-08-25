@@ -48,14 +48,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example gets all BillingSetup objects available for the " +
-                    "specified customer ID.";
-            }
-        }
+        public override string Description =>
+            "This code example gets all BillingSetup objects available for the specified " +
+            "customer ID.";
 
         /// <summary>
         /// Runs the code example.

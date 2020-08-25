@@ -25,11 +25,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
 {
     /// <summary>
     /// This code example demonstrates how to approve a Merchant Center link request.
-    /// 
+    ///
     /// Prerequisite: You need to have access to a Merchant Center account. You can find
     /// instructions to create a Merchant Center account here:
     /// https://support.google.com/merchants/answer/188924.
-    /// 
+    ///
     /// To run this code example, you must use the Merchant Center UI or the Content API for
     /// Shopping to send a link request between your Merchant Center and Google Ads accounts.
     /// </summary>
@@ -55,19 +55,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example demonstrates how to approve a Merchant Center link " +
-                    "request.\nPrerequisite: You need to have access to a Merchant Center " +
-                    "account. You can find instructions to create a Merchant Center account " +
-                    "here: https://support.google.com/merchants/answer/188924. To run this code " +
-                    "example, you must use the Merchant Center UI or the Content API for " +
-                    "Shopping to send a link request between your Merchant Center and Google " +
-                    "Ads accounts.";
-            }
-        }
+        public override string Description =>
+            "This code example demonstrates how to approve a Merchant Center link request." +
+            "\nPrerequisite: You need to have access to a Merchant Center account. You can find " +
+            "instructions to create a Merchant Center account here: " +
+            "https://support.google.com/merchants/answer/188924. To run this code example, you " +
+            "must use the Merchant Center UI or the Content API for Shopping to send a link " +
+            "request between your Merchant Center and Google Ads accounts.";
 
         /// <summary>
         /// Runs the code example.

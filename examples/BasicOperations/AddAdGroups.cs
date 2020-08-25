@@ -55,14 +55,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example illustrates how to create ad groups. To create " +
-                    "campaigns, run AddCampaigns.cs";
-            }
-        }
+        public override string Description =>
+            "This code example illustrates how to create ad groups. To create campaigns, run " +
+            "AddCampaigns.cs";
 
         /// <summary>
         /// Runs the code example.

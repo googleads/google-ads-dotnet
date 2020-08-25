@@ -54,13 +54,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example demonstrates how to handle partial failures.";
-            }
-        }
+        public override string Description =>
+            "This code example demonstrates how to handle partial failures.";
 
         /// <summary>
         /// Runs the code example.

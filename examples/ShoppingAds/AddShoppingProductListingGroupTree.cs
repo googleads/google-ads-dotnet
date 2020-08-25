@@ -75,21 +75,16 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example shows how to add a shopping listing group tree to a " +
-                    "shopping ad group. The example will clear an existing listing group tree " +
-                    "and rebuild it include the following tree structure: \n" +
-                    "ProductCanonicalCondition NEW $0.20\n" +
-                    "ProductCanonicalCondition USED $0.10\n" +
-                    "ProductCanonicalCondition null (everything else)\n" +
-                    "  ProductBrand CoolBrand $0.90\n" +
-                    "  ProductBrand CheapBrand $0.01\n" +
-                    "  ProductBrand null (everything else) $0.50\n";
-            }
-        }
+        public override string Description =>
+            "This code example shows how to add a shopping listing group tree to a shopping ad " +
+            "group. The example will clear an existing listing group tree and rebuild it include " +
+            "the following tree structure:\n" +
+            "ProductCanonicalCondition NEW $0.20\n" +
+            "ProductCanonicalCondition USED $0.10\n" +
+            "ProductCanonicalCondition null (everything else)\n" +
+            "  ProductBrand CoolBrand $0.90\n" +
+            "  ProductBrand CheapBrand $0.01\n" +
+            "  ProductBrand null (everything else) $0.50\n";
 
         /// <summary>
         /// Runs the code example.
