@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedDistanceViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetDistanceViewRequestObject()
         {
             moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetDistanceViewRequestObjectAsync()
         {
             moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetDistanceView()
         {
             moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetDistanceViewAsync()
         {
             moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -117,7 +117,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetDistanceViewResourceNames()
         {
             moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -138,7 +138,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetDistanceViewResourceNamesAsync()
         {
             moq::Mock<DistanceViewService.DistanceViewServiceClient> mockGrpcClient = new moq::Mock<DistanceViewService.DistanceViewServiceClient>(moq::MockBehavior.Strict);

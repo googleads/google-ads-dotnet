@@ -13,19 +13,19 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Enums;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Enums;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V4.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V4.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V5.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V5.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example adds a portfolio bidding strategy and uses it to construct a campaign.
@@ -67,10 +67,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 string BIDDINGSTRATEGY_NAME = "Maximize Clicks " +
                     ExampleUtilities.GetRandomString();
                 const long BID_CEILING = 2000000;
-                const long SPEND_TARGET = 20000000;
 
                 string portfolioBiddingStrategy = CreatePortfolioBiddingStrategy(
-                    client, customerId, BIDDINGSTRATEGY_NAME, BID_CEILING, SPEND_TARGET);
+                    client, customerId, BIDDINGSTRATEGY_NAME, BID_CEILING);
 
                 Console.WriteLine("Portfolio bidding strategy with resource name '{0}' " +
                     "was created.", portfolioBiddingStrategy);
@@ -112,14 +111,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="name">The bidding strategy name.</param>
         /// <param name="bidCeiling">The bid ceiling amount in micros.</param>
-        /// <param name="spendTarget">The spend target in micros.</param>
         /// <returns>The bidding strategy resource name.</returns>
         private string CreatePortfolioBiddingStrategy(GoogleAdsClient client,
-            long customerId, string name, long bidCeiling, long spendTarget)
+            long customerId, string name, long bidCeiling)
         {
             // Get the BiddingStrategyService.
             BiddingStrategyServiceClient biddingStrategyService = client.GetService(
-                Services.V4.BiddingStrategyService);
+                Services.V5.BiddingStrategyService);
 
             // Create a portfolio bidding strategy.
             BiddingStrategy biddingStrategy = new BiddingStrategy()
@@ -128,9 +126,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
                 TargetSpend = new TargetSpend()
                 {
-                    // Optionally set additional bidding scheme parameters.
                     CpcBidCeilingMicros = bidCeiling,
-                    TargetSpendMicros = spendTarget
                 }
             };
 
@@ -161,7 +157,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V4.CampaignBudgetService);
+                client.GetService(Services.V5.CampaignBudgetService);
 
             // Create a shared budget.
             CampaignBudget budget = new CampaignBudget()
@@ -198,7 +194,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             string campaignBudgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V4.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V5.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()

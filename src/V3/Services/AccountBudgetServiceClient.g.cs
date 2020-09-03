@@ -127,6 +127,11 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>AccountBudgetService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// A service for fetching an account-level budget.
+    /// 
+    /// Account-level budgets are mutated by creating proposal resources.
+    /// </remarks>
     public abstract partial class AccountBudgetServiceClient
     {
         /// <summary>
@@ -305,6 +310,11 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>AccountBudgetService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// A service for fetching an account-level budget.
+    /// 
+    /// Account-level budgets are mutated by creating proposal resources.
+    /// </remarks>
     public sealed partial class AccountBudgetServiceClientImpl : AccountBudgetServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAccountBudgetRequest, gagvr::AccountBudget> _callGetAccountBudget;

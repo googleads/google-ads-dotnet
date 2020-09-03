@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedOfflineUserDataJobServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void CreateOfflineUserDataJobRequestObject()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task CreateOfflineUserDataJobRequestObjectAsync()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void CreateOfflineUserDataJob()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task CreateOfflineUserDataJobAsync()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -120,7 +120,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetOfflineUserDataJobRequestObject()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -147,7 +147,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetOfflineUserDataJobRequestObjectAsync()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -176,7 +176,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetOfflineUserDataJob()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -203,7 +203,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetOfflineUserDataJobAsync()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -232,7 +232,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetOfflineUserDataJobResourceNames()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetOfflineUserDataJobResourceNamesAsync()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -288,7 +288,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void AddOfflineUserDataJobOperationsRequestObject()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -313,7 +313,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task AddOfflineUserDataJobOperationsRequestObjectAsync()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -340,7 +340,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void AddOfflineUserDataJobOperations()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -364,7 +364,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task AddOfflineUserDataJobOperationsAsync()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -390,7 +390,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void AddOfflineUserDataJobOperationsResourceNames()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);
@@ -414,7 +414,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task AddOfflineUserDataJobOperationsResourceNamesAsync()
         {
             moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient> mockGrpcClient = new moq::Mock<OfflineUserDataJobService.OfflineUserDataJobServiceClient>(moq::MockBehavior.Strict);

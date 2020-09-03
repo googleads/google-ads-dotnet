@@ -13,17 +13,17 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V4.Enums.DeviceEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.GenderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.ReachPlanAdLengthEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.ReachPlanAgeRangeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.DeviceEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.GenderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.ReachPlanAdLengthEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.ReachPlanAgeRangeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This example demonstrates how to interact with the ReachPlanService to find plannable
@@ -56,7 +56,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
         /// <summary>
         /// Runs the code example, showing a typical series of calls to the
-        /// <see cref="Services.V4.ReachPlanService"/>.
+        /// <see cref="Services.V5.ReachPlanService"/>.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
@@ -66,7 +66,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             string currencyCode = "USD";
             long budgetMicros = 5_000_000L;
             ReachPlanServiceClient reachPlanService =
-                client.GetService(Services.V4.ReachPlanService);
+                client.GetService(Services.V5.ReachPlanService);
 
             try
             {

@@ -139,6 +139,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>UserListService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage user lists.
+    /// </remarks>
     public abstract partial class UserListServiceClient
     {
         /// <summary>
@@ -397,6 +400,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>UserListService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage user lists.
+    /// </remarks>
     public sealed partial class UserListServiceClientImpl : UserListServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetUserListRequest, gagvr::UserList> _callGetUserList;

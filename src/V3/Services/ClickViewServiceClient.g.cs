@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>ClickViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch click views.
+    /// </remarks>
     public abstract partial class ClickViewServiceClient
     {
         /// <summary>
@@ -301,6 +304,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>ClickViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch click views.
+    /// </remarks>
     public sealed partial class ClickViewServiceClientImpl : ClickViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetClickViewRequest, gagvr::ClickView> _callGetClickView;

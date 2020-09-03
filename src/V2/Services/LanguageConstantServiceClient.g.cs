@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>LanguageConstantService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch language constants.
+    /// </remarks>
     public abstract partial class LanguageConstantServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>LanguageConstantService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch language constants.
+    /// </remarks>
     public sealed partial class LanguageConstantServiceClientImpl : LanguageConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetLanguageConstantRequest, gagvr::LanguageConstant> _callGetLanguageConstant;

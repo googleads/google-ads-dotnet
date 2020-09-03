@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CampaignBudgetService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign budgets.
+    /// </remarks>
     public abstract partial class CampaignBudgetServiceClient
     {
         /// <summary>
@@ -410,6 +413,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CampaignBudgetService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign budgets.
+    /// </remarks>
     public sealed partial class CampaignBudgetServiceClientImpl : CampaignBudgetServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignBudgetRequest, gagvr::CampaignBudget> _callGetCampaignBudget;

@@ -65,7 +65,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// exist for manager customers. All direct and indirect client customers are
   /// included, as well as the manager itself.
   /// </summary>
-  public sealed partial class CustomerClient : pb::IMessage<CustomerClient> {
+  public sealed partial class CustomerClient : pb::IMessage<CustomerClient>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CustomerClient> _parser = new pb::MessageParser<CustomerClient>(() => new CustomerClient());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -325,6 +329,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -359,7 +366,48 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (clientCustomer_ != null) {
+        _single_clientCustomer_codec.WriteTagAndValue(ref output, ClientCustomer);
+      }
+      if (hidden_ != null) {
+        _single_hidden_codec.WriteTagAndValue(ref output, Hidden);
+      }
+      if (level_ != null) {
+        _single_level_codec.WriteTagAndValue(ref output, Level);
+      }
+      if (timeZone_ != null) {
+        _single_timeZone_codec.WriteTagAndValue(ref output, TimeZone);
+      }
+      if (testAccount_ != null) {
+        _single_testAccount_codec.WriteTagAndValue(ref output, TestAccount);
+      }
+      if (manager_ != null) {
+        _single_manager_codec.WriteTagAndValue(ref output, Manager);
+      }
+      if (descriptiveName_ != null) {
+        _single_descriptiveName_codec.WriteTagAndValue(ref output, DescriptiveName);
+      }
+      if (currencyCode_ != null) {
+        _single_currencyCode_codec.WriteTagAndValue(ref output, CurrencyCode);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -458,6 +506,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -533,7 +584,89 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 26: {
+            string value = _single_clientCustomer_codec.Read(ref input);
+            if (clientCustomer_ == null || value != "") {
+              ClientCustomer = value;
+            }
+            break;
+          }
+          case 34: {
+            bool? value = _single_hidden_codec.Read(ref input);
+            if (hidden_ == null || value != false) {
+              Hidden = value;
+            }
+            break;
+          }
+          case 42: {
+            long? value = _single_level_codec.Read(ref input);
+            if (level_ == null || value != 0L) {
+              Level = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_timeZone_codec.Read(ref input);
+            if (timeZone_ == null || value != "") {
+              TimeZone = value;
+            }
+            break;
+          }
+          case 58: {
+            bool? value = _single_testAccount_codec.Read(ref input);
+            if (testAccount_ == null || value != false) {
+              TestAccount = value;
+            }
+            break;
+          }
+          case 66: {
+            bool? value = _single_manager_codec.Read(ref input);
+            if (manager_ == null || value != false) {
+              Manager = value;
+            }
+            break;
+          }
+          case 74: {
+            string value = _single_descriptiveName_codec.Read(ref input);
+            if (descriptiveName_ == null || value != "") {
+              DescriptiveName = value;
+            }
+            break;
+          }
+          case 82: {
+            string value = _single_currencyCode_codec.Read(ref input);
+            if (currencyCode_ == null || value != "") {
+              CurrencyCode = value;
+            }
+            break;
+          }
+          case 90: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

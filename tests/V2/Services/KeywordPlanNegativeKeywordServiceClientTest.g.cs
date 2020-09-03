@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedKeywordPlanNegativeKeywordServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetKeywordPlanNegativeKeywordRequestObject()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetKeywordPlanNegativeKeywordRequestObjectAsync()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetKeywordPlanNegativeKeyword()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetKeywordPlanNegativeKeywordAsync()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
@@ -126,7 +126,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetKeywordPlanNegativeKeywordResourceNames()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetKeywordPlanNegativeKeywordResourceNamesAsync()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
@@ -174,7 +174,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateKeywordPlanNegativeKeywordsRequestObject()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
@@ -203,7 +203,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateKeywordPlanNegativeKeywordsRequestObjectAsync()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
@@ -234,7 +234,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateKeywordPlanNegativeKeywords()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);
@@ -261,7 +261,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateKeywordPlanNegativeKeywordsAsync()
         {
             moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanNegativeKeywordService.KeywordPlanNegativeKeywordServiceClient>(moq::MockBehavior.Strict);

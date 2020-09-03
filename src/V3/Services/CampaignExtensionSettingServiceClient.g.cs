@@ -144,6 +144,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>CampaignExtensionSettingService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign extension settings.
+    /// </remarks>
     public abstract partial class CampaignExtensionSettingServiceClient
     {
         /// <summary>
@@ -418,6 +421,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>CampaignExtensionSettingService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign extension settings.
+    /// </remarks>
     public sealed partial class CampaignExtensionSettingServiceClientImpl : CampaignExtensionSettingServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignExtensionSettingRequest, gagvr::CampaignExtensionSetting> _callGetCampaignExtensionSetting;

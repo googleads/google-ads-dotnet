@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedFeedMappingServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetFeedMappingRequestObject()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetFeedMappingRequestObjectAsync()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetFeedMapping()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
@@ -113,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetFeedMappingAsync()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
@@ -142,7 +142,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetFeedMappingResourceNames()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
@@ -169,7 +169,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetFeedMappingResourceNamesAsync()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
@@ -198,7 +198,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateFeedMappingsRequestObject()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
@@ -227,7 +227,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateFeedMappingsRequestObjectAsync()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
@@ -258,7 +258,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateFeedMappings()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);
@@ -285,7 +285,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateFeedMappingsAsync()
         {
             moq::Mock<FeedMappingService.FeedMappingServiceClient> mockGrpcClient = new moq::Mock<FeedMappingService.FeedMappingServiceClient>(moq::MockBehavior.Strict);

@@ -80,7 +80,7 @@
           }
         }
       },
-      "expectedMask": "foo.num,foo.bar.num,foo.bars"
+      "expectedMask": "foo.num"
     },
     {
       "description": "Modify submessage",
@@ -142,7 +142,7 @@
           }
         ]
       },
-      "expectedMask": "wrapper,foo.num,foo.bar.num,foo.bars,foos"
+      "expectedMask": "wrapper,foo.num,foos"
     }
   ]
 }

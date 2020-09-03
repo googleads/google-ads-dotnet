@@ -89,7 +89,15 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V3
         private readonly HelloRequest TEST_REQUEST = new HelloRequest()
         {
             CustomerId = TEST_CUSTOMER_ID,
-            Name = "API"
+            Name = "API",
+            Age = 25,
+            Address = new Address()
+            {
+                Line1 = "111 8th Ave",
+                City = "New York",
+                Zipcode = 10011,
+                State = "NY"
+            }
         };
 
         /// <summary>
@@ -161,8 +169,10 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V3
                 CustomerId = TEST_CUSTOMER_ID
             };
 
-            Assert.AreEqual(TestResources.DetailedSuccessLog.Trim(), logEntry.DetailedLog.Trim());
-            Assert.AreEqual(TestResources.SummarySuccessLog.Trim(), logEntry.SummaryLog.Trim());
+            AssertExtensions.AreMultiLineEqual(TestResources.DetailedSuccessLog,
+                logEntry.DetailedLog);
+            AssertExtensions.AreMultiLineEqual(TestResources.SummarySuccessLog,
+                logEntry.SummaryLog);
         }
 
         /// <summary>
@@ -184,8 +194,10 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V3
                 CustomerId = TEST_CUSTOMER_ID
             };
 
-            Assert.AreEqual(TestResources.DetailedFailureLog.Trim(), logEntry.DetailedLog.Trim());
-            Assert.AreEqual(TestResources.SummaryFailureLog.Trim(), logEntry.SummaryLog.Trim());
+            AssertExtensions.AreMultiLineEqual(TestResources.DetailedFailureLog,
+                logEntry.DetailedLog);
+            AssertExtensions.AreMultiLineEqual(TestResources.SummaryFailureLog,
+                logEntry.SummaryLog);
         }
 
         /// <summary>
@@ -208,9 +220,10 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V3
                 PartialFailures = TEST_PARTIAL_FAILURES
             };
 
-            Assert.AreEqual(TestResources.DetailedPartialFailureLog.Trim(),
-                logEntry.DetailedLog.Trim());
-            Assert.AreEqual(TestResources.SummarySuccessLog.Trim(), logEntry.SummaryLog.Trim());
+            AssertExtensions.AreMultiLineEqual(TestResources.DetailedPartialFailureLog,
+                logEntry.DetailedLog);
+            AssertExtensions.AreMultiLineEqual(TestResources.SummarySuccessLog,
+                logEntry.SummaryLog);
         }
     }
 }

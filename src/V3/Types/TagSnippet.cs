@@ -56,7 +56,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
   /// <summary>
   /// The site tag and event snippet pair for a TrackingCodeType.
   /// </summary>
-  public sealed partial class TagSnippet : pb::IMessage<TagSnippet> {
+  public sealed partial class TagSnippet : pb::IMessage<TagSnippet>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TagSnippet> _parser = new pb::MessageParser<TagSnippet>(() => new TagSnippet());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -196,6 +200,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Type != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
@@ -213,7 +220,31 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (PageFormat != global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) PageFormat);
+      }
+      if (globalSiteTag_ != null) {
+        _single_globalSiteTag_codec.WriteTagAndValue(ref output, GlobalSiteTag);
+      }
+      if (eventSnippet_ != null) {
+        _single_eventSnippet_codec.WriteTagAndValue(ref output, EventSnippet);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -262,6 +293,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -292,7 +326,44 @@ namespace Google.Ads.GoogleAds.V3.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Type = (global::Google.Ads.GoogleAds.V3.Enums.TrackingCodeTypeEnum.Types.TrackingCodeType) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            PageFormat = (global::Google.Ads.GoogleAds.V3.Enums.TrackingCodePageFormatEnum.Types.TrackingCodePageFormat) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            string value = _single_globalSiteTag_codec.Read(ref input);
+            if (globalSiteTag_ == null || value != "") {
+              GlobalSiteTag = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_eventSnippet_codec.Read(ref input);
+            if (eventSnippet_ == null || value != "") {
+              EventSnippet = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

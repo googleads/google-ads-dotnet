@@ -202,6 +202,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>MutateJobService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage mutate jobs.
+    /// </remarks>
     public abstract partial class MutateJobServiceClient
     {
         /// <summary>
@@ -1129,6 +1132,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>MutateJobService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage mutate jobs.
+    /// </remarks>
     public sealed partial class MutateJobServiceClientImpl : MutateJobServiceClient
     {
         private readonly gaxgrpc::ApiCall<CreateMutateJobRequest, CreateMutateJobResponse> _callCreateMutateJob;

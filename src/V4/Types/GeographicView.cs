@@ -62,7 +62,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// the user or an area of interest. If other segment fields are used, you may
   /// get more than one row per country.
   /// </summary>
-  public sealed partial class GeographicView : pb::IMessage<GeographicView> {
+  public sealed partial class GeographicView : pb::IMessage<GeographicView>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GeographicView> _parser = new pb::MessageParser<GeographicView>(() => new GeographicView());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -183,6 +187,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -197,7 +204,28 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (LocationType != global::Google.Ads.GoogleAds.V4.Enums.GeoTargetingTypeEnum.Types.GeoTargetingType.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) LocationType);
+      }
+      if (countryCriterionId_ != null) {
+        _single_countryCriterionId_codec.WriteTagAndValue(ref output, CountryCriterionId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -238,6 +266,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -261,7 +292,37 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 24: {
+            LocationType = (global::Google.Ads.GoogleAds.V4.Enums.GeoTargetingTypeEnum.Types.GeoTargetingType) input.ReadEnum();
+            break;
+          }
+          case 34: {
+            long? value = _single_countryCriterionId_codec.Read(ref input);
+            if (countryCriterionId_ == null || value != 0L) {
+              CountryCriterionId = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

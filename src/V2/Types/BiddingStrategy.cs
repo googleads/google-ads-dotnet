@@ -77,7 +77,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   /// <summary>
   /// A bidding strategy.
   /// </summary>
-  public sealed partial class BiddingStrategy : pb::IMessage<BiddingStrategy> {
+  public sealed partial class BiddingStrategy : pb::IMessage<BiddingStrategy>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BiddingStrategy> _parser = new pb::MessageParser<BiddingStrategy>(() => new BiddingStrategy());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -463,6 +467,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -518,7 +525,69 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V2.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Type);
+      }
+      if (schemeCase_ == SchemeOneofCase.EnhancedCpc) {
+        output.WriteRawTag(58);
+        output.WriteMessage(EnhancedCpc);
+      }
+      if (schemeCase_ == SchemeOneofCase.PageOnePromoted) {
+        output.WriteRawTag(66);
+        output.WriteMessage(PageOnePromoted);
+      }
+      if (schemeCase_ == SchemeOneofCase.TargetCpa) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TargetCpa);
+      }
+      if (schemeCase_ == SchemeOneofCase.TargetOutrankShare) {
+        output.WriteRawTag(82);
+        output.WriteMessage(TargetOutrankShare);
+      }
+      if (schemeCase_ == SchemeOneofCase.TargetRoas) {
+        output.WriteRawTag(90);
+        output.WriteMessage(TargetRoas);
+      }
+      if (schemeCase_ == SchemeOneofCase.TargetSpend) {
+        output.WriteRawTag(98);
+        output.WriteMessage(TargetSpend);
+      }
+      if (campaignCount_ != null) {
+        _single_campaignCount_codec.WriteTagAndValue(ref output, CampaignCount);
+      }
+      if (nonRemovedCampaignCount_ != null) {
+        _single_nonRemovedCampaignCount_codec.WriteTagAndValue(ref output, NonRemovedCampaignCount);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V2.Enums.BiddingStrategyStatusEnum.Types.BiddingStrategyStatus.Unspecified) {
+        output.WriteRawTag(120);
+        output.WriteEnum((int) Status);
+      }
+      if (schemeCase_ == SchemeOneofCase.TargetImpressionShare) {
+        output.WriteRawTag(130, 3);
+        output.WriteMessage(TargetImpressionShare);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -655,6 +724,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -766,7 +838,125 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 26: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 40: {
+            Type = (global::Google.Ads.GoogleAds.V2.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            global::Google.Ads.GoogleAds.V2.Common.EnhancedCpc subBuilder = new global::Google.Ads.GoogleAds.V2.Common.EnhancedCpc();
+            if (schemeCase_ == SchemeOneofCase.EnhancedCpc) {
+              subBuilder.MergeFrom(EnhancedCpc);
+            }
+            input.ReadMessage(subBuilder);
+            EnhancedCpc = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V2.Common.PageOnePromoted subBuilder = new global::Google.Ads.GoogleAds.V2.Common.PageOnePromoted();
+            if (schemeCase_ == SchemeOneofCase.PageOnePromoted) {
+              subBuilder.MergeFrom(PageOnePromoted);
+            }
+            input.ReadMessage(subBuilder);
+            PageOnePromoted = subBuilder;
+            break;
+          }
+          case 74: {
+            global::Google.Ads.GoogleAds.V2.Common.TargetCpa subBuilder = new global::Google.Ads.GoogleAds.V2.Common.TargetCpa();
+            if (schemeCase_ == SchemeOneofCase.TargetCpa) {
+              subBuilder.MergeFrom(TargetCpa);
+            }
+            input.ReadMessage(subBuilder);
+            TargetCpa = subBuilder;
+            break;
+          }
+          case 82: {
+            global::Google.Ads.GoogleAds.V2.Common.TargetOutrankShare subBuilder = new global::Google.Ads.GoogleAds.V2.Common.TargetOutrankShare();
+            if (schemeCase_ == SchemeOneofCase.TargetOutrankShare) {
+              subBuilder.MergeFrom(TargetOutrankShare);
+            }
+            input.ReadMessage(subBuilder);
+            TargetOutrankShare = subBuilder;
+            break;
+          }
+          case 90: {
+            global::Google.Ads.GoogleAds.V2.Common.TargetRoas subBuilder = new global::Google.Ads.GoogleAds.V2.Common.TargetRoas();
+            if (schemeCase_ == SchemeOneofCase.TargetRoas) {
+              subBuilder.MergeFrom(TargetRoas);
+            }
+            input.ReadMessage(subBuilder);
+            TargetRoas = subBuilder;
+            break;
+          }
+          case 98: {
+            global::Google.Ads.GoogleAds.V2.Common.TargetSpend subBuilder = new global::Google.Ads.GoogleAds.V2.Common.TargetSpend();
+            if (schemeCase_ == SchemeOneofCase.TargetSpend) {
+              subBuilder.MergeFrom(TargetSpend);
+            }
+            input.ReadMessage(subBuilder);
+            TargetSpend = subBuilder;
+            break;
+          }
+          case 106: {
+            long? value = _single_campaignCount_codec.Read(ref input);
+            if (campaignCount_ == null || value != 0L) {
+              CampaignCount = value;
+            }
+            break;
+          }
+          case 114: {
+            long? value = _single_nonRemovedCampaignCount_codec.Read(ref input);
+            if (nonRemovedCampaignCount_ == null || value != 0L) {
+              NonRemovedCampaignCount = value;
+            }
+            break;
+          }
+          case 120: {
+            Status = (global::Google.Ads.GoogleAds.V2.Enums.BiddingStrategyStatusEnum.Types.BiddingStrategyStatus) input.ReadEnum();
+            break;
+          }
+          case 386: {
+            global::Google.Ads.GoogleAds.V2.Common.TargetImpressionShare subBuilder = new global::Google.Ads.GoogleAds.V2.Common.TargetImpressionShare();
+            if (schemeCase_ == SchemeOneofCase.TargetImpressionShare) {
+              subBuilder.MergeFrom(TargetImpressionShare);
+            }
+            input.ReadMessage(subBuilder);
+            TargetImpressionShare = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

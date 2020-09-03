@@ -50,7 +50,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// A mapping that can be used by custom parameter tags in a
   /// `tracking_url_template`, `final_urls`, or `mobile_final_urls`.
   /// </summary>
-  public sealed partial class CustomParameter : pb::IMessage<CustomParameter> {
+  public sealed partial class CustomParameter : pb::IMessage<CustomParameter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CustomParameter> _parser = new pb::MessageParser<CustomParameter>(() => new CustomParameter());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -153,6 +157,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (key_ != null) {
         _single_key_codec.WriteTagAndValue(output, Key);
       }
@@ -162,7 +169,23 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (key_ != null) {
+        _single_key_codec.WriteTagAndValue(ref output, Key);
+      }
+      if (value_ != null) {
+        _single_value_codec.WriteTagAndValue(ref output, Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -199,6 +222,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -221,7 +247,36 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            string value = _single_key_codec.Read(ref input);
+            if (key_ == null || value != "") {
+              Key = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_value_codec.Read(ref input);
+            if (value_ == null || value != "") {
+              Value = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

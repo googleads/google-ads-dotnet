@@ -17,12 +17,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
-using static Google.Ads.GoogleAds.V4.Enums.FlightPlaceholderFieldEnum.Types;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
+using static Google.Ads.GoogleAds.V5.Enums.FlightPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example updates a FeedItemAttributeValue in a flights feed. To create a flights
@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService =
-                client.GetService(Services.V4.FeedItemService);
+                client.GetService(Services.V5.FeedItemService);
 
             // Gets the feed resource name.
             string feedResourceName = ResourceNames.Feed(customerId, feedId);
@@ -145,8 +145,21 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // are not included in the updated FeedItem will be removed from the FeedItem, which is
             // why you must create the FeedItem from the existing FeedItem and set the field(s)
             // that will be updated.
-            feedItem.AttributeValues[GetAttributeIndex(feedItem, feedItemAttributeValue)] =
-                feedItemAttributeValue;
+            int attributeIndex = feedItem.AttributeValues
+                .Select((item, index) => new {item, index})
+                .Where(itemIndexPair =>
+                    itemIndexPair.item.FeedAttributeId.Value ==
+                    feedItemAttributeValue.FeedAttributeId.Value)
+                .Select(itemIndexPair => itemIndexPair.index + 1)
+                .FirstOrDefault() - 1;
+
+            if (attributeIndex == -1)
+            {
+                throw new ArgumentException("No matching feed attribute found for " +
+                    $"value '{feedItemAttributeValue}'.");
+            }
+
+            feedItem.AttributeValues[attributeIndex] = feedItemAttributeValue;
 
             // Creates the operation.
             FeedItemOperation operation = new FeedItemOperation()
@@ -177,19 +190,17 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID for which the flights feed is
         /// added.</param>
         /// <param name="feedResourceName">The resource name of the feed.</param>
-        /// <returns>
-        /// A Map containing the FlightPlaceholderField and FeedAttribute.
-        /// </returns>
+        /// <returns>A Map containing the FlightPlaceholderField and FeedAttribute.</returns>
         public Dictionary<FlightPlaceholderField, FeedAttribute> GetFeed(
             GoogleAdsClient client, long customerId, string feedResourceName)
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Constructs the query.
-            string query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
-                           $"'{feedResourceName}'";
+            string query = "SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
+                $"'{feedResourceName}'";
 
             // Constructs the request.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
@@ -254,11 +265,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed_item.attribute_values FROM feed_item WHERE " +
-                           $"feed_item.resource_name = '{feedItemResourceName}'";
+                $"feed_item.resource_name = '{feedItemResourceName}'";
 
             // Constructs the request.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
@@ -268,41 +279,6 @@ namespace Google.Ads.GoogleAds.Examples.V4
             };
 
             return googleAdsService.Search(request).First().FeedItem;
-        }
-
-        /// <summary>
-        /// Gets the ID of the attribute. This is needed to specify which FeedItemAttributeValue
-        /// will be updated in the given FeedItem.
-        /// </summary>
-        /// <param name="feedItem">The FeedItem that will be updated.</param>
-        /// <param name="newFeedItemAttributeValue">The new FeedItemAttributeValue that will be
-        /// updated.</param>
-        /// <returns>The index of the attribute.</returns>
-        private int GetAttributeIndex(FeedItem feedItem,
-            FeedItemAttributeValue newFeedItemAttributeValue)
-        {
-            int attributeIndex = -1;
-            // Loops through attribute values to find the index of the FeedItemAttributeValue
-            // to update.
-            foreach (FeedItemAttributeValue feedItemAttributeValue in feedItem.AttributeValues)
-            {
-                attributeIndex = (attributeIndex == -1) ? attributeIndex + 1 : 0;
-                // Checks if the current feedItemAttributeValue is the one we are updating.
-                if (feedItemAttributeValue.FeedAttributeId
-                    == newFeedItemAttributeValue.FeedAttributeId)
-                {
-                    break;
-                }
-            }
-
-            // Throws an exception if the attribute value is not found.
-            if (attributeIndex == -1)
-            {
-                new ArgumentException($"No matching feed attribute for feed item attribute " +
-                    $"value: {newFeedItemAttributeValue}");
-            }
-
-            return attributeIndex;
         }
     }
 }

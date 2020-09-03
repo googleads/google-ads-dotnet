@@ -77,7 +77,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   /// <summary>
   /// Represents an ad group bid modifier.
   /// </summary>
-  public sealed partial class AdGroupBidModifier : pb::IMessage<AdGroupBidModifier> {
+  public sealed partial class AdGroupBidModifier : pb::IMessage<AdGroupBidModifier>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdGroupBidModifier> _parser = new pb::MessageParser<AdGroupBidModifier>(() => new AdGroupBidModifier());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -405,6 +409,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -452,7 +459,61 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (adGroup_ != null) {
+        _single_adGroup_codec.WriteTagAndValue(ref output, AdGroup);
+      }
+      if (criterionId_ != null) {
+        _single_criterionId_codec.WriteTagAndValue(ref output, CriterionId);
+      }
+      if (bidModifier_ != null) {
+        _single_bidModifier_codec.WriteTagAndValue(ref output, BidModifier);
+      }
+      if (criterionCase_ == CriterionOneofCase.HotelDateSelectionType) {
+        output.WriteRawTag(42);
+        output.WriteMessage(HotelDateSelectionType);
+      }
+      if (criterionCase_ == CriterionOneofCase.HotelAdvanceBookingWindow) {
+        output.WriteRawTag(50);
+        output.WriteMessage(HotelAdvanceBookingWindow);
+      }
+      if (criterionCase_ == CriterionOneofCase.HotelLengthOfStay) {
+        output.WriteRawTag(58);
+        output.WriteMessage(HotelLengthOfStay);
+      }
+      if (criterionCase_ == CriterionOneofCase.HotelCheckInDay) {
+        output.WriteRawTag(66);
+        output.WriteMessage(HotelCheckInDay);
+      }
+      if (baseAdGroup_ != null) {
+        _single_baseAdGroup_codec.WriteTagAndValue(ref output, BaseAdGroup);
+      }
+      if (BidModifierSource != global::Google.Ads.GoogleAds.V2.Enums.BidModifierSourceEnum.Types.BidModifierSource.Unspecified) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) BidModifierSource);
+      }
+      if (criterionCase_ == CriterionOneofCase.Device) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Device);
+      }
+      if (criterionCase_ == CriterionOneofCase.PreferredContent) {
+        output.WriteRawTag(98);
+        output.WriteMessage(PreferredContent);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -574,6 +635,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -672,7 +736,112 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            string value = _single_adGroup_codec.Read(ref input);
+            if (adGroup_ == null || value != "") {
+              AdGroup = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_criterionId_codec.Read(ref input);
+            if (criterionId_ == null || value != 0L) {
+              CriterionId = value;
+            }
+            break;
+          }
+          case 34: {
+            double? value = _single_bidModifier_codec.Read(ref input);
+            if (bidModifier_ == null || value != 0D) {
+              BidModifier = value;
+            }
+            break;
+          }
+          case 42: {
+            global::Google.Ads.GoogleAds.V2.Common.HotelDateSelectionTypeInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.HotelDateSelectionTypeInfo();
+            if (criterionCase_ == CriterionOneofCase.HotelDateSelectionType) {
+              subBuilder.MergeFrom(HotelDateSelectionType);
+            }
+            input.ReadMessage(subBuilder);
+            HotelDateSelectionType = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Google.Ads.GoogleAds.V2.Common.HotelAdvanceBookingWindowInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.HotelAdvanceBookingWindowInfo();
+            if (criterionCase_ == CriterionOneofCase.HotelAdvanceBookingWindow) {
+              subBuilder.MergeFrom(HotelAdvanceBookingWindow);
+            }
+            input.ReadMessage(subBuilder);
+            HotelAdvanceBookingWindow = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Google.Ads.GoogleAds.V2.Common.HotelLengthOfStayInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.HotelLengthOfStayInfo();
+            if (criterionCase_ == CriterionOneofCase.HotelLengthOfStay) {
+              subBuilder.MergeFrom(HotelLengthOfStay);
+            }
+            input.ReadMessage(subBuilder);
+            HotelLengthOfStay = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V2.Common.HotelCheckInDayInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.HotelCheckInDayInfo();
+            if (criterionCase_ == CriterionOneofCase.HotelCheckInDay) {
+              subBuilder.MergeFrom(HotelCheckInDay);
+            }
+            input.ReadMessage(subBuilder);
+            HotelCheckInDay = subBuilder;
+            break;
+          }
+          case 74: {
+            string value = _single_baseAdGroup_codec.Read(ref input);
+            if (baseAdGroup_ == null || value != "") {
+              BaseAdGroup = value;
+            }
+            break;
+          }
+          case 80: {
+            BidModifierSource = (global::Google.Ads.GoogleAds.V2.Enums.BidModifierSourceEnum.Types.BidModifierSource) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            global::Google.Ads.GoogleAds.V2.Common.DeviceInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.DeviceInfo();
+            if (criterionCase_ == CriterionOneofCase.Device) {
+              subBuilder.MergeFrom(Device);
+            }
+            input.ReadMessage(subBuilder);
+            Device = subBuilder;
+            break;
+          }
+          case 98: {
+            global::Google.Ads.GoogleAds.V2.Common.PreferredContentInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.PreferredContentInfo();
+            if (criterionCase_ == CriterionOneofCase.PreferredContent) {
+              subBuilder.MergeFrom(PreferredContent);
+            }
+            input.ReadMessage(subBuilder);
+            PreferredContent = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

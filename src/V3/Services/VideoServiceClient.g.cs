@@ -125,6 +125,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>VideoService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage videos.
+    /// </remarks>
     public abstract partial class VideoServiceClient
     {
         /// <summary>
@@ -300,6 +303,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>VideoService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage videos.
+    /// </remarks>
     public sealed partial class VideoServiceClientImpl : VideoServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetVideoRequest, gagvr::Video> _callGetVideo;

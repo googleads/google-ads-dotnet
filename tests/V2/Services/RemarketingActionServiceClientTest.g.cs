@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedRemarketingActionServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetRemarketingActionRequestObject()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
@@ -55,7 +55,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetRemarketingActionRequestObjectAsync()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetRemarketingAction()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
@@ -107,7 +107,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetRemarketingActionAsync()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
@@ -134,7 +134,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetRemarketingActionResourceNames()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
@@ -159,7 +159,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetRemarketingActionResourceNamesAsync()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
@@ -186,7 +186,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateRemarketingActionsRequestObject()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
@@ -215,7 +215,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateRemarketingActionsRequestObjectAsync()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
@@ -246,7 +246,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateRemarketingActions()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);
@@ -273,7 +273,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateRemarketingActionsAsync()
         {
             moq::Mock<RemarketingActionService.RemarketingActionServiceClient> mockGrpcClient = new moq::Mock<RemarketingActionService.RemarketingActionServiceClient>(moq::MockBehavior.Strict);

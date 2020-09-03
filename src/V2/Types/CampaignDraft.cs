@@ -65,7 +65,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   /// <summary>
   /// A campaign draft.
   /// </summary>
-  public sealed partial class CampaignDraft : pb::IMessage<CampaignDraft> {
+  public sealed partial class CampaignDraft : pb::IMessage<CampaignDraft>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CampaignDraft> _parser = new pb::MessageParser<CampaignDraft>(() => new CampaignDraft());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -296,6 +300,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -325,7 +332,43 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (draftId_ != null) {
+        _single_draftId_codec.WriteTagAndValue(ref output, DraftId);
+      }
+      if (baseCampaign_ != null) {
+        _single_baseCampaign_codec.WriteTagAndValue(ref output, BaseCampaign);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (draftCampaign_ != null) {
+        _single_draftCampaign_codec.WriteTagAndValue(ref output, DraftCampaign);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V2.Enums.CampaignDraftStatusEnum.Types.CampaignDraftStatus.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Status);
+      }
+      if (hasExperimentRunning_ != null) {
+        _single_hasExperimentRunning_codec.WriteTagAndValue(ref output, HasExperimentRunning);
+      }
+      if (longRunningOperation_ != null) {
+        _single_longRunningOperation_codec.WriteTagAndValue(ref output, LongRunningOperation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -406,6 +449,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -464,7 +510,72 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_draftId_codec.Read(ref input);
+            if (draftId_ == null || value != 0L) {
+              DraftId = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_baseCampaign_codec.Read(ref input);
+            if (baseCampaign_ == null || value != "") {
+              BaseCampaign = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_draftCampaign_codec.Read(ref input);
+            if (draftCampaign_ == null || value != "") {
+              DraftCampaign = value;
+            }
+            break;
+          }
+          case 48: {
+            Status = (global::Google.Ads.GoogleAds.V2.Enums.CampaignDraftStatusEnum.Types.CampaignDraftStatus) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            bool? value = _single_hasExperimentRunning_codec.Read(ref input);
+            if (hasExperimentRunning_ == null || value != false) {
+              HasExperimentRunning = value;
+            }
+            break;
+          }
+          case 66: {
+            string value = _single_longRunningOperation_codec.Read(ref input);
+            if (longRunningOperation_ == null || value != "") {
+              LongRunningOperation = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

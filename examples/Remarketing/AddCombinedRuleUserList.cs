@@ -15,16 +15,16 @@
 using System;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
-using static Google.Ads.GoogleAds.V4.Enums.UserListStringRuleItemOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.UserListCombinedRuleOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.UserListPrepopulationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.UserListMembershipStatusEnum.Types;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
+using static Google.Ads.GoogleAds.V5.Enums.UserListStringRuleItemOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.UserListCombinedRuleOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.UserListPrepopulationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.UserListMembershipStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example creates a rule-based user list defined by a combination of rules for users
@@ -63,7 +63,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the UserListServiceClient.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V4.UserListService);
+                client.GetService(Services.V5.UserListService);
 
             // Creates a rule targeting any user that visited a url that equals
             // 'http://example.com/example1'.

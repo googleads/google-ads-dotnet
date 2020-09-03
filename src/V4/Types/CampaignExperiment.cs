@@ -75,7 +75,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// An A/B experiment that compares the performance of the base campaign
   /// (the control) and a variation of that campaign (the experiment).
   /// </summary>
-  public sealed partial class CampaignExperiment : pb::IMessage<CampaignExperiment> {
+  public sealed partial class CampaignExperiment : pb::IMessage<CampaignExperiment>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CampaignExperiment> _parser = new pb::MessageParser<CampaignExperiment>(() => new CampaignExperiment());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -389,6 +393,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -431,7 +438,56 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (campaignDraft_ != null) {
+        _single_campaignDraft_codec.WriteTagAndValue(ref output, CampaignDraft);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (description_ != null) {
+        _single_description_codec.WriteTagAndValue(ref output, Description);
+      }
+      if (trafficSplitPercent_ != null) {
+        _single_trafficSplitPercent_codec.WriteTagAndValue(ref output, TrafficSplitPercent);
+      }
+      if (TrafficSplitType != global::Google.Ads.GoogleAds.V4.Enums.CampaignExperimentTrafficSplitTypeEnum.Types.CampaignExperimentTrafficSplitType.Unspecified) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) TrafficSplitType);
+      }
+      if (experimentCampaign_ != null) {
+        _single_experimentCampaign_codec.WriteTagAndValue(ref output, ExperimentCampaign);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V4.Enums.CampaignExperimentStatusEnum.Types.CampaignExperimentStatus.Unspecified) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) Status);
+      }
+      if (longRunningOperation_ != null) {
+        _single_longRunningOperation_codec.WriteTagAndValue(ref output, LongRunningOperation);
+      }
+      if (startDate_ != null) {
+        _single_startDate_codec.WriteTagAndValue(ref output, StartDate);
+      }
+      if (endDate_ != null) {
+        _single_endDate_codec.WriteTagAndValue(ref output, EndDate);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -542,6 +598,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -625,7 +684,97 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_campaignDraft_codec.Read(ref input);
+            if (campaignDraft_ == null || value != "") {
+              CampaignDraft = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_description_codec.Read(ref input);
+            if (description_ == null || value != "") {
+              Description = value;
+            }
+            break;
+          }
+          case 50: {
+            long? value = _single_trafficSplitPercent_codec.Read(ref input);
+            if (trafficSplitPercent_ == null || value != 0L) {
+              TrafficSplitPercent = value;
+            }
+            break;
+          }
+          case 56: {
+            TrafficSplitType = (global::Google.Ads.GoogleAds.V4.Enums.CampaignExperimentTrafficSplitTypeEnum.Types.CampaignExperimentTrafficSplitType) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            string value = _single_experimentCampaign_codec.Read(ref input);
+            if (experimentCampaign_ == null || value != "") {
+              ExperimentCampaign = value;
+            }
+            break;
+          }
+          case 72: {
+            Status = (global::Google.Ads.GoogleAds.V4.Enums.CampaignExperimentStatusEnum.Types.CampaignExperimentStatus) input.ReadEnum();
+            break;
+          }
+          case 82: {
+            string value = _single_longRunningOperation_codec.Read(ref input);
+            if (longRunningOperation_ == null || value != "") {
+              LongRunningOperation = value;
+            }
+            break;
+          }
+          case 90: {
+            string value = _single_startDate_codec.Read(ref input);
+            if (startDate_ == null || value != "") {
+              StartDate = value;
+            }
+            break;
+          }
+          case 98: {
+            string value = _single_endDate_codec.Read(ref input);
+            if (endDate_ == null || value != "") {
+              EndDate = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

@@ -144,6 +144,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupExtensionSettingService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group extension settings.
+    /// </remarks>
     public abstract partial class AdGroupExtensionSettingServiceClient
     {
         /// <summary>
@@ -418,6 +421,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupExtensionSettingService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group extension settings.
+    /// </remarks>
     public sealed partial class AdGroupExtensionSettingServiceClientImpl : AdGroupExtensionSettingServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupExtensionSettingRequest, gagvr::AdGroupExtensionSetting> _callGetAdGroupExtensionSetting;

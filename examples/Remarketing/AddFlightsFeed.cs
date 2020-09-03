@@ -13,18 +13,18 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V4.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.FlightPlaceholderFieldEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.FlightPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.PlaceholderTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example adds a flights feed, creates the associated feed mapping, and
@@ -98,7 +98,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         private string CreateFeed(GoogleAdsClient client, long customerId)
         {
             // Get the FeedService.
-            FeedServiceClient feedService = client.GetService(Services.V4.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V5.FeedService);
 
             // Creates a Flight Description attribute.
             FeedAttribute flightDescriptionAttribute = new FeedAttribute()
@@ -186,7 +186,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Constructs the query.
             string query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -255,7 +255,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the FeedMappingServiceClient.
             FeedMappingServiceClient feedMappingService = client.GetService(
-                Services.V4.FeedMappingService);
+                Services.V5.FeedMappingService);
 
             // Maps the FeedAttributeIds to the fieldId constants.
             AttributeFieldMapping flightDescriptionMapping = new AttributeFieldMapping()
@@ -335,7 +335,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService = client.GetService(
-                Services.V4.FeedItemService);
+                Services.V5.FeedItemService);
 
             // Creates the flight description feed attribute value.
             FeedItemAttributeValue flightDescription = new FeedItemAttributeValue()

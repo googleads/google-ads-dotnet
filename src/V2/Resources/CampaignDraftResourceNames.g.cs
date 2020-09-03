@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <see cref="gagvr::CampaignDraftName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::CampaignDraftName ResourceNameAsCampaignDraftName
+        internal CampaignDraftName ResourceNameAsCampaignDraftName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::CampaignDraftName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -268,7 +268,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <summary>
         /// <see cref="gagvr::CampaignDraftName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::CampaignDraftName CampaignDraftName
+        internal CampaignDraftName CampaignDraftName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::CampaignDraftName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

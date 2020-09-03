@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedAdGroupLabelServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupLabelRequestObject()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);
@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupLabelRequestObjectAsync()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupLabel()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupLabelAsync()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);
@@ -117,7 +117,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupLabelResourceNames()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);
@@ -138,7 +138,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupLabelResourceNamesAsync()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);
@@ -161,7 +161,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAdGroupLabelsRequestObject()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);
@@ -190,7 +190,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAdGroupLabelsRequestObjectAsync()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);
@@ -221,7 +221,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAdGroupLabels()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);
@@ -248,7 +248,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAdGroupLabelsAsync()
         {
             moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient> mockGrpcClient = new moq::Mock<AdGroupLabelService.AdGroupLabelServiceClient>(moq::MockBehavior.Strict);

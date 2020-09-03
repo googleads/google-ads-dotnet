@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedClickViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetClickViewRequestObject()
         {
             moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetClickViewRequestObjectAsync()
         {
             moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
@@ -79,7 +79,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetClickView()
         {
             moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetClickViewAsync()
         {
             moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
@@ -129,7 +129,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetClickViewResourceNames()
         {
             moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);
@@ -153,7 +153,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetClickViewResourceNamesAsync()
         {
             moq::Mock<ClickViewService.ClickViewServiceClient> mockGrpcClient = new moq::Mock<ClickViewService.ClickViewServiceClient>(moq::MockBehavior.Strict);

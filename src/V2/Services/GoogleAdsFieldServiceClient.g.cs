@@ -144,6 +144,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>GoogleAdsFieldService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Google Ads API fields.
+    /// </remarks>
     public abstract partial class GoogleAdsFieldServiceClient
     {
         /// <summary>
@@ -388,6 +391,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>GoogleAdsFieldService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Google Ads API fields.
+    /// </remarks>
     public sealed partial class GoogleAdsFieldServiceClientImpl : GoogleAdsFieldServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetGoogleAdsFieldRequest, gagvr::GoogleAdsField> _callGetGoogleAdsField;

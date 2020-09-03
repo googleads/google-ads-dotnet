@@ -96,7 +96,15 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V2
         private readonly HelloRequest TEST_REQUEST = new HelloRequest()
         {
             CustomerId = TEST_CUSTOMER_ID,
-            Name = "API"
+            Name = "API",
+            Age = 25,
+            Address = new Address()
+            {
+                Line1 = "111 8th Ave",
+                City = "New York",
+                Zipcode = 10011,
+                State = "NY"
+            }
         };
 
         /// <summary>

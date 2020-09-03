@@ -298,7 +298,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <see cref="LanguageConstantName"/>-typed view over the <see cref="LanguageConstants"/> resource name
         /// property.
         /// </summary>
-        public gax::ResourceNameList<LanguageConstantName> LanguageConstantsAsLanguageConstantNames
+        internal gax::ResourceNameList<LanguageConstantName> LanguageConstantsAsLanguageConstantNames
         {
             get => new gax::ResourceNameList<LanguageConstantName>(LanguageConstants, s => string.IsNullOrEmpty(s) ? null : LanguageConstantName.Parse(s, allowUnparsed: true));
         }

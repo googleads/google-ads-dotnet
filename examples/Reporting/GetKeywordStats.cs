@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using static Google.Ads.GoogleAds.V4.Services.GoogleAdsServiceClient;
+using static Google.Ads.GoogleAds.V5.Services.GoogleAdsServiceClient;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example illustrates getting keyword stats.
@@ -58,11 +58,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Create the query.
             string query =
-                $@"SELECT
+                @"SELECT
                  campaign.id,
                  campaign.name,
                  ad_group.id,
@@ -72,8 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                  ad_group_criterion.keyword.match_type,
                  metrics.impressions,
                  metrics.clicks,
-                 metrics.cost_micros,
-                 metrics.video_quartile_25_rate
+                 metrics.cost_micros
              FROM keyword_view
              WHERE segments.date DURING LAST_7_DAYS
                  AND campaign.advertising_channel_type = 'SEARCH'
@@ -92,7 +91,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                         foreach (GoogleAdsRow criterionRow in resp.Results)
                         {
                             Console.WriteLine(
-                                $"Keyword with text " +
+                                "Keyword with text " +
                                 $"'{criterionRow.AdGroupCriterion.Keyword.Text}', match type " +
                                 $"'{criterionRow.AdGroupCriterion.Keyword.MatchType}' and ID " +
                                 $"{criterionRow.AdGroupCriterion.CriterionId} in ad group " +
@@ -103,7 +102,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                                 $"{criterionRow.Metrics.Impressions.ToString()} impressions, " +
                                 $"{criterionRow.Metrics.Clicks} clicks, and " +
                                 $"{criterionRow.Metrics.CostMicros} cost (in micros) during the " +
-                                $"last 7 days.");
+                                "last 7 days.");
                         }
                     }
                 );

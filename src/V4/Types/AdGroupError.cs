@@ -59,7 +59,11 @@ namespace Google.Ads.GoogleAds.V4.Errors {
   /// <summary>
   /// Container for enum describing possible ad group errors.
   /// </summary>
-  public sealed partial class AdGroupErrorEnum : pb::IMessage<AdGroupErrorEnum> {
+  public sealed partial class AdGroupErrorEnum : pb::IMessage<AdGroupErrorEnum>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdGroupErrorEnum> _parser = new pb::MessageParser<AdGroupErrorEnum>(() => new AdGroupErrorEnum());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -124,10 +128,23 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -148,6 +165,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -156,7 +176,22 @@ namespace Google.Ads.GoogleAds.V4.Errors {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the AdGroupErrorEnum message type.</summary>
@@ -226,7 +261,8 @@ namespace Google.Ads.GoogleAds.V4.Errors {
         /// </summary>
         [pbr::OriginalName("CANNOT_ADD_ADGROUP_OF_TYPE_DSA_TO_CAMPAIGN_WITHOUT_DSA_SETTING")] CannotAddAdgroupOfTypeDsaToCampaignWithoutDsaSetting = 14,
         /// <summary>
-        /// Promoted hotels ad groups are only available to whitelisted customers.
+        /// Promoted hotels ad groups are only available to customers on the
+        /// allow-list.
         /// </summary>
         [pbr::OriginalName("PROMOTED_HOTEL_AD_GROUPS_NOT_AVAILABLE_FOR_CUSTOMER")] PromotedHotelAdGroupsNotAvailableForCustomer = 15,
       }

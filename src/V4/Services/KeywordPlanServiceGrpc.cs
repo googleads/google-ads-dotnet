@@ -112,8 +112,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
       /// <summary>
       /// Returns the requested Keyword Plan forecast curve.
       /// Only the bidding strategy is considered for generating forecast curve.
-      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
-      /// strategy) specified in the plan is ignored.
+      /// The bidding strategy value specified in the plan is ignored.
       ///
       /// To generate a forecast at a value specified in the plan, use
       /// KeywordPlanService.GenerateForecastMetrics.
@@ -268,8 +267,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
       /// <summary>
       /// Returns the requested Keyword Plan forecast curve.
       /// Only the bidding strategy is considered for generating forecast curve.
-      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
-      /// strategy) specified in the plan is ignored.
+      /// The bidding strategy value specified in the plan is ignored.
       ///
       /// To generate a forecast at a value specified in the plan, use
       /// KeywordPlanService.GenerateForecastMetrics.
@@ -286,8 +284,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
       /// <summary>
       /// Returns the requested Keyword Plan forecast curve.
       /// Only the bidding strategy is considered for generating forecast curve.
-      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
-      /// strategy) specified in the plan is ignored.
+      /// The bidding strategy value specified in the plan is ignored.
       ///
       /// To generate a forecast at a value specified in the plan, use
       /// KeywordPlanService.GenerateForecastMetrics.
@@ -302,8 +299,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
       /// <summary>
       /// Returns the requested Keyword Plan forecast curve.
       /// Only the bidding strategy is considered for generating forecast curve.
-      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
-      /// strategy) specified in the plan is ignored.
+      /// The bidding strategy value specified in the plan is ignored.
       ///
       /// To generate a forecast at a value specified in the plan, use
       /// KeywordPlanService.GenerateForecastMetrics.
@@ -320,8 +316,7 @@ namespace Google.Ads.GoogleAds.V4.Services {
       /// <summary>
       /// Returns the requested Keyword Plan forecast curve.
       /// Only the bidding strategy is considered for generating forecast curve.
-      /// The bidding strategy value (eg: max_cpc_bid_micros in maximize cpc bidding
-      /// strategy) specified in the plan is ignored.
+      /// The bidding strategy value specified in the plan is ignored.
       ///
       /// To generate a forecast at a value specified in the plan, use
       /// KeywordPlanService.GenerateForecastMetrics.

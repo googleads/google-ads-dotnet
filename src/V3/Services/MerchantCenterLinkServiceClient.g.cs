@@ -157,6 +157,10 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>MerchantCenterLinkService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// This service allows management of links between Google Ads and Google
+    /// Merchant Center.
+    /// </remarks>
     public abstract partial class MerchantCenterLinkServiceClient
     {
         /// <summary>
@@ -481,6 +485,10 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>MerchantCenterLinkService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// This service allows management of links between Google Ads and Google
+    /// Merchant Center.
+    /// </remarks>
     public sealed partial class MerchantCenterLinkServiceClientImpl : MerchantCenterLinkServiceClient
     {
         private readonly gaxgrpc::ApiCall<ListMerchantCenterLinksRequest, ListMerchantCenterLinksResponse> _callListMerchantCenterLinks;

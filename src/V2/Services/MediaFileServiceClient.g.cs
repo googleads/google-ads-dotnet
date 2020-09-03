@@ -139,6 +139,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>MediaFileService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage media files.
+    /// </remarks>
     public abstract partial class MediaFileServiceClient
     {
         /// <summary>
@@ -397,6 +400,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>MediaFileService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage media files.
+    /// </remarks>
     public sealed partial class MediaFileServiceClientImpl : MediaFileServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetMediaFileRequest, gagvr::MediaFile> _callGetMediaFile;

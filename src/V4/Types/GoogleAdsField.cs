@@ -73,7 +73,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// <summary>
   /// A field or resource (artifact) used by GoogleAdsService.
   /// </summary>
-  public sealed partial class GoogleAdsField : pb::IMessage<GoogleAdsField> {
+  public sealed partial class GoogleAdsField : pb::IMessage<GoogleAdsField>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GoogleAdsField> _parser = new pb::MessageParser<GoogleAdsField>(() => new GoogleAdsField());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -411,6 +415,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -449,7 +456,52 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (Category != global::Google.Ads.GoogleAds.V4.Enums.GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Category);
+      }
+      if (selectable_ != null) {
+        _single_selectable_codec.WriteTagAndValue(ref output, Selectable);
+      }
+      if (filterable_ != null) {
+        _single_filterable_codec.WriteTagAndValue(ref output, Filterable);
+      }
+      if (sortable_ != null) {
+        _single_sortable_codec.WriteTagAndValue(ref output, Sortable);
+      }
+      selectableWith_.WriteTo(ref output, _repeated_selectableWith_codec);
+      attributeResources_.WriteTo(ref output, _repeated_attributeResources_codec);
+      metrics_.WriteTo(ref output, _repeated_metrics_codec);
+      segments_.WriteTo(ref output, _repeated_segments_codec);
+      enumValues_.WriteTo(ref output, _repeated_enumValues_codec);
+      if (DataType != global::Google.Ads.GoogleAds.V4.Enums.GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType.Unspecified) {
+        output.WriteRawTag(96);
+        output.WriteEnum((int) DataType);
+      }
+      if (typeUrl_ != null) {
+        _single_typeUrl_codec.WriteTagAndValue(ref output, TypeUrl);
+      }
+      if (isRepeated_ != null) {
+        _single_isRepeated_codec.WriteTagAndValue(ref output, IsRepeated);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -546,6 +598,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -628,7 +683,96 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 24: {
+            Category = (global::Google.Ads.GoogleAds.V4.Enums.GoogleAdsFieldCategoryEnum.Types.GoogleAdsFieldCategory) input.ReadEnum();
+            break;
+          }
+          case 34: {
+            bool? value = _single_selectable_codec.Read(ref input);
+            if (selectable_ == null || value != false) {
+              Selectable = value;
+            }
+            break;
+          }
+          case 42: {
+            bool? value = _single_filterable_codec.Read(ref input);
+            if (filterable_ == null || value != false) {
+              Filterable = value;
+            }
+            break;
+          }
+          case 50: {
+            bool? value = _single_sortable_codec.Read(ref input);
+            if (sortable_ == null || value != false) {
+              Sortable = value;
+            }
+            break;
+          }
+          case 58: {
+            selectableWith_.AddEntriesFrom(ref input, _repeated_selectableWith_codec);
+            break;
+          }
+          case 66: {
+            attributeResources_.AddEntriesFrom(ref input, _repeated_attributeResources_codec);
+            break;
+          }
+          case 74: {
+            metrics_.AddEntriesFrom(ref input, _repeated_metrics_codec);
+            break;
+          }
+          case 82: {
+            segments_.AddEntriesFrom(ref input, _repeated_segments_codec);
+            break;
+          }
+          case 90: {
+            enumValues_.AddEntriesFrom(ref input, _repeated_enumValues_codec);
+            break;
+          }
+          case 96: {
+            DataType = (global::Google.Ads.GoogleAds.V4.Enums.GoogleAdsFieldDataTypeEnum.Types.GoogleAdsFieldDataType) input.ReadEnum();
+            break;
+          }
+          case 106: {
+            string value = _single_typeUrl_codec.Read(ref input);
+            if (typeUrl_ == null || value != "") {
+              TypeUrl = value;
+            }
+            break;
+          }
+          case 114: {
+            bool? value = _single_isRepeated_codec.Read(ref input);
+            if (isRepeated_ == null || value != false) {
+              IsRepeated = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

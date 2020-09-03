@@ -83,7 +83,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// <summary>
   /// A campaign budget.
   /// </summary>
-  public sealed partial class CampaignBudget : pb::IMessage<CampaignBudget> {
+  public sealed partial class CampaignBudget : pb::IMessage<CampaignBudget>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CampaignBudget> _parser = new pb::MessageParser<CampaignBudget>(() => new CampaignBudget());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -517,6 +521,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -576,7 +583,73 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (amountMicros_ != null) {
+        _single_amountMicros_codec.WriteTagAndValue(ref output, AmountMicros);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusEnum.Types.BudgetStatus.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Status);
+      }
+      if (DeliveryMethod != global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod.Unspecified) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) DeliveryMethod);
+      }
+      if (explicitlyShared_ != null) {
+        _single_explicitlyShared_codec.WriteTagAndValue(ref output, ExplicitlyShared);
+      }
+      if (referenceCount_ != null) {
+        _single_referenceCount_codec.WriteTagAndValue(ref output, ReferenceCount);
+      }
+      if (totalAmountMicros_ != null) {
+        _single_totalAmountMicros_codec.WriteTagAndValue(ref output, TotalAmountMicros);
+      }
+      if (hasRecommendedBudget_ != null) {
+        _single_hasRecommendedBudget_codec.WriteTagAndValue(ref output, HasRecommendedBudget);
+      }
+      if (recommendedBudgetAmountMicros_ != null) {
+        _single_recommendedBudgetAmountMicros_codec.WriteTagAndValue(ref output, RecommendedBudgetAmountMicros);
+      }
+      if (Period != global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod.Unspecified) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) Period);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyClicks_ != null) {
+        _single_recommendedBudgetEstimatedChangeWeeklyClicks_codec.WriteTagAndValue(ref output, RecommendedBudgetEstimatedChangeWeeklyClicks);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyCostMicros_ != null) {
+        _single_recommendedBudgetEstimatedChangeWeeklyCostMicros_codec.WriteTagAndValue(ref output, RecommendedBudgetEstimatedChangeWeeklyCostMicros);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyInteractions_ != null) {
+        _single_recommendedBudgetEstimatedChangeWeeklyInteractions_codec.WriteTagAndValue(ref output, RecommendedBudgetEstimatedChangeWeeklyInteractions);
+      }
+      if (recommendedBudgetEstimatedChangeWeeklyViews_ != null) {
+        _single_recommendedBudgetEstimatedChangeWeeklyViews_codec.WriteTagAndValue(ref output, RecommendedBudgetEstimatedChangeWeeklyViews);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeEnum.Types.BudgetType.Unspecified) {
+        output.WriteRawTag(144, 1);
+        output.WriteEnum((int) Type);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -723,6 +796,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -835,7 +911,126 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 26: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 42: {
+            long? value = _single_amountMicros_codec.Read(ref input);
+            if (amountMicros_ == null || value != 0L) {
+              AmountMicros = value;
+            }
+            break;
+          }
+          case 48: {
+            Status = (global::Google.Ads.GoogleAds.V3.Enums.BudgetStatusEnum.Types.BudgetStatus) input.ReadEnum();
+            break;
+          }
+          case 56: {
+            DeliveryMethod = (global::Google.Ads.GoogleAds.V3.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod) input.ReadEnum();
+            break;
+          }
+          case 66: {
+            bool? value = _single_explicitlyShared_codec.Read(ref input);
+            if (explicitlyShared_ == null || value != false) {
+              ExplicitlyShared = value;
+            }
+            break;
+          }
+          case 74: {
+            long? value = _single_referenceCount_codec.Read(ref input);
+            if (referenceCount_ == null || value != 0L) {
+              ReferenceCount = value;
+            }
+            break;
+          }
+          case 82: {
+            long? value = _single_totalAmountMicros_codec.Read(ref input);
+            if (totalAmountMicros_ == null || value != 0L) {
+              TotalAmountMicros = value;
+            }
+            break;
+          }
+          case 90: {
+            bool? value = _single_hasRecommendedBudget_codec.Read(ref input);
+            if (hasRecommendedBudget_ == null || value != false) {
+              HasRecommendedBudget = value;
+            }
+            break;
+          }
+          case 98: {
+            long? value = _single_recommendedBudgetAmountMicros_codec.Read(ref input);
+            if (recommendedBudgetAmountMicros_ == null || value != 0L) {
+              RecommendedBudgetAmountMicros = value;
+            }
+            break;
+          }
+          case 104: {
+            Period = (global::Google.Ads.GoogleAds.V3.Enums.BudgetPeriodEnum.Types.BudgetPeriod) input.ReadEnum();
+            break;
+          }
+          case 114: {
+            long? value = _single_recommendedBudgetEstimatedChangeWeeklyClicks_codec.Read(ref input);
+            if (recommendedBudgetEstimatedChangeWeeklyClicks_ == null || value != 0L) {
+              RecommendedBudgetEstimatedChangeWeeklyClicks = value;
+            }
+            break;
+          }
+          case 122: {
+            long? value = _single_recommendedBudgetEstimatedChangeWeeklyCostMicros_codec.Read(ref input);
+            if (recommendedBudgetEstimatedChangeWeeklyCostMicros_ == null || value != 0L) {
+              RecommendedBudgetEstimatedChangeWeeklyCostMicros = value;
+            }
+            break;
+          }
+          case 130: {
+            long? value = _single_recommendedBudgetEstimatedChangeWeeklyInteractions_codec.Read(ref input);
+            if (recommendedBudgetEstimatedChangeWeeklyInteractions_ == null || value != 0L) {
+              RecommendedBudgetEstimatedChangeWeeklyInteractions = value;
+            }
+            break;
+          }
+          case 138: {
+            long? value = _single_recommendedBudgetEstimatedChangeWeeklyViews_codec.Read(ref input);
+            if (recommendedBudgetEstimatedChangeWeeklyViews_ == null || value != 0L) {
+              RecommendedBudgetEstimatedChangeWeeklyViews = value;
+            }
+            break;
+          }
+          case 144: {
+            Type = (global::Google.Ads.GoogleAds.V3.Enums.BudgetTypeEnum.Types.BudgetType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

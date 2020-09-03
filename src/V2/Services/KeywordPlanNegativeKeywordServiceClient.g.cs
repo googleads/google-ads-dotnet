@@ -147,6 +147,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>KeywordPlanNegativeKeywordService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Keyword Plan negative keywords.
+    /// </remarks>
     public abstract partial class KeywordPlanNegativeKeywordServiceClient
     {
         /// <summary>
@@ -418,6 +421,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>KeywordPlanNegativeKeywordService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Keyword Plan negative keywords.
+    /// </remarks>
     public sealed partial class KeywordPlanNegativeKeywordServiceClientImpl : KeywordPlanNegativeKeywordServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetKeywordPlanNegativeKeywordRequest, gagvr::KeywordPlanNegativeKeyword> _callGetKeywordPlanNegativeKeyword;

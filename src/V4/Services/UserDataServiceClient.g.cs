@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.V4.Services
     /// <summary>UserDataService client wrapper, for convenient use.</summary>
     /// <remarks>
     /// Service to manage user data uploads.
-    /// Accessible to whitelisted customers only.
+    /// Accessible only to customers on the allow-list.
     /// </remarks>
     public abstract partial class UserDataServiceClient
     {
@@ -228,7 +228,7 @@ namespace Google.Ads.GoogleAds.V4.Services
     /// <summary>UserDataService client wrapper implementation, for convenient use.</summary>
     /// <remarks>
     /// Service to manage user data uploads.
-    /// Accessible to whitelisted customers only.
+    /// Accessible only to customers on the allow-list.
     /// </remarks>
     public sealed partial class UserDataServiceClientImpl : UserDataServiceClient
     {

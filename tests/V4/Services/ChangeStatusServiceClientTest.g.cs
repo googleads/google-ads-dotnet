@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedChangeStatusServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetChangeStatusRequestObject()
         {
             moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
@@ -61,7 +61,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetChangeStatusRequestObjectAsync()
         {
             moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetChangeStatus()
         {
             moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetChangeStatusAsync()
         {
             moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
@@ -161,7 +161,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetChangeStatusResourceNames()
         {
             moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);
@@ -193,7 +193,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetChangeStatusResourceNamesAsync()
         {
             moq::Mock<ChangeStatusService.ChangeStatusServiceClient> mockGrpcClient = new moq::Mock<ChangeStatusService.ChangeStatusServiceClient>(moq::MockBehavior.Strict);

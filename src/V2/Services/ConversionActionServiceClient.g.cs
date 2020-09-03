@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>ConversionActionService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage conversion actions.
+    /// </remarks>
     public abstract partial class ConversionActionServiceClient
     {
         /// <summary>
@@ -410,6 +413,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>ConversionActionService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage conversion actions.
+    /// </remarks>
     public sealed partial class ConversionActionServiceClientImpl : ConversionActionServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetConversionActionRequest, gagvr::ConversionAction> _callGetConversionAction;

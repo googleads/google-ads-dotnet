@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCampaignCriterionSimulationServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignCriterionSimulationRequestObject()
         {
             moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient> mockGrpcClient = new moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient>(moq::MockBehavior.Strict);
@@ -56,7 +56,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignCriterionSimulationRequestObjectAsync()
         {
             moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient> mockGrpcClient = new moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient>(moq::MockBehavior.Strict);
@@ -84,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignCriterionSimulation()
         {
             moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient> mockGrpcClient = new moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient>(moq::MockBehavior.Strict);
@@ -110,7 +110,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignCriterionSimulationAsync()
         {
             moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient> mockGrpcClient = new moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient>(moq::MockBehavior.Strict);
@@ -138,7 +138,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignCriterionSimulationResourceNames()
         {
             moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient> mockGrpcClient = new moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient>(moq::MockBehavior.Strict);
@@ -164,7 +164,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignCriterionSimulationResourceNamesAsync()
         {
             moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient> mockGrpcClient = new moq::Mock<CampaignCriterionSimulationService.CampaignCriterionSimulationServiceClient>(moq::MockBehavior.Strict);

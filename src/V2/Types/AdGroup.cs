@@ -103,7 +103,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   /// <summary>
   /// An ad group.
   /// </summary>
-  public sealed partial class AdGroup : pb::IMessage<AdGroup> {
+  public sealed partial class AdGroup : pb::IMessage<AdGroup>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdGroup> _parser = new pb::MessageParser<AdGroup>(() => new AdGroup());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -668,6 +672,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -754,7 +761,100 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V2.Enums.AdGroupStatusEnum.Types.AdGroupStatus.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Status);
+      }
+      urlCustomParameters_.WriteTo(ref output, _repeated_urlCustomParameters_codec);
+      if (campaign_ != null) {
+        _single_campaign_codec.WriteTagAndValue(ref output, Campaign);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V2.Enums.AdGroupTypeEnum.Types.AdGroupType.Unspecified) {
+        output.WriteRawTag(96);
+        output.WriteEnum((int) Type);
+      }
+      if (trackingUrlTemplate_ != null) {
+        _single_trackingUrlTemplate_codec.WriteTagAndValue(ref output, TrackingUrlTemplate);
+      }
+      if (cpcBidMicros_ != null) {
+        _single_cpcBidMicros_codec.WriteTagAndValue(ref output, CpcBidMicros);
+      }
+      if (cpmBidMicros_ != null) {
+        _single_cpmBidMicros_codec.WriteTagAndValue(ref output, CpmBidMicros);
+      }
+      if (cpvBidMicros_ != null) {
+        _single_cpvBidMicros_codec.WriteTagAndValue(ref output, CpvBidMicros);
+      }
+      if (baseAdGroup_ != null) {
+        _single_baseAdGroup_codec.WriteTagAndValue(ref output, BaseAdGroup);
+      }
+      if (percentCpcBidMicros_ != null) {
+        _single_percentCpcBidMicros_codec.WriteTagAndValue(ref output, PercentCpcBidMicros);
+      }
+      if (explorerAutoOptimizerSetting_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(ExplorerAutoOptimizerSetting);
+      }
+      if (AdRotationMode != global::Google.Ads.GoogleAds.V2.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode.Unspecified) {
+        output.WriteRawTag(176, 1);
+        output.WriteEnum((int) AdRotationMode);
+      }
+      if (DisplayCustomBidDimension != global::Google.Ads.GoogleAds.V2.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) {
+        output.WriteRawTag(184, 1);
+        output.WriteEnum((int) DisplayCustomBidDimension);
+      }
+      if (finalUrlSuffix_ != null) {
+        _single_finalUrlSuffix_codec.WriteTagAndValue(ref output, FinalUrlSuffix);
+      }
+      if (targetingSetting_ != null) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(TargetingSetting);
+      }
+      if (targetCpmMicros_ != null) {
+        _single_targetCpmMicros_codec.WriteTagAndValue(ref output, TargetCpmMicros);
+      }
+      if (targetCpaMicros_ != null) {
+        _single_targetCpaMicros_codec.WriteTagAndValue(ref output, TargetCpaMicros);
+      }
+      if (effectiveTargetCpaMicros_ != null) {
+        _single_effectiveTargetCpaMicros_codec.WriteTagAndValue(ref output, EffectiveTargetCpaMicros);
+      }
+      if (EffectiveTargetCpaSource != global::Google.Ads.GoogleAds.V2.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
+        output.WriteRawTag(232, 1);
+        output.WriteEnum((int) EffectiveTargetCpaSource);
+      }
+      if (targetRoas_ != null) {
+        _single_targetRoas_codec.WriteTagAndValue(ref output, TargetRoas);
+      }
+      if (effectiveTargetRoas_ != null) {
+        _single_effectiveTargetRoas_codec.WriteTagAndValue(ref output, EffectiveTargetRoas);
+      }
+      if (EffectiveTargetRoasSource != global::Google.Ads.GoogleAds.V2.Enums.BiddingSourceEnum.Types.BiddingSource.Unspecified) {
+        output.WriteRawTag(128, 2);
+        output.WriteEnum((int) EffectiveTargetRoasSource);
+      }
+      labels_.WriteTo(ref output, _repeated_labels_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -959,6 +1059,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1122,7 +1225,177 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 26: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 40: {
+            Status = (global::Google.Ads.GoogleAds.V2.Enums.AdGroupStatusEnum.Types.AdGroupStatus) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            urlCustomParameters_.AddEntriesFrom(ref input, _repeated_urlCustomParameters_codec);
+            break;
+          }
+          case 82: {
+            string value = _single_campaign_codec.Read(ref input);
+            if (campaign_ == null || value != "") {
+              Campaign = value;
+            }
+            break;
+          }
+          case 96: {
+            Type = (global::Google.Ads.GoogleAds.V2.Enums.AdGroupTypeEnum.Types.AdGroupType) input.ReadEnum();
+            break;
+          }
+          case 106: {
+            string value = _single_trackingUrlTemplate_codec.Read(ref input);
+            if (trackingUrlTemplate_ == null || value != "") {
+              TrackingUrlTemplate = value;
+            }
+            break;
+          }
+          case 114: {
+            long? value = _single_cpcBidMicros_codec.Read(ref input);
+            if (cpcBidMicros_ == null || value != 0L) {
+              CpcBidMicros = value;
+            }
+            break;
+          }
+          case 122: {
+            long? value = _single_cpmBidMicros_codec.Read(ref input);
+            if (cpmBidMicros_ == null || value != 0L) {
+              CpmBidMicros = value;
+            }
+            break;
+          }
+          case 138: {
+            long? value = _single_cpvBidMicros_codec.Read(ref input);
+            if (cpvBidMicros_ == null || value != 0L) {
+              CpvBidMicros = value;
+            }
+            break;
+          }
+          case 146: {
+            string value = _single_baseAdGroup_codec.Read(ref input);
+            if (baseAdGroup_ == null || value != "") {
+              BaseAdGroup = value;
+            }
+            break;
+          }
+          case 162: {
+            long? value = _single_percentCpcBidMicros_codec.Read(ref input);
+            if (percentCpcBidMicros_ == null || value != 0L) {
+              PercentCpcBidMicros = value;
+            }
+            break;
+          }
+          case 170: {
+            if (explorerAutoOptimizerSetting_ == null) {
+              ExplorerAutoOptimizerSetting = new global::Google.Ads.GoogleAds.V2.Common.ExplorerAutoOptimizerSetting();
+            }
+            input.ReadMessage(ExplorerAutoOptimizerSetting);
+            break;
+          }
+          case 176: {
+            AdRotationMode = (global::Google.Ads.GoogleAds.V2.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode) input.ReadEnum();
+            break;
+          }
+          case 184: {
+            DisplayCustomBidDimension = (global::Google.Ads.GoogleAds.V2.Enums.TargetingDimensionEnum.Types.TargetingDimension) input.ReadEnum();
+            break;
+          }
+          case 194: {
+            string value = _single_finalUrlSuffix_codec.Read(ref input);
+            if (finalUrlSuffix_ == null || value != "") {
+              FinalUrlSuffix = value;
+            }
+            break;
+          }
+          case 202: {
+            if (targetingSetting_ == null) {
+              TargetingSetting = new global::Google.Ads.GoogleAds.V2.Common.TargetingSetting();
+            }
+            input.ReadMessage(TargetingSetting);
+            break;
+          }
+          case 210: {
+            long? value = _single_targetCpmMicros_codec.Read(ref input);
+            if (targetCpmMicros_ == null || value != 0L) {
+              TargetCpmMicros = value;
+            }
+            break;
+          }
+          case 218: {
+            long? value = _single_targetCpaMicros_codec.Read(ref input);
+            if (targetCpaMicros_ == null || value != 0L) {
+              TargetCpaMicros = value;
+            }
+            break;
+          }
+          case 226: {
+            long? value = _single_effectiveTargetCpaMicros_codec.Read(ref input);
+            if (effectiveTargetCpaMicros_ == null || value != 0L) {
+              EffectiveTargetCpaMicros = value;
+            }
+            break;
+          }
+          case 232: {
+            EffectiveTargetCpaSource = (global::Google.Ads.GoogleAds.V2.Enums.BiddingSourceEnum.Types.BiddingSource) input.ReadEnum();
+            break;
+          }
+          case 242: {
+            double? value = _single_targetRoas_codec.Read(ref input);
+            if (targetRoas_ == null || value != 0D) {
+              TargetRoas = value;
+            }
+            break;
+          }
+          case 250: {
+            double? value = _single_effectiveTargetRoas_codec.Read(ref input);
+            if (effectiveTargetRoas_ == null || value != 0D) {
+              EffectiveTargetRoas = value;
+            }
+            break;
+          }
+          case 256: {
+            EffectiveTargetRoasSource = (global::Google.Ads.GoogleAds.V2.Enums.BiddingSourceEnum.Types.BiddingSource) input.ReadEnum();
+            break;
+          }
+          case 266: {
+            labels_.AddEntriesFrom(ref input, _repeated_labels_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

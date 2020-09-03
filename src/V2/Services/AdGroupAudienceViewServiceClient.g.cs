@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupAudienceViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group audience views.
+    /// </remarks>
     public abstract partial class AdGroupAudienceViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupAudienceViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group audience views.
+    /// </remarks>
     public sealed partial class AdGroupAudienceViewServiceClientImpl : AdGroupAudienceViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupAudienceViewRequest, gagvr::AdGroupAudienceView> _callGetAdGroupAudienceView;

@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedMobileAppCategoryConstantServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMobileAppCategoryConstantRequestObject()
         {
             moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -49,7 +49,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMobileAppCategoryConstantRequestObjectAsync()
         {
             moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMobileAppCategoryConstant()
         {
             moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMobileAppCategoryConstantAsync()
         {
             moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -116,7 +116,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMobileAppCategoryConstantResourceNames()
         {
             moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -137,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMobileAppCategoryConstantResourceNamesAsync()
         {
             moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<MobileAppCategoryConstantService.MobileAppCategoryConstantServiceClient>(moq::MockBehavior.Strict);

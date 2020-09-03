@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCustomerClientLinkServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomerClientLinkRequestObject()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);
@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomerClientLinkRequestObjectAsync()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);
@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomerClientLink()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);
@@ -100,7 +100,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomerClientLinkAsync()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);
@@ -125,7 +125,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomerClientLinkResourceNames()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);
@@ -148,7 +148,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomerClientLinkResourceNamesAsync()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);
@@ -173,7 +173,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCustomerClientLinkRequestObject()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);
@@ -193,7 +193,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCustomerClientLinkRequestObjectAsync()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);
@@ -215,7 +215,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCustomerClientLink()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);
@@ -235,7 +235,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCustomerClientLinkAsync()
         {
             moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient> mockGrpcClient = new moq::Mock<CustomerClientLinkService.CustomerClientLinkServiceClient>(moq::MockBehavior.Strict);

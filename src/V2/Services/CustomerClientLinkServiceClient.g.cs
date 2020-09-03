@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CustomerClientLinkService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage customer client links.
+    /// </remarks>
     public abstract partial class CustomerClientLinkServiceClient
     {
         /// <summary>
@@ -398,6 +401,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CustomerClientLinkService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage customer client links.
+    /// </remarks>
     public sealed partial class CustomerClientLinkServiceClientImpl : CustomerClientLinkServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCustomerClientLinkRequest, gagvr::CustomerClientLink> _callGetCustomerClientLink;

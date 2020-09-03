@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedRecommendationServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetRecommendationRequestObject()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetRecommendationRequestObjectAsync()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -110,7 +110,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetRecommendation()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetRecommendationAsync()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -190,7 +190,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetRecommendationResourceNames()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -229,7 +229,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetRecommendationResourceNamesAsync()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -270,7 +270,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void ApplyRecommendationRequestObject()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -298,7 +298,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ApplyRecommendationRequestObjectAsync()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -328,7 +328,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void ApplyRecommendation()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -355,7 +355,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ApplyRecommendationAsync()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -384,7 +384,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void DismissRecommendationRequestObject()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -412,7 +412,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task DismissRecommendationRequestObjectAsync()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -442,7 +442,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void DismissRecommendation()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);
@@ -469,7 +469,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task DismissRecommendationAsync()
         {
             moq::Mock<RecommendationService.RecommendationServiceClient> mockGrpcClient = new moq::Mock<RecommendationService.RecommendationServiceClient>(moq::MockBehavior.Strict);

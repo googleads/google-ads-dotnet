@@ -56,7 +56,7 @@ namespace Google.Ads.GoogleAds.V3.Errors
         /// Extracts a <see cref="GoogleAdsException"/> from an <see cref="AggregateException"/>
         /// </summary>
         /// <param name="ae">The aggregate exception.</param>
-        /// <returns>An underlying GoogleAdsException if present, or <code>null</code> if one 
+        /// <returns>An underlying GoogleAdsException if present, or <code>null</code> if one
         /// is missing.</returns>
         public static GoogleAdsException FromTaskException(AggregateException ae)
         {

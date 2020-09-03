@@ -140,6 +140,17 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>BillingSetupService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// A service for designating the business entity responsible for accrued costs.
+    /// 
+    /// A billing setup is associated with a payments account.  Billing-related
+    /// activity for all billing setups associated with a particular payments account
+    /// will appear on a single invoice generated monthly.
+    /// 
+    /// Mutates:
+    /// The REMOVE operation cancels a pending billing setup.
+    /// The CREATE operation creates a new billing setup.
+    /// </remarks>
     public abstract partial class BillingSetupServiceClient
     {
         /// <summary>
@@ -395,6 +406,17 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>BillingSetupService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// A service for designating the business entity responsible for accrued costs.
+    /// 
+    /// A billing setup is associated with a payments account.  Billing-related
+    /// activity for all billing setups associated with a particular payments account
+    /// will appear on a single invoice generated monthly.
+    /// 
+    /// Mutates:
+    /// The REMOVE operation cancels a pending billing setup.
+    /// The CREATE operation creates a new billing setup.
+    /// </remarks>
     public sealed partial class BillingSetupServiceClientImpl : BillingSetupServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetBillingSetupRequest, gagvr::BillingSetup> _callGetBillingSetup;

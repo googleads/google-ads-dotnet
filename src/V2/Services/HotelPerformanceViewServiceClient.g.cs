@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>HotelPerformanceViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Hotel Performance Views.
+    /// </remarks>
     public abstract partial class HotelPerformanceViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>HotelPerformanceViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Hotel Performance Views.
+    /// </remarks>
     public sealed partial class HotelPerformanceViewServiceClientImpl : HotelPerformanceViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetHotelPerformanceViewRequest, gagvr::HotelPerformanceView> _callGetHotelPerformanceView;

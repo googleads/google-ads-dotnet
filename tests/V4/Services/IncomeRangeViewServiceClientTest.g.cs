@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedIncomeRangeViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetIncomeRangeViewRequestObject()
         {
             moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient> mockGrpcClient = new moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetIncomeRangeViewRequestObjectAsync()
         {
             moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient> mockGrpcClient = new moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetIncomeRangeView()
         {
             moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient> mockGrpcClient = new moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetIncomeRangeViewAsync()
         {
             moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient> mockGrpcClient = new moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetIncomeRangeViewResourceNames()
         {
             moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient> mockGrpcClient = new moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetIncomeRangeViewResourceNamesAsync()
         {
             moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient> mockGrpcClient = new moq::Mock<IncomeRangeViewService.IncomeRangeViewServiceClient>(moq::MockBehavior.Strict);

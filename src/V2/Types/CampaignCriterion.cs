@@ -113,7 +113,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   /// <summary>
   /// A campaign criterion.
   /// </summary>
-  public sealed partial class CampaignCriterion : pb::IMessage<CampaignCriterion> {
+  public sealed partial class CampaignCriterion : pb::IMessage<CampaignCriterion>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CampaignCriterion> _parser = new pb::MessageParser<CampaignCriterion>(() => new CampaignCriterion());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -874,6 +878,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -1009,7 +1016,149 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (campaign_ != null) {
+        _single_campaign_codec.WriteTagAndValue(ref output, Campaign);
+      }
+      if (criterionId_ != null) {
+        _single_criterionId_codec.WriteTagAndValue(ref output, CriterionId);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V2.Enums.CriterionTypeEnum.Types.CriterionType.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Type);
+      }
+      if (negative_ != null) {
+        _single_negative_codec.WriteTagAndValue(ref output, Negative);
+      }
+      if (criterionCase_ == CriterionOneofCase.Keyword) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Keyword);
+      }
+      if (criterionCase_ == CriterionOneofCase.Placement) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Placement);
+      }
+      if (criterionCase_ == CriterionOneofCase.MobileAppCategory) {
+        output.WriteRawTag(82);
+        output.WriteMessage(MobileAppCategory);
+      }
+      if (criterionCase_ == CriterionOneofCase.MobileApplication) {
+        output.WriteRawTag(90);
+        output.WriteMessage(MobileApplication);
+      }
+      if (criterionCase_ == CriterionOneofCase.Location) {
+        output.WriteRawTag(98);
+        output.WriteMessage(Location);
+      }
+      if (criterionCase_ == CriterionOneofCase.Device) {
+        output.WriteRawTag(106);
+        output.WriteMessage(Device);
+      }
+      if (bidModifier_ != null) {
+        _single_bidModifier_codec.WriteTagAndValue(ref output, BidModifier);
+      }
+      if (criterionCase_ == CriterionOneofCase.AdSchedule) {
+        output.WriteRawTag(122);
+        output.WriteMessage(AdSchedule);
+      }
+      if (criterionCase_ == CriterionOneofCase.AgeRange) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(AgeRange);
+      }
+      if (criterionCase_ == CriterionOneofCase.Gender) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(Gender);
+      }
+      if (criterionCase_ == CriterionOneofCase.IncomeRange) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(IncomeRange);
+      }
+      if (criterionCase_ == CriterionOneofCase.ParentalStatus) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(ParentalStatus);
+      }
+      if (criterionCase_ == CriterionOneofCase.YoutubeVideo) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(YoutubeVideo);
+      }
+      if (criterionCase_ == CriterionOneofCase.YoutubeChannel) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(YoutubeChannel);
+      }
+      if (criterionCase_ == CriterionOneofCase.UserList) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(UserList);
+      }
+      if (criterionCase_ == CriterionOneofCase.Proximity) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(Proximity);
+      }
+      if (criterionCase_ == CriterionOneofCase.Topic) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(Topic);
+      }
+      if (criterionCase_ == CriterionOneofCase.ListingScope) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(ListingScope);
+      }
+      if (criterionCase_ == CriterionOneofCase.Language) {
+        output.WriteRawTag(210, 1);
+        output.WriteMessage(Language);
+      }
+      if (criterionCase_ == CriterionOneofCase.IpBlock) {
+        output.WriteRawTag(218, 1);
+        output.WriteMessage(IpBlock);
+      }
+      if (criterionCase_ == CriterionOneofCase.ContentLabel) {
+        output.WriteRawTag(226, 1);
+        output.WriteMessage(ContentLabel);
+      }
+      if (criterionCase_ == CriterionOneofCase.Carrier) {
+        output.WriteRawTag(234, 1);
+        output.WriteMessage(Carrier);
+      }
+      if (criterionCase_ == CriterionOneofCase.UserInterest) {
+        output.WriteRawTag(242, 1);
+        output.WriteMessage(UserInterest);
+      }
+      if (criterionCase_ == CriterionOneofCase.Webpage) {
+        output.WriteRawTag(250, 1);
+        output.WriteMessage(Webpage);
+      }
+      if (criterionCase_ == CriterionOneofCase.OperatingSystemVersion) {
+        output.WriteRawTag(130, 2);
+        output.WriteMessage(OperatingSystemVersion);
+      }
+      if (criterionCase_ == CriterionOneofCase.MobileDevice) {
+        output.WriteRawTag(138, 2);
+        output.WriteMessage(MobileDevice);
+      }
+      if (criterionCase_ == CriterionOneofCase.LocationGroup) {
+        output.WriteRawTag(146, 2);
+        output.WriteMessage(LocationGroup);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V2.Enums.CampaignCriterionStatusEnum.Types.CampaignCriterionStatus.Unspecified) {
+        output.WriteRawTag(152, 2);
+        output.WriteEnum((int) Status);
+      }
+      if (criterionCase_ == CriterionOneofCase.CustomAffinity) {
+        output.WriteRawTag(162, 2);
+        output.WriteMessage(CustomAffinity);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1326,6 +1475,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1617,7 +1769,305 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 34: {
+            string value = _single_campaign_codec.Read(ref input);
+            if (campaign_ == null || value != "") {
+              Campaign = value;
+            }
+            break;
+          }
+          case 42: {
+            long? value = _single_criterionId_codec.Read(ref input);
+            if (criterionId_ == null || value != 0L) {
+              CriterionId = value;
+            }
+            break;
+          }
+          case 48: {
+            Type = (global::Google.Ads.GoogleAds.V2.Enums.CriterionTypeEnum.Types.CriterionType) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            bool? value = _single_negative_codec.Read(ref input);
+            if (negative_ == null || value != false) {
+              Negative = value;
+            }
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V2.Common.KeywordInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.KeywordInfo();
+            if (criterionCase_ == CriterionOneofCase.Keyword) {
+              subBuilder.MergeFrom(Keyword);
+            }
+            input.ReadMessage(subBuilder);
+            Keyword = subBuilder;
+            break;
+          }
+          case 74: {
+            global::Google.Ads.GoogleAds.V2.Common.PlacementInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.PlacementInfo();
+            if (criterionCase_ == CriterionOneofCase.Placement) {
+              subBuilder.MergeFrom(Placement);
+            }
+            input.ReadMessage(subBuilder);
+            Placement = subBuilder;
+            break;
+          }
+          case 82: {
+            global::Google.Ads.GoogleAds.V2.Common.MobileAppCategoryInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.MobileAppCategoryInfo();
+            if (criterionCase_ == CriterionOneofCase.MobileAppCategory) {
+              subBuilder.MergeFrom(MobileAppCategory);
+            }
+            input.ReadMessage(subBuilder);
+            MobileAppCategory = subBuilder;
+            break;
+          }
+          case 90: {
+            global::Google.Ads.GoogleAds.V2.Common.MobileApplicationInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.MobileApplicationInfo();
+            if (criterionCase_ == CriterionOneofCase.MobileApplication) {
+              subBuilder.MergeFrom(MobileApplication);
+            }
+            input.ReadMessage(subBuilder);
+            MobileApplication = subBuilder;
+            break;
+          }
+          case 98: {
+            global::Google.Ads.GoogleAds.V2.Common.LocationInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.LocationInfo();
+            if (criterionCase_ == CriterionOneofCase.Location) {
+              subBuilder.MergeFrom(Location);
+            }
+            input.ReadMessage(subBuilder);
+            Location = subBuilder;
+            break;
+          }
+          case 106: {
+            global::Google.Ads.GoogleAds.V2.Common.DeviceInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.DeviceInfo();
+            if (criterionCase_ == CriterionOneofCase.Device) {
+              subBuilder.MergeFrom(Device);
+            }
+            input.ReadMessage(subBuilder);
+            Device = subBuilder;
+            break;
+          }
+          case 114: {
+            float? value = _single_bidModifier_codec.Read(ref input);
+            if (bidModifier_ == null || value != 0F) {
+              BidModifier = value;
+            }
+            break;
+          }
+          case 122: {
+            global::Google.Ads.GoogleAds.V2.Common.AdScheduleInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.AdScheduleInfo();
+            if (criterionCase_ == CriterionOneofCase.AdSchedule) {
+              subBuilder.MergeFrom(AdSchedule);
+            }
+            input.ReadMessage(subBuilder);
+            AdSchedule = subBuilder;
+            break;
+          }
+          case 130: {
+            global::Google.Ads.GoogleAds.V2.Common.AgeRangeInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.AgeRangeInfo();
+            if (criterionCase_ == CriterionOneofCase.AgeRange) {
+              subBuilder.MergeFrom(AgeRange);
+            }
+            input.ReadMessage(subBuilder);
+            AgeRange = subBuilder;
+            break;
+          }
+          case 138: {
+            global::Google.Ads.GoogleAds.V2.Common.GenderInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.GenderInfo();
+            if (criterionCase_ == CriterionOneofCase.Gender) {
+              subBuilder.MergeFrom(Gender);
+            }
+            input.ReadMessage(subBuilder);
+            Gender = subBuilder;
+            break;
+          }
+          case 146: {
+            global::Google.Ads.GoogleAds.V2.Common.IncomeRangeInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.IncomeRangeInfo();
+            if (criterionCase_ == CriterionOneofCase.IncomeRange) {
+              subBuilder.MergeFrom(IncomeRange);
+            }
+            input.ReadMessage(subBuilder);
+            IncomeRange = subBuilder;
+            break;
+          }
+          case 154: {
+            global::Google.Ads.GoogleAds.V2.Common.ParentalStatusInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ParentalStatusInfo();
+            if (criterionCase_ == CriterionOneofCase.ParentalStatus) {
+              subBuilder.MergeFrom(ParentalStatus);
+            }
+            input.ReadMessage(subBuilder);
+            ParentalStatus = subBuilder;
+            break;
+          }
+          case 162: {
+            global::Google.Ads.GoogleAds.V2.Common.YouTubeVideoInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.YouTubeVideoInfo();
+            if (criterionCase_ == CriterionOneofCase.YoutubeVideo) {
+              subBuilder.MergeFrom(YoutubeVideo);
+            }
+            input.ReadMessage(subBuilder);
+            YoutubeVideo = subBuilder;
+            break;
+          }
+          case 170: {
+            global::Google.Ads.GoogleAds.V2.Common.YouTubeChannelInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.YouTubeChannelInfo();
+            if (criterionCase_ == CriterionOneofCase.YoutubeChannel) {
+              subBuilder.MergeFrom(YoutubeChannel);
+            }
+            input.ReadMessage(subBuilder);
+            YoutubeChannel = subBuilder;
+            break;
+          }
+          case 178: {
+            global::Google.Ads.GoogleAds.V2.Common.UserListInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.UserListInfo();
+            if (criterionCase_ == CriterionOneofCase.UserList) {
+              subBuilder.MergeFrom(UserList);
+            }
+            input.ReadMessage(subBuilder);
+            UserList = subBuilder;
+            break;
+          }
+          case 186: {
+            global::Google.Ads.GoogleAds.V2.Common.ProximityInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ProximityInfo();
+            if (criterionCase_ == CriterionOneofCase.Proximity) {
+              subBuilder.MergeFrom(Proximity);
+            }
+            input.ReadMessage(subBuilder);
+            Proximity = subBuilder;
+            break;
+          }
+          case 194: {
+            global::Google.Ads.GoogleAds.V2.Common.TopicInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.TopicInfo();
+            if (criterionCase_ == CriterionOneofCase.Topic) {
+              subBuilder.MergeFrom(Topic);
+            }
+            input.ReadMessage(subBuilder);
+            Topic = subBuilder;
+            break;
+          }
+          case 202: {
+            global::Google.Ads.GoogleAds.V2.Common.ListingScopeInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ListingScopeInfo();
+            if (criterionCase_ == CriterionOneofCase.ListingScope) {
+              subBuilder.MergeFrom(ListingScope);
+            }
+            input.ReadMessage(subBuilder);
+            ListingScope = subBuilder;
+            break;
+          }
+          case 210: {
+            global::Google.Ads.GoogleAds.V2.Common.LanguageInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.LanguageInfo();
+            if (criterionCase_ == CriterionOneofCase.Language) {
+              subBuilder.MergeFrom(Language);
+            }
+            input.ReadMessage(subBuilder);
+            Language = subBuilder;
+            break;
+          }
+          case 218: {
+            global::Google.Ads.GoogleAds.V2.Common.IpBlockInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.IpBlockInfo();
+            if (criterionCase_ == CriterionOneofCase.IpBlock) {
+              subBuilder.MergeFrom(IpBlock);
+            }
+            input.ReadMessage(subBuilder);
+            IpBlock = subBuilder;
+            break;
+          }
+          case 226: {
+            global::Google.Ads.GoogleAds.V2.Common.ContentLabelInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ContentLabelInfo();
+            if (criterionCase_ == CriterionOneofCase.ContentLabel) {
+              subBuilder.MergeFrom(ContentLabel);
+            }
+            input.ReadMessage(subBuilder);
+            ContentLabel = subBuilder;
+            break;
+          }
+          case 234: {
+            global::Google.Ads.GoogleAds.V2.Common.CarrierInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.CarrierInfo();
+            if (criterionCase_ == CriterionOneofCase.Carrier) {
+              subBuilder.MergeFrom(Carrier);
+            }
+            input.ReadMessage(subBuilder);
+            Carrier = subBuilder;
+            break;
+          }
+          case 242: {
+            global::Google.Ads.GoogleAds.V2.Common.UserInterestInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.UserInterestInfo();
+            if (criterionCase_ == CriterionOneofCase.UserInterest) {
+              subBuilder.MergeFrom(UserInterest);
+            }
+            input.ReadMessage(subBuilder);
+            UserInterest = subBuilder;
+            break;
+          }
+          case 250: {
+            global::Google.Ads.GoogleAds.V2.Common.WebpageInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.WebpageInfo();
+            if (criterionCase_ == CriterionOneofCase.Webpage) {
+              subBuilder.MergeFrom(Webpage);
+            }
+            input.ReadMessage(subBuilder);
+            Webpage = subBuilder;
+            break;
+          }
+          case 258: {
+            global::Google.Ads.GoogleAds.V2.Common.OperatingSystemVersionInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.OperatingSystemVersionInfo();
+            if (criterionCase_ == CriterionOneofCase.OperatingSystemVersion) {
+              subBuilder.MergeFrom(OperatingSystemVersion);
+            }
+            input.ReadMessage(subBuilder);
+            OperatingSystemVersion = subBuilder;
+            break;
+          }
+          case 266: {
+            global::Google.Ads.GoogleAds.V2.Common.MobileDeviceInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.MobileDeviceInfo();
+            if (criterionCase_ == CriterionOneofCase.MobileDevice) {
+              subBuilder.MergeFrom(MobileDevice);
+            }
+            input.ReadMessage(subBuilder);
+            MobileDevice = subBuilder;
+            break;
+          }
+          case 274: {
+            global::Google.Ads.GoogleAds.V2.Common.LocationGroupInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.LocationGroupInfo();
+            if (criterionCase_ == CriterionOneofCase.LocationGroup) {
+              subBuilder.MergeFrom(LocationGroup);
+            }
+            input.ReadMessage(subBuilder);
+            LocationGroup = subBuilder;
+            break;
+          }
+          case 280: {
+            Status = (global::Google.Ads.GoogleAds.V2.Enums.CampaignCriterionStatusEnum.Types.CampaignCriterionStatus) input.ReadEnum();
+            break;
+          }
+          case 290: {
+            global::Google.Ads.GoogleAds.V2.Common.CustomAffinityInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.CustomAffinityInfo();
+            if (criterionCase_ == CriterionOneofCase.CustomAffinity) {
+              subBuilder.MergeFrom(CustomAffinity);
+            }
+            input.ReadMessage(subBuilder);
+            CustomAffinity = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

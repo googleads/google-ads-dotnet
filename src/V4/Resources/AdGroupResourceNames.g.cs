@@ -276,7 +276,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
         /// <summary>
         /// <see cref="AdGroupLabelName"/>-typed view over the <see cref="Labels"/> resource name property.
         /// </summary>
-        public gax::ResourceNameList<AdGroupLabelName> LabelsAsAdGroupLabelNames
+        internal gax::ResourceNameList<AdGroupLabelName> LabelsAsAdGroupLabelNames
         {
             get => new gax::ResourceNameList<AdGroupLabelName>(Labels, s => string.IsNullOrEmpty(s) ? null : AdGroupLabelName.Parse(s, allowUnparsed: true));
         }

@@ -71,7 +71,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// <summary>
   /// A Product Bidding Category.
   /// </summary>
-  public sealed partial class ProductBiddingCategoryConstant : pb::IMessage<ProductBiddingCategoryConstant> {
+  public sealed partial class ProductBiddingCategoryConstant : pb::IMessage<ProductBiddingCategoryConstant>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ProductBiddingCategoryConstant> _parser = new pb::MessageParser<ProductBiddingCategoryConstant>(() => new ProductBiddingCategoryConstant());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -289,6 +293,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -319,7 +326,44 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (countryCode_ != null) {
+        _single_countryCode_codec.WriteTagAndValue(ref output, CountryCode);
+      }
+      if (productBiddingCategoryConstantParent_ != null) {
+        _single_productBiddingCategoryConstantParent_codec.WriteTagAndValue(ref output, ProductBiddingCategoryConstantParent);
+      }
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Level);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Status);
+      }
+      if (languageCode_ != null) {
+        _single_languageCode_codec.WriteTagAndValue(ref output, LanguageCode);
+      }
+      if (localizedName_ != null) {
+        _single_localizedName_codec.WriteTagAndValue(ref output, LocalizedName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -398,6 +442,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -453,7 +500,69 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_countryCode_codec.Read(ref input);
+            if (countryCode_ == null || value != "") {
+              CountryCode = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_productBiddingCategoryConstantParent_codec.Read(ref input);
+            if (productBiddingCategoryConstantParent_ == null || value != "") {
+              ProductBiddingCategoryConstantParent = value;
+            }
+            break;
+          }
+          case 40: {
+            Level = (global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryLevelEnum.Types.ProductBiddingCategoryLevel) input.ReadEnum();
+            break;
+          }
+          case 48: {
+            Status = (global::Google.Ads.GoogleAds.V3.Enums.ProductBiddingCategoryStatusEnum.Types.ProductBiddingCategoryStatus) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            string value = _single_languageCode_codec.Read(ref input);
+            if (languageCode_ == null || value != "") {
+              LanguageCode = value;
+            }
+            break;
+          }
+          case 66: {
+            string value = _single_localizedName_codec.Read(ref input);
+            if (localizedName_ == null || value != "") {
+              LocalizedName = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

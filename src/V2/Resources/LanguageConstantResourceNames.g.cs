@@ -236,7 +236,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <see cref="gagvr::LanguageConstantName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::LanguageConstantName ResourceNameAsLanguageConstantName
+        internal LanguageConstantName ResourceNameAsLanguageConstantName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::LanguageConstantName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -245,7 +245,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <summary>
         /// <see cref="gagvr::LanguageConstantName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::LanguageConstantName LanguageConstantName
+        internal LanguageConstantName LanguageConstantName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::LanguageConstantName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

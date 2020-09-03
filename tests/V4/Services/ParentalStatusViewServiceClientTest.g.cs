@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedParentalStatusViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetParentalStatusViewRequestObject()
         {
             moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetParentalStatusViewRequestObjectAsync()
         {
             moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetParentalStatusView()
         {
             moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetParentalStatusViewAsync()
         {
             moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetParentalStatusViewResourceNames()
         {
             moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetParentalStatusViewResourceNamesAsync()
         {
             moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient> mockGrpcClient = new moq::Mock<ParentalStatusViewService.ParentalStatusViewServiceClient>(moq::MockBehavior.Strict);

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.Api.Gax;
 using System;
 using System.Web.UI;
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.Examples
             string customerId = txtCustomerId.Text;
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-              Services.V4.GoogleAdsService);
+              Services.V5.GoogleAdsService);
 
             // Create a request that will retrieve all campaigns using pages of the specified
             // page size.

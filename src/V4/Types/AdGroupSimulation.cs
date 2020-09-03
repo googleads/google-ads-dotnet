@@ -86,7 +86,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// 8. VIDEO - CPV_BID - DEFAULT
   /// 9. VIDEO - CPV_BID - UNIFORM
   /// </summary>
-  public sealed partial class AdGroupSimulation : pb::IMessage<AdGroupSimulation> {
+  public sealed partial class AdGroupSimulation : pb::IMessage<AdGroupSimulation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdGroupSimulation> _parser = new pb::MessageParser<AdGroupSimulation>(() => new AdGroupSimulation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -364,6 +368,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -404,7 +411,54 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (adGroupId_ != null) {
+        _single_adGroupId_codec.WriteTagAndValue(ref output, AdGroupId);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V4.Enums.SimulationTypeEnum.Types.SimulationType.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Type);
+      }
+      if (ModificationMethod != global::Google.Ads.GoogleAds.V4.Enums.SimulationModificationMethodEnum.Types.SimulationModificationMethod.Unspecified) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) ModificationMethod);
+      }
+      if (startDate_ != null) {
+        _single_startDate_codec.WriteTagAndValue(ref output, StartDate);
+      }
+      if (endDate_ != null) {
+        _single_endDate_codec.WriteTagAndValue(ref output, EndDate);
+      }
+      if (pointListCase_ == PointListOneofCase.CpcBidPointList) {
+        output.WriteRawTag(66);
+        output.WriteMessage(CpcBidPointList);
+      }
+      if (pointListCase_ == PointListOneofCase.TargetCpaPointList) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TargetCpaPointList);
+      }
+      if (pointListCase_ == PointListOneofCase.CpvBidPointList) {
+        output.WriteRawTag(82);
+        output.WriteMessage(CpvBidPointList);
+      }
+      if (pointListCase_ == PointListOneofCase.TargetRoasPointList) {
+        output.WriteRawTag(90);
+        output.WriteMessage(TargetRoasPointList);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -506,6 +560,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -583,7 +640,91 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_adGroupId_codec.Read(ref input);
+            if (adGroupId_ == null || value != 0L) {
+              AdGroupId = value;
+            }
+            break;
+          }
+          case 24: {
+            Type = (global::Google.Ads.GoogleAds.V4.Enums.SimulationTypeEnum.Types.SimulationType) input.ReadEnum();
+            break;
+          }
+          case 32: {
+            ModificationMethod = (global::Google.Ads.GoogleAds.V4.Enums.SimulationModificationMethodEnum.Types.SimulationModificationMethod) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            string value = _single_startDate_codec.Read(ref input);
+            if (startDate_ == null || value != "") {
+              StartDate = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_endDate_codec.Read(ref input);
+            if (endDate_ == null || value != "") {
+              EndDate = value;
+            }
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V4.Common.CpcBidSimulationPointList subBuilder = new global::Google.Ads.GoogleAds.V4.Common.CpcBidSimulationPointList();
+            if (pointListCase_ == PointListOneofCase.CpcBidPointList) {
+              subBuilder.MergeFrom(CpcBidPointList);
+            }
+            input.ReadMessage(subBuilder);
+            CpcBidPointList = subBuilder;
+            break;
+          }
+          case 74: {
+            global::Google.Ads.GoogleAds.V4.Common.TargetCpaSimulationPointList subBuilder = new global::Google.Ads.GoogleAds.V4.Common.TargetCpaSimulationPointList();
+            if (pointListCase_ == PointListOneofCase.TargetCpaPointList) {
+              subBuilder.MergeFrom(TargetCpaPointList);
+            }
+            input.ReadMessage(subBuilder);
+            TargetCpaPointList = subBuilder;
+            break;
+          }
+          case 82: {
+            global::Google.Ads.GoogleAds.V4.Common.CpvBidSimulationPointList subBuilder = new global::Google.Ads.GoogleAds.V4.Common.CpvBidSimulationPointList();
+            if (pointListCase_ == PointListOneofCase.CpvBidPointList) {
+              subBuilder.MergeFrom(CpvBidPointList);
+            }
+            input.ReadMessage(subBuilder);
+            CpvBidPointList = subBuilder;
+            break;
+          }
+          case 90: {
+            global::Google.Ads.GoogleAds.V4.Common.TargetRoasSimulationPointList subBuilder = new global::Google.Ads.GoogleAds.V4.Common.TargetRoasSimulationPointList();
+            if (pointListCase_ == PointListOneofCase.TargetRoasPointList) {
+              subBuilder.MergeFrom(TargetRoasPointList);
+            }
+            input.ReadMessage(subBuilder);
+            TargetRoasPointList = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCampaignFeedServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignFeedRequestObject()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignFeedRequestObjectAsync()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignFeed()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
@@ -114,7 +114,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignFeedAsync()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignFeedResourceNames()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
@@ -170,7 +170,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignFeedResourceNamesAsync()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
@@ -199,7 +199,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignFeedsRequestObject()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
@@ -228,7 +228,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignFeedsRequestObjectAsync()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignFeeds()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);
@@ -286,7 +286,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignFeedsAsync()
         {
             moq::Mock<CampaignFeedService.CampaignFeedServiceClient> mockGrpcClient = new moq::Mock<CampaignFeedService.CampaignFeedServiceClient>(moq::MockBehavior.Strict);

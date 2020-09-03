@@ -128,6 +128,10 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>PaymentsAccountService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to provide payments accounts that can be used to set up consolidated
+    /// billing.
+    /// </remarks>
     public abstract partial class PaymentsAccountServiceClient
     {
         /// <summary>
@@ -279,6 +283,10 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>PaymentsAccountService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to provide payments accounts that can be used to set up consolidated
+    /// billing.
+    /// </remarks>
     public sealed partial class PaymentsAccountServiceClientImpl : PaymentsAccountServiceClient
     {
         private readonly gaxgrpc::ApiCall<ListPaymentsAccountsRequest, ListPaymentsAccountsResponse> _callListPaymentsAccounts;

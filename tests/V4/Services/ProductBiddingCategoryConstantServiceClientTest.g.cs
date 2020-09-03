@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedProductBiddingCategoryConstantServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetProductBiddingCategoryConstantRequestObject()
         {
             moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -55,7 +55,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetProductBiddingCategoryConstantRequestObjectAsync()
         {
             moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetProductBiddingCategoryConstant()
         {
             moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -109,7 +109,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetProductBiddingCategoryConstantAsync()
         {
             moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -137,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetProductBiddingCategoryConstantResourceNames()
         {
             moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);
@@ -163,7 +163,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetProductBiddingCategoryConstantResourceNamesAsync()
         {
             moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient> mockGrpcClient = new moq::Mock<ProductBiddingCategoryConstantService.ProductBiddingCategoryConstantServiceClient>(moq::MockBehavior.Strict);

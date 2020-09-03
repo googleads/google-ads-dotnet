@@ -140,6 +140,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdParameterService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad parameters.
+    /// </remarks>
     public abstract partial class AdParameterServiceClient
     {
         /// <summary>
@@ -407,6 +410,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdParameterService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad parameters.
+    /// </remarks>
     public sealed partial class AdParameterServiceClientImpl : AdParameterServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdParameterRequest, gagvr::AdParameter> _callGetAdParameter;

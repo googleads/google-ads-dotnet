@@ -152,6 +152,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>GoogleAdsService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch data and metrics across resources.
+    /// </remarks>
     public abstract partial class GoogleAdsServiceClient
     {
         /// <summary>
@@ -713,6 +716,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>GoogleAdsService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch data and metrics across resources.
+    /// </remarks>
     public sealed partial class GoogleAdsServiceClientImpl : GoogleAdsServiceClient
     {
         private readonly gaxgrpc::ApiCall<SearchGoogleAdsRequest, SearchGoogleAdsResponse> _callSearch;

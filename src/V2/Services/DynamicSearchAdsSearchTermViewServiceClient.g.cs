@@ -136,6 +136,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>DynamicSearchAdsSearchTermViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch dynamic search ads views.
+    /// </remarks>
     public abstract partial class DynamicSearchAdsSearchTermViewServiceClient
     {
         /// <summary>
@@ -317,6 +320,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>DynamicSearchAdsSearchTermViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch dynamic search ads views.
+    /// </remarks>
     public sealed partial class DynamicSearchAdsSearchTermViewServiceClientImpl : DynamicSearchAdsSearchTermViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetDynamicSearchAdsSearchTermViewRequest, gagvr::DynamicSearchAdsSearchTermView> _callGetDynamicSearchAdsSearchTermView;

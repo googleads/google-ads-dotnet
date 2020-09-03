@@ -133,7 +133,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// adjustments.  Adjustments create differences between the 'approved' and
   /// 'adjusted' fields, which would otherwise be identical.
   /// </summary>
-  public sealed partial class AccountBudget : pb::IMessage<AccountBudget> {
+  public sealed partial class AccountBudget : pb::IMessage<AccountBudget>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AccountBudget> _parser = new pb::MessageParser<AccountBudget>(() => new AccountBudget());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -772,6 +776,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -849,7 +856,91 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (billingSetup_ != null) {
+        _single_billingSetup_codec.WriteTagAndValue(ref output, BillingSetup);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetStatusEnum.Types.AccountBudgetStatus.Unspecified) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) Status);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (proposedStartDateTime_ != null) {
+        _single_proposedStartDateTime_codec.WriteTagAndValue(ref output, ProposedStartDateTime);
+      }
+      if (approvedStartDateTime_ != null) {
+        _single_approvedStartDateTime_codec.WriteTagAndValue(ref output, ApprovedStartDateTime);
+      }
+      if (proposedEndTimeCase_ == ProposedEndTimeOneofCase.ProposedEndDateTime) {
+        _oneof_proposedEndDateTime_codec.WriteTagAndValue(ref output, (string) proposedEndTime_);
+      }
+      if (proposedEndTimeCase_ == ProposedEndTimeOneofCase.ProposedEndTimeType) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) ProposedEndTimeType);
+      }
+      if (approvedEndTimeCase_ == ApprovedEndTimeOneofCase.ApprovedEndDateTime) {
+        _oneof_approvedEndDateTime_codec.WriteTagAndValue(ref output, (string) approvedEndTime_);
+      }
+      if (approvedEndTimeCase_ == ApprovedEndTimeOneofCase.ApprovedEndTimeType) {
+        output.WriteRawTag(88);
+        output.WriteEnum((int) ApprovedEndTimeType);
+      }
+      if (proposedSpendingLimitCase_ == ProposedSpendingLimitOneofCase.ProposedSpendingLimitMicros) {
+        _oneof_proposedSpendingLimitMicros_codec.WriteTagAndValue(ref output, (long?) proposedSpendingLimit_);
+      }
+      if (proposedSpendingLimitCase_ == ProposedSpendingLimitOneofCase.ProposedSpendingLimitType) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) ProposedSpendingLimitType);
+      }
+      if (approvedSpendingLimitCase_ == ApprovedSpendingLimitOneofCase.ApprovedSpendingLimitMicros) {
+        _oneof_approvedSpendingLimitMicros_codec.WriteTagAndValue(ref output, (long?) approvedSpendingLimit_);
+      }
+      if (approvedSpendingLimitCase_ == ApprovedSpendingLimitOneofCase.ApprovedSpendingLimitType) {
+        output.WriteRawTag(120);
+        output.WriteEnum((int) ApprovedSpendingLimitType);
+      }
+      if (adjustedSpendingLimitCase_ == AdjustedSpendingLimitOneofCase.AdjustedSpendingLimitMicros) {
+        _oneof_adjustedSpendingLimitMicros_codec.WriteTagAndValue(ref output, (long?) adjustedSpendingLimit_);
+      }
+      if (adjustedSpendingLimitCase_ == AdjustedSpendingLimitOneofCase.AdjustedSpendingLimitType) {
+        output.WriteRawTag(136, 1);
+        output.WriteEnum((int) AdjustedSpendingLimitType);
+      }
+      if (totalAdjustmentsMicros_ != null) {
+        _single_totalAdjustmentsMicros_codec.WriteTagAndValue(ref output, TotalAdjustmentsMicros);
+      }
+      if (amountServedMicros_ != null) {
+        _single_amountServedMicros_codec.WriteTagAndValue(ref output, AmountServedMicros);
+      }
+      if (purchaseOrderNumber_ != null) {
+        _single_purchaseOrderNumber_codec.WriteTagAndValue(ref output, PurchaseOrderNumber);
+      }
+      if (notes_ != null) {
+        _single_notes_codec.WriteTagAndValue(ref output, Notes);
+      }
+      if (pendingProposal_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(PendingProposal);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1038,6 +1129,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1169,7 +1263,145 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_billingSetup_codec.Read(ref input);
+            if (billingSetup_ == null || value != "") {
+              BillingSetup = value;
+            }
+            break;
+          }
+          case 32: {
+            Status = (global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetStatusEnum.Types.AccountBudgetStatus) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_proposedStartDateTime_codec.Read(ref input);
+            if (proposedStartDateTime_ == null || value != "") {
+              ProposedStartDateTime = value;
+            }
+            break;
+          }
+          case 58: {
+            string value = _single_approvedStartDateTime_codec.Read(ref input);
+            if (approvedStartDateTime_ == null || value != "") {
+              ApprovedStartDateTime = value;
+            }
+            break;
+          }
+          case 66: {
+            ProposedEndDateTime = _oneof_proposedEndDateTime_codec.Read(ref input);
+            break;
+          }
+          case 72: {
+            proposedEndTime_ = input.ReadEnum();
+            proposedEndTimeCase_ = ProposedEndTimeOneofCase.ProposedEndTimeType;
+            break;
+          }
+          case 82: {
+            ApprovedEndDateTime = _oneof_approvedEndDateTime_codec.Read(ref input);
+            break;
+          }
+          case 88: {
+            approvedEndTime_ = input.ReadEnum();
+            approvedEndTimeCase_ = ApprovedEndTimeOneofCase.ApprovedEndTimeType;
+            break;
+          }
+          case 98: {
+            ProposedSpendingLimitMicros = _oneof_proposedSpendingLimitMicros_codec.Read(ref input);
+            break;
+          }
+          case 104: {
+            proposedSpendingLimit_ = input.ReadEnum();
+            proposedSpendingLimitCase_ = ProposedSpendingLimitOneofCase.ProposedSpendingLimitType;
+            break;
+          }
+          case 114: {
+            ApprovedSpendingLimitMicros = _oneof_approvedSpendingLimitMicros_codec.Read(ref input);
+            break;
+          }
+          case 120: {
+            approvedSpendingLimit_ = input.ReadEnum();
+            approvedSpendingLimitCase_ = ApprovedSpendingLimitOneofCase.ApprovedSpendingLimitType;
+            break;
+          }
+          case 130: {
+            AdjustedSpendingLimitMicros = _oneof_adjustedSpendingLimitMicros_codec.Read(ref input);
+            break;
+          }
+          case 136: {
+            adjustedSpendingLimit_ = input.ReadEnum();
+            adjustedSpendingLimitCase_ = AdjustedSpendingLimitOneofCase.AdjustedSpendingLimitType;
+            break;
+          }
+          case 146: {
+            long? value = _single_totalAdjustmentsMicros_codec.Read(ref input);
+            if (totalAdjustmentsMicros_ == null || value != 0L) {
+              TotalAdjustmentsMicros = value;
+            }
+            break;
+          }
+          case 154: {
+            long? value = _single_amountServedMicros_codec.Read(ref input);
+            if (amountServedMicros_ == null || value != 0L) {
+              AmountServedMicros = value;
+            }
+            break;
+          }
+          case 162: {
+            string value = _single_purchaseOrderNumber_codec.Read(ref input);
+            if (purchaseOrderNumber_ == null || value != "") {
+              PurchaseOrderNumber = value;
+            }
+            break;
+          }
+          case 170: {
+            string value = _single_notes_codec.Read(ref input);
+            if (notes_ == null || value != "") {
+              Notes = value;
+            }
+            break;
+          }
+          case 178: {
+            if (pendingProposal_ == null) {
+              PendingProposal = new global::Google.Ads.GoogleAds.V3.Resources.AccountBudget.Types.PendingAccountBudgetProposal();
+            }
+            input.ReadMessage(PendingProposal);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the AccountBudget message type.</summary>
@@ -1179,7 +1411,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       /// A pending proposal associated with the enclosing account-level budget,
       /// if applicable.
       /// </summary>
-      public sealed partial class PendingAccountBudgetProposal : pb::IMessage<PendingAccountBudgetProposal> {
+      public sealed partial class PendingAccountBudgetProposal : pb::IMessage<PendingAccountBudgetProposal>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
         private static readonly pb::MessageParser<PendingAccountBudgetProposal> _parser = new pb::MessageParser<PendingAccountBudgetProposal>(() => new PendingAccountBudgetProposal());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1508,6 +1744,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
           if (accountBudgetProposal_ != null) {
             _single_accountBudgetProposal_codec.WriteTagAndValue(output, AccountBudgetProposal);
           }
@@ -1547,7 +1786,53 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (accountBudgetProposal_ != null) {
+            _single_accountBudgetProposal_codec.WriteTagAndValue(ref output, AccountBudgetProposal);
+          }
+          if (ProposalType != global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType.Unspecified) {
+            output.WriteRawTag(16);
+            output.WriteEnum((int) ProposalType);
+          }
+          if (name_ != null) {
+            _single_name_codec.WriteTagAndValue(ref output, Name);
+          }
+          if (startDateTime_ != null) {
+            _single_startDateTime_codec.WriteTagAndValue(ref output, StartDateTime);
+          }
+          if (endTimeCase_ == EndTimeOneofCase.EndDateTime) {
+            _oneof_endDateTime_codec.WriteTagAndValue(ref output, (string) endTime_);
+          }
+          if (endTimeCase_ == EndTimeOneofCase.EndTimeType) {
+            output.WriteRawTag(48);
+            output.WriteEnum((int) EndTimeType);
+          }
+          if (spendingLimitCase_ == SpendingLimitOneofCase.SpendingLimitMicros) {
+            _oneof_spendingLimitMicros_codec.WriteTagAndValue(ref output, (long?) spendingLimit_);
+          }
+          if (spendingLimitCase_ == SpendingLimitOneofCase.SpendingLimitType) {
+            output.WriteRawTag(64);
+            output.WriteEnum((int) SpendingLimitType);
+          }
+          if (purchaseOrderNumber_ != null) {
+            _single_purchaseOrderNumber_codec.WriteTagAndValue(ref output, PurchaseOrderNumber);
+          }
+          if (notes_ != null) {
+            _single_notes_codec.WriteTagAndValue(ref output, Notes);
+          }
+          if (creationDateTime_ != null) {
+            _single_creationDateTime_codec.WriteTagAndValue(ref output, CreationDateTime);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
@@ -1652,6 +1937,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
             switch(tag) {
@@ -1724,7 +2012,86 @@ namespace Google.Ads.GoogleAds.V3.Resources {
               }
             }
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                string value = _single_accountBudgetProposal_codec.Read(ref input);
+                if (accountBudgetProposal_ == null || value != "") {
+                  AccountBudgetProposal = value;
+                }
+                break;
+              }
+              case 16: {
+                ProposalType = (global::Google.Ads.GoogleAds.V3.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType) input.ReadEnum();
+                break;
+              }
+              case 26: {
+                string value = _single_name_codec.Read(ref input);
+                if (name_ == null || value != "") {
+                  Name = value;
+                }
+                break;
+              }
+              case 34: {
+                string value = _single_startDateTime_codec.Read(ref input);
+                if (startDateTime_ == null || value != "") {
+                  StartDateTime = value;
+                }
+                break;
+              }
+              case 42: {
+                EndDateTime = _oneof_endDateTime_codec.Read(ref input);
+                break;
+              }
+              case 48: {
+                endTime_ = input.ReadEnum();
+                endTimeCase_ = EndTimeOneofCase.EndTimeType;
+                break;
+              }
+              case 58: {
+                SpendingLimitMicros = _oneof_spendingLimitMicros_codec.Read(ref input);
+                break;
+              }
+              case 64: {
+                spendingLimit_ = input.ReadEnum();
+                spendingLimitCase_ = SpendingLimitOneofCase.SpendingLimitType;
+                break;
+              }
+              case 74: {
+                string value = _single_purchaseOrderNumber_codec.Read(ref input);
+                if (purchaseOrderNumber_ == null || value != "") {
+                  PurchaseOrderNumber = value;
+                }
+                break;
+              }
+              case 82: {
+                string value = _single_notes_codec.Read(ref input);
+                if (notes_ == null || value != "") {
+                  Notes = value;
+                }
+                break;
+              }
+              case 90: {
+                string value = _single_creationDateTime_codec.Read(ref input);
+                if (creationDateTime_ == null || value != "") {
+                  CreationDateTime = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+        #endif
 
       }
 

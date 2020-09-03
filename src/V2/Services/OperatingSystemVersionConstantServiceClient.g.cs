@@ -136,6 +136,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>OperatingSystemVersionConstantService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Operating System Version constants.
+    /// </remarks>
     public abstract partial class OperatingSystemVersionConstantServiceClient
     {
         /// <summary>
@@ -317,6 +320,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>OperatingSystemVersionConstantService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Operating System Version constants.
+    /// </remarks>
     public sealed partial class OperatingSystemVersionConstantServiceClientImpl : OperatingSystemVersionConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetOperatingSystemVersionConstantRequest, gagvr::OperatingSystemVersionConstant> _callGetOperatingSystemVersionConstant;

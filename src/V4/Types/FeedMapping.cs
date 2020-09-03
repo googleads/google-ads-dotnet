@@ -157,7 +157,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// <summary>
   /// A feed mapping.
   /// </summary>
-  public sealed partial class FeedMapping : pb::IMessage<FeedMapping> {
+  public sealed partial class FeedMapping : pb::IMessage<FeedMapping>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FeedMapping> _parser = new pb::MessageParser<FeedMapping>(() => new FeedMapping());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -363,6 +367,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -386,7 +393,37 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (feed_ != null) {
+        _single_feed_codec.WriteTagAndValue(ref output, Feed);
+      }
+      if (targetCase_ == TargetOneofCase.PlaceholderType) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) PlaceholderType);
+      }
+      if (targetCase_ == TargetOneofCase.CriterionType) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) CriterionType);
+      }
+      attributeFieldMappings_.WriteTo(ref output, _repeated_attributeFieldMappings_codec);
+      if (Status != global::Google.Ads.GoogleAds.V4.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -444,6 +481,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -481,14 +521,62 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            string value = _single_feed_codec.Read(ref input);
+            if (feed_ == null || value != "") {
+              Feed = value;
+            }
+            break;
+          }
+          case 24: {
+            target_ = input.ReadEnum();
+            targetCase_ = TargetOneofCase.PlaceholderType;
+            break;
+          }
+          case 32: {
+            target_ = input.ReadEnum();
+            targetCase_ = TargetOneofCase.CriterionType;
+            break;
+          }
+          case 42: {
+            attributeFieldMappings_.AddEntriesFrom(ref input, _repeated_attributeFieldMappings_codec);
+            break;
+          }
+          case 48: {
+            Status = (global::Google.Ads.GoogleAds.V4.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Maps from feed attribute id to a placeholder or criterion field id.
   /// </summary>
-  public sealed partial class AttributeFieldMapping : pb::IMessage<AttributeFieldMapping> {
+  public sealed partial class AttributeFieldMapping : pb::IMessage<AttributeFieldMapping>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AttributeFieldMapping> _parser = new pb::MessageParser<AttributeFieldMapping>(() => new AttributeFieldMapping());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1036,6 +1124,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (feedAttributeId_ != null) {
         _single_feedAttributeId_codec.WriteTagAndValue(output, FeedAttributeId);
       }
@@ -1129,7 +1220,107 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (feedAttributeId_ != null) {
+        _single_feedAttributeId_codec.WriteTagAndValue(ref output, FeedAttributeId);
+      }
+      if (fieldId_ != null) {
+        _single_fieldId_codec.WriteTagAndValue(ref output, FieldId);
+      }
+      if (fieldCase_ == FieldOneofCase.SitelinkField) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) SitelinkField);
+      }
+      if (fieldCase_ == FieldOneofCase.CallField) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) CallField);
+      }
+      if (fieldCase_ == FieldOneofCase.AppField) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) AppField);
+      }
+      if (fieldCase_ == FieldOneofCase.LocationField) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) LocationField);
+      }
+      if (fieldCase_ == FieldOneofCase.AffiliateLocationField) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) AffiliateLocationField);
+      }
+      if (fieldCase_ == FieldOneofCase.CalloutField) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) CalloutField);
+      }
+      if (fieldCase_ == FieldOneofCase.StructuredSnippetField) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) StructuredSnippetField);
+      }
+      if (fieldCase_ == FieldOneofCase.MessageField) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) MessageField);
+      }
+      if (fieldCase_ == FieldOneofCase.PriceField) {
+        output.WriteRawTag(88);
+        output.WriteEnum((int) PriceField);
+      }
+      if (fieldCase_ == FieldOneofCase.PromotionField) {
+        output.WriteRawTag(96);
+        output.WriteEnum((int) PromotionField);
+      }
+      if (fieldCase_ == FieldOneofCase.AdCustomizerField) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) AdCustomizerField);
+      }
+      if (fieldCase_ == FieldOneofCase.DsaPageFeedField) {
+        output.WriteRawTag(112);
+        output.WriteEnum((int) DsaPageFeedField);
+      }
+      if (fieldCase_ == FieldOneofCase.LocationExtensionTargetingField) {
+        output.WriteRawTag(120);
+        output.WriteEnum((int) LocationExtensionTargetingField);
+      }
+      if (fieldCase_ == FieldOneofCase.EducationField) {
+        output.WriteRawTag(128, 1);
+        output.WriteEnum((int) EducationField);
+      }
+      if (fieldCase_ == FieldOneofCase.FlightField) {
+        output.WriteRawTag(136, 1);
+        output.WriteEnum((int) FlightField);
+      }
+      if (fieldCase_ == FieldOneofCase.CustomField) {
+        output.WriteRawTag(144, 1);
+        output.WriteEnum((int) CustomField);
+      }
+      if (fieldCase_ == FieldOneofCase.HotelField) {
+        output.WriteRawTag(152, 1);
+        output.WriteEnum((int) HotelField);
+      }
+      if (fieldCase_ == FieldOneofCase.RealEstateField) {
+        output.WriteRawTag(160, 1);
+        output.WriteEnum((int) RealEstateField);
+      }
+      if (fieldCase_ == FieldOneofCase.TravelField) {
+        output.WriteRawTag(168, 1);
+        output.WriteEnum((int) TravelField);
+      }
+      if (fieldCase_ == FieldOneofCase.LocalField) {
+        output.WriteRawTag(176, 1);
+        output.WriteEnum((int) LocalField);
+      }
+      if (fieldCase_ == FieldOneofCase.JobField) {
+        output.WriteRawTag(184, 1);
+        output.WriteEnum((int) JobField);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1295,6 +1486,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1422,7 +1616,141 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_feedAttributeId_codec.Read(ref input);
+            if (feedAttributeId_ == null || value != 0L) {
+              FeedAttributeId = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_fieldId_codec.Read(ref input);
+            if (fieldId_ == null || value != 0L) {
+              FieldId = value;
+            }
+            break;
+          }
+          case 24: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.SitelinkField;
+            break;
+          }
+          case 32: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.CallField;
+            break;
+          }
+          case 40: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.AppField;
+            break;
+          }
+          case 48: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.LocationField;
+            break;
+          }
+          case 56: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.AffiliateLocationField;
+            break;
+          }
+          case 64: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.CalloutField;
+            break;
+          }
+          case 72: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.StructuredSnippetField;
+            break;
+          }
+          case 80: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.MessageField;
+            break;
+          }
+          case 88: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.PriceField;
+            break;
+          }
+          case 96: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.PromotionField;
+            break;
+          }
+          case 104: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.AdCustomizerField;
+            break;
+          }
+          case 112: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.DsaPageFeedField;
+            break;
+          }
+          case 120: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.LocationExtensionTargetingField;
+            break;
+          }
+          case 128: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.EducationField;
+            break;
+          }
+          case 136: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.FlightField;
+            break;
+          }
+          case 144: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.CustomField;
+            break;
+          }
+          case 152: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.HotelField;
+            break;
+          }
+          case 160: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.RealEstateField;
+            break;
+          }
+          case 168: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.TravelField;
+            break;
+          }
+          case 176: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.LocalField;
+            break;
+          }
+          case 184: {
+            field_ = input.ReadEnum();
+            fieldCase_ = FieldOneofCase.JobField;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

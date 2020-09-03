@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CampaignCriterionService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign criteria.
+    /// </remarks>
     public abstract partial class CampaignCriterionServiceClient
     {
         /// <summary>
@@ -404,6 +407,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CampaignCriterionService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign criteria.
+    /// </remarks>
     public sealed partial class CampaignCriterionServiceClientImpl : CampaignCriterionServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignCriterionRequest, gagvr::CampaignCriterion> _callGetCampaignCriterion;

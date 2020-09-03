@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>FeedPlaceholderViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch feed placeholder views.
+    /// </remarks>
     public abstract partial class FeedPlaceholderViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>FeedPlaceholderViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch feed placeholder views.
+    /// </remarks>
     public sealed partial class FeedPlaceholderViewServiceClientImpl : FeedPlaceholderViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetFeedPlaceholderViewRequest, gagvr::FeedPlaceholderView> _callGetFeedPlaceholderView;

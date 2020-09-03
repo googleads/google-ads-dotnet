@@ -78,7 +78,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// <summary>
   /// A link between an AdGroupAd and an Asset.
   /// </summary>
-  public sealed partial class AdGroupAdAssetView : pb::IMessage<AdGroupAdAssetView> {
+  public sealed partial class AdGroupAdAssetView : pb::IMessage<AdGroupAdAssetView>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdGroupAdAssetView> _parser = new pb::MessageParser<AdGroupAdAssetView>(() => new AdGroupAdAssetView());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -256,6 +260,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -281,7 +288,39 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (FieldType != global::Google.Ads.GoogleAds.V4.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) FieldType);
+      }
+      if (policySummary_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(PolicySummary);
+      }
+      if (PerformanceLabel != global::Google.Ads.GoogleAds.V4.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) PerformanceLabel);
+      }
+      if (adGroupAd_ != null) {
+        _single_adGroupAd_codec.WriteTagAndValue(ref output, AdGroupAd);
+      }
+      if (asset_ != null) {
+        _single_asset_codec.WriteTagAndValue(ref output, Asset);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -345,6 +384,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -386,14 +428,66 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 16: {
+            FieldType = (global::Google.Ads.GoogleAds.V4.Enums.AssetFieldTypeEnum.Types.AssetFieldType) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            if (policySummary_ == null) {
+              PolicySummary = new global::Google.Ads.GoogleAds.V4.Resources.AdGroupAdAssetPolicySummary();
+            }
+            input.ReadMessage(PolicySummary);
+            break;
+          }
+          case 32: {
+            PerformanceLabel = (global::Google.Ads.GoogleAds.V4.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            string value = _single_adGroupAd_codec.Read(ref input);
+            if (adGroupAd_ == null || value != "") {
+              AdGroupAd = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_asset_codec.Read(ref input);
+            if (asset_ == null || value != "") {
+              Asset = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Contains policy information for an ad group ad asset.
   /// </summary>
-  public sealed partial class AdGroupAdAssetPolicySummary : pb::IMessage<AdGroupAdAssetPolicySummary> {
+  public sealed partial class AdGroupAdAssetPolicySummary : pb::IMessage<AdGroupAdAssetPolicySummary>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdGroupAdAssetPolicySummary> _parser = new pb::MessageParser<AdGroupAdAssetPolicySummary>(() => new AdGroupAdAssetPolicySummary());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -509,6 +603,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       policyTopicEntries_.WriteTo(output, _repeated_policyTopicEntries_codec);
       if (ReviewStatus != global::Google.Ads.GoogleAds.V4.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) {
         output.WriteRawTag(16);
@@ -521,7 +618,26 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      policyTopicEntries_.WriteTo(ref output, _repeated_policyTopicEntries_codec);
+      if (ReviewStatus != global::Google.Ads.GoogleAds.V4.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) ReviewStatus);
+      }
+      if (ApprovalStatus != global::Google.Ads.GoogleAds.V4.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) ApprovalStatus);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -556,6 +672,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -576,7 +695,34 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            policyTopicEntries_.AddEntriesFrom(ref input, _repeated_policyTopicEntries_codec);
+            break;
+          }
+          case 16: {
+            ReviewStatus = (global::Google.Ads.GoogleAds.V4.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            ApprovalStatus = (global::Google.Ads.GoogleAds.V4.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

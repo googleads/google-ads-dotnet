@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedConversionUploadServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void UploadClickConversionsRequestObject()
         {
             moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task UploadClickConversionsRequestObjectAsync()
         {
             moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void UploadClickConversions()
         {
             moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
@@ -116,7 +116,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task UploadClickConversionsAsync()
         {
             moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
@@ -146,7 +146,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void UploadCallConversionsRequestObject()
         {
             moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task UploadCallConversionsRequestObjectAsync()
         {
             moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
@@ -206,7 +206,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void UploadCallConversions()
         {
             moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);
@@ -234,7 +234,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task UploadCallConversionsAsync()
         {
             moq::Mock<ConversionUploadService.ConversionUploadServiceClient> mockGrpcClient = new moq::Mock<ConversionUploadService.ConversionUploadServiceClient>(moq::MockBehavior.Strict);

@@ -76,7 +76,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// the processing results of the job can only be read using
   /// OfflineUserDataJobService.GetOfflineUserDataJob.
   /// </summary>
-  public sealed partial class OfflineUserDataJob : pb::IMessage<OfflineUserDataJob> {
+  public sealed partial class OfflineUserDataJob : pb::IMessage<OfflineUserDataJob>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<OfflineUserDataJob> _parser = new pb::MessageParser<OfflineUserDataJob>(() => new OfflineUserDataJob());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -312,6 +316,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -345,7 +352,47 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (externalId_ != null) {
+        _single_externalId_codec.WriteTagAndValue(ref output, ExternalId);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType.Unspecified) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) Type);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Status);
+      }
+      if (FailureReason != global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) FailureReason);
+      }
+      if (metadataCase_ == MetadataOneofCase.CustomerMatchUserListMetadata) {
+        output.WriteRawTag(58);
+        output.WriteMessage(CustomerMatchUserListMetadata);
+      }
+      if (metadataCase_ == MetadataOneofCase.StoreSalesMetadata) {
+        output.WriteRawTag(66);
+        output.WriteMessage(StoreSalesMetadata);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -427,6 +474,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -483,7 +533,70 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_externalId_codec.Read(ref input);
+            if (externalId_ == null || value != 0L) {
+              ExternalId = value;
+            }
+            break;
+          }
+          case 32: {
+            Type = (global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobTypeEnum.Types.OfflineUserDataJobType) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            Status = (global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobStatusEnum.Types.OfflineUserDataJobStatus) input.ReadEnum();
+            break;
+          }
+          case 48: {
+            FailureReason = (global::Google.Ads.GoogleAds.V3.Enums.OfflineUserDataJobFailureReasonEnum.Types.OfflineUserDataJobFailureReason) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            global::Google.Ads.GoogleAds.V3.Common.CustomerMatchUserListMetadata subBuilder = new global::Google.Ads.GoogleAds.V3.Common.CustomerMatchUserListMetadata();
+            if (metadataCase_ == MetadataOneofCase.CustomerMatchUserListMetadata) {
+              subBuilder.MergeFrom(CustomerMatchUserListMetadata);
+            }
+            input.ReadMessage(subBuilder);
+            CustomerMatchUserListMetadata = subBuilder;
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V3.Common.StoreSalesMetadata subBuilder = new global::Google.Ads.GoogleAds.V3.Common.StoreSalesMetadata();
+            if (metadataCase_ == MetadataOneofCase.StoreSalesMetadata) {
+              subBuilder.MergeFrom(StoreSalesMetadata);
+            }
+            input.ReadMessage(subBuilder);
+            StoreSalesMetadata = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

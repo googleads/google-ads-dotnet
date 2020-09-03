@@ -61,7 +61,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   /// contribute to the metrics for all DistanceBuckets that include the user's
   /// distance.
   /// </summary>
-  public sealed partial class DistanceView : pb::IMessage<DistanceView> {
+  public sealed partial class DistanceView : pb::IMessage<DistanceView>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DistanceView> _parser = new pb::MessageParser<DistanceView>(() => new DistanceView());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -182,6 +186,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -196,7 +203,28 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (DistanceBucket != global::Google.Ads.GoogleAds.V2.Enums.DistanceBucketEnum.Types.DistanceBucket.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) DistanceBucket);
+      }
+      if (metricSystem_ != null) {
+        _single_metricSystem_codec.WriteTagAndValue(ref output, MetricSystem);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -237,6 +265,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -260,7 +291,37 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 16: {
+            DistanceBucket = (global::Google.Ads.GoogleAds.V2.Enums.DistanceBucketEnum.Types.DistanceBucket) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            bool? value = _single_metricSystem_codec.Read(ref input);
+            if (metricSystem_ == null || value != false) {
+              MetricSystem = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
