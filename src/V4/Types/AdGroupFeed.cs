@@ -65,7 +65,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// <summary>
   /// An ad group feed.
   /// </summary>
-  public sealed partial class AdGroupFeed : pb::IMessage<AdGroupFeed> {
+  public sealed partial class AdGroupFeed : pb::IMessage<AdGroupFeed>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AdGroupFeed> _parser = new pb::MessageParser<AdGroupFeed>(() => new AdGroupFeed());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -242,6 +246,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -264,7 +271,36 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (feed_ != null) {
+        _single_feed_codec.WriteTagAndValue(ref output, Feed);
+      }
+      if (adGroup_ != null) {
+        _single_adGroup_codec.WriteTagAndValue(ref output, AdGroup);
+      }
+      placeholderTypes_.WriteTo(ref output, _repeated_placeholderTypes_codec);
+      if (matchingFunction_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(MatchingFunction);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V4.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -324,6 +360,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -366,7 +405,56 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            string value = _single_feed_codec.Read(ref input);
+            if (feed_ == null || value != "") {
+              Feed = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_adGroup_codec.Read(ref input);
+            if (adGroup_ == null || value != "") {
+              AdGroup = value;
+            }
+            break;
+          }
+          case 34:
+          case 32: {
+            placeholderTypes_.AddEntriesFrom(ref input, _repeated_placeholderTypes_codec);
+            break;
+          }
+          case 42: {
+            if (matchingFunction_ == null) {
+              MatchingFunction = new global::Google.Ads.GoogleAds.V4.Common.MatchingFunction();
+            }
+            input.ReadMessage(MatchingFunction);
+            break;
+          }
+          case 48: {
+            Status = (global::Google.Ads.GoogleAds.V4.Enums.FeedLinkStatusEnum.Types.FeedLinkStatus) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

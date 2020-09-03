@@ -237,7 +237,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <see cref="gagvr::GeoTargetConstantName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::GeoTargetConstantName ResourceNameAsGeoTargetConstantName
+        internal GeoTargetConstantName ResourceNameAsGeoTargetConstantName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::GeoTargetConstantName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -246,7 +246,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <summary>
         /// <see cref="gagvr::GeoTargetConstantName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::GeoTargetConstantName GeoTargetConstantName
+        internal GeoTargetConstantName GeoTargetConstantName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::GeoTargetConstantName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

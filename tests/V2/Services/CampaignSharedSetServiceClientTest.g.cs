@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCampaignSharedSetServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignSharedSetRequestObject()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignSharedSetRequestObjectAsync()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignSharedSet()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
@@ -98,7 +98,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignSharedSetAsync()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
@@ -122,7 +122,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignSharedSetResourceNames()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
@@ -144,7 +144,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignSharedSetResourceNamesAsync()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
@@ -168,7 +168,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignSharedSetsRequestObject()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
@@ -197,7 +197,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignSharedSetsRequestObjectAsync()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
@@ -228,7 +228,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignSharedSets()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);
@@ -255,7 +255,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignSharedSetsAsync()
         {
             moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient> mockGrpcClient = new moq::Mock<CampaignSharedSetService.CampaignSharedSetServiceClient>(moq::MockBehavior.Strict);

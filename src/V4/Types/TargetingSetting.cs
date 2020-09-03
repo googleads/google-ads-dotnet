@@ -65,7 +65,11 @@ namespace Google.Ads.GoogleAds.V4.Common {
   /// levels. For more details about the targeting setting, visit
   /// https://support.google.com/google-ads/answer/7365594
   /// </summary>
-  public sealed partial class TargetingSetting : pb::IMessage<TargetingSetting> {
+  public sealed partial class TargetingSetting : pb::IMessage<TargetingSetting>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TargetingSetting> _parser = new pb::MessageParser<TargetingSetting>(() => new TargetingSetting());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -166,12 +170,27 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       targetRestrictions_.WriteTo(output, _repeated_targetRestrictions_codec);
       targetRestrictionOperations_.WriteTo(output, _repeated_targetRestrictionOperations_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      targetRestrictions_.WriteTo(ref output, _repeated_targetRestrictions_codec);
+      targetRestrictionOperations_.WriteTo(ref output, _repeated_targetRestrictionOperations_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -196,6 +215,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -212,14 +234,41 @@ namespace Google.Ads.GoogleAds.V4.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            targetRestrictions_.AddEntriesFrom(ref input, _repeated_targetRestrictions_codec);
+            break;
+          }
+          case 18: {
+            targetRestrictionOperations_.AddEntriesFrom(ref input, _repeated_targetRestrictionOperations_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// The list of per-targeting-dimension targeting settings.
   /// </summary>
-  public sealed partial class TargetRestriction : pb::IMessage<TargetRestriction> {
+  public sealed partial class TargetRestriction : pb::IMessage<TargetRestriction>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TargetRestriction> _parser = new pb::MessageParser<TargetRestriction>(() => new TargetRestriction());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -326,6 +375,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (TargetingDimension != global::Google.Ads.GoogleAds.V4.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) TargetingDimension);
@@ -336,7 +388,24 @@ namespace Google.Ads.GoogleAds.V4.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TargetingDimension != global::Google.Ads.GoogleAds.V4.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) TargetingDimension);
+      }
+      if (bidOnly_ != null) {
+        _single_bidOnly_codec.WriteTagAndValue(ref output, BidOnly);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -371,6 +440,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -390,14 +462,44 @@ namespace Google.Ads.GoogleAds.V4.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            TargetingDimension = (global::Google.Ads.GoogleAds.V4.Enums.TargetingDimensionEnum.Types.TargetingDimension) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            bool? value = _single_bidOnly_codec.Read(ref input);
+            if (bidOnly_ == null || value != false) {
+              BidOnly = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Operation to be performed on a target restriction list in a mutate.
   /// </summary>
-  public sealed partial class TargetRestrictionOperation : pb::IMessage<TargetRestrictionOperation> {
+  public sealed partial class TargetRestrictionOperation : pb::IMessage<TargetRestrictionOperation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TargetRestrictionOperation> _parser = new pb::MessageParser<TargetRestrictionOperation>(() => new TargetRestrictionOperation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -496,6 +598,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Operator != global::Google.Ads.GoogleAds.V4.Common.TargetRestrictionOperation.Types.Operator.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Operator);
@@ -507,7 +612,25 @@ namespace Google.Ads.GoogleAds.V4.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Operator != global::Google.Ads.GoogleAds.V4.Common.TargetRestrictionOperation.Types.Operator.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Operator);
+      }
+      if (value_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -543,6 +666,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -562,7 +688,33 @@ namespace Google.Ads.GoogleAds.V4.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Operator = (global::Google.Ads.GoogleAds.V4.Common.TargetRestrictionOperation.Types.Operator) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (value_ == null) {
+              Value = new global::Google.Ads.GoogleAds.V4.Common.TargetRestriction();
+            }
+            input.ReadMessage(Value);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the TargetRestrictionOperation message type.</summary>

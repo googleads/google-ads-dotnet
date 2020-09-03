@@ -21,14 +21,16 @@ message Resource {
   google.protobuf.StringValue wrapper = 1;
   Foo foo = 2;
   repeated Foo foos = 3;
+  optional int64 opt_foos = 4; 
 }
 
 message Foo {
   int64 num = 1;
   Bar bar = 2;
   repeated Bar bars = 3;
+  optional string text = 4;
 }
 
 message Bar {
-  int64 num = 1;
+  optional int64 num = 1;
 }

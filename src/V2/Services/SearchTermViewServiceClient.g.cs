@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>SearchTermViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage search term views.
+    /// </remarks>
     public abstract partial class SearchTermViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>SearchTermViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage search term views.
+    /// </remarks>
     public sealed partial class SearchTermViewServiceClientImpl : SearchTermViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetSearchTermViewRequest, gagvr::SearchTermView> _callGetSearchTermView;

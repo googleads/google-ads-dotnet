@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>UserInterestService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Google Ads User Interest.
+    /// </remarks>
     public abstract partial class UserInterestServiceClient
     {
         /// <summary>
@@ -304,6 +307,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>UserInterestService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Google Ads User Interest.
+    /// </remarks>
     public sealed partial class UserInterestServiceClientImpl : UserInterestServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetUserInterestRequest, gagvr::UserInterest> _callGetUserInterest;

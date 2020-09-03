@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>ChangeStatusService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch change statuses.
+    /// </remarks>
     public abstract partial class ChangeStatusServiceClient
     {
         /// <summary>
@@ -304,6 +307,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>ChangeStatusService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch change statuses.
+    /// </remarks>
     public sealed partial class ChangeStatusServiceClientImpl : ChangeStatusServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetChangeStatusRequest, gagvr::ChangeStatus> _callGetChangeStatus;

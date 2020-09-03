@@ -236,7 +236,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
         /// <see cref="gagvr::CarrierConstantName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::CarrierConstantName ResourceNameAsCarrierConstantName
+        internal CarrierConstantName ResourceNameAsCarrierConstantName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::CarrierConstantName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -245,7 +245,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
         /// <summary>
         /// <see cref="gagvr::CarrierConstantName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::CarrierConstantName CarrierConstantName
+        internal CarrierConstantName CarrierConstantName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::CarrierConstantName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

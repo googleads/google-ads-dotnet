@@ -66,7 +66,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// Max number of saved keyword plans: 10000.
   /// It's possible to remove plans if limit is reached.
   /// </summary>
-  public sealed partial class KeywordPlan : pb::IMessage<KeywordPlan> {
+  public sealed partial class KeywordPlan : pb::IMessage<KeywordPlan>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<KeywordPlan> _parser = new pb::MessageParser<KeywordPlan>(() => new KeywordPlan());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -209,6 +213,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -226,7 +233,31 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (forecastPeriod_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ForecastPeriod);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -278,6 +309,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -311,14 +345,58 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 34: {
+            if (forecastPeriod_ == null) {
+              ForecastPeriod = new global::Google.Ads.GoogleAds.V3.Resources.KeywordPlanForecastPeriod();
+            }
+            input.ReadMessage(ForecastPeriod);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// The forecasting period associated with the keyword plan.
   /// </summary>
-  public sealed partial class KeywordPlanForecastPeriod : pb::IMessage<KeywordPlanForecastPeriod> {
+  public sealed partial class KeywordPlanForecastPeriod : pb::IMessage<KeywordPlanForecastPeriod>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<KeywordPlanForecastPeriod> _parser = new pb::MessageParser<KeywordPlanForecastPeriod>(() => new KeywordPlanForecastPeriod());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -448,6 +526,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (intervalCase_ == IntervalOneofCase.DateInterval) {
         output.WriteRawTag(8);
         output.WriteEnum((int) DateInterval);
@@ -459,7 +540,25 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (intervalCase_ == IntervalOneofCase.DateInterval) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) DateInterval);
+      }
+      if (intervalCase_ == IntervalOneofCase.DateRange) {
+        output.WriteRawTag(18);
+        output.WriteMessage(DateRange);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -498,6 +597,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -520,7 +622,36 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            interval_ = input.ReadEnum();
+            intervalCase_ = IntervalOneofCase.DateInterval;
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V3.Common.DateRange subBuilder = new global::Google.Ads.GoogleAds.V3.Common.DateRange();
+            if (intervalCase_ == IntervalOneofCase.DateRange) {
+              subBuilder.MergeFrom(DateRange);
+            }
+            input.ReadMessage(subBuilder);
+            DateRange = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

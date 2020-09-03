@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedDynamicSearchAdsSearchTermViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetDynamicSearchAdsSearchTermViewRequestObject()
         {
             moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -51,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetDynamicSearchAdsSearchTermViewRequestObjectAsync()
         {
             moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetDynamicSearchAdsSearchTermView()
         {
             moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetDynamicSearchAdsSearchTermViewAsync()
         {
             moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -124,7 +124,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetDynamicSearchAdsSearchTermViewResourceNames()
         {
             moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -147,7 +147,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetDynamicSearchAdsSearchTermViewResourceNamesAsync()
         {
             moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<DynamicSearchAdsSearchTermViewService.DynamicSearchAdsSearchTermViewServiceClient>(moq::MockBehavior.Strict);

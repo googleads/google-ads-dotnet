@@ -71,7 +71,11 @@ namespace Google.Ads.GoogleAds.V4.Errors {
   /// <summary>
   /// Container for enum describing possible bidding errors.
   /// </summary>
-  public sealed partial class BiddingErrorEnum : pb::IMessage<BiddingErrorEnum> {
+  public sealed partial class BiddingErrorEnum : pb::IMessage<BiddingErrorEnum>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<BiddingErrorEnum> _parser = new pb::MessageParser<BiddingErrorEnum>(() => new BiddingErrorEnum());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -136,10 +140,23 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -160,6 +177,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -168,7 +188,22 @@ namespace Google.Ads.GoogleAds.V4.Errors {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the BiddingErrorEnum message type.</summary>
@@ -211,11 +246,12 @@ namespace Google.Ads.GoogleAds.V4.Errors {
         /// </summary>
         [pbr::OriginalName("BIDDING_STRATEGY_NOT_AVAILABLE_FOR_ACCOUNT_TYPE")] BiddingStrategyNotAvailableForAccountType = 18,
         /// <summary>
-        /// Conversion tracking is not enabled for the campaign for VBB transition.
+        /// Conversion tracking is not enabled in the campaign that has YouTube
+        /// Video Builder transitions.
         /// </summary>
         [pbr::OriginalName("CONVERSION_TRACKING_NOT_ENABLED")] ConversionTrackingNotEnabled = 19,
         /// <summary>
-        /// Not enough conversions tracked for VBB transitions.
+        /// Not enough conversions tracked for YouTube Video Builder transitions.
         /// </summary>
         [pbr::OriginalName("NOT_ENOUGH_CONVERSIONS")] NotEnoughConversions = 20,
         /// <summary>
@@ -235,7 +271,7 @@ namespace Google.Ads.GoogleAds.V4.Errors {
         [pbr::OriginalName("BIDDING_STRATEGY_NOT_SUPPORTED_WITH_AD_SCHEDULE")] BiddingStrategyNotSupportedWithAdSchedule = 24,
         /// <summary>
         /// Pay per conversion is not available to all the customer, only few
-        /// whitelisted customers can use this.
+        /// customers on the allow-list can use this.
         /// </summary>
         [pbr::OriginalName("PAY_PER_CONVERSION_NOT_AVAILABLE_FOR_CUSTOMER")] PayPerConversionNotAvailableForCustomer = 25,
         /// <summary>

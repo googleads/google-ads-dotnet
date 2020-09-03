@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>FeedItemTargetService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage feed item targets.
+    /// </remarks>
     public abstract partial class FeedItemTargetServiceClient
     {
         /// <summary>
@@ -404,6 +407,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>FeedItemTargetService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage feed item targets.
+    /// </remarks>
     public sealed partial class FeedItemTargetServiceClientImpl : FeedItemTargetServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetFeedItemTargetRequest, gagvr::FeedItemTarget> _callGetFeedItemTarget;

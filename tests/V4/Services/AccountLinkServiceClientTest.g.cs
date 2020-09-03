@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedAccountLinkServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAccountLinkRequestObject()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);
@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAccountLinkRequestObjectAsync()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);
@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAccountLink()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);
@@ -100,7 +100,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAccountLinkAsync()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);
@@ -125,7 +125,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAccountLinkResourceNames()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);
@@ -148,7 +148,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAccountLinkResourceNamesAsync()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);
@@ -173,7 +173,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAccountLinkRequestObject()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);
@@ -195,7 +195,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAccountLinkRequestObjectAsync()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);
@@ -219,7 +219,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAccountLink()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);
@@ -239,7 +239,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAccountLinkAsync()
         {
             moq::Mock<AccountLinkService.AccountLinkServiceClient> mockGrpcClient = new moq::Mock<AccountLinkService.AccountLinkServiceClient>(moq::MockBehavior.Strict);

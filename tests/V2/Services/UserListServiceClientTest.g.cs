@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedUserListServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetUserListRequestObject()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetUserListRequestObjectAsync()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetUserList()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
@@ -156,7 +156,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetUserListAsync()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
@@ -199,7 +199,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetUserListResourceNames()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
@@ -240,7 +240,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetUserListResourceNamesAsync()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
@@ -283,7 +283,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateUserListsRequestObject()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
@@ -312,7 +312,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateUserListsRequestObjectAsync()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
@@ -343,7 +343,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateUserLists()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);
@@ -370,7 +370,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateUserListsAsync()
         {
             moq::Mock<UserListService.UserListServiceClient> mockGrpcClient = new moq::Mock<UserListService.UserListServiceClient>(moq::MockBehavior.Strict);

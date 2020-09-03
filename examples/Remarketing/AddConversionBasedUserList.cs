@@ -16,13 +16,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
-using static Google.Ads.GoogleAds.V4.Enums.UserListMembershipStatusEnum.Types;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
+using static Google.Ads.GoogleAds.V5.Enums.UserListMembershipStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example creates a basic user list consisting of people who triggered one or more
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Creates the service client.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V4.UserListService);
+                client.GetService(Services.V5.UserListService);
 
             List<UserListActionInfo> userListActionInfoList = new List<UserListActionInfo>();
             foreach (long conversionActionId in conversionActionIds)

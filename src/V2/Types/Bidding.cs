@@ -109,7 +109,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// Commission is an automatic bidding strategy in which the advertiser pays a
   /// certain portion of the conversion value.
   /// </summary>
-  public sealed partial class Commission : pb::IMessage<Commission> {
+  public sealed partial class Commission : pb::IMessage<Commission>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Commission> _parser = new pb::MessageParser<Commission>(() => new Commission());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -196,13 +200,29 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (commissionRateMicros_ != null) {
         _single_commissionRateMicros_codec.WriteTagAndValue(output, CommissionRateMicros);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (commissionRateMicros_ != null) {
+        _single_commissionRateMicros_codec.WriteTagAndValue(ref output, CommissionRateMicros);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -231,6 +251,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -246,7 +269,29 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_commissionRateMicros_codec.Read(ref input);
+            if (commissionRateMicros_ == null || value != 0L) {
+              CommissionRateMicros = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -255,7 +300,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// that seem more likely to lead to a conversion and lowers
   /// them for clicks where they seem less likely.
   /// </summary>
-  public sealed partial class EnhancedCpc : pb::IMessage<EnhancedCpc> {
+  public sealed partial class EnhancedCpc : pb::IMessage<EnhancedCpc>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<EnhancedCpc> _parser = new pb::MessageParser<EnhancedCpc>(() => new EnhancedCpc());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -320,10 +369,23 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -344,6 +406,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -352,14 +417,33 @@ namespace Google.Ads.GoogleAds.V2.Common {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Manual click-based bidding where user pays per click.
   /// </summary>
-  public sealed partial class ManualCpc : pb::IMessage<ManualCpc> {
+  public sealed partial class ManualCpc : pb::IMessage<ManualCpc>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ManualCpc> _parser = new pb::MessageParser<ManualCpc>(() => new ManualCpc());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -443,13 +527,29 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (enhancedCpcEnabled_ != null) {
         _single_enhancedCpcEnabled_codec.WriteTagAndValue(output, EnhancedCpcEnabled);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (enhancedCpcEnabled_ != null) {
+        _single_enhancedCpcEnabled_codec.WriteTagAndValue(ref output, EnhancedCpcEnabled);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -478,6 +578,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -493,14 +596,40 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            bool? value = _single_enhancedCpcEnabled_codec.Read(ref input);
+            if (enhancedCpcEnabled_ == null || value != false) {
+              EnhancedCpcEnabled = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Manual impression-based bidding where user pays per thousand impressions.
   /// </summary>
-  public sealed partial class ManualCpm : pb::IMessage<ManualCpm> {
+  public sealed partial class ManualCpm : pb::IMessage<ManualCpm>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ManualCpm> _parser = new pb::MessageParser<ManualCpm>(() => new ManualCpm());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -565,10 +694,23 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -589,6 +731,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -597,14 +742,33 @@ namespace Google.Ads.GoogleAds.V2.Common {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// View based bidding where user pays per video view.
   /// </summary>
-  public sealed partial class ManualCpv : pb::IMessage<ManualCpv> {
+  public sealed partial class ManualCpv : pb::IMessage<ManualCpv>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ManualCpv> _parser = new pb::MessageParser<ManualCpv>(() => new ManualCpv());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -669,10 +833,23 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -693,6 +870,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -701,7 +881,22 @@ namespace Google.Ads.GoogleAds.V2.Common {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -709,7 +904,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// An automated bidding strategy that sets bids to help get the most conversions
   /// for your campaign while spending your budget.
   /// </summary>
-  public sealed partial class MaximizeConversions : pb::IMessage<MaximizeConversions> {
+  public sealed partial class MaximizeConversions : pb::IMessage<MaximizeConversions>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<MaximizeConversions> _parser = new pb::MessageParser<MaximizeConversions>(() => new MaximizeConversions());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -774,10 +973,23 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -798,6 +1010,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -806,7 +1021,22 @@ namespace Google.Ads.GoogleAds.V2.Common {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -814,7 +1044,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// An automated bidding strategy which tries to maximize conversion value
   /// given a daily budget.
   /// </summary>
-  public sealed partial class MaximizeConversionValue : pb::IMessage<MaximizeConversionValue> {
+  public sealed partial class MaximizeConversionValue : pb::IMessage<MaximizeConversionValue>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<MaximizeConversionValue> _parser = new pb::MessageParser<MaximizeConversionValue>(() => new MaximizeConversionValue());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -902,13 +1136,29 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (targetRoas_ != null) {
         _single_targetRoas_codec.WriteTagAndValue(output, TargetRoas);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (targetRoas_ != null) {
+        _single_targetRoas_codec.WriteTagAndValue(ref output, TargetRoas);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -937,6 +1187,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -952,7 +1205,29 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            double? value = _single_targetRoas_codec.Read(ref input);
+            if (targetRoas_ == null || value != 0D) {
+              TargetRoas = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -961,7 +1236,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// page one, or page one promoted slots on google.com.
   /// This strategy is deprecated.
   /// </summary>
-  public sealed partial class PageOnePromoted : pb::IMessage<PageOnePromoted> {
+  public sealed partial class PageOnePromoted : pb::IMessage<PageOnePromoted>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<PageOnePromoted> _parser = new pb::MessageParser<PageOnePromoted>(() => new PageOnePromoted());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1147,6 +1426,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (StrategyGoal != global::Google.Ads.GoogleAds.V2.Enums.PageOnePromotedStrategyGoalEnum.Types.PageOnePromotedStrategyGoal.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) StrategyGoal);
@@ -1169,7 +1451,36 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (StrategyGoal != global::Google.Ads.GoogleAds.V2.Enums.PageOnePromotedStrategyGoalEnum.Types.PageOnePromotedStrategyGoal.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) StrategyGoal);
+      }
+      if (cpcBidCeilingMicros_ != null) {
+        _single_cpcBidCeilingMicros_codec.WriteTagAndValue(ref output, CpcBidCeilingMicros);
+      }
+      if (bidModifier_ != null) {
+        _single_bidModifier_codec.WriteTagAndValue(ref output, BidModifier);
+      }
+      if (onlyRaiseCpcBids_ != null) {
+        _single_onlyRaiseCpcBids_codec.WriteTagAndValue(ref output, OnlyRaiseCpcBids);
+      }
+      if (raiseCpcBidWhenBudgetConstrained_ != null) {
+        _single_raiseCpcBidWhenBudgetConstrained_codec.WriteTagAndValue(ref output, RaiseCpcBidWhenBudgetConstrained);
+      }
+      if (raiseCpcBidWhenQualityScoreIsLow_ != null) {
+        _single_raiseCpcBidWhenQualityScoreIsLow_codec.WriteTagAndValue(ref output, RaiseCpcBidWhenQualityScoreIsLow);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1236,6 +1547,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1283,7 +1597,61 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            StrategyGoal = (global::Google.Ads.GoogleAds.V2.Enums.PageOnePromotedStrategyGoalEnum.Types.PageOnePromotedStrategyGoal) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            long? value = _single_cpcBidCeilingMicros_codec.Read(ref input);
+            if (cpcBidCeilingMicros_ == null || value != 0L) {
+              CpcBidCeilingMicros = value;
+            }
+            break;
+          }
+          case 26: {
+            double? value = _single_bidModifier_codec.Read(ref input);
+            if (bidModifier_ == null || value != 0D) {
+              BidModifier = value;
+            }
+            break;
+          }
+          case 34: {
+            bool? value = _single_onlyRaiseCpcBids_codec.Read(ref input);
+            if (onlyRaiseCpcBids_ == null || value != false) {
+              OnlyRaiseCpcBids = value;
+            }
+            break;
+          }
+          case 42: {
+            bool? value = _single_raiseCpcBidWhenBudgetConstrained_codec.Read(ref input);
+            if (raiseCpcBidWhenBudgetConstrained_ == null || value != false) {
+              RaiseCpcBidWhenBudgetConstrained = value;
+            }
+            break;
+          }
+          case 50: {
+            bool? value = _single_raiseCpcBidWhenQualityScoreIsLow_codec.Read(ref input);
+            if (raiseCpcBidWhenQualityScoreIsLow_ == null || value != false) {
+              RaiseCpcBidWhenQualityScoreIsLow = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -1291,7 +1659,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// An automated bid strategy that sets bids to help get as many conversions as
   /// possible at the target cost-per-acquisition (CPA) you set.
   /// </summary>
-  public sealed partial class TargetCpa : pb::IMessage<TargetCpa> {
+  public sealed partial class TargetCpa : pb::IMessage<TargetCpa>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TargetCpa> _parser = new pb::MessageParser<TargetCpa>(() => new TargetCpa());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1417,6 +1789,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (targetCpaMicros_ != null) {
         _single_targetCpaMicros_codec.WriteTagAndValue(output, TargetCpaMicros);
       }
@@ -1429,7 +1804,26 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (targetCpaMicros_ != null) {
+        _single_targetCpaMicros_codec.WriteTagAndValue(ref output, TargetCpaMicros);
+      }
+      if (cpcBidCeilingMicros_ != null) {
+        _single_cpcBidCeilingMicros_codec.WriteTagAndValue(ref output, CpcBidCeilingMicros);
+      }
+      if (cpcBidFloorMicros_ != null) {
+        _single_cpcBidFloorMicros_codec.WriteTagAndValue(ref output, CpcBidFloorMicros);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1474,6 +1868,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1503,7 +1900,43 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_targetCpaMicros_codec.Read(ref input);
+            if (targetCpaMicros_ == null || value != 0L) {
+              TargetCpaMicros = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_cpcBidCeilingMicros_codec.Read(ref input);
+            if (cpcBidCeilingMicros_ == null || value != 0L) {
+              CpcBidCeilingMicros = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_cpcBidFloorMicros_codec.Read(ref input);
+            if (cpcBidFloorMicros_ == null || value != 0L) {
+              CpcBidFloorMicros = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -1511,7 +1944,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// Target CPM (cost per thousand impressions) is an automated bidding strategy
   /// that sets bids to optimize performance given the target CPM you set.
   /// </summary>
-  public sealed partial class TargetCpm : pb::IMessage<TargetCpm> {
+  public sealed partial class TargetCpm : pb::IMessage<TargetCpm>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TargetCpm> _parser = new pb::MessageParser<TargetCpm>(() => new TargetCpm());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1576,10 +2013,23 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1600,6 +2050,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1608,7 +2061,22 @@ namespace Google.Ads.GoogleAds.V2.Common {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -1616,9 +2084,12 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// An automated bidding strategy that sets bids so that a certain percentage of
   /// search ads are shown at the top of the first page (or other targeted
   /// location).
-  /// next tag = 4
   /// </summary>
-  public sealed partial class TargetImpressionShare : pb::IMessage<TargetImpressionShare> {
+  public sealed partial class TargetImpressionShare : pb::IMessage<TargetImpressionShare>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TargetImpressionShare> _parser = new pb::MessageParser<TargetImpressionShare>(() => new TargetImpressionShare());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1741,6 +2212,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Location != global::Google.Ads.GoogleAds.V2.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Location);
@@ -1754,7 +2228,27 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Location != global::Google.Ads.GoogleAds.V2.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Location);
+      }
+      if (locationFractionMicros_ != null) {
+        _single_locationFractionMicros_codec.WriteTagAndValue(ref output, LocationFractionMicros);
+      }
+      if (cpcBidCeilingMicros_ != null) {
+        _single_cpcBidCeilingMicros_codec.WriteTagAndValue(ref output, CpcBidCeilingMicros);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1797,6 +2291,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1823,7 +2320,40 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Location = (global::Google.Ads.GoogleAds.V2.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            long? value = _single_locationFractionMicros_codec.Read(ref input);
+            if (locationFractionMicros_ == null || value != 0L) {
+              LocationFractionMicros = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_cpcBidCeilingMicros_codec.Read(ref input);
+            if (cpcBidCeilingMicros_ == null || value != 0L) {
+              CpcBidCeilingMicros = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -1832,7 +2362,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// auctions where the advertiser should outrank a specific competitor.
   /// This strategy is deprecated.
   /// </summary>
-  public sealed partial class TargetOutrankShare : pb::IMessage<TargetOutrankShare> {
+  public sealed partial class TargetOutrankShare : pb::IMessage<TargetOutrankShare>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TargetOutrankShare> _parser = new pb::MessageParser<TargetOutrankShare>(() => new TargetOutrankShare());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2003,6 +2537,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (targetOutrankShareMicros_ != null) {
         _single_targetOutrankShareMicros_codec.WriteTagAndValue(output, TargetOutrankShareMicros);
       }
@@ -2021,7 +2558,32 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (targetOutrankShareMicros_ != null) {
+        _single_targetOutrankShareMicros_codec.WriteTagAndValue(ref output, TargetOutrankShareMicros);
+      }
+      if (competitorDomain_ != null) {
+        _single_competitorDomain_codec.WriteTagAndValue(ref output, CompetitorDomain);
+      }
+      if (cpcBidCeilingMicros_ != null) {
+        _single_cpcBidCeilingMicros_codec.WriteTagAndValue(ref output, CpcBidCeilingMicros);
+      }
+      if (onlyRaiseCpcBids_ != null) {
+        _single_onlyRaiseCpcBids_codec.WriteTagAndValue(ref output, OnlyRaiseCpcBids);
+      }
+      if (raiseCpcBidWhenQualityScoreIsLow_ != null) {
+        _single_raiseCpcBidWhenQualityScoreIsLow_codec.WriteTagAndValue(ref output, RaiseCpcBidWhenQualityScoreIsLow);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2082,6 +2644,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2125,7 +2690,57 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            int? value = _single_targetOutrankShareMicros_codec.Read(ref input);
+            if (targetOutrankShareMicros_ == null || value != 0) {
+              TargetOutrankShareMicros = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_competitorDomain_codec.Read(ref input);
+            if (competitorDomain_ == null || value != "") {
+              CompetitorDomain = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_cpcBidCeilingMicros_codec.Read(ref input);
+            if (cpcBidCeilingMicros_ == null || value != 0L) {
+              CpcBidCeilingMicros = value;
+            }
+            break;
+          }
+          case 34: {
+            bool? value = _single_onlyRaiseCpcBids_codec.Read(ref input);
+            if (onlyRaiseCpcBids_ == null || value != false) {
+              OnlyRaiseCpcBids = value;
+            }
+            break;
+          }
+          case 42: {
+            bool? value = _single_raiseCpcBidWhenQualityScoreIsLow_codec.Read(ref input);
+            if (raiseCpcBidWhenQualityScoreIsLow_ == null || value != false) {
+              RaiseCpcBidWhenQualityScoreIsLow = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -2133,7 +2748,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// An automated bidding strategy that helps you maximize revenue while
   /// averaging a specific target return on ad spend (ROAS).
   /// </summary>
-  public sealed partial class TargetRoas : pb::IMessage<TargetRoas> {
+  public sealed partial class TargetRoas : pb::IMessage<TargetRoas>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TargetRoas> _parser = new pb::MessageParser<TargetRoas>(() => new TargetRoas());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2258,6 +2877,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (targetRoas_ != null) {
         _single_targetRoas_codec.WriteTagAndValue(output, TargetRoas_);
       }
@@ -2270,7 +2892,26 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (targetRoas_ != null) {
+        _single_targetRoas_codec.WriteTagAndValue(ref output, TargetRoas_);
+      }
+      if (cpcBidCeilingMicros_ != null) {
+        _single_cpcBidCeilingMicros_codec.WriteTagAndValue(ref output, CpcBidCeilingMicros);
+      }
+      if (cpcBidFloorMicros_ != null) {
+        _single_cpcBidFloorMicros_codec.WriteTagAndValue(ref output, CpcBidFloorMicros);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2315,6 +2956,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2344,7 +2988,43 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            double? value = _single_targetRoas_codec.Read(ref input);
+            if (targetRoas_ == null || value != 0D) {
+              TargetRoas_ = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_cpcBidCeilingMicros_codec.Read(ref input);
+            if (cpcBidCeilingMicros_ == null || value != 0L) {
+              CpcBidCeilingMicros = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_cpcBidFloorMicros_codec.Read(ref input);
+            if (cpcBidFloorMicros_ == null || value != 0L) {
+              CpcBidFloorMicros = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -2352,7 +3032,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// An automated bid strategy that sets your bids to help get as many clicks
   /// as possible within your budget.
   /// </summary>
-  public sealed partial class TargetSpend : pb::IMessage<TargetSpend> {
+  public sealed partial class TargetSpend : pb::IMessage<TargetSpend>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<TargetSpend> _parser = new pb::MessageParser<TargetSpend>(() => new TargetSpend());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2459,6 +3143,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (targetSpendMicros_ != null) {
         _single_targetSpendMicros_codec.WriteTagAndValue(output, TargetSpendMicros);
       }
@@ -2468,7 +3155,23 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (targetSpendMicros_ != null) {
+        _single_targetSpendMicros_codec.WriteTagAndValue(ref output, TargetSpendMicros);
+      }
+      if (cpcBidCeilingMicros_ != null) {
+        _single_cpcBidCeilingMicros_codec.WriteTagAndValue(ref output, CpcBidCeilingMicros);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2505,6 +3208,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2527,7 +3233,36 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_targetSpendMicros_codec.Read(ref input);
+            if (targetSpendMicros_ == null || value != 0L) {
+              TargetSpendMicros = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_cpcBidCeilingMicros_codec.Read(ref input);
+            if (cpcBidCeilingMicros_ == null || value != 0L) {
+              CpcBidCeilingMicros = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -2535,7 +3270,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// A bidding strategy where bids are a fraction of the advertised price for
   /// some good or service.
   /// </summary>
-  public sealed partial class PercentCpc : pb::IMessage<PercentCpc> {
+  public sealed partial class PercentCpc : pb::IMessage<PercentCpc>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<PercentCpc> _parser = new pb::MessageParser<PercentCpc>(() => new PercentCpc());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2644,6 +3383,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (cpcBidCeilingMicros_ != null) {
         _single_cpcBidCeilingMicros_codec.WriteTagAndValue(output, CpcBidCeilingMicros);
       }
@@ -2653,7 +3395,23 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (cpcBidCeilingMicros_ != null) {
+        _single_cpcBidCeilingMicros_codec.WriteTagAndValue(ref output, CpcBidCeilingMicros);
+      }
+      if (enhancedCpcEnabled_ != null) {
+        _single_enhancedCpcEnabled_codec.WriteTagAndValue(ref output, EnhancedCpcEnabled);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2690,6 +3448,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2712,7 +3473,36 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_cpcBidCeilingMicros_codec.Read(ref input);
+            if (cpcBidCeilingMicros_ == null || value != 0L) {
+              CpcBidCeilingMicros = value;
+            }
+            break;
+          }
+          case 18: {
+            bool? value = _single_enhancedCpcEnabled_codec.Read(ref input);
+            if (enhancedCpcEnabled_ == null || value != false) {
+              EnhancedCpcEnabled = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

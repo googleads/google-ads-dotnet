@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCampaignBudgetServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignBudgetRequestObject()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignBudgetRequestObjectAsync()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignBudget()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -137,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignBudgetAsync()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -174,7 +174,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignBudgetResourceNames()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -209,7 +209,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignBudgetResourceNamesAsync()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -246,7 +246,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignBudgetsRequestObject()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -275,7 +275,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignBudgetsRequestObjectAsync()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -306,7 +306,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignBudgets()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -333,7 +333,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignBudgetsAsync()
         {
             moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient> mockGrpcClient = new moq::Mock<CampaignBudgetService.CampaignBudgetServiceClient>(moq::MockBehavior.Strict);

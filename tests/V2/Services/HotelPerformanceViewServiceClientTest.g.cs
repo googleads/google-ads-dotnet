@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedHotelPerformanceViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetHotelPerformanceViewRequestObject()
         {
             moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetHotelPerformanceViewRequestObjectAsync()
         {
             moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetHotelPerformanceView()
         {
             moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetHotelPerformanceViewAsync()
         {
             moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetHotelPerformanceViewResourceNames()
         {
             moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetHotelPerformanceViewResourceNamesAsync()
         {
             moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<HotelPerformanceViewService.HotelPerformanceViewServiceClient>(moq::MockBehavior.Strict);

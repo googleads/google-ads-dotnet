@@ -13,16 +13,16 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V4.Enums.CampaignExperimentTrafficSplitTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.CampaignExperimentTrafficSplitTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example adds a campaign experiment for a draft campaign.
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the CampaignExperimentService.
             CampaignExperimentServiceClient campaignExperimentService =
-                client.GetService(Services.V4.CampaignExperimentService);
+                client.GetService(Services.V5.CampaignExperimentService);
 
             CampaignExperiment experiment = new CampaignExperiment()
             {
@@ -134,7 +134,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V4.GoogleAdsService);
+                client.GetService(Services.V5.GoogleAdsService);
 
             // Once the draft is created, you can modify the draft campaign as if it were
             // a real campaign. For example, you may add criteria, adjust bids, or even

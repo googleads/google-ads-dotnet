@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.Examples
                     {
                         ExampleBase example = (ExampleBase) Activator.CreateInstance(type);
                         // Support both versioned and unversioned names.
-                        // E.g. You can run GetCampaigns example by either using V4.GetCampaigns
+                        // E.g. You can run GetCampaigns example by either using V5.GetCampaigns
                         // or GetCampaigns.
                         codeExampleMap.Add(example.VersionedName, example);
                         if (codeExampleMap.ContainsKey(example.Name))
@@ -79,9 +79,10 @@ namespace Google.Ads.GoogleAds.Examples
         /// </summary>
         public void PrintAvailableExamples()
         {
-            foreach (ExampleBase codeExample in codeExampleMap.Values)
+            foreach (string key in codeExampleMap.Keys)
             {
-                Console.WriteLine("\n{0}\n{1}\n{2}\n\nUsage\n\n    {3}\n\n", codeExample.Name,
+                ExampleBase codeExample = codeExampleMap[key];
+                Console.WriteLine("\n{0}\n{1}\n{2}\n\nUsage\n\n    {3}\n\n", key,
                     new string('=', codeExample.Name.Length),
                     codeExample.Description, GetUsage(codeExample));
             }
@@ -122,7 +123,7 @@ namespace Google.Ads.GoogleAds.Examples
             }
             else
             {
-                throw new Exception($"Code example not found: '{exampleName}'.");
+                throw new KeyNotFoundException($"Code example not found: '{exampleName}'.");
             }
 
             Console.WriteLine(codeExample.Description);

@@ -67,7 +67,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// the domain. The categories can be targeted using WebpageConditionInfo.
   /// See: https://support.google.com/google-ads/answer/2471185
   /// </summary>
-  public sealed partial class DomainCategory : pb::IMessage<DomainCategory> {
+  public sealed partial class DomainCategory : pb::IMessage<DomainCategory>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DomainCategory> _parser = new pb::MessageParser<DomainCategory>(() => new DomainCategory());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -311,6 +315,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -342,7 +349,45 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (campaign_ != null) {
+        _single_campaign_codec.WriteTagAndValue(ref output, Campaign);
+      }
+      if (category_ != null) {
+        _single_category_codec.WriteTagAndValue(ref output, Category);
+      }
+      if (languageCode_ != null) {
+        _single_languageCode_codec.WriteTagAndValue(ref output, LanguageCode);
+      }
+      if (domain_ != null) {
+        _single_domain_codec.WriteTagAndValue(ref output, Domain);
+      }
+      if (coverageFraction_ != null) {
+        _single_coverageFraction_codec.WriteTagAndValue(ref output, CoverageFraction);
+      }
+      if (categoryRank_ != null) {
+        _single_categoryRank_codec.WriteTagAndValue(ref output, CategoryRank);
+      }
+      if (hasChildren_ != null) {
+        _single_hasChildren_codec.WriteTagAndValue(ref output, HasChildren);
+      }
+      if (recommendedCpcBidMicros_ != null) {
+        _single_recommendedCpcBidMicros_codec.WriteTagAndValue(ref output, RecommendedCpcBidMicros);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -433,6 +478,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -501,7 +549,82 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            string value = _single_campaign_codec.Read(ref input);
+            if (campaign_ == null || value != "") {
+              Campaign = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_category_codec.Read(ref input);
+            if (category_ == null || value != "") {
+              Category = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_languageCode_codec.Read(ref input);
+            if (languageCode_ == null || value != "") {
+              LanguageCode = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_domain_codec.Read(ref input);
+            if (domain_ == null || value != "") {
+              Domain = value;
+            }
+            break;
+          }
+          case 50: {
+            double? value = _single_coverageFraction_codec.Read(ref input);
+            if (coverageFraction_ == null || value != 0D) {
+              CoverageFraction = value;
+            }
+            break;
+          }
+          case 58: {
+            long? value = _single_categoryRank_codec.Read(ref input);
+            if (categoryRank_ == null || value != 0L) {
+              CategoryRank = value;
+            }
+            break;
+          }
+          case 66: {
+            bool? value = _single_hasChildren_codec.Read(ref input);
+            if (hasChildren_ == null || value != false) {
+              HasChildren = value;
+            }
+            break;
+          }
+          case 74: {
+            long? value = _single_recommendedCpcBidMicros_codec.Read(ref input);
+            if (recommendedCpcBidMicros_ == null || value != 0L) {
+              RecommendedCpcBidMicros = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

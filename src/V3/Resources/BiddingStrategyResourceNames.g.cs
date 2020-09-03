@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
         /// <see cref="gagvr::BiddingStrategyName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::BiddingStrategyName ResourceNameAsBiddingStrategyName
+        internal BiddingStrategyName ResourceNameAsBiddingStrategyName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::BiddingStrategyName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
         /// <summary>
         /// <see cref="gagvr::BiddingStrategyName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::BiddingStrategyName BiddingStrategyName
+        internal BiddingStrategyName BiddingStrategyName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::BiddingStrategyName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

@@ -1,3 +1,31 @@
+5.0.0
+=====
+- Added support for v5 of Google Ads API. See
+  https://developers.google.com/google-ads/api/docs/release-notes#500_beta_2020-08-26 for release notes.
+- The library dependencies were bumped as listed below:
+  - Google.Api.CommonProtos: 2.1.0
+  - Google.Apis and related assemblies: 1.49.0.0
+  - Google.Api.Gax and related assemblies: 3.1.0
+  - Google.Protobuf: 3.13.0.0
+  - Grpc.Core and related assemblies: 2.31.0
+  - Microsoft.Extensions and related assemblies: 3.1.7
+  - DotNetCompilerPlatform: 3.6.0
+- Added new code examples:
+  - Extensions/AddGeoTarget.cs
+  - Remarketing/AddLogicalUserList.cs
+  - Remarketing/AddCombinedRuleUserList.cs
+  - Remarketing/AddExpressionRuleUserList.cs
+  - Remarketing/AddConversionBasedUserList.cs
+  - Feeds/RemoveFeedItems.cs
+  - Feeds/RemoveFlightsFeedItemAttributeValue.cs
+- Various minor changes to code examples for consistency with other client libraries.
+- Renamed code examples:
+  - ShoppingAds/RejectMerchantCenterLink.cs => AccountManagement/RejectMerchantCenterLink.cs
+  - Extensions/UpdateFlightsFeedItemStringAttributeValue.cs => Feeds/UpdateFlightsFeedItemStringAttributeValue.cs
+  - Targeting/SearchForTargetableLanguagesAndCarriers.cs => Targeting/SearchForLanguageAndCarrierConstants.cs
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/211
+- Fixed https://github.com/googleads/google-ads-dotnet/issues/231
+
 4.0.0
 =====
 - Added support for v4 of Google Ads API. See https://developers.google.com/google-ads/api/docs/release-notes#400_beta_2020-07-08
@@ -6,7 +34,7 @@
   https://ads-developers.googleblog.com/2020/06/google-ads-api-beta-v1-sunset-reminder.html. We are
   doing a major version bump for the library, since removing support for an API version is backward
   incompatible change.
-- Added new code examples
+- Added new code examples:
   - Reporting/ParallelReportDownload.cs
   - Reporting/UploadStoreSalesTransactions.cs
   - Planning/GetAdGroupCriterionCpcBidSimulations.cs
@@ -15,7 +43,7 @@
   - ErrorHandling/HandleExpandedTextAdPolicyViolations.cs
   - AdvancedOperations/AddDisplayUploadAd.cs
   - Billing/AddBillingSetup.cs
-- Renamed code examples.
+- Renamed code examples:
   - AddCompleteCampaignsUsingMutateJob.cs => AddCompleteCampaignsUsingBatchJob.cs
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/185
 - Fixed https://github.com/googleads/google-ads-dotnet/issues/197

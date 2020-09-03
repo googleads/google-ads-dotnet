@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CustomInterestService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage custom interests.
+    /// </remarks>
     public abstract partial class CustomInterestServiceClient
     {
         /// <summary>
@@ -404,6 +407,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CustomInterestService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage custom interests.
+    /// </remarks>
     public sealed partial class CustomInterestServiceClientImpl : CustomInterestServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCustomInterestRequest, gagvr::CustomInterest> _callGetCustomInterest;

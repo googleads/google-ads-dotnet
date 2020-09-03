@@ -51,7 +51,11 @@ namespace Google.Ads.GoogleAds.V4.Common {
   /// <summary>
   /// A URL for deep linking into an app for the given operating system.
   /// </summary>
-  public sealed partial class FinalAppUrl : pb::IMessage<FinalAppUrl> {
+  public sealed partial class FinalAppUrl : pb::IMessage<FinalAppUrl>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FinalAppUrl> _parser = new pb::MessageParser<FinalAppUrl>(() => new FinalAppUrl());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -158,6 +162,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (OsType != global::Google.Ads.GoogleAds.V4.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) OsType);
@@ -168,7 +175,24 @@ namespace Google.Ads.GoogleAds.V4.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (OsType != global::Google.Ads.GoogleAds.V4.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) OsType);
+      }
+      if (url_ != null) {
+        _single_url_codec.WriteTagAndValue(ref output, Url);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -203,6 +227,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -222,7 +249,33 @@ namespace Google.Ads.GoogleAds.V4.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            OsType = (global::Google.Ads.GoogleAds.V4.Enums.AppUrlOperatingSystemTypeEnum.Types.AppUrlOperatingSystemType) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            string value = _single_url_codec.Read(ref input);
+            if (url_ == null || value != "") {
+              Url = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

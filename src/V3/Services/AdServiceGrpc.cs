@@ -71,7 +71,8 @@ namespace Google.Ads.GoogleAds.V3.Services {
       }
 
       /// <summary>
-      /// Updates ads. Operation statuses are returned.
+      /// Updates ads. Operation statuses are returned. Updating ads is not supported
+      /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -151,7 +152,8 @@ namespace Google.Ads.GoogleAds.V3.Services {
         return CallInvoker.AsyncUnaryCall(__Method_GetAd, null, options, request);
       }
       /// <summary>
-      /// Updates ads. Operation statuses are returned.
+      /// Updates ads. Operation statuses are returned. Updating ads is not supported
+      /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -163,7 +165,8 @@ namespace Google.Ads.GoogleAds.V3.Services {
         return MutateAds(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Updates ads. Operation statuses are returned.
+      /// Updates ads. Operation statuses are returned. Updating ads is not supported
+      /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -173,7 +176,8 @@ namespace Google.Ads.GoogleAds.V3.Services {
         return CallInvoker.BlockingUnaryCall(__Method_MutateAds, null, options, request);
       }
       /// <summary>
-      /// Updates ads. Operation statuses are returned.
+      /// Updates ads. Operation statuses are returned. Updating ads is not supported
+      /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -185,7 +189,8 @@ namespace Google.Ads.GoogleAds.V3.Services {
         return MutateAdsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Updates ads. Operation statuses are returned.
+      /// Updates ads. Operation statuses are returned. Updating ads is not supported
+      /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

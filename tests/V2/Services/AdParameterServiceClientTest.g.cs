@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedAdParameterServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdParameterRequestObject()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
@@ -51,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdParameterRequestObjectAsync()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdParameter()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdParameterAsync()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdParameterResourceNames()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdParameterResourceNamesAsync()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
@@ -167,7 +167,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAdParametersRequestObject()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
@@ -196,7 +196,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAdParametersRequestObjectAsync()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
@@ -227,7 +227,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAdParameters()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);
@@ -254,7 +254,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAdParametersAsync()
         {
             moq::Mock<AdParameterService.AdParameterServiceClient> mockGrpcClient = new moq::Mock<AdParameterService.AdParameterServiceClient>(moq::MockBehavior.Strict);

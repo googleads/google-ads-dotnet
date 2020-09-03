@@ -89,7 +89,11 @@ namespace Google.Ads.GoogleAds.V3.Services {
   /// <summary>
   /// Request message for [GeoTargetConstantService.GetGeoTargetConstant][google.ads.googleads.v3.services.GeoTargetConstantService.GetGeoTargetConstant].
   /// </summary>
-  public sealed partial class GetGeoTargetConstantRequest : pb::IMessage<GetGeoTargetConstantRequest> {
+  public sealed partial class GetGeoTargetConstantRequest : pb::IMessage<GetGeoTargetConstantRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetGeoTargetConstantRequest> _parser = new pb::MessageParser<GetGeoTargetConstantRequest>(() => new GetGeoTargetConstantRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -171,6 +175,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -178,7 +185,21 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -205,6 +226,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -217,15 +241,38 @@ namespace Google.Ads.GoogleAds.V3.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Request message for
-  /// [GeoTargetConstantService.SuggestGeoTargetConstantsRequest][].
+  /// [GeoTargetConstantService.SuggestGeoTargetConstants][google.ads.googleads.v3.services.GeoTargetConstantService.SuggestGeoTargetConstants].
   /// </summary>
-  public sealed partial class SuggestGeoTargetConstantsRequest : pb::IMessage<SuggestGeoTargetConstantsRequest> {
+  public sealed partial class SuggestGeoTargetConstantsRequest : pb::IMessage<SuggestGeoTargetConstantsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SuggestGeoTargetConstantsRequest> _parser = new pb::MessageParser<SuggestGeoTargetConstantsRequest>(() => new SuggestGeoTargetConstantsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -392,6 +439,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (queryCase_ == QueryOneofCase.LocationNames) {
         output.WriteRawTag(10);
         output.WriteMessage(LocationNames);
@@ -409,7 +459,31 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (queryCase_ == QueryOneofCase.LocationNames) {
+        output.WriteRawTag(10);
+        output.WriteMessage(LocationNames);
+      }
+      if (queryCase_ == QueryOneofCase.GeoTargets) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GeoTargets);
+      }
+      if (locale_ != null) {
+        _single_locale_codec.WriteTagAndValue(ref output, Locale);
+      }
+      if (countryCode_ != null) {
+        _single_countryCode_codec.WriteTagAndValue(ref output, CountryCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -467,6 +541,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -507,7 +584,54 @@ namespace Google.Ads.GoogleAds.V3.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::Google.Ads.GoogleAds.V3.Services.SuggestGeoTargetConstantsRequest.Types.LocationNames subBuilder = new global::Google.Ads.GoogleAds.V3.Services.SuggestGeoTargetConstantsRequest.Types.LocationNames();
+            if (queryCase_ == QueryOneofCase.LocationNames) {
+              subBuilder.MergeFrom(LocationNames);
+            }
+            input.ReadMessage(subBuilder);
+            LocationNames = subBuilder;
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V3.Services.SuggestGeoTargetConstantsRequest.Types.GeoTargets subBuilder = new global::Google.Ads.GoogleAds.V3.Services.SuggestGeoTargetConstantsRequest.Types.GeoTargets();
+            if (queryCase_ == QueryOneofCase.GeoTargets) {
+              subBuilder.MergeFrom(GeoTargets);
+            }
+            input.ReadMessage(subBuilder);
+            GeoTargets = subBuilder;
+            break;
+          }
+          case 26: {
+            string value = _single_locale_codec.Read(ref input);
+            if (locale_ == null || value != "") {
+              Locale = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_countryCode_codec.Read(ref input);
+            if (countryCode_ == null || value != "") {
+              CountryCode = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the SuggestGeoTargetConstantsRequest message type.</summary>
@@ -516,7 +640,11 @@ namespace Google.Ads.GoogleAds.V3.Services {
       /// <summary>
       /// A list of location names.
       /// </summary>
-      public sealed partial class LocationNames : pb::IMessage<LocationNames> {
+      public sealed partial class LocationNames : pb::IMessage<LocationNames>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
         private static readonly pb::MessageParser<LocationNames> _parser = new pb::MessageParser<LocationNames>(() => new LocationNames());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -597,11 +725,25 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
           names_.WriteTo(output, _repeated_names_codec);
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          names_.WriteTo(ref output, _repeated_names_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
@@ -624,6 +766,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
             switch(tag) {
@@ -636,14 +781,37 @@ namespace Google.Ads.GoogleAds.V3.Services {
               }
             }
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                names_.AddEntriesFrom(ref input, _repeated_names_codec);
+                break;
+              }
+            }
+          }
+        }
+        #endif
 
       }
 
       /// <summary>
       /// A list of geo target constant resource names.
       /// </summary>
-      public sealed partial class GeoTargets : pb::IMessage<GeoTargets> {
+      public sealed partial class GeoTargets : pb::IMessage<GeoTargets>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
         private static readonly pb::MessageParser<GeoTargets> _parser = new pb::MessageParser<GeoTargets>(() => new GeoTargets());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -724,11 +892,25 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
           geoTargetConstants_.WriteTo(output, _repeated_geoTargetConstants_codec);
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          geoTargetConstants_.WriteTo(ref output, _repeated_geoTargetConstants_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
@@ -751,6 +933,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
             switch(tag) {
@@ -763,7 +948,26 @@ namespace Google.Ads.GoogleAds.V3.Services {
               }
             }
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                geoTargetConstants_.AddEntriesFrom(ref input, _repeated_geoTargetConstants_codec);
+                break;
+              }
+            }
+          }
+        }
+        #endif
 
       }
 
@@ -773,9 +977,13 @@ namespace Google.Ads.GoogleAds.V3.Services {
   }
 
   /// <summary>
-  /// Response message for [GeoTargetConstantService.SuggestGeoTargetConstants][google.ads.googleads.v3.services.GeoTargetConstantService.SuggestGeoTargetConstants]
+  /// Response message for [GeoTargetConstantService.SuggestGeoTargetConstants][google.ads.googleads.v3.services.GeoTargetConstantService.SuggestGeoTargetConstants].
   /// </summary>
-  public sealed partial class SuggestGeoTargetConstantsResponse : pb::IMessage<SuggestGeoTargetConstantsResponse> {
+  public sealed partial class SuggestGeoTargetConstantsResponse : pb::IMessage<SuggestGeoTargetConstantsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SuggestGeoTargetConstantsResponse> _parser = new pb::MessageParser<SuggestGeoTargetConstantsResponse>(() => new SuggestGeoTargetConstantsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -856,11 +1064,25 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       geoTargetConstantSuggestions_.WriteTo(output, _repeated_geoTargetConstantSuggestions_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      geoTargetConstantSuggestions_.WriteTo(ref output, _repeated_geoTargetConstantSuggestions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -883,6 +1105,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -895,14 +1120,37 @@ namespace Google.Ads.GoogleAds.V3.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            geoTargetConstantSuggestions_.AddEntriesFrom(ref input, _repeated_geoTargetConstantSuggestions_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// A geo target constant suggestion.
   /// </summary>
-  public sealed partial class GeoTargetConstantSuggestion : pb::IMessage<GeoTargetConstantSuggestion> {
+  public sealed partial class GeoTargetConstantSuggestion : pb::IMessage<GeoTargetConstantSuggestion>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GeoTargetConstantSuggestion> _parser = new pb::MessageParser<GeoTargetConstantSuggestion>(() => new GeoTargetConstantSuggestion());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1062,6 +1310,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (locale_ != null) {
         _single_locale_codec.WriteTagAndValue(output, Locale);
       }
@@ -1079,7 +1330,31 @@ namespace Google.Ads.GoogleAds.V3.Services {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (locale_ != null) {
+        _single_locale_codec.WriteTagAndValue(ref output, Locale);
+      }
+      if (reach_ != null) {
+        _single_reach_codec.WriteTagAndValue(ref output, Reach);
+      }
+      if (searchTerm_ != null) {
+        _single_searchTerm_codec.WriteTagAndValue(ref output, SearchTerm);
+      }
+      if (geoTargetConstant_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(GeoTargetConstant);
+      }
+      geoTargetConstantParents_.WriteTo(ref output, _repeated_geoTargetConstantParents_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1135,6 +1410,9 @@ namespace Google.Ads.GoogleAds.V3.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1175,7 +1453,54 @@ namespace Google.Ads.GoogleAds.V3.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            string value = _single_locale_codec.Read(ref input);
+            if (locale_ == null || value != "") {
+              Locale = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_reach_codec.Read(ref input);
+            if (reach_ == null || value != 0L) {
+              Reach = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_searchTerm_codec.Read(ref input);
+            if (searchTerm_ == null || value != "") {
+              SearchTerm = value;
+            }
+            break;
+          }
+          case 34: {
+            if (geoTargetConstant_ == null) {
+              GeoTargetConstant = new global::Google.Ads.GoogleAds.V3.Resources.GeoTargetConstant();
+            }
+            input.ReadMessage(GeoTargetConstant);
+            break;
+          }
+          case 42: {
+            geoTargetConstantParents_.AddEntriesFrom(ref input, _repeated_geoTargetConstantParents_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

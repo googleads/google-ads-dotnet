@@ -136,6 +136,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>ProductBiddingCategoryConstantService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Product Bidding Categories.
+    /// </remarks>
     public abstract partial class ProductBiddingCategoryConstantServiceClient
     {
         /// <summary>
@@ -317,6 +320,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>ProductBiddingCategoryConstantService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Product Bidding Categories.
+    /// </remarks>
     public sealed partial class ProductBiddingCategoryConstantServiceClientImpl : ProductBiddingCategoryConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetProductBiddingCategoryConstantRequest, gagvr::ProductBiddingCategoryConstant> _callGetProductBiddingCategoryConstant;

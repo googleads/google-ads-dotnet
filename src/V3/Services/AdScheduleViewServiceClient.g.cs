@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>AdScheduleViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch ad schedule views.
+    /// </remarks>
     public abstract partial class AdScheduleViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>AdScheduleViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch ad schedule views.
+    /// </remarks>
     public sealed partial class AdScheduleViewServiceClientImpl : AdScheduleViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdScheduleViewRequest, gagvr::AdScheduleView> _callGetAdScheduleView;

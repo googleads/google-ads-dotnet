@@ -13,13 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.Api.Gax;
 using System;
+using static Google.Ads.GoogleAds.V5.Resources.AccountBudget;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This example retrieves all account budgets for a Google Ads customer.
@@ -60,7 +61,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Construct a GAQL query which will retrieve AccountBudgetProposals.
             String query =
@@ -101,20 +102,23 @@ namespace Google.Ads.GoogleAds.Examples.V4
                                 budget.ResourceName,
                                 budget.Status,
                                 budget.BillingSetup,
-                                budget.AmountServedMicros.Value / 1_000_000.0,
-                                budget.TotalAdjustmentsMicros.Value / 1_000_000.0,
-                                budget.ApprovedSpendingLimitMicros.HasValue
-                                    ? String.Format(
-                                        "%.2f", budget.ApprovedSpendingLimitMicros.Value / 1_000_000.0)
-                                    : budget.ApprovedSpendingLimitType.ToString(),
-                                budget.ProposedSpendingLimitMicros.HasValue
-                                    ? String.Format(
-                                        "%.2f", budget.ProposedSpendingLimitMicros.Value / 1_000_000.0)
-                                    : budget.ProposedSpendingLimitType.ToString(),
-                                budget.AdjustedSpendingLimitMicros.HasValue
-                                    ? String.Format(
-                                        "%.2f", budget.AdjustedSpendingLimitMicros.Value / 1_000_000.0)
-                                    : budget.AdjustedSpendingLimitType.ToString(),
+                                budget.AmountServedMicros / 1_000_000.0,
+                                budget.TotalAdjustmentsMicros / 1_000_000.0,
+                                budget.ApprovedSpendingLimitCase ==
+                                    ApprovedSpendingLimitOneofCase.ApprovedSpendingLimitMicros?
+                                        String.Format(
+                                            "%.2f", budget.ApprovedSpendingLimitMicros / 1_000_000.0)
+                                        : budget.ApprovedSpendingLimitType.ToString(),
+                                budget.ProposedSpendingLimitCase == 
+                                    ProposedSpendingLimitOneofCase.ProposedSpendingLimitMicros? 
+                                        String.Format(
+                                            "%.2f", budget.ProposedSpendingLimitMicros / 1_000_000.0)
+                                        : budget.ProposedSpendingLimitType.ToString(),
+                                budget.AdjustedSpendingLimitCase ==
+                                    AdjustedSpendingLimitOneofCase.AdjustedSpendingLimitMicros ?
+                                        String.Format(
+                                            "%.2f", budget.AdjustedSpendingLimitMicros / 1_000_000.0)
+                                        : budget.AdjustedSpendingLimitType.ToString(),
                                 budget.ApprovedStartDateTime,
                                 budget.ProposedStartDateTime,
                                 String.IsNullOrEmpty(budget.ApprovedEndDateTime)

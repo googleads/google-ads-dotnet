@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCampaignExtensionSettingServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignExtensionSettingRequestObject()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);
@@ -56,7 +56,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignExtensionSettingRequestObjectAsync()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);
@@ -84,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignExtensionSetting()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);
@@ -110,7 +110,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignExtensionSettingAsync()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);
@@ -138,7 +138,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignExtensionSettingResourceNames()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);
@@ -164,7 +164,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignExtensionSettingResourceNamesAsync()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);
@@ -192,7 +192,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignExtensionSettingsRequestObject()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);
@@ -221,7 +221,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignExtensionSettingsRequestObjectAsync()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);
@@ -252,7 +252,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignExtensionSettings()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);
@@ -279,7 +279,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignExtensionSettingsAsync()
         {
             moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient> mockGrpcClient = new moq::Mock<CampaignExtensionSettingService.CampaignExtensionSettingServiceClient>(moq::MockBehavior.Strict);

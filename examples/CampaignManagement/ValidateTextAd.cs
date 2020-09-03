@@ -13,18 +13,18 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V4.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V4.Errors.PolicyFindingErrorEnum.Types;
-using static Google.Ads.GoogleAds.V4.Errors.PolicyViolationErrorEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V5.Errors.PolicyFindingErrorEnum.Types;
+using static Google.Ads.GoogleAds.V5.Errors.PolicyViolationErrorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example shows how to use the validateOnly header to validate
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V4.AdGroupAdService);
+                Services.V5.AdGroupAdService);
 
             // Create the ad group ad object.
             AdGroupAd adGroupAd = new AdGroupAd

@@ -66,7 +66,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// `operator_type`. List of available mobile platforms at
   /// https://developers.google.com/adwords/api/docs/appendix/codes-formats#mobile-platforms
   /// </summary>
-  public sealed partial class OperatingSystemVersionConstant : pb::IMessage<OperatingSystemVersionConstant> {
+  public sealed partial class OperatingSystemVersionConstant : pb::IMessage<OperatingSystemVersionConstant>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<OperatingSystemVersionConstant> _parser = new pb::MessageParser<OperatingSystemVersionConstant>(() => new OperatingSystemVersionConstant());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -245,6 +249,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -268,7 +275,37 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (osMajorVersion_ != null) {
+        _single_osMajorVersion_codec.WriteTagAndValue(ref output, OsMajorVersion);
+      }
+      if (osMinorVersion_ != null) {
+        _single_osMinorVersion_codec.WriteTagAndValue(ref output, OsMinorVersion);
+      }
+      if (OperatorType != global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) OperatorType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -333,6 +370,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -377,7 +417,58 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 34: {
+            int? value = _single_osMajorVersion_codec.Read(ref input);
+            if (osMajorVersion_ == null || value != 0) {
+              OsMajorVersion = value;
+            }
+            break;
+          }
+          case 42: {
+            int? value = _single_osMinorVersion_codec.Read(ref input);
+            if (osMinorVersion_ == null || value != 0) {
+              OsMinorVersion = value;
+            }
+            break;
+          }
+          case 48: {
+            OperatorType = (global::Google.Ads.GoogleAds.V3.Enums.OperatingSystemVersionOperatorTypeEnum.Types.OperatingSystemVersionOperatorType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.Api.Gax;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using static Google.Ads.GoogleAds.V4.Services.GoogleAdsServiceClient;
+using static Google.Ads.GoogleAds.V5.Services.GoogleAdsServiceClient;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example gets all campaigns. To add campaigns, run AddCampaigns.cs.
@@ -59,7 +59,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Create a query that will retrieve all campaigns.
             string query = @"SELECT

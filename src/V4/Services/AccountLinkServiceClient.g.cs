@@ -322,6 +322,9 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         /// <summary>
         /// Creates or removes an account link.
+        /// From V5, create is not supported through
+        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.CreateAccountLink instead.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -331,6 +334,9 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         /// <summary>
         /// Creates or removes an account link.
+        /// From V5, create is not supported through
+        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.CreateAccountLink instead.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -340,6 +346,9 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         /// <summary>
         /// Creates or removes an account link.
+        /// From V5, create is not supported through
+        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.CreateAccountLink instead.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
@@ -349,6 +358,9 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         /// <summary>
         /// Creates or removes an account link.
+        /// From V5, create is not supported through
+        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.CreateAccountLink instead.
         /// </summary>
         /// <param name="customerId">
         /// Required. The ID of the customer being modified.
@@ -367,6 +379,9 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         /// <summary>
         /// Creates or removes an account link.
+        /// From V5, create is not supported through
+        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.CreateAccountLink instead.
         /// </summary>
         /// <param name="customerId">
         /// Required. The ID of the customer being modified.
@@ -385,6 +400,9 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         /// <summary>
         /// Creates or removes an account link.
+        /// From V5, create is not supported through
+        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.CreateAccountLink instead.
         /// </summary>
         /// <param name="customerId">
         /// Required. The ID of the customer being modified.
@@ -469,6 +487,9 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         /// <summary>
         /// Creates or removes an account link.
+        /// From V5, create is not supported through
+        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.CreateAccountLink instead.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -481,6 +502,9 @@ namespace Google.Ads.GoogleAds.V4.Services
 
         /// <summary>
         /// Creates or removes an account link.
+        /// From V5, create is not supported through
+        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.CreateAccountLink instead.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>

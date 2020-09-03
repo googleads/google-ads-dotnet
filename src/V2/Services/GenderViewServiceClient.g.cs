@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>GenderViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage gender views.
+    /// </remarks>
     public abstract partial class GenderViewServiceClient
     {
         /// <summary>
@@ -301,6 +304,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>GenderViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage gender views.
+    /// </remarks>
     public sealed partial class GenderViewServiceClientImpl : GenderViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetGenderViewRequest, gagvr::GenderView> _callGetGenderView;

@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedMobileDeviceConstantServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMobileDeviceConstantRequestObject()
         {
             moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMobileDeviceConstantRequestObjectAsync()
         {
             moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
@@ -79,7 +79,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMobileDeviceConstant()
         {
             moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMobileDeviceConstantAsync()
         {
             moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
@@ -129,7 +129,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMobileDeviceConstantResourceNames()
         {
             moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);
@@ -153,7 +153,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMobileDeviceConstantResourceNamesAsync()
         {
             moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient> mockGrpcClient = new moq::Mock<MobileDeviceConstantService.MobileDeviceConstantServiceClient>(moq::MockBehavior.Strict);

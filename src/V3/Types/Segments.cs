@@ -197,7 +197,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
   /// <summary>
   /// Segment only fields.
   /// </summary>
-  public sealed partial class Segments : pb::IMessage<Segments> {
+  public sealed partial class Segments : pb::IMessage<Segments>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Segments> _parser = new pb::MessageParser<Segments>(() => new Segments());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1715,6 +1719,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Device != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Device);
@@ -1974,7 +1981,273 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Device != global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Device);
+      }
+      if (ConversionAttributionEventType != global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) ConversionAttributionEventType);
+      }
+      if (AdNetworkType != global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeEnum.Types.AdNetworkType.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) AdNetworkType);
+      }
+      if (date_ != null) {
+        _single_date_codec.WriteTagAndValue(ref output, Date);
+      }
+      if (DayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) DayOfWeek);
+      }
+      if (hotelBookingWindowDays_ != null) {
+        _single_hotelBookingWindowDays_codec.WriteTagAndValue(ref output, HotelBookingWindowDays);
+      }
+      if (hotelCenterId_ != null) {
+        _single_hotelCenterId_codec.WriteTagAndValue(ref output, HotelCenterId);
+      }
+      if (hotelCheckInDate_ != null) {
+        _single_hotelCheckInDate_codec.WriteTagAndValue(ref output, HotelCheckInDate);
+      }
+      if (HotelCheckInDayOfWeek != global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek.Unspecified) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) HotelCheckInDayOfWeek);
+      }
+      if (hotelCity_ != null) {
+        _single_hotelCity_codec.WriteTagAndValue(ref output, HotelCity);
+      }
+      if (hotelClass_ != null) {
+        _single_hotelClass_codec.WriteTagAndValue(ref output, HotelClass);
+      }
+      if (hotelCountry_ != null) {
+        _single_hotelCountry_codec.WriteTagAndValue(ref output, HotelCountry);
+      }
+      if (HotelDateSelectionType != global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType.Unspecified) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) HotelDateSelectionType);
+      }
+      if (hotelLengthOfStay_ != null) {
+        _single_hotelLengthOfStay_codec.WriteTagAndValue(ref output, HotelLengthOfStay);
+      }
+      if (hotelState_ != null) {
+        _single_hotelState_codec.WriteTagAndValue(ref output, HotelState);
+      }
+      if (hour_ != null) {
+        _single_hour_codec.WriteTagAndValue(ref output, Hour);
+      }
+      if (month_ != null) {
+        _single_month_codec.WriteTagAndValue(ref output, Month);
+      }
+      if (MonthOfYear != global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) {
+        output.WriteRawTag(144, 1);
+        output.WriteEnum((int) MonthOfYear);
+      }
+      if (partnerHotelId_ != null) {
+        _single_partnerHotelId_codec.WriteTagAndValue(ref output, PartnerHotelId);
+      }
+      if (PlaceholderType != global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified) {
+        output.WriteRawTag(160, 1);
+        output.WriteEnum((int) PlaceholderType);
+      }
+      if (quarter_ != null) {
+        _single_quarter_codec.WriteTagAndValue(ref output, Quarter);
+      }
+      if (SearchTermMatchType != global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType.Unspecified) {
+        output.WriteRawTag(176, 1);
+        output.WriteEnum((int) SearchTermMatchType);
+      }
+      if (Slot != global::Google.Ads.GoogleAds.V3.Enums.SlotEnum.Types.Slot.Unspecified) {
+        output.WriteRawTag(184, 1);
+        output.WriteEnum((int) Slot);
+      }
+      if (week_ != null) {
+        _single_week_codec.WriteTagAndValue(ref output, Week);
+      }
+      if (year_ != null) {
+        _single_year_codec.WriteTagAndValue(ref output, Year);
+      }
+      if (ClickType != global::Google.Ads.GoogleAds.V3.Enums.ClickTypeEnum.Types.ClickType.Unspecified) {
+        output.WriteRawTag(208, 1);
+        output.WriteEnum((int) ClickType);
+      }
+      if (conversionAdjustment_ != null) {
+        _single_conversionAdjustment_codec.WriteTagAndValue(ref output, ConversionAdjustment);
+      }
+      if (productAggregatorId_ != null) {
+        _single_productAggregatorId_codec.WriteTagAndValue(ref output, ProductAggregatorId);
+      }
+      if (productBrand_ != null) {
+        _single_productBrand_codec.WriteTagAndValue(ref output, ProductBrand);
+      }
+      if (ProductChannel != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel.Unspecified) {
+        output.WriteRawTag(240, 1);
+        output.WriteEnum((int) ProductChannel);
+      }
+      if (ProductChannelExclusivity != global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity.Unspecified) {
+        output.WriteRawTag(248, 1);
+        output.WriteEnum((int) ProductChannelExclusivity);
+      }
+      if (ProductCondition != global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition.Unspecified) {
+        output.WriteRawTag(128, 2);
+        output.WriteEnum((int) ProductCondition);
+      }
+      if (productCountry_ != null) {
+        _single_productCountry_codec.WriteTagAndValue(ref output, ProductCountry);
+      }
+      if (productCustomAttribute0_ != null) {
+        _single_productCustomAttribute0_codec.WriteTagAndValue(ref output, ProductCustomAttribute0);
+      }
+      if (productCustomAttribute1_ != null) {
+        _single_productCustomAttribute1_codec.WriteTagAndValue(ref output, ProductCustomAttribute1);
+      }
+      if (productCustomAttribute2_ != null) {
+        _single_productCustomAttribute2_codec.WriteTagAndValue(ref output, ProductCustomAttribute2);
+      }
+      if (productCustomAttribute3_ != null) {
+        _single_productCustomAttribute3_codec.WriteTagAndValue(ref output, ProductCustomAttribute3);
+      }
+      if (productCustomAttribute4_ != null) {
+        _single_productCustomAttribute4_codec.WriteTagAndValue(ref output, ProductCustomAttribute4);
+      }
+      if (productItemId_ != null) {
+        _single_productItemId_codec.WriteTagAndValue(ref output, ProductItemId);
+      }
+      if (productLanguage_ != null) {
+        _single_productLanguage_codec.WriteTagAndValue(ref output, ProductLanguage);
+      }
+      if (productMerchantId_ != null) {
+        _single_productMerchantId_codec.WriteTagAndValue(ref output, ProductMerchantId);
+      }
+      if (productStoreId_ != null) {
+        _single_productStoreId_codec.WriteTagAndValue(ref output, ProductStoreId);
+      }
+      if (productTitle_ != null) {
+        _single_productTitle_codec.WriteTagAndValue(ref output, ProductTitle);
+      }
+      if (productTypeL1_ != null) {
+        _single_productTypeL1_codec.WriteTagAndValue(ref output, ProductTypeL1);
+      }
+      if (productTypeL2_ != null) {
+        _single_productTypeL2_codec.WriteTagAndValue(ref output, ProductTypeL2);
+      }
+      if (productTypeL3_ != null) {
+        _single_productTypeL3_codec.WriteTagAndValue(ref output, ProductTypeL3);
+      }
+      if (productTypeL4_ != null) {
+        _single_productTypeL4_codec.WriteTagAndValue(ref output, ProductTypeL4);
+      }
+      if (productTypeL5_ != null) {
+        _single_productTypeL5_codec.WriteTagAndValue(ref output, ProductTypeL5);
+      }
+      if (interactionOnThisExtension_ != null) {
+        _single_interactionOnThisExtension_codec.WriteTagAndValue(ref output, InteractionOnThisExtension);
+      }
+      if (ConversionLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketEnum.Types.ConversionLagBucket.Unspecified) {
+        output.WriteRawTag(144, 3);
+        output.WriteEnum((int) ConversionLagBucket);
+      }
+      if (ConversionOrAdjustmentLagBucket != global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketEnum.Types.ConversionOrAdjustmentLagBucket.Unspecified) {
+        output.WriteRawTag(152, 3);
+        output.WriteEnum((int) ConversionOrAdjustmentLagBucket);
+      }
+      if (conversionAction_ != null) {
+        _single_conversionAction_codec.WriteTagAndValue(ref output, ConversionAction);
+      }
+      if (ConversionActionCategory != global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory.Unspecified) {
+        output.WriteRawTag(168, 3);
+        output.WriteEnum((int) ConversionActionCategory);
+      }
+      if (conversionActionName_ != null) {
+        _single_conversionActionName_codec.WriteTagAndValue(ref output, ConversionActionName);
+      }
+      if (ExternalConversionSource != global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceEnum.Types.ExternalConversionSource.Unspecified) {
+        output.WriteRawTag(184, 3);
+        output.WriteEnum((int) ExternalConversionSource);
+      }
+      if (productBiddingCategoryLevel1_ != null) {
+        _single_productBiddingCategoryLevel1_codec.WriteTagAndValue(ref output, ProductBiddingCategoryLevel1);
+      }
+      if (productBiddingCategoryLevel2_ != null) {
+        _single_productBiddingCategoryLevel2_codec.WriteTagAndValue(ref output, ProductBiddingCategoryLevel2);
+      }
+      if (productBiddingCategoryLevel3_ != null) {
+        _single_productBiddingCategoryLevel3_codec.WriteTagAndValue(ref output, ProductBiddingCategoryLevel3);
+      }
+      if (productBiddingCategoryLevel4_ != null) {
+        _single_productBiddingCategoryLevel4_codec.WriteTagAndValue(ref output, ProductBiddingCategoryLevel4);
+      }
+      if (productBiddingCategoryLevel5_ != null) {
+        _single_productBiddingCategoryLevel5_codec.WriteTagAndValue(ref output, ProductBiddingCategoryLevel5);
+      }
+      if (keyword_ != null) {
+        output.WriteRawTag(234, 3);
+        output.WriteMessage(Keyword);
+      }
+      if (geoTargetCity_ != null) {
+        _single_geoTargetCity_codec.WriteTagAndValue(ref output, GeoTargetCity);
+      }
+      if (geoTargetMetro_ != null) {
+        _single_geoTargetMetro_codec.WriteTagAndValue(ref output, GeoTargetMetro);
+      }
+      if (geoTargetRegion_ != null) {
+        _single_geoTargetRegion_codec.WriteTagAndValue(ref output, GeoTargetRegion);
+      }
+      if (geoTargetAirport_ != null) {
+        _single_geoTargetAirport_codec.WriteTagAndValue(ref output, GeoTargetAirport);
+      }
+      if (webpage_ != null) {
+        _single_webpage_codec.WriteTagAndValue(ref output, Webpage);
+      }
+      if (geoTargetState_ != null) {
+        _single_geoTargetState_codec.WriteTagAndValue(ref output, GeoTargetState);
+      }
+      if (geoTargetCounty_ != null) {
+        _single_geoTargetCounty_codec.WriteTagAndValue(ref output, GeoTargetCounty);
+      }
+      if (geoTargetDistrict_ != null) {
+        _single_geoTargetDistrict_codec.WriteTagAndValue(ref output, GeoTargetDistrict);
+      }
+      if (SearchEngineResultsPageType != global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType.Unspecified) {
+        output.WriteRawTag(176, 4);
+        output.WriteEnum((int) SearchEngineResultsPageType);
+      }
+      if (geoTargetPostalCode_ != null) {
+        _single_geoTargetPostalCode_codec.WriteTagAndValue(ref output, GeoTargetPostalCode);
+      }
+      if (geoTargetMostSpecificLocation_ != null) {
+        _single_geoTargetMostSpecificLocation_codec.WriteTagAndValue(ref output, GeoTargetMostSpecificLocation);
+      }
+      if (hotelRateRuleId_ != null) {
+        _single_hotelRateRuleId_codec.WriteTagAndValue(ref output, HotelRateRuleId);
+      }
+      if (HotelRateType != global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeEnum.Types.HotelRateType.Unspecified) {
+        output.WriteRawTag(208, 4);
+        output.WriteEnum((int) HotelRateType);
+      }
+      if (geoTargetProvince_ != null) {
+        _single_geoTargetProvince_codec.WriteTagAndValue(ref output, GeoTargetProvince);
+      }
+      if (geoTargetCanton_ != null) {
+        _single_geoTargetCanton_codec.WriteTagAndValue(ref output, GeoTargetCanton);
+      }
+      if (geoTargetCountry_ != null) {
+        _single_geoTargetCountry_codec.WriteTagAndValue(ref output, GeoTargetCountry);
+      }
+      if (HotelPriceBucket != global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketEnum.Types.HotelPriceBucket.Unspecified) {
+        output.WriteRawTag(240, 4);
+        output.WriteEnum((int) HotelPriceBucket);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -2578,6 +2851,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3069,14 +3345,516 @@ namespace Google.Ads.GoogleAds.V3.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Device = (global::Google.Ads.GoogleAds.V3.Enums.DeviceEnum.Types.Device) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            ConversionAttributionEventType = (global::Google.Ads.GoogleAds.V3.Enums.ConversionAttributionEventTypeEnum.Types.ConversionAttributionEventType) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            AdNetworkType = (global::Google.Ads.GoogleAds.V3.Enums.AdNetworkTypeEnum.Types.AdNetworkType) input.ReadEnum();
+            break;
+          }
+          case 34: {
+            string value = _single_date_codec.Read(ref input);
+            if (date_ == null || value != "") {
+              Date = value;
+            }
+            break;
+          }
+          case 40: {
+            DayOfWeek = (global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            long? value = _single_hotelBookingWindowDays_codec.Read(ref input);
+            if (hotelBookingWindowDays_ == null || value != 0L) {
+              HotelBookingWindowDays = value;
+            }
+            break;
+          }
+          case 58: {
+            long? value = _single_hotelCenterId_codec.Read(ref input);
+            if (hotelCenterId_ == null || value != 0L) {
+              HotelCenterId = value;
+            }
+            break;
+          }
+          case 66: {
+            string value = _single_hotelCheckInDate_codec.Read(ref input);
+            if (hotelCheckInDate_ == null || value != "") {
+              HotelCheckInDate = value;
+            }
+            break;
+          }
+          case 72: {
+            HotelCheckInDayOfWeek = (global::Google.Ads.GoogleAds.V3.Enums.DayOfWeekEnum.Types.DayOfWeek) input.ReadEnum();
+            break;
+          }
+          case 82: {
+            string value = _single_hotelCity_codec.Read(ref input);
+            if (hotelCity_ == null || value != "") {
+              HotelCity = value;
+            }
+            break;
+          }
+          case 90: {
+            int? value = _single_hotelClass_codec.Read(ref input);
+            if (hotelClass_ == null || value != 0) {
+              HotelClass = value;
+            }
+            break;
+          }
+          case 98: {
+            string value = _single_hotelCountry_codec.Read(ref input);
+            if (hotelCountry_ == null || value != "") {
+              HotelCountry = value;
+            }
+            break;
+          }
+          case 104: {
+            HotelDateSelectionType = (global::Google.Ads.GoogleAds.V3.Enums.HotelDateSelectionTypeEnum.Types.HotelDateSelectionType) input.ReadEnum();
+            break;
+          }
+          case 114: {
+            int? value = _single_hotelLengthOfStay_codec.Read(ref input);
+            if (hotelLengthOfStay_ == null || value != 0) {
+              HotelLengthOfStay = value;
+            }
+            break;
+          }
+          case 122: {
+            string value = _single_hotelState_codec.Read(ref input);
+            if (hotelState_ == null || value != "") {
+              HotelState = value;
+            }
+            break;
+          }
+          case 130: {
+            int? value = _single_hour_codec.Read(ref input);
+            if (hour_ == null || value != 0) {
+              Hour = value;
+            }
+            break;
+          }
+          case 138: {
+            string value = _single_month_codec.Read(ref input);
+            if (month_ == null || value != "") {
+              Month = value;
+            }
+            break;
+          }
+          case 144: {
+            MonthOfYear = (global::Google.Ads.GoogleAds.V3.Enums.MonthOfYearEnum.Types.MonthOfYear) input.ReadEnum();
+            break;
+          }
+          case 154: {
+            string value = _single_partnerHotelId_codec.Read(ref input);
+            if (partnerHotelId_ == null || value != "") {
+              PartnerHotelId = value;
+            }
+            break;
+          }
+          case 160: {
+            PlaceholderType = (global::Google.Ads.GoogleAds.V3.Enums.PlaceholderTypeEnum.Types.PlaceholderType) input.ReadEnum();
+            break;
+          }
+          case 170: {
+            string value = _single_quarter_codec.Read(ref input);
+            if (quarter_ == null || value != "") {
+              Quarter = value;
+            }
+            break;
+          }
+          case 176: {
+            SearchTermMatchType = (global::Google.Ads.GoogleAds.V3.Enums.SearchTermMatchTypeEnum.Types.SearchTermMatchType) input.ReadEnum();
+            break;
+          }
+          case 184: {
+            Slot = (global::Google.Ads.GoogleAds.V3.Enums.SlotEnum.Types.Slot) input.ReadEnum();
+            break;
+          }
+          case 194: {
+            string value = _single_week_codec.Read(ref input);
+            if (week_ == null || value != "") {
+              Week = value;
+            }
+            break;
+          }
+          case 202: {
+            int? value = _single_year_codec.Read(ref input);
+            if (year_ == null || value != 0) {
+              Year = value;
+            }
+            break;
+          }
+          case 208: {
+            ClickType = (global::Google.Ads.GoogleAds.V3.Enums.ClickTypeEnum.Types.ClickType) input.ReadEnum();
+            break;
+          }
+          case 218: {
+            bool? value = _single_conversionAdjustment_codec.Read(ref input);
+            if (conversionAdjustment_ == null || value != false) {
+              ConversionAdjustment = value;
+            }
+            break;
+          }
+          case 226: {
+            ulong? value = _single_productAggregatorId_codec.Read(ref input);
+            if (productAggregatorId_ == null || value != 0UL) {
+              ProductAggregatorId = value;
+            }
+            break;
+          }
+          case 234: {
+            string value = _single_productBrand_codec.Read(ref input);
+            if (productBrand_ == null || value != "") {
+              ProductBrand = value;
+            }
+            break;
+          }
+          case 240: {
+            ProductChannel = (global::Google.Ads.GoogleAds.V3.Enums.ProductChannelEnum.Types.ProductChannel) input.ReadEnum();
+            break;
+          }
+          case 248: {
+            ProductChannelExclusivity = (global::Google.Ads.GoogleAds.V3.Enums.ProductChannelExclusivityEnum.Types.ProductChannelExclusivity) input.ReadEnum();
+            break;
+          }
+          case 256: {
+            ProductCondition = (global::Google.Ads.GoogleAds.V3.Enums.ProductConditionEnum.Types.ProductCondition) input.ReadEnum();
+            break;
+          }
+          case 266: {
+            string value = _single_productCountry_codec.Read(ref input);
+            if (productCountry_ == null || value != "") {
+              ProductCountry = value;
+            }
+            break;
+          }
+          case 274: {
+            string value = _single_productCustomAttribute0_codec.Read(ref input);
+            if (productCustomAttribute0_ == null || value != "") {
+              ProductCustomAttribute0 = value;
+            }
+            break;
+          }
+          case 282: {
+            string value = _single_productCustomAttribute1_codec.Read(ref input);
+            if (productCustomAttribute1_ == null || value != "") {
+              ProductCustomAttribute1 = value;
+            }
+            break;
+          }
+          case 290: {
+            string value = _single_productCustomAttribute2_codec.Read(ref input);
+            if (productCustomAttribute2_ == null || value != "") {
+              ProductCustomAttribute2 = value;
+            }
+            break;
+          }
+          case 298: {
+            string value = _single_productCustomAttribute3_codec.Read(ref input);
+            if (productCustomAttribute3_ == null || value != "") {
+              ProductCustomAttribute3 = value;
+            }
+            break;
+          }
+          case 306: {
+            string value = _single_productCustomAttribute4_codec.Read(ref input);
+            if (productCustomAttribute4_ == null || value != "") {
+              ProductCustomAttribute4 = value;
+            }
+            break;
+          }
+          case 314: {
+            string value = _single_productItemId_codec.Read(ref input);
+            if (productItemId_ == null || value != "") {
+              ProductItemId = value;
+            }
+            break;
+          }
+          case 322: {
+            string value = _single_productLanguage_codec.Read(ref input);
+            if (productLanguage_ == null || value != "") {
+              ProductLanguage = value;
+            }
+            break;
+          }
+          case 330: {
+            ulong? value = _single_productMerchantId_codec.Read(ref input);
+            if (productMerchantId_ == null || value != 0UL) {
+              ProductMerchantId = value;
+            }
+            break;
+          }
+          case 338: {
+            string value = _single_productStoreId_codec.Read(ref input);
+            if (productStoreId_ == null || value != "") {
+              ProductStoreId = value;
+            }
+            break;
+          }
+          case 346: {
+            string value = _single_productTitle_codec.Read(ref input);
+            if (productTitle_ == null || value != "") {
+              ProductTitle = value;
+            }
+            break;
+          }
+          case 354: {
+            string value = _single_productTypeL1_codec.Read(ref input);
+            if (productTypeL1_ == null || value != "") {
+              ProductTypeL1 = value;
+            }
+            break;
+          }
+          case 362: {
+            string value = _single_productTypeL2_codec.Read(ref input);
+            if (productTypeL2_ == null || value != "") {
+              ProductTypeL2 = value;
+            }
+            break;
+          }
+          case 370: {
+            string value = _single_productTypeL3_codec.Read(ref input);
+            if (productTypeL3_ == null || value != "") {
+              ProductTypeL3 = value;
+            }
+            break;
+          }
+          case 378: {
+            string value = _single_productTypeL4_codec.Read(ref input);
+            if (productTypeL4_ == null || value != "") {
+              ProductTypeL4 = value;
+            }
+            break;
+          }
+          case 386: {
+            string value = _single_productTypeL5_codec.Read(ref input);
+            if (productTypeL5_ == null || value != "") {
+              ProductTypeL5 = value;
+            }
+            break;
+          }
+          case 394: {
+            bool? value = _single_interactionOnThisExtension_codec.Read(ref input);
+            if (interactionOnThisExtension_ == null || value != false) {
+              InteractionOnThisExtension = value;
+            }
+            break;
+          }
+          case 400: {
+            ConversionLagBucket = (global::Google.Ads.GoogleAds.V3.Enums.ConversionLagBucketEnum.Types.ConversionLagBucket) input.ReadEnum();
+            break;
+          }
+          case 408: {
+            ConversionOrAdjustmentLagBucket = (global::Google.Ads.GoogleAds.V3.Enums.ConversionOrAdjustmentLagBucketEnum.Types.ConversionOrAdjustmentLagBucket) input.ReadEnum();
+            break;
+          }
+          case 418: {
+            string value = _single_conversionAction_codec.Read(ref input);
+            if (conversionAction_ == null || value != "") {
+              ConversionAction = value;
+            }
+            break;
+          }
+          case 424: {
+            ConversionActionCategory = (global::Google.Ads.GoogleAds.V3.Enums.ConversionActionCategoryEnum.Types.ConversionActionCategory) input.ReadEnum();
+            break;
+          }
+          case 434: {
+            string value = _single_conversionActionName_codec.Read(ref input);
+            if (conversionActionName_ == null || value != "") {
+              ConversionActionName = value;
+            }
+            break;
+          }
+          case 440: {
+            ExternalConversionSource = (global::Google.Ads.GoogleAds.V3.Enums.ExternalConversionSourceEnum.Types.ExternalConversionSource) input.ReadEnum();
+            break;
+          }
+          case 450: {
+            string value = _single_productBiddingCategoryLevel1_codec.Read(ref input);
+            if (productBiddingCategoryLevel1_ == null || value != "") {
+              ProductBiddingCategoryLevel1 = value;
+            }
+            break;
+          }
+          case 458: {
+            string value = _single_productBiddingCategoryLevel2_codec.Read(ref input);
+            if (productBiddingCategoryLevel2_ == null || value != "") {
+              ProductBiddingCategoryLevel2 = value;
+            }
+            break;
+          }
+          case 466: {
+            string value = _single_productBiddingCategoryLevel3_codec.Read(ref input);
+            if (productBiddingCategoryLevel3_ == null || value != "") {
+              ProductBiddingCategoryLevel3 = value;
+            }
+            break;
+          }
+          case 474: {
+            string value = _single_productBiddingCategoryLevel4_codec.Read(ref input);
+            if (productBiddingCategoryLevel4_ == null || value != "") {
+              ProductBiddingCategoryLevel4 = value;
+            }
+            break;
+          }
+          case 482: {
+            string value = _single_productBiddingCategoryLevel5_codec.Read(ref input);
+            if (productBiddingCategoryLevel5_ == null || value != "") {
+              ProductBiddingCategoryLevel5 = value;
+            }
+            break;
+          }
+          case 490: {
+            if (keyword_ == null) {
+              Keyword = new global::Google.Ads.GoogleAds.V3.Common.Keyword();
+            }
+            input.ReadMessage(Keyword);
+            break;
+          }
+          case 498: {
+            string value = _single_geoTargetCity_codec.Read(ref input);
+            if (geoTargetCity_ == null || value != "") {
+              GeoTargetCity = value;
+            }
+            break;
+          }
+          case 506: {
+            string value = _single_geoTargetMetro_codec.Read(ref input);
+            if (geoTargetMetro_ == null || value != "") {
+              GeoTargetMetro = value;
+            }
+            break;
+          }
+          case 514: {
+            string value = _single_geoTargetRegion_codec.Read(ref input);
+            if (geoTargetRegion_ == null || value != "") {
+              GeoTargetRegion = value;
+            }
+            break;
+          }
+          case 522: {
+            string value = _single_geoTargetAirport_codec.Read(ref input);
+            if (geoTargetAirport_ == null || value != "") {
+              GeoTargetAirport = value;
+            }
+            break;
+          }
+          case 530: {
+            string value = _single_webpage_codec.Read(ref input);
+            if (webpage_ == null || value != "") {
+              Webpage = value;
+            }
+            break;
+          }
+          case 538: {
+            string value = _single_geoTargetState_codec.Read(ref input);
+            if (geoTargetState_ == null || value != "") {
+              GeoTargetState = value;
+            }
+            break;
+          }
+          case 546: {
+            string value = _single_geoTargetCounty_codec.Read(ref input);
+            if (geoTargetCounty_ == null || value != "") {
+              GeoTargetCounty = value;
+            }
+            break;
+          }
+          case 554: {
+            string value = _single_geoTargetDistrict_codec.Read(ref input);
+            if (geoTargetDistrict_ == null || value != "") {
+              GeoTargetDistrict = value;
+            }
+            break;
+          }
+          case 560: {
+            SearchEngineResultsPageType = (global::Google.Ads.GoogleAds.V3.Enums.SearchEngineResultsPageTypeEnum.Types.SearchEngineResultsPageType) input.ReadEnum();
+            break;
+          }
+          case 570: {
+            string value = _single_geoTargetPostalCode_codec.Read(ref input);
+            if (geoTargetPostalCode_ == null || value != "") {
+              GeoTargetPostalCode = value;
+            }
+            break;
+          }
+          case 578: {
+            string value = _single_geoTargetMostSpecificLocation_codec.Read(ref input);
+            if (geoTargetMostSpecificLocation_ == null || value != "") {
+              GeoTargetMostSpecificLocation = value;
+            }
+            break;
+          }
+          case 586: {
+            string value = _single_hotelRateRuleId_codec.Read(ref input);
+            if (hotelRateRuleId_ == null || value != "") {
+              HotelRateRuleId = value;
+            }
+            break;
+          }
+          case 592: {
+            HotelRateType = (global::Google.Ads.GoogleAds.V3.Enums.HotelRateTypeEnum.Types.HotelRateType) input.ReadEnum();
+            break;
+          }
+          case 602: {
+            string value = _single_geoTargetProvince_codec.Read(ref input);
+            if (geoTargetProvince_ == null || value != "") {
+              GeoTargetProvince = value;
+            }
+            break;
+          }
+          case 610: {
+            string value = _single_geoTargetCanton_codec.Read(ref input);
+            if (geoTargetCanton_ == null || value != "") {
+              GeoTargetCanton = value;
+            }
+            break;
+          }
+          case 618: {
+            string value = _single_geoTargetCountry_codec.Read(ref input);
+            if (geoTargetCountry_ == null || value != "") {
+              GeoTargetCountry = value;
+            }
+            break;
+          }
+          case 624: {
+            HotelPriceBucket = (global::Google.Ads.GoogleAds.V3.Enums.HotelPriceBucketEnum.Types.HotelPriceBucket) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// A Keyword criterion segment.
   /// </summary>
-  public sealed partial class Keyword : pb::IMessage<Keyword> {
+  public sealed partial class Keyword : pb::IMessage<Keyword>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Keyword> _parser = new pb::MessageParser<Keyword>(() => new Keyword());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3177,6 +3955,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (adGroupCriterion_ != null) {
         _single_adGroupCriterion_codec.WriteTagAndValue(output, AdGroupCriterion);
       }
@@ -3187,7 +3968,24 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (adGroupCriterion_ != null) {
+        _single_adGroupCriterion_codec.WriteTagAndValue(ref output, AdGroupCriterion);
+      }
+      if (info_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Info);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3225,6 +4023,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3247,7 +4048,36 @@ namespace Google.Ads.GoogleAds.V3.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            string value = _single_adGroupCriterion_codec.Read(ref input);
+            if (adGroupCriterion_ == null || value != "") {
+              AdGroupCriterion = value;
+            }
+            break;
+          }
+          case 18: {
+            if (info_ == null) {
+              Info = new global::Google.Ads.GoogleAds.V3.Common.KeywordInfo();
+            }
+            input.ReadMessage(Info);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

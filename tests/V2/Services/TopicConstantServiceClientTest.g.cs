@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedTopicConstantServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetTopicConstantRequestObject()
         {
             moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetTopicConstantRequestObjectAsync()
         {
             moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
@@ -74,7 +74,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetTopicConstant()
         {
             moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetTopicConstantAsync()
         {
             moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
@@ -120,7 +120,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetTopicConstantResourceNames()
         {
             moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);
@@ -142,7 +142,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetTopicConstantResourceNamesAsync()
         {
             moq::Mock<TopicConstantService.TopicConstantServiceClient> mockGrpcClient = new moq::Mock<TopicConstantService.TopicConstantServiceClient>(moq::MockBehavior.Strict);

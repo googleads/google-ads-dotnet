@@ -133,6 +133,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>CampaignCriterionSimulationService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch campaign criterion simulations.
+    /// </remarks>
     public abstract partial class CampaignCriterionSimulationServiceClient
     {
         /// <summary>
@@ -312,6 +315,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>CampaignCriterionSimulationService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch campaign criterion simulations.
+    /// </remarks>
     public sealed partial class CampaignCriterionSimulationServiceClientImpl : CampaignCriterionSimulationServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignCriterionSimulationRequest, gagvr::CampaignCriterionSimulation> _callGetCampaignCriterionSimulation;

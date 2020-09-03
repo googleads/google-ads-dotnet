@@ -621,7 +621,7 @@ namespace Google.Ads.GoogleAds.Config
 
                 case OAuth2Flow.SERVICE_ACCOUNT:
                     retval = new ServiceAccountCredential(
-                      new ServiceAccountCredential.Initializer(DEFAULT_USER_ID)
+                      new ServiceAccountCredential.Initializer(OAuth2ServiceAccountEmail)
                       {
                           User = OAuth2PrnEmail,
                           Scopes = new string[] { OAuth2Scope },

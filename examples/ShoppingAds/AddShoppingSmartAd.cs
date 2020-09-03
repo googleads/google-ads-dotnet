@@ -13,24 +13,24 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V4.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V4.Resources.Campaign.Types;
-using static Google.Ads.GoogleAds.V4.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V5.Enums.AdvertisingChannelSubTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example creates a Smart Shopping campaign, a Smart Shopping ad group, a Smart
@@ -142,7 +142,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V4.CampaignBudgetService);
+                client.GetService(Services.V5.CampaignBudgetService);
 
             CampaignBudget budget = new CampaignBudget()
             {
@@ -182,7 +182,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService =
-                client.GetService(Services.V4.CampaignService);
+                client.GetService(Services.V5.CampaignService);
 
             // Configures the shopping settings.
             ShoppingSetting shoppingSetting = new ShoppingSetting()
@@ -258,7 +258,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                     string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V4.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V5.AdGroupService);
 
             // Creates an ad group.
             AdGroup adGroup = new AdGroup()
@@ -303,7 +303,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V4.AdGroupAdService);
+                Services.V5.AdGroupAdService);
 
             // Creates a new shopping product ad.
             Ad ad = new Ad()
@@ -358,7 +358,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V4.AdGroupCriterionService);
+                Services.V5.AdGroupCriterionService);
 
             // Creates a new ad group criterion. This will contain the "default" listing group (All
             // products).

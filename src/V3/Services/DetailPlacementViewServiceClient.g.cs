@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>DetailPlacementViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Detail Placement views.
+    /// </remarks>
     public abstract partial class DetailPlacementViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>DetailPlacementViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Detail Placement views.
+    /// </remarks>
     public sealed partial class DetailPlacementViewServiceClientImpl : DetailPlacementViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetDetailPlacementViewRequest, gagvr::DetailPlacementView> _callGetDetailPlacementView;

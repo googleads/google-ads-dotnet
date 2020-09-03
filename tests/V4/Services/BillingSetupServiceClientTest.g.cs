@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedBillingSetupServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetBillingSetupRequestObject()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
@@ -56,7 +56,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetBillingSetupRequestObjectAsync()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetBillingSetup()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
@@ -112,7 +112,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetBillingSetupAsync()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
@@ -141,7 +141,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetBillingSetupResourceNames()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
@@ -168,7 +168,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetBillingSetupResourceNamesAsync()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
@@ -197,7 +197,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateBillingSetupRequestObject()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
@@ -217,7 +217,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateBillingSetupRequestObjectAsync()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
@@ -239,7 +239,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateBillingSetup()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateBillingSetupAsync()
         {
             moq::Mock<BillingSetupService.BillingSetupServiceClient> mockGrpcClient = new moq::Mock<BillingSetupService.BillingSetupServiceClient>(moq::MockBehavior.Strict);

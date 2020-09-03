@@ -17,13 +17,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.Api.Gax;
-using static Google.Ads.GoogleAds.V4.Enums.FlightPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.FlightPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// Removes a feed item attribute value of a feed item in a flights feed. To create a flights
@@ -81,13 +81,13 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="feedId">The Feed ID to which the feed item belongs.</param>
         /// <param name="feedItemId">The ID of the feed item to be updated.</param>
         /// <param name="flightPlaceholderFieldName">The flight placeholder field name for the
-        ///     attribute to be removed.</param>
+        /// attribute to be removed.</param>
         public void Run(GoogleAdsClient client, long customerId, long feedId, long feedItemId,
             string flightPlaceholderFieldName)
         {
             // Creates the Feed Item service client.
             FeedItemServiceClient feedItemServiceClient = client.GetService(
-                Services.V4.FeedItemService);
+                Services.V5.FeedItemService);
 
             try
             {
@@ -151,7 +151,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             string feedResourceName = ResourceNames.Feed(customerId, feedId);
 
@@ -217,11 +217,11 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="feedId">The feed ID that contains the target feed item.</param>
         /// <param name="feedItemId">The feed item ID that will be updated.</param>
         /// <param name="placeholdersToFeedAttributesMap">A mapping of FlightPlaceholderFields to
-        ///     FeedAttributes.</param>
+        /// FeedAttributes.</param>
         /// <param name="flightPlaceholderFieldName">The attributed field name to remove.</param>
         /// <returns>The modified feed item.</returns>
         /// <exception cref="ArgumentException">If the specified attribute was not found in the
-        ///     feed item.</exception>
+        /// feed item.</exception>
         private FeedItem RemoveAttributeValueFromFeedItem(GoogleAdsClient client, long customerId,
             long feedId, long feedItemId,
             Dictionary<FlightPlaceholderField, FeedAttribute> placeholdersToFeedAttributesMap,
@@ -240,7 +240,6 @@ namespace Google.Ads.GoogleAds.Examples.V4
             };
 
             // Gets the index of the attribute value that will be removed.
-            // int attributeIndex = GetAttributeIndex(feedItem, feedItemAttributeValue);
             int attributeIndex = feedItem.AttributeValues
                 .Select((item, index) => new {item, index})
                 .Where(itemIndexPair =>
@@ -276,7 +275,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Gets the Google Ads service.
             GoogleAdsServiceClient googleAdsServiceClient = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Constructs the resource name for the feed item.
             string feedItemResourceName = ResourceNames.FeedItem(customerId, feedId, feedItemId);

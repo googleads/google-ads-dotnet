@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedGeographicViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetGeographicViewRequestObject()
         {
             moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetGeographicViewRequestObjectAsync()
         {
             moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetGeographicView()
         {
             moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetGeographicViewAsync()
         {
             moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
@@ -117,7 +117,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetGeographicViewResourceNames()
         {
             moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);
@@ -138,7 +138,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetGeographicViewResourceNamesAsync()
         {
             moq::Mock<GeographicViewService.GeographicViewServiceClient> mockGrpcClient = new moq::Mock<GeographicViewService.GeographicViewServiceClient>(moq::MockBehavior.Strict);

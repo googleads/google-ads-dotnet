@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedConversionActionServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetConversionActionRequestObject()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
@@ -71,7 +71,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetConversionActionRequestObjectAsync()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
@@ -113,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetConversionAction()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
@@ -153,7 +153,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetConversionActionAsync()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
@@ -195,7 +195,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetConversionActionResourceNames()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
@@ -235,7 +235,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetConversionActionResourceNamesAsync()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
@@ -277,7 +277,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateConversionActionsRequestObject()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
@@ -306,7 +306,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateConversionActionsRequestObjectAsync()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
@@ -337,7 +337,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateConversionActions()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);
@@ -364,7 +364,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateConversionActionsAsync()
         {
             moq::Mock<ConversionActionService.ConversionActionServiceClient> mockGrpcClient = new moq::Mock<ConversionActionService.ConversionActionServiceClient>(moq::MockBehavior.Strict);

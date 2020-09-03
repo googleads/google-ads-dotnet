@@ -14,15 +14,15 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V4.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.AdGroupCriterionStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example illustrates udating a keyword.
@@ -43,9 +43,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // the Google Ads adgroup Id
             long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
             // the Google Ads adgroup criterion Id
-            long keywordId = long.Parse("INSERT_ADGROUP_CRITERION_ID_HERE");
+            long criterionId = long.Parse("INSERT_ADGROUP_CRITERION_ID_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keywordId);
+            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, criterionId);
         }
 
         /// <summary>
@@ -57,20 +57,20 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer Id.</param>
-        /// <param name="adGroupId">The Google Ads ad group Id.</param>
-        /// <param name="keywordId">The Google Ads keyword Id.</param>
-        public void Run(GoogleAdsClient client, long customerId, long adGroupId, long keywordId)
+        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="adGroupId">The Google Ads ad group ID.</param>
+        /// <param name="criterionId">The Google Ads keyword criterion ID.</param>
+        public void Run(GoogleAdsClient client, long customerId, long adGroupId, long criterionId)
         {
             // Get the CampaignCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V4.AdGroupCriterionService);
+                client.GetService(Services.V5.AdGroupCriterionService);
 
             // Create the keyword for update.
             AdGroupCriterion keyword = new AdGroupCriterion()
             {
-                ResourceName = ResourceNames.AdGroupCriterion(customerId, adGroupId, keywordId),
-                CriterionId = keywordId,
+                ResourceName = ResourceNames.AdGroupCriterion(customerId, adGroupId, criterionId),
+                CriterionId = criterionId,
                 Status = AdGroupCriterionStatus.Enabled,
                 FinalUrls = { "https://www.example.com" }
             };

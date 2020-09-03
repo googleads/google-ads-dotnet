@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedAdGroupBidModifierServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupBidModifierRequestObject()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
@@ -61,7 +61,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupBidModifierRequestObjectAsync()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupBidModifier()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
@@ -123,7 +123,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupBidModifierAsync()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
@@ -155,7 +155,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupBidModifierResourceNames()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
@@ -185,7 +185,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupBidModifierResourceNamesAsync()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
@@ -217,7 +217,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAdGroupBidModifiersRequestObject()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
@@ -246,7 +246,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAdGroupBidModifiersRequestObjectAsync()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
@@ -277,7 +277,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAdGroupBidModifiers()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);
@@ -304,7 +304,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAdGroupBidModifiersAsync()
         {
             moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient> mockGrpcClient = new moq::Mock<AdGroupBidModifierService.AdGroupBidModifierServiceClient>(moq::MockBehavior.Strict);

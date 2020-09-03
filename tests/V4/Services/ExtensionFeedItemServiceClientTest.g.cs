@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedExtensionFeedItemServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetExtensionFeedItemRequestObject()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetExtensionFeedItemRequestObjectAsync()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetExtensionFeedItem()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -165,7 +165,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetExtensionFeedItemAsync()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -211,7 +211,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetExtensionFeedItemResourceNames()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -255,7 +255,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetExtensionFeedItemResourceNamesAsync()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -301,7 +301,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateExtensionFeedItemsRequestObject()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -330,7 +330,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateExtensionFeedItemsRequestObjectAsync()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -361,7 +361,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateExtensionFeedItems()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -388,7 +388,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateExtensionFeedItemsAsync()
         {
             moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient> mockGrpcClient = new moq::Mock<ExtensionFeedItemService.ExtensionFeedItemServiceClient>(moq::MockBehavior.Strict);

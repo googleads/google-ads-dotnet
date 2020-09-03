@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedUserInterestServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetUserInterestRequestObject()
         {
             moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetUserInterestRequestObjectAsync()
         {
             moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetUserInterest()
         {
             moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
@@ -116,7 +116,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetUserInterestAsync()
         {
             moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
@@ -146,7 +146,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetUserInterestResourceNames()
         {
             moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);
@@ -174,7 +174,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetUserInterestResourceNamesAsync()
         {
             moq::Mock<UserInterestService.UserInterestServiceClient> mockGrpcClient = new moq::Mock<UserInterestService.UserInterestServiceClient>(moq::MockBehavior.Strict);

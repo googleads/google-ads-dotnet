@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedThirdPartyAppAnalyticsLinkServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetThirdPartyAppAnalyticsLinkRequestObject()
         {
             moq::Mock<ThirdPartyAppAnalyticsLinkService.ThirdPartyAppAnalyticsLinkServiceClient> mockGrpcClient = new moq::Mock<ThirdPartyAppAnalyticsLinkService.ThirdPartyAppAnalyticsLinkServiceClient>(moq::MockBehavior.Strict);
@@ -48,7 +48,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetThirdPartyAppAnalyticsLinkRequestObjectAsync()
         {
             moq::Mock<ThirdPartyAppAnalyticsLinkService.ThirdPartyAppAnalyticsLinkServiceClient> mockGrpcClient = new moq::Mock<ThirdPartyAppAnalyticsLinkService.ThirdPartyAppAnalyticsLinkServiceClient>(moq::MockBehavior.Strict);

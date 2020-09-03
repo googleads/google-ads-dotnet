@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedAccountBudgetServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAccountBudgetRequestObject()
         {
             moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAccountBudgetRequestObjectAsync()
         {
             moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -111,7 +111,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAccountBudget()
         {
             moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -151,7 +151,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAccountBudgetAsync()
         {
             moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -193,7 +193,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAccountBudgetResourceNames()
         {
             moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);
@@ -233,7 +233,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAccountBudgetResourceNamesAsync()
         {
             moq::Mock<AccountBudgetService.AccountBudgetServiceClient> mockGrpcClient = new moq::Mock<AccountBudgetService.AccountBudgetServiceClient>(moq::MockBehavior.Strict);

@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedExpandedLandingPageViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetExpandedLandingPageViewRequestObject()
         {
             moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
@@ -48,7 +48,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetExpandedLandingPageViewRequestObjectAsync()
         {
             moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetExpandedLandingPageView()
         {
             moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetExpandedLandingPageViewAsync()
         {
             moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
@@ -112,7 +112,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetExpandedLandingPageViewResourceNames()
         {
             moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);
@@ -132,7 +132,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetExpandedLandingPageViewResourceNamesAsync()
         {
             moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient> mockGrpcClient = new moq::Mock<ExpandedLandingPageViewService.ExpandedLandingPageViewServiceClient>(moq::MockBehavior.Strict);

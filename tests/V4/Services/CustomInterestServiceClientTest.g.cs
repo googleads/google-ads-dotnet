@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCustomInterestServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomInterestRequestObject()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomInterestRequestObjectAsync()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomInterest()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomInterestAsync()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
@@ -145,7 +145,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomInterestResourceNames()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
@@ -173,7 +173,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomInterestResourceNamesAsync()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
@@ -203,7 +203,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCustomInterestsRequestObject()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
@@ -230,7 +230,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCustomInterestsRequestObjectAsync()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCustomInterests()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);
@@ -285,7 +285,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCustomInterestsAsync()
         {
             moq::Mock<CustomInterestService.CustomInterestServiceClient> mockGrpcClient = new moq::Mock<CustomInterestService.CustomInterestServiceClient>(moq::MockBehavior.Strict);

@@ -16,15 +16,15 @@ using System;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Enums;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Enums;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.Protobuf;
-using static Google.Ads.GoogleAds.V4.Enums.DisplayUploadProductTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.DisplayUploadProductTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example adds a display upload ad to a given ad group. To get ad groups,
@@ -74,7 +74,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 // This feature is only available to allowlisted accounts.
                 // See https://support.google.com/google-ads/answer/1722096 for more details.
                 // The DisplayUploadProductType field lists the available display upload types:
-                // https://developers.google.com/google-ads/api/reference/rpc/V4/DisplayUploadAdInfo
+                // https://developers.google.com/google-ads/api/reference/rpc/V5/DisplayUploadAdInfo
                 // Creates a new media bundle asset and returns the resource name.
                 string adAssetResourceName = CreateMediaBundleAsset(client, customerId);
 
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         private string CreateMediaBundleAsset(GoogleAdsClient client, long customerId)
         {
             // Gets the AssetService.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V4.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V5.AssetService);
 
             // The HTML5 zip file contains all the HTML, CSS, and images needed for the
             // HTML5 ad. For help on creating an HTML5 zip file, check out Google Web
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdServiceClient =
-                client.GetService(Services.V4.AdGroupAdService);
+                client.GetService(Services.V5.AdGroupAdService);
 
             // Creates the ad with the required fields.
             Ad displayUploadAd = new Ad()
@@ -158,7 +158,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 Name = "Ad for HTML5",
                 FinalUrls = {"http://example.com/html5"},
                 // Exactly one ad data field must be included to specify the ad type. See
-                // https://developers.google.com/google-ads/api/reference/rpc/V4/Ad for the full
+                // https://developers.google.com/google-ads/api/reference/rpc/V5/Ad for the full
                 // list of available types.
                 DisplayUploadAd = new DisplayUploadAdInfo()
                 {

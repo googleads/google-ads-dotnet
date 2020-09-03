@@ -18,6 +18,7 @@ using Google.Protobuf.Reflection;
 using Google.Protobuf.WellKnownTypes;
 
 using System;
+using System.Collections;
 
 namespace Google.Ads.GoogleAds.Util
 {
@@ -112,7 +113,26 @@ namespace Google.Ads.GoogleAds.Util
                         case FieldType.Group:
                             throw new NotSupportedException("Groups are not supported in proto3");
                         default: // Primitives
-                            if (!Equals(originalChildValue, modifiedChildValue))
+                            if (childField.HasPresence)
+                            {
+                                // Presence fields should be handled based on whether the field has
+                                // value.
+                                bool originalChildHasValue = childField.Accessor.HasValue(original);
+                                bool modifiedChildHasValue = childField.Accessor.HasValue(modified);
+
+                                // Both fields have value, but the values don't match.
+                                if (originalChildHasValue && modifiedChildHasValue &&
+                                    !Equals(originalChildValue, modifiedChildValue))
+                                {
+                                    mask.Paths.Add(childFieldName);
+                                }
+                                else if (originalChildHasValue || modifiedChildHasValue)
+                                {
+                                    // Only one of the fields have value.
+                                    mask.Paths.Add(childFieldName);
+                                }
+                            }
+                            else if (!Equals(originalChildValue, modifiedChildValue))
                             {
                                 mask.Paths.Add(childFieldName);
                             }
@@ -162,11 +182,29 @@ namespace Google.Ads.GoogleAds.Util
                         }
                     }
                 }
-                else
+                else if (field.HasPresence)
                 {
-                    // The value could be nullable.
-                    if (value != null)
+                    // The presence fields should first be checked for HasValue.
+                    if (field.Accessor.HasValue(message))
                     {
+                        mask.Paths.Add(name);
+                    }
+                }
+                else if (value != null)
+                {
+                    if (field.IsRepeated)
+                    {
+                        if (value is IList && (value as IList).Count > 0)
+                        {
+                            // Generate fieldmask for a repeated field only if there's at least one
+                            // element in the list. Also, don't recurse, since fieldmask doesn't
+                            // support index notation.
+                            mask.Paths.Add(name);
+                        }
+                    }
+                    else
+                    {
+                        // The value could be nullable.
                         mask.Paths.Add(name);
                     }
                 }

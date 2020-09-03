@@ -139,6 +139,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>CampaignService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaigns.
+    /// </remarks>
     public abstract partial class CampaignServiceClient
     {
         /// <summary>
@@ -397,6 +400,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>CampaignService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaigns.
+    /// </remarks>
     public sealed partial class CampaignServiceClientImpl : CampaignServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignRequest, gagvr::Campaign> _callGetCampaign;

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCampaignDraftServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignDraftRequestObject()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignDraftRequestObjectAsync()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignDraft()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
@@ -114,7 +114,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignDraftAsync()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCampaignDraftResourceNames()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
@@ -170,7 +170,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCampaignDraftResourceNamesAsync()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
@@ -199,7 +199,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignDraftsRequestObject()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
@@ -229,7 +229,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignDraftsRequestObjectAsync()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
@@ -261,7 +261,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCampaignDrafts()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);
@@ -289,7 +289,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCampaignDraftsAsync()
         {
             moq::Mock<CampaignDraftService.CampaignDraftServiceClient> mockGrpcClient = new moq::Mock<CampaignDraftService.CampaignDraftServiceClient>(moq::MockBehavior.Strict);

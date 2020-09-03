@@ -98,7 +98,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   /// <summary>
   /// A user list. This is a list of users a customer may target.
   /// </summary>
-  public sealed partial class UserList : pb::IMessage<UserList> {
+  public sealed partial class UserList : pb::IMessage<UserList>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UserList> _parser = new pb::MessageParser<UserList>(() => new UserList());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -652,6 +656,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -737,7 +744,99 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (readOnly_ != null) {
+        _single_readOnly_codec.WriteTagAndValue(ref output, ReadOnly);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (description_ != null) {
+        _single_description_codec.WriteTagAndValue(ref output, Description);
+      }
+      if (MembershipStatus != global::Google.Ads.GoogleAds.V2.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus.Unspecified) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) MembershipStatus);
+      }
+      if (integrationCode_ != null) {
+        _single_integrationCode_codec.WriteTagAndValue(ref output, IntegrationCode);
+      }
+      if (membershipLifeSpan_ != null) {
+        _single_membershipLifeSpan_codec.WriteTagAndValue(ref output, MembershipLifeSpan);
+      }
+      if (sizeForDisplay_ != null) {
+        _single_sizeForDisplay_codec.WriteTagAndValue(ref output, SizeForDisplay);
+      }
+      if (SizeRangeForDisplay != global::Google.Ads.GoogleAds.V2.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) SizeRangeForDisplay);
+      }
+      if (sizeForSearch_ != null) {
+        _single_sizeForSearch_codec.WriteTagAndValue(ref output, SizeForSearch);
+      }
+      if (SizeRangeForSearch != global::Google.Ads.GoogleAds.V2.Enums.UserListSizeRangeEnum.Types.UserListSizeRange.Unspecified) {
+        output.WriteRawTag(96);
+        output.WriteEnum((int) SizeRangeForSearch);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V2.Enums.UserListTypeEnum.Types.UserListType.Unspecified) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) Type);
+      }
+      if (ClosingReason != global::Google.Ads.GoogleAds.V2.Enums.UserListClosingReasonEnum.Types.UserListClosingReason.Unspecified) {
+        output.WriteRawTag(112);
+        output.WriteEnum((int) ClosingReason);
+      }
+      if (AccessReason != global::Google.Ads.GoogleAds.V2.Enums.AccessReasonEnum.Types.AccessReason.Unspecified) {
+        output.WriteRawTag(120);
+        output.WriteEnum((int) AccessReason);
+      }
+      if (AccountUserListStatus != global::Google.Ads.GoogleAds.V2.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus.Unspecified) {
+        output.WriteRawTag(128, 1);
+        output.WriteEnum((int) AccountUserListStatus);
+      }
+      if (eligibleForSearch_ != null) {
+        _single_eligibleForSearch_codec.WriteTagAndValue(ref output, EligibleForSearch);
+      }
+      if (eligibleForDisplay_ != null) {
+        _single_eligibleForDisplay_codec.WriteTagAndValue(ref output, EligibleForDisplay);
+      }
+      if (userListCase_ == UserListOneofCase.CrmBasedUserList) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(CrmBasedUserList);
+      }
+      if (userListCase_ == UserListOneofCase.SimilarUserList) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(SimilarUserList);
+      }
+      if (userListCase_ == UserListOneofCase.RuleBasedUserList) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(RuleBasedUserList);
+      }
+      if (userListCase_ == UserListOneofCase.LogicalUserList) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(LogicalUserList);
+      }
+      if (userListCase_ == UserListOneofCase.BasicUserList) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(BasicUserList);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -934,6 +1033,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1089,7 +1191,169 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 26: {
+            bool? value = _single_readOnly_codec.Read(ref input);
+            if (readOnly_ == null || value != false) {
+              ReadOnly = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_description_codec.Read(ref input);
+            if (description_ == null || value != "") {
+              Description = value;
+            }
+            break;
+          }
+          case 48: {
+            MembershipStatus = (global::Google.Ads.GoogleAds.V2.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            string value = _single_integrationCode_codec.Read(ref input);
+            if (integrationCode_ == null || value != "") {
+              IntegrationCode = value;
+            }
+            break;
+          }
+          case 66: {
+            long? value = _single_membershipLifeSpan_codec.Read(ref input);
+            if (membershipLifeSpan_ == null || value != 0L) {
+              MembershipLifeSpan = value;
+            }
+            break;
+          }
+          case 74: {
+            long? value = _single_sizeForDisplay_codec.Read(ref input);
+            if (sizeForDisplay_ == null || value != 0L) {
+              SizeForDisplay = value;
+            }
+            break;
+          }
+          case 80: {
+            SizeRangeForDisplay = (global::Google.Ads.GoogleAds.V2.Enums.UserListSizeRangeEnum.Types.UserListSizeRange) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            long? value = _single_sizeForSearch_codec.Read(ref input);
+            if (sizeForSearch_ == null || value != 0L) {
+              SizeForSearch = value;
+            }
+            break;
+          }
+          case 96: {
+            SizeRangeForSearch = (global::Google.Ads.GoogleAds.V2.Enums.UserListSizeRangeEnum.Types.UserListSizeRange) input.ReadEnum();
+            break;
+          }
+          case 104: {
+            Type = (global::Google.Ads.GoogleAds.V2.Enums.UserListTypeEnum.Types.UserListType) input.ReadEnum();
+            break;
+          }
+          case 112: {
+            ClosingReason = (global::Google.Ads.GoogleAds.V2.Enums.UserListClosingReasonEnum.Types.UserListClosingReason) input.ReadEnum();
+            break;
+          }
+          case 120: {
+            AccessReason = (global::Google.Ads.GoogleAds.V2.Enums.AccessReasonEnum.Types.AccessReason) input.ReadEnum();
+            break;
+          }
+          case 128: {
+            AccountUserListStatus = (global::Google.Ads.GoogleAds.V2.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus) input.ReadEnum();
+            break;
+          }
+          case 138: {
+            bool? value = _single_eligibleForSearch_codec.Read(ref input);
+            if (eligibleForSearch_ == null || value != false) {
+              EligibleForSearch = value;
+            }
+            break;
+          }
+          case 146: {
+            bool? value = _single_eligibleForDisplay_codec.Read(ref input);
+            if (eligibleForDisplay_ == null || value != false) {
+              EligibleForDisplay = value;
+            }
+            break;
+          }
+          case 154: {
+            global::Google.Ads.GoogleAds.V2.Common.CrmBasedUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.CrmBasedUserListInfo();
+            if (userListCase_ == UserListOneofCase.CrmBasedUserList) {
+              subBuilder.MergeFrom(CrmBasedUserList);
+            }
+            input.ReadMessage(subBuilder);
+            CrmBasedUserList = subBuilder;
+            break;
+          }
+          case 162: {
+            global::Google.Ads.GoogleAds.V2.Common.SimilarUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.SimilarUserListInfo();
+            if (userListCase_ == UserListOneofCase.SimilarUserList) {
+              subBuilder.MergeFrom(SimilarUserList);
+            }
+            input.ReadMessage(subBuilder);
+            SimilarUserList = subBuilder;
+            break;
+          }
+          case 170: {
+            global::Google.Ads.GoogleAds.V2.Common.RuleBasedUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.RuleBasedUserListInfo();
+            if (userListCase_ == UserListOneofCase.RuleBasedUserList) {
+              subBuilder.MergeFrom(RuleBasedUserList);
+            }
+            input.ReadMessage(subBuilder);
+            RuleBasedUserList = subBuilder;
+            break;
+          }
+          case 178: {
+            global::Google.Ads.GoogleAds.V2.Common.LogicalUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.LogicalUserListInfo();
+            if (userListCase_ == UserListOneofCase.LogicalUserList) {
+              subBuilder.MergeFrom(LogicalUserList);
+            }
+            input.ReadMessage(subBuilder);
+            LogicalUserList = subBuilder;
+            break;
+          }
+          case 186: {
+            global::Google.Ads.GoogleAds.V2.Common.BasicUserListInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.BasicUserListInfo();
+            if (userListCase_ == UserListOneofCase.BasicUserList) {
+              subBuilder.MergeFrom(BasicUserList);
+            }
+            input.ReadMessage(subBuilder);
+            BasicUserList = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

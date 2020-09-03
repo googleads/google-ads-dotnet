@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Google.Ads.GoogleAds.Tests</RootNamespace>
     <AssemblyName>Google.Ads.GoogleAds.Tests</AssemblyName>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -13,19 +13,15 @@
     <AssemblyOriginatorKeyFile>..\src\GoogleAds.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Apis.Auth" Version="1.45.0" />
+    <Compile Remove="Examples\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.49.0" />
     <PackageReference Include="JunitXml.TestLogger" Version="2.1.32" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
-    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Moq" Version="4.14.1" />
+    <PackageReference Include="Moq" Version="4.14.5" />
     <PackageReference Include="NUnit" Version="3.12.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\App.config">
@@ -34,7 +30,6 @@
     <EmbeddedResource Include="Util\field_mask_tests.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\examples\Google.Ads.GoogleAds.Examples.csproj" />
     <ProjectReference Include="..\src\Google.Ads.GoogleAds.csproj" />
   </ItemGroup>
   <ItemGroup>

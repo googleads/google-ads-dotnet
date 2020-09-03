@@ -102,7 +102,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// <summary>
   /// A feed.
   /// </summary>
-  public sealed partial class Feed : pb::IMessage<Feed> {
+  public sealed partial class Feed : pb::IMessage<Feed>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Feed> _parser = new pb::MessageParser<Feed>(() => new Feed());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -361,6 +365,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -392,7 +399,45 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      attributes_.WriteTo(ref output, _repeated_attributes_codec);
+      if (Origin != global::Google.Ads.GoogleAds.V4.Enums.FeedOriginEnum.Types.FeedOrigin.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Origin);
+      }
+      if (systemFeedGenerationDataCase_ == SystemFeedGenerationDataOneofCase.PlacesLocationFeedData) {
+        output.WriteRawTag(50);
+        output.WriteMessage(PlacesLocationFeedData);
+      }
+      if (systemFeedGenerationDataCase_ == SystemFeedGenerationDataOneofCase.AffiliateLocationFeedData) {
+        output.WriteRawTag(58);
+        output.WriteMessage(AffiliateLocationFeedData);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V4.Enums.FeedStatusEnum.Types.FeedStatus.Unspecified) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) Status);
+      }
+      attributeOperations_.WriteTo(ref output, _repeated_attributeOperations_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -472,6 +517,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -532,7 +580,74 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 34: {
+            attributes_.AddEntriesFrom(ref input, _repeated_attributes_codec);
+            break;
+          }
+          case 40: {
+            Origin = (global::Google.Ads.GoogleAds.V4.Enums.FeedOriginEnum.Types.FeedOrigin) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            global::Google.Ads.GoogleAds.V4.Resources.Feed.Types.PlacesLocationFeedData subBuilder = new global::Google.Ads.GoogleAds.V4.Resources.Feed.Types.PlacesLocationFeedData();
+            if (systemFeedGenerationDataCase_ == SystemFeedGenerationDataOneofCase.PlacesLocationFeedData) {
+              subBuilder.MergeFrom(PlacesLocationFeedData);
+            }
+            input.ReadMessage(subBuilder);
+            PlacesLocationFeedData = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Google.Ads.GoogleAds.V4.Resources.Feed.Types.AffiliateLocationFeedData subBuilder = new global::Google.Ads.GoogleAds.V4.Resources.Feed.Types.AffiliateLocationFeedData();
+            if (systemFeedGenerationDataCase_ == SystemFeedGenerationDataOneofCase.AffiliateLocationFeedData) {
+              subBuilder.MergeFrom(AffiliateLocationFeedData);
+            }
+            input.ReadMessage(subBuilder);
+            AffiliateLocationFeedData = subBuilder;
+            break;
+          }
+          case 64: {
+            Status = (global::Google.Ads.GoogleAds.V4.Enums.FeedStatusEnum.Types.FeedStatus) input.ReadEnum();
+            break;
+          }
+          case 74: {
+            attributeOperations_.AddEntriesFrom(ref input, _repeated_attributeOperations_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the Feed message type.</summary>
@@ -542,7 +657,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       /// Data used to configure a location feed populated from Google My Business
       /// Locations.
       /// </summary>
-      public sealed partial class PlacesLocationFeedData : pb::IMessage<PlacesLocationFeedData> {
+      public sealed partial class PlacesLocationFeedData : pb::IMessage<PlacesLocationFeedData>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
         private static readonly pb::MessageParser<PlacesLocationFeedData> _parser = new pb::MessageParser<PlacesLocationFeedData>(() => new PlacesLocationFeedData());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -727,6 +846,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
           if (oauthInfo_ != null) {
             output.WriteRawTag(10);
             output.WriteMessage(OauthInfo);
@@ -745,7 +867,32 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (oauthInfo_ != null) {
+            output.WriteRawTag(10);
+            output.WriteMessage(OauthInfo);
+          }
+          if (emailAddress_ != null) {
+            _single_emailAddress_codec.WriteTagAndValue(ref output, EmailAddress);
+          }
+          if (businessNameFilter_ != null) {
+            _single_businessNameFilter_codec.WriteTagAndValue(ref output, BusinessNameFilter);
+          }
+          categoryFilters_.WriteTo(ref output, _repeated_categoryFilters_codec);
+          labelFilters_.WriteTo(ref output, _repeated_labelFilters_codec);
+          if (businessAccountId_ != null) {
+            _single_businessAccountId_codec.WriteTagAndValue(ref output, BusinessAccountId);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
@@ -803,6 +950,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
             switch(tag) {
@@ -847,7 +997,58 @@ namespace Google.Ads.GoogleAds.V4.Resources {
               }
             }
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                if (oauthInfo_ == null) {
+                  OauthInfo = new global::Google.Ads.GoogleAds.V4.Resources.Feed.Types.PlacesLocationFeedData.Types.OAuthInfo();
+                }
+                input.ReadMessage(OauthInfo);
+                break;
+              }
+              case 18: {
+                string value = _single_emailAddress_codec.Read(ref input);
+                if (emailAddress_ == null || value != "") {
+                  EmailAddress = value;
+                }
+                break;
+              }
+              case 34: {
+                string value = _single_businessNameFilter_codec.Read(ref input);
+                if (businessNameFilter_ == null || value != "") {
+                  BusinessNameFilter = value;
+                }
+                break;
+              }
+              case 42: {
+                categoryFilters_.AddEntriesFrom(ref input, _repeated_categoryFilters_codec);
+                break;
+              }
+              case 50: {
+                labelFilters_.AddEntriesFrom(ref input, _repeated_labelFilters_codec);
+                break;
+              }
+              case 82: {
+                string value = _single_businessAccountId_codec.Read(ref input);
+                if (businessAccountId_ == null || value != "") {
+                  BusinessAccountId = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+        #endif
 
         #region Nested types
         /// <summary>Container for nested types declared in the PlacesLocationFeedData message type.</summary>
@@ -856,7 +1057,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           /// <summary>
           /// Data used for authorization using OAuth.
           /// </summary>
-          public sealed partial class OAuthInfo : pb::IMessage<OAuthInfo> {
+          public sealed partial class OAuthInfo : pb::IMessage<OAuthInfo>
+          #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              , pb::IBufferMessage
+          #endif
+          {
             private static readonly pb::MessageParser<OAuthInfo> _parser = new pb::MessageParser<OAuthInfo>(() => new OAuthInfo());
             private pb::UnknownFieldSet _unknownFields;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -978,6 +1183,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public void WriteTo(pb::CodedOutputStream output) {
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              output.WriteRawMessage(this);
+            #else
               if (httpMethod_ != null) {
                 _single_httpMethod_codec.WriteTagAndValue(output, HttpMethod);
               }
@@ -990,7 +1198,26 @@ namespace Google.Ads.GoogleAds.V4.Resources {
               if (_unknownFields != null) {
                 _unknownFields.WriteTo(output);
               }
+            #endif
             }
+
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+              if (httpMethod_ != null) {
+                _single_httpMethod_codec.WriteTagAndValue(ref output, HttpMethod);
+              }
+              if (httpRequestUrl_ != null) {
+                _single_httpRequestUrl_codec.WriteTagAndValue(ref output, HttpRequestUrl);
+              }
+              if (httpAuthorizationHeader_ != null) {
+                _single_httpAuthorizationHeader_codec.WriteTagAndValue(ref output, HttpAuthorizationHeader);
+              }
+              if (_unknownFields != null) {
+                _unknownFields.WriteTo(ref output);
+              }
+            }
+            #endif
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public int CalculateSize() {
@@ -1035,6 +1262,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             public void MergeFrom(pb::CodedInputStream input) {
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              input.ReadRawMessage(this);
+            #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
                 switch(tag) {
@@ -1064,7 +1294,43 @@ namespace Google.Ads.GoogleAds.V4.Resources {
                   }
                 }
               }
+            #endif
             }
+
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+              uint tag;
+              while ((tag = input.ReadTag()) != 0) {
+                switch(tag) {
+                  default:
+                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                    break;
+                  case 10: {
+                    string value = _single_httpMethod_codec.Read(ref input);
+                    if (httpMethod_ == null || value != "") {
+                      HttpMethod = value;
+                    }
+                    break;
+                  }
+                  case 18: {
+                    string value = _single_httpRequestUrl_codec.Read(ref input);
+                    if (httpRequestUrl_ == null || value != "") {
+                      HttpRequestUrl = value;
+                    }
+                    break;
+                  }
+                  case 26: {
+                    string value = _single_httpAuthorizationHeader_codec.Read(ref input);
+                    if (httpAuthorizationHeader_ == null || value != "") {
+                      HttpAuthorizationHeader = value;
+                    }
+                    break;
+                  }
+                }
+              }
+            }
+            #endif
 
           }
 
@@ -1077,7 +1343,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       /// Data used to configure an affiliate location feed populated with the
       /// specified chains.
       /// </summary>
-      public sealed partial class AffiliateLocationFeedData : pb::IMessage<AffiliateLocationFeedData> {
+      public sealed partial class AffiliateLocationFeedData : pb::IMessage<AffiliateLocationFeedData>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
         private static readonly pb::MessageParser<AffiliateLocationFeedData> _parser = new pb::MessageParser<AffiliateLocationFeedData>(() => new AffiliateLocationFeedData());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1176,6 +1446,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
           chainIds_.WriteTo(output, _repeated_chainIds_codec);
           if (RelationshipType != global::Google.Ads.GoogleAds.V4.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType.Unspecified) {
             output.WriteRawTag(16);
@@ -1184,7 +1457,22 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          chainIds_.WriteTo(ref output, _repeated_chainIds_codec);
+          if (RelationshipType != global::Google.Ads.GoogleAds.V4.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType.Unspecified) {
+            output.WriteRawTag(16);
+            output.WriteEnum((int) RelationshipType);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
@@ -1213,6 +1501,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
             switch(tag) {
@@ -1229,7 +1520,30 @@ namespace Google.Ads.GoogleAds.V4.Resources {
               }
             }
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                chainIds_.AddEntriesFrom(ref input, _repeated_chainIds_codec);
+                break;
+              }
+              case 16: {
+                RelationshipType = (global::Google.Ads.GoogleAds.V4.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types.AffiliateLocationFeedRelationshipType) input.ReadEnum();
+                break;
+              }
+            }
+          }
+        }
+        #endif
 
       }
 
@@ -1244,7 +1558,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// with the same FeedAttributeId. Optionally, a FeedAttribute can be marked as
   /// being part of a FeedItem's unique key.
   /// </summary>
-  public sealed partial class FeedAttribute : pb::IMessage<FeedAttribute> {
+  public sealed partial class FeedAttribute : pb::IMessage<FeedAttribute>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FeedAttribute> _parser = new pb::MessageParser<FeedAttribute>(() => new FeedAttribute());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1386,6 +1704,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (id_ != null) {
         _single_id_codec.WriteTagAndValue(output, Id);
       }
@@ -1402,7 +1723,30 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V4.Enums.FeedAttributeTypeEnum.Types.FeedAttributeType.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Type);
+      }
+      if (isPartOfKey_ != null) {
+        _single_isPartOfKey_codec.WriteTagAndValue(ref output, IsPartOfKey);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1453,6 +1797,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1486,14 +1833,58 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 24: {
+            Type = (global::Google.Ads.GoogleAds.V4.Enums.FeedAttributeTypeEnum.Types.FeedAttributeType) input.ReadEnum();
+            break;
+          }
+          case 34: {
+            bool? value = _single_isPartOfKey_codec.Read(ref input);
+            if (isPartOfKey_ == null || value != false) {
+              IsPartOfKey = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Operation to be performed on a feed attribute list in a mutate.
   /// </summary>
-  public sealed partial class FeedAttributeOperation : pb::IMessage<FeedAttributeOperation> {
+  public sealed partial class FeedAttributeOperation : pb::IMessage<FeedAttributeOperation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FeedAttributeOperation> _parser = new pb::MessageParser<FeedAttributeOperation>(() => new FeedAttributeOperation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1592,6 +1983,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Operator != global::Google.Ads.GoogleAds.V4.Resources.FeedAttributeOperation.Types.Operator.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Operator);
@@ -1603,7 +1997,25 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Operator != global::Google.Ads.GoogleAds.V4.Resources.FeedAttributeOperation.Types.Operator.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Operator);
+      }
+      if (value_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1639,6 +2051,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1658,7 +2073,33 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Operator = (global::Google.Ads.GoogleAds.V4.Resources.FeedAttributeOperation.Types.Operator) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (value_ == null) {
+              Value = new global::Google.Ads.GoogleAds.V4.Resources.FeedAttribute();
+            }
+            input.ReadMessage(Value);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the FeedAttributeOperation message type.</summary>

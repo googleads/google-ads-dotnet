@@ -24,16 +24,21 @@ namespace Google.Ads.GoogleAds.Tests {
     static HelloReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgtIZWxsby5wcm90byIxCgxIZWxsb1JlcXVlc3QSEwoLY3VzdG9tZXJfaWQY",
-            "ASABKAkSDAoEbmFtZRgCIAEoCSI2Cg1IZWxsb1Jlc3BvbnNlEgwKBG5hbWUY",
-            "ASABKAkSFwoPcGFydGlhbF9mYWlsdXJlGAIgASgJMjYKDEhlbGxvU2Vydmlj",
-            "ZRImCgVIZWxsbxINLkhlbGxvUmVxdWVzdBoOLkhlbGxvUmVzcG9uc2VCHaoC",
-            "Gkdvb2dsZS5BZHMuR29vZ2xlQWRzLlRlc3RzYgZwcm90bzM="));
+            "CgtIZWxsby5wcm90byJmCgxIZWxsb1JlcXVlc3QSEwoLY3VzdG9tZXJfaWQY",
+            "ASABKAkSDAoEbmFtZRgCIAEoCRIQCgNhZ2UYAyABKANIAIgBARIZCgdhZGRy",
+            "ZXNzGAQgASgLMgguQWRkcmVzc0IGCgRfYWdlInIKB0FkZHJlc3MSDQoFbGlu",
+            "ZTEYASABKAkSEgoFbGluZTIYAiABKAlIAIgBARIRCgRjaXR5GAMgASgJSAGI",
+            "AQESDwoHemlwY29kZRgEIAEoAxINCgVzdGF0ZRgFIAEoCUIICgZfbGluZTJC",
+            "BwoFX2NpdHkiNgoNSGVsbG9SZXNwb25zZRIMCgRuYW1lGAEgASgJEhcKD3Bh",
+            "cnRpYWxfZmFpbHVyZRgCIAEoCTI2CgxIZWxsb1NlcnZpY2USJgoFSGVsbG8S",
+            "DS5IZWxsb1JlcXVlc3QaDi5IZWxsb1Jlc3BvbnNlQh2qAhpHb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5UZXN0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloRequest), global::Google.Ads.GoogleAds.Tests.HelloRequest.Parser, new[]{ "CustomerId", "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloResponse), global::Google.Ads.GoogleAds.Tests.HelloResponse.Parser, new[]{ "Name", "PartialFailure" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloRequest), global::Google.Ads.GoogleAds.Tests.HelloRequest.Parser, new[]{ "CustomerId", "Name", "Age", "Address" }, new[]{ "Age" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.Address), global::Google.Ads.GoogleAds.Tests.Address.Parser, new[]{ "Line1", "Line2", "City", "Zipcode", "State" }, new[]{ "Line2", "City" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloResponse), global::Google.Ads.GoogleAds.Tests.HelloResponse.Parser, new[]{ "Name", "PartialFailure" }, null, null, null, null)
           }));
     }
     #endregion
@@ -43,6 +48,7 @@ namespace Google.Ads.GoogleAds.Tests {
   public sealed partial class HelloRequest : pb::IMessage<HelloRequest> {
     private static readonly pb::MessageParser<HelloRequest> _parser = new pb::MessageParser<HelloRequest>(() => new HelloRequest());
     private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<HelloRequest> Parser { get { return _parser; } }
 
@@ -65,8 +71,11 @@ namespace Google.Ads.GoogleAds.Tests {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public HelloRequest(HelloRequest other) : this() {
+      _hasBits0 = other._hasBits0;
       customerId_ = other.customerId_;
       name_ = other.name_;
+      age_ = other.age_;
+      address_ = other.address_ != null ? other.address_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -97,6 +106,39 @@ namespace Google.Ads.GoogleAds.Tests {
       }
     }
 
+    /// <summary>Field number for the "age" field.</summary>
+    public const int AgeFieldNumber = 3;
+    private long age_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Age {
+      get { if ((_hasBits0 & 1) != 0) { return age_; } else { return 0L; } }
+      set {
+        _hasBits0 |= 1;
+        age_ = value;
+      }
+    }
+    /// <summary>Gets whether the "age" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasAge {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "age" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearAge() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "address" field.</summary>
+    public const int AddressFieldNumber = 4;
+    private global::Google.Ads.GoogleAds.Tests.Address address_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.Tests.Address Address {
+      get { return address_; }
+      set {
+        address_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as HelloRequest);
@@ -112,6 +154,8 @@ namespace Google.Ads.GoogleAds.Tests {
       }
       if (CustomerId != other.CustomerId) return false;
       if (Name != other.Name) return false;
+      if (Age != other.Age) return false;
+      if (!object.Equals(Address, other.Address)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -120,6 +164,8 @@ namespace Google.Ads.GoogleAds.Tests {
       int hash = 1;
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (HasAge) hash ^= Age.GetHashCode();
+      if (address_ != null) hash ^= Address.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -141,6 +187,14 @@ namespace Google.Ads.GoogleAds.Tests {
         output.WriteRawTag(18);
         output.WriteString(Name);
       }
+      if (HasAge) {
+        output.WriteRawTag(24);
+        output.WriteInt64(Age);
+      }
+      if (address_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Address);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -154,6 +208,12 @@ namespace Google.Ads.GoogleAds.Tests {
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (HasAge) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Age);
+      }
+      if (address_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Address);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -171,6 +231,15 @@ namespace Google.Ads.GoogleAds.Tests {
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
+      }
+      if (other.HasAge) {
+        Age = other.Age;
+      }
+      if (other.address_ != null) {
+        if (address_ == null) {
+          Address = new global::Google.Ads.GoogleAds.Tests.Address();
+        }
+        Address.MergeFrom(other.Address);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -191,6 +260,278 @@ namespace Google.Ads.GoogleAds.Tests {
             Name = input.ReadString();
             break;
           }
+          case 24: {
+            Age = input.ReadInt64();
+            break;
+          }
+          case 34: {
+            if (address_ == null) {
+              Address = new global::Google.Ads.GoogleAds.Tests.Address();
+            }
+            input.ReadMessage(Address);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Address : pb::IMessage<Address> {
+    private static readonly pb::MessageParser<Address> _parser = new pb::MessageParser<Address>(() => new Address());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Address> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Address() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Address(Address other) : this() {
+      line1_ = other.line1_;
+      line2_ = other.line2_;
+      city_ = other.city_;
+      zipcode_ = other.zipcode_;
+      state_ = other.state_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Address Clone() {
+      return new Address(this);
+    }
+
+    /// <summary>Field number for the "line1" field.</summary>
+    public const int Line1FieldNumber = 1;
+    private string line1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Line1 {
+      get { return line1_; }
+      set {
+        line1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "line2" field.</summary>
+    public const int Line2FieldNumber = 2;
+    private string line2_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Line2 {
+      get { return line2_ ?? ""; }
+      set {
+        line2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "line2" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasLine2 {
+      get { return line2_ != null; }
+    }
+    /// <summary>Clears the value of the "line2" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearLine2() {
+      line2_ = null;
+    }
+
+    /// <summary>Field number for the "city" field.</summary>
+    public const int CityFieldNumber = 3;
+    private string city_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string City {
+      get { return city_ ?? ""; }
+      set {
+        city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "city" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasCity {
+      get { return city_ != null; }
+    }
+    /// <summary>Clears the value of the "city" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearCity() {
+      city_ = null;
+    }
+
+    /// <summary>Field number for the "zipcode" field.</summary>
+    public const int ZipcodeFieldNumber = 4;
+    private long zipcode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Zipcode {
+      get { return zipcode_; }
+      set {
+        zipcode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "state" field.</summary>
+    public const int StateFieldNumber = 5;
+    private string state_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string State {
+      get { return state_; }
+      set {
+        state_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Address);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Address other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Line1 != other.Line1) return false;
+      if (Line2 != other.Line2) return false;
+      if (City != other.City) return false;
+      if (Zipcode != other.Zipcode) return false;
+      if (State != other.State) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Line1.Length != 0) hash ^= Line1.GetHashCode();
+      if (HasLine2) hash ^= Line2.GetHashCode();
+      if (HasCity) hash ^= City.GetHashCode();
+      if (Zipcode != 0L) hash ^= Zipcode.GetHashCode();
+      if (State.Length != 0) hash ^= State.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Line1.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Line1);
+      }
+      if (HasLine2) {
+        output.WriteRawTag(18);
+        output.WriteString(Line2);
+      }
+      if (HasCity) {
+        output.WriteRawTag(26);
+        output.WriteString(City);
+      }
+      if (Zipcode != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(Zipcode);
+      }
+      if (State.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(State);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Line1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Line1);
+      }
+      if (HasLine2) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Line2);
+      }
+      if (HasCity) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
+      }
+      if (Zipcode != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Zipcode);
+      }
+      if (State.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(State);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Address other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Line1.Length != 0) {
+        Line1 = other.Line1;
+      }
+      if (other.HasLine2) {
+        Line2 = other.Line2;
+      }
+      if (other.HasCity) {
+        City = other.City;
+      }
+      if (other.Zipcode != 0L) {
+        Zipcode = other.Zipcode;
+      }
+      if (other.State.Length != 0) {
+        State = other.State;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Line1 = input.ReadString();
+            break;
+          }
+          case 18: {
+            Line2 = input.ReadString();
+            break;
+          }
+          case 26: {
+            City = input.ReadString();
+            break;
+          }
+          case 32: {
+            Zipcode = input.ReadInt64();
+            break;
+          }
+          case 42: {
+            State = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -205,7 +546,7 @@ namespace Google.Ads.GoogleAds.Tests {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

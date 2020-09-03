@@ -64,7 +64,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// <summary>
   /// A dynamic search ads search term view.
   /// </summary>
-  public sealed partial class DynamicSearchAdsSearchTermView : pb::IMessage<DynamicSearchAdsSearchTermView> {
+  public sealed partial class DynamicSearchAdsSearchTermView : pb::IMessage<DynamicSearchAdsSearchTermView>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DynamicSearchAdsSearchTermView> _parser = new pb::MessageParser<DynamicSearchAdsSearchTermView>(() => new DynamicSearchAdsSearchTermView());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -296,6 +300,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -324,7 +331,42 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (searchTerm_ != null) {
+        _single_searchTerm_codec.WriteTagAndValue(ref output, SearchTerm);
+      }
+      if (headline_ != null) {
+        _single_headline_codec.WriteTagAndValue(ref output, Headline);
+      }
+      if (landingPage_ != null) {
+        _single_landingPage_codec.WriteTagAndValue(ref output, LandingPage);
+      }
+      if (pageUrl_ != null) {
+        _single_pageUrl_codec.WriteTagAndValue(ref output, PageUrl);
+      }
+      if (hasNegativeKeyword_ != null) {
+        _single_hasNegativeKeyword_codec.WriteTagAndValue(ref output, HasNegativeKeyword);
+      }
+      if (hasMatchingKeyword_ != null) {
+        _single_hasMatchingKeyword_codec.WriteTagAndValue(ref output, HasMatchingKeyword);
+      }
+      if (hasNegativeUrl_ != null) {
+        _single_hasNegativeUrl_codec.WriteTagAndValue(ref output, HasNegativeUrl);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -407,6 +449,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -468,7 +513,75 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            string value = _single_searchTerm_codec.Read(ref input);
+            if (searchTerm_ == null || value != "") {
+              SearchTerm = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_headline_codec.Read(ref input);
+            if (headline_ == null || value != "") {
+              Headline = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_landingPage_codec.Read(ref input);
+            if (landingPage_ == null || value != "") {
+              LandingPage = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_pageUrl_codec.Read(ref input);
+            if (pageUrl_ == null || value != "") {
+              PageUrl = value;
+            }
+            break;
+          }
+          case 50: {
+            bool? value = _single_hasNegativeKeyword_codec.Read(ref input);
+            if (hasNegativeKeyword_ == null || value != false) {
+              HasNegativeKeyword = value;
+            }
+            break;
+          }
+          case 58: {
+            bool? value = _single_hasMatchingKeyword_codec.Read(ref input);
+            if (hasMatchingKeyword_ == null || value != false) {
+              HasMatchingKeyword = value;
+            }
+            break;
+          }
+          case 66: {
+            bool? value = _single_hasNegativeUrl_codec.Read(ref input);
+            if (hasNegativeUrl_ == null || value != false) {
+              HasNegativeUrl = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

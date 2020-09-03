@@ -134,6 +134,11 @@ namespace Google.Ads.GoogleAds.V4.Errors
             return $"customers/{customerId}/campaigns/{campaignId}";
         }
 
+        public static string CampaignAsset(long customerId, long campaignAssetId)
+        {
+            return $"customers/{customerId}/campaignAssets/{campaignAssetId}";
+        }
+
         public static string CampaignAudienceView(long customerId, long campaignId, long criterionId)
         {
             return $"customers/{customerId}/campaignAudienceViews/{campaignId}~{criterionId}";

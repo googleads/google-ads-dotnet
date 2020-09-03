@@ -36,7 +36,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
             "L2VudW1zL3N5c3RlbV9tYW5hZ2VkX2VudGl0eV9zb3VyY2UucHJvdG8aH2dv",
             "b2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkvcmVz",
             "b3VyY2UucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoc",
-            "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLeEwoCQWQSOgoNcmVzb3Vy",
+            "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLyEwoCQWQSOgoNcmVzb3Vy",
             "Y2VfbmFtZRglIAEoCUIj4EEF+kEdChtnb29nbGVhZHMuZ29vZ2xlYXBpcy5j",
             "b20vQWQSLAoCaWQYASABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
             "ZUID4EEDEjAKCmZpbmFsX3VybHMYAiADKAsyHC5nb29nbGUucHJvdG9idWYu",
@@ -58,47 +58,47 @@ namespace Google.Ads.GoogleAds.V2.Resources {
             "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUID4EEFEocBCh5z",
             "eXN0ZW1fbWFuYWdlZF9yZXNvdXJjZV9zb3VyY2UYGyABKA4yWi5nb29nbGUu",
             "YWRzLmdvb2dsZWFkcy52Mi5lbnVtcy5TeXN0ZW1NYW5hZ2VkUmVzb3VyY2VT",
-            "b3VyY2VFbnVtLlN5c3RlbU1hbmFnZWRSZXNvdXJjZVNvdXJjZUID4EEDEj0K",
+            "b3VyY2VFbnVtLlN5c3RlbU1hbmFnZWRSZXNvdXJjZVNvdXJjZUID4EEDEkIK",
             "B3RleHRfYWQYBiABKAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5jb21t",
-            "b24uVGV4dEFkSW5mb0gAEk4KEGV4cGFuZGVkX3RleHRfYWQYByABKAsyMi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52Mi5jb21tb24uRXhwYW5kZWRUZXh0QWRJ",
-            "bmZvSAASRgoMY2FsbF9vbmx5X2FkGA0gASgLMi4uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjIuY29tbW9uLkNhbGxPbmx5QWRJbmZvSAASYQoaZXhwYW5kZWRf",
-            "ZHluYW1pY19zZWFyY2hfYWQYDiABKAsyOy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52Mi5jb21tb24uRXhwYW5kZWREeW5hbWljU2VhcmNoQWRJbmZvSAASPwoI",
-            "aG90ZWxfYWQYDyABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5jb21t",
-            "b24uSG90ZWxBZEluZm9IABJQChFzaG9wcGluZ19zbWFydF9hZBgRIAEoCzIz",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5TaG9wcGluZ1NtYXJ0",
-            "QWRJbmZvSAASVAoTc2hvcHBpbmdfcHJvZHVjdF9hZBgSIAEoCzI1Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5TaG9wcGluZ1Byb2R1Y3RBZElu",
-            "Zm9IABI/CghnbWFpbF9hZBgVIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYyLmNvbW1vbi5HbWFpbEFkSW5mb0gAEj8KCGltYWdlX2FkGBYgASgLMisu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjIuY29tbW9uLkltYWdlQWRJbmZvSAAS",
-            "PwoIdmlkZW9fYWQYGCABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5j",
-            "b21tb24uVmlkZW9BZEluZm9IABJWChRyZXNwb25zaXZlX3NlYXJjaF9hZBgZ",
-            "IAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5SZXNwb25z",
-            "aXZlU2VhcmNoQWRJbmZvSAASZQocbGVnYWN5X3Jlc3BvbnNpdmVfZGlzcGxh",
-            "eV9hZBgcIAEoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5M",
-            "ZWdhY3lSZXNwb25zaXZlRGlzcGxheUFkSW5mb0gAEjsKBmFwcF9hZBgdIAEo",
-            "CzIpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5BcHBBZEluZm9I",
-            "ABJcChVsZWdhY3lfYXBwX2luc3RhbGxfYWQYHiABKAsyNi5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52Mi5jb21tb24uTGVnYWN5QXBwSW5zdGFsbEFkSW5mb0ID",
-            "4EEFSAASWAoVcmVzcG9uc2l2ZV9kaXNwbGF5X2FkGB8gASgLMjcuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjIuY29tbW9uLlJlc3BvbnNpdmVEaXNwbGF5QWRJ",
-            "bmZvSAASUAoRZGlzcGxheV91cGxvYWRfYWQYISABKAsyMy5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52Mi5jb21tb24uRGlzcGxheVVwbG9hZEFkSW5mb0gAElAK",
-            "EWFwcF9lbmdhZ2VtZW50X2FkGCIgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjIuY29tbW9uLkFwcEVuZ2FnZW1lbnRBZEluZm9IABJpCh5zaG9wcGlu",
-            "Z19jb21wYXJpc29uX2xpc3RpbmdfYWQYJCABKAsyPy5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52Mi5jb21tb24uU2hvcHBpbmdDb21wYXJpc29uTGlzdGluZ0Fk",
-            "SW5mb0gAOj/qQTwKG2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BZBIdY3Vz",
-            "dG9tZXJzL3tjdXN0b21lcn0vYWRzL3thZH1CCQoHYWRfZGF0YUL0AQolY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLnJlc291cmNlc0IHQWRQcm90b1AB",
-            "Wkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjIvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIUdvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYyLlJlc291cmNlc8oCIUdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYyXFJlc291cmNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
-            "OlYyOjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "b24uVGV4dEFkSW5mb0ID4EEFSAASTgoQZXhwYW5kZWRfdGV4dF9hZBgHIAEo",
+            "CzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5FeHBhbmRlZFRl",
+            "eHRBZEluZm9IABJGCgxjYWxsX29ubHlfYWQYDSABKAsyLi5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52Mi5jb21tb24uQ2FsbE9ubHlBZEluZm9IABJmChpleHBh",
+            "bmRlZF9keW5hbWljX3NlYXJjaF9hZBgOIAEoCzI7Lmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYyLmNvbW1vbi5FeHBhbmRlZER5bmFtaWNTZWFyY2hBZEluZm9C",
+            "A+BBBUgAEj8KCGhvdGVsX2FkGA8gASgLMisuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjIuY29tbW9uLkhvdGVsQWRJbmZvSAASUAoRc2hvcHBpbmdfc21hcnRf",
+            "YWQYESABKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5jb21tb24uU2hv",
+            "cHBpbmdTbWFydEFkSW5mb0gAElQKE3Nob3BwaW5nX3Byb2R1Y3RfYWQYEiAB",
+            "KAsyNS5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5jb21tb24uU2hvcHBpbmdQ",
+            "cm9kdWN0QWRJbmZvSAASRAoIZ21haWxfYWQYFSABKAsyKy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52Mi5jb21tb24uR21haWxBZEluZm9CA+BBBUgAEkQKCGlt",
+            "YWdlX2FkGBYgASgLMisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIuY29tbW9u",
+            "LkltYWdlQWRJbmZvQgPgQQVIABI/Cgh2aWRlb19hZBgYIAEoCzIrLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5WaWRlb0FkSW5mb0gAElYKFHJl",
+            "c3BvbnNpdmVfc2VhcmNoX2FkGBkgASgLMjYuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjIuY29tbW9uLlJlc3BvbnNpdmVTZWFyY2hBZEluZm9IABJlChxsZWdh",
+            "Y3lfcmVzcG9uc2l2ZV9kaXNwbGF5X2FkGBwgASgLMj0uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjIuY29tbW9uLkxlZ2FjeVJlc3BvbnNpdmVEaXNwbGF5QWRJ",
+            "bmZvSAASOwoGYXBwX2FkGB0gASgLMikuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djIuY29tbW9uLkFwcEFkSW5mb0gAElwKFWxlZ2FjeV9hcHBfaW5zdGFsbF9h",
+            "ZBgeIAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5MZWdh",
+            "Y3lBcHBJbnN0YWxsQWRJbmZvQgPgQQVIABJYChVyZXNwb25zaXZlX2Rpc3Bs",
+            "YXlfYWQYHyABKAsyNy5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5jb21tb24u",
+            "UmVzcG9uc2l2ZURpc3BsYXlBZEluZm9IABJQChFkaXNwbGF5X3VwbG9hZF9h",
+            "ZBghIAEoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5EaXNw",
+            "bGF5VXBsb2FkQWRJbmZvSAASUAoRYXBwX2VuZ2FnZW1lbnRfYWQYIiABKAsy",
+            "My5nb29nbGUuYWRzLmdvb2dsZWFkcy52Mi5jb21tb24uQXBwRW5nYWdlbWVu",
+            "dEFkSW5mb0gAEmkKHnNob3BwaW5nX2NvbXBhcmlzb25fbGlzdGluZ19hZBgk",
+            "IAEoCzI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyLmNvbW1vbi5TaG9wcGlu",
+            "Z0NvbXBhcmlzb25MaXN0aW5nQWRJbmZvSAA6P+pBPAobZ29vZ2xlYWRzLmdv",
+            "b2dsZWFwaXMuY29tL0FkEh1jdXN0b21lcnMve2N1c3RvbWVyfS9hZHMve2Fk",
+            "fUIJCgdhZF9kYXRhQvQBCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIu",
+            "cmVzb3VyY2VzQgdBZFByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
+            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92Mi9yZXNvdXJjZXM7cmVz",
+            "b3VyY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIuUmVzb3Vy",
+            "Y2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjJcUmVzb3VyY2Vz6gIlR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjI6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V2.Common.AdTypeInfosReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Common.FinalAppUrlReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Common.UrlCollectionReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.AdTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V2.Enums.SystemManagedEntitySourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -112,7 +112,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   /// <summary>
   /// An ad.
   /// </summary>
-  public sealed partial class Ad : pb::IMessage<Ad> {
+  public sealed partial class Ad : pb::IMessage<Ad>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Ad> _parser = new pb::MessageParser<Ad>(() => new Ad());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -456,7 +460,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     /// <summary>Field number for the "text_ad" field.</summary>
     public const int TextAdFieldNumber = 6;
     /// <summary>
-    /// Details pertaining to a text ad.
+    /// Immutable. Details pertaining to a text ad.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V2.Common.TextAdInfo TextAd {
@@ -498,7 +502,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     /// <summary>Field number for the "expanded_dynamic_search_ad" field.</summary>
     public const int ExpandedDynamicSearchAdFieldNumber = 14;
     /// <summary>
-    /// Details pertaining to an Expanded Dynamic Search Ad.
+    /// Immutable. Details pertaining to an Expanded Dynamic Search Ad.
     /// This type of ad has its headline, final URLs, and display URL
     /// auto-generated at serving time according to domain name specific
     /// information provided by `dynamic_search_ads_setting` linked at the
@@ -558,7 +562,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     /// <summary>Field number for the "gmail_ad" field.</summary>
     public const int GmailAdFieldNumber = 21;
     /// <summary>
-    /// Details pertaining to a Gmail ad.
+    /// Immutable. Details pertaining to a Gmail ad.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V2.Common.GmailAdInfo GmailAd {
@@ -572,7 +576,7 @@ namespace Google.Ads.GoogleAds.V2.Resources {
     /// <summary>Field number for the "image_ad" field.</summary>
     public const int ImageAdFieldNumber = 22;
     /// <summary>
-    /// Details pertaining to an Image ad.
+    /// Immutable. Details pertaining to an Image ad.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V2.Common.ImageAdInfo ImageAd {
@@ -844,6 +848,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (id_ != null) {
         _single_id_codec.WriteTagAndValue(output, Id);
       }
@@ -958,7 +965,128 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      finalUrls_.WriteTo(ref output, _repeated_finalUrls_codec);
+      if (displayUrl_ != null) {
+        _single_displayUrl_codec.WriteTagAndValue(ref output, DisplayUrl);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V2.Enums.AdTypeEnum.Types.AdType.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Type);
+      }
+      if (adDataCase_ == AdDataOneofCase.TextAd) {
+        output.WriteRawTag(50);
+        output.WriteMessage(TextAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.ExpandedTextAd) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ExpandedTextAd);
+      }
+      urlCustomParameters_.WriteTo(ref output, _repeated_urlCustomParameters_codec);
+      if (trackingUrlTemplate_ != null) {
+        _single_trackingUrlTemplate_codec.WriteTagAndValue(ref output, TrackingUrlTemplate);
+      }
+      if (adDataCase_ == AdDataOneofCase.CallOnlyAd) {
+        output.WriteRawTag(106);
+        output.WriteMessage(CallOnlyAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.ExpandedDynamicSearchAd) {
+        output.WriteRawTag(114);
+        output.WriteMessage(ExpandedDynamicSearchAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.HotelAd) {
+        output.WriteRawTag(122);
+        output.WriteMessage(HotelAd);
+      }
+      finalMobileUrls_.WriteTo(ref output, _repeated_finalMobileUrls_codec);
+      if (adDataCase_ == AdDataOneofCase.ShoppingSmartAd) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(ShoppingSmartAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.ShoppingProductAd) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(ShoppingProductAd);
+      }
+      if (addedByGoogleAds_ != null) {
+        _single_addedByGoogleAds_codec.WriteTagAndValue(ref output, AddedByGoogleAds);
+      }
+      if (DevicePreference != global::Google.Ads.GoogleAds.V2.Enums.DeviceEnum.Types.Device.Unspecified) {
+        output.WriteRawTag(160, 1);
+        output.WriteEnum((int) DevicePreference);
+      }
+      if (adDataCase_ == AdDataOneofCase.GmailAd) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(GmailAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.ImageAd) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(ImageAd);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (adDataCase_ == AdDataOneofCase.VideoAd) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(VideoAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.ResponsiveSearchAd) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(ResponsiveSearchAd);
+      }
+      urlCollections_.WriteTo(ref output, _repeated_urlCollections_codec);
+      if (SystemManagedResourceSource != global::Google.Ads.GoogleAds.V2.Enums.SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource.Unspecified) {
+        output.WriteRawTag(216, 1);
+        output.WriteEnum((int) SystemManagedResourceSource);
+      }
+      if (adDataCase_ == AdDataOneofCase.LegacyResponsiveDisplayAd) {
+        output.WriteRawTag(226, 1);
+        output.WriteMessage(LegacyResponsiveDisplayAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.AppAd) {
+        output.WriteRawTag(234, 1);
+        output.WriteMessage(AppAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.LegacyAppInstallAd) {
+        output.WriteRawTag(242, 1);
+        output.WriteMessage(LegacyAppInstallAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) {
+        output.WriteRawTag(250, 1);
+        output.WriteMessage(ResponsiveDisplayAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.DisplayUploadAd) {
+        output.WriteRawTag(138, 2);
+        output.WriteMessage(DisplayUploadAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.AppEngagementAd) {
+        output.WriteRawTag(146, 2);
+        output.WriteMessage(AppEngagementAd);
+      }
+      finalAppUrls_.WriteTo(ref output, _repeated_finalAppUrls_codec);
+      if (adDataCase_ == AdDataOneofCase.ShoppingComparisonListingAd) {
+        output.WriteRawTag(162, 2);
+        output.WriteMessage(ShoppingComparisonListingAd);
+      }
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(170, 2);
+        output.WriteString(ResourceName);
+      }
+      if (finalUrlSuffix_ != null) {
+        _single_finalUrlSuffix_codec.WriteTagAndValue(ref output, FinalUrlSuffix);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1226,6 +1354,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1474,7 +1605,262 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 18: {
+            finalUrls_.AddEntriesFrom(ref input, _repeated_finalUrls_codec);
+            break;
+          }
+          case 34: {
+            string value = _single_displayUrl_codec.Read(ref input);
+            if (displayUrl_ == null || value != "") {
+              DisplayUrl = value;
+            }
+            break;
+          }
+          case 40: {
+            Type = (global::Google.Ads.GoogleAds.V2.Enums.AdTypeEnum.Types.AdType) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            global::Google.Ads.GoogleAds.V2.Common.TextAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.TextAdInfo();
+            if (adDataCase_ == AdDataOneofCase.TextAd) {
+              subBuilder.MergeFrom(TextAd);
+            }
+            input.ReadMessage(subBuilder);
+            TextAd = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Google.Ads.GoogleAds.V2.Common.ExpandedTextAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ExpandedTextAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ExpandedTextAd) {
+              subBuilder.MergeFrom(ExpandedTextAd);
+            }
+            input.ReadMessage(subBuilder);
+            ExpandedTextAd = subBuilder;
+            break;
+          }
+          case 82: {
+            urlCustomParameters_.AddEntriesFrom(ref input, _repeated_urlCustomParameters_codec);
+            break;
+          }
+          case 98: {
+            string value = _single_trackingUrlTemplate_codec.Read(ref input);
+            if (trackingUrlTemplate_ == null || value != "") {
+              TrackingUrlTemplate = value;
+            }
+            break;
+          }
+          case 106: {
+            global::Google.Ads.GoogleAds.V2.Common.CallOnlyAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.CallOnlyAdInfo();
+            if (adDataCase_ == AdDataOneofCase.CallOnlyAd) {
+              subBuilder.MergeFrom(CallOnlyAd);
+            }
+            input.ReadMessage(subBuilder);
+            CallOnlyAd = subBuilder;
+            break;
+          }
+          case 114: {
+            global::Google.Ads.GoogleAds.V2.Common.ExpandedDynamicSearchAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ExpandedDynamicSearchAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ExpandedDynamicSearchAd) {
+              subBuilder.MergeFrom(ExpandedDynamicSearchAd);
+            }
+            input.ReadMessage(subBuilder);
+            ExpandedDynamicSearchAd = subBuilder;
+            break;
+          }
+          case 122: {
+            global::Google.Ads.GoogleAds.V2.Common.HotelAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.HotelAdInfo();
+            if (adDataCase_ == AdDataOneofCase.HotelAd) {
+              subBuilder.MergeFrom(HotelAd);
+            }
+            input.ReadMessage(subBuilder);
+            HotelAd = subBuilder;
+            break;
+          }
+          case 130: {
+            finalMobileUrls_.AddEntriesFrom(ref input, _repeated_finalMobileUrls_codec);
+            break;
+          }
+          case 138: {
+            global::Google.Ads.GoogleAds.V2.Common.ShoppingSmartAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ShoppingSmartAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ShoppingSmartAd) {
+              subBuilder.MergeFrom(ShoppingSmartAd);
+            }
+            input.ReadMessage(subBuilder);
+            ShoppingSmartAd = subBuilder;
+            break;
+          }
+          case 146: {
+            global::Google.Ads.GoogleAds.V2.Common.ShoppingProductAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ShoppingProductAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ShoppingProductAd) {
+              subBuilder.MergeFrom(ShoppingProductAd);
+            }
+            input.ReadMessage(subBuilder);
+            ShoppingProductAd = subBuilder;
+            break;
+          }
+          case 154: {
+            bool? value = _single_addedByGoogleAds_codec.Read(ref input);
+            if (addedByGoogleAds_ == null || value != false) {
+              AddedByGoogleAds = value;
+            }
+            break;
+          }
+          case 160: {
+            DevicePreference = (global::Google.Ads.GoogleAds.V2.Enums.DeviceEnum.Types.Device) input.ReadEnum();
+            break;
+          }
+          case 170: {
+            global::Google.Ads.GoogleAds.V2.Common.GmailAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.GmailAdInfo();
+            if (adDataCase_ == AdDataOneofCase.GmailAd) {
+              subBuilder.MergeFrom(GmailAd);
+            }
+            input.ReadMessage(subBuilder);
+            GmailAd = subBuilder;
+            break;
+          }
+          case 178: {
+            global::Google.Ads.GoogleAds.V2.Common.ImageAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ImageAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ImageAd) {
+              subBuilder.MergeFrom(ImageAd);
+            }
+            input.ReadMessage(subBuilder);
+            ImageAd = subBuilder;
+            break;
+          }
+          case 186: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 194: {
+            global::Google.Ads.GoogleAds.V2.Common.VideoAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.VideoAdInfo();
+            if (adDataCase_ == AdDataOneofCase.VideoAd) {
+              subBuilder.MergeFrom(VideoAd);
+            }
+            input.ReadMessage(subBuilder);
+            VideoAd = subBuilder;
+            break;
+          }
+          case 202: {
+            global::Google.Ads.GoogleAds.V2.Common.ResponsiveSearchAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ResponsiveSearchAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ResponsiveSearchAd) {
+              subBuilder.MergeFrom(ResponsiveSearchAd);
+            }
+            input.ReadMessage(subBuilder);
+            ResponsiveSearchAd = subBuilder;
+            break;
+          }
+          case 210: {
+            urlCollections_.AddEntriesFrom(ref input, _repeated_urlCollections_codec);
+            break;
+          }
+          case 216: {
+            SystemManagedResourceSource = (global::Google.Ads.GoogleAds.V2.Enums.SystemManagedResourceSourceEnum.Types.SystemManagedResourceSource) input.ReadEnum();
+            break;
+          }
+          case 226: {
+            global::Google.Ads.GoogleAds.V2.Common.LegacyResponsiveDisplayAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.LegacyResponsiveDisplayAdInfo();
+            if (adDataCase_ == AdDataOneofCase.LegacyResponsiveDisplayAd) {
+              subBuilder.MergeFrom(LegacyResponsiveDisplayAd);
+            }
+            input.ReadMessage(subBuilder);
+            LegacyResponsiveDisplayAd = subBuilder;
+            break;
+          }
+          case 234: {
+            global::Google.Ads.GoogleAds.V2.Common.AppAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.AppAdInfo();
+            if (adDataCase_ == AdDataOneofCase.AppAd) {
+              subBuilder.MergeFrom(AppAd);
+            }
+            input.ReadMessage(subBuilder);
+            AppAd = subBuilder;
+            break;
+          }
+          case 242: {
+            global::Google.Ads.GoogleAds.V2.Common.LegacyAppInstallAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.LegacyAppInstallAdInfo();
+            if (adDataCase_ == AdDataOneofCase.LegacyAppInstallAd) {
+              subBuilder.MergeFrom(LegacyAppInstallAd);
+            }
+            input.ReadMessage(subBuilder);
+            LegacyAppInstallAd = subBuilder;
+            break;
+          }
+          case 250: {
+            global::Google.Ads.GoogleAds.V2.Common.ResponsiveDisplayAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ResponsiveDisplayAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ResponsiveDisplayAd) {
+              subBuilder.MergeFrom(ResponsiveDisplayAd);
+            }
+            input.ReadMessage(subBuilder);
+            ResponsiveDisplayAd = subBuilder;
+            break;
+          }
+          case 266: {
+            global::Google.Ads.GoogleAds.V2.Common.DisplayUploadAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.DisplayUploadAdInfo();
+            if (adDataCase_ == AdDataOneofCase.DisplayUploadAd) {
+              subBuilder.MergeFrom(DisplayUploadAd);
+            }
+            input.ReadMessage(subBuilder);
+            DisplayUploadAd = subBuilder;
+            break;
+          }
+          case 274: {
+            global::Google.Ads.GoogleAds.V2.Common.AppEngagementAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.AppEngagementAdInfo();
+            if (adDataCase_ == AdDataOneofCase.AppEngagementAd) {
+              subBuilder.MergeFrom(AppEngagementAd);
+            }
+            input.ReadMessage(subBuilder);
+            AppEngagementAd = subBuilder;
+            break;
+          }
+          case 282: {
+            finalAppUrls_.AddEntriesFrom(ref input, _repeated_finalAppUrls_codec);
+            break;
+          }
+          case 290: {
+            global::Google.Ads.GoogleAds.V2.Common.ShoppingComparisonListingAdInfo subBuilder = new global::Google.Ads.GoogleAds.V2.Common.ShoppingComparisonListingAdInfo();
+            if (adDataCase_ == AdDataOneofCase.ShoppingComparisonListingAd) {
+              subBuilder.MergeFrom(ShoppingComparisonListingAd);
+            }
+            input.ReadMessage(subBuilder);
+            ShoppingComparisonListingAd = subBuilder;
+            break;
+          }
+          case 298: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 306: {
+            string value = _single_finalUrlSuffix_codec.Read(ref input);
+            if (finalUrlSuffix_ == null || value != "") {
+              FinalUrlSuffix = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Examples
         }
 
         /// <summary>
-        /// Gets the name of the code example, including the version name. E.g. V4.GetCampaigns.
+        /// Gets the name of the code example, including the version name. E.g. V5.GetCampaigns.
         /// </summary>
         public virtual string VersionedName
         {

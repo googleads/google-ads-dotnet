@@ -42,6 +42,7 @@ function dotnet_library::install_dotnet() {
   sudo apt-get install apt-transport-https -y
   sudo apt-get update
   sudo apt-get install dotnet-sdk-3.1 -y
+
   # "Verify dotnet install"
   dotnet --info
 }
@@ -62,11 +63,16 @@ function dotnet_library::build_library() {
       --source "https://api.nuget.org/v3/index.json;${DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH}" \
       "${DOTNET_CLIENT_LIBRARY_PATH}/examples/Google.Ads.GoogleAds.Examples.csproj"
 
-  echo "Run the tests."
+  echo "Build the tests."
   echo "=============="
   dotnet build --configuration Release  \
       --source "https://api.nuget.org/v3/index.json;${DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH}" \
       "${DOTNET_CLIENT_LIBRARY_PATH}/tests/Google.Ads.GoogleAds.Tests.csproj"
+
+  echo "Run the smoke tests."
+  echo "==================="
+  dotnet test "${DOTNET_CLIENT_LIBRARY_PATH}/tests/bin/Release/netcoreapp3.1/Google.Ads.GoogleAds.Tests.dll" \
+      -v d --filter TestCategory=Smoke
 }
 
 dotnet_library::main

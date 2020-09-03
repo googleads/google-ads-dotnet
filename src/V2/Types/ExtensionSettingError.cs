@@ -103,7 +103,11 @@ namespace Google.Ads.GoogleAds.V2.Errors {
   /// <summary>
   /// Container for enum describing validation errors of extension settings.
   /// </summary>
-  public sealed partial class ExtensionSettingErrorEnum : pb::IMessage<ExtensionSettingErrorEnum> {
+  public sealed partial class ExtensionSettingErrorEnum : pb::IMessage<ExtensionSettingErrorEnum>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ExtensionSettingErrorEnum> _parser = new pb::MessageParser<ExtensionSettingErrorEnum>(() => new ExtensionSettingErrorEnum());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -168,10 +172,23 @@ namespace Google.Ads.GoogleAds.V2.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -192,6 +209,9 @@ namespace Google.Ads.GoogleAds.V2.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -200,7 +220,22 @@ namespace Google.Ads.GoogleAds.V2.Errors {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the ExtensionSettingErrorEnum message type.</summary>
@@ -335,7 +370,8 @@ namespace Google.Ads.GoogleAds.V2.Errors {
         /// </summary>
         [pbr::OriginalName("INVALID_CALL_CONVERSION_TYPE_ID")] InvalidCallConversionTypeId = 28,
         /// <summary>
-        /// For a call extension, the customer is not whitelisted for call tracking.
+        /// For a call extension, the customer is not on the allow-list for call
+        /// tracking.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_WHITELISTED_FOR_CALLTRACKING")] CustomerNotWhitelistedForCalltracking = 29,
         /// <summary>
@@ -356,7 +392,7 @@ namespace Google.Ads.GoogleAds.V2.Errors {
         /// </summary>
         [pbr::OriginalName("HYPHENS_IN_REVIEW_EXTENSION_SNIPPET")] HyphensInReviewExtensionSnippet = 33,
         /// <summary>
-        /// A blacklisted review source name or url was provided for a review
+        /// A blocked review source name or url was provided for a review
         /// extension.
         /// </summary>
         [pbr::OriginalName("REVIEW_EXTENSION_SOURCE_NOT_ELIGIBLE")] ReviewExtensionSourceNotEligible = 34,

@@ -138,6 +138,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ads.
+    /// </remarks>
     public abstract partial class AdServiceClient
     {
         /// <summary>
@@ -312,7 +315,8 @@ namespace Google.Ads.GoogleAds.V2.Services
             GetAdAsync(resourceName, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Updates ads. Operation statuses are returned.
+        /// Updates ads. Operation statuses are returned. Updating ads is not supported
+        /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -321,7 +325,8 @@ namespace Google.Ads.GoogleAds.V2.Services
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Updates ads. Operation statuses are returned.
+        /// Updates ads. Operation statuses are returned. Updating ads is not supported
+        /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -330,7 +335,8 @@ namespace Google.Ads.GoogleAds.V2.Services
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Updates ads. Operation statuses are returned.
+        /// Updates ads. Operation statuses are returned. Updating ads is not supported
+        /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
@@ -339,7 +345,8 @@ namespace Google.Ads.GoogleAds.V2.Services
             MutateAdsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Updates ads. Operation statuses are returned.
+        /// Updates ads. Operation statuses are returned. Updating ads is not supported
+        /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
         /// </summary>
         /// <param name="customerId">
         /// Required. The ID of the customer whose ads are being modified.
@@ -360,7 +367,8 @@ namespace Google.Ads.GoogleAds.V2.Services
             }, callSettings);
 
         /// <summary>
-        /// Updates ads. Operation statuses are returned.
+        /// Updates ads. Operation statuses are returned. Updating ads is not supported
+        /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
         /// </summary>
         /// <param name="customerId">
         /// Required. The ID of the customer whose ads are being modified.
@@ -381,7 +389,8 @@ namespace Google.Ads.GoogleAds.V2.Services
             }, callSettings);
 
         /// <summary>
-        /// Updates ads. Operation statuses are returned.
+        /// Updates ads. Operation statuses are returned. Updating ads is not supported
+        /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
         /// </summary>
         /// <param name="customerId">
         /// Required. The ID of the customer whose ads are being modified.
@@ -396,6 +405,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ads.
+    /// </remarks>
     public sealed partial class AdServiceClientImpl : AdServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdRequest, gagvr::Ad> _callGetAd;
@@ -461,7 +473,8 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Updates ads. Operation statuses are returned.
+        /// Updates ads. Operation statuses are returned. Updating ads is not supported
+        /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -473,7 +486,8 @@ namespace Google.Ads.GoogleAds.V2.Services
         }
 
         /// <summary>
-        /// Updates ads. Operation statuses are returned.
+        /// Updates ads. Operation statuses are returned. Updating ads is not supported
+        /// for TextAd, ExpandedDynamicSearchAd, GmailAd and ImageAd.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>

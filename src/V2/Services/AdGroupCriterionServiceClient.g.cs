@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupCriterionService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group criteria.
+    /// </remarks>
     public abstract partial class AdGroupCriterionServiceClient
     {
         /// <summary>
@@ -404,6 +407,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupCriterionService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group criteria.
+    /// </remarks>
     public sealed partial class AdGroupCriterionServiceClientImpl : AdGroupCriterionServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupCriterionRequest, gagvr::AdGroupCriterion> _callGetAdGroupCriterion;

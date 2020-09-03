@@ -480,7 +480,11 @@ namespace Google.Ads.GoogleAds.V4.Errors {
   /// Describes how a GoogleAds API call failed. It's returned inside
   /// google.rpc.Status.details when a call fails.
   /// </summary>
-  public sealed partial class GoogleAdsFailure : pb::IMessage<GoogleAdsFailure> {
+  public sealed partial class GoogleAdsFailure : pb::IMessage<GoogleAdsFailure>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GoogleAdsFailure> _parser = new pb::MessageParser<GoogleAdsFailure>(() => new GoogleAdsFailure());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -561,11 +565,25 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       errors_.WriteTo(output, _repeated_errors_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      errors_.WriteTo(ref output, _repeated_errors_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -588,6 +606,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -600,14 +621,37 @@ namespace Google.Ads.GoogleAds.V4.Errors {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            errors_.AddEntriesFrom(ref input, _repeated_errors_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// GoogleAds-specific error.
   /// </summary>
-  public sealed partial class GoogleAdsError : pb::IMessage<GoogleAdsError> {
+  public sealed partial class GoogleAdsError : pb::IMessage<GoogleAdsError>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GoogleAdsError> _parser = new pb::MessageParser<GoogleAdsError>(() => new GoogleAdsError());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -758,6 +802,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (errorCode_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ErrorCode);
@@ -781,7 +828,37 @@ namespace Google.Ads.GoogleAds.V4.Errors {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (errorCode_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ErrorCode);
+      }
+      if (Message.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Message);
+      }
+      if (trigger_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Trigger);
+      }
+      if (location_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Location);
+      }
+      if (details_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Details);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -844,6 +921,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -884,14 +964,65 @@ namespace Google.Ads.GoogleAds.V4.Errors {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (errorCode_ == null) {
+              ErrorCode = new global::Google.Ads.GoogleAds.V4.Errors.ErrorCode();
+            }
+            input.ReadMessage(ErrorCode);
+            break;
+          }
+          case 18: {
+            Message = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (trigger_ == null) {
+              Trigger = new global::Google.Ads.GoogleAds.V4.Common.Value();
+            }
+            input.ReadMessage(Trigger);
+            break;
+          }
+          case 34: {
+            if (location_ == null) {
+              Location = new global::Google.Ads.GoogleAds.V4.Errors.ErrorLocation();
+            }
+            input.ReadMessage(Location);
+            break;
+          }
+          case 42: {
+            if (details_ == null) {
+              Details = new global::Google.Ads.GoogleAds.V4.Errors.ErrorDetails();
+            }
+            input.ReadMessage(Details);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// The error reason represented by type and enum.
   /// </summary>
-  public sealed partial class ErrorCode : pb::IMessage<ErrorCode> {
+  public sealed partial class ErrorCode : pb::IMessage<ErrorCode>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ErrorCode> _parser = new pb::MessageParser<ErrorCode>(() => new ErrorCode());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3198,6 +3329,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (errorCodeCase_ == ErrorCodeOneofCase.RequestError) {
         output.WriteRawTag(8);
         output.WriteEnum((int) RequestError);
@@ -3645,7 +3779,461 @@ namespace Google.Ads.GoogleAds.V4.Errors {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (errorCodeCase_ == ErrorCodeOneofCase.RequestError) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) RequestError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.BiddingStrategyError) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) BiddingStrategyError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.UrlFieldError) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) UrlFieldError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ListOperationError) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) ListOperationError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.QueryError) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) QueryError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.MutateError) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) MutateError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FieldMaskError) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) FieldMaskError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AuthorizationError) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) AuthorizationError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.InternalError) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) InternalError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.QuotaError) {
+        output.WriteRawTag(88);
+        output.WriteEnum((int) QuotaError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdError) {
+        output.WriteRawTag(96);
+        output.WriteEnum((int) AdError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdGroupError) {
+        output.WriteRawTag(104);
+        output.WriteEnum((int) AdGroupError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignBudgetError) {
+        output.WriteRawTag(112);
+        output.WriteEnum((int) CampaignBudgetError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignError) {
+        output.WriteRawTag(120);
+        output.WriteEnum((int) CampaignError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AuthenticationError) {
+        output.WriteRawTag(136, 1);
+        output.WriteEnum((int) AuthenticationError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdGroupCriterionError) {
+        output.WriteRawTag(144, 1);
+        output.WriteEnum((int) AdGroupCriterionError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdCustomizerError) {
+        output.WriteRawTag(152, 1);
+        output.WriteEnum((int) AdCustomizerError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdGroupAdError) {
+        output.WriteRawTag(168, 1);
+        output.WriteEnum((int) AdGroupAdError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdSharingError) {
+        output.WriteRawTag(192, 1);
+        output.WriteEnum((int) AdSharingError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdxError) {
+        output.WriteRawTag(200, 1);
+        output.WriteEnum((int) AdxError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.BiddingError) {
+        output.WriteRawTag(208, 1);
+        output.WriteEnum((int) BiddingError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignCriterionError) {
+        output.WriteRawTag(232, 1);
+        output.WriteEnum((int) CampaignCriterionError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CollectionSizeError) {
+        output.WriteRawTag(248, 1);
+        output.WriteEnum((int) CollectionSizeError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CriterionError) {
+        output.WriteRawTag(128, 2);
+        output.WriteEnum((int) CriterionError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.DateError) {
+        output.WriteRawTag(136, 2);
+        output.WriteEnum((int) DateError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.DateRangeError) {
+        output.WriteRawTag(144, 2);
+        output.WriteEnum((int) DateRangeError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.DistinctError) {
+        output.WriteRawTag(152, 2);
+        output.WriteEnum((int) DistinctError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedAttributeReferenceError) {
+        output.WriteRawTag(160, 2);
+        output.WriteEnum((int) FeedAttributeReferenceError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FunctionError) {
+        output.WriteRawTag(168, 2);
+        output.WriteEnum((int) FunctionError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FunctionParsingError) {
+        output.WriteRawTag(176, 2);
+        output.WriteEnum((int) FunctionParsingError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.IdError) {
+        output.WriteRawTag(184, 2);
+        output.WriteEnum((int) IdError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ImageError) {
+        output.WriteRawTag(192, 2);
+        output.WriteEnum((int) ImageError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.MediaBundleError) {
+        output.WriteRawTag(208, 2);
+        output.WriteEnum((int) MediaBundleError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.MultiplierError) {
+        output.WriteRawTag(224, 2);
+        output.WriteEnum((int) MultiplierError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.NewResourceCreationError) {
+        output.WriteRawTag(232, 2);
+        output.WriteEnum((int) NewResourceCreationError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.NotEmptyError) {
+        output.WriteRawTag(240, 2);
+        output.WriteEnum((int) NotEmptyError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.NullError) {
+        output.WriteRawTag(248, 2);
+        output.WriteEnum((int) NullError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.OperatorError) {
+        output.WriteRawTag(128, 3);
+        output.WriteEnum((int) OperatorError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.RangeError) {
+        output.WriteRawTag(136, 3);
+        output.WriteEnum((int) RangeError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.RegionCodeError) {
+        output.WriteRawTag(152, 3);
+        output.WriteEnum((int) RegionCodeError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.SettingError) {
+        output.WriteRawTag(160, 3);
+        output.WriteEnum((int) SettingError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.StringFormatError) {
+        output.WriteRawTag(168, 3);
+        output.WriteEnum((int) StringFormatError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.StringLengthError) {
+        output.WriteRawTag(176, 3);
+        output.WriteEnum((int) StringLengthError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.OperationAccessDeniedError) {
+        output.WriteRawTag(184, 3);
+        output.WriteEnum((int) OperationAccessDeniedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ResourceAccessDeniedError) {
+        output.WriteRawTag(192, 3);
+        output.WriteEnum((int) ResourceAccessDeniedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ResourceCountLimitExceededError) {
+        output.WriteRawTag(200, 3);
+        output.WriteEnum((int) ResourceCountLimitExceededError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.RecommendationError) {
+        output.WriteRawTag(208, 3);
+        output.WriteEnum((int) RecommendationError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdGroupBidModifierError) {
+        output.WriteRawTag(216, 3);
+        output.WriteEnum((int) AdGroupBidModifierError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ContextError) {
+        output.WriteRawTag(224, 3);
+        output.WriteEnum((int) ContextError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FieldError) {
+        output.WriteRawTag(232, 3);
+        output.WriteEnum((int) FieldError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.SharedSetError) {
+        output.WriteRawTag(240, 3);
+        output.WriteEnum((int) SharedSetError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.SharedCriterionError) {
+        output.WriteRawTag(248, 3);
+        output.WriteEnum((int) SharedCriterionError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignSharedSetError) {
+        output.WriteRawTag(128, 4);
+        output.WriteEnum((int) CampaignSharedSetError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ConversionActionError) {
+        output.WriteRawTag(136, 4);
+        output.WriteEnum((int) ConversionActionError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.HeaderError) {
+        output.WriteRawTag(144, 4);
+        output.WriteEnum((int) HeaderError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.DatabaseError) {
+        output.WriteRawTag(152, 4);
+        output.WriteEnum((int) DatabaseError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.PolicyFindingError) {
+        output.WriteRawTag(160, 4);
+        output.WriteEnum((int) PolicyFindingError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.EnumError) {
+        output.WriteRawTag(176, 4);
+        output.WriteEnum((int) EnumError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanError) {
+        output.WriteRawTag(184, 4);
+        output.WriteEnum((int) KeywordPlanError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanCampaignError) {
+        output.WriteRawTag(192, 4);
+        output.WriteEnum((int) KeywordPlanCampaignError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanAdGroupError) {
+        output.WriteRawTag(208, 4);
+        output.WriteEnum((int) KeywordPlanAdGroupError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanIdeaError) {
+        output.WriteRawTag(224, 4);
+        output.WriteEnum((int) KeywordPlanIdeaError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AccountBudgetProposalError) {
+        output.WriteRawTag(232, 4);
+        output.WriteEnum((int) AccountBudgetProposalError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.UserListError) {
+        output.WriteRawTag(240, 4);
+        output.WriteEnum((int) UserListError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ChangeStatusError) {
+        output.WriteRawTag(248, 4);
+        output.WriteEnum((int) ChangeStatusError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedError) {
+        output.WriteRawTag(128, 5);
+        output.WriteEnum((int) FeedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.GeoTargetConstantSuggestionError) {
+        output.WriteRawTag(136, 5);
+        output.WriteEnum((int) GeoTargetConstantSuggestionError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignDraftError) {
+        output.WriteRawTag(144, 5);
+        output.WriteEnum((int) CampaignDraftError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedItemError) {
+        output.WriteRawTag(152, 5);
+        output.WriteEnum((int) FeedItemError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.LabelError) {
+        output.WriteRawTag(160, 5);
+        output.WriteEnum((int) LabelError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.MediaFileError) {
+        output.WriteRawTag(176, 5);
+        output.WriteEnum((int) MediaFileError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.BillingSetupError) {
+        output.WriteRawTag(184, 5);
+        output.WriteEnum((int) BillingSetupError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CustomerClientLinkError) {
+        output.WriteRawTag(192, 5);
+        output.WriteEnum((int) CustomerClientLinkError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CustomerError) {
+        output.WriteRawTag(208, 5);
+        output.WriteEnum((int) CustomerError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CustomerManagerLinkError) {
+        output.WriteRawTag(216, 5);
+        output.WriteEnum((int) CustomerManagerLinkError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedMappingError) {
+        output.WriteRawTag(224, 5);
+        output.WriteEnum((int) FeedMappingError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CustomerFeedError) {
+        output.WriteRawTag(232, 5);
+        output.WriteEnum((int) CustomerFeedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdGroupFeedError) {
+        output.WriteRawTag(240, 5);
+        output.WriteEnum((int) AdGroupFeedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignFeedError) {
+        output.WriteRawTag(128, 6);
+        output.WriteEnum((int) CampaignFeedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CustomInterestError) {
+        output.WriteRawTag(136, 6);
+        output.WriteEnum((int) CustomInterestError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CampaignExperimentError) {
+        output.WriteRawTag(144, 6);
+        output.WriteEnum((int) CampaignExperimentError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ExtensionFeedItemError) {
+        output.WriteRawTag(160, 6);
+        output.WriteEnum((int) ExtensionFeedItemError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AdParameterError) {
+        output.WriteRawTag(168, 6);
+        output.WriteEnum((int) AdParameterError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedItemValidationError) {
+        output.WriteRawTag(176, 6);
+        output.WriteEnum((int) FeedItemValidationError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ExtensionSettingError) {
+        output.WriteRawTag(184, 6);
+        output.WriteEnum((int) ExtensionSettingError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.FeedItemTargetError) {
+        output.WriteRawTag(192, 6);
+        output.WriteEnum((int) FeedItemTargetError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.PolicyViolationError) {
+        output.WriteRawTag(200, 6);
+        output.WriteEnum((int) PolicyViolationError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AssetError) {
+        output.WriteRawTag(216, 6);
+        output.WriteEnum((int) AssetError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CountryCodeError) {
+        output.WriteRawTag(232, 6);
+        output.WriteEnum((int) CountryCodeError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.LanguageCodeError) {
+        output.WriteRawTag(240, 6);
+        output.WriteEnum((int) LanguageCodeError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ConversionUploadError) {
+        output.WriteRawTag(248, 6);
+        output.WriteEnum((int) ConversionUploadError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.PartialFailureError) {
+        output.WriteRawTag(128, 7);
+        output.WriteEnum((int) PartialFailureError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.PolicyValidationParameterError) {
+        output.WriteRawTag(144, 7);
+        output.WriteEnum((int) PolicyValidationParameterError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ConversionAdjustmentUploadError) {
+        output.WriteRawTag(152, 7);
+        output.WriteEnum((int) ConversionAdjustmentUploadError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.MediaUploadError) {
+        output.WriteRawTag(160, 7);
+        output.WriteEnum((int) MediaUploadError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.YoutubeVideoRegistrationError) {
+        output.WriteRawTag(168, 7);
+        output.WriteEnum((int) YoutubeVideoRegistrationError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.SizeLimitError) {
+        output.WriteRawTag(176, 7);
+        output.WriteEnum((int) SizeLimitError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.OfflineUserDataJobError) {
+        output.WriteRawTag(184, 7);
+        output.WriteEnum((int) OfflineUserDataJobError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.NotWhitelistedError) {
+        output.WriteRawTag(192, 7);
+        output.WriteEnum((int) NotWhitelistedError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ManagerLinkError) {
+        output.WriteRawTag(200, 7);
+        output.WriteEnum((int) ManagerLinkError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.CurrencyCodeError) {
+        output.WriteRawTag(208, 7);
+        output.WriteEnum((int) CurrencyCodeError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AccessInvitationError) {
+        output.WriteRawTag(224, 7);
+        output.WriteEnum((int) AccessInvitationError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.ReachPlanError) {
+        output.WriteRawTag(232, 7);
+        output.WriteEnum((int) ReachPlanError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.InvoiceError) {
+        output.WriteRawTag(240, 7);
+        output.WriteEnum((int) InvoiceError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.PaymentsAccountError) {
+        output.WriteRawTag(248, 7);
+        output.WriteEnum((int) PaymentsAccountError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.TimeZoneError) {
+        output.WriteRawTag(128, 8);
+        output.WriteEnum((int) TimeZoneError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.AssetLinkError) {
+        output.WriteRawTag(136, 8);
+        output.WriteEnum((int) AssetLinkError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.UserDataError) {
+        output.WriteRawTag(144, 8);
+        output.WriteEnum((int) UserDataError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.BatchJobError) {
+        output.WriteRawTag(152, 8);
+        output.WriteEnum((int) BatchJobError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanCampaignKeywordError) {
+        output.WriteRawTag(160, 8);
+        output.WriteEnum((int) KeywordPlanCampaignKeywordError);
+      }
+      if (errorCodeCase_ == ErrorCodeOneofCase.KeywordPlanAdGroupKeywordError) {
+        output.WriteRawTag(168, 8);
+        output.WriteEnum((int) KeywordPlanAdGroupKeywordError);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -4335,6 +4923,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4898,14 +5489,588 @@ namespace Google.Ads.GoogleAds.V4.Errors {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.RequestError;
+            break;
+          }
+          case 16: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.BiddingStrategyError;
+            break;
+          }
+          case 24: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.UrlFieldError;
+            break;
+          }
+          case 32: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ListOperationError;
+            break;
+          }
+          case 40: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.QueryError;
+            break;
+          }
+          case 56: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.MutateError;
+            break;
+          }
+          case 64: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FieldMaskError;
+            break;
+          }
+          case 72: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AuthorizationError;
+            break;
+          }
+          case 80: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.InternalError;
+            break;
+          }
+          case 88: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.QuotaError;
+            break;
+          }
+          case 96: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdError;
+            break;
+          }
+          case 104: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdGroupError;
+            break;
+          }
+          case 112: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CampaignBudgetError;
+            break;
+          }
+          case 120: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CampaignError;
+            break;
+          }
+          case 136: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AuthenticationError;
+            break;
+          }
+          case 144: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdGroupCriterionError;
+            break;
+          }
+          case 152: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdCustomizerError;
+            break;
+          }
+          case 168: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdGroupAdError;
+            break;
+          }
+          case 192: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdSharingError;
+            break;
+          }
+          case 200: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdxError;
+            break;
+          }
+          case 208: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.BiddingError;
+            break;
+          }
+          case 232: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CampaignCriterionError;
+            break;
+          }
+          case 248: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CollectionSizeError;
+            break;
+          }
+          case 256: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CriterionError;
+            break;
+          }
+          case 264: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.DateError;
+            break;
+          }
+          case 272: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.DateRangeError;
+            break;
+          }
+          case 280: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.DistinctError;
+            break;
+          }
+          case 288: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FeedAttributeReferenceError;
+            break;
+          }
+          case 296: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FunctionError;
+            break;
+          }
+          case 304: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FunctionParsingError;
+            break;
+          }
+          case 312: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.IdError;
+            break;
+          }
+          case 320: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ImageError;
+            break;
+          }
+          case 336: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.MediaBundleError;
+            break;
+          }
+          case 352: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.MultiplierError;
+            break;
+          }
+          case 360: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.NewResourceCreationError;
+            break;
+          }
+          case 368: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.NotEmptyError;
+            break;
+          }
+          case 376: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.NullError;
+            break;
+          }
+          case 384: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.OperatorError;
+            break;
+          }
+          case 392: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.RangeError;
+            break;
+          }
+          case 408: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.RegionCodeError;
+            break;
+          }
+          case 416: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.SettingError;
+            break;
+          }
+          case 424: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.StringFormatError;
+            break;
+          }
+          case 432: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.StringLengthError;
+            break;
+          }
+          case 440: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.OperationAccessDeniedError;
+            break;
+          }
+          case 448: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ResourceAccessDeniedError;
+            break;
+          }
+          case 456: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ResourceCountLimitExceededError;
+            break;
+          }
+          case 464: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.RecommendationError;
+            break;
+          }
+          case 472: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdGroupBidModifierError;
+            break;
+          }
+          case 480: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ContextError;
+            break;
+          }
+          case 488: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FieldError;
+            break;
+          }
+          case 496: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.SharedSetError;
+            break;
+          }
+          case 504: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.SharedCriterionError;
+            break;
+          }
+          case 512: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CampaignSharedSetError;
+            break;
+          }
+          case 520: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ConversionActionError;
+            break;
+          }
+          case 528: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.HeaderError;
+            break;
+          }
+          case 536: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.DatabaseError;
+            break;
+          }
+          case 544: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.PolicyFindingError;
+            break;
+          }
+          case 560: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.EnumError;
+            break;
+          }
+          case 568: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanError;
+            break;
+          }
+          case 576: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanCampaignError;
+            break;
+          }
+          case 592: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanAdGroupError;
+            break;
+          }
+          case 608: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanIdeaError;
+            break;
+          }
+          case 616: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AccountBudgetProposalError;
+            break;
+          }
+          case 624: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.UserListError;
+            break;
+          }
+          case 632: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ChangeStatusError;
+            break;
+          }
+          case 640: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FeedError;
+            break;
+          }
+          case 648: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.GeoTargetConstantSuggestionError;
+            break;
+          }
+          case 656: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CampaignDraftError;
+            break;
+          }
+          case 664: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FeedItemError;
+            break;
+          }
+          case 672: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.LabelError;
+            break;
+          }
+          case 688: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.MediaFileError;
+            break;
+          }
+          case 696: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.BillingSetupError;
+            break;
+          }
+          case 704: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CustomerClientLinkError;
+            break;
+          }
+          case 720: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CustomerError;
+            break;
+          }
+          case 728: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CustomerManagerLinkError;
+            break;
+          }
+          case 736: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FeedMappingError;
+            break;
+          }
+          case 744: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CustomerFeedError;
+            break;
+          }
+          case 752: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdGroupFeedError;
+            break;
+          }
+          case 768: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CampaignFeedError;
+            break;
+          }
+          case 776: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CustomInterestError;
+            break;
+          }
+          case 784: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CampaignExperimentError;
+            break;
+          }
+          case 800: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ExtensionFeedItemError;
+            break;
+          }
+          case 808: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AdParameterError;
+            break;
+          }
+          case 816: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FeedItemValidationError;
+            break;
+          }
+          case 824: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ExtensionSettingError;
+            break;
+          }
+          case 832: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.FeedItemTargetError;
+            break;
+          }
+          case 840: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.PolicyViolationError;
+            break;
+          }
+          case 856: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AssetError;
+            break;
+          }
+          case 872: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CountryCodeError;
+            break;
+          }
+          case 880: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.LanguageCodeError;
+            break;
+          }
+          case 888: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ConversionUploadError;
+            break;
+          }
+          case 896: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.PartialFailureError;
+            break;
+          }
+          case 912: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.PolicyValidationParameterError;
+            break;
+          }
+          case 920: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ConversionAdjustmentUploadError;
+            break;
+          }
+          case 928: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.MediaUploadError;
+            break;
+          }
+          case 936: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.YoutubeVideoRegistrationError;
+            break;
+          }
+          case 944: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.SizeLimitError;
+            break;
+          }
+          case 952: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.OfflineUserDataJobError;
+            break;
+          }
+          case 960: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.NotWhitelistedError;
+            break;
+          }
+          case 968: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ManagerLinkError;
+            break;
+          }
+          case 976: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.CurrencyCodeError;
+            break;
+          }
+          case 992: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AccessInvitationError;
+            break;
+          }
+          case 1000: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.ReachPlanError;
+            break;
+          }
+          case 1008: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.InvoiceError;
+            break;
+          }
+          case 1016: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.PaymentsAccountError;
+            break;
+          }
+          case 1024: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.TimeZoneError;
+            break;
+          }
+          case 1032: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.AssetLinkError;
+            break;
+          }
+          case 1040: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.UserDataError;
+            break;
+          }
+          case 1048: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.BatchJobError;
+            break;
+          }
+          case 1056: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanCampaignKeywordError;
+            break;
+          }
+          case 1064: {
+            errorCode_ = input.ReadEnum();
+            errorCodeCase_ = ErrorCodeOneofCase.KeywordPlanAdGroupKeywordError;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Describes the part of the request proto that caused the error.
   /// </summary>
-  public sealed partial class ErrorLocation : pb::IMessage<ErrorLocation> {
+  public sealed partial class ErrorLocation : pb::IMessage<ErrorLocation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ErrorLocation> _parser = new pb::MessageParser<ErrorLocation>(() => new ErrorLocation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4986,11 +6151,25 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       fieldPathElements_.WriteTo(output, _repeated_fieldPathElements_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      fieldPathElements_.WriteTo(ref output, _repeated_fieldPathElements_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5013,6 +6192,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5025,7 +6207,26 @@ namespace Google.Ads.GoogleAds.V4.Errors {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 18: {
+            fieldPathElements_.AddEntriesFrom(ref input, _repeated_fieldPathElements_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the ErrorLocation message type.</summary>
@@ -5034,7 +6235,11 @@ namespace Google.Ads.GoogleAds.V4.Errors {
       /// <summary>
       /// A part of a field path.
       /// </summary>
-      public sealed partial class FieldPathElement : pb::IMessage<FieldPathElement> {
+      public sealed partial class FieldPathElement : pb::IMessage<FieldPathElement>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
         private static readonly pb::MessageParser<FieldPathElement> _parser = new pb::MessageParser<FieldPathElement>(() => new FieldPathElement());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5135,6 +6340,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
           if (FieldName.Length != 0) {
             output.WriteRawTag(10);
             output.WriteString(FieldName);
@@ -5145,7 +6353,24 @@ namespace Google.Ads.GoogleAds.V4.Errors {
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (FieldName.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(FieldName);
+          }
+          if (index_ != null) {
+            _single_index_codec.WriteTagAndValue(ref output, Index);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
@@ -5180,6 +6405,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
             switch(tag) {
@@ -5199,7 +6427,33 @@ namespace Google.Ads.GoogleAds.V4.Errors {
               }
             }
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                FieldName = input.ReadString();
+                break;
+              }
+              case 18: {
+                long? value = _single_index_codec.Read(ref input);
+                if (index_ == null || value != 0L) {
+                  Index = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+        #endif
 
       }
 
@@ -5211,7 +6465,11 @@ namespace Google.Ads.GoogleAds.V4.Errors {
   /// <summary>
   /// Additional error details.
   /// </summary>
-  public sealed partial class ErrorDetails : pb::IMessage<ErrorDetails> {
+  public sealed partial class ErrorDetails : pb::IMessage<ErrorDetails>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ErrorDetails> _parser = new pb::MessageParser<ErrorDetails>(() => new ErrorDetails());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5328,6 +6586,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (UnpublishedErrorCode.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(UnpublishedErrorCode);
@@ -5343,7 +6604,29 @@ namespace Google.Ads.GoogleAds.V4.Errors {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (UnpublishedErrorCode.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(UnpublishedErrorCode);
+      }
+      if (policyViolationDetails_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(PolicyViolationDetails);
+      }
+      if (policyFindingDetails_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(PolicyFindingDetails);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5388,6 +6671,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5414,7 +6700,40 @@ namespace Google.Ads.GoogleAds.V4.Errors {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            UnpublishedErrorCode = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (policyViolationDetails_ == null) {
+              PolicyViolationDetails = new global::Google.Ads.GoogleAds.V4.Errors.PolicyViolationDetails();
+            }
+            input.ReadMessage(PolicyViolationDetails);
+            break;
+          }
+          case 26: {
+            if (policyFindingDetails_ == null) {
+              PolicyFindingDetails = new global::Google.Ads.GoogleAds.V4.Errors.PolicyFindingDetails();
+            }
+            input.ReadMessage(PolicyFindingDetails);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -5423,7 +6742,11 @@ namespace Google.Ads.GoogleAds.V4.Errors {
   /// This error indicates single policy violation by some text
   /// in one of the fields.
   /// </summary>
-  public sealed partial class PolicyViolationDetails : pb::IMessage<PolicyViolationDetails> {
+  public sealed partial class PolicyViolationDetails : pb::IMessage<PolicyViolationDetails>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<PolicyViolationDetails> _parser = new pb::MessageParser<PolicyViolationDetails>(() => new PolicyViolationDetails());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5557,6 +6880,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ExternalPolicyDescription.Length != 0) {
         output.WriteRawTag(18);
         output.WriteString(ExternalPolicyDescription);
@@ -5576,7 +6902,33 @@ namespace Google.Ads.GoogleAds.V4.Errors {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ExternalPolicyDescription.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ExternalPolicyDescription);
+      }
+      if (key_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Key);
+      }
+      if (ExternalPolicyName.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ExternalPolicyName);
+      }
+      if (IsExemptible != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(IsExemptible);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5624,6 +6976,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5651,7 +7006,41 @@ namespace Google.Ads.GoogleAds.V4.Errors {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 18: {
+            ExternalPolicyDescription = input.ReadString();
+            break;
+          }
+          case 34: {
+            if (key_ == null) {
+              Key = new global::Google.Ads.GoogleAds.V4.Common.PolicyViolationKey();
+            }
+            input.ReadMessage(Key);
+            break;
+          }
+          case 42: {
+            ExternalPolicyName = input.ReadString();
+            break;
+          }
+          case 48: {
+            IsExemptible = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -5660,7 +7049,11 @@ namespace Google.Ads.GoogleAds.V4.Errors {
   /// This error indicates one or more policy findings in the fields of a
   /// resource.
   /// </summary>
-  public sealed partial class PolicyFindingDetails : pb::IMessage<PolicyFindingDetails> {
+  public sealed partial class PolicyFindingDetails : pb::IMessage<PolicyFindingDetails>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<PolicyFindingDetails> _parser = new pb::MessageParser<PolicyFindingDetails>(() => new PolicyFindingDetails());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5743,11 +7136,25 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       policyTopicEntries_.WriteTo(output, _repeated_policyTopicEntries_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      policyTopicEntries_.WriteTo(ref output, _repeated_policyTopicEntries_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -5770,6 +7177,9 @@ namespace Google.Ads.GoogleAds.V4.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5782,7 +7192,26 @@ namespace Google.Ads.GoogleAds.V4.Errors {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            policyTopicEntries_.AddEntriesFrom(ref input, _repeated_policyTopicEntries_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

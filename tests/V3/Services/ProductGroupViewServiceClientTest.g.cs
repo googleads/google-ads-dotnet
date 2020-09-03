@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedProductGroupViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetProductGroupViewRequestObject()
         {
             moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetProductGroupViewRequestObjectAsync()
         {
             moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetProductGroupView()
         {
             moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetProductGroupViewAsync()
         {
             moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetProductGroupViewResourceNames()
         {
             moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetProductGroupViewResourceNamesAsync()
         {
             moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient> mockGrpcClient = new moq::Mock<ProductGroupViewService.ProductGroupViewServiceClient>(moq::MockBehavior.Strict);

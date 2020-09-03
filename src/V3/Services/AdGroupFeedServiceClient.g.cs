@@ -140,6 +140,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>AdGroupFeedService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group feeds.
+    /// </remarks>
     public abstract partial class AdGroupFeedServiceClient
     {
         /// <summary>
@@ -407,6 +410,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>AdGroupFeedService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage ad group feeds.
+    /// </remarks>
     public sealed partial class AdGroupFeedServiceClientImpl : AdGroupFeedServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupFeedRequest, gagvr::AdGroupFeed> _callGetAdGroupFeed;

@@ -21,17 +21,17 @@ using System.Linq;
 using System.Web;
 
 using aw = global::Google.Api.Ads.AdWords.v201809;
-using gag__AdvertisingChannelType = Google.Ads.GoogleAds.V4.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType;
-using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V4.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
-using gag__CampaignStatus = Google.Ads.GoogleAds.V4.Enums.CampaignStatusEnum.Types.CampaignStatus;
-using gag__NetworkSettings = Google.Ads.GoogleAds.V4.Resources.Campaign.Types.NetworkSettings;
+using gag__AdvertisingChannelType = Google.Ads.GoogleAds.V5.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType;
+using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V5.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
+using gag__CampaignStatus = Google.Ads.GoogleAds.V5.Enums.CampaignStatusEnum.Types.CampaignStatus;
+using gag__NetworkSettings = Google.Ads.GoogleAds.V5.Resources.Campaign.Types.NetworkSettings;
 
-using gagvc = Google.Ads.GoogleAds.V4.Common;
-using gagver = Google.Ads.GoogleAds.V4.Errors;
-using gagvr = Google.Ads.GoogleAds.V4.Resources;
-using gagvs = Google.Ads.GoogleAds.V4.Services;
+using gagvc = Google.Ads.GoogleAds.V5.Common;
+using gagver = Google.Ads.GoogleAds.V5.Errors;
+using gagvr = Google.Ads.GoogleAds.V5.Resources;
+using gagvs = Google.Ads.GoogleAds.V5.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V4.Migration.CampaignManagement
+namespace Google.Ads.GoogleAds.Examples.V5.Migration.CampaignManagement
 {
     /// <summary>
     /// This code example is the third in a series of code examples that shows how to create
@@ -89,8 +89,8 @@ namespace Google.Ads.GoogleAds.Examples.V4.Migration.CampaignManagement
             long customerId = long.Parse((user.Config as AdWordsAppConfig).ClientCustomerId);
 
             gagvr::CampaignBudget budget = CreateBudget(client, customerId);
-            gagvr::Campaign campaign = CreateCampaign(client, customerId, budget.Id.Value);
-            aw::AdGroup adGroup = CreateAdGroup(user, campaign.Id.Value);
+            gagvr::Campaign campaign = CreateCampaign(client, customerId, budget.Id);
+            aw::AdGroup adGroup = CreateAdGroup(user, campaign.Id);
             aw::AdGroupAd[] adGroupAds = CreateTextAds(user, adGroup.id);
             aw::AdGroupCriterion[] adGroupCriteria = CreateKeywords(user, adGroup.id,
                 KEYWORDS_TO_ADD);
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.Examples.V4.Migration.CampaignManagement
         {
             // Get the CampaignBudgetService.
             gagvs::CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V4.CampaignBudgetService);
+                Services.V5.CampaignBudgetService);
 
             // Create the campaign budget.
             gagvr::CampaignBudget budget = new gagvr::CampaignBudget()
@@ -151,7 +151,7 @@ namespace Google.Ads.GoogleAds.Examples.V4.Migration.CampaignManagement
         {
             // Get the GoogleAdsService.
             gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Create the search query.
             string searchQuery = "SELECT campaign_budget.id, campaign_budget.name, " +
@@ -178,7 +178,7 @@ namespace Google.Ads.GoogleAds.Examples.V4.Migration.CampaignManagement
         {
             // Get the CampaignService.
             gagvs::CampaignServiceClient campaignService = client.GetService(
-                Services.V4.CampaignService);
+                Services.V5.CampaignService);
 
             // Create a budget to be used for the campaign.
             string budgetResource = gagver::ResourceNames.CampaignBudget(customerId, budgetId);
@@ -244,7 +244,7 @@ namespace Google.Ads.GoogleAds.Examples.V4.Migration.CampaignManagement
         {
             // Get the GoogleAdsService.
             gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Create the search query.
             string searchQuery = "SELECT campaign.id, campaign.name, " +

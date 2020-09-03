@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>CampaignSharedSetService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign shared sets.
+    /// </remarks>
     public abstract partial class CampaignSharedSetServiceClient
     {
         /// <summary>
@@ -404,6 +407,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>CampaignSharedSetService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign shared sets.
+    /// </remarks>
     public sealed partial class CampaignSharedSetServiceClientImpl : CampaignSharedSetServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignSharedSetRequest, gagvr::CampaignSharedSet> _callGetCampaignSharedSet;

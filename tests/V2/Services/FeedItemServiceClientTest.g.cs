@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedFeedItemServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetFeedItemRequestObject()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetFeedItemRequestObjectAsync()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -107,7 +107,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetFeedItem()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -144,7 +144,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetFeedItemAsync()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -183,7 +183,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetFeedItemResourceNames()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -220,7 +220,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetFeedItemResourceNamesAsync()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateFeedItemsRequestObject()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -288,7 +288,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateFeedItemsRequestObjectAsync()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -319,7 +319,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateFeedItems()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);
@@ -346,7 +346,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateFeedItemsAsync()
         {
             moq::Mock<FeedItemService.FeedItemServiceClient> mockGrpcClient = new moq::Mock<FeedItemService.FeedItemServiceClient>(moq::MockBehavior.Strict);

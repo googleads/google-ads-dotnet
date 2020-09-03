@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedBiddingStrategyServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetBiddingStrategyRequestObject()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
@@ -61,7 +61,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetBiddingStrategyRequestObjectAsync()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetBiddingStrategy()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
@@ -123,7 +123,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetBiddingStrategyAsync()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
@@ -155,7 +155,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetBiddingStrategyResourceNames()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
@@ -185,7 +185,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetBiddingStrategyResourceNamesAsync()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
@@ -217,7 +217,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateBiddingStrategiesRequestObject()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
@@ -246,7 +246,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateBiddingStrategiesRequestObjectAsync()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
@@ -277,7 +277,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateBiddingStrategies()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);
@@ -304,7 +304,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateBiddingStrategiesAsync()
         {
             moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient> mockGrpcClient = new moq::Mock<BiddingStrategyService.BiddingStrategyServiceClient>(moq::MockBehavior.Strict);

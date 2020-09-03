@@ -13,15 +13,16 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.Api.Gax;
 using System;
-using static Google.Ads.GoogleAds.V4.Enums.PolicyApprovalStatusEnum.Types;
+using System.Linq;
+using static Google.Ads.GoogleAds.V5.Enums.PolicyApprovalStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example retrieves all the disapproved ads in a given campaign.
@@ -74,26 +75,27 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
-            String searchQuery =
-                $@"SELECT
+            string searchQuery = $@"
+                SELECT
                     ad_group_ad.ad.id,
                     ad_group_ad.ad.type,
-                    ad_group_ad.policy_summary
+                    ad_group_ad.policy_summary.approval_status,
+                    ad_group_ad.policy_summary.policy_topic_entries
                 FROM ad_group_ad
                 WHERE
-                    campaign.id = {campaignId}";
+                    campaign.id = {campaignId}
+                    AND ad_group_ad.policy_summary.approval_status = DISAPPROVED";
 
             // Create a request that will retrieve all Disapproved Ads
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
                 PageSize = PAGE_SIZE,
                 Query = searchQuery,
-                CustomerId = customerId.ToString()
+                CustomerId = customerId.ToString(),
+                ReturnTotalResultsCount = true
             };
-
-            int disapprovedAdsCount = 0;
 
             try
             {
@@ -101,20 +103,15 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
                     googleAdsService.Search(request);
 
+                long disapprovedAdsCount = searchPagedResponse.AsRawResponses()
+                    .First().TotalResultsCount;
+
                 // Iterate over all rows in all rows returned and count disapproved Ads
                 foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
                 {
                     AdGroupAdPolicySummary policySummary = googleAdsRow.AdGroupAd.PolicySummary;
                     AdGroupAd adGroupAd = googleAdsRow.AdGroupAd;
                     Ad ad = adGroupAd.Ad;
-
-                    if (adGroupAd.PolicySummary.ApprovalStatus != PolicyApprovalStatus.Disapproved)
-                    {
-                        continue;
-                    }
-
-                    disapprovedAdsCount++;
-
                     Console.WriteLine(
                         "Ad with ID {0} and type '{1}' was disapproved with the " +
                         "following policy topic entries: ",

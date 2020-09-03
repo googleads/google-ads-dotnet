@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example demonstrates how to handle partial failures.
@@ -161,7 +161,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             long customerId, long campaignId)
         {
             // Get the AdGroupServiceClient.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V4.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V5.AdGroupService);
 
             string validAdGroupName = "Valid AdGroup: " + ExampleUtilities.GetRandomString();
 

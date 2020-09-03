@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedDisplayKeywordViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetDisplayKeywordViewRequestObject()
         {
             moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetDisplayKeywordViewRequestObjectAsync()
         {
             moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetDisplayKeywordView()
         {
             moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetDisplayKeywordViewAsync()
         {
             moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetDisplayKeywordViewResourceNames()
         {
             moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetDisplayKeywordViewResourceNamesAsync()
         {
             moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient> mockGrpcClient = new moq::Mock<DisplayKeywordViewService.DisplayKeywordViewServiceClient>(moq::MockBehavior.Strict);

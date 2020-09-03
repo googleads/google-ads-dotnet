@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedMutateJobServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void CreateMutateJobRequestObject()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task CreateMutateJobRequestObjectAsync()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void CreateMutateJob()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -92,7 +92,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task CreateMutateJobAsync()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -114,7 +114,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMutateJobRequestObject()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -139,7 +139,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMutateJobRequestObjectAsync()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -166,7 +166,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMutateJob()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -191,7 +191,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMutateJobAsync()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -218,7 +218,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMutateJobResourceNames()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -243,7 +243,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMutateJobResourceNamesAsync()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -270,7 +270,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void AddMutateJobOperationsRequestObject()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -296,7 +296,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task AddMutateJobOperationsRequestObjectAsync()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -324,7 +324,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void AddMutateJobOperations1()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -350,7 +350,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task AddMutateJobOperations1Async()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -378,7 +378,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void AddMutateJobOperations1ResourceNames()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -404,7 +404,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task AddMutateJobOperations1ResourceNamesAsync()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -432,7 +432,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void AddMutateJobOperations2()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -457,7 +457,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task AddMutateJobOperations2Async()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -484,7 +484,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void AddMutateJobOperations2ResourceNames()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
@@ -509,7 +509,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task AddMutateJobOperations2ResourceNamesAsync()
         {
             moq::Mock<MutateJobService.MutateJobServiceClient> mockGrpcClient = new moq::Mock<MutateJobService.MutateJobServiceClient>(moq::MockBehavior.Strict);
