@@ -132,6 +132,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>ConversionAdjustmentUploadService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to upload conversion adjustments.
+    /// </remarks>
     public abstract partial class ConversionAdjustmentUploadServiceClient
     {
         /// <summary>
@@ -245,6 +248,9 @@ namespace Google.Ads.GoogleAds.V2.Services
         /// operations will return errors. If false, all operations will be carried out
         /// in one transaction if and only if they are all valid. This should always be
         /// set to true.
+        /// See
+        /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
+        /// for more information about partial failure.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -273,6 +279,9 @@ namespace Google.Ads.GoogleAds.V2.Services
         /// operations will return errors. If false, all operations will be carried out
         /// in one transaction if and only if they are all valid. This should always be
         /// set to true.
+        /// See
+        /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
+        /// for more information about partial failure.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -301,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
         /// operations will return errors. If false, all operations will be carried out
         /// in one transaction if and only if they are all valid. This should always be
         /// set to true.
+        /// See
+        /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
+        /// for more information about partial failure.
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -309,6 +321,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>ConversionAdjustmentUploadService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to upload conversion adjustments.
+    /// </remarks>
     public sealed partial class ConversionAdjustmentUploadServiceClientImpl : ConversionAdjustmentUploadServiceClient
     {
         private readonly gaxgrpc::ApiCall<UploadConversionAdjustmentsRequest, UploadConversionAdjustmentsResponse> _callUploadConversionAdjustments;

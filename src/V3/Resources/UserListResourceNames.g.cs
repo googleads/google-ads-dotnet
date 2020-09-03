@@ -241,7 +241,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
         /// <summary>
         /// <see cref="gagvr::UserListName"/>-typed view over the <see cref="ResourceName"/> resource name property.
         /// </summary>
-        public gagvr::UserListName ResourceNameAsUserListName
+        internal UserListName ResourceNameAsUserListName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::UserListName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
         /// <summary>
         /// <see cref="gagvr::UserListName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::UserListName UserListName
+        internal UserListName UserListName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::UserListName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

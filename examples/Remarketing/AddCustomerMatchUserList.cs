@@ -13,20 +13,20 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.Api.Gax;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V4.Enums.CustomerMatchUploadKeyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.OfflineUserDataJobTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.CustomerMatchUploadKeyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     ///  This code example uses Customer Match to create a new user list (a.k.a. audience) and adds
@@ -104,7 +104,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         private string CreateCustomerMatchUserList(GoogleAdsClient client, long customerId)
         {
             // Get the UserListService.
-            UserListServiceClient service = client.GetService(Services.V4.UserListService);
+            UserListServiceClient service = client.GetService(Services.V5.UserListService);
 
             // Creates the user list.
             UserList userList = new UserList()
@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the OfflineUserDataJobService.
             OfflineUserDataJobServiceClient service = client.GetService(
-                Services.V4.OfflineUserDataJobService);
+                Services.V5.OfflineUserDataJobService);
 
             // Creates a new offline user data job.
             OfflineUserDataJob offlineUserDataJob = new OfflineUserDataJob()
@@ -284,7 +284,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient service =
-                client.GetService(Services.V4.GoogleAdsService);
+                client.GetService(Services.V5.GoogleAdsService);
 
             // Creates a query that retrieves the user list.
             string query =

@@ -59,7 +59,11 @@ namespace Google.Ads.GoogleAds.V2.Resources {
   /// <summary>
   /// A payments account, which can be used to set up billing for an Ads customer.
   /// </summary>
-  public sealed partial class PaymentsAccount : pb::IMessage<PaymentsAccount> {
+  public sealed partial class PaymentsAccount : pb::IMessage<PaymentsAccount>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<PaymentsAccount> _parser = new pb::MessageParser<PaymentsAccount>(() => new PaymentsAccount());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -243,6 +247,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -265,7 +272,36 @@ namespace Google.Ads.GoogleAds.V2.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (paymentsAccountId_ != null) {
+        _single_paymentsAccountId_codec.WriteTagAndValue(ref output, PaymentsAccountId);
+      }
+      if (name_ != null) {
+        _single_name_codec.WriteTagAndValue(ref output, Name);
+      }
+      if (currencyCode_ != null) {
+        _single_currencyCode_codec.WriteTagAndValue(ref output, CurrencyCode);
+      }
+      if (paymentsProfileId_ != null) {
+        _single_paymentsProfileId_codec.WriteTagAndValue(ref output, PaymentsProfileId);
+      }
+      if (secondaryPaymentsProfileId_ != null) {
+        _single_secondaryPaymentsProfileId_codec.WriteTagAndValue(ref output, SecondaryPaymentsProfileId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -332,6 +368,9 @@ namespace Google.Ads.GoogleAds.V2.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -379,7 +418,61 @@ namespace Google.Ads.GoogleAds.V2.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            string value = _single_paymentsAccountId_codec.Read(ref input);
+            if (paymentsAccountId_ == null || value != "") {
+              PaymentsAccountId = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_name_codec.Read(ref input);
+            if (name_ == null || value != "") {
+              Name = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_currencyCode_codec.Read(ref input);
+            if (currencyCode_ == null || value != "") {
+              CurrencyCode = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_paymentsProfileId_codec.Read(ref input);
+            if (paymentsProfileId_ == null || value != "") {
+              PaymentsProfileId = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_secondaryPaymentsProfileId_codec.Read(ref input);
+            if (secondaryPaymentsProfileId_ == null || value != "") {
+              SecondaryPaymentsProfileId = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

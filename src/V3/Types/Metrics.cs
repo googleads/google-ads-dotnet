@@ -214,7 +214,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
   /// <summary>
   /// Metrics data.
   /// </summary>
-  public sealed partial class Metrics : pb::IMessage<Metrics> {
+  public sealed partial class Metrics : pb::IMessage<Metrics>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Metrics> _parser = new pb::MessageParser<Metrics>(() => new Metrics());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -515,7 +519,7 @@ namespace Google.Ads.GoogleAds.V3.Common {
     private static readonly pb::FieldCodec<double?> _single_allConversionsValue_codec = pb::FieldCodec.ForStructWrapper<double>(530);
     private double? allConversionsValue_;
     /// <summary>
-    /// The total value of all conversions.
+    /// The value of all conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? AllConversionsValue {
@@ -531,8 +535,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     private static readonly pb::FieldCodec<double?> _single_allConversions_codec = pb::FieldCodec.ForStructWrapper<double>(58);
     private double? allConversions_;
     /// <summary>
-    /// The total number of conversions. This only includes conversion actions
-    /// which include_in_conversions_metric attribute is set to true.
+    /// The total number of conversions. This includes all conversions regardless
+    /// of the value of include_in_conversions_metric.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? AllConversions {
@@ -1044,7 +1048,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// Conversions from interactions divided by the number of ad interactions
     /// (such as clicks for text ads or views for video ads). This only includes
     /// conversion actions which include_in_conversions_metric attribute is set to
-    /// true.
+    /// true. If you use conversion-based bidding, your bid strategies will
+    /// optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsFromInteractionsRate {
@@ -1060,8 +1065,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
     private static readonly pb::FieldCodec<double?> _single_conversionsValue_codec = pb::FieldCodec.ForStructWrapper<double>(562);
     private double? conversionsValue_;
     /// <summary>
-    /// The total value of conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// The value of conversions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsValue {
@@ -1079,7 +1086,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>
     /// The value of conversions divided by the cost of ad interactions. This only
     /// includes conversion actions which include_in_conversions_metric attribute
-    /// is set to true.
+    /// is set to true. If you use conversion-based bidding, your bid strategies
+    /// will optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsValuePerCost {
@@ -1097,7 +1105,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>
     /// The value of conversions from interactions divided by the number of ad
     /// interactions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ConversionsFromInteractionsValuePerInteraction {
@@ -1114,7 +1124,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
     private double? conversions_;
     /// <summary>
     /// The number of conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? Conversions {
@@ -1165,7 +1177,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>
     /// The cost of ad interactions divided by conversions. This only includes
     /// conversion actions which include_in_conversions_metric attribute is set to
-    /// true.
+    /// true. If you use conversion-based bidding, your bid strategies will
+    /// optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CostPerConversion {
@@ -1183,7 +1196,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>
     /// The cost of ad interactions divided by current model attributed
     /// conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CostPerCurrentModelAttributedConversion {
@@ -1236,7 +1251,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>
     /// Shows how your historic conversions data would look under the attribution
     /// model you've currently selected. This only includes conversion actions
-    /// which include_in_conversions_metric attribute is set to true.
+    /// which include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversions {
@@ -1255,7 +1272,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// Current model attributed conversions from interactions divided by the
     /// number of ad interactions (such as clicks for text ads or views for video
     /// ads). This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversionsFromInteractionsRate {
@@ -1273,7 +1292,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>
     /// The value of current model attributed conversions from interactions divided
     /// by the number of ad interactions. This only includes conversion actions
-    /// which include_in_conversions_metric attribute is set to true.
+    /// which include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversionsFromInteractionsValuePerInteraction {
@@ -1289,9 +1310,10 @@ namespace Google.Ads.GoogleAds.V3.Common {
     private static readonly pb::FieldCodec<double?> _single_currentModelAttributedConversionsValue_codec = pb::FieldCodec.ForStructWrapper<double>(834);
     private double? currentModelAttributedConversionsValue_;
     /// <summary>
-    /// The total value of current model attributed conversions. This only includes
+    /// The value of current model attributed conversions. This only includes
     /// conversion actions which include_in_conversions_metric attribute is set to
-    /// true.
+    /// true. If you use conversion-based bidding, your bid strategies will
+    /// optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversionsValue {
@@ -1309,7 +1331,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>
     /// The value of current model attributed conversions divided by the cost of ad
     /// interactions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? CurrentModelAttributedConversionsValuePerCost {
@@ -2143,7 +2167,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>
     /// The value of conversions divided by the number of conversions. This only
     /// includes conversion actions which include_in_conversions_metric attribute
-    /// is set to true.
+    /// is set to true. If you use conversion-based bidding, your bid strategies
+    /// will optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ValuePerConversion {
@@ -2161,7 +2186,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// <summary>
     /// The value of current model attributed conversions divided by the number of
     /// the conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true.
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? ValuePerCurrentModelAttributedConversion {
@@ -2543,6 +2570,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (activeViewCpm_ != null) {
         _single_activeViewCpm_codec.WriteTagAndValue(output, ActiveViewCpm);
       }
@@ -2880,7 +2910,351 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (activeViewCpm_ != null) {
+        _single_activeViewCpm_codec.WriteTagAndValue(ref output, ActiveViewCpm);
+      }
+      if (activeViewImpressions_ != null) {
+        _single_activeViewImpressions_codec.WriteTagAndValue(ref output, ActiveViewImpressions);
+      }
+      if (activeViewMeasurableCostMicros_ != null) {
+        _single_activeViewMeasurableCostMicros_codec.WriteTagAndValue(ref output, ActiveViewMeasurableCostMicros);
+      }
+      if (activeViewMeasurableImpressions_ != null) {
+        _single_activeViewMeasurableImpressions_codec.WriteTagAndValue(ref output, ActiveViewMeasurableImpressions);
+      }
+      if (allConversions_ != null) {
+        _single_allConversions_codec.WriteTagAndValue(ref output, AllConversions);
+      }
+      if (averageCost_ != null) {
+        _single_averageCost_codec.WriteTagAndValue(ref output, AverageCost);
+      }
+      if (averageCpc_ != null) {
+        _single_averageCpc_codec.WriteTagAndValue(ref output, AverageCpc);
+      }
+      if (averageCpm_ != null) {
+        _single_averageCpm_codec.WriteTagAndValue(ref output, AverageCpm);
+      }
+      if (averageCpv_ != null) {
+        _single_averageCpv_codec.WriteTagAndValue(ref output, AverageCpv);
+      }
+      if (benchmarkAverageMaxCpc_ != null) {
+        _single_benchmarkAverageMaxCpc_codec.WriteTagAndValue(ref output, BenchmarkAverageMaxCpc);
+      }
+      if (bounceRate_ != null) {
+        _single_bounceRate_codec.WriteTagAndValue(ref output, BounceRate);
+      }
+      if (clicks_ != null) {
+        _single_clicks_codec.WriteTagAndValue(ref output, Clicks);
+      }
+      if (contentBudgetLostImpressionShare_ != null) {
+        _single_contentBudgetLostImpressionShare_codec.WriteTagAndValue(ref output, ContentBudgetLostImpressionShare);
+      }
+      if (contentImpressionShare_ != null) {
+        _single_contentImpressionShare_codec.WriteTagAndValue(ref output, ContentImpressionShare);
+      }
+      if (contentRankLostImpressionShare_ != null) {
+        _single_contentRankLostImpressionShare_codec.WriteTagAndValue(ref output, ContentRankLostImpressionShare);
+      }
+      if (conversions_ != null) {
+        _single_conversions_codec.WriteTagAndValue(ref output, Conversions);
+      }
+      if (costMicros_ != null) {
+        _single_costMicros_codec.WriteTagAndValue(ref output, CostMicros);
+      }
+      if (costPerConversion_ != null) {
+        _single_costPerConversion_codec.WriteTagAndValue(ref output, CostPerConversion);
+      }
+      if (crossDeviceConversions_ != null) {
+        _single_crossDeviceConversions_codec.WriteTagAndValue(ref output, CrossDeviceConversions);
+      }
+      if (ctr_ != null) {
+        _single_ctr_codec.WriteTagAndValue(ref output, Ctr);
+      }
+      if (engagementRate_ != null) {
+        _single_engagementRate_codec.WriteTagAndValue(ref output, EngagementRate);
+      }
+      if (engagements_ != null) {
+        _single_engagements_codec.WriteTagAndValue(ref output, Engagements);
+      }
+      if (impressions_ != null) {
+        _single_impressions_codec.WriteTagAndValue(ref output, Impressions);
+      }
+      if (interactionRate_ != null) {
+        _single_interactionRate_codec.WriteTagAndValue(ref output, InteractionRate);
+      }
+      if (interactions_ != null) {
+        _single_interactions_codec.WriteTagAndValue(ref output, Interactions);
+      }
+      if (invalidClickRate_ != null) {
+        _single_invalidClickRate_codec.WriteTagAndValue(ref output, InvalidClickRate);
+      }
+      if (invalidClicks_ != null) {
+        _single_invalidClicks_codec.WriteTagAndValue(ref output, InvalidClicks);
+      }
+      if (percentNewVisitors_ != null) {
+        _single_percentNewVisitors_codec.WriteTagAndValue(ref output, PercentNewVisitors);
+      }
+      if (phoneCalls_ != null) {
+        _single_phoneCalls_codec.WriteTagAndValue(ref output, PhoneCalls);
+      }
+      if (phoneImpressions_ != null) {
+        _single_phoneImpressions_codec.WriteTagAndValue(ref output, PhoneImpressions);
+      }
+      if (phoneThroughRate_ != null) {
+        _single_phoneThroughRate_codec.WriteTagAndValue(ref output, PhoneThroughRate);
+      }
+      if (relativeCtr_ != null) {
+        _single_relativeCtr_codec.WriteTagAndValue(ref output, RelativeCtr);
+      }
+      if (searchBudgetLostImpressionShare_ != null) {
+        _single_searchBudgetLostImpressionShare_codec.WriteTagAndValue(ref output, SearchBudgetLostImpressionShare);
+      }
+      if (searchClickShare_ != null) {
+        _single_searchClickShare_codec.WriteTagAndValue(ref output, SearchClickShare);
+      }
+      if (searchExactMatchImpressionShare_ != null) {
+        _single_searchExactMatchImpressionShare_codec.WriteTagAndValue(ref output, SearchExactMatchImpressionShare);
+      }
+      if (searchImpressionShare_ != null) {
+        _single_searchImpressionShare_codec.WriteTagAndValue(ref output, SearchImpressionShare);
+      }
+      if (searchRankLostImpressionShare_ != null) {
+        _single_searchRankLostImpressionShare_codec.WriteTagAndValue(ref output, SearchRankLostImpressionShare);
+      }
+      if (valuePerAllConversions_ != null) {
+        _single_valuePerAllConversions_codec.WriteTagAndValue(ref output, ValuePerAllConversions);
+      }
+      if (valuePerConversion_ != null) {
+        _single_valuePerConversion_codec.WriteTagAndValue(ref output, ValuePerConversion);
+      }
+      if (videoQuartile100Rate_ != null) {
+        _single_videoQuartile100Rate_codec.WriteTagAndValue(ref output, VideoQuartile100Rate);
+      }
+      if (videoQuartile25Rate_ != null) {
+        _single_videoQuartile25Rate_codec.WriteTagAndValue(ref output, VideoQuartile25Rate);
+      }
+      if (videoQuartile50Rate_ != null) {
+        _single_videoQuartile50Rate_codec.WriteTagAndValue(ref output, VideoQuartile50Rate);
+      }
+      if (videoQuartile75Rate_ != null) {
+        _single_videoQuartile75Rate_codec.WriteTagAndValue(ref output, VideoQuartile75Rate);
+      }
+      if (videoViewRate_ != null) {
+        _single_videoViewRate_codec.WriteTagAndValue(ref output, VideoViewRate);
+      }
+      if (videoViews_ != null) {
+        _single_videoViews_codec.WriteTagAndValue(ref output, VideoViews);
+      }
+      if (viewThroughConversions_ != null) {
+        _single_viewThroughConversions_codec.WriteTagAndValue(ref output, ViewThroughConversions);
+      }
+      if (allConversionsValuePerCost_ != null) {
+        _single_allConversionsValuePerCost_codec.WriteTagAndValue(ref output, AllConversionsValuePerCost);
+      }
+      if (allConversionsFromInteractionsRate_ != null) {
+        _single_allConversionsFromInteractionsRate_codec.WriteTagAndValue(ref output, AllConversionsFromInteractionsRate);
+      }
+      if (allConversionsValue_ != null) {
+        _single_allConversionsValue_codec.WriteTagAndValue(ref output, AllConversionsValue);
+      }
+      if (allConversionsFromInteractionsValuePerInteraction_ != null) {
+        _single_allConversionsFromInteractionsValuePerInteraction_codec.WriteTagAndValue(ref output, AllConversionsFromInteractionsValuePerInteraction);
+      }
+      if (costPerAllConversions_ != null) {
+        _single_costPerAllConversions_codec.WriteTagAndValue(ref output, CostPerAllConversions);
+      }
+      if (conversionsFromInteractionsRate_ != null) {
+        _single_conversionsFromInteractionsRate_codec.WriteTagAndValue(ref output, ConversionsFromInteractionsRate);
+      }
+      if (conversionsValue_ != null) {
+        _single_conversionsValue_codec.WriteTagAndValue(ref output, ConversionsValue);
+      }
+      if (conversionsValuePerCost_ != null) {
+        _single_conversionsValuePerCost_codec.WriteTagAndValue(ref output, ConversionsValuePerCost);
+      }
+      if (conversionsFromInteractionsValuePerInteraction_ != null) {
+        _single_conversionsFromInteractionsValuePerInteraction_codec.WriteTagAndValue(ref output, ConversionsFromInteractionsValuePerInteraction);
+      }
+      if (conversionLastReceivedRequestDateTime_ != null) {
+        _single_conversionLastReceivedRequestDateTime_codec.WriteTagAndValue(ref output, ConversionLastReceivedRequestDateTime);
+      }
+      if (conversionLastConversionDate_ != null) {
+        _single_conversionLastConversionDate_codec.WriteTagAndValue(ref output, ConversionLastConversionDate);
+      }
+      if (hotelAverageLeadValueMicros_ != null) {
+        _single_hotelAverageLeadValueMicros_codec.WriteTagAndValue(ref output, HotelAverageLeadValueMicros);
+      }
+      if (benchmarkCtr_ != null) {
+        _single_benchmarkCtr_codec.WriteTagAndValue(ref output, BenchmarkCtr);
+      }
+      if (searchAbsoluteTopImpressionShare_ != null) {
+        _single_searchAbsoluteTopImpressionShare_codec.WriteTagAndValue(ref output, SearchAbsoluteTopImpressionShare);
+      }
+      if (activeViewCtr_ != null) {
+        _single_activeViewCtr_codec.WriteTagAndValue(ref output, ActiveViewCtr);
+      }
+      if (HistoricalCreativeQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
+        output.WriteRawTag(128, 5);
+        output.WriteEnum((int) HistoricalCreativeQualityScore);
+      }
+      if (HistoricalLandingPageQualityScore != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
+        output.WriteRawTag(136, 5);
+        output.WriteEnum((int) HistoricalLandingPageQualityScore);
+      }
+      if (historicalQualityScore_ != null) {
+        _single_historicalQualityScore_codec.WriteTagAndValue(ref output, HistoricalQualityScore);
+      }
+      if (HistoricalSearchPredictedCtr != global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified) {
+        output.WriteRawTag(152, 5);
+        output.WriteEnum((int) HistoricalSearchPredictedCtr);
+      }
+      if (averageTimeOnSite_ != null) {
+        _single_averageTimeOnSite_codec.WriteTagAndValue(ref output, AverageTimeOnSite);
+      }
+      if (gmailForwards_ != null) {
+        _single_gmailForwards_codec.WriteTagAndValue(ref output, GmailForwards);
+      }
+      if (gmailSaves_ != null) {
+        _single_gmailSaves_codec.WriteTagAndValue(ref output, GmailSaves);
+      }
+      if (gmailSecondaryClicks_ != null) {
+        _single_gmailSecondaryClicks_codec.WriteTagAndValue(ref output, GmailSecondaryClicks);
+      }
+      if (searchBudgetLostAbsoluteTopImpressionShare_ != null) {
+        _single_searchBudgetLostAbsoluteTopImpressionShare_codec.WriteTagAndValue(ref output, SearchBudgetLostAbsoluteTopImpressionShare);
+      }
+      if (searchBudgetLostTopImpressionShare_ != null) {
+        _single_searchBudgetLostTopImpressionShare_codec.WriteTagAndValue(ref output, SearchBudgetLostTopImpressionShare);
+      }
+      if (searchRankLostAbsoluteTopImpressionShare_ != null) {
+        _single_searchRankLostAbsoluteTopImpressionShare_codec.WriteTagAndValue(ref output, SearchRankLostAbsoluteTopImpressionShare);
+      }
+      if (searchRankLostTopImpressionShare_ != null) {
+        _single_searchRankLostTopImpressionShare_codec.WriteTagAndValue(ref output, SearchRankLostTopImpressionShare);
+      }
+      if (searchTopImpressionShare_ != null) {
+        _single_searchTopImpressionShare_codec.WriteTagAndValue(ref output, SearchTopImpressionShare);
+      }
+      if (topImpressionPercentage_ != null) {
+        _single_topImpressionPercentage_codec.WriteTagAndValue(ref output, TopImpressionPercentage);
+      }
+      if (valuePerCurrentModelAttributedConversion_ != null) {
+        _single_valuePerCurrentModelAttributedConversion_codec.WriteTagAndValue(ref output, ValuePerCurrentModelAttributedConversion);
+      }
+      if (absoluteTopImpressionPercentage_ != null) {
+        _single_absoluteTopImpressionPercentage_codec.WriteTagAndValue(ref output, AbsoluteTopImpressionPercentage);
+      }
+      if (activeViewMeasurability_ != null) {
+        _single_activeViewMeasurability_codec.WriteTagAndValue(ref output, ActiveViewMeasurability);
+      }
+      if (activeViewViewability_ != null) {
+        _single_activeViewViewability_codec.WriteTagAndValue(ref output, ActiveViewViewability);
+      }
+      if (averageCpe_ != null) {
+        _single_averageCpe_codec.WriteTagAndValue(ref output, AverageCpe);
+      }
+      if (averagePageViews_ != null) {
+        _single_averagePageViews_codec.WriteTagAndValue(ref output, AveragePageViews);
+      }
+      interactionEventTypes_.WriteTo(ref output, _repeated_interactionEventTypes_codec);
+      if (currentModelAttributedConversions_ != null) {
+        _single_currentModelAttributedConversions_codec.WriteTagAndValue(ref output, CurrentModelAttributedConversions);
+      }
+      if (currentModelAttributedConversionsFromInteractionsRate_ != null) {
+        _single_currentModelAttributedConversionsFromInteractionsRate_codec.WriteTagAndValue(ref output, CurrentModelAttributedConversionsFromInteractionsRate);
+      }
+      if (currentModelAttributedConversionsFromInteractionsValuePerInteraction_ != null) {
+        _single_currentModelAttributedConversionsFromInteractionsValuePerInteraction_codec.WriteTagAndValue(ref output, CurrentModelAttributedConversionsFromInteractionsValuePerInteraction);
+      }
+      if (currentModelAttributedConversionsValue_ != null) {
+        _single_currentModelAttributedConversionsValue_codec.WriteTagAndValue(ref output, CurrentModelAttributedConversionsValue);
+      }
+      if (currentModelAttributedConversionsValuePerCost_ != null) {
+        _single_currentModelAttributedConversionsValuePerCost_codec.WriteTagAndValue(ref output, CurrentModelAttributedConversionsValuePerCost);
+      }
+      if (costPerCurrentModelAttributedConversion_ != null) {
+        _single_costPerCurrentModelAttributedConversion_codec.WriteTagAndValue(ref output, CostPerCurrentModelAttributedConversion);
+      }
+      if (speedScore_ != null) {
+        _single_speedScore_codec.WriteTagAndValue(ref output, SpeedScore);
+      }
+      if (validAcceleratedMobilePagesClicksPercentage_ != null) {
+        _single_validAcceleratedMobilePagesClicksPercentage_codec.WriteTagAndValue(ref output, ValidAcceleratedMobilePagesClicksPercentage);
+      }
+      if (mobileFriendlyClicksPercentage_ != null) {
+        _single_mobileFriendlyClicksPercentage_codec.WriteTagAndValue(ref output, MobileFriendlyClicksPercentage);
+      }
+      if (organicClicks_ != null) {
+        _single_organicClicks_codec.WriteTagAndValue(ref output, OrganicClicks);
+      }
+      if (organicClicksPerQuery_ != null) {
+        _single_organicClicksPerQuery_codec.WriteTagAndValue(ref output, OrganicClicksPerQuery);
+      }
+      if (organicImpressions_ != null) {
+        _single_organicImpressions_codec.WriteTagAndValue(ref output, OrganicImpressions);
+      }
+      if (organicImpressionsPerQuery_ != null) {
+        _single_organicImpressionsPerQuery_codec.WriteTagAndValue(ref output, OrganicImpressionsPerQuery);
+      }
+      if (organicQueries_ != null) {
+        _single_organicQueries_codec.WriteTagAndValue(ref output, OrganicQueries);
+      }
+      if (combinedClicks_ != null) {
+        _single_combinedClicks_codec.WriteTagAndValue(ref output, CombinedClicks);
+      }
+      if (combinedClicksPerQuery_ != null) {
+        _single_combinedClicksPerQuery_codec.WriteTagAndValue(ref output, CombinedClicksPerQuery);
+      }
+      if (combinedQueries_ != null) {
+        _single_combinedQueries_codec.WriteTagAndValue(ref output, CombinedQueries);
+      }
+      if (allConversionsFromClickToCall_ != null) {
+        _single_allConversionsFromClickToCall_codec.WriteTagAndValue(ref output, AllConversionsFromClickToCall);
+      }
+      if (allConversionsFromDirections_ != null) {
+        _single_allConversionsFromDirections_codec.WriteTagAndValue(ref output, AllConversionsFromDirections);
+      }
+      if (allConversionsFromMenu_ != null) {
+        _single_allConversionsFromMenu_codec.WriteTagAndValue(ref output, AllConversionsFromMenu);
+      }
+      if (allConversionsFromOrder_ != null) {
+        _single_allConversionsFromOrder_codec.WriteTagAndValue(ref output, AllConversionsFromOrder);
+      }
+      if (allConversionsFromOtherEngagement_ != null) {
+        _single_allConversionsFromOtherEngagement_codec.WriteTagAndValue(ref output, AllConversionsFromOtherEngagement);
+      }
+      if (allConversionsFromStoreVisit_ != null) {
+        _single_allConversionsFromStoreVisit_codec.WriteTagAndValue(ref output, AllConversionsFromStoreVisit);
+      }
+      if (allConversionsFromStoreWebsite_ != null) {
+        _single_allConversionsFromStoreWebsite_codec.WriteTagAndValue(ref output, AllConversionsFromStoreWebsite);
+      }
+      if (impressionsFromStoreReach_ != null) {
+        _single_impressionsFromStoreReach_codec.WriteTagAndValue(ref output, ImpressionsFromStoreReach);
+      }
+      if (messageChats_ != null) {
+        _single_messageChats_codec.WriteTagAndValue(ref output, MessageChats);
+      }
+      if (messageImpressions_ != null) {
+        _single_messageImpressions_codec.WriteTagAndValue(ref output, MessageImpressions);
+      }
+      if (messageChatRate_ != null) {
+        _single_messageChatRate_codec.WriteTagAndValue(ref output, MessageChatRate);
+      }
+      if (hotelPriceDifferencePercentage_ != null) {
+        _single_hotelPriceDifferencePercentage_codec.WriteTagAndValue(ref output, HotelPriceDifferencePercentage);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -3777,6 +4151,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4551,7 +4928,788 @@ namespace Google.Ads.GoogleAds.V3.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            double? value = _single_activeViewCpm_codec.Read(ref input);
+            if (activeViewCpm_ == null || value != 0D) {
+              ActiveViewCpm = value;
+            }
+            break;
+          }
+          case 18: {
+            long? value = _single_activeViewImpressions_codec.Read(ref input);
+            if (activeViewImpressions_ == null || value != 0L) {
+              ActiveViewImpressions = value;
+            }
+            break;
+          }
+          case 26: {
+            long? value = _single_activeViewMeasurableCostMicros_codec.Read(ref input);
+            if (activeViewMeasurableCostMicros_ == null || value != 0L) {
+              ActiveViewMeasurableCostMicros = value;
+            }
+            break;
+          }
+          case 34: {
+            long? value = _single_activeViewMeasurableImpressions_codec.Read(ref input);
+            if (activeViewMeasurableImpressions_ == null || value != 0L) {
+              ActiveViewMeasurableImpressions = value;
+            }
+            break;
+          }
+          case 58: {
+            double? value = _single_allConversions_codec.Read(ref input);
+            if (allConversions_ == null || value != 0D) {
+              AllConversions = value;
+            }
+            break;
+          }
+          case 66: {
+            double? value = _single_averageCost_codec.Read(ref input);
+            if (averageCost_ == null || value != 0D) {
+              AverageCost = value;
+            }
+            break;
+          }
+          case 74: {
+            double? value = _single_averageCpc_codec.Read(ref input);
+            if (averageCpc_ == null || value != 0D) {
+              AverageCpc = value;
+            }
+            break;
+          }
+          case 82: {
+            double? value = _single_averageCpm_codec.Read(ref input);
+            if (averageCpm_ == null || value != 0D) {
+              AverageCpm = value;
+            }
+            break;
+          }
+          case 90: {
+            double? value = _single_averageCpv_codec.Read(ref input);
+            if (averageCpv_ == null || value != 0D) {
+              AverageCpv = value;
+            }
+            break;
+          }
+          case 114: {
+            double? value = _single_benchmarkAverageMaxCpc_codec.Read(ref input);
+            if (benchmarkAverageMaxCpc_ == null || value != 0D) {
+              BenchmarkAverageMaxCpc = value;
+            }
+            break;
+          }
+          case 122: {
+            double? value = _single_bounceRate_codec.Read(ref input);
+            if (bounceRate_ == null || value != 0D) {
+              BounceRate = value;
+            }
+            break;
+          }
+          case 154: {
+            long? value = _single_clicks_codec.Read(ref input);
+            if (clicks_ == null || value != 0L) {
+              Clicks = value;
+            }
+            break;
+          }
+          case 162: {
+            double? value = _single_contentBudgetLostImpressionShare_codec.Read(ref input);
+            if (contentBudgetLostImpressionShare_ == null || value != 0D) {
+              ContentBudgetLostImpressionShare = value;
+            }
+            break;
+          }
+          case 170: {
+            double? value = _single_contentImpressionShare_codec.Read(ref input);
+            if (contentImpressionShare_ == null || value != 0D) {
+              ContentImpressionShare = value;
+            }
+            break;
+          }
+          case 178: {
+            double? value = _single_contentRankLostImpressionShare_codec.Read(ref input);
+            if (contentRankLostImpressionShare_ == null || value != 0D) {
+              ContentRankLostImpressionShare = value;
+            }
+            break;
+          }
+          case 202: {
+            double? value = _single_conversions_codec.Read(ref input);
+            if (conversions_ == null || value != 0D) {
+              Conversions = value;
+            }
+            break;
+          }
+          case 210: {
+            long? value = _single_costMicros_codec.Read(ref input);
+            if (costMicros_ == null || value != 0L) {
+              CostMicros = value;
+            }
+            break;
+          }
+          case 226: {
+            double? value = _single_costPerConversion_codec.Read(ref input);
+            if (costPerConversion_ == null || value != 0D) {
+              CostPerConversion = value;
+            }
+            break;
+          }
+          case 234: {
+            double? value = _single_crossDeviceConversions_codec.Read(ref input);
+            if (crossDeviceConversions_ == null || value != 0D) {
+              CrossDeviceConversions = value;
+            }
+            break;
+          }
+          case 242: {
+            double? value = _single_ctr_codec.Read(ref input);
+            if (ctr_ == null || value != 0D) {
+              Ctr = value;
+            }
+            break;
+          }
+          case 250: {
+            double? value = _single_engagementRate_codec.Read(ref input);
+            if (engagementRate_ == null || value != 0D) {
+              EngagementRate = value;
+            }
+            break;
+          }
+          case 258: {
+            long? value = _single_engagements_codec.Read(ref input);
+            if (engagements_ == null || value != 0L) {
+              Engagements = value;
+            }
+            break;
+          }
+          case 298: {
+            long? value = _single_impressions_codec.Read(ref input);
+            if (impressions_ == null || value != 0L) {
+              Impressions = value;
+            }
+            break;
+          }
+          case 306: {
+            double? value = _single_interactionRate_codec.Read(ref input);
+            if (interactionRate_ == null || value != 0D) {
+              InteractionRate = value;
+            }
+            break;
+          }
+          case 314: {
+            long? value = _single_interactions_codec.Read(ref input);
+            if (interactions_ == null || value != 0L) {
+              Interactions = value;
+            }
+            break;
+          }
+          case 322: {
+            double? value = _single_invalidClickRate_codec.Read(ref input);
+            if (invalidClickRate_ == null || value != 0D) {
+              InvalidClickRate = value;
+            }
+            break;
+          }
+          case 330: {
+            long? value = _single_invalidClicks_codec.Read(ref input);
+            if (invalidClicks_ == null || value != 0L) {
+              InvalidClicks = value;
+            }
+            break;
+          }
+          case 338: {
+            double? value = _single_percentNewVisitors_codec.Read(ref input);
+            if (percentNewVisitors_ == null || value != 0D) {
+              PercentNewVisitors = value;
+            }
+            break;
+          }
+          case 346: {
+            long? value = _single_phoneCalls_codec.Read(ref input);
+            if (phoneCalls_ == null || value != 0L) {
+              PhoneCalls = value;
+            }
+            break;
+          }
+          case 354: {
+            long? value = _single_phoneImpressions_codec.Read(ref input);
+            if (phoneImpressions_ == null || value != 0L) {
+              PhoneImpressions = value;
+            }
+            break;
+          }
+          case 362: {
+            double? value = _single_phoneThroughRate_codec.Read(ref input);
+            if (phoneThroughRate_ == null || value != 0D) {
+              PhoneThroughRate = value;
+            }
+            break;
+          }
+          case 370: {
+            double? value = _single_relativeCtr_codec.Read(ref input);
+            if (relativeCtr_ == null || value != 0D) {
+              RelativeCtr = value;
+            }
+            break;
+          }
+          case 378: {
+            double? value = _single_searchBudgetLostImpressionShare_codec.Read(ref input);
+            if (searchBudgetLostImpressionShare_ == null || value != 0D) {
+              SearchBudgetLostImpressionShare = value;
+            }
+            break;
+          }
+          case 386: {
+            double? value = _single_searchClickShare_codec.Read(ref input);
+            if (searchClickShare_ == null || value != 0D) {
+              SearchClickShare = value;
+            }
+            break;
+          }
+          case 394: {
+            double? value = _single_searchExactMatchImpressionShare_codec.Read(ref input);
+            if (searchExactMatchImpressionShare_ == null || value != 0D) {
+              SearchExactMatchImpressionShare = value;
+            }
+            break;
+          }
+          case 402: {
+            double? value = _single_searchImpressionShare_codec.Read(ref input);
+            if (searchImpressionShare_ == null || value != 0D) {
+              SearchImpressionShare = value;
+            }
+            break;
+          }
+          case 410: {
+            double? value = _single_searchRankLostImpressionShare_codec.Read(ref input);
+            if (searchRankLostImpressionShare_ == null || value != 0D) {
+              SearchRankLostImpressionShare = value;
+            }
+            break;
+          }
+          case 418: {
+            double? value = _single_valuePerAllConversions_codec.Read(ref input);
+            if (valuePerAllConversions_ == null || value != 0D) {
+              ValuePerAllConversions = value;
+            }
+            break;
+          }
+          case 426: {
+            double? value = _single_valuePerConversion_codec.Read(ref input);
+            if (valuePerConversion_ == null || value != 0D) {
+              ValuePerConversion = value;
+            }
+            break;
+          }
+          case 434: {
+            double? value = _single_videoQuartile100Rate_codec.Read(ref input);
+            if (videoQuartile100Rate_ == null || value != 0D) {
+              VideoQuartile100Rate = value;
+            }
+            break;
+          }
+          case 442: {
+            double? value = _single_videoQuartile25Rate_codec.Read(ref input);
+            if (videoQuartile25Rate_ == null || value != 0D) {
+              VideoQuartile25Rate = value;
+            }
+            break;
+          }
+          case 450: {
+            double? value = _single_videoQuartile50Rate_codec.Read(ref input);
+            if (videoQuartile50Rate_ == null || value != 0D) {
+              VideoQuartile50Rate = value;
+            }
+            break;
+          }
+          case 458: {
+            double? value = _single_videoQuartile75Rate_codec.Read(ref input);
+            if (videoQuartile75Rate_ == null || value != 0D) {
+              VideoQuartile75Rate = value;
+            }
+            break;
+          }
+          case 466: {
+            double? value = _single_videoViewRate_codec.Read(ref input);
+            if (videoViewRate_ == null || value != 0D) {
+              VideoViewRate = value;
+            }
+            break;
+          }
+          case 474: {
+            long? value = _single_videoViews_codec.Read(ref input);
+            if (videoViews_ == null || value != 0L) {
+              VideoViews = value;
+            }
+            break;
+          }
+          case 482: {
+            long? value = _single_viewThroughConversions_codec.Read(ref input);
+            if (viewThroughConversions_ == null || value != 0L) {
+              ViewThroughConversions = value;
+            }
+            break;
+          }
+          case 498: {
+            double? value = _single_allConversionsValuePerCost_codec.Read(ref input);
+            if (allConversionsValuePerCost_ == null || value != 0D) {
+              AllConversionsValuePerCost = value;
+            }
+            break;
+          }
+          case 522: {
+            double? value = _single_allConversionsFromInteractionsRate_codec.Read(ref input);
+            if (allConversionsFromInteractionsRate_ == null || value != 0D) {
+              AllConversionsFromInteractionsRate = value;
+            }
+            break;
+          }
+          case 530: {
+            double? value = _single_allConversionsValue_codec.Read(ref input);
+            if (allConversionsValue_ == null || value != 0D) {
+              AllConversionsValue = value;
+            }
+            break;
+          }
+          case 538: {
+            double? value = _single_allConversionsFromInteractionsValuePerInteraction_codec.Read(ref input);
+            if (allConversionsFromInteractionsValuePerInteraction_ == null || value != 0D) {
+              AllConversionsFromInteractionsValuePerInteraction = value;
+            }
+            break;
+          }
+          case 546: {
+            double? value = _single_costPerAllConversions_codec.Read(ref input);
+            if (costPerAllConversions_ == null || value != 0D) {
+              CostPerAllConversions = value;
+            }
+            break;
+          }
+          case 554: {
+            double? value = _single_conversionsFromInteractionsRate_codec.Read(ref input);
+            if (conversionsFromInteractionsRate_ == null || value != 0D) {
+              ConversionsFromInteractionsRate = value;
+            }
+            break;
+          }
+          case 562: {
+            double? value = _single_conversionsValue_codec.Read(ref input);
+            if (conversionsValue_ == null || value != 0D) {
+              ConversionsValue = value;
+            }
+            break;
+          }
+          case 570: {
+            double? value = _single_conversionsValuePerCost_codec.Read(ref input);
+            if (conversionsValuePerCost_ == null || value != 0D) {
+              ConversionsValuePerCost = value;
+            }
+            break;
+          }
+          case 578: {
+            double? value = _single_conversionsFromInteractionsValuePerInteraction_codec.Read(ref input);
+            if (conversionsFromInteractionsValuePerInteraction_ == null || value != 0D) {
+              ConversionsFromInteractionsValuePerInteraction = value;
+            }
+            break;
+          }
+          case 586: {
+            string value = _single_conversionLastReceivedRequestDateTime_codec.Read(ref input);
+            if (conversionLastReceivedRequestDateTime_ == null || value != "") {
+              ConversionLastReceivedRequestDateTime = value;
+            }
+            break;
+          }
+          case 594: {
+            string value = _single_conversionLastConversionDate_codec.Read(ref input);
+            if (conversionLastConversionDate_ == null || value != "") {
+              ConversionLastConversionDate = value;
+            }
+            break;
+          }
+          case 602: {
+            double? value = _single_hotelAverageLeadValueMicros_codec.Read(ref input);
+            if (hotelAverageLeadValueMicros_ == null || value != 0D) {
+              HotelAverageLeadValueMicros = value;
+            }
+            break;
+          }
+          case 618: {
+            double? value = _single_benchmarkCtr_codec.Read(ref input);
+            if (benchmarkCtr_ == null || value != 0D) {
+              BenchmarkCtr = value;
+            }
+            break;
+          }
+          case 626: {
+            double? value = _single_searchAbsoluteTopImpressionShare_codec.Read(ref input);
+            if (searchAbsoluteTopImpressionShare_ == null || value != 0D) {
+              SearchAbsoluteTopImpressionShare = value;
+            }
+            break;
+          }
+          case 634: {
+            double? value = _single_activeViewCtr_codec.Read(ref input);
+            if (activeViewCtr_ == null || value != 0D) {
+              ActiveViewCtr = value;
+            }
+            break;
+          }
+          case 640: {
+            HistoricalCreativeQualityScore = (global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket) input.ReadEnum();
+            break;
+          }
+          case 648: {
+            HistoricalLandingPageQualityScore = (global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket) input.ReadEnum();
+            break;
+          }
+          case 658: {
+            long? value = _single_historicalQualityScore_codec.Read(ref input);
+            if (historicalQualityScore_ == null || value != 0L) {
+              HistoricalQualityScore = value;
+            }
+            break;
+          }
+          case 664: {
+            HistoricalSearchPredictedCtr = (global::Google.Ads.GoogleAds.V3.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket) input.ReadEnum();
+            break;
+          }
+          case 674: {
+            double? value = _single_averageTimeOnSite_codec.Read(ref input);
+            if (averageTimeOnSite_ == null || value != 0D) {
+              AverageTimeOnSite = value;
+            }
+            break;
+          }
+          case 682: {
+            long? value = _single_gmailForwards_codec.Read(ref input);
+            if (gmailForwards_ == null || value != 0L) {
+              GmailForwards = value;
+            }
+            break;
+          }
+          case 690: {
+            long? value = _single_gmailSaves_codec.Read(ref input);
+            if (gmailSaves_ == null || value != 0L) {
+              GmailSaves = value;
+            }
+            break;
+          }
+          case 698: {
+            long? value = _single_gmailSecondaryClicks_codec.Read(ref input);
+            if (gmailSecondaryClicks_ == null || value != 0L) {
+              GmailSecondaryClicks = value;
+            }
+            break;
+          }
+          case 706: {
+            double? value = _single_searchBudgetLostAbsoluteTopImpressionShare_codec.Read(ref input);
+            if (searchBudgetLostAbsoluteTopImpressionShare_ == null || value != 0D) {
+              SearchBudgetLostAbsoluteTopImpressionShare = value;
+            }
+            break;
+          }
+          case 714: {
+            double? value = _single_searchBudgetLostTopImpressionShare_codec.Read(ref input);
+            if (searchBudgetLostTopImpressionShare_ == null || value != 0D) {
+              SearchBudgetLostTopImpressionShare = value;
+            }
+            break;
+          }
+          case 722: {
+            double? value = _single_searchRankLostAbsoluteTopImpressionShare_codec.Read(ref input);
+            if (searchRankLostAbsoluteTopImpressionShare_ == null || value != 0D) {
+              SearchRankLostAbsoluteTopImpressionShare = value;
+            }
+            break;
+          }
+          case 730: {
+            double? value = _single_searchRankLostTopImpressionShare_codec.Read(ref input);
+            if (searchRankLostTopImpressionShare_ == null || value != 0D) {
+              SearchRankLostTopImpressionShare = value;
+            }
+            break;
+          }
+          case 738: {
+            double? value = _single_searchTopImpressionShare_codec.Read(ref input);
+            if (searchTopImpressionShare_ == null || value != 0D) {
+              SearchTopImpressionShare = value;
+            }
+            break;
+          }
+          case 746: {
+            double? value = _single_topImpressionPercentage_codec.Read(ref input);
+            if (topImpressionPercentage_ == null || value != 0D) {
+              TopImpressionPercentage = value;
+            }
+            break;
+          }
+          case 754: {
+            double? value = _single_valuePerCurrentModelAttributedConversion_codec.Read(ref input);
+            if (valuePerCurrentModelAttributedConversion_ == null || value != 0D) {
+              ValuePerCurrentModelAttributedConversion = value;
+            }
+            break;
+          }
+          case 762: {
+            double? value = _single_absoluteTopImpressionPercentage_codec.Read(ref input);
+            if (absoluteTopImpressionPercentage_ == null || value != 0D) {
+              AbsoluteTopImpressionPercentage = value;
+            }
+            break;
+          }
+          case 770: {
+            double? value = _single_activeViewMeasurability_codec.Read(ref input);
+            if (activeViewMeasurability_ == null || value != 0D) {
+              ActiveViewMeasurability = value;
+            }
+            break;
+          }
+          case 778: {
+            double? value = _single_activeViewViewability_codec.Read(ref input);
+            if (activeViewViewability_ == null || value != 0D) {
+              ActiveViewViewability = value;
+            }
+            break;
+          }
+          case 786: {
+            double? value = _single_averageCpe_codec.Read(ref input);
+            if (averageCpe_ == null || value != 0D) {
+              AverageCpe = value;
+            }
+            break;
+          }
+          case 794: {
+            double? value = _single_averagePageViews_codec.Read(ref input);
+            if (averagePageViews_ == null || value != 0D) {
+              AveragePageViews = value;
+            }
+            break;
+          }
+          case 802:
+          case 800: {
+            interactionEventTypes_.AddEntriesFrom(ref input, _repeated_interactionEventTypes_codec);
+            break;
+          }
+          case 810: {
+            double? value = _single_currentModelAttributedConversions_codec.Read(ref input);
+            if (currentModelAttributedConversions_ == null || value != 0D) {
+              CurrentModelAttributedConversions = value;
+            }
+            break;
+          }
+          case 818: {
+            double? value = _single_currentModelAttributedConversionsFromInteractionsRate_codec.Read(ref input);
+            if (currentModelAttributedConversionsFromInteractionsRate_ == null || value != 0D) {
+              CurrentModelAttributedConversionsFromInteractionsRate = value;
+            }
+            break;
+          }
+          case 826: {
+            double? value = _single_currentModelAttributedConversionsFromInteractionsValuePerInteraction_codec.Read(ref input);
+            if (currentModelAttributedConversionsFromInteractionsValuePerInteraction_ == null || value != 0D) {
+              CurrentModelAttributedConversionsFromInteractionsValuePerInteraction = value;
+            }
+            break;
+          }
+          case 834: {
+            double? value = _single_currentModelAttributedConversionsValue_codec.Read(ref input);
+            if (currentModelAttributedConversionsValue_ == null || value != 0D) {
+              CurrentModelAttributedConversionsValue = value;
+            }
+            break;
+          }
+          case 842: {
+            double? value = _single_currentModelAttributedConversionsValuePerCost_codec.Read(ref input);
+            if (currentModelAttributedConversionsValuePerCost_ == null || value != 0D) {
+              CurrentModelAttributedConversionsValuePerCost = value;
+            }
+            break;
+          }
+          case 850: {
+            double? value = _single_costPerCurrentModelAttributedConversion_codec.Read(ref input);
+            if (costPerCurrentModelAttributedConversion_ == null || value != 0D) {
+              CostPerCurrentModelAttributedConversion = value;
+            }
+            break;
+          }
+          case 858: {
+            long? value = _single_speedScore_codec.Read(ref input);
+            if (speedScore_ == null || value != 0L) {
+              SpeedScore = value;
+            }
+            break;
+          }
+          case 866: {
+            double? value = _single_validAcceleratedMobilePagesClicksPercentage_codec.Read(ref input);
+            if (validAcceleratedMobilePagesClicksPercentage_ == null || value != 0D) {
+              ValidAcceleratedMobilePagesClicksPercentage = value;
+            }
+            break;
+          }
+          case 874: {
+            double? value = _single_mobileFriendlyClicksPercentage_codec.Read(ref input);
+            if (mobileFriendlyClicksPercentage_ == null || value != 0D) {
+              MobileFriendlyClicksPercentage = value;
+            }
+            break;
+          }
+          case 882: {
+            long? value = _single_organicClicks_codec.Read(ref input);
+            if (organicClicks_ == null || value != 0L) {
+              OrganicClicks = value;
+            }
+            break;
+          }
+          case 890: {
+            double? value = _single_organicClicksPerQuery_codec.Read(ref input);
+            if (organicClicksPerQuery_ == null || value != 0D) {
+              OrganicClicksPerQuery = value;
+            }
+            break;
+          }
+          case 898: {
+            long? value = _single_organicImpressions_codec.Read(ref input);
+            if (organicImpressions_ == null || value != 0L) {
+              OrganicImpressions = value;
+            }
+            break;
+          }
+          case 906: {
+            double? value = _single_organicImpressionsPerQuery_codec.Read(ref input);
+            if (organicImpressionsPerQuery_ == null || value != 0D) {
+              OrganicImpressionsPerQuery = value;
+            }
+            break;
+          }
+          case 914: {
+            long? value = _single_organicQueries_codec.Read(ref input);
+            if (organicQueries_ == null || value != 0L) {
+              OrganicQueries = value;
+            }
+            break;
+          }
+          case 922: {
+            long? value = _single_combinedClicks_codec.Read(ref input);
+            if (combinedClicks_ == null || value != 0L) {
+              CombinedClicks = value;
+            }
+            break;
+          }
+          case 930: {
+            double? value = _single_combinedClicksPerQuery_codec.Read(ref input);
+            if (combinedClicksPerQuery_ == null || value != 0D) {
+              CombinedClicksPerQuery = value;
+            }
+            break;
+          }
+          case 938: {
+            long? value = _single_combinedQueries_codec.Read(ref input);
+            if (combinedQueries_ == null || value != 0L) {
+              CombinedQueries = value;
+            }
+            break;
+          }
+          case 946: {
+            double? value = _single_allConversionsFromClickToCall_codec.Read(ref input);
+            if (allConversionsFromClickToCall_ == null || value != 0D) {
+              AllConversionsFromClickToCall = value;
+            }
+            break;
+          }
+          case 954: {
+            double? value = _single_allConversionsFromDirections_codec.Read(ref input);
+            if (allConversionsFromDirections_ == null || value != 0D) {
+              AllConversionsFromDirections = value;
+            }
+            break;
+          }
+          case 962: {
+            double? value = _single_allConversionsFromMenu_codec.Read(ref input);
+            if (allConversionsFromMenu_ == null || value != 0D) {
+              AllConversionsFromMenu = value;
+            }
+            break;
+          }
+          case 970: {
+            double? value = _single_allConversionsFromOrder_codec.Read(ref input);
+            if (allConversionsFromOrder_ == null || value != 0D) {
+              AllConversionsFromOrder = value;
+            }
+            break;
+          }
+          case 978: {
+            double? value = _single_allConversionsFromOtherEngagement_codec.Read(ref input);
+            if (allConversionsFromOtherEngagement_ == null || value != 0D) {
+              AllConversionsFromOtherEngagement = value;
+            }
+            break;
+          }
+          case 986: {
+            double? value = _single_allConversionsFromStoreVisit_codec.Read(ref input);
+            if (allConversionsFromStoreVisit_ == null || value != 0D) {
+              AllConversionsFromStoreVisit = value;
+            }
+            break;
+          }
+          case 994: {
+            double? value = _single_allConversionsFromStoreWebsite_codec.Read(ref input);
+            if (allConversionsFromStoreWebsite_ == null || value != 0D) {
+              AllConversionsFromStoreWebsite = value;
+            }
+            break;
+          }
+          case 1002: {
+            long? value = _single_impressionsFromStoreReach_codec.Read(ref input);
+            if (impressionsFromStoreReach_ == null || value != 0L) {
+              ImpressionsFromStoreReach = value;
+            }
+            break;
+          }
+          case 1010: {
+            long? value = _single_messageChats_codec.Read(ref input);
+            if (messageChats_ == null || value != 0L) {
+              MessageChats = value;
+            }
+            break;
+          }
+          case 1018: {
+            long? value = _single_messageImpressions_codec.Read(ref input);
+            if (messageImpressions_ == null || value != 0L) {
+              MessageImpressions = value;
+            }
+            break;
+          }
+          case 1026: {
+            double? value = _single_messageChatRate_codec.Read(ref input);
+            if (messageChatRate_ == null || value != 0D) {
+              MessageChatRate = value;
+            }
+            break;
+          }
+          case 1034: {
+            double? value = _single_hotelPriceDifferencePercentage_codec.Read(ref input);
+            if (hotelPriceDifferencePercentage_ == null || value != 0D) {
+              HotelPriceDifferencePercentage = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

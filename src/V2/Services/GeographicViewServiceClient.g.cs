@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>GeographicViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage geographic views.
+    /// </remarks>
     public abstract partial class GeographicViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>GeographicViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage geographic views.
+    /// </remarks>
     public sealed partial class GeographicViewServiceClientImpl : GeographicViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetGeographicViewRequest, gagvr::GeographicView> _callGetGeographicView;

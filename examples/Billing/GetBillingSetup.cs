@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.Api.Gax;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example gets all BillingSetup objects available for the specified customer ID.
@@ -61,7 +61,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Define a GAQL query to retrieve all billing setup information.
             string searchQuery = @"
@@ -95,18 +95,29 @@ namespace Google.Ads.GoogleAds.Examples.V4
                     foreach (GoogleAdsRow googleAdsRow in response.Results)
                     {
                         BillingSetup billingSetup = googleAdsRow.BillingSetup;
-                        Console.WriteLine("Billing setup with ID '{0}', status '{1}', " +
-                            "payments account '{2}', payments account Id '{3}', " +
-                            "payments account name '{4}', payments profile id '{5}', " +
-                            "payments profile name '{6}', secondary payments profile id '{7}'.",
-                            billingSetup.Id,
-                            billingSetup.Status,
-                            billingSetup.PaymentsAccount,
-                            billingSetup.PaymentsAccountInfo.PaymentsAccountId,
-                            billingSetup.PaymentsAccountInfo.PaymentsAccountName,
-                            billingSetup.PaymentsAccountInfo.PaymentsProfileId,
-                            billingSetup.PaymentsAccountInfo.PaymentsProfileName,
-                            billingSetup.PaymentsAccountInfo.SecondaryPaymentsProfileId);
+                        Console.WriteLine($"Billing setup with ID '{billingSetup.Id}'has status " +
+                            $"status '{billingSetup.Status}'.");
+
+                        // A missing billing setup will have no payments account information.
+                        if (billingSetup.PaymentsAccount != null)
+                        {
+                            Console.WriteLine(
+                                $"\tPayments account: {billingSetup.PaymentsAccount}\n" +
+                                "\tPayments account Id: " +
+                                $"{billingSetup.PaymentsAccountInfo.PaymentsAccountId}\n" +
+                                "\tPayments account name: " +
+                                $"{billingSetup.PaymentsAccountInfo.PaymentsAccountName}\n" +
+                                "\tPayments profile id: " +
+                                $"{billingSetup.PaymentsAccountInfo.PaymentsProfileId}\n" +
+                                "\tPayments profile name: " +
+                                $"{billingSetup.PaymentsAccountInfo.PaymentsProfileName}\n" +
+                                "\tSecondary payments profile id: " +
+                                $"{billingSetup.PaymentsAccountInfo.SecondaryPaymentsProfileId}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Payments account details missing or incomplete.");
+                        }
                     }
                 }
             }

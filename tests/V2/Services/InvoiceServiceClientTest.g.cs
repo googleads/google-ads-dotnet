@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedInvoiceServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void ListInvoicesRequestObject()
         {
             moq::Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new moq::Mock<InvoiceService.InvoiceServiceClient>(moq::MockBehavior.Strict);
@@ -54,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ListInvoicesRequestObjectAsync()
         {
             moq::Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new moq::Mock<InvoiceService.InvoiceServiceClient>(moq::MockBehavior.Strict);
@@ -81,7 +81,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void ListInvoices()
         {
             moq::Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new moq::Mock<InvoiceService.InvoiceServiceClient>(moq::MockBehavior.Strict);
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ListInvoicesAsync()
         {
             moq::Mock<InvoiceService.InvoiceServiceClient> mockGrpcClient = new moq::Mock<InvoiceService.InvoiceServiceClient>(moq::MockBehavior.Strict);

@@ -19,7 +19,7 @@ namespace Google.Ads.GoogleAds.Tests {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class TestResources {
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Tests {
         ///  &quot;test_key1&quot;: &quot;TEST_VALUE1&quot;
         ///}
         ///
-        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot; }
+        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot;, &quot;age&quot;: &quot;25&quot;, &quot;address&quot;: { &quot;line1&quot;: &quot;111 8th Ave&quot;, &quot;city&quot;: &quot;New York&quot;, &quot;zipcode&quot;: &quot;10011&quot;, &quot;state&quot;: &quot;NY&quot; } }
         ///
         ///Response
         ///--------
@@ -113,12 +113,7 @@ namespace Google.Ads.GoogleAds.Tests {
         ///Fault: {
         ///  &quot;StatusCode&quot;: 0,
         ///  &quot;Details&quot;: &quot;&quot;,
-        ///  &quot;RequestId&quot;: &quot;TEST_REQUEST_ID&quot;,
-        ///  &quot;Failure&quot;: {
-        ///    &quot;errors&quot;: [
-        ///      {
-        ///        &quot;errorCode&quot;: {
-        ///          &quot;distinct [rest of string was truncated]&quot;;.
+        ///  &quot;RequestId&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DetailedFailureLog {
             get {
@@ -139,7 +134,7 @@ namespace Google.Ads.GoogleAds.Tests {
         ///  &quot;test_key1&quot;: &quot;TEST_VALUE1&quot;
         ///}
         ///
-        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot; }
+        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot;, &quot;age&quot;: &quot;25&quot;, &quot;address&quot;: { &quot;line1&quot;: &quot;111 8th Ave&quot;, &quot;city&quot;: &quot;New York&quot;, &quot;zipcode&quot;: &quot;10011&quot;, &quot;state&quot;: &quot;NY&quot; } }
         ///
         ///Response
         ///--------
@@ -151,7 +146,7 @@ namespace Google.Ads.GoogleAds.Tests {
         ///{ &quot;name&quot;: &quot;API&quot; }
         ///
         ///Partial failures: PARTIAL_FAILURES
-        ///----------------END API CALL----------------.
+        ///---- [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DetailedPartialFailureLog {
             get {
@@ -172,7 +167,7 @@ namespace Google.Ads.GoogleAds.Tests {
         ///  &quot;test_key1&quot;: &quot;TEST_VALUE1&quot;
         ///}
         ///
-        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot; }
+        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot;, &quot;age&quot;: &quot;25&quot;, &quot;address&quot;: { &quot;line1&quot;: &quot;111 8th Ave&quot;, &quot;city&quot;: &quot;New York&quot;, &quot;zipcode&quot;: &quot;10011&quot;, &quot;state&quot;: &quot;NY&quot; } }
         ///
         ///Response
         ///--------
@@ -182,7 +177,7 @@ namespace Google.Ads.GoogleAds.Tests {
         ///}
         ///
         ///{ &quot;name&quot;: &quot;API&quot; }
-        ///----------------END API CALL----------------.
+        ///----------------END API CALL-------------- [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DetailedSuccessLog {
             get {
@@ -191,7 +186,7 @@ namespace Google.Ads.GoogleAds.Tests {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: True, FaultMessage: Status(StatusCode=OK, Detail=&quot;&quot;).
+        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: True, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
         /// </summary>
         internal static string SummaryFailureLog {
             get {
@@ -200,7 +195,7 @@ namespace Google.Ads.GoogleAds.Tests {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=OK, Detail=&quot;&quot;).
+        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
         /// </summary>
         internal static string SummarySuccessLog {
             get {

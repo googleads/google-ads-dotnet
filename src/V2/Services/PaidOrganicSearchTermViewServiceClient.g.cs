@@ -130,6 +130,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>PaidOrganicSearchTermViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch paid organic search term views.
+    /// </remarks>
     public abstract partial class PaidOrganicSearchTermViewServiceClient
     {
         /// <summary>
@@ -309,6 +312,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>PaidOrganicSearchTermViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch paid organic search term views.
+    /// </remarks>
     public sealed partial class PaidOrganicSearchTermViewServiceClientImpl : PaidOrganicSearchTermViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetPaidOrganicSearchTermViewRequest, gagvr::PaidOrganicSearchTermView> _callGetPaidOrganicSearchTermView;

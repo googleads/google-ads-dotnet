@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example sets ad parameters for a keyword. To get ad group criteria,
@@ -62,12 +62,12 @@ namespace Google.Ads.GoogleAds.Examples.V4
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">ID of the ad group that contains the keywrd.
         /// </param>
-        /// <param name="keywordId">ID of the keyword to which ad parameters are attached.</param>
-        public void Run(GoogleAdsClient client, long customerId, long adGroupId, long keywordId)
+        /// <param name="criterionId">ID of the keyword to which ad parameters are attached.</param>
+        public void Run(GoogleAdsClient client, long customerId, long adGroupId, long criterionId)
         {
             // Get the AdParameterServiceClient.
             AdParameterServiceClient adParameterService =
-                client.GetService(Services.V4.AdParameterService);
+                client.GetService(Services.V5.AdParameterService);
 
             // Creates ad parameters.
             // There can be a maximum of two AdParameters per ad group criterion.
@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             AdParameter adParameter1 = new AdParameter()
             {
                 AdGroupCriterion = ResourceNames.AdGroupCriterion(
-                    customerId, adGroupId, keywordId),
+                    customerId, adGroupId, criterionId),
 
                 // The unique index of this ad parameter. Must be either 1 or 2.
                 ParameterIndex = 1,
@@ -91,7 +91,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             AdParameter adParameter2 = new AdParameter()
             {
                 AdGroupCriterion = ResourceNames.AdGroupCriterion(
-                    customerId, adGroupId, keywordId),
+                    customerId, adGroupId, criterionId),
                 ParameterIndex = 2,
                 InsertionText = "$40"
             };

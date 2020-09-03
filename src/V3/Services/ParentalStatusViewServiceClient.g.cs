@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>ParentalStatusViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage parental status views.
+    /// </remarks>
     public abstract partial class ParentalStatusViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>ParentalStatusViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage parental status views.
+    /// </remarks>
     public sealed partial class ParentalStatusViewServiceClientImpl : ParentalStatusViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetParentalStatusViewRequest, gagvr::ParentalStatusView> _callGetParentalStatusView;

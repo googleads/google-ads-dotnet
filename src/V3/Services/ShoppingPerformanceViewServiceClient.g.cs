@@ -130,6 +130,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>ShoppingPerformanceViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Shopping performance views.
+    /// </remarks>
     public abstract partial class ShoppingPerformanceViewServiceClient
     {
         /// <summary>
@@ -309,6 +312,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>ShoppingPerformanceViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Shopping performance views.
+    /// </remarks>
     public sealed partial class ShoppingPerformanceViewServiceClientImpl : ShoppingPerformanceViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetShoppingPerformanceViewRequest, gagvr::ShoppingPerformanceView> _callGetShoppingPerformanceView;

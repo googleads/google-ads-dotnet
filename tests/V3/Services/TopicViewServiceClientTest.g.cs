@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedTopicViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetTopicViewRequestObject()
         {
             moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetTopicViewRequestObjectAsync()
         {
             moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetTopicView()
         {
             moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetTopicViewAsync()
         {
             moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetTopicViewResourceNames()
         {
             moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetTopicViewResourceNamesAsync()
         {
             moq::Mock<TopicViewService.TopicViewServiceClient> mockGrpcClient = new moq::Mock<TopicViewService.TopicViewServiceClient>(moq::MockBehavior.Strict);

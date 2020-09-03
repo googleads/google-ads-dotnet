@@ -48,7 +48,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// <summary>
   /// A generic data container.
   /// </summary>
-  public sealed partial class Value : pb::IMessage<Value> {
+  public sealed partial class Value : pb::IMessage<Value>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Value> _parser = new pb::MessageParser<Value>(() => new Value());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -235,6 +239,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (valueCase_ == ValueOneofCase.BooleanValue) {
         output.WriteRawTag(8);
         output.WriteBool(BooleanValue);
@@ -258,7 +265,37 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (valueCase_ == ValueOneofCase.BooleanValue) {
+        output.WriteRawTag(8);
+        output.WriteBool(BooleanValue);
+      }
+      if (valueCase_ == ValueOneofCase.Int64Value) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Int64Value);
+      }
+      if (valueCase_ == ValueOneofCase.FloatValue) {
+        output.WriteRawTag(29);
+        output.WriteFloat(FloatValue);
+      }
+      if (valueCase_ == ValueOneofCase.DoubleValue) {
+        output.WriteRawTag(33);
+        output.WriteDouble(DoubleValue);
+      }
+      if (valueCase_ == ValueOneofCase.StringValue) {
+        output.WriteRawTag(42);
+        output.WriteString(StringValue);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -312,6 +349,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -340,7 +380,42 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            BooleanValue = input.ReadBool();
+            break;
+          }
+          case 16: {
+            Int64Value = input.ReadInt64();
+            break;
+          }
+          case 29: {
+            FloatValue = input.ReadFloat();
+            break;
+          }
+          case 33: {
+            DoubleValue = input.ReadDouble();
+            break;
+          }
+          case 42: {
+            StringValue = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

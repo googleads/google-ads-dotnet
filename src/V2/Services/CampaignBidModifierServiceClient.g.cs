@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CampaignBidModifierService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign bid modifiers.
+    /// </remarks>
     public abstract partial class CampaignBidModifierServiceClient
     {
         /// <summary>
@@ -410,6 +413,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>CampaignBidModifierService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage campaign bid modifiers.
+    /// </remarks>
     public sealed partial class CampaignBidModifierServiceClientImpl : CampaignBidModifierServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetCampaignBidModifierRequest, gagvr::CampaignBidModifier> _callGetCampaignBidModifier;

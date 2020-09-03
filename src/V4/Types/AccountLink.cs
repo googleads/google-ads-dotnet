@@ -72,7 +72,11 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   /// Represents the data sharing connection between a Google Ads account and
   /// another account
   /// </summary>
-  public sealed partial class AccountLink : pb::IMessage<AccountLink> {
+  public sealed partial class AccountLink : pb::IMessage<AccountLink>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AccountLink> _parser = new pb::MessageParser<AccountLink>(() => new AccountLink());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -252,6 +256,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -274,7 +281,36 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (accountLinkId_ != null) {
+        _single_accountLinkId_codec.WriteTagAndValue(ref output, AccountLinkId);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V4.Enums.AccountLinkStatusEnum.Types.AccountLinkStatus.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Status);
+      }
+      if (Type != global::Google.Ads.GoogleAds.V4.Enums.LinkedAccountTypeEnum.Types.LinkedAccountType.Unspecified) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) Type);
+      }
+      if (linkedAccountCase_ == LinkedAccountOneofCase.ThirdPartyAppAnalytics) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ThirdPartyAppAnalytics);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -333,6 +369,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -369,14 +408,61 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_accountLinkId_codec.Read(ref input);
+            if (accountLinkId_ == null || value != 0L) {
+              AccountLinkId = value;
+            }
+            break;
+          }
+          case 24: {
+            Status = (global::Google.Ads.GoogleAds.V4.Enums.AccountLinkStatusEnum.Types.AccountLinkStatus) input.ReadEnum();
+            break;
+          }
+          case 32: {
+            Type = (global::Google.Ads.GoogleAds.V4.Enums.LinkedAccountTypeEnum.Types.LinkedAccountType) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            global::Google.Ads.GoogleAds.V4.Resources.ThirdPartyAppAnalyticsLinkIdentifier subBuilder = new global::Google.Ads.GoogleAds.V4.Resources.ThirdPartyAppAnalyticsLinkIdentifier();
+            if (linkedAccountCase_ == LinkedAccountOneofCase.ThirdPartyAppAnalytics) {
+              subBuilder.MergeFrom(ThirdPartyAppAnalytics);
+            }
+            input.ReadMessage(subBuilder);
+            ThirdPartyAppAnalytics = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// The identifiers of a Third Party App Analytics Link.
   /// </summary>
-  public sealed partial class ThirdPartyAppAnalyticsLinkIdentifier : pb::IMessage<ThirdPartyAppAnalyticsLinkIdentifier> {
+  public sealed partial class ThirdPartyAppAnalyticsLinkIdentifier : pb::IMessage<ThirdPartyAppAnalyticsLinkIdentifier>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ThirdPartyAppAnalyticsLinkIdentifier> _parser = new pb::MessageParser<ThirdPartyAppAnalyticsLinkIdentifier>(() => new ThirdPartyAppAnalyticsLinkIdentifier());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -512,6 +598,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (appAnalyticsProviderId_ != null) {
         _single_appAnalyticsProviderId_codec.WriteTagAndValue(output, AppAnalyticsProviderId);
       }
@@ -525,7 +614,27 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (appAnalyticsProviderId_ != null) {
+        _single_appAnalyticsProviderId_codec.WriteTagAndValue(ref output, AppAnalyticsProviderId);
+      }
+      if (appId_ != null) {
+        _single_appId_codec.WriteTagAndValue(ref output, AppId);
+      }
+      if (AppVendor != global::Google.Ads.GoogleAds.V4.Enums.MobileAppVendorEnum.Types.MobileAppVendor.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) AppVendor);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -568,6 +677,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -594,7 +706,40 @@ namespace Google.Ads.GoogleAds.V4.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_appAnalyticsProviderId_codec.Read(ref input);
+            if (appAnalyticsProviderId_ == null || value != 0L) {
+              AppAnalyticsProviderId = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_appId_codec.Read(ref input);
+            if (appId_ == null || value != "") {
+              AppId = value;
+            }
+            break;
+          }
+          case 24: {
+            AppVendor = (global::Google.Ads.GoogleAds.V4.Enums.MobileAppVendorEnum.Types.MobileAppVendor) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

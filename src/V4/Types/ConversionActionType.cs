@@ -63,7 +63,11 @@ namespace Google.Ads.GoogleAds.V4.Enums {
   /// <summary>
   /// Container for enum describing possible types of a conversion action.
   /// </summary>
-  public sealed partial class ConversionActionTypeEnum : pb::IMessage<ConversionActionTypeEnum> {
+  public sealed partial class ConversionActionTypeEnum : pb::IMessage<ConversionActionTypeEnum>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ConversionActionTypeEnum> _parser = new pb::MessageParser<ConversionActionTypeEnum>(() => new ConversionActionTypeEnum());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -128,10 +132,23 @@ namespace Google.Ads.GoogleAds.V4.Enums {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -152,6 +169,9 @@ namespace Google.Ads.GoogleAds.V4.Enums {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -160,7 +180,22 @@ namespace Google.Ads.GoogleAds.V4.Enums {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the ConversionActionTypeEnum message type.</summary>
@@ -218,14 +253,14 @@ namespace Google.Ads.GoogleAds.V4.Enums {
         /// <summary>
         /// Store Sales conversion based on first-party or third-party merchant
         /// data uploads.
-        /// Only whitelisted customers can use store sales direct upload types.
+        /// Only customers on the allowlist can use store sales direct upload types.
         /// </summary>
         [pbr::OriginalName("STORE_SALES_DIRECT_UPLOAD")] StoreSalesDirectUpload = 10,
         /// <summary>
         /// Store Sales conversion based on first-party or third-party merchant
         /// data uploads and/or from in-store purchases using cards from payment
         /// networks.
-        /// Only whitelisted customers can use store sales types.
+        /// Only customers on the allowlist can use store sales types.
         /// </summary>
         [pbr::OriginalName("STORE_SALES")] StoreSales = 11,
         /// <summary>

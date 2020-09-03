@@ -136,7 +136,11 @@ namespace Google.Ads.GoogleAds.V3.Errors {
   /// <summary>
   /// Container for enum describing possible criterion errors.
   /// </summary>
-  public sealed partial class CriterionErrorEnum : pb::IMessage<CriterionErrorEnum> {
+  public sealed partial class CriterionErrorEnum : pb::IMessage<CriterionErrorEnum>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CriterionErrorEnum> _parser = new pb::MessageParser<CriterionErrorEnum>(() => new CriterionErrorEnum());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -201,10 +205,23 @@ namespace Google.Ads.GoogleAds.V3.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -225,6 +242,9 @@ namespace Google.Ads.GoogleAds.V3.Errors {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -233,7 +253,22 @@ namespace Google.Ads.GoogleAds.V3.Errors {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the CriterionErrorEnum message type.</summary>
@@ -304,7 +339,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         /// </summary>
         [pbr::OriginalName("PLACEMENT_URL_HAS_MULTIPLE_SITES_IN_LINE")] PlacementUrlHasMultipleSitesInLine = 14,
         /// <summary>
-        /// Indicates the domain is blacklisted.
+        /// Indicates the domain is blocked.
         /// </summary>
         [pbr::OriginalName("PLACEMENT_IS_NOT_AVAILABLE_FOR_TARGETING_OR_EXCLUSION")] PlacementIsNotAvailableForTargetingOrExclusion = 15,
         /// <summary>

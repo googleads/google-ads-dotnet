@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedUserLocationViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetUserLocationViewRequestObject()
         {
             moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
@@ -49,7 +49,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetUserLocationViewRequestObjectAsync()
         {
             moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetUserLocationView()
         {
             moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetUserLocationViewAsync()
         {
             moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
@@ -116,7 +116,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetUserLocationViewResourceNames()
         {
             moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);
@@ -137,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetUserLocationViewResourceNamesAsync()
         {
             moq::Mock<UserLocationViewService.UserLocationViewServiceClient> mockGrpcClient = new moq::Mock<UserLocationViewService.UserLocationViewServiceClient>(moq::MockBehavior.Strict);

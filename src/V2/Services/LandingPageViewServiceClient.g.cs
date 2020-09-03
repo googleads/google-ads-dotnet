@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>LandingPageViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch landing page views.
+    /// </remarks>
     public abstract partial class LandingPageViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>LandingPageViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch landing page views.
+    /// </remarks>
     public sealed partial class LandingPageViewServiceClientImpl : LandingPageViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetLandingPageViewRequest, gagvr::LandingPageView> _callGetLandingPageView;

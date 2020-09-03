@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>KeywordViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage keyword views.
+    /// </remarks>
     public abstract partial class KeywordViewServiceClient
     {
         /// <summary>
@@ -304,6 +307,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>KeywordViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage keyword views.
+    /// </remarks>
     public sealed partial class KeywordViewServiceClientImpl : KeywordViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetKeywordViewRequest, gagvr::KeywordView> _callGetKeywordView;

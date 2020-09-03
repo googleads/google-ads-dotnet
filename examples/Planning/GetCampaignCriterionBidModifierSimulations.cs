@@ -14,12 +14,12 @@
 
 using System;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This example gets all available criterion bid modifier simulations for a given campaign.
@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Creates a query that retrieves the criterion bid modifier simulations.
             string query = $@"
@@ -98,7 +98,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                             foreach (BidModifierSimulationPoint point in
                                 simulation.BidModifierPointList.Points)
                             {
-                                Console.WriteLine($"\tbid modifier: {point.BidModifier.Value:F} " +
+                                Console.WriteLine($"\tbid modifier: {point.BidModifier:F} " +
                                     $"=> clicks: {point.Clicks}, " +
                                     $"cost: {point.CostMicros}, " +
                                     $"impressions: {point.Impressions}, " +

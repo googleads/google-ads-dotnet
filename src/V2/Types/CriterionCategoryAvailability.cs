@@ -78,7 +78,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// <summary>
   /// Information of category availability, per advertising channel.
   /// </summary>
-  public sealed partial class CriterionCategoryAvailability : pb::IMessage<CriterionCategoryAvailability> {
+  public sealed partial class CriterionCategoryAvailability : pb::IMessage<CriterionCategoryAvailability>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CriterionCategoryAvailability> _parser = new pb::MessageParser<CriterionCategoryAvailability>(() => new CriterionCategoryAvailability());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -176,6 +180,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (channel_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Channel);
@@ -184,7 +191,22 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (channel_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Channel);
+      }
+      locale_.WriteTo(ref output, _repeated_locale_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -216,6 +238,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -235,7 +260,33 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (channel_ == null) {
+              Channel = new global::Google.Ads.GoogleAds.V2.Common.CriterionCategoryChannelAvailability();
+            }
+            input.ReadMessage(Channel);
+            break;
+          }
+          case 18: {
+            locale_.AddEntriesFrom(ref input, _repeated_locale_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -243,7 +294,11 @@ namespace Google.Ads.GoogleAds.V2.Common {
   /// Information of advertising channel type and subtypes a category is available
   /// in.
   /// </summary>
-  public sealed partial class CriterionCategoryChannelAvailability : pb::IMessage<CriterionCategoryChannelAvailability> {
+  public sealed partial class CriterionCategoryChannelAvailability : pb::IMessage<CriterionCategoryChannelAvailability>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CriterionCategoryChannelAvailability> _parser = new pb::MessageParser<CriterionCategoryChannelAvailability>(() => new CriterionCategoryChannelAvailability());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -385,6 +440,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (AvailabilityMode != global::Google.Ads.GoogleAds.V2.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) AvailabilityMode);
@@ -400,7 +458,29 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (AvailabilityMode != global::Google.Ads.GoogleAds.V2.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) AvailabilityMode);
+      }
+      if (AdvertisingChannelType != global::Google.Ads.GoogleAds.V2.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) AdvertisingChannelType);
+      }
+      advertisingChannelSubType_.WriteTo(ref output, _repeated_advertisingChannelSubType_codec);
+      if (includeDefaultChannelSubType_ != null) {
+        _single_includeDefaultChannelSubType_codec.WriteTagAndValue(ref output, IncludeDefaultChannelSubType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -443,6 +523,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -471,14 +554,53 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            AvailabilityMode = (global::Google.Ads.GoogleAds.V2.Enums.CriterionCategoryChannelAvailabilityModeEnum.Types.CriterionCategoryChannelAvailabilityMode) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            AdvertisingChannelType = (global::Google.Ads.GoogleAds.V2.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType) input.ReadEnum();
+            break;
+          }
+          case 26:
+          case 24: {
+            advertisingChannelSubType_.AddEntriesFrom(ref input, _repeated_advertisingChannelSubType_codec);
+            break;
+          }
+          case 34: {
+            bool? value = _single_includeDefaultChannelSubType_codec.Read(ref input);
+            if (includeDefaultChannelSubType_ == null || value != false) {
+              IncludeDefaultChannelSubType = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Information about which locales a category is available in.
   /// </summary>
-  public sealed partial class CriterionCategoryLocaleAvailability : pb::IMessage<CriterionCategoryLocaleAvailability> {
+  public sealed partial class CriterionCategoryLocaleAvailability : pb::IMessage<CriterionCategoryLocaleAvailability>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CriterionCategoryLocaleAvailability> _parser = new pb::MessageParser<CriterionCategoryLocaleAvailability>(() => new CriterionCategoryLocaleAvailability());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -601,6 +723,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (AvailabilityMode != global::Google.Ads.GoogleAds.V2.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) AvailabilityMode);
@@ -614,7 +739,27 @@ namespace Google.Ads.GoogleAds.V2.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (AvailabilityMode != global::Google.Ads.GoogleAds.V2.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) AvailabilityMode);
+      }
+      if (countryCode_ != null) {
+        _single_countryCode_codec.WriteTagAndValue(ref output, CountryCode);
+      }
+      if (languageCode_ != null) {
+        _single_languageCode_codec.WriteTagAndValue(ref output, LanguageCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -657,6 +802,9 @@ namespace Google.Ads.GoogleAds.V2.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -683,7 +831,40 @@ namespace Google.Ads.GoogleAds.V2.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            AvailabilityMode = (global::Google.Ads.GoogleAds.V2.Enums.CriterionCategoryLocaleAvailabilityModeEnum.Types.CriterionCategoryLocaleAvailabilityMode) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            string value = _single_countryCode_codec.Read(ref input);
+            if (countryCode_ == null || value != "") {
+              CountryCode = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_languageCode_codec.Read(ref input);
+            if (languageCode_ == null || value != "") {
+              LanguageCode = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

@@ -133,6 +133,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupCriterionSimulationService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch ad group criterion simulations.
+    /// </remarks>
     public abstract partial class AdGroupCriterionSimulationServiceClient
     {
         /// <summary>
@@ -312,6 +315,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupCriterionSimulationService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch ad group criterion simulations.
+    /// </remarks>
     public sealed partial class AdGroupCriterionSimulationServiceClientImpl : AdGroupCriterionSimulationServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupCriterionSimulationRequest, gagvr::AdGroupCriterionSimulation> _callGetAdGroupCriterionSimulation;

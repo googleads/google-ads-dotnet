@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedGoogleAdsFieldServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetGoogleAdsFieldRequestObject()
         {
             moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetGoogleAdsFieldRequestObjectAsync()
         {
             moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
@@ -119,7 +119,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetGoogleAdsField()
         {
             moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
@@ -163,7 +163,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetGoogleAdsFieldAsync()
         {
             moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
@@ -209,7 +209,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetGoogleAdsFieldResourceNames()
         {
             moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);
@@ -253,7 +253,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetGoogleAdsFieldResourceNamesAsync()
         {
             moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsFieldService.GoogleAdsFieldServiceClient>(moq::MockBehavior.Strict);

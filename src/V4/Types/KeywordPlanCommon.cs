@@ -68,7 +68,11 @@ namespace Google.Ads.GoogleAds.V4.Common {
   /// Refer to https://support.google.com/google-ads/answer/3022575 for more
   /// details.
   /// </summary>
-  public sealed partial class KeywordPlanHistoricalMetrics : pb::IMessage<KeywordPlanHistoricalMetrics> {
+  public sealed partial class KeywordPlanHistoricalMetrics : pb::IMessage<KeywordPlanHistoricalMetrics>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<KeywordPlanHistoricalMetrics> _parser = new pb::MessageParser<KeywordPlanHistoricalMetrics>(() => new KeywordPlanHistoricalMetrics());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -247,6 +251,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (avgMonthlySearches_ != null) {
         _single_avgMonthlySearches_codec.WriteTagAndValue(output, AvgMonthlySearches);
       }
@@ -267,7 +274,34 @@ namespace Google.Ads.GoogleAds.V4.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (avgMonthlySearches_ != null) {
+        _single_avgMonthlySearches_codec.WriteTagAndValue(ref output, AvgMonthlySearches);
+      }
+      if (Competition != global::Google.Ads.GoogleAds.V4.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Competition);
+      }
+      if (competitionIndex_ != null) {
+        _single_competitionIndex_codec.WriteTagAndValue(ref output, CompetitionIndex);
+      }
+      if (lowTopOfPageBidMicros_ != null) {
+        _single_lowTopOfPageBidMicros_codec.WriteTagAndValue(ref output, LowTopOfPageBidMicros);
+      }
+      if (highTopOfPageBidMicros_ != null) {
+        _single_highTopOfPageBidMicros_codec.WriteTagAndValue(ref output, HighTopOfPageBidMicros);
+      }
+      monthlySearchVolumes_.WriteTo(ref output, _repeated_monthlySearchVolumes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -328,6 +362,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -372,14 +409,69 @@ namespace Google.Ads.GoogleAds.V4.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_avgMonthlySearches_codec.Read(ref input);
+            if (avgMonthlySearches_ == null || value != 0L) {
+              AvgMonthlySearches = value;
+            }
+            break;
+          }
+          case 16: {
+            Competition = (global::Google.Ads.GoogleAds.V4.Enums.KeywordPlanCompetitionLevelEnum.Types.KeywordPlanCompetitionLevel) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            long? value = _single_competitionIndex_codec.Read(ref input);
+            if (competitionIndex_ == null || value != 0L) {
+              CompetitionIndex = value;
+            }
+            break;
+          }
+          case 34: {
+            long? value = _single_lowTopOfPageBidMicros_codec.Read(ref input);
+            if (lowTopOfPageBidMicros_ == null || value != 0L) {
+              LowTopOfPageBidMicros = value;
+            }
+            break;
+          }
+          case 42: {
+            long? value = _single_highTopOfPageBidMicros_codec.Read(ref input);
+            if (highTopOfPageBidMicros_ == null || value != 0L) {
+              HighTopOfPageBidMicros = value;
+            }
+            break;
+          }
+          case 50: {
+            monthlySearchVolumes_.AddEntriesFrom(ref input, _repeated_monthlySearchVolumes_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Monthly search volume.
   /// </summary>
-  public sealed partial class MonthlySearchVolume : pb::IMessage<MonthlySearchVolume> {
+  public sealed partial class MonthlySearchVolume : pb::IMessage<MonthlySearchVolume>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<MonthlySearchVolume> _parser = new pb::MessageParser<MonthlySearchVolume>(() => new MonthlySearchVolume());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -501,6 +593,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (year_ != null) {
         _single_year_codec.WriteTagAndValue(output, Year);
       }
@@ -514,7 +609,27 @@ namespace Google.Ads.GoogleAds.V4.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (year_ != null) {
+        _single_year_codec.WriteTagAndValue(ref output, Year);
+      }
+      if (Month != global::Google.Ads.GoogleAds.V4.Enums.MonthOfYearEnum.Types.MonthOfYear.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Month);
+      }
+      if (monthlySearches_ != null) {
+        _single_monthlySearches_codec.WriteTagAndValue(ref output, MonthlySearches);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -557,6 +672,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -583,7 +701,40 @@ namespace Google.Ads.GoogleAds.V4.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            long? value = _single_year_codec.Read(ref input);
+            if (year_ == null || value != 0L) {
+              Year = value;
+            }
+            break;
+          }
+          case 16: {
+            Month = (global::Google.Ads.GoogleAds.V4.Enums.MonthOfYearEnum.Types.MonthOfYear) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            long? value = _single_monthlySearches_codec.Read(ref input);
+            if (monthlySearches_ == null || value != 0L) {
+              MonthlySearches = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

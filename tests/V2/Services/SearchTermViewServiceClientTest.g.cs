@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedSearchTermViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetSearchTermViewRequestObject()
         {
             moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -51,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetSearchTermViewRequestObjectAsync()
         {
             moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetSearchTermView()
         {
             moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetSearchTermViewAsync()
         {
             moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetSearchTermViewResourceNames()
         {
             moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetSearchTermViewResourceNamesAsync()
         {
             moq::Mock<SearchTermViewService.SearchTermViewServiceClient> mockGrpcClient = new moq::Mock<SearchTermViewService.SearchTermViewServiceClient>(moq::MockBehavior.Strict);

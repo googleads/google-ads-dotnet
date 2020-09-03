@@ -73,6 +73,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
       /// <summary>
       /// Creates or removes an account link.
+      /// From V5, create is not supported through
+      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.CreateAccountLink instead.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -153,6 +156,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
       }
       /// <summary>
       /// Creates or removes an account link.
+      /// From V5, create is not supported through
+      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.CreateAccountLink instead.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -165,6 +171,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
       }
       /// <summary>
       /// Creates or removes an account link.
+      /// From V5, create is not supported through
+      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.CreateAccountLink instead.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -175,6 +184,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
       }
       /// <summary>
       /// Creates or removes an account link.
+      /// From V5, create is not supported through
+      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.CreateAccountLink instead.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -187,6 +199,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
       }
       /// <summary>
       /// Creates or removes an account link.
+      /// From V5, create is not supported through
+      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.CreateAccountLink instead.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

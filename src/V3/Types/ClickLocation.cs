@@ -52,7 +52,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
   /// <summary>
   /// Location criteria associated with a click.
   /// </summary>
-  public sealed partial class ClickLocation : pb::IMessage<ClickLocation> {
+  public sealed partial class ClickLocation : pb::IMessage<ClickLocation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ClickLocation> _parser = new pb::MessageParser<ClickLocation>(() => new ClickLocation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -212,6 +216,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (city_ != null) {
         _single_city_codec.WriteTagAndValue(output, City);
       }
@@ -230,7 +237,32 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (city_ != null) {
+        _single_city_codec.WriteTagAndValue(ref output, City);
+      }
+      if (country_ != null) {
+        _single_country_codec.WriteTagAndValue(ref output, Country);
+      }
+      if (metro_ != null) {
+        _single_metro_codec.WriteTagAndValue(ref output, Metro);
+      }
+      if (mostSpecific_ != null) {
+        _single_mostSpecific_codec.WriteTagAndValue(ref output, MostSpecific);
+      }
+      if (region_ != null) {
+        _single_region_codec.WriteTagAndValue(ref output, Region);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -291,6 +323,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -334,7 +369,57 @@ namespace Google.Ads.GoogleAds.V3.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            string value = _single_city_codec.Read(ref input);
+            if (city_ == null || value != "") {
+              City = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_country_codec.Read(ref input);
+            if (country_ == null || value != "") {
+              Country = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_metro_codec.Read(ref input);
+            if (metro_ == null || value != "") {
+              Metro = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_mostSpecific_codec.Read(ref input);
+            if (mostSpecific_ == null || value != "") {
+              MostSpecific = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_region_codec.Read(ref input);
+            if (region_ == null || value != "") {
+              Region = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

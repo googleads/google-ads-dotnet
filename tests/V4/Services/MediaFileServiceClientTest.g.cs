@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedMediaFileServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMediaFileRequestObject()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
@@ -59,7 +59,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMediaFileRequestObjectAsync()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMediaFile()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
@@ -119,7 +119,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMediaFileAsync()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMediaFileResourceNames()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
@@ -179,7 +179,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMediaFileResourceNamesAsync()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
@@ -210,7 +210,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateMediaFilesRequestObject()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
@@ -239,7 +239,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateMediaFilesRequestObjectAsync()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
@@ -270,7 +270,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateMediaFiles()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);
@@ -297,7 +297,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateMediaFilesAsync()
         {
             moq::Mock<MediaFileService.MediaFileServiceClient> mockGrpcClient = new moq::Mock<MediaFileService.MediaFileServiceClient>(moq::MockBehavior.Strict);

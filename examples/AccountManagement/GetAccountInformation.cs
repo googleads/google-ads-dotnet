@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example lists basic information about an advertising account, like the name,
@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the CustomerService.
-            CustomerServiceClient customerService = client.GetService(Services.V4.CustomerService);
+            CustomerServiceClient customerService = client.GetService(Services.V5.CustomerService);
 
             try
             {

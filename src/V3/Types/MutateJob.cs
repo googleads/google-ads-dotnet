@@ -71,7 +71,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   /// by the user. The mutates themselves aren't readable and the results of the
   /// job can only be read using MutateJobService.ListMutateJobResults.
   /// </summary>
-  public sealed partial class MutateJob : pb::IMessage<MutateJob> {
+  public sealed partial class MutateJob : pb::IMessage<MutateJob>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<MutateJob> _parser = new pb::MessageParser<MutateJob>(() => new MutateJob());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -249,6 +253,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
@@ -273,7 +280,38 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (nextAddSequenceToken_ != null) {
+        _single_nextAddSequenceToken_codec.WriteTagAndValue(ref output, NextAddSequenceToken);
+      }
+      if (metadata_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Metadata);
+      }
+      if (Status != global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusEnum.Types.MutateJobStatus.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Status);
+      }
+      if (longRunningOperation_ != null) {
+        _single_longRunningOperation_codec.WriteTagAndValue(ref output, LongRunningOperation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -339,6 +377,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -383,7 +424,58 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            long? value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != 0L) {
+              Id = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_nextAddSequenceToken_codec.Read(ref input);
+            if (nextAddSequenceToken_ == null || value != "") {
+              NextAddSequenceToken = value;
+            }
+            break;
+          }
+          case 34: {
+            if (metadata_ == null) {
+              Metadata = new global::Google.Ads.GoogleAds.V3.Resources.MutateJob.Types.MutateJobMetadata();
+            }
+            input.ReadMessage(Metadata);
+            break;
+          }
+          case 40: {
+            Status = (global::Google.Ads.GoogleAds.V3.Enums.MutateJobStatusEnum.Types.MutateJobStatus) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            string value = _single_longRunningOperation_codec.Read(ref input);
+            if (longRunningOperation_ == null || value != "") {
+              LongRunningOperation = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the MutateJob message type.</summary>
@@ -393,7 +485,11 @@ namespace Google.Ads.GoogleAds.V3.Resources {
       /// Additional information about the mutate job. This message is also used as
       /// metadata returned in mutate job Long Running Operations.
       /// </summary>
-      public sealed partial class MutateJobMetadata : pb::IMessage<MutateJobMetadata> {
+      public sealed partial class MutateJobMetadata : pb::IMessage<MutateJobMetadata>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
         private static readonly pb::MessageParser<MutateJobMetadata> _parser = new pb::MessageParser<MutateJobMetadata>(() => new MutateJobMetadata());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -557,6 +653,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
           if (creationDateTime_ != null) {
             _single_creationDateTime_codec.WriteTagAndValue(output, CreationDateTime);
           }
@@ -575,7 +674,32 @@ namespace Google.Ads.GoogleAds.V3.Resources {
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (creationDateTime_ != null) {
+            _single_creationDateTime_codec.WriteTagAndValue(ref output, CreationDateTime);
+          }
+          if (completionDateTime_ != null) {
+            _single_completionDateTime_codec.WriteTagAndValue(ref output, CompletionDateTime);
+          }
+          if (estimatedCompletionRatio_ != null) {
+            _single_estimatedCompletionRatio_codec.WriteTagAndValue(ref output, EstimatedCompletionRatio);
+          }
+          if (operationCount_ != null) {
+            _single_operationCount_codec.WriteTagAndValue(ref output, OperationCount);
+          }
+          if (executedOperationCount_ != null) {
+            _single_executedOperationCount_codec.WriteTagAndValue(ref output, ExecutedOperationCount);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
@@ -636,6 +760,9 @@ namespace Google.Ads.GoogleAds.V3.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
             switch(tag) {
@@ -679,7 +806,57 @@ namespace Google.Ads.GoogleAds.V3.Resources {
               }
             }
           }
+        #endif
         }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                string value = _single_creationDateTime_codec.Read(ref input);
+                if (creationDateTime_ == null || value != "") {
+                  CreationDateTime = value;
+                }
+                break;
+              }
+              case 18: {
+                string value = _single_completionDateTime_codec.Read(ref input);
+                if (completionDateTime_ == null || value != "") {
+                  CompletionDateTime = value;
+                }
+                break;
+              }
+              case 26: {
+                double? value = _single_estimatedCompletionRatio_codec.Read(ref input);
+                if (estimatedCompletionRatio_ == null || value != 0D) {
+                  EstimatedCompletionRatio = value;
+                }
+                break;
+              }
+              case 34: {
+                long? value = _single_operationCount_codec.Read(ref input);
+                if (operationCount_ == null || value != 0L) {
+                  OperationCount = value;
+                }
+                break;
+              }
+              case 42: {
+                long? value = _single_executedOperationCount_codec.Read(ref input);
+                if (executedOperationCount_ == null || value != 0L) {
+                  ExecutedOperationCount = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+        #endif
 
       }
 

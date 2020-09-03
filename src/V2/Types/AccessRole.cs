@@ -26,15 +26,15 @@ namespace Google.Ads.GoogleAds.V2.Enums {
           string.Concat(
             "Ci9nb29nbGUvYWRzL2dvb2dsZWFkcy92Mi9lbnVtcy9hY2Nlc3Nfcm9sZS5w",
             "cm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIuZW51bXMaHGdvb2dsZS9h",
-            "cGkvYW5ub3RhdGlvbnMucHJvdG8iZAoOQWNjZXNzUm9sZUVudW0iUgoKQWNj",
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8idAoOQWNjZXNzUm9sZUVudW0iYgoKQWNj",
             "ZXNzUm9sZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIJCgVBRE1J",
-            "ThACEgwKCFNUQU5EQVJEEAMSDQoJUkVBRF9PTkxZEARC5AEKIWNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52Mi5lbnVtc0IPQWNjZXNzUm9sZVByb3RvUAFa",
-            "Qmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92Mi9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYyLkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjJcRW51",
-            "bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjo6RW51bXNiBnByb3Rv",
-            "Mw=="));
+            "ThACEgwKCFNUQU5EQVJEEAMSDQoJUkVBRF9PTkxZEAQSDgoKRU1BSUxfT05M",
+            "WRAFQuQBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIuZW51bXNCD0Fj",
+            "Y2Vzc1JvbGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
+            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIvZW51bXM7ZW51bXOiAgNHQUGq",
+            "Ah1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMi5FbnVtc8oCHUdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYyXEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjI6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -48,7 +48,11 @@ namespace Google.Ads.GoogleAds.V2.Enums {
   /// <summary>
   /// Container for enum describing possible access role for user.
   /// </summary>
-  public sealed partial class AccessRoleEnum : pb::IMessage<AccessRoleEnum> {
+  public sealed partial class AccessRoleEnum : pb::IMessage<AccessRoleEnum>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AccessRoleEnum> _parser = new pb::MessageParser<AccessRoleEnum>(() => new AccessRoleEnum());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -113,10 +117,23 @@ namespace Google.Ads.GoogleAds.V2.Enums {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -137,6 +154,9 @@ namespace Google.Ads.GoogleAds.V2.Enums {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -145,7 +165,22 @@ namespace Google.Ads.GoogleAds.V2.Enums {
             break;
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the AccessRoleEnum message type.</summary>
@@ -175,6 +210,11 @@ namespace Google.Ads.GoogleAds.V2.Enums {
         /// Can view campaigns and account changes, but cannot make edits.
         /// </summary>
         [pbr::OriginalName("READ_ONLY")] ReadOnly = 4,
+        /// <summary>
+        /// Role for \"email only\" access. Represents an email recipient rather than
+        /// a true User entity.
+        /// </summary>
+        [pbr::OriginalName("EMAIL_ONLY")] EmailOnly = 5,
       }
 
     }

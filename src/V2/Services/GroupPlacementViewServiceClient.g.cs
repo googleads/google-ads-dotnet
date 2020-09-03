@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>GroupPlacementViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Group Placement views.
+    /// </remarks>
     public abstract partial class GroupPlacementViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>GroupPlacementViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch Group Placement views.
+    /// </remarks>
     public sealed partial class GroupPlacementViewServiceClientImpl : GroupPlacementViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetGroupPlacementViewRequest, gagvr::GroupPlacementView> _callGetGroupPlacementView;

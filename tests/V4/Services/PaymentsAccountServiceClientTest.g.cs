@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedPaymentsAccountServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void ListPaymentsAccountsRequestObject()
         {
             moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient>(moq::MockBehavior.Strict);
@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ListPaymentsAccountsRequestObjectAsync()
         {
             moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient>(moq::MockBehavior.Strict);
@@ -74,7 +74,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void ListPaymentsAccounts()
         {
             moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient>(moq::MockBehavior.Strict);
@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ListPaymentsAccountsAsync()
         {
             moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient> mockGrpcClient = new moq::Mock<PaymentsAccountService.PaymentsAccountServiceClient>(moq::MockBehavior.Strict);

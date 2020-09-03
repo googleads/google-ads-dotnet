@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>LocationViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch location views.
+    /// </remarks>
     public abstract partial class LocationViewServiceClient
     {
         /// <summary>
@@ -304,6 +307,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>LocationViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch location views.
+    /// </remarks>
     public sealed partial class LocationViewServiceClientImpl : LocationViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetLocationViewRequest, gagvr::LocationView> _callGetLocationView;

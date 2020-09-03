@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedGeoTargetConstantServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetGeoTargetConstantRequestObject()
         {
             moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
@@ -54,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetGeoTargetConstantRequestObjectAsync()
         {
             moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
@@ -81,7 +81,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetGeoTargetConstant()
         {
             moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetGeoTargetConstantAsync()
         {
             moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
@@ -133,7 +133,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetGeoTargetConstantResourceNames()
         {
             moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
@@ -158,7 +158,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetGeoTargetConstantResourceNamesAsync()
         {
             moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
@@ -185,7 +185,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void SuggestGeoTargetConstantsRequestObject()
         {
             moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);
@@ -210,7 +210,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task SuggestGeoTargetConstantsRequestObjectAsync()
         {
             moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient> mockGrpcClient = new moq::Mock<GeoTargetConstantService.GeoTargetConstantServiceClient>(moq::MockBehavior.Strict);

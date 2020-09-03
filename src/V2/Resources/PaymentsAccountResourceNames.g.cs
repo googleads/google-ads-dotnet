@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <see cref="gagvr::PaymentsAccountName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::PaymentsAccountName ResourceNameAsPaymentsAccountName
+        internal PaymentsAccountName ResourceNameAsPaymentsAccountName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::PaymentsAccountName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <summary>
         /// <see cref="gagvr::PaymentsAccountName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::PaymentsAccountName PaymentsAccountName
+        internal PaymentsAccountName PaymentsAccountName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::PaymentsAccountName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

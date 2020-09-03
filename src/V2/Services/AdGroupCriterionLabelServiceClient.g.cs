@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupCriterionLabelService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage labels on ad group criteria.
+    /// </remarks>
     public abstract partial class AdGroupCriterionLabelServiceClient
     {
         /// <summary>
@@ -410,6 +413,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AdGroupCriterionLabelService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage labels on ad group criteria.
+    /// </remarks>
     public sealed partial class AdGroupCriterionLabelServiceClientImpl : AdGroupCriterionLabelServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupCriterionLabelRequest, gagvr::AdGroupCriterionLabel> _callGetAdGroupCriterionLabel;

@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using System;
-using static Google.Ads.GoogleAds.V4.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.BudgetDeliveryMethodEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example illustrates how to graduate a campaign experiment.
@@ -60,7 +60,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the CampaignExperimentService.
             CampaignExperimentServiceClient campaignExperimentService = client.GetService(
-                Services.V4.CampaignExperimentService);
+                Services.V5.CampaignExperimentService);
 
             try
             {
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V4.CampaignBudgetService);
+                Services.V5.CampaignBudgetService);
 
             // Create the campaign budget.
             CampaignBudget budget = new CampaignBudget()

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedAdGroupCriterionServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupCriterionRequestObject()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -104,7 +104,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupCriterionRequestObjectAsync()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -179,7 +179,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupCriterion()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -252,7 +252,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupCriterionAsync()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -327,7 +327,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupCriterionResourceNames()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -400,7 +400,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupCriterionResourceNamesAsync()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -475,7 +475,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAdGroupCriteriaRequestObject()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -504,7 +504,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAdGroupCriteriaRequestObjectAsync()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -535,7 +535,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateAdGroupCriteria()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -562,7 +562,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAdGroupCriteriaAsync()
         {
             moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient> mockGrpcClient = new moq::Mock<AdGroupCriterionService.AdGroupCriterionServiceClient>(moq::MockBehavior.Strict);

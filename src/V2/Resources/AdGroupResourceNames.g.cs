@@ -240,7 +240,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <summary>
         /// <see cref="gagvr::AdGroupName"/>-typed view over the <see cref="ResourceName"/> resource name property.
         /// </summary>
-        public gagvr::AdGroupName ResourceNameAsAdGroupName
+        internal AdGroupName ResourceNameAsAdGroupName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::AdGroupName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -249,7 +249,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <summary>
         /// <see cref="gagvr::AdGroupName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::AdGroupName AdGroupName
+        internal AdGroupName AdGroupName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::AdGroupName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";
@@ -267,7 +267,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <summary>
         /// <see cref="gagvr::AdGroupName"/>-typed view over the <see cref="BaseAdGroup"/> resource name property.
         /// </summary>
-        public gagvr::AdGroupName BaseAdGroupAsAdGroupName
+        internal AdGroupName BaseAdGroupAsAdGroupName
         {
             get => string.IsNullOrEmpty(BaseAdGroup) ? null : gagvr::AdGroupName.Parse(BaseAdGroup, allowUnparsed: true);
             set => BaseAdGroup = value?.ToString() ?? "";
@@ -276,7 +276,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <summary>
         /// <see cref="AdGroupLabelName"/>-typed view over the <see cref="Labels"/> resource name property.
         /// </summary>
-        public gax::ResourceNameList<AdGroupLabelName> LabelsAsAdGroupLabelNames
+        internal gax::ResourceNameList<AdGroupLabelName> LabelsAsAdGroupLabelNames
         {
             get => new gax::ResourceNameList<AdGroupLabelName>(Labels, s => string.IsNullOrEmpty(s) ? null : AdGroupLabelName.Parse(s, allowUnparsed: true));
         }

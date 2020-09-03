@@ -63,7 +63,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
   /// A rule specifying the maximum number of times an ad (or some set of ads) can
   /// be shown to a user over a particular time period.
   /// </summary>
-  public sealed partial class FrequencyCapEntry : pb::IMessage<FrequencyCapEntry> {
+  public sealed partial class FrequencyCapEntry : pb::IMessage<FrequencyCapEntry>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FrequencyCapEntry> _parser = new pb::MessageParser<FrequencyCapEntry>(() => new FrequencyCapEntry());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -165,6 +169,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (key_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Key);
@@ -175,7 +182,24 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (key_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Key);
+      }
+      if (cap_ != null) {
+        _single_cap_codec.WriteTagAndValue(ref output, Cap);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -213,6 +237,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -235,7 +262,36 @@ namespace Google.Ads.GoogleAds.V3.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (key_ == null) {
+              Key = new global::Google.Ads.GoogleAds.V3.Common.FrequencyCapKey();
+            }
+            input.ReadMessage(Key);
+            break;
+          }
+          case 18: {
+            int? value = _single_cap_codec.Read(ref input);
+            if (cap_ == null || value != 0) {
+              Cap = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -243,7 +299,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
   /// A group of fields used as keys for a frequency cap.
   /// There can be no more than one frequency cap with the same key.
   /// </summary>
-  public sealed partial class FrequencyCapKey : pb::IMessage<FrequencyCapKey> {
+  public sealed partial class FrequencyCapKey : pb::IMessage<FrequencyCapKey>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<FrequencyCapKey> _parser = new pb::MessageParser<FrequencyCapKey>(() => new FrequencyCapKey());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -379,6 +439,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Level != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Level);
@@ -397,7 +460,32 @@ namespace Google.Ads.GoogleAds.V3.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Level != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Level);
+      }
+      if (TimeUnit != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) TimeUnit);
+      }
+      if (EventType != global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) EventType);
+      }
+      if (timeLength_ != null) {
+        _single_timeLength_codec.WriteTagAndValue(ref output, TimeLength);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -444,6 +532,9 @@ namespace Google.Ads.GoogleAds.V3.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -471,7 +562,41 @@ namespace Google.Ads.GoogleAds.V3.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Level = (global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            TimeUnit = (global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            EventType = (global::Google.Ads.GoogleAds.V3.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType) input.ReadEnum();
+            break;
+          }
+          case 34: {
+            int? value = _single_timeLength_codec.Read(ref input);
+            if (timeLength_ == null || value != 0) {
+              TimeLength = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

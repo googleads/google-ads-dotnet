@@ -99,7 +99,11 @@ namespace Google.Ads.GoogleAds.V4.Services {
   /// Request message for
   /// [ConversionAdjustmentUploadService.UploadConversionAdjustments][google.ads.googleads.v4.services.ConversionAdjustmentUploadService.UploadConversionAdjustments].
   /// </summary>
-  public sealed partial class UploadConversionAdjustmentsRequest : pb::IMessage<UploadConversionAdjustmentsRequest> {
+  public sealed partial class UploadConversionAdjustmentsRequest : pb::IMessage<UploadConversionAdjustmentsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UploadConversionAdjustmentsRequest> _parser = new pb::MessageParser<UploadConversionAdjustmentsRequest>(() => new UploadConversionAdjustmentsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -238,6 +242,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (CustomerId.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(CustomerId);
@@ -254,7 +261,30 @@ namespace Google.Ads.GoogleAds.V4.Services {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      conversionAdjustments_.WriteTo(ref output, _repeated_conversionAdjustments_codec);
+      if (PartialFailure != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(PartialFailure);
+      }
+      if (ValidateOnly != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(ValidateOnly);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -295,6 +325,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -319,7 +352,38 @@ namespace Google.Ads.GoogleAds.V4.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+          case 18: {
+            conversionAdjustments_.AddEntriesFrom(ref input, _repeated_conversionAdjustments_codec);
+            break;
+          }
+          case 24: {
+            PartialFailure = input.ReadBool();
+            break;
+          }
+          case 32: {
+            ValidateOnly = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -327,7 +391,11 @@ namespace Google.Ads.GoogleAds.V4.Services {
   /// Response message for
   /// [ConversionAdjustmentUploadService.UploadConversionAdjustments][google.ads.googleads.v4.services.ConversionAdjustmentUploadService.UploadConversionAdjustments].
   /// </summary>
-  public sealed partial class UploadConversionAdjustmentsResponse : pb::IMessage<UploadConversionAdjustmentsResponse> {
+  public sealed partial class UploadConversionAdjustmentsResponse : pb::IMessage<UploadConversionAdjustmentsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<UploadConversionAdjustmentsResponse> _parser = new pb::MessageParser<UploadConversionAdjustmentsResponse>(() => new UploadConversionAdjustmentsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -433,6 +501,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (partialFailureError_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(PartialFailureError);
@@ -441,7 +512,22 @@ namespace Google.Ads.GoogleAds.V4.Services {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (partialFailureError_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(PartialFailureError);
+      }
+      results_.WriteTo(ref output, _repeated_results_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -473,6 +559,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -492,14 +581,44 @@ namespace Google.Ads.GoogleAds.V4.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (partialFailureError_ == null) {
+              PartialFailureError = new global::Google.Rpc.Status();
+            }
+            input.ReadMessage(PartialFailureError);
+            break;
+          }
+          case 18: {
+            results_.AddEntriesFrom(ref input, _repeated_results_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// A conversion adjustment.
   /// </summary>
-  public sealed partial class ConversionAdjustment : pb::IMessage<ConversionAdjustment> {
+  public sealed partial class ConversionAdjustment : pb::IMessage<ConversionAdjustment>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ConversionAdjustment> _parser = new pb::MessageParser<ConversionAdjustment>(() => new ConversionAdjustment());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -603,6 +722,10 @@ namespace Google.Ads.GoogleAds.V4.Services {
     /// Information needed to restate the conversion's value.
     /// Required for restatements. Should not be supplied for retractions. An error
     /// will be returned if provided for a retraction.
+    /// NOTE: If you want to upload a second restatement with a different adjusted
+    /// value, it must have a new, more recent, adjustment occurrence time.
+    /// Otherwise, it will be treated as a duplicate of the previous restatement
+    /// and ignored.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V4.Services.RestatementValue RestatementValue {
@@ -709,6 +832,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) {
         output.WriteRawTag(10);
         output.WriteMessage(GclidDateTimePair);
@@ -733,7 +859,38 @@ namespace Google.Ads.GoogleAds.V4.Services {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) {
+        output.WriteRawTag(10);
+        output.WriteMessage(GclidDateTimePair);
+      }
+      if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.OrderId) {
+        _oneof_orderId_codec.WriteTagAndValue(ref output, (string) conversionIdentifier_);
+      }
+      if (conversionAction_ != null) {
+        _single_conversionAction_codec.WriteTagAndValue(ref output, ConversionAction);
+      }
+      if (adjustmentDateTime_ != null) {
+        _single_adjustmentDateTime_codec.WriteTagAndValue(ref output, AdjustmentDateTime);
+      }
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V4.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) AdjustmentType);
+      }
+      if (restatementValue_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(RestatementValue);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -803,6 +960,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -849,14 +1009,71 @@ namespace Google.Ads.GoogleAds.V4.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::Google.Ads.GoogleAds.V4.Services.GclidDateTimePair subBuilder = new global::Google.Ads.GoogleAds.V4.Services.GclidDateTimePair();
+            if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) {
+              subBuilder.MergeFrom(GclidDateTimePair);
+            }
+            input.ReadMessage(subBuilder);
+            GclidDateTimePair = subBuilder;
+            break;
+          }
+          case 18: {
+            OrderId = _oneof_orderId_codec.Read(ref input);
+            break;
+          }
+          case 26: {
+            string value = _single_conversionAction_codec.Read(ref input);
+            if (conversionAction_ == null || value != "") {
+              ConversionAction = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_adjustmentDateTime_codec.Read(ref input);
+            if (adjustmentDateTime_ == null || value != "") {
+              AdjustmentDateTime = value;
+            }
+            break;
+          }
+          case 40: {
+            AdjustmentType = (global::Google.Ads.GoogleAds.V4.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            if (restatementValue_ == null) {
+              RestatementValue = new global::Google.Ads.GoogleAds.V4.Services.RestatementValue();
+            }
+            input.ReadMessage(RestatementValue);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Contains information needed to restate a conversion's value.
   /// </summary>
-  public sealed partial class RestatementValue : pb::IMessage<RestatementValue> {
+  public sealed partial class RestatementValue : pb::IMessage<RestatementValue>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<RestatementValue> _parser = new pb::MessageParser<RestatementValue>(() => new RestatementValue());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -899,6 +1116,10 @@ namespace Google.Ads.GoogleAds.V4.Services {
     /// The restated conversion value. This is the value of the conversion after
     /// restatement. For example, to change the value of a conversion from 100 to
     /// 70, an adjusted value of 70 should be reported.
+    /// NOTE: If you want to upload a second restatement with a different adjusted
+    /// value, it must have a new, more recent, adjustment occurrence time.
+    /// Otherwise, it will be treated as a duplicate of the previous restatement
+    /// and ignored.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public double? AdjustedValue {
@@ -964,6 +1185,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (adjustedValue_ != null) {
         _single_adjustedValue_codec.WriteTagAndValue(output, AdjustedValue);
       }
@@ -973,7 +1197,23 @@ namespace Google.Ads.GoogleAds.V4.Services {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (adjustedValue_ != null) {
+        _single_adjustedValue_codec.WriteTagAndValue(ref output, AdjustedValue);
+      }
+      if (currencyCode_ != null) {
+        _single_currencyCode_codec.WriteTagAndValue(ref output, CurrencyCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1010,6 +1250,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1032,7 +1275,36 @@ namespace Google.Ads.GoogleAds.V4.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            double? value = _single_adjustedValue_codec.Read(ref input);
+            if (adjustedValue_ == null || value != 0D) {
+              AdjustedValue = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_currencyCode_codec.Read(ref input);
+            if (currencyCode_ == null || value != "") {
+              CurrencyCode = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -1040,7 +1312,11 @@ namespace Google.Ads.GoogleAds.V4.Services {
   /// Uniquely identifies a conversion that was reported without an order ID
   /// specified.
   /// </summary>
-  public sealed partial class GclidDateTimePair : pb::IMessage<GclidDateTimePair> {
+  public sealed partial class GclidDateTimePair : pb::IMessage<GclidDateTimePair>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GclidDateTimePair> _parser = new pb::MessageParser<GclidDateTimePair>(() => new GclidDateTimePair());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1146,6 +1422,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (gclid_ != null) {
         _single_gclid_codec.WriteTagAndValue(output, Gclid);
       }
@@ -1155,7 +1434,23 @@ namespace Google.Ads.GoogleAds.V4.Services {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (gclid_ != null) {
+        _single_gclid_codec.WriteTagAndValue(ref output, Gclid);
+      }
+      if (conversionDateTime_ != null) {
+        _single_conversionDateTime_codec.WriteTagAndValue(ref output, ConversionDateTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1192,6 +1487,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1214,14 +1512,47 @@ namespace Google.Ads.GoogleAds.V4.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            string value = _single_gclid_codec.Read(ref input);
+            if (gclid_ == null || value != "") {
+              Gclid = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_conversionDateTime_codec.Read(ref input);
+            if (conversionDateTime_ == null || value != "") {
+              ConversionDateTime = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Information identifying a successfully processed ConversionAdjustment.
   /// </summary>
-  public sealed partial class ConversionAdjustmentResult : pb::IMessage<ConversionAdjustmentResult> {
+  public sealed partial class ConversionAdjustmentResult : pb::IMessage<ConversionAdjustmentResult>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ConversionAdjustmentResult> _parser = new pb::MessageParser<ConversionAdjustmentResult>(() => new ConversionAdjustmentResult());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1407,6 +1738,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) {
         output.WriteRawTag(10);
         output.WriteMessage(GclidDateTimePair);
@@ -1427,7 +1761,34 @@ namespace Google.Ads.GoogleAds.V4.Services {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) {
+        output.WriteRawTag(10);
+        output.WriteMessage(GclidDateTimePair);
+      }
+      if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.OrderId) {
+        _oneof_orderId_codec.WriteTagAndValue(ref output, (string) conversionIdentifier_);
+      }
+      if (conversionAction_ != null) {
+        _single_conversionAction_codec.WriteTagAndValue(ref output, ConversionAction);
+      }
+      if (adjustmentDateTime_ != null) {
+        _single_adjustmentDateTime_codec.WriteTagAndValue(ref output, AdjustmentDateTime);
+      }
+      if (AdjustmentType != global::Google.Ads.GoogleAds.V4.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) AdjustmentType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -1488,6 +1849,9 @@ namespace Google.Ads.GoogleAds.V4.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1527,7 +1891,53 @@ namespace Google.Ads.GoogleAds.V4.Services {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::Google.Ads.GoogleAds.V4.Services.GclidDateTimePair subBuilder = new global::Google.Ads.GoogleAds.V4.Services.GclidDateTimePair();
+            if (conversionIdentifierCase_ == ConversionIdentifierOneofCase.GclidDateTimePair) {
+              subBuilder.MergeFrom(GclidDateTimePair);
+            }
+            input.ReadMessage(subBuilder);
+            GclidDateTimePair = subBuilder;
+            break;
+          }
+          case 18: {
+            OrderId = _oneof_orderId_codec.Read(ref input);
+            break;
+          }
+          case 26: {
+            string value = _single_conversionAction_codec.Read(ref input);
+            if (conversionAction_ == null || value != "") {
+              ConversionAction = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_adjustmentDateTime_codec.Read(ref input);
+            if (adjustmentDateTime_ == null || value != "") {
+              AdjustmentDateTime = value;
+            }
+            break;
+          }
+          case 40: {
+            AdjustmentType = (global::Google.Ads.GoogleAds.V4.Enums.ConversionAdjustmentTypeEnum.Types.ConversionAdjustmentType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

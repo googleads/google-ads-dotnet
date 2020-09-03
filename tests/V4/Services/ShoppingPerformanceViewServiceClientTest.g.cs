@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedShoppingPerformanceViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetShoppingPerformanceViewRequestObject()
         {
             moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetShoppingPerformanceViewRequestObjectAsync()
         {
             moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetShoppingPerformanceView()
         {
             moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetShoppingPerformanceViewAsync()
         {
             moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetShoppingPerformanceViewResourceNames()
         {
             moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetShoppingPerformanceViewResourceNamesAsync()
         {
             moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient> mockGrpcClient = new moq::Mock<ShoppingPerformanceViewService.ShoppingPerformanceViewServiceClient>(moq::MockBehavior.Strict);

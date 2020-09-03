@@ -47,15 +47,23 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
                 },
                 delegate (string output)
                 {
-                string[] outputs = output.Split(new char[] { '\r', '\n' },
-                    StringSplitOptions.RemoveEmptyEntries)
-                    .Select(c => c.Trim())
-                    .ToArray();
+                    string[] outputs = output.Split(new char[] { '\r', '\n' },
+                        StringSplitOptions.RemoveEmptyEntries)
+                        .Select(c => c.Trim())
+                        .ToArray();
 
                     TestExample testExample = new TestExample();
 
                     string[] expectedOutputs = new string[] {
+                        // Version-free name.
                         testExample.Name,
+                        new string('=', testExample.Name.Length),
+                        testExample.Description,
+                        "Usage",
+                        ExampleRunner.GetUsage(testExample).Trim(),
+
+                        // Versioned name.
+                        testExample.VersionedName,
                         new string('=', testExample.Name.Length),
                         testExample.Description,
                         "Usage",

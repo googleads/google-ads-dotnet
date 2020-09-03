@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>DomainCategoryService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch domain categories.
+    /// </remarks>
     public abstract partial class DomainCategoryServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>DomainCategoryService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch domain categories.
+    /// </remarks>
     public sealed partial class DomainCategoryServiceClientImpl : DomainCategoryServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetDomainCategoryRequest, gagvr::DomainCategory> _callGetDomainCategory;

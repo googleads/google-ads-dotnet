@@ -13,18 +13,18 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V4.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.RealEstatePlaceholderFieldEnum.Types;
-using static Google.Ads.GoogleAds.V4.Enums.PlaceholderTypeEnum.Types;
-using Google.Ads.GoogleAds.V4.Errors;
+using static Google.Ads.GoogleAds.V5.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.RealEstatePlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.PlaceholderTypeEnum.Types;
+using Google.Ads.GoogleAds.V5.Errors;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example adds a real estate feed, creates the feed mapping, and adds items to
@@ -98,7 +98,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         private string CreateFeed(GoogleAdsClient client, long customerId)
         {
             // Get the FeedService.
-            FeedServiceClient feedService = client.GetService(Services.V4.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V5.FeedService);
 
             // Creates a Listing ID attribute.
             FeedAttribute listingIdAttribute = new FeedAttribute()
@@ -186,7 +186,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V4.GoogleAdsService);
+                Services.V5.GoogleAdsService);
 
             // Constructs the query.
             string query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -256,7 +256,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the FeedMappingServiceClient.
             FeedMappingServiceClient feedMappingService = client.GetService(
-                Services.V4.FeedMappingService);
+                Services.V5.FeedMappingService);
 
             // Maps the FeedAttributeIds to the placeholder values. The FeedAttributeId is the
             // ID of the FeedAttribute created in the CreatedFeed method. This can be thought of
@@ -264,7 +264,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
             // the type of column this is in the context of a real estate feed (e.g.
             // a LISTING_ID or LISTING_NAME). The FeedMapping associates the feed column by ID to
             // this type and controls how the feed attributes are presented in dynamic content.
-            // See https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V4.enums#Google.Ads.GoogleAds.V4.enums.RealEstatePlaceholderFieldEnum.RealEstatePlaceholderField
+            // See https://developers.google.com/google-ads/api/reference/rpc/Google.Ads.GoogleAds.V5.enums#Google.Ads.GoogleAds.V5.enums.RealEstatePlaceholderFieldEnum.RealEstatePlaceholderField
             // for the full list of placeholder values.
 
             AttributeFieldMapping listingIdMapping = new AttributeFieldMapping()
@@ -344,7 +344,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService = client.GetService(
-                Services.V4.FeedItemService);
+                Services.V5.FeedItemService);
 
             // Creates the listing ID feed attribute value.
             FeedItemAttributeValue listingId = new FeedItemAttributeValue()

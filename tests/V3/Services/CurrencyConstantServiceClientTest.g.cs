@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCurrencyConstantServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCurrencyConstantRequestObject()
         {
             moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
@@ -51,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCurrencyConstantRequestObjectAsync()
         {
             moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCurrencyConstant()
         {
             moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCurrencyConstantAsync()
         {
             moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
@@ -124,7 +124,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCurrencyConstantResourceNames()
         {
             moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);
@@ -147,7 +147,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCurrencyConstantResourceNamesAsync()
         {
             moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient> mockGrpcClient = new moq::Mock<CurrencyConstantService.CurrencyConstantServiceClient>(moq::MockBehavior.Strict);

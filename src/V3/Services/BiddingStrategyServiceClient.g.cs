@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>BiddingStrategyService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage bidding strategies.
+    /// </remarks>
     public abstract partial class BiddingStrategyServiceClient
     {
         /// <summary>
@@ -410,6 +413,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>BiddingStrategyService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage bidding strategies.
+    /// </remarks>
     public sealed partial class BiddingStrategyServiceClientImpl : BiddingStrategyServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetBiddingStrategyRequest, gagvr::BiddingStrategy> _callGetBiddingStrategy;

@@ -5,7 +5,18 @@ option csharp_namespace = "Google.Ads.GoogleAds.Tests";
 message HelloRequest {
   string customer_id = 1;
   string name = 2;
+  optional int64 age = 3;
+  Address address = 4;
 }
+
+message Address {
+  string line1 = 1;
+  optional string line2 = 2;
+  optional string city = 3;
+  int64 zipcode = 4;
+  string state = 5;
+}
+
 
 message HelloResponse {
   string name = 1;

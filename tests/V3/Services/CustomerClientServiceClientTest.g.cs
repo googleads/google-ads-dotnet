@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCustomerClientServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomerClientRequestObject()
         {
             moq::Mock<CustomerClientService.CustomerClientServiceClient> mockGrpcClient = new moq::Mock<CustomerClientService.CustomerClientServiceClient>(moq::MockBehavior.Strict);
@@ -56,7 +56,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomerClientRequestObjectAsync()
         {
             moq::Mock<CustomerClientService.CustomerClientServiceClient> mockGrpcClient = new moq::Mock<CustomerClientService.CustomerClientServiceClient>(moq::MockBehavior.Strict);
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomerClient()
         {
             moq::Mock<CustomerClientService.CustomerClientServiceClient> mockGrpcClient = new moq::Mock<CustomerClientService.CustomerClientServiceClient>(moq::MockBehavior.Strict);
@@ -114,7 +114,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomerClientAsync()
         {
             moq::Mock<CustomerClientService.CustomerClientServiceClient> mockGrpcClient = new moq::Mock<CustomerClientService.CustomerClientServiceClient>(moq::MockBehavior.Strict);
@@ -144,7 +144,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomerClientResourceNames()
         {
             moq::Mock<CustomerClientService.CustomerClientServiceClient> mockGrpcClient = new moq::Mock<CustomerClientService.CustomerClientServiceClient>(moq::MockBehavior.Strict);
@@ -172,7 +172,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomerClientResourceNamesAsync()
         {
             moq::Mock<CustomerClientService.CustomerClientServiceClient> mockGrpcClient = new moq::Mock<CustomerClientService.CustomerClientServiceClient>(moq::MockBehavior.Strict);

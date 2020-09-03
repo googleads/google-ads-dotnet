@@ -266,7 +266,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <see cref="gagvr::KeywordPlanAdGroupName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::KeywordPlanAdGroupName ResourceNameAsKeywordPlanAdGroupName
+        internal KeywordPlanAdGroupName ResourceNameAsKeywordPlanAdGroupName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::KeywordPlanAdGroupName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -285,7 +285,7 @@ namespace Google.Ads.GoogleAds.V2.Resources
         /// <summary>
         /// <see cref="gagvr::KeywordPlanAdGroupName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::KeywordPlanAdGroupName KeywordPlanAdGroupName
+        internal KeywordPlanAdGroupName KeywordPlanAdGroupName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::KeywordPlanAdGroupName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

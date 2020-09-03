@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedPaidOrganicSearchTermViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetPaidOrganicSearchTermViewRequestObject()
         {
             moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -48,7 +48,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetPaidOrganicSearchTermViewRequestObjectAsync()
         {
             moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetPaidOrganicSearchTermView()
         {
             moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetPaidOrganicSearchTermViewAsync()
         {
             moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -112,7 +112,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetPaidOrganicSearchTermViewResourceNames()
         {
             moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);
@@ -132,7 +132,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetPaidOrganicSearchTermViewResourceNamesAsync()
         {
             moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient> mockGrpcClient = new moq::Mock<PaidOrganicSearchTermViewService.PaidOrganicSearchTermViewServiceClient>(moq::MockBehavior.Strict);

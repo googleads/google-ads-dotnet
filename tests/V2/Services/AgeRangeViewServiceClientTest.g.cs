@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedAgeRangeViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAgeRangeViewRequestObject()
         {
             moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAgeRangeViewRequestObjectAsync()
         {
             moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAgeRangeView()
         {
             moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAgeRangeViewAsync()
         {
             moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAgeRangeViewResourceNames()
         {
             moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAgeRangeViewResourceNamesAsync()
         {
             moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient> mockGrpcClient = new moq::Mock<AgeRangeViewService.AgeRangeViewServiceClient>(moq::MockBehavior.Strict);

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCustomerNegativeCriterionServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomerNegativeCriterionRequestObject()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomerNegativeCriterionRequestObjectAsync()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomerNegativeCriterion()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -114,7 +114,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomerNegativeCriterionAsync()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCustomerNegativeCriterionResourceNames()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -170,7 +170,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCustomerNegativeCriterionResourceNamesAsync()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -199,7 +199,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCustomerNegativeCriteriaRequestObject()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -228,7 +228,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCustomerNegativeCriteriaRequestObjectAsync()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateCustomerNegativeCriteria()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -286,7 +286,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateCustomerNegativeCriteriaAsync()
         {
             moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient> mockGrpcClient = new moq::Mock<CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient>(moq::MockBehavior.Strict);

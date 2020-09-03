@@ -61,6 +61,7 @@ namespace Google.Ads.GoogleAds.V4.Services
     public abstract partial class ConversionAdjustmentUploadServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class ConversionUploadServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CurrencyConstantServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class CustomInterestServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CustomerClientLinkServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CustomerClientServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CustomerExtensionSettingServiceClient : GoogleAdsServiceClientBase {}
@@ -69,7 +70,6 @@ namespace Google.Ads.GoogleAds.V4.Services
     public abstract partial class CustomerManagerLinkServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CustomerNegativeCriterionServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class CustomerServiceClient : GoogleAdsServiceClientBase {}
-    public abstract partial class CustomInterestServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class DetailPlacementViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class DisplayKeywordViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class DistanceViewServiceClient : GoogleAdsServiceClientBase {}
@@ -83,8 +83,8 @@ namespace Google.Ads.GoogleAds.V4.Services
     public abstract partial class FeedPlaceholderViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class FeedServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class GenderViewServiceClient : GoogleAdsServiceClientBase {}
-    public abstract partial class GeographicViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class GeoTargetConstantServiceClient : GoogleAdsServiceClientBase {}
+    public abstract partial class GeographicViewServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class GoogleAdsFieldServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class GoogleAdsServiceClient : GoogleAdsServiceClientBase {}
     public abstract partial class GroupPlacementViewServiceClient : GoogleAdsServiceClientBase {}

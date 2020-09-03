@@ -130,6 +130,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>MobileAppCategoryConstantService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch mobile app category constants.
+    /// </remarks>
     public abstract partial class MobileAppCategoryConstantServiceClient
     {
         /// <summary>
@@ -309,6 +312,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>MobileAppCategoryConstantService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch mobile app category constants.
+    /// </remarks>
     public sealed partial class MobileAppCategoryConstantServiceClientImpl : MobileAppCategoryConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetMobileAppCategoryConstantRequest, gagvr::MobileAppCategoryConstant> _callGetMobileAppCategoryConstant;

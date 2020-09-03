@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedGoogleAdsServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateRequestObject()
         {
             moq::Mock<GoogleAdsService.GoogleAdsServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsService.GoogleAdsServiceClient>(moq::MockBehavior.Strict);
@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateRequestObjectAsync()
         {
             moq::Mock<GoogleAdsService.GoogleAdsServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsService.GoogleAdsServiceClient>(moq::MockBehavior.Strict);
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void Mutate()
         {
             moq::Mock<GoogleAdsService.GoogleAdsServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsService.GoogleAdsServiceClient>(moq::MockBehavior.Strict);
@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateAsync()
         {
             moq::Mock<GoogleAdsService.GoogleAdsServiceClient> mockGrpcClient = new moq::Mock<GoogleAdsService.GoogleAdsServiceClient>(moq::MockBehavior.Strict);

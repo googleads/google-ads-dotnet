@@ -15,12 +15,12 @@
 using System;
 using System.Collections.Generic;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 using Google.Api.Gax;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     ///     This example gets the account hierarchy of the specified manager account. If you don't
@@ -87,10 +87,10 @@ namespace Google.Ads.GoogleAds.Examples.V4
             }
 
             GoogleAdsServiceClient googleAdsServiceClient =
-                googleAdsClient.GetService(Services.V4.GoogleAdsService);
+                googleAdsClient.GetService(Services.V5.GoogleAdsService);
 
             CustomerServiceClient customerServiceClient =
-                googleAdsClient.GetService(Services.V4.CustomerService);
+                googleAdsClient.GetService(Services.V5.CustomerService);
 
             // List of Customer IDs to handle.
             List<long> seedCustomerIds = new List<long>();
@@ -113,8 +113,8 @@ namespace Google.Ads.GoogleAds.Examples.V4
                 foreach (string customerResourceName in customerResourceNames)
                 {
                     Customer customer = customerServiceClient.GetCustomer(customerResourceName);
-                    Console.WriteLine(customer.Id.Value);
-                    seedCustomerIds.Add(customer.Id.Value);
+                    Console.WriteLine(customer.Id);
+                    seedCustomerIds.Add(customer.Id);
                 }
 
                 Console.WriteLine();
@@ -178,7 +178,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
 
                         customerIdsToChildAccounts[managerCustomerId.Value].Add(customerClient);
 
-                        if (customerClient.Manager.HasValue && customerClient.Manager.Value)
+                        if (customerClient.Manager.HasValue)
                             // A customer can be managed by multiple managers, so to prevent
                             // visiting the same customer many times, we need to check if it's
                             // already in the Dictionary.

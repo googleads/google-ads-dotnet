@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
         /// <see cref="gagvr::MobileDeviceConstantName"/>-typed view over the <see cref="ResourceName"/> resource name
         /// property.
         /// </summary>
-        public gagvr::MobileDeviceConstantName ResourceNameAsMobileDeviceConstantName
+        internal MobileDeviceConstantName ResourceNameAsMobileDeviceConstantName
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::MobileDeviceConstantName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
         /// <summary>
         /// <see cref="gagvr::MobileDeviceConstantName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public gagvr::MobileDeviceConstantName MobileDeviceConstantName
+        internal MobileDeviceConstantName MobileDeviceConstantName
         {
             get => string.IsNullOrEmpty(Name) ? null : gagvr::MobileDeviceConstantName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";

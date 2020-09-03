@@ -27,7 +27,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedReachPlanServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void ListPlannableLocationsRequestObject()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -46,7 +46,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ListPlannableLocationsRequestObjectAsync()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -67,7 +67,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void ListPlannableProductsRequestObject()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ListPlannableProductsRequestObjectAsync()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -113,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void ListPlannableProducts()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -135,7 +135,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ListPlannableProductsAsync()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -159,7 +159,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GenerateProductMixIdeasRequestObject()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -185,7 +185,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GenerateProductMixIdeasRequestObjectAsync()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -213,7 +213,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GenerateProductMixIdeas()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -238,7 +238,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GenerateProductMixIdeasAsync()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -265,7 +265,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GenerateReachForecastRequestObject()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -294,7 +294,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GenerateReachForecastRequestObjectAsync()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -325,7 +325,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GenerateReachForecast()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);
@@ -350,7 +350,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GenerateReachForecastAsync()
         {
             moq::Mock<ReachPlanService.ReachPlanServiceClient> mockGrpcClient = new moq::Mock<ReachPlanService.ReachPlanServiceClient>(moq::MockBehavior.Strict);

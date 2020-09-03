@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedAdScheduleViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdScheduleViewRequestObject()
         {
             moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdScheduleViewRequestObjectAsync()
         {
             moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdScheduleView()
         {
             moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdScheduleViewAsync()
         {
             moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdScheduleViewResourceNames()
         {
             moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdScheduleViewResourceNamesAsync()
         {
             moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient> mockGrpcClient = new moq::Mock<AdScheduleViewService.AdScheduleViewServiceClient>(moq::MockBehavior.Strict);

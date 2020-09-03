@@ -139,6 +139,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>SharedSetService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage shared sets.
+    /// </remarks>
     public abstract partial class SharedSetServiceClient
     {
         /// <summary>
@@ -397,6 +400,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>SharedSetService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage shared sets.
+    /// </remarks>
     public sealed partial class SharedSetServiceClientImpl : SharedSetServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetSharedSetRequest, gagvr::SharedSet> _callGetSharedSet;

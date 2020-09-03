@@ -13,14 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Common;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
-
+using Google.Ads.GoogleAds.V5.Common;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
+using Google.Api.Gax;
 using System;
+using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     /// This code example gets all image assets.
@@ -56,7 +57,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V4.GoogleAdsService);
+                client.GetService(Services.V5.GoogleAdsService);
 
             // Creates the search query.
             string searchQuery = "SELECT asset.name, asset.image_asset.file_size, " +
@@ -68,14 +69,20 @@ namespace Google.Ads.GoogleAds.Examples.V4
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
                 CustomerId = customerId.ToString(),
-                Query = searchQuery
+                Query = searchQuery,
+                ReturnTotalResultsCount = true
             };
 
             try
             {
-                // Issues the search request and prints the results.
-                int count = 0;
-                foreach (GoogleAdsRow row in googleAdsService.Search(request))
+                // Issue the search request.
+                PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
+                    googleAdsService.Search(request);
+
+                long totalImageAssetCount = searchPagedResponse.AsRawResponses()
+                    .First().TotalResultsCount;
+
+                foreach (GoogleAdsRow row in searchPagedResponse)
                 {
                     Asset asset = row.Asset;
                     ImageAsset imageAsset = asset.ImageAsset;
@@ -84,16 +91,9 @@ namespace Google.Ads.GoogleAds.Examples.V4
                         $"{imageAsset.FileSize} bytes, width {imageAsset.FullSize.WidthPixels}px," +
                         $" height {imageAsset.FullSize.HeightPixels}px, and url " +
                         $"'{imageAsset.FullSize.Url}' found.");
-                    count++;
                 }
-                if (count == 0)
-                {
-                    // Displays a response if no images are found.
-                    if (count == 0)
-                    {
-                        Console.WriteLine("No image assets found.");
-                    }
-                }
+
+                Console.WriteLine($"Total image assets found: {totalImageAssetCount}");
             }
             catch (GoogleAdsException e)
             {

@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedUserDataServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void UploadUserDataRequestObject()
         {
             moq::Mock<UserDataService.UserDataServiceClient> mockGrpcClient = new moq::Mock<UserDataService.UserDataServiceClient>(moq::MockBehavior.Strict);
@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task UploadUserDataRequestObjectAsync()
         {
             moq::Mock<UserDataService.UserDataServiceClient> mockGrpcClient = new moq::Mock<UserDataService.UserDataServiceClient>(moq::MockBehavior.Strict);

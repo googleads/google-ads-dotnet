@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedSharedCriterionServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetSharedCriterionRequestObject()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -59,7 +59,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetSharedCriterionRequestObjectAsync()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetSharedCriterion()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -117,7 +117,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetSharedCriterionAsync()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -147,7 +147,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetSharedCriterionResourceNames()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetSharedCriterionResourceNamesAsync()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -205,7 +205,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateSharedCriteriaRequestObject()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -234,7 +234,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateSharedCriteriaRequestObjectAsync()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -265,7 +265,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateSharedCriteria()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);
@@ -292,7 +292,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateSharedCriteriaAsync()
         {
             moq::Mock<SharedCriterionService.SharedCriterionServiceClient> mockGrpcClient = new moq::Mock<SharedCriterionService.SharedCriterionServiceClient>(moq::MockBehavior.Strict);

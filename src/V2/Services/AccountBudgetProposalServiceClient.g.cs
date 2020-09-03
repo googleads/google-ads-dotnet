@@ -143,6 +143,22 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AccountBudgetProposalService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// A service for managing account-level budgets via proposals.
+    /// 
+    /// A proposal is a request to create a new budget or make changes to an
+    /// existing one.
+    /// 
+    /// Reads for account-level budgets managed by these proposals will be
+    /// supported in a future version. Until then, please use the
+    /// BudgetOrderService from the AdWords API. Learn more at
+    /// https://developers.google.com/adwords/api/docs/guides/budget-order
+    /// 
+    /// Mutates:
+    /// The CREATE operation creates a new proposal.
+    /// UPDATE operations aren't supported.
+    /// The REMOVE operation cancels a pending proposal.
+    /// </remarks>
     public abstract partial class AccountBudgetProposalServiceClient
     {
         /// <summary>
@@ -404,6 +420,22 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AccountBudgetProposalService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// A service for managing account-level budgets via proposals.
+    /// 
+    /// A proposal is a request to create a new budget or make changes to an
+    /// existing one.
+    /// 
+    /// Reads for account-level budgets managed by these proposals will be
+    /// supported in a future version. Until then, please use the
+    /// BudgetOrderService from the AdWords API. Learn more at
+    /// https://developers.google.com/adwords/api/docs/guides/budget-order
+    /// 
+    /// Mutates:
+    /// The CREATE operation creates a new proposal.
+    /// UPDATE operations aren't supported.
+    /// The REMOVE operation cancels a pending proposal.
+    /// </remarks>
     public sealed partial class AccountBudgetProposalServiceClientImpl : AccountBudgetProposalServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAccountBudgetProposalRequest, gagvr::AccountBudgetProposal> _callGetAccountBudgetProposal;

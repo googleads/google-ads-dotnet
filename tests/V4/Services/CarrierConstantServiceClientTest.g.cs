@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedCarrierConstantServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCarrierConstantRequestObject()
         {
             moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCarrierConstantRequestObjectAsync()
         {
             moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
@@ -74,7 +74,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCarrierConstant()
         {
             moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCarrierConstantAsync()
         {
             moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
@@ -120,7 +120,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetCarrierConstantResourceNames()
         {
             moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);
@@ -142,7 +142,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetCarrierConstantResourceNamesAsync()
         {
             moq::Mock<CarrierConstantService.CarrierConstantServiceClient> mockGrpcClient = new moq::Mock<CarrierConstantService.CarrierConstantServiceClient>(moq::MockBehavior.Strict);

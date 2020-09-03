@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AgeRangeViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage age range views.
+    /// </remarks>
     public abstract partial class AgeRangeViewServiceClient
     {
         /// <summary>
@@ -304,6 +307,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>AgeRangeViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage age range views.
+    /// </remarks>
     public sealed partial class AgeRangeViewServiceClientImpl : AgeRangeViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAgeRangeViewRequest, gagvr::AgeRangeView> _callGetAgeRangeView;

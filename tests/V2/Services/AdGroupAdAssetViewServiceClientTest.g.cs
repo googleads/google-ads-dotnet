@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedAdGroupAdAssetViewServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupAdAssetViewRequestObject()
         {
             moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupAdAssetViewRequestObjectAsync()
         {
             moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
@@ -79,7 +79,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupAdAssetView()
         {
             moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupAdAssetViewAsync()
         {
             moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
@@ -129,7 +129,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetAdGroupAdAssetViewResourceNames()
         {
             moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);
@@ -153,7 +153,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetAdGroupAdAssetViewResourceNamesAsync()
         {
             moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient> mockGrpcClient = new moq::Mock<AdGroupAdAssetViewService.AdGroupAdAssetViewServiceClient>(moq::MockBehavior.Strict);

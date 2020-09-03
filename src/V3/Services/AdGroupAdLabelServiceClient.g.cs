@@ -143,6 +143,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>AdGroupAdLabelService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage labels on ad group ads.
+    /// </remarks>
     public abstract partial class AdGroupAdLabelServiceClient
     {
         /// <summary>
@@ -410,6 +413,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>AdGroupAdLabelService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage labels on ad group ads.
+    /// </remarks>
     public sealed partial class AdGroupAdLabelServiceClientImpl : AdGroupAdLabelServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetAdGroupAdLabelRequest, gagvr::AdGroupAdLabel> _callGetAdGroupAdLabel;

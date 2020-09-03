@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedMerchantCenterLinkServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void ListMerchantCenterLinksRequestObject()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -51,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ListMerchantCenterLinksRequestObjectAsync()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -75,7 +75,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void ListMerchantCenterLinks()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task ListMerchantCenterLinksAsync()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMerchantCenterLinkRequestObject()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMerchantCenterLinkRequestObjectAsync()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -167,7 +167,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMerchantCenterLink()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -189,7 +189,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMerchantCenterLinkAsync()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -213,7 +213,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetMerchantCenterLinkResourceNames()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -235,7 +235,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetMerchantCenterLinkResourceNamesAsync()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateMerchantCenterLinkRequestObject()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -279,7 +279,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateMerchantCenterLinkRequestObjectAsync()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -301,7 +301,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateMerchantCenterLink()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);
@@ -321,7 +321,7 @@ namespace Google.Ads.GoogleAds.Tests.V2.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateMerchantCenterLinkAsync()
         {
             moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient> mockGrpcClient = new moq::Mock<MerchantCenterLinkService.MerchantCenterLinkServiceClient>(moq::MockBehavior.Strict);

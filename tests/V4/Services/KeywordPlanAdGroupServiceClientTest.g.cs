@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedKeywordPlanAdGroupServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetKeywordPlanAdGroupRequestObject()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);
@@ -52,7 +52,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetKeywordPlanAdGroupRequestObjectAsync()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);
@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetKeywordPlanAdGroup()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);
@@ -100,7 +100,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetKeywordPlanAdGroupAsync()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);
@@ -125,7 +125,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetKeywordPlanAdGroupResourceNames()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);
@@ -148,7 +148,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetKeywordPlanAdGroupResourceNamesAsync()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);
@@ -173,7 +173,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateKeywordPlanAdGroupsRequestObject()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);
@@ -202,7 +202,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateKeywordPlanAdGroupsRequestObjectAsync()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);
@@ -233,7 +233,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void MutateKeywordPlanAdGroups()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);
@@ -260,7 +260,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task MutateKeywordPlanAdGroupsAsync()
         {
             moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient>(moq::MockBehavior.Strict);

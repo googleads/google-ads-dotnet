@@ -126,6 +126,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>DistanceViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch distance views.
+    /// </remarks>
     public abstract partial class DistanceViewServiceClient
     {
         /// <summary>
@@ -304,6 +307,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>DistanceViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch distance views.
+    /// </remarks>
     public sealed partial class DistanceViewServiceClientImpl : DistanceViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetDistanceViewRequest, gagvr::DistanceView> _callGetDistanceView;

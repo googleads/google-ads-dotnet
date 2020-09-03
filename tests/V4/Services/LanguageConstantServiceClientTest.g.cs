@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
     /// <summary>Generated unit tests.</summary>
     public sealed class GeneratedLanguageConstantServiceClientTest
     {
-        [Test]
+        [Category("Smoke")][Test]
         public void GetLanguageConstantRequestObject()
         {
             moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
@@ -51,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetLanguageConstantRequestObjectAsync()
         {
             moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetLanguageConstant()
         {
             moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetLanguageConstantAsync()
         {
             moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
@@ -124,7 +124,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public void GetLanguageConstantResourceNames()
         {
             moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);
@@ -147,7 +147,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             mockGrpcClient.VerifyAll();
         }
 
-        [Test]
+        [Category("Smoke")][Test]
         public async stt::Task GetLanguageConstantResourceNamesAsync()
         {
             moq::Mock<LanguageConstantService.LanguageConstantServiceClient> mockGrpcClient = new moq::Mock<LanguageConstantService.LanguageConstantServiceClient>(moq::MockBehavior.Strict);

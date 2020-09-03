@@ -48,7 +48,11 @@ namespace Google.Ads.GoogleAds.V4.Common {
   /// <summary>
   /// A date range.
   /// </summary>
-  public sealed partial class DateRange : pb::IMessage<DateRange> {
+  public sealed partial class DateRange : pb::IMessage<DateRange>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<DateRange> _parser = new pb::MessageParser<DateRange>(() => new DateRange());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -151,6 +155,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (startDate_ != null) {
         _single_startDate_codec.WriteTagAndValue(output, StartDate);
       }
@@ -160,7 +167,23 @@ namespace Google.Ads.GoogleAds.V4.Common {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (startDate_ != null) {
+        _single_startDate_codec.WriteTagAndValue(ref output, StartDate);
+      }
+      if (endDate_ != null) {
+        _single_endDate_codec.WriteTagAndValue(ref output, EndDate);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
@@ -197,6 +220,9 @@ namespace Google.Ads.GoogleAds.V4.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -219,7 +245,36 @@ namespace Google.Ads.GoogleAds.V4.Common {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            string value = _single_startDate_codec.Read(ref input);
+            if (startDate_ == null || value != "") {
+              StartDate = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_endDate_codec.Read(ref input);
+            if (endDate_ == null || value != "") {
+              EndDate = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

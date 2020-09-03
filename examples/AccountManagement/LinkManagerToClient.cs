@@ -14,15 +14,15 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V5.Errors;
+using Google.Ads.GoogleAds.V5.Resources;
+using Google.Ads.GoogleAds.V5.Services;
 
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V4.Enums.ManagerLinkStatusEnum.Types;
+using static Google.Ads.GoogleAds.V5.Enums.ManagerLinkStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V5
 {
     /// <summary>
     ///  This code example demonstrates how to link an existing Google Ads manager customer
@@ -105,7 +105,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the CustomerClientLinkService.
             CustomerClientLinkServiceClient customerClientLinkService =
-                client.GetService(Services.V4.CustomerClientLinkService);
+                client.GetService(Services.V5.CustomerClientLinkService);
 
             // Create a client with the manager customer ID as login customer ID.
             client.Config.LoginCustomerId = managerCustomerId.ToString();
@@ -156,7 +156,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V4.GoogleAdsService);
+                client.GetService(Services.V5.GoogleAdsService);
 
             // Create a client with the manager customer ID as login customer ID.
             client.Config.LoginCustomerId = managerCustomerId.ToString();
@@ -192,7 +192,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the CustomerManagerLinkService.
             CustomerManagerLinkServiceClient customerManagerLinkService =
-                client.GetService(Services.V4.CustomerManagerLinkService);
+                client.GetService(Services.V5.CustomerManagerLinkService);
 
             // Create a client with the manager customer ID as login customer ID.
             client.Config.LoginCustomerId = clientCustomerId.ToString();

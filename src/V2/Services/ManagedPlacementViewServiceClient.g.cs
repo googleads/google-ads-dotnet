@@ -129,6 +129,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>ManagedPlacementViewService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Managed Placement views.
+    /// </remarks>
     public abstract partial class ManagedPlacementViewServiceClient
     {
         /// <summary>
@@ -307,6 +310,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>ManagedPlacementViewService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage Managed Placement views.
+    /// </remarks>
     public sealed partial class ManagedPlacementViewServiceClientImpl : ManagedPlacementViewServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetManagedPlacementViewRequest, gagvr::ManagedPlacementView> _callGetManagedPlacementView;

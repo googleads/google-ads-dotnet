@@ -192,6 +192,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>OfflineUserDataJobService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage offline user data jobs.
+    /// </remarks>
     public abstract partial class OfflineUserDataJobServiceClient
     {
         /// <summary>
@@ -745,6 +748,9 @@ namespace Google.Ads.GoogleAds.V3.Services
     }
 
     /// <summary>OfflineUserDataJobService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to manage offline user data jobs.
+    /// </remarks>
     public sealed partial class OfflineUserDataJobServiceClientImpl : OfflineUserDataJobServiceClient
     {
         private readonly gaxgrpc::ApiCall<CreateOfflineUserDataJobRequest, CreateOfflineUserDataJobResponse> _callCreateOfflineUserDataJob;

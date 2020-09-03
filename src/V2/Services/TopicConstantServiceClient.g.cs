@@ -127,6 +127,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>TopicConstantService client wrapper, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch topic constants.
+    /// </remarks>
     public abstract partial class TopicConstantServiceClient
     {
         /// <summary>
@@ -305,6 +308,9 @@ namespace Google.Ads.GoogleAds.V2.Services
     }
 
     /// <summary>TopicConstantService client wrapper implementation, for convenient use.</summary>
+    /// <remarks>
+    /// Service to fetch topic constants.
+    /// </remarks>
     public sealed partial class TopicConstantServiceClientImpl : TopicConstantServiceClient
     {
         private readonly gaxgrpc::ApiCall<GetTopicConstantRequest, gagvr::TopicConstant> _callGetTopicConstant;
