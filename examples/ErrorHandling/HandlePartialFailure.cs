@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
                 PrintResults(response);
 
                 // Display the results.
-                if (response.PartialFailureError == null)
+                if (response.PartialFailureError != null)
                 {
                     Console.WriteLine("Partial failures occurred. Details will be shown below.");
                 }
