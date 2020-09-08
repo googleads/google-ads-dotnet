@@ -182,7 +182,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
             // Prints the status message if any partial failure error is returned.
             // Note: The details of each partial failure error are not printed here,
             // you can refer to the example HandlePartialFailure.cs to learn more.
-            if (response2.PartialFailureError == null)
+            if (response2.PartialFailureError != null)
             {
                 // Extracts the partial failure from the response status.
                 GoogleAdsFailure partialFailure = response2.PartialFailure;
