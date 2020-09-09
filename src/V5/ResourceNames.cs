@@ -171,7 +171,7 @@ namespace Google.Ads.GoogleAds.V5.Errors
 
         public static string CampaignExtensionSetting(long customerId, long campaignId, ExtensionType extensionType)
         {
-            return $"customers/{customerId}/campaignExtensionSettings/{campaignId}~{extensionType}";
+            return $"customers/{customerId}/campaignExtensionSettings/{campaignId}~{extensionType.ToString().ToUpper()}";
         }
 
         public static string CampaignFeed(long customerId, long campaignId, long feedId)
