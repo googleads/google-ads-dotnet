@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>googleAdsFields/{google_ads_field}</c>.</summary>
-            GoogleAdsField = 1
+            GoogleAdsField = 1,
         }
 
         private static gax::PathTemplate s_googleAdsField = new gax::PathTemplate("googleAdsFields/{google_ads_field}");

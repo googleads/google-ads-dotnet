@@ -15,15 +15,15 @@
 using System;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
-using static Google.Ads.GoogleAds.V5.Enums.UserListMembershipStatusEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.UserListPrepopulationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.UserListStringRuleItemOperatorEnum.Types;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
+using static Google.Ads.GoogleAds.V6.Enums.UserListMembershipStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.UserListPrepopulationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.UserListStringRuleItemOperatorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example creates a rule-based user list defined by an expression rule for users who
@@ -63,7 +63,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Gets the UserListService.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V5.UserListService);
+                client.GetService(Services.V6.UserListService);
 
             // Creates the user targeting rules for each URL.
             UserListRuleItemInfo rule1 = BuildVisitedSiteRuleInfo("example.com/section1");

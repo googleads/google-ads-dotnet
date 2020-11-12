@@ -7637,8 +7637,7 @@ namespace Google.Ads.GoogleAds.V4.Common {
     public const int MandatoryAdTextFieldNumber = 1;
     private global::Google.Ads.GoogleAds.V4.Common.AdTextAsset mandatoryAdText_;
     /// <summary>
-    /// An optional text asset that, if specified, must always be displayed when
-    /// the ad is served.
+    /// Mandatory ad text.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V4.Common.AdTextAsset MandatoryAdText {

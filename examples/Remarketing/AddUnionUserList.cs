@@ -16,13 +16,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Enums;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Enums;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example creates a combination user list containing users that are present on any
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Gets the UserListService client.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V5.UserListService);
+                client.GetService(Services.V6.UserListService);
 
             // Adds each of the provided list IDs to a list of rule operands specifying which lists
             // the operator should target.

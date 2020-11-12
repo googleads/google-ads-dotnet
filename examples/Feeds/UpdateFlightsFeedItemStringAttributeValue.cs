@@ -17,12 +17,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
-using static Google.Ads.GoogleAds.V5.Enums.FlightPlaceholderFieldEnum.Types;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
+using static Google.Ads.GoogleAds.V6.Enums.FlightPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example updates a FeedItemAttributeValue in a flights feed. To create a flights
@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService =
-                client.GetService(Services.V5.FeedItemService);
+                client.GetService(Services.V6.FeedItemService);
 
             // Gets the feed resource name.
             string feedResourceName = ResourceNames.Feed(customerId, feedId);
@@ -128,7 +128,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
             // FeedItemAttributeValue will be updated in the given FeedItem.
             FlightPlaceholderField placeholderField = (FlightPlaceholderField) Enum.Parse(
                 typeof(FlightPlaceholderField), flightPlaceholderFieldName);
-            long attributeId = feedAttributes[placeholderField].Id.Value;
+            long attributeId = feedAttributes[placeholderField].Id;
 
             // Gets the feed item resource name.
             string feedItemResourceName = ResourceNames.FeedItem(customerId, feedId, feedItemId);
@@ -148,8 +148,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
             int attributeIndex = feedItem.AttributeValues
                 .Select((item, index) => new {item, index})
                 .Where(itemIndexPair =>
-                    itemIndexPair.item.FeedAttributeId.Value ==
-                    feedItemAttributeValue.FeedAttributeId.Value)
+                    itemIndexPair.item.FeedAttributeId == feedItemAttributeValue.FeedAttributeId)
                 .Select(itemIndexPair => itemIndexPair.index + 1)
                 .FirstOrDefault() - 1;
 
@@ -196,7 +195,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -265,7 +264,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed_item.attribute_values FROM feed_item WHERE " +

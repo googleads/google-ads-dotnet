@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/incomeRangeViews/{income_range_view}</c>.
             /// </summary>
-            CustomerIncomeRangeView = 1
+            CustomerIncomeRangeView = 1,
         }
 
         private static gax::PathTemplate s_customerIncomeRangeView = new gax::PathTemplate("customers/{customer}/incomeRangeViews/{income_range_view}");

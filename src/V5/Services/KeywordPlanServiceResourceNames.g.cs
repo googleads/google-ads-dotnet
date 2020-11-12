@@ -29,4 +29,64 @@ namespace Google.Ads.GoogleAds.V5.Services
             set => ResourceName = value?.ToString() ?? "";
         }
     }
+
+    public partial class KeywordPlanOperation
+    {
+        /// <summary>
+        /// <see cref="gagvr::KeywordPlanName"/>-typed view over the <see cref="Remove"/> resource name property.
+        /// </summary>
+        public gagvr::KeywordPlanName RemoveAsKeywordPlanName
+        {
+            get => string.IsNullOrEmpty(Remove) ? null : gagvr::KeywordPlanName.Parse(Remove, allowUnparsed: true);
+            set => Remove = value?.ToString() ?? "";
+        }
+    }
+
+    public partial class GenerateForecastCurveRequest
+    {
+        /// <summary>
+        /// <see cref="gagvr::KeywordPlanName"/>-typed view over the <see cref="KeywordPlan"/> resource name property.
+        /// </summary>
+        public gagvr::KeywordPlanName KeywordPlanAsKeywordPlanName
+        {
+            get => string.IsNullOrEmpty(KeywordPlan) ? null : gagvr::KeywordPlanName.Parse(KeywordPlan, allowUnparsed: true);
+            set => KeywordPlan = value?.ToString() ?? "";
+        }
+    }
+
+    public partial class GenerateForecastTimeSeriesRequest
+    {
+        /// <summary>
+        /// <see cref="gagvr::KeywordPlanName"/>-typed view over the <see cref="KeywordPlan"/> resource name property.
+        /// </summary>
+        public gagvr::KeywordPlanName KeywordPlanAsKeywordPlanName
+        {
+            get => string.IsNullOrEmpty(KeywordPlan) ? null : gagvr::KeywordPlanName.Parse(KeywordPlan, allowUnparsed: true);
+            set => KeywordPlan = value?.ToString() ?? "";
+        }
+    }
+
+    public partial class GenerateForecastMetricsRequest
+    {
+        /// <summary>
+        /// <see cref="gagvr::KeywordPlanName"/>-typed view over the <see cref="KeywordPlan"/> resource name property.
+        /// </summary>
+        public gagvr::KeywordPlanName KeywordPlanAsKeywordPlanName
+        {
+            get => string.IsNullOrEmpty(KeywordPlan) ? null : gagvr::KeywordPlanName.Parse(KeywordPlan, allowUnparsed: true);
+            set => KeywordPlan = value?.ToString() ?? "";
+        }
+    }
+
+    public partial class GenerateHistoricalMetricsRequest
+    {
+        /// <summary>
+        /// <see cref="gagvr::KeywordPlanName"/>-typed view over the <see cref="KeywordPlan"/> resource name property.
+        /// </summary>
+        public gagvr::KeywordPlanName KeywordPlanAsKeywordPlanName
+        {
+            get => string.IsNullOrEmpty(KeywordPlan) ? null : gagvr::KeywordPlanName.Parse(KeywordPlan, allowUnparsed: true);
+            set => KeywordPlan = value?.ToString() ?? "";
+        }
+    }
 }

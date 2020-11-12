@@ -148,7 +148,7 @@ namespace Google.Ads.GoogleAds.V5.Resources {
     /// Immutable. The resource name of the campaign budget.
     /// Campaign budget resource names have the form:
     ///
-    /// `customers/{customer_id}/campaignBudgets/{budget_id}`
+    /// `customers/{customer_id}/campaignBudgets/{campaign_budget_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

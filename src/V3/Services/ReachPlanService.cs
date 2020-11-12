@@ -1172,7 +1172,7 @@ namespace Google.Ads.GoogleAds.V3.Services {
     private static readonly pb::FieldCodec<string> _single_plannableProductCode_codec = pb::FieldCodec.ForClassWrapper<string>(10);
     private string plannableProductCode_;
     /// <summary>
-    /// The code associated with the ad product. E.g. Trueview, Bumper
+    /// The code associated with the ad product. E.g. BUMPER, TRUEVIEW_IN_STREAM
     /// To list the available plannable product codes use ListPlannableProducts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3788,7 +3788,8 @@ namespace Google.Ads.GoogleAds.V3.Services {
     private string plannableProductCode_;
     /// <summary>
     /// Required. Selected product for planning.
-    /// Plannable products codes can be obtained from ListPlannableProducts.
+    /// The code associated with the ad product. E.g. Trueview, Bumper
+    /// To list the available plannable product codes use ListPlannableProducts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PlannableProductCode {

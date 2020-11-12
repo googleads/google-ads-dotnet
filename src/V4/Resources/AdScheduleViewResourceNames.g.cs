@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/adScheduleViews/{ad_schedule_view}</c>.
             /// </summary>
-            CustomerAdScheduleView = 1
+            CustomerAdScheduleView = 1,
         }
 
         private static gax::PathTemplate s_customerAdScheduleView = new gax::PathTemplate("customers/{customer}/adScheduleViews/{ad_schedule_view}");

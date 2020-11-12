@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             /// A resource name with pattern
             /// <c>customers/{customer}/paidOrganicSearchTermViews/{paid_organic_search_term_view}</c>.
             /// </summary>
-            CustomerPaidOrganicSearchTermView = 1
+            CustomerPaidOrganicSearchTermView = 1,
         }
 
         private static gax::PathTemplate s_customerPaidOrganicSearchTermView = new gax::PathTemplate("customers/{customer}/paidOrganicSearchTermViews/{paid_organic_search_term_view}");

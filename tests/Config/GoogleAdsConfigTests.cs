@@ -13,9 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Config;
+using Google.Ads.GoogleAds.Lib;
+using Newtonsoft.Json;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 
 namespace Google.Ads.GoogleAds.Tests.Config
@@ -58,6 +61,11 @@ namespace Google.Ads.GoogleAds.Tests.Config
         private const string CLIENT_CUSTOMER_ID_VALUE = "987654543";
 
         /// <summary>
+        /// Test value for <see cref="GoogleAdsConfig.OAuth2Mode"/> property.
+        /// </summary>
+        private const string OAUTH2_MODE_VALUE = "APPLICATION";
+
+        /// <summary>
         /// Test value for <see cref="GoogleAdsConfig.OAuth2ClientId"/> property.
         /// </summary>
         private const string OAUTH2_CLIENT_ID_VALUE = "TEST_OAUTH2_CLIENT_ID";
@@ -76,6 +84,11 @@ namespace Google.Ads.GoogleAds.Tests.Config
         /// Test value for <see cref="GoogleAdsConfig.OAuth2Scope"/> property.
         /// </summary>
         private const string OAUTH2_SCOPE_VALUE = "TEST_OAUTH2_SCOPE";
+
+        /// <summary>
+        /// Test value for <see cref="GoogleAdsConfig.OAuth2PrnEmail"/> property.
+        /// </summary>
+        private const string OAUTH2_PRN_EMAIL_VALUE = "TEST_OAUTH2_PRN_EMAIL";
 
         /// <summary>
         /// Test value for <see cref="GoogleAdsConfig.Proxy"/> property.
@@ -98,6 +111,16 @@ namespace Google.Ads.GoogleAds.Tests.Config
         private const string PROXY_DOMAIN_VALUE = "TEST_PROXY_DOMAIN";
 
         /// <summary>
+        /// The temporary setting json file for running tests.
+        /// </summary>
+        private string TEMP_SETTING_JSON_FILE;
+
+        /// <summary>
+        /// The temporary secret json file for running tests.
+        /// </summary>
+        private string TEMP_SECRET_JSON_FILE;
+
+        /// <summary>
         /// The test configuration settings.
         /// </summary>
         private readonly Dictionary<string, string> CONFIG_SETTINGS =
@@ -108,15 +131,45 @@ namespace Google.Ads.GoogleAds.Tests.Config
                 { "LoginCustomerId", LOGIN_CUSTOMER_ID_VALUE },
                 { "LinkedCustomerId", LINKED_CUSTOMER_ID_VALUE },
                 { "ClientCustomerId", CLIENT_CUSTOMER_ID_VALUE },
+                { "OAuth2Mode", OAUTH2_MODE_VALUE },
                 { "OAuth2ClientId", OAUTH2_CLIENT_ID_VALUE },
                 { "OAuth2ClientSecret", OAUTH2_CLIENT_SECRET_VALUE },
                 { "OAuth2RefreshToken", OAUTH2_REFRESH_TOKEN_VALUE },
+                { "OAuth2PrnEmail", OAUTH2_PRN_EMAIL_VALUE },
                 { "OAuth2Scope", OAUTH2_SCOPE_VALUE },
                 { "ProxyServer", PROXY_SERVER_VALUE },
                 { "ProxyUser", PROXY_USER_VALUE },
                 { "ProxyPassword", PROXY_PASSWORD_VALUE },
                 { "ProxyDomain", PROXY_DOMAIN_VALUE },
             };
+
+        [SetUp]
+        public void Init()
+        {
+            TEMP_SETTING_JSON_FILE = CreateSettingsJson();
+            TEMP_SECRET_JSON_FILE = CreateSecretsJson();
+            CONFIG_SETTINGS["OAuth2SecretsJsonPath"] = TEMP_SECRET_JSON_FILE;
+
+            foreach (string envKey in ENV_VAR_TO_CONFIG_KEY_MAP.Keys)
+            {
+                string configKey = ENV_VAR_TO_CONFIG_KEY_MAP[envKey];
+                if (CONFIG_SETTINGS.ContainsKey(configKey))
+                {
+                    string value = CONFIG_SETTINGS[configKey];
+                    Environment.SetEnvironmentVariable(envKey, value);
+                }
+            }
+        }
+
+        [TearDown]
+        public void Cleanup()
+        {
+            Environment.SetEnvironmentVariable(EnvironmentVariableNames.CONFIG_FILE_PATH, null);
+            foreach (string envKey in ENV_VAR_TO_CONFIG_KEY_MAP.Keys)
+            {
+                Environment.SetEnvironmentVariable(envKey, null);
+            }
+        }
 
         /// <summary>
         /// Tests the <see cref="GoogleAdsConfig.ReadSettings(Dictionary{string, string})"/> method.
@@ -125,6 +178,11 @@ namespace Google.Ads.GoogleAds.Tests.Config
         public void TestReadSettings()
         {
             ReadSettings(CONFIG_SETTINGS);
+            VerifySettings();
+        }
+
+        private void VerifySettings()
+        {
             Assert.AreEqual(SERVER_URL_VALUE, this.ServerUrl);
             Assert.AreEqual(TIMEOUT_VALUE, this.Timeout);
             Assert.AreEqual(DEVELOPER_TOKEN_VALUE, this.DeveloperToken);
@@ -138,12 +196,93 @@ namespace Google.Ads.GoogleAds.Tests.Config
 
             // Tests for Proxy field.
             NetworkCredential credential = (NetworkCredential) this.Proxy.Credentials;
-            Assert.AreEqual(new Uri(PROXY_SERVER_VALUE).AbsoluteUri, 
+            Assert.AreEqual(new Uri(PROXY_SERVER_VALUE).AbsoluteUri,
                 this.Proxy.Address.AbsoluteUri);
             Assert.AreEqual(PROXY_USER_VALUE, credential.UserName);
             Assert.AreEqual(PROXY_PASSWORD_VALUE, credential.Password);
             Assert.AreEqual(PROXY_DOMAIN_VALUE, credential.Domain);
-
         }
+
+        /// <summary>
+        /// Tests for <see cref="ConfigBase.TryLoadFromEnvironmentFilePath(string, string)"/>
+        /// </summary>
+        [Test]
+        public void TestLoadFromEnvironmentFilePath()
+        {
+            Environment.SetEnvironmentVariable(EnvironmentVariableNames.CONFIG_FILE_PATH,
+                TEMP_SETTING_JSON_FILE);
+            TryLoadFromEnvironmentFilePath(EnvironmentVariableNames.CONFIG_FILE_PATH,
+                CONFIG_SECTION_NAME);
+            VerifySettings();
+            Environment.SetEnvironmentVariable(EnvironmentVariableNames.CONFIG_FILE_PATH, null);
+        }
+
+        /// <summary>
+        /// Tests for <see cref="ConfigBase.LoadFromSettingsJson(string, string)"/>
+        /// </summary>
+        [Test]
+        public void TestLoadFromSettingsJson()
+        {
+            LoadFromSettingsJson(TEMP_SETTING_JSON_FILE, CONFIG_SECTION_NAME);
+            VerifySettings();
+        }
+
+        /// <summary>
+        /// Tests for <see cref="ConfigBase.LoadFromEnvironmentVariables()"/>
+        /// </summary>
+        [Test]
+        public void TestLoadFromEnvironmentVariables()
+        {
+            LoadFromEnvironmentVariables();
+            Assert.AreEqual(DEVELOPER_TOKEN_VALUE, this.DeveloperToken);
+            Assert.AreEqual(LOGIN_CUSTOMER_ID_VALUE, this.LoginCustomerId);
+            Assert.AreEqual(LINKED_CUSTOMER_ID_VALUE, this.LinkedCustomerId);
+            Assert.AreEqual(OAUTH2_MODE_VALUE, this.OAuth2Mode.ToString());
+            Assert.AreEqual(OAUTH2_CLIENT_ID_VALUE, this.OAuth2ClientId);
+            Assert.AreEqual(OAUTH2_CLIENT_SECRET_VALUE, this.OAuth2ClientSecret);
+            Assert.AreEqual(OAUTH2_REFRESH_TOKEN_VALUE, this.OAuth2RefreshToken);
+            Assert.AreEqual(SERVER_URL_VALUE, this.ServerUrl);
+            Assert.AreEqual(OAUTH2_PRN_EMAIL_VALUE, this.OAuth2PrnEmail);
+            Assert.AreEqual(TEMP_SECRET_JSON_FILE, this.OAuth2SecretsJsonPath);
+        }
+
+        /// <summary>
+        /// Creates a settings.json file for testing purposes.
+        /// </summary>
+        /// <returns>The path to the temporary settings json file.</returns>
+        private string CreateSettingsJson()
+        {
+            Dictionary<string, Dictionary<string, string>> jsonMap =
+                new Dictionary<string, Dictionary<string, string>>()
+                {
+                    { CONFIG_SECTION_NAME, CONFIG_SETTINGS }
+                };
+
+            string json = JsonConvert.SerializeObject(jsonMap);
+
+            string jsonPath = Path.GetTempFileName();
+            using (StreamWriter writer = new StreamWriter(jsonPath))
+            {
+                writer.Write(json);
+                writer.Flush();
+            }
+            return jsonPath;
+        }
+
+        /// <summary>
+        /// Creates a secrets json for testing purposes.
+        /// </summary>
+        /// <returns>The path to the temporary secrets json file.</returns>
+        private string CreateSecretsJson()
+        {
+            string jsonPath = Path.GetTempFileName();
+            using (StreamWriter writer = new StreamWriter(jsonPath))
+            {
+                writer.Write(TestResources.SecretJson);
+                writer.Flush();
+            }
+            return jsonPath;
+        }
+
     }
 }

@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/remarketingActions/{remarketing_action}</c>.
             /// </summary>
-            CustomerRemarketingAction = 1
+            CustomerRemarketingAction = 1,
         }
 
         private static gax::PathTemplate s_customerRemarketingAction = new gax::PathTemplate("customers/{customer}/remarketingActions/{remarketing_action}");

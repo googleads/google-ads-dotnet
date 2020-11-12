@@ -14,14 +14,14 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using Google.Protobuf;
 using System;
-using static Google.Ads.GoogleAds.V5.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.MediaTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example uploads an image.
@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the MediaFileServiceClient.
             MediaFileServiceClient mediaFileService =
-                client.GetService(Services.V5.MediaFileService);
+                client.GetService(Services.V6.MediaFileService);
 
             const string URL = "https://goo.gl/3b9Wfh";
 

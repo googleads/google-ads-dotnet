@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/domainCategories/{domain_category}</c>.
             /// </summary>
-            CustomerDomainCategory = 1
+            CustomerDomainCategory = 1,
         }
 
         private static gax::PathTemplate s_customerDomainCategory = new gax::PathTemplate("customers/{customer}/domainCategories/{domain_category}");

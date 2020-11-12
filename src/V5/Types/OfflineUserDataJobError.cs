@@ -308,7 +308,7 @@ namespace Google.Ads.GoogleAds.V5.Errors {
         /// </summary>
         [pbr::OriginalName("REMOVE_NOT_SUPPORTED")] RemoveNotSupported = 23,
         /// <summary>
-        /// Remove-all is not supported for store sales direct updates.
+        /// Remove-all is not supported for certain offline user data job types.
         /// </summary>
         [pbr::OriginalName("REMOVE_ALL_NOT_SUPPORTED")] RemoveAllNotSupported = 24,
         /// <summary>
@@ -329,7 +329,7 @@ namespace Google.Ads.GoogleAds.V5.Errors {
         /// </summary>
         [pbr::OriginalName("CUSTOM_KEY_NOT_SET")] CustomKeyNotSet = 29,
         /// <summary>
-        /// The customer has not accpeted the customer data terms in the conversion
+        /// The customer has not accepted the customer data terms in the conversion
         /// settings page.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS")] CustomerNotAcceptedCustomerDataTerms = 30,

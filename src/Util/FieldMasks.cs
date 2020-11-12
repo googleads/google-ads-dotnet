@@ -19,6 +19,7 @@ using Google.Protobuf.WellKnownTypes;
 
 using System;
 using System.Collections;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Util
 {
@@ -140,6 +141,91 @@ namespace Google.Ads.GoogleAds.Util
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// Gets the field value.
+        /// </summary>
+        /// <param name="fieldMaskPath">The field mask path.</param>
+        /// <param name="entity">The entity to retrieve values from.</param>
+        /// <returns>The </returns>
+        /// <exception cref="ArgumentException">Thrown if the path cannot be recursed further.
+        /// </exception>
+        public static object GetFieldValue(string fieldMaskPath, IMessage entity)
+        {
+            string[] fieldMaskParts = fieldMaskPath.Split('.');
+            int currentFieldIndex = 0;
+            IMessage currentEntity = entity;
+            bool fieldMatchFound = false;
+            while (currentFieldIndex < fieldMaskParts.Length)
+            {
+                fieldMatchFound = false;
+                if (currentEntity == null)
+                {
+                    string currentPath = string.Join(".",
+                        fieldMaskParts.Take(currentFieldIndex + 1));
+                    throw new ArgumentException($"Cannot get field value. {currentPath} is null.");
+                }
+                var descriptor = currentEntity.Descriptor;
+                foreach (var childField in descriptor.Fields.InFieldNumberOrder())
+                {
+                    if (childField.Name != fieldMaskParts[currentFieldIndex])
+                    {
+                        continue;
+                    }
+                    fieldMatchFound = true;
+                    var childValue = childField.Accessor.GetValue(currentEntity);
+
+                    if (!childField.IsRepeated && childField.FieldType == FieldType.Message &&
+                        childValue is IMessage)
+                    {
+                        // we can recurse.
+                        currentFieldIndex++;
+                        currentEntity = childValue as IMessage;
+                        break;
+                    }
+                    else if (childField.IsRepeated && childValue is IList)
+                    {
+                        if (currentFieldIndex + 1 == fieldMaskParts.Length)
+                        {
+                            return childValue;
+                        }
+                        else
+                        {
+                            string currentPath = string.Join(".",
+                                fieldMaskParts.Take(currentFieldIndex + 1));
+                            throw new ArgumentException($"Cannot retrieve field value. A " +
+                                $"repeated field was encountered after navigating " +
+                                $"{fieldMaskPath} upto {currentPath}.");
+                        }
+                    }
+                    else
+                    {
+                        if (currentFieldIndex + 1 == fieldMaskParts.Length)
+                        {
+                            // we cannot recurse any longer.
+                            return childValue;
+                        }
+                        else
+                        {
+                            string currentPath = string.Join(".",
+                                fieldMaskParts.Take(currentFieldIndex + 1));
+                            throw new ArgumentException($"Cannot retrieve field value. A " +
+                                $"non-IMessage field was encountered after navigating " +
+                                $"{fieldMaskPath} upto {currentPath}.");
+                        }
+                    }
+                }
+                if (!fieldMatchFound)
+                {
+                    string currentPath = string.Join(".",
+                        fieldMaskParts.Take(currentFieldIndex + 1));
+                    throw new ArgumentException($"Cannot retrieve field value. A " +
+                        $"matching field was not found after navigating the " +
+                        $"{fieldMaskPath} upto {currentPath}.");
+                }
+            }
+            return currentEntity;
         }
 
         /// <summary>

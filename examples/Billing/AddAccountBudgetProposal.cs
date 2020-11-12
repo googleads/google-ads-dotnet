@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
-using static Google.Ads.GoogleAds.V5.Enums.AccountBudgetProposalTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.TimeTypeEnum.Types;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
+using static Google.Ads.GoogleAds.V6.Enums.AccountBudgetProposalTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.TimeTypeEnum.Types;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example creates an account budget proposal using the 'CREATE' operation. To get
@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the AccountBudgetProposalServiceClient.
             AccountBudgetProposalServiceClient proposalService =
-                client.GetService(Services.V5.AccountBudgetProposalService);
+                client.GetService(Services.V6.AccountBudgetProposalService);
 
             // Create an AccountBudgetProposal.
             // The proposal will be reviewed offline by Google Ads, and if approved will

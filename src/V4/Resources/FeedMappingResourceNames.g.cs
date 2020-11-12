@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>customers/{customer}/feedMappings/{feed_mapping}</c>.</summary>
-            CustomerFeedMapping = 1
+            CustomerFeedMapping = 1,
         }
 
         private static gax::PathTemplate s_customerFeedMapping = new gax::PathTemplate("customers/{customer}/feedMappings/{feed_mapping}");

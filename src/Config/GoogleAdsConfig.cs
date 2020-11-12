@@ -12,11 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Auth.OAuth2.Flows;
 using Google.Apis.Auth.OAuth2.Responses;
-using Google.Apis.Util;
 using Microsoft.Extensions.Configuration;
 
 using Newtonsoft.Json;
@@ -64,7 +64,7 @@ namespace Google.Ads.GoogleAds.Config
         /// </summary>
         /// <remarks>This is kept as such to provide backwards compatibility with the SOAP client
         /// libraries.</remarks>
-        private const string CONFIG_SECTION_NAME = "GoogleAdsApi";
+        protected const string CONFIG_SECTION_NAME = "GoogleAdsApi";
 
         /// <summary>
         /// OAuth2 client ID.
@@ -198,6 +198,11 @@ namespace Google.Ads.GoogleAds.Config
         /// </summary>
         private readonly StringConfigSetting libraryIdentifierOverride =
             new StringConfigSetting("LibraryIdentifierOverride", "");
+
+        /// <summary>
+        /// A map between the environment variable key names and configuration key names.
+        /// </summary>
+        protected readonly Dictionary<string, string> ENV_VAR_TO_CONFIG_KEY_MAP;
 
         /// <summary>
         /// Gets or sets the timeout for individual API calls.
@@ -474,7 +479,23 @@ namespace Google.Ads.GoogleAds.Config
         /// </summary>
         public GoogleAdsConfig() : base()
         {
-            LoadFromAppConfigSection(CONFIG_SECTION_NAME);
+            ENV_VAR_TO_CONFIG_KEY_MAP = new Dictionary<string, string>() {
+                { EnvironmentVariableNames.OAUTH2_MODE, oAuth2Mode.Name},
+                { EnvironmentVariableNames.OAUTH2_CLIENT_ID, oAuth2ClientId.Name},
+                { EnvironmentVariableNames.OAUTH2_CLIENT_SECRET, oAuth2ClientSecret.Name},
+                { EnvironmentVariableNames.OAUTH2_REFRESH_TOKEN, oAuth2RefreshToken.Name},
+                { EnvironmentVariableNames.OAUTH2_JSON_KEY_FILE_PATH, oAuth2SecretsJsonPath.Name},
+                { EnvironmentVariableNames.OAUTH2_IMPERSONATED_EMAIL, oAuth2PrnEmail.Name},
+                { EnvironmentVariableNames.DEVELOPER_TOKEN, developerToken.Name},
+                { EnvironmentVariableNames.LOGIN_CUSTOMER_ID, loginCustomerId.Name},
+                { EnvironmentVariableNames.LINKED_CUSTOMER_ID, linkedCustomerId.Name},
+                { EnvironmentVariableNames.ENDPOINT, serverUrl.Name},
+            };
+            if (!LoadFromAppConfigSection(CONFIG_SECTION_NAME))
+            {
+                TryLoadFromEnvironmentFilePath(EnvironmentVariableNames.CONFIG_FILE_PATH,
+                    CONFIG_SECTION_NAME);
+            }
         }
 
         /// <summary>
@@ -499,6 +520,24 @@ namespace Google.Ads.GoogleAds.Config
         /// </summary>
         /// <param name="settings">The settings.</param>
         public GoogleAdsConfig(Dictionary<string, string> settings) : base(settings) { }
+
+        /// <summary>
+        /// Loads the configuration from environment variables.
+        /// </summary>
+        public void LoadFromEnvironmentVariables()
+        {
+            Dictionary<string, string> settings = new Dictionary<string, string>();
+
+            foreach (string key in ENV_VAR_TO_CONFIG_KEY_MAP.Keys)
+            {
+                string value = Environment.GetEnvironmentVariable(key);
+                if (!string.IsNullOrEmpty(value))
+                {
+                    settings[ENV_VAR_TO_CONFIG_KEY_MAP[key]] = value;
+                }
+            }
+            ReadSettings(settings);
+        }
 
         /// <summary>
         /// Read all settings from App.config.
@@ -573,7 +612,7 @@ namespace Google.Ads.GoogleAds.Config
         /// <summary>
         /// The credential object that was created from settings.
         /// </summary>
-        ICredential credential = null;
+        private ICredential credential = null;
 
         /// <summary>
         /// Gets the credentials.

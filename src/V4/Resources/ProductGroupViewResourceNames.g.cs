@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/productGroupViews/{product_group_view}</c>.
             /// </summary>
-            CustomerProductGroupView = 1
+            CustomerProductGroupView = 1,
         }
 
         private static gax::PathTemplate s_customerProductGroupView = new gax::PathTemplate("customers/{customer}/productGroupViews/{product_group_view}");

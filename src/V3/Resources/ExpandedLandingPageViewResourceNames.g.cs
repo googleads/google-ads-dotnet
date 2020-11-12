@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// A resource name with pattern
             /// <c>customers/{customer}/expandedLandingPageViews/{expanded_landing_page_view}</c>.
             /// </summary>
-            CustomerExpandedLandingPageView = 1
+            CustomerExpandedLandingPageView = 1,
         }
 
         private static gax::PathTemplate s_customerExpandedLandingPageView = new gax::PathTemplate("customers/{customer}/expandedLandingPageViews/{expanded_landing_page_view}");

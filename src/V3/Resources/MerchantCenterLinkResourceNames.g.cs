@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/merchantCenterLinks/{merchant_center_link}</c>.
             /// </summary>
-            CustomerMerchantCenterLink = 1
+            CustomerMerchantCenterLink = 1,
         }
 
         private static gax::PathTemplate s_customerMerchantCenterLink = new gax::PathTemplate("customers/{customer}/merchantCenterLinks/{merchant_center_link}");

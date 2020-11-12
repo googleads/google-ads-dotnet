@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using System;
-using static Google.Ads.GoogleAds.V5.Enums.ContentLabelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.ContentLabelTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example adds various types of negative criteria as exclusions at the customer
@@ -59,7 +59,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the CustomerNegativeCriterionServiceClient .
             CustomerNegativeCriterionServiceClient customerNegativeCriterionService =
-                client.GetService(Services.V5.CustomerNegativeCriterionService);
+                client.GetService(Services.V6.CustomerNegativeCriterionService);
 
             // Creates a negative customer criterion excluding the content label type of 'TRAGEDY'.
             CustomerNegativeCriterion tragedyCriterion = new CustomerNegativeCriterion()

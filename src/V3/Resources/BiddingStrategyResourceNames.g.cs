@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/biddingStrategies/{bidding_strategy}</c>.
             /// </summary>
-            CustomerBiddingStrategy = 1
+            CustomerBiddingStrategy = 1,
         }
 
         private static gax::PathTemplate s_customerBiddingStrategy = new gax::PathTemplate("customers/{customer}/biddingStrategies/{bidding_strategy}");

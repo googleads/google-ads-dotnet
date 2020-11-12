@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>productBiddingCategoryConstants/{product_bidding_category_constant}</c>.
             /// </summary>
-            ProductBiddingCategoryConstant = 1
+            ProductBiddingCategoryConstant = 1,
         }
 
         private static gax::PathTemplate s_productBiddingCategoryConstant = new gax::PathTemplate("productBiddingCategoryConstants/{product_bidding_category_constant}");

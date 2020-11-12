@@ -18,14 +18,14 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
-using static Google.Ads.GoogleAds.V5.Enums.OfflineUserDataJobTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.OfflineUserDataJobStatusEnum.Types;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
+using static Google.Ads.GoogleAds.V6.Enums.OfflineUserDataJobTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.OfflineUserDataJobStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example uploads offline data for store sales transactions.
@@ -120,7 +120,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the OfflineUserDataJobServiceClient.
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient =
-                client.GetService(Services.V5.OfflineUserDataJobService);
+                client.GetService(Services.V6.OfflineUserDataJobService);
 
             // Ensure that a valid job type is provided.
             if (offlineUserDataJobType != OfflineUserDataJobType.StoreSalesUploadFirstParty &
@@ -257,11 +257,13 @@ namespace Google.Ads.GoogleAds.Examples.V5
                         // Please speak with your Google representative to get the values to use for
                         // the bridge map version and partner IDs.
                         BridgeMapVersionId = bridgeMapVersionId,
-
-                        // Sets the third party partner ID uploading the transactions.
-                        PartnerId = partnerId
                     };
 
+                // Sets the third party partner ID uploading the transactions.
+                if (partnerId.HasValue)
+                {
+                    storeSalesThirdPartyMetadata.PartnerId = partnerId.Value;
+                }
                 storeSalesMetadata.ThirdPartyMetadata = storeSalesThirdPartyMetadata;
             }
 
@@ -370,10 +372,11 @@ namespace Google.Ads.GoogleAds.Examples.V5
                     CurrencyCode = "USD",
                     // Converts the transaction amount from $200 USD to micros.
                     TransactionAmountMicros = 200L * 1_000_000L,
-                    // Specifies the date and time of the transaction. This date and time will be
-                    // interpreted by the API using the Google Ads customer's time zone.
-                    // The date/time must be in the format "yyyy-MM-dd HH:mm:ss",
-                    // e.g. "2020-05-14 19:07:02".
+                    // Specifies the date and time of the transaction. The format is 
+                    // "YYYY-MM-DD HH:MM:SS[+HH:MM]", where [+HH:MM] is an optional
+                    // timezone offset from UTC. If the offset is absent, the API will
+                    // use the account's timezone as default. Examples: "2018-03-05 09:15:00"
+                    // or "2018-02-01 14:34:30+03:00".                 
                     TransactionDateTime = DateTime.Today.AddDays(-2).ToString("yyyy-MM-dd HH:mm:ss")
                 }
             };
@@ -477,7 +480,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
             string offlineUserDataJobResourceName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V5.GoogleAdsService);
+                client.GetService(Services.V6.GoogleAdsService);
 
             string query = $@"SELECT offline_user_data_job.resource_name,
                     offline_user_data_job.id,

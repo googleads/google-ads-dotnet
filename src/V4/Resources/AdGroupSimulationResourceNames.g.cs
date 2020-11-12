@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/adGroupSimulations/{ad_group_simulation}</c>.
             /// </summary>
-            CustomerAdGroupSimulation = 1
+            CustomerAdGroupSimulation = 1,
         }
 
         private static gax::PathTemplate s_customerAdGroupSimulation = new gax::PathTemplate("customers/{customer}/adGroupSimulations/{ad_group_simulation}");

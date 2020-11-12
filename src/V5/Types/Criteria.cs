@@ -12219,7 +12219,8 @@ namespace Google.Ads.GoogleAds.V5.Common {
     public const int RadiusUnitsFieldNumber = 4;
     private global::Google.Ads.GoogleAds.V5.Enums.LocationGroupRadiusUnitsEnum.Types.LocationGroupRadiusUnits radiusUnits_ = global::Google.Ads.GoogleAds.V5.Enums.LocationGroupRadiusUnitsEnum.Types.LocationGroupRadiusUnits.Unspecified;
     /// <summary>
-    /// Unit of the radius, miles and meters supported currently.
+    /// Unit of the radius. Miles and meters are supported for geo target
+    /// constants. Milli miles and meters are supported for feed item sets.
     /// This is required and must be set in CREATE operations.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
