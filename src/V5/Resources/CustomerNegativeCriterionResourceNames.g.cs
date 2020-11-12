@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             /// A resource name with pattern
             /// <c>customers/{customer}/customerNegativeCriteria/{customer_negative_criterion}</c>.
             /// </summary>
-            CustomerCustomerNegativeCriterion = 1
+            CustomerCustomerNegativeCriterion = 1,
         }
 
         private static gax::PathTemplate s_customerCustomerNegativeCriterion = new gax::PathTemplate("customers/{customer}/customerNegativeCriteria/{customer_negative_criterion}");

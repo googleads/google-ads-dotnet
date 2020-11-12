@@ -13,19 +13,19 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Enums;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Enums;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 
 using System;
 
-using static Google.Ads.GoogleAds.V5.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V5.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V6.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example adds a portfolio bidding strategy and uses it to construct a campaign.
@@ -117,7 +117,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the BiddingStrategyService.
             BiddingStrategyServiceClient biddingStrategyService = client.GetService(
-                Services.V5.BiddingStrategyService);
+                Services.V6.BiddingStrategyService);
 
             // Create a portfolio bidding strategy.
             BiddingStrategy biddingStrategy = new BiddingStrategy()
@@ -157,7 +157,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V5.CampaignBudgetService);
+                client.GetService(Services.V6.CampaignBudgetService);
 
             // Create a shared budget.
             CampaignBudget budget = new CampaignBudget()
@@ -194,7 +194,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
             string campaignBudgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V5.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V6.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()

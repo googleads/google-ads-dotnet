@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             /// A resource name with pattern
             /// <c>customers/{customer}/thirdPartyAppAnalyticsLinks/{third_party_app_analytics_link}</c>.
             /// </summary>
-            CustomerThirdPartyAppAnalyticsLink = 1
+            CustomerThirdPartyAppAnalyticsLink = 1,
         }
 
         private static gax::PathTemplate s_customerThirdPartyAppAnalyticsLink = new gax::PathTemplate("customers/{customer}/thirdPartyAppAnalyticsLinks/{third_party_app_analytics_link}");

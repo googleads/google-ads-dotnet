@@ -14,15 +14,15 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V5.Enums.ManagerLinkStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.ManagerLinkStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     ///  This code example demonstrates how to link an existing Google Ads manager customer
@@ -105,7 +105,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the CustomerClientLinkService.
             CustomerClientLinkServiceClient customerClientLinkService =
-                client.GetService(Services.V5.CustomerClientLinkService);
+                client.GetService(Services.V6.CustomerClientLinkService);
 
             // Create a client with the manager customer ID as login customer ID.
             client.Config.LoginCustomerId = managerCustomerId.ToString();
@@ -156,7 +156,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V5.GoogleAdsService);
+                client.GetService(Services.V6.GoogleAdsService);
 
             // Create a client with the manager customer ID as login customer ID.
             client.Config.LoginCustomerId = managerCustomerId.ToString();
@@ -171,7 +171,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
                 managerCustomerId.ToString(), query).First();
 
             // Gets the ID and resource name associated to the manager link found.
-            long managerLinkId = result.CustomerManagerLink.ManagerLinkId.Value;
+            long managerLinkId = result.CustomerManagerLink.ManagerLinkId;
             string managerLinkResourceName = ResourceNames.CustomerManagerLink(
                 clientCustomerId, managerCustomerId, managerLinkId);
             // Prints the result.
@@ -192,7 +192,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the CustomerManagerLinkService.
             CustomerManagerLinkServiceClient customerManagerLinkService =
-                client.GetService(Services.V5.CustomerManagerLinkService);
+                client.GetService(Services.V6.CustomerManagerLinkService);
 
             // Create a client with the manager customer ID as login customer ID.
             client.Config.LoginCustomerId = clientCustomerId.ToString();

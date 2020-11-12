@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/campaignSharedSets/{campaign_shared_set}</c>.
             /// </summary>
-            CustomerCampaignSharedSet = 1
+            CustomerCampaignSharedSet = 1,
         }
 
         private static gax::PathTemplate s_customerCampaignSharedSet = new gax::PathTemplate("customers/{customer}/campaignSharedSets/{campaign_shared_set}");

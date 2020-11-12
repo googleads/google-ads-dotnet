@@ -336,8 +336,12 @@ namespace Google.Ads.GoogleAds.V5.Resources {
     private static readonly pb::FieldCodec<long?> _single_subtotalAmountMicros_codec = pb::FieldCodec.ForStructWrapper<long>(98);
     private long? subtotalAmountMicros_;
     /// <summary>
-    /// Output only. The pretax subtotal amount, in micros. This equals the sum of the
-    /// AccountBudgetSummary subtotal amounts, plus the invoice level adjustments.
+    /// Output only. The pretax subtotal amount, in micros. This equals the
+    /// sum of the AccountBudgetSummary subtotal amounts,
+    /// Invoice.adjustments_subtotal_amount_micros, and
+    /// Invoice.regulatory_costs_subtotal_amount_micros.
+    /// Starting with v6, the Invoice.regulatory_costs_subtotal_amount_micros is no
+    /// longer included.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long? SubtotalAmountMicros {
@@ -371,8 +375,11 @@ namespace Google.Ads.GoogleAds.V5.Resources {
     private static readonly pb::FieldCodec<long?> _single_totalAmountMicros_codec = pb::FieldCodec.ForStructWrapper<long>(114);
     private long? totalAmountMicros_;
     /// <summary>
-    /// Output only. The total amount, in micros. This equals the sum of the invoice subtotal
-    /// amount and the invoice tax amount.
+    /// Output only. The total amount, in micros. This equals the sum of
+    /// Invoice.subtotal_amount_micros and Invoice.tax_amount_micros.
+    /// Starting with v6, Invoice.regulatory_costs_subtotal_amount_micros is
+    /// also added as it is no longer already included in
+    /// Invoice.tax_amount_micros.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long? TotalAmountMicros {

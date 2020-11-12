@@ -207,6 +207,8 @@ namespace Google.Ads.GoogleAds.V4.Enums {
         /// <summary>
         /// Specifies that an ad is triggered if the user
         /// searches for advertiser's targeted locations.
+        /// This can only be used with Search and standard
+        /// Shopping campaigns.
         /// </summary>
         [pbr::OriginalName("SEARCH_INTEREST")] SearchInterest = 6,
         /// <summary>

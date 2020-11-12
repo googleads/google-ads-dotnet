@@ -234,7 +234,7 @@ namespace Google.Ads.GoogleAds.Examples
             List<Flag> retval = new List<Flag>();
 
             // Skip one parameter, since the first parameter is the GoogleAdsClient.
-            foreach(ParameterInfo parameterInfo in runMethod.GetParameters().Skip(1))
+            foreach (ParameterInfo parameterInfo in runMethod.GetParameters().Skip(1))
             {
                 retval.Add(Flags.FromParameterInfo(parameterInfo));
             }

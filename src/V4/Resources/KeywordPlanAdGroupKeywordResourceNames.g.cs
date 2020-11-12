@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             /// A resource name with pattern
             /// <c>customers/{customer}/keywordPlanAdGroupKeywords/{keyword_plan_ad_group_keyword}</c>.
             /// </summary>
-            CustomerKeywordPlanAdGroupKeyword = 1
+            CustomerKeywordPlanAdGroupKeyword = 1,
         }
 
         private static gax::PathTemplate s_customerKeywordPlanAdGroupKeyword = new gax::PathTemplate("customers/{customer}/keywordPlanAdGroupKeywords/{keyword_plan_ad_group_keyword}");

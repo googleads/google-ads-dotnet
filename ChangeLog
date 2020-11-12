@@ -1,3 +1,67 @@
+6.0.0
+=====
+- Added support for v6 of Google Ads API. See
+  https://developers.google.com/google-ads/api/docs/release-notes#v6 for release notes.
+- Removed support for v2 of the Google Ads API. See
+ https://developers.google.com/google-ads/api/docs/sunset-dates and
+ https://ads-developers.googleblog.com/2020/08/google-ads-api-v2-sunset-reminder.html
+ for more details.
+- The library dependencies were bumped as listed below:
+  - Google.Api.Gax and related assemblies: 3.2.0
+  - Grpc.Core and related assemblies: 2.33.1
+  - Microsoft.Extensions and related assemblies: 3.1.9
+- Fixed the README.md file to make it minimal. See
+ https://developers.google.com/google-ads/api/docs/client-libs/dotnet for detailed
+ documentation.
+- Fixed the conditional compilation for net472.
+- Added a utility method in FieldMasks.cs to fetch field values given a fieldmask.
+- Added additional masking for PII in logs.
+- Fixed the broken documentation links in multiple source files.
+- Fixed broken examples.
+  - Billing\AddBillingSetup.cs
+  - Fixed issue 246 - Reporting\ParallelReportDownload.cs.
+- Updated some examples.
+  - Updated the query in Billing\AddBillingSetup.cs.
+  - Fix a comment in Remarketing\UploadStoreSalesTransactions.cs.
+  - Simplified the paged search iteration in Billing\GetBillingSetup.cs.
+  - Renamed Authentication\AuthenticateInStandaloneApplication => Authentication\AuthenticateInDesktopApplication.
+  - Minor grammar fix in Remarketing\UploadCallConversion.cs.
+  - Renamed AccountManagement\GetAccountChanges.cs => AccountManagement\GetChangeSummary.cs.
+- Fixed the resource name for DomainCategory.
+- Fixed the PartialFailureError condition logic.
+- Migrated all code examples to use proto3 presence instead of wrapper types. This improves
+ the API performance and makes the API easier to work with native C# types.
+- Added support for reading the settings.json file from an environment variable named
+ GOOGLE_ADS_CONFIGURATION_FILE_PATH. The client library will try to load settings from this file
+ if App.config is missing, and this environment variable is provided.
+- Added support for reading individual settings from an environment variable. Supported settings
+  are:
+  - GOOGLE_ADS_OAUTH2_MODE
+  - GOOGLE_ADS_CLIENT_ID
+  - GOOGLE_ADS_CLIENT_SECRET
+  - GOOGLE_ADS_REFRESH_TOKEN
+  - GOOGLE_ADS_JSON_KEY_FILE_PATH
+  - GOOGLE_ADS_IMPERSONATED_EMAIL
+  - GOOGLE_ADS_DEVELOPER_TOKEN
+  - GOOGLE_ADS_LOGIN_CUSTOMER_ID
+  - GOOGLE_ADS_LINKED_CUSTOMER_ID
+- Add new code examples.
+  - Remarketing\SetupRemarketing.cs.
+  - Remarketing\SetupAdvancedRemarketing.cs
+  - Remarketing\UpdateAudienceTargetRestriction.cs.
+  - AdvancedOperations\AddLocalCampaign.cs.
+  - HotelAds\AddHotelListingGroupTree.cs.
+  - AccountManagement\UpdateUserAccess.cs.
+  - AdvancedOperations\GetChangeDetails.cs.
+  - Extensions\UpdateSitelinkCampaignExtensionSetting.cs.
+  - Extensions\UpdateSitelink.cs.
+  - Extensions\RemoveEntireSitelinkCampaignExtensionSetting.cs.
+  - Extensions\AddLeadFormExtension.cs.
+  - Extensions\AddHotelCallout.cs.
+- Fixed the PackageIconUrl property in Google.Ads.GoogleAds.csproj with PackageIcon as required
+ by the latest .NET library.
+- Downgrade the tests to use .netcoreapp3.0.
+
 5.0.0
 =====
 - Added support for v5 of Google Ads API. See

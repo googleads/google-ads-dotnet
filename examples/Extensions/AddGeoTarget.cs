@@ -16,11 +16,11 @@ using System;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// Adds a geo target to a extension feed item for targeting.
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the ExtensionFeedItemServiceClient.
             ExtensionFeedItemServiceClient extensionFeedItemServiceClient =
-                client.GetService(Services.V5.ExtensionFeedItemService);
+                client.GetService(Services.V6.ExtensionFeedItemService);
 
             // Apply the default geo target constant ID (USA) if none was passed to the function.
             if (!geoTargetConstantId.HasValue)

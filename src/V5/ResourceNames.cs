@@ -29,6 +29,11 @@ namespace Google.Ads.GoogleAds.V5.Errors
     /// </summary>
     public class ResourceNames
     {
+        private static string Base64Encode(string text)
+        {
+            return Convert.ToBase64String(Encoding.UTF8.GetBytes(text));
+        }
+
         public static string AccountBudgetProposal(long customerId, long accountBudgetProposalId)
         {
             return $"customers/{customerId}/accountBudgetProposals/{accountBudgetProposalId}";
@@ -79,9 +84,14 @@ namespace Google.Ads.GoogleAds.V5.Errors
             return $"customers/{customerId}/adGroupCriterionLabels/{adGroupId}~{criterionId}~{labelId}";
         }
 
+        public static string AdGroupCriterionSimulation(long customerId, long adGroupId, long criterionId, SimulationType type, SimulationModificationMethod modificationMethod, DateTime startDate, DateTime endDate)
+        {
+            return $"customers/{customerId}/adGroupCriterionSimulations/{adGroupId}~{criterionId}~{type.ToString().ToUpper()}~{modificationMethod.ToString().ToUpper()}~{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
+        }
+
         public static string AdGroupExtensionSetting(long customerId, long adGroupId, ExtensionType extensionType)
         {
-            return $"customers/{customerId}/adGroupExtensionSettings/{adGroupId}~{extensionType}";
+            return $"customers/{customerId}/adGroupExtensionSettings/{adGroupId}~{extensionType.ToString().ToUpper()}";
         }
 
         public static string AdGroupFeed(long customerId, long adGroupId, long feedId)
@@ -94,19 +104,24 @@ namespace Google.Ads.GoogleAds.V5.Errors
             return $"customers/{customerId}/adGroupLabels/{adGroupId}~{labelId}";
         }
 
+        public static string AdGroupSimulation(long customerId, long adGroupId, SimulationType type, SimulationModificationMethod modificationMethod, DateTime startDate, DateTime endDate)
+        {
+            return $"customers/{customerId}/adGroupSimulations/{adGroupId}~{type.ToString().ToUpper()}~{modificationMethod.ToString().ToUpper()}~{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
+        }
+
         public static string AdParameter(long customerId, long adGroupId, long criterionId, long parameterIndex)
         {
             return $"customers/{customerId}/adParameters/{adGroupId}~{criterionId}~{parameterIndex}";
         }
 
-        public static string AdScheduleView(long customerId, long campaignId, long criterionId)
-        {
-            return $"customers/{customerId}/adScheduleViews/{campaignId}~{criterionId}";
-        }
-
         public static string AgeRangeView(long customerId, long adGroupId, long criterionId)
         {
             return $"customers/{customerId}/ageRangeViews/{adGroupId}~{criterionId}";
+        }
+
+        public static string AdScheduleView(long customerId, long campaignId, long criterionId)
+        {
+            return $"customers/{customerId}/adScheduleViews/{campaignId}~{criterionId}";
         }
 
         public static string Asset(long customerId, long assetId)
@@ -154,6 +169,16 @@ namespace Google.Ads.GoogleAds.V5.Errors
             return $"customers/{customerId}/campaignBudgets/{budgetId}";
         }
 
+        public static string CampaignCriteria(long customerId, long campaignId, long criterionId)
+        {
+            return $"customers/{customerId}/campaignCriteria/{campaignId}~{criterionId}";
+        }
+
+        public static string CampaignCriterionSimulation(long customerId, long campaignId, long criterionId, SimulationType type, SimulationModificationMethod modificationMethod, DateTime startDate, DateTime endDate)
+        {
+            return $"customers/{customerId}/campaignCriterionSimulations/{campaignId}~{criterionId}~{type}~{modificationMethod}~{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
+        }
+
         public static string CampaignDraft(long customerId, long baseCampaignId, long draftId)
         {
             return $"customers/{customerId}/campaignDrafts/{baseCampaignId}~{draftId}";
@@ -162,11 +187,6 @@ namespace Google.Ads.GoogleAds.V5.Errors
         public static string CampaignExperiment(long customerId, long campaignExperimentId)
         {
             return $"customers/{customerId}/campaignExperiments/{campaignExperimentId}";
-        }
-
-        public static string CampaignCriteria(long customerId, long campaignId, long criterionId)
-        {
-            return $"customers/{customerId}/campaignCriteria/{campaignId}~{criterionId}";
         }
 
         public static string CampaignExtensionSetting(long customerId, long campaignId, ExtensionType extensionType)
@@ -204,6 +224,11 @@ namespace Google.Ads.GoogleAds.V5.Errors
             return $"customers/{customerId}/clickViews/{date.ToString("yyyy-MM-dd")}~{gclid}";
         }
 
+        public static string CombinedAudience(long customerId, long combinedAudienceId)
+        {
+            return $"customers/{customerId}/combinedAudiences/{combinedAudienceId}";
+        }
+
         public static string ConversionAction(long customerId, long conversionActionId)
         {
             return $"customers/{customerId}/conversionActions/{conversionActionId}";
@@ -236,7 +261,7 @@ namespace Google.Ads.GoogleAds.V5.Errors
 
         public static string CustomerExtensionSetting(long customerId, ExtensionType extensionType)
         {
-            return $"customers/{customerId}/customerExtensionSettings/{extensionType}";
+            return $"customers/{customerId}/customerExtensionSettings/{extensionType.ToString().ToUpper()}";
         }
 
         public static string CustomerFeed(long customerId, long feedId)
@@ -259,14 +284,14 @@ namespace Google.Ads.GoogleAds.V5.Errors
             return $"customers/{customerId}/customerNegativeCriteria/{criterionId}";
         }
 
+        public static string CustomerUserAccess(long customerId, long userId)
+        {
+            return $"customers/{customerId}/customerUserAccesses/{userId}";
+        }
+
         public static string DetailPlacementView(long customerId, long adGroupId, string placement)
         {
             return $"customers/{customerId}/detailPlacementViews/{adGroupId}~{Base64Encode(placement)}";
-        }
-
-        private static string Base64Encode(string text)
-        {
-            return Convert.ToBase64String(Encoding.UTF8.GetBytes(text));
         }
 
         public static string DisplayKeywordView(long customerId, long adGroupId, string criterionId)
@@ -274,7 +299,7 @@ namespace Google.Ads.GoogleAds.V5.Errors
             return $"customers/{customerId}/displayKeywordViews/{adGroupId}~{criterionId}";
         }
 
-        public static string DomainCategorie(long customerId, long campaignId, string category, string languageCode)
+        public static string DomainCategory(long customerId, long campaignId, string category, string languageCode)
         {
             return $"customers/{customerId}/domainCategories/{campaignId}~{Base64Encode(category)}~{languageCode}";
         }
@@ -282,6 +307,11 @@ namespace Google.Ads.GoogleAds.V5.Errors
         public static string DynamicSearchAdsSearchTermView(long customerId, long adGroupId, string searchTermFp, string headlineFp, string landingPageFp, string pageUrlFp)
         {
             return $"customers/{customerId}/dynamicSearchAdsSearchTermViews/{adGroupId}~{searchTermFp}~{headlineFp}~{landingPageFp}~{pageUrlFp}";
+        }
+
+        public static string ExpandedLandingPageView(long customerId, string expandedFinalUrlFingerprint)
+        {
+            return $"customers/{customerId}/expandedLandingPageViews/{expandedFinalUrlFingerprint}";
         }
 
         public static string ExtensionFeedItem(long customerId, long feedItemId)
@@ -301,7 +331,7 @@ namespace Google.Ads.GoogleAds.V5.Errors
 
         public static string FeedItemTarget(long customerId, long feedId, long feedItemId, FeedItemTargetType feedItemTargetType, long feedItemTargetId)
         {
-            return $"customers/{customerId}/feedItemTargets/{feedId}~{feedItemId}~{feedItemTargetType}~{feedItemTargetId}";
+            return $"customers/{customerId}/feedItemTargets/{feedId}~{feedItemId}~{feedItemTargetType.ToString().ToUpper()}~{feedItemTargetId}";
         }
 
         public static string FeedMapping(long customerId, long feedId, long feedMappingId)
@@ -309,9 +339,19 @@ namespace Google.Ads.GoogleAds.V5.Errors
             return $"customers/{customerId}/feedMappings/{feedId}~{feedMappingId}";
         }
 
+        public static string FeedItemSet(long customerId, long feedId, long feedItemSetId)
+        {
+            return $"customers/{customerId}/feedItemSets/{feedId}~{feedItemSetId}";
+        }
+
+        public static string FeedItemSetLink(long customerId, long feedId, long feedItemId, long feedItemSetId)
+        {
+            return $"customers/{customerId}/feedItemSetLinks/{feedId}~{feedItemId}~{feedItemSetId}";
+        }
+
         public static string FeedPlaceholderView(long customerId, PlaceholderType placeholderType)
         {
-            return $"customers/{customerId}/feedPlaceholderViews/{placeholderType}";
+            return $"customers/{customerId}/feedPlaceholderViews/{placeholderType.ToString().ToUpper()}";
         }
 
         public static string GenderView(long customerId, long adGroupId, long criterionId)
@@ -399,6 +439,11 @@ namespace Google.Ads.GoogleAds.V5.Errors
             return $"customers/{customerId}/labels/{labelId}";
         }
 
+        public static string LandingPageView(long customerId, string unexpandedFinalUrlFingerprint)
+        {
+            return $"customers/{customerId}/landingPageViews/{unexpandedFinalUrlFingerprint}";
+        }
+
         public static string LanguageConstant(long criterionId)
         {
             return $"languageConstants/{criterionId}";
@@ -442,6 +487,11 @@ namespace Google.Ads.GoogleAds.V5.Errors
         public static string OperatingSystemVersionConstant(long criterionId)
         {
             return $"operatingSystemVersionConstants/{criterionId}";
+        }
+
+        public static string PaidOrganicSearchTermView(long customerId, long campaignId, long adGroupId, string searchterm)
+        {
+            return $"customers/{customerId}/paidOrganicSearchTermViews/{campaignId}~{adGroupId}_{Base64Encode(searchterm)}";
         }
 
         public static string ParentalStatusView(long customerId, long adGroupId, long criterionId)
@@ -522,36 +572,6 @@ namespace Google.Ads.GoogleAds.V5.Errors
         public static string Video(long customerId, long videoId)
         {
             return $"customers/{customerId}/videos/{videoId}";
-        }
-
-        public static string PaidOrganicSearchTermView(long customerId, long campaignId, long adGroupId, string searchterm)
-        {
-            return $"customers/{customerId}/paidOrganicSearchTermViews/{campaignId}~{adGroupId}_{Base64Encode(searchterm)}";
-        }
-
-        public static string LandingPageView(long customerId, long campaignId, long adGroupId, string unexpandedFinalUrlFingerprint)
-        {
-            return $"customers/{customerId}/landingPageViews/{unexpandedFinalUrlFingerprint}";
-        }
-
-        public static string ExpandedLandingPageView(long customerId, long campaignId, long adGroupId, string expandedFinalUrlFingerprint)
-        {
-            return $"customers/{customerId}/expandedLandingPageViews/{expandedFinalUrlFingerprint}";
-        }
-
-        public static string CampaignCriterionSimulation(long customerId, long campaignId, long criterionId, SimulationType type, SimulationModificationMethod modificationMethod, DateTime startDate, DateTime endDate)
-        {
-            return $"customers/{customerId}/campaignCriterionSimulations/{campaignId}~{criterionId}~{type}~{modificationMethod}~{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
-        }
-
-        public static string AdGroupSimulation(long customerId, long adGroupId, SimulationType type, SimulationModificationMethod modificationMethod, DateTime startDate, DateTime endDate)
-        {
-            return $"customers/{customerId}/adGroupSimulations/{adGroupId}~{type}~{modificationMethod}~{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
-        }
-
-        public static string AdGroupCriterionSimulation(long customerId, long adGroupId, long criterionId, SimulationType type, SimulationModificationMethod modificationMethod, DateTime startDate, DateTime endDate)
-        {
-            return $"customers/{customerId}/adGroupCriterionSimulations/{adGroupId}~{criterionId}~{type}~{modificationMethod}~{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
         }
     }
 }

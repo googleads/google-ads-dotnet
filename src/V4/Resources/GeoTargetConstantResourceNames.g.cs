@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>geoTargetConstants/{geo_target_constant}</c>.</summary>
-            GeoTargetConstant = 1
+            GeoTargetConstant = 1,
         }
 
         private static gax::PathTemplate s_geoTargetConstant = new gax::PathTemplate("geoTargetConstants/{geo_target_constant}");

@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>carrierConstants/{carrier_constant}</c>.</summary>
-            CarrierConstant = 1
+            CarrierConstant = 1,
         }
 
         private static gax::PathTemplate s_carrierConstant = new gax::PathTemplate("carrierConstants/{carrier_constant}");

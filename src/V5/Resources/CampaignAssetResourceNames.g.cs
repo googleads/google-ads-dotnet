@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/campaignAssets/{campaign_asset}</c>.
             /// </summary>
-            CustomerCampaignAsset = 1
+            CustomerCampaignAsset = 1,
         }
 
         private static gax::PathTemplate s_customerCampaignAsset = new gax::PathTemplate("customers/{customer}/campaignAssets/{campaign_asset}");

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds", "src\Google.Ads.GoogleAds.csproj", "{C691BD4D-683D-425B-8BC7-52F161475C7C}"
 EndProject
@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Tests"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Examples", "examples\Google.Ads.GoogleAds.Examples.csproj", "{7172CCB7-70B9-41A4-9D45-FCB156F9DF60}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticateInStandaloneApplication", "examples\Authentication\AuthenticateInStandaloneApplication\AuthenticateInStandaloneApplication.csproj", "{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticateInDesktopApplication", "examples\Authentication\AuthenticateInDesktopApplication\AuthenticateInDesktopApplication.csproj", "{C64FFE8B-8464-4D71-814A-9397E6C2CFC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example removes a campaign. To get campaigns, run GetCampaigns.cs.
@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V5.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V6.CampaignService);
 
             // Create the operation, and set the Remove field to the resource name of the
             // campaign to be removed.

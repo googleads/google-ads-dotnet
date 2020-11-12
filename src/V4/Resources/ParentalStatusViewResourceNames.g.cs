@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/parentalStatusViews/{parental_status_view}</c>.
             /// </summary>
-            CustomerParentalStatusView = 1
+            CustomerParentalStatusView = 1,
         }
 
         private static gax::PathTemplate s_customerParentalStatusView = new gax::PathTemplate("customers/{customer}/parentalStatusViews/{parental_status_view}");

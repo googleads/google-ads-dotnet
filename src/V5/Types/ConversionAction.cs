@@ -79,11 +79,11 @@ namespace Google.Ads.GoogleAds.V5.Resources {
             "bHVlGAQgASgBSACIAQESIgoVZGVmYXVsdF9jdXJyZW5jeV9jb2RlGAUgASgJ",
             "SAGIAQESJQoYYWx3YXlzX3VzZV9kZWZhdWx0X3ZhbHVlGAYgASgISAKIAQFC",
             "EAoOX2RlZmF1bHRfdmFsdWVCGAoWX2RlZmF1bHRfY3VycmVuY3lfY29kZUIb",
-            "ChlfYWx3YXlzX3VzZV9kZWZhdWx0X3ZhbHVlGmwKEEZpcmViYXNlU2V0dGlu",
-            "Z3MSHAoKZXZlbnRfbmFtZRgDIAEoCUID4EEDSACIAQESHAoKcHJvamVjdF9p",
-            "ZBgEIAEoCUID4EEDSAGIAQFCDQoLX2V2ZW50X25hbWVCDQoLX3Byb2plY3Rf",
-            "aWQaTQoeVGhpcmRQYXJ0eUFwcEFuYWx5dGljc1NldHRpbmdzEhwKCmV2ZW50",
-            "X25hbWUYAiABKAlCA+BBA0gAiAEBQg0KC19ldmVudF9uYW1lOmrqQWcKKWdv",
+            "ChlfYWx3YXlzX3VzZV9kZWZhdWx0X3ZhbHVlGk0KHlRoaXJkUGFydHlBcHBB",
+            "bmFseXRpY3NTZXR0aW5ncxIcCgpldmVudF9uYW1lGAIgASgJQgPgQQNIAIgB",
+            "AUINCgtfZXZlbnRfbmFtZRpsChBGaXJlYmFzZVNldHRpbmdzEhwKCmV2ZW50",
+            "X25hbWUYAyABKAlCA+BBA0gAiAEBEhwKCnByb2plY3RfaWQYBCABKAlCA+BB",
+            "A0gBiAEBQg0KC19ldmVudF9uYW1lQg0KC19wcm9qZWN0X2lkOmrqQWcKKWdv",
             "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Db252ZXJzaW9uQWN0aW9uEjpjdXN0",
             "b21lcnMve2N1c3RvbWVyfS9jb252ZXJzaW9uQWN0aW9ucy97Y29udmVyc2lv",
             "bl9hY3Rpb259QgUKA19pZEIHCgVfbmFtZUIRCg9fb3duZXJfY3VzdG9tZXJC",
@@ -102,8 +102,8 @@ namespace Google.Ads.GoogleAds.V5.Resources {
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V5.Resources.ConversionAction), global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "Category", "OwnerCustomer", "IncludeInConversionsMetric", "ClickThroughLookbackWindowDays", "ViewThroughLookbackWindowDays", "ValueSettings", "CountingType", "AttributionModelSettings", "TagSnippets", "PhoneCallDurationSeconds", "AppId", "MobileAppVendor", "FirebaseSettings", "ThirdPartyAppAnalyticsSettings" }, new[]{ "Id", "Name", "OwnerCustomer", "IncludeInConversionsMetric", "ClickThroughLookbackWindowDays", "ViewThroughLookbackWindowDays", "PhoneCallDurationSeconds", "AppId" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.AttributionModelSettings), global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.AttributionModelSettings.Parser, new[]{ "AttributionModel", "DataDrivenModelStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.ValueSettings), global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.ValueSettings.Parser, new[]{ "DefaultValue", "DefaultCurrencyCode", "AlwaysUseDefaultValue" }, new[]{ "DefaultValue", "DefaultCurrencyCode", "AlwaysUseDefaultValue" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.FirebaseSettings), global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.FirebaseSettings.Parser, new[]{ "EventName", "ProjectId" }, new[]{ "EventName", "ProjectId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings), global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings.Parser, new[]{ "EventName" }, new[]{ "EventName" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings), global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings.Parser, new[]{ "EventName" }, new[]{ "EventName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.FirebaseSettings), global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Types.FirebaseSettings.Parser, new[]{ "EventName", "ProjectId" }, new[]{ "EventName", "ProjectId" }, null, null, null)})
           }));
     }
     #endregion
@@ -1634,6 +1634,194 @@ namespace Google.Ads.GoogleAds.V5.Resources {
       }
 
       /// <summary>
+      /// Settings related to a third party app analytics conversion action.
+      /// </summary>
+      public sealed partial class ThirdPartyAppAnalyticsSettings : pb::IMessage<ThirdPartyAppAnalyticsSettings>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<ThirdPartyAppAnalyticsSettings> _parser = new pb::MessageParser<ThirdPartyAppAnalyticsSettings>(() => new ThirdPartyAppAnalyticsSettings());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<ThirdPartyAppAnalyticsSettings> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Descriptor.NestedTypes[2]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyAppAnalyticsSettings() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyAppAnalyticsSettings(ThirdPartyAppAnalyticsSettings other) : this() {
+          eventName_ = other.eventName_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyAppAnalyticsSettings Clone() {
+          return new ThirdPartyAppAnalyticsSettings(this);
+        }
+
+        /// <summary>Field number for the "event_name" field.</summary>
+        public const int EventNameFieldNumber = 2;
+        private string eventName_;
+        /// <summary>
+        /// Output only. The event name of a third-party app analytics conversion.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string EventName {
+          get { return eventName_ ?? ""; }
+          set {
+            eventName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "event_name" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasEventName {
+          get { return eventName_ != null; }
+        }
+        /// <summary>Clears the value of the "event_name" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearEventName() {
+          eventName_ = null;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as ThirdPartyAppAnalyticsSettings);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(ThirdPartyAppAnalyticsSettings other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (EventName != other.EventName) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasEventName) hash ^= EventName.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasEventName) {
+            output.WriteRawTag(18);
+            output.WriteString(EventName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasEventName) {
+            output.WriteRawTag(18);
+            output.WriteString(EventName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasEventName) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(EventName);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(ThirdPartyAppAnalyticsSettings other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasEventName) {
+            EventName = other.EventName;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 18: {
+                EventName = input.ReadString();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 18: {
+                EventName = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      /// <summary>
       /// Settings related to a Firebase conversion action.
       /// </summary>
       public sealed partial class FirebaseSettings : pb::IMessage<FirebaseSettings>
@@ -1648,7 +1836,7 @@ namespace Google.Ads.GoogleAds.V5.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Descriptor.NestedTypes[2]; }
+          get { return global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Descriptor.NestedTypes[3]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1861,194 +2049,6 @@ namespace Google.Ads.GoogleAds.V5.Resources {
               }
               case 34: {
                 ProjectId = input.ReadString();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      /// <summary>
-      /// Settings related to a third party app analytics conversion action.
-      /// </summary>
-      public sealed partial class ThirdPartyAppAnalyticsSettings : pb::IMessage<ThirdPartyAppAnalyticsSettings>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<ThirdPartyAppAnalyticsSettings> _parser = new pb::MessageParser<ThirdPartyAppAnalyticsSettings>(() => new ThirdPartyAppAnalyticsSettings());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<ThirdPartyAppAnalyticsSettings> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V5.Resources.ConversionAction.Descriptor.NestedTypes[3]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ThirdPartyAppAnalyticsSettings() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ThirdPartyAppAnalyticsSettings(ThirdPartyAppAnalyticsSettings other) : this() {
-          eventName_ = other.eventName_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ThirdPartyAppAnalyticsSettings Clone() {
-          return new ThirdPartyAppAnalyticsSettings(this);
-        }
-
-        /// <summary>Field number for the "event_name" field.</summary>
-        public const int EventNameFieldNumber = 2;
-        private string eventName_;
-        /// <summary>
-        /// Output only. The event name of a third-party app analytics conversion.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string EventName {
-          get { return eventName_ ?? ""; }
-          set {
-            eventName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-          }
-        }
-        /// <summary>Gets whether the "event_name" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasEventName {
-          get { return eventName_ != null; }
-        }
-        /// <summary>Clears the value of the "event_name" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearEventName() {
-          eventName_ = null;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as ThirdPartyAppAnalyticsSettings);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(ThirdPartyAppAnalyticsSettings other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (EventName != other.EventName) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasEventName) hash ^= EventName.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasEventName) {
-            output.WriteRawTag(18);
-            output.WriteString(EventName);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasEventName) {
-            output.WriteRawTag(18);
-            output.WriteString(EventName);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasEventName) {
-            size += 1 + pb::CodedOutputStream.ComputeStringSize(EventName);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(ThirdPartyAppAnalyticsSettings other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasEventName) {
-            EventName = other.EventName;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 18: {
-                EventName = input.ReadString();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 18: {
-                EventName = input.ReadString();
                 break;
               }
             }

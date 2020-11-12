@@ -13,24 +13,24 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using Google.Api.Gax;
 using Grpc.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using static Google.Ads.GoogleAds.V5.Common.Operand.Types;
-using static Google.Ads.GoogleAds.V5.Enums.FeedOriginEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.MatchingFunctionOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.PlaceholderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Resources.Feed.Types;
-using static Google.Ads.GoogleAds.V5.Resources.Feed.Types.PlacesLocationFeedData.Types;
+using static Google.Ads.GoogleAds.V6.Common.Operand.Types;
+using static Google.Ads.GoogleAds.V6.Enums.FeedOriginEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.MatchingFunctionOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Resources.Feed.Types;
+using static Google.Ads.GoogleAds.V6.Resources.Feed.Types.PlacesLocationFeedData.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example adds a feed that syncs feed items from a Google My Business (GMB) account
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
             DeleteLocationExtensionFeeds(client, customerId);
 
             // Get the FeedServiceClient.
-            FeedServiceClient feedService = client.GetService(Services.V5.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V6.FeedService);
 
             // Creates a feed that will sync to the Google My Business account specified by
             // gmbEmailAddress. Do not add FeedAttributes to this object as Google Ads will add
@@ -238,7 +238,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             List<Feed> feeds = new List<Feed>();
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             // Create the query.
             string query = $"SELECT feed.resource_name, feed.status, " +
@@ -281,7 +281,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
                 operations.Add(operation);
             }
             FeedServiceClient feedService = client.GetService(
-                Services.V5.FeedService);
+                Services.V6.FeedService);
 
             feedService.MutateFeeds(customerId.ToString(), operations.ToArray());
         }
@@ -291,7 +291,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             List<CustomerFeed> customerFeeds = new List<CustomerFeed>();
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             // Create the query. A location extension customer feed can be identified by filtering
             // for placeholder_types=LOCATION (location extension feeds) or
@@ -332,7 +332,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
             }
 
             CustomerFeedServiceClient feedService = client.GetService(
-                Services.V5.CustomerFeedService);
+                Services.V6.CustomerFeedService);
 
             feedService.MutateCustomerFeeds(customerId.ToString(), operations.ToArray());
         }
@@ -349,7 +349,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             // Create the query.
             string query = $"SELECT feed_mapping.resource_name, feed_mapping.status FROM " +
@@ -418,7 +418,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the CustomerFeedService.
             CustomerFeedServiceClient customerFeedService = client.GetService(
-                Services.V5.CustomerFeedService);
+                Services.V6.CustomerFeedService);
 
             // Adds a CustomerFeed that associates the feed with this customer for
             // the LOCATION placeholder type.

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/adGroupCriteria/{ad_group_criterion}</c>.
             /// </summary>
-            CustomerAdGroupCriterion = 1
+            CustomerAdGroupCriterion = 1,
         }
 
         private static gax::PathTemplate s_customerAdGroupCriterion = new gax::PathTemplate("customers/{customer}/adGroupCriteria/{ad_group_criterion}");

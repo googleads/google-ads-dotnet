@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using Google.Api.Gax;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example gets ad group bid modifiers.
@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V5.GoogleAdsService);
+                client.GetService(Services.V6.GoogleAdsService);
 
             string searchQuery =
               "SELECT ad_group.id, ad_group_bid_modifier.criterion_id, "

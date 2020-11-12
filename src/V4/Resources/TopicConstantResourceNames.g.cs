@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>topicConstants/{topic_constant}</c>.</summary>
-            TopicConstant = 1
+            TopicConstant = 1,
         }
 
         private static gax::PathTemplate s_topicConstant = new gax::PathTemplate("topicConstants/{topic_constant}");

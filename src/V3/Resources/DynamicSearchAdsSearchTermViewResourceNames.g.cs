@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// A resource name with pattern
             /// <c>customers/{customer}/dynamicSearchAdsSearchTermViews/{dynamic_search_ads_search_term_view}</c>.
             /// </summary>
-            CustomerDynamicSearchAdsSearchTermView = 1
+            CustomerDynamicSearchAdsSearchTermView = 1,
         }
 
         private static gax::PathTemplate s_customerDynamicSearchAdsSearchTermView = new gax::PathTemplate("customers/{customer}/dynamicSearchAdsSearchTermViews/{dynamic_search_ads_search_term_view}");

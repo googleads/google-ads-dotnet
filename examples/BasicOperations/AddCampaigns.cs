@@ -13,19 +13,19 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using System;
 using System.Collections.Generic;
 
-using static Google.Ads.GoogleAds.V5.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V5.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V6.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example adds campaigns.
@@ -67,7 +67,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V5.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V6.CampaignService);
 
             // Create a budget to be used for the campaign.
             string budget = CreateBudget(client, customerId);
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V5.CampaignBudgetService);
+                Services.V6.CampaignBudgetService);
 
             // Create the campaign budget.
             CampaignBudget budget = new CampaignBudget()

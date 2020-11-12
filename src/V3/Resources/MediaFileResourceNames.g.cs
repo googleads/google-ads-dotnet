@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>customers/{customer}/mediaFiles/{media_file}</c>.</summary>
-            CustomerMediaFile = 1
+            CustomerMediaFile = 1,
         }
 
         private static gax::PathTemplate s_customerMediaFile = new gax::PathTemplate("customers/{customer}/mediaFiles/{media_file}");

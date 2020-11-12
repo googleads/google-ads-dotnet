@@ -246,12 +246,12 @@ namespace Google.Ads.GoogleAds.V5.Errors {
         /// </summary>
         [pbr::OriginalName("BIDDING_STRATEGY_NOT_AVAILABLE_FOR_ACCOUNT_TYPE")] BiddingStrategyNotAvailableForAccountType = 18,
         /// <summary>
-        /// Conversion tracking is not enabled in the campaign that has YouTube
-        /// Video Builder transitions.
+        /// Conversion tracking is not enabled in the campaign that has value-based
+        /// bidding transitions.
         /// </summary>
         [pbr::OriginalName("CONVERSION_TRACKING_NOT_ENABLED")] ConversionTrackingNotEnabled = 19,
         /// <summary>
-        /// Not enough conversions tracked for YouTube Video Builder transitions.
+        /// Not enough conversions tracked for value-based bidding transitions.
         /// </summary>
         [pbr::OriginalName("NOT_ENOUGH_CONVERSIONS")] NotEnoughConversions = 20,
         /// <summary>

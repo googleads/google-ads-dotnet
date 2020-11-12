@@ -210,12 +210,12 @@ namespace Google.Ads.GoogleAds.V5.Enums {
         [pbr::OriginalName("REMOVED")] Removed = 3,
         /// <summary>
         /// The link to the other account has been requested. A user on the other
-        /// account may now approve the link by setting the status to ENABLED
+        /// account may now approve the link by setting the status to ENABLED.
         /// </summary>
         [pbr::OriginalName("REQUESTED")] Requested = 4,
         /// <summary>
         /// This link has been requested by a user on the other account. It may be
-        /// approved by a user on this account by setting the status to ENABLED
+        /// approved by a user on this account by setting the status to ENABLED.
         /// </summary>
         [pbr::OriginalName("PENDING_APPROVAL")] PendingApproval = 5,
       }

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/landingPageViews/{landing_page_view}</c>.
             /// </summary>
-            CustomerLandingPageView = 1
+            CustomerLandingPageView = 1,
         }
 
         private static gax::PathTemplate s_customerLandingPageView = new gax::PathTemplate("customers/{customer}/landingPageViews/{landing_page_view}");

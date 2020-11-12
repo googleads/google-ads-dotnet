@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/changeStatus/{change_status}</c>.
             /// </summary>
-            CustomerChangeStatus = 1
+            CustomerChangeStatus = 1,
         }
 
         private static gax::PathTemplate s_customerChangeStatus = new gax::PathTemplate("customers/{customer}/changeStatus/{change_status}");

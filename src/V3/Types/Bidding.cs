@@ -49,18 +49,19 @@ namespace Google.Ads.GoogleAds.V3.Common {
             "X3JvYXMYASABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFsdWUSOwoW",
             "Y3BjX2JpZF9jZWlsaW5nX21pY3JvcxgCIAEoCzIbLmdvb2dsZS5wcm90b2J1",
             "Zi5JbnQ2NFZhbHVlEjkKFGNwY19iaWRfZmxvb3JfbWljcm9zGAMgASgLMhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUihAEKC1RhcmdldFNwZW5kEjgK",
+            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUiiAEKC1RhcmdldFNwZW5kEjwK",
             "E3RhcmdldF9zcGVuZF9taWNyb3MYASABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "SW50NjRWYWx1ZRI7ChZjcGNfYmlkX2NlaWxpbmdfbWljcm9zGAIgASgLMhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUigwEKClBlcmNlbnRDcGMSOwoW",
-            "Y3BjX2JpZF9jZWlsaW5nX21pY3JvcxgBIAEoCzIbLmdvb2dsZS5wcm90b2J1",
-            "Zi5JbnQ2NFZhbHVlEjgKFGVuaGFuY2VkX2NwY19lbmFibGVkGAIgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZULnAQoiY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYzLmNvbW1vbkIMQmlkZGluZ1Byb3RvUAFaRGdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "My9jb21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
-            "VjMuQ29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjNcQ29tbW9u6gIi",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjM6OkNvbW1vbmIGcHJvdG8z"));
+            "SW50NjRWYWx1ZUICGAESOwoWY3BjX2JpZF9jZWlsaW5nX21pY3JvcxgCIAEo",
+            "CzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlIoMBCgpQZXJjZW50Q3Bj",
+            "EjsKFmNwY19iaWRfY2VpbGluZ19taWNyb3MYASABKAsyGy5nb29nbGUucHJv",
+            "dG9idWYuSW50NjRWYWx1ZRI4ChRlbmhhbmNlZF9jcGNfZW5hYmxlZBgCIAEo",
+            "CzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWVC5wEKImNvbS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52My5jb21tb25CDEJpZGRpbmdQcm90b1ABWkRnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjMvY29tbW9uO2NvbW1vbqICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xl",
+            "QWRzLlYzLkNvbW1vbsoCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYzXENvbW1v",
+            "buoCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYzOjpDb21tb25iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V3.Enums.TargetImpressionShareLocationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -879,8 +880,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
   }
 
   /// <summary>
-  /// An automated bidding strategy that sets bids to help get the most conversions
-  /// for your campaign while spending your budget.
+  /// An automated bidding strategy to help get the most conversions for your
+  /// campaigns while spending your budget.
   /// </summary>
   public sealed partial class MaximizeConversions : pb::IMessage<MaximizeConversions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1019,8 +1020,8 @@ namespace Google.Ads.GoogleAds.V3.Common {
   }
 
   /// <summary>
-  /// An automated bidding strategy which tries to maximize conversion value
-  /// given a daily budget.
+  /// An automated bidding strategy to help get the most conversion value for your
+  /// campaigns while spending your budget.
   /// </summary>
   public sealed partial class MaximizeConversionValue : pb::IMessage<MaximizeConversionValue>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2247,7 +2248,11 @@ namespace Google.Ads.GoogleAds.V3.Common {
     /// A TargetSpend bidder will attempt to spend the smaller of this value
     /// or the natural throttling spend amount.
     /// If not specified, the budget is used as the spend target.
+    /// This field is deprecated and should no longer be used. See
+    /// https://ads-developers.googleblog.com/2020/05/reminder-about-sunset-creation-of.html
+    /// for details.
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long? TargetSpendMicros {
       get { return targetSpendMicros_; }

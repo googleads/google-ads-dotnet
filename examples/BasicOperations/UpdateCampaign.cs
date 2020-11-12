@@ -14,15 +14,15 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V5.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V5.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V6.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example updates a campaign. To get campaigns, run GetCampaigns.cs.
@@ -63,7 +63,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V5.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V6.CampaignService);
 
             // Update campaign by setting its status to paused, and "Search network" to false.
             Campaign campaignToUpdate = new Campaign()

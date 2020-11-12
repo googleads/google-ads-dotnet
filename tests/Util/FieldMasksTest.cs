@@ -16,7 +16,7 @@ using Google.Ads.GoogleAds.Util;
 using Google.Protobuf.WellKnownTypes;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -69,6 +69,72 @@ namespace Google.Ads.GoogleAds.Tests.Util
                 json = new StreamReader(stream).ReadToEnd();
             }
             return TestSuite.Parser.ParseJson(json);
+        }
+
+        [Test]
+        public void TestGetFieldValue()
+        {
+            Resource r1 = new Resource()
+            {
+                Foo = new Foo()
+                {
+                    Bar = new Bar()
+                    {
+                        Num = 5,
+                    },
+                    Num = 25,
+                    Text = "hello world",
+                    Bars = {
+                        new Bar()
+                        {
+                            Num = 10
+                        }
+                    }
+                },
+                Foos =
+                {
+                    new Foo()
+                    {
+                        Num = 42
+                    }
+                },
+                OptFoos = 45,
+                Wrapper = "Test wrapper"
+            };
+
+            // Object references should be tested using AreSame.
+            Assert.AreSame(FieldMasks.GetFieldValue("foo", r1), r1.Foo);
+            Assert.AreSame(FieldMasks.GetFieldValue("foo.bar", r1), r1.Foo.Bar);
+            Assert.AreSame(FieldMasks.GetFieldValue("foo.bars", r1), r1.Foo.Bars);
+            Assert.AreSame(FieldMasks.GetFieldValue("foos", r1), r1.Foos);
+            Assert.AreSame(FieldMasks.GetFieldValue("wrapper", r1), r1.Wrapper);
+
+            // Value type should be tested using AreEqual.
+            Assert.AreEqual(FieldMasks.GetFieldValue("foo.bar.num", r1), r1.Foo.Bar.Num);
+            Assert.AreEqual(FieldMasks.GetFieldValue("foo.num", r1), r1.Foo.Num);
+            Assert.AreEqual(FieldMasks.GetFieldValue("foo.text", r1), r1.Foo.Text);
+            Assert.AreEqual(FieldMasks.GetFieldValue("opt_foos", r1), r1.OptFoos);
+
+            Resource r2 = new Resource()
+            {
+                OptFoos = 32
+            };
+            Assert.Throws<ArgumentException>(delegate () {
+                // r2.Foo is null.
+                FieldMasks.GetFieldValue("foo.bar", r2);
+            });
+            Assert.Throws<ArgumentException>(delegate () {
+                // r2.Jazz is not a valid field.
+                FieldMasks.GetFieldValue("foo.jazz", r2);
+            });
+            Assert.Throws<ArgumentException>(delegate () {
+                // r2.OptFoos.Blah cannot be recursed because OptFoos is a leaf level node.
+                FieldMasks.GetFieldValue("foo.opt_foos.blah", r2);
+            });
+            Assert.Throws<ArgumentException>(delegate () {
+                // YOu cannot recurse r2.Foos because it is a repeated field.
+                FieldMasks.GetFieldValue("foo.opt_foos.blah", r2);
+            });
         }
     }
 }

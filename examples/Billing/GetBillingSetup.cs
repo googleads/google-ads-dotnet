@@ -12,14 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
-using Google.Api.Gax;
 using System;
+using Google.Ads.GoogleAds.Lib;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
+using Google.Api.Gax;
+using static Google.Ads.GoogleAds.V6.Enums.BillingSetupStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example gets all BillingSetup objects available for the specified customer ID.
@@ -61,7 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             // Define a GAQL query to retrieve all billing setup information.
             string searchQuery = @"
@@ -90,34 +91,37 @@ namespace Google.Ads.GoogleAds.Examples.V5
                 PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
                     googleAdsService.Search(request);
 
-                foreach (SearchGoogleAdsResponse response in searchPagedResponse.AsRawResponses())
+                foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
                 {
-                    foreach (GoogleAdsRow googleAdsRow in response.Results)
-                    {
-                        BillingSetup billingSetup = googleAdsRow.BillingSetup;
-                        Console.WriteLine($"Billing setup with ID '{billingSetup.Id}'has status " +
-                            $"status '{billingSetup.Status}'.");
+                    BillingSetup billingSetup = googleAdsRow.BillingSetup;
+                    Console.WriteLine($"Billing setup with ID '{billingSetup.Id}'has status " +
+                        $"'{billingSetup.Status}'.");
 
-                        // A missing billing setup will have no payments account information.
-                        if (billingSetup.PaymentsAccount != null)
+                    // A missing billing setup will have no payments account information.
+                    if (billingSetup.HasPaymentsAccount)
+                    {
+                        Console.WriteLine(
+                            $"\tPayments account: {billingSetup.PaymentsAccount}\n" +
+                            "\tPayments account Id: " +
+                            $"{billingSetup.PaymentsAccountInfo.PaymentsAccountId}\n" +
+                            "\tPayments profile id: " +
+                            $"{billingSetup.PaymentsAccountInfo.PaymentsProfileId}\n");
+
+                        // A pending billing setup will not have values for certain fields.
+                        if (billingSetup.Status != BillingSetupStatus.Pending)
                         {
                             Console.WriteLine(
-                                $"\tPayments account: {billingSetup.PaymentsAccount}\n" +
-                                "\tPayments account Id: " +
-                                $"{billingSetup.PaymentsAccountInfo.PaymentsAccountId}\n" +
                                 "\tPayments account name: " +
                                 $"{billingSetup.PaymentsAccountInfo.PaymentsAccountName}\n" +
-                                "\tPayments profile id: " +
-                                $"{billingSetup.PaymentsAccountInfo.PaymentsProfileId}\n" +
                                 "\tPayments profile name: " +
                                 $"{billingSetup.PaymentsAccountInfo.PaymentsProfileName}\n" +
                                 "\tSecondary payments profile id: " +
                                 $"{billingSetup.PaymentsAccountInfo.SecondaryPaymentsProfileId}");
                         }
-                        else
-                        {
-                            Console.WriteLine("Payments account details missing or incomplete.");
-                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Payments account details missing or incomplete.");
                     }
                 }
             }

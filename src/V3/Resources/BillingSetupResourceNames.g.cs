@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/billingSetups/{billing_setup}</c>.
             /// </summary>
-            CustomerBillingSetup = 1
+            CustomerBillingSetup = 1,
         }
 
         private static gax::PathTemplate s_customerBillingSetup = new gax::PathTemplate("customers/{customer}/billingSetups/{billing_setup}");

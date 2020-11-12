@@ -71,7 +71,7 @@ function dotnet_library::build_library() {
 
   echo "Run the smoke tests."
   echo "==================="
-  dotnet test "${DOTNET_CLIENT_LIBRARY_PATH}/tests/bin/Release/netcoreapp3.1/Google.Ads.GoogleAds.Tests.dll" \
+  dotnet test "${DOTNET_CLIENT_LIBRARY_PATH}/tests/bin/Release/netcoreapp3.0/Google.Ads.GoogleAds.Tests.dll" \
       -v d --filter TestCategory=Smoke
 }
 

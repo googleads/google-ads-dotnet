@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using Google.Api.Gax;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This example gets ad groups.
@@ -62,7 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the AdGroupService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             // Create the search query.
             string searchQuery = "SELECT campaign.id, ad_group.id, ad_group.name FROM ad_group";

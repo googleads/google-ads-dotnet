@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/managedPlacementViews/{managed_placement_view}</c>.
             /// </summary>
-            CustomerManagedPlacementView = 1
+            CustomerManagedPlacementView = 1,
         }
 
         private static gax::PathTemplate s_customerManagedPlacementView = new gax::PathTemplate("customers/{customer}/managedPlacementViews/{managed_placement_view}");

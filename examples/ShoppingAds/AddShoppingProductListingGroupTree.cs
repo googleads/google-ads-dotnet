@@ -13,18 +13,18 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V5.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.ProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.ProductConditionEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example shows how to add a shopping listing group tree to a shopping ad group.
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V5.AdGroupCriterionService);
+                client.GetService(Services.V6.AdGroupCriterionService);
 
             try
             {
@@ -301,11 +301,11 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V5.AdGroupCriterionService);
+                client.GetService(Services.V6.AdGroupCriterionService);
 
             String searchQuery = "SELECT ad_group_criterion.resource_name FROM " +
                 "ad_group_criterion WHERE ad_group_criterion.type = LISTING_GROUP AND " +

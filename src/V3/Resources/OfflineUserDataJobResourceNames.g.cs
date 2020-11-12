@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/offlineUserDataJobs/{offline_user_data_job}</c>.
             /// </summary>
-            CustomerOfflineUserDataJob = 1
+            CustomerOfflineUserDataJob = 1,
         }
 
         private static gax::PathTemplate s_customerOfflineUserDataJob = new gax::PathTemplate("customers/{customer}/offlineUserDataJobs/{offline_user_data_job}");

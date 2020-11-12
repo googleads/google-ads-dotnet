@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             /// <summary>
             /// A resource name with pattern <c>mobileAppCategoryConstants/{mobile_app_category_constant}</c>.
             /// </summary>
-            MobileAppCategoryConstant = 1
+            MobileAppCategoryConstant = 1,
         }
 
         private static gax::PathTemplate s_mobileAppCategoryConstant = new gax::PathTemplate("mobileAppCategoryConstants/{mobile_app_category_constant}");

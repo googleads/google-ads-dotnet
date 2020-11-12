@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>currencyConstants/{currency_constant}</c>.</summary>
-            CurrencyConstant = 1
+            CurrencyConstant = 1,
         }
 
         private static gax::PathTemplate s_currencyConstant = new gax::PathTemplate("currencyConstants/{currency_constant}");
