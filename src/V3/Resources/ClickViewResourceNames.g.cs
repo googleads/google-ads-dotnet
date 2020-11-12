@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>customers/{customer}/clickViews/{click_view}</c>.</summary>
-            CustomerClickView = 1
+            CustomerClickView = 1,
         }
 
         private static gax::PathTemplate s_customerClickView = new gax::PathTemplate("customers/{customer}/clickViews/{click_view}");

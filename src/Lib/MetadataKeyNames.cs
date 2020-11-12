@@ -54,5 +54,27 @@ namespace Google.Ads.GoogleAds.Lib
         /// </summary>
         internal const string FailureKeyTemplate = "google.ads.googleads.{0}."
             + FailureKeySuffix;
+
+        /// <summary>
+        /// The metadata key name for the inviter email address.
+        /// </summary>
+        internal const string CustomerUserAccessInviterEmailAddress =
+            "customer_user_access.inviter_user_email_address";
+
+        /// <summary>
+        /// The metadata key name for the email address.
+        /// </summary>
+        internal const string CustomerUserAccessEmailAddress = "customer_user_access.email_address";
+
+        /// <summary>
+        /// The metadata key name for the ChangeEvent user email address.
+        /// </summary>
+        internal const string ChangeEventUserEmail = "change_event.user_email";
+
+        /// <summary>
+        /// The metadata key name for the Feed placeholder email address.
+        /// </summary>
+        internal const string FeedPlaceholderEmailAddress =
+            "feed.places_location_feed_data.email_address";
     }
 }

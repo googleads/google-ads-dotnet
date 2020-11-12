@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds
         {
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AccountBudgetProposalService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AccountBudgetProposalService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AccountBudgetProposalServiceClient, AccountBudgetProposalServiceSettings> AccountBudgetProposalService =
@@ -39,7 +39,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AccountBudgetService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AccountBudgetService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AccountBudgetServiceClient, AccountBudgetServiceSettings> AccountBudgetService =
@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AccountLinkService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AccountLinkService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AccountLinkServiceClient, AccountLinkServiceSettings> AccountLinkService =
@@ -55,7 +55,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupAdAssetViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupAdAssetViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupAdAssetViewServiceClient, AdGroupAdAssetViewServiceSettings> AdGroupAdAssetViewService =
@@ -63,7 +63,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupAdLabelService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupAdLabelService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupAdLabelServiceClient, AdGroupAdLabelServiceSettings> AdGroupAdLabelService =
@@ -71,7 +71,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupAdService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupAdService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupAdServiceClient, AdGroupAdServiceSettings> AdGroupAdService =
@@ -79,7 +79,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupAudienceViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupAudienceViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupAudienceViewServiceClient, AdGroupAudienceViewServiceSettings> AdGroupAudienceViewService =
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupBidModifierService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupBidModifierService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupBidModifierServiceClient, AdGroupBidModifierServiceSettings> AdGroupBidModifierService =
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupCriterionLabelService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupCriterionLabelService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupCriterionLabelServiceClient, AdGroupCriterionLabelServiceSettings> AdGroupCriterionLabelService =
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupCriterionService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupCriterionService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupCriterionServiceClient, AdGroupCriterionServiceSettings> AdGroupCriterionService =
@@ -111,7 +111,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupCriterionSimulationService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupCriterionSimulationService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupCriterionSimulationServiceClient, AdGroupCriterionSimulationServiceSettings> AdGroupCriterionSimulationService =
@@ -119,7 +119,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupExtensionSettingService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupExtensionSettingService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupExtensionSettingServiceClient, AdGroupExtensionSettingServiceSettings> AdGroupExtensionSettingService =
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupFeedService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupFeedService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupFeedServiceClient, AdGroupFeedServiceSettings> AdGroupFeedService =
@@ -135,7 +135,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupLabelService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupLabelService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupLabelServiceClient, AdGroupLabelServiceSettings> AdGroupLabelService =
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupServiceClient, AdGroupServiceSettings> AdGroupService =
@@ -151,7 +151,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdGroupSimulationService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdGroupSimulationService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdGroupSimulationServiceClient, AdGroupSimulationServiceSettings> AdGroupSimulationService =
@@ -159,7 +159,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdParameterService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdParameterService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdParameterServiceClient, AdParameterServiceSettings> AdParameterService =
@@ -167,7 +167,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdScheduleViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdScheduleViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdScheduleViewServiceClient, AdScheduleViewServiceSettings> AdScheduleViewService =
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AdService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AdService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AdServiceClient, AdServiceSettings> AdService =
@@ -183,7 +183,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AgeRangeViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AgeRangeViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AgeRangeViewServiceClient, AgeRangeViewServiceSettings> AgeRangeViewService =
@@ -191,7 +191,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.AssetService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/AssetService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<AssetServiceClient, AssetServiceSettings> AssetService =
@@ -199,7 +199,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.BatchJobService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/BatchJobService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<BatchJobServiceClient, BatchJobServiceSettings> BatchJobService =
@@ -207,7 +207,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.BiddingStrategyService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/BiddingStrategyService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<BiddingStrategyServiceClient, BiddingStrategyServiceSettings> BiddingStrategyService =
@@ -215,7 +215,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.BillingSetupService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/BillingSetupService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<BillingSetupServiceClient, BillingSetupServiceSettings> BillingSetupService =
@@ -223,7 +223,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignAudienceViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignAudienceViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignAudienceViewServiceClient, CampaignAudienceViewServiceSettings> CampaignAudienceViewService =
@@ -231,7 +231,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignBidModifierService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignBidModifierService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignBidModifierServiceClient, CampaignBidModifierServiceSettings> CampaignBidModifierService =
@@ -239,7 +239,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignBudgetService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignBudgetService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignBudgetServiceClient, CampaignBudgetServiceSettings> CampaignBudgetService =
@@ -247,7 +247,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignCriterionService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignCriterionService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignCriterionServiceClient, CampaignCriterionServiceSettings> CampaignCriterionService =
@@ -255,7 +255,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignCriterionSimulationService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignCriterionSimulationService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignCriterionSimulationServiceClient, CampaignCriterionSimulationServiceSettings> CampaignCriterionSimulationService =
@@ -263,7 +263,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignDraftService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignDraftService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignDraftServiceClient, CampaignDraftServiceSettings> CampaignDraftService =
@@ -271,7 +271,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignExperimentService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignExperimentService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignExperimentServiceClient, CampaignExperimentServiceSettings> CampaignExperimentService =
@@ -279,7 +279,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignExtensionSettingService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignExtensionSettingService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignExtensionSettingServiceClient, CampaignExtensionSettingServiceSettings> CampaignExtensionSettingService =
@@ -287,7 +287,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignFeedService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignFeedService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignFeedServiceClient, CampaignFeedServiceSettings> CampaignFeedService =
@@ -295,7 +295,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignLabelService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignLabelService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignLabelServiceClient, CampaignLabelServiceSettings> CampaignLabelService =
@@ -303,7 +303,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignServiceClient, CampaignServiceSettings> CampaignService =
@@ -311,7 +311,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CampaignSharedSetService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CampaignSharedSetService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CampaignSharedSetServiceClient, CampaignSharedSetServiceSettings> CampaignSharedSetService =
@@ -319,7 +319,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CarrierConstantService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CarrierConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CarrierConstantServiceClient, CarrierConstantServiceSettings> CarrierConstantService =
@@ -327,7 +327,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ChangeStatusService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ChangeStatusService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ChangeStatusServiceClient, ChangeStatusServiceSettings> ChangeStatusService =
@@ -335,7 +335,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ClickViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ClickViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ClickViewServiceClient, ClickViewServiceSettings> ClickViewService =
@@ -343,7 +343,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ConversionActionService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ConversionActionService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ConversionActionServiceClient, ConversionActionServiceSettings> ConversionActionService =
@@ -351,7 +351,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ConversionAdjustmentUploadService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ConversionAdjustmentUploadService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ConversionAdjustmentUploadServiceClient, ConversionAdjustmentUploadServiceSettings> ConversionAdjustmentUploadService =
@@ -359,7 +359,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ConversionUploadService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ConversionUploadService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ConversionUploadServiceClient, ConversionUploadServiceSettings> ConversionUploadService =
@@ -367,7 +367,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CurrencyConstantService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CurrencyConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CurrencyConstantServiceClient, CurrencyConstantServiceSettings> CurrencyConstantService =
@@ -375,7 +375,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomInterestService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CustomInterestService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CustomInterestServiceClient, CustomInterestServiceSettings> CustomInterestService =
@@ -383,7 +383,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomerClientLinkService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CustomerClientLinkService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CustomerClientLinkServiceClient, CustomerClientLinkServiceSettings> CustomerClientLinkService =
@@ -391,7 +391,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomerClientService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CustomerClientService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CustomerClientServiceClient, CustomerClientServiceSettings> CustomerClientService =
@@ -399,7 +399,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomerExtensionSettingService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CustomerExtensionSettingService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CustomerExtensionSettingServiceClient, CustomerExtensionSettingServiceSettings> CustomerExtensionSettingService =
@@ -407,7 +407,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomerFeedService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CustomerFeedService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CustomerFeedServiceClient, CustomerFeedServiceSettings> CustomerFeedService =
@@ -415,7 +415,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomerLabelService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CustomerLabelService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CustomerLabelServiceClient, CustomerLabelServiceSettings> CustomerLabelService =
@@ -423,7 +423,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomerManagerLinkService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CustomerManagerLinkService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CustomerManagerLinkServiceClient, CustomerManagerLinkServiceSettings> CustomerManagerLinkService =
@@ -431,7 +431,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomerNegativeCriterionService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CustomerNegativeCriterionService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CustomerNegativeCriterionServiceClient, CustomerNegativeCriterionServiceSettings> CustomerNegativeCriterionService =
@@ -439,7 +439,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.CustomerService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/CustomerService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<CustomerServiceClient, CustomerServiceSettings> CustomerService =
@@ -447,7 +447,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.DetailPlacementViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/DetailPlacementViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<DetailPlacementViewServiceClient, DetailPlacementViewServiceSettings> DetailPlacementViewService =
@@ -455,7 +455,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.DisplayKeywordViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/DisplayKeywordViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<DisplayKeywordViewServiceClient, DisplayKeywordViewServiceSettings> DisplayKeywordViewService =
@@ -463,7 +463,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.DistanceViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/DistanceViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<DistanceViewServiceClient, DistanceViewServiceSettings> DistanceViewService =
@@ -471,7 +471,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.DomainCategoryService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/DomainCategoryService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<DomainCategoryServiceClient, DomainCategoryServiceSettings> DomainCategoryService =
@@ -479,7 +479,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.DynamicSearchAdsSearchTermViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/DynamicSearchAdsSearchTermViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<DynamicSearchAdsSearchTermViewServiceClient, DynamicSearchAdsSearchTermViewServiceSettings> DynamicSearchAdsSearchTermViewService =
@@ -487,7 +487,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ExpandedLandingPageViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ExpandedLandingPageViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ExpandedLandingPageViewServiceClient, ExpandedLandingPageViewServiceSettings> ExpandedLandingPageViewService =
@@ -495,7 +495,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ExtensionFeedItemService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ExtensionFeedItemService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ExtensionFeedItemServiceClient, ExtensionFeedItemServiceSettings> ExtensionFeedItemService =
@@ -503,7 +503,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.FeedItemService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/FeedItemService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<FeedItemServiceClient, FeedItemServiceSettings> FeedItemService =
@@ -511,7 +511,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.FeedItemTargetService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/FeedItemTargetService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<FeedItemTargetServiceClient, FeedItemTargetServiceSettings> FeedItemTargetService =
@@ -519,7 +519,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.FeedMappingService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/FeedMappingService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<FeedMappingServiceClient, FeedMappingServiceSettings> FeedMappingService =
@@ -527,7 +527,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.FeedPlaceholderViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/FeedPlaceholderViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<FeedPlaceholderViewServiceClient, FeedPlaceholderViewServiceSettings> FeedPlaceholderViewService =
@@ -535,7 +535,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.FeedService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/FeedService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<FeedServiceClient, FeedServiceSettings> FeedService =
@@ -543,7 +543,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.GenderViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/GenderViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<GenderViewServiceClient, GenderViewServiceSettings> GenderViewService =
@@ -551,7 +551,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.GeoTargetConstantService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/GeoTargetConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<GeoTargetConstantServiceClient, GeoTargetConstantServiceSettings> GeoTargetConstantService =
@@ -559,7 +559,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.GeographicViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/GeographicViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<GeographicViewServiceClient, GeographicViewServiceSettings> GeographicViewService =
@@ -567,7 +567,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.GoogleAdsFieldService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/GoogleAdsFieldService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<GoogleAdsFieldServiceClient, GoogleAdsFieldServiceSettings> GoogleAdsFieldService =
@@ -575,7 +575,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.GoogleAdsService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/GoogleAdsService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<GoogleAdsServiceClient, GoogleAdsServiceSettings> GoogleAdsService =
@@ -583,7 +583,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.GroupPlacementViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/GroupPlacementViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<GroupPlacementViewServiceClient, GroupPlacementViewServiceSettings> GroupPlacementViewService =
@@ -591,7 +591,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.HotelGroupViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/HotelGroupViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<HotelGroupViewServiceClient, HotelGroupViewServiceSettings> HotelGroupViewService =
@@ -599,7 +599,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.HotelPerformanceViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/HotelPerformanceViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<HotelPerformanceViewServiceClient, HotelPerformanceViewServiceSettings> HotelPerformanceViewService =
@@ -607,7 +607,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.IncomeRangeViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/IncomeRangeViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<IncomeRangeViewServiceClient, IncomeRangeViewServiceSettings> IncomeRangeViewService =
@@ -615,7 +615,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.InvoiceService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/InvoiceService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<InvoiceServiceClient, InvoiceServiceSettings> InvoiceService =
@@ -623,7 +623,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanAdGroupKeywordService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/KeywordPlanAdGroupKeywordService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<KeywordPlanAdGroupKeywordServiceClient, KeywordPlanAdGroupKeywordServiceSettings> KeywordPlanAdGroupKeywordService =
@@ -631,7 +631,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanAdGroupService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/KeywordPlanAdGroupService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<KeywordPlanAdGroupServiceClient, KeywordPlanAdGroupServiceSettings> KeywordPlanAdGroupService =
@@ -639,7 +639,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanCampaignKeywordService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/KeywordPlanCampaignKeywordService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<KeywordPlanCampaignKeywordServiceClient, KeywordPlanCampaignKeywordServiceSettings> KeywordPlanCampaignKeywordService =
@@ -647,7 +647,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanCampaignService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/KeywordPlanCampaignService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<KeywordPlanCampaignServiceClient, KeywordPlanCampaignServiceSettings> KeywordPlanCampaignService =
@@ -655,7 +655,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanIdeaService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/KeywordPlanIdeaService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<KeywordPlanIdeaServiceClient, KeywordPlanIdeaServiceSettings> KeywordPlanIdeaService =
@@ -663,7 +663,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordPlanService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/KeywordPlanService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<KeywordPlanServiceClient, KeywordPlanServiceSettings> KeywordPlanService =
@@ -671,7 +671,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.KeywordViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/KeywordViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<KeywordViewServiceClient, KeywordViewServiceSettings> KeywordViewService =
@@ -679,7 +679,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.LabelService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/LabelService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<LabelServiceClient, LabelServiceSettings> LabelService =
@@ -687,7 +687,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.LandingPageViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/LandingPageViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<LandingPageViewServiceClient, LandingPageViewServiceSettings> LandingPageViewService =
@@ -695,7 +695,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.LanguageConstantService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/LanguageConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<LanguageConstantServiceClient, LanguageConstantServiceSettings> LanguageConstantService =
@@ -703,7 +703,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.LocationViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/LocationViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<LocationViewServiceClient, LocationViewServiceSettings> LocationViewService =
@@ -711,7 +711,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ManagedPlacementViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ManagedPlacementViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ManagedPlacementViewServiceClient, ManagedPlacementViewServiceSettings> ManagedPlacementViewService =
@@ -719,7 +719,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.MediaFileService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/MediaFileService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<MediaFileServiceClient, MediaFileServiceSettings> MediaFileService =
@@ -727,7 +727,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.MerchantCenterLinkService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/MerchantCenterLinkService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<MerchantCenterLinkServiceClient, MerchantCenterLinkServiceSettings> MerchantCenterLinkService =
@@ -735,7 +735,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.MobileAppCategoryConstantService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/MobileAppCategoryConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<MobileAppCategoryConstantServiceClient, MobileAppCategoryConstantServiceSettings> MobileAppCategoryConstantService =
@@ -743,7 +743,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.MobileDeviceConstantService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/MobileDeviceConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<MobileDeviceConstantServiceClient, MobileDeviceConstantServiceSettings> MobileDeviceConstantService =
@@ -751,7 +751,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.OfflineUserDataJobService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/OfflineUserDataJobService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<OfflineUserDataJobServiceClient, OfflineUserDataJobServiceSettings> OfflineUserDataJobService =
@@ -759,7 +759,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.OperatingSystemVersionConstantService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/OperatingSystemVersionConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<OperatingSystemVersionConstantServiceClient, OperatingSystemVersionConstantServiceSettings> OperatingSystemVersionConstantService =
@@ -767,7 +767,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.PaidOrganicSearchTermViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/PaidOrganicSearchTermViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<PaidOrganicSearchTermViewServiceClient, PaidOrganicSearchTermViewServiceSettings> PaidOrganicSearchTermViewService =
@@ -775,7 +775,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ParentalStatusViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ParentalStatusViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ParentalStatusViewServiceClient, ParentalStatusViewServiceSettings> ParentalStatusViewService =
@@ -783,7 +783,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.PaymentsAccountService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/PaymentsAccountService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<PaymentsAccountServiceClient, PaymentsAccountServiceSettings> PaymentsAccountService =
@@ -791,7 +791,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ProductBiddingCategoryConstantService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ProductBiddingCategoryConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ProductBiddingCategoryConstantServiceClient, ProductBiddingCategoryConstantServiceSettings> ProductBiddingCategoryConstantService =
@@ -799,7 +799,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ProductGroupViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ProductGroupViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ProductGroupViewServiceClient, ProductGroupViewServiceSettings> ProductGroupViewService =
@@ -807,7 +807,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ReachPlanService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ReachPlanService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ReachPlanServiceClient, ReachPlanServiceSettings> ReachPlanService =
@@ -815,7 +815,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.RecommendationService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/RecommendationService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<RecommendationServiceClient, RecommendationServiceSettings> RecommendationService =
@@ -823,7 +823,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.RemarketingActionService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/RemarketingActionService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<RemarketingActionServiceClient, RemarketingActionServiceSettings> RemarketingActionService =
@@ -831,7 +831,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.SearchTermViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/SearchTermViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<SearchTermViewServiceClient, SearchTermViewServiceSettings> SearchTermViewService =
@@ -839,7 +839,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.SharedCriterionService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/SharedCriterionService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<SharedCriterionServiceClient, SharedCriterionServiceSettings> SharedCriterionService =
@@ -847,7 +847,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.SharedSetService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/SharedSetService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<SharedSetServiceClient, SharedSetServiceSettings> SharedSetService =
@@ -855,7 +855,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ShoppingPerformanceViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ShoppingPerformanceViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ShoppingPerformanceViewServiceClient, ShoppingPerformanceViewServiceSettings> ShoppingPerformanceViewService =
@@ -863,7 +863,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.ThirdPartyAppAnalyticsLinkService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/ThirdPartyAppAnalyticsLinkService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<ThirdPartyAppAnalyticsLinkServiceClient, ThirdPartyAppAnalyticsLinkServiceSettings> ThirdPartyAppAnalyticsLinkService =
@@ -871,7 +871,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.TopicConstantService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/TopicConstantService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<TopicConstantServiceClient, TopicConstantServiceSettings> TopicConstantService =
@@ -879,7 +879,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.TopicViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/TopicViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<TopicViewServiceClient, TopicViewServiceSettings> TopicViewService =
@@ -887,7 +887,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.UserDataService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/UserDataService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<UserDataServiceClient, UserDataServiceSettings> UserDataService =
@@ -895,7 +895,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.UserInterestService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/UserInterestService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<UserInterestServiceClient, UserInterestServiceSettings> UserInterestService =
@@ -903,7 +903,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.UserListService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/UserListService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<UserListServiceClient, UserListServiceSettings> UserListService =
@@ -911,7 +911,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.UserLocationViewService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/UserLocationViewService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<UserLocationViewServiceClient, UserLocationViewServiceSettings> UserLocationViewService =
@@ -919,7 +919,7 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
-            /// See https://developers.google.com/google-ads/api/reference/rpc/google.ads.googleads.v4.services#google.ads.googleads.v4.services.VideoService
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v4/VideoService
             /// for details.
             /// </summary>
             public static readonly ServiceTemplate<VideoServiceClient, VideoServiceSettings> VideoService =

@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/feedItemTargets/{feed_item_target}</c>.
             /// </summary>
-            CustomerFeedItemTarget = 1
+            CustomerFeedItemTarget = 1,
         }
 
         private static gax::PathTemplate s_customerFeedItemTarget = new gax::PathTemplate("customers/{customer}/feedItemTargets/{feed_item_target}");

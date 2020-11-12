@@ -301,7 +301,7 @@ namespace Google.Ads.GoogleAds.V3.Errors {
         /// </summary>
         [pbr::OriginalName("REMOVE_NOT_SUPPORTED")] RemoveNotSupported = 23,
         /// <summary>
-        /// Remove-all is not supported for store sales direct updates.
+        /// Remove-all is not supported for certain offline user data job types.
         /// </summary>
         [pbr::OriginalName("REMOVE_ALL_NOT_SUPPORTED")] RemoveAllNotSupported = 24,
         /// <summary>

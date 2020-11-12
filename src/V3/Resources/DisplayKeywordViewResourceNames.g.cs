@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/displayKeywordViews/{display_keyword_view}</c>.
             /// </summary>
-            CustomerDisplayKeywordView = 1
+            CustomerDisplayKeywordView = 1,
         }
 
         private static gax::PathTemplate s_customerDisplayKeywordView = new gax::PathTemplate("customers/{customer}/displayKeywordViews/{display_keyword_view}");

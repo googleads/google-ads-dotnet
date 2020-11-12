@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>operatingSystemVersionConstants/{operating_system_version_constant}</c>.
             /// </summary>
-            OperatingSystemVersionConstant = 1
+            OperatingSystemVersionConstant = 1,
         }
 
         private static gax::PathTemplate s_operatingSystemVersionConstant = new gax::PathTemplate("operatingSystemVersionConstants/{operating_system_version_constant}");

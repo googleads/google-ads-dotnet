@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>customers/{customer}/userLists/{user_list}</c>.</summary>
-            CustomerUserList = 1
+            CustomerUserList = 1,
         }
 
         private static gax::PathTemplate s_customerUserList = new gax::PathTemplate("customers/{customer}/userLists/{user_list}");

@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             Unparsed = 0,
 
             /// <summary>A resource name with pattern <c>mobileDeviceConstants/{mobile_device_constant}</c>.</summary>
-            MobileDeviceConstant = 1
+            MobileDeviceConstant = 1,
         }
 
         private static gax::PathTemplate s_mobileDeviceConstant = new gax::PathTemplate("mobileDeviceConstants/{mobile_device_constant}");

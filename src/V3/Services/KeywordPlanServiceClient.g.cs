@@ -503,6 +503,45 @@ namespace Google.Ads.GoogleAds.V3.Services
             GenerateForecastMetricsAsync(keywordPlan, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
+        /// Returns the requested Keyword Plan forecasts.
+        /// </summary>
+        /// <param name="keywordPlan">
+        /// Required. The resource name of the keyword plan to be forecasted.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateForecastMetricsResponse GenerateForecastMetrics(gagvr::KeywordPlanName keywordPlan, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateForecastMetrics(new GenerateForecastMetricsRequest
+            {
+                KeywordPlanAsKeywordPlanName = gax::GaxPreconditions.CheckNotNull(keywordPlan, nameof(keywordPlan)),
+            }, callSettings);
+
+        /// <summary>
+        /// Returns the requested Keyword Plan forecasts.
+        /// </summary>
+        /// <param name="keywordPlan">
+        /// Required. The resource name of the keyword plan to be forecasted.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateForecastMetricsResponse> GenerateForecastMetricsAsync(gagvr::KeywordPlanName keywordPlan, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateForecastMetricsAsync(new GenerateForecastMetricsRequest
+            {
+                KeywordPlanAsKeywordPlanName = gax::GaxPreconditions.CheckNotNull(keywordPlan, nameof(keywordPlan)),
+            }, callSettings);
+
+        /// <summary>
+        /// Returns the requested Keyword Plan forecasts.
+        /// </summary>
+        /// <param name="keywordPlan">
+        /// Required. The resource name of the keyword plan to be forecasted.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateForecastMetricsResponse> GenerateForecastMetricsAsync(gagvr::KeywordPlanName keywordPlan, st::CancellationToken cancellationToken) =>
+            GenerateForecastMetricsAsync(keywordPlan, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
         /// Returns the requested Keyword Plan historical metrics.
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
@@ -569,6 +608,48 @@ namespace Google.Ads.GoogleAds.V3.Services
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
         public virtual stt::Task<GenerateHistoricalMetricsResponse> GenerateHistoricalMetricsAsync(string keywordPlan, st::CancellationToken cancellationToken) =>
+            GenerateHistoricalMetricsAsync(keywordPlan, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns the requested Keyword Plan historical metrics.
+        /// </summary>
+        /// <param name="keywordPlan">
+        /// Required. The resource name of the keyword plan of which historical metrics are
+        /// requested.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateHistoricalMetricsResponse GenerateHistoricalMetrics(gagvr::KeywordPlanName keywordPlan, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateHistoricalMetrics(new GenerateHistoricalMetricsRequest
+            {
+                KeywordPlanAsKeywordPlanName = gax::GaxPreconditions.CheckNotNull(keywordPlan, nameof(keywordPlan)),
+            }, callSettings);
+
+        /// <summary>
+        /// Returns the requested Keyword Plan historical metrics.
+        /// </summary>
+        /// <param name="keywordPlan">
+        /// Required. The resource name of the keyword plan of which historical metrics are
+        /// requested.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateHistoricalMetricsResponse> GenerateHistoricalMetricsAsync(gagvr::KeywordPlanName keywordPlan, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateHistoricalMetricsAsync(new GenerateHistoricalMetricsRequest
+            {
+                KeywordPlanAsKeywordPlanName = gax::GaxPreconditions.CheckNotNull(keywordPlan, nameof(keywordPlan)),
+            }, callSettings);
+
+        /// <summary>
+        /// Returns the requested Keyword Plan historical metrics.
+        /// </summary>
+        /// <param name="keywordPlan">
+        /// Required. The resource name of the keyword plan of which historical metrics are
+        /// requested.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateHistoricalMetricsResponse> GenerateHistoricalMetricsAsync(gagvr::KeywordPlanName keywordPlan, st::CancellationToken cancellationToken) =>
             GenerateHistoricalMetricsAsync(keywordPlan, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 

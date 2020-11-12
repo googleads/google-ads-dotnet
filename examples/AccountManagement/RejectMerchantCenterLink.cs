@@ -14,11 +14,11 @@
 
 using System;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V4.Errors;
-using Google.Ads.GoogleAds.V4.Resources;
-using Google.Ads.GoogleAds.V4.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V4
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example demonstrates how to reject a Merchant Center link request.
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
         {
             // Get the MerchantCenterLinkService.
             MerchantCenterLinkServiceClient merchantCenterLinkServiceClient =
-                client.GetService(Services.V4.MerchantCenterLinkService);
+                client.GetService(Services.V6.MerchantCenterLinkService);
 
             try
             {
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.Examples.V4
                                       $"'{merchantCenterLink.Status}'.");
 
                     // Checks if there is a link for the Merchant Center account we are looking for.
-                    if (merchantCenterAccountId == merchantCenterLink.Id.Value)
+                    if (merchantCenterAccountId == merchantCenterLink.Id)
                     {
                         // If the Merchant Center link is pending, reject it by removing the link.
                         // If the Merchant Center link is enabled, unlink Merchant Center from

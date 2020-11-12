@@ -32,7 +32,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// A resource name with pattern
             /// <c>customers/{customer}/keywordPlanNegativeKeywords/{keyword_plan_negative_keyword}</c>.
             /// </summary>
-            CustomerKeywordPlanNegativeKeyword = 1
+            CustomerKeywordPlanNegativeKeyword = 1,
         }
 
         private static gax::PathTemplate s_customerKeywordPlanNegativeKeyword = new gax::PathTemplate("customers/{customer}/keywordPlanNegativeKeywords/{keyword_plan_negative_keyword}");

@@ -14,21 +14,21 @@
 
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Enums;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Enums;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 
 using System;
 using System.Collections.Generic;
 
-using static Google.Ads.GoogleAds.V5.Enums.ExtensionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.FeedItemTargetDeviceEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.MinuteOfHourEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.FeedItemTargetDeviceEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.MinuteOfHourEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example adds sitelinks to a campaign. To create a campaign, run AddCampaigns.cs.
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the CampaignExtensionSettingServiceClient.
             CampaignExtensionSettingServiceClient campaignExtensionSettingService =
-                client.GetService(Services.V5.CampaignExtensionSettingService);
+                client.GetService(Services.V6.CampaignExtensionSettingService);
 
             string campaignResourceName = ResourceNames.Campaign(customerId, campaignId);
 
@@ -123,7 +123,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the ExtensionFeedItemServiceClient.
             ExtensionFeedItemServiceClient extensionFeedItemService =
-                client.GetService(Services.V5.ExtensionFeedItemService);
+                client.GetService(Services.V6.ExtensionFeedItemService);
 
             SitelinkFeedItem sitelinkFeedItem1 = CreateSitelinkFeedItem(
                 "Store Hours", "http://www.example.com/storehours");

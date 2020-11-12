@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/adGroupBidModifiers/{ad_group_bid_modifier}</c>.
             /// </summary>
-            CustomerAdGroupBidModifier = 1
+            CustomerAdGroupBidModifier = 1,
         }
 
         private static gax::PathTemplate s_customerAdGroupBidModifier = new gax::PathTemplate("customers/{customer}/adGroupBidModifiers/{ad_group_bid_modifier}");

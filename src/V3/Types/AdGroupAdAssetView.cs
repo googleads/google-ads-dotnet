@@ -77,6 +77,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
   #region Messages
   /// <summary>
   /// A link between an AdGroupAd and an Asset.
+  /// Currently we only support AdGroupAdAssetView for AppAds.
   /// </summary>
   public sealed partial class AdGroupAdAssetView : pb::IMessage<AdGroupAdAssetView>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

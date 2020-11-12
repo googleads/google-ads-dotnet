@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/feedPlaceholderViews/{feed_placeholder_view}</c>.
             /// </summary>
-            CustomerFeedPlaceholderView = 1
+            CustomerFeedPlaceholderView = 1,
         }
 
         private static gax::PathTemplate s_customerFeedPlaceholderView = new gax::PathTemplate("customers/{customer}/feedPlaceholderViews/{feed_placeholder_view}");

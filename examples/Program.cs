@@ -138,7 +138,7 @@ namespace Google.Ads.GoogleAds.Examples
                 // failure.
                 ShowUsage(runner);
                 return 2;
-            } 
+            }
         }
 
         /// <summary>

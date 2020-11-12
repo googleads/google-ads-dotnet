@@ -22,6 +22,11 @@ using System.Configuration;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
+#if NET472
+using System.Web.Hosting;
+using System.Web.Configuration;
+#endif
+
 namespace Google.Ads.GoogleAds.Config
 {
     /// <summary>
@@ -80,9 +85,44 @@ namespace Google.Ads.GoogleAds.Config
         /// <returns>
         /// The request configuration section, or <code>null</code> if none was found.
         /// </returns>
-        protected void LoadFromAppConfigSection(string sectionName)
+        protected bool LoadFromAppConfigSection(string sectionName)
         {
-            ReadSettings(ReadAppConfigSection(sectionName));
+            Dictionary<string, string> config = ReadAppConfigSection(sectionName);
+            if (config.Count == 0)
+            {
+                return false;
+            }
+            ReadSettings(config);
+            return true;
+        }
+
+        /// <summary>
+        /// Loads configuration from a file path pointed to by a specified environment variable.
+        /// </summary>
+        /// <param name="environmentVariableName">Name of the environment variable to use.</param>
+        /// <param name="sectionName">Name of the section.</param>
+        protected void TryLoadFromEnvironmentFilePath(string environmentVariableName,
+            string sectionName)
+        {
+            string filePath = Environment.GetEnvironmentVariable(environmentVariableName);
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                LoadFromSettingsJson(filePath, sectionName);
+            }
+        }
+
+        /// <summary>
+        /// Loads the configuration from settings json.
+        /// </summary>
+        /// <param name="filePath">The file path.</param>
+        /// <param name="sectionName">Name of the section.</param>
+        protected void LoadFromSettingsJson(string filePath, string sectionName)
+        {
+            IConfigurationBuilder builder = 
+                new Microsoft.Extensions.Configuration.ConfigurationBuilder()
+                .AddJsonFile(filePath);
+            IConfigurationRoot configRoot = builder.Build();
+            LoadFromConfiguration(configRoot, sectionName);
         }
 
         /// <summary>
@@ -95,7 +135,7 @@ namespace Google.Ads.GoogleAds.Config
         {
             Hashtable config = null;
 
-#if NET452
+#if NET472
             if (HostingEnvironment.IsHosted)
             {
                 config = (Hashtable) WebConfigurationManager.GetSection(sectionName);

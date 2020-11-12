@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Services;
 
 using System;
-using static Google.Ads.GoogleAds.V5.Enums.ConversionAdjustmentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.ConversionAdjustmentTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example imports conversion adjustments for conversions that already exist.
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the ConversionAdjustmentUploadService.
             ConversionAdjustmentUploadServiceClient conversionAdjustmentUploadService =
-                client.GetService(Services.V5.ConversionAdjustmentUploadService);
+                client.GetService(Services.V6.ConversionAdjustmentUploadService);
 
             // Associate conversion adjustments with the existing conversion action.
             // The GCLID should have been uploaded before with a conversion.

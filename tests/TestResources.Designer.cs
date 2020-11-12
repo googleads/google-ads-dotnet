@@ -186,6 +186,19 @@ namespace Google.Ads.GoogleAds.Tests {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;type&quot;: &quot;service_account&quot;,
+        ///  &quot;project_id&quot;: &quot;project-id-123&quot;,
+        ///  &quot;private_key_id&quot;: &quot;654321&quot;,
+        ///  &quot;private_key&quot;: &quot;-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDw6CCpKHEF373IJ6exzsHT1SPaUbSxSEA7iOpMNr45OxaAUfQf8UQKUvUphGIp0qn6cTvMZShqMBzoJw/aFzdmNdlXUnou3L6ay78sqBXiMVVxclDn/sTMyfWIY4w4UwqZGANsbUwkR3A7twAJynsqzgN6YAzfjaO3TdoIDIH9sxARhZVRUYDBY6ul5k/BF+rKsvXZS7MKOUq/uyYyAjPx1xLiybvb09kuVK8m9Hk4RJI+bZKCFadUetb1LFgDn7FiysNYHbsNInctIv075gW/QahIxPyOKUjFU/03nvcIH4kM1NEjlZh7VS/kUH [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SecretJson {
+            get {
+                return ResourceManager.GetString("SecretJson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: True, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
         /// </summary>
         internal static string SummaryFailureLog {

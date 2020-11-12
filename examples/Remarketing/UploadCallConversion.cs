@@ -13,12 +13,12 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example imports offline call conversion values for calls related to the
@@ -66,8 +66,8 @@ namespace Google.Ads.GoogleAds.Examples.V5
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for the conversion action is
-        /// added.</param>
+        /// <param name="customerId">The Google Ads customer ID for whom the conversion action will
+        /// be added.</param>
         /// <param name="callerId">The caller ID.</param>
         /// <param name="callStartTime">The call start time.</param>
         /// <param name="conversionTime">The call conversion time.</param>
@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V5.ConversionUploadService);
+                client.GetService(Services.V6.ConversionUploadService);
 
             // Create a call conversion by specifying currency as USD.
             CallConversion callConversion = new CallConversion()

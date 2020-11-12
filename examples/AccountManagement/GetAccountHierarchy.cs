@@ -15,12 +15,12 @@
 using System;
 using System.Collections.Generic;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using Google.Api.Gax;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     ///     This example gets the account hierarchy of the specified manager account. If you don't
@@ -87,10 +87,10 @@ namespace Google.Ads.GoogleAds.Examples.V5
             }
 
             GoogleAdsServiceClient googleAdsServiceClient =
-                googleAdsClient.GetService(Services.V5.GoogleAdsService);
+                googleAdsClient.GetService(Services.V6.GoogleAdsService);
 
             CustomerServiceClient customerServiceClient =
-                googleAdsClient.GetService(Services.V5.CustomerService);
+                googleAdsClient.GetService(Services.V6.CustomerService);
 
             // List of Customer IDs to handle.
             List<long> seedCustomerIds = new List<long>();
@@ -178,13 +178,13 @@ namespace Google.Ads.GoogleAds.Examples.V5
 
                         customerIdsToChildAccounts[managerCustomerId.Value].Add(customerClient);
 
-                        if (customerClient.Manager.HasValue)
+                        if (customerClient.Manager)
                             // A customer can be managed by multiple managers, so to prevent
                             // visiting the same customer many times, we need to check if it's
                             // already in the Dictionary.
-                            if (!customerIdsToChildAccounts.ContainsKey(customerClient.Id.Value) &&
+                            if (!customerIdsToChildAccounts.ContainsKey(customerClient.Id) &&
                                 customerClient.Level == 1)
-                                unprocessedCustomerIds.Enqueue(customerClient.Id.Value);
+                                unprocessedCustomerIds.Enqueue(customerClient.Id);
                     }
                 }
 
@@ -221,7 +221,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
             if (depth == 0)
                 Console.WriteLine("Customer ID (Descriptive Name, Currency Code, Time Zone)");
 
-            long customerId = customerClient.Id.Value;
+            long customerId = customerClient.Id;
             Console.Write(new string('-', depth * 2));
             Console.WriteLine("{0} ({1}, {2}, {3})",
                 customerId, customerClient.DescriptiveName, customerClient.CurrencyCode,

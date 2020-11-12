@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/ageRangeViews/{age_range_view}</c>.
             /// </summary>
-            CustomerAgeRangeView = 1
+            CustomerAgeRangeView = 1,
         }
 
         private static gax::PathTemplate s_customerAgeRangeView = new gax::PathTemplate("customers/{customer}/ageRangeViews/{age_range_view}");

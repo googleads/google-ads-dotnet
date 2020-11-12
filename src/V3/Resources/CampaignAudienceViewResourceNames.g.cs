@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/campaignAudienceViews/{campaign_audience_view}</c>.
             /// </summary>
-            CustomerCampaignAudienceView = 1
+            CustomerCampaignAudienceView = 1,
         }
 
         private static gax::PathTemplate s_customerCampaignAudienceView = new gax::PathTemplate("customers/{customer}/campaignAudienceViews/{campaign_audience_view}");

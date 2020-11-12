@@ -27,43 +27,42 @@ namespace Google.Ads.GoogleAds.V5.Common {
             "Cixnb29nbGUvYWRzL2dvb2dsZWFkcy92NS9jb21tb24vYmlkZGluZy5wcm90",
             "bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjUuY29tbW9uGkRnb29nbGUvYWRz",
             "L2dvb2dsZWFkcy92NS9lbnVtcy90YXJnZXRfaW1wcmVzc2lvbl9zaGFyZV9s",
-            "b2NhdGlvbi5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3Rv",
-            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIkwKCkNvbW1pc3Npb24S",
-            "IwoWY29tbWlzc2lvbl9yYXRlX21pY3JvcxgCIAEoA0gAiAEBQhkKF19jb21t",
-            "aXNzaW9uX3JhdGVfbWljcm9zIg0KC0VuaGFuY2VkQ3BjIkcKCU1hbnVhbENw",
-            "YxIhChRlbmhhbmNlZF9jcGNfZW5hYmxlZBgCIAEoCEgAiAEBQhcKFV9lbmhh",
-            "bmNlZF9jcGNfZW5hYmxlZCILCglNYW51YWxDcG0iCwoJTWFudWFsQ3B2IhUK",
-            "E01heGltaXplQ29udmVyc2lvbnMiQwoXTWF4aW1pemVDb252ZXJzaW9uVmFs",
-            "dWUSGAoLdGFyZ2V0X3JvYXMYAiABKAFIAIgBAUIOCgxfdGFyZ2V0X3JvYXMi",
-            "vQEKCVRhcmdldENwYRIeChF0YXJnZXRfY3BhX21pY3JvcxgEIAEoA0gAiAEB",
-            "EiMKFmNwY19iaWRfY2VpbGluZ19taWNyb3MYBSABKANIAYgBARIhChRjcGNf",
-            "YmlkX2Zsb29yX21pY3JvcxgGIAEoA0gCiAEBQhQKEl90YXJnZXRfY3BhX21p",
-            "Y3Jvc0IZChdfY3BjX2JpZF9jZWlsaW5nX21pY3Jvc0IXChVfY3BjX2JpZF9m",
-            "bG9vcl9taWNyb3MiCwoJVGFyZ2V0Q3BtIo0CChVUYXJnZXRJbXByZXNzaW9u",
-            "U2hhcmUScAoIbG9jYXRpb24YASABKA4yXi5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52NS5lbnVtcy5UYXJnZXRJbXByZXNzaW9uU2hhcmVMb2NhdGlvbkVudW0u",
-            "VGFyZ2V0SW1wcmVzc2lvblNoYXJlTG9jYXRpb24SJQoYbG9jYXRpb25fZnJh",
-            "Y3Rpb25fbWljcm9zGAQgASgDSACIAQESIwoWY3BjX2JpZF9jZWlsaW5nX21p",
-            "Y3JvcxgFIAEoA0gBiAEBQhsKGV9sb2NhdGlvbl9mcmFjdGlvbl9taWNyb3NC",
-            "GQoXX2NwY19iaWRfY2VpbGluZ19taWNyb3MisgEKClRhcmdldFJvYXMSGAoL",
-            "dGFyZ2V0X3JvYXMYBCABKAFIAIgBARIjChZjcGNfYmlkX2NlaWxpbmdfbWlj",
-            "cm9zGAUgASgDSAGIAQESIQoUY3BjX2JpZF9mbG9vcl9taWNyb3MYBiABKANI",
-            "AogBAUIOCgxfdGFyZ2V0X3JvYXNCGQoXX2NwY19iaWRfY2VpbGluZ19taWNy",
-            "b3NCFwoVX2NwY19iaWRfZmxvb3JfbWljcm9zIocBCgtUYXJnZXRTcGVuZBIg",
-            "ChN0YXJnZXRfc3BlbmRfbWljcm9zGAMgASgDSACIAQESIwoWY3BjX2JpZF9j",
-            "ZWlsaW5nX21pY3JvcxgEIAEoA0gBiAEBQhYKFF90YXJnZXRfc3BlbmRfbWlj",
-            "cm9zQhkKF19jcGNfYmlkX2NlaWxpbmdfbWljcm9zIogBCgpQZXJjZW50Q3Bj",
-            "EiMKFmNwY19iaWRfY2VpbGluZ19taWNyb3MYAyABKANIAIgBARIhChRlbmhh",
-            "bmNlZF9jcGNfZW5hYmxlZBgEIAEoCEgBiAEBQhkKF19jcGNfYmlkX2NlaWxp",
-            "bmdfbWljcm9zQhcKFV9lbmhhbmNlZF9jcGNfZW5hYmxlZELnAQoiY29tLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY1LmNvbW1vbkIMQmlkZGluZ1Byb3RvUAFa",
-            "RGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92NS9jb21tb247Y29tbW9uogIDR0FBqgIeR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjUuQ29tbW9uygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjVc",
-            "Q29tbW9u6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjU6OkNvbW1vbmIG",
-            "cHJvdG8z"));
+            "b2NhdGlvbi5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byJM",
+            "CgpDb21taXNzaW9uEiMKFmNvbW1pc3Npb25fcmF0ZV9taWNyb3MYAiABKANI",
+            "AIgBAUIZChdfY29tbWlzc2lvbl9yYXRlX21pY3JvcyINCgtFbmhhbmNlZENw",
+            "YyJHCglNYW51YWxDcGMSIQoUZW5oYW5jZWRfY3BjX2VuYWJsZWQYAiABKAhI",
+            "AIgBAUIXChVfZW5oYW5jZWRfY3BjX2VuYWJsZWQiCwoJTWFudWFsQ3BtIgsK",
+            "CU1hbnVhbENwdiIVChNNYXhpbWl6ZUNvbnZlcnNpb25zIkMKF01heGltaXpl",
+            "Q29udmVyc2lvblZhbHVlEhgKC3RhcmdldF9yb2FzGAIgASgBSACIAQFCDgoM",
+            "X3RhcmdldF9yb2FzIr0BCglUYXJnZXRDcGESHgoRdGFyZ2V0X2NwYV9taWNy",
+            "b3MYBCABKANIAIgBARIjChZjcGNfYmlkX2NlaWxpbmdfbWljcm9zGAUgASgD",
+            "SAGIAQESIQoUY3BjX2JpZF9mbG9vcl9taWNyb3MYBiABKANIAogBAUIUChJf",
+            "dGFyZ2V0X2NwYV9taWNyb3NCGQoXX2NwY19iaWRfY2VpbGluZ19taWNyb3NC",
+            "FwoVX2NwY19iaWRfZmxvb3JfbWljcm9zIgsKCVRhcmdldENwbSKNAgoVVGFy",
+            "Z2V0SW1wcmVzc2lvblNoYXJlEnAKCGxvY2F0aW9uGAEgASgOMl4uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjUuZW51bXMuVGFyZ2V0SW1wcmVzc2lvblNoYXJl",
+            "TG9jYXRpb25FbnVtLlRhcmdldEltcHJlc3Npb25TaGFyZUxvY2F0aW9uEiUK",
+            "GGxvY2F0aW9uX2ZyYWN0aW9uX21pY3JvcxgEIAEoA0gAiAEBEiMKFmNwY19i",
+            "aWRfY2VpbGluZ19taWNyb3MYBSABKANIAYgBAUIbChlfbG9jYXRpb25fZnJh",
+            "Y3Rpb25fbWljcm9zQhkKF19jcGNfYmlkX2NlaWxpbmdfbWljcm9zIrIBCgpU",
+            "YXJnZXRSb2FzEhgKC3RhcmdldF9yb2FzGAQgASgBSACIAQESIwoWY3BjX2Jp",
+            "ZF9jZWlsaW5nX21pY3JvcxgFIAEoA0gBiAEBEiEKFGNwY19iaWRfZmxvb3Jf",
+            "bWljcm9zGAYgASgDSAKIAQFCDgoMX3RhcmdldF9yb2FzQhkKF19jcGNfYmlk",
+            "X2NlaWxpbmdfbWljcm9zQhcKFV9jcGNfYmlkX2Zsb29yX21pY3JvcyKLAQoL",
+            "VGFyZ2V0U3BlbmQSJAoTdGFyZ2V0X3NwZW5kX21pY3JvcxgDIAEoA0ICGAFI",
+            "AIgBARIjChZjcGNfYmlkX2NlaWxpbmdfbWljcm9zGAQgASgDSAGIAQFCFgoU",
+            "X3RhcmdldF9zcGVuZF9taWNyb3NCGQoXX2NwY19iaWRfY2VpbGluZ19taWNy",
+            "b3MiiAEKClBlcmNlbnRDcGMSIwoWY3BjX2JpZF9jZWlsaW5nX21pY3JvcxgD",
+            "IAEoA0gAiAEBEiEKFGVuaGFuY2VkX2NwY19lbmFibGVkGAQgASgISAGIAQFC",
+            "GQoXX2NwY19iaWRfY2VpbGluZ19taWNyb3NCFwoVX2VuaGFuY2VkX2NwY19l",
+            "bmFibGVkQucBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjUuY29tbW9u",
+            "QgxCaWRkaW5nUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y1L2NvbW1vbjtjb21tb26iAgNH",
+            "QUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WNS5Db21tb27KAh5Hb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWNVxDb21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xl",
+            "QWRzOjpWNTo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V5.Enums.TargetImpressionShareLocationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V5.Enums.TargetImpressionShareLocationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V5.Common.Commission), global::Google.Ads.GoogleAds.V5.Common.Commission.Parser, new[]{ "CommissionRateMicros" }, new[]{ "CommissionRateMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V5.Common.EnhancedCpc), global::Google.Ads.GoogleAds.V5.Common.EnhancedCpc.Parser, null, null, null, null, null),
@@ -890,8 +889,8 @@ namespace Google.Ads.GoogleAds.V5.Common {
   }
 
   /// <summary>
-  /// An automated bidding strategy that sets bids to help get the most conversions
-  /// for your campaign while spending your budget.
+  /// An automated bidding strategy to help get the most conversions for your
+  /// campaigns while spending your budget.
   /// </summary>
   public sealed partial class MaximizeConversions : pb::IMessage<MaximizeConversions>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1030,8 +1029,8 @@ namespace Google.Ads.GoogleAds.V5.Common {
   }
 
   /// <summary>
-  /// An automated bidding strategy which tries to maximize conversion value
-  /// given a daily budget.
+  /// An automated bidding strategy to help get the most conversion value for your
+  /// campaigns while spending your budget.
   /// </summary>
   public sealed partial class MaximizeConversionValue : pb::IMessage<MaximizeConversionValue>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2294,7 +2293,11 @@ namespace Google.Ads.GoogleAds.V5.Common {
     /// A TargetSpend bidder will attempt to spend the smaller of this value
     /// or the natural throttling spend amount.
     /// If not specified, the budget is used as the spend target.
+    /// This field is deprecated and should no longer be used. See
+    /// https://ads-developers.googleblog.com/2020/05/reminder-about-sunset-creation-of.html
+    /// for details.
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TargetSpendMicros {
       get { if ((_hasBits0 & 1) != 0) { return targetSpendMicros_; } else { return 0L; } }
@@ -2304,11 +2307,13 @@ namespace Google.Ads.GoogleAds.V5.Common {
       }
     }
     /// <summary>Gets whether the "target_spend_micros" field is set</summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool HasTargetSpendMicros {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "target_spend_micros" field</summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearTargetSpendMicros() {
       _hasBits0 &= ~1;

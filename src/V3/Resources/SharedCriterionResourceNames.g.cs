@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V3.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/sharedCriteria/{shared_criterion}</c>.
             /// </summary>
-            CustomerSharedCriterion = 1
+            CustomerSharedCriterion = 1,
         }
 
         private static gax::PathTemplate s_customerSharedCriterion = new gax::PathTemplate("customers/{customer}/sharedCriteria/{shared_criterion}");

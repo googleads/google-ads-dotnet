@@ -30,4 +30,16 @@ namespace Google.Ads.GoogleAds.V5.Services
             set => ResourceName = value?.ToString() ?? "";
         }
     }
+
+    public partial class KeywordPlanAdGroupOperation
+    {
+        /// <summary>
+        /// <see cref="gagvr::KeywordPlanAdGroupName"/>-typed view over the <see cref="Remove"/> resource name property.
+        /// </summary>
+        public gagvr::KeywordPlanAdGroupName RemoveAsKeywordPlanAdGroupName
+        {
+            get => string.IsNullOrEmpty(Remove) ? null : gagvr::KeywordPlanAdGroupName.Parse(Remove, allowUnparsed: true);
+            set => Remove = value?.ToString() ?? "";
+        }
+    }
 }

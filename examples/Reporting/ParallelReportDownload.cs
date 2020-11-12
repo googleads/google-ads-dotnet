@@ -17,11 +17,11 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Services;
-using static Google.Ads.GoogleAds.V5.Services.GoogleAdsServiceClient;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Services;
+using static Google.Ads.GoogleAds.V6.Services.GoogleAdsServiceClient;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// Shows how to download a set of reports from a list of accounts in parallel. If you need
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
 
             // Get the GoogleAdsService. A single client can be shared by all threads.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             try
             {
@@ -124,8 +124,8 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // List of all requests to ensure that we wait for the reports to complete on all
             // customer IDs before proceeding.
-            ConcurrentBag<Task<SearchStreamStream>> tasks =
-                new ConcurrentBag<Task<SearchStreamStream>>();
+            ConcurrentBag<Task<bool>> tasks =
+                new ConcurrentBag<Task<bool>>();
 
             // Collection of downloaded responses.
             ConcurrentBag<ReportDownload> responses = new ConcurrentBag<ReportDownload>();
@@ -172,14 +172,14 @@ namespace Google.Ads.GoogleAds.Examples.V5
         /// <returns>The asynchronous operation.</returns>
         /// <exception cref="GoogleAdsException">Thrown if errors encountered in the execution of
         ///     the request.</exception>
-        private async Task<SearchStreamStream> DownloadReportAsync(
+        private Task<bool> DownloadReportAsync(
             GoogleAdsServiceClient googleAdsService, long customerId, string queryKey,
             string queryValue, ConcurrentBag<ReportDownload> responses)
         {
             try
             {
                 // Issue an asynchronous download request.
-                return await googleAdsService.SearchStreamAsync(
+                googleAdsService.SearchStream(
                     customerId.ToString(), queryValue,
                     delegate(SearchGoogleAdsStreamResponse resp)
                     {
@@ -192,6 +192,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
                         });
                     }
                 );
+                return Task.FromResult(true);
             }
             catch (AggregateException ae)
             {
@@ -199,15 +200,26 @@ namespace Google.Ads.GoogleAds.Examples.V5
 
                 GoogleAdsException gae = GoogleAdsException.FromTaskException(ae);
 
+                var download = new ReportDownload()
+                {
+                    CustomerId = customerId,
+                    QueryKey = queryKey,
+                    Exception = gae
+                };
                 if (gae != null)
                 {
                     Console.WriteLine($"Message: {gae.Message}");
                     Console.WriteLine($"Failure: {gae.Failure}");
                     Console.WriteLine($"Request ID: {gae.RequestId}");
-                    throw gae;
+                    download.Exception = gae;
+                }
+                else
+                {
+                    download.Exception = ae;
                 }
 
-                throw;
+                responses.Add(download);
+                return Task.FromResult(false);
             }
         }
 
@@ -221,11 +233,19 @@ namespace Google.Ads.GoogleAds.Examples.V5
             internal long CustomerId { get; set; }
             internal string QueryKey { get; set; }
             internal SearchGoogleAdsStreamResponse Response { get; set; }
-
+            internal Exception Exception { get; set; }
             public override string ToString()
             {
-                return $"{QueryKey} downloaded for CID {CustomerId}: " +
-                       $"{Response.Results.Count} rows returned.";
+                if (Exception != null)
+                {
+                    return $"Download failed for {QueryKey} and CID {CustomerId}. " +
+                        $"Exception: {Exception}";
+                }
+                else
+                {
+                    return $"{QueryKey} downloaded for CID {CustomerId}: " +
+                        $"{Response.Results.Count} rows returned.";
+                }
             }
         }
     }

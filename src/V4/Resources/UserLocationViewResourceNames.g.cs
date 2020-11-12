@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V4.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/userLocationViews/{user_location_view}</c>.
             /// </summary>
-            CustomerUserLocationView = 1
+            CustomerUserLocationView = 1,
         }
 
         private static gax::PathTemplate s_customerUserLocationView = new gax::PathTemplate("customers/{customer}/userLocationViews/{user_location_view}");

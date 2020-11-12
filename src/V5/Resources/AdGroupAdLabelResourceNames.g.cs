@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V5.Resources
             /// <summary>
             /// A resource name with pattern <c>customers/{customer}/adGroupAdLabels/{ad_group_ad_label}</c>.
             /// </summary>
-            CustomerAdGroupAdLabel = 1
+            CustomerAdGroupAdLabel = 1,
         }
 
         private static gax::PathTemplate s_customerAdGroupAdLabel = new gax::PathTemplate("customers/{customer}/adGroupAdLabels/{ad_group_ad_label}");

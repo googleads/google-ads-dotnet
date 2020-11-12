@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using Google.Api.Gax;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V5.Enums.TimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.TimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This example creates a billing setup for a customer. A billing setup is a link between a
@@ -90,11 +90,11 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Gets the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V5.GoogleAdsService);
+                Services.V6.GoogleAdsService);
 
             // Gets the BillingSetupServiceClient.
             BillingSetupServiceClient billingSetupServiceClient =
-                client.GetService(Services.V5.BillingSetupService);
+                client.GetService(Services.V6.BillingSetupService);
 
             try
             {
@@ -194,7 +194,8 @@ namespace Google.Ads.GoogleAds.Examples.V5
                 SELECT billing_setup.end_date_time
                 FROM billing_setup
                 WHERE billing_setup.status = 'APPROVED'
-                ORDER BY billing_setup.end_date_time DESC";
+                ORDER BY billing_setup.end_date_time DESC
+                LIMIT 1";
 
             // Issues a search request.
             PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchResponse =

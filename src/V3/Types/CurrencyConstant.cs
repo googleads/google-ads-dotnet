@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.V3.Resources {
     /// Output only. The resource name of the currency constant.
     /// Currency constant resource names have the form:
     ///
-    /// `currencyConstants/{currency_code}`
+    /// `currencyConstants/{code}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ResourceName {

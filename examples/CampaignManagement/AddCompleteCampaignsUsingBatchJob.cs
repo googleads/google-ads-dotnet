@@ -13,25 +13,25 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using Google.Api.Gax;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V5.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Resources.BatchJob.Types;
+using static Google.Ads.GoogleAds.V6.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Resources.BatchJob.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example adds complete campaigns including campaign budgets, campaigns, ad groups
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V5
         {
             // Gets the BatchJobService.
             BatchJobServiceClient batchJobService =
-                client.GetService(Services.V5.BatchJobService);
+                client.GetService(Services.V6.BatchJobService);
 
             try
             {

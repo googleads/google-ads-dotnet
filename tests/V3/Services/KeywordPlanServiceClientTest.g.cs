@@ -289,7 +289,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateForecastMetricsRequest request = new GenerateForecastMetricsRequest
             {
-                KeywordPlan = "keyword_plan348c505a",
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
             };
             GenerateForecastMetricsResponse expectedResponse = new GenerateForecastMetricsResponse
             {
@@ -319,7 +319,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateForecastMetricsRequest request = new GenerateForecastMetricsRequest
             {
-                KeywordPlan = "keyword_plan348c505a",
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
             };
             GenerateForecastMetricsResponse expectedResponse = new GenerateForecastMetricsResponse
             {
@@ -351,7 +351,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateForecastMetricsRequest request = new GenerateForecastMetricsRequest
             {
-                KeywordPlan = "keyword_plan348c505a",
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
             };
             GenerateForecastMetricsResponse expectedResponse = new GenerateForecastMetricsResponse
             {
@@ -381,7 +381,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateForecastMetricsRequest request = new GenerateForecastMetricsRequest
             {
-                KeywordPlan = "keyword_plan348c505a",
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
             };
             GenerateForecastMetricsResponse expectedResponse = new GenerateForecastMetricsResponse
             {
@@ -408,12 +408,74 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
         }
 
         [Category("Smoke")][Test]
+        public void GenerateForecastMetricsResourceNames()
+        {
+            moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateForecastMetricsRequest request = new GenerateForecastMetricsRequest
+            {
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
+            };
+            GenerateForecastMetricsResponse expectedResponse = new GenerateForecastMetricsResponse
+            {
+                CampaignForecasts =
+                {
+                    new KeywordPlanCampaignForecast(),
+                },
+                AdGroupForecasts =
+                {
+                    new KeywordPlanAdGroupForecast(),
+                },
+                KeywordForecasts =
+                {
+                    new KeywordPlanKeywordForecast(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateForecastMetrics(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateForecastMetricsResponse response = client.GenerateForecastMetrics(request.KeywordPlanAsKeywordPlanName);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Category("Smoke")][Test]
+        public async stt::Task GenerateForecastMetricsResourceNamesAsync()
+        {
+            moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateForecastMetricsRequest request = new GenerateForecastMetricsRequest
+            {
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
+            };
+            GenerateForecastMetricsResponse expectedResponse = new GenerateForecastMetricsResponse
+            {
+                CampaignForecasts =
+                {
+                    new KeywordPlanCampaignForecast(),
+                },
+                AdGroupForecasts =
+                {
+                    new KeywordPlanAdGroupForecast(),
+                },
+                KeywordForecasts =
+                {
+                    new KeywordPlanKeywordForecast(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateForecastMetricsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastMetricsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateForecastMetricsResponse responseCallSettings = await client.GenerateForecastMetricsAsync(request.KeywordPlanAsKeywordPlanName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateForecastMetricsResponse responseCancellationToken = await client.GenerateForecastMetricsAsync(request.KeywordPlanAsKeywordPlanName, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Category("Smoke")][Test]
         public void GenerateHistoricalMetricsRequestObject()
         {
             moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateHistoricalMetricsRequest request = new GenerateHistoricalMetricsRequest
             {
-                KeywordPlan = "keyword_plan348c505a",
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
             };
             GenerateHistoricalMetricsResponse expectedResponse = new GenerateHistoricalMetricsResponse
             {
@@ -435,7 +497,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateHistoricalMetricsRequest request = new GenerateHistoricalMetricsRequest
             {
-                KeywordPlan = "keyword_plan348c505a",
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
             };
             GenerateHistoricalMetricsResponse expectedResponse = new GenerateHistoricalMetricsResponse
             {
@@ -459,7 +521,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateHistoricalMetricsRequest request = new GenerateHistoricalMetricsRequest
             {
-                KeywordPlan = "keyword_plan348c505a",
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
             };
             GenerateHistoricalMetricsResponse expectedResponse = new GenerateHistoricalMetricsResponse
             {
@@ -481,7 +543,7 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
             GenerateHistoricalMetricsRequest request = new GenerateHistoricalMetricsRequest
             {
-                KeywordPlan = "keyword_plan348c505a",
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
             };
             GenerateHistoricalMetricsResponse expectedResponse = new GenerateHistoricalMetricsResponse
             {
@@ -495,6 +557,52 @@ namespace Google.Ads.GoogleAds.Tests.V3.Services
             GenerateHistoricalMetricsResponse responseCallSettings = await client.GenerateHistoricalMetricsAsync(request.KeywordPlan, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateHistoricalMetricsResponse responseCancellationToken = await client.GenerateHistoricalMetricsAsync(request.KeywordPlan, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Category("Smoke")][Test]
+        public void GenerateHistoricalMetricsResourceNames()
+        {
+            moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateHistoricalMetricsRequest request = new GenerateHistoricalMetricsRequest
+            {
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
+            };
+            GenerateHistoricalMetricsResponse expectedResponse = new GenerateHistoricalMetricsResponse
+            {
+                Metrics =
+                {
+                    new KeywordPlanKeywordHistoricalMetrics(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateHistoricalMetrics(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateHistoricalMetricsResponse response = client.GenerateHistoricalMetrics(request.KeywordPlanAsKeywordPlanName);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Category("Smoke")][Test]
+        public async stt::Task GenerateHistoricalMetricsResourceNamesAsync()
+        {
+            moq::Mock<KeywordPlanService.KeywordPlanServiceClient> mockGrpcClient = new moq::Mock<KeywordPlanService.KeywordPlanServiceClient>(moq::MockBehavior.Strict);
+            GenerateHistoricalMetricsRequest request = new GenerateHistoricalMetricsRequest
+            {
+                KeywordPlanAsKeywordPlanName = gagvr::KeywordPlanName.FromCustomerKeywordPlan("[CUSTOMER]", "[KEYWORD_PLAN]"),
+            };
+            GenerateHistoricalMetricsResponse expectedResponse = new GenerateHistoricalMetricsResponse
+            {
+                Metrics =
+                {
+                    new KeywordPlanKeywordHistoricalMetrics(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateHistoricalMetricsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateHistoricalMetricsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            GenerateHistoricalMetricsResponse responseCallSettings = await client.GenerateHistoricalMetricsAsync(request.KeywordPlanAsKeywordPlanName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateHistoricalMetricsResponse responseCancellationToken = await client.GenerateHistoricalMetricsAsync(request.KeywordPlanAsKeywordPlanName, st::CancellationToken.None);
             Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }

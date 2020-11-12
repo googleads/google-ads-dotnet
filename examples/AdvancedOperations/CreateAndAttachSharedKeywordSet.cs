@@ -13,16 +13,16 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V5.Common;
-using Google.Ads.GoogleAds.V5.Errors;
-using Google.Ads.GoogleAds.V5.Resources;
-using Google.Ads.GoogleAds.V5.Services;
+using Google.Ads.GoogleAds.V6.Common;
+using Google.Ads.GoogleAds.V6.Errors;
+using Google.Ads.GoogleAds.V6.Resources;
+using Google.Ads.GoogleAds.V6.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V5.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V5.Enums.SharedSetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.SharedSetTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V5
+namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
     /// This code example creates a shared list of negative broad match keywords. It then
@@ -66,11 +66,11 @@ namespace Google.Ads.GoogleAds.Examples.V5
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             SharedSetServiceClient sharedSetService = client.GetService(
-                Services.V5.SharedSetService);
+                Services.V6.SharedSetService);
             SharedCriterionServiceClient sharedCriterionService =
-                client.GetService(Services.V5.SharedCriterionService);
+                client.GetService(Services.V6.SharedCriterionService);
             CampaignSharedSetServiceClient campaignSharedSetService =
-                client.GetService(Services.V5.CampaignSharedSetService);
+                client.GetService(Services.V6.CampaignSharedSetService);
 
             try
             {
