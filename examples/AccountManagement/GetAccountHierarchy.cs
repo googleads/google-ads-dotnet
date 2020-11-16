@@ -23,19 +23,19 @@ using Google.Api.Gax;
 namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
-    ///     This example gets the account hierarchy of the specified manager account. If you don't
-    ///     specify manager customer ID, the example will instead print the hierarchies of all
-    ///     accessible customer accounts for your authenticated Google account.
-    ///     Note that if the list of accessible customers for your authenticated Google account
-    ///     includes accounts within the same hierarchy, this example will retrieve and print
-    ///     the overlapping portions of the hierarchy for each accessible customer.
+    /// This example gets the account hierarchy of the specified manager account. If you don't
+    /// specify manager customer ID, the example will instead print the hierarchies of all
+    /// accessible customer accounts for your authenticated Google account.
+    /// Note that if the list of accessible customers for your authenticated Google account
+    /// includes accounts within the same hierarchy, this example will retrieve and print
+    /// the overlapping portions of the hierarchy for each accessible customer.
     /// </summary>
     public class GetAccountHierarchy : ExampleBase
     {
         private const int PAGE_SIZE = 1000;
 
         /// <summary>
-        ///     Returns a description about the code example.
+        /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
             "This code example gets the account hierarchy of a specified manager account. If you " +
@@ -43,7 +43,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             "of all accessible customer accounts for your authenticated Google account.";
 
         /// <summary>
-        ///     Main method, to run this code example as a standalone application.
+        /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         }
 
         /// <summary>
-        ///     Runs the code example.
+        /// Runs the code example.
         /// </summary>
         /// <param name="googleAdsClient">The Google Ads client instance.</param>
         /// <param name="managerCustomerId">Optional manager account ID. If none provided, this method
@@ -112,15 +112,15 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
                 foreach (string customerResourceName in customerResourceNames)
                 {
-                    Customer customer = customerServiceClient.GetCustomer(customerResourceName);
-                    Console.WriteLine(customer.Id);
-                    seedCustomerIds.Add(customer.Id);
+                    CustomerName customerName = CustomerName.Parse(customerResourceName);
+                    Console.WriteLine(customerName.CustomerId);
+                    seedCustomerIds.Add(long.Parse(customerName.CustomerId));
                 }
 
                 Console.WriteLine();
             }
 
-            // Creates a query that retrieves all child accounts of the manager specified in
+            // Create a query that retrieves all child accounts of the manager specified in
             // search calls below.
             const string query = @"SELECT
                                     customer_client.client_customer,
@@ -134,14 +134,14 @@ namespace Google.Ads.GoogleAds.Examples.V6
                                 WHERE
                                     customer_client.level <= 1";
 
+            // Perform a breadth-first search to build a Dictionary that maps managers to their
+            // child accounts.
+            Dictionary<long, List<CustomerClient>> customerIdsToChildAccounts =
+                new Dictionary<long, List<CustomerClient>>();
             foreach (long seedCustomerId in seedCustomerIds)
             {
-                // Performs a breadth-first search to build a Dictionary that maps managers to their
-                // child accounts (customerIdsToChildAccounts).
                 Queue<long> unprocessedCustomerIds = new Queue<long>();
                 unprocessedCustomerIds.Enqueue(seedCustomerId);
-                Dictionary<long, List<CustomerClient>> customerIdsToChildAccounts =
-                    new Dictionary<long, List<CustomerClient>>();
                 CustomerClient rootCustomerClient = null;
 
                 while (unprocessedCustomerIds.Count > 0)
@@ -154,7 +154,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                             pageSize: PAGE_SIZE
                         );
 
-                    // Iterates over all rows in all pages to get all customer clients under the
+                    // Iterate over all rows in all pages to get all customer clients under the
                     // specified customer's hierarchy.
                     foreach (GoogleAdsRow googleAdsRow in response)
                     {
@@ -205,15 +205,15 @@ namespace Google.Ads.GoogleAds.Examples.V6
         }
 
         /// <summary>
-        ///     Prints the specified account's hierarchy using recursion.
-        ///     <param name="customerClient">
-        ///         the customer client whose info will be printed and
-        ///         its child accounts will be processed if it's a manager
-        ///     </param>
-        ///     <param name="customerIdsToChildAccounts"> a Dictionary mapping customer IDs to
-        ///                 child accounts</param>
-        ///     <param name="depth"> the current integer depth we are printing from in the
-        ///                 account hierarchy</param>
+        /// Prints the specified account's hierarchy using recursion.
+        /// <param name="customerClient">
+        /// the customer client whose info will be printed and
+        /// its child accounts will be processed if it's a manager
+        /// </param>
+        /// <param name="customerIdsToChildAccounts"> a Dictionary mapping customer IDs to
+        ///     child accounts</param>
+        /// <param name="depth"> the current integer depth we are printing from in the
+        ///     account hierarchy</param>
         /// </summary>
         private void PrintAccountHierarchy(CustomerClient customerClient,
             Dictionary<long, List<CustomerClient>> customerIdsToChildAccounts, int depth)
