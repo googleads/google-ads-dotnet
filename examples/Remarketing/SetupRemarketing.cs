@@ -63,9 +63,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
             long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
 
             // The bid modifier value.
-            double bidModifier = double.Parse("BID_MODIFIER_VALUE");
+            double bidModifierValue= double.Parse("BID_MODIFIER_VALUE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, campaignId, bidModifier);
+            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, campaignId, bidModifierValue);
         }
 
         /// <summary>
@@ -93,9 +93,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="adGroupId">The ad group ID on which criteria will be targeted.</param>
         /// <param name="campaignId">The campaign ID on which criteria will be targeted.</param>
-        /// <param name="bidModifier">The bid modifier value.</param>
+        /// <param name="bidModifierValue">The bid modifier value.</param>
         public void Run(GoogleAdsClient client, long customerId, long adGroupId, long campaignId,
-            double bidModifier)
+            double bidModifierValue)
         {
             try
             {
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 string adGroupCriterionResourceName =
                     TargetAdsInAdGroupToUserList(client, customerId, adGroupId,
                         userListResourceName);
-                ModifyAdGroupBids(client, customerId, adGroupCriterionResourceName, bidModifier);
+                ModifyAdGroupBids(client, customerId, adGroupCriterionResourceName, bidModifierValue);
 
                 // Remove any existing user lists at the ad group level.
                 RemoveExistingListCriteriaFromAdGroup(client, customerId, campaignId);
@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 string campaignCriterionResourceName =
                     TargetAdsInCampaignToUserList(client, customerId, campaignId,
                         userListResourceName);
-                ModifyCampaignBids(client, customerId, campaignCriterionResourceName, bidModifier);
+                ModifyCampaignBids(client, customerId, campaignCriterionResourceName, bidModifierValue);
             }
             catch (GoogleAdsException e)
             {
@@ -255,12 +255,12 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="adGroupCriterionResourceName">The resource name of the ad group criterion to update.</param>
-        /// <param name="bidModifier">The bid modifier value.</param>
+        /// <param name="bidModifierValue">The bid modifier value.</param>
         private void ModifyAdGroupBids(
             GoogleAdsClient client,
             long customerId,
             string adGroupCriterionResourceName,
-            double bidModifier)
+            double bidModifierValue)
         {
             // Get the AdGroupCriterionService client.
             AdGroupCriterionServiceClient adGroupCriterionServiceClient =
@@ -271,7 +271,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             AdGroupCriterion adGroupCriterion = new AdGroupCriterion
             {
                 ResourceName = adGroupCriterionResourceName,
-                BidModifier = bidModifier
+                BidModifier = bidModifierValue
             };
 
             // Create the update operation.
@@ -419,12 +419,12 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="campaignCriterionResourceName">The resource name of the campaign criterion to update.</param>
-        /// <param name="bidModifier">The bid modifier value.</param>
+        /// <param name="bidModifierValue">The bid modifier value.</param>
         private void ModifyCampaignBids(
             GoogleAdsClient client,
             long customerId,
             string campaignCriterionResourceName,
-            double bidModifier)
+            double bidModifierValue)
         {
             // Get the CampaignCriterionService client.
             CampaignCriterionServiceClient campaignCriterionServiceClient =
@@ -434,7 +434,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             CampaignCriterion campaignCriterion = new CampaignCriterion
             {
                 ResourceName = campaignCriterionResourceName,
-                BidModifier = (float) bidModifier
+                BidModifier = (float) bidModifierValue
             };
 
             // Create the update operation.
