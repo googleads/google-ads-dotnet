@@ -63,6 +63,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="clientCustomerId">ID of the client customer being linked.</param>
         /// <param name="managerCustomerId">ID of the manager customer that is being linked to.
         /// </param>
+        // [START LinkManagerToClient]
         public void Run(GoogleAdsClient client, long managerCustomerId, long clientCustomerId)
         {
             // Remarks: For ease of understanding, this code example assumes that managerCustomerId
@@ -222,5 +223,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"The client {clientCustomerId} accepted the invitation with " +
                 $"the resource name '{response.Results[0].ResourceName}");
         }
+        // [END LinkManagerToClient]
     }
 }

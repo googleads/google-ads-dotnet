@@ -174,6 +174,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>Resource name of the newly created campaign.</returns>
         /// <exception cref="GoogleAdsException">Thrown if an API request failed with one or more
         /// service errors.</exception>
+        // [START AddShoppingProductAd_2]
         private string AddStandardShoppingCampaign(GoogleAdsClient client, long customerId,
             string budgetResourceName, long merchantCenterAccountId)
         {
@@ -244,6 +245,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         }
 
         /// <summary>
+        // [END AddShoppingProductAd_2]
         /// Creates a new product shopping ad group in the specified campaign.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
@@ -253,6 +255,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>Resource name of the newly created ad group.</returns>
         /// <exception cref="GoogleAdsException">Thrown if an API request failed with one or more
         /// service errors.</exception>
+        // [START AddShoppingProductAd_1]
         private string AddProductShoppingAdGroup(GoogleAdsClient client, long customerId,
                     string campaignResourceName)
         {
@@ -288,6 +291,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         }
 
         /// <summary>
+        // [END AddShoppingProductAd_1]
         /// Creates a new Shopping product ad group ad in the specified ad group.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
@@ -297,6 +301,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>Resource name of the newly created ad group ad.</returns>
         /// <exception cref="GoogleAdsException">Thrown if an API request failed with one or more
         /// service errors.</exception>
+        // [START AddShoppingProductAd]
         private string AddProductShoppingAdGroupAd(GoogleAdsClient client, long customerId,
             string adGroupResourceName)
         {
@@ -339,6 +344,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         }
 
         /// <summary>
+        // [END AddShoppingProductAd]
         /// Creates a new default shopping listing group for the specified ad group. A listing
         /// group is the Google Ads API representation of a "product group" described in the
         /// Google Ads user interface. The listing group will be added to the ad group using an

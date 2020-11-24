@@ -66,6 +66,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="campaignId">ID of the campaign to which sitelinks are added.</param>
+        // [START AddSitelinks]
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the CampaignExtensionSettingServiceClient.
@@ -111,6 +112,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END AddSitelinks]
 
         /// <summary>
         /// Creates a list of ExtensionFeedItems.

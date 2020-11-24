@@ -177,6 +177,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>Resource name of the newly created campaign.</returns>
         /// <exception cref="GoogleAdsException">Thrown if an API request failed with one or more
         /// service errors.</exception>
+        // [START AddShoppingSmartAd_3]
         private string AddSmartShoppingCampaign(GoogleAdsClient client, long customerId,
             string budgetResourceName, long merchantCenterAccountId)
         {
@@ -192,6 +193,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 MerchantId = merchantCenterAccountId,
             };
 
+            // [START AddShoppingSmartAd]
             // Create the standard shopping campaign.
             Campaign campaign = new Campaign()
             {
@@ -227,6 +229,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 // Sets the budget.
                 CampaignBudget = budgetResourceName
             };
+            // [END AddShoppingSmartAd]
 
             // Creates a campaign operation.
             CampaignOperation operation = new CampaignOperation()
@@ -245,6 +248,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         }
 
         /// <summary>
+        // [END AddShoppingSmartAd_3]
         /// Creates a new ad group in the specified Smart Shopping campaign.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
@@ -254,6 +258,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>Resource name of the newly created ad group.</returns>
         /// <exception cref="GoogleAdsException">Thrown if an API request failed with one or more
         /// service errors.</exception>
+        // [START AddShoppingSmartAd_2]
         private string AddSmartShoppingAdGroup(GoogleAdsClient client, long customerId,
                     string campaignResourceName)
         {
@@ -289,6 +294,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         }
 
         /// <summary>
+        // [END AddShoppingSmartAd_2]
         /// Creates a new ad group ad in the specified Smart Shopping ad group.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
@@ -298,6 +304,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>Resource name of the newly created ad group ad.</returns>
         /// <exception cref="GoogleAdsException">Thrown if an API request failed with one or more
         /// service errors.</exception>
+        // [START AddShoppingSmartAd_1]
         private string AddSmartShoppingAdGroupAd(GoogleAdsClient client, long customerId,
             string adGroupResourceName)
         {
@@ -340,6 +347,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         }
 
         /// <summary>
+        // [END AddShoppingSmartAd_1]
         /// Creates a new Shopping listing group for the specified ad group. This is known as a
         /// "product group" in the Google Ads user interface. The listing group will be added to
         /// the ad group using an "ad group criterion". For more information on listing groups see
