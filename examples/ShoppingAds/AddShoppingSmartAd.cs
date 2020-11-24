@@ -246,9 +246,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 result.ResourceName);
             return result.ResourceName;
         }
+        // [END AddShoppingSmartAd_3]
 
         /// <summary>
-        // [END AddShoppingSmartAd_3]
         /// Creates a new ad group in the specified Smart Shopping campaign.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
@@ -292,9 +292,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 mutateAdGroupResult.ResourceName);
             return mutateAdGroupResult.ResourceName;
         }
+        // [END AddShoppingSmartAd_2]
 
         /// <summary>
-        // [END AddShoppingSmartAd_2]
         /// Creates a new ad group ad in the specified Smart Shopping ad group.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
@@ -345,9 +345,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 mutateAdGroupAdResult.ResourceName);
             return mutateAdGroupAdResult.ResourceName;
         }
+        // [END AddShoppingSmartAd_1]
 
         /// <summary>
-        // [END AddShoppingSmartAd_1]
         /// Creates a new Shopping listing group for the specified ad group. This is known as a
         /// "product group" in the Google Ads user interface. The listing group will be added to
         /// the ad group using an "ad group criterion". For more information on listing groups see

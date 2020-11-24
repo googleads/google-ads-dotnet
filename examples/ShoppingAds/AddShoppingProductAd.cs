@@ -243,9 +243,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 result.ResourceName);
             return result.ResourceName;
         }
+        // [END AddShoppingProductAd_2]
 
         /// <summary>
-        // [END AddShoppingProductAd_2]
         /// Creates a new product shopping ad group in the specified campaign.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
@@ -289,9 +289,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 mutateAdGroupResult.ResourceName);
             return mutateAdGroupResult.ResourceName;
         }
+        // [END AddShoppingProductAd_1]
 
         /// <summary>
-        // [END AddShoppingProductAd_1]
         /// Creates a new Shopping product ad group ad in the specified ad group.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
@@ -342,9 +342,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 mutateAdGroupAdResult.ResourceName);
             return mutateAdGroupAdResult.ResourceName;
         }
+        // [END AddShoppingProductAd]
 
         /// <summary>
-        // [END AddShoppingProductAd]
         /// Creates a new default shopping listing group for the specified ad group. A listing
         /// group is the Google Ads API representation of a "product group" described in the
         /// Google Ads user interface. The listing group will be added to the ad group using an

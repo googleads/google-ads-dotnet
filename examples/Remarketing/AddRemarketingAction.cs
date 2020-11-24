@@ -100,7 +100,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 var query = $"SELECT remarketing_action.id, remarketing_action.name, " +
                     $"remarketing_action.tag_snippets FROM remarketing_action " +
                     $"WHERE remarketing_action.resource_name = '{remarketingActionResourceName}'";
-                    // [END AddRemarketingAction]
+                // [END AddRemarketingAction]
 
                 // Issues a search request and retrieve the results. There is only one row
                 // because we limited the search using the resource name, which is unique.

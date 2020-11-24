@@ -85,15 +85,15 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
                 Console.WriteLine($"{response.MerchantCenterLinks.Count} Merchant Center link(s)" +
                     $" found with the following details:");
+                // [END ApproveMerchantCenterLink]
 
                 // Iterate the results, and filter for links with pending status.
-                // [END ApproveMerchantCenterLink]
                 foreach (MerchantCenterLink merchantCenterLink in response.MerchantCenterLinks)
                 {
                     // [START ApproveMerchantCenterLink_1]
                     Console.Write($"Link '{merchantCenterLink.ResourceName}' has status " +
                         $"'{merchantCenterLink.Status}'.");
-                        // [END ApproveMerchantCenterLink_1]
+                    // [END ApproveMerchantCenterLink_1]
 
                     // Checks if there is a link for the Merchant Center account we are looking
                     // for, then only approves the link if it is in a 'PENDING' state.
