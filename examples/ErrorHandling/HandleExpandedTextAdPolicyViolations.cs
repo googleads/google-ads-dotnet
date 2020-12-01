@@ -141,6 +141,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </summary>
         /// <param name="ex">The API exception from a previous call to add ad group ads.</param>
         /// <returns>The ignorable policy topics</returns>
+        // [START HandleExpandedTextAdPolicyViolations]
         private static string[] FetchIgnorablePolicyTopics(GoogleAdsException ex)
         {
             List<string> ignorablePolicyTopics = new List<string>(); ;
@@ -172,6 +173,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             }
             return ignorablePolicyTopics.ToArray();
         }
+        // [END HandleExpandedTextAdPolicyViolations]
 
         /// <summary>
         /// Sends exemption requests for creating an expanded text ad.
@@ -180,6 +182,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="service">The ad group ad service.</param>
         /// <param name="operation">The ad group ad operation to request exemption for.</param>
         /// <param name="ignorablePolicyTopics">The ignorable policy topics.</param>
+        // [START HandleExpandedTextAdPolicyViolations_1]
         private static void RequestExemption(long customerId, AdGroupAdServiceClient service,
             AdGroupAdOperation operation, string[] ignorablePolicyTopics)
         {
@@ -195,5 +198,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 $"'{response.Results[0].ResourceName}' by requesting for policy violation " +
                 $"exemption.");
         }
+        // [END HandleExpandedTextAdPolicyViolations_1]
     }
 }

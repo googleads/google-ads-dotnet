@@ -75,6 +75,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignId">The campaign ID.</param>
         /// <param name="feedItemIds">The extension feed item IDs to replace.</param>
+        // [START UpdateSitelinkCampaignExtensionSetting]
         public void Run(GoogleAdsClient client, long customerId, long campaignId,
             long[] feedItemIds)
         {
@@ -125,5 +126,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END UpdateSitelinkCampaignExtensionSetting]
     }
 }
