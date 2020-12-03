@@ -134,6 +134,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="budgetResourceName">The campaign budget resource name.</param>
         /// <returns>The campaign resource name.</returns>
+        // [START AddDynamicSearchAds]
         private static string AddCampaign(GoogleAdsClient client, long customerId,
             string budgetResourceName)
         {
@@ -176,12 +177,14 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"Added campaign with resource name '{campaignResourceName}'.");
             return campaignResourceName;
         }
+        // [END AddDynamicSearchAds]
 
         /// <summary>Adds an ad group.</summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <returns>The ad group resource name.</returns>
+        // [START AddDynamicSearchAds_1]
         private static string AddAdGroup(GoogleAdsClient client, long customerId,
             string campaignResourceName)
         {
@@ -216,11 +219,13 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return adGroupResourceName;
         }
+        // [END AddDynamicSearchAds_1]
 
         /// <summary>Adds an expanded dynamic search ad.</summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupResourceName">The ad group resource name.</param>
+        // [START AddDynamicSearchAds_2]
         private static void AddExpandedDSA(GoogleAdsClient client, long customerId,
             string adGroupResourceName)
         {
@@ -258,6 +263,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"Added ad group ad with resource name " +
                 $"'{response.Results[0].ResourceName}'.");
         }
+        // [END AddDynamicSearchAds_2]
 
         /// <summary>Add webpage targeting criteria for the DSA ad group.</summary>
         /// <param name="client">The Google Ads client.</param>
