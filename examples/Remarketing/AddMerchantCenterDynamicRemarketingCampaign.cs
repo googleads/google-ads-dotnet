@@ -81,6 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="campaignBudgetId">ID of the campaign budget to be associated with the new
         /// campaign.</param>
         /// <param name="userListId">ID of the user list to be used for remarketing.</param>
+        // [START AddMerchantCenterDynamicRemarketingCampaign]
         public void Run(GoogleAdsClient client, long customerId, long merchantCenterAccountId,
             long campaignBudgetId, long userListId)
         {
@@ -109,6 +110,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END AddMerchantCenterDynamicRemarketingCampaign]
 
         /// <summary>
         /// Creates a campaign linked to a Merchant Center product feed.
