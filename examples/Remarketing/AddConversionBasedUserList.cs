@@ -66,6 +66,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The client customer ID.</param>
         /// <param name="conversionActionIds">The IDs of the conversion actions for the basic user
         ///     list.</param>
+        // [START AddConversionBasedUserList]
         public void Run(GoogleAdsClient client, long customerId, long[] conversionActionIds)
         {
             // Creates the service client.
@@ -124,5 +125,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END AddConversionBasedUserList]
     }
 }
