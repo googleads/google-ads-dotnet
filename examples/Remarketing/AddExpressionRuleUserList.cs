@@ -59,6 +59,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID to which the new user list will be
         ///     added.</param>
+        // [START AddExpressionRuleUserList]
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Gets the UserListService.
@@ -155,5 +156,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return userVisitedSiteRule;
         }
+        // [END AddExpressionRuleUserList]
     }
 }

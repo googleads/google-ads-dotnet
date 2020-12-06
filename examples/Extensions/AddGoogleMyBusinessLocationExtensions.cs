@@ -139,6 +139,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="gmbAccessToken">The OAuth2 access token for The Google My Business
         /// account.</param>
         /// <returns>ID of the newly created Google My Business feed.</returns>
+        // [START AddGoogleMyBusinessLocationExtensions]
         private static string CreateGMBFeed(GoogleAdsClient client, long customerId,
             string gmbEmailAddress, string businessAccountId, string gmbAccessToken)
         {
@@ -203,6 +204,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"GMB feed created with resource name: {gmbFeedResourceName}.");
             return gmbFeedResourceName;
         }
+        // [END AddGoogleMyBusinessLocationExtensions]
 
         /// <summary>
         /// Deletes the old location extension feeds.
@@ -344,6 +346,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="gmbFeedResourceName">The GMB feed resource name.</param>
         /// <returns>The newly created feed mapping.</returns>
+        // [START AddGoogleMyBusinessLocationExtensions_1]
         private static FeedMapping GetGMBFeedMapping(GoogleAdsClient client, long customerId,
             string gmbFeedResourceName)
         {
@@ -365,6 +368,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             GoogleAdsRow googleAdsRow = result.FirstOrDefault();
             return (googleAdsRow == null) ? null : googleAdsRow.FeedMapping;
         }
+        // [END AddGoogleMyBusinessLocationExtensions_1]
 
         /// <summary>
         /// Waits for GMB feed to be ready.
@@ -413,6 +417,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The client.</param>
         /// <param name="customerId">The customer identifier.</param>
         /// <param name="gmbFeedResourceName">Name of the GMB feed resource.</param>
+        // [START AddGoogleMyBusinessLocationExtensions_2]
         private static void CreateCustomerFeed(GoogleAdsClient client, long customerId,
             string gmbFeedResourceName)
         {
@@ -458,5 +463,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"Customer feed created with resource name: {addedCustomerFeed}.");
             return;
         }
+        // [END AddGoogleMyBusinessLocationExtensions_2]
     }
 }

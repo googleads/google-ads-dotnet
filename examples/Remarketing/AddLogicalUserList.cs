@@ -66,6 +66,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="userListIds">The IDs of the lists to be used for the new combination user
         ///     list.</param>
+        // [START AddLogicalUserList]
         public void Run(GoogleAdsClient client, long customerId, long[] userListIds)
         {
             // Gets the UserListService client.
@@ -124,5 +125,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END AddLogicalUserList]
     }
 }

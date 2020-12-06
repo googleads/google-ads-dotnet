@@ -56,6 +56,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the conversion action is
         /// added.</param>
+        // [START AddConversionAction]
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the ConversionActionService.
@@ -106,5 +107,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END AddConversionAction]
     }
 }

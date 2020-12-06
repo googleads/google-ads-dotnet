@@ -76,6 +76,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             for (int i = 0; i < NUM_CAMPAIGNS_TO_CREATE; i++)
             {
+                // [START AddCampaigns_1]
                 // Create the campaign.
                 Campaign campaign = new Campaign()
                 {
@@ -106,6 +107,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     // Optional: Set the end date.
                     EndDate = DateTime.Now.AddYears(1).ToString("yyyyMMdd"),
                 };
+                // [END AddCampaigns_1]
 
                 // Create the operation.
                 operations.Add(new CampaignOperation() { Create = campaign });
@@ -146,6 +148,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <returns>The resource name of the newly created campaign budget.</returns>
+        // [START AddCampaigns]
         private static string CreateBudget(GoogleAdsClient client, long customerId)
         {
             // Get the BudgetService.
@@ -171,5 +174,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 customerId.ToString(), new CampaignBudgetOperation[] { budgetOperation });
             return response.Results[0].ResourceName;
         }
+        // [END AddCampaigns]
     }
 }
