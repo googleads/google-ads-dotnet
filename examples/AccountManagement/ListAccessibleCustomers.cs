@@ -24,7 +24,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
     /// This code example lists the resource names for the customers that the authenticating user
     /// has access to. This example may can be used to display a list of customer IDs that can be
     /// selected by the user for setting the login-customer-id in a subsequent call. See
-    /// https://developers.google.com/google-ads/api/docs/concepts/call-structure#login-customer-id
+    /// https://developers.google.com/google-ads/api/docs/concepts/call-structure#cid
     /// to learn more about the login-customer-id header.
     /// </summary>
     public class ListAccessibleCustomers : ExampleBase
