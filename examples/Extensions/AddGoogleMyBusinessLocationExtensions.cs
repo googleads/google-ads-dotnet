@@ -376,6 +376,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="gmbFeedResourceName">Name of the GMB feed resource.</param>
+        // [START AddGoogleMyBusinessLocationExtensions_3]
         private static void WaitForGMBFeedToBeReady(GoogleAdsClient client, long customerId,
             string gmbFeedResourceName)
         {
@@ -410,6 +411,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 $"GMB Feed is not ready after {MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS}" +
                 $" retries."));
         }
+        // [END AddGoogleMyBusinessLocationExtensions_3]
 
         /// <summary>
         /// Creates the customer feed.
