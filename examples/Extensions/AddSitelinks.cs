@@ -120,6 +120,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         ///<param name="client">The Google Ads API client.</param>
         ///<param name="customerId">The client customer ID.</param>
         ///<param name="campaignResourceName">The resource name of the campaign to target.</param>
+        // [START AddSitelinks_1]
         private static List<string> CreateExtensionFeedItems(GoogleAdsClient client,
             long customerId, string campaignResourceName)
         {
@@ -238,6 +239,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             }
             return resourceNames;
         }
+        // [END AddSitelinks_1]
 
 
         /// <summary>

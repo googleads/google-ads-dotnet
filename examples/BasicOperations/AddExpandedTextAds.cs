@@ -68,6 +68,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="adGroupId">ID of the ad group to which ads are added.</param>
+        // [START AddExpandedTextAds]
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
         {
             // Get the AdGroupAdService.
@@ -126,5 +127,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END AddExpandedTextAds]
     }
 }

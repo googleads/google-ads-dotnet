@@ -81,6 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="languageId">The language to restrict the search.</param>
         /// <param name="keywordTexts">The list of seed keywords.</param>
         /// <param name="pageUrl">The seed page URL.</param>
+        // [START GenerateKeywordIdeas]
         public void Run(GoogleAdsClient client, long customerId, long[] locationIds,
             long languageId, string[] keywordTexts, string pageUrl)
         {
@@ -161,5 +162,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END GenerateKeywordIdeas]
     }
 }
