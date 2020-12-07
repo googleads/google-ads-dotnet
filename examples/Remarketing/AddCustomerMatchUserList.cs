@@ -144,6 +144,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </param>
         /// <param name="userListResourceName">the resource name of the Customer Match user list
         /// to add users to</param>
+        // [START AddCustomerMatchUserList]
         private static void AddUsersToCustomerMatchUserList(GoogleAdsClient client,
             long customerId, string userListResourceName)
         {
@@ -217,6 +218,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     $"{MAX_TOTAL_POLL_INTERVAL_SECONDS} seconds.");
             }
         }
+        // [END AddCustomerMatchUserList]
 
         /// <summary>
         /// Builds and returns offline user data job operations to add one user identified by an
