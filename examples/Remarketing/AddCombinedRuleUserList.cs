@@ -59,6 +59,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
+        // [START AddCombinedRuleUserList]
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the UserListServiceClient.
@@ -163,5 +164,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return userVisitedSiteRuleInfo;
         }
+        // [END AddCombinedRuleUserList]
     }
 }

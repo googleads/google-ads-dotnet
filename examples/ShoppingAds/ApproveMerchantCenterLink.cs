@@ -79,17 +79,21 @@ namespace Google.Ads.GoogleAds.Examples.V6
             try
             {
                 // Retrieve all the existing Merchant Center links.
+                // [START ApproveMerchantCenterLink]
                 ListMerchantCenterLinksResponse response =
                     merchantCenterLinkService.ListMerchantCenterLinks(customerId.ToString());
 
                 Console.WriteLine($"{response.MerchantCenterLinks.Count} Merchant Center link(s)" +
                     $" found with the following details:");
+                // [END ApproveMerchantCenterLink]
 
                 // Iterate the results, and filter for links with pending status.
                 foreach (MerchantCenterLink merchantCenterLink in response.MerchantCenterLinks)
                 {
+                    // [START ApproveMerchantCenterLink_1]
                     Console.Write($"Link '{merchantCenterLink.ResourceName}' has status " +
                         $"'{merchantCenterLink.Status}'.");
+                    // [END ApproveMerchantCenterLink_1]
 
                     // Checks if there is a link for the Merchant Center account we are looking
                     // for, then only approves the link if it is in a 'PENDING' state.
@@ -119,6 +123,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="merchantCenterLinkService">The merchant center link service.</param>
         /// <param name="merchantCenterLink">The merchant center link.</param>
         /// <param name="status"></param>
+        // [START ApproveMerchantCenterLink_2]
         private static void UpdateMerchantCenterLinkStatus(long customerId,
             MerchantCenterLinkServiceClient merchantCenterLinkService,
             MerchantCenterLink merchantCenterLink, MerchantCenterLinkStatus status)
@@ -147,5 +152,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 $"'{mutateResponse.Result.ResourceName}' to Google Ads account : " +
                 $"{customerId} was updated to {status}.");
         }
+        // [END ApproveMerchantCenterLink_2]
     }
 }
