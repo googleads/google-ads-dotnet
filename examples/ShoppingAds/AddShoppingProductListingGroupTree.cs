@@ -322,7 +322,12 @@ namespace Google.Ads.GoogleAds.Examples.V6
             };
 
             // Issues the search request.
-            GoogleAdsRow googleAdsRow = googleAdsService.Search(request).First();
+            GoogleAdsRow googleAdsRow = googleAdsService.Search(request).FirstOrDefault();
+
+            if (googleAdsRow == null)
+            {
+                return;
+            }
 
             AdGroupCriterion adGroupCriterion = googleAdsRow.AdGroupCriterion;
             Console.WriteLine("Found ad group criterion with the resource name: '{0}'.",
