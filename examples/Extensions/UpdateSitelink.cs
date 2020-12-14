@@ -24,7 +24,7 @@ using Google.Ads.GoogleAds.V6.Services;
 namespace Google.Ads.GoogleAds.Examples.V6
 {
     /// <summary>
-    /// Updates the sitelink extension feed item with the specified link text and URL.
+    /// Updates the sitelink extension feed item with the specified link text.
     /// </summary>
     public class UpdateSitelink : ExampleBase
     {
@@ -54,7 +54,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "Updates the sitelink extension feed item with the specified link text and URL.";
+            "Updates the sitelink extension feed item with the specified link text.";
 
         /// <summary>
         /// Runs the code example.

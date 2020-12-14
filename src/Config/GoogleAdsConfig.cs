@@ -158,6 +158,15 @@ namespace Google.Ads.GoogleAds.Config
             new ConfigSetting<string>("MerchantCenterAccountId", "");
 
         /// <summary>
+        /// A flag to determine whether or not to enable profiling.
+        /// </summary>
+        /// <remarks>
+        /// This setting is only for testing purposes.
+        /// </remarks>
+        private ConfigSetting<bool> enableProfiling =
+            new ConfigSetting<bool>("EnableProfiling", false);
+
+        /// <summary>
         /// Web proxy to be used with the services.
         /// </summary>
         private ConfigSetting<WebProxy> proxy = new ConfigSetting<WebProxy>("Proxy", null);
@@ -404,6 +413,16 @@ namespace Google.Ads.GoogleAds.Config
         {
             get => merchantCenterAccountId.Value;
             set => SetPropertyAndNotify(merchantCenterAccountId, value);
+        }
+
+        /// <summary>
+        /// A flag to determine whether or not to turn on profiling in the client library.
+        /// </summary>
+        /// <remarks>This setting is only for testing purposes.</remarks>
+        public bool EnableProfiling
+        {
+            get => enableProfiling.Value;
+            set => SetPropertyAndNotify(enableProfiling, value);
         }
 
         /// <summary>
