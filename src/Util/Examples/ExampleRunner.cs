@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
+using Google.Ads.GoogleAds.Profiling;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -86,6 +87,20 @@ namespace Google.Ads.GoogleAds.Examples
                     new string('=', codeExample.Name.Length),
                     codeExample.Description, GetUsage(codeExample));
             }
+        }
+
+        /// <summary>
+        /// Runs  the specified example name with profiling turned on.
+        /// </summary>
+        /// <param name="exampleName">Name of the example.</param>
+        /// <param name="session">The session.</param>
+        /// <param name="args">The arguments.</param>
+        public void RunWithProfiling(string exampleName, GoogleAdsClient session,
+            IEnumerable<string> args)
+        {
+            session.Config.EnableProfiling = true;
+            Run(exampleName, session, args.Skip(1));
+            DisplayProfileData();
         }
 
         /// <summary>
@@ -172,6 +187,14 @@ namespace Google.Ads.GoogleAds.Examples
         private static MethodInfo GetRunMethod(ExampleBase codeExample)
         {
             return codeExample.GetType().GetMethod("Run");
+        }
+
+        /// <summary>
+        /// Displays the profile data.
+        /// </summary>
+        private static void DisplayProfileData()
+        {
+            Console.WriteLine(ProfileTracker.Instance.DebugString());
         }
 
         /// <summary>

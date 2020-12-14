@@ -14,6 +14,7 @@
 
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Interceptors;
+using Google.Ads.GoogleAds.Profiling;
 using Google.Api.Gax;
 using Google.Api.Gax.Grpc;
 using Grpc.Core;
@@ -41,8 +42,11 @@ namespace Google.Ads.GoogleAds.Lib
                 where TService : GoogleAdsServiceClientBase
         {
             Channel channel = CreateChannel(config);
-            CallInvoker callInvoker = channel
+            CallInvoker interceptedInvoker = channel
                 .Intercept(GoogleAdsGrpcInterceptor.GetInstance(config));
+
+            CallInvoker callInvoker = config.EnableProfiling ?
+                new ProfilingCallInvoker(interceptedInvoker, config) : interceptedInvoker;
 
             // Build a service context to bind the service, configuration and CallSettings.
             GoogleAdsServiceContext serviceContext = new GoogleAdsServiceContext();

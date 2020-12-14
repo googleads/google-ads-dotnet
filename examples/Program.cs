@@ -121,6 +121,8 @@ namespace Google.Ads.GoogleAds.Examples
             string exampleName = args[0];
             try
             {
+                // Optional: Turn on profiling to see how long an API call takes.
+                // runner.RunWithProfiling(exampleName, session, args);
                 runner.Run(exampleName, session, args.Skip(1));
                 return 0;
             }

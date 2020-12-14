@@ -18,6 +18,7 @@ using Google.Ads.GoogleAds.V6.Resources;
 using Google.Ads.GoogleAds.V6.Services;
 using Google.Api.Gax;
 using System;
+using static Google.Ads.GoogleAds.V6.Resources.AdGroupBidModifier;
 
 namespace Google.Ads.GoogleAds.Examples.V6
 {
@@ -67,10 +68,20 @@ namespace Google.Ads.GoogleAds.Examples.V6
             GoogleAdsServiceClient googleAdsService =
                 client.GetService(Services.V6.GoogleAdsService);
 
-            string searchQuery =
-              "SELECT ad_group.id, ad_group_bid_modifier.criterion_id, "
-                  + "ad_group_bid_modifier.bid_modifier, ad_group_bid_modifier.device.type, "
-                  + "campaign.id FROM ad_group_bid_modifier";
+            string searchQuery = @"
+                SELECT
+                    ad_group.id, ad_group_bid_modifier.criterion_id, campaign.id,
+                    ad_group_bid_modifier.bid_modifier,
+                    ad_group_bid_modifier.device.type,
+                    ad_group_bid_modifier.hotel_date_selection_type.type,
+                    ad_group_bid_modifier.hotel_advance_booking_window.min_days,
+                    ad_group_bid_modifier.hotel_advance_booking_window.max_days,
+                    ad_group_bid_modifier.hotel_length_of_stay.min_nights,
+                    ad_group_bid_modifier.hotel_length_of_stay.max_nights,
+                    ad_group_bid_modifier.hotel_check_in_day.day_of_week,
+                    ad_group_bid_modifier.preferred_content.type
+                FROM
+                    ad_group_bid_modifier";
 
             if (adGroupId != null)
             {
@@ -99,12 +110,48 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     AdGroup adGroup = googleAdsRow.AdGroup;
                     Campaign campaign = googleAdsRow.Campaign;
                     Console.WriteLine("Ad group bid modifier with criterion ID {0}, bid " +
-                        "modifier value {1:0.00}, device type {2} was found in an ad group " +
-                        "with ID {3} of campaign ID {4}.",
+                        "modifier value {1:0.00} was found in an ad group with ID {2} of " +
+                        "campaign ID {3}.",
                         adGroupBidModifier.CriterionId,
                         adGroupBidModifier.BidModifier,
-                        adGroupBidModifier.Device.Type,
                         adGroup.Id, campaign.Id);
+
+                    string criterionDetails = "  - Criterion type: " +
+                        $"{adGroupBidModifier.CriterionCase}, ";
+                    switch (adGroupBidModifier.CriterionCase)
+                    {
+                        case CriterionOneofCase.Device:
+                            criterionDetails += $"Type: {adGroupBidModifier.Device.Type}";
+                            break;
+
+                        case CriterionOneofCase.HotelAdvanceBookingWindow:
+                            criterionDetails +=
+                                $"Min Days: {adGroupBidModifier.HotelAdvanceBookingWindow.MinDays}," +
+                                $"Max Days: {adGroupBidModifier.HotelAdvanceBookingWindow.MaxDays}";
+                            break;
+
+                        case CriterionOneofCase.HotelCheckInDay:
+                            criterionDetails += $"Day of the week: " +
+                                $"{adGroupBidModifier.HotelCheckInDay.DayOfWeek}";
+                            break;
+
+                        case CriterionOneofCase.HotelDateSelectionType:
+                            criterionDetails += $"Date selection type: " +
+                                $"{adGroupBidModifier.HotelDateSelectionType.Type}";
+                            break;
+
+                        case CriterionOneofCase.HotelLengthOfStay:
+                            criterionDetails +=
+                                $"Min Nights: {adGroupBidModifier.HotelLengthOfStay.MinNights}," +
+                                $"Max Nights: {adGroupBidModifier.HotelLengthOfStay.MaxNights}";
+                            break;
+
+                        case CriterionOneofCase.PreferredContent:
+                            criterionDetails +=
+                                $"Type: {adGroupBidModifier.PreferredContent.Type}";
+                            break;
+                    }
+                    Console.WriteLine(criterionDetails);
                 }
             }
             catch (GoogleAdsException e)

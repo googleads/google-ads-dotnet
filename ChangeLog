@@ -1,3 +1,27 @@
+6.1.0
+=====
+
+- Fixed a few code examples
+  - SetupRemarketing.cs
+  - GetAccountHierarchy.cs
+  - AddShoppingProductListingGroupTree.cs
+  - UpdateSitelink.cs
+  - GetAdGroupBidModifiers.cs
+- Fixed the build badge URL in the README.md file.
+- Added region tags in all code examples. This makes it easier to embed the code examples
+  in the developer guides.
+- Fixed a broken urls to guide references in some code examples.
+- Added new code examples for FeedItemSets.
+  - Feeds\CreateFeedItemSet.cs
+  - Feeds\GetFeedItemsOfFeedItemSet.cs
+  - Feeds\LinkFeedItemSet.cs
+- Added a profiler for the client library to capture client time breakdown by serialization, deserialization and over-the-wire times.
+- Bumped the protobuf and grpc dependencies. This is required due to https://github.com/protocolbuffers/protobuf/issues/8027. The full version bump lists are:
+  - Google.Protobuf: 3.14.0
+  - Grpc.Core: 2.34.0
+  - Microsoft.Extensions.Configuration: 5.0.0.
+  - System.Configuration.ConfigurationManager: 5.0.0
+  
 6.0.0
 =====
 - Added support for v6 of Google Ads API. See
