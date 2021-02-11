@@ -24,6 +24,8 @@ Please check existing issues to see if your bug has already been reported before
 Please provide a code snippet or steps to consistently reproduce the experienced behavior.
 [DO NOT INCLUDE ANY PERSONAL OR SENSITIVE DATA IN YOUR SUBMITTED CODE]
 
+**Attach the logs (if this is an error when making an API call)**
+See https://developers.google.com/google-ads/api/docs/client-libs/dotnet/logging for instructions on how to turn on logging and capture logs.
 **Expected result**
 
 **Actual result**
