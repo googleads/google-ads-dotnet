@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.V5.Services
     /// Builder class for <see cref="ConversionUploadServiceClient"/> to provide simple configuration of credentials,
     /// endpoint etc.
     /// </summary>
-    public sealed partial class ConversionUploadServiceClientBuilder : gaxgrpc::ClientBuilderBase<ConversionUploadServiceClient>
+    internal sealed partial class ConversionUploadServiceClientBuilder : gaxgrpc::ClientBuilderBase<ConversionUploadServiceClient>
     {
         /// <summary>The settings to use for RPCs, or <c>null</c> for the default settings.</summary>
         public ConversionUploadServiceSettings Settings { get; set; }
@@ -154,8 +154,14 @@ namespace Google.Ads.GoogleAds.V5.Services
         public static string DefaultEndpoint { get; } = "googleads.googleapis.com:443";
 
         /// <summary>The default ConversionUploadService scopes.</summary>
-        /// <remarks>The default ConversionUploadService scopes are:<list type="bullet"></list></remarks>
-        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[] { });
+        /// <remarks>
+        /// The default ConversionUploadService scopes are:
+        /// <list type="bullet"><item><description>https://www.googleapis.com/auth/adwords</description></item></list>
+        /// </remarks>
+        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[]
+        {
+            "https://www.googleapis.com/auth/adwords",
+        });
 
         internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes);
 

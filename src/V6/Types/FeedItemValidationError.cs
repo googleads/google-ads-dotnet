@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V6.Errors {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9lcnJvcnMvZmVlZF9pdGVtX3Zh",
             "bGlkYXRpb25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2",
-            "LmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLoGQobRmVl",
-            "ZEl0ZW1WYWxpZGF0aW9uRXJyb3JFbnVtIsgZChdGZWVkSXRlbVZhbGlkYXRp",
+            "LmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLuGwobRmVl",
+            "ZEl0ZW1WYWxpZGF0aW9uRXJyb3JFbnVtIs4bChdGZWVkSXRlbVZhbGlkYXRp",
             "b25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIUChBTVFJJ",
             "TkdfVE9PX1NIT1JUEAISEwoPU1RSSU5HX1RPT19MT05HEAMSFwoTVkFMVUVf",
             "Tk9UX1NQRUNJRklFRBAEEigKJElOVkFMSURfRE9NRVNUSUNfUEhPTkVfTlVN",
@@ -100,13 +100,18 @@ namespace Google.Ads.GoogleAds.V6.Errors {
             "D1RPT19NQU5ZX0xBQkVMUxBdEhUKEUlOVkFMSURfSU1BR0VfVVJMEF4SGgoW",
             "TUlTU0lOR19MQVRJVFVERV9WQUxVRRBfEhsKF01JU1NJTkdfTE9OR0lUVURF",
             "X1ZBTFVFEGASFQoRQUREUkVTU19OT1RfRk9VTkQQYRIaChZBRERSRVNTX05P",
-            "VF9UQVJHRVRBQkxFEGJC9wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "Ni5lcnJvcnNCHEZlZWRJdGVtVmFsaWRhdGlvbkVycm9yUHJvdG9QAVpEZ29v",
-            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
-            "YWRzL3Y2L2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2ds",
-            "ZUFkcy5WNi5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWNlxFcnJv",
-            "cnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWNjo6RXJyb3JzYgZwcm90",
-            "bzM="));
+            "VF9UQVJHRVRBQkxFEGISFAoQSU5WQUxJRF9BU1NFVF9JRBBkEhsKF0lOQ09N",
+            "UEFUSUJMRV9BU1NFVF9UWVBFEGUSHwobSU1BR0VfRVJST1JfVU5FWFBFQ1RF",
+            "RF9TSVpFEGYSKAokSU1BR0VfRVJST1JfQVNQRUNUX1JBVElPX05PVF9BTExP",
+            "V0VEEGcSHgoaSU1BR0VfRVJST1JfRklMRV9UT09fTEFSR0UQaBIiCh5JTUFH",
+            "RV9FUlJPUl9GT1JNQVRfTk9UX0FMTE9XRUQQaRIkCiBJTUFHRV9FUlJPUl9D",
+            "T05TVFJBSU5UU19WSU9MQVRFRBBqEhwKGElNQUdFX0VSUk9SX1NFUlZFUl9F",
+            "UlJPUhBrQvcBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYuZXJyb3Jz",
+            "QhxGZWVkSXRlbVZhbGlkYXRpb25FcnJvclByb3RvUAFaRGdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92Ni9l",
+            "cnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjYu",
+            "RXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjZcRXJyb3Jz6gIiR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjY6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -676,6 +681,38 @@ namespace Google.Ads.GoogleAds.V6.Errors {
         /// Cannot target provided address.
         /// </summary>
         [pbr::OriginalName("ADDRESS_NOT_TARGETABLE")] AddressNotTargetable = 98,
+        /// <summary>
+        /// The specified asset ID does not exist.
+        /// </summary>
+        [pbr::OriginalName("INVALID_ASSET_ID")] InvalidAssetId = 100,
+        /// <summary>
+        /// The asset type cannot be set for the field.
+        /// </summary>
+        [pbr::OriginalName("INCOMPATIBLE_ASSET_TYPE")] IncompatibleAssetType = 101,
+        /// <summary>
+        /// The image has unexpected size.
+        /// </summary>
+        [pbr::OriginalName("IMAGE_ERROR_UNEXPECTED_SIZE")] ImageErrorUnexpectedSize = 102,
+        /// <summary>
+        /// The image aspect ratio is not allowed.
+        /// </summary>
+        [pbr::OriginalName("IMAGE_ERROR_ASPECT_RATIO_NOT_ALLOWED")] ImageErrorAspectRatioNotAllowed = 103,
+        /// <summary>
+        /// The image file is too large.
+        /// </summary>
+        [pbr::OriginalName("IMAGE_ERROR_FILE_TOO_LARGE")] ImageErrorFileTooLarge = 104,
+        /// <summary>
+        /// The image format is unsupported.
+        /// </summary>
+        [pbr::OriginalName("IMAGE_ERROR_FORMAT_NOT_ALLOWED")] ImageErrorFormatNotAllowed = 105,
+        /// <summary>
+        /// Image violates constraints without more details.
+        /// </summary>
+        [pbr::OriginalName("IMAGE_ERROR_CONSTRAINTS_VIOLATED")] ImageErrorConstraintsViolated = 106,
+        /// <summary>
+        /// An error occurred when validating image.
+        /// </summary>
+        [pbr::OriginalName("IMAGE_ERROR_SERVER_ERROR")] ImageErrorServerError = 107,
       }
 
     }

@@ -26,18 +26,27 @@ namespace Google.Ads.GoogleAds.V6.Errors {
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9lcnJvcnMvYXNzZXRfbGlua19l",
             "cnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYuZXJyb3JzGhxn",
-            "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIoICChJBc3NldExpbmtFcnJv",
-            "ckVudW0i6wEKDkFzc2V0TGlua0Vycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoH",
+            "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIoYFChJBc3NldExpbmtFcnJv",
+            "ckVudW0i7wQKDkFzc2V0TGlua0Vycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoH",
             "VU5LTk9XThABEhcKE1BJTk5JTkdfVU5TVVBQT1JURUQQAhIaChZVTlNVUFBP",
             "UlRFRF9GSUVMRF9UWVBFEAMSKwonRklFTERfVFlQRV9JTkNPTVBBVElCTEVf",
             "V0lUSF9BU1NFVF9UWVBFEAQSLgoqRklFTERfVFlQRV9JTkNPTVBBVElCTEVf",
             "V0lUSF9DQU1QQUlHTl9UWVBFEAUSKQolSU5DT01QQVRJQkxFX0FEVkVSVElT",
-            "SU5HX0NIQU5ORUxfVFlQRRAGQu4BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjYuZXJyb3JzQhNBc3NldExpbmtFcnJvclByb3RvUAFaRGdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "Ni9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
-            "VjYuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjZcRXJyb3Jz6gIi",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjY6OkVycm9yc2IGcHJvdG8z"));
+            "SU5HX0NIQU5ORUxfVFlQRRAGEi4KKklNQUdFX05PVF9XSVRISU5fU1BFQ0lG",
+            "SUVEX0RJTUVOU0lPTl9SQU5HRRAHEhgKFElOVkFMSURfUElOTkVEX0ZJRUxE",
+            "EAgSKgomTUVESUFfQlVORExFX0FTU0VUX0ZJTEVfU0laRV9UT09fTEFSR0UQ",
+            "CRI6CjZOT1RfRU5PVUdIX0FWQUlMQUJMRV9BU1NFVF9MSU5LU19GT1JfVkFM",
+            "SURfQ09NQklOQVRJT04QChIyCi5OT1RfRU5PVUdIX0FWQUlMQUJMRV9BU1NF",
+            "VF9MSU5LU19XSVRIX0ZBTExCQUNLEAsSSApETk9UX0VOT1VHSF9BVkFJTEFC",
+            "TEVfQVNTRVRfTElOS1NfV0lUSF9GQUxMQkFDS19GT1JfVkFMSURfQ09NQklO",
+            "QVRJT04QDBIZChVZT1VUVUJFX1ZJREVPX1JFTU9WRUQQDRIaChZZT1VUVUJF",
+            "X1ZJREVPX1RPT19MT05HEA4SGwoXWU9VVFVCRV9WSURFT19UT09fU0hPUlQQ",
+            "D0LuAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVycm9yc0ITQXNz",
+            "ZXRMaW5rRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
+            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjYvZXJyb3JzO2Vycm9yc6IC",
+            "A0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlY2LkVycm9yc8oCHkdvb2ds",
+            "ZVxBZHNcR29vZ2xlQWRzXFY2XEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29n",
+            "bGVBZHM6OlY2OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -223,6 +232,53 @@ namespace Google.Ads.GoogleAds.V6.Errors {
         /// asset due to channel-based restrictions on the asset's fields.
         /// </summary>
         [pbr::OriginalName("INCOMPATIBLE_ADVERTISING_CHANNEL_TYPE")] IncompatibleAdvertisingChannelType = 6,
+        /// <summary>
+        /// The image asset provided is not within the dimension constraints
+        /// specified for the submitted asset field.
+        /// </summary>
+        [pbr::OriginalName("IMAGE_NOT_WITHIN_SPECIFIED_DIMENSION_RANGE")] ImageNotWithinSpecifiedDimensionRange = 7,
+        /// <summary>
+        /// The pinned field is not valid for the submitted asset field.
+        /// </summary>
+        [pbr::OriginalName("INVALID_PINNED_FIELD")] InvalidPinnedField = 8,
+        /// <summary>
+        /// The media bundle asset provided is too large for the submitted asset
+        /// field.
+        /// </summary>
+        [pbr::OriginalName("MEDIA_BUNDLE_ASSET_FILE_SIZE_TOO_LARGE")] MediaBundleAssetFileSizeTooLarge = 9,
+        /// <summary>
+        /// Not enough assets are available for use with other fields since other
+        /// assets are pinned to specific fields.
+        /// </summary>
+        [pbr::OriginalName("NOT_ENOUGH_AVAILABLE_ASSET_LINKS_FOR_VALID_COMBINATION")] NotEnoughAvailableAssetLinksForValidCombination = 10,
+        /// <summary>
+        /// Not enough assets with fallback are available. When validating the
+        /// minimum number of assets, assets without fallback (e.g. assets that
+        /// contain location tag without default value "{LOCATION(City)}") will not
+        /// be counted.
+        /// </summary>
+        [pbr::OriginalName("NOT_ENOUGH_AVAILABLE_ASSET_LINKS_WITH_FALLBACK")] NotEnoughAvailableAssetLinksWithFallback = 11,
+        /// <summary>
+        /// This is a combination of the
+        /// NOT_ENOUGH_AVAILABLE_ASSET_LINKS_FOR_VALID_COMBINATION and
+        /// NOT_ENOUGH_AVAILABLE_ASSET_LINKS_WITH_FALLBACK errors. Not enough assets
+        /// with fallback are available since some assets are pinned.
+        /// </summary>
+        [pbr::OriginalName("NOT_ENOUGH_AVAILABLE_ASSET_LINKS_WITH_FALLBACK_FOR_VALID_COMBINATION")] NotEnoughAvailableAssetLinksWithFallbackForValidCombination = 12,
+        /// <summary>
+        /// The YouTube video referenced in the provided asset has been removed.
+        /// </summary>
+        [pbr::OriginalName("YOUTUBE_VIDEO_REMOVED")] YoutubeVideoRemoved = 13,
+        /// <summary>
+        /// The YouTube video referenced in the provided asset is too long for the
+        /// field submitted.
+        /// </summary>
+        [pbr::OriginalName("YOUTUBE_VIDEO_TOO_LONG")] YoutubeVideoTooLong = 14,
+        /// <summary>
+        /// The YouTube video referenced in the provided asset is too short for the
+        /// field submitted.
+        /// </summary>
+        [pbr::OriginalName("YOUTUBE_VIDEO_TOO_SHORT")] YoutubeVideoTooShort = 15,
       }
 
     }

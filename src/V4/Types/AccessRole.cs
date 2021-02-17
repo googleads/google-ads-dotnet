@@ -26,15 +26,15 @@ namespace Google.Ads.GoogleAds.V4.Enums {
           string.Concat(
             "Ci9nb29nbGUvYWRzL2dvb2dsZWFkcy92NC9lbnVtcy9hY2Nlc3Nfcm9sZS5w",
             "cm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuZW51bXMaHGdvb2dsZS9h",
-            "cGkvYW5ub3RhdGlvbnMucHJvdG8iZAoOQWNjZXNzUm9sZUVudW0iUgoKQWNj",
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8idAoOQWNjZXNzUm9sZUVudW0iYgoKQWNj",
             "ZXNzUm9sZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIJCgVBRE1J",
-            "ThACEgwKCFNUQU5EQVJEEAMSDQoJUkVBRF9PTkxZEARC5AEKIWNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52NC5lbnVtc0IPQWNjZXNzUm9sZVByb3RvUAFa",
-            "Qmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92NC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlY0LkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjRcRW51",
-            "bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWNDo6RW51bXNiBnByb3Rv",
-            "Mw=="));
+            "ThACEgwKCFNUQU5EQVJEEAMSDQoJUkVBRF9PTkxZEAQSDgoKRU1BSUxfT05M",
+            "WRAFQuQBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuZW51bXNCD0Fj",
+            "Y2Vzc1JvbGVQcm90b1ABWkJnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
+            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjQvZW51bXM7ZW51bXOiAgNHQUGq",
+            "Ah1Hb29nbGUuQWRzLkdvb2dsZUFkcy5WNC5FbnVtc8oCHUdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFY0XEVudW1z6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjQ6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -210,6 +210,11 @@ namespace Google.Ads.GoogleAds.V4.Enums {
         /// Can view campaigns and account changes, but cannot make edits.
         /// </summary>
         [pbr::OriginalName("READ_ONLY")] ReadOnly = 4,
+        /// <summary>
+        /// Role for \"email only\" access. Represents an email recipient rather than
+        /// a true User entity.
+        /// </summary>
+        [pbr::OriginalName("EMAIL_ONLY")] EmailOnly = 5,
       }
 
     }

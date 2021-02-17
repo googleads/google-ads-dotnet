@@ -40,7 +40,7 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerClientLink expectedResponse = new gagvr::CustomerClientLink
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerCustomerClientLink("[CUSTOMER]", "[CUSTOMER_CLIENT_LINK]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
                 Hidden = true,
@@ -63,7 +63,7 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerClientLink expectedResponse = new gagvr::CustomerClientLink
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerCustomerClientLink("[CUSTOMER]", "[CUSTOMER_CLIENT_LINK]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
                 Hidden = true,
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerClientLink expectedResponse = new gagvr::CustomerClientLink
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerCustomerClientLink("[CUSTOMER]", "[CUSTOMER_CLIENT_LINK]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
                 Hidden = true,
@@ -111,7 +111,7 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerClientLink expectedResponse = new gagvr::CustomerClientLink
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerCustomerClientLink("[CUSTOMER]", "[CUSTOMER_CLIENT_LINK]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
                 Hidden = true,
@@ -136,7 +136,7 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerClientLink expectedResponse = new gagvr::CustomerClientLink
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerCustomerClientLink("[CUSTOMER]", "[CUSTOMER_CLIENT_LINK]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
                 Hidden = true,
@@ -159,7 +159,7 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerClientLink expectedResponse = new gagvr::CustomerClientLink
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerCustomerClientLink("[CUSTOMER]", "[CUSTOMER_CLIENT_LINK]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
                 Hidden = true,

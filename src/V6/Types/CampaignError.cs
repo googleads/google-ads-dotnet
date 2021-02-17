@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V6.Errors {
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9lcnJvcnMvY2FtcGFpZ25fZXJy",
             "b3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVycm9ycxocZ29v",
-            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKuDQoRQ2FtcGFpZ25FcnJvckVu",
-            "dW0imA0KDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
+            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLKDQoRQ2FtcGFpZ25FcnJvckVu",
+            "dW0itA0KDUNhbXBhaWduRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
             "T1dOEAESIQodQ0FOTk9UX1RBUkdFVF9DT05URU5UX05FVFdPUksQAxIgChxD",
             "QU5OT1RfVEFSR0VUX1NFQVJDSF9ORVRXT1JLEAQSNgoyQ0FOTk9UX1RBUkdF",
             "VF9TRUFSQ0hfTkVUV09SS19XSVRIT1VUX0dPT0dMRV9TRUFSQ0gQBRIwCixD",
@@ -64,13 +64,13 @@ namespace Google.Ads.GoogleAds.V6.Errors {
             "TkFCTEVfTE9DQUxfTk9UX1NVUFBPUlRFRF9GT1JfQ0FNUEFJR05fVFlQRRAq",
             "EjMKL01FUkNIQU5UX05PVF9BTExPV0VEX0ZPUl9DT01QQVJJU09OX0xJU1RJ",
             "TkdfQURTECsSIwofSU5TVUZGSUNJRU5UX0FQUF9JTlNUQUxMU19DT1VOVBAs",
-            "EhoKFlNFTlNJVElWRV9DQVRFR09SWV9BUFAQLULtAQoiY29tLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnY2LmVycm9yc0ISQ2FtcGFpZ25FcnJvclByb3RvUAFa",
-            "RGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92Ni9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjYuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjZc",
-            "RXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjY6OkVycm9yc2IG",
-            "cHJvdG8z"));
+            "EhoKFlNFTlNJVElWRV9DQVRFR09SWV9BUFAQLRIaChZIRUNfQUdSRUVNRU5U",
+            "X1JFUVVJUkVEEC5C7QEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52Ni5l",
+            "cnJvcnNCEkNhbXBhaWduRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjYvZXJyb3Jz",
+            "O2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlY2LkVycm9y",
+            "c8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFY2XEVycm9yc+oCIkdvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlY2OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -409,6 +409,11 @@ namespace Google.Ads.GoogleAds.V6.Errors {
         /// sensitive.
         /// </summary>
         [pbr::OriginalName("SENSITIVE_CATEGORY_APP")] SensitiveCategoryApp = 45,
+        /// <summary>
+        /// Customers with Housing, Employment, or Credit ads must accept updated
+        /// personalized ads policy to continue creating campaigns.
+        /// </summary>
+        [pbr::OriginalName("HEC_AGREEMENT_REQUIRED")] HecAgreementRequired = 46,
       }
 
     }

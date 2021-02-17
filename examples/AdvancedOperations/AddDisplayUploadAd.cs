@@ -158,8 +158,8 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 Name = "Ad for HTML5",
                 FinalUrls = {"http://example.com/html5"},
                 // Exactly one ad data field must be included to specify the ad type. See
-                // https://developers.google.com/google-ads/api/reference/rpc/V6/Ad for the full
-                // list of available types.
+                // https://developers.google.com/google-ads/api/reference/rpc/latest/Ad for the
+                // full list of available types.
                 DisplayUploadAd = new DisplayUploadAdInfo()
                 {
                     DisplayUploadProductType = DisplayUploadProductType.Html5UploadAd,

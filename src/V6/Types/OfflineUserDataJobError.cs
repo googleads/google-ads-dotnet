@@ -246,7 +246,7 @@ namespace Google.Ads.GoogleAds.V6.Errors {
         /// </summary>
         [pbr::OriginalName("INVALID_MOBILE_ID_FORMAT")] InvalidMobileIdFormat = 8,
         /// <summary>
-        /// Request is exceeding the maximum number of user identifiers allowed.
+        /// Maximum number of user identifiers allowed per request is 100,000.
         /// </summary>
         [pbr::OriginalName("TOO_MANY_USER_IDENTIFIERS")] TooManyUserIdentifiers = 9,
         /// <summary>

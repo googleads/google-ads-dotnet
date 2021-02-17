@@ -22,7 +22,8 @@
     <None Remove="Migration\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Ads.GoogleAds" Version="6.1.0" />
+    <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')"
+        Include="Google.Ads.GoogleAds" Version="7.0.0" />
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>

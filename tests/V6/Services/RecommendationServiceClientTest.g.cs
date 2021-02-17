@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::Recommendation expectedResponse = new gagvr::Recommendation
             {
                 ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER_ID]", "[RECOMMENDATION_ID]"),
-                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeClicksOptIn,
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeConversionsOptIn,
                 Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
                 CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
                 KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
@@ -63,6 +63,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
                 Dismissed = true,
+                ResponsiveSearchAdRecommendation = new gagvr::Recommendation.Types.ResponsiveSearchAdRecommendation(),
             };
             mockGrpcClient.Setup(x => x.GetRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
@@ -82,7 +83,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::Recommendation expectedResponse = new gagvr::Recommendation
             {
                 ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER_ID]", "[RECOMMENDATION_ID]"),
-                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeClicksOptIn,
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeConversionsOptIn,
                 Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
                 CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
                 KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
@@ -104,6 +105,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
                 Dismissed = true,
+                ResponsiveSearchAdRecommendation = new gagvr::Recommendation.Types.ResponsiveSearchAdRecommendation(),
             };
             mockGrpcClient.Setup(x => x.GetRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Recommendation>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
@@ -125,7 +127,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::Recommendation expectedResponse = new gagvr::Recommendation
             {
                 ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER_ID]", "[RECOMMENDATION_ID]"),
-                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeClicksOptIn,
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeConversionsOptIn,
                 Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
                 CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
                 KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
@@ -147,6 +149,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
                 Dismissed = true,
+                ResponsiveSearchAdRecommendation = new gagvr::Recommendation.Types.ResponsiveSearchAdRecommendation(),
             };
             mockGrpcClient.Setup(x => x.GetRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
@@ -166,7 +169,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::Recommendation expectedResponse = new gagvr::Recommendation
             {
                 ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER_ID]", "[RECOMMENDATION_ID]"),
-                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeClicksOptIn,
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeConversionsOptIn,
                 Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
                 CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
                 KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
@@ -188,6 +191,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
                 Dismissed = true,
+                ResponsiveSearchAdRecommendation = new gagvr::Recommendation.Types.ResponsiveSearchAdRecommendation(),
             };
             mockGrpcClient.Setup(x => x.GetRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Recommendation>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
@@ -209,7 +213,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::Recommendation expectedResponse = new gagvr::Recommendation
             {
                 ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER_ID]", "[RECOMMENDATION_ID]"),
-                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeClicksOptIn,
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeConversionsOptIn,
                 Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
                 CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
                 KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
@@ -231,6 +235,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
                 Dismissed = true,
+                ResponsiveSearchAdRecommendation = new gagvr::Recommendation.Types.ResponsiveSearchAdRecommendation(),
             };
             mockGrpcClient.Setup(x => x.GetRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
@@ -250,7 +255,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::Recommendation expectedResponse = new gagvr::Recommendation
             {
                 ResourceNameAsRecommendationName = gagvr::RecommendationName.FromCustomerRecommendation("[CUSTOMER_ID]", "[RECOMMENDATION_ID]"),
-                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeClicksOptIn,
+                Type = gagve::RecommendationTypeEnum.Types.RecommendationType.MaximizeConversionsOptIn,
                 Impact = new gagvr::Recommendation.Types.RecommendationImpact(),
                 CampaignBudgetRecommendation = new gagvr::Recommendation.Types.CampaignBudgetRecommendation(),
                 KeywordRecommendation = new gagvr::Recommendation.Types.KeywordRecommendation(),
@@ -272,6 +277,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
                 Dismissed = true,
+                ResponsiveSearchAdRecommendation = new gagvr::Recommendation.Types.ResponsiveSearchAdRecommendation(),
             };
             mockGrpcClient.Setup(x => x.GetRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Recommendation>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);

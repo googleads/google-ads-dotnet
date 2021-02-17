@@ -471,6 +471,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v6/CustomerUserAccessInvitationService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<CustomerUserAccessInvitationServiceClient, CustomerUserAccessInvitationServiceSettings> CustomerUserAccessInvitationService =
+                new ServiceTemplate<CustomerUserAccessInvitationServiceClient, CustomerUserAccessInvitationServiceSettings>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/v6/CustomerUserAccessService
             /// for details.
             /// </summary>
@@ -1204,6 +1212,10 @@ namespace Google.Ads.GoogleAds
 
                     case "CustomerServiceClient":
                         return CustomerServiceClient.Create(callInvoker, (CustomerServiceSettings) settings);
+
+
+                    case "CustomerUserAccessInvitationServiceClient":
+                        return CustomerUserAccessInvitationServiceClient.Create(callInvoker, (CustomerUserAccessInvitationServiceSettings) settings);
 
 
                     case "CustomerUserAccessServiceClient":

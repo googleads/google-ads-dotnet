@@ -34,14 +34,44 @@ namespace Google.Ads.GoogleAds.V4.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v4.services.ReachPlanService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsRequest> __Marshaller_google_ads_googleads_v4_services_ListPlannableLocationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsResponse> __Marshaller_google_ads_googleads_v4_services_ListPlannableLocationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.ListPlannableProductsRequest> __Marshaller_google_ads_googleads_v4_services_ListPlannableProductsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.ListPlannableProductsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.ListPlannableProductsResponse> __Marshaller_google_ads_googleads_v4_services_ListPlannableProductsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.ListPlannableProductsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateProductMixIdeasRequest> __Marshaller_google_ads_googleads_v4_services_GenerateProductMixIdeasRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GenerateProductMixIdeasRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateProductMixIdeasResponse> __Marshaller_google_ads_googleads_v4_services_GenerateProductMixIdeasResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GenerateProductMixIdeasResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateReachForecastRequest> __Marshaller_google_ads_googleads_v4_services_GenerateReachForecastRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GenerateReachForecastRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateReachForecastResponse> __Marshaller_google_ads_googleads_v4_services_GenerateReachForecastResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GenerateReachForecastResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsRequest> __Marshaller_google_ads_googleads_v4_services_ListPlannableLocationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsResponse> __Marshaller_google_ads_googleads_v4_services_ListPlannableLocationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsResponse.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.ListPlannableProductsRequest> __Marshaller_google_ads_googleads_v4_services_ListPlannableProductsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.ListPlannableProductsRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.ListPlannableProductsResponse> __Marshaller_google_ads_googleads_v4_services_ListPlannableProductsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.ListPlannableProductsResponse.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateProductMixIdeasRequest> __Marshaller_google_ads_googleads_v4_services_GenerateProductMixIdeasRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.GenerateProductMixIdeasRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateProductMixIdeasResponse> __Marshaller_google_ads_googleads_v4_services_GenerateProductMixIdeasResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.GenerateProductMixIdeasResponse.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateReachForecastRequest> __Marshaller_google_ads_googleads_v4_services_GenerateReachForecastRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.GenerateReachForecastRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GenerateReachForecastResponse> __Marshaller_google_ads_googleads_v4_services_GenerateReachForecastResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.GenerateReachForecastResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsRequest, global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsResponse> __Method_ListPlannableLocations = new grpc::Method<global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsRequest, global::Google.Ads.GoogleAds.V4.Services.ListPlannableLocationsResponse>(
         grpc::MethodType.Unary,

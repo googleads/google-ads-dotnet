@@ -241,12 +241,10 @@ namespace Google.Ads.GoogleAds.V6.Enums {
         [pbr::OriginalName("GOOGLE_ADS_RECOMMENDATIONS")] GoogleAdsRecommendations = 9,
         /// <summary>
         /// Changes made through Search Ads 360 Sync.
-        /// .
         /// </summary>
         [pbr::OriginalName("SEARCH_ADS_360_SYNC")] SearchAds360Sync = 10,
         /// <summary>
         /// Changes made through Search Ads 360 Post.
-        /// .
         /// </summary>
         [pbr::OriginalName("SEARCH_ADS_360_POST")] SearchAds360Post = 11,
         /// <summary>

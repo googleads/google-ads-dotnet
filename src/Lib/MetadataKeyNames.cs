@@ -62,6 +62,12 @@ namespace Google.Ads.GoogleAds.Lib
             "customer_user_access.inviter_user_email_address";
 
         /// <summary>
+        /// The metadata key name for the invitation email address.
+        /// </summary>
+        internal const string CustomerUserAccessInvitationEmailAddress =
+            "customer_user_access_invitation.email_address";
+
+        /// <summary>
         /// The metadata key name for the email address.
         /// </summary>
         internal const string CustomerUserAccessEmailAddress = "customer_user_access.email_address";

@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -43,7 +43,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedSetCriterion("[CUSTOMER_ID]", "[SHARED_SET_ID]", "[CRITERION_ID]"),
                 Keyword = new gagvc::KeywordInfo(),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 YoutubeVideo = new gagvc::YouTubeVideoInfo(),
                 YoutubeChannel = new gagvc::YouTubeChannelInfo(),
                 Placement = new gagvc::PlacementInfo(),
@@ -71,7 +71,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedSetCriterion("[CUSTOMER_ID]", "[SHARED_SET_ID]", "[CRITERION_ID]"),
                 Keyword = new gagvc::KeywordInfo(),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 YoutubeVideo = new gagvc::YouTubeVideoInfo(),
                 YoutubeChannel = new gagvc::YouTubeChannelInfo(),
                 Placement = new gagvc::PlacementInfo(),
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedSetCriterion("[CUSTOMER_ID]", "[SHARED_SET_ID]", "[CRITERION_ID]"),
                 Keyword = new gagvc::KeywordInfo(),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 YoutubeVideo = new gagvc::YouTubeVideoInfo(),
                 YoutubeChannel = new gagvc::YouTubeChannelInfo(),
                 Placement = new gagvc::PlacementInfo(),
@@ -129,7 +129,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedSetCriterion("[CUSTOMER_ID]", "[SHARED_SET_ID]", "[CRITERION_ID]"),
                 Keyword = new gagvc::KeywordInfo(),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 YoutubeVideo = new gagvc::YouTubeVideoInfo(),
                 YoutubeChannel = new gagvc::YouTubeChannelInfo(),
                 Placement = new gagvc::PlacementInfo(),
@@ -159,7 +159,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedSetCriterion("[CUSTOMER_ID]", "[SHARED_SET_ID]", "[CRITERION_ID]"),
                 Keyword = new gagvc::KeywordInfo(),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 YoutubeVideo = new gagvc::YouTubeVideoInfo(),
                 YoutubeChannel = new gagvc::YouTubeChannelInfo(),
                 Placement = new gagvc::PlacementInfo(),
@@ -187,7 +187,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsSharedCriterionName = gagvr::SharedCriterionName.FromCustomerSharedSetCriterion("[CUSTOMER_ID]", "[SHARED_SET_ID]", "[CRITERION_ID]"),
                 Keyword = new gagvc::KeywordInfo(),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 YoutubeVideo = new gagvc::YouTubeVideoInfo(),
                 YoutubeChannel = new gagvc::YouTubeChannelInfo(),
                 Placement = new gagvc::PlacementInfo(),
@@ -218,6 +218,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 },
                 PartialFailure = false,
                 ValidateOnly = true,
+                ResponseContentType = gagve::ResponseContentTypeEnum.Types.ResponseContentType.ResourceNameOnly,
             };
             MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse
             {
@@ -247,6 +248,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 },
                 PartialFailure = false,
                 ValidateOnly = true,
+                ResponseContentType = gagve::ResponseContentTypeEnum.Types.ResponseContentType.ResourceNameOnly,
             };
             MutateSharedCriteriaResponse expectedResponse = new MutateSharedCriteriaResponse
             {

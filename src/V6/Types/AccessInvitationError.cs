@@ -26,16 +26,20 @@ namespace Google.Ads.GoogleAds.V6.Errors {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9lcnJvcnMvYWNjZXNzX2ludml0",
             "YXRpb25fZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVy",
-            "cm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKTAQoZQWNjZXNz",
-            "SW52aXRhdGlvbkVycm9yRW51bSJ2ChVBY2Nlc3NJbnZpdGF0aW9uRXJyb3IS",
-            "DwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESGQoVSU5WQUxJRF9FTUFJ",
-            "TF9BRERSRVNTEAISJAogRU1BSUxfQUREUkVTU19BTFJFQURZX0hBU19BQ0NF",
-            "U1MQA0L1AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVycm9yc0Ia",
-            "QWNjZXNzSW52aXRhdGlvbkVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5v",
-            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y2L2Vycm9y",
-            "cztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WNi5FcnJv",
-            "cnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWNlxFcnJvcnPqAiJHb29nbGU6",
-            "OkFkczo6R29vZ2xlQWRzOjpWNjo6RXJyb3JzYgZwcm90bzM="));
+            "cm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLRAgoZQWNjZXNz",
+            "SW52aXRhdGlvbkVycm9yRW51bSKzAgoVQWNjZXNzSW52aXRhdGlvbkVycm9y",
+            "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhkKFUlOVkFMSURfRU1B",
+            "SUxfQUREUkVTUxACEiQKIEVNQUlMX0FERFJFU1NfQUxSRUFEWV9IQVNfQUND",
+            "RVNTEAMSHQoZSU5WQUxJRF9JTlZJVEFUSU9OX1NUQVRVUxAEEicKI0dPT0dM",
+            "RV9DT05TVU1FUl9BQ0NPVU5UX05PVF9BTExPV0VEEAUSGQoVSU5WQUxJRF9J",
+            "TlZJVEFUSU9OX0lEEAYSMAosRU1BSUxfQUREUkVTU19BTFJFQURZX0hBU19Q",
+            "RU5ESU5HX0lOVklUQVRJT04QBxImCiJQRU5ESU5HX0lOVklUQVRJT05TX0xJ",
+            "TUlUX0VYQ0VFREVEEAhC9QEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "Ni5lcnJvcnNCGkFjY2Vzc0ludml0YXRpb25FcnJvclByb3RvUAFaRGdvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92Ni9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjYuRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjZcRXJyb3Jz",
+            "6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjY6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -207,6 +211,26 @@ namespace Google.Ads.GoogleAds.V6.Errors {
         /// Email address already has access to this customer.
         /// </summary>
         [pbr::OriginalName("EMAIL_ADDRESS_ALREADY_HAS_ACCESS")] EmailAddressAlreadyHasAccess = 3,
+        /// <summary>
+        /// Invalid invitation status for the operation.
+        /// </summary>
+        [pbr::OriginalName("INVALID_INVITATION_STATUS")] InvalidInvitationStatus = 4,
+        /// <summary>
+        /// Email address cannot be like abc+foo@google.com.
+        /// </summary>
+        [pbr::OriginalName("GOOGLE_CONSUMER_ACCOUNT_NOT_ALLOWED")] GoogleConsumerAccountNotAllowed = 5,
+        /// <summary>
+        /// Invalid invitation id.
+        /// </summary>
+        [pbr::OriginalName("INVALID_INVITATION_ID")] InvalidInvitationId = 6,
+        /// <summary>
+        /// Email address already has a pending invitation.
+        /// </summary>
+        [pbr::OriginalName("EMAIL_ADDRESS_ALREADY_HAS_PENDING_INVITATION")] EmailAddressAlreadyHasPendingInvitation = 7,
+        /// <summary>
+        /// Pending invitation limit exceeded for the customer.
+        /// </summary>
+        [pbr::OriginalName("PENDING_INVITATIONS_LIMIT_EXCEEDED")] PendingInvitationsLimitExceeded = 8,
       }
 
     }

@@ -122,6 +122,11 @@ namespace Google.Ads.GoogleAds.Examples.V6
                                     newResourceEntity = newResource.AdGroup;
                                     break;
 
+                                case ChangeEventResourceType.AdGroupAd:
+                                    oldResourceEntity = oldResource.AdGroupAd;
+                                    newResourceEntity = newResource.AdGroupAd;
+                                    break;
+
                                 case ChangeEventResourceType.AdGroupCriterion:
                                     oldResourceEntity = oldResource.AdGroupCriterion;
                                     newResourceEntity = newResource.AdGroupCriterion;
@@ -145,6 +150,26 @@ namespace Google.Ads.GoogleAds.Examples.V6
                                 case ChangeEventResourceType.CampaignCriterion:
                                     oldResourceEntity = oldResource.CampaignCriterion;
                                     newResourceEntity = newResource.CampaignCriterion;
+                                    break;
+
+                                case ChangeEventResourceType.AdGroupFeed:
+                                    oldResourceEntity = oldResource.AdGroupFeed;
+                                    newResourceEntity = newResource.AdGroupFeed;
+                                    break;
+
+                                case ChangeEventResourceType.CampaignFeed:
+                                    oldResourceEntity = oldResource.CampaignFeed;
+                                    newResourceEntity = newResource.CampaignFeed;
+                                    break;
+
+                                case ChangeEventResourceType.Feed:
+                                    oldResourceEntity = oldResource.Feed;
+                                    newResourceEntity = newResource.Feed;
+                                    break;
+
+                                case ChangeEventResourceType.FeedItem:
+                                    oldResourceEntity = oldResource.FeedItem;
+                                    newResourceEntity = newResource.FeedItem;
                                     break;
 
                                 default:
